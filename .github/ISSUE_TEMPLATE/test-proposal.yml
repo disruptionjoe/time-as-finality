@@ -1,0 +1,33 @@
+name: Test proposal
+description: Propose a toy model, formalization, or falsification path.
+title: "Test proposal: "
+labels: ["test-proposal"]
+body:
+  - type: input
+    id: target_claims
+    attributes:
+      label: Target claims
+      description: Example: C1, D1, T1
+      placeholder: "C1, D1"
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Describe the model, example, or counterexample.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure criteria
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Known physics constraints
+      description: What must this preserve?

@@ -2,6 +2,13 @@
 
 ## An epistemic ledger essay on time, records, and reality becoming hard to undo
 
+> **Formal status update, 2026-06-11:** The executable T1 model supports
+> observer-relative **partial-order** reconstruction but refutes a general
+> total-order reading. C1 is `weakened`; D1 is now `weakened` by the Emergence
+> Laboratory; D2 is `revised`. The models
+> do not establish a bridge from record reconciliation to phenomenal
+> temporal experience. See [the technical note](TECHNICAL-NOTE-v0.1.md).
+
 ## Claim Classes
 
 This essay uses visible claim labels because the idea is risky in the right way. Some parts are definitions. Some are analogies. Some are modest conceptual claims. Some are speculative extensions. The labels are there so the reader can reject one layer without misreading the whole argument.
@@ -22,9 +29,9 @@ This essay uses visible claim labels because the idea is risky in the right way.
 
 | ID | Class | Claim | Confidence | Public handling |
 | --- | --- | --- | --- | --- |
-| [C1](claims/C1-experienced-time-as-record-finality.md) | Core Claim | Experienced time is the order an embedded system assigns to accumulating finalized records. | Medium | Lead with this. |
-| [D1](claims/D1-physical-finality-definition.md) | Definition | Physical finality is record-stability: redundant encoding, causal accessibility, robustness under later observations, and high reversal cost. | Medium | Define early to avoid circularity. |
-| [D2](claims/D2-observer-as-record-bearing-system.md) | Definition | An observer is any record-bearing system, not only a conscious mind. | High | Essential anti-anthropocentric guardrail. |
+| [C1](claims/C1-experienced-time-as-record-finality.md) | Core Claim | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order. | Weakened | Do not present as a total order or explanation of phenomenal experience. |
+| [D1](claims/D1-physical-finality-definition.md) | Definition | Finality is an observer-indexed comparative schema whose dimensions require substrate-specific justification. | Weakened | Do not present the four dimensions as one universal mechanism. |
+| [D2](claims/D2-observer-as-record-bearing-system.md) | Definition | T1 distinguishes trace-bearers, recorders, reconcilers, and conscious observers. | Revised | Position directly against IGUS prior art. |
 | [N1](literature/N1-known-neighbors.md) | Known Neighbor | The view is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamic irreversibility. | High | Name as neighbors, not as solved derivations. |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | Analogy | Distributed-systems finality is useful language for candidate states becoming committed states. | High | Use as analogy after physical definition. |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | Not Claimed | Human belief does not create matter. | Very high | Say plainly. |
@@ -33,7 +40,7 @@ This essay uses visible claim labels because the idea is risky in the right way.
 | [R1](claims/R1-relativity-no-global-commit-order.md) | Conjecture | Relativity is naturally compatible with the absence of universal global finality order. | Medium-high | Keep as interpretation, not derivation. |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | Potential Byproduct | Black holes become stress tests for finality-domain boundaries and causal record accessibility. | Medium | Keep precise and cautious. |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | Speculative Extension | Spacetime may be a consensus envelope for causally bounded finality. | Low-medium | Move late; do not make it load-bearing. |
-| [T1](tests/T1-record-graph-temporal-reconstruction.md) | Test | Build a causal record graph and ask whether observer-relative temporal order can be reconstructed from it. | Medium | End with this as research program. |
+| [T1](tests/T1-record-graph-temporal-reconstruction.md) | Test | A finite model reconstructs partial order and supplies a minimal counterexample to total order. | Implemented | Use as the current evidence boundary. |
 
 ## 1. The Past Is What Has Become Hard To Undo
 
@@ -46,6 +53,11 @@ The ordinary picture says time flows, events happen, and some events leave recor
 `[CORE CLAIM]` [Time, as experienced by embedded observers, is the order assigned to the accumulation of such finalized records.](claims/C1-experienced-time-as-record-finality.md)
 
 This is not yet a physics theory. It is a claim about the architecture of experience and classical fact formation. But it is a claim with teeth. It suggests that the future is not simply "later." The future is what has not yet become finalized into the relevant record network. The present is not a universal spotlight moving across the cosmos. The present is the local edge where candidate states become settled enough to build on.
+
+`[TEST RESULT]` T1 does not establish that full sentence. It establishes the
+narrower result that accessible stabilization frontiers can induce a temporal
+partial order for a reconciler. Causally independent finalized records remain
+unordered, and the model contains no phenomenal-experience bridge.
 
 In the shortest possible plain-language form:
 
@@ -77,7 +89,11 @@ The phrase "finality" comes from distributed systems, but if we define finality 
 
 So the physics-facing definition must be different.
 
-`[DEFINITION]` [Physical finality is a stability relation among records.](claims/D1-physical-finality-definition.md) A state is more final for an observer-network when it is redundantly encoded, causally accessible, robust under further compatible observations, and costly to reverse across the correlated record network.
+`[DEFINITION]` [Physical finality v0.1 is an observer-indexed componentwise
+preorder among proposition-value pairs.](claims/D1-physical-finality-definition.md)
+The executable profile keeps accessible support, distinct-holder redundancy,
+causal branch support, and graph reversal count separate rather than combining
+them into a weighted score.
 
 The four parts matter.
 
@@ -93,7 +109,9 @@ Fourth, reversal cost. A state is more final when undoing it would require reorg
 
 This lets us speak about degrees of finality without pretending reality is binary. Ideas can be real but low-finality. Institutions can be high-finality in human social systems while remaining physically revisable. A wave in water is real but transient. A mountain is real and high-finality at human timescales, but not eternal. A particle track in a detector is a record; how final it is depends on how it propagates into other records.
 
-`[CORE CLAIM]` Experienced time is the ordering an embedded system assigns to the accumulating stabilization of physically finalizing records.
+`[CORE CLAIM, WEAKENED]` Accessible record-stabilization frontiers can induce
+an observer-relative temporal partial order. Whether conscious experience
+turns that partial order into felt succession remains an open bridge problem.
 
 This is still only a conceptual frame. But now it avoids the easiest circularity. We are not defining finality by time. We are defining finality by record-stability, then asking whether experienced time is reconstructed from the ordering of such stabilization.
 

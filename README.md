@@ -2,7 +2,9 @@
 
 **The past is what has become hard to undo.**
 
-Time as Finality is an open research project exploring whether experienced temporal order and classical objectivity can be modeled as the stabilization of physical records across causally bounded systems.
+Time as Finality is an open research project testing whether observer-relative
+temporal order and classical objectivity can be modeled through the
+stabilization of physical records across causally bounded systems.
 
 This is not a completed theory of physics. It is a claim-led formalization project: every major claim is labeled, linked, challenged, and paired with tests or failure conditions.
 
@@ -10,7 +12,9 @@ This is not a completed theory of physics. It is a claim-led formalization proje
 
 Time as Finality asks whether:
 
-> For an embedded observer-system, experienced temporal order can be reconstructed from the causal partial order and stabilization profile of accessible record-formation events.
+> For an embedded record-processing system, a temporal partial order can be
+> reconstructed from the causal partial order and stabilization frontiers of
+> accessible records.
 
 The project sits between foundations of time, quantum measurement, decoherence, classical objectivity, relativity, black-hole causal access, thermodynamics, and distributed-systems finality.
 
@@ -21,6 +25,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - A claim-by-claim research repository.
 - A place to connect public essay claims to specific tests.
 - A bridge language between record formation, temporal experience, and classical objectivity.
+- An executable finite-graph model with documented positive and negative
+  results.
 
 ## What This Is Not
 
@@ -32,6 +38,16 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 
 ## Start Here
 
+- [TECHNICAL-NOTE-v0.1.md](TECHNICAL-NOTE-v0.1.md) - first formal result and
+  evidence verdict.
+- [TECHNICAL-REPORT-emergence-lab-v0.1.md](TECHNICAL-REPORT-emergence-lab-v0.1.md)
+  - comparative result across reversible and irreversible local dynamics.
+- [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
+  assumptions, and required counterexamples.
+- [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
+  reconstruction rule.
+- [results/T1-v0.1-results.md](results/T1-v0.1-results.md) - reproducible test
+  results and counterexample.
 - [ESSAY.md](ESSAY.md) - public essay, linked claim by claim.
 - [CLAIM-LEDGER.md](CLAIM-LEDGER.md) - status of every major claim.
 - [HYPOTHESES.md](HYPOTHESES.md) - central hypothesis and failure conditions.
@@ -59,9 +75,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ```text
 claims/         Claim-by-claim research notes.
 tests/          Test proposals and toy formalization paths.
+models/         Executable formal models.
+results/        Reproducible model outputs and evidence verdicts.
 literature/     Prior-art and known-neighbor notes.
 open-problems/  Unresolved technical questions.
 guardrails/     Explicit non-claims and misuse boundaries.
+```
+
+## Run The Formal Model
+
+```bash
+python -m unittest discover -s tests -p "test_*.py" -v
+python -m models.run_t1
+python -m models.run_emergence_lab
 ```
 
 ## Citation / Reuse

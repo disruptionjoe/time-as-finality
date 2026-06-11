@@ -17,6 +17,10 @@
 - **Completed v0.1:** build the
   [Emergence Laboratory](tests/T9-emergence-laboratory.md) across all 256
   elementary rules and reversible second-order lifts.
+- **Completed v0.1:** build
+  [T10](tests/T10-proof-carrying-metastable-finality.md) to compare
+  coarse-graining, ideal proof verification, Snowball confidence, Bayesian
+  aggregation, and local metastability.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
 
@@ -40,13 +44,15 @@
 1. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-2. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
+2. Replace T10's ideal proof functionality with one concrete proof relation,
+   explicit proof costs, epoching, and stale-certificate revocation.
+3. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
    system-apparatus-environment model and compare D1 directly with
    quantum-Darwinism redundancy.
-3. Test whether the D1 preorder composes under record-graph merge.
-4. Replace the Landauer lower-bound calculation with an explicit stochastic
+4. Test whether the D1 preorder composes under record-graph merge.
+5. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-5. Run a relativity sanity check for
+6. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-6. Add a black-hole specialist critique of
+7. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).

@@ -1,0 +1,711 @@
+﻿{
+  "coarse_graining": {
+    "block_size": 3,
+    "claim_counts": [
+      [
+        0,
+        256
+      ],
+      [
+        1,
+        256
+      ]
+    ],
+    "claim_entropy_bits": 1.0,
+    "hidden_information_bits": 8.0,
+    "maximum_reversal_radius": 4,
+    "mean_reversal_radius": 1.33984375,
+    "mean_single_bit_stability": 0.75,
+    "microstate_count": 512,
+    "minimum_reversal_radius": 1,
+    "width": 9
+  },
+  "configuration": {
+    "coarse_claim": 1,
+    "global_microstate": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parameters": {
+      "decision_threshold": 4,
+      "max_rounds": 80,
+      "quorum": 5,
+      "sample_size": 7
+    }
+  },
+  "forged_adversary_primary": {
+    "bayesian_map_accuracy": 0.9333333333333333,
+    "configuration": {
+      "adversary_fraction": 0.3,
+      "adversary_mode": "forged",
+      "bit_error_rate": 0.2,
+      "decision_threshold": 4,
+      "global_microstate": "111110000",
+      "max_rounds": 80,
+      "population_size": 21,
+      "quorum": 5,
+      "sample_size": 7,
+      "single_report_accuracy": 0.6659809279999992,
+      "trials": 300,
+      "truth": 1
+    },
+    "mean_static_truth_support_fraction": 0.6791111111111111,
+    "proof_snowball": {
+      "accuracy": 0.8933333333333333,
+      "consensus_rate": 0.9933333333333333,
+      "false_finality_rate": 0.1,
+      "mean_decision_fraction": 0.9995555555555555,
+      "mean_messages": 1648.4766666666667,
+      "mean_public_support_count": 9.149333333333333,
+      "mean_rejected_messages": 495.53333333333336,
+      "mean_rounds": 37.97,
+      "trials": 300
+    },
+    "proofless_majority_dynamics": {
+      "accuracy": 0.17,
+      "consensus_rate": 1,
+      "false_finality_rate": 0.83,
+      "mean_decision_fraction": 1.0,
+      "mean_messages": 834.4,
+      "mean_public_support_count": 1,
+      "mean_rejected_messages": 0,
+      "mean_rounds": 7.946666666666666,
+      "trials": 300
+    },
+    "raw_snowball": {
+      "accuracy": 0.21,
+      "consensus_rate": 0.9966666666666667,
+      "false_finality_rate": 0.7866666666666666,
+      "mean_decision_fraction": 0.9997777777777778,
+      "mean_messages": 759.15,
+      "mean_public_support_count": 1,
+      "mean_rejected_messages": 0,
+      "mean_rounds": 13.03,
+      "trials": 300
+    },
+    "trace_persistence_accuracy": 0,
+    "trace_persistence_consensus_rate": 0,
+    "verified_majority_accuracy": 0.9333333333333333
+  },
+  "forged_adversary_sweep": [
+    {
+      "bayesian_map_accuracy": 0.9533333333333334,
+      "configuration": {
+        "adversary_fraction": 0.0,
+        "adversary_mode": "forged",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6768253968253968,
+      "proof_snowball": {
+        "accuracy": 0.9466666666666667,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.05333333333333334,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 617.26,
+        "mean_public_support_count": 12.693333333333333,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 4.873333333333333,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.9333333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.06666666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 887.88,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.04,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.9466666666666667,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.05333333333333334,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 617.26,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 4.873333333333333,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.9533333333333334
+    },
+    {
+      "bayesian_map_accuracy": 0.94,
+      "configuration": {
+        "adversary_fraction": 0.1,
+        "adversary_mode": "forged",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6712280701754386,
+      "proof_snowball": {
+        "accuracy": 0.92,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.08,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 619.8733333333333,
+        "mean_public_support_count": 11.413333333333334,
+        "mean_rejected_messages": 61.806666666666665,
+        "mean_rounds": 5.673333333333333,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.7733333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.22666666666666666,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 901.74,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.78,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.7933333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.20666666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 613.5266666666666,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.62,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.94
+    },
+    {
+      "bayesian_map_accuracy": 0.9333333333333333,
+      "configuration": {
+        "adversary_fraction": 0.2,
+        "adversary_mode": "forged",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6631372549019607,
+      "proof_snowball": {
+        "accuracy": 0.9133333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.08666666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 840.9333333333333,
+        "mean_public_support_count": 9.973333333333333,
+        "mean_rejected_messages": 168,
+        "mean_rounds": 13.153333333333334,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.54,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.46,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 863.1466666666666,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 7.253333333333333,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.5333333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.4666666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 687.2133333333334,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 9.526666666666667,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.9333333333333333
+    },
+    {
+      "bayesian_map_accuracy": 0.92,
+      "configuration": {
+        "adversary_fraction": 0.3,
+        "adversary_mode": "forged",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6791111111111111,
+      "proof_snowball": {
+        "accuracy": 0.8866666666666667,
+        "consensus_rate": 0.9866666666666667,
+        "false_finality_rate": 0.1,
+        "mean_decision_fraction": 0.9991111111111111,
+        "mean_messages": 1600.48,
+        "mean_public_support_count": 9.086666666666666,
+        "mean_rejected_messages": 479.78,
+        "mean_rounds": 37.43333333333333,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.16,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.84,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 863.8,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 8.226666666666667,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.24666666666666667,
+        "consensus_rate": 0.9933333333333333,
+        "false_finality_rate": 0.7466666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 756.84,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 12.733333333333333,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.92
+    },
+    {
+      "bayesian_map_accuracy": 0.8933333333333333,
+      "configuration": {
+        "adversary_fraction": 0.4,
+        "adversary_mode": "forged",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6748717948717949,
+      "proof_snowball": {
+        "accuracy": 0,
+        "consensus_rate": 0,
+        "false_finality_rate": 0,
+        "mean_decision_fraction": 0.6451282051282051,
+        "mean_messages": 4812.033333333334,
+        "mean_public_support_count": 8.053333333333333,
+        "mean_rejected_messages": 1922.2733333333333,
+        "mean_rounds": 80,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0,
+        "consensus_rate": 1,
+        "false_finality_rate": 1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 626.6866666666666,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.886666666666667,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0,
+        "consensus_rate": 0.98,
+        "false_finality_rate": 0.98,
+        "mean_decision_fraction": 0.9964102564102564,
+        "mean_messages": 513.24,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 7.1,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0.013333333333333334,
+      "trace_persistence_consensus_rate": 0.013333333333333334,
+      "verified_majority_accuracy": 0.8933333333333333
+    }
+  ],
+  "proof_functionality": {
+    "distinct_commitments": true,
+    "first_verifies": true,
+    "forgery_rejected": true,
+    "public_fields": [
+      "epoch",
+      "claim",
+      "support_count",
+      "commitment",
+      "proof_id",
+      "tag"
+    ],
+    "same_claim_distinct_microstates": true,
+    "second_verifies": true,
+    "security_status": "ideal functionality; not a cryptographic construction"
+  },
+  "valid_dissent_primary": {
+    "bayesian_map_accuracy": 0.4266666666666667,
+    "configuration": {
+      "adversary_fraction": 0.3,
+      "adversary_mode": "valid_dissent",
+      "bit_error_rate": 0.2,
+      "decision_threshold": 4,
+      "global_microstate": "111110000",
+      "max_rounds": 80,
+      "population_size": 21,
+      "quorum": 5,
+      "sample_size": 7,
+      "single_report_accuracy": 0.6659809279999992,
+      "trials": 300,
+      "truth": 1
+    },
+    "mean_static_truth_support_fraction": 0.47777777777777775,
+    "proof_snowball": {
+      "accuracy": 0.19333333333333333,
+      "consensus_rate": 0.9966666666666667,
+      "false_finality_rate": 0.8033333333333333,
+      "mean_decision_fraction": 1.0,
+      "mean_messages": 717.1966666666667,
+      "mean_public_support_count": 10.497333333333334,
+      "mean_rejected_messages": 0,
+      "mean_rounds": 11.786666666666667,
+      "trials": 300
+    },
+    "proofless_majority_dynamics": {
+      "accuracy": 0.14,
+      "consensus_rate": 1,
+      "false_finality_rate": 0.86,
+      "mean_decision_fraction": 1.0,
+      "mean_messages": 841.05,
+      "mean_public_support_count": 1,
+      "mean_rejected_messages": 0,
+      "mean_rounds": 8.01,
+      "trials": 300
+    },
+    "raw_snowball": {
+      "accuracy": 0.19333333333333333,
+      "consensus_rate": 0.9966666666666667,
+      "false_finality_rate": 0.8033333333333333,
+      "mean_decision_fraction": 1.0,
+      "mean_messages": 717.1966666666667,
+      "mean_public_support_count": 1,
+      "mean_rejected_messages": 0,
+      "mean_rounds": 11.786666666666667,
+      "trials": 300
+    },
+    "trace_persistence_accuracy": 0,
+    "trace_persistence_consensus_rate": 0,
+    "verified_majority_accuracy": 0.4266666666666667
+  },
+  "valid_dissent_sweep": [
+    {
+      "bayesian_map_accuracy": 0.9266666666666666,
+      "configuration": {
+        "adversary_fraction": 0.0,
+        "adversary_mode": "valid_dissent",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.673015873015873,
+      "proof_snowball": {
+        "accuracy": 0.9,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 637.5133333333333,
+        "mean_public_support_count": 12.5,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.006666666666667,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.9066666666666666,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.09333333333333334,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 915.32,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.226666666666667,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.9,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 637.5133333333333,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.006666666666667,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.9266666666666666
+    },
+    {
+      "bayesian_map_accuracy": 0.8666666666666667,
+      "configuration": {
+        "adversary_fraction": 0.1,
+        "adversary_mode": "valid_dissent",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.6079365079365079,
+      "proof_snowball": {
+        "accuracy": 0.8,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.2,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 619.3133333333334,
+        "mean_public_support_count": 11.366666666666667,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.706666666666667,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.8066666666666666,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.19333333333333333,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 902.6266666666667,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.786666666666667,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.8,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.2,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 619.3133333333334,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.706666666666667,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.8666666666666667
+    },
+    {
+      "bayesian_map_accuracy": 0.62,
+      "configuration": {
+        "adversary_fraction": 0.2,
+        "adversary_mode": "valid_dissent",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.5374603174603174,
+      "proof_snowball": {
+        "accuracy": 0.4866666666666667,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.5133333333333333,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 682.4066666666666,
+        "mean_public_support_count": 10.586274509803921,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 9.04,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.4533333333333333,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.5466666666666666,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 894.0866666666667,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 7.513333333333334,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.4866666666666667,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.5133333333333333,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 682.4066666666666,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 9.04,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.62
+    },
+    {
+      "bayesian_map_accuracy": 0.37333333333333335,
+      "configuration": {
+        "adversary_fraction": 0.3,
+        "adversary_mode": "valid_dissent",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.473015873015873,
+      "proof_snowball": {
+        "accuracy": 0.15333333333333332,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.8466666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 647.2666666666667,
+        "mean_public_support_count": 10.546666666666667,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 10.073333333333334,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0.15333333333333332,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.8466666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 809.2,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 7.706666666666667,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0.15333333333333332,
+        "consensus_rate": 1,
+        "false_finality_rate": 0.8466666666666667,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 647.2666666666667,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 10.073333333333334,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.37333333333333335
+    },
+    {
+      "bayesian_map_accuracy": 0.09333333333333334,
+      "configuration": {
+        "adversary_fraction": 0.4,
+        "adversary_mode": "valid_dissent",
+        "bit_error_rate": 0.2,
+        "decision_threshold": 4,
+        "global_microstate": "111110000",
+        "max_rounds": 80,
+        "population_size": 21,
+        "quorum": 5,
+        "sample_size": 7,
+        "single_report_accuracy": 0.6659809279999992,
+        "trials": 150,
+        "truth": 1
+      },
+      "mean_static_truth_support_fraction": 0.40444444444444444,
+      "proof_snowball": {
+        "accuracy": 0,
+        "consensus_rate": 1,
+        "false_finality_rate": 1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 413.6066666666667,
+        "mean_public_support_count": 11.678461538461539,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.3133333333333335,
+        "trials": 150
+      },
+      "proofless_majority_dynamics": {
+        "accuracy": 0,
+        "consensus_rate": 1,
+        "false_finality_rate": 1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 609.7,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 6.7,
+        "trials": 150
+      },
+      "raw_snowball": {
+        "accuracy": 0,
+        "consensus_rate": 1,
+        "false_finality_rate": 1,
+        "mean_decision_fraction": 1.0,
+        "mean_messages": 413.6066666666667,
+        "mean_public_support_count": 1,
+        "mean_rejected_messages": 0,
+        "mean_rounds": 5.3133333333333335,
+        "trials": 150
+      },
+      "trace_persistence_accuracy": 0,
+      "trace_persistence_consensus_rate": 0,
+      "verified_majority_accuracy": 0.09333333333333334
+    }
+  ]
+}

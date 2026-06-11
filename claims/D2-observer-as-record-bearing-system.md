@@ -53,3 +53,11 @@ some physical cases support a weaker recorder-relative relation.
 ## Known Neighbors
 
 See [Core Formalism Known Neighbors](../literature/N3-core-formalism-known-neighbors.md).
+
+## T10 Result
+
+[T10](../tests/T10-proof-carrying-metastable-finality.md) implements a
+population of persistent reconcilers with private records, proof validation,
+confidence state, and bounded peer sampling. Their processing rules and
+network boundary are engineered inputs, so this is a stronger observer model
+than T1 but not an emergence result for observers themselves.

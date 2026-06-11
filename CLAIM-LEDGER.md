@@ -5,9 +5,9 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
 | [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md) |
-| [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
-| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
+| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; T10 separates typed protocol dimensions but does not restore a universal physical measure. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T10](tests/T10-proof-carrying-metastable-finality.md) |
+| [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes observer capabilities; T10 implements persistent bounded reconcilers without deriving them from physics. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T10](tests/T10-proof-carrying-metastable-finality.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
+| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | revised | Snowball-style sampling models bounded convergence and safety-liveness tradeoffs, not truth creation or physical law. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T10](tests/T10-proof-carrying-metastable-finality.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | open | Quantum states may be real but not yet finalized as classical records in a given observer-environment context. | [T2](tests/T2-quantum-measurement-record-finality.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md) |
@@ -15,6 +15,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
 | [N3](literature/N3-core-formalism-known-neighbors.md) | known_neighbor | active | Lamport, quantum Darwinism, IGUS, records-of-histories, and Landauer constrain the novelty and interpretation of v0.1. | Primary-source positioning |
 | [N4](literature/N4-emergence-lab-known-neighbors.md) | known_neighbor | active | Reversible computation, cellular automata, Landauer cost, coarse-graining, and Boolean sensitivity constrain the Emergence Laboratory. | Primary-source positioning |
+| [N5](literature/N5-proof-carrying-metastable-finality-known-neighbors.md) | known_neighbor | active | Snow consensus, zero knowledge, proof-carrying data, coarse-graining, and physical metastability constrain T10. | Primary-source positioning |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | not_claimed | active | Human belief does not create matter. | Guardrail |
 | [G2](guardrails/G2-not-a-replacement-theory.md) | not_claimed | active | This does not replace QM, GR, thermodynamics, or proper time. | Guardrail |
 
@@ -47,3 +48,12 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - The stronger claim that finality is one mechanism spanning causal,
   computational, and thermodynamic irreversibility is rejected. The surviving
   result is a comparative framework for observer-indexed records.
+
+### 2026-06-11 - Proof-carrying metastable finality
+
+- A1 changed from `active` to `revised`: Snowball-style confidence is useful
+  for modeling bounded convergence and explicit safety-liveness tradeoffs, but
+  it does not outperform direct Bayesian aggregation as a truth criterion.
+- D1 remains `weakened`: T10 separates coarse reversal radius, proof validity,
+  independent support, protocol confidence, and liveness. These dimensions are
+  useful but largely arise from an engineered observer protocol.

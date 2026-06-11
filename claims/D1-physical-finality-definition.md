@@ -65,3 +65,14 @@ traces and observer-relative access work on reversible and irreversible local
 dynamics. It also shows that logical information loss is neither necessary
 nor sufficient for an observer-accessible trace, and that three raw profile
 dimensions collapse in the simplest binary model.
+
+## Proof-Carrying Metastability Result
+
+[T10](../tests/T10-proof-carrying-metastable-finality.md) separates quantities
+that collapsed in T9: coarse reversal radius, certificate validity,
+independent certified support, path-dependent confidence, consensus decision,
+and liveness. This supports D1 as a typed comparative schema.
+
+It does not restore the stronger physical claim. Most new dimensions are
+introduced by an engineered proof and consensus protocol, and none supplies a
+new truth criterion.

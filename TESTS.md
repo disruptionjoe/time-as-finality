@@ -12,6 +12,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T4](tests/T4-black-hole-causal-access-boundary.md) | Black-hole causal access boundary | B1, G2 | open |
 | [T5](tests/T5-thermodynamic-record-support.md) | Thermodynamic record support | D1, C1 | structural benchmark implemented |
 | [T9](tests/T9-emergence-laboratory.md) | Emergent records across reversible and irreversible local dynamics | D1, C1, T5 | implemented: comparative success |
+| [T10](tests/T10-proof-carrying-metastable-finality.md) | Proof-carrying metastable finality | A1, D1, D2 | implemented: operational success, epistemic limit |
 
 ## Minimum Compatibility Constraints
 
@@ -31,12 +32,14 @@ Any formalization must:
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
+python -m models.run_proof_carrying_finality
 ```
 
 The suites use only Python's standard library. Evidence records:
 
 - [T1 v0.1 Results](results/T1-v0.1-results.md)
 - [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
+- [Proof-Carrying Metastable Finality v0.1 Results](results/proof-carrying-metastable-finality-v0.1-results.md)
 
 ## How To Add A Test
 

@@ -69,6 +69,33 @@ The minimum heat `k_B T ln(2)` per logically erased bit under an ideal
 quasistatic memory-reset model. It is a lower bound, not a prediction of an
 implementation's actual dissipation.
 
+## Coarse-Grained Claim
+
+A public proposition produced by a many-to-one map from hidden microstates.
+T10's binary claim hides eight bits under its stated uniform nine-bit model.
+
+## Ideal Proof Functionality
+
+An abstract verifier that accepts exactly when a hidden record satisfies a
+stated relation, while exposing only bounded public data. It specifies the
+information contract needed from a proof system but is not a cryptographic
+construction.
+
+## Certified Support
+
+The number of unique hidden record sources represented by a valid recursive
+certificate. Duplicate evidence does not increase this count.
+
+## Protocol Confidence
+
+Path-dependent support accumulated by repeated successful samples. It is a
+property of the protocol history, not additional evidence or proof of truth.
+
+## False Finality
+
+A unanimous protocol decision that disagrees with the designated hidden-state
+claim in the experiment.
+
 ## Classical Fact
 
 A state stabilized enough across a relevant observer-environment record network that it can be treated as settled for subsequent interactions.

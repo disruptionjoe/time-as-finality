@@ -42,6 +42,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   evidence verdict.
 - [TECHNICAL-REPORT-emergence-lab-v0.1.md](TECHNICAL-REPORT-emergence-lab-v0.1.md)
   - comparative result across reversible and irreversible local dynamics.
+- [TECHNICAL-REPORT-proof-carrying-metastable-finality-v0.1.md](TECHNICAL-REPORT-proof-carrying-metastable-finality-v0.1.md)
+  - coarse-graining, bounded proof verification, and Snowball-style consensus.
+- [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
+  - T10 mechanisms, baselines, and falsification criteria.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -88,6 +92,7 @@ guardrails/     Explicit non-claims and misuse boundaries.
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
+python -m models.run_proof_carrying_finality
 ```
 
 ## Citation / Reuse

@@ -47,6 +47,9 @@ The laboratory does not derive everything:
 - the seed intervention is supplied;
 - the observer is a selected bounded terminal window;
 - semantic propositions and conscious experience are absent.
+- collective confidence formation, proof verification, and explicit
+  coarse-graining are absent; these are tested separately in
+  [T10](tests/T10-proof-carrying-metastable-finality.md).
 
 The honest result is emergence of records from dynamics, not emergence of
 time or observers from nothing.

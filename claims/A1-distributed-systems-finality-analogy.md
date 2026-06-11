@@ -10,7 +10,7 @@ Analogy.
 
 ## Status
 
-Active.
+Revised.
 
 ## What This Does Not Claim
 
@@ -22,17 +22,33 @@ Active.
 
 Distributed systems distinguish local views, message propagation, pending states, forks, quorums, probabilistic finality, deterministic finality, and commit order. Those distinctions help discuss quantum/classical transition, relativity of simultaneity, and black-hole causal access without assuming one global state visible to all observers.
 
+T10 shows one precise use. Repeated bounded sampling can turn individually
+verified records into a metastable network decision while making sampling,
+quorum, confidence, and liveness assumptions explicit.
+
+The result is limited. Against forged opposition, proof-carrying Snowball
+substantially outperforms raw Snowball. Against valid conflicting records,
+proof verification provides no advantage and confidence dynamics can amplify
+the wrong majority. A verified Bayesian/majority baseline matches or exceeds
+Snowball truth accuracy in every reported configuration.
+
 ## How It Could Mislead
 
 - Distributed systems usually presuppose time and protocol steps.
 - Consensus mechanisms are engineered; physical systems are not necessarily protocol-governed.
 - The analogy can tempt readers into thinking "commit order" is literal.
+- Confidence accumulation can be mistaken for evidence creation.
+- Protocol agreement can be mistaken for truth.
+- Protocol metastability can be mistaken for a thermodynamic barrier.
 
 ## Tests
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T3: Spacelike Events And No Global Commit Order](../tests/T3-spacelike-events-no-global-commit-order.md)
+- [T10: Proof-Carrying Metastable Finality](../tests/T10-proof-carrying-metastable-finality.md)
 
 ## Contribution Needed
 
-Map which distributed-systems concepts are safe analogies and which should be avoided.
+Test stale but valid certificates and changing hidden states. Determine whether
+epoching and revocation can preserve correction without destroying the
+bounded-access benefit.

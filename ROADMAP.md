@@ -21,6 +21,10 @@
   [T10](tests/T10-proof-carrying-metastable-finality.md) to compare
   coarse-graining, ideal proof verification, Snowball confidence, Bayesian
   aggregation, and local metastability.
+- **Completed v0.1:** build
+  [T11](tests/T11-compositional-finality.md) to separate evidence joins,
+  inherited expression, observer access, coarse-graining, profiles, and
+  decisions across recursive record systems.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
 
@@ -49,7 +53,9 @@
 3. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
    system-apparatus-environment model and compare D1 directly with
    quantum-Darwinism redundancy.
-4. Test whether the D1 preorder composes under record-graph merge.
+4. Replace T11's tree-only composition with overlapping local contexts,
+   explicit restriction maps, and a search for unique, multiple, or
+   nonexistent global extensions.
 5. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
 6. Run a relativity sanity check for

@@ -1,0 +1,132 @@
+﻿{
+  "counterexamples": {
+    "coarse_graining_changes_finality_order": {
+      "detail": {
+        "left_after": [
+          1,
+          1,
+          1,
+          4.0
+        ],
+        "left_before": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "right_after": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "right_before": [
+          1,
+          1,
+          1,
+          2.0
+        ]
+      },
+      "name": "coarse_graining_changes_finality_order",
+      "size": 2
+    },
+    "duplicate_tokens_inflate_naive_support": {
+      "detail": {
+        "naive_token_support": 2,
+        "provenance_support": 1
+      },
+      "name": "duplicate_tokens_inflate_naive_support",
+      "size": 2
+    },
+    "locally_consistent_records_fail_to_glue": {
+      "detail": {
+        "global_section_exists": false,
+        "left_assignment": {
+          "x": "0"
+        },
+        "right_assignment": {
+          "x": "1"
+        }
+      },
+      "name": "locally_consistent_records_fail_to_glue",
+      "size": 2
+    },
+    "locally_final_records_merge_to_unresolved": {
+      "detail": {
+        "left_decision": "true",
+        "merged_decision": null,
+        "right_decision": "false"
+      },
+      "name": "locally_final_records_merge_to_unresolved",
+      "size": 2
+    },
+    "profile_merge_is_not_least_upper_bound": {
+      "detail": {
+        "componentwise_lub": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "left": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "merged": [
+          2,
+          2,
+          2,
+          2.0
+        ],
+        "right": [
+          1,
+          1,
+          1,
+          1.0
+        ]
+      },
+      "name": "profile_merge_is_not_least_upper_bound",
+      "size": 2
+    },
+    "same_record_identity_different_inherited_expression": {
+      "detail": {
+        "reactivated_support": 1,
+        "record_identity_preserved_while_silenced": true,
+        "silenced_support": 0,
+        "unmarked_support": 1
+      },
+      "name": "same_record_identity_different_inherited_expression",
+      "size": 1
+    }
+  },
+  "depth_sweep": {
+    "depths_tested": 1025,
+    "maximum_depth": 1024,
+    "neutral_invariant": true,
+    "silencing_inherited_at_every_positive_depth": true
+  },
+  "evidence_join_laws": {
+    "associative": true,
+    "commutative": true,
+    "idempotent": true
+  },
+  "exhaustive_composition_sweep": {
+    "lossy_checkpoint_support_preservation_fraction": 0.26666666666666666,
+    "nonempty_states": 15,
+    "ordered_pairs": 225,
+    "profile_merge_equals_componentwise_lub_fraction": 0.5111111111111111,
+    "provenance_checkpoint_branch_preservation_fraction": 0.26666666666666666,
+    "provenance_checkpoint_holder_preservation_fraction": 0.26666666666666666,
+    "provenance_checkpoint_support_preservation_fraction": 1.0,
+    "source_count": 4,
+    "transparent_merge_decision_preservation_fraction": 1.0,
+    "transparent_merge_monotonicity_fraction": 1.0
+  },
+  "grouping_trials": {
+    "context_placement_dependence_fraction": 1.0,
+    "neutral_grouping_invariance_fraction": 1.0,
+    "trials": 500
+  }
+}

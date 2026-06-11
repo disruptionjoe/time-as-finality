@@ -44,6 +44,11 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - comparative result across reversible and irreversible local dynamics.
 - [TECHNICAL-REPORT-proof-carrying-metastable-finality-v0.1.md](TECHNICAL-REPORT-proof-carrying-metastable-finality-v0.1.md)
   - coarse-graining, bounded proof verification, and Snowball-style consensus.
+- [TECHNICAL-REPORT-compositional-finality-v0.1.md](TECHNICAL-REPORT-compositional-finality-v0.1.md)
+  - evidence joins, inherited expression, recursive composition, and the
+    failure of a universal finality semilattice.
+- [COMPOSITIONAL-FINALITY-LAB.md](COMPOSITIONAL-FINALITY-LAB.md)
+  - T11 mechanisms, checkpoint policies, epigenetic lens, and counterexamples.
 - [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
   - T10 mechanisms, baselines, and falsification criteria.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -93,6 +98,7 @@ python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
 python -m models.run_proof_carrying_finality
+python -m models.run_compositional_finality
 ```
 
 ## Citation / Reuse

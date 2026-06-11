@@ -38,19 +38,34 @@ incomparable rather than receiving an arbitrary total order.
 
 See [T1](tests/T1-record-graph-temporal-reconstruction.md).
 
-## H2: Quantum Under-Finalization Conjecture
+## H2: Typed Composition Hypothesis
+
+Compatible stored evidence can compose by provenance-preserving join, while
+inherited expression, observer access, coarse-graining, finality profiles, and
+threshold decisions form distinct transformations that need not preserve the
+same algebra.
+
+Status: **partially supported and sharply limited by T11**. Evidence union
+satisfies the join laws, but profile merge is not generally its least upper
+bound. Inherited expression can silence and later reactivate the same stored
+record through arbitrary finite nesting.
+
+See [C2](claims/C2-typed-compositional-finality.md) and
+[T11](tests/T11-compositional-finality.md).
+
+## H3: Quantum Under-Finalization Conjecture
 
 Quantum states can be real while not yet stabilized as classical records in a given observer-environment context.
 
 See [Q1](claims/Q1-quantum-under-finalization.md) and [T2](tests/T2-quantum-measurement-record-finality.md).
 
-## H3: No Global Commit Order Conjecture
+## H4: No Global Commit Order Conjecture
 
 Relativity is naturally compatible with the absence of universal global finality order: spacelike-separated events do not require a single observer-independent commit ordering until records meet in a common causal future.
 
 See [R1](claims/R1-relativity-no-global-commit-order.md) and [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 
-## H4: Horizon Finality-Domain Conjecture
+## H5: Horizon Finality-Domain Conjecture
 
 Black-hole horizons are stress tests for finality-domain boundaries because they limit direct classical record export from interior events to exterior observers.
 

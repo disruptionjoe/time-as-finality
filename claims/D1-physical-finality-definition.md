@@ -47,6 +47,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
+- [T11: Compositional Finality](../tests/T11-compositional-finality.md)
 
 ## Contribution Needed
 
@@ -76,3 +77,16 @@ and liveness. This supports D1 as a typed comparative schema.
 It does not restore the stronger physical claim. Most new dimensions are
 introduced by an engineered proof and consensus protocol, and none supplies a
 new truth criterion.
+
+## Compositional Finality Result
+
+[T11](../tests/T11-compositional-finality.md) shows that compatible stored
+evidence forms a provenance-preserving join-semilattice. The D1 profile does
+not universally inherit that algebra: physical merge equals the
+componentwise least upper bound in only `51.11%` of the exhaustive
+four-source pairs.
+
+This strengthens the reason to treat D1 as a typed observer summary rather
+than the state space itself. Inherited expression, access, checkpoint policy,
+and conflict can change the profile or decision without changing all stored
+evidence.

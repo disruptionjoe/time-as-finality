@@ -9,6 +9,11 @@
 > adds coarse-grained hidden records, ideal proof verification, recursively
 > certified support, and path-dependent confidence. These are typed additions
 > to the schema, not universal physical quantities.
+>
+> **Composition update:** [T11](tests/T11-compositional-finality.md) separates
+> stored evidence, inherited expression, observer access, finality profile,
+> and decision. Compatible evidence has a provenance-preserving join, but the
+> D1 profile does not universally inherit that join.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -130,6 +135,31 @@ records remain incomparable until the graph contains a causal reconciliation
 that changes their record structure. The model therefore tests a weakened,
 precise form of C1: record structure can reconstruct an observer-relative
 partial temporal order, not necessarily a total experienced sequence.
+
+## Recursive Composition
+
+T11 represents a record system as tokens, child record systems, and local
+expression marks. Parent context is inherited by descendants, while a child
+may override that context without changing stored token identity.
+
+The composition pipeline is:
+
+```text
+stored evidence
+  -> inherited expression
+  -> observer access
+  -> finality profile
+  -> reconstructed decision
+```
+
+Compatible stored evidence merges by token identity and provenance-preserving
+union. That merge is associative, commutative, and idempotent. Expression,
+access projection, coarse-graining, profiling, and decision are separate maps
+and need not preserve the evidence join.
+
+The recursive evaluator supports arbitrary finite depth without assigning a
+fixed number of physical levels. Recursion does not establish fractality,
+self-similarity, scale invariance, or infinite depth.
 
 ## Failure Conditions
 

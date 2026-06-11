@@ -34,6 +34,52 @@ The tuple `(accessible support, holder redundancy, branch robustness, graph
 reversal cost)` for a proposition-value pair relative to an observer and
 evaluation event.
 
+## Evidence Join
+
+A provenance-preserving union of compatible record tokens by stable identity.
+In T11 it is associative, commutative, and idempotent. The resulting
+evidence-state join is not automatically a join of finality profiles.
+
+## Typed Compositional Finality
+
+The claim that composition must be tracked across distinct stages: stored
+evidence, inherited expression, observer access, finality profile, and
+decision. Structure preserved at one stage may be altered or lost at another.
+
+## Inherited Expression Mark
+
+A context state applied to tagged descendant records without deleting or
+changing their stored identity. Descendants inherit the nearest applicable
+mark.
+
+## Local Reprogramming
+
+A descendant context overriding an inherited expression mark, allowing the
+same stored record to become expressed again. This is the operational content
+of T11's epigenetic analogy.
+
+## Provenance Checkpoint
+
+A coarse-grained token that retains the union of hidden source identities
+while collapsing visible holder and branch structure.
+
+## Lossy Checkpoint
+
+A coarse-grained token represented as one new source. It can discard source,
+holder, and branch distinctions from the underlying evidence.
+
+## Gluing
+
+The local-to-global question of whether assignments that agree where their
+contexts overlap admit one consistent global assignment. T11 tests a minimal
+obstruction rather than a full sheaf-cohomology construction.
+
+## Recursive Record System
+
+A record containing tokens, child record systems, and local expression
+context at arbitrary finite depth. Recursion alone does not imply
+self-similarity, scale invariance, infinite depth, or mathematical fractality.
+
 ## Stabilization Frontier
 
 The causally minimal event or set of events at which exactly one value for a

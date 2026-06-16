@@ -14,6 +14,10 @@
 > stored evidence, inherited expression, observer access, finality profile,
 > and decision. Compatible evidence has a provenance-preserving join, but the
 > D1 profile does not universally inherit that join.
+>
+> **Readout update:** [T13](tests/T13-signed-interfering-readout.md) adds
+> signed and complex readout weights after record access. The D1 finality
+> profile remains weight-blind and does not determine Born-style readout.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -160,6 +164,32 @@ and need not preserve the evidence join.
 The recursive evaluator supports arbitrary finite depth without assigning a
 fixed number of physical levels. Recursion does not establish fractality,
 self-similarity, scale invariance, or infinite depth.
+
+## Coupling And Readout
+
+T12 adds channel tags and coupling profiles as observer parameters. The
+causal graph is unchanged; only record visibility changes by channel.
+
+T13 adds complex readout weights to accessible records. This introduces a
+new typed stage:
+
+```text
+record evidence
+  -> observer access
+  -> finality profile
+  -> temporal reconstruction
+  -> signed readout
+```
+
+The readout map used in T13 is:
+
+```text
+R(S) = |sum_{r in S} weight(r)|^2
+```
+
+The D1 finality profile does not include weight or phase. T13 shows this is
+not merely an implementation detail: identical profiles can have different
+readouts.
 
 ## Failure Conditions
 

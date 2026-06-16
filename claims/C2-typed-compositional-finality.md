@@ -31,6 +31,10 @@ for compatible evidence-token states. It also supplies minimal
 counterexamples to profile-level join, decision preservation under conflict,
 coarse-graining invariance, and local-to-global consistency.
 
+[T13](../tests/T13-signed-interfering-readout.md) extends the typed pipeline
+one step further: a stable finality profile still need not determine
+phase-sensitive readout.
+
 ## Failure Conditions
 
 - Provenance-preserving evidence merge fails its algebraic laws.

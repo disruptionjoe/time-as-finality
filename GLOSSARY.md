@@ -80,6 +80,38 @@ A record containing tokens, child record systems, and local expression
 context at arbitrary finite depth. Recursion alone does not imply
 self-similarity, scale invariance, infinite depth, or mathematical fractality.
 
+## Coupling Profile
+
+The set of channels through which a record can affect an observer. T12 varies
+coupling profile while keeping causal graph, observation event, and holder
+access fixed.
+
+## Constraint Hardness
+
+For a proposition, the fraction of coupled observers that are constrained by
+it after threshold reconstruction and binding checks.
+
+## Signed Readout
+
+A value read from accessible records using signed or complex weights. T13
+treats readout as a stage after record access and finality profiling.
+
+## Born-Style Readout
+
+The T13 map `R(S) = |sum weight(r)|^2` over accessible supporting records. It
+is a structural toy readout, not a derivation of the Born rule.
+
+## Phase-Class Counter
+
+A monotone count of records by exact weight class. Phase-class counters can
+recover T13's Born-style readout, which is why C3 is specifically about the
+phase-blind finality profile rather than all possible summaries.
+
+## Sorkin I2 / I3
+
+Interference terms for a set measure. In T13, `I2` is nonzero for some record
+sets while `I3` cancels symbolically for `mu(S) = |sum_S w|^2`.
+
 ## Stabilization Frontier
 
 The causally minimal event or set of events at which exactly one value for a

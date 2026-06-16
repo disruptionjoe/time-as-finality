@@ -48,6 +48,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T11: Compositional Finality](../tests/T11-compositional-finality.md)
+- [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 
 ## Contribution Needed
 
@@ -90,3 +91,13 @@ This strengthens the reason to treat D1 as a typed observer summary rather
 than the state space itself. Inherited expression, access, checkpoint policy,
 and conflict can change the profile or decision without changing all stored
 evidence.
+
+## Signed Readout Result
+
+[T13](../tests/T13-signed-interfering-readout.md) shows that the D1 profile is
+not a complete phase-sensitive readout state. Two evidence states can have
+the same profile `(2,2,2,2)` while their Born-style readouts are `4.0` and
+`0.0`.
+
+This does not invalidate D1 as a finality profile. It limits what the profile
+can be used for.

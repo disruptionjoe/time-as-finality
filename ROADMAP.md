@@ -25,6 +25,12 @@
   [T11](tests/T11-compositional-finality.md) to separate evidence joins,
   inherited expression, observer access, coarse-graining, profiles, and
   decisions across recursive record systems.
+- **Completed v0.1:** build
+  [T12](tests/T12-coupling-profile-reconstruction.md) to test
+  coupling-profile dependent reconstruction.
+- **Completed v0.1:** build
+  [T13](tests/T13-signed-interfering-readout.md) to separate finality
+  profiles from signed and interfering readout.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
 
@@ -53,12 +59,14 @@
 3. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
    system-apparatus-environment model and compare D1 directly with
    quantum-Darwinism redundancy.
-4. Replace T11's tree-only composition with overlapping local contexts,
+4. Test whether T13's signed-readout separation survives larger graphs, mixed
+   T12 coupling profiles, and T9-style dynamically generated records.
+5. Replace T11's tree-only composition with overlapping local contexts,
    explicit restriction maps, and a search for unique, multiple, or
    nonexistent global extensions.
-5. Replace the Landauer lower-bound calculation with an explicit stochastic
+6. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-6. Run a relativity sanity check for
+7. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-7. Add a black-hole specialist critique of
+8. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).

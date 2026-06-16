@@ -1,0 +1,80 @@
+﻿{
+  "threshold": 1,
+  "W1_profile_blindness": {
+    "profile_constructive": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "profile_destructive": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "readout_constructive": 4.0,
+    "readout_destructive": 0.0
+  },
+  "W2_anti_monotone_chain": {
+    "evidence_counts": [
+      1,
+      2,
+      3
+    ],
+    "profiles": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        2
+      ],
+      [
+        3,
+        3,
+        1,
+        3
+      ]
+    ],
+    "born_readouts": [
+      1.0,
+      0.0,
+      1.0
+    ],
+    "signed_counters": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "sorkin_I2_constructive": 2.0,
+  "sorkin_I2_destructive": -2.0,
+  "sorkin_I3_coefficients": {
+    "within_a": 0,
+    "within_b": 0,
+    "within_c": 0,
+    "cross_ab": 0,
+    "cross_ac": 0,
+    "cross_bc": 0
+  },
+  "sorkin_I3_symbolic_cancellation": true,
+  "observer_consistency": {
+    "readout_full_access": 1.0,
+    "readout_partial_access": 4.0
+  }
+}

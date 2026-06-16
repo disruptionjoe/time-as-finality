@@ -47,6 +47,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-compositional-finality-v0.1.md](TECHNICAL-REPORT-compositional-finality-v0.1.md)
   - evidence joins, inherited expression, recursive composition, and the
     failure of a universal finality semilattice.
+- [TECHNICAL-REPORT-signed-readout-v0.1.md](TECHNICAL-REPORT-signed-readout-v0.1.md)
+  - signed and interfering readout, with finite witnesses separating finality
+    profiles from Born-style readout.
 - [COMPOSITIONAL-FINALITY-LAB.md](COMPOSITIONAL-FINALITY-LAB.md)
   - T11 mechanisms, checkpoint policies, epigenetic lens, and counterexamples.
 - [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
@@ -99,6 +102,8 @@ python -m models.run_t1
 python -m models.run_emergence_lab
 python -m models.run_proof_carrying_finality
 python -m models.run_compositional_finality
+python -m models.run_t12
+python -m models.run_t13
 ```
 
 ## Citation / Reuse

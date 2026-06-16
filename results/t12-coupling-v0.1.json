@@ -1,0 +1,145 @@
+﻿{
+  "threshold": 2,
+  "omniscient_relation": [
+    [
+      "A",
+      "C"
+    ],
+    [
+      "B",
+      "C"
+    ],
+    [
+      "D",
+      "C"
+    ]
+  ],
+  "observers": {
+    "O1": {
+      "profile": [
+        "em",
+        "grav"
+      ],
+      "accepts_conditional": true,
+      "reconstructible": [
+        "A",
+        "B",
+        "C"
+      ],
+      "relation": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "constrained_by": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "O2": {
+      "profile": [
+        "grav",
+        "social"
+      ],
+      "accepts_conditional": true,
+      "reconstructible": [
+        "A",
+        "C",
+        "D"
+      ],
+      "relation": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "constrained_by": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    "O3": {
+      "profile": [
+        "grav"
+      ],
+      "accepts_conditional": true,
+      "reconstructible": [
+        "A",
+        "C"
+      ],
+      "relation": [
+        [
+          "A",
+          "C"
+        ]
+      ],
+      "constrained_by": [
+        "A",
+        "C"
+      ]
+    },
+    "O4": {
+      "profile": [
+        "grav",
+        "social"
+      ],
+      "accepts_conditional": false,
+      "reconstructible": [
+        "A",
+        "C",
+        "D"
+      ],
+      "relation": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "constrained_by": [
+        "A",
+        "C"
+      ]
+    }
+  },
+  "record_grades": {
+    "A": {
+      "channel": "grav",
+      "binding": "unconditional",
+      "reach": 1.0,
+      "hardness": 1.0
+    },
+    "B": {
+      "channel": "em",
+      "binding": "unconditional",
+      "reach": 0.25,
+      "hardness": 1.0
+    },
+    "C": {
+      "channel": "grav",
+      "binding": "unconditional",
+      "reach": 1.0,
+      "hardness": 1.0
+    },
+    "D": {
+      "channel": "social",
+      "binding": "conditional",
+      "reach": 0.5,
+      "hardness": 0.5
+    }
+  }
+}

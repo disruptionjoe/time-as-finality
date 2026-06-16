@@ -14,6 +14,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T9](tests/T9-emergence-laboratory.md) | Emergent records across reversible and irreversible local dynamics | D1, C1, T5 | implemented: comparative success |
 | [T10](tests/T10-proof-carrying-metastable-finality.md) | Proof-carrying metastable finality | A1, D1, D2 | implemented: operational success, epistemic limit |
 | [T11](tests/T11-compositional-finality.md) | Recursive compositional finality with inherited expression | C2, D1, D2 | implemented: evidence join, profile-level limit |
+| [T12](tests/T12-coupling-profile-reconstruction.md) | Coupling-profile reconstruction | M1, D2 | implemented: observer-profile divergence without contradiction |
+| [T13](tests/T13-signed-interfering-readout.md) | Signed and interfering readout | C3, D1, C2 | implemented: finality/readout separation |
 
 ## Minimum Compatibility Constraints
 
@@ -35,6 +37,8 @@ python -m models.run_t1
 python -m models.run_emergence_lab
 python -m models.run_proof_carrying_finality
 python -m models.run_compositional_finality
+python -m models.run_t12
+python -m models.run_t13
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -43,6 +47,8 @@ The suites use only Python's standard library. Evidence records:
 - [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
 - [Proof-Carrying Metastable Finality v0.1 Results](results/proof-carrying-metastable-finality-v0.1-results.md)
 - [Compositional Finality v0.1 Results](results/compositional-finality-v0.1-results.md)
+- [T12 Coupling-Profile v0.1 Results](results/t12-coupling-v0.1-results.md)
+- [T13 Signed Readout v0.1 Results](results/t13-signed-readout-v0.1-results.md)
 
 ## How To Add A Test
 

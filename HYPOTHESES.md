@@ -53,6 +53,29 @@ record through arbitrary finite nesting.
 See [C2](claims/C2-typed-compositional-finality.md) and
 [T11](tests/T11-compositional-finality.md).
 
+## H2a: Signed Readout Separation
+
+Observer-indexed finality profiles can grow monotonically while signed or
+phase-sensitive readout changes non-monotonically. Finality, temporal
+reconstruction, and readout are therefore distinct typed stages.
+
+Status: **supported in the finite T13 model**. Identical finality profiles can
+have different Born-style readouts, and monotonically growing profiles can
+produce readout `1.0, 0.0, 1.0`.
+
+See [C3](claims/C3-signed-readout-separation.md) and
+[T13](tests/T13-signed-interfering-readout.md).
+
+## H2b: Coupling-Profile Reconstruction
+
+An observer's accessible temporal relation can depend on coupling profile
+without producing causal contradiction.
+
+Status: **toy supported in T12**.
+
+See [M1](claims/M1-coupling-profile-reconstruction.md) and
+[T12](tests/T12-coupling-profile-reconstruction.md).
+
 ## H3: Quantum Under-Finalization Conjecture
 
 Quantum states can be real while not yet stabilized as classical records in a given observer-environment context.

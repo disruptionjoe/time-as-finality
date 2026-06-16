@@ -45,6 +45,8 @@ direct known neighbor and limits any novelty claim for this definition.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T11: Compositional Finality](../tests/T11-compositional-finality.md)
+- [T12: Coupling-Profile Reconstruction](../tests/T12-coupling-profile-reconstruction.md)
+- [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 
 ## Contribution Needed
 
@@ -69,3 +71,10 @@ than T1 but not an emergence result for observers themselves.
 explicit transformation between inherited expression and finality profiling.
 The same stored evidence can therefore yield different observer-facing
 profiles without being erased or physically reversed.
+
+## T12/T13 Result
+
+[T12](../tests/T12-coupling-profile-reconstruction.md) makes channel coupling
+an observer parameter. [T13](../tests/T13-signed-interfering-readout.md) shows
+that access differences can change readout while preserving local profile
+monotonicity.

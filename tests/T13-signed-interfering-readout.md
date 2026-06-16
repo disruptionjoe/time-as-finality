@@ -61,5 +61,6 @@ Witnesses:
 
 ## Result
 
-Status: implemented. T13 adds 16 passing tests, including a symbolic
-coefficient check for `I3 = 0`. The full branch suite passes `67/67`.
+Status: implemented. T13 adds 15 passing tests, including a symbolic
+coefficient check for `I3 = 0`. The current full branch suite passes `72/72`
+after T14 was added.

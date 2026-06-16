@@ -13,7 +13,8 @@ Core claim.
 
 ## Status
 
-Supported in the finite T13 model.
+Supported in the finite T13 model and preserved by the integrated T14 stress
+test.
 
 ## What This Does Not Claim
 
@@ -36,6 +37,11 @@ monotone counters and that phase-class counters recover the Born-style
 readout. The separation is therefore specifically from the D1 finality
 profile, not from all possible bookkeeping.
 
+[T14](../tests/T14-integrated-observer-context-finality.md) verifies the same
+separation inside a larger observer-context pipeline. Two integrated core
+graphs have the same finality profile `(3,3,1,3)` but readouts `1.0` and
+`9.0`.
+
 ## Failure Conditions
 
 - The D1 finality profile is enriched with phase information, making C3 a
@@ -46,5 +52,5 @@ profile, not from all possible bookkeeping.
 
 ## Contribution Needed
 
-Test whether the separation survives larger graphs, T12 mixed channels, and
-T9-style dynamically generated records.
+Test whether the separation survives generated families of larger graphs,
+mixed T12 channels, and T9-style dynamically generated records.

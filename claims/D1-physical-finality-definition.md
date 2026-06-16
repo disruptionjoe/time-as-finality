@@ -49,6 +49,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T11: Compositional Finality](../tests/T11-compositional-finality.md)
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
+- [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 
 ## Contribution Needed
 
@@ -101,3 +102,11 @@ the same profile `(2,2,2,2)` while their Born-style readouts are `4.0` and
 
 This does not invalidate D1 as a finality profile. It limits what the profile
 can be used for.
+
+## Integrated Pipeline Result
+
+[T14](../tests/T14-integrated-observer-context-finality.md) combines coupling,
+inherited expression, proof validation, Snowball-style confidence, finality
+profiling, and signed readout in one witness. It keeps D1 useful as an
+observer-indexed profile, but rejects any reading where that profile is also
+proof validity, protocol truth, or phase-sensitive readout.

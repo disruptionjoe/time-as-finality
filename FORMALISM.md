@@ -18,6 +18,12 @@
 > **Readout update:** [T13](tests/T13-signed-interfering-readout.md) adds
 > signed and complex readout weights after record access. The D1 finality
 > profile remains weight-blind and does not determine Born-style readout.
+>
+> **Integrated update:** [T14](tests/T14-integrated-observer-context-finality.md)
+> composes coupling, inherited expression, coarse-grained proof validation,
+> Snowball-style confidence, finality profiles, and signed readout in one
+> bounded witness. The result reinforces typed separation rather than a single
+> finality scalar.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -190,6 +196,27 @@ R(S) = |sum_{r in S} weight(r)|^2
 The D1 finality profile does not include weight or phase. T13 shows this is
 not merely an implementation detail: identical profiles can have different
 readouts.
+
+## Integrated Observer-Context Pipeline
+
+T14 uses the composite map:
+
+```text
+hidden state
+  -> record generation
+  -> inherited expression
+  -> observer coupling
+  -> coarse-graining and proof validation
+  -> Snowball-style reconciliation
+  -> finality profile
+  -> signed readout
+```
+
+Each arrow is a typed transformation. Proof validation rejects invalid
+certificates, but it does not reject valid dissent. Snowball-style confidence
+records protocol history, but it does not create truth. Inherited expression
+changes visibility without deleting stored identity. Signed readout remains
+outside the D1 finality profile.
 
 ## Failure Conditions
 

@@ -76,6 +76,19 @@ Status: **toy supported in T12**.
 See [M1](claims/M1-coupling-profile-reconstruction.md) and
 [T12](tests/T12-coupling-profile-reconstruction.md).
 
+## H2c: Integrated Observer-Context Pipeline
+
+Observer-relative finality remains coherent across coupling, inherited
+expression, proof filtering, protocol confidence, and signed readout only if
+those stages are kept typed and separate.
+
+Status: **supported as a finite stress test in T14**. The integrated witness
+preserves observer-relative profiles while showing that proof validity is not
+truth, consensus confidence is not truth, and finality profile still does not
+determine signed readout.
+
+See [T14](tests/T14-integrated-observer-context-finality.md).
+
 ## H3: Quantum Under-Finalization Conjecture
 
 Quantum states can be real while not yet stabilized as classical records in a given observer-environment context.
@@ -107,3 +120,5 @@ The project should weaken or reject its strongest claims if:
 7. the framework adds no clarity beyond existing decoherence, relational-time, or causal-structure accounts.
 8. a physics-grounded implementation collapses every finality dimension into
    ordinary redundancy or causal reachability.
+9. the integrated typed pipeline cannot survive combined coupling,
+   inherited-expression, proof, consensus, and signed-readout stress tests.

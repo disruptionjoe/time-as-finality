@@ -32,6 +32,10 @@ proof verification provides no advantage and confidence dynamics can amplify
 the wrong majority. A verified Bayesian/majority baseline matches or exceeds
 Snowball truth accuracy in every reported configuration.
 
+T14 preserves this limit inside the integrated observer-context pipeline.
+Proof-carrying Snowball reduces forged false finality in the probe, but valid
+dissent still passes verification and can drive false consensus.
+
 ## How It Could Mislead
 
 - Distributed systems usually presuppose time and protocol steps.
@@ -46,6 +50,7 @@ Snowball truth accuracy in every reported configuration.
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T3: Spacelike Events And No Global Commit Order](../tests/T3-spacelike-events-no-global-commit-order.md)
 - [T10: Proof-Carrying Metastable Finality](../tests/T10-proof-carrying-metastable-finality.md)
+- [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 
 ## Contribution Needed
 

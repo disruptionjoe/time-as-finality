@@ -47,6 +47,7 @@ direct known neighbor and limits any novelty claim for this definition.
 - [T11: Compositional Finality](../tests/T11-compositional-finality.md)
 - [T12: Coupling-Profile Reconstruction](../tests/T12-coupling-profile-reconstruction.md)
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
+- [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 
 ## Contribution Needed
 
@@ -78,3 +79,10 @@ profiles without being erased or physically reversed.
 an observer parameter. [T13](../tests/T13-signed-interfering-readout.md) shows
 that access differences can change readout while preserving local profile
 monotonicity.
+
+## T14 Result
+
+[T14](../tests/T14-integrated-observer-context-finality.md) treats observer
+context as a tuple of coupling profile, holder access, inherited expression
+state, and proof-verification policy. That is a stronger observer parameter
+than T1, but still not a conscious-observer model.

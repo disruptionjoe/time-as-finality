@@ -10,7 +10,8 @@ python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t13
 ```
 
-Result: T13 focused tests pass `16/16`; the full branch suite passes `67/67`.
+Result: T13 focused tests pass `15/15`; the current full branch suite passes
+`72/72` after T14 was added.
 Machine-readable output:
 [t13-signed-readout-v0.1.json](t13-signed-readout-v0.1.json).
 

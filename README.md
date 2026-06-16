@@ -50,6 +50,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-signed-readout-v0.1.md](TECHNICAL-REPORT-signed-readout-v0.1.md)
   - signed and interfering readout, with finite witnesses separating finality
     profiles from Born-style readout.
+- [TECHNICAL-REPORT-integrated-finality-v0.1.md](TECHNICAL-REPORT-integrated-finality-v0.1.md)
+  - integrated observer-context stress test across coupling, inherited
+    expression, proof validation, consensus confidence, and signed readout.
 - [COMPOSITIONAL-FINALITY-LAB.md](COMPOSITIONAL-FINALITY-LAB.md)
   - T11 mechanisms, checkpoint policies, epigenetic lens, and counterexamples.
 - [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
@@ -104,6 +107,7 @@ python -m models.run_proof_carrying_finality
 python -m models.run_compositional_finality
 python -m models.run_t12
 python -m models.run_t13
+python -m models.run_t14
 ```
 
 ## Citation / Reuse

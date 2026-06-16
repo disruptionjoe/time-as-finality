@@ -112,6 +112,13 @@ phase-blind finality profile rather than all possible summaries.
 Interference terms for a set measure. In T13, `I2` is nonzero for some record
 sets while `I3` cancels symbolically for `mu(S) = |sum_S w|^2`.
 
+## Integrated Observer-Context Pipeline
+
+The T14 sequence from hidden state to generated records, inherited
+expression, observer coupling, proof validation, Snowball-style confidence,
+finality profile, and signed readout. Its purpose is to prevent these stages
+from being collapsed into one overloaded notion of final truth.
+
 ## Stabilization Frontier
 
 The causally minimal event or set of events at which exactly one value for a

@@ -5,7 +5,8 @@
 An observer's reconstructed temporal relation can depend on its coupling
 profile: the channels through which records can affect it. Different coupling
 profiles can yield different, noncontradictory reconstructed relations from
-the same causal record graph.
+the same causal record graph. In a readout-bearing setting, coupling profile
+can also change observer-facing readout without changing the stored graph.
 
 ## Class
 
@@ -13,7 +14,7 @@ Conjecture.
 
 ## Status
 
-Toy supported by T12.
+Toy supported by T12 and preserved in T14.
 
 ## What This Does Not Claim
 
@@ -28,6 +29,11 @@ Toy supported by T12.
 record graph with four observer profiles. The observers reconstruct different
 relations, but no relation inverts the all-channel relation and observer
 pairs agree on shared reconstructible content.
+
+[T14](../tests/T14-integrated-observer-context-finality.md) shows the same
+coupling principle inside the integrated pipeline: a core observer and a
+gravity-only observer see different finality profiles and readouts from the
+same stored graph without producing a causal contradiction.
 
 ## Failure Conditions
 

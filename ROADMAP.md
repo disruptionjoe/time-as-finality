@@ -31,6 +31,10 @@
 - **Completed v0.1:** build
   [T13](tests/T13-signed-interfering-readout.md) to separate finality
   profiles from signed and interfering readout.
+- **Completed v0.1:** build
+  [T14](tests/T14-integrated-observer-context-finality.md) to stress the typed
+  pipeline across coupling, inherited expression, proof validation,
+  Snowball-style confidence, and signed readout.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
 
@@ -54,19 +58,21 @@
 1. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-2. Replace T10's ideal proof functionality with one concrete proof relation,
+2. Replace T14's hand-built finite witness with a generated family of
+   integrated observer-context graphs and search for minimal breakpoints.
+3. Replace T10's ideal proof functionality with one concrete proof relation,
    explicit proof costs, epoching, and stale-certificate revocation.
-3. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
+4. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
    system-apparatus-environment model and compare D1 directly with
    quantum-Darwinism redundancy.
-4. Test whether T13's signed-readout separation survives larger graphs, mixed
+5. Test whether T13's signed-readout separation survives larger graphs, mixed
    T12 coupling profiles, and T9-style dynamically generated records.
-5. Replace T11's tree-only composition with overlapping local contexts,
+6. Replace T11's tree-only composition with overlapping local contexts,
    explicit restriction maps, and a search for unique, multiple, or
    nonexistent global extensions.
-6. Replace the Landauer lower-bound calculation with an explicit stochastic
+7. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-7. Run a relativity sanity check for
+8. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-8. Add a black-hole specialist critique of
+9. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).

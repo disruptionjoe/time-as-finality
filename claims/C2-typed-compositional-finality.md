@@ -4,8 +4,9 @@
 
 Finality composes only through a typed sequence of operations. Underlying
 evidence can form a provenance-preserving join, while inherited expression,
-observer projection, profile construction, coarse-graining, and decision
-thresholds need not preserve that algebra.
+observer projection, profile construction, coarse-graining, proof validation,
+protocol confidence, readout, and decision thresholds need not preserve that
+algebra.
 
 ## Class
 
@@ -34,6 +35,11 @@ coarse-graining invariance, and local-to-global consistency.
 [T13](../tests/T13-signed-interfering-readout.md) extends the typed pipeline
 one step further: a stable finality profile still need not determine
 phase-sensitive readout.
+
+[T14](../tests/T14-integrated-observer-context-finality.md) composes coupling,
+inherited expression, proof filtering, Snowball-style confidence, finality
+profiling, and signed readout in one finite witness. It supports C2 by showing
+that the framework remains coherent only when those stages are not collapsed.
 
 ## Failure Conditions
 

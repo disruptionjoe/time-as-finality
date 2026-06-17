@@ -51,11 +51,10 @@
 
 ## Best First Contributions
 
-1. Formalize the consensus/record-formation equivalence by completing
-   [T11](tests/T11-d1-finality-definitions-crosswalk.md) and
-   [T14](tests/T14-finality-flp-impossibility.md). This is the fastest
-   publishable route because it can be stated as a computer-science theorem
-   without requiring new physics.
+1. Turn [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
+   impossibility witness into a formal theorem over a stated asynchronous
+   protocol model. This remains the fastest publishable route because it can
+   be stated as computer-science theory without requiring new physics.
 2. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
@@ -96,6 +95,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T15](tests/T15-causal-record-graph-as-causal-set.md): Causal Record Graph as Causal Set — check T1's graph against causal set axioms; positive result imports two decades of causal set quantum gravity results.
 
 - [T16](tests/T16-spacetime-aggregation.md): Spacetime Aggregation Toy Model - first executable gluing check for S1, with overlap and cycle obstruction witnesses.
+- [T17](tests/T17-consensus-finality-crosswalk.md): Consensus Finality Crosswalk - collapse maps from safety/liveness/economic finality into D1 and a bounded impossibility witness.
 
 ### New Open Problems
 

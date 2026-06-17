@@ -47,7 +47,18 @@ local record samples
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T3: Spacelike Events And No Global Commit Order](../tests/T3-spacelike-events-no-global-commit-order.md)
 - [T6: Snowball Record Finality](../tests/T6-snowball-record-finality.md)
+- [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
 
 ## Contribution Needed
 
 Map which distributed-systems concepts are safe analogies and which should be avoided. Start with Avalanche / Snowball as a bounded toy model of probabilistic confidence accumulation, not as a literal physics claim.
+
+## T17 Result
+
+[T17](../tests/T17-consensus-finality-crosswalk.md) makes the analogy
+explicit. Safety, liveness, and economic finality are modeled as collapses or
+projections of D1-style record finality. The bounded search also finds cases
+where standard distributed summaries agree while D1 profiles differ.
+
+This strengthens A1 as a formal analogy, not as a claim that physics literally
+runs a consensus protocol.

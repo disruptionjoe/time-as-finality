@@ -47,6 +47,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
+- [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
 
 ## Contribution Needed
 
@@ -65,3 +66,12 @@ traces and observer-relative access work on reversible and irreversible local
 dynamics. It also shows that logical information loss is neither necessary
 nor sufficient for an observer-accessible trace, and that three raw profile
 dimensions collapse in the simplest binary model.
+
+## Consensus Finality Crosswalk Result
+
+[T17](../tests/T17-consensus-finality-crosswalk.md) shows that distributed
+finality definitions collapse or project D1 dimensions. Safety ignores
+independent branch support, economic finality keeps only reversal cost, and
+liveness is a protocol progress condition rather than a D1 dimension.
+
+This strengthens D1's reason to keep dimensions separate.

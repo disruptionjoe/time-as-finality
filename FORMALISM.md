@@ -12,6 +12,11 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > treats observer-local finality domains as finite partial orders and tests
 > when they glue into a global compatibility structure. The output is a
 > partial order or an obstruction witness, not a spacetime derivation.
+>
+> **Consensus crosswalk update:** [T17](tests/T17-consensus-finality-crosswalk.md)
+> treats safety, liveness, and economic finality as collapses or projections
+> of D1-style record finality. Liveness remains a protocol progress condition,
+> not a D1 dimension.
 
 ## Primitive Inventory
 
@@ -156,3 +161,18 @@ local finality domains
 This construction is deliberately weaker than spacetime geometry. It defines
 the first compatibility object that any later colimit, sheaf, or causal-set
 proposal must preserve.
+
+## Consensus Finality Crosswalk
+
+T17 adds collapse maps from distributed-systems finality into the D1 profile:
+
+```text
+D1 profile
+  -> safety projection
+  -> liveness condition
+  -> economic-cost projection
+```
+
+The crosswalk is intentionally asymmetric. D1 can be projected into
+distributed summaries, but standard summaries can collapse distinctions that
+D1 retains, especially branch support and non-economic support structure.

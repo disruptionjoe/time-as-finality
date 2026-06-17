@@ -16,6 +16,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T8](tests/T8-observer-renderer-toy-model.md) | Observer renderer toy model | D2, G3 | open |
 | [T9](tests/T9-emergence-laboratory.md) | Emergent records across reversible and irreversible local dynamics | D1, C1, T5 | implemented: comparative success |
 | [T16](tests/T16-spacetime-aggregation.md) | Spacetime aggregation toy model | S1, H5, R1 | implemented: finite gluing and obstruction witnesses |
+| [T17](tests/T17-consensus-finality-crosswalk.md) | Consensus finality crosswalk | A1, D1 | implemented: collapse maps and bounded impossibility witness |
 
 ## Minimum Compatibility Constraints
 
@@ -39,6 +40,7 @@ python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
 python -m models.run_t16
+python -m models.run_t17
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -46,6 +48,7 @@ The suites use only Python's standard library. Evidence records:
 - [T1 v0.1 Results](results/T1-v0.1-results.md)
 - [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
 - [Spacetime Aggregation v0.1 Results](results/spacetime-aggregation-v0.1-results.md)
+- [Consensus Finality Crosswalk v0.1 Results](results/consensus-finality-crosswalk-v0.1-results.md)
 
 ## How To Add A Test
 

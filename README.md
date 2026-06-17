@@ -44,6 +44,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - comparative result across reversible and irreversible local dynamics.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
+- [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
+  - D1/distributed-systems finality crosswalk and bounded impossibility
+    witness.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -95,6 +98,7 @@ python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
 python -m models.run_t16
+python -m models.run_t17
 ```
 
 ## Citation / Reuse

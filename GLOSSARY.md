@@ -126,6 +126,12 @@ The stabilization of human-scale facts through shared records, institutions, art
 
 In this project, consensus means physical record-consistency, not social agreement or belief.
 
+## Consensus Finality Crosswalk
+
+The T17 comparison between D1 finality and distributed-systems finality.
+Safety, liveness, and economic finality are treated as collapses or
+projections of D1 dimensions, with explicit divergence witnesses.
+
 ## Commit Order
 
 An analogy from distributed systems. In this project it refers to a settled ordering of records or events for a given observer-network, not a literal cosmic blockchain.

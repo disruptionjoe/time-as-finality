@@ -1,0 +1,313 @@
+﻿{
+  "collapse_maps": [
+    {
+      "d1_dimensions_collapsed": [
+        "branch_support"
+      ],
+      "d1_dimensions_used": [
+        "accessible_support",
+        "holder_redundancy",
+        "reversal_cost"
+      ],
+      "distributed_definition": "a decided value cannot be contradicted by another quorum decision",
+      "name": "safety_finality",
+      "verdict": "partial collapse: safety ignores independent branch structure"
+    },
+    {
+      "d1_dimensions_collapsed": [
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ],
+      "d1_dimensions_used": [
+        "accessible_support"
+      ],
+      "distributed_definition": "a value becomes decided within a bounded delay assumption",
+      "name": "liveness_finality",
+      "verdict": "not a D1 dimension: liveness is a protocol progress condition"
+    },
+    {
+      "d1_dimensions_collapsed": [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support"
+      ],
+      "d1_dimensions_used": [
+        "reversal_cost"
+      ],
+      "distributed_definition": "reversal is expensive enough to be irrational or infeasible",
+      "name": "economic_finality",
+      "verdict": "strict collapse: economic finality keeps only one D1 dimension"
+    }
+  ],
+  "divergence_witnesses": [
+    {
+      "explanation": "safety finality agrees, but D1 distinguishes independent branch support",
+      "kind": "same_safety_different_branch_finality",
+      "left": {
+        "config": {
+          "branches": 1,
+          "confirmations": 1,
+          "name": "n1-q1-b1-c1-t1",
+          "nodes": 1,
+          "quorum": 1,
+          "resource_cost": 4,
+          "timeout_rounds": 1
+        },
+        "d1": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "economic_reversal_cost": 1,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      },
+      "right": {
+        "config": {
+          "branches": 2,
+          "confirmations": 1,
+          "name": "n2-q2-b2-c1-t2",
+          "nodes": 2,
+          "quorum": 2,
+          "resource_cost": 7,
+          "timeout_rounds": 2
+        },
+        "d1": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "economic_reversal_cost": 2,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      }
+    },
+    {
+      "explanation": "economic finality agrees, but support/redundancy/branch structure differ",
+      "kind": "same_economic_cost_different_d1_profile",
+      "left": {
+        "config": {
+          "branches": 1,
+          "confirmations": 2,
+          "name": "n1-q1-b1-c2-t1",
+          "nodes": 1,
+          "quorum": 1,
+          "resource_cost": 5,
+          "timeout_rounds": 1
+        },
+        "d1": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "economic_reversal_cost": 2,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      },
+      "right": {
+        "config": {
+          "branches": 1,
+          "confirmations": 1,
+          "name": "n2-q2-b1-c1-t2",
+          "nodes": 2,
+          "quorum": 2,
+          "resource_cost": 6,
+          "timeout_rounds": 2
+        },
+        "d1": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "economic_reversal_cost": 2,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      }
+    },
+    {
+      "explanation": "standard distributed summary collapses distinctions retained by D1",
+      "kind": "same_distributed_signature_different_d1_profile",
+      "left": {
+        "config": {
+          "branches": 1,
+          "confirmations": 2,
+          "name": "n1-q1-b1-c2-t1",
+          "nodes": 1,
+          "quorum": 1,
+          "resource_cost": 5,
+          "timeout_rounds": 1
+        },
+        "d1": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "economic_reversal_cost": 2,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      },
+      "right": {
+        "config": {
+          "branches": 1,
+          "confirmations": 1,
+          "name": "n2-q2-b1-c1-t2",
+          "nodes": 2,
+          "quorum": 2,
+          "resource_cost": 6,
+          "timeout_rounds": 2
+        },
+        "d1": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "economic_reversal_cost": 2,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      }
+    }
+  ],
+  "impossibility_witness": {
+    "budget": 10,
+    "component_maxima": [
+      4,
+      4,
+      3,
+      9
+    ],
+    "frontier_examples": [
+      {
+        "config": {
+          "branches": 2,
+          "confirmations": 4,
+          "name": "n2-q2-b2-c4-t2",
+          "nodes": 2,
+          "quorum": 2,
+          "resource_cost": 10,
+          "timeout_rounds": 2
+        },
+        "d1": [
+          2,
+          2,
+          2,
+          8
+        ],
+        "economic_reversal_cost": 8,
+        "live_under_delay": true,
+        "quorum_margin": 1,
+        "safety_final": true
+      },
+      {
+        "config": {
+          "branches": 1,
+          "confirmations": 3,
+          "name": "n3-q3-b1-c3-t3",
+          "nodes": 3,
+          "quorum": 3,
+          "resource_cost": 10,
+          "timeout_rounds": 3
+        },
+        "d1": [
+          3,
+          3,
+          1,
+          9
+        ],
+        "economic_reversal_cost": 9,
+        "live_under_delay": false,
+        "quorum_margin": 2,
+        "safety_final": true
+      },
+      {
+        "config": {
+          "branches": 2,
+          "confirmations": 2,
+          "name": "n3-q3-b2-c2-t3",
+          "nodes": 3,
+          "quorum": 3,
+          "resource_cost": 10,
+          "timeout_rounds": 3
+        },
+        "d1": [
+          3,
+          3,
+          2,
+          6
+        ],
+        "economic_reversal_cost": 6,
+        "live_under_delay": false,
+        "quorum_margin": 2,
+        "safety_final": true
+      },
+      {
+        "config": {
+          "branches": 3,
+          "confirmations": 1,
+          "name": "n3-q3-b3-c1-t3",
+          "nodes": 3,
+          "quorum": 3,
+          "resource_cost": 10,
+          "timeout_rounds": 3
+        },
+        "d1": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "economic_reversal_cost": 3,
+        "live_under_delay": false,
+        "quorum_margin": 2,
+        "safety_final": true
+      },
+      {
+        "config": {
+          "branches": 1,
+          "confirmations": 1,
+          "name": "n4-q4-b1-c1-t4",
+          "nodes": 4,
+          "quorum": 4,
+          "resource_cost": 10,
+          "timeout_rounds": 4
+        },
+        "d1": [
+          4,
+          4,
+          1,
+          4
+        ],
+        "economic_reversal_cost": 4,
+        "live_under_delay": false,
+        "quorum_margin": 2,
+        "safety_final": true
+      }
+    ],
+    "witness": "no admissible configuration reaches all component maxima"
+  },
+  "search": {
+    "configurations": 392,
+    "live_under_delay_count": 144,
+    "pareto_frontier_count": 5,
+    "safety_final_count": 117
+  },
+  "verdict": {
+    "bounded_impossibility_witness_found": true,
+    "d1_is_more_expressive_than_standard_distributed_signature": true,
+    "distributed_finality_is_safe_analogy": true,
+    "liveness_is_not_a_d1_dimension": true,
+    "physics_not_reduced_to_protocol": true
+  }
+}

@@ -54,6 +54,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TESTS.md](TESTS.md) - formalization and falsification paths.
 - [ROADMAP.md](ROADMAP.md) - best next contributions.
 - [GLOSSARY.md](GLOSSARY.md) - working definitions.
+- [personas/INDEX.md](personas/INDEX.md) - reusable persona lenses for structured critique.
+- [explorations/](explorations/) - heterodox sketches kept separate from core claims.
 
 ## How To Contribute
 
@@ -80,6 +82,16 @@ results/        Reproducible model outputs and evidence verdicts.
 literature/     Prior-art and known-neighbor notes.
 open-problems/  Unresolved technical questions.
 guardrails/     Explicit non-claims and misuse boundaries.
+personas/       Reusable lenses for dialectical review and critique.
+explorations/   Heterodox layer splits and sketches before claim promotion.
+```
+
+## Run The Formal Model
+
+```bash
+python -m unittest discover -s tests -p "test_*.py" -v
+python -m models.run_t1
+python -m models.run_emergence_lab
 ```
 
 ## Run The Formal Model

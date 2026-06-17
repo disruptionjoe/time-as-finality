@@ -87,6 +87,34 @@ record-bearing systems.
 
 A region or context in which a set of records can be stabilized and reconciled for a given observer-network.
 
+## Causal Domain
+
+The set of events, records, and record-bearing systems that can in principle affect or be accessed by an observer-system under the relevant causal constraints.
+
+## Overlapping Causal Regions
+
+Two or more causal domains whose records can become mutually accessible, allowing observers to reconcile histories without requiring a universal global state.
+
+## Remote Observation
+
+Record access through received signals from a distant source, such as photons from another galaxy. Remote observation is still causal access; it is distinct from direct local participation in the source region.
+
+## Direct Local Participation
+
+Interaction from within or near the event or region being recorded. This is stronger than remote observation but not required for a record to become part of an observer's accessible history.
+
+## Cognitive Renderer
+
+A proposed model of a conscious observer as a record-bearing system that integrates memory records, procedural scripts, sensory inputs, inherited context, shared social records, and causal-access limits into an action-guiding experienced world.
+
+## Body-Interface
+
+The rendered high-finality participation boundary through which an observer acts, is acted upon, and becomes causally addressable inside the observer-facing world. This does not mean the body is fake or arbitrary.
+
+## Social Finality
+
+The stabilization of human-scale facts through shared records, institutions, artifacts, memories, and repeated practice. Social finality can become very hard to undo while remaining distinct from physical invariance.
+
 ## Consensus
 
 In this project, consensus means physical record-consistency, not social agreement or belief.
@@ -94,3 +122,15 @@ In this project, consensus means physical record-consistency, not social agreeme
 ## Commit Order
 
 An analogy from distributed systems. In this project it refers to a settled ordering of records or events for a given observer-network, not a literal cosmic blockchain.
+
+## Bounded-Access Finality
+
+A finality framing in which an observer-system treats records as settled through stable, verifiable constraints under limited access, not through complete knowledge of the underlying global state.
+
+## Metastable Consensus
+
+An analogy from Avalanche / Snowball style protocols. It refers to a state where repeated local sampling and confidence accumulation make one candidate effectively stable while preserving an explicit residual reversal risk.
+
+## Proof-Carrying Record
+
+A proposed analogy in which a record carries or supports a verifiable constraint without disclosing the full underlying state. This is inspired by cryptographic proof systems and must not be treated as a literal claim that physical records are zero-knowledge proofs.

@@ -8,7 +8,8 @@ accessible record-formation events.
 
 Status: **partially supported in the finite T1 model**. A total-order reading
 is rejected by the minimal spacelike counterexample. Phenomenal experience is
-not modeled.
+not modeled. The phenomenal bridge is now treated as an open formal target,
+not as a permanently excluded topic.
 
 ## H1a: Physical Finality Definition
 
@@ -56,6 +57,44 @@ Black-hole horizons are stress tests for finality-domain boundaries because they
 
 See [B1](claims/B1-black-holes-finality-boundaries.md) and [T4](tests/T4-black-hole-causal-access-boundary.md).
 
+## H5: Spacetime Aggregation Conjecture
+
+Classical spacetime may be the compatibility structure produced by aggregating
+observer-local finality domains, rather than the primitive arena in which
+finality occurs.
+
+Status: **open formal target**. This is not a derivation of spacetime. It
+becomes meaningful only if the repo defines a gluing, aggregation, limit, or
+colimit construction that preserves known spacetime constraints.
+
+See [S1](claims/S1-spacetime-consensus-envelope.md) and
+[Spacetime as Finality Colimit](open-problems/spacetime-as-finality-colimit.md).
+
+## H6: Phenomenal Bridge Formal-Gap Conjecture
+
+The gap between third-person record finality and first-person experienced
+finality may be a formal obstruction rather than only a missing empirical
+detail.
+
+Status: **open formal target**. This does not solve consciousness. It asks
+whether the bridge fails because of type, complexity, fixed-point, or
+representation constraints that can be stated and tested.
+
+See [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
+and [Observer Closure Theorem](open-problems/observer-closure-theorem.md).
+
+## H7: Finality-Induced Direction Conjecture
+
+Finality structure may induce an observer-relative temporal direction that is
+distinct from thermodynamic entropy increase, without denying the
+thermodynamic arrow.
+
+Status: **open formal target**. The task is to separate any finality-induced
+direction from ordinary thermodynamic irreversibility and state the
+conditions under which the two agree or diverge.
+
+See [Arrow of Time as Constructor Theorem](open-problems/arrow-of-time-as-constructor-theorem.md).
+
 ## Failure Conditions
 
 The project should weaken or reject its strongest claims if:
@@ -69,3 +108,9 @@ The project should weaken or reject its strongest claims if:
 7. the framework adds no clarity beyond existing decoherence, relational-time, or causal-structure accounts.
 8. a physics-grounded implementation collapses every finality dimension into
    ordinary redundancy or causal reachability.
+9. spacetime aggregation cannot preserve known causal, metric, or covariance
+   constraints.
+10. the phenomenal bridge can be reduced to ordinary third-person record
+    computation with no remaining formal obstruction.
+11. finality-induced direction cannot be distinguished from ordinary
+    thermodynamic irreversibility in any admissible model.

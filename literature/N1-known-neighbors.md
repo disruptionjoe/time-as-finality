@@ -18,6 +18,8 @@ This project is not starting from nowhere. The claim space overlaps with several
 - Thermodynamic arrow of time.
 - Black-hole information and holography.
 - Distributed-systems finality, consensus, and partial orders.
+- Interface theory of perception and observer-window formalisms.
+- Conscious-agent / trace-logic programs using Markov kernels, trace order, finite sampling, and projection language.
 
 ## Contribution Needed
 
@@ -27,3 +29,7 @@ Add short literature notes that distinguish:
 2. what Time as Finality borrows;
 3. what Time as Finality adds, if anything;
 4. where the analogy breaks.
+
+## Current Notes
+
+- [N2: Hoffman Interface Theory And Trace Logic](N2-hoffman-interface-theory-and-trace-logic.md)

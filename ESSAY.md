@@ -6,7 +6,7 @@
 > observer-relative **partial-order** reconstruction but refutes a general
 > total-order reading. C1 is `weakened`; D1 is now `weakened` by the Emergence
 > Laboratory; D2 is `revised`. The models
-> do not establish a bridge from record reconciliation to phenomenal
+> does not establish a bridge from record reconciliation to phenomenal
 > temporal experience. See [the technical note](TECHNICAL-NOTE-v0.1.md).
 
 ## Claim Classes
@@ -57,7 +57,8 @@ This is not yet a physics theory. It is a claim about the architecture of experi
 `[TEST RESULT]` T1 does not establish that full sentence. It establishes the
 narrower result that accessible stabilization frontiers can induce a temporal
 partial order for a reconciler. Causally independent finalized records remain
-unordered, and the model contains no phenomenal-experience bridge.
+unordered. The phenomenal bridge remains unproven, but the repo now treats it
+as an open formal target rather than a forbidden question.
 
 In the shortest possible plain-language form:
 

@@ -21,6 +21,12 @@ Weakened.
 - It does not claim that records create all physical reality.
 - It does not claim that human memory is perfect or that observer access only grows.
 - It does not identify a graph traversal order with experienced succession.
+- It has not established a bridge from third-person record finality to
+  first-person experience.
+
+The phenomenal bridge is not closed off. It is an open formal target: the
+repo may investigate whether the gap is a type gap, complexity separation,
+self-reference obstruction, or category-theoretic non-factorability.
 
 ## Why It Might Be True
 
@@ -41,6 +47,8 @@ spacelike-independent records.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
+- [First-Person Finality and Complexity Separation](../open-problems/first-person-finality-complexity-separation.md)
+- [Observer Closure Theorem](../open-problems/observer-closure-theorem.md)
 
 ## Contribution Needed
 
@@ -48,6 +56,10 @@ Test whether the partial-order result remains nontrivial in a model where
 record formation and robustness arise from dynamics rather than being assigned
 as graph data. Any renewed claim about experience also needs a separate bridge
 from reconciliation to phenomenal succession.
+
+For the phenomenal bridge track, the minimum contribution is not a theory of
+consciousness. It is a precise statement of what a third-person record graph
+cannot represent, if anything, about first-person finality.
 
 ## T1 Result
 

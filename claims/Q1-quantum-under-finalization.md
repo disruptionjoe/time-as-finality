@@ -24,16 +24,36 @@ Open.
 
 The quantum/classical transition is deeply tied to record formation, decoherence, pointer bases, environmental redundancy, and observer access. "Under-finalized" may help distinguish real quantum constraint from settled classical fact.
 
+For entanglement, the safe finality chain is:
+
+```text
+entangled joint state
+  -> local measurement interaction
+  -> local record formation
+  -> decoherence / environmental redundancy
+  -> observer-relative finality
+  -> later causal comparison
+  -> globally reconciled correlation record
+```
+
+The key distinction is that an entangled joint constraint can be real before separated local observers share a classical finalized record. Shared classical finality requires causal reconciliation. The correlation is not a controllable faster-than-light message.
+
+Proof-carrying language may help here: later comparison can certify a nonclassical joint constraint without implying that either local observer had full access to the global state or a hidden local answer in advance.
+
 ## How It Could Fail
 
 - It adds no clarity beyond decoherence or quantum Darwinism.
 - It smuggles in collapse without saying so.
 - It cannot handle basis-dependence.
 - It violates Bell/no-signalling constraints.
+- It treats a later correlation record as if it were an earlier local hidden variable.
+- It turns proof or verification language into an encrypted-message metaphor for entanglement.
 
 ## Tests
 
 - [T2: Quantum Measurement Record Finality](../tests/T2-quantum-measurement-record-finality.md)
+- [T6: Snowball Record Finality](../tests/T6-snowball-record-finality.md)
+- [Proof-Carrying Record Finality](../open-problems/proof-carrying-record-finality.md)
 
 ## Contribution Needed
 

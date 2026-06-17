@@ -14,7 +14,7 @@ Conjecture.
 
 ## Status
 
-Toy supported by T12 and preserved in T14.
+Toy supported by T12 and preserved in T14/T15.
 
 ## What This Does Not Claim
 
@@ -34,6 +34,10 @@ pairs agree on shared reconstructible content.
 coupling principle inside the integrated pipeline: a core observer and a
 gravity-only observer see different finality profiles and readouts from the
 same stored graph without producing a causal contradiction.
+
+[T15](../tests/T15-generated-integrated-finality-stress.md) makes this
+systematic under its generated observer profiles: coupling divergence appears
+in every generated case.
 
 ## Failure Conditions
 

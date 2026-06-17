@@ -13,8 +13,8 @@ Core claim.
 
 ## Status
 
-Supported in the finite T13 model and preserved by the integrated T14 stress
-test.
+Supported in the finite T13 model, preserved by the integrated T14 stress
+test, and common in the generated T15 sweep.
 
 ## What This Does Not Claim
 
@@ -42,6 +42,10 @@ separation inside a larger observer-context pipeline. Two integrated core
 graphs have the same finality profile `(3,3,1,3)` but readouts `1.0` and
 `9.0`.
 
+[T15](../tests/T15-generated-integrated-finality-stress.md) finds
+profile/readout separation in `92.86%` of its generated cases. The minimal
+generated witness has profile `(2,2,1,2)` with readouts `0.0` and `4.0`.
+
 ## Failure Conditions
 
 - The D1 finality profile is enriched with phase information, making C3 a
@@ -52,5 +56,5 @@ graphs have the same finality profile `(3,3,1,3)` but readouts `1.0` and
 
 ## Contribution Needed
 
-Test whether the separation survives generated families of larger graphs,
-mixed T12 channels, and T9-style dynamically generated records.
+Test whether the separation survives branching/random graphs and T9-style
+dynamically generated phase-bearing records.

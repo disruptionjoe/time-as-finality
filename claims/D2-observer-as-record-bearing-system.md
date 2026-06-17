@@ -48,6 +48,7 @@ direct known neighbor and limits any novelty claim for this definition.
 - [T12: Coupling-Profile Reconstruction](../tests/T12-coupling-profile-reconstruction.md)
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 - [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
+- [T15: Generated Integrated Finality Stress Lab](../tests/T15-generated-integrated-finality-stress.md)
 
 ## Contribution Needed
 
@@ -86,3 +87,10 @@ monotonicity.
 context as a tuple of coupling profile, holder access, inherited expression
 state, and proof-verification policy. That is a stronger observer parameter
 than T1, but still not a conscious-observer model.
+
+## T15 Result
+
+[T15](../tests/T15-generated-integrated-finality-stress.md) varies generated
+observer contexts across 448 cases. This strengthens D2's role as an explicit
+parameterization of access and processing policy, not an appeal to subjective
+experience.

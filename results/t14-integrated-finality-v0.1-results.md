@@ -1,7 +1,7 @@
 # T14 Integrated Observer-Context Finality Results
 
 Result: T14 focused tests pass `5/5`; the current full branch suite passes
-`72/72`.
+`77/77` after T15 was added.
 
 ## Pipeline
 

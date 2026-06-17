@@ -82,12 +82,13 @@ Observer-relative finality remains coherent across coupling, inherited
 expression, proof filtering, protocol confidence, and signed readout only if
 those stages are kept typed and separate.
 
-Status: **supported as a finite stress test in T14**. The integrated witness
-preserves observer-relative profiles while showing that proof validity is not
-truth, consensus confidence is not truth, and finality profile still does not
-determine signed readout.
+Status: **supported as a finite stress test in T14 and a generated 448-case
+sweep in T15**. The integrated witness preserves observer-relative profiles
+while showing that proof validity is not truth, consensus confidence is not
+truth, and finality profile still does not determine signed readout.
 
-See [T14](tests/T14-integrated-observer-context-finality.md).
+See [T14](tests/T14-integrated-observer-context-finality.md) and
+[T15](tests/T15-generated-integrated-finality-stress.md).
 
 ## H3: Quantum Under-Finalization Conjecture
 

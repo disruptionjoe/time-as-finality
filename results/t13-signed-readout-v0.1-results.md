@@ -11,7 +11,7 @@ python -m models.run_t13
 ```
 
 Result: T13 focused tests pass `15/15`; the current full branch suite passes
-`72/72` after T14 was added.
+`77/77` after T15 was added.
 Machine-readable output:
 [t13-signed-readout-v0.1.json](t13-signed-readout-v0.1.json).
 

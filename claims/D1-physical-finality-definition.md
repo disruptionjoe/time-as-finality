@@ -50,6 +50,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T11: Compositional Finality](../tests/T11-compositional-finality.md)
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 - [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
+- [T15: Generated Integrated Finality Stress Lab](../tests/T15-generated-integrated-finality-stress.md)
 
 ## Contribution Needed
 
@@ -110,3 +111,7 @@ inherited expression, proof validation, Snowball-style confidence, finality
 profiling, and signed readout in one witness. It keeps D1 useful as an
 observer-indexed profile, but rejects any reading where that profile is also
 proof validity, protocol truth, or phase-sensitive readout.
+
+[T15](../tests/T15-generated-integrated-finality-stress.md) repeats this
+pressure across 448 generated cases. D1 remains useful as a profile, but the
+sweep reinforces that it is not readout, proof validity, consensus, or truth.

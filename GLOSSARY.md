@@ -119,6 +119,12 @@ expression, observer coupling, proof validation, Snowball-style confidence,
 finality profile, and signed readout. Its purpose is to prevent these stages
 from being collapsed into one overloaded notion of final truth.
 
+## Generated Integrated Stress Lab
+
+The T15 deterministic sweep over integrated record systems. It searches for
+repeatable success regions and minimal breakpoints rather than relying on one
+hand-built witness.
+
 ## Stabilization Frontier
 
 The causally minimal event or set of events at which exactly one value for a

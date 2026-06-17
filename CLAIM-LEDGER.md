@@ -5,12 +5,12 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
 | [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [C2](claims/C2-typed-compositional-finality.md) | core_claim | weakened | Evidence may compose by provenance-preserving join, while inherited expression, access, profiles, coarse-graining, proof validation, confidence, and decisions need not preserve that algebra. | [T11](tests/T11-compositional-finality.md), [T14](tests/T14-integrated-observer-context-finality.md) |
-| [C3](claims/C3-signed-readout-separation.md) | core_claim | supported | Phase-blind finality profiles do not determine signed or Born-style readout, even inside an integrated observer-context pipeline. | [T13](tests/T13-signed-interfering-readout.md), [T14](tests/T14-integrated-observer-context-finality.md) |
+| [C2](claims/C2-typed-compositional-finality.md) | core_claim | weakened | Evidence may compose by provenance-preserving join, while inherited expression, access, profiles, coarse-graining, proof validation, confidence, and decisions need not preserve that algebra. | [T11](tests/T11-compositional-finality.md), [T14](tests/T14-integrated-observer-context-finality.md), [T15](tests/T15-generated-integrated-finality-stress.md) |
+| [C3](claims/C3-signed-readout-separation.md) | core_claim | supported | Phase-blind finality profiles do not determine signed or Born-style readout, even across generated integrated observer-context cases. | [T13](tests/T13-signed-interfering-readout.md), [T14](tests/T14-integrated-observer-context-finality.md), [T15](tests/T15-generated-integrated-finality-stress.md) |
 | [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; T13 and T14 show its profile is not a complete phase-sensitive readout, proof, or consensus state. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T10](tests/T10-proof-carrying-metastable-finality.md), [T11](tests/T11-compositional-finality.md), [T13](tests/T13-signed-interfering-readout.md), [T14](tests/T14-integrated-observer-context-finality.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes capabilities; T12 makes coupling explicit; T14 combines coupling, expression, proof filtering, and readout as observer parameters. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T10](tests/T10-proof-carrying-metastable-finality.md), [T11](tests/T11-compositional-finality.md), [T12](tests/T12-coupling-profile-reconstruction.md), [T13](tests/T13-signed-interfering-readout.md), [T14](tests/T14-integrated-observer-context-finality.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
-| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | revised | Snowball-style sampling models bounded convergence and safety-liveness tradeoffs, not truth creation or physical law. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T10](tests/T10-proof-carrying-metastable-finality.md), [T14](tests/T14-integrated-observer-context-finality.md) |
-| [M1](claims/M1-coupling-profile-reconstruction.md) | conjecture | toy_supported | Coupling profile can change which temporal relation or readout an observer reconstructs without introducing causal contradiction. | [T12](tests/T12-coupling-profile-reconstruction.md), [T14](tests/T14-integrated-observer-context-finality.md) |
+| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | revised | Snowball-style sampling models bounded convergence and safety-liveness tradeoffs, not truth creation or physical law. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T10](tests/T10-proof-carrying-metastable-finality.md), [T14](tests/T14-integrated-observer-context-finality.md), [T15](tests/T15-generated-integrated-finality-stress.md) |
+| [M1](claims/M1-coupling-profile-reconstruction.md) | conjecture | toy_supported | Coupling profile can change which temporal relation or readout an observer reconstructs without introducing causal contradiction. | [T12](tests/T12-coupling-profile-reconstruction.md), [T14](tests/T14-integrated-observer-context-finality.md), [T15](tests/T15-generated-integrated-finality-stress.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | open | Quantum states may be real but not yet finalized as classical records in a given observer-environment context. | [T2](tests/T2-quantum-measurement-record-finality.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md) |
@@ -94,3 +94,15 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   have different signed readouts.
 - A1 remains `revised`: proof-carrying Snowball reduces forged false finality
   in the probe, but valid dissent remains a real failure case.
+
+### 2026-06-16 - Generated integrated finality stress lab
+
+- T15 replaces T14's single witness with a deterministic 448-case generated
+  sweep over core size, signed weights, expression masking, forged records,
+  and valid dissent.
+- C3 remains `supported`: profile/readout separation appears in `92.86%` of
+  generated cases.
+- A1 remains `revised`: proof filtering rejects forged records when required,
+  but valid dissent remains visible in every generated dissent case.
+- The main remaining limit is explicit: phase-bearing weights are still
+  assigned rather than dynamically generated.

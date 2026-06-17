@@ -35,6 +35,9 @@
   [T14](tests/T14-integrated-observer-context-finality.md) to stress the typed
   pipeline across coupling, inherited expression, proof validation,
   Snowball-style confidence, and signed readout.
+- **Completed v0.1:** build
+  [T15](tests/T15-generated-integrated-finality-stress.md) to replace T14's
+  single witness with a generated family and minimal breakpoint search.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
 
@@ -58,8 +61,8 @@
 1. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-2. Replace T14's hand-built finite witness with a generated family of
-   integrated observer-context graphs and search for minimal breakpoints.
+2. Make phase-bearing records arise from T9-style local dynamics rather than
+   assigning signed weights by hand.
 3. Replace T10's ideal proof functionality with one concrete proof relation,
    explicit proof costs, epoching, and stale-certificate revocation.
 4. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a

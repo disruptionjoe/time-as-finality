@@ -17,6 +17,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T12](tests/T12-coupling-profile-reconstruction.md) | Coupling-profile reconstruction | M1, D2 | implemented: observer-profile divergence without contradiction |
 | [T13](tests/T13-signed-interfering-readout.md) | Signed and interfering readout | C3, D1, C2 | implemented: finality/readout separation |
 | [T14](tests/T14-integrated-observer-context-finality.md) | Integrated observer-context finality | D1, D2, C2, C3, A1, M1 | implemented: typed-pipeline stress test |
+| [T15](tests/T15-generated-integrated-finality-stress.md) | Generated integrated finality stress lab | D1, D2, C2, C3, A1, M1 | implemented: generated successes and breakpoints |
 
 ## Minimum Compatibility Constraints
 
@@ -41,6 +42,7 @@ python -m models.run_compositional_finality
 python -m models.run_t12
 python -m models.run_t13
 python -m models.run_t14
+python -m models.run_t15
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -52,6 +54,7 @@ The suites use only Python's standard library. Evidence records:
 - [T12 Coupling-Profile v0.1 Results](results/t12-coupling-v0.1-results.md)
 - [T13 Signed Readout v0.1 Results](results/t13-signed-readout-v0.1-results.md)
 - [T14 Integrated Finality v0.1 Results](results/t14-integrated-finality-v0.1-results.md)
+- [T15 Generated Integrated Finality v0.1 Results](results/t15-generated-integrated-finality-v0.1-results.md)
 
 ## How To Add A Test
 

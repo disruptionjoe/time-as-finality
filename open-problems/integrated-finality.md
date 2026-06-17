@@ -10,8 +10,8 @@ T14 answers: yes, as a bounded witness, if the stages remain typed.
 
 ## Open Questions
 
-1. Does the integrated separation survive generated families of larger random
-   record graphs?
+1. Does the T15 generated-family result survive random graphs, branching
+   causal structures, and non-chain topologies?
 2. What are the minimal breakpoints where coupling, expression, proof
    validation, and readout become mutually inconsistent?
 3. Can proof costs, stale certificates, and epoch revocation be modeled

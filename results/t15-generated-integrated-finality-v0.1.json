@@ -1,0 +1,162 @@
+﻿{
+  "case_count": 448,
+  "sweep_axes": {
+    "core_sizes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "weight_patterns": "all non-all-positive +/-1 patterns",
+    "expression_masking": [
+      false,
+      true
+    ],
+    "adversary_modes": [
+      "none",
+      "forged",
+      "valid_dissent",
+      "both"
+    ]
+  },
+  "fractions": {
+    "robust_success": 0.11607142857142858,
+    "profile_readout_separation": 0.9285714285714286,
+    "coupling_divergence": 1,
+    "expression_preserves_identity": 0.5,
+    "forged_rejection_when_present": 1,
+    "valid_dissent_visible_when_present": 1
+  },
+  "minimal_witnesses": {
+    "robust_success": {
+      "case_id": "n2-wmp-mask1-f0d0",
+      "core_size": 2,
+      "weights": [
+        -1,
+        1
+      ],
+      "masked_phase_indices": [
+        1
+      ],
+      "include_forged": false,
+      "include_valid_dissent": false,
+      "core_profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "core_readout": 0.0,
+      "constructive_readout": 4.0,
+      "verified_social_readout": null,
+      "breakpoint_labels": [
+        "profile_readout_nonfactorization",
+        "expression_hides_stored_identity"
+      ]
+    },
+    "profile_readout_separation": {
+      "case_id": "n2-wmp-mask0-f0d0",
+      "core_size": 2,
+      "weights": [
+        -1,
+        1
+      ],
+      "masked_phase_indices": [],
+      "include_forged": false,
+      "include_valid_dissent": false,
+      "core_profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "core_readout": 0.0,
+      "constructive_readout": 4.0,
+      "verified_social_readout": null,
+      "breakpoint_labels": [
+        "profile_readout_nonfactorization"
+      ]
+    },
+    "expression_hides_stored_identity": {
+      "case_id": "n2-wmm-mask1-f0d0",
+      "core_size": 2,
+      "weights": [
+        -1,
+        -1
+      ],
+      "masked_phase_indices": [
+        1
+      ],
+      "include_forged": false,
+      "include_valid_dissent": false,
+      "core_profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "core_readout": 4.0,
+      "constructive_readout": 4.0,
+      "verified_social_readout": null,
+      "breakpoint_labels": [
+        "expression_hides_stored_identity"
+      ]
+    }
+  },
+  "minimal_breakpoints": {
+    "forgery_visible_without_proof_filter": {
+      "case_id": "n2-wmm-mask0-f1d0",
+      "core_size": 2,
+      "weights": [
+        -1,
+        -1
+      ],
+      "masked_phase_indices": [],
+      "include_forged": true,
+      "include_valid_dissent": false,
+      "core_profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "core_readout": 4.0,
+      "constructive_readout": 4.0,
+      "verified_social_readout": 4.0,
+      "breakpoint_labels": [
+        "forgery_visible_without_proof_filter"
+      ]
+    },
+    "valid_dissent_survives_proof_filter": {
+      "case_id": "n2-wmm-mask0-f0d1",
+      "core_size": 2,
+      "weights": [
+        -1,
+        -1
+      ],
+      "masked_phase_indices": [],
+      "include_forged": false,
+      "include_valid_dissent": true,
+      "core_profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "core_readout": 4.0,
+      "constructive_readout": 4.0,
+      "verified_social_readout": 9.0,
+      "breakpoint_labels": [
+        "valid_dissent_survives_proof_filter"
+      ]
+    },
+    "core_fails_to_reconstruct": null
+  },
+  "verdict": {
+    "t14_is_not_single_case_only": true,
+    "signed_readout_separation_is_common_in_sweep": true,
+    "proof_filter_rejects_forgery_when_required": true,
+    "proof_filter_does_not_eliminate_valid_dissent": true,
+    "generated_family_still_uses_assigned_phase_weights": true
+  }
+}

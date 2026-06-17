@@ -41,6 +41,11 @@ inherited expression, proof filtering, Snowball-style confidence, finality
 profiling, and signed readout in one finite witness. It supports C2 by showing
 that the framework remains coherent only when those stages are not collapsed.
 
+[T15](../tests/T15-generated-integrated-finality-stress.md) replaces that
+single witness with a 448-case deterministic sweep. It finds repeatable
+success regions and breakpoints, which supports typed separation as a
+family-level constraint rather than a one-off repair.
+
 ## Failure Conditions
 
 - Provenance-preserving evidence merge fails its algebraic laws.

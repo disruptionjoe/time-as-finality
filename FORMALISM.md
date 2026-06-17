@@ -24,6 +24,10 @@
 > Snowball-style confidence, finality profiles, and signed readout in one
 > bounded witness. The result reinforces typed separation rather than a single
 > finality scalar.
+>
+> **Generated stress update:** [T15](tests/T15-generated-integrated-finality-stress.md)
+> replaces the single T14 witness with a deterministic generated family. It
+> records both repeatable success regions and minimal breakpoints.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -217,6 +221,11 @@ certificates, but it does not reject valid dissent. Snowball-style confidence
 records protocol history, but it does not create truth. Inherited expression
 changes visibility without deleting stored identity. Signed readout remains
 outside the D1 finality profile.
+
+T15 turns this finite witness into a bounded generator over core size, signed
+weights, expression masking, forged records, and valid dissent. The generator
+does not add new primitives; it searches the existing typed pipeline for
+repeatable success and failure patterns.
 
 ## Failure Conditions
 

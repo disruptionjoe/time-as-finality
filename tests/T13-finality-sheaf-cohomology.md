@@ -37,4 +37,25 @@ H¹ nonzero would mean observer-indexed preorders cannot always be stitched into
 
 ## Contribution Needed
 
-Implement the finality sheaf on a small causal set (T1's 5-node graph is a natural starting point). Compute cohomology by hand or with a symbolic computation package. Identify the minimal total-order-counterexample from T1 as a candidate H¹ generator.
+~~Implement the finality sheaf on a small causal set (T1's 5-node graph is a natural starting point). Compute cohomology by hand or with a symbolic computation package. Identify the minimal total-order-counterexample from T1 as a candidate H¹ generator.~~
+
+The Cech cohomology machinery is now implemented in `models/spacetime_aggregation.py`. Status: implemented.
+
+## Result (2026-06-16)
+
+**Formal objects added:**
+
+- `FinalitySection`: assigns a finality score to each event within a domain, serving as the stalk data over a cover element.
+- `RestrictionMap`: an explicit typed morphism between two domain sections on their shared overlap, encoding how finality assignments restrict from one domain to another.
+
+**Cohomology machinery:**
+
+- Cech cochains C⁰ and C¹ are defined over a finite cover of domains.
+- `cech_coboundary_0` computes δ⁰: C⁰ → C¹.
+- `is_cech_1_cocycle` checks whether δ¹(c) = 0 on all triple overlaps.
+- `is_cech_1_coboundary` checks whether a 1-cochain equals δ⁰(f) for some global section f.
+- `compute_h1_obstruction` detects nontrivial H¹ elements — cochains that are cocycles but not coboundaries.
+
+**H¹ is now executable:** `h1_obstruction_scenario` is a canonical 3-domain example in which pairwise restriction maps are locally consistent but cannot be assembled into a global finality section. This is the first concrete topological obstruction in the TaF finite model.
+
+**What was NOT done:** This result is confined to the finite combinatorial model. It does not define a Lorentzian metric, derive Einstein equations, handle continuous restriction maps, or establish covariance under diffeomorphisms. The connection to physical spacetime geometry remains an open problem (see `open-problems/spacetime-as-finality-colimit.md`).

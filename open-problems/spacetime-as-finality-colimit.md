@@ -54,8 +54,9 @@ union must remain acyclic. Successful aggregation returns a global partial
 order. Failure returns either an overlap-disagreement witness or a global
 cycle witness.
 
-The result is intentionally weak: it defines the first gluing target but does
-not derive a manifold, metric, or physical spacetime.
+**Sheaf upgrade (2026-06-16):** The T16/T13 implementation adds `FinalitySection` and `RestrictionMap` as explicit formal objects, lifting overlap comparison from event-label equality to typed morphisms. Cech cohomology is now attached: H¹ obstruction detection is computable on the finite model. The canonical `h1_obstruction_scenario` demonstrates a 3-domain cover where pairwise restrictions are consistent but no global finality section exists — the first concrete topological obstruction in TaF.
+
+The result remains intentionally weak relative to this open problem: it defines a richer gluing target but does not derive a manifold, metric, causal Lorentzian structure, or any spacetime geometry. The gap from this finite combinatorial model to the colimit construction described above is the open problem.
 
 ## Contribution Needed
 

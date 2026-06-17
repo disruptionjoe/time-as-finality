@@ -32,9 +32,26 @@ TaF's alternative: if finality is the primitive, temporal asymmetry is not conti
 ## Connection to Existing Claims and Tests
 
 - [C1: Experienced Time as Record Finality](../claims/C1-experienced-time-as-record-finality.md)
+- [H7: Finality-Induced Direction](../claims/H7-finality-induced-direction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
+- [T18: Finality Direction Theorem](../tests/T18-finality-direction-theorem.md)
+
+## T18 Result
+
+T18 supplies the first executable theorem check. In a finite constructor-style
+model where admissible transformations are D1-monotone, strict finalization
+forms an acyclic partial order and the reverse of every strict finalization is
+impossible.
+
+The result is conditional. It derives a finality direction from the
+admissibility rule; it does not prove that physical systems instantiate that
+rule and does not derive the thermodynamic arrow.
 
 ## Contribution Needed
 
-Formalize the constructor-theoretic translation: which transformations on the T1 record graph are strictly impossible, which are possible but irreversible in practice, and which are possible and reversible? Then check whether the set of impossible transformations is closed under reversal. If it is not, state the theorem. If it is, characterize what TaF adds beyond ordinary thermodynamic irreversibility.
+Ground the constructor rule physically. Identify which transformations on the
+T1 record graph are strictly impossible, which are possible but practically
+irreversible, and which are possible and reversible. Then test whether the
+D1-monotone admissibility rule survives in a physics-grounded substrate rather
+than only in the finite constructor model.

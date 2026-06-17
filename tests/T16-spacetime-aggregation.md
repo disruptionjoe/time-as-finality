@@ -51,6 +51,12 @@ invariance.
 
 ## Contribution Needed
 
-Extend the toy from event-label overlap to typed restriction maps between
+~~Extend the toy from event-label overlap to typed restriction maps between
 local causal diamonds. Then test whether nontrivial sheaf/cohomology
-obstructions correspond to physically meaningful finality conflicts.
+obstructions correspond to physically meaningful finality conflicts.~~
+
+Both items are now implemented in `models/spacetime_aggregation.py`. Status: implemented.
+
+Restriction maps are now explicit typed morphisms (`RestrictionMap`) between domain sections on their overlap, replacing the earlier event-label equality check. Sheaf cohomology (Cech H¹) is attached: `compute_h1_obstruction` and `h1_obstruction_scenario` detect nontrivial obstructions to assembling a global finality section (see T13).
+
+**Remaining gap:** Restriction maps are defined combinatorially over a finite domain cover. Continuous restriction maps, covariance under domain relabeling, and any metric or Lorentzian structure are not present. The colimit to a physical spacetime object remains open (see `open-problems/spacetime-as-finality-colimit.md`).

@@ -186,3 +186,19 @@ The bounded theorem check keeps progress outside D1 and tests it beside D1:
 Under the stated finite protocol budget, no admissible configuration maximizes
 all five objectives simultaneously. This is a finite theorem check, not a
 universal distributed-systems impossibility theorem.
+
+## Finality-Induced Direction
+
+T18 adds a constructor-style admissibility rule:
+
+```text
+transformation is admissible iff no D1 dimension decreases
+```
+
+Strict finalization is an admissible transformation where at least one D1
+dimension increases. Under that rule, strict finalization edges form an
+acyclic partial order, and the reverse of every strict finalization is
+impossible.
+
+This derives a finality direction only inside the stated model. It does not
+derive entropy increase, coordinate time, proper time, or phenomenal flow.

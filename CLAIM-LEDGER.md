@@ -12,11 +12,13 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
+| [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction when admissible transformations are monotone in D1 finality. | [T18](tests/T18-finality-direction-theorem.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
 | [H-Domain](explorations/heliosphere-as-finality-domain.md) | conjecture | open | The heliosphere is a D1 finality domain: the heliopause is a substrate-exchange boundary where record-formation physics changes across D1's four dimensions in ways not reducible to particle density. | [T7](tests/T7-overlapping-causal-domains.md), exploration |
 | [H-Soft-Boundary](explorations/heliosphere-as-finality-domain.md) | potential_byproduct | open | Finality-domain boundaries fall on a continuous permeability spectrum: the heliopause (bidirectional, character-changing) and the event horizon (one-way, capped) are two points on it. Extends B1 with a boundary-permeability parameter. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
 | [N3](literature/N3-core-formalism-known-neighbors.md) | known_neighbor | active | Lamport, quantum Darwinism, IGUS, records-of-histories, and Landauer constrain the novelty and interpretation of v0.1. | Primary-source positioning |
 | [N4](literature/N4-emergence-lab-known-neighbors.md) | known_neighbor | active | Reversible computation, cellular automata, Landauer cost, coarse-graining, and Boolean sensitivity constrain the Emergence Laboratory. | Primary-source positioning |
+| H1-Sheaf | potential_byproduct | open | A Cech H¹ obstruction class for incompatible finality sections exists and is computable on finite domain covers; nontrivial H¹ means no global finality section exists even when pairwise restrictions agree. | [T13](tests/T13-finality-sheaf-cohomology.md) |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | not_claimed | active | Human belief does not create matter. | Guardrail |
 | [G2](guardrails/G2-not-a-replacement-theory.md) | not_claimed | active | This does not replace QM, GR, thermodynamics, or proper time. | Guardrail |
 | [G3](guardrails/G3-observer-rendering-not-mind-created-matter.md) | not_claimed | active | Observer rendering does not mean consciousness creates matter, spacetime, physical law, or other people. | Guardrail |
@@ -27,6 +29,8 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - `open_formal_target` - ambitious claim is allowed as a research target only
   with explicit definitions, tests, and failure conditions.
 - `active` - claim is currently used as a guardrail, analogy, or literature bridge.
+- `partially_supported` - finite tests support a narrowed form, while major
+  physical or generalization conditions remain open.
 - `revised` - claim has been changed substantially from an earlier version.
 - `weakened` - claim remains useful but no longer supports its original ambition.
 - `rejected` - claim failed a test or was superseded.
@@ -54,6 +58,10 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   computational, and thermodynamic irreversibility is rejected. The surviving
   result is a comparative framework for observer-indexed records.
 
+### 2026-06-16 - Sheaf Cohomology Implementation (T13/T16)
+
+- H1-Sheaf added as `potential_byproduct`, status `open`: Cech H¹ obstruction detection is now executable on the finite domain cover model. FinalitySection and RestrictionMap are the formal objects. The canonical h1_obstruction_scenario demonstrates nontrivial H¹ on a 3-domain cover.
+
 ### 2026-06-16 - Consensus Finality Theorem Check
 
 - A1 remains `active`: T17 now has explicit collapse maps, divergence
@@ -62,3 +70,10 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - D1 remains `weakened`: the theorem check supports keeping D1 dimensions
   separate, but only within the stated finite model and not as a universal
   physics claim.
+
+### 2026-06-16 - Finality Direction Theorem Check
+
+- H7 added as `partially_supported`: T18 proves that D1-monotone admissibility
+  induces an acyclic finality direction in a finite constructor model.
+- The guardrail remains active: this is not a derivation of the thermodynamic
+  arrow, proper time, or a physical law without further substrate grounding.

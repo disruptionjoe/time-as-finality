@@ -91,11 +91,15 @@ Finality structure may induce an observer-relative temporal direction that is
 distinct from thermodynamic entropy increase, without denying the
 thermodynamic arrow.
 
-Status: **open formal target**. The task is to separate any finality-induced
-direction from ordinary thermodynamic irreversibility and state the
-conditions under which the two agree or diverge.
+Status: **partially supported in the finite T18 constructor model**. T18
+shows that D1-monotone admissibility induces an acyclic finality direction
+whose strict reversals are impossible. The remaining task is to justify when
+physical systems instantiate that admissibility rule and when the finality
+direction agrees with or diverges from thermodynamic irreversibility.
 
-See [Arrow of Time as Constructor Theorem](open-problems/arrow-of-time-as-constructor-theorem.md).
+See [H7](claims/H7-finality-induced-direction.md),
+[T18](tests/T18-finality-direction-theorem.md), and
+[Arrow of Time as Constructor Theorem](open-problems/arrow-of-time-as-constructor-theorem.md).
 
 ## Failure Conditions
 

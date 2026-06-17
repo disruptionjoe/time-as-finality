@@ -1,0 +1,112 @@
+﻿{
+  "checks": {
+    "arrow_graph_acyclic": true,
+    "impossible_set_not_closed_under_reversal": true,
+    "partial_order_not_total": true,
+    "strict_edges_have_impossible_reverse": true
+  },
+  "search": {
+    "checked_states": 402,
+    "checked_transformations": 161202,
+    "impossible_transformations": 122193,
+    "strict_finalization_edges": 38205
+  },
+  "theorem": {
+    "assumptions": [
+      "States carry a D1 vector: support, redundancy, branch support, and reversal cost.",
+      "A transformation is admissible only if no D1 dimension decreases.",
+      "Strict finalization means at least one D1 dimension increases while none decrease.",
+      "The theorem derives a finality direction, not coordinate time, proper time, or entropy increase.",
+      "The thermodynamic-cost proxy is tracked separately and is not used to orient transformations."
+    ],
+    "holds": true,
+    "name": "T18 finality-induced direction theorem",
+    "statement": "In a finite constructor model where admissible transformations are D1-monotone, strict finalization induces an acyclic partial order; the reverse of every strict finalization is impossible."
+  },
+  "verdict": {
+    "arrow_is_partial_not_total": true,
+    "conditional_finality_arrow_derived": true,
+    "does_not_derive_thermodynamic_arrow": true,
+    "does_not_replace_proper_time": true
+  },
+  "witnesses": {
+    "impossible_reversal": {
+      "after": {
+        "d1": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "d1_rank": 0,
+        "name": "s0-h0-b0-r0-k0",
+        "thermodynamic_cost_proxy": 0
+      },
+      "before": {
+        "d1": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "d1_rank": 2,
+        "name": "s1-h0-b0-r1-k0",
+        "thermodynamic_cost_proxy": 0
+      },
+      "explanation": "The transformation decreases finalized record structure.",
+      "kind": "strict_definalization",
+      "possible": false
+    },
+    "incomparable_pair": [
+      {
+        "d1": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "d1_rank": 3,
+        "name": "s1-h0-b0-r2-k0",
+        "thermodynamic_cost_proxy": 0
+      },
+      {
+        "d1": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "d1_rank": 3,
+        "name": "s1-h0-b1-r1-k0",
+        "thermodynamic_cost_proxy": 0
+      }
+    ],
+    "thermodynamic_divergence": {
+      "after": {
+        "d1": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "d1_rank": 3,
+        "name": "s1-h0-b0-r2-k0",
+        "thermodynamic_cost_proxy": 0
+      },
+      "before": {
+        "d1": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "d1_rank": 2,
+        "name": "s1-h0-b0-r1-k0",
+        "thermodynamic_cost_proxy": 0
+      },
+      "explanation": "Every D1 dimension is preserved or increased, with at least one strict increase.",
+      "kind": "strict_finalization",
+      "possible": true
+    }
+  }
+}

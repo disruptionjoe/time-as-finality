@@ -1,7 +1,7 @@
 # T16 Dynamical Phase-Bearing Record Results
 
 Result: T16 focused tests pass `6/6`; the current full branch suite passes
-`83/83`.
+`91/91` after T17 was added.
 
 ## Derivation Rule
 

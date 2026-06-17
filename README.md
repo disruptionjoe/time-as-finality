@@ -58,6 +58,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     breakpoints.
 - [TECHNICAL-REPORT-dynamical-phase-records-v0.1.md](TECHNICAL-REPORT-dynamical-phase-records-v0.1.md)
   - local-dynamics derivation of signed record traces and cancellation.
+- [TECHNICAL-REPORT-persistent-dynamical-reconciler-v0.1.md](TECHNICAL-REPORT-persistent-dynamical-reconciler-v0.1.md)
+  - internally generated memory, access boundary, and comparison in a finite
+    local-update reconciler.
 - [COMPOSITIONAL-FINALITY-LAB.md](COMPOSITIONAL-FINALITY-LAB.md)
   - T11 mechanisms, checkpoint policies, epigenetic lens, and counterexamples.
 - [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
@@ -115,6 +118,7 @@ python -m models.run_t13
 python -m models.run_t14
 python -m models.run_t15
 python -m models.run_t16
+python -m models.run_t17
 ```
 
 ## Citation / Reuse

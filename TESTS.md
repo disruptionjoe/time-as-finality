@@ -19,6 +19,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T14](tests/T14-integrated-observer-context-finality.md) | Integrated observer-context finality | D1, D2, C2, C3, A1, M1 | implemented: typed-pipeline stress test |
 | [T15](tests/T15-generated-integrated-finality-stress.md) | Generated integrated finality stress lab | D1, D2, C2, C3, A1, M1 | implemented: generated successes and breakpoints |
 | [T16](tests/T16-dynamical-phase-bearing-records.md) | Dynamical phase-bearing records | D1, C2, C3, G2 | implemented: local dynamics generate signed traces |
+| [T17](tests/T17-persistent-dynamical-reconciler.md) | Persistent dynamical reconciler | C1, D1, D2, C2 | implemented: internally generated storage, boundary, and comparison |
 
 ## Minimum Compatibility Constraints
 
@@ -45,6 +46,7 @@ python -m models.run_t13
 python -m models.run_t14
 python -m models.run_t15
 python -m models.run_t16
+python -m models.run_t17
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -58,6 +60,7 @@ The suites use only Python's standard library. Evidence records:
 - [T14 Integrated Finality v0.1 Results](results/t14-integrated-finality-v0.1-results.md)
 - [T15 Generated Integrated Finality v0.1 Results](results/t15-generated-integrated-finality-v0.1-results.md)
 - [T16 Dynamical Phase Records v0.1 Results](results/t16-dynamical-phase-records-v0.1-results.md)
+- [T17 Persistent Dynamical Reconciler v0.1 Results](results/t17-persistent-dynamical-reconciler-v0.1-results.md)
 
 ## How To Add A Test
 

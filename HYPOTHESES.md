@@ -8,7 +8,9 @@ accessible record-formation events.
 
 Status: **partially supported in the finite T1 model**. A total-order reading
 is rejected by the minimal spacelike counterexample. Phenomenal experience is
-not modeled.
+not modeled. T17 strengthens the record-processing side by implementing a
+minimal reconciler whose memory, access boundary, and comparison state arise
+inside local dynamics.
 
 ## H1a: Physical Finality Definition
 
@@ -92,6 +94,17 @@ See [T14](tests/T14-integrated-observer-context-finality.md),
 [T15](tests/T15-generated-integrated-finality-stress.md), and
 [T16](tests/T16-dynamical-phase-bearing-records.md).
 
+## H2d: Persistent Reconciler Hypothesis
+
+Some observer-like structure can be modeled as an internal dynamical subsystem
+rather than only as a selected terminal access window: storage, write status,
+access boundary, and comparison can be represented as typed state components.
+
+Status: **toy supported in T17**. The result is deliberately minimal and does
+not model consciousness.
+
+See [T17](tests/T17-persistent-dynamical-reconciler.md).
+
 ## H3: Quantum Under-Finalization Conjecture
 
 Quantum states can be real while not yet stabilized as classical records in a given observer-environment context.
@@ -125,3 +138,5 @@ The project should weaken or reject its strongest claims if:
    ordinary redundancy or causal reachability.
 9. the integrated typed pipeline cannot survive combined coupling,
    inherited-expression, proof, consensus, and signed-readout stress tests.
+10. a generated reconciler cannot distinguish stored false records from absent
+    records or requires a terminal observer window to make its decision.

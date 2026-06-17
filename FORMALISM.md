@@ -32,6 +32,10 @@
 > **Dynamical phase update:** [T16](tests/T16-dynamical-phase-bearing-records.md)
 > derives `+1/-1` signed trace weights from local update dynamics. The result
 > preserves the finality/readout separation without hand-assigned signs.
+>
+> **Persistent reconciler update:** [T17](tests/T17-persistent-dynamical-reconciler.md)
+> represents storage, write status, access boundary, and comparison as
+> internal local-update state rather than a terminal observer window.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -240,6 +244,26 @@ terminal 1 -> 0 trace cell gives -1
 
 The finality profile remains phase-blind. The signed readout is a later typed
 stage over dynamically generated records.
+
+## Persistent Dynamical Reconciler
+
+T17 adds a minimal internal reconciler state:
+
+```text
+environment
+  -> sensors
+  -> persistent memory plus written flags
+  -> comparator
+  -> decision
+```
+
+Written flags are typed separately from stored values so that a stored false
+record is not confused with no record. The generated boundary is the set of
+holders causally wired into persistent memory or comparison.
+
+This is not a conscious-observer model. It only tests whether the observer
+role used by earlier record-graph models can be partially internalized into a
+finite local-update system.
 
 ## Failure Conditions
 

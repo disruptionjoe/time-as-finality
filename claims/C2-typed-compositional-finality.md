@@ -50,6 +50,12 @@ family-level constraint rather than a one-off repair.
 stage: signs can be generated from local trace direction while finality
 profiles remain phase-blind.
 
+[T17](../tests/T17-persistent-dynamical-reconciler.md) adds another typed
+separation inside the observer role: stored value, write status, generated
+access boundary, finality profile, and comparator decision are distinct state
+or evaluation layers. The written flag is necessary because stored false is
+not the same as no record.
+
 ## Failure Conditions
 
 - Provenance-preserving evidence merge fails its algebraic laws.

@@ -28,6 +28,12 @@ A trace-bearer that exposes its retained trace to a later causal interaction.
 
 A recorder that can compare multiple records and apply a fixed decision rule.
 
+## Persistent Dynamical Reconciler
+
+A T17 local-update subsystem with sensor cells, persistent memory cells,
+write-status flags, and an internal comparator. It generates a bounded access
+boundary from its wiring rather than receiving a terminal observer window.
+
 ## Finality Profile
 
 The tuple `(accessible support, holder redundancy, branch robustness, graph
@@ -130,6 +136,12 @@ hand-built witness.
 A T16 record whose sign is derived from local dynamics: `+1` for a terminal
 cell changed from `0` to `1` by a seed perturbation, and `-1` for a terminal
 cell changed from `1` to `0`.
+
+## Written Flag
+
+A storage-status bit that distinguishes a false-valued stored record from an
+unwritten memory cell. T17 uses written flags because false evidence is still
+evidence.
 
 ## Stabilization Frontier
 

@@ -52,6 +52,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 - [T15: Generated Integrated Finality Stress Lab](../tests/T15-generated-integrated-finality-stress.md)
 - [T16: Dynamical Phase-Bearing Records](../tests/T16-dynamical-phase-bearing-records.md)
+- [T17: Persistent Dynamical Reconciler](../tests/T17-persistent-dynamical-reconciler.md)
 
 ## Contribution Needed
 
@@ -123,3 +124,14 @@ sweep reinforces that it is not readout, proof validity, consensus, or truth.
 from local update dynamics. The D1-style profile remains phase-blind, while
 the same profile can produce readouts `0.0` and `4.0`. This strengthens D1 as
 a deliberately limited finality profile rather than a complete readout state.
+
+## Persistent Reconciler Result
+
+[T17](../tests/T17-persistent-dynamical-reconciler.md) computes finality
+profiles over records stored inside a local-update reconciler. This modestly
+strengthens D1 because record access is no longer only a terminal window
+selected after the run.
+
+The limit remains sharp: the architecture is designed, the records are few,
+and the profile is still a typed summary rather than a complete observer
+state.

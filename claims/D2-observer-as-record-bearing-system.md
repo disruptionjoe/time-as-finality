@@ -49,6 +49,7 @@ direct known neighbor and limits any novelty claim for this definition.
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 - [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 - [T15: Generated Integrated Finality Stress Lab](../tests/T15-generated-integrated-finality-stress.md)
+- [T17: Persistent Dynamical Reconciler](../tests/T17-persistent-dynamical-reconciler.md)
 
 ## Contribution Needed
 
@@ -94,3 +95,13 @@ than T1, but still not a conscious-observer model.
 observer contexts across 448 cases. This strengthens D2's role as an explicit
 parameterization of access and processing policy, not an appeal to subjective
 experience.
+
+## T17 Result
+
+[T17](../tests/T17-persistent-dynamical-reconciler.md) internalizes the
+minimal reconciler role into local dynamics. Sensors write persistent memory,
+written flags distinguish stored false from absent records, and an internal
+comparator produces the decision.
+
+This strengthens D2's record-processing side while preserving the guardrail:
+no phenomenal observer is modeled.

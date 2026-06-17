@@ -1,0 +1,196 @@
+﻿{
+  "mechanism": [
+    "environment cells drive sensors",
+    "sensor values latch into persistent memory cells",
+    "comparator reads memory cells",
+    "decision is internal to the dynamical state"
+  ],
+  "equal_case": {
+    "initial": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "final": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "access_boundary": [
+      "comparator",
+      "memory:A",
+      "memory:B"
+    ],
+    "decision": "true",
+    "profiles": {
+      "A": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "B": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "A=B": [
+        1,
+        1,
+        1,
+        5
+      ]
+    }
+  },
+  "unequal_case": {
+    "initial": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "final": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "access_boundary": [
+      "comparator",
+      "memory:A",
+      "memory:B"
+    ],
+    "decision": "false",
+    "profiles": {
+      "A": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "B": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "A=B": [
+        1,
+        1,
+        1,
+        5
+      ]
+    }
+  },
+  "interventions": [
+    {
+      "flip_field": "env_a",
+      "baseline_decision": "true",
+      "changed_decision": "false",
+      "decision_changed": true,
+      "baseline_boundary": [
+        "comparator",
+        "memory:A",
+        "memory:B"
+      ],
+      "changed_boundary": [
+        "comparator",
+        "memory:A",
+        "memory:B"
+      ]
+    },
+    {
+      "flip_field": "env_b",
+      "baseline_decision": "true",
+      "changed_decision": "false",
+      "decision_changed": true,
+      "baseline_boundary": [
+        "comparator",
+        "memory:A",
+        "memory:B"
+      ],
+      "changed_boundary": [
+        "comparator",
+        "memory:A",
+        "memory:B"
+      ]
+    }
+  ],
+  "sweep": {
+    "cases": 4,
+    "both_memory_records_fraction": 1.0,
+    "comparison_fraction": 1.0,
+    "true_decision_count": 2,
+    "false_decision_count": 2,
+    "generated_boundaries": [
+      [
+        "comparator",
+        "memory:A",
+        "memory:B"
+      ]
+    ]
+  },
+  "control_without_persistence": {
+    "pulse_state": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "final_state": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "records_at_final_state": 0,
+    "decision_at_final_state": null,
+    "persistent_reconciler_required": true
+  },
+  "verdict": {
+    "storage_arises_inside_dynamics": true,
+    "access_boundary_is_generated": true,
+    "reconciliation_is_internal": true,
+    "consciousness_not_modeled": true,
+    "observer_window_not_terminally_selected": true
+  }
+}

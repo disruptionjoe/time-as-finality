@@ -41,6 +41,7 @@ spacelike-independent records.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
+- [T17: Persistent Dynamical Reconciler](../tests/T17-persistent-dynamical-reconciler.md)
 
 ## Contribution Needed
 
@@ -54,3 +55,10 @@ from reconciliation to phenomenal succession.
 The v0.1 model reconstructs `A < C` and `B < C` while leaving spacelike `A`
 and `B` incomparable. A three-event graph is a counterexample to the stronger
 claim that accessible finalized records always determine a total order.
+
+## T17 Result
+
+[T17](../tests/T17-persistent-dynamical-reconciler.md) strengthens the
+"embedded reconciler" side of C1 by giving the reconciler persistent internal
+memory and an internal comparison bit. It does not strengthen the phenomenal
+experience side of the claim.

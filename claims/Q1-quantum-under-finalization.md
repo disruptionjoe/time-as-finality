@@ -65,7 +65,12 @@ contexts.
 This supports the narrow under-finalization claim: local classical records can
 be finalized in their own measurement contexts while a single global
 noncontextual record assignment remains unavailable. The result is structural,
-not a simulation of quantum probabilities.
+not a detector-level simulation.
+
+The probability-bearing extension compares three CHSH regimes: classical
+noncontextual score `2`, quantum Tsirelson score `2*sqrt(2)`, and PR-box
+no-signalling score `4`. This sharpens Q1's claim: quantum contextuality sits
+between global classical finality and post-quantum no-signalling consistency.
 - [Proof-Carrying Record Finality](../open-problems/proof-carrying-record-finality.md)
 
 ## Contribution Needed

@@ -3,7 +3,11 @@ import unittest
 from models.bell_contextuality_finality import (
     analyze_chsh_finality,
     canonical_chsh_finality_scenario,
+    classical_deterministic_model,
+    compare_probability_models,
     local_section_for_context,
+    pr_box_model,
+    quantum_tsirelson_model,
     run_t21_analysis,
 )
 
@@ -51,6 +55,44 @@ class BellContextualityFinalityTests(unittest.TestCase):
             result["verdict"]["physical_referent_is_structural_not_probabilistic"]
         )
         self.assertIn("not a simulation", result["interpretation"]["guardrail"])
+
+    def test_classical_model_respects_chsh_bound(self) -> None:
+        model = classical_deterministic_model()
+
+        self.assertEqual(model.chsh_score, 2.0)
+        self.assertTrue(model.global_assignment_available)
+        self.assertEqual(model.finality_status, "global_noncontextual_section_available")
+
+    def test_quantum_model_reaches_tsirelson_target(self) -> None:
+        comparison = compare_probability_models()
+        model = quantum_tsirelson_model()
+
+        self.assertAlmostEqual(model.chsh_score, comparison.tsirelson_bound)
+        self.assertGreater(model.chsh_score, comparison.classical_bound)
+        self.assertFalse(model.global_assignment_available)
+        self.assertEqual(model.finality_status, "local_sections_without_global_assignment")
+
+    def test_pr_box_reaches_no_signalling_extreme(self) -> None:
+        comparison = compare_probability_models()
+        model = pr_box_model()
+
+        self.assertEqual(model.chsh_score, comparison.no_signalling_bound)
+        self.assertGreater(model.chsh_score, comparison.tsirelson_bound)
+        self.assertTrue(model.no_signalling)
+
+    def test_probability_comparison_reports_three_way_separation(self) -> None:
+        comparison = compare_probability_models()
+
+        self.assertTrue(comparison.quantum_exceeds_classical)
+        self.assertTrue(comparison.quantum_respects_tsirelson)
+        self.assertTrue(comparison.pr_box_exceeds_tsirelson)
+
+    def test_full_analysis_includes_probability_bearing_result(self) -> None:
+        result = run_t21_analysis()
+
+        self.assertTrue(result["verdict"]["probability_bearing_chsh_model_added"])
+        self.assertTrue(result["verdict"]["classical_quantum_pr_separation_detected"])
+        self.assertEqual(len(result["probability_models"]["models"]), 3)
 
 
 if __name__ == "__main__":

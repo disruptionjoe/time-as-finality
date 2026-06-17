@@ -149,7 +149,9 @@ case is quorum-intersection safety mapped to redundant-holder overlap.
 
 The T21 finite CHSH-style model where every local measurement context has
 valid finality sections, but no global assignment exists. It is a structural
-contextuality certificate, not a quantum-probability simulation.
+contextuality certificate. The probability-bearing extension compares the
+classical bound `2`, quantum Tsirelson bound `2*sqrt(2)`, and PR-box
+no-signalling bound `4`.
 
 ## Finality-Induced Direction
 

@@ -45,10 +45,11 @@ can be globally consistent. The H1 sheaf obstruction is TaF-native: pairwise-com
 assignments can fail to extend globally. Decoherence has no corresponding global-consistency check.
 
 **Distinguishing criterion:** `[PARTIAL]`
-T21 constructs the finite CHSH parity version of this distinction. Each local measurement context
+T21 constructs the finite CHSH version of this distinction. Each local measurement context
 has valid finality sections and compatible named overlaps, but no global assignment exists.
-Decoherence can say each local context has a classical record; TaF adds the global-section check.
-The remaining work is to move from parity contextuality to a probability-bearing Bell simulation
+The probability extension compares classical score `2`, quantum Tsirelson score `2*sqrt(2)`,
+and PR-box no-signalling score `4`. Decoherence can say each local context has a classical
+record; TaF adds the global-section and CHSH-regime check. The remaining work is a detector-level
 or experimental mapping.
 
 **Falsification condition for TaF:** If the H1 sheaf obstruction vanishes whenever all pairwise
@@ -176,7 +177,7 @@ RQM predicts consistent local facts, TaF's cohomology adds nothing over RQM's co
 
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
-| 1 | Decoherence | CHSH parity contextuality certificate | `[PARTIAL]` -> T21 implemented; probability simulation open |
+| 1 | Decoherence | CHSH contextuality and score comparison | `[PARTIAL]` -> T21 implemented; detector mapping open |
 | 2 | Quantum Darwinism | R_delta vs D1-redundancy numerical check | `[PARTIAL]` → implement T2 |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |

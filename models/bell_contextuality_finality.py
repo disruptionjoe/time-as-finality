@@ -13,6 +13,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from itertools import product
+from math import cos, pi, sqrt
 
 
 Outcome = int
@@ -77,6 +78,55 @@ class CHSHFinalityAnalysis:
     physical_interpretation: str
 
 
+@dataclass(frozen=True)
+class CorrelationContext:
+    name: str
+    left: str
+    right: str
+    correlation: float
+    model_type: str
+
+    @property
+    def same_probability(self) -> float:
+        return (1.0 + self.correlation) / 2.0
+
+    @property
+    def different_probability(self) -> float:
+        return (1.0 - self.correlation) / 2.0
+
+
+@dataclass(frozen=True)
+class CHSHProbabilityModel:
+    name: str
+    model_type: str
+    contexts: tuple[CorrelationContext, ...]
+    global_assignment_available: bool
+    no_signalling: bool
+    description: str
+
+    @property
+    def chsh_score(self) -> float:
+        values = {context.name: context.correlation for context in self.contexts}
+        return values["A0B0"] + values["A0B1"] + values["A1B0"] - values["A1B1"]
+
+    @property
+    def finality_status(self) -> str:
+        if self.global_assignment_available:
+            return "global_noncontextual_section_available"
+        return "local_sections_without_global_assignment"
+
+
+@dataclass(frozen=True)
+class ProbabilityComparisonResult:
+    models: tuple[CHSHProbabilityModel, ...]
+    classical_bound: float
+    tsirelson_bound: float
+    no_signalling_bound: float
+    quantum_exceeds_classical: bool
+    quantum_respects_tsirelson: bool
+    pr_box_exceeds_tsirelson: bool
+
+
 def canonical_chsh_finality_scenario() -> CHSHFinalityScenario:
     a0 = MeasurementSetting("A0", "Alice")
     a1 = MeasurementSetting("A1", "Alice")
@@ -132,6 +182,7 @@ def analyze_chsh_finality(
 
 def run_t21_analysis() -> dict[str, object]:
     result = analyze_chsh_finality()
+    probability_result = compare_probability_models()
     return {
         "scenario": {
             "name": result.scenario.name,
@@ -189,13 +240,140 @@ def run_t21_analysis() -> dict[str, object]:
                 "of quantum amplitudes or a derivation of Bell probabilities."
             ),
         },
+        "probability_models": {
+            "bounds": {
+                "classical": probability_result.classical_bound,
+                "tsirelson": probability_result.tsirelson_bound,
+                "no_signalling": probability_result.no_signalling_bound,
+            },
+            "models": [
+                {
+                    "name": model.name,
+                    "model_type": model.model_type,
+                    "description": model.description,
+                    "chsh_score": model.chsh_score,
+                    "global_assignment_available": model.global_assignment_available,
+                    "no_signalling": model.no_signalling,
+                    "finality_status": model.finality_status,
+                    "contexts": [
+                        {
+                            "name": context.name,
+                            "left": context.left,
+                            "right": context.right,
+                            "correlation": context.correlation,
+                            "same_probability": context.same_probability,
+                            "different_probability": context.different_probability,
+                        }
+                        for context in model.contexts
+                    ],
+                }
+                for model in probability_result.models
+            ],
+            "checks": {
+                "quantum_exceeds_classical": probability_result.quantum_exceeds_classical,
+                "quantum_respects_tsirelson": probability_result.quantum_respects_tsirelson,
+                "pr_box_exceeds_tsirelson": probability_result.pr_box_exceeds_tsirelson,
+            },
+        },
         "verdict": {
             "bell_chsh_mapping_constructed": True,
             "local_finality_without_global_section": result.h1_style_obstruction,
             "contextuality_certificate_detected": result.no_global_assignment,
             "physical_referent_is_structural_not_probabilistic": True,
+            "probability_bearing_chsh_model_added": True,
+            "classical_quantum_pr_separation_detected": (
+                probability_result.quantum_exceeds_classical
+                and probability_result.quantum_respects_tsirelson
+                and probability_result.pr_box_exceeds_tsirelson
+            ),
         },
     }
+
+
+def classical_deterministic_model() -> CHSHProbabilityModel:
+    # One global assignment: A0=A1=B0=B1=+1. This saturates the
+    # classical CHSH bound and provides the noncontextual baseline.
+    contexts = (
+        CorrelationContext("A0B0", "A0", "B0", 1.0, "classical"),
+        CorrelationContext("A0B1", "A0", "B1", 1.0, "classical"),
+        CorrelationContext("A1B0", "A1", "B0", 1.0, "classical"),
+        CorrelationContext("A1B1", "A1", "B1", 1.0, "classical"),
+    )
+    return CHSHProbabilityModel(
+        name="classical_global_assignment",
+        model_type="classical_noncontextual",
+        contexts=contexts,
+        global_assignment_available=True,
+        no_signalling=True,
+        description="A deterministic hidden-variable assignment with CHSH score 2.",
+    )
+
+
+def quantum_tsirelson_model() -> CHSHProbabilityModel:
+    angles = {
+        "A0B0": (0.0, pi / 4),
+        "A0B1": (0.0, -pi / 4),
+        "A1B0": (pi / 2, pi / 4),
+        "A1B1": (pi / 2, -pi / 4),
+    }
+    contexts = tuple(
+        CorrelationContext(
+            name=name,
+            left=name[:2],
+            right=name[2:],
+            correlation=cos(left_angle - right_angle),
+            model_type="quantum",
+        )
+        for name, (left_angle, right_angle) in angles.items()
+    )
+    return CHSHProbabilityModel(
+        name="quantum_tsirelson_target",
+        model_type="quantum_contextual",
+        contexts=contexts,
+        global_assignment_available=False,
+        no_signalling=True,
+        description="Angle correlations giving CHSH score 2*sqrt(2).",
+    )
+
+
+def pr_box_model() -> CHSHProbabilityModel:
+    contexts = (
+        CorrelationContext("A0B0", "A0", "B0", 1.0, "pr_box"),
+        CorrelationContext("A0B1", "A0", "B1", 1.0, "pr_box"),
+        CorrelationContext("A1B0", "A1", "B0", 1.0, "pr_box"),
+        CorrelationContext("A1B1", "A1", "B1", -1.0, "pr_box"),
+    )
+    return CHSHProbabilityModel(
+        name="pr_box_no_signalling_extreme",
+        model_type="post_quantum_no_signalling",
+        contexts=contexts,
+        global_assignment_available=False,
+        no_signalling=True,
+        description="No-signalling extremal correlations with CHSH score 4.",
+    )
+
+
+def compare_probability_models() -> ProbabilityComparisonResult:
+    models = (
+        classical_deterministic_model(),
+        quantum_tsirelson_model(),
+        pr_box_model(),
+    )
+    classical_bound = 2.0
+    tsirelson_bound = 2.0 * sqrt(2.0)
+    no_signalling_bound = 4.0
+    quantum = models[1]
+    pr_box = models[2]
+    tolerance = 1e-9
+    return ProbabilityComparisonResult(
+        models=models,
+        classical_bound=classical_bound,
+        tsirelson_bound=tsirelson_bound,
+        no_signalling_bound=no_signalling_bound,
+        quantum_exceeds_classical=quantum.chsh_score > classical_bound,
+        quantum_respects_tsirelson=abs(quantum.chsh_score - tsirelson_bound) < tolerance,
+        pr_box_exceeds_tsirelson=pr_box.chsh_score > tsirelson_bound,
+    )
 
 
 def _global_assignment_exists(scenario: CHSHFinalityScenario) -> bool:

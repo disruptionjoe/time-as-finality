@@ -53,8 +53,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - theorem-transfer test between distributed consensus and physical record
     finality.
 - [TECHNICAL-REPORT-bell-contextuality-finality-v0.1.md](TECHNICAL-REPORT-bell-contextuality-finality-v0.1.md)
-  - Bell/CHSH-style contextuality mapping for local finality without global
-    section.
+  - Bell/CHSH contextuality and score comparison for local finality without
+    global section.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical

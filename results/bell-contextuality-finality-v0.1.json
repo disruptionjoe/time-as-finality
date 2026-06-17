@@ -94,6 +94,149 @@
       ]
     }
   ],
+  "probability_models": {
+    "bounds": {
+      "classical": 2.0,
+      "no_signalling": 4.0,
+      "tsirelson": 2.8284271247461903
+    },
+    "checks": {
+      "pr_box_exceeds_tsirelson": true,
+      "quantum_exceeds_classical": true,
+      "quantum_respects_tsirelson": true
+    },
+    "models": [
+      {
+        "chsh_score": 2.0,
+        "contexts": [
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A0",
+            "name": "A0B0",
+            "right": "B0",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A0",
+            "name": "A0B1",
+            "right": "B1",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A1",
+            "name": "A1B0",
+            "right": "B0",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A1",
+            "name": "A1B1",
+            "right": "B1",
+            "same_probability": 1.0
+          }
+        ],
+        "description": "A deterministic hidden-variable assignment with CHSH score 2.",
+        "finality_status": "global_noncontextual_section_available",
+        "global_assignment_available": true,
+        "model_type": "classical_noncontextual",
+        "name": "classical_global_assignment",
+        "no_signalling": true
+      },
+      {
+        "chsh_score": 2.8284271247461903,
+        "contexts": [
+          {
+            "correlation": 0.7071067811865476,
+            "different_probability": 0.1464466094067262,
+            "left": "A0",
+            "name": "A0B0",
+            "right": "B0",
+            "same_probability": 0.8535533905932737
+          },
+          {
+            "correlation": 0.7071067811865476,
+            "different_probability": 0.1464466094067262,
+            "left": "A0",
+            "name": "A0B1",
+            "right": "B1",
+            "same_probability": 0.8535533905932737
+          },
+          {
+            "correlation": 0.7071067811865476,
+            "different_probability": 0.1464466094067262,
+            "left": "A1",
+            "name": "A1B0",
+            "right": "B0",
+            "same_probability": 0.8535533905932737
+          },
+          {
+            "correlation": -0.7071067811865475,
+            "different_probability": 0.8535533905932737,
+            "left": "A1",
+            "name": "A1B1",
+            "right": "B1",
+            "same_probability": 0.14644660940672627
+          }
+        ],
+        "description": "Angle correlations giving CHSH score 2*sqrt(2).",
+        "finality_status": "local_sections_without_global_assignment",
+        "global_assignment_available": false,
+        "model_type": "quantum_contextual",
+        "name": "quantum_tsirelson_target",
+        "no_signalling": true
+      },
+      {
+        "chsh_score": 4.0,
+        "contexts": [
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A0",
+            "name": "A0B0",
+            "right": "B0",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A0",
+            "name": "A0B1",
+            "right": "B1",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": 1.0,
+            "different_probability": 0.0,
+            "left": "A1",
+            "name": "A1B0",
+            "right": "B0",
+            "same_probability": 1.0
+          },
+          {
+            "correlation": -1.0,
+            "different_probability": 1.0,
+            "left": "A1",
+            "name": "A1B1",
+            "right": "B1",
+            "same_probability": 0.0
+          }
+        ],
+        "description": "No-signalling extremal correlations with CHSH score 4.",
+        "finality_status": "local_sections_without_global_assignment",
+        "global_assignment_available": false,
+        "model_type": "post_quantum_no_signalling",
+        "name": "pr_box_no_signalling_extreme",
+        "no_signalling": true
+      }
+    ]
+  },
   "scenario": {
     "contexts": [
       {
@@ -151,8 +294,10 @@
   },
   "verdict": {
     "bell_chsh_mapping_constructed": true,
+    "classical_quantum_pr_separation_detected": true,
     "contextuality_certificate_detected": true,
     "local_finality_without_global_section": true,
-    "physical_referent_is_structural_not_probabilistic": true
+    "physical_referent_is_structural_not_probabilistic": true,
+    "probability_bearing_chsh_model_added": true
   }
 }

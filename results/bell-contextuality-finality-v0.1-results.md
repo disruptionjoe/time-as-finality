@@ -1,6 +1,6 @@
 # Bell Contextuality Finality Results
 
-Result: T21 focused tests pass `5/5`.
+Result: T21 focused tests pass `10/10`.
 
 ## Model
 
@@ -46,6 +46,27 @@ A0^2 A1^2 B0^2 B1^2 = +1
 
 So local finality sections exist, but no global finality section exists.
 
+## Probability-Bearing CHSH Models
+
+T21 now compares three probability-bearing cases:
+
+| Model | CHSH score | Global assignment? | Status |
+| --- | ---: | --- | --- |
+| classical deterministic | `2.0` | yes | classical bound |
+| quantum Tsirelson target | `2.8284271247461903` | no | exceeds classical, respects Tsirelson |
+| PR-box no-signalling extreme | `4.0` | no | exceeds Tsirelson, post-quantum |
+
+The bounds are:
+
+```text
+classical <= 2
+quantum <= 2*sqrt(2)
+no-signalling <= 4
+```
+
+The quantum target uses angle correlations to reach `2*sqrt(2)`. The PR-box
+case preserves no-signalling but exceeds the quantum bound.
+
 ## Interpretation
 
 T21 gives T13's sheaf obstruction a Bell/CHSH-style physical referent:
@@ -55,8 +76,9 @@ local measurement records can be final in their contexts
 without admitting one global noncontextual record assignment.
 ```
 
-This is a finite contextuality certificate. It is not a quantum probability
-simulation and does not derive Bell statistics.
+The first T21 result is a finite contextuality certificate. The probability
+extension adds the standard CHSH numerical separation, but still does not
+simulate detector dynamics, decoherence, or experimental noise.
 
 ## Reproduction
 

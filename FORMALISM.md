@@ -222,6 +222,18 @@ overlaps are compatible. But no global assignment to `A0`, `A1`, `B0`, and
 `B1` satisfies all contexts. This is the first Bell-style contextuality
 certificate for local finality without global finality.
 
+The probability-bearing extension compares CHSH scores:
+
+```text
+classical noncontextual = 2
+quantum Tsirelson       = 2*sqrt(2)
+PR-box no-signalling   = 4
+```
+
+The finality interpretation is that classical models admit a global section,
+while quantum and PR-box correlations have local context sections without a
+global classical assignment.
+
 ## Finality-Induced Direction
 
 T18 adds a constructor-style admissibility rule:

@@ -11,8 +11,10 @@ This gives the H1/sheaf obstruction a concrete physical referent: local
 measurement records can be final in their own contexts without admitting a
 single global noncontextual record assignment.
 
-The result is structural. It does not simulate quantum amplitudes, derive Bell
-probabilities, or claim to reproduce a full laboratory Bell experiment.
+The first result is structural. The current extension adds probability-bearing
+CHSH scores for three reference cases: classical noncontextual, quantum
+Tsirelson, and PR-box no-signalling. It still does not simulate detector
+dynamics, decoherence, or experimental noise.
 
 ## 1. Model
 
@@ -90,7 +92,47 @@ T21 shows the next layer. Even when local records are valid in every context,
 there may be no global noncontextual assignment. The issue is not direct
 certificate contradiction; it is contextual gluing failure.
 
-## 5. Claim Impact
+## 5. Probability-Bearing CHSH Extension
+
+T21 now compares three correlation models:
+
+| Model | CHSH score | Global assignment? | Interpretation |
+| --- | ---: | --- | --- |
+| classical deterministic | `2.0` | yes | noncontextual baseline |
+| quantum Tsirelson target | `2.8284271247461903` | no | quantum contextual target |
+| PR-box no-signalling extreme | `4.0` | no | post-quantum no-signalling boundary |
+
+The bounds are:
+
+```text
+classical <= 2
+quantum <= 2*sqrt(2)
+no-signalling <= 4
+```
+
+The quantum model uses angle correlations:
+
+```text
+E(A, B) = cos(theta_A - theta_B)
+```
+
+with settings chosen to produce:
+
+```text
+S = E(A0B0) + E(A0B1) + E(A1B0) - E(A1B1) = 2*sqrt(2)
+```
+
+The finality reading is:
+
+```text
+classical: global noncontextual section available
+quantum: local probability-bearing sections without global classical section
+PR-box: no-signalling local sections beyond quantum finality constraints
+```
+
+This makes the Bell bridge numerical rather than only parity-based.
+
+## 6. Claim Impact
 
 T21 strengthens [Q1](claims/Q1-quantum-under-finalization.md): quantum
 under-finalization now has a finite contextuality model where local classical
@@ -103,15 +145,16 @@ T21 narrows [A1](claims/A1-distributed-systems-finality-analogy.md):
 distributed quorum safety is useful, but contextuality/global-section failure
 requires the sheaf layer.
 
-## 6. Limits
+## 7. Limits
 
-- The model is finite and parity-based.
-- It does not calculate quantum probabilities.
-- It does not simulate detectors, amplitudes, decoherence, or spacetime
+- The model is finite.
+- The probability extension uses ideal correlation formulas; it does not
+  simulate detectors, amplitudes, decoherence, or spacetime
   separation.
-- It gives a structural contextuality certificate, not a full Bell experiment.
+- It gives a contextuality and CHSH-score certificate, not a full Bell
+  experiment.
 
-## 7. Reproduction
+## 8. Reproduction
 
 ```bash
 python -m unittest tests.test_bell_contextuality_finality -v

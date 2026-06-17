@@ -120,3 +120,49 @@ Four ideas had strong multi-disciplinary convergence in the voting pass — inde
 2. **Phenomenal bridge as formal incompleteness** — 5 formalisms, all saying the gap admits a theorem rather than a discovery.
 3. **Temporal direction from impossible transformations** — 6 formalisms, all deriving time's arrow without entropy.
 4. **Distributed consensus = physical record formation** — 8+ approaches, the most multi-disciplinary convergence in the sprint.
+
+## Phase 6: Post-Implementation Sprint — 2026-06-17
+
+v2 idea sprint run after T13/T16 Cech cohomology, T18 finality direction theorem, and 6 new open
+problems were added. Seven convergence clusters found. Full sprint at
+[explorations/all-persona-idea-sprint-2026-06-16-v2.md](explorations/all-persona-idea-sprint-2026-06-16-v2.md).
+
+### Priority Actions from v2 Sprint
+
+1. **Extend T13 to include a Bell-test mapping.** Five groups independently identified the H1
+   generator as a candidate for correspondence with CHSH inequality violation. Map T13's 3-domain
+   obstruction to two spacelike-separated measurement apparatuses. If the mapping holds, Bell
+   inequality violation becomes a physical certificate of nontrivial H1.
+
+2. **Write the TaF-native impossibility theorem.** Six groups from distributed systems,
+   computability, constructor theory, and foundational math all pointed at the same vacancy:
+   TaF borrows its impossibility intuitions from FLP/CAP rather than proving them from D1 axioms.
+   Extend T14 or T17 to produce a D1-native impossibility proof that does not invoke FLP as a lemma.
+
+3. **Implement T8 (Observer-Renderer) as a fixed-point existence test.** T19 asks whether an
+   observer can *verify* its own finality assignment from within its accessible subgraph. T8 asks
+   whether such a fixed point exists at all. Both tests needed; T8 is the prerequisite.
+
+4. **Add D1 reduction map table to FORMALISM.md.** Six groups across general relativity, gauge
+   theory, Kaluza-Klein, and foundational formalism all require: for each D1 dimension, what
+   physical observable does it reduce to in the 3+1D classical limit, and is it Lorentz-invariant?
+
+### New Items from v2 Sprint
+
+- [T19](tests/T19-phenomenal-bridge-complexity-separation.md): Phenomenal Bridge as Complexity
+  Separation — formal decision-problem formulation of H6; complexity-class placement conjecture
+  for first-person vs third-person finality verification.
+- [literature/distinguishing-predictions.md](literature/distinguishing-predictions.md): Explicit
+  distinguishing predictions table over 7 named neighbors (decoherence, quantum Darwinism,
+  relational time, causal sets, thermodynamic arrow, FLP/CAP, RQM). Required before external
+  communication.
+
+### v2 Convergence Signals (7 clusters)
+
+1. **H1-Sheaf obstruction is load-bearing and underexploited** — 7 personas across 4 traditions
+2. **TaF needs native impossibility results, not borrowed ones** — 6 personas from 4 fields
+3. **Phenomenal bridge is a formal separation problem** — 7 personas (→ T19)
+4. **D1 dimensions need reduction maps to 4D observables** — 6 personas from 4 traditions
+5. **H1 generator maps to a Bell test setup** — 5 quantum + topology personas
+6. **Distinguishing-predictions table is the top documentation gap** — 6 critical/strategic lenses
+7. **Observer self-reference requires fixed-point treatment** — 6 personas from 4 groups

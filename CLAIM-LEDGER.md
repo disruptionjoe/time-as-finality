@@ -18,7 +18,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
 | [N3](literature/N3-core-formalism-known-neighbors.md) | known_neighbor | active | Lamport, quantum Darwinism, IGUS, records-of-histories, and Landauer constrain the novelty and interpretation of v0.1. | Primary-source positioning |
 | [N4](literature/N4-emergence-lab-known-neighbors.md) | known_neighbor | active | Reversible computation, cellular automata, Landauer cost, coarse-graining, and Boolean sensitivity constrain the Emergence Laboratory. | Primary-source positioning |
-| H1-Sheaf | potential_byproduct | open | A Cech H¹ obstruction class for incompatible finality sections exists and is computable on finite domain covers; nontrivial H¹ means no global finality section exists even when pairwise restrictions agree. | [T13](tests/T13-finality-sheaf-cohomology.md) |
+| H1-Sheaf | partially_supported | open | A Cech H¹ obstruction class for incompatible finality sections exists and is computable on finite domain covers; nontrivial H¹ means no global finality section exists even when pairwise restrictions agree. Seven independent groups across four disciplinary traditions (quantum physics, algebraic geometry, cryptography, differential geometry) converged on this as an underexploited invariant. Bell-test mapping and measurement-problem no-go interpretation are open next steps. | [T13](tests/T13-finality-sheaf-cohomology.md) |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | not_claimed | active | Human belief does not create matter. | Guardrail |
 | [G2](guardrails/G2-not-a-replacement-theory.md) | not_claimed | active | This does not replace QM, GR, thermodynamics, or proper time. | Guardrail |
 | [G3](guardrails/G3-observer-rendering-not-mind-created-matter.md) | not_claimed | active | Observer rendering does not mean consciousness creates matter, spacetime, physical law, or other people. | Guardrail |
@@ -77,3 +77,12 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   induces an acyclic finality direction in a finite constructor model.
 - The guardrail remains active: this is not a derivation of the thermodynamic
   arrow, proper time, or a physical law without further substrate grounding.
+
+### 2026-06-17 - v2 Idea Sprint — Seven Convergence Clusters
+
+- H1-Sheaf upgraded from `potential_byproduct` to `partially_supported`: seven
+  independent groups across four disciplinary traditions identified the H¹
+  obstruction as a genuine substrate-independent invariant that is underexploited.
+  Immediate next steps: Bell-test mapping, measurement-problem no-go statement.
+- T19 assigned to phenomenal bridge complexity separation (see tests/T19-phenomenal-bridge-complexity-separation.md).
+- See explorations/all-persona-idea-sprint-2026-06-16-v2.md for full sprint results.

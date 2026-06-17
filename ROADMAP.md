@@ -56,11 +56,9 @@
    [T14](tests/T14-finality-flp-impossibility.md). This is the fastest
    publishable route because it can be stated as a computer-science theorem
    without requiring new physics.
-2. Build the first spacetime-aggregation toy model from
-   [Spacetime as Finality Colimit](open-problems/spacetime-as-finality-colimit.md)
-   and [T13](tests/T13-finality-sheaf-cohomology.md): two or three
-   overlapping finality domains, explicit gluing, and a computable obstruction
-   when no global structure exists.
+2. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
+   to explicit restriction maps between local causal diamonds, then connect
+   the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
 3. Define the phenomenal formal-gap problem precisely using
    [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
    and [Observer Closure Theorem](open-problems/observer-closure-theorem.md):
@@ -96,6 +94,8 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T13](tests/T13-finality-sheaf-cohomology.md): Finality Sheaf Cohomology — compute whether H¹ is nontrivial; nontrivial cohomology would make observer-dependence a topological feature, not a notational choice.
 - [T14](tests/T14-finality-flp-impossibility.md): Finality FLP Impossibility Theorem — prove no algorithm can simultaneously maximize all four D1 dimensions under adversarial delay; TaF's own impossibility result.
 - [T15](tests/T15-causal-record-graph-as-causal-set.md): Causal Record Graph as Causal Set — check T1's graph against causal set axioms; positive result imports two decades of causal set quantum gravity results.
+
+- [T16](tests/T16-spacetime-aggregation.md): Spacetime Aggregation Toy Model - first executable gluing check for S1, with overlap and cycle obstruction witnesses.
 
 ### New Open Problems
 

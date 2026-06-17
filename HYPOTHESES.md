@@ -69,6 +69,8 @@ colimit construction that preserves known spacetime constraints.
 
 See [S1](claims/S1-spacetime-consensus-envelope.md) and
 [Spacetime as Finality Colimit](open-problems/spacetime-as-finality-colimit.md).
+T16 supplies the first finite gluing model and obstruction witnesses, but not
+a metric spacetime.
 
 ## H6: Phenomenal Bridge Formal-Gap Conjecture
 

@@ -8,6 +8,11 @@
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
 
+> **Spacetime aggregation update:** [T16](tests/T16-spacetime-aggregation.md)
+> treats observer-local finality domains as finite partial orders and tests
+> when they glue into a global compatibility structure. The output is a
+> partial order or an obstruction witness, not a spacetime derivation.
+
 ## Primitive Inventory
 
 The model is given:
@@ -136,3 +141,18 @@ The formalization fails its intended job if:
 - the preorder is determined by an arbitrary weighted sum;
 - every finality dimension collapses to the same quantity;
 - T1 cannot produce a counterexample to a stronger total-order claim.
+
+## Spacetime Aggregation
+
+T16 adds a finite gluing construction for the S1 formal target:
+
+```text
+local finality domains
+  -> overlap restrictions
+  -> acyclic union check
+  -> global partial order or obstruction witness
+```
+
+This construction is deliberately weaker than spacetime geometry. It defines
+the first compatibility object that any later colimit, sheaf, or causal-set
+proposal must preserve.

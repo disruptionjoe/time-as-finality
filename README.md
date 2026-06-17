@@ -42,6 +42,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   evidence verdict.
 - [TECHNICAL-REPORT-emergence-lab-v0.1.md](TECHNICAL-REPORT-emergence-lab-v0.1.md)
   - comparative result across reversible and irreversible local dynamics.
+- [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
+  - finite gluing and obstruction model for S1 spacetime aggregation.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -92,14 +94,7 @@ explorations/   Heterodox layer splits and sketches before claim promotion.
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
-```
-
-## Run The Formal Model
-
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-python -m models.run_t1
-python -m models.run_emergence_lab
+python -m models.run_t16
 ```
 
 ## Citation / Reuse

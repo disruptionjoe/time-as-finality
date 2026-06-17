@@ -87,6 +87,13 @@ record-bearing systems.
 
 A region or context in which a set of records can be stabilized and reconciled for a given observer-network.
 
+## Spacetime Aggregation
+
+The T16 gluing problem for observer-local finality domains. In the toy model,
+local domains aggregate when their overlap restrictions agree and their union
+remains acyclic, producing a global partial order. Failure produces an
+obstruction witness rather than a forced global structure.
+
 ## Causal Domain
 
 The set of events, records, and record-bearing systems that can in principle affect or be accessed by an observer-system under the relevant causal constraints.

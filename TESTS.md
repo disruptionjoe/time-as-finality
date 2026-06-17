@@ -15,6 +15,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T7](tests/T7-overlapping-causal-domains.md) | Overlapping causal domains | R1, B1, S1 | open |
 | [T8](tests/T8-observer-renderer-toy-model.md) | Observer renderer toy model | D2, G3 | open |
 | [T9](tests/T9-emergence-laboratory.md) | Emergent records across reversible and irreversible local dynamics | D1, C1, T5 | implemented: comparative success |
+| [T16](tests/T16-spacetime-aggregation.md) | Spacetime aggregation toy model | S1, H5, R1 | implemented: finite gluing and obstruction witnesses |
 
 ## Minimum Compatibility Constraints
 
@@ -37,25 +38,14 @@ Any formalization must:
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
 python -m models.run_emergence_lab
+python -m models.run_t16
 ```
 
 The suites use only Python's standard library. Evidence records:
 
 - [T1 v0.1 Results](results/T1-v0.1-results.md)
 - [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
-
-## Executable Suite
-
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-python -m models.run_t1
-python -m models.run_emergence_lab
-```
-
-The suites use only Python's standard library. Evidence records:
-
-- [T1 v0.1 Results](results/T1-v0.1-results.md)
-- [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
+- [Spacetime Aggregation v0.1 Results](results/spacetime-aggregation-v0.1-results.md)
 
 ## How To Add A Test
 

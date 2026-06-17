@@ -47,6 +47,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [Rendered Interface Assumptions](../open-problems/rendered-interface-assumptions.md)
 - [Spacetime as Finality Colimit](../open-problems/spacetime-as-finality-colimit.md)
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
+- [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
 
 ## Contribution Needed
 
@@ -55,3 +56,12 @@ deliverable is a defined aggregation, gluing, or colimit construction over
 observer-local finality domains. The failure condition is equally important:
 if the construction cannot preserve known causal, metric, or covariance
 constraints, S1 should be weakened back to metaphor.
+
+## T16 Result
+
+[T16](../tests/T16-spacetime-aggregation.md) defines the first executable
+aggregation target. Observer-local finality domains glue only when their
+overlap restrictions agree and their union remains acyclic. The output is a
+global partial order or a concrete obstruction witness.
+
+This strengthens S1 as a formal target, not as a spacetime derivation.

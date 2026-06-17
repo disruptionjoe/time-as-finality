@@ -44,6 +44,18 @@ Each formalism offers a concrete first step:
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T15: Causal Record Graph as Causal Set](../tests/T15-causal-record-graph-as-causal-set.md)
 - [T13: Finality Sheaf Cohomology](../tests/T13-finality-sheaf-cohomology.md)
+- [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
+
+## T16 Result
+
+T16 implements the minimum finite version of this open problem: local
+finality domains are partial orders, overlap restrictions must agree, and the
+union must remain acyclic. Successful aggregation returns a global partial
+order. Failure returns either an overlap-disagreement witness or a global
+cycle witness.
+
+The result is intentionally weak: it defines the first gluing target but does
+not derive a manifold, metric, or physical spacetime.
 
 ## Contribution Needed
 

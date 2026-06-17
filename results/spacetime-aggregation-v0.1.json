@@ -1,0 +1,154 @@
+﻿{
+  "compatible_chain": {
+    "domain_count": 2,
+    "global_events": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "global_order": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "c"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "b",
+        "c"
+      ],
+      [
+        "b",
+        "d"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "glues": true,
+    "incomparable_pairs": [],
+    "obstructions": []
+  },
+  "cycle_obstruction": {
+    "domain_count": 3,
+    "global_events": [],
+    "global_order": [],
+    "glues": false,
+    "incomparable_pairs": [],
+    "obstructions": [
+      {
+        "domains": [
+          "ab-domain",
+          "bc-domain",
+          "ca-domain"
+        ],
+        "events": [
+          "a",
+          "b",
+          "c"
+        ],
+        "kind": "global_cycle",
+        "message": "local domains agree on overlaps but their union is cyclic",
+        "witness_edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "a"
+          ]
+        ]
+      }
+    ]
+  },
+  "overlap_conflict": {
+    "domain_count": 2,
+    "global_events": [],
+    "global_order": [],
+    "glues": false,
+    "incomparable_pairs": [],
+    "obstructions": [
+      {
+        "domains": [
+          "observer-left",
+          "observer-right"
+        ],
+        "events": [
+          "a",
+          "b"
+        ],
+        "kind": "overlap_disagreement",
+        "message": "local finality orders disagree on their shared events",
+        "witness_edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a"
+          ]
+        ]
+      }
+    ]
+  },
+  "partial_spacetime": {
+    "domain_count": 2,
+    "global_events": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "global_order": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "glues": true,
+    "incomparable_pairs": [
+      [
+        "a",
+        "c"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "b",
+        "c"
+      ],
+      [
+        "b",
+        "d"
+      ]
+    ],
+    "obstructions": []
+  },
+  "verdict": {
+    "explicit_gluing_defined": true,
+    "global_cycle_obstruction_is_detected": true,
+    "overlap_disagreement_is_detected": true,
+    "spacetime_like_output_is_partial_order": true,
+    "spacetime_not_derived": true
+  }
+}

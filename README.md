@@ -47,6 +47,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
   - D1/distributed-systems finality crosswalk and bounded impossibility
     witness.
+- [TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md](TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md)
+  - executable bounded theorem check for D1/progress finality tradeoffs.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and

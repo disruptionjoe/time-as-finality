@@ -130,7 +130,14 @@ In this project, consensus means physical record-consistency, not social agreeme
 
 The T17 comparison between D1 finality and distributed-systems finality.
 Safety, liveness, and economic finality are treated as collapses or
-projections of D1 dimensions, with explicit divergence witnesses.
+projections of D1 dimensions, with explicit divergence witnesses and a
+bounded theorem check for D1/progress tradeoffs.
+
+## Bounded Finality Tradeoff Theorem
+
+The T17 finite theorem check showing that, under the stated protocol budget
+and adversarial delay bound, no admissible configuration simultaneously
+maximizes all D1 dimensions and bounded progress.
 
 ## Commit Order
 

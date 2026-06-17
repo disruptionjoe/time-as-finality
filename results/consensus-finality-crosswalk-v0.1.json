@@ -1,4 +1,183 @@
 ﻿{
+  "bounded_theorem": {
+    "adversarial_delay": 2,
+    "assumptions": [
+      "Configurations are integer tuples of nodes, quorum, branches, confirmations, and timeout rounds.",
+      "A configuration is admissible only when nodes + branches + confirmations + timeout <= budget.",
+      "Accessible support is capped by the smaller of quorum and messages reachable by timeout.",
+      "Bounded progress is satisfied only when quorum is reachable within the adversarial delay bound.",
+      "D1 keeps support, redundancy, branch support, and reversal cost as separate objectives.",
+      "The claim is exhaustive over this finite model, not a universal FLP-style theorem."
+    ],
+    "budget": 10,
+    "checked_configurations": 392,
+    "component_tradeoffs": [
+      {
+        "maximizer": {
+          "bounded_progress": 0,
+          "config": {
+            "branches": 1,
+            "confirmations": 1,
+            "name": "n4-q4-b1-c1-t4",
+            "nodes": 4,
+            "quorum": 4,
+            "resource_cost": 10,
+            "timeout_rounds": 4
+          },
+          "d1": [
+            4,
+            4,
+            1,
+            4
+          ],
+          "economic_reversal_cost": 4,
+          "live_under_delay": false,
+          "quorum_margin": 2,
+          "safety_final": true
+        },
+        "missed_objectives": [
+          "branch_support",
+          "reversal_cost",
+          "bounded_progress"
+        ],
+        "objective": "accessible_support"
+      },
+      {
+        "maximizer": {
+          "bounded_progress": 0,
+          "config": {
+            "branches": 1,
+            "confirmations": 1,
+            "name": "n4-q4-b1-c1-t4",
+            "nodes": 4,
+            "quorum": 4,
+            "resource_cost": 10,
+            "timeout_rounds": 4
+          },
+          "d1": [
+            4,
+            4,
+            1,
+            4
+          ],
+          "economic_reversal_cost": 4,
+          "live_under_delay": false,
+          "quorum_margin": 2,
+          "safety_final": true
+        },
+        "missed_objectives": [
+          "branch_support",
+          "reversal_cost",
+          "bounded_progress"
+        ],
+        "objective": "holder_redundancy"
+      },
+      {
+        "maximizer": {
+          "bounded_progress": 0,
+          "config": {
+            "branches": 3,
+            "confirmations": 1,
+            "name": "n3-q3-b3-c1-t3",
+            "nodes": 3,
+            "quorum": 3,
+            "resource_cost": 10,
+            "timeout_rounds": 3
+          },
+          "d1": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "economic_reversal_cost": 3,
+          "live_under_delay": false,
+          "quorum_margin": 2,
+          "safety_final": true
+        },
+        "missed_objectives": [
+          "accessible_support",
+          "holder_redundancy",
+          "reversal_cost",
+          "bounded_progress"
+        ],
+        "objective": "branch_support"
+      },
+      {
+        "maximizer": {
+          "bounded_progress": 0,
+          "config": {
+            "branches": 1,
+            "confirmations": 3,
+            "name": "n3-q3-b1-c3-t3",
+            "nodes": 3,
+            "quorum": 3,
+            "resource_cost": 10,
+            "timeout_rounds": 3
+          },
+          "d1": [
+            3,
+            3,
+            1,
+            9
+          ],
+          "economic_reversal_cost": 9,
+          "live_under_delay": false,
+          "quorum_margin": 2,
+          "safety_final": true
+        },
+        "missed_objectives": [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "bounded_progress"
+        ],
+        "objective": "reversal_cost"
+      },
+      {
+        "maximizer": {
+          "bounded_progress": 1,
+          "config": {
+            "branches": 2,
+            "confirmations": 4,
+            "name": "n2-q2-b2-c4-t2",
+            "nodes": 2,
+            "quorum": 2,
+            "resource_cost": 10,
+            "timeout_rounds": 2
+          },
+          "d1": [
+            2,
+            2,
+            2,
+            8
+          ],
+          "economic_reversal_cost": 8,
+          "live_under_delay": true,
+          "quorum_margin": 1,
+          "safety_final": true
+        },
+        "missed_objectives": [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ],
+        "objective": "bounded_progress"
+      }
+    ],
+    "holds": true,
+    "joint_maximizers": [],
+    "name": "T17 bounded finality tradeoff theorem",
+    "objective_maxima": {
+      "accessible_support": 4,
+      "bounded_progress": 1,
+      "branch_support": 3,
+      "holder_redundancy": 4,
+      "reversal_cost": 9
+    },
+    "statement": "Within the stated bounded asynchronous protocol model, no admissible configuration simultaneously maximizes accessible support, holder redundancy, independent branch support, reversal cost, and bounded progress."
+  },
   "collapse_maps": [
     {
       "d1_dimensions_collapsed": [
@@ -45,6 +224,7 @@
       "explanation": "safety finality agrees, but D1 distinguishes independent branch support",
       "kind": "same_safety_different_branch_finality",
       "left": {
+        "bounded_progress": 1,
         "config": {
           "branches": 1,
           "confirmations": 1,
@@ -66,6 +246,7 @@
         "safety_final": true
       },
       "right": {
+        "bounded_progress": 1,
         "config": {
           "branches": 2,
           "confirmations": 1,
@@ -91,6 +272,7 @@
       "explanation": "economic finality agrees, but support/redundancy/branch structure differ",
       "kind": "same_economic_cost_different_d1_profile",
       "left": {
+        "bounded_progress": 1,
         "config": {
           "branches": 1,
           "confirmations": 2,
@@ -112,6 +294,7 @@
         "safety_final": true
       },
       "right": {
+        "bounded_progress": 1,
         "config": {
           "branches": 1,
           "confirmations": 1,
@@ -137,6 +320,7 @@
       "explanation": "standard distributed summary collapses distinctions retained by D1",
       "kind": "same_distributed_signature_different_d1_profile",
       "left": {
+        "bounded_progress": 1,
         "config": {
           "branches": 1,
           "confirmations": 2,
@@ -158,6 +342,7 @@
         "safety_final": true
       },
       "right": {
+        "bounded_progress": 1,
         "config": {
           "branches": 1,
           "confirmations": 1,
@@ -190,6 +375,7 @@
     ],
     "frontier_examples": [
       {
+        "bounded_progress": 1,
         "config": {
           "branches": 2,
           "confirmations": 4,
@@ -211,6 +397,7 @@
         "safety_final": true
       },
       {
+        "bounded_progress": 0,
         "config": {
           "branches": 1,
           "confirmations": 3,
@@ -232,6 +419,7 @@
         "safety_final": true
       },
       {
+        "bounded_progress": 0,
         "config": {
           "branches": 2,
           "confirmations": 2,
@@ -253,6 +441,7 @@
         "safety_final": true
       },
       {
+        "bounded_progress": 0,
         "config": {
           "branches": 3,
           "confirmations": 1,
@@ -274,6 +463,7 @@
         "safety_final": true
       },
       {
+        "bounded_progress": 0,
         "config": {
           "branches": 1,
           "confirmations": 1,
@@ -305,6 +495,7 @@
   },
   "verdict": {
     "bounded_impossibility_witness_found": true,
+    "bounded_tradeoff_theorem_verified": true,
     "d1_is_more_expressive_than_standard_distributed_signature": true,
     "distributed_finality_is_safe_analogy": true,
     "liveness_is_not_a_d1_dimension": true,

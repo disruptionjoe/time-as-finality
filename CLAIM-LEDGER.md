@@ -5,9 +5,9 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
 | [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md) |
+| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. T17 adds a bounded theorem check showing D1/progress tradeoffs under resource limits. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T17](tests/T17-consensus-finality-crosswalk.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
-| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and bounded divergence witnesses. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md) |
+| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps, divergence witnesses, and a bounded theorem check. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | open | Quantum states may be real but not yet finalized as classical records in a given observer-environment context. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
@@ -53,3 +53,12 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - The stronger claim that finality is one mechanism spanning causal,
   computational, and thermodynamic irreversibility is rejected. The surviving
   result is a comparative framework for observer-indexed records.
+
+### 2026-06-16 - Consensus Finality Theorem Check
+
+- A1 remains `active`: T17 now has explicit collapse maps, divergence
+  witnesses, and an executable bounded theorem check over a stated finite
+  asynchronous model.
+- D1 remains `weakened`: the theorem check supports keeping D1 dimensions
+  separate, but only within the stated finite model and not as a universal
+  physics claim.

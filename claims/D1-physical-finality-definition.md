@@ -74,4 +74,7 @@ finality definitions collapse or project D1 dimensions. Safety ignores
 independent branch support, economic finality keeps only reversal cost, and
 liveness is a protocol progress condition rather than a D1 dimension.
 
-This strengthens D1's reason to keep dimensions separate.
+The bounded theorem check verifies that no admissible configuration in the
+stated finite model jointly maximizes support, redundancy, branch support,
+reversal cost, and bounded progress. This strengthens D1's reason to keep
+dimensions separate: scalar "more final" language would hide the tradeoff.

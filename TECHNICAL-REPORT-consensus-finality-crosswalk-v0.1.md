@@ -15,7 +15,9 @@ conditions.
 The result is positive in a bounded finite search. Standard distributed
 summaries collapse distinctions that D1 retains, and no admissible protocol
 configuration under the chosen budget maximizes all four D1 dimensions at
-once.
+once. A follow-on theorem report extracts this witness into an executable
+bounded theorem check that also includes bounded progress as a separate
+distributed-systems objective.
 
 ## 1. Motivation
 
@@ -83,7 +85,7 @@ It finds:
 Therefore D1 is not merely distributed finality renamed. It is a richer
 record-finality profile that distributed definitions can collapse into.
 
-## 5. Bounded Impossibility Witness
+## 5. Bounded Impossibility Witness And Theorem Check
 
 Under budget `10`, the component maxima are:
 
@@ -105,6 +107,21 @@ frontier has five representative strategies:
 This is not an FLP theorem. It is a finite witness that the D1 dimensions are
 not all simultaneously maximized under bounded resources and delay.
 
+The follow-on theorem check adds bounded progress as a fifth objective:
+
+```text
+(support, redundancy, branch support, reversal cost, bounded progress)
+```
+
+It verifies that no admissible configuration reaches:
+
+```text
+(4, 4, 3, 9, 1)
+```
+
+See
+[TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md](TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md).
+
 ## 6. Claim Verdict
 
 T17 strengthens [A1](claims/A1-distributed-systems-finality-analogy.md). The
@@ -124,8 +141,8 @@ Limits:
 
 ## 7. Next Work
 
-The next step is to turn the bounded impossibility witness into a theorem.
-State the admissible protocol model and prove which subsets of D1 dimensions
+The next step is to generalize the bounded theorem check beyond budget `10`.
+State parameterized resource bounds and prove which subsets of D1 dimensions
 can or cannot be jointly maximized under adversarial delay.
 
 That would make T17 publishable as a self-contained distributed-systems note.
@@ -145,3 +162,7 @@ Machine-readable output:
 Focused result note:
 
 - [results/consensus-finality-crosswalk-v0.1-results.md](results/consensus-finality-crosswalk-v0.1-results.md)
+
+Theorem report:
+
+- [TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md](TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md)

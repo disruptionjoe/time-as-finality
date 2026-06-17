@@ -1,7 +1,7 @@
 # Consensus Finality Crosswalk Results
 
-Result: T17 focused tests pass `6/6`; the current full branch suite passes
-`35/35`.
+Result: T17 focused tests pass `9/9`; the current full branch suite passes
+`38/38`.
 
 ## Model
 
@@ -70,6 +70,39 @@ n4-q4-b1-c1-t4 -> (4, 4, 1, 4)
 Each frontier point gives up something: branch support, reversal cost,
 liveness, or support/redundancy.
 
+## Bounded Theorem Check
+
+T17 now states the bounded witness as an executable theorem check:
+
+```text
+Within the stated bounded asynchronous protocol model, no admissible
+configuration simultaneously maximizes accessible support, holder redundancy,
+independent branch support, reversal cost, and bounded progress.
+```
+
+The theorem check covers `392` configurations with budget `10` and adversarial
+delay `2`. The objective maxima are:
+
+```text
+accessible_support = 4
+holder_redundancy = 4
+branch_support = 3
+reversal_cost = 9
+bounded_progress = 1
+```
+
+No configuration reaches all five maxima.
+
+Representative tradeoff witnesses:
+
+| Objective maximized | Witness | Gives up |
+| --- | --- | --- |
+| accessible support | `n4-q4-b1-c1-t4` | branch support, reversal cost, bounded progress |
+| holder redundancy | `n4-q4-b1-c1-t4` | branch support, reversal cost, bounded progress |
+| branch support | `n3-q3-b3-c1-t3` | support, redundancy, reversal cost, bounded progress |
+| reversal cost | `n3-q3-b1-c3-t3` | support, redundancy, branch support, bounded progress |
+| bounded progress | `n2-q2-b2-c4-t2` | support, redundancy, branch support, reversal cost |
+
 ## Verdict
 
 T17 strengthens A1 as a precise analogy:
@@ -82,7 +115,7 @@ It also strengthens D1 by showing why keeping dimensions separate matters.
 
 Limits:
 
-- The impossibility is a bounded search witness, not a general theorem.
+- The impossibility theorem is exhaustive only over the stated finite model.
 - Liveness is modeled as a simple deadline condition.
 - The lab does not claim physical systems literally run consensus protocols.
 
@@ -97,3 +130,7 @@ python -m models.run_t17
 Machine-readable output:
 
 - [consensus-finality-crosswalk-v0.1.json](consensus-finality-crosswalk-v0.1.json)
+
+Theorem report:
+
+- [../TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md](../TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md)

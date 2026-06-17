@@ -176,3 +176,13 @@ D1 profile
 The crosswalk is intentionally asymmetric. D1 can be projected into
 distributed summaries, but standard summaries can collapse distinctions that
 D1 retains, especially branch support and non-economic support structure.
+
+The bounded theorem check keeps progress outside D1 and tests it beside D1:
+
+```text
+(support, redundancy, branch support, reversal cost, bounded progress)
+```
+
+Under the stated finite protocol budget, no admissible configuration maximizes
+all five objectives simultaneously. This is a finite theorem check, not a
+universal distributed-systems impossibility theorem.

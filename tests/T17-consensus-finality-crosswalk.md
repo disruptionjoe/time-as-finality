@@ -32,7 +32,9 @@ The lab then searches for:
 2. divergence witnesses where standard distributed summaries agree but D1
    differs;
 3. a bounded impossibility witness where no admissible configuration
-   simultaneously maximizes all D1 dimensions.
+   simultaneously maximizes all D1 dimensions;
+4. an executable bounded theorem check where no admissible configuration
+   simultaneously maximizes all D1 dimensions and bounded progress.
 
 ## Success Criteria
 
@@ -42,6 +44,8 @@ The lab then searches for:
   distributed summary collapses.
 - The bounded search produces a Pareto frontier rather than one configuration
   maximizing all D1 dimensions.
+- The theorem check declares its assumptions and returns no joint maximizer
+  for D1 dimensions plus bounded progress.
 - The result preserves the guardrail that physics is not reduced to a
   consensus protocol.
 
@@ -49,6 +53,8 @@ The lab then searches for:
 
 - D1 adds no distinction beyond safety/liveness/economic finality.
 - The bounded search finds one configuration maximizing every D1 dimension.
+- The theorem check finds one configuration maximizing every D1 dimension and
+  bounded progress under the stated assumptions.
 - The model treats protocol confidence as truth.
 - The result claims physical systems literally run distributed protocols.
 
@@ -59,6 +65,6 @@ not an FLP proof, and not a claim that consensus creates facts.
 
 ## Contribution Needed
 
-Turn the bounded search into a formal theorem: state the assumptions under
-which no protocol can maximize support, redundancy, branch support, reversal
-cost, and liveness simultaneously.
+Generalize the bounded theorem check into a parameterized result. State which
+resource-budget families preserve the tradeoff and which added protocol
+features break it.

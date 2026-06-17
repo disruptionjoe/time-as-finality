@@ -60,5 +60,10 @@ explicit. Safety, liveness, and economic finality are modeled as collapses or
 projections of D1-style record finality. The bounded search also finds cases
 where standard distributed summaries agree while D1 profiles differ.
 
+The follow-on theorem check verifies, within the stated finite asynchronous
+model, that no admissible configuration simultaneously maximizes all D1
+dimensions and bounded progress. That makes A1 stronger than a metaphor while
+keeping liveness as a protocol-side condition rather than a D1 dimension.
+
 This strengthens A1 as a formal analogy, not as a claim that physics literally
 runs a consensus protocol.

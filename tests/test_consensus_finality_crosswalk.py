@@ -1,12 +1,14 @@
 import unittest
 
 from models.consensus_finality_crosswalk import (
+    THEOREM_OBJECTIVES,
     ProtocolConfig,
     evaluate_config,
     generate_protocol_space,
     impossibility_witness,
     run_crosswalk_analysis,
     run_t17_analysis,
+    verify_bounded_impossibility_theorem,
 )
 
 
@@ -51,11 +53,40 @@ class ConsensusFinalityCrosswalkTests(unittest.TestCase):
         )
         self.assertGreater(len(witness.pareto_frontier), 1)
 
+    def test_bounded_theorem_finds_no_joint_d1_and_progress_maximizer(self) -> None:
+        theorem = verify_bounded_impossibility_theorem(budget=10, adversarial_delay=2)
+
+        self.assertTrue(theorem.holds)
+        self.assertEqual(theorem.checked_configurations, 392)
+        self.assertEqual(theorem.component_maxima.as_tuple(), (4, 4, 3, 9))
+        self.assertEqual(theorem.progress_maximum, 1)
+        self.assertEqual(theorem.joint_maximizers, ())
+
+    def test_bounded_theorem_declares_its_assumptions(self) -> None:
+        theorem = verify_bounded_impossibility_theorem()
+
+        assumptions = " ".join(theorem.assumptions)
+        self.assertIn("admissible", assumptions)
+        self.assertIn("adversarial delay", assumptions)
+        self.assertIn("finite model", assumptions)
+
+    def test_bounded_theorem_has_tradeoff_witness_for_each_objective(self) -> None:
+        theorem = verify_bounded_impossibility_theorem()
+
+        self.assertEqual(
+            {tradeoff.objective for tradeoff in theorem.component_tradeoffs},
+            set(THEOREM_OBJECTIVES),
+        )
+        self.assertTrue(
+            all(tradeoff.missed_objectives for tradeoff in theorem.component_tradeoffs)
+        )
+
     def test_full_analysis_reports_guardrails(self) -> None:
         result = run_t17_analysis()
 
         self.assertTrue(result["verdict"]["distributed_finality_is_safe_analogy"])
         self.assertTrue(result["verdict"]["bounded_impossibility_witness_found"])
+        self.assertTrue(result["verdict"]["bounded_tradeoff_theorem_verified"])
         self.assertTrue(result["verdict"]["physics_not_reduced_to_protocol"])
 
 

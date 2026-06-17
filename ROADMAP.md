@@ -70,9 +70,10 @@
 5. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-6. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
-   system-apparatus-environment model and compare D1 directly with
-   quantum-Darwinism redundancy.
+6. Extend [T22](tests/T22-d1-physical-reduction-map.md) into full
+   [T2](tests/T2-quantum-measurement-record-finality.md): implement a
+   system-apparatus-environment model with pointer-basis selection and compare
+   D1 directly with quantum-Darwinism redundancy across decoherence steps.
 7. Test whether the D1 preorder composes under record-graph merge.
 8. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
@@ -107,6 +108,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T18](tests/T18-finality-direction-theorem.md): Finality Direction Theorem - constructor-style finite theorem check deriving an acyclic finality arrow from D1-monotone admissibility.
 - [T20](tests/T20-consensus-record-theorem-transfer.md): Consensus-Record Theorem Transfer - proof-preserving quorum-safety transfer plus weak-quorum and global-section boundaries.
 - [T21](tests/T21-bell-contextuality-finality.md): Bell Contextuality Finality - finite CHSH certificate plus classical/quantum/PR-box score comparison.
+- [T22](tests/T22-d1-physical-reduction-map.md): D1 Physical Reduction Map - observable audit for all D1 axes plus executable holder-redundancy comparison.
 
 ### New Open Problems
 
@@ -148,9 +150,10 @@ problems were added. Seven convergence clusters found. Full sprint at
    observer can *verify* its own finality assignment from within its accessible subgraph. T8 asks
    whether such a fixed point exists at all. Both tests needed; T8 is the prerequisite.
 
-4. **Add D1 reduction map table to FORMALISM.md.** Six groups across general relativity, gauge
-   theory, Kaluza-Klein, and foundational formalism all require: for each D1 dimension, what
-   physical observable does it reduce to in the 3+1D classical limit, and is it Lorentz-invariant?
+4. **Extend T22 from audit to substrate dynamics.** T22 added the D1 reduction-map table and a
+   holder-redundancy toy comparison. The next step is full T2: a dynamical system-apparatus-
+   environment model with pointer-basis selection, decoherence/noise, observer access, and a
+   direct comparison between R_delta and all four D1 dimensions.
 
 ### New Items from v2 Sprint
 

@@ -1,0 +1,101 @@
+{
+  "interpretation": {
+    "guardrail": "T22 does not derive D1 from quantum mechanics. It supplies one toy observable reduction and records assumptions for every D1 axis.",
+    "main_result": "Holder redundancy has a first executable physical reduction in the toy fragment model; accessible support, branch support, and reversal cost remain assumption-bearing audit entries.",
+    "why_it_matters": "The model shows why D1 should count independent informative holders, not raw environmental copies."
+  },
+  "toy_model": {
+    "d1_profile": {
+      "accessible_support": 3,
+      "branch_support": 2,
+      "holder_redundancy": 2,
+      "profile_tuple": [
+        3,
+        2,
+        2,
+        4
+      ],
+      "reversal_cost": 4,
+      "tuple_order": [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ]
+    },
+    "darwinism_redundancy": {
+      "accessible_fragment_count": 4,
+      "agrees_with_d1_holder_redundancy": true,
+      "d1_holder_redundancy": 2,
+      "divergence_reason": "E3 carries the pointer record but is correlated with E1, so it raises accessible support without raising independent holder redundancy.",
+      "independent_informative_fragments": 2,
+      "raw_count_diverges_from_d1": true,
+      "raw_informative_fragment_count": 3,
+      "redundancy_ratio": 1.0
+    },
+    "scenario": {
+      "fragments": [
+        {
+          "branch_id": "left",
+          "encodes_system": true,
+          "independent_channel": true,
+          "name": "E1",
+          "readable": true
+        },
+        {
+          "branch_id": "right",
+          "encodes_system": true,
+          "independent_channel": true,
+          "name": "E2",
+          "readable": true
+        },
+        {
+          "branch_id": "left",
+          "encodes_system": true,
+          "independent_channel": false,
+          "name": "E3",
+          "readable": true
+        },
+        {
+          "branch_id": "hidden",
+          "encodes_system": true,
+          "independent_channel": true,
+          "name": "E4",
+          "readable": false
+        },
+        {
+          "branch_id": "noise",
+          "encodes_system": false,
+          "independent_channel": true,
+          "name": "N1",
+          "readable": true
+        }
+      ],
+      "name": "binary_pointer_environment_with_correlated_duplicate",
+      "observer_access": [
+        "E1",
+        "E2",
+        "E3",
+        "N1"
+      ],
+      "reversal_operations": [
+        "erase_E1",
+        "erase_E2",
+        "erase_E3",
+        "erase_E4"
+      ],
+      "system_states": [
+        "S0",
+        "S1"
+      ]
+    }
+  },
+  "verdict": {
+    "all_dimensions_have_reduction_entries": true,
+    "holder_redundancy_reduction_supported": true,
+    "inaccessible_record_excluded_from_accessible_support": true,
+    "no_universal_physical_reduction_claimed": true,
+    "raw_fragment_count_diverges_from_holder_redundancy": true,
+    "reversal_cost_still_open": true
+  }
+}

@@ -33,3 +33,15 @@ Represent when records become stable, redundant, and accessible.
 ## Contribution Needed
 
 Write a worked example comparing Time as Finality language to decoherence, quantum Darwinism, and at least one interpretation of quantum mechanics.
+
+## T22 Partial Bridge
+
+[T22](T22-d1-physical-reduction-map.md) implements the first narrow
+Quantum-Darwinism-style comparison. In a small system-environment toy model,
+D1 holder redundancy matches the count of independent informative environment
+fragments, while raw informative fragment count diverges because one fragment
+is only a correlated duplicate.
+
+This does not complete T2. The remaining T2 work is a dynamical
+system-apparatus-environment model with pointer-basis selection, decoherence
+timescale, observer access, and detector/noise assumptions.

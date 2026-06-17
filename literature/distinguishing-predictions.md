@@ -24,10 +24,19 @@ have high R_delta while having low graph-reversal-count finality — these two d
 orthogonal in D1 but not distinguished in quantum Darwinism.
 
 **Distinguishing criterion:** `[PARTIAL]`
-Implement T2 as a spin-1/2 system plus N-qubit environment. At each decoherence step, compute
-both R_delta and D1's four dimension values. Check whether the redundancy coordinate tracks R_delta
-monotonically, or whether states exist with high R_delta but low D1 (due to cyclic record graphs
-or inaccessible fragments). A divergence at any point is a genuine distinguishing case.
+T22 implements the first finite comparison. In a small system-environment toy
+model, D1 holder redundancy matches the count of independent informative
+environment fragments, while raw informative fragment count diverges because a
+readable copy can be correlated with an existing fragment. This makes D1
+redundancy closer to independent environmental witness count than raw copy
+count.
+
+The remaining T2 extension is a spin-1/2 system plus N-qubit environment. At
+each decoherence step, compute both R_delta and D1's four dimension values.
+Check whether the redundancy coordinate tracks R_delta monotonically, or
+whether states exist with high R_delta but low D1 due to inaccessible fragments,
+branch dependence, or reversal cost. A divergence at any point is a genuine
+distinguishing case.
 
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states, D1 adds nothing over quantum Darwinism's existing account.
@@ -178,7 +187,7 @@ RQM predicts consistent local facts, TaF's cohomology adds nothing over RQM's co
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
 | 1 | Decoherence | CHSH contextuality and score comparison | `[PARTIAL]` -> T21 implemented; detector mapping open |
-| 2 | Quantum Darwinism | R_delta vs D1-redundancy numerical check | `[PARTIAL]` → implement T2 |
+| 2 | Quantum Darwinism | independent fragment count vs D1 holder redundancy | `[PARTIAL]` -> T22 implemented; full T2 dynamics open |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
 | 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |

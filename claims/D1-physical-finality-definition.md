@@ -50,6 +50,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
 - [T20: Consensus-Record Theorem Transfer](../tests/T20-consensus-record-theorem-transfer.md)
 - [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
+- [T22: D1 Physical Reduction Map](../tests/T22-d1-physical-reduction-map.md)
 
 ## Contribution Needed
 
@@ -100,3 +101,19 @@ remain observer- and context-indexed. Local measurement contexts can each have
 valid finality sections while no single global assignment exists. That makes
 global-section existence a separate condition, not something guaranteed by
 local support or redundancy alone.
+
+## Physical Reduction Map Result
+
+[T22](../tests/T22-d1-physical-reduction-map.md) adds the missing physical
+reduction-map audit for D1. Each dimension now has a candidate observable,
+substrate assumptions, frame-status note, and falsification condition.
+
+The executable part is narrow: holder redundancy is compared with a
+Quantum-Darwinism-style count of independent informative environment
+fragments. In the toy model, raw informative accessible fragments equal `3`,
+but independent informative fragments equal `2`; D1 holder redundancy is `2`.
+That supports treating holder redundancy as independent witness count, not raw
+copy count.
+
+The result does not promote D1 to a complete physical measure. Branch support
+and reversal cost remain the weakest physical-reduction targets.

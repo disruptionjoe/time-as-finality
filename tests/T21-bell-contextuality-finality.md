@@ -65,3 +65,11 @@ extension.
 python -m unittest tests.test_bell_contextuality_finality -v
 python -m models.run_t21
 ```
+
+## T22 Follow-On
+
+[T22](T22-d1-physical-reduction-map.md) complements the CHSH/global-section
+result by auditing D1's physical observables. T21 shows why local finality
+need not imply a global assignment; T22 asks what the D1 axes would reduce to
+in a physical record substrate and implements the first holder-redundancy
+comparison.

@@ -55,6 +55,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-bell-contextuality-finality-v0.1.md](TECHNICAL-REPORT-bell-contextuality-finality-v0.1.md)
   - Bell/CHSH contextuality and score comparison for local finality without
     global section.
+- [TECHNICAL-REPORT-d1-physical-reduction-map-v0.1.md](TECHNICAL-REPORT-d1-physical-reduction-map-v0.1.md)
+  - D1 physical reduction-map audit and executable holder-redundancy check.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -112,6 +114,7 @@ python -m models.run_t17
 python -m models.run_t18
 python -m models.run_t20
 python -m models.run_t21
+python -m models.run_t22
 ```
 
 ## Citation / Reuse

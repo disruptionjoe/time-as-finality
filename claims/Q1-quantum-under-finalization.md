@@ -10,7 +10,7 @@ Conjecture.
 
 ## Status
 
-Open.
+Partially supported.
 
 ## What This Does Not Claim
 
@@ -54,6 +54,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T2: Quantum Measurement Record Finality](../tests/T2-quantum-measurement-record-finality.md)
 - [T6: Snowball Record Finality](../tests/T6-snowball-record-finality.md)
 - [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
+- [T22: D1 Physical Reduction Map](../tests/T22-d1-physical-reduction-map.md)
 
 ## T21 Result
 
@@ -72,6 +73,18 @@ noncontextual score `2`, quantum Tsirelson score `2*sqrt(2)`, and PR-box
 no-signalling score `4`. This sharpens Q1's claim: quantum contextuality sits
 between global classical finality and post-quantum no-signalling consistency.
 - [Proof-Carrying Record Finality](../open-problems/proof-carrying-record-finality.md)
+
+## T22 Result
+
+[T22](../tests/T22-d1-physical-reduction-map.md) gives Q1 a first bridge to
+Quantum Darwinism. In a small system-environment model, D1 holder redundancy
+matches the count of independent informative environment fragments, while raw
+fragment count diverges because one accessible fragment is only a correlated
+duplicate.
+
+This supports the narrower under-finalization language: not every environmental
+copy is an independent classical witness. Full T2 system-apparatus-environment
+dynamics, pointer-basis selection, and detector-level mapping remain open.
 
 ## Contribution Needed
 

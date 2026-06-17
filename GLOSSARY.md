@@ -153,6 +153,18 @@ contextuality certificate. The probability-bearing extension compares the
 classical bound `2`, quantum Tsirelson bound `2*sqrt(2)`, and PR-box
 no-signalling bound `4`.
 
+## D1 Physical Reduction Map
+
+The T22 audit that assigns each D1 dimension a candidate physical observable,
+substrate assumptions, frame-status note, and falsification condition. It is
+an audit of physical meaning, not a derivation of D1 from quantum mechanics.
+
+## Independent Informative Fragment
+
+An environment fragment that is readable by the observer, encodes the target
+system state, and carries that information through an independent channel
+rather than as a correlated duplicate of another accessible fragment.
+
 ## Finality-Induced Direction
 
 The T18 result that strict D1-monotone finalization induces an acyclic partial

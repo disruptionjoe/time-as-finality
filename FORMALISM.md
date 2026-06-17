@@ -234,6 +234,32 @@ The finality interpretation is that classical models admit a global section,
 while quantum and PR-box correlations have local context sections without a
 global classical assignment.
 
+## D1 Physical Reduction Map
+
+T22 audits each D1 dimension against a candidate physical observable:
+
+| D1 dimension | Candidate physical observable | Current status |
+| --- | --- | --- |
+| accessible support | observer-readable fragments encoding the target state | access-boundary dependent |
+| holder redundancy | independent informative environment fragments | first executable reduction |
+| branch support | causally independent record channels or branch families | physical covariance still open |
+| reversal cost | minimum intervention, operation, or work budget needed to erase supporting records | weakest and substrate dependent |
+
+The executable T22 toy model compares holder redundancy with a
+Quantum-Darwinism-style environmental redundancy count. In that model, raw
+informative accessible fragments equal `3`, but independent informative
+fragments equal `2`. The D1 profile is:
+
+```text
+(accessible_support, holder_redundancy, branch_support, reversal_cost)
+= (3, 2, 2, 4)
+```
+
+This supports the narrow rule that D1 holder redundancy counts independent
+informative witnesses, not raw environmental copies. It does not derive D1
+from quantum mechanics or settle the physical status of branch support and
+reversal cost.
+
 ## Finality-Induced Direction
 
 T18 adds a constructor-style admissibility rule:

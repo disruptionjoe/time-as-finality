@@ -79,3 +79,11 @@ consistent, two incompatible classical records cannot both be finalized.
 T20 also narrows A1. Weak quorum breaks the transfer, and T13-style
 global-section questions are not solved by quorum safety. The analogy is
 theorem-bearing in one checked case, but it is not total.
+
+## T21 Boundary
+
+[T21](../tests/T21-bell-contextuality-finality.md) sharpens the boundary.
+Bell/CHSH-style contextuality shows local finality sections can exist while
+no global assignment exists. That is not a failure of quorum safety; it is a
+different layer of the problem. Distributed consensus contributes safety
+theorems, while global objectivity requires sheaf/contextuality machinery.

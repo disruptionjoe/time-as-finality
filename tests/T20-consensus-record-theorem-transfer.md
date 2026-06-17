@@ -78,3 +78,10 @@ Implemented as T20 v0.1.
 python -m unittest tests.test_consensus_record_theorem_transfer -v
 python -m models.run_t20
 ```
+
+## T21 Follow-On
+
+[T21](T21-bell-contextuality-finality.md) implements the contextual boundary
+identified by T20. Quorum safety can transfer from distributed systems into
+physical-record finality, but Bell/CHSH-style contextuality shows that local
+finality sections may still fail to glue into a global section.

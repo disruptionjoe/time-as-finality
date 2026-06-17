@@ -145,6 +145,12 @@ The T20 test for whether a distributed-systems theorem keeps the same proof
 structure after translation into physical-record finality. The first positive
 case is quorum-intersection safety mapped to redundant-holder overlap.
 
+## Bell Contextuality Finality
+
+The T21 finite CHSH-style model where every local measurement context has
+valid finality sections, but no global assignment exists. It is a structural
+contextuality certificate, not a quantum-probability simulation.
+
 ## Finality-Induced Direction
 
 The T18 result that strict D1-monotone finalization induces an acyclic partial

@@ -19,6 +19,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T17](tests/T17-consensus-finality-crosswalk.md) | Consensus finality crosswalk | A1, D1 | implemented: collapse maps and bounded theorem check |
 | [T18](tests/T18-finality-direction-theorem.md) | Finality direction theorem | H7, D1 | implemented: constructor-style finite theorem check |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
+| [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: finite CHSH contextuality certificate |
 
 ## Minimum Compatibility Constraints
 
@@ -45,6 +46,7 @@ python -m models.run_t16
 python -m models.run_t17
 python -m models.run_t18
 python -m models.run_t20
+python -m models.run_t21
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -55,6 +57,7 @@ The suites use only Python's standard library. Evidence records:
 - [Consensus Finality Crosswalk v0.1 Results](results/consensus-finality-crosswalk-v0.1-results.md)
 - [Finality Direction Theorem v0.1 Results](results/finality-direction-theorem-v0.1-results.md)
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
+- [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 
 ## How To Add A Test
 

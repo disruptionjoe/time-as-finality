@@ -57,9 +57,9 @@
    resource-budget families cannot jointly maximize D1 dimensions and bounded
    progress, and identify the smallest model extension that breaks the
    tradeoff.
-2. Extend [T20](tests/T20-consensus-record-theorem-transfer.md) from quorum
-   safety to a harder theorem transfer: either a TaF-native impossibility
-   theorem or an H1/Bell contextuality mapping.
+2. Extend [T21](tests/T21-bell-contextuality-finality.md) from parity
+   contextuality to a probability-bearing Bell/CHSH simulation or experimental
+   mapping.
 3. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
@@ -106,6 +106,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T17](tests/T17-consensus-finality-crosswalk.md): Consensus Finality Crosswalk - collapse maps from safety/liveness/economic finality into D1 and a bounded theorem check for D1/progress tradeoffs.
 - [T18](tests/T18-finality-direction-theorem.md): Finality Direction Theorem - constructor-style finite theorem check deriving an acyclic finality arrow from D1-monotone admissibility.
 - [T20](tests/T20-consensus-record-theorem-transfer.md): Consensus-Record Theorem Transfer - proof-preserving quorum-safety transfer plus weak-quorum and global-section boundaries.
+- [T21](tests/T21-bell-contextuality-finality.md): Bell Contextuality Finality - finite CHSH parity certificate for local finality sections with no global assignment.
 
 ### New Open Problems
 

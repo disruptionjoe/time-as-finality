@@ -53,6 +53,19 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 
 - [T2: Quantum Measurement Record Finality](../tests/T2-quantum-measurement-record-finality.md)
 - [T6: Snowball Record Finality](../tests/T6-snowball-record-finality.md)
+- [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
+
+## T21 Result
+
+[T21](../tests/T21-bell-contextuality-finality.md) gives Q1 a finite
+contextuality model. Four CHSH-style local measurement contexts each have
+valid local finality sections, but no global assignment satisfies all
+contexts.
+
+This supports the narrow under-finalization claim: local classical records can
+be finalized in their own measurement contexts while a single global
+noncontextual record assignment remains unavailable. The result is structural,
+not a simulation of quantum probabilities.
 - [Proof-Carrying Record Finality](../open-problems/proof-carrying-record-finality.md)
 
 ## Contribution Needed

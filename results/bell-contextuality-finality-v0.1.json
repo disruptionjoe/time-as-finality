@@ -1,0 +1,158 @@
+﻿{
+  "checks": {
+    "all_local_sections_exist": true,
+    "compatible_on_named_overlaps": true,
+    "h1_style_obstruction": true,
+    "no_global_assignment": true
+  },
+  "contextuality_witness": {
+    "contradiction": "Multiplying all four context equations gives -1 on the observed side, but every global assignment squares each variable and gives +1.",
+    "expected_noncontextual_product": 1,
+    "parity_product": -1
+  },
+  "interpretation": {
+    "bell_mapping": "The product of observed context parities is -1, while any global hidden-variable assignment would force product +1.",
+    "guardrail": "This is a finite contextuality certificate, not a simulation of quantum amplitudes or a derivation of Bell probabilities.",
+    "physical_interpretation": "Each measurement context supports local finality, but the four contexts cannot be glued into one global assignment of outcomes.",
+    "taf_mapping": "Local finality sections exist for all contexts, but no global finality section exists."
+  },
+  "local_sections": [
+    {
+      "assignments": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "context": "A0B0",
+      "finality_score": 1,
+      "relation": "same",
+      "variables": [
+        "A0",
+        "B0"
+      ]
+    },
+    {
+      "assignments": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "context": "A0B1",
+      "finality_score": 1,
+      "relation": "same",
+      "variables": [
+        "A0",
+        "B1"
+      ]
+    },
+    {
+      "assignments": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "context": "A1B0",
+      "finality_score": 1,
+      "relation": "same",
+      "variables": [
+        "A1",
+        "B0"
+      ]
+    },
+    {
+      "assignments": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "context": "A1B1",
+      "finality_score": 1,
+      "relation": "different",
+      "variables": [
+        "A1",
+        "B1"
+      ]
+    }
+  ],
+  "scenario": {
+    "contexts": [
+      {
+        "finality_score": 1,
+        "left": "A0",
+        "name": "A0B0",
+        "parity": 1,
+        "relation": "same",
+        "right": "B0"
+      },
+      {
+        "finality_score": 1,
+        "left": "A0",
+        "name": "A0B1",
+        "parity": 1,
+        "relation": "same",
+        "right": "B1"
+      },
+      {
+        "finality_score": 1,
+        "left": "A1",
+        "name": "A1B0",
+        "parity": 1,
+        "relation": "same",
+        "right": "B0"
+      },
+      {
+        "finality_score": 1,
+        "left": "A1",
+        "name": "A1B1",
+        "parity": -1,
+        "relation": "different",
+        "right": "B1"
+      }
+    ],
+    "name": "canonical_chsh_finality_obstruction",
+    "settings": [
+      {
+        "name": "A0",
+        "party": "Alice"
+      },
+      {
+        "name": "A1",
+        "party": "Alice"
+      },
+      {
+        "name": "B0",
+        "party": "Bob"
+      },
+      {
+        "name": "B1",
+        "party": "Bob"
+      }
+    ]
+  },
+  "verdict": {
+    "bell_chsh_mapping_constructed": true,
+    "contextuality_certificate_detected": true,
+    "local_finality_without_global_section": true,
+    "physical_referent_is_structural_not_probabilistic": true
+  }
+}

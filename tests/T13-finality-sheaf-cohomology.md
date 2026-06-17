@@ -67,3 +67,11 @@ not optional. Quorum-intersection safety transfers cleanly from distributed
 systems into redundant physical records, but it does not prove global-section
 existence. A contextual record case can have local quorum certificates while
 still lacking a global assignment.
+
+## T21 Bell/CHSH Mapping
+
+[T21](T21-bell-contextuality-finality.md) gives the HÂ¹/sheaf obstruction a
+Bell/CHSH-style finite model. The four local contexts `A0B0`, `A0B1`, `A1B0`,
+and `A1B1` each have valid local finality sections, but their parity
+constraints cannot be satisfied by one global assignment. This is the first
+explicit physical-contextuality referent for the T13 obstruction.

@@ -49,6 +49,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
 - [T20: Consensus-Record Theorem Transfer](../tests/T20-consensus-record-theorem-transfer.md)
+- [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
 
 ## Contribution Needed
 
@@ -91,3 +92,11 @@ finalization.
 This supports D1's holder-redundancy dimension while preserving the caveat
 that global-section existence requires T13/sheaf structure beyond quorum
 safety.
+
+## Bell Contextuality Finality Result
+
+[T21](../tests/T21-bell-contextuality-finality.md) shows why D1 finality must
+remain observer- and context-indexed. Local measurement contexts can each have
+valid finality sections while no single global assignment exists. That makes
+global-section existence a separate condition, not something guaranteed by
+local support or redundancy alone.

@@ -206,6 +206,22 @@ local holders are consistent, incompatible record certificates must intersect
 and therefore cannot both be finalized. The transfer does not prove liveness,
 global objectivity, or T13-style global-section existence.
 
+## Bell Contextuality Finality
+
+T21 maps the sheaf/global-section boundary to a finite CHSH parity pattern:
+
+```text
+A0B0 = same
+A0B1 = same
+A1B0 = same
+A1B1 = different
+```
+
+Each local context has valid finality sections, and named single-setting
+overlaps are compatible. But no global assignment to `A0`, `A1`, `B0`, and
+`B1` satisfies all contexts. This is the first Bell-style contextuality
+certificate for local finality without global finality.
+
 ## Finality-Induced Direction
 
 T18 adds a constructor-style admissibility rule:

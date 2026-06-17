@@ -2,28 +2,39 @@
 
 ## H1: Record Reconstruction Hypothesis
 
-For an embedded observer-system, experienced temporal order can be reconstructed from the causal partial order and stabilization profile of accessible record-formation events.
+For an embedded reconciler, an observer-relative temporal partial order can be
+reconstructed from the causal partial order and stabilization frontiers of
+accessible record-formation events.
+
+Status: **partially supported in the finite T1 model**. A total-order reading
+is rejected by the minimal spacelike counterexample. Phenomenal experience is
+not modeled.
 
 ## H1a: Physical Finality Definition
 
-Physical finality can be modeled as a relation among records that increases with:
+Physical finality v0.1 is an observer-indexed componentwise preorder that
+increases with:
 
-- redundant encoding;
-- causal accessibility;
-- stability under later compatible observations;
-- reversal or erasure cost.
+- accessible supporting records;
+- distinct-holder redundancy;
+- causally independent branch support;
+- graph reversal count.
 
 See [D1](claims/D1-physical-finality-definition.md).
 
 ## H1b: Observer Generalization
 
-An observer is any record-bearing system: a subsystem capable of being affected, retaining a trace, letting the trace constrain future interactions, and in some cases propagating that trace.
+T1 distinguishes trace-bearers, recorders, reconcilers, and conscious
+observers. The executable test requires a reconciler with bounded record
+access; it makes no claim about conscious experience.
 
 See [D2](claims/D2-observer-as-record-bearing-system.md).
 
 ## H1c: Temporal Reconstruction
 
-An observer's experienced temporal order can be approximated by the causal order of record-transfer relations plus the stabilization profile of propositions that observer treats as settled.
+The stabilization frontiers of settled propositions induce a partial order
+when the causal graph warrants one. Causally independent frontiers remain
+incomparable rather than receiving an arbitrary total order.
 
 See [T1](tests/T1-record-graph-temporal-reconstruction.md).
 
@@ -56,3 +67,5 @@ The project should weaken or reject its strongest claims if:
 5. the framework treats decoherence as a complete solution to the measurement problem;
 6. the framework cannot distinguish loss of local access from physical reversal;
 7. the framework adds no clarity beyond existing decoherence, relational-time, or causal-structure accounts.
+8. a physics-grounded implementation collapses every finality dimension into
+   ordinary redundancy or causal reachability.

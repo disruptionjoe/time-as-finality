@@ -2,7 +2,8 @@
 
 ## Claim
 
-An observer is any record-bearing system, not only a conscious mind.
+For T1, an observer is a bounded record-processing system parameterized by its
+capabilities and causal access. Conscious observers are outside the model.
 
 ## Class
 
@@ -10,7 +11,7 @@ Definition.
 
 ## Status
 
-Open.
+Revised.
 
 ## What This Does Not Claim
 
@@ -18,18 +19,21 @@ Open.
 - It does not claim a camera has human experience.
 - It does not make human belief physically creative.
 
-## Working Definition
+## Working Taxonomy
 
-A record-bearing system can:
+1. A **trace-bearer** retains a state correlated with an interaction.
+2. A **recorder** exposes a retained trace to a later causal interaction.
+3. A **reconciler** compares multiple records and applies a decision rule.
+4. A **conscious observer** has phenomenal experience, which T1 does not model.
 
-1. be affected by another system;
-2. retain some trace of that interaction;
-3. let that trace constrain future interactions;
-4. sometimes propagate that trace to other systems.
+The executable model uses a reconciler with an observation event and a bounded
+set of record holders it can inspect.
 
 ## Why It Might Be True
 
-Physics uses "observer" in ways that often refer to measurement contexts, apparatuses, frames, or systems, not just human minds. This project needs the broader meaning to avoid anthropocentrism.
+Physics uses "observer" for measurement contexts, apparatuses, frames, and
+information-processing systems, not only human minds. Hartle's IGUS work is a
+direct known neighbor and limits any novelty claim for this definition.
 
 ## How It Could Fail
 
@@ -43,4 +47,9 @@ Physics uses "observer" in ways that often refer to measurement contexts, appara
 
 ## Contribution Needed
 
-Suggest a sharper term or taxonomy: record-bearing system, measuring system, observer-system, conscious observer, environmental recorder.
+Determine whether "reconciler" is needed for all finality judgments or whether
+some physical cases support a weaker recorder-relative relation.
+
+## Known Neighbors
+
+See [Core Formalism Known Neighbors](../literature/N3-core-formalism-known-neighbors.md).

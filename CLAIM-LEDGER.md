@@ -4,15 +4,17 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
-| [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | open | Experienced time is the order an embedded system assigns to accumulating finalized records. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [D1](claims/D1-physical-finality-definition.md) | definition | open | Physical finality is record-stability across redundancy, causal accessibility, robustness, and reversal cost. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [D2](claims/D2-observer-as-record-bearing-system.md) | definition | open | An observer is any record-bearing system, not only a conscious mind. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
+| [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
+| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md) |
+| [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | open | Quantum states may be real but not yet finalized as classical records in a given observer-environment context. | [T2](tests/T2-quantum-measurement-record-finality.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open | Spacetime may be a consensus envelope for causally bounded finality. | [Open problem](open-problems/rendered-interface-assumptions.md) |
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
+| [N3](literature/N3-core-formalism-known-neighbors.md) | known_neighbor | active | Lamport, quantum Darwinism, IGUS, records-of-histories, and Landauer constrain the novelty and interpretation of v0.1. | Primary-source positioning |
+| [N4](literature/N4-emergence-lab-known-neighbors.md) | known_neighbor | active | Reversible computation, cellular automata, Landauer cost, coarse-graining, and Boolean sensitivity constrain the Emergence Laboratory. | Primary-source positioning |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | not_claimed | active | Human belief does not create matter. | Guardrail |
 | [G2](guardrails/G2-not-a-replacement-theory.md) | not_claimed | active | This does not replace QM, GR, thermodynamics, or proper time. | Guardrail |
 
@@ -23,3 +25,25 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - `revised` - claim has been changed substantially from an earlier version.
 - `weakened` - claim remains useful but no longer supports its original ambition.
 - `rejected` - claim failed a test or was superseded.
+
+## Change Log
+
+### 2026-06-11 - First executable formal result
+
+- C1 changed from `open` to `weakened`: T1 supports partial-order
+  reconstruction but the three-event counterexample rejects a general total
+  order, and no phenomenal-experience bridge was demonstrated.
+- D1 changed from `open` to `revised`: the prose dimensions became an
+  observer-indexed componentwise preorder.
+- D2 changed from `open` to `revised`: the broad observer definition became a
+  capability taxonomy and was positioned against IGUS prior art.
+
+### 2026-06-11 - Emergence Laboratory
+
+- D1 changed from `revised` to `weakened`: its four dimensions do not emerge
+  as one universal structure. Accessibility and branch structure survive,
+  while support, raw redundancy, and terminal intervention cost collapse in
+  the simplest binary trace model.
+- The stronger claim that finality is one mechanism spanning causal,
+  computational, and thermodynamic irreversibility is rejected. The surviving
+  result is a comparative framework for observer-indexed records.

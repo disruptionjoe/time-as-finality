@@ -57,29 +57,32 @@
    resource-budget families cannot jointly maximize D1 dimensions and bounded
    progress, and identify the smallest model extension that breaks the
    tradeoff.
-2. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
+2. Extend [T20](tests/T20-consensus-record-theorem-transfer.md) from quorum
+   safety to a harder theorem transfer: either a TaF-native impossibility
+   theorem or an H1/Bell contextuality mapping.
+3. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
-3. Define the phenomenal formal-gap problem precisely using
+4. Define the phenomenal formal-gap problem precisely using
    [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
    and [Observer Closure Theorem](open-problems/observer-closure-theorem.md):
    state what a third-person record graph can and cannot represent.
-4. Build a persistent dynamical reconciler whose storage and access boundary
+5. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-5. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
+6. Implement [T2](tests/T2-quantum-measurement-record-finality.md) on a
    system-apparatus-environment model and compare D1 directly with
    quantum-Darwinism redundancy.
-6. Test whether the D1 preorder composes under record-graph merge.
-7. Replace the Landauer lower-bound calculation with an explicit stochastic
+7. Test whether the D1 preorder composes under record-graph merge.
+8. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-8. Run a relativity sanity check for
+9. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-9. Build a bounded local-sampling confidence model for
+10. Build a bounded local-sampling confidence model for
    [T6](tests/T6-snowball-record-finality.md).
-10. Add a black-hole specialist critique of
+11. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).
-11. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
+12. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
     in a physical substrate and test whether D1-monotone admissibility
     survives beyond the finite theorem model.
 
@@ -102,6 +105,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T16](tests/T16-spacetime-aggregation.md): Spacetime Aggregation Toy Model - first executable gluing check for S1, with overlap and cycle obstruction witnesses.
 - [T17](tests/T17-consensus-finality-crosswalk.md): Consensus Finality Crosswalk - collapse maps from safety/liveness/economic finality into D1 and a bounded theorem check for D1/progress tradeoffs.
 - [T18](tests/T18-finality-direction-theorem.md): Finality Direction Theorem - constructor-style finite theorem check deriving an acyclic finality arrow from D1-monotone admissibility.
+- [T20](tests/T20-consensus-record-theorem-transfer.md): Consensus-Record Theorem Transfer - proof-preserving quorum-safety transfer plus weak-quorum and global-section boundaries.
 
 ### New Open Problems
 

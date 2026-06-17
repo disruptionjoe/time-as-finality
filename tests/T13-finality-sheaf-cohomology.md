@@ -59,3 +59,11 @@ The Cech cohomology machinery is now implemented in `models/spacetime_aggregatio
 **H¹ is now executable:** `h1_obstruction_scenario` is a canonical 3-domain example in which pairwise restriction maps are locally consistent but cannot be assembled into a global finality section. This is the first concrete topological obstruction in the TaF finite model.
 
 **What was NOT done:** This result is confined to the finite combinatorial model. It does not define a Lorentzian metric, derive Einstein equations, handle continuous restriction maps, or establish covariance under diffeomorphisms. The connection to physical spacetime geometry remains an open problem (see `open-problems/spacetime-as-finality-colimit.md`).
+
+## T20 Boundary Result
+
+[T20](T20-consensus-record-theorem-transfer.md) shows why the sheaf layer is
+not optional. Quorum-intersection safety transfers cleanly from distributed
+systems into redundant physical records, but it does not prove global-section
+existence. A contextual record case can have local quorum certificates while
+still lacking a global assignment.

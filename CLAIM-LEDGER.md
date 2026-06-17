@@ -5,9 +5,9 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
 | [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. | [T1](tests/T1-record-graph-temporal-reconstruction.md) |
-| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. T17 adds a bounded theorem check showing D1/progress tradeoffs under resource limits. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T17](tests/T17-consensus-finality-crosswalk.md) |
+| [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. T17 adds a bounded theorem check; T20 gives holder redundancy a theorem-transfer role. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
-| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps, divergence witnesses, and a bounded theorem check. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md) |
+| [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | open | Quantum states may be real but not yet finalized as classical records in a given observer-environment context. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
@@ -86,3 +86,11 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   Immediate next steps: Bell-test mapping, measurement-problem no-go statement.
 - T19 assigned to phenomenal bridge complexity separation (see tests/T19-phenomenal-bridge-complexity-separation.md).
 - See explorations/all-persona-idea-sprint-2026-06-16-v2.md for full sprint results.
+
+### 2026-06-17 - Consensus-Record Theorem Transfer
+
+- A1 remains `active`: T20 verifies that quorum-intersection safety transfers
+  into physical-record finality as redundant-holder overlap with the same
+  proof structure.
+- D1 remains `weakened`: T20 strengthens holder redundancy's role but also
+  shows that quorum safety does not prove T13-style global-section existence.

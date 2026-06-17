@@ -68,3 +68,12 @@ not an FLP proof, and not a claim that consensus creates facts.
 Generalize the bounded theorem check into a parameterized result. State which
 resource-budget families preserve the tradeoff and which added protocol
 features break it.
+
+## T20 Follow-On
+
+[T20](T20-consensus-record-theorem-transfer.md) tests a stronger bridge:
+whether a distributed-systems theorem transfers into physical-record finality
+without changing proof structure. The first positive transfer is quorum
+intersection safety mapped to redundant-holder overlap. The first boundary is
+also explicit: quorum safety does not prove T13-style global-section
+existence.

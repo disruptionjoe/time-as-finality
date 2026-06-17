@@ -139,6 +139,12 @@ The T17 finite theorem check showing that, under the stated protocol budget
 and adversarial delay bound, no admissible configuration simultaneously
 maximizes all D1 dimensions and bounded progress.
 
+## Consensus-Record Theorem Transfer
+
+The T20 test for whether a distributed-systems theorem keeps the same proof
+structure after translation into physical-record finality. The first positive
+case is quorum-intersection safety mapped to redundant-holder overlap.
+
 ## Finality-Induced Direction
 
 The T18 result that strict D1-monotone finalization induces an acyclic partial

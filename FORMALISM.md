@@ -187,6 +187,25 @@ Under the stated finite protocol budget, no admissible configuration maximizes
 all five objectives simultaneously. This is a finite theorem check, not a
 universal distributed-systems impossibility theorem.
 
+## Consensus-Record Theorem Transfer
+
+T20 adds a theorem-transfer criterion. A distributed-systems theorem transfers
+into physical-record finality only when the proof's typed assumptions are
+preserved under the dictionary:
+
+```text
+process local state      -> observer-local finality domain
+commit certificate       -> record fragment / environmental witness
+quorum intersection      -> redundant-holder overlap
+conflicting commit       -> incompatible finality sections
+safety                   -> no contradictory stabilized records
+```
+
+The first checked transfer is quorum-intersection safety. If `2q > n` and
+local holders are consistent, incompatible record certificates must intersect
+and therefore cannot both be finalized. The transfer does not prove liveness,
+global objectivity, or T13-style global-section existence.
+
 ## Finality-Induced Direction
 
 T18 adds a constructor-style admissibility rule:

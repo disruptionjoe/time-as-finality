@@ -49,6 +49,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     witness.
 - [TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md](TECHNICAL-REPORT-consensus-finality-impossibility-v0.1.md)
   - executable bounded theorem check for D1/progress finality tradeoffs.
+- [TECHNICAL-REPORT-consensus-record-theorem-transfer-v0.1.md](TECHNICAL-REPORT-consensus-record-theorem-transfer-v0.1.md)
+  - theorem-transfer test between distributed consensus and physical record
+    finality.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -104,6 +107,7 @@ python -m models.run_emergence_lab
 python -m models.run_t16
 python -m models.run_t17
 python -m models.run_t18
+python -m models.run_t20
 ```
 
 ## Citation / Reuse

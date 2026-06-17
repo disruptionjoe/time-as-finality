@@ -1,0 +1,338 @@
+﻿{
+  "boundary_cases": {
+    "contextual_record": {
+      "case": {
+        "holders": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5"
+        ],
+        "name": "contextual_global_section_boundary",
+        "quorum_threshold": 3,
+        "relation_certificates": [
+          {
+            "holders": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "left": "A",
+            "relation": "same",
+            "right": "B"
+          },
+          {
+            "holders": [
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "left": "B",
+            "relation": "same",
+            "right": "C"
+          },
+          {
+            "holders": [
+              "e3",
+              "e4",
+              "e5"
+            ],
+            "left": "A",
+            "relation": "different",
+            "right": "C"
+          }
+        ],
+        "variables": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "global_section_exists": false,
+      "local_certificates_meet_quorum": true,
+      "obstruction_kind": "local_certificates_no_global_section",
+      "pairwise_relations_locally_satisfiable": true
+    },
+    "weak_quorum": {
+      "all_certificates_meet_quorum": true,
+      "conflict_pairs": [
+        {
+          "blocked_by_intersection": false,
+          "intersection": [],
+          "left": "spin_up_record",
+          "right": "spin_down_record"
+        }
+      ],
+      "quorum_intersection_assumption": false,
+      "system": {
+        "certificates": [
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "holders": [
+              "e1",
+              "e2"
+            ],
+            "value": "spin_up_record"
+          },
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              2,
+              2,
+              1,
+              2
+            ],
+            "holders": [
+              "e3",
+              "e4"
+            ],
+            "value": "spin_down_record"
+          }
+        ],
+        "holders": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ],
+        "interpretation": "physical_record_finality",
+        "local_consistency": true,
+        "name": "weak_quorum_boundary",
+        "quorum_threshold": 2
+      },
+      "theorem_blocks_all_conflicts": false,
+      "unsafe_conflicts": [
+        {
+          "intersection": [],
+          "left": "spin_up_record",
+          "right": "spin_down_record"
+        }
+      ]
+    }
+  },
+  "dictionary": [
+    {
+      "caveat": "physical observers are not engineered processes",
+      "preserves": "bounded local view",
+      "source_term": "process local state",
+      "source_type": "distributed computation",
+      "target_term": "observer-local finality domain",
+      "target_type": "physical record formation"
+    },
+    {
+      "caveat": "physical records need not be symbolic messages",
+      "preserves": "portable evidence for a candidate state",
+      "source_term": "message or commit certificate",
+      "source_type": "distributed computation",
+      "target_term": "record fragment or environmental witness",
+      "target_type": "physical record formation"
+    },
+    {
+      "caveat": "holder independence must be justified physically",
+      "preserves": "shared support that blocks contradictory finalization",
+      "source_term": "quorum intersection",
+      "source_type": "distributed computation",
+      "target_term": "redundant-holder overlap",
+      "target_type": "D1 finality"
+    },
+    {
+      "caveat": "fork safety is weaker than global-section existence",
+      "preserves": "local commitments that cannot all be globalized",
+      "source_term": "fork or conflicting commit",
+      "source_type": "distributed computation",
+      "target_term": "incompatible finality sections",
+      "target_type": "T13 sheaf language"
+    },
+    {
+      "caveat": "does not imply liveness or objectivity",
+      "preserves": "exclusion of incompatible final facts",
+      "source_term": "safety",
+      "source_type": "distributed computation",
+      "target_term": "no contradictory stabilized records",
+      "target_type": "physical record formation"
+    },
+    {
+      "caveat": "progress is not a D1 dimension",
+      "preserves": "eventual availability under bounded conditions",
+      "source_term": "liveness",
+      "source_type": "distributed computation",
+      "target_term": "record-amplification progress",
+      "target_type": "physical record formation"
+    },
+    {
+      "caveat": "physical noise is not adversarial intent",
+      "preserves": "limits on reconciliation across local views",
+      "source_term": "Byzantine fault or adversarial delay",
+      "source_type": "distributed computation",
+      "target_term": "bounded causal access or decoherence lag",
+      "target_type": "physical record formation"
+    }
+  ],
+  "theorem_transfer": {
+    "assumptions_not_preserved": [
+      "engineered message passing",
+      "intentional Byzantine behavior",
+      "protocol clock or round structure",
+      "proof of global section existence"
+    ],
+    "assumptions_preserved": [
+      "finite holder set",
+      "certificate threshold q",
+      "intersection condition 2q > n",
+      "local consistency forbids double-certification",
+      "incompatible values are explicitly typed"
+    ],
+    "consensus_analysis": {
+      "all_certificates_meet_quorum": true,
+      "conflict_pairs": [
+        {
+          "blocked_by_intersection": true,
+          "intersection": [
+            "n3"
+          ],
+          "left": "commit_A",
+          "right": "commit_B"
+        }
+      ],
+      "quorum_intersection_assumption": true,
+      "system": {
+        "certificates": [
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "holders": [
+              "n1",
+              "n2",
+              "n3"
+            ],
+            "value": "commit_A"
+          },
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "holders": [
+              "n3",
+              "n4",
+              "n5"
+            ],
+            "value": "commit_B"
+          }
+        ],
+        "holders": [
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5"
+        ],
+        "interpretation": "distributed_consensus",
+        "local_consistency": true,
+        "name": "consensus_majority_safety",
+        "quorum_threshold": 3
+      },
+      "theorem_blocks_all_conflicts": true,
+      "unsafe_conflicts": []
+    },
+    "proof_steps": [
+      "Every final certificate contains at least q holders.",
+      "If 2q > n, any two final certificates intersect.",
+      "A shared locally consistent holder cannot certify incompatible values.",
+      "Therefore incompatible certificates cannot both be final."
+    ],
+    "proof_structure_preserved": true,
+    "record_analysis": {
+      "all_certificates_meet_quorum": true,
+      "conflict_pairs": [
+        {
+          "blocked_by_intersection": true,
+          "intersection": [
+            "e3"
+          ],
+          "left": "spin_up_record",
+          "right": "spin_down_record"
+        }
+      ],
+      "quorum_intersection_assumption": true,
+      "system": {
+        "certificates": [
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "holders": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "value": "spin_up_record"
+          },
+          {
+            "confirmation_weight": 1,
+            "context": "global",
+            "d1_profile": [
+              3,
+              3,
+              1,
+              3
+            ],
+            "holders": [
+              "e3",
+              "e4",
+              "e5"
+            ],
+            "value": "spin_down_record"
+          }
+        ],
+        "holders": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5"
+        ],
+        "interpretation": "physical_record_finality",
+        "local_consistency": true,
+        "name": "record_majority_safety",
+        "quorum_threshold": 3
+      },
+      "theorem_blocks_all_conflicts": true,
+      "unsafe_conflicts": []
+    },
+    "source_theorem": "In a quorum system with 2q > n and locally consistent processes, two conflicting commit certificates cannot both be valid.",
+    "target_theorem": "In a physical record system with redundant-holder threshold 2q > n and locally consistent record fragments, two incompatible classical records cannot both be finalized."
+  },
+  "verdict": {
+    "global_section_not_proven_by_quorum_safety": true,
+    "physics_not_reduced_to_protocol": true,
+    "quorum_safety_theorem_transfers": true,
+    "sheaf_style_boundary_detected": true,
+    "typed_dictionary_complete": true,
+    "weak_quorum_boundary_detected": true
+  }
+}

@@ -132,11 +132,17 @@ but is stated in D1 language, not distributed-systems language. The claim is tha
 physical process can simultaneously maximize all four D1 dimensions under bounded resource budgets.
 This should be provable from D1 axioms alone, not derived by mapping onto FLP.
 
-**Distinguishing criterion:** `[OPEN]`
-Prove (or disprove) the TaF impossibility theorem in T17/T19 language without invoking FLP.
-Construct the minimal D1-model where simultaneous D1-dimension maximization requires a resource
-budget exceeding any bound. If the proof structure does not reference FLP, the result is
-TaF-native. If it requires FLP as a lemma, TaF is borrowing rather than deriving.
+**Distinguishing criterion:** `[PARTIAL]`
+T20 performs the first theorem-transfer check. Quorum-intersection safety transfers from
+distributed consensus into physical-record finality without changing proof structure:
+`2q > n` plus local consistency blocks incompatible final certificates on both sides.
+This is a partial positive result, not yet a TaF-native impossibility floor.
+
+The remaining test is stronger: prove (or disprove) the TaF impossibility theorem in
+T17/T19 language without invoking FLP. Construct the minimal D1-model where simultaneous
+D1-dimension maximization requires a resource budget exceeding any bound. If the proof
+structure does not reference FLP, the result is TaF-native. If it requires FLP as a lemma,
+TaF is borrowing rather than deriving.
 
 **Falsification condition for TaF:** If every TaF impossibility result requires importing FLP
 or CAP as premises, TaF has no native impossibility floor.
@@ -174,7 +180,7 @@ RQM predicts consistent local facts, TaF's cohomology adds nothing over RQM's co
 | 2 | Quantum Darwinism | R_delta vs D1-redundancy numerical check | `[PARTIAL]` → implement T2 |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
-| 5 | FLP/CAP | TaF-native impossibility proof | `[OPEN]` → T19 or T17 extension |
+| 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |
 | 6 | Relational Quantum Mechanics | H1 in RQM scenario | `[OPEN]` → requires new test |
 | 7 | Relational Time | Page-Wootters vs D1 reversal cost | `[OPEN]` → requires new test |
 

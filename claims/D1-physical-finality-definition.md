@@ -48,6 +48,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
+- [T20: Consensus-Record Theorem Transfer](../tests/T20-consensus-record-theorem-transfer.md)
 
 ## Contribution Needed
 
@@ -78,3 +79,15 @@ The bounded theorem check verifies that no admissible configuration in the
 stated finite model jointly maximizes support, redundancy, branch support,
 reversal cost, and bounded progress. This strengthens D1's reason to keep
 dimensions separate: scalar "more final" language would hide the tradeoff.
+
+## Consensus-Record Theorem Transfer Result
+
+[T20](../tests/T20-consensus-record-theorem-transfer.md) gives holder
+redundancy a theorem-bearing role. Redundant-holder overlap is the
+physical-record analogue of quorum intersection: when `2q > n`, incompatible
+certificates must share a holder, and local consistency blocks contradictory
+finalization.
+
+This supports D1's holder-redundancy dimension while preserving the caveat
+that global-section existence requires T13/sheaf structure beyond quorum
+safety.

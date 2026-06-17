@@ -67,3 +67,15 @@ keeping liveness as a protocol-side condition rather than a D1 dimension.
 
 This strengthens A1 as a formal analogy, not as a claim that physics literally
 runs a consensus protocol.
+
+## T20 Result
+
+[T20](../tests/T20-consensus-record-theorem-transfer.md) tests the stronger
+claim that theorem structure can transfer across the analogy. Quorum
+intersection safety transfers into physical-record finality as a
+redundant-holder overlap theorem: if `2q > n` and local holders are
+consistent, two incompatible classical records cannot both be finalized.
+
+T20 also narrows A1. Weak quorum breaks the transfer, and T13-style
+global-section questions are not solved by quorum safety. The analogy is
+theorem-bearing in one checked case, but it is not total.

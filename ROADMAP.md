@@ -38,8 +38,9 @@
   preserve causal, metric, or covariance constraints.
 - Try to break the phenomenal formal-gap track by reducing first-person
   finality verification to ordinary third-person record-graph computation.
-- Try to break the finality-direction track by showing it is always identical
-  to thermodynamic irreversibility in admissible models.
+- Try to break [H7](claims/H7-finality-induced-direction.md) by showing
+  T18's D1-monotone admissibility rule is always identical to thermodynamic
+  irreversibility in physically grounded models.
 
 ## Phase 4: Public Essay And Technical Note Split
 
@@ -78,6 +79,9 @@
    [T6](tests/T6-snowball-record-finality.md).
 10. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).
+11. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
+    in a physical substrate and test whether D1-monotone admissibility
+    survives beyond the finite theorem model.
 
 ## Phase 5: Idea Sprint Additions — 2026-06-16
 
@@ -97,6 +101,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 
 - [T16](tests/T16-spacetime-aggregation.md): Spacetime Aggregation Toy Model - first executable gluing check for S1, with overlap and cycle obstruction witnesses.
 - [T17](tests/T17-consensus-finality-crosswalk.md): Consensus Finality Crosswalk - collapse maps from safety/liveness/economic finality into D1 and a bounded theorem check for D1/progress tradeoffs.
+- [T18](tests/T18-finality-direction-theorem.md): Finality Direction Theorem - constructor-style finite theorem check deriving an acyclic finality arrow from D1-monotone admissibility.
 
 ### New Open Problems
 

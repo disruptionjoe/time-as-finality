@@ -139,6 +139,12 @@ The T17 finite theorem check showing that, under the stated protocol budget
 and adversarial delay bound, no admissible configuration simultaneously
 maximizes all D1 dimensions and bounded progress.
 
+## Finality-Induced Direction
+
+The T18 result that strict D1-monotone finalization induces an acyclic partial
+order in the finite constructor model. This is a finality arrow, not a
+derivation of thermodynamic entropy increase or proper time.
+
 ## Commit Order
 
 An analogy from distributed systems. In this project it refers to a settled ordering of records or events for a given observer-network, not a literal cosmic blockchain.

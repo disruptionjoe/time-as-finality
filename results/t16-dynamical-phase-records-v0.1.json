@@ -1,0 +1,142 @@
+﻿{
+  "derivation_rule": "weight is +1 for terminal 0->1 trace cells and -1 for terminal 1->0 trace cells",
+  "sweep": {
+    "width": 4,
+    "max_layers": 3,
+    "cases": 49152,
+    "nonempty_trace_cases": 39488,
+    "mixed_sign_fraction": 0.25040518638573744,
+    "zero_readout_fraction": 0.18233387358184766,
+    "profile_count": 5,
+    "separating_profile_count": 4,
+    "profiles_with_multiple_readouts_fraction": 0.8
+  },
+  "profile_separation_witness": {
+    "left": {
+      "rule": 2,
+      "width": 4,
+      "layers": 1,
+      "initial": "0001",
+      "seed_index": 2,
+      "weights": [
+        1,
+        -1
+      ],
+      "profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "readout": 0.0
+    },
+    "right": {
+      "rule": 3,
+      "width": 4,
+      "layers": 1,
+      "initial": "0000",
+      "seed_index": 0,
+      "weights": [
+        -1,
+        -1
+      ],
+      "profile": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "readout": 4.0
+    }
+  },
+  "cancellation_trajectory": {
+    "rule": 6,
+    "width": 4,
+    "initial": "0001",
+    "seed_index": 1,
+    "layers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "profiles": [
+      [
+        2,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "readouts": [
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "weights_by_layer": [
+      [
+        1,
+        -1
+      ],
+      [
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1
+      ]
+    ]
+  },
+  "verdict": {
+    "phase_weights_are_dynamically_derived": true,
+    "finality_profile_remains_phase_blind": true,
+    "profile_does_not_determine_dynamical_signed_readout": true,
+    "zero_readout_can_arise_from_generated_cancellation": true,
+    "does_not_derive_quantum_mechanics": true
+  }
+}

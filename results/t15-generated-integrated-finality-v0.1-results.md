@@ -1,7 +1,7 @@
 # T15 Generated Integrated Finality Stress Results
 
 Result: T15 focused tests pass `5/5`; the current full branch suite passes
-`77/77`.
+`83/83` after T16 was added.
 
 ## Sweep
 

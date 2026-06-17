@@ -46,6 +46,10 @@ single witness with a 448-case deterministic sweep. It finds repeatable
 success regions and breakpoints, which supports typed separation as a
 family-level constraint rather than a one-off repair.
 
+[T16](../tests/T16-dynamical-phase-bearing-records.md) adds one more typed
+stage: signs can be generated from local trace direction while finality
+profiles remain phase-blind.
+
 ## Failure Conditions
 
 - Provenance-preserving evidence merge fails its algebraic laws.

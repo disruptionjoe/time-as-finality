@@ -18,6 +18,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T13](tests/T13-signed-interfering-readout.md) | Signed and interfering readout | C3, D1, C2 | implemented: finality/readout separation |
 | [T14](tests/T14-integrated-observer-context-finality.md) | Integrated observer-context finality | D1, D2, C2, C3, A1, M1 | implemented: typed-pipeline stress test |
 | [T15](tests/T15-generated-integrated-finality-stress.md) | Generated integrated finality stress lab | D1, D2, C2, C3, A1, M1 | implemented: generated successes and breakpoints |
+| [T16](tests/T16-dynamical-phase-bearing-records.md) | Dynamical phase-bearing records | D1, C2, C3, G2 | implemented: local dynamics generate signed traces |
 
 ## Minimum Compatibility Constraints
 
@@ -43,6 +44,7 @@ python -m models.run_t12
 python -m models.run_t13
 python -m models.run_t14
 python -m models.run_t15
+python -m models.run_t16
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -55,6 +57,7 @@ The suites use only Python's standard library. Evidence records:
 - [T13 Signed Readout v0.1 Results](results/t13-signed-readout-v0.1-results.md)
 - [T14 Integrated Finality v0.1 Results](results/t14-integrated-finality-v0.1-results.md)
 - [T15 Generated Integrated Finality v0.1 Results](results/t15-generated-integrated-finality-v0.1-results.md)
+- [T16 Dynamical Phase Records v0.1 Results](results/t16-dynamical-phase-records-v0.1-results.md)
 
 ## How To Add A Test
 

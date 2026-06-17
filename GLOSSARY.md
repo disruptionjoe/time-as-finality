@@ -125,6 +125,12 @@ The T15 deterministic sweep over integrated record systems. It searches for
 repeatable success regions and minimal breakpoints rather than relying on one
 hand-built witness.
 
+## Dynamical Signed Trace
+
+A T16 record whose sign is derived from local dynamics: `+1` for a terminal
+cell changed from `0` to `1` by a seed perturbation, and `-1` for a terminal
+cell changed from `1` to `0`.
+
 ## Stabilization Frontier
 
 The causally minimal event or set of events at which exactly one value for a

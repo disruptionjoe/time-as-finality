@@ -28,6 +28,10 @@
 > **Generated stress update:** [T15](tests/T15-generated-integrated-finality-stress.md)
 > replaces the single T14 witness with a deterministic generated family. It
 > records both repeatable success regions and minimal breakpoints.
+>
+> **Dynamical phase update:** [T16](tests/T16-dynamical-phase-bearing-records.md)
+> derives `+1/-1` signed trace weights from local update dynamics. The result
+> preserves the finality/readout separation without hand-assigned signs.
 
 This document states the minimum formal contract used by the first executable
 Time as Finality model. It is deliberately finite and substrate-neutral.
@@ -226,6 +230,16 @@ T15 turns this finite witness into a bounded generator over core size, signed
 weights, expression masking, forged records, and valid dissent. The generator
 does not add new primitives; it searches the existing typed pipeline for
 repeatable success and failure patterns.
+
+T16 replaces hand-assigned signs with direction-sensitive generated traces:
+
+```text
+terminal 0 -> 1 trace cell gives +1
+terminal 1 -> 0 trace cell gives -1
+```
+
+The finality profile remains phase-blind. The signed readout is a later typed
+stage over dynamically generated records.
 
 ## Failure Conditions
 

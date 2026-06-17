@@ -51,6 +51,7 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T13: Signed And Interfering Readout](../tests/T13-signed-interfering-readout.md)
 - [T14: Integrated Observer-Context Finality](../tests/T14-integrated-observer-context-finality.md)
 - [T15: Generated Integrated Finality Stress Lab](../tests/T15-generated-integrated-finality-stress.md)
+- [T16: Dynamical Phase-Bearing Records](../tests/T16-dynamical-phase-bearing-records.md)
 
 ## Contribution Needed
 
@@ -115,3 +116,10 @@ proof validity, protocol truth, or phase-sensitive readout.
 [T15](../tests/T15-generated-integrated-finality-stress.md) repeats this
 pressure across 448 generated cases. D1 remains useful as a profile, but the
 sweep reinforces that it is not readout, proof validity, consensus, or truth.
+
+## Dynamical Phase Result
+
+[T16](../tests/T16-dynamical-phase-bearing-records.md) derives signed traces
+from local update dynamics. The D1-style profile remains phase-blind, while
+the same profile can produce readouts `0.0` and `4.0`. This strengthens D1 as
+a deliberately limited finality profile rather than a complete readout state.

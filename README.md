@@ -56,6 +56,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-generated-integrated-finality-v0.1.md](TECHNICAL-REPORT-generated-integrated-finality-v0.1.md)
   - generated 448-case stress lab for integrated finality successes and
     breakpoints.
+- [TECHNICAL-REPORT-dynamical-phase-records-v0.1.md](TECHNICAL-REPORT-dynamical-phase-records-v0.1.md)
+  - local-dynamics derivation of signed record traces and cancellation.
 - [COMPOSITIONAL-FINALITY-LAB.md](COMPOSITIONAL-FINALITY-LAB.md)
   - T11 mechanisms, checkpoint policies, epigenetic lens, and counterexamples.
 - [PROOF-CARRYING-METASTABLE-LAB.md](PROOF-CARRYING-METASTABLE-LAB.md)
@@ -112,6 +114,7 @@ python -m models.run_t12
 python -m models.run_t13
 python -m models.run_t14
 python -m models.run_t15
+python -m models.run_t16
 ```
 
 ## Citation / Reuse

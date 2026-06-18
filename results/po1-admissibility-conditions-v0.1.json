@@ -1,0 +1,264 @@
+﻿{
+  "admissibility_conditions": [
+    {
+      "description": "Richer D1RestrictionSystem satisfies all T26 axioms.",
+      "field": "richer_valid",
+      "id": "AC1"
+    },
+    {
+      "description": "Restricted D1RestrictionSystem satisfies all T26 axioms.",
+      "field": "restricted_valid",
+      "id": "AC2"
+    },
+    {
+      "description": "Site map is total (site_map_total=True); projection can be stated.",
+      "field": "projection_definable",
+      "id": "AC3"
+    },
+    {
+      "description": "Restricted system has all patches locally satisfiable (non-trivial obstruction).",
+      "field": "local_compat",
+      "id": "AC4"
+    },
+    {
+      "description": "Projection forgets named structure AND loses measurable profile data.",
+      "field": "structure_forgotten",
+      "id": "AC5"
+    },
+    {
+      "description": "Restricted system has a gluing obstruction (global_witness_count=0, all patches locally satisfiable).",
+      "field": "restricted_obstructed",
+      "id": "AC6"
+    },
+    {
+      "description": "Richer system has a global section (obstruction_detected=False).",
+      "field": "richer_unobstructed",
+      "id": "AC7"
+    }
+  ],
+  "boundary_cases": [
+    "distler_garibaldi",
+    "type_system_macro_expansion"
+  ],
+  "boundary_count": 2,
+  "case_count": 10,
+  "checks": [
+    {
+      "case_name": "witten_1981",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "failed_conditions": [],
+      "po1_evidence": true,
+      "source": "T27",
+      "verdict": "fully_admissible",
+      "verdict_label": "positive PO1 instance"
+    },
+    {
+      "case_name": "nielsen_ninomiya",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "failed_conditions": [],
+      "po1_evidence": true,
+      "source": "T27",
+      "verdict": "fully_admissible",
+      "verdict_label": "positive PO1 instance"
+    },
+    {
+      "case_name": "distler_garibaldi",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "failed_conditions": [
+        "AC3"
+      ],
+      "po1_evidence": false,
+      "source": "T27",
+      "verdict": "boundary_non_definable",
+      "verdict_label": "boundary: non-definable projection"
+    },
+    {
+      "case_name": "cap_theorem",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "failed_conditions": [],
+      "po1_evidence": true,
+      "source": "T28",
+      "verdict": "fully_admissible",
+      "verdict_label": "positive PO1 instance"
+    },
+    {
+      "case_name": "synthetic_lossy_no_obstruction",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "failed_conditions": [
+        "AC5",
+        "AC6"
+      ],
+      "po1_evidence": false,
+      "source": "synthetic",
+      "verdict": "non_admissible_no_new_obstruction",
+      "verdict_label": "non-admissible: no new obstruction"
+    },
+    {
+      "case_name": "synthetic_shared_obstruction",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      },
+      "failed_conditions": [
+        "AC5",
+        "AC7"
+      ],
+      "po1_evidence": false,
+      "source": "synthetic",
+      "verdict": "non_admissible_shared_obstruction",
+      "verdict_label": "non-admissible: shared obstruction"
+    },
+    {
+      "case_name": "git_semantic_merge",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "failed_conditions": [],
+      "po1_evidence": true,
+      "source": "T30",
+      "verdict": "fully_admissible",
+      "verdict_label": "positive PO1 instance"
+    },
+    {
+      "case_name": "database_expand_contract",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "failed_conditions": [
+        "AC6"
+      ],
+      "po1_evidence": false,
+      "source": "T30",
+      "verdict": "non_admissible_no_new_obstruction",
+      "verdict_label": "non-admissible: no new obstruction"
+    },
+    {
+      "case_name": "access_control_inheritance",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": false
+      },
+      "failed_conditions": [
+        "AC7"
+      ],
+      "po1_evidence": false,
+      "source": "T30",
+      "verdict": "non_admissible_shared_obstruction",
+      "verdict_label": "non-admissible: shared obstruction"
+    },
+    {
+      "case_name": "type_system_macro_expansion",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "failed_conditions": [
+        "AC3",
+        "AC6"
+      ],
+      "po1_evidence": false,
+      "source": "T30",
+      "verdict": "boundary_non_definable",
+      "verdict_label": "boundary: non-definable projection"
+    }
+  ],
+  "non_admissible_cases": [
+    "synthetic_lossy_no_obstruction",
+    "synthetic_shared_obstruction",
+    "database_expand_contract",
+    "access_control_inheritance"
+  ],
+  "non_admissible_count": 4,
+  "po1_recommendation": "PO1 is retained as partially_supported and formally narrowed. T31 identifies seven admissibility conditions (AC1-AC7). All seven are required for a case to count as positive PO1 evidence. Four cases satisfy all seven: witten_1981, nielsen_ninomiya, cap_theorem, and git_semantic_merge. Two cases are non-definable boundaries (distler_garibaldi, type_system_macro_expansion). Four cases are non-admissible: two for shared obstruction (synthetic_shared_obstruction, access_control_inheritance) and two for no new obstruction (synthetic_lossy_no_obstruction, database_expand_contract). The weakest correct PO1 uses five conditions (AC1-AC3, AC6-AC7). AC4 and AC5 are added as guards against trivial and structure-free instances; no current case fails them in isolation, but both are needed to prevent overcounting in future applications. PO1 does not split into subclaims: the single positive schema survives all hostile tests. The schema is: a definable projection from a globally satisfiable richer system to a non-trivially obstructed restricted system, where the projection forgets named and measurable structure, is a faithful finite Projection-Obstruction instance.",
+  "po1_status": "partially_supported_narrowed",
+  "positive_cases": [
+    "witten_1981",
+    "nielsen_ninomiya",
+    "cap_theorem",
+    "git_semantic_merge"
+  ],
+  "positive_count": 4,
+  "recommended_po1_conditions": [
+    "AC1: richer system valid",
+    "AC2: restricted system valid",
+    "AC3: projection definable",
+    "AC6: restricted system obstructed",
+    "AC7: richer system unobstructed",
+    "AC4: restricted obstruction non-trivial (all patches locally satisfiable)",
+    "AC5: projection forgets named and measurable structure"
+  ],
+  "weakest_po1_conditions": [
+    "AC1: richer system valid",
+    "AC2: restricted system valid",
+    "AC3: projection definable",
+    "AC6: restricted system obstructed",
+    "AC7: richer system unobstructed"
+  ]
+}

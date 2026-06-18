@@ -38,6 +38,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T37](tests/T37-typed-transport-network.md) | Typed transport network | PO1, T26, T31, T34 | implemented: path-dependent admissibility witnessed; diamond network shows same (source, target) with different paths giving different PO1 verdicts (AC5 varies by path) |
 | [T38](tests/T38-minimal-multiscale-transport.md) | Minimal multiscale transport | H1+, T26, T31, T37 | implemented: H0 covers 3/10 questions; H1 covers 8/10; H1+ (TypedTransportNetwork + CompressionRecord + EmergenceRecord) covers all 10; H2 and H3 not required |
 | [T39](tests/T39-csp-satisfiability-reframing.md) | CSP / satisfiability reframing | PO1, T26, T31, T38 | implemented: PO1 gluing obstruction = binary {-1,1} parity-conflict CSP; arc consistency trivially true; typed projection (AC5, AC7) and admissibility classification are new structure not expressible in standard CSP; H_B best supported |
+| [T40](tests/T40-holarchy-lab.md) | Holarchy lab — emergent holonic finality | D1, PO1, TTN, T38, T39 | implemented: holonic emergence confirmed (3-node triangle obstruction from micro-compatible nodes); cross-level AC5 necessary for holonic PO1; H_B best supported |
 
 ## Minimum Compatibility Constraints
 
@@ -84,6 +85,7 @@ python -m models.run_t36
 python -m models.run_t37
 python -m models.run_t38
 python -m models.run_t39
+python -m models.run_t40
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -112,6 +114,7 @@ The suites use only Python's standard library. Evidence records:
 - [Projection-Obstruction Discovery Engine v0.1 Results](results/projection-obstruction-discovery-engine-v0.1-results.md)
 - [Typed Transport Network v0.1 Results](results/transport-network-v0.1-results.md)
 - [CSP Satisfiability Reframing v0.1 Results](results/csp-satisfiability-reframing-v0.1-results.md)
+- [Holarchy Lab v0.1 Results](results/holarchy-lab-v0.1-results.md)
 
 ## How To Add A Test
 

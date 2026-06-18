@@ -1,0 +1,149 @@
+{
+  "scenarios": [
+    {
+      "network_name": "holonic_flat",
+      "micro_results": [
+        {
+          "node_name": "flat_A",
+          "globally_satisfiable": true
+        },
+        {
+          "node_name": "flat_B",
+          "globally_satisfiable": true
+        }
+      ],
+      "all_micro_satisfiable": true,
+      "holonic_globally_satisfiable": true,
+      "holonic_witness_count": 2,
+      "emergence_detected": false,
+      "obstruction_source": "none"
+    },
+    {
+      "network_name": "holonic_compatible_different",
+      "micro_results": [
+        {
+          "node_name": "diff_A",
+          "globally_satisfiable": true
+        },
+        {
+          "node_name": "diff_B",
+          "globally_satisfiable": true
+        }
+      ],
+      "all_micro_satisfiable": true,
+      "holonic_globally_satisfiable": true,
+      "holonic_witness_count": 2,
+      "emergence_detected": false,
+      "obstruction_source": "none"
+    },
+    {
+      "network_name": "holonic_emergent",
+      "micro_results": [
+        {
+          "node_name": "em_A",
+          "globally_satisfiable": true
+        },
+        {
+          "node_name": "em_B",
+          "globally_satisfiable": true
+        },
+        {
+          "node_name": "em_C",
+          "globally_satisfiable": true
+        }
+      ],
+      "all_micro_satisfiable": true,
+      "holonic_globally_satisfiable": false,
+      "holonic_witness_count": 0,
+      "emergence_detected": true,
+      "obstruction_source": "holonic_emergence"
+    },
+    {
+      "network_name": "holonic_micro_obstructed",
+      "micro_results": [
+        {
+          "node_name": "mo_A",
+          "globally_satisfiable": true
+        },
+        {
+          "node_name": "mo_B",
+          "globally_satisfiable": false
+        }
+      ],
+      "all_micro_satisfiable": false,
+      "holonic_globally_satisfiable": false,
+      "holonic_witness_count": 0,
+      "emergence_detected": false,
+      "obstruction_source": "micro_only"
+    }
+  ],
+  "holonic_po1_bridges": [
+    {
+      "case_name": "holonic_po1_main",
+      "source_name": "holonic_po1_source",
+      "target_name": "holonic_po1_target",
+      "source_holonic_satisfiable": true,
+      "target_holonic_obstructed": true,
+      "cross_level_forgotten_dims": [
+        "a1-b2-compatibility"
+      ],
+      "ac5_fires": true,
+      "ac7_holds": true,
+      "holonic_po1_admissible": true
+    },
+    {
+      "case_name": "holonic_po1_no_forgotten_control",
+      "source_name": "holonic_po1_no_forgotten_source",
+      "target_name": "holonic_po1_no_forgotten_target",
+      "source_holonic_satisfiable": true,
+      "target_holonic_obstructed": true,
+      "cross_level_forgotten_dims": [],
+      "ac5_fires": false,
+      "ac7_holds": true,
+      "holonic_po1_admissible": false
+    }
+  ],
+  "emergence_count": 1,
+  "po1_admissible_count": 1,
+  "theorem_holonic_emergence": "Holonic Emergence Theorem: in a HolonicNetwork, a holonic obstruction can arise from cross-level constraints even when every micro node is individually satisfiable. The minimum case has 3 nodes forming a directed triangle with cross-level constraints a2=b1 (same), b2=c1 (same), a2\u2260c1 (different), creating a negative signed-graph cycle at the holonic level. This is equivalent to the T26/T39 minimum transitive obstruction, but at the cross-level rather than the within-level layer.",
+  "theorem_cross_level_ac5": "Cross-Level AC5 Theorem: holonic PO1 admissibility requires non-empty forgotten_dims in the cross-level morphism (AC5 at the holonic level). A source-satisfiable + target-obstructed holonic pair is NOT a holonic PO1 instance if the cross-level morphism declares no forgotten structure. The named forgotten structure identifies WHICH cross-level compatibility was lost by the projection, making the holonic obstruction causally attributed rather than accidentally co-occurring.",
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H_A",
+      "claim": "Holonic finality reduces to micro finality: if all micro systems are satisfiable, the holonic network is too.",
+      "verdict": "rejected",
+      "evidence_for": [],
+      "evidence_against": [
+        "Holonic emergence cases found: 1. build_holonic_emergent_obstruction_scenario() shows 3 nodes each individually satisfiable with combined holonic obstruction from cross-level transitive parity conflict (a1=a2, b1=b2, c1=c2 micro; a2=b1, b2=c1 same cross-edges; a2\u2260c1 different cross-edge)."
+      ],
+      "reason": "H_A is rejected: holonic emergence cases exist where all micro systems are satisfiable but the holonic network is not."
+    },
+    {
+      "hypothesis_id": "H_B",
+      "claim": "Holonic finality is genuinely independent: cross-level constraints can create obstructions from micro-compatible systems.",
+      "verdict": "best_supported",
+      "evidence_for": [
+        "Holonic emergence confirmed in 1 scenario(s). The emergent obstruction arises from the signed-graph negative cycle formed by cross-level edges, not from any micro-level conflict. Holonic PO1 admissible cases: 1. The flat and compatible-different scenarios confirm that cross-level edges do not automatically obstruct: the topology matters."
+      ],
+      "evidence_against": [
+        "H_A is rejected by one scenario, not by a parameter sweep. A future parameterized audit (T40 follow-up) would strengthen the claim."
+      ],
+      "reason": "H_B is best supported: holonic emergence is confirmed and is topology-dependent."
+    },
+    {
+      "hypothesis_id": "H_C",
+      "claim": "Cross-level AC5 (non-empty forgotten_dims) is necessary for holonic PO1 admissibility.",
+      "verdict": "supported",
+      "evidence_for": [
+        "Every admissible holonic PO1 case (1) has non-empty forgotten_dims (AC5 fires). Control case with empty forgotten_dims: 1 non-admissible instance(s) confirming that source-satisfiable + target-obstructed alone is insufficient without named cross-level forgotten structure."
+      ],
+      "evidence_against": [
+        "The control case only tests one scenario. More exhaustive exploration (T40 follow-up) needed to confirm necessity."
+      ],
+      "reason": "H_C is supported but not yet fully confirmed: all tested cases are consistent with AC5 necessity, but the sample is small."
+    }
+  ],
+  "best_supported_hypothesis": "H_B",
+  "boundary": "Results are for binary {-1,1} domains with same/different constraints (same CSP fragment as T39). The holonic nodes used here are D1RestrictionSystems; a full holarchy would use TypedTransportNetworks as nodes (networks of networks). That second-level nesting has not been implemented \u2014 this test covers one level of cross-level composition. The parameter space is small (4 scenarios, 2 PO1 bridges); a broader enumeration would strengthen the statistical confidence in H_B and H_C. The micro_obstructed scenario is a control; it shows that micro obstructions propagate to the holonic level (no absorption), which is the expected behavior for strict holonic satisfiability.",
+  "recommendation": "Adopt Holonic Emergence and Cross-Level AC5 as named theorems in CLAIM-LEDGER.md. Next steps: (1) extend nodes from D1RestrictionSystems to TypedTransportNetworks to implement the full second-level nesting; (2) run a parameter sweep over cross-level edge topologies to map which configurations produce emergence vs. reduction; (3) test whether the holonic AC5 condition is a strict strengthening of the T32 admissibility basis or collapses to the same conditions at higher scale."
+}

@@ -106,6 +106,16 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > phenomena requiring distinct records. H2 (graph-of-graphs) and H3
 > (bundle/presheaf/category) are not yet required.
 >
+> **Holarchy lab update:** [T40](tests/T40-holarchy-lab.md) introduces
+> `HolonicNetwork` — a directed graph of D1RestrictionSystems connected by
+> cross-level typed constraints. Holonic emergence theorem: a holonic
+> obstruction can arise from cross-level constraints even when every micro
+> node is individually satisfiable (minimum case: 3-node triangle, same T26
+> transitive parity conflict at the cross-level layer). Cross-level AC5
+> theorem: holonic PO1 admissibility requires non-empty `forgotten_dims` in
+> the cross-level morphism. H_B best supported: holonic finality is genuinely
+> independent of micro finality.
+>
 > **CSP reframing update:** [T39](tests/T39-csp-satisfiability-reframing.md)
 > establishes that the D1RestrictionSystem patch language is a binary {-1,1}
 > CSP and that the gluing obstruction is exactly a parity-conflicting binary

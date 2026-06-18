@@ -113,6 +113,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md)
   - CSP reframing: PO1 gluing obstruction = binary {-1,1} parity-conflict CSP;
     typed projection and admissibility classification are new structure beyond CSP.
+- [TECHNICAL-REPORT-holarchy-lab-v0.1.md](TECHNICAL-REPORT-holarchy-lab-v0.1.md)
+  - Holarchy lab: holonic emergence confirmed; cross-level AC5 necessary for holonic
+    PO1; H_B best supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -187,6 +190,7 @@ python -m models.run_t36
 python -m models.run_t37
 python -m models.run_t38
 python -m models.run_t39
+python -m models.run_t40
 ```
 
 ## Citation / Reuse

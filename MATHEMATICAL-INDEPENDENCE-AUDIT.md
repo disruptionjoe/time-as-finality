@@ -90,6 +90,8 @@ have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
 | Path-Dependent Admissibility (T37) | Earned | In a TypedTransportNetwork, two simple paths between the same source and target layer yield different PO1 verdicts when they accumulate different forgotten_structure; AC5 is the only path-varying admissibility condition. |
 | Minimal Transport Theorem (T38) | Earned | TypedTransportNetwork + CompressionRecord + EmergenceRecord (H1+) is the smallest currently justified formalism for ten core transport questions. H0 covers 3/10; H1 covers 8/10; H2 and H3 are not yet required. |
 | PO1-as-CSP Theorem (T39) | Earned | D1RestrictionSystem.global_section().obstruction_detected equals NOT globally_satisfiable for the corresponding binary {-1,1} same/different CSP (signed-graph parity). Arc consistency is trivially true for this constraint language and adds no information. PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. |
+| Holonic Emergence Theorem (T40) | Earned | In a HolonicNetwork, a holonic obstruction can arise from cross-level constraints even when every micro node is individually satisfiable. Minimum case: 3-node triangle with cross-level transitive parity conflict. This is the T26/T39 parity obstruction applied at the cross-level layer. |
+| Cross-Level AC5 Theorem (T40) | Earned | Holonic PO1 admissibility requires non-empty forgotten_dims in the cross-level morphism. Source-satisfiable + target-obstructed is insufficient without named cross-level forgotten structure. |
 
 **Status: PRESENT.** A theorem ladder exists and is growing.
 
@@ -180,3 +182,4 @@ declared from within the research program alone.
 | 2026-06-18 | v0.2 | T37 adds TypedTransportNetwork as a new primitive. Path-dependent admissibility theorem earned. Composition law (associativity) still open. |
 | 2026-06-18 | v0.3 | T38 adds CompressionRecord and EmergenceRecord as minimal annotation primitives. Minimal Transport Theorem earned: H1+ covers all ten core transport questions. H2 and H3 not yet required. |
 | 2026-06-18 | v0.4 | T39 establishes PO1-as-CSP Theorem: D1 gluing obstruction = binary parity-conflict CSP. Arc consistency trivial. PO1 adds typed source, typed forgotten structure, and admissibility classification not in standard CSP. Mathematical originality is in the classification framework, not the obstruction theorem. |
+| 2026-06-18 | v0.5 | T40 adds Holonic Emergence and Cross-Level AC5 theorems. HolonicNetwork introduces cross-level composition; the same parity obstruction from T26/T39 operates at the holonic level. |

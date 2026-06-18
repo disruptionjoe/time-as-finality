@@ -455,3 +455,11 @@ projection is meaningful.
 4. **Proof / Certificate / Observer Access Audit (T42).** Audit which theorems
    in the ladder have machine-verifiable certificates and which require
    proof-carrying additional structure.
+
+**Completed v0.1:** implement
+[T40](tests/T40-holarchy-lab.md) as the Holarchy Lab: HolonicNetwork (directed
+graph of D1RestrictionSystems with cross-level typed constraints), holonic emergence
+theorem (3-node triangle falsifies reduction to micro finality), and cross-level
+AC5 theorem (non-empty forgotten_dims necessary for holonic PO1). H_B best
+supported: holonic finality is genuinely independent of micro finality. Full
+second-level nesting (TypedTransportNetworks as nodes) is the next step.

@@ -120,12 +120,11 @@
 
 ## Best First Contributions
 
-1. Prove the composition law for the typed transport network. T37 introduces
-   `_compose_morphisms` (intersection of preserved_dimensions, union of
-   forgotten_structure) as an executable operation but has not proven
-   associativity or identity morphisms. A formal proof would make
-   TypedTransportNetwork a proper category and enable the path-dependent
-   admissibility theorem to be stated over a category of typed transports.
+1. **Resolved (T41).** The composition law is proved. D1RestrictionMorphisms
+   under `_compose_morphisms` form a proper category. Associativity holds by
+   function-composition associativity (site_map) and set-intersection
+   associativity (preserved_dims). Identity morphisms exist (make_identity()).
+   Unit laws hold. PO1 admissibility is not a Boolean functor on D1Cat.
 
 2. Prove the binary parity obstruction theorem for the `same`/`different`
    fragment. This would upgrade the common three-patch and four-patch PO1
@@ -439,10 +438,10 @@ projection is meaningful.
 
 ### Immediate next steps
 
-1. **Typed Transport Category Prototype (T40).** Formalize typed transport as
-   objects and morphisms. Prove or falsify associativity and identity morphisms.
-   If associativity holds, TypedTransportNetwork becomes a proper category and
-   H3 (category) becomes a consequence of H1+, not a competitor.
+1. **Typed Transport Category Prototype (T41) — completed.** D1RestrictionMorphisms
+   form a proper category. Associativity holds. Identity morphisms exist. H_A
+   best supported. PO1 is not a Boolean functor on D1Cat (PO1 Non-Functor
+   Theorem). See Phase 10 for next steps.
 
 2. **Finite-to-Infinite Boundary Audit (T41).** Determine which T39 results
    (parity theorem, D1-CSP equivalence, admissibility classification) hold for
@@ -463,3 +462,49 @@ theorem (3-node triangle falsifies reduction to micro finality), and cross-level
 AC5 theorem (non-empty forgotten_dims necessary for holonic PO1). H_B best
 supported: holonic finality is genuinely independent of micro finality. Full
 second-level nesting (TypedTransportNetworks as nodes) is the next step.
+
+**Completed v0.1:** implement
+[T41](tests/T41-typed-transport-category.md) as the Typed Transport Category
+Prototype: D1RestrictionMorphisms form a proper category (associativity 4/4,
+left unit 5/5, right unit 5/5 tests pass); identity morphisms defined via
+make_identity(); PO1 admissibility is not a Boolean functor on D1Cat (T34
+restated in categorical language); H_A best supported. Own operations now
+complete in the Mathematical Independence Audit.
+
+## Phase 10: Post-T41 — Category Established, Next Frontiers
+
+T41 closes the composition-law obligation. D1RestrictionMorphisms form a proper
+category. The theorem ladder now includes 12 earned theorems and spans gluing
+obstructions, CSP equivalence, holonic emergence, and categorical structure.
+
+### Immediate next steps
+
+1. **Hom-set characterization (T42 candidate).** How many morphisms exist
+   between two D1RestrictionSystems? Is Hom(A, B) always non-empty? What is the
+   minimum morphism (fewest preserved dimensions)? The answers determine whether
+   D1Cat is a rich or degenerate category.
+
+2. **PO1 as lax functor or fibration.** PO1 admissibility violates the strict
+   Boolean-AND functor law (T41). Investigate whether PO1 can be repaired as a
+   lax functor F: D1Cat → BoolCat where F(f;g) ≥ F(f) ∧ F(g) (lax), or as a
+   fibration (a family of PO1 conditions indexed by endpoint pairs).
+
+3. **TypedTransportNetworks as internal categories.** A TypedTransportNetwork is
+   a directed graph of D1RestrictionSystems connected by D1RestrictionMorphisms.
+   Check whether TypedTransportNetworks are internal categories in D1Cat: the
+   composition in a TypedTransportNetwork (path composition via _compose_morphisms)
+   may satisfy the internal category axioms within D1Cat.
+
+4. **Second-level nesting for HolonicNetworks (T40 follow-up).** Replace
+   HolonicNodes (D1RestrictionSystems) with TypedTransportNetworks to build a
+   genuine two-level holonic structure.
+
+5. **Finite-to-Infinite Boundary Audit.** Determine which T39-T41 results
+   (parity theorem, CSP equivalence, category laws, non-functor theorem) hold
+   for infinite or continuous analogues. The finite-graph restriction is
+   load-bearing for several results; the boundary deserves its own test.
+
+6. **External testing.** Present the PO1 schema and the Typed Transport Category
+   theorem to a mathematician or logician unfamiliar with TaF. If they find the
+   objects worth studying on their own terms, that is evidence of independent
+   motivation (the one criterion not yet met in the Mathematical Independence Audit).

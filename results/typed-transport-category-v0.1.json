@@ -1,0 +1,280 @@
+{
+  "category_objects": [
+    "Cat_A",
+    "Cat_B",
+    "Cat_C",
+    "Cat_D"
+  ],
+  "identity_morphisms": [
+    "id_Cat_A",
+    "id_Cat_B",
+    "id_Cat_C",
+    "id_Cat_D"
+  ],
+  "associativity_tests": [
+    {
+      "label": "all_dims: (f1;g1);h1 == f1;(g1;h1)",
+      "f": "f1_A_B",
+      "g": "g1_B_C",
+      "h": "h1_C_D",
+      "lhs": "composed_composed_f1_A_B_g1_B_C_h1_C_D",
+      "rhs": "composed_f1_A_B_composed_g1_B_C_h1_C_D",
+      "site_map_associative": true,
+      "preserved_dims_associative": true,
+      "associativity_holds": true
+    },
+    {
+      "label": "mixed_dims: (f2;g2);h2 == f2;(g2;h2)",
+      "f": "f2_A_B",
+      "g": "g2_B_C",
+      "h": "h2_C_D",
+      "lhs": "composed_composed_f2_A_B_g2_B_C_h2_C_D",
+      "rhs": "composed_f2_A_B_composed_g2_B_C_h2_C_D",
+      "site_map_associative": true,
+      "preserved_dims_associative": true,
+      "associativity_holds": true
+    },
+    {
+      "label": "minimal_dims: (f3;g3);h3 == f3;(g3;h3)",
+      "f": "f3_A_B",
+      "g": "g3_B_C",
+      "h": "h3_C_D",
+      "lhs": "composed_composed_f3_A_B_g3_B_C_h3_C_D",
+      "rhs": "composed_f3_A_B_composed_g3_B_C_h3_C_D",
+      "site_map_associative": true,
+      "preserved_dims_associative": true,
+      "associativity_holds": true
+    },
+    {
+      "label": "with_identity: (id_A;f1);g1 == id_A;(f1;g1)",
+      "f": "id_Cat_A",
+      "g": "f1_A_B",
+      "h": "g1_B_C",
+      "lhs": "composed_composed_id_Cat_A_f1_A_B_g1_B_C",
+      "rhs": "composed_id_Cat_A_composed_f1_A_B_g1_B_C",
+      "site_map_associative": true,
+      "preserved_dims_associative": true,
+      "associativity_holds": true
+    }
+  ],
+  "left_unit_tests": [
+    {
+      "law": "left_unit",
+      "morphism": "f1_A_B",
+      "identity": "id_Cat_A",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "left_unit",
+      "morphism": "f2_A_B",
+      "identity": "id_Cat_A",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "left_unit",
+      "morphism": "f3_A_B",
+      "identity": "id_Cat_A",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "left_unit",
+      "morphism": "g1_B_C",
+      "identity": "id_Cat_B",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "left_unit",
+      "morphism": "h1_C_D",
+      "identity": "id_Cat_C",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    }
+  ],
+  "right_unit_tests": [
+    {
+      "law": "right_unit",
+      "morphism": "f1_A_B",
+      "identity": "id_Cat_B",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "right_unit",
+      "morphism": "f2_A_B",
+      "identity": "id_Cat_B",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "right_unit",
+      "morphism": "f3_A_B",
+      "identity": "id_Cat_B",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "right_unit",
+      "morphism": "g1_B_C",
+      "identity": "id_Cat_C",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    },
+    {
+      "law": "right_unit",
+      "morphism": "h1_C_D",
+      "identity": "id_Cat_D",
+      "site_map_match": true,
+      "preserved_dims_match": true,
+      "source_match": true,
+      "target_match": true,
+      "law_holds": true
+    }
+  ],
+  "category_laws": [
+    {
+      "law": "associativity",
+      "holds": true,
+      "tests_run": 4,
+      "tests_passed": 4,
+      "evidence": [
+        "PASS: all_dims: (f1;g1);h1 == f1;(g1;h1)",
+        "PASS: mixed_dims: (f2;g2);h2 == f2;(g2;h2)",
+        "PASS: minimal_dims: (f3;g3);h3 == f3;(g3;h3)",
+        "PASS: with_identity: (id_A;f1);g1 == id_A;(f1;g1)"
+      ]
+    },
+    {
+      "law": "left_unit",
+      "holds": true,
+      "tests_run": 5,
+      "tests_passed": 5,
+      "evidence": [
+        "PASS: id_Cat_A;f1_A_B",
+        "PASS: id_Cat_A;f2_A_B",
+        "PASS: id_Cat_A;f3_A_B",
+        "PASS: id_Cat_B;g1_B_C",
+        "PASS: id_Cat_C;h1_C_D"
+      ]
+    },
+    {
+      "law": "right_unit",
+      "holds": true,
+      "tests_run": 5,
+      "tests_passed": 5,
+      "evidence": [
+        "PASS: f1_A_B;id_Cat_B",
+        "PASS: f2_A_B;id_Cat_B",
+        "PASS: f3_A_B;id_Cat_B",
+        "PASS: g1_B_C;id_Cat_C",
+        "PASS: h1_C_D;id_Cat_D"
+      ]
+    }
+  ],
+  "po1_functor_tests": [
+    {
+      "name": "SRC_MID_TGT_functor_test",
+      "f": {
+        "name": "f_SRC_MID",
+        "po1": false,
+        "failed": [
+          "AC6"
+        ]
+      },
+      "g": {
+        "name": "g_MID_TGT",
+        "po1": false,
+        "failed": [
+          "AC5"
+        ]
+      },
+      "fg": {
+        "name": "composed_f_SRC_MID_g_MID_TGT",
+        "po1": true,
+        "failed": []
+      },
+      "boolean_and_predicts_po1": false,
+      "actual_fg_po1": true,
+      "functor_law_violated": true,
+      "interpretation": "PO1 is NOT a Boolean functor: f;g is PO1 even though neither f nor g individually satisfies PO1. Endpoint admissibility is determined by the endpoint pair (SRC, TGT), not by the admissibility of intermediate projections. Consistent with T34 (PO1 Chain Theorem)."
+    }
+  ],
+  "all_category_laws_hold": true,
+  "forms_proper_category": true,
+  "po1_is_functor": false,
+  "theorem_category": "Typed Transport Category Theorem (T41): D1RestrictionMorphisms under _compose_morphisms, with identity morphisms constructed by make_identity(), form a proper category. Associativity holds by function-composition associativity (site_map) and set-intersection associativity (preserved_dims). Left and right unit laws hold by the identity-function property of the site_map and the D1_DIMENSIONS bound on the intersection.",
+  "theorem_po1_nonfunctor": "PO1 Non-Functor Theorem (T41): PO1 admissibility is not a Boolean functor from D1Cat to {True, False}. Witnessed: f;g is PO1 while neither f nor g is individually PO1. This is the T34 PO1 Chain Theorem restated in categorical language: endpoint admissibility is an endpoint property of morphisms, not a functorial invariant of the composition structure.",
+  "hypotheses": [
+    {
+      "id": "H_A",
+      "claim": "D1RestrictionMorphisms with _compose_morphisms form a proper category: associativity holds, identity morphisms exist and satisfy unit laws.",
+      "status": "best_supported",
+      "evidence_for": [
+        "Associativity: 4/4 tests pass",
+        "Left unit: 5/5 tests pass",
+        "Right unit: 5/5 tests pass"
+      ],
+      "evidence_against": [],
+      "verdict": "D1RestrictionMorphisms form a proper category. The mathematical objects accumulate categorical structure."
+    },
+    {
+      "id": "H_B",
+      "claim": "Associativity holds but identity morphisms are external: they cannot be constructed from _compose_morphisms alone and require a separate constructor.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "Identity morphisms require make_identity(), a separate constructor not provided by transport_network._compose_morphisms.",
+        "The identity construction is explicit, not derived from composition."
+      ],
+      "evidence_against": [
+        "Identity morphisms are trivially constructible for any D1RestrictionSystem. The construction is canonical: id_A maps each site to itself and preserves all dimensions. This is not a missing capability \u2014 it is a standard categorical construction that any framework must supply explicitly.",
+        "H_B's 'external' framing overstates the gap: every category requires an explicit identity construction. The absence from _compose_morphisms is expected, not a deficiency."
+      ],
+      "verdict": "Partially supported but misleading. Identity morphisms are external to _compose_morphisms by design, not by omission. H_A (proper category) is the correct characterization."
+    },
+    {
+      "id": "H_C",
+      "claim": "PO1 admissibility is not a Boolean functor from D1Cat to {True, False}: PO1(f;g) \u2260 PO1(f) AND PO1(g) in general.",
+      "status": "best_supported",
+      "evidence_for": [
+        "PO1 functor law violated in 1/1 test(s): f;g is PO1 even when neither f nor g is PO1.",
+        "Consistent with T34 (PO1 Chain Theorem): endpoint admissibility is independent of intermediate admissibility.",
+        "Consistent with T37 (path-dependent admissibility): same endpoint pair can have different admissibility via different paths."
+      ],
+      "evidence_against": [],
+      "verdict": "PO1 admissibility is an endpoint property of morphisms in D1Cat, not a functorial invariant. This is the T34/T37 result restated in categorical language. H_C is supported."
+    }
+  ],
+  "best_supported_hypothesis": "H_A",
+  "boundary": "Category structure is proved for D1RestrictionMorphisms as constructed here. The result does not extend automatically to: (i) presheaves or sheaves (H2) \u2014 these require additional structure not yet formalized; (ii) general category theory tools (limits, colimits, adjunctions) \u2014 these require further development; (iii) morphisms with require_trust_path_preservation or require_obstruction_preservation set to True \u2014 these carry additional constraints whose behavior under composition is not yet characterized. The identity morphism construction requires make_identity() which is external to _compose_morphisms; it is not derivable from composition alone.",
+  "recommendation": "T41 establishes that D1RestrictionMorphisms form a proper category. Next steps: (1) Characterize the full hom-sets \u2014 how many morphisms exist between two D1RestrictionSystems? (2) Explore whether the projection-obstruction functor can be repaired as a lax functor or indexed family. (3) Check whether TypedTransportNetworks are internal categories in D1Cat (networks as categories internal to the ambient category). (4) Audit whether the finite-to-infinite boundary (T42) changes categorical structure."
+}

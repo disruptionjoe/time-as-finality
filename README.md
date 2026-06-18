@@ -116,6 +116,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-holarchy-lab-v0.1.md](TECHNICAL-REPORT-holarchy-lab-v0.1.md)
   - Holarchy lab: holonic emergence confirmed; cross-level AC5 necessary for holonic
     PO1; H_B best supported.
+- [TECHNICAL-REPORT-typed-transport-category-v0.1.md](TECHNICAL-REPORT-typed-transport-category-v0.1.md)
+  - Typed transport category: D1RestrictionMorphisms form a proper category;
+    associativity, identity morphisms, and unit laws all hold; PO1 is not a
+    Boolean functor on D1Cat (T34 restated categorically); H_A best supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -191,6 +195,7 @@ python -m models.run_t37
 python -m models.run_t38
 python -m models.run_t39
 python -m models.run_t40
+python -m models.run_t41
 ```
 
 ## Citation / Reuse

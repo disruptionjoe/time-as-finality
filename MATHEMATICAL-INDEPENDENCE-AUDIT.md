@@ -75,8 +75,10 @@ The following operations are defined on the primitives:
 - Composition of D1RestrictionMorphisms (partial — associativity and identity
   morphisms not yet formally established).
 
-**Status: PRESENT but INCOMPLETE.** A composition law and identity morphism
-have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
+**Status: PRESENT and COMPLETE (T41).** Associativity proved by construction
+(function-composition associativity for site_map; set-intersection associativity
+for preserved_dims). Identity morphisms defined via make_identity(). Left and
+right unit laws verified. D1RestrictionMorphisms form a proper category.
 
 ### Theorem Ladder
 
@@ -92,6 +94,8 @@ have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
 | PO1-as-CSP Theorem (T39) | Earned | D1RestrictionSystem.global_section().obstruction_detected equals NOT globally_satisfiable for the corresponding binary {-1,1} same/different CSP (signed-graph parity). Arc consistency is trivially true for this constraint language and adds no information. PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. |
 | Holonic Emergence Theorem (T40) | Earned | In a HolonicNetwork, a holonic obstruction can arise from cross-level constraints even when every micro node is individually satisfiable. Minimum case: 3-node triangle with cross-level transitive parity conflict. This is the T26/T39 parity obstruction applied at the cross-level layer. |
 | Cross-Level AC5 Theorem (T40) | Earned | Holonic PO1 admissibility requires non-empty forgotten_dims in the cross-level morphism. Source-satisfiable + target-obstructed is insufficient without named cross-level forgotten structure. |
+| Typed Transport Category Theorem (T41) | Earned | D1RestrictionMorphisms under _compose_morphisms, with identity morphisms constructed by make_identity(), form a proper category. Associativity: site_map composition is sequential function application (associative); preserved_dims is set intersection (associative). Left and right unit laws hold by the identity-function property of id_A's site_map and the D1_DIMENSIONS bound on the preserved_dims intersection. |
+| PO1 Non-Functor Theorem (T41) | Earned | PO1 admissibility is not a Boolean functor from D1Cat to {True, False}. Witnessed: f;g: SRC→TGT is PO1 while neither f: SRC→MID nor g: MID→TGT is individually PO1. This is the T34 PO1 Chain Theorem restated in categorical language: endpoint admissibility is an endpoint property of morphisms, not a functorial invariant. |
 
 **Status: PRESENT.** A theorem ladder exists and is growing.
 
@@ -138,26 +142,27 @@ a paper, a talk, or a collaboration that does not mention Time as Finality.
 | Criterion | Status |
 | --- | --- |
 | Own primitives | Present |
-| Own operations | Present but incomplete |
+| Own operations | Present and complete (T41) |
 | Own theorem ladder | Present |
 | Own hostile domains | Present |
 | Own discovery engine | Present |
 | Independent motivation | Unknown |
 
-Five of six criteria are clearly present. The sixth requires external testing
-that has not yet occurred.
+Five of six criteria are clearly present and complete. The sixth requires
+external testing that has not yet occurred.
 
 **Overall assessment:** The mathematical core has accumulated substantial
 independence but has not yet been tested externally. Independence cannot be
-declared from within the research program alone.
+declared from within the research program alone. T41 resolves the previous
+"incomplete" status on Own operations: D1RestrictionMorphisms now form a
+proper category.
 
 ---
 
 ## What Would Advance Independence
 
-1. **Complete the composition law.** A formal proof that D1RestrictionMorphisms
-   compose associatively, with identity morphisms, would make the mathematical
-   objects into a proper category.
+1. **Composition law: resolved (T41).** D1RestrictionMorphisms compose
+   associatively with identity morphisms and form a proper category.
 
 2. **State the theorems in neutral language.** The theorems in the ladder above
    should be written as mathematical propositions without reference to TaF
@@ -183,3 +188,4 @@ declared from within the research program alone.
 | 2026-06-18 | v0.3 | T38 adds CompressionRecord and EmergenceRecord as minimal annotation primitives. Minimal Transport Theorem earned: H1+ covers all ten core transport questions. H2 and H3 not yet required. |
 | 2026-06-18 | v0.4 | T39 establishes PO1-as-CSP Theorem: D1 gluing obstruction = binary parity-conflict CSP. Arc consistency trivial. PO1 adds typed source, typed forgotten structure, and admissibility classification not in standard CSP. Mathematical originality is in the classification framework, not the obstruction theorem. |
 | 2026-06-18 | v0.5 | T40 adds Holonic Emergence and Cross-Level AC5 theorems. HolonicNetwork introduces cross-level composition; the same parity obstruction from T26/T39 operates at the holonic level. |
+| 2026-06-18 | v0.6 | T41 adds Typed Transport Category and PO1 Non-Functor theorems. Own operations upgraded from "present but incomplete" to "present and complete": D1RestrictionMorphisms form a proper category; PO1 admissibility is not a Boolean functor on D1Cat. |

@@ -3,18 +3,21 @@
 ## Summary
 
 T30 hostile-tests PO1 outside the physics and GU examples that motivated it.
-The purpose is not to confirm PO1, but to see whether unrelated finite domains
-break it.
+The revised candidate set is intentionally sharper:
 
-The result is mixed and useful:
+1. Git merge conflicts
+2. Financial risk model
+3. Translator / poet
+
+The result is stronger but still constrained:
 
 ```text
-PO1 survives one non-physics hostile case, but T30 does not justify
-strengthening it beyond partially_supported.
+PO1 has two unrelated non-physics finite positives, but translator/poet shows
+that PO1 must not absorb every case of lost meaning or lossy projection.
 ```
 
-T30 recommends keeping PO1 as `partially_supported` with explicit
-admissibility constraints.
+T30 recommends keeping PO1 at `partially_supported`, with stronger evidence
+inside that status and explicit admissibility constraints.
 
 ## Method
 
@@ -28,16 +31,15 @@ restricted D1RestrictionSystem
 classification
 ```
 
-No new category or sheaf machinery was added.
+No category or sheaf upgrade was needed.
 
-## Cases
+## Case Classification
 
 | Domain | Case | Classification | PO1 support |
 | --- | --- | --- | --- |
 | Git merge conflict | `git_semantic_merge` | projection-created obstruction | yes |
-| Database schema migration | `database_expand_contract` | lossy projection without obstruction | no |
-| Access-control policy inheritance | `access_control_inheritance` | shared obstruction | no |
-| Type systems and macro expansion | `type_system_macro_expansion` | non-definable projection | no |
+| Financial risk model | `financial_tail_risk_model` | projection-created obstruction | yes |
+| Translator / poet | `translator_poet_boundary` | no meaningful PO1 fit | no |
 
 ## Case Notes
 
@@ -56,81 +58,74 @@ Verdict:
 positive PO1 instance
 ```
 
-This rejects a narrow form of H0: PO1 is not only a GU or physics pattern at
-the finite abstraction level.
+This rejects H0 in finite scope: PO1 is not only a GU or physics pattern.
 
-### Database Schema Migration
+### Financial Risk Model
 
-The richer object is an expand-contract migration with a compatibility view
-and dual-write rollout metadata. The restricted object is a flat old/app/new
-schema compatibility model.
+The richer object is a toy tail-aware stress model with stress regimes, tail
+dependence, liquidity feedback, and a capital buffer. The restricted object is
+a flat local-risk-limit model.
 
-The projection loses rollout detail, but both richer and restricted systems
-have global sections.
-
-Verdict:
-
-```text
-loss alone is insufficient
-```
-
-This is a negative control against overcounting every lossy projection as PO1.
-
-### Access-Control Policy Inheritance
-
-The richer object carries policy provenance and priority labels. The restricted
-object is a flat effective-permission policy.
-
-Both systems are obstructed. The projection did not create the obstruction.
+The richer system has a global section. The restricted system is locally
+satisfiable but globally obstructed after the projection forgets the structures
+that resolve joint stress behavior.
 
 Verdict:
 
 ```text
-shared obstruction is not PO1 support
+positive PO1 instance, high-stakes toy only
 ```
 
-This is a negative control against counting inherited contradictions as
-projection-created contradictions.
+This is the strongest hostile case in T30 because it is not adjacent to the
+GU examples and because vague analogies in financial-risk language are
+dangerous. The model is finite and illustrative only. It is not a theorem
+about real portfolios, regulatory capital, market risk, liquidity risk, or
+investment decisions.
 
-### Type Systems and Macro Expansion
+### Translator / Poet
 
-The richer object includes a macro-expansion phase. The restricted object has
-only source, core, and runtime sites.
+The richer object carries poetic image, rhythm, register, translator judgment,
+and cultural resonance. The restricted object keeps only literal word mapping.
 
-The source site map is incomplete because the macro-expansion phase has no
-target site.
+The projection is lossy, but the finite model does not produce a canonical
+gluing obstruction. More importantly, there is no obvious domain-independent
+finite same/different restriction system that captures poetic force.
 
 Verdict:
 
 ```text
-non-definable projection boundary
+no meaningful PO1 fit
 ```
 
-This supports an H3-style boundary: some non-physics domains may require
-richer site maps or syntax-category morphisms before PO1 is even testable.
+This is the anti-overclaim result. It prevents PO1 from becoming:
+
+```text
+any loss of meaning = projection-obstruction
+```
 
 ## Hypothesis Evaluation
 
 | Hypothesis | Status | T30 verdict |
 | --- | --- | --- |
-| H0: PO1 is domain-specific to GU/no-go style cases | rejected in finite scope | Git supplies one non-physics positive instance |
-| H1: PO1 applies to at least one non-physics inherited domain | supported | Git merge is positive |
-| H2: PO1 applies across multiple unrelated domains | not yet supported | only one positive in T30 |
-| H3: PO1 requires modification for non-physics domains | partially supported | type-system macro case is non-definable |
-| H4: PO1 is too broad or underconstrained | partially supported as warning | negative controls show admissibility constraints are needed |
+| H0: PO1 is domain-specific to GU/no-go style cases | rejected in finite scope | Git and financial risk are positive |
+| H1: PO1 applies to at least one non-physics inherited domain | supported | Git and financial risk are positive |
+| H2: PO1 applies across multiple unrelated domains | supported in finite scope | two unrelated non-physics positives |
+| H3: PO1 requires modification for non-physics domains | not supported by this set | no new machinery was needed |
+| H4: PO1 is too broad or underconstrained | partially supported as warning | translator/poet blocks overclaiming |
 
 Best supported verdict:
 
 ```text
-H1 with H3/H4 constraints
+H2 with H4 admissibility constraints
 ```
 
 ## Recommendation
 
 Keep PO1 at `partially_supported`.
 
-Do not strengthen it yet. T30 shows PO1 is not merely a physics/GU artifact,
-but it also shows that the schema needs explicit admissibility constraints.
+Do not promote PO1 to a universal schema. T30 strengthens the evidence inside
+the current status, but the translator/poet case shows that PO1 needs an
+admissibility test before new examples count.
 
 Future PO1 evidence should require:
 
@@ -141,14 +136,19 @@ Future PO1 evidence should require:
    obstruction.
 5. Lossy projection without obstruction is excluded.
 6. Shared obstruction is excluded.
-7. Non-definable projections are boundary cases, not failed positives.
+7. Incomplete site maps are boundary cases, not failed positives.
+8. Loss of meaning, nuance, or interpretation is not sufficient unless it is
+   represented by a canonical finite obstruction.
 
 ## Non-Claims
 
 T30 does not claim PO1 is universal.
 
-T30 does not prove any external theorem about Git, databases, access-control
-systems, or type systems.
+T30 does not prove external theorems about Git, financial systems, translation,
+or poetry.
+
+T30 does not provide financial advice, risk-management advice, legal advice,
+or investment guidance.
 
 T30 does not promote PO1 beyond `partially_supported`.
 

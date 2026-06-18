@@ -169,7 +169,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T27](tests/T27-class-relative-bridge-audit.md): Class-Relative Bridge Audit - finite GU bridge audit with faithful and non-definable cases.
 - [T28](tests/T28-cap-theorem-bridge.md): CAP Theorem Bridge - distributed-systems bridge showing the same finite chaining obstruction as Nielsen-Ninomiya.
 - [T29](tests/T29-projection-obstruction-schema.md): Projection-Obstruction Schema - reusable finite schema extracted from T27 with boundary tests.
-- [T30](tests/T30-cross-domain-projection-obstruction-validation.md): Cross-Domain Projection-Obstruction Validation - hostile non-physics PO1 validation with one positive, two negative controls, and one non-definable boundary.
+- [T30](tests/T30-cross-domain-projection-obstruction-validation.md): Cross-Domain Projection-Obstruction Validation - hostile non-physics PO1 validation with Git and financial risk positives plus a translator/poet anti-overclaim boundary.
 
 ### New Open Problems
 

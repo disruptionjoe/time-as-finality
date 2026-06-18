@@ -52,9 +52,10 @@ has the same three-patch chaining obstruction as the Nielsen-Ninomiya
 restricted system, while the richer eventual-consistency system restores a
 global section by adding branch-support and reconciliation structure.
 
-T30 hostile-tests PO1 in non-physics domains. Git semantic merge supplies one
-positive PO1 instance. Database schema migration, access-control inheritance,
-and type-system macro expansion supply negative or boundary controls.
+T30 hostile-tests PO1 in non-physics domains. Git semantic merge and a toy
+financial tail-risk model supply two positive PO1 instances. Translator/poet
+supplies an anti-overclaim boundary: loss of meaning or nuance alone is not a
+finite gluing obstruction.
 
 ## How It Could Fail
 
@@ -75,6 +76,6 @@ and type-system macro expansion supply negative or boundary controls.
 
 ## Contribution Needed
 
-Formalize PO1 admissibility criteria. A stronger result would identify a
-second independently motivated non-physics positive instance and prove that
-arbitrary three-patch contradictions do not count as PO1 evidence by default.
+Formalize PO1 admissibility criteria. A stronger result would prove that
+arbitrary three-patch contradictions and arbitrary losses of meaning do not
+count as PO1 evidence by default.

@@ -12,11 +12,11 @@ canonical impossibility results from different domains share a common finite
 structure that the T26 D1RestrictionSystem can express directly.
 
 **T30 addendum.** T30 hostile-tests this pattern outside the motivating
-physics and distributed-systems examples. It finds one non-physics positive
-case (Git semantic merge), two negative controls (database migration and
-access-control policy inheritance), and one non-definable boundary
-(type-system macro expansion). This keeps PO1 partially supported but
-constrained.
+physics and distributed-systems examples. It finds two non-physics positive
+toy cases (Git semantic merge and financial tail-risk modeling) and one
+anti-overclaim boundary (translator/poet). This keeps PO1 partially supported,
+with stronger finite evidence inside that status and tighter admissibility
+constraints.
 
 **Non-goal.** This is not a proof that physics no-go theorems have been
 overturned, nor that CAP is solvable.  The pattern is about the mathematics

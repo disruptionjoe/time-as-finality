@@ -363,13 +363,14 @@ T30 adds hostile non-physics validation:
 | Domain | Outcome |
 | --- | --- |
 | Git merge conflict | positive PO1 instance |
-| Database schema migration | lossy projection without obstruction |
-| Access-control policy inheritance | shared obstruction |
-| Type-system macro expansion | non-definable projection |
+| Financial risk model | positive PO1 toy instance |
+| Translator / poet | no meaningful PO1 fit |
 
-T30 keeps PO1 at `partially_supported`. Future positive instances must show
-that the projection is independently motivated and that the forgotten structure
-is exactly what resolves the restricted obstruction.
+T30 keeps PO1 at `partially_supported`, with stronger evidence inside that
+status. Future positive instances must show that the projection is
+independently motivated, that the forgotten structure is exactly what resolves
+the restricted obstruction, and that loss of meaning alone is not being
+misread as finite gluing obstruction.
 
 ## D1 Physical Reduction Map
 

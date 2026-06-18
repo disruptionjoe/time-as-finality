@@ -76,7 +76,7 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md)
   - reusable finite Projection-Obstruction Schema extracted from T27.
 - [TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md](TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md)
-  - hostile non-physics validation of PO1 with positive, negative, and boundary cases.
+  - hostile non-physics validation of PO1 with Git, financial risk, and translator/poet cases.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical

@@ -52,6 +52,8 @@ class HostileDomainCase:
     independent_projection_basis: str
     hostile_reason: str
     case: ProjectionCase
+    admissible_to_po1: bool = True
+    admissibility_warning: str = ""
 
 
 @dataclass(frozen=True)
@@ -243,6 +245,99 @@ def database_expand_contract_case() -> HostileDomainCase:
     )
 
 
+def financial_risk_tail_model_case() -> HostileDomainCase:
+    """High-stakes hostile case: tail-risk structure resolves flat risk obstruction.
+
+    This is a finite toy model only. It is not a claim about any real portfolio,
+    capital model, regulatory model, or investment decision.
+    """
+    richer = D1RestrictionSystem(
+        name="financial_tail_risk_richer",
+        proposition="portfolio_survives_stress",
+        local_values=(
+            _local("credit_tail_engine", "credit_risk", "risk_model", "tail_aware", D1Profile(3, 2, 1, 3)),
+            _local("liquidity_feedback_engine", "liquidity_risk", "risk_model", "feedback_aware", D1Profile(3, 2, 1, 3)),
+            _local("portfolio_stress_engine", "portfolio_risk", "risk_model", "stress_aware", D1Profile(4, 3, 1, 2)),
+        ),
+        transport_edges=(
+            TransportEdge("credit_tail_engine", "portfolio_stress_engine", "stress_factor_transport"),
+            TransportEdge("liquidity_feedback_engine", "portfolio_stress_engine", "liquidity_feedback_transport"),
+        ),
+        source_site="credit_tail_engine",
+        target_site="portfolio_stress_engine",
+        patches=(
+            RestrictionPatch(
+                "tail_regime_splits_normal_loss",
+                ("credit_tail_engine", "portfolio_stress_engine"),
+                ("normal_loss", "tail_loss"),
+                (PatchConstraint("normal_loss", "tail_loss", "different"),),
+            ),
+            RestrictionPatch(
+                "liquidity_buffer_tracks_tail",
+                ("liquidity_feedback_engine", "portfolio_stress_engine"),
+                ("liquidity_buffer", "tail_loss"),
+                (PatchConstraint("liquidity_buffer", "tail_loss", "same"),),
+            ),
+            RestrictionPatch(
+                "capital_buffer_tracks_liquidity",
+                ("liquidity_feedback_engine", "portfolio_stress_engine"),
+                ("capital_buffer", "liquidity_buffer"),
+                (PatchConstraint("capital_buffer", "liquidity_buffer", "same"),),
+            ),
+        ),
+    )
+    restricted = _three_patch_obstruction_system(
+        name="financial_flat_risk_restricted",
+        proposition="portfolio_survives_stress",
+        site_ids=("flat_credit_limit", "flat_liquidity_limit", "flat_portfolio_limit"),
+        populations=("credit_desk", "liquidity_desk", "portfolio_committee"),
+        patch_ids=("credit_agrees_with_portfolio", "liquidity_agrees_with_portfolio", "tail_dependence_breaks_flat_independence"),
+        variable_prefix="flat_risk",
+        profile=D1Profile(1, 1, 0, 4),
+    )
+    morphism = D1RestrictionMorphism(
+        name="financial_forget_tail_dependence",
+        source=richer,
+        target=restricted,
+        site_map=(
+            SiteMap("credit_tail_engine", "flat_credit_limit"),
+            SiteMap("liquidity_feedback_engine", "flat_liquidity_limit"),
+            SiteMap("portfolio_stress_engine", "flat_portfolio_limit"),
+        ),
+        preserved_dimensions=("reversal_cost",),
+    )
+    return HostileDomainCase(
+        domain="financial risk model",
+        expected_bias="high_stakes_positive",
+        independent_projection_basis=(
+            "forget stress regimes, tail dependence, and liquidity feedback; "
+            "retain only flat local risk-limit compatibility"
+        ),
+        hostile_reason=(
+            "Financial risk is high-stakes and punishes vague analogies. The "
+            "case must remain a toy finite model, not a finance theorem."
+        ),
+        case=ProjectionCase(
+            name="financial_tail_risk_model",
+            source="T30",
+            richer_system=richer,
+            restricted_system=restricted,
+            morphism=morphism,
+            forgotten_structure=(
+                "stress-regime split between normal and tail losses",
+                "tail dependence between credit and liquidity losses",
+                "liquidity feedback and capital buffer structure",
+            ),
+            preserved_structure=("portfolio stress proposition", "flat risk-limit sites"),
+            intended_reading=(
+                "A tail-aware stress model has a finite global section, while "
+                "the flattened local-limit projection creates a gluing "
+                "obstruction. This is only a toy risk model."
+            ),
+        ),
+    )
+
+
 def access_control_inheritance_case() -> HostileDomainCase:
     """Negative control: policy contradiction exists before and after projection."""
     richer = _three_patch_obstruction_system(
@@ -291,6 +386,90 @@ def access_control_inheritance_case() -> HostileDomainCase:
                 "Both rich and restricted policy systems are obstructed. This "
                 "is inherited obstruction, not projection-created obstruction."
             ),
+        ),
+    )
+
+
+def translator_poet_boundary_case() -> HostileDomainCase:
+    """Anti-overclaim case: lost poetic meaning is not automatically PO1."""
+    richer = D1RestrictionSystem(
+        name="poetic_translation_richer",
+        proposition="poem_translated_with_force",
+        local_values=(
+            _local("source_poem", "source_language", "translation", "poetic_form", D1Profile(3, 2, 1, 2)),
+            _local("translator_poetics", "translator", "translation", "interpretive_notes", D1Profile(4, 2, 1, 1)),
+            _local("target_poem", "target_language", "translation", "rendered_poem", D1Profile(3, 2, 1, 2)),
+        ),
+        transport_edges=(
+            TransportEdge("source_poem", "translator_poetics", "reading"),
+            TransportEdge("translator_poetics", "target_poem", "rendering"),
+        ),
+        source_site="source_poem",
+        target_site="target_poem",
+        patches=(
+            _same_patch("image_carries_over", ("source_poem", "translator_poetics"), ("source_image", "interpreted_image")),
+            _same_patch("image_rendered", ("translator_poetics", "target_poem"), ("interpreted_image", "target_image")),
+        ),
+    )
+    restricted = D1RestrictionSystem(
+        name="literal_translation_restricted",
+        proposition="poem_translated_with_force",
+        local_values=(
+            _local("source_lexeme", "source_language", "translation", "literal_word", D1Profile(1, 1, 0, 2)),
+            _local("target_lexeme", "target_language", "translation", "literal_word", D1Profile(1, 1, 0, 2)),
+        ),
+        transport_edges=(TransportEdge("source_lexeme", "target_lexeme", "dictionary_lookup"),),
+        source_site="source_lexeme",
+        target_site="target_lexeme",
+        patches=(
+            _same_patch("literal_word_mapping", ("source_lexeme", "target_lexeme"), ("source_word", "target_word")),
+        ),
+    )
+    morphism = D1RestrictionMorphism(
+        name="translation_forget_poetics",
+        source=richer,
+        target=restricted,
+        site_map=(
+            SiteMap("source_poem", "source_lexeme"),
+            SiteMap("translator_poetics", "target_lexeme"),
+            SiteMap("target_poem", "target_lexeme"),
+        ),
+        preserved_dimensions=("reversal_cost",),
+    )
+    return HostileDomainCase(
+        domain="translator / poet",
+        expected_bias="anti_overclaim",
+        independent_projection_basis=(
+            "forget image, rhythm, register, and interpretive poetics; retain "
+            "only literal word mapping"
+        ),
+        hostile_reason=(
+            "Translation loss is real, but PO1 should not absorb every loss of "
+            "meaning into a finite gluing-obstruction claim."
+        ),
+        case=ProjectionCase(
+            name="translator_poet_boundary",
+            source="T30",
+            richer_system=richer,
+            restricted_system=restricted,
+            morphism=morphism,
+            forgotten_structure=(
+                "poetic image",
+                "rhythm and register",
+                "translator judgment",
+                "cultural resonance",
+            ),
+            preserved_structure=("literal word mapping",),
+            intended_reading=(
+                "The projection loses poetic structure, but the finite model "
+                "does not produce a canonical gluing obstruction. This should "
+                "block PO1 overreach."
+            ),
+        ),
+        admissible_to_po1=False,
+        admissibility_warning=(
+            "No canonical finite same/different restriction system captures "
+            "poetic force; treating this as PO1 would overclaim."
         ),
     )
 
@@ -373,18 +552,18 @@ def type_system_macro_boundary_case() -> HostileDomainCase:
 def t30_hostile_cases() -> tuple[HostileDomainCase, ...]:
     return (
         git_semantic_merge_case(),
-        database_expand_contract_case(),
-        access_control_inheritance_case(),
-        type_system_macro_boundary_case(),
+        financial_risk_tail_model_case(),
+        translator_poet_boundary_case(),
     )
 
 
 def analyze_hostile_case(case: HostileDomainCase) -> HostileCaseAnalysis:
     analysis = analyze_projection_case(case.case)
-    classification = CLASSIFICATION_BY_OUTCOME.get(analysis.schema.outcome, "no meaningful PO1 fit")
-    supports_po1 = analysis.schema.schema_instance
-    meaningful = analysis.schema.outcome != "non_definable_projection"
-    signal = _hypothesis_signal(supports_po1, analysis.schema.outcome)
+    raw_classification = CLASSIFICATION_BY_OUTCOME.get(analysis.schema.outcome, "no meaningful PO1 fit")
+    classification = raw_classification if case.admissible_to_po1 else "no meaningful PO1 fit"
+    supports_po1 = analysis.schema.schema_instance and case.admissible_to_po1
+    meaningful = case.admissible_to_po1 and analysis.schema.outcome != "non_definable_projection"
+    signal = _hypothesis_signal(supports_po1, analysis.schema.outcome, case.admissible_to_po1)
     return HostileCaseAnalysis(
         domain=case.domain,
         expected_bias=case.expected_bias,
@@ -392,7 +571,7 @@ def analyze_hostile_case(case: HostileDomainCase) -> HostileCaseAnalysis:
         supports_po1=supports_po1,
         meaningful_po1_fit=meaningful,
         hypothesis_signal=signal,
-        hostile_reason=case.hostile_reason,
+        hostile_reason=case.hostile_reason if not case.admissibility_warning else f"{case.hostile_reason} {case.admissibility_warning}",
         independent_projection_basis=case.independent_projection_basis,
         analysis=analysis,
     )
@@ -404,13 +583,14 @@ def run_t30_lab() -> T30Result:
     return T30Result(
         analyses=analyses,
         hypothesis_evaluations=hypothesis_evaluations,
-        best_supported_hypothesis="H1 with H3/H4 constraints",
+        best_supported_hypothesis="H2 with H4 admissibility constraints",
         po1_recommendation=(
-            "Keep PO1 at partially_supported, but constrain it. T30 finds one "
-            "non-physics positive instance, two negative controls, and one "
-            "non-definable boundary. The schema is not merely GU-specific, but "
-            "it is not yet broad enough to strengthen. Future uses should pass "
-            "an admissibility check before being counted as PO1 evidence."
+            "Keep PO1 at partially_supported, but strengthen the evidence "
+            "within that status. T30 finds two unrelated non-physics positive "
+            "instances and one anti-overclaim boundary. The schema is not "
+            "merely GU-specific, but translator/poet shows that future uses "
+            "must pass an admissibility check before being counted as PO1 "
+            "evidence."
         ),
         admissibility_constraints=(
             "Projection must be independently motivated by the domain, not chosen only to force a contradiction.",
@@ -451,6 +631,11 @@ def _hypothesis_evaluations(
         if item.analysis.schema.outcome
         in {"lossy_projection_no_new_obstruction", "shared_obstruction_not_projection_created"}
     )
+    anti_overclaim = tuple(
+        item.analysis.case.name
+        for item in analyses
+        if not item.meaningful_po1_fit
+    )
     return (
         HypothesisEvaluation(
             hypothesis_id="H0",
@@ -468,31 +653,45 @@ def _hypothesis_evaluations(
         ),
         HypothesisEvaluation(
             hypothesis_id="H2",
-            status="not_yet_supported",
+            status="supported_in_finite_scope" if len(positives) >= 2 else "not_yet_supported",
             evidence_for=positives,
             evidence_against=non_positive,
-            verdict="T30 does not show broad cross-domain generality; it shows one positive plus boundaries.",
+            verdict=(
+                "T30 shows multiple unrelated non-physics positives, but not universality."
+                if len(positives) >= 2
+                else "T30 does not show broad cross-domain generality."
+            ),
         ),
         HypothesisEvaluation(
             hypothesis_id="H3",
-            status="partially_supported",
+            status="not_supported_by_current_candidates" if not non_definable else "partially_supported",
             evidence_for=non_definable,
-            evidence_against=negative_controls,
-            verdict="Some domains need richer site or syntax handling, but the finite machinery still classifies several negative controls.",
+            evidence_against=_unique(positives + anti_overclaim),
+            verdict=(
+                "The revised T30 candidate set does not require new machinery; "
+                "the translator/poet boundary is an admissibility failure, not "
+                "a category upgrade."
+            ),
         ),
         HypothesisEvaluation(
             hypothesis_id="H4",
             status="partially_supported_as_warning",
-            evidence_for=negative_controls,
+            evidence_for=_unique(negative_controls + anti_overclaim),
             evidence_against=positives,
-            verdict="PO1 is useful only with admissibility constraints; three-patch contradictions alone are too easy to manufacture.",
+            verdict="PO1 is useful only with admissibility constraints; meaningful loss alone is not finite gluing obstruction.",
         ),
     )
 
 
-def _hypothesis_signal(supports_po1: bool, outcome: str) -> str:
+def _unique(items: tuple[str, ...]) -> tuple[str, ...]:
+    return tuple(dict.fromkeys(items))
+
+
+def _hypothesis_signal(supports_po1: bool, outcome: str, admissible: bool) -> str:
+    if not admissible:
+        return "supports H4 anti-overclaim boundary"
     if supports_po1:
-        return "supports H1 and weakly pushes against H0"
+        return "supports H1/H2 and pushes against H0"
     if outcome == "non_definable_projection":
         return "supports H3 boundary"
     if outcome == "lossy_projection_no_new_obstruction":

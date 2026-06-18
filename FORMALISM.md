@@ -137,6 +137,11 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > delay in disguise. H4 is best supported because distinct mechanisms generate
 > equivalent finite traces. This does not modify `D1RestrictionSystem` or derive
 > physical proper time.
+> [T44](tests/T44-local-mechanism-identifiability.md) then shows that the T43
+> baseline ambiguity is removable for those finite mechanisms by a two-probe
+> observable basis: demand sensitivity plus coupling sensitivity. Baseline
+> traces, event-count scaling, and simple load-recovery probes remain
+> non-identifying.
 
 ## Primitive Inventory
 

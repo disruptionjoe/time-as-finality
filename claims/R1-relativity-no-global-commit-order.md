@@ -42,6 +42,11 @@ Intrinsic rate, finite resource budget, and interaction density all work as
 finite mechanisms, while propagation-shadow is rejected as delay in disguise.
 The result does not identify a physical clock mechanism.
 
+T44 adds identifiability discipline: the same baseline local accumulation trace
+does not identify its mechanism, but demand sensitivity plus coupling sensitivity
+separates the T43 finite mechanism families. This remains a finite probe result,
+not a physical time claim.
+
 ## How It Could Fail
 
 - The analogy hides rather than clarifies spacetime geometry.
@@ -57,6 +62,7 @@ The result does not identify a physical clock mechanism.
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T42: Local Persistence And Reconciliation Split Audit](../tests/T42-local-persistence-reconciliation-split.md)
 - [T43: Local Persistence Accumulation Mechanism Audit](../tests/T43-local-persistence-mechanisms.md)
+- [T44: Local Mechanism Identifiability Audit](../tests/T44-local-mechanism-identifiability.md)
 
 ## Contribution Needed
 

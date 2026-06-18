@@ -629,3 +629,35 @@ to `D1RestrictionSystem`, `TypedTransportNetwork`, or D1Cat.
 
 Next mechanism question: what additional observable distinguishes finite
 resource limits from local interaction density while propagation remains fixed?
+
+## Phase 14: T44 Local Mechanism Identifiability
+
+T44 asks whether the T43 mechanism ambiguity is removable by finite probes.
+
+**Completed v0.1:** implement
+[T44](tests/T44-local-mechanism-identifiability.md) as the Local Mechanism
+Identifiability Audit. Baseline traces, event-count scaling, and simple
+load-recovery leave the T43 mechanisms unresolved. Two probes separate them:
+
+```text
+demand_drop
+coupling_rewire
+```
+
+Demand-drop separates finite resource budget from the other mechanisms.
+Coupling-rewire separates interaction density from the other mechanisms.
+Together they identify the three T43 mechanism families:
+
+```text
+intrinsic rate: stable under both probes
+resource budget: sensitive to demand
+interaction density: sensitive to coupling
+```
+
+T44 supports H4: a small observable basis separates all T43 mechanisms. It also
+preserves an important warning: baseline local accumulation curves alone do not
+identify the mechanism that generated them.
+
+Next physical-interface question: which finite probes, if any, have operational
+physical analogues? Until that is answered, T44 remains an identifiability
+theorem inside the finite model.

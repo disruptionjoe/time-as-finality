@@ -128,6 +128,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Local persistence mechanism audit: intrinsic rate, finite resource budget,
     and interaction density alter local accumulation with propagation fixed;
     equivalent traces make H4 best supported.
+- [TECHNICAL-REPORT-local-mechanism-identifiability-v0.1.md](TECHNICAL-REPORT-local-mechanism-identifiability-v0.1.md)
+  - Local mechanism identifiability: finite probes show baseline traces remain
+    ambiguous, while demand-drop plus coupling-rewire separates the T43
+    mechanism families; H4 best supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -206,6 +210,7 @@ python -m models.run_t40
 python -m models.run_t41
 python -m models.run_t42
 python -m models.run_t43
+python -m models.run_t44
 ```
 
 ## Run Explorations

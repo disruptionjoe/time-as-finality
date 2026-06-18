@@ -1,0 +1,1173 @@
+{
+  "probe_results": [
+    {
+      "probe_name": "baseline",
+      "description": "No perturbation. Confirms the T43 equivalence class.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "baseline",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "baseline",
+          "trace": {
+            "name": "resource_budget_baseline",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "update_demand": 2,
+              "stabilization_budget": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "baseline",
+          "trace": {
+            "name": "interaction_density_baseline",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 1,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        }
+      ],
+      "separated_pairs": [],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "baseline: separates 0 of 3 pairs; unresolved=(('intrinsic_rate', 'resource_budget'), ('intrinsic_rate', 'interaction_density'), ('resource_budget', 'interaction_density'))"
+    },
+    {
+      "probe_name": "event_count_scaling",
+      "description": "Increase local event count while preserving per-event mechanism parameters.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "event_count_scaling",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 20
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 40,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 40,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "event_count_scaling",
+          "trace": {
+            "name": "resource_budget_baseline",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "update_demand": 2,
+              "stabilization_budget": 2,
+              "event_count": 20
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 40,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 40,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "event_count_scaling",
+          "trace": {
+            "name": "interaction_density_baseline",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 1,
+              "event_count": 20
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 40,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 40,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        }
+      ],
+      "separated_pairs": [],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "event_count_scaling: separates 0 of 3 pairs; unresolved=(('intrinsic_rate', 'resource_budget'), ('intrinsic_rate', 'interaction_density'), ('resource_budget', 'interaction_density'))"
+    },
+    {
+      "probe_name": "demand_drop",
+      "description": "Lower update demand. Resource-budget mechanisms respond; others do not.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "demand_drop",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "demand_drop",
+          "trace": {
+            "name": "resource_budget_demand_drop",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "update_demand": 1,
+              "stabilization_budget": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "total_accumulation": 10,
+            "mean_rate": 1.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total_accumulation": 10,
+          "mean_rate": 1.0,
+          "changed_from_baseline": true
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "demand_drop",
+          "trace": {
+            "name": "interaction_density_baseline",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 1,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        }
+      ],
+      "separated_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "demand_drop: separates 2 of 3 pairs; unresolved=(('intrinsic_rate', 'interaction_density'),)"
+    },
+    {
+      "probe_name": "resource_shock",
+      "description": "Lower stabilization budget. Resource-budget mechanisms respond; others do not.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "resource_shock",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "resource_shock",
+          "trace": {
+            "name": "resource_budget_resource_shock",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "update_demand": 2,
+              "stabilization_budget": 1,
+              "event_count": 10
+            },
+            "deltas": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "total_accumulation": 10,
+            "mean_rate": 1.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total_accumulation": 10,
+          "mean_rate": 1.0,
+          "changed_from_baseline": true
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "resource_shock",
+          "trace": {
+            "name": "interaction_density_baseline",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 1,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        }
+      ],
+      "separated_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "resource_shock: separates 2 of 3 pairs; unresolved=(('intrinsic_rate', 'interaction_density'),)"
+    },
+    {
+      "probe_name": "coupling_rewire",
+      "description": "Reduce local interaction count. Interaction-density mechanisms respond; others do not.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "coupling_rewire",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "coupling_rewire",
+          "trace": {
+            "name": "resource_budget_baseline",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "update_demand": 2,
+              "stabilization_budget": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "coupling_rewire",
+          "trace": {
+            "name": "interaction_density_coupling_rewire",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 0,
+              "event_count": 10
+            },
+            "deltas": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "total_accumulation": 10,
+            "mean_rate": 1.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "total_accumulation": 10,
+          "mean_rate": 1.0,
+          "changed_from_baseline": true
+        }
+      ],
+      "separated_pairs": [
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "coupling_rewire: separates 2 of 3 pairs; unresolved=(('intrinsic_rate', 'resource_budget'),)"
+    },
+    {
+      "probe_name": "load_recovery",
+      "description": "Apply finite load then recovery. In this simple trace model it does not separate mechanisms.",
+      "responses": [
+        {
+          "mechanism_id": "intrinsic_rate",
+          "probe_name": "load_recovery",
+          "trace": {
+            "name": "intrinsic_rate_baseline",
+            "mechanism_type": "intrinsic_stabilization_rate",
+            "parameters": {
+              "rate": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "resource_budget",
+          "probe_name": "load_recovery",
+          "trace": {
+            "name": "resource_budget_load_recovery",
+            "mechanism_type": "finite_resource_budget",
+            "parameters": {
+              "phase_1_demand": 3,
+              "phase_2_demand": 2,
+              "stabilization_budget": 2,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        },
+        {
+          "mechanism_id": "interaction_density",
+          "probe_name": "load_recovery",
+          "trace": {
+            "name": "interaction_density_baseline",
+            "mechanism_type": "interaction_density",
+            "parameters": {
+              "base_rate": 1,
+              "coupling_strength": 1,
+              "interaction_count": 1,
+              "event_count": 10
+            },
+            "deltas": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "total_accumulation": 20,
+            "mean_rate": 2.0,
+            "depends_on_propagation": false
+          },
+          "observable_signature": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "total_accumulation": 20,
+          "mean_rate": 2.0,
+          "changed_from_baseline": false
+        }
+      ],
+      "separated_pairs": [],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "separates_all": false,
+      "finding": "load_recovery: separates 0 of 3 pairs; unresolved=(('intrinsic_rate', 'resource_budget'), ('intrinsic_rate', 'interaction_density'), ('resource_budget', 'interaction_density'))"
+    }
+  ],
+  "minimal_basis": {
+    "probe_names": [
+      "demand_drop",
+      "coupling_rewire"
+    ],
+    "separates_all": true,
+    "separated_pairs": [
+      {
+        "pair": [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        "separating_probes": [
+          "demand_drop"
+        ],
+        "separated": true
+      },
+      {
+        "pair": [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        "separating_probes": [
+          "coupling_rewire"
+        ],
+        "separated": true
+      },
+      {
+        "pair": [
+          "resource_budget",
+          "interaction_density"
+        ],
+        "separating_probes": [
+          "demand_drop",
+          "coupling_rewire"
+        ],
+        "separated": true
+      }
+    ],
+    "unresolved_pairs": [],
+    "reason": "This is the first smallest subset, in declared probe order, that separates all T43 baseline mechanism families."
+  },
+  "unresolved_equivalences": [
+    {
+      "name": "baseline_equivalence",
+      "probe_names": [
+        "baseline"
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "reason": "baseline leaves mechanisms trace-equivalent under the current observable signature."
+    },
+    {
+      "name": "event_count_scaling_equivalence",
+      "probe_names": [
+        "event_count_scaling"
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "reason": "event_count_scaling leaves mechanisms trace-equivalent under the current observable signature."
+    },
+    {
+      "name": "load_recovery_equivalence",
+      "probe_names": [
+        "load_recovery"
+      ],
+      "unresolved_pairs": [
+        [
+          "intrinsic_rate",
+          "resource_budget"
+        ],
+        [
+          "intrinsic_rate",
+          "interaction_density"
+        ],
+        [
+          "resource_budget",
+          "interaction_density"
+        ]
+      ],
+      "reason": "load_recovery leaves mechanisms trace-equivalent under the current observable signature."
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H0",
+      "claim": "The mechanisms remain indistinguishable in the current finite framework.",
+      "status": "rejected",
+      "evidence_for": [
+        "Baseline and event-count scaling leave mechanisms indistinguishable."
+      ],
+      "evidence_against": [
+        "Demand-drop separates resource budget from the other mechanisms.",
+        "Coupling-rewire separates interaction density from the other mechanisms.",
+        "The minimal basis separates all T43 baseline mechanism families."
+      ],
+      "verdict": "Rejected for the T43 mechanism family set."
+    },
+    {
+      "hypothesis_id": "H1",
+      "claim": "Intrinsic rate is distinguishable by stability under perturbation.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "Intrinsic-rate response is stable under demand-drop and coupling-rewire probes.",
+        "The combined probe vector distinguishes intrinsic rate from resource budget and interaction density."
+      ],
+      "evidence_against": [
+        "Stability under any single irrelevant probe is not unique.",
+        "Baseline and event-count scaling do not distinguish intrinsic rate."
+      ],
+      "verdict": "Supported only as a probe-vector property, not as a single-probe marker."
+    },
+    {
+      "hypothesis_id": "H2",
+      "claim": "Resource budget is distinguishable by saturation under changed demand or resource shock.",
+      "status": "supported",
+      "evidence_for": [
+        "Demand-drop unresolved pairs: (('intrinsic_rate', 'interaction_density'),).",
+        "Resource-shock unresolved pairs: (('intrinsic_rate', 'interaction_density'),).",
+        "Both probes separate resource budget from intrinsic rate and interaction density."
+      ],
+      "evidence_against": [
+        "Demand-drop and resource-shock are redundant in this simple trace model."
+      ],
+      "verdict": "Supported for finite T43 mechanisms."
+    },
+    {
+      "hypothesis_id": "H3",
+      "claim": "Interaction density is distinguishable by sensitivity to local coupling changes.",
+      "status": "supported",
+      "evidence_for": [
+        "Coupling-rewire separates interaction density from intrinsic rate and resource budget."
+      ],
+      "evidence_against": [
+        "Coupling-rewire alone leaves intrinsic rate and resource budget unresolved."
+      ],
+      "verdict": "Supported for finite T43 mechanisms."
+    },
+    {
+      "hypothesis_id": "H4",
+      "claim": "A small observable basis separates all T43 mechanisms.",
+      "status": "best_supported",
+      "evidence_for": [
+        "Minimal basis found: ('demand_drop', 'coupling_rewire').",
+        "Demand-drop plus coupling-rewire separates all three baseline mechanisms."
+      ],
+      "evidence_against": [
+        "The basis is only for the finite T43 mechanism family set.",
+        "Unresolved equivalences remain under weaker probe sets."
+      ],
+      "verdict": "Best supported. A two-probe observable basis separates the T43 mechanisms."
+    },
+    {
+      "hypothesis_id": "H5",
+      "claim": "No finite observable basis separates them without richer dynamics.",
+      "status": "rejected_for_t43_family",
+      "evidence_for": [
+        "Unresolved weaker probe sets remain: ('baseline_equivalence', 'event_count_scaling_equivalence', 'load_recovery_equivalence')."
+      ],
+      "evidence_against": [
+        "The minimal finite probe basis separates all T43 baseline mechanisms."
+      ],
+      "verdict": "Rejected for the T43 mechanism family set, but open for richer mechanisms."
+    }
+  ],
+  "best_supported_hypothesis": "H4",
+  "theorem": "Finite Probe Identifiability Theorem: the T43 trace-equivalent mechanisms are not identifiable from baseline local accumulation alone, but a two-probe finite observable basis, demand_drop plus coupling_rewire, separates intrinsic rate, resource budget, and interaction density.",
+  "boundary": "The theorem is limited to the finite T43 mechanism families and the declared probe set. It does not identify a physical proper-time mechanism and does not rule out new mechanisms with identical probe response vectors.",
+  "recommendation": "Promote demand sensitivity and coupling sensitivity as the minimal next observable basis for local accumulation studies. Keep baseline trace equivalence as a live warning against overinterpreting local accumulation curves."
+}

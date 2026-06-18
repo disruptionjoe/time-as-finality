@@ -28,6 +28,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T27](tests/T27-class-relative-bridge-audit.md) | Class-relative bridge audit | D1RestrictionSystem, PO1 | implemented: GU bridge audit with faithful and non-definable cases |
 | [T28](tests/T28-cap-theorem-bridge.md) | CAP theorem bridge | D1RestrictionSystem, PO1, T27 | implemented: CAP as finite gluing obstruction with NN structural comparison |
 | [T29](tests/T29-projection-obstruction-schema.md) | Projection-Obstruction Schema | PO1, T26, T27 | implemented: finite schema with positive and boundary cases |
+| [T30](tests/T30-cross-domain-projection-obstruction-validation.md) | Cross-domain projection-obstruction validation | PO1, T29 | implemented: hostile non-physics validation with positive, negative, and boundary cases |
 
 ## Minimum Compatibility Constraints
 
@@ -64,6 +65,7 @@ python -m models.run_t26
 python -m models.run_t27
 python -m models.run_t28
 python -m models.run_t29
+python -m models.run_t30
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -84,6 +86,7 @@ The suites use only Python's standard library. Evidence records:
 - [GU Class-Relative Bridge v0.1 Results](results/gu-class-relative-bridge-v0.1-results.md)
 - [CAP Theorem Bridge v0.1 Results](results/cap-theorem-bridge-v0.1-results.md)
 - [Projection-Obstruction Schema v0.1 Results](results/projection-obstruction-schema-v0.1-results.md)
+- [Cross-Domain Projection-Obstruction Validation v0.1 Results](results/cross-domain-projection-obstruction-validation-v0.1-results.md)
 
 ## How To Add A Test
 

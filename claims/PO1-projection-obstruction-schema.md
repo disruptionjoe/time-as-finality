@@ -52,6 +52,10 @@ has the same three-patch chaining obstruction as the Nielsen-Ninomiya
 restricted system, while the richer eventual-consistency system restores a
 global section by adding branch-support and reconciliation structure.
 
+T30 hostile-tests PO1 in non-physics domains. Git semantic merge supplies one
+positive PO1 instance. Database schema migration, access-control inheritance,
+and type-system macro expansion supply negative or boundary controls.
+
 ## How It Could Fail
 
 - The pattern may be an artifact of the chosen T27 encodings.
@@ -59,15 +63,18 @@ global section by adding branch-support and reconciliation structure.
 - Projection may preserve theorem validity without producing a gluing
   obstruction.
 - Forgotten structure may not be representable as finite patch data.
+- Three-patch contradictions may be too easy to manufacture unless the
+  projection is independently motivated by the source domain.
 
 ## Tests
 
 - [T27: Class-Relative Bridge Audit](../tests/T27-class-relative-bridge-audit.md)
 - [T28: CAP Theorem Bridge](../tests/T28-cap-theorem-bridge.md)
 - [T29: Projection-Obstruction Schema](../tests/T29-projection-obstruction-schema.md)
+- [T30: Cross-Domain Projection-Obstruction Validation](../tests/T30-cross-domain-projection-obstruction-validation.md)
 
 ## Contribution Needed
 
-Test PO1 on a domain not inherited from GU or Time as Finality. A stronger
-result would show whether Projection-Obstruction is domain-neutral rather than
-a useful abstraction of the current bridge audit.
+Formalize PO1 admissibility criteria. A stronger result would identify a
+second independently motivated non-physics positive instance and prove that
+arbitrary three-patch contradictions do not count as PO1 evidence by default.

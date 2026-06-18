@@ -1,0 +1,339 @@
+{
+  "admissibility_constraints": [
+    "Projection must be independently motivated by the domain, not chosen only to force a contradiction.",
+    "The richer system must have a global section and the restricted system must be obstructed.",
+    "Forgotten structure must be the same structure that resolves the restricted obstruction.",
+    "Lossy projection without obstruction is not positive evidence.",
+    "Shared obstruction is not positive evidence.",
+    "Incomplete site maps are boundary cases, not failed positive instances."
+  ],
+  "analyses": [
+    {
+      "classification": "projection-created obstruction",
+      "domain": "git merge conflict",
+      "expected_bias": "positive",
+      "forgotten_structure": [
+        "rename metadata",
+        "semantic merge driver",
+        "branch support for divergent path names"
+      ],
+      "hostile_reason": "Git merge is a developer workflow, not a physics no-go theorem.",
+      "hypothesis_signal": "supports H1 and weakly pushes against H0",
+      "independent_projection_basis": "forget rename detection and semantic merge driver, retain only path-level equality constraints",
+      "intended_reading": "A rename-aware merge has a finite global section, while the path-only projection creates a local-to-global merge conflict.",
+      "meaningful_po1_fit": true,
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "git_forget_rename_metadata",
+        "obstruction": "local_profile_mismatch",
+        "obstruction_status_preserved": false,
+        "reached": false,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "git_semantic_merge",
+      "preserved_structure": [
+        "branch endpoints",
+        "path-level merge proposition"
+      ],
+      "restricted_system": {
+        "edge_count": 2,
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_witness_count": 3,
+        "name": "git_path_only_merge_restricted",
+        "obstruction_detected": true,
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_system": {
+        "edge_count": 2,
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_witness_count": 3,
+        "name": "git_semantic_merge_richer",
+        "obstruction_detected": false,
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "positive finite schema instance",
+        "morphism_reaches_target": false,
+        "name": "git_semantic_merge_schema",
+        "obstruction_created_by_projection": true,
+        "outcome": "faithful_projection_obstruction",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": false,
+        "schema_instance": true
+      },
+      "supports_po1": true,
+      "verdict": "git_semantic_merge: positive finite Projection-Obstruction instance"
+    },
+    {
+      "classification": "lossy projection without obstruction",
+      "domain": "database schema migration",
+      "expected_bias": "negative",
+      "forgotten_structure": [
+        "compatibility view rollout stage",
+        "dual-write support",
+        "deployment order metadata"
+      ],
+      "hostile_reason": "A safe migration can lose operational detail without producing an impossibility result.",
+      "hypothesis_signal": "supports H4 constraint: loss alone is insufficient",
+      "independent_projection_basis": "forget expand-contract rollout metadata, retain flat old/app/new schema compatibility",
+      "intended_reading": "Projection loses migration detail, but both systems still have global sections. This should not count as PO1 support.",
+      "meaningful_po1_fit": true,
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "database_forget_expand_contract_rollout",
+        "obstruction": "local_profile_mismatch",
+        "obstruction_status_preserved": true,
+        "reached": false,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "database_expand_contract",
+      "preserved_structure": [
+        "old/app/new schema contract",
+        "trusted migration path"
+      ],
+      "restricted_system": {
+        "edge_count": 2,
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_witness_count": 2,
+        "name": "database_flat_schema_restricted",
+        "obstruction_detected": false,
+        "patch_count": 2,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_system": {
+        "edge_count": 2,
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_witness_count": 2,
+        "name": "database_expand_contract_richer",
+        "obstruction_detected": false,
+        "patch_count": 2,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "projection may be lossy without producing a no-go obstruction",
+        "morphism_reaches_target": false,
+        "name": "database_expand_contract_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "lossy_projection_no_new_obstruction",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": false,
+        "richer_obstructed": false,
+        "schema_instance": false
+      },
+      "supports_po1": false,
+      "verdict": "database_expand_contract: lossy projection, but no obstruction is created"
+    },
+    {
+      "classification": "shared obstruction",
+      "domain": "access-control policy inheritance",
+      "expected_bias": "negative",
+      "forgotten_structure": [
+        "policy provenance",
+        "priority labels",
+        "audit explanation metadata"
+      ],
+      "hostile_reason": "The richer policy object does not resolve the conflict; it only names it with more metadata.",
+      "hypothesis_signal": "supports H4 constraint: inherited obstruction is insufficient",
+      "independent_projection_basis": "flatten policy provenance and retain only effective allow/deny compatibility",
+      "intended_reading": "Both rich and restricted policy systems are obstructed. This is inherited obstruction, not projection-created obstruction.",
+      "meaningful_po1_fit": true,
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "access_control_forget_policy_metadata",
+        "obstruction": "local_profile_mismatch",
+        "obstruction_status_preserved": true,
+        "reached": false,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "access_control_inheritance",
+      "preserved_structure": [
+        "effective permission contradiction"
+      ],
+      "restricted_system": {
+        "edge_count": 2,
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_witness_count": 3,
+        "name": "access_control_flat_policy_restricted",
+        "obstruction_detected": true,
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_system": {
+        "edge_count": 2,
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_witness_count": 3,
+        "name": "access_control_priority_richer",
+        "obstruction_detected": true,
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "obstruction is inherited rather than created by projection",
+        "morphism_reaches_target": false,
+        "name": "access_control_inheritance_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "shared_obstruction_not_projection_created",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": true,
+        "schema_instance": false
+      },
+      "supports_po1": false,
+      "verdict": "access_control_inheritance: obstruction is inherited, not projection-created"
+    },
+    {
+      "classification": "non-definable projection",
+      "domain": "type systems and macro expansion",
+      "expected_bias": "boundary",
+      "forgotten_structure": [
+        "macro expansion phase",
+        "expanded syntax category"
+      ],
+      "hostile_reason": "Macro expansion introduces an intermediate syntactic category with no target site.",
+      "hypothesis_signal": "supports H3 boundary",
+      "independent_projection_basis": "attempt to erase macro-expansion phase and compare source/core/runtime only",
+      "intended_reading": "The projection is not definable inside T26 because one source site has no target. This is a boundary, not PO1 support.",
+      "meaningful_po1_fit": false,
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "type_system_forget_macro_phase",
+        "obstruction": "site_map_incomplete",
+        "obstruction_status_preserved": true,
+        "reached": false,
+        "site_map_total": false,
+        "trust_path_preserved": true
+      },
+      "name": "type_system_macro_expansion",
+      "preserved_structure": [
+        "source to core to runtime compilation intent"
+      ],
+      "restricted_system": {
+        "edge_count": 2,
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_witness_count": 2,
+        "name": "type_system_no_macro_restricted",
+        "obstruction_detected": false,
+        "patch_count": 2,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_system": {
+        "edge_count": 3,
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_witness_count": 3,
+        "name": "type_system_macro_expansion_richer",
+        "obstruction_detected": false,
+        "patch_count": 3,
+        "site_count": 4,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "site map incomplete or category change",
+        "morphism_reaches_target": false,
+        "name": "type_system_macro_expansion_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "non_definable_projection",
+        "projection_definable": false,
+        "projection_loses_structure": true,
+        "restricted_obstructed": false,
+        "richer_obstructed": false,
+        "schema_instance": false
+      },
+      "supports_po1": false,
+      "verdict": "type_system_macro_expansion: projection not definable inside T26"
+    }
+  ],
+  "best_supported_hypothesis": "H1 with H3/H4 constraints",
+  "hypotheses": [
+    "H0: PO1 is domain-specific to GU/no-go style cases",
+    "H1: PO1 applies to at least one non-physics inherited domain",
+    "H2: PO1 applies across multiple unrelated domains with the same finite structure",
+    "H3: PO1 requires modification to handle non-physics domains",
+    "H4: PO1 is too broad or underconstrained to be useful"
+  ],
+  "hypothesis_evaluations": [
+    {
+      "evidence_against": [
+        "git_semantic_merge"
+      ],
+      "evidence_for": [],
+      "hypothesis_id": "H0",
+      "status": "rejected_in_finite_scope",
+      "verdict": "At least one non-physics hostile case instantiates PO1."
+    },
+    {
+      "evidence_against": [],
+      "evidence_for": [
+        "git_semantic_merge"
+      ],
+      "hypothesis_id": "H1",
+      "status": "supported",
+      "verdict": "PO1 applies to at least one non-physics domain in T30."
+    },
+    {
+      "evidence_against": [
+        "database_expand_contract",
+        "access_control_inheritance",
+        "type_system_macro_expansion"
+      ],
+      "evidence_for": [
+        "git_semantic_merge"
+      ],
+      "hypothesis_id": "H2",
+      "status": "not_yet_supported",
+      "verdict": "T30 does not show broad cross-domain generality; it shows one positive plus boundaries."
+    },
+    {
+      "evidence_against": [
+        "database_expand_contract",
+        "access_control_inheritance"
+      ],
+      "evidence_for": [
+        "type_system_macro_expansion"
+      ],
+      "hypothesis_id": "H3",
+      "status": "partially_supported",
+      "verdict": "Some domains need richer site or syntax handling, but the finite machinery still classifies several negative controls."
+    },
+    {
+      "evidence_against": [
+        "git_semantic_merge"
+      ],
+      "evidence_for": [
+        "database_expand_contract",
+        "access_control_inheritance"
+      ],
+      "hypothesis_id": "H4",
+      "status": "partially_supported_as_warning",
+      "verdict": "PO1 is useful only with admissibility constraints; three-patch contradictions alone are too easy to manufacture."
+    }
+  ],
+  "po1_recommendation": "Keep PO1 at partially_supported, but constrain it. T30 finds one non-physics positive instance, two negative controls, and one non-definable boundary. The schema is not merely GU-specific, but it is not yet broad enough to strengthen. Future uses should pass an admissibility check before being counted as PO1 evidence."
+}

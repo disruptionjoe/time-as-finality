@@ -75,6 +75,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - cross-domain note comparing T27 and T28 finite gluing obstructions.
 - [TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md)
   - reusable finite Projection-Obstruction Schema extracted from T27.
+- [TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md](TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md)
+  - hostile non-physics validation of PO1 with positive, negative, and boundary cases.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -141,6 +143,7 @@ python -m models.run_t26
 python -m models.run_t27
 python -m models.run_t28
 python -m models.run_t29
+python -m models.run_t30
 ```
 
 ## Citation / Reuse

@@ -53,6 +53,8 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > gluing obstruction. This is a finite abstraction claim, not a physics proof.
 > [T28](tests/T28-cap-theorem-bridge.md) adds CAP as a distributed-systems
 > stress test for the same finite obstruction pattern.
+> [T30](tests/T30-cross-domain-projection-obstruction-validation.md) hostile-tests
+> PO1 in non-physics domains and keeps the claim constrained.
 
 ## Primitive Inventory
 
@@ -355,6 +357,19 @@ This supports PO1 as a named formal schema with `partially_supported` status.
 T28 adds the CAP theorem as a distributed-systems stress test with the same
 three-patch chaining obstruction as Nielsen-Ninomiya. This does not prove the
 source physical or distributed-systems impossibility theorems.
+
+T30 adds hostile non-physics validation:
+
+| Domain | Outcome |
+| --- | --- |
+| Git merge conflict | positive PO1 instance |
+| Database schema migration | lossy projection without obstruction |
+| Access-control policy inheritance | shared obstruction |
+| Type-system macro expansion | non-definable projection |
+
+T30 keeps PO1 at `partially_supported`. Future positive instances must show
+that the projection is independently motivated and that the forgotten structure
+is exactly what resolves the restricted obstruction.
 
 ## D1 Physical Reduction Map
 

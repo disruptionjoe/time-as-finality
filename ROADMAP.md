@@ -48,6 +48,9 @@
 - **Completed v0.1:** implement
   [T29](tests/T29-projection-obstruction-schema.md) as the finite
   Projection-Obstruction Schema formalization.
+- **Completed v0.1:** implement
+  [T30](tests/T30-cross-domain-projection-obstruction-validation.md) as
+  hostile non-physics validation of PO1.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -82,10 +85,11 @@
 
 ## Best First Contributions
 
-1. Test [PO1](claims/PO1-projection-obstruction-schema.md) on a domain not
-   inherited from GU or Time as Finality. The key question is whether
-   Projection-Obstruction is domain-neutral or only a useful abstraction of
-   the current bridge audit.
+1. Formalize [PO1](claims/PO1-projection-obstruction-schema.md)
+   admissibility criteria after
+   [T30](tests/T30-cross-domain-projection-obstruction-validation.md). The
+   next useful target is a second independently motivated non-physics positive
+   instance, plus a proof that three-patch contradictions alone are not enough.
 2. Define composition laws for
    [T26](tests/T26-d1-restriction-system.md) restriction morphisms. Check
    associativity, identity morphisms, obstruction preservation, and whether
@@ -165,6 +169,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T27](tests/T27-class-relative-bridge-audit.md): Class-Relative Bridge Audit - finite GU bridge audit with faithful and non-definable cases.
 - [T28](tests/T28-cap-theorem-bridge.md): CAP Theorem Bridge - distributed-systems bridge showing the same finite chaining obstruction as Nielsen-Ninomiya.
 - [T29](tests/T29-projection-obstruction-schema.md): Projection-Obstruction Schema - reusable finite schema extracted from T27 with boundary tests.
+- [T30](tests/T30-cross-domain-projection-obstruction-validation.md): Cross-Domain Projection-Obstruction Validation - hostile non-physics PO1 validation with one positive, two negative controls, and one non-definable boundary.
 
 ### New Open Problems
 

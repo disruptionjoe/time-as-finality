@@ -508,3 +508,52 @@ obstructions, CSP equivalence, holonic emergence, and categorical structure.
    theorem to a mathematician or logician unfamiliar with TaF. If they find the
    objects worth studying on their own terms, that is evidence of independent
    motivation (the one criterion not yet met in the Mathematical Independence Audit).
+
+## Phase 11: Post-TS-PERSONA-SPRINT-001 — Time-Series Dynamics as Derived Observables
+
+TS-PERSONA-SPRINT-001 (2026-06-18) applied five analytical lenses (dynamical
+systems, causal inference, physics-informed ML, symbolic dynamics, multiscale
+statistics) to synthetic holonic finality trajectories. Principal findings:
+
+**What the sprint established:**
+- The three proposed coordinates (DT, LOD, PG) are derived observables of the
+  TypedTransportNetwork constraint schedule, not new mathematical invariants.
+- All five lenses detect the same holonic dwell asymmetry; consistency reflects
+  the constraint design rather than independent confirmation of an emergent effect.
+- The symbolic dynamics lens (Rafael Cortez) produced no discriminating signal:
+  ordinal patterns and irreversibility are identical across all levels for binary
+  series with only 2 transitions. This is a null result, not an absence of finding.
+- Outcomes (B) and (C) of the four-outcome framework are best supported:
+  TS dynamics re-interpret H1 (transport) without adding new structure, and identify
+  a genuine boundary: H1 has no defined mechanism for upward recovery propagation.
+
+**Genuine gap identified (Outcome C):**
+Once a cross-level morphism accumulates non-empty forgotten_dims, the holonic
+level has no TypedTransportNetwork operation for detecting that micro-level
+obstruction has cleared. This is a structural incompleteness in H1, not a bug.
+Whether this gap warrants a new operation or is a deliberate modeling choice
+(holonic levels do not auto-update) is an open question.
+
+**What the sprint did NOT establish:**
+- DT/LOD/PG are not new D1 invariants.
+- The holonic persistence gap is not emergent from TTN topology; it is hardcoded
+  in the constraint schedule.
+- H1 (TypedTransportNetwork) is not strengthened in the sense of requiring additional
+  mathematical structure.
+
+**Open goals from the sprint:**
+
+MINI-GOAL-TS-002: Test whether PG (persistence gap) emerges from non-empty
+forgotten_dims without explicit constraint scheduling. Required: modify
+`_holonic_constraints()` to remove the hardcoded persistence window (steps 30-34)
+and test whether PG > 0 still appears via TTN topology alone. If yes, PG may
+be a new invariant. If no, it remains a derived observable.
+
+MINI-GOAL-TS-003: Identify under what TTN topologies (tree / dense / ring /
+linear) the holonic dwell asymmetry vanishes (PG=0). If PG=0 is achievable with
+non-empty forgotten_dims, the time-series analysis and T40 structural analysis
+diverge -- which would be a genuine discovery warranting a new test number.
+
+**No CLAIM-LEDGER.md update.** No claim changed status. The sprint confirmed
+consistency with existing claims and identified a known-unknown (upward recovery
+propagation) rather than overturning any existing result.

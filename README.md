@@ -198,6 +198,12 @@ python -m models.run_t40
 python -m models.run_t41
 ```
 
+## Run Explorations
+
+```bash
+python -m models.run_ts_persona_sprint
+```
+
 ## Citation / Reuse
 
 This is early-stage open research. If you use the framing, please attribute the project and link back to the repository.

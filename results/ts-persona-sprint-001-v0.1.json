@@ -1,0 +1,416 @@
+{
+  "central_question": "Do explicit time-series dynamics provide genuinely new mathematical structure, or are they derived observables of the existing TypedTransportNetwork?",
+  "persistence_gap_range": [
+    5,
+    15
+  ],
+  "holonic_dwell_dominates": false,
+  "micro_leads_onset_all": true,
+  "holonic_leads_offset_all": true,
+  "holonic_more_predictable_count": 5,
+  "holonic_more_irreversible_count": 5,
+  "cointegration_count": 5,
+  "coordinate_classifications": [
+    {
+      "name": "obstruction dwell time",
+      "symbol": "DT",
+      "classification": "derived_observable",
+      "rationale": "DT is computed from the per-step satisfiability sequence, which is fully determined by the constraint schedule embedded in the TTN morphism's forgotten_structure. A static TTN snapshot plus its time-indexed constraint generator already encodes DT; no new mathematical object is required. DT is a useful diagnostic shorthand but not a new invariant."
+    },
+    {
+      "name": "lag-onset distance",
+      "symbol": "LOD",
+      "classification": "derived_observable",
+      "rationale": "LOD measures the step difference between micro and holonic onset, which equals the lag parameter baked into the meso/holonic constraint generators. In this implementation LOD=0 for the canonical trajectory (micro onset t=10, holonic onset t=10: both triggered by the same constraint window). LOD is a read-off of the constraint schedule structure, not a property of the TTN topology itself."
+    },
+    {
+      "name": "persistence gap",
+      "symbol": "PG",
+      "classification": "derived_observable",
+      "rationale": "PG measures holonic obstruction steps beyond micro recovery. In the current implementation, PG is set explicitly by the holonic constraint window (steps 30-34 in the canonical case). It is therefore a direct read-off of the hardcoded constraint schedule, not a consequence of TTN topology or forgotten_dims. A genuine PG would emerge from the network topology without being explicitly scheduled  -  that test has not yet been run. Classification: derived_observable (current implementation); would become potentially new_invariant if PG were shown to follow from non-empty forgotten_dims without explicit scheduling."
+    }
+  ],
+  "h1_evidence_record": "Sprint ran 5 trajectory variants (canonical + 4 parameter sweeps). Persistence gap present in all variants (range 5\u201315 steps), but PG is set by the constraint schedule, not derived from TTN topology. Five lenses all detect the inter-level dwell asymmetry; they do not independently confirm that PG is a topological invariant. \n\nOUTCOME ASSESSMENT:\n(A) Strengthen H1: PARTIAL. The sprint confirms that TTN constraint schedules produce time-series signatures consistent with holonic lock-in. But the signatures are read-offs of the schedule, not emergent from forgotten_dims. (B) Re-interpret H1: YES. DT, LOD, PG translate static TTN admissibility into a per-step trajectory vocabulary. This is interpretive, not additive. (C) Identify H1 boundaries: YES. H1 does not yet include a mechanism for holonic recovery once forgotten_dims are non-empty  -  there is no TTN operation that propagates micro recovery upward. This gap is real. (D) Little explanatory power: NO. The personas consistently detect the same dwell asymmetry using independent methods, which is meaningful evidence that the phenomenon is real even if its cause is the constraint schedule.",
+  "investigation_verdict": "Outcomes (B) and (C) are best supported. DT/LOD/PG are derived observables of the existing TTN constraint structure, not new invariants. The sprint's principal finding is negative: these coordinates do not require extending the mathematics. However, the boundary identified under outcome (C)  -  H1 has no upward recovery propagation mechanism  -  is a genuine gap that may motivate a future extension. This should be framed as an open question in ROADMAP.md, not a claim in CLAIM-LEDGER.md.",
+  "follow_on_goals": [
+    "MINI-GOAL-TS-002: Test whether PG emerges from non-empty forgotten_dims WITHOUT explicit constraint scheduling. If yes, PG may be a new invariant; if no, it remains a derived observable. This test requires modifying the holonic constraint generator to remove the hardcoded persistence window.",
+    "MINI-GOAL-TS-003: Identify under what TTN topologies (tree / dense / ring) the holonic dwell asymmetry vanishes (PG=0). If PG=0 is achievable with non-empty forgotten_dims, the time-series analysis and T40 structural analysis diverge  -  which would be a genuine discovery."
+  ],
+  "trajectories": [
+    {
+      "name": "canonical",
+      "coordinates": [
+        {
+          "level": "micro",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "meso",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "holonic",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        },
+        {
+          "level": "joint",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        }
+      ],
+      "lag_onset_distance": 0,
+      "persistence_gap": 10,
+      "elena_voss": {
+        "micro_phase_transitions": 2,
+        "holonic_phase_transitions": 2,
+        "micro_max_dwell": 25,
+        "holonic_max_dwell": 25,
+        "micro_recurrence": 0.959,
+        "holonic_recurrence": 0.959,
+        "finding": "Holonic dynamics are not demonstrably simpler than micro in this configuration."
+      },
+      "marcus_hale": {
+        "onset_lag": 0,
+        "offset_lag": 10,
+        "micro_leads_onset": true,
+        "holonic_leads_offset": true,
+        "best_m_to_h_lag": 0,
+        "finding": "Micro leads holonic by 0 step(s) at onset. Holonic persists 10 step(s) beyond micro recovery. Asymmetric causal structure: micro->holonic for onset, holonic self-sustains at offset. "
+      },
+      "aisha_rahman": {
+        "micro_ar1_accuracy": 0.959,
+        "holonic_ar1_accuracy": 0.959,
+        "micro_compression": 0.06,
+        "holonic_compression": 0.06,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "finding": "Holonic AR(1) accuracy 0.959 vs micro 0.959. Holonic run-length ratio 0.060 vs micro 0.060 (lower = more compressible). Holonic entropy 1.000 bits vs micro 0.881 bits. Holonic is more predictable and compressible: consistent with lock-in. "
+      },
+      "rafael_cortez": {
+        "micro_perm_entropy": 0.287,
+        "holonic_perm_entropy": 0.287,
+        "micro_irreversibility": 0.0,
+        "holonic_irreversibility": 0.0,
+        "holonic_less_random": true,
+        "holonic_more_irreversible": true,
+        "finding": "Holonic permutation entropy 0.287 vs micro 0.287. Holonic irreversibility 0.000 vs micro 0.000. Holonic trajectory is less random and more irreversible: ordinal pattern distribution shows asymmetric recovery. "
+      },
+      "lena_kowalski": {
+        "micro_obstruction": 0.3,
+        "holonic_obstruction": 0.5,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "r_micro_holonic": 0.655,
+        "cointegration": true,
+        "finding": "Obstruction fractions  -  micro:0.30, meso:0.30, holonic:0.50. Entropies  -  micro:0.881, meso:0.881, holonic:1.000 bits. Cross-level correlations (lag 0): \u03bc-mes=0.524, \u03bc-hol=0.655, mes-hol=0.655. Dominant level by obstruction fraction: holonic. Cointegration detected: all level pairs move together at lag 0. Holonic has highest obstruction fraction, lowest entropy: holonic is the most stable and most obstructed level simultaneously. "
+      }
+    },
+    {
+      "name": "early_stress",
+      "coordinates": [
+        {
+          "level": "micro",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "meso",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "holonic",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        },
+        {
+          "level": "joint",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        }
+      ],
+      "lag_onset_distance": 0,
+      "persistence_gap": 10,
+      "elena_voss": {
+        "micro_phase_transitions": 2,
+        "holonic_phase_transitions": 2,
+        "micro_max_dwell": 30,
+        "holonic_max_dwell": 25,
+        "micro_recurrence": 0.959,
+        "holonic_recurrence": 0.959,
+        "finding": "Holonic dynamics are not demonstrably simpler than micro in this configuration."
+      },
+      "marcus_hale": {
+        "onset_lag": 0,
+        "offset_lag": 10,
+        "micro_leads_onset": true,
+        "holonic_leads_offset": true,
+        "best_m_to_h_lag": 7,
+        "finding": "Micro leads holonic by 0 step(s) at onset. Holonic persists 10 step(s) beyond micro recovery. Asymmetric causal structure: micro->holonic for onset, holonic self-sustains at offset. "
+      },
+      "aisha_rahman": {
+        "micro_ar1_accuracy": 0.959,
+        "holonic_ar1_accuracy": 0.959,
+        "micro_compression": 0.06,
+        "holonic_compression": 0.06,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "finding": "Holonic AR(1) accuracy 0.959 vs micro 0.959. Holonic run-length ratio 0.060 vs micro 0.060 (lower = more compressible). Holonic entropy 1.000 bits vs micro 0.881 bits. Holonic is more predictable and compressible: consistent with lock-in. "
+      },
+      "rafael_cortez": {
+        "micro_perm_entropy": 0.287,
+        "holonic_perm_entropy": 0.287,
+        "micro_irreversibility": 0.0,
+        "holonic_irreversibility": 0.0,
+        "holonic_less_random": true,
+        "holonic_more_irreversible": true,
+        "finding": "Holonic permutation entropy 0.287 vs micro 0.287. Holonic irreversibility 0.000 vs micro 0.000. Holonic trajectory is less random and more irreversible: ordinal pattern distribution shows asymmetric recovery. "
+      },
+      "lena_kowalski": {
+        "micro_obstruction": 0.3,
+        "holonic_obstruction": 0.5,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "r_micro_holonic": 0.655,
+        "cointegration": true,
+        "finding": "Obstruction fractions  -  micro:0.30, meso:0.30, holonic:0.50. Entropies  -  micro:0.881, meso:0.881, holonic:1.000 bits. Cross-level correlations (lag 0): \u03bc-mes=0.524, \u03bc-hol=0.655, mes-hol=0.655. Dominant level by obstruction fraction: holonic. Cointegration detected: all level pairs move together at lag 0. Holonic has highest obstruction fraction, lowest entropy: holonic is the most stable and most obstructed level simultaneously. "
+      }
+    },
+    {
+      "name": "late_stress",
+      "coordinates": [
+        {
+          "level": "micro",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "meso",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "holonic",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        },
+        {
+          "level": "joint",
+          "dwell_time_mean": 25.0,
+          "dwell_time_max": 25,
+          "obstruction_fraction": 0.5
+        }
+      ],
+      "lag_onset_distance": 0,
+      "persistence_gap": 10,
+      "elena_voss": {
+        "micro_phase_transitions": 2,
+        "holonic_phase_transitions": 2,
+        "micro_max_dwell": 20,
+        "holonic_max_dwell": 25,
+        "micro_recurrence": 0.959,
+        "holonic_recurrence": 0.959,
+        "finding": "Holonic dynamics are not demonstrably simpler than micro in this configuration."
+      },
+      "marcus_hale": {
+        "onset_lag": 0,
+        "offset_lag": 10,
+        "micro_leads_onset": true,
+        "holonic_leads_offset": true,
+        "best_m_to_h_lag": 0,
+        "finding": "Micro leads holonic by 0 step(s) at onset. Holonic persists 10 step(s) beyond micro recovery. Asymmetric causal structure: micro->holonic for onset, holonic self-sustains at offset. "
+      },
+      "aisha_rahman": {
+        "micro_ar1_accuracy": 0.959,
+        "holonic_ar1_accuracy": 0.959,
+        "micro_compression": 0.06,
+        "holonic_compression": 0.06,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "finding": "Holonic AR(1) accuracy 0.959 vs micro 0.959. Holonic run-length ratio 0.060 vs micro 0.060 (lower = more compressible). Holonic entropy 1.000 bits vs micro 0.881 bits. Holonic is more predictable and compressible: consistent with lock-in. "
+      },
+      "rafael_cortez": {
+        "micro_perm_entropy": 0.287,
+        "holonic_perm_entropy": 0.287,
+        "micro_irreversibility": 0.0,
+        "holonic_irreversibility": 0.0,
+        "holonic_less_random": true,
+        "holonic_more_irreversible": true,
+        "finding": "Holonic permutation entropy 0.287 vs micro 0.287. Holonic irreversibility 0.000 vs micro 0.000. Holonic trajectory is less random and more irreversible: ordinal pattern distribution shows asymmetric recovery. "
+      },
+      "lena_kowalski": {
+        "micro_obstruction": 0.3,
+        "holonic_obstruction": 0.5,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 1.0,
+        "r_micro_holonic": 0.655,
+        "cointegration": true,
+        "finding": "Obstruction fractions  -  micro:0.30, meso:0.30, holonic:0.50. Entropies  -  micro:0.881, meso:0.881, holonic:1.000 bits. Cross-level correlations (lag 0): \u03bc-mes=0.524, \u03bc-hol=0.655, mes-hol=0.655. Dominant level by obstruction fraction: holonic. Cointegration detected: all level pairs move together at lag 0. Holonic has highest obstruction fraction, lowest entropy: holonic is the most stable and most obstructed level simultaneously. "
+      }
+    },
+    {
+      "name": "large_gap",
+      "coordinates": [
+        {
+          "level": "micro",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "meso",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "holonic",
+          "dwell_time_mean": 30.0,
+          "dwell_time_max": 30,
+          "obstruction_fraction": 0.6
+        },
+        {
+          "level": "joint",
+          "dwell_time_mean": 30.0,
+          "dwell_time_max": 30,
+          "obstruction_fraction": 0.6
+        }
+      ],
+      "lag_onset_distance": 0,
+      "persistence_gap": 15,
+      "elena_voss": {
+        "micro_phase_transitions": 2,
+        "holonic_phase_transitions": 2,
+        "micro_max_dwell": 25,
+        "holonic_max_dwell": 30,
+        "micro_recurrence": 0.959,
+        "holonic_recurrence": 0.959,
+        "finding": "Holonic dynamics are not demonstrably simpler than micro in this configuration."
+      },
+      "marcus_hale": {
+        "onset_lag": 0,
+        "offset_lag": 15,
+        "micro_leads_onset": true,
+        "holonic_leads_offset": true,
+        "best_m_to_h_lag": 0,
+        "finding": "Micro leads holonic by 0 step(s) at onset. Holonic persists 15 step(s) beyond micro recovery. Asymmetric causal structure: micro->holonic for onset, holonic self-sustains at offset. "
+      },
+      "aisha_rahman": {
+        "micro_ar1_accuracy": 0.959,
+        "holonic_ar1_accuracy": 0.959,
+        "micro_compression": 0.06,
+        "holonic_compression": 0.06,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 0.971,
+        "finding": "Holonic AR(1) accuracy 0.959 vs micro 0.959. Holonic run-length ratio 0.060 vs micro 0.060 (lower = more compressible). Holonic entropy 0.971 bits vs micro 0.881 bits. Holonic is more predictable and compressible: consistent with lock-in. "
+      },
+      "rafael_cortez": {
+        "micro_perm_entropy": 0.287,
+        "holonic_perm_entropy": 0.287,
+        "micro_irreversibility": 0.0,
+        "holonic_irreversibility": 0.0,
+        "holonic_less_random": true,
+        "holonic_more_irreversible": true,
+        "finding": "Holonic permutation entropy 0.287 vs micro 0.287. Holonic irreversibility 0.000 vs micro 0.000. Holonic trajectory is less random and more irreversible: ordinal pattern distribution shows asymmetric recovery. "
+      },
+      "lena_kowalski": {
+        "micro_obstruction": 0.3,
+        "holonic_obstruction": 0.6,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 0.971,
+        "r_micro_holonic": 0.535,
+        "cointegration": true,
+        "finding": "Obstruction fractions  -  micro:0.30, meso:0.30, holonic:0.60. Entropies  -  micro:0.881, meso:0.881, holonic:0.971 bits. Cross-level correlations (lag 0): \u03bc-mes=0.524, \u03bc-hol=0.535, mes-hol=0.535. Dominant level by obstruction fraction: holonic. Cointegration detected: all level pairs move together at lag 0. Holonic has highest obstruction fraction, lowest entropy: holonic is the most stable and most obstructed level simultaneously. "
+      }
+    },
+    {
+      "name": "zero_gap",
+      "coordinates": [
+        {
+          "level": "micro",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "meso",
+          "dwell_time_mean": 15.0,
+          "dwell_time_max": 15,
+          "obstruction_fraction": 0.3
+        },
+        {
+          "level": "holonic",
+          "dwell_time_mean": 20.0,
+          "dwell_time_max": 20,
+          "obstruction_fraction": 0.4
+        },
+        {
+          "level": "joint",
+          "dwell_time_mean": 20.0,
+          "dwell_time_max": 20,
+          "obstruction_fraction": 0.4
+        }
+      ],
+      "lag_onset_distance": 0,
+      "persistence_gap": 5,
+      "elena_voss": {
+        "micro_phase_transitions": 2,
+        "holonic_phase_transitions": 2,
+        "micro_max_dwell": 25,
+        "holonic_max_dwell": 20,
+        "micro_recurrence": 0.959,
+        "holonic_recurrence": 0.959,
+        "finding": "Holonic dynamics are not demonstrably simpler than micro in this configuration."
+      },
+      "marcus_hale": {
+        "onset_lag": 0,
+        "offset_lag": 5,
+        "micro_leads_onset": true,
+        "holonic_leads_offset": true,
+        "best_m_to_h_lag": 0,
+        "finding": "Micro leads holonic by 0 step(s) at onset. Holonic persists 5 step(s) beyond micro recovery. Asymmetric causal structure: micro->holonic for onset, holonic self-sustains at offset. "
+      },
+      "aisha_rahman": {
+        "micro_ar1_accuracy": 0.959,
+        "holonic_ar1_accuracy": 0.959,
+        "micro_compression": 0.06,
+        "holonic_compression": 0.06,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 0.971,
+        "finding": "Holonic AR(1) accuracy 0.959 vs micro 0.959. Holonic run-length ratio 0.060 vs micro 0.060 (lower = more compressible). Holonic entropy 0.971 bits vs micro 0.881 bits. Holonic is more predictable and compressible: consistent with lock-in. "
+      },
+      "rafael_cortez": {
+        "micro_perm_entropy": 0.287,
+        "holonic_perm_entropy": 0.287,
+        "micro_irreversibility": 0.0,
+        "holonic_irreversibility": 0.0,
+        "holonic_less_random": true,
+        "holonic_more_irreversible": true,
+        "finding": "Holonic permutation entropy 0.287 vs micro 0.287. Holonic irreversibility 0.000 vs micro 0.000. Holonic trajectory is less random and more irreversible: ordinal pattern distribution shows asymmetric recovery. "
+      },
+      "lena_kowalski": {
+        "micro_obstruction": 0.3,
+        "holonic_obstruction": 0.4,
+        "micro_entropy": 0.881,
+        "holonic_entropy": 0.971,
+        "r_micro_holonic": 0.802,
+        "cointegration": true,
+        "finding": "Obstruction fractions  -  micro:0.30, meso:0.30, holonic:0.40. Entropies  -  micro:0.881, meso:0.881, holonic:0.971 bits. Cross-level correlations (lag 0): \u03bc-mes=0.524, \u03bc-hol=0.802, mes-hol=0.802. Dominant level by obstruction fraction: holonic. Cointegration detected: all level pairs move together at lag 0. Holonic has highest obstruction fraction, lowest entropy: holonic is the most stable and most obstructed level simultaneously. "
+      }
+    }
+  ]
+}

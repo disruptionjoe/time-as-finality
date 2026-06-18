@@ -101,6 +101,26 @@ See [H7](claims/H7-finality-induced-direction.md),
 [T18](tests/T18-finality-direction-theorem.md), and
 [Arrow of Time as Constructor Theorem](open-problems/arrow-of-time-as-constructor-theorem.md).
 
+## Known Boundary: TypedTransportNetwork Recovery Propagation
+
+H1 (TypedTransportNetwork as the primitive transport formalism) has a known
+structural boundary identified by TS-PERSONA-SPRINT-001 (2026-06-18):
+
+Once a cross-level D1RestrictionMorphism accumulates non-empty forgotten_dims,
+the holonic level has no defined TTN operation for detecting that lower-level
+obstruction has cleared. The formalism propagates obstruction downward (from
+the constraint schedule) but has no upward recovery propagation mechanism.
+
+This is a structural incompleteness, not a refutation of H1. Whether it
+requires a new mathematical operation or is a deliberate modeling choice is
+an open question. The boundary does not affect any current CLAIM-LEDGER.md
+entry; it is documented here because it is a genuine limit of the current
+formalism.
+
+See MINI-GOAL-TS-002 in ROADMAP.md for the test that would determine whether
+this boundary is intrinsic to TTN topology or an artifact of the constraint
+schedule design.
+
 ## Failure Conditions
 
 The project should weaken or reject its strongest claims if:

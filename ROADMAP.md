@@ -387,3 +387,40 @@ This is an analogy, not a claimed reduction. The evidence bar for
 theorem-transfer (T20 standard: the proof's typed assumptions must be
 preserved under the dictionary) has not been met. If a formal connection is
 pursued, it should be held to that standard.
+
+## Phase 8: Post-T38 — Minimal Formalism Established, Composition Law Pending
+
+T38 establishes the minimal justified transport formalism: H1+ (TypedTransportNetwork
++ CompressionRecord + EmergenceRecord). Five scenarios (compression, emergence,
+level-skip, simultaneous channels, path-dependence) demonstrate that ten core
+transport questions are answerable without graph-of-graphs (H2) or
+bundle/presheaf/category (H3) structure.
+
+Two new annotation objects close the remaining gaps:
+- `CompressionRecord`: tracks many-to-one compression ratio and retained invariants.
+- `EmergenceRecord`: tracks structure-creation at the target (orthogonal to PO1's
+  obstruction-creation).
+
+### Immediate next steps
+
+1. **Prove the composition law (associativity).** This is the highest-priority
+   open obligation. If associativity holds, H1+ becomes a proper category fragment
+   and H3 (category) becomes a consequence rather than a competitor. If associativity
+   fails, that failure is the first positive evidence for H3.
+
+2. **Network-propagation audit** (pre-T39 research note). Before building further,
+   determine whether typed multiscale transport reduces to existing multilayer network
+   mathematics (Kivelä et al., 2014), hypergraph coloring, graph pooling, or message
+   passing — or whether the added value is specifically typed obstruction semantics.
+   The audit should compare terminology and test whether PO1 admissibility conditions
+   fire on known multilayer-network results. See addendum in
+   [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md).
+
+3. **Demonstrate information-inequivalent level-skip.** The T38 level-skip test shows
+   verdict-equivalence. A follow-up should build a network where the intermediate layer
+   forgets additional structure — demonstrating the information-inequivalent case that
+   is only detectable by TypedTransportNetwork, not by D1RestrictionSystem alone.
+
+4. **Apply discovery engine (T35) to TypedTransportNetworks.** Extend the T35
+   generator to enumerate networks and compare their forgotten_structure signatures
+   against the diamond, spectre, and T38 compression patterns.

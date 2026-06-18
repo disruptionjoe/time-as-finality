@@ -47,6 +47,14 @@ on TaF's temporal or physical claims:
 - `TypedTransportNetwork`: a finite directed graph of NetworkLayer objects
   (D1RestrictionSystems) connected by NetworkTransport edges (typed
   D1RestrictionMorphisms with explicit forgotten_structure declarations). T37.
+- `CompressionRecord`: an annotation object recording many-to-one site-count
+  reduction: compression ratio, retained aggregate invariants, lost detail,
+  and aggregate rule. Distinct from forgotten_structure: forgotten_structure
+  declares what is lost; CompressionRecord additionally declares what aggregate
+  survives and at what ratio. T38.
+- `EmergenceRecord`: an annotation object recording global structure at the
+  target that was not forced at the source. Orthogonal to PO1 (which records
+  obstruction-creation): EmergenceRecord records structure-creation. T38.
 
 **Status: PRESENT.** These objects can be defined and studied without reference
 to time, observers, or physical finality.
@@ -80,6 +88,7 @@ have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
 | PO1 Chain Theorem (T34) | Earned | Endpoint admissibility is independent of whether any source-to-intermediate prefix pair is admissible. |
 | Compression-finality separation (T36) | Earned | Compressibility of the trace distribution and trace_survival_fraction are correlated but empirically distinct; neither is a function of the other. |
 | Path-Dependent Admissibility (T37) | Earned | In a TypedTransportNetwork, two simple paths between the same source and target layer yield different PO1 verdicts when they accumulate different forgotten_structure; AC5 is the only path-varying admissibility condition. |
+| Minimal Transport Theorem (T38) | Earned | TypedTransportNetwork + CompressionRecord + EmergenceRecord (H1+) is the smallest currently justified formalism for ten core transport questions. H0 covers 3/10; H1 covers 8/10; H2 and H3 are not yet required. |
 
 **Status: PRESENT.** A theorem ladder exists and is growing.
 
@@ -168,3 +177,4 @@ declared from within the research program alone.
 | --- | --- | --- |
 | 2026-06-18 | v0.1 | Initial audit. Five criteria present; independent motivation unknown. Post T36 state. |
 | 2026-06-18 | v0.2 | T37 adds TypedTransportNetwork as a new primitive. Path-dependent admissibility theorem earned. Composition law (associativity) still open. |
+| 2026-06-18 | v0.3 | T38 adds CompressionRecord and EmergenceRecord as minimal annotation primitives. Minimal Transport Theorem earned: H1+ covers all ten core transport questions. H2 and H3 not yet required. |

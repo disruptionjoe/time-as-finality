@@ -36,6 +36,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T35](tests/T35-projection-obstruction-discovery-engine.md) | Projection-obstruction discovery engine | PO1, T31, T33, T34 | implemented: bounded finite exploration engine with generated positives, boundaries, and counterexamples |
 | [T36](tests/T36-compression-finality-crosswalk.md) | Compression-finality crosswalk | D1, C1, T9 | implemented: finality≠compressibility confirmed; Rule 30 and Rule 0 counterexamples; correlations partial (−0.745, +0.631) |
 | [T37](tests/T37-typed-transport-network.md) | Typed transport network | PO1, T26, T31, T34 | implemented: path-dependent admissibility witnessed; diamond network shows same (source, target) with different paths giving different PO1 verdicts (AC5 varies by path) |
+| [T38](tests/T38-minimal-multiscale-transport.md) | Minimal multiscale transport | H1+, T26, T31, T37 | implemented: H0 covers 3/10 questions; H1 covers 8/10; H1+ (TypedTransportNetwork + CompressionRecord + EmergenceRecord) covers all 10; H2 and H3 not required |
 
 ## Minimum Compatibility Constraints
 

@@ -92,6 +92,19 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > compression opportunities — but finality and compressibility are empirically
 > distinct. Rule 30 (high finality, poor compressibility) and Rule 0 (zero
 > finality, perfect compressibility) are the falsifying counterexamples.
+>
+> **Minimal transport update:** [T38](tests/T38-minimal-multiscale-transport.md)
+> asks what the smallest mathematical object is capable of expressing ten core
+> transport questions (preservation, forgetting, compression, emergence,
+> level-skip, simultaneous channels, composability, path equivalence, path
+> difference). Result: H1+ — TypedTransportNetwork extended with two annotation
+> objects — is the minimum justified formalism. `CompressionRecord` tracks
+> many-to-one site-count reduction, compression ratio, and retained aggregate
+> invariants. `EmergenceRecord` tracks global structure at the target that was
+> not forced at the source. These are orthogonal to each other and to PO1:
+> obstruction-creation, compression, and structure-creation are distinct
+> phenomena requiring distinct records. H2 (graph-of-graphs) and H3
+> (bundle/presheaf/category) are not yet required.
 
 ## Primitive Inventory
 

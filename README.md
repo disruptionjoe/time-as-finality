@@ -106,6 +106,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     connected by typed morphisms; path-dependent admissibility witnessed.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
+- [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md)
+  - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
+    + CompressionRecord + EmergenceRecord) is the smallest justified formalism;
+    network-propagation audit proposed as next step.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -178,6 +182,7 @@ python -m models.run_t34
 python -m models.run_t35
 python -m models.run_t36
 python -m models.run_t37
+python -m models.run_t38
 ```
 
 ## Citation / Reuse

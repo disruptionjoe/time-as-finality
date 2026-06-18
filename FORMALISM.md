@@ -46,6 +46,15 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > projection maps, global-section checks, and restriction morphisms. Scalar
 > and vector D1 are now projections from this object.
 >
+> **Chained-projection update:** [T34](tests/T34-po1-chained-projection.md)
+> tests PO1 across chains of D1RestrictionMorphisms. The PO1 Chain Theorem
+> holds: a chained projection is a PO1 instance when its endpoint pair
+> satisfies AC1-AC7, independent of whether any source→intermediate pair in
+> the chain is a PO1 instance. Emergent obstruction (only visible at the full
+> chain endpoint) is confirmed via the Spectre timing-side-channel model.
+> Absorbed obstruction (intermediate PO1 case resolved before endpoint) is the
+> negative control.
+>
 > **Projection-obstruction update:** [T29](tests/T29-projection-obstruction-schema.md)
 > formalizes the T27 stretch result as a finite class-relative schema:
 > definable projection from a globally satisfiable richer restriction system

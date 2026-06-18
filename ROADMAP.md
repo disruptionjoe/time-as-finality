@@ -63,6 +63,11 @@
   witnesses, three finite counterexamples, and Principle P5 recommendation.
   Best hypothesis H3: both IPT and RMT required; AC5-naming is the only
   remaining non-derivable condition.
+- **Completed v0.1:** implement
+  [T34](tests/T34-po1-chained-projection.md) as the chained projection
+  analysis: Spectre-class emergent obstruction (endpoint PO1, no partial prefix
+  is PO1), stepwise propagation, and absorbed obstruction (intermediate PO1
+  case resolved before endpoint). PO1 Chain Theorem derived.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -103,7 +108,14 @@
    obligation inside the PO1 schema, and add a proof that resource decrease
    (RMT) alone does not suffice — manufactured obstruction without named
    mechanism remains a risk for overcounting.
-2. Define composition laws for
+2. Define a formal PO1 chain composition theorem. T34 confirms the PO1
+   Chain Theorem (endpoint pair admissibility is independent of partial-prefix
+   admissibility) and demonstrates emergent, stepwise, and absorbed obstruction
+   patterns. The next target: prove that given a chain f1∘f2∘...∘fn: L0→Ln,
+   the composed projection is a PO1 instance iff (L0, Ln) satisfies AC1-AC7,
+   with a cumulative AC5 rule that accumulates forgotten structure across all
+   steps. Also formalize non-monotone optimizer morphisms within T26.
+3. Define composition laws for
    [T26](tests/T26-d1-restriction-system.md) restriction morphisms. Check
    associativity, identity morphisms, obstruction preservation, and whether
    failed morphisms compose as blocked transformations.

@@ -96,6 +96,24 @@ definability, AC6 and AC7 are independent gluing-polarity requirements, and
 AC5 is the one non-intrinsic guard because it depends on named forgotten
 structure.
 
+T34 extends PO1 to chains of projections across the code-to-transistors
+compilation chain. Three chain shapes are confirmed:
+
+1. Emergent obstruction (Spectre timing side channel): the endpoint pair
+   (source_code, microarchitecture) is a PO1 instance, but no source→intermediate
+   pair is. The finite 3-patch gluing obstruction is invisible at every strict
+   prefix of the chain and only appears at the full endpoint level.
+2. Stepwise propagation: obstruction appears at an intermediate step (assembly)
+   and the endpoint pair is also a PO1 instance.
+3. Absorbed obstruction: obstruction appears at an intermediate step
+   (unoptimized_IR) but is resolved by dead-code elimination; the endpoint pair
+   is NOT a PO1 instance. This is the negative control.
+
+T34 derives the PO1 Chain Theorem: a chained projection is a PO1 instance when
+its endpoint pair satisfies AC1-AC7, independent of whether any partial prefix
+pair is a PO1 instance. Emergent obstruction is the case of greatest interest:
+the no-go is only visible from the chain's source to its full target.
+
 T33 derives conditions from two deeper frameworks and evaluates H0-H5:
 
 | Framework | Derives |
@@ -146,3 +164,4 @@ does not require obstruction (AC6).
 - [T31: PO1 Admissibility Conditions](../tests/T31-po1-admissibility-conditions.md)
 - [T32: PO1 Admissibility Derivation](../tests/T32-admissibility-derivation.md)
 - [T33: PO1 Foundational Derivation](../tests/T33-po1-foundational-derivation.md)
+- [T34: Chained Projection Analysis](../tests/T34-po1-chained-projection.md)

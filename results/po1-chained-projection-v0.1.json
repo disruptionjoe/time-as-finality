@@ -1,0 +1,243 @@
+{
+  "spectre_chain": {
+    "chain_name": "spectre_timing_chain",
+    "description": "Spectre-class timing side channel: type-safe source code projects to a microarchitecture where speculative execution creates a finite gluing obstruction. No partial chain from source reveals the obstruction.",
+    "abstraction_levels": [
+      "source_code",
+      "compiler_IR",
+      "assembly",
+      "machine_code",
+      "microarchitecture"
+    ],
+    "step_count": 4,
+    "steps": [
+      {
+        "step_name": "source_to_IR",
+        "source_level": "source_code",
+        "target_level": "compiler_IR",
+        "forgotten_at_this_step": [
+          "type_safety_guarantee"
+        ],
+        "target_obstructed": false
+      },
+      {
+        "step_name": "IR_to_assembly",
+        "source_level": "compiler_IR",
+        "target_level": "assembly",
+        "forgotten_at_this_step": [
+          "control_flow_isolation"
+        ],
+        "target_obstructed": false
+      },
+      {
+        "step_name": "assembly_to_machine",
+        "source_level": "assembly",
+        "target_level": "machine_code",
+        "forgotten_at_this_step": [
+          "memory_access_abstraction"
+        ],
+        "target_obstructed": false
+      },
+      {
+        "step_name": "machine_to_microarch",
+        "source_level": "machine_code",
+        "target_level": "microarchitecture",
+        "forgotten_at_this_step": [
+          "execution_order_guarantee"
+        ],
+        "target_obstructed": true
+      }
+    ],
+    "checkpoint_pairs": [
+      {
+        "intermediate_level": "compiler_IR",
+        "verdict": "non_admissible_no_new_obstruction",
+        "is_po1": false,
+        "ac6_restricted_obstructed": false,
+        "ac5_structure_forgotten": true
+      },
+      {
+        "intermediate_level": "assembly",
+        "verdict": "non_admissible_no_new_obstruction",
+        "is_po1": false,
+        "ac6_restricted_obstructed": false,
+        "ac5_structure_forgotten": true
+      },
+      {
+        "intermediate_level": "machine_code",
+        "verdict": "non_admissible_no_new_obstruction",
+        "is_po1": false,
+        "ac6_restricted_obstructed": false,
+        "ac5_structure_forgotten": true
+      }
+    ],
+    "admissible_checkpoint_pairs": [],
+    "obstruction_first_appears_at": "microarchitecture",
+    "emergent_obstruction": true,
+    "stepwise_propagation": false,
+    "absorbed_obstruction": false,
+    "endpoint_verdict": "fully_admissible",
+    "endpoint_ac_vector": {
+      "AC1": true,
+      "AC2": true,
+      "AC3": true,
+      "AC4": true,
+      "AC5": true,
+      "AC6": true,
+      "AC7": true
+    },
+    "chain_po1_conclusion": "EMERGENT OBSTRUCTION: the endpoint pair is a PO1 instance, but no source\u2192intermediate pair is. Obstruction only becomes visible at 'microarchitecture'."
+  },
+  "stepwise_chain": {
+    "chain_name": "stepwise_obstruction_chain",
+    "description": "Stepwise propagation: register coloring conflict appears at IR\u2192assembly step and propagates to machine code. Both source\u2192assembly and source\u2192machine_code are PO1 instances.",
+    "abstraction_levels": [
+      "source_code",
+      "compiler_IR",
+      "assembly",
+      "machine_code"
+    ],
+    "step_count": 3,
+    "steps": [
+      {
+        "step_name": "source_to_IR_step",
+        "source_level": "source_code",
+        "target_level": "compiler_IR",
+        "forgotten_at_this_step": [
+          "abstract_control_flow"
+        ],
+        "target_obstructed": false
+      },
+      {
+        "step_name": "IR_to_assembly_step",
+        "source_level": "compiler_IR",
+        "target_level": "assembly",
+        "forgotten_at_this_step": [
+          "register_allocation_freedom"
+        ],
+        "target_obstructed": true
+      },
+      {
+        "step_name": "assembly_to_machine_step",
+        "source_level": "assembly",
+        "target_level": "machine_code",
+        "forgotten_at_this_step": [
+          "instruction_encoding_freedom"
+        ],
+        "target_obstructed": true
+      }
+    ],
+    "checkpoint_pairs": [
+      {
+        "intermediate_level": "compiler_IR",
+        "verdict": "non_admissible_no_new_obstruction",
+        "is_po1": false,
+        "ac6_restricted_obstructed": false,
+        "ac5_structure_forgotten": true
+      },
+      {
+        "intermediate_level": "assembly",
+        "verdict": "fully_admissible",
+        "is_po1": true,
+        "ac6_restricted_obstructed": true,
+        "ac5_structure_forgotten": true
+      }
+    ],
+    "admissible_checkpoint_pairs": [
+      "assembly"
+    ],
+    "obstruction_first_appears_at": "assembly",
+    "emergent_obstruction": false,
+    "stepwise_propagation": true,
+    "absorbed_obstruction": false,
+    "endpoint_verdict": "fully_admissible",
+    "endpoint_ac_vector": {
+      "AC1": true,
+      "AC2": true,
+      "AC3": true,
+      "AC4": true,
+      "AC5": true,
+      "AC6": true,
+      "AC7": true
+    },
+    "chain_po1_conclusion": "STEPWISE PROPAGATION: obstruction appears at 'assembly' and the endpoint pair is a PO1 instance. Admissible source\u2192intermediate pairs: ['assembly']."
+  },
+  "absorbed_chain": {
+    "chain_name": "absorbed_obstruction_chain",
+    "description": "Absorbed obstruction: phi-node contradiction at IR level is resolved by dead-code elimination before assembly. The endpoint is NOT a PO1 instance.",
+    "abstraction_levels": [
+      "source_code",
+      "unoptimized_IR",
+      "optimized_IR",
+      "assembly"
+    ],
+    "step_count": 3,
+    "steps": [
+      {
+        "step_name": "source_to_IR_absorb",
+        "source_level": "source_code",
+        "target_level": "unoptimized_IR",
+        "forgotten_at_this_step": [
+          "dead_branch_elimination"
+        ],
+        "target_obstructed": true
+      },
+      {
+        "step_name": "IR_to_optIR_absorb",
+        "source_level": "unoptimized_IR",
+        "target_level": "optimized_IR",
+        "forgotten_at_this_step": [],
+        "target_obstructed": false
+      },
+      {
+        "step_name": "optIR_to_assembly_absorb",
+        "source_level": "optimized_IR",
+        "target_level": "assembly",
+        "forgotten_at_this_step": [
+          "optimization_annotations"
+        ],
+        "target_obstructed": false
+      }
+    ],
+    "checkpoint_pairs": [
+      {
+        "intermediate_level": "unoptimized_IR",
+        "verdict": "fully_admissible",
+        "is_po1": true,
+        "ac6_restricted_obstructed": true,
+        "ac5_structure_forgotten": true
+      },
+      {
+        "intermediate_level": "optimized_IR",
+        "verdict": "non_admissible_no_new_obstruction",
+        "is_po1": false,
+        "ac6_restricted_obstructed": false,
+        "ac5_structure_forgotten": true
+      }
+    ],
+    "admissible_checkpoint_pairs": [
+      "unoptimized_IR"
+    ],
+    "obstruction_first_appears_at": "unoptimized_IR",
+    "emergent_obstruction": false,
+    "stepwise_propagation": false,
+    "absorbed_obstruction": true,
+    "endpoint_verdict": "non_admissible_no_new_obstruction",
+    "endpoint_ac_vector": {
+      "AC1": true,
+      "AC2": true,
+      "AC3": true,
+      "AC4": true,
+      "AC5": true,
+      "AC6": false,
+      "AC7": true
+    },
+    "chain_po1_conclusion": "ABSORBED OBSTRUCTION: obstruction appeared at 'unoptimized_IR' but was resolved before the endpoint. The endpoint pair is NOT a PO1 instance (AC6=False at endpoint)."
+  },
+  "emergent_obstruction_confirmed": true,
+  "absorbed_obstruction_confirmed": true,
+  "stepwise_propagation_confirmed": true,
+  "po1_chain_theorem": "PO1 CHAIN THEOREM (T34): A chained projection is a PO1 instance when its endpoint pair satisfies AC1-AC7, independent of whether any source\u2192intermediate pair in the chain is a PO1 instance. EMERGENT CASE: the obstruction at the endpoint is invisible when looking at source\u2192Li for any intermediate Li; only the full chain endpoint reveals the PO1 instance (Spectre case). ABSORBED CASE: a PO1 instance visible at an intermediate level can be resolved before the endpoint; the chain theorem does not guarantee PO1 persists to the endpoint.",
+  "boundary": "T34 boundary: the chain theorem characterizes the endpoint pair only. It does not localize which step in the chain is responsible for the obstruction. The Spectre case models the timing side channel as a finite 3-patch local-to-global constraint contradiction. Physical Spectre attacks involve probabilistic timing and micro-op semantics not captured here. The optimized_IR level in the absorbed case has a higher accessible_support than the input IR \u2014 this models the optimizer recovering structure \u2014 which is unusual for a restriction projection and marks a boundary of the current T26 morphism formalism.",
+  "recommendation": "Extend PO1 with a formal chain composition theorem: given a chain f1\u2218f2\u2218...\u2218fn: L0\u2192Ln where each fi is a D1RestrictionMorphism, the composed projection is a PO1 instance iff (L0, Ln) is admissible. AC5 (named forgetting) should accumulate across steps: the endpoint forgotten_structure should include all structure lost at any step. This is modeled in the Spectre case and is the natural next target for a composition law (Best First Contribution #2 in ROADMAP.md)."
+}

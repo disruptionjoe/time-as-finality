@@ -83,6 +83,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - derivation audit showing AC4 follows from AC6 and PO1 compresses to a four-principle basis.
 - [TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md)
   - IPT/RMT hypothesis matrix (H0-H5); H3 best supported; AC5-naming recommended as Principle P5.
+- [TECHNICAL-REPORT-po1-chained-projection-v0.1.md](TECHNICAL-REPORT-po1-chained-projection-v0.1.md)
+  - Chained projection analysis with emergent obstruction (Spectre), stepwise
+    propagation, and absorbed obstruction across the code-to-transistors chain.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -153,6 +156,7 @@ python -m models.run_t30
 python -m models.run_t31
 python -m models.run_t32
 python -m models.run_t33
+python -m models.run_t34
 ```
 
 ## Citation / Reuse

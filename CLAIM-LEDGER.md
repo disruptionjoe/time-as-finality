@@ -219,3 +219,25 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   derivable from RMT, (2) AC3 not derivable from RMT, (3) AC6 not required by IPT.
 - All four T31 positive cases (witten_1981, nielsen_ninomiya, cap_theorem,
   git_semantic_merge) show strict resource decrease (R=1 → R=0).
+
+### 2026-06-18 - PO1 Chained Projection Analysis (T34)
+
+- PO1 remains `partially_supported`, now extended with a PO1 Chain Theorem.
+- T34 tests three chain shapes across the code-to-transistors compilation chain:
+  1. Emergent obstruction (Spectre): endpoint pair (source_code, microarchitecture)
+     is a PO1 instance; no source→intermediate pair is. The Spectre timing side
+     channel models the same A=B, B=C, A≠C gluing obstruction as Nielsen-Ninomiya
+     and CAP theorem, but only visible at the full chain endpoint.
+  2. Stepwise propagation: obstruction appears at the assembly level and persists
+     to the machine_code endpoint. Both the source→assembly and source→machine_code
+     pairs are PO1 instances.
+  3. Absorbed obstruction: a phi-node contradiction at unoptimized_IR is resolved
+     by dead-code elimination before the assembly endpoint. The endpoint pair is NOT
+     a PO1 instance (AC6=False). This is the negative control.
+- PO1 Chain Theorem: a chained projection is a PO1 instance when its endpoint
+  pair satisfies AC1-AC7, independent of whether any source→intermediate pair
+  in the chain is a PO1 instance.
+- Boundary: the chain theorem characterises the endpoint pair only. The
+  optimized_IR level in the absorbed chain has a higher accessible_support than
+  the unoptimized input, marking a boundary of the T26 monotone-restriction
+  formalism where optimizer recovery is not a standard D1RestrictionMorphism.

@@ -33,6 +33,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T32](tests/T32-admissibility-derivation.md) | PO1 admissibility derivation | PO1, T31 | implemented: AC dependency graph, minimal basis, and generated subset counterexamples |
 | [T33](tests/T33-po1-foundational-derivation.md) | PO1 foundational derivation | PO1, T32 | implemented: IPT/RMT hypothesis matrix (H0-H5); H3 best supported; AC5-naming recommended as Principle P5 |
 | [T34](tests/T34-po1-chained-projection.md) | Chained projection analysis | PO1, T29, T31, T32, T33 | implemented: emergent, stepwise, and absorbed obstruction confirmed across three chain shapes |
+| [T35](tests/T35-projection-obstruction-discovery-engine.md) | Projection-obstruction discovery engine | PO1, T31, T33, T34 | implemented: bounded finite exploration engine with generated positives, boundaries, and counterexamples |
 
 ## Minimum Compatibility Constraints
 
@@ -74,6 +75,7 @@ python -m models.run_t31
 python -m models.run_t32
 python -m models.run_t33
 python -m models.run_t34
+python -m models.run_t35
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -98,6 +100,7 @@ The suites use only Python's standard library. Evidence records:
 - [PO1 Admissibility Conditions v0.1 Results](results/po1-admissibility-conditions-v0.1-results.md)
 - [PO1 Admissibility Derivation v0.1 Results](results/po1-admissibility-derivation-v0.1-results.md)
 - [PO1 Chained Projection v0.1 Results](results/po1-chained-projection-v0.1-results.md)
+- [Projection-Obstruction Discovery Engine v0.1 Results](results/projection-obstruction-discovery-engine-v0.1-results.md)
 
 ## How To Add A Test
 

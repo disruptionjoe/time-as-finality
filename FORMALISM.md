@@ -69,6 +69,12 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > [T32](tests/T32-admissibility-derivation.md) derives AC4 from AC6 while
 > compressing the checklist into a four-principle basis with AC5 as the
 > non-intrinsic guard.
+>
+> **Discovery-engine update:** [T35](tests/T35-projection-obstruction-discovery-engine.md)
+> turns PO1 into a bounded finite exploration engine. It generates candidate
+> restriction-system projections, classifies them with the T31 admissibility
+> checker, reduces minimal witnesses, and compares generated structures
+> against prior T27-T34 signatures without domain-specific heuristics.
 
 ## Primitive Inventory
 
@@ -439,6 +445,33 @@ naming obligation — that `ProjectionCase.forgotten_structure` must be non-empt
 Principle P5 (Informative Forgetting), making PO1 a partially derived theorem:
 valid typed morphism (IPT) + strict resource decrease (RMT) + named mechanism
 (P5). Best-supported hypothesis: H3 (both IPT and RMT required).
+
+T35 adds a bounded discovery engine:
+
+```text
+generated finite restriction systems
+  -> enumerated total and partial projections
+  -> T31 admissibility classification
+  -> minimal witness reduction
+  -> comparison against T27-T34 signatures
+```
+
+In the v0.1 bounded search, T35 generated 18 finite systems and 172 projection
+candidates. It found positive PO1 candidates, non-definable boundaries,
+loss-without-obstruction counterexamples, obstruction-removal cases, shared
+obstructions, and local-failure controls. The highest-interest generated
+candidate is a four-patch gluing obstruction:
+
+```text
+a = b
+b = c
+c = d
+a != d
+```
+
+This supports `H2 with H3 caution`: the framework has finite generative value,
+but many generated structures are redundant. T35 is a triage engine for human
+mathematical investigation, not automated theorem discovery.
 
 ## D1 Physical Reduction Map
 

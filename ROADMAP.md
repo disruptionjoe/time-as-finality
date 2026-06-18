@@ -68,6 +68,11 @@
   analysis: Spectre-class emergent obstruction (endpoint PO1, no partial prefix
   is PO1), stepwise propagation, and absorbed obstruction (intermediate PO1
   case resolved before endpoint). PO1 Chain Theorem derived.
+- **Completed v0.1:** implement
+  [T35](tests/T35-projection-obstruction-discovery-engine.md) as the
+  Projection-Obstruction Discovery Engine: bounded finite generation,
+  projection enumeration, T31 classification, minimal witness reduction, and
+  novelty comparison against T27-T34 signatures.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -101,6 +106,11 @@
 - Keep speculative extensions clearly separate from core claims.
 
 ## Best First Contributions
+
+1. Run a blinded hostile test with the T35 discovery protocol. Encode a future
+   target such as Arrow as finite restriction systems first, run T35 before
+   domain interpretation, record the structural prediction, and only then
+   compare it against the human mathematical analysis.
 
 1. Make PO1's forgotten-structure guard first-class as Principle P5. T33
    confirms that AC5-naming is the only condition not derivable from IPT or
@@ -197,6 +207,9 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T30](tests/T30-cross-domain-projection-obstruction-validation.md): Cross-Domain Projection-Obstruction Validation - hostile non-physics PO1 validation with Git and financial risk positives plus a translator/poet anti-overclaim boundary.
 - [T31](tests/T31-po1-admissibility-conditions.md): PO1 Admissibility Conditions - seven-condition admissibility checklist and T27-T30 reclassification.
 - [T32](tests/T32-admissibility-derivation.md): PO1 Admissibility Derivation - dependency graph, minimal basis, and generated counterexample suite for AC1-AC7.
+- [T33](tests/T33-po1-foundational-derivation.md): PO1 Foundational Derivation - IPT/RMT hypothesis matrix with H3 best supported and AC5-naming retained as Principle P5.
+- [T34](tests/T34-po1-chained-projection.md): Chained Projection Analysis - emergent, stepwise, and absorbed obstruction confirmed across three chain shapes.
+- [T35](tests/T35-projection-obstruction-discovery-engine.md): Projection-Obstruction Discovery Engine - bounded finite generator/classifier producing positive, boundary, and counterexample candidates.
 
 ### New Open Problems
 

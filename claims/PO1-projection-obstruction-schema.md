@@ -50,10 +50,11 @@ Formal schema.
 ## Status
 
 Partially supported (formally narrowed by T31, structurally compressed by T32,
-and partially derived by T33). T33 shows PO1 is a partially derived theorem:
-conditions arise from IPT (typing/definability) + RMT (resource decrease) +
-P5 (named mechanism). AC5-naming is the only condition not derivable from either
-framework.
+partially derived by T33, chain-tested by T34, and made finitely generative by
+T35). T33 shows PO1 is a partially derived theorem: conditions arise from IPT
+(typing/definability) + RMT (resource decrease) + P5 (named mechanism).
+AC5-naming is the only condition not derivable from either framework. T35 adds
+bounded discovery value, not theorem-discovery status.
 
 ## What This Does Not Claim
 
@@ -114,6 +115,25 @@ its endpoint pair satisfies AC1-AC7, independent of whether any partial prefix
 pair is a PO1 instance. Emergent obstruction is the case of greatest interest:
 the no-go is only visible from the chain's source to its full target.
 
+T35 adds bounded generative evidence. A structural discovery engine generated
+18 finite systems and 172 projection candidates without domain-specific
+heuristics, then classified them through the T31 admissibility checker. It
+found positive PO1 candidates, non-definable boundaries, lossy non-obstructing
+cases, obstruction-removal cases, shared obstructions, and local-failure
+controls. The strongest generated positive candidate is a four-patch gluing
+obstruction:
+
+```text
+a = b
+b = c
+c = d
+a != d
+```
+
+Best hypothesis: `H2 with H3 caution`. PO1 has bounded finite generative value,
+but many generated candidates are redundant and still require human
+mathematical analysis.
+
 T33 derives conditions from two deeper frameworks and evaluates H0-H5:
 
 | Framework | Derives |
@@ -165,3 +185,4 @@ does not require obstruction (AC6).
 - [T32: PO1 Admissibility Derivation](../tests/T32-admissibility-derivation.md)
 - [T33: PO1 Foundational Derivation](../tests/T33-po1-foundational-derivation.md)
 - [T34: Chained Projection Analysis](../tests/T34-po1-chained-projection.md)
+- [T35: Projection-Obstruction Discovery Engine](../tests/T35-projection-obstruction-discovery-engine.md)

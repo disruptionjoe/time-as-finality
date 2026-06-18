@@ -1,0 +1,1747 @@
+{
+  "boundary_candidates": [
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_032",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_032",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_033",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_033",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_034",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_034",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_035",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_035",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_036",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_036",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_037",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_037",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": false,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_038",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_038",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": false,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_039",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_039",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_042",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_042",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_043",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_043",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_046",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_046",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_047",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_047",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    }
+  ],
+  "classification_examples": [
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_052",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_052",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_080",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_080",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_164",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_164",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_012",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_012",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_028",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_028",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_048",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_048",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_076",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_076",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_160",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_160",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_032",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_032",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_034",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_034",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_036",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_036",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": false,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_038",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_038",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S2",
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 2,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_042",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_042",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_046",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_046",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_050",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_050",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_054",
+      "classification": "boundary_non_definable",
+      "interest_reason": "non-definable boundary; signature not present in T27-T34 comparison set",
+      "interest_score": 6,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_054",
+        "patch_count": 0,
+        "patch_ids": [
+          "gen_4_empty_high_S3"
+        ],
+        "reason": "projection is not definable because these source sites have no target",
+        "site_count": 1,
+        "witness_type": "missing_site_map"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "boundary_non_definable"
+    }
+  ],
+  "guardrails": [
+    "T35 does not claim automated theorem discovery.",
+    "T35 uses no machine learning or statistical pattern recognition.",
+    "T35 generated structures are mathematical candidates only.",
+    "T35 uses generic finite restriction-system labels, not domain-specific heuristics."
+  ],
+  "known_signature_count": 10,
+  "minimal_counterexamples": [
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_000",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class",
+      "interest_score": 2,
+      "known_signature_match": true,
+      "minimal_witness": {
+        "candidate_id": "cand_000",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_002",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_002",
+        "patch_count": 2,
+        "patch_ids": [
+          "gen_3_consistent_chain_low_p0_a_same_b",
+          "gen_3_consistent_chain_low_p1_b_same_c"
+        ],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_008",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_008",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_010",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class",
+      "interest_score": 2,
+      "known_signature_match": true,
+      "minimal_witness": {
+        "candidate_id": "cand_010",
+        "patch_count": 2,
+        "patch_ids": [
+          "gen_3_consistent_chain_low_p0_a_same_b",
+          "gen_3_consistent_chain_low_p1_b_same_c"
+        ],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      },
+      "candidate_id": "cand_016",
+      "classification": "obstruction_removed",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_016",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "richer system is obstructed while restricted endpoint is globally satisfiable",
+        "site_count": 3,
+        "witness_type": "obstruction_removed"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_shared_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": false
+      },
+      "candidate_id": "cand_017",
+      "classification": "obstruction_removed",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 4,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_017",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "richer system is obstructed while restricted endpoint is globally satisfiable",
+        "site_count": 3,
+        "witness_type": "obstruction_removed"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_shared_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      },
+      "candidate_id": "cand_018",
+      "classification": "obstruction_removed",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_018",
+        "patch_count": 2,
+        "patch_ids": [
+          "gen_3_consistent_chain_low_p0_a_same_b",
+          "gen_3_consistent_chain_low_p1_b_same_c"
+        ],
+        "reason": "richer system is obstructed while restricted endpoint is globally satisfiable",
+        "site_count": 3,
+        "witness_type": "obstruction_removed"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_shared_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": false,
+        "AC7": false
+      },
+      "candidate_id": "cand_019",
+      "classification": "obstruction_removed",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set; unnamed forgetting weakens PO1 relevance",
+      "interest_score": 4,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_019",
+        "patch_count": 2,
+        "patch_ids": [
+          "gen_3_consistent_chain_low_p0_a_same_b",
+          "gen_3_consistent_chain_low_p1_b_same_c"
+        ],
+        "reason": "richer system is obstructed while restricted endpoint is globally satisfiable",
+        "site_count": 3,
+        "witness_type": "obstruction_removed"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_shared_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_024",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_024",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_026",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_026",
+        "patch_count": 2,
+        "patch_ids": [
+          "gen_3_consistent_chain_low_p0_a_same_b",
+          "gen_3_consistent_chain_low_p1_b_same_c"
+        ],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 3,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_040",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_040",
+        "patch_count": 0,
+        "patch_ids": [],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 4,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "candidate_id": "cand_044",
+      "classification": "lossy_non_obstructing",
+      "interest_reason": "minimal counterexample class; signature not present in T27-T34 comparison set",
+      "interest_score": 5,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_044",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_consistent_chain_low_p0_a_same_b",
+          "gen_4_consistent_chain_low_p1_b_same_c",
+          "gen_4_consistent_chain_low_p2_c_same_d"
+        ],
+        "reason": "profiles are lossy but the restricted system still has a global section",
+        "site_count": 4,
+        "witness_type": "minimal_loss_without_obstruction"
+      },
+      "po1_evidence": false,
+      "t31_verdict": "non_admissible_no_new_obstruction"
+    }
+  ],
+  "novel_positive_candidates": [
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_012",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_012",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_028",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_028",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_048",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_048",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_052",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_052",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_076",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_076",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_080",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_080",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_160",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_160",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_164",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_164",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    }
+  ],
+  "positive_candidates": [
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_004",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate",
+      "interest_score": 5,
+      "known_signature_match": true,
+      "minimal_witness": {
+        "candidate_id": "cand_004",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_012",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_012",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_028",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_028",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_3_triangle_obstruction_low_p0_a_same_b",
+          "gen_3_triangle_obstruction_low_p1_b_same_c",
+          "gen_3_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 3,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_048",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_048",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_052",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_052",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_076",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_076",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_080",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_080",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_160",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set",
+      "interest_score": 8,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_160",
+        "patch_count": 3,
+        "patch_ids": [
+          "gen_4_triangle_obstruction_low_p0_a_same_b",
+          "gen_4_triangle_obstruction_low_p1_b_same_c",
+          "gen_4_triangle_obstruction_low_p2_a_different_c"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    },
+    {
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "candidate_id": "cand_164",
+      "classification": "admissible_po1",
+      "interest_reason": "positive PO1 candidate; signature not present in T27-T34 comparison set; requires at least four restricted patches",
+      "interest_score": 10,
+      "known_signature_match": false,
+      "minimal_witness": {
+        "candidate_id": "cand_164",
+        "patch_count": 4,
+        "patch_ids": [
+          "gen_4_square_obstruction_low_p0_a_same_b",
+          "gen_4_square_obstruction_low_p1_b_same_c",
+          "gen_4_square_obstruction_low_p2_c_same_d",
+          "gen_4_square_obstruction_low_p3_a_different_d"
+        ],
+        "reason": "smallest restricted patch subset that still has a finite gluing obstruction",
+        "site_count": 4,
+        "witness_type": "minimal_gluing_obstruction"
+      },
+      "po1_evidence": true,
+      "t31_verdict": "fully_admissible"
+    }
+  ],
+  "summary": {
+    "best_supported_hypothesis": "H2 with H3 caution",
+    "boundary_candidates": [
+      "cand_032",
+      "cand_033",
+      "cand_034",
+      "cand_035",
+      "cand_036",
+      "cand_037",
+      "cand_038",
+      "cand_039",
+      "cand_042",
+      "cand_043",
+      "cand_046",
+      "cand_047"
+    ],
+    "candidate_count": 172,
+    "classification_counts": {
+      "admissible_po1": 9,
+      "boundary_non_definable": 90,
+      "lossy_non_obstructing": 12,
+      "obstruction_removed": 12,
+      "outside_po1": 21,
+      "shared_obstruction": 10,
+      "system_invalid": 0,
+      "trivial_local_failure": 18
+    },
+    "generated_system_count": 18,
+    "minimal_counterexamples": [
+      "cand_000",
+      "cand_002",
+      "cand_008",
+      "cand_010",
+      "cand_016",
+      "cand_017",
+      "cand_018",
+      "cand_019",
+      "cand_024",
+      "cand_026",
+      "cand_040",
+      "cand_044"
+    ],
+    "novel_positive_candidates": [
+      "cand_012",
+      "cand_028",
+      "cand_048",
+      "cand_052",
+      "cand_076",
+      "cand_080",
+      "cand_160",
+      "cand_164"
+    ],
+    "positive_candidates": [
+      "cand_004",
+      "cand_012",
+      "cand_028",
+      "cand_048",
+      "cand_052",
+      "cand_076",
+      "cand_080",
+      "cand_160",
+      "cand_164"
+    ],
+    "recommendation": "The finite framework is generative: T35 rediscovers known PO1 signatures and produces structurally novel positive candidates, including bounded four-patch obstruction witnesses. Many candidates are redundant, so the engine should be used as a triage tool for human mathematical analysis, not as theorem discovery.",
+    "rediscovered_known_pattern_count": 1
+  }
+}

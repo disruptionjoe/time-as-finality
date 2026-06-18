@@ -44,6 +44,9 @@ on TaF's temporal or physical claims:
 - `AdmissibilityCheck`: a seven-condition checklist (AC1-AC7) for whether a
   ProjectionCase is a PO1 instance.
 - `ProjectionChain`: a sequence of morphisms from a source to a final target.
+- `TypedTransportNetwork`: a finite directed graph of NetworkLayer objects
+  (D1RestrictionSystems) connected by NetworkTransport edges (typed
+  D1RestrictionMorphisms with explicit forgotten_structure declarations). T37.
 
 **Status: PRESENT.** These objects can be defined and studied without reference
 to time, observers, or physical finality.
@@ -57,6 +60,10 @@ The following operations are defined on the primitives:
 - `check_admissibility()`: evaluates AC1-AC7 for a ProjectionCase.
 - `_analyze_chain()`: determines emergent, stepwise, and absorbed obstruction
   patterns in a ProjectionChain.
+- `_compose_morphisms(f, g)`: chains site maps and intersects preserved_dimensions.
+- `all_paths(network, source, target)`: DFS simple-path enumeration.
+- `analyze_network(network, source, target)`: full path admissibility analysis
+  with path-dependence detection.
 - Composition of D1RestrictionMorphisms (partial — associativity and identity
   morphisms not yet formally established).
 
@@ -72,6 +79,7 @@ have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
 | IPT/RMT derivation (T33) | Earned | Six of seven admissibility conditions are derivable from two deeper frameworks (typed morphism validity + resource monotonicity); AC5-naming is independent. |
 | PO1 Chain Theorem (T34) | Earned | Endpoint admissibility is independent of whether any source-to-intermediate prefix pair is admissible. |
 | Compression-finality separation (T36) | Earned | Compressibility of the trace distribution and trace_survival_fraction are correlated but empirically distinct; neither is a function of the other. |
+| Path-Dependent Admissibility (T37) | Earned | In a TypedTransportNetwork, two simple paths between the same source and target layer yield different PO1 verdicts when they accumulate different forgotten_structure; AC5 is the only path-varying admissibility condition. |
 
 **Status: PRESENT.** A theorem ladder exists and is growing.
 
@@ -159,3 +167,4 @@ declared from within the research program alone.
 | Date | Version | Summary |
 | --- | --- | --- |
 | 2026-06-18 | v0.1 | Initial audit. Five criteria present; independent motivation unknown. Post T36 state. |
+| 2026-06-18 | v0.2 | T37 adds TypedTransportNetwork as a new primitive. Path-dependent admissibility theorem earned. Composition law (associativity) still open. |

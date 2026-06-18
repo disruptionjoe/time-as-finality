@@ -46,6 +46,15 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > projection maps, global-section checks, and restriction morphisms. Scalar
 > and vector D1 are now projections from this object.
 >
+> **Typed transport update:** [T37](tests/T37-typed-transport-network.md)
+> introduces `TypedTransportNetwork` as the next object above
+> `D1RestrictionSystem`: a finite directed graph of layers connected by typed
+> morphisms with explicit forgotten and preserved structure declarations.
+> Path-dependent admissibility is the central new result: two simple paths
+> between the same source and target layer can yield different PO1 verdicts
+> when they accumulate different forgotten_structure. The composition law
+> (associativity) remains an open formal obligation.
+>
 > **Chained-projection update:** [T34](tests/T34-po1-chained-projection.md)
 > tests PO1 across chains of D1RestrictionMorphisms. The PO1 Chain Theorem
 > holds: a chained projection is a PO1 instance when its endpoint pair
@@ -75,6 +84,14 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > restriction-system projections, classifies them with the T31 admissibility
 > checker, reduces minimal witnesses, and compares generated structures
 > against prior T27-T34 signatures without domain-specific heuristics.
+>
+> **Compression-finality crosswalk update:** [T36](tests/T36-compression-finality-crosswalk.md)
+> tests compressibility as a downstream observable of stable records across all
+> 256 elementary cellular automaton rules. The verdict: compressibility is not
+> a D1 dimension. Stable record formation enables prediction, which enables
+> compression opportunities — but finality and compressibility are empirically
+> distinct. Rule 30 (high finality, poor compressibility) and Rule 0 (zero
+> finality, perfect compressibility) are the falsifying counterexamples.
 
 ## Primitive Inventory
 
@@ -94,6 +111,7 @@ The following are not primitive inputs:
 - metric time or event timestamps;
 - a global clock;
 - a universal present;
+- a privileged global object from which local facts are projections;
 - a total order over spacelike events;
 - experienced temporal order;
 - finality rank or finality score.
@@ -243,13 +261,13 @@ H4: no canonical generalization is currently justified
 The best-supported hypothesis is:
 
 ```text
-H3
+H3: another finite restriction structure is required
 ```
 
 The recommended finite object is:
 
 ```text
-graph-indexed D1 restriction system = (
+D1 restriction system = (
   local D1 profiles,
   observer sites,
   trusted transport edges,
@@ -258,6 +276,8 @@ graph-indexed D1 restriction system = (
 ```
 
 This object is smaller than full sheaf language but richer than vector D1.
+T37 extends it further: a TypedTransportNetwork of restriction systems
+connected by typed morphisms is the next level of the hierarchy.
 T25 reaches this theorem ladder:
 
 | Theorem attempt | Status |
@@ -274,7 +294,8 @@ So the formal posture is:
 ```text
 scalar D1 = local/fixed-observer special case
 vector D1 = sufficient for observer-distribution snapshots
-graph-indexed restriction = minimal current local-to-global object
+D1 restriction system = minimal current object for multiscale structure
+TypedTransportNetwork = finite network of restriction systems (T37)
 sheaf language = candidate future formalism
 full IPT representation = not yet earned
 ```
@@ -325,7 +346,8 @@ The current formal posture is:
 ```text
 scalar D1 = projection from D1RestrictionSystem under fixed-site or uniform assumptions
 vector D1 = projection that preserves observer distribution but loses graph and patch data
-D1RestrictionSystem = current central local-to-global D1 extension
+D1RestrictionSystem = current central finite D1 object
+TypedTransportNetwork = D1RestrictionSystems connected by typed morphisms (T37)
 sheaf language = optional future upgrade if finite patch semantics fail
 full IPT representation = requires site maps and restriction commutation in IPT objects
 ```
@@ -472,6 +494,22 @@ a != d
 This supports `H2 with H3 caution`: the framework has finite generative value,
 but many generated structures are redundant. T35 is a triage engine for human
 mathematical investigation, not automated theorem discovery.
+
+T36 audits this structure through six independent mathematical lenses. The
+convergent result is:
+
+```text
+finite rich local system
+  -> typed lossy projection / restriction
+  -> observer-accessible or restricted shadow
+  -> local satisfiability can remain while global assignment disappears
+```
+
+T36 recommends narrowing prose from full sheaf/category/resource/index language
+to finite projection-created satisfiability loss until stronger formal objects
+are built. The next formal target is a lossy projection arrow with first-class
+forgotten structure, identity and composition laws, and cumulative P5 across
+chains.
 
 ## D1 Physical Reduction Map
 

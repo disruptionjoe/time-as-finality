@@ -1,0 +1,84 @@
+{
+  "spectre_network": {
+    "network_name": "spectre_network",
+    "layer_count": 3,
+    "transport_count": 2,
+    "paths": [
+      {
+        "path_label": "SRC -> MID -> TGT",
+        "is_po1_instance": true,
+        "verdict": "fully_admissible",
+        "failed_conditions": [],
+        "forgotten_structure": [
+          "type_guarantee"
+        ]
+      }
+    ],
+    "po1_paths": [
+      "SRC -> MID -> TGT"
+    ],
+    "non_po1_paths": [],
+    "path_dependent": false,
+    "witness": null,
+    "verdict": "all_paths_admissible"
+  },
+  "diamond_network": {
+    "network_name": "diamond_network",
+    "layer_count": 4,
+    "transport_count": 4,
+    "paths": [
+      {
+        "path_label": "SRC -> L_A -> TGT",
+        "is_po1_instance": true,
+        "verdict": "fully_admissible",
+        "failed_conditions": [],
+        "forgotten_structure": [
+          "type_guarantee"
+        ]
+      },
+      {
+        "path_label": "SRC -> L_B -> TGT",
+        "is_po1_instance": false,
+        "verdict": "non_admissible_no_forgotten_structure",
+        "failed_conditions": [
+          "AC5"
+        ],
+        "forgotten_structure": []
+      }
+    ],
+    "po1_paths": [
+      "SRC -> L_A -> TGT"
+    ],
+    "non_po1_paths": [
+      "SRC -> L_B -> TGT"
+    ],
+    "path_dependent": true,
+    "witness": {
+      "source": "SRC",
+      "target": "TGT",
+      "po1_path": [
+        "SRC",
+        "L_A",
+        "TGT"
+      ],
+      "non_po1_path": [
+        "SRC",
+        "L_B",
+        "TGT"
+      ],
+      "po1_forgotten": [
+        "type_guarantee"
+      ],
+      "non_po1_forgotten": [],
+      "failing_conditions": [
+        "AC5"
+      ]
+    },
+    "verdict": "path_dependent_admissibility_witnessed"
+  },
+  "t34_consistency": true,
+  "path_dependence_witnessed": true,
+  "theorem": "Path-Dependent Admissibility: In a TypedTransportNetwork, two simple paths between the same source and target layer yield different PO1 verdicts when they accumulate different forgotten_structure. If path P1 accumulates non-empty forgotten_structure and path P2 accumulates empty forgotten_structure, AC5 holds for P1 and fails for P2 \u2014 even though both paths connect the same endpoint systems. AC1, AC2, AC3, AC6, AC7 are endpoint-determined and path-invariant; only AC5 varies by path when accumulated forgotten_structure differs.",
+  "boundary": "The result holds within the T26/T31 admissibility framework (AC1-AC7). It does not claim that all observables are path-dependent \u2014 only AC5 varies. The theorem requires genuinely different accumulated forgotten_structure between paths; it does not apply when all paths forget the same structure. The D1RestrictionMorphism composition used here (intersection of preserved_dimensions, union of forgotten_structure) has not yet been proven associative; composition law remains open.",
+  "recommendation": "Promote path-dependent admissibility to a Claim in CLAIM-LEDGER.md. Update MATHEMATICAL-INDEPENDENCE-AUDIT.md: TypedTransportNetwork is a new primitive above D1RestrictionSystem. Next steps: test path-dependence under longer chains; ask whether a canonical minimal forgotten_structure exists for a (source, target) pair; prove or disprove that morphism composition is associative."
+}

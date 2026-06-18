@@ -2,11 +2,20 @@
 
 **The past is what has become hard to undo.**
 
-Time as Finality is an open research project testing whether observer-relative
-temporal order and classical objectivity can be modeled through the
-stabilization of physical records across causally bounded systems.
+Time as Finality is the founding research program of an open mathematical
+investigation into how stable structure is preserved, transformed, forgotten,
+and newly created as it moves across recursively nested organizational levels.
+The program asks whether observer-relative temporal order and classical
+objectivity can arise from the stabilization of physical records across
+causally bounded systems — and uses that question to drive the development
+of more precise mathematics.
 
-This is not a completed theory of physics. It is a claim-led formalization project: every major claim is labeled, linked, challenged, and paired with tests or failure conditions.
+The mathematics does not assume the answer. It searches for the smallest set
+of formal principles capable of explaining what the evidence actually shows.
+Some founding intuitions will survive that search. Others will not. Both
+outcomes are informative.
+
+This is a claim-led formalization project: every major claim is labeled, linked, challenged, and paired with tests or failure conditions. The executable mathematics continuously determines which intuitions survive.
 
 ## Project Definition
 
@@ -20,21 +29,24 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 
 ## What This Is
 
-- An open formalization project.
-- A conjecture suite with explicit failure conditions.
-- A claim-by-claim research repository.
+- An open formalization project organized around a falsifiable conjecture suite.
+- A claim-by-claim research repository where every attractive intuition is
+  treated as a hypothesis, made executable, and tested for counterexamples.
 - A place to connect public essay claims to specific tests.
-- A bridge language between record formation, temporal experience, and classical objectivity.
-- An executable finite-graph model with documented positive and negative
-  results.
+- An executable finite-graph model with documented positive and negative results.
+- A research program whose mathematics may be accumulating independence from its
+  founding application. Whether that independence has been earned is tracked in
+  [MATHEMATICAL-INDEPENDENCE-AUDIT.md](MATHEMATICAL-INDEPENDENCE-AUDIT.md).
 
 ## What This Is Not
 
 - Not a finished physical theory.
 - Not a replacement for quantum mechanics, special relativity, general relativity, or thermodynamics.
+- Not an attempt to prove that the founding intuitions are correct.
 - Not a claim that human belief creates matter.
 - Not a claim that decoherence alone solves the measurement problem.
 - Not a claim that black-hole interiors are unreal.
+- Not a claim that a hidden global substrate underlies the observer-relative structure.
 
 ## Start Here
 
@@ -89,6 +101,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md)
   - Compression as a downstream observable of stable records, not a D1
     dimension; Rule 30 and Rule 0 counterexamples across all 256 CA rules.
+- [TECHNICAL-REPORT-typed-transport-network-v0.1.md](TECHNICAL-REPORT-typed-transport-network-v0.1.md)
+  - TypedTransportNetwork: finite directed graph of D1RestrictionSystems
+    connected by typed morphisms; path-dependent admissibility witnessed.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -160,7 +175,9 @@ python -m models.run_t31
 python -m models.run_t32
 python -m models.run_t33
 python -m models.run_t34
+python -m models.run_t35
 python -m models.run_t36
+python -m models.run_t37
 ```
 
 ## Citation / Reuse

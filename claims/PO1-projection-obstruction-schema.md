@@ -51,10 +51,12 @@ Formal schema.
 
 Partially supported (formally narrowed by T31, structurally compressed by T32,
 partially derived by T33, chain-tested by T34, and made finitely generative by
-T35). T33 shows PO1 is a partially derived theorem: conditions arise from IPT
-(typing/definability) + RMT (resource decrease) + P5 (named mechanism).
-AC5-naming is the only condition not derivable from either framework. T35 adds
-bounded discovery value, not theorem-discovery status.
+T35). T36 narrows the mathematical reading: PO1 is strongest as finite
+projection-created satisfiability loss under typed forgetting. T33 shows PO1
+is a partially derived theorem candidate: conditions arise from IPT
+(typing/definability) + RMT (resource decrease) + P5 (named mechanism), with
+AC5-naming as the non-derived boundary. T35 adds bounded discovery value, not
+theorem-discovery status.
 
 ## What This Does Not Claim
 
@@ -65,6 +67,8 @@ bounded discovery value, not theorem-discovery status.
 - It does not apply when the projection is not definable (AC3 fails).
 - It does not apply when the obstruction is shared/inherited (AC7 fails).
 - It does not claim continuous, sheaf-level, or category-level generality.
+- It does not claim fiber-bundle, curvature, index-theory, or full
+  resource-theory status.
 
 ## Why It Might Be True
 
@@ -134,6 +138,19 @@ Best hypothesis: `H2 with H3 caution`. PO1 has bounded finite generative value,
 but many generated candidates are redundant and still require human
 mathematical analysis.
 
+T36 audits PO1 through six independent mathematical lenses: fiber/bundle,
+spin/index, sheaf/cohomology, category, resource, and observer-shadow
+architecture. The lenses converge on the same narrowing:
+
+```text
+PO1 is currently finite projection-created satisfiability loss.
+```
+
+Sheaf, category, resource, index, and bundle readings are promising upgrades,
+not current theorem status. T36's strongest recommendation is to define a
+lossy projection arrow with first-class forgotten structure, identity and
+composition laws, and cumulative P5 across chains.
+
 T33 derives conditions from two deeper frameworks and evaluates H0-H5:
 
 | Framework | Derives |
@@ -174,6 +191,10 @@ does not require obstruction (AC6).
 - Three-patch contradictions constructed post-hoc to force an obstruction
   rather than encoding a domain constraint remain a risk for overcounting.
 - Forgotten structure may not always be representable as finite patch data.
+- If no composable lossy projection arrow can be defined, PO1 remains a useful
+  finite classifier rather than a deeper mathematical architecture.
+- If T13's cohomology witness cannot be made nontrivial, cohomological language
+  should be downgraded to finite gluing language.
 
 ## Tests
 
@@ -186,3 +207,7 @@ does not require obstruction (AC6).
 - [T33: PO1 Foundational Derivation](../tests/T33-po1-foundational-derivation.md)
 - [T34: Chained Projection Analysis](../tests/T34-po1-chained-projection.md)
 - [T35: Projection-Obstruction Discovery Engine](../tests/T35-projection-obstruction-discovery-engine.md)
+
+## Audits
+
+- [T36: Six-Lens Mathematical Audit](../TECHNICAL-REPORT-six-lens-mathematical-audit-v0.1.md)

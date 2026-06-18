@@ -73,6 +73,19 @@
   Projection-Obstruction Discovery Engine: bounded finite generation,
   projection enumeration, T31 classification, minimal witness reduction, and
   novelty comparison against T27-T34 signatures.
+- **Completed v0.1:** implement
+  [T36](tests/T36-compression-finality-crosswalk.md) as the
+  compression-finality crosswalk across all 256 elementary CA rules. Verdict:
+  compressibility is a downstream observable of stable records, not a D1
+  dimension; Rule 30 (high finality, low compressibility) and Rule 0 (zero
+  finality, perfect compressibility) falsify the identity hypothesis.
+- **Completed v0.1:** implement
+  [T37](tests/T37-typed-transport-network.md) as the typed transport network:
+  a finite directed graph of D1RestrictionSystems connected by typed
+  morphisms. Path-dependent admissibility theorem: two simple paths between
+  the same source and target can yield different PO1 verdicts (AC5 is the
+  only path-varying condition). T34 emergent obstruction is reproducible via
+  the network formalism. Composition law remains open.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -107,36 +120,48 @@
 
 ## Best First Contributions
 
-1. Run a blinded hostile test with the T35 discovery protocol. Encode a future
+1. Prove the composition law for the typed transport network. T37 introduces
+   `_compose_morphisms` (intersection of preserved_dimensions, union of
+   forgotten_structure) as an executable operation but has not proven
+   associativity or identity morphisms. A formal proof would make
+   TypedTransportNetwork a proper category and enable the path-dependent
+   admissibility theorem to be stated over a category of typed transports.
+
+2. Prove the binary parity obstruction theorem for the `same`/`different`
+   fragment. This would upgrade the common three-patch and four-patch PO1
+   witnesses from finite CSP contradictions to genuine `Z2` parity
+   obstructions.
+
+3. Run a blinded hostile test with the T35 discovery protocol. Encode a future
    target such as Arrow as finite restriction systems first, run T35 before
    domain interpretation, record the structural prediction, and only then
    compare it against the human mathematical analysis.
 
-1. Make PO1's forgotten-structure guard first-class as Principle P5. T33
+4. Make PO1's forgotten-structure guard first-class as Principle P5. T33
    confirms that AC5-naming is the only condition not derivable from IPT or
    RMT. The next target: formalize P5 (Informative Forgetting) as a first-class
    obligation inside the PO1 schema, and add a proof that resource decrease
    (RMT) alone does not suffice — manufactured obstruction without named
    mechanism remains a risk for overcounting.
-2. Define a formal PO1 chain composition theorem. T34 confirms the PO1
+5. Define a formal PO1 chain composition theorem. T34 confirms the PO1
    Chain Theorem (endpoint pair admissibility is independent of partial-prefix
    admissibility) and demonstrates emergent, stepwise, and absorbed obstruction
    patterns. The next target: prove that given a chain f1∘f2∘...∘fn: L0→Ln,
    the composed projection is a PO1 instance iff (L0, Ln) satisfies AC1-AC7,
    with a cumulative AC5 rule that accumulates forgotten structure across all
    steps. Also formalize non-monotone optimizer morphisms within T26.
-3. Define composition laws for
+6. Define composition laws for
    [T26](tests/T26-d1-restriction-system.md) restriction morphisms. Check
    associativity, identity morphisms, obstruction preservation, and whether
    failed morphisms compose as blocked transformations.
-3. Prove or reject an IPT representation theorem over the graph-indexed D1
+7. Prove or reject an IPT representation theorem over the graph-indexed D1
    restriction system for
    [T23](tests/T23-invariant-preserving-transformations.md): state when an
    observer change, theorem transfer, record aggregation, or reduction map
    must factor through the typed IPT interface. Use
    [T26](tests/T26-d1-restriction-system.md) so the theorem handles local D1
    values, transport edges, patch constraints, and restriction morphisms.
-4. Decide whether [D1-Field](claims/D1-field-multiscale-observer-finality.md)
+8. Decide whether [D1-Field](claims/D1-field-multiscale-observer-finality.md)
    should remain a graph-indexed restriction system or graduate to presheaf or
    sheaf language. Use T13/T21 obstruction machinery only if the simpler graph
    object fails.
@@ -285,3 +310,80 @@ problems were added. Seven convergence clusters found. Full sprint at
 5. **H1 generator maps to a Bell test setup** — 5 quantum + topology personas
 6. **Distinguishing-predictions table is the top documentation gap** — 6 critical/strategic lenses
 7. **Observer self-reference requires fixed-point treatment** — 6 personas from 4 groups
+
+## Phase 7: Post-T37 Mathematical Direction — 2026-06-18
+
+T37 marks a philosophical inflection point as much as a technical one.
+
+The mathematical work from T1 through T37 has converged on a direction that
+the founding intuitions did not fully anticipate. The project is not
+discovering a hidden substrate. It is discovering the smallest mathematics
+capable of explaining how stable structure is preserved, transformed,
+forgotten, composed, and newly created across recursively nested
+organizational levels.
+
+After T34 through T37, the evidence has pushed consistently away from three
+assumptions that once seemed natural:
+
+- A hidden global substrate all observers share.
+- A privileged global object from which local facts are projections.
+- A single direction (local-to-global) as the organizing principle.
+
+The emerging mathematical vocabulary reflects where the evidence has led:
+**typed transport**, **multiscale restriction**, **observer-accessible
+sections**, **compatibility**, **obstruction**, **preservation**,
+**forgetting**, **path-dependence**, and **emergence**. These concepts do
+not require physical time or finality to be defined. Time as Finality may
+be the first major application of this mathematics, not its permanent center.
+
+### Immediate next steps (earned by the theorem ladder)
+
+1. **Prove the composition law.** T37 introduces morphism composition
+   (intersection of preserved_dimensions) but has not proven associativity or
+   identity morphisms. A formal proof would make TypedTransportNetwork a
+   category.
+
+2. **Test path-dependence under longer chains.** T37 demonstrates path-
+   dependence in a 4-layer diamond. The next question: does it persist under
+   longer intermediate paths, and can AC1-AC4 or AC6-AC7 also vary by path?
+
+3. **Determine whether a canonical minimal forgotten_structure exists.** For a
+   given (source, target) pair, is there a smallest forgotten_structure that
+   makes any path PO1-admissible? This would give the TypedTransportNetwork a
+   natural notion of "the information lost by transport."
+
+4. **Apply T35 (discovery engine) to generate TypedTransportNetwork instances.**
+   The discovery engine can be extended to enumerate networks without domain-
+   specific heuristics and compare them against the diamond and spectre
+   signatures.
+
+5. **External testing of the theorem ladder.** The theorems in
+   [MATHEMATICAL-INDEPENDENCE-AUDIT.md](MATHEMATICAL-INDEPENDENCE-AUDIT.md)
+   should be presented to mathematicians unfamiliar with Time as Finality.
+   If they find them interesting on their own terms, that is evidence of
+   independent motivation. A paper abstract that does not mention time,
+   finality, or observers is the next concrete milestone.
+
+### GU connection note (2026-06-18)
+
+Geometric Unity's observation maps (pullbacks from a 14-dimensional metric
+bundle Y¹⁴ to the 4-dimensional base X⁴) share formal structure with the
+TypedTransportNetwork's path admissibility concept: different observation
+maps pull back different structure, and the relationship between what is
+preserved and what is forgotten by each map is load-bearing. GU's
+chimeric bundle (7,7 signature) and the Shiab operator address a different
+problem (gauge-covariant contraction in GR) than this project's
+restriction-system framework, but both are studying how typed transformations
+between mathematical objects preserve or lose structure across levels.
+
+The formal connection point, if any, lies in the restriction direction: GU
+uses pullback to bring higher-level structure down to the base manifold;
+this project finds that restriction-direction maps (where structure is
+projected down and forgotten at each step) are more productive than
+local-to-global maps. The obstruction to reversing that restriction is where
+the interesting mathematics lives in both programs.
+
+This is an analogy, not a claimed reduction. The evidence bar for
+theorem-transfer (T20 standard: the proof's typed assumptions must be
+preserved under the dictionary) has not been met. If a formal connection is
+pursued, it should be held to that standard.

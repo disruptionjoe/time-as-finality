@@ -132,6 +132,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Local mechanism identifiability: finite probes show baseline traces remain
     ambiguous, while demand-drop plus coupling-rewire separates the T43
     mechanism families; H4 best supported.
+- [TECHNICAL-REPORT-measurement-po1-asymmetry-v0.1.md](results/measurement-po1-asymmetry-v0.1-results.md)
+  - Measurement as PO1 morphism: forward morphism f: Y->X fully admissible;
+    inverse fails AC6+AC7; Measurement Asymmetry Theorem confirmed: no
+    PO1-admissible morphism can originate from an obstructed system.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -211,6 +215,7 @@ python -m models.run_t41
 python -m models.run_t42
 python -m models.run_t43
 python -m models.run_t44
+python -m models.run_t45
 ```
 
 ## Run Explorations

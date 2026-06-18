@@ -1,0 +1,90 @@
+{
+  "quantum_system": "quantum_layer_Y",
+  "classical_system": "classical_layer_X",
+  "quantum_section": {
+    "obstruction_detected": false,
+    "global_witness_count": 2,
+    "local_witness_count": 3
+  },
+  "classical_section": {
+    "obstruction_detected": true,
+    "global_witness_count": 0,
+    "local_witness_count": 3
+  },
+  "forward_admissibility": {
+    "case_name": "measurement_Y_to_X",
+    "conditions": {
+      "AC1": true,
+      "AC2": true,
+      "AC3": true,
+      "AC4": true,
+      "AC5": true,
+      "AC6": true,
+      "AC7": true
+    },
+    "verdict": "fully_admissible",
+    "failed_conditions": [],
+    "po1_evidence": true
+  },
+  "inverse_admissibility": {
+    "case_name": "unmeasurement_X_to_Y",
+    "conditions": {
+      "AC1": true,
+      "AC2": true,
+      "AC3": true,
+      "AC4": true,
+      "AC5": true,
+      "AC6": false,
+      "AC7": false
+    },
+    "verdict": "non_admissible_shared_obstruction",
+    "failed_conditions": [
+      "AC6",
+      "AC7"
+    ],
+    "po1_evidence": false
+  },
+  "asymmetry_tests": [
+    {
+      "label": "X_to_trivial",
+      "target": "trivial_unobstructed_Z",
+      "verdict": "boundary_non_definable",
+      "ac7_held": false,
+      "asymmetry_confirmed": true
+    },
+    {
+      "label": "X_to_obstructed",
+      "target": "another_obstructed_Z2",
+      "verdict": "non_admissible_shared_obstruction",
+      "ac7_held": false,
+      "asymmetry_confirmed": true
+    }
+  ],
+  "forward_is_po1": true,
+  "inverse_fails_po1": true,
+  "asymmetry_theorem_holds": true,
+  "theorem_statement": "Measurement Asymmetry Theorem (T45): For any D1RestrictionSystem S with obstruction_detected = True, there is no PO1-admissible morphism g: S -> Z for any D1RestrictionSystem Z.",
+  "proof_sketch": "AC7 requires the richer system (source of g, here S) to be unobstructed. S is obstructed by hypothesis. Therefore AC7 fails for any target Z. The failure is independent of Z: it depends only on S being obstructed. Verified finite-witness: all tested targets Z fail AC7 in this model.",
+  "measurement_reading": "In the measurement interpretation: Y (quantum layer) is unobstructed, X (classical layer) is obstructed by projection-created parity conflict. f: Y -> X is fully PO1-admissible -- measurement is a valid PO1 event. No PO1-admissible morphism can originate from X -- measurement is structurally irreversible. The obstruction in X (AC6 of f) prevents any PO1 reverse path. This is the measurement problem expressed as gluing obstruction: the classical records cannot be globally reconciled, and this irreconcilability is exactly what makes the arrow one-directional.",
+  "hypothesis_evaluations": [
+    {
+      "id": "H_FWD",
+      "claim": "f: Y -> X is fully PO1-admissible",
+      "status": "supported",
+      "evidence": "forward admissibility verdict: fully_admissible"
+    },
+    {
+      "id": "H_INV",
+      "claim": "g: X -> Y is PO1-admissible (expected to fail)",
+      "status": "refuted",
+      "evidence": "inverse admissibility verdict: non_admissible_shared_obstruction; failed conditions: ('AC6', 'AC7')"
+    },
+    {
+      "id": "H_ASYM",
+      "claim": "No PO1-admissible morphism g: X -> Z exists for any Z",
+      "status": "supported",
+      "evidence": "all 2 asymmetry tests confirmed: True"
+    }
+  ],
+  "best_supported": "H_FWD and H_ASYM (measurement is PO1; asymmetry theorem holds)"
+}

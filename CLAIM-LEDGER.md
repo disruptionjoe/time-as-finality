@@ -15,7 +15,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
 | [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction when admissible transformations are monotone in D1 finality. | [T18](tests/T18-finality-direction-theorem.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
 | [IPT](claims/IPT-invariant-preserving-transformations.md) | formal_kernel | proto_independent | Invariant-preserving transformations may be the substrate-neutral mathematical transport structure connecting observer changes, theorem transfer, and record-reduction maps; T23 gives a finite typed kernel with positive cases, composition, and obstruction; T26 supplies D1 restriction morphisms as a target object, but no full IPT representation theorem yet. | [T23](tests/T23-invariant-preserving-transformations.md), [T26](tests/T26-d1-restriction-system.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md), [T26 report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md) |
-| [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T30 adds hostile non-physics validation and keeps PO1 constrained: Git and financial risk are positive toy instances, while translator/poet is an anti-overclaim boundary. | [T27](tests/T27-class-relative-bridge-audit.md), [T28](tests/T28-cap-theorem-bridge.md), [T29](tests/T29-projection-obstruction-schema.md), [T30](tests/T30-cross-domain-projection-obstruction-validation.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md), [T30 report](TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md) |
+| [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T31 supplies the admissibility checklist. T32 compresses it: AC4 derives from AC6, and the remaining non-intrinsic guard is AC5, the named forgotten-structure condition. T33 derives conditions from IPT+RMT frameworks; best hypothesis H3 (both required); AC5-naming remains a methodological transparency condition recommended as Principle P5. | [T27](tests/T27-class-relative-bridge-audit.md), [T28](tests/T28-cap-theorem-bridge.md), [T29](tests/T29-projection-obstruction-schema.md), [T30](tests/T30-cross-domain-projection-obstruction-validation.md), [T31](tests/T31-po1-admissibility-conditions.md), [T32](tests/T32-admissibility-derivation.md), [T33](tests/T33-po1-foundational-derivation.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md), [T31 report](TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md), [T32 report](TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md), [T33 report](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md) |
 | [H-Domain](explorations/heliosphere-as-finality-domain.md) | conjecture | open | The heliosphere is a D1 finality domain: the heliopause is a substrate-exchange boundary where record-formation physics changes across D1's four dimensions in ways not reducible to particle density. | [T7](tests/T7-overlapping-causal-domains.md), exploration |
 | [H-Soft-Boundary](explorations/heliosphere-as-finality-domain.md) | potential_byproduct | open | Finality-domain boundaries fall on a continuous permeability spectrum: the heliopause (bidirectional, character-changing) and the event horizon (one-way, capped) are two points on it. Extends B1 with a boundary-permeability parameter. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
@@ -192,4 +192,30 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - T30 keeps PO1 `partially_supported` but strengthens evidence within that
   status after hostile non-physics validation: Git and financial risk positive
   toy instances, translator/poet anti-overclaim boundary.
+- T31 narrows PO1 through a seven-condition admissibility checklist.
+- T32 compresses the checklist into a four-principle basis: typed pair,
+  definable projection, projection-created nontrivial obstruction, and
+  informative forgotten structure. AC4 derives from AC6; AC5 remains the
+  non-intrinsic guard.
 - Guardrail: PO1 does not prove or replace any original physical no-go theorem.
+
+### 2026-06-18 - PO1 Foundational Derivation (T33)
+
+- PO1 remains `partially_supported`, now reclassifiable as a partially derived theorem.
+- T33 tests six hypotheses (H0-H5) about whether IPT and RMT explain AC1-AC7.
+  Best-supported hypothesis: H3 (both IPT and RMT required; neither alone is
+  sufficient). H0 and H5 rejected; H1 and H2 partially supported; H4 is a
+  boundary rephrasing of H3.
+- IPT (Invariant-Preservation Theorem) derives: AC1, AC2, AC3, AC4 (via AC6),
+  AC5-measurable.
+- RMT (Resource-Monotonicity Theorem) derives: AC4, AC5-measurable, AC6, AC7.
+- AC5-naming (the obligation that `forgotten_structure` be non-empty) is the
+  only condition derivable by neither framework. It requires ProjectionCase
+  metadata outside D1RestrictionSystem.
+- T33 recommends promoting AC5-naming to Principle P5 (Informative Forgetting),
+  making PO1 a partially derived theorem: valid typed morphism (IPT) + strict
+  global satisfiability resource decrease (RMT) + named mechanism (P5).
+- Three finite counterexamples confirm the IPT/RMT boundary: (1) AC5-naming not
+  derivable from RMT, (2) AC3 not derivable from RMT, (3) AC6 not required by IPT.
+- All four T31 positive cases (witten_1981, nielsen_ninomiya, cap_theorem,
+  git_semantic_merge) show strict resource decrease (R=1 → R=0).

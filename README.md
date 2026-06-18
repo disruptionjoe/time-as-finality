@@ -77,6 +77,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - reusable finite Projection-Obstruction Schema extracted from T27.
 - [TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md](TECHNICAL-REPORT-cross-domain-projection-obstruction-validation-v0.1.md)
   - hostile non-physics validation of PO1 with Git, financial risk, and translator/poet cases.
+- [TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md](TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md)
+  - PO1 admissibility checklist and reclassification across T27-T30 cases.
+- [TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md](TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md)
+  - derivation audit showing AC4 follows from AC6 and PO1 compresses to a four-principle basis.
+- [TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md)
+  - IPT/RMT hypothesis matrix (H0-H5); H3 best supported; AC5-naming recommended as Principle P5.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -144,6 +150,9 @@ python -m models.run_t27
 python -m models.run_t28
 python -m models.run_t29
 python -m models.run_t30
+python -m models.run_t31
+python -m models.run_t32
+python -m models.run_t33
 ```
 
 ## Citation / Reuse

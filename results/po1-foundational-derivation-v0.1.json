@@ -1,0 +1,359 @@
+{
+  "t32_basis_summary": {
+    "minimal_condition_basis": [
+      "AC1",
+      "AC2",
+      "AC3",
+      "AC5",
+      "AC6",
+      "AC7"
+    ],
+    "compressed_principle_basis": [
+      "P1_typed_pair",
+      "P2_definable_projection",
+      "P3_projection_created_obstruction",
+      "P4_informative_forgetting"
+    ],
+    "best_supported_hypothesis": "H2 with H4 boundary",
+    "feasible_subset_count": 96,
+    "impossible_subset_count": 32
+  },
+  "resource_monotones": [
+    {
+      "name": "witten_1981",
+      "richer_value": 1,
+      "restricted_value": 0,
+      "is_non_increasing": true,
+      "is_strictly_decreasing": true,
+      "witness": "global_assignment_exists: True -> False"
+    },
+    {
+      "name": "nielsen_ninomiya",
+      "richer_value": 1,
+      "restricted_value": 0,
+      "is_non_increasing": true,
+      "is_strictly_decreasing": true,
+      "witness": "global_assignment_exists: True -> False"
+    },
+    {
+      "name": "cap_theorem",
+      "richer_value": 1,
+      "restricted_value": 0,
+      "is_non_increasing": true,
+      "is_strictly_decreasing": true,
+      "witness": "global_assignment_exists: True -> False"
+    },
+    {
+      "name": "git_semantic_merge",
+      "richer_value": 1,
+      "restricted_value": 0,
+      "is_non_increasing": true,
+      "is_strictly_decreasing": true,
+      "witness": "global_assignment_exists: True -> False"
+    }
+  ],
+  "projection_actions": [
+    {
+      "morphism_name": "ac5_naming_witness",
+      "resource_decreases": true,
+      "resource_strictly_lost": false,
+      "invariant_class_changes": true,
+      "local_profiles_preserved": false
+    },
+    {
+      "morphism_name": "partial_site_map_witness",
+      "resource_decreases": true,
+      "resource_strictly_lost": false,
+      "invariant_class_changes": true,
+      "local_profiles_preserved": true
+    },
+    {
+      "morphism_name": "ipt_no_ac6_witness",
+      "resource_decreases": false,
+      "resource_strictly_lost": false,
+      "invariant_class_changes": false,
+      "local_profiles_preserved": true
+    }
+  ],
+  "ac_derivation_attempts": [
+    {
+      "condition_id": "AC1",
+      "principle_id": "IPT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC1 is the IPT domain-of-discourse obligation: the richer system must be a valid D1RestrictionSystem (a well-typed invariant carrier). IPT can only track invariant change if the source is well-formed.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC2",
+      "principle_id": "IPT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC2 is the IPT codomain obligation: the restricted system must also satisfy all T26 axioms. Invariant comparison is vacuous if the target is ill-typed.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC3",
+      "principle_id": "IPT",
+      "derivation_status": "derived",
+      "proof_sketch": "IPT requires a definable map between invariant carriers. A total site map is exactly what makes a finite restriction morphism definable. Without AC3 there is no projection to analyze for invariant change.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC4",
+      "principle_id": "IPT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC4 derives from AC6 by T26 semantics (T32 result). AC6 entails local_patches_satisfiable=True by the definition of obstruction_detected. IPT inherits this via AC6.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC5_measurable",
+      "principle_id": "IPT",
+      "derivation_status": "partially_derived",
+      "proof_sketch": "IPT detects measurable profile loss (local_profiles_preserved=False) because the invariant carrier changes structure. However the named-structure half of AC5 requires ProjectionCase.forgotten_structure metadata that lives outside the D1RestrictionSystem lattice IPT operates over.",
+      "counterexample": "See ac5_naming_independence_counterexample."
+    },
+    {
+      "condition_id": "AC5_naming",
+      "principle_id": "IPT",
+      "derivation_status": "independent",
+      "proof_sketch": "The naming obligation of AC5 (forgotten_structure non-empty) is not derivable from IPT. IPT can confirm structure changed but not that the change was named and documented. This is a methodological transparency condition.",
+      "counterexample": "See ac5_naming_independence_counterexample."
+    },
+    {
+      "condition_id": "AC6",
+      "principle_id": "IPT",
+      "derivation_status": "partially_derived",
+      "proof_sketch": "IPT confirms AC6 follows if the restricted system has a different invariant level (H^1 vs H^0/none). However IPT does not by itself require the restricted system to be obstructed rather than just weaker.",
+      "counterexample": "See ac6_no_ipt_requirement_counterexample."
+    },
+    {
+      "condition_id": "AC7",
+      "principle_id": "IPT",
+      "derivation_status": "partially_derived",
+      "proof_sketch": "IPT requires the source (richer) system to have a non-degenerate invariant level. AC7 (global section exists) is compatible with IPT's domain requirement but IPT does not directly require AC7 to hold.",
+      "counterexample": "See ac7_no_ipt_requirement_counterexample."
+    },
+    {
+      "condition_id": "AC1",
+      "principle_id": "RMT",
+      "derivation_status": "partially_derived",
+      "proof_sketch": "RMT requires a well-typed richer system so that global_witness_count is meaningful. However the explicit axiom check for all T26 conditions goes beyond what RMT directly demands; RMT only needs the resource to be computable.",
+      "counterexample": "See rmt_insufficient_for_ac1_ac2_ac3_counterexample."
+    },
+    {
+      "condition_id": "AC2",
+      "principle_id": "RMT",
+      "derivation_status": "partially_derived",
+      "proof_sketch": "Same as AC1: RMT requires a computable restricted resource but does not enforce all T26 axioms on the restricted system.",
+      "counterexample": "See rmt_insufficient_for_ac1_ac2_ac3_counterexample."
+    },
+    {
+      "condition_id": "AC3",
+      "principle_id": "RMT",
+      "derivation_status": "not_applicable",
+      "proof_sketch": "RMT is agnostic about whether the projection map is total. It tracks the resource before and after restriction regardless of how the restriction is specified. AC3 (total site map) is not derivable from RMT.",
+      "counterexample": "A partial site map still produces a restricted system with a computable resource."
+    },
+    {
+      "condition_id": "AC4",
+      "principle_id": "RMT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC4 derives from AC6 by T26 semantics (T32 result). RMT produces AC6 (strict resource decrease), and AC4 is a logical consequence of AC6.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC5_measurable",
+      "principle_id": "RMT",
+      "derivation_status": "derived",
+      "proof_sketch": "Resource strictly decreasing (global_witness_count drops from positive to zero) implies local_profiles_preserved=False for any morphism tracking the resource. The measurable-loss condition is a consequence of strict resource monotonicity.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC5_naming",
+      "principle_id": "RMT",
+      "derivation_status": "independent",
+      "proof_sketch": "RMT tracks quantity (global_witness_count) not named mechanism. A projection can show strict resource decrease without naming what was forgotten. The naming obligation requires ProjectionCase.forgotten_structure metadata.",
+      "counterexample": "See ac5_naming_independence_counterexample."
+    },
+    {
+      "condition_id": "AC6",
+      "principle_id": "RMT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC6 (restricted system obstructed) is exactly the statement that the resource dropped to zero on the restricted side. RMT directly characterizes this: a strict decrease from positive to zero means obstruction_detected=True.",
+      "counterexample": ""
+    },
+    {
+      "condition_id": "AC7",
+      "principle_id": "RMT",
+      "derivation_status": "derived",
+      "proof_sketch": "AC7 (richer system unobstructed) is the statement that the resource was positive before projection. RMT requires richer_value > 0 as the precondition for strict monotone decrease. AC6+AC7 together characterize the resource drop.",
+      "counterexample": ""
+    }
+  ],
+  "hypothesis_verdicts": [
+    {
+      "hypothesis_id": "H0",
+      "hypothesis_statement": "AC1-AC7 are independent empirical conditions with no deeper derivation.",
+      "verdict": "rejected",
+      "conditions_covered": [],
+      "conditions_uncovered": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4",
+        "AC5_measurable",
+        "AC6",
+        "AC7"
+      ],
+      "evidence_summary": "AC4 derives from AC6 by T26 semantics (T32). AC1-AC3 derive from IPT typing obligations. AC6 and AC7 derive from RMT resource polarity. Only AC5-naming is genuinely independent. H0 is too pessimistic."
+    },
+    {
+      "hypothesis_id": "H1",
+      "hypothesis_statement": "All conditions arise from invariant-preservation (IPT) alone.",
+      "verdict": "partially_supported",
+      "conditions_covered": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4",
+        "AC5_measurable",
+        "AC6",
+        "AC7"
+      ],
+      "conditions_uncovered": [
+        "AC5_naming"
+      ],
+      "evidence_summary": "IPT derives AC1-AC4 and the measurable-loss half of AC5. IPT does not directly derive AC6 and AC7 as requirements (only as compatible consequences). H1 alone is insufficient for the obstruction polarity conditions."
+    },
+    {
+      "hypothesis_id": "H2",
+      "hypothesis_statement": "All conditions arise from resource monotonicity (RMT) alone.",
+      "verdict": "partially_supported",
+      "conditions_covered": [
+        "AC1",
+        "AC2",
+        "AC4",
+        "AC5_measurable",
+        "AC6",
+        "AC7"
+      ],
+      "conditions_uncovered": [
+        "AC3",
+        "AC5_naming"
+      ],
+      "evidence_summary": "RMT derives AC4, AC5-measurable, AC6, AC7 cleanly. RMT does not derive AC3 (total site map is a morphism definition, not a resource constraint) or provide the full T26 axiom checks for AC1 and AC2. H2 alone is insufficient."
+    },
+    {
+      "hypothesis_id": "H3",
+      "hypothesis_statement": "Both IPT and RMT are required; neither alone is sufficient.",
+      "verdict": "supported",
+      "conditions_covered": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4",
+        "AC5_measurable",
+        "AC6",
+        "AC7"
+      ],
+      "conditions_uncovered": [
+        "AC5_naming"
+      ],
+      "evidence_summary": "IPT covers AC1-AC4 (typing + definability). RMT covers AC4-AC7 and AC5-measurable. Together they explain all conditions except AC5-naming. The residual (AC5-naming) is a methodological transparency condition that is not derivable from either framework. H3 is the best-supported verdict."
+    },
+    {
+      "hypothesis_id": "H4",
+      "hypothesis_statement": "A single deeper principle explains all conditions more economically than H3.",
+      "verdict": "boundary",
+      "conditions_covered": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4",
+        "AC5_measurable",
+        "AC6",
+        "AC7"
+      ],
+      "conditions_uncovered": [
+        "AC5_naming"
+      ],
+      "evidence_summary": "The 'local-to-global resource consistency' framing unifies IPT and RMT at a higher level of abstraction. However this unification does not reduce the number of unexplained conditions (AC5-naming remains). H4 is a rephrasing of H3 at a higher level of abstraction, not a genuinely distinct result."
+    },
+    {
+      "hypothesis_id": "H5",
+      "hypothesis_statement": "No derivation from these principles is currently justified.",
+      "verdict": "rejected",
+      "conditions_covered": [],
+      "conditions_uncovered": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4",
+        "AC5_measurable",
+        "AC5_naming",
+        "AC6",
+        "AC7"
+      ],
+      "evidence_summary": "Multiple conditions are demonstrably derivable: AC4 from T26 semantics, AC6+AC7 from RMT, AC1-AC3 from IPT. H5 is too pessimistic given the evidence."
+    }
+  ],
+  "counterexamples": [
+    {
+      "name": "ac5_naming_independence_counterexample",
+      "principle_tested": "RMT",
+      "condition_not_derived": "AC5_naming",
+      "case_description": "Rich system (D1Profile(2,2,1,2), no obstruction) projects to restricted system (D1Profile(1,1,0,1), 3-patch gluing obstruction). Resource drops from positive to zero; profiles differ measurably. forgotten_structure=() so AC5=False despite complete resource decrease.",
+      "admissibility_verdict": "non_admissible_no_forgotten_structure",
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": true
+      },
+      "what_it_shows": "Resource monotonicity (global_witness_count drop) plus measurable profile loss do not entail the naming obligation. AC5-naming requires ProjectionCase metadata beyond what D1RestrictionSystem or RMT tracks."
+    },
+    {
+      "name": "rmt_insufficient_for_ac3_counterexample",
+      "principle_tested": "RMT",
+      "condition_not_derived": "AC3",
+      "case_description": "Rich and restricted systems with resource drop, but site_map omits C. RMT records a resource decrease (positive to zero) but the morphism analysis marks site_map_total=False.",
+      "admissibility_verdict": "boundary_non_definable",
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": false,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      },
+      "what_it_shows": "Resource decrease does not imply definability of the projection. AC3 (total site map) requires IPT's morphism-definition obligation, not RMT's quantitative resource tracking."
+    },
+    {
+      "name": "ipt_insufficient_for_ac6_counterexample",
+      "principle_tested": "IPT",
+      "condition_not_derived": "AC6",
+      "case_description": "Rich system (D1Profile(2,2,1,2), no obstruction). Restricted system (D1Profile(1,1,0,1), no patches, no obstruction). IPT validates the typed pair and definable projection. AC6=False: no restricted obstruction.",
+      "admissibility_verdict": "non_admissible_no_new_obstruction",
+      "ac_vector": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      },
+      "what_it_shows": "IPT validates structural invariant change but does not require the restricted system to be obstructed. The obstruction polarity requirement (AC6+AC7) comes from RMT, not IPT."
+    }
+  ],
+  "smallest_theorem_candidate": "SMALLER THEOREM CANDIDATE: Given a valid morphism f: S_r -> S between valid D1RestrictionSystems (AC1-AC3 satisfied), if S has a global section (AC7) and S_r has a proper H^1 finite gluing obstruction (AC6), then f witnesses a strict decrease in the global satisfiability resource R = [global_witness_count > 0]. A full PO1 instance additionally requires the mechanism of decrease to be identified by name (AC5). AC5 decomposes: the measurable-loss half follows from RMT; the naming half is a methodological transparency condition that neither IPT nor RMT entail.",
+  "remaining_independence": [
+    "AC5_naming"
+  ],
+  "best_hypothesis": "H3",
+  "recommendation": "PO1 should be treated as a partially derived theorem. AC1-AC4, AC6, AC7 and AC5-measurable are derivable from IPT+RMT. AC5-naming is a methodological transparency condition that should be promoted to a first-class named obligation (Principle P5) rather than treated as an empirical guard. Consider revising PO1 to read: 'A projection is a PO1 instance iff it is a valid typed morphism (IPT) witnessing strict resource decrease (RMT) with named mechanism (P5).'",
+  "negative_results_note": "Three counterexamples confirm that neither IPT nor RMT alone is sufficient: (1) AC5-naming is not captured by RMT resource tracking; (2) AC3 (total site map) is not derivable from RMT alone; (3) AC6 (restricted obstruction) is not required by IPT alone. These negative results precisely mark the boundary between H3 and the rejected H1/H2 single-principle hypotheses."
+}

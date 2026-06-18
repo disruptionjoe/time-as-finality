@@ -51,6 +51,18 @@
 - **Completed v0.1:** implement
   [T30](tests/T30-cross-domain-projection-obstruction-validation.md) as
   hostile non-physics validation of PO1.
+- **Completed v0.1:** implement
+  [T31](tests/T31-po1-admissibility-conditions.md) as the PO1 admissibility
+  checklist and unified case reclassification.
+- **Completed v0.1:** implement
+  [T32](tests/T32-admissibility-derivation.md) as the PO1 admissibility
+  derivation audit, minimal basis check, and generated counterexample suite.
+- **Completed v0.1:** implement
+  [T33](tests/T33-po1-foundational-derivation.md) as the PO1 foundational
+  derivation audit: IPT/RMT hypothesis matrix (H0-H5), resource monotone
+  witnesses, three finite counterexamples, and Principle P5 recommendation.
+  Best hypothesis H3: both IPT and RMT required; AC5-naming is the only
+  remaining non-derivable condition.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -85,11 +97,12 @@
 
 ## Best First Contributions
 
-1. Formalize [PO1](claims/PO1-projection-obstruction-schema.md)
-   admissibility criteria after
-   [T30](tests/T30-cross-domain-projection-obstruction-validation.md). The
-   next useful target is a second independently motivated non-physics positive
-   instance, plus a proof that three-patch contradictions alone are not enough.
+1. Make PO1's forgotten-structure guard first-class as Principle P5. T33
+   confirms that AC5-naming is the only condition not derivable from IPT or
+   RMT. The next target: formalize P5 (Informative Forgetting) as a first-class
+   obligation inside the PO1 schema, and add a proof that resource decrease
+   (RMT) alone does not suffice — manufactured obstruction without named
+   mechanism remains a risk for overcounting.
 2. Define composition laws for
    [T26](tests/T26-d1-restriction-system.md) restriction morphisms. Check
    associativity, identity morphisms, obstruction preservation, and whether
@@ -170,6 +183,8 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T28](tests/T28-cap-theorem-bridge.md): CAP Theorem Bridge - distributed-systems bridge showing the same finite chaining obstruction as Nielsen-Ninomiya.
 - [T29](tests/T29-projection-obstruction-schema.md): Projection-Obstruction Schema - reusable finite schema extracted from T27 with boundary tests.
 - [T30](tests/T30-cross-domain-projection-obstruction-validation.md): Cross-Domain Projection-Obstruction Validation - hostile non-physics PO1 validation with Git and financial risk positives plus a translator/poet anti-overclaim boundary.
+- [T31](tests/T31-po1-admissibility-conditions.md): PO1 Admissibility Conditions - seven-condition admissibility checklist and T27-T30 reclassification.
+- [T32](tests/T32-admissibility-derivation.md): PO1 Admissibility Derivation - dependency graph, minimal basis, and generated counterexample suite for AC1-AC7.
 
 ### New Open Problems
 

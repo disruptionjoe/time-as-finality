@@ -55,6 +55,11 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > stress test for the same finite obstruction pattern.
 > [T30](tests/T30-cross-domain-projection-obstruction-validation.md) hostile-tests
 > PO1 in non-physics domains and keeps the claim constrained.
+> [T31](tests/T31-po1-admissibility-conditions.md) identifies the PO1
+> admissibility checklist, and
+> [T32](tests/T32-admissibility-derivation.md) derives AC4 from AC6 while
+> compressing the checklist into a four-principle basis with AC5 as the
+> non-intrinsic guard.
 
 ## Primitive Inventory
 
@@ -371,6 +376,60 @@ status. Future positive instances must show that the projection is
 independently motivated, that the forgotten structure is exactly what resolves
 the restricted obstruction, and that loss of meaning alone is not being
 misread as finite gluing obstruction.
+
+T31 defines seven admissibility conditions:
+
+| Condition | Meaning |
+| --- | --- |
+| AC1 | richer system satisfies all T26 axioms |
+| AC2 | restricted system satisfies all T26 axioms |
+| AC3 | projection is definable by a total site map |
+| AC4 | restricted patches are locally satisfiable |
+| AC5 | projection forgets named structure and loses measurable profile data |
+| AC6 | restricted system has a gluing obstruction |
+| AC7 | richer system has a global section |
+
+T32 derives the smaller formal basis:
+
+```text
+AC1 + AC2 + AC3 + AC5 + AC6 + AC7
+```
+
+because `AC6` already implies `AC4` in T26:
+
+```text
+obstruction_detected = local_patches_satisfiable and not global_assignment_exists
+```
+
+At the principle level, PO1 now has four admissibility principles:
+
+| Principle | Generates | Status |
+| --- | --- | --- |
+| typed restriction-system pair | AC1, AC2 | intrinsic to D1RestrictionSystem |
+| definable finite projection | AC3 | intrinsic to D1RestrictionMorphism |
+| projection-created nontrivial obstruction | AC4, AC6, AC7 | intrinsic to global-section polarity |
+| informative forgotten structure | AC5 | requires ProjectionCase metadata |
+
+Thus AC1-AC7 remain the readable audit checklist, but AC4 is a derived
+checklist line, not an independent theorem hypothesis. AC5 remains necessary
+and not derivable from `D1RestrictionSystem` alone until forgotten structure is
+made first-class inside the formal object.
+
+T33 derives the conditions from two deeper frameworks:
+
+| Framework | Derives |
+| --- | --- |
+| IPT (Invariant-Preservation) | AC1, AC2, AC3, AC4 (via AC6), AC5-measurable (partial) |
+| RMT (Resource-Monotonicity) | AC4, AC5-measurable, AC6, AC7 |
+
+The global satisfiability resource is R = `global_assignment_exists`. A PO1
+projection witnesses a strict decrease: R(richer) = 1 → R(restricted) = 0.
+Together IPT and RMT explain all conditions except the naming half of AC5. That
+naming obligation — that `ProjectionCase.forgotten_structure` must be non-empty
+— is not derivable from either framework. T33 recommends it be promoted to
+Principle P5 (Informative Forgetting), making PO1 a partially derived theorem:
+valid typed morphism (IPT) + strict resource decrease (RMT) + named mechanism
+(P5). Best-supported hypothesis: H3 (both IPT and RMT required).
 
 ## D1 Physical Reduction Map
 

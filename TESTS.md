@@ -29,6 +29,9 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T28](tests/T28-cap-theorem-bridge.md) | CAP theorem bridge | D1RestrictionSystem, PO1, T27 | implemented: CAP as finite gluing obstruction with NN structural comparison |
 | [T29](tests/T29-projection-obstruction-schema.md) | Projection-Obstruction Schema | PO1, T26, T27 | implemented: finite schema with positive and boundary cases |
 | [T30](tests/T30-cross-domain-projection-obstruction-validation.md) | Cross-domain projection-obstruction validation | PO1, T29 | implemented: hostile non-physics validation with Git and financial risk positives plus translator/poet boundary |
+| [T31](tests/T31-po1-admissibility-conditions.md) | PO1 admissibility conditions | PO1, T29, T30 | implemented: seven-condition admissibility checklist and case reclassification |
+| [T32](tests/T32-admissibility-derivation.md) | PO1 admissibility derivation | PO1, T31 | implemented: AC dependency graph, minimal basis, and generated subset counterexamples |
+| [T33](tests/T33-po1-foundational-derivation.md) | PO1 foundational derivation | PO1, T32 | implemented: IPT/RMT hypothesis matrix (H0-H5); H3 best supported; AC5-naming recommended as Principle P5 |
 
 ## Minimum Compatibility Constraints
 
@@ -66,6 +69,9 @@ python -m models.run_t27
 python -m models.run_t28
 python -m models.run_t29
 python -m models.run_t30
+python -m models.run_t31
+python -m models.run_t32
+python -m models.run_t33
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -87,6 +93,8 @@ The suites use only Python's standard library. Evidence records:
 - [CAP Theorem Bridge v0.1 Results](results/cap-theorem-bridge-v0.1-results.md)
 - [Projection-Obstruction Schema v0.1 Results](results/projection-obstruction-schema-v0.1-results.md)
 - [Cross-Domain Projection-Obstruction Validation v0.1 Results](results/cross-domain-projection-obstruction-validation-v0.1-results.md)
+- [PO1 Admissibility Conditions v0.1 Results](results/po1-admissibility-conditions-v0.1-results.md)
+- [PO1 Admissibility Derivation v0.1 Results](results/po1-admissibility-derivation-v0.1-results.md)
 
 ## How To Add A Test
 

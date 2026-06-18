@@ -1,0 +1,3699 @@
+﻿{
+  "best_supported_hypothesis": "H2 with H4 boundary",
+  "compressed_principle_basis": [
+    "P1_typed_pair",
+    "P2_definable_projection",
+    "P3_projection_created_obstruction",
+    "P4_informative_forgetting"
+  ],
+  "condition_derivations": [
+    {
+      "condition_id": "AC1",
+      "derivation_status": "derived_from_type_principle_but_independent_as_a_check",
+      "derived_from": [
+        "P1_typed_pair"
+      ],
+      "independence_witness": "remove_ac1_case",
+      "proof": "If PO1 is stated over D1RestrictionSystem pairs, richer validity is part of the domain of discourse."
+    },
+    {
+      "condition_id": "AC2",
+      "derivation_status": "derived_from_type_principle_but_independent_as_a_check",
+      "derived_from": [
+        "P1_typed_pair"
+      ],
+      "independence_witness": "remove_ac2_case",
+      "proof": "If PO1 is stated over D1RestrictionSystem pairs, restricted validity is part of the domain of discourse."
+    },
+    {
+      "condition_id": "AC3",
+      "derivation_status": "derived_from_projection_definability",
+      "derived_from": [
+        "P2_definable_projection"
+      ],
+      "independence_witness": "remove_ac3_case",
+      "proof": "A finite projection cannot be evaluated unless every source site has a target site."
+    },
+    {
+      "condition_id": "AC4",
+      "derivation_status": "derived_from_AC6",
+      "derived_from": [
+        "AC6",
+        "global_section.obstruction_detected"
+      ],
+      "independence_witness": "no feasible D1RestrictionSystem case with AC6=True and AC4=False",
+      "proof": "T26 defines obstruction_detected as local_satisfiable and not global_exists, so AC6 entails AC4."
+    },
+    {
+      "condition_id": "AC5",
+      "derivation_status": "not_derived_from_D1RestrictionSystem_alone",
+      "derived_from": [
+        "P4_informative_forgetting"
+      ],
+      "independence_witness": "remove_ac5_case",
+      "proof": "A restriction system can show profile loss, but named forgotten structure is external ProjectionCase evidence."
+    },
+    {
+      "condition_id": "AC6",
+      "derivation_status": "independent_gluing_requirement",
+      "derived_from": [
+        "P3_projection_created_obstruction"
+      ],
+      "independence_witness": "remove_ac6_case",
+      "proof": "The other conditions can hold while the restricted system has a global section."
+    },
+    {
+      "condition_id": "AC7",
+      "derivation_status": "independent_resolution_requirement",
+      "derived_from": [
+        "P3_projection_created_obstruction"
+      ],
+      "independence_witness": "remove_ac7_case",
+      "proof": "The other conditions can hold while the richer system is already obstructed."
+    }
+  ],
+  "dependency_edges": [
+    {
+      "reason": "A PO1 candidate must first have a well-formed richer D1RestrictionSystem.",
+      "relation": "generates",
+      "source": "P1_typed_pair",
+      "target": "AC1"
+    },
+    {
+      "reason": "A PO1 candidate must also have a well-formed restricted D1RestrictionSystem.",
+      "relation": "generates",
+      "source": "P1_typed_pair",
+      "target": "AC2"
+    },
+    {
+      "reason": "Projection is finite and definable exactly when the site map is total.",
+      "relation": "generates",
+      "source": "P2_definable_projection",
+      "target": "AC3"
+    },
+    {
+      "reason": "The restricted target must have a finite gluing obstruction.",
+      "relation": "generates",
+      "source": "P3_projection_created_obstruction",
+      "target": "AC6"
+    },
+    {
+      "reason": "In T26, obstruction_detected means local patches are satisfiable and no global assignment exists.",
+      "relation": "implies",
+      "source": "AC6",
+      "target": "AC4"
+    },
+    {
+      "reason": "The richer source must have a global section, so the obstruction is not inherited.",
+      "relation": "generates",
+      "source": "P3_projection_created_obstruction",
+      "target": "AC7"
+    },
+    {
+      "reason": "Forgotten named structure is stored on ProjectionCase, not inside D1RestrictionSystem alone.",
+      "relation": "generates_with_extra_metadata",
+      "source": "P4_informative_forgetting",
+      "target": "AC5"
+    }
+  ],
+  "minimal_condition_basis": [
+    "AC1",
+    "AC2",
+    "AC3",
+    "AC5",
+    "AC6",
+    "AC7"
+  ],
+  "recommendation": "Replace the independent seven-condition posture with a four-principle basis: typed pair, definable projection, projection-created nontrivial obstruction, and informative forgotten structure. Keep the AC1-AC7 checklist as an expanded audit surface, but fold AC4 into AC6 in formal statements. Retain AC5 as an explicit non-intrinsic admissibility guard until forgotten structure is made first-class inside the formal object.",
+  "removal_audits": [
+    {
+      "conclusion": "Without AC1, remove_ac1_case admits an invalid typed object as PO1 evidence.",
+      "failure_class": "non_admissible_system_invalid",
+      "newly_admitted_false_positives": [
+        "remove_ac1_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC1"
+    },
+    {
+      "conclusion": "Without AC2, remove_ac2_case admits an invalid typed object as PO1 evidence.",
+      "failure_class": "non_admissible_system_invalid",
+      "newly_admitted_false_positives": [
+        "remove_ac2_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC2"
+    },
+    {
+      "conclusion": "Without AC3, remove_ac3_case admits a category-change boundary as a projection.",
+      "failure_class": "boundary_non_definable",
+      "newly_admitted_false_positives": [
+        "remove_ac3_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC3"
+    },
+    {
+      "conclusion": "Removing AC4 changes no classification because AC6 already implies local satisfiability in the executable definition.",
+      "failure_class": "none_under_current_T26_semantics",
+      "newly_admitted_false_positives": [],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC4"
+    },
+    {
+      "conclusion": "Without AC5, remove_ac5_case admits a lossless or unnamed projection as PO1 evidence.",
+      "failure_class": "non_admissible_no_forgotten_structure",
+      "newly_admitted_false_positives": [
+        "remove_ac5_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC5"
+    },
+    {
+      "conclusion": "Without AC6, remove_ac6_case admits a projection where the restricted system is not obstructed.",
+      "failure_class": "non_admissible_no_new_obstruction",
+      "newly_admitted_false_positives": [
+        "remove_ac6_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC6"
+    },
+    {
+      "conclusion": "Without AC7, remove_ac7_case admits a shared obstruction as projection-created.",
+      "failure_class": "non_admissible_shared_obstruction",
+      "newly_admitted_false_positives": [
+        "remove_ac7_case"
+      ],
+      "newly_rejected_true_positives": [],
+      "removed_condition": "AC7"
+    }
+  ],
+  "structural_principles": [
+    {
+      "boundary": "This is a typing obligation, not a discovered empirical rule.",
+      "generates_conditions": [
+        "AC1",
+        "AC2"
+      ],
+      "name": "Typed restriction-system pair",
+      "principle_id": "P1_typed_pair",
+      "statement": "Both source and target must satisfy the T26 finite restriction-system axioms.",
+      "status": "intrinsic_to_D1RestrictionSystem"
+    },
+    {
+      "boundary": "Category-change cases fail here rather than becoming negative PO1 examples.",
+      "generates_conditions": [
+        "AC3"
+      ],
+      "name": "Definable finite projection",
+      "principle_id": "P2_definable_projection",
+      "statement": "A projection must have a total site map into the restricted system.",
+      "status": "intrinsic_to_D1RestrictionMorphism"
+    },
+    {
+      "boundary": "AC4 is redundant once AC6 uses T26 obstruction_detected.",
+      "generates_conditions": [
+        "AC4",
+        "AC6",
+        "AC7"
+      ],
+      "name": "Projection-created nontrivial obstruction",
+      "principle_id": "P3_projection_created_obstruction",
+      "statement": "The restricted system is obstructed and the richer system is not.",
+      "status": "intrinsic_to_global_section_polarity"
+    },
+    {
+      "boundary": "The named-forgotten-structure half lives on ProjectionCase metadata.",
+      "generates_conditions": [
+        "AC5"
+      ],
+      "name": "Informative forgotten structure",
+      "principle_id": "P4_informative_forgetting",
+      "statement": "The projection must forget named structure and measurably lose profile data.",
+      "status": "not_intrinsic_to_D1RestrictionSystem_alone"
+    }
+  ],
+  "subset_generation": {
+    "generated_examples": [
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_000_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_000_0000000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_001_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_001_0000001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_004_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_004_0000100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_005_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_005_0000101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_008_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_008_0001000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_009_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_009_0001001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_010_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_010_0001010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_011_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_011_0001011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_012_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_012_0001100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_013_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_013_0001101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_014_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_014_0001110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_015_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_015_0001111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      }
+    ],
+    "generated_feasible_vectors": 96,
+    "generated_vectors": [
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_000_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_000_0000000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_001_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_001_0000001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_004_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_004_0000100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_005_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_005_0000101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_008_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_008_0001000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_009_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_009_0001001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_010_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_010_0001010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_011_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_011_0001011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_012_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_012_0001100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_013_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_013_0001101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_014_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_014_0001110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_015_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_015_0001111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_016_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_016_0010000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_017_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_017_0010001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_020_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_020_0010100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_021_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_021_0010101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_024_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_024_0011000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_025_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_025_0011001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_026_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_026_0011010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_027_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_027_0011011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_028_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_028_0011100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_029_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_029_0011101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_030_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_030_0011110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_031_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_031_0011111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_032_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_032_0100000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_033_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_033_0100001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_036_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_036_0100100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_037_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_037_0100101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_040_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_040_0101000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_041_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_041_0101001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_042_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_042_0101010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_043_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_043_0101011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_044_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_044_0101100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_045_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_045_0101101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_046_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_046_0101110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_047_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_047_0101111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_048_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_048_0110000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_049_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_049_0110001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_052_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_052_0110100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_053_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_053_0110101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_056_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_056_0111000",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_057_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_057_0111001",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_058_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_058_0111010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_059_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_059_0111011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_060_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_060_0111100",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_061_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_061_0111101",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_062_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_062_0111110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_063_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_063_0111111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_064_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_064_1000000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_065_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_065_1000001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_068_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_068_1000100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_069_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_069_1000101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_072_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_072_1001000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_073_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_073_1001001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_074_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_074_1001010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_075_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_075_1001011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_076_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_076_1001100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_077_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_077_1001101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_078_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_078_1001110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_079_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_079_1001111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_080_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_080_1010000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_081_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_081_1010001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_084_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_084_1010100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_085_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_085_1010101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_088_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_088_1011000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_089_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_089_1011001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_090_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_090_1011010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_091_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_091_1011011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_092_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_092_1011100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_093_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_093_1011101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_094_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_094_1011110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_095_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_095_1011111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_system_invalid"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_096_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_096_1100000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_097_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_097_1100001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_100_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_100_1100100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_101_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_101_1100101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_104_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_104_1101000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_105_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_105_1101001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_106_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_106_1101010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_107_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_107_1101011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_108_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_108_1101100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_109_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_109_1101101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_110_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_110_1101110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_111_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_111_1101111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "boundary_non_definable"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_112_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_112_1110000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_113_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_113_1110001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_no_new_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_116_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_116_1110100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_117_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_117_1110101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_no_new_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_120_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_120_1111000",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_121_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_121_1111001",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_no_new_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_122_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_122_1111010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_123_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_123_1111011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "non_admissible_no_forgotten_structure"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "case_name": "subset_124_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_124_1111100",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "case_name": "subset_125_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_125_1111101",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": false,
+          "AC7": true
+        },
+        "verdict": "non_admissible_no_new_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "case_name": "subset_126_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_126_1111110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "non_admissible_shared_obstruction"
+      },
+      {
+        "actual_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "case_name": "subset_127_case",
+        "feasible": true,
+        "note": "generated exact finite ProjectionCase",
+        "subset_id": "subset_127_1111111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": true,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "fully_admissible"
+      }
+    ],
+    "impossibility_rule": "AC6 implies AC4",
+    "impossible_examples": [
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_002_0000010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_003_0000011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_006_0000110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_007_0000111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_018_0010010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_019_0010011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_022_0010110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_023_0010111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_034_0100010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_035_0100011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_038_0100110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_039_0100111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      }
+    ],
+    "impossible_vectors": 32,
+    "impossible_vectors_detail": [
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_002_0000010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_003_0000011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_006_0000110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_007_0000111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_018_0010010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_019_0010011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_022_0010110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_023_0010111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_034_0100010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_035_0100011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_038_0100110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_039_0100111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_050_0110010",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_051_0110011",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_054_0110110",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_055_0110111",
+        "target_conditions": {
+          "AC1": false,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_066_1000010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_067_1000011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_070_1000110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_071_1000111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_082_1010010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_083_1010011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_086_1010110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_087_1010111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": false,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_098_1100010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_099_1100011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_102_1100110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_103_1100111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": false,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_114_1110010",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_115_1110011",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": false,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_118_1110110",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": false
+        },
+        "verdict": "impossible"
+      },
+      {
+        "actual_conditions": {},
+        "case_name": "none",
+        "feasible": false,
+        "note": "AC6 implies AC4 under T26 obstruction_detected semantics.",
+        "subset_id": "subset_119_1110111",
+        "target_conditions": {
+          "AC1": true,
+          "AC2": true,
+          "AC3": true,
+          "AC4": false,
+          "AC5": true,
+          "AC6": true,
+          "AC7": true
+        },
+        "verdict": "impossible"
+      }
+    ],
+    "total_condition_vectors": 128
+  },
+  "theorem_verdict": "AC1-AC7 are not seven independent empirical rules. AC4 derives from AC6; AC1 and AC2 are type obligations; AC3, AC6, and AC7 are structural projection/gluing obligations. AC5 remains an extra informative-loss condition not derivable from D1RestrictionSystem alone."
+}

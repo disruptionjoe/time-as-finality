@@ -3,8 +3,10 @@
 ## Claim
 
 For claims that cross observers, populations, institutions, communication
-networks, scales, or time, D1 should be represented as a field of local D1
-profiles rather than as one global profile.
+networks, scales, or time, D1 requires more than one global profile. T24
+introduced this as a field-valued extension. T25 narrows the best-supported
+minimal object to a finite graph-indexed local-to-global D1 restriction
+system. T26 formalizes that object as `D1RestrictionSystem`.
 
 The local value remains the existing D1 profile:
 
@@ -25,6 +27,33 @@ D1Field(x) = (
 )
 ```
 
+The T25 minimal object is:
+
+```text
+GraphD1Restriction = (
+  local D1 profiles,
+  observer sites,
+  trusted transport edges,
+  optional patch constraints
+)
+```
+
+T26 implements the formal object as:
+
+```text
+D1RestrictionSystem = (
+  sites,
+  local D1 profiles,
+  proposition values,
+  trusted transport edges,
+  optional overlap tests,
+  optional patch constraints,
+  projection maps,
+  compatibility predicate,
+  global-section predicate
+)
+```
+
 ## Class
 
 Formal extension.
@@ -40,6 +69,8 @@ Partially supported.
 - It does not claim one institution or civilization has a literal mind.
 - It does not identify social consensus with physical truth.
 - It does not prove a full sheaf or bundle theory of D1.
+- It does not claim full IPT representation.
+- T26 does not make the restriction system continuous, covariant, or complete.
 
 ## Why It Might Be True
 
@@ -57,6 +88,22 @@ T24 adds direct counterexamples:
 - two scenarios with the same observer-profile vector differ in transport
   because their communication graphs differ;
 - local patches can each be satisfiable while the global assignment fails.
+
+T25 adds a hypothesis audit:
+
+- scalar D1 is retained only for fixed-observer or uniform cases;
+- vector D1 is sufficient only when observer distribution matters but transport
+  and gluing do not;
+- graph-indexed restriction is the smallest structure that handles transport
+  and gluing in the finite evidence;
+- full sheaf language is promising but not yet required.
+
+T26 adds a formal object:
+
+- scalar D1 is an executable projection from `D1RestrictionSystem`;
+- vector D1 is an executable projection that can lose graph and patch data;
+- trusted transport and finite patch constraints are first-class data;
+- restriction morphisms can pass or fail under explicit preservation checks.
 
 ## How It Could Fail
 
@@ -89,12 +136,54 @@ existing D1 profile = local value
 D1 field = extension for multiscale and global claims
 ```
 
+## T25 Result
+
+[T25](../tests/T25-minimal-d1-generalization.md) compares five hypotheses:
+
+```text
+H0: scalar D1 is sufficient
+H1: vector-valued D1 is sufficient
+H2: field-valued D1 is required
+H3: another finite local-to-global structure is required
+H4: no canonical generalization is currently justified
+```
+
+The best-supported hypothesis is:
+
+```text
+H3
+```
+
+The recommendation is to formalize the graph-indexed D1 restriction system
+before attempting full sheaf semantics or full IPT representation.
+
+## T26 Result
+
+[T26](../tests/T26-d1-restriction-system.md) formalizes the T25 result as:
+
+```text
+D1RestrictionSystem
+```
+
+The best-supported hypothesis is:
+
+```text
+H1: finite graph-indexed D1 restriction system is sufficient
+```
+
+T26 reaches scalar recovery, vector recovery, graph necessity, gluing
+obstruction, and restriction-morphism checks. It defers full IPT
+representation because current IPT objects still lack site maps and
+restriction-map commutation data.
+
 ## Tests
 
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
+- [T25: Minimal D1 Generalization](../tests/T25-minimal-d1-generalization.md)
+- [T26: D1 Restriction System](../tests/T26-d1-restriction-system.md)
 
 ## Contribution Needed
 
-Define the field-valued D1 object as a proper graph field, presheaf, or sheaf
-with explicit restriction maps. Then test whether T13/T21 obstruction and T23
-transport share the same field semantics.
+Define composition laws for D1 restriction morphisms. Then test whether T13/T21
+obstruction and T23 transport factor through the same finite restriction
+semantics before upgrading to full sheaf language.

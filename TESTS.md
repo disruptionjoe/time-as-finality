@@ -23,6 +23,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
 | [T23](tests/T23-invariant-preserving-transformations.md) | Invariant-preserving transformations | IPT, D1, Q1, A1, T2, T20, T22 | implemented: typed IPT kernel, composition check, and obstruction witness |
 | [T24](tests/T24-d1-multiscale-observer-field.md) | D1 multiscale observer field | D1, D1-Field, IPT, T13, T21, T23 | implemented: scalar/vector/field audit with transport and gluing counterexamples |
+| [T25](tests/T25-minimal-d1-generalization.md) | Minimal D1 generalization | D1, D1-Field, IPT, T13, T21, T23, T24 | implemented: H0-H4 audit and theorem ladder |
+| [T26](tests/T26-d1-restriction-system.md) | D1 restriction system | D1, D1-Field, IPT, T25 | implemented: finite graph-indexed D1 restriction object and morphism checks |
 
 ## Minimum Compatibility Constraints
 
@@ -54,6 +56,8 @@ python -m models.run_t21
 python -m models.run_t22
 python -m models.run_t23
 python -m models.run_t24
+python -m models.run_t25
+python -m models.run_t26
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -69,6 +73,8 @@ The suites use only Python's standard library. Evidence records:
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)
 - [Invariant-Preserving Transformations v0.1 Results](results/invariant-preserving-transformations-v0.1-results.md)
 - [D1 Multiscale Observer Field v0.1 Results](results/d1-multiscale-observer-field-v0.1-results.md)
+- [Minimal D1 Generalization v0.1 Results](results/minimal-d1-generalization-v0.1-results.md)
+- [D1 Restriction System v0.1 Results](results/d1-restriction-system-v0.1-results.md)
 
 ## How To Add A Test
 

@@ -98,3 +98,10 @@ Artifacts:
 Turn field-valued D1 from a finite audit object into a formal sheaf or graph
 field with explicit restriction maps. Then test whether T13/T21 obstructions
 and T23 invariant transport can be expressed over the same D1 field object.
+
+## T25 Follow-On
+
+[T25](T25-minimal-d1-generalization.md) narrows this recommendation. The next
+formal object should be a finite graph-indexed D1 restriction system. Full
+presheaf or sheaf language remains a candidate, but T25 does not find it
+necessary for the finite evidence yet.

@@ -1,0 +1,388 @@
+{
+  "axioms": [
+    "A1 finite unique observer sites",
+    "A2 one local D1 profile and proposition value per site",
+    "A3 transport edges reference known sites",
+    "A4 patches reference known sites and closed finite variables",
+    "A5 D1 dimensions are nonnegative integers",
+    "A6 compatibility is checked locally before global-section claims",
+    "A7 morphisms preserve declared local dimensions and selected global obstructions"
+  ],
+  "best_supported_hypothesis": "H1",
+  "hypotheses": [
+    "H0: informal graph metadata is sufficient",
+    "H1: finite graph-indexed D1 restriction system is sufficient",
+    "H2: presheaf or sheaf structure is already required",
+    "H3: categorical morphism structure is already required for IPT",
+    "H4: no canonical formalization is currently justified"
+  ],
+  "hypothesis_evaluations": [
+    {
+      "claim": "Informal graph metadata is sufficient.",
+      "evidence_against": [
+        "scalar/vector/transport/gluing checks need typed fields",
+        "morphism failure is only visible with explicit site maps"
+      ],
+      "evidence_for": [
+        "T25 could name the structure informally"
+      ],
+      "hypothesis_id": "H0",
+      "status": "rejected",
+      "verdict": "too weak for the theorem ladder"
+    },
+    {
+      "claim": "Finite graph-indexed D1 restriction system is sufficient.",
+      "evidence_against": [
+        "not yet tested on continuous or covariant domains"
+      ],
+      "evidence_for": [
+        "all T25 scenarios validate",
+        "scalar and vector projections are executable",
+        "transport and gluing failures are detected",
+        "positive and failed morphisms are distinguished"
+      ],
+      "hypothesis_id": "H1",
+      "status": "best_supported",
+      "verdict": "best current formal object"
+    },
+    {
+      "claim": "Presheaf or sheaf structure is already required.",
+      "evidence_against": [
+        "finite patch constraints reproduce the tested obstruction"
+      ],
+      "evidence_for": [
+        "gluing obstruction remains sheaf-compatible"
+      ],
+      "hypothesis_id": "H2",
+      "status": "not_required_by_current_evidence",
+      "verdict": "defer full sheaf semantics until the finite object fails"
+    },
+    {
+      "claim": "Categorical morphism structure is already required for IPT.",
+      "evidence_against": [
+        "current IPT objects lack site maps and restriction-map commutation data"
+      ],
+      "evidence_for": [
+        "T26 defines executable restriction morphisms"
+      ],
+      "hypothesis_id": "H3",
+      "status": "partially_supported_but_deferred",
+      "verdict": "prepare IPT representation work, but do not claim it"
+    },
+    {
+      "claim": "No canonical formalization is currently justified.",
+      "evidence_against": [
+        "one finite object reproduces the T25 theorem ladder"
+      ],
+      "evidence_for": [
+        "full sheaf and full IPT claims remain unearned"
+      ],
+      "hypothesis_id": "H4",
+      "status": "not_best_supported",
+      "verdict": "too pessimistic for current finite evidence"
+    }
+  ],
+  "ipt_readiness": {
+    "missing_requirements": [
+      "site maps on current IPT objects",
+      "restriction-map commutation checks",
+      "obstruction preservation across composed IPTs",
+      "domain-independent morphism typing"
+    ],
+    "reached": false,
+    "ready_for_full_representation": false,
+    "verdict": "T26 defines D1 restriction morphisms, but this is only a readiness step for IPT representation."
+  },
+  "morphism_analyses": [
+    {
+      "interpretation": "declared local and global D1 restriction data are preserved",
+      "local_profiles_preserved": true,
+      "name": "trusted_transport_relabeling",
+      "obstruction": "none",
+      "obstruction_status_preserved": true,
+      "reached": true,
+      "site_map_total": true,
+      "trust_path_preserved": true
+    },
+    {
+      "interpretation": "morphism is blocked by an explicit preservation failure",
+      "local_profiles_preserved": true,
+      "name": "connected_to_partitioned_transport",
+      "obstruction": "trust_path_not_preserved",
+      "obstruction_status_preserved": true,
+      "reached": false,
+      "site_map_total": true,
+      "trust_path_preserved": false
+    }
+  ],
+  "negative_results": [
+    {
+      "attempted_claim": "scalar projection is generally faithful",
+      "boundary": "scalar D1 remains valid as a local or recovered projection",
+      "reflects": "mathematical limit of scalar D1 as a global object",
+      "what_failed": "scalar projection loses observer distribution, graph data, or patch data outside uniform cases",
+      "why_it_failed": "componentwise scalar aggregation has no place to store site-indexed distinctions"
+    },
+    {
+      "attempted_claim": "vector projection is generally faithful",
+      "boundary": "vector D1 remains valid for observer-distribution snapshots",
+      "reflects": "mathematical limit of vector-only D1",
+      "what_failed": "identical vectors can differ in trusted reachability",
+      "why_it_failed": "connected_same_vector and partitioned_same_vector have the same vector but different transport"
+    },
+    {
+      "attempted_claim": "local compatibility implies global section",
+      "boundary": "full sheaf language remains optional, not disproved",
+      "reflects": "finite local-to-global obstruction",
+      "what_failed": "local patch witnesses do not globalize",
+      "why_it_failed": "contextual_gluing_obstruction has local witnesses and zero global witnesses"
+    },
+    {
+      "attempted_claim": "current IPT formalism already has full D1 restriction representation",
+      "boundary": "T26 supplies a target morphism notion for a later IPT upgrade",
+      "reflects": "framework boundary",
+      "what_failed": "T23 IPT objects lack site maps and restriction commutation data",
+      "why_it_failed": "T23 was designed for typed invariant transport, not local-to-global morphisms"
+    }
+  ],
+  "recommendation": "Adopt D1RestrictionSystem as the repo's next formal D1 extension. Keep scalar D1 as the fixed-site or uniform projection, keep vector D1 as the observer-distribution projection, use graph and patch data for transport and gluing claims, and defer full sheaf and full IPT representation claims until morphism composition is tested more broadly.",
+  "system_summaries": [
+    {
+      "edge_count": 5,
+      "global_section_exists": true,
+      "name": "uniform_broadcast",
+      "obstruction_detected": false,
+      "patch_count": 0,
+      "scalar_min_recovered": true,
+      "site_count": 6,
+      "trust_path_exists": true,
+      "vector_faithful_without_graph": true
+    },
+    {
+      "edge_count": 2,
+      "global_section_exists": true,
+      "name": "vector_sufficient_trusted_chain",
+      "obstruction_detected": false,
+      "patch_count": 0,
+      "scalar_min_recovered": false,
+      "site_count": 3,
+      "trust_path_exists": true,
+      "vector_faithful_without_graph": true
+    },
+    {
+      "edge_count": 5,
+      "global_section_exists": true,
+      "name": "stratified_access_delay",
+      "obstruction_detected": false,
+      "patch_count": 0,
+      "scalar_min_recovered": false,
+      "site_count": 6,
+      "trust_path_exists": false,
+      "vector_faithful_without_graph": false
+    },
+    {
+      "edge_count": 3,
+      "global_section_exists": true,
+      "name": "connected_same_vector",
+      "obstruction_detected": false,
+      "patch_count": 0,
+      "scalar_min_recovered": true,
+      "site_count": 4,
+      "trust_path_exists": true,
+      "vector_faithful_without_graph": true
+    },
+    {
+      "edge_count": 2,
+      "global_section_exists": true,
+      "name": "partitioned_same_vector",
+      "obstruction_detected": false,
+      "patch_count": 0,
+      "scalar_min_recovered": false,
+      "site_count": 4,
+      "trust_path_exists": false,
+      "vector_faithful_without_graph": false
+    },
+    {
+      "edge_count": 4,
+      "global_section_exists": false,
+      "name": "contextual_gluing_obstruction",
+      "obstruction_detected": true,
+      "patch_count": 4,
+      "scalar_min_recovered": false,
+      "site_count": 4,
+      "trust_path_exists": true,
+      "vector_faithful_without_graph": false
+    }
+  ],
+  "theorem_ladder": [
+    {
+      "boundary": "finite validation only; no continuous or Lorentz-covariant semantics claimed",
+      "evidence": [
+        "uniform_broadcast",
+        "vector_sufficient_trusted_chain",
+        "stratified_access_delay",
+        "connected_same_vector",
+        "partitioned_same_vector",
+        "contextual_gluing_obstruction"
+      ],
+      "level": "axiom",
+      "name": "Minimal Axiom Sufficiency Theorem",
+      "reached": true,
+      "statement": "The finite axioms validate every T25 scenario used by T26."
+    },
+    {
+      "boundary": "fails for divergent local profiles or nontrivial patch data",
+      "evidence": [
+        "uniform_broadcast"
+      ],
+      "level": "projection",
+      "name": "Scalar Recovery Theorem",
+      "reached": true,
+      "statement": "Scalar D1 is recovered when local profiles are uniform and no transport or gluing data is lost."
+    },
+    {
+      "boundary": "fails when reachability or patch compatibility matters",
+      "evidence": [
+        "vector_sufficient_trusted_chain"
+      ],
+      "level": "projection",
+      "name": "Vector Recovery Theorem",
+      "reached": true,
+      "statement": "Vector D1 is faithful when observer profiles diverge but graph and gluing data add no distinction."
+    },
+    {
+      "boundary": "does not require sheaf language by itself",
+      "evidence": [
+        "connected_same_vector",
+        "partitioned_same_vector"
+      ],
+      "level": "transport",
+      "name": "Graph Necessity Theorem",
+      "reached": true,
+      "statement": "Graph transport data is necessary when identical vectors have different trusted reachability."
+    },
+    {
+      "boundary": "finite obstruction only; cohomological semantics remain optional",
+      "evidence": [
+        "contextual_gluing_obstruction"
+      ],
+      "level": "local_to_global",
+      "name": "Gluing Obstruction Theorem",
+      "reached": true,
+      "statement": "Locally satisfiable D1 patches need not admit a global assignment."
+    },
+    {
+      "boundary": "composition laws and IPT representation are not proved here",
+      "evidence": [
+        "trusted_transport_relabeling",
+        "connected_to_partitioned_transport"
+      ],
+      "level": "morphism",
+      "name": "Restriction Morphism Theorem",
+      "reached": true,
+      "statement": "A D1 restriction morphism is executable and can distinguish preserved transport from failed transport."
+    },
+    {
+      "boundary": "deferred rather than rejected",
+      "evidence": [
+        "T26 morphisms are ready, but current T23 IPT objects are not"
+      ],
+      "level": "representation",
+      "name": "IPT Representation Theorem",
+      "reached": false,
+      "statement": "Full IPT representation requires IPTs to carry site maps and restriction-map commutation data."
+    }
+  ],
+  "validations": [
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "uniform_broadcast",
+      "valid": true
+    },
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "vector_sufficient_trusted_chain",
+      "valid": true
+    },
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "stratified_access_delay",
+      "valid": true
+    },
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "connected_same_vector",
+      "valid": true
+    },
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "partitioned_same_vector",
+      "valid": true
+    },
+    {
+      "axiom_checks": {
+        "edge_endpoints_are_sites": true,
+        "finite_unique_sites": true,
+        "nonnegative_d1_dimensions": true,
+        "overlap_tests_reference_sites": true,
+        "patch_constraints_closed": true,
+        "patch_sites_are_sites": true,
+        "source_target_are_sites": true,
+        "total_local_profile_assignment": true
+      },
+      "errors": [],
+      "system": "contextual_gluing_obstruction",
+      "valid": true
+    }
+  ]
+}

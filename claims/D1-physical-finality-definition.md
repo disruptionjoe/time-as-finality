@@ -14,6 +14,10 @@ redundancy can be preserved through explicit maps, but this does not make D1
 an independent physical theory.
 T24 adds a multiscale field audit: the local D1 profile is retained, while
 cross-observer and institutional claims require a field-valued extension.
+T25 narrows that extension: the smallest earned multiscale object is a finite
+graph-indexed local-to-global D1 restriction system, not full sheaf language.
+T26 formalizes that object as `D1RestrictionSystem`, with scalar and vector
+D1 as projections from the finite local-to-global structure.
 
 ## Class
 
@@ -37,6 +41,9 @@ Weakened.
 - T23 does not show that D1 is equivalent to consensus, quantum measurement,
   or any other domain.
 - T24 does not replace the D1 profile with a social or institutional scalar.
+- T25 does not prove full D1 sheaf theory or a full IPT representation theorem.
+- T26 does not complete the physical reduction of D1; it formalizes the
+  multiscale bookkeeping object.
 
 ## Why It Might Be True
 
@@ -66,6 +73,8 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 - [T22: D1 Physical Reduction Map](../tests/T22-d1-physical-reduction-map.md)
 - [T23: Invariant-Preserving Transformations](../tests/T23-invariant-preserving-transformations.md)
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
+- [T25: Minimal D1 Generalization](../tests/T25-minimal-d1-generalization.md)
+- [T26: D1 Restriction System](../tests/T26-d1-restriction-system.md)
 
 ## Contribution Needed
 
@@ -204,3 +213,61 @@ observer/scale/time site -> D1 profile
 ```
 
 with transport edges and local-to-global gluing constraints.
+
+## Minimal D1 Generalization Result
+
+[T25](../tests/T25-minimal-d1-generalization.md) explicitly compares scalar,
+vector, field-like, sheaf-like, and noncanonical alternatives.
+
+The best-supported hypothesis is:
+
+```text
+H3: another finite local-to-global structure is required
+```
+
+The recommended next object is:
+
+```text
+GraphD1Restriction = (
+  local D1 profiles,
+  observer sites,
+  trusted transport edges,
+  optional patch constraints
+)
+```
+
+This preserves D1's local profile while preventing overclaiming. Scalar D1
+remains valid for fixed-observer or uniform cases. Vector D1 is enough for
+observer-distribution snapshots. Graph-indexed restriction is needed when
+transport or gluing matters. Full sheaf semantics and full IPT representation
+remain deferred.
+
+## D1 Restriction System Result
+
+[T26](../tests/T26-d1-restriction-system.md) implements the T25 recommendation
+as:
+
+```text
+D1RestrictionSystem = (
+  finite observer sites,
+  one local D1 profile per site,
+  one proposition value per site,
+  trusted transport edges,
+  optional overlap tests,
+  optional finite patch constraints,
+  scalar and vector projection maps,
+  compatibility and global-section predicates
+)
+```
+
+The best-supported T26 hypothesis is:
+
+```text
+H1: finite graph-indexed D1 restriction system is sufficient
+```
+
+This strengthens D1's formal side without restoring a stronger physical claim.
+Scalar D1 is now a fixed-site or uniform projection. Vector D1 is an
+observer-distribution projection. Transport and gluing claims require the
+restriction-system data. Full sheaf semantics and full IPT representation
+remain deferred.

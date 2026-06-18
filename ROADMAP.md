@@ -31,6 +31,14 @@
 - **Completed v0.1:** implement
   [T24](tests/T24-d1-multiscale-observer-field.md) as a scalar/vector/field
   audit for D1 across observer populations, transport, and gluing.
+- **Completed v0.1:** implement
+  [T25](tests/T25-minimal-d1-generalization.md) as a minimal D1
+  generalization audit over H0-H4, selecting graph-indexed restriction as the
+  smallest earned local-to-global object.
+- **Completed v0.1:** implement
+  [T26](tests/T26-d1-restriction-system.md) as the formal finite
+  `D1RestrictionSystem` with scalar/vector projections, transport, gluing,
+  and restriction-morphism checks.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -65,48 +73,53 @@
 
 ## Best First Contributions
 
-1. Prove or reject an IPT representation theorem over the D1 field object for
+1. Define composition laws for
+   [T26](tests/T26-d1-restriction-system.md) restriction morphisms. Check
+   associativity, identity morphisms, obstruction preservation, and whether
+   failed morphisms compose as blocked transformations.
+2. Prove or reject an IPT representation theorem over the graph-indexed D1
+   restriction system for
    [T23](tests/T23-invariant-preserving-transformations.md): state when an
    observer change, theorem transfer, record aggregation, or reduction map
    must factor through the typed IPT interface. Use
-   [T24](tests/T24-d1-multiscale-observer-field.md) so the theorem handles
-   local D1 values, transport edges, and gluing constraints.
-2. Formalize [D1-Field](claims/D1-field-multiscale-observer-finality.md) as a
-   graph field, presheaf, or sheaf with explicit restriction maps. Decide
-   which pieces belong in D1 itself and which belong in T13/T21 obstruction
-   machinery.
-3. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
+   [T26](tests/T26-d1-restriction-system.md) so the theorem handles local D1
+   values, transport edges, patch constraints, and restriction morphisms.
+3. Decide whether [D1-Field](claims/D1-field-multiscale-observer-finality.md)
+   should remain a graph-indexed restriction system or graduate to presheaf or
+   sheaf language. Use T13/T21 obstruction machinery only if the simpler graph
+   object fails.
+4. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
    theorem check into a parameterized distributed-systems result. Prove which
    resource-budget families cannot jointly maximize D1 dimensions and bounded
    progress, and identify the smallest model extension that breaks the
    tradeoff.
-4. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
+5. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
    scores to detector/noise/decoherence mapping against an actual Bell-test
    protocol.
-5. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
+6. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
-6. Define the phenomenal formal-gap problem precisely using
+7. Define the phenomenal formal-gap problem precisely using
    [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
    and [Observer Closure Theorem](open-problems/observer-closure-theorem.md):
    state what a third-person record graph can and cannot represent.
-7. Build a persistent dynamical reconciler whose storage and access boundary
+8. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-8. Extend [T2](tests/T2-quantum-measurement-record-finality.md) beyond ideal
+9. Extend [T2](tests/T2-quantum-measurement-record-finality.md) beyond ideal
    CNOT records: add partial decoherence, detector noise, and a dynamic
    pointer-basis selection criterion, then check whether the
    decohered-but-inaccessible result survives.
-9. Test whether the D1 preorder composes under record-graph merge.
-10. Replace the Landauer lower-bound calculation with an explicit stochastic
+10. Test whether the D1 preorder composes under record-graph merge.
+11. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-11. Run a relativity sanity check for
+12. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-12. Build a bounded local-sampling confidence model for
+13. Build a bounded local-sampling confidence model for
    [T6](tests/T6-snowball-record-finality.md).
-13. Add a black-hole specialist critique of
+14. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).
-14. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
+15. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
     in a physical substrate and test whether D1-monotone admissibility
     survives beyond the finite theorem model.
 
@@ -134,6 +147,8 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T22](tests/T22-d1-physical-reduction-map.md): D1 Physical Reduction Map - observable audit for all D1 axes plus executable holder-redundancy comparison.
 - [T23](tests/T23-invariant-preserving-transformations.md): Invariant-Preserving Transformations - typed transport kernel with positive reductions, theorem-transfer homology, composition, and obstruction.
 - [T24](tests/T24-d1-multiscale-observer-field.md): D1 Multiscale Observer Field - scalar/vector/field audit with transport and gluing counterexamples.
+- [T25](tests/T25-minimal-d1-generalization.md): Minimal D1 Generalization - H0-H4 audit identifying graph-indexed restriction as the smallest earned local-to-global structure.
+- [T26](tests/T26-d1-restriction-system.md): D1 Restriction System - finite graph-indexed D1 object with projection, gluing, and morphism checks.
 
 ### New Open Problems
 
@@ -186,7 +201,9 @@ problems were added. Seven convergence clusters found. Full sprint at
    whether observer changes, theorem transfers, record aggregations, and
    reduction maps factor through the IPT interface under stated axioms. T24
    upgrades the target object: this theorem should operate on D1 fields, not
-   only isolated observer profiles.
+   only isolated observer profiles. T25 tightens this and T26 supplies the
+   graph-indexed restriction system. The next representation attempt should
+   target `D1RestrictionSystem`.
 
 ### New Items from v2 Sprint
 

@@ -33,6 +33,18 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > communication networks, time, and gluing constraints. The result keeps the
 > existing D1 profile as the local value and introduces field-valued D1 as an
 > extension for multiscale claims.
+>
+> **Minimal generalization update:** [T25](tests/T25-minimal-d1-generalization.md)
+> compares scalar, vector, field-like, sheaf-like, and noncanonical D1
+> generalizations. The best-supported object is a finite graph-indexed
+> local-to-global D1 restriction system; full sheaf and full IPT
+> representation claims are deferred.
+>
+> **Restriction-system update:** [T26](tests/T26-d1-restriction-system.md)
+> formalizes that object as `D1RestrictionSystem`, with finite sites, local
+> D1 profiles, trusted transport edges, optional patch constraints,
+> projection maps, global-section checks, and restriction morphisms. Scalar
+> and vector D1 are now projections from this object.
 
 ## Primitive Inventory
 
@@ -183,6 +195,109 @@ The recommendation is therefore:
 retain D1 as local observer-indexed profile
 introduce field-valued D1 for multiscale and global claims
 do not replace the existing D1 formalism
+```
+
+## Minimal D1 Generalization
+
+T25 asks which abstraction is minimally required before a field-like
+generalization becomes unavoidable. It evaluates:
+
+```text
+H0: scalar D1 is sufficient
+H1: vector-valued D1 is sufficient
+H2: field-valued D1 is required
+H3: another finite local-to-global structure is required
+H4: no canonical generalization is currently justified
+```
+
+The best-supported hypothesis is:
+
+```text
+H3
+```
+
+The recommended finite object is:
+
+```text
+graph-indexed D1 restriction system = (
+  local D1 profiles,
+  observer sites,
+  trusted transport edges,
+  optional patch constraints
+)
+```
+
+This object is smaller than full sheaf language but richer than vector D1.
+T25 reaches this theorem ladder:
+
+| Theorem attempt | Status |
+| --- | --- |
+| scalar recovery theorem | reached |
+| vector sufficiency theorem | reached |
+| transport necessity theorem | reached |
+| gluing obstruction theorem | reached |
+| local morphism theorem | reached only for one-site IPT factorization |
+| IPT representation theorem | deferred |
+
+So the formal posture is:
+
+```text
+scalar D1 = local/fixed-observer special case
+vector D1 = sufficient for observer-distribution snapshots
+graph-indexed restriction = minimal current local-to-global object
+sheaf language = candidate future formalism
+full IPT representation = not yet earned
+```
+
+## D1 Restriction System
+
+T26 turns the T25 recommendation into an executable finite object:
+
+```text
+D1RestrictionSystem = (
+  finite observer sites,
+  one local D1 profile per site,
+  one proposition value per site,
+  trusted transport edges,
+  optional overlap tests,
+  optional finite patch constraints,
+  scalar and vector projection maps,
+  compatibility and global-section predicates
+)
+```
+
+The defining checks are:
+
+| Check | Meaning |
+| --- | --- |
+| validation | sites are finite, profiles are total, edges and patches reference known sites |
+| scalar projection | collapse the system to one D1 profile under a declared rule |
+| vector projection | retain the site-indexed profile vector while dropping graph and patch data |
+| transport analysis | determine trusted reachability over the explicit graph |
+| compatibility | check local patches and overlap tests before global claims |
+| global section | decide whether finite local constraints admit a global assignment |
+| restriction morphism | test whether a site map preserves declared D1 dimensions and obstruction status |
+
+T26 reaches this theorem ladder:
+
+| Theorem attempt | Status |
+| --- | --- |
+| minimal axiom sufficiency theorem | reached |
+| scalar recovery theorem | reached |
+| vector recovery theorem | reached |
+| graph necessity theorem | reached |
+| gluing obstruction theorem | reached |
+| restriction morphism theorem | reached |
+| IPT representation theorem | deferred |
+
+The current formal posture is:
+
+```text
+scalar D1 = projection from D1RestrictionSystem under fixed-site or uniform assumptions
+vector D1 = projection that preserves observer distribution but loses graph and patch data
+D1RestrictionSystem = current central local-to-global D1 extension
+sheaf language = optional future upgrade if finite patch semantics fail
+full IPT representation = requires site maps and restriction commutation in IPT objects
 ```
 
 ## D1 Physical Reduction Map

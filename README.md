@@ -63,6 +63,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - typed invariant-transport kernel with composition and obstruction checks.
 - [TECHNICAL-REPORT-d1-multiscale-observer-field-v0.1.md](TECHNICAL-REPORT-d1-multiscale-observer-field-v0.1.md)
   - scalar/vector/field audit for D1 across observer populations and transport.
+- [TECHNICAL-REPORT-minimal-d1-generalization-v0.1.md](TECHNICAL-REPORT-minimal-d1-generalization-v0.1.md)
+  - minimal D1 generalization audit across scalar, vector, graph, sheaf-like,
+    and IPT-representation candidates.
+- [TECHNICAL-REPORT-d1-restriction-system-v0.1.md](TECHNICAL-REPORT-d1-restriction-system-v0.1.md)
+  - formal finite graph-indexed D1 restriction system with projection,
+    gluing, and morphism checks.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -124,6 +130,8 @@ python -m models.run_t21
 python -m models.run_t22
 python -m models.run_t23
 python -m models.run_t24
+python -m models.run_t25
+python -m models.run_t26
 ```
 
 ## Citation / Reuse

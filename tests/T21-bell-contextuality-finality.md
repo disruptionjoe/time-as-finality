@@ -102,3 +102,10 @@ lesson into D1 field language. A multiscale D1 field can have locally
 satisfiable patches while no global assignment exists, so field-valued D1
 inherits the same caution: local finality is not automatically global
 finality.
+
+## T25 Boundary
+
+[T25](T25-minimal-d1-generalization.md) treats the CHSH-style obstruction as a
+finite patch/gluing boundary first. Full sheaf language is not discarded, but
+the simpler graph-indexed restriction system is the smallest object earned by
+the current executable evidence.

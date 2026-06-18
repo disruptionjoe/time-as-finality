@@ -82,3 +82,10 @@ explicit physical-contextuality referent for the T13 obstruction.
 field value over observer sites. The next sheaf step is to replace T24's
 finite patch constraints with explicit restriction maps for D1 fields, then
 test whether T13's H1 obstruction computes over those field sections.
+
+## T25 Boundary
+
+[T25](T25-minimal-d1-generalization.md) does not force D1 into sheaf language.
+It finds that a finite graph-indexed restriction system is enough for the
+current scalar/vector/transport/gluing evidence. T13 remains the stronger
+candidate when that graph object needs full cohomological obstruction.

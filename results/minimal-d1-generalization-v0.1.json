@@ -1,0 +1,277 @@
+{
+  "best_supported_hypothesis": "H3",
+  "factorization_attempts": [
+    {
+      "factorization_kind": "one_site_local_morphism",
+      "interpretation": "T23 quantum redundancy reduction factors through a one-site local D1 structure, but this is not a full field representation theorem.",
+      "name": "local_quantum_redundancy_reduction",
+      "obstruction": "none",
+      "preserved_invariants": [
+        "pointer_basis",
+        "holder_redundancy",
+        "accessible_support",
+        "observer_access_indexed"
+      ],
+      "reached": true
+    },
+    {
+      "factorization_kind": "blocked_morphism",
+      "interpretation": "The weak-quorum case is an informative failed morphism: the obstruction must be reported rather than represented as preserved transport.",
+      "name": "weak_quorum_boundary",
+      "obstruction": "weak_quorum",
+      "preserved_invariants": [],
+      "reached": false
+    },
+    {
+      "factorization_kind": "deferred_representation_theorem",
+      "interpretation": "Full representation is not attempted as a success claim because T23 IPTs do not yet carry site maps or restriction-map commutation data.",
+      "name": "full_ipt_representation",
+      "obstruction": "current_ipt_type_has_no_restriction_maps",
+      "preserved_invariants": [],
+      "reached": false
+    }
+  ],
+  "hypotheses": [
+    "H0: scalar D1 is sufficient",
+    "H1: vector-valued D1 is sufficient",
+    "H2: field-valued D1 is required",
+    "H3: another finite local-to-global structure is required",
+    "H4: no canonical generalization is currently justified"
+  ],
+  "hypothesis_evaluations": [
+    {
+      "claim": "Scalar D1 is sufficient.",
+      "evidence_against": [
+        "stratified observer case loses distribution",
+        "contextual case loses gluing data"
+      ],
+      "evidence_for": [
+        "scalar recovery theorem succeeds in uniform/fixed-observer cases"
+      ],
+      "hypothesis_id": "H0",
+      "status": "rejected_for_multiscale_claims",
+      "verdict": "retain scalar D1 only as local or explicitly aggregated special case"
+    },
+    {
+      "claim": "Vector-valued D1 is sufficient.",
+      "evidence_against": [
+        "same vector can have different transport reachability",
+        "vector has no gluing semantics"
+      ],
+      "evidence_for": [
+        "vector sufficiency theorem succeeds in trusted-chain divergent-profile case"
+      ],
+      "hypothesis_id": "H1",
+      "status": "partially_supported_but_insufficient",
+      "verdict": "use vector D1 only for observer-distribution snapshots"
+    },
+    {
+      "claim": "Field-valued D1 is required.",
+      "evidence_against": [
+        "full sheaf language not required by finite evidence"
+      ],
+      "evidence_for": [
+        "transport necessity theorem",
+        "gluing obstruction theorem"
+      ],
+      "hypothesis_id": "H2",
+      "status": "partially_supported",
+      "verdict": "field-like data is required when transport or gluing is in scope"
+    },
+    {
+      "claim": "Another finite local-to-global structure is required.",
+      "evidence_against": [
+        "not yet tested on continuous/covariant domains"
+      ],
+      "evidence_for": [
+        "graph reachability handles vector insufficiency",
+        "finite patch constraints handle gluing obstruction"
+      ],
+      "hypothesis_id": "H3",
+      "status": "best_supported",
+      "verdict": "best current object is a finite graph-indexed D1 restriction system"
+    },
+    {
+      "claim": "No canonical generalization is currently justified.",
+      "evidence_against": "finite graph-restriction structure explains all T25 cases with less loss than scalar/vector",
+      "evidence_for": [
+        "full sheaf and full IPT representation are deferred"
+      ],
+      "hypothesis_id": "H4",
+      "status": "not_best_supported",
+      "verdict": "too pessimistic for current finite evidence, but remains a boundary for broader physics claims"
+    }
+  ],
+  "negative_results": [
+    {
+      "attempted_structure": "scalar D1",
+      "failed_claim": "one selected or aggregate profile explains multiscale finality",
+      "framework_boundary": "scalar D1 remains valid only for fixed observer or uniform-field assumptions",
+      "reflects": "mathematical limit of scalar aggregation for cross-observer claims",
+      "what_failed": "componentwise scalar reductions erase observer distribution",
+      "why_it_failed": "stratified_access_delay has live local/lab finality and institutional non-finality"
+    },
+    {
+      "attempted_structure": "vector D1",
+      "failed_claim": "observer-profile vector explains transport",
+      "framework_boundary": "vector D1 remains valid for snapshots where graph transport is out of scope",
+      "reflects": "mathematical limit of vector-only representation",
+      "what_failed": "same vector has different trust-path reachability",
+      "why_it_failed": "connected_same_vector and partitioned_same_vector have identical vectors but different graphs"
+    },
+    {
+      "attempted_structure": "global gluing",
+      "failed_claim": "locally satisfiable finality patches always globalize",
+      "framework_boundary": "local finality does not imply global finality",
+      "reflects": "mathematical obstruction, not implementation failure",
+      "what_failed": "no global assignment exists",
+      "why_it_failed": "contextual_gluing_obstruction encodes three same constraints and one different constraint"
+    },
+    {
+      "attempted_structure": "full IPT representation",
+      "failed_claim": "all current IPTs factor through D1 local-to-global structure",
+      "framework_boundary": "boundary: local factorization is supported; full representation remains unearned",
+      "reflects": "implementation boundary and mathematical open problem",
+      "what_failed": "current IPT type lacks restriction-map commutation data",
+      "why_it_failed": "T23 was built as typed invariant transport, not as a field morphism system"
+    }
+  ],
+  "question_zero_answer": "The smallest earned abstraction is a finite graph-indexed local-to-global D1 restriction system: local D1 profiles, observer sites, trusted transport edges, and optional patch constraints. Scalar and vector views are recoverable fragments; full sheaf language and full IPT representation are not yet earned.",
+  "recommendation": "Adopt a finite graph-indexed local-to-global D1 restriction system as the minimal next formal object. Retain scalar D1 for fixed-observer or uniform cases, use vector D1 when only observer distribution matters, use graph restriction data when transport or gluing matters, and defer full sheaf and full IPT representation claims pending stronger evidence.",
+  "structure_audits": [
+    {
+      "candidate": "scalar D1",
+      "fails_on_cases": [
+        "stratified_access_delay",
+        "contextual_gluing_obstruction"
+      ],
+      "information_loss": [
+        "observer profile distribution",
+        "transport graph",
+        "gluing constraints"
+      ],
+      "sufficient_for_cases": [
+        "uniform_broadcast",
+        "fixed_observer"
+      ],
+      "verdict": "too weak for existing multiscale evidence"
+    },
+    {
+      "candidate": "vector D1",
+      "fails_on_cases": [
+        "partitioned_same_vector"
+      ],
+      "information_loss": [
+        "transport and trust graph",
+        "local-to-global gluing constraints"
+      ],
+      "sufficient_for_cases": [
+        "vector_sufficient_trusted_chain"
+      ],
+      "verdict": "sufficient only when observer distribution matters but transport/gluing do not"
+    },
+    {
+      "candidate": "graph-indexed restriction system",
+      "fails_on_cases": [],
+      "information_loss": [],
+      "sufficient_for_cases": [
+        "uniform_broadcast",
+        "vector_sufficient_trusted_chain",
+        "stratified_access_delay",
+        "connected_same_vector",
+        "partitioned_same_vector",
+        "contextual_gluing_obstruction"
+      ],
+      "verdict": "smallest sufficient finite abstraction in this audit"
+    },
+    {
+      "candidate": "presheaf/sheaf language",
+      "fails_on_cases": [],
+      "information_loss": [],
+      "sufficient_for_cases": [
+        "contextual_gluing_obstruction"
+      ],
+      "verdict": "promising but not required by the finite evidence yet"
+    },
+    {
+      "candidate": "full IPT representation",
+      "fails_on_cases": [
+        "full_field_representation",
+        "weak_quorum_obstruction"
+      ],
+      "information_loss": [
+        "restriction-map semantics absent from current IPT type"
+      ],
+      "sufficient_for_cases": [
+        "local_quantum_redundancy_reduction"
+      ],
+      "verdict": "not yet earned; local factorization is positive but full theorem is deferred"
+    }
+  ],
+  "theorem_ladder": [
+    {
+      "evidence": [
+        "uniform_broadcast",
+        "componentwise_min = componentwise_max = local profile"
+      ],
+      "failure_or_boundary": "does not apply to divergent observer profiles",
+      "level": "scalar",
+      "name": "Scalar Recovery Theorem",
+      "reached": true,
+      "statement": "A scalar D1 profile is recovered without material loss when local profiles are uniform, trusted transport is connected, and there are no gluing constraints."
+    },
+    {
+      "evidence": [
+        "vector_sufficient_trusted_chain",
+        "scalar loses observer distribution but graph adds no new distinction"
+      ],
+      "failure_or_boundary": "does not apply when graph connectivity, trust, or gluing changes the result",
+      "level": "vector",
+      "name": "Vector Sufficiency Theorem",
+      "reached": true,
+      "statement": "Vector D1 is sufficient when observer profiles diverge but transport is trusted/connected and no gluing constraints are present."
+    },
+    {
+      "evidence": [
+        "connected_same_vector",
+        "partitioned_same_vector"
+      ],
+      "failure_or_boundary": "does not require sheaf language; graph reachability is enough here",
+      "level": "graph",
+      "name": "Transport Necessity Theorem",
+      "reached": true,
+      "statement": "Graph transport data is required when two cases have the same observer-profile vector but different trust-path reachability."
+    },
+    {
+      "evidence": [
+        "contextual_gluing_obstruction",
+        "local witnesses exist; global witness count is zero"
+      ],
+      "failure_or_boundary": "finite constraint obstruction only; not a full sheaf theorem",
+      "level": "local_to_global",
+      "name": "Gluing Obstruction Theorem",
+      "reached": true,
+      "statement": "Local D1-compatible patches can be individually satisfiable while no global assignment exists."
+    },
+    {
+      "evidence": [
+        "quantum_measurement_to_reduction_schema"
+      ],
+      "failure_or_boundary": "only local one-site factorization was earned",
+      "level": "morphism",
+      "name": "Morphism Theorem",
+      "reached": true,
+      "statement": "A local IPT can factor through a one-site D1 restriction system when it preserves declared local D1 invariants."
+    },
+    {
+      "evidence": [
+        "not enough structure in current IPT object"
+      ],
+      "failure_or_boundary": "deferred; current implementation would overclaim",
+      "level": "representation",
+      "name": "IPT Representation Theorem",
+      "reached": false,
+      "statement": "A full IPT representation theorem would require site maps, restriction-map commutation, and obstruction preservation for all relevant IPTs."
+    }
+  ]
+}

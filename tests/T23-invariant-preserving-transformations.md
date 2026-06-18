@@ -100,3 +100,9 @@ hand.
 representation theorem. IPT should not only transport isolated observer D1
 profiles. It should also state when transport preserves a D1 field's local
 profiles, graph edges, trust paths, and gluing constraints.
+
+## T25 Boundary
+
+[T25](T25-minimal-d1-generalization.md) earns only a local one-site morphism
+case for IPT and defers a full representation theorem. The current IPT object
+does not yet carry site maps or restriction-map commutation data.

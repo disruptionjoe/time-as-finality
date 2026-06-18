@@ -142,6 +142,16 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > observable basis: demand sensitivity plus coupling sensitivity. Baseline
 > traces, event-count scaling, and simple load-recovery probes remain
 > non-identifying.
+>
+> **Record access update:** [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md)
+> adds `RecordAccessSystem` as a finite sidecar object for record generation,
+> propagation, observer access, synchronization boundaries, and external
+> reconstruction. It distinguishes open causal scarcity, where first access is
+> determined by path delay from the generating node, from closed synchronization
+> scarcity, where internal commit order is determined by membership, quorum,
+> bounded uncertainty, and timestamp rules. This does not modify
+> `D1RestrictionSystem`, derive `c`, implement Spanner, or model actual market
+> microstructure.
 
 ## Primitive Inventory
 

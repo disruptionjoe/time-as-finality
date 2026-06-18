@@ -661,3 +661,50 @@ identify the mechanism that generated them.
 Next physical-interface question: which finite probes, if any, have operational
 physical analogues? Until that is answered, T44 remains an identifiability
 theorem inside the finite model.
+
+## Phase 15: T46 Open Causal Scarcity And Closed Synchronization Boundary
+
+T46 asks whether the repo can distinguish two scarcity regimes for accessible
+records:
+
+```text
+open causal scarcity:
+  source proximity determines first access
+
+closed synchronization scarcity:
+  membership plus synchronization rule determines authoritative order
+```
+
+**Completed v0.1:** implement
+[T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) as the Open
+Causal Scarcity And Closed Synchronization Boundary audit. The executable
+`RecordAccessSystem` introduces record nodes, propagation edges, generated
+events, optional synchronization boundaries, and observer-specific access
+frontiers.
+
+The NYSE-style witness models open market-data propagation:
+
+```text
+exchange_engine -> colocated_rack -> metro_pop -> remote_region
+```
+
+First access follows finite path delay from the generating node.
+
+The Spanner-style witness models a closed synchronization boundary:
+
+```text
+west_replica, east_replica, central_replica
+outside_client
+```
+
+Internal commit order is assigned by timestamp/quorum/uncertainty rules, while
+the outside raw arrival order can differ until commit records propagate outward.
+
+T46 supports H3: both cases instantiate a common finite record-access frontier
+structure, but the scarcity axis differs. Open systems expose causal-proximity
+scarcity. Closed systems relocate scarcity to membership and synchronization
+costs.
+
+CS1 remains a candidate claim only. The next hostile tests should include
+cross-exchange arbitrage, dark-pool reporting, public ledger mempools, stale
+read replicas, and sensor-fusion networks with trusted internal clocks.

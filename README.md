@@ -132,6 +132,11 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Local mechanism identifiability: finite probes show baseline traces remain
     ambiguous, while demand-drop plus coupling-rewire separates the T43
     mechanism families; H4 best supported.
+- [TECHNICAL-REPORT-open-causal-scarcity-synchronization-boundary-v0.1.md](TECHNICAL-REPORT-open-causal-scarcity-synchronization-boundary-v0.1.md)
+  - Open causal scarcity and closed synchronization boundary: finite
+    RecordAccessSystem witnesses distinguish causal-proximity first access from
+    membership-plus-synchronization commit order; H3 best supported; CS1 remains
+    a candidate claim only.
 - [TECHNICAL-REPORT-measurement-po1-asymmetry-v0.1.md](results/measurement-po1-asymmetry-v0.1-results.md)
   - Measurement as PO1 morphism: forward morphism f: Y->X fully admissible;
     inverse fails AC6+AC7; Measurement Asymmetry Theorem confirmed: no

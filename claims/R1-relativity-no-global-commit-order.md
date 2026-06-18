@@ -47,6 +47,14 @@ does not identify its mechanism, but demand sensitivity plus coupling sensitivit
 separates the T43 finite mechanism families. This remains a finite probe result,
 not a physical time claim.
 
+T46 adds a record-access boundary discipline. Open causal systems expose
+first-access gradients through finite propagation paths from a record-generating
+node. Closed synchronized systems can impose internal commit order, but only for
+members inside a boundary and only with synchronization costs such as quorum,
+bounded uncertainty, commit wait, and delayed external reconstruction. This
+supports R1's no-global-commit-order posture without treating spacetime as a
+literal database.
+
 ## How It Could Fail
 
 - The analogy hides rather than clarifies spacetime geometry.
@@ -63,6 +71,7 @@ not a physical time claim.
 - [T42: Local Persistence And Reconciliation Split Audit](../tests/T42-local-persistence-reconciliation-split.md)
 - [T43: Local Persistence Accumulation Mechanism Audit](../tests/T43-local-persistence-mechanisms.md)
 - [T44: Local Mechanism Identifiability Audit](../tests/T44-local-mechanism-identifiability.md)
+- [T46: Open Causal Scarcity And Closed Synchronization Boundary](../tests/T46-open-causal-scarcity-synchronization-boundary.md)
 
 ## Contribution Needed
 

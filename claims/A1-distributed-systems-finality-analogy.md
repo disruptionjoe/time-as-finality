@@ -34,6 +34,23 @@ local record samples
   -> reversal-cost estimate
 ```
 
+T46 adds a second distributed-systems-facing abstraction:
+
+```text
+open causal record source
+  -> finite propagation frontier
+  -> first-access gradient
+
+closed synchronized boundary
+  -> membership/quorum/uncertainty rule
+  -> internal commit order
+  -> delayed external reconstruction
+```
+
+This strengthens the analogy by separating open propagation scarcity from
+closed membership scarcity. It does not claim that physical systems literally
+run database protocols.
+
 ## How It Could Mislead
 
 - Distributed systems usually presuppose time and protocol steps.
@@ -48,6 +65,7 @@ local record samples
 - [T3: Spacelike Events And No Global Commit Order](../tests/T3-spacelike-events-no-global-commit-order.md)
 - [T6: Snowball Record Finality](../tests/T6-snowball-record-finality.md)
 - [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
+- [T46: Open Causal Scarcity And Closed Synchronization Boundary](../tests/T46-open-causal-scarcity-synchronization-boundary.md)
 
 ## Contribution Needed
 

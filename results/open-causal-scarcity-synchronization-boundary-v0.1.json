@@ -1,0 +1,241 @@
+{
+  "open_causal": {
+    "system_name": "nyse_style_open_causal_scarcity",
+    "event_id": "quote_update_001",
+    "observations": [
+      {
+        "observer_id": "colocated_rack",
+        "event_id": "quote_update_001",
+        "arrival_time": 1,
+        "path_delay": 1,
+        "inside_boundary": false,
+        "access_mode": "causal_arrival"
+      },
+      {
+        "observer_id": "metro_pop",
+        "event_id": "quote_update_001",
+        "arrival_time": 75,
+        "path_delay": 75,
+        "inside_boundary": false,
+        "access_mode": "causal_arrival"
+      },
+      {
+        "observer_id": "remote_region",
+        "event_id": "quote_update_001",
+        "arrival_time": 750,
+        "path_delay": 750,
+        "inside_boundary": false,
+        "access_mode": "causal_arrival"
+      }
+    ],
+    "first_access_order": [
+      "colocated_rack",
+      "metro_pop",
+      "remote_region"
+    ],
+    "gradient": [
+      {
+        "observer_id": "colocated_rack",
+        "arrival_time": 1,
+        "access_rank": 1,
+        "advantage_over_slowest": 749,
+        "scarcity_axis": "causal_proximity"
+      },
+      {
+        "observer_id": "metro_pop",
+        "arrival_time": 75,
+        "access_rank": 2,
+        "advantage_over_slowest": 675,
+        "scarcity_axis": "causal_proximity"
+      },
+      {
+        "observer_id": "remote_region",
+        "arrival_time": 750,
+        "access_rank": 3,
+        "advantage_over_slowest": 0,
+        "scarcity_axis": "causal_proximity"
+      }
+    ],
+    "proximity_advantage": 749,
+    "proximity_driven": true,
+    "finding": "Open causal scarcity witnessed: first access follows finite path delay from the generating node; advantage=749 abstract units."
+  },
+  "closed_synchronization": {
+    "system_name": "spanner_style_closed_synchronization_boundary",
+    "boundary": {
+      "boundary_id": "synchronized_commit_boundary",
+      "member_ids": [
+        "west_replica",
+        "east_replica",
+        "central_replica"
+      ],
+      "quorum": 2,
+      "uncertainty_bound": 5,
+      "rule": "commit_timestamp_plus_uncertainty_wait",
+      "description": "Finite abstraction of a bounded-uncertainty commit substrate. It models membership, quorum, timestamp order, and commit wait only."
+    },
+    "transactions": [
+      {
+        "event_id": "tx_west",
+        "coordinator_id": "west_replica",
+        "generated_at": 0,
+        "commit_timestamp": 10,
+        "quorum_delay": 12,
+        "commit_visible_inside_at": 15,
+        "raw_external_arrival_at": 45,
+        "commit_record_external_arrival_at": 60,
+        "commit_wait_cost": 3,
+        "external_path_delay": 45
+      },
+      {
+        "event_id": "tx_east",
+        "coordinator_id": "east_replica",
+        "generated_at": 4,
+        "commit_timestamp": 20,
+        "quorum_delay": 8,
+        "commit_visible_inside_at": 25,
+        "raw_external_arrival_at": 9,
+        "commit_record_external_arrival_at": 30,
+        "commit_wait_cost": 13,
+        "external_path_delay": 5
+      }
+    ],
+    "internal_commit_order": [
+      "tx_west",
+      "tx_east"
+    ],
+    "outside_raw_arrival_order": [
+      "tx_east",
+      "tx_west"
+    ],
+    "outside_commit_record_arrival_order": [
+      "tx_east",
+      "tx_west"
+    ],
+    "outside_reconstruction_time": 60,
+    "raw_order_differs_from_commit_order": true,
+    "membership_boundary_active": true,
+    "propagation_constraints_respected": true,
+    "synchronization_cost_total": 16,
+    "finding": "Closed synchronization scarcity witnessed: internal commit order is available to members through timestamp/quorum/uncertainty rules, while the outside observer initially sees raw path-delay order."
+  },
+  "comparison": {
+    "open_scarcity_axis": "causal_proximity",
+    "closed_scarcity_axis": "membership_plus_synchronization_rule",
+    "shared_record_access_frontier": true,
+    "synchronization_relocates_scarcity": true,
+    "outside_observer_lag": 35,
+    "statement": "Open systems expose a causal-proximity gradient. Closed systems can impose an internal commit order, but only for members and only with bounded synchronization costs; outside observers wait for propagated records before reconstructing that order."
+  },
+  "measurement_projection": {
+    "source_layer": "richer_pre_record_structure_Y_candidate",
+    "target_layer": "observer_accessible_record_layer_X",
+    "morphism_name": "measurement_or_finalization_projection",
+    "preserved_structure": [
+      "classical_outcome_label",
+      "stable_pointer_record",
+      "accessible_correlation_statistics",
+      "conservation-compatible coarse quantities",
+      "record-holder accessibility relation"
+    ],
+    "forgotten_structure": [
+      "relative_phase_information",
+      "unmeasured_counterfactual_contexts",
+      "coherence_not_preserved_in_accessible_records",
+      "environment_entanglement_not_available_to_the_observer"
+    ],
+    "accessible_record_condition": "The target object is information only after it is stable enough to be accessed, copied, compared, or communicated as a record.",
+    "record_layer_propagation_constraint": "Once projected into the accessible record layer, communication of the record is bounded by the propagation channels available in that layer.",
+    "assumes_fourteen_dimensional_y": false,
+    "po1_status": "candidate_projection_boundary_only; AC5-like forgotten structure is named, but T46 does not claim AC1-AC7 or a full measurement PO1 theorem",
+    "caution": "This table does not derive a 14D layer, does not demote the Standard Model to classical residue, and does not claim superluminal usable information."
+  },
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H0",
+      "claim": "The NYSE/Spanner contrast is only analogy and adds no formal structure.",
+      "status": "rejected_for_finite_abstraction",
+      "evidence_for": [
+        "The real systems are used only as motivating analogies.",
+        "The model does not implement market microstructure or Spanner."
+      ],
+      "evidence_against": [
+        "The finite model separates open causal arrival from closed commit order.",
+        "Open and closed witnesses have different scarcity axes."
+      ],
+      "verdict": "Rejected at the finite-abstraction level. The contrast adds a useful RecordAccessSystem object, while real-system claims remain guarded."
+    },
+    {
+      "hypothesis_id": "H1",
+      "claim": "Open causal scarcity is already captured by T42 propagation delay.",
+      "status": "supported",
+      "evidence_for": [
+        "Open causal scarcity witnessed: first access follows finite path delay from the generating node; advantage=749 abstract units.",
+        "First-access order is determined by finite path delay from the source."
+      ],
+      "evidence_against": [
+        "T46 adds economic/value-gradient language not present in T42."
+      ],
+      "verdict": "Supported. Open causal scarcity is T42-style reconciliation/access lag applied to first actionable record access."
+    },
+    {
+      "hypothesis_id": "H2",
+      "claim": "Closed synchronization scarcity requires a boundary/membership object beyond T42-T44.",
+      "status": "supported",
+      "evidence_for": [
+        "The closed witness uses member_ids, quorum, uncertainty_bound, and commit timestamps.",
+        "The outside observer is reachable by propagation but excluded from the commit boundary."
+      ],
+      "evidence_against": [
+        "The model is finite and does not implement a full database protocol."
+      ],
+      "verdict": "Supported. Propagation edges alone do not express the membership boundary that makes internal commit order authoritative."
+    },
+    {
+      "hypothesis_id": "H3",
+      "claim": "Both regimes are instances of a common finite record-access frontier structure.",
+      "status": "best_supported",
+      "evidence_for": [
+        "Both witnesses use finite generating nodes, propagation edges, observers, and access times.",
+        "Open systems expose a causal-proximity gradient. Closed systems can impose an internal commit order, but only for members and only with bounded synchronization costs; outside observers wait for propagated records before reconstructing that order."
+      ],
+      "evidence_against": [
+        "The common object is a sidecar, not a replacement for D1RestrictionSystem."
+      ],
+      "verdict": "Best supported. RecordAccessSystem is the smallest common object found for both scarcity regimes."
+    },
+    {
+      "hypothesis_id": "H4",
+      "claim": "The distinction exposes a PO1-style projection boundary between open causal structure and closed commit structure.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "The measurement table names preserved and forgotten structure.",
+        "The closed boundary hides internal commit membership and timestamp rules from outsiders until records propagate."
+      ],
+      "evidence_against": [
+        "candidate_projection_boundary_only; AC5-like forgotten structure is named, but T46 does not claim AC1-AC7 or a full measurement PO1 theorem",
+        "No T26 D1RestrictionSystem pair is constructed in T46."
+      ],
+      "verdict": "Partially supported only as boundary language. Full PO1 status requires a separate admissibility proof."
+    },
+    {
+      "hypothesis_id": "H5",
+      "claim": "The framework is too underdeveloped to distinguish physical propagation, architectural synchronization, and measurement projection cleanly.",
+      "status": "rejected_for_finite_access_distinction",
+      "evidence_for": [
+        "Measurement projection remains only a conservative table.",
+        "No physical derivation of c, relativity, or quantum measurement is attempted."
+      ],
+      "evidence_against": [
+        "Open propagation and closed synchronization are separated by executable witnesses.",
+        "The report distinguishes finite access order, internal commit order, and projection into records."
+      ],
+      "verdict": "Rejected for the finite access distinction, retained as a guardrail against stronger physical interpretation."
+    }
+  ],
+  "best_supported_hypothesis": "H3",
+  "theorem": "Finite Record-Access Scarcity Theorem: in the T46 RecordAccessSystem witnesses, open systems expose finality scarcity as causal-proximity advantage, while closed synchronized systems relocate scarcity to membership plus bounded commit rules. The closed system does not abolish propagation delay; outside observers can reconstruct internal order only after commit records propagate outward.",
+  "boundary": "The theorem is finite and synthetic. It does not model actual NYSE market microstructure, does not implement Google Spanner, does not derive the speed of light, and does not claim a quantum measurement theorem.",
+  "recommendation": "Add RecordAccessSystem as a sidecar formal object for R1/A1-facing work. Use it to distinguish open causal finality gradients from closed synchronization boundaries before making any physics-facing interpretation.",
+  "named_claim_recommendation": "CS1 should remain a candidate claim, not a new claim file yet: T46 supports the finite principle, but more hostile cases are needed."
+}

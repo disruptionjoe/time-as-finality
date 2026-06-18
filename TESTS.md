@@ -43,6 +43,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T42](tests/T42-local-persistence-reconciliation-split.md) | Local persistence and reconciliation split audit | R1, G2, D1, T3 | implemented: LocalPersistenceReconciliationSystem separates local accumulation from reconciliation lag; four witnesses pass (delay-only, accumulation-only, both, null); H2 best supported |
 | [T43](tests/T43-local-persistence-mechanisms.md) | Local persistence accumulation mechanism audit | R1, G2, D1, T42 | implemented: intrinsic rate, resource budget, and interaction density produce local differences with propagation fixed; propagation-shadow rejected; H4 best supported |
 | [T44](tests/T44-local-mechanism-identifiability.md) | Local mechanism identifiability audit | R1, G2, T42, T43 | implemented: baseline traces remain ambiguous, but demand-drop plus coupling-rewire separates intrinsic rate, resource budget, and interaction density; H4 best supported |
+| [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) | Open causal scarcity and closed synchronization boundary | R1, A1, PO1, T42, T44 | implemented: RecordAccessSystem distinguishes open causal-proximity scarcity from closed membership-plus-synchronization scarcity; H3 best supported; CS1 remains candidate only |
 
 ## Minimum Compatibility Constraints
 
@@ -94,6 +95,7 @@ python -m models.run_t41
 python -m models.run_t42
 python -m models.run_t43
 python -m models.run_t44
+python -m models.run_t46
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -127,6 +129,7 @@ The suites use only Python's standard library. Evidence records:
 - [Local Persistence and Reconciliation Split v0.1 Results](results/local-persistence-reconciliation-split-v0.1-results.md)
 - [Local Persistence Mechanisms v0.1 Results](results/local-persistence-mechanisms-v0.1-results.md)
 - [Local Mechanism Identifiability v0.1 Results](results/local-mechanism-identifiability-v0.1-results.md)
+- [Open Causal Scarcity and Closed Synchronization Boundary v0.1 Results](results/open-causal-scarcity-synchronization-boundary-v0.1-results.md)
 
 ## How To Add A Test
 

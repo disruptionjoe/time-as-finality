@@ -43,6 +43,9 @@
   [T27](tests/T27-class-relative-bridge-audit.md) as a class-relative bridge
   audit over selected GU no-go analyses.
 - **Completed v0.1:** implement
+  [T28](tests/T28-cap-theorem-bridge.md) as a CAP theorem bridge audit and
+  NN structural comparison.
+- **Completed v0.1:** implement
   [T29](tests/T29-projection-obstruction-schema.md) as the finite
   Projection-Obstruction Schema formalization.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
@@ -160,6 +163,7 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T25](tests/T25-minimal-d1-generalization.md): Minimal D1 Generalization - H0-H4 audit identifying graph-indexed restriction as the smallest earned local-to-global structure.
 - [T26](tests/T26-d1-restriction-system.md): D1 Restriction System - finite graph-indexed D1 object with projection, gluing, and morphism checks.
 - [T27](tests/T27-class-relative-bridge-audit.md): Class-Relative Bridge Audit - finite GU bridge audit with faithful and non-definable cases.
+- [T28](tests/T28-cap-theorem-bridge.md): CAP Theorem Bridge - distributed-systems bridge showing the same finite chaining obstruction as Nielsen-Ninomiya.
 - [T29](tests/T29-projection-obstruction-schema.md): Projection-Obstruction Schema - reusable finite schema extracted from T27 with boundary tests.
 
 ### New Open Problems

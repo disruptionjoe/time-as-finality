@@ -26,6 +26,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T25](tests/T25-minimal-d1-generalization.md) | Minimal D1 generalization | D1, D1-Field, IPT, T13, T21, T23, T24 | implemented: H0-H4 audit and theorem ladder |
 | [T26](tests/T26-d1-restriction-system.md) | D1 restriction system | D1, D1-Field, IPT, T25 | implemented: finite graph-indexed D1 restriction object and morphism checks |
 | [T27](tests/T27-class-relative-bridge-audit.md) | Class-relative bridge audit | D1RestrictionSystem, PO1 | implemented: GU bridge audit with faithful and non-definable cases |
+| [T28](tests/T28-cap-theorem-bridge.md) | CAP theorem bridge | D1RestrictionSystem, PO1, T27 | implemented: CAP as finite gluing obstruction with NN structural comparison |
 | [T29](tests/T29-projection-obstruction-schema.md) | Projection-Obstruction Schema | PO1, T26, T27 | implemented: finite schema with positive and boundary cases |
 
 ## Minimum Compatibility Constraints
@@ -61,6 +62,7 @@ python -m models.run_t24
 python -m models.run_t25
 python -m models.run_t26
 python -m models.run_t27
+python -m models.run_t28
 python -m models.run_t29
 ```
 
@@ -80,6 +82,7 @@ The suites use only Python's standard library. Evidence records:
 - [Minimal D1 Generalization v0.1 Results](results/minimal-d1-generalization-v0.1-results.md)
 - [D1 Restriction System v0.1 Results](results/d1-restriction-system-v0.1-results.md)
 - [GU Class-Relative Bridge v0.1 Results](results/gu-class-relative-bridge-v0.1-results.md)
+- [CAP Theorem Bridge v0.1 Results](results/cap-theorem-bridge-v0.1-results.md)
 - [Projection-Obstruction Schema v0.1 Results](results/projection-obstruction-schema-v0.1-results.md)
 
 ## How To Add A Test

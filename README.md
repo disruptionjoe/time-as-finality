@@ -71,6 +71,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     gluing, and morphism checks.
 - [TECHNICAL-REPORT-class-relative-bridge-audit-v0.1.md](TECHNICAL-REPORT-class-relative-bridge-audit-v0.1.md)
   - finite bridge audit for selected class-relative no-go patterns.
+- [TECHNICAL-NOTE-impossibility-gluing-obstruction-v0.1.md](TECHNICAL-NOTE-impossibility-gluing-obstruction-v0.1.md)
+  - cross-domain note comparing T27 and T28 finite gluing obstructions.
 - [TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md)
   - reusable finite Projection-Obstruction Schema extracted from T27.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
@@ -137,6 +139,7 @@ python -m models.run_t24
 python -m models.run_t25
 python -m models.run_t26
 python -m models.run_t27
+python -m models.run_t28
 python -m models.run_t29
 ```
 

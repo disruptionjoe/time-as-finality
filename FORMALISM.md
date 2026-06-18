@@ -51,6 +51,8 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > definable projection from a globally satisfiable richer restriction system
 > to an obstructed restricted system can represent a projection-created
 > gluing obstruction. This is a finite abstraction claim, not a physics proof.
+> [T28](tests/T28-cap-theorem-bridge.md) adds CAP as a distributed-systems
+> stress test for the same finite obstruction pattern.
 
 ## Primitive Inventory
 
@@ -350,7 +352,9 @@ T29 distinguishes four outcomes:
 | non-definable projection | site map is incomplete or a category change is required |
 
 This supports PO1 as a named formal schema with `partially_supported` status.
-It does not prove the source physical no-go theorems.
+T28 adds the CAP theorem as a distributed-systems stress test with the same
+three-patch chaining obstruction as Nielsen-Ninomiya. This does not prove the
+source physical or distributed-systems impossibility theorems.
 
 ## D1 Physical Reduction Map
 

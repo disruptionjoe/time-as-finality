@@ -1,0 +1,64 @@
+{
+  "case": {
+    "bridge_verdict": "FAITHFUL BRIDGE.  The finite restriction system captures the CAP theorem structure.  The eventual-consistency richer system has a global section: {state_primary=+1, state_replica=-1, sync_flag=-1} satisfies all patches simultaneously -- states diverge during partition and the sync protocol reconciles them.  The strong-consistency restricted system is obstructed: consistency forces state_A=state_B, availability forces state_B=state_C, partition_tolerance forces state_A!=state_C -- a finite local-to-global contradiction identical in structure to Nielsen-Ninomiya.  The strong-consistency-demand morphism is blocked by local_profile_mismatch and obstruction_status_preserved=False, identifying exactly what is lost: branch_support=1 (the ability to serve divergent state during partition) and the partition_diverge patch (the mechanism that allows the richer global section to exist).",
+    "forgotten_structure": [
+      "branch_support=1 on primary and replica: ability to serve divergent state",
+      "partition_diverge patch: state_primary different state_replica during partition",
+      "sync_reconcile patch: eventual convergence replaces immediate consistency"
+    ],
+    "hypothesis": "H1",
+    "morphism": {
+      "local_profiles_preserved": false,
+      "name": "cap_strong_consistency_demand_functor",
+      "obstruction": "local_profile_mismatch",
+      "obstruction_status_preserved": false,
+      "reached": false,
+      "site_map_total": true,
+      "trust_path_preserved": true
+    },
+    "morphism_failure_kind": "local_profile_mismatch",
+    "name": "cap_theorem",
+    "preserved_structure": [
+      "site-to-site mapping (primary->A, replica->B, sync->C) is total",
+      "trust transport path is preserved across the morphism",
+      "the abstract CAP proposition structure is preserved"
+    ],
+    "restricted_system": {
+      "edge_count": 2,
+      "global_section_exists": false,
+      "global_witness_count": 0,
+      "local_witness_count": 3,
+      "name": "cap_strong_consistency_restricted",
+      "obstruction_detected": true,
+      "patch_count": 3,
+      "site_count": 3,
+      "validation_valid": true
+    },
+    "richer_system": {
+      "edge_count": 2,
+      "global_section_exists": true,
+      "global_witness_count": 2,
+      "local_witness_count": 3,
+      "name": "cap_eventual_consistency_richer",
+      "obstruction_detected": false,
+      "patch_count": 3,
+      "site_count": 3,
+      "validation_valid": true
+    },
+    "theorem": "A distributed system cannot simultaneously guarantee Consistency, Availability, and Partition tolerance (Brewer 2000; Gilbert-Lynch 2002).  In any system where network partitions can occur, at most two of the three properties can be guaranteed simultaneously."
+  },
+  "nn_cap_comparison": {
+    "cap_global_witness_count": 0,
+    "cap_local_witness_count": 3,
+    "cap_obstruction_detected": true,
+    "cap_patch_count": 3,
+    "chaining_pattern": "NN: locality_hermitian A=B, translation_invariance B=C, exact_onsit_ua A!=C.  CAP: consistency A=B, availability B=C, partition_tolerance A!=C.  Same three-patch chaining obstruction in both domains.",
+    "interpretation": "The Nielsen-Ninomiya and CAP restricted systems are structurally isomorphic as D1RestrictionSystems: same patch count (3), same local satisfiability count (3), same global witness count (0), same obstruction detection result (True).  The domain-neutral three-patch chaining obstruction is the finite abstraction of both impossibility results.",
+    "nn_global_witness_count": 0,
+    "nn_local_witness_count": 3,
+    "nn_obstruction_detected": true,
+    "nn_patch_count": 3,
+    "structural_identity": true
+  },
+  "recommendation": "H1 is confirmed for the CAP theorem.  The faithful bridge demonstrates that the CAP impossibility result instantiates the Projection-Obstruction Pattern identified in T27 for Nielsen-Ninomiya.  The structural identity between the NN and CAP restricted systems (patch_count=3, local_witness_count=3, global_witness_count=0, same chaining pattern) confirms that the T26 finite obstruction is domain-neutral: the same abstract three-patch chaining contradiction appears in quantum field theory (NN) and distributed systems (CAP).  The evasion mechanism is also structurally parallel: relaxing exact on-site symmetry (NN) corresponds to relaxing immediate consistency (CAP eventual consistency); both resolve the obstruction by adding the extra patch data that the restricted class forbids."
+}

@@ -47,6 +47,11 @@ T29 turns that pattern into an explicit finite object and tests two boundaries:
 - loss without obstruction;
 - obstruction inherited from the richer system.
 
+T28 adds CAP as a distributed-systems stress test. The CAP restricted system
+has the same three-patch chaining obstruction as the Nielsen-Ninomiya
+restricted system, while the richer eventual-consistency system restores a
+global section by adding branch-support and reconciliation structure.
+
 ## How It Could Fail
 
 - The pattern may be an artifact of the chosen T27 encodings.
@@ -58,6 +63,7 @@ T29 turns that pattern into an explicit finite object and tests two boundaries:
 ## Tests
 
 - [T27: Class-Relative Bridge Audit](../tests/T27-class-relative-bridge-audit.md)
+- [T28: CAP Theorem Bridge](../tests/T28-cap-theorem-bridge.md)
 - [T29: Projection-Obstruction Schema](../tests/T29-projection-obstruction-schema.md)
 
 ## Contribution Needed

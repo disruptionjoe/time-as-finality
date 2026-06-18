@@ -19,8 +19,21 @@
 - **Completed v0.1:** build the
   [Emergence Laboratory](tests/T9-emergence-laboratory.md) across all 256
   elementary rules and reversible second-order lifts.
+- **Completed v0.1:** implement
+  [T22](tests/T22-d1-physical-reduction-map.md) as a physical reduction-map
+  audit with an executable holder-redundancy comparison.
+- **Completed v0.1:** implement
+  [T2](tests/T2-quantum-measurement-record-finality.md) as a reversible
+  system-apparatus-environment measurement finality lab.
+- **Completed v0.1:** implement
+  [T23](tests/T23-invariant-preserving-transformations.md) as a typed
+  invariant-transport kernel with composition and obstruction checks.
+- **Completed v0.1:** implement
+  [T24](tests/T24-d1-multiscale-observer-field.md) as a scalar/vector/field
+  audit for D1 across observer populations, transport, and gluing.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
-- Build a minimal quantum measurement record scenario for [T2](tests/T2-quantum-measurement-record-finality.md).
+- Extend T2 from ideal CNOT records to noisy scattering, detector
+  inefficiency, and dynamically selected pointer bases.
 - Build a bounded local-sampling confidence model for [T6](tests/T6-snowball-record-finality.md).
 - Build an overlapping-causal-domains model for [T7](tests/T7-overlapping-causal-domains.md).
 - Build an observer-renderer toy model for [T8](tests/T8-observer-renderer-toy-model.md).
@@ -52,38 +65,48 @@
 
 ## Best First Contributions
 
-1. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
+1. Prove or reject an IPT representation theorem over the D1 field object for
+   [T23](tests/T23-invariant-preserving-transformations.md): state when an
+   observer change, theorem transfer, record aggregation, or reduction map
+   must factor through the typed IPT interface. Use
+   [T24](tests/T24-d1-multiscale-observer-field.md) so the theorem handles
+   local D1 values, transport edges, and gluing constraints.
+2. Formalize [D1-Field](claims/D1-field-multiscale-observer-finality.md) as a
+   graph field, presheaf, or sheaf with explicit restriction maps. Decide
+   which pieces belong in D1 itself and which belong in T13/T21 obstruction
+   machinery.
+3. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
    theorem check into a parameterized distributed-systems result. Prove which
    resource-budget families cannot jointly maximize D1 dimensions and bounded
    progress, and identify the smallest model extension that breaks the
    tradeoff.
-2. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
+4. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
    scores to detector/noise/decoherence mapping against an actual Bell-test
    protocol.
-3. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
+5. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
-4. Define the phenomenal formal-gap problem precisely using
+6. Define the phenomenal formal-gap problem precisely using
    [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
    and [Observer Closure Theorem](open-problems/observer-closure-theorem.md):
    state what a third-person record graph can and cannot represent.
-5. Build a persistent dynamical reconciler whose storage and access boundary
+7. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-6. Extend [T22](tests/T22-d1-physical-reduction-map.md) into full
-   [T2](tests/T2-quantum-measurement-record-finality.md): implement a
-   system-apparatus-environment model with pointer-basis selection and compare
-   D1 directly with quantum-Darwinism redundancy across decoherence steps.
-7. Test whether the D1 preorder composes under record-graph merge.
-8. Replace the Landauer lower-bound calculation with an explicit stochastic
+8. Extend [T2](tests/T2-quantum-measurement-record-finality.md) beyond ideal
+   CNOT records: add partial decoherence, detector noise, and a dynamic
+   pointer-basis selection criterion, then check whether the
+   decohered-but-inaccessible result survives.
+9. Test whether the D1 preorder composes under record-graph merge.
+10. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-9. Run a relativity sanity check for
+11. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-10. Build a bounded local-sampling confidence model for
+12. Build a bounded local-sampling confidence model for
    [T6](tests/T6-snowball-record-finality.md).
-11. Add a black-hole specialist critique of
+13. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).
-12. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
+14. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
     in a physical substrate and test whether D1-monotone admissibility
     survives beyond the finite theorem model.
 
@@ -109,6 +132,8 @@ for the full sprint including all 126 ideas and voting synthesis.
 - [T20](tests/T20-consensus-record-theorem-transfer.md): Consensus-Record Theorem Transfer - proof-preserving quorum-safety transfer plus weak-quorum and global-section boundaries.
 - [T21](tests/T21-bell-contextuality-finality.md): Bell Contextuality Finality - finite CHSH certificate plus classical/quantum/PR-box score comparison.
 - [T22](tests/T22-d1-physical-reduction-map.md): D1 Physical Reduction Map - observable audit for all D1 axes plus executable holder-redundancy comparison.
+- [T23](tests/T23-invariant-preserving-transformations.md): Invariant-Preserving Transformations - typed transport kernel with positive reductions, theorem-transfer homology, composition, and obstruction.
+- [T24](tests/T24-d1-multiscale-observer-field.md): D1 Multiscale Observer Field - scalar/vector/field audit with transport and gluing counterexamples.
 
 ### New Open Problems
 
@@ -150,10 +175,18 @@ problems were added. Seven convergence clusters found. Full sprint at
    observer can *verify* its own finality assignment from within its accessible subgraph. T8 asks
    whether such a fixed point exists at all. Both tests needed; T8 is the prerequisite.
 
-4. **Extend T22 from audit to substrate dynamics.** T22 added the D1 reduction-map table and a
-   holder-redundancy toy comparison. The next step is full T2: a dynamical system-apparatus-
-   environment model with pointer-basis selection, decoherence/noise, observer access, and a
-   direct comparison between R_delta and all four D1 dimensions.
+4. **Extend T2 from ideal records to noisy substrate dynamics.** T2 now adds a
+   reversible system-apparatus-environment lab. The next step is partial
+   scattering, detector inefficiency, pointer-basis selection from coupling
+   structure, and a direct comparison between noisy `R_delta` and all four D1
+   dimensions.
+
+5. **Develop T23 into an IPT representation theorem.** T23 now provides a
+   proto-independent invariant-transport kernel. The next step is to prove
+   whether observer changes, theorem transfers, record aggregations, and
+   reduction maps factor through the IPT interface under stated axioms. T24
+   upgrades the target object: this theorem should operate on D1 fields, not
+   only isolated observer profiles.
 
 ### New Items from v2 Sprint
 

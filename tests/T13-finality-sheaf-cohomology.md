@@ -75,3 +75,10 @@ Bell/CHSH-style finite model. The four local contexts `A0B0`, `A0B1`, `A1B0`,
 and `A1B1` each have valid local finality sections, but their parity
 constraints cannot be satisfied by one global assignment. This is the first
 explicit physical-contextuality referent for the T13 obstruction.
+
+## T24 Follow-On
+
+[T24](T24-d1-multiscale-observer-field.md) treats the D1 profile as a local
+field value over observer sites. The next sheaf step is to replace T24's
+finite patch constraints with explicit restriction maps for D1 fields, then
+test whether T13's H1 obstruction computes over those field sections.

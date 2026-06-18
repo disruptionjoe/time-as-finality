@@ -1,0 +1,1360 @@
+{
+  "analyses": [
+    {
+      "gluing": {
+        "global_assignment_exists": true,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 0,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "representation_needed": "scalar",
+      "scalar_max": {
+        "assumptions": [
+          "aggregate by componentwise maximum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [],
+        "profile": {
+          "accessible_support": 4,
+          "branch_support": 2,
+          "holder_redundancy": 4,
+          "profile_tuple": [
+            4,
+            4,
+            2,
+            3
+          ],
+          "reversal_cost": 3
+        },
+        "recovered_without_loss": true,
+        "rule": "componentwise_max"
+      },
+      "scalar_min": {
+        "assumptions": [
+          "aggregate by componentwise minimum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [],
+        "profile": {
+          "accessible_support": 4,
+          "branch_support": 2,
+          "holder_redundancy": 4,
+          "profile_tuple": [
+            4,
+            4,
+            2,
+            3
+          ],
+          "reversal_cost": 3
+        },
+        "recovered_without_loss": true,
+        "rule": "componentwise_min"
+      },
+      "scenario": {
+        "edges": [
+          {
+            "relation": "trusted_transport",
+            "source": "individual",
+            "target": "family",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "family",
+            "target": "lab",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "lab",
+            "target": "science",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "science",
+            "target": "institution",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "institution",
+            "target": "civilization",
+            "trust_preserving": true
+          }
+        ],
+        "name": "uniform_broadcast",
+        "observer_profiles": [
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "individual",
+              "population": "individual",
+              "scale": "person",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "family",
+              "population": "family",
+              "scale": "household",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "lab",
+              "population": "laboratory",
+              "scale": "lab",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "science",
+              "population": "scientific_community",
+              "scale": "community",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "institution",
+              "population": "institution",
+              "scale": "institution",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 4,
+              "profile_tuple": [
+                4,
+                4,
+                2,
+                3
+              ],
+              "reversal_cost": 3
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "civilization",
+              "population": "civilization",
+              "scale": "civilization",
+              "time_step": 3,
+              "trust_domain": "broadcast"
+            }
+          }
+        ],
+        "patches": [],
+        "proposition": "record_R",
+        "source_observer": "individual",
+        "target_observer": "civilization"
+      },
+      "transport": {
+        "field_required": false,
+        "graph_connected": true,
+        "reason": "the observer vector is connected by trust-preserving transport",
+        "source_observer": "individual",
+        "target_observer": "civilization",
+        "trust_path_exists": true
+      },
+      "vector": {
+        "distinct_profile_count": 1,
+        "reason": "all observer populations share one D1 profile",
+        "vector": [
+          [
+            "civilization",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "family",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "individual",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "institution",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "lab",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "science",
+            [
+              4,
+              4,
+              2,
+              3
+            ]
+          ]
+        ],
+        "vector_required": false
+      }
+    },
+    {
+      "gluing": {
+        "global_assignment_exists": true,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 0,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "representation_needed": "field",
+      "scalar_max": {
+        "assumptions": [
+          "aggregate by componentwise maximum across observer vector"
+        ],
+        "information_lost": [
+          "observer profile distribution",
+          "communication and trust graph"
+        ],
+        "profile": {
+          "accessible_support": 4,
+          "branch_support": 2,
+          "holder_redundancy": 3,
+          "profile_tuple": [
+            4,
+            3,
+            2,
+            2
+          ],
+          "reversal_cost": 2
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_max"
+      },
+      "scalar_min": {
+        "assumptions": [
+          "aggregate by componentwise minimum across observer vector"
+        ],
+        "information_lost": [
+          "observer profile distribution",
+          "communication and trust graph"
+        ],
+        "profile": {
+          "accessible_support": 0,
+          "branch_support": 0,
+          "holder_redundancy": 0,
+          "profile_tuple": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "reversal_cost": 0
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_min"
+      },
+      "scenario": {
+        "edges": [
+          {
+            "relation": "shared_memory",
+            "source": "individual",
+            "target": "family",
+            "trust_preserving": true
+          },
+          {
+            "relation": "sample_handoff",
+            "source": "family",
+            "target": "lab",
+            "trust_preserving": true
+          },
+          {
+            "relation": "publication",
+            "source": "lab",
+            "target": "science",
+            "trust_preserving": true
+          },
+          {
+            "relation": "policy_review",
+            "source": "science",
+            "target": "institution",
+            "trust_preserving": false
+          },
+          {
+            "relation": "archive",
+            "source": "institution",
+            "target": "civilization",
+            "trust_preserving": false
+          }
+        ],
+        "name": "stratified_access_delay",
+        "observer_profiles": [
+          {
+            "profile": {
+              "accessible_support": 1,
+              "branch_support": 1,
+              "holder_redundancy": 1,
+              "profile_tuple": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "individual",
+              "population": "individual",
+              "scale": "person",
+              "time_step": 1,
+              "trust_domain": "private"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "family",
+              "population": "family",
+              "scale": "household",
+              "time_step": 1,
+              "trust_domain": "private"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 4,
+              "branch_support": 2,
+              "holder_redundancy": 3,
+              "profile_tuple": [
+                4,
+                3,
+                2,
+                2
+              ],
+              "reversal_cost": 2
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "lab",
+              "population": "laboratory",
+              "scale": "lab",
+              "time_step": 2,
+              "trust_domain": "research"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "science",
+              "population": "scientific_community",
+              "scale": "community",
+              "time_step": 3,
+              "trust_domain": "research"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 0,
+              "branch_support": 0,
+              "holder_redundancy": 0,
+              "profile_tuple": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "reversal_cost": 0
+            },
+            "proposition_value": "unsettled",
+            "site": {
+              "observer_id": "institution",
+              "population": "institution",
+              "scale": "institution",
+              "time_step": 3,
+              "trust_domain": "institutional"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 0,
+              "branch_support": 0,
+              "holder_redundancy": 0,
+              "profile_tuple": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "reversal_cost": 0
+            },
+            "proposition_value": "unsettled",
+            "site": {
+              "observer_id": "civilization",
+              "population": "civilization",
+              "scale": "civilization",
+              "time_step": 4,
+              "trust_domain": "public"
+            }
+          }
+        ],
+        "patches": [],
+        "proposition": "record_R",
+        "source_observer": "individual",
+        "target_observer": "civilization"
+      },
+      "transport": {
+        "field_required": true,
+        "graph_connected": true,
+        "reason": "transport depends on graph connectivity or trust-preserving paths",
+        "source_observer": "individual",
+        "target_observer": "civilization",
+        "trust_path_exists": false
+      },
+      "vector": {
+        "distinct_profile_count": 4,
+        "reason": "multiple observer populations have different D1 profiles",
+        "vector": [
+          [
+            "civilization",
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            "family",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "individual",
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            "institution",
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            "lab",
+            [
+              4,
+              3,
+              2,
+              2
+            ]
+          ],
+          [
+            "science",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        ],
+        "vector_required": true
+      }
+    },
+    {
+      "gluing": {
+        "global_assignment_exists": true,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 0,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "representation_needed": "scalar",
+      "scalar_max": {
+        "assumptions": [
+          "aggregate by componentwise maximum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": true,
+        "rule": "componentwise_max"
+      },
+      "scalar_min": {
+        "assumptions": [
+          "aggregate by componentwise minimum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": true,
+        "rule": "componentwise_min"
+      },
+      "scenario": {
+        "edges": [
+          {
+            "relation": "trusted_transport",
+            "source": "individual",
+            "target": "family",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "family",
+            "target": "lab",
+            "trust_preserving": true
+          },
+          {
+            "relation": "trusted_transport",
+            "source": "lab",
+            "target": "institution",
+            "trust_preserving": true
+          }
+        ],
+        "name": "connected_same_vector",
+        "observer_profiles": [
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "individual",
+              "population": "individual",
+              "scale": "person",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "family",
+              "population": "family",
+              "scale": "household",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "lab",
+              "population": "laboratory",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "institution",
+              "population": "institution",
+              "scale": "institution",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          }
+        ],
+        "patches": [],
+        "proposition": "record_R",
+        "source_observer": "individual",
+        "target_observer": "institution"
+      },
+      "transport": {
+        "field_required": false,
+        "graph_connected": true,
+        "reason": "the observer vector is connected by trust-preserving transport",
+        "source_observer": "individual",
+        "target_observer": "institution",
+        "trust_path_exists": true
+      },
+      "vector": {
+        "distinct_profile_count": 1,
+        "reason": "all observer populations share one D1 profile",
+        "vector": [
+          [
+            "family",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "individual",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "institution",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "lab",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        ],
+        "vector_required": false
+      }
+    },
+    {
+      "gluing": {
+        "global_assignment_exists": true,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 0,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "representation_needed": "field",
+      "scalar_max": {
+        "assumptions": [
+          "aggregate by componentwise maximum across observer vector"
+        ],
+        "information_lost": [
+          "communication and trust graph"
+        ],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_max"
+      },
+      "scalar_min": {
+        "assumptions": [
+          "aggregate by componentwise minimum across observer vector"
+        ],
+        "information_lost": [
+          "communication and trust graph"
+        ],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_min"
+      },
+      "scenario": {
+        "edges": [
+          {
+            "relation": "private_channel",
+            "source": "individual",
+            "target": "family",
+            "trust_preserving": true
+          },
+          {
+            "relation": "institutional_channel",
+            "source": "lab",
+            "target": "institution",
+            "trust_preserving": true
+          }
+        ],
+        "name": "partitioned_same_vector",
+        "observer_profiles": [
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "individual",
+              "population": "individual",
+              "scale": "person",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "family",
+              "population": "family",
+              "scale": "household",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "lab",
+              "population": "laboratory",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "true",
+            "site": {
+              "observer_id": "institution",
+              "population": "institution",
+              "scale": "institution",
+              "time_step": 1,
+              "trust_domain": "transport"
+            }
+          }
+        ],
+        "patches": [],
+        "proposition": "record_R",
+        "source_observer": "individual",
+        "target_observer": "institution"
+      },
+      "transport": {
+        "field_required": true,
+        "graph_connected": false,
+        "reason": "transport depends on graph connectivity or trust-preserving paths",
+        "source_observer": "individual",
+        "target_observer": "institution",
+        "trust_path_exists": false
+      },
+      "vector": {
+        "distinct_profile_count": 1,
+        "reason": "all observer populations share one D1 profile",
+        "vector": [
+          [
+            "family",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "individual",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "institution",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "lab",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        ],
+        "vector_required": false
+      }
+    },
+    {
+      "gluing": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 4,
+        "obstruction_detected": true,
+        "obstruction_kind": "contextual_finality_obstruction"
+      },
+      "representation_needed": "field",
+      "scalar_max": {
+        "assumptions": [
+          "aggregate by componentwise maximum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [
+          "local-to-global gluing data"
+        ],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_max"
+      },
+      "scalar_min": {
+        "assumptions": [
+          "aggregate by componentwise minimum across observer vector",
+          "transport graph is connected by trust-preserving paths"
+        ],
+        "information_lost": [
+          "local-to-global gluing data"
+        ],
+        "profile": {
+          "accessible_support": 2,
+          "branch_support": 1,
+          "holder_redundancy": 2,
+          "profile_tuple": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "reversal_cost": 1
+        },
+        "recovered_without_loss": false,
+        "rule": "componentwise_min"
+      },
+      "scenario": {
+        "edges": [
+          {
+            "relation": "shared_setting_A0",
+            "source": "context_a0b0",
+            "target": "context_a0b1",
+            "trust_preserving": true
+          },
+          {
+            "relation": "shared_setting_B0",
+            "source": "context_a0b0",
+            "target": "context_a1b0",
+            "trust_preserving": true
+          },
+          {
+            "relation": "shared_setting_B1",
+            "source": "context_a0b1",
+            "target": "context_a1b1",
+            "trust_preserving": true
+          },
+          {
+            "relation": "shared_setting_A1",
+            "source": "context_a1b0",
+            "target": "context_a1b1",
+            "trust_preserving": true
+          }
+        ],
+        "name": "contextual_gluing_obstruction",
+        "observer_profiles": [
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "same",
+            "site": {
+              "observer_id": "context_a0b0",
+              "population": "lab_context",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "chsh"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "same",
+            "site": {
+              "observer_id": "context_a0b1",
+              "population": "lab_context",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "chsh"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "same",
+            "site": {
+              "observer_id": "context_a1b0",
+              "population": "lab_context",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "chsh"
+            }
+          },
+          {
+            "profile": {
+              "accessible_support": 2,
+              "branch_support": 1,
+              "holder_redundancy": 2,
+              "profile_tuple": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "reversal_cost": 1
+            },
+            "proposition_value": "different",
+            "site": {
+              "observer_id": "context_a1b1",
+              "population": "lab_context",
+              "scale": "lab",
+              "time_step": 1,
+              "trust_domain": "chsh"
+            }
+          }
+        ],
+        "patches": [
+          {
+            "constraints": [
+              {
+                "left": "A0",
+                "relation": "same",
+                "right": "B0"
+              }
+            ],
+            "observer_ids": [
+              "context_a0b0"
+            ],
+            "patch_id": "A0B0",
+            "variables": [
+              "A0",
+              "B0"
+            ]
+          },
+          {
+            "constraints": [
+              {
+                "left": "A0",
+                "relation": "same",
+                "right": "B1"
+              }
+            ],
+            "observer_ids": [
+              "context_a0b1"
+            ],
+            "patch_id": "A0B1",
+            "variables": [
+              "A0",
+              "B1"
+            ]
+          },
+          {
+            "constraints": [
+              {
+                "left": "A1",
+                "relation": "same",
+                "right": "B0"
+              }
+            ],
+            "observer_ids": [
+              "context_a1b0"
+            ],
+            "patch_id": "A1B0",
+            "variables": [
+              "A1",
+              "B0"
+            ]
+          },
+          {
+            "constraints": [
+              {
+                "left": "A1",
+                "relation": "different",
+                "right": "B1"
+              }
+            ],
+            "observer_ids": [
+              "context_a1b1"
+            ],
+            "patch_id": "A1B1",
+            "variables": [
+              "A1",
+              "B1"
+            ]
+          }
+        ],
+        "proposition": "record_R",
+        "source_observer": "context_a0b0",
+        "target_observer": "context_a1b1"
+      },
+      "transport": {
+        "field_required": false,
+        "graph_connected": true,
+        "reason": "the observer vector is connected by trust-preserving transport",
+        "source_observer": "context_a0b0",
+        "target_observer": "context_a1b1",
+        "trust_path_exists": true
+      },
+      "vector": {
+        "distinct_profile_count": 1,
+        "reason": "all observer populations share one D1 profile",
+        "vector": [
+          [
+            "context_a0b0",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "context_a0b1",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "context_a1b0",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ],
+          [
+            "context_a1b1",
+            [
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        ],
+        "vector_required": false
+      }
+    }
+  ],
+  "recommendation": "Retain the existing observer-indexed D1 profile as the local stalk value. Introduce a field-valued D1 extension for claims about observer populations, communication transport, scale, time, and local-to-global gluing. A single scalar is only justified when an observer is fixed explicitly or the field is uniform.",
+  "reduction_tests": {
+    "current_d1_survives_as_local_stalk": true,
+    "local_patches_need_not_glue_globally": true,
+    "scalar_loses_observer_distribution_when_profiles_diverge": true,
+    "scalar_recovered_when_field_uniform": true,
+    "vector_loses_transport_when_same_vector_has_different_graph": true
+  },
+  "vector_field_comparison": {
+    "field_information_lost_by_vector": true,
+    "left": "connected_same_vector",
+    "reason": "same observer-profile vector has different transport behavior",
+    "right": "partitioned_same_vector",
+    "same_transport_result": false,
+    "same_vector": true
+  },
+  "verdict": {
+    "field_d1_required_for_transport_and_gluing_claims": true,
+    "recommendation_class": "introduce_field_extension",
+    "replace_existing_d1": false,
+    "scalar_d1_recoverable_as_special_case": true,
+    "single_global_scalar_sufficient": false,
+    "vector_d1_required_for_multiscale_snapshots": true
+  }
+}

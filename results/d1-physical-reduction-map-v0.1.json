@@ -1,9 +1,112 @@
 {
-  "interpretation": {
-    "guardrail": "T22 does not derive D1 from quantum mechanics. It supplies one toy observable reduction and records assumptions for every D1 axis.",
-    "main_result": "Holder redundancy has a first executable physical reduction in the toy fragment model; accessible support, branch support, and reversal cost remain assumption-bearing audit entries.",
-    "why_it_matters": "The model shows why D1 should count independent informative holders, not raw environmental copies."
+  "confidence_levels": [
+    "physically supported",
+    "partially supported",
+    "formal only",
+    "failed/rejected"
+  ],
+  "confidence_summary": {
+    "failed/rejected": 0,
+    "formal only": 2,
+    "partially supported": 2,
+    "physically supported": 0
   },
+  "interpretation": {
+    "guardrail": "T22 does not derive D1 from quantum mechanics and does not prove quantum Darwinism. It supplies one executable observable comparison and records assumptions for every D1 axis.",
+    "main_result": "T22 gives D1 holder redundancy a conditional physical reduction: with a fixed pointer basis, fragment partition, access boundary, and delta threshold, D1 holder redundancy agrees with an independence-corrected R_delta count. Accessible support is observable but boundary-dependent. Branch support and reversal cost remain formal-only placeholders until stronger physical cost and independence criteria are supplied.",
+    "repo_recommendation": "D1 can honestly claim a candidate observable program, not a completed physical definition. Holder redundancy is the first dimension with executable physical traction; branch support and reversal cost should remain formal placeholders in strong claims."
+  },
+  "reduction_map": [
+    {
+      "candidate_observable": "Count or measure of observer-readable record fragments that carry nonzero information about the target event inside a declared causal access boundary.",
+      "confidence_level": "partially supported",
+      "dimension": "accessible_support",
+      "falsification_conditions": [
+        "If accessible support is always identical to total support for all observers, the access axis adds no physical content.",
+        "If no substrate-independent access boundary can be stated even locally, the observable is underspecified."
+      ],
+      "lorentz_frame_status": "Observer-window dependent. It should be stated through causal access or world-tube relations rather than coordinate simultaneity.",
+      "substrate_assumptions": [
+        "A causal access boundary is specified.",
+        "Record fragments have stable readout channels.",
+        "The observer readout rule and detection threshold are fixed before evaluation."
+      ],
+      "supporting_tests": [
+        "T1",
+        "T9",
+        "T20",
+        "T22"
+      ],
+      "verdict": "physically measurable once an observer access boundary is declared"
+    },
+    {
+      "candidate_observable": "Quantum-Darwinism-style R_delta count: number of disjoint, observer-accessible environment fragments or fragment families whose mutual information with the pointer state exceeds a declared threshold.",
+      "confidence_level": "partially supported",
+      "dimension": "holder_redundancy",
+      "falsification_conditions": [
+        "If D1 holder redundancy never differs from raw fragment count, D1 should not claim an independence-sensitive physical axis.",
+        "If no operational fragment partition exists in the substrate, the reduction is only formal."
+      ],
+      "lorentz_frame_status": "Partition and observer-access dependent, but executable once the fragment partition and access boundary are fixed.",
+      "substrate_assumptions": [
+        "A fragment partition is specified.",
+        "A pointer-state readout basis is fixed.",
+        "The information deficit delta is fixed.",
+        "Correlated duplicate fragments can be identified or explicitly left as a raw-count caveat."
+      ],
+      "supporting_tests": [
+        "T20",
+        "T21",
+        "T22"
+      ],
+      "verdict": "strongest current physical traction; T22 supplies an executable check"
+    },
+    {
+      "candidate_observable": "Count of causally independent record channels, branch families, or domain-cover sections supporting the same event.",
+      "confidence_level": "formal only",
+      "dimension": "branch_support",
+      "falsification_conditions": [
+        "If branch support always collapses to holder redundancy in physically grounded substrates, it should not remain a separate D1 axis.",
+        "If branch independence cannot be made invariant under admissible descriptions, the physical reduction fails."
+      ],
+      "lorentz_frame_status": "Covariance is open. Independence should be stated through causal relations or domain covers, not a chosen frame's equal-time slice.",
+      "substrate_assumptions": [
+        "A channel-independence criterion is specified.",
+        "Correlated records within one branch are not double-counted as independent branches.",
+        "The local domain cover or causal graph is explicit."
+      ],
+      "supporting_tests": [
+        "T13",
+        "T16",
+        "T21",
+        "T22"
+      ],
+      "verdict": "structurally useful, but physical observable status remains open"
+    },
+    {
+      "candidate_observable": "Minimum intervention budget needed to erase, invert, or make unreconstructible the supporting records under a named cost model.",
+      "confidence_level": "formal only",
+      "dimension": "reversal_cost",
+      "falsification_conditions": [
+        "If reversal cost always collapses to standard thermodynamic work, D1 should defer to thermodynamics for this axis.",
+        "If different admissible cost models reverse the ordering with no principled choice, the D1 cost axis remains formal only."
+      ],
+      "lorentz_frame_status": "Substrate dependent. It is not currently a Lorentz scalar and is not identified with thermodynamic work by default.",
+      "substrate_assumptions": [
+        "The cost model is declared: graph record edits, control pulses, thermodynamic work, code distance, or another substrate-specific budget.",
+        "Observer-accessible reversal and total physical erasure are distinguished.",
+        "The reconstruction threshold is fixed before measuring cost."
+      ],
+      "supporting_tests": [
+        "T1",
+        "T5",
+        "T9",
+        "T18",
+        "T22"
+      ],
+      "verdict": "audited but not physically reduced; universal thermodynamic-work identity is rejected"
+    }
+  ],
   "toy_model": {
     "d1_profile": {
       "accessible_support": 3,
@@ -13,9 +116,9 @@
         3,
         2,
         2,
-        4
+        2
       ],
-      "reversal_cost": 4,
+      "reversal_cost": 2,
       "tuple_order": [
         "accessible_support",
         "holder_redundancy",
@@ -25,52 +128,190 @@
     },
     "darwinism_redundancy": {
       "accessible_fragment_count": 4,
+      "accessible_informative_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
       "agrees_with_d1_holder_redundancy": true,
       "d1_holder_redundancy": 2,
-      "divergence_reason": "E3 carries the pointer record but is correlated with E1, so it raises accessible support without raising independent holder redundancy.",
-      "independent_informative_fragments": 2,
+      "divergence_reason": "E3 carries a full pointer record but is in the same independence class as E1. Raw R_delta counts E1, E2, and E3; the D1 physical reduction counts the two independent accessible fragment families.",
+      "fragment_information_bits": [
+        [
+          "E1",
+          1.0
+        ],
+        [
+          "E2",
+          1.0
+        ],
+        [
+          "E3",
+          1.0
+        ],
+        [
+          "E4",
+          1.0
+        ],
+        [
+          "N1",
+          0.0
+        ]
+      ],
+      "independence_corrected_r_delta_accessible": 2,
+      "information_threshold_bits": 0.9,
       "raw_count_diverges_from_d1": true,
-      "raw_informative_fragment_count": 3,
-      "redundancy_ratio": 1.0
+      "raw_r_delta_accessible": 3,
+      "raw_r_delta_total": 4,
+      "system_entropy_bits": 1.0
     },
     "scenario": {
       "fragments": [
         {
           "branch_id": "left",
-          "encodes_system": true,
-          "independent_channel": true,
+          "conditional_readouts": [
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  1.0
+                ]
+              ],
+              "system_state": "S0"
+            },
+            {
+              "outcome_distribution": [
+                [
+                  "1",
+                  1.0
+                ]
+              ],
+              "system_state": "S1"
+            }
+          ],
+          "holder": "left_array_1",
+          "independence_class": "left_channel",
           "name": "E1",
           "readable": true
         },
         {
           "branch_id": "right",
-          "encodes_system": true,
-          "independent_channel": true,
+          "conditional_readouts": [
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  1.0
+                ]
+              ],
+              "system_state": "S0"
+            },
+            {
+              "outcome_distribution": [
+                [
+                  "1",
+                  1.0
+                ]
+              ],
+              "system_state": "S1"
+            }
+          ],
+          "holder": "right_array_1",
+          "independence_class": "right_channel",
           "name": "E2",
           "readable": true
         },
         {
           "branch_id": "left",
-          "encodes_system": true,
-          "independent_channel": false,
+          "conditional_readouts": [
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  1.0
+                ]
+              ],
+              "system_state": "S0"
+            },
+            {
+              "outcome_distribution": [
+                [
+                  "1",
+                  1.0
+                ]
+              ],
+              "system_state": "S1"
+            }
+          ],
+          "holder": "left_array_2",
+          "independence_class": "left_channel",
           "name": "E3",
           "readable": true
         },
         {
           "branch_id": "hidden",
-          "encodes_system": true,
-          "independent_channel": true,
+          "conditional_readouts": [
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  1.0
+                ]
+              ],
+              "system_state": "S0"
+            },
+            {
+              "outcome_distribution": [
+                [
+                  "1",
+                  1.0
+                ]
+              ],
+              "system_state": "S1"
+            }
+          ],
+          "holder": "hidden_array",
+          "independence_class": "hidden_channel",
           "name": "E4",
-          "readable": false
+          "readable": true
         },
         {
           "branch_id": "noise",
-          "encodes_system": false,
-          "independent_channel": true,
+          "conditional_readouts": [
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  0.5
+                ],
+                [
+                  "1",
+                  0.5
+                ]
+              ],
+              "system_state": "S0"
+            },
+            {
+              "outcome_distribution": [
+                [
+                  "0",
+                  0.5
+                ],
+                [
+                  "1",
+                  0.5
+                ]
+              ],
+              "system_state": "S1"
+            }
+          ],
+          "holder": "noise_probe",
+          "independence_class": "noise_channel",
           "name": "N1",
           "readable": true
         }
       ],
+      "information_deficit_delta": 0.1,
       "name": "binary_pointer_environment_with_correlated_duplicate",
       "observer_access": [
         "E1",
@@ -78,24 +319,33 @@
         "E3",
         "N1"
       ],
+      "reconstruction_threshold": 2,
       "reversal_operations": [
         "erase_E1",
         "erase_E2",
         "erase_E3",
         "erase_E4"
       ],
-      "system_states": [
-        "S0",
-        "S1"
+      "system_prior": [
+        [
+          "S0",
+          0.5
+        ],
+        [
+          "S1",
+          0.5
+        ]
       ]
     }
   },
   "verdict": {
     "all_dimensions_have_reduction_entries": true,
+    "all_entries_have_falsification_conditions": true,
+    "branch_support_still_formal": true,
     "holder_redundancy_reduction_supported": true,
     "inaccessible_record_excluded_from_accessible_support": true,
     "no_universal_physical_reduction_claimed": true,
     "raw_fragment_count_diverges_from_holder_redundancy": true,
-    "reversal_cost_still_open": true
+    "reversal_cost_still_formal": true
   }
 }

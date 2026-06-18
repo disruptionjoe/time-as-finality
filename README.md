@@ -42,6 +42,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   evidence verdict.
 - [TECHNICAL-REPORT-emergence-lab-v0.1.md](TECHNICAL-REPORT-emergence-lab-v0.1.md)
   - comparative result across reversible and irreversible local dynamics.
+- [TECHNICAL-REPORT-quantum-measurement-finality-v0.1.md](TECHNICAL-REPORT-quantum-measurement-finality-v0.1.md)
+  - dynamical system-apparatus-environment measurement finality lab.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -57,6 +59,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     global section.
 - [TECHNICAL-REPORT-d1-physical-reduction-map-v0.1.md](TECHNICAL-REPORT-d1-physical-reduction-map-v0.1.md)
   - D1 physical reduction-map audit and executable holder-redundancy check.
+- [TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md)
+  - typed invariant-transport kernel with composition and obstruction checks.
+- [TECHNICAL-REPORT-d1-multiscale-observer-field-v0.1.md](TECHNICAL-REPORT-d1-multiscale-observer-field-v0.1.md)
+  - scalar/vector/field audit for D1 across observer populations and transport.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -108,6 +114,7 @@ explorations/   Heterodox layer splits and sketches before claim promotion.
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
+python -m models.run_t2
 python -m models.run_emergence_lab
 python -m models.run_t16
 python -m models.run_t17
@@ -115,6 +122,8 @@ python -m models.run_t18
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
+python -m models.run_t23
+python -m models.run_t24
 ```
 
 ## Citation / Reuse

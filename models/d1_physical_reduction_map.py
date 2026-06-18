@@ -2,16 +2,21 @@
 
 This module gives D1's four formal dimensions candidate physical observables
 and runs one executable check where the mapping is currently strongest:
-distinct holder redundancy compared with a Quantum-Darwinism-style count of
-independent informative environment fragments.
+holder redundancy compared with a Quantum-Darwinism-style environmental
+redundancy count.
 
-The result is an audit, not a claim that all D1 dimensions are now physically
-derived. It records assumptions and falsification conditions per dimension.
+The executable model is deliberately small. It is a classical readout shadow
+of a system-environment measurement model: a binary pointer state is recorded
+in several environment fragments, and the code computes the mutual information
+between the pointer and each fragment. That is enough to test the reduction
+contract without claiming to simulate quantum amplitudes, decoherence
+dynamics, or full quantum Darwinism.
 """
 
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from math import log2
 
 
 D1_DIMENSIONS = (
@@ -21,34 +26,50 @@ D1_DIMENSIONS = (
     "reversal_cost",
 )
 
+CONFIDENCE_LEVELS = (
+    "physically supported",
+    "partially supported",
+    "formal only",
+    "failed/rejected",
+)
+
 
 @dataclass(frozen=True)
 class ReductionMapEntry:
     dimension: str
     candidate_observable: str
     substrate_assumptions: tuple[str, ...]
-    frame_status: str
+    lorentz_frame_status: str
     supporting_tests: tuple[str, ...]
-    falsification_condition: str
-    confidence: str
+    falsification_conditions: tuple[str, ...]
+    confidence_level: str
     verdict: str
+
+
+@dataclass(frozen=True)
+class ConditionalReadout:
+    system_state: str
+    outcome_distribution: tuple[tuple[str, float], ...]
 
 
 @dataclass(frozen=True)
 class EnvironmentFragment:
     name: str
+    holder: str
     readable: bool
-    encodes_system: bool
-    independent_channel: bool
+    independence_class: str
     branch_id: str
+    conditional_readouts: tuple[ConditionalReadout, ...]
 
 
 @dataclass(frozen=True)
 class SystemEnvironmentScenario:
     name: str
-    system_states: tuple[str, ...]
+    system_prior: tuple[tuple[str, float], ...]
     fragments: tuple[EnvironmentFragment, ...]
     observer_access: frozenset[str]
+    information_deficit_delta: float
+    reconstruction_threshold: int
     reversal_operations: tuple[str, ...]
 
 
@@ -70,10 +91,14 @@ class D1ObservableProfile:
 
 @dataclass(frozen=True)
 class DarwinismRedundancyResult:
+    system_entropy_bits: float
+    information_threshold_bits: float
+    fragment_information_bits: tuple[tuple[str, float], ...]
     accessible_fragment_count: int
-    raw_informative_fragment_count: int
-    independent_informative_fragments: int
-    redundancy_ratio: float
+    accessible_informative_fragments: tuple[str, ...]
+    raw_r_delta_accessible: int
+    raw_r_delta_total: int
+    independence_corrected_r_delta_accessible: int
     d1_holder_redundancy: int
     agrees_with_d1_holder_redundancy: bool
     raw_count_diverges_from_d1: bool
@@ -94,158 +119,203 @@ def d1_reduction_map() -> tuple[ReductionMapEntry, ...]:
         ReductionMapEntry(
             dimension="accessible_support",
             candidate_observable=(
-                "Count of observer-readable record fragments that encode the "
-                "target system state inside the observer access boundary."
+                "Count or measure of observer-readable record fragments that "
+                "carry nonzero information about the target event inside a "
+                "declared causal access boundary."
             ),
             substrate_assumptions=(
                 "A causal access boundary is specified.",
-                "Record fragments have a stable readout channel.",
-                "The observer readout rule is fixed before evaluation.",
+                "Record fragments have stable readout channels.",
+                "The observer readout rule and detection threshold are fixed before evaluation.",
             ),
-            frame_status=(
-                "Observer-window dependent; valid only relative to the chosen "
-                "causal access boundary."
+            lorentz_frame_status=(
+                "Observer-window dependent. It should be stated through causal "
+                "access or world-tube relations rather than coordinate simultaneity."
             ),
             supporting_tests=("T1", "T9", "T20", "T22"),
-            falsification_condition=(
-                "If accessible support is always identical to total support "
-                "regardless of access boundary, this D1 dimension adds no work."
+            falsification_conditions=(
+                "If accessible support is always identical to total support for all observers, the access axis adds no physical content.",
+                "If no substrate-independent access boundary can be stated even locally, the observable is underspecified.",
             ),
-            confidence="partially_supported",
-            verdict="physically plausible but observer-boundary dependent",
+            confidence_level="partially supported",
+            verdict="physically measurable once an observer access boundary is declared",
         ),
         ReductionMapEntry(
             dimension="holder_redundancy",
             candidate_observable=(
-                "Count of independent environment fragments carrying enough "
-                "information to infer the system pointer state."
+                "Quantum-Darwinism-style R_delta count: number of disjoint, "
+                "observer-accessible environment fragments or fragment families "
+                "whose mutual information with the pointer state exceeds a "
+                "declared threshold."
             ),
             substrate_assumptions=(
                 "A fragment partition is specified.",
-                "Informative fragments can be separated from noise fragments.",
-                "Correlated duplicate fragments are not double-counted.",
-                "The pointer-state readout basis is fixed.",
+                "A pointer-state readout basis is fixed.",
+                "The information deficit delta is fixed.",
+                "Correlated duplicate fragments can be identified or explicitly left as a raw-count caveat.",
             ),
-            frame_status=(
-                "Partition dependent, but testable once the environment "
-                "fragment partition and access boundary are stated."
+            lorentz_frame_status=(
+                "Partition and observer-access dependent, but executable once "
+                "the fragment partition and access boundary are fixed."
             ),
             supporting_tests=("T20", "T21", "T22"),
-            falsification_condition=(
-                "If D1 holder redundancy is always just raw fragment count, or "
-                "if no principled independence test exists, the reduction fails."
+            falsification_conditions=(
+                "If D1 holder redundancy never differs from raw fragment count, D1 should not claim an independence-sensitive physical axis.",
+                "If no operational fragment partition exists in the substrate, the reduction is only formal.",
             ),
-            confidence="partially_supported_executable",
-            verdict="first executable reduction supplied by T22",
+            confidence_level="partially supported",
+            verdict="strongest current physical traction; T22 supplies an executable check",
         ),
         ReductionMapEntry(
             dimension="branch_support",
             candidate_observable=(
-                "Count of causally independent record channels or branch "
-                "families supporting the same event."
+                "Count of causally independent record channels, branch families, "
+                "or domain-cover sections supporting the same event."
             ),
             substrate_assumptions=(
                 "A channel-independence criterion is specified.",
-                "Correlated records within one branch are not double-counted.",
-                "The causal domain cover is explicit.",
+                "Correlated records within one branch are not double-counted as independent branches.",
+                "The local domain cover or causal graph is explicit.",
             ),
-            frame_status=(
-                "Covariance open; independence should be stated through causal "
-                "relations, not coordinate simultaneity."
+            lorentz_frame_status=(
+                "Covariance is open. Independence should be stated through "
+                "causal relations or domain covers, not a chosen frame's equal-time slice."
             ),
             supporting_tests=("T13", "T16", "T21", "T22"),
-            falsification_condition=(
-                "If branch support always collapses to holder redundancy in "
-                "physical substrates, it should not remain a separate axis."
+            falsification_conditions=(
+                "If branch support always collapses to holder redundancy in physically grounded substrates, it should not remain a separate D1 axis.",
+                "If branch independence cannot be made invariant under admissible descriptions, the physical reduction fails.",
             ),
-            confidence="formal_with_partial_support",
-            verdict="separate in toy models; physical reduction still open",
+            confidence_level="formal only",
+            verdict="structurally useful, but physical observable status remains open",
         ),
         ReductionMapEntry(
             dimension="reversal_cost",
             candidate_observable=(
-                "Minimum intervention, operation, or work budget needed to "
-                "erase or invert all supporting records under a named cost model."
+                "Minimum intervention budget needed to erase, invert, or make "
+                "unreconstructible the supporting records under a named cost model."
             ),
             substrate_assumptions=(
-                "The cost model is declared: graph operations, thermodynamic "
-                "work, control pulses, or another substrate-specific budget.",
-                "Accessible erasure and total physical erasure are distinguished.",
+                "The cost model is declared: graph record edits, control pulses, thermodynamic work, code distance, or another substrate-specific budget.",
+                "Observer-accessible reversal and total physical erasure are distinguished.",
+                "The reconstruction threshold is fixed before measuring cost.",
             ),
-            frame_status=(
-                "Substrate dependent; not yet a Lorentz scalar or universal "
-                "thermodynamic quantity."
+            lorentz_frame_status=(
+                "Substrate dependent. It is not currently a Lorentz scalar and "
+                "is not identified with thermodynamic work by default."
             ),
             supporting_tests=("T1", "T5", "T9", "T18", "T22"),
-            falsification_condition=(
-                "If reversal cost always collapses to standard thermodynamic "
-                "cost, D1 should defer to thermodynamics for this axis."
+            falsification_conditions=(
+                "If reversal cost always collapses to standard thermodynamic work, D1 should defer to thermodynamics for this axis.",
+                "If different admissible cost models reverse the ordering with no principled choice, the D1 cost axis remains formal only.",
             ),
-            confidence="weakest_open",
-            verdict="audited but not physically reduced",
+            confidence_level="formal only",
+            verdict="audited but not physically reduced; universal thermodynamic-work identity is rejected",
         ),
     )
 
 
 def quantum_darwinism_toy_scenario() -> SystemEnvironmentScenario:
+    perfect_copy = (
+        ConditionalReadout("S0", (("0", 1.0),)),
+        ConditionalReadout("S1", (("1", 1.0),)),
+    )
+    fair_noise = (
+        ConditionalReadout("S0", (("0", 0.5), ("1", 0.5))),
+        ConditionalReadout("S1", (("0", 0.5), ("1", 0.5))),
+    )
     return SystemEnvironmentScenario(
         name="binary_pointer_environment_with_correlated_duplicate",
-        system_states=("S0", "S1"),
+        system_prior=(("S0", 0.5), ("S1", 0.5)),
         fragments=(
-            EnvironmentFragment("E1", True, True, True, "left"),
-            EnvironmentFragment("E2", True, True, True, "right"),
-            EnvironmentFragment("E3", True, True, False, "left"),
-            EnvironmentFragment("E4", False, True, True, "hidden"),
-            EnvironmentFragment("N1", True, False, True, "noise"),
+            EnvironmentFragment("E1", "left_array_1", True, "left_channel", "left", perfect_copy),
+            EnvironmentFragment("E2", "right_array_1", True, "right_channel", "right", perfect_copy),
+            EnvironmentFragment("E3", "left_array_2", True, "left_channel", "left", perfect_copy),
+            EnvironmentFragment("E4", "hidden_array", True, "hidden_channel", "hidden", perfect_copy),
+            EnvironmentFragment("N1", "noise_probe", True, "noise_channel", "noise", fair_noise),
         ),
         observer_access=frozenset({"E1", "E2", "E3", "N1"}),
+        information_deficit_delta=0.1,
+        reconstruction_threshold=2,
         reversal_operations=("erase_E1", "erase_E2", "erase_E3", "erase_E4"),
     )
 
 
 def compute_d1_profile(scenario: SystemEnvironmentScenario) -> D1ObservableProfile:
-    accessible_informative = _accessible_informative_fragments(scenario)
-    independent_accessible = tuple(
-        fragment for fragment in accessible_informative if fragment.independent_channel
-    )
-    branch_ids = {fragment.branch_id for fragment in independent_accessible}
+    accessible_support = _accessible_supporting_fragments(scenario)
+    threshold_fragments = _threshold_informative_fragments(scenario, accessible_only=True)
+    independence_classes = {
+        fragment.independence_class for fragment in threshold_fragments
+    }
+    branch_ids = {fragment.branch_id for fragment in accessible_support}
     return D1ObservableProfile(
-        accessible_support=len(accessible_informative),
-        holder_redundancy=len(independent_accessible),
-        branch_support=len(branch_ids),
-        reversal_cost=len(scenario.reversal_operations),
+        accessible_support=len(accessible_support),
+        holder_redundancy=len(independence_classes),
+        branch_support=len(branch_ids - {"noise"}),
+        reversal_cost=_record_erasure_cost_below_threshold(
+            len(accessible_support), scenario.reconstruction_threshold
+        ),
     )
 
 
 def compute_darwinism_redundancy(
     scenario: SystemEnvironmentScenario,
 ) -> DarwinismRedundancyResult:
-    accessible_count = len(scenario.observer_access)
-    accessible_informative = _accessible_informative_fragments(scenario)
-    independent_informative = tuple(
-        fragment for fragment in accessible_informative if fragment.independent_channel
-    )
     profile = compute_d1_profile(scenario)
-    redundancy_ratio = len(independent_informative) / len(scenario.system_states)
-    raw_diverges = len(accessible_informative) != profile.holder_redundancy
+    system_entropy = _entropy(dict(scenario.system_prior).values())
+    threshold = (1.0 - scenario.information_deficit_delta) * system_entropy
+    fragment_information = tuple(
+        (fragment.name, mutual_information_bits(scenario, fragment.name))
+        for fragment in scenario.fragments
+    )
+    accessible_threshold = _threshold_informative_fragments(scenario, accessible_only=True)
+    total_threshold = _threshold_informative_fragments(scenario, accessible_only=False)
+    corrected = len({fragment.independence_class for fragment in accessible_threshold})
+    raw_accessible = len(accessible_threshold)
+    raw_total = len(total_threshold)
     return DarwinismRedundancyResult(
-        accessible_fragment_count=accessible_count,
-        raw_informative_fragment_count=len(accessible_informative),
-        independent_informative_fragments=len(independent_informative),
-        redundancy_ratio=redundancy_ratio,
+        system_entropy_bits=system_entropy,
+        information_threshold_bits=threshold,
+        fragment_information_bits=fragment_information,
+        accessible_fragment_count=len(scenario.observer_access),
+        accessible_informative_fragments=tuple(fragment.name for fragment in accessible_threshold),
+        raw_r_delta_accessible=raw_accessible,
+        raw_r_delta_total=raw_total,
+        independence_corrected_r_delta_accessible=corrected,
         d1_holder_redundancy=profile.holder_redundancy,
-        agrees_with_d1_holder_redundancy=(
-            len(independent_informative) == profile.holder_redundancy
-        ),
-        raw_count_diverges_from_d1=raw_diverges,
+        agrees_with_d1_holder_redundancy=(corrected == profile.holder_redundancy),
+        raw_count_diverges_from_d1=(raw_accessible != profile.holder_redundancy),
         divergence_reason=(
-            "E3 carries the pointer record but is correlated with E1, so it "
-            "raises accessible support without raising independent holder "
-            "redundancy."
-            if raw_diverges
+            "E3 carries a full pointer record but is in the same independence "
+            "class as E1. Raw R_delta counts E1, E2, and E3; the D1 physical "
+            "reduction counts the two independent accessible fragment families."
+            if raw_accessible != profile.holder_redundancy
             else "No divergence in this scenario."
         ),
     )
+
+
+def mutual_information_bits(
+    scenario: SystemEnvironmentScenario, fragment_name: str
+) -> float:
+    fragment = _fragment_by_name(scenario, fragment_name)
+    prior = dict(scenario.system_prior)
+    joint: dict[tuple[str, str], float] = {}
+    outcome_marginal: dict[str, float] = {}
+    for state, state_probability in prior.items():
+        distribution = _conditional_distribution(fragment, state)
+        for outcome, conditional_probability in distribution.items():
+            joint_probability = state_probability * conditional_probability
+            joint[(state, outcome)] = joint_probability
+            outcome_marginal[outcome] = outcome_marginal.get(outcome, 0.0) + joint_probability
+
+    information = 0.0
+    for (state, outcome), joint_probability in joint.items():
+        if joint_probability == 0.0:
+            continue
+        denominator = prior[state] * outcome_marginal[outcome]
+        information += joint_probability * log2(joint_probability / denominator)
+    return information
 
 
 def audit_d1_reduction_map(
@@ -259,49 +329,64 @@ def audit_d1_reduction_map(
         d1_profile=compute_d1_profile(chosen),
         redundancy_result=redundancy,
         verdict=(
-            "Holder redundancy has a first executable physical reduction in "
-            "the toy fragment model; accessible support, branch support, and "
-            "reversal cost remain assumption-bearing audit entries."
+            "T22 gives D1 holder redundancy a conditional physical reduction: "
+            "with a fixed pointer basis, fragment partition, access boundary, "
+            "and delta threshold, D1 holder redundancy agrees with an "
+            "independence-corrected R_delta count. Accessible support is "
+            "observable but boundary-dependent. Branch support and reversal "
+            "cost remain formal-only placeholders until stronger physical "
+            "cost and independence criteria are supplied."
         ),
     )
 
 
 def run_t22_analysis() -> dict[str, object]:
     result = audit_d1_reduction_map()
+    confidence_summary = {
+        level: sum(
+            1 for entry in result.reduction_map if entry.confidence_level == level
+        )
+        for level in CONFIDENCE_LEVELS
+    }
     open_dimensions = tuple(
         entry.dimension
         for entry in result.reduction_map
-        if entry.confidence in {"weakest_open", "formal_with_partial_support"}
+        if entry.confidence_level in {"formal only", "failed/rejected"}
     )
     return {
         "reduction_map": [asdict(entry) for entry in result.reduction_map],
+        "confidence_levels": list(CONFIDENCE_LEVELS),
+        "confidence_summary": confidence_summary,
         "toy_model": {
-            "scenario": {
-                "name": result.scenario.name,
-                "system_states": list(result.scenario.system_states),
-                "observer_access": sorted(result.scenario.observer_access),
-                "fragments": [asdict(fragment) for fragment in result.scenario.fragments],
-                "reversal_operations": list(result.scenario.reversal_operations),
-            },
+            "scenario": _scenario_to_dict(result.scenario),
             "d1_profile": asdict(result.d1_profile)
-            | {"tuple_order": list(D1_DIMENSIONS), "profile_tuple": list(result.d1_profile.as_tuple())},
+            | {
+                "tuple_order": list(D1_DIMENSIONS),
+                "profile_tuple": list(result.d1_profile.as_tuple()),
+            },
             "darwinism_redundancy": asdict(result.redundancy_result),
         },
         "interpretation": {
             "main_result": result.verdict,
             "guardrail": (
-                "T22 does not derive D1 from quantum mechanics. It supplies one "
-                "toy observable reduction and records assumptions for every D1 axis."
+                "T22 does not derive D1 from quantum mechanics and does not "
+                "prove quantum Darwinism. It supplies one executable observable "
+                "comparison and records assumptions for every D1 axis."
             ),
-            "why_it_matters": (
-                "The model shows why D1 should count independent informative "
-                "holders, not raw environmental copies."
+            "repo_recommendation": (
+                "D1 can honestly claim a candidate observable program, not a "
+                "completed physical definition. Holder redundancy is the first "
+                "dimension with executable physical traction; branch support and "
+                "reversal cost should remain formal placeholders in strong claims."
             ),
         },
         "verdict": {
             "all_dimensions_have_reduction_entries": (
                 {entry.dimension for entry in result.reduction_map}
                 == set(D1_DIMENSIONS)
+            ),
+            "all_entries_have_falsification_conditions": all(
+                entry.falsification_conditions for entry in result.reduction_map
             ),
             "holder_redundancy_reduction_supported": (
                 result.redundancy_result.agrees_with_d1_holder_redundancy
@@ -312,15 +397,16 @@ def run_t22_analysis() -> dict[str, object]:
             "inaccessible_record_excluded_from_accessible_support": (
                 "E4" not in result.scenario.observer_access
                 and result.d1_profile.accessible_support
-                < sum(1 for fragment in result.scenario.fragments if fragment.encodes_system)
+                < result.redundancy_result.raw_r_delta_total
             ),
-            "reversal_cost_still_open": "reversal_cost" in open_dimensions,
+            "branch_support_still_formal": "branch_support" in open_dimensions,
+            "reversal_cost_still_formal": "reversal_cost" in open_dimensions,
             "no_universal_physical_reduction_claimed": True,
         },
     }
 
 
-def _accessible_informative_fragments(
+def _accessible_supporting_fragments(
     scenario: SystemEnvironmentScenario,
 ) -> tuple[EnvironmentFragment, ...]:
     return tuple(
@@ -328,5 +414,65 @@ def _accessible_informative_fragments(
         for fragment in scenario.fragments
         if fragment.name in scenario.observer_access
         and fragment.readable
-        and fragment.encodes_system
+        and mutual_information_bits(scenario, fragment.name) > 0.0
     )
+
+
+def _threshold_informative_fragments(
+    scenario: SystemEnvironmentScenario, *, accessible_only: bool
+) -> tuple[EnvironmentFragment, ...]:
+    system_entropy = _entropy(dict(scenario.system_prior).values())
+    threshold = (1.0 - scenario.information_deficit_delta) * system_entropy
+    return tuple(
+        fragment
+        for fragment in scenario.fragments
+        if fragment.readable
+        and (not accessible_only or fragment.name in scenario.observer_access)
+        and mutual_information_bits(scenario, fragment.name) >= threshold
+    )
+
+
+def _record_erasure_cost_below_threshold(
+    accessible_support_count: int, reconstruction_threshold: int
+) -> int:
+    if accessible_support_count < reconstruction_threshold:
+        return 0
+    return accessible_support_count - reconstruction_threshold + 1
+
+
+def _entropy(probabilities: object) -> float:
+    return -sum(
+        probability * log2(probability)
+        for probability in probabilities
+        if probability > 0.0
+    )
+
+
+def _conditional_distribution(
+    fragment: EnvironmentFragment, state: str
+) -> dict[str, float]:
+    for readout in fragment.conditional_readouts:
+        if readout.system_state == state:
+            return dict(readout.outcome_distribution)
+    raise ValueError(f"missing conditional readout for {fragment.name}, {state}")
+
+
+def _fragment_by_name(
+    scenario: SystemEnvironmentScenario, fragment_name: str
+) -> EnvironmentFragment:
+    for fragment in scenario.fragments:
+        if fragment.name == fragment_name:
+            return fragment
+    raise ValueError(f"unknown fragment: {fragment_name}")
+
+
+def _scenario_to_dict(scenario: SystemEnvironmentScenario) -> dict[str, object]:
+    return {
+        "name": scenario.name,
+        "system_prior": list(scenario.system_prior),
+        "observer_access": sorted(scenario.observer_access),
+        "information_deficit_delta": scenario.information_deficit_delta,
+        "reconstruction_threshold": scenario.reconstruction_threshold,
+        "fragments": [asdict(fragment) for fragment in scenario.fragments],
+        "reversal_operations": list(scenario.reversal_operations),
+    }

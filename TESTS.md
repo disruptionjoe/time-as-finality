@@ -7,7 +7,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | ID | Test | Target claims | Status |
 | --- | --- | --- | --- |
 | [T1](tests/T1-record-graph-temporal-reconstruction.md) | Record graph temporal reconstruction | C1, D1, D2 | implemented: partial success |
-| [T2](tests/T2-quantum-measurement-record-finality.md) | Quantum measurement record finality | Q1, G2 | open |
+| [T2](tests/T2-quantum-measurement-record-finality.md) | Quantum measurement record finality | Q1, D1, G2 | implemented: dynamical measurement finality lab |
 | [T3](tests/T3-spacelike-events-no-global-commit-order.md) | Spacelike events and no global commit order | R1, G2 | open |
 | [T4](tests/T4-black-hole-causal-access-boundary.md) | Black-hole causal access boundary | B1, G2 | open |
 | [T5](tests/T5-thermodynamic-record-support.md) | Thermodynamic record support | D1, C1 | structural benchmark implemented |
@@ -21,6 +21,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
+| [T23](tests/T23-invariant-preserving-transformations.md) | Invariant-preserving transformations | IPT, D1, Q1, A1, T2, T20, T22 | implemented: typed IPT kernel, composition check, and obstruction witness |
+| [T24](tests/T24-d1-multiscale-observer-field.md) | D1 multiscale observer field | D1, D1-Field, IPT, T13, T21, T23 | implemented: scalar/vector/field audit with transport and gluing counterexamples |
 
 ## Minimum Compatibility Constraints
 
@@ -42,6 +44,7 @@ Any formalization must:
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
 python -m models.run_t1
+python -m models.run_t2
 python -m models.run_emergence_lab
 python -m models.run_t16
 python -m models.run_t17
@@ -49,11 +52,14 @@ python -m models.run_t18
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
+python -m models.run_t23
+python -m models.run_t24
 ```
 
 The suites use only Python's standard library. Evidence records:
 
 - [T1 v0.1 Results](results/T1-v0.1-results.md)
+- [Quantum Measurement Finality v0.1 Results](results/quantum-measurement-finality-v0.1-results.md)
 - [Emergence Laboratory v0.1 Results](results/emergence-lab-v0.1-results.md)
 - [Spacetime Aggregation v0.1 Results](results/spacetime-aggregation-v0.1-results.md)
 - [Consensus Finality Crosswalk v0.1 Results](results/consensus-finality-crosswalk-v0.1-results.md)
@@ -61,6 +67,8 @@ The suites use only Python's standard library. Evidence records:
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
 - [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)
+- [Invariant-Preserving Transformations v0.1 Results](results/invariant-preserving-transformations-v0.1-results.md)
+- [D1 Multiscale Observer Field v0.1 Results](results/d1-multiscale-observer-field-v0.1-results.md)
 
 ## How To Add A Test
 

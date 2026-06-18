@@ -85,3 +85,14 @@ python -m models.run_t20
 identified by T20. Quorum safety can transfer from distributed systems into
 physical-record finality, but Bell/CHSH-style contextuality shows that local
 finality sections may still fail to glue into a global section.
+
+## T23 Follow-On
+
+[T23](T23-invariant-preserving-transformations.md) reuses the T20 theorem
+transfer as a homology case in the IPT kernel. It preserves holder count,
+quorum threshold, quorum-intersection safety, and conflict exclusion across
+the consensus-record map.
+
+T23 also reuses T20's weak-quorum boundary as an obstruction witness. When
+`n = 4` and `q = 2`, `2q > n` is false, so quorum-intersection safety is not
+transported.

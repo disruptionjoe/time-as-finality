@@ -17,6 +17,22 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > treats safety, liveness, and economic finality as collapses or projections
 > of D1-style record finality. Liveness remains a protocol progress condition,
 > not a D1 dimension.
+>
+> **Physical reduction-map update:** [T22](tests/T22-d1-physical-reduction-map.md)
+> audits candidate physical observables for all four D1 dimensions and gives
+> holder redundancy a first executable comparison with a
+> Quantum-Darwinism-style environmental redundancy quantity.
+>
+> **Invariant transport update:** [T23](tests/T23-invariant-preserving-transformations.md)
+> extracts a typed invariant-preserving transformation interface from T2,
+> T20, and T22. The result is proto-independent: it gives a finite
+> composition and obstruction kernel, but not yet a representation theorem.
+>
+> **Multiscale field update:** [T24](tests/T24-d1-multiscale-observer-field.md)
+> tests whether D1 should generalize across observer populations, scales,
+> communication networks, time, and gluing constraints. The result keeps the
+> existing D1 profile as the local value and introduces field-valued D1 as an
+> extension for multiscale claims.
 
 ## Primitive Inventory
 
@@ -116,6 +132,216 @@ the reconstruction threshold.
 
 `C` and `C_therm` need not induce the same ordering. Their divergence is an
 explicit test result, not an error to average away.
+
+## Multiscale D1 Field
+
+T24 distinguishes three representations:
+
+| Representation | Meaning |
+| --- | --- |
+| scalar D1 | one selected or aggregated D1 profile for a record |
+| vector D1 | a finite map from observer population to D1 profile |
+| field-valued D1 | vector D1 plus observer sites, time/scale labels, communication or trust edges, and gluing constraints |
+
+The current D1 profile remains the local value:
+
+```text
+site -> F_O,e(x)
+```
+
+The field-valued extension is:
+
+```text
+D1Field(x) = (
+  observer sites,
+  local D1 profiles,
+  proposition values,
+  transport edges,
+  local patches,
+  gluing constraints
+)
+```
+
+The scalar profile is recoverable under explicit assumptions:
+
+1. one observer is fixed and all other observer populations are out of scope;
+2. all observer sites share the same D1 profile and trusted transport is
+   connected;
+3. an aggregate rule is declared and its information loss is accepted.
+
+T24 gives three counterexamples to unrestricted scalar use:
+
+| Counterexample | What fails |
+| --- | --- |
+| stratified access delay | componentwise min and max both lose observer-distribution information |
+| same vector with different graph | vector D1 cannot distinguish connected transport from partitioned transport |
+| contextual gluing obstruction | local finality patches are satisfiable but do not glue globally |
+
+The recommendation is therefore:
+
+```text
+retain D1 as local observer-indexed profile
+introduce field-valued D1 for multiscale and global claims
+do not replace the existing D1 formalism
+```
+
+## D1 Physical Reduction Map
+
+T22 adds an observable-audit layer on top of the formal D1 profile. The table
+does not replace the graph definition. It states what each dimension currently
+reduces to, if anything, under declared substrate assumptions.
+
+Confidence levels are:
+
+```text
+physically supported
+partially supported
+formal only
+failed/rejected
+```
+
+| D1 dimension | Candidate physical observable | Substrate assumptions | Lorentz/frame status | Supporting tests | Falsification conditions | Confidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| accessible support | Observer-readable record fragments carrying nonzero information inside a declared causal access boundary. | Access boundary, stable readout channels, fixed observer rule and threshold. | Observer-window dependent; state via causal access or world-tube relations, not coordinate simultaneity. | T1, T9, T20, T22 | Fails if accessible support always equals total support, or if no local access boundary can be stated. | partially supported |
+| holder redundancy | `R_delta`-style count of disjoint, accessible environment fragments or fragment families exceeding a mutual-information threshold. | Fragment partition, pointer basis, fixed delta, explicit duplicate/correlation handling. | Partition and access dependent, but executable once those are fixed. | T20, T21, T22 | Fails if it never differs from raw fragment count, or if no operational partition exists. | partially supported |
+| branch support | Causally independent record channels, branch families, or domain-cover sections supporting the same event. | Independence criterion, no double-counting within one branch, explicit causal graph or cover. | Covariance open; should be causal or cover-theoretic rather than frame-slice based. | T13, T16, T21, T22 | Fails if it always collapses to holder redundancy, or if branch independence cannot be invariantly stated. | formal only |
+| reversal cost | Minimum intervention budget needed to erase, invert, or make supporting records unreconstructible under a named cost model. | Declared cost model, access-level distinction, fixed reconstruction threshold. | Substrate dependent; not currently a Lorentz scalar and not thermodynamic work by default. | T1, T5, T9, T18, T22 | Fails as a distinct axis if it always collapses to thermodynamic work, or if cost models reverse ordering with no principled choice. | formal only |
+
+The T22 toy model gives the executable profile:
+
+```text
+F_O,e(x) = (3, 2, 2, 2)
+```
+
+for a binary pointer state recorded in environment fragments. D1 holder
+redundancy equals the independence-corrected accessible `R_delta` count `2`,
+while raw accessible environmental copies count `3`. This is a conditional
+positive result for holder redundancy only, not a physical derivation of D1.
+
+## Quantum Measurement Finality
+
+T2 adds a dynamical substrate for the Q1/T22 bridge. The model uses five
+qubits:
+
+```text
+S, A, E1, E2, E3
+```
+
+and reversible CNOT interactions in an explicit pointer basis:
+
+```text
+computational_z
+
+CNOT(S -> A)
+CNOT(A -> E1)
+CNOT(A -> E2)
+CNOT(A -> E3)
+```
+
+T2 computes:
+
+- reduced system-apparatus pointer coherence;
+- Z-basis mutual information between `S` and each record qubit;
+- environmental `R_delta`;
+- observer-relative D1 profiles.
+
+The executable witness is:
+
+```text
+pointer coherence = 0.0
+environment R_delta = 3
+outside observer D1 = (0, 0, 0, 0)
+```
+
+So decoherence and environmental redundancy do not imply finality for every
+observer. This supports Q1's under-finalization language without introducing
+collapse. It also keeps branch support and reversal cost weak: all records in
+T2 descend from one pointer-measurement root, and reversal cost is only an
+inverse-operation proxy.
+
+## Invariant-Preserving Transformations
+
+T23 defines an invariant-preserving transformation as:
+
+```text
+IPT = (
+  source structure,
+  target structure,
+  transformation map,
+  preserved invariants,
+  allowed losses,
+  obstruction conditions
+)
+```
+
+An IPT is not a claim that two domains are the same. It is a typed transport
+object that states which invariants survive a map, which quantities are
+allowed to be lost, and which obstructions block preservation.
+
+The relationship taxonomy is:
+
+| Level | Burden of proof |
+| --- | --- |
+| analogy | Surface similarity; no theorem-transfer obligation. |
+| homology | Shared formal structure or proof pattern under typed assumptions. |
+| reduction | Target obtained from source by an explicit map preserving named invariants and losing declared quantities. |
+| equivalence | Inverse maps preserve named invariants both ways. T23 establishes no equivalence case. |
+
+The executable T23 cases are:
+
+| Transformation | Source | Target | Preserved invariants | Class | Status |
+| --- | --- | --- | --- | --- | --- |
+| observer access restriction | T2 global measurement state | local observer D1 view | pointer basis, system-record correlation | reduction | passes |
+| consensus-record theorem transfer | consensus quorum certificate system | record certificate system | holder count, quorum threshold, quorum-intersection safety, conflict exclusion | homology | passes |
+| quantum redundancy reduction | T2 local observer D1 view | T22 reduction schema | pointer basis, holder redundancy, accessible support, observer access indexing | reduction | passes |
+| weak quorum boundary | record majority safety | weak quorum record boundary | quorum-intersection safety | analogy | obstruction triggered |
+
+The finite composition rule is:
+
+```text
+Given IPT f: A -> B and IPT g: B -> C,
+the composite preserves requested invariant i when:
+
+1. target(f) = source(g);
+2. i is declared preserved by both f and g;
+3. source(A).i = target(C).i;
+4. no obstruction condition in f or g is triggered.
+```
+
+T23 verifies one positive composition:
+
+```text
+T2 global measurement state
+  -> T2 local observer D1 view
+  -> T22 reduction schema
+```
+
+for:
+
+```text
+pointer_basis = computational_z
+```
+
+It also verifies one obstruction:
+
+```text
+record majority safety
+  -> weak quorum record boundary
+```
+
+where `n = 4` and `q = 2`, so `2q > n` is false and
+`quorum_intersection_safety` is not preserved.
+
+The T23 independence verdict is:
+
+```text
+mathematical_independence = proto-independent
+```
+
+This means the IPT interface is now a serious candidate for the next formal
+spine of the project, but it should remain inside Time as Finality until it
+has a representation theorem and at least one external domain not inherited
+from the existing TaF test suite.
 
 ## Reconstruction Rule
 
@@ -233,32 +459,6 @@ PR-box no-signalling   = 4
 The finality interpretation is that classical models admit a global section,
 while quantum and PR-box correlations have local context sections without a
 global classical assignment.
-
-## D1 Physical Reduction Map
-
-T22 audits each D1 dimension against a candidate physical observable:
-
-| D1 dimension | Candidate physical observable | Current status |
-| --- | --- | --- |
-| accessible support | observer-readable fragments encoding the target state | access-boundary dependent |
-| holder redundancy | independent informative environment fragments | first executable reduction |
-| branch support | causally independent record channels or branch families | physical covariance still open |
-| reversal cost | minimum intervention, operation, or work budget needed to erase supporting records | weakest and substrate dependent |
-
-The executable T22 toy model compares holder redundancy with a
-Quantum-Darwinism-style environmental redundancy count. In that model, raw
-informative accessible fragments equal `3`, but independent informative
-fragments equal `2`. The D1 profile is:
-
-```text
-(accessible_support, holder_redundancy, branch_support, reversal_cost)
-= (3, 2, 2, 4)
-```
-
-This supports the narrow rule that D1 holder redundancy counts independent
-informative witnesses, not raw environmental copies. It does not derive D1
-from quantum mechanics or settle the physical status of branch support and
-reversal cost.
 
 ## Finality-Induced Direction
 

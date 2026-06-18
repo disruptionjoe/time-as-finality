@@ -6,7 +6,14 @@ Physical finality is a comparative, observer-indexed schema over record
 properties, not one universal physical quantity. The v0.1 preorder compares
 accessible support, holder redundancy, independent branch support, and a
 named reversal cost componentwise, but each dimension must be justified for
-the substrate in which it is used.
+the substrate in which it is used. T22 adds a physical reduction-map audit:
+holder redundancy has the first executable observable comparison, while
+branch support and reversal cost remain formal-only in strong physical claims.
+T23 adds a typed invariant-transport view: D1 observer access and holder
+redundancy can be preserved through explicit maps, but this does not make D1
+an independent physical theory.
+T24 adds a multiscale field audit: the local D1 profile is retained, while
+cross-observer and institutional claims require a field-valued extension.
 
 ## Class
 
@@ -25,6 +32,11 @@ Weakened.
 - Graph reversal count is not thermodynamic work.
 - The four dimensions do not automatically emerge as independent quantities
   from local dynamics.
+- T22 does not show that all four D1 dimensions are physically reduced.
+- Reversal cost is not identified with thermodynamic work by default.
+- T23 does not show that D1 is equivalent to consensus, quantum measurement,
+  or any other domain.
+- T24 does not replace the D1 profile with a social or institutional scalar.
 
 ## Why It Might Be True
 
@@ -46,11 +58,14 @@ redundancy, and terminal intervention cost collapse to one Hamming count.
 ## Tests
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
+- [T2: Quantum Measurement Record Finality](../tests/T2-quantum-measurement-record-finality.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T17: Consensus Finality Crosswalk](../tests/T17-consensus-finality-crosswalk.md)
 - [T20: Consensus-Record Theorem Transfer](../tests/T20-consensus-record-theorem-transfer.md)
 - [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
 - [T22: D1 Physical Reduction Map](../tests/T22-d1-physical-reduction-map.md)
+- [T23: Invariant-Preserving Transformations](../tests/T23-invariant-preserving-transformations.md)
+- [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
 
 ## Contribution Needed
 
@@ -102,18 +117,90 @@ valid finality sections while no single global assignment exists. That makes
 global-section existence a separate condition, not something guaranteed by
 local support or redundancy alone.
 
-## Physical Reduction Map Result
+## D1 Physical Reduction Map Result
 
-[T22](../tests/T22-d1-physical-reduction-map.md) adds the missing physical
-reduction-map audit for D1. Each dimension now has a candidate observable,
-substrate assumptions, frame-status note, and falsification condition.
+[T22](../tests/T22-d1-physical-reduction-map.md) audits all four D1 dimensions
+against candidate physical observables. The current confidence levels are:
 
-The executable part is narrow: holder redundancy is compared with a
-Quantum-Darwinism-style count of independent informative environment
-fragments. In the toy model, raw informative accessible fragments equal `3`,
-but independent informative fragments equal `2`; D1 holder redundancy is `2`.
-That supports treating holder redundancy as independent witness count, not raw
-copy count.
+| D1 dimension | Confidence | T22 verdict |
+| --- | --- | --- |
+| accessible support | partially supported | Measurable once an observer access boundary is declared. |
+| holder redundancy | partially supported | Matches an independence-corrected Quantum-Darwinism-style `R_delta` count in the toy model. |
+| branch support | formal only | Structurally useful, but physical branch independence remains open. |
+| reversal cost | formal only | Requires a named cost model and is not thermodynamic work by default. |
 
-The result does not promote D1 to a complete physical measure. Branch support
-and reversal cost remain the weakest physical-reduction targets.
+The executable toy model gives:
+
+```text
+(accessible support, holder redundancy, branch support, reversal cost)
+= (3, 2, 2, 2)
+```
+
+The positive result is narrow: holder redundancy agrees with an
+independence-corrected accessible environmental redundancy count after the
+pointer basis, fragment partition, access boundary, and information threshold
+are fixed. D1 should therefore claim a candidate observable program, not a
+completed physical definition.
+
+## Quantum Measurement Finality Result
+
+[T2](../tests/T2-quantum-measurement-record-finality.md) tests the T22 map in
+a dynamical system-apparatus-environment substrate. Reversible CNOT
+interactions generate the apparatus record and three environment fragments.
+
+T2 strengthens D1's accessible-support distinction. In the final stage,
+environmental `R_delta = 3` and pointer coherence is `0.0`, but an outside
+observer with no access has:
+
+```text
+D1 = (0, 0, 0, 0)
+```
+
+This shows that decoherence and environmental redundancy do not by themselves
+settle observer-relative finality. The same result keeps D1 weakened: branch
+support remains `1` in the toy model because all records descend from one
+pointer-measurement root, and reversal cost is only an inverse-operation
+proxy.
+
+## Invariant-Preserving Transformations Result
+
+[T23](../tests/T23-invariant-preserving-transformations.md) treats D1 as one
+participant in a typed invariant-transport kernel. Two D1-relevant reductions
+pass:
+
+- a T2 global measurement state restricts to a local observer D1 view while
+  preserving pointer basis and system-record correlation;
+- a T2 local observer D1 view reduces to the T22 observable schema while
+  preserving holder redundancy, accessible support, pointer basis, and
+  observer-access indexing.
+
+This strengthens D1 as a transportable formal object, but it does not restore
+the original broad physical claim. D1 remains weakened because branch support
+and reversal cost still lack strong physical reductions, and T23 provides a
+finite kernel rather than a representation theorem.
+
+## Multiscale Observer Field Result
+
+[T24](../tests/T24-d1-multiscale-observer-field.md) tests whether D1 should be
+represented as a scalar, vector, or field across observer populations and
+scales.
+
+The result is:
+
+```text
+retain existing D1 local profile
+introduce field-valued D1 extension
+do not replace D1
+```
+
+Scalar D1 is recovered when one observer is fixed or when all observer sites
+share the same profile over trusted connected transport. Outside those
+assumptions, scalar reduction loses information. A vector captures multiple
+observer profiles, but it still loses communication, trust, transport, and
+gluing data. For multiscale claims, the recommended object is a D1 field:
+
+```text
+observer/scale/time site -> D1 profile
+```
+
+with transport edges and local-to-global gluing constraints.

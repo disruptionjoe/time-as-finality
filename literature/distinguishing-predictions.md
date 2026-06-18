@@ -17,29 +17,35 @@ defend against the charge that it is an elaborate restatement of existing framew
 **Shared claim:** Classical records emerge from quantum states through redundant environment encodings.
 Observer-accessible facts require environmental fragment sampling.
 
-**TaF-specific claim:** D1's distinct-holder redundancy dimension is the same object as Zurek's
-redundancy ratio R_delta (number of independent environment fragments needed to infer system state).
-But D1 is a preorder over all four dimensions jointly, not a single redundancy count. A state can
-have high R_delta while having low graph-reversal-count finality — these two directions are
-orthogonal in D1 but not distinguished in quantum Darwinism.
+**TaF-specific claim:** D1's holder-redundancy dimension can be compared with a
+Quantum-Darwinism-style redundancy ratio `R_delta` after a pointer basis,
+fragment partition, observer access boundary, and information threshold are
+declared. D1 is still a preorder over all four dimensions jointly, not a
+single redundancy count. A state can have high environmental redundancy while
+remaining low on branch support or reversal cost.
 
 **Distinguishing criterion:** `[PARTIAL]`
-T22 implements the first finite comparison. In a small system-environment toy
-model, D1 holder redundancy matches the count of independent informative
-environment fragments, while raw informative fragment count diverges because a
-readable copy can be correlated with an existing fragment. This makes D1
-redundancy closer to independent environmental witness count than raw copy
-count.
+T22 implements the first executable comparison. In a binary pointer-state
+environment, raw accessible `R_delta` counts `3` informative fragments, while
+the independence-corrected accessible value is `2`, matching D1 holder
+redundancy. The divergence occurs because `E3` is a correlated duplicate of
+`E1` under the declared independence class.
 
-The remaining T2 extension is a spin-1/2 system plus N-qubit environment. At
-each decoherence step, compute both R_delta and D1's four dimension values.
-Check whether the redundancy coordinate tracks R_delta monotonically, or
-whether states exist with high R_delta but low D1 due to inaccessible fragments,
-branch dependence, or reversal cost. A divergence at any point is a genuine
-distinguishing case.
+T2 implements the dynamical version with a system qubit, apparatus pointer,
+and three environment fragments. Environmental `R_delta` grows from `0` to
+`3`, but an outside observer with no access has D1 profile `(0, 0, 0, 0)`.
+This is the current distinguishing case: high environmental redundancy does
+not imply observer-relative finality for every observer.
+
+The next extension is noisy scattering and partial decoherence. Check whether
+the redundancy coordinate tracks `R_delta` monotonically, or whether states
+exist with high `R_delta` but low D1 due to inaccessible fragments, branch
+dependence, or reversal cost.
 
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
-all separable system-environment states, D1 adds nothing over quantum Darwinism's existing account.
+all separable system-environment states under every admissible access boundary
+and independence criterion, D1 adds nothing over quantum Darwinism's existing
+account for this dimension.
 
 ---
 
@@ -54,7 +60,13 @@ can be globally consistent. The H1 sheaf obstruction is TaF-native: pairwise-com
 assignments can fail to extend globally. Decoherence has no corresponding global-consistency check.
 
 **Distinguishing criterion:** `[PARTIAL]`
-T21 constructs the finite CHSH version of this distinction. Each local measurement context
+T2 constructs the first dynamical decoherence distinction. After environment
+copying, pointer coherence is `0.0` and environmental `R_delta` is `3`, but an
+outside observer with no access has D1 `(0, 0, 0, 0)`. Decoherence can say a
+pointer basis has been environmentally recorded; TaF adds that finality is
+still observer-access indexed.
+
+T21 constructs the finite CHSH version of the global-consistency distinction. Each local measurement context
 has valid finality sections and compatible named overlaps, but no global assignment exists.
 The probability extension compares classical score `2`, quantum Tsirelson score `2*sqrt(2)`,
 and PR-box no-signalling score `4`. Decoherence can say each local context has a classical
@@ -182,12 +194,43 @@ RQM predicts consistent local facts, TaF's cohomology adds nothing over RQM's co
 
 ---
 
+### 8. Category Theory / Structure-Preserving Maps
+
+**Shared claim:** Many mathematical domains are organized by transformations
+that preserve selected structure. Functors, natural transformations, quotient
+maps, and homomorphisms already provide general languages for transport.
+
+**TaF-specific claim:** T23 is not claiming novelty for "structure-preserving
+maps" in general. The specific claim is that observer access restriction,
+consensus-record theorem transfer, and quantum measurement redundancy
+extraction can be expressed through one finite typed interface that declares
+preserved invariants, allowed losses, and obstruction conditions. The
+obstruction field is load-bearing: the weak-quorum boundary must fail rather
+than be absorbed as another loose analogy.
+
+**Distinguishing criterion:** `[PARTIAL]`
+T23 implements a finite IPT kernel and verifies one positive composition and
+one obstruction. The next distinguishing test is a representation theorem:
+show that a nontrivial class of admissible TaF transformations must factor
+through the IPT interface, or produce a counterexample transformation that
+preserves meaningful structure but cannot be represented by the interface.
+
+**Falsification condition for TaF:** If IPT is just an arbitrary restatement
+of ordinary structure-preserving maps with no additional obstruction,
+allowed-loss, or observer-indexing content, then the IPT layer adds no
+mathematical independence.
+
+---
+
 ## Priority Ordering for Formal Development
+
+After T23, the top meta-priority is the IPT representation theorem or a
+counterexample. The table below preserves the older domain-neighbor ordering.
 
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
-| 1 | Decoherence | CHSH contextuality and score comparison | `[PARTIAL]` -> T21 implemented; detector mapping open |
-| 2 | Quantum Darwinism | independent fragment count vs D1 holder redundancy | `[PARTIAL]` -> T22 implemented; full T2 dynamics open |
+| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21 implemented; noisy detector mapping open |
+| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22 and T2 implemented; noisy dynamics open |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
 | 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |

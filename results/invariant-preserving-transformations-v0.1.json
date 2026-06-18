@@ -1,0 +1,540 @@
+{
+  "composition_results": [
+    {
+      "composition_preserves_requested_invariants": true,
+      "first": "observer_access_restriction",
+      "intermediate": "t2_local_lab_d1_view",
+      "invariant_checks": [
+        {
+          "invariant": "pointer_basis",
+          "preserved": true,
+          "reason": "composite source and target values match",
+          "source_value": "computational_z",
+          "target_value": "computational_z"
+        }
+      ],
+      "requested_invariants": [
+        "pointer_basis"
+      ],
+      "second": "quantum_measurement_to_reduction_schema",
+      "source": "t2_final_global_measurement_state",
+      "source_target_match": true,
+      "target": "t22_reduction_schema_view",
+      "theorem_status": "composition_preserves_requested_invariants",
+      "triggered_obstructions": []
+    },
+    {
+      "composition_preserves_requested_invariants": false,
+      "first": "consensus_record_quorum_safety_transfer",
+      "intermediate": "record_majority_safety_structure",
+      "invariant_checks": [
+        {
+          "invariant": "quorum_intersection_safety",
+          "preserved": false,
+          "reason": "composite endpoints diverge",
+          "source_value": true,
+          "target_value": false
+        }
+      ],
+      "requested_invariants": [
+        "quorum_intersection_safety"
+      ],
+      "second": "record_safety_to_weak_quorum_boundary",
+      "source": "consensus_majority_safety_structure",
+      "source_target_match": true,
+      "target": "weak_quorum_record_boundary",
+      "theorem_status": "composition_blocked_by_obstruction",
+      "triggered_obstructions": [
+        {
+          "invariant": "quorum_intersection_safety",
+          "name": "weak_quorum",
+          "reason": "The boundary has n=4 and q=2, so 2q > n is false.",
+          "triggered": true
+        }
+      ]
+    }
+  ],
+  "recommendation": "IPT is proto-independent: the same typed interface expresses observer access restriction, consensus-record theorem transfer, and quantum redundancy extraction, and a finite composition theorem is executable. Keep incubating inside Time as Finality until IPT has a stronger representation theorem and at least one domain not inherited from the TaF test suite.",
+  "taxonomy": {
+    "analogy": "Surface similarity. It suggests a comparison but carries no proof obligation.",
+    "equivalence": "Two structures preserve each other's named invariants under inverse maps. T23 does not establish any equivalence case.",
+    "homology": "Shared formal structure or proof pattern under typed assumptions.",
+    "reduction": "The target structure is obtained from the source by an explicit map that preserves named invariants and loses declared quantities."
+  },
+  "transformations": [
+    {
+      "all_declared_invariants_preserved": true,
+      "allowed_losses": [
+        "environment_r_delta_total",
+        "inaccessible_records",
+        "global_state_amplitudes"
+      ],
+      "invariant_checks": [
+        {
+          "invariant": "pointer_basis",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": "computational_z",
+          "target_value": "computational_z"
+        },
+        {
+          "invariant": "system_record_correlation",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": "perfect_z_correlation",
+          "target_value": "perfect_z_correlation"
+        }
+      ],
+      "name": "observer_access_restriction",
+      "obstruction_conditions": [
+        {
+          "invariant": "system_record_correlation",
+          "name": "empty_access_window",
+          "reason": "The local_lab_observer has apparatus and E1 access.",
+          "triggered": false
+        }
+      ],
+      "preserved_invariants": [
+        "pointer_basis",
+        "system_record_correlation"
+      ],
+      "relationship_class": "reduction",
+      "source": {
+        "domain": "quantum_measurement",
+        "invariants": [
+          {
+            "description": "Declared pointer basis.",
+            "name": "pointer_basis",
+            "value": "computational_z",
+            "value_type": "str"
+          },
+          {
+            "description": "All record qubits are perfectly Z-correlated with S.",
+            "name": "system_record_correlation",
+            "value": "perfect_z_correlation",
+            "value_type": "str"
+          },
+          {
+            "description": "Reduced S-A pointer coherence is zero.",
+            "name": "decohered_pointer",
+            "value": true,
+            "value_type": "bool"
+          },
+          {
+            "description": "Total informative environment fragments.",
+            "name": "environment_r_delta_total",
+            "value": 3,
+            "value_type": "int"
+          }
+        ],
+        "name": "t2_final_global_measurement_state",
+        "structure_type": "global_entangled_record_state"
+      },
+      "target": {
+        "domain": "observer_access",
+        "invariants": [
+          {
+            "description": "Pointer basis survives access restriction.",
+            "name": "pointer_basis",
+            "value": "computational_z",
+            "value_type": "str"
+          },
+          {
+            "description": "Accessible records still carry the same Z-correlation type.",
+            "name": "system_record_correlation",
+            "value": "perfect_z_correlation",
+            "value_type": "str"
+          },
+          {
+            "description": "Accessible supporting records.",
+            "name": "accessible_support",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "Distinct accessible holders.",
+            "name": "holder_redundancy",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "Distinct accessible branch roots.",
+            "name": "branch_support",
+            "value": 1,
+            "value_type": "int"
+          },
+          {
+            "description": "Informative environment fragments inside local access.",
+            "name": "accessible_environment_r_delta",
+            "value": 1,
+            "value_type": "int"
+          }
+        ],
+        "name": "t2_local_lab_d1_view",
+        "structure_type": "observer_indexed_d1_profile"
+      },
+      "transformation_map": "restrict global measurement records to local_lab_observer access window",
+      "triggered_obstructions": []
+    },
+    {
+      "all_declared_invariants_preserved": true,
+      "allowed_losses": [
+        "protocol_rounds",
+        "engineered_messages",
+        "byzantine_intent"
+      ],
+      "invariant_checks": [
+        {
+          "invariant": "holder_count",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": 5,
+          "target_value": 5
+        },
+        {
+          "invariant": "quorum_threshold",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": 3,
+          "target_value": 3
+        },
+        {
+          "invariant": "quorum_intersection_safety",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": true,
+          "target_value": true
+        },
+        {
+          "invariant": "conflict_exclusion",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": true,
+          "target_value": true
+        }
+      ],
+      "name": "consensus_record_quorum_safety_transfer",
+      "obstruction_conditions": [
+        {
+          "invariant": "quorum_intersection_safety",
+          "name": "weak_quorum",
+          "reason": "The positive transfer has n=5 and q=3, so 2q > n.",
+          "triggered": false
+        }
+      ],
+      "preserved_invariants": [
+        "holder_count",
+        "quorum_threshold",
+        "quorum_intersection_safety",
+        "conflict_exclusion"
+      ],
+      "relationship_class": "homology",
+      "source": {
+        "domain": "distributed_consensus",
+        "invariants": [
+          {
+            "description": "Finite holder set cardinality.",
+            "name": "holder_count",
+            "value": 5,
+            "value_type": "int"
+          },
+          {
+            "description": "Certificate threshold.",
+            "name": "quorum_threshold",
+            "value": 3,
+            "value_type": "int"
+          },
+          {
+            "description": "The condition 2q > n holds.",
+            "name": "quorum_intersection_safety",
+            "value": true,
+            "value_type": "bool"
+          },
+          {
+            "description": "Typed incompatible certificates are blocked.",
+            "name": "conflict_exclusion",
+            "value": true,
+            "value_type": "bool"
+          }
+        ],
+        "name": "consensus_majority_safety_structure",
+        "structure_type": "quorum_certificate_system"
+      },
+      "target": {
+        "domain": "physical_record_finality",
+        "invariants": [
+          {
+            "description": "Finite holder set cardinality.",
+            "name": "holder_count",
+            "value": 5,
+            "value_type": "int"
+          },
+          {
+            "description": "Certificate threshold.",
+            "name": "quorum_threshold",
+            "value": 3,
+            "value_type": "int"
+          },
+          {
+            "description": "The condition 2q > n holds.",
+            "name": "quorum_intersection_safety",
+            "value": true,
+            "value_type": "bool"
+          },
+          {
+            "description": "Typed incompatible certificates are blocked.",
+            "name": "conflict_exclusion",
+            "value": true,
+            "value_type": "bool"
+          }
+        ],
+        "name": "record_majority_safety_structure",
+        "structure_type": "record_certificate_system"
+      },
+      "transformation_map": "typed theorem transfer from quorum certificates to record certificates",
+      "triggered_obstructions": []
+    },
+    {
+      "all_declared_invariants_preserved": true,
+      "allowed_losses": [
+        "unitary_history",
+        "global_amplitudes",
+        "decoherence_timeline",
+        "branch_support_detail"
+      ],
+      "invariant_checks": [
+        {
+          "invariant": "pointer_basis",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": "computational_z",
+          "target_value": "computational_z"
+        },
+        {
+          "invariant": "holder_redundancy",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": 2,
+          "target_value": 2
+        },
+        {
+          "invariant": "accessible_support",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": 2,
+          "target_value": 2
+        },
+        {
+          "invariant": "observer_access_indexed",
+          "preserved": true,
+          "reason": "source and target values match",
+          "source_value": true,
+          "target_value": true
+        }
+      ],
+      "name": "quantum_measurement_to_reduction_schema",
+      "obstruction_conditions": [
+        {
+          "invariant": "holder_redundancy",
+          "name": "no_fragment_partition",
+          "reason": "The T2 local lab access window names apparatus and env_left holders.",
+          "triggered": false
+        }
+      ],
+      "preserved_invariants": [
+        "pointer_basis",
+        "holder_redundancy",
+        "accessible_support",
+        "observer_access_indexed"
+      ],
+      "relationship_class": "reduction",
+      "source": {
+        "domain": "observer_access",
+        "invariants": [
+          {
+            "description": "Pointer basis inherited from T2.",
+            "name": "pointer_basis",
+            "value": "computational_z",
+            "value_type": "str"
+          },
+          {
+            "description": "Dynamically generated accessible holders.",
+            "name": "holder_redundancy",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "Dynamically generated accessible support.",
+            "name": "accessible_support",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "One pointer-measurement root.",
+            "name": "branch_support",
+            "value": 1,
+            "value_type": "int"
+          },
+          {
+            "description": "The profile is observer-window indexed.",
+            "name": "observer_access_indexed",
+            "value": true,
+            "value_type": "bool"
+          }
+        ],
+        "name": "t2_local_lab_d1_view",
+        "structure_type": "observer_indexed_d1_profile"
+      },
+      "target": {
+        "domain": "d1_physical_reduction_map",
+        "invariants": [
+          {
+            "description": "Pointer basis required by the redundancy observable.",
+            "name": "pointer_basis",
+            "value": "computational_z",
+            "value_type": "str"
+          },
+          {
+            "description": "Observable holder redundancy for local access.",
+            "name": "holder_redundancy",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "Accessible support under the same local window.",
+            "name": "accessible_support",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "T22 observables are evaluated per observer access boundary.",
+            "name": "observer_access_indexed",
+            "value": true,
+            "value_type": "bool"
+          }
+        ],
+        "name": "t22_reduction_schema_view",
+        "structure_type": "observable_reduction_schema"
+      },
+      "transformation_map": "extract T22 observable schema from T2 local_lab D1 profile",
+      "triggered_obstructions": []
+    },
+    {
+      "all_declared_invariants_preserved": false,
+      "allowed_losses": [
+        "conflict_exclusion",
+        "theorem_applicability"
+      ],
+      "invariant_checks": [
+        {
+          "invariant": "holder_count",
+          "preserved": false,
+          "reason": "source and target values diverge",
+          "source_value": 5,
+          "target_value": 4
+        },
+        {
+          "invariant": "quorum_intersection_safety",
+          "preserved": false,
+          "reason": "source and target values diverge",
+          "source_value": true,
+          "target_value": false
+        }
+      ],
+      "name": "record_safety_to_weak_quorum_boundary",
+      "obstruction_conditions": [
+        {
+          "invariant": "quorum_intersection_safety",
+          "name": "weak_quorum",
+          "reason": "The boundary has n=4 and q=2, so 2q > n is false.",
+          "triggered": true
+        }
+      ],
+      "preserved_invariants": [
+        "holder_count",
+        "quorum_intersection_safety"
+      ],
+      "relationship_class": "analogy",
+      "source": {
+        "domain": "physical_record_finality",
+        "invariants": [
+          {
+            "description": "Finite holder set cardinality.",
+            "name": "holder_count",
+            "value": 5,
+            "value_type": "int"
+          },
+          {
+            "description": "Certificate threshold.",
+            "name": "quorum_threshold",
+            "value": 3,
+            "value_type": "int"
+          },
+          {
+            "description": "The condition 2q > n holds.",
+            "name": "quorum_intersection_safety",
+            "value": true,
+            "value_type": "bool"
+          },
+          {
+            "description": "Typed incompatible certificates are blocked.",
+            "name": "conflict_exclusion",
+            "value": true,
+            "value_type": "bool"
+          }
+        ],
+        "name": "record_majority_safety_structure",
+        "structure_type": "record_certificate_system"
+      },
+      "target": {
+        "domain": "physical_record_finality",
+        "invariants": [
+          {
+            "description": "Finite holder set cardinality.",
+            "name": "holder_count",
+            "value": 4,
+            "value_type": "int"
+          },
+          {
+            "description": "Certificate threshold.",
+            "name": "quorum_threshold",
+            "value": 2,
+            "value_type": "int"
+          },
+          {
+            "description": "The condition 2q > n holds.",
+            "name": "quorum_intersection_safety",
+            "value": false,
+            "value_type": "bool"
+          },
+          {
+            "description": "Typed incompatible certificates are blocked.",
+            "name": "conflict_exclusion",
+            "value": false,
+            "value_type": "bool"
+          }
+        ],
+        "name": "weak_quorum_record_boundary",
+        "structure_type": "record_certificate_system"
+      },
+      "transformation_map": "weaken record quorum threshold until disjoint conflicts become possible",
+      "triggered_obstructions": [
+        {
+          "invariant": "quorum_intersection_safety",
+          "name": "weak_quorum",
+          "reason": "The boundary has n=4 and q=2, so 2q > n is false.",
+          "triggered": true
+        }
+      ]
+    }
+  ],
+  "verdict": {
+    "composition_law_executable": true,
+    "mathematical_independence": "proto-independent",
+    "no_equivalence_claimed": true,
+    "obstruction_condition_executable": true,
+    "same_interface_expresses_three_domains": true,
+    "taxonomy_includes_all_four_levels": true,
+    "typed_ipt_definition_exists": true
+  }
+}

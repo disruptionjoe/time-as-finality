@@ -1,56 +1,98 @@
-# D1 Physical Reduction Map v0.1 Results
+# D1 Physical Reduction Map Results
 
-## Verdict
+Result: T22 focused tests pass `7/7`.
 
-T22 supplies a reduction-map audit for all four D1 dimensions and one
-executable physical reduction:
+## Reduction Map Verdict
+
+| D1 dimension | Confidence | Current verdict |
+| --- | --- | --- |
+| accessible support | partially supported | Measurable once an observer access boundary is declared. |
+| holder redundancy | partially supported | Strongest current traction; executable comparison supplied by T22. |
+| branch support | formal only | Structurally useful, but physical observable status remains open. |
+| reversal cost | formal only | Audited but not physically reduced; thermodynamic-work identity is not assumed. |
+
+Confidence summary:
 
 ```text
-D1 holder redundancy = independent informative environment fragments
+physically supported: 0
+partially supported: 2
+formal only: 2
+failed/rejected: 0
 ```
 
-within the stated toy system-environment model.
+## Toy Model
 
-## Scenario
+T22 uses a binary pointer state:
 
 ```text
-system states: S0, S1
-observer access: E1, E2, E3, N1
+P(S0) = 0.5
+P(S1) = 0.5
+H(S) = 1.0 bit
+delta = 0.1
+information threshold = 0.9 bits
 ```
 
-| fragment | readable | encodes system | independent channel | branch |
-| --- | --- | --- | --- | --- |
-| E1 | yes | yes | yes | left |
-| E2 | yes | yes | yes | right |
-| E3 | yes | yes | no | left |
-| E4 | no | yes | yes | hidden |
-| N1 | yes | no | yes | noise |
+Environment fragments:
+
+| Fragment | Accessible? | Independence class | Branch | I(S;fragment) |
+| --- | --- | --- | --- | ---: |
+| E1 | yes | left_channel | left | 1.0 |
+| E2 | yes | right_channel | right | 1.0 |
+| E3 | yes | left_channel | left | 1.0 |
+| E4 | no | hidden_channel | hidden | 1.0 |
+| N1 | yes | noise_channel | noise | 0.0 |
+
+`E3` is intentionally a correlated duplicate of the left-channel record. It
+raises raw accessible environmental redundancy but not the
+independence-corrected value used by the D1 holder-redundancy reduction.
 
 ## D1 Profile
 
 ```text
-(accessible_support, holder_redundancy, branch_support, reversal_cost)
-= (3, 2, 2, 4)
+(accessible support, holder redundancy, branch support, reversal cost)
+= (3, 2, 2, 2)
 ```
 
-## Redundancy Check
+## Darwinism-Style Comparison
 
-| quantity | value |
+| Quantity | Value |
 | --- | ---: |
-| accessible fragments | 4 |
-| raw informative accessible fragments | 3 |
-| independent informative accessible fragments | 2 |
+| raw accessible R_delta fragments | 3 |
+| raw total R_delta fragments | 4 |
+| independence-corrected accessible R_delta | 2 |
 | D1 holder redundancy | 2 |
-| redundancy ratio | 1.0 |
 
-## Key Finding
+Main check:
 
-`E3` carries the pointer record but is correlated with `E1`. It raises
-accessible support, but it does not raise holder redundancy. This separates
-D1 holder redundancy from raw copy count and makes it closer to the
-Quantum-Darwinism-style notion of independent environmental witnesses.
+```text
+D1 holder redundancy == independence-corrected accessible R_delta
+2 == 2
+```
+
+Boundary check:
+
+```text
+raw accessible R_delta != D1 holder redundancy
+3 != 2
+```
+
+This shows why T22 should not identify D1 holder redundancy with raw
+environmental copy count unless the fragment partition and independence
+criterion are part of the observable contract.
 
 ## Guardrail
 
-T22 does not derive D1 from quantum mechanics. It supplies one toy observable
-reduction and records assumptions for every D1 axis.
+T22 does not derive D1 from quantum mechanics and does not prove quantum
+Darwinism. It supplies one executable observable comparison and records
+assumptions for every D1 axis.
+
+## Reproduction
+
+```bash
+python -m unittest tests.test_d1_physical_reduction_map -v
+python -m models.run_t22
+```
+
+Machine-readable output:
+
+- [d1-physical-reduction-map-v0.1.json](d1-physical-reduction-map-v0.1.json)

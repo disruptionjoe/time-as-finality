@@ -1,0 +1,632 @@
+{
+  "information_threshold_bits": 0.9,
+  "interactions": [
+    {
+      "branch_root": "z_pointer_measurement",
+      "control": "S",
+      "inverse_operation": "inverse_measurement_cnot_S_to_A",
+      "name": "measurement_cnot_S_to_A",
+      "record_holder": "apparatus",
+      "step": 1,
+      "target": "A"
+    },
+    {
+      "branch_root": "z_pointer_measurement",
+      "control": "A",
+      "inverse_operation": "inverse_copy_A_to_E1",
+      "name": "decoherence_copy_A_to_E1",
+      "record_holder": "env_left",
+      "step": 2,
+      "target": "E1"
+    },
+    {
+      "branch_root": "z_pointer_measurement",
+      "control": "A",
+      "inverse_operation": "inverse_copy_A_to_E2",
+      "name": "decoherence_copy_A_to_E2",
+      "record_holder": "env_right",
+      "step": 3,
+      "target": "E2"
+    },
+    {
+      "branch_root": "z_pointer_measurement",
+      "control": "A",
+      "inverse_operation": "inverse_copy_A_to_E3",
+      "name": "decoherence_copy_A_to_E3",
+      "record_holder": "env_remote",
+      "step": 4,
+      "target": "E3"
+    }
+  ],
+  "interpretation": {
+    "claim_recommendation": "Keep Q1 partially supported. T2 v0.1 shows that D1 adds an observer-access distinction beyond decoherence/R_delta in this toy substrate, while branch support and reversal cost remain proxy-level quantities.",
+    "d1_vs_quantum_darwinism": "Environmental R_delta grows from 0 to 3 as fragments are dynamically copied, but D1 remains observer-indexed and keeps branch support separate from raw redundancy.",
+    "guardrail": "The model uses reversible unitary interactions and never selects a collapse outcome. It does not solve the measurement problem or derive Born probabilities.",
+    "interpretation_boundary": "Under a unitary/no-collapse reading, the global state remains a coherent entangled state while observer-relative records are computed from reduced states and access windows. T2 uses this as a guardrail, not as an endorsement of an interpretation.",
+    "main_result": "The same unitary chain can be fully decohered in the pointer basis while an outside observer has D1 profile (0, 0, 0, 0). This is a concrete decohered-but-inaccessible case."
+  },
+  "observers": [
+    {
+      "accessible_holders": [
+        "apparatus"
+      ],
+      "name": "apparatus_observer",
+      "reconstruction_threshold": 1
+    },
+    {
+      "accessible_holders": [
+        "apparatus",
+        "env_left"
+      ],
+      "name": "local_lab_observer",
+      "reconstruction_threshold": 2
+    },
+    {
+      "accessible_holders": [
+        "env_remote",
+        "env_right"
+      ],
+      "name": "remote_environment_observer",
+      "reconstruction_threshold": 2
+    },
+    {
+      "accessible_holders": [],
+      "name": "outside_observer",
+      "reconstruction_threshold": 1
+    }
+  ],
+  "pointer_basis": "computational_z",
+  "qubits": [
+    "S",
+    "A",
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "stages": [
+    {
+      "active_records": [
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "measurement_cnot_S_to_A",
+          "holder": "apparatus",
+          "inverse_operation": "inverse_measurement_cnot_S_to_A",
+          "qubit": "A"
+        }
+      ],
+      "environment_r_delta_total": 0,
+      "fragment_information_bits": {
+        "A": 1.0,
+        "E1": 0.0,
+        "E2": 0.0,
+        "E3": 0.0
+      },
+      "name": "measurement_cnot_S_to_A",
+      "observers": [
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "apparatus"
+          ],
+          "accessible_records": [
+            "apparatus"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "apparatus_observer has a local record but no redundant accessible witness.",
+          "name": "apparatus_observer",
+          "reconstruction_threshold": 1
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "apparatus",
+            "env_left"
+          ],
+          "accessible_records": [
+            "apparatus"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "local_lab_observer has a local record but no redundant accessible witness.",
+          "name": "local_lab_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "env_remote",
+            "env_right"
+          ],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "remote_environment_observer has no finalized accessible record in this window.",
+          "name": "remote_environment_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "outside_observer has no finalized accessible record in this window.",
+          "name": "outside_observer",
+          "reconstruction_threshold": 1
+        }
+      ],
+      "pointer_coherence_abs": 0.5,
+      "step": 1,
+      "system_apparatus_probabilities": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      }
+    },
+    {
+      "active_records": [
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "measurement_cnot_S_to_A",
+          "holder": "apparatus",
+          "inverse_operation": "inverse_measurement_cnot_S_to_A",
+          "qubit": "A"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E1",
+          "holder": "env_left",
+          "inverse_operation": "inverse_copy_A_to_E1",
+          "qubit": "E1"
+        }
+      ],
+      "environment_r_delta_total": 1,
+      "fragment_information_bits": {
+        "A": 1.0,
+        "E1": 1.0,
+        "E2": 0.0,
+        "E3": 0.0
+      },
+      "name": "decoherence_copy_A_to_E1",
+      "observers": [
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "apparatus"
+          ],
+          "accessible_records": [
+            "apparatus"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "apparatus_observer has a local record but no redundant accessible witness.",
+          "name": "apparatus_observer",
+          "reconstruction_threshold": 1
+        },
+        {
+          "accessible_environment_r_delta": 1,
+          "accessible_holders": [
+            "apparatus",
+            "env_left"
+          ],
+          "accessible_records": [
+            "apparatus",
+            "env_left"
+          ],
+          "d1_profile": {
+            "accessible_support": 2,
+            "branch_support": 1,
+            "holder_redundancy": 2,
+            "profile_tuple": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "local_lab_observer has a redundant observer-relative record.",
+          "name": "local_lab_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "env_remote",
+            "env_right"
+          ],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "remote_environment_observer has no finalized accessible record in this window.",
+          "name": "remote_environment_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "outside_observer has no finalized accessible record in this window.",
+          "name": "outside_observer",
+          "reconstruction_threshold": 1
+        }
+      ],
+      "pointer_coherence_abs": 0.0,
+      "step": 2,
+      "system_apparatus_probabilities": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      }
+    },
+    {
+      "active_records": [
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "measurement_cnot_S_to_A",
+          "holder": "apparatus",
+          "inverse_operation": "inverse_measurement_cnot_S_to_A",
+          "qubit": "A"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E1",
+          "holder": "env_left",
+          "inverse_operation": "inverse_copy_A_to_E1",
+          "qubit": "E1"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E2",
+          "holder": "env_right",
+          "inverse_operation": "inverse_copy_A_to_E2",
+          "qubit": "E2"
+        }
+      ],
+      "environment_r_delta_total": 2,
+      "fragment_information_bits": {
+        "A": 1.0,
+        "E1": 1.0,
+        "E2": 1.0,
+        "E3": 0.0
+      },
+      "name": "decoherence_copy_A_to_E2",
+      "observers": [
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "apparatus"
+          ],
+          "accessible_records": [
+            "apparatus"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "apparatus_observer has a local record but no redundant accessible witness.",
+          "name": "apparatus_observer",
+          "reconstruction_threshold": 1
+        },
+        {
+          "accessible_environment_r_delta": 1,
+          "accessible_holders": [
+            "apparatus",
+            "env_left"
+          ],
+          "accessible_records": [
+            "apparatus",
+            "env_left"
+          ],
+          "d1_profile": {
+            "accessible_support": 2,
+            "branch_support": 1,
+            "holder_redundancy": 2,
+            "profile_tuple": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "local_lab_observer has a redundant observer-relative record.",
+          "name": "local_lab_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 1,
+          "accessible_holders": [
+            "env_remote",
+            "env_right"
+          ],
+          "accessible_records": [
+            "env_right"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "remote_environment_observer has a local record but no redundant accessible witness.",
+          "name": "remote_environment_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "outside_observer has no finalized accessible record in this window.",
+          "name": "outside_observer",
+          "reconstruction_threshold": 1
+        }
+      ],
+      "pointer_coherence_abs": 0.0,
+      "step": 3,
+      "system_apparatus_probabilities": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      }
+    },
+    {
+      "active_records": [
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "measurement_cnot_S_to_A",
+          "holder": "apparatus",
+          "inverse_operation": "inverse_measurement_cnot_S_to_A",
+          "qubit": "A"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E1",
+          "holder": "env_left",
+          "inverse_operation": "inverse_copy_A_to_E1",
+          "qubit": "E1"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E2",
+          "holder": "env_right",
+          "inverse_operation": "inverse_copy_A_to_E2",
+          "qubit": "E2"
+        },
+        {
+          "branch_root": "z_pointer_measurement",
+          "created_by": "decoherence_copy_A_to_E3",
+          "holder": "env_remote",
+          "inverse_operation": "inverse_copy_A_to_E3",
+          "qubit": "E3"
+        }
+      ],
+      "environment_r_delta_total": 3,
+      "fragment_information_bits": {
+        "A": 1.0,
+        "E1": 1.0,
+        "E2": 1.0,
+        "E3": 1.0
+      },
+      "name": "decoherence_copy_A_to_E3",
+      "observers": [
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [
+            "apparatus"
+          ],
+          "accessible_records": [
+            "apparatus"
+          ],
+          "d1_profile": {
+            "accessible_support": 1,
+            "branch_support": 1,
+            "holder_redundancy": 1,
+            "profile_tuple": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "apparatus_observer has a local record but no redundant accessible witness.",
+          "name": "apparatus_observer",
+          "reconstruction_threshold": 1
+        },
+        {
+          "accessible_environment_r_delta": 1,
+          "accessible_holders": [
+            "apparatus",
+            "env_left"
+          ],
+          "accessible_records": [
+            "apparatus",
+            "env_left"
+          ],
+          "d1_profile": {
+            "accessible_support": 2,
+            "branch_support": 1,
+            "holder_redundancy": 2,
+            "profile_tuple": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "local_lab_observer has a redundant observer-relative record.",
+          "name": "local_lab_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 2,
+          "accessible_holders": [
+            "env_remote",
+            "env_right"
+          ],
+          "accessible_records": [
+            "env_right",
+            "env_remote"
+          ],
+          "d1_profile": {
+            "accessible_support": 2,
+            "branch_support": 1,
+            "holder_redundancy": 2,
+            "profile_tuple": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "reversal_cost": 1
+          },
+          "interpretation": "remote_environment_observer has a redundant observer-relative record.",
+          "name": "remote_environment_observer",
+          "reconstruction_threshold": 2
+        },
+        {
+          "accessible_environment_r_delta": 0,
+          "accessible_holders": [],
+          "accessible_records": [],
+          "d1_profile": {
+            "accessible_support": 0,
+            "branch_support": 0,
+            "holder_redundancy": 0,
+            "profile_tuple": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "reversal_cost": 0
+          },
+          "interpretation": "outside_observer has no finalized accessible record in this window.",
+          "name": "outside_observer",
+          "reconstruction_threshold": 1
+        }
+      ],
+      "pointer_coherence_abs": 0.0,
+      "step": 4,
+      "system_apparatus_probabilities": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      }
+    }
+  ],
+  "verdict": {
+    "d1_profiles_depend_on_observer_access": true,
+    "decohered_but_inaccessible_case_detected": true,
+    "decoherence_occurs_after_environment_copy": true,
+    "environment_redundancy_grows_dynamically": true,
+    "pointer_basis_explicit": true,
+    "q1_adds_observer_access_distinction": true,
+    "redundancy_exceeds_branch_support": true,
+    "unitary_dynamics_only_no_collapse": true
+  }
+}

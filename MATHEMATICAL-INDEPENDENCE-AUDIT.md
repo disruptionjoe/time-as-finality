@@ -89,6 +89,7 @@ have been noted as open (ROADMAP Best First #2/#3) but not yet proven.
 | Compression-finality separation (T36) | Earned | Compressibility of the trace distribution and trace_survival_fraction are correlated but empirically distinct; neither is a function of the other. |
 | Path-Dependent Admissibility (T37) | Earned | In a TypedTransportNetwork, two simple paths between the same source and target layer yield different PO1 verdicts when they accumulate different forgotten_structure; AC5 is the only path-varying admissibility condition. |
 | Minimal Transport Theorem (T38) | Earned | TypedTransportNetwork + CompressionRecord + EmergenceRecord (H1+) is the smallest currently justified formalism for ten core transport questions. H0 covers 3/10; H1 covers 8/10; H2 and H3 are not yet required. |
+| PO1-as-CSP Theorem (T39) | Earned | D1RestrictionSystem.global_section().obstruction_detected equals NOT globally_satisfiable for the corresponding binary {-1,1} same/different CSP (signed-graph parity). Arc consistency is trivially true for this constraint language and adds no information. PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. |
 
 **Status: PRESENT.** A theorem ladder exists and is growing.
 
@@ -178,3 +179,4 @@ declared from within the research program alone.
 | 2026-06-18 | v0.1 | Initial audit. Five criteria present; independent motivation unknown. Post T36 state. |
 | 2026-06-18 | v0.2 | T37 adds TypedTransportNetwork as a new primitive. Path-dependent admissibility theorem earned. Composition law (associativity) still open. |
 | 2026-06-18 | v0.3 | T38 adds CompressionRecord and EmergenceRecord as minimal annotation primitives. Minimal Transport Theorem earned: H1+ covers all ten core transport questions. H2 and H3 not yet required. |
+| 2026-06-18 | v0.4 | T39 establishes PO1-as-CSP Theorem: D1 gluing obstruction = binary parity-conflict CSP. Arc consistency trivial. PO1 adds typed source, typed forgotten structure, and admissibility classification not in standard CSP. Mathematical originality is in the classification framework, not the obstruction theorem. |

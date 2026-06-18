@@ -110,6 +110,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
     + CompressionRecord + EmergenceRecord) is the smallest justified formalism;
     network-propagation audit proposed as next step.
+- [TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md)
+  - CSP reframing: PO1 gluing obstruction = binary {-1,1} parity-conflict CSP;
+    typed projection and admissibility classification are new structure beyond CSP.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -183,6 +186,7 @@ python -m models.run_t35
 python -m models.run_t36
 python -m models.run_t37
 python -m models.run_t38
+python -m models.run_t39
 ```
 
 ## Citation / Reuse

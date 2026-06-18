@@ -1,0 +1,188 @@
+{
+  "d1_to_csp_analyses": [
+    {
+      "name": "min_direct_conflict",
+      "variable_count": 2,
+      "constraint_count": 2,
+      "patch_count": 2,
+      "all_arc_consistent": true,
+      "globally_satisfiable": false,
+      "locally_satisfiable": true,
+      "obstruction_type": "direct_parity_conflict",
+      "minimum_conflict_size": 2,
+      "d1_equivalence_verified": true
+    },
+    {
+      "name": "min_transitive_conflict",
+      "variable_count": 3,
+      "constraint_count": 3,
+      "patch_count": 3,
+      "all_arc_consistent": true,
+      "globally_satisfiable": false,
+      "locally_satisfiable": true,
+      "obstruction_type": "transitive_parity_conflict",
+      "minimum_conflict_size": 3,
+      "d1_equivalence_verified": true
+    },
+    {
+      "name": "tree_structured",
+      "variable_count": 4,
+      "constraint_count": 3,
+      "patch_count": 3,
+      "all_arc_consistent": true,
+      "globally_satisfiable": true,
+      "locally_satisfiable": true,
+      "obstruction_type": "none",
+      "minimum_conflict_size": 0,
+      "d1_equivalence_verified": true
+    },
+    {
+      "name": "satisfiable_all_same",
+      "variable_count": 3,
+      "constraint_count": 2,
+      "patch_count": 2,
+      "all_arc_consistent": true,
+      "globally_satisfiable": true,
+      "locally_satisfiable": true,
+      "obstruction_type": "none",
+      "minimum_conflict_size": 0,
+      "d1_equivalence_verified": true
+    }
+  ],
+  "minimum_direct_obstruction": {
+    "name": "min_direct_conflict",
+    "variable_count": 2,
+    "constraint_count": 2,
+    "patch_count": 2,
+    "all_arc_consistent": true,
+    "globally_satisfiable": false,
+    "locally_satisfiable": true,
+    "obstruction_type": "direct_parity_conflict",
+    "minimum_conflict_size": 2,
+    "d1_equivalence_verified": true
+  },
+  "minimum_transitive_obstruction": {
+    "name": "min_transitive_conflict",
+    "variable_count": 3,
+    "constraint_count": 3,
+    "patch_count": 3,
+    "all_arc_consistent": true,
+    "globally_satisfiable": false,
+    "locally_satisfiable": true,
+    "obstruction_type": "transitive_parity_conflict",
+    "minimum_conflict_size": 3,
+    "d1_equivalence_verified": true
+  },
+  "po1_as_csp_bridges": [
+    {
+      "case_name": "witten_1981",
+      "po1_verdict": true,
+      "source_globally_satisfiable": true,
+      "target_obstruction_type": "transitive_parity_conflict",
+      "csp_detects_obstruction": true,
+      "ac5_expressible_in_csp": false,
+      "ac7_expressible_in_csp": false,
+      "csp_gap_conditions": [
+        "AC5: typed forgotten structure \u2014 CSP has no annotation for what was forgotten by a projection",
+        "AC7: source must be globally satisfiable \u2014 CSP has no notion of a source system",
+        "AC1-AC2: validity checks \u2014 CSP has no D1 profile axioms",
+        "AC3-AC4: projection definability and non-trivial obstruction \u2014 no CSP analogue"
+      ]
+    },
+    {
+      "case_name": "nielsen_ninomiya",
+      "po1_verdict": true,
+      "source_globally_satisfiable": true,
+      "target_obstruction_type": "transitive_parity_conflict",
+      "csp_detects_obstruction": true,
+      "ac5_expressible_in_csp": false,
+      "ac7_expressible_in_csp": false,
+      "csp_gap_conditions": [
+        "AC5: typed forgotten structure \u2014 CSP has no annotation for what was forgotten by a projection",
+        "AC7: source must be globally satisfiable \u2014 CSP has no notion of a source system",
+        "AC1-AC2: validity checks \u2014 CSP has no D1 profile axioms",
+        "AC3-AC4: projection definability and non-trivial obstruction \u2014 no CSP analogue"
+      ]
+    },
+    {
+      "case_name": "synthetic_lossy_no_obstruction",
+      "po1_verdict": false,
+      "source_globally_satisfiable": true,
+      "target_obstruction_type": "none",
+      "csp_detects_obstruction": true,
+      "ac5_expressible_in_csp": false,
+      "ac7_expressible_in_csp": false,
+      "csp_gap_conditions": [
+        "AC5: typed forgotten structure \u2014 CSP has no annotation for what was forgotten by a projection",
+        "AC7: source must be globally satisfiable \u2014 CSP has no notion of a source system",
+        "AC1-AC2: validity checks \u2014 CSP has no D1 profile axioms",
+        "AC3-AC4: projection definability and non-trivial obstruction \u2014 no CSP analogue"
+      ]
+    },
+    {
+      "case_name": "synthetic_shared_obstruction",
+      "po1_verdict": false,
+      "source_globally_satisfiable": false,
+      "target_obstruction_type": "transitive_parity_conflict",
+      "csp_detects_obstruction": true,
+      "ac5_expressible_in_csp": false,
+      "ac7_expressible_in_csp": false,
+      "csp_gap_conditions": [
+        "AC5: typed forgotten structure \u2014 CSP has no annotation for what was forgotten by a projection",
+        "AC7: source must be globally satisfiable \u2014 CSP has no notion of a source system",
+        "AC1-AC2: validity checks \u2014 CSP has no D1 profile axioms",
+        "AC3-AC4: projection definability and non-trivial obstruction \u2014 no CSP analogue"
+      ]
+    }
+  ],
+  "theorem_arc_consistency": "Arc-Consistency Triviality: every binary same/different constraint over {-1, 1} is arc-consistent. 'same' is witnessed by (left=1, right=1); 'different' by (left=1, right=-1). Arc consistency is universally true for our constraint language and cannot distinguish PO1 from non-PO1 cases.",
+  "theorem_parity": "Signed-Graph Parity: a binary {-1, 1} CSP with same/different constraints is globally satisfiable iff its signed constraint graph (edges +1 for same, -1 for different) contains no negative cycle (cycle whose edge-label product is -1, i.e., odd number of 'different' edges around the cycle). Two subtypes: direct parity conflict (same pair with same+different, min 2 vars) and transitive parity conflict (odd cycle of length \u2265 3, min 3 vars).",
+  "theorem_d1_csp_equivalence": "D1-CSP Equivalence: D1RestrictionSystem.global_section().obstruction_detected equals NOT globally_satisfiable for the corresponding binary CSP. Verified on: minimum direct conflict (2 vars, 2 patches), minimum transitive conflict (3 vars, 3 patches / T26 3-site obstruction), tree-structured CSP (globally satisfiable \u2014 no negative cycle), and satisfiable all-same CSP.",
+  "theorem_po1_as_csp": "PO1-as-CSP: the PO1 gluing obstruction is a parity-conflicting binary CSP. PO1 is a CSP theorem at the obstruction level. However, PO1 adds three layers not present in standard CSP: (A) typed source \u2014 the source system must be globally satisfiable (AC7); (B) typed forgotten structure \u2014 the projection discards named structure (AC5); (C) admissibility classification \u2014 satisfiability-loss events are classified as meaningful, shared, or degenerate (AC1-AC7). None of (A), (B), (C) have direct CSP analogues. Verdict: PO1 IS a CSP theorem; the typed structure on top of it is new.",
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H_A",
+      "claim": "PO1 is entirely reducible to known CSP results.",
+      "verdict": "rejected",
+      "evidence_for": [
+        "The gluing obstruction is a parity-conflict CSP \u2014 a known phenomenon (equivalent to signed-graph 2-colorability / odd-cycle detection)."
+      ],
+      "evidence_against": [
+        "CSP satisfiability is binary (satisfiable or not). PO1 adds: (1) typed source (AC7 \u2014 source must be satisfiable), (2) typed forgotten structure (AC5), (3) admissibility classification (AC1-AC7). None of these have direct CSP analogues.",
+        "CSP does not ask 'what structure was forgotten by the projection?' \u2014 it only asks whether the constraint set is satisfiable.",
+        "The PO1 classification of non-admissible cases (shared obstruction, no new obstruction, trivial obstruction) is not expressible in CSP."
+      ],
+      "reason": "H_A is rejected because PO1 adds typed structure beyond CSP."
+    },
+    {
+      "hypothesis_id": "H_B",
+      "claim": "PO1 gluing obstruction = CSP phenomenon. Typed projection and admissibility classification are new structure.",
+      "verdict": "best_supported",
+      "evidence_for": [
+        "Theorem 3 (D1-CSP Equivalence): D1 gluing obstruction iff parity conflict. Direct verification on T26 3-site case, minimum direct conflict, tree-structured (no obstruction), satisfiable (no obstruction).",
+        "Theorem 1: arc consistency is trivial \u2014 adds no information.",
+        "Theorem 2: parity theorem gives the exact satisfiability criterion.",
+        "The four gaps (AC5, AC7, AC1-AC4, classification) have no CSP analogues. PO1 adds structure beyond what satisfiability alone can express."
+      ],
+      "evidence_against": [
+        "If a future richer CSP formalism (e.g., valued CSP, algebraic CSP) captures typed projections, H_A might become partially correct."
+      ],
+      "reason": "H_B is best supported: CSP explains the obstruction mechanism; typed projection and admissibility classification are the genuine additions."
+    },
+    {
+      "hypothesis_id": "H_C",
+      "claim": "The admissibility classification (AC1-AC7) is the primary new contribution.",
+      "verdict": "partially_supported",
+      "evidence_for": [
+        "AC5 (typed forgotten structure) has no CSP analogue. The non-admissible classifications (shared, no new, trivial obstruction) go beyond what CSP satisfiability can express."
+      ],
+      "evidence_against": [
+        "The typed source (AC7) is equally important and equally absent from CSP. H_C undersells the typed-projection aspect (AC5 + AC7 together)."
+      ],
+      "reason": "H_C is partially supported but incomplete: admissibility is part of the new contribution, but typed projection is equally important."
+    }
+  ],
+  "best_supported_hypothesis": "H_B",
+  "boundary": "The equivalence holds for binary {-1, 1} domains with same/different constraints. Richer CSP languages (n-ary constraints, non-binary domains, soft constraints, algebraic CSP) may capture more of PO1's structure. Valued CSP or constraint optimization may partially capture AC5 (forgetting named structure increases constraint violation cost). This has not been tested. The AC1-AC2 validity checks (D1 profile axioms) are domain-specific and have no natural CSP analogue. The admissibility classification (7 conditions) is specific to the typed morphism / D1 profile framework.",
+  "recommendation": "Adopt PO1-as-CSP as a named theorem in CLAIM-LEDGER.md. Draft the publishable statement: 'Typed Projection-Obstruction is a CSP classification scheme: a finite framework for identifying when satisfiability loss is meaningful (typed source, named forgotten structure, admissibility classification).' Test whether valued CSP (VCSP) captures AC5: if forgetting named structure maps to a cost function in VCSP, the connection becomes stronger. The composition law (associativity) and the VCSP comparison are the two highest-value next steps for strengthening the publishable math."
+}

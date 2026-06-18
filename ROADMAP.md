@@ -424,3 +424,34 @@ Two new annotation objects close the remaining gaps:
 4. **Apply discovery engine (T35) to TypedTransportNetworks.** Extend the T35
    generator to enumerate networks and compare their forgotten_structure signatures
    against the diamond, spectre, and T38 compression patterns.
+
+## Phase 9: Post-T39 — CSP Reframing, Composition Law, and Category Prototype
+
+T39 establishes that the PO1 gluing obstruction is exactly a parity-conflicting
+binary CSP (signed-graph 2-colorability). This is known mathematics. The
+genuinely new contribution is the typed classification framework on top: typed
+source (AC7), typed forgotten structure (AC5), and admissibility checklist
+(AC1-AC7). None of these have direct CSP analogues.
+
+This clarifies the mathematical originality claim: PO1 is not a new obstruction
+theorem — it is a new classification scheme for when satisfiability loss under
+projection is meaningful.
+
+### Immediate next steps
+
+1. **Typed Transport Category Prototype (T40).** Formalize typed transport as
+   objects and morphisms. Prove or falsify associativity and identity morphisms.
+   If associativity holds, TypedTransportNetwork becomes a proper category and
+   H3 (category) becomes a consequence of H1+, not a competitor.
+
+2. **Finite-to-Infinite Boundary Audit (T41).** Determine which T39 results
+   (parity theorem, D1-CSP equivalence, admissibility classification) hold for
+   infinite or continuous analogues, and which are strictly finite.
+
+3. **Valued CSP comparison (T39 follow-up).** Test whether AC5 (named forgotten
+   structure) maps to a constraint-violation cost in Valued CSP (VCSP). If so,
+   the PO1-as-CSP connection strengthens.
+
+4. **Proof / Certificate / Observer Access Audit (T42).** Audit which theorems
+   in the ladder have machine-verifiable certificates and which require
+   proof-carrying additional structure.

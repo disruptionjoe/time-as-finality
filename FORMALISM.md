@@ -105,6 +105,18 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > obstruction-creation, compression, and structure-creation are distinct
 > phenomena requiring distinct records. H2 (graph-of-graphs) and H3
 > (bundle/presheaf/category) are not yet required.
+>
+> **CSP reframing update:** [T39](tests/T39-csp-satisfiability-reframing.md)
+> establishes that the D1RestrictionSystem patch language is a binary {-1,1}
+> CSP and that the gluing obstruction is exactly a parity-conflicting binary
+> CSP (signed-graph 2-colorability / negative cycle). Four theorems: arc
+> consistency is trivially true for same/different constraints and adds no
+> information; global satisfiability is determined by absence of negative
+> cycles; D1 obstruction is equivalent to CSP parity conflict; PO1 is a CSP
+> theorem at the obstruction level but adds typed source (AC7), typed forgotten
+> structure (AC5), and admissibility classification (AC1-AC7) not present in
+> standard CSP. H_B best supported: the gluing mechanism is known; the
+> classification framework on top of it is new.
 
 ## Primitive Inventory
 

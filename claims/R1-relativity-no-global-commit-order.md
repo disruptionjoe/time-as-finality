@@ -32,6 +32,16 @@ This preserves a serious distributed-systems analogy without turning spacetime i
 
 This also means remote observation is still rendering in the record-finality sense. If photons from Andromeda reach an observer, those photons are causal records in that observer's graph. Direct local participation in Andromeda is different from record access through received light, but both must be distinguished rather than collapsed.
 
+T42 adds a finite guardrail for this distinction: local persistence accumulation
+and inter-observer reconciliation delay are modeled as separate observables.
+The positive result is only finite and synthetic, but it rejects the unsafe
+shortcut "time dilation = signal delay" inside the repo's own toy language.
+
+T43 then asks what can alter local accumulation with propagation held fixed.
+Intrinsic rate, finite resource budget, and interaction density all work as
+finite mechanisms, while propagation-shadow is rejected as delay in disguise.
+The result does not identify a physical clock mechanism.
+
 ## How It Could Fail
 
 - The analogy hides rather than clarifies spacetime geometry.
@@ -45,6 +55,8 @@ This also means remote observation is still rendering in the record-finality sen
 - [T3: Spacelike Events And No Global Commit Order](../tests/T3-spacelike-events-no-global-commit-order.md)
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
+- [T42: Local Persistence And Reconciliation Split Audit](../tests/T42-local-persistence-reconciliation-split.md)
+- [T43: Local Persistence Accumulation Mechanism Audit](../tests/T43-local-persistence-mechanisms.md)
 
 ## Contribution Needed
 

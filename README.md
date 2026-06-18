@@ -120,6 +120,14 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Typed transport category: D1RestrictionMorphisms form a proper category;
     associativity, identity morphisms, and unit laws all hold; PO1 is not a
     Boolean functor on D1Cat (T34 restated categorically); H_A best supported.
+- [TECHNICAL-REPORT-local-persistence-reconciliation-split-v0.1.md](TECHNICAL-REPORT-local-persistence-reconciliation-split-v0.1.md)
+  - Local persistence/reconciliation split: finite witnesses separate local
+    accumulation from record-access lag; signal delay is not treated as time
+    dilation; H2 best supported.
+- [TECHNICAL-REPORT-local-persistence-mechanisms-v0.1.md](TECHNICAL-REPORT-local-persistence-mechanisms-v0.1.md)
+  - Local persistence mechanism audit: intrinsic rate, finite resource budget,
+    and interaction density alter local accumulation with propagation fixed;
+    equivalent traces make H4 best supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -196,6 +204,8 @@ python -m models.run_t38
 python -m models.run_t39
 python -m models.run_t40
 python -m models.run_t41
+python -m models.run_t42
+python -m models.run_t43
 ```
 
 ## Run Explorations

@@ -1,0 +1,532 @@
+{
+  "mechanism_cases": [
+    {
+      "name": "intrinsic_rate_difference",
+      "hypothesis_id": "H1",
+      "source_trace": {
+        "name": "intrinsic_fast",
+        "mechanism_type": "intrinsic_stabilization_rate",
+        "parameters": {
+          "rate": 2,
+          "event_count": 10
+        },
+        "deltas": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "total_accumulation": 20,
+        "mean_rate": 2.0,
+        "depends_on_propagation": false
+      },
+      "target_trace": {
+        "name": "intrinsic_slow",
+        "mechanism_type": "intrinsic_stabilization_rate",
+        "parameters": {
+          "rate": 1,
+          "event_count": 10
+        },
+        "deltas": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_accumulation": 10,
+        "mean_rate": 1.0,
+        "depends_on_propagation": false
+      },
+      "propagation_delay_events": 0,
+      "observation": {
+        "comparison_name": "intrinsic_rate_difference_comparison",
+        "source_id": "source",
+        "target_id": "target",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 20,
+        "target_total_accumulation": 10,
+        "source_visible_index": 10,
+        "source_visible_accumulation": 20,
+        "hidden_source_accumulation_due_to_delay": 0,
+        "reconciliation_lag_events": 0,
+        "propagation_delay_events": 0,
+        "local_accumulation_difference": 10,
+        "source_local_rate": 2.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": false,
+        "classification": "dilation_like_accumulation_without_extra_delay"
+      },
+      "produces_local_difference": true,
+      "independent_of_propagation": true,
+      "preserves_t42_split": true,
+      "verdict": "supported",
+      "interpretation": "Different node-local rates produce accumulation differences while the comparison channel has zero delay."
+    },
+    {
+      "name": "resource_budget_difference",
+      "hypothesis_id": "H2",
+      "source_trace": {
+        "name": "resource_full_budget",
+        "mechanism_type": "finite_resource_budget",
+        "parameters": {
+          "update_demand": 2,
+          "stabilization_budget": 2,
+          "event_count": 10
+        },
+        "deltas": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "total_accumulation": 20,
+        "mean_rate": 2.0,
+        "depends_on_propagation": false
+      },
+      "target_trace": {
+        "name": "resource_limited_budget",
+        "mechanism_type": "finite_resource_budget",
+        "parameters": {
+          "update_demand": 2,
+          "stabilization_budget": 1,
+          "event_count": 10
+        },
+        "deltas": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_accumulation": 10,
+        "mean_rate": 1.0,
+        "depends_on_propagation": false
+      },
+      "propagation_delay_events": 0,
+      "observation": {
+        "comparison_name": "resource_budget_difference_comparison",
+        "source_id": "source",
+        "target_id": "target",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 20,
+        "target_total_accumulation": 10,
+        "source_visible_index": 10,
+        "source_visible_accumulation": 20,
+        "hidden_source_accumulation_due_to_delay": 0,
+        "reconciliation_lag_events": 0,
+        "propagation_delay_events": 0,
+        "local_accumulation_difference": 10,
+        "source_local_rate": 2.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": false,
+        "classification": "dilation_like_accumulation_without_extra_delay"
+      },
+      "produces_local_difference": true,
+      "independent_of_propagation": true,
+      "preserves_t42_split": true,
+      "verdict": "supported",
+      "interpretation": "A finite stabilization budget limits one node's local accumulation even though propagation is unchanged."
+    },
+    {
+      "name": "interaction_density_difference",
+      "hypothesis_id": "H3",
+      "source_trace": {
+        "name": "dense_local_coupling",
+        "mechanism_type": "interaction_density",
+        "parameters": {
+          "base_rate": 1,
+          "coupling_strength": 1,
+          "interaction_count": 1,
+          "event_count": 10
+        },
+        "deltas": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "total_accumulation": 20,
+        "mean_rate": 2.0,
+        "depends_on_propagation": false
+      },
+      "target_trace": {
+        "name": "sparse_local_coupling",
+        "mechanism_type": "interaction_density",
+        "parameters": {
+          "base_rate": 1,
+          "coupling_strength": 1,
+          "interaction_count": 0,
+          "event_count": 10
+        },
+        "deltas": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_accumulation": 10,
+        "mean_rate": 1.0,
+        "depends_on_propagation": false
+      },
+      "propagation_delay_events": 0,
+      "observation": {
+        "comparison_name": "interaction_density_difference_comparison",
+        "source_id": "source",
+        "target_id": "target",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 20,
+        "target_total_accumulation": 10,
+        "source_visible_index": 10,
+        "source_visible_accumulation": 20,
+        "hidden_source_accumulation_due_to_delay": 0,
+        "reconciliation_lag_events": 0,
+        "propagation_delay_events": 0,
+        "local_accumulation_difference": 10,
+        "source_local_rate": 2.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": false,
+        "classification": "dilation_like_accumulation_without_extra_delay"
+      },
+      "produces_local_difference": true,
+      "independent_of_propagation": true,
+      "preserves_t42_split": true,
+      "verdict": "supported",
+      "interpretation": "Local interaction density changes the accumulation rate without changing reconciliation topology."
+    },
+    {
+      "name": "resource_difference_with_delay",
+      "hypothesis_id": "H2",
+      "source_trace": {
+        "name": "resource_full_budget_delayed",
+        "mechanism_type": "finite_resource_budget",
+        "parameters": {
+          "update_demand": 2,
+          "stabilization_budget": 2,
+          "event_count": 10
+        },
+        "deltas": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "total_accumulation": 20,
+        "mean_rate": 2.0,
+        "depends_on_propagation": false
+      },
+      "target_trace": {
+        "name": "resource_limited_budget_delayed",
+        "mechanism_type": "finite_resource_budget",
+        "parameters": {
+          "update_demand": 2,
+          "stabilization_budget": 1,
+          "event_count": 10
+        },
+        "deltas": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_accumulation": 10,
+        "mean_rate": 1.0,
+        "depends_on_propagation": false
+      },
+      "propagation_delay_events": 3,
+      "observation": {
+        "comparison_name": "resource_difference_with_delay_comparison",
+        "source_id": "source",
+        "target_id": "target",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 20,
+        "target_total_accumulation": 10,
+        "source_visible_index": 7,
+        "source_visible_accumulation": 14,
+        "hidden_source_accumulation_due_to_delay": 6,
+        "reconciliation_lag_events": 3,
+        "propagation_delay_events": 3,
+        "local_accumulation_difference": 10,
+        "source_local_rate": 2.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": true,
+        "classification": "both_effects"
+      },
+      "produces_local_difference": true,
+      "independent_of_propagation": false,
+      "preserves_t42_split": false,
+      "verdict": "combined_effects_witness",
+      "interpretation": "Local accumulation difference and reconciliation lag can coexist and remain separately measurable."
+    }
+  ],
+  "propagation_control": {
+    "name": "fixed_intrinsic_vary_propagation",
+    "zero_delay_observation": {
+      "comparison_name": "same_intrinsic_zero_delay_comparison",
+      "source_id": "source",
+      "target_id": "target",
+      "source_local_index": 10,
+      "target_local_index": 10,
+      "source_total_accumulation": 10,
+      "target_total_accumulation": 10,
+      "source_visible_index": 10,
+      "source_visible_accumulation": 10,
+      "hidden_source_accumulation_due_to_delay": 0,
+      "reconciliation_lag_events": 0,
+      "propagation_delay_events": 0,
+      "local_accumulation_difference": 0,
+      "source_local_rate": 1.0,
+      "target_local_rate": 1.0,
+      "accumulation_difference_present": false,
+      "reconciliation_lag_present": false,
+      "classification": "null_case"
+    },
+    "delayed_observation": {
+      "comparison_name": "same_intrinsic_delayed_comparison",
+      "source_id": "source",
+      "target_id": "target",
+      "source_local_index": 10,
+      "target_local_index": 10,
+      "source_total_accumulation": 10,
+      "target_total_accumulation": 10,
+      "source_visible_index": 6,
+      "source_visible_accumulation": 6,
+      "hidden_source_accumulation_due_to_delay": 4,
+      "reconciliation_lag_events": 4,
+      "propagation_delay_events": 4,
+      "local_accumulation_difference": 0,
+      "source_local_rate": 1.0,
+      "target_local_rate": 1.0,
+      "accumulation_difference_present": false,
+      "reconciliation_lag_present": true,
+      "classification": "delay_without_dilation"
+    },
+    "accumulation_difference_changed": false,
+    "reconciliation_lag_changed": true,
+    "verdict": "pass: propagation changes reconciliation lag but not local accumulation"
+  },
+  "propagation_shadow_counterexample": {
+    "name": "propagation_shadow",
+    "fixed_topology_observation": {
+      "comparison_name": "shadow_fixed_topology_comparison",
+      "source_id": "source",
+      "target_id": "target",
+      "source_local_index": 10,
+      "target_local_index": 10,
+      "source_total_accumulation": 10,
+      "target_total_accumulation": 10,
+      "source_visible_index": 10,
+      "source_visible_accumulation": 10,
+      "hidden_source_accumulation_due_to_delay": 0,
+      "reconciliation_lag_events": 0,
+      "propagation_delay_events": 0,
+      "local_accumulation_difference": 0,
+      "source_local_rate": 1.0,
+      "target_local_rate": 1.0,
+      "accumulation_difference_present": false,
+      "reconciliation_lag_present": false,
+      "classification": "null_case"
+    },
+    "varied_topology_observation": {
+      "comparison_name": "shadow_varied_topology_comparison",
+      "source_id": "source",
+      "target_id": "target",
+      "source_local_index": 10,
+      "target_local_index": 10,
+      "source_total_accumulation": 20,
+      "target_total_accumulation": 10,
+      "source_visible_index": 10,
+      "source_visible_accumulation": 20,
+      "hidden_source_accumulation_due_to_delay": 0,
+      "reconciliation_lag_events": 0,
+      "propagation_delay_events": 0,
+      "local_accumulation_difference": 10,
+      "source_local_rate": 2.0,
+      "target_local_rate": 1.0,
+      "accumulation_difference_present": true,
+      "reconciliation_lag_present": false,
+      "classification": "dilation_like_accumulation_without_extra_delay"
+    },
+    "fixed_topology_produces_difference": false,
+    "varied_topology_produces_difference": true,
+    "eliminated": true,
+    "reason": "The candidate produces local accumulation differences only when propagation parameters differ. Under fixed topology it produces no difference, so it is delay in disguise."
+  },
+  "equivalence_classes": [
+    {
+      "signature": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "members": [
+        "intrinsic_rate_2",
+        "resource_demand_2_budget_2",
+        "interaction_base_1_coupling_1_count_1"
+      ],
+      "observationally_equivalent": true
+    },
+    {
+      "signature": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "members": [
+        "intrinsic_rate_1",
+        "resource_demand_2_budget_1",
+        "interaction_base_1_coupling_1_count_0"
+      ],
+      "observationally_equivalent": true
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H0",
+      "claim": "No additional mechanism exists within the current finite framework.",
+      "status": "rejected",
+      "evidence_for": [],
+      "evidence_against": [
+        "Intrinsic rate, resource budget, and interaction density all produce local differences with zero delay.",
+        "The propagation control shows delay changes lag without changing local accumulation."
+      ],
+      "verdict": "Rejected within the finite model."
+    },
+    {
+      "hypothesis_id": "H1",
+      "claim": "Local accumulation depends only on intrinsic node-local update rules.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "The intrinsic_rate_difference case produces local accumulation difference with fixed propagation."
+      ],
+      "evidence_against": [
+        "Resource and interaction mechanisms produce the same observable effect without being only intrinsic-rate labels."
+      ],
+      "verdict": "Supported as one mechanism, not as the unique mechanism."
+    },
+    {
+      "hypothesis_id": "H2",
+      "claim": "Local accumulation depends on finite local resources.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "The resource_budget_difference case produces local accumulation difference with fixed propagation.",
+        "Finite budget is a small extension: it changes event deltas without changing D1RestrictionSystem or TTN."
+      ],
+      "evidence_against": [
+        "The same traces can be generated by intrinsic-rate and interaction-density parameterizations."
+      ],
+      "verdict": "Promising as a mechanistic interpretation, but not uniquely identified by T43."
+    },
+    {
+      "hypothesis_id": "H3",
+      "claim": "Local accumulation depends on local interaction density or environmental coupling.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "The interaction_density_difference case produces local accumulation difference with fixed propagation."
+      ],
+      "evidence_against": [
+        "The trace is observationally equivalent to simpler intrinsic-rate and resource-budget traces."
+      ],
+      "verdict": "Supported as one finite mechanism, not uniquely identified."
+    },
+    {
+      "hypothesis_id": "H4",
+      "claim": "Several mechanisms are mathematically equivalent under finite models.",
+      "status": "best_supported",
+      "evidence_for": [
+        "Intrinsic, resource, and interaction mechanisms can generate identical delta signatures.",
+        "The finite observations cannot distinguish mechanisms that produce the same local trace."
+      ],
+      "evidence_against": [
+        "Equivalence is trace-level only; richer observables could separate mechanisms later."
+      ],
+      "verdict": "Best supported. T43 identifies a mechanism-equivalence class rather than one unique cause."
+    },
+    {
+      "hypothesis_id": "H5",
+      "claim": "A different mechanism emerges that better explains the observed separation.",
+      "status": "not_earned",
+      "evidence_for": [
+        "The propagation-shadow candidate usefully exposes a boundary case."
+      ],
+      "evidence_against": [
+        "The boundary case is eliminated as disguised propagation, not promoted as a better mechanism.",
+        "Supported mechanism IDs were ('H1', 'H2', 'H3')."
+      ],
+      "verdict": "Not earned in T43."
+    }
+  ],
+  "best_supported_hypothesis": "H4",
+  "minimal_extension": "Add a node-local accumulation generator as metadata around T42 local histories. Do not modify D1RestrictionSystem or TypedTransportNetwork.",
+  "theorem": "Finite Local Mechanism Equivalence Theorem: multiple finite node-local mechanisms can change local persistence accumulation with propagation held fixed, and distinct mechanism parameterizations can generate identical local delta traces.",
+  "boundary": "T43 compares finite trace generators only. It does not derive proper time, does not introduce spacetime dynamics, and does not identify a unique physical cause of local accumulation differences.",
+  "recommendation": "Promote the local accumulation generator as a minimal mathematical sidecar for future tests. Treat resource budget and interaction density as promising interpretations, but keep H4 as the current verdict because the finite traces are observationally equivalent."
+}

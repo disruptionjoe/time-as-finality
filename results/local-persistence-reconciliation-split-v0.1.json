@@ -1,0 +1,187 @@
+{
+  "scenarios": [
+    {
+      "name": "delay_without_dilation",
+      "expected_classification": "delay_without_dilation",
+      "observed_classification": "delay_without_dilation",
+      "passed": true,
+      "observation": {
+        "comparison_name": "delay_without_dilation_comparison",
+        "source_id": "clock_a",
+        "target_id": "clock_b",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 10,
+        "target_total_accumulation": 10,
+        "source_visible_index": 6,
+        "source_visible_accumulation": 6,
+        "hidden_source_accumulation_due_to_delay": 4,
+        "reconciliation_lag_events": 4,
+        "propagation_delay_events": 4,
+        "local_accumulation_difference": 0,
+        "source_local_rate": 1.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": false,
+        "reconciliation_lag_present": true,
+        "classification": "delay_without_dilation"
+      },
+      "finding": "delay_without_dilation: classification=delay_without_dilation, accumulation_difference=0, reconciliation_lag=4"
+    },
+    {
+      "name": "dilation_like_without_delay",
+      "expected_classification": "dilation_like_accumulation_without_extra_delay",
+      "observed_classification": "dilation_like_accumulation_without_extra_delay",
+      "passed": true,
+      "observation": {
+        "comparison_name": "dilation_like_without_delay_comparison",
+        "source_id": "clock_fast",
+        "target_id": "clock_slow",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 10,
+        "target_total_accumulation": 6,
+        "source_visible_index": 10,
+        "source_visible_accumulation": 10,
+        "hidden_source_accumulation_due_to_delay": 0,
+        "reconciliation_lag_events": 0,
+        "propagation_delay_events": 0,
+        "local_accumulation_difference": 4,
+        "source_local_rate": 1.0,
+        "target_local_rate": 0.6,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": false,
+        "classification": "dilation_like_accumulation_without_extra_delay"
+      },
+      "finding": "dilation_like_without_delay: classification=dilation_like_accumulation_without_extra_delay, accumulation_difference=4, reconciliation_lag=0"
+    },
+    {
+      "name": "both_effects",
+      "expected_classification": "both_effects",
+      "observed_classification": "both_effects",
+      "passed": true,
+      "observation": {
+        "comparison_name": "both_effects_comparison",
+        "source_id": "clock_fast",
+        "target_id": "clock_slow",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 10,
+        "target_total_accumulation": 6,
+        "source_visible_index": 7,
+        "source_visible_accumulation": 7,
+        "hidden_source_accumulation_due_to_delay": 3,
+        "reconciliation_lag_events": 3,
+        "propagation_delay_events": 3,
+        "local_accumulation_difference": 4,
+        "source_local_rate": 1.0,
+        "target_local_rate": 0.6,
+        "accumulation_difference_present": true,
+        "reconciliation_lag_present": true,
+        "classification": "both_effects"
+      },
+      "finding": "both_effects: classification=both_effects, accumulation_difference=4, reconciliation_lag=3"
+    },
+    {
+      "name": "null_case",
+      "expected_classification": "null_case",
+      "observed_classification": "null_case",
+      "passed": true,
+      "observation": {
+        "comparison_name": "null_case_comparison",
+        "source_id": "clock_a",
+        "target_id": "clock_b",
+        "source_local_index": 10,
+        "target_local_index": 10,
+        "source_total_accumulation": 10,
+        "target_total_accumulation": 10,
+        "source_visible_index": 10,
+        "source_visible_accumulation": 10,
+        "hidden_source_accumulation_due_to_delay": 0,
+        "reconciliation_lag_events": 0,
+        "propagation_delay_events": 0,
+        "local_accumulation_difference": 0,
+        "source_local_rate": 1.0,
+        "target_local_rate": 1.0,
+        "accumulation_difference_present": false,
+        "reconciliation_lag_present": false,
+        "classification": "null_case"
+      },
+      "finding": "null_case: classification=null_case, accumulation_difference=0, reconciliation_lag=0"
+    }
+  ],
+  "all_witnesses_pass": true,
+  "independence_witnessed": true,
+  "hypothesis_evaluations": [
+    {
+      "hypothesis_id": "H0",
+      "claim": "Proper time remains primitive physics; TaF only reconstructs accessible temporal order from records.",
+      "status": "retained_guardrail",
+      "evidence_for": [
+        "T42 does not use metric proper time and does not derive it.",
+        "The executable result is a finite separation, not a physics recovery."
+      ],
+      "evidence_against": [
+        "The finite model shows a local accumulator worth studying as a proxy."
+      ],
+      "verdict": "Retain H0 as the physics guardrail. T42 adds a toy split, not a replacement for proper time."
+    },
+    {
+      "hypothesis_id": "H1",
+      "claim": "Local irreversible constraint accumulation is a useful finite proxy for proper-time-like behavior.",
+      "status": "partially_supported",
+      "evidence_for": [
+        "The dilation-like witness changes local accumulation while delay is zero.",
+        "The null and delay-only witnesses prevent the accumulator from collapsing into channel delay."
+      ],
+      "evidence_against": [
+        "No mapping to Lorentzian interval or physical clock dynamics is provided.",
+        "The local accumulator is hand-authored in the toy systems."
+      ],
+      "verdict": "Supported only as a finite proxy. It is not yet a physical proper-time observable."
+    },
+    {
+      "hypothesis_id": "H2",
+      "claim": "Network propagation explains reconciliation and synchronization lag, but not proper-time-like accumulation difference.",
+      "status": "best_supported",
+      "evidence_for": [
+        "Delay without dilation witnesses lag with zero accumulation difference.",
+        "Dilation-like without delay witnesses accumulation difference with zero lag.",
+        "Both-effects and null witnesses complete the independence grid."
+      ],
+      "evidence_against": [
+        "The result is finite and synthetic, not a physical measurement model."
+      ],
+      "verdict": "Best supported. T42 cleanly separates reconciliation delay from local accumulation."
+    },
+    {
+      "hypothesis_id": "H3",
+      "claim": "Proper time and local persistence are dual descriptions of one invariant under a declared mapping.",
+      "status": "not_earned",
+      "evidence_for": [
+        "The local accumulator has the right shape to be compared with a local clock proxy."
+      ],
+      "evidence_against": [
+        "No invariant-interval mapping is defined.",
+        "No relativity recovery or physical clock experiment is modeled."
+      ],
+      "verdict": "Not earned. H3 should wait for a recovery test that does not insert proper time as an input."
+    },
+    {
+      "hypothesis_id": "H4",
+      "claim": "No clean mapping exists; the idea is only metaphorical.",
+      "status": "rejected_for_finite_split",
+      "evidence_for": [
+        "The physical mapping remains open."
+      ],
+      "evidence_against": [
+        "The four synthetic witnesses define a clean finite separation.",
+        "Local accumulation and reconciliation lag are independently variable."
+      ],
+      "verdict": "Rejected at the finite-model level if all witnesses pass; still available against any stronger physics claim."
+    }
+  ],
+  "best_supported_hypothesis": "H2",
+  "theorem": "Finite Accumulation/Reconciliation Independence Theorem: in the LocalPersistenceReconciliationSystem toy model, local accumulation difference and reconciliation lag are independent finite observables. All four combinations are witnessed: lag-only, accumulation-only, both, and neither.",
+  "boundary": "The theorem is finite and synthetic. It does not derive proper time, does not recover Lorentz transformations, and does not replace metric geometry. The simulator event index is bookkeeping only.",
+  "recommendation": "Promote T42 as a guardrail test track for relativity-facing language. Do not promote a physics claim. A future recovery test would need to map local persistence accumulation to a known proper-time pattern without inserting that pattern as an input."
+}

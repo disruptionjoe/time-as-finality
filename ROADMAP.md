@@ -557,3 +557,75 @@ diverge -- which would be a genuine discovery warranting a new test number.
 **No CLAIM-LEDGER.md update.** No claim changed status. The sprint confirmed
 consistency with existing claims and identified a known-unknown (upward recovery
 propagation) rather than overturning any existing result.
+
+## Phase 12: T42 Local Persistence / Reconciliation Split
+
+The exploration note
+[Proper Time, Persistence, and Reconciliation Fork](explorations/proper-time-persistence-reconciliation-fork.md)
+identifies a missing distinction in the current trajectory:
+
+```text
+local persistence / proper-time-like accumulation
+  is not the same observable as
+inter-observer propagation / reconciliation delay
+```
+
+This does not change any claim status. It sharpens R1/T3 discipline by rejecting
+the unsafe shortcut "time dilation = network propagation delay." The safer next
+question is whether a finite model can keep three quantities separate:
+
+```text
+local persistence accumulation
+record propagation / reconciliation
+observer-accessible comparison
+```
+
+**Completed v0.1:** implement
+[T42](tests/T42-local-persistence-reconciliation-split.md) as the Local
+Persistence and Reconciliation Split Audit. The executable
+`LocalPersistenceReconciliationSystem` separates local accumulation from
+record-access lag. Four witnesses pass: delay without dilation, dilation-like
+accumulation without extra delay, both effects together, and a null case.
+
+T42 supports H2: network propagation explains reconciliation and synchronization
+lag, but not proper-time-like local accumulation difference. H1 is only
+partially supported as a finite proxy. H3 is not earned because no invariant
+interval mapping is defined.
+
+Next recovery question: can local persistence accumulation recover a known
+proper-time pattern without using proper time as an input? Until that succeeds,
+T42 is a guardrail theorem, not a physics claim.
+
+## Phase 13: T43 Local Persistence Mechanism Audit
+
+T43 asks what can change local persistence accumulation once T42 has separated
+that observable from reconciliation delay.
+
+**Completed v0.1:** implement
+[T43](tests/T43-local-persistence-mechanisms.md) as the Local Persistence
+Accumulation Mechanism Audit. Three node-local mechanism families produce local
+accumulation differences with propagation fixed:
+
+```text
+intrinsic stabilization rate
+finite local resource budget
+interaction density / environmental coupling
+```
+
+One candidate is rejected:
+
+```text
+propagation shadow
+```
+
+It produces apparent accumulation differences only when propagation parameters
+differ, so it collapses into delay.
+
+T43 supports H4: several finite mechanisms are observationally equivalent at
+the local trace level. Intrinsic rate, resource budget, and interaction density
+can all generate the same delta signatures. The smallest supported extension is
+a node-local accumulation generator sidecar around T42 histories, not a change
+to `D1RestrictionSystem`, `TypedTransportNetwork`, or D1Cat.
+
+Next mechanism question: what additional observable distinguishes finite
+resource limits from local interaction density while propagation remains fixed?

@@ -127,6 +127,16 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > structure (AC5), and admissibility classification (AC1-AC7) not present in
 > standard CSP. H_B best supported: the gluing mechanism is known; the
 > classification framework on top of it is new.
+>
+> **Local persistence update:** [T42](tests/T42-local-persistence-reconciliation-split.md)
+> separates local persistence accumulation from reconciliation lag in a finite
+> temporal sidecar model. [T43](tests/T43-local-persistence-mechanisms.md)
+> audits candidate mechanisms for changing local accumulation while propagation
+> is fixed. Intrinsic rate, finite resource budget, and interaction density all
+> generate local accumulation differences; propagation-shadow is rejected as
+> delay in disguise. H4 is best supported because distinct mechanisms generate
+> equivalent finite traces. This does not modify `D1RestrictionSystem` or derive
+> physical proper time.
 
 ## Primitive Inventory
 

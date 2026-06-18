@@ -40,6 +40,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T39](tests/T39-csp-satisfiability-reframing.md) | CSP / satisfiability reframing | PO1, T26, T31, T38 | implemented: PO1 gluing obstruction = binary {-1,1} parity-conflict CSP; arc consistency trivially true; typed projection (AC5, AC7) and admissibility classification are new structure not expressible in standard CSP; H_B best supported |
 | [T40](tests/T40-holarchy-lab.md) | Holarchy lab — emergent holonic finality | D1, PO1, TTN, T38, T39 | implemented: holonic emergence confirmed (3-node triangle obstruction from micro-compatible nodes); cross-level AC5 necessary for holonic PO1; H_B best supported |
 | [T41](tests/T41-typed-transport-category.md) | Typed transport category prototype | D1, PO1, T26, T31, T34, T37 | implemented: D1RestrictionMorphisms form a proper category (associativity 4/4, left unit 5/5, right unit 5/5); PO1 is not a Boolean functor on D1Cat (T34 restated in categorical language); H_A best supported |
+| [T42](tests/T42-local-persistence-reconciliation-split.md) | Local persistence and reconciliation split audit | R1, G2, D1, T3 | implemented: LocalPersistenceReconciliationSystem separates local accumulation from reconciliation lag; four witnesses pass (delay-only, accumulation-only, both, null); H2 best supported |
+| [T43](tests/T43-local-persistence-mechanisms.md) | Local persistence accumulation mechanism audit | R1, G2, D1, T42 | implemented: intrinsic rate, resource budget, and interaction density produce local differences with propagation fixed; propagation-shadow rejected; H4 best supported |
 
 ## Minimum Compatibility Constraints
 
@@ -88,6 +90,8 @@ python -m models.run_t38
 python -m models.run_t39
 python -m models.run_t40
 python -m models.run_t41
+python -m models.run_t42
+python -m models.run_t43
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -118,6 +122,8 @@ The suites use only Python's standard library. Evidence records:
 - [CSP Satisfiability Reframing v0.1 Results](results/csp-satisfiability-reframing-v0.1-results.md)
 - [Holarchy Lab v0.1 Results](results/holarchy-lab-v0.1-results.md)
 - [Typed Transport Category v0.1 Results](results/typed-transport-category-v0.1-results.md)
+- [Local Persistence and Reconciliation Split v0.1 Results](results/local-persistence-reconciliation-split-v0.1-results.md)
+- [Local Persistence Mechanisms v0.1 Results](results/local-persistence-mechanisms-v0.1-results.md)
 
 ## How To Add A Test
 

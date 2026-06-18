@@ -86,6 +86,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-po1-chained-projection-v0.1.md](TECHNICAL-REPORT-po1-chained-projection-v0.1.md)
   - Chained projection analysis with emergent obstruction (Spectre), stepwise
     propagation, and absorbed obstruction across the code-to-transistors chain.
+- [TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md)
+  - Compression as a downstream observable of stable records, not a D1
+    dimension; Rule 30 and Rule 0 counterexamples across all 256 CA rules.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -157,6 +160,7 @@ python -m models.run_t31
 python -m models.run_t32
 python -m models.run_t33
 python -m models.run_t34
+python -m models.run_t36
 ```
 
 ## Citation / Reuse

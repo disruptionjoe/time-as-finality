@@ -15,6 +15,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
 | [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction when admissible transformations are monotone in D1 finality. | [T18](tests/T18-finality-direction-theorem.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
 | [IPT](claims/IPT-invariant-preserving-transformations.md) | formal_kernel | proto_independent | Invariant-preserving transformations may be the substrate-neutral mathematical transport structure connecting observer changes, theorem transfer, and record-reduction maps; T23 gives a finite typed kernel with positive cases, composition, and obstruction; T26 supplies D1 restriction morphisms as a target object, but no full IPT representation theorem yet. | [T23](tests/T23-invariant-preserving-transformations.md), [T26](tests/T26-d1-restriction-system.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md), [T26 report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md) |
+| [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T29 supports this only as a finite abstraction schema, not a source physics theorem. | [T27](tests/T27-class-relative-bridge-audit.md), [T29](tests/T29-projection-obstruction-schema.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md) |
 | [H-Domain](explorations/heliosphere-as-finality-domain.md) | conjecture | open | The heliosphere is a D1 finality domain: the heliopause is a substrate-exchange boundary where record-formation physics changes across D1's four dimensions in ways not reducible to particle density. | [T7](tests/T7-overlapping-causal-domains.md), exploration |
 | [H-Soft-Boundary](explorations/heliosphere-as-finality-domain.md) | potential_byproduct | open | Finality-domain boundaries fall on a continuous permeability spectrum: the heliopause (bidirectional, character-changing) and the event horizon (one-way, capped) are two points on it. Extends B1 with a boundary-permeability parameter. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [N1](literature/N1-known-neighbors.md) | known_neighbor | active | The project is adjacent to decoherence, quantum Darwinism, relational time, causal structure, and thermodynamics. | Literature map |
@@ -177,3 +178,13 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - IPT remains `proto_independent`: T26 supplies restriction morphisms and a
   failed morphism witness, but defers full IPT representation until current
   IPT objects carry site maps and restriction commutation.
+
+### 2026-06-18 - Projection-Obstruction Schema
+
+- PO1 added as `partially_supported`: T29 formalizes the T27 stretch result as
+  a finite class-relative schema.
+- Positive inherited instances: Witten 1981 and Nielsen-Ninomiya.
+- Boundary cases: Distler-Garibaldi is non-definable inside T26; synthetic
+  tests show loss without obstruction and inherited obstruction do not support
+  the positive schema.
+- Guardrail: PO1 does not prove or replace any original physical no-go theorem.

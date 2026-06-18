@@ -87,6 +87,10 @@ richer object resolves this obstruction by supplying extra patch data.  The
 forgetful morphism is site-map-complete but loses exactly that patch data —
 detected as local_profile_mismatch and obstruction_status_preserved=False.
 
+T27 detects this as a stretch result. T29 formalizes it as the named finite
+schema `PO1` and tests its boundaries with synthetic positive and negative
+cases.
+
 ## Recommendation
 
 H2 is the correct top-level verdict.  The bridge is structurally faithful for

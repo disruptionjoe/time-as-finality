@@ -1,0 +1,399 @@
+{
+  "analyses": [
+    {
+      "forgotten_structure": [
+        "defect stratum profile (accessible_support, holder_redundancy, branch_support)",
+        "anomaly_inflow patch: chiral_defect != chiral_bulk",
+        "singular/brane/flux data that allowed global section to exist"
+      ],
+      "intended_reading": "FAITHFUL BRIDGE.  The finite restriction system captures the Witten class-relative structure.  The richer stratified system has a global section (chirality is consistently assigned via the defect).  The smooth-shadow system is obstructed (the chirality requirement conflicts with the smooth-field constraint).  The smoothing morphism is blocked by local_profile_mismatch and global_obstruction_not_preserved, identifying exactly what is lost: defect data and anomaly-inflow structure.",
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "witten_smoothing_functor",
+        "obstruction": "local_profile_mismatch",
+        "obstruction_status_preserved": false,
+        "reached": false,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "witten_1981",
+      "preserved_structure": [
+        "reversal_cost dimension at the smooth bulk site",
+        "trust transport path (smooth_bulk -> defect_stratum maps to smooth_A -> smooth_B)",
+        "the smooth-shadow sites and their non-chiral proposition value"
+      ],
+      "restricted_global_section": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": true,
+        "obstruction_kind": "finite_gluing_obstruction"
+      },
+      "restricted_system": {
+        "edge_count": 1,
+        "name": "witten_smooth_restricted",
+        "patch_count": 3,
+        "site_count": 2,
+        "validation_valid": true
+      },
+      "richer_global_section": {
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "richer_system": {
+        "edge_count": 1,
+        "name": "witten_stratified_richer",
+        "patch_count": 3,
+        "site_count": 2,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "positive finite schema instance",
+        "morphism_reaches_target": false,
+        "name": "witten_1981_schema",
+        "obstruction_created_by_projection": true,
+        "outcome": "faithful_projection_obstruction",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": false,
+        "schema_instance": true
+      },
+      "source": "T27",
+      "verdict": "witten_1981: positive finite Projection-Obstruction instance"
+    },
+    {
+      "forgotten_structure": [
+        "bulk SPT data (accessible_support, holder_redundancy, branch_support)",
+        "anomaly_inflow patch connecting bulk to boundary chiral modes",
+        "modified Ginsparg-Wilson algebra structure at the algebra site"
+      ],
+      "intended_reading": "FAITHFUL BRIDGE.  The finite restriction system captures the NN class-relative structure.  The bulk+boundary richer system has a global section (anomaly_in ties to chiral_left, which differs from chiral_right via inflow).  The on-site lattice restricted system is obstructed: locality_hermitian forces chiral_A=chiral_B, translation invariance forces chiral_B=chiral_C, and exact on-site U(1)_A forces chiral_A!=chiral_C \u2014 a finite local-to-global contradiction.  The on-site-locality morphism is blocked by local_profile_mismatch and global_obstruction_not_preserved, identifying the bulk SPT data and modified algebra as the forgotten structure.",
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "nn_onsit_locality_functor",
+        "obstruction": "local_profile_mismatch",
+        "obstruction_status_preserved": false,
+        "reached": false,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "nielsen_ninomiya",
+      "preserved_structure": [
+        "reversal_cost dimension at each mapped site",
+        "trust transport path (bulk -> boundary -> algebra maps to A -> B -> C)",
+        "the lattice proposition_value (non_chiral in both shadows)"
+      ],
+      "restricted_global_section": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": true,
+        "obstruction_kind": "finite_gluing_obstruction"
+      },
+      "restricted_system": {
+        "edge_count": 2,
+        "name": "nn_onsit_lattice_restricted",
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_global_section": {
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "richer_system": {
+        "edge_count": 2,
+        "name": "nn_bulk_boundary_richer",
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "positive finite schema instance",
+        "morphism_reaches_target": false,
+        "name": "nielsen_ninomiya_schema",
+        "obstruction_created_by_projection": true,
+        "outcome": "faithful_projection_obstruction",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": false,
+        "schema_instance": true
+      },
+      "source": "T27",
+      "verdict": "nielsen_ninomiya: positive finite Projection-Obstruction instance"
+    },
+    {
+      "forgotten_structure": [
+        "sm_chirality site: has no counterpart in single-E8 representation theory",
+        "second E8 factor and product-group structure",
+        "Calabi-Yau bundle data and flux (bundle_twist patch)"
+      ],
+      "intended_reading": "BRIDGE FAILS: CATEGORY CHANGE.  The E8 x E8 + bundle richer system has a site (sm_chirality) with no counterpart in single-E8 representation theory.  The morphism cannot be completed: site_map_total=False.  This failure is categorically different from Witten and Nielsen-Ninomiya, where the morphism is defined but blocked by profile mismatch and obstruction non-preservation.  Here the forgetful map cannot even be stated as a restriction-system morphism.  The DG richer objects (E8xE8, K(E10), SO(3,11)) are not enrichments of single-E8 \u2014 they are category changes.  T26 does not currently support this kind of bridge.  Conclusion: H3.",
+      "morphism": {
+        "interpretation": "morphism is blocked by an explicit preservation failure",
+        "local_profiles_preserved": false,
+        "name": "dg_single_e8_adjoint_functor",
+        "obstruction": "site_map_incomplete",
+        "obstruction_status_preserved": false,
+        "reached": false,
+        "site_map_total": false,
+        "trust_path_preserved": true
+      },
+      "name": "distler_garibaldi",
+      "preserved_structure": [
+        "the abstract notion that ToE1/ToE2/ToE3 are individual constraints",
+        "the local satisfiability of each assumption separately"
+      ],
+      "restricted_global_section": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 6,
+        "obstruction_detected": true,
+        "obstruction_kind": "finite_gluing_obstruction"
+      },
+      "restricted_system": {
+        "edge_count": 2,
+        "name": "dg_single_e8_restricted",
+        "patch_count": 6,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_global_section": {
+        "global_assignment_exists": true,
+        "global_witness_count": 4,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 5,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "richer_system": {
+        "edge_count": 3,
+        "name": "dg_e8xe8_bundle_richer",
+        "patch_count": 5,
+        "site_count": 4,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "site map incomplete or category change",
+        "morphism_reaches_target": false,
+        "name": "distler_garibaldi_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "non_definable_projection",
+        "projection_definable": false,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": false,
+        "schema_instance": false
+      },
+      "source": "T27",
+      "verdict": "distler_garibaldi: projection not definable inside T26"
+    },
+    {
+      "forgotten_structure": [
+        "extra accessible support",
+        "extra holder redundancy",
+        "branch witness not represented in restricted class"
+      ],
+      "intended_reading": "Projection exists and loses structure, but no obstruction appears. This is not a Projection-Obstruction Schema instance.",
+      "morphism": {
+        "interpretation": "declared local and global D1 restriction data are preserved",
+        "local_profiles_preserved": true,
+        "name": "synthetic_forget_extra_witness",
+        "obstruction": "none",
+        "obstruction_status_preserved": true,
+        "reached": true,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "synthetic_lossy_no_obstruction",
+      "preserved_structure": [
+        "reversal_cost",
+        "trusted path",
+        "global satisfiability"
+      ],
+      "restricted_global_section": {
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 1,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "restricted_system": {
+        "edge_count": 1,
+        "name": "synthetic_projected_no_obstruction",
+        "patch_count": 1,
+        "site_count": 2,
+        "validation_valid": true
+      },
+      "richer_global_section": {
+        "global_assignment_exists": true,
+        "global_witness_count": 2,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 1,
+        "obstruction_detected": false,
+        "obstruction_kind": "none"
+      },
+      "richer_system": {
+        "edge_count": 1,
+        "name": "synthetic_rich_extra_witness",
+        "patch_count": 1,
+        "site_count": 2,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "projection may be lossy without producing a no-go obstruction",
+        "morphism_reaches_target": true,
+        "name": "synthetic_lossy_no_obstruction_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "lossy_projection_no_new_obstruction",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": false,
+        "richer_obstructed": false,
+        "schema_instance": false
+      },
+      "source": "synthetic",
+      "verdict": "synthetic_lossy_no_obstruction: lossy projection, but no obstruction is created"
+    },
+    {
+      "forgotten_structure": [
+        "support and branch detail"
+      ],
+      "intended_reading": "Projection exists, but the obstruction is already present in the richer system. Projection does not create the obstruction.",
+      "morphism": {
+        "interpretation": "declared local and global D1 restriction data are preserved",
+        "local_profiles_preserved": true,
+        "name": "synthetic_obstruction_preserving_projection",
+        "obstruction": "none",
+        "obstruction_status_preserved": true,
+        "reached": true,
+        "site_map_total": true,
+        "trust_path_preserved": true
+      },
+      "name": "synthetic_shared_obstruction",
+      "preserved_structure": [
+        "obstruction status",
+        "trusted path",
+        "reversal_cost"
+      ],
+      "restricted_global_section": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": true,
+        "obstruction_kind": "finite_gluing_obstruction"
+      },
+      "restricted_system": {
+        "edge_count": 2,
+        "name": "restricted_shared_obstructed",
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "richer_global_section": {
+        "global_assignment_exists": false,
+        "global_witness_count": 0,
+        "local_patches_satisfiable": true,
+        "local_witness_count": 3,
+        "obstruction_detected": true,
+        "obstruction_kind": "finite_gluing_obstruction"
+      },
+      "richer_system": {
+        "edge_count": 2,
+        "name": "rich_shared_obstructed",
+        "patch_count": 3,
+        "site_count": 3,
+        "validation_valid": true
+      },
+      "schema": {
+        "boundary": "obstruction is inherited rather than created by projection",
+        "morphism_reaches_target": true,
+        "name": "synthetic_shared_obstruction_schema",
+        "obstruction_created_by_projection": false,
+        "outcome": "shared_obstruction_not_projection_created",
+        "projection_definable": true,
+        "projection_loses_structure": true,
+        "restricted_obstructed": true,
+        "richer_obstructed": true,
+        "schema_instance": false
+      },
+      "source": "synthetic",
+      "verdict": "synthetic_shared_obstruction: obstruction is inherited, not projection-created"
+    }
+  ],
+  "named_claim_decision": {
+    "create_named_claim": true,
+    "non_claims": [
+      "PO1 does not prove any original physics no-go theorem.",
+      "PO1 does not show that Time as Finality proves GU or that GU proves Time as Finality.",
+      "PO1 does not replace the source mathematical proofs.",
+      "PO1 is finite and class-relative, not a continuous or category-level theorem."
+    ],
+    "proposed_id": "PO1",
+    "reason": "T29 supplies a finite object, two positive inherited examples, one non-definable inherited boundary, and two synthetic boundary tests. The claim is narrow enough to track without implying a physics theorem.",
+    "status": "partially_supported"
+  },
+  "outcomes": [
+    "faithful_projection_obstruction",
+    "lossy_projection_no_new_obstruction",
+    "shared_obstruction_not_projection_created",
+    "non_definable_projection"
+  ],
+  "recommendation": "Promote Projection-Obstruction to a named formal schema claim PO1 with partially_supported status. The supported theorem is finite and class-relative: when a definable projection forgets obstruction-resolving data and maps a globally satisfiable richer system to an obstructed restricted system, the restricted no-go is faithfully represented as a projection-created gluing obstruction. Non-definable projections and inherited obstructions are explicit boundary cases.",
+  "theorem_attempts": [
+    {
+      "boundary": "finite abstraction only; no source physics theorem is reproved",
+      "evidence": [
+        "witten_1981",
+        "nielsen_ninomiya"
+      ],
+      "name": "Positive Projection-Obstruction Schema",
+      "reached": true,
+      "statement": "A site-map-complete projection from a globally satisfiable richer system to an obstructed restricted system is a finite Projection-Obstruction instance when the projection loses obstruction-resolving structure."
+    },
+    {
+      "boundary": "may require presheaf, sheaf, or category-level morphisms",
+      "evidence": [
+        "distler_garibaldi"
+      ],
+      "name": "Non-Definable Projection Boundary",
+      "reached": true,
+      "statement": "If the site map is incomplete, the bridge is not a lossy projection but a category-change boundary for T26."
+    },
+    {
+      "boundary": "loss alone is insufficient for the positive schema",
+      "evidence": [
+        "synthetic_lossy_no_obstruction"
+      ],
+      "name": "Loss Without Obstruction Counterexample",
+      "reached": true,
+      "statement": "A projection can forget structure without creating a gluing obstruction."
+    },
+    {
+      "boundary": "shared obstruction does not support class-relative projection explanation",
+      "evidence": [
+        "synthetic_shared_obstruction"
+      ],
+      "name": "Inherited Obstruction Counterexample",
+      "reached": true,
+      "statement": "A restricted obstruction is not projection-created when the richer system is already obstructed."
+    }
+  ]
+}

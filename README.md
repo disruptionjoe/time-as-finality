@@ -69,6 +69,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-d1-restriction-system-v0.1.md](TECHNICAL-REPORT-d1-restriction-system-v0.1.md)
   - formal finite graph-indexed D1 restriction system with projection,
     gluing, and morphism checks.
+- [TECHNICAL-REPORT-class-relative-bridge-audit-v0.1.md](TECHNICAL-REPORT-class-relative-bridge-audit-v0.1.md)
+  - finite bridge audit for selected class-relative no-go patterns.
+- [TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md)
+  - reusable finite Projection-Obstruction Schema extracted from T27.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
@@ -132,6 +136,8 @@ python -m models.run_t23
 python -m models.run_t24
 python -m models.run_t25
 python -m models.run_t26
+python -m models.run_t27
+python -m models.run_t29
 ```
 
 ## Citation / Reuse

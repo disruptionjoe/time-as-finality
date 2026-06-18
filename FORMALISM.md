@@ -45,6 +45,12 @@ Time as Finality model. It is deliberately finite and substrate-neutral.
 > D1 profiles, trusted transport edges, optional patch constraints,
 > projection maps, global-section checks, and restriction morphisms. Scalar
 > and vector D1 are now projections from this object.
+>
+> **Projection-obstruction update:** [T29](tests/T29-projection-obstruction-schema.md)
+> formalizes the T27 stretch result as a finite class-relative schema:
+> definable projection from a globally satisfiable richer restriction system
+> to an obstructed restricted system can represent a projection-created
+> gluing obstruction. This is a finite abstraction claim, not a physics proof.
 
 ## Primitive Inventory
 
@@ -299,6 +305,52 @@ D1RestrictionSystem = current central local-to-global D1 extension
 sheaf language = optional future upgrade if finite patch semantics fail
 full IPT representation = requires site maps and restriction commutation in IPT objects
 ```
+
+## Projection-Obstruction Schema
+
+T29 defines a finite schema over pairs of `D1RestrictionSystem` objects:
+
+```text
+ProjectionCase = (
+  richer D1RestrictionSystem,
+  restricted D1RestrictionSystem,
+  D1RestrictionMorphism,
+  forgotten structure,
+  preserved structure
+)
+
+ProjectionObstructionSchema = (
+  projection_definable,
+  richer_obstructed,
+  restricted_obstructed,
+  obstruction_created_by_projection,
+  projection_loses_structure,
+  outcome,
+  schema_instance,
+  boundary
+)
+```
+
+The positive schema is:
+
+```text
+If a projection is definable, the richer system has a global section, the
+restricted system has a gluing obstruction, and the projection forgets the
+structure that resolved the obstruction, then the restricted no-go is
+represented as a projection-created finite gluing obstruction.
+```
+
+T29 distinguishes four outcomes:
+
+| Outcome | Meaning |
+| --- | --- |
+| faithful projection-obstruction | projection creates the restricted obstruction |
+| lossy projection without obstruction | projection forgets structure but no obstruction appears |
+| shared obstruction | obstruction exists before and after projection |
+| non-definable projection | site map is incomplete or a category change is required |
+
+This supports PO1 as a named formal schema with `partially_supported` status.
+It does not prove the source physical no-go theorems.
 
 ## D1 Physical Reduction Map
 

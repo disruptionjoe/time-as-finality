@@ -143,6 +143,12 @@ Detected when all H1 cases satisfy simultaneously:
 Expected: pattern applies to `witten_1981` and `nielsen_ninomiya`; not to
 `distler_garibaldi`.
 
+T27 detects the pattern but does not finish its general formalization.
+[T29](T29-projection-obstruction-schema.md) promotes the stretch result to
+the named finite schema `PO1`, and adds synthetic cases where projection does
+not create an obstruction or where obstruction is already present in both
+systems.
+
 ### Top-level verdict
 
 - `hypothesis_summary`: `{witten_1981: H1, nielsen_ninomiya: H1, distler_garibaldi: H3}`

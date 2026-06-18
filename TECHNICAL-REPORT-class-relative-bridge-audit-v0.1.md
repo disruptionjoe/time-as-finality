@@ -406,6 +406,13 @@ system's global section to exist:
 This theorem is about the mathematics of class-relative abstraction, not about
 any particular physical theory.
 
+**T29 follow-on:** [T29: Projection-Obstruction Schema](tests/T29-projection-obstruction-schema.md)
+formalizes this stretch result as the named finite schema `PO1`. T27 found
+the pattern in Witten and Nielsen-Ninomiya and found a non-definable boundary
+in Distler-Garibaldi. T29 adds synthetic boundary cases showing that projection
+can exist without producing an obstruction, and that obstruction can exist in
+both rich and restricted systems without being projection-created.
+
 ---
 
 ## Hypothesis Evaluations
@@ -437,7 +444,8 @@ Adopt H2 as the top-level verdict.
 For Witten 1981 and Nielsen-Ninomiya:
 
 - The finite bridge is **structurally faithful**.
-- The Projection-Obstruction Pattern is a candidate finite theorem.
+- The Projection-Obstruction Pattern is a candidate finite schema, later
+  formalized as [PO1](claims/PO1-projection-obstruction-schema.md) in T29.
 - The morphism analysis correctly identifies the forgotten structure.
 - The no-go theorem maps to a gluing obstruction in the restricted class.
 

@@ -192,6 +192,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     conflict only after adding finite conflict checks for irreflexivity,
     comparable-conflict freedom, upward inheritance, and explicit
     conflict/compatibility disagreement.
+- [TECHNICAL-REPORT-finality-reflection-property-v0.1.md](TECHNICAL-REPORT-finality-reflection-property-v0.1.md)
+  - Finality Reflection Property: the T56 gap assignment `G(U)=A(U)-F(U)` is
+    restriction-closed in the tested finite model; automatic complement closure
+    is refuted; arrow-direction circularity remains open.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and

@@ -932,3 +932,26 @@ the condition: (a,b) ∉ F(U) ⇒ (a,b) ∉ F(V) for V ⊆ U. In TaF's specific
 model this is a theorem (any witnessing chain for F(V) uses acc(V) ⊆ acc(U)
 events, hence witnesses F(U)), but it requires formal proof before Stage 4
 onwards can assume G is a presheaf.
+
+**Completed v0.1:** implement
+[T57](tests/T57-finality-reflection-property.md) as the Finality Reflection
+Property theorem check.
+
+Outcome: **SUPPORTED WITH BOUNDARY**
+
+What works:
+- FRP holds across the hidden-intermediary and branching-dependency record
+  lattices: 84 nested patch pairs checked, 0 violations.
+- The gap assignment `G(U)=A(U)-F(U)` is restriction-closed in the T56 model.
+- Non-lifting examples are preserved: smaller-patch phantom gaps need not come
+  from larger-patch gaps.
+- A generic complement counterexample refutes the stronger claim that
+  complement closure is automatic.
+
+What remains open:
+- FRP assumes the directed source/target record structure. It does not resolve
+  the T56 Q4 circular-risk question about deriving arrow direction from
+  substrate-free task composability.
+
+Results written to:
+`results/finality-reflection-property-v0.1-results.md`

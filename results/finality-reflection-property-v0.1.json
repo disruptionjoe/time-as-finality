@@ -1,0 +1,183 @@
+{
+  "theorem_statement": "Finality Reflection Property (v0.1): for the T56 apparent-order construction, if V is a proper subpatch of U in record-access order, then every non-reflexive pair in F(V) appears in the restriction of F(U) to V-accessible events. Equivalently, absence from F(U) reflects downward to absence from F(V). Therefore G(U)=A(U)-F(U) is closed under restriction. This closure is conditional on the TaF apparent-order definition and is not true for arbitrary complements.",
+  "reflection_checks": [
+    {
+      "cover_name": "hidden_intermediary_record_lattice",
+      "comparable_patch_pairs": 19,
+      "checked_event_pairs": 6,
+      "holds": true,
+      "violations": [],
+      "explanation": "FRP holds: every apparent-order witness at a smaller record-access patch is preserved at every larger patch. Apparent order is covariantly monotone under record-access inclusion, even though it is not a contravariant presheaf."
+    },
+    {
+      "cover_name": "branching_dependency_record_lattice",
+      "comparable_patch_pairs": 65,
+      "checked_event_pairs": 60,
+      "holds": true,
+      "violations": [],
+      "explanation": "FRP holds: every apparent-order witness at a smaller record-access patch is preserved at every larger patch. Apparent order is covariantly monotone under record-access inclusion, even though it is not a contravariant presheaf."
+    }
+  ],
+  "gap_checks": [
+    {
+      "cover_name": "hidden_intermediary_record_lattice",
+      "comparable_patch_pairs": 19,
+      "holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_r1_r2_r3",
+          "smaller_patch": "U_r1_r3",
+          "pair": [
+            "e_j",
+            "e_i"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        }
+      ],
+      "explanation": "Gap restriction closure holds: every larger-patch gap restricts to a smaller-patch gap. Smaller patches may still have additional phantom gaps that vanish when larger patches expose hidden intermediaries."
+    },
+    {
+      "cover_name": "branching_dependency_record_lattice",
+      "comparable_patch_pairs": 65,
+      "holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_ra_rc_rd",
+          "smaller_patch": "U_ra_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_rb_rc_rd",
+          "smaller_patch": "U_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rb_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        }
+      ],
+      "explanation": "Gap restriction closure holds: every larger-patch gap restricts to a smaller-patch gap. Smaller patches may still have additional phantom gaps that vanish when larger patches expose hidden intermediaries."
+    }
+  ],
+  "complement_counterexample": {
+    "ambient_larger": [
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "ambient_smaller": [
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "sub_larger": [],
+    "sub_smaller": [
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "complement_larger": [
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "complement_smaller": [],
+    "frp_holds": false,
+    "complement_restriction_closed": false,
+    "witness_pair": [
+      "x",
+      "y"
+    ],
+    "explanation": "The ambient assignment is stable, but the chosen subassignment violates FRP: the smaller patch has (x,y) while the larger patch does not. Therefore the complement of the larger patch restricts outside the smaller complement."
+  },
+  "hypothesis_evaluations": [
+    {
+      "id": "H0",
+      "status": "refuted",
+      "claim": "The T56 apparent-order construction need not satisfy FRP.",
+      "evidence": "FRP held across both record-lattice witnesses."
+    },
+    {
+      "id": "H1",
+      "status": "supported",
+      "claim": "Apparent order is monotone under record-access inclusion.",
+      "evidence": "For every nested patch pair V<U, F(V) was included in rho(F(U))."
+    },
+    {
+      "id": "H2",
+      "status": "supported",
+      "claim": "The T56 gap assignment is restriction-closed once FRP holds.",
+      "evidence": "Every larger-patch gap restricted into the smaller-patch gap."
+    },
+    {
+      "id": "H3",
+      "status": "refuted",
+      "claim": "Complement restriction closure is automatic for any subassignment.",
+      "evidence": "The generic complement counterexample violates FRP and its larger complement restricts outside the smaller complement."
+    },
+    {
+      "id": "H4",
+      "status": "left_open",
+      "claim": "FRP resolves the T56 medium circular risk on arrow direction.",
+      "evidence": "FRP only proves monotonicity after directed source/target records are given. It does not derive that direction from substrate-free task composability."
+    }
+  ],
+  "best_supported": "T57 supports FRP for the T56 apparent-order model and licenses the gap-presheaf restriction step as a finite theorem. It also rejects the stronger idea that complements are automatically presheaves and leaves the arrow-origin circularity question open.",
+  "limits": [
+    "The executable witnesses are finite record lattices, not an arbitrary machine-checked proof over all finite covers.",
+    "The proof assumes the T56 event-access rule and record-dependency source/target relation.",
+    "FRP gives restriction closure only; smaller-patch phantom gaps need not lift to larger patches.",
+    "FRP does not derive the direction of finality arrows."
+  ],
+  "next_questions": [
+    "Turn the proof sketch into a short formal lemma in FORMALISM with explicit quantifiers over finite covers.",
+    "Use FRP to test whether H0(G) is exactly the T51-T52 phantom-pair set.",
+    "Attack T56 Q4 separately: derive or reject arrow direction from constructor-style task composability."
+  ]
+}

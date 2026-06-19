@@ -888,6 +888,57 @@ Full Nielsen-Plotkin-Winskel event-structure machinery can still be postponed
 for the tested witness family. The current result requires only finite checks
 over the quotient-union completion.
 
+## Apparent/Event Gap and Finality Reflection
+
+T56 separates apparent finality from event finality by comparing:
+
+```text
+A(U) = rho_U(S_global)
+F(U) = S_local(U)
+G(U) = A(U) - F(U)
+```
+
+`A(U)` is the ambient global record-dependency order restricted to the events
+visible at observer patch `U`. `F(U)` is the apparent order computed locally
+from only the events visible at `U`. `G(U)` is the gap: globally ordered pairs
+that remain locally phantom.
+
+T56 shows that `A` is a presheaf, but `F` is not a contravariant presheaf under
+natural restriction. A larger observer can see hidden intermediaries whose
+transitive consequences overshoot the order computed by a smaller observer.
+
+T57 proves the condition needed for the gap assignment to restrict correctly:
+
+```text
+Finality Reflection Property (FRP):
+
+For V subset U in record-access order,
+
+  F(V) subset rho_{U->V}(F(U)).
+
+Equivalently, for every V-accessible pair (a,b),
+
+  (a,b) notin F(U) implies (a,b) notin F(V).
+```
+
+The proof is finite: any chain witnessing `(a,b) in F(V)` uses only
+`V`-accessible events; since `V`-accessible events are also `U`-accessible,
+the same chain witnesses `(a,b) in F(U)`.
+
+Therefore:
+
+```text
+rho_{U->V}(G(U)) subset G(V)
+```
+
+So `G` is restriction-closed in the T56 model. This is not automatic for
+arbitrary complements; T57 includes a generic counterexample where
+`A(U)=A(V)={(x,y)}`, `F(U)=empty`, and `F(V)={(x,y)}`, making the complement
+fail restriction closure.
+
+FRP is a conditional structural lemma. It does not derive the direction of
+source/target finality arrows; the T56 circular-risk question remains open.
+
 ## Failure Conditions
 
 The formalization fails its intended job if:

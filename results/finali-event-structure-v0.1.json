@@ -1,0 +1,153 @@
+{
+  "events": [
+    {
+      "name": "e1_A_locking",
+      "source": "U1_source_A",
+      "target": "O1_locked_A",
+      "causal_magnitude": 2,
+      "info_magnitude": 2,
+      "po1_admissible": true,
+      "verdict": "fully_admissible"
+    },
+    {
+      "name": "e2_B_locking",
+      "source": "U2_source_B",
+      "target": "O2_locked_B",
+      "causal_magnitude": 1,
+      "info_magnitude": 3,
+      "po1_admissible": true,
+      "verdict": "fully_admissible"
+    },
+    {
+      "name": "e3_composite_locking",
+      "source": "U3_composite_source",
+      "target": "O3_locked_composite",
+      "causal_magnitude": 3,
+      "info_magnitude": 4,
+      "po1_admissible": true,
+      "verdict": "fully_admissible"
+    }
+  ],
+  "record_bases": [
+    {
+      "system": "U1_source_A",
+      "records": [
+        "r_A_coherent",
+        "r_A_raw"
+      ]
+    },
+    {
+      "system": "U2_source_B",
+      "records": [
+        "r_B_coherent",
+        "r_B_raw"
+      ]
+    },
+    {
+      "system": "U3_composite_source",
+      "records": [
+        "r_A_locked",
+        "r_B_locked",
+        "r_composite_raw"
+      ]
+    },
+    {
+      "system": "O1_locked_A",
+      "records": [
+        "r_A_locked"
+      ]
+    },
+    {
+      "system": "O2_locked_B",
+      "records": [
+        "r_B_locked"
+      ]
+    },
+    {
+      "system": "O3_locked_composite",
+      "records": [
+        "r_A_locked",
+        "r_B_locked",
+        "r_composite_locked"
+      ]
+    }
+  ],
+  "direct_dependencies": [
+    {
+      "predecessor": "e1_A_locking",
+      "successor": "e3_composite_locking",
+      "basis": "O1_locked_A.records = {'r_A_locked'} \u2286 U3_composite_source.records = {'r_A_locked', 'r_B_locked', 'r_composite_raw'}"
+    },
+    {
+      "predecessor": "e2_B_locking",
+      "successor": "e3_composite_locking",
+      "basis": "O2_locked_B.records = {'r_B_locked'} \u2286 U3_composite_source.records = {'r_A_locked', 'r_B_locked', 'r_composite_raw'}"
+    }
+  ],
+  "partial_order": {
+    "reflexive": true,
+    "antisymmetric": true,
+    "transitive": true,
+    "is_partial_order": true,
+    "pairs_verified": 9,
+    "order_pairs": [
+      [
+        "e1_A_locking",
+        "e1_A_locking"
+      ],
+      [
+        "e1_A_locking",
+        "e3_composite_locking"
+      ],
+      [
+        "e2_B_locking",
+        "e2_B_locking"
+      ],
+      [
+        "e2_B_locking",
+        "e3_composite_locking"
+      ],
+      [
+        "e3_composite_locking",
+        "e3_composite_locking"
+      ]
+    ]
+  },
+  "incomparable_pairs": [
+    [
+      "e1_A_locking",
+      "e2_B_locking"
+    ]
+  ],
+  "root_events": [
+    "e1_A_locking",
+    "e2_B_locking"
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H_PARTIAL_ORDER",
+      "claim": "Record-dependency relation is a partial order",
+      "status": "supported",
+      "evidence": "reflexive=True, antisymmetric=True, transitive=True; 5 pairs in order"
+    },
+    {
+      "id": "H_INCOMPARABLE",
+      "claim": "Some events are incomparable (partial, not total, order)",
+      "status": "supported",
+      "evidence": "incomparable pairs: (('e1_A_locking', 'e2_B_locking'),)"
+    },
+    {
+      "id": "H_ROOT_EVENTS",
+      "claim": "Root events exist and are PO1-admissible independent crossings",
+      "status": "supported",
+      "evidence": "root events: ('e1_A_locking', 'e2_B_locking'); all three events PO1-admissible: True"
+    },
+    {
+      "id": "H_NPW_COMPATIBLE",
+      "claim": "FinaliEvent Structure is compatible with NPW event structure theory",
+      "status": "supported",
+      "evidence": "partial order verified; conflict relation empty; NPW axioms satisfied"
+    }
+  ],
+  "best_supported": "H_PARTIAL_ORDER, H_INCOMPARABLE, H_ROOT_EVENTS, H_NPW_COMPATIBLE (all four hold)"
+}

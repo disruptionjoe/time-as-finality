@@ -145,6 +145,11 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - PO1 DAG Theorem: PO1-admissible morphisms in D1Cat form an acyclic
     bipartite graph (depth <= 1) between pre-finality (unobstructed) and
     post-finality (obstructed) systems; all four structural hypotheses confirmed.
+- [TECHNICAL-REPORT-finali-event-structure-v0.1.md](results/finali-event-structure-v0.1-results.md)
+  - FinaliEvent Structure: unordered set of PO1-admissible morphisms equipped
+    with a record-dependency partial order; partial order axioms verified;
+    incomparable events (spacelike separation) confirmed; NPW event structure
+    compatibility established; all four hypotheses supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -226,6 +231,7 @@ python -m models.run_t43
 python -m models.run_t44
 python -m models.run_t45
 python -m models.run_t47
+python -m models.run_t48
 ```
 
 ## Run Explorations

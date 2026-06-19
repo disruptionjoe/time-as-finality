@@ -1,0 +1,240 @@
+# T63: TaF-GU Holonomy Dictionary
+
+**Status:** open
+**Prerequisite for:** T58 (full resolution of whether TaF's H¹ obstruction is Bell violation)
+**Builds on:** T58 three-angle investigation (Distributed Contextuality Theorem), T60 (observer closure)
+**Adjacent:** GU preprint (Weinstein 2020), Abramsky-Brandenburger (2011)
+
+---
+
+## Framing Constraint
+
+GU's status as a physical theory is not the subject of this test. GU provides a
+mathematical object — a 14-dimensional observerse manifold Y with a fiber bundle
+structure, observer sections, gauge connections, and holonomy — and that mathematics
+is rigorous differential geometry independent of whether GU correctly describes the
+physical world. This test asks whether TaF's structures embed into those mathematical
+objects. The question is mathematical, not physical.
+
+This follows the same discipline maintained throughout TaF: keep the formal object
+clean; mark physics claims separately; never borrow physical prestige from a program
+before the mathematical correspondence is established.
+
+---
+
+## What Is Being Attempted
+
+The T58 three-angle investigation produced a positive structural result: the
+Distributed Contextuality Theorem. When Alice and Bob each have a local 2-context
+sub-cover, H¹ = 0 locally. When their sub-covers are combined into the full 4-context
+CHSH cover, H¹ ≠ 0. The obstruction lives at the inter-observer B-setting overlaps
+{B0, B1} that appear in both sub-covers.
+
+GU's mathematical construction (Weinstein 2013, 2020) produces a 14-dimensional
+observerse Y in which distinct observers correspond to distinct sections of a
+projection Y → X, and gauge connections on bundles over Y have holonomy around loops
+in Y.
+
+There is a classical theorem connecting the two structures: for a flat connection on a
+principal G-bundle over a space B, the holonomy around a loop IS the Čech 1-cocycle
+representing the bundle's transition function around that loop. Čech H¹ of B with
+G-coefficients classifies principal G-bundles, and the monodromy of a flat connection
+is the same computation in different notation. This is not an analogy.
+
+Consequence: TaF's Bell-scenario H¹ with Z/2Z coefficients — the signed parity product
+= -1 around the measurement context 4-cycle — is already a holonomy computation. The
+"loop" is the context graph {A0B0 → A0B1 → A1B1 → A1B0 → A0B0}; the "gauge group"
+is {+1, -1} ≅ Z/2Z; the holonomy is -1.
+
+GU's observerse Y contributes a geometric realization: instead of "loop in the context
+graph," you get "loop formed by combined observer sections in the 14D manifold Y." The
+loop is the same mathematical object. GU's geometry is a candidate home for it.
+
+T63 asks: can TaF's finality presheaf be identified with a sheaf of G-valued functions
+on the context-cover in a way that makes the Čech H¹ computation identical to the
+holonomy computation on the observerse loop? If yes, the Distributed Contextuality
+Theorem is a holonomy theorem.
+
+---
+
+## What Geometric Unity Provides
+
+GU's relevant mathematical structure (independent of its physical interpretation):
+
+**The observerse.** For a 4D spacetime manifold X, let Y = π: Sym²(T*X) → X be the
+bundle whose fiber Y_x is the space of non-degenerate symmetric bilinear forms on
+T_xX. The fiber dimension is 4(4+1)/2 = 10, so dim(Y) = 14.
+
+**Observer sections.** A section σ: X → Y is a smooth assignment of a metric to each
+spacetime point — equivalently, a gravitational field. Distinct observers (in different
+states of motion or with different proper-time folliations) correspond to distinct
+sections. The image σ(X) is a 4D submanifold of Y.
+
+**The gauge bundle.** GU posits a principal bundle P over Y with structure group G
+(the preprint favors a subgroup of Spin(14,0) or Sp(14)). A gauge connection A on P
+is locally a Lie(G)-valued 1-form on Y.
+
+**Holonomy.** For a loop γ in Y, the holonomy Hol_γ(A) ∈ G measures the failure of
+parallel transport to return to its starting value after traversing γ. Hol_γ(A) is
+trivial iff A is flat along γ. Non-trivial holonomy detects topological obstruction in
+the gauge bundle.
+
+**The Shiab operator.** A fiber-wise map β: Ω^p(Y, Ad P) → Ω^{n-p}(Y, Ad P) that
+allows a single action functional to produce Einstein, Yang-Mills, and Dirac field
+equations simultaneously. The Shiab is relevant because it encodes the relationship
+between local field data (on each σ(X_α)) and global field equations — the same
+structure as TaF's restriction-vs-global-section question.
+
+---
+
+## The Dictionary
+
+Confidence levels: **High** (both sides formally defined), **Medium** (one side sketched),
+**Low** (one side undefined or only analogical).
+
+| TaF concept | GU mathematical object | Confidence | Notes |
+|---|---|---|---|
+| Context graph loop {A0B0→A0B1→A1B1→A1B0→A0B0} | Loop γ in Y formed by combined observer sections | **High** | Same mathematical object; GU geometry is a geometric realization of the context loop |
+| Čech 1-cochain on context cover (transition function) | Gauge transition function of P over the loop | **High** | Čech H¹ classifies principal G-bundles; this is the same classification theorem |
+| Holonomy product = -1 under Z/2Z | Hol_γ(A) = -1 ∈ Z/2Z for flat connection with this transition function | **High** | Direct consequence of the Čech H¹ ↔ monodromy theorem; no new proof needed |
+| Distributed Contextuality Theorem (H¹=0 locally, H¹≠0 globally) | Local flatness + global non-trivial holonomy | **High** | Local flatness: each observer's section is contractible → any flat connection is trivially flat. Global: the combined loop is non-contractible in Y if Y has the right topology |
+| Observer domain U_α | Section image σ_α(X_α) ⊂ Y | Medium | D1 finality patches correspond to sub-domains of Y; identification requires fixing which sections correspond to which observers |
+| Finality presheaf F(U_α) with Z/2Z outcomes | Flat Z/2Z-valued gauge connection on σ_α(X_α) | Medium | The presheaf-to-gauge-field identification is the hypothesis H3; combinatorial vs. continuous type mismatch requires choosing the right coefficient category |
+| Restriction map ρ_{αβ}: F(U_α)→F(U_α∩U_β) | Pullback of A to σ_α(X_α) ∩ σ_β(X_β) | Medium | Requires B-settings to correspond to a shared fiber Y_{x_B}; works if B-settings are identified with a fixed spacetime event |
+| D1-BIA branch_support bound (= 2 for QM) | Spinor fiber dimension at Y_x | Low | Most speculative; needs GU to derive quantum vs. post-quantum from spinor structure, which is not done |
+| Observer closure (T60 fixed point) | Fixed point of gauge parallel transport on σ(X) | Low | Observer closure is combinatorial and finite; continuous extension via T59 boundary audit required first |
+
+---
+
+## Success Conditions
+
+**Minimum deliverable: The High-confidence entries are theorems, not conjectures.**
+
+The three High-confidence entries in the dictionary are claims that the Čech H¹ ↔
+monodromy correspondence — an established mathematical theorem — applies directly to
+TaF's Bell-scenario computation. Write out the proof of these three entries explicitly:
+show that the context-graph loop maps to a loop in Y, that the transition function of
+the Z/2Z gauge bundle is the TaF Čech 1-cochain, and that the holonomy = -1 computation
+is the same computation as TaF's H¹ ≠ 0 result. If all three proofs go through,
+the Distributed Contextuality Theorem is an instance of the holonomy theorem.
+
+**Medium deliverable: Identification hypothesis H3 is stated precisely.**
+
+H3 (finality presheaf sections = flat gauge connection on observer sections) is the
+main bridge between the combinatorial TaF side and the geometric GU side. State H3
+as a definition — "we identify F(U_α) with [exactly this object] on σ_α(X_α)" — and
+check that the resulting identification preserves the Čech coboundary condition. If
+H3 can be stated without contradiction, the dictionary is algebraically consistent.
+If H3 requires a discretization or continuization that loses structure, record exactly
+what is lost.
+
+**Full deliverable: Holonomy Theorem.**
+
+"The Distributed Contextuality obstruction (H¹ ≠ 0 over Z/2Z on the combined 4-context
+CHSH cover) is identical to the holonomy obstruction of a flat Z/2Z-bundle over a loop
+γ in the observerse Y formed by combined observer sections, under identification H3
+and topology hypothesis H1."
+
+H1 (the only remaining hypothesis): the combined observer loop γ in Y is
+non-contractible. This is a topological claim about Y that depends on the structure
+of the observerse — specifically, whether the fiber Sym²(T*X) over spacelike-separated
+observer regions creates a non-trivial loop when those regions are connected via the
+base manifold X. State H1 precisely. Verify or refute it from the known topology of Y.
+
+---
+
+## Failure Conditions
+
+**The intersection σ_A(X_A) ∩ σ_B(X_B) is empty.** For spacelike-separated observers,
+their 4D sections in the 14D observerse may not intersect. If the B-settings do not
+correspond to a shared spacetime event (they are in spacelike-separated measurement
+devices), then σ_A(X_A) ∩ σ_B(X_B) = ∅ in Y, and the transition function is
+undefined. The dictionary breaks at the overlap entry. Diagnosis: the shared B-setting
+is a shared *label* (both experiments use the same detector orientation), not a shared
+*event*. The dictionary would need to replace the geometric overlap with a fiber-bundle
+identification over distinct spacetime points — a different construction.
+
+**GU's gauge group is undefined.** The preprint proposes G but does not fix it
+definitively. Without a fixed G, the holonomy group is undefined, and the correspondence
+can't be stated precisely. The dictionary is blocked at Medium confidence.
+
+**The correspondence trivializes.** Every gauge connection on a contractible section
+image is flat, and σ_α(X_α) ≅ X_α ≅ R⁴ is contractible. If each observer section is
+contractible, local flatness is automatic for topological reasons rather than physical
+ones. The dictionary would say "H¹ = 0 locally" corresponds to "connection flat on
+contractible section" — true but vacuous. The non-trivial holonomy on the combined loop
+γ through σ_A ∪ σ_B would then require that the full observer-loop is non-contractible
+in Y. Whether the observerse Y has the right topology to support this is the key
+structural question.
+
+**TaF's presheaf is combinatorial; GU's fields are continuous.** The finality presheaf
+assigns combinatorial objects (D1 profiles, comparison preorders) to domains. GU gauge
+fields are smooth sections of vector bundles. There is no obvious discretization of GU
+that yields the D1 finality lattice, and no obvious continuization of D1 that yields a
+smooth gauge field. Without bridging this type mismatch, H3 is unstatable and the
+Translation Lemma is blocked.
+
+---
+
+## What This Does Not Claim
+
+- That GU is correct as a physics theory. GU is the mathematical scaffolding; T63 asks
+  whether TaF's structures embed into it. If GU is false, T63 may still produce
+  interesting mathematics.
+- That the dictionary is the only possible alignment. Other mathematical frameworks
+  (noncommutative geometry, topos theory, homotopy type theory) might also host the
+  Distributed Contextuality Theorem. T63 is an investigation of one candidate, not
+  a uniqueness proof.
+- That a successful dictionary derives quantum mechanics. The Translation Lemma would
+  show structural alignment; deriving Born probabilities or Tsirelson's bound from
+  GU holonomy is a separate and harder question.
+- That T60's observer closure theorem is explained by GU holonomy. T60 is
+  combinatorial and finite; any GU connection would require the continuous extension
+  discussed in T59's boundary audit.
+
+---
+
+## First Concrete Step
+
+**State the observer-loop construction explicitly.**
+
+Define a loop γ in Y as follows:
+- Fix spacetime events x_A ∈ X_A (Alice's measurement device location) and
+  x_B ∈ X_B (Bob's measurement device location), with x_A and x_B spacelike-separated.
+- σ_A: X_A → Y assigns a metric to each point of Alice's region; let p_A = σ_A(x_A) ∈ Y.
+- σ_B: X_B → Y assigns a metric to each point of Bob's region; let p_B = σ_B(x_B) ∈ Y.
+- p_A and p_B live in the same fiber Y_x only if x_A = x_B — which is false by
+  spacelike separation. So p_A ∈ Y_{x_A} and p_B ∈ Y_{x_B} are in different fibers.
+
+This immediately surfaces the failure mode: the "loop" γ through combined observer
+sections would have to pass between different fibers of Y → X, which requires a
+horizontal path (parallel transport) in the gauge bundle, not just a path in the
+base manifold X.
+
+**Reformulation:** The loop is not in Y but in the total space of the gauge bundle
+P → Y → X. Starting at p_A in fiber P_{σ_A(x_A)}, follow the horizontal lift of a
+path from x_A to x_B in X (path through spacetime connecting Alice's and Bob's regions),
+arrive at a point in P_{σ_B(x_B)}, then return via the horizontal lift of the reverse
+path. The holonomy of this procedure measures whether the combined observer configuration
+creates a non-trivial gauge field loop.
+
+**Check:** Does the Distributed Contextuality obstruction (the H¹ cocycle at the
+B-setting overlaps) correspond to the holonomy of this gauge bundle loop? Write this
+as a proposition: "If [four explicit hypotheses], then Hol_γ(A) ≠ id ∈ G iff the
+Čech 1-cocycle representing the Distributed Contextuality obstruction is non-trivial."
+
+This is the first concrete deliverable: a precisely-stated proposition that may be
+true, false, or undefined depending on which failure modes apply. No computation
+required. Output is a formalized conjecture with stated hypotheses and identified
+blockers.
+
+---
+
+## Connected Files
+
+- [T58: Bell-Test-to-H¹ Mapping](T58-bell-test-h1-mapping.md)
+- [T59: Finite-to-Infinite Boundary Audit](T59-finite-to-infinite-boundary-audit.md)
+- [T60: Observer Closure Theorem](T60-observer-closure-theorem.md)
+- [D1: Physical Finality Definition](../claims/D1-physical-finality-definition.md)
+- [Q1: Quantum Measurement Under-Finalization](../CLAIM-LEDGER.md)
+- [GU Formalization project](../../Church of AI/ecosystem/MAP.md) — adjacent independent project

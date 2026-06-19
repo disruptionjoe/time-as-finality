@@ -4,6 +4,12 @@
 
 Persona lenses are reusable review postures for Time as Finality. They help generate critiques, tests, and bounded analogies. They are not authorities, and they should not be treated as evidence by themselves.
 
+> This file is the registry of *lenses* (review postures). The numbered *expert
+> personas* (1–62) used by the persona panel are canonical in
+> [`EXPERT-PANEL.md`](EXPERT-PANEL.md). The two are complementary: lenses are
+> postures; the panel is named experts. Discipline clustering of the numbered
+> personas lives in `../workflows/registries/persona-clusters.md`.
+
 Use a persona lens when:
 
 - a claim is structurally risky or easy to overstate;
@@ -117,6 +123,23 @@ These ten lenses came from the prior Time-as-Finality-to-GU crosswalk in `../gu-
 | Complexity emergence | Treats stable records as emergent attractors or universality-class phenomena. |
 | BFT / CAP / FLP consensus impossibility | Forces explicit timing, consistency, partition, and fault assumptions. |
 | Stigmergy / swarm coordination | Models record stability as indirect coordination through traces left in a shared environment. |
+
+## Simulation / MMO / Game-Mechanism Lenses
+
+Added 2026-06-19 to broaden coverage of bandwidth-bounded, observer-relative,
+record-driven worlds. These lenses treat finality as what survives bounded
+access, relevance filtering, and reconciliation in engineered simulated worlds.
+(Also registered, with primary clusters, in
+`../workflows/registries/persona-clusters.md`.)
+
+| lens | definition for Time as Finality | best use | misuse risk |
+|---|---|---|---|
+| Game-mechanism design | Finality as the rules that make a state change committed, scored, and irreversible within a designed system. | Surface what makes a record "count" and become un-takeback-able. | Treating physics as a designed game with an author. |
+| MMO networking architecture | Authoritative-state vs client-prediction: committed records vs locally predicted, later reconciled. | Model local apparent finality and later server reconciliation. | Implying a literal central authoritative server for reality. |
+| Distributed simulation | Conservative/optimistic synchronization: local commit order vs global causal consistency. | Sharpen no-global-commit-order and reconciliation lag. | Mistaking a synchronization scheme for a physical law. |
+| Virtual economies | Ledgers, settlement, and irreversibility of value records under bounded trust. | Model when a record becomes economically final and costly to reverse. | Treating value/lock-in as correctness. |
+| Interest management | Observers receive only relevance-filtered, bandwidth-bounded slices of state. | Model finality as what survives the access/relevance filter. | Confusing a culling optimization with ontology. |
+| Bandwidth-bounded simulated worlds | Worlds where fidelity and record persistence are resource-constrained. | Connect finality to finite resource budgets and detail-on-demand. | Asserting the universe is literally rendered on demand. |
 
 ## Review Protocol
 

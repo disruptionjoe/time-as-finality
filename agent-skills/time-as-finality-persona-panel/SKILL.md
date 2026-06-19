@@ -15,7 +15,8 @@ another persona's response until the synthesis phase.
 
 ## Workflow
 
-1. Read `references/personas.md`.
+1. Read the canonical persona list at `personas/EXPERT-PANEL.md` (repo root).
+   `references/personas.md` is now only a mirror pointer.
 2. Select either:
    - the full panel;
    - a focused subset by persona number or domain;

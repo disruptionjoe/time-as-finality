@@ -15,8 +15,10 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 SKILL_DIR = SCRIPT_DIR.parent
 REPO_ROOT = SKILL_DIR.parents[1]
-PERSONA_REF = SKILL_DIR / "references" / "personas.md"
-EXPECTED_PERSONA_COUNT = 56
+# Canonical source of the numbered expert personas. The in-skill
+# references/personas.md is a mirror only; edit personas/EXPERT-PANEL.md.
+PERSONA_REF = REPO_ROOT / "personas" / "EXPERT-PANEL.md"
+EXPECTED_PERSONA_COUNT = 62
 
 FOCUSED_DEFAULT = (1, 2, 4, 7, 9, 10, 22, 23, 25, 50, 51, 52, 54)
 HOSTILE_DEFAULT = (25, 27, 42, 50, 52, 54)
@@ -32,7 +34,7 @@ class Persona:
 
 
 def parse_personas(reference_path: Path = PERSONA_REF) -> dict[int, Persona]:
-    """Parse persona headings from references/personas.md."""
+    """Parse persona headings from the canonical personas/EXPERT-PANEL.md."""
 
     text = reference_path.read_text(encoding="utf-8")
     pattern = re.compile(

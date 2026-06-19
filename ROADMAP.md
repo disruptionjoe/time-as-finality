@@ -840,3 +840,95 @@ Next balancing target: provenance-aware reconstruction. T55 shows that conflict
 is load-bearing; the next question is whether propagation history is also
 load-bearing, or whether record bases plus conflict already capture the
 reconstructive data needed by finite observer-relative descent.
+
+## Phase 19: T55B Provenance-Aware Reconstruction Separation Audit
+
+T55B answers the Phase 18 balancing target. It tests whether propagation
+history (provenance) is an independent load-bearing observable beyond the
+record basis and conflict structure established by T54-T55.
+
+**Completed v0.1:** implement
+[T55B](tests/T55B-provenance-aware-reconstruction-separation.md) as the
+Provenance-Aware Reconstruction Separation Audit. Key findings:
+
+- H0 refuted: record basis alone does not separate scenarios A1 and A2 (different
+  propagation structures, identical accessible records)
+- H1 supported: provenance path structure separates same-basis observers
+- H4 supported: provenance variation does not change colimits, AM outcomes, or
+  T54 verdicts
+- Recommendation: optional audit layer (provenance tracking as diagnostic tool,
+  not required for AM validity or T54 descent)
+
+W_A confirms separation with same-record-basis but different provenance.
+W_B confirms topology-content separation across different-basis pairs.
+
+## Phase 20: T56 Sheaf Cohomology of Apparent Finality — Research Audit
+
+T56 attempts to realize phantom incomparability as an H¹ obstruction of an
+apparent-finality presheaf over a finite observer cover.
+
+**Completed v0.1:** implement
+[T56](tests/T56-sheaf-cohomology-apparent-finality.md) as the Sheaf
+Cohomology of Apparent Finality Research Audit. 56/56 tests pass.
+
+Outcome: **PARTIAL_SUCCESS**
+
+What works:
+- The ambient presheaf A(U) = ρ_U(S_global) is a well-defined presheaf (H¹ = 0 as expected)
+- The apparent-finality assignment F(U) = S_local(U) is NOT a presheaf: natural
+  restriction maps overshoot F(U) when the larger patch sees transitive paths
+  the smaller patch cannot
+- Phantom incomparability is detected as G(U) = A(U) \ F(U) — the gap between
+  what the colimit restricts to at U and what U computes locally
+- The colimit is confirmed as a global section of A
+- Section compatibility mismatch (F(U) ≠ A(U)) lives at H⁰ level
+
+What doesn't work at this level:
+- H¹ = 0 in the sparse cover {U_P, U_A, U_B}: all pairwise overlaps have ≤ 1
+  accessible event, so dim(C¹) = 0 and H¹ = 0 vacuously
+- Phantom pairs live in the section-compatibility mismatch (H⁰), not in a
+  cocycle-that-is-not-a-coboundary (H¹)
+
+Refined hypothesis: the correct invariant is H⁰(G), the global sections of the
+gap presheaf G = A/F, not H¹(F).
+
+Open questions for follow-up:
+1. Is H⁰(G) ≅ the set of phantom incomparability witnesses from T51–T52?
+2. Is the sheafification of F equal to A (the ambient presheaf)?
+3. Can the pre-presheaf structure of F be captured by Čech cohomology of the NERVE?
+4. Does the medium circular risk on arrow direction have a constructor-theoretic resolution?
+
+Results written to:
+`results/sheaf-cohomology-apparent-finality-v0.1-results.json`
+
+## Phase 21: Geometric Unity Integration Roadmap — Mathematical Language Import
+
+The manuscript "Geometric Unity" (Weinstein, 2021) was audited across all 69
+pages for mathematical structures relevant to TaF. A sequential 8-stage
+integration roadmap was produced.
+
+See: [TECHNICAL-REPORT-geometric-unity-integration-roadmap-v0.1.md](TECHNICAL-REPORT-geometric-unity-integration-roadmap-v0.1.md)
+
+Key structural analogies identified (all labeled as conjectures, not theorems):
+
+| GU Structure | TaF Analog | Status |
+|---|---|---|
+| Observerse (X, Y, {ι}) | Record-Space Triple (Σ, Π, {ι_α}) | CONJECTURE |
+| Native/Invasive fields | Ambient A(U) / Apparent F(U) presheaves | TaF-ORIG (T56) |
+| Augmented torsion T_g | Finality torsion τ_F(U) = A(U) \ F(U) | CONJECTURE |
+| Distinguished connection A₀ | Colimit as distinguished finality connection | CONJECTURE |
+| Inhomogeneous Gauge Group G = H ⋉ N | G_F = H_F ⋉ N_F | CONJECTURE |
+| Deformation complex (∂₁, ∂₂) | Phantom deformation complex | SPECULATIVE |
+| Arrow of time (§12.2) | Record-dependency order as emergent | SPECULATIVE |
+| Chirality as effective (§12.9) | Phantom incomparability as effective | SPECULATIVE |
+
+Governing principle: GU is a source of mathematical language, not a validation
+of TaF physics. Every import must be independently provable from TaF axioms.
+
+First concrete mathematical obligation: prove the Finality Reflection Property
+(FRP) as a formal lemma. G(U) = A(U) \ F(U) is NOT automatically a presheaf —
+the complement of a subpresheaf need not be a subpresheaf in general. FRP is
+the condition: (a,b) ∉ F(U) ⇒ (a,b) ∉ F(V) for V ⊆ U. In TaF's specific
+model this is a theorem (any witnessing chain for F(V) uses acc(V) ⊆ acc(U)
+events, hence witnesses F(U)), but it requires formal proof before Stage 4
+onwards can assume G is a presheaf.

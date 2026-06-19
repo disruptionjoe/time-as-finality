@@ -1,0 +1,231 @@
+{
+  "observer_audits": [
+    {
+      "source_test": "T51",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "extra_gap_pairs": [],
+      "missing_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "local_is_suborder": true,
+      "gap_equals_phantoms": true,
+      "classification": "exact_match"
+    },
+    {
+      "source_test": "T51",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "extra_gap_pairs": [],
+      "missing_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "local_is_suborder": true,
+      "gap_equals_phantoms": true,
+      "classification": "exact_match"
+    },
+    {
+      "source_test": "T52",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "extra_gap_pairs": [],
+      "missing_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "local_is_suborder": true,
+      "gap_equals_phantoms": true,
+      "classification": "exact_match"
+    },
+    {
+      "source_test": "T52",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ]
+      ],
+      "extra_gap_pairs": [],
+      "missing_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "local_is_suborder": true,
+      "gap_equals_phantoms": true,
+      "classification": "exact_match"
+    }
+  ],
+  "control_audit": {
+    "source_test": "CONTROL",
+    "observer": "local_reversal",
+    "ambient_pairs": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "apparent_pairs": [
+      [
+        "b",
+        "a"
+      ]
+    ],
+    "gap_pairs": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "phantom_pairs": [],
+    "extra_gap_pairs": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "missing_gap_pairs": [],
+    "spurious_apparent_pairs": [
+      [
+        "b",
+        "a"
+      ]
+    ],
+    "local_is_suborder": false,
+    "gap_equals_phantoms": false,
+    "classification": "invalid_extension_boundary"
+  },
+  "hypothesis_evaluations": [
+    {
+      "id": "H_T51_GAP_PHANTOM",
+      "claim": "In T51, each observer's gap section equals its phantom incomparability witnesses.",
+      "status": "supported",
+      "evidence": "Observer_A: gap=[], phantoms=[]; Observer_B: gap=[('e1_A_locking', 'e3_composite_locking')], phantoms=[('e1_A_locking', 'e3_composite_locking')]"
+    },
+    {
+      "id": "H_T52_GAP_PHANTOM",
+      "claim": "In T52, each observer's gap section equals its phantom incomparability witnesses.",
+      "status": "supported",
+      "evidence": "Observer_A: gap=[('e1_alpha_locking', 'e4_delta_locking')], phantoms=[('e1_alpha_locking', 'e4_delta_locking')]; Observer_B: gap=[('e1_alpha_locking', 'e3_gamma_locking')], phantoms=[('e1_alpha_locking', 'e3_gamma_locking')]"
+    },
+    {
+      "id": "H_EXTENSION_BOUNDARY",
+      "claim": "The equivalence requires F(U) to be a suborder of A(U); conflicting local order is a different failure mode.",
+      "status": "supported",
+      "evidence": "control gap=[('a', 'b')], phantoms=[], spurious_local=[('b', 'a')]"
+    }
+  ],
+  "t51_gap_equals_phantoms": true,
+  "t52_gap_equals_phantoms": true,
+  "extension_condition_necessary": true,
+  "best_supported": "H0(G) matches phantom witnesses for the tested T51/T52 well-formed extension cases; the extension condition is necessary.",
+  "finding": "T58 supports the refined T56 Q1 claim in the bounded witness class: across T51 and T52, every gap pair A(U)-F(U) is exactly a phantom incomparability witness, and every phantom witness appears in the gap. The hostile reversal control blocks a universal reading.",
+  "boundary": "Do not read this as a theorem for arbitrary observer assignments. If F(U) contains local order pairs absent from A(U), then A(U)-F(U) mixes missing ambient order with local conflict. Such cases require a conflict/compatibility diagnostic before calling a gap pair phantom."
+}

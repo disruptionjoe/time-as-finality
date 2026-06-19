@@ -266,7 +266,7 @@ python -m models.run_t48
 python -m models.run_t49
 python -m models.run_t50
 python -m models.run_t51
-python -m models.run_t53
+python -m models.run_t52
 ```
 
 ## Run Explorations

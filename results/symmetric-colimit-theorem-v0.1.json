@@ -1,0 +1,179 @@
+{
+  "events": [
+    {
+      "name": "e1_alpha_locking",
+      "causal": 2,
+      "info": 1,
+      "po1_admissible": true
+    },
+    {
+      "name": "e2_beta_locking",
+      "causal": 1,
+      "info": 3,
+      "po1_admissible": true
+    },
+    {
+      "name": "e3_gamma_locking",
+      "causal": 4,
+      "info": 2,
+      "po1_admissible": true
+    },
+    {
+      "name": "e4_delta_locking",
+      "causal": 3,
+      "info": 4,
+      "po1_admissible": true
+    }
+  ],
+  "reference_order": [
+    [
+      "e1_alpha_locking",
+      "e3_gamma_locking"
+    ],
+    [
+      "e1_alpha_locking",
+      "e4_delta_locking"
+    ],
+    [
+      "e2_beta_locking",
+      "e4_delta_locking"
+    ]
+  ],
+  "observer_a_order": [
+    [
+      "e1_alpha_locking",
+      "e3_gamma_locking"
+    ],
+    [
+      "e2_beta_locking",
+      "e4_delta_locking"
+    ]
+  ],
+  "observer_b_order": [
+    [
+      "e1_alpha_locking",
+      "e4_delta_locking"
+    ],
+    [
+      "e2_beta_locking",
+      "e4_delta_locking"
+    ]
+  ],
+  "colimit": {
+    "order": [
+      [
+        "e1_alpha_locking",
+        "e3_gamma_locking"
+      ],
+      [
+        "e1_alpha_locking",
+        "e4_delta_locking"
+      ],
+      [
+        "e2_beta_locking",
+        "e4_delta_locking"
+      ]
+    ],
+    "reflexive": true,
+    "antisymmetric": true,
+    "transitive": true,
+    "is_valid_partial_order": true,
+    "new_from_a": [
+      [
+        "e1_alpha_locking",
+        "e4_delta_locking"
+      ]
+    ],
+    "new_from_b": [
+      [
+        "e1_alpha_locking",
+        "e3_gamma_locking"
+      ]
+    ],
+    "equals_reference": true
+  },
+  "am_reference": {
+    "witness": "Reference",
+    "am_holds": true,
+    "pairs_checked": 12,
+    "spurious": [],
+    "missing": []
+  },
+  "am_observer_a": {
+    "witness": "Observer_A",
+    "am_holds": false,
+    "pairs_checked": 12,
+    "spurious": [
+      [
+        "e1_alpha_locking",
+        "e4_delta_locking"
+      ]
+    ],
+    "missing": []
+  },
+  "am_observer_b": {
+    "witness": "Observer_B",
+    "am_holds": false,
+    "pairs_checked": 12,
+    "spurious": [
+      [
+        "e1_alpha_locking",
+        "e3_gamma_locking"
+      ]
+    ],
+    "missing": []
+  },
+  "am_colimit": {
+    "witness": "Colimit",
+    "am_holds": true,
+    "pairs_checked": 12,
+    "spurious": [],
+    "missing": []
+  },
+  "phantoms": [
+    {
+      "observer": "Observer_A",
+      "event_j": "e1_alpha_locking",
+      "event_i": "e4_delta_locking",
+      "observer_says": "incomparable",
+      "colimit_says": "leq",
+      "is_phantom": true
+    },
+    {
+      "observer": "Observer_B",
+      "event_j": "e1_alpha_locking",
+      "event_i": "e3_gamma_locking",
+      "observer_says": "incomparable",
+      "colimit_says": "leq",
+      "is_phantom": true
+    }
+  ],
+  "t47_consistency": "Colimit is antisymmetric: T47 acyclicity guarantees no record cycle for PO1-admissible events. Colimit consistency holds.",
+  "hypothesis_evaluations": [
+    {
+      "id": "H_COLIMIT_CONSISTENT",
+      "claim": "Colimit of S_A and S_B is a valid partial order (T47 holds at 4 events)",
+      "status": "supported",
+      "evidence": "reflexive=True, antisymmetric=True, transitive=True"
+    },
+    {
+      "id": "H_SYMMETRIC_PHANTOM",
+      "claim": "Observer A loses (e1,e4); Observer B loses (e1,e3) \u2014 distinct and symmetric phantoms",
+      "status": "supported",
+      "evidence": "[('Observer_A', 'e1_alpha_locking', 'e4_delta_locking'), ('Observer_B', 'e1_alpha_locking', 'e3_gamma_locking')]"
+    },
+    {
+      "id": "H_COLIMIT_COMPLETE",
+      "claim": "Colimit equals reference; both observers contribute new orderings",
+      "status": "supported",
+      "evidence": "equals_reference=True, new_from_A=(('e1_alpha_locking', 'e4_delta_locking'),), new_from_B=(('e1_alpha_locking', 'e3_gamma_locking'),)"
+    },
+    {
+      "id": "H_AM_RESTORED",
+      "claim": "AM fails locally on each observer (1 SPURIOUS each); AM holds on colimit (0 violations)",
+      "status": "supported",
+      "evidence": "AM_A: holds=False, spurious=(('e1_alpha_locking', 'e4_delta_locking'),); AM_B: holds=False, spurious=(('e1_alpha_locking', 'e3_gamma_locking'),); AM_colimit: holds=True"
+    }
+  ],
+  "best_supported": "H_COLIMIT_CONSISTENT, H_SYMMETRIC_PHANTOM, H_COLIMIT_COMPLETE, H_AM_RESTORED (all four hold)"
+}

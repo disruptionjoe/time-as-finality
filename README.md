@@ -141,6 +141,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Measurement as PO1 morphism: forward morphism f: Y->X fully admissible;
     inverse fails AC6+AC7; Measurement Asymmetry Theorem confirmed: no
     PO1-admissible morphism can originate from an obstructed system.
+- [TECHNICAL-REPORT-po1-dag-theorem-v0.1.md](results/po1-dag-theorem-v0.1-results.md)
+  - PO1 DAG Theorem: PO1-admissible morphisms in D1Cat form an acyclic
+    bipartite graph (depth <= 1) between pre-finality (unobstructed) and
+    post-finality (obstructed) systems; all four structural hypotheses confirmed.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -221,6 +225,7 @@ python -m models.run_t42
 python -m models.run_t43
 python -m models.run_t44
 python -m models.run_t45
+python -m models.run_t47
 ```
 
 ## Run Explorations

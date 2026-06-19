@@ -1,0 +1,500 @@
+{
+  "systems": [
+    {
+      "name": "U1_pre_finality",
+      "sites": 3,
+      "obstructed": false,
+      "layer": "pre_finality"
+    },
+    {
+      "name": "U2_pre_finality",
+      "sites": 2,
+      "obstructed": false,
+      "layer": "pre_finality"
+    },
+    {
+      "name": "O1_post_finality",
+      "sites": 3,
+      "obstructed": true,
+      "layer": "post_finality"
+    },
+    {
+      "name": "O2_post_finality",
+      "sites": 2,
+      "obstructed": true,
+      "layer": "post_finality"
+    },
+    {
+      "name": "O3_post_finality",
+      "sites": 3,
+      "obstructed": true,
+      "layer": "post_finality"
+    }
+  ],
+  "edge_results": [
+    {
+      "source": "U1_pre_finality",
+      "target": "U2_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_no_new_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U1_pre_finality",
+      "target": "O1_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U1_pre_finality",
+      "target": "O2_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U1_pre_finality",
+      "target": "O3_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U2_pre_finality",
+      "target": "U1_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_no_new_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U2_pre_finality",
+      "target": "O1_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U2_pre_finality",
+      "target": "O2_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "U2_pre_finality",
+      "target": "O3_post_finality",
+      "is_po1": true,
+      "verdict": "fully_admissible",
+      "primary_failure": "none (fully admissible)",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": true,
+        "AC7": true
+      }
+    },
+    {
+      "source": "O1_post_finality",
+      "target": "U1_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O1_post_finality",
+      "target": "U2_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O1_post_finality",
+      "target": "O2_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O1_post_finality",
+      "target": "O3_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O2_post_finality",
+      "target": "U1_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O2_post_finality",
+      "target": "U2_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O2_post_finality",
+      "target": "O1_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O2_post_finality",
+      "target": "O3_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O3_post_finality",
+      "target": "U1_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O3_post_finality",
+      "target": "U2_pre_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC6",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": true,
+        "AC6": false,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O3_post_finality",
+      "target": "O1_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    },
+    {
+      "source": "O3_post_finality",
+      "target": "O2_post_finality",
+      "is_po1": false,
+      "verdict": "non_admissible_shared_obstruction",
+      "primary_failure": "AC5",
+      "conditions": {
+        "AC1": true,
+        "AC2": true,
+        "AC3": true,
+        "AC4": true,
+        "AC5": false,
+        "AC6": true,
+        "AC7": false
+      }
+    }
+  ],
+  "dag_analysis": {
+    "nodes": [
+      "U1_pre_finality",
+      "U2_pre_finality",
+      "O1_post_finality",
+      "O2_post_finality",
+      "O3_post_finality"
+    ],
+    "admitted_edges": [
+      [
+        "U1_pre_finality",
+        "O1_post_finality"
+      ],
+      [
+        "U1_pre_finality",
+        "O2_post_finality"
+      ],
+      [
+        "U1_pre_finality",
+        "O3_post_finality"
+      ],
+      [
+        "U2_pre_finality",
+        "O1_post_finality"
+      ],
+      [
+        "U2_pre_finality",
+        "O2_post_finality"
+      ],
+      [
+        "U2_pre_finality",
+        "O3_post_finality"
+      ]
+    ],
+    "rejected_edges": [
+      [
+        "U1_pre_finality",
+        "U2_pre_finality"
+      ],
+      [
+        "U2_pre_finality",
+        "U1_pre_finality"
+      ],
+      [
+        "O1_post_finality",
+        "U1_pre_finality"
+      ],
+      [
+        "O1_post_finality",
+        "U2_pre_finality"
+      ],
+      [
+        "O1_post_finality",
+        "O2_post_finality"
+      ],
+      [
+        "O1_post_finality",
+        "O3_post_finality"
+      ],
+      [
+        "O2_post_finality",
+        "U1_pre_finality"
+      ],
+      [
+        "O2_post_finality",
+        "U2_pre_finality"
+      ],
+      [
+        "O2_post_finality",
+        "O1_post_finality"
+      ],
+      [
+        "O2_post_finality",
+        "O3_post_finality"
+      ],
+      [
+        "O3_post_finality",
+        "U1_pre_finality"
+      ],
+      [
+        "O3_post_finality",
+        "U2_pre_finality"
+      ],
+      [
+        "O3_post_finality",
+        "O1_post_finality"
+      ],
+      [
+        "O3_post_finality",
+        "O2_post_finality"
+      ]
+    ],
+    "is_dag": true,
+    "topological_sort": [
+      "U1_pre_finality",
+      "U2_pre_finality",
+      "O1_post_finality",
+      "O2_post_finality",
+      "O3_post_finality"
+    ],
+    "max_depth": 1,
+    "is_bipartite": true,
+    "pre_finality_nodes": [
+      "U1_pre_finality",
+      "U2_pre_finality"
+    ],
+    "post_finality_nodes": [
+      "O1_post_finality",
+      "O2_post_finality",
+      "O3_post_finality"
+    ]
+  },
+  "theorem_statement": "PO1 DAG Theorem (T47): The directed graph of PO1-admissible D1RestrictionMorphisms in D1Cat is acyclic. No directed cycle of PO1-admissible morphisms can exist. Proof: suppose f1,...,fn form a PO1-admissible cycle A1 -> A2 -> ... -> An -> A1. For f1: A1 -> A2, AC7 requires A1 unobstructed. For fn: An -> A1, AC6 requires A1 obstructed. Contradiction.",
+  "corollary_depth": "Depth Bound Corollary: No PO1-admissible chain has length > 1. If f: A -> B is PO1-admissible, AC6 requires B obstructed. Any g: B -> C would require AC7: B unobstructed. Contradiction. Verified: max_depth = 1 in this model.",
+  "corollary_bipartite": "Bipartite Corollary: The PO1-admissible sub-graph of D1Cat is bipartite between unobstructed systems (pre-finality layer) and obstructed systems (post-finality layer), with all edges directed from pre- to post-finality. Verified: pre_nodes=('U1_pre_finality', 'U2_pre_finality'), post_nodes=('O1_post_finality', 'O2_post_finality', 'O3_post_finality').",
+  "corollary_border": "Finality Border Corollary: PO1-admissible morphisms mark the finality boundary in D1Cat. Every PO1-admissible morphism crosses from pre-finality to post-finality. No PO1-admissible morphism crosses in the reverse direction. The finality boundary is a categorical one-way gate in D1Cat.",
+  "proof_sketch": "The proof depends only on AC6 and AC7. AC6 (target obstructed) and AC7 (source unobstructed) jointly prevent any system from being both source and target in a PO1-admissible morphism. This rules out self-loops, back-edges, and cycles of any length. The finite witness here confirms that all AC7 failures occur precisely when the source is obstructed, consistent with the structural proof.",
+  "hypothesis_evaluations": [
+    {
+      "id": "H_DAG",
+      "claim": "PO1-admissible sub-graph of D1Cat is acyclic",
+      "status": "supported",
+      "evidence": "DAG check: True; admitted edges: 6"
+    },
+    {
+      "id": "H_DEPTH1",
+      "claim": "No PO1-admissible chain has length > 1",
+      "status": "supported",
+      "evidence": "max path depth in admitted graph: 1"
+    },
+    {
+      "id": "H_BIPARTITE",
+      "claim": "PO1 sub-graph is bipartite (pre-finality vs post-finality)",
+      "status": "supported",
+      "evidence": "bipartite confirmed: True; pre=('U1_pre_finality', 'U2_pre_finality'); post=('O1_post_finality', 'O2_post_finality', 'O3_post_finality')"
+    },
+    {
+      "id": "H_BORDER",
+      "claim": "All PO1-admissible morphisms cross pre- to post-finality",
+      "status": "supported",
+      "evidence": "admitted=6 edges all pre->post; AC7 failures=0; AC6 failures=8"
+    }
+  ],
+  "best_supported": "H_DAG, H_DEPTH1, H_BIPARTITE, H_BORDER (all four hold)"
+}

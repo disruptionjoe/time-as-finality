@@ -105,6 +105,14 @@ T26 adds a formal object:
 - trusted transport and finite patch constraints are first-class data;
 - restriction morphisms can pass or fail under explicit preservation checks.
 
+T53 adds a multi-observer colimit boundary:
+
+- bounded observer views can merge into valid partial orders;
+- valid partial-order colimits need not be canonical;
+- event identity maps and overlap data are required for unique reconstruction;
+- AM-compatible axis profiles are required if finality-axis dominance is used
+  to reconstruct temporal order.
+
 ## How It Could Fail
 
 - A better aggregate rule may recover all relevant multiscale information.
@@ -176,11 +184,25 @@ obstruction, and restriction-morphism checks. It defers full IPT
 representation because current IPT objects still lack site maps and
 restriction-map commutation data.
 
+## T53 Result
+
+[T53](../tests/T53-observer-colimit-descent-boundary.md) shows that
+multi-observer apparent-finality colimits require finite descent data for
+canonical reconstruction. T47-style acyclicity can protect partial-order
+consistency, but it does not decide whether observer-local event labels refer
+to the same global event, whether hidden records repair an apparent mismatch,
+or whether finality-axis dominance reconstructs the merged record order.
+
+This strengthens D1-Field only within its current status. It supports finite
+graph-indexed local-to-global structure over scalar/vector summaries, but it
+does not force full sheaf machinery.
+
 ## Tests
 
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
 - [T25: Minimal D1 Generalization](../tests/T25-minimal-d1-generalization.md)
 - [T26: D1 Restriction System](../tests/T26-d1-restriction-system.md)
+- [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
 
 ## Contribution Needed
 

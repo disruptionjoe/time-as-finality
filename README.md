@@ -168,6 +168,19 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     guarantees this); bounded record access produces one phantom incomparability
     (e1 || e3 apparent, e1 ≤ e3 in colimit); event finality strictly extends
     apparent finality; all three hypotheses supported.
+- [TECHNICAL-REPORT-symmetric-colimit-theorem-v0.1.md](results/symmetric-colimit-theorem-v0.1-results.md)
+  - Symmetric Colimit Theorem: 4-event witness; two observers each with
+    complementary bounded access; symmetric phantom incomparability (A loses
+    e1≤e4, B loses e1≤e3); colimit = full event-finality reference; AM fails
+    locally for both observers, restored at colimit level; all four hypotheses
+    supported.
+- [TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md](TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md)
+  - Observer-Colimit Descent Boundary: valid observer colimits do not
+    automatically determine a unique canonical event-finality completion;
+    T53 separates partial-order consistency, descent uniqueness, and
+    finality-axis reconstructability. H2, H3, and H4 supported; H0 and H1
+    refuted; H5 partially supported as finite descent data, not full sheaf
+    machinery.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -253,6 +266,7 @@ python -m models.run_t48
 python -m models.run_t49
 python -m models.run_t50
 python -m models.run_t51
+python -m models.run_t53
 ```
 
 ## Run Explorations

@@ -35,6 +35,16 @@ order. T1 demonstrates that record-stabilization frontiers recover causal
 precedence where the graph supports it while preserving incomparability for
 spacelike-independent records.
 
+T48-T51 strengthen the finite version of this claim by treating
+PO1-admissible morphisms as FinaliEvents ordered by record containment, then
+showing that finality-axis dominance can reconstruct that order under Axis
+Monotonicity. T51 adds the apparent/event distinction: a bounded observer may
+see a phantom incomparability that disappears in the observer colimit.
+
+T53 adds an important boundary. A valid colimit is not automatically a unique
+canonical event-finality reconstruction. Observer-relative temporal order needs
+descent data when multiple observer views are merged.
+
 ## How It Could Fail
 
 - Temporal order cannot be reconstructed without primitive time.
@@ -47,6 +57,11 @@ spacelike-independent records.
 
 - [T1: Record Graph Temporal Reconstruction](../tests/T1-record-graph-temporal-reconstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
+- [T48: FinaliEvent Structure](../tests/T48-finali-event-structure.md)
+- [T49: Reconstruction Without Background Time](../tests/T49-reconstruction-without-background-time.md)
+- [T50: Axis Monotonicity Theorem](../tests/T50-axis-monotonicity-theorem.md)
+- [T51: Multi-Observer Apparent Finality Colimit](../tests/T51-multi-observer-apparent-finality-colimit.md)
+- [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
 - [First-Person Finality and Complexity Separation](../open-problems/first-person-finality-complexity-separation.md)
 - [Observer Closure Theorem](../open-problems/observer-closure-theorem.md)
 
@@ -66,3 +81,16 @@ cannot represent, if anything, about first-person finality.
 The v0.1 model reconstructs `A < C` and `B < C` while leaving spacelike `A`
 and `B` incomparable. A three-event graph is a counterexample to the stronger
 claim that accessible finalized records always determine a total order.
+
+## T53 Result
+
+[T53](../tests/T53-observer-colimit-descent-boundary.md) shows that
+partial-order consistency, canonical global completion, and axis-based
+reconstruction are distinct properties. The finite audit supports H2, H3, and
+H4: compatible completions can remain valid partial orders while observer data
+underdetermine event identity, while AM can fail independently of record-order
+validity, and while some incompleteness can be repaired by hidden records.
+
+This keeps C1 weakened rather than upgraded. The project can reconstruct
+observer-relative partial orders in finite witnesses, but it must not claim
+that merged observer views automatically select one canonical history.

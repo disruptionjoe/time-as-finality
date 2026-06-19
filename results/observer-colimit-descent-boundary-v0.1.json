@@ -1,0 +1,441 @@
+{
+  "theorem_statement": "Observer-Colimit Descent Boundary Theorem (finite v0.1): For finite FinaliEvent-style record systems, T47-style acyclicity can protect partial-order consistency of each compatible completion, but it does not guarantee that bounded observer views determine a unique global event-finality structure. Canonical reconstruction additionally requires event-identity maps, sufficient overlap data, and AM-compatible axis profiles when temporal order is reconstructed from finality axes.",
+  "descent_data_required": [
+    "event identity maps across observer-local labels",
+    "record-overlap data sufficient to distinguish hidden repair from arbitrary completion",
+    "axis profiles satisfying AM when axis dominance is used as temporal reconstruction",
+    "a nondefinable-boundary check for missing site/event maps"
+  ],
+  "cases": [
+    {
+      "case_name": "t51_positive_control",
+      "expected_boundary": "positive_control",
+      "compatible_completion_names": [
+        "t51_colimit_completion"
+      ],
+      "distinct_compatible_signatures": 1,
+      "unique_completion": true,
+      "has_axis_valid_completion": true,
+      "has_axis_failing_completion": false,
+      "has_hidden_record_repair": false,
+      "verdict": "canonical_axis_reconstructable",
+      "evidence": "Exactly one compatible completion exists and AM holds.",
+      "evaluations": [
+        {
+          "completion_name": "t51_colimit_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "e1_A_locking",
+                "e1_A_locking"
+              ],
+              [
+                "e1_A_locking",
+                "e3_composite_locking"
+              ],
+              [
+                "e2_B_locking",
+                "e2_B_locking"
+              ],
+              [
+                "e2_B_locking",
+                "e3_composite_locking"
+              ],
+              [
+                "e3_composite_locking",
+                "e3_composite_locking"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": true,
+            "spurious_count": 0,
+            "missing_count": 0,
+            "violations": []
+          },
+          "hidden_records": [
+            "r_A_locked_for_Observer_B"
+          ],
+          "repair_kind": "none",
+          "signature": "(3, (('e1_A_locking', 'e3_composite_locking'), ('e2_B_locking', 'e3_composite_locking')), (('e1_A_locking', 2, 2), ('e2_B_locking', 1, 3), ('e3_composite_locking', 3, 4)), ('r_A_locked_for_Observer_B',))"
+        }
+      ]
+    },
+    {
+      "case_name": "ambiguous_event_identity",
+      "expected_boundary": "underdetermined_noncanonical",
+      "compatible_completion_names": [
+        "identified_two_event_completion",
+        "disjoint_four_event_completion"
+      ],
+      "distinct_compatible_signatures": 2,
+      "unique_completion": false,
+      "has_axis_valid_completion": true,
+      "has_axis_failing_completion": true,
+      "has_hidden_record_repair": false,
+      "verdict": "underdetermined_noncanonical",
+      "evidence": "2 compatible completions remain, with 2 distinct signatures.",
+      "evaluations": [
+        {
+          "completion_name": "identified_two_event_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "e1",
+                "e1"
+              ],
+              [
+                "e1",
+                "e2"
+              ],
+              [
+                "e2",
+                "e2"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": true,
+            "spurious_count": 0,
+            "missing_count": 0,
+            "violations": []
+          },
+          "hidden_records": [],
+          "repair_kind": "none",
+          "signature": "(2, (('e1', 'e2'),), (('e1', 1, 1), ('e2', 2, 2)), ())"
+        },
+        {
+          "completion_name": "disjoint_four_event_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "a1",
+                "a1"
+              ],
+              [
+                "a1",
+                "a2"
+              ],
+              [
+                "a2",
+                "a2"
+              ],
+              [
+                "b1",
+                "b1"
+              ],
+              [
+                "b1",
+                "b2"
+              ],
+              [
+                "b2",
+                "b2"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": false,
+            "spurious_count": 6,
+            "missing_count": 0,
+            "violations": [
+              {
+                "event_j": "a1",
+                "event_i": "b1",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              },
+              {
+                "event_j": "a1",
+                "event_i": "b2",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              },
+              {
+                "event_j": "a2",
+                "event_i": "b2",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              },
+              {
+                "event_j": "b1",
+                "event_i": "a1",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              },
+              {
+                "event_j": "b1",
+                "event_i": "a2",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              },
+              {
+                "event_j": "b2",
+                "event_i": "a2",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              }
+            ]
+          },
+          "hidden_records": [],
+          "repair_kind": "none",
+          "signature": "(4, (('a1', 'a2'), ('b1', 'b2')), (('a1', 1, 1), ('a2', 2, 2), ('b1', 1, 1), ('b2', 2, 2)), ())"
+        }
+      ]
+    },
+    {
+      "case_name": "axis_failing_valid_colimit",
+      "expected_boundary": "valid_partial_order_axis_failure",
+      "compatible_completion_names": [
+        "record_valid_axis_failing_completion"
+      ],
+      "distinct_compatible_signatures": 1,
+      "unique_completion": true,
+      "has_axis_valid_completion": false,
+      "has_axis_failing_completion": true,
+      "has_hidden_record_repair": false,
+      "verdict": "valid_partial_order_axis_failure",
+      "evidence": "The completion is a valid partial order, but AM fails.",
+      "evaluations": [
+        {
+          "completion_name": "record_valid_axis_failing_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "e1_high_causal",
+                "e1_high_causal"
+              ],
+              [
+                "e1_high_causal",
+                "e2_lower_causal_successor"
+              ],
+              [
+                "e2_lower_causal_successor",
+                "e2_lower_causal_successor"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": false,
+            "spurious_count": 0,
+            "missing_count": 1,
+            "violations": [
+              {
+                "event_j": "e1_high_causal",
+                "event_i": "e2_lower_causal_successor",
+                "in_record_order": true,
+                "in_axis_order": false,
+                "kind": "missing_axis_order"
+              }
+            ]
+          },
+          "hidden_records": [],
+          "repair_kind": "none",
+          "signature": "(2, (('e1_high_causal', 'e2_lower_causal_successor'),), (('e1_high_causal', 2, 2), ('e2_lower_causal_successor', 1, 4)), ())"
+        }
+      ]
+    },
+    {
+      "case_name": "hidden_record_repair",
+      "expected_boundary": "repairable_by_hidden_record",
+      "compatible_completion_names": [
+        "unrepaired_completion",
+        "hidden_record_repair_completion"
+      ],
+      "distinct_compatible_signatures": 2,
+      "unique_completion": false,
+      "has_axis_valid_completion": true,
+      "has_axis_failing_completion": true,
+      "has_hidden_record_repair": true,
+      "verdict": "repairable_by_hidden_record",
+      "evidence": "At least one compatible completion fails axis reconstruction, while a hidden-record completion restores AM.",
+      "evaluations": [
+        {
+          "completion_name": "unrepaired_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "e1",
+                "e1"
+              ],
+              [
+                "e2",
+                "e2"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": false,
+            "spurious_count": 1,
+            "missing_count": 0,
+            "violations": [
+              {
+                "event_j": "e1",
+                "event_i": "e2",
+                "in_record_order": false,
+                "in_axis_order": true,
+                "kind": "spurious_axis_order"
+              }
+            ]
+          },
+          "hidden_records": [],
+          "repair_kind": "none",
+          "signature": "(2, (), (('e1', 1, 1), ('e2', 2, 2)), ())"
+        },
+        {
+          "completion_name": "hidden_record_repair_completion",
+          "compatible_with_views": true,
+          "compatibility_failures": [],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "e1",
+                "e1"
+              ],
+              [
+                "e1",
+                "e2"
+              ],
+              [
+                "e2",
+                "e2"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": true,
+            "spurious_count": 0,
+            "missing_count": 0,
+            "violations": []
+          },
+          "hidden_records": [
+            "r_hidden_lock"
+          ],
+          "repair_kind": "hidden_record_repair",
+          "signature": "(2, (('e1', 'e2'),), (('e1', 1, 1), ('e2', 2, 2)), ('r_hidden_lock',))"
+        }
+      ]
+    },
+    {
+      "case_name": "nondefinable_overlap_boundary",
+      "expected_boundary": "nondefinable_projection",
+      "compatible_completion_names": [],
+      "distinct_compatible_signatures": 0,
+      "unique_completion": false,
+      "has_axis_valid_completion": false,
+      "has_axis_failing_completion": false,
+      "has_hidden_record_repair": false,
+      "verdict": "nondefinable_projection",
+      "evidence": "No candidate completion is compatible with all observer views.",
+      "evaluations": [
+        {
+          "completion_name": "bad_incomplete_overlap_map",
+          "compatible_with_views": false,
+          "compatibility_failures": [
+            "bad_incomplete_overlap_map: no event map for Observer_B.b1"
+          ],
+          "partial_order": {
+            "reflexive": true,
+            "antisymmetric": true,
+            "transitive": true,
+            "is_partial_order": true,
+            "order_pairs": [
+              [
+                "a1",
+                "a1"
+              ]
+            ]
+          },
+          "axis_monotonicity": {
+            "am_holds": true,
+            "spurious_count": 0,
+            "missing_count": 0,
+            "violations": []
+          },
+          "hidden_records": [],
+          "repair_kind": "none",
+          "signature": "(1, (), (('a1', 1, 1),), ())"
+        }
+      ]
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H0",
+      "claim": "T51/T52-style positive colimits cover all meaningful multi-observer merges.",
+      "status": "refuted",
+      "evidence": "Boundary cases include underdetermined identity, AM failure, repair, and non-definable overlap."
+    },
+    {
+      "id": "H1",
+      "claim": "Every compatible observer merge has a unique canonical event-finality completion.",
+      "status": "refuted",
+      "evidence": "ambiguous_event_identity unique=False"
+    },
+    {
+      "id": "H2",
+      "claim": "Partial-order validity can hold while uniqueness requires extra descent data.",
+      "status": "supported",
+      "evidence": "all compatible completions partial orders=True; ambiguous verdict=underdetermined_noncanonical"
+    },
+    {
+      "id": "H3",
+      "claim": "Record-order colimits can remain valid while finality-axis reconstruction fails.",
+      "status": "supported",
+      "evidence": "axis case verdict=valid_partial_order_axis_failure"
+    },
+    {
+      "id": "H4",
+      "claim": "Some boundary failures are hidden-record repairable; others remain noncanonical.",
+      "status": "supported",
+      "evidence": "repair verdict=repairable_by_hidden_record; identity verdict=underdetermined_noncanonical"
+    },
+    {
+      "id": "H5",
+      "claim": "A stronger descent-style formalism is required beyond pointwise record union.",
+      "status": "partially_supported",
+      "evidence": "Finite descent data are required, but full sheaf machinery is not yet forced."
+    }
+  ],
+  "best_supported": "H2, H3, and H4 supported; H0 and H1 refuted; H5 partially supported as finite descent data, not full sheaf machinery."
+}

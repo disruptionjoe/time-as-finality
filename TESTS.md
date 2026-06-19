@@ -44,6 +44,12 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T43](tests/T43-local-persistence-mechanisms.md) | Local persistence accumulation mechanism audit | R1, G2, D1, T42 | implemented: intrinsic rate, resource budget, and interaction density produce local differences with propagation fixed; propagation-shadow rejected; H4 best supported |
 | [T44](tests/T44-local-mechanism-identifiability.md) | Local mechanism identifiability audit | R1, G2, T42, T43 | implemented: baseline traces remain ambiguous, but demand-drop plus coupling-rewire separates intrinsic rate, resource budget, and interaction density; H4 best supported |
 | [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) | Open causal scarcity and closed synchronization boundary | R1, A1, PO1, T42, T44 | implemented: RecordAccessSystem distinguishes open causal-proximity scarcity from closed membership-plus-synchronization scarcity; H3 best supported; CS1 remains candidate only |
+| [T47](tests/T47-po1-dag-theorem.md) | PO1 DAG theorem | PO1, D1Cat | implemented: PO1-admissible morphisms form an acyclic bipartite graph with depth <= 1 |
+| [T48](tests/T48-finali-event-structure.md) | FinaliEvent structure | PO1, C1, T47 | implemented: PO1-admissible morphisms can be ordered by record containment into a partial order with incomparable events |
+| [T49](tests/T49-reconstruction-without-background-time.md) | Reconstruction without background time | C1, T48 | implemented: two-axis finality dominance reconstructs the T48 record order without a scalar time variable |
+| [T50](tests/T50-axis-monotonicity-theorem.md) | Axis monotonicity theorem | C1, T48, T49 | implemented: AM is the exact condition under which finality-axis dominance equals record order; counterexample and anti-scalar corollary included |
+| [T51](tests/T51-multi-observer-apparent-finality-colimit.md) | Multi-observer apparent finality colimit | C1, D1-Field, T47, T48, T50 | implemented: bounded observer access creates phantom incomparability repaired by a valid colimit |
+| [T53](tests/T53-observer-colimit-descent-boundary.md) | Observer-colimit descent boundary audit | C1, D1-Field, T47, T48, T50, T51 | implemented: valid colimit does not imply canonical completion or axis reconstructability; H2/H3/H4 best supported |
 
 ## Minimum Compatibility Constraints
 
@@ -96,6 +102,12 @@ python -m models.run_t42
 python -m models.run_t43
 python -m models.run_t44
 python -m models.run_t46
+python -m models.run_t47
+python -m models.run_t48
+python -m models.run_t49
+python -m models.run_t50
+python -m models.run_t51
+python -m models.run_t53
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -130,6 +142,12 @@ The suites use only Python's standard library. Evidence records:
 - [Local Persistence Mechanisms v0.1 Results](results/local-persistence-mechanisms-v0.1-results.md)
 - [Local Mechanism Identifiability v0.1 Results](results/local-mechanism-identifiability-v0.1-results.md)
 - [Open Causal Scarcity and Closed Synchronization Boundary v0.1 Results](results/open-causal-scarcity-synchronization-boundary-v0.1-results.md)
+- [PO1 DAG Theorem v0.1 Results](results/po1-dag-theorem-v0.1-results.md)
+- [FinaliEvent Structure v0.1 Results](results/finali-event-structure-v0.1-results.md)
+- [Reconstruction Without Background Time v0.1 Results](results/reconstruction-without-background-time-v0.1-results.md)
+- [Axis Monotonicity Theorem v0.1 Results](results/axis-monotonicity-theorem-v0.1-results.md)
+- [Multi-Observer Apparent Finality Colimit v0.1 Results](results/multi-observer-apparent-finality-colimit-v0.1-results.md)
+- [Observer-Colimit Descent Boundary v0.1 Results](results/observer-colimit-descent-boundary-v0.1-results.md)
 
 ## How To Add A Test
 

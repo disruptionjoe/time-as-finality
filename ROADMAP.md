@@ -708,3 +708,38 @@ costs.
 CS1 remains a candidate claim only. The next hostile tests should include
 cross-exchange arbitrage, dark-pool reporting, public ledger mempools, stale
 read replicas, and sensor-fusion networks with trusted internal clocks.
+
+## Phase 16: T53 Observer-Colimit Descent Boundary
+
+T51 established that a bounded observer can see a phantom incomparability:
+the observer-local apparent order can omit a real event-finality dependency
+that reappears in the colimit. T53 asks what can fail after that result.
+
+**Completed v0.1:** implement
+[T53](tests/T53-observer-colimit-descent-boundary.md) as the Observer-Colimit
+Descent Boundary audit. The executable model separates three properties:
+
+```text
+partial-order validity
+unique global completion
+axis-based reconstructability
+```
+
+The audit produces five witnesses:
+
+```text
+t51_positive_control
+ambiguous_event_identity
+axis_failing_valid_colimit
+hidden_record_repair
+nondefinable_overlap_boundary
+```
+
+T53 supports H2, H3, and H4. T47-style acyclicity can protect partial-order
+consistency for compatible completions, but it does not guarantee uniqueness
+or finality-axis reconstruction. H0 and H1 are refuted. H5 is partially
+supported as finite descent data, not full sheaf machinery.
+
+Next theorem target: characterize necessary and sufficient finite conditions
+for a unique AM-valid global completion from observer-local FinaliEvent
+structures and overlap maps.

@@ -748,6 +748,39 @@ that changes their record structure. The model therefore tests a weakened,
 precise form of C1: record structure can reconstruct an observer-relative
 partial temporal order, not necessarily a total experienced sequence.
 
+## Observer-Colimit Descent Boundary
+
+T51 and T53 refine the reconstruction rule for multiple bounded observers.
+Each observer may construct an apparent FinaliEvent order from only the records
+available in that observer's basis. A colimit over observer record bases can
+restore orderings that are invisible to one observer, but T53 shows that a
+valid colimit is not automatically canonical.
+
+The finite distinction is:
+
+```text
+colimit-consistent:
+  every compatible completion is a valid partial order
+
+colimit-canonical:
+  observer views determine one global event-finality completion
+
+axis-reconstructable:
+  finality-axis dominance matches the record-dependency order
+
+descent-underdetermined:
+  multiple non-isomorphic completions fit the same observer views
+
+nondefinable:
+  at least one observer-local event lacks a map into the proposed completion
+```
+
+T47 acyclicity protects the first property for well-formed PO1-admissible
+event structures. It does not by itself provide the remaining properties.
+Canonical observer-relative temporal reconstruction additionally requires
+event identity maps, sufficient overlap data, and AM-compatible axis profiles
+when finality axes are used to reconstruct order.
+
 ## Failure Conditions
 
 The formalization fails its intended job if:

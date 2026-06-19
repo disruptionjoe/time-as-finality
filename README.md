@@ -187,6 +187,11 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     T51 and T52 classify as canonical, T53 classifies as underdetermined, and
     counterexamples show why identity, overlap, record compatibility, profile
     agreement, definable maps, and AM are necessary.
+- [TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md](TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md)
+  - Conflict-Enriched FinaliEvent Descent: T54 generalizes to non-empty
+    conflict only after adding finite conflict checks for irreflexivity,
+    comparable-conflict freedom, upward inheritance, and explicit
+    conflict/compatibility disagreement.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -275,6 +280,8 @@ python -m models.run_t51
 python -m models.run_t52
 python -m models.run_t53
 python -m models.run_t54
+python -m models.run_t55
+python -m models.run_t55b
 ```
 
 ## Run Explorations

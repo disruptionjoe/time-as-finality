@@ -292,22 +292,67 @@ and witness requirements.
 
 ---
 
+## T55B Executable Results (2026-06-19)
+
+T55B executed the witness program defined above. Key results:
+
+**H0 refuted.** W_A confirms: observer C has identical accessible records
+{r1_locked, r2_locked} in both direct (A→C, B→C) and transitive (A→B→C) scenarios,
+but distinct provenance paths. The record basis does not determine provenance.
+
+**H1 supported.** Same record basis at C, different provenance structure confirmed.
+Provenance carries information the record basis does not.
+
+**H2 partially supported.** W_B confirms: the same propagation topology (P→R, Q→R)
+is compatible with different record bases (alpha/beta vs gamma/delta). Abstract
+topology (without record labels) cannot determine accessible records.
+
+**H4 supported (primary result).** W_A colimit comparison: both scenarios give
+identical event-finality order and AM on C's record basis. W_D: propagation
+step-order (r1_locked at step=1, r2_locked at step=2) is compatible with both
+a concurrent (e1 || e2) and an ordered (e1 ≤ e2) event structure. W_T54: T54
+quotient-union is provenance-blind — same basis yields identical T54 classification.
+
+**Global colimit finding.** The global colimit equals the union of all origin records.
+Propagation only redistributes; it does not create. Topology adds no information
+about the colimit beyond what the origins carry.
+
+**Recommendation: optional audit layer.** Provenance does not change event-finality
+colimits, AM reconstruction, or T54 descent classification in any tested witness.
+It is useful for auditability and attribution but is not a first-class mathematical
+primitive at this stage.
+
+Full results: `results/provenance-aware-reconstruction-separation-v0.1-results.md`  
+Technical report: `TECHNICAL-REPORT-provenance-aware-reconstruction-separation-v0.1.md`  
+Test spec: `tests/T55B-provenance-aware-reconstruction.md`
+
+---
+
 ## Open Questions for Future Work
 
-1. Is a propagation event (A transmits R to B) a D1RestrictionMorphism?
-   If yes: what kind? If no: what axioms distinguish it from a finality crossing?
+1. **Propagation causal constraint.** If records can only propagate after the events
+   that produced them have occurred (enforced anchor ordering), does propagation
+   step-order imply event-finality order? This would require formalizing
+   `anchor_event` as a mandatory ordering constraint on PropagationEdges.
 
-2. Does propagation order (temporal ordering of propagation edges) carry
-   information beyond what the FinaliEvent partial order encodes?
+2. **T53 identity resolution via provenance.** Can provenance (A transmitted r_a to B)
+   provide the identity-map evidence that T54's C1-C2 descent conditions require?
+   If A's transmission of r_a to B is evidence that B's subsequent event using r_a
+   is downstream of A's event, provenance becomes load-bearing for T54.
 
-3. Can two FinaliEvent Structures with the same events and record-dependency
-   order have different provenance structures? (Provenance-opaque structures
-   vs. provenance-transparent structures.)
+3. **Propagation edges as D1RestrictionMorphisms.** Propagation is post-finality
+   to post-finality (preserving obstruction status). FinaliEvents are pre-finality
+   to post-finality (creating obstruction). These morphism types may be distinct.
+   If distinct, the propagation graph requires a new morphism class in D1Cat.
 
-4. Is the T51-T52 colimit operation a special case of a provenance-aware
-   colimit in which propagation history is collapsed? Or is it orthogonal?
+4. **Provenance-aware colimit.** Does a step-weighted provenance colimit (merging
+   record bases with temporal ordering from propagation steps) refine the plain
+   T52/T54 pointwise union? The tested witnesses suggest no, but the general
+   case for N observers with overlapping propagation histories is open.
 
-5. In the Hashgraph setting, gossip history determines event order. In the
-   finality-theoretic setting, record-dependency order determines event order.
-   What is the precise relationship between these two order-determination
-   mechanisms? Are they dual? Isomorphic? Distinct?
+5. **Hashgraph vs record-dependency order.** In the Hashgraph setting, gossip
+   history determines event order via virtual voting. In the finality-theoretic
+   setting, record-dependency order determines event order via record containment.
+   W_D shows these are not equivalent — propagation timing does not determine
+   record-dependency order. The precise relationship (dual? distinct? domain-specific?)
+   remains open.

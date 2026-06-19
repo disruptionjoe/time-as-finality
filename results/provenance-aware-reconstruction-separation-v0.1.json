@@ -1,0 +1,437 @@
+{
+  "scenarios": [
+    {
+      "name": "A1_direct",
+      "observers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "edges": [
+        {
+          "source": "A",
+          "target": "C",
+          "records": [
+            "r1_locked"
+          ],
+          "step": 1,
+          "anchor_event": "e1_locking"
+        },
+        {
+          "source": "B",
+          "target": "C",
+          "records": [
+            "r2_locked"
+          ],
+          "step": 2,
+          "anchor_event": "e2_locking"
+        }
+      ],
+      "origins": [
+        {
+          "observer": "A",
+          "record": "r1_locked"
+        },
+        {
+          "observer": "B",
+          "record": "r2_locked"
+        }
+      ]
+    },
+    {
+      "name": "A2_transitive",
+      "observers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "edges": [
+        {
+          "source": "A",
+          "target": "B",
+          "records": [
+            "r1_locked"
+          ],
+          "step": 1,
+          "anchor_event": "e1_locking"
+        },
+        {
+          "source": "B",
+          "target": "C",
+          "records": [
+            "r1_locked",
+            "r2_locked"
+          ],
+          "step": 2,
+          "anchor_event": "e2_locking"
+        }
+      ],
+      "origins": [
+        {
+          "observer": "A",
+          "record": "r1_locked"
+        },
+        {
+          "observer": "B",
+          "record": "r2_locked"
+        }
+      ]
+    },
+    {
+      "name": "B1_alpha_beta",
+      "observers": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "edges": [
+        {
+          "source": "P",
+          "target": "R",
+          "records": [
+            "r_alpha_locked"
+          ],
+          "step": 1,
+          "anchor_event": null
+        },
+        {
+          "source": "Q",
+          "target": "R",
+          "records": [
+            "r_beta_locked"
+          ],
+          "step": 2,
+          "anchor_event": null
+        }
+      ],
+      "origins": [
+        {
+          "observer": "P",
+          "record": "r_alpha_locked"
+        },
+        {
+          "observer": "Q",
+          "record": "r_beta_locked"
+        }
+      ]
+    },
+    {
+      "name": "B2_gamma_delta",
+      "observers": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "edges": [
+        {
+          "source": "P",
+          "target": "R",
+          "records": [
+            "r_gamma_locked"
+          ],
+          "step": 1,
+          "anchor_event": null
+        },
+        {
+          "source": "Q",
+          "target": "R",
+          "records": [
+            "r_delta_locked"
+          ],
+          "step": 2,
+          "anchor_event": null
+        }
+      ],
+      "origins": [
+        {
+          "observer": "P",
+          "record": "r_gamma_locked"
+        },
+        {
+          "observer": "Q",
+          "record": "r_delta_locked"
+        }
+      ]
+    }
+  ],
+  "observer_states": [
+    {
+      "observer": "C",
+      "scenario": "A1_direct",
+      "accessible_records": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "provenance_paths": [
+        {
+          "record": "r1_locked",
+          "target_observer": "C",
+          "path": [
+            "A",
+            "C"
+          ],
+          "is_direct_observation": false
+        },
+        {
+          "record": "r2_locked",
+          "target_observer": "C",
+          "path": [
+            "B",
+            "C"
+          ],
+          "is_direct_observation": false
+        }
+      ]
+    },
+    {
+      "observer": "C",
+      "scenario": "A2_transitive",
+      "accessible_records": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "provenance_paths": [
+        {
+          "record": "r1_locked",
+          "target_observer": "C",
+          "path": [
+            "A",
+            "B",
+            "C"
+          ],
+          "is_direct_observation": false
+        },
+        {
+          "record": "r2_locked",
+          "target_observer": "C",
+          "path": [
+            "B",
+            "C"
+          ],
+          "is_direct_observation": false
+        }
+      ]
+    },
+    {
+      "observer": "R",
+      "scenario": "B1_alpha_beta",
+      "accessible_records": [
+        "r_alpha_locked",
+        "r_beta_locked"
+      ],
+      "provenance_paths": [
+        {
+          "record": "r_alpha_locked",
+          "target_observer": "R",
+          "path": [
+            "P",
+            "R"
+          ],
+          "is_direct_observation": false
+        },
+        {
+          "record": "r_beta_locked",
+          "target_observer": "R",
+          "path": [
+            "Q",
+            "R"
+          ],
+          "is_direct_observation": false
+        }
+      ]
+    },
+    {
+      "observer": "R",
+      "scenario": "B2_gamma_delta",
+      "accessible_records": [
+        "r_delta_locked",
+        "r_gamma_locked"
+      ],
+      "provenance_paths": [
+        {
+          "record": "r_delta_locked",
+          "target_observer": "R",
+          "path": [
+            "Q",
+            "R"
+          ],
+          "is_direct_observation": false
+        },
+        {
+          "record": "r_gamma_locked",
+          "target_observer": "R",
+          "path": [
+            "P",
+            "R"
+          ],
+          "is_direct_observation": false
+        }
+      ]
+    }
+  ],
+  "separation_witnesses": [
+    {
+      "name": "W_A",
+      "description": "Same record basis at C, different propagation paths (direct vs transitive)",
+      "scenario_a": "A1_direct",
+      "scenario_b": "A2_transitive",
+      "focus_observer": "C",
+      "basis_a": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "basis_b": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "same_record_basis": true,
+      "same_provenance_structure": false,
+      "finding": "SEPARATION CONFIRMED: same record basis, different provenance. In A1 (direct), r1_locked arrives via path (A\u2192C); in A2 (transitive), r1_locked arrives via path (A\u2192B\u2192C). Record basis is identical; provenance structure differs. Provenance is NOT recoverable from record basis alone. Supports H1 (provenance strictly richer than or different from basis)."
+    },
+    {
+      "name": "W_B",
+      "description": "Same propagation topology (P\u2192R, Q\u2192R), different record content",
+      "scenario_a": "B1_alpha_beta",
+      "scenario_b": "B2_gamma_delta",
+      "focus_observer": "R",
+      "basis_a": [
+        "r_alpha_locked",
+        "r_beta_locked"
+      ],
+      "basis_b": [
+        "r_delta_locked",
+        "r_gamma_locked"
+      ],
+      "same_record_basis": false,
+      "same_provenance_structure": false,
+      "finding": "TOPOLOGY-CONTENT SEPARATION: same graph topology (P\u2192R, Q\u2192R, steps 1,2), different record content (alpha/beta vs gamma/delta). R's basis in B1: {r_alpha_locked, r_beta_locked}; R's basis in B2: {r_gamma_locked, r_delta_locked}. Abstract propagation topology (who-tells-whom) cannot determine record basis. Supports H2 partial: propagation topology alone is strictly weaker than record basis."
+    }
+  ],
+  "colimit_results": [
+    {
+      "scenario_name": "A1_direct",
+      "accessible_records": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "event_order": [
+        [
+          "e1",
+          "e1"
+        ],
+        [
+          "e2",
+          "e2"
+        ]
+      ],
+      "am_holds": true,
+      "spurious_pairs": [],
+      "missing_pairs": []
+    },
+    {
+      "scenario_name": "A2_transitive",
+      "accessible_records": [
+        "r1_locked",
+        "r2_locked"
+      ],
+      "event_order": [
+        [
+          "e1",
+          "e1"
+        ],
+        [
+          "e2",
+          "e2"
+        ]
+      ],
+      "am_holds": true,
+      "spurious_pairs": [],
+      "missing_pairs": []
+    }
+  ],
+  "event_order_ambiguity": {
+    "name": "W_D",
+    "description": "Propagation step-order compatible with multiple event-finality completions",
+    "propagation_scenario": "A1_direct",
+    "accessible_at_observer": [
+      "r1_locked",
+      "r2_locked"
+    ],
+    "order_concurrent_nonrefl": [],
+    "order_ordered_nonrefl": [
+      [
+        "e1",
+        "e2"
+      ]
+    ],
+    "propagation_order_determines_event_order": false,
+    "finding": "EVENT-ORDER AMBIGUITY CONFIRMED: C's propagation history (r1_locked at step=1 from A, r2_locked at step=2 from B) is compatible with BOTH a concurrent structure (e1 || e2, non-reflexive order: []) and an ordered structure (e1 \u2264 e2, non-reflexive order: [('e1', 'e2')]). Propagation step-order does NOT determine the event-finality partial order. The event-finality order is determined by record CONTAINMENT in the formal D1 systems (O_j.records \u2286 U_i.records), not by propagation timing. Supports H4: provenance variation does not determine event-finality structure."
+  },
+  "t54_invariance": {
+    "name": "W_T54",
+    "description": "T54 quotient-union is provenance-blind; same basis gives same classification",
+    "basis_identical": true,
+    "t54_input_identical": true,
+    "finding": "T54 PROVENANCE-BLIND CONFIRMED: C's accessible records are identical in A1 and A2 (['r1_locked', 'r2_locked']). T54 quotient-union consumes record sets and axis profiles only \u2014 it has no slot for propagation history. Same basis \u2192 same T54 LocalEvent views \u2192 identical T54 classification. Supports H4: provenance variation does not change T54 descent outcomes."
+  },
+  "hypothesis_verdicts": [
+    {
+      "id": "H0",
+      "claim": "Provenance is equivalent to record basis: both are mutually reconstructible.",
+      "status": "refuted",
+      "evidence": "W_A refutes mutual reconstructibility: C's record basis is identical in A1 and A2, but C's provenance paths differ (direct A\u2192C vs transitive A\u2192B\u2192C). Record basis alone cannot determine provenance. Note: full provenance (including origin records) DOES determine the record basis (accessible = records reachable from origins), so provenance \u2192 basis is computable. But the converse fails: basis does not uniquely determine provenance. H0 requires both directions; the reverse direction fails.",
+      "witnesses": [
+        "W_A"
+      ]
+    },
+    {
+      "id": "H1",
+      "claim": "Provenance strictly richer: identical bases admit different propagation histories.",
+      "status": "supported",
+      "evidence": "W_A confirms: C holds {r1_locked, r2_locked} in both A1 (direct) and A2 (transitive). In A1: r1_locked via path (A\u2192C), r2_locked via (B\u2192C). In A2: r1_locked via path (A\u2192B\u2192C), r2_locked via (B\u2192C). Distinct provenance structures, identical record basis. Provenance is NOT recoverable from record basis alone \u2014 it is strictly richer in the sense of carrying additional propagation-history information. However, H4 shows this extra information does NOT change event-finality reconstruction.",
+      "witnesses": [
+        "W_A"
+      ]
+    },
+    {
+      "id": "H2",
+      "claim": "Provenance strictly weaker: propagation topology cannot determine record basis.",
+      "status": "partial",
+      "evidence": "W_B partial support: same edge topology (P\u2192R, Q\u2192R, same steps) is compatible with different record bases at R (alpha/beta vs gamma/delta). Abstract propagation topology (who-tells-whom, without record labels) is strictly weaker than record basis. However, FULL provenance (topology + origin records + transmitted records) does determine the accessible records. W_D adds: same propagation step-ordering is compatible with multiple event-finality orders (concurrent vs ordered). Verdict: topology-only provenance is weaker; full-labeled provenance is not weaker.",
+      "witnesses": [
+        "W_B",
+        "W_D"
+      ]
+    },
+    {
+      "id": "H3",
+      "claim": "Complementarity: neither representation determines the other.",
+      "status": "partial",
+      "evidence": "H1 confirms: basis does not determine provenance (same basis, different provenances). H2 partial: topology does not determine basis. But full provenance (labeled) DOES determine accessible records (hence basis). So the complementarity is asymmetric: (a) basis \u2192 provenance fails (H1 evidence); (b) full provenance \u2192 basis succeeds (not H3); (c) topology only \u2192 basis fails (H2/W_B). True complementarity (neither determines the other in any direction) is not confirmed for the full labeled provenance. Partial for topology-only provenance.",
+      "witnesses": [
+        "W_A",
+        "W_B"
+      ]
+    },
+    {
+      "id": "H4",
+      "claim": "Provenance varies but does not affect event-finality colimits, AM, or descent classification.",
+      "status": "supported",
+      "evidence": "W_A colimit comparison: C's accessible records are identical in A1 and A2. Colimits identical: True. Event-finality order and AM give same result in both scenarios. W_D: propagation step-order compatible with multiple event-finality orders \u2014 confirming that provenance does not uniquely determine event-finality structure. W_T54: T54 quotient-union is provenance-blind; same basis \u2192 identical T54 classification regardless of propagation history. In all tested witnesses, provenance variation changes neither the colimit, the reconstructed event order, AM validity, nor the T54 descent classification.",
+      "witnesses": [
+        "W_A",
+        "W_D",
+        "W_T54"
+      ]
+    }
+  ],
+  "recommendation": "optional_audit_layer",
+  "recommendation_rationale": "H4 is confirmed across all tested witnesses: provenance variation does not change event-finality colimits, AM reconstruction, or T54 descent classification. Provenance carries additional information (H1 confirmed: same basis, different propagation history), but that additional information has no reconstructive consequence for the current TaF formalism. Provenance is therefore an optional audit layer \u2014 useful for attribution, auditability, and trust assessment \u2014 but not a first-class mathematical primitive for event-finality reconstruction in the T48-T54 program. Provenance would earn first-class status if: (a) a witness is found where propagation order constrains event-finality order in a way record-containment cannot capture, or (b) provenance provides identity evidence that resolves T53-type underdetermination by confirming or distinguishing event class membership. Neither condition is met by the current witness set.",
+  "open_questions": [
+    "Can propagation order constrain event-finality order in a substrate where records can only propagate after the events that produced them have occurred? If causal ordering of propagation is enforced, does step-order imply event order?",
+    "Does provenance provide identity evidence for T53-type underdetermination? If observer A transmitted r_a to B, is that evidence that B's subsequent event using r_a in its source is a successor of A's event? This would link provenance to T54's event-identity-map condition.",
+    "Is the propagation graph itself a D1RestrictionMorphism? Propagation preserves obstruction status (pre-to-post finality crossing is admissible; record transport is post-to-post). If so, the propagation graph is a subgraph of D1Cat and provenance is a path-in-D1Cat question.",
+    "Does a provenance-aware colimit \u2014 one that weights the record union by propagation order \u2014 produce a different partial order than the T52/T54 pointwise union? The tested witnesses suggest no, but the general case is open."
+  ],
+  "best_supported": "H4 (supported), H1 (supported), H0 (refuted). H2 and H3 partially supported for topology-only provenance."
+}

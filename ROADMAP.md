@@ -86,6 +86,14 @@
   the same source and target can yield different PO1 verdicts (AC5 is the
   only path-varying condition). T34 emergent obstruction is reproducible via
   the network formalism. Composition law remains open.
+- **Completed v0.1:** implement
+  [T55B](tests/T55B-provenance-aware-reconstruction.md) as the provenance-aware
+  reconstruction separation audit: finite PropagationGraph model with origin labels,
+  propagation edges, and provenance paths. Four witnesses (W_A same-basis/diff-provenance;
+  W_B same-topology/diff-content; W_D propagation-order vs event-finality order;
+  W_T54 T54 provenance-blind). H4 confirmed: provenance variation does not change
+  colimits, AM, or T54 descent. H1 supported. H0 refuted. Recommendation: optional
+  audit layer.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.
@@ -781,8 +789,51 @@ Best-supported verdict: H2 and H3 supported; H0, H4, and H5 refuted; H1
 partially supported. Full sheaf/descent machinery can be postponed because the
 tested witness family is decidable by finite quotient-union descent data.
 
-Next theorem target: add a non-empty conflict relation to FinaliEvent
-structures. T48 intentionally used empty conflict to establish NPW
-compatibility. The next boundary is whether finite descent still yields
-canonical histories when some finality events are mutually exclusive rather
-than merely incomparable.
+Next theorem target completed by T55: add a non-empty conflict relation to
+FinaliEvent structures and test whether finite descent still yields canonical
+histories when some finality events are mutually exclusive rather than merely
+incomparable.
+
+## Phase 18: T55 Conflict-Enriched FinaliEvent Descent
+
+T55 answers the Phase 17 target. It extends FinaliEvent descent from empty
+conflict to explicit non-empty conflict.
+
+**Completed v0.1:** implement
+[T55](tests/T55-conflict-finalievent-descent.md) as Conflict-Enriched
+FinaliEvent Descent. The executable `ConflictDescentDatum` and conflict-aware
+quotient-union algorithm preserve the seven T54 conditions and add four finite
+conflict conditions:
+
+```text
+conflict is irreflexive and symmetric
+conflict is not asserted between comparable events
+conflict is upward inherited along the reconstructed order
+explicit conflict and explicit compatibility do not disagree
+```
+
+T55 classifies:
+
+```text
+T48_empty_conflict_special_case = canonical
+canonical_conflict_descent = canonical
+same_order_no_conflict_control = canonical
+hidden_conflict_repaired_by_colimit = canonical
+explicit_conflict_disagreement = conflict_invalid
+upward_inheritance_failure = conflict_invalid
+self_conflict_after_identity_collapse = conflict_invalid
+```
+
+Best-supported verdict: H2 supported; H0 and H3 refuted. T54 generalizes to
+non-empty conflict, but only after adding finite conflict checks C8-C11.
+Conflict is independent data: it is not reconstructed from record order or
+Axis Monotonicity alone.
+
+Full NPW event-structure machinery can still be postponed for this finite
+witness family. The current machinery needs only direct checks over the
+quotient-union completion.
+
+Next balancing target: provenance-aware reconstruction. T55 shows that conflict
+is load-bearing; the next question is whether propagation history is also
+load-bearing, or whether record bases plus conflict already capture the
+reconstructive data needed by finite observer-relative descent.

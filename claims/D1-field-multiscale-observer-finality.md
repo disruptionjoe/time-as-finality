@@ -122,6 +122,12 @@ T54 turns that boundary into a finite descent theorem:
 - the quotient-union order must be a valid partial order;
 - Axis Monotonicity must hold for axis-based temporal reconstruction.
 
+T55 adds conflict relations to the descent data:
+
+- mutually exclusive finality events are not the same as incomparable events;
+- conflict can descend canonically when finite conflict conditions hold;
+- conflict is independent data, not reconstructible from order or AM alone.
+
 ## How It Could Fail
 
 - A better aggregate rule may recover all relevant multiscale information.
@@ -130,6 +136,8 @@ T54 turns that boundary into a finite descent theorem:
 - Gluing obstruction may belong only to T13/T21 contextuality, not to D1
   generally.
 - The field object may be too flexible to constrain predictions.
+- Conflict or provenance data may require a different object than the current
+  quotient-union descent datum.
 
 ## T24 Result
 
@@ -217,6 +225,17 @@ The result strengthens D1-Field as the finite local-to-global object needed for
 cross-observer finality. It does not require full sheaf or categorical descent
 machinery for the tested finite witness family.
 
+## T55 Result
+
+[T55](../tests/T55-conflict-finalievent-descent.md) extends the finite descent
+object with an explicit conflict relation. The result supports D1-Field's
+local-to-global posture because conflict is extra cross-observer structure:
+two structures can share the same record order and AM-valid axis profiles while
+differing in conflict.
+
+The extension remains finite. Full event-structure, sheaf, or categorical
+machinery can still be postponed for the tested witness family.
+
 ## Tests
 
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
@@ -224,6 +243,7 @@ machinery for the tested finite witness family.
 - [T26: D1 Restriction System](../tests/T26-d1-restriction-system.md)
 - [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
 - [T54: Finite Finality Descent Theorem](../tests/T54-finite-finality-descent-theorem.md)
+- [T55: Conflict-Enriched FinaliEvent Descent](../tests/T55-conflict-finalievent-descent.md)
 
 ## Contribution Needed
 

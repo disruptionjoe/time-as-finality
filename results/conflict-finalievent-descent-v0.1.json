@@ -1,0 +1,838 @@
+{
+  "theorem_statement": "Conflict-Enriched FinaliEvent Descent Theorem (finite v0.1): given finite observer-local FinaliEvent data with T54 identity, overlap, record, profile, partial-order, and AM conditions, plus a merged conflict relation that is irreflexive, symmetric, comparable-conflict free, and upward inherited along the reconstructed record order, the canonical quotient-union construction produces a unique conflict-valid global FinaliEvent structure. If conflict validity fails, the failure is classified rather than silently repaired.",
+  "condition_basis": [
+    "C1 event identity maps are total and single-valued",
+    "C2 cross-observer identified events have overlap witnesses",
+    "C3 source records merge without explicit contradiction",
+    "C4 target records merge without explicit contradiction",
+    "C5 identified events agree on finality-axis profiles",
+    "C6 the quotient-union dependency order is a valid partial order",
+    "C7 Axis Monotonicity holds on the reconstructed global structure",
+    "C8 conflict is irreflexive and symmetric",
+    "C9 conflict is not asserted between comparable events",
+    "C10 conflict is upward inherited along the reconstructed order",
+    "C11 explicit conflict and explicit compatibility do not disagree"
+  ],
+  "completions": [
+    {
+      "datum_name": "T48_empty_conflict_special_case",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r_A_raw"
+          ],
+          "target_records": [
+            "r_A_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r_B_raw"
+          ],
+          "target_records": [
+            "r_B_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 3
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r_A_locked",
+            "r_B_locked",
+            "r_composite_raw"
+          ],
+          "target_records": [
+            "r_composite_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 4
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e2",
+            "e3"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": true,
+        "failures": []
+      },
+      "theorem_applies": true,
+      "evidence": "Finite descent conditions, AM, and conflict validity all hold."
+    },
+    {
+      "datum_name": "canonical_conflict_descent",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 0
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [
+          [
+            "e1",
+            "e2"
+          ],
+          [
+            "e2",
+            "e3"
+          ]
+        ],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": true,
+        "failures": []
+      },
+      "theorem_applies": true,
+      "evidence": "Finite descent conditions, AM, and conflict validity all hold."
+    },
+    {
+      "datum_name": "same_order_no_conflict_control",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 0
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": true,
+        "failures": []
+      },
+      "theorem_applies": true,
+      "evidence": "Finite descent conditions, AM, and conflict validity all hold."
+    },
+    {
+      "datum_name": "hidden_conflict_repaired_by_colimit",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 0
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ],
+            [
+              "B",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ],
+            [
+              "B",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [
+          [
+            "e1",
+            "e2"
+          ],
+          [
+            "e2",
+            "e3"
+          ]
+        ],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": true,
+        "failures": []
+      },
+      "theorem_applies": true,
+      "evidence": "Finite descent conditions, AM, and conflict validity all hold."
+    },
+    {
+      "datum_name": "explicit_conflict_disagreement",
+      "classification": "conflict_invalid",
+      "condition_failures": [
+        "explicit_conflict_disagreement: e1#e2"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 0
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ],
+            [
+              "B",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ],
+            [
+              "B",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [
+          [
+            "e1",
+            "e2"
+          ],
+          [
+            "e2",
+            "e3"
+          ]
+        ],
+        "explicit_compatibility_pairs": [
+          [
+            "e1",
+            "e2"
+          ]
+        ],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": false,
+        "failures": [
+          "explicit_conflict_disagreement: e1#e2"
+        ]
+      },
+      "theorem_applies": false,
+      "evidence": "The quotient-union order exists, but the conflict relation is not event-structure valid."
+    },
+    {
+      "datum_name": "upward_inheritance_failure",
+      "classification": "conflict_invalid",
+      "condition_failures": [
+        "missing_inherited_conflict: e1<=e3 requires e2#e3"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 0
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [
+          [
+            "e1",
+            "e2"
+          ]
+        ],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": true,
+        "symmetric": true,
+        "upward_inherited": false,
+        "comparable_conflict_free": true,
+        "valid": false,
+        "failures": [
+          "missing_inherited_conflict: e1<=e3 requires e2#e3"
+        ]
+      },
+      "theorem_applies": false,
+      "evidence": "The quotient-union order exists, but the conflict relation is not event-structure valid."
+    },
+    {
+      "datum_name": "self_conflict_after_identity_collapse",
+      "classification": "conflict_invalid",
+      "condition_failures": [
+        "self_conflict: e1"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "raw_a",
+            "raw_b"
+          ],
+          "target_records": [
+            "r_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "a"
+            ],
+            [
+              "A",
+              "b"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "conflict_check": {
+        "conflict_pairs": [
+          [
+            "e1",
+            "e1"
+          ]
+        ],
+        "explicit_compatibility_pairs": [],
+        "irreflexive": false,
+        "symmetric": true,
+        "upward_inherited": true,
+        "comparable_conflict_free": true,
+        "valid": false,
+        "failures": [
+          "self_conflict: e1"
+        ]
+      },
+      "theorem_applies": false,
+      "evidence": "The quotient-union order exists, but the conflict relation is not event-structure valid."
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H0",
+      "claim": "T54 descent only works for empty-conflict FinaliEvent structures.",
+      "status": "refuted",
+      "evidence": "canonical_conflict_descent theorem_applies=True"
+    },
+    {
+      "id": "H1",
+      "claim": "Conflict can be added as an independent finite relation without changing T54.",
+      "status": "partially_supported",
+      "evidence": "Conflict is finite and independent, but T55 adds C8-C11 beyond T54."
+    },
+    {
+      "id": "H2",
+      "claim": "Conflict introduces new descent conditions beyond the T54 basis.",
+      "status": "supported",
+      "evidence": "upward_inheritance_failure is AM-valid and partial-order valid but conflict_invalid."
+    },
+    {
+      "id": "H3",
+      "claim": "Conflict forces full event-structure machinery beyond finite quotient-union checks.",
+      "status": "refuted",
+      "evidence": "The tested witness family is decided by finite conflict checks over the quotient-union."
+    },
+    {
+      "id": "H4",
+      "claim": "FinaliEvent order and conflict cannot be reconstructed from the same data.",
+      "status": "supported",
+      "evidence": "canonical_conflict_descent and same_order_no_conflict_control have the same record order and AM-valid axis profiles but different conflict relations."
+    }
+  ],
+  "event_structure_verdict": "Full NPW event-structure machinery can still be postponed for the tested finite witness family. T55 needs an NPW-shaped conflict relation, but irreflexivity, comparable-conflict freedom, upward inheritance, and explicit disagreement checks are finite conflict checks decidable directly on the quotient-union completion.",
+  "best_supported": "H2 supported and H0/H3 refuted: T54 generalizes to non-empty conflict, but only after adding explicit finite conflict-descent conditions. Conflict is not reducible to order or AM metadata in the tested cases."
+}

@@ -844,6 +844,50 @@ T54 classifies T51 and T52 as canonical, and T53 as underdetermined. Full
 sheaf/descent machinery is postponed: the tested witness family is decidable
 by finite quotient-union descent data.
 
+## Conflict-Enriched FinaliEvent Descent
+
+T55 extends T54 from empty-conflict FinaliEvent structures to explicit
+non-empty conflict. The conflict-enriched object is:
+
+```text
+ConflictFinaliEventStructure = (
+  events,
+  record-dependency order,
+  conflict relation,
+  axis profiles,
+  source and target records
+)
+```
+
+Conflict is not incomparability. Two events may be incomparable without being
+mutually exclusive. T55 treats conflict as an extra finite relation that must
+descend consistently with the reconstructed record order.
+
+The T55 quotient-union completion keeps the seven T54 conditions and adds:
+
+```text
+C8 conflict is irreflexive and symmetric
+C9 conflict is not asserted between comparable events
+C10 conflict is upward inherited along the reconstructed order
+C11 explicit conflict and explicit compatibility do not disagree
+```
+
+The new failure class is:
+
+```text
+conflict_invalid:
+  the quotient-union order exists and AM may hold, but the conflict relation
+  is not valid for an event-structure interpretation
+```
+
+T55 shows that non-empty conflict can descend canonically in finite witnesses,
+but not for free. Conflict is independent data: two structures can share the
+same record order and AM-valid axis profiles while differing in conflict.
+
+Full Nielsen-Plotkin-Winskel event-structure machinery can still be postponed
+for the tested witness family. The current result requires only finite checks
+over the quotient-union completion.
+
 ## Failure Conditions
 
 The formalization fails its intended job if:

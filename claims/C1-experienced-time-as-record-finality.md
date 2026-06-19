@@ -50,6 +50,11 @@ observer-relative temporal reconstruction requires total event identity maps,
 overlap witnesses, source/target record compatibility, axis-profile agreement,
 partial-order validity, and Axis Monotonicity.
 
+T55 extends that finite result to conflict-enriched FinaliEvents. Non-empty
+conflict can descend canonically, but only when added conflict conditions hold:
+irreflexivity, no conflict between comparable events, upward inheritance, and
+no explicit conflict/compatibility disagreement.
+
 ## How It Could Fail
 
 - Temporal order cannot be reconstructed without primitive time.
@@ -57,6 +62,8 @@ partial-order validity, and Axis Monotonicity.
 - The claim cannot distinguish physical finality from memory, belief, or local access.
 - A physics-grounded model makes stabilization order equivalent to ordinary
   causal reachability with no additional explanatory work.
+- Conflict or provenance data may turn out to be necessary in ways not captured
+  by the current record-basis reconstruction.
 
 ## Tests
 
@@ -68,6 +75,7 @@ partial-order validity, and Axis Monotonicity.
 - [T51: Multi-Observer Apparent Finality Colimit](../tests/T51-multi-observer-apparent-finality-colimit.md)
 - [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
 - [T54: Finite Finality Descent Theorem](../tests/T54-finite-finality-descent-theorem.md)
+- [T55: Conflict-Enriched FinaliEvent Descent](../tests/T55-conflict-finalievent-descent.md)
 - [First-Person Finality and Complexity Separation](../open-problems/first-person-finality-complexity-separation.md)
 - [Observer Closure Theorem](../open-problems/observer-closure-theorem.md)
 
@@ -113,3 +121,17 @@ This still keeps C1 weakened. T54 does not prove phenomenal temporal
 experience, physical time, or a unique history in arbitrary systems. It proves
 a finite conditional theorem: when descent conditions and AM hold, canonical
 observer-relative temporal reconstruction is available.
+
+## T55 Result
+
+[T55](../tests/T55-conflict-finalievent-descent.md) extends the descent theorem
+to non-empty conflict relations. It preserves T48-T54 as the empty-conflict
+special case, constructs canonical non-empty conflict descent, and shows that a
+hidden conflict relation can be repaired by observer colimit.
+
+It also shows that conflict is independent data: two structures can share the
+same record order and AM-valid axis profiles while differing in conflict. This
+keeps C1 weakened but sharper. The project can now reconstruct finite
+observer-relative event structures with mutually exclusive events, provided the
+added conflict conditions hold. It still does not prove physical time,
+phenomenal time, or arbitrary event-structure descent.

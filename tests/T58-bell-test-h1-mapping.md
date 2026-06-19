@@ -221,3 +221,67 @@ Two options, in order of promise:
 **Path B:** Add the two diagonal patches as covers of the full measurement space (thickening the cover to K4). This may generate non-trivial H¹ but risks trivializing the obstruction for other reasons.
 
 The next step is Path A: define F(U) as the no-signalling polytope over each context and compute dim(C¹) and the coboundary check under R (or rational) coefficients.
+
+
+---
+
+## Path A Results -- Real-Valued H^1 Calculation
+
+*Executed 2026-06-19 -- implementation in `models/t58_bell_h1_real_valued.py`*
+
+### Presheaf definition
+
+F(U) for each context patch U in {A0B0, A0B1, A1B0, A1B1}: the no-signalling polytope of joint distributions p(a,b|U) over {(0,0),(0,1),(1,0),(1,1)}, satisfying sum=1 and all entries >= 0. Within a single context patch no additional signalling constraint applies; the no-signalling condition is the cross-context marginal agreement requirement, which defines the restriction maps.
+
+Restriction maps: rho_{U, UnV}: F(U) -> F(UnV) is marginal projection onto the shared setting's outcomes. Functoriality holds (marginal projection composes correctly), so presheaf axioms are satisfied.
+
+### Cech complex
+
+- C^0: product of four no-signalling polytopes. Stalk dimension 3 (real) per patch = 12 total free parameters.
+- C^1: product of four marginal simplices over the non-empty single-setting overlaps {A0, B0, A1, B1}. Stalk dimension 1 (real) per overlap = 4 total.
+- C^2 = 0 (all triple overlaps empty, confirmed in Step 1).
+
+### Quantum (Tsirelson) 0-cochain
+
+The four context distributions use uniform marginals (P(a=0)=P(b=0)=0.5) with correlators:
+- C(A0,B0) = C(A0,B1) = C(A1,B0) = +1/sqrt(2) approx 0.7071
+- C(A1,B1) = -1/sqrt(2) approx -0.7071
+
+Concrete distributions: p(0,0|AiBj) = p(1,1|AiBj) = (1+C)/4, p(0,1|AiBj) = p(1,0|AiBj) = (1-C)/4.
+
+All four overlaps verified: marginals agree exactly (max difference 0.00e+00 on all four overlaps). delta^0(s) = 0 -- the quantum 0-cochain is a valid global section of the no-signalling presheaf on pairwise overlaps.
+
+### H^1 verdict (two-valued)
+
+**Over real vector spaces (sheaf of distributions as R-modules):**
+H^1 = 0. The presheaf is flasque-like for continuous coefficients: any 1-cochain can be realized as delta^0(s) by choosing s with appropriate marginal disagreements. Every cocycle is a coboundary. No nontrivial H^1 class exists.
+
+**Over the sheaf of sets (Abramsky-Brandenburger 2011 framework):**
+H^1 != 0. The correct presheaf is E(U) = the set of deterministic outcome functions on context U -- not the distribution polytope. A global section of E corresponds to a joint deterministic assignment over all four settings, or equivalently (by linearity) a global joint distribution over {0,1}^4. Fine's theorem: such a distribution exists iff |CHSH| <= 2. The quantum distributions give CHSH = 2*sqrt(2) > 2, so no global section exists. The obstruction is a nontrivial class in H^1(X, E).
+
+### Fine's theorem computation
+
+All 16 deterministic hidden-variable assignments (a0,a1,b0,b1) give CHSH bracket in {-2, +2}. Any convex mixture satisfies |CHSH| <= 2. The quantum CHSH value is 2.828427 = 2*sqrt(2), which exceeds the classical bound 2 and equals the Tsirelson bound 2.828427. No global joint distribution over all four settings can reproduce the quantum marginals.
+
+### Tsirelson bound
+
+The Tsirelson bound 2*sqrt(2) does NOT emerge from the no-signalling presheaf structure alone. The no-signalling polytope permits CHSH up to 4 (PR-box). Recovering 2*sqrt(2) requires characterizing the quantum body Q subset NS, which requires Hilbert space structure -- this cannot be done in finality-presheaf terms alone without importing quantum mechanics, violating T58's constraint.
+
+The classical bound 2 DOES emerge from the presheaf: it is the maximum CHSH achievable by any global section (Fine's theorem). The contextual gap (2 < CHSH <= 4) is the region where no global section exists.
+
+### Formal target conditions
+
+| Condition | Status | Result |
+|---|---|---|
+| 1. Presheaf axioms | SATISFIED | Marginal projection is functorial. |
+| 2. CHSH constraint is a 1-cocycle | SATISFIED (vacuously) | C^2=0, so every 1-cochain is a cocycle. |
+| 3. 1-cocycle is not a coboundary, H^1 != 0 | PARTIAL | H^1=0 over R-modules; H^1 != 0 in sheaf-of-sets. |
+| 4. Tsirelson bound emerges | PARTIAL | Classical bound 2 emerges; Tsirelson 2*sqrt(2) does not without QM structure. |
+
+### Path A overall verdict
+
+Path A achieves conditions 1 and 2, and partially achieves 3 and 4. The correct mathematical home for the CHSH contextuality obstruction is the Abramsky-Brandenburger sheaf-of-sets H^1, not the vector-space H^1 of the distribution presheaf. This is a genuine structural finding: the no-signalling presheaf over real coefficients is too flexible (flasque) to carry a nontrivial H^1. The obstruction lives in a categorical cohomology theory (cohomology of the sheaf of sets E), not in the Cech H^1 of a sheaf of abelian groups.
+
+The classical bound 2 emerges cleanly as the global-section threshold. Recovering the Tsirelson bound requires additional quantum structure outside the presheaf definition. The T58 formal target condition 4 should be revised to the weaker claim: the presheaf gives the classical/nonclassical boundary (CHSH > 2) but not the quantum/post-quantum boundary (CHSH > 2*sqrt(2)).
+
+**Claim-status recommendation for T58 conditions 1-4:** Conditions 1 and 2 are fully satisfied. Condition 3 holds in the sheaf-of-sets (Abramsky-Brandenburger) formulation. Condition 4 holds for the classical bound only. T58 should update its formal target to specify the sheaf-of-sets cohomology theory and weaken condition 4 to the classical/nonclassical split.

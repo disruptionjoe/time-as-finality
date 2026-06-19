@@ -22,6 +22,7 @@ Do not use persona lenses when:
 | lens | definition | best use | misuse risk |
 |---|---|---|---|
 | Avalanche / Snowball consensus | Finality as confidence accumulation through repeated bounded local sampling. | Model probabilistic finality, metastability, and reversal risk. | Treating physics as literally running a blockchain or consensus protocol. |
+| Hashgraph / gossip-about-gossip provenance | Event-DAG finality as signed communication history plus knowledge-of-knowledge reconstruction. | Model provenance, virtual voting, causal witness trails, and observer access to who knew what when. | Treating provenance DAGs as a hidden universal ledger or assuming gossip finality transfers directly to physics. |
 | DAG / partial-order causality | Causal structure as partial order rather than universal chain. | Preserve relativity-facing local finality and later reconciliation. | Smuggling a total order back in through "global ledger" language. |
 | BFT / CAP impossibility | Every finality claim has hidden timing, fault, partition, and consistency assumptions. | Force explicit assumptions and failure modes for consensus analogies. | Treating distributed-systems impossibility results as physics theorems. |
 | Quantum measurement / decoherence | Under-finalized quantum states become classical records through measurement context, decoherence, and redundancy. | Separate quantum reality, classical records, and measurement-problem guardrails. | Renaming collapse or implying decoherence solves everything. |
@@ -111,6 +112,7 @@ These ten lenses came from the prior Time-as-Finality-to-GU crosswalk in `../gu-
 | prior pass | lens definition for Time as Finality |
 |---|---|
 | Avalanche / Snowball metastable consensus | Models finality through repeated local sampling and probabilistic confidence thresholds. |
+| Hashgraph / gossip-about-gossip provenance | Models finality through signed event DAGs, gossip-about-gossip, virtual-voting-style provenance, and observer-local reconstruction of who knew what when. |
 | DAG / partial-order causality | Models record order as a partial order with local reconciliation, not a universal chain. |
 | Complexity emergence | Treats stable records as emergent attractors or universality-class phenomena. |
 | BFT / CAP / FLP consensus impossibility | Forces explicit timing, consistency, partition, and fault assumptions. |

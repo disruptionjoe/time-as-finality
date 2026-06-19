@@ -743,3 +743,46 @@ supported as finite descent data, not full sheaf machinery.
 Next theorem target: characterize necessary and sufficient finite conditions
 for a unique AM-valid global completion from observer-local FinaliEvent
 structures and overlap maps.
+
+## Phase 17: T54 Finite Finality Descent Theorem
+
+T54 answers the Phase 16 theorem target. It asks when observer-local
+FinaliEvent structures determine one unique, canonical, AM-valid global
+event-finality structure.
+
+**Completed v0.1:** implement
+[T54](tests/T54-finite-finality-descent-theorem.md) as the Finite Finality
+Descent Theorem. The executable `ObserverDescentDatum` and quotient-union
+algorithm use seven finite descent conditions:
+
+```text
+event identity maps
+overlap witnesses
+source-record compatibility
+target-record compatibility
+axis-profile agreement
+partial-order validity
+Axis Monotonicity
+```
+
+T54 classifies:
+
+```text
+T51_phantom_repair = canonical
+T52_symmetric_reconstruction = canonical
+T53_ambiguous_identity = underdetermined
+```
+
+It also supplies counterexamples for missing event identity, insufficient
+overlap, source-record conflict, target-record conflict, axis-profile conflict,
+hidden-record ambiguity, nondefinable maps, and AM violation.
+
+Best-supported verdict: H2 and H3 supported; H0, H4, and H5 refuted; H1
+partially supported. Full sheaf/descent machinery can be postponed because the
+tested witness family is decidable by finite quotient-union descent data.
+
+Next theorem target: add a non-empty conflict relation to FinaliEvent
+structures. T48 intentionally used empty conflict to establish NPW
+compatibility. The next boundary is whether finite descent still yields
+canonical histories when some finality events are mutually exclusive rather
+than merely incomparable.

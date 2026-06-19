@@ -279,3 +279,17 @@ contaminate earned mathematics.
 
 Focuses on executable tests, falsification, witness construction, and empirical
 boundaries.
+
+## Consensus And Provenance Extensions
+
+### 55. Hashgraph / Gossip-About-Gossip Provenance Researcher
+
+Expert in hashgraph-like event DAGs, gossip-about-gossip, signed event histories,
+virtual voting, causal provenance, and "who knew what when" reconstruction.
+
+### 56. Avalanche-Class Consensus Researcher
+
+Expert in Avalanche, Snowflake, and Snowball-family protocols, repeated
+subsampled voting, metastability, probabilistic finality, confidence
+accumulation, and consensus designs outside quorum, Paxos, Raft, and classical
+BFT assumptions.

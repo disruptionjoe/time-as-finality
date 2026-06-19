@@ -106,8 +106,14 @@ Use the distributed/record-access subset for R1, A1, T42-T46, consensus, and
 propagation questions:
 
 ```text
-9, 10, 12, 13, 22, 23, 24, 34, 35, 38, 39, 50, 54
+9, 10, 12, 13, 22, 23, 24, 34, 35, 38, 39, 50, 54, 55, 56
 ```
+
+Use persona 55 when the question needs hashgraph-like gossip-about-gossip,
+event-DAG provenance, signed histories, virtual voting, or "who knew what when"
+analysis. Use persona 56 when the question needs Avalanche-class, Snowflake,
+Snowball, metastability, repeated-sampling, probabilistic-finality, or
+non-classical consensus analysis.
 
 ## Output Discipline
 

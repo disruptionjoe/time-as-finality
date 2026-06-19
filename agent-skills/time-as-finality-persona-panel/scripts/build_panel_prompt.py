@@ -16,11 +16,12 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 SKILL_DIR = SCRIPT_DIR.parent
 REPO_ROOT = SKILL_DIR.parents[1]
 PERSONA_REF = SKILL_DIR / "references" / "personas.md"
+EXPECTED_PERSONA_COUNT = 56
 
 FOCUSED_DEFAULT = (1, 2, 4, 7, 9, 10, 22, 23, 25, 50, 51, 52, 54)
 HOSTILE_DEFAULT = (25, 27, 42, 50, 52, 54)
 GEOMETRY_GU_DEFAULT = (1, 3, 4, 5, 6, 45, 46, 47, 48, 49, 50, 52)
-DISTRIBUTED_DEFAULT = (9, 10, 12, 13, 22, 23, 24, 34, 35, 38, 39, 50, 54)
+DISTRIBUTED_DEFAULT = (9, 10, 12, 13, 22, 23, 24, 34, 35, 38, 39, 50, 54, 55, 56)
 
 
 @dataclass(frozen=True)
@@ -47,8 +48,8 @@ def parse_personas(reference_path: Path = PERSONA_REF) -> dict[int, Persona]:
             name=match.group("name").strip(),
             description=description,
         )
-    if len(personas) != 54:
-        raise ValueError(f"expected 54 personas, found {len(personas)}")
+    if len(personas) != EXPECTED_PERSONA_COUNT:
+        raise ValueError(f"expected {EXPECTED_PERSONA_COUNT} personas, found {len(personas)}")
     return personas
 
 
@@ -175,7 +176,7 @@ def build_parser() -> argparse.ArgumentParser:
         choices=("audit", "goal", "steelman", "hostile", "synthesis"),
         help="Panel mode to state in the generated prompt.",
     )
-    parser.add_argument("--all", action="store_true", help="Use all 54 personas.")
+    parser.add_argument("--all", action="store_true", help=f"Use all {EXPECTED_PERSONA_COUNT} personas.")
     parser.add_argument("--focused", action="store_true", help="Use the default focused subset.")
     parser.add_argument("--hostile", action="store_true", help="Use the hostile overclaim subset.")
     parser.add_argument("--geometry-gu", action="store_true", help="Use the geometry/GU subset.")

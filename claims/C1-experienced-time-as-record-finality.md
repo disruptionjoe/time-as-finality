@@ -45,6 +45,11 @@ T53 adds an important boundary. A valid colimit is not automatically a unique
 canonical event-finality reconstruction. Observer-relative temporal order needs
 descent data when multiple observer views are merged.
 
+T54 supplies that finite descent data basis. It shows that canonical
+observer-relative temporal reconstruction requires total event identity maps,
+overlap witnesses, source/target record compatibility, axis-profile agreement,
+partial-order validity, and Axis Monotonicity.
+
 ## How It Could Fail
 
 - Temporal order cannot be reconstructed without primitive time.
@@ -62,6 +67,7 @@ descent data when multiple observer views are merged.
 - [T50: Axis Monotonicity Theorem](../tests/T50-axis-monotonicity-theorem.md)
 - [T51: Multi-Observer Apparent Finality Colimit](../tests/T51-multi-observer-apparent-finality-colimit.md)
 - [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
+- [T54: Finite Finality Descent Theorem](../tests/T54-finite-finality-descent-theorem.md)
 - [First-Person Finality and Complexity Separation](../open-problems/first-person-finality-complexity-separation.md)
 - [Observer Closure Theorem](../open-problems/observer-closure-theorem.md)
 
@@ -94,3 +100,16 @@ validity, and while some incompleteness can be repaired by hidden records.
 This keeps C1 weakened rather than upgraded. The project can reconstruct
 observer-relative partial orders in finite witnesses, but it must not claim
 that merged observer views automatically select one canonical history.
+
+## T54 Result
+
+[T54](../tests/T54-finite-finality-descent-theorem.md) classifies T51 and T52
+as canonical and T53 as underdetermined using a finite quotient-union descent
+algorithm. The result strengthens the formal reconstruction program by naming
+the conditions under which local observer views determine a global
+event-finality structure.
+
+This still keeps C1 weakened. T54 does not prove phenomenal temporal
+experience, physical time, or a unique history in arbitrary systems. It proves
+a finite conditional theorem: when descent conditions and AM hold, canonical
+observer-relative temporal reconstruction is available.

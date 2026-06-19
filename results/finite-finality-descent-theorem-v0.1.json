@@ -1,0 +1,712 @@
+{
+  "theorem_statement": "Finite Finality Descent Theorem (v0.1): given finite observer-local FinaliEvent data with total single-valued event identity maps, overlap witnesses for cross-observer identifications, compatible source and target records, and agreeing finality-axis profiles, the canonical quotient-union construction produces a unique global FinaliEvent structure. If its dependency relation is a partial order and AM holds, the global temporal partial order is reconstructible from finality-axis magnitudes. If any descent condition fails, the failure is classified as nondefinable, underdetermined, conflicting, or AM-invalid.",
+  "condition_basis": [
+    "C1 event identity maps are total and single-valued",
+    "C2 cross-observer identified events have overlap witnesses",
+    "C3 source records merge without explicit contradiction",
+    "C4 target records merge without explicit contradiction",
+    "C5 identified events agree on finality-axis profiles",
+    "C6 the quotient-union dependency order is a valid partial order",
+    "C7 Axis Monotonicity holds on the reconstructed global structure"
+  ],
+  "sheaf_verdict": "Full sheaf/descent machinery can be postponed. T54 requires finite descent data, but the tested conditions are decidable by a quotient-union algorithm over finite observer views.",
+  "completions": [
+    {
+      "datum_name": "T51_phantom_repair",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r_A_raw"
+          ],
+          "target_records": [
+            "r_A_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r_B_raw"
+          ],
+          "target_records": [
+            "r_B_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 3
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ],
+            [
+              "B",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r_A_locked",
+            "r_B_locked",
+            "r_composite_raw"
+          ],
+          "target_records": [
+            "r_composite_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 4
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ],
+            [
+              "B",
+              "e3"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e2",
+            "e3"
+          ],
+          [
+            "e3",
+            "e3"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "theorem_applies": true,
+      "evidence": "All finite descent conditions hold and AM reconstructs the global record order."
+    },
+    {
+      "datum_name": "T52_symmetric_reconstruction",
+      "classification": "canonical",
+      "condition_failures": [],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "r1_raw"
+          ],
+          "target_records": [
+            "r1_locked"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r2_raw"
+          ],
+          "target_records": [
+            "r2_locked"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 3
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ],
+            [
+              "B",
+              "e2"
+            ]
+          ]
+        },
+        {
+          "name": "e3",
+          "source_records": [
+            "r1_locked",
+            "r3_raw"
+          ],
+          "target_records": [
+            "r3_locked"
+          ],
+          "profile": {
+            "causal": 4,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e3"
+            ],
+            [
+              "B",
+              "e3"
+            ]
+          ]
+        },
+        {
+          "name": "e4",
+          "source_records": [
+            "r1_locked",
+            "r2_locked",
+            "r4_raw"
+          ],
+          "target_records": [
+            "r4_locked"
+          ],
+          "profile": {
+            "causal": 3,
+            "info": 4
+          },
+          "local_events": [
+            [
+              "A",
+              "e4"
+            ],
+            [
+              "B",
+              "e4"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e3"
+          ],
+          [
+            "e1",
+            "e4"
+          ],
+          [
+            "e2",
+            "e2"
+          ],
+          [
+            "e2",
+            "e4"
+          ],
+          [
+            "e3",
+            "e3"
+          ],
+          [
+            "e4",
+            "e4"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "theorem_applies": true,
+      "evidence": "All finite descent conditions hold and AM reconstructs the global record order."
+    },
+    {
+      "datum_name": "T53_ambiguous_identity",
+      "classification": "underdetermined",
+      "condition_failures": [
+        "missing_event_identity: A.a1",
+        "missing_event_identity: A.a2",
+        "missing_event_identity: B.b1",
+        "missing_event_identity: B.b2"
+      ],
+      "global_events": [],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Local event identities are not fixed, so the quotient is not canonical."
+    },
+    {
+      "datum_name": "CE_missing_event_identity",
+      "classification": "underdetermined",
+      "condition_failures": [
+        "missing_event_identity: A.e1"
+      ],
+      "global_events": [],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Local event identities are not fixed, so the quotient is not canonical."
+    },
+    {
+      "datum_name": "CE_insufficient_overlap",
+      "classification": "underdetermined",
+      "condition_failures": [
+        "insufficient_overlap: e1"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "a_raw",
+            "b_raw"
+          ],
+          "target_records": [
+            "r1"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": true,
+        "spurious_count": 0,
+        "missing_count": 0,
+        "violations": []
+      },
+      "theorem_applies": false,
+      "evidence": "The quotient-union is compatible but not canonically justified by overlap data."
+    },
+    {
+      "datum_name": "CE_source_record_conflict",
+      "classification": "conflicting",
+      "condition_failures": [
+        "source_record_conflict: e1: ('r_x',)"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "not:r_x",
+            "r_x"
+          ],
+          "target_records": [
+            "r1"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        }
+      ],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Observer-local data disagree inside at least one identified event class."
+    },
+    {
+      "datum_name": "CE_target_record_conflict",
+      "classification": "conflicting",
+      "condition_failures": [
+        "target_record_conflict: e1: ('r_x',)"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "raw"
+          ],
+          "target_records": [
+            "not:r_x",
+            "r_x"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        }
+      ],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Observer-local data disagree inside at least one identified event class."
+    },
+    {
+      "datum_name": "CE_axis_profile_conflict",
+      "classification": "conflicting",
+      "condition_failures": [
+        "axis_profile_conflict: e1"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "raw"
+          ],
+          "target_records": [
+            "r1"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ],
+            [
+              "B",
+              "e1"
+            ]
+          ]
+        }
+      ],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Observer-local data disagree inside at least one identified event class."
+    },
+    {
+      "datum_name": "CE_hidden_record_ambiguity",
+      "classification": "underdetermined",
+      "condition_failures": [
+        "hidden_record_ambiguity: e2"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "raw_1"
+          ],
+          "target_records": [
+            "r_hidden"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 1
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "raw_2"
+          ],
+          "target_records": [
+            "r2"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e2",
+            "e2"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": false,
+        "spurious_count": 1,
+        "missing_count": 0,
+        "violations": [
+          {
+            "predecessor": "e1",
+            "successor": "e2",
+            "in_record_order": false,
+            "in_axis_order": true,
+            "kind": "spurious_axis_order"
+          }
+        ]
+      },
+      "theorem_applies": false,
+      "evidence": "Hidden records could alter the completion; repair authority is extra data."
+    },
+    {
+      "datum_name": "CE_nondefinable_map",
+      "classification": "nondefinable",
+      "condition_failures": [
+        "nondefinable_map: missing identity map for A.e1"
+      ],
+      "global_events": [],
+      "partial_order": null,
+      "axis_monotonicity": null,
+      "theorem_applies": false,
+      "evidence": "Record-access/event maps are not total and definable."
+    },
+    {
+      "datum_name": "CE_am_violation",
+      "classification": "am_invalid",
+      "condition_failures": [
+        "axis_monotonicity_failure"
+      ],
+      "global_events": [
+        {
+          "name": "e1",
+          "source_records": [
+            "raw_1"
+          ],
+          "target_records": [
+            "r1"
+          ],
+          "profile": {
+            "causal": 2,
+            "info": 2
+          },
+          "local_events": [
+            [
+              "A",
+              "e1"
+            ]
+          ]
+        },
+        {
+          "name": "e2",
+          "source_records": [
+            "r1"
+          ],
+          "target_records": [
+            "r2"
+          ],
+          "profile": {
+            "causal": 1,
+            "info": 4
+          },
+          "local_events": [
+            [
+              "A",
+              "e2"
+            ]
+          ]
+        }
+      ],
+      "partial_order": {
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "is_partial_order": true,
+        "order_pairs": [
+          [
+            "e1",
+            "e1"
+          ],
+          [
+            "e1",
+            "e2"
+          ],
+          [
+            "e2",
+            "e2"
+          ]
+        ]
+      },
+      "axis_monotonicity": {
+        "am_holds": false,
+        "spurious_count": 0,
+        "missing_count": 1,
+        "violations": [
+          {
+            "predecessor": "e1",
+            "successor": "e2",
+            "in_record_order": true,
+            "in_axis_order": false,
+            "kind": "missing_axis_order"
+          }
+        ]
+      },
+      "theorem_applies": false,
+      "evidence": "A unique partial-order completion exists, but axis dominance does not reconstruct it."
+    }
+  ],
+  "counterexample_summary": [
+    {
+      "case": "CE_missing_event_identity",
+      "classification": "underdetermined"
+    },
+    {
+      "case": "CE_insufficient_overlap",
+      "classification": "underdetermined"
+    },
+    {
+      "case": "CE_source_record_conflict",
+      "classification": "conflicting"
+    },
+    {
+      "case": "CE_target_record_conflict",
+      "classification": "conflicting"
+    },
+    {
+      "case": "CE_axis_profile_conflict",
+      "classification": "conflicting"
+    },
+    {
+      "case": "CE_hidden_record_ambiguity",
+      "classification": "underdetermined"
+    },
+    {
+      "case": "CE_nondefinable_map",
+      "classification": "nondefinable"
+    },
+    {
+      "case": "CE_am_violation",
+      "classification": "am_invalid"
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H0",
+      "claim": "T53 boundary cases cannot be compressed into a finite theorem basis.",
+      "status": "refuted",
+      "evidence": "all expected classifications matched=True"
+    },
+    {
+      "id": "H1",
+      "claim": "Event identity plus record compatibility is sufficient for unique completion.",
+      "status": "partially_supported",
+      "evidence": "It gives a unique quotient-union partial order when maps and records agree, but AM is separate."
+    },
+    {
+      "id": "H2",
+      "claim": "AM-compatible axis profiles are additionally required for temporal reconstruction.",
+      "status": "supported",
+      "evidence": "CE_am_violation=am_invalid"
+    },
+    {
+      "id": "H3",
+      "claim": "A finite descent theorem classifies the T51-T53 cases.",
+      "status": "supported",
+      "evidence": "T51=canonical; T52=canonical; T53=underdetermined"
+    },
+    {
+      "id": "H4",
+      "claim": "Uniqueness is decidable only by brute-force completion enumeration.",
+      "status": "refuted",
+      "evidence": "The quotient-union algorithm classifies all witnesses without enumerating completions."
+    },
+    {
+      "id": "H5",
+      "claim": "Full sheaf/categorical descent machinery is required now.",
+      "status": "refuted",
+      "evidence": "Finite identity, overlap, record, profile, and AM checks suffice for this witness family."
+    }
+  ],
+  "best_supported": "H2 and H3 supported; H0, H4, and H5 refuted; H1 partially supported because uniqueness and AM-valid temporal reconstruction are separate."
+}

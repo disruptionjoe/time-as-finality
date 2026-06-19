@@ -781,6 +781,69 @@ Canonical observer-relative temporal reconstruction additionally requires
 event identity maps, sufficient overlap data, and AM-compatible axis profiles
 when finality axes are used to reconstruct order.
 
+## Finite Finality Descent
+
+T54 defines a finite descent basis for canonical observer-relative temporal
+reconstruction. The input object is:
+
+```text
+ObserverDescentDatum = (
+  observer-local FinaliEvent records,
+  event identity maps,
+  overlap witnesses,
+  source and target record annotations,
+  finality-axis profiles
+)
+```
+
+The canonical completion operation is quotient-union:
+
+```text
+1. quotient local event labels by event identity maps;
+2. union compatible source and target records inside each event class;
+3. reject source-record contradictions;
+4. reject target-record contradictions;
+5. reject axis-profile disagreement;
+6. compute the record-dependency partial order;
+7. test Axis Monotonicity.
+```
+
+The finite descent conditions are:
+
+```text
+C1 event identity maps are total and single-valued
+C2 cross-observer identified events have overlap witnesses
+C3 source records merge without explicit contradiction
+C4 target records merge without explicit contradiction
+C5 identified events agree on finality-axis profiles
+C6 the quotient-union dependency order is a valid partial order
+C7 Axis Monotonicity holds on the reconstructed global structure
+```
+
+The classification outcomes are:
+
+```text
+canonical:
+  all finite descent conditions hold and AM reconstructs the global order
+
+underdetermined:
+  data are compatible but do not determine a unique canonical completion
+
+conflicting:
+  identified observer-local events disagree on records or axis profiles
+
+nondefinable:
+  required event identity or record-access maps are missing or malformed
+
+AM-invalid:
+  a unique partial-order completion exists, but axis dominance does not
+  reconstruct the record-dependency order
+```
+
+T54 classifies T51 and T52 as canonical, and T53 as underdetermined. Full
+sheaf/descent machinery is postponed: the tested witness family is decidable
+by finite quotient-union descent data.
+
 ## Failure Conditions
 
 The formalization fails its intended job if:

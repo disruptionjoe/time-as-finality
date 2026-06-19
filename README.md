@@ -181,6 +181,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     finality-axis reconstructability. H2, H3, and H4 supported; H0 and H1
     refuted; H5 partially supported as finite descent data, not full sheaf
     machinery.
+- [TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md](TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md)
+  - Finite Finality Descent Theorem: canonical observer-relative temporal
+    reconstruction requires finite descent conditions plus Axis Monotonicity;
+    T51 and T52 classify as canonical, T53 classifies as underdetermined, and
+    counterexamples show why identity, overlap, record compatibility, profile
+    agreement, definable maps, and AM are necessary.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -267,6 +273,8 @@ python -m models.run_t49
 python -m models.run_t50
 python -m models.run_t51
 python -m models.run_t52
+python -m models.run_t53
+python -m models.run_t54
 ```
 
 ## Run Explorations

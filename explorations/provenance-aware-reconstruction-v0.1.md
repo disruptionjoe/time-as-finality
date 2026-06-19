@@ -28,6 +28,42 @@ one is strictly richer, strictly weaker, or complementary.
 No conclusion is assumed. Both equivalence and separation results would be
 informative.
 
+The key research posture is symmetric. This note should not assume that
+provenance is more primitive than the record basis, nor should it assume that
+the record basis already contains all relevant provenance. The sharper question
+is whether propagation history carries independent reconstructive information.
+
+Hashgraph-like gossip-about-gossip is one motivating example, not the intended
+claim. The broader candidate object is provenance-aware reconstruction: the
+mathematics of reconstructing event-finality structure from who learned what
+from whom, and when that propagation occurred relative to the FinaliEvent
+structure.
+
+---
+
+## Symmetric Hypotheses
+
+**H0: Equivalence.** Provenance and record basis are mutually reconstructible
+under the finite assumptions of the framework. Provenance is useful notation,
+but not a new mathematical primitive.
+
+**H1: Provenance strictly richer.** Identical record bases can arise from
+different propagation histories, and those histories carry reconstructive
+information not recoverable from record content alone.
+
+**H2: Provenance strictly weaker.** Identical propagation histories can admit
+multiple compatible record bases, so propagation structure alone is insufficient
+for event-finality reconstruction.
+
+**H3: Complementarity.** Provenance and record basis encode different
+information. Neither determines the other, and a fuller reconstruction requires
+both content and propagation history.
+
+**H4: No first-class role.** Provenance variation exists but does not change
+any event-finality colimit, order, axis profile, admissibility verdict, or
+reconstruction boundary. In that case provenance may matter for auditing and
+trust, but not for the current mathematics of finality.
+
 ---
 
 ## Formal Sketch
@@ -72,6 +108,11 @@ Candidates:
 - The axis magnitudes (causal, info profiles of each FinaliEvent) — are these
   derivable from G, or do they require direct access to the D1Profiles?
 
+This should be asked before choosing a runnable test. The important distinction
+is not "can provenance explain the record basis?" but: what information about
+the global event-finality structure can be reconstructed from propagation
+history without already assuming the record-basis answer?
+
 ### 2. What is the relationship between provenance and record basis?
 
 Four possible answers, each worth testing:
@@ -94,6 +135,14 @@ contains "origination facts" that a purely propagational model cannot represent.
 **Complementary:** Neither determines the other. Some information in the record
 basis is not captured by any propagation graph, and some provenance structure
 is not captured by the record basis. Both are needed for full reconstruction.
+
+Two separation questions are especially important:
+
+1. Can identical record bases have different propagation histories?
+2. Can identical propagation histories admit multiple compatible record bases?
+
+Positive and negative witnesses for both questions are likely to be more
+informative than trying to prove one representation is foundational in advance.
 
 ### 3. Witness candidates
 
@@ -122,8 +171,9 @@ constructed and tested:
   records from which other observer.
 - Show that the colimit (union of all record bases) is computable from G
   alone, without explicitly merging record sets.
-- This would be the Hashgraph-style positive result: propagation history
-  is sufficient for canonical reconstruction.
+- This would be the provenance-aware positive result: propagation history
+  is sufficient for canonical reconstruction. Hashgraph-like systems are one
+  concrete motivation, but not the definition of the general question.
 
 **Candidate D (propagation graph is ambiguous re: colimit):**
 - Construct two propagation graphs G1 and G2 that have the same topological
@@ -214,7 +264,7 @@ If any of the following hold, the conclusion is equally valuable:
 
 ---
 
-## Proposed Witness Construction for T53
+## Future Witness Construction
 
 If the four-way classification is to be tested, the minimum witness needs:
 
@@ -236,7 +286,9 @@ the *order* of events.
 The order-sensitive version: does C's knowledge that r1_locked arrived before
 r2_locked (from the propagation ordering) affect C's reconstruction of e1 ≤ e2
 or e1 || e2? This requires connecting propagation timing to the FinaliEvent
-partial order — which is the formal question T53 would need to answer.
+partial order. That connection should be treated as a future executable
+follow-up only after the exploration note has settled the symmetric hypotheses
+and witness requirements.
 
 ---
 

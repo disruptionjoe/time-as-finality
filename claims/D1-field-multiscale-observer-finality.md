@@ -113,6 +113,15 @@ T53 adds a multi-observer colimit boundary:
 - AM-compatible axis profiles are required if finality-axis dominance is used
   to reconstruct temporal order.
 
+T54 turns that boundary into a finite descent theorem:
+
+- event identity maps must be total and single-valued;
+- cross-observer identified events need overlap witnesses;
+- source and target records must merge without explicit contradiction;
+- identified events must agree on finality-axis profiles;
+- the quotient-union order must be a valid partial order;
+- Axis Monotonicity must hold for axis-based temporal reconstruction.
+
 ## How It Could Fail
 
 - A better aggregate rule may recover all relevant multiscale information.
@@ -197,12 +206,24 @@ This strengthens D1-Field only within its current status. It supports finite
 graph-indexed local-to-global structure over scalar/vector summaries, but it
 does not force full sheaf machinery.
 
+## T54 Result
+
+[T54](../tests/T54-finite-finality-descent-theorem.md) defines
+`ObserverDescentDatum` and an executable quotient-union completion algorithm.
+It classifies T51 and T52 as canonical and T53 as underdetermined, then supplies
+counterexamples for each omitted descent condition.
+
+The result strengthens D1-Field as the finite local-to-global object needed for
+cross-observer finality. It does not require full sheaf or categorical descent
+machinery for the tested finite witness family.
+
 ## Tests
 
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
 - [T25: Minimal D1 Generalization](../tests/T25-minimal-d1-generalization.md)
 - [T26: D1 Restriction System](../tests/T26-d1-restriction-system.md)
 - [T53: Observer-Colimit Descent Boundary](../tests/T53-observer-colimit-descent-boundary.md)
+- [T54: Finite Finality Descent Theorem](../tests/T54-finite-finality-descent-theorem.md)
 
 ## Contribution Needed
 

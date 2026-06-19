@@ -49,7 +49,9 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T49](tests/T49-reconstruction-without-background-time.md) | Reconstruction without background time | C1, T48 | implemented: two-axis finality dominance reconstructs the T48 record order without a scalar time variable |
 | [T50](tests/T50-axis-monotonicity-theorem.md) | Axis monotonicity theorem | C1, T48, T49 | implemented: AM is the exact condition under which finality-axis dominance equals record order; counterexample and anti-scalar corollary included |
 | [T51](tests/T51-multi-observer-apparent-finality-colimit.md) | Multi-observer apparent finality colimit | C1, D1-Field, T47, T48, T50 | implemented: bounded observer access creates phantom incomparability repaired by a valid colimit |
+| [T52](tests/T52-symmetric-colimit-theorem.md) | Symmetric colimit theorem | C1, D1-Field, T47, T50, T51 | implemented: complementary bounded observers jointly recover the full reference order and restore AM at the colimit |
 | [T53](tests/T53-observer-colimit-descent-boundary.md) | Observer-colimit descent boundary audit | C1, D1-Field, T47, T48, T50, T51 | implemented: valid colimit does not imply canonical completion or axis reconstructability; H2/H3/H4 best supported |
+| [T54](tests/T54-finite-finality-descent-theorem.md) | Finite finality descent theorem | C1, D1-Field, T50, T51, T52, T53 | implemented: quotient-union descent conditions classify T51/T52 as canonical, T53 as underdetermined, and all omitted-condition counterexamples |
 
 ## Minimum Compatibility Constraints
 
@@ -107,7 +109,9 @@ python -m models.run_t48
 python -m models.run_t49
 python -m models.run_t50
 python -m models.run_t51
+python -m models.run_t52
 python -m models.run_t53
+python -m models.run_t54
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -147,7 +151,9 @@ The suites use only Python's standard library. Evidence records:
 - [Reconstruction Without Background Time v0.1 Results](results/reconstruction-without-background-time-v0.1-results.md)
 - [Axis Monotonicity Theorem v0.1 Results](results/axis-monotonicity-theorem-v0.1-results.md)
 - [Multi-Observer Apparent Finality Colimit v0.1 Results](results/multi-observer-apparent-finality-colimit-v0.1-results.md)
+- [Symmetric Colimit Theorem v0.1 Results](results/symmetric-colimit-theorem-v0.1-results.md)
 - [Observer-Colimit Descent Boundary v0.1 Results](results/observer-colimit-descent-boundary-v0.1-results.md)
+- [Finite Finality Descent Theorem v0.1 Results](results/finite-finality-descent-theorem-v0.1-results.md)
 
 ## How To Add A Test
 

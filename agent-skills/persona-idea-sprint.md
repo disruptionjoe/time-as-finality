@@ -2,7 +2,7 @@
 
 ## What It Does
 
-Runs all 42 persona lenses registered in `personas/INDEX.md` against the current repo state.
+Runs the 43-lens sprint selection from `personas/INDEX.md` against the current repo state.
 Each persona generates three ideas at increasing ambition tiers. A cross-disciplinary voting
 pass then surfaces what's most novel, profound, publishable, and intriguing — with special
 attention to where independent disciplines converge on the same structural claim without
@@ -19,17 +19,17 @@ dressed up in five vocabularies.
 
 ### 1. Enumerate Lenses
 
-Read `personas/INDEX.md`. The registry has 42 lenses organized into 7 families:
+Read `personas/INDEX.md`. The registry is organized into 7 families; the workflow voices 43 selected lenses from these families:
 
 | family | count | source |
 |---|---|---|
-| Local TaF Lenses | 11 | `## Local Time As Finality Lenses` |
+| Local TaF Lenses | 12 | `## Local Time As Finality Lenses` |
 | TaF Crosswalk Lenses | 10 | `### Time As Finality Crosswalk Lenses` |
 | Foundational Math Lenses | 10 | `### Foundational Math Lenses` |
 | Substrate-Loophole Lenses | 5 | `### Substrate-Loophole Lenses` |
 | Computation-Substrate Lenses | 5 | `### Computation-Substrate Lenses` |
 | Heterodox Problem-Shape Lenses | 10 | `### Heterodox Problem-Shape Math Lenses` |
-| Distributed-Systems Lenses | 5 | `### Distributed-Systems Lenses` |
+| Distributed-Systems Lenses | 6 | `### Distributed-Systems Lenses` |
 
 ### 2. Assign to Disciplinary Groups
 
@@ -85,7 +85,7 @@ After synthesis, route outputs:
 
 | destination | what goes there |
 |---|---|
-| `explorations/all-persona-idea-sprint-<DATE>.md` | Full sprint: all 126+ ideas + voting results + convergence map |
+| `explorations/all-persona-idea-sprint-<DATE>.md` | Full sprint: all 129+ ideas + voting results + convergence map |
 | `tests/T<N>-<name>.md` | New test specs for ideas that are implementable as bounded toy models |
 | `open-problems/<name>.md` | New open problem specs for ideas that require formal derivation |
 | `ROADMAP.md` | Phase entry for any new phase spawned by convergence signals |

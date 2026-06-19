@@ -180,3 +180,190 @@ Notes: Rollout is incremental (a `govern/research-memory` task). The decision
 history is itself a Historical Record (append); the project log and memory logs
 are Operational Logs (prepend newest-first); registries are Current State (edit
 in place).
+
+
+## DEC-011 — Phase 3 collaborative design loop
+Date: 2026-06-19
+Status: superseded
+Decision: Each Phase 3 workflow is designed via a fixed loop: (1) this agent
+drafts the workflow; (2) Joe shares the draft with another agent; (3) Joe returns
+that agent's thinking plus its critique of this model's version; (4) this agent
+synthesizes all inputs into a final version; (5) Joe gives one final critique.
+Repeat per workflow. The loop and each workflow's pass through it are recorded in
+`PROJECT-LOG.md`.
+Reason: cross-model critique reduces single-model blind spots (directly addresses
+the persona-independence / monoculture risk) while keeping a human final gate.
+Applies to: all Phase 3 workflow design.
+Supersedes: —
+Superseded by: DEC-016
+Evidence / Source: user direction, Session 8.
+Notes: This is a process decision for the whole phase, not a one-off.
+
+## DEC-012 — govern/line-review v1 scope and authority
+Date: 2026-06-19
+Status: active
+Decision: `line-review` is standing-review only — reconcile the standing
+scorecard, detect issues, flag lifecycle candidates. It does NOT move lifecycle
+states (that is `lifecycle-review`). Scoring authority is hybrid (deterministic
+rubric where derivable; judgment only with rationale). Write authority is
+patch-first in v1 (propose scorecard updates, not direct writes). Granularity is
+both (per-line then portfolio reconciliation). v1 uses a light 0–3 ordinal rubric
+over seven governance-legibility dimensions (North Star Alignment, Line Clarity,
+Evidence Posture, Conceptual Stability, Dependency Clarity, Boundary Health,
+Routing Readiness) with rationale, evidence_or_basis, confidence, flags — no
+weighted aggregates, decimals, auto transitions, or cross-line rankings.
+Reason: governance legibility, not scientific validation or lifecycle authority;
+avoid false precision; keep authority boundaries clean.
+Applies to: `workflows/govern/line-review.md`; `research-line-scorecard.md`.
+Supersedes: —
+Superseded by: —
+Evidence / Source: Phase 3 design session (Session 8); user direction.
+Notes: Memory Pack interface specified but v1 does not depend on it. Open
+reconciliation: the 7 standing dims vs the existing 9 research-health dims.
+
+
+## DEC-013 — Workflow vs task vs schedule (decomposition guidance)
+Date: 2026-06-19
+Status: active
+Decision: Distinguish three layers. **Workflow = governance protocol** (Phase 3):
+purpose, authority boundaries, read/write surfaces, memory interface, registry
+interactions, outputs, escalation triggers, failure modes, success criteria, and
+report/patch/docket shapes. **Task = bounded execution unit** an agent can load,
+complete, audit, and rerun in one context window (Phase 4). **Schedule = when** a
+task runs. Phase 3 designs at protocol level and includes an advisory "Future
+automation decomposition notes" section naming likely Phase-4 seams; it does not
+force a workflow into one run, nor pre-split into many tasks unless the boundary is
+already obvious and architecture-relevant. Phase 4 builds a coverage matrix
+mapping workflow -> task atoms -> cadence -> outputs -> downstream consumers,
+splitting by cadence, context-shape, determinism, and audit boundary (not step
+count). A good task has one object, one job, one main output, one escalation path,
+and is idempotent/resumable.
+Reason: keep workflows constitutionally clear while automation units stay small,
+schedulable, auditable, and safe.
+Applies to: all Phase 3 workflow files; `RESEARCH-OPERATING-MODEL.md` §13; the
+Phase 4 coverage matrix.
+Supersedes: — (generalizes the line-review job-split discussion)
+Superseded by: —
+Evidence / Source: user guidance, Session 9.
+Notes: **Decomposition is not authority decomposition** — a task atom inherits its
+workflow's authority and may never exceed it; smaller does not mean more powerful.
+Only the correct authority surface (§11) accepts/canonizes changes. The
+decomposition notes are advisory until Phase 4 formalizes them.
+
+
+## DEC-014 — govern/line-review governing decisions (v1.1)
+Date: 2026-06-19
+Status: active
+Decision: Standing is a **derived, non-authoritative projection** recomputed each
+run from the health substrate (`research-line-scorecard.md`), registry state,
+artifacts, and authority surfaces; standing snapshots are audit artifacts in
+`logs/`, never canonical state. The runnable atom is **one research line -> all
+seven standing dimensions -> one standing snapshot** (do not split below the line
+level). **Hygiene failures short-circuit** scored review. Mechanical metadata may
+self-apply later; **interpretive changes remain patch-first**. Outside
+line-review's authority: lifecycle actions (-> `lifecycle-review`), portfolio
+reconciliation (-> `govern/portfolio-review`, a separate workflow), and
+decision-history promotion (-> a later decision/governance review).
+Reason: keep standing legible but non-authoritative; keep the runnable atom
+right-sized; keep authority boundaries clean across govern workflows.
+Applies to: `workflows/govern/line-review.md`; `research-line-scorecard.md` (as
+health substrate); future `govern/portfolio-review` and `govern/docket-triage`.
+Supersedes: — (refines DEC-012)
+Superseded by: —
+Evidence / Source: user end-note, Session 10.
+Notes: Resolves the two-scorecard open question — research-line-scorecard = health
+substrate (input); standing snapshot = derived, non-canonical output.
+
+
+## DEC-015 — govern/line-review v1.2 LOCKED
+Date: 2026-06-19
+Status: active
+Decision: After the external-agent critique and the final user critique,
+`govern/line-review` is **locked at v1.2** for the current operating model, with
+five light edits applied: (1) frontmatter clarified — `write_pattern:
+patch_proposal`, `authority: canonical_workflow`, `output_authority:
+noncanonical_audit_snapshot`, `unit_of_review: one_research_line`; (2) added
+authority read surfaces — Research Operating Model, Decision History, workflow
+catalog/skeleton (to validate route targets); (3) clarified patch targets —
+patches may fix stale source-state fields, the standing snapshot is never patched
+back to canonical, and lifecycle/portfolio/decision/schema changes route to the
+owning workflow; (4) added a governance-docket-item shape; (5) tightened success
+criteria toward auditability. The DEC-011 design loop for line-review is complete.
+Reason: structure was sound; edits were light; close the first Phase-3 workflow
+cleanly.
+Applies to: `workflows/govern/line-review.md`.
+Supersedes: — (realizes DEC-012 and DEC-014 as the locked v1.2)
+Superseded by: —
+Evidence / Source: external-agent critique + user final critique, Session 11.
+Notes: Non-blocking deferred items (not required for lock): 0–3 calibration
+examples; snapshot storage location (`logs/runs/` vs `logs/standing/`);
+patch-acceptance owner; whether `deep-panel-review` becomes a workflow or a
+Phase-4 atom; stale-by-date thresholds. Next Phase-3 workflow:
+`govern/lifecycle-review` (the downstream consumer of line-review's lifecycle
+candidates).
+
+
+## DEC-016 — Revised Phase 3 design loop (external-first)
+Date: 2026-06-19
+Status: active
+Decision: Replace the DEC-011 loop. New per-workflow loop: (1) Joe iterates the
+workflow with chat agents ("test, test, test") to produce a chat-optimized
+version; (2) Joe shares that version here and this agent performs an **initial
+synthesis**; (3) Joe gives one critique; (4) this agent performs the **final
+synthesis** (and locks when accepted). This agent no longer produces the first
+draft.
+Reason: front-load cross-model testing where it is cheapest (chat), and reserve
+this agent for synthesis and repo integration rather than first-draft generation.
+Applies to: all remaining Phase 3 workflows (from `govern/lifecycle-review` on).
+Supersedes: DEC-011.
+Superseded by: —
+Evidence / Source: user direction, Session 12.
+Notes: `line-review` (DEC-015) was completed under the prior DEC-011 loop; the new
+loop applies from lifecycle-review onward.
+
+## DEC-017 — Phase 3 govern workflow sequence
+Date: 2026-06-19
+Status: active
+Decision: Design the govern workflows in this order: (1) **lifecycle-review** —
+line-review already routes lifecycle candidates to it; (2) **portfolio-review** —
+split / merge / overlap cases need a whole-registry view; (3) **decision-review**
+— repeated governance signals need a canonization pathway to decision-history;
+(4) **line-intake** — creation/bootstrapping of new lines, less urgent than
+lifecycle handling.
+Reason: design downstream consumers before upstream emitters accumulate unrouted
+outputs. Lifecycle-review gives line-review a safe destination for consequential
+recommendations without making line-review powerful.
+Applies to: Phase 3 sequencing (govern family).
+Supersedes: —
+Superseded by: —
+Evidence / Source: user direction, Session 12.
+Notes: `decision-review` and `line-intake` are new govern workflows beyond the
+original skeleton; reconcile `decision-review` with the `docket-triage` signal
+sink referenced in line-review when it is designed. The govern family is expected
+to evolve (operating model §0).
+
+
+## DEC-018 — Two-axis lifecycle model adopted; lifecycle-review LOCKED (v1.0)
+Date: 2026-06-19
+Status: active
+Decision: Adopt the **two-axis lifecycle model** program-wide — `stage` (maturity:
+seed, explored, validated, incubated, secondary-exploit, primary-exploit,
+integrated) and `status` (attention/disposition: active, held, archived).
+`archived` is a **status**, not a stage; `integrated` is the **terminal mature
+stage**. `govern/lifecycle-review` is **locked at v1.0** (the accepted form of
+v0.4): hold/revive/retire act only on `status`; promote/demote/integrate only on
+`stage`; split/merge are structural and route to `portfolio-review`; promote and
+integrate are high-scrutiny.
+Reason: the single ladder conflated maturity with attention, leaving `hold` with
+no home; two axes resolve it cleanly.
+Applies to: `workflows/govern/lifecycle-review.md` (locked); `line-registry.md`
+schema (requires update); future govern workflows that read lifecycle posture.
+Supersedes: refines the lifecycle vocabulary used by DEC-007 (the line registry
+stays a portfolio layer; its single lifecycle ladder becomes two axes).
+Superseded by: —
+Evidence / Source: lifecycle-review design loop (Sessions 13–15); user approval.
+Notes: **Implementation follow-up** — `registries/line-registry.md` must be updated
+to the two-axis schema (add a `status` field; remove `archived` from the stage
+ladder; reclassify RL-006 as `status: archived`). Until then, lifecycle-review
+patches would propose a `status` field the registry does not yet carry.
+`decision-review` vs `docket-triage` reconciliation still open (DEC-017).

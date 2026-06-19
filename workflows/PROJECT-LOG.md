@@ -54,6 +54,304 @@ decisions made, rationale, open questions, deferred ideas, next recommended step
 
 ---
 
+## Session 15 — 2026-06-19
+
+**Goals**
+
+- Pass the focused critique on `govern/lifecycle-review` and lock it.
+
+**Decisions made (DEC-018)**
+
+- `govern/lifecycle-review` **LOCKED at v1.0** (accepted form of v0.4).
+- **Two-axis lifecycle model adopted program-wide:** `stage` (maturity) +
+  `status` (attention/disposition); `archived` is a status, `integrated` the
+  terminal stage. hold/revive/retire → status; promote/demote/integrate → stage;
+  split/merge → portfolio-review; promote & integrate high-scrutiny.
+
+**Follow-up created (not yet done)**
+
+- **`line-registry.md` schema update** to the two-axis model (add `status`; remove
+  `archived` from the stage ladder; reclassify RL-006 as `status: archived`).
+  Should land before `portfolio-review` relies on lifecycle posture. Likely a
+  `decision-review`-class change to a canonical registry.
+
+**Next recommended step**
+
+- Implement the line-registry two-axis schema update (offered), then begin
+  `govern/portfolio-review` per DEC-017. Under DEC-016, portfolio-review starts
+  from Joe's chat-tested draft, which this agent then synthesizes.
+
+---
+
+## Session 14 — 2026-06-19
+
+**Goals**
+
+- Apply Joe's critique to `govern/lifecycle-review`: adopt the two-axis lifecycle
+  ontology (final synthesis → v0.4 DRAFT).
+
+**Built**
+
+- Revised `govern/lifecycle-review.md` to v0.4 with a **two-axis model**:
+  `stage` (maturity: seed…integrated) and `status` (attention/disposition:
+  active | held | archived). `archived` removed from the stage ladder;
+  `integrated` is the terminal mature stage.
+- Candidate binding: hold/revive/retire act only on `status`; promote/demote/
+  integrate act only on `stage`; split/merge are structural → `portfolio-review`.
+- Added `integrate` to the canonical `candidate_type` list and the alias map;
+  made it **high-scrutiny like promote** (promotion/integration safety rule).
+- Rewrote retire language (status→archived, preservation/disposition not maturity),
+  updated lifecycle-question examples to not mix axes, and replaced open-question 1
+  with the two-axis schema-update recommendation.
+
+**Notes**
+
+- This is the DEC-016 final synthesis for this round, but per Joe's disposition it
+  stays **v0.4 DRAFT** pending one focused critique (axis separation; archived not
+  a stage; integrate added/guarded; retire/revive/hold = status only; promote/
+  demote/integrate = stage only; split/merge structural → portfolio-review).
+- The two-axis model is a recommended **line-registry schema change**, not yet
+  accepted — likely a `decision-review` item; no DEC recorded until accepted.
+
+**Next recommended step**
+
+- Joe runs the focused critique pass; on pass, lock lifecycle-review and record the
+  two-axis schema adoption as a decision; then proceed to `govern/portfolio-review`
+  (DEC-017).
+
+---
+
+## Session 13 — 2026-06-19
+
+**Goals**
+
+- Perform the **initial synthesis** of `govern/lifecycle-review` (DEC-016 step 2)
+  from Joe's chat-optimized v0.2 draft.
+
+**Built**
+
+- Wrote `workflows/govern/lifecycle-review.md` v0.3 INITIAL SYNTHESIS: integrated
+  the v0.2 draft into repo conventions (document contract frontmatter, "research
+  line" terminology, repo paths), preserving its spine — unified candidate
+  vocabulary, conservative no-action default, dangling-route behavior, promotion
+  safety, evidence-exit classes, merge/split → portfolio-review, patch-first.
+- Added a **Lifecycle vocabulary binding** section binding candidate types to the
+  registry ladder (`seed → … → integrated/archived`).
+
+**Synthesis finding (gates lock)**
+
+- The registry ladder is a *maturity* axis only; `hold` (and the active/held/
+  archived *attention* axis) has no ladder home. Two options surfaced: (1) add a
+  `status: active|held|archived` axis to the line registry separate from `stage`
+  (recommended); (2) stay ladder-only and drop `hold`. Until decided, `hold`
+  emits `signal_type: schema-inadequacy`.
+
+**Notes**
+
+- Per DEC-016, I did not draft first; this is the initial synthesis of Joe's
+  chat-tested v0.2. Next is Joe's single critique, then my final synthesis + lock.
+- Carried open item: reconcile `decision-review` vs `docket-triage` (DEC-017).
+
+**Next recommended step**
+
+- Joe gives one critique of the v0.3 initial synthesis (especially the lifecycle
+  vocabulary decision); I then produce the final synthesis and lock.
+
+---
+
+## Session 12 — 2026-06-19
+
+**Goals**
+
+- Revise the Phase 3 design loop and confirm the govern workflow order.
+
+**Decisions made**
+
+- **DEC-016 — revised design loop (external-first).** Joe iterates a workflow with
+  chat agents, then shares the chat-optimized version here; this agent does the
+  **initial synthesis**, Joe critiques once, this agent does the **final
+  synthesis** and locks. This agent no longer drafts first. Supersedes DEC-011.
+- **DEC-017 — govern workflow order:** lifecycle-review → portfolio-review →
+  decision-review → line-intake (design downstream consumers before upstream
+  emitters strand their outputs).
+
+**Notes**
+
+- `govern/lifecycle-review` is next. Under DEC-016 I will **not** draft it; I wait
+  for Joe's chat-optimized version, then perform the initial synthesis.
+- When designing it, reconcile `decision-review` with the `docket-triage` signal
+  sink referenced by line-review.
+
+**Next recommended step**
+
+- Joe shares the chat-optimized `lifecycle-review` → this agent performs the
+  initial synthesis.
+
+---
+
+## Session 11 — 2026-06-19
+
+**Goals**
+
+- Apply the final critique to `govern/line-review` and lock it; set the next
+  Phase-3 target.
+
+**Decisions made (DEC-015 — line-review v1.2 LOCKED)**
+
+- Applied the five light edits from the external-agent + final user critique:
+  (1) frontmatter (`write_pattern: patch_proposal`, `authority:
+  canonical_workflow`, `output_authority: noncanonical_audit_snapshot`,
+  `unit_of_review: one_research_line`); (2) added authority read surfaces (ROM,
+  Decision History, workflow catalog); (3) clarified patch targets (fix stale
+  source-state; snapshot never written back to canonical; lifecycle/portfolio/
+  decision/schema route to owning workflow); (4) added a governance-docket-item
+  shape; (5) tightened success criteria toward auditability.
+- The DEC-011 design loop for line-review is **complete**; workflow is LOCKED for
+  the current operating model.
+
+**Deferred (non-blocking)**
+
+- 0–3 calibration examples; snapshot storage location; patch-acceptance owner;
+  deep-panel-review as workflow vs Phase-4 atom; stale-by-date thresholds.
+
+**Next recommended step**
+
+- Design **`govern/lifecycle-review`** next (DEC-008 sequencing logic continues):
+  it is the legitimate downstream consumer of line-review's lifecycle candidates.
+  Run it through the same design loop (DEC-011).
+
+---
+
+## Session 10 — 2026-06-19
+
+**Goals**
+
+- Fold the Phase 3 end-note governing decisions into `govern/line-review` (v1.1).
+
+**Decisions made (DEC-014)**
+
+- Standing is a **derived, non-authoritative projection**, recomputed each run
+  from the health substrate + registry state + artifacts + authority surfaces;
+  **snapshots are audit artifacts, not canonical**.
+- **Runnable atom = one line / seven dimensions / one snapshot** — do not split
+  below the line level (loading the line is the expensive part).
+- **Hygiene failures short-circuit** scored review.
+- Mechanical metadata may self-apply later; **interpretive changes patch-first**.
+- Out of scope for line-review: lifecycle actions (`lifecycle-review`), portfolio
+  reconciliation (`govern/portfolio-review`, separate workflow), decision-history
+  promotion (later decision review).
+- **Resolved** the two-scorecard question: `research-line-scorecard` = health
+  substrate (input); standing snapshot = derived output.
+
+**Built**
+
+- Rewrote `govern/line-review.md` to v1.1 with a Governing-decisions section,
+  hygiene short-circuit in the procedure, standing-as-projection framing, and
+  decomposition notes naming portfolio-review and docket-triage as separate
+  workflows.
+- Clarified `research-line-scorecard.md` as the health substrate line-review reads.
+
+**Notes**
+
+- Still design-loop **step 1** (my draft). The other agent's thinking + critique
+  will be reconciled in synthesis (step 4); these are governing constraints to
+  preserve through that synthesis.
+
+**Next recommended step**
+
+- Receive the external agent's line-review critique; synthesize the final v1.
+
+---
+
+## Session 9 — 2026-06-19
+
+**Goals**
+
+- Adopt the workflow-vs-task-vs-schedule decomposition guidance as the Phase 3/4
+  standard and apply it.
+
+**Decisions made**
+
+- **DEC-013 — Workflow = protocol, Task = bounded execution unit, Schedule =
+  when.** Phase 3 designs at protocol level and includes an advisory "Future
+  automation decomposition notes" section naming likely seams; Phase 4 builds a
+  coverage matrix (workflow -> task atoms -> cadence -> outputs -> consumers),
+  splitting by cadence, context-shape, determinism, and audit boundary. A good
+  task has one object, one job, one main output, one escalation path, and is
+  idempotent/resumable. **Decomposition is not authority decomposition** — a task
+  atom inherits its workflow's authority and may never exceed it.
+- Added operating model **§13** capturing this principle.
+
+**Built**
+
+- Upgraded the workflow template (`templates/workflow-placeholder.template.md`) to
+  the Phase-3 protocol standard: purpose, authority boundaries, read/write
+  surfaces, memory interface, registry interactions, output shapes, escalation
+  triggers, failure modes, success criteria, and the decomposition-notes section.
+- Enriched `govern/line-review.md` to meet the standard: added Escalation
+  triggers, Failure modes, Success criteria, and Future automation decomposition
+  notes (example atoms: line-hygiene-check, single-line-standing-review,
+  portfolio-review, docket-triage).
+
+**Notes / open**
+
+- `line-review` is still mid design-loop (step 1). These additions are advisory
+  and will be reconciled in the synthesis step (step 4) alongside the other
+  agent's critique — the decomposition notes deliberately surface the seams the
+  other agent may also raise.
+- Phase 4 deliverable to build later: the per-workflow coverage matrix (YAML)
+  confirming each task atom is loadable, bounded, auditable, and stoppable.
+
+**Next recommended step**
+
+- Continue the `line-review` loop: receive the other agent's thinking + critique,
+  then synthesize the final v1 (steps 2–4).
+
+---
+
+## Session 8 — 2026-06-19
+
+**Goals**
+
+- Begin Phase 3. Design the first workflow (`govern/line-review`, per DEC-008) and
+  establish the Phase 3 collaborative design loop.
+
+**Decisions made**
+
+- **Phase 3 design loop (DEC-011).** Per workflow: (1) this agent drafts; (2) Joe
+  shares with another agent; (3) Joe returns that agent's thinking + critique of
+  this version; (4) this agent synthesizes a final version; (5) Joe gives one
+  final critique. Recorded here throughout the phase.
+- **`govern/line-review` v1 (DEC-012).** Standing-review only (no lifecycle
+  moves); hybrid scoring; patch-first writes; per-line then portfolio granularity;
+  full 62-panel as distilled input; light 0–3 rubric over 7 governance dimensions
+  (North Star Alignment, Line Clarity, Evidence Posture, Conceptual Stability,
+  Dependency Clarity, Boundary Health, Routing Readiness) with rationale /
+  evidence / confidence / flags. No aggregates, decimals, auto-transitions, or
+  cross-line rankings.
+
+**Built**
+
+- Drafted `workflows/govern/line-review.md` v1 — this is **step 1** of the design
+  loop (my draft), now awaiting the external-agent thinking + critique.
+- Memory Pack interface specified in the workflow (read load surface / write a
+  learning-return entry) but v1 does not depend on it (Phase 3.5 not built).
+
+**Open questions** (carried in the workflow)
+
+- Two scorecards: reconcile the 7 standing dims vs the existing 9 research-health
+  dims (proposal: standing = output; research-health = inputs).
+- Full-panel cost vs false-convergence risk (subset after v1?).
+- Who applies the proposed patch.
+- 0–3 scale needs calibration examples.
+
+**Next recommended step**
+
+- Joe shares the `line-review` draft with another agent and returns its thinking +
+  critique; this agent then synthesizes the final v1 (design-loop steps 2–4).
+
+---
+
 ## Session 7 — 2026-06-19
 
 **Goals**

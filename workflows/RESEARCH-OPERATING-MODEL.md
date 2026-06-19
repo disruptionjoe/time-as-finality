@@ -375,6 +375,31 @@ front-matter, so agents are *told* how to use it rather than inferring it. See
 vocabulary. Rollout is incremental (a `govern/research-memory` task); see
 `registries/decision-history.md` DEC-010.
 
+## 13. Workflow, task, and schedule
+
+A workflow is not the same as an automation run. Three layers:
+
+- **Workflow = protocol.** What the system may do, what it reads and writes, its
+  authority and escalation, what it must not decide. Designed in Phase 3.
+- **Task = bounded execution unit.** The smaller unit an agent can load, complete,
+  audit, and rerun within one context window. Mapped in Phase 4.
+- **Schedule = when** a task runs (cadence or event). Set in Phase 4.
+
+A good task usually has **one object, one job, one main output, one escalation
+path**, and is idempotent and resumable. Phase 4 splits workflows by **cadence,
+context-shape, determinism, and audit boundary** — not by step count.
+
+**Authority does not decompose with size.** A smaller, easier-to-run task does not
+gain authority by being small: a task atom **inherits** its workflow's authority
+and may never exceed it. Splitting reduces context burden and improves
+auditability; it must not create hidden authority. Only the correct authority
+surface (§11) accepts or canonizes a change.
+
+Phase 3 workflow files stay at the protocol level but include an advisory
+**Future automation decomposition notes** section naming likely Phase-4 seams. See
+`registries/decision-history.md` DEC-013; Phase 4 formalizes this into a
+workflow -> task-atoms -> cadence -> outputs -> consumers coverage matrix.
+
 ---
 
 ## Deliberately deferred

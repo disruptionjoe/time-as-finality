@@ -15,7 +15,9 @@ research lines. This is **not** a correctness score, and it deliberately does
 reason about each line's health, maturity, and resource claim.
 
 > **Evolving artifact.** Dimensions and scales below are a starting point and are
-> expected to change. Maintained by `govern/line-review`; distinct from the
+> expected to change. It is the **health substrate** that `govern/line-review`
+> reads to compute a line's separate, non-canonical standing snapshot (it is not
+> itself that snapshot). Distinct from the
 > per-persona `templates/scorecard.template.md` (which captures one persona's read
 > of one line). This registry holds the *aggregate, per-line* portfolio view.
 

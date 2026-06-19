@@ -1,4 +1,4 @@
-# Tests
+﻿# Tests
 
 The project is useful only if claims can be formalized, stressed, or broken.
 
@@ -54,6 +54,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T54](tests/T54-finite-finality-descent-theorem.md) | Finite finality descent theorem | C1, D1-Field, T50, T51, T52, T53 | implemented: quotient-union descent conditions classify T51/T52 as canonical, T53 as underdetermined, and all omitted-condition counterexamples |
 | [T55](tests/T55-conflict-finalievent-descent.md) | Conflict-enriched FinaliEvent descent | C1, D1-Field, T48, T50, T54 | implemented: T54 generalizes to non-empty conflict with added finite conflict checks; conflict is independent of order and AM |
 | [T55B](tests/T55B-provenance-aware-reconstruction.md) | Provenance-aware reconstruction separation audit | C1, D1-Field, T51, T52, T54 | implemented: H4 confirmed (provenance variation does not change colimits, AM, or T54 descent); H1 supported (same basis, different provenances); H0 refuted; recommendation: optional audit layer |
+| [T56](tests/T56-sheaf-cohomology-apparent-finality.md) | Sheaf cohomology of apparent finality — research audit | C1, D1-Field, T51, T52 | implemented: PARTIAL_SUCCESS — ambient presheaf A is well-defined (H1(A)=0); apparent-finality assignment F is not a presheaf (natural restriction overshoots F(U)); phantom incomparability is an H0-level section-mismatch, not H1; refined hypothesis: H0(G) where G=A/F is the gap presheaf; 4 open questions; 56/56 tests pass |
 
 ## Minimum Compatibility Constraints
 

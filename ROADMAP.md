@@ -1,4 +1,4 @@
-# Roadmap
+﻿# Roadmap
 
 ## Phase 1: Make The Claims Precise
 
@@ -94,6 +94,9 @@
   W_T54 T54 provenance-blind). H4 confirmed: provenance variation does not change
   colimits, AM, or T54 descent. H1 supported. H0 refuted. Recommendation: optional
   audit layer.
+- **Completed v0.1:** implement
+  [T56](tests/T56-sheaf-cohomology-apparent-finality.md) as the sheaf cohomology of apparent finality research audit:
+  apparent-finality presheaf A(U)=rho_U(S_global) is well-defined and H1(A)=0; apparent-finality-order assignment F(U)=S_local(U) is NOT a presheaf (natural restriction overshoots F(U) via transitive paths through hidden intermediaries); phantom incomparability is an H0-level section-mismatch (F(U) neq A(U)), not H1; colimit confirmed as global section of A; assumption ledger flags MEDIUM circular risk on arrow direction; refined hypothesis: the correct invariant is H0(G) where G=A/F; 4 open questions (Q1-Q4). 56/56 tests pass. Outcome: PARTIAL_SUCCESS.
 - Test spacelike-separated event ordering under [T3](tests/T3-spacelike-events-no-global-commit-order.md).
 - Extend T2 from ideal CNOT records to noisy scattering, detector
   inefficiency, and dynamically selected pointer bases.

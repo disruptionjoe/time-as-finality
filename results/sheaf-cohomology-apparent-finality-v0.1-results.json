@@ -1,0 +1,110 @@
+{
+  "cover_name": "hidden_intermediary",
+  "outcome": "partial_success",
+  "ambient_presheaf_functorial": true,
+  "apparent_presheaf_is_presheaf": false,
+  "phantom_pairs": [
+    {
+      "observer": "U_P",
+      "event_j": "e_j",
+      "event_i": "e_i",
+      "local": "e_j || e_i",
+      "global": "e_j ≤ e_i",
+      "hidden_intermediaries": [
+        "e_k"
+      ]
+    }
+  ],
+  "local_sections_compatible": false,
+  "colimit_is_global_section": true,
+  "cech_h1_apparent": {
+    "h1_dimension": 0,
+    "c1_dimension": 0,
+    "finding": "H¹ = 0 over this cover. dim(C¹) = 0, dim(im δ⁰) = 0, dim(ker δ¹) = 0. The Čech H¹ does not detect phantom incomparability in this cover. The pairwise overlaps have trivial order data (each contains at most one accessible event), so C¹ carries no non-reflexive pair information for a phantom pair to inhabit. The phantom incomparability lives in the section-compatibility gap (H⁰ level), not in H¹."
+  },
+  "cech_h1_ambient": {
+    "h1_dimension": 0,
+    "c1_dimension": 0,
+    "finding": "H¹ = 0 over this cover. dim(C¹) = 0, dim(im δ⁰) = 0, dim(ker δ¹) = 0. The Čech H¹ does not detect phantom incomparability in this cover. The pairwise overlaps have trivial order data (each contains at most one accessible event), so C¹ carries no non-reflexive pair information for a phantom pair to inhabit. The phantom incomparability lives in the section-compatibility gap (H⁰ level), not in H¹."
+  },
+  "refined_hypothesis": "Phantom incomparability is NOT an H¹ obstruction of the apparent-finality presheaf (H¹(A) = 0; F is not a presheaf). It IS a section-compatibility obstruction: the collection {F(U_i)} (local apparent orders) does not form a compatible 0-cochain for the ambient presheaf A. The phantom pair (e_j, e_i) lives in G(U) = A(U) \\ F(U), the gap between what the global colimit restricts to at U and what U computes locally. The relevant invariant is H⁰(G), the global sections of the gap presheaf — not H¹ of any presheaf over the cover.",
+  "finding": "PARTIAL_SUCCESS. The sheaf language is the correct framework: the apparent-finality presheaf A(U) = ρ_U(S_global) is well-defined and has H¹ = 0 (the global colimit is a compatible global section with no higher obstruction). The apparent-finality-order assignment F(U) = S_local(U) is NOT a presheaf — natural restriction maps map F(V) outside F(U) when V ⊃ U and phantom intermediaries exist. Phantom incomparability shows up as a mismatch between local sections {F(U_i)} and the restricted global section {A(U_i)}: a H⁰-level (section-compatibility) phenomenon rather than H¹. The original hypothesis (H¹) is at the wrong cohomological degree. The correct reformulation replaces H¹(F) with H⁰(G) where G = A/F is the gap presheaf.",
+  "open_questions": [
+    "Q1: Is H⁰(G) ≅ the set of phantom incomparability witnesses from T51–T52? Specifically, does every T51/T52 phantom pair (e_j, e_i) at observer U appear as a section of G(U), and vice versa?",
+    "Q2: Does the apparent-finality assignment F admit a sheafification F⁺, and is F⁺ = A (the ambient presheaf)? If so, the sheafification map F → A is the canonical 'colimit completion' operation of T51–T52.",
+    "Q3: Can the 'pre-presheaf' structure of F (it has local sections and a restriction-like inclusion F(U) ⊆ A(U), but no natural restriction maps) be captured by a lax functor or by Čech cohomology of the NERVE of the cover (where nodes = events, edges = direct record-dependencies)?",
+    "Q4: Does the medium circular risk on the record-dependency arrow direction have a constructor-theoretic resolution? Specifically, can the pre/post-finality asymmetry be derived from substrate-free task-composability (W4 defense), making the record-dependency order definitionally non-circular?"
+  ],
+  "assumption_ledger": [
+    {
+      "name": "arrow_direction",
+      "inherited_from": "T48",
+      "status": "definitional",
+      "circular_risk": "medium",
+      "risk_note": "Pre/post-finality language is phenomenologically temporal. T48 treats source/target as categorical (domain/codomain of a morphism), not as temporal labels. But the asymmetry that makes source different from target is the same asymmetry the program claims to reconstruct as time. If that asymmetry is stipulated (put in by hand as morphism direction) rather than derived from a non-temporal substrate, the reconstruction is circular. T48 does not fully resolve this; it is a standing tension acknowledged by W4 from the panel."
+    },
+    {
+      "name": "record_dependency_order",
+      "inherited_from": "T48",
+      "status": "definitional",
+      "circular_risk": "medium",
+      "risk_note": "Inherits the circular risk from arrow_direction: e_i.source_records = records held pre-finality by e_i's system. 'Pre-finality' relative to e_i is well-defined if the morphism structure is non-temporal, but may silently import temporal ordering between morphisms. The partial order may be reconstructing the temporal order it is meant to derive."
+    },
+    {
+      "name": "accessible_records",
+      "inherited_from": "T55B",
+      "status": "definitional",
+      "circular_risk": "low",
+      "risk_note": "Accessibility is defined via the propagation graph structure (T55B), not via temporal ordering. No circular risk beyond what propagation itself imports, which is bounded."
+    },
+    {
+      "name": "accessible_events",
+      "inherited_from": "T55B",
+      "status": "definitional",
+      "circular_risk": "low",
+      "risk_note": "Accessibility via locked output records does not reference temporal order; it references the record-holding state of U."
+    },
+    {
+      "name": "apparent_finality_order",
+      "inherited_from": "new",
+      "status": "definitional",
+      "circular_risk": "medium",
+      "risk_note": "Inherits the medium circular risk from record_dependency_order via restriction. The restriction itself adds no new circular risk, but the underlying order does."
+    },
+    {
+      "name": "ambient_presheaf",
+      "inherited_from": "new",
+      "status": "derived",
+      "circular_risk": "low",
+      "risk_note": "The ambient presheaf derives directly from the global order by restriction. Functoriality holds trivially (filtering twice = filtering to the intersection). No circular risk beyond record_dependency_order."
+    },
+    {
+      "name": "f_not_presheaf",
+      "inherited_from": "new",
+      "status": "derived",
+      "circular_risk": "none",
+      "risk_note": "This is a computed result, not an assumption. No circular risk — the failure of F to be a presheaf is a finding about the mathematical structure, independent of the temporal grounding question."
+    },
+    {
+      "name": "gap_presheaf",
+      "inherited_from": "new",
+      "status": "conjectural",
+      "circular_risk": "none",
+      "risk_note": "Whether H⁰(G) is the 'correct' invariant for phantom incomparability is a conjecture promoted by this audit. Further work required to show H⁰(G) captures exactly the T51–T52 phantom witnesses. No circular risk in G itself."
+    },
+    {
+      "name": "observer_cover",
+      "inherited_from": "new",
+      "status": "definitional",
+      "circular_risk": "none",
+      "risk_note": "A finite cover is a combinatorial object. No temporal or topological assumptions beyond the record-holding structure."
+    },
+    {
+      "name": "z2_encoding",
+      "inherited_from": "standard-math",
+      "status": "definitional",
+      "circular_risk": "none",
+      "risk_note": "A representation choice, not a mathematical claim. No circular risk."
+    }
+  ]
+}

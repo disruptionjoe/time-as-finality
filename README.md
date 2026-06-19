@@ -1,4 +1,4 @@
-# Time as Finality
+﻿# Time as Finality
 
 **The past is what has become hard to undo.**
 
@@ -282,6 +282,7 @@ python -m models.run_t53
 python -m models.run_t54
 python -m models.run_t55
 python -m models.run_t55b
+python -m models.run_t56
 ```
 
 ## Run Explorations

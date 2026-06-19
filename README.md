@@ -150,6 +150,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     with a record-dependency partial order; partial order axioms verified;
     incomparable events (spacelike separation) confirmed; NPW event structure
     compatibility established; all four hypotheses supported.
+- [TECHNICAL-REPORT-reconstruction-without-background-time-v0.1.md](results/reconstruction-without-background-time-v0.1-results.md)
+  - Reconstruction Without Background Time: 2-axis (causal, info) componentwise
+    order exactly matches T48 record-dependency order (9/9 pairs); exactly 2
+    valid topological sorts; Anti-Scalar Theorem confirmed (no total preorder
+    can replicate a partial order with incomparable elements); no temporal
+    variable in any reconstruction definition; all four hypotheses supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -232,6 +238,7 @@ python -m models.run_t44
 python -m models.run_t45
 python -m models.run_t47
 python -m models.run_t48
+python -m models.run_t49
 ```
 
 ## Run Explorations

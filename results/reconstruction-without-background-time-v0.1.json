@@ -1,0 +1,165 @@
+{
+  "axis_profiles": [
+    {
+      "event": "e1_A_locking",
+      "causal": 2,
+      "info": 2,
+      "obs_access": 1,
+      "branch": 0
+    },
+    {
+      "event": "e2_B_locking",
+      "causal": 1,
+      "info": 3,
+      "obs_access": 1,
+      "branch": 0
+    },
+    {
+      "event": "e3_composite_locking",
+      "causal": 3,
+      "info": 4,
+      "obs_access": 1,
+      "branch": 0
+    }
+  ],
+  "record_order_pairs": [
+    [
+      "e1_A_locking",
+      "e1_A_locking"
+    ],
+    [
+      "e1_A_locking",
+      "e3_composite_locking"
+    ],
+    [
+      "e2_B_locking",
+      "e2_B_locking"
+    ],
+    [
+      "e2_B_locking",
+      "e3_composite_locking"
+    ],
+    [
+      "e3_composite_locking",
+      "e3_composite_locking"
+    ]
+  ],
+  "comparison_2axis": {
+    "axes_used": [
+      "causal",
+      "info"
+    ],
+    "total_pairs": 9,
+    "matching_pairs": 9,
+    "is_exact_match": true,
+    "mismatched_pairs": [],
+    "incomparable_in_ref": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ],
+    "incomparable_in_mag": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ]
+  },
+  "comparison_3axis_obs": {
+    "axes_used": [
+      "causal",
+      "info",
+      "obs_access"
+    ],
+    "total_pairs": 9,
+    "matching_pairs": 9,
+    "is_exact_match": true,
+    "mismatched_pairs": [],
+    "incomparable_in_ref": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ],
+    "incomparable_in_mag": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ]
+  },
+  "comparison_4axis": {
+    "axes_used": [
+      "causal",
+      "info",
+      "obs_access",
+      "branch"
+    ],
+    "total_pairs": 9,
+    "matching_pairs": 9,
+    "is_exact_match": true,
+    "mismatched_pairs": [],
+    "incomparable_in_ref": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ],
+    "incomparable_in_mag": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ]
+  },
+  "topological_sorts": [
+    [
+      "e1_A_locking",
+      "e2_B_locking",
+      "e3_composite_locking"
+    ],
+    [
+      "e2_B_locking",
+      "e1_A_locking",
+      "e3_composite_locking"
+    ]
+  ],
+  "anti_scalar": {
+    "incomparable_pairs": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ],
+    "total_preorder_possible": false,
+    "theorem_holds": true
+  },
+  "hypothesis_evaluations": [
+    {
+      "id": "H_MAGNITUDE_MATCH",
+      "claim": "2-axis (causal, info) componentwise order matches record-dependency order exactly",
+      "status": "supported",
+      "evidence": "9/9 pairs match; mismatches=[]"
+    },
+    {
+      "id": "H_TOPO_AMBIGUITY",
+      "claim": "Valid topological sort count = 2 (one per root-event interleaving)",
+      "status": "supported",
+      "evidence": "2 valid sorts: [['e1_A_locking', 'e2_B_locking', 'e3_composite_locking'], ['e2_B_locking', 'e1_A_locking', 'e3_composite_locking']]; expected 2"
+    },
+    {
+      "id": "H_ANTI_SCALAR",
+      "claim": "No scalar utility function can replicate a partial order with incomparable elements",
+      "status": "supported",
+      "evidence": "incomparable pairs=[('e1_A_locking', 'e2_B_locking')]; total preorder possible=False"
+    },
+    {
+      "id": "H_NO_TIME_INPUT",
+      "claim": "Reconstruction uses no temporal variable; order is derived, not presupposed",
+      "status": "supported",
+      "evidence": "all definitions verified: AxisProfile, magnitude order, topo sort \u2014 no temporal variable"
+    }
+  ],
+  "best_supported": "H_MAGNITUDE_MATCH, H_TOPO_AMBIGUITY, H_ANTI_SCALAR, H_NO_TIME_INPUT (all four hold)"
+}

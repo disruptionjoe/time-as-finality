@@ -42,6 +42,14 @@ the redundancy coordinate tracks `R_delta` monotonically, or whether states
 exist with high `R_delta` but low D1 due to inaccessible fragments, branch
 dependence, or reversal cost.
 
+T62 implements the first noisy channel-level audit. It separates total raw
+`R_delta`, accessible raw `R_delta`, and independence-corrected accessible
+`R_delta`. The key boundary case is `raw_duplicate_boundary`: raw accessible
+redundancy is `3`, but independence-corrected D1 holder redundancy is `2`
+because one record is a correlated duplicate. This does not refute Quantum
+Darwinism; it forces TaF to inherit Quantum Darwinism's fragment-partition
+discipline.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing
@@ -72,6 +80,12 @@ The probability extension compares classical score `2`, quantum Tsirelson score 
 and PR-box no-signalling score `4`. Decoherence can say each local context has a classical
 record; TaF adds the global-section and CHSH-regime check. The remaining work is a detector-level
 or experimental mapping.
+
+T62 adds a noisy threshold witness: `decohered_not_darwinist` suppresses the
+pointer-coherence proxy below threshold while no individual fragment crosses
+the information threshold. This is not uniquely TaF; standard decoherence
+versus Quantum-Darwinism language already describes it. TaF's additional
+content appears only in the access-boundary and independence-filter witnesses.
 
 **Falsification condition for TaF:** If the H1 sheaf obstruction vanishes whenever all pairwise
 decoherence records are formed, TaF's global-consistency check reduces to local decoherence.

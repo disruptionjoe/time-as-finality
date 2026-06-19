@@ -4,10 +4,12 @@ The agentic research operating layer for Time as Finality. Read
 [`RESEARCH-OPERATING-MODEL.md`](RESEARCH-OPERATING-MODEL.md) first — it defines
 how the program thinks. This README is the structural index.
 
-> **Phase status:** Phase 2 (skeleton). Workflow files are lightweight
-> placeholders; behavior is designed in Phase 3 and automated in Phase 4. See
+> **Phase status:** Phase 3 workflow design complete (2 LOCKED + 16 lock-candidate);
+> Phase 3.5 memory layer **built** (`context-packs/`); Phase 4 automation
+> **designed but NOT armed** (`automation/`). This README is the canonical
+> route-target catalog (the family lists below). See
 > [`PROJECT-LOG.md`](PROJECT-LOG.md) and
-> [`WORKFLOW-SKELETON-PROPOSAL.md`](WORKFLOW-SKELETON-PROPOSAL.md).
+> [`registries/decision-history.md`](registries/decision-history.md).
 
 ## Three families
 
@@ -44,12 +46,12 @@ how the program thinks. This README is the structural index.
   `registries/decision-history.md` (DEC-NNN).
 - **Authority order:** `RESEARCH-OPERATING-MODEL.md` §11.
 
-## How to run a workflow (Phase 2)
+## How to run a workflow
 
 A workflow is markdown-prompt-only for now. An agent: (1) opens the workflow
 file, (2) reads the inputs it names (registries + recent logs first), (3) acts,
 (4) appends durable outputs and a run log, ending with the verdict block. No
-automation or scheduled triggers exist yet (Phase 4).
+triggers are armed yet; Phase 4 automation is designed (`automation/`) but not armed.
 
 ## Templates
 

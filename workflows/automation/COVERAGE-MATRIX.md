@@ -1277,8 +1277,8 @@ to be intrinsically un-runnable; each has a stated bounding strategy.
 - **Concrete cadences and numeric thresholds are undecided** (registry-size
   trigger for graph audits; round-robin period; summarizer cadence; persona-gap
   recurrence bar; budget caps). Recorded as threshold/periodic specs, not policy.
-- **Memory layer not yet built** — `memory-pack-summarizer` and every
-  `memory_pack_used` read are inert until Phase 3.5 build completes.
+- **Memory layer built (DEC-023) but not yet wired/validated** — `memory-pack-summarizer` and every
+  `memory_pack_used` read are inert until the load hook + shadow-run validation are done.
 - **deep-panel-review** is treated as an event sub-atom (not its own workflow);
   whether it becomes a standalone workflow remains open (line-review deferred item).
 - **0-3 standing calibration anchors** still pending (line-review OQ#3) — affects

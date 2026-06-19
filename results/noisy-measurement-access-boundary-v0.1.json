@@ -1,0 +1,407 @@
+{
+  "scenarios": [
+    {
+      "name": "redundant_accessible_control",
+      "purpose": "Positive control where decoherence, total redundancy, and observer-relative finality agree.",
+      "observer_access": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "reconstruction_threshold": 2,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "E1",
+          "holder": "left_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "left_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "E2",
+          "holder": "right_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "right_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "E3",
+          "holder": "remote_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "remote_channel",
+          "branch_id": "z_pointer"
+        }
+      ],
+      "pointer_coherence_abs": 0.0005,
+      "fragment_information_bits": [
+        [
+          "E1",
+          0.919206864104
+        ],
+        [
+          "E2",
+          0.919206864104
+        ],
+        [
+          "E3",
+          0.919206864104
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 3,
+      "accessible_r_delta_independent": 3,
+      "d1_profile": {
+        "accessible_support": 3,
+        "holder_redundancy": 3,
+        "branch_support": 1,
+        "reversal_cost": 2,
+        "profile_tuple": [
+          3,
+          3,
+          1,
+          2
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "darwinism_redundant_total": true,
+        "observer_finalized": true,
+        "redundant_but_inaccessible": false,
+        "decohered_without_darwinism": false,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "alignment_control",
+      "interpretation": "Decoherence, total environmental redundancy, and observer-relative D1 finality agree."
+    },
+    {
+      "name": "decohered_not_darwinist",
+      "purpose": "Pointer coherence is suppressed by many weak scatterers, but no single fragment crosses the information threshold.",
+      "observer_access": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8"
+      ],
+      "reconstruction_threshold": 2,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "W1",
+          "holder": "weak_bath_1",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_1",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W2",
+          "holder": "weak_bath_2",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_2",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W3",
+          "holder": "weak_bath_3",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_3",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W4",
+          "holder": "weak_bath_4",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_4",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W5",
+          "holder": "weak_bath_5",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_5",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W6",
+          "holder": "weak_bath_6",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_6",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W7",
+          "holder": "weak_bath_7",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_7",
+          "branch_id": "weak_scattering"
+        },
+        {
+          "name": "W8",
+          "holder": "weak_bath_8",
+          "readout_reliability": 0.68,
+          "decoherence_factor": 0.45,
+          "independence_class": "weak_8",
+          "branch_id": "weak_scattering"
+        }
+      ],
+      "pointer_coherence_abs": 0.00084075627,
+      "fragment_information_bits": [
+        [
+          "W1",
+          0.095618542276
+        ],
+        [
+          "W2",
+          0.095618542276
+        ],
+        [
+          "W3",
+          0.095618542276
+        ],
+        [
+          "W4",
+          0.095618542276
+        ],
+        [
+          "W5",
+          0.095618542276
+        ],
+        [
+          "W6",
+          0.095618542276
+        ],
+        [
+          "W7",
+          0.095618542276
+        ],
+        [
+          "W8",
+          0.095618542276
+        ]
+      ],
+      "total_r_delta_raw": 0,
+      "accessible_r_delta_raw": 0,
+      "accessible_r_delta_independent": 0,
+      "d1_profile": {
+        "accessible_support": 0,
+        "holder_redundancy": 0,
+        "branch_support": 0,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "darwinism_redundant_total": false,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": false,
+        "decohered_without_darwinism": true,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "decohered_without_redundant_records",
+      "interpretation": "The pointer is decohered by weak scattering, but no individual fragment is an above-threshold redundant record."
+    },
+    {
+      "name": "redundant_but_inaccessible",
+      "purpose": "Environmental records exist, but the observer has no access window onto them.",
+      "observer_access": [],
+      "reconstruction_threshold": 2,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "E1",
+          "holder": "left_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "left_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "E2",
+          "holder": "right_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "right_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "E3",
+          "holder": "remote_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "remote_channel",
+          "branch_id": "z_pointer"
+        }
+      ],
+      "pointer_coherence_abs": 0.0005,
+      "fragment_information_bits": [
+        [
+          "E1",
+          0.919206864104
+        ],
+        [
+          "E2",
+          0.919206864104
+        ],
+        [
+          "E3",
+          0.919206864104
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 0,
+      "accessible_r_delta_independent": 0,
+      "d1_profile": {
+        "accessible_support": 0,
+        "holder_redundancy": 0,
+        "branch_support": 0,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "darwinism_redundant_total": true,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": true,
+        "decohered_without_darwinism": false,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "redundant_but_inaccessible",
+      "interpretation": "The environment carries redundant records, but this observer has no accessible finalized record."
+    },
+    {
+      "name": "raw_duplicate_boundary",
+      "purpose": "Raw fragment count crosses threshold, but one record is a correlated duplicate rather than an independent holder.",
+      "observer_access": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "D1",
+          "holder": "left_array_1",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "left_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "D2",
+          "holder": "right_array",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "right_channel",
+          "branch_id": "z_pointer"
+        },
+        {
+          "name": "D3",
+          "holder": "left_array_2",
+          "readout_reliability": 0.99,
+          "decoherence_factor": 0.1,
+          "independence_class": "left_channel",
+          "branch_id": "z_pointer"
+        }
+      ],
+      "pointer_coherence_abs": 0.0005,
+      "fragment_information_bits": [
+        [
+          "D1",
+          0.919206864104
+        ],
+        [
+          "D2",
+          0.919206864104
+        ],
+        [
+          "D3",
+          0.919206864104
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 3,
+      "accessible_r_delta_independent": 2,
+      "d1_profile": {
+        "accessible_support": 3,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "darwinism_redundant_total": true,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": false,
+        "decohered_without_darwinism": false,
+        "raw_redundancy_overcounts_independence": true
+      },
+      "classification": "raw_redundancy_overcounts_independence",
+      "interpretation": "Raw fragment redundancy crosses the threshold, but D1 rejects finalization because the declared independence partition has too few independent holder classes."
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H1",
+      "status": "supported",
+      "claim": "Decoherence, total environmental redundancy, and observer-relative finality are distinct predicates.",
+      "evidence": "The matrix contains one alignment control plus separate decohered-not-Darwinist, redundant-inaccessible, and duplicate-overcount witnesses."
+    },
+    {
+      "id": "H2",
+      "status": "supported",
+      "claim": "Q1's strongest surviving content is observer-access indexing over classical record availability.",
+      "evidence": "redundant_but_inaccessible has decoherence and total R_delta but D1 profile (0, 0, 0, 0)."
+    },
+    {
+      "id": "H3",
+      "status": "weakened",
+      "claim": "TaF does not earn an independent noisy measurement dynamics claim from this audit.",
+      "evidence": "The decohered-not-Darwinist case is already natural in standard decoherence versus Quantum Darwinism language; TaF adds only access-boundary and independence bookkeeping."
+    },
+    {
+      "id": "H4",
+      "status": "open",
+      "claim": "The thresholds and independence classes need detector-level or Hamiltonian justification before external physics claims.",
+      "evidence": "Changing the information threshold or independence partition can flip the D1 predicate without changing the abstract channel family."
+    }
+  ],
+  "strongest_claim": "In the T62 channel-level model, TaF can distinguish 'decohered', 'environmentally redundant', and 'final for this observer' without adding collapse or hidden variables.",
+  "weakened_claim": "T62 weakens Q1 away from any claim of new measurement dynamics. The earned claim is an access-boundary discriminator layered on top of decoherence and Quantum-Darwinism-style records.",
+  "falsification_condition": "If physically justified access boundaries and independence classes cannot be specified in a detector-level model, or if D1 predicates always reduce to standard R_delta under those specifications, Q1 adds no independent content for measurement.",
+  "recommended_next": "Build the detector-level version: a noisy Stern-Gerlach or photon scattering readout with explicit fragment partition, access window, threshold sensitivity, and no-signalling checks."
+}

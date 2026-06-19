@@ -285,3 +285,72 @@ Path A achieves conditions 1 and 2, and partially achieves 3 and 4. The correct 
 The classical bound 2 emerges cleanly as the global-section threshold. Recovering the Tsirelson bound requires additional quantum structure outside the presheaf definition. The T58 formal target condition 4 should be revised to the weaker claim: the presheaf gives the classical/nonclassical boundary (CHSH > 2) but not the quantum/post-quantum boundary (CHSH > 2*sqrt(2)).
 
 **Claim-status recommendation for T58 conditions 1-4:** Conditions 1 and 2 are fully satisfied. Condition 3 holds in the sheaf-of-sets (Abramsky-Brandenburger) formulation. Condition 4 holds for the classical bound only. T58 should update its formal target to specify the sheaf-of-sets cohomology theory and weaken condition 4 to the classical/nonclassical split.
+
+---
+
+## Three-Angle Investigation Results
+
+*Executed 2026-06-19 — three parallel subagents attacking the question: does TaF add anything to Abramsky-Brandenburger?*
+
+### Agent 1: Access-Boundary Constraint
+
+**Result: Negative (clean and valuable)**
+
+TaF's access-boundary constraint (D1 accessible_support restricted to causally local records) does NOT rule out any no-signalling contextual models beyond what A-B identifies. The global-section obstruction is combinatorial — a fact about the assignment space {-1,+1}^4 — and changing the D1 profile does not affect that layer. Verified by exhaustive comparison of classical, A-B-style, TaF-style, and PR-box D1RestrictionSystems: obstruction verdict is identical, profiles differ.
+
+What TaF genuinely adds at this level (not vacuous, but at a different layer):
+- Observer-indexed finality layering: distinguishes "locally finalized by Alice at measurement time" from "jointly finalized after causal reconciliation" — A-B has no such distinction.
+- No global commit order: R1 is explicitly encoded in D1 profiles; A-B takes a god's-eye view.
+- D1 profile granularity: within a fixed contextuality class, TaF distinguishes contexts by accessible_support, holder_redundancy, branch_support, reversal_cost. A-B gives only a binary contextual/noncontextual verdict.
+
+Code: `models/t58_access_boundary_test.py`
+
+### Agent 2: Finalization Preorder Discrimination
+
+**Result: Partial positive (conditional on physical grounding of branch_support)**
+
+D1's branch_causal_independence dimension discriminates quantum distributions from the PR-box in a way A-B cannot.
+
+The PR-box requires branch_support = 4: its perfectly deterministic correlations (C = ±1 in all four contexts) require four context-specific pre-committed outcome functions. Fine's theorem shows no global assignment satisfies all four, but the D1 requirement is: each context's determinism requires a distinct causally independent branch. At spacelike separation, only 2 causally independent branches are available (Alice's branch + Bob's branch). Branch_support_required (4) > branch_support_causally_available (2) ? D1-inadmissible.
+
+Quantum Tsirelson distributions require only branch_support = 2: non-deterministic outcomes (C ˜ 0.707 ? ±1) mean no context-specific pre-commitment is needed. Two independent branches suffice to produce the correct joint marginals stochastically. D1-admissible.
+
+**D1 Branch Independence Admissibility (D1-BIA) — theorem candidate:**
+
+For a bipartite Bell scenario with spacelike-separated parties, a finalization assignment is D1-admissible only if branch_support(reconciler) = 2. This is satisfied by all quantum distributions and violated by the PR-box.
+
+Honest caveat: branch_support is "formal only" per T22's physical reduction audit — it lacks a physical grounding analogous to T22's holder_redundancy / Quantum Darwinism match. D1-BIA is a structural discrimination, not yet a physically derived one. Does not independently derive 2v2.
+
+Code: `models/t58_finalization_preorder_test.py`
+
+### Agent 3: Observer-Indexed Contextuality
+
+**Result: Positive — genuinely new structure**
+
+Found distributed contextuality: a phenomenon that cannot be expressed in A-B's framework.
+
+Alice's sub-cover (contexts {A0B0, A0B1}, overlap {A0}) is unobstructed: H¹ = 0, 8 consistent hidden-variable assignments exist. Bob's sub-cover (contexts {A1B0, A1B1}, overlap {A1}) is unobstructed: H¹ = 0, 8 consistent assignments. Combined four-context cover: H¹ ? 0, quantum CHSH = 2v2 > 2, no global section.
+
+The obstruction site is precisely the inter-observer overlaps {B0} and {B1} — the B-setting marginals connecting Alice's contexts to Bob's. Neither observer can verify these marginal-consistency constraints without comparing records across access boundaries.
+
+**Distributed Contextuality Theorem (candidate):** For a bipartite CHSH setup with TaF observers Alice and Bob each holding 2-context contractible sub-covers, and quantum empirical model achieving CHSH = 2v2:
+
+- H¹(Alice's sub-cover) = 0
+- H¹(Bob's sub-cover) = 0
+- H¹(combined cover) ? 0
+
+The gap is exactly the inter-observer overlaps.
+
+**What is genuinely new relative to A-B:** A-B has one cover, one empirical model, one H¹ — no decomposition. It cannot express "contextuality that is H¹ = 0 at every proper sub-cover." TaF's observer-indexed access boundaries make the sub-cover lattice a first-class structure. The Distributed Contextuality Theorem identifies the exact locus of the obstruction (inter-observer overlaps), not just its existence. This is a new prediction: not just that Bell is violated, but WHERE in the observer-boundary structure the violation lives.
+
+Code: `models/t58_multi_observer_test.py`
+
+### Overall verdict on the A-B comparison question
+
+TaF adds three things to Abramsky-Brandenburger:
+
+1. **Richer local description** (D1 profile granularity within contextuality class) — not a new global-section boundary
+2. **Branch-support discrimination** of quantum vs. post-quantum — conditional on physical grounding of branch_support
+3. **Distributed contextuality theorem** — genuinely new structure requiring observer-indexed sub-cover lattice; cannot be stated in A-B
+
+The Distributed Contextuality Theorem is the clearest new result. It should be extracted as a standalone test once the formalism is tightened.

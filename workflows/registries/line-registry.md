@@ -130,6 +130,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - `explore/line-incubation` advances early-lifecycle lines.
 - `exploit/*` advances, challenges, integrates active lines.
 - `govern/line-review` re-scores and reconciles standing; `govern/lifecycle-review`
-  applies promotion/demotion/archival and adjudicates survival arguments.
+  proposes (patch-first) promotion/demotion/archival and adjudicates survival
+  arguments (an accept step applies them).
 - Status of individual claims/tests/hypotheses is **never** edited here — only on
   the authoritative surfaces named above.

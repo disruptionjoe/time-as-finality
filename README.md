@@ -56,6 +56,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - comparative result across reversible and irreversible local dynamics.
 - [TECHNICAL-REPORT-quantum-measurement-finality-v0.1.md](TECHNICAL-REPORT-quantum-measurement-finality-v0.1.md)
   - dynamical system-apparatus-environment measurement finality lab.
+- [TECHNICAL-REPORT-noisy-measurement-access-boundary-v0.1.md](TECHNICAL-REPORT-noisy-measurement-access-boundary-v0.1.md)
+  - noisy channel-level discriminator separating decoherence, environmental
+    redundancy, and observer-relative finality.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -294,6 +297,7 @@ python -m models.run_t56
 python -m models.run_t57
 python -m models.run_t58
 python -m models.run_t59
+python -m models.run_t62
 ```
 
 ## Run Explorations

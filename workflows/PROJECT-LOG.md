@@ -55,6 +55,41 @@ decisions made, rationale, open questions, deferred ideas, next recommended step
 
 ---
 
+## Session 18 — 2026-06-19
+
+**Goals**
+
+- QA pass over Phases 3, 3.5, and 4.
+
+**Done**
+
+- Structural scan (orchestrator): 77 checks pass; 5 issues triaged.
+- Fresh-eyes semantic review (independent subagent, DEC-021): **zero blockers**;
+  system judged sound — propose/canonize split holds, no authority leaks, two-axis
+  correct, memory packs guidance-only, all 65 triggers NOT-ARMED.
+- **Fixes applied:** document contracts added to 3 registries (foundation-queue,
+  information-portfolio, persona-clusters); README phase banner + how-to refreshed
+  out of "Phase 2 placeholders" (M1); coverage-matrix "memory layer not yet built"
+  corrected to "built but not wired/validated" (M2); line-registry "applies" →
+  "proposes (patch-first)" for lifecycle-review (m4).
+- **Deferred (minor/cosmetic):** `tests/` route owner (m2); ROM §3 vs
+  information-portfolio gain-type vocab (m5); RL-006 "why this stage" wording.
+  Locked-file `docket-triage` wording left as accepted errata (superseded by
+  DEC-022). Full register in `QA-REPORT-phase3-3.5-4.md`.
+
+**Verdict**
+
+- Phase 3/3.5/4 sound. The 16 lock-candidates are clear to flip to LOCKED; arming
+  prerequisites unchanged and honestly disclosed.
+
+**Next recommended step**
+
+- Flip the 16 to LOCKED (your call); action deferred minors opportunistically;
+  resolve arming prerequisites before arming any trigger. No commit (local left
+  for the commit agent).
+
+---
+
 ## Session 17 — 2026-06-19
 
 **Goals**

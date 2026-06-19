@@ -58,6 +58,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T57](tests/T57-finality-reflection-property.md) | Finality Reflection Property | C1, D1-Field, T56 | implemented: FRP holds for the T56 apparent-order model across two finite record lattices; G(U)=A(U)-F(U) is restriction-closed; generic complement counterexample refutes automatic complement closure; arrow-direction circularity remains open |
 | [T58](tests/T58-gap-phantom-equivalence.md) | Gap-phantom equivalence audit | C1, D1-Field, T56 | implemented: H0(G) matches phantom incomparability witnesses for the tested T51/T52 well-formed extension cases; local reversal control shows F(U) subset A(U) is required |
 | [T59](tests/T59-finite-to-infinite-boundary-audit.md) | Finite-to-infinite boundary audit | CSP-PO1, PO1, S1, Q1, H7, HEF | implemented: Mobius orientation witness separates transition-aware Z2 parity success from coefficient-blind scalar false global section; continuous-domain parity claims require coefficient and transition data |
+| [T62](tests/T62-noisy-measurement-access-boundary.md) | Noisy measurement access-boundary discriminator | Q1, D1, T2, T22 | implemented: noisy channel-level matrix separates decoherence, Quantum-Darwinism redundancy, and observer-relative finality; Q1 weakened to access-boundary discriminator |
 
 ## Minimum Compatibility Constraints
 
@@ -122,6 +123,7 @@ python -m models.run_t55
 python -m models.run_t57
 python -m models.run_t58
 python -m models.run_t59
+python -m models.run_t62
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -168,6 +170,7 @@ The suites use only Python's standard library. Evidence records:
 - [Finality Reflection Property v0.1 Results](results/finality-reflection-property-v0.1-results.md)
 - [Gap-Phantom Equivalence v0.1 Results](results/gap-phantom-equivalence-v0.1-results.md)
 - [Finite-to-Infinite Boundary Audit v0.1 Results](results/finite-to-infinite-boundary-audit-v0.1-results.md)
+- [Noisy Measurement Access-Boundary v0.1 Results](results/noisy-measurement-access-boundary-v0.1-results.md)
 
 ## How To Add A Test
 

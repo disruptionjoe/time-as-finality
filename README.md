@@ -156,6 +156,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     valid topological sorts; Anti-Scalar Theorem confirmed (no total preorder
     can replicate a partial order with incomparable elements); no temporal
     variable in any reconstruction definition; all four hypotheses supported.
+- [TECHNICAL-REPORT-axis-monotonicity-theorem-v0.1.md](results/axis-monotonicity-theorem-v0.1-results.md)
+  - Axis Monotonicity Theorem: AM is the exact condition under which finality-axis
+    dominance equals record-dependency order; sufficiency theorem proved;
+    minimal counterexample constructed (1 MISSING violation via causal-axis
+    reversal); axis necessity confirmed ({causal, info} is minimal basis);
+    Anti-Scalar Corollary derived; all four hypotheses supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -239,6 +245,7 @@ python -m models.run_t45
 python -m models.run_t47
 python -m models.run_t48
 python -m models.run_t49
+python -m models.run_t50
 ```
 
 ## Run Explorations

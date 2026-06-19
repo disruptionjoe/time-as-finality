@@ -1,0 +1,106 @@
+{
+  "am_normal": {
+    "witness_name": "T48_normal",
+    "axes": [
+      "causal",
+      "info"
+    ],
+    "pairs_checked": 6,
+    "am_holds": true,
+    "violation_count": 0,
+    "spurious_count": 0,
+    "missing_count": 0,
+    "violations": []
+  },
+  "am_violating": {
+    "witness_name": "T50_violating",
+    "axes": [
+      "causal",
+      "info"
+    ],
+    "pairs_checked": 6,
+    "am_holds": false,
+    "violation_count": 1,
+    "spurious_count": 0,
+    "missing_count": 1,
+    "violations": [
+      {
+        "event_j": "e1_A_locking",
+        "event_i": "e3_violating",
+        "in_record_order": true,
+        "in_magnitude_order": false
+      }
+    ]
+  },
+  "axis_necessity": {
+    "causal_only": {
+      "axes_used": [
+        "causal"
+      ],
+      "total_pairs": 6,
+      "matching_pairs": 5,
+      "is_exact_match": false,
+      "spurious_pairs": [
+        [
+          "e2_B_locking",
+          "e1_A_locking"
+        ]
+      ],
+      "missing_pairs": []
+    },
+    "info_only": {
+      "axes_used": [
+        "info"
+      ],
+      "total_pairs": 6,
+      "matching_pairs": 5,
+      "is_exact_match": false,
+      "spurious_pairs": [
+        [
+          "e1_A_locking",
+          "e2_B_locking"
+        ]
+      ],
+      "missing_pairs": []
+    },
+    "two_axis": {
+      "axes_used": [
+        "causal",
+        "info"
+      ],
+      "total_pairs": 6,
+      "matching_pairs": 6,
+      "is_exact_match": true,
+      "spurious_pairs": [],
+      "missing_pairs": []
+    }
+  },
+  "anti_scalar_holds": true,
+  "hypothesis_evaluations": [
+    {
+      "id": "H_AM_SUFFICIENCY",
+      "claim": "AM holds on T48 witness; 2-axis order matches record order exactly",
+      "status": "supported",
+      "evidence": "AM: violations=0; 2-axis match=6/6"
+    },
+    {
+      "id": "H_AM_VIOLATION",
+      "claim": "AM fails on violating witness; magnitude order diverges from record order",
+      "status": "supported",
+      "evidence": "violations=1; missing=1; spurious=0; pairs: [('e1_A_locking', 'e3_violating')]"
+    },
+    {
+      "id": "H_AXIS_NECESSITY",
+      "claim": "Causal alone and info alone each introduce spurious pairs; both axes are necessary",
+      "status": "supported",
+      "evidence": "causal-only spurious=(('e2_B_locking', 'e1_A_locking'),); info-only spurious=(('e1_A_locking', 'e2_B_locking'),); 2-axis spurious=()"
+    },
+    {
+      "id": "H_ANTI_SCALAR_COROLLARY",
+      "claim": "AM + incomparability implies no scalar time coordinate can reproduce the order",
+      "status": "supported",
+      "evidence": "AM holds=True; incomparable pairs=[('e1_A_locking', 'e2_B_locking')]; corollary holds=True"
+    }
+  ],
+  "best_supported": "H_AM_SUFFICIENCY, H_AM_VIOLATION, H_AXIS_NECESSITY, H_ANTI_SCALAR_COROLLARY (all four hold)"
+}

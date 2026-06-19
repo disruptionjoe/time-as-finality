@@ -162,6 +162,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     minimal counterexample constructed (1 MISSING violation via causal-axis
     reversal); axis necessity confirmed ({causal, info} is minimal basis);
     Anti-Scalar Corollary derived; all four hypotheses supported.
+- [TECHNICAL-REPORT-multi-observer-apparent-finality-colimit-v0.1.md](results/multi-observer-apparent-finality-colimit-v0.1-results.md)
+  - Multi-Observer Apparent Finality Colimit: colimit of two observer-relative
+    FinaliEvent Structures is a consistent partial order (T47 acyclicity
+    guarantees this); bounded record access produces one phantom incomparability
+    (e1 || e3 apparent, e1 ≤ e3 in colimit); event finality strictly extends
+    apparent finality; all three hypotheses supported.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -246,6 +252,7 @@ python -m models.run_t47
 python -m models.run_t48
 python -m models.run_t49
 python -m models.run_t50
+python -m models.run_t51
 ```
 
 ## Run Explorations

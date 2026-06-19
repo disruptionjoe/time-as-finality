@@ -1,0 +1,265 @@
+{
+  "observer_a": {
+    "name": "Observer_A",
+    "record_bases": [
+      {
+        "system": "U1_source_A",
+        "records": [
+          "r_A_coherent",
+          "r_A_raw"
+        ]
+      },
+      {
+        "system": "U2_source_B",
+        "records": [
+          "r_B_coherent",
+          "r_B_raw"
+        ]
+      },
+      {
+        "system": "U3_composite_source",
+        "records": [
+          "r_A_locked",
+          "r_B_locked",
+          "r_composite_raw"
+        ]
+      },
+      {
+        "system": "O1_locked_A",
+        "records": [
+          "r_A_locked"
+        ]
+      },
+      {
+        "system": "O2_locked_B",
+        "records": [
+          "r_B_locked"
+        ]
+      },
+      {
+        "system": "O3_locked_composite",
+        "records": [
+          "r_A_locked",
+          "r_B_locked",
+          "r_composite_locked"
+        ]
+      }
+    ],
+    "apparent_order_pairs": [
+      [
+        "e1_A_locking",
+        "e3_composite_locking"
+      ],
+      [
+        "e2_B_locking",
+        "e3_composite_locking"
+      ]
+    ],
+    "incomparable_pairs": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ]
+    ]
+  },
+  "observer_b": {
+    "name": "Observer_B",
+    "record_bases": [
+      {
+        "system": "U1_source_A",
+        "records": [
+          "r_A_coherent",
+          "r_A_raw"
+        ]
+      },
+      {
+        "system": "U2_source_B",
+        "records": [
+          "r_B_coherent",
+          "r_B_raw"
+        ]
+      },
+      {
+        "system": "U3_composite_source",
+        "records": [
+          "r_B_locked",
+          "r_composite_raw"
+        ]
+      },
+      {
+        "system": "O1_locked_A",
+        "records": [
+          "r_A_locked"
+        ]
+      },
+      {
+        "system": "O2_locked_B",
+        "records": [
+          "r_B_locked"
+        ]
+      },
+      {
+        "system": "O3_locked_composite",
+        "records": [
+          "r_A_locked",
+          "r_B_locked",
+          "r_composite_locked"
+        ]
+      }
+    ],
+    "apparent_order_pairs": [
+      [
+        "e2_B_locking",
+        "e3_composite_locking"
+      ]
+    ],
+    "incomparable_pairs": [
+      [
+        "e1_A_locking",
+        "e2_B_locking"
+      ],
+      [
+        "e1_A_locking",
+        "e3_composite_locking"
+      ]
+    ]
+  },
+  "colimit": {
+    "merged_bases": [
+      {
+        "system": "O1_locked_A",
+        "records": [
+          "r_A_locked"
+        ]
+      },
+      {
+        "system": "O2_locked_B",
+        "records": [
+          "r_B_locked"
+        ]
+      },
+      {
+        "system": "O3_locked_composite",
+        "records": [
+          "r_A_locked",
+          "r_B_locked",
+          "r_composite_locked"
+        ]
+      },
+      {
+        "system": "U1_source_A",
+        "records": [
+          "r_A_coherent",
+          "r_A_raw"
+        ]
+      },
+      {
+        "system": "U2_source_B",
+        "records": [
+          "r_B_coherent",
+          "r_B_raw"
+        ]
+      },
+      {
+        "system": "U3_composite_source",
+        "records": [
+          "r_A_locked",
+          "r_B_locked",
+          "r_composite_raw"
+        ]
+      }
+    ],
+    "colimit_order_pairs": [
+      [
+        "e1_A_locking",
+        "e3_composite_locking"
+      ],
+      [
+        "e2_B_locking",
+        "e3_composite_locking"
+      ]
+    ],
+    "reflexive": true,
+    "antisymmetric": true,
+    "transitive": true,
+    "is_partial_order": true,
+    "new_orderings": [
+      [
+        "e1_A_locking",
+        "e3_composite_locking"
+      ]
+    ]
+  },
+  "phantom_results": [
+    {
+      "observer": "Observer_A",
+      "event_j": "e1_A_locking",
+      "event_i": "e2_B_locking",
+      "observer_sees": "incomparable",
+      "colimit_says": "incomparable",
+      "is_phantom": false
+    },
+    {
+      "observer": "Observer_A",
+      "event_j": "e1_A_locking",
+      "event_i": "e3_composite_locking",
+      "observer_sees": "leq",
+      "colimit_says": "leq",
+      "is_phantom": false
+    },
+    {
+      "observer": "Observer_A",
+      "event_j": "e2_B_locking",
+      "event_i": "e3_composite_locking",
+      "observer_sees": "leq",
+      "colimit_says": "leq",
+      "is_phantom": false
+    },
+    {
+      "observer": "Observer_B",
+      "event_j": "e1_A_locking",
+      "event_i": "e2_B_locking",
+      "observer_sees": "incomparable",
+      "colimit_says": "incomparable",
+      "is_phantom": false
+    },
+    {
+      "observer": "Observer_B",
+      "event_j": "e1_A_locking",
+      "event_i": "e3_composite_locking",
+      "observer_sees": "incomparable",
+      "colimit_says": "leq",
+      "is_phantom": true
+    },
+    {
+      "observer": "Observer_B",
+      "event_j": "e2_B_locking",
+      "event_i": "e3_composite_locking",
+      "observer_sees": "leq",
+      "colimit_says": "leq",
+      "is_phantom": false
+    }
+  ],
+  "t47_consistency": "Colimit is antisymmetric: T47 acyclicity prevents record cycles for PO1-admissible events, guaranteeing colimit consistency.",
+  "hypothesis_evaluations": [
+    {
+      "id": "H_COLIMIT_CONSISTENT",
+      "claim": "Colimit of S_A and S_B is a valid partial order (no antisymmetry violations)",
+      "status": "supported",
+      "evidence": "reflexive=True, antisymmetric=True, transitive=True"
+    },
+    {
+      "id": "H_PHANTOM_INCOMPARABILITY",
+      "claim": "Observer B's apparent order has phantom incomparability; colimit reveals ordering",
+      "status": "supported",
+      "evidence": "[('e1_A_locking', 'e3_composite_locking', 'incomparable', 'leq')]"
+    },
+    {
+      "id": "H_COLIMIT_EXTENDS",
+      "claim": "Colimit strictly extends Observer B's apparent order (new orderings emerge)",
+      "status": "supported",
+      "evidence": "new_orderings=(('e1_A_locking', 'e3_composite_locking'),)"
+    }
+  ],
+  "best_supported": "H_COLIMIT_CONSISTENT, H_PHANTOM_INCOMPARABILITY, H_COLIMIT_EXTENDS (all three hold)"
+}

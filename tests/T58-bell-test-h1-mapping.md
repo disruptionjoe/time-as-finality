@@ -1,6 +1,6 @@
 # T58: Bell-Test-to-H¬π Mapping
 
-**Status:** open_formal_target
+**Status:** in_progress ‚Äî Step 1 complete; Boolean variant resolved; real-valued variant is next
 **Prerequisite tests:** T13 (finality sheaf cohomology), T21 (CHSH contextuality)
 **Touches claims:** Q1, D1, R1
 
@@ -168,3 +168,56 @@ violation would be the first such consequence at the cohomological level.
 
 A negative result constrains which physical phenomena can be addressed through
 H¬π and redirects to the H‚Å∞(G) gap-presheaf structure from T56 and T57.
+
+---
+
+## Step 1 Results ó dim(Cπ) Calculation
+
+*Executed 2026-06-19*
+
+### Cover topology
+
+The CHSH context cover {U_00=A0B0, U_01=A0B1, U_10=A1B0, U_11=A1B1} has 6 pairwise intersections:
+
+| Pair | Shared setting | Non-empty? |
+|---|---|---|
+| U_00 n U_01 | A0 | YES |
+| U_00 n U_10 | B0 | YES |
+| U_10 n U_11 | A1 | YES |
+| U_01 n U_11 | B1 | YES |
+| U_00 n U_11 | none | EMPTY |
+| U_01 n U_10 | none | EMPTY |
+
+The cover graph is a 4-cycle: U_00 ó U_01 ó U_11 ó U_10 ó U_00, with both diagonals absent.
+
+### dim(Cπ) = 4
+
+Four non-empty pairwise overlaps, each with a single-bit stalk (the shared measurement outcome value in Z/2). The T56 failure mode (dim(Cπ) = 0 vacuously) does not apply here.
+
+### All triple overlaps are empty
+
+Every triple contains at least one of the diagonal pairs (U_00, U_11) or (U_01, U_10), which share no measurement setting. Therefore C≤ = 0 and the cocycle condition dπ(c) = 0 is satisfied vacuously by every element of Cπ. The cocycle check is uninformative.
+
+### The parity constraint under Z/2 coefficients
+
+**Variant A (single-setting outcome stalks):** The CHSH parity constraint does not appear in Cπ at all ó all patches agree on shared settings, so the 1-cochain is zero everywhere. The obstruction lives in C∞: no global assignment to {A0, A1, B0, B1} satisfies all four parity equations simultaneously (adding all four gives 0=1 mod 2). This is an H∞ phenomenon, not Hπ.
+
+**Variant B (context-parity stalks):** The parity constraint element is c = (c_A0=0, c_B0=0, c_A1=1, c_B1=1) ? (Z/2)4. This is a cocycle (vacuously, since C≤=0). Coboundary check: set f_00=0, f_01=0, f_10=0, f_11=1. Then d∞(f) = c exactly. The parity constraint IS a coboundary ó Hπ = 0.
+
+The cycle holonomy around the 4-cycle is 0+1+1+0 = 0 (mod 2). The nontrivial generator of Hπ(4-cycle, Z/2) requires holonomy = 1, which c does not achieve.
+
+### Verdict
+
+**Hπ(X, F) = 0 under both natural Z/2 coefficient variants.** The CHSH parity constraint is a coboundary. The Boolean variant achieves conditions 1 and 2 of the formal target (presheaf axioms hold; a 1-cocycle is identified) but fails condition 3 (it is a coboundary, yielding trivial Hπ).
+
+The T56 failure mode does not apply ó the cover has positive dim(Cπ). The failure mode here is different: the CHSH parity constraint lands in the wrong homology class (holonomy zero, not one) under Z/2 coefficients.
+
+### Path forward
+
+Two options, in order of promise:
+
+**Path A (recommended):** Replace F(U) with the set of probability distributions over joint outcomes compatible with no-signalling at U. Restriction maps become marginal projections. Cπ carries real-valued cochains; the CHSH correlator cochain may not be realizable as d∞(f) for any classical global distribution. That is the correct structural claim for Hπ ? 0 under R coefficients. This matches the "real-valued CHSH correlators" variant in the formal target and is where the Tsirelson bound may appear.
+
+**Path B:** Add the two diagonal patches as covers of the full measurement space (thickening the cover to K4). This may generate non-trivial Hπ but risks trivializing the obstruction for other reasons.
+
+The next step is Path A: define F(U) as the no-signalling polytope over each context and compute dim(Cπ) and the coboundary check under R (or rational) coefficients.

@@ -1,6 +1,6 @@
 # T59: Finite-to-Infinite Boundary Audit
 
-**Status:** open_formal_target
+**Status:** in_progress â€” Step 1 complete; classification table established
 **Prerequisite for:** S1, Q1, H7, HEF physics applicability claims
 **First concrete step:** see Â§7
 
@@ -211,3 +211,34 @@ the theorem ladder into boundary-free and finite-artifact columns.
 
 No new code required. The output is a two-column classification table that
 becomes the governing document for subsequent work in this audit.
+
+---
+
+## Step 1 Results — Boundary Audit Classification
+
+*Executed 2026-06-19*
+
+### Classification table
+
+| Theorem | Verdict | Reason |
+|---|---|---|
+| T41: Typed Transport Category | **Boundary-free** | Associativity of function composition and set intersection hold for arbitrary sets; D1_DIMENSIONS is a fixed 4-element universe unrelated to site cardinality. Proof is purely algebraic. |
+| T41: PO1 Non-Functor | **Boundary-free (with caveat)** | The finite counterexample refutes the functor claim categorically. Whether PO1 is a functor when restricted to morphisms between infinite systems is not yet addressed. |
+| T57: Finality Reflection Property | **Boundary-free** | Key lemma is set-inclusion monotonicity of transitive closure under vertex-subset containment: TC(E,V) ? TC(E,U) when V ? U. Holds for finite, countably infinite, and measurable vertex sets. Gap restriction closure follows by the same argument. |
+| T26-T29: Gluing Obstruction | **Boundary-free** | Signed-graph parity obstruction detection generalizes to countably infinite constraint graphs via compactness; generalizes to continuous domains via sheaf H¹ with appropriate coefficient groups. AC1-AC7 are endpoint conditions that do not invoke finiteness. |
+| T34: PO1 Chain Theorem | **Conditionally finite-artifact** | Holds for finite chains. For transfinite chains, endpoint admissibility at the colimit requires a colimit construction for D1Cat that does not yet exist. Likely extensible, but not yet proved. |
+| T37: Path-Dependent Admissibility | **Phenomenon boundary-free; decision procedure finite-artifact** | Paths with different AC5 verdicts exist in infinite networks. The DFS path-enumeration algorithm is undefined for infinite networks; decidability fails. Theorem as stated covers finite TypedTransportNetworks only. |
+| T39: CSP-PO1 / Signed-Graph Parity | **Boundary-free for countable graphs; finite-artifact for continuous domains** | Compactness (de Bruijn-Erdos / propositional compactness) extends the parity criterion to countably infinite constraint graphs. For continuous domains with real-valued assignments, the criterion breaks — obstruction lives in sheaf H¹ with different coefficient groups. T59's Mobius-band test is the correct discriminating probe. |
+| T40: Holonic Emergence / Cross-Level AC5 | **Boundary-free under compactness** | Obstructions are localized to finite cycles in the cross-level constraint graph. Compactness: infinite network is obstructed iff some finite sub-network is obstructed. Concern about infinite-path limit dissolves because parity obstruction cannot be dissolved by adding acyclic levels. |
+
+### Deepest uncertainties (require follow-up)
+
+**T34 (transfinite chains):** The colimit of a countably infinite sequence of D1RestrictionSystems is not constructed. The accumulated forgotten_structure at the colimit would be a countable union of finite annotation sets (well-defined as a set), but whether the colimit object is a valid D1RestrictionSystem is open. This is the verdict most likely to flip from conditionally-boundary-free to finite-artifact.
+
+**T39 at the continuous boundary:** The compactness extension to countably infinite binary CSPs is solid. What is not solid is whether the signed-graph parity criterion generalizes to real-valued assignment domains. The Mobius-band test (encode orientation assignment as a D1RestrictionSystem and apply T39's parity test; if it detects H¹ ? 0 on the orientation sheaf, the criterion survives; if it produces a false global section, it identifies the finite artifact) remains the discriminating probe.
+
+**T41 PO1 Non-Functor for infinite-system morphisms:** The finite counterexample refutes the functor claim for D1Cat as a whole. But if obstruction detection is redefined via sheaf H¹ for infinite systems (replacing the exhaustive global_section() check), the non-functor question resets for the infinite subcategory.
+
+### Summary judgment
+
+Five of eight results are cleanly boundary-free. T34 is the most fragile (needs colimit construction). T39 is the most consequential gap for physics applicability — the continuous-domain case is genuinely open and the Mobius-band test is the right next step.

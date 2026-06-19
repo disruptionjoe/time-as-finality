@@ -677,6 +677,12 @@ def build_t55_datums() -> tuple[ConflictDescentDatum, ...]:
     )
 
 
+def complete_conflict_descent(datum: ConflictDescentDatum) -> ConflictCompletionResult:
+    """Run the T55 quotient-union conflict completion for one finite datum."""
+
+    return _canonical_conflict_completion(datum)
+
+
 # ---------------------------------------------------------------------------
 # Main analysis and serialization
 # ---------------------------------------------------------------------------
@@ -890,6 +896,7 @@ __all__ = [
     "PartialOrderCheck",
     "T55Result",
     "build_t55_datums",
+    "complete_conflict_descent",
     "run_t55_analysis",
     "t55_result_to_dict",
 ]

@@ -1,0 +1,758 @@
+{
+  "positive_witness": {
+    "name": "positive_prediction_confirmed",
+    "classification": "reconciled_without_contradiction",
+    "system": {
+      "name": "t61_positive_mmo_system",
+      "nodes": [
+        {
+          "node_id": "client_a",
+          "role": "client",
+          "member": false,
+          "description": "bounded client observer A"
+        },
+        {
+          "node_id": "client_b",
+          "role": "client",
+          "member": false,
+          "description": "bounded client observer B"
+        },
+        {
+          "node_id": "edge_cache",
+          "role": "edge_replica",
+          "member": false,
+          "description": "local cache with stale state risk"
+        },
+        {
+          "node_id": "authority_region",
+          "role": "authority",
+          "member": true,
+          "description": "authoritative simulation region"
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "client_a",
+          "target_id": "edge_cache",
+          "delay": 1,
+          "medium": "client_to_edge",
+          "description": ""
+        },
+        {
+          "source_id": "client_b",
+          "target_id": "edge_cache",
+          "delay": 1,
+          "medium": "client_to_edge",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "client_a",
+          "delay": 1,
+          "medium": "edge_to_client",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "client_b",
+          "delay": 1,
+          "medium": "edge_to_client",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "authority_region",
+          "delay": 4,
+          "medium": "edge_to_authority",
+          "description": ""
+        },
+        {
+          "source_id": "authority_region",
+          "target_id": "edge_cache",
+          "delay": 4,
+          "medium": "authority_to_edge",
+          "description": ""
+        }
+      ],
+      "events": [
+        {
+          "event_id": "pred_move_a",
+          "source_id": "client_a",
+          "generated_at": 1,
+          "payload": "client_a predicts move_to_gate",
+          "event_kind": "predicted_client_action"
+        },
+        {
+          "event_id": "commit_move_a",
+          "source_id": "authority_region",
+          "generated_at": 7,
+          "payload": "authority commits move_to_gate",
+          "event_kind": "authoritative_commit"
+        }
+      ],
+      "boundary": {
+        "boundary_id": "authority_membership_boundary",
+        "member_ids": [
+          "authority_region"
+        ],
+        "quorum": 1,
+        "uncertainty_bound": 0,
+        "rule": "single_authoritative_region_commit_order",
+        "description": "Only the authority region can turn predicted actions into committed world events."
+      }
+    },
+    "observations": [
+      {
+        "observer_id": "client_a",
+        "event_id": "pred_move_a",
+        "arrival_time": 1,
+        "status": "apparent_local_final",
+        "local_reading": "predicted move is locally usable",
+        "d1_profile": {
+          "accessible_support": 1,
+          "holder_redundancy": 1,
+          "branch_support": 1,
+          "reversal_cost": 1
+        }
+      },
+      {
+        "observer_id": "edge_cache",
+        "event_id": "pred_move_a",
+        "arrival_time": 2,
+        "status": "cached_prediction",
+        "local_reading": "edge forwards prediction",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 1,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "pred_move_a",
+        "arrival_time": 6,
+        "status": "authority_received_prediction",
+        "local_reading": "authority can decide",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 1,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "commit_move_a",
+        "arrival_time": 7,
+        "status": "authoritative_final",
+        "local_reading": "commit accepted inside boundary",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 3,
+          "branch_support": 1,
+          "reversal_cost": 7
+        }
+      },
+      {
+        "observer_id": "client_a",
+        "event_id": "commit_move_a",
+        "arrival_time": 12,
+        "status": "reconciled_authoritative_final",
+        "local_reading": "local view repaired by matching commit",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 1,
+          "reversal_cost": 4
+        }
+      },
+      {
+        "observer_id": "client_b",
+        "event_id": "commit_move_a",
+        "arrival_time": 12,
+        "status": "remote_authoritative_final",
+        "local_reading": "other client receives committed record",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 1,
+          "reversal_cost": 4
+        }
+      }
+    ],
+    "transport": {
+      "network_name": "t61_mmo_state_transport_positive",
+      "path_labels": [
+        "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view"
+      ],
+      "path_verdicts": [
+        [
+          "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view",
+          "non_admissible_no_new_obstruction"
+        ]
+      ],
+      "accumulated_forgotten_by_path": [
+        [
+          "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view",
+          [
+            "remote_client_state",
+            "authority_membership",
+            "client_prediction_certainty",
+            "cache_freshness"
+          ]
+        ]
+      ],
+      "path_dependent": false,
+      "verdict": "no_admissible_paths"
+    },
+    "finality_answer": {
+      "locally_final": [
+        "client_a:pred_move_a@1"
+      ],
+      "authoritatively_final": [
+        "authority_region:commit_move_a@7"
+      ],
+      "predicted_only": [
+        "pred_move_a before commit_move_a arrives"
+      ],
+      "rolled_back": [],
+      "propagated_records": [
+        "pred_move_a",
+        "commit_move_a"
+      ],
+      "observer_event_times": [
+        [
+          "client_a",
+          "pred_move_a",
+          1,
+          "apparent_local_final"
+        ],
+        [
+          "edge_cache",
+          "pred_move_a",
+          2,
+          "cached_prediction"
+        ],
+        [
+          "authority_region",
+          "pred_move_a",
+          6,
+          "authority_received_prediction"
+        ],
+        [
+          "authority_region",
+          "commit_move_a",
+          7,
+          "authoritative_final"
+        ],
+        [
+          "client_a",
+          "commit_move_a",
+          12,
+          "reconciled_authoritative_final"
+        ],
+        [
+          "client_b",
+          "commit_move_a",
+          12,
+          "remote_authoritative_final"
+        ]
+      ],
+      "reversal_costs": [
+        {
+          "event_id": "pred_move_a/commit_move_a",
+          "before_authoritative_commit": 1,
+          "after_authoritative_commit": 7,
+          "reason": "authority commit increases holder redundancy and reversal cost"
+        }
+      ],
+      "reconciliation_statement": "The client has apparent local finality before the authority has event finality; the later commit matches the prediction, so reconciliation upgrades the local view without rollback."
+    },
+    "conflict_completion": null,
+    "strengthens_formalism": true,
+    "claim_recommendation": "Strengthens A1 as a hostile engineered-domain analogy; no new claim yet."
+  },
+  "failure_witness": {
+    "name": "failure_stale_conflicting_prediction",
+    "classification": "rollback_required_conflict_handled",
+    "system": {
+      "name": "t61_failure_mmo_system",
+      "nodes": [
+        {
+          "node_id": "client_a",
+          "role": "client",
+          "member": false,
+          "description": "bounded client observer A"
+        },
+        {
+          "node_id": "client_b",
+          "role": "client",
+          "member": false,
+          "description": "bounded client observer B"
+        },
+        {
+          "node_id": "edge_cache",
+          "role": "edge_replica",
+          "member": false,
+          "description": "local cache with stale state risk"
+        },
+        {
+          "node_id": "authority_region",
+          "role": "authority",
+          "member": true,
+          "description": "authoritative simulation region"
+        }
+      ],
+      "edges": [
+        {
+          "source_id": "client_a",
+          "target_id": "edge_cache",
+          "delay": 1,
+          "medium": "client_to_edge",
+          "description": ""
+        },
+        {
+          "source_id": "client_b",
+          "target_id": "edge_cache",
+          "delay": 1,
+          "medium": "client_to_edge",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "client_a",
+          "delay": 1,
+          "medium": "edge_to_client",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "client_b",
+          "delay": 1,
+          "medium": "edge_to_client",
+          "description": ""
+        },
+        {
+          "source_id": "edge_cache",
+          "target_id": "authority_region",
+          "delay": 4,
+          "medium": "edge_to_authority",
+          "description": ""
+        },
+        {
+          "source_id": "authority_region",
+          "target_id": "edge_cache",
+          "delay": 4,
+          "medium": "authority_to_edge",
+          "description": ""
+        }
+      ],
+      "events": [
+        {
+          "event_id": "pred_claim_a",
+          "source_id": "client_a",
+          "generated_at": 1,
+          "payload": "client_a predicts claim_gem",
+          "event_kind": "predicted_client_action"
+        },
+        {
+          "event_id": "pred_claim_b",
+          "source_id": "client_b",
+          "generated_at": 2,
+          "payload": "client_b predicts claim_gem from stale local view",
+          "event_kind": "predicted_client_action"
+        },
+        {
+          "event_id": "commit_claim_a",
+          "source_id": "authority_region",
+          "generated_at": 8,
+          "payload": "authority commits claim_gem to client_a",
+          "event_kind": "authoritative_commit"
+        },
+        {
+          "event_id": "rollback_claim_b",
+          "source_id": "authority_region",
+          "generated_at": 8,
+          "payload": "authority rejects and rolls back client_b predicted claim",
+          "event_kind": "rollback_correction"
+        },
+        {
+          "event_id": "compensate_b",
+          "source_id": "authority_region",
+          "generated_at": 9,
+          "payload": "authority emits compensation record for client_b",
+          "event_kind": "compensation"
+        }
+      ],
+      "boundary": {
+        "boundary_id": "authority_membership_boundary",
+        "member_ids": [
+          "authority_region"
+        ],
+        "quorum": 1,
+        "uncertainty_bound": 0,
+        "rule": "single_authoritative_region_commit_order",
+        "description": "Only the authority region can turn predicted actions into committed world events."
+      }
+    },
+    "observations": [
+      {
+        "observer_id": "client_a",
+        "event_id": "pred_claim_a",
+        "arrival_time": 1,
+        "status": "apparent_local_final",
+        "local_reading": "client_a sees gem as claimed locally",
+        "d1_profile": {
+          "accessible_support": 1,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 1
+        }
+      },
+      {
+        "observer_id": "client_b",
+        "event_id": "pred_claim_b",
+        "arrival_time": 2,
+        "status": "apparent_local_final",
+        "local_reading": "client_b sees gem as claimed locally from stale cache",
+        "d1_profile": {
+          "accessible_support": 1,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 1
+        }
+      },
+      {
+        "observer_id": "client_b",
+        "event_id": "pred_claim_a",
+        "arrival_time": 3,
+        "status": "remote_prediction_late",
+        "local_reading": "client_b learns of client_a prediction after making its own prediction",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "client_a",
+        "event_id": "pred_claim_b",
+        "arrival_time": 4,
+        "status": "remote_conflict_late",
+        "local_reading": "client_a learns of client_b incompatible prediction",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "edge_cache",
+        "event_id": "pred_claim_a",
+        "arrival_time": 2,
+        "status": "cached_prediction",
+        "local_reading": "edge sees first predicted branch",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "edge_cache",
+        "event_id": "pred_claim_b",
+        "arrival_time": 3,
+        "status": "cached_conflicting_prediction",
+        "local_reading": "edge sees incompatible predicted branch",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "pred_claim_a",
+        "arrival_time": 6,
+        "status": "authority_received_prediction",
+        "local_reading": "authority receives branch A first",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "pred_claim_b",
+        "arrival_time": 7,
+        "status": "authority_received_conflict",
+        "local_reading": "authority receives branch B second",
+        "d1_profile": {
+          "accessible_support": 2,
+          "holder_redundancy": 1,
+          "branch_support": 2,
+          "reversal_cost": 2
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "commit_claim_a",
+        "arrival_time": 8,
+        "status": "authoritative_final",
+        "local_reading": "authority commits branch A",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 3,
+          "branch_support": 1,
+          "reversal_cost": 7
+        }
+      },
+      {
+        "observer_id": "authority_region",
+        "event_id": "rollback_claim_b",
+        "arrival_time": 8,
+        "status": "authoritative_correction",
+        "local_reading": "authority rejects branch B",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 2,
+          "reversal_cost": 3
+        }
+      },
+      {
+        "observer_id": "client_b",
+        "event_id": "rollback_claim_b",
+        "arrival_time": 13,
+        "status": "rollback_required",
+        "local_reading": "client_b must remove predicted ownership",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 2,
+          "reversal_cost": 3
+        }
+      },
+      {
+        "observer_id": "client_b",
+        "event_id": "compensate_b",
+        "arrival_time": 14,
+        "status": "compensation_record",
+        "local_reading": "client_b receives explicit compensation",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 2,
+          "reversal_cost": 3
+        }
+      },
+      {
+        "observer_id": "client_a",
+        "event_id": "commit_claim_a",
+        "arrival_time": 13,
+        "status": "reconciled_authoritative_final",
+        "local_reading": "client_a receives winning commit",
+        "d1_profile": {
+          "accessible_support": 3,
+          "holder_redundancy": 2,
+          "branch_support": 1,
+          "reversal_cost": 4
+        }
+      }
+    ],
+    "transport": {
+      "network_name": "t61_mmo_state_transport_conflict",
+      "path_labels": [
+        "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view"
+      ],
+      "path_verdicts": [
+        [
+          "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view",
+          "non_admissible_no_new_obstruction"
+        ]
+      ],
+      "accumulated_forgotten_by_path": [
+        [
+          "client_local_view -> edge_cache_view -> authority_region_view -> reconciled_client_view",
+          [
+            "remote_client_state",
+            "authority_membership",
+            "client_prediction_certainty",
+            "cache_freshness",
+            "losing_branch_as_world_state"
+          ]
+        ]
+      ],
+      "path_dependent": false,
+      "verdict": "no_admissible_paths"
+    },
+    "finality_answer": {
+      "locally_final": [
+        "client_a:pred_claim_a@1",
+        "client_b:pred_claim_b@2"
+      ],
+      "authoritatively_final": [
+        "authority_region:commit_claim_a@8",
+        "authority_region:rollback_claim_b@8"
+      ],
+      "predicted_only": [
+        "pred_claim_b until rollback_claim_b arrives at client_b"
+      ],
+      "rolled_back": [
+        "pred_claim_b"
+      ],
+      "propagated_records": [
+        "pred_claim_a",
+        "pred_claim_b",
+        "commit_claim_a",
+        "rollback_claim_b",
+        "compensate_b"
+      ],
+      "observer_event_times": [
+        [
+          "client_a",
+          "pred_claim_a",
+          1,
+          "apparent_local_final"
+        ],
+        [
+          "client_b",
+          "pred_claim_b",
+          2,
+          "apparent_local_final"
+        ],
+        [
+          "edge_cache",
+          "pred_claim_a",
+          2,
+          "cached_prediction"
+        ],
+        [
+          "client_b",
+          "pred_claim_a",
+          3,
+          "remote_prediction_late"
+        ],
+        [
+          "edge_cache",
+          "pred_claim_b",
+          3,
+          "cached_conflicting_prediction"
+        ],
+        [
+          "client_a",
+          "pred_claim_b",
+          4,
+          "remote_conflict_late"
+        ],
+        [
+          "authority_region",
+          "pred_claim_a",
+          6,
+          "authority_received_prediction"
+        ],
+        [
+          "authority_region",
+          "pred_claim_b",
+          7,
+          "authority_received_conflict"
+        ],
+        [
+          "authority_region",
+          "commit_claim_a",
+          8,
+          "authoritative_final"
+        ],
+        [
+          "authority_region",
+          "rollback_claim_b",
+          8,
+          "authoritative_correction"
+        ],
+        [
+          "client_a",
+          "commit_claim_a",
+          13,
+          "reconciled_authoritative_final"
+        ],
+        [
+          "client_b",
+          "rollback_claim_b",
+          13,
+          "rollback_required"
+        ],
+        [
+          "client_b",
+          "compensate_b",
+          14,
+          "compensation_record"
+        ]
+      ],
+      "reversal_costs": [
+        {
+          "event_id": "pred_claim_b",
+          "before_authoritative_commit": 1,
+          "after_authoritative_commit": 3,
+          "reason": "rollback is cheap before commit but still needs an explicit correction record after conflict is known"
+        },
+        {
+          "event_id": "commit_claim_a",
+          "before_authoritative_commit": 1,
+          "after_authoritative_commit": 7,
+          "reason": "reversing the authoritative winner is expensive after holder redundancy and commit record propagation"
+        }
+      ],
+      "reconciliation_statement": "The two apparent local finalities cannot both become authoritative. Clean reconciliation fails unless the losing branch is represented by rollback, compensation, or explicit conflict."
+    },
+    "conflict_completion": {
+      "datum_name": "t61_stale_prediction_conflict",
+      "classification": "canonical",
+      "condition_failures": [],
+      "theorem_applies": true,
+      "conflict_pairs": [
+        [
+          "e_claim_a",
+          "e_claim_b"
+        ]
+      ],
+      "conflict_valid": true,
+      "am_holds": true,
+      "evidence": "Finite descent conditions, AM, and conflict validity all hold."
+    },
+    "strengthens_formalism": true,
+    "claim_recommendation": "Strengthens A1 and T55/T46 integration as a hostile engineered-domain result; does not motivate a new claim until more rollback policies are tested."
+  },
+  "axis_mapping": [
+    [
+      "causal_finality",
+      "T46 propagation order plus T55 AxisProfile.causal"
+    ],
+    [
+      "information_finality",
+      "D1Profile.holder_redundancy and propagated record content"
+    ],
+    [
+      "observer_access_finality",
+      "D1Profile.accessible_support for each observer view"
+    ],
+    [
+      "branch_conflict_support",
+      "D1Profile.branch_support and T55 conflict pairs"
+    ],
+    [
+      "reversal_cost",
+      "D1Profile.reversal_cost before and after authority commit"
+    ]
+  ],
+  "theorem_candidate": "Finite MMO Reconciliation Separation: in the tested finite simulation, apparent local finality can precede authoritative event finality; matching authority commits upgrade apparent finality without contradiction, while incompatible stale predictions require rollback, compensation, or explicit conflict handling.",
+  "boundary": "This is a hostile engineered-domain test of observer-relative finality, not a physical metaphor. It composes existing sidecars and exposes no need for a new primitive in the two witnesses, though richer rollback policies may require additional machinery.",
+  "claim_classification": "Strengthens A1 as a formal analogy/homology candidate inside engineered distributed simulation. It does not justify a new named claim yet.",
+  "recommendation": "Keep T61 as an A1/T46/T55 integration test. Next hostile cases should add partitioned authority, authority migration, and compensation policies that alter downstream records."
+}

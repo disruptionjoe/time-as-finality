@@ -56,6 +56,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T55B](tests/T55B-provenance-aware-reconstruction.md) | Provenance-aware reconstruction separation audit | C1, D1-Field, T51, T52, T54 | implemented: H4 confirmed (provenance variation does not change colimits, AM, or T54 descent); H1 supported (same basis, different provenances); H0 refuted; recommendation: optional audit layer |
 | [T56](tests/T56-sheaf-cohomology-apparent-finality.md) | Sheaf cohomology of apparent finality — research audit | C1, D1-Field, T51, T52 | implemented: PARTIAL_SUCCESS — ambient presheaf A is well-defined (H1(A)=0); apparent-finality assignment F is not a presheaf (natural restriction overshoots F(U)); phantom incomparability is an H0-level section-mismatch, not H1; refined hypothesis: H0(G) where G=A/F is the gap presheaf; 4 open questions; 56/56 tests pass |
 | [T57](tests/T57-finality-reflection-property.md) | Finality Reflection Property | C1, D1-Field, T56 | implemented: FRP holds for the T56 apparent-order model across two finite record lattices; G(U)=A(U)-F(U) is restriction-closed; generic complement counterexample refutes automatic complement closure; arrow-direction circularity remains open |
+| [T58](tests/T58-gap-phantom-equivalence.md) | Gap-phantom equivalence audit | C1, D1-Field, T56 | implemented: H0(G) matches phantom incomparability witnesses for the tested T51/T52 well-formed extension cases; local reversal control shows F(U) subset A(U) is required |
+| [T59](tests/T59-finite-to-infinite-boundary-audit.md) | Finite-to-infinite boundary audit | CSP-PO1, PO1, S1, Q1, H7, HEF | implemented: Mobius orientation witness separates transition-aware Z2 parity success from coefficient-blind scalar false global section; continuous-domain parity claims require coefficient and transition data |
 
 ## Minimum Compatibility Constraints
 
@@ -118,6 +120,8 @@ python -m models.run_t53
 python -m models.run_t54
 python -m models.run_t55
 python -m models.run_t57
+python -m models.run_t58
+python -m models.run_t59
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -162,6 +166,8 @@ The suites use only Python's standard library. Evidence records:
 - [Finite Finality Descent Theorem v0.1 Results](results/finite-finality-descent-theorem-v0.1-results.md)
 - [Conflict-Enriched FinaliEvent Descent v0.1 Results](results/conflict-finalievent-descent-v0.1-results.md)
 - [Finality Reflection Property v0.1 Results](results/finality-reflection-property-v0.1-results.md)
+- [Gap-Phantom Equivalence v0.1 Results](results/gap-phantom-equivalence-v0.1-results.md)
+- [Finite-to-Infinite Boundary Audit v0.1 Results](results/finite-to-infinite-boundary-audit-v0.1-results.md)
 
 ## How To Add A Test
 

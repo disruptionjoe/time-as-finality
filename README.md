@@ -196,6 +196,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Finality Reflection Property: the T56 gap assignment `G(U)=A(U)-F(U)` is
     restriction-closed in the tested finite model; automatic complement closure
     is refuted; arrow-direction circularity remains open.
+- [TECHNICAL-REPORT-finite-to-infinite-boundary-audit-v0.1.md](TECHNICAL-REPORT-finite-to-infinite-boundary-audit-v0.1.md)
+  - Finite-to-Infinite Boundary Audit: the T39 parity criterion survives the
+    Mobius boundary only as a transition-aware Z2 special case; a
+    coefficient-blind scalar encoding produces a false global section.
 - [EMERGENCE-LAB.md](EMERGENCE-LAB.md) - laboratory definitions, physical
   assumptions, and required counterexamples.
 - [FORMALISM.md](FORMALISM.md) - primitives, observer taxonomy, preorder, and
@@ -287,6 +291,9 @@ python -m models.run_t54
 python -m models.run_t55
 python -m models.run_t55b
 python -m models.run_t56
+python -m models.run_t57
+python -m models.run_t58
+python -m models.run_t59
 ```
 
 ## Run Explorations

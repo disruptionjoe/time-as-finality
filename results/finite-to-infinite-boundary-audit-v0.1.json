@@ -1,0 +1,130 @@
+{
+  "audits": [
+    {
+      "cover_name": "mobius_two_patch_orientation_cover",
+      "encoding": "transition_aware_z2",
+      "topological_monodromy_sign": -1,
+      "orientation_global_section_exists": false,
+      "parity_global_section_exists": false,
+      "parity_obstruction_detected": true,
+      "parity_matches_orientation": true,
+      "false_global_section": false,
+      "constraints": [
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_plus"
+        },
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "different",
+          "source_component": "I_minus"
+        }
+      ],
+      "conclusion": "parity detects the orientation obstruction because the encoding preserves transition signs"
+    },
+    {
+      "cover_name": "mobius_two_patch_orientation_cover",
+      "encoding": "coefficient_blind_scalar",
+      "topological_monodromy_sign": -1,
+      "orientation_global_section_exists": false,
+      "parity_global_section_exists": true,
+      "parity_obstruction_detected": false,
+      "parity_matches_orientation": false,
+      "false_global_section": true,
+      "constraints": [
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_plus"
+        },
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_minus"
+        }
+      ],
+      "conclusion": "false global section: coefficient-blind parity forgets the Mobius transition sign and misses the continuous orientation obstruction"
+    },
+    {
+      "cover_name": "cylinder_two_patch_orientation_cover",
+      "encoding": "transition_aware_z2",
+      "topological_monodromy_sign": 1,
+      "orientation_global_section_exists": true,
+      "parity_global_section_exists": true,
+      "parity_obstruction_detected": false,
+      "parity_matches_orientation": true,
+      "false_global_section": false,
+      "constraints": [
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_plus"
+        },
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_minus"
+        }
+      ],
+      "conclusion": "parity agrees with the unobstructed control"
+    },
+    {
+      "cover_name": "cylinder_two_patch_orientation_cover",
+      "encoding": "coefficient_blind_scalar",
+      "topological_monodromy_sign": 1,
+      "orientation_global_section_exists": true,
+      "parity_global_section_exists": true,
+      "parity_obstruction_detected": false,
+      "parity_matches_orientation": true,
+      "false_global_section": false,
+      "constraints": [
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_plus"
+        },
+        {
+          "left": "U0",
+          "right": "U1",
+          "relation": "same",
+          "source_component": "I_minus"
+        }
+      ],
+      "conclusion": "parity agrees with the unobstructed control"
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H0",
+      "claim": "The T39 signed-graph parity criterion is a universal continuous-domain obstruction detector.",
+      "status": "refuted",
+      "evidence": "The coefficient-blind scalar encoding of the Mobius cover has monodromy -1 but parity reports a satisfiable same/same finite constraint system."
+    },
+    {
+      "id": "H1",
+      "claim": "The Mobius orientation obstruction is detected after a transition-aware Z2 reduction.",
+      "status": "supported",
+      "evidence": "Preserving both overlap components and their signs gives same plus different constraints on U0/U1, which parity classifies as a direct parity conflict."
+    },
+    {
+      "id": "H2",
+      "claim": "Coefficient and transition data are load-bearing at the finite-to-continuous boundary.",
+      "status": "best_supported",
+      "evidence": "The same Mobius topological case is correctly obstructed by the transition-aware encoding and incorrectly accepted by the coefficient-blind encoding; the cylinder controls remain accepted in both encodings."
+    }
+  ],
+  "transition_aware_detects_mobius": true,
+  "coefficient_blind_misses_mobius": true,
+  "cylinder_controls_pass": true,
+  "best_supported": "T39 parity survives the Mobius boundary only as a transition-aware Z2 special case. It is not licensed as a generic continuous-domain obstruction detector.",
+  "boundary": "Continuous-domain claims must state the coefficient object and transition maps before applying finite parity language. Forgetting that data can produce a false global section even when the orientation monodromy is nontrivial.",
+  "recommended_next": "Build the sheaf-H1 replacement for continuous orientation data and then compare its obstruction verdict against PO1 admissibility metadata."
+}

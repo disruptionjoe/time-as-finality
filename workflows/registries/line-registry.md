@@ -35,7 +35,8 @@ nothing else:
 > state, to be confirmed by the first `line-review` / `lifecycle-review` runs.
 > "Research line" = a distinct line of inquiry; unrelated to git branches.
 
-**Lifecycle:** `seed -> explored -> validated -> incubated -> secondary-exploit -> primary-exploit -> integrated / archived`
+**Stage (maturity):** `seed -> explored -> validated -> incubated -> secondary-exploit -> primary-exploit -> integrated`
+**Status (attention/disposition):** `active | held | archived`  (two-axis model, DEC-018; `archived` is a status, not a stage)
 
 ### Relationship fields (optional)
 
@@ -57,7 +58,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 ---
 
 ## RL-001 — Observer-relative temporal reconstruction via finite finality descent
-- **Stage:** primary-exploit · **Mode bias:** evaluation
+- **Stage:** primary-exploit · **Status:** active · **Mode bias:** evaluation
 - **Why this stage:** current best formalization path; broad cross-cluster
   legitimacy; the live frontier (T47->T55).
 - **Artifacts:** `tests/` T47-T55; `results/` finali-event-structure,
@@ -69,7 +70,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - **Next candidate move:** *(set by line-review / advance-primary; not yet run.)*
 
 ## RL-002 — Projection-Obstruction schema (PO1)
-- **Stage:** secondary-exploit · **Mode bias:** evaluation
+- **Stage:** secondary-exploit · **Status:** active · **Mode bias:** evaluation
 - **Why this stage:** broad cross-domain support; PO1 has accumulated
   mathematical independence; candidate to challenge RL-001 for primary.
 - **Artifacts:** `tests/` T29-T35; `results/` PO1 schema, admissibility
@@ -81,7 +82,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - **Next candidate move:** *(pending challenge-primary / line-review.)*
 
 ## RL-003 — Distributed-systems / consensus finality crosswalk
-- **Stage:** incubated · **Mode bias:** both
+- **Stage:** incubated · **Status:** active · **Mode bias:** both
 - **Why this stage:** strong specialist (distributed-systems cluster) support;
   tests theorem-transfer between consensus and physical record finality.
 - **Artifacts:** `tests/` T17, T20, T28; `results/` consensus-finality crosswalk,
@@ -91,7 +92,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - **Next candidate move:** *(pending line-incubation / line-review.)*
 
 ## RL-004 — Typed transport & multiscale transport category
-- **Stage:** incubated · **Mode bias:** evaluation
+- **Stage:** incubated · **Status:** active · **Mode bias:** evaluation
 - **Why this stage:** categorical backbone connecting restriction systems; feeds
   RL-001/RL-002.
 - **Artifacts:** `tests/` T37-T41; `results/` typed transport network, minimal
@@ -101,7 +102,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - **Next candidate move:** *(pending line-review.)*
 
 ## RL-005 — Local persistence & mechanism identifiability
-- **Stage:** explored · **Mode bias:** both
+- **Stage:** explored · **Status:** active · **Mode bias:** both
 - **Why this stage:** separates local accumulation from record-access lag; H4 best
   supported so far.
 - **Artifacts:** `tests/` T42-T45; `results/` local persistence reconciliation
@@ -111,7 +112,7 @@ Only non-empty relationships are listed per line. `lifecycle-review` and
 - **Next candidate move:** *(pending line-incubation.)*
 
 ## RL-006 — Compression-finality crosswalk  *(archived)*
-- **Stage:** archived · **Mode bias:** evaluation
+- **Stage:** validated · **Status:** archived · **Mode bias:** evaluation
 - **Why this stage:** archived **with information gain** — compressibility is a
   downstream observable of stable records, not a D1 dimension (Rule 30 / Rule 0
   counterexamples across all 256 ECA rules). Information-gain entry recorded in

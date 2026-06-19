@@ -1,3 +1,12 @@
+---
+document_type: registry
+primary_reader: governance
+read_pattern: current_state
+write_pattern: edit_in_place
+authority: canonical
+summarizable: false
+---
+
 # Foundation Queue
 
 Inbound reading and concept queue for `explore/foundation-ingestion`. Foundation

@@ -1,9 +1,9 @@
 # Workflow Memory Layer — Plan (Phase 3.5)
 
 **Phase:** 3.5 (sits between Phase 3 Workflow Design and Phase 4 Automation).
-**Status:** PLAN ONLY. No Memory Packs are created yet. Implementation happens
-after the individual workflow designs (Phase 3) have stabilized. **Automation
-(Phase 4) must not begin until this layer is designed.**
+**Status:** BUILT (Session 17, DEC-023) — family packs live under `context-packs/`. (Originally PLAN ONLY.) The three family
+packs now exist; they are inert until workflows run and are summarized by
+`govern/research-memory`. **Automation (Phase 4) is designed but not armed.**
 
 ## Purpose
 
@@ -37,7 +37,7 @@ Do **not** create a Memory Pack per workflow. Instantiate packs at the
 recurring lessons, heuristics, anti-patterns, and failure modes that should
 accumulate independently.
 
-### Intended folder structure (not yet created)
+### Folder structure (created — Session 17)
 
 ```text
 workflows/context-packs/

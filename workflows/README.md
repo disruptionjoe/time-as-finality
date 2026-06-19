@@ -17,8 +17,8 @@ how the program thinks. This README is the structural index.
   (`line-discovery`, `line-incubation`, `foundation-ingestion`,
   `cross-disciplinary-synthesis`, `landscape-reassessment`, `persona-expansion`).
 - **govern/** — improve the quality, fairness, memory, and allocation of the
-  program (`line-review`, `persona-governance`, `research-memory`,
-  `lifecycle-review`, `information-portfolio`).
+  program (`line-review`, `lifecycle-review`, `portfolio-review`, `decision-review`,
+  `line-intake`, `persona-governance`, `research-memory`, `information-portfolio`).
 
 ## Registries (current state — source of truth)
 

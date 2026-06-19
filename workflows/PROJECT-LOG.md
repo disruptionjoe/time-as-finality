@@ -25,14 +25,13 @@ decisions made, rationale, open questions, deferred ideas, next recommended step
 1. **Phase 1 — Research Operating Model**: how the program thinks. *(done; living)*
 2. **Phase 2 — Workflow Skeleton**: folder structure + registries; lightweight
    placeholders only. *(done)*
-3. **Phase 3 — Workflow Design** *(next)*: design each workflow individually,
-   collaboratively, one at a time.
+3. **Phase 3 — Workflow Design** *(complete — 18 workflows, lock-candidate)*:
+   each workflow designed individually.
 4. **Phase 3.5 — Workflow Memory Layer**: reusable memory substrate (family-level
    Memory Packs) so workflows accumulate learning without re-reading raw history.
-   Planned in `MEMORY-LAYER-PLAN.md`; built after Phase 3 stabilizes. **Automation
-   must not begin until this layer is designed.**
+   Planned in `MEMORY-LAYER-PLAN.md`. *(built — family packs under `context-packs/`)*
 5. **Phase 4 — Automation**: recurring triggers, cadence, scheduling, resource
-   allocation — only after workflows and the memory layer are mature.
+   allocation. *(designed — scaffold in `automation/`; triggers NOT armed)*
 
 **Key artifacts.**
 
@@ -50,7 +49,106 @@ decisions made, rationale, open questions, deferred ideas, next recommended step
   constitutional decision record (DEC-NNN).
 - [`registries/research-line-scorecard.md`](registries/research-line-scorecard.md)
   — per-line portfolio health signal.
+- `context-packs/` — Phase 3.5 family Memory Packs (exploit/explore/govern).
+- `automation/` — Phase 4 scaffold: COVERAGE-MATRIX, SCHEDULE-SPEC, TRIGGER-REGISTRY (NOT-ARMED).
 - [`PROJECT-LOG.md`](PROJECT-LOG.md) — this file.
+
+---
+
+## Session 17 — 2026-06-19
+
+**Goals**
+
+- Same autonomous process for Phase 3.5 (build the memory layer) and Phase 4
+  (design the automation scaffold) — up to but NOT including arming triggers.
+
+**Decisions made**
+
+- **DEC-023** — Phase 3.5 Workflow Memory Layer **built** (family packs under
+  `context-packs/`).
+- **DEC-024** — Phase 4 automation scaffold **designed**; triggers **NOT armed**.
+
+**Built (2 area subagents + orchestrator critique)**
+
+- `context-packs/`: `README.md` + `{exploit,explore,govern}/MEMORY.md` (five
+  required pieces each) + `{...}/memory-log.md` (prepend-only, empty) — guidance
+  only (authority rank 6), inert until used, summarized by `govern/research-memory`.
+- `automation/`: `COVERAGE-MATRIX.md` (18 workflows, 65 task atoms),
+  `SCHEDULE-SPEC.md`, `TRIGGER-REGISTRY.md` (65 triggers, all `NOT-ARMED` with
+  arming prerequisites), `README.md` (hard rule: no live triggers this phase).
+
+**Critique + verification (orchestrator fresh-eyes)**
+
+- Five pieces present in each MEMORY.md; 18/18 workflows covered; ARMED triggers =
+  0; no scheduler/cron calls; no truncation; no protected files modified.
+
+**Status / not done by design**
+
+- No live triggers armed (deferred, human-gated). No git commit (local left
+  complete for the external commit agent).
+- Arming prerequisites: Phase 3 workflows formally LOCKED; patch-acceptance owner
+  decided; cadences/thresholds/budget caps set; memory layer validated.
+
+**Next recommended step**
+
+- Flip Phase 3 workflows to LOCKED (your call), resolve arming prerequisites, then
+  arm triggers in a separate human-gated step.
+
+---
+
+## Session 16 — 2026-06-19
+
+**Goals**
+
+- Execute the autonomous Phase 3 completion run (DEC-019): design all remaining
+  workflows, leave the local complete (no commit).
+
+**Decisions made**
+
+- **DEC-019** — autonomous run; supersedes DEC-016 for this run.
+- **DEC-020** — line-registry two-axis schema applied (step 0).
+- **DEC-021** — orchestrator-mediated critique (drafter != critic), per Joe's idea.
+- **DEC-022** — `docket-triage` is an intake atom of `decision-review`, not a
+  separate workflow (resolves the DEC-017 open item + lifecycle-review OQ#8).
+
+**Built (16 workflow protocol docs, via 4 family subagents)**
+
+- govern-core: `portfolio-review`, `decision-review`, `line-intake`.
+- govern-support: `persona-governance`, `research-memory`, `information-portfolio`.
+- explore: `line-discovery`, `line-incubation`, `foundation-ingestion`,
+  `cross-disciplinary-synthesis`, `landscape-reassessment`, `persona-expansion`.
+- exploit: `advance-primary`, `advance-secondary`, `challenge-primary`,
+  `integrate-results`.
+- Each: document-contract frontmatter, full exemplar section set, verdict block,
+  Phase-4 decomposition notes, and a critique log under `workflows/critiques/`.
+
+**Critique + consistency (orchestrator fresh-eyes pass)**
+
+- Harmonized `docket-triage` across all families to `decision-review` (docket
+  intake) per DEC-022. SendMessage (continue-same-subagent) was unavailable, so the
+  orchestrator applied this cross-cutting fix directly.
+- Routing closure verified: actual cross-workflow routes resolve; remaining
+  "unresolved" tokens are Phase-4 decomposition-atom names (advisory, DEC-013) plus
+  the intentionally-undefined `deep-panel-review`/`evidence-review` sinks.
+- Updated `README.md` govern catalog with the new workflows.
+
+**Status**
+
+- All 16 are **v1.0 LOCK-CANDIDATE** — complete, consistent, ready — **held pending
+  Joe's spot-review before formal lock** (the human lock gate). Can flip all to
+  LOCKED in one operation on approval.
+- Per-workflow docketed decisions (patch-acceptance owner, thresholds, etc.) are
+  non-lock-gating policy items for `decision-review` later.
+
+**Not committed**
+
+- Local left complete for the external commit agent (Joe's choice). No git commit
+  performed by this agent.
+
+**Next recommended step**
+
+- Joe spot-reviews; flip lock-candidates to LOCKED on approval; then Phase 3.5
+  (memory layer) or Phase 4 (the per-workflow coverage matrix + automation).
 
 ---
 

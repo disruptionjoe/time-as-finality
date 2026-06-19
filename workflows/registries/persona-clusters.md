@@ -1,3 +1,12 @@
+---
+document_type: registry
+primary_reader: governance
+read_pattern: current_state
+write_pattern: edit_in_place
+authority: canonical
+summarizable: false
+---
+
 # Persona Clusters
 
 The scoring-time view of the persona system: every persona is assigned a

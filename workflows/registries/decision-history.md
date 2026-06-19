@@ -367,3 +367,113 @@ to the two-axis schema (add a `status` field; remove `archived` from the stage
 ladder; reclassify RL-006 as `status: archived`). Until then, lifecycle-review
 patches would propose a `status` field the registry does not yet carry.
 `decision-review` vs `docket-triage` reconciliation still open (DEC-017).
+
+
+## DEC-019 — Autonomous Phase 3 completion run (supersedes DEC-016 for this run)
+Date: 2026-06-19
+Status: active
+Decision: Complete the remaining Phase 3 workflow designs in a single autonomous
+run. Scope: all remaining Phase 3 workflows — govern (portfolio-review,
+decision-review, line-intake, persona-governance, research-memory,
+information-portfolio), explore (line-discovery, line-incubation,
+foundation-ingestion, cross-disciplinary-synthesis, landscape-reassessment,
+persona-expansion), exploit (advance-primary, advance-secondary, challenge-primary,
+integrate-results). For this run only, the DEC-016 human/chat loop is replaced by
+an autonomous subagent loop: family-level drafting subagents that each perform an
+internal adversarial double-critique, followed by a cross-cutting fresh-eyes
+reviewer and an orchestrator system-consistency pass. Lock criteria unchanged (no
+unresolved lock-gating blocker). Commit is deferred to an external agent; this run
+leaves the local working tree complete and in-scope-only.
+Reason: user chose full autonomous completion over the slower human loop.
+Applies to: all remaining Phase 3 workflow files.
+Supersedes: DEC-016 (for this run only; DEC-016 remains the default loop after).
+Superseded by: —
+Evidence / Source: user direction, Session 16.
+Notes: Trade-off acknowledged — the autonomous loop is lower-fidelity than the
+chat+human loop that produced the two-axis insight; quality risk mitigated by
+double self-critique + a fresh-eyes pass + the system-consistency pass, and by
+leaving everything resumable via logs.
+
+## DEC-020 — line-registry two-axis schema applied
+Date: 2026-06-19
+Status: active
+Decision: `registries/line-registry.md` updated to the two-axis model (DEC-018):
+`stage` (maturity ladder, `archived` removed) plus `status` (active | held |
+archived). RL-001…005 set `status: active`; RL-006 set `stage: validated,
+status: archived`.
+Reason: implement DEC-018 so lifecycle-review and portfolio-review bind to a
+registry that carries both axes.
+Applies to: `registries/line-registry.md`.
+Supersedes: — (implements DEC-018; refines the registry shape under DEC-007)
+Superseded by: —
+Evidence / Source: Session 16 (autonomous run, step 0).
+Notes: —
+
+## DEC-021 — Orchestrator-mediated critique in the autonomous run
+Date: 2026-06-19
+Status: active
+Decision: Within the DEC-019 autonomous run, critique is **orchestrator-mediated**
+rather than subagent self-critique: drafting subagents hand back to the
+orchestrator; the orchestrator (a different agent — genuine fresh eyes) critiques;
+revisions are then applied with the drafting context preserved. Drafter and critic
+are separated.
+Reason: a subagent critiquing its own draft is not independent; this restores
+independence.
+Applies to: the DEC-019 run and future autonomous workflow design.
+Supersedes: refines DEC-019's internal-double-critique step.
+Superseded by: —
+Evidence / Source: user idea, Session 16.
+Notes: SendMessage (continue-same-subagent) was unavailable in this environment, so
+the orchestrator applied cross-cutting critique fixes directly; substantive future
+revisions would spawn a revision subagent.
+
+## DEC-022 — docket-triage is an intake atom of decision-review (not a workflow)
+Date: 2026-06-19
+Status: active
+Decision: Governance signals route to `govern/decision-review`, whose intake
+triages and clusters them; "docket-triage" names that bounded Phase-4 intake
+EXECUTION ATOM of decision-review, not a separate workflow. Routes of the form
+"-> govern/docket-triage" mean "-> govern/decision-review (docket intake)".
+Reason: avoids workflow proliferation; resolves the DEC-017 open reconciliation and
+lifecycle-review Open Question #8.
+Applies to: all workflows that emit governance signals.
+Supersedes: closes the decision-review-vs-docket-triage open item in DEC-017.
+Superseded by: —
+Evidence / Source: govern-core subagent design + orchestrator critique, Session 16.
+Notes: Locked line-review/lifecycle-review say "docket-triage, later" —
+forward-compatible; left unedited (locked), behavior unchanged.
+
+## DEC-023 — Phase 3.5 Workflow Memory Layer built
+Date: 2026-06-19
+Status: active
+Decision: Built the family-level Memory Packs under `workflows/context-packs/`
+(exploit, explore, govern), each a load-surface `MEMORY.md` (five required pieces)
+plus a prepend-only `memory-log.md`, guidance-only (authority rank 6, §11), inert
+until used, owned/summarized by `govern/research-memory`. Per MEMORY-LAYER-PLAN and
+DEC-005 (family-level first; promotion rule for workflow-specific packs).
+Reason: Phase 3 stabilized; the memory substrate must exist before automation
+(DEC-004).
+Applies to: `workflows/context-packs/*`.
+Supersedes: implements MEMORY-LAYER-PLAN.
+Superseded by: —
+Evidence / Source: Session 17 autonomous run.
+Notes: memory-log authority recorded as guidance_only; `last-summarized` marker
+syntax to be standardized when the summarizer is built (Phase 4).
+
+## DEC-024 — Phase 4 automation scaffold designed (triggers NOT armed)
+Date: 2026-06-19
+Status: active
+Decision: Designed the Phase 4 automation scaffold under `workflows/automation/`:
+`COVERAGE-MATRIX.md` (18 workflows, 65 task atoms), `SCHEDULE-SPEC.md`
+(cadences/trigger-types/ordering/budget), and `TRIGGER-REGISTRY.md` (65 triggers,
+ALL `status: NOT-ARMED`, each with arming prerequisites). **No live trigger or
+scheduled task was created** — arming is a separate, later, human-gated step.
+Reason: complete the design up to (not including) automation arming, per user
+direction.
+Applies to: `workflows/automation/*`; gates Phase 4 execution.
+Supersedes: —
+Superseded by: —
+Evidence / Source: Session 17 autonomous run.
+Notes: Arming prerequisites include workflows formally LOCKED, patch-acceptance
+owner decided, cadences/thresholds/budget caps set, memory layer validated.
+Authority does not decompose with size (DEC-013).

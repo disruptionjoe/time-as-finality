@@ -1,3 +1,12 @@
+---
+document_type: registry
+primary_reader: governance
+read_pattern: current_state
+write_pattern: edit_in_place
+authority: canonical
+summarizable: false
+---
+
 # Information Portfolio
 
 The information-gain ledger. Value in this program is measured by **change in

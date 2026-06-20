@@ -1,0 +1,90 @@
+{
+  "witnesses": [
+    {
+      "witness": "W1_h0_preservation",
+      "source_cover_cyclic": false,
+      "h0_gap_before": {
+        "U0": [
+          [
+            1
+          ]
+        ],
+        "U1": []
+      },
+      "h0_failure_before": true,
+      "h1_possible_before": false,
+      "globals_in_A_before": 4,
+      "loss_type": "topology_preserving_section_space",
+      "target_cover_cyclic": false,
+      "h0_gap_after": {
+        "U0": [
+          [
+            1
+          ]
+        ],
+        "U1": []
+      },
+      "h0_failure_after": true,
+      "h1_possible_after": false,
+      "globals_in_A_after": 2,
+      "global_section_survives_in_target": true,
+      "h1_created": false,
+      "h0_preserved": true,
+      "verdict": "H1_SUPPORTED"
+    },
+    {
+      "witness": "W2_h1_destruction",
+      "source_cover_cyclic": true,
+      "h1_nontrivial_before": true,
+      "lc_global_sections_count": 16,
+      "all_lc_holonomy_plus1": true,
+      "quantum_holonomy": -1,
+      "loss_type": "sub_cover_restriction",
+      "patches_dropped": [
+        "A1B1",
+        "A1B0"
+      ],
+      "target_cover_cyclic": false,
+      "h1_nontrivial_after": false,
+      "global_sections_in_target": 8,
+      "h1_destroyed": true,
+      "verdict": "H2_SUPPORTED"
+    },
+    {
+      "witness": "W3_h0_to_h1_impossible",
+      "acyclic_covers_tested": 4,
+      "sub_cover_restrictions_tested": 7,
+      "counterexamples_found": 0,
+      "counterexamples": [],
+      "algebraic_proof": {
+        "topology_preserving": "Topology-preserving loss keeps the same cover U. If N(U) is acyclic, H^n(F) = 0 for all n >= 1 and any presheaf F on U. Proof: Theorem B1 (acyclic nerve => H^n = 0 for n >= 1).",
+        "sub_cover_restriction": "Dropping patches from an acyclic nerve gives a subgraph of an acyclic graph. A subgraph of a forest (tree) is a forest (acyclic). Proof: if sub-cover had a cycle, the original cover would too \u2014 contradiction.",
+        "patch_identification_excluded": "Patch identification (merging two non-adjacent patches) CAN create cycles from acyclic covers. However, this is NOT a loss operation in TaF's sense: identifying contexts means declaring two distinct observation contexts to be the same, which is not forgetting but reidentification. TaF loss morphisms reduce information within contexts; they do not collapse context distinctions."
+      },
+      "h3_conclusion": "H0 -> H1 conversion is impossible for TaF loss morphisms (topology-preserving or sub-cover restriction). The cover topology is the fundamental barrier: acyclic covers cannot produce H1 != 0 regardless of the section space.",
+      "verdict": "H3_SUPPORTED"
+    },
+    {
+      "witness": "W4_cyclic_cover_projection",
+      "source_cover_cyclic": true,
+      "lc_global_sections": 16,
+      "globals_full_presheaf": 16,
+      "loss_type": "section_space_projection_drop_alice",
+      "target_cover_cyclic": false,
+      "globals_after_loss": 4,
+      "global_sections_survive": true,
+      "h1_in_source": true,
+      "h1_in_target": false,
+      "key_finding": "Projecting Alice's outcome from a 4-cycle cover collapses the nerve to two disjoint edges (acyclic). H1 is destroyed. Global (Bob-only) sections survive. Cover-topology-change via section-space projection occurs when the projection makes previously-distinct patches share no overlap variables, disconnecting the nerve.",
+      "verdict": "H4_SUPPORTED"
+    }
+  ],
+  "summary": {
+    "H1_topology_preserving_preserves_type": true,
+    "H2_sub_cover_restriction_destroys_h1": true,
+    "H3_h0_to_h1_impossible": true,
+    "main_theorem": true,
+    "main_theorem_statement": "Loss morphisms are failure-type monotone: failure_type(target) <= failure_type(source) in the ordering H1 > H0 > none. H0 -> H1 is impossible for topology-preserving and sub-cover loss morphisms. H1 -> H0 is possible via sub-cover restriction (cycle destruction). H0 -> H0 is the generic case under topology-preserving loss.",
+    "losskernel_implication": "TF1/LossKernel must track failure-type change as a typed property. A loss morphism that destroys H1 (sub-cover restriction) carries a 'cycle-destroying' flag in its LossKernel. A loss morphism that preserves the cover (topology-preserving) is guaranteed to preserve failure type. No LossKernel entry can represent an H0 -> H1 transition for TaF operations."
+  }
+}

@@ -74,9 +74,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P04 - Topologist / Sheaf Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T12:39:34-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-123934-p04-topologist-sheaf-theorist-gap-lane.md
 - goal: Rebuild the apparent-finality cohomology story with explicit coefficient
   systems, support presheaves, covers, restriction maps, and counterexamples.
 - ambition: Separate H0 gap facts from H1 obstruction claims cleanly enough for

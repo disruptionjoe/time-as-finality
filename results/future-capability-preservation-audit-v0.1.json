@@ -1,0 +1,652 @@
+{
+  "witnesses": [
+    {
+      "branch": "Git history witness",
+      "source_artifacts": [
+        "T115",
+        "T117",
+        "T119"
+      ],
+      "state_held_fixed": "same endpoint repository tree / snapshot",
+      "future_capability_changed": "merge, revert, bisect, blame, signed-history review",
+      "candidate_cause": "branch history, merge base, signed tags, provenance witnesses",
+      "capability_structure": {
+        "witnesses": [
+          "branch_history",
+          "merge_base",
+          "tree"
+        ],
+        "rights": [
+          "bisect",
+          "merge",
+          "revert"
+        ],
+        "reconstruction_paths": [
+          "history_path"
+        ],
+        "provenance": [
+          "signed_history"
+        ],
+        "maintenance": [],
+        "access": [
+          "history_visible"
+        ],
+        "certifications": [
+          "signed_tags"
+        ],
+        "task_policy": [
+          "git_operation_policy"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "version-control provenance plus enriched reachability",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "strong separation from coarse endpoint state; absorbed by history-aware state"
+    },
+    {
+      "branch": "Detector packet witness",
+      "source_artifacts": [
+        "T121",
+        "T123"
+      ],
+      "state_held_fixed": "same raw payload, measurement result, and coarse detector summary",
+      "future_capability_changed": "admissibility, reconstruction, challenge, certification, lineage verification, detector-claim review",
+      "candidate_cause": "packet provenance, authority separation, signatures, key state, revocation, publication, witnesses, reconstruction paths, challenge state",
+      "capability_structure": {
+        "witnesses": [
+          "packet_witnesses",
+          "raw_export"
+        ],
+        "rights": [
+          "certify",
+          "challenge",
+          "claim_review"
+        ],
+        "reconstruction_paths": [
+          "calibration_bind",
+          "event_replay"
+        ],
+        "provenance": [
+          "authority_domains",
+          "custody_chain"
+        ],
+        "maintenance": [
+          "key_continuity",
+          "revocation_check"
+        ],
+        "access": [
+          "packet_visible"
+        ],
+        "certifications": [
+          "publication_token",
+          "signatures"
+        ],
+        "task_policy": [
+          "admissibility_gate"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "provenance systems plus access-control/admissibility protocol",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "strong matched-result witness; no detector-physics promotion"
+    },
+    {
+      "branch": "Reconstruction debt",
+      "source_artifacts": [
+        "T107",
+        "T108"
+      ],
+      "state_held_fixed": "same target-visible projected state",
+      "future_capability_changed": "future reconstruction, judgment, repair, or attribution",
+      "candidate_cause": "lost source witnesses needed to resolve target judgments",
+      "capability_structure": {
+        "witnesses": [
+          "source_lift_witnesses"
+        ],
+        "rights": [
+          "judge",
+          "repair"
+        ],
+        "reconstruction_paths": [
+          "source_fiber_lift"
+        ],
+        "provenance": [
+          "projection_map"
+        ],
+        "maintenance": [],
+        "access": [
+          "source_access"
+        ],
+        "certifications": [],
+        "task_policy": [
+          "target_judgment_policy"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "abstract interpretation, lenses, why-not provenance, CSP explanation",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "common structure present; novelty mostly absorbed by source-fiber prior art"
+    },
+    {
+      "branch": "Provenance work",
+      "source_artifacts": [
+        "T55B",
+        "T68",
+        "T70",
+        "T72",
+        "T121"
+      ],
+      "state_held_fixed": "same content, record, detector outcome, or colimit result",
+      "future_capability_changed": "attribute, audit, certify, challenge, or trust the result",
+      "candidate_cause": "identity, custody, ancestry, signed DAG, intervention metadata",
+      "capability_structure": {
+        "witnesses": [
+          "ancestry_dag",
+          "custody_log",
+          "identity_witness"
+        ],
+        "rights": [
+          "attribute",
+          "audit",
+          "challenge"
+        ],
+        "reconstruction_paths": [
+          "lineage_replay"
+        ],
+        "provenance": [
+          "origin_tags",
+          "signed_dag"
+        ],
+        "maintenance": [
+          "trust_boundary"
+        ],
+        "access": [
+          "provenance_visible"
+        ],
+        "certifications": [
+          "signature"
+        ],
+        "task_policy": [
+          "provenance_policy"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "provenance systems",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "directly absorbed by provenance once provenance is included in state"
+    },
+    {
+      "branch": "Operation-right discussions",
+      "source_artifacts": [
+        "T115",
+        "T117",
+        "T119"
+      ],
+      "state_held_fixed": "same archive/resource/checkpoint or same coarse state",
+      "future_capability_changed": "challenge, appeal, sanction, repair, rollback",
+      "candidate_cause": "authority, rights, public rules, challenge windows, quorum",
+      "capability_structure": {
+        "witnesses": [
+          "audit_log",
+          "challenge_window",
+          "rulebook"
+        ],
+        "rights": [
+          "appeal",
+          "challenge",
+          "repair",
+          "rollback"
+        ],
+        "reconstruction_paths": [
+          "appeal_path",
+          "fraud_path"
+        ],
+        "provenance": [
+          "public_rule_record"
+        ],
+        "maintenance": [
+          "monitoring",
+          "repair_budget"
+        ],
+        "access": [
+          "public_access"
+        ],
+        "certifications": [
+          "quorum"
+        ],
+        "task_policy": [
+          "governance_mechanism"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "mechanism design, access control, commons governance",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "not a new object; rights-aware mechanism state absorbs it"
+    },
+    {
+      "branch": "ASP",
+      "source_artifacts": [
+        "T117"
+      ],
+      "state_held_fixed": "same coarse entropy/information/finality/viability/reachability metrics",
+      "future_capability_changed": "observer/task-indexed accessible future task set",
+      "candidate_cause": "witnesses, rights, maintenance budget, reconstruction paths, certifications",
+      "capability_structure": {
+        "witnesses": [
+          "task_witnesses"
+        ],
+        "rights": [
+          "task_rights"
+        ],
+        "reconstruction_paths": [
+          "task_reconstruction_paths"
+        ],
+        "provenance": [],
+        "maintenance": [
+          "maintenance_budget"
+        ],
+        "access": [
+          "observer_access"
+        ],
+        "certifications": [
+          "task_certifications"
+        ],
+        "task_policy": [
+          "task_universe"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "enriched reachable-state analysis and opportunity-set economics",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "ASP is essentially the same audit normal form under a colliding name"
+    },
+    {
+      "branch": "FOA",
+      "source_artifacts": [
+        "T119"
+      ],
+      "state_held_fixed": "same present/coarse state under matched ordinary measures",
+      "future_capability_changed": "future operations available under witness/right/path/certification constraints",
+      "candidate_cause": "explicit task-indexed operation requirements",
+      "capability_structure": {
+        "witnesses": [
+          "operation_witnesses"
+        ],
+        "rights": [
+          "operation_rights"
+        ],
+        "reconstruction_paths": [
+          "operation_reconstruction_paths"
+        ],
+        "provenance": [
+          "operation_provenance"
+        ],
+        "maintenance": [
+          "operation_maintenance_budget"
+        ],
+        "access": [
+          "observer_access"
+        ],
+        "certifications": [
+          "operation_certifications"
+        ],
+        "task_policy": [
+          "operation_family"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "enriched reachability/opportunity set",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "best internal label but still absorbed by established feasible-action formalisms"
+    },
+    {
+      "branch": "LossKernel",
+      "source_artifacts": [
+        "T99",
+        "T107",
+        "T108"
+      ],
+      "state_held_fixed": "same endpoints, map behavior, and naive lost-label set",
+      "future_capability_changed": "attribution, obstruction resolution, future repair/judgment",
+      "candidate_cause": "source-anchored witness obligations, not label-only loss",
+      "capability_structure": {
+        "witnesses": [
+          "obstruction_resolver",
+          "source_anchor"
+        ],
+        "rights": [
+          "attribute",
+          "repair"
+        ],
+        "reconstruction_paths": [
+          "source_preimage"
+        ],
+        "provenance": [
+          "projection_history"
+        ],
+        "maintenance": [],
+        "access": [
+          "source_fiber_access"
+        ],
+        "certifications": [],
+        "task_policy": [
+          "attribution_policy"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "rich effects, abstract interpretation, lenses, why-not provenance",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "source-witness form fits the common object; novelty remains unearned"
+    },
+    {
+      "branch": "Admissibility",
+      "source_artifacts": [
+        "T31",
+        "T32",
+        "T78",
+        "T87",
+        "T121"
+      ],
+      "state_held_fixed": "same candidate claim, projection, or raw evidence payload",
+      "future_capability_changed": "whether the claim/evidence may be used later",
+      "candidate_cause": "admissibility tokens, guard conditions, pre-registration, typed forgotten structure",
+      "capability_structure": {
+        "witnesses": [
+          "admissibility_witnesses"
+        ],
+        "rights": [
+          "claim_use"
+        ],
+        "reconstruction_paths": [
+          "audit_path"
+        ],
+        "provenance": [
+          "custody",
+          "pre_registration"
+        ],
+        "maintenance": [
+          "policy_stability"
+        ],
+        "access": [
+          "audit_access"
+        ],
+        "certifications": [
+          "tokens"
+        ],
+        "task_policy": [
+          "admissibility_policy"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "evidence law/protocol logic/access-control systems",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "admissibility is a policy layer over future operations, not FCP itself"
+    },
+    {
+      "branch": "Maintenance-cost investigations",
+      "source_artifacts": [
+        "T114",
+        "T115",
+        "T128"
+      ],
+      "state_held_fixed": "same standard entropy/control/stability/viability/storage metrics",
+      "future_capability_changed": "maintained usability, repair, challenge, emergence-platform operation",
+      "candidate_cause": "maintenance budget applied to witnesses, rights, repair paths, and record support",
+      "capability_structure": {
+        "witnesses": [
+          "maintained_witnesses"
+        ],
+        "rights": [
+          "challenge",
+          "repair"
+        ],
+        "reconstruction_paths": [
+          "repair_path"
+        ],
+        "provenance": [
+          "maintenance_log"
+        ],
+        "maintenance": [
+          "budget",
+          "refresh_protocol"
+        ],
+        "access": [
+          "maintainer_access"
+        ],
+        "certifications": [
+          "maintenance_attestation"
+        ],
+        "task_policy": [
+          "viability_task_family"
+        ],
+        "components_present": [
+          "access_boundaries",
+          "certification_tokens",
+          "maintenance_capacity",
+          "operation_rights",
+          "provenance_structure",
+          "reconstruction_paths",
+          "task_policy",
+          "witness_availability"
+        ]
+      },
+      "strongest_existing_absorber": "viability kernels/control/resource accounting with enriched state",
+      "uniform_representation": true,
+      "superficial_state_difference": false,
+      "verdict": "useful audit pattern; not independent of viability/control/resource frameworks"
+    }
+  ],
+  "prior_art": [
+    {
+      "framework": "reachability analysis",
+      "verdict": "absorbs",
+      "reason": "If the state includes witnesses, rights, access, provenance, and certificates, FCP is the reachable/action set."
+    },
+    {
+      "framework": "viability kernels",
+      "verdict": "absorbs",
+      "reason": "Absorbs FCP when the viability condition is survival of the declared capability set over a horizon."
+    },
+    {
+      "framework": "opportunity-set economics",
+      "verdict": "absorbs",
+      "reason": "Directly models feasible future opportunities under constraints and rights."
+    },
+    {
+      "framework": "capability theory",
+      "verdict": "partial",
+      "reason": "Close conceptual neighbor for real opportunities, but less formal about witnesses and certifications."
+    },
+    {
+      "framework": "mechanism design",
+      "verdict": "absorbs",
+      "reason": "Rights, admissible moves, incentives, challenge rules, and authority are native mechanism variables."
+    },
+    {
+      "framework": "affordance theory",
+      "verdict": "partial",
+      "reason": "Captures agent-environment action possibilities but may omit formal proof/admissibility structure."
+    },
+    {
+      "framework": "active inference policy spaces",
+      "verdict": "absorbs",
+      "reason": "Absorbs FCP if policies range over witness/right-bearing states and expected future actions."
+    },
+    {
+      "framework": "reinforcement-learning action spaces",
+      "verdict": "partial",
+      "reason": "Captures executable actions but usually lacks provenance, certification, and challenge rights."
+    },
+    {
+      "framework": "provenance systems",
+      "verdict": "absorbs",
+      "reason": "Directly captures lineage, custody, attribution, replay, and certification prerequisites."
+    },
+    {
+      "framework": "access-control systems",
+      "verdict": "absorbs",
+      "reason": "Directly captures authorized operations over protected resources and evidence objects."
+    },
+    {
+      "framework": "distributed-systems capability models",
+      "verdict": "absorbs",
+      "reason": "Capability tokens, leases, certificates, and quorum/challenge windows absorb many packet and consensus cases."
+    }
+  ],
+  "strongest_common_object": "A task-indexed constrained capability structure over a visible state: operations plus requirements for witnesses, rights, reconstruction paths, provenance, maintenance/access, certifications, and an admissibility policy. It is an enriched state/action object, not a new physical primitive.",
+  "weakest_point": "Once the hidden structure is admitted into the state, the apparent same-state split disappears into standard enriched reachability, opportunity-set, provenance, access-control, mechanism-design, or viability machinery. Novelty survives only against coarse state descriptions, which is not enough.",
+  "closest_prior_art": "Enriched reachability and opportunity-set economics are closest at the abstract level. Provenance systems, access-control/capability systems, and mechanism design are closest for the evidence/rights cases. Viability kernels absorb the maintenance/horizon reading.",
+  "strongest_separation_witness": "T123 is the cleanest same-state witness: same raw payload, same immediate measurement result, and same coarse detector summary, but different packet wrappers remove certification, reconstruction, challenge, lineage, and claim-review operations.",
+  "strongest_absorption_witness": "The Git/history witness is the strongest absorption case: the endpoint tree is the same only under a deliberately coarse state. Version-control theory already treats branch history, merge base, and signed tags as operational state.",
+  "recommendation": "formalize",
+  "recommendation_rationale": "Formalize narrowly as an audit normal form named only provisionally as FCP. Do not promote. The structure explains the witness family, but it is reducible to existing enriched state/action frameworks.",
+  "claim_impact_note": "No core claim upgrade. FCP should be treated as a cross-domain diagnostic for missing witness/right/provenance/reconstruction state, not as a new ontology.",
+  "finite_witness_table": [
+    {
+      "witness": "Git history witness",
+      "state_held_fixed": "same endpoint repository tree / snapshot",
+      "future_capability_changed": "merge, revert, bisect, blame, signed-history review",
+      "candidate_cause": "branch history, merge base, signed tags, provenance witnesses"
+    },
+    {
+      "witness": "Detector packet witness",
+      "state_held_fixed": "same raw payload, measurement result, and coarse detector summary",
+      "future_capability_changed": "admissibility, reconstruction, challenge, certification, lineage verification, detector-claim review",
+      "candidate_cause": "packet provenance, authority separation, signatures, key state, revocation, publication, witnesses, reconstruction paths, challenge state"
+    },
+    {
+      "witness": "Reconstruction debt",
+      "state_held_fixed": "same target-visible projected state",
+      "future_capability_changed": "future reconstruction, judgment, repair, or attribution",
+      "candidate_cause": "lost source witnesses needed to resolve target judgments"
+    },
+    {
+      "witness": "Provenance work",
+      "state_held_fixed": "same content, record, detector outcome, or colimit result",
+      "future_capability_changed": "attribute, audit, certify, challenge, or trust the result",
+      "candidate_cause": "identity, custody, ancestry, signed DAG, intervention metadata"
+    },
+    {
+      "witness": "Operation-right discussions",
+      "state_held_fixed": "same archive/resource/checkpoint or same coarse state",
+      "future_capability_changed": "challenge, appeal, sanction, repair, rollback",
+      "candidate_cause": "authority, rights, public rules, challenge windows, quorum"
+    },
+    {
+      "witness": "ASP",
+      "state_held_fixed": "same coarse entropy/information/finality/viability/reachability metrics",
+      "future_capability_changed": "observer/task-indexed accessible future task set",
+      "candidate_cause": "witnesses, rights, maintenance budget, reconstruction paths, certifications"
+    },
+    {
+      "witness": "FOA",
+      "state_held_fixed": "same present/coarse state under matched ordinary measures",
+      "future_capability_changed": "future operations available under witness/right/path/certification constraints",
+      "candidate_cause": "explicit task-indexed operation requirements"
+    },
+    {
+      "witness": "LossKernel",
+      "state_held_fixed": "same endpoints, map behavior, and naive lost-label set",
+      "future_capability_changed": "attribution, obstruction resolution, future repair/judgment",
+      "candidate_cause": "source-anchored witness obligations, not label-only loss"
+    },
+    {
+      "witness": "Admissibility",
+      "state_held_fixed": "same candidate claim, projection, or raw evidence payload",
+      "future_capability_changed": "whether the claim/evidence may be used later",
+      "candidate_cause": "admissibility tokens, guard conditions, pre-registration, typed forgotten structure"
+    },
+    {
+      "witness": "Maintenance-cost investigations",
+      "state_held_fixed": "same standard entropy/control/stability/viability/storage metrics",
+      "future_capability_changed": "maintained usability, repair, challenge, emergence-platform operation",
+      "candidate_cause": "maintenance budget applied to witnesses, rights, repair paths, and record support"
+    }
+  ],
+  "reducible_to_existing_frameworks": true,
+  "common_structure_exists": true
+}

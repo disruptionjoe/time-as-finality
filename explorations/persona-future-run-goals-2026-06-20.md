@@ -116,9 +116,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P08 - Quantum Information Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T16:44:48-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-164448-p08-quantum-information-operational-crosswalk.md
 - goal: Define branch support, provenance, and reversal cost using quantum
   channels, instruments, distinguishability, entropy, recovery maps, or resource
   monotones.

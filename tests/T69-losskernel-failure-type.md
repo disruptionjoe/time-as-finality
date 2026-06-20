@@ -1,9 +1,24 @@
 # T69: LossKernel Failure Type
 
-**Status:** implemented — all 4 witnesses pass; main theorem established
+**Status:** implemented on finite witnesses; general theorem audit-blocked
 **Depends on:** T19, T37, T39, T56, T58 (gap + Bell), T63, T65
 **Strategic role:** connects the typed-forgetting spine (TF1/LossKernel) to the
 reconstruction-failure hierarchy (H⁰/H¹ cover structure investigation)
+
+---
+
+## Diligence Note
+
+This test must not be read as a general Cech/sheaf-cohomology theorem. External
+skeptical diligence flags the broad claim "acyclic cover implies H1 vanishes
+for every presheaf" as false without stronger hypotheses. The T69 result is
+therefore restricted to the finite coefficient systems, support choices, and
+loss-morphism classes implemented here.
+
+Before public or canon promotion, the report must state the exact coefficient
+system, cover hypotheses, and support-presheaf assumptions under which the H0/H1
+failure-type ordering is valid. If those assumptions cannot be made explicit,
+T69 should remain a useful toy-model diagnostic rather than a theorem.
 
 ---
 
@@ -149,11 +164,12 @@ most B or no-failure.
 For all topology-preserving loss morphisms π applied to all acyclic covers with ≤ 3
 patches and ≤ 4 binary variables, verify H¹(π(F)) = 0.
 
-**Key argument (theorem, not just enumeration):**
+**Key argument (fixture-local, not general sheaf theory):**
 If the source cover U is acyclic (contractible nerve), then:
 1. Every topology-preserving loss morphism keeps the same cover U.
 2. The nerve is unchanged: still acyclic.
-3. By Theorem B1 (acyclic nerve → H^n = 0 for n ≥ 1), H¹ = 0 for any presheaf on U.
+3. In the implemented finite fixture family, H1 = 0 on the acyclic covers
+   under the chosen coefficient/support semantics.
 4. Therefore, H¹ cannot become non-zero through topology-preserving loss.
 
 For sub-cover restriction:
@@ -206,6 +222,9 @@ For any TaF loss morphism f (topology-preserving or sub-cover restriction):
 - failure_type(target) ≤ failure_type(source) in the ordering H¹ > H⁰ > none
 - Loss morphisms can only DECREASE the failure type, not increase it
 - This is a directional conservation law on reconstruction failure type
+
+This is a candidate law for the implemented finite families, not a general
+cohomology monotonicity theorem.
 
 ---
 

@@ -18,6 +18,9 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T16](tests/T16-spacetime-aggregation.md) | Spacetime aggregation toy model | S1, H5, R1 | implemented: finite gluing and obstruction witnesses |
 | [T17](tests/T17-consensus-finality-crosswalk.md) | Consensus finality crosswalk | A1, D1 | implemented: collapse maps and bounded theorem check |
 | [T18](tests/T18-finality-direction-theorem.md) | Finality direction theorem | H7, D1 | implemented: constructor-style finite theorem check |
+| [T80](tests/T80-reversible-finality-nonmonotonicity.md) | Reversible finality nonmonotonicity | H7, T9, T18 | implemented: reversible Rule 30 lift violates raw D1 monotonicity, weakening H7 to a conditional constructor theorem |
+| [T82](tests/T82-persistent-reconciler-cost-boundary.md) | Persistent reconciler cost boundary | H7, T9, T80 | implemented: persistent memory restores monotone retained support only through irreversible OR memory or resource-accounted append-only ledger capacity |
+| [T84](tests/T84-cyclic-reconciler-entropy-export.md) | Cyclic reconciler entropy export | H7, T80, T82 | implemented: fixed cyclic reconciliation restores monotone accounting only by exporting overwritten records or paying erasure cost |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
@@ -66,6 +69,16 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T70](tests/T70-detector-provenance-robustness.md) | Detector provenance robustness | Q1, D1, T68 | implemented: T68 survives moderate single-channel metadata degradation but fails cleanly when trusted provenance channels are absent or threshold-dependent |
 | [T72](tests/T72-physical-provenance-protocol.md) | Physical provenance protocol | Q1, D1, T70 | implemented: interval/probability protocol parameters classify robust recovery, withhold, threshold failure, false independence risk, and false dependence risk |
 | [T74](tests/T74-provenance-protocol-monte-carlo.md) | Provenance protocol Monte Carlo | Q1, D1, T72 | implemented: Monte Carlo stress priors show robust detector provenance recovery is confined to a narrow engineered corner |
+| [T75](tests/T75-real-detector-stack-provenance.md) | Real detector stack provenance mapping | Q1, D1, T74 | implemented: HydraHarp/White Rabbit/signed archive maps into robust recovery; unsigned-control variant withholds |
+| [T76](tests/T76-measured-detector-provenance-posterior.md) | Measured detector provenance posterior | Q1, D1, T75 | implemented: deployment evidence schema preserves signed-versus-unsigned separation only for measured provenance protocols |
+| [T77](tests/T77-measured-detector-policy-sensitivity.md) | Measured detector policy sensitivity | Q1, D1, T76 | implemented: signed fixture stays robust across policy corridors, but permissive policy leaks unsigned false positives |
+| [T78](tests/T78-preregistered-detector-deployment-protocol.md) | Pre-registered detector deployment protocol | Q1, D1, T76, T77 | implemented: only pre-registered real-log runs are admissible for detector-branch upgrades |
+| [T79](tests/T79-dashboard-summary-nonidentifiability.md) | Dashboard summary nonidentifiability | Q1, D1, T76, T78 | implemented: identical coarse dashboards can hide opposite provenance verdicts, so raw logs are load-bearing |
+| [T81](tests/T81-measured-schema-ablation.md) | Measured schema ablation | Q1, D1, T76-T79 | implemented: trust boundaries and pre-registration are load-bearing in the current detector audit; other declared categories are not independently decisive yet |
+| [T83](tests/T83-q1-detector-null-criterion.md) | Q1 detector null criterion | Q1, D1, T66-T81 | implemented: report-only synthesis narrowing the detector branch to a provenance-admissibility filter unless a pre-registered raw-log protocol beats passive-statistics, dashboard, and post hoc partition nulls |
+| [T85](tests/T85-measured-detector-channel-dominance.md) | Measured detector channel dominance | Q1, D1, T76-T83 | implemented: spoof/unique-tag stress can still demote the signed fixture, but perturbation and DAG channels are not independently decisive once trust and pre-registration are fixed |
+| [T86](tests/T86-ambiguous-tag-channel-independence.md) | Ambiguous-tag channel independence | Q1, D1, T76-T85 | implemented: clean perturbation-only and signed-DAG-only fixtures rescue ambiguous timing/tag controls, while contaminated controls withhold |
+| [T87](tests/T87-real-run-raw-log-contract.md) | Real-run raw-log contract | Q1, D1, T76-T86 | implemented: event-level raw-log admission contract for future detector deployments; no D1 scoring or empirical upgrade without the required tables |
 | [T19](tests/T19-phenomenal-bridge-complexity-separation.md) | Phenomenal bridge as complexity separation | C1, D1, D2, H6 | implemented: 7-node finite graph shows FIRST-PERSON-FINALITY(A*(R)) = NO, THIRD-PERSON-FINALITY(G) = YES; causal-boundary obstruction, not computational undecidability; T60+T19 gives formal content of H6 |
 | [T65](tests/T65-causal-reduction-holonomy.md) | Causal reduction of CHSH holonomy | C1, D1, H6, T63, T19 | implemented: LC => holonomy = +1 (all 16 LC sections); quantum => holonomy = -1 (Bell's theorem as holonomy); biconditional disproved (128 ≠ 16); spatial causal-boundary obstruction formally parallels T19 temporal obstruction |
 | [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented: loss morphisms are failure-type monotone (H1 > H0 > none); H0→H1 is impossible for topology-preserving and sub-cover loss; H1→H0 is possible via cycle destruction; algebraic proof + 4 witnesses (7/7 tests pass) |
@@ -96,6 +109,10 @@ python -m models.run_emergence_lab
 python -m models.run_t16
 python -m models.run_t17
 python -m models.run_t18
+python -m models.run_t80
+python -m models.run_t81
+python -m models.run_t82
+python -m models.run_t84
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
@@ -139,6 +156,14 @@ python -m models.run_t64
 python -m models.run_t70
 python -m models.run_t72
 python -m models.run_t74
+python -m models.run_t75
+python -m models.run_t76
+python -m models.run_t77
+python -m models.run_t78
+python -m models.run_t79
+python -m models.run_t85
+python -m models.run_t86
+python -m models.run_t87
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
 ```
@@ -151,6 +176,9 @@ The suites use only Python's standard library. Evidence records:
 - [Spacetime Aggregation v0.1 Results](results/spacetime-aggregation-v0.1-results.md)
 - [Consensus Finality Crosswalk v0.1 Results](results/consensus-finality-crosswalk-v0.1-results.md)
 - [Finality Direction Theorem v0.1 Results](results/finality-direction-theorem-v0.1-results.md)
+- [Reversible Finality Nonmonotonicity v0.1 Results](results/reversible-finality-nonmonotonicity-v0.1-results.md)
+- [Persistent Reconciler Cost Boundary v0.1 Results](results/persistent-reconciler-cost-boundary-v0.1-results.md)
+- [Cyclic Reconciler Entropy Export v0.1 Results](results/cyclic-reconciler-entropy-export-v0.1-results.md)
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
 - [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)
@@ -192,6 +220,16 @@ The suites use only Python's standard library. Evidence records:
 - [Detector Provenance Robustness v0.1 Results](results/detector-provenance-robustness-v0.1-results.md)
 - [Physical Provenance Protocol v0.1 Results](results/physical-provenance-protocol-v0.1-results.md)
 - [Provenance Protocol Monte Carlo v0.1 Results](results/provenance-protocol-monte-carlo-v0.1-results.md)
+- [Real Detector Stack Provenance v0.1 Results](results/real-detector-stack-provenance-v0.1-results.md)
+- [Measured Detector Provenance Posterior v0.1 Results](results/measured-detector-provenance-posterior-v0.1-results.md)
+- [Measured Detector Policy Sensitivity v0.1 Results](results/measured-detector-policy-sensitivity-v0.1-results.md)
+- [Pre-Registered Detector Deployment Protocol v0.1 Results](results/preregistered-detector-deployment-protocol-v0.1-results.md)
+- [Dashboard Summary Nonidentifiability v0.1 Results](results/dashboard-summary-nonidentifiability-v0.1-results.md)
+- [Measured Schema Ablation v0.1 Results](results/measured-schema-ablation-v0.1-results.md)
+- [Q1 Detector Null Criterion v0.1 Technical Report](TECHNICAL-REPORT-q1-detector-null-criterion-v0.1.md)
+- [Measured Detector Channel Dominance v0.1 Results](results/measured-detector-channel-dominance-v0.1-results.md)
+- [Ambiguous-Tag Channel Independence v0.1 Results](results/ambiguous-tag-channel-independence-v0.1-results.md)
+- [Real-Run Raw-Log Contract v0.1 Results](results/real-run-raw-log-contract-v0.1-results.md)
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
 

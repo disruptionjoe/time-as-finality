@@ -1,0 +1,31 @@
+{
+  "null_times": {
+    "decoherence_time": 4.0,
+    "redundancy_time": 3.0,
+    "access_time": 3.0,
+    "taf_finality_time": 3.0
+  },
+  "null_verdict": "null_reparameterization",
+  "independent_pair": {
+    "standard_timelines_equal": true,
+    "standard_verdict_equal": true,
+    "taf_verdict_changes": true,
+    "has_independent_source": true,
+    "rejected_for_post_hoc_source": false,
+    "verdict": "candidate_non_null_witness"
+  },
+  "post_hoc_pair": {
+    "standard_timelines_equal": true,
+    "standard_verdict_equal": true,
+    "taf_verdict_changes": true,
+    "has_independent_source": false,
+    "rejected_for_post_hoc_source": true,
+    "verdict": "null_post_hoc"
+  },
+  "strongest_claim": "A weak-measurement finalization time is null when every D1 coordinate is fixed by coherence, redundancy, access windows, or post hoc threshold choices. It becomes only a candidate discriminator when an independent pre-registered observable changes the TaF verdict while the standard monitored-record statistics are unchanged.",
+  "weakened_claim": "The current TaF weak-measurement route does not yet predict new measurement dynamics. At most, T90 gives a required separation test for any future monitored-qubit or detector-trajectory proposal.",
+  "falsification_condition": "T90 fails if a protocol with only standard coherence/redundancy/access statistics yields a TaF verdict that cannot be expressed as a thresholded standard-statistic rule, or if a post hoc branch label is accepted as an independent observable.",
+  "q1_update": "Keep Q1 partially supported, but state the weak-measurement branch as an obstruction result: T12 is non-null only after a pre-registered branch, provenance, or reversal-cost observable produces a verdict change between trajectories with identical standard monitored-record statistics.",
+  "blocker": "No concrete platform currently supplies a pre-registered branch-live or reversal-cost observable that is independent of coherence decay, fragment redundancy, and access thresholds.",
+  "recommended_next": "Instantiate the independent-axis test on a superconducting-qubit homodyne trajectory or a trapped-ion/cavity-QED undo protocol; if no independent axis can be named before data analysis, demote T12."
+}

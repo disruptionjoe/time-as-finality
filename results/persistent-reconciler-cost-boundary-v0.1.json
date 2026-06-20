@@ -1,0 +1,445 @@
+{
+  "observations": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "raw_support_sequence": [
+    1,
+    2,
+    1,
+    0,
+    1,
+    2
+  ],
+  "raw_support_monotone": false,
+  "policies": {
+    "irreversible_or": {
+      "name": "bounded_irreversible_or_memory",
+      "memory_states": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "support_sequence": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "novelty_sequence": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monotone_support": true,
+      "transition_map": {
+        "input_count": 16,
+        "image_count": 9,
+        "injective": false,
+        "maximum_preimages": 4,
+        "lost_bits": 1.0,
+        "landauer_minimum_joules": 2.870978885078724e-21,
+        "preimage_histogram": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "resource_boundary": "Fixed-width memory; monotone because OR coalesces old and new support states.",
+      "verdict": "Monotone retained support is bought by a non-injective update, so this repair reduces H7 to irreversible coarse-graining."
+    },
+    "reversible_xor": {
+      "name": "bounded_reversible_xor_memory",
+      "memory_states": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "support_sequence": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "novelty_sequence": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "monotone_support": false,
+      "transition_map": {
+        "input_count": 16,
+        "image_count": 16,
+        "injective": true,
+        "maximum_preimages": 1,
+        "lost_bits": 0.0,
+        "landauer_minimum_joules": 0.0,
+        "preimage_histogram": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "resource_boundary": "Fixed-width memory; injective because observation is preserved in the one-step map.",
+      "verdict": "Reversibility is preserved, but retained support can decrease; fixed reversible memory does not recover T18 monotonicity."
+    },
+    "reversible_append": {
+      "name": "reversible_append_only_ledger_h6",
+      "memory_states": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "support_sequence": [
+        1,
+        3,
+        4,
+        4,
+        5,
+        7
+      ],
+      "novelty_sequence": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monotone_support": true,
+      "transition_map": {
+        "input_count": 5460,
+        "image_count": 5460,
+        "injective": true,
+        "maximum_preimages": 1,
+        "lost_bits": 0.0,
+        "landauer_minimum_joules": 0.0,
+        "preimage_histogram": [
+          [
+            1,
+            5460
+          ]
+        ]
+      },
+      "resource_boundary": "Injective only on the blank-slot subspace; consumes 12 blank memory bits for 6 observation slots.",
+      "verdict": "Monotone and injective for the checked horizon, but only by turning elapsed observations into growing ledger state."
+    },
+    "short_append": {
+      "name": "reversible_append_only_ledger_h3",
+      "memory_states": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "support_sequence": [
+        1,
+        3,
+        4
+      ],
+      "novelty_sequence": [
+        1,
+        1,
+        0
+      ],
+      "monotone_support": true,
+      "transition_map": {
+        "input_count": 84,
+        "image_count": 84,
+        "injective": true,
+        "maximum_preimages": 1,
+        "lost_bits": 0.0,
+        "landauer_minimum_joules": 0.0,
+        "preimage_histogram": [
+          [
+            1,
+            84
+          ]
+        ]
+      },
+      "resource_boundary": "Exhausted at observation layer 3; continuing would require either more blank slots or an erasing/recycling rule.",
+      "verdict": "Monotone and injective for the checked horizon, but only by turning elapsed observations into growing ledger state."
+    }
+  },
+  "strongest_claim": "In the T80 reversible trace witness, an endogenous finite reconciler gets monotone retained records only by using a non-injective coarse-graining update or by consuming append-only blank ledger state.",
+  "weakened_claim": "H7 is not rescued by adding persistent memory unless the memory resource or erasure rule is physically accounted for.",
+  "falsification_condition": "T82 fails if a fixed-size finite reversible reconciler implements componentwise monotone retained support for the T80 observation sequence without preserving old memory as garbage, consuming blank slots, or using a non-injective update.",
+  "h7_update": "H7 should remain partially supported only as a conditional constructor theorem. T82 adds that persistent reconciliation must be resource-accounted: bounded OR memory is irreversible, bounded XOR memory is reversible but nonmonotone, and append-only reversible memory shifts the arrow into blank ledger capacity.",
+  "blocker": "No physically autonomous reconciler has yet been shown to refresh or compress records indefinitely while preserving D1 monotonicity without ordinary thermodynamic irreversibility.",
+  "recommended_next": "Model a cyclic reversible reconciler with explicit garbage export or heat bath coupling, then test whether the H7 direction differs from entropy export rather than merely tracking it."
+}

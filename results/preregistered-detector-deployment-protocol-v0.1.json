@@ -1,0 +1,106 @@
+{
+  "required_evidence_fields": [
+    "local_sigma",
+    "archive_sigma",
+    "batching_window",
+    "tag_retention",
+    "signature_verification",
+    "accepted_forged_tags",
+    "accepted_spoofed_independent_tags",
+    "independent_unique_tags",
+    "detector_boundary_integrity",
+    "archive_boundary_integrity",
+    "transport_boundary_integrity",
+    "dependent_perturbation_changes",
+    "independent_perturbation_false_changes",
+    "perturbation_back_action_events",
+    "dag_observability",
+    "signed_dag_edges",
+    "dag_truncation_events",
+    "false_shared_dag_edges",
+    "pre_registered_threshold_coverage"
+  ],
+  "required_control_roles": [
+    "timing_only_unsigned_negative_control",
+    "copied_record_spoof_challenge",
+    "independent_record_uniqueness_challenge",
+    "perturbation_positive_negative_controls",
+    "dag_truncation_and_replay_challenge"
+  ],
+  "required_raw_log_sources": [
+    "raw_time_tag_stream",
+    "signature_verification_log",
+    "archive_receipt_chain",
+    "trust_boundary_audit_log",
+    "perturbation_protocol_log",
+    "ancestry_dag_export"
+  ],
+  "t77_safe_corridor": {
+    "confidence_floor_low_minimum": 0.78,
+    "max_false_risk_high_maximum": 0.22
+  },
+  "audits": [
+    {
+      "plan_name": "complete_signed_detector_deployment_preregistration",
+      "verdict": "admissible_for_real_deployment_audit",
+      "missing_evidence_fields": [],
+      "missing_control_roles": [],
+      "missing_raw_log_sources": [],
+      "failure_reasons": [],
+      "next_allowed_audit": "run_t76_t77_on_real_log"
+    },
+    {
+      "plan_name": "posthoc_policy_after_data_control",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_control_roles": [],
+      "missing_raw_log_sources": [],
+      "failure_reasons": [
+        "policy_chosen_after_data"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "plan_name": "missing_unsigned_timing_control",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_control_roles": [
+        "timing_only_unsigned_negative_control"
+      ],
+      "missing_raw_log_sources": [],
+      "failure_reasons": [
+        "missing_required_negative_controls"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "plan_name": "fixture_counts_without_raw_log",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_control_roles": [],
+      "missing_raw_log_sources": [],
+      "failure_reasons": [
+        "no_real_raw_deployment_log",
+        "fixture_counts_only"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "plan_name": "permissive_policy_control_leak",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_control_roles": [],
+      "missing_raw_log_sources": [],
+      "failure_reasons": [
+        "policy_outside_t77_safe_corridor"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    }
+  ],
+  "strongest_claim": "The detector branch now has a pre-data gate: a real deployment can only test Q1 if it fixes the T76 evidence schema, T77-safe policy corridor, negative controls, raw log sources, and demotion rule before the first event.",
+  "weakened_claim": "T78 weakens the detector branch by making T76/T77 insufficient for any further Q1 upgrade. Fixture counts, post hoc policy choice, missing unsigned controls, and permissive corridors are all rejected before D1 scoring.",
+  "falsification_condition": "Demote detector-level Q1 if no real deployment can satisfy this pre-data contract and still preserve signed recovery, unsigned withhold, and incomplete-pre-registration failure under the locked T76/T77 audit.",
+  "q1_update": "Keep Q1 partially supported only as a pre-registered, real-log detector-provenance protocol claim. Synthetic fixtures and post hoc policy selection cannot upgrade the detector branch.",
+  "recommended_next": "Populate the T78 contract from an actual detector run, then run the locked T76/T77 pipeline without changing the evidence fields or policy corridor.",
+  "blocker": "No real deployment log is present; T78 only defines the gate that future evidence must pass."
+}

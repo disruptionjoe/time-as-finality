@@ -1,0 +1,180 @@
+{
+  "standard_audit": {
+    "name": "standard_pati_salam_to_sm",
+    "hypercharge_rule": "Y = T3R + (B-L)/2",
+    "used_structure": [
+      "SU2L_cartan_T3L",
+      "SU2R_cartan_T3R",
+      "SU4_color_b_minus_l",
+      "spin10_chiral_16"
+    ],
+    "losskernel": [],
+    "multiplets": [
+      {
+        "su3": "3",
+        "su2_l_dim": 2,
+        "n": 1,
+        "dim": 6
+      },
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": -4,
+        "dim": 3
+      },
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": 2,
+        "dim": 3
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 2,
+        "n": -3,
+        "dim": 2
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 0,
+        "dim": 1
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 6,
+        "dim": 1
+      }
+    ],
+    "n_values": [
+      -4,
+      -3,
+      0,
+      1,
+      2,
+      6
+    ],
+    "charge_values": [
+      "-1",
+      "-2/3",
+      "-1/3",
+      "0",
+      "1/3",
+      "2/3",
+      "1"
+    ],
+    "total_dimension": 16,
+    "exact_table_match": true,
+    "dimension_preserved": true,
+    "missing_paper_multiplets": [],
+    "extra_multiplets": [],
+    "verdict": "exact_table_reconstruction",
+    "interpretation": "The full Pati-Salam map preserves the right-isospin Cartan data needed to reconstruct the one-generation hypercharge table."
+  },
+  "bl_only_audit": {
+    "name": "b_minus_l_only_projection",
+    "hypercharge_rule": "Y' = (B-L)/2",
+    "used_structure": [
+      "SU2L_cartan_T3L",
+      "SU4_color_b_minus_l",
+      "spin10_chiral_16"
+    ],
+    "losskernel": [
+      "SU2R_cartan_T3R",
+      "right_isospin_splitting"
+    ],
+    "multiplets": [
+      {
+        "su3": "3",
+        "su2_l_dim": 2,
+        "n": 1,
+        "dim": 6
+      },
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": -1,
+        "dim": 6
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 2,
+        "n": -3,
+        "dim": 2
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 3,
+        "dim": 2
+      }
+    ],
+    "n_values": [
+      -3,
+      -1,
+      1,
+      3
+    ],
+    "charge_values": [
+      "-1",
+      "-1/3",
+      "-1/6",
+      "0",
+      "1/2",
+      "2/3"
+    ],
+    "total_dimension": 16,
+    "exact_table_match": false,
+    "dimension_preserved": true,
+    "missing_paper_multiplets": [
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": 2,
+        "dim": 3
+      },
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": -4,
+        "dim": 3
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 6,
+        "dim": 1
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 0,
+        "dim": 1
+      }
+    ],
+    "extra_multiplets": [
+      {
+        "su3": "3bar",
+        "su2_l_dim": 1,
+        "n": -1,
+        "dim": 6
+      },
+      {
+        "su3": "1",
+        "su2_l_dim": 1,
+        "n": 3,
+        "dim": 2
+      }
+    ],
+    "verdict": "typed_forgetting_failure",
+    "interpretation": "The projection preserves the 16-state carrier but forgets the SU(2)_R Cartan split that separates right-handed singlets into the correct hypercharge rows."
+  },
+  "loss_attribution": "Within the tested map family, the failure is attributable to a non-empty LossKernel naming SU2R_cartan_T3R. Restoring T3R in Y = T3R + (B-L)/2 restores the exact table.",
+  "po1_status": "not_a_po1_instance_without_gluing_object: this is an invariant reconstruction failure under typed forgetting, not yet a D1RestrictionSystem local-to-global obstruction.",
+  "strongest_claim": "The GU Pati-Salam verification supplies a clean external typed-forgetting witness for TaF: the 16-state carrier and B-L data survive the naive projection, but the forgotten T3R term is load-bearing for the Standard-Model hypercharge invariant.",
+  "weakened_claim": "T88 does not validate GU physics, TaF physics, Q1, H1, H7, or spacetime reconstruction. It imports only a finite representation arithmetic witness for typed structure preservation.",
+  "falsification_condition": "Reject this crosswalk if B-L alone reproduces the paper n=1 multiplet table, if the full Pati-Salam map fails to reproduce the table, or if the failure can be repaired without restoring a right-isospin-equivalent term.",
+  "taf_update": "TF1 gains a narrow external mathematics witness: named forgotten structure can be necessary for preserving a downstream invariant. No current TaF physics claim is upgraded.",
+  "recommended_next": "If this route is continued, reformulate the Pati-Salam table as a typed transport object with source, target, preserved invariants, and LossKernel fields; only then ask whether it can be embedded in PO1-style gluing machinery."
+}

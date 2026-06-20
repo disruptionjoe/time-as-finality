@@ -9,11 +9,11 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [D1-Field](claims/D1-field-multiscale-observer-finality.md) | formal_extension | partially_supported | Cross-observer finality needs more than scalar or vector D1 when transport, trust graph, gluing constraints, observer-colimit descent data, conflict relations, apparent/event gaps, or restriction-closure obligations matter; T24 introduced field-valued D1, T25 narrowed the smallest earned object to a finite graph-indexed local-to-global D1 restriction system, T26 formalizes that object directly, T53 shows that multi-observer colimits need identity/overlap data for canonical reconstruction, T54 supplies a finite quotient-union descent theorem, T55 adds finite conflict-descent conditions, T56 identifies the apparent/event gap object, and T57 proves its Finality Reflection Property in the T56 model. | [T24](tests/T24-d1-multiscale-observer-field.md), [T25](tests/T25-minimal-d1-generalization.md), [T26](tests/T26-d1-restriction-system.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md), [T53 report](TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md), [T54 report](TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md), [T55 report](TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md), [T57 report](TECHNICAL-REPORT-finality-reflection-property-v0.1.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
-| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains; T67 weakens the obvious repair by showing passive detector correlations do not recover the D1 independence partition; T68 conditionally recovers the partition only when intervention-sensitive provenance metadata are available before D1 scoring; T70 shows that this recovery survives moderate single-channel metadata degradation but fails when trusted provenance channels are absent, thresholded, or back-action contaminated; T72 replaces Boolean flags with physical protocol parameters and shows recovery is possible only under declared reliability bounds, with explicit false-independence and false-dependence risk regimes; T74 shows the robust T72 region collapses to a narrow engineered corner under broader stress priors, with mixed and degraded priors dominated by conservative D1-withhold outcomes. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md), [T67](tests/T67-povm-correlation-provenance-obstruction.md), [T68](tests/T68-intervention-sensitive-detector-provenance.md), [T70](tests/T70-detector-provenance-robustness.md), [T72](tests/T72-physical-provenance-protocol.md), [T74](tests/T74-provenance-protocol-monte-carlo.md) |
+| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains; T67 weakens the obvious repair by showing passive detector correlations do not recover the D1 independence partition; T68 conditionally recovers the partition only when intervention-sensitive provenance metadata are available before D1 scoring; T70 shows that this recovery survives moderate single-channel metadata degradation but fails when trusted provenance channels are absent, thresholded, or back-action contaminated; T72 replaces Boolean flags with physical protocol parameters and shows recovery is possible only under declared reliability bounds, with explicit false-independence and false-dependence risk regimes; T74 shows the robust T72 region collapses to a narrow engineered corner under broader stress priors; T75 maps one source-anchored, posterior-modeled HydraHarp/White-Rabbit/signed-archive stack into robust recovery while its unsigned-control variant mostly withholds D1; T76-T79 narrow that route to measured, pre-registered, event-level raw-log provenance, and reject dashboard summaries or post hoc policy selection as Q1 upgrades; T81 weakens the executable detector route further by showing that trust-boundary evidence and pre-registration are load-bearing while other declared measured channels are not yet independently decisive; T83 compresses the detector sequence into a null criterion and weakens the surviving detector-side content to a provenance-admissibility filter over already formed records unless a pre-registered raw-log protocol beats passive-statistics, dashboard, and post hoc partition alternatives; T85 narrows the executable core again by showing that spoof/unique-tag evidence can still demote the signed fixture on its own, while perturbation and DAG channels are not yet independently decisive once trust and pre-registration are fixed; T86 then shows those channels survive only in a narrower hostile family where timing and authenticated tags are deliberately ambiguous, and only clean perturbation-only or signed-DAG-only raw-log controls recover while contaminated controls withhold. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md), [T67](tests/T67-povm-correlation-provenance-obstruction.md), [T68](tests/T68-intervention-sensitive-detector-provenance.md), [T70](tests/T70-detector-provenance-robustness.md), [T72](tests/T72-physical-provenance-protocol.md), [T74](tests/T74-provenance-protocol-monte-carlo.md), [T75](tests/T75-real-detector-stack-provenance.md), [T76](tests/T76-measured-detector-provenance-posterior.md), [T77](tests/T77-measured-detector-policy-sensitivity.md), [T78](tests/T78-preregistered-detector-deployment-protocol.md), [T79](tests/T79-dashboard-summary-nonidentifiability.md), [T81](tests/T81-measured-schema-ablation.md), [T83](tests/T83-q1-detector-null-criterion.md), [T85](tests/T85-measured-detector-channel-dominance.md), [T86](tests/T86-ambiguous-tag-channel-independence.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order; T42 separates local accumulation from record-access lag, T43 identifies finite local mechanisms, T44 shows demand/coupling probes can distinguish those mechanisms without deriving proper time, and T46 distinguishes open causal access gradients from closed synchronization boundaries. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md), [T42](tests/T42-local-persistence-reconciliation-split.md), [T43](tests/T43-local-persistence-mechanisms.md), [T44](tests/T44-local-mechanism-identifiability.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
-| [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction when admissible transformations are monotone in D1 finality. | [T18](tests/T18-finality-direction-theorem.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
+| [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction only under an added D1-monotone admissibility, persistence, coarse-graining, or constructor-impossibility condition. T18 proves the conditional constructor theorem; T80 shows raw reversible local dynamics can violate D1 monotonicity, so the rule is not physically automatic. | [T18](tests/T18-finality-direction-theorem.md), [T80](tests/T80-reversible-finality-nonmonotonicity.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
 | [IPT](claims/IPT-invariant-preserving-transformations.md) | formal_kernel | proto_independent | Invariant-preserving transformations may be the substrate-neutral mathematical transport structure connecting observer changes, theorem transfer, and record-reduction maps; T23 gives a finite typed kernel with positive cases, composition, and obstruction; T26 supplies D1 restriction morphisms as a target object, but no full IPT representation theorem yet. | [T23](tests/T23-invariant-preserving-transformations.md), [T26](tests/T26-d1-restriction-system.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md), [T26 report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md) |
 | [TF1](claims/TF1-typed-forgetting-attribution.md) | formal_target | open_formal_target | Typed Forgetting Attribution: a projection-created obstruction is admissibly attributable only when the projection carries a typed loss object naming structure that resolves the obstruction in the source. This is the proposed hinge lemma for the LossKernel phase and is not yet supported as a theorem. | [Loss Kernel Formalization](open-problems/loss-kernel-formalization.md), [T34](tests/T34-po1-chained-projection.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [T40](tests/T40-holarchy-lab.md), [T41](tests/T41-typed-transport-category.md) |
 | [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T31 supplies the admissibility checklist. T32 compresses it: AC4 derives from AC6, and the remaining non-intrinsic guard is AC5, the named forgotten-structure condition. T33 derives conditions from IPT+RMT frameworks; best hypothesis H3 (both required); AC5-naming remains a methodological transparency condition recommended as Principle P5. T34 adds chained projection behavior. T35 shows bounded finite generative value through a structural discovery engine. T36 (compression-finality crosswalk) confirms compressibility is a downstream observable of stable records, not a D1 dimension. T37 shows PO1 admissibility can be path-dependent in a TypedTransportNetwork: AC5 is the only condition that varies by path when paths accumulate different forgotten_structure. T39 establishes the CSP equivalence: the gluing obstruction is exactly a parity-conflicting binary CSP; PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. | [T27](tests/T27-class-relative-bridge-audit.md), [T28](tests/T28-cap-theorem-bridge.md), [T29](tests/T29-projection-obstruction-schema.md), [T30](tests/T30-cross-domain-projection-obstruction-validation.md), [T31](tests/T31-po1-admissibility-conditions.md), [T32](tests/T32-admissibility-derivation.md), [T33](tests/T33-po1-foundational-derivation.md), [T34](tests/T34-po1-chained-projection.md), [T35](tests/T35-projection-obstruction-discovery-engine.md), [T36](tests/T36-compression-finality-crosswalk.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md), [T31 report](TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md), [T32 report](TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md), [T33 report](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md), [T34 report](TECHNICAL-REPORT-po1-chained-projection-v0.1.md), [T36 report](TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md) |
@@ -322,14 +322,42 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   from a concrete detector stack.
 - Artifact: [T74 technical report](TECHNICAL-REPORT-provenance-protocol-monte-carlo-v0.1.md).
 
+### 2026-06-20 - Real Detector Stack Provenance Mapping (T75)
+
+- Q1 remains `partially_supported` as an instrumentation/provenance claim for
+  explicitly engineered detector stacks.
+- Positive content: T75 maps a source-anchored, posterior-modeled photon
+  time-tagging stack into the T72/T74 protocol model: HydraHarp-class
+  picosecond time tagging, White Rabbit synchronization, and a hash-chained
+  RFC-3161-style signed archive.
+  The signed stack yields robust recovery rate `1.0` and computable D1 rate
+  `1.0` across `400` deterministic samples.
+- Boundary: the positive result is not carried by detector timing alone. The
+  unsigned-control variant keeps the timing hardware but yields only `0.005`
+  robust recovery, with `0.8425` conservative withhold and `0.1525`
+  threshold-dependent failure.
+- Claim impact: detector-level D1 finality is operational only when
+  time-tagged detector records are coupled to authenticated, observable
+  provenance infrastructure.
+- Falsification condition: if measured deployment posteriors for the signed
+  stack do not sustain high signature verification, tag retention, trust,
+  low back-action, and DAG observability, Q1 should be demoted back to a
+  conditional accounting framework requiring externally supplied provenance.
+- Next requirement: replace T75's plausible engineering posteriors with
+  measured event-loss, signature-failure, archive-replay, perturbation, and
+  DAG-truncation data from one deployed stack.
+- Artifact: [T75 technical report](TECHNICAL-REPORT-real-detector-stack-provenance-v0.1.md).
+
 ### 2026-06-19 - LossKernel Failure Type Monotonicity (T69)
 
-- Main theorem ESTABLISHED: loss morphisms are failure-type monotone in the
-  ordering H¹ > H⁰ > none. A loss morphism cannot increase failure type.
+- Finite fixture result established: in the implemented T69 witness family,
+  loss morphisms are failure-type monotone in the ordering H¹ > H⁰ > none.
+  Do not cite this as a general Cech/sheaf-cohomology theorem without explicit
+  coefficient, cover, and support-presheaf hypotheses.
 - H⁰ → H¹ is impossible for TaF loss morphisms (topology-preserving and
-  sub-cover restriction). Proved algebraically: acyclic nerve + topology-preserving
-  loss = same acyclic nerve (H¹ = 0 by Theorem B1); sub-cover of acyclic cover
-  is acyclic (subgraph of forest is forest).
+  sub-cover restriction) in the implemented finite family. The prior wording
+  "acyclic nerve implies H¹ = 0 for any presheaf" is too broad; T69 is now
+  audit-blocked against that generalization.
 - H¹ → H⁰ is possible: sub-cover restriction can remove cycle from nerve,
   destroying the H¹ obstruction. T58 distributed contextuality (4-cycle cover →
   Alice's 2-context sub-cover) is the canonical TaF example.
@@ -346,11 +374,130 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - Falsification condition: a topology-preserving or sub-cover loss morphism found
   that converts an acyclic cover to a cyclic one.
 
+### 2026-06-20 - Reversible Finality Nonmonotonicity (T80)
+
+- H7 remains `partially_supported`, but only as a conditional constructor
+  theorem. T18's D1-monotone admissibility rule cannot be identified with
+  arbitrary physical time steps in reversible substrates.
+- T80 constructs a width-3 second-order reversible Rule 30 witness with an
+  injective transition map, zero logical information-loss bound, and a checked
+  direct inverse. The fixed observer window sees raw D1 trace profiles
+  `(1,1,1,1) -> (2,2,1,2) -> (1,1,1,1) -> (0,0,0,0)`.
+- The physical step from layer 1 to layer 2 is classified by T18 as
+  `strict_definalization` and impossible under the constructor rule, even
+  though it is a valid reversible CA step.
+- Claim impact: finality-induced direction requires an added persistence,
+  coarse-graining, or constructor-impossibility condition; reversible trace
+  propagation alone does not ground an arrow.
+- Falsification condition: T80 fails if every reversible second-order CA
+  trajectory with a nonzero observer-window trace has componentwise
+  nondecreasing raw D1 trace profiles across physical steps.
+- Next requirement: build the T9 requested persistent reconciler subsystem and
+  test whether retained-record D1 is monotone without reducing H7 to
+  thermodynamic erasure.
+- Artifact: [T80 technical report](TECHNICAL-REPORT-reversible-finality-nonmonotonicity-v0.1.md).
+
+### 2026-06-20 - Dashboard Summary Nonidentifiability (T79)
+
+- Q1 remains `partially_supported`, but the detector branch narrows again:
+  coarse deployment dashboards are non-identifying. Timing, retention,
+  signature-pass, and threshold-coverage summaries do not uniquely determine
+  the T76/T77 provenance verdict.
+- Positive content: T79 constructs two deployments with identical dashboard
+  summaries but opposite completions. The signed raw-log completion remains
+  `robust_measured_recovery`, while the dashboard-matched spoofable completion
+  yields `measured_false_independence_risk`.
+- Boundary: the omitted variables are load-bearing. Spoof acceptance,
+  trust-boundary integrity, perturbation back-action, and ancestry DAG quality
+  cannot be inferred from a coarse dashboard even when timing and signature
+  pass rates look strong.
+- Claim impact: detector-level Q1 now requires event-level raw-log provenance,
+  not merely good operational dashboards. T78's raw-log gate is therefore an
+  identifiability requirement, not a procedural preference.
+- Falsification condition: if a coarse dashboard that omits raw ancestry,
+  replay, spoof, perturbation, and trust-boundary logs still uniquely fixes
+  the T76/T77 verdict for all compatible completions, T79 fails.
+- Next requirement: obtain one real detector deployment log satisfying T78 and
+  run the locked T76/T77/T79 audit. If only dashboard summaries are available,
+  withhold detector-level Q1.
+- Artifact: [T79 technical report](TECHNICAL-REPORT-dashboard-summary-nonidentifiability-v0.1.md).
+
+### 2026-06-20 - Measured Schema Ablation (T81)
+
+- Q1 remains `partially_supported`, but the executable detector branch is
+  weakened further.
+- Positive content: T81 shows that the current measured detector audit has at
+  least two genuinely load-bearing gates. Replacing trust-boundary evidence in
+  the signed T76 fixture collapses robust recovery to `withhold_rate = 1.0`,
+  and incomplete pre-registration demotes the same fixture to a
+  threshold-dependent result (`threshold_dependent_rate = 0.26`).
+- Boundary: timing, retention/signature pass rates, spoof-resistance counts,
+  perturbation counts, and DAG-summary counts are not independently decisive
+  under single-category ablation in the current witness family. The executable
+  detector route is therefore narrower than the full T76 evidence schema
+  suggests.
+- Falsification condition: if future single-category ablations show that every
+  declared measured-evidence category independently changes the signed
+  detector verdict, or if trust/pre-registration stop changing it, T81 fails.
+- Next step: either compress the measured schema to the categories the current
+  audit really uses, or extend the witness family until spoof, perturbation,
+  and DAG evidence each control a false-independence or false-dependence
+  boundary on their own.
+- Artifact: [T81 technical report](TECHNICAL-REPORT-measured-schema-ablation-v0.1.md).
+
+### 2026-06-20 - Measured Detector Channel Dominance (T85)
+
+- Q1 remains `partially_supported`, but the executable detector branch narrows
+  again after the T81 blocker is tested directly.
+- Positive content: with trust boundaries and pre-registration fixed at the
+  signed T76 values, a hostile spoof/unique-tag family independently demotes
+  the fixture from `robust_measured_recovery` to
+  `measured_conservative_withhold` (`withhold_rate = 0.4925`).
+- Boundary: even hostile single-category perturbation and DAG families do not
+  demote the signed fixture while authenticated tags remain strong. In the
+  present witness family those channels are still auxiliary rather than
+  independently decisive.
+- Claim impact: the current detector route is best read as a
+  pre-registration gate, a trust-boundary gate, and an authenticated-tag
+  sufficiency test. Perturbation and DAG evidence remain motivated, but they
+  are not yet earned as peer load-bearing channels in the executable audit.
+- Falsification condition: if a single-category perturbation or DAG stress
+  family changes the signed fixture's verdict while trust and pre-registration
+  remain fixed, or if the spoof/unique-tag stress stops changing the verdict,
+  T85 fails.
+- Next step: build a hostile raw-log family in which authenticated tags are
+  ambiguous but perturbation response or signed ancestry alone still separates
+  copied from independent records. If that cannot be done honestly, remove
+  those channels from the detector branch's core schema.
+- Artifact: [T85 technical report](TECHNICAL-REPORT-measured-detector-channel-dominance-v0.1.md).
+
+### 2026-06-20 - Ambiguous-Tag Channel Independence (T86)
+
+- Q1 remains `partially_supported`; there is no upgrade to detector dynamics
+  or empirical support.
+- Positive content: T86 constructs the hostile raw-log-count family requested
+  by T85. With timing and authenticated tags deliberately ambiguous, clean
+  perturbation-only and clean signed-DAG-only fixtures each recover robust
+  measured provenance in `400/400` samples.
+- Boundary: the all-ambiguous control withholds D1 completely, and
+  back-action-contaminated perturbation plus truncated/false-edge DAG controls
+  also withhold completely.
+- Claim impact: perturbation response and signed ancestry should not be
+  deleted from the detector schema yet, but they survive only as isolated,
+  pre-registered raw-log channel tests under ambiguous timing/tag controls.
+- Falsification condition: if the all-ambiguous control recovers D1, if clean
+  perturbation/DAG fixtures stop recovering, or if contaminated controls
+  recover despite back-action/truncation, T86 fails.
+- Next step: draft the T78 real-run table needed to instantiate T86 with
+  copied/independent controls, perturbation trials, signed ancestry exports,
+  tag ambiguity rates, timing uncertainty, and demotion rules.
+- Artifact: [T86 technical report](TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md).
+
 ### 2026-06-20 - LossKernel Composition and Path-Dependence Biconditional (T73)
 
-- Composition law ESTABLISHED: LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g).
-  Lax-functorial (union), not strictly functorial. Total law (applies to all T34/T37
-  morphisms). Identity element: LossKernel(id) = ∅. Union is associative.
+- Finite fixture result established: LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g)
+  on the tested T34/T37 family. Treat this as a monoid-valued annotation law,
+  not yet as a new categorical object or publication-grade novelty.
 - Path-dependence biconditional ESTABLISHED for T37 diamond:
   PO1(P₁) ≠ PO1(P₂) ⟺ LossKernel(P₁) ≠ LossKernel(P₂) in the empty/non-empty sense.
   Path A = {type_guarantee} → AC5=True → PO1. Path B = {} → AC5=False → not PO1.
@@ -363,11 +510,16 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - T34 chain shapes as LossKernel patterns confirmed: emergent = non-empty LK + AC5 + AC6
   True; stepwise = non-empty LK at each obstructed step; absorbed = non-empty LK at
   mid-chain but AC6 False at endpoint.
-- Together with T69, LossKernel governs two levels: path-dependent admissibility (AC5
-  dimension) and obstruction hierarchy monotonicity (cycle_destroying flag). The
-  LossKernel program is complete as an algebraic object over T34/T37. 17/17 tests pass.
+- Together with T69, LossKernel gives finite fixture evidence at two levels:
+  path-dependent admissibility (AC5 dimension) and obstruction hierarchy
+  monotonicity (cycle_destroying flag). The program is not complete until
+  prior-art and quotient tests pass. 17/17 tests pass.
 - Falsification condition: a T34/T37 path where compose_loss ≠ union of per-step
   forgotten_structure, or a diamond path where PO1 and LossKernel emptiness disagree.
+- Promotion blocker: LossKernel must still survive prior-art comparison against
+  provenance/effect/lens/abstract-interpretation machinery and a quotient test
+  over same endpoints, same composite map, same endpoint behavior, and same
+  naive loss set.
 
 ### 2026-06-20 - Typed Forgetting Spine (TF1 / LossKernel)
 
@@ -380,6 +532,10 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - Guardrail: do not claim TaF discovered gluing obstruction. The candidate
   original contribution is a finite typed attribution calculus around known
   local-to-global obstruction.
+- Diligence gate: TF1 remains an open formal target until LossKernel has
+  canonical semantics, prior-art separation, or an impossibility theorem showing
+  why endpoint-only or ordinary compositional attribution cannot recover the
+  intended judgments.
 - Immediate target: re-run T34/T37/T39/T40 through first-class loss kernels,
   then retrofit T19/T64/T66/T67 as access/provenance corollaries if the object
   survives.

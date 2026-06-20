@@ -6,9 +6,10 @@
 
 ---
 
-## Main Theorem: ESTABLISHED
+## Main Fixture Result: ESTABLISHED
 
-**Loss morphisms are failure-type monotone.**
+**In the implemented finite witness family, loss morphisms are failure-type
+monotone.**
 
 For TaF loss morphisms (topology-preserving and sub-cover restriction):
 ```
@@ -18,6 +19,27 @@ in the ordering H1 > H0 > none
 
 H0 → H1 is impossible. H1 → H0 is possible (via cycle destruction). H0 → H0 is
 the generic topology-preserving case.
+
+---
+
+## Diligence Caveat
+
+Do not cite this as a general Cech/sheaf-cohomology theorem. The broad claim
+that acyclic cover topology alone forces H1 to vanish for every presheaf is not
+valid without additional hypotheses. This result is limited to the coefficient
+systems, support semantics, cover shapes, and loss-morphism classes implemented
+in `models/losskernel_failure_type.py`.
+
+Before promotion, the next version must explicitly separate:
+
+- nerve topology of the cover,
+- the coefficient system or support presheaf,
+- global-section obstruction,
+- the paper's custom H0/H1 failure labels,
+- and the allowed class of loss morphisms.
+
+If those assumptions cannot be stated cleanly, T69 should remain a toy-model
+diagnostic rather than theorem-level support for TF1.
 
 ---
 
@@ -53,11 +75,12 @@ the generic topology-preserving case.
 
 ## Key Findings
 
-**1. Cover topology is the invariant barrier.**
-The nerve topology of the cover determines whether H1 is possible. Acyclic covers have H1 = 0
-by Theorem B1 regardless of what sections exist. Loss morphisms that preserve the nerve
-preserve the failure type. Loss morphisms that destroy cycles (sub-cover restriction) can only
-decrease the failure type.
+**1. Cover topology is an invariant barrier in the implemented family.**
+The tested nerve topology determines whether H1 is possible under the chosen
+coefficient/support semantics. This should not be generalized to every
+presheaf. Loss morphisms that preserve the tested nerve preserve the fixture's
+failure type. Loss morphisms that destroy cycles (sub-cover restriction) can
+only decrease the fixture failure type.
 
 **2. H1 destruction is the canonical loss-morphism effect on cyclic covers.**
 T58's distributed contextuality theorem is now interpretable as a loss morphism:

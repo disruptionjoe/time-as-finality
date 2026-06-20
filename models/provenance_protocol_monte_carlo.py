@@ -175,7 +175,7 @@ def run_t74_analysis() -> T74Result:
     rng = random.Random(SEED)
     families = prior_families()
     outcomes = {
-        family.name: _sample_family(family, rng)
+        family.name: sample_family(family, rng, SAMPLE_COUNT)
         for family in families
     }
     strongest_claim = (
@@ -240,7 +240,11 @@ def t74_result_to_dict(result: T74Result) -> dict[str, object]:
     }
 
 
-def _sample_family(family: PriorFamily, rng: random.Random) -> FamilyOutcome:
+def sample_family(
+    family: PriorFamily,
+    rng: random.Random,
+    sample_count: int = SAMPLE_COUNT,
+) -> FamilyOutcome:
     robust = 0
     withhold = 0
     threshold_dependent = 0
@@ -249,7 +253,7 @@ def _sample_family(family: PriorFamily, rng: random.Random) -> FamilyOutcome:
     computable_d1 = 0
 
     witnesses = canonical_witnesses()
-    for index in range(SAMPLE_COUNT):
+    for index in range(sample_count):
         regime = _sample_regime(family, rng, index)
         analyses = tuple(analyze_witness(witness, regime) for witness in witnesses)
         copied, independent = analyses
@@ -270,13 +274,13 @@ def _sample_family(family: PriorFamily, rng: random.Random) -> FamilyOutcome:
             computable_d1 += 1
 
     return FamilyOutcome(
-        sample_count=SAMPLE_COUNT,
-        robust_rate=round(robust / SAMPLE_COUNT, 4),
-        withhold_rate=round(withhold / SAMPLE_COUNT, 4),
-        threshold_dependent_rate=round(threshold_dependent / SAMPLE_COUNT, 4),
-        false_independence_rate=round(false_independence / SAMPLE_COUNT, 4),
-        false_dependence_rate=round(false_dependence / SAMPLE_COUNT, 4),
-        computable_d1_rate=round(computable_d1 / SAMPLE_COUNT, 4),
+        sample_count=sample_count,
+        robust_rate=round(robust / sample_count, 4),
+        withhold_rate=round(withhold / sample_count, 4),
+        threshold_dependent_rate=round(threshold_dependent / sample_count, 4),
+        false_independence_rate=round(false_independence / sample_count, 4),
+        false_dependence_rate=round(false_dependence / sample_count, 4),
+        computable_d1_rate=round(computable_d1 / sample_count, 4),
         robust_count=robust,
         withhold_count=withhold,
         threshold_dependent_count=threshold_dependent,

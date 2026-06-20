@@ -1,0 +1,314 @@
+{
+  "required_t86_control_roles": [
+    "copied_record_control_pairs",
+    "independent_record_control_pairs",
+    "all_channels_ambiguous_negative_control",
+    "clean_perturbation_only_positive_control",
+    "backaction_perturbation_contamination_control",
+    "clean_signed_dag_positive_control",
+    "dag_truncation_false_edge_control"
+  ],
+  "required_channel_isolation_tests": [
+    "perturbation_response",
+    "signed_ancestry_dag"
+  ],
+  "required_raw_log_tables": {
+    "preregistration_manifest": [
+      "run_id",
+      "registered_at",
+      "first_event_not_before",
+      "policy_hash",
+      "analysis_code_hash",
+      "evidence_schema_hash",
+      "demotion_rules_hash",
+      "confidence_floor_low",
+      "max_false_risk_high"
+    ],
+    "control_pair_manifest": [
+      "pair_id",
+      "role",
+      "expected_relation",
+      "local_record_id",
+      "archive_record_id",
+      "source_event_id",
+      "timing_bin_id",
+      "randomization_seed_commitment",
+      "declared_before_event"
+    ],
+    "event_time_tag_stream": [
+      "event_id",
+      "detector_id",
+      "local_time",
+      "local_sigma",
+      "archive_time",
+      "archive_sigma",
+      "batch_id",
+      "batching_window",
+      "timing_uncertainty_model_id"
+    ],
+    "signature_verification_log": [
+      "event_id",
+      "tag_id",
+      "signature_id",
+      "verification_result",
+      "signer_key_id",
+      "forgery_challenge_id",
+      "spoof_challenge_id",
+      "verification_timestamp"
+    ],
+    "tag_ambiguity_challenge_log": [
+      "challenge_id",
+      "event_id",
+      "role",
+      "retained_tag",
+      "accepted_forged_tag",
+      "accepted_spoofed_independent_tag",
+      "unique_independent_tag",
+      "verdict"
+    ],
+    "perturbation_trial_log": [
+      "trial_id",
+      "pair_id",
+      "perturbed_record_id",
+      "perturbation_type",
+      "response_changed",
+      "independent_false_change",
+      "back_action_detected",
+      "pre_trial_state_hash",
+      "post_trial_state_hash"
+    ],
+    "ancestry_dag_edge_export": [
+      "edge_id",
+      "child_record_id",
+      "parent_record_id",
+      "edge_signature_id",
+      "edge_verified",
+      "export_snapshot_id",
+      "truncation_flag",
+      "false_shared_edge_challenge_id"
+    ],
+    "trust_boundary_audit_log": [
+      "audit_id",
+      "component",
+      "boundary_type",
+      "integrity_check_passed",
+      "key_scope",
+      "operator_id_hash",
+      "audit_timestamp"
+    ],
+    "demotion_decision_log": [
+      "run_id",
+      "control_role",
+      "demotion_condition",
+      "triggered",
+      "applied_before_d1",
+      "reason"
+    ]
+  },
+  "table_to_t76_fields": {
+    "preregistration_manifest": [
+      "pre_registered_threshold_coverage"
+    ],
+    "event_time_tag_stream": [
+      "local_sigma",
+      "archive_sigma",
+      "batching_window"
+    ],
+    "signature_verification_log": [
+      "tag_retention",
+      "signature_verification",
+      "accepted_forged_tags",
+      "accepted_spoofed_independent_tags",
+      "independent_unique_tags"
+    ],
+    "tag_ambiguity_challenge_log": [
+      "tag_retention",
+      "accepted_forged_tags",
+      "accepted_spoofed_independent_tags",
+      "independent_unique_tags"
+    ],
+    "perturbation_trial_log": [
+      "dependent_perturbation_changes",
+      "independent_perturbation_false_changes",
+      "perturbation_back_action_events"
+    ],
+    "ancestry_dag_edge_export": [
+      "dag_observability",
+      "signed_dag_edges",
+      "dag_truncation_events",
+      "false_shared_dag_edges"
+    ],
+    "trust_boundary_audit_log": [
+      "detector_boundary_integrity",
+      "archive_boundary_integrity",
+      "transport_boundary_integrity"
+    ]
+  },
+  "audits": [
+    {
+      "contract_name": "complete_t86_event_level_raw_log_contract",
+      "verdict": "admissible_for_t86_real_log_population",
+      "missing_evidence_fields": [],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [],
+      "missing_raw_log_sources": [],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "failure_reasons": [],
+      "next_allowed_audit": "populate_t76_t86_counts_without_schema_changes"
+    },
+    {
+      "contract_name": "dashboard_only_summary_control",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [
+        "archive_sigma",
+        "batching_window",
+        "signature_verification",
+        "accepted_forged_tags",
+        "accepted_spoofed_independent_tags",
+        "independent_unique_tags",
+        "detector_boundary_integrity",
+        "archive_boundary_integrity",
+        "transport_boundary_integrity",
+        "dependent_perturbation_changes",
+        "independent_perturbation_false_changes",
+        "perturbation_back_action_events",
+        "dag_observability",
+        "signed_dag_edges",
+        "dag_truncation_events",
+        "false_shared_dag_edges",
+        "pre_registered_threshold_coverage"
+      ],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [],
+      "missing_raw_log_sources": [
+        "raw_time_tag_stream",
+        "signature_verification_log",
+        "archive_receipt_chain",
+        "trust_boundary_audit_log",
+        "perturbation_protocol_log",
+        "ancestry_dag_export"
+      ],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "failure_reasons": [
+        "no_real_raw_deployment_log",
+        "fixture_counts_only",
+        "raw_tables_not_joinable_by_stable_event_id",
+        "event_level_logs_not_public_or_exportable",
+        "missing_required_evidence_fields",
+        "missing_required_raw_log_sources",
+        "missing_required_raw_log_tables"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "contract_name": "missing_copied_independent_control_labels",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [
+        "copied_record_control_pairs",
+        "independent_record_control_pairs"
+      ],
+      "missing_raw_log_sources": [],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "failure_reasons": [
+        "copied_independent_labels_not_preregistered",
+        "missing_t86_control_roles"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "contract_name": "posthoc_policy_and_demotion_control",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [],
+      "missing_raw_log_sources": [],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "failure_reasons": [
+        "policy_chosen_after_data",
+        "no_predeclared_demote_rule_for_control_leak",
+        "demotion_rules_chosen_after_data",
+        "incomplete_threshold_preregistration",
+        "policy_outside_t77_safe_corridor"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "contract_name": "dag_export_without_raw_edge_columns",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [],
+      "missing_raw_log_sources": [],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [],
+      "missing_columns": [
+        "ancestry_dag_edge_export.parent_record_id",
+        "ancestry_dag_edge_export.edge_signature_id",
+        "ancestry_dag_edge_export.edge_verified",
+        "ancestry_dag_edge_export.truncation_flag",
+        "ancestry_dag_edge_export.false_shared_edge_challenge_id"
+      ],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "failure_reasons": [
+        "missing_required_raw_log_columns"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "contract_name": "unlinked_or_mutable_event_tables",
+      "verdict": "inadmissible_for_q1_upgrade",
+      "missing_evidence_fields": [],
+      "missing_t78_control_roles": [],
+      "missing_t86_control_roles": [],
+      "missing_raw_log_sources": [],
+      "missing_channel_isolation_tests": [],
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export"
+      ],
+      "failure_reasons": [
+        "raw_tables_not_joinable_by_stable_event_id",
+        "required_tables_not_immutable_exports"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    }
+  ],
+  "strongest_claim": "T87 turns T86's next-work item into a falsifiable admission contract: only pre-registered, event-level, joinable, immutable raw logs with copied/independent controls and isolated perturbation/DAG tests may populate the locked T76/T86 counts.",
+  "weakened_claim": "T87 does not score D1, does not claim detector dynamics, and does not provide empirical support. It only specifies what a future detector deployment must log before Q1 can leave the fixture stage.",
+  "falsification_condition": "Demote the detector branch if no feasible deployment can publish these event-level tables before analysis, or if a complete raw log populates the locked T76/T86 adapter but loses the signed recovery, all-ambiguous withhold, perturbation/DAG rescue, or contaminated-control withhold separations.",
+  "q1_update": "Keep Q1 partially supported only as a pre-registered detector record admissibility protocol. A real ambiguous-tag deployment must first pass T87 before its counts can be treated as evidence; dashboard summaries, post hoc demotion rules, missing witness labels, and summary-only DAG exports withhold the detector branch.",
+  "open_blocker": "No actual detector event log is present. T87 supplies the table contract and rejection rules, but cannot populate the evidence counts or compare the result with decoherence/QD alternatives.",
+  "recommended_next": "Pick a concrete photon time-tagging or Stern-Gerlach readout stack, map each instrument export to the T87 tables, then run the locked T76/T86 scorer without adding fields or changing policy."
+}

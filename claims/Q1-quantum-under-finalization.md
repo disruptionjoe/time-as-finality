@@ -64,6 +64,15 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T70: Detector Provenance Robustness](../tests/T70-detector-provenance-robustness.md)
 - [T72: Physical Provenance Protocol](../tests/T72-physical-provenance-protocol.md)
 - [T74: Provenance Protocol Monte Carlo](../tests/T74-provenance-protocol-monte-carlo.md)
+- [T75: Real Detector Stack Provenance Mapping](../tests/T75-real-detector-stack-provenance.md)
+- [T76: Measured Detector Provenance Posterior](../tests/T76-measured-detector-provenance-posterior.md)
+- [T77: Measured Detector Policy Sensitivity](../tests/T77-measured-detector-policy-sensitivity.md)
+- [T78: Pre-registered Detector Deployment Protocol](../tests/T78-preregistered-detector-deployment-protocol.md)
+- [T79: Dashboard Summary Nonidentifiability](../tests/T79-dashboard-summary-nonidentifiability.md)
+- [T81: Measured Schema Ablation](../tests/T81-measured-schema-ablation.md)
+- [T83: Q1 Detector Null Criterion](../tests/T83-q1-detector-null-criterion.md)
+- [T85: Measured Detector Channel Dominance](../tests/T85-measured-detector-channel-dominance.md)
+- [T86: Ambiguous-Tag Channel Independence](../tests/T86-ambiguous-tag-channel-independence.md)
 
 ## T21 Result
 
@@ -175,7 +184,7 @@ The earned claim is therefore narrow: TaF can express an access-window and
 independence-filter predicate over already formed detector records, but it has
 no calibration-free Stern-Gerlach prediction yet.
 
-## T66-T74 Detector Provenance Result
+## T66-T81 Detector Provenance Result
 
 [T66](../tests/T66-povm-detector-calibration-obstruction.md) replaces declared
 channel reliabilities with calibrated POVM response matrices and shows that
@@ -209,18 +218,119 @@ it disappears entirely in the broader `mixed_lab` and `field_degraded`
 families. Outside the engineered corner, the protocol mostly withholds D1
 rather than fixing a provenance partition.
 
+[T75](../tests/T75-real-detector-stack-provenance.md) maps a source-anchored,
+posterior-modeled photon time-tagging stack into the T72/T74 protocol
+coordinates: PicoQuant HydraHarp 500-class time tagging, White Rabbit
+synchronization, and a hash-chained RFC-3161-style signed archive. Under the
+mapped plausible posteriors, the signed stack lands in robust recovery in
+`400/400` samples. The unsigned-control variant keeps the timing hardware but
+loses robust recovery (`0.005` robust rate), mostly withholding D1.
+
+[T76](../tests/T76-measured-detector-provenance-posterior.md) converts that
+stack-level story into a measured evidence schema. Timing resolution alone no
+longer counts; authentication, trust-boundary, perturbation, and DAG evidence
+must all be present in the deployment record before the signed route remains
+positive.
+
+[T77](../tests/T77-measured-detector-policy-sensitivity.md) then shows that the
+signed fixture is not the fragile part. The fragile part is control separation:
+under a permissive policy corridor, the timing-only unsigned control already
+leaks false positives.
+
+[T78](../tests/T78-preregistered-detector-deployment-protocol.md) moves the
+boundary before data collection. A detector run can only test Q1 if it fixes
+the T76 evidence schema, T77-safe policy corridor, negative controls, raw-log
+sources, and demotion rule before the first event.
+
+[T79](../tests/T79-dashboard-summary-nonidentifiability.md) makes the raw-log
+requirement load-bearing. It constructs two deployments with the same coarse
+dashboard summary for timing, tag retention, signature verification, and
+threshold coverage, but opposite provenance verdicts: one robustly supports
+the signed route and the other leaks false independence because spoof, trust,
+perturbation, and DAG failures are hidden from the dashboard view.
+
+[T81](../tests/T81-measured-schema-ablation.md) then turns the scrutiny back
+onto the audit itself. Under single-category ablation of the signed T76
+fixture, only trust-boundary evidence fully removes robust recovery and only
+incomplete pre-registration demotes the verdict to a threshold-dependent one.
+Timing, retention/signature pass rates, spoof-resistance counts, perturbation
+counts, and DAG-summary counts are not yet independently decisive in the
+current witness family.
+
 The detector branch of Q1 should therefore be stated as an
 intervention-sensitive provenance/accounting framework over already formed
 detector records under explicit physical protocol assumptions. It does not
 recover detector finality from calibrated outcome statistics or passive
-correlations alone, and it is not generically recoverable from provenance
-metadata unless the apparatus sits in a narrow engineered protocol region.
+correlations alone. T75 gives a source-anchored, posterior-modeled candidate
+route into the engineered region, but T76-T81 show that the route remains
+valid only for measured, pre-registered, event-level raw-log provenance
+protocols, and that the present executable route currently earns less than its
+full schema claims. Dashboard summaries, fixture counts, and post hoc policy
+selection cannot upgrade Q1. Nor can the current model claim that every
+measured provenance channel is already independently load-bearing.
+
+## T83 Result
+
+[T83](../tests/T83-q1-detector-null-criterion.md) compresses the detector
+sequence into a single failure rule. The detector branch is null whenever its
+verdict reduces to passive outcome statistics, coarse deployment dashboards,
+post hoc provenance declarations, or a broad measured schema whose decisive
+content is actually a narrower hidden subset.
+
+Under T66-T81, the current detector branch does not beat that null criterion.
+Its strongest supported content is therefore narrower than a detector theory:
+it is a conservative admissibility filter for when detector records may count
+as evidence for observer-relative finality. The branch becomes non-null only
+if a pre-registered raw-log protocol yields a verdict that survives those null
+reductions.
+
+## T85 Result
+
+[T85](../tests/T85-measured-detector-channel-dominance.md) sharpens the
+post-T81 blocker. Holding trust boundaries and pre-registration fixed at the
+signed T76 values, a hostile spoof/unique-tag family independently demotes the
+signed fixture from robust recovery to conservative withhold. But even hostile
+single-category perturbation and DAG families do not demote the fixture while
+authenticated tags remain strong.
+
+This narrows the detector branch again. The current executable route behaves
+mainly like:
+
+```text
+pre-registration gate
+  + trust-boundary gate
+  + authenticated-tag sufficiency
+```
+
+with perturbation and DAG evidence still motivated, but not yet independently
+decisive, in the present witness family.
+
+## T86 Result
+
+[T86](../tests/T86-ambiguous-tag-channel-independence.md) tests the hostile
+family requested by T85. Timing and authenticated tags are deliberately made
+ambiguous while trust and pre-registration remain fixed.
+
+The all-ambiguous control withholds D1 completely. Clean perturbation-only and
+clean signed-DAG-only fixtures each recover robust measured provenance in
+`400/400` samples. Back-action-contaminated perturbation and truncated/false
+shared-edge DAG controls withhold completely.
+
+This partially rescues perturbation response and signed ancestry from deletion
+as schema channels, but only as isolated, pre-registered raw-log tests. It does
+not upgrade Q1 into detector dynamics or empirical support without a real T78
+deployment.
 
 ## Contribution Needed
 
-Replace T74's stress priors with calibration posteriors from one concrete
-detector stack: measured clock distributions, signature failure probabilities,
-archive batching, subsystem trust boundaries, perturbation back-action
-matrices, and partial DAG observability. Only after that should the detector
-branch be compared with decoherence, quantum Darwinism, relational QM,
-consistent histories, many-worlds, and QBism.
+Obtain one concrete detector deployment that satisfies T78 and publish its raw
+event-level logs: event loss, signature verification failures, replay/spoof
+tests, perturbation trials, trust-boundary audits, and DAG truncation exports.
+If only dashboard summaries are available, withhold the detector branch rather
+than treating it as empirical support. Only after a real raw-log audit should
+this branch be compared with decoherence, quantum Darwinism, relational QM,
+consistent histories, many-worlds, and QBism. The next strongest internal move
+is narrower: construct a hostile raw-log family where authenticated tags are
+ambiguous but perturbation response or DAG observability alone changes the
+verdict. If that cannot be done honestly, remove those channels from the core
+detector schema.

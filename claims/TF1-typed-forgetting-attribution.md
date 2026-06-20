@@ -14,6 +14,21 @@ Formal target.
 
 Open formal target.
 
+## Diligence Status
+
+External skeptical diligence on the typed-forgetting draft treats TF1 as the
+only plausible novelty window, but not yet as a theorem. The obstruction layer
+is already covered by CSP, signed-graph parity, database projection/join, and
+sheaf/contextuality literature. The attribution layer is adjacent to
+provenance, why-not provenance, causal explanation, lenses, abstract
+interpretation, declassification, and graded/effect-style annotations.
+
+Therefore TF1 must remain an open formal target until it has at least one
+non-tautological result: a canonical `LossKernel` semantics, a separation from
+standard provenance/effect bookkeeping, or an impossibility theorem showing why
+endpoint-only or ordinary compositional attribution cannot recover the intended
+judgments.
+
 ## Candidate Lemma
 
 Let:
@@ -63,6 +78,12 @@ morphisms.
 
 - `LossKernel(f)` may collapse to existing `forgotten_structure` metadata
   without adding mathematical content.
+- `LossKernel` may be only a monoid-valued annotation, analogous to a writer
+  effect or provenance label, rather than a new mathematical object.
+- Path dependence may disappear after quotienting by same composite map, same
+  endpoint behavior, or same typed loss summary.
+- Failure-type monotonicity may rely on over-restrictive cover or coefficient
+  assumptions rather than a valid general cohomology statement.
 - A non-empty loss object may be neither necessary nor sufficient once richer
   morphism classes are tested.
 - Some projection-created obstructions may be attributable purely from a
@@ -75,6 +96,10 @@ morphisms.
 ## Tests / Work Items
 
 - [Loss Kernel Formalization](../open-problems/loss-kernel-formalization.md)
+- Minimal factorization/separation counterexample: construct two paths with
+  the same source, target, endpoint behavior, and naive loss set, but different
+  admissibility verdicts; or prove such an example cannot exist under the
+  proposed semantics.
 - [T31: PO1 Admissibility Conditions](../tests/T31-po1-admissibility-conditions.md)
 - [T32: PO1 Admissibility Derivation](../tests/T32-admissibility-derivation.md)
 - [T33: PO1 Foundational Derivation](../tests/T33-po1-foundational-derivation.md)
@@ -91,8 +116,13 @@ morphisms.
 - This does not claim every information-losing map creates obstruction.
 - This does not claim that access, provenance, or auditability are the whole
   structure; they are candidate corollaries or laboratories.
+- This does not claim that `LossKernel` is publishably distinct from existing
+  provenance, effect, abstract-interpretation, or lens machinery.
+- This does not claim any general Cech-cohomology theorem without explicitly
+  stating the coefficient system, cover hypotheses, and support presheaf.
 
 ## Next Step
 
 Define `LossKernel` as a first-class object and re-run T34/T37/T39/T40 through
-it. Only after that should TF1 be upgraded from open formal target.
+it with prior-art and quotient tests. Only after that should TF1 be upgraded
+from open formal target.

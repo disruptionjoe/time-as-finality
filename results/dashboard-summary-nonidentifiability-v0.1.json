@@ -1,0 +1,105 @@
+{
+  "sample_count": 400,
+  "seed": 79031,
+  "dashboard_equal": true,
+  "audits": [
+    {
+      "name": "measured_signed_time_tag_stack",
+      "dashboard": {
+        "local_sigma": [
+          0.003,
+          0.002
+        ],
+        "archive_sigma": [
+          0.025,
+          0.015
+        ],
+        "batching_window": [
+          0.09,
+          0.04
+        ],
+        "tag_retention": [
+          9975,
+          10000
+        ],
+        "signature_verification": [
+          9990,
+          10000
+        ],
+        "threshold_coverage": [
+          20,
+          20
+        ]
+      },
+      "verdict": "robust_measured_recovery",
+      "interpretation": "The completion supports the signed provenance branch under T76.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "dashboard_matched_spoofable_completion",
+      "dashboard": {
+        "local_sigma": [
+          0.003,
+          0.002
+        ],
+        "archive_sigma": [
+          0.025,
+          0.015
+        ],
+        "batching_window": [
+          0.09,
+          0.04
+        ],
+        "tag_retention": [
+          9975,
+          10000
+        ],
+        "signature_verification": [
+          9990,
+          10000
+        ],
+        "threshold_coverage": [
+          20,
+          20
+        ]
+      },
+      "verdict": "measured_conservative_withhold",
+      "interpretation": "The completion is too weak to support detector-level D1.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    }
+  ],
+  "strongest_claim": "Coarse deployment dashboards are non-identifying for the detector branch: two completions with the same timing, retention, signature-pass, and threshold-coverage summary can still yield opposite T76-style provenance verdicts.",
+  "weakened_claim": "T79 weakens the detector branch by ruling out a common shortcut: strong timing, high tag retention, and high signature-pass rates do not by themselves support Q1. Opposite provenance verdicts can hide beneath the same coarse deployment dashboard.",
+  "falsification_condition": "T79 fails if one can project deployment evidence to a coarse dashboard that omits raw ancestry, replay, spoof, perturbation, and trust-boundary logs while still uniquely determining the T76/T77 verdict for all completions compatible with that summary.",
+  "q1_update": "Keep Q1 partially supported only for event-level raw-log provenance audits. Dashboard summaries are insufficient because they do not identify spoof, trust-boundary, perturbation, or DAG structure.",
+  "recommended_next": "Demand one real event-level detector log with ancestry, replay, spoof, perturbation, and trust-boundary evidence, then run the locked T76/T77/T78/T79 audit without replacing it by a dashboard summary.",
+  "blocker": "No real event-level deployment log is present; T79 only proves that dashboard-level evidence cannot close that gap."
+}

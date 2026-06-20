@@ -1,0 +1,96 @@
+{
+  "sample_count": 400,
+  "seed": 85029,
+  "baseline": {
+    "verdict": "robust_measured_recovery",
+    "outcome": {
+      "sample_count": 400,
+      "robust_rate": 1.0,
+      "withhold_rate": 0.0,
+      "threshold_dependent_rate": 0.0,
+      "false_independence_rate": 0.0,
+      "false_dependence_rate": 0.0,
+      "computable_d1_rate": 1.0,
+      "robust_count": 400,
+      "withhold_count": 0,
+      "threshold_dependent_count": 0,
+      "false_independence_count": 0,
+      "false_dependence_count": 0,
+      "computable_d1_count": 400
+    }
+  },
+  "cases": [
+    {
+      "name": "spoof_unique_tag_hostile_family",
+      "category": "spoof_resistance",
+      "verdict": "measured_conservative_withhold",
+      "independently_decisive": true,
+      "interpretation": "Single-category spoof and unique-tag stress demotes the signed fixture, so authenticated tag evidence is still independently decisive inside the present witness family.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.455,
+        "withhold_rate": 0.545,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.455,
+        "robust_count": 182,
+        "withhold_count": 218,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 182
+      }
+    },
+    {
+      "name": "perturbation_backaction_hostile_family",
+      "category": "perturbation",
+      "verdict": "robust_measured_recovery",
+      "independently_decisive": false,
+      "interpretation": "Even hostile perturbation stress does not demote the signed fixture while authenticated tags, trust boundaries, and pre-registration remain intact.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "dag_truncation_hostile_family",
+      "category": "dag_observability",
+      "verdict": "robust_measured_recovery",
+      "independently_decisive": false,
+      "interpretation": "Even hostile dag_observability stress does not demote the signed fixture while authenticated tags, trust boundaries, and pre-registration remain intact.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    }
+  ],
+  "strongest_claim": "The current measured detector route is narrower than the T76 schema suggests. After trust-boundary and pre-registration gates are fixed, spoof/unique-tag evidence can still independently demote the signed fixture, but perturbation and DAG evidence do not become decisive on their own inside the present witness family.",
+  "weakened_claim": "This weakens any reading of the detector branch that treats perturbation response or DAG observability as already independent decision channels in the executable audit. At present they are auxiliary to authenticated-tag evidence rather than peer load-bearing axes.",
+  "falsification_condition": "T85 fails if a single-category perturbation or DAG stress family, with trust and pre-registration fixed at the signed values, changes the signed fixture's verdict on its own, or if the spoof/unique-tag stress stops changing the verdict.",
+  "q1_update": "Keep Q1 partially supported only as a narrow detector-record admissibility audit. The current executable content is best read as pre-registration gate + trust-boundary gate + authenticated-tag sufficiency, with perturbation and DAG channels not yet independently earned.",
+  "blocker": "The current witness family leaves authenticated tag channels already strong enough to settle provenance in cases where perturbation and DAG evidence degrade. That prevents those channels from being independently decisive.",
+  "recommended_next": "Construct a hostile raw-log family in which authenticated tags are intentionally ambiguous but perturbation response or signed ancestry still separates copied from independent records. If that cannot be done, remove those channels from the detector branch's core schema."
+}

@@ -1,0 +1,127 @@
+{
+  "sample_count": 400,
+  "seed": 86037,
+  "cases": [
+    {
+      "name": "all_channels_ambiguous_negative_control",
+      "channel_under_test": "none",
+      "role": "negative_control",
+      "verdict": "measured_conservative_withhold",
+      "rescues_with_ambiguous_tags": false,
+      "interpretation": "All available timing/tag/provenance channels are ambiguous; the protocol verdict is measured_conservative_withhold.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "name": "clean_perturbation_only_rescue",
+      "channel_under_test": "perturbation_response",
+      "role": "positive_test",
+      "verdict": "robust_measured_recovery",
+      "rescues_with_ambiguous_tags": true,
+      "interpretation": "With timing and tags ambiguous, clean perturbation_response evidence alone yields verdict robust_measured_recovery.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "backaction_contaminated_perturbation_control",
+      "channel_under_test": "perturbation_response",
+      "role": "contamination_control",
+      "verdict": "measured_conservative_withhold",
+      "rescues_with_ambiguous_tags": false,
+      "interpretation": "The perturbation_response channel is present but contaminated; the protocol verdict is measured_conservative_withhold.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "name": "clean_dag_only_rescue",
+      "channel_under_test": "signed_ancestry_dag",
+      "role": "positive_test",
+      "verdict": "robust_measured_recovery",
+      "rescues_with_ambiguous_tags": true,
+      "interpretation": "With timing and tags ambiguous, clean signed_ancestry_dag evidence alone yields verdict robust_measured_recovery.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "truncated_dag_control",
+      "channel_under_test": "signed_ancestry_dag",
+      "role": "contamination_control",
+      "verdict": "measured_conservative_withhold",
+      "rescues_with_ambiguous_tags": false,
+      "interpretation": "The signed_ancestry_dag channel is present but contaminated; the protocol verdict is measured_conservative_withhold.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    }
+  ],
+  "strongest_claim": "Inside the current executable protocol, perturbation response and signed ancestry can be independently decisive when timing and authenticated tags are deliberately ambiguous. The result rescues those channels from immediate schema deletion, but only as pre-registered raw-log isolation tests.",
+  "weakened_claim": "This does not upgrade Q1 into a detector theory. The same ambiguous-tag family with perturbation back-action or DAG truncation withholds D1 completely, so the channel claim is narrow and control-dependent.",
+  "falsification_condition": "T86 fails if the all-ambiguous negative control robustly recovers D1, if the clean perturbation-only or clean DAG-only families stop recovering both witness classes, or if the contaminated controls recover despite back-action/truncation.",
+  "q1_update": "Keep Q1 partially supported only as a detector-record admissibility protocol. Perturbation and DAG channels may stay in the core schema only as independently isolated, pre-registered raw-log tests under ambiguous timing/tag controls; they are not empirical support until a T78-style real deployment supplies those logs.",
+  "blocker": "The positive families are constructed fixture counts, not measured deployment logs. They also rely on the protocol's actual-class witness labels when computing whether recovery is correct, so the next real test must define copied and independent controls before data collection.",
+  "recommended_next": "Draft the T78 raw-log table needed for a real ambiguous-tag deployment: paired copied/independent controls, perturbation trials, signed ancestry exports, tag ambiguity rates, timing uncertainty, and pre-registered demotion rules."
+}

@@ -1,0 +1,184 @@
+{
+  "sample_count": 400,
+  "seed": 81023,
+  "signed": {
+    "verdict": "robust_measured_recovery",
+    "outcome": {
+      "sample_count": 400,
+      "robust_rate": 1.0,
+      "withhold_rate": 0.0,
+      "threshold_dependent_rate": 0.0,
+      "false_independence_rate": 0.0,
+      "false_dependence_rate": 0.0,
+      "computable_d1_rate": 1.0,
+      "robust_count": 400,
+      "withhold_count": 0,
+      "threshold_dependent_count": 0,
+      "false_independence_count": 0,
+      "false_dependence_count": 0,
+      "computable_d1_count": 400
+    }
+  },
+  "ablations": [
+    {
+      "name": "timing_ablation",
+      "category": "timing",
+      "verdict": "robust_measured_recovery",
+      "load_bearing": false,
+      "interpretation": "Replacing only the timing category does not change the signed fixture's robust verdict in the current executable audit.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "retention_signature_ablation",
+      "category": "retention_signature",
+      "verdict": "robust_measured_recovery",
+      "load_bearing": false,
+      "interpretation": "Replacing only the retention_signature category does not change the signed fixture's robust verdict in the current executable audit.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "spoof_resistance_ablation",
+      "category": "spoof_resistance",
+      "verdict": "robust_measured_recovery",
+      "load_bearing": false,
+      "interpretation": "Replacing only the spoof_resistance category does not change the signed fixture's robust verdict in the current executable audit.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "trust_boundary_ablation",
+      "category": "trust_boundaries",
+      "verdict": "measured_conservative_withhold",
+      "load_bearing": true,
+      "interpretation": "Replacing only the trust_boundaries category removes robust recovery from the signed fixture.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "name": "perturbation_ablation",
+      "category": "perturbation",
+      "verdict": "robust_measured_recovery",
+      "load_bearing": false,
+      "interpretation": "Replacing only the perturbation category does not change the signed fixture's robust verdict in the current executable audit.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "dag_ablation",
+      "category": "dag_observability",
+      "verdict": "robust_measured_recovery",
+      "load_bearing": false,
+      "interpretation": "Replacing only the dag_observability category does not change the signed fixture's robust verdict in the current executable audit.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "preregistration_ablation",
+      "category": "preregistration",
+      "verdict": "threshold_dependent_failure",
+      "load_bearing": true,
+      "interpretation": "Replacing only the preregistration category makes the signed fixture policy-threshold dependent.",
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.74,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.26,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.74,
+        "robust_count": 296,
+        "withhold_count": 0,
+        "threshold_dependent_count": 104,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 296
+      }
+    }
+  ],
+  "strongest_claim": "The current measured detector-provenance audit does not justify treating every T76 evidence field as equally load-bearing. Under single-category ablations, only trust-boundary evidence fully collapses the signed fixture, while incomplete pre-registration demotes it to a threshold-dependent result.",
+  "weakened_claim": "In the current witness family, timing, retention/signature pass rates, spoof-resistance counts, perturbation counts, and DAG-summary counts are not independently decisive under single-category ablation. The executable detector branch is therefore narrower than the full T76 evidence schema suggests.",
+  "falsification_condition": "T81 fails if every declared T76 evidence category independently changes the signed fixture's verdict under a single-category ablation, or if trust-boundary and pre-registration ablations no longer change the verdict.",
+  "q1_update": "Keep Q1 partially supported only as a measured detector-provenance audit, but narrow the current executable content: in this model the detector branch presently behaves mainly as a trust-boundary plus pre-registration gate, not as a fully identified use of all T76 evidence channels.",
+  "blocker": "The canonical witness family does not yet make spoof, perturbation, or DAG evidence independently decisive. Those channels are argued for in prose, but not individually load-bearing in the current audit.",
+  "recommended_next": "Either compress the measured schema to the categories actually used by the executable audit, or extend the witness family and classifier so spoof, perturbation, and DAG evidence each control at least one false-independence or false-dependence boundary."
+}

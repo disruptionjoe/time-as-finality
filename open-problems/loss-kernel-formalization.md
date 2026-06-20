@@ -4,6 +4,29 @@
 
 Open formal target.
 
+## Diligence Gate
+
+LossKernel is not yet cleared for canon or public theorem language. External
+skeptical diligence classifies the current draft as mostly definitional unless
+LossKernel becomes stricter than a set of user-chosen labels. Treat existing
+T34/T37/T69/T73 checks as finite fixture evidence, not as proof that the
+object is mathematically novel.
+
+Before promotion, the program must answer three questions:
+
+1. **Canonical semantics:** is `LossKernel(f)` derived from the morphism and
+   source/target structures, or merely attached as metadata?
+2. **Prior-art separation:** what attribution judgment is recoverable by
+   LossKernel that is not already recoverable by standard CSP data plus
+   provenance, why-not provenance, abstract interpretation, lenses, or
+   graded/effect annotations?
+3. **Quotient survival:** does path dependence survive after quotienting by
+   same endpoints, same composite map, same endpoint satisfiability behavior,
+   and same naive set of lost labels?
+
+If the answer to these is negative, LossKernel should be retained only as an
+honest annotation vocabulary.
+
 ## Strategic Role
 
 `LossKernel` is the proposed central accounting object for the repo's next
@@ -58,6 +81,10 @@ LossKernel(g o f) = compose_loss(LossKernel(f), LossKernel(g))
 The composition may be strict, lax, partial, or obstruction-sensitive. One of
 the first tasks is to determine which.
 
+Current finite fixtures support union accumulation, but that should be stated
+as a monoid-valued annotation law on the tested morphism family unless a
+stronger categorical or universal property is proved.
+
 ## Open Questions
 
 1. Is `LossKernel(f)` just existing `forgotten_structure`, or a stricter typed
@@ -71,6 +98,10 @@ the first tasks is to determine which.
    admissible obstruction attribution?
 7. What is the correct equivalence relation on loss kernels: syntactic equality,
    same resolved obstruction, same resource decrease, or same typed witness?
+8. Can LossKernel produce a separation theorem from ordinary CSP plus
+   provenance/effect bookkeeping?
+9. Are the T69 failure-type results valid only for the chosen finite cover
+   fixtures, or do they survive standard Cech/sheaf-theoretic hypotheses?
 
 ## Candidate Data Shape
 
@@ -109,6 +140,10 @@ correlates with it, or is not yet linked.
   physics language.
 - Prove or executable-check identity and composition laws for the finite T34/T37
   family.
+- State whether the law is merely powerset-union annotation or something with a
+  stronger universal, kernel, congruence, or witness-extraction role.
+- Provide at least one quotient/separation result showing that LossKernel does
+  theorem-level work beyond ordinary provenance or effect accumulation.
 - Re-express AC5/P5 as a statement about non-empty, attribution-relevant loss.
 - Show that at least one previous path-dependent result is exactly a difference
   in composed loss kernels.
@@ -118,6 +153,10 @@ correlates with it, or is not yet linked.
 
 - `LossKernel` collapses to a synonym for `forgotten_structure` with no stronger
   typing, composition, or witness obligations.
+- The best law is only `LossKernel(g o f) = LossKernel(f) union LossKernel(g)`
+  with no semantic witness obligation beyond label accumulation.
+- Path dependence is fully explained by endpoint conditions plus empty/non-empty
+  label bookkeeping.
 - Loss composition is not definable even in the finite T34/T37 families.
 - AC5/P5 remains purely methodological metadata after the attempted
   formalization.

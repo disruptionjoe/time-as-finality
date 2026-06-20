@@ -1,0 +1,323 @@
+{
+  "sample_count": 400,
+  "seed": 76019,
+  "audits": [
+    {
+      "name": "measured_signed_time_tag_stack",
+      "verdict": "robust_measured_recovery",
+      "interpretation": "Measured evidence maps into the engineered recovery region.",
+      "posterior_ranges": {
+        "local_sigma": [
+          0.001,
+          0.005
+        ],
+        "archive_sigma": [
+          0.01,
+          0.04
+        ],
+        "batching_window": [
+          0.05,
+          0.13
+        ],
+        "tag_retention": [
+          0.992401,
+          1.0
+        ],
+        "verification": [
+          0.9939,
+          1.0
+        ],
+        "forgery": [
+          0.0,
+          0.0052
+        ],
+        "spoof_independent": [
+          0.0,
+          0.0054
+        ],
+        "unique_independent_tag": [
+          0.9929,
+          1.0
+        ],
+        "detector_trust": [
+          0.991901,
+          1.0
+        ],
+        "archive_trust": [
+          0.990901,
+          1.0
+        ],
+        "transport_trust": [
+          0.992401,
+          1.0
+        ],
+        "p_change_dependent": [
+          0.969991,
+          0.988092
+        ],
+        "p_change_independent": [
+          0.003021,
+          0.014943
+        ],
+        "back_action": [
+          0.0,
+          0.008992
+        ],
+        "observability": [
+          0.990901,
+          1.0
+        ],
+        "signed_edge": [
+          0.9939,
+          1.0
+        ],
+        "truncation": [
+          0.0,
+          0.0063
+        ],
+        "false_shared_edge": [
+          0.0,
+          0.0055
+        ],
+        "confidence_floor": [
+          0.78,
+          0.85
+        ],
+        "max_false_risk": [
+          0.12,
+          0.22
+        ],
+        "declared_threshold_prob": 1.0,
+        "purpose": "Measured-style fixture for a signed photon time-tagging stack with explicit provenance logging."
+      },
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "timing_only_unsigned_control",
+      "verdict": "measured_conservative_withhold",
+      "interpretation": "Measured evidence is insufficient; D1 provenance is withheld.",
+      "posterior_ranges": {
+        "local_sigma": [
+          0.001,
+          0.005
+        ],
+        "archive_sigma": [
+          0.01,
+          0.04
+        ],
+        "batching_window": [
+          0.05,
+          0.13
+        ],
+        "tag_retention": [
+          0.691178,
+          0.747943
+        ],
+        "verification": [
+          0.428589,
+          0.49157
+        ],
+        "forgery": [
+          0.118748,
+          0.162689
+        ],
+        "spoof_independent": [
+          0.137476,
+          0.183881
+        ],
+        "unique_independent_tag": [
+          0.650159,
+          0.709123
+        ],
+        "detector_trust": [
+          0.991901,
+          1.0
+        ],
+        "archive_trust": [
+          0.629744,
+          0.689618
+        ],
+        "transport_trust": [
+          0.670636,
+          0.728566
+        ],
+        "p_change_dependent": [
+          0.969991,
+          0.988092
+        ],
+        "p_change_independent": [
+          0.003021,
+          0.014943
+        ],
+        "back_action": [
+          0.0,
+          0.008992
+        ],
+        "observability": [
+          0.388974,
+          0.451346
+        ],
+        "signed_edge": [
+          0.100171,
+          0.141346
+        ],
+        "truncation": [
+          0.252057,
+          0.308822
+        ],
+        "false_shared_edge": [
+          0.137476,
+          0.183881
+        ],
+        "confidence_floor": [
+          0.78,
+          0.85
+        ],
+        "max_false_risk": [
+          0.12,
+          0.22
+        ],
+        "declared_threshold_prob": 1.0,
+        "purpose": "Control with the same timing evidence but weak or absent signed provenance infrastructure."
+      },
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "name": "signed_stack_incomplete_preregistration_control",
+      "verdict": "threshold_dependent_failure",
+      "interpretation": "The audit depends on thresholds not covered by the deployment record.",
+      "posterior_ranges": {
+        "local_sigma": [
+          0.001,
+          0.005
+        ],
+        "archive_sigma": [
+          0.01,
+          0.04
+        ],
+        "batching_window": [
+          0.05,
+          0.13
+        ],
+        "tag_retention": [
+          0.992401,
+          1.0
+        ],
+        "verification": [
+          0.9939,
+          1.0
+        ],
+        "forgery": [
+          0.0,
+          0.0052
+        ],
+        "spoof_independent": [
+          0.0,
+          0.0054
+        ],
+        "unique_independent_tag": [
+          0.9929,
+          1.0
+        ],
+        "detector_trust": [
+          0.991901,
+          1.0
+        ],
+        "archive_trust": [
+          0.990901,
+          1.0
+        ],
+        "transport_trust": [
+          0.992401,
+          1.0
+        ],
+        "p_change_dependent": [
+          0.969991,
+          0.988092
+        ],
+        "p_change_independent": [
+          0.003021,
+          0.014943
+        ],
+        "back_action": [
+          0.0,
+          0.008992
+        ],
+        "observability": [
+          0.990901,
+          1.0
+        ],
+        "signed_edge": [
+          0.9939,
+          1.0
+        ],
+        "truncation": [
+          0.0,
+          0.0063
+        ],
+        "false_shared_edge": [
+          0.0,
+          0.0055
+        ],
+        "confidence_floor": [
+          0.78,
+          0.85
+        ],
+        "max_false_risk": [
+          0.12,
+          0.22
+        ],
+        "declared_threshold_prob": 0.7,
+        "purpose": "Control with strong deployment evidence but incomplete pre-registration of acceptance thresholds."
+      },
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.67,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.33,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.67,
+        "robust_count": 268,
+        "withhold_count": 0,
+        "threshold_dependent_count": 132,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 268
+      }
+    }
+  ],
+  "strongest_claim": "Detector-level D1 finality can be tested as a measured provenance-protocol claim: deployment evidence can be converted into T72/T74 posterior coordinates before D1 scoring.",
+  "weakened_claim": "The measured-posterior adapter weakens T75 by replacing narrative posterior ranges with a required evidence schema. A detector stack without measured authentication, trust-boundary, perturbation, and DAG evidence does not earn D1 provenance recovery even when its timing evidence is unchanged.",
+  "falsification_condition": "The detector branch should be demoted if a real deployment's measured posterior either withholds D1, produces false independence/dependence risk, or only succeeds after weakening pre-registered confidence and false-risk policy bounds.",
+  "q1_update": "Keep Q1 partially supported only for measured, pre-registered detector provenance protocols; do not treat timing resolution alone as support.",
+  "recommended_next": "Populate this schema from an actual lab run: event-loss logs, signature failures, replay/forgery trials, perturbation controls, trust-boundary audits, and DAG truncation counts."
+}

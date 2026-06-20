@@ -1,0 +1,240 @@
+{
+  "sample_count": 400,
+  "seed": 75031,
+  "selected_stack": "hydraharp_wr_signed_archive",
+  "source_notes": [
+    {
+      "parameter": "time tagger timing precision",
+      "value_used": "HydraHarp 500: 1 ps base resolution, 2.5 ps RMS timing precision, 680 ps dead time, 85 Mcps throughput",
+      "source": "https://www.picoquant.com/products/time-tagging-tcspc-electronics/",
+      "interpretation": "Anchors local time-tag uncertainty well below a nanosecond for a high-control photon-counting stack."
+    },
+    {
+      "parameter": "distributed timing",
+      "value_used": "White Rabbit: sub-nanosecond distributed timing; CERN notes few-picosecond precision",
+      "source": "https://openscience.cern/node/447",
+      "interpretation": "Supports a declared shared clock for distributed detector nodes, but the exact deployment still needs calibration."
+    },
+    {
+      "parameter": "signed archive",
+      "value_used": "RFC 3161-style timestamp tokens sign hash imprints and include unique serial numbers",
+      "source": "https://www.ietf.org/rfc/rfc3161.txt",
+      "interpretation": "Motivates high verification and low forgery priors for an explicitly signed archive, not for ordinary unsigned logs."
+    }
+  ],
+  "mappings": [
+    {
+      "name": "hydraharp_wr_signed_archive",
+      "verdict": "robust_recovery",
+      "interpretation": "The mapped stack occupies the T74 engineered recovery region.",
+      "posterior_ranges": {
+        "local_sigma": [
+          0.003,
+          0.02
+        ],
+        "archive_sigma": [
+          0.01,
+          0.08
+        ],
+        "batching_window": [
+          0.02,
+          0.18
+        ],
+        "tag_retention": [
+          0.975,
+          0.999
+        ],
+        "verification": [
+          0.985,
+          0.9995
+        ],
+        "forgery": [
+          0.0,
+          0.004
+        ],
+        "spoof_independent": [
+          0.0,
+          0.006
+        ],
+        "unique_independent_tag": [
+          0.975,
+          0.999
+        ],
+        "detector_trust": [
+          0.93,
+          0.99
+        ],
+        "archive_trust": [
+          0.94,
+          0.995
+        ],
+        "transport_trust": [
+          0.93,
+          0.99
+        ],
+        "p_change_dependent": [
+          0.92,
+          0.995
+        ],
+        "p_change_independent": [
+          0.0,
+          0.06
+        ],
+        "back_action": [
+          0.0,
+          0.025
+        ],
+        "observability": [
+          0.95,
+          0.999
+        ],
+        "signed_edge": [
+          0.97,
+          0.9995
+        ],
+        "truncation": [
+          0.0,
+          0.035
+        ],
+        "false_shared_edge": [
+          0.0,
+          0.02
+        ],
+        "confidence_floor": [
+          0.78,
+          0.85
+        ],
+        "max_false_risk": [
+          0.12,
+          0.22
+        ],
+        "declared_threshold_prob": 1.0,
+        "purpose": "Photon time-tagging stack with White Rabbit timing and a signed, hash-chained provenance archive."
+      },
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "name": "hydraharp_wr_unsigned_archive_control",
+      "verdict": "conservative_withhold",
+      "interpretation": "The protocol usually withholds D1 rather than fixing provenance.",
+      "posterior_ranges": {
+        "local_sigma": [
+          0.003,
+          0.02
+        ],
+        "archive_sigma": [
+          0.01,
+          0.08
+        ],
+        "batching_window": [
+          0.02,
+          0.18
+        ],
+        "tag_retention": [
+          0.5,
+          0.9
+        ],
+        "verification": [
+          0.35,
+          0.7
+        ],
+        "forgery": [
+          0.05,
+          0.25
+        ],
+        "spoof_independent": [
+          0.05,
+          0.3
+        ],
+        "unique_independent_tag": [
+          0.45,
+          0.85
+        ],
+        "detector_trust": [
+          0.93,
+          0.99
+        ],
+        "archive_trust": [
+          0.6,
+          0.85
+        ],
+        "transport_trust": [
+          0.65,
+          0.9
+        ],
+        "p_change_dependent": [
+          0.92,
+          0.995
+        ],
+        "p_change_independent": [
+          0.0,
+          0.06
+        ],
+        "back_action": [
+          0.0,
+          0.025
+        ],
+        "observability": [
+          0.35,
+          0.75
+        ],
+        "signed_edge": [
+          0.0,
+          0.3
+        ],
+        "truncation": [
+          0.1,
+          0.45
+        ],
+        "false_shared_edge": [
+          0.03,
+          0.25
+        ],
+        "confidence_floor": [
+          0.78,
+          0.85
+        ],
+        "max_false_risk": [
+          0.12,
+          0.22
+        ],
+        "declared_threshold_prob": 0.85,
+        "purpose": "Same timing hardware, but without a signed provenance archive or reliable ancestry graph."
+      },
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.005,
+        "withhold_rate": 0.8425,
+        "threshold_dependent_rate": 0.1525,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.005,
+        "robust_count": 2,
+        "withhold_count": 337,
+        "threshold_dependent_count": 61,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 2
+      }
+    }
+  ],
+  "strongest_claim": "A realistic photon time-tagging stack can occupy the engineered T74 recovery region if it combines picosecond time tags, sub-nanosecond clock distribution, and signed hash-chain archive provenance.",
+  "weakened_claim": "The positive result is carried by engineered provenance logging, not by detector timing alone. The unsigned-control variant loses robust recovery despite retaining the same time-tagging hardware.",
+  "q1_update": "Q1 remains partially supported as an instrumentation/provenance claim for explicitly engineered detector stacks.",
+  "blocker": "The timing inputs are source-anchored, but authentication, trust, batching, back-action, and DAG-observability ranges are plausible engineering posteriors rather than measured deployment posteriors.",
+  "recommended_next": "Replace the signed-archive priors with measurements from one lab deployment: event-loss logs, signature-verification failures, archive replay tests, perturbation tests, and DAG truncation audits."
+}

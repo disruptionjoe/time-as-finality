@@ -70,6 +70,22 @@ replaces the Boolean degradation flags with physical protocol parameters and
 adds two unsafe regimes: forged tags can create false independence, and
 perturbation back-action can create false dependence.
 
+T74-T75 sharpen the instrumentation boundary. T74 shows robust provenance
+recovery is confined to an engineered region under stress priors. T75 then maps
+one source-anchored, posterior-modeled photon time-tagging stack into that
+region: HydraHarp-class picosecond time tags, White Rabbit synchronization, and
+a hash-chained RFC-3161-style signed archive. The unsigned-control variant keeps
+timing hardware but mostly withholds D1, so the differentiator is authenticated
+provenance infrastructure, not detector timing alone.
+
+T83 compresses the whole branch into a null criterion. At present, the detector
+route does not yet distinguish TaF from Quantum Darwinism at the level of new
+measurement dynamics. It distinguishes only a stricter admissibility rule for
+which already formed detector records may count as evidence. The branch becomes
+non-null only if a pre-registered event-level raw-log protocol yields a verdict
+that cannot be reduced to passive statistics, dashboard summaries, or post hoc
+provenance declarations.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing
@@ -112,6 +128,11 @@ guardrail. In the entangled-pair audit, remote setting changes leave the local
 noisy detector marginal unchanged. This preserves a necessary physics
 constraint, but it is not a novel prediction; it is a failure condition for any
 future finality rule.
+
+T83 makes the current comparison more honest. Unless the detector branch beats
+its passive-statistics, dashboard, and post hoc partition nulls, TaF is not
+competing with decoherence on dynamics. It is only adding a conservative
+record-admissibility discipline over detector evidence.
 
 **Falsification condition for TaF:** If the H1 sheaf obstruction vanishes whenever all pairwise
 decoherence records are formed, TaF's global-consistency check reduces to local decoherence.
@@ -177,6 +198,16 @@ Use T9's reversible-lift results to check whether any reversible CA rule generat
 finality direction under D1-monotone admissibility. A reversible CA has zero thermodynamic entropy
 production by construction. If H7 assigns a direction in that setting, the direction is not
 thermodynamic. T18's constructor model is the finite check; T9's CA family is the next test.
+
+T80 performs the first direct bridge between T9 and T18 and weakens the
+criterion. A width-3 reversible Rule 30 lift has an injective transition map
+and zero logical information-loss bound, but its raw observer-window D1 trace
+profile decreases under the physical dynamics. T18 classifies that step as
+`strict_definalization`, so D1-monotone admissibility is not automatically
+grounded by reversible local dynamics. The remaining discriminator is not
+"reversible trace exists"; it is whether an endogenous persistent reconciler
+can make retained-record D1 monotone without reducing the effect to
+thermodynamic erasure.
 
 **Falsification condition for TaF:** If D1-monotone admissibility is always equivalent to
 entropy non-decrease in physically grounded models, H7 adds no new content.
@@ -269,8 +300,8 @@ counterexample. The table below preserves the older domain-neighbor ordering.
 
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
-| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21/T62/T64/T66-T72 implemented; calibration-data or Monte Carlo protocol open |
-| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22/T62/T64/T66-T72 implemented; trusted provenance instrumentation requires physical validation |
+| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21/T62/T64/T66-T81 implemented; real raw-log detector audit still open, and the current detector audit is narrower than its full schema claims |
+| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22/T62/T64/T66-T81 implemented; signed provenance instrumentation survives only as a pre-registered raw-log route, with trust/pre-registration currently more load-bearing than the rest of the measured schema |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
 | 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |

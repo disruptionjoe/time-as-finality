@@ -1,9 +1,22 @@
 # T73: LossKernel Composition
 
-**Status:** implemented — composition law verified; path-dependence biconditional established
+**Status:** implemented on finite fixtures; theorem-level novelty audit-blocked
 **Depends on:** T34, T37, T69, TF1/LossKernel
-**Strategic role:** completes the LossKernel program — turns it from a naming layer
-into an algebraic object that governs path-dependent PO1 admissibility
+**Strategic role:** tests whether LossKernel can become more than a naming layer
+
+---
+
+## Diligence Note
+
+This test verifies a powerset-union accumulation law for the current finite
+T34/T37 morphism family. It does not by itself prove that LossKernel is a new
+mathematical object. Read the result as a monoid-valued annotation/effect law
+unless a stronger semantics, quotient survival result, or prior-art separation
+theorem is added.
+
+The phrase "lax-functorial" is provisional. A safer categorical formulation is:
+`LossKernel` is an arrow annotation valued in the commutative idempotent monoid
+of finite sets under union.
 
 ---
 
@@ -26,7 +39,8 @@ The set of structure names forgotten (projected away) by morphism f.
 ```
 LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g)
 ```
-Union of individual loss kernels. This is the lax-functorial (monotone) law.
+Union of individual loss kernels. This is the current monoid-valued annotation
+law for the tested family.
 
 **AC5 condition restatement:**
 AC5 (structure_forgotten) passes iff `LossKernel(path) ≠ ∅`.
@@ -89,12 +103,21 @@ forgotten in f — they are accumulated independently). It is NOT partial (the l
 total: it applies to all T34/T37 morphisms). The union law satisfies associativity and
 has identity element ∅.
 
+More conservatively: this is a powerset-union annotation law on the tested
+finite family. Do not treat it as publication-grade novelty unless LossKernel
+is given a semantic witness obligation or a universal role beyond label
+accumulation.
+
 ## LossKernel Q3 Answer
 
 T34/T37 path dependence IS exactly unequal composed LossKernels for fixed endpoints,
 when AC1-AC4, AC6-AC7 are equal (endpoint-determined). The path-dependence in T37 is
 not an AC5 accident — it is the signature of different LossKernels accumulating different
 forgotten structure.
+
+This remains a finite-family result. The next stress test is whether
+path-dependence survives quotienting by same composite map, same endpoint
+behavior, and same naive loss set.
 
 ---
 

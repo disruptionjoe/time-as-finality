@@ -6,10 +6,11 @@
 
 ---
 
-## Main Theorem: ESTABLISHED
+## Main Fixture Result: ESTABLISHED
 
-**LossKernel composes lax-functorially, and path-dependent PO1 admissibility
-is exactly the empty/non-empty difference in composed LossKernels.**
+**For the tested finite T34/T37 family, LossKernel composes by union, and
+path-dependent PO1 admissibility is exactly the empty/non-empty difference in
+composed LossKernels.**
 
 ```
 LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g)
@@ -19,6 +20,18 @@ For fixed (source, target) with equal endpoint AC conditions (AC1-AC4, AC6-AC7):
 ```
 PO1(P₁) ≠ PO1(P₂)  ⟺  LossKernel(P₁) ≠ LossKernel(P₂) in the empty/non-empty sense
 ```
+
+---
+
+## Diligence Caveat
+
+This result is not yet a publication-grade theorem of typed forgetting. It
+shows that the current finite fixtures can be summarized by a powerset-union
+annotation. That is mathematically legitimate, but it is close to standard
+provenance/effect/writer-style bookkeeping. Promotion requires a semantic
+witness obligation, a quotient/separation result, or another non-tautological
+reason that LossKernel cannot be replaced by ordinary provenance or effect
+annotations.
 
 ---
 
@@ -58,7 +71,7 @@ The biconditional holds exactly because AC5 is the only path-varying AC conditio
 (source, target) are fixed. All other conditions (AC1-AC4, AC6-AC7) are endpoint-determined.
 So path-dependent PO1 = exactly empty/non-empty difference in composed LossKernels.
 
-**2. The composition law is lax-functorial (union), not strictly functorial.**
+**2. The composition law is union-valued on the tested family.**
 Strictly functorial would require LossKernel(g ∘ f) = some function of LossKernel(g)
 applied to LossKernel(f). Instead, loss accumulates independently: g's forgotten structure
 does not depend on what f forgot. Union law is total (no partial domain).
@@ -72,8 +85,8 @@ where AC6-AC7 are equal, LossKernel becomes the sole discriminating object.
 - At the **path level**: LossKernel composition law determines which paths produce AC5=True.
 - At the **failure-type level** (T69): LossKernel.cycle_destroying determines whether
   loss morphisms can reduce H¹ to H⁰.
-Together, T69 + T73 complete the LossKernel program: typed forgetting governs both
-path-dependent admissibility and obstruction hierarchy monotonicity.
+Together, T69 + T73 give finite fixture evidence for the LossKernel program.
+They do not complete the program until the prior-art and quotient tests pass.
 
 ---
 

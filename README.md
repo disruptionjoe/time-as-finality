@@ -68,6 +68,21 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-physical-provenance-protocol-v0.1.md](TECHNICAL-REPORT-physical-provenance-protocol-v0.1.md)
   - physical provenance protocol audit replacing Boolean degradation flags with
     clock, authentication, trust, batching, back-action, and DAG parameters.
+- [TECHNICAL-REPORT-provenance-protocol-monte-carlo-v0.1.md](TECHNICAL-REPORT-provenance-protocol-monte-carlo-v0.1.md)
+  - Monte Carlo stress-prior audit showing robust detector provenance recovery
+    is confined to an engineered protocol region.
+- [TECHNICAL-REPORT-real-detector-stack-provenance-v0.1.md](TECHNICAL-REPORT-real-detector-stack-provenance-v0.1.md)
+  - source-anchored, posterior-modeled HydraHarp/White Rabbit/signed-archive
+    detector stack mapping into the T72/T74 provenance model; not yet a
+    measured deployment audit.
+- [TECHNICAL-REPORT-q1-detector-null-criterion-v0.1.md](TECHNICAL-REPORT-q1-detector-null-criterion-v0.1.md)
+  - compression of T66-T81 into a null criterion: current detector-side Q1 is
+    an admissibility filter over raw-log provenance unless it beats passive,
+    dashboard, and post hoc alternatives.
+- [TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md](TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md)
+  - ambiguous-tag hostile-family audit showing perturbation-only and
+    signed-DAG-only raw-log fixtures can rescue the partition internally, but
+    only as isolated pre-registered controls rather than empirical support.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -309,6 +324,8 @@ python -m models.run_t59
 python -m models.run_t62
 python -m models.run_t64
 python -m models.run_t72
+python -m models.run_t74
+python -m models.run_t75
 ```
 
 ## Run Explorations

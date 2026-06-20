@@ -40,6 +40,18 @@ Priority sequence:
 6. Draft and refine the neutral math paper:
    [Typed Forgetting and Local-to-Global Obstruction](papers/typed-forgetting-local-global-obstruction-v0.1.md).
 
+Promotion gate before any public theorem or paper language:
+
+- LossKernel must be stricter than free-text `forgotten_structure` metadata.
+- The composition law must be stated honestly as powerset-union annotation
+  unless a stronger categorical or universal property is proved.
+- T69-style H0/H1 claims must state the exact coefficient system, cover
+  hypotheses, support presheaf, and allowed loss morphisms.
+- The paper needs either a separation theorem from ordinary CSP plus
+  provenance/effect/lens machinery, or a quotient counterexample showing
+  path-dependent attribution survives same endpoints, same composite map, same
+  endpoint behavior, and same naive loss set.
+
 Language guardrails:
 
 - Avoid: "TaF discovered gluing obstruction."
@@ -48,6 +60,11 @@ Language guardrails:
 - Avoid: "obstruction conservation."
 - Use: "obstruction accounting" or "obstruction displacement under typed
   projection."
+- Avoid: "LossKernel is a new mathematical object" until the promotion gate is
+  cleared.
+- Use: "LossKernel is a proposed typed annotation and attribution object under
+  active prior-art and quotient testing."
+- Avoid: general Cech/sheaf-cohomology claims from finite toy witnesses.
 - Avoid leading mathematical materials with time, consciousness, quantum
   interpretation, or observer metaphysics.
 - Use finite systems, restriction systems, typed morphisms, loss kernels,

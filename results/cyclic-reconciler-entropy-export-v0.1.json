@@ -1,0 +1,365 @@
+{
+  "observations": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "raw_support_sequence": [
+    1,
+    2,
+    1,
+    0,
+    1,
+    2
+  ],
+  "raw_support_monotone": false,
+  "policies": {
+    "reversible_export": {
+      "name": "cyclic_reversible_export",
+      "capacity": 3,
+      "ring_states": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "exported_slots": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "local_support_sequence": [
+        1,
+        3,
+        4,
+        3,
+        2,
+        3
+      ],
+      "export_support_sequence": [
+        0,
+        0,
+        0,
+        1,
+        3,
+        4
+      ],
+      "accounted_support_sequence": [
+        1,
+        3,
+        4,
+        4,
+        5,
+        7
+      ],
+      "local_monotone": false,
+      "accounted_monotone": true,
+      "transition_map": {
+        "input_count": 768,
+        "image_count": 768,
+        "injective": true,
+        "maximum_preimages": 1,
+        "lost_bits": 0.0,
+        "landauer_minimum_joules": 0.0,
+        "preimage_histogram": [
+          [
+            1,
+            768
+          ]
+        ]
+      },
+      "recycled_steps": 3,
+      "generic_recycle_lost_bits": 0.0,
+      "resource_boundary": "The fixed ring is reversible only because each overwritten slot is exported as external history; local ring support itself is not monotone.",
+      "verdict": "H7 monotonicity is recovered only if exported garbage/history is counted as retained finality."
+    },
+    "erasing_heat_bath": {
+      "name": "cyclic_erasing_heat_bath",
+      "capacity": 3,
+      "ring_states": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "exported_slots": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "local_support_sequence": [
+        1,
+        3,
+        4,
+        3,
+        2,
+        3
+      ],
+      "export_support_sequence": [
+        0,
+        0,
+        0,
+        1,
+        3,
+        4
+      ],
+      "accounted_support_sequence": [
+        1,
+        3,
+        4,
+        4,
+        5,
+        7
+      ],
+      "local_monotone": false,
+      "accounted_monotone": true,
+      "transition_map": {
+        "input_count": 768,
+        "image_count": 192,
+        "injective": false,
+        "maximum_preimages": 4,
+        "lost_bits": 2.0,
+        "landauer_minimum_joules": 5.741957770157448e-21,
+        "preimage_histogram": [
+          [
+            4,
+            192
+          ]
+        ]
+      },
+      "recycled_steps": 3,
+      "generic_recycle_lost_bits": 6.0,
+      "resource_boundary": "The fixed ring can be recycled only by discarding the overwritten slot; the generic finite update loses the overwritten slot bits.",
+      "verdict": "Counting erased support restores the same monotone accounting curve, but no longer as accessible record memory; it is ordinary erasure/heat-bath bookkeeping."
+    }
+  },
+  "strongest_claim": "In the T80 observation witness, a fixed-size cyclic reconciler does not produce monotone local retained records. Monotonicity returns only when overwritten slots are exported as history or discarded through an erasing heat-bath channel.",
+  "weakened_claim": "H7's physical-arrow reading is weakened: cyclic persistence has not been separated from ordinary entropy/history export.",
+  "falsification_condition": "T84 fails if a fixed-capacity cyclic reconciler gives monotone local retained-record support for the T80 sequence while remaining injective and without exporting overwritten slots, erasing them, or hiding them in inaccessible garbage.",
+  "h7_update": "H7 should remain partially supported only as a conditional constructor theorem. T84 adds that cyclic reconciliation restores monotonicity only by moving old records into an exported history channel or by paying erasure cost; the autonomous local memory does not supply an independent arrow.",
+  "blocker": "No cyclic finite observer has yet produced D1-monotone local records under reversible dynamics without an explicit export, garbage, or heat-bath account.",
+  "recommended_next": "Try a logically reversible compression/export model with a bounded entropy sink and ask whether any nontrivial D1 monotone survives after the sink is included in the state space."
+}

@@ -1,0 +1,264 @@
+{
+  "sample_count": 400,
+  "seed": 77023,
+  "audits": [
+    {
+      "policy_name": "strict",
+      "deployment_name": "measured_signed_time_tag_stack",
+      "verdict": "robust_under_policy",
+      "confidence_floor": [
+        0.9,
+        0.95
+      ],
+      "max_false_risk": [
+        0.05,
+        0.1
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "policy_name": "strict",
+      "deployment_name": "timing_only_unsigned_control",
+      "verdict": "withhold_under_policy",
+      "confidence_floor": [
+        0.9,
+        0.95
+      ],
+      "max_false_risk": [
+        0.05,
+        0.1
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "policy_name": "strict",
+      "deployment_name": "signed_stack_incomplete_preregistration_control",
+      "verdict": "threshold_dependent_under_policy",
+      "confidence_floor": [
+        0.9,
+        0.95
+      ],
+      "max_false_risk": [
+        0.05,
+        0.1
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.695,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.305,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.695,
+        "robust_count": 278,
+        "withhold_count": 0,
+        "threshold_dependent_count": 122,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 278
+      }
+    },
+    {
+      "policy_name": "baseline",
+      "deployment_name": "measured_signed_time_tag_stack",
+      "verdict": "robust_under_policy",
+      "confidence_floor": [
+        0.78,
+        0.85
+      ],
+      "max_false_risk": [
+        0.12,
+        0.22
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "policy_name": "baseline",
+      "deployment_name": "timing_only_unsigned_control",
+      "verdict": "withhold_under_policy",
+      "confidence_floor": [
+        0.78,
+        0.85
+      ],
+      "max_false_risk": [
+        0.12,
+        0.22
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.0,
+        "withhold_rate": 1.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.0,
+        "robust_count": 0,
+        "withhold_count": 400,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 0
+      }
+    },
+    {
+      "policy_name": "baseline",
+      "deployment_name": "signed_stack_incomplete_preregistration_control",
+      "verdict": "threshold_dependent_under_policy",
+      "confidence_floor": [
+        0.78,
+        0.85
+      ],
+      "max_false_risk": [
+        0.12,
+        0.22
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.68,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.32,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.68,
+        "robust_count": 272,
+        "withhold_count": 0,
+        "threshold_dependent_count": 128,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 272
+      }
+    },
+    {
+      "policy_name": "permissive",
+      "deployment_name": "measured_signed_time_tag_stack",
+      "verdict": "robust_under_policy",
+      "confidence_floor": [
+        0.65,
+        0.75
+      ],
+      "max_false_risk": [
+        0.25,
+        0.35
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 1.0,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 1.0,
+        "robust_count": 400,
+        "withhold_count": 0,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 400
+      }
+    },
+    {
+      "policy_name": "permissive",
+      "deployment_name": "timing_only_unsigned_control",
+      "verdict": "withhold_under_policy",
+      "confidence_floor": [
+        0.65,
+        0.75
+      ],
+      "max_false_risk": [
+        0.25,
+        0.35
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.045,
+        "withhold_rate": 0.955,
+        "threshold_dependent_rate": 0.0,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.045,
+        "robust_count": 18,
+        "withhold_count": 382,
+        "threshold_dependent_count": 0,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 18
+      }
+    },
+    {
+      "policy_name": "permissive",
+      "deployment_name": "signed_stack_incomplete_preregistration_control",
+      "verdict": "threshold_dependent_under_policy",
+      "confidence_floor": [
+        0.65,
+        0.75
+      ],
+      "max_false_risk": [
+        0.25,
+        0.35
+      ],
+      "outcome": {
+        "sample_count": 400,
+        "robust_rate": 0.675,
+        "withhold_rate": 0.0,
+        "threshold_dependent_rate": 0.325,
+        "false_independence_rate": 0.0,
+        "false_dependence_rate": 0.0,
+        "computable_d1_rate": 0.675,
+        "robust_count": 270,
+        "withhold_count": 0,
+        "threshold_dependent_count": 130,
+        "false_independence_count": 0,
+        "false_dependence_count": 0,
+        "computable_d1_count": 270
+      }
+    }
+  ],
+  "strongest_claim": "The measured signed detector fixture is robust across strict, baseline, and permissive audit policies, but permissive policy loosening contaminates the discriminator by allowing a small timing-only unsigned recovery rate.",
+  "weakened_claim": "T77 weakens the detector branch by exposing policy dependence directly. The signed fixture is not the fragile part; the fragile part is the control separation. Once policy becomes too permissive, the unsigned timing-only control begins to earn spurious positive classifications.",
+  "falsification_condition": "Demote the detector branch if no pre-registered policy corridor keeps the signed measured deployment robust while simultaneously forcing the timing-only unsigned control to withhold and the incomplete-pre-registration control to remain threshold-dependent.",
+  "q1_update": "Keep Q1 partially supported only as a measured detector-provenance claim inside an explicitly pre-registered policy corridor that preserves signed-versus-unsigned separation. The signed positive result is robust, but permissive policy already leaks timing-only false positives.",
+  "recommended_next": "Derive a lab-facing policy floor: the loosest confidence and false-risk corridor that still preserves signed recovery, unsigned withhold, and incomplete-pre-registration failure.",
+  "blocker": "T77 still uses fixture-level measured counts rather than a real deployment log, so the policy corridor is executable but not yet empirically anchored."
+}

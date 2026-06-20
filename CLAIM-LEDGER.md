@@ -9,7 +9,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [D1-Field](claims/D1-field-multiscale-observer-finality.md) | formal_extension | partially_supported | Cross-observer finality needs more than scalar or vector D1 when transport, trust graph, gluing constraints, observer-colimit descent data, conflict relations, apparent/event gaps, or restriction-closure obligations matter; T24 introduced field-valued D1, T25 narrowed the smallest earned object to a finite graph-indexed local-to-global D1 restriction system, T26 formalizes that object directly, T53 shows that multi-observer colimits need identity/overlap data for canonical reconstruction, T54 supplies a finite quotient-union descent theorem, T55 adds finite conflict-descent conditions, T56 identifies the apparent/event gap object, and T57 proves its Finality Reflection Property in the T56 model. | [T24](tests/T24-d1-multiscale-observer-field.md), [T25](tests/T25-minimal-d1-generalization.md), [T26](tests/T26-d1-restriction-system.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md), [T53 report](TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md), [T54 report](TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md), [T55 report](TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md), [T57 report](TECHNICAL-REPORT-finality-reflection-property-v0.1.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
-| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains; T67 weakens the obvious repair by showing passive detector correlations do not recover the D1 independence partition; T68 conditionally recovers the partition only when intervention-sensitive provenance metadata are available before D1 scoring; T70 shows that this recovery survives moderate single-channel metadata degradation but fails when trusted provenance channels are absent, thresholded, or back-action contaminated. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md), [T67](tests/T67-povm-correlation-provenance-obstruction.md), [T68](tests/T68-intervention-sensitive-detector-provenance.md), [T70](tests/T70-detector-provenance-robustness.md) |
+| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains; T67 weakens the obvious repair by showing passive detector correlations do not recover the D1 independence partition; T68 conditionally recovers the partition only when intervention-sensitive provenance metadata are available before D1 scoring; T70 shows that this recovery survives moderate single-channel metadata degradation but fails when trusted provenance channels are absent, thresholded, or back-action contaminated; T72 replaces Boolean flags with physical protocol parameters and shows recovery is possible only under declared reliability bounds, with explicit false-independence and false-dependence risk regimes; T74 shows the robust T72 region collapses to a narrow engineered corner under broader stress priors, with mixed and degraded priors dominated by conservative D1-withhold outcomes. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md), [T67](tests/T67-povm-correlation-provenance-obstruction.md), [T68](tests/T68-intervention-sensitive-detector-provenance.md), [T70](tests/T70-detector-provenance-robustness.md), [T72](tests/T72-physical-provenance-protocol.md), [T74](tests/T74-provenance-protocol-monte-carlo.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order; T42 separates local accumulation from record-access lag, T43 identifies finite local mechanisms, T44 shows demand/coupling probes can distinguish those mechanisms without deriving proper time, and T46 distinguishes open causal access gradients from closed synchronization boundaries. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md), [T42](tests/T42-local-persistence-reconciliation-split.md), [T43](tests/T43-local-persistence-mechanisms.md), [T44](tests/T44-local-mechanism-identifiability.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
@@ -278,6 +278,50 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   bounds.
 - Artifact: [T70 technical report](TECHNICAL-REPORT-detector-provenance-robustness-v0.1.md).
 
+### 2026-06-20 - Physical Provenance Protocol (T72)
+
+- Q1 remains `partially_supported`, but only under explicit physical protocol
+  assumptions for detector provenance recovery.
+- Positive content: T72 replaces T70's Boolean degradation flags with
+  interval/probability protocol parameters for clock uncertainty, signature
+  failure, archive batching, trust boundaries, perturbation back-action, and
+  partial provenance-DAG observability.
+- Robust regimes: provenance is recovered when declared physical protocol
+  bounds supply accepted dependence and independence channels before D1
+  scoring.
+- Withhold regimes: D1 is not evaluated when channel confidence fails the
+  declared floor, false-risk exceeds the protocol ceiling, evidence conflicts,
+  or the threshold source is ad hoc rather than protocol-declared.
+- New failure modes: forged independent-looking tags can create false
+  independence risk, and perturbation back-action can create false dependence
+  risk.
+- Claim boundary: the detector branch is now explicitly protocol-relative. TaF
+  has not derived provenance from detector outcomes alone.
+- Falsification condition: demote the detector branch if physically realistic
+  protocol parameters generically land in withhold, false-independence, or
+  false-dependence regimes, or if the acceptance floors cannot be justified
+  independently of the desired D1 result.
+- Artifact: [T72 technical report](TECHNICAL-REPORT-physical-provenance-protocol-v0.1.md).
+
+### 2026-06-20 - Provenance Protocol Monte Carlo (T74)
+
+- Q1 remains `partially_supported`, but T74 narrows the detector branch again:
+  robust provenance recovery is not generic across protocol space.
+- Positive content: T74 quantifies the T72 success region rather than merely
+  exhibiting it. Under deterministic stress priors, the engineered family
+  yields robust recovery rate `0.905` and computable D1 rate `0.905`.
+- Boundary: robust recovery disappears entirely in the broader `mixed_lab` and
+  `field_degraded` priors. Those families are dominated by conservative
+  withhold outcomes, with threshold-dependence taking the remainder.
+- Claim impact: detector-level Q1 should be read as an engineered
+  instrumentation/provenance thesis, not a generic measurement claim.
+- Falsification condition: if measured detector calibrations place a real
+  apparatus outside the engineered recovery region, the detector branch should
+  be demoted further.
+- Next requirement: replace synthetic stress priors with calibration posteriors
+  from a concrete detector stack.
+- Artifact: [T74 technical report](TECHNICAL-REPORT-provenance-protocol-monte-carlo-v0.1.md).
+
 ### 2026-06-19 - LossKernel Failure Type Monotonicity (T69)
 
 - Main theorem ESTABLISHED: loss morphisms are failure-type monotone in the
@@ -301,6 +345,29 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   hierarchy (H⁰/H¹ cover structure investigation). 4 witnesses, 7/7 tests pass.
 - Falsification condition: a topology-preserving or sub-cover loss morphism found
   that converts an acyclic cover to a cyclic one.
+
+### 2026-06-20 - LossKernel Composition and Path-Dependence Biconditional (T73)
+
+- Composition law ESTABLISHED: LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g).
+  Lax-functorial (union), not strictly functorial. Total law (applies to all T34/T37
+  morphisms). Identity element: LossKernel(id) = ∅. Union is associative.
+- Path-dependence biconditional ESTABLISHED for T37 diamond:
+  PO1(P₁) ≠ PO1(P₂) ⟺ LossKernel(P₁) ≠ LossKernel(P₂) in the empty/non-empty sense.
+  Path A = {type_guarantee} → AC5=True → PO1. Path B = {} → AC5=False → not PO1.
+  AC5 exactly tracks LossKernel non-emptiness (verified: AC5 == (LK ≠ ∅) for all paths).
+- LossKernel is the organizing object for path-dependent PO1 admissibility:
+  AC1-AC4, AC6-AC7 are endpoint-determined (path-invariant); only AC5 varies by path;
+  therefore path-dependent PO1 = exactly empty/non-empty LossKernel difference.
+- Non-empty LossKernel is necessary but not sufficient for PO1: T34 absorbed case shows
+  non-empty LK + AC6 fails = NOT PO1. AC6 (target_is_obstructed) is co-required.
+- T34 chain shapes as LossKernel patterns confirmed: emergent = non-empty LK + AC5 + AC6
+  True; stepwise = non-empty LK at each obstructed step; absorbed = non-empty LK at
+  mid-chain but AC6 False at endpoint.
+- Together with T69, LossKernel governs two levels: path-dependent admissibility (AC5
+  dimension) and obstruction hierarchy monotonicity (cycle_destroying flag). The
+  LossKernel program is complete as an algebraic object over T34/T37. 17/17 tests pass.
+- Falsification condition: a T34/T37 path where compose_loss ≠ union of per-step
+  forgotten_structure, or a diamond path where PO1 and LossKernel emptiness disagree.
 
 ### 2026-06-20 - Typed Forgetting Spine (TF1 / LossKernel)
 

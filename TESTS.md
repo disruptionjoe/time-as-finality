@@ -64,9 +64,12 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T67](tests/T67-povm-correlation-provenance-obstruction.md) | POVM correlation provenance obstruction | Q1, D1, T66 | implemented: passive pairwise detector correlation cannot recover the D1 independence partition; copied and independent channels can be correlation-equivalent |
 | [T68](tests/T68-intervention-sensitive-detector-provenance.md) | Intervention-sensitive detector provenance | Q1, D1, T67 | implemented: identical passive detector statistics separate under pre-registered intervention/provenance metadata; D1 is computed only after the partition is fixed |
 | [T70](tests/T70-detector-provenance-robustness.md) | Detector provenance robustness | Q1, D1, T68 | implemented: T68 survives moderate single-channel metadata degradation but fails cleanly when trusted provenance channels are absent or threshold-dependent |
+| [T72](tests/T72-physical-provenance-protocol.md) | Physical provenance protocol | Q1, D1, T70 | implemented: interval/probability protocol parameters classify robust recovery, withhold, threshold failure, false independence risk, and false dependence risk |
+| [T74](tests/T74-provenance-protocol-monte-carlo.md) | Provenance protocol Monte Carlo | Q1, D1, T72 | implemented: Monte Carlo stress priors show robust detector provenance recovery is confined to a narrow engineered corner |
 | [T19](tests/T19-phenomenal-bridge-complexity-separation.md) | Phenomenal bridge as complexity separation | C1, D1, D2, H6 | implemented: 7-node finite graph shows FIRST-PERSON-FINALITY(A*(R)) = NO, THIRD-PERSON-FINALITY(G) = YES; causal-boundary obstruction, not computational undecidability; T60+T19 gives formal content of H6 |
 | [T65](tests/T65-causal-reduction-holonomy.md) | Causal reduction of CHSH holonomy | C1, D1, H6, T63, T19 | implemented: LC => holonomy = +1 (all 16 LC sections); quantum => holonomy = -1 (Bell's theorem as holonomy); biconditional disproved (128 ≠ 16); spatial causal-boundary obstruction formally parallels T19 temporal obstruction |
 | [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented: loss morphisms are failure-type monotone (H1 > H0 > none); H0→H1 is impossible for topology-preserving and sub-cover loss; H1→H0 is possible via cycle destruction; algebraic proof + 4 witnesses (7/7 tests pass) |
+| [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified (union = lax-functorial); path-dependence biconditional established (PO1(P1) != PO1(P2) iff LossKernel differ in empty/non-empty sense); LossKernel is the organizing object for path-dependent PO1 admissibility; 17/17 tests pass |
 
 ## Minimum Compatibility Constraints
 
@@ -134,6 +137,8 @@ python -m models.run_t59
 python -m models.run_t62
 python -m models.run_t64
 python -m models.run_t70
+python -m models.run_t72
+python -m models.run_t74
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
 ```
@@ -185,6 +190,8 @@ The suites use only Python's standard library. Evidence records:
 - [Noisy Measurement Access-Boundary v0.1 Results](results/noisy-measurement-access-boundary-v0.1-results.md)
 - [Stern-Gerlach Access-Window v0.1 Results](results/stern-gerlach-access-window-v0.1-results.md)
 - [Detector Provenance Robustness v0.1 Results](results/detector-provenance-robustness-v0.1-results.md)
+- [Physical Provenance Protocol v0.1 Results](results/physical-provenance-protocol-v0.1-results.md)
+- [Provenance Protocol Monte Carlo v0.1 Results](results/provenance-protocol-monte-carlo-v0.1-results.md)
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
 

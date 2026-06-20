@@ -1,0 +1,305 @@
+{
+  "h1_composition_law": {
+    "checks": {
+      "t37_spectre_SRC -> MID -> TGT": {
+        "per_step": [
+          [
+            "type_guarantee"
+          ],
+          []
+        ],
+        "expected_union": [
+          "type_guarantee"
+        ],
+        "computed": [
+          "type_guarantee"
+        ],
+        "composition_law_holds": true
+      },
+      "t37_diamond_SRC -> L_A -> TGT": {
+        "per_step": [
+          [
+            "type_guarantee"
+          ],
+          []
+        ],
+        "expected_union": [
+          "type_guarantee"
+        ],
+        "computed": [
+          "type_guarantee"
+        ],
+        "composition_law_holds": true
+      },
+      "t37_diamond_SRC -> L_B -> TGT": {
+        "per_step": [
+          [],
+          []
+        ],
+        "expected_union": [],
+        "computed": [],
+        "composition_law_holds": true
+      },
+      "t34_spectre": {
+        "per_step": [
+          [
+            "type_safety_guarantee"
+          ],
+          [
+            "control_flow_isolation"
+          ],
+          [
+            "memory_access_abstraction"
+          ],
+          [
+            "execution_order_guarantee"
+          ]
+        ],
+        "expected_union": [
+          "control_flow_isolation",
+          "execution_order_guarantee",
+          "memory_access_abstraction",
+          "type_safety_guarantee"
+        ],
+        "computed": [
+          "control_flow_isolation",
+          "execution_order_guarantee",
+          "memory_access_abstraction",
+          "type_safety_guarantee"
+        ],
+        "composition_law_holds": true
+      },
+      "t34_stepwise": {
+        "per_step": [
+          [
+            "abstract_control_flow"
+          ],
+          [
+            "register_allocation_freedom"
+          ],
+          [
+            "instruction_encoding_freedom"
+          ]
+        ],
+        "expected_union": [
+          "abstract_control_flow",
+          "instruction_encoding_freedom",
+          "register_allocation_freedom"
+        ],
+        "computed": [
+          "abstract_control_flow",
+          "instruction_encoding_freedom",
+          "register_allocation_freedom"
+        ],
+        "composition_law_holds": true
+      },
+      "t34_absorbed": {
+        "per_step": [
+          [
+            "dead_branch_elimination"
+          ],
+          [],
+          [
+            "optimization_annotations"
+          ]
+        ],
+        "expected_union": [
+          "dead_branch_elimination",
+          "optimization_annotations"
+        ],
+        "computed": [
+          "dead_branch_elimination",
+          "optimization_annotations"
+        ],
+        "composition_law_holds": true
+      }
+    },
+    "h1_passes": true
+  },
+  "h2_lax_functorial": {
+    "checks": {
+      "t37_spectre_SRC -> MID -> TGT": {
+        "prefix_kernels": [
+          [
+            "type_guarantee"
+          ],
+          [
+            "type_guarantee"
+          ]
+        ],
+        "monotone": true,
+        "identity_losskernel_empty": true
+      },
+      "t37_diamond_SRC -> L_A -> TGT": {
+        "prefix_kernels": [
+          [
+            "type_guarantee"
+          ],
+          [
+            "type_guarantee"
+          ]
+        ],
+        "monotone": true,
+        "identity_losskernel_empty": true
+      },
+      "t37_diamond_SRC -> L_B -> TGT": {
+        "prefix_kernels": [
+          [],
+          []
+        ],
+        "monotone": true,
+        "identity_losskernel_empty": true
+      },
+      "t34_spectre": {
+        "prefix_kernels": [
+          [
+            "type_safety_guarantee"
+          ],
+          [
+            "control_flow_isolation",
+            "type_safety_guarantee"
+          ],
+          [
+            "control_flow_isolation",
+            "memory_access_abstraction",
+            "type_safety_guarantee"
+          ],
+          [
+            "control_flow_isolation",
+            "execution_order_guarantee",
+            "memory_access_abstraction",
+            "type_safety_guarantee"
+          ]
+        ],
+        "monotone": true
+      },
+      "t34_stepwise": {
+        "prefix_kernels": [
+          [
+            "abstract_control_flow"
+          ],
+          [
+            "abstract_control_flow",
+            "register_allocation_freedom"
+          ],
+          [
+            "abstract_control_flow",
+            "instruction_encoding_freedom",
+            "register_allocation_freedom"
+          ]
+        ],
+        "monotone": true
+      },
+      "t34_absorbed": {
+        "prefix_kernels": [
+          [
+            "dead_branch_elimination"
+          ],
+          [
+            "dead_branch_elimination"
+          ],
+          [
+            "dead_branch_elimination",
+            "optimization_annotations"
+          ]
+        ],
+        "monotone": true
+      }
+    },
+    "identity_losskernel_empty": true,
+    "h2_passes": true
+  },
+  "h3_path_dependence_biconditional": {
+    "path_data": [
+      {
+        "label": "SRC -> L_A -> TGT",
+        "is_po1": true,
+        "losskernel": [
+          "type_guarantee"
+        ],
+        "losskernel_nonempty": true
+      },
+      {
+        "label": "SRC -> L_B -> TGT",
+        "is_po1": false,
+        "losskernel": [],
+        "losskernel_nonempty": false
+      }
+    ],
+    "po1_paths_all_have_nonempty_losskernel": true,
+    "non_po1_paths_all_have_empty_losskernel": true,
+    "biconditional_holds": true,
+    "h3_passes": true,
+    "note": "AC1-AC4, AC6-AC7 are endpoint-determined (path-invariant). AC5 is exactly the non-empty LossKernel condition. Therefore PO1 path-dependence = exactly empty/non-empty LossKernel difference."
+  },
+  "h4_chain_shapes": {
+    "emergent": {
+      "chain": "spectre_emergent",
+      "composed_losskernel": [
+        "control_flow_isolation",
+        "execution_order_guarantee",
+        "memory_access_abstraction",
+        "type_safety_guarantee"
+      ],
+      "losskernel_nonempty": true,
+      "ac5_passes_at_endpoint": true,
+      "ac6_passes_at_endpoint": true,
+      "endpoint_verdict": "fully_admissible",
+      "emergent_obstruction": true,
+      "pattern": "non-empty LossKernel + AC5 True + AC6 True = emergent PO1"
+    },
+    "stepwise": {
+      "chain": "stepwise_propagation",
+      "composed_losskernel": [
+        "abstract_control_flow",
+        "instruction_encoding_freedom",
+        "register_allocation_freedom"
+      ],
+      "losskernel_nonempty": true,
+      "ac5_passes_at_endpoint": true,
+      "ac6_passes_at_endpoint": true,
+      "per_step_losskernel": [
+        [
+          "abstract_control_flow"
+        ],
+        [
+          "register_allocation_freedom"
+        ],
+        [
+          "instruction_encoding_freedom"
+        ]
+      ],
+      "endpoint_verdict": "fully_admissible",
+      "stepwise_propagation": true,
+      "pattern": "non-empty LossKernel at each obstructed step = stepwise PO1"
+    },
+    "absorbed": {
+      "chain": "absorbed_obstruction",
+      "composed_losskernel": [
+        "dead_branch_elimination",
+        "optimization_annotations"
+      ],
+      "losskernel_nonempty": true,
+      "ac5_passes_at_endpoint": true,
+      "ac6_passes_at_endpoint": false,
+      "per_step_losskernel": [
+        [
+          "dead_branch_elimination"
+        ],
+        [],
+        [
+          "optimization_annotations"
+        ]
+      ],
+      "endpoint_verdict": "non_admissible_no_new_obstruction",
+      "absorbed_obstruction": true,
+      "pattern": "non-empty LossKernel at mid-chain but AC6 fails at endpoint (target unobstructed) => endpoint NOT PO1 despite non-empty LossKernel; shows non-empty LK is necessary but not sufficient for PO1"
+    },
+    "h4_passes": true,
+    "note": "Non-empty LossKernel is necessary but not sufficient for PO1. AC6 (target_is_obstructed) must also pass. Absorbed case: non-empty LossKernel + AC6 fails = NOT PO1."
+  },
+  "composition_law": "LossKernel(g \u2218 f) = LossKernel(f) \u222a LossKernel(g) \u2014 LAX-FUNCTORIAL. Not strictly functorial (loss in g does not depend on loss in f). Not partial (law is total on all T34/T37 morphisms). Union is associative; identity element is \u2205.",
+  "path_dependence_biconditional": "For fixed (source, target) with equal endpoint AC conditions (AC1-AC4, AC6-AC7): PO1(P\u2081) \u2260 PO1(P\u2082)  \u27fa  LossKernel(P\u2081) \u2260 LossKernel(P\u2082) in the empty/non-empty sense. T37 diamond witnesses this exactly: Path A = {type_guarantee} (PO1); Path B = {} (not PO1). LossKernel is the organizing object for path-dependent PO1 admissibility.",
+  "all_hypotheses_pass": true,
+  "main_theorem": "ESTABLISHED"
+}

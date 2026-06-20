@@ -9,7 +9,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [D1-Field](claims/D1-field-multiscale-observer-finality.md) | formal_extension | partially_supported | Cross-observer finality needs more than scalar or vector D1 when transport, trust graph, gluing constraints, observer-colimit descent data, conflict relations, apparent/event gaps, or restriction-closure obligations matter; T24 introduced field-valued D1, T25 narrowed the smallest earned object to a finite graph-indexed local-to-global D1 restriction system, T26 formalizes that object directly, T53 shows that multi-observer colimits need identity/overlap data for canonical reconstruction, T54 supplies a finite quotient-union descent theorem, T55 adds finite conflict-descent conditions, T56 identifies the apparent/event gap object, and T57 proves its Finality Reflection Property in the T56 model. | [T24](tests/T24-d1-multiscale-observer-field.md), [T25](tests/T25-minimal-d1-generalization.md), [T26](tests/T26-d1-restriction-system.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md), [T53 report](TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md), [T54 report](TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md), [T55 report](TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md), [T57 report](TECHNICAL-REPORT-finality-reflection-property-v0.1.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
-| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity and leaves detector calibration open. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md) |
+| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order; T42 separates local accumulation from record-access lag, T43 identifies finite local mechanisms, T44 shows demand/coupling probes can distinguish those mechanisms without deriving proper time, and T46 distinguishes open causal access gradients from closed synchronization boundaries. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md), [T42](tests/T42-local-persistence-reconciliation-split.md), [T43](tests/T43-local-persistence-mechanisms.md), [T44](tests/T44-local-mechanism-identifiability.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
@@ -192,6 +192,24 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 - Falsification condition: if calibrated detector physics makes D1 identical
   to standard `R_delta`, or cannot non-arbitrarily specify access windows and
   independence classes, Q1 adds no independent measurement content.
+
+### 2026-06-20 - POVM Detector Calibration Obstruction (T66)
+
+- Q1 remains `partially_supported`, but T66 weakens the detector-level route:
+  calibrated binary POVM responses are not enough to determine D1 finality.
+- Positive content: declared scalar reliabilities can be replaced by response
+  matrices `P(readout=+|spin=+)` and `P(readout=+|spin=-)`, from which fragment
+  mutual information and access-window redundancy are computed.
+- Boundary: the same calibrated local detector response finalizes at
+  information threshold `0.75` and fails at `0.9`; the same archive response
+  finalizes only if the provenance partition treats the archive as independent
+  rather than a copied local log.
+- Guardrail: the finite singlet no-signalling audit passes; remote setting
+  changes do not alter the local POVM readout marginal.
+- Falsification condition: if detector physics cannot non-arbitrarily fix the
+  information threshold and provenance/independence partition before D1 is
+  evaluated, or if fixed rules make D1 always equal standard `R_delta`, Q1 adds
+  no independent measurement content.
 
 ### 2026-06-17 - Invariant-Preserving Transformations Kernel
 
@@ -408,3 +426,41 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   complement restriction closure.
 - H4 left open: FRP is conditional on directed source/target record structure.
   It does not resolve the T56 medium circular risk around arrow direction.
+
+### 2026-06-19 - Causal Reduction of CHSH Holonomy (T65)
+
+- H1-Sheaf remains `partially_supported`: T65 reduces the CHSH holonomy = -1
+  (T63) to a causal-boundary obstruction and formally parallels T19.
+- C1 remains `weakened`: T65 provides the spatial counterpart to T19's temporal
+  causal-boundary gap, giving H6 additional grounding.
+
+**What is proved:**
+- `locally_causal(s) => holonomy(s) = +1` (exhaustively verified, all 16 LC
+  sections over all 256 total sections).
+- Contrapositive: `holonomy(s) = -1 => NOT locally_causal(s)`.
+- Quantum majority-outcome sections have holonomy = -1 (confirmed numerically,
+  matching T63 result). Therefore quantum correlations cannot arise from locally
+  causal mechanisms. This is Bell's theorem as a holonomy statement.
+- The -1 transition is at edge (A0B1 -> A1B1): Bob's outcome for Bob_B1 changes
+  from -1 to +1 when Alice's setting changes from A0 to A1. Alice's setting is
+  outside Bob's causal region. Joint information P(a,b|x,y) is outside both
+  parties' bounded regions. This is the SPATIAL causal-boundary obstruction.
+- The formal parallel table with T19 is constructed (T65 Part 5): T19 is
+  temporal (R's finalization witnesses are in R's causal future), T65 is spatial
+  (joint measurement information is in neither party's causal region). Both give
+  holonomy = -1 in their respective settings.
+
+**What was disproved (initial conjecture too strong):**
+- The biconditional `locally_causal(s) <=> holonomy(s) = +1` is FALSE.
+  128 of 256 sections have holonomy = +1 but only 16 are locally causal.
+  Holonomy (product of 4 binary transition functions) = +1 when there are 0, 2,
+  or 4 negative transitions (even parity), not only when all transitions = +1.
+  A coboundary in the abstract topological sense (H^1(4-cycle, Z/2Z) = Z/2Z)
+  is not the same as a globally consistent physical section. The forward
+  direction (LC => holonomy = +1) is sufficient for Bell's theorem.
+
+**General principle (conjectured, forward direction supported):**
+`H^1(cover, Z/2Z) != 0 when globally consistent assignment requires evidence
+inaccessible from any bounded causal region in the cover.`
+T19 (temporal obstruction) and T65 (spatial obstruction) both support the
+forward direction. The converse is an open conjecture.

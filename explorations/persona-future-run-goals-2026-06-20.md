@@ -857,3 +857,181 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
   such as H2 -> H1 -> H0 -> none, and identify which hypotheses are required.
 - ambition: Keep the attractive obstruction-degree theorem gated by coefficient,
   support, and cover-semantics discipline.
+
+### P81 - Operation-Right LossKernel Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Test whether a LossKernel entry should sometimes name a lost future
+  operation right rather than a lost fact: reconstruction capability, merge
+  authority, attribution right, certification right, or declassification power.
+- ambition: Decide whether LossKernel needs capability-style typing or whether
+  ordinary lost-data annotations already explain the examples.
+
+### P82 - Negative-Control Loss Searcher
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Find cases where source structure is genuinely lost but no meaningful
+  target reconstruction debt remains because the source obligation was irrelevant,
+  non-admissible, redundant, or outside the target task.
+- ambition: Prevent obstruction-relocation language from treating every loss as
+  automatically meaningful.
+
+### P83 - LossKernel Prior-Art Boundary Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Pressure-test LossKernel against provenance, why-not provenance, view
+  update problems, type-and-effect systems, writer effects, abstract
+  interpretation, and lenses, then state any surviving separation case.
+- ambition: Decide whether LossKernel has a residual object beyond standard
+  machinery or should collapse into disciplined notation.
+
+### P84 - Detector Admissibility Protocol Architect
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Reframe the detector branch as an admissibility protocol with system
+  model, evidence graph, accepted exports, challenge controls, safety property,
+  availability property, and demotion rules.
+- ambition: Make detector work defensible as record-admissibility discipline
+  without overclaiming new measurement theory.
+
+### P85 - Detector Threat Model Expander
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Extend the detector provenance threat model across replay, spoofing, key
+  compromise, clock drift, archive omission, DAG truncation, delayed publication,
+  and policy manipulation.
+- ambition: Make false detector-finality upgrades fail under explicit adversaries
+  rather than friendly logging assumptions.
+
+### P86 - Challenge-Event Provenance Formalist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Decide whether challenge events, perturbation trials, calibration probes,
+  and policy checks should be first-class evidence-graph nodes rather than
+  auxiliary metadata.
+- ambition: Separate real provenance evidence from dashboard summaries and
+  post hoc labels.
+
+### P87 - Authority Boundary Admissibility Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Model detector and record admissibility under authorization, delegation,
+  revocation, key custody, write authority, read authority, and trust-boundary
+  crossing.
+- ambition: Treat authority as part of admissibility, not an external operational
+  afterthought.
+
+### P88 - Correlated Tail Failure Analyst
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Build adversarial multi-channel failure combinations where replay,
+  omission, spoofing, drift, threshold policy, or authority compromise jointly
+  create a false upgrade despite acceptable individual metrics.
+- ambition: Stress detector provenance against correlated tails instead of
+  average-case reliability.
+
+### P89 - Reconstruction Entropy Measurer
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Define finite candidate measures for how record accumulation and finality
+  reduce the compatible reconstruction space: entropy, ambiguity count,
+  model-count shrinkage, coding cost, or rate-distortion proxy.
+- ambition: Give reconstruction debt and finality progress a measurable quantity
+  before using entropy language rhetorically.
+
+### P90 - Accessibility Ratio Analyst
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Investigate metrics relating stabilized structure to observer-accessible
+  structure, including ratios of accessible stabilized content, hidden stabilized
+  content, and detail-on-demand recovery.
+- ambition: Turn the stabilization/accessibility gap into a finite observable
+  rather than a broad North Star intuition.
+
+### P91 - Aggregation Survival Tester
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Collapse finalized subgraphs into macro-records and test which D1
+  coordinates, provenance obligations, access boundaries, and reconstruction
+  debts survive, strengthen, weaken, or disappear.
+- ambition: Make compositional finality concrete enough to fail as ordinary
+  coarse-graining if it has no finality-specific content.
+
+### P92 - Scale Transition Finality Modeler
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Build finite examples where macro-constraints survive while micro-records
+  are destroyed, then classify whether finality is preserved as constraint,
+  function, authority, provenance, or only coarse summary.
+- ambition: Stress recursive finality at the micro-to-macro boundary rather than
+  assuming aggregation preserves what matters.
+
+### P93 - Witness Obligation Formalist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Test whether witness obligations are more fundamental than records by
+  rewriting selected LossKernel, detector provenance, access-boundary, and
+  aggregation examples around required witnesses and their discharge conditions.
+- ambition: Determine whether "record" should remain primitive or become one
+  admissible way to satisfy a witness obligation.
+
+### P94 - Typed Access Boundary Taxonomist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Build a taxonomy of access limitations across physical, causal,
+  cryptographic, institutional, cognitive, bandwidth, and authority boundaries,
+  with one finite witness and one failure mode for each type.
+- ambition: Replace scalar access language with typed access boundaries that can
+  explain different finality and admissibility failures.
+
+### P95 - Constellation Motif Compression Integrator
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Compress the constellation themes into a smaller motif taxonomy spanning
+  LossKernel, detector provenance, access boundaries, aggregation, witness
+  obligations, and reconstruction debt.
+- ambition: Decide whether the cross-room pattern is real structure or just
+  repeated vocabulary across unrelated explorations.
+
+### P96 - Reconstruction Debt Spine Formalist
+
+- status: done
+- last_run: 2026-06-20T14:39:30-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-143930-p96-reconstruction-debt-spine-formalist.md
+- goal: Formalize the constellation signal "witnesses -> obligations ->
+  admissibility -> reconstruction debt" as a candidate spine object, then test
+  whether it explains LossKernel, detector provenance, aggregation, access
+  boundaries, and finality without collapsing into commentary.
+- ambition: Decide whether reconstruction debt under admissibility constraints
+  is a deeper organizing object worth promoting to the next executable audit, or
+  only a useful synthesis phrase.

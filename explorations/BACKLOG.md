@@ -285,3 +285,35 @@ The "Distributed Records, Rendering, and Observer-Relative Reality" intuition wa
   by where the obstruction moves, and includes a counterexample where a
   projected obstruction genuinely vanishes because the source obligation was
   irrelevant or non-admissible.
+
+**WC-32: Research Constellation persona-goal routing - high priority, exploratory**
+- Files: [Research Constellation Orchestrator](research-constellation-orchestrator-2026-06-20.md),
+  [Persona Future Run Goals](persona-future-run-goals-2026-06-20.md),
+  this backlog.
+- Problem: the 2026-06-20 constellation run surfaced sharper candidate goals
+  than the existing broad persona queue, especially around reconstruction debt,
+  obstruction relocation, operation rights, detector admissibility protocols,
+  and aggregation/compositional finality.
+- Change: route the themes as candidate persona goals only. Do not treat them
+  as roadmap items, claim evidence, workflow triggers, or canonical research
+  lines.
+- Why: the strongest constellation signals are cross-room and easy to lose if
+  they remain only inside the report. They need bounded exploratory runs with
+  negative controls and prior-art pressure before any promotion decision.
+- Already covered by existing queue entries:
+  P24 constructor-theoretic finality; P33/P61 salience and relevance filtering;
+  P34 Git semantic-merge witness; P35/P52 prior-art deletion pressure; P36
+  access-control authority; P38 correlated tail regimes; P55 signed ancestry;
+  P71 aggregation/coarse-graining; P78-P80 obstruction relocation and
+  reconstruction debt.
+- New focused persona goals added:
+  P81 operation-right LossKernel; P82 negative-control search; P83 prior-art
+  boundary matrix; P84 detector admissibility protocol; P85 detector threat
+  model; P86 challenge-event provenance; P87 authority/trust-boundary
+  admissibility; P88 correlated tail false-upgrade analysis; P89 reconstruction
+  entropy; P90 accessibility ratio; P91 aggregation survival tests; P92 scale
+  transition finality; P93 witness obligations; P94 typed access boundaries;
+  P95 motif compression from constellation signals.
+- Acceptance: each run remains bounded and exploratory; at least one run in the
+  LossKernel/reconstruction-debt cluster must include a negative control where
+  loss occurs but no meaningful reconstruction debt remains.

@@ -645,3 +645,123 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
   constraints on record availability rather than simulation ontology.
 - ambition: Capture resource-bounded access without metaphysical drift.
 
+### P63 - Argument Spine Architect
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Build a logical dependency map for the entire repo: assign every
+  document a position in the chain from C1 → D1 → core theorems → stress
+  tests → extensions, then flag every file that has no assigned position.
+- ambition: Make the argument's structure visible before adding more tests;
+  expose accumulation masquerading as depth.
+
+### P64 - Phenomenal Bridge Formalist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Write a formal obstruction statement for H6: what mathematical object
+  would encode failure to connect record stabilization to experienced time,
+  what evidence would confirm the bridge is impossible, and what would confirm
+  it is reachable?
+- ambition: Promote the phenomenal bridge from "acknowledged open" to a
+  clearly stated open problem with defined stakes and a kill criterion.
+
+### P65 - Q1 Adjudicator
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Audit all 30+ Q1 test dependencies, classify each as strongly
+  supporting, weakened, partially supported, or refuted, then decide: is Q1
+  a single conjecture being sharpened, a family of independent sub-claims that
+  should be split, or a knot that should be dissolved?
+- ambition: Turn the most entangled branch into a legible decision tree with
+  a clear next gate.
+
+### P66 - Explorations Triage Officer
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Walk every file in explorations/ and classify each as: (a)
+  pre-promotion formalization candidate, (b) absorbed into a test or claim
+  already, (c) dead end with documented reason, or (d) genuine heterodox
+  sketch. For every (a), write a one-sentence promotion path.
+- ambition: Stop serious mathematics from being permanently buried in the
+  attic under a "heterodox" label.
+
+### P67 - Access Boundary Formalizer
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Formalize the access boundary declared in D1 as a type-theoretic or
+  categorical object with an explicit definition, measurability conditions,
+  and independence from the finality verdict it is meant to test; then derive
+  the Q1 detector window semantics as a consequence.
+- ambition: Ground the entire Q1 branch on a well-defined access model rather
+  than an intuitive notion of "what the observer can see."
+
+### P68 - Physical Admissibility Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: For one concrete physical system — spin-1/2 chain, quantum harmonic
+  oscillator, or Stern-Gerlach — map its physical variables to D1 coordinates
+  and check each admissibility condition AC1–AC7 individually: satisfied,
+  violated, or not yet checkable.
+- ambition: Replace "a real physical system could instantiate TaF" with a
+  concrete verified or ruled-out example.
+
+### P69 - TTN Composition Closer
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Attempt to prove or refute associativity and unit laws for
+  TypedTransportNetwork morphism composition across all three layer types,
+  handling path-dependent admissibility explicitly. If a proof fails, state
+  exactly which path-dependent case breaks associativity.
+- ambition: Either close the open formal obligation on TTN composition or
+  document the precise obstruction so it becomes a theorem target.
+
+### P70 - Recovery Propagation Formalist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Define a formal upward information-flow operation allowing the holonic
+  layer to detect micro-layer recovery events. Determine whether this is
+  derivable from existing TTN structure or requires a new morphism class, and
+  if new, state its admissibility conditions.
+- ambition: Either repair the one-way information wall in the holarchy model
+  or name it a deliberate design constraint with documented consequences.
+
+### P71 - Coarse-Graining Theorem Hunter
+
+- status: queued
+- last_run:
+- artifact:
+- goal: For compression, aggregation, and holonic emergence — currently
+  documented as examples of finality — attempt to state and prove when each
+  must arise and when it cannot, given the D1 admissibility conditions. Flag
+  any that remain examples-only after the attempt.
+- ambition: Distinguish "finality produces coarse-graining" as theorem from
+  "finality is compatible with coarse-graining" as observation.
+
+### P72 - CSP Separation Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Construct a quotient counterexample: two paths with identical
+  endpoints, identical composition maps, and identical endpoint behavior but
+  different LossKernel forms. If no such counterexample exists, document
+  whether PO1 collapses into ordinary CSP once LossKernel metadata is made
+  precise.
+- ambition: Force the mathematical independence claim to survive the strongest
+  available collapse test.
+

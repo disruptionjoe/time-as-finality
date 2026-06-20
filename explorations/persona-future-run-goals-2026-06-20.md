@@ -1035,3 +1035,17 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 - ambition: Decide whether reconstruction debt under admissibility constraints
   is a deeper organizing object worth promoting to the next executable audit, or
   only a useful synthesis phrase.
+
+### P97 - Axis-Crossing Loss Relocation Formalist
+
+- status: done
+- last_run: 2026-06-20T16:08:04-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-160804-p97-axis-crossing-loss-relocation.md
+- goal: Draft and test the next bounded loss-relocation goal: a finite fixture
+  where loss in one source axis becomes an admissibility condition,
+  operation-right boundary, reconstruction debt, or stable constraint in a
+  different target axis, while preserving T107 absorbed-loss controls and T108
+  prior-art pressure.
+- ambition: Decide whether the "track where lost structure goes" idea should
+  become an executable axis-crossing audit, a same-neighbor-data quotient test,
+  or be demoted to integration vocabulary over existing formal tools.

@@ -157,6 +157,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md)
   - finite closed reversible systems cannot carry a strict scalar finality
     monotone; H7 must be conditional, open-system, or coarse-grained.
+- [TECHNICAL-REPORT-maintenance-viability-split-v0.1.md](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md)
+  - matched entropy/control/stability/viability examples split on future
+    operation rights, but are largely absorbed by provenance and reconstruction
+    debt once those are modeled.
 - [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md)
   - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
     + CompressionRecord + EmergenceRecord) is the smallest justified formalism;

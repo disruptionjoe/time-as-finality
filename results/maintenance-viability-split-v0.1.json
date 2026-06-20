@@ -1,0 +1,745 @@
+{
+  "pair_audits": [
+    {
+      "pair_id": "record_commons_matched_split",
+      "domain": "record_commons",
+      "system_a": {
+        "system_id": "record_commons_a_auditable",
+        "domain": "record_commons",
+        "description": "Shared archive keeps identical records plus public audit witnesses and repair authority.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "audit_log",
+            "checksum",
+            "record"
+          ],
+          "required_witnesses": [
+            "audit_log",
+            "record"
+          ],
+          "operation_rights": [
+            "challenge",
+            "read",
+            "repair"
+          ],
+          "required_rights": [
+            "challenge",
+            "repair"
+          ],
+          "reconstruction_paths": 2,
+          "admissibility_tokens": [
+            "public_rulebook",
+            "quorum"
+          ],
+          "required_tokens": [
+            "public_rulebook",
+            "quorum"
+          ]
+        },
+        "future_usable": true
+      },
+      "system_b": {
+        "system_id": "record_commons_b_private_mirror",
+        "domain": "record_commons",
+        "description": "Archive keeps the same records with the same ordinary maintenance metrics, but audit witnesses and repair authority are not available to the commons.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "checksum",
+            "record"
+          ],
+          "required_witnesses": [
+            "audit_log",
+            "record"
+          ],
+          "operation_rights": [
+            "read"
+          ],
+          "required_rights": [
+            "challenge",
+            "repair"
+          ],
+          "reconstruction_paths": 2,
+          "admissibility_tokens": [
+            "private_policy"
+          ],
+          "required_tokens": [
+            "public_rulebook",
+            "quorum"
+          ]
+        },
+        "future_usable": false
+      },
+      "standard_equivalent": true,
+      "maintained_records_equal": true,
+      "future_operation_split": true,
+      "a_future_usable": true,
+      "b_future_usable": false,
+      "differing_axis": [
+        "accessible_witnesses",
+        "operation_rights",
+        "admissibility_tokens"
+      ],
+      "comparisons": [
+        {
+          "framework": "entropy production",
+          "capture": "does_not_capture_coarse",
+          "reason": "Entropy/export is matched; it sees cost paid, not who can use the record later."
+        },
+        {
+          "framework": "control-theoretic state maintenance",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse control effort is matched; a controller with task-state including rights can capture the split."
+        },
+        {
+          "framework": "viability kernels",
+          "capture": "captures_if_enriched",
+          "reason": "The viability label is matched; viability theory captures the split if the constraint set includes future operation rights."
+        },
+        {
+          "framework": "resilience/adaptive-cycle models",
+          "capture": "partial",
+          "reason": "Recovery and persistence are matched; resilience captures the split only when function is defined as audit/repair/challenge capability."
+        },
+        {
+          "framework": "free-energy formulations",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse self-maintenance is matched; an active-inference model with witnesses and policies in the generative state could absorb it."
+        },
+        {
+          "framework": "commons/public-goods models",
+          "capture": "captures_if_enriched",
+          "reason": "Monitoring, sanctioning, repair authority, and challenge rights are native commons-governance variables for shared records."
+        },
+        {
+          "framework": "information-theoretic storage",
+          "capture": "does_not_capture_coarse",
+          "reason": "Storage bits and record count are matched; raw information quantity misses admissible side information and access rights."
+        },
+        {
+          "framework": "provenance systems",
+          "capture": "captures_if_enriched",
+          "reason": "Witness availability, lineage, custody, and admissibility tokens are native provenance data."
+        },
+        {
+          "framework": "LossKernel/reconstruction debt",
+          "capture": "captures_if_enriched",
+          "reason": "Missing witnesses are exactly reconstruction obligations when the operation family is declared."
+        }
+      ],
+      "strongest_separation": "Audit and repair rights split while ordinary maintenance metrics match.",
+      "strongest_absorption": "Commons governance and provenance absorb the distinction if audit rights are modeled."
+    },
+    {
+      "pair_id": "provenance_matched_split",
+      "domain": "provenance",
+      "system_a": {
+        "system_id": "provenance_a_signed_lineage",
+        "domain": "provenance",
+        "description": "Output artifact is maintained with signed lineage, source witness, and admissible attribution token.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "output",
+            "signature",
+            "source"
+          ],
+          "required_witnesses": [
+            "output",
+            "signature",
+            "source"
+          ],
+          "operation_rights": [
+            "attribute",
+            "certify",
+            "use"
+          ],
+          "required_rights": [
+            "attribute",
+            "certify"
+          ],
+          "reconstruction_paths": 1,
+          "admissibility_tokens": [
+            "chain_of_custody"
+          ],
+          "required_tokens": [
+            "chain_of_custody"
+          ]
+        },
+        "future_usable": true
+      },
+      "system_b": {
+        "system_id": "provenance_b_content_only",
+        "domain": "provenance",
+        "description": "Output artifact is byte-identical and equally maintained, but source witness and signature are missing.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "output"
+          ],
+          "required_witnesses": [
+            "output",
+            "signature",
+            "source"
+          ],
+          "operation_rights": [
+            "use"
+          ],
+          "required_rights": [
+            "attribute",
+            "certify"
+          ],
+          "reconstruction_paths": 0,
+          "admissibility_tokens": [],
+          "required_tokens": [
+            "chain_of_custody"
+          ]
+        },
+        "future_usable": false
+      },
+      "standard_equivalent": true,
+      "maintained_records_equal": true,
+      "future_operation_split": true,
+      "a_future_usable": true,
+      "b_future_usable": false,
+      "differing_axis": [
+        "accessible_witnesses",
+        "operation_rights",
+        "reconstruction_paths",
+        "admissibility_tokens"
+      ],
+      "comparisons": [
+        {
+          "framework": "entropy production",
+          "capture": "does_not_capture_coarse",
+          "reason": "Entropy/export is matched; it sees cost paid, not who can use the record later."
+        },
+        {
+          "framework": "control-theoretic state maintenance",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse control effort is matched; a controller with task-state including rights can capture the split."
+        },
+        {
+          "framework": "viability kernels",
+          "capture": "captures_if_enriched",
+          "reason": "The viability label is matched; viability theory captures the split if the constraint set includes future operation rights."
+        },
+        {
+          "framework": "resilience/adaptive-cycle models",
+          "capture": "partial",
+          "reason": "Recovery and persistence are matched; resilience captures the split only when function is defined as audit/repair/challenge capability."
+        },
+        {
+          "framework": "free-energy formulations",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse self-maintenance is matched; an active-inference model with witnesses and policies in the generative state could absorb it."
+        },
+        {
+          "framework": "commons/public-goods models",
+          "capture": "partial",
+          "reason": "Monitoring, sanctioning, repair authority, and challenge rights are native commons-governance variables for shared records."
+        },
+        {
+          "framework": "information-theoretic storage",
+          "capture": "does_not_capture_coarse",
+          "reason": "Storage bits and record count are matched; raw information quantity misses admissible side information and access rights."
+        },
+        {
+          "framework": "provenance systems",
+          "capture": "captures_if_enriched",
+          "reason": "Witness availability, lineage, custody, and admissibility tokens are native provenance data."
+        },
+        {
+          "framework": "LossKernel/reconstruction debt",
+          "capture": "captures_if_enriched",
+          "reason": "Missing witnesses are exactly reconstruction obligations when the operation family is declared."
+        }
+      ],
+      "strongest_separation": "Attribution and certification split while output storage and stability match.",
+      "strongest_absorption": "Provenance theory directly absorbs the distinction as lineage/custody state."
+    },
+    {
+      "pair_id": "version_control_matched_split",
+      "domain": "version_control",
+      "system_a": {
+        "system_id": "version_control_a_history_preserved",
+        "domain": "version_control",
+        "description": "Endpoint files match the release snapshot, but branch history, merge base, and blame witnesses are preserved.",
+        "metrics": {
+          "entropy_export": 5,
+          "control_effort": 3,
+          "stability_window": 10,
+          "viability_kernel": "same_endpoint_tree_kernel",
+          "resilience_recovery_steps": 1,
+          "storage_bits": 96,
+          "maintained_record_count": 2
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "branch_history",
+            "merge_base",
+            "tree"
+          ],
+          "required_witnesses": [
+            "merge_base",
+            "tree"
+          ],
+          "operation_rights": [
+            "bisect",
+            "build",
+            "merge",
+            "revert"
+          ],
+          "required_rights": [
+            "merge",
+            "revert"
+          ],
+          "reconstruction_paths": 3,
+          "admissibility_tokens": [
+            "signed_tags"
+          ],
+          "required_tokens": [
+            "signed_tags"
+          ]
+        },
+        "future_usable": true
+      },
+      "system_b": {
+        "system_id": "version_control_b_squashed_snapshot",
+        "domain": "version_control",
+        "description": "Endpoint files, storage, and stability match, but the history needed for future merge/revert operations is gone.",
+        "metrics": {
+          "entropy_export": 5,
+          "control_effort": 3,
+          "stability_window": 10,
+          "viability_kernel": "same_endpoint_tree_kernel",
+          "resilience_recovery_steps": 1,
+          "storage_bits": 96,
+          "maintained_record_count": 2
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "tree"
+          ],
+          "required_witnesses": [
+            "merge_base",
+            "tree"
+          ],
+          "operation_rights": [
+            "build"
+          ],
+          "required_rights": [
+            "merge",
+            "revert"
+          ],
+          "reconstruction_paths": 0,
+          "admissibility_tokens": [
+            "unsigned_snapshot"
+          ],
+          "required_tokens": [
+            "signed_tags"
+          ]
+        },
+        "future_usable": false
+      },
+      "standard_equivalent": true,
+      "maintained_records_equal": true,
+      "future_operation_split": true,
+      "a_future_usable": true,
+      "b_future_usable": false,
+      "differing_axis": [
+        "accessible_witnesses",
+        "operation_rights",
+        "reconstruction_paths",
+        "admissibility_tokens"
+      ],
+      "comparisons": [
+        {
+          "framework": "entropy production",
+          "capture": "does_not_capture_coarse",
+          "reason": "Entropy/export is matched; it sees cost paid, not who can use the record later."
+        },
+        {
+          "framework": "control-theoretic state maintenance",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse control effort is matched; a controller with task-state including rights can capture the split."
+        },
+        {
+          "framework": "viability kernels",
+          "capture": "captures_if_enriched",
+          "reason": "The viability label is matched; viability theory captures the split if the constraint set includes future operation rights."
+        },
+        {
+          "framework": "resilience/adaptive-cycle models",
+          "capture": "partial",
+          "reason": "Recovery and persistence are matched; resilience captures the split only when function is defined as audit/repair/challenge capability."
+        },
+        {
+          "framework": "free-energy formulations",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse self-maintenance is matched; an active-inference model with witnesses and policies in the generative state could absorb it."
+        },
+        {
+          "framework": "commons/public-goods models",
+          "capture": "partial",
+          "reason": "Monitoring, sanctioning, repair authority, and challenge rights are native commons-governance variables for shared records."
+        },
+        {
+          "framework": "information-theoretic storage",
+          "capture": "does_not_capture_coarse",
+          "reason": "Storage bits and record count are matched; raw information quantity misses admissible side information and access rights."
+        },
+        {
+          "framework": "provenance systems",
+          "capture": "captures_if_enriched",
+          "reason": "Witness availability, lineage, custody, and admissibility tokens are native provenance data."
+        },
+        {
+          "framework": "LossKernel/reconstruction debt",
+          "capture": "captures_if_enriched",
+          "reason": "Missing witnesses are exactly reconstruction obligations when the operation family is declared."
+        }
+      ],
+      "strongest_separation": "Future merge/revert capability splits while endpoint state and ordinary metrics match.",
+      "strongest_absorption": "Version-control semantics absorb the distinction as history/merge-base state."
+    },
+    {
+      "pair_id": "governance_matched_split",
+      "domain": "governance",
+      "system_a": {
+        "system_id": "governance_a_distributed_authority",
+        "domain": "governance",
+        "description": "Same archive and maintenance level, with rulebook, quorum, appeal path, and repair authority available.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "appeal_log",
+            "archive",
+            "rulebook"
+          ],
+          "required_witnesses": [
+            "archive",
+            "rulebook"
+          ],
+          "operation_rights": [
+            "appeal",
+            "challenge",
+            "read",
+            "repair"
+          ],
+          "required_rights": [
+            "appeal",
+            "challenge"
+          ],
+          "reconstruction_paths": 2,
+          "admissibility_tokens": [
+            "public_procedure",
+            "quorum"
+          ],
+          "required_tokens": [
+            "public_procedure",
+            "quorum"
+          ]
+        },
+        "future_usable": true
+      },
+      "system_b": {
+        "system_id": "governance_b_single_custodian",
+        "domain": "governance",
+        "description": "Same archive and maintenance level, but authority is centralized and future challenge rights are absent.",
+        "metrics": {
+          "entropy_export": 6,
+          "control_effort": 4,
+          "stability_window": 12,
+          "viability_kernel": "stable_archive_kernel_v1",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 128,
+          "maintained_record_count": 3
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "archive",
+            "rulebook"
+          ],
+          "required_witnesses": [
+            "archive",
+            "rulebook"
+          ],
+          "operation_rights": [
+            "read"
+          ],
+          "required_rights": [
+            "appeal",
+            "challenge"
+          ],
+          "reconstruction_paths": 2,
+          "admissibility_tokens": [
+            "custodian_discretion"
+          ],
+          "required_tokens": [
+            "public_procedure",
+            "quorum"
+          ]
+        },
+        "future_usable": false
+      },
+      "standard_equivalent": true,
+      "maintained_records_equal": true,
+      "future_operation_split": true,
+      "a_future_usable": true,
+      "b_future_usable": false,
+      "differing_axis": [
+        "accessible_witnesses",
+        "operation_rights",
+        "admissibility_tokens"
+      ],
+      "comparisons": [
+        {
+          "framework": "entropy production",
+          "capture": "does_not_capture_coarse",
+          "reason": "Entropy/export is matched; it sees cost paid, not who can use the record later."
+        },
+        {
+          "framework": "control-theoretic state maintenance",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse control effort is matched; a controller with task-state including rights can capture the split."
+        },
+        {
+          "framework": "viability kernels",
+          "capture": "captures_if_enriched",
+          "reason": "The viability label is matched; viability theory captures the split if the constraint set includes future operation rights."
+        },
+        {
+          "framework": "resilience/adaptive-cycle models",
+          "capture": "partial",
+          "reason": "Recovery and persistence are matched; resilience captures the split only when function is defined as audit/repair/challenge capability."
+        },
+        {
+          "framework": "free-energy formulations",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse self-maintenance is matched; an active-inference model with witnesses and policies in the generative state could absorb it."
+        },
+        {
+          "framework": "commons/public-goods models",
+          "capture": "captures_if_enriched",
+          "reason": "Monitoring, sanctioning, repair authority, and challenge rights are native commons-governance variables for shared records."
+        },
+        {
+          "framework": "information-theoretic storage",
+          "capture": "does_not_capture_coarse",
+          "reason": "Storage bits and record count are matched; raw information quantity misses admissible side information and access rights."
+        },
+        {
+          "framework": "provenance systems",
+          "capture": "captures_if_enriched",
+          "reason": "Witness availability, lineage, custody, and admissibility tokens are native provenance data."
+        },
+        {
+          "framework": "LossKernel/reconstruction debt",
+          "capture": "captures_if_enriched",
+          "reason": "Missing witnesses are exactly reconstruction obligations when the operation family is declared."
+        }
+      ],
+      "strongest_separation": "Challenge and appeal rights split while archive maintenance metrics match.",
+      "strongest_absorption": "Commons and institutional-governance models absorb the authority-right split."
+    },
+    {
+      "pair_id": "consensus_matched_split",
+      "domain": "consensus",
+      "system_a": {
+        "system_id": "consensus_a_challenge_window",
+        "domain": "consensus",
+        "description": "Same committed checkpoint, but validator signatures and challenge window remain available for future dispute.",
+        "metrics": {
+          "entropy_export": 7,
+          "control_effort": 5,
+          "stability_window": 15,
+          "viability_kernel": "committed_checkpoint_kernel",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 160,
+          "maintained_record_count": 4
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "checkpoint",
+            "signatures",
+            "slashing_log"
+          ],
+          "required_witnesses": [
+            "checkpoint",
+            "signatures"
+          ],
+          "operation_rights": [
+            "accept",
+            "challenge",
+            "rollback",
+            "slash"
+          ],
+          "required_rights": [
+            "challenge",
+            "slash"
+          ],
+          "reconstruction_paths": 2,
+          "admissibility_tokens": [
+            "deadline",
+            "validator_set"
+          ],
+          "required_tokens": [
+            "deadline",
+            "validator_set"
+          ]
+        },
+        "future_usable": true
+      },
+      "system_b": {
+        "system_id": "consensus_b_checkpoint_only",
+        "domain": "consensus",
+        "description": "Same committed checkpoint and ordinary maintenance, but future challenge evidence and slashing rights are gone.",
+        "metrics": {
+          "entropy_export": 7,
+          "control_effort": 5,
+          "stability_window": 15,
+          "viability_kernel": "committed_checkpoint_kernel",
+          "resilience_recovery_steps": 2,
+          "storage_bits": 160,
+          "maintained_record_count": 4
+        },
+        "profile": {
+          "accessible_witnesses": [
+            "checkpoint"
+          ],
+          "required_witnesses": [
+            "checkpoint",
+            "signatures"
+          ],
+          "operation_rights": [
+            "accept"
+          ],
+          "required_rights": [
+            "challenge",
+            "slash"
+          ],
+          "reconstruction_paths": 0,
+          "admissibility_tokens": [
+            "expired_window"
+          ],
+          "required_tokens": [
+            "deadline",
+            "validator_set"
+          ]
+        },
+        "future_usable": false
+      },
+      "standard_equivalent": true,
+      "maintained_records_equal": true,
+      "future_operation_split": true,
+      "a_future_usable": true,
+      "b_future_usable": false,
+      "differing_axis": [
+        "accessible_witnesses",
+        "operation_rights",
+        "reconstruction_paths",
+        "admissibility_tokens"
+      ],
+      "comparisons": [
+        {
+          "framework": "entropy production",
+          "capture": "does_not_capture_coarse",
+          "reason": "Entropy/export is matched; it sees cost paid, not who can use the record later."
+        },
+        {
+          "framework": "control-theoretic state maintenance",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse control effort is matched; a controller with task-state including rights can capture the split."
+        },
+        {
+          "framework": "viability kernels",
+          "capture": "captures_if_enriched",
+          "reason": "The viability label is matched; viability theory captures the split if the constraint set includes future operation rights."
+        },
+        {
+          "framework": "resilience/adaptive-cycle models",
+          "capture": "partial",
+          "reason": "Recovery and persistence are matched; resilience captures the split only when function is defined as audit/repair/challenge capability."
+        },
+        {
+          "framework": "free-energy formulations",
+          "capture": "captures_if_enriched",
+          "reason": "Coarse self-maintenance is matched; an active-inference model with witnesses and policies in the generative state could absorb it."
+        },
+        {
+          "framework": "commons/public-goods models",
+          "capture": "captures_if_enriched",
+          "reason": "Monitoring, sanctioning, repair authority, and challenge rights are native commons-governance variables for shared records."
+        },
+        {
+          "framework": "information-theoretic storage",
+          "capture": "does_not_capture_coarse",
+          "reason": "Storage bits and record count are matched; raw information quantity misses admissible side information and access rights."
+        },
+        {
+          "framework": "provenance systems",
+          "capture": "captures_if_enriched",
+          "reason": "Witness availability, lineage, custody, and admissibility tokens are native provenance data."
+        },
+        {
+          "framework": "LossKernel/reconstruction debt",
+          "capture": "captures_if_enriched",
+          "reason": "Missing witnesses are exactly reconstruction obligations when the operation family is declared."
+        }
+      ],
+      "strongest_separation": "Future dispute/slashing rights split while committed checkpoint metrics match.",
+      "strongest_absorption": "Distributed-systems and provenance models absorb challenge evidence and validator-state rights."
+    }
+  ],
+  "strongest_separation_case": "Version control is the sharpest finite separation: the endpoint tree, storage, stability, control effort, and viability label match, but only the history-preserving system retains future merge, revert, and bisect rights. Coarse entropy/control/viability metrics cannot see the split without adding history/provenance to the state.",
+  "strongest_absorption_case": "The same version-control case is also the strongest absorption case: ordinary provenance/version-control theory already treats merge bases, signed tags, and branch history as operational state. Once those are included, the split is not a new physics object.",
+  "closest_existing_theory": "Provenance systems plus viability kernels with task-state enrichment are closest. Commons governance captures authority and challenge rights; LossKernel/reconstruction debt captures missing witness obligations. Entropy, control, resilience, and raw information storage capture only coarse versions unless enriched.",
+  "missing_mathematical_object": "A task-indexed operation-right state: maintained records plus accessible witnesses, authority/admissibility tokens, and reconstruction obligations for a future operation family. It is not just maintenance cost; it is maintained usability under declared operations.",
+  "recommendation": "Preserve and formalize narrowly as operation-right-bearing provenance/reconstruction debt. Do not promote as independent physics, and abandon any wording that suggests maintenance cost replaces entropy production or viability theory.",
+  "current_strongest_claim": "Finite examples exist where ordinary entropy, control, stability, resilience, viability, and storage metrics match while future operation capability differs. The residue is access to witnesses, authority tokens, reconstruction paths, and operation rights.",
+  "weakened_or_falsified": "Maintenance-cost accounting does not appear independent of all existing theory. The strongest cases are absorbed by provenance, commons governance, version-control semantics, and LossKernel/reconstruction-debt language once those frameworks include operation rights in their state.",
+  "open_blocker": "There is still no non-engineered physical example where this operation-right residue separates from enriched viability, free-energy/control, provenance, and information-theoretic side information.",
+  "claim_ledger_update": "No core claim upgrade. T115 preserves maintenance-cost viability only as a narrow operation-right/provenance audit object: matched standard metrics can split on future usability, but the split is largely absorbed by existing provenance, commons, and reconstruction-debt theories when they are given the right state."
+}

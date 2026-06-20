@@ -1171,3 +1171,27 @@ forward direction. The converse is an open conjecture.
   automata or D1RestrictionSystem transport, without assigning the gate values
   by hand.
 - Artifact: [T114 technical report](TECHNICAL-REPORT-viability-filter-v0.1.md).
+
+### 2026-06-20 - Maintenance-Cost Viability Split (T115)
+
+- No core claim is upgraded. T115 is an absorption-pressure artifact for the
+  maintenance-cost direction after T114.
+- Finite examples in record commons, provenance, version control, governance,
+  and consensus match on entropy/export proxy, control effort, stability
+  window, viability-kernel label, resilience recovery steps, storage bits, and
+  maintained record count while splitting on future operation capability.
+- Strongest separation: the version-control pair has the same endpoint tree
+  and ordinary metrics, but preserving merge base/history/signed tags changes
+  future merge, revert, and bisect rights.
+- Strongest absorption: the same case is already handled by
+  provenance/version-control semantics. Commons governance absorbs authority
+  and challenge rights; LossKernel/reconstruction debt absorbs missing witness
+  obligations once the operation family is declared.
+- Claim impact: preserve maintenance-cost viability only as a narrow
+  operation-right/provenance/reconstruction-debt audit object. Do not promote
+  it as independent physics or as a replacement for entropy production,
+  control theory, viability theory, or free-energy approaches.
+- Open blocker: find a non-engineered physical example where operation-right
+  residue separates from enriched viability, control/free-energy, provenance,
+  and information-theoretic side information.
+- Artifact: [T115 technical report](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md).

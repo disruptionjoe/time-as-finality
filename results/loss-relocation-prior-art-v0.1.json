@@ -1,0 +1,65 @@
+{
+  "audits": [
+    {
+      "neighbor": "why_not_provenance",
+      "primary_object": "missing derivation inputs and failed query explanations",
+      "absorbs_reconstruction_debt": true,
+      "absorbs_stable_constraint": true,
+      "absorbs_absorbed_freedom": false,
+      "absorption_mechanism": "Mixed source-lift verdicts can be reported as missing witnesses or missing derivation choices for the target answer.",
+      "remaining_delta": "T107 classifies the same witness gap as relocation of a lost axis, but that is presentation unless the axis typing changes the explanation calculus.",
+      "verdict": "absorbed_except_taxonomy"
+    },
+    {
+      "neighbor": "abstract_interpretation",
+      "primary_object": "concretization fiber under an abstraction map",
+      "absorbs_reconstruction_debt": true,
+      "absorbs_stable_constraint": true,
+      "absorbs_absorbed_freedom": true,
+      "absorption_mechanism": "The source fiber is exactly a concretization set. Mixed verdicts are loss of precision; uniform verdicts are sound abstract judgments.",
+      "remaining_delta": "T107's relocation words add no formal power unless LossKernel supplies a typed attribution or composition law not captured by the abstraction/concretization pair.",
+      "verdict": "absorbed"
+    },
+    {
+      "neighbor": "lenses",
+      "primary_object": "view, source complement, and bidirectional update law",
+      "absorbs_reconstruction_debt": true,
+      "absorbs_stable_constraint": true,
+      "absorbs_absorbed_freedom": true,
+      "absorption_mechanism": "The projected target is a view; the forgotten source fiber is the complement needed for well-behaved putback or update.",
+      "remaining_delta": "T107 is not yet a lens theorem. A separation would need a judgment-sensitive obstruction or debt not representable as ordinary complement/update information.",
+      "verdict": "absorbed"
+    },
+    {
+      "neighbor": "csp_explanation",
+      "primary_object": "constraints, conflicts, diagnoses, and solution fibers",
+      "absorbs_reconstruction_debt": true,
+      "absorbs_stable_constraint": true,
+      "absorbs_absorbed_freedom": true,
+      "absorption_mechanism": "A target judgment over source lifts can be encoded as a CSP. Mixed verdicts become ambiguity over solutions; uniformly forbidden lifts become conflicts.",
+      "remaining_delta": "This confirms the existing T39 warning: obstruction mechanics are not novel. Only typed attribution over the projection may remain.",
+      "verdict": "absorbed"
+    },
+    {
+      "neighbor": "effect_annotations",
+      "primary_object": "monoidal or graded annotations on computations",
+      "absorbs_reconstruction_debt": true,
+      "absorbs_stable_constraint": false,
+      "absorbs_absorbed_freedom": true,
+      "absorption_mechanism": "A sufficiently rich effect can carry the same source witness obligations that T99 required. Label-only effects fail, but witness-carrying effects absorb T107's finite data.",
+      "remaining_delta": "The only remaining gap is whether LossKernel has a canonical source-derived witness law rather than arbitrary annotations.",
+      "verdict": "absorbed_by_rich_effects_not_label_only"
+    }
+  ],
+  "strict_separation_from_all_neighbors": false,
+  "label_only_loss_refuted_again": true,
+  "surviving_delta": "A possible synthesis object remains: a canonical, typed, source-fiber witness law for projection-created reconstruction debt. That is not yet a separation from why-not provenance, abstract interpretation, lenses, CSP explanation, or rich effect systems.",
+  "strongest_claim": "T107 does not currently separate from the named prior-art families. Given the same source fiber and target judgment, abstract interpretation, lenses, CSP explanation, why-not provenance, and rich effect annotations can absorb the finite behavior. The remaining TF1 window is a typed normal form and canonical source-derived witness law, not a new obstruction mechanism.",
+  "improved": "T108 prevents premature promotion of LossKernel. It identifies exactly where T107 is useful: as a unifying source-fiber audit and claim-discipline vocabulary, not yet as proof of mathematical novelty.",
+  "weakened": "This weakens TF1's novelty claim. Source-fiber loss relocation is very close to standard concretization, complement, provenance, conflict, and effect machinery.",
+  "falsification_condition": "T108 fails in TF1's favor only if a future fixture has the same ordinary provenance, abstraction/concretization, lens complement, CSP conflict/diagnosis data, and rich effect annotation, but still requires a different LossKernel attribution verdict.",
+  "tf1_update": "TF1 remains open and should not claim prior-art separation. The next admissible target is a quotient witness against rich effects and abstract interpretation, not against label-only provenance.",
+  "claim_ledger_update": "Add T108 to TF1: source-fiber loss relocation does not yet separate from why-not provenance, abstract interpretation, lenses, CSP explanation, or rich effect annotations. The surviving delta is a possible typed normal form for source-derived witness obligations.",
+  "open_blocker": "Construct a same-neighbor-data quotient fixture: same provenance, same abstraction fibers, same lens complement, same CSP conflicts, and same rich effects, but different LossKernel attribution. Without that, separation is unearned.",
+  "recommended_next": "Try to build the same-neighbor-data quotient fixture. If it fails, demote LossKernel to an integration vocabulary over existing formal tools."
+}

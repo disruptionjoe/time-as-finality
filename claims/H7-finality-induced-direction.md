@@ -14,6 +14,7 @@ Conjecture.
 Partially supported only as a conditional constructor-style theorem or
 open-system/resource-accounting claim; weakened against direct physical reading
 by T80, T82, T84, T106, T110, T116, and T122.
+T128 identifies the smallest finite survivors and keeps the status narrowed.
 
 ## What This Does Not Claim
 
@@ -53,6 +54,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T110: Finite-Permutation Monotone Obstruction](../tests/T110-finite-permutation-monotone-obstruction.md)
 - [T116: Open Markov Record-Entropy Comparison](../tests/T116-open-markov-record-entropy.md)
 - [T122: Stationary Markov Monotone Obstruction](../tests/T122-stationary-markov-monotone-obstruction.md)
+- [T128: Minimal Living Arrow](../tests/T128-minimal-living-arrow.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -164,3 +166,23 @@ This further demotes H7 as a thermodynamic-arrow claim. A future H7 model must
 be explicitly nonstationary, infinite-state, coarse-grained, or
 resource-explicit, and must quantify the free-energy, boundary, memory, or
 capacity drawdown rather than calling that drawdown finality.
+
+## T128 Result
+
+[T128](../tests/T128-minimal-living-arrow.md) constructs the first finite
+models that survive the obstruction stack. The closed reversible control and
+stationary Markov control fail as expected. The smallest non-stipulative
+survivor is finite resource drawdown:
+
+```text
+R3 -> R2 -> R1 -> R0
+drawdown = 3 - resource
+```
+
+Maintenance survives only when it consumes a finite repair budget. Open
+boundary survives only when the boundary sink, exported history, or sink
+capacity is counted. Constructor restriction is the smallest formal survivor,
+but only by stipulating that reverse transformations are inadmissible.
+
+This keeps H7 as a resource-accounting or constructor lemma. It does not
+promote H7 as a thermodynamic-arrow claim.

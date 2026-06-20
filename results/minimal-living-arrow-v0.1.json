@@ -1,0 +1,360 @@
+{
+  "audits": [
+    {
+      "model_id": "control_a_closed_reversible",
+      "name": "Control A: closed reversible finite cycle",
+      "ingredient": "none",
+      "state_names": [
+        "A",
+        "B",
+        "C"
+      ],
+      "transition_rules": [
+        "A->B p=1 (permutation step)",
+        "B->C p=1 (permutation step)",
+        "C->A p=1 (permutation return)"
+      ],
+      "resource_accounting": "none: closed finite permutation, no sink or drawdown",
+      "direction_candidate": "constructor_rank",
+      "direction_values": [
+        {
+          "state": "A",
+          "value": 0
+        },
+        {
+          "state": "B",
+          "value": 1
+        },
+        {
+          "state": "C",
+          "value": 2
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "A",
+          "available_operation_count": 3
+        },
+        {
+          "state": "B",
+          "available_operation_count": 3
+        },
+        {
+          "state": "C",
+          "available_operation_count": 3
+        }
+      ],
+      "has_directed_cycle": true,
+      "every_edge_strictly_increases": false,
+      "direction_survives": false,
+      "obstruction_status": "Killed by T110: a strict scalar monotone cannot live on a finite closed reversible orbit.",
+      "t122_assumptions_violated": [],
+      "equivalence_note": "Baseline obstruction control.",
+      "verdict": "dead: directed cycle blocks a strict scalar monotone"
+    },
+    {
+      "model_id": "control_b_stationary_markov",
+      "name": "Control B: stationary finite Markov chain",
+      "ingredient": "stationary stochasticity only",
+      "state_names": [
+        "low",
+        "high"
+      ],
+      "transition_rules": [
+        "low->low p=0.7 (stationary self transition)",
+        "low->high p=0.3 (stationary upward transition)",
+        "high->low p=0.3 (stationary downward transition)",
+        "high->high p=0.7 (stationary self transition)"
+      ],
+      "resource_accounting": "none: pi=(1/2,1/2), P is time-independent",
+      "direction_candidate": "state_height",
+      "direction_values": [
+        {
+          "state": "low",
+          "value": 0
+        },
+        {
+          "state": "high",
+          "value": 1
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "low",
+          "available_operation_count": 3
+        },
+        {
+          "state": "high",
+          "available_operation_count": 3
+        }
+      ],
+      "has_directed_cycle": true,
+      "every_edge_strictly_increases": false,
+      "direction_survives": false,
+      "obstruction_status": "Killed by T122: stationarity forces zero stationary-weighted expected drift, so upward drift is balanced by downward drift.",
+      "t122_assumptions_violated": [],
+      "equivalence_note": "Baseline stationary stochastic obstruction control.",
+      "verdict": "dead: directed cycle blocks a strict scalar monotone"
+    },
+    {
+      "model_id": "test_c_resource_drawdown",
+      "name": "Test C: finite resource drawdown",
+      "ingredient": "finite nonrenewed capacity",
+      "state_names": [
+        "R3",
+        "R2",
+        "R1",
+        "R0"
+      ],
+      "transition_rules": [
+        "R3->R2 p=1 (consume one unit)",
+        "R2->R1 p=1 (consume one unit)",
+        "R1->R0 p=1 (consume one unit)"
+      ],
+      "resource_accounting": "finite stock r=3,2,1,0 with no refill",
+      "direction_candidate": "drawdown = 3 - resource",
+      "direction_values": [
+        {
+          "state": "R3",
+          "value": 0
+        },
+        {
+          "state": "R2",
+          "value": 1
+        },
+        {
+          "state": "R1",
+          "value": 2
+        },
+        {
+          "state": "R0",
+          "value": 3
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "R3",
+          "available_operation_count": 3
+        },
+        {
+          "state": "R2",
+          "available_operation_count": 2
+        },
+        {
+          "state": "R1",
+          "available_operation_count": 1
+        },
+        {
+          "state": "R0",
+          "available_operation_count": 0
+        }
+      ],
+      "has_directed_cycle": false,
+      "every_edge_strictly_increases": true,
+      "direction_survives": true,
+      "obstruction_status": "Survives only by leaving the T110/T122 assumptions: the model is not closed reversible and not stationary.",
+      "t122_assumptions_violated": [
+        "nonstationary resource drawdown",
+        "transient support",
+        "absorbing depleted boundary"
+      ],
+      "equivalence_note": "Smallest non-stipulative survivor in this audit: direction is the declared loss of finite future capacity.",
+      "verdict": "lives only with explicit resource/boundary accounting"
+    },
+    {
+      "model_id": "test_d_maintenance_cost",
+      "name": "Test D: maintenance burden with finite repair budget",
+      "ingredient": "maintenance burden plus finite resource",
+      "state_names": [
+        "M3",
+        "M2",
+        "M1",
+        "M0"
+      ],
+      "transition_rules": [
+        "M3->M2 p=1 (pay one maintenance unit)",
+        "M2->M1 p=1 (pay one maintenance unit)",
+        "M1->M0 p=1 (budget exhausted; persistence fails)"
+      ],
+      "resource_accounting": "maintenance consumes one unit from a finite repair budget per step; health persists only while budget remains",
+      "direction_candidate": "lost future operations",
+      "direction_values": [
+        {
+          "state": "M3",
+          "value": 0
+        },
+        {
+          "state": "M2",
+          "value": 1
+        },
+        {
+          "state": "M1",
+          "value": 2
+        },
+        {
+          "state": "M0",
+          "value": 3
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "M3",
+          "available_operation_count": 3
+        },
+        {
+          "state": "M2",
+          "available_operation_count": 2
+        },
+        {
+          "state": "M1",
+          "available_operation_count": 1
+        },
+        {
+          "state": "M0",
+          "available_operation_count": 0
+        }
+      ],
+      "has_directed_cycle": false,
+      "every_edge_strictly_increases": true,
+      "direction_survives": true,
+      "obstruction_status": "Survives, but not independently: maintenance creates direction only because a finite repair budget is being depleted.",
+      "t122_assumptions_violated": [
+        "nonstationary resource drawdown",
+        "transient support",
+        "absorbing failed-maintenance boundary"
+      ],
+      "equivalence_note": "Equivalent to resource drawdown plus a persistence task label. Maintenance without finite budget is not shown to produce a new arrow.",
+      "verdict": "lives only with explicit resource/boundary accounting"
+    },
+    {
+      "model_id": "test_e_open_boundary",
+      "name": "Test E: finite open boundary with sink fill",
+      "ingredient": "open source/sink boundary",
+      "state_names": [
+        "S0",
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "transition_rules": [
+        "S0->S1 p=1 (export one record to sink)",
+        "S1->S2 p=1 (export one record to sink)",
+        "S2->S3 p=1 (sink reaches capacity)"
+      ],
+      "resource_accounting": "system resource is refilled by source; boundary sink capacity fills from 0 to 3",
+      "direction_candidate": "sink_fill",
+      "direction_values": [
+        {
+          "state": "S0",
+          "value": 0
+        },
+        {
+          "state": "S1",
+          "value": 1
+        },
+        {
+          "state": "S2",
+          "value": 2
+        },
+        {
+          "state": "S3",
+          "value": 3
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "S0",
+          "available_operation_count": 3
+        },
+        {
+          "state": "S1",
+          "available_operation_count": 2
+        },
+        {
+          "state": "S2",
+          "available_operation_count": 1
+        },
+        {
+          "state": "S3",
+          "available_operation_count": 0
+        }
+      ],
+      "has_directed_cycle": false,
+      "every_edge_strictly_increases": true,
+      "direction_survives": true,
+      "obstruction_status": "Survives only when the boundary state is counted. If the sink is not part of the state, this reduces to omitted history.",
+      "t122_assumptions_violated": [
+        "open boundary",
+        "exported history",
+        "finite sink capacity",
+        "transient support"
+      ],
+      "equivalence_note": "Equivalent to resource drawdown in the environment: sink capacity is the resource being consumed.",
+      "verdict": "lives only with explicit resource/boundary accounting"
+    },
+    {
+      "model_id": "test_f_constructor_restricted",
+      "name": "Test F: constructor-restricted transformations",
+      "ingredient": "explicit impossible reverse transformations",
+      "state_names": [
+        "C0",
+        "C1",
+        "C2"
+      ],
+      "transition_rules": [
+        "C0->C1 p=1 (allowed constructor step)",
+        "C1->C2 p=1 (allowed constructor step)"
+      ],
+      "resource_accounting": "none internal; reverse transformations are excluded by the admissibility relation",
+      "direction_candidate": "constructor_rank",
+      "direction_values": [
+        {
+          "state": "C0",
+          "value": 0
+        },
+        {
+          "state": "C1",
+          "value": 1
+        },
+        {
+          "state": "C2",
+          "value": 2
+        }
+      ],
+      "future_operation_sizes": [
+        {
+          "state": "C0",
+          "available_operation_count": 2
+        },
+        {
+          "state": "C1",
+          "available_operation_count": 1
+        },
+        {
+          "state": "C2",
+          "available_operation_count": 0
+        }
+      ],
+      "has_directed_cycle": false,
+      "every_edge_strictly_increases": true,
+      "direction_survives": true,
+      "obstruction_status": "Formally survives, but direction is imported by stipulating the admissible transformation preorder.",
+      "t122_assumptions_violated": [
+        "excluded reverse channel",
+        "constructor admissibility restriction"
+      ],
+      "equivalence_note": "Smallest formal survivor if stipulation is allowed; weakest physical survivor because it names no substrate cost.",
+      "verdict": "lives formally, but by stipulated admissibility restriction"
+    }
+  ],
+  "strongest_surviving_minimal_model": "test_c_resource_drawdown",
+  "strongest_failed_model": "control_b_stationary_markov",
+  "smallest_formal_ingredient_set": "constructor restriction alone, but only because the reverse transformation is excluded by definition",
+  "smallest_nonstipulative_ingredient_set": "finite nonrenewed resource drawdown with an absorbing depleted boundary",
+  "improved": "T128 identifies the first finite models that live after the obstruction stack: strict direction appears only when a resource, sink, boundary, or constructor restriction is explicitly included.",
+  "weakened": "Maintenance and open-boundary arrows do not emerge as independent ingredients in these fixtures. They reduce to resource drawdown, exported history, sink-capacity accounting, or stipulated constructor admissibility.",
+  "claim_impact_recommendation": "Preserve H7 only as a resource-accounting or constructor lemma. Do not promote it as a thermodynamic-arrow claim.",
+  "open_blocker": "The strongest survivor is still an accounting model. A physical upgrade would need a named free-energy or capacity variable and a comparison to standard stochastic thermodynamics.",
+  "claim_ledger_update": "H7 remains partially supported only in narrowed form. T128 shows that closed reversible and finite stationary Markov controls still fail, while the smallest non-stipulative finite survivor is explicit finite resource drawdown. Maintenance and open boundary survive only as resource/sink/export accounting; constructor restriction survives by stipulation.",
+  "suggested_next": "Build a thermodynamic calibration for the resource-drawdown survivor and test whether its direction is anything beyond ordinary free-energy or capacity accounting."
+}

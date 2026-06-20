@@ -22,8 +22,8 @@ the owning explore/exploit/govern workflow.
 
 ## Purpose
 
-Create a structured multi-perspective research process that explores several
-important research directions simultaneously through independent persona rooms.
+Create a structured multi-perspective research process that explores one or
+more important research directions through independent persona rooms.
 
 The workflow is not trying to make the rooms agree. It is designed to expose
 overlooked connections, productive tensions, minority views, and directions that
@@ -34,11 +34,11 @@ claim evidence, not a roadmap update, and not a governance decision.
 
 ## Authority Boundaries
 
-- **May:** choose three research directions from current repo state; select
-  diverse non-overlapping personas from the canonical panel; simulate three
-  structured multi-round room discussions; synthesize each room; compare the
-  rooms; propose next directions; write a non-canonical exploration/report
-  artifact.
+- **May:** choose the number of rooms and topics from user parameters or current
+  repo state; select diverse non-overlapping personas from the canonical panel;
+  simulate structured multi-round room discussions; synthesize each room;
+  compare the rooms when more than one room exists; propose next directions;
+  write a non-canonical exploration/report artifact.
 - **Must not:** update claim statuses, `CLAIM-LEDGER.md`, `ROADMAP.md`, test
   status, line registry state, persona registries, automation schedules, or
   trigger specs; register new research lines directly; promote a room insight
@@ -92,25 +92,38 @@ but it does not create or update canonical state.
 
 ### 1. Establish Scope
 
-Read current repo state and state the run scope:
+Read current repo state and state the run scope. Record the run parameters:
 
 - whether this is a whole-program constellation or a focused constellation;
-- the current active frontier;
-- the strongest secondary branch;
-- the long-horizon North Star direction that should be represented even if it
-  lacks a current path to proof.
+- `room_count`: default `1` unless the user requests a different count;
+- `room_topics`: default one topic, the current primary active research line, or
+  the user's supplied topic if present;
+- `room_seed_text`: any user-supplied prose, hypothesis, or prompt fragment that
+  must be visible to the room before discussion;
+- `room_derivation_mode`: `user_provided`, `current_state_default`, or
+  `current_state_multiroom`;
+- relevant current frontier, secondary branch, and long-horizon surfaces used to
+  justify topic selection.
 
-### 2. Choose Three Rooms
+### 2. Choose Room Count And Topics
 
-Create exactly three independent research rooms unless the user explicitly asks
-for a different count:
+Create the configured number of independent research rooms.
 
-1. **Primary active research line.** The most important active formal or
-   exploit-facing line.
-2. **Strongest secondary branch.** The best-supported or most actionable
-   alternate direction.
-3. **Broader North Star direction.** The long-horizon intuition or program
-   spine, even if current evidence has not established a path to it.
+Topic selection rules:
+
+- If the user supplies room topics, use them directly and derive only missing
+  topics if `room_count` exceeds the supplied list.
+- If the user supplies prose or a motivating hypothesis, include it in the room
+  context before round 1. Do not replace it with only an orchestrator summary.
+- If no topics are supplied, default to one room on the primary active research
+  line.
+- If more than one room is requested without enough topics, derive missing
+  topics from current state in this order: primary active line, strongest
+  secondary branch, long-horizon program direction, high-tension neglected
+  branch, and prior-art or negative-control pressure.
+- Do not reuse room topics, named room roles, or persona assignments from a
+  previous constellation run unless the current scope independently selects
+  them.
 
 For each room, write:
 
@@ -118,6 +131,7 @@ For each room, write:
 room:
   name:
   research_direction:
+  seed_text_visible_to_room:
   why_this_direction_now:
   relevant_repo_context:
 ```
@@ -205,7 +219,7 @@ room_synthesis:
 
 ### 6. Orchestrator Comparison
 
-Compare all room syntheses:
+If `room_count` is greater than `1`, compare all room syntheses:
 
 - recurring signals;
 - uniquely important single-room insights;
@@ -214,6 +228,10 @@ Compare all room syntheses:
 - assumptions challenged;
 - opportunities easy to overlook;
 - directions deserving further investigation.
+
+If `room_count` is `1`, compare the room synthesis against current repo context,
+recent related artifacts, and known open problems instead of manufacturing
+cross-room agreement.
 
 ### 7. Route Consequences
 
@@ -240,7 +258,7 @@ The report should include:
 - persona assignment strategy;
 - room discussions;
 - room syntheses;
-- orchestrator cross-room report;
+- orchestrator comparison or one-room contextual judgment;
 - proposed next artifacts or workflow routes;
 - explicit non-actions: canonical files not updated, triggers not armed.
 
@@ -250,12 +268,19 @@ End with the verdict block.
 
 Every constellation report should answer:
 
-- What appears important across multiple rooms?
+- What appears important across multiple rooms, if this is a multi-room run?
 - What appears uniquely important within a single room?
 - What new research directions emerged?
 - What assumptions were challenged?
 - What opportunities might be easy to overlook?
 - What deserves further investigation?
+
+For a one-room run, the report should also answer:
+
+- What changed after the room discussion rather than before it?
+- Which repo artifact or open problem is the strongest executable anchor?
+- What finite model, negative control, or prior-art comparison should be tried
+  next?
 
 Suggested final section:
 
@@ -308,21 +333,27 @@ What would change this recommendation:
 - **North Star contamination.** Long-horizon intuition is treated as evidence.
   Guard: North Star room can generate questions, not claim support.
 - **Efficiency bias.** The workflow shrinks too quickly to the most obvious next
-  task. Guard: three-room design and divergence-first protocol.
+  task. Guard: configured room design and divergence-first protocol.
+- **Room-count rigidity.** A run inherits a previous constellation's number of
+  rooms, topics, or named room framing. Guard: explicit `room_count`,
+  `room_topics`, and derivation mode in every report.
 
 ## Success Criteria
 
 A good run produces a report where:
 
-- the three rooms are genuinely different research directions;
+- the configured rooms match the requested count and topics;
 - persona assignments are diverse and non-overlapping;
 - the room conversations visibly evolve across three rounds;
 - room syntheses preserve disagreement;
-- the cross-room report names signals that were not obvious from any one room;
+- multi-room reports name signals that were not obvious from any one room;
+- one-room reports name insights that emerged through discussion rather than
+  parallel independent memos;
 - proposed next directions are routed without canonical overreach.
 
-Cheap test: a reviewer can identify at least one insight that emerged only
-because two or more rooms were compared.
+Cheap test: a reviewer can identify at least one insight that emerged because
+personas reacted to one another, and for multi-room runs at least one insight
+that emerged because two or more rooms were compared.
 
 ## Future Automation Decomposition Notes
 
@@ -331,7 +362,8 @@ never exceed it.*
 
 Likely execution atoms:
 
-- `explore/constellation-scope` - read current state and frame three rooms.
+- `explore/constellation-scope` - read current state and configure room count
+  and topics.
 - `explore/constellation-persona-assign` - select non-overlapping persona sets.
 - `explore/constellation-room-run` - run one room through three rounds.
 - `explore/constellation-room-synthesize` - synthesize one room.

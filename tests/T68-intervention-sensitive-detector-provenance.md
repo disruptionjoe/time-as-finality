@@ -94,5 +94,6 @@ causal/provenance metadata or supporting active interventions.
 - Model: `models/intervention_sensitive_detector_provenance.py`
 - Runner: `models/run_t68.py`
 - Test: `tests/test_intervention_sensitive_detector_provenance.py`
+- Technical report: `TECHNICAL-REPORT-intervention-sensitive-detector-provenance-v0.1.md`
 - Results: `results/intervention-sensitive-detector-provenance-v0.1.json`
 - Result note: `results/intervention-sensitive-detector-provenance-v0.1-results.md`

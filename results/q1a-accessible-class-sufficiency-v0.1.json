@@ -1,0 +1,494 @@
+{
+  "visible_cases": [
+    {
+      "case_id": "access_none__partition_E1__E2__E3",
+      "accessible_fragments": [],
+      "raw_accessible_redundancy": 0,
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E2__E3",
+      "accessible_fragments": [],
+      "raw_accessible_redundancy": 0,
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E3__E2",
+      "accessible_fragments": [],
+      "raw_accessible_redundancy": 0,
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1__E2-E3",
+      "accessible_fragments": [],
+      "raw_accessible_redundancy": 0,
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E2-E3",
+      "accessible_fragments": [],
+      "raw_accessible_redundancy": 0,
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E1"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E1"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E1"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E1"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E1"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E2"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E2"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E2"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E2"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E2"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E2"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E2"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E1",
+        "E2"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E2"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E2"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E3"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E3"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E3"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E3"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E3"
+      ],
+      "raw_accessible_redundancy": 1,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E1",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 2,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 3,
+      "accessible_provenance_support": 3,
+      "d1_verdict": "finalized",
+      "support_classifier_verdict": "finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2__E3",
+      "accessible_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 3,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E3__E2",
+      "accessible_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 3,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 3,
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2-E3",
+      "accessible_fragments": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "raw_accessible_redundancy": 3,
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "support_classifier_verdict": "not_finalized",
+      "classifier_matches_d1": true
+    }
+  ],
+  "hidden_partition_case": {
+    "case_id": "access_E1-E2-E3__partition_hidden",
+    "accessible_fragments": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "raw_accessible_redundancy": 3,
+    "accessible_provenance_support": null,
+    "d1_verdict": "withhold_partition_unavailable",
+    "support_classifier_verdict": "withhold_partition_unavailable",
+    "classifier_matches_d1": true
+  },
+  "classifier_matches_all_visible_cases": true,
+  "same_support_always_same_verdict": true,
+  "raw_redundancy_is_not_sufficient": true,
+  "external_distinctness_earned": false,
+  "verdict_histogram": {
+    "not_finalized": 39,
+    "finalized": 1
+  },
+  "support_histogram": {
+    "0": 5,
+    "1": 22,
+    "2": 12,
+    "3": 1
+  },
+  "strongest_claim": "Within the current fixed-data Q1A family, the D1 verdict collapses to one auditable statistic plus one audit flag: the number of informative accessible provenance classes, together with whether that partition is available before scoring. Once ordinary quantum-side summaries are fixed, partition geometry, fragment labels, and raw accessible redundancy carry no extra verdict content beyond that thresholded accessible-class count.",
+  "improved": "T105 sharpens the surviving Q1A branch into an explicit reduction target. A serious reader no longer has to guess what structure is doing work in the current fixed-data regime: it is the audited accessible provenance-class count, not richer measurement dynamics.",
+  "weakened": "This weakens Q1A further. In the current regime it is not even a rich partition-sensitive theory; it is a thresholded classifier over audited accessible record classes. Any future paper-facing novelty claim must therefore show verdict content that survives after this reduction.",
+  "falsification_condition": "T105 stands unless a future fixed-data witness keeps the ordinary quantum-side summaries fixed and forces different D1 verdicts for two cases with the same audited accessible provenance-class count, or unless a physically justified D1 dimension beyond that count becomes load-bearing.",
+  "q1_update": "Q1A should currently be read as audited accessible-class bookkeeping over already formed records. Raw fragment redundancy is insufficient, but the surviving fixed-data branch still collapses to a thresholded accessible provenance-support count once the partition is shared.",
+  "claim_ledger_update": "Add T105 to Q1A: in the current fixed-data witness family, D1 verdicts are completely determined by the audited accessible provenance-class count plus partition visibility. This narrows Q1A from a general observer-relative measurement claim to a thresholded record-accounting classifier.",
+  "open_blocker": "No current Q1A witness uses branch support, reversal cost, or another physically justified D1 dimension to escape the accessible-class reduction after provenance auditing is shared.",
+  "recommended_next": "Try to construct or kill a witness where branch support or reversal-cost content remains nontrivial after matching provenance-aware access support, or else demote Q1A again in paper-facing summaries."
+}

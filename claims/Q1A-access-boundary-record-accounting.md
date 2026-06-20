@@ -33,6 +33,9 @@ are physically audited.
   are held fixed and the D1 verdict changes with the independence partition.
 - T104 shows that the T103 witness is absorbed once Quantum Darwinism is allowed
   to compute redundancy over the same provenance-aware fragment partition.
+- T105 shows that the surviving fixed-data branch collapses further to a
+  thresholded audited accessible provenance-class count plus partition
+  visibility.
 
 ## Not Earned
 
@@ -41,6 +44,8 @@ are physically audited.
 - No Born-rule derivation.
 - No external distinction from provenance-aware Quantum Darwinism in the
   current witness family.
+- No load-bearing fixed-data structure beyond audited accessible
+  provenance-support count in the current witness family.
 - No empirical quantum support beyond already formed record accounting.
 
 ## Falsification Or Demotion Condition
@@ -55,7 +60,9 @@ paper-facing physics contribution.
 Q1A regains external interest only if it produces a fixed-data witness where
 D1 diverges after the provenance-aware fragment partition is shared, or if D1
 derives that partition from a physical rule that cannot be imported into the
-neighboring framework without adding new physics.
+neighboring framework without adding new physics. After T105, it must also show
+verdict content that does not collapse to the same audited accessible
+provenance-support count.
 
 ## Primary Evidence
 
@@ -64,3 +71,4 @@ neighboring framework without adding new physics.
 - [T102: Q1A Neighbor Comparison Gate](../tests/T102-q1a-neighbor-comparison.md)
 - [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
+- [T105: Q1A Accessible-Class Sufficiency](../tests/T105-q1a-accessible-class-sufficiency.md)

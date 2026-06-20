@@ -1026,3 +1026,24 @@ forward direction. The converse is an open conjecture.
 - Next blocker: either find a non-absorbed fixed-data Q1A witness after shared
   provenance partitioning, or obtain a real Q1B raw-log deployment satisfying
   the T87/T97/T100 gates.
+
+### 2026-06-20 - Q1A Accessible-Class Sufficiency (T105)
+
+- Q1A remains `bookkeeping_only`, and T105 narrows the surviving fixed-data
+  branch again.
+- Reduction result: in the current fixed-data witness family, the D1 verdict is
+  completely determined by the audited accessible provenance-class count plus
+  partition visibility. Once the ordinary quantum-side summaries are fixed,
+  partition geometry, fragment labels, and raw accessible redundancy add no
+  further verdict content.
+- Raw redundancy is not sufficient: cases with the same raw accessible
+  redundancy `3` split between `finalized` and `not_finalized` depending on
+  whether the audited provenance support is `3` or `2`.
+- Claim impact: Q1A is narrower than generic access-boundary measurement
+  language suggests. In the tested regime it behaves as a thresholded
+  record-accounting classifier, not a distinct measurement mechanism.
+- Open blocker: produce a fixed-data witness where branch support,
+  reversal-cost, or another physically justified D1 dimension survives after
+  matching accessible provenance support, or demote Q1A again in paper-facing
+  summaries.
+- Artifact: [T105 technical report](TECHNICAL-REPORT-q1a-accessible-class-sufficiency-v0.1.md).

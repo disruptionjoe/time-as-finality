@@ -84,9 +84,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P05 - Algebraic Topologist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T13:40:55-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-134055-p05-algebraic-topologist-invariant-dictionary.md
 - goal: Create an invariant dictionary separating gap objects, obstruction
   classes, global-section failures, and auditability failures across T56-T58-T89.
 - ambition: Prevent one word, "obstruction", from hiding several non-equivalent

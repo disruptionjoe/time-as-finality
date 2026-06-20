@@ -43,9 +43,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P01 - Mathematical Physicist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T09:37:51-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-093751-p01-mathematical-physicist-detector-stack.md
 - goal: Instantiate one TaF record/provenance model on a concrete weak-measurement
   or detector platform using platform-native variables: Hamiltonian or channel,
   instrument model, detector outputs, thermodynamic costs, and observable records.

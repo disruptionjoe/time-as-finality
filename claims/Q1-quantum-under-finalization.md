@@ -379,6 +379,28 @@ weak measurement is reinstated only after a real platform clears the
 independent-axis gate.
 ```
 
+## T100 Result
+
+[T100](../tests/T100-detector-authority-domain-bound.md) upgrades the recent
+detector-governance narrowing from staffing examples to a complete finite
+enumeration over the five T97 authority domains.
+
+The result is exact rather than suggestive:
+
+```text
+minimum admissible authority domains = 4
+```
+
+No partition with three or fewer authority domains survives once trust-auditor
+independence and governance/control/archive separation are enforced. There are
+exactly three minimal four-domain merge classes, each merging instrument
+operation with exactly one of governance, control design, or archive custody,
+while trust auditing remains separate.
+
+This narrows detector provenance again. Under the current T97/T98 packet, a
+small-lab future deployment is not merely difficult; it is structurally
+inadmissible unless the packet itself changes.
+
 ## Contribution Needed
 
 Two concrete needs remain, and the detector-side one is now stronger than the

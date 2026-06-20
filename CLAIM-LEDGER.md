@@ -537,7 +537,8 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   projection-created obstruction is admissibly attributable only when the
   projection carries a typed loss object naming structure that resolves the
   obstruction in the source.
-- LossKernel promoted as the next formal accounting object:
+- LossKernel selected as the next candidate formal accounting object, not
+  promoted beyond the gate:
   `LossKernel(f)=typed structure forgotten by morphism f`.
 - Guardrail: do not claim TaF discovered gluing obstruction. The candidate
   original contribution is a finite typed attribution calculus around known

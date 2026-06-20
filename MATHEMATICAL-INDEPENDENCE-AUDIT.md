@@ -173,6 +173,21 @@ which additions strengthen internal theorem ladders from which additions merely
 add TaF-specific stress tests, then send the neutral TF1/LossKernel statement to
 an external mathematician or theoretical-CS reviewer.
 
+## Staleness Update â€” 2026-06-20 Late Run
+
+The audit remains stale relative to the current test registry. The repository
+now lists 112 `T*.md` test notes, up by 17 since the previous 2026-06-20
+staleness note. Independent motivation remains **UNKNOWN**: the added material
+mostly sharpens internal Q1 branch demotion, H7 reversible-boundary stress,
+LossKernel relocation/prior-art absorption, and branch-support collapse. None
+of that replaces external mathematical motivation.
+
+Minimum next audit action: produce v0.7 as a post-T109 audit that separates
+internally useful bookkeeping/stress tests from genuinely neutral theorem-ladder
+progress, and explicitly incorporate the external review findings that
+LossKernel is currently a monoid-valued annotation unless a same-neighbor-data
+separation fixture is proved.
+
 ---
 
 ## What Would Advance Independence
@@ -206,3 +221,4 @@ an external mathematician or theoretical-CS reviewer.
 | 2026-06-18 | v0.5 | T40 adds Holonic Emergence and Cross-Level AC5 theorems. HolonicNetwork introduces cross-level composition; the same parity obstruction from T26/T39 operates at the holonic level. |
 | 2026-06-18 | v0.6 | T41 adds Typed Transport Category and PO1 Non-Functor theorems. Own operations upgraded from "present but incomplete" to "present and complete": D1RestrictionMorphisms form a proper category; PO1 admissibility is not a Boolean functor on D1Cat. |
 | 2026-06-20 | staleness note | Test registry has grown to 95 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T92 v0.7 audit plus external review of the neutral TF1/LossKernel statement. |
+| 2026-06-20 | late staleness note | Test registry has grown to 112 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T109 v0.7 audit that incorporates LossKernel external-review downgrades. |

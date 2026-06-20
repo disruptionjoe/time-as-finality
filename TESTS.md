@@ -24,6 +24,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T106](tests/T106-bounded-sink-reversible-compression.md) | Bounded-sink reversible compression | H7, T80, T82, T84 | implemented: reversible compression does not rescue H7 once the bounded sink and closed return path are included |
 | [T110](tests/T110-finite-permutation-monotone-obstruction.md) | Finite-permutation monotone obstruction | H7, T80, T82, T84, T106 | implemented: finite closed reversible dynamics admit no strict scalar finality monotone unless the score is constant on each orbit |
 | [T116](tests/T116-open-markov-record-entropy.md) | Open Markov record-entropy comparison | H7, T110 | implemented: open stochastic record arrows are absorbed by path irreversibility, exported history, or fresh blank capacity in the tested fixtures |
+| [T122](tests/T122-stationary-markov-monotone-obstruction.md) | Stationary Markov monotone obstruction | H7, T110, T116 | implemented: finite stationary Markov dynamics admit no strict scalar expected-finality monotone on stationary support |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
@@ -140,6 +141,7 @@ python -m models.run_t84
 python -m models.run_t106
 python -m models.run_t110
 python -m models.run_t116
+python -m models.run_t122
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
@@ -228,6 +230,7 @@ The suites use only Python's standard library. Evidence records:
 - [Bounded-Sink Reversible Compression v0.1 Results](results/bounded-sink-reversible-compression-v0.1-results.md)
 - [Finite-Permutation Monotone Obstruction v0.1 Results](results/finite-permutation-monotone-obstruction-v0.1-results.md)
 - [Open Markov Record-Entropy Comparison v0.1 Results](results/open-markov-record-entropy-v0.1-results.md)
+- [Stationary Markov Monotone Obstruction v0.1 Results](results/stationary-markov-monotone-obstruction-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

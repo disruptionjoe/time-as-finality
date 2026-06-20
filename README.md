@@ -160,6 +160,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md](TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md)
   - open stochastic record arrows are absorbed by path irreversibility,
     exported history, or fresh blank capacity in the tested fixtures.
+- [TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md)
+  - finite stationary Markov dynamics cannot carry a strict scalar
+    expected-finality monotone on stationary support.
 - [TECHNICAL-REPORT-maintenance-viability-split-v0.1.md](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md)
   - matched entropy/control/stability/viability examples split on future
     operation rights, but are largely absorbed by provenance and reconstruction

@@ -13,7 +13,7 @@ Conjecture.
 
 Partially supported only as a conditional constructor-style theorem or
 open-system/resource-accounting claim; weakened against direct physical reading
-by T80, T82, T84, T106, T110, and T116.
+by T80, T82, T84, T106, T110, T116, and T122.
 
 ## What This Does Not Claim
 
@@ -52,6 +52,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T106: Bounded-Sink Reversible Compression](../tests/T106-bounded-sink-reversible-compression.md)
 - [T110: Finite-Permutation Monotone Obstruction](../tests/T110-finite-permutation-monotone-obstruction.md)
 - [T116: Open Markov Record-Entropy Comparison](../tests/T116-open-markov-record-entropy.md)
+- [T122: Stationary Markov Monotone Obstruction](../tests/T122-stationary-markov-monotone-obstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -142,3 +143,24 @@ So the current open-system H7 route is still absorbed by standard stochastic
 thermodynamics, history export, or capacity accounting. H7 should be demoted in
 paper-facing prose to a constructor/resource-accounting lemma unless a future
 model clears the T116 zero-resource stochastic record-arrow gate.
+
+## T122 Result
+
+[T122](../tests/T122-stationary-markov-monotone-obstruction.md) closes the
+finite stationary Markov version of the T116 zero-resource gate. For any finite
+Markov chain with stationary distribution `pi` and scalar score `f`,
+stationarity gives zero `pi`-weighted expected drift:
+
+```text
+sum_i pi_i E[f(X_{t+1}) - f(X_t) | X_t = i] = 0
+```
+
+So if the expected drift is nonnegative on every state in stationary support,
+it must be zero on that support. Strict expected finality can occur only in
+transient or nonstationary sectors, or after naming a sink, boundary, capacity
+resource, postselection, or excluded reverse channel.
+
+This further demotes H7 as a thermodynamic-arrow claim. A future H7 model must
+be explicitly nonstationary, infinite-state, coarse-grained, or
+resource-explicit, and must quantify the free-energy, boundary, memory, or
+capacity drawdown rather than calling that drawdown finality.

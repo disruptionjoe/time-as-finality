@@ -59,6 +59,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T58](tests/T58-gap-phantom-equivalence.md) | Gap-phantom equivalence audit | C1, D1-Field, T56 | implemented: H0(G) matches phantom incomparability witnesses for the tested T51/T52 well-formed extension cases; local reversal control shows F(U) subset A(U) is required |
 | [T59](tests/T59-finite-to-infinite-boundary-audit.md) | Finite-to-infinite boundary audit | CSP-PO1, PO1, S1, Q1, H7, HEF | implemented: Mobius orientation witness separates transition-aware Z2 parity success from coefficient-blind scalar false global section; continuous-domain parity claims require coefficient and transition data |
 | [T62](tests/T62-noisy-measurement-access-boundary.md) | Noisy measurement access-boundary discriminator | Q1, D1, T2, T22 | implemented: noisy channel-level matrix separates decoherence, Quantum-Darwinism redundancy, and observer-relative finality; Q1 weakened to access-boundary discriminator |
+| [T64](tests/T64-stern-gerlach-access-window.md) | Stern-Gerlach detector access-window discriminator | Q1, D1, T2, T22, T62 | implemented: detector-fragment proxy preserves access-boundary distinction but weakens Q1 through threshold sensitivity; no-signalling guardrail passes |
+| [T19](tests/T19-phenomenal-bridge-complexity-separation.md) | Phenomenal bridge as complexity separation | C1, D1, D2, H6 | implemented: 7-node finite graph shows FIRST-PERSON-FINALITY(A*(R)) = NO, THIRD-PERSON-FINALITY(G) = YES; causal-boundary obstruction, not computational undecidability; T60+T19 gives formal content of H6 |
 
 ## Minimum Compatibility Constraints
 
@@ -124,6 +126,8 @@ python -m models.run_t57
 python -m models.run_t58
 python -m models.run_t59
 python -m models.run_t62
+python -m models.run_t64
+python -m models.t19_phenomenal_bridge_separation
 ```
 
 The suites use only Python's standard library. Evidence records:
@@ -171,6 +175,8 @@ The suites use only Python's standard library. Evidence records:
 - [Gap-Phantom Equivalence v0.1 Results](results/gap-phantom-equivalence-v0.1-results.md)
 - [Finite-to-Infinite Boundary Audit v0.1 Results](results/finite-to-infinite-boundary-audit-v0.1-results.md)
 - [Noisy Measurement Access-Boundary v0.1 Results](results/noisy-measurement-access-boundary-v0.1-results.md)
+- [Stern-Gerlach Access-Window v0.1 Results](results/stern-gerlach-access-window-v0.1-results.md)
+- [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 
 ## How To Add A Test
 

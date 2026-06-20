@@ -428,21 +428,56 @@ The strongest surviving content is narrower: observer-indexed access and
 provenance accounting over already formed records, plus explicit gates for
 detector deployment and weak-measurement reinstatement.
 
+## T102 Result
+
+[T102](../tests/T102-q1a-neighbor-comparison.md) asks the harder external
+question left open by T101: whether the surviving Q1A branch actually
+distinguishes itself from the nearby frameworks the repo already names.
+
+The result is another narrowing step. Q1A does not yet earn paper-facing
+status as a distinct measurement framework or interpretation. Its current
+defensible content is:
+
+```text
+observer-indexed access-boundary and independence accounting over already
+formed records
+```
+
+The best remaining route to distinctness is now explicit. Q1A should be
+upgraded only after one fixed-data witness holds standard quantum-side
+summaries fixed:
+
+- decoherence / pointer-basis evidence;
+- fragment-information summaries;
+- ordinary branch/history availability;
+
+while changing the D1 verdict only through the observer's access cut or the
+independence partition over duplicate records.
+
+Until that gate is cleared, Q1A should be compared as a bookkeeping layer over
+decoherence, Quantum Darwinism, consistent histories, relational quantum
+mechanics, QBism, and many-worlds, not as a separate theory.
+
 ## Contribution Needed
 
-Three concrete needs remain.
+Four concrete needs remain.
 
 First, decide whether Q1 becomes a roadmap umbrella or separate claim files
 Q1A-Q1D. Until that split is made, do not use Q1 as a single supported physics
 claim in paper-facing text.
 
-Second, for detector provenance, obtain one concrete deployment that satisfies T78 and
+Second, for Q1A, build one fixed-data witness family where decoherence,
+accessible raw redundancy, and ordinary branch/history availability stay fixed
+while only the access cut or independence partition changes the D1 verdict. If
+no such witness exists, demote Q1A again.
+
+Third, for detector provenance, obtain one concrete deployment that satisfies T78 and
 publish its raw event-level logs: event loss, signature verification failures,
 replay/spoof tests, perturbation trials, trust-boundary audits, and DAG
 truncation exports. If only dashboard summaries are available, withhold the
 detector branch rather than treating it as empirical support.
 
-Third, for weak measurement, stop treating standard homodyne, uncollapse, or
+Fourth, for weak measurement, stop treating standard homodyne, uncollapse, or
 quantum-jump-reversal platforms as near-ready T12 tests. T94 makes the
 priority consequence explicit: T12 is now demoted below the detector-
 provenance route in the active roadmap. Reinstate it only if a monitored

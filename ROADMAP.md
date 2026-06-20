@@ -66,6 +66,14 @@ T92-T100:
    [Accessible Witness Gap Restriction Theorem](open-problems/accessible-witness-gap-restriction-theorem.md).
    Next blocker: decide whether T19 proposition gaps and T58 order-pair gaps
    share a common typed gap category.
+6. **Completed by T111-T113:** the GU-facing goal queue now has three bounded
+   v0.1 results. T111 shows D1 components are invariant under pure relabeling
+   maps but covariant under access-boundary changes. T112 gives only a
+   conditional finite/proxy `Y_spin` holonomy result under H3 and a declared
+   spin-lift convention. T113 refutes raw `H0(G)` as a classifier but supports
+   a typed gap subobject for phantom incomparability. Stronger "finality
+   torsion", "finality connection", curvature, gravity, or
+   anomaly-cancellation language remains blocked.
 
 Source review:
 [All-Persona Review Of The Last 24 Hours](explorations/all-persona-last-24h-review-2026-06-20.md).
@@ -1056,3 +1064,45 @@ What remains open:
 
 Results written to:
 `results/finality-reflection-property-v0.1-results.md`
+
+## Phase 22: GU-Facing Goal Queue - Classification Before Geometry
+
+The post-roadmap GU specialist recommendation is to let GU tell the repo's
+story as geometry for bounded observers, while preserving TaF's mathematical
+independence:
+
+```text
+observer-local apparent order:  F(U)
+ambient restricted event order: A(U)
+gap / phantom incomparability:  G(U) = A(U) - F(U)
+```
+
+The narrative is not that GU proves TaF or that TaF validates GU. The narrative
+is that GU supplies established language for sections, pullbacks, holonomy,
+connections, affine spaces, and torsion-like gaps, while TaF must prove its own
+finite classification and invariance results.
+
+**Completed v0.1:** T111, T112, and T113 were implemented as finite audits.
+
+1. [T111 D1 Gauge-Invariance Audit](tests/T111-d1-gauge-invariance-audit.md):
+   pure observer/record/holder/causal relabeling preserves all four D1
+   components; access-boundary refinement/coarsening are covariant boundary
+   data, not gauge; hostile controls are undefined.
+2. [T112 Spin-Observerse Holonomy Step 2](tests/T112-spin-observerse-holonomy-step2.md):
+   the finite/proxy audit passes under H3 and a declared positive-generator
+   spin-lift convention, but the signed closed-angle control gives `+1`, so a
+   continuous bipartite Berry/solid-angle theorem remains open.
+3. [T113 Gap Presheaf Classification](tests/T113-gap-presheaf-classification.md):
+   raw `H0(G)` is too broad, but the endpoint-accessible, canonical,
+   well-formed local-incomparability subobject exactly matches phantom
+   witnesses in the tested finite family.
+
+Open-problem anchor:
+[Gap Presheaf Classification](open-problems/gap-presheaf-classification.md).
+
+Promotion rule after v0.1: no curvature, gravity, anomaly-cancellation, or
+physical torsion language should be promoted from analogy. T111 supplies a
+finite invariance gate, not a connection. T112 strengthens the GU holonomy
+dictionary only conditionally under its load-bearing H3 and spin-lift
+convention. T113 supports a typed TaF-native gap classifier, not raw `H0(G)`
+and not a physical torsion tensor.

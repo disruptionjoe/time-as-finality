@@ -29,7 +29,7 @@ This is also the only route identified in the idea sprint by which TaF could mak
 
 ## First Steps
 
-1. **Gauge invariance audit of D1:** Identify which of the four D1 dimensions (accessible support, distinct-holder redundancy, causal branch support, graph reversal count) transform under observer relabeling and which are invariant. Only invariant quantities can appear in physical observables.
+1. **Gauge invariance audit of D1:** Completed by [T111: D1 Gauge-Invariance Audit](../tests/T111-d1-gauge-invariance-audit.md). Pure observer/record/holder/causal relabeling preserves all four D1 dimensions. Access-boundary refinement and coarsening are covariant boundary-data changes, not gauge. Only invariant or correctly covariant quantities can appear in physical observables.
 2. **Connection definition:** For two observers with overlapping causal diamonds, define the parallel transport rule that maps one observer's finality preorder to the other's. Check that it satisfies the connection axioms (linearity, Leibniz rule).
 3. **Curvature computation:** Compute the curvature 2-form of the finality connection for a simple case (two observers in flat Minkowski space with different velocities). Check whether the curvature is zero (consistent with flat spacetime) or nonzero (potentially encoding relative motion / gravitational effects).
 4. **Raychaudhuri analog:** Derive the equation governing how a congruence of finality frontiers evolves — does it focus (positive curvature) or defocus (negative curvature) near high-density record regions?
@@ -42,4 +42,4 @@ This is also the only route identified in the idea sprint by which TaF could mak
 
 ## Contribution Needed
 
-Run the gauge invariance audit on D1. That is the bounded, achievable first step — it does not require solving quantum gravity, but it does constrain which versions of the gauge-theoretic reformulation are self-consistent.
+Use T111 as the entry condition for any connection proposal. The next contribution is to define a parallel-transport rule that carries boundary-indexed D1 profiles without erasing real access-boundary changes. Curvature language remains blocked until that rule exists.

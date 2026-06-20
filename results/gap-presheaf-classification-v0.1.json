@@ -1,0 +1,1979 @@
+{
+  "section_audits": [
+    {
+      "source_pattern": "T51",
+      "case_name": "t51",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Imported T58 well-formed T51/T52 gap-phantom audit."
+    },
+    {
+      "source_pattern": "T51",
+      "case_name": "t51",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Imported T58 well-formed T51/T52 gap-phantom audit."
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Imported T58 well-formed T51/T52 gap-phantom audit."
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ],
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_alpha_locking",
+          "e4_delta_locking"
+        ],
+        [
+          "e2_beta_locking",
+          "e4_delta_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e1_alpha_locking",
+          "e3_gamma_locking"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Imported T58 well-formed T51/T52 gap-phantom audit."
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_P",
+      "ambient_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_A",
+      "ambient_pairs": [
+        [
+          "e_j",
+          "e_k"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_j",
+          "e_k"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_B",
+      "ambient_pairs": [
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_empty",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r2",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r3",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r2",
+      "ambient_pairs": [
+        [
+          "e_j",
+          "e_k"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_j",
+          "e_k"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r3",
+      "ambient_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r2_r3",
+      "ambient_pairs": [
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r2_r3",
+      "ambient_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ],
+        [
+          "e_j",
+          "e_k"
+        ],
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_j",
+          "e_i"
+        ],
+        [
+          "e_j",
+          "e_k"
+        ],
+        [
+          "e_k",
+          "e_i"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_empty",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rc",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rd",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rc",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rd",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rc",
+      "ambient_pairs": [
+        [
+          "e_b",
+          "e_c"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_b",
+          "e_c"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rd",
+      "ambient_pairs": [
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rc_rd",
+      "ambient_pairs": [
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rc",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_c"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_c"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rc_rd",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rc_rd",
+      "ambient_pairs": [
+        [
+          "e_b",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_b",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rc_rd",
+      "ambient_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e_a",
+          "e_c"
+        ],
+        [
+          "e_a",
+          "e_d"
+        ],
+        [
+          "e_b",
+          "e_c"
+        ],
+        [
+          "e_b",
+          "e_d"
+        ],
+        [
+          "e_c",
+          "e_d"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "Finite record-access cover with independently detected phantoms."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "t51_positive_control:t51_colimit_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "T53 completion is unique and compatible."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "t51_positive_control:t51_colimit_completion",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ],
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e2_B_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "phantom_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "typed_gap_pairs": [
+        [
+          "e1_A_locking",
+          "e3_composite_locking"
+        ]
+      ],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "typed_exact_match",
+      "note": "T53 completion is unique and compatible."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "ambiguous_event_identity:identified_two_event_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "ambiguous_event_identity:identified_two_event_completion",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "ambiguous_event_identity:disjoint_four_event_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "a1",
+          "a2"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "a1",
+          "a2"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "ambiguous_event_identity:disjoint_four_event_completion",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "b1",
+          "b2"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "axis_failing_valid_colimit:record_valid_axis_failing_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1_high_causal",
+          "e2_lower_causal_successor"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "e1_high_causal",
+          "e2_lower_causal_successor"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "empty_exact_match",
+      "note": "T53 completion is unique and compatible."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:unrepaired_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:unrepaired_completion",
+      "observer": "Observer_B",
+      "ambient_pairs": [],
+      "apparent_pairs": [],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:hidden_record_repair_completion",
+      "observer": "Observer_A",
+      "ambient_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": false,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:hidden_record_repair_completion",
+      "observer": "Observer_B",
+      "ambient_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "apparent_pairs": [],
+      "gap_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [],
+      "endpoint_accessible": true,
+      "local_is_suborder": true,
+      "canonical_ambient": false,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": false,
+      "typed_gap_equals_phantoms": true,
+      "classification": "noncanonical_ambient_diagnostic",
+      "note": "T53 completion is compatible but not a canonical ambient order."
+    },
+    {
+      "source_pattern": "T58_CONTROL",
+      "case_name": "local_reversal",
+      "observer": "local_reversal",
+      "ambient_pairs": [
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "gap_pairs": [
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "endpoint_accessible": true,
+      "local_is_suborder": false,
+      "canonical_ambient": true,
+      "local_incomparability_only": false,
+      "raw_gap_equals_phantoms": false,
+      "typed_gap_equals_phantoms": true,
+      "classification": "invalid_local_order_control",
+      "note": "Hostile local reversal: a conflicting local order is not a phantom gap."
+    },
+    {
+      "source_pattern": "T113_CONTROL",
+      "case_name": "malformed_extra_local_order",
+      "observer": "malformed_extra_local_order",
+      "ambient_pairs": [
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "apparent_pairs": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "gap_pairs": [],
+      "phantom_pairs": [],
+      "typed_gap_pairs": [],
+      "extra_raw_gap_pairs": [],
+      "extra_typed_gap_pairs": [],
+      "missing_typed_gap_pairs": [],
+      "spurious_apparent_pairs": [
+        [
+          "b",
+          "a"
+        ]
+      ],
+      "endpoint_accessible": true,
+      "local_is_suborder": false,
+      "canonical_ambient": true,
+      "local_incomparability_only": true,
+      "raw_gap_equals_phantoms": true,
+      "typed_gap_equals_phantoms": true,
+      "classification": "invalid_local_order_control",
+      "note": "Malformed local section has F(U) not contained in A(U)."
+    }
+  ],
+  "t53_diagnostics": [
+    {
+      "case_name": "t51_positive_control",
+      "verdict": "canonical_axis_reconstructable",
+      "compatible_completion_names": [
+        "t51_colimit_completion"
+      ],
+      "unique_completion": true,
+      "gap_bearing_completion_names": [
+        "t51_colimit_completion"
+      ],
+      "classification_role": "canonical_control",
+      "note": "The compatible completion is unique; gap sections may be typed."
+    },
+    {
+      "case_name": "ambiguous_event_identity",
+      "verdict": "underdetermined_noncanonical",
+      "compatible_completion_names": [
+        "identified_two_event_completion",
+        "disjoint_four_event_completion"
+      ],
+      "unique_completion": false,
+      "gap_bearing_completion_names": [],
+      "classification_role": "noncanonical_blocks_classification",
+      "note": "Multiple compatible completions remain; raw gaps are completion-relative diagnostics."
+    },
+    {
+      "case_name": "axis_failing_valid_colimit",
+      "verdict": "valid_partial_order_axis_failure",
+      "compatible_completion_names": [
+        "record_valid_axis_failing_completion"
+      ],
+      "unique_completion": true,
+      "gap_bearing_completion_names": [],
+      "classification_role": "canonical_control",
+      "note": "The compatible completion is unique; gap sections may be typed."
+    },
+    {
+      "case_name": "hidden_record_repair",
+      "verdict": "repairable_by_hidden_record",
+      "compatible_completion_names": [
+        "unrepaired_completion",
+        "hidden_record_repair_completion"
+      ],
+      "unique_completion": false,
+      "gap_bearing_completion_names": [
+        "hidden_record_repair_completion"
+      ],
+      "classification_role": "noncanonical_blocks_classification",
+      "note": "Multiple compatible completions remain; raw gaps are completion-relative diagnostics."
+    },
+    {
+      "case_name": "nondefinable_overlap_boundary",
+      "verdict": "nondefinable_projection",
+      "compatible_completion_names": [],
+      "unique_completion": false,
+      "gap_bearing_completion_names": [],
+      "classification_role": "diagnostic_only",
+      "note": "No compatible ambient completion exists, so A(U) is not defined canonically."
+    }
+  ],
+  "frp_gap_checks": [
+    {
+      "cover_name": "hidden_intermediary_record_lattice",
+      "comparable_patch_pairs": 19,
+      "holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_r1_r2_r3",
+          "smaller_patch": "U_r1_r3",
+          "pair": [
+            "e_j",
+            "e_i"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        }
+      ]
+    },
+    {
+      "cover_name": "branching_dependency_record_lattice",
+      "comparable_patch_pairs": 65,
+      "holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_ra_rc_rd",
+          "smaller_patch": "U_ra_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_rb_rc_rd",
+          "smaller_patch": "U_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rb_rd",
+          "pair": [
+            "e_a",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        },
+        {
+          "larger_patch": "U_ra_rb_rc_rd",
+          "smaller_patch": "U_ra_rb_rd",
+          "pair": [
+            "e_b",
+            "e_d"
+          ],
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch. This is expected: restriction closure is not a lifting or surjectivity claim."
+        }
+      ]
+    }
+  ],
+  "raw_h0_gap_sections": [
+    {
+      "source_pattern": "T51",
+      "case_name": "t51",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_A",
+      "pair": "e1_alpha_locking->e4_delta_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_B",
+      "pair": "e1_alpha_locking->e3_gamma_locking"
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:hidden_record_repair_completion",
+      "observer": "Observer_A",
+      "pair": "e1->e2"
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "hidden_record_repair:hidden_record_repair_completion",
+      "observer": "Observer_B",
+      "pair": "e1->e2"
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "t51_positive_control:t51_colimit_completion",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_P",
+      "pair": "e_j->e_i"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r3",
+      "pair": "e_j->e_i"
+    },
+    {
+      "source_pattern": "T58_CONTROL",
+      "case_name": "local_reversal",
+      "observer": "local_reversal",
+      "pair": "a->b"
+    }
+  ],
+  "typed_gap_sections": [
+    {
+      "source_pattern": "T51",
+      "case_name": "t51",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_A",
+      "pair": "e1_alpha_locking->e4_delta_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_B",
+      "pair": "e1_alpha_locking->e3_gamma_locking"
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "t51_positive_control:t51_colimit_completion",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_P",
+      "pair": "e_j->e_i"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r3",
+      "pair": "e_j->e_i"
+    }
+  ],
+  "phantom_sections": [
+    {
+      "source_pattern": "T51",
+      "case_name": "t51",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_A",
+      "pair": "e1_alpha_locking->e4_delta_locking"
+    },
+    {
+      "source_pattern": "T52",
+      "case_name": "t52",
+      "observer": "Observer_B",
+      "pair": "e1_alpha_locking->e3_gamma_locking"
+    },
+    {
+      "source_pattern": "T53",
+      "case_name": "t51_positive_control:t51_colimit_completion",
+      "observer": "Observer_B",
+      "pair": "e1_A_locking->e3_composite_locking"
+    },
+    {
+      "source_pattern": "T56",
+      "case_name": "hidden_intermediary",
+      "observer": "U_P",
+      "pair": "e_j->e_i"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_ra_rd",
+      "pair": "e_a->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "branching_dependency_record_lattice",
+      "observer": "U_rb_rd",
+      "pair": "e_b->e_d"
+    },
+    {
+      "source_pattern": "T57",
+      "case_name": "hidden_intermediary_record_lattice",
+      "observer": "U_r1_r3",
+      "pair": "e_j->e_i"
+    }
+  ],
+  "raw_h0_equals_phantoms": false,
+  "typed_gap_sections_equal_phantoms": true,
+  "malformed_controls_rejected": true,
+  "frp_restriction_closure_preserved": true,
+  "t53_noncanonical_blocks_raw_classification": true,
+  "best_supported": "A typed subobject of H0(G), not raw H0(G), classifies phantom incomparability in the tested finite witness family.",
+  "finding": "T113 supports a conservative classification theorem for the finite TaF witnesses: after requiring endpoint access, a canonical ambient completion, F(U) subset A(U), and local incomparability, every typed gap section is an independently computed phantom witness and every phantom witness appears as a typed gap section. Raw H0(G) remains too broad because noncanonical T53 repairs and malformed local reversals create diagnostic gaps.",
+  "guardrails": [
+    "This does not validate Geometric Unity or any physical torsion tensor.",
+    "This does not prove that F sheafifies to A.",
+    "This does not derive finality-arrow direction.",
+    "T53-style noncanonical completions remain completion-relative diagnostics."
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H_RAW_H0_CLASSIFIES",
+      "claim": "Raw H0(G), taken as all computed gap sections, classifies phantom incomparability.",
+      "status": "refuted",
+      "evidence": "raw_gap_sections=13, phantom_sections=10; extra_raw=3, missing=0"
+    },
+    {
+      "id": "H_TYPED_SUBOBJECT_CLASSIFIES",
+      "claim": "The endpoint-accessible, canonical, well-formed local-incomparability subobject of H0(G) classifies phantom witnesses in the finite family.",
+      "status": "supported",
+      "evidence": "typed_gap_sections=10, phantom_sections=10; extra_typed=0, missing=0"
+    },
+    {
+      "id": "H_FRP_CLOSURE_PRESERVED",
+      "claim": "T57 FRP gap restriction closure remains intact for the T113 covers.",
+      "status": "supported",
+      "evidence": "hidden_intermediary_record_lattice: holds=True; branching_dependency_record_lattice: holds=True"
+    },
+    {
+      "id": "H_MALFORMED_CONTROLS_REJECTED",
+      "claim": "Malformed/local-reversal controls are rejected before gap sections are called phantoms.",
+      "status": "supported",
+      "evidence": "local_reversal: invalid_local_order_control; malformed_extra_local_order: invalid_local_order_control"
+    },
+    {
+      "id": "H_T53_BOUNDARY",
+      "claim": "T53 underdetermined completions block raw classification and remain diagnostic only.",
+      "status": "supported",
+      "evidence": "t51_positive_control: canonical_control, gaps=['t51_colimit_completion']; ambiguous_event_identity: noncanonical_blocks_classification, gaps=[]; axis_failing_valid_colimit: canonical_control, gaps=[]; hidden_record_repair: noncanonical_blocks_classification, gaps=['hidden_record_repair_completion']; nondefinable_overlap_boundary: diagnostic_only, gaps=[]"
+    }
+  ]
+}

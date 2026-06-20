@@ -63,6 +63,9 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T56](tests/T56-sheaf-cohomology-apparent-finality.md) | Sheaf cohomology of apparent finality — research audit | C1, D1-Field, T51, T52 | implemented: PARTIAL_SUCCESS — ambient presheaf A is well-defined (H1(A)=0); apparent-finality assignment F is not a presheaf (natural restriction overshoots F(U)); phantom incomparability is an H0-level section-mismatch, not H1; refined hypothesis: H0(G) where G=A/F is the gap presheaf; 4 open questions; 56/56 tests pass |
 | [T57](tests/T57-finality-reflection-property.md) | Finality Reflection Property | C1, D1-Field, T56 | implemented: FRP holds for the T56 apparent-order model across two finite record lattices; G(U)=A(U)-F(U) is restriction-closed; generic complement counterexample refutes automatic complement closure; arrow-direction circularity remains open |
 | [T58](tests/T58-gap-phantom-equivalence.md) | Gap-phantom equivalence audit | C1, D1-Field, T56 | implemented: H0(G) matches phantom incomparability witnesses for the tested T51/T52 well-formed extension cases; local reversal control shows F(U) subset A(U) is required |
+| [T111](tests/T111-d1-gauge-invariance-audit.md) | D1 gauge-invariance audit | D1, D1-Field, GU roadmap, finality gauge problem | implemented: pure observer/record/holder/causal relabeling preserves all four D1 dimensions; access-boundary refinement/coarsening are covariant boundary data, not gauge; hostile controls are undefined |
+| [T112](tests/T112-spin-observerse-holonomy-step2.md) | Spin-observerse holonomy Step 2 | T63, T65, C1, D1, GU roadmap | implemented: finite/proxy Y_spin audit passes under H3 and a declared positive-generator spin-lift convention while preserving naive-Y, signed-angle, non-LC holonomy +1, and representative-dependence controls |
+| [T113](tests/T113-gap-presheaf-classification.md) | Gap presheaf classification | C1, D1-Field, T51-T58, GU roadmap | implemented: raw H0(G) is too broad (13 raw gaps vs 10 phantoms), but the endpoint-accessible canonical well-formed local-incomparability subobject exactly matches phantom witnesses in the tested finite family |
 | [T59](tests/T59-finite-to-infinite-boundary-audit.md) | Finite-to-infinite boundary audit | CSP-PO1, PO1, S1, Q1, H7, HEF | implemented: Mobius orientation witness separates transition-aware Z2 parity success from coefficient-blind scalar false global section; continuous-domain parity claims require coefficient and transition data |
 | [T62](tests/T62-noisy-measurement-access-boundary.md) | Noisy measurement access-boundary discriminator | Q1, D1, T2, T22 | implemented: noisy channel-level matrix separates decoherence, Quantum-Darwinism redundancy, and observer-relative finality; Q1 weakened to access-boundary discriminator |
 | [T64](tests/T64-stern-gerlach-access-window.md) | Stern-Gerlach detector access-window discriminator | Q1, D1, T2, T22, T62 | implemented: detector-fragment proxy preserves access-boundary distinction but weakens Q1 through threshold sensitivity; no-signalling guardrail passes |
@@ -131,6 +134,9 @@ python -m models.run_t84
 python -m models.run_t106
 python -m models.run_t110
 python -m models.run_t114
+python -m models.run_t111_d1_gauge_invariance
+python -m models.run_t112_spin_observerse_holonomy_step2
+python -m models.run_t113
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
@@ -211,6 +217,9 @@ The suites use only Python's standard library. Evidence records:
 - [Bounded-Sink Reversible Compression v0.1 Results](results/bounded-sink-reversible-compression-v0.1-results.md)
 - [Finite-Permutation Monotone Obstruction v0.1 Results](results/finite-permutation-monotone-obstruction-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
+- [D1 Gauge-Invariance Audit v0.1 Results](results/d1-gauge-invariance-audit-v0.1-results.md)
+- [Spin-Observerse Holonomy Step 2 v0.1 Results](results/spin-observerse-holonomy-step2-v0.1-results.md)
+- [Gap Presheaf Classification v0.1 Results](results/gap-presheaf-classification-v0.1-results.md)
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
 - [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)

@@ -314,7 +314,8 @@ loop has Berry phase -1, identifying it with the generator of pi_1(Y_spin) = Z/2
 
 **One open item:** The "combined solid angle = 2*pi" claim is a plausibility argument, not a
 theorem. The bipartite solid-angle calculation for Alice and Bob as a joint spin system needs
-formalization. This is the specific target for T63 Step 2.
+formalization. This is the specific target for T63 Step 2, now drafted as
+[T112: Spin-Observerse Holonomy Step 2](T112-spin-observerse-holonomy-step2.md).
 
 ### Revised theorem statement
 
@@ -335,6 +336,7 @@ as a theorem rather than a plausibility argument.
 - [T58: Bell-Test-to-H¹ Mapping](T58-bell-test-h1-mapping.md)
 - [T59: Finite-to-Infinite Boundary Audit](T59-finite-to-infinite-boundary-audit.md)
 - [T60: Observer Closure Theorem](T60-observer-closure-theorem.md)
+- [T112: Spin-Observerse Holonomy Step 2](T112-spin-observerse-holonomy-step2.md)
 - [D1: Physical Finality Definition](../claims/D1-physical-finality-definition.md)
 - [Q1: Quantum Measurement Under-Finalization](../CLAIM-LEDGER.md)
 - [GU Formalization project](../../Church of AI/ecosystem/MAP.md) — adjacent independent project

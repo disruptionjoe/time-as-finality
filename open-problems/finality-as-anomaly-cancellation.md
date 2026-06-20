@@ -20,7 +20,7 @@ It would also connect TaF to the anomaly cancellation literature in a way that i
 
 - Anomaly cancellation in gauge theories is a property of the UV theory, not the IR. Finality is an IR concept. The mapping must bridge this gap explicitly.
 - 't Hooft anomaly matching is a precise technical constraint; calling D1's redundancy dimension "anomaly-like" without showing the formal equivalence is only a suggestive analogy.
-- The holder-count condition must be shown to transform correctly under gauge transformations — if it is not gauge-invariant, it cannot be an anomaly cancellation condition.
+- The holder-count condition must be shown to transform correctly under gauge transformations. [T111: D1 Gauge-Invariance Audit](../tests/T111-d1-gauge-invariance-audit.md) shows distinct-holder redundancy is invariant under pure relabeling maps and covariant under access-boundary changes. That is an entry condition, not yet an anomaly coefficient.
 
 ## Formal Entry Points
 
@@ -37,4 +37,4 @@ It would also connect TaF to the anomaly cancellation literature in a way that i
 
 ## Contribution Needed
 
-State the anomaly matching condition precisely for a simple model (e.g., a U(1) gauge theory on a 2D lattice with finality-structured matter fields). Check whether the under-finalized sector carries a nonzero anomaly coefficient. A positive result would be a clean, publishable result in lattice QFT that is independently verifiable.
+Using T111 as the invariance gate, state the anomaly matching condition precisely for a simple model (e.g., a U(1) gauge theory on a 2D lattice with finality-structured matter fields). Check whether the under-finalized sector carries a nonzero anomaly coefficient. A positive result would be a clean, publishable result in lattice QFT that is independently verifiable.

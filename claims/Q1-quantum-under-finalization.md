@@ -10,7 +10,22 @@ Conjecture.
 
 ## Status
 
-Partially supported.
+Roadmap umbrella. Q1 should not be used as a single paper-facing
+`partially_supported` physics claim.
+
+## Child Claims
+
+- [Q1A: Access-Boundary Record Accounting](Q1A-access-boundary-record-accounting.md)
+  is bookkeeping-only after T104 absorbed the T103 witness into
+  provenance-aware Quantum Darwinism.
+- [Q1B: Detector Provenance Admissibility](Q1B-detector-provenance-admissibility.md)
+  is externally blocked until a real pre-registered event-log packet passes the
+  raw-log, dry-run, and authority-domain gates.
+- [Q1C: Weak-Measurement Discriminator Gate](Q1C-weak-measurement-discriminator-gate.md)
+  is dormant until a concrete platform supplies a verdict-changing independent
+  axis.
+- [Q1D: Contextuality And No-Signalling Guardrail](Q1D-contextuality-no-signalling-guardrail.md)
+  is a constraint on admissible language, not a prediction.
 
 ## What This Does Not Claim
 
@@ -512,9 +527,8 @@ formed records, not a distinct measurement theory.
 
 Four concrete needs remain.
 
-First, decide whether Q1 becomes a roadmap umbrella or separate claim files
-Q1A-Q1D. Until that split is made, do not use Q1 as a single supported physics
-claim in paper-facing text.
+First, Q1 is now a roadmap umbrella with separate Q1A-Q1D claim files. Do not
+use Q1 as a single supported physics claim in paper-facing text.
 
 Second, for Q1A, derive a future fixed-data witness where D1 still diverges
 after the provenance-aware fragment partition is shared. T104 shows that the

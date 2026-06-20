@@ -64,9 +64,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P03 - Differential Geometer
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T11:39:19-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-113919-p03-differential-geometer-quarantine-gate.md
 - goal: Audit every geometric or GU-adjacent term in the current core documents
   and require an explicit base, fiber, section, connection, curvature, or limiting
   map before allowing the language into theorem-facing text.

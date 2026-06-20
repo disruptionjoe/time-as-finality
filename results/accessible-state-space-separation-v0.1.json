@@ -1,0 +1,878 @@
+{
+  "audits": [
+    {
+      "domain": "version_control",
+      "system_a": {
+        "system_id": "version_control_a_high_asp",
+        "description": "Same endpoint repo with retained history and merge witnesses.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "branch_history",
+            "merge_base",
+            "tree"
+          ],
+          "rights": [
+            "bisect",
+            "merge",
+            "read",
+            "revert",
+            "write"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 2,
+          "certifications": [
+            "signed_history"
+          ]
+        },
+        "accessible_tasks": [
+          "bisect",
+          "build",
+          "merge",
+          "revert"
+        ]
+      },
+      "system_b": {
+        "system_id": "version_control_b_low_asp",
+        "description": "Same endpoint repo as squashed snapshot without future merge witnesses.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "tree"
+          ],
+          "rights": [
+            "read",
+            "write"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 0,
+          "certifications": [
+            "snapshot_hash"
+          ]
+        },
+        "accessible_tasks": [
+          "build"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "bisect",
+        "build",
+        "merge",
+        "revert"
+      ],
+      "asp_b": [
+        "build"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "partial",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from coarse metrics; absorbed by history-aware reachability/provenance."
+    },
+    {
+      "domain": "provenance",
+      "system_a": {
+        "system_id": "provenance_a_high_asp",
+        "description": "Same data with source and custody witnesses.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "custody_log",
+            "data",
+            "source_witness"
+          ],
+          "rights": [
+            "attribute",
+            "certify",
+            "read",
+            "repair"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 1,
+          "certifications": [
+            "signature"
+          ]
+        },
+        "accessible_tasks": [
+          "attribute",
+          "certify",
+          "repair_lineage",
+          "use"
+        ]
+      },
+      "system_b": {
+        "system_id": "provenance_b_low_asp",
+        "description": "Same data content without witness availability.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "data"
+          ],
+          "rights": [
+            "read"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 0,
+          "certifications": []
+        },
+        "accessible_tasks": [
+          "use"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "attribute",
+        "certify",
+        "repair_lineage",
+        "use"
+      ],
+      "asp_b": [
+        "use"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "partial",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from data equality; absorbed by provenance and side-information formalisms."
+    },
+    {
+      "domain": "governance",
+      "system_a": {
+        "system_id": "governance_a_high_asp",
+        "description": "Same archive with public authority and appeal path.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "appeal_log",
+            "archive",
+            "audit_log",
+            "rulebook"
+          ],
+          "rights": [
+            "appeal",
+            "challenge",
+            "read",
+            "repair"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 1,
+          "certifications": [
+            "quorum"
+          ]
+        },
+        "accessible_tasks": [
+          "appeal",
+          "challenge",
+          "read_archive",
+          "repair_rule"
+        ]
+      },
+      "system_b": {
+        "system_id": "governance_b_low_asp",
+        "description": "Same archive under single-custodian authority.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "archive",
+            "rulebook"
+          ],
+          "rights": [
+            "read"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 0,
+          "certifications": [
+            "custodian"
+          ]
+        },
+        "accessible_tasks": [
+          "read_archive"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "appeal",
+        "challenge",
+        "read_archive",
+        "repair_rule"
+      ],
+      "asp_b": [
+        "read_archive"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "captures_if_enriched",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from archive equality; absorbed by authority-aware mechanism/commons models."
+    },
+    {
+      "domain": "commons",
+      "system_a": {
+        "system_id": "commons_a_high_asp",
+        "description": "Same resource with audit, sanction, and repair rights.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "audit_log",
+            "repair_log",
+            "resource_state"
+          ],
+          "rights": [
+            "audit",
+            "repair",
+            "sanction",
+            "use"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 1,
+          "certifications": [
+            "public_rule"
+          ]
+        },
+        "accessible_tasks": [
+          "audit",
+          "consume",
+          "repair",
+          "sanction"
+        ]
+      },
+      "system_b": {
+        "system_id": "commons_b_low_asp",
+        "description": "Same resource without public maintenance rights.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "resource_state"
+          ],
+          "rights": [
+            "use"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 0,
+          "certifications": []
+        },
+        "accessible_tasks": [
+          "consume"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "audit",
+        "consume",
+        "repair",
+        "sanction"
+      ],
+      "asp_b": [
+        "consume"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "captures_if_enriched",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from resource equality; absorbed by commons governance if maintenance rights are state."
+    },
+    {
+      "domain": "consensus",
+      "system_a": {
+        "system_id": "consensus_a_high_asp",
+        "description": "Same committed state with future challenge evidence.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "checkpoint",
+            "fraud_proof",
+            "slashing_log",
+            "validator_signatures"
+          ],
+          "rights": [
+            "accept",
+            "challenge",
+            "rollback",
+            "slash"
+          ],
+          "maintenance_budget": 3,
+          "reconstruction_paths": 1,
+          "certifications": [
+            "challenge_window"
+          ]
+        },
+        "accessible_tasks": [
+          "accept",
+          "challenge",
+          "rollback",
+          "slash"
+        ]
+      },
+      "system_b": {
+        "system_id": "consensus_b_low_asp",
+        "description": "Same committed state after challenge witnesses expire.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "checkpoint"
+          ],
+          "rights": [
+            "accept"
+          ],
+          "maintenance_budget": 3,
+          "reconstruction_paths": 0,
+          "certifications": [
+            "expired_window"
+          ]
+        },
+        "accessible_tasks": [
+          "accept"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "accept",
+        "challenge",
+        "rollback",
+        "slash"
+      ],
+      "asp_b": [
+        "accept"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "captures_if_enriched",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from committed-state equality; absorbed by challenge-window and validator-state models."
+    },
+    {
+      "domain": "record_system",
+      "system_a": {
+        "system_id": "record_system_a_high_asp",
+        "description": "Same stored records with schema and audit reconstruction witnesses.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "audit_log",
+            "checksum",
+            "index",
+            "record",
+            "schema"
+          ],
+          "rights": [
+            "certify",
+            "read",
+            "reconstruct",
+            "repair"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 1,
+          "certifications": [
+            "schema_version"
+          ]
+        },
+        "accessible_tasks": [
+          "certify",
+          "read",
+          "reconstruct",
+          "repair"
+        ]
+      },
+      "system_b": {
+        "system_id": "record_system_b_low_asp",
+        "description": "Same stored records without schema/index reconstruction witnesses.",
+        "metrics": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "persistence_horizon": 10,
+          "coarse_reachable_count": 4,
+          "coarse_control_rank": 3
+        },
+        "profile": {
+          "witnesses": [
+            "checksum",
+            "record"
+          ],
+          "rights": [
+            "read",
+            "repair"
+          ],
+          "maintenance_budget": 2,
+          "reconstruction_paths": 0,
+          "certifications": []
+        },
+        "accessible_tasks": [
+          "read"
+        ]
+      },
+      "entropy_comparison": true,
+      "information_comparison": true,
+      "finality_comparison": true,
+      "viability_comparison": true,
+      "persistence_comparison": true,
+      "coarse_reachability_comparison": true,
+      "asp_a": [
+        "certify",
+        "read",
+        "reconstruct",
+        "repair"
+      ],
+      "asp_b": [
+        "read"
+      ],
+      "asp_comparison": true,
+      "lost_structure_chain_present": true,
+      "prior_art": [
+        {
+          "target": "viability kernels",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse viability is matched; viability theory absorbs ASP if the viability set is future-task availability."
+        },
+        {
+          "target": "reachable-state analysis",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse reachable count is matched; enriched reachable sets over rights and witnesses are essentially ASP."
+        },
+        {
+          "target": "control-theoretic controllability",
+          "capture": "captures_if_enriched",
+          "explanation": "Coarse control rank is matched; controllability over certified operation states captures the split."
+        },
+        {
+          "target": "active inference",
+          "capture": "captures_if_enriched",
+          "explanation": "Policies over future usable states absorb ASP when witnesses and rights are part of the generative state."
+        },
+        {
+          "target": "free-energy approaches",
+          "capture": "partial",
+          "explanation": "Free-energy style maintenance can absorb expected opportunity preservation, but coarse free-energy does not encode legal/admissible rights."
+        },
+        {
+          "target": "opportunity-set economics",
+          "capture": "captures_directly",
+          "explanation": "ASP is very close to a feasible opportunity set under constraints and rights."
+        },
+        {
+          "target": "ecological resilience",
+          "capture": "partial",
+          "explanation": "Resilience captures persistence of function if function is defined as future task availability."
+        },
+        {
+          "target": "adaptive-cycle models",
+          "capture": "partial",
+          "explanation": "Adaptive-cycle language can describe changing opportunity sets, but does not by itself encode witness admissibility."
+        },
+        {
+          "target": "commons governance",
+          "capture": "partial",
+          "explanation": "Monitoring, sanctioning, repair, authority, and challenge rights absorb shared-resource ASP cases."
+        },
+        {
+          "target": "niche construction",
+          "capture": "partial",
+          "explanation": "Niche construction captures modified future option spaces for lineages, but not all record-witness cases."
+        },
+        {
+          "target": "mechanism design",
+          "capture": "captures_if_enriched",
+          "explanation": "Rights, incentives, challenge rules, and admissible moves are mechanism-design variables."
+        }
+      ],
+      "separation_verdict": "Separates from stored-record equality; absorbed by schema/provenance/reconstruction-debt state."
+    }
+  ],
+  "strongest_separation_case": "Version control is the strongest finite separation: same endpoint repository state, entropy, information, finality, viability, persistence, and coarse reachable count, but branch history and merge-base witnesses change the accessible future task set from {build} to {build, merge, revert, bisect}.",
+  "strongest_absorption_case": "Reachable-state analysis or opportunity-set economics absorbs ASP once the state includes witness availability, rights, certifications, maintenance budgets, and reconstruction paths. Under that enriched state, ASP is the feasible action/opportunity set, not a new primitive.",
+  "recommended_disposition": "Preserve and formalize only as an observer/task-indexed set-valued audit object. Do not promote ASP as independent physics. Reject any scalar or global 'future opportunity' reading.",
+  "current_strongest_claim": "ASP separates finite systems that coarse entropy, information, finality, viability, persistence, and coarse reachability classify identically, but only by adding task requirements, witnesses, rights, certifications, and reconstruction paths.",
+  "falsification_result": "ASP is not killed by coarse metrics, but it is mostly absorbed by enriched reachability, controllability, opportunity-set economics, commons governance, provenance, and reconstruction-debt formalisms.",
+  "missing_object": "A prespecified observer-task admissibility structure: task universe, witness requirements, operation rights, certification tokens, maintenance budget, reconstruction paths, horizon, and observer access. Without these, ASP is post hoc.",
+  "claim_ledger_update": "No core claim upgrade. T117 preserves ASP only as a set-valued observer/task-indexed audit object. It separates from coarse entropy/information/finality/viability metrics, but collapses into enriched reachable-state/opportunity/provenance analysis when those frameworks include witnesses and operation rights."
+}

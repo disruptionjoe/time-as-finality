@@ -26,6 +26,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T116](tests/T116-open-markov-record-entropy.md) | Open Markov record-entropy comparison | H7, T110 | implemented: open stochastic record arrows are absorbed by path irreversibility, exported history, or fresh blank capacity in the tested fixtures |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
+| [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
@@ -138,6 +139,7 @@ python -m models.run_t110
 python -m models.run_t116
 python -m models.run_t114
 python -m models.run_t115
+python -m models.run_t117
 python -m models.run_t111_d1_gauge_invariance
 python -m models.run_t112_spin_observerse_holonomy_step2
 python -m models.run_t113
@@ -223,6 +225,7 @@ The suites use only Python's standard library. Evidence records:
 - [Open Markov Record-Entropy Comparison v0.1 Results](results/open-markov-record-entropy-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
+- [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)
 - [D1 Gauge-Invariance Audit v0.1 Results](results/d1-gauge-invariance-audit-v0.1-results.md)
 - [Spin-Observerse Holonomy Step 2 v0.1 Results](results/spin-observerse-holonomy-step2-v0.1-results.md)
 - [Gap Presheaf Classification v0.1 Results](results/gap-presheaf-classification-v0.1-results.md)

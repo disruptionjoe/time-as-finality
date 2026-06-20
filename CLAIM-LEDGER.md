@@ -1214,3 +1214,26 @@ forward direction. The converse is an open conjecture.
   standard stochastic thermodynamics, history export, free-energy drawdown, or
   capacity accounting.
 - Artifact: [T116 technical report](TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md).
+
+### 2026-06-20 - Accessible State Space Separation Audit (T117)
+
+- No core claim is upgraded. T117 is a kill-test for Accessible State Space
+  (ASP), not a promotion.
+- Finite examples in version control, provenance, governance, commons,
+  consensus, and record systems match on entropy bits, information bits,
+  finality score, viability score, persistence horizon, coarse reachable
+  count, and coarse control rank while splitting on computed ASP.
+- Strongest separation: same endpoint repository state, but retained
+  branch-history/merge-base/signed-history witnesses change ASP from `{build}`
+  to `{build, merge, revert, bisect}`.
+- Strongest absorption: enriched reachable-state analysis, opportunity-set
+  economics, provenance, commons governance, and mechanism design absorb ASP
+  once witnesses, rights, certifications, maintenance budgets, and
+  reconstruction paths are included in the state.
+- Claim impact: preserve ASP only as a set-valued observer/task-indexed audit
+  object. Reject scalar or global "future opportunity" readings, and do not
+  treat ASP as independent physics.
+- Open blocker: find a non-engineered physical example where ASP separates from
+  enriched reachability, controllability, opportunity-set, active-inference,
+  free-energy, provenance, and mechanism-design formalisms.
+- Artifact: [T117 technical report](TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md).

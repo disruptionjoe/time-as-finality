@@ -164,6 +164,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - matched entropy/control/stability/viability examples split on future
     operation rights, but are largely absorbed by provenance and reconstruction
     debt once those are modeled.
+- [TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md](TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md)
+  - ASP separates finite matched coarse-metric cases, but collapses into
+    enriched reachable-state, opportunity-set, and provenance analysis.
 - [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md)
   - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
     + CompressionRecord + EmergenceRecord) is the smallest justified formalism;

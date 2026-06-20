@@ -79,6 +79,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - compression of T66-T81 into a null criterion: current detector-side Q1 is
     an admissibility filter over raw-log provenance unless it beats passive,
     dashboard, and post hoc alternatives.
+- [TECHNICAL-REPORT-q1-branch-adjudication-v0.1.md](TECHNICAL-REPORT-q1-branch-adjudication-v0.1.md)
+  - Q1 adjudication showing the quantum branch should split before paper
+    language into access-boundary accounting, detector admissibility,
+    weak-measurement reinstatement gate, and contextuality guardrail.
 - [TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md](TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md)
   - ambiguous-tag hostile-family audit showing perturbation-only and
     signed-DAG-only raw-log fixtures can rescue the partition internally, but

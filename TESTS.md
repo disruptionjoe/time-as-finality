@@ -82,6 +82,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T95](tests/T95-detector-stack-export-map.md) | Detector stack export map | Q1, D1, T75, T87, T94 | implemented: HydraHarp/White Rabbit native timing and signed archive alone fail T87; only an augmented pre-registered export map is admissible, and only as a plan until real event rows exist |
 | [T96](tests/T96-detector-feasibility-checklist.md) | Detector feasibility checklist | Q1, D1, T87, T95 | implemented: surviving detector route is a governance-heavy dry-run program carried by control manifests, ambiguity challenges, perturbation trials, trust audits, and demotion rules rather than native timing |
 | [T97](tests/T97-detector-dry-run-packet-skeleton.md) | Detector dry-run packet skeleton | Q1, D1, T87, T95, T96 | implemented: schema-complete pre-data packet scaffold is executable but not evidence; placeholder scoring, schema drift, post hoc packet assembly, and missing hostile controls withhold Q1 |
+| [T100](tests/T100-detector-authority-domain-bound.md) | Detector authority-domain bound | Q1, D1, T97, T98 | implemented: current detector packet requires at least four non-conflicting authority domains; no two- or three-domain profile survives |
 | [T90](tests/T90-weak-measurement-reparameterization-obstruction.md) | Weak-measurement reparameterization obstruction | Q1, T12, T83, T88 | implemented: weak-measurement route is non-null only if an independent pre-registered axis changes the TaF verdict while standard monitored statistics are held fixed |
 | [T91](tests/T91-weak-measurement-platform-audit.md) | Weak-measurement platform audit | Q1, T12, T90 | implemented: superconducting homodyne, uncollapse, and quantum-jump reversal platforms fail the independent-axis gate; duplicated-record provenance or pre-metered undo cost remains blocked |
 | [T93](tests/T93-weak-measurement-undo-cost-independence.md) | Weak-measurement undo-cost independence | Q1, T12, T90, T91 | implemented: undo-cost route is non-null only for a calibrated independent meter that changes the TaF verdict with standard monitored statistics fixed |
@@ -91,6 +92,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented finite-fixture result: failure-type monotonicity holds only under the declared coefficient/support semantics and allowed loss morphisms; external review blocks any general Cech/sheaf theorem reading; 7/7 tests pass |
 | [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified as powerset-union monoid-valued annotation; path-dependence biconditional established on fixed-endpoint fixtures; quotient/prior-art gate still open; 17/17 tests pass |
 | [T99](tests/T99-losskernel-quotient-separation.md) | LossKernel quotient separation | TF1, T34, T37, T73 | implemented: label-only LossKernel fails same-endpoint/same-map/same-behavior/same-label quotient survival; witness-carrying LossKernel separates only with source-anchored obligations |
+| [T101](tests/T101-q1-branch-adjudication.md) | Q1 branch adjudication | Q1, D1, T2, T21, T22, T62, T66-T100 | implemented: Q1 should split before paper language; no current branch earns new measurement dynamics or empirical quantum support |
 
 ## Minimum Compatibility Constraints
 
@@ -175,9 +177,11 @@ python -m models.run_t87
 python -m models.run_t95
 python -m models.run_t96
 python -m models.run_t97
+python -m models.run_t100
 python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
+python -m models.run_t101
 python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
@@ -248,6 +252,7 @@ The suites use only Python's standard library. Evidence records:
 - [Detector Stack Export Map v0.1 Results](results/detector-stack-export-map-v0.1-results.md)
 - [Detector Feasibility Checklist v0.1 Results](results/detector-feasibility-checklist-v0.1-results.md)
 - [Detector Dry-Run Packet Skeleton v0.1 Results](results/detector-dry-run-packet-skeleton-v0.1-results.md)
+- [Detector Authority-Domain Bound v0.1 Results](results/detector-authority-domain-bound-v0.1-results.md)
 - [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
 - [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
 - [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)
@@ -255,6 +260,7 @@ The suites use only Python's standard library. Evidence records:
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
 - [LossKernel Quotient Separation v0.1 Results](results/losskernel-quotient-separation-v0.1-results.md)
+- [Q1 Branch Adjudication v0.1 Results](results/q1-branch-adjudication-v0.1-results.md)
 
 ## How To Add A Test
 

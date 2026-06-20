@@ -77,6 +77,12 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
 - [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
 - [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
+- [T95: Detector Stack Export Map](../tests/T95-detector-stack-export-map.md)
+- [T96: Detector Feasibility Checklist](../tests/T96-detector-feasibility-checklist.md)
+- [T97: Detector Dry-Run Packet Skeleton](../tests/T97-detector-dry-run-packet-skeleton.md)
+- [T98: Detector Operator-Handoff Audit](../tests/T98-detector-operator-handoff-audit.md)
+- [T100: Detector Authority-Domain Bound](../tests/T100-detector-authority-domain-bound.md)
+- [T101: Q1 Branch Adjudication](../tests/T101-q1-branch-adjudication.md)
 
 ## T21 Result
 
@@ -401,18 +407,42 @@ This narrows detector provenance again. Under the current T97/T98 packet, a
 small-lab future deployment is not merely difficult; it is structurally
 inadmissible unless the packet itself changes.
 
+## T101 Result
+
+[T101](../tests/T101-q1-branch-adjudication.md) adjudicates the whole Q1 branch
+rather than adding another detector fixture. It finds that Q1 should not be
+used as one paper-facing `partially_supported` physics conjecture without
+splitting its evidence standards.
+
+The current split is:
+
+```text
+Q1A access-boundary record accounting
+Q1B detector provenance admissibility
+Q1C dormant weak-measurement discriminator gate
+Q1D contextuality/no-signalling guardrail
+```
+
+No current branch earns new measurement dynamics or empirical quantum support.
+The strongest surviving content is narrower: observer-indexed access and
+provenance accounting over already formed records, plus explicit gates for
+detector deployment and weak-measurement reinstatement.
+
 ## Contribution Needed
 
-Two concrete needs remain, and the detector-side one is now stronger than the
-weak-measurement one.
+Three concrete needs remain.
 
-For detector provenance, obtain one concrete deployment that satisfies T78 and
+First, decide whether Q1 becomes a roadmap umbrella or separate claim files
+Q1A-Q1D. Until that split is made, do not use Q1 as a single supported physics
+claim in paper-facing text.
+
+Second, for detector provenance, obtain one concrete deployment that satisfies T78 and
 publish its raw event-level logs: event loss, signature verification failures,
 replay/spoof tests, perturbation trials, trust-boundary audits, and DAG
 truncation exports. If only dashboard summaries are available, withhold the
 detector branch rather than treating it as empirical support.
 
-For weak measurement, stop treating standard homodyne, uncollapse, or
+Third, for weak measurement, stop treating standard homodyne, uncollapse, or
 quantum-jump-reversal platforms as near-ready T12 tests. T94 makes the
 priority consequence explicit: T12 is now demoted below the detector-
 provenance route in the active roadmap. Reinstate it only if a monitored

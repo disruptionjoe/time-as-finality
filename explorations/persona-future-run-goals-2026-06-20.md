@@ -127,9 +127,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P09 - Distributed Systems Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T17:45:06-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-174506-p09-distributed-systems-t87-protocol-spec.md
 - goal: Rewrite T87 as a protocol specification with threat model, fault model,
   synchrony assumptions, replay/spoof adversaries, signed logs, and demotion
   rules.

@@ -90,6 +90,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T65](tests/T65-causal-reduction-holonomy.md) | Causal reduction of CHSH holonomy | C1, D1, H6, T63, T19 | implemented: LC => holonomy = +1 (all 16 LC sections); quantum => holonomy = -1 (Bell's theorem as holonomy); biconditional disproved (128 ≠ 16); spatial causal-boundary obstruction formally parallels T19 temporal obstruction |
 | [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented finite-fixture result: failure-type monotonicity holds only under the declared coefficient/support semantics and allowed loss morphisms; external review blocks any general Cech/sheaf theorem reading; 7/7 tests pass |
 | [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified as powerset-union monoid-valued annotation; path-dependence biconditional established on fixed-endpoint fixtures; quotient/prior-art gate still open; 17/17 tests pass |
+| [T99](tests/T99-losskernel-quotient-separation.md) | LossKernel quotient separation | TF1, T34, T37, T73 | implemented: label-only LossKernel fails same-endpoint/same-map/same-behavior/same-label quotient survival; witness-carrying LossKernel separates only with source-anchored obligations |
 
 ## Minimum Compatibility Constraints
 
@@ -253,6 +254,7 @@ The suites use only Python's standard library. Evidence records:
 - [Accessible-Witness Gap Restriction v0.1 Results](results/accessible-witness-gap-restriction-v0.1-results.md)
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
+- [LossKernel Quotient Separation v0.1 Results](results/losskernel-quotient-separation-v0.1-results.md)
 
 ## How To Add A Test
 

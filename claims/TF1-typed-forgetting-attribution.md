@@ -108,6 +108,7 @@ morphisms.
 - [T39: CSP Satisfiability Reframing](../tests/T39-csp-satisfiability-reframing.md)
 - [T40: Holarchy Lab](../tests/T40-holarchy-lab.md)
 - [T41: Typed Transport Category](../tests/T41-typed-transport-category.md)
+- [T99: LossKernel Quotient Separation](../tests/T99-losskernel-quotient-separation.md)
 
 ## Guardrails
 

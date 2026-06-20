@@ -1,0 +1,348 @@
+{
+  "cases": [
+    {
+      "name": "collision_path_relevant_witness",
+      "family": "same_naive_quotient_collision",
+      "source_id": "S_branch_fixture",
+      "target_id": "T_lumped_branch",
+      "ordinary_composite_map": [
+        [
+          "left_source_branch",
+          "lumped_branch"
+        ],
+        [
+          "right_source_branch",
+          "lumped_branch"
+        ]
+      ],
+      "endpoint_behavior": {
+        "target_obstructed": true,
+        "target_global_sections": 0,
+        "obstruction_ids": [
+          "target_branch_ambiguity"
+        ],
+        "observables": [
+          [
+            "target_visible_state",
+            "lumped_branch"
+          ],
+          [
+            "compatible_source_preimages",
+            "2"
+          ]
+        ]
+      },
+      "naive_loss_labels": [
+        "branch_selector"
+      ],
+      "typed_loss": [
+        {
+          "label": "branch_selector",
+          "witness_id": "signed_preimage_selector",
+          "witness_type": "source_global_section_resolver",
+          "source_anchor": "source_certificate:branch-preimage-resolves-ambiguity",
+          "resolves_obstruction": true,
+          "obstruction_id": "target_branch_ambiguity"
+        }
+      ],
+      "attribution_verdict": "admissible_typed_attribution",
+      "purpose": "Same ordinary endpoint data as the decorative path, but the lost branch_selector is a source-side witness resolving the target ambiguity."
+    },
+    {
+      "name": "collision_path_decorative_label",
+      "family": "same_naive_quotient_collision",
+      "source_id": "S_branch_fixture",
+      "target_id": "T_lumped_branch",
+      "ordinary_composite_map": [
+        [
+          "left_source_branch",
+          "lumped_branch"
+        ],
+        [
+          "right_source_branch",
+          "lumped_branch"
+        ]
+      ],
+      "endpoint_behavior": {
+        "target_obstructed": true,
+        "target_global_sections": 0,
+        "obstruction_ids": [
+          "target_branch_ambiguity"
+        ],
+        "observables": [
+          [
+            "target_visible_state",
+            "lumped_branch"
+          ],
+          [
+            "compatible_source_preimages",
+            "2"
+          ]
+        ]
+      },
+      "naive_loss_labels": [
+        "branch_selector"
+      ],
+      "typed_loss": [
+        {
+          "label": "branch_selector",
+          "witness_id": "display_color_tag",
+          "witness_type": "decorative_metadata",
+          "source_anchor": "source_annotation:display-only-color",
+          "resolves_obstruction": false,
+          "obstruction_id": "none"
+        }
+      ],
+      "attribution_verdict": "inadmissible_label_only_metadata",
+      "purpose": "Same ordinary endpoint data and same naive lost label, but the lost branch_selector is only a display annotation."
+    },
+    {
+      "name": "same_typed_alias_a",
+      "family": "same_typed_control",
+      "source_id": "S_alias_fixture",
+      "target_id": "T_alias_lumped_branch",
+      "ordinary_composite_map": [
+        [
+          "left_source_branch",
+          "lumped_branch"
+        ],
+        [
+          "right_source_branch",
+          "lumped_branch"
+        ]
+      ],
+      "endpoint_behavior": {
+        "target_obstructed": true,
+        "target_global_sections": 0,
+        "obstruction_ids": [
+          "target_branch_ambiguity"
+        ],
+        "observables": [
+          [
+            "target_visible_state",
+            "lumped_branch"
+          ],
+          [
+            "compatible_source_preimages",
+            "2"
+          ]
+        ]
+      },
+      "naive_loss_labels": [
+        "branch_selector"
+      ],
+      "typed_loss": [
+        {
+          "label": "branch_selector",
+          "witness_id": "signed_preimage_selector",
+          "witness_type": "source_global_section_resolver",
+          "source_anchor": "source_certificate:branch-preimage-resolves-ambiguity",
+          "resolves_obstruction": true,
+          "obstruction_id": "target_branch_ambiguity"
+        }
+      ],
+      "attribution_verdict": "admissible_typed_attribution",
+      "purpose": "Control: an alias of the relevant typed witness should collapse."
+    },
+    {
+      "name": "same_typed_alias_b",
+      "family": "same_typed_control",
+      "source_id": "S_alias_fixture",
+      "target_id": "T_alias_lumped_branch",
+      "ordinary_composite_map": [
+        [
+          "left_source_branch",
+          "lumped_branch"
+        ],
+        [
+          "right_source_branch",
+          "lumped_branch"
+        ]
+      ],
+      "endpoint_behavior": {
+        "target_obstructed": true,
+        "target_global_sections": 0,
+        "obstruction_ids": [
+          "target_branch_ambiguity"
+        ],
+        "observables": [
+          [
+            "target_visible_state",
+            "lumped_branch"
+          ],
+          [
+            "compatible_source_preimages",
+            "2"
+          ]
+        ]
+      },
+      "naive_loss_labels": [
+        "branch_selector"
+      ],
+      "typed_loss": [
+        {
+          "label": "branch_selector",
+          "witness_id": "signed_preimage_selector",
+          "witness_type": "source_global_section_resolver",
+          "source_anchor": "source_certificate:branch-preimage-resolves-ambiguity",
+          "resolves_obstruction": true,
+          "obstruction_id": "target_branch_ambiguity"
+        }
+      ],
+      "attribution_verdict": "admissible_typed_attribution",
+      "purpose": "Control: same typed loss data should not create a new distinction."
+    },
+    {
+      "name": "endpoint_difference_control",
+      "family": "endpoint_difference_control",
+      "source_id": "S_branch_fixture",
+      "target_id": "T_resolved_branch",
+      "ordinary_composite_map": [
+        [
+          "left_source_branch",
+          "resolved_branch"
+        ]
+      ],
+      "endpoint_behavior": {
+        "target_obstructed": false,
+        "target_global_sections": 1,
+        "obstruction_ids": [],
+        "observables": [
+          [
+            "target_visible_state",
+            "resolved_branch"
+          ],
+          [
+            "compatible_source_preimages",
+            "1"
+          ]
+        ]
+      },
+      "naive_loss_labels": [
+        "branch_selector"
+      ],
+      "typed_loss": [
+        {
+          "label": "branch_selector",
+          "witness_id": "signed_preimage_selector",
+          "witness_type": "source_global_section_resolver",
+          "source_anchor": "source_certificate:branch-preimage-resolves-ambiguity",
+          "resolves_obstruction": true,
+          "obstruction_id": "target_branch_ambiguity"
+        }
+      ],
+      "attribution_verdict": "inadmissible_no_target_obstruction",
+      "purpose": "Control: same lost label but a different unobstructed endpoint is not evidence for quotient survival."
+    }
+  ],
+  "quotient_groups": [
+    {
+      "group_id": "naive_quotient_group_1",
+      "case_names": [
+        "collision_path_relevant_witness",
+        "collision_path_decorative_label"
+      ],
+      "verdicts": [
+        "admissible_typed_attribution",
+        "inadmissible_label_only_metadata"
+      ],
+      "typed_signatures": [
+        [
+          [
+            "branch_selector",
+            "signed_preimage_selector",
+            "source_global_section_resolver",
+            "source_certificate:branch-preimage-resolves-ambiguity",
+            true,
+            "target_branch_ambiguity"
+          ]
+        ],
+        [
+          [
+            "branch_selector",
+            "display_color_tag",
+            "decorative_metadata",
+            "source_annotation:display-only-color",
+            false,
+            "none"
+          ]
+        ]
+      ],
+      "naive_key_shared": true,
+      "naive_collision": true,
+      "typed_witness_separates": true
+    },
+    {
+      "group_id": "naive_quotient_group_2",
+      "case_names": [
+        "same_typed_alias_a",
+        "same_typed_alias_b"
+      ],
+      "verdicts": [
+        "admissible_typed_attribution",
+        "admissible_typed_attribution"
+      ],
+      "typed_signatures": [
+        [
+          [
+            "branch_selector",
+            "signed_preimage_selector",
+            "source_global_section_resolver",
+            "source_certificate:branch-preimage-resolves-ambiguity",
+            true,
+            "target_branch_ambiguity"
+          ]
+        ],
+        [
+          [
+            "branch_selector",
+            "signed_preimage_selector",
+            "source_global_section_resolver",
+            "source_certificate:branch-preimage-resolves-ambiguity",
+            true,
+            "target_branch_ambiguity"
+          ]
+        ]
+      ],
+      "naive_key_shared": true,
+      "naive_collision": false,
+      "typed_witness_separates": false
+    },
+    {
+      "group_id": "naive_quotient_group_3",
+      "case_names": [
+        "endpoint_difference_control"
+      ],
+      "verdicts": [
+        "inadmissible_no_target_obstruction"
+      ],
+      "typed_signatures": [
+        [
+          [
+            "branch_selector",
+            "signed_preimage_selector",
+            "source_global_section_resolver",
+            "source_certificate:branch-preimage-resolves-ambiguity",
+            true,
+            "target_branch_ambiguity"
+          ]
+        ]
+      ],
+      "naive_key_shared": false,
+      "naive_collision": false,
+      "typed_witness_separates": false
+    }
+  ],
+  "naive_label_kernel_fails_quotient_gate": true,
+  "typed_witness_kernel_separates_collision": true,
+  "same_typed_control_collapses": true,
+  "endpoint_difference_control_excluded": true,
+  "strongest_claim": "The label-only LossKernel does not survive the quotient gate: two paths can share endpoints, ordinary composite map, endpoint behavior, and naive lost-label set while receiving opposite attribution verdicts. A typed witness kernel separates them only if LossKernel records source-anchored witness obligations, not just lost labels.",
+  "improved": "T99 turns the open quotient-survival worry into an executable audit. It shows exactly where the current T73 union law is too weak and what extra data would be required for TF1 to become a serious attribution object.",
+  "weakened": "This weakens LossKernel promotion. The current powerset-union object is not enough for quotient/prior-art separation. Without source-anchored witness obligations, LossKernel remains a provenance/effect-style annotation.",
+  "falsification_condition": "Reject theorem-level TF1 language if future LossKernel definitions cannot canonically derive witness obligations from the morphism and source/target structures, or if those obligations collapse to ordinary provenance labels under the same quotient.",
+  "tf1_update": "TF1 remains an open formal target. T99 supplies a conditional salvage path: typed loss must include source witnesses that resolve target obstructions. Label-only loss is refuted as a sufficient object for the quotient gate.",
+  "claim_ledger_update": "Add T99 to TF1: naive label-union LossKernel fails quotient survival; only a source-anchored witness-obligation kernel separates same-endpoint, same-map, same-behavior, same-label fixtures, so TF1 remains open and cannot be promoted from T73.",
+  "open_blocker": "The typed witness obligations in T99 are still fixture-declared. The next blocker is canonical derivation: the obligation must be computed from a morphism and finite restriction systems, not hand-attached as metadata.",
+  "recommended_next": "Rebuild one T34 or T37 fixture with explicit source sections and target obstruction certificates, then derive the T99 witness obligation mechanically from the restriction map."
+}

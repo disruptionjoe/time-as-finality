@@ -1,0 +1,135 @@
+{
+  "audits": [
+    {
+      "profile_name": "independent_five_domain_profile",
+      "verdict": "admissible_predata_handoff_profile",
+      "distinct_operator_count": 5,
+      "independent_trust_auditor": true,
+      "self_audit_conflicts": [],
+      "governance_conflicts": [],
+      "owner_by_table": {
+        "preregistration_manifest": "governance_pi",
+        "demotion_decision_log": "governance_pi",
+        "event_time_tag_stream": "detector_operator",
+        "control_pair_manifest": "control_engineer",
+        "tag_ambiguity_challenge_log": "control_engineer",
+        "perturbation_trial_log": "control_engineer",
+        "signature_verification_log": "archive_engineer",
+        "ancestry_dag_edge_export": "archive_engineer",
+        "trust_boundary_audit_log": "external_auditor"
+      },
+      "failure_reasons": [],
+      "next_allowed_step": "freeze_t97_packet_with_named_operator_handoffs"
+    },
+    {
+      "profile_name": "four_domain_cross_handoff_profile",
+      "verdict": "admissible_predata_handoff_profile",
+      "distinct_operator_count": 4,
+      "independent_trust_auditor": true,
+      "self_audit_conflicts": [],
+      "governance_conflicts": [],
+      "owner_by_table": {
+        "preregistration_manifest": "governance_pi",
+        "demotion_decision_log": "governance_pi",
+        "event_time_tag_stream": "governance_pi",
+        "control_pair_manifest": "control_engineer",
+        "tag_ambiguity_challenge_log": "control_engineer",
+        "perturbation_trial_log": "control_engineer",
+        "signature_verification_log": "archive_engineer",
+        "ancestry_dag_edge_export": "archive_engineer",
+        "trust_boundary_audit_log": "external_auditor"
+      },
+      "failure_reasons": [],
+      "next_allowed_step": "freeze_t97_packet_with_named_operator_handoffs"
+    },
+    {
+      "profile_name": "three_person_small_lab_profile",
+      "verdict": "inadmissible_due_role_conflicts",
+      "distinct_operator_count": 3,
+      "independent_trust_auditor": false,
+      "self_audit_conflicts": [
+        "archive_custodian"
+      ],
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "owner_by_table": {
+        "preregistration_manifest": "pi",
+        "demotion_decision_log": "pi",
+        "event_time_tag_stream": "student",
+        "control_pair_manifest": "pi",
+        "tag_ambiguity_challenge_log": "pi",
+        "perturbation_trial_log": "pi",
+        "signature_verification_log": "postdoc",
+        "ancestry_dag_edge_export": "postdoc",
+        "trust_boundary_audit_log": "postdoc"
+      },
+      "failure_reasons": [
+        "trust_auditor_not_independent",
+        "governance_control_archive_role_merge"
+      ],
+      "next_allowed_step": "split_conflicting_authority_domains_before_freeze"
+    },
+    {
+      "profile_name": "two_person_pi_student_profile",
+      "verdict": "inadmissible_due_role_conflicts",
+      "distinct_operator_count": 2,
+      "independent_trust_auditor": false,
+      "self_audit_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "owner_by_table": {
+        "preregistration_manifest": "pi",
+        "demotion_decision_log": "pi",
+        "event_time_tag_stream": "student",
+        "control_pair_manifest": "pi",
+        "tag_ambiguity_challenge_log": "pi",
+        "perturbation_trial_log": "pi",
+        "signature_verification_log": "pi",
+        "ancestry_dag_edge_export": "pi",
+        "trust_boundary_audit_log": "pi"
+      },
+      "failure_reasons": [
+        "trust_auditor_not_independent",
+        "governance_control_archive_role_merge"
+      ],
+      "next_allowed_step": "split_conflicting_authority_domains_before_freeze"
+    }
+  ],
+  "table_owner_by_domain": {
+    "analysis_governor": [
+      "preregistration_manifest",
+      "demotion_decision_log"
+    ],
+    "instrument_operator": [
+      "event_time_tag_stream"
+    ],
+    "control_designer": [
+      "control_pair_manifest",
+      "tag_ambiguity_challenge_log",
+      "perturbation_trial_log"
+    ],
+    "archive_custodian": [
+      "signature_verification_log",
+      "ancestry_dag_edge_export"
+    ],
+    "trust_auditor": [
+      "trust_boundary_audit_log"
+    ]
+  },
+  "strongest_claim": "The surviving detector-side Q1 route is operationally admissible only if the T97 packet is carried by at least four non-conflicting authority domains, including an independent trust auditor. Common two- and three-person role merges collapse the route into self-certification before any detector evidence exists.",
+  "improved": "T98 converts T97's vague 'operator handoff checks' into an executable staffing criterion. The detector route can now fail before data if the same authority both defines controls and audits them, or both owns the archive and sets demotion policy.",
+  "weakened": "This weakens detector-side Q1 again. The live bottleneck is not timing hardware or even schema design; it is conflict-free role separation. Small labs with merged governance, archive, and audit roles collapse back into self-certification and should not treat a filled packet as independent support.",
+  "falsification_condition": "Demote the detector branch if a realistic deployment cannot name at least four non-conflicting authority domains with an independent trust auditor before the first event, or if merged governance/control/archive roles are allowed to certify the packet without independent review.",
+  "q1_update": "Q1 remains partially supported only as a detector-record admissibility protocol. T98 adds that even the T97 dry-run packet counts only if its preregistration, control design, archive custody, instrument operation, and trust audit are separated enough to prevent self-certification.",
+  "claim_ledger_update": "Add T98 to Q1 as an operational narrowing: detector-side Q1 now requires at least four non-conflicting authority domains, including an independent trust auditor. Common two- and three-person role merges should demote the route before any event-level evidence is scored.",
+  "open_blocker": "No concrete lab deployment in the repo yet names independent operators for the T97 packet. The live blocker is organizational: identify a realistic authority split that survives trust-audit and governance-conflict checks.",
+  "recommended_next": "Instantiate one named lab staffing plan against the T97 packet with real operator roles, signed handoff points, and explicit external or functionally independent trust auditing. If no such plan is realistic, demote detector provenance below the active Q1 frontier."
+}

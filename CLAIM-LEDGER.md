@@ -1257,3 +1257,30 @@ forward direction. The converse is an open conjecture.
   fragment-information summaries, raw redundancy, branch/history availability,
   and audited accessible support stay fixed.
 - Artifact: [T118 technical report](TECHNICAL-REPORT-q1a-reversal-cost-collapse-v0.1.md).
+
+### 2026-06-20 - Future Operation Availability Residue Audit (T119)
+
+- No core claim is upgraded. T119 is a synthesis and kill-test for a recurring
+  residue across Q1A, ASP, reconstruction debt, maintenance cost, provenance,
+  LossKernel, and admissibility work.
+- Strongest version: FOA is a prespecified observer/task/horizon-indexed set of
+  future operations available under witness, right, reconstruction,
+  certification, and maintenance constraints.
+- Branch verdict: ASP is directly FOA; reconstruction debt, maintenance,
+  provenance, LossKernel, and admissibility converge structurally; Q1A joins
+  only weakly because its current residue is accessible record support rather
+  than an action set by itself.
+- Finite controls: T119 gives one case where FOA differs while coarse measures
+  match, one where coarse measures differ while FOA matches, and one where FOA
+  collapses into enriched reachability.
+- Prior-art pressure: enriched reachability, opportunity-set economics,
+  viability/control, provenance, mechanism design, and commons governance
+  absorb FOA when witnesses, rights, certifications, reconstruction paths, and
+  maintenance budgets are included in the state.
+- Recommendation: preserve and formalize FOA narrowly as a cross-branch audit
+  normal form; do not promote it as a new primitive or independent physical
+  object.
+- Open blocker: produce a same-enriched-prior-art quotient witness with the
+  same reachability state, opportunity set, control state, provenance,
+  mechanism rights, and commons variables but a different FOA verdict.
+- Artifact: [T119 technical report](TECHNICAL-REPORT-future-operation-availability-residue-v0.1.md).

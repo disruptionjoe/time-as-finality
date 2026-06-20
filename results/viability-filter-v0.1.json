@@ -1,0 +1,298 @@
+{
+  "evaluations": [
+    {
+      "name": "impossible_tiling",
+      "interpretation": "Geometry rejects the candidate before viability is meaningful.",
+      "observer_experienced": false,
+      "emergence_platform": false,
+      "first_failed_gate": "geometry",
+      "standard_state_signature": [
+        false,
+        false,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": false,
+          "reason": "finite constraints are inconsistent"
+        },
+        {
+          "gate": "dynamics",
+          "passed": false,
+          "reason": "candidate is not reachable from allowed initial states"
+        },
+        {
+          "gate": "maintenance",
+          "passed": false,
+          "reason": "stability window 0 < required 1"
+        },
+        {
+          "gate": "finality",
+          "passed": false,
+          "reason": "accessible records 0 < threshold 1"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": false,
+          "reason": "structure is reconstructable but not a platform for further emergence"
+        }
+      ]
+    },
+    {
+      "name": "geometric_but_unmaintained_seed",
+      "interpretation": "Geometrically admissible and reachable, but the preservation stack cannot maintain it long enough.",
+      "observer_experienced": false,
+      "emergence_platform": false,
+      "first_failed_gate": "maintenance",
+      "standard_state_signature": [
+        true,
+        true,
+        2,
+        4,
+        2,
+        3,
+        5,
+        8,
+        2,
+        2
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": true,
+          "reason": "finite constraints are mutually satisfiable"
+        },
+        {
+          "gate": "dynamics",
+          "passed": true,
+          "reason": "candidate is reachable under the declared transition rule"
+        },
+        {
+          "gate": "maintenance",
+          "passed": false,
+          "reason": "repair capacity 2 < load 4; entropy sink capacity 2 < required 3; stability window 5 < required 8"
+        },
+        {
+          "gate": "finality",
+          "passed": false,
+          "reason": "record threshold and reconstruction-debt budget both pass"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": false,
+          "reason": "structure supports enough downstream operations for platform status"
+        }
+      ]
+    },
+    {
+      "name": "maintained_but_unfinalized_wave",
+      "interpretation": "Maintenance succeeds, but bounded observers lack enough records to reconstruct it as a settled structure.",
+      "observer_experienced": false,
+      "emergence_platform": false,
+      "first_failed_gate": "finality",
+      "standard_state_signature": [
+        true,
+        true,
+        5,
+        3,
+        5,
+        3,
+        8,
+        8,
+        2,
+        2
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": true,
+          "reason": "finite constraints are mutually satisfiable"
+        },
+        {
+          "gate": "dynamics",
+          "passed": true,
+          "reason": "candidate is reachable under the declared transition rule"
+        },
+        {
+          "gate": "maintenance",
+          "passed": true,
+          "reason": "repair, entropy export, and stability-window constraints all pass"
+        },
+        {
+          "gate": "finality",
+          "passed": false,
+          "reason": "accessible records 1 < threshold 3; reconstruction debt 3 > budget 1"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": false,
+          "reason": "structure supports enough downstream operations for platform status"
+        }
+      ]
+    },
+    {
+      "name": "finalized_archive_not_platform",
+      "interpretation": "The structure is stable and reconstructable, but it does not support enough downstream operations to be an emergence platform.",
+      "observer_experienced": true,
+      "emergence_platform": false,
+      "first_failed_gate": "emergence_platform",
+      "standard_state_signature": [
+        true,
+        true,
+        5,
+        3,
+        5,
+        3,
+        8,
+        8,
+        1,
+        2
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": true,
+          "reason": "finite constraints are mutually satisfiable"
+        },
+        {
+          "gate": "dynamics",
+          "passed": true,
+          "reason": "candidate is reachable under the declared transition rule"
+        },
+        {
+          "gate": "maintenance",
+          "passed": true,
+          "reason": "repair, entropy export, and stability-window constraints all pass"
+        },
+        {
+          "gate": "finality",
+          "passed": true,
+          "reason": "record threshold and reconstruction-debt budget both pass"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": false,
+          "reason": "structure is reconstructable but not a platform for further emergence"
+        }
+      ]
+    },
+    {
+      "name": "visible_protocol_platform",
+      "interpretation": "Same standard maintenance state as the archive case, but enough operation rights remain for recursive emergence.",
+      "observer_experienced": true,
+      "emergence_platform": true,
+      "first_failed_gate": null,
+      "standard_state_signature": [
+        true,
+        true,
+        5,
+        3,
+        5,
+        3,
+        8,
+        8,
+        3,
+        2
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": true,
+          "reason": "finite constraints are mutually satisfiable"
+        },
+        {
+          "gate": "dynamics",
+          "passed": true,
+          "reason": "candidate is reachable under the declared transition rule"
+        },
+        {
+          "gate": "maintenance",
+          "passed": true,
+          "reason": "repair, entropy export, and stability-window constraints all pass"
+        },
+        {
+          "gate": "finality",
+          "passed": true,
+          "reason": "record threshold and reconstruction-debt budget both pass"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": true,
+          "reason": "structure supports enough downstream operations for platform status"
+        }
+      ]
+    },
+    {
+      "name": "hidden_protocol_twin",
+      "interpretation": "A fixed-standard-state control: geometry, dynamics, maintenance, and platform operations match the positive protocol case, but record access is below threshold.",
+      "observer_experienced": false,
+      "emergence_platform": false,
+      "first_failed_gate": "finality",
+      "standard_state_signature": [
+        true,
+        true,
+        5,
+        3,
+        5,
+        3,
+        8,
+        8,
+        3,
+        2
+      ],
+      "gates": [
+        {
+          "gate": "geometry",
+          "passed": true,
+          "reason": "finite constraints are mutually satisfiable"
+        },
+        {
+          "gate": "dynamics",
+          "passed": true,
+          "reason": "candidate is reachable under the declared transition rule"
+        },
+        {
+          "gate": "maintenance",
+          "passed": true,
+          "reason": "repair, entropy export, and stability-window constraints all pass"
+        },
+        {
+          "gate": "finality",
+          "passed": false,
+          "reason": "accessible records 2 < threshold 3"
+        },
+        {
+          "gate": "emergence_platform",
+          "passed": false,
+          "reason": "structure supports enough downstream operations for platform status"
+        }
+      ]
+    }
+  ],
+  "geometry_not_sufficient": true,
+  "maintenance_not_sufficient": true,
+  "finality_not_platform": true,
+  "finality_separates_fixed_standard_state": true,
+  "platform_positive_cases": [
+    "visible_protocol_platform"
+  ],
+  "observer_experienced_cases": [
+    "finalized_archive_not_platform",
+    "visible_protocol_platform"
+  ],
+  "strongest_claim": "In this finite witness family, geometry is a possibility space, not a viability criterion. Structures become observer-experienced only after reachability, maintenance, and record-finality gates pass; emergence-platform status is a stricter downstream gate.",
+  "improved": "T114 turns the synthesis into a falsifiable filter with negative controls. It shows exactly where geometry, maintenance, finality, and emergence-platform capacity can separate without claiming a new law of physics.",
+  "weakened": "The artifact weakens any broad reading of the slogan. If all future positive cases are already fixed by standard maintenance and thermodynamic accounting, the viability filter is only bookkeeping. The only non-collapse signal here is the fixed-standard-state pair where record accessibility changes the observer-experienced verdict.",
+  "falsification_condition": "The viability-filter thesis loses independent content if every observer-experienced or platform verdict is determined by geometry, dynamics, and standard maintenance variables alone, with no pre-registered record-finality or operation-right separation.",
+  "open_blocker": "The current filter is a finite schema, not a derived theorem. It needs a real domain instantiation where the gates are measured or canonically derived rather than assigned.",
+  "recommended_next": "Instantiate the filter on one serious domain, preferably cellular automata or a D1RestrictionSystem transport case, and test whether the finality/emergence gates survive after matching standard stability and entropy variables.",
+  "claim_ledger_update": "Add T114 as a North-Star/viability-filter artifact only: geometry can be treated as a finite possibility space, while maintenance, record-finality, and emergence-platform gates classify which candidates become observer-experienced. No core claim is upgraded."
+}

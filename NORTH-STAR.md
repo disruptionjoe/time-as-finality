@@ -15,6 +15,24 @@ which parts do not.
 The mathematics is not trying to prove the North Star. The mathematics is
 trying to discover which small pieces of the North Star are actually true.
 
+## Viability Filter Refinement
+
+One current refinement is:
+
+```text
+geometry supplies candidate structures
+  -> dynamics supplies reachable structures
+  -> maintenance supplies structures that persist long enough
+  -> finality supplies observer-reconstructable structures
+  -> emergence supplies structures that become platforms for further structure
+```
+
+[T114](tests/T114-viability-filter.md) treats this only as a finite
+viability-filter schema. It does not upgrade a core claim. The refinement is
+useful only if record-finality or emergence-platform gates separate cases
+after standard geometry, dynamics, maintenance, and thermodynamic variables
+have been matched. Otherwise it collapses to ordinary stability accounting.
+
 ## Protected Intuition Anchor
 
 The following intuition is protected as a source of research direction:

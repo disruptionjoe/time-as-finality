@@ -1149,3 +1149,25 @@ forward direction. The converse is an open conjecture.
   and rich effect annotations but different LossKernel attribution. Without
   that, LossKernel should be treated as integration vocabulary.
 - Artifact: [T108 technical report](TECHNICAL-REPORT-loss-relocation-prior-art-v0.1.md).
+
+### 2026-06-20 - Viability Filter (T114)
+
+- No core claim is upgraded. T114 is a North-Star formalization artifact only.
+- It turns the geometry/finality/maintenance/emergence synthesis into a finite
+  filter: geometry, dynamics, maintenance, record-finality, and
+  emergence-platform gates.
+- Result: geometry is not sufficient for observer-experienced status;
+  maintenance is not sufficient without record finality; finality does not
+  automatically make a structure an emergence platform; and one matched
+  standard-state pair is separated only by accessible record support.
+- Claim impact: the strongest earned formulation is modest. Geometry supplies
+  candidate structures, while maintenance and record-finality filter which
+  structures become observer-reconstructable; emergence-platform status is a
+  stricter downstream property.
+- Weakening: if future domain instantiations are fully determined by standard
+  stability, entropy export, and coarse-graining variables, the viability
+  filter is bookkeeping rather than new machinery.
+- Open blocker: instantiate the gates in a real domain, preferably cellular
+  automata or D1RestrictionSystem transport, without assigning the gate values
+  by hand.
+- Artifact: [T114 technical report](TECHNICAL-REPORT-viability-filter-v0.1.md).

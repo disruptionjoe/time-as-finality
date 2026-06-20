@@ -93,6 +93,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified as powerset-union monoid-valued annotation; path-dependence biconditional established on fixed-endpoint fixtures; quotient/prior-art gate still open; 17/17 tests pass |
 | [T99](tests/T99-losskernel-quotient-separation.md) | LossKernel quotient separation | TF1, T34, T37, T73 | implemented: label-only LossKernel fails same-endpoint/same-map/same-behavior/same-label quotient survival; witness-carrying LossKernel separates only with source-anchored obligations |
 | [T101](tests/T101-q1-branch-adjudication.md) | Q1 branch adjudication | Q1, D1, T2, T21, T22, T62, T66-T100 | implemented: Q1 should split before paper language; no current branch earns new measurement dynamics or empirical quantum support |
+| [T102](tests/T102-q1a-neighbor-comparison.md) | Q1A neighbor comparison gate | Q1A, Q1, T2, T22, T62, T64, T101 | implemented: Q1A is only access-boundary and independence accounting unless a fixed-data witness separates it from standard neighbor frameworks |
+| [T103](tests/T103-q1a-fixed-data-witness.md) | Q1A fixed-data witness | Q1A, Q1, D1, T102 | implemented: fixed standard quantum-side data can yield different D1 verdicts only through the independence partition; external distinctness remains unearned |
 
 ## Minimum Compatibility Constraints
 
@@ -182,6 +184,8 @@ python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
 python -m models.run_t101
+python -m models.q1a_neighbor_comparison
+python -m models.run_t103
 python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
@@ -261,6 +265,8 @@ The suites use only Python's standard library. Evidence records:
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
 - [LossKernel Quotient Separation v0.1 Results](results/losskernel-quotient-separation-v0.1-results.md)
 - [Q1 Branch Adjudication v0.1 Results](results/q1-branch-adjudication-v0.1-results.md)
+- [Q1A Neighbor Comparison v0.1 Technical Report](TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md)
+- [Q1A Fixed-Data Witness v0.1 Results](results/q1a-fixed-data-witness-v0.1-results.md)
 
 ## How To Add A Test
 

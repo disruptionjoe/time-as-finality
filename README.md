@@ -83,6 +83,14 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - Q1 adjudication showing the quantum branch should split before paper
     language into access-boundary accounting, detector admissibility,
     weak-measurement reinstatement gate, and contextuality guardrail.
+- [TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md](TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md)
+  - Q1A neighbor comparison weakening the surviving quantum branch to
+    access-boundary and independence accounting unless a fixed-data witness
+    separates it from standard frameworks.
+- [TECHNICAL-REPORT-q1a-fixed-data-witness-v0.1.md](TECHNICAL-REPORT-q1a-fixed-data-witness-v0.1.md)
+  - fixed-data Q1A witness showing D1 can change with decoherence, fragment
+    information, raw redundancy, and branch/history availability fixed, but
+    only as conditional record-independence accounting.
 - [TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md](TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md)
   - ambiguous-tag hostile-family audit showing perturbation-only and
     signed-DAG-only raw-log fixtures can rescue the partition internally, but

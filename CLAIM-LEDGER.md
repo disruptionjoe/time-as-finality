@@ -976,3 +976,20 @@ forward direction. The converse is an open conjecture.
   measurement theory or interpretation.
 - Open blocker: the repo still lacks one decisive fixed-data witness of that
   form.
+
+### 2026-06-20 - Q1A Fixed-Data Witness (T103)
+
+- T103 supplies the missing internal fixed-data witness: the same
+  decoherence/pointer-basis evidence, fragment-information summaries,
+  accessible raw redundancy, and ordinary branch/history availability can
+  yield `finalized` versus `not_finalized` D1 verdicts when only the record
+  independence partition changes.
+- Controls reject cases that change coherence, raw redundancy, or
+  branch/history availability; a hidden independence partition withholds D1
+  rather than inferring finality from raw redundancy.
+- Claim impact: Q1A gains conditional record-accounting support, not new
+  measurement dynamics, collapse content, Born-rule content, or empirical
+  quantum support.
+- Open blocker: derive the independence partition from physically auditable
+  detector or environment-fragment provenance and test whether
+  provenance-aware Quantum Darwinism already absorbs the same verdict.

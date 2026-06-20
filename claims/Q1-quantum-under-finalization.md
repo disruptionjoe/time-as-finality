@@ -83,6 +83,8 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T98: Detector Operator-Handoff Audit](../tests/T98-detector-operator-handoff-audit.md)
 - [T100: Detector Authority-Domain Bound](../tests/T100-detector-authority-domain-bound.md)
 - [T101: Q1 Branch Adjudication](../tests/T101-q1-branch-adjudication.md)
+- [T102: Q1A Neighbor Comparison Gate](../tests/T102-q1a-neighbor-comparison.md)
+- [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
 
 ## T21 Result
 
@@ -458,6 +460,28 @@ Until that gate is cleared, Q1A should be compared as a bookkeeping layer over
 decoherence, Quantum Darwinism, consistent histories, relational quantum
 mechanics, QBism, and many-worlds, not as a separate theory.
 
+## T103 Result
+
+[T103](../tests/T103-q1a-fixed-data-witness.md) clears the T102 gate only in
+the internal record-accounting sense. It constructs two cases with the same:
+
+- `computational_z` pointer basis;
+- reduced pointer coherence `0.0`;
+- fragment mutual information `E1 = E2 = E3 = 1.0` bit;
+- accessible raw redundancy `3`;
+- ordinary branch/history availability.
+
+The cases differ only in the independence partition. If `E1`, `E2`, and `E3`
+are independent provenance classes, D1 finalizes. If `E3` is a copied archive
+of `E1`, D1 does not finalize. A hidden-partition control withholds D1, and
+controls that change coherence, raw redundancy, or branch/history availability
+are rejected before scoring.
+
+This is a real Q1A fixed-data witness, but it is not a physics upgrade. The
+surviving delta is an access/provenance accounting predicate over already
+formed records. If nearby frameworks admit the same provenance-aware
+independence partition, Q1A collapses to disciplined bookkeeping.
+
 ## Contribution Needed
 
 Four concrete needs remain.
@@ -466,10 +490,10 @@ First, decide whether Q1 becomes a roadmap umbrella or separate claim files
 Q1A-Q1D. Until that split is made, do not use Q1 as a single supported physics
 claim in paper-facing text.
 
-Second, for Q1A, build one fixed-data witness family where decoherence,
-accessible raw redundancy, and ordinary branch/history availability stay fixed
-while only the access cut or independence partition changes the D1 verdict. If
-no such witness exists, demote Q1A again.
+Second, for Q1A, derive the T103 independence partition from physically
+auditable detector or environment-fragment provenance fixed before D1 scoring,
+then test whether Quantum Darwinism with provenance-aware fragment partitioning
+already absorbs the same verdict. If it does, demote Q1A to bookkeeping.
 
 Third, for detector provenance, obtain one concrete deployment that satisfies T78 and
 publish its raw event-level logs: event loss, signature verification failures,

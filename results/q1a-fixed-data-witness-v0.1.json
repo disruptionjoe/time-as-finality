@@ -1,0 +1,71 @@
+{
+  "baseline_case_id": "independent_records_fixed_data",
+  "cases": [
+    {
+      "case_id": "independent_records_fixed_data",
+      "standard_data_matches_baseline": true,
+      "accessible_raw_redundancy": 3,
+      "independent_accessible_support": 3,
+      "d1_verdict": "finalized",
+      "gate_verdict": "passes_fixed_data_gate",
+      "purpose": "Positive side of the fixed-data witness: all three accessible informative records are independent provenance classes."
+    },
+    {
+      "case_id": "copied_archive_fixed_data",
+      "standard_data_matches_baseline": true,
+      "accessible_raw_redundancy": 3,
+      "independent_accessible_support": 2,
+      "d1_verdict": "not_finalized",
+      "gate_verdict": "passes_fixed_data_gate",
+      "purpose": "Matched quantum-side data, but E3 is a copied archive of E1; D1 changes only because the independence partition changes."
+    },
+    {
+      "case_id": "partition_hidden_fixed_data",
+      "standard_data_matches_baseline": true,
+      "accessible_raw_redundancy": 3,
+      "independent_accessible_support": null,
+      "d1_verdict": "withhold_partition_unavailable",
+      "gate_verdict": "passes_fixed_quantum_data_but_withholds_d1",
+      "purpose": "Matched quantum-side data with inaccessible provenance; D1 is withheld rather than inferred from raw redundancy."
+    },
+    {
+      "case_id": "coherence_changed_control",
+      "standard_data_matches_baseline": false,
+      "accessible_raw_redundancy": 3,
+      "independent_accessible_support": null,
+      "d1_verdict": "invalid_fixed_data_gate",
+      "gate_verdict": "reject_standard_data_changed",
+      "purpose": "Negative control: a D1 change is inadmissible if reduced pointer coherence changes."
+    },
+    {
+      "case_id": "raw_redundancy_changed_control",
+      "standard_data_matches_baseline": false,
+      "accessible_raw_redundancy": 2,
+      "independent_accessible_support": null,
+      "d1_verdict": "invalid_fixed_data_gate",
+      "gate_verdict": "reject_standard_data_changed",
+      "purpose": "Negative control: a D1 change is inadmissible if accessible raw redundancy changes."
+    },
+    {
+      "case_id": "branch_history_changed_control",
+      "standard_data_matches_baseline": false,
+      "accessible_raw_redundancy": 3,
+      "independent_accessible_support": null,
+      "d1_verdict": "invalid_fixed_data_gate",
+      "gate_verdict": "reject_standard_data_changed",
+      "purpose": "Negative control: a D1 change is inadmissible if ordinary branch/history availability changes."
+    }
+  ],
+  "fixed_data_internal_witness_exists": true,
+  "negative_controls_rejected": true,
+  "hidden_partition_withholds": true,
+  "external_measurement_distinction_earned": false,
+  "strongest_claim": "Q1A now has an internal fixed-data witness: decoherence/pointer-basis evidence, fragment-information summaries, accessible raw redundancy, and ordinary branch/history availability can be held fixed while D1 changes from finalized to not_finalized solely because the independence partition treats a record as an independent copy versus a copied archive. This is not yet an external measurement-theory distinction; it is an access/provenance accounting predicate over already formed records.",
+  "improved": "T103 converts the T102 blocker into an executable gate with positive and negative controls. The repo can now distinguish a valid fixed-data Q1A witness from invalid cases that changed coherence, raw redundancy, or branch/history availability.",
+  "weakened": "The witness also weakens Q1A's physics ambition. The only surviving delta is carried by an independence/provenance predicate; if decoherence, Quantum Darwinism, consistent histories, RQM, QBism, or Everettian accounts admit that same predicate, Q1A collapses to bookkeeping.",
+  "falsification_condition": "Demote Q1A if every fixed-data D1 change requires adding a provenance or independence partition that neighboring frameworks can adopt without changing their physics, or if no physically auditable procedure fixes the partition before D1 scoring.",
+  "q1_update": "Q1A clears the internal fixed-data gate only as record independence accounting. It still does not earn new measurement dynamics, collapse content, Born-rule content, or empirical quantum support.",
+  "claim_ledger_update": "Add T103 to Q1: a fixed-data witness exists internally because the same decoherence, fragment-information, raw-redundancy, and branch/history summaries can yield finalized versus not_finalized D1 verdicts when only the independence partition changes. This upgrades Q1A only to conditional record-accounting support; external distinctness remains unearned if the partition is ordinary provenance bookkeeping.",
+  "open_blocker": "The partition is still fixture-declared. The next blocker is a physically auditable derivation of record independence that is fixed before D1 scoring and not just imported as TaF vocabulary.",
+  "recommended_next": "Derive the T103 independence partition from event-level detector or environment-fragment provenance, then test whether Quantum Darwinism with provenance-aware fragment partitioning already absorbs the same verdict."
+}

@@ -97,6 +97,15 @@ non-null only if a pre-registered event-level raw-log protocol yields a verdict
 that cannot be reduced to passive statistics, dashboard summaries, or post hoc
 provenance declarations.
 
+T104 sharpens the same boundary on the surviving Q1A witness. The T103 fixed-
+data case looked like a narrow external delta until the fragment partition was
+shared. Once redundancy is recomputed over audited provenance classes rather
+than raw fragment copies, provenance-aware Quantum Darwinism reproduces the
+same finalized/not-finalized/withhold verdicts as D1 on the tested family.
+The current Q1A witness is therefore absorbed by provenance-aware fragment
+partitioning and should be treated as admissibility/bookkeeping discipline
+unless another D1 dimension survives the same comparison.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing

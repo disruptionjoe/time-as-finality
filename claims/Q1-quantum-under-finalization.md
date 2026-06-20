@@ -85,6 +85,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T101: Q1 Branch Adjudication](../tests/T101-q1-branch-adjudication.md)
 - [T102: Q1A Neighbor Comparison Gate](../tests/T102-q1a-neighbor-comparison.md)
 - [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
+- [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 
 ## T21 Result
 
@@ -482,6 +483,31 @@ surviving delta is an access/provenance accounting predicate over already
 formed records. If nearby frameworks admit the same provenance-aware
 independence partition, Q1A collapses to disciplined bookkeeping.
 
+## T104 Result
+
+[T104](../tests/T104-q1a-provenance-aware-darwinism-absorption.md) executes
+that collapse test directly against the nearest surviving neighbor threat:
+Quantum Darwinism with provenance-aware fragment partitioning.
+
+T104 reuses the T103 fixed-data family without changing pointer basis,
+decoherence, fragment-information summaries, accessible raw redundancy, or
+ordinary branch/history availability. It then replaces raw fragment counting
+with provenance-aware fragment classes before comparing verdicts.
+
+The result is a clean absorption in the tested family:
+
+- independent case: raw redundancy `3`, provenance-aware redundancy `3`, D1
+  `finalized`;
+- copied-archive case: raw redundancy `3`, provenance-aware redundancy `2`,
+  D1 `not_finalized`;
+- hidden-partition case: raw redundancy `3`, provenance-aware redundancy
+  unavailable, D1 withholds rather than inferring finality.
+
+This removes the remaining external-distinction reading from the current T103
+family. Once fragment partitioning is audited on both sides, the present Q1A
+witness behaves like provenance-disciplined redundancy accounting over already
+formed records, not a distinct measurement theory.
+
 ## Contribution Needed
 
 Four concrete needs remain.
@@ -490,10 +516,10 @@ First, decide whether Q1 becomes a roadmap umbrella or separate claim files
 Q1A-Q1D. Until that split is made, do not use Q1 as a single supported physics
 claim in paper-facing text.
 
-Second, for Q1A, derive the T103 independence partition from physically
-auditable detector or environment-fragment provenance fixed before D1 scoring,
-then test whether Quantum Darwinism with provenance-aware fragment partitioning
-already absorbs the same verdict. If it does, demote Q1A to bookkeeping.
+Second, for Q1A, derive a future fixed-data witness where D1 still diverges
+after the provenance-aware fragment partition is shared. T104 shows that the
+current T103 family is absorbed once that partition is audited, so merely
+reasserting independence classes is no longer enough.
 
 Third, for detector provenance, obtain one concrete deployment that satisfies T78 and
 publish its raw event-level logs: event loss, signature verification failures,

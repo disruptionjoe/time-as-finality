@@ -32,6 +32,10 @@ clear the independent-axis gate.
   success-conditioned reversal as non-null undo-cost evidence.
 - T94 demotes weak measurement below detector provenance until a real platform
   supplies the missing independent axis.
+- T115 screens the most plausible hardware rescue, calorimetric or thermal
+  second-meter readout, and finds that the screened literature still supplies
+  alternate readout chains rather than a simultaneous dual-meter witness with
+  fixed standard monitored statistics.
 
 ## Not Earned
 
@@ -59,3 +63,4 @@ redundancy, access, and reversal-success statistics.
 - [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
 - [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
 - [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
+- [T115: Weak-Measurement Dual-Meter Screen](../tests/T115-weak-measurement-dual-meter-screen.md)

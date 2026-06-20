@@ -13,7 +13,7 @@ Conjecture.
 
 Partially supported only as a conditional constructor-style theorem or
 open-system/resource-accounting claim; weakened against direct physical reading
-by T80, T82, T84, T106, and T110.
+by T80, T82, T84, T106, T110, and T116.
 
 ## What This Does Not Claim
 
@@ -51,6 +51,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T84: Cyclic Reconciler Entropy Export](../tests/T84-cyclic-reconciler-entropy-export.md)
 - [T106: Bounded-Sink Reversible Compression](../tests/T106-bounded-sink-reversible-compression.md)
 - [T110: Finite-Permutation Monotone Obstruction](../tests/T110-finite-permutation-monotone-obstruction.md)
+- [T116: Open Markov Record-Entropy Comparison](../tests/T116-open-markov-record-entropy.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -125,3 +126,19 @@ admissibility relation, or an explicitly open-system/coarse-grained
 resource-accounting model that names its sink, erasure, fresh capacity, or
 excluded environment. H7 should not be presented as a new derivation of the
 thermodynamic arrow from closed finite reversible dynamics.
+
+## T116 Result
+
+[T116](../tests/T116-open-markov-record-entropy.md) tests the open-system
+loophole directly with finite Markov record fixtures. The detailed-balance
+record-shuffle control has zero path irreversibility and no strict finality
+arrow. A biased local cycle has positive path irreversibility but is not a
+scalar finality monotone. The open export recorder gets nondecreasing
+accounted records only by naming exported history and positive path log-ratio.
+The zero-log-ratio append-only control is monotone only while consuming fresh
+blank capacity.
+
+So the current open-system H7 route is still absorbed by standard stochastic
+thermodynamics, history export, or capacity accounting. H7 should be demoted in
+paper-facing prose to a constructor/resource-accounting lemma unless a future
+model clears the T116 zero-resource stochastic record-arrow gate.

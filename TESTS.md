@@ -23,6 +23,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T84](tests/T84-cyclic-reconciler-entropy-export.md) | Cyclic reconciler entropy export | H7, T80, T82 | implemented: fixed cyclic reconciliation restores monotone accounting only by exporting overwritten records or paying erasure cost |
 | [T106](tests/T106-bounded-sink-reversible-compression.md) | Bounded-sink reversible compression | H7, T80, T82, T84 | implemented: reversible compression does not rescue H7 once the bounded sink and closed return path are included |
 | [T110](tests/T110-finite-permutation-monotone-obstruction.md) | Finite-permutation monotone obstruction | H7, T80, T82, T84, T106 | implemented: finite closed reversible dynamics admit no strict scalar finality monotone unless the score is constant on each orbit |
+| [T116](tests/T116-open-markov-record-entropy.md) | Open Markov record-entropy comparison | H7, T110 | implemented: open stochastic record arrows are absorbed by path irreversibility, exported history, or fresh blank capacity in the tested fixtures |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
@@ -134,6 +135,7 @@ python -m models.run_t82
 python -m models.run_t84
 python -m models.run_t106
 python -m models.run_t110
+python -m models.run_t116
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t111_d1_gauge_invariance
@@ -218,6 +220,7 @@ The suites use only Python's standard library. Evidence records:
 - [Cyclic Reconciler Entropy Export v0.1 Results](results/cyclic-reconciler-entropy-export-v0.1-results.md)
 - [Bounded-Sink Reversible Compression v0.1 Results](results/bounded-sink-reversible-compression-v0.1-results.md)
 - [Finite-Permutation Monotone Obstruction v0.1 Results](results/finite-permutation-monotone-obstruction-v0.1-results.md)
+- [Open Markov Record-Entropy Comparison v0.1 Results](results/open-markov-record-entropy-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [D1 Gauge-Invariance Audit v0.1 Results](results/d1-gauge-invariance-audit-v0.1-results.md)

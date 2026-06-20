@@ -1,0 +1,622 @@
+{
+  "detailed_balance_control": {
+    "name": "detailed_balance_shuffle_control",
+    "states": [
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      },
+      {
+        "local_records": 1,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 1
+      },
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      },
+      {
+        "local_records": 1,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 1
+      },
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      }
+    ],
+    "steps": [
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "symmetric reversible record shuffle"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "after": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "symmetric reversible record shuffle"
+      },
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "symmetric reversible record shuffle"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "after": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "symmetric reversible record shuffle"
+      }
+    ],
+    "local_score_sequence": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "accounted_score_sequence": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "fresh_capacity_sequence": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "step_irreversibility_nats": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total_irreversibility_nats": 0.0,
+    "exported_records_added": 0,
+    "fresh_capacity_consumed": 0,
+    "local_nondecreasing": false,
+    "accounted_nondecreasing": false,
+    "accounted_strict_increase_edges": 2,
+    "candidate_independent_h7_arrow": false,
+    "classification": "no_strict_h7_arrow",
+    "verdict": "No strict accounted finality arrow is present in this control."
+  },
+  "nonequilibrium_cycle_control": {
+    "name": "nonequilibrium_cycle_control",
+    "states": [
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      },
+      {
+        "local_records": 1,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 1
+      },
+      {
+        "local_records": 2,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 2
+      },
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      }
+    ],
+    "steps": [
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "forward_probability": 0.8,
+        "reverse_probability": 0.2,
+        "path_irreversibility_nats": 1.3862943611198906,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "biased local cycle with positive path irreversibility"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "after": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "forward_probability": 0.8,
+        "reverse_probability": 0.2,
+        "path_irreversibility_nats": 1.3862943611198906,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "biased local cycle with positive path irreversibility"
+      },
+      {
+        "before": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "after": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "forward_probability": 0.8,
+        "reverse_probability": 0.2,
+        "path_irreversibility_nats": 1.3862943611198906,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "biased local cycle with positive path irreversibility"
+      }
+    ],
+    "local_score_sequence": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "accounted_score_sequence": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "fresh_capacity_sequence": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "step_irreversibility_nats": [
+      1.3862943611198906,
+      1.3862943611198906,
+      1.3862943611198906
+    ],
+    "total_irreversibility_nats": 4.1588830833596715,
+    "exported_records_added": 0,
+    "fresh_capacity_consumed": 0,
+    "local_nondecreasing": false,
+    "accounted_nondecreasing": false,
+    "accounted_strict_increase_edges": 2,
+    "candidate_independent_h7_arrow": false,
+    "classification": "no_strict_h7_arrow",
+    "verdict": "No strict accounted finality arrow is present in this control."
+  },
+  "open_export_recorder": {
+    "name": "open_export_recorder",
+    "states": [
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 0
+      },
+      {
+        "local_records": 1,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 1
+      },
+      {
+        "local_records": 2,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 2
+      },
+      {
+        "local_records": 0,
+        "exported_records": 2,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 2
+      },
+      {
+        "local_records": 1,
+        "exported_records": 2,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 3
+      },
+      {
+        "local_records": 2,
+        "exported_records": 2,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 4
+      },
+      {
+        "local_records": 0,
+        "exported_records": 4,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 4
+      }
+    ],
+    "steps": [
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 0
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 1
+        },
+        "after": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      },
+      {
+        "before": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "after": {
+          "local_records": 0,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 2,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      },
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 2
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 3
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 3
+        },
+        "after": {
+          "local_records": 2,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 4
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      },
+      {
+        "before": {
+          "local_records": 2,
+          "exported_records": 2,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 4
+        },
+        "after": {
+          "local_records": 0,
+          "exported_records": 4,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 4
+        },
+        "forward_probability": 0.9,
+        "reverse_probability": 0.1,
+        "path_irreversibility_nats": 2.1972245773362196,
+        "exported_delta": 2,
+        "fresh_capacity_delta": 0,
+        "label": "record locally, export history, clear local slot"
+      }
+    ],
+    "local_score_sequence": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0
+    ],
+    "accounted_score_sequence": [
+      0,
+      1,
+      2,
+      2,
+      3,
+      4,
+      4
+    ],
+    "fresh_capacity_sequence": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "step_irreversibility_nats": [
+      2.1972245773362196,
+      2.1972245773362196,
+      2.1972245773362196,
+      2.1972245773362196,
+      2.1972245773362196,
+      2.1972245773362196
+    ],
+    "total_irreversibility_nats": 13.183347464017316,
+    "exported_records_added": 4,
+    "fresh_capacity_consumed": 0,
+    "local_nondecreasing": false,
+    "accounted_nondecreasing": true,
+    "accounted_strict_increase_edges": 4,
+    "candidate_independent_h7_arrow": false,
+    "classification": "absorbed_by_entropy_export",
+    "verdict": "The strict accounted arrow is explained by the open export channel and positive path irreversibility."
+  },
+  "reversible_append_only_control": {
+    "name": "reversible_append_only_control",
+    "states": [
+      {
+        "local_records": 0,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 3,
+        "accounted_records": 0
+      },
+      {
+        "local_records": 1,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 2,
+        "accounted_records": 1
+      },
+      {
+        "local_records": 2,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 1,
+        "accounted_records": 2
+      },
+      {
+        "local_records": 3,
+        "exported_records": 0,
+        "fresh_capacity_remaining": 0,
+        "accounted_records": 3
+      }
+    ],
+    "steps": [
+      {
+        "before": {
+          "local_records": 0,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 3,
+          "accounted_records": 0
+        },
+        "after": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 2,
+          "accounted_records": 1
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 1,
+        "label": "logically reversible append on blank capacity"
+      },
+      {
+        "before": {
+          "local_records": 1,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 2,
+          "accounted_records": 1
+        },
+        "after": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 1,
+          "accounted_records": 2
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 1,
+        "label": "logically reversible append on blank capacity"
+      },
+      {
+        "before": {
+          "local_records": 2,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 1,
+          "accounted_records": 2
+        },
+        "after": {
+          "local_records": 3,
+          "exported_records": 0,
+          "fresh_capacity_remaining": 0,
+          "accounted_records": 3
+        },
+        "forward_probability": 0.5,
+        "reverse_probability": 0.5,
+        "path_irreversibility_nats": 0.0,
+        "exported_delta": 0,
+        "fresh_capacity_delta": 1,
+        "label": "logically reversible append on blank capacity"
+      }
+    ],
+    "local_score_sequence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "accounted_score_sequence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fresh_capacity_sequence": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "step_irreversibility_nats": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total_irreversibility_nats": 0.0,
+    "exported_records_added": 0,
+    "fresh_capacity_consumed": 3,
+    "local_nondecreasing": true,
+    "accounted_nondecreasing": true,
+    "accounted_strict_increase_edges": 3,
+    "candidate_independent_h7_arrow": false,
+    "classification": "absorbed_by_fresh_capacity",
+    "verdict": "The strict accounted arrow is paid for by consuming fresh blank record capacity."
+  },
+  "strongest_claim": "In the tested finite open Markov record fixtures, strict accounted finality appears only with standard path irreversibility plus history export, or with fresh blank capacity. Detailed-balance controls do not yield a strict record arrow, and a biased entropy-producing local cycle is not by itself a scalar finality monotone.",
+  "improved": "T116 answers T110's open-system next step by comparing H7 record arrows directly with stochastic path irreversibility, exported history, and append-only blank capacity in one finite audit.",
+  "weakened": "H7 is weakened as an independent thermodynamic-arrow proposal. The open recorder's monotone accounted finality is fully explained by the declared export channel and positive path log-ratio; the zero-log-ratio monotone uses fresh capacity.",
+  "falsification_condition": "T116 is falsified by a finite stochastic record model with a strict accounted-D1 monotone, zero path irreversibility, no distributional free-energy drawdown, no exported history, no fresh capacity consumption, no postselection, and reverse dynamics included rather than excluded.",
+  "h7_update": "Add T116 to H7: the explicit open Markov witness gives no independent open Markov arrow separating finality direction from entropy/export/fresh-capacity accounting. H7 remains a constructor/resource-accounting claim unless a zero-resource stochastic record arrow is produced.",
+  "claim_ledger_update": "H7 remains partially supported only as a conditional constructor or open-system resource-accounting claim. T116 finds no independent open Markov arrow: detailed-balance record shuffle has no strict finality direction, biased cyclic current is entropy-producing but not scalar-finality monotone, exported history gives monotone accounted records only with positive path irreversibility, and append-only monotonicity consumes fresh blank capacity.",
+  "open_blocker": "The repo still lacks a physically grounded H7 model whose record arrow is not absorbed by standard stochastic thermodynamics, history export, free-energy drawdown, or capacity accounting.",
+  "recommended_next": "Demote H7 in paper-facing prose to a constructor/resource accounting lemma, or search for a zero-resource stochastic record-arrow counterexample that clears the T116 gate."
+}

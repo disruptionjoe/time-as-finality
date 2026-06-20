@@ -1284,3 +1284,28 @@ forward direction. The converse is an open conjecture.
   same reachability state, opportunity set, control state, provenance,
   mechanism rights, and commons variables but a different FOA verdict.
 - Artifact: [T119 technical report](TECHNICAL-REPORT-future-operation-availability-residue-v0.1.md).
+
+### 2026-06-20 - Real Detector Packet Schema Audit (T121)
+
+- No Q1 or detector-physics claim is upgraded. T121 is detector evidence
+  infrastructure only.
+- Result: valid raw detector payload is not enough for admissibility. The
+  minimal packet must also carry detector identity, run/session id, causal
+  ordering data, calibration reference, provenance chain, signatures, authority
+  domains, publication status, revocation status, key-rotation/key-compromise
+  state, witness references, reconstruction paths, admissibility tokens, and
+  challenge/dispute status.
+- Finite cases: valid packet, missing provenance, key compromised, revoked
+  authority, delayed publication, collapsed authority domains, valid raw data
+  but inadmissible packet, and same raw data with reduced future operation
+  rights.
+- Existing-artifact absorption: provenance, signatures, publication timing,
+  authority separation, witness references, reconstruction paths, and
+  admissibility tokens are mostly covered by T78/T87/T97/T100.
+- Missing schema requirements: revocation registry/check time, key rotation
+  and key-compromise continuity, and challenge/dispute lifecycle state need
+  explicit packet-level ownership.
+- Claim impact: treat T121 as a prerequisite evidence object for future
+  detector-packet validation before any D1 scoring or detector-branch
+  admissibility claim.
+- Artifact: [T121 technical report](TECHNICAL-REPORT-real-detector-packet-schema-audit-v0.1.md).

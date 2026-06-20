@@ -5,7 +5,7 @@
 The persona goal proposed that `ASP_O(U)` might be a useful mathematical object
 rather than elegant notation for existing ideas.
 
-T119 tests the strongest narrowed version:
+T120 tests the strongest narrowed version:
 
 ```text
 ASP_O^T(U,h) = typed observer/task-indexed admissible future set
@@ -44,7 +44,7 @@ for `U subset V`.
 
 ## Result
 
-T119 supports the narrowed formalization but kills independent promotion.
+T120 supports the narrowed formalization but kills independent promotion.
 
 The stable predicate case forms a typed subpresheaf:
 
@@ -137,7 +137,7 @@ name for the enriched feasible future operation set.
 
 ## What This Improved
 
-T119 improves the ASP thread by separating three issues that were previously
+T120 improves the ASP thread by separating three issues that were previously
 easy to conflate:
 
 1. `ASP_O(U)` can be type-disciplined as a finite subpresheaf when predicates
@@ -150,7 +150,7 @@ This makes ASP usable as a test object without promoting it as a primitive.
 
 ## What This Weakened Or Falsified
 
-T119 weakens any claim that ASP is independent of existing frameworks. It
+T120 weakens any claim that ASP is independent of existing frameworks. It
 survives coarse comparisons but collapses into enriched reachability,
 opportunity-set, provenance, access-control, and task-enriched viability
 machinery.
@@ -194,7 +194,7 @@ a replacement for entropy, information, finality, viability, or reachability
 No core claim upgrade.
 
 No roadmap, claim-ledger, or persona-registry update is warranted from this
-audit. If referenced later, T119 should be cited as an absorption result with a
+audit. If referenced later, T120 should be cited as an absorption result with a
 finite type-discipline benefit.
 
 ## Open Follow-Up
@@ -214,5 +214,5 @@ Absent that witness, ASP should stay as vocabulary plus audit discipline.
 
 ```bash
 python -m unittest tests.test_asp_typed_subpresheaf_absorption -v
-python -m models.run_t119
+python -m models.run_t120
 ```

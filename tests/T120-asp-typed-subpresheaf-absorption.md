@@ -1,4 +1,4 @@
-# T119: ASP Typed Subpresheaf And Absorption Audit v0.2
+# T120: ASP Typed Subpresheaf And Absorption Audit v0.2
 
 ## Route
 
@@ -89,5 +89,5 @@ absorbs the separation cleanly, record the absorption as the main result.
 
 ```bash
 python -m unittest tests.test_asp_typed_subpresheaf_absorption -v
-python -m models.run_t119
+python -m models.run_t120
 ```

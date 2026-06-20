@@ -1,4 +1,4 @@
-"""Tests for T119 ASP typed subpresheaf and absorption audit."""
+"""Tests for T120 ASP typed subpresheaf and absorption audit."""
 
 from __future__ import annotations
 
@@ -6,13 +6,13 @@ import unittest
 
 from models.asp_typed_subpresheaf_absorption import (
     Capture,
-    run_t119_analysis,
+    run_t120_analysis,
 )
 
 
 class ASPTypedSubpresheafAbsorptionTests(unittest.TestCase):
     def setUp(self) -> None:
-        self.result = run_t119_analysis()
+        self.result = run_t120_analysis()
 
     def test_positive_system_is_typed_subpresheaf(self) -> None:
         self.assertTrue(self.result.positive_restriction.closure_holds)

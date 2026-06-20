@@ -1,4 +1,4 @@
-"""T119: ASP typed subpresheaf and absorption audit.
+"""T120: ASP typed subpresheaf and absorption audit.
 
 The model narrows ASP to a finite observer/task-indexed admissible future set.
 It checks whether the object behaves like a typed subpresheaf under stable
@@ -132,7 +132,7 @@ class AbsorptionAudit:
 
 
 @dataclass(frozen=True)
-class T119Result:
+class T120Result:
     positive_restriction: RestrictionAudit
     negative_restriction: RestrictionAudit
     relabeling: RelabelAudit
@@ -547,13 +547,13 @@ def audit_absorption() -> AbsorptionAudit:
     )
 
 
-def run_t119_analysis() -> T119Result:
+def run_t120_analysis() -> T120Result:
     positive = audit_restriction(build_positive_presheaf(), "stable_typed_predicates")
     negative = audit_restriction(build_negative_presheaf(), "audit_monotonicity_violation")
     relabeling = audit_relabeling()
     boundary = audit_boundary_covariance()
     absorption = audit_absorption()
-    return T119Result(
+    return T120Result(
         positive_restriction=positive,
         negative_restriction=negative,
         relabeling=relabeling,
@@ -582,7 +582,7 @@ def run_t119_analysis() -> T119Result:
     )
 
 
-def t119_result_to_dict(result: T119Result) -> dict[str, object]:
+def t120_result_to_dict(result: T120Result) -> dict[str, object]:
     return {
         "positive_restriction": _restriction_to_dict(result.positive_restriction),
         "negative_restriction": _restriction_to_dict(result.negative_restriction),
@@ -632,4 +632,4 @@ def _restriction_to_dict(audit: RestrictionAudit) -> dict[str, object]:
 if __name__ == "__main__":
     import json
 
-    print(json.dumps(t119_result_to_dict(run_t119_analysis()), indent=2))
+    print(json.dumps(t120_result_to_dict(run_t120_analysis()), indent=2))

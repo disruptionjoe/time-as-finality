@@ -1,4 +1,4 @@
-"""Write T119 ASP typed subpresheaf absorption-audit results to disk."""
+"""Write T120 ASP typed-subpresheaf absorption audit results."""
 
 from __future__ import annotations
 
@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 from models.asp_typed_subpresheaf_absorption import (
-    run_t119_analysis,
-    t119_result_to_dict,
+    run_t120_analysis,
+    t120_result_to_dict,
 )
 
 
@@ -16,7 +16,7 @@ RESULTS_MD = Path("results/asp-typed-subpresheaf-absorption-v0.2-results.md")
 
 
 def main() -> None:
-    payload = t119_result_to_dict(run_t119_analysis())
+    payload = t120_result_to_dict(run_t120_analysis())
     RESULTS_JSON.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     RESULTS_MD.write_text(_render_markdown(payload), encoding="utf-8")
 
@@ -24,12 +24,10 @@ def main() -> None:
 def _render_markdown(payload: dict[str, object]) -> str:
     positive = payload["positive_restriction"]
     negative = payload["negative_restriction"]
-    relabeling = payload["relabeling"]
     boundary = payload["boundary"]
     absorption = payload["absorption"]
-
     lines = [
-        "# T119 Results: ASP Typed Subpresheaf And Absorption Audit v0.2",
+        "# T120 Results: ASP Typed Subpresheaf And Absorption Audit v0.2",
         "",
         "## Strongest version",
         "",
@@ -54,7 +52,7 @@ def _render_markdown(payload: dict[str, object]) -> str:
         "",
         "## Relabeling invariance",
         "",
-        f"Relabeling invariant: `{relabeling['invariant']}`",
+        f"Relabeling invariant: `{payload['relabeling']['invariant']}`",
         "",
         "## Boundary covariance",
         "",
@@ -73,9 +71,15 @@ def _render_markdown(payload: dict[str, object]) -> str:
         "| Check | Result |",
         "| --- | --- |",
         f"| Coarse metrics match | `{absorption['coarse_metrics_match']}` |",
-        f"| Coarse reachability separates | `{absorption['coarse_reachability_separates']}` |",
+        (
+            "| Coarse reachability separates | "
+            f"`{absorption['coarse_reachability_separates']}` |"
+        ),
         f"| ASP separates | `{absorption['asp_separates']}` |",
-        f"| Enriched reachability absorbs | `{absorption['enriched_reachability_absorbs']}` |",
+        (
+            "| Enriched reachability absorbs | "
+            f"`{absorption['enriched_reachability_absorbs']}` |"
+        ),
         f"| Opportunity set absorbs | `{absorption['opportunity_set_absorbs']}` |",
         f"| High ASP tasks | `{absorption['high_asp_tasks']}` |",
         f"| Low ASP tasks | `{absorption['low_asp_tasks']}` |",
@@ -85,8 +89,8 @@ def _render_markdown(payload: dict[str, object]) -> str:
         "| Comparator | Capture |",
         "| --- | --- |",
     ]
-    for target, capture in absorption["prior_art"].items():
-        lines.append(f"| {target} | `{capture}` |")
+    for comparator, capture in absorption["prior_art"].items():
+        lines.append(f"| {comparator} | `{capture}` |")
     lines.extend(
         [
             "",

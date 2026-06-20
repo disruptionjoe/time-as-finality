@@ -200,7 +200,7 @@ file tree, same diff size, different authorship or merge authority.
 - **Most profound implication:** Obstruction relocation may be the first
   broader mathematical pattern connecting LossKernel, provenance, access gaps,
   and projection examples.
-- **Most actionable next direction:** Build a T95-style obstruction relocation
+- **Most actionable next direction:** Build a T102-style obstruction relocation
   audit with a Git semantic-merge witness and a negative control.
 - **Additional promising directions:** type-and-effect formulation;
   database-provenance comparison; source-witness indexed annotation.

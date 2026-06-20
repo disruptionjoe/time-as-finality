@@ -765,3 +765,95 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 - ambition: Force the mathematical independence claim to survive the strongest
   available collapse test.
 
+### P73 - Iterated Loss Dynamics Researcher
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Investigate repeated composition of finite LossKernel-bearing morphisms
+  by computing `LossKernel(T^n)` for bounded horizons, then classify whether
+  loss stabilizes, saturates, cycles, degrades failure type, or reveals a
+  recurrence invisible from `LossKernel(T)`.
+- ambition: Decide whether iterated loss is a genuine extension of the
+  T69/T73 algebra or only a visualization of finite label accumulation.
+
+### P74 - GU-Generated Loop Witness Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Use GU-adjacent structures only as geometry-generating test harnesses:
+  extract finite loop/projection/transport candidates from Pati-Salam,
+  spin-holonomy, gauge-bundle, or existing typed-forgetting witnesses, then test
+  whether iteration produces new LossKernel behavior.
+- ambition: Keep GU quarantined as source language while checking whether its
+  finite loop suggestions create useful typed-loss examples.
+
+### P75 - Iterated Loss Signature Extractor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Build a finite feature extractor for loss trajectories
+  `T, T^2, ..., T^n`: loss size, lost-type vector, preserved dimensions,
+  failure degree, holonomy class, recurrence period, stabilization time, and
+  cycle-destroying events.
+- ambition: Use latent/signature methods only to find example families the
+  symbolic LossKernel theory should explain, not to replace the math.
+
+### P76 - LossKernel Orbit-Space Formalist
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Define the finite orbit `Orbit_L(T) = {LossKernel(T^n) : n >= 1}` for
+  current restriction-system and transport-network morphisms, then test whether
+  orbit equivalence explains examples that one-step LossKernel misses.
+- ambition: Compress iterated examples into a mathematical object only if it
+  connects back to T69/T73 and the LossKernel formalization gate.
+
+### P77 - Recurrence Classification Theorem Hunter
+
+- status: blocked
+- last_run:
+- artifact:
+- goal: After P73-P76 produce nontrivial examples, attempt a finite recurrence
+  classification theorem for repeated typed-loss morphisms: fixed-loss,
+  saturating-loss, periodic-loss, cycle-destroying, and failure-type-degrading
+  cases.
+- ambition: Defer theorem language until iterated examples justify it; prevent
+  an attractive recurrence taxonomy from outrunning the evidence.
+
+### P78 - Obstruction Relocation Auditor
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Audit T39, T63/T65, T68/T72/T74, T73, and Pati-Salam typed forgetting
+  for a precise obstruction-relocation pattern: reconstruction failure may be
+  preserved, lowered in degree, or moved into provenance/loss/admissibility
+  bookkeeping rather than eliminated.
+- ambition: Turn "the problem moved" into a finite classification test without
+  using conservation-law language.
+
+### P79 - Reconstruction Debt Quantifier
+
+- status: queued
+- last_run:
+- artifact:
+- goal: Define a finite "reconstruction debt" observable induced by LossKernel:
+  ambiguity count, non-uniqueness, missing provenance obligation, hidden witness
+  requirement, or target reconstruction uncertainty lower bound.
+- ambition: Decide whether conservation-of-missing-information can be weakened
+  into a measurable target-side footprint of loss.
+
+### P80 - Obstruction-Degree Flow Theorem Auditor
+
+- status: blocked
+- last_run:
+- artifact:
+- goal: Generalize T69 only after stronger examples exist: test whether
+  admissible loss morphisms are monotone along a reconstruction-failure hierarchy
+  such as H2 -> H1 -> H0 -> none, and identify which hypotheses are required.
+- ambition: Keep the attractive obstruction-degree theorem gated by coefficient,
+  support, and cover-semantics discipline.

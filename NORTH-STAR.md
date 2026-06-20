@@ -15,6 +15,69 @@ which parts do not.
 The mathematics is not trying to prove the North Star. The mathematics is
 trying to discover which small pieces of the North Star are actually true.
 
+## Protected Intuition Anchor
+
+The following intuition is protected as a source of research direction:
+
+- Reality contains many observers.
+- Observers create and exchange records.
+- Records stabilize at finite rates.
+- The structure of those stabilization processes may be more fundamental than
+  the clocks observers later infer.
+
+This is not a conclusion. It is a north-star generator of questions.
+
+Do not dismiss this intuition merely because it is incomplete, imprecise,
+difficult to formalize, or currently unsupported. Before replacing it with a
+more conventional theory, ask:
+
+```text
+What follows if this intuition contains an important truth?
+```
+
+At the same time, do not jump directly from this intuition to strong physical
+conclusions about the speed of light, relativity, spacetime, quantum mechanics,
+or cosmology. Those conclusions must be earned independently.
+
+The preferred research style is:
+
+- ask what follows from local record systems;
+- ask what follows from reconstruction constraints;
+- ask what follows from stabilization processes;
+- ask what mathematical structures emerge if records are primary;
+- prefer executable tests over arguments;
+- prefer theorem candidates over explanations;
+- discover consequences rather than defend the intuition.
+
+Good examples of the desired style include T19, T63, T69, T73, the H0/H1
+reconstruction hierarchy, and the gated LossKernel program. These results and
+open formal targets did not prove the intuition. They asked what followed from
+it.
+
+Failure modes to avoid:
+
+- "the universe is a blockchain";
+- "this explains the speed of light";
+- "this proves spacetime emerges from records";
+- treating the intuition as already established;
+- dismissing the intuition because the current mathematics is incomplete;
+- replacing the intuition with a fashionable framework before extracting its
+  consequences.
+
+The mathematics remains free to confirm, refine, weaken, reinterpret, or
+partially reject any specific consequence. The goal is not:
+
+```text
+prove the intuition
+```
+
+The goal is:
+
+```text
+discover what necessarily follows if the intuition is pointing toward
+something real
+```
+
 ## What the Mathematics Has Moved Away From
 
 The recent trajectory — T1 through T36 — has moved consistently away from

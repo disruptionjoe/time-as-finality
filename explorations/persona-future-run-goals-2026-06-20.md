@@ -105,9 +105,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P07 - Quantum Foundations Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T15:44:18-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-154418-p07-quantum-foundations-q1-neighbor-audit.md
 - goal: Compare the Q1/T12/T90 branch against decoherence, Quantum Darwinism,
   consistent histories, relational quantum mechanics, QBism, and many-worlds,
   identifying what, if anything, TaF predicts or organizes differently.

@@ -1,0 +1,382 @@
+{
+  "reference_packet_id": "same_payload_reference_packet",
+  "reference_view": {
+    "raw_payload": [
+      "event:e1:+",
+      "event:e2:-",
+      "event:e3:+",
+      "event:e4:-"
+    ],
+    "measurement_result": "plus=2;minus=2;balance=0",
+    "coarse_detector_summary": [
+      {
+        "field": "detector_identity",
+        "value": "detector:hbt-stack-a"
+      },
+      {
+        "field": "run_session_id",
+        "value": "run:2026-06-20:001"
+      },
+      {
+        "field": "calibration_reference",
+        "value": "calibration:cal-2026-06-20:signed"
+      },
+      {
+        "field": "event_count",
+        "value": 4
+      },
+      {
+        "field": "plus_count",
+        "value": 2
+      },
+      {
+        "field": "minus_count",
+        "value": 2
+      }
+    ]
+  },
+  "audits": [
+    {
+      "packet_id": "same_payload_reference_packet",
+      "changed_packet_fields": [],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "admissible",
+      "signature_valid": true,
+      "admissibility_failures": [],
+      "future_operations": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "read_immediate_result",
+        "reconstruct_event",
+        "retain_raw_payload",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_removed_vs_reference": [],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": false,
+      "explanation": "same_payload_reference_packet: same raw result and complete packet wrapper preserve full detector evidence operations."
+    },
+    {
+      "packet_id": "missing_provenance_same_payload",
+      "changed_packet_fields": [
+        "provenance_chain",
+        "admissibility_tokens"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": false,
+      "admissibility_failures": [
+        "missing_strict_packet_fields",
+        "missing_provenance_chain",
+        "missing_admissibility_tokens",
+        "invalid_signature"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "missing_provenance_same_payload: same raw result is readable, but packet failures remove future evidence operations: missing_strict_packet_fields, missing_provenance_chain, missing_admissibility_tokens, invalid_signature."
+    },
+    {
+      "packet_id": "authority_collapsed_same_payload",
+      "changed_packet_fields": [
+        "authority_domains",
+        "admissibility_tokens"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "authority_domains_collapsed",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "authority_collapsed_same_payload: same raw result is readable, but packet failures remove future evidence operations: authority_domains_collapsed, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "invalid_signature_same_payload",
+      "changed_packet_fields": [
+        "signatures",
+        "admissibility_tokens"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": false,
+      "admissibility_failures": [
+        "missing_admissibility_tokens",
+        "invalid_signature"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "invalid_signature_same_payload: same raw result is readable, but packet failures remove future evidence operations: missing_admissibility_tokens, invalid_signature."
+    },
+    {
+      "packet_id": "key_compromised_same_payload",
+      "changed_packet_fields": [
+        "key_state"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "signing_key_compromised"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "key_compromised_same_payload: same raw result is readable, but packet failures remove future evidence operations: signing_key_compromised."
+    },
+    {
+      "packet_id": "revoked_authority_same_payload",
+      "changed_packet_fields": [
+        "revocation_status"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "authority_or_packet_revoked"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "revoked_authority_same_payload: same raw result is readable, but packet failures remove future evidence operations: authority_or_packet_revoked."
+    },
+    {
+      "packet_id": "publication_delayed_same_payload",
+      "changed_packet_fields": [
+        "publication_status",
+        "admissibility_tokens"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "packet_not_published_before_analysis",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "publication_delayed_same_payload: same raw result is readable, but packet failures remove future evidence operations: packet_not_published_before_analysis, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "missing_witnesses_same_payload",
+      "changed_packet_fields": [
+        "witness_references"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "missing_strict_packet_fields",
+        "missing_witness_references"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "missing_witnesses_same_payload: same raw result is readable, but packet failures remove future evidence operations: missing_strict_packet_fields, missing_witness_references."
+    },
+    {
+      "packet_id": "missing_reconstruction_same_payload",
+      "changed_packet_fields": [
+        "reconstruction_paths"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "inadmissible",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "missing_strict_packet_fields",
+        "missing_reconstruction_paths"
+      ],
+      "future_operations": [
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "missing_reconstruction_same_payload: same raw result is readable, but packet failures remove future evidence operations: missing_strict_packet_fields, missing_reconstruction_paths."
+    },
+    {
+      "packet_id": "open_challenge_same_payload",
+      "changed_packet_fields": [
+        "admissibility_tokens",
+        "challenge_status"
+      ],
+      "same_raw_payload": true,
+      "same_measurement_result": true,
+      "same_coarse_detector_summary": true,
+      "packet_verdict": "withhold",
+      "signature_valid": true,
+      "admissibility_failures": [
+        "missing_admissibility_tokens",
+        "open_challenge_or_dispute"
+      ],
+      "future_operations": [
+        "inspect_dispute",
+        "preserve_evidence",
+        "read_immediate_result",
+        "retain_raw_payload"
+      ],
+      "operations_removed_vs_reference": [
+        "audit_authority",
+        "bind_calibration",
+        "certify_packet",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_added_vs_reference": [
+        "inspect_dispute",
+        "preserve_evidence"
+      ],
+      "immediate_result_unchanged_but_foa_changed": true,
+      "explanation": "open_challenge_same_payload: same raw result is readable, but dispute state withholds claim review and certification operations."
+    }
+  ],
+  "strongest_claim": "Yes. In the finite detector-packet audit, packet-level structure changes admissibility, reconstruction, challenge, certification, and future operation availability while raw payload, immediate measurement result, and coarse detector summary remain fixed.",
+  "what_changed": "Provenance completeness, authority separation, signature validity, key-compromise status, revocation status, publication timing, witness availability, reconstruction paths, and challenge state each remove future operations in at least one same-payload variant.",
+  "what_did_not_change": "The raw rows, plus/minus measurement result, detector identity, run identifier, calibration reference, event count, and coarse plus/minus summary are identical across all T123 packet variants.",
+  "claim_impact_note": "No Q1 or detector-physics promotion. T123 is detector evidence infrastructure: raw measurement sameness does not imply equal packet admissibility or equal future operation rights.",
+  "falsification_condition": "T123's same-payload FOA split is falsified if packet protocols declare that admissibility, reconstruction, challenge, certification, and claim-review rights are functions only of raw payload, immediate measurement result, and coarse detector summary. Such a protocol would also abandon the T78/T87/T97/T100/T121 evidence requirements.",
+  "open_blocker": "The audit is still schema-level. It must be integrated into the T97 dry-run packet and then populated by a real pre-registered detector deployment before any detector branch can be evaluated.",
+  "recommended_next": "Add a T97 packet fixture that emits the T123 same-payload variants with signed manifests, then require the real detector packet to report both immediate measurement results and FOA verdicts side by side.",
+  "claim_ledger_update": "Q1B remains externally blocked and receives no empirical upgrade. T123 adds detector evidence infrastructure: same raw payload, same measurement result, and same coarse detector summary can still yield different admissibility and future operation availability when packet provenance, authority, signature, key, revocation, publication, witness, reconstruction, or challenge fields differ."
+}

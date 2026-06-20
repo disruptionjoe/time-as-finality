@@ -1330,3 +1330,19 @@ forward direction. The converse is an open conjecture.
   detector-packet validation before any D1 scoring or detector-branch
   admissibility claim.
 - Artifact: [T121 technical report](TECHNICAL-REPORT-real-detector-packet-schema-audit-v0.1.md).
+
+### 2026-06-20 - Same-Payload Packet FOA Witness (T123)
+
+- No Q1 or detector-physics claim is upgraded. T123 is detector evidence
+  infrastructure only.
+- Result: same raw detector payload, same immediate measurement result, and
+  same coarse detector summary can still yield different admissibility and
+  future operation availability when packet wrapper fields differ.
+- Load-bearing fields: provenance completeness, authority separation,
+  signature validity, key-compromise state, revocation status, publication
+  timing, witness availability, reconstruction paths, and challenge state.
+- Claim impact: raw-measurement sameness is not enough for detector-branch
+  claim review. The packet wrapper remains part of the evidence object.
+- Open blocker: integrate the same-payload variants into the T97 dry-run
+  packet fixture before any real deployment packet can be evaluated.
+- Artifact: [T123 technical report](TECHNICAL-REPORT-same-payload-packet-foa-witness-v0.1.md).

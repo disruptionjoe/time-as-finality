@@ -1049,3 +1049,41 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 - ambition: Decide whether the "track where lost structure goes" idea should
   become an executable axis-crossing audit, a same-neighbor-data quotient test,
   or be demoted to integration vocabulary over existing formal tools.
+
+### P98 - Maintenance-Economics Emergence Synthesist
+
+- status: queued
+- priority: high_exploratory
+- requested_by: Joe
+- created: 2026-06-20
+- last_run:
+- artifact:
+- posture: exploratory preservation only; not a claim promotion, roadmap change,
+  or evidence update.
+- goal: Determine whether emergence can be modeled as a partial solution to
+  public-goods maintenance: complex structures emerge because they reduce the
+  cost of maintaining shared records, trust, coordination, reconstruction, or
+  future structures enough to open an emergence window.
+- intuition: The most important structures may not be those that emerge, but
+  those that become platforms for further emergence. Emergence may be the
+  process by which structure partially solves the maintenance problem for
+  future structure.
+- connections: emergence windows, stacked preservation protocols,
+  reconstruction debt, loss relocation, witness obligations, admissibility,
+  consciousness protocol stacks, commons governance, public-goods maintenance,
+  record viability, ecological resilience, evolutionary game theory, and
+  structure-that-begets-structure.
+- investigation:
+  1. Test whether the idea collapses into existing commons theory,
+     evolutionary dynamics, resilience theory, public-goods models, mechanism
+     design, or institutional economics.
+  2. If it does not collapse, identify the smallest useful formal object:
+     maintenance cost, shared-structure viability, emergence window,
+     protocol-stack cost reduction, reconstruction debt, or platform-for-future-
+     emergence relation.
+  3. Build one finite toy model or obstruction showing when a structure reduces
+     maintenance cost enough for a higher-order structure to remain viable, and
+     when the same story is only ordinary public-goods theory in new language.
+- ambition: Decide whether "emergence as partial maintenance solution for
+  future structure" is a genuinely useful synthesis or only a high-level
+  restatement of existing commons and evolutionary models.

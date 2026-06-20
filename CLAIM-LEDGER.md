@@ -868,3 +868,21 @@ forward direction. The converse is an open conjecture.
 - Suggested next move: either push detector provenance toward one T78/T87-style
   deployment plan, or name a new weak-measurement platform that clears the
   reinstatement gate before any further modeling.
+
+### 2026-06-20 - Detector Stack Export Map (T95)
+
+- Q1 remains `partially_supported`, with detector provenance narrowed again.
+- T95 maps the T75 HydraHarp/White Rabbit/signed-archive route directly onto
+  the T87 raw-log tables. Native timing export and a signed archive without the
+  control packet are both inadmissible for detector-side Q1 upgrade.
+- The only positive case is
+  `admissible_as_preregistered_deployment_plan_only`: an augmented packet with
+  pre-registration, copied/independent controls, tag ambiguity challenges,
+  perturbation trials, signed ancestry edges, trust audits, demotion decisions,
+  stable event joins, and immutable exports.
+- Claim impact: the detector route is still executable, but most required
+  structure is provenance/control middleware rather than native detector
+  physics. Passing T95 is not empirical support and does not compute D1.
+- Open blocker: no real event rows exist for the augmented map. The next
+  non-null move is a dry-run packet that passes T87 without adding fields after
+  data collection, then locked T76/T86 population.

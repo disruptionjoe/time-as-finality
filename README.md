@@ -83,6 +83,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - ambiguous-tag hostile-family audit showing perturbation-only and
     signed-DAG-only raw-log fixtures can rescue the partition internally, but
     only as isolated pre-registered controls rather than empirical support.
+- [TECHNICAL-REPORT-detector-stack-export-map-v0.1.md](TECHNICAL-REPORT-detector-stack-export-map-v0.1.md)
+  - instrument-level export map showing that the HydraHarp/White Rabbit/signed
+    archive route is admissible only as an augmented pre-registered T87 packet,
+    not as native detector evidence or empirical support.
 - [TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md](TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md)
   - weak-measurement undo-cost audit showing that control-pulse energy,
     trajectory-derived cost, and postselected reversal success are null unless

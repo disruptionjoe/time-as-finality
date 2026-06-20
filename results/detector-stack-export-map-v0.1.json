@@ -1,0 +1,257 @@
+{
+  "required_t87_tables": {
+    "preregistration_manifest": [
+      "run_id",
+      "registered_at",
+      "first_event_not_before",
+      "policy_hash",
+      "analysis_code_hash",
+      "evidence_schema_hash",
+      "demotion_rules_hash",
+      "confidence_floor_low",
+      "max_false_risk_high"
+    ],
+    "control_pair_manifest": [
+      "pair_id",
+      "role",
+      "expected_relation",
+      "local_record_id",
+      "archive_record_id",
+      "source_event_id",
+      "timing_bin_id",
+      "randomization_seed_commitment",
+      "declared_before_event"
+    ],
+    "event_time_tag_stream": [
+      "event_id",
+      "detector_id",
+      "local_time",
+      "local_sigma",
+      "archive_time",
+      "archive_sigma",
+      "batch_id",
+      "batching_window",
+      "timing_uncertainty_model_id"
+    ],
+    "signature_verification_log": [
+      "event_id",
+      "tag_id",
+      "signature_id",
+      "verification_result",
+      "signer_key_id",
+      "forgery_challenge_id",
+      "spoof_challenge_id",
+      "verification_timestamp"
+    ],
+    "tag_ambiguity_challenge_log": [
+      "challenge_id",
+      "event_id",
+      "role",
+      "retained_tag",
+      "accepted_forged_tag",
+      "accepted_spoofed_independent_tag",
+      "unique_independent_tag",
+      "verdict"
+    ],
+    "perturbation_trial_log": [
+      "trial_id",
+      "pair_id",
+      "perturbed_record_id",
+      "perturbation_type",
+      "response_changed",
+      "independent_false_change",
+      "back_action_detected",
+      "pre_trial_state_hash",
+      "post_trial_state_hash"
+    ],
+    "ancestry_dag_edge_export": [
+      "edge_id",
+      "child_record_id",
+      "parent_record_id",
+      "edge_signature_id",
+      "edge_verified",
+      "export_snapshot_id",
+      "truncation_flag",
+      "false_shared_edge_challenge_id"
+    ],
+    "trust_boundary_audit_log": [
+      "audit_id",
+      "component",
+      "boundary_type",
+      "integrity_check_passed",
+      "key_scope",
+      "operator_id_hash",
+      "audit_timestamp"
+    ],
+    "demotion_decision_log": [
+      "run_id",
+      "control_role",
+      "demotion_condition",
+      "triggered",
+      "applied_before_d1",
+      "reason"
+    ]
+  },
+  "audits": [
+    {
+      "map_name": "hydraharp_white_rabbit_native_timing_only",
+      "verdict": "inadmissible_for_detector_q1_upgrade",
+      "missing_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "missing_columns": [
+        "event_time_tag_stream.batch_id",
+        "event_time_tag_stream.batching_window",
+        "event_time_tag_stream.timing_uncertainty_model_id"
+      ],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "posthoc_tables": [],
+      "unjoinable_tables": [],
+      "instrument_native_tables": [
+        "event_time_tag_stream"
+      ],
+      "middleware_required_tables": [],
+      "failure_reasons": [
+        "not_locked_to_t87_schema",
+        "missing_required_t87_tables",
+        "missing_required_t87_columns"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "map_name": "signed_archive_without_control_packet",
+      "verdict": "inadmissible_for_detector_q1_upgrade",
+      "missing_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "demotion_decision_log"
+      ],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "posthoc_tables": [],
+      "unjoinable_tables": [],
+      "instrument_native_tables": [
+        "event_time_tag_stream"
+      ],
+      "middleware_required_tables": [
+        "signature_verification_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log"
+      ],
+      "failure_reasons": [
+        "not_locked_to_t87_schema",
+        "missing_required_t87_tables"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "map_name": "augmented_preregistered_time_tagging_plan",
+      "verdict": "admissible_as_preregistered_deployment_plan_only",
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "posthoc_tables": [],
+      "unjoinable_tables": [],
+      "instrument_native_tables": [
+        "event_time_tag_stream"
+      ],
+      "middleware_required_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "failure_reasons": [],
+      "next_allowed_audit": "collect_real_event_rows_without_schema_changes"
+    },
+    {
+      "map_name": "posthoc_augmented_time_tagging_map",
+      "verdict": "inadmissible_for_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "posthoc_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "unjoinable_tables": [],
+      "instrument_native_tables": [
+        "event_time_tag_stream"
+      ],
+      "middleware_required_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "failure_reasons": [
+        "not_a_pre_data_deployment_plan",
+        "required_tables_not_preregistered"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    },
+    {
+      "map_name": "dashboard_summary_export_map",
+      "verdict": "inadmissible_for_detector_q1_upgrade",
+      "missing_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "missing_columns": [],
+      "non_event_level_tables": [],
+      "mutable_tables": [],
+      "posthoc_tables": [],
+      "unjoinable_tables": [],
+      "instrument_native_tables": [],
+      "middleware_required_tables": [],
+      "failure_reasons": [
+        "not_a_pre_data_deployment_plan",
+        "not_locked_to_t87_schema",
+        "missing_required_t87_tables"
+      ],
+      "next_allowed_audit": "withhold_detector_q1_upgrade"
+    }
+  ],
+  "strongest_claim": "The T75 photon time-tagging stack is feasible only as an augmented pre-registered deployment packet. Native timing export and a signed archive are not enough; the T87 controls, perturbation log, ancestry edge export, trust audit, and demotion log must be engineered before data collection.",
+  "improved": "T95 turns the T87 next step into an instrument-level checklist: each required raw-log table is assigned to a concrete stack component, and the audit states which tables are native versus middleware-only.",
+  "weakened": "This weakens the T75 source-anchored detector route. The named hardware stack does not natively satisfy the Q1 raw-log contract; most of the admissible packet is custom provenance/control infrastructure rather than detector physics.",
+  "falsification_condition": "T95 fails if native instrument exports alone can supply every T87 table and required column before data collection, or if an augmented deployment packet with real rows cannot preserve the T86 signed recovery, ambiguous withhold, perturbation/DAG rescue, and contaminated-control withhold separations.",
+  "q1_update": "Keep Q1 partially supported only as a detector-record admissibility protocol. The next non-null detector move is not another synthetic fixture; it is a real event-row deployment using the augmented T95 map without adding fields after the run.",
+  "open_blocker": "No real event rows exist for the augmented map. Passing T95 is only a deployment-plan admission, not empirical support and not a D1 verdict.",
+  "recommended_next": "Build the augmented packet for one dry-run dataset: publish row schemas, event-id joins, manifest hashes, and immutable export checksums, then run T87 before any T76/T86 population."
+}

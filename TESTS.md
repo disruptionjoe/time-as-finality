@@ -79,6 +79,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T85](tests/T85-measured-detector-channel-dominance.md) | Measured detector channel dominance | Q1, D1, T76-T83 | implemented: spoof/unique-tag stress can still demote the signed fixture, but perturbation and DAG channels are not independently decisive once trust and pre-registration are fixed |
 | [T86](tests/T86-ambiguous-tag-channel-independence.md) | Ambiguous-tag channel independence | Q1, D1, T76-T85 | implemented: clean perturbation-only and signed-DAG-only fixtures rescue ambiguous timing/tag controls, while contaminated controls withhold |
 | [T87](tests/T87-real-run-raw-log-contract.md) | Real-run raw-log contract | Q1, D1, T76-T86 | implemented: event-level raw-log admission contract for future detector deployments; no D1 scoring or empirical upgrade without the required tables |
+| [T95](tests/T95-detector-stack-export-map.md) | Detector stack export map | Q1, D1, T75, T87, T94 | implemented: HydraHarp/White Rabbit native timing and signed archive alone fail T87; only an augmented pre-registered export map is admissible, and only as a plan until real event rows exist |
 | [T90](tests/T90-weak-measurement-reparameterization-obstruction.md) | Weak-measurement reparameterization obstruction | Q1, T12, T83, T88 | implemented: weak-measurement route is non-null only if an independent pre-registered axis changes the TaF verdict while standard monitored statistics are held fixed |
 | [T91](tests/T91-weak-measurement-platform-audit.md) | Weak-measurement platform audit | Q1, T12, T90 | implemented: superconducting homodyne, uncollapse, and quantum-jump reversal platforms fail the independent-axis gate; duplicated-record provenance or pre-metered undo cost remains blocked |
 | [T93](tests/T93-weak-measurement-undo-cost-independence.md) | Weak-measurement undo-cost independence | Q1, T12, T90, T91 | implemented: undo-cost route is non-null only for a calibrated independent meter that changes the TaF verdict with standard monitored statistics fixed |
@@ -168,6 +169,7 @@ python -m models.run_t79
 python -m models.run_t85
 python -m models.run_t86
 python -m models.run_t87
+python -m models.run_t95
 python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
@@ -238,6 +240,7 @@ The suites use only Python's standard library. Evidence records:
 - [Measured Detector Channel Dominance v0.1 Results](results/measured-detector-channel-dominance-v0.1-results.md)
 - [Ambiguous-Tag Channel Independence v0.1 Results](results/ambiguous-tag-channel-independence-v0.1-results.md)
 - [Real-Run Raw-Log Contract v0.1 Results](results/real-run-raw-log-contract-v0.1-results.md)
+- [Detector Stack Export Map v0.1 Results](results/detector-stack-export-map-v0.1-results.md)
 - [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
 - [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
 - [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)

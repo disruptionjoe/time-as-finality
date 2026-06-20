@@ -137,9 +137,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P10 - Formal Methods Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T18:45:49-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-184549-p10-formal-methods-validator-spec-layer.md
 - goal: Extract reusable validators for D1RestrictionSystem, TypedTransportNetwork,
   PO1, LossKernel, and observer descent into a spec layer with preconditions,
   postconditions, invariants, and counterexample generators.

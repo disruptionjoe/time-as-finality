@@ -21,6 +21,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T80](tests/T80-reversible-finality-nonmonotonicity.md) | Reversible finality nonmonotonicity | H7, T9, T18 | implemented: reversible Rule 30 lift violates raw D1 monotonicity, weakening H7 to a conditional constructor theorem |
 | [T82](tests/T82-persistent-reconciler-cost-boundary.md) | Persistent reconciler cost boundary | H7, T9, T80 | implemented: persistent memory restores monotone retained support only through irreversible OR memory or resource-accounted append-only ledger capacity |
 | [T84](tests/T84-cyclic-reconciler-entropy-export.md) | Cyclic reconciler entropy export | H7, T80, T82 | implemented: fixed cyclic reconciliation restores monotone accounting only by exporting overwritten records or paying erasure cost |
+| [T106](tests/T106-bounded-sink-reversible-compression.md) | Bounded-sink reversible compression | H7, T80, T82, T84 | implemented: reversible compression does not rescue H7 once the bounded sink and closed return path are included |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
@@ -125,6 +126,7 @@ python -m models.run_t80
 python -m models.run_t81
 python -m models.run_t82
 python -m models.run_t84
+python -m models.run_t106
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
@@ -202,6 +204,7 @@ The suites use only Python's standard library. Evidence records:
 - [Reversible Finality Nonmonotonicity v0.1 Results](results/reversible-finality-nonmonotonicity-v0.1-results.md)
 - [Persistent Reconciler Cost Boundary v0.1 Results](results/persistent-reconciler-cost-boundary-v0.1-results.md)
 - [Cyclic Reconciler Entropy Export v0.1 Results](results/cyclic-reconciler-entropy-export-v0.1-results.md)
+- [Bounded-Sink Reversible Compression v0.1 Results](results/bounded-sink-reversible-compression-v0.1-results.md)
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
 - [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)

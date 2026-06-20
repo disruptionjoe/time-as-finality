@@ -104,6 +104,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T101](tests/T101-q1-branch-adjudication.md) | Q1 branch adjudication | Q1, D1, T2, T21, T22, T62, T66-T100 | implemented: Q1 should split before paper language; no current branch earns new measurement dynamics or empirical quantum support |
 | [T102](tests/T102-q1a-neighbor-comparison.md) | Q1A neighbor comparison gate | Q1A, Q1, T2, T22, T62, T64, T101 | implemented: Q1A is only access-boundary and independence accounting unless a fixed-data witness separates it from standard neighbor frameworks |
 | [T103](tests/T103-q1a-fixed-data-witness.md) | Q1A fixed-data witness | Q1A, Q1, D1, T102 | implemented: fixed standard quantum-side data can yield different D1 verdicts only through the independence partition; external distinctness remains unearned |
+| [T118](tests/T118-q1a-reversal-cost-collapse.md) | Q1A reversal-cost collapse | Q1A, Q1, D1, T103, T105, T109 | implemented: in the current fixed-data family reversal cost collapses to the audited accessible-support count and adds no independent verdict content |
 
 ## Minimum Compatibility Constraints
 

@@ -1,0 +1,304 @@
+{
+  "visible_cases": [
+    {
+      "case_id": "access_none__partition_E1__E2__E3",
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 0,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_none__partition_E1-E2__E3",
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 0,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_none__partition_E1-E3__E2",
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 0,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_none__partition_E1__E2-E3",
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 0,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_none__partition_E1-E2-E3",
+      "accessible_provenance_support": 0,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 0,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1__partition_E1-E3__E2",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2__partition_E1-E3__E2",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E3__E2",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2-E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2__E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E3__partition_E1-E3__E2",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E3__E2",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2-E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E3__E2",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2__E3",
+      "accessible_provenance_support": 3,
+      "d1_verdict": "finalized",
+      "reversal_cost_proxy": 3,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2__E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E3__E2",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2-E3",
+      "accessible_provenance_support": 2,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 2,
+      "proxy_withheld": false
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2-E3",
+      "accessible_provenance_support": 1,
+      "d1_verdict": "not_finalized",
+      "reversal_cost_proxy": 1,
+      "proxy_withheld": false
+    }
+  ],
+  "hidden_partition_case": {
+    "case_id": "access_E1-E2-E3__partition_hidden",
+    "accessible_provenance_support": null,
+    "d1_verdict": "withhold_partition_unavailable",
+    "reversal_cost_proxy": null,
+    "proxy_withheld": true
+  },
+  "proxy_defined_exactly_when_partition_visible": true,
+  "proxy_equals_support_on_all_visible_cases": true,
+  "proxy_splits_same_support_class": false,
+  "branch_history_changes_leave_fixed_data_gate": true,
+  "any_load_bearing_reversal_cost_witness_in_current_family": false,
+  "strongest_claim": "Reversal cost is not a surviving independent lever in the current fixed-data Q1A family. Once the witness language is restricted to already formed records with fixed ordinary quantum-side summaries, the only admissible reversal-cost proxy is how many audited accessible provenance classes would need to be erased or overwritten. That proxy is identical to accessible provenance support whenever the partition is visible and is withheld when the partition is hidden. So reversal cost adds no verdict content beyond the T105 support count in the present family.",
+  "improved": "T118 closes the last obvious Q1A fixed-data loophole. The repo can now say explicitly that the current witness family carries no independent reversal-cost structure, not even at the level of an admissible proxy.",
+  "weakened": "This weakens Q1A again. In the present fixed-data regime all live verdict content is exhausted by audited accessible provenance support plus partition visibility. Reversal-cost language should not be presented as extra measurement structure unless it is tied to a physically calibrated undo observable outside this collapsed counting regime.",
+  "falsification_condition": "T118 fails only if an admissible fixed-data witness in the current Q1A language exhibits different reversal-cost values at the same audited accessible provenance-support count while ordinary quantum-side summaries stay fixed, or if a physically calibrated undo observable becomes available that is neither post hoc nor equivalent to counting audited accessible record classes.",
+  "q1a_update": "Q1A should not cite reversal cost as a live independent witness dimension in the current fixed-data family. At present the only admissible reversal-cost proxy is the audited accessible provenance-support count itself, with withholding when the partition is unavailable.",
+  "claim_ledger_update": "Add T118 to Q1A: reversal cost does not presently escape the accessible-class reduction. In the current fixed-data witness family its only admissible proxy is the number of audited accessible provenance classes that would need to be erased or overwritten, so it adds no independent verdict content.",
+  "open_blocker": "The repo still lacks a finite quantum witness with a physically calibrated undo or erasure observable that can vary while decoherence, fragment-information summaries, raw redundancy, branch/history availability, and audited accessible support stay fixed.",
+  "recommended_next": "Either construct a genuinely dynamic witness with a predeclared undo observable that survives the fixed-data gate, or state plainly in paper-facing summaries that current Q1A evidence is fully reduced to audited record-accounting discipline."
+}

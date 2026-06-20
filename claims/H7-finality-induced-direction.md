@@ -11,8 +11,9 @@ Conjecture.
 
 ## Status
 
-Partially supported only as a conditional constructor-style theorem; weakened
-against direct physical reading by T80, T82, T84, and T106.
+Partially supported only as a conditional constructor-style theorem or
+open-system/resource-accounting claim; weakened against direct physical reading
+by T80, T82, T84, T106, and T110.
 
 ## What This Does Not Claim
 
@@ -49,6 +50,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T82: Persistent Reconciler Cost Boundary](../tests/T82-persistent-reconciler-cost-boundary.md)
 - [T84: Cyclic Reconciler Entropy Export](../tests/T84-cyclic-reconciler-entropy-export.md)
 - [T106: Bounded-Sink Reversible Compression](../tests/T106-bounded-sink-reversible-compression.md)
+- [T110: Finite-Permutation Monotone Obstruction](../tests/T110-finite-permutation-monotone-obstruction.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -108,3 +110,18 @@ the return path:
 
 H7 therefore remains a conditional constructor theorem, not a derived physical
 arrow from bounded reversible observer memory.
+
+## T110 Result
+
+[T110](../tests/T110-finite-permutation-monotone-obstruction.md)
+generalizes the T106 return-path obstruction. In any finite closed reversible
+system represented by a permutation, every orbit is a cycle. If a scalar
+finality score is nondecreasing on every transition edge around that cycle, it
+must be constant on the whole orbit. A strict finality monotone therefore
+cannot live inside the closed bounded reversible state space.
+
+The surviving H7 content is conditional: either a constructor-style
+admissibility relation, or an explicitly open-system/coarse-grained
+resource-accounting model that names its sink, erasure, fresh capacity, or
+excluded environment. H7 should not be presented as a new derivation of the
+thermodynamic arrow from closed finite reversible dynamics.

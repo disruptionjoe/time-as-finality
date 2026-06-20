@@ -154,6 +154,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     connected by typed morphisms; path-dependent admissibility witnessed.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
+- [TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md)
+  - finite closed reversible systems cannot carry a strict scalar finality
+    monotone; H7 must be conditional, open-system, or coarse-grained.
 - [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md)
   - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
     + CompressionRecord + EmergenceRecord) is the smallest justified formalism;

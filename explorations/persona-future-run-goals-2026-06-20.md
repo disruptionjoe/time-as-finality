@@ -94,9 +94,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P06 - Representation Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T14:41:58-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-144158-p06-representation-theorist-typed-forgetting-witness.md
 - goal: Formalize a typed-forgetting representation-loss witness with explicit
   source representation, target representation, quotient/equivalence relation,
   lost invariant, and non-recoverability condition.

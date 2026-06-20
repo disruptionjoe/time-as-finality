@@ -849,3 +849,22 @@ forward direction. The converse is an open conjecture.
   no real platform supplying the calibrated independent undo-cost meter.
 - Suggested next move: name a hardware meter plus raw-log schema satisfying T93
   or demote weak measurement below detector provenance in the active roadmap.
+
+### 2026-06-20 - Weak-Measurement Priority Demotion (T94)
+
+- Q1 remains `partially_supported`, but the active frontier changes: T12 is now
+  demoted below detector provenance until a real monitored platform names a
+  pre-registered independent branch/provenance/undo-cost axis.
+- Reason for demotion: detector provenance still retains a source-anchored,
+  pre-registered raw-log route that survives the current null criteria, while
+  weak measurement has no real platform clearing the T90/T91/T93
+  independent-axis gate.
+- Claim impact: weak measurement is no longer the default lead experimental
+  discriminator on promise alone. It becomes a reinstatement-only route.
+- Reinstatement condition: a concrete platform must supply an independent axis
+  that is not reconstructed from the standard monitoring stream, does not rely
+  on postselection, and changes the TaF verdict while standard monitored
+  statistics stay fixed.
+- Suggested next move: either push detector provenance toward one T78/T87-style
+  deployment plan, or name a new weak-measurement platform that clears the
+  reinstatement gate before any further modeling.

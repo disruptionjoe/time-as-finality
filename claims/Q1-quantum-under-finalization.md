@@ -76,6 +76,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
 - [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
 - [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
+- [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
 
 ## T21 Result
 
@@ -359,6 +360,25 @@ change the TaF verdict while coherence, redundancy, access, and reversal-success
 statistics are fixed. No real platform in the repo currently supplies that
 meter, so T12 remains blocked rather than upgraded.
 
+## T94 Result
+
+[T94](../tests/T94-weak-measurement-priority-demotion.md) turns the accumulated
+weak-measurement obstruction chain into a route-selection rule.
+
+Detector provenance remains blocked but still executable on a named
+instrumentation path: source-anchored stack, pre-registered raw-log protocol,
+and isolated rescue witnesses under hostile ambiguity. Weak measurement is in a
+worse state. After T91 and T93, it has no real platform with a pre-registered
+independent branch, provenance, or undo-cost axis.
+
+The roadmap consequence is now explicit rather than conditional:
+
+```text
+detector provenance stays ahead;
+weak measurement is reinstated only after a real platform clears the
+independent-axis gate.
+```
+
 ## Contribution Needed
 
 Two concrete needs remain, and the detector-side one is now stronger than the
@@ -371,9 +391,10 @@ truncation exports. If only dashboard summaries are available, withhold the
 detector branch rather than treating it as empirical support.
 
 For weak measurement, stop treating standard homodyne, uncollapse, or
-quantum-jump-reversal platforms as near-ready T12 tests. The next serious move
-is to name either a duplicated-record provenance channel during monitoring or a
-calibrated undo-cost meter satisfying T93: fixed before analysis, independent
-of the monitored record and control schedule, and not conditioned on reversal
-success. If neither can be stated concretely, demote T12 below the
-detector-provenance route in the active roadmap.
+quantum-jump-reversal platforms as near-ready T12 tests. T94 makes the
+priority consequence explicit: T12 is now demoted below the detector-
+provenance route in the active roadmap. Reinstate it only if a monitored
+platform can name either a duplicated-record provenance channel during
+monitoring or a calibrated undo-cost meter satisfying T93: fixed before
+analysis, independent of the monitored record and control schedule, and not
+conditioned on reversal success.

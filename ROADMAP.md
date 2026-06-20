@@ -45,9 +45,10 @@ Current attention queue from the 2026-06-20 all-persona review:
 1. Run the LossKernel separation/collapse test before expanding more branches:
    same source, target, endpoint behavior, and naive loss set; different
    admissibility verdict if TF1 has nontrivial path dependence.
-2. Instantiate T90 on one real weak-measurement platform, or demote T12 if no
-   independent branch/provenance/reversal-cost axis can be named before data
-   analysis.
+2. Demote T12 below detector provenance unless a real weak-measurement
+   platform first names an independent branch/provenance/reversal-cost axis
+   before data analysis and shows how it could change the TaF verdict with
+   standard monitored statistics held fixed.
 3. Convert T87 into an instrument-facing raw-log feasibility checklist and ask
    whether any realistic detector stack can satisfy it.
 4. Stress H7 with a reversible bounded observer that has no exported garbage,

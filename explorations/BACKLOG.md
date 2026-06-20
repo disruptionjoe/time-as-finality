@@ -6,6 +6,28 @@ Location note: this file lives in `explorations/` deliberately — backlog items
 
 ---
 
+## Active Queue From 2026-06-20 All-Persona Review
+
+Source: [all-persona-last-24h-review-2026-06-20](all-persona-last-24h-review-2026-06-20.md).
+
+These are review-derived work cards, not claims:
+
+1. LossKernel separation/collapse test: determine whether typed attribution
+   survives same endpoints, same composite/endpoint behavior, and same naive
+   loss set, or collapses into ordinary provenance/effect annotation.
+2. T90 weak-measurement platform instantiation: name an independent
+   branch/provenance/reversal-cost observable before modeling, or demote T12.
+3. T87 detector feasibility audit: map raw-log requirements to actual exported
+   instrument files and decide whether the detector route is empirically
+   feasible.
+4. H7 entropy-accounting hard case: test whether bounded reversible local
+   memory can be D1-monotone without exported history, erasure, or hidden sinks.
+5. T19/T58 gap restriction maps: test whether the proposition-domain
+   accessible-witness gap has a T57-style closure property. Goal:
+   [Accessible Witness Gap Restriction Theorem](../open-problems/accessible-witness-gap-restriction-theorem.md).
+
+---
+
 ## Entry 2026-06-10: Distributed Records, Rendering, and Observer-Relative Reality
 
 > Submitted by Joe, 2026-06-10. Preserved as written. See Annotations below for already-considered status.

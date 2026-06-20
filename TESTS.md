@@ -79,10 +79,13 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T85](tests/T85-measured-detector-channel-dominance.md) | Measured detector channel dominance | Q1, D1, T76-T83 | implemented: spoof/unique-tag stress can still demote the signed fixture, but perturbation and DAG channels are not independently decisive once trust and pre-registration are fixed |
 | [T86](tests/T86-ambiguous-tag-channel-independence.md) | Ambiguous-tag channel independence | Q1, D1, T76-T85 | implemented: clean perturbation-only and signed-DAG-only fixtures rescue ambiguous timing/tag controls, while contaminated controls withhold |
 | [T87](tests/T87-real-run-raw-log-contract.md) | Real-run raw-log contract | Q1, D1, T76-T86 | implemented: event-level raw-log admission contract for future detector deployments; no D1 scoring or empirical upgrade without the required tables |
+| [T90](tests/T90-weak-measurement-reparameterization-obstruction.md) | Weak-measurement reparameterization obstruction | Q1, T12, T83, T88 | implemented: weak-measurement route is non-null only if an independent pre-registered axis changes the TaF verdict while standard monitored statistics are held fixed |
+| [T91](tests/T91-weak-measurement-platform-audit.md) | Weak-measurement platform audit | Q1, T12, T90 | implemented: superconducting homodyne, uncollapse, and quantum-jump reversal platforms fail the independent-axis gate; duplicated-record provenance or pre-metered undo cost remains blocked |
 | [T19](tests/T19-phenomenal-bridge-complexity-separation.md) | Phenomenal bridge as complexity separation | C1, D1, D2, H6 | implemented: 7-node finite graph shows FIRST-PERSON-FINALITY(A*(R)) = NO, THIRD-PERSON-FINALITY(G) = YES; causal-boundary obstruction, not computational undecidability; T60+T19 gives formal content of H6 |
+| [T92](tests/T92-accessible-witness-gap-restriction.md) | Accessible-witness gap restriction | C1, T19, T58, T89 | implemented: T19 unary proposition gap and non-chain joint-witness gap satisfy restriction closure under ambient restriction, audit monotonicity, and stable proposition typing; semantic relabeling and audit-monotonicity controls fail |
 | [T65](tests/T65-causal-reduction-holonomy.md) | Causal reduction of CHSH holonomy | C1, D1, H6, T63, T19 | implemented: LC => holonomy = +1 (all 16 LC sections); quantum => holonomy = -1 (Bell's theorem as holonomy); biconditional disproved (128 ≠ 16); spatial causal-boundary obstruction formally parallels T19 temporal obstruction |
-| [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented: loss morphisms are failure-type monotone (H1 > H0 > none); H0→H1 is impossible for topology-preserving and sub-cover loss; H1→H0 is possible via cycle destruction; algebraic proof + 4 witnesses (7/7 tests pass) |
-| [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified (union = lax-functorial); path-dependence biconditional established (PO1(P1) != PO1(P2) iff LossKernel differ in empty/non-empty sense); LossKernel is the organizing object for path-dependent PO1 admissibility; 17/17 tests pass |
+| [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented finite-fixture result: failure-type monotonicity holds only under the declared coefficient/support semantics and allowed loss morphisms; external review blocks any general Cech/sheaf theorem reading; 7/7 tests pass |
+| [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified as powerset-union monoid-valued annotation; path-dependence biconditional established on fixed-endpoint fixtures; quotient/prior-art gate still open; 17/17 tests pass |
 
 ## Minimum Compatibility Constraints
 
@@ -164,6 +167,9 @@ python -m models.run_t79
 python -m models.run_t85
 python -m models.run_t86
 python -m models.run_t87
+python -m models.run_t90
+python -m models.run_t91
+python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
 ```
@@ -230,6 +236,9 @@ The suites use only Python's standard library. Evidence records:
 - [Measured Detector Channel Dominance v0.1 Results](results/measured-detector-channel-dominance-v0.1-results.md)
 - [Ambiguous-Tag Channel Independence v0.1 Results](results/ambiguous-tag-channel-independence-v0.1-results.md)
 - [Real-Run Raw-Log Contract v0.1 Results](results/real-run-raw-log-contract-v0.1-results.md)
+- [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
+- [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
+- [Accessible-Witness Gap Restriction v0.1 Results](results/accessible-witness-gap-restriction-v0.1-results.md)
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
 

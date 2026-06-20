@@ -115,6 +115,11 @@ For TF1/LossKernel typed loss accounting:
 **Candidate law for TF1:** `LossKernel(f).cycle_destroying` is True iff f can reduce failure
 type from H1 to H0. When `cycle_destroying = False`, failure type is monotone-preserved.
 
+This remains audit-blocked as a general theorem. The minimum resolution is an
+explicit theorem statement naming the coefficient system, support presheaf,
+cover hypotheses, and allowed loss morphisms, plus counterexample checks against
+same-cover support shrinkage.
+
 ---
 
 ## Falsification Condition

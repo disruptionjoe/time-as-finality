@@ -41,7 +41,7 @@ annotations.
 - Verified on all T34/T37 paths: compose_loss(path) = union of per-step forgotten_structure
 - 5 chains verified: T37 spectre, T37 diamond Path A, T37 diamond Path B, T34 spectre, T34 stepwise, T34 absorbed
 
-**H2 — Lax-functorial (monotone):** PASS
+**H2 — Monoid-valued accumulation (monotone):** PASS
 - All prefix LossKernels are subsets of the full composed LossKernel
 - Identity morphism (empty path) has LossKernel = ∅
 - Union law is associative; identity element ∅ is confirmed
@@ -72,9 +72,10 @@ The biconditional holds exactly because AC5 is the only path-varying AC conditio
 So path-dependent PO1 = exactly empty/non-empty difference in composed LossKernels.
 
 **2. The composition law is union-valued on the tested family.**
-Strictly functorial would require LossKernel(g ∘ f) = some function of LossKernel(g)
-applied to LossKernel(f). Instead, loss accumulates independently: g's forgotten structure
-does not depend on what f forgot. Union law is total (no partial domain).
+The safe categorical reading is an arrow annotation valued in the commutative
+idempotent monoid of finite sets under union. Loss accumulates independently:
+g's forgotten structure does not depend on what f forgot. Union law is total
+on the tested fixtures.
 
 **3. LossKernel is not sufficient for PO1 — AC6 is co-required.**
 The absorbed case shows: non-empty LossKernel + AC6 fails = NOT PO1. The full admissibility

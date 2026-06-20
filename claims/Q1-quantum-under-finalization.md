@@ -73,6 +73,8 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T83: Q1 Detector Null Criterion](../tests/T83-q1-detector-null-criterion.md)
 - [T85: Measured Detector Channel Dominance](../tests/T85-measured-detector-channel-dominance.md)
 - [T86: Ambiguous-Tag Channel Independence](../tests/T86-ambiguous-tag-channel-independence.md)
+- [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
+- [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
 
 ## T21 Result
 
@@ -321,16 +323,40 @@ as schema channels, but only as isolated, pre-registered raw-log tests. It does
 not upgrade Q1 into detector dynamics or empirical support without a real T78
 deployment.
 
+## T91 Result
+
+[T91](../tests/T91-weak-measurement-platform-audit.md) instantiates T90 on
+three named superconducting weak-measurement families: homodyne trajectories,
+partial-measurement uncollapse, and mid-flight quantum-jump reversal.
+
+All three fail the independent-axis gate. The homodyne and quantum-jump routes
+derive their candidate TaF branch/reversal witnesses from the same monitored
+record already used by standard quantum trajectory theory. The uncollapse route
+fails differently: its apparent reversal witness is conditioned on
+success/null-outcome selection, so it is not yet a pre-registered independent
+reversal-cost observable.
+
+This narrows T12 again. The currently named superconducting weak-measurement
+platforms validate trajectory control and feedback, but they do not yet supply
+an independent D1 branch-support or reversal-cost axis. T12 should therefore be
+treated as a blocked operationalization problem until a platform names an axis
+that is distinct from the monitored record itself and does not rely on
+postselection.
+
 ## Contribution Needed
 
-Obtain one concrete detector deployment that satisfies T78 and publish its raw
-event-level logs: event loss, signature verification failures, replay/spoof
-tests, perturbation trials, trust-boundary audits, and DAG truncation exports.
-If only dashboard summaries are available, withhold the detector branch rather
-than treating it as empirical support. Only after a real raw-log audit should
-this branch be compared with decoherence, quantum Darwinism, relational QM,
-consistent histories, many-worlds, and QBism. The next strongest internal move
-is narrower: construct a hostile raw-log family where authenticated tags are
-ambiguous but perturbation response or DAG observability alone changes the
-verdict. If that cannot be done honestly, remove those channels from the core
-detector schema.
+Two concrete needs remain, and the detector-side one is now stronger than the
+weak-measurement one.
+
+For detector provenance, obtain one concrete deployment that satisfies T78 and
+publish its raw event-level logs: event loss, signature verification failures,
+replay/spoof tests, perturbation trials, trust-boundary audits, and DAG
+truncation exports. If only dashboard summaries are available, withhold the
+detector branch rather than treating it as empirical support.
+
+For weak measurement, stop treating standard homodyne, uncollapse, or
+quantum-jump-reversal platforms as near-ready T12 tests. The next serious move
+is to name either a duplicated-record provenance channel during monitoring or a
+physically metered undo-cost observable that is fixed before analysis and not
+conditioned on reversal success. If neither can be stated concretely, demote
+T12 below the detector-provenance route in the active roadmap.

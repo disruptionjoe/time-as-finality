@@ -23,7 +23,8 @@ of finite sets under union.
 ## Question
 
 Is T37's path-dependent PO1 admissibility exactly captured by unequal composed
-LossKernels? And does loss compose functorially, lax-functorially, or only partially?
+LossKernels? And does loss compose as a monoid-valued annotation rather than as
+a stronger categorical construction?
 
 ---
 
@@ -60,8 +61,9 @@ PO1(Path₁) ≠ PO1(Path₂)  ⟺  LossKernel(Path₁) ≠ LossKernel(Path₂)
 - **H1 (Composition law):** LossKernel(path) = union of per-step forgotten_structure.
   Verified on T34 spectre, stepwise, absorbed chains and T37 diamond paths.
 
-- **H2 (Lax-functorial):** The union composition is monotone: LossKernel(g ∘ f) ⊇
-  LossKernel(f). Loss can accumulate but never decrease. Identity: LossKernel(id) = ∅.
+- **H2 (Monoid-valued accumulation):** The union composition is monotone:
+  LossKernel(g ∘ f) ⊇ LossKernel(f). Loss can accumulate but never decrease.
+  Identity: LossKernel(id) = ∅.
 
 - **H3 (Path-dependence biconditional):** For fixed (source, target) with equal
   endpoint conditions: PO1 path-dependence is exactly the non-empty/empty difference
@@ -97,11 +99,10 @@ absorbed = non-empty LossKernel at mid-chain but AC6 fails at endpoint.
 
 ## LossKernel Q2 Answer
 
-The composition is **lax-functorial**: LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g).
-It is NOT strictly functorial (structure forgotten in g does not depend on what was
-forgotten in f — they are accumulated independently). It is NOT partial (the law is
-total: it applies to all T34/T37 morphisms). The union law satisfies associativity and
-has identity element ∅.
+The composition is a **monoid-valued annotation law**:
+LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g). It is not evidence for a
+new categorical object by itself. The tested law is total on the T34/T37
+fixtures, associative, and has identity element ∅.
 
 More conservatively: this is a powerset-union annotation law on the tested
 finite family. Do not treat it as publication-grade novelty unless LossKernel

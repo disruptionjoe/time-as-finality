@@ -40,11 +40,31 @@ Priority sequence:
 6. Draft and refine the neutral math paper:
    [Typed Forgetting and Local-to-Global Obstruction](papers/typed-forgetting-local-global-obstruction-v0.1.md).
 
+Current attention queue from the 2026-06-20 all-persona review:
+
+1. Run the LossKernel separation/collapse test before expanding more branches:
+   same source, target, endpoint behavior, and naive loss set; different
+   admissibility verdict if TF1 has nontrivial path dependence.
+2. Instantiate T90 on one real weak-measurement platform, or demote T12 if no
+   independent branch/provenance/reversal-cost axis can be named before data
+   analysis.
+3. Convert T87 into an instrument-facing raw-log feasibility checklist and ask
+   whether any realistic detector stack can satisfy it.
+4. Stress H7 with a reversible bounded observer that has no exported garbage,
+   erasure, or hidden sink; if it fails, state the entropy/export dependence.
+5. Define T19 proposition-domain restriction maps and test whether the
+   accessible-witness gap has a T57-style closure property:
+   [Accessible Witness Gap Restriction Theorem](open-problems/accessible-witness-gap-restriction-theorem.md).
+
+Source review:
+[All-Persona Review Of The Last 24 Hours](explorations/all-persona-last-24h-review-2026-06-20.md).
+
 Promotion gate before any public theorem or paper language:
 
 - LossKernel must be stricter than free-text `forgotten_structure` metadata.
-- The composition law must be stated honestly as powerset-union annotation
-  unless a stronger categorical or universal property is proved.
+- The composition law must be stated honestly as a powerset-union
+  monoid-valued grading/annotation, not as a lax functor, unless a stronger
+  categorical or universal property is proved.
 - T69-style H0/H1 claims must state the exact coefficient system, cover
   hypotheses, support presheaf, and allowed loss morphisms.
 - The paper needs either a separation theorem from ordinary CSP plus

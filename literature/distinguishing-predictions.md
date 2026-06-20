@@ -8,6 +8,17 @@ defend against the charge that it is an elaborate restatement of existing framew
 **Status:** Draft. Entries marked `[OPEN]` need a formal distinguishing criterion. Entries marked
 `[PARTIAL]` have a sketch. Entries marked `[READY]` have an explicit criterion ready to test.
 
+## Open Neighbor Gate
+
+As of 2026-06-20, the entries still marked `[OPEN]` are:
+
+- Relational Time / Page-Wootters-style clock correlation versus D1 reversal cost.
+- Relational Quantum Mechanics versus a computable H1/global-section obstruction.
+
+Therefore this file is not an external-readiness certificate. It is a working
+comparison ledger: external-facing language must state that several comparisons
+are still partial or open, especially outside the detector-provenance branch.
+
 ---
 
 ## Neighbor Map

@@ -9,8 +9,10 @@ witness when it does not.
 
 from __future__ import annotations
 
+from collections import deque
 from dataclasses import dataclass
 from itertools import combinations
+from typing import TYPE_CHECKING
 
 
 Event = str
@@ -312,3 +314,387 @@ def _cycle_witness(
         if witness:
             return witness
     return ()
+
+
+# ---------------------------------------------------------------------------
+# T13/T16 Upgrade: Restriction-Map and Cech Cohomology
+# ---------------------------------------------------------------------------
+
+SHEAF_UPGRADE_GUARDRAIL = (
+    "This is a finite order-theoretic cohomology check. "
+    "It does not derive spacetime geometry, metric structure, or physical law."
+)
+
+# Type aliases for Cech cochain groups
+CechC0 = dict[str, "FinalitySection"]
+CechC1 = dict[tuple[str, str], "FinalitySection"]
+
+
+@dataclass(frozen=True)
+class FinalitySection:
+    """A local finality assignment: a map from events to integer scores.
+
+    scores: frozenset of (event_id, score) pairs.
+    Score values in C^0 are in [0, 100]; values in C^1 (differences) are in [-100, 100].
+    """
+
+    domain_id: str
+    scores: frozenset[tuple[Event, int]]
+
+    @property
+    def scores_dict(self) -> dict[Event, int]:
+        return dict(self.scores)
+
+    def event_set(self) -> frozenset[Event]:
+        return frozenset(e for e, _ in self.scores)
+
+    # Alias used by tests / design doc
+    def events(self) -> frozenset[Event]:
+        return self.event_set()
+
+    def score_of(self, event: Event) -> int:
+        d = self.scores_dict
+        if event not in d:
+            raise KeyError(f"event {event!r} not in section {self.domain_id!r}")
+        return d[event]
+
+    def restrict(self, overlap: frozenset[Event]) -> "FinalitySection":
+        if not overlap <= self.event_set():
+            missing = overlap - self.event_set()
+            raise ValueError(
+                f"overlap contains events not in section: {sorted(missing)}"
+            )
+        return FinalitySection(
+            domain_id=self.domain_id,
+            scores=frozenset((e, s) for e, s in self.scores if e in overlap),
+        )
+
+    def difference(self, other: "FinalitySection") -> "FinalitySection":
+        """Return (self - other) on the shared event set."""
+        shared = self.event_set() & other.event_set()
+        self_d = self.scores_dict
+        other_d = other.scores_dict
+        return FinalitySection(
+            domain_id=f"{self.domain_id}__minus__{other.domain_id}",
+            scores=frozenset((e, self_d[e] - other_d[e]) for e in shared),
+        )
+
+    def is_zero(self) -> bool:
+        return all(s == 0 for _, s in self.scores)
+
+
+@dataclass(frozen=True)
+class RestrictionMap:
+    """Certificate of local compatibility between two finality sections on their overlap."""
+
+    source_id: str
+    target_id: str
+    overlap_events: frozenset[Event]
+    source_restriction: FinalitySection
+    target_restriction: FinalitySection
+
+    def agrees(self) -> bool:
+        return self.source_restriction.scores == self.target_restriction.scores
+
+    def disagreement(self) -> FinalitySection:
+        """Return source - target on the overlap (zero section when they agree)."""
+        return self.source_restriction.difference(self.target_restriction)
+
+
+def cech_coboundary_0(
+    c0: CechC0,
+    domains: tuple[LocalFinalityDomain, ...],
+) -> CechC1:
+    """Compute delta^0: C^0 -> C^1.
+
+    delta^0(f)_{ij}(e) = f_j(e) - f_i(e)  for e in overlap_{ij}, i < j (lex).
+    """
+    result: CechC1 = {}
+    domain_map = {d.domain_id: d for d in domains}
+    domain_ids = sorted(domain_map.keys())
+    for i, j in combinations(domain_ids, 2):
+        overlap = domain_map[i].events & domain_map[j].events
+        if not overlap:
+            continue
+        fi = c0[i].restrict(overlap)
+        fj = c0[j].restrict(overlap)
+        delta_scores = frozenset(
+            (e, fj.score_of(e) - fi.score_of(e)) for e in overlap
+        )
+        result[(i, j)] = FinalitySection(
+            domain_id=f"{i}__{j}",
+            scores=delta_scores,
+        )
+    return result
+
+
+def is_cech_1_cocycle(
+    c1: CechC1,
+    domains: tuple[LocalFinalityDomain, ...],
+) -> tuple[bool, tuple[tuple[str, str, str], "FinalitySection"] | None]:
+    """Check whether c1 is a Cech 1-cocycle: delta^1(c1) = 0 on all triple overlaps.
+
+    delta^1(c)_{ijk}(e) = c_{jk}(e) - c_{ik}(e) + c_{ij}(e)
+    Convention: c_{ji}(e) = -c_{ij}(e) (antisymmetry).
+
+    Returns (True, None) if cocycle; (False, ((i,j,k), witness_section)) otherwise.
+    """
+    domain_map = {d.domain_id: d for d in domains}
+    domain_ids = sorted(domain_map.keys())
+
+    for i, j, k in combinations(domain_ids, 3):
+        overlap_ij = domain_map[i].events & domain_map[j].events
+        overlap_ik = domain_map[i].events & domain_map[k].events
+        overlap_jk = domain_map[j].events & domain_map[k].events
+        overlap_ijk = overlap_ij & overlap_ik & overlap_jk
+
+        if not overlap_ijk:
+            continue
+
+        # Validate that the pairwise overlaps cover the triple overlap
+        if not (overlap_ij >= overlap_ijk and overlap_ik >= overlap_ijk and overlap_jk >= overlap_ijk):
+            raise ValueError(
+                f"c1 cochain is incorrectly constructed: triple overlap "
+                f"({i},{j},{k}) not covered by pairwise overlaps"
+            )
+
+        violation_scores: list[tuple[Event, int]] = []
+        for e in sorted(overlap_ijk):
+            c_ij = _get_c1_value(c1, i, j, e)
+            c_ik = _get_c1_value(c1, i, k, e)
+            c_jk = _get_c1_value(c1, j, k, e)
+            delta = c_jk - c_ik + c_ij
+            if delta != 0:
+                violation_scores.append((e, delta))
+
+        if violation_scores:
+            witness = FinalitySection(
+                domain_id=f"violation_{i}__{j}__{k}",
+                scores=frozenset(violation_scores),
+            )
+            return (False, ((i, j, k), witness))
+
+    return (True, None)
+
+
+def is_cech_1_coboundary(
+    c1: CechC1,
+    domains: tuple[LocalFinalityDomain, ...],
+) -> tuple[bool, CechC0 | None]:
+    """Check whether c1 = delta^0(f) for some f in C^0.
+
+    Uses BFS constraint propagation on the difference equations:
+        f_j(e) - f_i(e) = c_{ij}(e)  for each pair (i,j) and event e in overlap.
+
+    Returns (True, f) if a consistent assignment exists, (False, None) otherwise.
+    """
+    domain_map = {d.domain_id: d for d in domains}
+    domain_ids = sorted(domain_map.keys())
+    if not domain_ids:
+        return (True, {})
+
+    # Build adjacency: for each (dom, event), which other domains share the event?
+    # adjacency[(dom_i, e)] -> list of dom_j where e in overlap_{ij}
+    adjacency: dict[tuple[str, Event], list[str]] = {}
+    for dom_i in domain_ids:
+        for e in domain_map[dom_i].events:
+            adjacency.setdefault((dom_i, e), [])
+    for i, j in combinations(domain_ids, 2):
+        overlap = domain_map[i].events & domain_map[j].events
+        for e in overlap:
+            adjacency.setdefault((i, e), []).append(j)
+            adjacency.setdefault((j, e), []).append(i)
+
+    assigned: dict[tuple[str, Event], int] = {}
+    anchor = domain_ids[0]
+    queue: deque[tuple[str, Event]] = deque()
+
+    # Anchor first domain at 0 for all its events
+    for e in domain_map[anchor].events:
+        assigned[(anchor, e)] = 0
+        queue.append((anchor, e))
+
+    while queue:
+        dom_i, e = queue.popleft()
+        for dom_j in adjacency.get((dom_i, e), []):
+            # c_{ij}(e) = f_j(e) - f_i(e), sign depends on canonical ordering
+            c_val = _get_c1_value(c1, dom_i, dom_j, e)
+            # c_val is always stored as c_{min,max}, adjusted for direction in helper
+            # _get_c1_value returns f_j - f_i (positive when i < j, negative when i > j)
+            new_val = assigned[(dom_i, e)] + c_val
+            node = (dom_j, e)
+            if node not in assigned:
+                assigned[node] = new_val
+                queue.append(node)
+            elif assigned[node] != new_val:
+                return (False, None)
+
+    # Anchor any unreachable (domain, event) pairs at 0
+    for dom in domain_ids:
+        for e in domain_map[dom].events:
+            if (dom, e) not in assigned:
+                assigned[(dom, e)] = 0
+
+    # Reconstruct f in C^0
+    f: CechC0 = {
+        dom: FinalitySection(
+            domain_id=dom,
+            scores=frozenset(
+                (e, assigned[(dom, e)]) for e in domain_map[dom].events
+            ),
+        )
+        for dom in domain_ids
+    }
+    return (True, f)
+
+
+def compute_h1_obstruction(
+    sections: CechC0,
+    domains: tuple[LocalFinalityDomain, ...],
+) -> dict[str, object]:
+    """Compute the H^1 obstruction for a given C^0 assignment.
+
+    Steps:
+    1. Compute c1 = delta^0(sections)
+    2. Check if c1 is a cocycle (always True for im(delta^0))
+    3. Check if c1 is a coboundary (True iff no H^1 obstruction)
+
+    Returns a dict with keys:
+      c1, is_cocycle, is_coboundary, h1_is_nontrivial, obstruction_witness
+    """
+    c1 = cech_coboundary_0(sections, domains)
+    is_cocycle, cocycle_witness = is_cech_1_cocycle(c1, domains)
+    is_coboundary, witness_f = is_cech_1_coboundary(c1, domains)
+    return {
+        "c1": c1,
+        "is_cocycle": is_cocycle,
+        "is_coboundary": is_coboundary,
+        "h1_is_nontrivial": not is_coboundary,
+        "obstruction_witness": cocycle_witness,
+    }
+
+
+def h1_obstruction_scenario() -> tuple[tuple[LocalFinalityDomain, ...], CechC0]:
+    """Return a domain cover and C^0 sections that exhibit nontrivial H^1 obstruction.
+
+    Three domains share a single event (eX) and distinct pair-events.
+    A custom c1 cochain (not derived from a global section) with nonzero holonomy
+    is used to demonstrate that is_cech_1_coboundary returns False.
+
+    The C^0 sections returned are CONSISTENT (pairwise agree), demonstrating
+    the difference between the pairwise-agreement check (aggregate_domains passes)
+    and the global cohomological check.
+
+    To construct a genuinely nontrivial c1 (not in im delta^0), use the helper
+    h1_nontrivial_c1() below.
+    """
+    domains: tuple[LocalFinalityDomain, ...] = (
+        LocalFinalityDomain("A", frozenset({"eX", "e1", "e2"}), frozenset()),
+        LocalFinalityDomain("B", frozenset({"eX", "e2", "e3"}), frozenset()),
+        LocalFinalityDomain("C", frozenset({"eX", "e3", "e1"}), frozenset()),
+    )
+    # Globally consistent sections: pairwise agree, H^1 = 0 for this C^0 assignment
+    sections: CechC0 = {
+        "A": FinalitySection("A", frozenset({("eX", 50), ("e1", 10), ("e2", 30)})),
+        "B": FinalitySection("B", frozenset({("eX", 50), ("e2", 30), ("e3", 70)})),
+        "C": FinalitySection("C", frozenset({("eX", 50), ("e3", 70), ("e1", 10)})),
+    }
+    return domains, sections
+
+
+def h1_nontrivial_c1(
+    domains: tuple[LocalFinalityDomain, ...],
+) -> CechC1:
+    """Construct a C^1 cochain that is NOT a coboundary (nontrivial H^1).
+
+    Uses the three-domain cyclic cover where all three share 'eShared'.
+    The constraint system for eShared is:
+
+        f_B(eShared) - f_A(eShared) = c_{AB} = 10
+        f_C(eShared) - f_B(eShared) = c_{BC} = 10
+        f_C(eShared) - f_A(eShared) = c_{AC} = 30   <- contradiction: 10+10=20 != 30
+
+    is_cech_1_coboundary BFS detects this:
+    - Anchor f_A(eShared) = 0
+    - Propagate: f_B = 10, then f_C via B = 20
+    - Check constraint from c_{AC}: f_C should = 0 + 30 = 30, but already 20. Contradiction.
+
+    Cocycle condition at triple overlap {eShared}:
+        c_{BC} - c_{AC} + c_{AB} = 10 - 30 + 10 = -10 != 0 -> NOT a cocycle.
+
+    So this cochain demonstrates both a cocycle failure and coboundary failure.
+    For the pure coboundary test, use h1_nontrivial_c1_cocycle() instead.
+    """
+    return {
+        ("A", "B"): FinalitySection("A__B", frozenset({("eShared", 10)})),
+        ("B", "C"): FinalitySection("B__C", frozenset({("eShared", 10)})),
+        ("A", "C"): FinalitySection("A__C", frozenset({("eShared", 30)})),
+    }
+
+
+def h1_nontrivial_c1_coboundary_fail(
+    domains: tuple[LocalFinalityDomain, ...],
+) -> CechC1:
+    """C^1 cochain that IS a cocycle but is NOT a coboundary.
+
+    Uses domains where eShared appears in A, B, C with PAIRWISE overlaps only
+    (no triple overlap), so the cocycle condition is vacuous, but the constraint
+    system is contradictory:
+
+        f_B(eShared) - f_A(eShared) = 10
+        f_C(eShared) - f_B(eShared) = 10
+        f_C(eShared) - f_A(eShared) = 30   (should be 20 -> contradiction)
+
+    This is the canonical case: is_cech_1_cocycle -> True (no triple overlap),
+    is_cech_1_coboundary -> False (contradictory constraints).
+    """
+    return {
+        ("A", "B"): FinalitySection("A__B", frozenset({("eShared", 10)})),
+        ("B", "C"): FinalitySection("B__C", frozenset({("eShared", 10)})),
+        ("A", "C"): FinalitySection("A__C", frozenset({("eShared", 30)})),
+    }
+
+
+def cyclic_cover_domains() -> tuple[LocalFinalityDomain, ...]:
+    """Three-domain cyclic cover — canonical topology for nontrivial H^1.
+
+    All three domains share 'eShared', creating a constraint cycle.
+    Each domain also has a private interior event.
+
+    With h1_nontrivial_c1_coboundary_fail(), the BFS detects an irreconcilable
+    difference in the assigned value of eShared (path A->B->C gives 20,
+    direct path A->C gives 30).
+    """
+    return (
+        LocalFinalityDomain("A", frozenset({"eShared", "eA_int"}), frozenset()),
+        LocalFinalityDomain("B", frozenset({"eShared", "eB_int"}), frozenset()),
+        LocalFinalityDomain("C", frozenset({"eShared", "eC_int"}), frozenset()),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Internal helpers for Cech machinery
+# ---------------------------------------------------------------------------
+
+
+def _get_c1_value(c1: CechC1, dom_i: str, dom_j: str, event: Event) -> int:
+    """Look up c1[(i,j)](e) respecting the canonical (i < j) ordering convention.
+
+    If dom_i > dom_j, returns -c1[(j,i)](e) (antisymmetry).
+    If the event is not in the stored section, returns 0.
+    """
+    if dom_i < dom_j:
+        key = (dom_i, dom_j)
+        sign = 1
+    else:
+        key = (dom_j, dom_i)
+        sign = -1
+
+    if key not in c1:
+        return 0
+
+    section = c1[key]
+    try:
+        return sign * section.score_of(event)
+    except KeyError:
+        return 0

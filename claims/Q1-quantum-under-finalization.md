@@ -75,6 +75,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T86: Ambiguous-Tag Channel Independence](../tests/T86-ambiguous-tag-channel-independence.md)
 - [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
 - [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
+- [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
 
 ## T21 Result
 
@@ -343,6 +344,21 @@ treated as a blocked operationalization problem until a platform names an axis
 that is distinct from the monitored record itself and does not rely on
 postselection.
 
+## T93 Result
+
+[T93](../tests/T93-weak-measurement-undo-cost-independence.md) isolates the
+physically metered undo-cost escape hatch left by T91.
+
+The audit rejects three common false positives. Control-pulse energy or
+schedule bookkeeping is a `null_proxy_cost`; success-conditioned reversal is a
+`null_postselected_cost`; and an independent meter that varies without changing
+the verdict is `independent_but_not_decisive`.
+
+The only admitted shape is stricter: a calibrated, pre-registered meter must
+change the TaF verdict while coherence, redundancy, access, and reversal-success
+statistics are fixed. No real platform in the repo currently supplies that
+meter, so T12 remains blocked rather than upgraded.
+
 ## Contribution Needed
 
 Two concrete needs remain, and the detector-side one is now stronger than the
@@ -357,6 +373,7 @@ detector branch rather than treating it as empirical support.
 For weak measurement, stop treating standard homodyne, uncollapse, or
 quantum-jump-reversal platforms as near-ready T12 tests. The next serious move
 is to name either a duplicated-record provenance channel during monitoring or a
-physically metered undo-cost observable that is fixed before analysis and not
-conditioned on reversal success. If neither can be stated concretely, demote
-T12 below the detector-provenance route in the active roadmap.
+calibrated undo-cost meter satisfying T93: fixed before analysis, independent
+of the monitored record and control schedule, and not conditioned on reversal
+success. If neither can be stated concretely, demote T12 below the
+detector-provenance route in the active roadmap.

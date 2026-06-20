@@ -83,6 +83,11 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - ambiguous-tag hostile-family audit showing perturbation-only and
     signed-DAG-only raw-log fixtures can rescue the partition internally, but
     only as isolated pre-registered controls rather than empirical support.
+- [TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md](TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md)
+  - weak-measurement undo-cost audit showing that control-pulse energy,
+    trajectory-derived cost, and postselected reversal success are null unless
+    a calibrated independent meter changes the verdict with standard records
+    fixed.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)

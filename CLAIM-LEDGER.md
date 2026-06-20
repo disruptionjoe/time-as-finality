@@ -833,3 +833,19 @@ forward direction. The converse is an open conjecture.
   proposition gaps with T58 order-pair phantom gaps.
 - Open next step: decide whether T19 proposition gaps and T58 order-pair gaps
   share a common typed gap category or only the same H0 failure shape.
+
+### 2026-06-20 - Weak-Measurement Undo-Cost Independence (T93)
+
+- Q1 remains `partially_supported`, but T12 is blocked more sharply. A
+  hardware undo-cost route is non-null only if a calibrated, pre-registered
+  meter changes the TaF verdict while coherence, redundancy, access, and
+  reversal-success statistics are fixed.
+- Rejected false positives: control-pulse energy or schedule bookkeeping is
+  `null_proxy_cost`; success-conditioned reversal is `null_postselected_cost`;
+  and an independent meter that varies without changing the verdict is
+  `independent_but_not_decisive`.
+- Claim impact: undo or feedback experiments are not TaF discriminators merely
+  because a reversal is attempted or sometimes succeeds. The repo currently has
+  no real platform supplying the calibrated independent undo-cost meter.
+- Suggested next move: name a hardware meter plus raw-log schema satisfying T93
+  or demote weak measurement below detector provenance in the active roadmap.

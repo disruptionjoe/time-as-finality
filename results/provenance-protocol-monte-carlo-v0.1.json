@@ -1,0 +1,55 @@
+{
+  "sample_count": 400,
+  "seed": 74017,
+  "family_outcomes": {
+    "engineered_lab": {
+      "sample_count": 400,
+      "robust_rate": 0.905,
+      "withhold_rate": 0.095,
+      "threshold_dependent_rate": 0.0,
+      "false_independence_rate": 0.0,
+      "false_dependence_rate": 0.0,
+      "computable_d1_rate": 0.905,
+      "robust_count": 362,
+      "withhold_count": 38,
+      "threshold_dependent_count": 0,
+      "false_independence_count": 0,
+      "false_dependence_count": 0,
+      "computable_d1_count": 362
+    },
+    "mixed_lab": {
+      "sample_count": 400,
+      "robust_rate": 0.0,
+      "withhold_rate": 0.91,
+      "threshold_dependent_rate": 0.09,
+      "false_independence_rate": 0.0,
+      "false_dependence_rate": 0.0,
+      "computable_d1_rate": 0.0,
+      "robust_count": 0,
+      "withhold_count": 364,
+      "threshold_dependent_count": 36,
+      "false_independence_count": 0,
+      "false_dependence_count": 0,
+      "computable_d1_count": 0
+    },
+    "field_degraded": {
+      "sample_count": 400,
+      "robust_rate": 0.0,
+      "withhold_rate": 0.71,
+      "threshold_dependent_rate": 0.29,
+      "false_independence_rate": 0.0,
+      "false_dependence_rate": 0.0,
+      "computable_d1_rate": 0.0,
+      "robust_count": 0,
+      "withhold_count": 284,
+      "threshold_dependent_count": 116,
+      "false_independence_count": 0,
+      "false_dependence_count": 0,
+      "computable_d1_count": 0
+    }
+  },
+  "strongest_claim": "Robust detector-provenance recovery is not a generic consequence of having calibrated detector channels. In this audit it occupies a high-trust, low-back-action, high-authentication corner of protocol space and drops sharply under broader stress priors.",
+  "weakened_claim": "Under the mixed and degraded priors, robust recovery disappeared entirely; the protocol mostly withheld D1 rather than recovering a partition. Q1's detector branch should therefore be treated as an engineered protocol claim, not a generic measurement claim.",
+  "blocker": "The priors are stress priors, not calibration posteriors. Without detector-specific calibration data, T74 quantifies fragility but not real experimental frequency.",
+  "recommended_next": "Map one concrete detector stack onto T72/T74 parameters and replace the stress priors with measured posteriors for clocks, authentication, batching, trust, back-action, and DAG observability."
+}

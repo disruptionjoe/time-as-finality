@@ -62,6 +62,12 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-stern-gerlach-access-window-v0.1.md](TECHNICAL-REPORT-stern-gerlach-access-window-v0.1.md)
   - Stern-Gerlach detector-fragment proxy preserving the access-boundary
     distinction while weakening Q1 through threshold sensitivity.
+- [TECHNICAL-REPORT-detector-provenance-robustness-v0.1.md](TECHNICAL-REPORT-detector-provenance-robustness-v0.1.md)
+  - detector-provenance robustness map showing when intervention-sensitive
+    metadata preserve or fail to preserve D1 independence partitions.
+- [TECHNICAL-REPORT-physical-provenance-protocol-v0.1.md](TECHNICAL-REPORT-physical-provenance-protocol-v0.1.md)
+  - physical provenance protocol audit replacing Boolean degradation flags with
+    clock, authentication, trust, batching, back-action, and DAG parameters.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -302,6 +308,7 @@ python -m models.run_t58
 python -m models.run_t59
 python -m models.run_t62
 python -m models.run_t64
+python -m models.run_t72
 ```
 
 ## Run Explorations

@@ -58,6 +58,12 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T23: Invariant-Preserving Transformations](../tests/T23-invariant-preserving-transformations.md)
 - [T62: Noisy Measurement Access-Boundary Discriminator](../tests/T62-noisy-measurement-access-boundary.md)
 - [T64: Stern-Gerlach Detector Access-Window Discriminator](../tests/T64-stern-gerlach-access-window.md)
+- [T66: POVM Detector Calibration Obstruction](../tests/T66-povm-detector-calibration-obstruction.md)
+- [T67: POVM Correlation Provenance Obstruction](../tests/T67-povm-correlation-provenance-obstruction.md)
+- [T68: Intervention-Sensitive Detector Provenance](../tests/T68-intervention-sensitive-detector-provenance.md)
+- [T70: Detector Provenance Robustness](../tests/T70-detector-provenance-robustness.md)
+- [T72: Physical Provenance Protocol](../tests/T72-physical-provenance-protocol.md)
+- [T74: Provenance Protocol Monte Carlo](../tests/T74-provenance-protocol-monte-carlo.md)
 
 ## T21 Result
 
@@ -169,11 +175,52 @@ The earned claim is therefore narrow: TaF can express an access-window and
 independence-filter predicate over already formed detector records, but it has
 no calibration-free Stern-Gerlach prediction yet.
 
+## T66-T74 Detector Provenance Result
+
+[T66](../tests/T66-povm-detector-calibration-obstruction.md) replaces declared
+channel reliabilities with calibrated POVM response matrices and shows that
+threshold/provenance underdetermination remains. [T67](../tests/T67-povm-correlation-provenance-obstruction.md)
+then refutes the passive-correlation repair: copied archives and independent
+readout chains can have identical pairwise agreement and phi correlation while
+requiring opposite D1 independence partitions.
+
+[T68](../tests/T68-intervention-sensitive-detector-provenance.md) gives a
+conditional positive result. Intervention-sensitive provenance metadata can
+fix the partition before D1 scoring through origin tags, perturbation response,
+delayed-copy ancestry, and signed provenance DAG data.
+
+[T70](../tests/T70-detector-provenance-robustness.md) stress-tests that repair.
+The rule survives moderate single-channel degradation when redundant
+authenticated provenance channels remain. It fails cleanly when trusted
+channels are absent or contaminated: D1 is withheld rather than inferred from
+passive similarity, partial-DAG thresholds, or semantic labels.
+
+[T72](../tests/T72-physical-provenance-protocol.md) replaces Boolean
+degradation flags with interval/probability protocol parameters: clock error,
+signature failure, archive batching, trust boundaries, perturbation back-action,
+and partial provenance-DAG observability. It shows robust recovery under
+declared physical reliability bounds, an ambiguous withhold region, an ad hoc
+threshold failure, and unsafe false-independence/false-dependence regimes.
+
+[T74](../tests/T74-provenance-protocol-monte-carlo.md) converts that regime
+table into a deterministic stress-prior audit. In `400` samples per family,
+robust recovery survives in the `engineered_lab` family at rate `0.905`, while
+it disappears entirely in the broader `mixed_lab` and `field_degraded`
+families. Outside the engineered corner, the protocol mostly withholds D1
+rather than fixing a provenance partition.
+
+The detector branch of Q1 should therefore be stated as an
+intervention-sensitive provenance/accounting framework over already formed
+detector records under explicit physical protocol assumptions. It does not
+recover detector finality from calibrated outcome statistics or passive
+correlations alone, and it is not generically recoverable from provenance
+metadata unless the apparatus sits in a narrow engineered protocol region.
+
 ## Contribution Needed
 
-Replace the declared T64 binary channels with calibrated detector physics:
-POVMs, scattering response curves, or measured detector-noise data that fix
-fragment reliabilities, access windows, thresholds, and independence classes
-before D1 is evaluated. Then compare "under-finalized classical record" with
-decoherence, quantum Darwinism, relational QM, consistent histories,
-many-worlds, and QBism.
+Replace T74's stress priors with calibration posteriors from one concrete
+detector stack: measured clock distributions, signature failure probabilities,
+archive batching, subsystem trust boundaries, perturbation back-action
+matrices, and partial DAG observability. Only after that should the detector
+branch be compared with decoherence, quantum Darwinism, relational QM,
+consistent histories, many-worlds, and QBism.

@@ -1,0 +1,1454 @@
+{
+  "passive_statistics": {
+    "agreement_probability": 0.92,
+    "phi_correlation": 0.84
+  },
+  "regime_table": [
+    {
+      "name": "robust_recovery_protocol",
+      "verdict": "robust_provenance_recovery",
+      "copied_status": "accepted_same_class",
+      "independent_status": "accepted_distinct_classes",
+      "computable_d1": true,
+      "copied_d1": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "independent_d1": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "Both provenance classes are fixed before D1 scoring."
+    },
+    {
+      "name": "batched_clock_crypto_dag_recovery",
+      "verdict": "robust_provenance_recovery",
+      "copied_status": "accepted_same_class",
+      "independent_status": "accepted_distinct_classes",
+      "computable_d1": true,
+      "copied_d1": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "independent_d1": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "Both provenance classes are fixed before D1 scoring."
+    },
+    {
+      "name": "lossy_tags_clean_intervention_recovery",
+      "verdict": "robust_provenance_recovery",
+      "copied_status": "accepted_same_class",
+      "independent_status": "accepted_distinct_classes",
+      "computable_d1": true,
+      "copied_d1": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "independent_d1": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "Both provenance classes are fixed before D1 scoring."
+    },
+    {
+      "name": "ambiguous_withhold_low_trust",
+      "verdict": "ambiguous_withhold_region",
+      "copied_status": "withhold_ambiguous",
+      "independent_status": "withhold_ambiguous",
+      "computable_d1": false,
+      "copied_d1": null,
+      "independent_d1": null,
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "Protocol evidence is too weak; D1 is not computed."
+    },
+    {
+      "name": "partial_dag_ad_hoc_threshold",
+      "verdict": "ambiguous_withhold_threshold_dependent",
+      "copied_status": "withhold_threshold_dependent",
+      "independent_status": "withhold_threshold_dependent",
+      "computable_d1": false,
+      "copied_d1": null,
+      "independent_d1": null,
+      "threshold_source": "ad_hoc_partial_dag_threshold",
+      "interpretation": "The only recovery route uses an unjustified threshold."
+    },
+    {
+      "name": "forged_tags_false_independence_risk",
+      "verdict": "false_independence_risk",
+      "copied_status": "false_independence_risk",
+      "independent_status": "withhold_ambiguous",
+      "computable_d1": false,
+      "copied_d1": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "independent_d1": null,
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "A copied archive is accepted as independent."
+    },
+    {
+      "name": "backaction_false_dependence_risk",
+      "verdict": "false_dependence_risk",
+      "copied_status": "accepted_same_class",
+      "independent_status": "false_dependence_risk",
+      "computable_d1": true,
+      "copied_d1": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "independent_d1": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "threshold_source": "declared_physical_protocol",
+      "interpretation": "An independent readout is accepted as dependent."
+    }
+  ],
+  "analyses": [
+    {
+      "regime": "robust_recovery_protocol",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.9187,
+          "false_risk": 0.0813,
+          "accepted": true,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.9644,
+          "false_risk": 0.006,
+          "accepted": true,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.001,
+          "false_risk": 0.001,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.9412,
+          "false_risk": 0.02,
+          "accepted": true,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0192,
+          "false_risk": 0.04,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.946,
+          "false_risk": 0.01,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.0098,
+          "false_risk": 0.01,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_same_class",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "accepted_channels": [
+          "clock_latency_interval",
+          "authenticated_duplicate_origin_tag",
+          "perturbation_change_response",
+          "signed_shared_ancestry"
+        ],
+        "max_dependence_confidence": 0.9644,
+        "max_independence_confidence": 0.0192,
+        "max_false_risk": 0.0813,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns one independence class."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "robust_recovery_protocol",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "distinct",
+          "confidence": 0.9187,
+          "false_risk": 0.0813,
+          "accepted": true,
+          "interpretation": "Observed timing is too fast for declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.9644,
+          "false_risk": 0.006,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.9693,
+          "false_risk": 0.006,
+          "accepted": true,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.0384,
+          "false_risk": 0.04,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.922,
+          "false_risk": 0.02,
+          "accepted": true,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0098,
+          "false_risk": 0.01,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.946,
+          "false_risk": 0.03,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_distinct_classes",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "accepted_channels": [
+          "clock_latency_interval",
+          "authenticated_distinct_origin_tags",
+          "perturbation_no_change_response",
+          "signed_disjoint_ancestry"
+        ],
+        "max_dependence_confidence": 0.0384,
+        "max_independence_confidence": 0.9693,
+        "max_false_risk": 0.0813,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns distinct classes."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "batched_clock_crypto_dag_recovery",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.24,
+          "false_risk": 0.76,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.92,
+          "false_risk": 0.012,
+          "accepted": true,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.0019,
+          "false_risk": 0.002,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.8664,
+          "false_risk": 0.05,
+          "accepted": true,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0456,
+          "false_risk": 0.1,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.9035,
+          "false_risk": 0.02,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.019,
+          "false_risk": 0.02,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_same_class",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "accepted_channels": [
+          "authenticated_duplicate_origin_tag",
+          "perturbation_change_response",
+          "signed_shared_ancestry"
+        ],
+        "max_dependence_confidence": 0.92,
+        "max_independence_confidence": 0.0456,
+        "max_false_risk": 0.05,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns one independence class."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "batched_clock_crypto_dag_recovery",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.24,
+          "false_risk": 0.76,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.92,
+          "false_risk": 0.012,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.939,
+          "false_risk": 0.012,
+          "accepted": true,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.0912,
+          "false_risk": 0.1,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.8208,
+          "false_risk": 0.05,
+          "accepted": true,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0095,
+          "false_risk": 0.01,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.9127,
+          "false_risk": 0.04,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_distinct_classes",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "accepted_channels": [
+          "authenticated_distinct_origin_tags",
+          "perturbation_no_change_response",
+          "signed_disjoint_ancestry"
+        ],
+        "max_dependence_confidence": 0.24,
+        "max_independence_confidence": 0.939,
+        "max_false_risk": 0.05,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns distinct classes."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "lossy_tags_clean_intervention_recovery",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.7755,
+          "false_risk": 0.2245,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.1163,
+          "false_risk": 0.51,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.0047,
+          "false_risk": 0.01,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.8936,
+          "false_risk": 0.03,
+          "accepted": true,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0182,
+          "false_risk": 0.05,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.8313,
+          "false_risk": 0.04,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.0368,
+          "false_risk": 0.04,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_same_class",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "accepted_channels": [
+          "perturbation_change_response",
+          "signed_shared_ancestry"
+        ],
+        "max_dependence_confidence": 0.8936,
+        "max_independence_confidence": 0.0368,
+        "max_false_risk": 0.04,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns one independence class."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "lossy_tags_clean_intervention_recovery",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "distinct",
+          "confidence": 0.7755,
+          "false_risk": 0.2245,
+          "accepted": false,
+          "interpretation": "Observed timing is too fast for declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.1163,
+          "false_risk": 0.51,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.2792,
+          "false_risk": 0.41,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.0456,
+          "false_risk": 0.05,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.8662,
+          "false_risk": 0.03,
+          "accepted": true,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0184,
+          "false_risk": 0.02,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.8486,
+          "false_risk": 0.08,
+          "accepted": true,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_distinct_classes",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "accepted_channels": [
+          "perturbation_no_change_response",
+          "signed_disjoint_ancestry"
+        ],
+        "max_dependence_confidence": 0.0456,
+        "max_independence_confidence": 0.8662,
+        "max_false_risk": 0.08,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns distinct classes."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "ambiguous_withhold_low_trust",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.045,
+          "false_risk": 0.955,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.1052,
+          "false_risk": 0.6,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.0495,
+          "false_risk": 0.2,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.2048,
+          "false_risk": 0.35,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0878,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.1126,
+          "false_risk": 0.35,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.1102,
+          "false_risk": 0.35,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "withhold_ambiguous",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "accepted_channels": [],
+        "max_dependence_confidence": 0.2048,
+        "max_independence_confidence": 0.1102,
+        "max_false_risk": 0.955,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "No channel clears the declared protocol bounds; D1 is withheld."
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "ambiguous_withhold_low_trust",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.045,
+          "false_risk": 0.955,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.1052,
+          "false_risk": 0.6,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.1157,
+          "false_risk": 0.6,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.1901,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.1024,
+          "false_risk": 0.35,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.063,
+          "false_risk": 0.2,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.1386,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "withhold_ambiguous",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "accepted_channels": [],
+        "max_dependence_confidence": 0.1901,
+        "max_independence_confidence": 0.1386,
+        "max_false_risk": 0.955,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "No channel clears the declared protocol bounds; D1 is withheld."
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "partial_dag_ad_hoc_threshold",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.0448,
+          "false_risk": 0.8,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.056,
+          "false_risk": 0.2,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.252,
+          "false_risk": 0.4,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.168,
+          "false_risk": 0.8,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.2278,
+          "false_risk": 0.3,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.1575,
+          "false_risk": 0.3,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "withhold_threshold_dependent",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "accepted_channels": [],
+        "max_dependence_confidence": 0.252,
+        "max_independence_confidence": 0.168,
+        "max_false_risk": 1.0,
+        "threshold_source": "ad_hoc_partial_dag_threshold",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "The available evidence requires a threshold not justified by the physical protocol; D1 is withheld."
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "partial_dag_ad_hoc_threshold",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.0448,
+          "false_risk": 0.8,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.112,
+          "false_risk": 0.7,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.336,
+          "false_risk": 0.8,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.084,
+          "false_risk": 0.4,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.105,
+          "false_risk": 0.2,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.2604,
+          "false_risk": 0.58,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "withhold_threshold_dependent",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "accepted_channels": [],
+        "max_dependence_confidence": 0.336,
+        "max_independence_confidence": 0.2604,
+        "max_false_risk": 1.0,
+        "threshold_source": "ad_hoc_partial_dag_threshold",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "The available evidence requires a threshold not justified by the physical protocol; D1 is withheld."
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "forged_tags_false_independence_risk",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.4567,
+          "false_risk": 0.5,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.8303,
+          "false_risk": 0.95,
+          "accepted": true,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.2415,
+          "false_risk": 0.25,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.4485,
+          "false_risk": 0.9,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0345,
+          "false_risk": 0.7,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.322,
+          "false_risk": 0.7,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "false_independence_risk",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "accepted_channels": [
+          "authenticated_distinct_origin_tags"
+        ],
+        "max_dependence_confidence": 0.2415,
+        "max_independence_confidence": 0.8303,
+        "max_false_risk": 0.95,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns distinct classes."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": false
+    },
+    {
+      "regime": "forged_tags_false_independence_risk",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.4567,
+          "false_risk": 0.5,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.4711,
+          "false_risk": 0.47,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.2415,
+          "false_risk": 0.35,
+          "accepted": false,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.4485,
+          "false_risk": 0.25,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.046,
+          "false_risk": 0.1,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.1035,
+          "false_risk": 0.85,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "withhold_ambiguous",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "accepted_channels": [],
+        "max_dependence_confidence": 0.2415,
+        "max_independence_confidence": 0.4711,
+        "max_false_risk": 1.0,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "No channel clears the declared protocol bounds; D1 is withheld."
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "backaction_false_dependence_risk",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "same",
+          "confidence": 0.1473,
+          "false_risk": 0.6,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.0495,
+          "false_risk": 0.1,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.8379,
+          "false_risk": 0.02,
+          "accepted": true,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0441,
+          "false_risk": 0.07,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0473,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.2925,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "accepted_same_class",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "accepted_channels": [
+          "perturbation_change_response"
+        ],
+        "max_dependence_confidence": 0.8379,
+        "max_independence_confidence": 0.2925,
+        "max_false_risk": 0.02,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns one independence class."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "backaction_false_dependence_risk",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": [
+        {
+          "channel": "clock_latency_interval",
+          "supports": "same",
+          "confidence": 0.0,
+          "false_risk": 1.0,
+          "accepted": false,
+          "interpretation": "Observed timing is compatible with declared copy latency."
+        },
+        {
+          "channel": "authenticated_duplicate_origin_tag",
+          "supports": "none",
+          "confidence": 0.1473,
+          "false_risk": 0.6,
+          "accepted": false,
+          "interpretation": "Duplicate authenticated origin tags indicate shared provenance."
+        },
+        {
+          "channel": "authenticated_distinct_origin_tags",
+          "supports": "distinct",
+          "confidence": 0.2104,
+          "false_risk": 0.65,
+          "accepted": false,
+          "interpretation": "Distinct authenticated origin tags indicate separate provenance."
+        },
+        {
+          "channel": "perturbation_change_response",
+          "supports": "same",
+          "confidence": 0.8291,
+          "false_risk": 0.94,
+          "accepted": true,
+          "interpretation": "Changing one channel changes the other under intervention."
+        },
+        {
+          "channel": "perturbation_no_change_response",
+          "supports": "distinct",
+          "confidence": 0.0529,
+          "false_risk": 0.02,
+          "accepted": false,
+          "interpretation": "Perturbing one channel does not change the other."
+        },
+        {
+          "channel": "signed_shared_ancestry",
+          "supports": "same",
+          "confidence": 0.0675,
+          "false_risk": 0.15,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows shared non-common ancestry."
+        },
+        {
+          "channel": "signed_disjoint_ancestry",
+          "supports": "distinct",
+          "confidence": 0.1148,
+          "false_risk": 0.85,
+          "accepted": false,
+          "interpretation": "A signed provenance DAG shows disjoint ancestry above common source."
+        }
+      ],
+      "partition": {
+        "status": "false_dependence_risk",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "accepted_channels": [
+          "perturbation_change_response"
+        ],
+        "max_dependence_confidence": 0.8291,
+        "max_independence_confidence": 0.2104,
+        "max_false_risk": 0.94,
+        "threshold_source": "declared_physical_protocol",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Protocol-accepted evidence assigns one independence class."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": false
+    }
+  ],
+  "strongest_claim": "A physical provenance protocol can fix D1 independence classes before finality scoring when at least one dependence channel and one independence channel clear declared reliability bounds from the protocol rather than ad hoc post hoc thresholds.",
+  "weakened_claim": "The recovery is protocol-relative. If authentication, DAG observability, trust boundaries, and perturbation controls do not clear their declared reliability bounds, D1 must be withheld; in hostile regimes the protocol can create false independence or false dependence risk.",
+  "minimal_physical_conditions": "Non-arbitrary D1 detector finality requires declared clock/error bounds, authenticated tags or signed ancestry with high verification probability, trusted subsystem boundaries, bounded archive batching, and a perturbation channel whose back-action risk is below the protocol's false-risk ceiling.",
+  "q1_recommendation": "Keep Q1 partially supported only as a detector-record provenance accounting framework under explicit physical protocol assumptions. Do not claim detector-level provenance recovery without those assumptions.",
+  "falsification_condition": "The detector branch should be demoted if physically realistic protocol parameters generically fall into withhold, false independence, or false dependence regimes, or if the acceptance floors cannot be justified independently of the desired D1 result.",
+  "recommended_next": "Replace the finite regime table with calibration data or a Monte Carlo protocol simulation over clock, signature, batching, DAG, trust, and back-action distributions."
+}

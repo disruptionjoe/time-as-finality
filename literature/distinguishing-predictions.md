@@ -59,6 +59,17 @@ profile `(0, 0, 0, 0)`, while `duplicate_archive_boundary` has accessible raw
 weakens Q1 because the same detector window can be finalized at threshold
 `0.75` and not finalized at `0.9`.
 
+T66-T72 narrow this further. Calibrated POVM response matrices do not determine
+D1 detector finality, passive pairwise correlations do not recover provenance
+classes, and intervention-sensitive provenance works only when trusted metadata
+are available before scoring. The robustness result is mixed: T70 survives
+moderate single-channel degradation when redundant authenticated channels
+remain, but withholds D1 when clock, tag, intervention, and DAG evidence are
+jointly missing, forgeable, thresholded, or back-action contaminated. T72 then
+replaces the Boolean degradation flags with physical protocol parameters and
+adds two unsafe regimes: forged tags can create false independence, and
+perturbation back-action can create false dependence.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing
@@ -258,8 +269,8 @@ counterexample. The table below preserves the older domain-neighbor ordering.
 
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
-| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21/T62/T64 implemented; calibrated detector physics open |
-| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22/T62/T64 implemented; threshold calibration open |
+| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21/T62/T64/T66-T72 implemented; calibration-data or Monte Carlo protocol open |
+| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22/T62/T64/T66-T72 implemented; trusted provenance instrumentation requires physical validation |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
 | 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |

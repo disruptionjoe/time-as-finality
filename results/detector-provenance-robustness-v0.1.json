@@ -1,0 +1,954 @@
+{
+  "passive_statistics": {
+    "agreement_probability": 0.92,
+    "phi_correlation": 0.84
+  },
+  "robustness_table": [
+    {
+      "name": "ideal_t68_metadata",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "timing_plus_ancestry",
+        "authenticated_origin_tags",
+        "clean_perturbation_response",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "clock_uncertainty_only",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "authenticated_origin_tags",
+        "clean_perturbation_response",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "tag_loss_only",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "timing_plus_ancestry",
+        "clean_perturbation_response",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "tag_spoofing_caught_by_dag_and_intervention",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "timing_plus_ancestry",
+        "clean_perturbation_response",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "perturbation_back_action_with_authenticated_records",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "timing_plus_ancestry",
+        "authenticated_origin_tags",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "archive_latency_hidden_but_signed_dag_remains",
+      "verdict": "survives",
+      "copied_status": "determined",
+      "independent_status": "determined",
+      "preserves_partition": true,
+      "clean_failure": false,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [
+        "authenticated_origin_tags",
+        "clean_perturbation_response",
+        "complete_signed_dag"
+      ],
+      "interpretation": "The degraded regime still fixes both provenance classes before D1."
+    },
+    {
+      "name": "dag_incomplete_tags_lost_back_action",
+      "verdict": "fails_clean_abstention",
+      "copied_status": "undetermined_clean_abstention",
+      "independent_status": "undetermined_clean_abstention",
+      "preserves_partition": false,
+      "clean_failure": true,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [],
+      "interpretation": "Trusted provenance evidence is insufficient; the rule abstains rather than evaluating D1."
+    },
+    {
+      "name": "partial_dag_threshold_only",
+      "verdict": "fails_threshold_or_label_dependent",
+      "copied_status": "undetermined_threshold_or_label_dependent",
+      "independent_status": "undetermined_threshold_or_label_dependent",
+      "preserves_partition": false,
+      "clean_failure": false,
+      "threshold_or_label_dependent": true,
+      "minimal_metadata_used": [],
+      "interpretation": "Classification would require a partial-DAG threshold or unaudited label; D1 is withheld."
+    },
+    {
+      "name": "forged_tags_hidden_latency_incomplete_dag",
+      "verdict": "fails_clean_abstention",
+      "copied_status": "undetermined_clean_abstention",
+      "independent_status": "undetermined_clean_abstention",
+      "preserves_partition": false,
+      "clean_failure": true,
+      "threshold_or_label_dependent": false,
+      "minimal_metadata_used": [],
+      "interpretation": "Trusted provenance evidence is insufficient; the rule abstains rather than evaluating D1."
+    }
+  ],
+  "witness_analyses": [
+    {
+      "regime": "ideal_t68_metadata",
+      "regime_purpose": "Baseline T68 intervention/provenance rule.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": true,
+        "duplicate_tag_dependence": true,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": true,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "ideal_t68_metadata",
+      "regime_purpose": "Baseline T68 intervention/provenance rule.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": true,
+        "perturbation_dependence": false,
+        "perturbation_independence": true,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "clock_uncertainty_only",
+      "regime_purpose": "Timing is ambiguous, but tags, intervention, and DAG remain usable.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": true,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": true,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "clock_or_latency_timing"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "clock_uncertainty_only",
+      "regime_purpose": "Timing is ambiguous, but tags, intervention, and DAG remain usable.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": true,
+        "perturbation_dependence": false,
+        "perturbation_independence": true,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "tag_loss_only",
+      "regime_purpose": "Origin tags are missing, but timing, intervention, and DAG remain usable.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": true,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": true,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "tag_loss_only",
+      "regime_purpose": "Origin tags are missing, but timing, intervention, and DAG remain usable.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": true,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "tag_spoofing_caught_by_dag_and_intervention",
+      "regime_purpose": "Tags are forgeable, so only intervention and signed ancestry count.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": true,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": true,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "unauthenticated_or_forgeable_tags"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "tag_spoofing_caught_by_dag_and_intervention",
+      "regime_purpose": "Tags are forgeable, so only intervention and signed ancestry count.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": true,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [
+          "unauthenticated_or_forgeable_tags"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "perturbation_back_action_with_authenticated_records",
+      "regime_purpose": "The active intervention is contaminated, but tags and DAG remain reliable.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": true,
+        "duplicate_tag_dependence": true,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "perturbation_back_action"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "perturbation_back_action_with_authenticated_records",
+      "regime_purpose": "The active intervention is contaminated, but tags and DAG remain reliable.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": true,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [
+          "perturbation_back_action"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "archive_latency_hidden_but_signed_dag_remains",
+      "regime_purpose": "Timing and latency are not trustworthy, but provenance metadata remain signed.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": true,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": true,
+        "perturbation_independence": false,
+        "dag_dependence": true,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "clock_or_latency_timing"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "reason": "At least one authenticated dependence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true
+    },
+    {
+      "regime": "archive_latency_hidden_but_signed_dag_remains",
+      "regime_purpose": "Timing and latency are not trustworthy, but provenance metadata remain signed.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": true,
+        "perturbation_dependence": false,
+        "perturbation_independence": true,
+        "dag_dependence": false,
+        "dag_independence": true,
+        "ambiguous_channels": [
+          "archive_latency_hidden"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "determined",
+        "inferred_same_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "reason": "At least one authenticated independence channel remains.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true
+    },
+    {
+      "regime": "dag_incomplete_tags_lost_back_action",
+      "regime_purpose": "All strong channels are missing or contaminated; the rule should abstain.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "clock_or_latency_timing",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "undetermined_clean_abstention",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "No authenticated provenance channel remains; the rule abstains instead of using passive statistics.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "dag_incomplete_tags_lost_back_action",
+      "regime_purpose": "All strong channels are missing or contaminated; the rule should abstain.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "undetermined_clean_abstention",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "No authenticated provenance channel remains; the rule abstains instead of using passive statistics.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "partial_dag_threshold_only",
+      "regime_purpose": "Only a partial ancestry score remains; any classification needs a threshold.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "clock_or_latency_timing",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": true
+      },
+      "partition": {
+        "status": "undetermined_threshold_or_label_dependent",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "Only thresholded partial metadata or unaudited labels remain; D1 must not be evaluated.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": true
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "partial_dag_threshold_only",
+      "regime_purpose": "Only a partial ancestry score remains; any classification needs a threshold.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "tag_loss"
+        ],
+        "threshold_or_label_dependent": true
+      },
+      "partition": {
+        "status": "undetermined_threshold_or_label_dependent",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "Only thresholded partial metadata or unaudited labels remain; D1 must not be evaluated.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": true
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "forged_tags_hidden_latency_incomplete_dag",
+      "regime_purpose": "Forgeable tags plus hidden latency and incomplete DAG remove trusted evidence.",
+      "witness": "dependent_copied_archive",
+      "actual_same_class": true,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "clock_or_latency_timing",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "unauthenticated_or_forgeable_tags"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "undetermined_clean_abstention",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "No authenticated provenance channel remains; the rule abstains instead of using passive statistics.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    },
+    {
+      "regime": "forged_tags_hidden_latency_incomplete_dag",
+      "regime_purpose": "Forgeable tags plus hidden latency and incomplete DAG remove trusted evidence.",
+      "witness": "independent_overlapping_readout",
+      "actual_same_class": false,
+      "evidence": {
+        "timing_dependence": false,
+        "duplicate_tag_dependence": false,
+        "distinct_tag_independence": false,
+        "perturbation_dependence": false,
+        "perturbation_independence": false,
+        "dag_dependence": false,
+        "dag_independence": false,
+        "ambiguous_channels": [
+          "archive_latency_hidden",
+          "incomplete_provenance_dag",
+          "perturbation_back_action",
+          "unauthenticated_or_forgeable_tags"
+        ],
+        "threshold_or_label_dependent": false
+      },
+      "partition": {
+        "status": "undetermined_clean_abstention",
+        "inferred_same_class": null,
+        "inferred_classes": [],
+        "reason": "No authenticated provenance channel remains; the rule abstains instead of using passive statistics.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "threshold_or_label_dependent": false
+      },
+      "d1_profile": null,
+      "observer_finalized": null,
+      "correctly_classified": null
+    }
+  ],
+  "minimal_metadata_requirement": "D1 detector finality is non-arbitrary only when the provenance partition is fixed by at least one authenticated dependence channel for copied records and at least one authenticated independence channel for independent records. In this witness family the usable channels are: clean perturbation response, authenticated origin tags, complete signed ancestry, or timing only when paired with ancestry and clock bounds. Passive similarity and partial-DAG thresholds are insufficient.",
+  "strongest_claim": "T68 survives moderate single-channel degradation when redundant authenticated provenance channels remain. The D1 partition can still be fixed before finality scoring without inspecting the desired D1 verdict.",
+  "weakened_claim": "The detector branch of Q1 depends on trusted provenance instrumentation. If clock, tag, intervention, and DAG evidence are jointly missing, forgeable, thresholded, or back-action contaminated, D1 must be withheld or else adds no detector-level content beyond externally supplied classes.",
+  "q1_recommendation": "Keep Q1 partially supported, but state the detector contribution as an intervention-sensitive provenance/accounting framework. Do not claim provenance recovery from detector outcomes alone.",
+  "falsification_condition": "T70 would fail if degraded copied and independent witnesses with identical passive statistics can be classified non-arbitrarily without authenticated provenance channels, or if a physical implementation shows the required provenance channels cannot be made independent of the D1 outcome.",
+  "recommended_next": "Replace the boolean degradation flags with a physical protocol model: clock distributions, signature failure probabilities, archive batching, and intervention back-action matrices."
+}

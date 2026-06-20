@@ -54,9 +54,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P02 - Category Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T10:38:45-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-103822-p02-category-theorist-losskernel-structure.md
 - goal: Recast LossKernel as the weakest honest categorical structure available:
   a monoid-valued grading, effect, fibration, lax functor, or indexed annotation,
   then state exactly which composition theorem survives.

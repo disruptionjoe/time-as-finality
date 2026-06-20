@@ -1,0 +1,569 @@
+{
+  "audits": [
+    {
+      "packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "verdict": "schema_complete_predata_scaffold_only",
+      "evidence_verdict": "withhold_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_columns": [],
+      "unlocked_tables": [],
+      "mutable_tables": [],
+      "unjoinable_tables": [],
+      "missing_control_roles": [],
+      "missing_channel_isolation_tests": [],
+      "placeholder_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "real_row_tables": [],
+      "failure_reasons": [],
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "t87_failure_reasons_if_scored_now": [
+        "no_real_raw_deployment_log"
+      ],
+      "next_allowed_step": "collect_real_rows_without_schema_or_policy_changes"
+    },
+    {
+      "packet_name": "placeholder_population_attempt_packet",
+      "verdict": "inadmissible_dry_run_packet",
+      "evidence_verdict": "withhold_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_columns": [],
+      "unlocked_tables": [],
+      "mutable_tables": [],
+      "unjoinable_tables": [],
+      "missing_control_roles": [],
+      "missing_channel_isolation_tests": [],
+      "placeholder_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "real_row_tables": [],
+      "failure_reasons": [
+        "attempts_to_populate_counts_from_placeholders"
+      ],
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "t87_failure_reasons_if_scored_now": [
+        "no_real_raw_deployment_log",
+        "fixture_counts_only"
+      ],
+      "next_allowed_step": "repair_packet_before_collection"
+    },
+    {
+      "packet_name": "schema_drift_dry_run_packet",
+      "verdict": "inadmissible_dry_run_packet",
+      "evidence_verdict": "withhold_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_columns": [
+        "event_time_tag_stream.operator_note"
+      ],
+      "unlocked_tables": [],
+      "mutable_tables": [],
+      "unjoinable_tables": [],
+      "missing_control_roles": [],
+      "missing_channel_isolation_tests": [],
+      "placeholder_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "real_row_tables": [],
+      "failure_reasons": [
+        "unregistered_schema_columns"
+      ],
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "t87_failure_reasons_if_scored_now": [
+        "no_real_raw_deployment_log"
+      ],
+      "next_allowed_step": "repair_packet_before_collection"
+    },
+    {
+      "packet_name": "posthoc_detector_packet_skeleton",
+      "verdict": "inadmissible_dry_run_packet",
+      "evidence_verdict": "withhold_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_columns": [],
+      "unlocked_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "mutable_tables": [],
+      "unjoinable_tables": [],
+      "missing_control_roles": [],
+      "missing_channel_isolation_tests": [],
+      "placeholder_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "real_row_tables": [],
+      "failure_reasons": [
+        "packet_not_locked_before_first_event",
+        "data_accessed_before_packet_lock"
+      ],
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "t87_failure_reasons_if_scored_now": [
+        "contract_not_registered_before_first_event",
+        "policy_chosen_after_data",
+        "analysis_code_not_frozen",
+        "no_real_raw_deployment_log",
+        "demotion_rules_chosen_after_data"
+      ],
+      "next_allowed_step": "repair_packet_before_collection"
+    },
+    {
+      "packet_name": "missing_ambiguous_and_dag_control_roles_packet",
+      "verdict": "inadmissible_dry_run_packet",
+      "evidence_verdict": "withhold_detector_q1_upgrade",
+      "missing_tables": [],
+      "missing_columns": [],
+      "extra_columns": [],
+      "unlocked_tables": [],
+      "mutable_tables": [],
+      "unjoinable_tables": [],
+      "missing_control_roles": [
+        "all_channels_ambiguous_negative_control",
+        "dag_truncation_false_edge_control"
+      ],
+      "missing_channel_isolation_tests": [],
+      "placeholder_tables": [
+        "preregistration_manifest",
+        "control_pair_manifest",
+        "event_time_tag_stream",
+        "signature_verification_log",
+        "tag_ambiguity_challenge_log",
+        "perturbation_trial_log",
+        "ancestry_dag_edge_export",
+        "trust_boundary_audit_log",
+        "demotion_decision_log"
+      ],
+      "real_row_tables": [],
+      "failure_reasons": [
+        "missing_t86_control_roles"
+      ],
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "t87_failure_reasons_if_scored_now": [
+        "no_real_raw_deployment_log",
+        "copied_independent_labels_not_preregistered",
+        "missing_t86_control_roles"
+      ],
+      "next_allowed_step": "repair_packet_before_collection"
+    }
+  ],
+  "required_t87_tables": {
+    "preregistration_manifest": [
+      "run_id",
+      "registered_at",
+      "first_event_not_before",
+      "policy_hash",
+      "analysis_code_hash",
+      "evidence_schema_hash",
+      "demotion_rules_hash",
+      "confidence_floor_low",
+      "max_false_risk_high"
+    ],
+    "control_pair_manifest": [
+      "pair_id",
+      "role",
+      "expected_relation",
+      "local_record_id",
+      "archive_record_id",
+      "source_event_id",
+      "timing_bin_id",
+      "randomization_seed_commitment",
+      "declared_before_event"
+    ],
+    "event_time_tag_stream": [
+      "event_id",
+      "detector_id",
+      "local_time",
+      "local_sigma",
+      "archive_time",
+      "archive_sigma",
+      "batch_id",
+      "batching_window",
+      "timing_uncertainty_model_id"
+    ],
+    "signature_verification_log": [
+      "event_id",
+      "tag_id",
+      "signature_id",
+      "verification_result",
+      "signer_key_id",
+      "forgery_challenge_id",
+      "spoof_challenge_id",
+      "verification_timestamp"
+    ],
+    "tag_ambiguity_challenge_log": [
+      "challenge_id",
+      "event_id",
+      "role",
+      "retained_tag",
+      "accepted_forged_tag",
+      "accepted_spoofed_independent_tag",
+      "unique_independent_tag",
+      "verdict"
+    ],
+    "perturbation_trial_log": [
+      "trial_id",
+      "pair_id",
+      "perturbed_record_id",
+      "perturbation_type",
+      "response_changed",
+      "independent_false_change",
+      "back_action_detected",
+      "pre_trial_state_hash",
+      "post_trial_state_hash"
+    ],
+    "ancestry_dag_edge_export": [
+      "edge_id",
+      "child_record_id",
+      "parent_record_id",
+      "edge_signature_id",
+      "edge_verified",
+      "export_snapshot_id",
+      "truncation_flag",
+      "false_shared_edge_challenge_id"
+    ],
+    "trust_boundary_audit_log": [
+      "audit_id",
+      "component",
+      "boundary_type",
+      "integrity_check_passed",
+      "key_scope",
+      "operator_id_hash",
+      "audit_timestamp"
+    ],
+    "demotion_decision_log": [
+      "run_id",
+      "control_role",
+      "demotion_condition",
+      "triggered",
+      "applied_before_d1",
+      "reason"
+    ]
+  },
+  "required_t86_control_roles": [
+    "copied_record_control_pairs",
+    "independent_record_control_pairs",
+    "all_channels_ambiguous_negative_control",
+    "clean_perturbation_only_positive_control",
+    "backaction_perturbation_contamination_control",
+    "clean_signed_dag_positive_control",
+    "dag_truncation_false_edge_control"
+  ],
+  "required_channel_isolation_tests": [
+    "perturbation_response",
+    "signed_ancestry_dag"
+  ],
+  "strongest_claim": "A detector-side Q1 dry-run packet can now be specified without schema ambiguity, but it remains only a pre-data scaffold. T87 would still reject it as evidence until real event rows replace template exports without changing schema, policy, demotion rules, or control roles.",
+  "improved": "T97 turns the T96 next-work item into a concrete, reviewable packet skeleton: every T87 table has an exact schema, file name, join key, schema hash, export checksum, and pre-data role. A lab can now fail the detector route by failing to freeze this packet before the first event.",
+  "weakened": "This weakens detector-side Q1 again. The route is no longer blocked by vague schema design; it is blocked by actual pre-data execution and real event-row population. Template rows, post hoc schema drift, and missing hostile controls do not upgrade Q1.",
+  "falsification_condition": "Demote the detector branch if a realistic lab workflow cannot freeze the T97 packet before event collection, or if the filled packet cannot pass T87 and preserve the T86 signed-DAG, perturbation, ambiguous-control, and contaminated-control separations under the locked schema.",
+  "q1_update": "Q1 remains partially supported only as a detector-record admissibility protocol. T97 supplies a pre-data dry-run scaffold, not evidence; detector-side Q1 still withholds until real rows populate the locked packet and pass T87 before T76/T86 scoring.",
+  "claim_ledger_update": "Add T97 to Q1 as a further narrowing: the detector branch has a schema-complete dry-run packet skeleton, but the strongest current claim is only that reviewers can check pre-data packet freezing. Placeholder rows, schema drift, post hoc packets, and missing hostile controls falsify any attempted detector upgrade.",
+  "open_blocker": "No actual detector event rows have been collected under the locked packet. The live blocker is operational: freeze the packet before first event, then fill it without schema changes.",
+  "recommended_next": "Instantiate the T97 packet in a real lab dry run with empty files, signed manifests, immutable export points, and operator handoff checks. If the lab cannot do that pre-data, demote the detector route below the active Q1 frontier.",
+  "locked_packet_manifest": {
+    "name": "locked_t97_detector_dry_run_packet_skeleton",
+    "run_id": "t97-dry-run-0001",
+    "registered_at": "2026-06-20T00:00:00Z",
+    "first_event_not_before": "2026-06-21T00:00:00Z",
+    "policy_hash": "a42da6b728285b86ec963ea3f980a1a2a6bfa184389a7d2794e45bb8919a3bc9",
+    "analysis_code_hash": "b2c0075b4b2139b8c2b7b3660d317352132a8a07bef25cd5a3c3c576e93450cd",
+    "evidence_schema_hash": "57fb145ab04a0a7a2df646b7e139aaca3aeeeb0b259af7df4da3fadbbd8a769d",
+    "demotion_rules_hash": "cad1ac175d3b1f8560937ab937b5e4c01521062c4ceef03c481b1d12d5b0ea4b",
+    "manifest_hash": "680f82152df4620d0f5fb13b09b945aafda4e857fe1e4e2c3f5032b09f4e63d0",
+    "declared_t86_control_roles": [
+      "all_channels_ambiguous_negative_control",
+      "backaction_perturbation_contamination_control",
+      "clean_perturbation_only_positive_control",
+      "clean_signed_dag_positive_control",
+      "copied_record_control_pairs",
+      "dag_truncation_false_edge_control",
+      "independent_record_control_pairs"
+    ],
+    "channel_isolation_tests": [
+      "perturbation_response",
+      "signed_ancestry_dag"
+    ],
+    "attempt_to_populate_counts": false,
+    "no_data_analyzed": true,
+    "tables": [
+      {
+        "table_name": "preregistration_manifest",
+        "file_name": "dry-run/t97/preregistration_manifest.jsonl",
+        "columns": [
+          "run_id",
+          "registered_at",
+          "first_event_not_before",
+          "policy_hash",
+          "analysis_code_hash",
+          "evidence_schema_hash",
+          "demotion_rules_hash",
+          "confidence_floor_low",
+          "max_false_risk_high"
+        ],
+        "join_keys": [
+          "run_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 1,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "2344132fa9dbd5fdf305882005962d8f7909556bb4384e456a05226c75b4b1da",
+        "export_checksum": "caa0da720b43a5b70ebc0fc1ceb0b99b438ddc14af0552ac0cd333c07e8e2fda",
+        "purpose": "Freeze run id, first-event bound, policy, code, schema, and demotion hashes."
+      },
+      {
+        "table_name": "control_pair_manifest",
+        "file_name": "dry-run/t97/control_pair_manifest.jsonl",
+        "columns": [
+          "pair_id",
+          "role",
+          "expected_relation",
+          "local_record_id",
+          "archive_record_id",
+          "source_event_id",
+          "timing_bin_id",
+          "randomization_seed_commitment",
+          "declared_before_event"
+        ],
+        "join_keys": [
+          "pair_id",
+          "source_event_id",
+          "timing_bin_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 7,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "f918b90031d4b93a6092d7e403a64b6c3a41e09652ca86c9142f778faa75a806",
+        "export_checksum": "fb3ab8166a40904bcce06035992d2ad44b4485ffac1cb08d47f276679b5c4ead",
+        "purpose": "Declare copied, independent, ambiguous, perturbation, and DAG control roles before events."
+      },
+      {
+        "table_name": "event_time_tag_stream",
+        "file_name": "dry-run/t97/event_time_tag_stream.jsonl",
+        "columns": [
+          "event_id",
+          "detector_id",
+          "local_time",
+          "local_sigma",
+          "archive_time",
+          "archive_sigma",
+          "batch_id",
+          "batching_window",
+          "timing_uncertainty_model_id"
+        ],
+        "join_keys": [
+          "event_id",
+          "batch_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 1,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "738b4a30f6d0f078f200b7fe17ad803fe598dffa33515183b2c82af6f4758a6c",
+        "export_checksum": "bd4ec8dbcc67765adf429d39d40e82b5209f482d2fba684667087156f11b7e12",
+        "purpose": "Reserve the native event timing stream and stable event ids."
+      },
+      {
+        "table_name": "signature_verification_log",
+        "file_name": "dry-run/t97/signature_verification_log.jsonl",
+        "columns": [
+          "event_id",
+          "tag_id",
+          "signature_id",
+          "verification_result",
+          "signer_key_id",
+          "forgery_challenge_id",
+          "spoof_challenge_id",
+          "verification_timestamp"
+        ],
+        "join_keys": [
+          "event_id",
+          "tag_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 1,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "5f5d2c7c7aff8354da30da9cba8c1c2feb003aa60a9dbf7528cd7797948af0e0",
+        "export_checksum": "6dc24e2faf32d6fb16b4e909294276494d7b411c0e8b282b5dc0de229c48107d",
+        "purpose": "Reserve event-level signature and spoof/forgery challenge exports."
+      },
+      {
+        "table_name": "tag_ambiguity_challenge_log",
+        "file_name": "dry-run/t97/tag_ambiguity_challenge_log.jsonl",
+        "columns": [
+          "challenge_id",
+          "event_id",
+          "role",
+          "retained_tag",
+          "accepted_forged_tag",
+          "accepted_spoofed_independent_tag",
+          "unique_independent_tag",
+          "verdict"
+        ],
+        "join_keys": [
+          "challenge_id",
+          "event_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 4,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "b736d21028d7f7e69ad86ba2eb06e6fa93d11f5d16b40794011bb0fdde093e28",
+        "export_checksum": "633d15826edb384f5cbaf7d335eac90b43a8fea27f2732f53e09839cc087a1bb",
+        "purpose": "Reserve rows for retained, forged, spoofed, and unique tag controls."
+      },
+      {
+        "table_name": "perturbation_trial_log",
+        "file_name": "dry-run/t97/perturbation_trial_log.jsonl",
+        "columns": [
+          "trial_id",
+          "pair_id",
+          "perturbed_record_id",
+          "perturbation_type",
+          "response_changed",
+          "independent_false_change",
+          "back_action_detected",
+          "pre_trial_state_hash",
+          "post_trial_state_hash"
+        ],
+        "join_keys": [
+          "trial_id",
+          "pair_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 4,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "543f1d97bf79b78db59f280290da3e9ec2a118a113f6855738b89763797234fd",
+        "export_checksum": "74052e6a61948f9716b982cbe3293ac0dc9a43c3056193240fd2709f0c9b6b6c",
+        "purpose": "Reserve rows for perturbation-only and back-action controls."
+      },
+      {
+        "table_name": "ancestry_dag_edge_export",
+        "file_name": "dry-run/t97/ancestry_dag_edge_export.jsonl",
+        "columns": [
+          "edge_id",
+          "child_record_id",
+          "parent_record_id",
+          "edge_signature_id",
+          "edge_verified",
+          "export_snapshot_id",
+          "truncation_flag",
+          "false_shared_edge_challenge_id"
+        ],
+        "join_keys": [
+          "edge_id",
+          "child_record_id",
+          "parent_record_id"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 1,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "c8ba00a892338b18ee53759d5a7ec87a67d0e35409b63bd36879d6cf8e221296",
+        "export_checksum": "63d358010d4c97e4d56a801da9458fe561f019d7ddd0e007e4a607dd5a9f1f04",
+        "purpose": "Reserve signed raw ancestry edges and DAG contamination controls."
+      },
+      {
+        "table_name": "trust_boundary_audit_log",
+        "file_name": "dry-run/t97/trust_boundary_audit_log.jsonl",
+        "columns": [
+          "audit_id",
+          "component",
+          "boundary_type",
+          "integrity_check_passed",
+          "key_scope",
+          "operator_id_hash",
+          "audit_timestamp"
+        ],
+        "join_keys": [
+          "audit_id",
+          "component"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 5,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "2229492eff7e721560aa92a32839083d8c9f4aba9731bec48a2c2f2ee12b97c8",
+        "export_checksum": "74b58bbdcb7002b535a104b4735dc3cb16f26a7c16b4493b0945ffd0cda24075",
+        "purpose": "Reserve detector, archive, transport, key, and operator boundary audits."
+      },
+      {
+        "table_name": "demotion_decision_log",
+        "file_name": "dry-run/t97/demotion_decision_log.jsonl",
+        "columns": [
+          "run_id",
+          "control_role",
+          "demotion_condition",
+          "triggered",
+          "applied_before_d1",
+          "reason"
+        ],
+        "join_keys": [
+          "run_id",
+          "control_role"
+        ],
+        "row_state": "planned_template_rows_only",
+        "min_planned_rows": 7,
+        "real_rows_present": false,
+        "locked_before_first_event": true,
+        "immutable_export": true,
+        "schema_hash": "0a7b86a1d129761cd3630d93fd14ca336b86c7e260f7f57a63d9e032073ea633",
+        "export_checksum": "21504ef6fb9726d515ec9c402194eab924ce93f9fa8593a54a0c9ba12eeb91c2",
+        "purpose": "Reserve pre-D1 demotion decisions for each hostile control role."
+      }
+    ],
+    "purpose": "A frozen packet scaffold for the T87 detector route. It supplies schemas, filenames, join keys, and hashes, but no detector event rows and no T76/T86 counts."
+  }
+}

@@ -10,7 +10,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | roadmap_umbrella | demoted | Q1 is no longer a single paper-facing supported quantum-physics conjecture. T101 split it into four branch claims; T104 absorbed the current Q1A fixed-data witness into provenance-aware Quantum Darwinism. Use Q1 only as a navigation label until one child branch clears its own reinstatement gate. | [Q1A](claims/Q1A-access-boundary-record-accounting.md), [Q1B](claims/Q1B-detector-provenance-admissibility.md), [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md), [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md), [T101](tests/T101-q1-branch-adjudication.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md) |
-| [Q1A](claims/Q1A-access-boundary-record-accounting.md) | quantum_subclaim | bookkeeping_only | Access-boundary and provenance-aware redundancy accounting survives only as a discipline over already formed records: raw fragment count should not be treated as observer-relative classical finality until access and independence are physically audited. The current fixed-data witness is absorbed by provenance-aware Quantum Darwinism. | [T2](tests/T2-quantum-measurement-record-finality.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T102](tests/T102-q1a-neighbor-comparison.md), [T103](tests/T103-q1a-fixed-data-witness.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md) |
+| [Q1A](claims/Q1A-access-boundary-record-accounting.md) | quantum_subclaim | bookkeeping_only | Access-boundary and provenance-aware redundancy accounting survives only as a discipline over already formed records: raw fragment count should not be treated as observer-relative classical finality until access and independence are physically audited. The current fixed-data witness is absorbed by provenance-aware Quantum Darwinism, reduced to audited accessible-class counting, and carries no live branch-support escape hatch in the present family. | [T2](tests/T2-quantum-measurement-record-finality.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T102](tests/T102-q1a-neighbor-comparison.md), [T103](tests/T103-q1a-fixed-data-witness.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md), [T105](tests/T105-q1a-accessible-class-sufficiency.md), [T109](tests/T109-q1a-branch-support-collapse.md) |
 | [Q1B](claims/Q1B-detector-provenance-admissibility.md) | quantum_subclaim | externally_blocked | Detector-side Q1 is an admissibility protocol, not empirical support: it requires a pre-registered event-level raw-log packet, hostile controls, immutable exports, and at least four non-conflicting authority domains before D1 scoring. | [T66](tests/T66-povm-detector-calibration-obstruction.md), [T78](tests/T78-preregistered-detector-deployment-protocol.md), [T83](tests/T83-q1-detector-null-criterion.md), [T87](tests/T87-real-run-raw-log-contract.md), [T95](tests/T95-detector-stack-export-map.md), [T97](tests/T97-detector-dry-run-packet-skeleton.md), [T100](tests/T100-detector-authority-domain-bound.md) |
 | [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md) | quantum_subclaim | dormant | Weak measurement is reinstatement-only until a concrete platform names a calibrated, pre-registered branch, provenance, or undo-cost axis that is independent of the monitored record and changes the TaF verdict while standard statistics are fixed. | [T90](tests/T90-weak-measurement-reparameterization-obstruction.md), [T91](tests/T91-weak-measurement-platform-audit.md), [T93](tests/T93-weak-measurement-undo-cost-independence.md), [T94](tests/T94-weak-measurement-priority-demotion.md) |
 | [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md) | quantum_subclaim | guardrail_only | Contextuality and no-signalling constrain Q1 language: local records may be context-valid without a global noncontextual assignment, but this is not a new Bell theorem, hidden-variable repair, or operational prediction. | [T21](tests/T21-bell-contextuality-finality.md), [T64](tests/T64-stern-gerlach-access-window.md) |
@@ -1066,6 +1066,27 @@ forward direction. The converse is an open conjecture.
   strict D1-relevant monotone after including memory, sink, and return degrees
   of freedom.
 - Artifact: [T106 technical report](TECHNICAL-REPORT-bounded-sink-reversible-compression-v0.1.md).
+
+### 2026-06-20 - Q1A Branch-Support Collapse (T109)
+
+- Q1A remains `bookkeeping_only`, and T109 closes another escape hatch in the
+  current fixed-data branch.
+- Result: branch support does not presently escape the T105 accessible-class
+  reduction. In the current single-root witness family, every visible case with
+  nonzero audited accessible provenance support has rooted branch support `1`,
+  while zero-support cases alone drop to `0`.
+- No same-support split: branch support never distinguishes two cases with the
+  same audited accessible provenance support inside the current visible family.
+- Admissibility boundary: changing ordinary branch/history availability is
+  already an invalid fixed-data move; T103's branch-history control is rejected
+  because it changes standard quantum-side summaries.
+- Claim impact: Q1A should not cite branch support as a live independent
+  witness dimension unless a future model introduces genuinely distinct causal
+  record channels.
+- Open blocker: the repo still lacks a finite quantum witness where branch
+  support varies without changing the standard quantum-side summaries already
+  fixed by T103/T105.
+- Artifact: [T109 technical report](TECHNICAL-REPORT-q1a-branch-support-collapse-v0.1.md).
 
 ### 2026-06-20 - Loss Relocation (T107)
 

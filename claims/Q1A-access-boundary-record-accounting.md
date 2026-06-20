@@ -36,6 +36,9 @@ are physically audited.
 - T105 shows that the surviving fixed-data branch collapses further to a
   thresholded audited accessible provenance-class count plus partition
   visibility.
+- T109 shows branch support is not a surviving independent witness dimension in
+  the current fixed-data family: it is either single-root triviality or an
+  inadmissible change to ordinary branch/history data.
 
 ## Not Earned
 
@@ -46,6 +49,7 @@ are physically audited.
   current witness family.
 - No load-bearing fixed-data structure beyond audited accessible
   provenance-support count in the current witness family.
+- No live branch-support witness inside the current fixed-data family.
 - No empirical quantum support beyond already formed record accounting.
 
 ## Falsification Or Demotion Condition
@@ -62,7 +66,9 @@ D1 diverges after the provenance-aware fragment partition is shared, or if D1
 derives that partition from a physical rule that cannot be imported into the
 neighboring framework without adding new physics. After T105, it must also show
 verdict content that does not collapse to the same audited accessible
-provenance-support count.
+provenance-support count. After T109, it must also realize branch support with
+genuinely distinct causal record channels rather than ordinary branch/history
+variation inside the current single-root witness family.
 
 ## Primary Evidence
 
@@ -72,3 +78,4 @@ provenance-support count.
 - [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 - [T105: Q1A Accessible-Class Sufficiency](../tests/T105-q1a-accessible-class-sufficiency.md)
+- [T109: Q1A Branch-Support Collapse](../tests/T109-q1a-branch-support-collapse.md)

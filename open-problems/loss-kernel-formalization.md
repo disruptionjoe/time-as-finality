@@ -1,0 +1,146 @@
+# Loss Kernel Formalization
+
+## Status
+
+Open formal target.
+
+## Strategic Role
+
+`LossKernel` is the proposed central accounting object for the repo's next
+phase. The goal is to move from many discovered patterns to one explicit object
+for typed loss under information-losing morphisms.
+
+The repo should increasingly distinguish:
+
+```text
+known local-to-global obstruction
+```
+
+from the possible original contribution:
+
+```text
+typed attribution calculus for obstruction created or displaced by
+information-losing morphisms
+```
+
+## Core Definition Target
+
+For a typed morphism or projection:
+
+```text
+f: Source -> Target
+```
+
+define:
+
+```text
+LossKernel(f) = typed structure forgotten by f
+```
+
+This should be stricter than a free-text note. It should name structure in a
+form that can be checked, composed, compared across paths, and used in
+admissibility predicates.
+
+## Required Laws To Investigate
+
+Identity:
+
+```text
+LossKernel(id_A) = empty
+```
+
+Composition:
+
+```text
+LossKernel(g o f) = compose_loss(LossKernel(f), LossKernel(g))
+```
+
+The composition may be strict, lax, partial, or obstruction-sensitive. One of
+the first tasks is to determine which.
+
+## Open Questions
+
+1. Is `LossKernel(f)` just existing `forgotten_structure`, or a stricter typed
+   object with source/target references and witness obligations?
+2. Does loss compose functorially, lax-functorially, or only partially?
+3. Can T34/T37 path dependence be re-expressed as unequal composed loss kernels?
+4. Can T39/T40 obstruction attribution be rewritten as a `LossKernel`
+   condition?
+5. Can T19/T64/T66/T67 be treated as access/provenance loss corollaries?
+6. Can a non-empty loss kernel be necessary without being sufficient for
+   admissible obstruction attribution?
+7. What is the correct equivalence relation on loss kernels: syntactic equality,
+   same resolved obstruction, same resource decrease, or same typed witness?
+
+## Candidate Data Shape
+
+```text
+LossKernel =
+  source_structure
+  target_structure
+  lost_types
+  lost_witnesses
+  preserved_types
+  resolution_role
+  composition_rule
+```
+
+`lost_types` names what kind of structure is removed. `lost_witnesses` names
+the specific source-side data or constraints removed. `resolution_role` states
+whether the lost structure is known to resolve the target obstruction, merely
+correlates with it, or is not yet linked.
+
+## Relationship To Existing Machinery
+
+| Existing object | Relationship to LossKernel |
+| --- | --- |
+| `ProjectionCase.forgotten_structure` | Current informal predecessor. |
+| AC5 / P5 | Requires informative forgetting; LossKernel should make this first-class. |
+| `NetworkTransport.forgotten_structure` | Path-level predecessor; composition should accumulate kernels. |
+| T34 chain analysis | Tests emergent, stepwise, and absorbed obstruction under composed loss. |
+| T37 path dependence | Tests whether same endpoints can differ because composed loss differs. |
+| T39 CSP reframing | Separates known parity obstruction from typed attribution metadata. |
+| T40 holonic emergence | Requires cross-level forgotten dimensions for holonic attribution. |
+| T19/T64/T66/T67 | Candidate access/provenance loss corollaries. |
+
+## Success Criteria
+
+- Define a typed `LossKernel` object without relying on time, consciousness, or
+  physics language.
+- Prove or executable-check identity and composition laws for the finite T34/T37
+  family.
+- Re-express AC5/P5 as a statement about non-empty, attribution-relevant loss.
+- Show that at least one previous path-dependent result is exactly a difference
+  in composed loss kernels.
+- Preserve absorbed-obstruction cases without forcing a false conservation law.
+
+## Failure Criteria
+
+- `LossKernel` collapses to a synonym for `forgotten_structure` with no stronger
+  typing, composition, or witness obligations.
+- Loss composition is not definable even in the finite T34/T37 families.
+- AC5/P5 remains purely methodological metadata after the attempted
+  formalization.
+- The object cannot express absorbed obstruction or recovery without ad hoc
+  exceptions.
+
+## First Concrete Test
+
+Re-run T34 and T37 conceptually through `LossKernel`:
+
+```text
+spectre full path:
+  non-empty composed loss -> endpoint PO1
+
+spectre prefix:
+  non-empty loss but no target obstruction -> not PO1
+
+diamond path A:
+  loss includes type_guarantee -> PO1
+
+diamond path B:
+  loss empty or attribution-irrelevant -> not PO1
+```
+
+If these cases cannot be expressed cleanly, the LossKernel proposal is too weak
+or the existing AC5 machinery is doing less formal work than expected.

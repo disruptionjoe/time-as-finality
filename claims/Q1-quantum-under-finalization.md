@@ -56,6 +56,8 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
 - [T22: D1 Physical Reduction Map](../tests/T22-d1-physical-reduction-map.md)
 - [T23: Invariant-Preserving Transformations](../tests/T23-invariant-preserving-transformations.md)
+- [T62: Noisy Measurement Access-Boundary Discriminator](../tests/T62-noisy-measurement-access-boundary.md)
+- [T64: Stern-Gerlach Detector Access-Window Discriminator](../tests/T64-stern-gerlach-access-window.md)
 
 ## T21 Result
 
@@ -141,9 +143,37 @@ transport program, while keeping the same limits: no collapse, no Born-rule
 derivation, no detector-level model, and no claim that quantum measurement is
 equivalent to the other T23 domains.
 
+## T62 Result
+
+[T62](../tests/T62-noisy-measurement-access-boundary.md) weakens Q1 away from
+new noisy measurement dynamics. It separates pointer decoherence,
+Quantum-Darwinism-style environmental redundancy, and observer-relative D1
+finality in a finite noisy-channel matrix.
+
+The strongest positive result is the `redundant_but_inaccessible` witness:
+environmental records can be redundant while an observer with no access window
+has D1 profile `(0, 0, 0, 0)`. The main boundary is that
+`decohered_not_darwinist` is already standard decoherence-versus-redundancy
+territory. TaF adds only access-boundary and independence bookkeeping.
+
+## T64 Result
+
+[T64](../tests/T64-stern-gerlach-access-window.md) moves the T62 audit into a
+Stern-Gerlach detector proxy with screen, electronics, log, archive, and weak
+bath fragments. It preserves the access-boundary distinction but weakens Q1:
+detector finality flips under plausible information-threshold choices.
+
+T64 also adds a no-signalling guardrail. In the entangled-pair variant, remote
+setting changes alter correlations but not the local noisy detector marginal.
+The earned claim is therefore narrow: TaF can express an access-window and
+independence-filter predicate over already formed detector records, but it has
+no calibration-free Stern-Gerlach prediction yet.
+
 ## Contribution Needed
 
-Extend T2 from ideal CNOT records to noisy scattering, detector inefficiency,
-partial decoherence, and dynamically selected pointer bases. Then compare
-"under-finalized classical record" with decoherence, quantum Darwinism,
-relational QM, consistent histories, many-worlds, and QBism.
+Replace the declared T64 binary channels with calibrated detector physics:
+POVMs, scattering response curves, or measured detector-noise data that fix
+fragment reliabilities, access windows, thresholds, and independence classes
+before D1 is evaluated. Then compare "under-finalized classical record" with
+decoherence, quantum Darwinism, relational QM, consistent histories,
+many-worlds, and QBism.

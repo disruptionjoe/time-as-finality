@@ -1,0 +1,821 @@
+{
+  "scenarios": [
+    {
+      "name": "povm_local_lab_after_readout",
+      "purpose": "Positive control: calibrated POVM responses make three independent local detector records available above threshold.",
+      "observer_holders": [
+        "local_logger",
+        "local_screen",
+        "photodiode"
+      ],
+      "observer_time": 2.5,
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "screen_spot",
+          "holder": "local_screen",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.015,
+          "information_bits": 0.921040162829,
+          "decoherence_factor": 0.08,
+          "independence_class": "screen_grain",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.0,
+          "available_until": 3.0,
+          "physical_role": "transient detector spot",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "photodiode_pulse",
+          "holder": "photodiode",
+          "p_readout_up_given_spin_up": 0.985,
+          "p_readout_up_given_spin_down": 0.035,
+          "information_bits": 0.834092223434,
+          "decoherence_factor": 0.12,
+          "independence_class": "electronics",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.5,
+          "available_until": 5.0,
+          "physical_role": "amplified electronics pulse",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "local_log",
+          "holder": "local_logger",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.2,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 2.0,
+          "available_until": 10.0,
+          "physical_role": "timestamped local detector log",
+          "provenance": "logged_detector_response"
+        },
+        {
+          "name": "network_archive",
+          "holder": "archive_mirror",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.5,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 4.0,
+          "available_until": 20.0,
+          "physical_role": "network mirror of the local detector log",
+          "provenance": "copied_or_independent_archive"
+        },
+        {
+          "name": "thermal_bath_trace",
+          "holder": "cryostat_bath",
+          "p_readout_up_given_spin_up": 0.62,
+          "p_readout_up_given_spin_down": 0.5,
+          "information_bits": 0.010566510109,
+          "decoherence_factor": 0.3,
+          "independence_class": "thermal_bath",
+          "branch_id": "bath_scattering",
+          "available_from": 0.5,
+          "available_until": 20.0,
+          "physical_role": "weak bath response below record threshold",
+          "provenance": "uncontrolled_environmental_trace"
+        }
+      ],
+      "pointer_coherence_abs": 0.000288,
+      "started_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "available_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "fragment_information_bits": [
+        [
+          "screen_spot",
+          0.921040162829
+        ],
+        [
+          "photodiode_pulse",
+          0.834092223434
+        ],
+        [
+          "local_log",
+          0.954585307666
+        ],
+        [
+          "network_archive",
+          0.954585307666
+        ],
+        [
+          "thermal_bath_trace",
+          0.010566510109
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 3,
+      "accessible_r_delta_independent": 3,
+      "d1_profile": {
+        "accessible_support": 3,
+        "holder_redundancy": 3,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          3,
+          3,
+          1,
+          1
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "povm_redundant_total": true,
+        "observer_finalized": true,
+        "redundant_but_inaccessible": false,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "povm_record_finalized",
+      "interpretation": "Calibrated fragment information, observer access, and independent holder redundancy all cross threshold."
+    },
+    {
+      "name": "same_povm_high_threshold",
+      "purpose": "Same calibrated detector responses as the positive control, but with a higher information threshold.",
+      "observer_holders": [
+        "local_logger",
+        "local_screen",
+        "photodiode"
+      ],
+      "observer_time": 2.5,
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.9,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "screen_spot",
+          "holder": "local_screen",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.015,
+          "information_bits": 0.921040162829,
+          "decoherence_factor": 0.08,
+          "independence_class": "screen_grain",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.0,
+          "available_until": 3.0,
+          "physical_role": "transient detector spot",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "photodiode_pulse",
+          "holder": "photodiode",
+          "p_readout_up_given_spin_up": 0.985,
+          "p_readout_up_given_spin_down": 0.035,
+          "information_bits": 0.834092223434,
+          "decoherence_factor": 0.12,
+          "independence_class": "electronics",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.5,
+          "available_until": 5.0,
+          "physical_role": "amplified electronics pulse",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "local_log",
+          "holder": "local_logger",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.2,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 2.0,
+          "available_until": 10.0,
+          "physical_role": "timestamped local detector log",
+          "provenance": "logged_detector_response"
+        },
+        {
+          "name": "network_archive",
+          "holder": "archive_mirror",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.5,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 4.0,
+          "available_until": 20.0,
+          "physical_role": "network mirror of the local detector log",
+          "provenance": "copied_or_independent_archive"
+        },
+        {
+          "name": "thermal_bath_trace",
+          "holder": "cryostat_bath",
+          "p_readout_up_given_spin_up": 0.62,
+          "p_readout_up_given_spin_down": 0.5,
+          "information_bits": 0.010566510109,
+          "decoherence_factor": 0.3,
+          "independence_class": "thermal_bath",
+          "branch_id": "bath_scattering",
+          "available_from": 0.5,
+          "available_until": 20.0,
+          "physical_role": "weak bath response below record threshold",
+          "provenance": "uncontrolled_environmental_trace"
+        }
+      ],
+      "pointer_coherence_abs": 0.000288,
+      "started_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "available_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "fragment_information_bits": [
+        [
+          "screen_spot",
+          0.921040162829
+        ],
+        [
+          "photodiode_pulse",
+          0.834092223434
+        ],
+        [
+          "local_log",
+          0.954585307666
+        ],
+        [
+          "network_archive",
+          0.954585307666
+        ],
+        [
+          "thermal_bath_trace",
+          0.010566510109
+        ]
+      ],
+      "total_r_delta_raw": 2,
+      "accessible_r_delta_raw": 2,
+      "accessible_r_delta_independent": 2,
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "povm_redundant_total": false,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": false,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "povm_below_redundancy_threshold",
+      "interpretation": "The calibrated detector responses do not supply enough above-threshold fragments under the declared threshold."
+    },
+    {
+      "name": "povm_redundant_but_inaccessible",
+      "purpose": "The calibrated detector carries redundant above-threshold records, but this observer has no access window.",
+      "observer_holders": [],
+      "observer_time": 2.5,
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "screen_spot",
+          "holder": "local_screen",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.015,
+          "information_bits": 0.921040162829,
+          "decoherence_factor": 0.08,
+          "independence_class": "screen_grain",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.0,
+          "available_until": 3.0,
+          "physical_role": "transient detector spot",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "photodiode_pulse",
+          "holder": "photodiode",
+          "p_readout_up_given_spin_up": 0.985,
+          "p_readout_up_given_spin_down": 0.035,
+          "information_bits": 0.834092223434,
+          "decoherence_factor": 0.12,
+          "independence_class": "electronics",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.5,
+          "available_until": 5.0,
+          "physical_role": "amplified electronics pulse",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "local_log",
+          "holder": "local_logger",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.2,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 2.0,
+          "available_until": 10.0,
+          "physical_role": "timestamped local detector log",
+          "provenance": "logged_detector_response"
+        },
+        {
+          "name": "network_archive",
+          "holder": "archive_mirror",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.5,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 4.0,
+          "available_until": 20.0,
+          "physical_role": "network mirror of the local detector log",
+          "provenance": "copied_or_independent_archive"
+        },
+        {
+          "name": "thermal_bath_trace",
+          "holder": "cryostat_bath",
+          "p_readout_up_given_spin_up": 0.62,
+          "p_readout_up_given_spin_down": 0.5,
+          "information_bits": 0.010566510109,
+          "decoherence_factor": 0.3,
+          "independence_class": "thermal_bath",
+          "branch_id": "bath_scattering",
+          "available_from": 0.5,
+          "available_until": 20.0,
+          "physical_role": "weak bath response below record threshold",
+          "provenance": "uncontrolled_environmental_trace"
+        }
+      ],
+      "pointer_coherence_abs": 0.000288,
+      "started_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "available_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "thermal_bath_trace"
+      ],
+      "fragment_information_bits": [
+        [
+          "screen_spot",
+          0.921040162829
+        ],
+        [
+          "photodiode_pulse",
+          0.834092223434
+        ],
+        [
+          "local_log",
+          0.954585307666
+        ],
+        [
+          "network_archive",
+          0.954585307666
+        ],
+        [
+          "thermal_bath_trace",
+          0.010566510109
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 0,
+      "accessible_r_delta_independent": 0,
+      "d1_profile": {
+        "accessible_support": 0,
+        "holder_redundancy": 0,
+        "branch_support": 0,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "povm_redundant_total": true,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": true,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "povm_redundant_but_inaccessible",
+      "interpretation": "The calibrated detector has redundant above-threshold records, but this observer has no access window onto them."
+    },
+    {
+      "name": "archive_copy_partition",
+      "purpose": "The archive has the same calibrated response as the local log and is treated as the same provenance class.",
+      "observer_holders": [
+        "archive_mirror",
+        "local_logger",
+        "local_screen",
+        "photodiode"
+      ],
+      "observer_time": 4.5,
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "screen_spot",
+          "holder": "local_screen",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.015,
+          "information_bits": 0.921040162829,
+          "decoherence_factor": 0.08,
+          "independence_class": "screen_grain",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.0,
+          "available_until": 3.0,
+          "physical_role": "transient detector spot",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "photodiode_pulse",
+          "holder": "photodiode",
+          "p_readout_up_given_spin_up": 0.985,
+          "p_readout_up_given_spin_down": 0.035,
+          "information_bits": 0.834092223434,
+          "decoherence_factor": 0.12,
+          "independence_class": "electronics",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.5,
+          "available_until": 5.0,
+          "physical_role": "amplified electronics pulse",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "local_log",
+          "holder": "local_logger",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.2,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 2.0,
+          "available_until": 10.0,
+          "physical_role": "timestamped local detector log",
+          "provenance": "logged_detector_response"
+        },
+        {
+          "name": "network_archive",
+          "holder": "archive_mirror",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.5,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 4.0,
+          "available_until": 20.0,
+          "physical_role": "network mirror of the local detector log",
+          "provenance": "copied_or_independent_archive"
+        },
+        {
+          "name": "thermal_bath_trace",
+          "holder": "cryostat_bath",
+          "p_readout_up_given_spin_up": 0.62,
+          "p_readout_up_given_spin_down": 0.5,
+          "information_bits": 0.010566510109,
+          "decoherence_factor": 0.3,
+          "independence_class": "thermal_bath",
+          "branch_id": "bath_scattering",
+          "available_from": 0.5,
+          "available_until": 20.0,
+          "physical_role": "weak bath response below record threshold",
+          "provenance": "uncontrolled_environmental_trace"
+        }
+      ],
+      "pointer_coherence_abs": 0.000144,
+      "started_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "network_archive",
+        "thermal_bath_trace"
+      ],
+      "available_fragments": [
+        "photodiode_pulse",
+        "local_log",
+        "network_archive",
+        "thermal_bath_trace"
+      ],
+      "fragment_information_bits": [
+        [
+          "screen_spot",
+          0.921040162829
+        ],
+        [
+          "photodiode_pulse",
+          0.834092223434
+        ],
+        [
+          "local_log",
+          0.954585307666
+        ],
+        [
+          "network_archive",
+          0.954585307666
+        ],
+        [
+          "thermal_bath_trace",
+          0.010566510109
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 3,
+      "accessible_r_delta_independent": 2,
+      "d1_profile": {
+        "accessible_support": 3,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "povm_redundant_total": true,
+        "observer_finalized": false,
+        "redundant_but_inaccessible": false,
+        "raw_redundancy_overcounts_independence": true
+      },
+      "classification": "povm_independence_obstruction",
+      "interpretation": "Calibrated response data give enough raw accessible records, but provenance says too few are independent for D1 finality."
+    },
+    {
+      "name": "archive_independent_partition",
+      "purpose": "The archive has the same calibrated response data and access window but is treated as an independent provenance class.",
+      "observer_holders": [
+        "archive_mirror",
+        "local_logger",
+        "local_screen",
+        "photodiode"
+      ],
+      "observer_time": 4.5,
+      "reconstruction_threshold": 3,
+      "information_threshold_bits": 0.75,
+      "coherence_threshold": 0.01,
+      "fragments": [
+        {
+          "name": "screen_spot",
+          "holder": "local_screen",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.015,
+          "information_bits": 0.921040162829,
+          "decoherence_factor": 0.08,
+          "independence_class": "screen_grain",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.0,
+          "available_until": 3.0,
+          "physical_role": "transient detector spot",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "photodiode_pulse",
+          "holder": "photodiode",
+          "p_readout_up_given_spin_up": 0.985,
+          "p_readout_up_given_spin_down": 0.035,
+          "information_bits": 0.834092223434,
+          "decoherence_factor": 0.12,
+          "independence_class": "electronics",
+          "branch_id": "sg_z_pointer",
+          "available_from": 1.5,
+          "available_until": 5.0,
+          "physical_role": "amplified electronics pulse",
+          "provenance": "direct_detector_response"
+        },
+        {
+          "name": "local_log",
+          "holder": "local_logger",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.2,
+          "independence_class": "local_log",
+          "branch_id": "sg_z_pointer",
+          "available_from": 2.0,
+          "available_until": 10.0,
+          "physical_role": "timestamped local detector log",
+          "provenance": "logged_detector_response"
+        },
+        {
+          "name": "network_archive",
+          "holder": "archive_mirror",
+          "p_readout_up_given_spin_up": 0.995,
+          "p_readout_up_given_spin_down": 0.005,
+          "information_bits": 0.954585307666,
+          "decoherence_factor": 0.5,
+          "independence_class": "archive_storage",
+          "branch_id": "sg_z_pointer",
+          "available_from": 4.0,
+          "available_until": 20.0,
+          "physical_role": "network mirror of the local detector log",
+          "provenance": "copied_or_independent_archive"
+        },
+        {
+          "name": "thermal_bath_trace",
+          "holder": "cryostat_bath",
+          "p_readout_up_given_spin_up": 0.62,
+          "p_readout_up_given_spin_down": 0.5,
+          "information_bits": 0.010566510109,
+          "decoherence_factor": 0.3,
+          "independence_class": "thermal_bath",
+          "branch_id": "bath_scattering",
+          "available_from": 0.5,
+          "available_until": 20.0,
+          "physical_role": "weak bath response below record threshold",
+          "provenance": "uncontrolled_environmental_trace"
+        }
+      ],
+      "pointer_coherence_abs": 0.000144,
+      "started_fragments": [
+        "screen_spot",
+        "photodiode_pulse",
+        "local_log",
+        "network_archive",
+        "thermal_bath_trace"
+      ],
+      "available_fragments": [
+        "photodiode_pulse",
+        "local_log",
+        "network_archive",
+        "thermal_bath_trace"
+      ],
+      "fragment_information_bits": [
+        [
+          "screen_spot",
+          0.921040162829
+        ],
+        [
+          "photodiode_pulse",
+          0.834092223434
+        ],
+        [
+          "local_log",
+          0.954585307666
+        ],
+        [
+          "network_archive",
+          0.954585307666
+        ],
+        [
+          "thermal_bath_trace",
+          0.010566510109
+        ]
+      ],
+      "total_r_delta_raw": 3,
+      "accessible_r_delta_raw": 3,
+      "accessible_r_delta_independent": 3,
+      "d1_profile": {
+        "accessible_support": 3,
+        "holder_redundancy": 3,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          3,
+          3,
+          1,
+          1
+        ]
+      },
+      "predicates": {
+        "decohered_pointer": true,
+        "povm_redundant_total": true,
+        "observer_finalized": true,
+        "redundant_but_inaccessible": false,
+        "raw_redundancy_overcounts_independence": false
+      },
+      "classification": "povm_record_finalized",
+      "interpretation": "Calibrated fragment information, observer access, and independent holder redundancy all cross threshold."
+    }
+  ],
+  "threshold_obstruction": {
+    "low_threshold_bits": 0.75,
+    "high_threshold_bits": 0.9,
+    "same_povm_response": true,
+    "low_threshold_finalized": true,
+    "high_threshold_finalized": false,
+    "verdict_flips": true,
+    "interpretation": "POVM calibration supplies response probabilities, but does not select the information threshold that turns response into finality."
+  },
+  "independence_obstruction": {
+    "same_povm_response": true,
+    "same_access_window": true,
+    "copy_partition_finalized": false,
+    "independent_partition_finalized": true,
+    "verdict_flips": true,
+    "interpretation": "The archive copy and independent archive have identical calibrated response data.  The D1 verdict changes only because the provenance partition changes."
+  },
+  "no_signalling_audits": [
+    {
+      "local_setting": "local_z",
+      "fragment_name": "screen_spot",
+      "readout_up_probability_by_remote_setting": [
+        [
+          "remote_z",
+          0.505
+        ],
+        [
+          "remote_x",
+          0.505
+        ],
+        [
+          "remote_diag",
+          0.505
+        ]
+      ],
+      "max_delta": 0.0,
+      "passed": true,
+      "interpretation": "Remote settings alter joint correlations but not the local POVM readout marginal."
+    },
+    {
+      "local_setting": "local_x",
+      "fragment_name": "screen_spot",
+      "readout_up_probability_by_remote_setting": [
+        [
+          "remote_z",
+          0.505
+        ],
+        [
+          "remote_x",
+          0.505
+        ],
+        [
+          "remote_diag",
+          0.505
+        ]
+      ],
+      "max_delta": 0.0,
+      "passed": true,
+      "interpretation": "Remote settings alter joint correlations but not the local POVM readout marginal."
+    }
+  ],
+  "hypothesis_evaluations": [
+    {
+      "id": "H1",
+      "status": "supported",
+      "claim": "Declared scalar reliabilities can be replaced by explicit binary POVM response matrices for this detector proxy.",
+      "evidence": "Fragment information is computed from P(readout=+|spin=+) and P(readout=+|spin=-), not assigned as a reliability."
+    },
+    {
+      "id": "H2",
+      "status": "weakened",
+      "claim": "A calibrated POVM response does not by itself determine observer-relative D1 finality.",
+      "evidence": "The archive-copy and archive-independent scenarios have the same response data and access window but opposite D1 finalization verdicts."
+    },
+    {
+      "id": "H3",
+      "status": "weakened",
+      "claim": "The information threshold remains an external input unless a physical calibration rule fixes it before evaluation.",
+      "evidence": "The same local detector response finalizes at threshold 0.75 and does not finalize at threshold 0.9."
+    },
+    {
+      "id": "H4",
+      "status": "supported_guardrail",
+      "claim": "The calibrated-response predicate preserves no-signalling in the finite singlet audit.",
+      "evidence": "All local POVM readout marginals are invariant under the tested remote settings."
+    },
+    {
+      "id": "H5",
+      "status": "open",
+      "claim": "Q1 needs a detector provenance rule and threshold rule that are specified before the D1 predicate is evaluated.",
+      "evidence": "Without those rules, D1 can be changed while leaving the calibrated POVM response matrices unchanged."
+    }
+  ],
+  "strongest_claim": "A calibrated binary POVM response lets TaF compute detector fragment information and re-run the access-window discriminator, but it does not determine finality without independent threshold and provenance assumptions.",
+  "weakened_claim": "Q1 cannot claim a calibration-free Stern-Gerlach prediction from POVM data alone.  The same calibrated response can support different D1 verdicts under different threshold or independence rules.",
+  "falsification_condition": "If detector physics cannot non-arbitrarily fix the information threshold and provenance/independence partition before D1 is evaluated, Q1 reduces to post hoc bookkeeping.  If those rules are fixed and D1 always equals standard R_delta, Q1 adds no independent measurement content.",
+  "recommended_next": "Derive the independence partition from a detector provenance graph or measured channel-correlation matrix, then pre-register the information threshold before comparing D1 with standard R_delta."
+}

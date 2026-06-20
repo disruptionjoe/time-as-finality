@@ -50,6 +50,15 @@ because one record is a correlated duplicate. This does not refute Quantum
 Darwinism; it forces TaF to inherit Quantum Darwinism's fragment-partition
 discipline.
 
+T64 moves this into a Stern-Gerlach detector proxy with transient screen,
+electronics, local-log, archive, and weak-bath fragments. The positive
+distinction survives only after the access window and independence partition
+are declared: `redundant_but_before_access` has total `R_delta=3` but D1
+profile `(0, 0, 0, 0)`, while `duplicate_archive_boundary` has accessible raw
+`R_delta=3` but independence-corrected `R_delta=2`. The threshold sweep
+weakens Q1 because the same detector window can be finalized at threshold
+`0.75` and not finalized at `0.9`.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing
@@ -86,6 +95,12 @@ pointer-coherence proxy below threshold while no individual fragment crosses
 the information threshold. This is not uniquely TaF; standard decoherence
 versus Quantum-Darwinism language already describes it. TaF's additional
 content appears only in the access-boundary and independence-filter witnesses.
+
+T64 adds a detector-shaped version of the same boundary and a no-signalling
+guardrail. In the entangled-pair audit, remote setting changes leave the local
+noisy detector marginal unchanged. This preserves a necessary physics
+constraint, but it is not a novel prediction; it is a failure condition for any
+future finality rule.
 
 **Falsification condition for TaF:** If the H1 sheaf obstruction vanishes whenever all pairwise
 decoherence records are formed, TaF's global-consistency check reduces to local decoherence.
@@ -243,8 +258,8 @@ counterexample. The table below preserves the older domain-neighbor ordering.
 
 | priority | neighbor | distinguishing criterion | status |
 |---|---|---|---|
-| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21 implemented; noisy detector mapping open |
-| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22 and T2 implemented; noisy dynamics open |
+| 1 | Decoherence | decohered-but-inaccessible witness plus CHSH contextuality | `[PARTIAL]` -> T2/T21/T62/T64 implemented; calibrated detector physics open |
+| 2 | Quantum Darwinism | independent fragment count and observer access vs D1 profile | `[PARTIAL]` -> T22/T62/T64 implemented; threshold calibration open |
 | 3 | Thermodynamic Arrow | T9 reversible CA + H7 check | `[PARTIAL]` → use existing T9 results |
 | 4 | Causal Set Theory | T15 axiom check + D1 divergence point | `[PARTIAL]` → implement T15 |
 | 5 | FLP/CAP | theorem transfer positive; TaF-native impossibility still open | `[PARTIAL]` -> T20 plus T17/T19 extension |

@@ -1,0 +1,210 @@
+{
+  "scenarios": [
+    {
+      "name": "dependent_copied_archive_same_passive_stats",
+      "actual_provenance_class": "dependent_copy",
+      "purpose": "Copied archive with the same passive agreement and phi as the independent overlap witness.",
+      "passive_statistics": {
+        "agreement_probability": 0.92,
+        "phi_correlation": 0.84
+      },
+      "records": [
+        {
+          "name": "local_log",
+          "created_at": 2.0,
+          "origin_tag": "origin:local_detector_chain",
+          "signed_by": "local_detector_key",
+          "ancestors": [
+            "latent_spin",
+            "local_log",
+            "screen_spot"
+          ],
+          "holder": "local_logger",
+          "information_bits": 0.95
+        },
+        {
+          "name": "archive",
+          "created_at": 4.0,
+          "origin_tag": "origin:local_detector_chain",
+          "signed_by": "archive_copy_key",
+          "ancestors": [
+            "archive",
+            "latent_spin",
+            "local_log",
+            "screen_spot"
+          ],
+          "holder": "archive_mirror",
+          "information_bits": 0.95
+        }
+      ],
+      "intervention_trace": {
+        "intervention": "do(local_log := forced_flip_before_archive_write)",
+        "target_record": "local_log",
+        "observed_record": "archive",
+        "observed_changed": true,
+        "interpretation": "Perturbing the local log before archive write changes the archive, indicating downstream dependence."
+      },
+      "observables": {
+        "delayed_copy_candidate": true,
+        "duplicate_origin_tag": true,
+        "perturbation_coupling": true,
+        "disallowed_shared_ancestry": true,
+        "physically_interpretable": true
+      },
+      "partition": {
+        "inferred_same_independence_class": true,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P0"
+          ]
+        ],
+        "rule_id": "T68_PREREGISTERED_INTERVENTION_PROVENANCE_RULE",
+        "rule_text": "Before D1 scoring, place two records in the same independence class if active perturbation of one changes the other, if they share a write-once origin tag, if a signed provenance DAG shows non-common ancestry, or if timing plus ancestry shows delayed copying. Otherwise assign distinct classes. The allowed common ancestor is the latent spin source.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Records are assigned to the same independence class because intervention/provenance data show downstream dependence."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 1,
+        "branch_support": 1,
+        "reversal_cost": 0,
+        "profile_tuple": [
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      "observer_finalized": false,
+      "correctly_classified": true,
+      "interpretation": "Intervention-sensitive provenance is fixed before D1 scoring; the D1 verdict follows from the inferred independence classes."
+    },
+    {
+      "name": "independent_readout_same_passive_stats",
+      "actual_provenance_class": "independent_readout",
+      "purpose": "Independent overlapping readout with passive statistics matched to the copied archive witness.",
+      "passive_statistics": {
+        "agreement_probability": 0.92,
+        "phi_correlation": 0.84
+      },
+      "records": [
+        {
+          "name": "local_log",
+          "created_at": 2.0,
+          "origin_tag": "origin:local_detector_chain",
+          "signed_by": "local_detector_key",
+          "ancestors": [
+            "latent_spin",
+            "local_log",
+            "screen_spot"
+          ],
+          "holder": "local_logger",
+          "information_bits": 0.95
+        },
+        {
+          "name": "archive",
+          "created_at": 2.0,
+          "origin_tag": "origin:archive_detector_chain",
+          "signed_by": "archive_detector_key",
+          "ancestors": [
+            "archive",
+            "archive_sensor",
+            "latent_spin"
+          ],
+          "holder": "archive_mirror",
+          "information_bits": 0.95
+        }
+      ],
+      "intervention_trace": {
+        "intervention": "do(local_log := forced_flip_after_local_write)",
+        "target_record": "local_log",
+        "observed_record": "archive",
+        "observed_changed": false,
+        "interpretation": "Perturbing the local log does not change the archive readout, supporting separate detector-chain provenance."
+      },
+      "observables": {
+        "delayed_copy_candidate": false,
+        "duplicate_origin_tag": false,
+        "perturbation_coupling": false,
+        "disallowed_shared_ancestry": false,
+        "physically_interpretable": true
+      },
+      "partition": {
+        "inferred_same_independence_class": false,
+        "inferred_classes": [
+          [
+            "local_log",
+            "P0"
+          ],
+          [
+            "archive",
+            "P1"
+          ]
+        ],
+        "rule_id": "T68_PREREGISTERED_INTERVENTION_PROVENANCE_RULE",
+        "rule_text": "Before D1 scoring, place two records in the same independence class if active perturbation of one changes the other, if they share a write-once origin tag, if a signed provenance DAG shows non-common ancestry, or if timing plus ancestry shows delayed copying. Otherwise assign distinct classes. The allowed common ancestor is the latent spin source.",
+        "pre_registered": true,
+        "depends_on_d1_outcome": false,
+        "interpretation": "Records are assigned to distinct independence classes because the only shared ancestor is the allowed common spin source and the perturbation does not propagate."
+      },
+      "d1_profile": {
+        "accessible_support": 2,
+        "holder_redundancy": 2,
+        "branch_support": 1,
+        "reversal_cost": 1,
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "observer_finalized": true,
+      "correctly_classified": true,
+      "interpretation": "Intervention-sensitive provenance is fixed before D1 scoring; the D1 verdict follows from the inferred independence classes."
+    }
+  ],
+  "separation_audit": {
+    "passive_statistics_identical": true,
+    "intervention_partitions_distinct": true,
+    "d1_computed_after_partition": true,
+    "success": true,
+    "interpretation": "The passive observables are intentionally identical; the intervention/provenance observables determine different independence partitions before D1 scoring."
+  },
+  "hypothesis_evaluations": [
+    {
+      "id": "H1",
+      "status": "supported",
+      "claim": "Intervention-sensitive provenance observables separate copied archives from independent readout chains when passive statistics are identical.",
+      "evidence": "The two canonical witnesses both have agreement 0.92 and phi 0.84, but perturbation response, origin tags, and provenance DAG ancestry infer different partitions."
+    },
+    {
+      "id": "H2",
+      "status": "supported_with_assumptions",
+      "claim": "The D1 independence partition can be fixed before finality scoring.",
+      "evidence": "The pre-registered T68 rule uses only timing, origin-tag, perturbation, and DAG evidence; D1 is computed afterward."
+    },
+    {
+      "id": "H3",
+      "status": "boundary",
+      "claim": "Timing alone is not the core result; the reliable signal is causal/provenance metadata plus intervention response.",
+      "evidence": "The rule does not classify by delay threshold. It uses record ancestry, duplicate origin tags, and active perturbation coupling."
+    },
+    {
+      "id": "H4",
+      "status": "weakened",
+      "claim": "TaF detector-level contribution is operational only when records carry causal/provenance metadata beyond calibrated outcome statistics.",
+      "evidence": "The same passive statistics are insufficient in T67 and remain insufficient here; the successful separation comes from intervention-sensitive record metadata."
+    }
+  ],
+  "strongest_claim": "In the finite detector witness family, D1 independence classes can be operationally fixed before finality scoring when records carry intervention-sensitive provenance data: origin tags, perturbation response, and signed ancestry.",
+  "weakened_claim": "TaF's detector-level content is not calibration-free and not recoverable from calibrated outcome statistics or passive correlations. It becomes operational only for detector records with causal/provenance metadata.",
+  "falsification_condition": "T68 fails if copied and independent detector chains can be made identical under passive statistics, timing, origin tags, active perturbation response, and signed ancestry while still requiring opposite D1 independence partitions.",
+  "recommended_next": "Replace the finite provenance metadata with a physically modeled detector protocol: explicit clock uncertainty, tag failure modes, and intervention back-action limits."
+}

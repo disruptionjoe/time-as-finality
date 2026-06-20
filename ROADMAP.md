@@ -1,5 +1,58 @@
 ﻿# Roadmap
 
+## Mathematical Spine
+
+The repo's next phase is to move from many discovered patterns to one explicit
+accounting object for typed loss.
+
+Strategic distinction:
+
+```text
+known local-to-global obstruction
+```
+
+versus the possible original contribution:
+
+```text
+typed attribution calculus for obstruction created or displaced by
+information-losing morphisms
+```
+
+Do not frame the project as "TaF discovered gluing obstruction." Frame it as:
+
+```text
+TaF is building a finite typed calculus for tracking when projection,
+restriction, observer access, or morphism composition creates, hides,
+displaces, or reveals local-to-global obstruction.
+```
+
+Priority sequence:
+
+1. Maintain the recurring structure map:
+   [recurring-structure-map-v0.1](explorations/recurring-structure-map-v0.1.md).
+2. Formalize `LossKernel` as the central next object:
+   [loss-kernel-formalization](open-problems/loss-kernel-formalization.md).
+3. Keep TF1 as an open hinge claim until tested:
+   [TF1: Typed Forgetting Attribution](claims/TF1-typed-forgetting-attribution.md).
+4. Re-run T34/T37/T39/T40 through first-class `LossKernel` semantics.
+5. Retrofit T19/T64/T66/T67 as access/provenance corollaries only if the
+   LossKernel object actually covers them.
+6. Draft and refine the neutral math paper:
+   [Typed Forgetting and Local-to-Global Obstruction](papers/typed-forgetting-local-global-obstruction-v0.1.md).
+
+Language guardrails:
+
+- Avoid: "TaF discovered gluing obstruction."
+- Use: "TaF builds a typed attribution calculus around known local-to-global
+  obstruction."
+- Avoid: "obstruction conservation."
+- Use: "obstruction accounting" or "obstruction displacement under typed
+  projection."
+- Avoid leading mathematical materials with time, consciousness, quantum
+  interpretation, or observer metaphysics.
+- Use finite systems, restriction systems, typed morphisms, loss kernels,
+  local-to-global obstruction, and auditability.
+
 ## Phase 1: Make The Claims Precise
 
 - **Completed v0.1:** define [D1](claims/D1-physical-finality-definition.md)

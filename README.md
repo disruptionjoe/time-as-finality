@@ -59,6 +59,9 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-noisy-measurement-access-boundary-v0.1.md](TECHNICAL-REPORT-noisy-measurement-access-boundary-v0.1.md)
   - noisy channel-level discriminator separating decoherence, environmental
     redundancy, and observer-relative finality.
+- [TECHNICAL-REPORT-stern-gerlach-access-window-v0.1.md](TECHNICAL-REPORT-stern-gerlach-access-window-v0.1.md)
+  - Stern-Gerlach detector-fragment proxy preserving the access-boundary
+    distinction while weakening Q1 through threshold sensitivity.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -298,6 +301,7 @@ python -m models.run_t57
 python -m models.run_t58
 python -m models.run_t59
 python -m models.run_t62
+python -m models.run_t64
 ```
 
 ## Run Explorations

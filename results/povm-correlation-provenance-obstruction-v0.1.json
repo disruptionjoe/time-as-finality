@@ -1,0 +1,141 @@
+{
+  "scenarios": [
+    {
+      "name": "dependent_clean_copy",
+      "provenance_class": "dependent_copy",
+      "purpose": "Positive control: exact archive copy of the local log.",
+      "local_error": 0.02,
+      "archive_parameter": 0.0,
+      "local_accuracy": 0.98,
+      "archive_error": 0.02,
+      "archive_accuracy": 0.98,
+      "agreement_probability": 1.0,
+      "phi_correlation": 1.0,
+      "interpretation": "The archive is downstream of the local log. Agreement is set by copy transport fidelity, not by provenance independence."
+    },
+    {
+      "name": "dependent_transport_noisy",
+      "provenance_class": "dependent_copy",
+      "purpose": "Copy provenance with transport noise. The archive descends from the local log but is not perfectly correlated with it.",
+      "local_error": 0.02,
+      "archive_parameter": 0.08,
+      "local_accuracy": 0.98,
+      "archive_error": 0.0968,
+      "archive_accuracy": 0.9032,
+      "agreement_probability": 0.92,
+      "phi_correlation": 0.84,
+      "interpretation": "The archive is downstream of the local log. Agreement is set by copy transport fidelity, not by provenance independence."
+    },
+    {
+      "name": "dependent_transport_very_noisy",
+      "provenance_class": "dependent_copy",
+      "purpose": "More degraded copied archive. Provenance remains dependent even though agreement drops substantially.",
+      "local_error": 0.02,
+      "archive_parameter": 0.18,
+      "local_accuracy": 0.98,
+      "archive_error": 0.1928,
+      "archive_accuracy": 0.8072,
+      "agreement_probability": 0.82,
+      "phi_correlation": 0.64,
+      "interpretation": "The archive is downstream of the local log. Agreement is set by copy transport fidelity, not by provenance independence."
+    },
+    {
+      "name": "independent_high_fidelity",
+      "provenance_class": "independent_readout",
+      "purpose": "Independent detector chain with high agreement because both channels measure the same latent spin accurately.",
+      "local_error": 0.02,
+      "archive_parameter": 0.02,
+      "local_accuracy": 0.98,
+      "archive_error": 0.02,
+      "archive_accuracy": 0.98,
+      "agreement_probability": 0.9608,
+      "phi_correlation": 0.9216,
+      "interpretation": "The archive is an independent detector chain. Agreement comes from a shared latent spin, not from copying."
+    },
+    {
+      "name": "independent_exact_overlap",
+      "provenance_class": "independent_readout",
+      "purpose": "Independent detector chain chosen so that its observed agreement exactly matches the noisy copied-archive case.",
+      "local_error": 0.041742430504416006,
+      "archive_parameter": 0.041742430504416006,
+      "local_accuracy": 0.958257569496,
+      "archive_error": 0.041742430504,
+      "archive_accuracy": 0.958257569496,
+      "agreement_probability": 0.92,
+      "phi_correlation": 0.84,
+      "interpretation": "The archive is an independent detector chain. Agreement comes from a shared latent spin, not from copying."
+    },
+    {
+      "name": "independent_medium_fidelity",
+      "provenance_class": "independent_readout",
+      "purpose": "Independent detector chain with lower accuracy and lower agreement. This overlaps the more degraded copy case.",
+      "local_error": 0.1,
+      "archive_parameter": 0.1,
+      "local_accuracy": 0.9,
+      "archive_error": 0.1,
+      "archive_accuracy": 0.9,
+      "agreement_probability": 0.82,
+      "phi_correlation": 0.64,
+      "interpretation": "The archive is an independent detector chain. Agreement comes from a shared latent spin, not from copying."
+    }
+  ],
+  "overlap_witness": {
+    "dependent_scenario": "dependent_transport_noisy",
+    "independent_scenario": "independent_exact_overlap",
+    "agreement_gap": 0.0,
+    "phi_gap": 0.0,
+    "interpretation": "A noisy copied archive and an independent readout pair have the same pairwise correlation statistics in the finite witness family."
+  },
+  "best_agreement_threshold_audit": {
+    "score_name": "agreement_probability",
+    "orientation": "dependent_if_score_ge_threshold",
+    "threshold": 1.0,
+    "misclassified": [
+      "dependent_transport_noisy",
+      "dependent_transport_very_noisy"
+    ],
+    "error_count": 2,
+    "interpretation": "Threshold search over the canonical witness family for a single scalar correlation statistic."
+  },
+  "best_phi_threshold_audit": {
+    "score_name": "phi_correlation",
+    "orientation": "dependent_if_score_ge_threshold",
+    "threshold": 1.0,
+    "misclassified": [
+      "dependent_transport_noisy",
+      "dependent_transport_very_noisy"
+    ],
+    "error_count": 2,
+    "interpretation": "Threshold search over the canonical witness family for a single scalar correlation statistic."
+  },
+  "hypothesis_evaluations": [
+    {
+      "id": "H1",
+      "status": "refuted",
+      "claim": "A pairwise agreement threshold can recover the detector independence partition.",
+      "evidence": "The dependent noisy-copy witness and the independent exact-overlap witness both have agreement 0.92."
+    },
+    {
+      "id": "H2",
+      "status": "refuted",
+      "claim": "Binary phi correlation fixes provenance class.",
+      "evidence": "Phi is an affine transform of agreement for these unbiased binary records, so the same exact-overlap counterexample applies."
+    },
+    {
+      "id": "H3",
+      "status": "supported",
+      "claim": "Measured correlation can rank record similarity, but not infer provenance dependence on its own.",
+      "evidence": "The best agreement-threshold rule still misclassifies at least two of the six canonical witnesses."
+    },
+    {
+      "id": "H4",
+      "status": "supported",
+      "claim": "Q1 needs intervention, timing, or signed-provenance data in addition to detector correlations.",
+      "evidence": "Correlation overlaps between copied and independent channels persist even after explicit finite calibration."
+    }
+  ],
+  "strongest_claim": "Pairwise detector correlation can audit similarity of records, but it cannot by itself determine whether two records belong to the same D1 independence class.",
+  "weakened_claim": "The T66 repair path 'derive provenance from measured channel-correlation alone' is too weak. Copied archives and independent readout chains can be observationally correlation-equivalent.",
+  "falsification_condition": "If a pre-registered provenance-inference rule based only on passive detector correlation statistics classifies copied versus independent channels correctly across hostile witness families, T67 is false. Otherwise Q1 still lacks an operational rule for the independence partition.",
+  "recommended_next": "Add intervention metadata: delayed-copy tests, write-once tags, or signed detector provenance graphs. Then test whether those extra observables fix the independence partition before D1 is evaluated."
+}

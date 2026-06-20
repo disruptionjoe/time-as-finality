@@ -1,6 +1,6 @@
 # T63: TaF-GU Holonomy Dictionary
 
-**Status:** open
+**Status:** in_progress — Step 1 complete; three entries proved; H1 failure and fix identified; Berry phase gives explicit loop embedding; bipartite solid-angle formalization pending
 **Prerequisite for:** T58 (full resolution of whether TaF's H¹ obstruction is Bell violation)
 **Builds on:** T58 three-angle investigation (Distributed Contextuality Theorem), T60 (observer closure)
 **Adjacent:** GU preprint (Weinstein 2020), Abramsky-Brandenburger (2011)
@@ -227,6 +227,106 @@ This is the first concrete deliverable: a precisely-stated proposition that may 
 true, false, or undefined depending on which failure modes apply. No computation
 required. Output is a formalized conjecture with stated hypotheses and identified
 blockers.
+
+---
+
+## Step 1 Results
+
+*Executed 2026-06-19. Code at models/t63_holonomy_proof.py*
+
+**Status update:** open → in_progress.
+
+### High-confidence entries: all three are theorems
+
+**Entry 1 (coboundary theorem):** H^1(4-cycle, Z/2Z) = Z/2Z. Verified by exhaustive enumeration
+of all 16 cochains and 8 coboundaries. A 1-cochain is a coboundary iff its holonomy around the
+4-cycle = +1. Proof: the telescope product of any coboundary squares every f-value, giving 1.
+The isomorphism H^1 = Z/2Z makes this exact.
+
+*Correction from initial attempt:* "global section iff holonomy = +1" is false. Global section
+requires ALL four transitions = +1 (zero disagreements), which is stronger than holonomy = +1
+(even number of disagreements). The biconditional is about the Cech CLASS, not about global sections
+directly.
+
+**Entry 2 (Fine's theorem):** |CHSH_quantum| = 2*sqrt(2) = 2.828... > 2. The deterministic
+CHSH range is [-2, +2]. No convex mixture of deterministic HV models can reproduce the quantum
+distribution. Verified numerically at optimal angles (A0=0, A1=pi/2, B0=pi/4, B1=-pi/4).
+
+**Entry 3 (non-trivial Cech class):** The majority-outcome local sections (natural representative
+for the quantum model) give transition functions (+1, -1, +1, +1) and holonomy = -1. The Cech
+cochain is in the non-trivial class of H^1(4-cycle, Z/2Z). Note: this is a theorem for the
+representative choice, not for all local section choices. CHSH is probabilistic contextuality
+(different local section choices give different holonomies). For logical contextuality (GHZ,
+Kochen-Specker), all support-consistent choices give holonomy = -1.
+
+### H3 (identification hypothesis): precisely stated
+
+F(U_alpha) is defined as the unique trivial flat Z/2Z-connection on sigma_alpha(X_alpha) in
+Y_spin. Since sigma_alpha(X_alpha) = X_alpha = R^4 is contractible, pi_1 = 0, and all flat
+connections are trivializable. The restriction map corresponds to restricting to the overlap
+fiber. H3 asserts the Z/2Z transition function c(alpha, beta) computed from local sections
+EQUALS the holonomy of the gauge connection on Y_spin at that fiber. The identification
+type-checks: both sides are elements of Z/2Z.
+
+### H1 (topology hypothesis): FALSE for naive Y; fixed by Y_spin
+
+**The failure:** From the long exact sequence of the fibration O(3,1) -> GL(4,R) -> GL(4,R)/O(3,1) = Y_x:
+
+```
+... -> pi_1(SO^+(3,1)) -> pi_1(GL^+(4,R)) -> pi_1(Y_x^0) -> 0
+        Z/2Z       --iso-->      Z/2Z       ->    pi_1 = 0
+```
+
+The inclusion SO(3) < SO^+(3,1) < GL^+(4,R) sends the generator of pi_1(SO^+(3,1)) = Z/2Z to
+the generator of pi_1(GL^+(4,R)) = Z/2Z. The map is an isomorphism, so pi_1(Y_x) = 0. The
+fiber is simply connected. For X = R^{3,1} (contractible), pi_1(Y) = 0. The standard observerse
+has trivial fundamental group. H1 is false.
+
+**The fix — the spin observerse Y_spin:** Y_spin is the spin frame bundle over Y, double-covering Y:
+Z/2Z -> Y_spin -> Y. The spin structure exists (w_2(Y) = 0 for the trivial bundle over
+contractible base). Result: pi_1(Y_spin) = Z/2Z and H^1(Y_spin, Z/2Z) = Z/2Z. One non-trivial
+flat Z/2Z-bundle over Y_spin — the spin bundle. Its holonomy around the generating loop is -1.
+
+Y_spin is not an additional assumption: GU already requires a spin structure on Y to write the
+Dirac action. The contextuality obstruction lives in the spin structure that GU already posits.
+
+**Revised H1 (TRUE):** The observer-section loop, lifted to Y_spin, is non-contractible and
+represents the generator of pi_1(Y_spin) = Z/2Z.
+
+### Berry phase: the explicit context-loop embedding
+
+The remaining open item is the explicit embedding of the context loop into Y_spin as the
+generating loop. The Berry phase gives this:
+
+For a spin-1/2 particle, cyclic variation of the measurement direction spanning solid angle
+Omega on the Bloch sphere acquires Berry phase exp(i * Omega/2). For the CHSH context cycle:
+
+- Alice traverses: A0 (0) -> A0 (0) -> A1 (pi/2) -> A1 (pi/2) -> A0 (0). Total: pi rad.
+- Bob traverses: B0 (pi/4) -> B1 (-pi/4) -> B1 (-pi/4) -> B0 (pi/4) -> B0 (pi/4). Total: pi rad.
+- Combined Alice + Bob traversal: 2*pi rad. Verified numerically.
+
+Berry phase = exp(i * 2*pi / 2) = exp(i*pi) = -1 in U(1). Restricting to Z/2Z: holonomy = -1.
+This matches the Cech H^1 class computed from local sections.
+
+The embedding: each CHSH context maps to a point in Y_spin via the detector orientations.
+The transitions (Alice or Bob changing their setting) map to paths in Y_spin. The combined
+loop has Berry phase -1, identifying it with the generator of pi_1(Y_spin) = Z/2Z.
+
+**One open item:** The "combined solid angle = 2*pi" claim is a plausibility argument, not a
+theorem. The bipartite solid-angle calculation for Alice and Bob as a joint spin system needs
+formalization. This is the specific target for T63 Step 2.
+
+### Revised theorem statement
+
+**T63 Holonomy Theorem (provisional, under H3 + revised H1):** The Distributed Contextuality
+obstruction (H^1 != 0 over Z/2Z on the combined CHSH cover) is identical to the holonomy = -1
+of the non-trivial flat Z/2Z-bundle over the spin observerse Y_spin, evaluated on the combined
+observer-section loop whose Berry phase is exp(i*pi) = -1.
+
+H3 is the load-bearing hypothesis: it asserts the equality c(alpha,beta) = Hol_{Y_spin}(loop).
+Revised H1 (now true) provides the geometric home. The Berry phase calculation provides the
+explicit loop-generator identification. The remaining step is formalizing the Berry phase claim
+as a theorem rather than a plausibility argument.
 
 ---
 

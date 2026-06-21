@@ -276,9 +276,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P24 - Constructor Theory Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T09:00:08-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-090008-p24-constructor-theory-task-ledger.md
 - goal: State the constructor-theoretic task whose impossibility would induce a
   finality direction, including substrates, attributes, possible transformations,
   and impossible reversals.

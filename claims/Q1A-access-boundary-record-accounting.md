@@ -79,3 +79,7 @@ variation inside the current single-root witness family.
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 - [T105: Q1A Accessible-Class Sufficiency](../tests/T105-q1a-accessible-class-sufficiency.md)
 - [T109: Q1A Branch-Support Collapse](../tests/T109-q1a-branch-support-collapse.md)
+
+## Neighbor Positioning
+
+- [N7: Q1A Measurement-Neighbor Positioning](../literature/N7-q1a-measurement-neighbors.md)

@@ -25,7 +25,8 @@ impossible after full absorber accounting, and T148 makes the paper-facing
 demotion explicit. T152 screens metastable records and finds that finite
 barriers are kinetic/resource absorbers, while infinite barriers or denied
 controls are constructor or boundary stipulations rather than physical-arrow
-evidence.
+evidence. N8 maps the broader stochastic-thermodynamic absorber stack that any
+future physical-arrow witness must survive.
 
 ## What This Does Not Claim
 
@@ -326,3 +327,17 @@ The only matched finite-barrier split is the T145 branch-topology residue:
 future operation availability changes, but reverse deletion remains possible.
 So metastability does not reopen H7 as a physical-arrow or thermodynamic-arrow
 claim.
+
+## N8 Absorber Map
+
+[N8](../literature/N8-h7-stochastic-thermodynamic-absorbers.md) records the
+standard literature absorbers for any future H7 physical-arrow claim:
+Landauer/Bennett information thermodynamics, Jarzynski/Crooks/Seifert
+stochastic thermodynamics, feedback thermodynamics, nonequilibrium steady-state
+accounting, and chemical-reaction-network thermodynamics.
+
+The map does not change H7 status. It sharpens the reinstatement gate: a finite
+record substrate must match thermodynamic and information-accounting variables
+and still exhibit a constructor-impossible `physical_record_deletion` reverse
+before H7 can be promoted beyond conditional constructor/resource-accounting
+language.

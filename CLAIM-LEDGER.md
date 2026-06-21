@@ -1711,3 +1711,21 @@ forward direction. The converse is an open conjecture.
 - Open blocker: no named monitored platform in the repo currently freezes the
   full `R, A, H, V, L` tuple with a live T146 architecture class.
 - Artifact: [Q1C auxiliary-channel platform handoff](open-problems/q1c-auxiliary-channel-platform-handoff.md).
+
+### 2026-06-21 - H7 Stochastic-Thermodynamic Absorber Map (N8)
+
+- H7 remains `weakened_conditional`; N8 is a literature absorber map, not a
+  physics upgrade.
+- Result: standard Landauer/Bennett information thermodynamics,
+  Jarzynski/Crooks/Seifert stochastic thermodynamics, feedback thermodynamics,
+  nonequilibrium steady-state accounting, and chemical-reaction-network
+  thermodynamics own the current physical-arrow-looking routes unless their
+  native variables are granted first.
+- Claim impact: future H7 physical-arrow witnesses must match thermodynamic
+  and information ledgers and still produce a constructor-impossible
+  `physical_record_deletion` reverse. Finite barriers, entropy production,
+  free-energy drawdown, fresh capacity, hidden sinks, denied controls, and
+  ideal limits are absorbers by default.
+- Open blocker: no named finite record substrate currently survives this
+  stochastic-thermodynamic absorber map.
+- Artifact: [N8 absorber map](literature/N8-h7-stochastic-thermodynamic-absorbers.md).

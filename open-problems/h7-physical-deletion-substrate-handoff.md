@@ -61,6 +61,7 @@ The nearest repo artifacts are:
 - [T145 Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T148 H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152 Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
+- [N8 H7 Stochastic-Thermodynamic Absorber Map](../literature/N8-h7-stochastic-thermodynamic-absorbers.md)
 - [Arrow of Time as Constructor Theorem](arrow-of-time-as-constructor-theorem.md)
 
 ### Minimum Pre-comparison Commitment
@@ -169,4 +170,5 @@ about stability, barriers, or memory protection.
 H7 remains `weakened_conditional`. The next non-null H7 artifact is not more
 paper-facing arrow prose; it is a named physical-deletion substrate that
 freezes the reverse-edge class, absorber vector, allowed controls, and
-future-operation target, then survives the T145/T148/T152 audit.
+future-operation target, then survives the T145/T148/T152 audit plus the N8
+stochastic-thermodynamic absorber map.

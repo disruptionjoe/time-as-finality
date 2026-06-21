@@ -53,6 +53,11 @@ clear the independent-axis gate.
   extra environment structure not screened off by the log or explicitly
   enlarges the monitored instrument and states an honest fixed-standard
   comparison.
+- T146 turns that obstruction into an executable architecture gate: after
+  full-record and postselection screens, only two live proposal classes remain
+  for Q1C, an auxiliary channel tied to extra environment structure not
+  screened off by the full ordinary log, or an openly enlarged instrument with
+  a pre-declared preserved comparison target.
 
 ## Not Earned
 
@@ -71,7 +76,8 @@ monitored record, or whose apparent witness survives only because the ordinary
 record was fixed at a coarsened summary rather than at the full event-level
 trajectory. It also holds for same-instrument auxiliary channels whose verdict
 content is screened off once that full event-level trajectory is treated as the
-ordinary instrument log.
+ordinary instrument log, or which never name extra environment structure or an
+explicit instrument enlargement in the first place.
 
 ## Reinstatement Condition
 
@@ -81,7 +87,10 @@ proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
 If the proposal enlarges the monitored instrument, that enlargement and the
-preserved comparison target must be declared explicitly in advance.
+preserved comparison target must be declared explicitly in advance. If it does
+not enlarge the instrument, it must instead identify extra environment or
+detector structure whose verdict content survives conditioning on the full
+ordinary event log.
 
 ## Primary Evidence
 
@@ -94,3 +103,4 @@ preserved comparison target must be declared explicitly in advance.
 - [T137: Weak-Measurement Postprocessed Second-Meter Obstruction](../tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md)
 - [T139: Weak-Measurement Full-Record Sufficiency Boundary](../tests/T139-weak-measurement-full-record-sufficiency-boundary.md)
 - [T143: Weak-Measurement Instrument Sufficiency Obstruction](../tests/T143-weak-measurement-instrument-sufficiency-obstruction.md)
+- [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)

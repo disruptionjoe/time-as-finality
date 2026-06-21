@@ -267,9 +267,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P23 - Resource Theory Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T07:59:31-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-075931-p23-resource-theory-d1-operation-ledger.md
 - goal: Define allowed operations for D1 coordinates and prove which coordinates
   are monotone, nonmonotone, incomparable, or resource-convertible.
 - ambition: Decide whether D1 has resource-theoretic content.

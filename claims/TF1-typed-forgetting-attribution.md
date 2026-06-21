@@ -31,7 +31,11 @@ judgments. T107 adds a candidate semantics but not prior-art separation:
 lost structure relocates when projected target judgments remain dependent on
 source lifts. T108 then shows that this semantics is absorbed by several
 neighboring frameworks unless LossKernel can produce a same-neighbor-data
-quotient witness.
+quotient witness. T127 now runs that gate as an executable negative audit for
+the current finite fixture family: no strict same-neighbor-data witness
+survives; apparent separations are absorbed by neighbor-visible CSP,
+provenance, abstraction, lens, effect, path, or categorical data, or collapse
+as label-only, endpoint-difference, or absorbed-loss controls.
 
 ## Candidate Lemma
 
@@ -140,7 +144,10 @@ morphisms.
 
 ## Next Step
 
-Try to construct a same-neighbor-data quotient fixture: same provenance, same
-abstraction fibers, same lens complement, same CSP conflicts/diagnoses, and
-same rich effect annotations, but different LossKernel attribution verdict.
-Only after such a fixture exists should TF1 be upgraded from open formal target.
+Do not assume the same-neighbor-data rescue path is still live for the current
+finite family. The next honest move is either:
+
+- produce a genuinely new finite pair that survives the T127 gate; or
+- recast LossKernel more modestly as a canonical normal form / integration
+  vocabulary for source-derived witness obligations rather than a
+  prior-art-separated theorem target.

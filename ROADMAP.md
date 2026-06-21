@@ -99,10 +99,12 @@ high-leverage kickoff queue is now assigned:
 3. **T126: Finality-colimit causal-set embeddability audit** for S1:
    pass canonical T54-style finality colimits through finite causal-set
    diagnostics and explicit non-embeddability modes before any geometry claim.
-4. **T127: Same-neighbor-data LossKernel audit** for the mathematical spine:
-   test whether source-anchored witness obligations separate attribution
-   verdicts after ordinary CSP, provenance, abstract-interpretation, lens, and
-   effect-style data are matched.
+4. **Completed by T127:** the same-neighbor-data LossKernel audit is negative
+   on the current finite fixture family. No strict prior-art-separated
+   attribution witness survives once CSP, provenance, abstraction, lens,
+   effect, path, and categorical packages are matched. Next blocker: decide
+   whether LossKernel is worth keeping only as canonical normal form /
+   integration vocabulary, or whether effort should leave the TF1 rescue path.
 
 T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
 language. T148 makes the paper-facing demotion explicit after the T145 fixed-

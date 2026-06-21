@@ -1,0 +1,154 @@
+{
+  "pair_audits": [
+    {
+      "pair_id": "positive_attempt",
+      "left_case": "positive_attempt_mixed_lifts",
+      "right_case": "positive_attempt_uniform_false",
+      "classification": "absorbed_by_neighbor",
+      "left_verdict": "candidate_witness_obligation",
+      "right_verdict": "demote_non_attribution_relevant_loss",
+      "left_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "right_obligation": [],
+      "same_neighbor_data": false,
+      "differing_neighbor_fields": [
+        "csp",
+        "lenses",
+        "effect_annotations"
+      ],
+      "first_absorber": "csp_explanation",
+      "interpretation": "The apparent distinction is already visible to an allowed neighbor package before LossKernel is consulted."
+    },
+    {
+      "pair_id": "label_only_control",
+      "left_case": "label_only_control_a",
+      "right_case": "label_only_control_b",
+      "classification": "label_only",
+      "left_verdict": "candidate_witness_obligation",
+      "right_verdict": "candidate_witness_obligation",
+      "left_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "right_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "same_neighbor_data": false,
+      "differing_neighbor_fields": [
+        "naive_loss_labels",
+        "path_labels"
+      ],
+      "first_absorber": "label_bookkeeping",
+      "interpretation": "Different free labels do not create a new attribution verdict when the source-derived obligation is unchanged."
+    },
+    {
+      "pair_id": "endpoint_difference_control",
+      "left_case": "endpoint_difference_control_a",
+      "right_case": "endpoint_difference_control_b",
+      "classification": "invalid_quotient",
+      "left_verdict": "candidate_witness_obligation",
+      "right_verdict": "inadmissible_no_target_obstruction",
+      "left_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "right_obligation": [],
+      "same_neighbor_data": false,
+      "differing_neighbor_fields": [
+        "csp",
+        "provenance",
+        "abstract_interpretation",
+        "lenses",
+        "effect_annotations",
+        "category"
+      ],
+      "first_absorber": "csp_explanation",
+      "interpretation": "Endpoint behavior changed, so the pair is not admissible evidence for same-neighbor-data separation."
+    },
+    {
+      "pair_id": "path_metadata_control",
+      "left_case": "path_metadata_control_a",
+      "right_case": "path_metadata_control_b",
+      "classification": "invalid_quotient",
+      "left_verdict": "candidate_witness_obligation",
+      "right_verdict": "candidate_witness_obligation",
+      "left_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "right_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "same_neighbor_data": false,
+      "differing_neighbor_fields": [
+        "path_labels"
+      ],
+      "first_absorber": "path_sensitive_bookkeeping",
+      "interpretation": "Path labels changed. This is path-sensitive bookkeeping, not strict quotient survival."
+    },
+    {
+      "pair_id": "same_neighbor_alias",
+      "left_case": "same_neighbor_alias_a",
+      "right_case": "same_neighbor_alias_b",
+      "classification": "demote",
+      "left_verdict": "candidate_witness_obligation",
+      "right_verdict": "candidate_witness_obligation",
+      "left_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "right_obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "same_neighbor_data": true,
+      "differing_neighbor_fields": [],
+      "first_absorber": "none",
+      "interpretation": "When every neighbor-visible package is the same, the deterministic source-derived obligation and verdict collapse as well."
+    }
+  ],
+  "single_case_audits": [
+    {
+      "case_name": "absorbed_loss_control",
+      "classification": "demote",
+      "verdict": "demote_non_attribution_relevant_loss",
+      "obligation": [],
+      "interpretation": "Non-empty loss with uniform lift verdicts is not attribution-relevant for the strict T127 gate."
+    }
+  ],
+  "strict_separation_found": false,
+  "positive_attempt_absorbed": true,
+  "label_only_control_collapses": true,
+  "endpoint_difference_control_rejected": true,
+  "path_metadata_control_rejected": true,
+  "same_neighbor_alias_collapses": true,
+  "absorbed_loss_control_demoted": true,
+  "strongest_claim": "No strict same-neighbor-data LossKernel witness survives in the current finite fixture family. Every attempted separation is either absorbed because an allowed neighbor package already changes, a label-only or path-metadata variant, an endpoint-difference control, or an absorbed-loss case with no source-derived witness obligation.",
+  "improved": "T127 turns the strongest remaining TF1 gate into an executable negative audit. The repo no longer needs to leave same-neighbor-data separation open by default for the current finite witness family.",
+  "weakened": "This weakens the LossKernel program again. In the tested family, a typed source-derived obligation does not produce a prior-art-separated attribution verdict once CSP, provenance, abstraction, lens, effect, path, and categorical packages are held to the same standard.",
+  "falsification_condition": "T127 fails in TF1's favor only if a future finite pair keeps every declared neighbor-visible package fixed and still yields different derived obligations or attribution verdicts. No such pair exists in the current audit.",
+  "tf1_update": "TF1 remains an open formal target, but T127 removes the default hope that same-neighbor-data quotient separation will emerge automatically from the current finite LossKernel semantics.",
+  "claim_ledger_update": "Add T127 to TF1: the same-neighbor-data audit is negative on the current finite fixture family. Apparent separations are absorbed by neighbor-visible CSP/provenance/abstraction/lens/effect/path/category data, or collapse as label-only, endpoint-difference, or absorbed-loss controls.",
+  "open_blocker": "The only remaining non-redundant value is a canonical normal form or integration vocabulary for source-derived witness obligations. That is weaker than a prior-art-separated theorem.",
+  "recommended_next": "Stop treating same-neighbor-data separation as the default TF1 rescue. Either formalize LossKernel purely as integration vocabulary, or shift effort to T125/T126 where internal mathematical movement is still live."
+}

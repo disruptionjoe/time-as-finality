@@ -560,49 +560,39 @@ We order the failure types: $H^1 > H^0 > \text{none}$.
   while the ambient $A$ also allows $v_0 = 1$. The answer $v_0 = 1$ exists (in $A$) but
   is inaccessible (not in $F$). H⁰ failure.
 
-- *H¹ failure (contextual obstruction).* The CHSH 4-cycle cover $\{A_0B_0, A_0B_1,
-  A_1B_1, A_1B_0\}$ has a 4-cycle in its nerve. Quantum (non-local) sections assign
-  outcomes with holonomy $-1$. The signed product around the 4-cycle is $-1 \neq +1$,
-  so by Theorem 3.1, no global section exists. By Theorem 3.1 in the Čech formulation:
-  $\check{H}^1(\mathcal{U}, A) \cong \mathbb{Z}/2\mathbb{Z}$, non-trivial. H¹ failure.
+- *H¹-shaped contextual obstruction.* The CHSH 4-cycle cover $\{A_0B_0, A_0B_1,
+  A_1B_1, A_1B_0\}$ has a 4-cycle in its nerve. In the finite signed-parity
+  fixture, a signed product of $-1$ around the cycle blocks a global section by
+  Theorem 3.1. This is a parity/global-section obstruction. It is not, by itself,
+  an iff theorem about $\check{H}^1$ for arbitrary coefficients or presheaves.
+  Any restored cohomological version must define the support presheaf or twisted
+  coefficient obstruction class explicitly.
 
 ### 7.3 Review-Blocked Cover Topology Claims
 
-**Invalid draft claim 7.7 (Acyclic Cover Theorem).** If the nerve $N(\mathcal{U})$ has no 1-cycle
-(is a forest), then $\check{H}^n(\mathcal{U}, F) = 0$ for all $n \geq 1$ and all
-presheaves $F$. In particular, no H¹ failure can occur on a cover with acyclic nerve.
+**Deleted draft claim 7.7 (Acyclic Cover Theorem).** The draft formerly claimed
+that if the nerve $N(\mathcal{U})$ is a forest, then
+$\check{H}^n(\mathcal{U}, F)=0$ for all $n \geq 1$ and all presheaves $F$.
+This claim is false as stated and is not used below as a theorem.
 
-*Proof sketch.* The Čech complex $C^*(\mathcal{U}, F)$ over a cover with acyclic nerve
-is exact. The exactness follows from the standard nerve theorem: acyclicity of $N(\mathcal{U})$
-implies the Čech complex computes trivial higher cohomology. For the finite binary parity
-setting, this can be verified directly: a frustration-free cycle requires a 1-cycle in
-the nerve; without one, all cycles have even sign product $+1$ and the system is
-satisfiable whenever local sections are globally compatible. $\square$
-
-**Correction status.** Do not use this as a theorem. External review gives a
+**Correction status.** External review gives a
 two-set acyclic-cover counterexample with $F(U_1)=0$, $F(U_2)=0$,
 $F(U_1 \cap U_2)=\mathbb{Z}$ and zero restriction maps, yielding
 $C^0=0$ and $C^1=\mathbb{Z}$. Any restored statement must restrict the
 coefficient system or the class of sheaves/presheaves.
 
-**Corollary 7.8.** The following cover structures force $H^1 = 0$:
+**Repair obligation 7.8.** The finite fixtures may still have acyclic or sparse
+cases where the implemented obstruction group vanishes, but those are fixture
+facts. They cannot be generalized from cover topology alone. A repaired result
+must name the coefficient system, support presheaf, and cover hypotheses before
+claiming any vanishing statement.
 
-1. *Nested covers*: $\{U_0 \subseteq U_1\}$ — acyclic (single edge), $H^1 = 0$.
-2. *Two-element covers*: Mayer-Vietoris gives $H^1 = 0$.
-3. *Sparse pairwise overlaps (no shared variable in cycles)*: vacuous $H^1$.
+**Deleted draft claim 7.9 (Holonomy and H1).** The draft formerly claimed that,
+for a 4-cycle cover with $\mathbb{Z}/2\mathbb{Z}$ coefficients, nontrivial
+$\check{H}^1$ occurs iff the signed product around the cycle is $-1$. This is
+not a valid statement about $H^1$ itself.
 
-**Invalid draft claim 7.9 (Holonomy and H1).** For a 4-cycle cover $\mathcal{U} = \{U_1, U_2,
-U_3, U_4\}$ with $\mathbb{Z}/2\mathbb{Z}$ coefficients, a presheaf $F$ has non-trivial
-$\check{H}^1(\mathcal{U}, F) \cong \mathbb{Z}/2\mathbb{Z}$ if and only if the signed
-product around the 4-cycle (the *holonomy*) is $-1$.
-
-*Proof.* The Čech 1-cocycles on a 4-cycle with $\mathbb{Z}/2\mathbb{Z}$ coefficients
-are elements of $(\mathbb{Z}/2\mathbb{Z})^4$ satisfying the cocycle condition. A section
-$f$ is a coboundary iff the holonomy $\prod_i s_i = +1$ (product of boundary values).
-Non-trivial $H^1$ elements correspond to holonomy $-1$. The CHSH quantum sections
-achieve holonomy $-1$ (the CHSH inequality is saturated). $\square$
-
-**Correction status.** Do not use this as an iff theorem about $H^1$ itself.
+**Correction status.**
 For constant $\mathbb{Z}/2\mathbb{Z}$ coefficients on a 4-cycle, the group
 $H^1$ is already nontrivial independently of a sign labeling. A repair must
 instead define a specific support-presheaf or twisted-coefficient obstruction
@@ -626,37 +616,13 @@ system, and allowed local sections are load-bearing.
 - *Sub-cover restriction*: new cover $\mathcal{U}' \subseteq \mathcal{U}$ (some patches
   are dropped). The nerve $N(\mathcal{U}')$ is a subgraph of $N(\mathcal{U})$.
 
-**Invalid draft claim 7.12 (Failure-Type Monotonicity).** Let $f: (A, \mathcal{U}) \to (B, \mathcal{V})$
-be a typed loss morphism of either topology-preserving or sub-cover restriction type.
-Then:
-
+**Deleted draft claim 7.12 (Failure-Type Monotonicity).** The draft formerly
+claimed a monotonicity law
 $$\text{failure\_type}(B) \leq \text{failure\_type}(A)$$
+for topology-preserving and sub-cover loss morphisms in the ordering
+$H^1 > H^0 > \text{none}$. This is review-blocked and not established.
 
-in the ordering $H^1 > H^0 > \text{none}$. In particular, the transition $H^0 \to H^1$
-is impossible under these morphism types.
-
-*Proof.*
-
-*Case 1 (Topology-preserving).* The cover $\mathcal{U}$ is unchanged, so the nerve
-$N(\mathcal{U}) = N(\mathcal{V})$ is unchanged. If $N(\mathcal{U})$ is acyclic, then
-by Theorem 7.7, $\check{H}^1(\mathcal{V}, B) = 0$: no $H^1$ failure is possible in
-the target. If $N(\mathcal{U})$ contains cycles, the section-space reduction may shrink
-$\check{H}^1$ (if the reduced sections no longer witness the holonomy) but cannot
-create new $H^1$ classes from a $H^0$-only source, since the cycle structure that
-supports $H^1$ must be inherited from the source.
-
-*Case 2 (Sub-cover restriction).* $\mathcal{V} \subseteq \mathcal{U}$, so $N(\mathcal{V})$
-is a subgraph of $N(\mathcal{U})$. A subgraph of a forest is a forest (removing vertices
-or edges from an acyclic graph preserves acyclicity). Therefore if $N(\mathcal{U})$ is
-acyclic (source had only $H^0$ failures), then $N(\mathcal{V})$ is acyclic, and by
-Theorem 7.7, $\check{H}^1(\mathcal{V}, B) = 0$. The transition $H^0 \to H^1$ cannot
-occur.
-
-If $N(\mathcal{U})$ had cycles, dropping patches from $\mathcal{U}$ can only remove
-cycles from the nerve, potentially reducing $H^1$ to $H^0$ or to no failure — but
-never increasing the failure type. $\square$
-
-**Correction status.** Do not use this as a theorem. The source/target
+**Correction status.** The source/target
 diagnostic mixes custom "H0 failure" language with standard cohomology, and
 fixed-cover section-space reductions can create or destroy global-section
 obstructions. A repair must define a narrow loss-morphism class and prove
@@ -670,7 +636,7 @@ previously distinct measurement contexts. This is not information-forgetting but
 context-reidentification, and is excluded from the class of typed loss morphisms
 studied here.
 
-**Witnesses (T69, verified computationally):**
+**Finite fixtures (T69, verified computationally but not a general theorem):**
 
 - *W1 (H⁰ preserved)*: Topology-preserving loss on nested 2-element cover. Source:
   $H^0$ gap (observer cannot reach $v_0 = 1$), $H^1 = 0$. Target after projecting away
@@ -680,9 +646,10 @@ studied here.
   $\{A_0B_0, A_0B_1\}$. Source: $\check{H}^1 \cong \mathbb{Z}/2\mathbb{Z}$ (holonomy $-1$).
   Target: 2-element acyclic cover, $H^1 = 0$, 8 global sections. $H^1 \to H^0$ achieved.
 
-- *W3 (H⁰ → H¹ impossible)*: Exhaustive search over 4 acyclic source covers and all
-  sub-cover restrictions. Zero counterexamples found. Algebraic argument: acyclic source
-  nerve $+$ sub-cover $\Rightarrow$ acyclic target nerve $\Rightarrow H^1 = 0$.
+- *W3 (no fixture-level H0-to-H1 increase found)*: Exhaustive search over 4
+  acyclic source covers and all sub-cover restrictions found zero counterexamples
+  in the implemented finite family. This is a bounded fixture result only; it
+  does not restore deleted draft claim 7.7 or deleted draft claim 7.12.
 
 **Remark 7.14 (Second mechanism for H¹ destruction).** Section-space projection
 that eliminates the sole shared variable between two patches can disconnect the nerve

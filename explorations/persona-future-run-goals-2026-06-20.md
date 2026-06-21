@@ -287,9 +287,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P25 - Philosopher Of Physics
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T10:00:14-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-100014-p25-philosopher-of-physics-interpretation-guardrails.md
 - goal: Write interpretation guardrails for each major branch distinguishing
   epistemic access, record admissibility, ontology, and physical existence.
 - ambition: Prevent observer-relative mathematics from becoming accidental

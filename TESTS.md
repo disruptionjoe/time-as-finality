@@ -35,6 +35,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T145](tests/T145-physical-record-deletion-fixed-accounting.md) | Physical record deletion fixed-accounting screen | H7, T142, T144 | implemented: the remaining fixed-accounting D1 topology split is future-operation/topology residue, not arrow evidence; deletion-like candidates are absorbed by erasure work, control handles, sink state, access boundaries, or provenance class |
 | [T146](tests/T146-weak-measurement-escape-architecture-gate.md) | Weak-measurement escape architecture gate | Q1C, T139, T143 | implemented: only two live Q1C architecture classes remain after the full-record gate; same-instrument auxiliary hardware is null by default |
 | [T149](tests/T149-weak-measurement-conditional-sufficiency-gate.md) | Weak-measurement conditional-sufficiency gate | Q1C, T146 | implemented: full-record survival is a positive decision-risk lift test plus a typed extra-environment or enlarged-instrument architecture gate |
+| [T155](tests/T155-weak-measurement-blackwell-boundary.md) | Weak-measurement Blackwell boundary | Q1C, T149, T150 | implemented: screened-off auxiliary channels are null across the tested finite decision family, not just for one verdict map |
 | [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
 | [T152](tests/T152-metastable-record-deletion-screen.md) | Metastable-record deletion screen | H7, T145, T148 | implemented: finite barriers are kinetic/resource absorbers, infinite barriers are constructor idealizations, and matched finite-barrier topology residue is not arrow evidence |
 | [T153](tests/T153-lorentzian-causal-diamond-screen.md) | Lorentzian causal-diamond screen | R1, S1, B1, T151 | implemented: 1+1 Lorentzian access/reconstructability verdicts factor through causal pasts, common futures, changed access diamonds, and domains of dependence; no same-Lorentzian-data TaF residue found |
@@ -242,6 +243,7 @@ python -m models.run_t136
 python -m models.run_t138
 python -m models.run_t146
 python -m models.run_t149
+python -m models.run_t155
 python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
@@ -349,6 +351,7 @@ The suites use only Python's standard library. Evidence records:
 - [Detector Manifest Workflow Fit v0.1 Results](results/detector-manifest-workflow-fit-v0.1-results.md)
 - [Weak-Measurement Escape Architecture Gate v0.1 Results](results/weak-measurement-escape-architecture-gate-v0.1-results.md)
 - [Weak-Measurement Conditional-Sufficiency Gate v0.1 Results](results/weak-measurement-conditional-sufficiency-gate-v0.1-results.md)
+- [Weak-Measurement Blackwell Boundary v0.1 Results](results/weak-measurement-blackwell-boundary-v0.1-results.md)
 - [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
 - [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
 - [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)

@@ -67,6 +67,9 @@ clear the independent-axis gate.
   counts only when the Q1C verdict is a predeclared map from an independently
   typed TaF axis with nontrivial class support, not when the verdict is merely
   an auxiliary-defined label, a rare-event partition, or a post hoc target.
+- T155 adds the absorber under T149/T150: once the full ordinary transcript
+  screens off the auxiliary channel, that channel is null across the tested
+  finite decision family, not just for one chosen verdict map or loss rule.
 - N9 turns the remaining "maybe a real platform already exists" hope into a
   source-backed census: current named homodyne-trajectory, jump-reversal,
   microwave-photon-counter, thermal-detector, nanocalorimetric, and
@@ -100,7 +103,9 @@ ordinary instrument log, or which never name extra environment structure or an
 explicit instrument enlargement in the first place. It also holds when a
 proposal's apparent positive lift depends on defining the verdict directly from
 the auxiliary meter, choosing the verdict target after analysis, or isolating a
-vanishingly rare verdict class.
+vanishingly rare verdict class. It also holds when the auxiliary channel is
+screened off by the full ordinary transcript, in which case no tested
+predeclared finite decision problem gains by adding that channel at all.
 
 ## Reinstatement Condition
 
@@ -137,5 +142,6 @@ The current repo handoff for that burden is:
 - [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
 - [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
+- [T155: Weak-Measurement Blackwell Boundary](../tests/T155-weak-measurement-blackwell-boundary.md)
 - [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

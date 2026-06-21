@@ -1,0 +1,130 @@
+{
+  "audits": [
+    {
+      "name": "garbled_same_instrument_meter",
+      "screened_off_by_record": true,
+      "record_only_risks": {
+        "zero_one": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      },
+      "record_auxiliary_risks": {
+        "zero_one": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      },
+      "every_loss_equal": true,
+      "some_loss_improves": false,
+      "classification": "null_blackwell_screened_off",
+      "reason": "Conditioning on the auxiliary channel does not change the hidden-axis posterior once the full ordinary record is fixed, so every tested finite decision problem has the same Bayes risk with or without the auxiliary channel.",
+      "required_next": "Name extra environment structure or enlarge the instrument."
+    },
+    {
+      "name": "independent_noise_meter",
+      "screened_off_by_record": true,
+      "record_only_risks": {
+        "zero_one": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      },
+      "record_auxiliary_risks": {
+        "zero_one": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      },
+      "every_loss_equal": true,
+      "some_loss_improves": false,
+      "classification": "null_blackwell_screened_off",
+      "reason": "Conditioning on the auxiliary channel does not change the hidden-axis posterior once the full ordinary record is fixed, so every tested finite decision problem has the same Bayes risk with or without the auxiliary channel.",
+      "required_next": "Name extra environment structure or enlarge the instrument."
+    },
+    {
+      "name": "record_already_sufficient",
+      "screened_off_by_record": true,
+      "record_only_risks": {
+        "zero_one": {
+          "fraction": "0/1",
+          "float": 0.0
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "0/1",
+          "float": 0.0
+        }
+      },
+      "record_auxiliary_risks": {
+        "zero_one": {
+          "fraction": "0/1",
+          "float": 0.0
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "0/1",
+          "float": 0.0
+        }
+      },
+      "every_loss_equal": true,
+      "some_loss_improves": false,
+      "classification": "null_blackwell_screened_off",
+      "reason": "Conditioning on the auxiliary channel does not change the hidden-axis posterior once the full ordinary record is fixed, so every tested finite decision problem has the same Bayes risk with or without the auxiliary channel.",
+      "required_next": "Name extra environment structure or enlarge the instrument."
+    },
+    {
+      "name": "extra_environment_candidate",
+      "screened_off_by_record": false,
+      "record_only_risks": {
+        "zero_one": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      },
+      "record_auxiliary_risks": {
+        "zero_one": {
+          "fraction": "0/1",
+          "float": 0.0
+        },
+        "asymmetric_h1_cost": {
+          "fraction": "0/1",
+          "float": 0.0
+        }
+      },
+      "every_loss_equal": false,
+      "some_loss_improves": true,
+      "classification": "candidate_extra_structure_or_enlargement",
+      "reason": "The auxiliary channel changes the hidden-axis posterior at fixed ordinary record and improves at least one predeclared finite decision problem.",
+      "required_next": "Show whether the gain comes from extra environment structure or an explicit instrument enlargement."
+    }
+  ],
+  "null_controls_hold": true,
+  "positive_control_improves": true,
+  "strongest_claim": "T155 adds the absorber underneath T149: if an auxiliary channel is screened off by the full ordinary monitored transcript, then adding that channel cannot improve any predeclared finite decision problem about an independently typed hidden axis.",
+  "improved": "This makes the Q1C null class more general and easier to evaluate. A same-instrument auxiliary channel is not merely zero-lift for one chosen verdict map; if it is screened off by the full transcript, it is decision-theoretically redundant across the tested loss family.",
+  "weakened": "This weakens weak-measurement rescue language again. A second channel that is only a garbling, refinement, or noise decoration of the ordinary transcript does not just fail one toy criterion; it fails the whole predeclared finite decision family tested here.",
+  "falsification_condition": "T155 fails if a genuinely screened-off auxiliary channel improves a predeclared finite decision problem at fixed full ordinary record, or if the extra-environment positive control does not improve any tested loss despite changing the hidden-axis posterior.",
+  "q1c_update": "Q1C remains dormant. Any future same-instrument auxiliary proposal must first show that its event-level content is not screened off by the full ordinary transcript; otherwise no predeclared verdict lift can count.",
+  "claim_ledger_update": "Add T155 to Q1C: once the full ordinary transcript screens off the auxiliary channel, that channel is null across the tested finite decision family, not just for one chosen verdict map.",
+  "open_blocker": "The repo still lacks a named monitored-qubit platform where the auxiliary channel provably changes the hidden-axis posterior at fixed full ordinary record and can be typed as extra environment structure or honest instrument enlargement.",
+  "recommended_next": "Do not search for more same-instrument meters. Search only for a platform that can exhibit non-screened-off event-level content before any verdict or loss rule is optimized."
+}

@@ -197,9 +197,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P16 - Dynamical Systems Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T00:50:53-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-005053-p16-dynamical-systems-h7-boundary-audit.md
 - goal: Stress H7 with autonomous reversible and dissipative systems, asking
   whether finality monotones arise only with entropy export, attractor basins, or
   coarse-graining.

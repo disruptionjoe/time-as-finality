@@ -116,7 +116,7 @@
     },
     "h1_passes": true
   },
-  "h2_lax_functorial": {
+  "h2_monoid_accumulation": {
     "checks": {
       "t37_spectre_SRC -> MID -> TGT": {
         "prefix_kernels": [
@@ -298,7 +298,7 @@
     "h4_passes": true,
     "note": "Non-empty LossKernel is necessary but not sufficient for PO1. AC6 (target_is_obstructed) must also pass. Absorbed case: non-empty LossKernel + AC6 fails = NOT PO1."
   },
-  "composition_law": "LossKernel(g \u2218 f) = LossKernel(f) \u222a LossKernel(g) \u2014 LAX-FUNCTORIAL. Not strictly functorial (loss in g does not depend on loss in f). Not partial (law is total on all T34/T37 morphisms). Union is associative; identity element is \u2205.",
+  "composition_law": "LossKernel(g after f) = LossKernel(f) union LossKernel(g) -- monoid-valued annotation. This is not claimed as a lax functor or a new categorical object. The law is total on all tested T34/T37 morphisms; union is associative and the identity element is the empty set.",
   "path_dependence_biconditional": "For fixed (source, target) with equal endpoint AC conditions (AC1-AC4, AC6-AC7): PO1(P\u2081) \u2260 PO1(P\u2082)  \u27fa  LossKernel(P\u2081) \u2260 LossKernel(P\u2082) in the empty/non-empty sense. T37 diamond witnesses this exactly: Path A = {type_guarantee} (PO1); Path B = {} (not PO1). LossKernel is the organizing object for path-dependent PO1 admissibility.",
   "all_hypotheses_pass": true,
   "main_theorem": "ESTABLISHED"

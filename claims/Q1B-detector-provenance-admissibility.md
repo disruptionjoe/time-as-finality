@@ -23,7 +23,10 @@ the burden: there is a provisional-admission core for intake, plus a stricter
 claim-review extension for reconstruction, certification, and dispute-ready
 use. T134 adds the integration gate: filled T97 raw-log rows are necessary but
 not sufficient unless the T121/T133 packet wrapper is also frozen before data
-collection.
+collection. T136 makes that freeze object explicit: a pre-event manifest must
+bind the T97 table hashes, T121/T133 wrapper-field commitments, T100 authority
+partition, top-level manifest hash, no-data boundary, and claimed tier before
+the first detector event.
 
 ## Earned Content
 
@@ -43,6 +46,9 @@ collection.
 - T134 shows that T97 raw-log readiness alone cannot clear those tiers; a
   combined T97 plus T121/T133 packet must declare the claimed tier before the
   first detector event.
+- T136 turns the combined packet requirement into a pre-event manifest gate:
+  T97-only, post hoc, invalid-authority, deferred-tier, hash-mismatch, and
+  pre-known-payload variants are null for the claimed tier.
 
 ## Not Earned
 
@@ -54,15 +60,16 @@ collection.
 
 ## Falsification Or Demotion Condition
 
-If no realistic lab workflow can freeze the required raw-log packet, controls,
-trust audit, and authority separation before data collection, then detector
+If no realistic lab workflow can sign and freeze the T136 manifest before data
+collection, including the claimed tier and authority partition, then detector
 provenance should be demoted below the active Q1 frontier.
 
 ## Reinstatement Condition
 
-The branch becomes live only when a concrete deployment publishes the locked
-event-level packet, passes T87/T97/T100 without changing schema or policy after
-data collection, and then yields a verdict that survives the T83 null
+The branch becomes live only when a concrete deployment publishes the T136
+manifest before event collection, fills the bound event-level packet without
+changing schema, authority, tier, or wrapper policy, passes the T87/T97/T100
+and T121/T133 gates, and then yields a verdict that survives the T83 null
 criterion.
 
 ## Primary Evidence
@@ -78,3 +85,4 @@ criterion.
 - [T123: Same-Payload Packet FOA Witness](../tests/T123-same-payload-packet-foa-witness.md)
 - [T133: Detector Packet Tiered Minimality](../tests/T133-detector-packet-tiered-minimality.md)
 - [T134: Detector Dry-Run Tier Gate](../tests/T134-detector-dry-run-tier-gate.md)
+- [T136: Detector Pre-registration Manifest](../tests/T136-detector-preregistration-manifest.md)

@@ -177,9 +177,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P14 - Complexity Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T22:50:53-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-225053-p14-complexity-theorist-computational-status.md
 - goal: Classify major executable results by computational status: brute-force
   finite witness, polynomial decision procedure, NP-hard/CSP-complete fragment,
   or theorem with scalable proof.

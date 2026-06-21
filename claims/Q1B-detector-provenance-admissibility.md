@@ -21,7 +21,9 @@ not currently provide empirical support for Time as Finality, because no real
 event-level deployment packet has passed the T87/T97/T100 gates. T133 sharpens
 the burden: there is a provisional-admission core for intake, plus a stricter
 claim-review extension for reconstruction, certification, and dispute-ready
-use.
+use. T134 adds the integration gate: filled T97 raw-log rows are necessary but
+not sufficient unless the T121/T133 packet wrapper is also frozen before data
+collection.
 
 ## Earned Content
 
@@ -38,6 +40,9 @@ use.
 - T133 shows the packet burden is tiered: provenance/signature/authority/
   publication/revocation/key-state fields gate provisional admission, while
   witness/reconstruction/dispute fields gate full claim review.
+- T134 shows that T97 raw-log readiness alone cannot clear those tiers; a
+  combined T97 plus T121/T133 packet must declare the claimed tier before the
+  first detector event.
 
 ## Not Earned
 
@@ -72,3 +77,4 @@ criterion.
 - [T121: Real Detector Packet Schema Audit](../tests/T121-real-detector-packet-schema-audit.md)
 - [T123: Same-Payload Packet FOA Witness](../tests/T123-same-payload-packet-foa-witness.md)
 - [T133: Detector Packet Tiered Minimality](../tests/T133-detector-packet-tiered-minimality.md)
+- [T134: Detector Dry-Run Tier Gate](../tests/T134-detector-dry-run-tier-gate.md)

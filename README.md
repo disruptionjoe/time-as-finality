@@ -99,6 +99,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - instrument-level export map showing that the HydraHarp/White Rabbit/signed
     archive route is admissible only as an augmented pre-registered T87 packet,
     not as native detector evidence or empirical support.
+- [TECHNICAL-REPORT-detector-dry-run-tier-gate-v0.1.md](TECHNICAL-REPORT-detector-dry-run-tier-gate-v0.1.md)
+  - T97/T133 integration gate showing that filled raw-log rows are necessary
+    but not sufficient for detector packet admission; the T121/T133 wrapper and
+    claimed tier must also be frozen before data collection.
 - [TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md](TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md)
   - weak-measurement undo-cost audit showing that control-pulse energy,
     trajectory-derived cost, and postselected reversal success are null unless

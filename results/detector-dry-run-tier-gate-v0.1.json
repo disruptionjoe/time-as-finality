@@ -1,0 +1,317 @@
+{
+  "field_coverage_by_t97": {
+    "detector_identity": "covered_by_event_time_tag_stream.detector_id",
+    "run_session_id": "covered_by_preregistration_manifest.run_id",
+    "causal_ordering_data": "covered_by_event_time_tag_stream_and_control_pair_manifest",
+    "raw_measurement_payload": "missing_from_t97_raw_log_scaffold",
+    "calibration_reference": "missing_from_t97_raw_log_scaffold",
+    "provenance_chain": "partial_via_signature_log_ancestry_dag_and_trust_audit",
+    "signatures": "covered_by_signature_verification_log",
+    "authority_domains": "missing_from_t97_raw_log_scaffold",
+    "publication_status": "missing_from_t97_raw_log_scaffold",
+    "revocation_status": "missing_from_t97_raw_log_scaffold",
+    "key_state": "missing_from_t97_raw_log_scaffold",
+    "witness_references": "partial_via_control_and_challenge_tables",
+    "reconstruction_paths": "missing_from_t97_raw_log_scaffold",
+    "admissibility_tokens": "partial_via_policy_schema_and_demotion_hashes",
+    "challenge_status": "missing_from_t97_raw_log_scaffold"
+  },
+  "raw_identity_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference"
+  ],
+  "provisional_admission_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference",
+    "provenance_chain",
+    "signatures",
+    "authority_domains",
+    "publication_status",
+    "revocation_status",
+    "key_state",
+    "admissibility_tokens"
+  ],
+  "claim_review_extension_fields": [
+    "witness_references",
+    "reconstruction_paths",
+    "challenge_status"
+  ],
+  "audits": [
+    {
+      "case_name": "locked_t97_predata_scaffold_only",
+      "claimed_tier_before_event": "raw_log_scaffold",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": null,
+      "t97_verdict": "schema_complete_predata_scaffold_only",
+      "t97_evidence_verdict": "withhold_detector_q1_upgrade",
+      "t87_verdict_if_scored_now": "inadmissible_for_q1_upgrade",
+      "real_t97_rows_present": false,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": false,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [],
+      "wrapper_provisional_failures": [],
+      "wrapper_claim_review_failures": [],
+      "blocking_reasons": [
+        "no_real_t97_rows",
+        "missing_t121_t133_packet_wrapper",
+        "t97_native_gap:raw_measurement_payload",
+        "t97_native_gap:calibration_reference",
+        "t97_native_gap:provenance_chain",
+        "t97_native_gap:authority_domains",
+        "t97_native_gap:publication_status",
+        "t97_native_gap:revocation_status",
+        "t97_native_gap:key_state",
+        "t97_native_gap:admissibility_tokens",
+        "t97_native_claim_review_gap:witness_references",
+        "t97_native_claim_review_gap:reconstruction_paths",
+        "t97_native_claim_review_gap:challenge_status"
+      ],
+      "interpretation": "The T97 scaffold is still pre-data and has no T121/T133 wrapper. It remains a packet-freezing artifact, not evidence admission."
+    },
+    {
+      "case_name": "filled_t97_raw_log_only",
+      "claimed_tier_before_event": "provisional_admission",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": null,
+      "t97_verdict": "ready_for_t87_real_log_population",
+      "t97_evidence_verdict": "eligible_for_locked_t76_t86_population",
+      "t87_verdict_if_scored_now": "admissible_for_t86_real_log_population",
+      "real_t97_rows_present": true,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": false,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [],
+      "wrapper_provisional_failures": [],
+      "wrapper_claim_review_failures": [],
+      "blocking_reasons": [
+        "missing_t121_t133_packet_wrapper",
+        "t97_native_gap:raw_measurement_payload",
+        "t97_native_gap:calibration_reference",
+        "t97_native_gap:provenance_chain",
+        "t97_native_gap:authority_domains",
+        "t97_native_gap:publication_status",
+        "t97_native_gap:revocation_status",
+        "t97_native_gap:key_state",
+        "t97_native_gap:admissibility_tokens",
+        "t97_native_claim_review_gap:witness_references",
+        "t97_native_claim_review_gap:reconstruction_paths",
+        "t97_native_claim_review_gap:challenge_status"
+      ],
+      "interpretation": "The raw-log packet is filled, but T97 alone lacks the packet-wrapper fields required by T133; it is necessary but not sufficient."
+    },
+    {
+      "case_name": "filled_t97_with_reference_wrapper",
+      "claimed_tier_before_event": "claim_review",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": "same_payload_reference_packet",
+      "t97_verdict": "ready_for_t87_real_log_population",
+      "t97_evidence_verdict": "eligible_for_locked_t76_t86_population",
+      "t87_verdict_if_scored_now": "admissible_for_t86_real_log_population",
+      "real_t97_rows_present": true,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": true,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [],
+      "wrapper_provisional_failures": [],
+      "wrapper_claim_review_failures": [],
+      "blocking_reasons": [],
+      "interpretation": "Real T97 rows plus the complete T121/T133 wrapper clear raw, provisional, and claim-review tiers as a schema-integration target."
+    },
+    {
+      "case_name": "filled_t97_missing_provenance_wrapper",
+      "claimed_tier_before_event": "provisional_admission",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": "missing_provenance_same_payload",
+      "t97_verdict": "ready_for_t87_real_log_population",
+      "t97_evidence_verdict": "eligible_for_locked_t76_t86_population",
+      "t87_verdict_if_scored_now": "admissible_for_t86_real_log_population",
+      "real_t97_rows_present": true,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [
+        "provenance_chain",
+        "admissibility_tokens"
+      ],
+      "wrapper_provisional_failures": [
+        "provenance_chain",
+        "signatures",
+        "admissibility_tokens"
+      ],
+      "wrapper_claim_review_failures": [
+        "provenance_chain",
+        "signatures",
+        "admissibility_tokens",
+        "admissibility_tokens"
+      ],
+      "blocking_reasons": [
+        "wrapper_provisional_failure:provenance_chain",
+        "wrapper_provisional_failure:signatures",
+        "wrapper_provisional_failure:admissibility_tokens"
+      ],
+      "interpretation": "filled_t97_missing_provenance_wrapper is blocked before provisional admission: wrapper_provisional_failure:provenance_chain, wrapper_provisional_failure:signatures, wrapper_provisional_failure:admissibility_tokens."
+    },
+    {
+      "case_name": "filled_t97_missing_witnesses_wrapper",
+      "claimed_tier_before_event": "claim_review",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": "missing_witnesses_same_payload",
+      "t97_verdict": "ready_for_t87_real_log_population",
+      "t97_evidence_verdict": "eligible_for_locked_t76_t86_population",
+      "t87_verdict_if_scored_now": "admissible_for_t86_real_log_population",
+      "real_t97_rows_present": true,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": false,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [
+        "witness_references"
+      ],
+      "wrapper_provisional_failures": [],
+      "wrapper_claim_review_failures": [
+        "witness_references"
+      ],
+      "blocking_reasons": [
+        "wrapper_claim_review_failure:witness_references"
+      ],
+      "interpretation": "Real T97 rows plus this wrapper clear provisional intake, but claim-review readiness is withheld."
+    },
+    {
+      "case_name": "filled_t97_open_challenge_wrapper",
+      "claimed_tier_before_event": "claim_review",
+      "t97_packet_name": "locked_t97_detector_dry_run_packet_skeleton",
+      "wrapper_packet_id": "open_challenge_same_payload",
+      "t97_verdict": "ready_for_t87_real_log_population",
+      "t97_evidence_verdict": "eligible_for_locked_t76_t86_population",
+      "t87_verdict_if_scored_now": "admissible_for_t86_real_log_population",
+      "real_t97_rows_present": true,
+      "raw_log_scaffold_ready": true,
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": false,
+      "missing_native_provisional_fields": [
+        "raw_measurement_payload",
+        "calibration_reference",
+        "provenance_chain",
+        "authority_domains",
+        "publication_status",
+        "revocation_status",
+        "key_state",
+        "admissibility_tokens"
+      ],
+      "missing_native_claim_review_fields": [
+        "witness_references",
+        "reconstruction_paths",
+        "challenge_status"
+      ],
+      "wrapper_changed_fields": [
+        "admissibility_tokens",
+        "challenge_status"
+      ],
+      "wrapper_provisional_failures": [],
+      "wrapper_claim_review_failures": [
+        "challenge_status",
+        "admissibility_tokens"
+      ],
+      "blocking_reasons": [
+        "wrapper_claim_review_failure:challenge_status",
+        "wrapper_claim_review_failure:admissibility_tokens"
+      ],
+      "interpretation": "Real T97 rows plus this wrapper clear provisional intake, but claim-review readiness is withheld."
+    }
+  ],
+  "strongest_claim": "T97 is necessary but not sufficient for Q1B tier admission. A schema-complete raw-log packet, even after real rows populate all T97 tables, cannot be treated as provisionally admissible or claim-review ready until a T121/T133 wrapper supplies raw payload, calibration, authority, publication, revocation, key-state, admissibility-token, reconstruction, and dispute fields.",
+  "improved": "T134 turns the T133 recommendation into an executable integration gate. Future detector packets now report three explicit tier outputs instead of one flat verdict: raw evidence preserved, provisionally admissible, and claim-review ready.",
+  "weakened": "This weakens the apparent sufficiency of the T97 dry-run scaffold. T97 raw-log readiness is only a lower layer; it must not be used as detector evidence admission or as a Q1B upgrade by itself.",
+  "falsification_condition": "T134 fails if real T97 rows alone are enough for provisional admission under the packet policy, or if a complete T121/T123 wrapper plus real T97 rows still cannot clear the three declared tiers without adding post hoc fields.",
+  "q1b_update": "Q1B remains externally blocked. The next admissible detector deployment must pre-register both the T97 raw-log scaffold and the T121/T133 wrapper, then state before events whether it claims only raw-log preservation, provisional admission, or full claim-review readiness.",
+  "claim_ledger_update": "Add T134 to Q1B: T97 raw-log packets now feed an explicit tier gate. Filled T97 rows are necessary but not sufficient; missing T121/T133 wrapper fields block provisional admission, while missing witnesses or open challenges preserve intake but block claim review.",
+  "open_blocker": "No real deployment has frozen the combined T97 raw-log packet and T121/T133 wrapper before data collection.",
+  "recommended_next": "Build a single pre-registration manifest that binds T97 table hashes, T121 packet-wrapper fields, T100 authority-domain evidence, and the claimed tier before the first detector event."
+}

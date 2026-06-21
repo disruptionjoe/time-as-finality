@@ -546,6 +546,10 @@ Second, for Q1A, derive a future fixed-data witness where D1 still diverges
 after the provenance-aware fragment partition is shared. T104 shows that the
 current T103 family is absorbed once that partition is audited, so merely
 reasserting independence classes is no longer enough.
+That burden is now operationalized in the
+[Q1A same-closure-key handoff](../open-problems/q1a-same-closure-key-handoff.md):
+do not reopen Q1A without either a same-closure-key verdict split or a
+physical partition rule that the neighbor cannot import for free.
 
 Third, for detector provenance, obtain one concrete deployment that satisfies T78 and
 publish its raw event-level logs: event loss, signature verification failures,

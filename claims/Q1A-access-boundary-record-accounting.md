@@ -102,3 +102,4 @@ standard quantum-side data.
 ## Neighbor Positioning
 
 - [N7: Q1A Measurement-Neighbor Positioning](../literature/N7-q1a-measurement-neighbors.md)
+- [Q1A Same-Closure-Key Handoff](../open-problems/q1a-same-closure-key-handoff.md)

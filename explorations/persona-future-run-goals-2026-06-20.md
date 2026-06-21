@@ -217,9 +217,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P18 - Multiscale Statistics Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T02:52:28-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-025228-p18-multiscale-statistics-trajectory-uncertainty-audit.md
 - goal: Add hierarchical uncertainty to key finality trajectories: within-run
   noise, between-protocol variation, threshold sensitivity, and multiscale
   confidence intervals.

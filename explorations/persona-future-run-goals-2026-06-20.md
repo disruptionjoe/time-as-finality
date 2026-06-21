@@ -355,9 +355,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P32 - Reinforcement Learning Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T17:04:26-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-170426-p32-reinforcement-learning-safe-conditioning-boundary.md
 - goal: Model finality as what an agent can safely condition future action on
   under rollback risk, delayed observation, and policy-dependent information.
 - ambition: Connect record finality to decision value.

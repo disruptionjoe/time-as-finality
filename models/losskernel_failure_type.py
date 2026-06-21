@@ -204,7 +204,7 @@ def witness_1_h0_preservation() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Witness 2: H1 destroyed by sub-cover restriction (T58 distributed contextuality)
+# Witness 2: H1 destroyed by sub-cover restriction (T131 distributed contextuality)
 # ---------------------------------------------------------------------------
 
 def witness_2_h1_destruction() -> dict:

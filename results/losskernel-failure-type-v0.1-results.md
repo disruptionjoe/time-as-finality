@@ -56,7 +56,7 @@ diagnostic rather than theorem-level support for TF1.
 - Loss: restrict to Alice's 2-context sub-cover {A0B0, A0B1}
 - Target: 2-element cover (acyclic), H1 = 0, 8 global sections exist
 - H1 destroyed: True
-- Confirms T58 distributed contextuality as a loss morphism in canonical form
+- Confirms T131 distributed contextuality as a loss morphism in canonical form
 
 **W3 — H0 → H1 impossible (exhaustive + algebraic):** SUPPORTED
 - 0 counterexamples found in 4 acyclic covers × all sub-cover restrictions

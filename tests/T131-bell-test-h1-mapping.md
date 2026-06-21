@@ -1,4 +1,4 @@
-# T58: Bell-Test-to-H¹ Mapping
+# T131: Bell-Test-to-H¹ Mapping
 
 **Status:** in_progress — Step 1 complete; Boolean variant resolved; real-valued variant is next
 **Prerequisite tests:** T13 (finality sheaf cohomology), T21 (CHSH contextuality)
@@ -265,7 +265,7 @@ All 16 deterministic hidden-variable assignments (a0,a1,b0,b1) give CHSH bracket
 
 ### Tsirelson bound
 
-The Tsirelson bound 2*sqrt(2) does NOT emerge from the no-signalling presheaf structure alone. The no-signalling polytope permits CHSH up to 4 (PR-box). Recovering 2*sqrt(2) requires characterizing the quantum body Q subset NS, which requires Hilbert space structure -- this cannot be done in finality-presheaf terms alone without importing quantum mechanics, violating T58's constraint.
+The Tsirelson bound 2*sqrt(2) does NOT emerge from the no-signalling presheaf structure alone. The no-signalling polytope permits CHSH up to 4 (PR-box). Recovering 2*sqrt(2) requires characterizing the quantum body Q subset NS, which requires Hilbert space structure -- this cannot be done in finality-presheaf terms alone without importing quantum mechanics, violating T131's constraint.
 
 The classical bound 2 DOES emerge from the presheaf: it is the maximum CHSH achievable by any global section (Fine's theorem). The contextual gap (2 < CHSH <= 4) is the region where no global section exists.
 
@@ -282,9 +282,9 @@ The classical bound 2 DOES emerge from the presheaf: it is the maximum CHSH achi
 
 Path A achieves conditions 1 and 2, and partially achieves 3 and 4. The correct mathematical home for the CHSH contextuality obstruction is the Abramsky-Brandenburger sheaf-of-sets H^1, not the vector-space H^1 of the distribution presheaf. This is a genuine structural finding: the no-signalling presheaf over real coefficients is too flexible (flasque) to carry a nontrivial H^1. The obstruction lives in a categorical cohomology theory (cohomology of the sheaf of sets E), not in the Cech H^1 of a sheaf of abelian groups.
 
-The classical bound 2 emerges cleanly as the global-section threshold. Recovering the Tsirelson bound requires additional quantum structure outside the presheaf definition. The T58 formal target condition 4 should be revised to the weaker claim: the presheaf gives the classical/nonclassical boundary (CHSH > 2) but not the quantum/post-quantum boundary (CHSH > 2*sqrt(2)).
+The classical bound 2 emerges cleanly as the global-section threshold. Recovering the Tsirelson bound requires additional quantum structure outside the presheaf definition. The T131 formal target condition 4 should be revised to the weaker claim: the presheaf gives the classical/nonclassical boundary (CHSH > 2) but not the quantum/post-quantum boundary (CHSH > 2*sqrt(2)).
 
-**Claim-status recommendation for T58 conditions 1-4:** Conditions 1 and 2 are fully satisfied. Condition 3 holds in the sheaf-of-sets (Abramsky-Brandenburger) formulation. Condition 4 holds for the classical bound only. T58 should update its formal target to specify the sheaf-of-sets cohomology theory and weaken condition 4 to the classical/nonclassical split.
+**Claim-status recommendation for T131 conditions 1-4:** Conditions 1 and 2 are fully satisfied. Condition 3 holds in the sheaf-of-sets (Abramsky-Brandenburger) formulation. Condition 4 holds for the classical bound only. T131 should update its formal target to specify the sheaf-of-sets cohomology theory and weaken condition 4 to the classical/nonclassical split.
 
 ---
 

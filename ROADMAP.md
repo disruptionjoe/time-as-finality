@@ -78,6 +78,33 @@ T92-T100:
 Source review:
 [All-Persona Review Of The Last 24 Hours](explorations/all-persona-last-24h-review-2026-06-20.md).
 
+Agent-driven exploration protocol:
+
+Use the subagent-per-goal method from `CONTRIBUTING.md` when an open-problem
+cluster is broad enough to risk overclaiming or dilution. The current
+high-leverage kickoff queue is now assigned:
+
+1. **T124: Constructor-admissibility grounding audit** for H7 / arrow-of-time:
+   classify every strict D1 increase as forbidden reverse, resource/export
+   payment, hidden environment, or unexplained candidate. This protects the
+   T18 line from turning conditional constructor structure into a physical
+   arrow claim.
+2. **T125: D1 boundary connection transport** for finality gauge theory:
+   define identity, composition, closed-loop transport, and provenance-bearing
+   access-boundary deltas before any curvature, gravity, or torsion language.
+3. **T126: Finality-colimit causal-set embeddability audit** for S1:
+   pass canonical T54-style finality colimits through finite causal-set
+   diagnostics and explicit non-embeddability modes before any geometry claim.
+4. **T127: Same-neighbor-data LossKernel audit** for the mathematical spine:
+   test whether source-anchored witness obligations separate attribution
+   verdicts after ordinary CSP, provenance, abstract-interpretation, lens, and
+   effect-style data are matched.
+
+T124-T127 are open, specification-only artifacts. They do not update claim
+status until implemented and checked. Existing number conflicts have been
+resolved by keeping T58, T88, and T115 for their canonical indexed artifacts
+and moving the colliding side tracks to T130-T132.
+
 Promotion gate before any public theorem or paper language:
 
 - LossKernel must be stricter than free-text `forgotten_structure` metadata.

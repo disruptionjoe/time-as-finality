@@ -1,4 +1,4 @@
-# Technical Report: Weak-Measurement Reparameterization Obstruction v0.1
+﻿# Technical Report: Weak-Measurement Reparameterization Obstruction v0.1
 
 ## Claim Under Test
 
@@ -54,7 +54,7 @@ language, not a new physics discriminator.
 
 ## What This Improved
 
-T90 converts T88 from a prose gate into a reproducible obstruction test. A
+T90 converts T132 from a prose gate into a reproducible obstruction test. A
 future monitored-qubit model can now be rejected for using only standard
 coherence/redundancy/access data, or admitted as a candidate only by naming the
 independent D1 axis before analysis.

@@ -200,7 +200,7 @@ The information required to "close" the cycle (joint distribution P(a,b|x,y)) is
 from any single party's causal region. The cyclic cover is not a design choice — it is forced
 by the causal structure of the experiment.
 
-**T58 Distributed Contextuality Theorem:** Alice's 2-context sub-cover {A0B0, A0B1} has
+**T131 Distributed Contextuality Theorem:** Alice's 2-context sub-cover {A0B0, A0B1} has
 acyclic nerve (line segment) → H¹ = 0. Bob's 2-context sub-cover {A0B0, A1B0} has acyclic
 nerve → H¹ = 0. The combined 4-context cover has cyclic nerve → H¹ = Z/2Z. The H¹ obstruction
 lives strictly at the inter-observer overlaps {B0, B1} where Alice's and Bob's sub-covers join.
@@ -219,7 +219,7 @@ A reconstruction failure may be H¹ (Type A) when:
 3. The transition functions around the cycle are non-trivial (holonomy ≠ identity)
 4. Local sections exist on each patch (H¹ measures global consistency, not accessibility)
 
-All TaF Type A failures (T63, T65, T58-Bell, PO1) satisfy all four conditions.
+All TaF Type A failures (T63, T65, T131-Bell, PO1) satisfy all four conditions.
 
 ---
 
@@ -469,7 +469,7 @@ on the accessibility of graph structure).
 | Sparse pairwise overlaps | H⁰ only (vacuous H¹) | T56 | Proved |
 | 4-cycle nerve + Z/2Z | H¹ possible (Type A) | T63, T65 | Proved |
 | 4-cycle + non-trivial holonomy | H¹ active (Type A) | T63, T65 | Proved |
-| Distributed contextuality | H¹ at inter-observer overlaps | T58-Bell | Proved |
+| Distributed contextuality | H¹ at inter-observer overlaps | T131-Bell | Proved |
 | Projection (topology-preserving) | Type preserved | T37, T59/T58 | Supported |
 | Provenance underdetermination | Pre-cohomological (Type C) | T67 | Supported |
 | Attribution underdetermination | Post-cohomological (Type D) | T37, T39 | Supported |

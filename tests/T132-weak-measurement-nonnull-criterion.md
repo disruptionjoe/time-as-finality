@@ -1,4 +1,4 @@
-# T88: Weak-Measurement Non-Null Criterion
+# T132: Weak-Measurement Non-Null Criterion
 
 ## Route
 
@@ -19,7 +19,7 @@ monitoring or weak-measurement setup where TaF predicts a distinct effective
 record-finalization time.
 
 That route is also at high risk of collapsing into standard decoherence plus
-declared thresholds. T88 makes that collapse condition explicit before more
+declared thresholds. T132 makes that collapse condition explicit before more
 simulation work is spent on it.
 
 ## Non-Null Criterion

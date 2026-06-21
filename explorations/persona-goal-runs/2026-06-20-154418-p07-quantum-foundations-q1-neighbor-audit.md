@@ -17,7 +17,7 @@
 - `tests/T104-q1a-provenance-aware-darwinism-absorption.md`
 - `tests/T105-q1a-accessible-class-sufficiency.md`
 - `tests/T12-weak-measurement-discriminating-prediction.md`
-- `tests/T88-weak-measurement-nonnull-criterion.md`
+- `tests/T132-weak-measurement-nonnull-criterion.md`
 - `tests/T90-weak-measurement-reparameterization-obstruction.md`
 - `tests/T91-weak-measurement-platform-audit.md`
 - `tests/T94-weak-measurement-priority-demotion.md`
@@ -33,7 +33,7 @@
 1. Read the current Q1 claim split to avoid treating Q1 as one supported physics claim.
 2. Read the explicit T102 neighbor-comparison gate and its six-framework audit.
 3. Read the later T103-T105 narrowing steps to see whether any external distinction survived.
-4. Read the T12/T88/T90/T91/T94 weak-measurement sequence to determine whether TaF still owns a live discriminating prediction.
+4. Read the T12/T132/T90/T91/T94 weak-measurement sequence to determine whether TaF still owns a live discriminating prediction.
 5. Collapsed the branch into two questions:
    - Does Q1A currently outperform its named neighboring interpretations/frameworks?
    - Does T12/T90 currently yield a non-null physical discriminator?

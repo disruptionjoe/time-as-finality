@@ -95,7 +95,7 @@ T58 (Bell-H¹) found:
 - The classical Bell bound 2 emerges as the global-section threshold (Fine's theorem)
 - The Tsirelson bound 2√2 does NOT emerge without importing QM structure
 
-T58 Distributed Contextuality (three-angle investigation, Agent 3):
+T131 Distributed Contextuality (three-angle investigation, Agent 3):
 - Alice's sub-cover: H¹ = 0 (contractible; 2 contexts with one overlap)
 - Bob's sub-cover: H¹ = 0 (contractible; 2 contexts with one overlap)
 - Combined 4-context cover: H¹ ≠ 0
@@ -222,7 +222,7 @@ Let C be a context cover over a region divided by a causal boundary B. If:
 
 **Support:**
 - T65: spacelike separation enforces cyclic CHSH context cover → H¹ ≠ 0 (T63)
-- T58 distributed contextuality: B-setting overlaps cross inter-observer boundary → H¹ ≠ 0
+- T131 distributed contextuality: B-setting overlaps cross inter-observer boundary → H¹ ≠ 0
 - T19: temporal ordering enforces A*(R) ⊂ G → H¹ = 0, H⁰ failure
 - T51-T54: observer-colimit with accessible ⊂ full record → H¹ = 0, H⁰ failure (gap presheaf)
 
@@ -376,7 +376,7 @@ from those that arise from structural information loss (PO1).
 The H⁰ branch (accessibility, linear covers) is productive: T56/T57/T58 gap-phantom program,
 observer-colimit descent (T51-T54). This branch addresses temporal causality and bounded access.
 
-The H¹ branch (existence, cyclic covers) is the Bell-violation branch: T63, T65, T58-Bell-H¹.
+The H¹ branch (existence, cyclic covers) is the Bell-violation branch: T63, T65, T131-Bell-H¹.
 This branch addresses spacelike causality and contextuality.
 
 They share a family resemblance (both are about reconstruction failure from bounded regions)

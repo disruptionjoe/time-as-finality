@@ -13,7 +13,7 @@
 - `claims/Q1-quantum-under-finalization.md`
 - `claims/Q1A-access-boundary-record-accounting.md`
 - `claims/Q1C-weak-measurement-discriminator-gate.md`
-- `tests/T88-weak-measurement-nonnull-criterion.md`
+- `tests/T132-weak-measurement-nonnull-criterion.md`
 - `tests/T90-weak-measurement-reparameterization-obstruction.md`
 - `tests/T91-weak-measurement-platform-audit.md`
 - `tests/T93-weak-measurement-undo-cost-independence.md`
@@ -23,7 +23,7 @@
 
 1. Read the current D1 physical-reduction status to separate already operational dimensions from formal-only ones.
 2. Read the Q1 umbrella and Q1A/Q1C branch files to avoid upgrading dormant weak-measurement language into a live information-theoretic claim.
-3. Read T88/T90/T91/T93 to identify exactly what would count as a non-null quantum-information observable rather than a relabeled standard trajectory statistic.
+3. Read T132/T90/T91/T93 to identify exactly what would count as a non-null quantum-information observable rather than a relabeled standard trajectory statistic.
 4. Recast the current repo vocabulary into channel/instrument language and asked which quantities are already earned, which are blocked, and what the smallest next operational object should be.
 
 ## Operational Recast

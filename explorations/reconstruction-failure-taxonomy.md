@@ -120,8 +120,8 @@ the cover cycle is non-trivial.
 **Examples in TaF:**
 - T63: H¹(4-cycle, Z/2Z) = Z/2Z (direct simplicial computation)
 - T65: quantum sections in non-trivial H¹ class; spatial causal-boundary obstruction
-- T58 Bell-H¹: H¹ ≠ 0 in sheaf-of-sets; classical bound 2 emerges
-- T58 Distributed Contextuality: combined cover H¹ ≠ 0 (Alice and Bob sub-covers H¹ = 0)
+- T131 Bell-H¹: H¹ ≠ 0 in sheaf-of-sets; classical bound 2 emerges
+- T131 Distributed Contextuality: combined cover H¹ ≠ 0 (Alice and Bob sub-covers H¹ = 0)
 - PO1 (T29-T35): gluing obstruction = parity-conflicting binary CSP; H¹-type
 - T16: spacetime aggregation gluing obstruction (H¹-type on finality sections)
 

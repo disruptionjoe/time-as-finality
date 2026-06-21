@@ -63,7 +63,7 @@ changes. Can remove cycles (cyclic → acyclic).
 
 TaF loss operations primarily belong to Class 1 (forgetting record content, projecting
 dimensions) or Class 2 variant where patches are dropped (restricting to a sub-cover,
-as in T58 distributed contextuality: 4-cycle → Alice's 2-context sub-cover).
+as in T131 distributed contextuality: 4-cycle → Alice's 2-context sub-cover).
 
 A third variant — **patch identification** (merging two non-adjacent patches, which
 can CREATE cycles from acyclic covers) — is NOT a loss operation in the TaF sense:

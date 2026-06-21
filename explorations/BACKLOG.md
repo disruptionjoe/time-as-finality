@@ -6,6 +6,35 @@ Location note: this file lives in `explorations/` deliberately — backlog items
 
 ---
 
+## Active Queue From 2026-06-20 All-Persona Review
+
+Source: [all-persona-last-24h-review-2026-06-20](all-persona-last-24h-review-2026-06-20.md).
+
+These are review-derived work cards, not claims:
+
+1. LossKernel separation/collapse test: determine whether typed attribution
+   survives same endpoints, same composite/endpoint behavior, and same naive
+   loss set, or collapses into ordinary provenance/effect annotation.
+2. T90 weak-measurement platform instantiation: name an independent
+   branch/provenance/reversal-cost observable before modeling, or demote T12.
+3. T87 detector feasibility audit: map raw-log requirements to actual exported
+   instrument files and decide whether the detector route is empirically
+   feasible.
+4. H7 entropy-accounting hard case: test whether bounded reversible local
+   memory can be D1-monotone without exported history, erasure, or hidden sinks.
+5. T19/T58 gap restriction maps: test whether the proposition-domain
+   accessible-witness gap has a T57-style closure property. Goal:
+   [Accessible Witness Gap Restriction Theorem](../open-problems/accessible-witness-gap-restriction-theorem.md).
+6. Iterated Loss Dynamics: test whether repeated `LossKernel(T^n)` behavior
+   adds information beyond one-step T69/T73 loss composition. Goal:
+   [Iterated Loss Dynamics](../open-problems/iterated-loss-dynamics.md).
+7. Obstruction Relocation / Reconstruction Debt: test whether projection can
+   eliminate an object-level obstruction only by moving a reconstruction
+   obligation into provenance, loss, admissibility, or gap data. Goal:
+   [Obstruction Relocation And Reconstruction Debt](../open-problems/obstruction-relocation-reconstruction-debt.md).
+
+---
+
 ## Entry 2026-06-10: Distributed Records, Rendering, and Observer-Relative Reality
 
 > Submitted by Joe, 2026-06-10. Preserved as written. See Annotations below for already-considered status.
@@ -220,3 +249,71 @@ The "Distributed Records, Rendering, and Observer-Relative Reality" intuition wa
 **WC-21: Adopt invariance framing in D1 v0.1 (from #11, #3) — fold into WC-2**
 - Change: word D1 v0.1 so that observer-network objectivity is defined as invariance of p's reconstruction across admissible observers/subgraphs, replacing residual "consensus" wording; cite Nozick and quantum Darwinism as the two flanking prior positions in the eventual literature note.
 - Acceptance: the word "consensus" appears in D1 only inside the analogy-marked section.
+
+**WC-30: Iterated Loss Dynamics - medium-high priority, gated**
+- Files: [Iterated Loss Dynamics](../open-problems/iterated-loss-dynamics.md),
+  [Persona Future Run Goals](persona-future-run-goals-2026-06-20.md),
+  [Iterated Loss Dynamics Backlog Review](iterated-loss-dynamics-backlog-review-v0.1.md).
+- Problem: T69 and T73 study one-step or path-level loss. The repo has not
+  asked whether repeated traversal `T, T^2, ..., T^n` exposes recurrence,
+  saturation, failure-type degradation, or hidden periodicity.
+- Change: preserve the idea as a bounded executable target, not a main-line
+  promotion. Add persona queue items for iterated dynamics, GU-generated finite
+  loop witnesses, latent signatures, orbit space, and deferred recurrence
+  classification.
+- Why: this may become a legitimate LossKernel algebra extension, but the null
+  explanation is strong: finite label-union saturation may explain everything.
+- Acceptance: a first T101-style audit classifies at least fixed, saturating,
+  period-2, and cycle-destroying trajectories, and states whether any behavior
+  is not already explained by T73 union accumulation.
+
+**WC-31: Obstruction Relocation / Reconstruction Debt - high priority, gated**
+- Files: [Obstruction Relocation And Reconstruction Debt](../open-problems/obstruction-relocation-reconstruction-debt.md),
+  [Persona Future Run Goals](persona-future-run-goals-2026-06-20.md),
+  [Obstruction Relocation Backlog Review](obstruction-relocation-backlog-review-v0.1.md).
+- Problem: several repo branches show a similar move: a visible obstruction is
+  not solved but displaced into provenance, LossKernel, admissibility, gap, or
+  protocol obligations. Calling this "conservation" would overclaim; calling it
+  relocation or reconstruction debt may be testable.
+- Change: add bounded persona goals for obstruction relocation, reconstruction
+  debt quantification, and obstruction-degree flow. Keep degree-flow theorem
+  language blocked until T69-style hypotheses are generalized.
+- Why: Version 1 connects directly to T39, T63/T65, T68/T72/T74, T73, and the
+  Pati-Salam witness. Version 2 may produce a neutral math-paper observable.
+  Version 3 is theorem-shaped but currently too broad.
+- Acceptance: a first T102-style audit classifies at least four existing tests
+  by where the obstruction moves, and includes a counterexample where a
+  projected obstruction genuinely vanishes because the source obligation was
+  irrelevant or non-admissible.
+
+**WC-32: Research Constellation persona-goal routing - high priority, exploratory**
+- Files: [Research Constellation Orchestrator](research-constellation-orchestrator-2026-06-20.md),
+  [Persona Future Run Goals](persona-future-run-goals-2026-06-20.md),
+  this backlog.
+- Problem: the 2026-06-20 constellation run surfaced sharper candidate goals
+  than the existing broad persona queue, especially around reconstruction debt,
+  obstruction relocation, operation rights, detector admissibility protocols,
+  and aggregation/compositional finality.
+- Change: route the themes as candidate persona goals only. Do not treat them
+  as roadmap items, claim evidence, workflow triggers, or canonical research
+  lines.
+- Why: the strongest constellation signals are cross-room and easy to lose if
+  they remain only inside the report. They need bounded exploratory runs with
+  negative controls and prior-art pressure before any promotion decision.
+- Already covered by existing queue entries:
+  P24 constructor-theoretic finality; P33/P61 salience and relevance filtering;
+  P34 Git semantic-merge witness; P35/P52 prior-art deletion pressure; P36
+  access-control authority; P38 correlated tail regimes; P55 signed ancestry;
+  P71 aggregation/coarse-graining; P78-P80 obstruction relocation and
+  reconstruction debt.
+- New focused persona goals added:
+  P81 operation-right LossKernel; P82 negative-control search; P83 prior-art
+  boundary matrix; P84 detector admissibility protocol; P85 detector threat
+  model; P86 challenge-event provenance; P87 authority/trust-boundary
+  admissibility; P88 correlated tail false-upgrade analysis; P89 reconstruction
+  entropy; P90 accessibility ratio; P91 aggregation survival tests; P92 scale
+  transition finality; P93 witness obligations; P94 typed access boundaries;
+  P95 motif compression from constellation signals.
+- Acceptance: each run remains bounded and exploratory; at least one run in the
+  LossKernel/reconstruction-debt cluster must include a negative control where
+  loss occurs but no meaningful reconstruction debt remains.

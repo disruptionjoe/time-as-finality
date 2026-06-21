@@ -27,7 +27,11 @@ Therefore TF1 must remain an open formal target until it has at least one
 non-tautological result: a canonical `LossKernel` semantics, a separation from
 standard provenance/effect bookkeeping, or an impossibility theorem showing why
 endpoint-only or ordinary compositional attribution cannot recover the intended
-judgments.
+judgments. T107 adds a candidate semantics but not prior-art separation:
+lost structure relocates when projected target judgments remain dependent on
+source lifts. T108 then shows that this semantics is absorbed by several
+neighboring frameworks unless LossKernel can produce a same-neighbor-data
+quotient witness.
 
 ## Candidate Lemma
 
@@ -69,6 +73,12 @@ The repo repeatedly finds that obstruction by itself is not enough:
   accumulate different forgotten structure.
 - T40 shows cross-level source-satisfiable plus target-obstructed is
   insufficient for holonic PO1 without named cross-level forgotten dimensions.
+- T107 derives finite reconstruction debt from source-fiber lift dependence,
+  while also showing absorbed loss controls where hidden variation creates no
+  debt.
+- T108 shows that source-fiber loss relocation does not yet separate from
+  why-not provenance, abstract interpretation, lenses, CSP explanation, or
+  rich effect annotations.
 
 Together these suggest the original contribution is not "obstruction exists,"
 but a typed attribution calculus for obstruction under information-losing
@@ -108,21 +118,29 @@ morphisms.
 - [T39: CSP Satisfiability Reframing](../tests/T39-csp-satisfiability-reframing.md)
 - [T40: Holarchy Lab](../tests/T40-holarchy-lab.md)
 - [T41: Typed Transport Category](../tests/T41-typed-transport-category.md)
+- [T99: LossKernel Quotient Separation](../tests/T99-losskernel-quotient-separation.md)
+- [T107: Loss Relocation](../tests/T107-loss-relocation.md)
+- [T108: Loss Relocation Prior-Art Audit](../tests/T108-loss-relocation-prior-art.md)
 
 ## Guardrails
 
 - This does not claim that TaF discovered gluing obstruction.
 - This does not claim obstruction conservation.
+- This does not claim conservation of lost information; some loss can be
+  absorbed when target judgments are invariant across source lifts.
 - This does not claim every information-losing map creates obstruction.
 - This does not claim that access, provenance, or auditability are the whole
   structure; they are candidate corollaries or laboratories.
 - This does not claim that `LossKernel` is publishably distinct from existing
   provenance, effect, abstract-interpretation, or lens machinery.
+- This does not claim source-fiber loss relocation separates from existing
+  frameworks; T108 currently says it does not.
 - This does not claim any general Cech-cohomology theorem without explicitly
   stating the coefficient system, cover hypotheses, and support presheaf.
 
 ## Next Step
 
-Define `LossKernel` as a first-class object and re-run T34/T37/T39/T40 through
-it with prior-art and quotient tests. Only after that should TF1 be upgraded
-from open formal target.
+Try to construct a same-neighbor-data quotient fixture: same provenance, same
+abstraction fibers, same lens complement, same CSP conflicts/diagnoses, and
+same rich effect annotations, but different LossKernel attribution verdict.
+Only after such a fixture exists should TF1 be upgraded from open formal target.

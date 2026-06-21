@@ -1,0 +1,350 @@
+{
+  "branch_audits": [
+    {
+      "branch": "Q1A",
+      "collapsed": "Branch support and reversal cost collapsed inside the fixed-data family; provenance-aware Darwinism absorbed the strongest witness.",
+      "survived": "Audited accessible provenance-class support plus partition visibility.",
+      "involves_foa": "weak",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Weak convergence only: Q1A preserves availability of certified records, not a full future action set unless a task family is added."
+    },
+    {
+      "branch": "ASP",
+      "collapsed": "Replacement-primitive and scalar future-opportunity readings collapsed.",
+      "survived": "Observer/task-indexed admissible future operation set under witnesses, rights, reconstruction paths, maintenance budget, and certifications.",
+      "involves_foa": "strong",
+      "expressible_without_foa": false,
+      "recurrence_verdict": "Direct convergence: ASP is essentially FOA under a different name."
+    },
+    {
+      "branch": "Reconstruction debt",
+      "collapsed": "General lost-information conservation language collapsed.",
+      "survived": "Missing source witnesses matter when later reconstruction, judgment, or admissibility depends on them.",
+      "involves_foa": "strong",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Structural convergence: debt is the obstruction-side account of operations no longer reconstructable or certifiable."
+    },
+    {
+      "branch": "Maintenance cost",
+      "collapsed": "Independent maintenance-cost theory collapsed into provenance, commons, viability, and reconstruction-debt language.",
+      "survived": "Maintained witnesses, authority, and repair paths that preserve future operation rights.",
+      "involves_foa": "strong",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Structural convergence, but absorbable by task-enriched viability or control state."
+    },
+    {
+      "branch": "Provenance",
+      "collapsed": "Provenance as a first-class event-finality primitive collapsed for plain colimit, AM, and descent reconstruction.",
+      "survived": "Audit, identity, custody, attribution, and admissibility evidence.",
+      "involves_foa": "strong",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Structural convergence only when future operations require trust, identity, challenge, or certification."
+    },
+    {
+      "branch": "LossKernel",
+      "collapsed": "Label-only LossKernel and novelty over rich prior art collapsed.",
+      "survived": "Source-anchored witness obligations for projection-created judgments.",
+      "involves_foa": "strong",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Structural convergence: typed loss matters when projected targets lose future judgments or repair operations."
+    },
+    {
+      "branch": "Admissibility",
+      "collapsed": "Seven independent empirical admissibility conditions collapsed to a smaller structural checklist plus semantic AC5.",
+      "survived": "A rule for which projections, witnesses, or claims are admissible as future evidence.",
+      "involves_foa": "strong",
+      "expressible_without_foa": true,
+      "recurrence_verdict": "Converges at the evidence-protocol layer: admissibility is not FOA, but it determines which future claims/actions are permitted."
+    }
+  ],
+  "prior_art_pressure": [
+    {
+      "target": "viability kernels",
+      "verdict": "absorbs",
+      "reason": "Absorbs FOA when the viability set is defined over future task availability under constraints."
+    },
+    {
+      "target": "reachability analysis",
+      "verdict": "absorbs",
+      "reason": "Absorbs FOA when state includes witnesses, rights, certificates, and reconstruction paths."
+    },
+    {
+      "target": "affordance landscapes",
+      "verdict": "partial",
+      "reason": "Captures available actions for an agent-environment pair, but often omits formal certification and admissibility tokens."
+    },
+    {
+      "target": "active inference policy spaces",
+      "verdict": "absorbs",
+      "reason": "Absorbs FOA if policies range over witness/right-bearing future states."
+    },
+    {
+      "target": "reinforcement-learning action spaces",
+      "verdict": "partial",
+      "reason": "Captures executable actions, but ordinary RL action sets do not encode reconstruction, certification, or challenge rights by default."
+    },
+    {
+      "target": "opportunity-set economics",
+      "verdict": "absorbs",
+      "reason": "Directly captures FOA as feasible opportunity set once rights and constraints are included."
+    },
+    {
+      "target": "capability theory",
+      "verdict": "partial",
+      "reason": "Close conceptual neighbor: real freedoms/capabilities, but less formal about witness debt and certification."
+    },
+    {
+      "target": "mechanism design",
+      "verdict": "absorbs",
+      "reason": "Absorbs operation rights, incentives, admissible moves, challenge rules, and authority."
+    },
+    {
+      "target": "commons governance",
+      "verdict": "absorbs",
+      "reason": "Absorbs monitoring, sanctioning, repair, public rules, and challenge authority in governance examples."
+    },
+    {
+      "target": "control theory",
+      "verdict": "absorbs",
+      "reason": "Absorbs FOA when the controlled state and admissible controls include record and authority variables."
+    }
+  ],
+  "finite_examples": [
+    {
+      "example_id": "A_foa_differs_existing_measures_do_not",
+      "purpose": "FOA differs while existing measures do not.",
+      "system_a": {
+        "system_id": "history_preserved_repo",
+        "measures": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "coarse_reachable_count": 4,
+          "control_rank": 3,
+          "persistence_horizon": 10
+        },
+        "foa_state": {
+          "witnesses": [
+            "branch_history",
+            "merge_base",
+            "tree"
+          ],
+          "rights": [
+            "bisect",
+            "merge",
+            "read",
+            "revert"
+          ],
+          "reconstruction_paths": [
+            "history_path"
+          ],
+          "certifications": [
+            "signed_history"
+          ],
+          "maintenance_budget": 2
+        }
+      },
+      "system_b": {
+        "system_id": "squashed_snapshot_repo",
+        "measures": {
+          "entropy_bits": 8,
+          "information_bits": 8,
+          "finality_score": 4,
+          "viability_score": 4,
+          "coarse_reachable_count": 4,
+          "control_rank": 3,
+          "persistence_horizon": 10
+        },
+        "foa_state": {
+          "witnesses": [
+            "tree"
+          ],
+          "rights": [
+            "read"
+          ],
+          "reconstruction_paths": [],
+          "certifications": [],
+          "maintenance_budget": 2
+        }
+      },
+      "operations": [
+        "build",
+        "merge",
+        "revert",
+        "bisect"
+      ],
+      "existing_measures_equal": true,
+      "existing_measures_differ": false,
+      "foa_a": [
+        "bisect",
+        "build",
+        "merge",
+        "revert"
+      ],
+      "foa_b": [
+        "build"
+      ],
+      "foa_differs": true,
+      "foa_collapses_into_existing_framework": false,
+      "verdict": "Strong finite separation against coarse metrics."
+    },
+    {
+      "example_id": "B_existing_measures_differ_foa_does_not",
+      "purpose": "Existing measures differ while FOA does not.",
+      "system_a": {
+        "system_id": "compressed_archive",
+        "measures": {
+          "entropy_bits": 4,
+          "information_bits": 8,
+          "finality_score": 3,
+          "viability_score": 4,
+          "coarse_reachable_count": 2,
+          "control_rank": 2,
+          "persistence_horizon": 10
+        },
+        "foa_state": {
+          "witnesses": [
+            "checksum",
+            "record"
+          ],
+          "rights": [
+            "read",
+            "repair"
+          ],
+          "reconstruction_paths": [],
+          "certifications": [],
+          "maintenance_budget": 1
+        }
+      },
+      "system_b": {
+        "system_id": "redundant_archive",
+        "measures": {
+          "entropy_bits": 12,
+          "information_bits": 10,
+          "finality_score": 5,
+          "viability_score": 5,
+          "coarse_reachable_count": 4,
+          "control_rank": 3,
+          "persistence_horizon": 20
+        },
+        "foa_state": {
+          "witnesses": [
+            "checksum",
+            "record"
+          ],
+          "rights": [
+            "read",
+            "repair"
+          ],
+          "reconstruction_paths": [],
+          "certifications": [],
+          "maintenance_budget": 1
+        }
+      },
+      "operations": [
+        "read",
+        "repair"
+      ],
+      "existing_measures_equal": false,
+      "existing_measures_differ": true,
+      "foa_a": [
+        "read",
+        "repair"
+      ],
+      "foa_b": [
+        "read",
+        "repair"
+      ],
+      "foa_differs": false,
+      "foa_collapses_into_existing_framework": false,
+      "verdict": "FOA is not just entropy, information, finality, viability, reachability, or persistence."
+    },
+    {
+      "example_id": "C_foa_collapses_into_enriched_reachability",
+      "purpose": "FOA collapses entirely into enriched reachable action states.",
+      "system_a": {
+        "system_id": "enriched_reachability_state",
+        "measures": {
+          "entropy_bits": 9,
+          "information_bits": 9,
+          "finality_score": 4,
+          "viability_score": 4,
+          "coarse_reachable_count": 5,
+          "control_rank": 4,
+          "persistence_horizon": 12
+        },
+        "foa_state": {
+          "witnesses": [
+            "checkpoint",
+            "fraud_proof",
+            "validator_signatures"
+          ],
+          "rights": [
+            "accept",
+            "challenge",
+            "rollback"
+          ],
+          "reconstruction_paths": [
+            "fraud_path"
+          ],
+          "certifications": [
+            "challenge_window"
+          ],
+          "maintenance_budget": 2
+        }
+      },
+      "system_b": {
+        "system_id": "expired_challenge_state",
+        "measures": {
+          "entropy_bits": 9,
+          "information_bits": 9,
+          "finality_score": 4,
+          "viability_score": 4,
+          "coarse_reachable_count": 5,
+          "control_rank": 4,
+          "persistence_horizon": 12
+        },
+        "foa_state": {
+          "witnesses": [
+            "checkpoint"
+          ],
+          "rights": [
+            "accept"
+          ],
+          "reconstruction_paths": [],
+          "certifications": [],
+          "maintenance_budget": 2
+        }
+      },
+      "operations": [
+        "accept",
+        "challenge",
+        "rollback"
+      ],
+      "existing_measures_equal": true,
+      "existing_measures_differ": false,
+      "foa_a": [
+        "accept",
+        "challenge",
+        "rollback"
+      ],
+      "foa_b": [
+        "accept"
+      ],
+      "foa_differs": true,
+      "foa_collapses_into_existing_framework": true,
+      "verdict": "Absorption control: enriched reachability computes the same operation set as FOA."
+    }
+  ],
+  "strongest_version": "FOA is a prespecified observer/task/horizon-indexed set of future operations available under witness, right, reconstruction, certification, and maintenance constraints.",
+  "weakest_point": "FOA is almost entirely absorbable by enriched reachability, opportunity-set, viability, control, mechanism-design, and provenance frameworks. It becomes new only if those frameworks are kept coarse, which is not a legitimate novelty claim.",
+  "closest_prior_art": "Enriched reachability analysis and opportunity-set economics are the closest formal homes; provenance and mechanism design are the closest homes for certification, authority, and challenge rights.",
+  "best_finite_witness": "Example A: same endpoint repository state and matched coarse metrics, but retained merge-base, branch-history, and signed-history witnesses change FOA from {build} to {build, merge, revert, bisect}.",
+  "strongest_absorption_argument": "Once witnesses, rights, certificates, maintenance budgets, and reconstruction paths are included in the state, FOA is just the feasible action/reachability/opportunity set.",
+  "strongest_separation_argument": "Against coarse metrics, FOA separates cases where entropy, information, finality, viability, persistence, coarse reachability, and control rank all match but future admissible operations differ.",
+  "recommendation": "Preserve and formalize narrowly as a cross-branch audit normal form. Do not promote as a new primitive or independent physical object.",
+  "chain_supported": true,
+  "chain_verdict": "The lost-structure -> reconstruction-debt -> reduced-operation-rights -> reduced-FOA chain is structurally present in ASP, reconstruction debt, maintenance, provenance, and LossKernel, but Q1A only joins after adding a task/certification reading to accessible support.",
+  "claim_ledger_update": "No core claim upgrade. Add T119 as a synthesis audit: multiple branches converge on observer/task-indexed future operation availability as a useful normal form, but the object is absorbed by enriched reachability, opportunity-set, viability/control, provenance, commons governance, and mechanism-design frameworks. Preserve narrowly; do not promote."
+}

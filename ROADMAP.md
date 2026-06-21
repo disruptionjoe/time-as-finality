@@ -40,11 +40,84 @@ Priority sequence:
 6. Draft and refine the neutral math paper:
    [Typed Forgetting and Local-to-Global Obstruction](papers/typed-forgetting-local-global-obstruction-v0.1.md).
 
+Current attention queue from the 2026-06-20 all-persona review, updated after
+T92-T100:
+
+1. **Completed by T99:** the LossKernel separation/collapse test now shows
+   that label-only LossKernel fails the quotient gate. Same source, target,
+   ordinary composite map, endpoint behavior, and naive loss set can still
+   require different attribution verdicts only when source-anchored witness
+   obligations are added. Next blocker: derive those witness obligations
+   canonically rather than declaring them as metadata.
+2. Demote T12 below detector provenance unless a real weak-measurement
+   platform first names an independent branch/provenance/reversal-cost axis
+   before data analysis and shows how it could change the TaF verdict with
+   standard monitored statistics held fixed. T93-T94 keep this demotion active.
+3. **Advanced by T95-T100:** the T87 detector route is now an augmented
+   pre-registered deployment packet with a four-authority-domain lower bound.
+   Native detector timing is insufficient by itself; the open question is
+   whether a realistic lab can freeze and populate the packet before data
+   collection.
+4. Stress H7 with a reversible bounded observer that has no exported garbage,
+   erasure, or hidden sink; if it fails, state the entropy/export dependence.
+5. **Completed by T92:** define T19 proposition-domain restriction maps and
+   test whether the
+   accessible-witness gap has a T57-style closure property:
+   [Accessible Witness Gap Restriction Theorem](open-problems/accessible-witness-gap-restriction-theorem.md).
+   Next blocker: decide whether T19 proposition gaps and T58 order-pair gaps
+   share a common typed gap category.
+6. **Completed by T111-T113:** the GU-facing goal queue now has three bounded
+   v0.1 results. T111 shows D1 components are invariant under pure relabeling
+   maps but covariant under access-boundary changes. T112 gives only a
+   conditional finite/proxy `Y_spin` holonomy result under H3 and a declared
+   spin-lift convention. T113 refutes raw `H0(G)` as a classifier but supports
+   a typed gap subobject for phantom incomparability. Stronger "finality
+   torsion", "finality connection", curvature, gravity, or
+   anomaly-cancellation language remains blocked.
+
+Source review:
+[All-Persona Review Of The Last 24 Hours](explorations/all-persona-last-24h-review-2026-06-20.md).
+
+Agent-driven exploration protocol:
+
+Use the subagent-per-goal method from `CONTRIBUTING.md` when an open-problem
+cluster is broad enough to risk overclaiming or dilution. The current
+high-leverage kickoff queue is now assigned:
+
+1. **Completed by T124:** Constructor-admissibility grounding audit for H7 /
+   arrow-of-time now classifies strict D1 increases by reverse-edge status,
+   resource/export payment, hidden environment, omitted return path, or
+   constructor stipulation. It protects the T18 line from turning conditional
+   constructor structure into a physical arrow claim.
+2. **T125: D1 boundary connection transport** for finality gauge theory:
+   define identity, composition, closed-loop transport, and provenance-bearing
+   access-boundary deltas before any curvature, gravity, or torsion language.
+3. **T126: Finality-colimit causal-set embeddability audit** for S1:
+   pass canonical T54-style finality colimits through finite causal-set
+   diagnostics and explicit non-embeddability modes before any geometry claim.
+4. **T127: Same-neighbor-data LossKernel audit** for the mathematical spine:
+   test whether source-anchored witness obligations separate attribution
+   verdicts after ordinary CSP, provenance, abstract-interpretation, lens, and
+   effect-style data are matched.
+
+T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
+language. T125-T127 remain open, specification-only artifacts and do not update
+claim status until implemented and checked. Existing number conflicts have been
+resolved by keeping T58, T88, and T115 for their canonical indexed artifacts and
+moving the colliding side tracks to T130-T132.
+
+Recent P10/P11 persona-goal runs and the Candidate North Star capability
+projection folder are useful parking material, not sequence changes. They
+should inform T127-style prior-art and effect/provenance gates, but they do not
+replace the T125-T127 implementation queue or promote capability-projection
+language into the claim ledger.
+
 Promotion gate before any public theorem or paper language:
 
 - LossKernel must be stricter than free-text `forgotten_structure` metadata.
-- The composition law must be stated honestly as powerset-union annotation
-  unless a stronger categorical or universal property is proved.
+- The composition law must be stated honestly as a powerset-union
+  monoid-valued grading/annotation, not as a lax functor, unless a stronger
+  categorical or universal property is proved.
 - T69-style H0/H1 claims must state the exact coefficient system, cover
   hypotheses, support presheaf, and allowed loss morphisms.
 - The paper needs either a separation theorem from ordinary CSP plus
@@ -69,6 +142,9 @@ Language guardrails:
   interpretation, or observer metaphysics.
 - Use finite systems, restriction systems, typed morphisms, loss kernels,
   local-to-global obstruction, and auditability.
+- Use [COMPLEXITY-LEDGER.md](COMPLEXITY-LEDGER.md) before making scale,
+  hardness, polynomial-time, or brute-force claims. No current core branch
+  earns NP-hard or CSP-complete language.
 
 ## Phase 1: Make The Claims Precise
 
@@ -565,10 +641,12 @@ obstructions, CSP equivalence, holonic emergence, and categorical structure.
    minimum morphism (fewest preserved dimensions)? The answers determine whether
    D1Cat is a rich or degenerate category.
 
-2. **PO1 as lax functor or fibration.** PO1 admissibility violates the strict
-   Boolean-AND functor law (T41). Investigate whether PO1 can be repaired as a
-   lax functor F: D1Cat → BoolCat where F(f;g) ≥ F(f) ∧ F(g) (lax), or as a
-   fibration (a family of PO1 conditions indexed by endpoint pairs).
+2. **PO1 as endpoint-indexed admissibility data.** PO1 admissibility violates
+   the strict Boolean-AND functor law (T41), and later LossKernel review work
+   blocks the old lax-functor presentation. Treat composed loss as a
+   powerset-union monoid-valued grading/annotation, then ask whether PO1 is
+   better expressed as endpoint-indexed admissibility data or a carefully
+   specified fibration-like family of predicates.
 
 3. **TypedTransportNetworks as internal categories.** A TypedTransportNetwork is
    a directed graph of D1RestrictionSystems connected by D1RestrictionMorphisms.
@@ -1025,3 +1103,45 @@ What remains open:
 
 Results written to:
 `results/finality-reflection-property-v0.1-results.md`
+
+## Phase 22: GU-Facing Goal Queue - Classification Before Geometry
+
+The post-roadmap GU specialist recommendation is to let GU tell the repo's
+story as geometry for bounded observers, while preserving TaF's mathematical
+independence:
+
+```text
+observer-local apparent order:  F(U)
+ambient restricted event order: A(U)
+gap / phantom incomparability:  G(U) = A(U) - F(U)
+```
+
+The narrative is not that GU proves TaF or that TaF validates GU. The narrative
+is that GU supplies established language for sections, pullbacks, holonomy,
+connections, affine spaces, and torsion-like gaps, while TaF must prove its own
+finite classification and invariance results.
+
+**Completed v0.1:** T111, T112, and T113 were implemented as finite audits.
+
+1. [T111 D1 Gauge-Invariance Audit](tests/T111-d1-gauge-invariance-audit.md):
+   pure observer/record/holder/causal relabeling preserves all four D1
+   components; access-boundary refinement/coarsening are covariant boundary
+   data, not gauge; hostile controls are undefined.
+2. [T112 Spin-Observerse Holonomy Step 2](tests/T112-spin-observerse-holonomy-step2.md):
+   the finite/proxy audit passes under H3 and a declared positive-generator
+   spin-lift convention, but the signed closed-angle control gives `+1`, so a
+   continuous bipartite Berry/solid-angle theorem remains open.
+3. [T113 Gap Presheaf Classification](tests/T113-gap-presheaf-classification.md):
+   raw `H0(G)` is too broad, but the endpoint-accessible, canonical,
+   well-formed local-incomparability subobject exactly matches phantom
+   witnesses in the tested finite family.
+
+Open-problem anchor:
+[Gap Presheaf Classification](open-problems/gap-presheaf-classification.md).
+
+Promotion rule after v0.1: no curvature, gravity, anomaly-cancellation, or
+physical torsion language should be promoted from analogy. T111 supplies a
+finite invariance gate, not a connection. T112 strengthens the GU holonomy
+dictionary only conditionally under its load-bearing H3 and spin-lift
+convention. T113 supports a typed TaF-native gap classifier, not raw `H0(G)`
+and not a physical torsion tensor.

@@ -1,0 +1,37 @@
+{
+  "detector_state": {
+    "route": "detector_provenance",
+    "has_real_platform": true,
+    "has_preregistered_raw_log_protocol": true,
+    "survives_current_null_criterion": true,
+    "has_independent_axis_named_before_analysis": true,
+    "has_source_anchored_candidate": true,
+    "isolated_positive_witness_exists": true,
+    "empirical_deployment_present": false,
+    "key_blocker": "no actual T78-style deployment with published event-level raw logs is present"
+  },
+  "weak_measurement_state": {
+    "route": "weak_measurement",
+    "has_real_platform": false,
+    "has_preregistered_raw_log_protocol": false,
+    "survives_current_null_criterion": false,
+    "has_independent_axis_named_before_analysis": false,
+    "has_source_anchored_candidate": false,
+    "isolated_positive_witness_exists": false,
+    "empirical_deployment_present": false,
+    "key_blocker": "no named platform supplies a pre-registered independent branch, provenance, or undo-cost axis distinct from the standard monitored record"
+  },
+  "audit": {
+    "preferred_route": "detector_provenance",
+    "weak_measurement_status": "demoted_below_detector_provenance",
+    "detector_status": "active_but_not_empirically_upgraded",
+    "justification": "Detector provenance retains a source-anchored, pre-registered, raw-log admissibility route that survives current null tests, while weak measurement has no named independent axis on a real platform."
+  },
+  "strongest_claim": "Weak measurement should be demoted below detector provenance in the active Q1 roadmap. The detector route still has a source-anchored, pre-registered raw-log path that survives the current null criteria; the weak-measurement route has no real platform with an independent branch, provenance, or undo-cost axis.",
+  "improved": "T94 converts repeated prose demotion warnings into an explicit route-selection rule. Future runs can stop reopening null weak-measurement platforms unless they first satisfy the independent-axis gate.",
+  "weakened": "This weakens T12 strategically, not just locally. Weak measurement is no longer the default lead experimental route on the basis of promise alone.",
+  "falsification_condition": "T94 fails if a concrete weak-measurement platform names a pre-registered independent branch/provenance/undo-cost observable, not derived from the standard monitored record and not postselected, and that axis changes the TaF verdict while standard monitored statistics stay fixed.",
+  "q1_update": "Keep Q1 partially supported, but demote T12 below detector provenance in the active roadmap until a monitored weak-measurement platform clears T90 and T93 with a real independent axis.",
+  "blocker": "The repo still lacks the single object weak measurement needs most: a named platform with a pre-registered independent axis that survives same-record and postselection collapse.",
+  "recommended_next": "Advance detector provenance toward one real T78-style deployment, or reinstate weak measurement only after naming a concrete independent-axis platform with a raw-log schema."
+}

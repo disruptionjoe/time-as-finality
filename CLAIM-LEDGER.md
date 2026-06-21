@@ -4,22 +4,26 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 
 | ID | Class | Status | Claim | Primary test / work item |
 | --- | --- | --- | --- | --- |
-| [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. T48-T51 strengthen the finite event-finality partial-order program; T53 adds the boundary that valid observer colimits need not determine a unique canonical completion; T54 gives finite descent conditions for canonical AM-valid reconstruction; T55 extends the finite theorem to conflict-enriched FinaliEvents under added conflict conditions; T56 relocates phantom incomparability to the H0-level gap G=A-F; T57 proves the Finality Reflection Property needed for G to be restriction-closed in the T56 model while leaving arrow-direction circularity open. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T48](tests/T48-finali-event-structure.md), [T49](tests/T49-reconstruction-without-background-time.md), [T50](tests/T50-axis-monotonicity-theorem.md), [T51](tests/T51-multi-observer-apparent-finality-colimit.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md) |
+| [C1](claims/C1-experienced-time-as-record-finality.md) | core_claim | weakened | Accessible stabilization frontiers can reconstruct an observer-relative temporal partial order; total and phenomenal readings are unsupported. T48-T51 strengthen the finite event-finality partial-order program; T53 adds the boundary that valid observer colimits need not determine a unique canonical completion; T54 gives finite descent conditions for canonical AM-valid reconstruction; T55 extends the finite theorem to conflict-enriched FinaliEvents under added conflict conditions; T56 relocates phantom incomparability to the H0-level gap G=A-F; T57 proves the Finality Reflection Property needed for G to be restriction-closed in the T56 model while leaving arrow-direction circularity open; T92 shows the T19 first-person/third-person accessible-witness gap has conditional finite restriction closure for typed proposition-domain systems, without upgrading C1 or proving a complexity separation. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T48](tests/T48-finali-event-structure.md), [T49](tests/T49-reconstruction-without-background-time.md), [T50](tests/T50-axis-monotonicity-theorem.md), [T51](tests/T51-multi-observer-apparent-finality-colimit.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md), [T92](tests/T92-accessible-witness-gap-restriction.md) |
 | [D1](claims/D1-physical-finality-definition.md) | definition | weakened | Finality is an observer-indexed comparative schema; its dimensions must be justified per substrate and do not automatically emerge independently. T2 gives a decohered-but-inaccessible measurement witness; T17 adds a bounded theorem check; T20 gives holder redundancy a theorem-transfer role; T21 shows local finality need not imply global assignment; T22 adds a reduction-map audit and executable holder-redundancy comparison; T23 shows D1 observer access and holder redundancy can participate in a typed invariant-transport kernel; T24 keeps D1 as the local value inside a multiscale extension; T25 narrows the minimal generalization to graph-indexed restriction; T26 formalizes `D1RestrictionSystem` with scalar/vector projections, finite gluing, and morphism checks. | [FORMALISM](FORMALISM.md), [T1](tests/T1-record-graph-temporal-reconstruction.md), [T2](tests/T2-quantum-measurement-record-finality.md), [T5](tests/T5-thermodynamic-record-support.md), [T9](tests/T9-emergence-laboratory.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T24](tests/T24-d1-multiscale-observer-field.md), [T25](tests/T25-minimal-d1-generalization.md), [T26](tests/T26-d1-restriction-system.md) |
 | [D1-Field](claims/D1-field-multiscale-observer-finality.md) | formal_extension | partially_supported | Cross-observer finality needs more than scalar or vector D1 when transport, trust graph, gluing constraints, observer-colimit descent data, conflict relations, apparent/event gaps, or restriction-closure obligations matter; T24 introduced field-valued D1, T25 narrowed the smallest earned object to a finite graph-indexed local-to-global D1 restriction system, T26 formalizes that object directly, T53 shows that multi-observer colimits need identity/overlap data for canonical reconstruction, T54 supplies a finite quotient-union descent theorem, T55 adds finite conflict-descent conditions, T56 identifies the apparent/event gap object, and T57 proves its Finality Reflection Property in the T56 model. | [T24](tests/T24-d1-multiscale-observer-field.md), [T25](tests/T25-minimal-d1-generalization.md), [T26](tests/T26-d1-restriction-system.md), [T53](tests/T53-observer-colimit-descent-boundary.md), [T54](tests/T54-finite-finality-descent-theorem.md), [T55](tests/T55-conflict-finalievent-descent.md), [T56](tests/T56-sheaf-cohomology-apparent-finality.md), [T57](tests/T57-finality-reflection-property.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md), [T53 report](TECHNICAL-REPORT-observer-colimit-descent-boundary-v0.1.md), [T54 report](TECHNICAL-REPORT-finite-finality-descent-theorem-v0.1.md), [T55 report](TECHNICAL-REPORT-conflict-finalievent-descent-v0.1.md), [T57 report](TECHNICAL-REPORT-finality-reflection-property-v0.1.md) |
 | [D2](claims/D2-observer-as-record-bearing-system.md) | definition | revised | T1 distinguishes trace-bearer, recorder, reconciler, and conscious-observer capability levels. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [N3](literature/N3-core-formalism-known-neighbors.md) |
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
-| [Q1](claims/Q1-quantum-under-finalization.md) | conjecture | partially_supported | Quantum states may be real but not yet finalized as global classical records in a given observer-environment context; T2 gives a dynamical decohered-but-inaccessible witness; T21 gives finite contextuality and CHSH-score models; T22 gives a first Quantum-Darwinism-style redundancy bridge; T23 shows the T2-to-T22 quantum bridge composes as a typed invariant-preserving reduction for pointer basis and redundancy observables; T62 weakens the measurement claim to an access-boundary discriminator, not new noisy measurement dynamics; T64 preserves that distinction in a Stern-Gerlach detector proxy but weakens Q1 through threshold sensitivity; T66 replaces declared reliabilities with calibrated POVM responses and shows threshold/provenance underdetermination remains; T67 weakens the obvious repair by showing passive detector correlations do not recover the D1 independence partition; T68 conditionally recovers the partition only when intervention-sensitive provenance metadata are available before D1 scoring; T70 shows that this recovery survives moderate single-channel metadata degradation but fails when trusted provenance channels are absent, thresholded, or back-action contaminated; T72 replaces Boolean flags with physical protocol parameters and shows recovery is possible only under declared reliability bounds, with explicit false-independence and false-dependence risk regimes; T74 shows the robust T72 region collapses to a narrow engineered corner under broader stress priors; T75 maps one source-anchored, posterior-modeled HydraHarp/White-Rabbit/signed-archive stack into robust recovery while its unsigned-control variant mostly withholds D1; T76-T79 narrow that route to measured, pre-registered, event-level raw-log provenance, and reject dashboard summaries or post hoc policy selection as Q1 upgrades; T81 weakens the executable detector route further by showing that trust-boundary evidence and pre-registration are load-bearing while other declared measured channels are not yet independently decisive; T83 compresses the detector sequence into a null criterion and weakens the surviving detector-side content to a provenance-admissibility filter over already formed records unless a pre-registered raw-log protocol beats passive-statistics, dashboard, and post hoc partition alternatives; T85 narrows the executable core again by showing that spoof/unique-tag evidence can still demote the signed fixture on its own, while perturbation and DAG channels are not yet independently decisive once trust and pre-registration are fixed; T86 then shows those channels survive only in a narrower hostile family where timing and authenticated tags are deliberately ambiguous, and only clean perturbation-only or signed-DAG-only raw-log controls recover while contaminated controls withhold. | [T2](tests/T2-quantum-measurement-record-finality.md), [T6](tests/T6-snowball-record-finality.md), [T21](tests/T21-bell-contextuality-finality.md), [T22](tests/T22-d1-physical-reduction-map.md), [T23](tests/T23-invariant-preserving-transformations.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T64](tests/T64-stern-gerlach-access-window.md), [T66](tests/T66-povm-detector-calibration-obstruction.md), [T67](tests/T67-povm-correlation-provenance-obstruction.md), [T68](tests/T68-intervention-sensitive-detector-provenance.md), [T70](tests/T70-detector-provenance-robustness.md), [T72](tests/T72-physical-provenance-protocol.md), [T74](tests/T74-provenance-protocol-monte-carlo.md), [T75](tests/T75-real-detector-stack-provenance.md), [T76](tests/T76-measured-detector-provenance-posterior.md), [T77](tests/T77-measured-detector-policy-sensitivity.md), [T78](tests/T78-preregistered-detector-deployment-protocol.md), [T79](tests/T79-dashboard-summary-nonidentifiability.md), [T81](tests/T81-measured-schema-ablation.md), [T83](tests/T83-q1-detector-null-criterion.md), [T85](tests/T85-measured-detector-channel-dominance.md), [T86](tests/T86-ambiguous-tag-channel-independence.md) |
+| [Q1](claims/Q1-quantum-under-finalization.md) | roadmap_umbrella | demoted | Q1 is no longer a single paper-facing supported quantum-physics conjecture. T101 split it into four branch claims; T104 absorbed the current Q1A fixed-data witness into provenance-aware Quantum Darwinism. T140 now makes the frontier explicit: no current child branch has an active internal upgrade route; Q1B is the only non-null experimental path, and it is externally blocked pending a signed pre-event manifest and real event-level packet. Use Q1 only as a navigation label until one child branch clears its own reinstatement gate. | [Q1A](claims/Q1A-access-boundary-record-accounting.md), [Q1B](claims/Q1B-detector-provenance-admissibility.md), [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md), [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md), [T101](tests/T101-q1-branch-adjudication.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md), [T140](tests/T140-q1-frontier-escape-matrix.md) |
+| [Q1A](claims/Q1A-access-boundary-record-accounting.md) | quantum_subclaim | bookkeeping_only | Access-boundary and provenance-aware redundancy accounting survives only as a discipline over already formed records: raw fragment count should not be treated as observer-relative classical finality until access and independence are physically audited. The current fixed-data witness is absorbed by provenance-aware Quantum Darwinism, reduced to audited accessible-class counting, and carries no live branch-support or reversal-cost escape hatch in the present family. | [T2](tests/T2-quantum-measurement-record-finality.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T102](tests/T102-q1a-neighbor-comparison.md), [T103](tests/T103-q1a-fixed-data-witness.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md), [T105](tests/T105-q1a-accessible-class-sufficiency.md), [T109](tests/T109-q1a-branch-support-collapse.md), [T118](tests/T118-q1a-reversal-cost-collapse.md) |
+| [Q1B](claims/Q1B-detector-provenance-admissibility.md) | quantum_subclaim | externally_blocked | Detector-side Q1 is an admissibility protocol, not empirical support: it requires a pre-registered event-level raw-log packet, hostile controls, immutable exports, and at least four non-conflicting authority domains before D1 scoring. T133 sharpens the packet burden into a provisional-admission core plus a stricter claim-review extension; T134 shows that T97 raw-log rows are necessary but not sufficient without the T121/T133 wrapper and predeclared tier. T136 makes the freeze object explicit: a pre-event manifest must bind T97 table hashes, T121/T133 wrapper commitments, T100 authority separation, and the claimed tier before the first detector event. T138 turns that into a workflow-fit gate: common single-lab/post hoc and public-archive repairs with merged authorities are null; only a federated pre-data scaffold remains non-null, still not evidence without real rows. | [T66](tests/T66-povm-detector-calibration-obstruction.md), [T78](tests/T78-preregistered-detector-deployment-protocol.md), [T83](tests/T83-q1-detector-null-criterion.md), [T87](tests/T87-real-run-raw-log-contract.md), [T95](tests/T95-detector-stack-export-map.md), [T97](tests/T97-detector-dry-run-packet-skeleton.md), [T100](tests/T100-detector-authority-domain-bound.md), [T121](tests/T121-real-detector-packet-schema-audit.md), [T123](tests/T123-same-payload-packet-foa-witness.md), [T133](tests/T133-detector-packet-tiered-minimality.md), [T134](tests/T134-detector-dry-run-tier-gate.md), [T136](tests/T136-detector-preregistration-manifest.md), [T138](tests/T138-detector-manifest-workflow-fit.md) |
+| [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md) | quantum_subclaim | dormant | Weak measurement is reinstatement-only until a concrete platform names a calibrated, pre-registered branch, provenance, or undo-cost axis that is independent of the monitored record and changes the TaF verdict while standard statistics are fixed. T132 makes the gate executable: same-record re-thresholding, post hoc labels, constant branch support, and monotone undo proxies are all null. T130 narrows the obvious second-meter rescue: screened calorimetric and thermal-detector platforms provide alternate readout chains, not a simultaneous dual-meter witness with fixed standard monitored statistics. T135 tightens the literature checkpoint: recent thermal-detector qubit readout, nanocalorimetric trajectories, and calorimeter-assisted homodyne still change the readout chain or measurement formalism rather than supplying a monitored-qubit simultaneous dual-meter witness. T137 sharpens the admissibility gate again: even a simultaneous second meter is null when its event-level statistics are only a downstream transform of the ordinary monitored record. T139 closes the coarse-summary loophole: fixed ordinary monitored statistics must mean the full pre-registered event-level standard record, not a coarsened summary that an auxiliary meter merely refines. | [T132](tests/T132-weak-measurement-nonnull-criterion.md), [T90](tests/T90-weak-measurement-reparameterization-obstruction.md), [T91](tests/T91-weak-measurement-platform-audit.md), [T93](tests/T93-weak-measurement-undo-cost-independence.md), [T94](tests/T94-weak-measurement-priority-demotion.md), [T130](tests/T130-weak-measurement-dual-meter-screen.md), [T135](tests/T135-weak-measurement-second-meter-checkpoint.md), [T137](tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md), [T139](tests/T139-weak-measurement-full-record-sufficiency-boundary.md) |
+| [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md) | quantum_subclaim | guardrail_only | Contextuality and no-signalling constrain Q1 language: local records may be context-valid without a global noncontextual assignment, but this is not a new Bell theorem, hidden-variable repair, or operational prediction. | [T21](tests/T21-bell-contextuality-finality.md), [T64](tests/T64-stern-gerlach-access-window.md) |
 | [R1](claims/R1-relativity-no-global-commit-order.md) | conjecture | open | Relativity is naturally compatible with no universal global finality order; T42 separates local accumulation from record-access lag, T43 identifies finite local mechanisms, T44 shows demand/coupling probes can distinguish those mechanisms without deriving proper time, and T46 distinguishes open causal access gradients from closed synchronization boundaries. | [T3](tests/T3-spacelike-events-no-global-commit-order.md), [T7](tests/T7-overlapping-causal-domains.md), [T42](tests/T42-local-persistence-reconciliation-split.md), [T43](tests/T43-local-persistence-mechanisms.md), [T44](tests/T44-local-mechanism-identifiability.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [B1](claims/B1-black-holes-finality-boundaries.md) | potential_byproduct | open | Black holes are stress tests for finality-domain boundaries and causal record accessibility. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
 | [S1](claims/S1-spacetime-consensus-envelope.md) | speculative_extension | open_formal_target | Spacetime may be the compatibility structure produced by aggregating observer-local finality domains; T16 gives a finite gluing target but not a spacetime derivation. | [Rendered interface](open-problems/rendered-interface-assumptions.md), [Spacetime colimit](open-problems/spacetime-as-finality-colimit.md), [T7](tests/T7-overlapping-causal-domains.md), [T16](tests/T16-spacetime-aggregation.md) |
-| [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction only under an added D1-monotone admissibility, persistence, coarse-graining, or constructor-impossibility condition. T18 proves the conditional constructor theorem; T80 shows raw reversible local dynamics can violate D1 monotonicity, so the rule is not physically automatic. | [T18](tests/T18-finality-direction-theorem.md), [T80](tests/T80-reversible-finality-nonmonotonicity.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
+| [H7](claims/H7-finality-induced-direction.md) | conjecture | partially_supported | Finality structure can induce an observer-relative temporal direction only under an added D1-monotone admissibility, persistence, coarse-graining, constructor-impossibility, or open-system resource condition. T18 proves the conditional constructor theorem; T80 shows raw reversible local dynamics can violate D1 monotonicity; T82/T84 show persistent or cyclic memory restores monotone accounting only by spending ledger capacity, exporting history, or erasing; T106 shows bounded reversible compression still fails once the sink and closed return path are included; T110 proves the finite closed-reversible obstruction that a scalar nondecreasing score is constant on each permutation orbit; T116 finds no independent open Markov arrow beyond path irreversibility, exported history, or fresh blank capacity in the tested fixtures; T122 proves the finite stationary Markov obstruction that strict scalar expected-finality drift cannot occur on stationary support without leaving stationarity/resource assumptions; T128 identifies explicit finite resource drawdown as the smallest non-stipulative living model while reducing maintenance/open-boundary cases to resource/sink/export accounting and constructor restriction to stipulation; T124 adds a reverse-edge ledger showing the current stack permits only constructor-only or resource-accounting readings, not an unqualified physical arrow. | [T18](tests/T18-finality-direction-theorem.md), [T80](tests/T80-reversible-finality-nonmonotonicity.md), [T82](tests/T82-persistent-reconciler-cost-boundary.md), [T84](tests/T84-cyclic-reconciler-entropy-export.md), [T106](tests/T106-bounded-sink-reversible-compression.md), [T110](tests/T110-finite-permutation-monotone-obstruction.md), [T116](tests/T116-open-markov-record-entropy.md), [T122](tests/T122-stationary-markov-monotone-obstruction.md), [T124](tests/T124-constructor-admissibility-grounding-audit.md), [T128](tests/T128-minimal-living-arrow.md), [Arrow theorem](open-problems/arrow-of-time-as-constructor-theorem.md) |
 | [IPT](claims/IPT-invariant-preserving-transformations.md) | formal_kernel | proto_independent | Invariant-preserving transformations may be the substrate-neutral mathematical transport structure connecting observer changes, theorem transfer, and record-reduction maps; T23 gives a finite typed kernel with positive cases, composition, and obstruction; T26 supplies D1 restriction morphisms as a target object, but no full IPT representation theorem yet. | [T23](tests/T23-invariant-preserving-transformations.md), [T26](tests/T26-d1-restriction-system.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md), [T26 report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md) |
-| [TF1](claims/TF1-typed-forgetting-attribution.md) | formal_target | open_formal_target | Typed Forgetting Attribution: a projection-created obstruction is admissibly attributable only when the projection carries a typed loss object naming structure that resolves the obstruction in the source. This is the proposed hinge lemma for the LossKernel phase and is not yet supported as a theorem. | [Loss Kernel Formalization](open-problems/loss-kernel-formalization.md), [T34](tests/T34-po1-chained-projection.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [T40](tests/T40-holarchy-lab.md), [T41](tests/T41-typed-transport-category.md) |
+| [TF1](claims/TF1-typed-forgetting-attribution.md) | formal_target | open_formal_target | Typed Forgetting Attribution: a projection-created obstruction is admissibly attributable only when the projection carries a typed loss object naming structure that resolves the obstruction in the source. T99 weakens label-only LossKernel: same endpoints, ordinary composite map, endpoint behavior, and naive lost-label set can still require opposite attribution verdicts unless LossKernel carries source-anchored witness obligations. T107 adds candidate semantics: loss relocates when target judgments remain source-lift dependent, while invariant fibers show absorbed loss. T108 finds no strict separation from why-not provenance, abstract interpretation, lenses, CSP explanation, or rich effect annotations. This is a conditional salvage path, not theorem-level support. | [Loss Kernel Formalization](open-problems/loss-kernel-formalization.md), [T34](tests/T34-po1-chained-projection.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [T40](tests/T40-holarchy-lab.md), [T41](tests/T41-typed-transport-category.md), [T99](tests/T99-losskernel-quotient-separation.md), [T107](tests/T107-loss-relocation.md), [T108](tests/T108-loss-relocation-prior-art.md) |
 | [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T31 supplies the admissibility checklist. T32 compresses it: AC4 derives from AC6, and the remaining non-intrinsic guard is AC5, the named forgotten-structure condition. T33 derives conditions from IPT+RMT frameworks; best hypothesis H3 (both required); AC5-naming remains a methodological transparency condition recommended as Principle P5. T34 adds chained projection behavior. T35 shows bounded finite generative value through a structural discovery engine. T36 (compression-finality crosswalk) confirms compressibility is a downstream observable of stable records, not a D1 dimension. T37 shows PO1 admissibility can be path-dependent in a TypedTransportNetwork: AC5 is the only condition that varies by path when paths accumulate different forgotten_structure. T39 establishes the CSP equivalence: the gluing obstruction is exactly a parity-conflicting binary CSP; PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. | [T27](tests/T27-class-relative-bridge-audit.md), [T28](tests/T28-cap-theorem-bridge.md), [T29](tests/T29-projection-obstruction-schema.md), [T30](tests/T30-cross-domain-projection-obstruction-validation.md), [T31](tests/T31-po1-admissibility-conditions.md), [T32](tests/T32-admissibility-derivation.md), [T33](tests/T33-po1-foundational-derivation.md), [T34](tests/T34-po1-chained-projection.md), [T35](tests/T35-projection-obstruction-discovery-engine.md), [T36](tests/T36-compression-finality-crosswalk.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md), [T31 report](TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md), [T32 report](TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md), [T33 report](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md), [T34 report](TECHNICAL-REPORT-po1-chained-projection-v0.1.md), [T36 report](TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md) |
 | CSP-PO1 | formal_theorem | proto_independent | PO1-as-CSP: the D1RestrictionSystem patch language is a binary {-1,1} CSP with same/different constraints. The gluing obstruction is exactly a parity-conflicting binary CSP (Theorem 3: D1-CSP Equivalence). Arc consistency is trivially true for this constraint language and adds no information (Theorem 1). PO1 adds three layers not present in standard CSP: typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7). These have no CSP analogues. Verdict H_B: the obstruction mechanism is known (signed-graph 2-colorability); the typed classification framework is the genuine new contribution. T59 adds a continuous-boundary caution: signed parity survives a Mobius orientation witness only after transition-aware Z2 reduction, while coefficient-blind scalar encoding produces a false global section. | [T39](tests/T39-csp-satisfiability-reframing.md), [T59](tests/T59-finite-to-infinite-boundary-audit.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md), [T59 report](TECHNICAL-REPORT-finite-to-infinite-boundary-audit-v0.1.md) |
 | HEF | formal_theorem | proto_independent | Holonic Emergence and Cross-Level AC5: in a HolonicNetwork (directed graph of D1RestrictionSystems with cross-level patch constraints), holonic obstruction can arise from cross-level constraints even when every micro node is individually satisfiable (Holonic Emergence Theorem). Cross-level AC5 is necessary for holonic PO1: a source-satisfiable + target-obstructed holonic pair is not a holonic PO1 instance without named forgotten cross-level structure. H_B best supported: holonic finality is genuinely independent of micro finality. | [T40](tests/T40-holarchy-lab.md), [T40 report](TECHNICAL-REPORT-holarchy-lab-v0.1.md) |
-| TTN | formal_primitive | proto_independent | TypedTransportNetwork: a finite directed graph of NetworkLayer objects (D1RestrictionSystems) connected by NetworkTransport edges (typed morphisms with explicit forgotten/preserved structure). Path-dependent admissibility is a theorem: two simple paths between the same source and target layer can yield different PO1 verdicts when they accumulate different forgotten_structure. AC1, AC2, AC3, AC6, AC7 are endpoint-determined; only AC5 varies by path. Composition law (associativity) remains open. | [T37](tests/T37-typed-transport-network.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md) |
+| TTN | formal_primitive | proto_independent | TypedTransportNetwork: a finite directed graph of NetworkLayer objects (D1RestrictionSystems) connected by NetworkTransport edges (typed morphisms with explicit forgotten/preserved structure). Path-dependent admissibility is a finite-family result: two simple paths between the same source and target layer can yield different PO1 verdicts when they accumulate different forgotten_structure. AC1, AC2, AC3, AC6, AC7 are endpoint-determined; only AC5 varies by path. D1RestrictionMorphism category laws are resolved by T41; T73 gives only a powerset-union monoid-valued LossKernel annotation law, with quotient/prior-art separation still open. | [T37](tests/T37-typed-transport-network.md), [T41](tests/T41-typed-transport-category.md), [T73](tests/T73-losskernel-composition.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md) |
 | MMT | formal_primitive | proto_independent | Minimal Multiscale Transport: H1+ (TypedTransportNetwork + CompressionRecord + EmergenceRecord) is the smallest currently justified formalism for ten core transport questions. CompressionRecord tracks many-to-one site-count reduction, compression ratio, and retained aggregate invariants. EmergenceRecord tracks global structure at the target not forced at the source — orthogonal to PO1 (obstruction-creation vs. structure-creation). H2 (graph-of-graphs) and H3 (bundle/presheaf/category) not yet required. | [T38](tests/T38-minimal-multiscale-transport.md), [T38 report](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md) |
 | [H-Domain](explorations/heliosphere-as-finality-domain.md) | conjecture | open | The heliosphere is a D1 finality domain: the heliopause is a substrate-exchange boundary where record-formation physics changes across D1's four dimensions in ways not reducible to particle density. | [T7](tests/T7-overlapping-causal-domains.md), exploration |
 | [H-Soft-Boundary](explorations/heliosphere-as-finality-domain.md) | potential_byproduct | open | Finality-domain boundaries fall on a continuous permeability spectrum: the heliopause (bidirectional, character-changing) and the event horizon (one-way, capped) are two points on it. Extends B1 with a boundary-permeability parameter. | [T4](tests/T4-black-hole-causal-access-boundary.md), [T7](tests/T7-overlapping-causal-domains.md) |
@@ -214,6 +218,19 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 
 ### 2026-06-20 - POVM Correlation Provenance Obstruction (T67)
 
+### 2026-06-20 - Weak-Measurement Postprocessed Second-Meter Obstruction (T137)
+
+- Q1C remains `dormant`: T137 sharpens the weak-measurement gate again.
+- Positive content: the repo now has an executable screening-off test for
+  simultaneous second meters. Exact-copy and noisy-downstream meters are null
+  once the ordinary monitored record is fixed.
+- Boundary: physically distinct auxiliary hardware is not enough. If the second
+  meter is conditionally determined by the ordinary monitored record, it cannot
+  furnish the fixed-standard-statistics TaF split Q1C requires.
+- Falsification condition: if a downstream kernel of the ordinary monitored
+  record still yields a pre-registered fixed-record verdict split, T137 fails
+  and Q1C should be revisited.
+
 - Q1 remains `partially_supported`, but T67 weakens the next obvious repair:
   passive detector correlation does not recover the D1 independence partition.
 - Positive content: T67 clarifies the operational burden. Similarity of records
@@ -359,7 +376,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   "acyclic nerve implies H¹ = 0 for any presheaf" is too broad; T69 is now
   audit-blocked against that generalization.
 - H¹ → H⁰ is possible: sub-cover restriction can remove cycle from nerve,
-  destroying the H¹ obstruction. T58 distributed contextuality (4-cycle cover →
+  destroying the H¹ obstruction. T131 distributed contextuality (4-cycle cover →
   Alice's 2-context sub-cover) is the canonical TaF example.
 - Section-space projection that makes formerly-distinct patches share no overlap
   variables disconnects the nerve (also destroys H¹). Second mechanism identified
@@ -373,6 +390,12 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   hierarchy (H⁰/H¹ cover structure investigation). 4 witnesses, 7/7 tests pass.
 - Falsification condition: a topology-preserving or sub-cover loss morphism found
   that converts an acyclic cover to a cyclic one.
+- Blocking review source:
+  [external-review-typed-loss-kernels-v0.1](papers/reviews/external-review-typed-loss-kernels-v0.1.md)
+  says the broad cohomology and failure-type monotonicity claims are false or
+  under-specified as general theorems. Minimum required resolution: restate T69
+  with exact coefficient system, support presheaf, cover hypotheses, and allowed
+  loss morphisms, then add same-cover support-shrinkage counterexample checks.
 
 ### 2026-06-20 - Reversible Finality Nonmonotonicity (T80)
 
@@ -527,7 +550,8 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   projection-created obstruction is admissibly attributable only when the
   projection carries a typed loss object naming structure that resolves the
   obstruction in the source.
-- LossKernel promoted as the next formal accounting object:
+- LossKernel selected as the next candidate formal accounting object, not
+  promoted beyond the gate:
   `LossKernel(f)=typed structure forgotten by morphism f`.
 - Guardrail: do not claim TaF discovered gluing obstruction. The candidate
   original contribution is a finite typed attribution calculus around known
@@ -536,9 +560,10 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
   canonical semantics, prior-art separation, or an impossibility theorem showing
   why endpoint-only or ordinary compositional attribution cannot recover the
   intended judgments.
-- Immediate target: re-run T34/T37/T39/T40 through first-class loss kernels,
-  then retrofit T19/T64/T66/T67 as access/provenance corollaries if the object
-  survives.
+- Immediate target: re-run T34/T37/T39/T40 through candidate
+  witness-carrying loss annotations, then retrofit T19/T64/T66/T67 as
+  access/provenance corollaries if the object survives the prior-art and
+  quotient gates.
 
 ### 2026-06-17 - Invariant-Preserving Transformations Kernel
 
@@ -793,3 +818,691 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 inaccessible from any bounded causal region in the cover.`
 T19 (temporal obstruction) and T65 (spatial obstruction) both support the
 forward direction. The converse is an open conjecture.
+
+### 2026-06-20 - Weak-Measurement Platform Audit (T91)
+
+- Q1 remains `partially_supported`, but T12 narrows again: the currently named
+  superconducting homodyne, uncollapse, and quantum-jump-reversal platform
+  families do not instantiate the independent D1 axis required by T90.
+- Homodyne and quantum-jump routes fail as `null_same_record_derivation`: the
+  proposed branch/reversal witness is reconstructed from the same monitoring
+  stream already used by standard quantum trajectory theory.
+- The uncollapse route fails as `null_postselected_axis`: reversal success is a
+  success-conditioned recovery event, not an independently metered reversal-cost
+  observable fixed before analysis.
+- Claim impact: standard superconducting weak-measurement platforms should stop
+  being treated as near-ready T12 discriminators. They validate trajectory
+  control and feedback, not an independent TaF branch-support or reversal-cost
+  axis.
+- Open blocker: a viable T12 platform still needs a pre-registered branch,
+  provenance, or reversal-cost observable that is operationally distinct from
+  the monitored record itself and does not rely on postselection.
+- Suggested next move: search for duplicated-record provenance during
+  monitoring, or a hardware-defined undo-cost meter fixed before analysis.
+
+### 2026-06-20 - Accessible-Witness Gap Restriction (T92)
+
+- C1 remains `weakened`; T92 sharpens the T19 branch without upgrading it.
+- The T19 first-person/third-person finality gap has a finite degree-0
+  accessible-witness form with restriction closure for typed proposition-domain
+  systems under ambient restriction, audit monotonicity, and stable proposition
+  typing.
+- Boundaries: this is not a consciousness theorem, not a complexity-class
+  placement for `FIRST-PERSON-FINALITY`, and not an identification of T19 unary
+  proposition gaps with T58 order-pair phantom gaps.
+- Open next step: decide whether T19 proposition gaps and T58 order-pair gaps
+  share a common typed gap category or only the same H0 failure shape.
+
+### 2026-06-20 - Weak-Measurement Undo-Cost Independence (T93)
+
+- Q1 remains `partially_supported`, but T12 is blocked more sharply. A
+  hardware undo-cost route is non-null only if a calibrated, pre-registered
+  meter changes the TaF verdict while coherence, redundancy, access, and
+  reversal-success statistics are fixed.
+- Rejected false positives: control-pulse energy or schedule bookkeeping is
+  `null_proxy_cost`; success-conditioned reversal is `null_postselected_cost`;
+  and an independent meter that varies without changing the verdict is
+  `independent_but_not_decisive`.
+- Claim impact: undo or feedback experiments are not TaF discriminators merely
+  because a reversal is attempted or sometimes succeeds. The repo currently has
+  no real platform supplying the calibrated independent undo-cost meter.
+- Suggested next move: name a hardware meter plus raw-log schema satisfying T93
+  or demote weak measurement below detector provenance in the active roadmap.
+
+### 2026-06-20 - Weak-Measurement Priority Demotion (T94)
+
+- Q1 remains `partially_supported`, but the active frontier changes: T12 is now
+  demoted below detector provenance until a real monitored platform names a
+  pre-registered independent branch/provenance/undo-cost axis.
+- Reason for demotion: detector provenance still retains a source-anchored,
+  pre-registered raw-log route that survives the current null criteria, while
+  weak measurement has no real platform clearing the T90/T91/T93
+  independent-axis gate.
+- Claim impact: weak measurement is no longer the default lead experimental
+  discriminator on promise alone. It becomes a reinstatement-only route.
+- Reinstatement condition: a concrete platform must supply an independent axis
+  that is not reconstructed from the standard monitoring stream, does not rely
+  on postselection, and changes the TaF verdict while standard monitored
+  statistics stay fixed.
+- Suggested next move: either push detector provenance toward one T78/T87-style
+  deployment plan, or name a new weak-measurement platform that clears the
+  reinstatement gate before any further modeling.
+
+### 2026-06-20 - Detector Stack Export Map (T95)
+
+- Q1 remains `partially_supported`, with detector provenance narrowed again.
+- T95 maps the T75 HydraHarp/White Rabbit/signed-archive route directly onto
+  the T87 raw-log tables. Native timing export and a signed archive without the
+  control packet are both inadmissible for detector-side Q1 upgrade.
+- The only positive case is
+  `admissible_as_preregistered_deployment_plan_only`: an augmented packet with
+  pre-registration, copied/independent controls, tag ambiguity challenges,
+  perturbation trials, signed ancestry edges, trust audits, demotion decisions,
+  stable event joins, and immutable exports.
+- Claim impact: the detector route is still executable, but most required
+  structure is provenance/control middleware rather than native detector
+  physics. Passing T95 is not empirical support and does not compute D1.
+- Open blocker: no real event rows exist for the augmented map. The next
+  non-null move is a dry-run packet that passes T87 without adding fields after
+  data collection, then locked T76/T86 population.
+
+### 2026-06-20 - Detector Feasibility Checklist (T96)
+
+- Q1 remains `partially_supported`, but the detector branch narrows again:
+  the surviving route is best read as a governance-heavy dry-run admissibility
+  program rather than a native detector-physics discriminator.
+- Native burden split: only `event_time_tag_stream` is native to the named
+  time-tagging hardware.
+- Middleware burden: `signature_verification_log` and
+  `ancestry_dag_edge_export` require provenance/logging infrastructure beyond
+  timing export.
+- Control/governance burden: copied/independent control manifests, tag
+  ambiguity challenges, perturbation trials, trust audits, preregistration
+  hashes, and pre-data demotion rules are all load-bearing before the first
+  event.
+- Claim impact: detector-side Q1 should not be advertised as a detector
+  measurement route unless a lab can freeze that non-native packet before data
+  collection. The open burden is mostly record governance, not timing
+  hardware.
+- Demotion condition: if a realistic lab workflow cannot populate the locked
+  dry-run packet pre-data, demote the detector branch below the current Q1
+  frontier.
+
+### 2026-06-20 - Detector Operator-Handoff Audit (T98)
+
+- Q1 remains `partially_supported`, but the detector branch narrows
+  operationally again: the T97 packet is admissible only if the run names at
+  least four non-conflicting authority domains.
+- Minimal surviving separation: governance may merge with instrument
+  operation, but control design, archive custody, and trust auditing must stay
+  independent, and the trust auditor must not certify their own packet
+  components.
+- Common small-lab merges fail: two- and three-person profiles collapse into
+  self-audit or governance/control/archive role-merging before any detector
+  evidence exists.
+- Claim impact: a schema-complete packet is still not enough. Detector-side Q1
+  now requires organizational independence in addition to pre-data packet
+  locking.
+- Demotion condition: if no realistic lab can satisfy the handoff separation
+  audit, demote detector provenance below the active Q1 frontier without more
+  synthetic detector modeling.
+
+### 2026-06-20 - LossKernel Quotient Separation (T99)
+
+- TF1 remains `open_formal_target`; T99 does not promote LossKernel to a new
+  mathematical invariant.
+- Label-only LossKernel fails the quotient gate: two paths can share source,
+  target, ordinary composite map, endpoint behavior, and naive lost-label set
+  while one lost item is an obstruction-resolving source witness and the other
+  is decorative metadata.
+- A typed witness kernel separates the fixture only by adding source-anchored
+  witness obligations.
+- Claim impact: the T73 union law is useful bookkeeping, but insufficient for
+  theorem-level TF1. The next blocker is canonical derivation of the witness
+  obligation from finite source/target structures and the morphism, rather
+  than declaring it as metadata.
+
+### 2026-06-20 - Q1 Branch Adjudication (T101)
+
+- Q1 remains `partially_supported` only as an umbrella pointer. T101 weakens
+  paper-facing Q1 language by rejecting a single partially supported
+  quantum-physics claim across all current branches.
+- Required split: Q1A access-boundary record accounting, Q1B detector
+  provenance admissibility, Q1C dormant weak-measurement discriminator gate,
+  and Q1D contextuality/no-signalling guardrail.
+- Claim impact: no current Q1 branch earns new measurement dynamics, collapse
+  content, Born-rule content, or empirical quantum support. Detector provenance
+  remains externally blocked by real raw-log and authority-domain requirements;
+  weak measurement remains reinstatement-only; contextuality is guardrail
+  discipline unless a nonredundant theorem target is named.
+- Open blocker: decide whether to create separate claim files for Q1A-Q1D or
+  demote Q1 to a roadmap umbrella before paper-facing summaries use the label.
+
+### 2026-06-20 - Q1A Neighbor Comparison Gate (T102)
+
+- Q1 remains `partially_supported` only as an umbrella pointer, and the
+  surviving Q1A branch narrows again: it should currently be stated only as
+  observer-indexed access-boundary and independence accounting over already
+  formed records.
+- Neighbor verdict: decoherence and Quantum Darwinism remain only partial
+  deltas; comparisons against consistent histories, RQM, QBism, and
+  many-worlds are not yet earned as paper-facing distinctions.
+- Fixed-data gate: do not present Q1A as distinct unless one witness keeps
+  decoherence/pointer-basis evidence, fragment-information summaries, and
+  ordinary branch/history availability fixed while changing the D1 verdict only
+  through access-cut or independence-structure changes.
+- Claim impact: the current Q1A branch is bookkeeping, not yet a distinct
+  measurement theory or interpretation.
+- Open blocker: the repo still lacks one decisive fixed-data witness of that
+  form.
+
+### 2026-06-20 - Q1A Fixed-Data Witness (T103)
+
+- T103 supplies the missing internal fixed-data witness: the same
+  decoherence/pointer-basis evidence, fragment-information summaries,
+  accessible raw redundancy, and ordinary branch/history availability can
+  yield `finalized` versus `not_finalized` D1 verdicts when only the record
+  independence partition changes.
+- Controls reject cases that change coherence, raw redundancy, or
+  branch/history availability; a hidden independence partition withholds D1
+  rather than inferring finality from raw redundancy.
+- Claim impact: Q1A gains conditional record-accounting support, not new
+  measurement dynamics, collapse content, Born-rule content, or empirical
+  quantum support.
+- Open blocker: derive the independence partition from physically auditable
+  detector or environment-fragment provenance and test whether
+  provenance-aware Quantum Darwinism already absorbs the same verdict.
+
+### 2026-06-20 - Q1A Provenance-Aware Darwinism Absorption (T104)
+
+- T104 absorbs the T103 fixed-data witness once Quantum Darwinism is allowed to
+  compute redundancy over the same audited provenance-aware fragment partition.
+- Q1A no longer earns an external distinction from provenance-aware Quantum
+  Darwinism in the tested family.
+- Surviving content: a bookkeeping/admissibility discipline over already formed
+  records. Raw fragment redundancy should not be treated as observer-relative
+  finality until access and independence are physically audited.
+- Falsification condition for future Q1A novelty: produce a fixed-data witness
+  where D1 still diverges after the provenance-aware partition is shared, or
+  derive that partition from a physical rule unavailable to neighboring
+  frameworks.
+
+### 2026-06-20 - Q1 Split Implementation
+
+- Q1 is now demoted from a single `partially_supported` conjecture to a
+  `roadmap_umbrella` in the claim ledger and claim file.
+- Separate claim files now hold the branch-specific standards: Q1A
+  access-boundary record accounting, Q1B detector provenance admissibility, Q1C
+  weak-measurement discriminator gate, and Q1D contextuality/no-signalling
+  guardrail.
+- Claim impact: no Q1 branch currently earns new measurement dynamics,
+  collapse content, Born-rule content, empirical quantum support, or a distinct
+  measurement interpretation.
+- Next blocker: either find a non-absorbed fixed-data Q1A witness after shared
+  provenance partitioning, or obtain a real Q1B raw-log deployment satisfying
+  the T87/T97/T100 gates.
+
+### 2026-06-20 - Q1A Accessible-Class Sufficiency (T105)
+
+- Q1A remains `bookkeeping_only`, and T105 narrows the surviving fixed-data
+  branch again.
+- Reduction result: in the current fixed-data witness family, the D1 verdict is
+  completely determined by the audited accessible provenance-class count plus
+  partition visibility. Once the ordinary quantum-side summaries are fixed,
+  partition geometry, fragment labels, and raw accessible redundancy add no
+  further verdict content.
+- Raw redundancy is not sufficient: cases with the same raw accessible
+  redundancy `3` split between `finalized` and `not_finalized` depending on
+  whether the audited provenance support is `3` or `2`.
+- Claim impact: Q1A is narrower than generic access-boundary measurement
+  language suggests. In the tested regime it behaves as a thresholded
+  record-accounting classifier, not a distinct measurement mechanism.
+- Open blocker: produce a fixed-data witness where branch support,
+  reversal-cost, or another physically justified D1 dimension survives after
+  matching accessible provenance support, or demote Q1A again in paper-facing
+  summaries.
+- Artifact: [T105 technical report](TECHNICAL-REPORT-q1a-accessible-class-sufficiency-v0.1.md).
+
+### 2026-06-20 - Bounded-Sink Reversible Compression (T106)
+
+- H7 remains `partially_supported` only as a conditional constructor theorem.
+- T106 tests the T84 loophole that reversible compression plus a bounded sink
+  might preserve a nontrivial finality monotone after the sink is included in
+  the state space.
+- Result: orderless compression of overwritten slots is non-injective; ordered
+  lossless export is reversible only while consuming blank sink capacity; a
+  finite RLE sink sized below the sequence exhausts; and the exact finite sink
+  loses the forward monotone when the reversible unwind path is included.
+- Claim impact: bounded reversible compression does not rescue H7's
+  physical-arrow reading. The surviving content is an open forward-branch
+  resource-accounting curve, not a strict monotone on the closed bounded state
+  space.
+- Open blocker: no finite closed reversible observer model has produced a
+  strict D1-relevant monotone after including memory, sink, and return degrees
+  of freedom.
+- Artifact: [T106 technical report](TECHNICAL-REPORT-bounded-sink-reversible-compression-v0.1.md).
+
+### 2026-06-20 - Finite-Permutation Monotone Obstruction (T110)
+
+- H7 remains `partially_supported` only as a conditional constructor theorem
+  or explicitly open-system/resource-accounting claim.
+- T110 generalizes the T106 closed-return-path result: in a finite closed
+  reversible system represented by a permutation, any scalar finality score
+  that is nondecreasing along every transition edge is constant on each orbit.
+- Result: the T106 closed accounted-support cycle has strict forward
+  increases only by also having return-path decreases. Exhaustive cycles of
+  lengths 2 through 7 over three score values have zero strict
+  nondecreasing assignments; nondecreasing assignments are exactly the
+  constant ones.
+- Claim impact: H7 should not be presented as a new derivation of the
+  thermodynamic arrow from closed bounded reversible dynamics. A physical H7
+  model must name an open boundary, erasure, fresh capacity, coarse graining,
+  constructor restriction, or other assumption that supplies direction.
+- Open blocker: build an explicit open Markov/coarse-grained record model and
+  compare its arrow to standard entropy production, or demote H7 to a
+  constructor/resource-accounting lemma in claim-facing prose.
+- Artifact: [T110 technical report](TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md).
+
+### 2026-06-20 - Q1A Branch-Support Collapse (T109)
+
+- Q1A remains `bookkeeping_only`, and T109 closes another escape hatch in the
+  current fixed-data branch.
+- Result: branch support does not presently escape the T105 accessible-class
+  reduction. In the current single-root witness family, every visible case with
+  nonzero audited accessible provenance support has rooted branch support `1`,
+  while zero-support cases alone drop to `0`.
+- No same-support split: branch support never distinguishes two cases with the
+  same audited accessible provenance support inside the current visible family.
+- Admissibility boundary: changing ordinary branch/history availability is
+  already an invalid fixed-data move; T103's branch-history control is rejected
+  because it changes standard quantum-side summaries.
+- Claim impact: Q1A should not cite branch support as a live independent
+  witness dimension unless a future model introduces genuinely distinct causal
+  record channels.
+- Open blocker: the repo still lacks a finite quantum witness where branch
+  support varies without changing the standard quantum-side summaries already
+  fixed by T103/T105.
+- Artifact: [T109 technical report](TECHNICAL-REPORT-q1a-branch-support-collapse-v0.1.md).
+
+### 2026-06-20 - Loss Relocation (T107)
+
+- TF1 remains `open_formal_target`, but T107 sharpens the candidate semantics
+  for `LossKernel`.
+- Finite rule: inspect the source preimage fiber of a target judgment. Mixed
+  source-lift verdicts derive reconstruction debt; uniformly forbidden lifts
+  derive a stable constraint surface; uniformly invariant lifts absorb the
+  lost structure without debt.
+- Claim impact: "conservation of lost information" is too strong. The safer
+  claim is relocation of operational effect under projection when target
+  judgments remain lift-dependent or uniformly constrained.
+- Six-axis bridge: the GU six-axis protocol can be used as a specification
+  discipline for identifying which source axis was projected away, but T107
+  does not import GU physics or prove a physical conservation law.
+- Open blocker: compare source-fiber loss relocation against why-not
+  provenance, abstract interpretation, lenses, CSP explanation, and effect
+  annotations; then re-run the T99 quotient separation with source-derived
+  witness obligations.
+- Artifact: [T107 technical report](TECHNICAL-REPORT-loss-relocation-v0.1.md).
+
+### 2026-06-20 - Loss Relocation Prior-Art Audit (T108)
+
+- TF1 remains `open_formal_target`; T108 gives a negative separation result.
+- Verdict: source-fiber loss relocation does not yet separate from why-not
+  provenance, abstract interpretation, lenses, CSP explanation, or rich effect
+  annotations when those neighbors are given the same source fiber and target
+  judgment.
+- Absorption map: abstract interpretation reads the source fiber as
+  concretization; lenses read it as complement/update context; CSP explanation
+  reads mixed lifts as solution ambiguity and forbidden lifts as conflicts;
+  why-not provenance reads debt as missing witnesses; rich effects can carry
+  the same source witness obligations.
+- Surviving delta: at most a typed normal form for source-derived witness
+  obligations under projection, not a new obstruction mechanism.
+- Open blocker: build a same-neighbor-data quotient fixture with same
+  provenance, abstraction fibers, lens complement, CSP conflicts/diagnoses,
+  and rich effect annotations but different LossKernel attribution. Without
+  that, LossKernel should be treated as integration vocabulary.
+- Artifact: [T108 technical report](TECHNICAL-REPORT-loss-relocation-prior-art-v0.1.md).
+
+### 2026-06-20 - Viability Filter (T114)
+
+- No core claim is upgraded. T114 is a North-Star formalization artifact only.
+- It turns the geometry/finality/maintenance/emergence synthesis into a finite
+  filter: geometry, dynamics, maintenance, record-finality, and
+  emergence-platform gates.
+- Result: geometry is not sufficient for observer-experienced status;
+  maintenance is not sufficient without record finality; finality does not
+  automatically make a structure an emergence platform; and one matched
+  standard-state pair is separated only by accessible record support.
+- Claim impact: the strongest earned formulation is modest. Geometry supplies
+  candidate structures, while maintenance and record-finality filter which
+  structures become observer-reconstructable; emergence-platform status is a
+  stricter downstream property.
+- Weakening: if future domain instantiations are fully determined by standard
+  stability, entropy export, and coarse-graining variables, the viability
+  filter is bookkeeping rather than new machinery.
+- Open blocker: instantiate the gates in a real domain, preferably cellular
+  automata or D1RestrictionSystem transport, without assigning the gate values
+  by hand.
+- Artifact: [T114 technical report](TECHNICAL-REPORT-viability-filter-v0.1.md).
+
+### 2026-06-20 - Maintenance-Cost Viability Split (T115)
+
+- No core claim is upgraded. T115 is an absorption-pressure artifact for the
+  maintenance-cost direction after T114.
+- Finite examples in record commons, provenance, version control, governance,
+  and consensus match on entropy/export proxy, control effort, stability
+  window, viability-kernel label, resilience recovery steps, storage bits, and
+  maintained record count while splitting on future operation capability.
+- Strongest separation: the version-control pair has the same endpoint tree
+  and ordinary metrics, but preserving merge base/history/signed tags changes
+  future merge, revert, and bisect rights.
+- Strongest absorption: the same case is already handled by
+  provenance/version-control semantics. Commons governance absorbs authority
+  and challenge rights; LossKernel/reconstruction debt absorbs missing witness
+  obligations once the operation family is declared.
+- Claim impact: preserve maintenance-cost viability only as a narrow
+  operation-right/provenance/reconstruction-debt audit object. Do not promote
+  it as independent physics or as a replacement for entropy production,
+  control theory, viability theory, or free-energy approaches.
+- Open blocker: find a non-engineered physical example where operation-right
+  residue separates from enriched viability, control/free-energy, provenance,
+  and information-theoretic side information.
+- Artifact: [T115 technical report](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md).
+
+### 2026-06-20 - Open Markov Record-Entropy Comparison (T116)
+
+- H7 remains `partially_supported` only as a conditional constructor or
+  open-system resource-accounting claim.
+- T116 tests the open-system loophole after T110: detailed-balance record
+  shuffle has zero path irreversibility and no strict finality direction;
+  biased cyclic current is entropy-producing but not scalar-finality monotone.
+- Positive-looking cases are absorbed: exported history gives monotone
+  accounted records only with positive path irreversibility, while
+  zero-log-ratio append-only monotonicity consumes fresh blank capacity.
+- Claim impact: there is still no independent H7 thermodynamic-arrow model.
+  Paper-facing prose should demote H7 to a constructor/resource-accounting
+  lemma unless a zero-resource stochastic record-arrow counterexample is
+  produced.
+- Open blocker: find a physically grounded record-arrow model not absorbed by
+  standard stochastic thermodynamics, history export, free-energy drawdown, or
+  capacity accounting.
+- Artifact: [T116 technical report](TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md).
+
+### 2026-06-20 - Stationary Markov Monotone Obstruction (T122)
+
+- H7 remains `partially_supported` only as a conditional constructor or
+  resource-accounting claim.
+- T122 closes the finite stationary Markov version of the T116 zero-resource
+  stochastic record-arrow gate. For `piP=pi`, the `pi`-weighted expected drift
+  of any scalar finality score is zero.
+- Result: if expected finality drift is nonnegative on every state in
+  stationary support, it must be zero on that support. Strict positive drift is
+  possible only in transient or nonstationary sectors, or after importing a
+  sink, boundary, capacity resource, postselection, or excluded reverse
+  channel.
+- Claim impact: finite stationary stochastic dynamics do not rescue H7 as an
+  independent thermodynamic-arrow proposal. A future H7 model must be
+  explicitly nonstationary, infinite-state, coarse-grained, or resource-explicit
+  and must quantify the physical drawdown.
+- Open blocker: decide whether a nonstationary free-energy model is worth
+  pursuing, or demote H7's paper-facing label to
+  constructor/resource-accounting lemma.
+- Artifact: [T122 technical report](TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md).
+
+### 2026-06-20 - Minimal Living Arrow (T128)
+
+- H7 remains `partially_supported` only as a conditional constructor or
+  resource-accounting claim.
+- T128 tests the first finite models after the T80/T82/T84/T106/T110/T122
+  obstruction stack. Closed reversible and stationary Markov controls still
+  fail.
+- Result: the smallest non-stipulative finite survivor is explicit finite
+  resource drawdown with an absorbing depleted boundary. Maintenance survives
+  only as finite repair-budget depletion, and open boundary survives only as
+  sink-capacity/exported-history accounting.
+- Constructor restriction is the smallest formal survivor only by stipulation:
+  reverse transformations are excluded by the admissibility relation.
+- Claim impact: do not promote H7 as a thermodynamic-arrow claim. Preserve it
+  as a resource-accounting or constructor lemma until a named physical
+  free-energy/capacity variable beats standard stochastic thermodynamics.
+- Artifact: [T128 technical report](TECHNICAL-REPORT-minimal-living-arrow-v0.1.md).
+
+### 2026-06-20 - Constructor-Admissibility Grounding Audit (T124)
+
+- H7 remains `partially_supported` only as a conditional constructor or
+  resource-accounting claim.
+- T124 turns the T18 admissibility premise into a reverse-edge ledger. Every
+  strict D1-increasing edge must name the accounting boundary, reverse edge,
+  reverse status, and resource or impossibility condition.
+- Result: no current H7 witness permits an unqualified physical-arrow reading.
+  Strict surviving cases are either resource-accounting edges or
+  constructor-only stipulations.
+- Claim impact: the missing upgrade is a physically grounded
+  constructor-impossibility relation for record deletion or definalization that
+  does not reduce to ordinary resource, entropy, boundary, or coarse-graining
+  accounting.
+- Artifact: [T124 technical report](TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md).
+
+### 2026-06-20 - Accessible State Space Separation Audit (T117)
+
+- No core claim is upgraded. T117 is a kill-test for Accessible State Space
+  (ASP), not a promotion.
+- Finite examples in version control, provenance, governance, commons,
+  consensus, and record systems match on entropy bits, information bits,
+  finality score, viability score, persistence horizon, coarse reachable
+  count, and coarse control rank while splitting on computed ASP.
+- Strongest separation: same endpoint repository state, but retained
+  branch-history/merge-base/signed-history witnesses change ASP from `{build}`
+  to `{build, merge, revert, bisect}`.
+- Strongest absorption: enriched reachable-state analysis, opportunity-set
+  economics, provenance, commons governance, and mechanism design absorb ASP
+  once witnesses, rights, certifications, maintenance budgets, and
+  reconstruction paths are included in the state.
+- Claim impact: preserve ASP only as a set-valued observer/task-indexed audit
+  object. Reject scalar or global "future opportunity" readings, and do not
+  treat ASP as independent physics.
+- Open blocker: find a non-engineered physical example where ASP separates from
+  enriched reachability, controllability, opportunity-set, active-inference,
+  free-energy, provenance, and mechanism-design formalisms.
+- Artifact: [T117 technical report](TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md).
+
+### 2026-06-20 - Q1A Reversal-Cost Collapse (T118)
+
+- Q1A remains `bookkeeping_only`, and T118 closes the last unused D1-dimension
+  loophole in the current fixed-data family.
+- Result: once the witness language is restricted to already formed records
+  with fixed ordinary quantum-side summaries, the only admissible
+  reversal-cost proxy is the number of audited accessible provenance classes
+  that would need to be erased or overwritten.
+- Boundary: that proxy is identical to audited accessible support whenever the
+  partition is visible and is withheld when the partition is hidden. It never
+  splits a same-support class and adds no verdict content beyond T105.
+- Claim impact: Q1A should not cite reversal cost as a live independent
+  witness dimension in the present fixed-data family. Current evidence is fully
+  reduced to audited accessible support plus partition visibility.
+- Open blocker: build a finite quantum witness with a physically calibrated
+  undo or erasure observable that can vary while decoherence,
+  fragment-information summaries, raw redundancy, branch/history availability,
+  and audited accessible support stay fixed.
+- Artifact: [T118 technical report](TECHNICAL-REPORT-q1a-reversal-cost-collapse-v0.1.md).
+
+### 2026-06-20 - Future Operation Availability Residue Audit (T119)
+
+- No core claim is upgraded. T119 is a synthesis and kill-test for a recurring
+  residue across Q1A, ASP, reconstruction debt, maintenance cost, provenance,
+  LossKernel, and admissibility work.
+- Strongest version: FOA is a prespecified observer/task/horizon-indexed set of
+  future operations available under witness, right, reconstruction,
+  certification, and maintenance constraints.
+- Branch verdict: ASP is directly FOA; reconstruction debt, maintenance,
+  provenance, LossKernel, and admissibility converge structurally; Q1A joins
+  only weakly because its current residue is accessible record support rather
+  than an action set by itself.
+- Finite controls: T119 gives one case where FOA differs while coarse measures
+  match, one where coarse measures differ while FOA matches, and one where FOA
+  collapses into enriched reachability.
+- Prior-art pressure: enriched reachability, opportunity-set economics,
+  viability/control, provenance, mechanism design, and commons governance
+  absorb FOA when witnesses, rights, certifications, reconstruction paths, and
+  maintenance budgets are included in the state.
+- Recommendation: preserve and formalize FOA narrowly as a cross-branch audit
+  normal form; do not promote it as a new primitive or independent physical
+  object.
+- Open blocker: produce a same-enriched-prior-art quotient witness with the
+  same reachability state, opportunity set, control state, provenance,
+  mechanism rights, and commons variables but a different FOA verdict.
+- Artifact: [T119 technical report](TECHNICAL-REPORT-future-operation-availability-residue-v0.1.md).
+
+### 2026-06-20 - Future Capability Preservation Audit (T129)
+
+- No core claim is upgraded. T129 is a cross-branch audit-normal-form test,
+  not a new ontology.
+- Result: Git history, detector packets, reconstruction debt, provenance,
+  operation rights, ASP, FOA, LossKernel, admissibility, and maintenance-cost
+  cases share a structure: visible state plus task-indexed capability
+  requirements for witnesses, rights, reconstruction paths, provenance,
+  maintenance/access, certifications, and admissibility policy.
+- Weakest point: once that hidden structure is included in the state, the
+  same-current-state split is absorbed by enriched reachability,
+  opportunity-set economics, provenance systems, access-control/capability
+  systems, mechanism design, and viability/control frameworks.
+- Recommendation: formalize narrowly as an audit normal form for detecting
+  missing capability-bearing state; do not promote `FCP` as a primitive.
+- Artifact: [T129 technical report](TECHNICAL-REPORT-future-capability-preservation-audit-v0.1.md).
+
+### 2026-06-20 - Real Detector Packet Schema Audit (T121)
+
+- No Q1 or detector-physics claim is upgraded. T121 is detector evidence
+  infrastructure only.
+- Result: valid raw detector payload is not enough for admissibility. The
+  minimal packet must also carry detector identity, run/session id, causal
+  ordering data, calibration reference, provenance chain, signatures, authority
+  domains, publication status, revocation status, key-rotation/key-compromise
+  state, witness references, reconstruction paths, admissibility tokens, and
+  challenge/dispute status.
+- Finite cases: valid packet, missing provenance, key compromised, revoked
+  authority, delayed publication, collapsed authority domains, valid raw data
+  but inadmissible packet, and same raw data with reduced future operation
+  rights.
+- Existing-artifact absorption: provenance, signatures, publication timing,
+  authority separation, witness references, reconstruction paths, and
+  admissibility tokens are mostly covered by T78/T87/T97/T100.
+- Missing schema requirements: revocation registry/check time, key rotation
+  and key-compromise continuity, and challenge/dispute lifecycle state need
+  explicit packet-level ownership.
+- Claim impact: treat T121 as a prerequisite evidence object for future
+  detector-packet validation before any D1 scoring or detector-branch
+  admissibility claim.
+- Artifact: [T121 technical report](TECHNICAL-REPORT-real-detector-packet-schema-audit-v0.1.md).
+
+### 2026-06-20 - Same-Payload Packet FOA Witness (T123)
+
+- No Q1 or detector-physics claim is upgraded. T123 is detector evidence
+  infrastructure only.
+- Result: same raw detector payload, same immediate measurement result, and
+  same coarse detector summary can still yield different admissibility and
+  future operation availability when packet wrapper fields differ.
+- Load-bearing fields: provenance completeness, authority separation,
+  signature validity, key-compromise state, revocation status, publication
+  timing, witness availability, reconstruction paths, and challenge state.
+- Claim impact: raw-measurement sameness is not enough for detector-branch
+  claim review. The packet wrapper remains part of the evidence object.
+- Open blocker: integrate the same-payload variants into the T97 dry-run
+  packet fixture before any real deployment packet can be evaluated.
+- Artifact: [T123 technical report](TECHNICAL-REPORT-same-payload-packet-foa-witness-v0.1.md).
+
+### 2026-06-20 - Detector Packet Tiered Minimality (T133)
+
+- No Q1 or detector-physics claim is upgraded. T133 is detector evidence
+  infrastructure only.
+- Result: the current detector packet burden is tiered, not flat. Same-payload
+  packet variants show that provenance/signature/authority/publication/
+  revocation/key-state fields block provisional admission, while witness
+  references, reconstruction paths, and challenge/dispute state are additional
+  claim-review requirements.
+- Claim impact: Q1B should describe a smaller provisional-admission core plus
+  a stricter claim-review extension, not a single undifferentiated all-fields
+  burden.
+- Open blocker: T97 does not yet emit separate provisional-admission and
+  claim-review tier verdicts, and no real deployment freezes that split
+  pre-data.
+- Artifact: [T133 technical report](TECHNICAL-REPORT-detector-packet-tiered-minimality-v0.1.md).
+
+### 2026-06-21 - Detector Dry-Run Tier Gate (T134)
+
+- Q1B remains `externally_blocked`; T134 is detector evidence infrastructure
+  only.
+- Result: T97 raw-log readiness is necessary but not sufficient for detector
+  packet admission. A filled T97 packet still lacks or only partially covers
+  T121/T133 wrapper fields such as raw payload, calibration reference,
+  packet-level provenance, authority domains, publication, revocation,
+  key-state, admissibility tokens, reconstruction paths, and challenge state.
+- Tier split preserved: missing provenance blocks provisional admission, while
+  missing witnesses or open challenges preserve provisional intake but block
+  claim-review readiness.
+- Claim impact: future detector deployments must pre-register one combined
+  packet: T97 raw logs plus T121/T133 wrapper fields plus the claimed tier
+  before the first event. Filled raw-log rows alone cannot upgrade Q1B.
+- Open blocker: no real deployment has frozen that combined packet before data
+  collection.
+- Artifact: [T134 technical report](TECHNICAL-REPORT-detector-dry-run-tier-gate-v0.1.md).
+
+### 2026-06-21 - Detector Pre-registration Manifest (T136)
+
+- Q1B remains `externally_blocked`; T136 is detector evidence infrastructure
+  only.
+- Result: detector packet admission now has a concrete pre-event manifest gate.
+  The manifest binds T97 table hashes, T121/T133 wrapper-field commitments,
+  T100 authority separation, the top-level manifest hash, the no-data boundary,
+  and the claimed tier before the first detector event.
+- Boundary clarified: the manifest freezes export rules and field commitments,
+  not detector outcomes. A pre-event claim to observed raw payload values is
+  invalid.
+- Null variants: T97-only, post hoc, invalid-authority, deferred-tier,
+  hash-mismatch, and pre-known-payload variants cannot claim their requested
+  tier.
+- Claim impact: future deployments must sign one T136 manifest pre-data and
+  then fill the bound packet without schema, authority, tier, or wrapper-policy
+  changes. Otherwise Q1B has no admissible detector-branch claim.
+- Open blocker: no real lab has signed and frozen a T136 manifest before
+  detector event collection.
+- Artifact: [T136 technical report](technical-reports/TECHNICAL-REPORT-detector-preregistration-manifest-v0.1.md).
+
+### 2026-06-21 - Detector Manifest Workflow Fit (T138)
+
+- Q1B remains `externally_blocked`; T138 is detector evidence infrastructure
+  and workflow-feasibility pressure only.
+- Result: the T136 manifest is now a human-fillable workflow gate. A common
+  single-lab photonic coincidence workflow is null because it is post hoc and
+  authority-collapsed, and a pre-data public-archive repair still fails when
+  analysis/control and archive/audit roles are merged.
+- Survivor: a federated pre-data workflow with independent analysis governance,
+  instrument operation, control design, archive custody, and trust audit clears
+  T136 only as a claim-review scaffold, not as detector evidence.
+- Null control: a manifest that pre-commits observed detector payload values is
+  invalid even with clean authorities; the payload field must be an export-rule
+  commitment before events.
+- Claim impact: the current non-null detector path is organizational and
+  externally blocked. "A lab with time tags" is not enough; the route now needs
+  a named group willing to sign the federated T138/T136 template before data.
+- Open blocker: no named real lab has agreed to fill and sign the federated
+  template before detector event collection.
+- Artifact: [T138 technical report](technical-reports/TECHNICAL-REPORT-detector-manifest-workflow-fit-v0.1.md).
+
+### 2026-06-21 - Q1 Frontier Escape Matrix (T140)
+
+- Q1 remains `demoted` as a roadmap umbrella, not a paper-facing quantum
+  conjecture.
+- Result: no current child branch has an active internal upgrade route. Q1A is
+  `bookkeeping_only`; Q1C is screened off by the full-record gate; Q1D remains
+  guardrail-only; and Q1B is the only non-null experimental path, but it is
+  externally blocked without a signed pre-event manifest and real event-level
+  packet.
+- Claim impact: future Q1 work must name the exact child-branch escape gate it
+  satisfies before adding another model. Otherwise the expected outcome is
+  absorption by the existing Q1A/Q1B/Q1C/Q1D gates.
+- Open blocker: no named detector deployment has signed the T136/T138 manifest
+  pre-data, and no Q1A/Q1C/Q1D escape artifact currently clears its branch
+  gate.
+- Artifact: [T140 technical report](technical-reports/TECHNICAL-REPORT-q1-frontier-escape-matrix-v0.1.md).

@@ -1,0 +1,35 @@
+{
+  "audits": [
+    {
+      "platform": "superconducting homodyne trajectory",
+      "paper_anchor": "Murch et al. 2013 / Kumar et al. 2018",
+      "candidate_axis": "branch-live witness from homodyne current plus Bayesian trajectory estimate",
+      "classification": "null_same_record_derivation",
+      "blocker": "candidate axis is reconstructed from the same monitoring record as the standard trajectory",
+      "notes": "The same continuous homodyne current that fixes coherence decay and trajectory reconstruction also fixes the proposed branch-live readout. No extra D1 axis is named beyond a refined function of the standard record."
+    },
+    {
+      "platform": "superconducting phase-qubit uncollapse",
+      "paper_anchor": "Katz et al. 2008",
+      "candidate_axis": "reversal-cost witness from partial-collapse reversal success",
+      "classification": "null_postselected_axis",
+      "blocker": "candidate axis depends on success-conditioned or null-outcome selection",
+      "notes": "The apparent undo witness is conditioned on the second measurement's null/success outcome after a designed pulse sequence. That makes it a postselected recovery event, not an independently metered reversal-cost observable."
+    },
+    {
+      "platform": "three-level superconducting quantum-jump reversal",
+      "paper_anchor": "Minev et al. 2019",
+      "candidate_axis": "mid-flight warning and feedback reversal as branch-live or reversal witness",
+      "classification": "null_same_record_derivation",
+      "blocker": "candidate axis is reconstructed from the same monitoring record as the standard trajectory",
+      "notes": "The warning signal is the no-click interval in the same monitoring stream used to infer the trajectory, and the reversal is a fixed feedback policy triggered by that stream. This validates controllable trajectory theory, but it does not isolate a D1 axis beyond the monitored record itself."
+    }
+  ],
+  "strongest_claim": "The concrete superconducting weak-measurement platforms audited here do not yet supply an independent D1 branch-support or reversal-cost observable. They validate quantum trajectory control, but the proposed TaF axes collapse either to the same monitored record or to postselected recovery.",
+  "improved": "T91 replaces T90's platform placeholder with a concrete negative audit. The repo can now say which named experimental families fail the independent-axis test and why.",
+  "weakened": "This weakens the idea that currently standard superconducting weak-measurement setups already contain a hidden TaF discriminator waiting to be relabeled.",
+  "falsification_condition": "T91 fails if a named weak-measurement platform supplies a pre-registered branch/provenance/reversal observable that is not reconstructible from the same standard monitoring record, does not rely on success-conditioned postselection, and changes the TaF verdict while the standard record is held fixed.",
+  "q1_update": "Keep Q1 partially supported, but narrow the T12 route further: known superconducting homodyne, uncollapse, and quantum-jump-reversal platforms do not yet instantiate the independent D1 axis required by T90.",
+  "blocker": "The missing object is still the same one: a pre-registered branch, provenance, or reversal-cost observable that is operationally distinct from the monitored trajectory record itself.",
+  "recommended_next": "Stop treating standard homodyne/jump-reversal platforms as near-ready T12 tests. Search instead for a duplicated-record provenance channel during monitoring or a physically metered undo cost that is fixed before analysis and not success-conditioned."
+}

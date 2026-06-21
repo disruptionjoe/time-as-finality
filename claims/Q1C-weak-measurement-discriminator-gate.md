@@ -1,0 +1,85 @@
+# Q1C: Weak-Measurement Discriminator Gate
+
+## Claim
+
+A weak-measurement experiment could test Time as Finality only if it supplies a
+pre-registered branch, provenance, or undo-cost observable that is independent
+of the standard monitored record and changes the TaF verdict while standard
+statistics are fixed.
+
+## Class
+
+Subclaim of Q1.
+
+## Status
+
+Dormant.
+
+## Current Strongest Form
+
+Weak measurement is not an active discriminator for the project. The named
+superconducting homodyne, uncollapse, and quantum-jump-reversal routes do not
+clear the independent-axis gate.
+
+## Earned Content
+
+- T90 defines the reparameterization obstruction: standard-only axes are null,
+  and post hoc branch labels are rejected.
+- T91 shows that currently named superconducting weak-measurement platform
+  families reconstruct their candidate TaF axis from the ordinary monitored
+  record or from success-conditioned postselection.
+- T93 rejects control-pulse energy, schedule bookkeeping, and
+  success-conditioned reversal as non-null undo-cost evidence.
+- T94 demotes weak measurement below detector provenance until a real platform
+  supplies the missing independent axis.
+- T130 screens the most plausible hardware rescue, calorimetric or thermal
+  second-meter readout, and finds that the screened literature still supplies
+  alternate readout chains rather than a simultaneous dual-meter witness with
+  fixed standard monitored statistics.
+- T135 sharpens the same loophole against the most relevant screened
+  2020-2025 second-meter literature: recent thermal-detector qubit readout,
+  nanocalorimetric trajectories, and calorimeter-assisted homodyne still do
+  not produce a monitored-qubit simultaneous dual-meter witness with fixed
+  standard statistics.
+- T137 adds a sharper null class: even a simultaneous second meter is null if
+  its event-level statistics are only a downstream transform of the ordinary
+  monitored record. Physical distinctness alone does not reopen Q1C.
+- T139 closes the coarse-summary loophole: "ordinary monitored statistics held
+  fixed" must mean the full pre-registered event-level ordinary record, not a
+  dashboard or thresholded export that an auxiliary meter merely refines.
+
+## Not Earned
+
+- No current weak-measurement platform gives a TaF discriminator.
+- No independent branch-support observable is named.
+- No independent undo-cost meter is named.
+- No postselected reversal result counts as a TaF verdict change.
+
+## Falsification Or Demotion Condition
+
+If a proposed weak-measurement route derives its TaF variable from the same
+monitoring stream used by standard quantum trajectory theory, or conditions it
+on reversal success, it is null for Q1C. The same holds for any simultaneous
+second meter whose statistics are conditionally determined by the ordinary
+monitored record, or whose apparent witness survives only because the ordinary
+record was fixed at a coarsened summary rather than at the full event-level
+trajectory.
+
+## Reinstatement Condition
+
+Reopen Q1C only after a concrete platform names a calibrated, pre-registered
+axis that is not reconstructed from the monitored record, not a control-schedule
+proxy, not postselected, not screened off by the ordinary monitored record, and
+verdict-changing under fixed coherence, redundancy, access, reversal-success
+statistics, and the full pre-registered event-level standard monitored record.
+
+## Primary Evidence
+
+- [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
+- [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
+- [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
+- [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
+- [T130: Weak-Measurement Dual-Meter Screen](../tests/T130-weak-measurement-dual-meter-screen.md)
+- [T135: Weak-Measurement Second-Meter Checkpoint](../tests/T135-weak-measurement-second-meter-checkpoint.md)
+- [T137: Weak-Measurement Postprocessed Second-Meter Obstruction](../tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md)
+- [T139: Weak-Measurement Full-Record Sufficiency Boundary](../tests/T139-weak-measurement-full-record-sufficiency-boundary.md)

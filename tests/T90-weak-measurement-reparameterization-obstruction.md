@@ -12,7 +12,7 @@ monitored-record statistics?
 
 ## Motivation
 
-T88 states the non-null criterion for the open T12 route. T90 makes that
+T132 states the non-null criterion for the open T12 route. T90 makes that
 criterion executable. The goal is not to rescue the weak-measurement route. It
 is to prevent a threshold on coherence loss, redundancy, or observer access
 from being advertised as new measurement physics.

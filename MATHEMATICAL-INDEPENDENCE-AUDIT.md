@@ -159,6 +159,53 @@ proper category.
 
 ---
 
+## Staleness Update — 2026-06-20
+
+The audit is stale relative to the current test registry. `TESTS.md` now lists
+95 `T*.md` test notes, up from the post-T41 audit state by more than ten tests.
+Independent motivation remains **UNKNOWN**: the added tests mostly deepen
+internal detector provenance, LossKernel, reversible-observer, and
+accessible-witness gap programs, but they do not replace external mathematical
+review.
+
+Minimum next audit action: produce v0.7 as a post-T92 audit that separates
+which additions strengthen internal theorem ladders from which additions merely
+add TaF-specific stress tests, then send the neutral TF1/LossKernel statement to
+an external mathematician or theoretical-CS reviewer.
+
+## Staleness Update â€” 2026-06-20 Late Run
+
+The audit remains stale relative to the current test registry. The repository
+now lists 112 `T*.md` test notes, up by 17 since the previous 2026-06-20
+staleness note. Independent motivation remains **UNKNOWN**: the added material
+mostly sharpens internal Q1 branch demotion, H7 reversible-boundary stress,
+LossKernel relocation/prior-art absorption, and branch-support collapse. None
+of that replaces external mathematical motivation.
+
+Minimum next audit action: produce v0.7 as a post-T109 audit that separates
+internally useful bookkeeping/stress tests from genuinely neutral theorem-ladder
+progress, and explicitly incorporate the external review findings that
+LossKernel is currently a monoid-valued annotation unless a same-neighbor-data
+separation fixture is proved.
+
+## Staleness Update - 2026-06-20 Stewardship Run
+
+The audit remains stale relative to the current test registry. The repository
+now lists 134 `T*.md` test notes, up by 22 since the late-run staleness note.
+Independent motivation remains **UNKNOWN**: the added work strengthens internal
+detector-packet admissibility, weak-measurement null gates, H7
+constructor/resource-accounting boundaries, candidate capability-projection
+language, and persona/spec-layer audits. None of that is external mathematical
+motivation.
+
+Minimum next audit action: produce v0.8 as a post-T133/post-P11 audit that
+separates neutral theorem-ladder progress from stewardship, detector evidence
+infrastructure, capability-projection vocabulary, and TaF-specific stress
+tests; then send the neutral TF1/LossKernel and capability-projection
+factorization statements to an external mathematics or theoretical-CS reviewer.
+
+---
+
 ## What Would Advance Independence
 
 1. **Composition law: resolved (T41).** D1RestrictionMorphisms compose
@@ -189,3 +236,6 @@ proper category.
 | 2026-06-18 | v0.4 | T39 establishes PO1-as-CSP Theorem: D1 gluing obstruction = binary parity-conflict CSP. Arc consistency trivial. PO1 adds typed source, typed forgotten structure, and admissibility classification not in standard CSP. Mathematical originality is in the classification framework, not the obstruction theorem. |
 | 2026-06-18 | v0.5 | T40 adds Holonic Emergence and Cross-Level AC5 theorems. HolonicNetwork introduces cross-level composition; the same parity obstruction from T26/T39 operates at the holonic level. |
 | 2026-06-18 | v0.6 | T41 adds Typed Transport Category and PO1 Non-Functor theorems. Own operations upgraded from "present but incomplete" to "present and complete": D1RestrictionMorphisms form a proper category; PO1 admissibility is not a Boolean functor on D1Cat. |
+| 2026-06-20 | staleness note | Test registry has grown to 95 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T92 v0.7 audit plus external review of the neutral TF1/LossKernel statement. |
+| 2026-06-20 | late staleness note | Test registry has grown to 112 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T109 v0.7 audit that incorporates LossKernel external-review downgrades. |
+| 2026-06-20 | stewardship staleness note | Test registry has grown to 134 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T133/post-P11 v0.8 audit plus external review of neutral TF1/LossKernel and capability-projection factorization statements. |

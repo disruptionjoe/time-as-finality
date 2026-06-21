@@ -1,0 +1,837 @@
+{
+  "allowed_transformations": [
+    "observer relabeling",
+    "record-label permutation preserving incidence",
+    "holder relabeling preserving independence partitions",
+    "causal-graph isomorphism preserving reachability",
+    "access-boundary refinement",
+    "access-boundary coarsening"
+  ],
+  "negative_controls": [
+    "negative_record_incidence_break",
+    "negative_holder_partition_merge",
+    "negative_causal_graph_nonisomorphism"
+  ],
+  "reference_profile": {
+    "accessible_support": 4,
+    "distinct_holder_redundancy": 2,
+    "causal_branch_support": 2,
+    "graph_reversal_count": 2,
+    "tuple_order": [
+      "accessible_support",
+      "distinct_holder_redundancy",
+      "causal_branch_support",
+      "graph_reversal_count"
+    ],
+    "profile_tuple": [
+      4,
+      2,
+      2,
+      2
+    ]
+  },
+  "audits": [
+    {
+      "name": "observer_relabeling",
+      "kind": "observer_relabeling",
+      "admissible": true,
+      "gauge_pure": true,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "observer_relabeling",
+          "dimension": "accessible_support",
+          "classification": "invariant",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "Transport the observer index by bijection; D1 numeric components are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "observer_relabeling",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport the observer index by bijection; D1 numeric components are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "observer_relabeling",
+          "dimension": "causal_branch_support",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport the observer index by bijection; D1 numeric components are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "observer_relabeling",
+          "dimension": "graph_reversal_count",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport the observer index by bijection; D1 numeric components are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        }
+      ],
+      "invariant_failure_dimensions": [],
+      "verdict": "pure gauge transformation preserved all D1 dimensions"
+    },
+    {
+      "name": "record_label_permutation",
+      "kind": "record_label_permutation",
+      "admissible": true,
+      "gauge_pure": true,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "record_label_permutation",
+          "dimension": "accessible_support",
+          "classification": "invariant",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "Transport record ids by bijection; incidence and accessibility predicates are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "record_label_permutation",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport record ids by bijection; incidence and accessibility predicates are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "record_label_permutation",
+          "dimension": "causal_branch_support",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport record ids by bijection; incidence and accessibility predicates are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "record_label_permutation",
+          "dimension": "graph_reversal_count",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport record ids by bijection; incidence and accessibility predicates are unchanged.",
+          "reason": "value is unchanged under the stated gauge map"
+        }
+      ],
+      "invariant_failure_dimensions": [],
+      "verdict": "pure gauge transformation preserved all D1 dimensions"
+    },
+    {
+      "name": "holder_relabeling_preserving_independence_partitions",
+      "kind": "holder_relabeling",
+      "admissible": true,
+      "gauge_pure": true,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "holder_relabeling_preserving_independence_partitions",
+          "dimension": "accessible_support",
+          "classification": "invariant",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "Transport holder ids by bijection and carry the same independence classes.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "holder_relabeling_preserving_independence_partitions",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport holder ids by bijection and carry the same independence classes.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "holder_relabeling_preserving_independence_partitions",
+          "dimension": "causal_branch_support",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport holder ids by bijection and carry the same independence classes.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "holder_relabeling_preserving_independence_partitions",
+          "dimension": "graph_reversal_count",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport holder ids by bijection and carry the same independence classes.",
+          "reason": "value is unchanged under the stated gauge map"
+        }
+      ],
+      "invariant_failure_dimensions": [],
+      "verdict": "pure gauge transformation preserved all D1 dimensions"
+    },
+    {
+      "name": "causal_graph_isomorphism",
+      "kind": "causal_graph_isomorphism",
+      "admissible": true,
+      "gauge_pure": true,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "causal_graph_isomorphism",
+          "dimension": "accessible_support",
+          "classification": "invariant",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "Transport events by graph isomorphism; antichain width is computed after pushforward.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "causal_graph_isomorphism",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport events by graph isomorphism; antichain width is computed after pushforward.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "causal_graph_isomorphism",
+          "dimension": "causal_branch_support",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport events by graph isomorphism; antichain width is computed after pushforward.",
+          "reason": "value is unchanged under the stated gauge map"
+        },
+        {
+          "transformation": "causal_graph_isomorphism",
+          "dimension": "graph_reversal_count",
+          "classification": "invariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Transport events by graph isomorphism; antichain width is computed after pushforward.",
+          "reason": "value is unchanged under the stated gauge map"
+        }
+      ],
+      "invariant_failure_dimensions": [],
+      "verdict": "pure gauge transformation preserved all D1 dimensions"
+    },
+    {
+      "name": "access_boundary_refinement",
+      "kind": "access_boundary_refinement",
+      "admissible": true,
+      "gauge_pure": false,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 2,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 0,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "access_boundary_refinement",
+          "dimension": "accessible_support",
+          "classification": "covariant",
+          "before_value": 4,
+          "after_value": 2,
+          "transport_rule": "Recompute D1 on the refined access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_refinement",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Recompute D1 on the refined access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_refinement",
+          "dimension": "causal_branch_support",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "Recompute D1 on the refined access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_refinement",
+          "dimension": "graph_reversal_count",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 0,
+          "transport_rule": "Recompute D1 on the refined access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        }
+      ],
+      "invariant_failure_dimensions": [
+        "accessible_support",
+        "graph_reversal_count"
+      ],
+      "verdict": "access-boundary transformation is covariant physical boundary data, not pure gauge"
+    },
+    {
+      "name": "access_boundary_coarsening",
+      "kind": "access_boundary_coarsening",
+      "admissible": true,
+      "gauge_pure": false,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 5,
+        "distinct_holder_redundancy": 3,
+        "causal_branch_support": 3,
+        "graph_reversal_count": 3,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "access_boundary_coarsening",
+          "dimension": "accessible_support",
+          "classification": "covariant",
+          "before_value": 4,
+          "after_value": 5,
+          "transport_rule": "Recompute D1 on the coarsened access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_coarsening",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 3,
+          "transport_rule": "Recompute D1 on the coarsened access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_coarsening",
+          "dimension": "causal_branch_support",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 3,
+          "transport_rule": "Recompute D1 on the coarsened access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        },
+        {
+          "transformation": "access_boundary_coarsening",
+          "dimension": "graph_reversal_count",
+          "classification": "covariant",
+          "before_value": 2,
+          "after_value": 3,
+          "transport_rule": "Recompute D1 on the coarsened access boundary. Value changes are boundary data, not gauge.",
+          "reason": "value is recomputed on a different access boundary; the change is observer-frame boundary data, not gauge"
+        }
+      ],
+      "invariant_failure_dimensions": [
+        "accessible_support",
+        "distinct_holder_redundancy",
+        "causal_branch_support",
+        "graph_reversal_count"
+      ],
+      "verdict": "access-boundary transformation is covariant physical boundary data, not pure gauge"
+    },
+    {
+      "name": "negative_record_incidence_break",
+      "kind": "negative_control",
+      "admissible": false,
+      "gauge_pure": false,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 1,
+        "causal_branch_support": 1,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          1,
+          1,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "negative_record_incidence_break",
+          "dimension": "accessible_support",
+          "classification": "undefined",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks record-event and record-holder incidence, so relabeling invariance is not applicable."
+        },
+        {
+          "transformation": "negative_record_incidence_break",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 1,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks record-event and record-holder incidence, so relabeling invariance is not applicable."
+        },
+        {
+          "transformation": "negative_record_incidence_break",
+          "dimension": "causal_branch_support",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 1,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks record-event and record-holder incidence, so relabeling invariance is not applicable."
+        },
+        {
+          "transformation": "negative_record_incidence_break",
+          "dimension": "graph_reversal_count",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks record-event and record-holder incidence, so relabeling invariance is not applicable."
+        }
+      ],
+      "invariant_failure_dimensions": [
+        "distinct_holder_redundancy",
+        "causal_branch_support"
+      ],
+      "verdict": "negative control changed D1 dimensions without an admissible transport rule"
+    },
+    {
+      "name": "negative_holder_partition_merge",
+      "kind": "negative_control",
+      "admissible": false,
+      "gauge_pure": false,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 1,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          1,
+          2,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "negative_holder_partition_merge",
+          "dimension": "accessible_support",
+          "classification": "undefined",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks the independence partition required by holder relabeling."
+        },
+        {
+          "transformation": "negative_holder_partition_merge",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 1,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks the independence partition required by holder relabeling."
+        },
+        {
+          "transformation": "negative_holder_partition_merge",
+          "dimension": "causal_branch_support",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks the independence partition required by holder relabeling."
+        },
+        {
+          "transformation": "negative_holder_partition_merge",
+          "dimension": "graph_reversal_count",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks the independence partition required by holder relabeling."
+        }
+      ],
+      "invariant_failure_dimensions": [
+        "distinct_holder_redundancy"
+      ],
+      "verdict": "negative control changed D1 dimensions without an admissible transport rule"
+    },
+    {
+      "name": "negative_causal_graph_nonisomorphism",
+      "kind": "negative_control",
+      "admissible": false,
+      "gauge_pure": false,
+      "before_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "after_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 1,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          1,
+          2
+        ]
+      },
+      "classifications": [
+        {
+          "transformation": "negative_causal_graph_nonisomorphism",
+          "dimension": "accessible_support",
+          "classification": "undefined",
+          "before_value": 4,
+          "after_value": 4,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks causal-graph isomorphism and reachability preservation."
+        },
+        {
+          "transformation": "negative_causal_graph_nonisomorphism",
+          "dimension": "distinct_holder_redundancy",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks causal-graph isomorphism and reachability preservation."
+        },
+        {
+          "transformation": "negative_causal_graph_nonisomorphism",
+          "dimension": "causal_branch_support",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 1,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks causal-graph isomorphism and reachability preservation."
+        },
+        {
+          "transformation": "negative_causal_graph_nonisomorphism",
+          "dimension": "graph_reversal_count",
+          "classification": "undefined",
+          "before_value": 2,
+          "after_value": 2,
+          "transport_rule": "No transport rule: the transformation is outside the admissible action.",
+          "reason": "Breaks causal-graph isomorphism and reachability preservation."
+        }
+      ],
+      "invariant_failure_dimensions": [
+        "causal_branch_support"
+      ],
+      "verdict": "negative control changed D1 dimensions without an admissible transport rule"
+    }
+  ],
+  "dimension_summaries": [
+    {
+      "dimension": "accessible_support",
+      "pure_gauge_classification": "invariant",
+      "boundary_classification": "covariant",
+      "negative_control_failures": [],
+      "future_connection_status": "eligible only as a boundary-indexed transported coordinate",
+      "observable_status": "conditionally observable once the access boundary and partition are declared"
+    },
+    {
+      "dimension": "distinct_holder_redundancy",
+      "pure_gauge_classification": "invariant",
+      "boundary_classification": "covariant",
+      "negative_control_failures": [
+        "negative_record_incidence_break",
+        "negative_holder_partition_merge"
+      ],
+      "future_connection_status": "eligible only as a boundary-indexed transported coordinate",
+      "observable_status": "conditionally observable once the access boundary and partition are declared"
+    },
+    {
+      "dimension": "causal_branch_support",
+      "pure_gauge_classification": "invariant",
+      "boundary_classification": "covariant",
+      "negative_control_failures": [
+        "negative_record_incidence_break",
+        "negative_causal_graph_nonisomorphism"
+      ],
+      "future_connection_status": "eligible only as a boundary-indexed transported coordinate",
+      "observable_status": "formal-only in current physical claims"
+    },
+    {
+      "dimension": "graph_reversal_count",
+      "pure_gauge_classification": "invariant",
+      "boundary_classification": "covariant",
+      "negative_control_failures": [],
+      "future_connection_status": "eligible only as a boundary-indexed transported coordinate",
+      "observable_status": "formal-only in current physical claims"
+    }
+  ],
+  "strongest_claim": "All four tested D1 dimensions are invariant under pure finite relabeling/isomorphism gauge maps in the reference audit, and all four are covariant under explicit access-boundary refinement or coarsening. Boundary changes are observer-frame data, not gauge redundancy.",
+  "guardrail": "T111 supplies only an invariance/covariance entry condition for future finality-connection work. It gives no curvature, gravity, or anomaly-cancellation upgrade.",
+  "recommendation": "Use the four D1 components as transportable boundary-indexed profile coordinates under the stated finite maps. Do not treat values across different access boundaries as one gauge-invariant physical scalar, and keep branch support and graph reversal count at formal status until separate physical reductions are supplied.",
+  "verdict": {
+    "pure_gauge_maps_preserve_all_d1_dimensions": true,
+    "boundary_maps_are_not_treated_as_gauge": true,
+    "negative_controls_change_alleged_invariants": true,
+    "no_curvature_gravity_or_anomaly_claim": true
+  }
+}

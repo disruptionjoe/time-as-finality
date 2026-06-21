@@ -83,11 +83,11 @@ def test_h1_t34_absorbed_losskernel_nonempty(t34):
 
 
 # ---------------------------------------------------------------------------
-# H2: Lax-functorial (monotone)
+# H2: Monoid-valued accumulation (monotone)
 # ---------------------------------------------------------------------------
 
 
-def test_h2_lax_functorial(t37, t34):
+def test_h2_monoid_accumulation(t37, t34):
     result = verify_h2(t37, t34)
     assert result["h2_passes"], (
         f"H2 monotonicity failed: "

@@ -1,0 +1,184 @@
+{
+  "topology": {
+    "naive_y_pi1_order": 1,
+    "naive_y_nontrivial_z2_holonomy_available": false,
+    "spin_lift_pi1_order": 2,
+    "spin_lift_z2_candidate_available": true,
+    "verdict": "Naive Y is the negative control; only the spin lift supplies a Z/2 candidate host for the loop."
+  },
+  "phase": {
+    "convention": {
+      "name": "T112_standard_chsh_positive_generator_spin_lift",
+      "alice_a0": 0.0,
+      "alice_a1": 1.5707963267948966,
+      "bob_b0": 0.7853981633974483,
+      "bob_b1": -0.7853981633974483,
+      "chsh_formula": "S = E00 + E01 + E10 - E11 for singlet Eij = -cos(Ai-Bj)",
+      "spin_lift_rule": "Each detector-setting change is lifted as a positive pi/2 generator step in the spin frame; four changes give total 2*pi. This is a finite proxy convention, not an unconstrained solid-angle theorem."
+    },
+    "edge_angle_changes": [
+      {
+        "edge": "A0B0->A0B1",
+        "party": "Bob",
+        "signed_delta_radians": -1.5707963267948966
+      },
+      {
+        "edge": "A0B1->A1B1",
+        "party": "Alice",
+        "signed_delta_radians": 1.5707963267948966
+      },
+      {
+        "edge": "A1B1->A1B0",
+        "party": "Bob",
+        "signed_delta_radians": 1.5707963267948966
+      },
+      {
+        "edge": "A1B0->A0B0",
+        "party": "Alice",
+        "signed_delta_radians": -1.5707963267948966
+      }
+    ],
+    "positive_generator_total_angle": 6.283185307179586,
+    "positive_generator_phase": [
+      -1.0,
+      1.2246467991473532e-16
+    ],
+    "positive_generator_z2_sign": -1,
+    "signed_closed_total_angle": 0.0,
+    "signed_closed_z2_sign": 1,
+    "convention_is_load_bearing": true,
+    "verdict": "The declared positive-generator spin lift gives phase -1. The signed closed-angle control gives +1, so the lift convention and H3 identification are load-bearing."
+  },
+  "chsh": {
+    "correlations": {
+      "A0B0": -0.7071067811865476,
+      "A0B1": -0.7071067811865476,
+      "A1B1": 0.7071067811865475,
+      "A1B0": -0.7071067811865476
+    },
+    "chsh_value": -2.8284271247461903,
+    "abs_chsh_matches_tsirelson": true,
+    "majority_section_count": 16,
+    "majority_holonomies": [
+      -1
+    ],
+    "canonical_majority_section": {
+      "A0B0": [
+        1,
+        -1
+      ],
+      "A0B1": [
+        1,
+        -1
+      ],
+      "A1B1": [
+        1,
+        1
+      ],
+      "A1B0": [
+        1,
+        -1
+      ]
+    },
+    "canonical_transition_pattern": [
+      1,
+      -1,
+      1,
+      1
+    ],
+    "canonical_holonomy": -1
+  },
+  "causal_control": {
+    "total_sections": 256,
+    "locally_causal_sections": 16,
+    "locally_causal_all_holonomy_plus_one": true,
+    "holonomy_plus_one_sections": 128,
+    "non_lc_holonomy_plus_one_sections": 112,
+    "biconditional_restored": false,
+    "example_non_lc_holonomy_plus_one": {
+      "A0B0": [
+        1,
+        1
+      ],
+      "A0B1": [
+        1,
+        1
+      ],
+      "A1B1": [
+        1,
+        1
+      ],
+      "A1B0": [
+        -1,
+        -1
+      ]
+    },
+    "example_non_lc_transition_pattern": [
+      1,
+      1,
+      -1,
+      -1
+    ]
+  },
+  "representative_control": {
+    "all_support_sections": 256,
+    "all_support_holonomy_counts": {
+      "-1": 128,
+      "1": 128
+    },
+    "majority_representatives_all_holonomy_minus_one": true,
+    "arbitrary_support_has_holonomy_plus_one": true,
+    "arbitrary_support_has_holonomy_minus_one": true,
+    "representative_dependence_present": true,
+    "example_support_holonomy_plus_one": {
+      "A0B0": [
+        1,
+        1
+      ],
+      "A0B1": [
+        1,
+        1
+      ],
+      "A1B1": [
+        1,
+        1
+      ],
+      "A1B0": [
+        1,
+        1
+      ]
+    },
+    "example_support_holonomy_minus_one": {
+      "A0B0": [
+        1,
+        1
+      ],
+      "A0B1": [
+        1,
+        1
+      ],
+      "A1B1": [
+        1,
+        1
+      ],
+      "A1B0": [
+        1,
+        -1
+      ]
+    },
+    "verdict": "All maximum-probability representatives for the declared CHSH angles have holonomy -1, but the full nonzero support contains both holonomy classes. The probabilistic CHSH holonomy statement is therefore representative-qualified."
+  },
+  "finite_proxy_passed": true,
+  "h3_status": "conditional: H3 must identify the finite Cech transition cochain with the declared Y_spin spin-holonomy loop",
+  "strongest_conditional_claim": "Under H3 and the declared positive-generator spin-lift convention, the CHSH majority-representative Cech holonomy -1 is realized by the Z/2 spin-lift candidate phase -1. The naive observerse Y control blocks the same claim without the spin lift.",
+  "not_claimed": [
+    "GU physics is validated",
+    "quantum probabilities or Tsirelson's bound are derived from TaF",
+    "all contextuality is spin holonomy",
+    "holonomy +1 is equivalent to local causality",
+    "the signed closed detector path has phase -1 without the declared lift"
+  ],
+  "open_blocker": "The continuous bipartite Berry/solid-angle theorem is still not proved. This artifact only audits the finite spin-lift proxy and makes the H3/convention dependence explicit.",
+  "recommended_next": "If promoted, replace the finite positive-generator proxy with a continuous spin-frame path theorem whose solid angle and orientation are invariantly specified.",
+  "claim_boundary": "T112 sharpens the T63 dictionary conditionally. It preserves T65's one-way causal reading and leaves the false LC iff holonomy +1 biconditional false."
+}

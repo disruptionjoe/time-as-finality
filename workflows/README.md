@@ -17,7 +17,8 @@ how the program thinks. This README is the structural index.
   (`advance-primary`, `advance-secondary`, `challenge-primary`, `integrate-results`).
 - **explore/** — expand and search the idea landscape
   (`line-discovery`, `line-incubation`, `foundation-ingestion`,
-  `cross-disciplinary-synthesis`, `landscape-reassessment`, `persona-expansion`).
+  `cross-disciplinary-synthesis`, `landscape-reassessment`, `persona-expansion`,
+  `research-constellation-orchestrator`).
 - **govern/** — improve the quality, fairness, memory, and allocation of the
   program (`line-review`, `lifecycle-review`, `portfolio-review`, `decision-review`,
   `line-intake`, `persona-governance`, `research-memory`, `information-portfolio`).

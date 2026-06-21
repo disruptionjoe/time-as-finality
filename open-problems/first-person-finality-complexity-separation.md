@@ -43,3 +43,12 @@ The complexity-separation framing gives a different entry: if first-person final
 ## Contribution Needed
 
 Define the first-person finality verification problem precisely enough to place it in a complexity hierarchy. The minimum deliverable is a clear statement of the problem; the significant deliverable is either a reduction showing it is equivalent to a known problem or an oracle separation showing it is not.
+
+## Current Narrow Theorem Target
+
+The next non-philosophical target is not a full complexity separation. It is
+the [Accessible Witness Gap Restriction Theorem](accessible-witness-gap-restriction-theorem.md):
+define restriction maps for the T19 proposition-domain gap object and test
+whether `G(U)=A(U)-F(U)` restricts like the T57 gap object. If the theorem
+fails, T19 remains a finite accessible-witness lemma rather than a
+gap-presheaf result.

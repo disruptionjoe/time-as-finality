@@ -36,10 +36,11 @@ Specifically:
 
 ## Why This Matters
 
-The H⁰/H¹ cover-structure investigation established that cover topology is the
-primary determinant of failure type. Loss morphisms are the algebraic objects
-that transform one restriction system into another. Whether they can change failure
-type determines:
+The H⁰/H¹ cover-structure investigation suggested, within the implemented
+fixture family, that cover topology constrains failure type once the coefficient
+system, support semantics, and allowed loss morphisms are fixed. Loss morphisms
+are the algebraic objects that transform one restriction system into another.
+Whether they can change failure type determines:
 
 1. Whether H⁰ and H¹ failures are stable under the typed-forgetting operations
    in the repo (PO1 projection, access restriction, record filtering).
@@ -62,7 +63,7 @@ changes. Can remove cycles (cyclic → acyclic).
 
 TaF loss operations primarily belong to Class 1 (forgetting record content, projecting
 dimensions) or Class 2 variant where patches are dropped (restricting to a sub-cover,
-as in T58 distributed contextuality: 4-cycle → Alice's 2-context sub-cover).
+as in T131 distributed contextuality: 4-cycle → Alice's 2-context sub-cover).
 
 A third variant — **patch identification** (merging two non-adjacent patches, which
 can CREATE cycles from acyclic covers) — is NOT a loss operation in the TaF sense:
@@ -224,7 +225,9 @@ For any TaF loss morphism f (topology-preserving or sub-cover restriction):
 - This is a directional conservation law on reconstruction failure type
 
 This is a candidate law for the implemented finite families, not a general
-cohomology monotonicity theorem.
+cohomology monotonicity theorem. External review blocks promotion until the
+allowed morphism class and coefficient/support hypotheses are stated tightly
+enough to exclude known same-cover support-presheaf counterexamples.
 
 ---
 

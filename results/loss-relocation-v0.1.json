@@ -1,0 +1,351 @@
+{
+  "verdicts": [
+    {
+      "scenario": "charge_neutrality_debt",
+      "lost_axis": "charge",
+      "displaced_form": "admissibility_condition",
+      "target_pair": [
+        "matter",
+        "matter"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "matter_plus",
+          "right_source": "matter_plus",
+          "allowed": false
+        },
+        {
+          "left_source": "matter_plus",
+          "right_source": "matter_minus",
+          "allowed": true
+        },
+        {
+          "left_source": "matter_minus",
+          "right_source": "matter_plus",
+          "allowed": true
+        },
+        {
+          "left_source": "matter_minus",
+          "right_source": "matter_minus",
+          "allowed": false
+        }
+      ],
+      "hidden_values": [
+        -1,
+        1
+      ],
+      "derived_witness_pairs": [
+        [
+          "matter_plus",
+          "matter_plus"
+        ],
+        [
+          "matter_plus",
+          "matter_minus"
+        ],
+        [
+          "matter_minus",
+          "matter_plus"
+        ],
+        [
+          "matter_minus",
+          "matter_minus"
+        ]
+      ],
+      "relocation_class": "reconstruction_debt",
+      "source_rule_name": "neutral_pair_allowed",
+      "expected_reading": "Forgetting charge does not erase the charge rule; it creates a target-side obligation to recover a lift before judging whether the interaction is allowed."
+    },
+    {
+      "scenario": "spin_orientation_debt",
+      "lost_axis": "spin",
+      "displaced_form": "orientation_debt",
+      "target_pair": [
+        "spin_shadow",
+        "spin_shadow"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "spin_up",
+          "right_source": "spin_up",
+          "allowed": false
+        },
+        {
+          "left_source": "spin_up",
+          "right_source": "spin_down",
+          "allowed": true
+        },
+        {
+          "left_source": "spin_down",
+          "right_source": "spin_up",
+          "allowed": true
+        },
+        {
+          "left_source": "spin_down",
+          "right_source": "spin_down",
+          "allowed": false
+        }
+      ],
+      "hidden_values": [
+        "down",
+        "up"
+      ],
+      "derived_witness_pairs": [
+        [
+          "spin_up",
+          "spin_up"
+        ],
+        [
+          "spin_up",
+          "spin_down"
+        ],
+        [
+          "spin_down",
+          "spin_up"
+        ],
+        [
+          "spin_down",
+          "spin_down"
+        ]
+      ],
+      "relocation_class": "reconstruction_debt",
+      "source_rule_name": "opposite_spin_coupling",
+      "expected_reading": "Forgetting spin orientation leaves a coupling judgment that depends on which hidden orientations are lifted."
+    },
+    {
+      "scenario": "mass_persistence_debt",
+      "lost_axis": "mass",
+      "displaced_form": "persistence_debt",
+      "target_pair": [
+        "body",
+        "body"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "light_body",
+          "right_source": "light_body",
+          "allowed": false
+        },
+        {
+          "left_source": "light_body",
+          "right_source": "heavy_body",
+          "allowed": true
+        },
+        {
+          "left_source": "heavy_body",
+          "right_source": "light_body",
+          "allowed": true
+        },
+        {
+          "left_source": "heavy_body",
+          "right_source": "heavy_body",
+          "allowed": true
+        }
+      ],
+      "hidden_values": [
+        1,
+        3
+      ],
+      "derived_witness_pairs": [
+        [
+          "light_body",
+          "light_body"
+        ],
+        [
+          "light_body",
+          "heavy_body"
+        ],
+        [
+          "heavy_body",
+          "light_body"
+        ],
+        [
+          "heavy_body",
+          "heavy_body"
+        ]
+      ],
+      "relocation_class": "reconstruction_debt",
+      "source_rule_name": "combined_mass_persists",
+      "expected_reading": "Forgetting mass leaves persistence/resistance as a debt: the target body cannot decide persistence without a mass lift."
+    },
+    {
+      "scenario": "phase_history_debt",
+      "lost_axis": "phase",
+      "displaced_form": "path_memory",
+      "target_pair": [
+        "path_shadow",
+        "path_shadow"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "phase_zero",
+          "right_source": "phase_zero",
+          "allowed": true
+        },
+        {
+          "left_source": "phase_zero",
+          "right_source": "phase_pi",
+          "allowed": false
+        },
+        {
+          "left_source": "phase_pi",
+          "right_source": "phase_zero",
+          "allowed": false
+        },
+        {
+          "left_source": "phase_pi",
+          "right_source": "phase_pi",
+          "allowed": true
+        }
+      ],
+      "hidden_values": [
+        0,
+        1
+      ],
+      "derived_witness_pairs": [
+        [
+          "phase_zero",
+          "phase_zero"
+        ],
+        [
+          "phase_zero",
+          "phase_pi"
+        ],
+        [
+          "phase_pi",
+          "phase_zero"
+        ],
+        [
+          "phase_pi",
+          "phase_pi"
+        ]
+      ],
+      "relocation_class": "reconstruction_debt",
+      "source_rule_name": "equal_phase_interferes",
+      "expected_reading": "Forgetting phase does not make phase irrelevant; it becomes path-memory debt for interference-sensitive judgments."
+    },
+    {
+      "scenario": "gauge_representative_absorbed",
+      "lost_axis": "gauge",
+      "displaced_form": "absorbed_freedom",
+      "target_pair": [
+        "field_shadow",
+        "field_shadow"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "gauge_rep_0",
+          "right_source": "gauge_rep_0",
+          "allowed": true
+        },
+        {
+          "left_source": "gauge_rep_0",
+          "right_source": "gauge_rep_1",
+          "allowed": true
+        },
+        {
+          "left_source": "gauge_rep_1",
+          "right_source": "gauge_rep_0",
+          "allowed": true
+        },
+        {
+          "left_source": "gauge_rep_1",
+          "right_source": "gauge_rep_1",
+          "allowed": true
+        }
+      ],
+      "hidden_values": [
+        "g0",
+        "g1"
+      ],
+      "derived_witness_pairs": [],
+      "relocation_class": "absorbed_freedom",
+      "source_rule_name": "same_invariant_charge",
+      "expected_reading": "Forgetting a pure gauge representative can be harmless when the judged rule is gauge-invariant across all lifts."
+    },
+    {
+      "scenario": "lorentz_access_constraint",
+      "lost_axis": "lorentz_frame",
+      "displaced_form": "frame_constraint",
+      "target_pair": [
+        "event_a",
+        "event_b"
+      ],
+      "lift_judgments": [
+        {
+          "left_source": "event_a_frame_0",
+          "right_source": "event_b_frame_0",
+          "allowed": false
+        },
+        {
+          "left_source": "event_a_frame_0",
+          "right_source": "event_b_frame_1",
+          "allowed": false
+        },
+        {
+          "left_source": "event_a_frame_1",
+          "right_source": "event_b_frame_0",
+          "allowed": false
+        },
+        {
+          "left_source": "event_a_frame_1",
+          "right_source": "event_b_frame_1",
+          "allowed": false
+        }
+      ],
+      "hidden_values": [
+        "f0",
+        "f1"
+      ],
+      "derived_witness_pairs": [],
+      "relocation_class": "stable_constraint_surface",
+      "source_rule_name": "causal_access_exists",
+      "expected_reading": "Forgetting frame labels can still leave a stable target-side constraint when every source lift denies causal access."
+    }
+  ],
+  "derived_debt_count": 4,
+  "stable_constraint_count": 1,
+  "absorbed_freedom_count": 1,
+  "false_conservation_rejected": true,
+  "source_anchored_derivation": true,
+  "six_axis_bridge": [
+    [
+      "L1 substrate",
+      "lost internal coordinate",
+      "target constraint or debt"
+    ],
+    [
+      "L2 observer",
+      "lost resolving access",
+      "admissibility obligation"
+    ],
+    [
+      "L3 pairing",
+      "lost coupling channel",
+      "provenance requirement"
+    ],
+    [
+      "L4 causal order",
+      "lost frame/order witness",
+      "access constraint"
+    ],
+    [
+      "L5 emergence",
+      "lost microstate distinction",
+      "stable equivalence class"
+    ],
+    [
+      "L6 coordination loop",
+      "lost feedback state",
+      "reconstruction debt"
+    ]
+  ],
+  "strongest_claim": "A finite projection can relocate lost structure into target-side debt or constraint when target judgments vary across source lifts. The relocation is derived from preimage fibers, not from free-text loss labels. But there is no conservation law: gauge-like lost structure can be absorbed when every lift gives the same invariant judgment.",
+  "improved": "T107 turns the intuition 'track where lost structure goes' into a finite audit rule: inspect source lifts of a target judgment. Mixed lift verdicts derive reconstruction debt; uniform forbidden lifts derive a constraint surface; uniform invariant lifts absorb the loss.",
+  "weakened": "This weakens any strong conservation slogan. Lost structure need not reappear as a new object. It reappears only when a target-side judgment remains lift-dependent or uniformly constrained after projection.",
+  "falsification_condition": "Reject the relocation program as independent content if every derived debt is recoverable from ordinary target CSP data without source-fiber inspection, or if source-fiber inspection never separates debt, stable constraint, and absorbed freedom beyond standard provenance bookkeeping.",
+  "tf1_update": "TF1 gains a sharper candidate semantics: a LossKernel witness obligation is derivable when a target judgment has mixed verdicts over the source preimage fiber. Non-empty loss is not enough, and some loss is absorbed.",
+  "claim_ledger_update": "Add T107 to TF1: loss relocation is modeled by source-fiber lift analysis. Mixed lift verdicts produce reconstruction debt, uniform forbidden lifts produce a stable constraint surface, and uniform invariant lifts show absorbed freedom. This supports a source-anchored derivation path while rejecting conservation-style language.",
+  "open_blocker": "The finite rule must be compared against why-not provenance, abstract interpretation, lenses, and CSP explanation machinery. T107 supplies semantics, not prior-art separation.",
+  "recommended_next": "Re-express T99's typed witness obligations with this source-fiber rule and test whether the quotient separation still survives."
+}

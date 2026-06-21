@@ -10,7 +10,22 @@ Conjecture.
 
 ## Status
 
-Partially supported.
+Roadmap umbrella. Q1 should not be used as a single paper-facing
+`partially_supported` physics claim.
+
+## Child Claims
+
+- [Q1A: Access-Boundary Record Accounting](Q1A-access-boundary-record-accounting.md)
+  is bookkeeping-only after T104 absorbed the T103 witness into
+  provenance-aware Quantum Darwinism.
+- [Q1B: Detector Provenance Admissibility](Q1B-detector-provenance-admissibility.md)
+  is externally blocked until a real pre-registered event-log packet passes the
+  raw-log, dry-run, and authority-domain gates.
+- [Q1C: Weak-Measurement Discriminator Gate](Q1C-weak-measurement-discriminator-gate.md)
+  is dormant until a concrete platform supplies a verdict-changing independent
+  axis.
+- [Q1D: Contextuality And No-Signalling Guardrail](Q1D-contextuality-no-signalling-guardrail.md)
+  is a constraint on admissible language, not a prediction.
 
 ## What This Does Not Claim
 
@@ -73,6 +88,20 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T83: Q1 Detector Null Criterion](../tests/T83-q1-detector-null-criterion.md)
 - [T85: Measured Detector Channel Dominance](../tests/T85-measured-detector-channel-dominance.md)
 - [T86: Ambiguous-Tag Channel Independence](../tests/T86-ambiguous-tag-channel-independence.md)
+- [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
+- [T91: Weak-Measurement Platform Audit](../tests/T91-weak-measurement-platform-audit.md)
+- [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
+- [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
+- [T95: Detector Stack Export Map](../tests/T95-detector-stack-export-map.md)
+- [T96: Detector Feasibility Checklist](../tests/T96-detector-feasibility-checklist.md)
+- [T97: Detector Dry-Run Packet Skeleton](../tests/T97-detector-dry-run-packet-skeleton.md)
+- [T98: Detector Operator-Handoff Audit](../tests/T98-detector-operator-handoff-audit.md)
+- [T100: Detector Authority-Domain Bound](../tests/T100-detector-authority-domain-bound.md)
+- [T101: Q1 Branch Adjudication](../tests/T101-q1-branch-adjudication.md)
+- [T102: Q1A Neighbor Comparison Gate](../tests/T102-q1a-neighbor-comparison.md)
+- [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
+- [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
+- [T140: Q1 Frontier Escape Matrix](../tests/T140-q1-frontier-escape-matrix.md)
 
 ## T21 Result
 
@@ -321,16 +350,214 @@ as schema channels, but only as isolated, pre-registered raw-log tests. It does
 not upgrade Q1 into detector dynamics or empirical support without a real T78
 deployment.
 
+## T91 Result
+
+[T91](../tests/T91-weak-measurement-platform-audit.md) instantiates T90 on
+three named superconducting weak-measurement families: homodyne trajectories,
+partial-measurement uncollapse, and mid-flight quantum-jump reversal.
+
+All three fail the independent-axis gate. The homodyne and quantum-jump routes
+derive their candidate TaF branch/reversal witnesses from the same monitored
+record already used by standard quantum trajectory theory. The uncollapse route
+fails differently: its apparent reversal witness is conditioned on
+success/null-outcome selection, so it is not yet a pre-registered independent
+reversal-cost observable.
+
+This narrows T12 again. The currently named superconducting weak-measurement
+platforms validate trajectory control and feedback, but they do not yet supply
+an independent D1 branch-support or reversal-cost axis. T12 should therefore be
+treated as a blocked operationalization problem until a platform names an axis
+that is distinct from the monitored record itself and does not rely on
+postselection.
+
+## T93 Result
+
+[T93](../tests/T93-weak-measurement-undo-cost-independence.md) isolates the
+physically metered undo-cost escape hatch left by T91.
+
+The audit rejects three common false positives. Control-pulse energy or
+schedule bookkeeping is a `null_proxy_cost`; success-conditioned reversal is a
+`null_postselected_cost`; and an independent meter that varies without changing
+the verdict is `independent_but_not_decisive`.
+
+The only admitted shape is stricter: a calibrated, pre-registered meter must
+change the TaF verdict while coherence, redundancy, access, and reversal-success
+statistics are fixed. No real platform in the repo currently supplies that
+meter, so T12 remains blocked rather than upgraded.
+
+## T94 Result
+
+[T94](../tests/T94-weak-measurement-priority-demotion.md) turns the accumulated
+weak-measurement obstruction chain into a route-selection rule.
+
+Detector provenance remains blocked but still executable on a named
+instrumentation path: source-anchored stack, pre-registered raw-log protocol,
+and isolated rescue witnesses under hostile ambiguity. Weak measurement is in a
+worse state. After T91 and T93, it has no real platform with a pre-registered
+independent branch, provenance, or undo-cost axis.
+
+The roadmap consequence is now explicit rather than conditional:
+
+```text
+detector provenance stays ahead;
+weak measurement is reinstated only after a real platform clears the
+independent-axis gate.
+```
+
+## T100 Result
+
+[T100](../tests/T100-detector-authority-domain-bound.md) upgrades the recent
+detector-governance narrowing from staffing examples to a complete finite
+enumeration over the five T97 authority domains.
+
+The result is exact rather than suggestive:
+
+```text
+minimum admissible authority domains = 4
+```
+
+No partition with three or fewer authority domains survives once trust-auditor
+independence and governance/control/archive separation are enforced. There are
+exactly three minimal four-domain merge classes, each merging instrument
+operation with exactly one of governance, control design, or archive custody,
+while trust auditing remains separate.
+
+This narrows detector provenance again. Under the current T97/T98 packet, a
+small-lab future deployment is not merely difficult; it is structurally
+inadmissible unless the packet itself changes.
+
+## T101 Result
+
+[T101](../tests/T101-q1-branch-adjudication.md) adjudicates the whole Q1 branch
+rather than adding another detector fixture. It finds that Q1 should not be
+used as one paper-facing `partially_supported` physics conjecture without
+splitting its evidence standards.
+
+The current split is:
+
+```text
+Q1A access-boundary record accounting
+Q1B detector provenance admissibility
+Q1C dormant weak-measurement discriminator gate
+Q1D contextuality/no-signalling guardrail
+```
+
+No current branch earns new measurement dynamics or empirical quantum support.
+The strongest surviving content is narrower: observer-indexed access and
+provenance accounting over already formed records, plus explicit gates for
+detector deployment and weak-measurement reinstatement.
+
+## T102 Result
+
+[T102](../tests/T102-q1a-neighbor-comparison.md) asks the harder external
+question left open by T101: whether the surviving Q1A branch actually
+distinguishes itself from the nearby frameworks the repo already names.
+
+The result is another narrowing step. Q1A does not yet earn paper-facing
+status as a distinct measurement framework or interpretation. Its current
+defensible content is:
+
+```text
+observer-indexed access-boundary and independence accounting over already
+formed records
+```
+
+The best remaining route to distinctness is now explicit. Q1A should be
+upgraded only after one fixed-data witness holds standard quantum-side
+summaries fixed:
+
+- decoherence / pointer-basis evidence;
+- fragment-information summaries;
+- ordinary branch/history availability;
+
+while changing the D1 verdict only through the observer's access cut or the
+independence partition over duplicate records.
+
+Until that gate is cleared, Q1A should be compared as a bookkeeping layer over
+decoherence, Quantum Darwinism, consistent histories, relational quantum
+mechanics, QBism, and many-worlds, not as a separate theory.
+
+## T103 Result
+
+[T103](../tests/T103-q1a-fixed-data-witness.md) clears the T102 gate only in
+the internal record-accounting sense. It constructs two cases with the same:
+
+- `computational_z` pointer basis;
+- reduced pointer coherence `0.0`;
+- fragment mutual information `E1 = E2 = E3 = 1.0` bit;
+- accessible raw redundancy `3`;
+- ordinary branch/history availability.
+
+The cases differ only in the independence partition. If `E1`, `E2`, and `E3`
+are independent provenance classes, D1 finalizes. If `E3` is a copied archive
+of `E1`, D1 does not finalize. A hidden-partition control withholds D1, and
+controls that change coherence, raw redundancy, or branch/history availability
+are rejected before scoring.
+
+This is a real Q1A fixed-data witness, but it is not a physics upgrade. The
+surviving delta is an access/provenance accounting predicate over already
+formed records. If nearby frameworks admit the same provenance-aware
+independence partition, Q1A collapses to disciplined bookkeeping.
+
+## T104 Result
+
+[T104](../tests/T104-q1a-provenance-aware-darwinism-absorption.md) executes
+that collapse test directly against the nearest surviving neighbor threat:
+Quantum Darwinism with provenance-aware fragment partitioning.
+
+T104 reuses the T103 fixed-data family without changing pointer basis,
+decoherence, fragment-information summaries, accessible raw redundancy, or
+ordinary branch/history availability. It then replaces raw fragment counting
+with provenance-aware fragment classes before comparing verdicts.
+
+The result is a clean absorption in the tested family:
+
+- independent case: raw redundancy `3`, provenance-aware redundancy `3`, D1
+  `finalized`;
+- copied-archive case: raw redundancy `3`, provenance-aware redundancy `2`,
+  D1 `not_finalized`;
+- hidden-partition case: raw redundancy `3`, provenance-aware redundancy
+  unavailable, D1 withholds rather than inferring finality.
+
+This removes the remaining external-distinction reading from the current T103
+family. Once fragment partitioning is audited on both sides, the present Q1A
+witness behaves like provenance-disciplined redundancy accounting over already
+formed records, not a distinct measurement theory.
+
 ## Contribution Needed
 
-Obtain one concrete detector deployment that satisfies T78 and publish its raw
-event-level logs: event loss, signature verification failures, replay/spoof
-tests, perturbation trials, trust-boundary audits, and DAG truncation exports.
-If only dashboard summaries are available, withhold the detector branch rather
-than treating it as empirical support. Only after a real raw-log audit should
-this branch be compared with decoherence, quantum Darwinism, relational QM,
-consistent histories, many-worlds, and QBism. The next strongest internal move
-is narrower: construct a hostile raw-log family where authenticated tags are
-ambiguous but perturbation response or DAG observability alone changes the
-verdict. If that cannot be done honestly, remove those channels from the core
-detector schema.
+T140 adds a branch-frontier rule before those needs:
+
+```text
+Do not add another Q1 model unless it explicitly satisfies a child-branch
+escape gate.
+```
+
+For now, no child branch has an active internal upgrade route. Q1B remains the
+only non-null experimental direction, and it is externally blocked pending a
+signed pre-event manifest and real event-level packet.
+
+Four concrete needs remain.
+
+First, Q1 is now a roadmap umbrella with separate Q1A-Q1D claim files. Do not
+use Q1 as a single supported physics claim in paper-facing text.
+
+Second, for Q1A, derive a future fixed-data witness where D1 still diverges
+after the provenance-aware fragment partition is shared. T104 shows that the
+current T103 family is absorbed once that partition is audited, so merely
+reasserting independence classes is no longer enough.
+
+Third, for detector provenance, obtain one concrete deployment that satisfies T78 and
+publish its raw event-level logs: event loss, signature verification failures,
+replay/spoof tests, perturbation trials, trust-boundary audits, and DAG
+truncation exports. If only dashboard summaries are available, withhold the
+detector branch rather than treating it as empirical support.
+
+Fourth, for weak measurement, stop treating standard homodyne, uncollapse, or
+quantum-jump-reversal platforms as near-ready T12 tests. T94 makes the
+priority consequence explicit: T12 is now demoted below the detector-
+provenance route in the active roadmap. Reinstate it only if a monitored
+platform can name either a duplicated-record provenance channel during
+monitoring or a calibrated undo-cost meter satisfying T93: fixed before
+analysis, independent of the monitored record and control schedule, and not
+conditioned on reversal success.

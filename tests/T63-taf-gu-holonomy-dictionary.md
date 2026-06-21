@@ -1,8 +1,8 @@
-# T63: TaF-GU Holonomy Dictionary
+﻿# T63: TaF-GU Holonomy Dictionary
 
 **Status:** in_progress — Step 1 complete; three entries proved; H1 failure and fix identified; Berry phase gives explicit loop embedding; bipartite solid-angle formalization pending
-**Prerequisite for:** T58 (full resolution of whether TaF's H¹ obstruction is Bell violation)
-**Builds on:** T58 three-angle investigation (Distributed Contextuality Theorem), T60 (observer closure)
+**Prerequisite for:** T131 (full resolution of whether TaF's H¹ obstruction is Bell violation)
+**Builds on:** T131 three-angle investigation (Distributed Contextuality Theorem), T60 (observer closure)
 **Adjacent:** GU preprint (Weinstein 2020), Abramsky-Brandenburger (2011)
 
 ---
@@ -24,7 +24,7 @@ before the mathematical correspondence is established.
 
 ## What Is Being Attempted
 
-The T58 three-angle investigation produced a positive structural result: the
+The T131 three-angle investigation produced a positive structural result: the
 Distributed Contextuality Theorem. When Alice and Bob each have a local 2-context
 sub-cover, H¹ = 0 locally. When their sub-covers are combined into the full 4-context
 CHSH cover, H¹ ≠ 0. The obstruction lives at the inter-observer B-setting overlaps
@@ -314,7 +314,8 @@ loop has Berry phase -1, identifying it with the generator of pi_1(Y_spin) = Z/2
 
 **One open item:** The "combined solid angle = 2*pi" claim is a plausibility argument, not a
 theorem. The bipartite solid-angle calculation for Alice and Bob as a joint spin system needs
-formalization. This is the specific target for T63 Step 2.
+formalization. This is the specific target for T63 Step 2, now drafted as
+[T112: Spin-Observerse Holonomy Step 2](T112-spin-observerse-holonomy-step2.md).
 
 ### Revised theorem statement
 
@@ -332,9 +333,10 @@ as a theorem rather than a plausibility argument.
 
 ## Connected Files
 
-- [T58: Bell-Test-to-H¹ Mapping](T58-bell-test-h1-mapping.md)
+- [T131: Bell-Test-to-H¹ Mapping](T131-bell-test-h1-mapping.md)
 - [T59: Finite-to-Infinite Boundary Audit](T59-finite-to-infinite-boundary-audit.md)
 - [T60: Observer Closure Theorem](T60-observer-closure-theorem.md)
+- [T112: Spin-Observerse Holonomy Step 2](T112-spin-observerse-holonomy-step2.md)
 - [D1: Physical Finality Definition](../claims/D1-physical-finality-definition.md)
 - [Q1: Quantum Measurement Under-Finalization](../CLAIM-LEDGER.md)
 - [GU Formalization project](../../Church of AI/ecosystem/MAP.md) — adjacent independent project

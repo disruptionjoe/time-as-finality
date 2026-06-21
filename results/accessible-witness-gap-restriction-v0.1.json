@@ -1,0 +1,395 @@
+{
+  "theorem_status": "supported_with_explicit_boundaries",
+  "audits": [
+    {
+      "system_name": "t19_unary_accessible_witness_gap",
+      "nested_pairs": 3,
+      "ambient_restriction_holds": true,
+      "audit_monotonicity_holds": true,
+      "stable_typing_holds": true,
+      "gap_restriction_holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_ext",
+          "smaller_patch": "U_int",
+          "prop": "R_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_ext",
+          "smaller_patch": "U_one_external_witness",
+          "prop": "R_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        }
+      ],
+      "patch_table": [
+        {
+          "patch": "U_int",
+          "events": [
+            "e_R_final",
+            "e_R_rec1",
+            "e_R_recv",
+            "e_src"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs"
+          ],
+          "G": [
+            "R_self_finality"
+          ]
+        },
+        {
+          "patch": "U_one_external_witness",
+          "events": [
+            "e_E1",
+            "e_R_final",
+            "e_R_rec1",
+            "e_R_recv",
+            "e_src"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs"
+          ],
+          "G": [
+            "R_self_finality"
+          ]
+        },
+        {
+          "patch": "U_ext",
+          "events": [
+            "e_E1",
+            "e_E2",
+            "e_R_final",
+            "e_R_rec1",
+            "e_R_recv",
+            "e_meta",
+            "e_src"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "G": []
+        }
+      ],
+      "classification": "conditional_theorem_witness",
+      "interpretation": "Gap restriction holds under ambient restriction, audit monotonicity, and stable proposition typing."
+    },
+    {
+      "system_name": "non_chain_joint_witness_gap",
+      "nested_pairs": 9,
+      "ambient_restriction_holds": true,
+      "audit_monotonicity_holds": true,
+      "stable_typing_holds": true,
+      "gap_restriction_holds": true,
+      "violations": [],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_left",
+          "smaller_patch": "U_local",
+          "prop": "O_left_witness",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_joint",
+          "smaller_patch": "U_local",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_joint",
+          "smaller_patch": "U_local",
+          "prop": "O_left_witness",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_joint",
+          "smaller_patch": "U_left",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_joint",
+          "smaller_patch": "U_right",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_joint",
+          "smaller_patch": "U_right",
+          "prop": "O_left_witness",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_full",
+          "smaller_patch": "U_local",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_full",
+          "smaller_patch": "U_local",
+          "prop": "O_left_witness",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_full",
+          "smaller_patch": "U_left",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_full",
+          "smaller_patch": "U_right",
+          "prop": "O_joint_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        },
+        {
+          "larger_patch": "U_full",
+          "smaller_patch": "U_right",
+          "prop": "O_left_witness",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        }
+      ],
+      "patch_table": [
+        {
+          "patch": "U_local",
+          "events": [
+            "o_base",
+            "o_state"
+          ],
+          "A": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "F": [
+            "O_obs"
+          ],
+          "G": [
+            "O_joint_self_finality",
+            "O_left_witness"
+          ]
+        },
+        {
+          "patch": "U_left",
+          "events": [
+            "left_witness",
+            "o_base",
+            "o_state"
+          ],
+          "A": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "F": [
+            "O_left_witness",
+            "O_obs"
+          ],
+          "G": [
+            "O_joint_self_finality"
+          ]
+        },
+        {
+          "patch": "U_right",
+          "events": [
+            "o_base",
+            "o_state",
+            "right_witness"
+          ],
+          "A": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "F": [
+            "O_obs"
+          ],
+          "G": [
+            "O_joint_self_finality",
+            "O_left_witness"
+          ]
+        },
+        {
+          "patch": "U_joint",
+          "events": [
+            "left_witness",
+            "o_base",
+            "o_state",
+            "right_witness"
+          ],
+          "A": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "F": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "G": []
+        },
+        {
+          "patch": "U_full",
+          "events": [
+            "auditor",
+            "left_witness",
+            "o_base",
+            "o_state",
+            "right_witness"
+          ],
+          "A": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "F": [
+            "O_joint_self_finality",
+            "O_left_witness",
+            "O_obs"
+          ],
+          "G": []
+        }
+      ],
+      "classification": "conditional_theorem_witness",
+      "interpretation": "Gap restriction holds under ambient restriction, audit monotonicity, and stable proposition typing."
+    },
+    {
+      "system_name": "semantic_relabeling_control",
+      "nested_pairs": 1,
+      "ambient_restriction_holds": true,
+      "audit_monotonicity_holds": true,
+      "stable_typing_holds": false,
+      "gap_restriction_holds": false,
+      "violations": [
+        {
+          "larger_patch": "U_large",
+          "smaller_patch": "U_small",
+          "source_prop": "R_self_finality",
+          "restricted_prop": "R_obs",
+          "explanation": "A larger-patch gap restricts to a proposition that is not a smaller-patch gap."
+        }
+      ],
+      "non_lifting_examples": [
+        {
+          "larger_patch": "U_large",
+          "smaller_patch": "U_small",
+          "prop": "R_self_finality",
+          "explanation": "The smaller patch has a gap that does not lift from the larger patch; closure is not surjectivity."
+        }
+      ],
+      "patch_table": [
+        {
+          "patch": "U_small",
+          "events": [
+            "e_R_final"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs"
+          ],
+          "G": [
+            "R_self_finality"
+          ]
+        },
+        {
+          "patch": "U_large",
+          "events": [
+            "e_R_final",
+            "e_context"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs"
+          ],
+          "G": [
+            "R_self_finality"
+          ]
+        }
+      ],
+      "classification": "semantic_relabeling_boundary",
+      "interpretation": "Gap restriction fails because proposition restriction relabels a self-finality proposition into an already-auditable observer proposition."
+    },
+    {
+      "system_name": "audit_monotonicity_control",
+      "nested_pairs": 1,
+      "ambient_restriction_holds": true,
+      "audit_monotonicity_holds": false,
+      "stable_typing_holds": true,
+      "gap_restriction_holds": false,
+      "violations": [
+        {
+          "larger_patch": "U_large",
+          "smaller_patch": "U_small",
+          "source_prop": "R_self_finality",
+          "restricted_prop": "R_self_finality",
+          "explanation": "A larger-patch gap restricts to a proposition that is not a smaller-patch gap."
+        }
+      ],
+      "non_lifting_examples": [],
+      "patch_table": [
+        {
+          "patch": "U_small",
+          "events": [
+            "e_R_final"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "G": []
+        },
+        {
+          "patch": "U_large",
+          "events": [
+            "e_R_final",
+            "e_context"
+          ],
+          "A": [
+            "R_obs",
+            "R_self_finality"
+          ],
+          "F": [
+            "R_obs"
+          ],
+          "G": [
+            "R_self_finality"
+          ]
+        }
+      ],
+      "classification": "audit_monotonicity_boundary",
+      "interpretation": "Gap restriction fails because a smaller patch can audit a proposition that the larger patch cannot audit."
+    }
+  ],
+  "strongest_claim": "For finite typed proposition-domain accessible-witness systems, G(U)=A(U)-F(U) restricts contravariantly when ambient truth restricts, local auditability is monotone under patch inclusion, and proposition types are not relabeled under restriction. The T19 unary gap and a non-chain joint-witness gap both satisfy these conditions.",
+  "weakened_claim": "T92 does not prove a general cohomology theorem or a consciousness claim. It shows that the T19 accessible-witness gap can join the T56-T58 H0 gap program only under explicit proposition-typing and audit-monotonicity hypotheses.",
+  "falsification_condition": "T92 fails if a well-typed nested proposition-domain witness satisfies ambient restriction and audit monotonicity but has a larger-patch gap whose restriction is not a smaller-patch gap.",
+  "claim_update": "C1 may be sharpened, not upgraded: the first-person/third-person finality gap has a finite degree-0 accessible-witness form with restriction closure for typed proposition-domain witness systems.",
+  "open_blocker": "The result is still finite and conditional. It does not place FIRST-PERSON-FINALITY in a complexity class and does not identify T19 proposition gaps with T58 order-pair gaps.",
+  "suggested_next": "Generalize the proof sketch into a short formal lemma, then test whether T19 proposition gaps and T58 order-pair gaps share a common typed gap category or only the same H0 failure shape."
+}

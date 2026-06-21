@@ -21,6 +21,20 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T80](tests/T80-reversible-finality-nonmonotonicity.md) | Reversible finality nonmonotonicity | H7, T9, T18 | implemented: reversible Rule 30 lift violates raw D1 monotonicity, weakening H7 to a conditional constructor theorem |
 | [T82](tests/T82-persistent-reconciler-cost-boundary.md) | Persistent reconciler cost boundary | H7, T9, T80 | implemented: persistent memory restores monotone retained support only through irreversible OR memory or resource-accounted append-only ledger capacity |
 | [T84](tests/T84-cyclic-reconciler-entropy-export.md) | Cyclic reconciler entropy export | H7, T80, T82 | implemented: fixed cyclic reconciliation restores monotone accounting only by exporting overwritten records or paying erasure cost |
+| [T106](tests/T106-bounded-sink-reversible-compression.md) | Bounded-sink reversible compression | H7, T80, T82, T84 | implemented: reversible compression does not rescue H7 once the bounded sink and closed return path are included |
+| [T110](tests/T110-finite-permutation-monotone-obstruction.md) | Finite-permutation monotone obstruction | H7, T80, T82, T84, T106 | implemented: finite closed reversible dynamics admit no strict scalar finality monotone unless the score is constant on each orbit |
+| [T116](tests/T116-open-markov-record-entropy.md) | Open Markov record-entropy comparison | H7, T110 | implemented: open stochastic record arrows are absorbed by path irreversibility, exported history, or fresh blank capacity in the tested fixtures |
+| [T122](tests/T122-stationary-markov-monotone-obstruction.md) | Stationary Markov monotone obstruction | H7, T110, T116 | implemented: finite stationary Markov dynamics admit no strict scalar expected-finality monotone on stationary support |
+| [T124](tests/T124-constructor-admissibility-grounding-audit.md) | Constructor-admissibility grounding audit | H7, T18, T80, T84, T106, T110, T116, T122, T128 | implemented: reverse-edge ledger permits only constructor-only or resource-accounting readings; no current H7 witness grounds an unqualified physical arrow |
+| [T125](tests/T125-d1-boundary-connection-transport.md) | D1 boundary connection transport | D1, R1, S1, T111, T112, T113 | open: specification-only transport audit for boundary-indexed D1 profiles, identity, composition, closed loops, provenance deltas, and hostile controls |
+| [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | open: specification-only finite causal-set/manifoldlikeness filter for canonical finality colimits, with explicit non-embeddability modes and no spacetime derivation |
+| [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
+| [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
+| [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
+| [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
+| [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
+| [T119](tests/T119-future-operation-availability-residue.md) | Future Operation Availability residue audit | Q1A, T117, T115, TF1, PO1, provenance | implemented: multiple branches converge on task-indexed future operation availability as a useful normal form, but it is absorbed by enriched reachability/opportunity/provenance/control frameworks |
+| [T129](tests/T129-future-capability-preservation-audit.md) | Future capability preservation audit | T119, T121, T123, T128, ASP, FOA, LossKernel, admissibility | implemented: same-current-state/different-future-capability residue has a common audit normal form but is absorbed by enriched reachability, opportunity-set, provenance, access-control, mechanism-design, and viability frameworks |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
@@ -60,6 +74,10 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T56](tests/T56-sheaf-cohomology-apparent-finality.md) | Sheaf cohomology of apparent finality — research audit | C1, D1-Field, T51, T52 | implemented: PARTIAL_SUCCESS — ambient presheaf A is well-defined (H1(A)=0); apparent-finality assignment F is not a presheaf (natural restriction overshoots F(U)); phantom incomparability is an H0-level section-mismatch, not H1; refined hypothesis: H0(G) where G=A/F is the gap presheaf; 4 open questions; 56/56 tests pass |
 | [T57](tests/T57-finality-reflection-property.md) | Finality Reflection Property | C1, D1-Field, T56 | implemented: FRP holds for the T56 apparent-order model across two finite record lattices; G(U)=A(U)-F(U) is restriction-closed; generic complement counterexample refutes automatic complement closure; arrow-direction circularity remains open |
 | [T58](tests/T58-gap-phantom-equivalence.md) | Gap-phantom equivalence audit | C1, D1-Field, T56 | implemented: H0(G) matches phantom incomparability witnesses for the tested T51/T52 well-formed extension cases; local reversal control shows F(U) subset A(U) is required |
+| [T131](tests/T131-bell-test-h1-mapping.md) | Bell-test-to-H1 mapping | Q1, D1, R1, T13, T21 | in progress: resolves the former duplicate T58 Bell/H1 mapping track separately from T58 gap-phantom equivalence |
+| [T111](tests/T111-d1-gauge-invariance-audit.md) | D1 gauge-invariance audit | D1, D1-Field, GU roadmap, finality gauge problem | implemented: pure observer/record/holder/causal relabeling preserves all four D1 dimensions; access-boundary refinement/coarsening are covariant boundary data, not gauge; hostile controls are undefined |
+| [T112](tests/T112-spin-observerse-holonomy-step2.md) | Spin-observerse holonomy Step 2 | T63, T65, C1, D1, GU roadmap | implemented: finite/proxy Y_spin audit passes under H3 and a declared positive-generator spin-lift convention while preserving naive-Y, signed-angle, non-LC holonomy +1, and representative-dependence controls |
+| [T113](tests/T113-gap-presheaf-classification.md) | Gap presheaf classification | C1, D1-Field, T51-T58, GU roadmap | implemented: raw H0(G) is too broad (13 raw gaps vs 10 phantoms), but the endpoint-accessible canonical well-formed local-incomparability subobject exactly matches phantom witnesses in the tested finite family |
 | [T59](tests/T59-finite-to-infinite-boundary-audit.md) | Finite-to-infinite boundary audit | CSP-PO1, PO1, S1, Q1, H7, HEF | implemented: Mobius orientation witness separates transition-aware Z2 parity success from coefficient-blind scalar false global section; continuous-domain parity claims require coefficient and transition data |
 | [T62](tests/T62-noisy-measurement-access-boundary.md) | Noisy measurement access-boundary discriminator | Q1, D1, T2, T22 | implemented: noisy channel-level matrix separates decoherence, Quantum-Darwinism redundancy, and observer-relative finality; Q1 weakened to access-boundary discriminator |
 | [T64](tests/T64-stern-gerlach-access-window.md) | Stern-Gerlach detector access-window discriminator | Q1, D1, T2, T22, T62 | implemented: detector-fragment proxy preserves access-boundary distinction but weakens Q1 through threshold sensitivity; no-signalling guardrail passes |
@@ -79,10 +97,31 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T85](tests/T85-measured-detector-channel-dominance.md) | Measured detector channel dominance | Q1, D1, T76-T83 | implemented: spoof/unique-tag stress can still demote the signed fixture, but perturbation and DAG channels are not independently decisive once trust and pre-registration are fixed |
 | [T86](tests/T86-ambiguous-tag-channel-independence.md) | Ambiguous-tag channel independence | Q1, D1, T76-T85 | implemented: clean perturbation-only and signed-DAG-only fixtures rescue ambiguous timing/tag controls, while contaminated controls withhold |
 | [T87](tests/T87-real-run-raw-log-contract.md) | Real-run raw-log contract | Q1, D1, T76-T86 | implemented: event-level raw-log admission contract for future detector deployments; no D1 scoring or empirical upgrade without the required tables |
+| [T95](tests/T95-detector-stack-export-map.md) | Detector stack export map | Q1, D1, T75, T87, T94 | implemented: HydraHarp/White Rabbit native timing and signed archive alone fail T87; only an augmented pre-registered export map is admissible, and only as a plan until real event rows exist |
+| [T96](tests/T96-detector-feasibility-checklist.md) | Detector feasibility checklist | Q1, D1, T87, T95 | implemented: surviving detector route is a governance-heavy dry-run program carried by control manifests, ambiguity challenges, perturbation trials, trust audits, and demotion rules rather than native timing |
+| [T97](tests/T97-detector-dry-run-packet-skeleton.md) | Detector dry-run packet skeleton | Q1, D1, T87, T95, T96 | implemented: schema-complete pre-data packet scaffold is executable but not evidence; placeholder scoring, schema drift, post hoc packet assembly, and missing hostile controls withhold Q1 |
+| [T100](tests/T100-detector-authority-domain-bound.md) | Detector authority-domain bound | Q1, D1, T97, T98 | implemented: current detector packet requires at least four non-conflicting authority domains; no two- or three-domain profile survives |
+| [T121](tests/T121-real-detector-packet-schema-audit.md) | Real detector packet schema audit | Q1, D1, T87, T97, T100 | implemented: minimal detector evidence packet separates raw payload validity from packet admissibility and future operation availability; no detector-claim promotion |
+| [T123](tests/T123-same-payload-packet-foa-witness.md) | Same-payload packet FOA witness | Q1B, D1, T87, T97, T100, T121 | implemented: same raw payload, immediate result, and coarse detector summary can still differ in admissibility and future operation availability through packet wrapper fields |
+| [T133](tests/T133-detector-packet-tiered-minimality.md) | Detector packet tiered minimality | Q1B, D1, T121, T123 | implemented: detector packet burden splits into provisional-admission core plus stricter claim-review extension; weakens any flat all-fields-at-once reading |
+| [T134](tests/T134-detector-dry-run-tier-gate.md) | Detector dry-run tier gate | Q1B, D1, T97, T121, T123, T133 | implemented: T97 raw-log rows are necessary but not sufficient; T121/T133 wrapper fields are required before provisional admission or claim-review readiness |
+| [T136](tests/T136-detector-preregistration-manifest.md) | Detector pre-registration manifest | Q1B, D1, T97, T100, T121, T133, T134 | implemented: pre-event manifest must bind table hashes, wrapper commitments, authority separation, claimed tier, no-data boundary, and top-level hash |
+| [T138](tests/T138-detector-manifest-workflow-fit.md) | Detector manifest workflow fit | Q1B, D1, T100, T121, T133, T136 | implemented: common single-lab and merged-authority archive workflows are null; only a federated pre-data scaffold clears T136, still without detector evidence |
+| [T132](tests/T132-weak-measurement-nonnull-criterion.md) | Weak-measurement non-null criterion | Q1, T12 | implemented: executable finite gate rejects same-record, post hoc, constant-branch, and monotone-proxy weak-measurement routes; only a verdict-changing independent measured axis survives as a candidate shape |
+| [T90](tests/T90-weak-measurement-reparameterization-obstruction.md) | Weak-measurement reparameterization obstruction | Q1, T12, T83, T132 | implemented: weak-measurement route is non-null only if an independent pre-registered axis changes the TaF verdict while standard monitored statistics are held fixed |
+| [T91](tests/T91-weak-measurement-platform-audit.md) | Weak-measurement platform audit | Q1, T12, T90 | implemented: superconducting homodyne, uncollapse, and quantum-jump reversal platforms fail the independent-axis gate; duplicated-record provenance or pre-metered undo cost remains blocked |
+| [T93](tests/T93-weak-measurement-undo-cost-independence.md) | Weak-measurement undo-cost independence | Q1, T12, T90, T91 | implemented: undo-cost route is non-null only for a calibrated independent meter that changes the TaF verdict with standard monitored statistics fixed |
+| [T130](tests/T130-weak-measurement-dual-meter-screen.md) | Weak-measurement dual-meter screen | Q1C, T12, T90, T91, T93, T132 | open: renumbered from the duplicate T115 weak-measurement dual-meter screen; screens whether any real simultaneous second meter clears the independent-axis gate |
 | [T19](tests/T19-phenomenal-bridge-complexity-separation.md) | Phenomenal bridge as complexity separation | C1, D1, D2, H6 | implemented: 7-node finite graph shows FIRST-PERSON-FINALITY(A*(R)) = NO, THIRD-PERSON-FINALITY(G) = YES; causal-boundary obstruction, not computational undecidability; T60+T19 gives formal content of H6 |
+| [T92](tests/T92-accessible-witness-gap-restriction.md) | Accessible-witness gap restriction | C1, T19, T58, T89 | implemented: T19 unary proposition gap and non-chain joint-witness gap satisfy restriction closure under ambient restriction, audit monotonicity, and stable proposition typing; semantic relabeling and audit-monotonicity controls fail |
 | [T65](tests/T65-causal-reduction-holonomy.md) | Causal reduction of CHSH holonomy | C1, D1, H6, T63, T19 | implemented: LC => holonomy = +1 (all 16 LC sections); quantum => holonomy = -1 (Bell's theorem as holonomy); biconditional disproved (128 ≠ 16); spatial causal-boundary obstruction formally parallels T19 temporal obstruction |
-| [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented: loss morphisms are failure-type monotone (H1 > H0 > none); H0→H1 is impossible for topology-preserving and sub-cover loss; H1→H0 is possible via cycle destruction; algebraic proof + 4 witnesses (7/7 tests pass) |
-| [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified (union = lax-functorial); path-dependence biconditional established (PO1(P1) != PO1(P2) iff LossKernel differ in empty/non-empty sense); LossKernel is the organizing object for path-dependent PO1 admissibility; 17/17 tests pass |
+| [T69](tests/T69-losskernel-failure-type.md) | LossKernel failure type monotonicity | TF1, T19, T56, T58, T63, T65 | implemented finite-fixture result: failure-type monotonicity holds only under the declared coefficient/support semantics and allowed loss morphisms; external review blocks any general Cech/sheaf theorem reading; 7/7 tests pass |
+| [T73](tests/T73-losskernel-composition.md) | LossKernel composition and path-dependence biconditional | T34, T37, T69, TF1 | implemented: composition law verified as powerset-union monoid-valued annotation; path-dependence biconditional established on fixed-endpoint fixtures; quotient/prior-art gate still open; 17/17 tests pass |
+| [T99](tests/T99-losskernel-quotient-separation.md) | LossKernel quotient separation | TF1, T34, T37, T73 | implemented: label-only LossKernel fails same-endpoint/same-map/same-behavior/same-label quotient survival; witness-carrying LossKernel separates only with source-anchored obligations |
+| [T101](tests/T101-q1-branch-adjudication.md) | Q1 branch adjudication | Q1, D1, T2, T21, T22, T62, T66-T100 | implemented: Q1 should split before paper language; no current branch earns new measurement dynamics or empirical quantum support |
+| [T102](tests/T102-q1a-neighbor-comparison.md) | Q1A neighbor comparison gate | Q1A, Q1, T2, T22, T62, T64, T101 | implemented: Q1A is only access-boundary and independence accounting unless a fixed-data witness separates it from standard neighbor frameworks |
+| [T103](tests/T103-q1a-fixed-data-witness.md) | Q1A fixed-data witness | Q1A, Q1, D1, T102 | implemented: fixed standard quantum-side data can yield different D1 verdicts only through the independence partition; external distinctness remains unearned |
+| [T118](tests/T118-q1a-reversal-cost-collapse.md) | Q1A reversal-cost collapse | Q1A, Q1, D1, T103, T105, T109 | implemented: in the current fixed-data family reversal cost collapses to the audited accessible-support count and adds no independent verdict content |
 
 ## Minimum Compatibility Constraints
 
@@ -113,6 +152,20 @@ python -m models.run_t80
 python -m models.run_t81
 python -m models.run_t82
 python -m models.run_t84
+python -m models.run_t106
+python -m models.run_t110
+python -m models.run_t116
+python -m models.run_t122
+python -m models.run_t124
+python -m models.run_t128
+python -m models.run_t114
+python -m models.run_t115
+python -m models.run_t117
+python -m models.run_t119
+python -m models.run_t129
+python -m models.run_t111_d1_gauge_invariance
+python -m models.run_t112_spin_observerse_holonomy_step2
+python -m models.run_t113
 python -m models.run_t20
 python -m models.run_t21
 python -m models.run_t22
@@ -164,6 +217,23 @@ python -m models.run_t79
 python -m models.run_t85
 python -m models.run_t86
 python -m models.run_t87
+python -m models.run_t95
+python -m models.run_t96
+python -m models.run_t97
+python -m models.run_t100
+python -m models.run_t121
+python -m models.run_t123
+python -m models.run_t133
+python -m models.run_t134
+python -m models.run_t136
+python -m models.run_t138
+python -m models.run_t90
+python -m models.run_t91
+python -m models.run_t93
+python -m models.run_t101
+python -m models.q1a_neighbor_comparison
+python -m models.run_t103
+python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
 ```
@@ -179,6 +249,20 @@ The suites use only Python's standard library. Evidence records:
 - [Reversible Finality Nonmonotonicity v0.1 Results](results/reversible-finality-nonmonotonicity-v0.1-results.md)
 - [Persistent Reconciler Cost Boundary v0.1 Results](results/persistent-reconciler-cost-boundary-v0.1-results.md)
 - [Cyclic Reconciler Entropy Export v0.1 Results](results/cyclic-reconciler-entropy-export-v0.1-results.md)
+- [Bounded-Sink Reversible Compression v0.1 Results](results/bounded-sink-reversible-compression-v0.1-results.md)
+- [Finite-Permutation Monotone Obstruction v0.1 Results](results/finite-permutation-monotone-obstruction-v0.1-results.md)
+- [Open Markov Record-Entropy Comparison v0.1 Results](results/open-markov-record-entropy-v0.1-results.md)
+- [Stationary Markov Monotone Obstruction v0.1 Results](results/stationary-markov-monotone-obstruction-v0.1-results.md)
+- [Constructor-Admissibility Grounding Audit v0.1 Results](results/constructor-admissibility-grounding-audit-v0.1-results.md)
+- [Minimal Living Arrow v0.1 Results](results/minimal-living-arrow-v0.1-results.md)
+- [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
+- [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
+- [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)
+- [Future Operation Availability Residue v0.1 Results](results/future-operation-availability-residue-v0.1-results.md)
+- [Future Capability Preservation Audit v0.1 Results](results/future-capability-preservation-audit-v0.1-results.md)
+- [D1 Gauge-Invariance Audit v0.1 Results](results/d1-gauge-invariance-audit-v0.1-results.md)
+- [Spin-Observerse Holonomy Step 2 v0.1 Results](results/spin-observerse-holonomy-step2-v0.1-results.md)
+- [Gap Presheaf Classification v0.1 Results](results/gap-presheaf-classification-v0.1-results.md)
 - [Consensus-Record Theorem Transfer v0.1 Results](results/consensus-record-theorem-transfer-v0.1-results.md)
 - [Bell Contextuality Finality v0.1 Results](results/bell-contextuality-finality-v0.1-results.md)
 - [D1 Physical Reduction Map v0.1 Results](results/d1-physical-reduction-map-v0.1-results.md)
@@ -230,8 +314,26 @@ The suites use only Python's standard library. Evidence records:
 - [Measured Detector Channel Dominance v0.1 Results](results/measured-detector-channel-dominance-v0.1-results.md)
 - [Ambiguous-Tag Channel Independence v0.1 Results](results/ambiguous-tag-channel-independence-v0.1-results.md)
 - [Real-Run Raw-Log Contract v0.1 Results](results/real-run-raw-log-contract-v0.1-results.md)
+- [Detector Stack Export Map v0.1 Results](results/detector-stack-export-map-v0.1-results.md)
+- [Detector Feasibility Checklist v0.1 Results](results/detector-feasibility-checklist-v0.1-results.md)
+- [Detector Dry-Run Packet Skeleton v0.1 Results](results/detector-dry-run-packet-skeleton-v0.1-results.md)
+- [Detector Authority-Domain Bound v0.1 Results](results/detector-authority-domain-bound-v0.1-results.md)
+- [Real Detector Packet Schema Audit v0.1 Results](results/real-detector-packet-schema-audit-v0.1-results.md)
+- [Same-Payload Packet FOA Witness v0.1 Results](results/same-payload-packet-foa-witness-v0.1-results.md)
+- [Detector Packet Tiered Minimality v0.1 Results](results/detector-packet-tiered-minimality-v0.1-results.md)
+- [Detector Dry-Run Tier Gate v0.1 Results](results/detector-dry-run-tier-gate-v0.1-results.md)
+- [Detector Pre-registration Manifest v0.1 Results](results/detector-preregistration-manifest-v0.1-results.md)
+- [Detector Manifest Workflow Fit v0.1 Results](results/detector-manifest-workflow-fit-v0.1-results.md)
+- [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
+- [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
+- [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)
+- [Accessible-Witness Gap Restriction v0.1 Results](results/accessible-witness-gap-restriction-v0.1-results.md)
 - [T19 Phenomenal Bridge Separation Step 1 Results](tests/T19-phenomenal-bridge-complexity-separation.md)
 - [T65 Causal Reduction of CHSH Holonomy Step 1 Results](tests/T65-causal-reduction-holonomy.md)
+- [LossKernel Quotient Separation v0.1 Results](results/losskernel-quotient-separation-v0.1-results.md)
+- [Q1 Branch Adjudication v0.1 Results](results/q1-branch-adjudication-v0.1-results.md)
+- [Q1A Neighbor Comparison v0.1 Technical Report](TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md)
+- [Q1A Fixed-Data Witness v0.1 Results](results/q1a-fixed-data-witness-v0.1-results.md)
 
 ## How To Add A Test
 

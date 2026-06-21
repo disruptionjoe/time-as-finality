@@ -1,6 +1,18 @@
 # Typed Loss Kernels and Obstruction Attribution
 # in Categories of Finite Restriction Systems
 
+**Reviewer calibration notice (2026-06-20):** this draft is review-blocked, not
+a submission-ready theorem preprint. External reviews in
+[`papers/reviews/external-review-typed-loss-kernels-v0.1.md`](reviews/external-review-typed-loss-kernels-v0.1.md)
+and
+[`papers/reviews/skeptical-review-typed-forgetting-v0.1.md`](reviews/skeptical-review-typed-forgetting-v0.1.md)
+found that several claims below are definitional, misformulated, or false as
+stated. The loss-kernel composition law should be read as a monoid-valued arrow
+annotation, not as a lax functor to a powerset poset; the path-dependence
+biconditional is a consequence of the chosen admissibility predicate; and the
+cohomology/failure-type monotonicity claims in Section 7 are not usable without
+new hypotheses and counterexample checks.
+
 **Version:** 0.1 (preprint draft)
 **Date:** 2026-06-20
 **Status:** External review draft — mathematically self-contained; no domain-specific vocabulary required
@@ -17,11 +29,12 @@ obstruction in such systems reduces to signed-graph parity constraint satisfiabi
 information-losing projection requires additional typed data not expressible in
 standard constraint-satisfaction frameworks.
 
-We prove five main results:
+The current calibrated results and blockers are:
 
-1. **(Category.)** Typed restriction morphisms form a category **Res** under composition
+1. **(Category bookkeeping.)** Typed restriction morphisms form a category **Res** under composition
    by site-map composition, set-intersection of preserved structure, and set-union
-   of forgotten structure.
+   of forgotten structure. This is a closure check for the chosen formalism, not
+   a standalone categorical novelty claim.
 
 2. **(CSP Correspondence.)** The local-to-global gluing obstruction is equivalent
    to the unsatisfiability of a binary signed parity CSP. This reduction is not new;
@@ -32,24 +45,27 @@ We prove five main results:
    functor on **Res**. Endpoint admissibility is a property of composed paths, not a
    functorial invariant of individual morphisms.
 
-4. **(Loss Kernel Lax-Functor.)** The loss kernel $LK(f) = \text{forgotten\_structure}(f)$
-   is a lax-functorial map from **Res** to the poset $(2^S, \subseteq)$:
-   $LK(g \circ f) = LK(f) \cup LK(g)$. For paths with fixed endpoints satisfying
-   equal endpoint admissibility conditions, two paths yield different obstruction
-   verdicts if and only if their composed loss kernels differ in the empty/non-empty
-   sense.
+4. **(Loss-kernel annotation.)** The loss kernel $LK(f) = \text{forgotten\_structure}(f)$
+   is an arrow annotation valued in the commutative idempotent monoid
+   $(2^S, \cup, \emptyset)$:
+   $LK(g \circ f) = LK(f) \cup LK(g)$. For paths with fixed endpoints and fixed
+   endpoint admissibility conditions, the current predicate varies exactly with
+   the empty/non-empty loss annotation. This is evidence for bookkeeping
+   discipline, not by itself evidence that `LossKernel` is a new mathematical
+   invariant.
 
-5. **(Failure-Type Monotonicity.)** Typed loss morphisms are failure-type monotone
-   in the ordering $H^1 > H^0 > \text{none}$: a typed loss morphism cannot increase
-   the cohomological degree of a system's failure. The direction $H^0 \to H^1$ is
-   structurally impossible under topology-preserving and sub-cover restriction morphisms.
+5. **(Review-blocked cohomology claims.)** The draft's failure-type monotonicity
+   and cover-topology claims are not established. External review gives direct
+   objections to Theorems 7.7, 7.9, and 7.12. Section 7 now records these as
+   failed draft claims and minimum repair obligations, not results.
 
 We state the **Typed Forgetting Attribution Conjecture** as the central open problem:
 that non-empty loss kernel naming attribution-relevant structure is necessary for
 admissible obstruction attribution.
 
-All results are verified on finite witness families via executable models; algebraic
-proofs are given for the categorical structure results.
+Executable models verify finite witness families, but they do not rescue the
+review-blocked general cohomology claims. Algebraic proofs are given only for the
+bookkeeping structure that remains after this calibration.
 
 ---
 
@@ -68,11 +84,13 @@ the **attribution question**: given that $A$ is satisfiable, $B$ is not, and $f$
 an information-losing map between them, what additional structure on $f$ makes the
 attribution valid?
 
-The answer is not "nothing additional." The non-functor theorem (Section 5) shows
+The answer is not "nothing additional." The non-functor observation (Section 5) shows
 that obstruction admissibility is not determined by the endpoints alone and not
 preserved under composition. A morphism $f: A \to B$ may be individually inadmissible
-while the composed morphism $g \circ f: A \to C$ is admissible. This is a genuine
-structural property of the attribution predicate, not merely a notational observation.
+while the composed morphism $g \circ f: A \to C$ is admissible. External review
+weakens the older wording here: this is a structural property of the paper's
+chosen attribution predicate, but not yet theorem-level evidence for a new
+obstruction theory.
 
 ### 1.2 What Is New
 
@@ -86,10 +104,12 @@ The objects and machinery in this paper draw from established mathematics:
 What we study on top of this machinery:
 
 1. **Typed annotation of morphisms** with preserved and forgotten structure declarations
-2. **Loss kernels** as a composable algebraic object, not merely metadata
-3. **Path-dependent admissibility** as a consequence of the lax-functorial loss kernel
-4. **Failure-type monotonicity** for the specific class of typed loss morphisms that
-   arise in projection and restriction settings
+2. **Loss kernels** as a composable monoid-valued annotation whose promotion beyond
+   metadata remains open
+3. **Path-dependent admissibility** as a consequence of the chosen annotation
+   predicate, not yet as a quotient-surviving theorem
+4. **Failure-type tracking** as a failed draft theorem family requiring narrower
+   hypotheses before any monotonicity claim can be restored
 
 We believe the contribution is the **typed attribution layer**, not the obstruction
 mechanism beneath it. Section 9 (Related Work) expands on this.
@@ -359,9 +379,9 @@ obstruction) is co-required.
 
 ## 6. Loss Kernels and Path-Dependent Attribution
 
-### 6.1 Loss Kernels as a Lax Functor
+### 6.1 Loss Kernels as Monoid-Valued Annotations
 
-**Theorem 6.1 (Loss Kernel Lax-Functor).** The loss kernel assignment $LK:
+**Proposition 6.1 (Loss Kernel Monoid-Valued Annotation).** The loss kernel assignment $LK:
 \text{Mor}(\textbf{Res}) \to 2^S$ satisfies:
 
 1. $LK(\text{id}_\mathcal{A}) = \emptyset$ for all objects $\mathcal{A} \in \textbf{Res}$.
@@ -377,12 +397,13 @@ $LK(\text{id}_\mathcal{A}) = \emptyset$.
 Therefore $LK(g \circ f) = \text{forg}(g \circ f) = \text{forg}(f) \cup \text{forg}(g)
 = LK(f) \cup LK(g)$. $\square$
 
-**Remark 6.2 (Lax, not strict).** The map $LK$ is a *lax functor* from **Res** to
-$(2^S, \subseteq)$ viewed as a category (morphisms are set inclusions). It is lax in
-the sense that the composition law is a union (accumulation), not a structural
-dependence: the loss in $g$ does not depend on what $f$ forgot. Loss accumulates
-independently at each step. This is precisely what makes path-dependent attribution
-possible (Theorem 6.5 below).
+**Remark 6.2 (Not a lax-functor claim).** External review correctly flags the
+older lax-functor wording as misformulated. What is established here is weaker
+and cleaner: $LK$ is an arrow annotation valued in the one-object category
+associated to the commutative idempotent monoid $(2^S, \cup, \emptyset)$. Loss
+accumulates independently at each step because composition is defined by union.
+This is useful bookkeeping, but it does not by itself promote `LossKernel` beyond
+standard effect/provenance-style annotation machinery.
 
 **Corollary 6.3 (Monotonicity).** For any composable chain $f_1, \ldots, f_n$ and
 any prefix $1 \leq k < n$:
@@ -421,7 +442,7 @@ composed morphism $P = t_n \circ \cdots \circ t_1$.
 
 ### 6.3 Path-Dependence Biconditional
 
-**Theorem 6.7 (Path-Dependence Biconditional).** Let $(A, B)$ be a fixed pair of
+**Proposition 6.7 (Path-Dependence Predicate Unfolding).** Let $(A, B)$ be a fixed pair of
 layers in a typed transport graph satisfying the endpoint conditions AC1, AC2, AC6, AC7.
 Let $P_1$ and $P_2$ be two paths from $A$ to $B$. Then:
 
@@ -447,8 +468,10 @@ AC5: $LK(P) \neq \emptyset$. Therefore:
 
 **Corollary 6.8.** For a fixed $(A, B)$ pair satisfying the endpoint conditions,
 *path-dependent obstruction admissibility is exactly the empty/non-empty distinction
-in composed loss kernels.* The loss kernel is the sole discriminating algebraic object
-for path-dependent attribution.
+in composed loss kernels for this predicate and fixture family.* This is a
+definition-driven diagnostic. It is not yet a quotient-surviving separation from
+ordinary provenance, effect systems, abstract interpretation, lenses, or CSP
+explanation.
 
 **Witness 6.9 (Diamond Network).** We exhibit a typed transport graph with four layers
 $\{A, L_1, L_2, B\}$ and two paths:
@@ -468,6 +491,13 @@ computationally in the diamond network witness family.)
 ---
 
 ## 7. Failure Types and Cover Topology
+
+**Review-blocked section.** External review found the general cohomology claims
+in this section false or under-specified as stated. The retained material below
+is therefore a record of failed draft claims and finite witnesses, not a set of
+usable theorems. The minimum repair is to state exact coefficient systems,
+support presheaves, cover hypotheses, and allowed loss morphisms, then add
+explicit counterexample checks before any monotonicity claim is restored.
 
 ### 7.1 Covers, Presheaves, and Čech Cohomology
 
@@ -536,9 +566,9 @@ We order the failure types: $H^1 > H^0 > \text{none}$.
   so by Theorem 3.1, no global section exists. By Theorem 3.1 in the Čech formulation:
   $\check{H}^1(\mathcal{U}, A) \cong \mathbb{Z}/2\mathbb{Z}$, non-trivial. H¹ failure.
 
-### 7.3 Cover Topology Determines Failure Type
+### 7.3 Review-Blocked Cover Topology Claims
 
-**Theorem 7.7 (Acyclic Cover Theorem).** If the nerve $N(\mathcal{U})$ has no 1-cycle
+**Invalid draft claim 7.7 (Acyclic Cover Theorem).** If the nerve $N(\mathcal{U})$ has no 1-cycle
 (is a forest), then $\check{H}^n(\mathcal{U}, F) = 0$ for all $n \geq 1$ and all
 presheaves $F$. In particular, no H¹ failure can occur on a cover with acyclic nerve.
 
@@ -549,13 +579,19 @@ setting, this can be verified directly: a frustration-free cycle requires a 1-cy
 the nerve; without one, all cycles have even sign product $+1$ and the system is
 satisfiable whenever local sections are globally compatible. $\square$
 
+**Correction status.** Do not use this as a theorem. External review gives a
+two-set acyclic-cover counterexample with $F(U_1)=0$, $F(U_2)=0$,
+$F(U_1 \cap U_2)=\mathbb{Z}$ and zero restriction maps, yielding
+$C^0=0$ and $C^1=\mathbb{Z}$. Any restored statement must restrict the
+coefficient system or the class of sheaves/presheaves.
+
 **Corollary 7.8.** The following cover structures force $H^1 = 0$:
 
 1. *Nested covers*: $\{U_0 \subseteq U_1\}$ — acyclic (single edge), $H^1 = 0$.
 2. *Two-element covers*: Mayer-Vietoris gives $H^1 = 0$.
 3. *Sparse pairwise overlaps (no shared variable in cycles)*: vacuous $H^1$.
 
-**Theorem 7.9 (Holonomy and H¹).** For a 4-cycle cover $\mathcal{U} = \{U_1, U_2,
+**Invalid draft claim 7.9 (Holonomy and H1).** For a 4-cycle cover $\mathcal{U} = \{U_1, U_2,
 U_3, U_4\}$ with $\mathbb{Z}/2\mathbb{Z}$ coefficients, a presheaf $F$ has non-trivial
 $\check{H}^1(\mathcal{U}, F) \cong \mathbb{Z}/2\mathbb{Z}$ if and only if the signed
 product around the 4-cycle (the *holonomy*) is $-1$.
@@ -566,10 +602,20 @@ $f$ is a coboundary iff the holonomy $\prod_i s_i = +1$ (product of boundary val
 Non-trivial $H^1$ elements correspond to holonomy $-1$. The CHSH quantum sections
 achieve holonomy $-1$ (the CHSH inequality is saturated). $\square$
 
-**Corollary 7.10 (Spatial vs. Temporal Failure Types).** Temporal access restrictions
+**Correction status.** Do not use this as an iff theorem about $H^1$ itself.
+For constant $\mathbb{Z}/2\mathbb{Z}$ coefficients on a 4-cycle, the group
+$H^1$ is already nontrivial independently of a sign labeling. A repair must
+instead define a specific support-presheaf or twisted-coefficient obstruction
+class and prove nonvanishing of that class under stated hypotheses.
+
+**Invalid draft corollary 7.10 (Spatial vs. Temporal Failure Types).** Temporal access restrictions
 (nested covers, observer sub-presheaves on acyclic covers) produce H⁰ failures.
 Spacelike causal separation requiring a cyclic 4-context cover produces H¹ failures.
 Cover topology is the primary determinant of failure type.
+
+**Correction status.** This is too strong. External review blocks the claim that
+cover topology alone determines failure type; the support presheaf, coefficient
+system, and allowed local sections are load-bearing.
 
 ### 7.4 Failure-Type Monotonicity
 
@@ -580,7 +626,7 @@ Cover topology is the primary determinant of failure type.
 - *Sub-cover restriction*: new cover $\mathcal{U}' \subseteq \mathcal{U}$ (some patches
   are dropped). The nerve $N(\mathcal{U}')$ is a subgraph of $N(\mathcal{U})$.
 
-**Theorem 7.12 (Failure-Type Monotonicity).** Let $f: (A, \mathcal{U}) \to (B, \mathcal{V})$
+**Invalid draft claim 7.12 (Failure-Type Monotonicity).** Let $f: (A, \mathcal{U}) \to (B, \mathcal{V})$
 be a typed loss morphism of either topology-preserving or sub-cover restriction type.
 Then:
 
@@ -609,6 +655,12 @@ occur.
 If $N(\mathcal{U})$ had cycles, dropping patches from $\mathcal{U}$ can only remove
 cycles from the nerve, potentially reducing $H^1$ to $H^0$ or to no failure — but
 never increasing the failure type. $\square$
+
+**Correction status.** Do not use this as a theorem. The source/target
+diagnostic mixes custom "H0 failure" language with standard cohomology, and
+fixed-cover section-space reductions can create or destroy global-section
+obstructions. A repair must define a narrow loss-morphism class and prove
+preservation for that class only, with counterexamples outside the class.
 
 **Remark 7.13 (Excluded class).** The only operation that could create $H^1$ from $H^0$
 is *patch identification*: merging two non-adjacent patches into one, which can introduce
@@ -657,7 +709,7 @@ presence in $\mathcal{A}$ was necessary for satisfiability.
 
 ### 8.1 Evidence
 
-**(a) Biconditional (Theorem 6.7).** For paths in typed transport graphs with fixed
+**(a) Predicate unfolding (Proposition 6.7).** For paths in typed transport graphs with fixed
 satisfying endpoints, $P \in \text{Obstr} \iff LK(P) \neq \emptyset$. The biconditional
 holds exactly: all PO1-admissible paths have non-empty LK; all non-admissible paths
 have empty LK (verified on diamond network witness, T73).
@@ -715,11 +767,12 @@ non-locality and contextuality: empirical models are presheaves on measurement c
 covers, and contextuality is the non-existence of a global section. The Čech cohomology
 obstructions we study (Definition 7.5) are instances of their framework.
 
-*Our contribution relative to [AB11]:* We add the typed loss morphism layer and prove
-failure-type monotonicity for this class of morphisms (Theorem 7.12). The sheaf
-framework identifies when an obstruction exists; our attribution framework asks when a
-specific morphism is responsible. The non-functor theorem (Theorem 5.4) and loss kernel
-lax-functor (Theorem 6.1) are not present in [AB11].
+*Our contribution relative to [AB11]:* We add the typed loss morphism layer and
+record a failed attempt at failure-type monotonicity for this class of morphisms
+(invalid draft claim 7.12). The sheaf framework identifies when an obstruction
+exists; our attribution framework asks when a specific morphism is responsible.
+The non-functor observation (Theorem 5.4) and loss-kernel monoid annotation
+(Proposition 6.1) are not present in [AB11].
 
 ### 9.2 Signed Graphs and Parity CSP
 
@@ -737,24 +790,25 @@ predicate are our additions.
 ### 9.3 Category Theory and Monoidal Categories
 
 Our category **Res** (Theorem 4.5) fits naturally in the tradition of categories of
-relational structures with structure-preserving maps. The loss kernel lax-functor
-(Theorem 6.1) is an example of a lax natural transformation / colax functor
-[MacLane 1971; Leinster 2004].
+relational structures with structure-preserving maps. The loss kernel is currently
+only a monoid-valued annotation on arrows (Proposition 6.1), close to standard
+effect/provenance-style accumulation.
 
 Restriction categories [Cockett-Lack 2002] formalize categories of partial maps where
 not all morphisms are defined everywhere. Our morphisms are total but carry forgetting
 declarations; the relationship to restriction categories is structural rather than direct.
 
 *Our contribution:* The specific typed annotation structure (preserved/forgotten
-declaration), the lax-functorial composition of loss kernels, and the non-functor
-theorem are not present in these frameworks. We are not aware of prior work studying
-path-dependence of attribution predicates in typed morphism categories.
+declaration), the monoid-valued composition of loss kernels, and the non-functor
+observation are the local additions. External review blocks treating these as a
+new categorical structure without a stronger separation or universal property.
 
 ### 9.4 Categorical Quantum Mechanics
 
 Coecke, Abramsky, and collaborators developed categorical quantum mechanics using
-compact closed categories and string diagrams [AC04]. The CHSH holonomy we study
-(Theorem 7.9) is related to their treatment of non-locality.
+compact closed categories and string diagrams [AC04]. The CHSH holonomy fixture
+discussed in invalid draft claim 7.9 is related to their treatment of
+non-locality, but the iff cohomology statement is not established here.
 
 *Our contribution:* We work in a finite combinatorial (non-quantum) setting. The parity
 system obstruction is not quantum; it is a finite signed-graph phenomenon. The quantum
@@ -769,20 +823,21 @@ does not tell you whether the lost structure was the specific structure that res
 the target obstruction.
 
 *Our contribution:* A set-valued, composable, typed annotation for information-losing
-morphisms, with a proven composition law (Theorem 6.1) and attribution implications
-(Theorem 6.7, Conjecture 8.1).
+morphisms, with a proven composition law (Proposition 6.1) and candidate
+attribution implications (Proposition 6.7, Conjecture 8.1).
 
 ### 9.6 Summary of Novelty Claims
 
-The following results are, to our knowledge, new:
+The following items are local formalism components or open candidates, not
+publication-grade novelty claims:
 
 | Result | Statement |
 |--------|-----------|
 | Theorem 4.5 | Typed restriction morphisms form a category **Res** |
 | Theorem 5.4 | Obstruction admissibility is not a Boolean functor on **Res** |
-| Theorem 6.1 | Loss kernel is lax-functorial: $LK(g \circ f) = LK(f) \cup LK(g)$ |
-| Theorem 6.7 | Path-dependence biconditional for fixed-endpoint paths |
-| Theorem 7.12 | Typed loss morphisms are failure-type monotone ($H^0 \to H^1$ impossible) |
+| Proposition 6.1 | Loss kernel is monoid-valued: $LK(g \circ f) = LK(f) \cup LK(g)$ |
+| Proposition 6.7 | Path-dependence predicate unfolding for fixed-endpoint paths |
+| Invalid draft claim 7.12 | Failure-type monotonicity is review-blocked and must be rebuilt before use |
 | Conjecture 8.1 | Typed Forgetting Attribution: $LK(f) \neq \emptyset$ and attribution-relevant is necessary for admissibility |
 
 The following results are not new and are stated here for context:
@@ -790,8 +845,8 @@ The following results are not new and are stated here for context:
 | Result | Attribution |
 |--------|-------------|
 | Theorem 3.1 | Signed-graph 2-colorability characterization [Harary 1953; Zaslavsky 1982] |
-| Theorem 7.7 | Acyclic nerve implies $H^n = 0$ for $n \geq 1$ [Čech theory, standard] |
-| Theorem 7.9 | Holonomy characterizes $H^1$ on 4-cycle cover [Abramsky-Brandenburger 2011] |
+| Invalid draft claim 7.7 | Acyclic nerve does not imply vanishing for all presheaves without extra hypotheses |
+| Invalid draft claim 7.9 | Holonomy does not characterize $H^1$ itself without a specified obstruction class |
 
 ---
 
@@ -804,10 +859,10 @@ on which the core results have been verified.
 |--------|---------|-------------|
 | Parity constraint triangle | Example 2.5 | Obstructed; Theorem 3.1 instantiated |
 | Compiler pipeline (source → machine code) | Emergent obstruction chain | Non-functor (Theorem 5.4), three chain shapes (Remark 5.6) |
-| Typed transport diamond | Diamond network (Witness 6.9) | Path-dependence biconditional (Theorem 6.7) |
+| Typed transport diamond | Diamond network (Witness 6.9) | Path-dependence predicate unfolding (Proposition 6.7) |
 | Distributed consensus (CAP) | Network partition forcing tradeoff | PO1 instance; obstruction attribution verified |
 | Version control (merge conflict) | Three-way merge with incompatible histories | PO1 instance |
-| CHSH contextuality | Alice-Bob 4-context cover | $H^1$ obstruction (Theorem 7.9), $H^1$ destruction (Witness W2, Section 7.4) |
+| CHSH contextuality | Alice-Bob 4-context cover | parity obstruction fixture; older H1 iff reading is review-blocked (invalid draft claim 7.9) |
 
 The compiler, consensus, and version-control witnesses establish that the framework
 is not tied to the physical or quantum setting.
@@ -862,32 +917,37 @@ We have studied finite restriction systems and typed lossy morphisms between the
 with the goal of understanding when and why a morphism is responsible for a loss of
 global satisfiability. The main findings are:
 
+**Conclusion calibration.** The next two original conclusion paragraphs are
+superseded by the reviewer calibration above. They should not be cited as final
+results: the attribution layer currently gives monoid-valued bookkeeping, and
+failure-type monotonicity is review-blocked rather than established.
+
 **The attribution layer is non-trivial.** Despite the obstruction mechanism being
 known (signed-graph parity), the attribution predicate (Obstr) has non-trivial algebraic
 structure:
 - It is not a functor on the morphism category (Theorem 5.4).
 - It depends on the accumulated typed loss over a path, not on individual morphisms
-  (Theorem 6.7, Corollary 6.8).
-- The loss kernel governing it composes lax-functorially (Theorem 6.1), making the
+  (Proposition 6.7, Corollary 6.8).
+- The loss kernel governing it composes as a monoid annotation (Proposition 6.1), making the
   empty/non-empty distinction in composed kernels the precise discriminator.
 
-**Failure types are topologically determined.** The cover nerve topology is the
+**Superseded claim: failure types are topologically determined.** The cover nerve topology is the
 primary determinant of failure type: acyclic covers can only produce H⁰ failures;
 cyclic covers (with appropriate sections) can produce H¹ failures. Typed loss morphisms
-cannot increase failure type (Theorem 7.12), meaning information loss can degrade
+cannot increase failure type (invalid draft claim 7.12), meaning information loss can degrade
 obstruction degree but cannot create higher-degree obstruction.
 
 **One central conjecture remains open.** The Typed Forgetting Attribution Conjecture
 (Conjecture 8.1) — that admissible attribution requires the loss kernel to name
 attribution-relevant structure — is supported by all evidence but unproved. It is the
-natural generalization of the lax-functor law and the path-dependence biconditional
+natural generalization of the monoid-annotation law and the path-dependence predicate
 into a full attribution theorem.
 
 The program's thesis is that *obstruction is not meaningful without an attribution
 account*. Seeing that $\mathcal{B}$ is obstructed is not enough. One must also name
 the structure that was present in $\mathcal{A}$ and removed by $f$, and show that
-removal was relevant. The typed loss kernel is the algebraic object that makes this
-account precise.
+removal was relevant. The typed loss kernel is the current bookkeeping object
+for that account; whether it is more than integration vocabulary remains open.
 
 ---
 
@@ -935,13 +995,19 @@ Python models. The models are available in the companion repository.
 | §4 | Category (Theorem 4.5) | `models/po1_admissibility_conditions.py` | T41: 14/14 pass |
 | §3 | CSP Correspondence (Theorem 3.1) | `models/po1_chained_projection.py` | T39: verified |
 | §5 | Non-Functor (Theorem 5.4) | `models/po1_chained_projection.py` | T34: 3 chain shapes |
-| §6 | Loss Kernel Lax-Functor (Theorem 6.1) | `models/losskernel_composition.py` | T73: 17/17 pass |
+| §6 | Loss Kernel monoid annotation (Proposition 6.1) | `models/losskernel_composition.py` | T73: 17/17 pass |
 | §6 | Path-Dependence Biconditional (Theorem 6.7) | `models/transport_network.py` + `models/losskernel_composition.py` | T37, T73: pass |
-| §7 | Failure-Type Monotonicity (Theorem 7.12) | `models/losskernel_failure_type.py` | T69: 7/7 pass |
+| §7 | Failure-type monotonicity failed theorem family (invalid draft claim 7.12) | `models/losskernel_failure_type.py` | T69 finite fixtures pass; general theorem review-blocked |
 
-*Note on proof status:* Theorems 4.5, 6.1, and 7.12 have algebraic proofs as given in
-the text. Theorems 5.4 and 6.7 have algebraic proof sketches verified by construction
-on witness families. Conjecture 8.1 has no proof; Section 8 gives evidence and boundary.
+**Appendix correction.** The row labeled "Path-Dependence Biconditional
+(Theorem 6.7)" should be read as "Path-dependence predicate unfolding
+(Proposition 6.7)."
+
+*Note on proof status:* Theorem 4.5 and Proposition 6.1 have algebraic proofs as
+given in the text. Theorem 5.4 and Proposition 6.7 have proof sketches verified
+by construction on witness families. Invalid draft claim 7.12 is review-blocked
+despite finite T69 fixtures passing. Conjecture 8.1 has no proof; Section 8 gives
+evidence and boundary.
 
 ---
 

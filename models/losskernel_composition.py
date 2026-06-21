@@ -1,8 +1,8 @@
 """T73: LossKernel composition law.
 
-Verifies that LossKernel composes lax-functorially (union law) over T34/T37
-morphisms, and that T37's path-dependent PO1 admissibility is exactly captured
-by the empty/non-empty difference in composed LossKernels.
+Verifies that LossKernel composes by union as a monoid-valued annotation over
+T34/T37 morphisms, and that T37's path-dependent PO1 admissibility is exactly
+captured by the empty/non-empty difference in composed LossKernels.
 
 Main claims:
   H1: LossKernel(path) = union of per-step forgotten_structure (composition law)
@@ -128,7 +128,7 @@ def verify_h1(t37: T37Result, t34: T34Result) -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
-# H2: Lax-functorial (monotone)
+# H2: Monoid-valued accumulation (monotone)
 # ---------------------------------------------------------------------------
 
 
@@ -169,7 +169,7 @@ def verify_h2_monotonicity_chain(chain: ProjectionChain) -> dict[str, Any]:
 
 
 def verify_h2(t37: T37Result, t34: T34Result) -> dict[str, Any]:
-    """H2: lax-functorial on all T34/T37 paths."""
+    """H2: monoid-valued accumulation on all T34/T37 paths."""
     results: dict[str, Any] = {}
 
     for pa in t37.spectre_network_analysis.path_admissibilities:
@@ -349,10 +349,11 @@ def run_t73_analysis() -> T73Result:
         h3=h3,
         h4=h4,
         composition_law=(
-            "LossKernel(g ∘ f) = LossKernel(f) ∪ LossKernel(g) — LAX-FUNCTORIAL. "
-            "Not strictly functorial (loss in g does not depend on loss in f). "
-            "Not partial (law is total on all T34/T37 morphisms). "
-            "Union is associative; identity element is ∅."
+            "LossKernel(g after f) = LossKernel(f) union LossKernel(g) -- "
+            "monoid-valued annotation. This is not claimed as a lax functor "
+            "or a new categorical object. The law is total on all tested "
+            "T34/T37 morphisms; union is associative and the identity element "
+            "is the empty set."
         ),
         path_dependence_biconditional=(
             "For fixed (source, target) with equal endpoint AC conditions (AC1-AC4, AC6-AC7): "
@@ -368,7 +369,7 @@ def run_t73_analysis() -> T73Result:
 def t73_result_to_dict(result: T73Result) -> dict[str, Any]:
     return {
         "h1_composition_law": result.h1,
-        "h2_lax_functorial": result.h2,
+        "h2_monoid_accumulation": result.h2,
         "h3_path_dependence_biconditional": result.h3,
         "h4_chain_shapes": result.h4,
         "composition_law": result.composition_law,
@@ -389,7 +390,7 @@ if __name__ == "__main__":
         json.dump(d, f, indent=2)
     print(f"Main theorem: {d['main_theorem']}")
     print(f"H1 (composition law): {'PASS' if result.h1['h1_passes'] else 'FAIL'}")
-    print(f"H2 (lax-functorial):  {'PASS' if result.h2['h2_passes'] else 'FAIL'}")
+    print(f"H2 (monoid accumulation):  {'PASS' if result.h2['h2_passes'] else 'FAIL'}")
     print(f"H3 (biconditional):   {'PASS' if result.h3['h3_passes'] else 'FAIL'}")
     print(f"H4 (chain shapes):    {'PASS' if result.h4['h4_passes'] else 'FAIL'}")
     print(f"\nComposition law: {result.composition_law.encode('ascii', 'replace').decode()}")

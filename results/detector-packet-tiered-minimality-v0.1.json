@@ -1,0 +1,230 @@
+{
+  "raw_identity_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference"
+  ],
+  "provisional_admission_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference",
+    "provenance_chain",
+    "signatures",
+    "authority_domains",
+    "publication_status",
+    "revocation_status",
+    "key_state",
+    "admissibility_tokens"
+  ],
+  "claim_review_extension_fields": [
+    "witness_references",
+    "reconstruction_paths",
+    "challenge_status"
+  ],
+  "audits": [
+    {
+      "packet_id": "same_payload_reference_packet",
+      "changed_packet_fields": [],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": true,
+      "strict_t121_verdict": "admissible",
+      "provisional_failures": [],
+      "claim_review_failures": [],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Reference packet clears raw, provisional-admission, and claim-review tiers."
+    },
+    {
+      "packet_id": "missing_provenance_same_payload",
+      "changed_packet_fields": [
+        "provenance_chain",
+        "admissibility_tokens"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "provenance_chain",
+        "signatures",
+        "admissibility_tokens"
+      ],
+      "claim_review_failures": [
+        "provenance_chain",
+        "signatures",
+        "admissibility_tokens",
+        "admissibility_tokens"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "authority_collapsed_same_payload",
+      "changed_packet_fields": [
+        "authority_domains",
+        "admissibility_tokens"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "authority_domains",
+        "admissibility_tokens"
+      ],
+      "claim_review_failures": [
+        "authority_domains",
+        "admissibility_tokens",
+        "admissibility_tokens"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "invalid_signature_same_payload",
+      "changed_packet_fields": [
+        "signatures",
+        "admissibility_tokens"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "signatures",
+        "admissibility_tokens"
+      ],
+      "claim_review_failures": [
+        "signatures",
+        "admissibility_tokens",
+        "admissibility_tokens"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "key_compromised_same_payload",
+      "changed_packet_fields": [
+        "key_state"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "key_state"
+      ],
+      "claim_review_failures": [
+        "key_state"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "revoked_authority_same_payload",
+      "changed_packet_fields": [
+        "revocation_status"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "revocation_status"
+      ],
+      "claim_review_failures": [
+        "revocation_status"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "publication_delayed_same_payload",
+      "changed_packet_fields": [
+        "publication_status",
+        "admissibility_tokens"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": false,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [
+        "publication_status",
+        "admissibility_tokens"
+      ],
+      "claim_review_failures": [
+        "publication_status",
+        "admissibility_tokens",
+        "admissibility_tokens"
+      ],
+      "strict_only_fields_triggered": [],
+      "interpretation": "Changed fields hit the provisional-admission core, so the packet cannot even enter claim review."
+    },
+    {
+      "packet_id": "missing_witnesses_same_payload",
+      "changed_packet_fields": [
+        "witness_references"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [],
+      "claim_review_failures": [
+        "witness_references"
+      ],
+      "strict_only_fields_triggered": [
+        "witness_references"
+      ],
+      "interpretation": "Changed fields preserve provisional admission but remove full claim-review rights through witness_references."
+    },
+    {
+      "packet_id": "missing_reconstruction_same_payload",
+      "changed_packet_fields": [
+        "reconstruction_paths"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "inadmissible",
+      "provisional_failures": [],
+      "claim_review_failures": [
+        "reconstruction_paths"
+      ],
+      "strict_only_fields_triggered": [
+        "reconstruction_paths"
+      ],
+      "interpretation": "Changed fields preserve provisional admission but remove full claim-review rights through reconstruction_paths."
+    },
+    {
+      "packet_id": "open_challenge_same_payload",
+      "changed_packet_fields": [
+        "admissibility_tokens",
+        "challenge_status"
+      ],
+      "raw_evidence_preserved": true,
+      "provisionally_admissible": true,
+      "claim_review_ready": false,
+      "strict_t121_verdict": "withhold",
+      "provisional_failures": [],
+      "claim_review_failures": [
+        "challenge_status",
+        "admissibility_tokens"
+      ],
+      "strict_only_fields_triggered": [
+        "challenge_status"
+      ],
+      "interpretation": "Changed fields preserve provisional admission but remove full claim-review rights through challenge_status."
+    }
+  ],
+  "strongest_claim": "The current detector packet burden is tiered, not flat. Under the same-payload witness family, provenance/signature/authority/publication/revocation/key-state fields form the provisional admission core, while witness references, reconstruction paths, and dispute state are additional claim-review requirements.",
+  "weakened_claim": "T121's packet-wide strictness is too coarse as a description of what each field does. The current executable route should not say that every packet field is equally needed for the first admission decision. Some fields gate stronger review and future operations, not raw evidence preservation or provisional intake.",
+  "falsification_condition": "T133 fails if witness references, reconstruction paths, and challenge state can be removed while keeping full detector-claim review rights, or if provenance, signature, authority, publication, revocation, and key-state failures no longer block even provisional packet admission.",
+  "open_blocker": "The tier split is still a schema audit over synthetic same-payload packets. A real T97 dry-run packet must publish both provisional admission and claim-review readiness before the detector branch can present itself as a reproducible evidence protocol.",
+  "recommended_next": "Refactor the T97 dry-run packet into explicit tier outputs: raw evidence preserved, provisionally admitted, and claim-review ready. Then require any real deployment to freeze which tier is being claimed before event collection.",
+  "claim_ledger_update": "Q1B remains externally blocked. T133 sharpens the packet burden: detector evidence now has a smaller provisional-admission core plus a stricter claim-review extension. This weakens any flat reading that treats every packet field as equally necessary at the first admissibility step."
+}

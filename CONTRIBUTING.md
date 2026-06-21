@@ -22,6 +22,42 @@ Good contributions:
 - avoid claiming that human belief creates physical reality;
 - avoid treating analogy as proof.
 
+## Agent-Driven Exploration Protocol
+
+Use this protocol for underexplored open problems, long-horizon hypotheses,
+and cross-cutting research patterns that are too broad for one linear pass.
+It is especially appropriate when the repo needs to convert intuition into
+candidate tests, audits, or clean demotions without promoting claims.
+
+1. Launch one read-only subagent per goal. Each goal should name the relevant
+   claim, hypothesis, open problem, and existing tests or reports.
+2. Require each subagent to return only:
+   - a refined goal statement;
+   - a best-next-artifact proposal with a working title and candidate filename;
+   - key tests with success, failure, and demotion criteria;
+   - links to relevant existing repo artifacts;
+   - immediate blockers or negative results.
+3. Run one synthesis pass after the independent outputs. The synthesis should
+   identify the strongest executable next artifacts, guardrails, priority
+   order, and any numbering or registry conflicts.
+4. Route outcomes conservatively:
+   - `tests/` for executable artifacts;
+   - `open-problems/` for theorem targets not yet earned;
+   - `explorations/` or technical reports for synthesis and audits;
+   - `ROADMAP.md` for priority sequence only;
+   - `CLAIM-LEDGER.md` only after an artifact runs and earns a claim update.
+5. Treat proposed T-numbers as placeholders until checked against `TESTS.md`
+   and `tests/`. Do not reuse an existing number.
+
+Promotion gates:
+
+- No new claim from subagent synthesis alone.
+- No physics, geometry, consciousness, or novelty upgrade until the proposed
+  artifact runs and yields a narrow theorem, separation, or falsifying result.
+- Preserve negative results and demotions as first-class progress.
+- Keep the recurring-structure map active: separate known mechanisms from the
+  repo's possible contribution before naming novelty.
+
 ## Claim File Shape
 
 ```md

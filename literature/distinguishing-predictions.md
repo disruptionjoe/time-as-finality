@@ -8,6 +8,17 @@ defend against the charge that it is an elaborate restatement of existing framew
 **Status:** Draft. Entries marked `[OPEN]` need a formal distinguishing criterion. Entries marked
 `[PARTIAL]` have a sketch. Entries marked `[READY]` have an explicit criterion ready to test.
 
+## Open Neighbor Gate
+
+As of 2026-06-20, the entries still marked `[OPEN]` are:
+
+- Relational Time / Page-Wootters-style clock correlation versus D1 reversal cost.
+- Relational Quantum Mechanics versus a computable H1/global-section obstruction.
+
+Therefore this file is not an external-readiness certificate. It is a working
+comparison ledger: external-facing language must state that several comparisons
+are still partial or open, especially outside the detector-provenance branch.
+
 ---
 
 ## Neighbor Map
@@ -85,6 +96,15 @@ which already formed detector records may count as evidence. The branch becomes
 non-null only if a pre-registered event-level raw-log protocol yields a verdict
 that cannot be reduced to passive statistics, dashboard summaries, or post hoc
 provenance declarations.
+
+T104 sharpens the same boundary on the surviving Q1A witness. The T103 fixed-
+data case looked like a narrow external delta until the fragment partition was
+shared. Once redundancy is recomputed over audited provenance classes rather
+than raw fragment copies, provenance-aware Quantum Darwinism reproduces the
+same finalized/not-finalized/withhold verdicts as D1 on the tested family.
+The current Q1A witness is therefore absorbed by provenance-aware fragment
+partitioning and should be treated as admissibility/bookkeeping discipline
+unless another D1 dimension survives the same comparison.
 
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary

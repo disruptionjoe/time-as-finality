@@ -1,0 +1,284 @@
+{
+  "schema_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference",
+    "provenance_chain",
+    "signatures",
+    "authority_domains",
+    "publication_status",
+    "revocation_status",
+    "key_state",
+    "witness_references",
+    "reconstruction_paths",
+    "admissibility_tokens",
+    "challenge_status"
+  ],
+  "strict_necessary_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference",
+    "provenance_chain",
+    "signatures",
+    "authority_domains",
+    "publication_status",
+    "revocation_status",
+    "key_state",
+    "witness_references",
+    "reconstruction_paths",
+    "admissibility_tokens",
+    "challenge_status"
+  ],
+  "audits": [
+    {
+      "packet_id": "valid_packet",
+      "raw_payload_valid": true,
+      "packet_verdict": "admissible",
+      "admissibility_failures": [],
+      "future_operations": [
+        "audit_authority",
+        "bind_calibration",
+        "challenge_packet",
+        "publish_packet",
+        "reconstruct_event",
+        "retain_raw_payload",
+        "score_admissibility",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [],
+      "failures_change_future_operation_availability": [],
+      "handled_by_existing_protocol_artifacts": [],
+      "missing_schema_requirements_revealed": [],
+      "explanation": "Packet is schema-complete, admissible, and preserves detector review operations."
+    },
+    {
+      "packet_id": "missing_provenance",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "missing_strict_packet_fields",
+        "missing_provenance_chain",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [
+        "provenance_chain"
+      ],
+      "failures_change_admissibility": [
+        "missing_strict_packet_fields",
+        "missing_provenance_chain",
+        "missing_admissibility_tokens"
+      ],
+      "failures_change_future_operation_availability": [
+        "future_claim_operations_removed",
+        "missing_admissibility_tokens",
+        "missing_provenance_chain",
+        "missing_strict_packet_fields"
+      ],
+      "handled_by_existing_protocol_artifacts": [
+        "T87/T97 raw-log provenance contract",
+        "T78/T87/T97 admissibility gates"
+      ],
+      "missing_schema_requirements_revealed": [
+        "strict_packet_fields_must_be_present"
+      ],
+      "explanation": "Raw payload remains valid for missing_provenance, but packet-level failures block admissibility: missing_strict_packet_fields, missing_provenance_chain, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "key_compromised",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "signing_key_compromised"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [
+        "signing_key_compromised"
+      ],
+      "failures_change_future_operation_availability": [
+        "future_claim_operations_removed",
+        "signing_key_compromised"
+      ],
+      "handled_by_existing_protocol_artifacts": [],
+      "missing_schema_requirements_revealed": [
+        "key-compromise and rotation-continuity state must be explicit"
+      ],
+      "explanation": "Raw payload remains valid for key_compromised, but packet-level failures block admissibility: signing_key_compromised."
+    },
+    {
+      "packet_id": "revoked_authority",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "authority_or_packet_revoked"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [
+        "authority_or_packet_revoked"
+      ],
+      "failures_change_future_operation_availability": [
+        "authority_or_packet_revoked",
+        "future_claim_operations_removed"
+      ],
+      "handled_by_existing_protocol_artifacts": [],
+      "missing_schema_requirements_revealed": [
+        "revocation registry and check time must be part of packet"
+      ],
+      "explanation": "Raw payload remains valid for revoked_authority, but packet-level failures block admissibility: authority_or_packet_revoked."
+    },
+    {
+      "packet_id": "publication_delayed",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "packet_not_published_before_analysis",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [
+        "packet_not_published_before_analysis",
+        "missing_admissibility_tokens"
+      ],
+      "failures_change_future_operation_availability": [
+        "future_claim_operations_removed",
+        "missing_admissibility_tokens",
+        "packet_not_published_before_analysis"
+      ],
+      "handled_by_existing_protocol_artifacts": [
+        "T87/T97 preregistration and immutable export gate",
+        "T78/T87/T97 admissibility gates"
+      ],
+      "missing_schema_requirements_revealed": [],
+      "explanation": "Raw payload remains valid for publication_delayed, but packet-level failures block admissibility: packet_not_published_before_analysis, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "authority_domains_collapsed",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "authority_domains_collapsed",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [
+        "authority_domains_collapsed",
+        "missing_admissibility_tokens"
+      ],
+      "failures_change_future_operation_availability": [
+        "authority_domains_collapsed",
+        "future_claim_operations_removed",
+        "missing_admissibility_tokens"
+      ],
+      "handled_by_existing_protocol_artifacts": [
+        "T100 authority-domain lower bound",
+        "T78/T87/T97 admissibility gates"
+      ],
+      "missing_schema_requirements_revealed": [],
+      "explanation": "Raw payload remains valid for authority_domains_collapsed, but packet-level failures block admissibility: authority_domains_collapsed, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "valid_raw_data_inadmissible_packet",
+      "raw_payload_valid": true,
+      "packet_verdict": "inadmissible",
+      "admissibility_failures": [
+        "missing_strict_packet_fields",
+        "missing_signatures",
+        "missing_witness_references",
+        "missing_reconstruction_paths",
+        "missing_admissibility_tokens"
+      ],
+      "future_operations": [
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [
+        "signatures",
+        "witness_references",
+        "reconstruction_paths"
+      ],
+      "failures_change_admissibility": [
+        "missing_strict_packet_fields",
+        "missing_signatures",
+        "missing_witness_references",
+        "missing_reconstruction_paths",
+        "missing_admissibility_tokens"
+      ],
+      "failures_change_future_operation_availability": [
+        "future_claim_operations_removed",
+        "missing_admissibility_tokens",
+        "missing_reconstruction_paths",
+        "missing_signatures",
+        "missing_strict_packet_fields",
+        "missing_witness_references"
+      ],
+      "handled_by_existing_protocol_artifacts": [
+        "T87 signature verification log",
+        "T97 control and witness packet skeleton",
+        "T117/T119 future-operation and reconstruction-path audit",
+        "T78/T87/T97 admissibility gates"
+      ],
+      "missing_schema_requirements_revealed": [
+        "strict_packet_fields_must_be_present"
+      ],
+      "explanation": "Raw payload remains valid for valid_raw_data_inadmissible_packet, but packet-level failures block admissibility: missing_strict_packet_fields, missing_signatures, missing_witness_references, missing_reconstruction_paths, missing_admissibility_tokens."
+    },
+    {
+      "packet_id": "same_raw_data_reduced_future_rights",
+      "raw_payload_valid": true,
+      "packet_verdict": "withhold",
+      "admissibility_failures": [
+        "missing_admissibility_tokens",
+        "open_challenge_or_dispute"
+      ],
+      "future_operations": [
+        "inspect_dispute",
+        "preserve_evidence",
+        "retain_raw_payload"
+      ],
+      "missing_strict_fields": [],
+      "failures_change_admissibility": [
+        "missing_admissibility_tokens",
+        "open_challenge_or_dispute"
+      ],
+      "failures_change_future_operation_availability": [
+        "future_operations_withheld_pending_dispute",
+        "missing_admissibility_tokens",
+        "open_challenge_or_dispute"
+      ],
+      "handled_by_existing_protocol_artifacts": [
+        "T78/T87/T97 admissibility gates"
+      ],
+      "missing_schema_requirements_revealed": [
+        "challenge/dispute lifecycle must gate future use"
+      ],
+      "explanation": "Raw payload is preserved, but dispute state withholds detector-claim operations: inspect_dispute, preserve_evidence, retain_raw_payload."
+    }
+  ],
+  "strongest_claim": "Before detector admissibility can be reasoned about, the evidence object must include raw payload plus provenance, authority, publication, revocation, key-state, witness, reconstruction, token, and dispute fields. Valid raw data alone is insufficient.",
+  "fields_strictly_necessary": "All declared schema fields are strictly necessary for this minimal packet because each supports either raw-payload identity/order, evidence admissibility, or future operations over the packet.",
+  "failures_change_admissibility": "Missing provenance, compromised key, revoked authority, delayed publication, collapsed authority domains, missing signatures, missing witnesses, missing reconstruction paths, missing tokens, and open disputes all block or withhold admissibility.",
+  "failures_change_future_operation_availability": "Every negative case reduces future operations. The clearest split is same raw data with open dispute: raw retention remains available, but claim review, lineage verification, challenge closure, and detector-claim use are withheld.",
+  "handled_by_existing_protocol_artifacts": "Provenance, signatures, publication, authority separation, witness references, reconstruction paths, and admissibility tokens are mostly handled by T78/T87/T97/T100. Revocation status, key-compromise state, and challenge lifecycle need explicit packet-level fields.",
+  "missing_schema_requirements": "The audit reveals three schema requirements not cleanly owned by the older raw-log artifacts: revocation registry/check time, key rotation and compromise continuity, and challenge/dispute lifecycle state.",
+  "claim_impact_recommendation": "No Q1 or detector-physics promotion. Treat T121 as infrastructure: a minimal detector evidence packet object required before D1 scoring or detector-branch admissibility claims.",
+  "recommended_next": "Integrate this packet schema with the T97 dry-run packet and require revocation, key-continuity, and dispute-state checks before any future real detector packet is scored."
+}

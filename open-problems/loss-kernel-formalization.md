@@ -102,6 +102,14 @@ stronger categorical or universal property is proved.
    provenance/effect bookkeeping?
 9. Are the T69 failure-type results valid only for the chosen finite cover
    fixtures, or do they survive standard Cech/sheaf-theoretic hypotheses?
+10. Does the iterated orbit `{LossKernel(T^n) : n >= 1}` reveal stable,
+    periodic, saturating, or failure-type-degrading behavior not visible from
+    the one-step kernel `LossKernel(T)`?
+11. Can obstruction relocation be made precise: when a projection removes an
+    object-level obstruction, does a typed reconstruction obligation appear in
+    provenance, loss, admissibility, or gap data?
+12. Can LossKernel induce a measurable target-side reconstruction debt, such as
+    ambiguity, non-uniqueness, or missing-witness lower bounds?
 
 ## Candidate Data Shape
 
@@ -132,6 +140,8 @@ correlates with it, or is not yet linked.
 | T37 path dependence | Tests whether same endpoints can differ because composed loss differs. |
 | T39 CSP reframing | Separates known parity obstruction from typed attribution metadata. |
 | T40 holonic emergence | Requires cross-level forgotten dimensions for holonic attribution. |
+| Iterated loss orbit | Candidate extension; must show behavior not already explained by one-step T69/T73 union accumulation. |
+| Obstruction relocation | Candidate accounting principle; must avoid exact conservation language and classify where the failure moved. |
 | T19/T64/T66/T67 | Candidate access/provenance loss corollaries. |
 
 ## Success Criteria

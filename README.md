@@ -2,7 +2,7 @@
 
 **The past is what has become hard to undo.**
 
-Time as Finality is the founding research program of an open mathematical
+Time as Finality is the founding and lead research program of an open mathematical
 investigation into how stable structure is preserved, transformed, forgotten,
 and newly created as it moves across recursively nested organizational levels.
 The program asks whether observer-relative temporal order and classical
@@ -16,6 +16,29 @@ Some founding intuitions will survive that search. Others will not. Both
 outcomes are informative.
 
 This is a claim-led formalization project: every major claim is labeled, linked, challenged, and paired with tests or failure conditions. The executable mathematics continuously determines which intuitions survive.
+
+Computational-status language is tracked separately in
+[COMPLEXITY-LEDGER.md](COMPLEXITY-LEDGER.md). Check it before describing a
+result as brute-force, polynomial, theorem-backed, NP-hard, CSP-complete, or
+scalable.
+
+## Current Orientation
+
+Read these first:
+
+1. [Vision - North Star.md](Vision%20-%20North%20Star.md) - the aggressive
+   geometry vision: find the geometry whose shadows are physics, then prove it
+   or break it.
+2. [Method - Research Program Guidelines.md](Method%20-%20Research%20Program%20Guidelines.md)
+   - the methodology: how claims are typed, tested, demoted, absorbed, or
+   killed.
+3. [Lead Research Line - Time as Finality.md](Lead%20Research%20Line%20-%20Time%20as%20Finality.md)
+   - the lead technical research line: record stabilization, finality, and
+   temporal direction inside the broader vision.
+
+The historical `NORTH-STAR.md` has been archived under
+`Candidate North Star/archive/`. The current project orientation is the
+three-file map above.
 
 ## Project Definition
 
@@ -46,7 +69,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - Not a claim that human belief creates matter.
 - Not a claim that decoherence alone solves the measurement problem.
 - Not a claim that black-hole interiors are unreal.
-- Not a claim that a hidden global substrate underlies the observer-relative structure.
+- Not a completed proof that a deeper geometric substrate underlies the
+  observer-relative structure.
 
 ## Start Here
 
@@ -79,10 +103,35 @@ The project sits between foundations of time, quantum measurement, decoherence, 
   - compression of T66-T81 into a null criterion: current detector-side Q1 is
     an admissibility filter over raw-log provenance unless it beats passive,
     dashboard, and post hoc alternatives.
+- [TECHNICAL-REPORT-q1-branch-adjudication-v0.1.md](TECHNICAL-REPORT-q1-branch-adjudication-v0.1.md)
+  - Q1 adjudication showing the quantum branch should split before paper
+    language into access-boundary accounting, detector admissibility,
+    weak-measurement reinstatement gate, and contextuality guardrail.
+- [TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md](TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md)
+  - Q1A neighbor comparison weakening the surviving quantum branch to
+    access-boundary and independence accounting unless a fixed-data witness
+    separates it from standard frameworks.
+- [TECHNICAL-REPORT-q1a-fixed-data-witness-v0.1.md](TECHNICAL-REPORT-q1a-fixed-data-witness-v0.1.md)
+  - fixed-data Q1A witness showing D1 can change with decoherence, fragment
+    information, raw redundancy, and branch/history availability fixed, but
+    only as conditional record-independence accounting.
 - [TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md](TECHNICAL-REPORT-ambiguous-tag-channel-independence-v0.1.md)
   - ambiguous-tag hostile-family audit showing perturbation-only and
     signed-DAG-only raw-log fixtures can rescue the partition internally, but
     only as isolated pre-registered controls rather than empirical support.
+- [TECHNICAL-REPORT-detector-stack-export-map-v0.1.md](TECHNICAL-REPORT-detector-stack-export-map-v0.1.md)
+  - instrument-level export map showing that the HydraHarp/White Rabbit/signed
+    archive route is admissible only as an augmented pre-registered T87 packet,
+    not as native detector evidence or empirical support.
+- [TECHNICAL-REPORT-detector-dry-run-tier-gate-v0.1.md](TECHNICAL-REPORT-detector-dry-run-tier-gate-v0.1.md)
+  - T97/T133 integration gate showing that filled raw-log rows are necessary
+    but not sufficient for detector packet admission; the T121/T133 wrapper and
+    claimed tier must also be frozen before data collection.
+- [TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md](TECHNICAL-REPORT-weak-measurement-undo-cost-independence-v0.1.md)
+  - weak-measurement undo-cost audit showing that control-pulse energy,
+    trajectory-derived cost, and postselected reversal success are null unless
+    a calibrated independent meter changes the verdict with standard records
+    fixed.
 - [TECHNICAL-REPORT-spacetime-aggregation-v0.1.md](TECHNICAL-REPORT-spacetime-aggregation-v0.1.md)
   - finite gluing and obstruction model for S1 spacetime aggregation.
 - [TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md](TECHNICAL-REPORT-consensus-finality-crosswalk-v0.1.md)
@@ -133,6 +182,26 @@ The project sits between foundations of time, quantum measurement, decoherence, 
     connected by typed morphisms; path-dependent admissibility witnessed.
 - [TECHNICAL-REPORT-finality-direction-theorem-v0.1.md](TECHNICAL-REPORT-finality-direction-theorem-v0.1.md)
   - constructor-style theorem check for finality-induced temporal direction.
+- [TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-finite-permutation-monotone-obstruction-v0.1.md)
+  - finite closed reversible systems cannot carry a strict scalar finality
+    monotone; H7 must be conditional, open-system, or coarse-grained.
+- [TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md](TECHNICAL-REPORT-open-markov-record-entropy-v0.1.md)
+  - open stochastic record arrows are absorbed by path irreversibility,
+    exported history, or fresh blank capacity in the tested fixtures.
+- [TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md)
+  - finite stationary Markov dynamics cannot carry a strict scalar
+    expected-finality monotone on stationary support.
+- [TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md](TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md)
+  - reverse-edge ledger showing current H7 witnesses permit only
+    constructor-only or resource-accounting readings, not an unqualified
+    physical arrow.
+- [TECHNICAL-REPORT-maintenance-viability-split-v0.1.md](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md)
+  - matched entropy/control/stability/viability examples split on future
+    operation rights, but are largely absorbed by provenance and reconstruction
+    debt once those are modeled.
+- [TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md](TECHNICAL-REPORT-accessible-state-space-separation-v0.1.md)
+  - ASP separates finite matched coarse-metric cases, but collapses into
+    enriched reachable-state, opportunity-set, and provenance analysis.
 - [TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md)
   - minimal transport formalization: H0-H4 comparison; H1+ (TypedTransportNetwork
     + CompressionRecord + EmergenceRecord) is the smallest justified formalism;

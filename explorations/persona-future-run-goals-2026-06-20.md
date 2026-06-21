@@ -187,9 +187,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P15 - Infinite Models Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T23:51:18-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-235118-p15-infinite-models-boundary-audit.md
 - goal: Audit which finite restriction/descent results might survive compactness,
   limiting covers, infinite observer families, or continuous domains, and which
   explicitly depend on finiteness.

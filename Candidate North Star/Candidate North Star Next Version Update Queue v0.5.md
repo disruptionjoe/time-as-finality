@@ -501,6 +501,8 @@ natural sufficient enrichment or quotient under the declared audit context.
 
 - [`Pre-v0.5 Review Report v0.1.md`](Pre-v0.5%20Review%20Report%20v0.1.md) — Claude Sonnet 4.6, 2026-06-20. Verdicts on Q1–Q12, two new items (N1, N2), five main-note patches recommended, three companion-report items confirmed, four items closed as no-patch.
 
+- [`Pre-v0.5 Readiness Action Report v0.1.md`](Pre-v0.5%20Readiness%20Action%20Report%20v0.1.md) - Codex GPT-5, 2026-06-20. Consolidated action report on what must be done before v0.5: five compact main-note patches, companion-report/example work, navigation/posture checks, and source-hygiene cleanup.
+
 ## Instructions To Agents Using This File
 
 When reviewing, do not draft v0.5.

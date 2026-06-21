@@ -1,0 +1,61 @@
+{
+  "audits": [
+    {
+      "name": "coarse_record_only",
+      "classification": "null_coarse_standard_record",
+      "active_route": false,
+      "reason": "The proposal does not hold fixed the full pre-registered ordinary event log, so it falls to the T139 coarse-record loophole.",
+      "required_next": "Condition on the full event-level ordinary monitored transcript."
+    },
+    {
+      "name": "screened_off_by_full_record",
+      "classification": "null_screened_off_by_full_record",
+      "active_route": false,
+      "reason": "Once the full ordinary transcript is fixed, the auxiliary channel carries no extra verdict-bearing content.",
+      "required_next": "Show an auxiliary axis that survives full-record conditioning."
+    },
+    {
+      "name": "proxy_or_postselected",
+      "classification": "null_proxy_or_postselection",
+      "active_route": false,
+      "reason": "The proposed axis is a schedule proxy or success-conditioned readout, not an independently calibrated event-level meter.",
+      "required_next": "Replace the proxy with a calibrated pre-analysis auxiliary channel."
+    },
+    {
+      "name": "same_instrument_default_null",
+      "classification": "null_same_instrument_default",
+      "active_route": false,
+      "reason": "The proposal stays inside the same declared monitored instrument and names no extra environment or detector structure beyond the full ordinary transcript.",
+      "required_next": "Either tie the auxiliary channel to extra environment structure or declare an explicit instrument enlargement."
+    },
+    {
+      "name": "extra_environment_candidate",
+      "classification": "candidate_extra_environment_escape",
+      "active_route": true,
+      "reason": "This is a live Q1C escape class: the auxiliary channel is tied to extra environment or detector structure that survives full-record conditioning and changes the verdict.",
+      "required_next": "Tie the extra environment structure to a named monitored-qubit platform."
+    },
+    {
+      "name": "enlarged_instrument_candidate",
+      "classification": "candidate_enlarged_instrument_escape",
+      "active_route": true,
+      "reason": "This is a live Q1C escape class: the proposal openly enlarges the instrument and declares the comparison target it claims to preserve.",
+      "required_next": "Write the enlarged-instrument protocol and audit the preserved comparison."
+    },
+    {
+      "name": "current_frontier",
+      "classification": "null_same_instrument_default",
+      "active_route": false,
+      "reason": "The proposal stays inside the same declared monitored instrument and names no extra environment or detector structure beyond the full ordinary transcript.",
+      "required_next": "Either tie the auxiliary channel to extra environment structure or declare an explicit instrument enlargement."
+    }
+  ],
+  "strongest_claim": "After T139 and T143, only two live Q1C architecture classes remain: an auxiliary channel tied to extra environment structure that survives full-record conditioning, or an openly enlarged instrument with a pre-declared preserved comparison target. Same-instrument auxiliary hardware is null by default.",
+  "improved": "T146 converts the post-T143 prose into an executable architecture gate. Future weak-measurement proposals can now be rejected before any literature or toy-model effort if they do not fit one of the two live escape classes.",
+  "weakened": "This weakens the generic 'second meter' route further. Hardware distinctness, unscreened rhetoric, and undeclared instrument changes no longer count as progress.",
+  "falsification_condition": "T146 fails if a same-declared-instrument auxiliary channel with no extra environment handle and no explicit instrument enlargement still yields a pre-registered verdict-changing axis that survives the full-record gate.",
+  "q1c_update": "Q1C remains dormant. Filter future proposals by architecture first: only extra-environment channels or explicitly enlarged instruments with a declared preserved comparison target remain live.",
+  "claim_ledger_update": "Add T146 to Q1C: same-instrument auxiliary hardware is null by default after the full-record gate unless it captures extra environment structure or openly enlarges the monitored instrument with a declared preserved comparison target.",
+  "open_blocker": "The repo still has no named monitored-qubit platform in either live escape class.",
+  "recommended_next": "Stop generic second-meter searches. Search only for a platform with an unscreened extra-environment channel or for an explicit enlarged-instrument protocol that states its preserved comparison target."
+}

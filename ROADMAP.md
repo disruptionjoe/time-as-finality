@@ -106,6 +106,12 @@ claim status until implemented and checked. Existing number conflicts have been
 resolved by keeping T58, T88, and T115 for their canonical indexed artifacts and
 moving the colliding side tracks to T130-T132.
 
+Recent P10/P11 persona-goal runs and the Candidate North Star capability
+projection folder are useful parking material, not sequence changes. They
+should inform T127-style prior-art and effect/provenance gates, but they do not
+replace the T125-T127 implementation queue or promote capability-projection
+language into the claim ledger.
+
 Promotion gate before any public theorem or paper language:
 
 - LossKernel must be stricter than free-text `forgotten_structure` metadata.
@@ -632,10 +638,12 @@ obstructions, CSP equivalence, holonic emergence, and categorical structure.
    minimum morphism (fewest preserved dimensions)? The answers determine whether
    D1Cat is a rich or degenerate category.
 
-2. **PO1 as lax functor or fibration.** PO1 admissibility violates the strict
-   Boolean-AND functor law (T41). Investigate whether PO1 can be repaired as a
-   lax functor F: D1Cat → BoolCat where F(f;g) ≥ F(f) ∧ F(g) (lax), or as a
-   fibration (a family of PO1 conditions indexed by endpoint pairs).
+2. **PO1 as endpoint-indexed admissibility data.** PO1 admissibility violates
+   the strict Boolean-AND functor law (T41), and later LossKernel review work
+   blocks the old lax-functor presentation. Treat composed loss as a
+   powerset-union monoid-valued grading/annotation, then ask whether PO1 is
+   better expressed as endpoint-indexed admissibility data or a carefully
+   specified fibration-like family of predicates.
 
 3. **TypedTransportNetworks as internal categories.** A TypedTransportNetwork is
    a directed graph of D1RestrictionSystems connected by D1RestrictionMorphisms.

@@ -56,9 +56,16 @@ morphism composition creates, hides, displaces, or reveals obstruction.
 | T107-T108 | typed forgetting, obstruction displacement, prior-art absorption | Source-fiber loss relocation classifies mixed lifts as reconstruction debt, forbidden lifts as stable constraint surface, and invariant fibers as absorbed loss; the candidate semantics is currently absorbed by why-not provenance, abstract interpretation, lenses, CSP explanation, and rich effects. | LossKernel is integration vocabulary unless a same-neighbor-data quotient fixture separates its attribution verdicts. |
 | T80 / T82 / T84 | access boundary, auditability gap, irreversibility boundary | Reversible or cyclic observers expose where D1 monotonicity needs retained memory, exported history, erasure, or entropy accounting. | H7 remains conditional; raw reversible local dynamics do not automatically produce finality direction. |
 | T106 | access boundary, auditability gap, irreversibility boundary | Bounded reversible compression does not rescue H7 once the sink, memory, and return path are included; ordered export spends sink capacity, and exact finite unwind loses the forward monotone. | H7 remains a conditional resource-accounting curve, not a strict monotone on closed bounded reversible state space. |
+| T110 / T116 / T122 / T128 / T124 | irreversibility boundary, resource accounting, constructor boundary | Closed finite permutation dynamics, open Markov controls, stationary Markov support, minimal living-arrow fixtures, and reverse-edge ledgers all push H7 toward explicit resource drawdown, export, nonstationarity, or constructor stipulation. | Do not promote H7 as a thermodynamic-arrow derivation; the surviving language is constructor/resource accounting unless a physical free-energy/capacity variable does nonstandard work. |
+| T114-T120 / T129 | capability preservation, provenance / independence, access boundary, prior-art absorption | Viability, maintenance cost, accessible state space, Q1A reversal-cost, FOA, ASP absorption, and future capability preservation converge on same-visible-state/different-future-operation witnesses. | Preserve as audit normal forms and capability-projection vocabulary; do not promote as a primitive unless enriched reachability, provenance, opportunity-set, mechanism-design, and viability/control neighbors are matched and still fail. |
+| T121 / T123 / T133 | provenance / independence, auditability gap, experimental readiness, future operation rights | Detector evidence is a packet object, not raw payload alone; same payloads can split on admissibility and future operation availability, and the packet burden is tiered into provisional-admission and claim-review requirements. | This is detector evidence infrastructure only; T97 still needs tiered verdicts before any real deployment packet can be evaluated. |
+| T130 / T132 | access boundary, provenance / independence, weak-measurement null gate | Weak-measurement routes are non-null only if an independent pre-registered measured axis changes the TaF verdict while standard monitored statistics are fixed; same-record relabeling, post hoc labels, constant branch support, monotone proxies, and obvious second-meter screens fail. | Weak measurement remains dormant and lower priority than detector provenance until a real independent axis is named. |
+| T125-T127 | typed morphisms, causal embeddability, typed forgetting, prior-art absorption | These are specification-only audits for D1 boundary transport, finality-colimit causal-set embeddability, and same-neighbor-data LossKernel separation. | They should guide next tests but do not update claim status until implemented and checked. |
+| P10 / P11 persona-goal runs | typed forgetting, validation facade, effect/provenance prior-art pressure | Formal-methods and programming-languages reviews push LossKernel toward fixture-law validation and effect-account baselines rather than a standalone new semantics. | Treat persona runs as governance input only; executable specs or proof artifacts are required before roadmap or claim promotion. |
 | T88 | typed forgetting, prior-art positioning | Pati-Salam style typed-forgetting analogies can crosswalk structure but do not by themselves prove TF1 originality. | Crosswalks are language imports unless they yield a separation theorem or new witness. |
 | T89 / T92 | access boundary, auditability gap, descent / reconstruction failure | The T19 first-person/third-person witness gap has a finite degree-0 restriction-closure form for typed proposition-domain systems. | This is not a consciousness theorem, not a complexity separation, and not identical to T58 order-pair gaps. |
 | T90 / T91 / T93 / T94 | access boundary, provenance / independence, experimental readiness | Weak-measurement routes need an independent pre-registered branch/provenance/reversal-cost or undo-cost axis; named superconducting homodyne, uncollapse, and quantum-jump-reversal platforms fail that gate, and weak measurement is demoted below detector provenance until a real independent axis is named. | Do not treat standard weak-measurement platforms as near-ready TaF discriminators or keep them ahead of detector provenance on promise alone. |
+| Candidate North Star folder | capability preservation, projection fibers, prior-art absorption, physics-facing guardrails | The candidate North Star preserves the schema `same visible state != same future capability` as speculative, non-canonical research posture with explicit factorization tests and physics guardrails. | Not claim-ledger evidence, not paper-ready, and not a roadmap replacement without deep-research return plus explicit author approval. |
 | Structure disappearance / recursive emergence preservation note | typed forgetting, obstruction displacement, provenance / independence, emergence windows | The preserved threads ask what remains when structure disappears: reconstruction debt, witness obligations, admissibility boundaries, provenance requirements, macro constraints, or future operation rights. | Exploratory preservation only; collapse first to reconstruction debt, provenance, coarse-graining, information theory, ecology, or cognitive science before naming a new object. |
 
 ## Emerging Spine
@@ -68,7 +75,7 @@ The strongest candidate spine is:
 ```text
 typed finite restriction systems
   + information-losing morphisms
-  + first-class loss kernels
+  + candidate witness-carrying loss annotations
   + admissible obstruction attribution
 ```
 
@@ -82,7 +89,8 @@ Typed forgetting is the more general mathematical structure.
   local-to-global obstruction.
 - Treat access limits, provenance limits, auditability gaps, and colimit
   failures as laboratories for typed loss.
-- Make `LossKernel` the next explicit accounting object.
+- Make `LossKernel` the next candidate accounting object, but keep it gated by
+  prior-art and same-neighbor-data separation tests.
 
 ## Next Use
 

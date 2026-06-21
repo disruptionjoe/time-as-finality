@@ -29,6 +29,11 @@ accessible provenance-support count. Raw redundancy alone remains insufficient,
 but branch support and reversal-cost proxies do not add independent verdict
 content in the current family.
 
+After the SBS absorber, the current Q1A family is narrower still: once
+SBS/strong-QD objectivity data are allowed to import the same access,
+provenance, partition-visibility, and audited support key, no same-SBS-data D1
+verdict split remains in the enumerated family.
+
 ## Earned Content
 
 - T2 and T62 separate pointer decoherence, environmental redundancy, and
@@ -57,6 +62,11 @@ content in the current family.
   physics-facing credit for independent redundant classical records unless the
   SBS/strong-QD objectivity data are fixed and a nonimportable D1 dimension
   still splits the verdict.
+- T162 turns N10 into an executable obstruction: in the current family, the D1
+  verdict factors through an SBS-importable closure key consisting of pointer
+  objectivity status, accessible pointer value, partition visibility, and
+  audited accessible provenance-support count. No same-full-SBS-data verdict
+  split exists in the enumerated cases.
 
 ## Not Earned
 
@@ -70,6 +80,7 @@ content in the current family.
 - No live branch-support witness inside the current fixed-data family.
 - No live reversal-cost witness inside the current fixed-data family.
 - No current-family same-closure-key D1 verdict split.
+- No current-family same-SBS-data D1 verdict split.
 - No external distinction from Spectrum Broadcast Structure or strong Quantum
   Darwinism for independent redundant objectivity criteria.
 - No empirical quantum support beyond already formed record accounting.
@@ -99,7 +110,10 @@ must also hold fixed the Spectrum Broadcast Structure or strong Quantum
 Darwinism objectivity data: pointer observable, fragment partition,
 conditional fragment states, distinguishability/support-overlap bounds,
 conditional independence or strong independence status, observer-accessible
-fragment subset, provenance partition, and audited support count.
+fragment subset, provenance partition, and audited support count. After T162,
+the current verdict family cannot meet that burden internally; a live witness
+must add a predeclared physical dimension or partition/access rule that is not
+equivalent to the SBS-importable closure key.
 
 ## Primary Evidence
 
@@ -112,6 +126,7 @@ fragment subset, provenance partition, and audited support count.
 - [T109: Q1A Branch-Support Collapse](../tests/T109-q1a-branch-support-collapse.md)
 - [T118: Q1A Reversal-Cost Collapse](../tests/T118-q1a-reversal-cost-collapse.md)
 - [T147: Q1A Current-Family Closure](../tests/T147-q1a-current-family-closure.md)
+- [T162: Q1A SBS Factorization Obstruction](../tests/T162-q1a-sbs-factorization-obstruction.md)
 
 ## Neighbor Positioning
 

@@ -135,6 +135,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T103](tests/T103-q1a-fixed-data-witness.md) | Q1A fixed-data witness | Q1A, Q1, D1, T102 | implemented: fixed standard quantum-side data can yield different D1 verdicts only through the independence partition; external distinctness remains unearned |
 | [T118](tests/T118-q1a-reversal-cost-collapse.md) | Q1A reversal-cost collapse | Q1A, Q1, D1, T103, T105, T109 | implemented: in the current fixed-data family reversal cost collapses to the audited accessible-support count and adds no independent verdict content |
 | [T147](tests/T147-q1a-current-family-closure.md) | Q1A current-family closure | Q1A, Q1, D1, T105, T109, T118 | implemented: current Q1A verdict content factors through partition visibility plus audited accessible-support count; no current branch-support or reversal-cost escape remains |
+| [T162](tests/T162-q1a-sbs-factorization-obstruction.md) | Q1A SBS factorization obstruction | Q1A, Q1, D1, T147, N10 | implemented: current Q1A verdicts factor through an SBS-importable closure key; no same-full-SBS-data verdict split exists in the enumerated family |
 
 ## Minimum Compatibility Constraints
 
@@ -256,6 +257,7 @@ python -m models.run_t101
 python -m models.q1a_neighbor_comparison
 python -m models.run_t103
 python -m models.run_t147
+python -m models.run_t162
 python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction
@@ -370,6 +372,7 @@ The suites use only Python's standard library. Evidence records:
 - [Q1A Neighbor Comparison v0.1 Technical Report](TECHNICAL-REPORT-q1a-neighbor-comparison-v0.1.md)
 - [Q1A Fixed-Data Witness v0.1 Results](results/q1a-fixed-data-witness-v0.1-results.md)
 - [Q1A Current-Family Closure v0.1 Results](results/q1a-current-family-closure-v0.1-results.md)
+- [Q1A SBS Factorization Obstruction v0.1 Results](results/q1a-sbs-factorization-obstruction-v0.1-results.md)
 
 ## How To Add A Test
 

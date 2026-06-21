@@ -1,0 +1,492 @@
+{
+  "visible_case_count": 240,
+  "hidden_partition_case": {
+    "case_id": "access_E1-E2-E3__partition_hidden",
+    "sbs_objectivity_verdict": "sbs_objective",
+    "accessible_pointer_value": "z0",
+    "accessible_raw_redundancy": 3,
+    "accessible_provenance_support": null,
+    "partition_visible": false,
+    "d1_verdict": "withhold_partition_unavailable",
+    "sbs_closure_key": [
+      "computational_z",
+      "sbs_objective",
+      "z0",
+      false,
+      null
+    ],
+    "full_sbs_signature": [
+      "computational_z",
+      [
+        [
+          "E1",
+          "z0",
+          true
+        ],
+        [
+          "E2",
+          "z0",
+          true
+        ],
+        [
+          "E3",
+          "z0",
+          true
+        ],
+        [
+          "E4",
+          "z0",
+          true
+        ]
+      ],
+      [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "hidden",
+      false,
+      true
+    ],
+    "role": "Positive SBS objectivity but unavailable provenance partition; Q1A must withhold rather than infer from raw redundancy."
+  },
+  "objectivity_failure_controls": [
+    {
+      "case_id": "sbs_disagreement_control",
+      "sbs_objectivity_verdict": "sbs_failed_agreement",
+      "accessible_pointer_value": null,
+      "accessible_raw_redundancy": 3,
+      "accessible_provenance_support": null,
+      "partition_visible": true,
+      "d1_verdict": "withhold_sbs_objectivity_failed",
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_agreement",
+        null,
+        null,
+        null
+      ],
+      "full_sbs_signature": [
+        "computational_z",
+        [
+          [
+            "E1",
+            "z0",
+            true
+          ],
+          [
+            "E2",
+            "z0",
+            true
+          ],
+          [
+            "E3",
+            "z1",
+            true
+          ],
+          [
+            "E4",
+            "z0",
+            true
+          ]
+        ],
+        [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "E1|E2|E3|E4",
+        true,
+        true
+      ],
+      "role": "SBS negative control: accessible fragments do not all agree on one pointer value."
+    },
+    {
+      "case_id": "sbs_distinguishability_control",
+      "sbs_objectivity_verdict": "sbs_failed_distinguishability",
+      "accessible_pointer_value": null,
+      "accessible_raw_redundancy": 3,
+      "accessible_provenance_support": null,
+      "partition_visible": true,
+      "d1_verdict": "withhold_sbs_objectivity_failed",
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_distinguishability",
+        null,
+        null,
+        null
+      ],
+      "full_sbs_signature": [
+        "computational_z",
+        [
+          [
+            "E1",
+            "z0",
+            true
+          ],
+          [
+            "E2",
+            "z0",
+            true
+          ],
+          [
+            "E3",
+            "z0",
+            false
+          ],
+          [
+            "E4",
+            "z0",
+            true
+          ]
+        ],
+        [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "E1|E2|E3|E4",
+        true,
+        true
+      ],
+      "role": "SBS negative control: one accessible fragment fails the distinguishability/support-overlap check."
+    },
+    {
+      "case_id": "sbs_independence_control",
+      "sbs_objectivity_verdict": "sbs_failed_strong_independence",
+      "accessible_pointer_value": null,
+      "accessible_raw_redundancy": 3,
+      "accessible_provenance_support": null,
+      "partition_visible": true,
+      "d1_verdict": "withhold_sbs_objectivity_failed",
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_strong_independence",
+        null,
+        null,
+        null
+      ],
+      "full_sbs_signature": [
+        "computational_z",
+        [
+          [
+            "E1",
+            "z0",
+            true
+          ],
+          [
+            "E2",
+            "z0",
+            true
+          ],
+          [
+            "E3",
+            "z0",
+            true
+          ],
+          [
+            "E4",
+            "z0",
+            true
+          ]
+        ],
+        [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "E1|E2|E3|E4",
+        true,
+        false
+      ],
+      "role": "SBS negative control: conditional independence/strong independence is denied."
+    },
+    {
+      "case_id": "sbs_no_access_control",
+      "sbs_objectivity_verdict": "sbs_no_access",
+      "accessible_pointer_value": null,
+      "accessible_raw_redundancy": 0,
+      "accessible_provenance_support": null,
+      "partition_visible": true,
+      "d1_verdict": "withhold_sbs_objectivity_failed",
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_no_access",
+        null,
+        null,
+        null
+      ],
+      "full_sbs_signature": [
+        "computational_z",
+        [
+          [
+            "E1",
+            "z0",
+            true
+          ],
+          [
+            "E2",
+            "z0",
+            true
+          ],
+          [
+            "E3",
+            "z0",
+            true
+          ],
+          [
+            "E4",
+            "z0",
+            true
+          ]
+        ],
+        [],
+        "E1|E2|E3|E4",
+        true,
+        true
+      ],
+      "role": "Access control: no observer-accessible fragment can ground observer-relative finality."
+    }
+  ],
+  "fibers": [
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_agreement",
+        null,
+        null,
+        null
+      ],
+      "case_count": 1,
+      "d1_verdicts": [
+        "withhold_sbs_objectivity_failed"
+      ],
+      "raw_redundancies": [
+        3
+      ],
+      "partition_signatures": [
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_distinguishability",
+        null,
+        null,
+        null
+      ],
+      "case_count": 1,
+      "d1_verdicts": [
+        "withhold_sbs_objectivity_failed"
+      ],
+      "raw_redundancies": [
+        3
+      ],
+      "partition_signatures": [
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_failed_strong_independence",
+        null,
+        null,
+        null
+      ],
+      "case_count": 1,
+      "d1_verdicts": [
+        "withhold_sbs_objectivity_failed"
+      ],
+      "raw_redundancies": [
+        3
+      ],
+      "partition_signatures": [
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_no_access",
+        null,
+        null,
+        null
+      ],
+      "case_count": 16,
+      "d1_verdicts": [
+        "withhold_sbs_objectivity_failed"
+      ],
+      "raw_redundancies": [
+        0
+      ],
+      "partition_signatures": [
+        "E1-E2-E3-E4",
+        "E1-E2-E3|E4",
+        "E1-E2-E4|E3",
+        "E1-E2|E3-E4",
+        "E1-E2|E3|E4",
+        "E1-E3-E4|E2",
+        "E1-E3|E2-E4",
+        "E1-E3|E2|E4",
+        "E1-E4|E2-E3",
+        "E1-E4|E2|E3",
+        "E1|E2-E3-E4",
+        "E1|E2-E3|E4",
+        "E1|E2-E4|E3",
+        "E1|E2|E3-E4",
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_objective",
+        "z0",
+        false,
+        null
+      ],
+      "case_count": 1,
+      "d1_verdicts": [
+        "withhold_partition_unavailable"
+      ],
+      "raw_redundancies": [
+        3
+      ],
+      "partition_signatures": [
+        "hidden"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_objective",
+        "z0",
+        true,
+        1
+      ],
+      "case_count": 99,
+      "d1_verdicts": [
+        "not_finalized"
+      ],
+      "raw_redundancies": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "partition_signatures": [
+        "E1-E2-E3-E4",
+        "E1-E2-E3|E4",
+        "E1-E2-E4|E3",
+        "E1-E2|E3-E4",
+        "E1-E2|E3|E4",
+        "E1-E3-E4|E2",
+        "E1-E3|E2-E4",
+        "E1-E3|E2|E4",
+        "E1-E4|E2-E3",
+        "E1-E4|E2|E3",
+        "E1|E2-E3-E4",
+        "E1|E2-E3|E4",
+        "E1|E2-E4|E3",
+        "E1|E2|E3-E4",
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_objective",
+        "z0",
+        true,
+        2
+      ],
+      "case_count": 103,
+      "d1_verdicts": [
+        "not_finalized"
+      ],
+      "raw_redundancies": [
+        2,
+        3,
+        4
+      ],
+      "partition_signatures": [
+        "E1-E2-E3|E4",
+        "E1-E2-E4|E3",
+        "E1-E2|E3-E4",
+        "E1-E2|E3|E4",
+        "E1-E3-E4|E2",
+        "E1-E3|E2-E4",
+        "E1-E3|E2|E4",
+        "E1-E4|E2-E3",
+        "E1-E4|E2|E3",
+        "E1|E2-E3-E4",
+        "E1|E2-E3|E4",
+        "E1|E2-E4|E3",
+        "E1|E2|E3-E4",
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_objective",
+        "z0",
+        true,
+        3
+      ],
+      "case_count": 22,
+      "d1_verdicts": [
+        "finalized"
+      ],
+      "raw_redundancies": [
+        3,
+        4
+      ],
+      "partition_signatures": [
+        "E1-E2|E3|E4",
+        "E1-E3|E2|E4",
+        "E1-E4|E2|E3",
+        "E1|E2-E3|E4",
+        "E1|E2-E4|E3",
+        "E1|E2|E3-E4",
+        "E1|E2|E3|E4"
+      ]
+    },
+    {
+      "sbs_closure_key": [
+        "computational_z",
+        "sbs_objective",
+        "z0",
+        true,
+        4
+      ],
+      "case_count": 1,
+      "d1_verdicts": [
+        "finalized"
+      ],
+      "raw_redundancies": [
+        4
+      ],
+      "partition_signatures": [
+        "E1|E2|E3|E4"
+      ]
+    }
+  ],
+  "d1_factors_through_sbs_closure_key": true,
+  "same_full_sbs_data_split_found": false,
+  "raw_redundancy_is_not_sufficient": true,
+  "objectivity_failures_withhold": true,
+  "hidden_partition_withholds": true,
+  "nontrivial_same_key_variants_exist": true,
+  "q1a_current_family_has_no_same_sbs_split": true,
+  "strongest_claim": "Within the current Q1A already-formed-record verdict family, the D1 verdict factors through an SBS-importable closure key: pointer objectivity status, accessible pointer value, partition visibility, and audited accessible provenance-support count. Therefore the present Q1A family has no same-SBS-data verdict split; a full SBS signature refines this key, so fixing full SBS data cannot change the current D1 verdict.",
+  "improved": "T162 turns the N10 absorber into an executable obstruction. A future Q1A proposal now has to say whether it changes the imported SBS closure key, in which case it is absorbed bookkeeping, or keeps that key fixed and supplies a genuinely new physical dimension.",
+  "weakened": "This weakens Q1A as an internal quantum-record route. The current same-closure-key family cannot produce the same-SBS-data witness that N10 requires, and raw redundancy remains insufficient once SBS/objectivity and provenance support are granted.",
+  "falsification_condition": "T162 fails if an admissible Q1A witness fixes full SBS/strong-QD objectivity data, observer-accessible fragments, provenance partition, partition visibility, and audited accessible support count, but still changes the D1 verdict through a predeclared physical dimension that SBS or strong Quantum Darwinism cannot import as ordinary objectivity, access, provenance, or support data.",
+  "q1a_update": "Q1A should be treated as SBS-absorbed bookkeeping in the current family. Reopen it only with a same-SBS-closure-key split or a physical derivation of the partition/access rule that the SBS neighbor cannot import without new physics.",
+  "claim_ledger_update": "Add T162 to Q1A: after N10, current Q1A verdicts factor through an SBS-importable closure key. No same-full-SBS-data verdict split exists in the enumerated family; Q1A remains bookkeeping_only.",
+  "open_blocker": "No named physical dimension currently varies at fixed SBS objectivity data, access subset, provenance partition, partition visibility, and audited accessible support count.",
+  "recommended_next": "Do not spend another autonomous run on Q1A unless a concrete same-SBS-closure-key split is named. Otherwise route quantum work to Q1B external packet acquisition, Q1C only if a platform tuple appears, or leave Q1 for another research line."
+}

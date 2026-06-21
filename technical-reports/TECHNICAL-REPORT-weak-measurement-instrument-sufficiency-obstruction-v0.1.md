@@ -10,8 +10,8 @@ why should standard weak-measurement architectures be expected to fail the
 independent-axis gate in the first place?
 ```
 
-This note gives the strongest current answer available inside known quantum
-measurement structure:
+This note gives the strongest current audit answer available from the repo's
+declared monitored-instrument reading:
 
 ```text
 if the full pre-registered ordinary event-level log already specifies the
@@ -45,11 +45,17 @@ same instrument + full ordinary event log fixed => second meter null unless it
 brings in physically extra verdict-bearing structure
 ```
 
-## Why This Follows From Known Measurement Structure
+## Evidence Boundary
 
-The ordinary weak-measurement record is not just a plotted average. In the
-relevant Q1C reading after T139, it is the full pre-registered event-level log
-that indexes the monitored trajectory.
+T143 should not be read as an independent literature review, an executable
+witness, or a platform-independent theorem about weak-measurement hardware. Its
+load-bearing premise is conditional: the ordinary monitored transcript `Y` has
+been declared as the full pre-registered event-level log that indexes the
+ordinary instrument's conditional trajectory.
+
+Under that declared comparison, the ordinary weak-measurement record is not just
+a plotted average. In the relevant Q1C reading after T139, it is the full
+pre-registered event-level log that indexes the monitored trajectory.
 
 Once that log is fixed, the standard instrument already specifies:
 
@@ -75,9 +81,12 @@ This is null by the existing gate stack:
 instrument realization, so that fixing the full ordinary transcript also fixes
 all admissible TaF-relevant distinctions.
 
-This is the physically important null class. Distinct hardware does not matter
-if the auxiliary channel does not survive conditional screening by the full
-ordinary log.
+This is the physically important null class for the present audit posture.
+Distinct hardware does not matter if the auxiliary channel does not survive
+conditional screening by the full ordinary log. T143 does not prove that every
+same-dilation auxiliary channel is screened off; it says that an unscreened
+verdict-bearing channel must be shown rather than inferred from hardware
+distinctness.
 
 ### 3. Enlarged-Instrument Case
 
@@ -127,8 +136,8 @@ This is stronger than "find a second meter" and more physically meaningful than
 
 ## What This Improved
 
-T143 upgrades the weak-measurement branch from a literature-screening posture
-to an architecture-level obstruction:
+T143 sharpens the weak-measurement branch from a literature-screening posture
+to a conditional architecture-level obstruction:
 
 - it explains why T130 and T135 found only readout replacement or task-changing
   routes;
@@ -193,11 +202,10 @@ Q1C remains `dormant`.
 Add this sharpening:
 
 ```text
-Standard weak-measurement hardware is null by default for Q1C once the full
-pre-registered ordinary event-level transcript is treated as the instrument's
-conditional log. Reopening Q1C now requires either extra environment data not
-screened off by that log or an explicitly enlarged instrument with an honest
-comparison target.
+Standard weak-measurement hardware is null by default for Q1C under the
+declared full-log instrument comparison. Reopening Q1C now requires either
+extra environment data not screened off by that log or an explicitly enlarged
+instrument with an honest comparison target.
 ```
 
 ## Recommended Next Move

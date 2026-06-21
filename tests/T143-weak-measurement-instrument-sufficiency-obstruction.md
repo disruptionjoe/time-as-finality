@@ -48,8 +48,8 @@ realization is expected either to be:
 
 ## Success Criteria
 
-- The report states a known-physics obstruction rather than a new dynamical
-  law.
+- The report states a conditional instrument-comparison obstruction rather than
+  a new dynamical law or platform-independent no-go theorem.
 - The null class includes both postprocessed meters and same-dilation physical
   meters whose verdict content is fixed once `Y` is fixed.
 - The report names the only live escape classes worth future search.
@@ -69,10 +69,10 @@ Q1C remains dormant.
 Add this sharpening:
 
 ```text
-In standard weak-measurement architectures, a simultaneous second meter is null
-by default if it remains inside the same ordinary monitored instrument. To
-reopen Q1C, the auxiliary channel must either enlarge the instrument beyond the
-pre-registered ordinary event log or couple to extra environment structure
+Under the declared full-log instrument comparison, a simultaneous second meter
+is null by default if it remains inside the same ordinary monitored instrument.
+To reopen Q1C, the auxiliary channel must either enlarge the instrument beyond
+the pre-registered ordinary event log or couple to extra environment structure
 whose verdict content survives conditioning on that full log.
 ```
 

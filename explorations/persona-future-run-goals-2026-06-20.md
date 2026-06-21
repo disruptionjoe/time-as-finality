@@ -326,9 +326,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P29 - Systems Biologist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T14:04:50-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-140450-p29-systems-biologist-regulatory-network-hostile-test.md
 - goal: Encode a biological memory or regulatory network as a D1 hostile test
   and ask whether multiscale regulation breaks existing finality assumptions.
 - ambition: Bring nested organization into the formal stress suite.

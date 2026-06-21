@@ -23,6 +23,12 @@ classical finality until the access cut and fragment independence partition
 are physically audited.
 ```
 
+The present fixed-data family is now closed under the declared D1 dimensions:
+all current verdict content factors through partition visibility plus audited
+accessible provenance-support count. Raw redundancy alone remains insufficient,
+but branch support and reversal-cost proxies do not add independent verdict
+content in the current family.
+
 ## Earned Content
 
 - T2 and T62 separate pointer decoherence, environmental redundancy, and
@@ -39,6 +45,12 @@ are physically audited.
 - T109 shows branch support is not a surviving independent witness dimension in
   the current fixed-data family: it is either single-root triviality or an
   inadmissible change to ordinary branch/history data.
+- T118 shows reversal cost does not escape the accessible-class reduction in
+  the current fixed-data family: its only admissible proxy is the audited
+  accessible provenance-support count itself.
+- T144 packages T105/T109/T118 into a closure audit: the current family factors
+  through partition visibility plus audited accessible provenance-support
+  count, with no remaining internal Q1A dimension escaping that quotient.
 
 ## Not Earned
 
@@ -50,14 +62,16 @@ are physically audited.
 - No load-bearing fixed-data structure beyond audited accessible
   provenance-support count in the current witness family.
 - No live branch-support witness inside the current fixed-data family.
+- No live reversal-cost witness inside the current fixed-data family.
+- No current-family same-closure-key D1 verdict split.
 - No empirical quantum support beyond already formed record accounting.
 
 ## Falsification Or Demotion Condition
 
 If every future fixed-data witness is absorbed once neighboring frameworks
-share the same auditable access cut and provenance-aware fragment partition,
-then Q1A should remain a bookkeeping or admissibility convention rather than a
-paper-facing physics contribution.
+share the same auditable access cut, provenance-aware fragment partition, and
+audited accessible support count, then Q1A should remain a bookkeeping or
+admissibility convention rather than a paper-facing physics contribution.
 
 ## Reinstatement Condition
 
@@ -68,7 +82,10 @@ neighboring framework without adding new physics. After T105, it must also show
 verdict content that does not collapse to the same audited accessible
 provenance-support count. After T109, it must also realize branch support with
 genuinely distinct causal record channels rather than ordinary branch/history
-variation inside the current single-root witness family.
+variation inside the current single-root witness family. After T118 and T144,
+it must either split the D1 verdict at the same closure key or supply a
+physically calibrated undo/erasure observable that varies without changing
+standard quantum-side data.
 
 ## Primary Evidence
 
@@ -79,6 +96,8 @@ variation inside the current single-root witness family.
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 - [T105: Q1A Accessible-Class Sufficiency](../tests/T105-q1a-accessible-class-sufficiency.md)
 - [T109: Q1A Branch-Support Collapse](../tests/T109-q1a-branch-support-collapse.md)
+- [T118: Q1A Reversal-Cost Collapse](../tests/T118-q1a-reversal-cost-collapse.md)
+- [T144: Q1A Current-Family Closure](../tests/T144-q1a-current-family-closure.md)
 
 ## Neighbor Positioning
 

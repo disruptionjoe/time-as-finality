@@ -1,0 +1,557 @@
+{
+  "visible_cases": [
+    {
+      "case_id": "access_none__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "raw_accessible_redundancy": 0,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 0,
+      "reversal_cost_proxy": 0,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "raw_accessible_redundancy": 0,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 0,
+      "reversal_cost_proxy": 0,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "raw_accessible_redundancy": 0,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 0,
+      "reversal_cost_proxy": 0,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "raw_accessible_redundancy": 0,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 0,
+      "reversal_cost_proxy": 0,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_none__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "raw_accessible_redundancy": 0,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 0,
+      "reversal_cost_proxy": 0,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E3__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 1,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E3__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E2-E3__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 2,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 3,
+      "raw_accessible_redundancy": 3,
+      "d1_verdict": "finalized",
+      "closure_verdict": "finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 3,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2__E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 3,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E3__E2",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 3,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1__E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "raw_accessible_redundancy": 3,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 2,
+      "classifier_matches_d1": true
+    },
+    {
+      "case_id": "access_E1-E2-E3__partition_E1-E2-E3",
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "raw_accessible_redundancy": 3,
+      "d1_verdict": "not_finalized",
+      "closure_verdict": "not_finalized",
+      "rooted_branch_support": 1,
+      "reversal_cost_proxy": 1,
+      "classifier_matches_d1": true
+    }
+  ],
+  "hidden_partition_case": {
+    "case_id": "access_E1-E2-E3__partition_hidden",
+    "partition_visible": false,
+    "accessible_provenance_support": null,
+    "raw_accessible_redundancy": 3,
+    "d1_verdict": "withhold_partition_unavailable",
+    "closure_verdict": "withhold_partition_unavailable",
+    "rooted_branch_support": null,
+    "reversal_cost_proxy": null,
+    "classifier_matches_d1": true
+  },
+  "fibers": [
+    {
+      "partition_visible": false,
+      "accessible_provenance_support": null,
+      "case_count": 1,
+      "d1_verdicts": [
+        "withhold_partition_unavailable"
+      ],
+      "raw_accessible_redundancies": [
+        3
+      ],
+      "rooted_branch_support_values": [],
+      "reversal_cost_proxy_values": []
+    },
+    {
+      "partition_visible": true,
+      "accessible_provenance_support": 0,
+      "case_count": 5,
+      "d1_verdicts": [
+        "not_finalized"
+      ],
+      "raw_accessible_redundancies": [
+        0
+      ],
+      "rooted_branch_support_values": [
+        0
+      ],
+      "reversal_cost_proxy_values": [
+        0
+      ]
+    },
+    {
+      "partition_visible": true,
+      "accessible_provenance_support": 1,
+      "case_count": 22,
+      "d1_verdicts": [
+        "not_finalized"
+      ],
+      "raw_accessible_redundancies": [
+        1,
+        2,
+        3
+      ],
+      "rooted_branch_support_values": [
+        1
+      ],
+      "reversal_cost_proxy_values": [
+        1
+      ]
+    },
+    {
+      "partition_visible": true,
+      "accessible_provenance_support": 2,
+      "case_count": 12,
+      "d1_verdicts": [
+        "not_finalized"
+      ],
+      "raw_accessible_redundancies": [
+        2,
+        3
+      ],
+      "rooted_branch_support_values": [
+        1
+      ],
+      "reversal_cost_proxy_values": [
+        2
+      ]
+    },
+    {
+      "partition_visible": true,
+      "accessible_provenance_support": 3,
+      "case_count": 1,
+      "d1_verdicts": [
+        "finalized"
+      ],
+      "raw_accessible_redundancies": [
+        3
+      ],
+      "rooted_branch_support_values": [
+        1
+      ],
+      "reversal_cost_proxy_values": [
+        3
+      ]
+    }
+  ],
+  "closure_classifier_matches_d1": true,
+  "d1_factors_through_closure_key": true,
+  "branch_support_factors_through_closure_key": true,
+  "reversal_cost_factors_through_closure_key": true,
+  "raw_redundancy_is_not_sufficient": true,
+  "branch_support_load_bearing": false,
+  "reversal_cost_load_bearing": false,
+  "current_family_closed_under_declared_dimensions": true,
+  "strongest_claim": "The current enumerated Q1A fixed-data family is closed under the declared D1 dimensions: the D1 verdict factors through exactly the T105 closure key, namely partition visibility plus audited accessible provenance-support count. Raw accessible redundancy cannot replace that key, but branch support and reversal-cost proxies add no independent verdict content in this family.",
+  "improved": "T144 converts the scattered T105/T109/T118 demotions into one reusable closure test. A reviewer can now see the exact quotient that preserves all current Q1A verdict content and the exact condition a future Q1A witness must violate.",
+  "weakened": "This weakens Q1A by removing the last internal ambiguity in the current family. Q1A is not presently a measurement-dynamics claim; it is an access/provenance bookkeeping rule over already formed records unless a future witness splits the closure key.",
+  "falsification_condition": "T144 fails if an admissible Q1A witness keeps ordinary quantum-side summaries fixed, shares the same access cut and provenance-aware partition, matches the audited accessible support count, and still changes the D1 verdict through a predeclared physical dimension. It also fails if branch support or a calibrated undo/erasure observable varies at fixed closure key without changing standard data.",
+  "q1a_update": "Q1A should be stated as current-family closed: all present verdict content is captured by partition visibility plus audited accessible provenance support. Reopen Q1A only with a same-closure key verdict split or with a physical partition rule that cannot be imported by the neighboring framework without adding new physics.",
+  "claim_ledger_update": "Add T144 to Q1A: the current fixed-data family is closed under accessible support, branch support, and reversal-cost audits. The surviving quotient is partition visibility plus audited accessible provenance-support count; no current internal Q1A dimension escapes that quotient.",
+  "open_blocker": "The repo still lacks a physically grounded same-support Q1A witness: fixed standard quantum summaries, shared audited partition, same accessible provenance support, and a nonabsorbed D1 verdict split.",
+  "recommended_next": "Do not add another Q1A finite record toy model unless it targets the same-closure-key escape gate. If no such target is available, spend quantum effort on an external Q1B packet or leave Q1 for a different route."
+}

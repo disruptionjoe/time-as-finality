@@ -1506,3 +1506,19 @@ forward direction. The converse is an open conjecture.
   pre-data, and no Q1A/Q1C/Q1D escape artifact currently clears its branch
   gate.
 - Artifact: [T140 technical report](technical-reports/TECHNICAL-REPORT-q1-frontier-escape-matrix-v0.1.md).
+
+### 2026-06-21 - Q1B Federated Detector Deployment Handoff
+
+- Q1B remains `externally_blocked`; this handoff is an external testability
+  artifact, not detector evidence.
+- Result: the only non-null next Q1B move is now framed as a named detector
+  deployment willing to sign the T136/T138 manifest pre-data, preserve
+  independent archive and trust-audit roles, and later publish or escrow real
+  event-level packet rows.
+- Null decision: post hoc manifests, dashboard summaries, authority-collapsed
+  archive/audit roles, payload-value precommitment, missing hostile controls,
+  or unreviewable event rows leave Q1B scaffold-only.
+- Claim impact: do not spend more autonomous internal Q1 runs on Q1B unless a
+  concrete signatory appears or a proposed workflow explicitly clears the
+  handoff gate.
+- Artifact: [Q1B federated detector deployment handoff](open-problems/q1b-federated-detector-deployment-handoff.md).

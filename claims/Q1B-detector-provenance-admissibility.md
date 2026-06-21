@@ -82,6 +82,14 @@ the bound event-level packet without changing schema, authority, tier, or
 wrapper policy, passes the T87/T97/T100 and T121/T133 gates, and then yields a
 verdict that survives the T83 null criterion.
 
+## Operational Handoff
+
+The current handoff is [Q1B Federated Detector Deployment Handoff](../open-problems/q1b-federated-detector-deployment-handoff.md).
+It is a lab-facing issue draft, not evidence. It converts the external blocker
+into a pre-data manifest ask, event-row packet requirements, null conditions,
+and a demotion rule if no realistic workflow can supply independent archive and
+trust-audit roles before detector events.
+
 ## Primary Evidence
 
 - [T66: POVM Detector Calibration Obstruction](../tests/T66-povm-detector-calibration-obstruction.md)

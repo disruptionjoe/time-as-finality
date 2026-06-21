@@ -64,6 +64,7 @@ The nearest repo artifacts are:
 - [T152 Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160 H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
 - [N8 H7 Stochastic-Thermodynamic Absorber Map](../literature/N8-h7-stochastic-thermodynamic-absorbers.md)
+- [N11 H7 Protected-Memory Absorber](../literature/N11-h7-protected-memory-absorber.md)
 - [Arrow of Time as Constructor Theorem](arrow-of-time-as-constructor-theorem.md)
 
 ### Minimum Pre-comparison Commitment

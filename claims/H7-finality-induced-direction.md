@@ -367,3 +367,25 @@ before H7 can be promoted beyond conditional constructor/resource-accounting
 language. T160 adds the intake rule: the common substrate families most likely
 to be proposed next are null by default until they clear that burden on a
 finite operational reading.
+
+## N11 Protected-Memory Absorber
+
+[N11](../literature/N11-h7-protected-memory-absorber.md) tests the most
+credible protected-memory neighbor family directly against the T160/N8 gate:
+topological memories, self-correcting codes, engineered-dissipation memories,
+and symmetry-protected proposals.
+
+The result is negative for H7's current physical-arrow route. The protected
+memory literature targets stored-logical-information lifetime under thermal
+noise, often with active recovery assumptions, barrier scaling, engineered
+baths, higher-dimensional constructions, or strong symmetry restrictions. That
+is a serious neighboring physics program, but it is not yet the same object as
+an H7 `physical_record_deletion` reverse that remains
+constructor-impossible after matched thermodynamic, information, boundary, and
+control accounting.
+
+So protected memories stay in the absorber stack by default. A future H7
+proposal may borrow this family only after it freezes the deletion task,
+allowed controls, decoder/syndrome assumptions, bath/reset channels, symmetry
+enforcement, and future-operation target, then still shows more than lifetime
+or barrier protection.

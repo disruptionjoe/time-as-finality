@@ -47,6 +47,12 @@ clear the independent-axis gate.
 - T139 closes the coarse-summary loophole: "ordinary monitored statistics held
   fixed" must mean the full pre-registered event-level ordinary record, not a
   dashboard or thresholded export that an auxiliary meter merely refines.
+- T143 adds the architecture-level obstruction: once that full event-level
+  standard record is treated as the ordinary instrument's conditional log, a
+  same-instrument second meter is null by default unless it either captures
+  extra environment structure not screened off by the log or explicitly
+  enlarges the monitored instrument and states an honest fixed-standard
+  comparison.
 
 ## Not Earned
 
@@ -63,7 +69,9 @@ on reversal success, it is null for Q1C. The same holds for any simultaneous
 second meter whose statistics are conditionally determined by the ordinary
 monitored record, or whose apparent witness survives only because the ordinary
 record was fixed at a coarsened summary rather than at the full event-level
-trajectory.
+trajectory. It also holds for same-instrument auxiliary channels whose verdict
+content is screened off once that full event-level trajectory is treated as the
+ordinary instrument log.
 
 ## Reinstatement Condition
 
@@ -72,6 +80,8 @@ axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
+If the proposal enlarges the monitored instrument, that enlargement and the
+preserved comparison target must be declared explicitly in advance.
 
 ## Primary Evidence
 
@@ -83,3 +93,4 @@ statistics, and the full pre-registered event-level standard monitored record.
 - [T135: Weak-Measurement Second-Meter Checkpoint](../tests/T135-weak-measurement-second-meter-checkpoint.md)
 - [T137: Weak-Measurement Postprocessed Second-Meter Obstruction](../tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md)
 - [T139: Weak-Measurement Full-Record Sufficiency Boundary](../tests/T139-weak-measurement-full-record-sufficiency-boundary.md)
+- [T143: Weak-Measurement Instrument Sufficiency Obstruction](../tests/T143-weak-measurement-instrument-sufficiency-obstruction.md)

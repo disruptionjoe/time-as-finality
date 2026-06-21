@@ -48,6 +48,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [Spacetime as Finality Colimit](../open-problems/spacetime-as-finality-colimit.md)
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
+- [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 
 ## Contribution Needed
 
@@ -65,3 +66,18 @@ overlap restrictions agree and their union remains acyclic. The output is a
 global partial order or a concrete obstruction witness.
 
 This strengthens S1 as a formal target, not as a spacetime derivation.
+
+## T151 Access-Map Guardrail
+
+[T151](../tests/T151-causal-access-screen.md) adds a minimum access-map
+requirement. Future S1 aggregation cannot use only compatible local orders. It
+must also type:
+
+- which source events can send records to which observer access events;
+- whether access is direct participation, received classical signal, or an
+  encoded/indirect channel;
+- which boundaries are inward-only, outward-only, or bidirectional;
+- whether crossing a boundary preserves or transforms record character.
+
+Without those maps, "consensus envelope" remains underdeclared and risks
+smuggling in a global synchronization layer.

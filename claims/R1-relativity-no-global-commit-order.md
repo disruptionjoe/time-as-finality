@@ -55,6 +55,12 @@ bounded uncertainty, commit wait, and delayed external reconstruction. This
 supports R1's no-global-commit-order posture without treating spacetime as a
 literal database.
 
+T151 adds a stricter access guardrail. Remote observation through received
+signals is ordinary causal record access, while direct local participation is a
+stronger relation. R1 may separate those relations, but it must not treat remote
+sources as unobserved, unreal, or absent merely because the observer cannot
+participate locally.
+
 ## How It Could Fail
 
 - The analogy hides rather than clarifies spacetime geometry.
@@ -72,6 +78,7 @@ literal database.
 - [T43: Local Persistence Accumulation Mechanism Audit](../tests/T43-local-persistence-mechanisms.md)
 - [T44: Local Mechanism Identifiability Audit](../tests/T44-local-mechanism-identifiability.md)
 - [T46: Open Causal Scarcity And Closed Synchronization Boundary](../tests/T46-open-causal-scarcity-synchronization-boundary.md)
+- [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 
 ## Contribution Needed
 

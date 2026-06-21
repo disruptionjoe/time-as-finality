@@ -55,6 +55,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T159: T54 Interval-Jackknife Screen](../tests/T159-t54-interval-jackknife-screen.md)
 - [T163: T54 Rank-Pair Family Census](../tests/T163-t54-rank-pair-family-census.md)
 - [T164: T54 Survivor Isomorphism And Locality Audit](../tests/T164-t54-survivor-isomorphism-locality.md)
+- [T165: T54 Survivor Sprinkling Stress Test](../tests/T165-t54-survivor-sprinkling-stress.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -192,6 +193,25 @@ S1 still lacks a random-sprinkling comparison, neighborhood-growth law,
 dimension estimator beyond ordering fraction, faithful embedding theorem,
 covariance result, Lorentzian metric reconstruction, or continuum bridge for
 these classes.
+
+## T165 Survivor Sprinkling Stress Test
+
+[T165](../tests/T165-t54-survivor-sprinkling-stress.md) supplies the exact
+finite random-sprinkling comparison left open by T164. For six generic points
+in a flat 1+1 causal diamond, sorting by one light-cone coordinate makes the
+other coordinate rank a uniform permutation in `S_6`; this is exactly the
+720-case T163 rank-pair family.
+
+The T164 survivors are compatible with that ordinal 1+1 comparison, but only
+as a rare conditioned tail: 26 of 720 labeled cases survive all current
+screens, a fraction of `13/360`, and no oriented survivor class has
+uniform-ensemble probability above `1/360`.
+
+This weakens the optimistic S1 reading again. The survivors are not typical
+small sprinkling outputs or evidence of a generative spacetime law by
+themselves. S1 now needs either a T54 generative mechanism that predicts this
+rare tail under a declared measure, or a larger-scale comparison that survives
+the same hostile conditioning.
 
 ## T153 Lorentzian Absorber Gate
 

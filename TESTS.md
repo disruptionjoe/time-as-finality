@@ -34,6 +34,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T159](tests/T159-t54-interval-jackknife-screen.md) | T54 interval-jackknife screen | S1, T54, T126, T156, T157 | implemented: the T157 flat T54 control passes parent interval support but fails single-deletion ordering-fraction stability, demoting the current positive boundary to calibration-only |
 | [T163](tests/T163-t54-rank-pair-family-census.md) | T54 rank-pair family census | S1, T126, T156, T157, T159 | implemented: exhaustive six-event T54 rank-pair census finds 26 labeled deletion-stable survivors while leaving the original T157 witness fragile |
 | [T164](tests/T164-t54-survivor-isomorphism-locality.md) | T54 survivor isomorphism and locality audit | S1, T126, T156, T159, T163 | implemented: T163 survivors quotient to 15 oriented finite-poset classes, or 9 order-dual classes, all still thin height-3 finite controls |
+| [T165](tests/T165-t54-survivor-sprinkling-stress.md) | T54 survivor sprinkling stress test | S1, T126, T156, T159, T163, T164 | implemented: exact six-point ordinal 1+1 comparison shows T164 survivors are a rare 26/720 tail, not a sprinkling law or spacetime evidence |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
@@ -180,6 +181,7 @@ python -m models.run_t157
 python -m models.run_t159
 python -m models.run_t163
 python -m models.run_t164
+python -m models.run_t165
 python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
@@ -297,6 +299,7 @@ The suites use only Python's standard library. Evidence records:
 - [T54 Interval-Jackknife Screen v0.1 Results](results/t54-interval-jackknife-screen-v0.1-results.md)
 - [T54 Rank-Pair Family Census v0.1 Results](results/t54-rank-pair-family-census-v0.1-results.md)
 - [T54 Survivor Isomorphism And Locality v0.1 Results](results/t54-survivor-isomorphism-locality-v0.1-results.md)
+- [T54 Survivor Sprinkling Stress v0.1 Results](results/t54-survivor-sprinkling-stress-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

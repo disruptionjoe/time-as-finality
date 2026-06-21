@@ -18,10 +18,11 @@ find a physically typed record substrate whose physical-deletion reverse
 remains constructor-impossible after full absorber accounting
 ```
 
-The repo now has good demotion machinery but no concrete handoff for what a
-serious future substrate proposal must specify. This file converts that blocker
-into a reviewable issue draft so H7 is either made testable or kept dormant as
-physics.
+The repo now has good demotion machinery plus a family-level intake screen
+([T160](../tests/T160-h7-substrate-family-screen.md)), but it still needs a
+concrete handoff for what a serious future substrate proposal must specify.
+This file converts that blocker into a reviewable issue draft so H7 is either
+made testable or kept dormant as physics.
 
 ## Current Strongest Claim
 
@@ -61,6 +62,7 @@ The nearest repo artifacts are:
 - [T145 Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T148 H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152 Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
+- [T160 H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
 - [N8 H7 Stochastic-Thermodynamic Absorber Map](../literature/N8-h7-stochastic-thermodynamic-absorbers.md)
 - [Arrow of Time as Constructor Theorem](arrow-of-time-as-constructor-theorem.md)
 
@@ -92,6 +94,12 @@ Before claiming any H7 relevance, the proposal must freeze:
 7. The allowed control class used to judge possibility versus impossibility.
 8. A null-control plan covering idealization, hidden sink/export, hidden copy
    handles, denied controls, and merely exponential suppression.
+
+T160 adds a pre-intake rule before detailed review: proposals framed only as
+protected memories, driven dissipative states, exact sector restrictions, or
+horizon-style inaccessibility should be treated as null by default unless they
+already declare why they avoid those family absorbers on a finite operational
+reading.
 
 ### Required Audit Burden
 
@@ -169,6 +177,6 @@ about stability, barriers, or memory protection.
 
 H7 remains `weakened_conditional`. The next non-null H7 artifact is not more
 paper-facing arrow prose; it is a named physical-deletion substrate that
-freezes the reverse-edge class, absorber vector, allowed controls, and
-future-operation target, then survives the T145/T148/T152 audit plus the N8
-stochastic-thermodynamic absorber map.
+clears the T160 family screen, freezes the reverse-edge class, absorber
+vector, allowed controls, and future-operation target, then survives the
+T145/T148/T152 audit plus the N8 stochastic-thermodynamic absorber map.

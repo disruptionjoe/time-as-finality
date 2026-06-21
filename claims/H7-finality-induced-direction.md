@@ -25,8 +25,12 @@ impossible after full absorber accounting, and T148 makes the paper-facing
 demotion explicit. T152 screens metastable records and finds that finite
 barriers are kinetic/resource absorbers, while infinite barriers or denied
 controls are constructor or boundary stipulations rather than physical-arrow
-evidence. N8 maps the broader stochastic-thermodynamic absorber stack that any
-future physical-arrow witness must survive.
+evidence. T160 extends that intake screen across the most natural remaining
+substrate families: protected memories, driven dissipation, exact sector
+restrictions, and horizon-style inaccessibility are all null by default unless
+they still show finite constructor-impossible physical deletion after matched
+accounting. N8 maps the broader stochastic-thermodynamic absorber stack that
+any future physical-arrow witness must survive.
 
 ## What This Does Not Claim
 
@@ -74,6 +78,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
+- [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -328,6 +333,25 @@ future operation availability changes, but reverse deletion remains possible.
 So metastability does not reopen H7 as a physical-arrow or thermodynamic-arrow
 claim.
 
+## T160 Result
+
+[T160](../tests/T160-h7-substrate-family-screen.md) turns the remaining H7
+substrate burden into a family-level triage rule. The most likely reopeners are
+now screened before detailed modeling:
+
+- protected memories are null until code-distance, syndrome, bath/reset, and
+  finite control data are frozen and still leave deletion impossible;
+- driven dissipative records are null until pumping, bias, chemostat, work,
+  and sink accounting are matched and the reverse still fails;
+- exact sector or gauge restrictions are null until they admit a finite
+  operational substrate reading rather than an ideal ban; and
+- horizon-style proposals are non-deletion families unless they are recast as
+  actual physical deletion with matched access/control data.
+
+This weakens H7's remaining open-ended search space. Future work should not
+reopen the physical-arrow route with generic "protected memory" or "hard to
+erase" language alone.
+
 ## N8 Absorber Map
 
 [N8](../literature/N8-h7-stochastic-thermodynamic-absorbers.md) records the
@@ -340,4 +364,6 @@ The map does not change H7 status. It sharpens the reinstatement gate: a finite
 record substrate must match thermodynamic and information-accounting variables
 and still exhibit a constructor-impossible `physical_record_deletion` reverse
 before H7 can be promoted beyond conditional constructor/resource-accounting
-language.
+language. T160 adds the intake rule: the common substrate families most likely
+to be proposed next are null by default until they clear that burden on a
+finite operational reading.

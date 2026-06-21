@@ -58,8 +58,12 @@ T92-T100:
    Native detector timing is insufficient by itself; the open question is
    whether a realistic lab can freeze and populate the packet before data
    collection.
-4. Stress H7 with a reversible bounded observer that has no exported garbage,
-   erasure, or hidden sink; if it fails, state the entropy/export dependence.
+4. **Completed by T110/T116/T122/T145/T148:** stress H7 with closed
+   reversible, open stochastic, stationary Markov, and fixed-accounting
+   deletion screens. Result: H7 is paper-facing only as a conditional
+   constructor/resource-accounting audit; physical-arrow language is demoted
+   unless a substrate-native physical deletion reverse clears the full
+   absorber gate.
 5. **Completed by T92:** define T19 proposition-domain restriction maps and
    test whether the
    accessible-witness gap has a T57-style closure property:
@@ -101,10 +105,11 @@ high-leverage kickoff queue is now assigned:
    effect-style data are matched.
 
 T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
-language. T125-T127 remain open, specification-only artifacts and do not update
-claim status until implemented and checked. Existing number conflicts have been
-resolved by keeping T58, T88, and T115 for their canonical indexed artifacts and
-moving the colliding side tracks to T130-T132.
+language. T148 makes the paper-facing demotion explicit after the T145 fixed-
+accounting screen. T125-T127 remain open, specification-only artifacts and do
+not update claim status until implemented and checked. Existing number
+conflicts have been resolved by keeping T58, T88, and T115 for their canonical
+indexed artifacts and moving the colliding side tracks to T130-T132.
 
 Recent P10/P11 persona-goal runs and the Candidate North Star capability
 projection folder are useful parking material, not sequence changes. They

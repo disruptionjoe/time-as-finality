@@ -11,17 +11,18 @@ Conjecture.
 
 ## Status
 
-Partially supported only as a conditional constructor-style theorem or
-open-system/resource-accounting claim; weakened against direct physical reading
-by T80, T82, T84, T106, T110, T116, and T122.
-T128 identifies the smallest finite survivors and keeps the status narrowed.
-T124 adds the reverse-edge grounding gate and blocks unqualified physical-arrow
-readings for the current witness stack. T142 calibrates the T1/T141 survivor
-against reversible uncopy and ordinary erasure/free-energy accounting. T144
-requires future witnesses to declare the reverse-edge class, and T145 shows
-that fixed-accounting D1 topology splits are capability residue rather than
-arrow evidence unless physical deletion remains impossible after full absorber
-accounting.
+Paper-facing physical-arrow reading demoted. H7 is partially supported only as
+a conditional constructor-style theorem and resource/reverse-edge audit
+discipline; weakened against direct physical reading by T80, T82, T84, T106,
+T110, T116, and T122. T128 identifies the smallest finite survivors and keeps
+the status narrowed. T124 adds the reverse-edge grounding gate and blocks
+unqualified physical-arrow readings for the current witness stack. T142
+calibrates the T1/T141 survivor against reversible uncopy and ordinary
+erasure/free-energy accounting. T144 requires future witnesses to declare the
+reverse-edge class, T145 shows that fixed-accounting D1 topology splits are
+capability residue rather than arrow evidence unless physical deletion remains
+impossible after full absorber accounting, and T148 makes the paper-facing
+demotion explicit.
 
 ## What This Does Not Claim
 
@@ -67,6 +68,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T142: Thermodynamic Erasure Calibration](../tests/T142-thermodynamic-erasure-calibration.md)
 - [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
+- [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -287,3 +289,18 @@ control, sink state, access boundary, or provenance class.
 H7's remaining upgrade target is therefore very narrow: a physically typed
 record substrate where a `physical_record_deletion` reverse remains
 constructor-impossible after all of those absorber variables are matched.
+
+## T148 Result
+
+[T148](../tests/T148-h7-paper-facing-demotion-gate.md) turns the H7 status into
+a paper-facing gate. The allowed claims are now the conditional D1-monotone
+constructor theorem, reverse-edge/resource-accounting audit discipline, and
+the T145 future-operation/topology residue. The rejected claims are a
+thermodynamic-arrow derivation from finality alone, physical-arrow support from
+the current record-graph/deletion fixtures, and promotion of fixed-erasure D1
+topology to arrow evidence.
+
+H7 should not be presented as a physical-arrow or thermodynamic-arrow claim
+unless a future physically typed record substrate clears the fixed-accounting
+physical deletion gate and survives hostile thermodynamic, stochastic, and
+resource-accounting absorbers.

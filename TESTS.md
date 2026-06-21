@@ -32,6 +32,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
 | [T145](tests/T145-physical-record-deletion-fixed-accounting.md) | Physical record deletion fixed-accounting screen | H7, T142, T144 | implemented: the remaining fixed-accounting D1 topology split is future-operation/topology residue, not arrow evidence; deletion-like candidates are absorbed by erasure work, control handles, sink state, access boundaries, or provenance class |
+| [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
@@ -261,6 +262,8 @@ The suites use only Python's standard library. Evidence records:
 - [Constructor-Admissibility Grounding Audit v0.1 Results](results/constructor-admissibility-grounding-audit-v0.1-results.md)
 - [Minimal Living Arrow v0.1 Results](results/minimal-living-arrow-v0.1-results.md)
 - [Thermodynamic Erasure Calibration v0.1 Results](results/thermodynamic-erasure-calibration-v0.1-results.md)
+- [Physical Record Deletion Fixed-Accounting v0.1 Results](results/physical-record-deletion-fixed-accounting-v0.1-results.md)
+- [H7 Paper-Facing Demotion Gate v0.1 Results](results/h7-paper-facing-demotion-gate-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

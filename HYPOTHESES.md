@@ -91,14 +91,19 @@ Finality structure may induce an observer-relative temporal direction that is
 distinct from thermodynamic entropy increase, without denying the
 thermodynamic arrow.
 
-Status: **partially supported in the finite T18 constructor model**. T18
-shows that D1-monotone admissibility induces an acyclic finality direction
-whose strict reversals are impossible. The remaining task is to justify when
-physical systems instantiate that admissibility rule and when the finality
-direction agrees with or diverges from thermodynamic irreversibility.
+Status: **paper-facing physical-arrow reading demoted; finite constructor
+theorem retained**. T18 shows that D1-monotone admissibility induces an acyclic
+finality direction whose strict reversals are impossible. T80 through T145
+block the stronger physical reading in the current witness stack: closed
+reversible dynamics, open/stationary stochastic fixtures, T1 record-graph
+reverses, and fixed-accounting physical deletion screens all fail to produce a
+constructor-impossible physical reverse. T148 therefore permits H7 only as a
+conditional constructor/resource-accounting audit until a physically typed
+deletion substrate clears the fixed-accounting absorber gate.
 
 See [H7](claims/H7-finality-induced-direction.md),
-[T18](tests/T18-finality-direction-theorem.md), and
+[T18](tests/T18-finality-direction-theorem.md),
+[T148](tests/T148-h7-paper-facing-demotion-gate.md), and
 [Arrow of Time as Constructor Theorem](open-problems/arrow-of-time-as-constructor-theorem.md).
 
 ## Known Boundary: TypedTransportNetwork Recovery Propagation

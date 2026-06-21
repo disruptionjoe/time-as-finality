@@ -18,7 +18,10 @@ Externally blocked.
 
 Q1B is an admissibility protocol over already formed detector records. It does
 not currently provide empirical support for Time as Finality, because no real
-event-level deployment packet has passed the T87/T97/T100 gates.
+event-level deployment packet has passed the T87/T97/T100 gates. T133 sharpens
+the burden: there is a provisional-admission core for intake, plus a stricter
+claim-review extension for reconstruction, certification, and dispute-ready
+use.
 
 ## Earned Content
 
@@ -30,6 +33,11 @@ event-level deployment packet has passed the T87/T97/T100 gates.
 - T87 rejects dashboard summaries and post hoc policies before scoring.
 - T95-T100 map the named detector-stack route to a schema-complete packet and
   show that at least four non-conflicting authority domains are required.
+- T121-T123 show that raw-payload validity and same-measurement sameness are
+  weaker than packet admissibility and future operation availability.
+- T133 shows the packet burden is tiered: provenance/signature/authority/
+  publication/revocation/key-state fields gate provisional admission, while
+  witness/reconstruction/dispute fields gate full claim review.
 
 ## Not Earned
 
@@ -61,3 +69,6 @@ criterion.
 - [T95: Detector Stack Export Map](../tests/T95-detector-stack-export-map.md)
 - [T97: Detector Dry-Run Packet Skeleton](../tests/T97-detector-dry-run-packet-skeleton.md)
 - [T100: Detector Authority-Domain Bound](../tests/T100-detector-authority-domain-bound.md)
+- [T121: Real Detector Packet Schema Audit](../tests/T121-real-detector-packet-schema-audit.md)
+- [T123: Same-Payload Packet FOA Witness](../tests/T123-same-payload-packet-foa-witness.md)
+- [T133: Detector Packet Tiered Minimality](../tests/T133-detector-packet-tiered-minimality.md)

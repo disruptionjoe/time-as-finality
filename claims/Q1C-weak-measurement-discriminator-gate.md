@@ -67,6 +67,12 @@ clear the independent-axis gate.
   counts only when the Q1C verdict is a predeclared map from an independently
   typed TaF axis with nontrivial class support, not when the verdict is merely
   an auxiliary-defined label, a rare-event partition, or a post hoc target.
+- N9 turns the remaining "maybe a real platform already exists" hope into a
+  source-backed census: current named homodyne-trajectory, jump-reversal,
+  microwave-photon-counter, thermal-detector, nanocalorimetric, and
+  calorimeter-assisted quadrature families still supply ordinary records,
+  replacement readout, or task changes rather than a live T146/T149/T150 Q1C
+  platform.
 
 ## Not Earned
 
@@ -131,4 +137,5 @@ The current repo handoff for that burden is:
 - [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
 - [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
+- [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

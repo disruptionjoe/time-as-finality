@@ -51,6 +51,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T126: Finality-Colimit Causal-Set Embeddability Audit](../tests/T126-finality-colimit-causal-set-embeddability.md)
 - [T154: T54/T58-to-T126 Bridge](../tests/T154-t54-t58-t126-bridge.md)
 - [T156: Myrheim-Meyer Ordering-Fraction Screen](../tests/T156-myrheim-meyer-ordering-fraction-screen.md)
+- [T157: T54 Ordering-Fraction Bridge](../tests/T157-t54-ordering-fraction-bridge.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -124,6 +125,19 @@ The deterministic light-cone-coordinate control lands inside that band
 This weakens S1 again: `passes_filter_only` is only a pre-diagnostic T126
 verdict. It is not dimension evidence, sprinkling evidence, a faithful
 embedding, a Lorentzian metric reconstruction, or a continuum-limit result.
+
+## T157 T54 Ordering-Fraction Bridge
+
+[T157](../tests/T157-t54-ordering-fraction-bridge.md) removes one narrow
+blocker left by T156. A constructed six-event T54 canonical quotient-union
+colimit reaches T126 and matches the declared flat 1+1 ordering-fraction band:
+`7/15` versus target `1/2 +/- 1/10`.
+
+This is a control, not an upgrade. The product-grid T54 control still passes
+T126 while failing the target (`4/5`), and the six-event chain is rejected at
+T126. T157 shows that T54 can realize a finite 1+1-like ordering-fraction
+control, but it does not supply interval abundance, locality, sprinkling,
+embedding, covariance, continuum-limit, or Lorentzian metric evidence.
 
 ## T153 Lorentzian Absorber Gate
 

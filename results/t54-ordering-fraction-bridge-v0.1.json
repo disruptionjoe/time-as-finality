@@ -1,0 +1,120 @@
+{
+  "target": {
+    "name": "flat_1p1_interval_ordering_fraction",
+    "target_fraction": {
+      "fraction": "1/2",
+      "float": 0.5
+    },
+    "tolerance": {
+      "fraction": "1/10",
+      "float": 0.1
+    },
+    "basis": "In light-cone coordinates on a flat 1+1 causal diamond, two independent points are causally related exactly when their two coordinate orderings agree, giving ordering fraction 1/2. The 1/10 tolerance is a finite-audit band, not a continuum theorem."
+  },
+  "audits": [
+    {
+      "name": "t157_flat_1p1_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 6,
+      "strict_pair_count": 7,
+      "ordering_fraction": {
+        "fraction": "7/15",
+        "float": 0.4666666666666667
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "1/30",
+        "float": 0.03333333333333333
+      },
+      "target_verdict": "inside_declared_ordering_fraction_band",
+      "verdict": "t54_colimit_matches_ordering_fraction_control_only",
+      "reason": "The T54-completed colimit reaches the T126 filter and its ordering fraction lies inside the declared finite 1+1 band.",
+      "required_next": "Apply stronger dimension, abundance, sprinkling, locality, and continuum diagnostics before any spacetime-facing claim."
+    },
+    {
+      "name": "t157_product_grid_2x3_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 6,
+      "strict_pair_count": 12,
+      "ordering_fraction": {
+        "fraction": "4/5",
+        "float": 0.8
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "3/10",
+        "float": 0.3
+      },
+      "target_verdict": "outside_declared_ordering_fraction_band",
+      "verdict": "t54_colimit_fails_ordering_fraction_target",
+      "reason": "The candidate survived T126's selected finite filter but is too highly ordered relative to the declared 1+1 flat-interval ordering-fraction target.",
+      "required_next": "Do not treat this T126 survivor as dimension evidence; either change the declared comparison target or build a less lattice-ordered finality colimit."
+    },
+    {
+      "name": "t157_chain_6_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "rank_width_obstruction",
+      "t126_filter_passed": false,
+      "event_count": 6,
+      "strict_pair_count": 15,
+      "ordering_fraction": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "target_verdict": "not_reached_t126_blocked",
+      "verdict": "blocked_at_t126",
+      "reason": "The rank/width profile is degenerate for the selected finite control class.",
+      "required_next": "Declare a different comparison class or supply a less degenerate candidate."
+    }
+  ],
+  "t54_flat_candidate_reaches_t126_scale": true,
+  "t54_flat_candidate_matches_target_band": true,
+  "t54_product_grid_control_fails_target_band": true,
+  "t54_chain_control_blocked_before_target": true,
+  "previous_t156_open_blocker_removed": true,
+  "strongest_claim": "A hand-built but genuine T54 canonical quotient-union datum can reach the T126 scale floor and land inside the declared flat 1+1 ordering-fraction band: the six-event T157 control has ordering fraction 7/15.",
+  "improved": "T157 replaces the previous synthetic-only positive ordering-fraction control with a T54-completed colimit, while preserving negative T54 controls for the over-ordered product grid and the degenerate chain.",
+  "weakened_or_falsified": "The narrow T156 blocker 'no actual T54 finality colimit reaches scale and matches the declared ordering-fraction band' is now false. This does not upgrade S1, because the survivor is a constructed finite control and has not faced interval-abundance, locality, sprinkling, covariance, or continuum diagnostics.",
+  "falsification_condition": "T157 fails if the T54 completion does not reproduce the audited strict relation, if the same relation is not used by T126 and T156, if the product-grid and chain controls stop blocking the claimed interpretation, or if the positive finite control is described as spacetime evidence.",
+  "s1_update": "S1 remains open_formal_target. The scale/order-fraction blocker has been cleared for one constructed T54 control, but the result is still only a pre-diagnostic finite colimit control.",
+  "claim_ledger_update": "Add T157 to S1: a constructed six-event T54 canonical quotient-union colimit reaches T126 and matches the declared 1+1 ordering-fraction band, while T54 product-grid and chain controls remain rejected or demoted. This removes the immediate T156 scale/order-fraction blocker without upgrading S1.",
+  "open_blocker": "No non-hand-built observer-local family, interval-abundance diagnostic, locality/sprinkling screen, embedding theorem, continuum-limit bridge, covariance result, or Lorentzian metric reconstruction exists for the T157 survivor.",
+  "suggested_next": "Subject the T157 flat control and nearby T54-generated families to a stronger interval-abundance or locality diagnostic; require failure to demote the survivor back to a calibration artifact.",
+  "not_claimed": "T157 does not estimate dimension, prove a faithful embedding, derive a Lorentzian metric, validate sprinkling behavior, or derive spacetime."
+}

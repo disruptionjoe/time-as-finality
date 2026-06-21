@@ -411,6 +411,12 @@ def _canonical_quotient_union(datum: ObserverDescentDatum) -> CompletionResult:
     )
 
 
+def complete_observer_descent_datum(datum: ObserverDescentDatum) -> CompletionResult:
+    """Run the T54 quotient-union completion algorithm on one descent datum."""
+
+    return _canonical_quotient_union(datum)
+
+
 # ---------------------------------------------------------------------------
 # Witness builders
 # ---------------------------------------------------------------------------

@@ -4,6 +4,10 @@
 
 Open formal target.
 
+Post-T127 note: the strongest live version may be the narrower
+[LossKernel Witness-Obligation Normal Form](loss-kernel-witness-obligation-normal-form.md),
+not a prior-art-separated theorem about a new attribution object.
+
 ## Diligence Gate
 
 LossKernel is not yet cleared for canon or public theorem language. External
@@ -32,6 +36,10 @@ honest annotation vocabulary.
 `LossKernel` is the proposed central accounting object for the repo's next
 phase. The goal is to move from many discovered patterns to one explicit object
 for typed loss under information-losing morphisms.
+
+After T108 and T127, that role should be read conservatively. The main value
+may be to normalize source-derived witness obligations and collapse tests, not
+to claim a new obstruction mechanism.
 
 The repo should increasingly distinguish:
 
@@ -159,6 +167,11 @@ correlates with it, or is not yet linked.
   in composed loss kernels.
 - Preserve absorbed-obstruction cases without forcing a false conservation law.
 
+If the quotient/separation criterion fails, the fallback success condition is
+weaker but still real: derive a canonical witness-obligation normal form that
+improves admissibility review even if it collapses into mature neighbor
+machinery under same-data comparison.
+
 ## Failure Criteria
 
 - `LossKernel` collapses to a synonym for `forgotten_structure` with no stronger
@@ -172,6 +185,10 @@ correlates with it, or is not yet linked.
   formalization.
 - The object cannot express absorbed obstruction or recovery without ad hoc
   exceptions.
+
+T127 already puts heavy pressure on theorem-level separation. If future work
+cannot derive a canonical witness-obligation object, demote `LossKernel` to an
+integration vocabulary and stop treating TF1 as the default novelty window.
 
 ## First Concrete Test
 

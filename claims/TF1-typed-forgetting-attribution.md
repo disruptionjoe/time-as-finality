@@ -37,6 +37,29 @@ survives; apparent separations are absorbed by neighbor-visible CSP,
 provenance, abstraction, lens, effect, path, or categorical data, or collapse
 as label-only, endpoint-difference, or absorbed-loss controls.
 
+## Current Strongest Form
+
+After T127, TF1 should be read in a recast, not promotional, form:
+
+```text
+If any publishable mathematical content survives, it is more likely to be a
+canonical normal form for source-derived witness obligations than a new
+obstruction-attribution theorem separated from mature neighbor frameworks.
+```
+
+The positive target is now narrower than "LossKernel explains obstruction."
+The safer target is:
+
+```text
+for a declared target-side judgment, derive the minimal source-side witness
+obligations that remain live over the same target data, then test whether that
+obligation object collapses into standard provenance/effect/abstraction
+machinery
+```
+
+This keeps TF1 alive only as a disciplined formal target. It does not justify
+paper-facing novelty language.
+
 ## Candidate Lemma
 
 Let:
@@ -147,6 +170,9 @@ morphisms.
 Do not assume the same-neighbor-data rescue path is still live for the current
 finite family. The next honest move is either:
 
+- build the recast object in
+  [LossKernel Witness-Obligation Normal Form](../open-problems/loss-kernel-witness-obligation-normal-form.md)
+  and test its canonicality/collapse directly; or
 - produce a genuinely new finite pair that survives the T127 gate; or
 - recast LossKernel more modestly as a canonical normal form / integration
   vocabulary for source-derived witness obligations rather than a

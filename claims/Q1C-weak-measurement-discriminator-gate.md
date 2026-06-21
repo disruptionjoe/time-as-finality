@@ -44,6 +44,9 @@ clear the independent-axis gate.
 - T137 adds a sharper null class: even a simultaneous second meter is null if
   its event-level statistics are only a downstream transform of the ordinary
   monitored record. Physical distinctness alone does not reopen Q1C.
+- T139 closes the coarse-summary loophole: "ordinary monitored statistics held
+  fixed" must mean the full pre-registered event-level ordinary record, not a
+  dashboard or thresholded export that an auxiliary meter merely refines.
 
 ## Not Earned
 
@@ -58,15 +61,17 @@ If a proposed weak-measurement route derives its TaF variable from the same
 monitoring stream used by standard quantum trajectory theory, or conditions it
 on reversal success, it is null for Q1C. The same holds for any simultaneous
 second meter whose statistics are conditionally determined by the ordinary
-monitored record.
+monitored record, or whose apparent witness survives only because the ordinary
+record was fixed at a coarsened summary rather than at the full event-level
+trajectory.
 
 ## Reinstatement Condition
 
 Reopen Q1C only after a concrete platform names a calibrated, pre-registered
 axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
-verdict-changing under fixed coherence, redundancy, access, and
-reversal-success statistics.
+verdict-changing under fixed coherence, redundancy, access, reversal-success
+statistics, and the full pre-registered event-level standard monitored record.
 
 ## Primary Evidence
 
@@ -77,3 +82,4 @@ reversal-success statistics.
 - [T130: Weak-Measurement Dual-Meter Screen](../tests/T130-weak-measurement-dual-meter-screen.md)
 - [T135: Weak-Measurement Second-Meter Checkpoint](../tests/T135-weak-measurement-second-meter-checkpoint.md)
 - [T137: Weak-Measurement Postprocessed Second-Meter Obstruction](../tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md)
+- [T139: Weak-Measurement Full-Record Sufficiency Boundary](../tests/T139-weak-measurement-full-record-sufficiency-boundary.md)

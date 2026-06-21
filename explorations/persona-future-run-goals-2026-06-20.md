@@ -345,9 +345,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P31 - AI Learning Theory Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T16:04:30-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-160430-p31-ai-learning-theory-representation-audit.md
 - goal: Test whether finality axes remain identifiable under representation
   changes, learned embeddings, and feature transformations.
 - ambition: Determine whether observer access is invariant or representation

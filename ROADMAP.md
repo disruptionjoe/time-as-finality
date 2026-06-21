@@ -112,10 +112,15 @@ conflicts have been resolved by keeping T58, T88, and T115 for their canonical
 indexed artifacts and moving the colliding side tracks to T130-T132.
 
 Recent P10/P11 persona-goal runs and the Candidate North Star capability
-projection folder are useful parking material, not sequence changes. They
-should inform T127-style prior-art and effect/provenance gates, but they do not
-replace the T125-T127 implementation queue or promote capability-projection
-language into the claim ledger.
+projection folder are useful parking material, not sequence changes. Later
+P21-P23 persona-goal runs and the North Star v0.8 physics backlog are likewise
+geometry-probe or absorber-pressure material: useful for kill matrices,
+known-theory capability audits, gauge gates, finite-to-smooth bridge gates, and
+resource-theory calibration, but not replacements for the T125-T127
+implementation queue. T149-T152 and the Q1C/H7 handoffs are branch-gate
+closures and demotion/testability artifacts, not a new roadmap sequence. They
+should inform future Q1C, causal-access, and H7 external asks without promoting
+capability-projection or North Star physics language into the claim ledger.
 
 Promotion gate before any public theorem or paper language:
 

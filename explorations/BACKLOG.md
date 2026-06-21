@@ -33,6 +33,29 @@ These are review-derived work cards, not claims:
    obligation into provenance, loss, admissibility, or gap data. Goal:
    [Obstruction Relocation And Reconstruction Debt](../open-problems/obstruction-relocation-reconstruction-debt.md).
 
+## Active Queue From North Star v0.8 Physics Persona Review
+
+Source: [north-star-v08-20-persona-physics-goal-backlog](north-star-v08-20-persona-physics-goal-backlog.md).
+
+These are North Star geometry-probe work cards, not claims. They are meant to
+stress, clarify, or demote physics-facing parts of the v0.8 vision while
+leaving Time as Finality and Capability Projection as the main proof discipline.
+
+1. North Star Physics Kill Matrix: list the absorber, falsifier, residue label,
+   and next artifact for every physics sentence in v0.8.
+2. Physics Claim Inventory And Known-Theory Cap Audit: rewrite each physics
+   claim in the No-Free-Physics template before any promotion.
+3. Gauge-Invariance Hard Gate For Shadow Claims: reject physics distinctions
+   that change under gauge, relabeling, coordinate, basis, or representation
+   convention.
+4. Finite-To-Smooth Bridge Gate: state which finite TaF witnesses can safely
+   support smooth geometry language, and which cannot.
+5. Cross-Domain Shadow-Protection Theorem Hunt: attempt a bounded theorem
+   skeleton for when observer shadows preserve capability.
+6. Domain probes: run one bounded math-first probe for quantum records,
+   thermodynamic arrow, causal access/horizons, spin/gauge/matter, and
+   experimental discriminator ladders only after the relevant gates exist.
+
 ---
 
 ## Entry 2026-06-10: Distributed Records, Rendering, and Observer-Relative Reality

@@ -248,9 +248,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P21 - Complex Systems Scientist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T05:56:23-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-055623-p21-complex-systems-motif-taxonomy.md
 - goal: Build a motif map across T55-T92 and collapse repeated mechanisms into a
   smaller taxonomy of record, gap, provenance, access, and reconciliation motifs.
 - ambition: Turn artifact velocity into structural compression.

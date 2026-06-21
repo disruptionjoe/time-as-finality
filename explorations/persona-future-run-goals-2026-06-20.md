@@ -157,9 +157,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P12 - Network Propagation Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T20:49:25-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-204925-p12-network-propagation-three-layer-model.md
 - goal: Build a three-layer finite model separating signal propagation, record
   formation, and later reconciliation, then classify prior tests by which layer
   they actually measure.

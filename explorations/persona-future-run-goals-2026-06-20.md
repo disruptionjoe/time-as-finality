@@ -237,9 +237,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P20 - Physics-Informed Machine Learning Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T04:54:54-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-045454-p20-physics-informed-ml-identifiability-audit.md
 - goal: Train or specify an inverse problem that tries to recover D1 axes,
   branch support, provenance, and reversal cost from synthetic trajectories
   without labels.

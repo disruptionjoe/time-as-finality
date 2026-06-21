@@ -58,6 +58,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T122: Stationary Markov Monotone Obstruction](../tests/T122-stationary-markov-monotone-obstruction.md)
 - [T124: Constructor-Admissibility Grounding Audit](../tests/T124-constructor-admissibility-grounding-audit.md)
 - [T128: Minimal Living Arrow](../tests/T128-minimal-living-arrow.md)
+- [T141: T1 Record-Graph Admissibility Ledger](../tests/T141-t1-record-graph-admissibility-ledger.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -207,3 +208,18 @@ This further narrows H7: the missing upgrade is a physically grounded
 constructor-impossibility relation for record deletion or definalization that
 does not reduce to ordinary resource, entropy, boundary, or coarse-graining
 accounting.
+
+## T141 Result
+
+[T141](../tests/T141-t1-record-graph-admissibility-ledger.md) grounds that
+T124 blocker on the project's explicit T1 causal-record graph. The audit tests
+strict D1 increases produced by observer access grants, same-chain record
+copies, and branch-spread copies, then classifies the reverse edge under the
+same holder, access, and erasure accounting.
+
+The result is negative for H7's stronger reading. No tested strict T1
+increase has a constructor-impossible reverse. Access grants are reversible
+observer-boundary changes. Holder-support and branch-robustness gains survive
+only as fresh-holder plus erasure-accounting edges. The current T1 substrate
+therefore still supports H7 only as reversible-boundary or
+resource-accounting language, not as a grounded physical arrow.

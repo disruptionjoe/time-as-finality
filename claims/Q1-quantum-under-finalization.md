@@ -561,3 +561,10 @@ platform can name either a duplicated-record provenance channel during
 monitoring or a calibrated undo-cost meter satisfying T93: fixed before
 analysis, independent of the monitored record and control schedule, and not
 conditioned on reversal success.
+
+Fifth, the Q1C burden is now externalized. Do not spend more autonomous weak-
+measurement effort unless a concrete platform can satisfy the
+[Q1C auxiliary-channel handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md):
+freeze the full `R, A, H, V = g(H), L` tuple before analysis, name a live T146
+architecture class, and later expose the event-level screens required by T149
+and T150.

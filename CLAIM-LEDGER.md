@@ -1653,3 +1653,23 @@ forward direction. The converse is an open conjecture.
   supplies both a typed auxiliary architecture and an independently typed TaF
   verdict family.
 - Artifact: [T150 results](results/weak-measurement-verdict-admissibility-gate-v0.1-results.md).
+
+### 2026-06-21 - Q1C Auxiliary-Channel Platform Handoff
+
+- Q1C remains `dormant`; this is an external platform-admissibility handoff,
+  not a weak-measurement upgrade.
+- Result: the remaining Q1C burden is now stated as a concrete pre-analysis
+  tuple and event-level audit ask. A live platform must freeze the full
+  ordinary transcript `R`, auxiliary channel `A`, independent TaF axis `H`,
+  fixed verdict map `V = g(H)`, support floor, and loss rule, while also
+  naming either extra-environment structure or explicit instrument
+  enlargement with a preserved comparison target.
+- Null decision: coarse-record fixes, downstream transforms of the ordinary
+  transcript, auxiliary-defined verdicts, rare-target partitions, undeclared
+  same-instrument lifts, and event-summary-only reports leave Q1C dormant.
+- Claim impact: do not spend more internal Q1C effort unless a named platform
+  can satisfy the handoff and later expose the T149/T150 screens at event
+  level.
+- Open blocker: no named monitored platform in the repo currently freezes the
+  full `R, A, H, V, L` tuple with a live T146 architecture class.
+- Artifact: [Q1C auxiliary-channel platform handoff](open-problems/q1c-auxiliary-channel-platform-handoff.md).

@@ -77,6 +77,8 @@ clear the independent-axis gate.
 - No named monitored-qubit platform in the repo supplies a T149-cleared
   auxiliary architecture plus an independently typed TaF verdict target with
   non-gerrymandered support.
+- No named platform in the repo has frozen the full `R, A, H, V = g(H), L`
+  tuple needed to reopen Q1C under T149 and T150.
 
 ## Falsification Or Demotion Condition
 
@@ -111,6 +113,10 @@ enlarge the instrument, it must instead identify extra environment or detector
 structure whose verdict content survives conditioning on the full ordinary
 event log.
 
+The current repo handoff for that burden is:
+
+- [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)
+
 ## Primary Evidence
 
 - [T90: Weak-Measurement Reparameterization Obstruction](../tests/T90-weak-measurement-reparameterization-obstruction.md)
@@ -125,3 +131,4 @@ event log.
 - [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
 - [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
+- [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

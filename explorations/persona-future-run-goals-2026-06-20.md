@@ -168,9 +168,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P13 - Zero-Knowledge / Cryptography Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T21:49:30-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-214930-p13-proof-carrying-finality-certificate.md
 - goal: Specify proof-carrying finality for bounded observers: witness, statement,
   commitment, verification predicate, leakage model, and failure mode.
 - ambition: Make "verification without full access" precise enough to be useful.

@@ -163,6 +163,10 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - [TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md](TECHNICAL-REPORT-stationary-markov-monotone-obstruction-v0.1.md)
   - finite stationary Markov dynamics cannot carry a strict scalar
     expected-finality monotone on stationary support.
+- [TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md](TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md)
+  - reverse-edge ledger showing current H7 witnesses permit only
+    constructor-only or resource-accounting readings, not an unqualified
+    physical arrow.
 - [TECHNICAL-REPORT-maintenance-viability-split-v0.1.md](TECHNICAL-REPORT-maintenance-viability-split-v0.1.md)
   - matched entropy/control/stability/viability examples split on future
     operation rights, but are largely absorbed by provenance and reconstruction

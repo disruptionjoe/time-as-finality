@@ -84,11 +84,11 @@ Use the subagent-per-goal method from `CONTRIBUTING.md` when an open-problem
 cluster is broad enough to risk overclaiming or dilution. The current
 high-leverage kickoff queue is now assigned:
 
-1. **T124: Constructor-admissibility grounding audit** for H7 / arrow-of-time:
-   classify every strict D1 increase as forbidden reverse, resource/export
-   payment, hidden environment, or unexplained candidate. This protects the
-   T18 line from turning conditional constructor structure into a physical
-   arrow claim.
+1. **Completed by T124:** Constructor-admissibility grounding audit for H7 /
+   arrow-of-time now classifies strict D1 increases by reverse-edge status,
+   resource/export payment, hidden environment, omitted return path, or
+   constructor stipulation. It protects the T18 line from turning conditional
+   constructor structure into a physical arrow claim.
 2. **T125: D1 boundary connection transport** for finality gauge theory:
    define identity, composition, closed-loop transport, and provenance-bearing
    access-boundary deltas before any curvature, gravity, or torsion language.
@@ -100,10 +100,11 @@ high-leverage kickoff queue is now assigned:
    verdicts after ordinary CSP, provenance, abstract-interpretation, lens, and
    effect-style data are matched.
 
-T124-T127 are open, specification-only artifacts. They do not update claim
-status until implemented and checked. Existing number conflicts have been
-resolved by keeping T58, T88, and T115 for their canonical indexed artifacts
-and moving the colliding side tracks to T130-T132.
+T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
+language. T125-T127 remain open, specification-only artifacts and do not update
+claim status until implemented and checked. Existing number conflicts have been
+resolved by keeping T58, T88, and T115 for their canonical indexed artifacts and
+moving the colliding side tracks to T130-T132.
 
 Promotion gate before any public theorem or paper language:
 

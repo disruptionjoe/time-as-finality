@@ -25,7 +25,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T110](tests/T110-finite-permutation-monotone-obstruction.md) | Finite-permutation monotone obstruction | H7, T80, T82, T84, T106 | implemented: finite closed reversible dynamics admit no strict scalar finality monotone unless the score is constant on each orbit |
 | [T116](tests/T116-open-markov-record-entropy.md) | Open Markov record-entropy comparison | H7, T110 | implemented: open stochastic record arrows are absorbed by path irreversibility, exported history, or fresh blank capacity in the tested fixtures |
 | [T122](tests/T122-stationary-markov-monotone-obstruction.md) | Stationary Markov monotone obstruction | H7, T110, T116 | implemented: finite stationary Markov dynamics admit no strict scalar expected-finality monotone on stationary support |
-| [T124](tests/T124-constructor-admissibility-grounding-audit.md) | Constructor-admissibility grounding audit | H7, T18, T80, T84, T106, T110, T116, T122 | open: specification-only audit for naming impossible reverses, resources, exported history, hidden environments, and omitted reverse paths before any H7 strengthening |
+| [T124](tests/T124-constructor-admissibility-grounding-audit.md) | Constructor-admissibility grounding audit | H7, T18, T80, T84, T106, T110, T116, T122, T128 | implemented: reverse-edge ledger permits only constructor-only or resource-accounting readings; no current H7 witness grounds an unqualified physical arrow |
 | [T125](tests/T125-d1-boundary-connection-transport.md) | D1 boundary connection transport | D1, R1, S1, T111, T112, T113 | open: specification-only transport audit for boundary-indexed D1 profiles, identity, composition, closed loops, provenance deltas, and hostile controls |
 | [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | open: specification-only finite causal-set/manifoldlikeness filter for canonical finality colimits, with explicit non-embeddability modes and no spacetime derivation |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
@@ -152,6 +152,7 @@ python -m models.run_t106
 python -m models.run_t110
 python -m models.run_t116
 python -m models.run_t122
+python -m models.run_t124
 python -m models.run_t128
 python -m models.run_t114
 python -m models.run_t115
@@ -244,6 +245,7 @@ The suites use only Python's standard library. Evidence records:
 - [Finite-Permutation Monotone Obstruction v0.1 Results](results/finite-permutation-monotone-obstruction-v0.1-results.md)
 - [Open Markov Record-Entropy Comparison v0.1 Results](results/open-markov-record-entropy-v0.1-results.md)
 - [Stationary Markov Monotone Obstruction v0.1 Results](results/stationary-markov-monotone-obstruction-v0.1-results.md)
+- [Constructor-Admissibility Grounding Audit v0.1 Results](results/constructor-admissibility-grounding-audit-v0.1-results.md)
 - [Minimal Living Arrow v0.1 Results](results/minimal-living-arrow-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)

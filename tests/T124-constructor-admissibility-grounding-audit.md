@@ -14,7 +14,13 @@
 
 ## Setup
 
-This is a specification for an audit, not an implemented result.
+This audit is implemented in v0.1:
+
+- model: `models/constructor_admissibility_grounding_audit.py`
+- runner: `models/run_t124.py`
+- tests: `tests/test_constructor_admissibility_grounding_audit.py`
+- results: `results/constructor-admissibility-grounding-audit-v0.1-results.md`
+- report: `TECHNICAL-REPORT-constructor-admissibility-grounding-audit-v0.1.md`
 
 T18 proves a conditional constructor-style claim: if admissible
 transformations are componentwise monotone in the D1 vector, strict
@@ -44,6 +50,22 @@ coarse-graining, or impossible transformation that does the blocking.
 The starting fixtures should include the witness families already used by
 T80, T84, T106, T110, T116, and T122, because those tests identify where
 unqualified physical-arrow readings fail.
+
+## v0.1 Result
+
+The reverse-edge ledger audits T18, T80, T84, T106, T110, T116, T122, and
+T128-style cases. No current case permits an unqualified physical-arrow
+reading. Strict surviving cases split into two weak classes:
+
+- resource-accounting only: exported history, erasure, sink capacity, path
+  irreversibility, fresh blank capacity, finite nonrenewed resource drawdown;
+- constructor-only: reverse transformations are inadmissible by the declared
+  constructor rule.
+
+T124 therefore protects H7 from promotion. The strongest current claim is that
+H7 is an audited admissibility ledger: every strict D1-increasing edge must
+classify the reverse edge under the same accounting boundary before it can be
+used physically.
 
 ## Success Criteria
 

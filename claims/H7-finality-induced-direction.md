@@ -15,6 +15,8 @@ Partially supported only as a conditional constructor-style theorem or
 open-system/resource-accounting claim; weakened against direct physical reading
 by T80, T82, T84, T106, T110, T116, and T122.
 T128 identifies the smallest finite survivors and keeps the status narrowed.
+T124 adds the reverse-edge grounding gate and blocks unqualified physical-arrow
+readings for the current witness stack.
 
 ## What This Does Not Claim
 
@@ -54,6 +56,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T110: Finite-Permutation Monotone Obstruction](../tests/T110-finite-permutation-monotone-obstruction.md)
 - [T116: Open Markov Record-Entropy Comparison](../tests/T116-open-markov-record-entropy.md)
 - [T122: Stationary Markov Monotone Obstruction](../tests/T122-stationary-markov-monotone-obstruction.md)
+- [T124: Constructor-Admissibility Grounding Audit](../tests/T124-constructor-admissibility-grounding-audit.md)
 - [T128: Minimal Living Arrow](../tests/T128-minimal-living-arrow.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
@@ -186,3 +189,21 @@ but only by stipulating that reverse transformations are inadmissible.
 
 This keeps H7 as a resource-accounting or constructor lemma. It does not
 promote H7 as a thermodynamic-arrow claim.
+
+## T124 Result
+
+[T124](../tests/T124-constructor-admissibility-grounding-audit.md) turns the
+T18 admissibility premise into a reverse-edge ledger. Every strict
+D1-increasing edge must name the accounting boundary, reverse edge, reverse
+status, and resource or impossibility condition.
+
+The audit covers T18, T80, T84, T106, T110, T116, T122, and T128-style cases.
+No current witness permits an unqualified physical-arrow reading. Surviving
+strict edges are either resource-accounting edges, such as sink capacity,
+exported history, erasure, path irreversibility, or finite resource drawdown,
+or constructor-only edges where the reverse is stipulated inadmissible.
+
+This further narrows H7: the missing upgrade is a physically grounded
+constructor-impossibility relation for record deletion or definalization that
+does not reduce to ordinary resource, entropy, boundary, or coarse-graining
+accounting.

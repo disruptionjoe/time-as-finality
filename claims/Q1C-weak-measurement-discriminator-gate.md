@@ -58,6 +58,11 @@ clear the independent-axis gate.
   for Q1C, an auxiliary channel tied to extra environment structure not
   screened off by the full ordinary log, or an openly enlarged instrument with
   a pre-declared preserved comparison target.
+- T149 makes "not screened off by the full ordinary log" operational: at fixed
+  full event-level record, the auxiliary channel must give positive
+  predeclared decision-risk lift for the Q1C verdict, and the source of that
+  lift must be typed as extra environment structure or an explicit instrument
+  enlargement with a preserved comparison target.
 
 ## Not Earned
 
@@ -86,11 +91,13 @@ axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
-If the proposal enlarges the monitored instrument, that enlargement and the
-preserved comparison target must be declared explicitly in advance. If it does
-not enlarge the instrument, it must instead identify extra environment or
-detector structure whose verdict content survives conditioning on the full
-ordinary event log.
+Operationally, the platform must declare the full ordinary record `R`, auxiliary
+channel `A`, verdict class `V`, and loss rule, then show positive decision-risk
+lift from `(R,A)` over `R` alone. If the proposal enlarges the monitored
+instrument, that enlargement and the preserved comparison target must be
+declared explicitly in advance. If it does not enlarge the instrument, it must
+instead identify extra environment or detector structure whose verdict content
+survives conditioning on the full ordinary event log.
 
 ## Primary Evidence
 
@@ -104,3 +111,4 @@ ordinary event log.
 - [T139: Weak-Measurement Full-Record Sufficiency Boundary](../tests/T139-weak-measurement-full-record-sufficiency-boundary.md)
 - [T143: Weak-Measurement Instrument Sufficiency Obstruction](../tests/T143-weak-measurement-instrument-sufficiency-obstruction.md)
 - [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
+- [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)

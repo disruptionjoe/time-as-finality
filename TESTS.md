@@ -33,6 +33,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
 | [T145](tests/T145-physical-record-deletion-fixed-accounting.md) | Physical record deletion fixed-accounting screen | H7, T142, T144 | implemented: the remaining fixed-accounting D1 topology split is future-operation/topology residue, not arrow evidence; deletion-like candidates are absorbed by erasure work, control handles, sink state, access boundaries, or provenance class |
 | [T146](tests/T146-weak-measurement-escape-architecture-gate.md) | Weak-measurement escape architecture gate | Q1C, T139, T143 | implemented: only two live Q1C architecture classes remain after the full-record gate; same-instrument auxiliary hardware is null by default |
+| [T149](tests/T149-weak-measurement-conditional-sufficiency-gate.md) | Weak-measurement conditional-sufficiency gate | Q1C, T146 | implemented: full-record survival is a positive decision-risk lift test plus a typed extra-environment or enlarged-instrument architecture gate |
 | [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
@@ -234,6 +235,7 @@ python -m models.run_t134
 python -m models.run_t136
 python -m models.run_t138
 python -m models.run_t146
+python -m models.run_t149
 python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
@@ -336,6 +338,7 @@ The suites use only Python's standard library. Evidence records:
 - [Detector Pre-registration Manifest v0.1 Results](results/detector-preregistration-manifest-v0.1-results.md)
 - [Detector Manifest Workflow Fit v0.1 Results](results/detector-manifest-workflow-fit-v0.1-results.md)
 - [Weak-Measurement Escape Architecture Gate v0.1 Results](results/weak-measurement-escape-architecture-gate-v0.1-results.md)
+- [Weak-Measurement Conditional-Sufficiency Gate v0.1 Results](results/weak-measurement-conditional-sufficiency-gate-v0.1-results.md)
 - [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
 - [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
 - [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)

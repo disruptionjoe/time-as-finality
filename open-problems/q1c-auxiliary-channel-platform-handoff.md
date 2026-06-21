@@ -66,6 +66,7 @@ The nearest repo artifacts are:
 - [T146 Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
 - [T149 Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150 Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
+- [T158 Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
 
 ### Minimum Pre-analysis Commitment
 
@@ -84,6 +85,8 @@ Before analysis of the monitored run, the platform must freeze:
 8. A null-control plan covering coarse-record refinement, postselection,
    auxiliary-defined labels, rare-target partitions, and same-instrument
    underdeclaration.
+9. If the proposal enlarges the monitored instrument, an eventwise
+   back-projection from enlarged data to the full ordinary standard record.
 
 ### Required Data And Architecture Burden
 
@@ -97,6 +100,10 @@ The platform must later supply enough event-level detail to audit:
    surgery.
 5. Whether an enlarged-instrument proposal preserved the comparison target it
    promised to preserve.
+6. Whether that preserved target is the full ordinary event-level standard
+   record rather than a coarse summary.
+7. Whether the enlarged instrument's declared back-projection lets the
+   standard target drift on any admissible events.
 
 If the platform cannot expose those checks at event level, Q1C remains null
 for that platform.
@@ -127,6 +134,10 @@ Treat the route as null for Q1C if any of these occur:
 - The proposal stays inside the same instrument but never names extra
   environment structure or explicit instrument enlargement.
 - Instrument enlargement is claimed without a preserved comparison target.
+- Instrument enlargement is claimed without an eventwise back-projection to the
+  full ordinary standard record.
+- The claimed preserved target is only a coarse summary or drifts under the
+  proposed back-projection.
 - The platform reports only aggregate summaries rather than event-level data
   needed for the screens above.
 
@@ -158,5 +169,7 @@ quantum-measurement work.
 
 Q1C remains `dormant`. The next non-null artifact is not another internal weak
 measurement model; it is a named platform that predeclares `R`, `A`, `H`,
-`V = g(H)`, a support floor, a loss rule, and a live T146 architecture class,
-then survives the T149/T150 event-level screens.
+`V = g(H)`, a support floor, a loss rule, a live T146 architecture class, and
+for any enlarged-instrument route an eventwise back-projection to the full
+ordinary standard record, then survives the T149/T150/T158 event-level
+screens.

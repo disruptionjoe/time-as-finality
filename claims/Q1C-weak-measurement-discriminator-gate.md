@@ -70,11 +70,15 @@ clear the independent-axis gate.
 - T155 adds the absorber under T149/T150: once the full ordinary transcript
   screens off the auxiliary channel, that channel is null across the tested
   finite decision family, not just for one chosen verdict map or loss rule.
+- T158 closes the enlarged-instrument honesty loophole: declaring a preserved
+  comparison target is null unless the platform also predeclares an eventwise
+  back-projection to the full ordinary standard record, preserves that record
+  on the admissible domain, and still adds positive verdict lift beyond it.
 - N9 turns the remaining "maybe a real platform already exists" hope into a
   source-backed census: current named homodyne-trajectory, jump-reversal,
   microwave-photon-counter, thermal-detector, nanocalorimetric, and
   calorimeter-assisted quadrature families still supply ordinary records,
-  replacement readout, or task changes rather than a live T146/T149/T150 Q1C
+  replacement readout, or task changes rather than a live T146/T149/T150/T158 Q1C
   platform.
 
 ## Not Earned
@@ -88,6 +92,9 @@ clear the independent-axis gate.
   non-gerrymandered support.
 - No named platform in the repo has frozen the full `R, A, H, V = g(H), L`
   tuple needed to reopen Q1C under T149 and T150.
+- No named platform in the repo exposes the eventwise back-projection needed
+  to show that an enlarged instrument really preserves the full ordinary
+  standard record rather than only a coarse or drifted target.
 
 ## Falsification Or Demotion Condition
 
@@ -105,7 +112,11 @@ proposal's apparent positive lift depends on defining the verdict directly from
 the auxiliary meter, choosing the verdict target after analysis, or isolating a
 vanishingly rare verdict class. It also holds when the auxiliary channel is
 screened off by the full ordinary transcript, in which case no tested
-predeclared finite decision problem gains by adding that channel at all.
+predeclared finite decision problem gains by adding that channel at all. It
+also holds when an enlarged-instrument proposal preserves only a coarse
+standard summary, lets the declared standard target drift under its claimed
+back-projection, or never exposes the eventwise projection needed to show that
+the full ordinary standard record was actually held fixed.
 
 ## Reinstatement Condition
 
@@ -119,10 +130,12 @@ auxiliary channel `A`, independently typed TaF axis `H`, verdict map `V=g(H)`,
 and loss rule, then show positive decision-risk lift from `(R,A)` over `R`
 alone. Each verdict class must have nontrivial predeclared support. If the
 proposal enlarges the monitored instrument, that enlargement and the preserved
-comparison target must be declared explicitly in advance. If it does not
-enlarge the instrument, it must instead identify extra environment or detector
-structure whose verdict content survives conditioning on the full ordinary
-event log.
+comparison target must be declared explicitly in advance, together with an
+eventwise projection from enlarged data back to the full ordinary standard
+record. That projection must preserve the declared ordinary record on the
+admissible domain. If it does not enlarge the instrument, it must instead
+identify extra environment or detector structure whose verdict content
+survives conditioning on the full ordinary event log.
 
 The current repo handoff for that burden is:
 
@@ -143,5 +156,6 @@ The current repo handoff for that burden is:
 - [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
 - [T155: Weak-Measurement Blackwell Boundary](../tests/T155-weak-measurement-blackwell-boundary.md)
+- [T158: Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
 - [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

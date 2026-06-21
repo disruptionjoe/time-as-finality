@@ -316,9 +316,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P28 - Evolutionary Biologist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T13:03:29-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-130329-p28-evolutionary-biologist-selection-audit.md
 - goal: Test whether record persistence can be modeled as selection over
   variants with a measurable fitness-like variable, and reject the analogy if it
   adds no discriminator.

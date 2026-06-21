@@ -147,9 +147,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P11 - Programming Languages Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-20T19:47:24-05:00
+- artifact: explorations/persona-goal-runs/2026-06-20-194724-p11-programming-languages-typed-effects.md
 - goal: Translate typed forgetting into type-and-effect judgments, including
   introduction, elimination, composition, preservation, and declassification rules.
 - ambition: See whether PL machinery absorbs the LossKernel proposal or leaves a

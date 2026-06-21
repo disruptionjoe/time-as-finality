@@ -36,6 +36,11 @@ clear the independent-axis gate.
   second-meter readout, and finds that the screened literature still supplies
   alternate readout chains rather than a simultaneous dual-meter witness with
   fixed standard monitored statistics.
+- T135 sharpens the same loophole against the most relevant screened
+  2020-2025 second-meter literature: recent thermal-detector qubit readout,
+  nanocalorimetric trajectories, and calorimeter-assisted homodyne still do
+  not produce a monitored-qubit simultaneous dual-meter witness with fixed
+  standard statistics.
 
 ## Not Earned
 
@@ -64,3 +69,4 @@ redundancy, access, and reversal-success statistics.
 - [T93: Weak-Measurement Undo-Cost Independence](../tests/T93-weak-measurement-undo-cost-independence.md)
 - [T94: Weak-Measurement Priority Demotion](../tests/T94-weak-measurement-priority-demotion.md)
 - [T130: Weak-Measurement Dual-Meter Screen](../tests/T130-weak-measurement-dual-meter-screen.md)
+- [T135: Weak-Measurement Second-Meter Checkpoint](../tests/T135-weak-measurement-second-meter-checkpoint.md)

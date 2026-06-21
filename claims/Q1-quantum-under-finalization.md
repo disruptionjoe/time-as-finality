@@ -101,6 +101,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T102: Q1A Neighbor Comparison Gate](../tests/T102-q1a-neighbor-comparison.md)
 - [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
+- [T140: Q1 Frontier Escape Matrix](../tests/T140-q1-frontier-escape-matrix.md)
 
 ## T21 Result
 
@@ -524,6 +525,17 @@ witness behaves like provenance-disciplined redundancy accounting over already
 formed records, not a distinct measurement theory.
 
 ## Contribution Needed
+
+T140 adds a branch-frontier rule before those needs:
+
+```text
+Do not add another Q1 model unless it explicitly satisfies a child-branch
+escape gate.
+```
+
+For now, no child branch has an active internal upgrade route. Q1B remains the
+only non-null experimental direction, and it is externally blocked pending a
+signed pre-event manifest and real event-level packet.
 
 Four concrete needs remain.
 

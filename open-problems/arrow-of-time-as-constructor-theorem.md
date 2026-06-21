@@ -48,10 +48,21 @@ The result is conditional. It derives a finality direction from the
 admissibility rule; it does not prove that physical systems instantiate that
 rule and does not derive the thermodynamic arrow.
 
+## T152 Boundary
+
+T152 screens the most obvious physical grounding candidate: metastable records
+protected by barriers. It does not clear the constructor-impossibility burden.
+Finite barriers supply lifetime and retention capability, but deletion remains
+finite-rate or finite-control possible. Infinite barriers and denied controls
+are ideal constructor or boundary stipulations rather than finite physical
+substrate evidence.
+
 ## Contribution Needed
 
-Ground the constructor rule physically. Identify which transformations on the
-T1 record graph are strictly impossible, which are possible but practically
-irreversible, and which are possible and reversible. Then test whether the
-D1-monotone admissibility rule survives in a physics-grounded substrate rather
-than only in the finite constructor model.
+Ground the constructor rule physically without hiding the absorber data. A live
+candidate must identify which transformations on a named record substrate are
+strictly impossible, which are possible but practically irreversible, and which
+are possible and reversible. After T152, metastability alone is not enough: the
+candidate must keep barrier, reservoir, erasure, capacity, sink,
+observer-boundary, provenance, source-copy, reversible-control, and task-horizon
+data fixed before claiming a constructor-impossible reverse.

@@ -22,7 +22,10 @@ erasure/free-energy accounting. T144 requires future witnesses to declare the
 reverse-edge class, T145 shows that fixed-accounting D1 topology splits are
 capability residue rather than arrow evidence unless physical deletion remains
 impossible after full absorber accounting, and T148 makes the paper-facing
-demotion explicit.
+demotion explicit. T152 screens metastable records and finds that finite
+barriers are kinetic/resource absorbers, while infinite barriers or denied
+controls are constructor or boundary stipulations rather than physical-arrow
+evidence.
 
 ## What This Does Not Claim
 
@@ -69,6 +72,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
+- [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -304,3 +308,21 @@ H7 should not be presented as a physical-arrow or thermodynamic-arrow claim
 unless a future physically typed record substrate clears the fixed-accounting
 physical deletion gate and survives hostile thermodynamic, stochastic, and
 resource-accounting absorbers.
+
+## T152 Result
+
+[T152](../tests/T152-metastable-record-deletion-screen.md) tests the most
+natural physical-deletion substrate left after T145/T148: finite metastable
+records protected by barriers.
+
+The result is another demotion. Finite barriers can make records long-lived and
+support retention capabilities, but deletion remains finite-rate or
+finite-control possible. Barrier height, reservoir state, control windows, and
+task horizon are ordinary kinetic/resource data. Infinite barriers block
+deletion only by ideal constructor stipulation or state-space split, and denied
+controls block deletion only relative to an observer/control boundary.
+
+The only matched finite-barrier split is the T145 branch-topology residue:
+future operation availability changes, but reverse deletion remains possible.
+So metastability does not reopen H7 as a physical-arrow or thermodynamic-arrow
+claim.

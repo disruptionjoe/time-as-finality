@@ -35,6 +35,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T146](tests/T146-weak-measurement-escape-architecture-gate.md) | Weak-measurement escape architecture gate | Q1C, T139, T143 | implemented: only two live Q1C architecture classes remain after the full-record gate; same-instrument auxiliary hardware is null by default |
 | [T149](tests/T149-weak-measurement-conditional-sufficiency-gate.md) | Weak-measurement conditional-sufficiency gate | Q1C, T146 | implemented: full-record survival is a positive decision-risk lift test plus a typed extra-environment or enlarged-instrument architecture gate |
 | [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
+| [T152](tests/T152-metastable-record-deletion-screen.md) | Metastable-record deletion screen | H7, T145, T148 | implemented: finite barriers are kinetic/resource absorbers, infinite barriers are constructor idealizations, and matched finite-barrier topology residue is not arrow evidence |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
@@ -268,6 +269,7 @@ The suites use only Python's standard library. Evidence records:
 - [Thermodynamic Erasure Calibration v0.1 Results](results/thermodynamic-erasure-calibration-v0.1-results.md)
 - [Physical Record Deletion Fixed-Accounting v0.1 Results](results/physical-record-deletion-fixed-accounting-v0.1-results.md)
 - [H7 Paper-Facing Demotion Gate v0.1 Results](results/h7-paper-facing-demotion-gate-v0.1-results.md)
+- [Metastable-Record Deletion Screen v0.1 Results](results/metastable-record-deletion-screen-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

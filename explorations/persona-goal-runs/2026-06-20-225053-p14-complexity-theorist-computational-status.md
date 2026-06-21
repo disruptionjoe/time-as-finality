@@ -125,6 +125,10 @@ each major test family:
 Without that surface, later summaries can still overstate either hardness or
 scalability.
 
+Resolution note: `COMPLEXITY-LEDGER.md` now supplies this index for T26, T39,
+T54, T73, T110, T132, and T138. Use that ledger before making brute-force,
+polynomial, theorem-backed, NP-hard, CSP-complete, or scalability claims.
+
 ## Proposed Next Action
 
 If Joe wants to push this branch one step further, the next bounded follow-on

@@ -142,6 +142,9 @@ Language guardrails:
   interpretation, or observer metaphysics.
 - Use finite systems, restriction systems, typed morphisms, loss kernels,
   local-to-global obstruction, and auditability.
+- Use [COMPLEXITY-LEDGER.md](COMPLEXITY-LEDGER.md) before making scale,
+  hardness, polynomial-time, or brute-force claims. No current core branch
+  earns NP-hard or CSP-complete language.
 
 ## Phase 1: Make The Claims Precise
 

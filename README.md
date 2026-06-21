@@ -2,7 +2,7 @@
 
 **The past is what has become hard to undo.**
 
-Time as Finality is the founding research program of an open mathematical
+Time as Finality is the founding and lead research program of an open mathematical
 investigation into how stable structure is preserved, transformed, forgotten,
 and newly created as it moves across recursively nested organizational levels.
 The program asks whether observer-relative temporal order and classical
@@ -16,6 +16,29 @@ Some founding intuitions will survive that search. Others will not. Both
 outcomes are informative.
 
 This is a claim-led formalization project: every major claim is labeled, linked, challenged, and paired with tests or failure conditions. The executable mathematics continuously determines which intuitions survive.
+
+Computational-status language is tracked separately in
+[COMPLEXITY-LEDGER.md](COMPLEXITY-LEDGER.md). Check it before describing a
+result as brute-force, polynomial, theorem-backed, NP-hard, CSP-complete, or
+scalable.
+
+## Current Orientation
+
+Read these first:
+
+1. [Vision - North Star.md](Vision%20-%20North%20Star.md) - the aggressive
+   geometry vision: find the geometry whose shadows are physics, then prove it
+   or break it.
+2. [Method - Research Program Guidelines.md](Method%20-%20Research%20Program%20Guidelines.md)
+   - the methodology: how claims are typed, tested, demoted, absorbed, or
+   killed.
+3. [Lead Research Line - Time as Finality.md](Lead%20Research%20Line%20-%20Time%20as%20Finality.md)
+   - the lead technical research line: record stabilization, finality, and
+   temporal direction inside the broader vision.
+
+The historical `NORTH-STAR.md` has been archived under
+`Candidate North Star/archive/`. The current project orientation is the
+three-file map above.
 
 ## Project Definition
 
@@ -46,7 +69,8 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 - Not a claim that human belief creates matter.
 - Not a claim that decoherence alone solves the measurement problem.
 - Not a claim that black-hole interiors are unreal.
-- Not a claim that a hidden global substrate underlies the observer-relative structure.
+- Not a completed proof that a deeper geometric substrate underlies the
+  observer-relative structure.
 
 ## Start Here
 

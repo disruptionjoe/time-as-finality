@@ -1,15 +1,15 @@
-"""Tests for T144: Q1A current-family closure."""
+"""Tests for T147: Q1A current-family closure."""
 
 from __future__ import annotations
 
 import unittest
 
-from models.q1a_current_family_closure import run_t144_analysis
+from models.q1a_current_family_closure import run_t147_analysis
 
 
 class Q1ACurrentFamilyClosureTests(unittest.TestCase):
     def setUp(self) -> None:
-        self.result = run_t144_analysis()
+        self.result = run_t147_analysis()
 
     def test_closure_key_recovers_every_current_d1_verdict(self) -> None:
         self.assertTrue(self.result.closure_classifier_matches_d1)

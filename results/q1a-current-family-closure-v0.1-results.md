@@ -1,4 +1,4 @@
-# T144 Results: Q1A Current-Family Closure
+# T147 Results: Q1A Current-Family Closure
 
 ## Aggregate checks
 
@@ -34,7 +34,7 @@ The current enumerated Q1A fixed-data family is closed under the declared D1 dim
 
 ## What this improved
 
-T144 converts the scattered T105/T109/T118 demotions into one reusable closure test. A reviewer can now see the exact quotient that preserves all current Q1A verdict content and the exact condition a future Q1A witness must violate.
+T147 converts the scattered T105/T109/T118 demotions into one reusable closure test. A reviewer can now see the exact quotient that preserves all current Q1A verdict content and the exact condition a future Q1A witness must violate.
 
 ## What this weakened
 
@@ -42,7 +42,7 @@ This weakens Q1A by removing the last internal ambiguity in the current family. 
 
 ## Falsification condition
 
-T144 fails if an admissible Q1A witness keeps ordinary quantum-side summaries fixed, shares the same access cut and provenance-aware partition, matches the audited accessible support count, and still changes the D1 verdict through a predeclared physical dimension. It also fails if branch support or a calibrated undo/erasure observable varies at fixed closure key without changing standard data.
+T147 fails if an admissible Q1A witness keeps ordinary quantum-side summaries fixed, shares the same access cut and provenance-aware partition, matches the audited accessible support count, and still changes the D1 verdict through a predeclared physical dimension. It also fails if branch support or a calibrated undo/erasure observable varies at fixed closure key without changing standard data.
 
 ## Q1A update
 
@@ -50,7 +50,7 @@ Q1A should be stated as current-family closed: all present verdict content is ca
 
 ## Claim ledger update
 
-Add T144 to Q1A: the current fixed-data family is closed under accessible support, branch support, and reversal-cost audits. The surviving quotient is partition visibility plus audited accessible provenance-support count; no current internal Q1A dimension escapes that quotient.
+Add T147 to Q1A: the current fixed-data family is closed under accessible support, branch support, and reversal-cost audits. The surviving quotient is partition visibility plus audited accessible provenance-support count; no current internal Q1A dimension escapes that quotient.
 
 ## Open blocker
 

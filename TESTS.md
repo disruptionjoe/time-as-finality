@@ -124,7 +124,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T102](tests/T102-q1a-neighbor-comparison.md) | Q1A neighbor comparison gate | Q1A, Q1, T2, T22, T62, T64, T101 | implemented: Q1A is only access-boundary and independence accounting unless a fixed-data witness separates it from standard neighbor frameworks |
 | [T103](tests/T103-q1a-fixed-data-witness.md) | Q1A fixed-data witness | Q1A, Q1, D1, T102 | implemented: fixed standard quantum-side data can yield different D1 verdicts only through the independence partition; external distinctness remains unearned |
 | [T118](tests/T118-q1a-reversal-cost-collapse.md) | Q1A reversal-cost collapse | Q1A, Q1, D1, T103, T105, T109 | implemented: in the current fixed-data family reversal cost collapses to the audited accessible-support count and adds no independent verdict content |
-| [T144](tests/T144-q1a-current-family-closure.md) | Q1A current-family closure | Q1A, Q1, D1, T105, T109, T118 | implemented: current Q1A verdict content factors through partition visibility plus audited accessible-support count; no current branch-support or reversal-cost escape remains |
+| [T147](tests/T147-q1a-current-family-closure.md) | Q1A current-family closure | Q1A, Q1, D1, T105, T109, T118 | implemented: current Q1A verdict content factors through partition visibility plus audited accessible-support count; no current branch-support or reversal-cost escape remains |
 
 ## Minimum Compatibility Constraints
 
@@ -237,7 +237,7 @@ python -m models.run_t93
 python -m models.run_t101
 python -m models.q1a_neighbor_comparison
 python -m models.run_t103
-python -m models.run_t144
+python -m models.run_t147
 python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction

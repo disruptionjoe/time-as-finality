@@ -48,7 +48,7 @@ content in the current family.
 - T118 shows reversal cost does not escape the accessible-class reduction in
   the current fixed-data family: its only admissible proxy is the audited
   accessible provenance-support count itself.
-- T144 packages T105/T109/T118 into a closure audit: the current family factors
+- T147 packages T105/T109/T118 into a closure audit: the current family factors
   through partition visibility plus audited accessible provenance-support
   count, with no remaining internal Q1A dimension escaping that quotient.
 
@@ -82,7 +82,7 @@ neighboring framework without adding new physics. After T105, it must also show
 verdict content that does not collapse to the same audited accessible
 provenance-support count. After T109, it must also realize branch support with
 genuinely distinct causal record channels rather than ordinary branch/history
-variation inside the current single-root witness family. After T118 and T144,
+variation inside the current single-root witness family. After T118 and T147,
 it must either split the D1 verdict at the same closure key or supply a
 physically calibrated undo/erasure observable that varies without changing
 standard quantum-side data.
@@ -97,7 +97,7 @@ standard quantum-side data.
 - [T105: Q1A Accessible-Class Sufficiency](../tests/T105-q1a-accessible-class-sufficiency.md)
 - [T109: Q1A Branch-Support Collapse](../tests/T109-q1a-branch-support-collapse.md)
 - [T118: Q1A Reversal-Cost Collapse](../tests/T118-q1a-reversal-cost-collapse.md)
-- [T144: Q1A Current-Family Closure](../tests/T144-q1a-current-family-closure.md)
+- [T147: Q1A Current-Family Closure](../tests/T147-q1a-current-family-closure.md)
 
 ## Neighbor Positioning
 

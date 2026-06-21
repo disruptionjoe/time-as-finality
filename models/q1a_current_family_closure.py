@@ -1,8 +1,8 @@
-"""T144: closure audit for the current fixed-data Q1A family.
+"""T147: closure audit for the current fixed-data Q1A family.
 
 T105 showed that current Q1A verdicts collapse to audited accessible
 provenance support plus partition visibility. T109 and T118 then killed the
-obvious branch-support and reversal-cost escape hatches. T144 packages those
+obvious branch-support and reversal-cost escape hatches. T147 packages those
 separate negative results into one executable closure check.
 
 This is not a no-go theorem for quantum measurement. It is only a current-family
@@ -48,7 +48,7 @@ class ClosureFiber:
 
 
 @dataclass(frozen=True)
-class T144Result:
+class T147Result:
     visible_cases: tuple[ClosureCase, ...]
     hidden_partition_case: ClosureCase
     fibers: tuple[ClosureFiber, ...]
@@ -166,7 +166,7 @@ def _all_fibers_singleton(
     return all(len(getattr(fiber, attribute)) <= 1 for fiber in fibers)
 
 
-def run_t144_analysis() -> T144Result:
+def run_t147_analysis() -> T147Result:
     visible_cases = _make_visible_cases()
     hidden_case = _make_hidden_case()
     all_cases = visible_cases + (hidden_case,)
@@ -198,7 +198,7 @@ def run_t144_analysis() -> T144Result:
         and not reversal_cost_load_bearing
     )
 
-    return T144Result(
+    return T147Result(
         visible_cases=visible_cases,
         hidden_partition_case=hidden_case,
         fibers=fibers,
@@ -225,7 +225,7 @@ def run_t144_analysis() -> T144Result:
             "proxies add no independent verdict content in this family."
         ),
         improved=(
-            "T144 converts the scattered T105/T109/T118 demotions into one "
+            "T147 converts the scattered T105/T109/T118 demotions into one "
             "reusable closure test. A reviewer can now see the exact quotient "
             "that preserves all current Q1A verdict content and the exact "
             "condition a future Q1A witness must violate."
@@ -237,7 +237,7 @@ def run_t144_analysis() -> T144Result:
             "records unless a future witness splits the closure key."
         ),
         falsification_condition=(
-            "T144 fails if an admissible Q1A witness keeps ordinary "
+            "T147 fails if an admissible Q1A witness keeps ordinary "
             "quantum-side summaries fixed, shares the same access cut and "
             "provenance-aware partition, matches the audited accessible "
             "support count, and still changes the D1 verdict through a "
@@ -253,7 +253,7 @@ def run_t144_analysis() -> T144Result:
             "imported by the neighboring framework without adding new physics."
         ),
         claim_ledger_update=(
-            "Add T144 to Q1A: the current fixed-data family is closed under "
+            "Add T147 to Q1A: the current fixed-data family is closed under "
             "accessible support, branch support, and reversal-cost audits. The "
             "surviving quotient is partition visibility plus audited "
             "accessible provenance-support count; no current internal Q1A "
@@ -300,7 +300,7 @@ def _fiber_to_dict(fiber: ClosureFiber) -> dict[str, object]:
     }
 
 
-def t144_result_to_dict(result: T144Result) -> dict[str, object]:
+def t147_result_to_dict(result: T147Result) -> dict[str, object]:
     return {
         "visible_cases": [_case_to_dict(case) for case in result.visible_cases],
         "hidden_partition_case": _case_to_dict(result.hidden_partition_case),
@@ -333,4 +333,4 @@ def t144_result_to_dict(result: T144Result) -> dict[str, object]:
 if __name__ == "__main__":
     import json
 
-    print(json.dumps(t144_result_to_dict(run_t144_analysis()), indent=2))
+    print(json.dumps(t147_result_to_dict(run_t147_analysis()), indent=2))

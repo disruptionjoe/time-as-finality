@@ -1,11 +1,11 @@
-"""Write T144 Q1A current-family closure results."""
+"""Write T147 Q1A current-family closure results."""
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
-from models.q1a_current_family_closure import run_t144_analysis, t144_result_to_dict
+from models.q1a_current_family_closure import run_t147_analysis, t147_result_to_dict
 
 
 RESULTS_JSON = Path("results/q1a-current-family-closure-v0.1.json")
@@ -13,14 +13,14 @@ RESULTS_MD = Path("results/q1a-current-family-closure-v0.1-results.md")
 
 
 def main() -> None:
-    payload = t144_result_to_dict(run_t144_analysis())
+    payload = t147_result_to_dict(run_t147_analysis())
     RESULTS_JSON.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     RESULTS_MD.write_text(_render_markdown(payload), encoding="utf-8")
 
 
 def _render_markdown(payload: dict[str, object]) -> str:
     lines = [
-        "# T144 Results: Q1A Current-Family Closure",
+        "# T147 Results: Q1A Current-Family Closure",
         "",
         "## Aggregate checks",
         "",

@@ -1,5 +1,9 @@
 # Records, Finality, and Readout: A Separation Result on Finite Causal Record Graphs
 
+**Readiness caveat:** hostile review readiness is not external readiness. The
+distinguishing-predictions ledger still has `[OPEN]` neighbors, so this paper
+should not be used as an external-readiness certificate.
+
 **Author:** Joe [surname / affiliation to be added] · **Draft v0.1, 2026-06-11** · **Status: ready for hostile review, not yet submitted**
 
 *Code and machine-checked witnesses: `time-as-finality` repository (T1, T11–T13 laboratories). All numbered claims below are verified by unit test; reproduction commands in Appendix B.*

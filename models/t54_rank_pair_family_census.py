@@ -97,7 +97,7 @@ NOT_CLAIMED = (
 
 
 def run_t163_analysis() -> T163Result:
-    case_audits = tuple(_audit_info_permutation(info_perm) for info_perm in permutations(range(1, 7)))
+    case_audits = audit_t163_family()
     t126_counts = _count_by_key(case_audits, key=lambda audit: audit.t126_classification)
     t156_fail_count = sum(
         1 for audit in case_audits if audit.outcome_bucket == "t156_ordering_fraction_fail"
@@ -190,6 +190,16 @@ def run_t163_analysis() -> T163Result:
         ),
         not_claimed=NOT_CLAIMED,
     )
+
+
+def audit_t163_family() -> tuple[T163CaseAudit, ...]:
+    return tuple(_audit_info_permutation(info_perm) for info_perm in permutations(range(1, 7)))
+
+
+def t163_t126_datum_for_permutation(info_permutation: InfoPermutation):
+    datum = _rank_pair_datum(info_permutation)
+    completion = complete_observer_descent_datum(datum)
+    return _completion_to_t126_datum(completion)
 
 
 def t163_result_to_dict(result: T163Result) -> dict[str, Any]:

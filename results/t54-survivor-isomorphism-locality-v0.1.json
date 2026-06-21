@@ -1,0 +1,1151 @@
+{
+  "stable_labeled_survivor_count": 26,
+  "oriented_isomorphism_class_count": 15,
+  "order_dual_quotient_class_count": 9,
+  "largest_oriented_class_size": 2,
+  "singleton_oriented_class_count": 4,
+  "strict_pair_count_by_oriented_class": [
+    {
+      "strict_pair_count": 6,
+      "class_count": 1
+    },
+    {
+      "strict_pair_count": 7,
+      "class_count": 7
+    },
+    {
+      "strict_pair_count": 8,
+      "class_count": 7
+    }
+  ],
+  "cover_degree_profiles_by_oriented_class": [
+    {
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "class_count": 1
+    },
+    {
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "class_count": 6
+    },
+    {
+      "cover_degree_profile": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "class_count": 1
+    },
+    {
+      "cover_degree_profile": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "class_count": 4
+    },
+    {
+      "cover_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "class_count": 1
+    },
+    {
+      "cover_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "class_count": 2
+    }
+  ],
+  "all_classes_height_three": true,
+  "all_classes_parent_intervals_thin": true,
+  "all_classes_low_cover_hub": true,
+  "class_audits": [
+    {
+      "class_id": "C01",
+      "representative_permutation": [
+        3,
+        6,
+        1,
+        4,
+        5,
+        2
+      ],
+      "member_permutations": [
+        [
+          3,
+          6,
+          1,
+          4,
+          5,
+          2
+        ]
+      ],
+      "dual_quotient_id": "D01",
+      "labeled_member_count": 1,
+      "strict_pair_count": 7,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        2,
+        3,
+        1
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C02",
+      "representative_permutation": [
+        3,
+        5,
+        1,
+        6,
+        4,
+        2
+      ],
+      "member_permutations": [
+        [
+          3,
+          5,
+          1,
+          6,
+          4,
+          2
+        ],
+        [
+          3,
+          6,
+          1,
+          5,
+          2,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D02",
+      "labeled_member_count": 2,
+      "strict_pair_count": 7,
+      "cover_relation_count": 6,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        2,
+        3,
+        1
+      ],
+      "cover_degree_profile": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 6
+        },
+        {
+          "size": 1,
+          "count": 1
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C03",
+      "representative_permutation": [
+        2,
+        5,
+        1,
+        6,
+        4,
+        3
+      ],
+      "member_permutations": [
+        [
+          2,
+          5,
+          1,
+          6,
+          4,
+          3
+        ],
+        [
+          3,
+          1,
+          6,
+          5,
+          2,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D03",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 7,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        2,
+        3,
+        1
+      ],
+      "cover_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 7
+        },
+        {
+          "size": 1,
+          "count": 1
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C04",
+      "representative_permutation": [
+        3,
+        4,
+        6,
+        1,
+        5,
+        2
+      ],
+      "member_permutations": [
+        [
+          3,
+          4,
+          6,
+          1,
+          5,
+          2
+        ],
+        [
+          4,
+          6,
+          1,
+          2,
+          5,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D04",
+      "labeled_member_count": 2,
+      "strict_pair_count": 7,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C05",
+      "representative_permutation": [
+        2,
+        4,
+        6,
+        1,
+        5,
+        3
+      ],
+      "member_permutations": [
+        [
+          2,
+          4,
+          6,
+          1,
+          5,
+          3
+        ],
+        [
+          4,
+          1,
+          6,
+          2,
+          5,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D05",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 6,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 6
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C06",
+      "representative_permutation": [
+        4,
+        5,
+        6,
+        1,
+        2,
+        3
+      ],
+      "member_permutations": [
+        [
+          4,
+          5,
+          6,
+          1,
+          2,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D06",
+      "labeled_member_count": 1,
+      "strict_pair_count": 6,
+      "cover_relation_count": 4,
+      "height": 3,
+      "width": 2,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "2/5",
+        "float": 0.4
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 4
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C07",
+      "representative_permutation": [
+        3,
+        5,
+        6,
+        1,
+        2,
+        4
+      ],
+      "member_permutations": [
+        [
+          3,
+          5,
+          6,
+          1,
+          2,
+          4
+        ],
+        [
+          4,
+          5,
+          1,
+          6,
+          2,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D07",
+      "labeled_member_count": 2,
+      "strict_pair_count": 7,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 2,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "2/5",
+        "float": 0.4
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C08",
+      "representative_permutation": [
+        4,
+        2,
+        5,
+        6,
+        1,
+        3
+      ],
+      "member_permutations": [
+        [
+          4,
+          2,
+          5,
+          6,
+          1,
+          3
+        ],
+        [
+          5,
+          2,
+          6,
+          1,
+          3,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D04",
+      "labeled_member_count": 2,
+      "strict_pair_count": 7,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        3,
+        2,
+        1
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C09",
+      "representative_permutation": [
+        2,
+        5,
+        6,
+        1,
+        3,
+        4
+      ],
+      "member_permutations": [
+        [
+          2,
+          5,
+          6,
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          1,
+          5,
+          6,
+          2,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D08",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 2,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 3
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C10",
+      "representative_permutation": [
+        3,
+        4,
+        6,
+        1,
+        2,
+        5
+      ],
+      "member_permutations": [
+        [
+          3,
+          4,
+          6,
+          1,
+          2,
+          5
+        ],
+        [
+          4,
+          5,
+          1,
+          2,
+          6,
+          3
+        ]
+      ],
+      "dual_quotient_id": "D08",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 2,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 3
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C11",
+      "representative_permutation": [
+        4,
+        2,
+        5,
+        1,
+        6,
+        3
+      ],
+      "member_permutations": [
+        [
+          4,
+          2,
+          5,
+          1,
+          6,
+          3
+        ],
+        [
+          4,
+          2,
+          6,
+          1,
+          3,
+          5
+        ]
+      ],
+      "dual_quotient_id": "D05",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 6,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        3,
+        2,
+        1
+      ],
+      "cover_degree_profile": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 6
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C12",
+      "representative_permutation": [
+        5,
+        2,
+        3,
+        6,
+        1,
+        4
+      ],
+      "member_permutations": [
+        [
+          5,
+          2,
+          3,
+          6,
+          1,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D01",
+      "labeled_member_count": 1,
+      "strict_pair_count": 7,
+      "cover_relation_count": 5,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        3,
+        1,
+        2
+      ],
+      "cover_degree_profile": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C13",
+      "representative_permutation": [
+        3,
+        5,
+        2,
+        6,
+        1,
+        4
+      ],
+      "member_permutations": [
+        [
+          3,
+          5,
+          2,
+          6,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          6,
+          2,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D02",
+      "labeled_member_count": 2,
+      "strict_pair_count": 7,
+      "cover_relation_count": 6,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        3,
+        2,
+        1
+      ],
+      "cover_degree_profile": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "comparable_degree_profile": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 6
+        },
+        {
+          "size": 1,
+          "count": 1
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C14",
+      "representative_permutation": [
+        3,
+        5,
+        1,
+        6,
+        2,
+        4
+      ],
+      "member_permutations": [
+        [
+          3,
+          5,
+          1,
+          6,
+          2,
+          4
+        ]
+      ],
+      "dual_quotient_id": "D09",
+      "labeled_member_count": 1,
+      "strict_pair_count": 8,
+      "cover_relation_count": 6,
+      "height": 3,
+      "width": 2,
+      "rank_profile": [
+        2,
+        2,
+        2
+      ],
+      "cover_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "2/5",
+        "float": 0.4
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 6
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    },
+    {
+      "class_id": "C15",
+      "representative_permutation": [
+        3,
+        5,
+        2,
+        1,
+        6,
+        4
+      ],
+      "member_permutations": [
+        [
+          3,
+          5,
+          2,
+          1,
+          6,
+          4
+        ],
+        [
+          4,
+          3,
+          1,
+          6,
+          2,
+          5
+        ]
+      ],
+      "dual_quotient_id": "D03",
+      "labeled_member_count": 2,
+      "strict_pair_count": 8,
+      "cover_relation_count": 7,
+      "height": 3,
+      "width": 3,
+      "rank_profile": [
+        3,
+        2,
+        1
+      ],
+      "cover_degree_profile": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "comparable_degree_profile": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_cover_hub_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 7
+        },
+        {
+          "size": 1,
+          "count": 1
+        }
+      ],
+      "max_interval_interior_size": 1,
+      "locality_label": "thin_height3_control"
+    }
+  ],
+  "strongest_claim": "The 26 labeled T163 survivors reduce to 15 oriented finite-poset isomorphism classes, or 9 classes if order-dual shapes are also identified. Every surviving class is a six-event height-3, parent-interval-thin control; the survivor set is structurally narrow rather than a broad spacetime-like family.",
+  "improved": "T164 removes label inflation from the T163 positive boundary and adds invariant shape diagnostics: class multiplicity, order-dual collapse, strict-pair counts, Hasse-cover degree profiles, rank profiles, and maximum parent interval size.",
+  "weakened_or_falsified": "This weakens the optimistic reading of T163. The 26 survivors are not 26 independent structures; they collapse to 15 oriented shapes with maximum labeled multiplicity 2, and all remain tiny, thin six-event controls rather than locality-rich causal-set samples.",
+  "falsification_condition": "T164 fails if the canonical labeling does not preserve finite poset isomorphism, if any non-surviving T163 case enters the quotient, or if the class counts are interpreted as a continuum, sprinkling, embedding, covariance, or metric result.",
+  "s1_update": "S1 remains open_formal_target. The finite boundary is cleaner: there is a small invariant survivor family after T163, but it is label-compressed and structurally thin.",
+  "claim_ledger_update": "Add T164 to S1: the 26 labeled T163 survivors quotient to 15 oriented finite-poset isomorphism classes and 9 order-dual classes; all are height-3 six-event controls with parent intervals of size at most 1. Treat them as a narrow finite target for stronger locality/sprinkling stress tests, not as spacetime evidence.",
+  "open_blocker": "No random-sprinkling comparison, neighborhood-growth law, dimension estimator beyond ordering fraction, embedding theorem, covariance result, Lorentzian metric reconstruction, or continuum bridge exists for the 15 oriented survivor classes.",
+  "suggested_next": "Run a declared finite locality or random-sprinkling stress test on the 15 oriented classes, preferably one that can reject thin height-3 controls without relying on labels.",
+  "not_claimed": "T164 does not show a random sprinkling law, faithful embedding, metric or Lorentzian reconstruction, covariance, or a continuum limit. It only quotients the T163 six-event survivor set by finite-poset shape and adds a first structural locality guardrail."
+}

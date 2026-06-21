@@ -53,6 +53,8 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T156: Myrheim-Meyer Ordering-Fraction Screen](../tests/T156-myrheim-meyer-ordering-fraction-screen.md)
 - [T157: T54 Ordering-Fraction Bridge](../tests/T157-t54-ordering-fraction-bridge.md)
 - [T159: T54 Interval-Jackknife Screen](../tests/T159-t54-interval-jackknife-screen.md)
+- [T163: T54 Rank-Pair Family Census](../tests/T163-t54-rank-pair-family-census.md)
+- [T164: T54 Survivor Isomorphism And Locality Audit](../tests/T164-t54-survivor-isomorphism-locality.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -172,6 +174,24 @@ The next burden shifts from "find any deletion-stable six-event sample" to
 "quotient and stress-test the surviving subfamily." Until that is done, S1
 still lacks isomorphism control, random-sprinkling comparison, locality tests,
 embedding theorems, covariance, and continuum reconstruction.
+
+## T164 Survivor Isomorphism And Locality Audit
+
+[T164](../tests/T164-t54-survivor-isomorphism-locality.md) performs the
+first quotient-and-stress step on the T163 survivors. The 26 labeled stable
+survivors reduce to 15 oriented finite-poset isomorphism classes, or 9 classes
+if order-dual shapes are also identified.
+
+This sharpens the finite boundary without upgrading S1. The survivor family is
+not 26 independent structures, and every oriented class remains a six-event
+height-3 control with parent intervals of size at most 1. T164 therefore turns
+the positive T163 boundary into a small invariant target for future locality or
+random-sprinkling stress tests, not spacetime evidence.
+
+S1 still lacks a random-sprinkling comparison, neighborhood-growth law,
+dimension estimator beyond ordering fraction, faithful embedding theorem,
+covariance result, Lorentzian metric reconstruction, or continuum bridge for
+these classes.
 
 ## T153 Lorentzian Absorber Gate
 

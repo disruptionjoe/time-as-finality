@@ -307,9 +307,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P27 - Philosophy Of Science Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T12:03:17-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-120317-p27-philosophy-of-science-kill-criteria.md
 - goal: Define project-level kill criteria for Q1, H7, TF1, and C1: what result
   would make each branch not worth further work?
 - ambition: Make falsifiability threaten the program, not just subclaim wording.

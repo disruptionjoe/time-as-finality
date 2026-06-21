@@ -503,6 +503,11 @@ natural sufficient enrichment or quotient under the declared audit context.
 
 - [`Pre-v0.5 Readiness Action Report v0.1.md`](Pre-v0.5%20Readiness%20Action%20Report%20v0.1.md) - Codex GPT-5, 2026-06-20. Consolidated action report on what must be done before v0.5: five compact main-note patches, companion-report/example work, navigation/posture checks, and source-hygiene cleanup.
 
+## Draft Produced From This Queue
+
+- [`Candidate North Star v0.5 Codex.md`](Candidate%20North%20Star%20v0.5%20Codex.md) - v0.5 Codex draft authorized after this queue; applies the compact equality, approximate-equivalence, domain-calibration, falsifiability, and appendix-map patches while preserving v0.4's posture.
+- [`Candidate North Star Output Report v0.5 Codex.md`](Candidate%20North%20Star%20Output%20Report%20v0.5%20Codex.md) - short output report for the Codex draft.
+
 ## Instructions To Agents Using This File
 
 When reviewing, do not draft v0.5.

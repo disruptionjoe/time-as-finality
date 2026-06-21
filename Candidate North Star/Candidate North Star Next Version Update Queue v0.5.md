@@ -114,6 +114,19 @@ review should not only ask whether v0.4 is readable; it should ask whether v0.4
 preserves the mathematical discipline and physics strength those reports
 required.
 
+## Linked Review Reports
+
+```text
+Candidate North Star/Candidate North Star Pre-v0.5 Readiness Review v0.1.md
+```
+
+[Pre-v0.5 Readiness Review v0.1](./Candidate%20North%20Star%20Pre-v0.5%20Readiness%20Review%20v0.1.md)
+— Claude (Cowork) review of v0.4. Headline: the schema is sound and the prior-art
+and database research are discharged; the gating work before v0.5 is to run at
+least one witness end-to-end through the audit (Gate 1), decide the physics-forward
+question explicitly (Gate 2), and name the canonicity criterion and transfer
+theorem as open problems. Mergeable patches map to queue items Q2, Q6, Q7.
+
 ## Locked Postures
 
 ### 1. Global Absorption First

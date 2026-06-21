@@ -1324,6 +1324,23 @@ forward direction. The converse is an open conjecture.
   mechanism rights, and commons variables but a different FOA verdict.
 - Artifact: [T119 technical report](TECHNICAL-REPORT-future-operation-availability-residue-v0.1.md).
 
+### 2026-06-20 - Future Capability Preservation Audit (T129)
+
+- No core claim is upgraded. T129 is a cross-branch audit-normal-form test,
+  not a new ontology.
+- Result: Git history, detector packets, reconstruction debt, provenance,
+  operation rights, ASP, FOA, LossKernel, admissibility, and maintenance-cost
+  cases share a structure: visible state plus task-indexed capability
+  requirements for witnesses, rights, reconstruction paths, provenance,
+  maintenance/access, certifications, and admissibility policy.
+- Weakest point: once that hidden structure is included in the state, the
+  same-current-state split is absorbed by enriched reachability,
+  opportunity-set economics, provenance systems, access-control/capability
+  systems, mechanism design, and viability/control frameworks.
+- Recommendation: formalize narrowly as an audit normal form for detecting
+  missing capability-bearing state; do not promote `FCP` as a primitive.
+- Artifact: [T129 technical report](TECHNICAL-REPORT-future-capability-preservation-audit-v0.1.md).
+
 ### 2026-06-20 - Real Detector Packet Schema Audit (T121)
 
 - No Q1 or detector-physics claim is upgraded. T121 is detector evidence

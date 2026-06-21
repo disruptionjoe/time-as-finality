@@ -30,6 +30,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
 | [T119](tests/T119-future-operation-availability-residue.md) | Future Operation Availability residue audit | Q1A, T117, T115, TF1, PO1, provenance | implemented: multiple branches converge on task-indexed future operation availability as a useful normal form, but it is absorbed by enriched reachability/opportunity/provenance/control frameworks |
+| [T129](tests/T129-future-capability-preservation-audit.md) | Future capability preservation audit | T119, T121, T123, T128, ASP, FOA, LossKernel, admissibility | implemented: same-current-state/different-future-capability residue has a common audit normal form but is absorbed by enriched reachability, opportunity-set, provenance, access-control, mechanism-design, and viability frameworks |
 | [T20](tests/T20-consensus-record-theorem-transfer.md) | Consensus-record theorem transfer | A1, D1, T13, T17 | implemented: theorem-transfer and boundary cases |
 | [T21](tests/T21-bell-contextuality-finality.md) | Bell contextuality finality | Q1, D1, T13, T20 | implemented: CHSH contextuality and score comparison |
 | [T22](tests/T22-d1-physical-reduction-map.md) | D1 physical reduction map | D1, Q1, T2, T21 | implemented: observable audit and holder-redundancy reduction |
@@ -149,6 +150,7 @@ python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
 python -m models.run_t119
+python -m models.run_t129
 python -m models.run_t111_d1_gauge_invariance
 python -m models.run_t112_spin_observerse_holonomy_step2
 python -m models.run_t113
@@ -240,6 +242,7 @@ The suites use only Python's standard library. Evidence records:
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)
 - [Future Operation Availability Residue v0.1 Results](results/future-operation-availability-residue-v0.1-results.md)
+- [Future Capability Preservation Audit v0.1 Results](results/future-capability-preservation-audit-v0.1-results.md)
 - [D1 Gauge-Invariance Audit v0.1 Results](results/d1-gauge-invariance-audit-v0.1-results.md)
 - [Spin-Observerse Holonomy Step 2 v0.1 Results](results/spin-observerse-holonomy-step2-v0.1-results.md)
 - [Gap Presheaf Classification v0.1 Results](results/gap-presheaf-classification-v0.1-results.md)

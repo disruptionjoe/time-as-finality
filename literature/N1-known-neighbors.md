@@ -33,3 +33,5 @@ Add short literature notes that distinguish:
 ## Current Notes
 
 - [N2: Hoffman Interface Theory And Trace Logic](N2-hoffman-interface-theory-and-trace-logic.md)
+- [N7: Q1A Measurement-Neighbor Positioning](N7-q1a-measurement-neighbors.md)
+- [N10: Q1A Spectrum Broadcast Structure Absorber](N10-q1a-spectrum-broadcast-structure-absorber.md)

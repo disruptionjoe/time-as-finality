@@ -51,6 +51,12 @@ content in the current family.
 - T147 packages T105/T109/T118 into a closure audit: the current family factors
   through partition visibility plus audited accessible provenance-support
   count, with no remaining internal Q1A dimension escaping that quotient.
+- N10 adds the stronger objectivity absorber: Spectrum Broadcast Structure and
+  strong Quantum Darwinism already formalize independently accessible,
+  mutually agreeing environmental records of a pointer observable. Q1A gets no
+  physics-facing credit for independent redundant classical records unless the
+  SBS/strong-QD objectivity data are fixed and a nonimportable D1 dimension
+  still splits the verdict.
 
 ## Not Earned
 
@@ -64,14 +70,17 @@ content in the current family.
 - No live branch-support witness inside the current fixed-data family.
 - No live reversal-cost witness inside the current fixed-data family.
 - No current-family same-closure-key D1 verdict split.
+- No external distinction from Spectrum Broadcast Structure or strong Quantum
+  Darwinism for independent redundant objectivity criteria.
 - No empirical quantum support beyond already formed record accounting.
 
 ## Falsification Or Demotion Condition
 
 If every future fixed-data witness is absorbed once neighboring frameworks
-share the same auditable access cut, provenance-aware fragment partition, and
-audited accessible support count, then Q1A should remain a bookkeeping or
-admissibility convention rather than a paper-facing physics contribution.
+share the same auditable access cut, provenance-aware fragment partition,
+audited accessible support count, and SBS/strong-QD objectivity data, then Q1A
+should remain a bookkeeping or admissibility convention rather than a
+paper-facing physics contribution.
 
 ## Reinstatement Condition
 
@@ -85,7 +94,12 @@ genuinely distinct causal record channels rather than ordinary branch/history
 variation inside the current single-root witness family. After T118 and T147,
 it must either split the D1 verdict at the same closure key or supply a
 physically calibrated undo/erasure observable that varies without changing
-standard quantum-side data.
+standard quantum-side data. After N10, any physics-facing objectivity witness
+must also hold fixed the Spectrum Broadcast Structure or strong Quantum
+Darwinism objectivity data: pointer observable, fragment partition,
+conditional fragment states, distinguishability/support-overlap bounds,
+conditional independence or strong independence status, observer-accessible
+fragment subset, provenance partition, and audited support count.
 
 ## Primary Evidence
 
@@ -102,4 +116,5 @@ standard quantum-side data.
 ## Neighbor Positioning
 
 - [N7: Q1A Measurement-Neighbor Positioning](../literature/N7-q1a-measurement-neighbors.md)
+- [N10: Q1A Spectrum Broadcast Structure Absorber](../literature/N10-q1a-spectrum-broadcast-structure-absorber.md)
 - [Q1A Same-Closure-Key Handoff](../open-problems/q1a-same-closure-key-handoff.md)

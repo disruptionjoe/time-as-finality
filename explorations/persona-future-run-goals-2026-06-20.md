@@ -335,9 +335,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P30 - Neuroscientist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T15:04:28-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-150428-p30-neuroscientist-operational-boundary.md
 - goal: Reframe first-person finality only in terms of measurable memory,
   integration, and reportability constraints, then demote anything that cannot
   be operationalized.

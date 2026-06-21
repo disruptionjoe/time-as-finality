@@ -257,9 +257,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P22 - Information Theorist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T06:57:29-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-065729-p22-information-theorist-measure-upgrade.md
 - goal: Replace holder-count and support-count proxies with mutual information,
   directed information, redundancy/synergy, coding cost, or channel-capacity
   bounds where the models permit it.

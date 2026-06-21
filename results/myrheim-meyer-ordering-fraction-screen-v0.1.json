@@ -1,0 +1,118 @@
+{
+  "target": {
+    "name": "flat_1p1_interval_ordering_fraction",
+    "target_fraction": {
+      "fraction": "1/2",
+      "float": 0.5
+    },
+    "tolerance": {
+      "fraction": "1/10",
+      "float": 0.1
+    },
+    "basis": "In light-cone coordinates on a flat 1+1 causal diamond, two independent points are causally related exactly when their two coordinate orderings agree, giving ordering fraction 1/2. The 1/10 tolerance is a finite-audit band, not a continuum theorem."
+  },
+  "audits": [
+    {
+      "name": "flat_1p1_target_control",
+      "source": "deterministic light-cone coordinate control, not a TaF derivation",
+      "t126_classification": "passes_filter_only",
+      "causal_set_candidate": true,
+      "t126_filter_passed": true,
+      "event_count": 6,
+      "strict_pair_count": 7,
+      "ordering_fraction": {
+        "fraction": "7/15",
+        "float": 0.4666666666666667
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "1/30",
+        "float": 0.03333333333333333
+      },
+      "target_verdict": "inside_declared_ordering_fraction_band",
+      "verdict": "passes_ordering_fraction_control_only",
+      "reason": "The candidate's ordering fraction lies inside the declared finite 1+1 target band. This is only a calibration/control pass.",
+      "required_next": "Apply stronger dimension, abundance, sprinkling, locality, and continuum diagnostics before any spacetime-facing claim."
+    },
+    {
+      "name": "t54_style_product_grid_2x3",
+      "source": "synthetic T54-style canonical product-order finality colimit; not an actual T54 quotient-union output",
+      "t126_classification": "passes_filter_only",
+      "causal_set_candidate": true,
+      "t126_filter_passed": true,
+      "event_count": 6,
+      "strict_pair_count": 12,
+      "ordering_fraction": {
+        "fraction": "4/5",
+        "float": 0.8
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "3/10",
+        "float": 0.3
+      },
+      "target_verdict": "outside_declared_ordering_fraction_band",
+      "verdict": "t126_pass_but_ordering_fraction_fail",
+      "reason": "The candidate survived T126's selected finite filter but is too highly ordered relative to the declared 1+1 flat-interval ordering-fraction target.",
+      "required_next": "Do not treat this T126 survivor as dimension evidence; either change the declared comparison target or build a less lattice-ordered finality colimit."
+    },
+    {
+      "name": "grid_filter_pass_control",
+      "source": "small 3x3 product-order control that passes this filter only",
+      "t126_classification": "passes_filter_only",
+      "causal_set_candidate": true,
+      "t126_filter_passed": true,
+      "event_count": 9,
+      "strict_pair_count": 27,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "target_name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "absolute_gap": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "target_verdict": "outside_declared_ordering_fraction_band",
+      "verdict": "t126_pass_but_ordering_fraction_fail",
+      "reason": "The candidate survived T126's selected finite filter but is too highly ordered relative to the declared 1+1 flat-interval ordering-fraction target.",
+      "required_next": "Do not treat this T126 survivor as dimension evidence; either change the declared comparison target or build a less lattice-ordered finality colimit."
+    }
+  ],
+  "positive_target_control_passes": true,
+  "t126_pass_can_fail_ordering_fraction_target": true,
+  "all_product_grid_survivors_fail_target": true,
+  "strongest_claim": "A T126 `passes_filter_only` result is not even a 1+1 Myrheim-Meyer ordering-fraction pass. The 2x3 and 3x3 product-order finality-colimit controls clear T126 but fail the declared flat 1+1 ordering-fraction band.",
+  "improved": "T156 connects the finite finality-colimit bridge to a named causal-set diagnostic and supplies a deterministic positive target control, making the S1 scale-up path more reviewable.",
+  "weakened": "This weakens the current S1 positive boundary: T126 survivors can be too lattice-ordered to resemble the declared 1+1 flat causal interval, so T126 passing is only a pre-diagnostic filter.",
+  "falsification_condition": "T156 fails if the ordering-fraction calculation is not computed from the same strict relation used by T126, if the deterministic target control is rejected by the declared band, or if product grid survivors are promoted as 1+1 dimension evidence despite falling outside that band.",
+  "s1_update": "S1 remains open_formal_target. A future spacetime-colimit witness must clear T126 and then match a declared causal-set diagnostic; T126 alone is insufficient.",
+  "claim_ledger_update": "Add T156 to S1: scale-cleared T126 product-grid survivors can fail a declared Myrheim-Meyer 1+1 ordering-fraction target. This turns the T126 pass into a stricter pre-diagnostic gate rather than dimension or manifoldlikeness evidence.",
+  "open_blocker": "No actual T54/T58 finality colimit both reaches T126 scale and matches a named causal-set dimension, sprinkling, locality, or continuum diagnostic.",
+  "suggested_next": "Generate a genuine T54 quotient-union family with at least six events whose ordering fraction falls inside the declared target band, then test whether stronger interval and locality diagnostics still reject it.",
+  "not_claimed": "T156 does not estimate continuum dimension, prove faithful embedding, derive a Lorentzian metric, or validate spacetime reconstruction."
+}

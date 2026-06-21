@@ -50,6 +50,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
 - [T126: Finality-Colimit Causal-Set Embeddability Audit](../tests/T126-finality-colimit-causal-set-embeddability.md)
 - [T154: T54/T58-to-T126 Bridge](../tests/T154-t54-t58-t126-bridge.md)
+- [T156: Myrheim-Meyer Ordering-Fraction Screen](../tests/T156-myrheim-meyer-ordering-fraction-screen.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -108,6 +109,21 @@ This weakens any reading that T51/T52 already supply spacetime-facing
 evidence. They are currently causal-set gate controls only, not
 manifoldlikeness, dimension-estimator, sprinkling, locality, embedding, or
 continuum-limit witnesses.
+
+## T156 Ordering-Fraction Guardrail
+
+[T156](../tests/T156-myrheim-meyer-ordering-fraction-screen.md) adds a named
+Myrheim-Meyer-style ordering-fraction check after T126. For a declared flat
+1+1 interval target, the ordering fraction is `1/2` with a finite audit band
+of `+/- 1/10`.
+
+The deterministic light-cone-coordinate control lands inside that band
+(`7/15`). But the six-event 2x3 product-grid colimit and the existing T126
+3x3 grid survivor both pass T126 while failing the target (`4/5` and `3/4`).
+
+This weakens S1 again: `passes_filter_only` is only a pre-diagnostic T126
+verdict. It is not dimension evidence, sprinkling evidence, a faithful
+embedding, a Lorentzian metric reconstruction, or a continuum-limit result.
 
 ## T153 Lorentzian Absorber Gate
 

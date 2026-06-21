@@ -29,6 +29,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T125](tests/T125-d1-boundary-connection-transport.md) | D1 boundary connection transport | D1, R1, S1, T111, T112, T113 | open: specification-only transport audit for boundary-indexed D1 profiles, identity, composition, closed loops, provenance deltas, and hostile controls |
 | [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | implemented: finite causal-set/manifoldlikeness necessary-condition filter; rejects malformed, noncanonical, non-poset, phantom-gap, hub, interval, rank/width, and local-profile failures without deriving spacetime |
 | [T154](tests/T154-t54-t58-t126-bridge.md) | T54/T58-to-T126 bridge | S1, T54, T58, T126 | implemented: actual T54 T51/T52 canonical completions enter T126 after the T58 phantom-gap gate, but both are `insufficient_scale`; T53 is blocked before embeddability claims |
+| [T156](tests/T156-myrheim-meyer-ordering-fraction-screen.md) | Myrheim-Meyer ordering-fraction screen | S1, T126, T154 | implemented: T126 product-grid survivors can fail a declared 1+1 ordering-fraction target, so `passes_filter_only` is pre-diagnostic rather than dimension evidence |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
@@ -169,6 +170,7 @@ python -m models.run_t122
 python -m models.run_t124
 python -m models.run_t126
 python -m models.run_t154
+python -m models.run_t156
 python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
@@ -280,6 +282,7 @@ The suites use only Python's standard library. Evidence records:
 - [Lorentzian Causal-Diamond Screen v0.1 Results](results/lorentzian-causal-diamond-screen-v0.1-results.md)
 - [Finality-Colimit Causal-Set Embeddability v0.1 Results](results/finality-colimit-causal-set-embeddability-v0.1-results.md)
 - [T54/T58-to-T126 Bridge v0.1 Results](results/t54-t58-t126-bridge-v0.1-results.md)
+- [Myrheim-Meyer Ordering-Fraction Screen v0.1 Results](results/myrheim-meyer-ordering-fraction-screen-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

@@ -1,0 +1,70 @@
+{
+  "audits": [
+    {
+      "name": "t154_T51_phantom_repair",
+      "source_completion": "T51_phantom_repair",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t58_gap_gate_passed": true,
+      "t126_classification": "insufficient_scale",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "event_count": 3,
+      "strict_pair_count": 2,
+      "ordering_fraction": {
+        "fraction": "2/3",
+        "float": 0.6666666666666666
+      },
+      "dimension_diagnostic": "myrheim_meyer_ordering_fraction_not_applied_below_minimum_scale",
+      "verdict": "causet_candidate_only",
+      "reason": "The relation is a finite causal-set candidate, but the witness is too small for the selected manifoldlikeness diagnostics."
+    },
+    {
+      "name": "t154_T52_symmetric_reconstruction",
+      "source_completion": "T52_symmetric_reconstruction",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t58_gap_gate_passed": true,
+      "t126_classification": "insufficient_scale",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "event_count": 4,
+      "strict_pair_count": 3,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "dimension_diagnostic": "myrheim_meyer_ordering_fraction_not_applied_below_minimum_scale",
+      "verdict": "causet_candidate_only",
+      "reason": "The relation is a finite causal-set candidate, but the witness is too small for the selected manifoldlikeness diagnostics."
+    },
+    {
+      "name": "t154_T53_ambiguous_identity",
+      "source_completion": "T53_ambiguous_identity",
+      "t54_classification": "underdetermined",
+      "t54_theorem_applies": false,
+      "t58_gap_gate_passed": false,
+      "t126_classification": "not_descent_datum",
+      "causal_set_candidate": false,
+      "manifold_filter_passed": false,
+      "event_count": 0,
+      "strict_pair_count": null,
+      "ordering_fraction": null,
+      "dimension_diagnostic": "not_reached",
+      "verdict": "blocked_before_spacetime_claim",
+      "reason": "The T54-style descent gate failed or is missing, so no causal-set embeddability claim is meaningful."
+    }
+  ],
+  "canonical_completions_audited": true,
+  "t58_gate_required": true,
+  "all_actual_canonical_colimits_blocked_before_manifold_claims": true,
+  "no_named_dimension_estimator_applied": true,
+  "strongest_claim": "The actual T54 canonical T51/T52 quotient-union completions can be adapted into finite causal-set candidates only after the T58 phantom-gap gate passes, but both are too small for T126 manifoldlikeness or named dimension-estimator use.",
+  "improved": "T154 removes a placeholder in the S1/T126 chain: T126 now has a direct executable bridge from T54 completions and T58 gap checks, rather than only synthetic controls and prose dependencies.",
+  "weakened": "T51 and T52 are not current spacetime-reconstruction witnesses. They are three- and four-event finite causal-set candidates whose positive content stops at the causal-set gate.",
+  "falsification_condition": "T154 fails if the adapter changes the T54 event-finality order, if T58 exact-match extension is not required before phantom-gap resolution, or if a sub-scale finite colimit is legitimately promoted to manifoldlike evidence without a declared dimension, sprinkling, locality, or continuum-limit diagnostic.",
+  "s1_update": "S1 remains open_formal_target. Actual T54/T58 colimits now enter the T126 screen, but the current canonical examples are only small causal-set candidates and are blocked before manifold claims.",
+  "claim_ledger_update": "Add T154 to S1: T54 canonical T51/T52 completions pass through a T58 well-formed phantom-gap gate into T126, where both are classified insufficient_scale. This makes the finite-to-spacetime bridge more executable while weakening any T51/T52 spacetime read.",
+  "open_blocker": "No actual finality colimit in the current T54/T58 family is large enough to apply a named causal-set dimension estimator, sprinkling diagnostic, locality test, faithful embedding theorem, or continuum-limit argument.",
+  "suggested_next": "Construct a larger T54-style canonical colimit with at least the T126 minimum scale, then compare it to a declared Myrheim-Meyer ordering-fraction target or a named sprinkling/locality diagnostic."
+}

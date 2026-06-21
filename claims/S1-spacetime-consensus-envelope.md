@@ -49,6 +49,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
 - [T126: Finality-Colimit Causal-Set Embeddability Audit](../tests/T126-finality-colimit-causal-set-embeddability.md)
+- [T154: T54/T58-to-T126 Bridge](../tests/T154-t54-t58-t126-bridge.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -95,6 +96,18 @@ The strongest positive T126 result is only `passes_filter_only`. Valid
 finality posets can still fail hub, interval-profile, rank/width, or local
 dimension-profile screens. Passing T126 does not derive a manifold, metric,
 Lorentzian geometry, GR, or a continuum limit.
+
+## T154 Direct Colimit Bridge
+
+[T154](../tests/T154-t54-t58-t126-bridge.md) connects the actual T54
+canonical T51/T52 quotient-union completions to T126 after the T58
+phantom-gap well-formedness gate. Both become finite causal-set candidates,
+but both are classified `insufficient_scale`.
+
+This weakens any reading that T51/T52 already supply spacetime-facing
+evidence. They are currently causal-set gate controls only, not
+manifoldlikeness, dimension-estimator, sprinkling, locality, embedding, or
+continuum-limit witnesses.
 
 ## T153 Lorentzian Absorber Gate
 

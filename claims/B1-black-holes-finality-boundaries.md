@@ -47,6 +47,19 @@ complementarity, Page-curve, quantum-extremal-surface, or unitary-evaporation
 questions are in scope, the relevant native physics must be declared before
 B1 says anything about recoverability.
 
+## T153 Lorentzian Causal-Diamond Screen
+
+[T153](../tests/T153-lorentzian-causal-diamond-screen.md) replaces the T151
+record-channel proxy with a small 1+1 Lorentzian absorber. Direct-classical
+access and reconstructability splits are absorbed when they track causal pasts,
+changed access diamonds, or domains of dependence.
+
+This keeps B1 in translation-residue status. Horizon language remains safe only
+as ordinary causal-access bookkeeping unless a future model declares a native
+black-hole information capability not reducible to direct classical
+reachability, domain-of-dependence data, or the standard black-hole absorber
+framework.
+
 ### Boundary Permeability Spectrum
 
 Event horizons are best read as one extreme of a continuous boundary-permeability parameter rather than a category of their own. At the hard extreme, classical record export is one-way and capped (the horizon). Softer boundaries permit bidirectional record exchange with a change in record character. The heliopause is a worked soft case: interstellar cosmic rays cross inward and solar particles cross outward, and records change character as they cross. Stating soft versus hard as a measurable export asymmetry across the boundary, rather than as a binary label, keeps B1 honest. If every boundary turns out bidirectional at some scale with no privileged threshold, that is the informative result: permeability is continuous and should enter B1 as a parameter. See [Heliosphere As A Finality Domain](../explorations/heliosphere-as-finality-domain.md).
@@ -64,9 +77,12 @@ Event horizons are best read as one extreme of a continuous boundary-permeabilit
 - [T4: Black-Hole Causal Access Boundary](../tests/T4-black-hole-causal-access-boundary.md)
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
+- [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
 ## Contribution Needed
 
-Add a Lorentzian causal-diamond or domain-of-dependence version of T151. Then
-check whether any TaF-specific residue survives once ordinary causal
-reachability and native black-hole information frameworks are granted.
+T153 supplies the Lorentzian causal-diamond/domain-of-dependence version of
+T151 and finds no TaF-specific residue in the tested direct-classical screen.
+Reopen B1 only with a native black-hole information capability or named metric
+witness not absorbed by ordinary causal reachability and domain-of-dependence
+data.

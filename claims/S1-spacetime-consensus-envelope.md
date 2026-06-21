@@ -49,6 +49,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
+- [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
 ## Contribution Needed
 
@@ -81,3 +82,16 @@ must also type:
 
 Without those maps, "consensus envelope" remains underdeclared and risks
 smuggling in a global synchronization layer.
+
+## T153 Lorentzian Absorber Gate
+
+[T153](../tests/T153-lorentzian-causal-diamond-screen.md) weakens any S1
+reading that relies only on access or reconstructability splits. In the tested
+1+1 controls, verdicts factor through causal pasts, access diamonds, spacelike
+separation with common futures, and domains of dependence.
+
+Future S1 work must therefore match the Lorentzian causal relation, observer
+world tube, access diamond, record channels, and domain-of-dependence inputs
+before claiming a finality-colimit residue. A verdict split caused by changed
+causal data is standard spacetime causal structure, not evidence that S1 has
+derived spacetime.

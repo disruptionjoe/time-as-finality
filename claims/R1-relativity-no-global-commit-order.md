@@ -61,6 +61,12 @@ stronger relation. R1 may separate those relations, but it must not treat remote
 sources as unobserved, unreal, or absent merely because the observer cannot
 participate locally.
 
+T153 replaces the T151 graph proxy with a small 1+1 Lorentzian screen. Remote
+signals remain causal record access, spacelike events are not given an
+invariant order, and later comparison is allowed only inside a common future.
+This supports R1 only as locality discipline: no global commit order is needed,
+but no replacement for invariant causal structure is supplied.
+
 ## How It Could Fail
 
 - The analogy hides rather than clarifies spacetime geometry.
@@ -79,6 +85,7 @@ participate locally.
 - [T44: Local Mechanism Identifiability Audit](../tests/T44-local-mechanism-identifiability.md)
 - [T46: Open Causal Scarcity And Closed Synchronization Boundary](../tests/T46-open-causal-scarcity-synchronization-boundary.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
+- [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
 ## Contribution Needed
 

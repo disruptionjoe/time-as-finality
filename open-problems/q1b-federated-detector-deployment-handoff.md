@@ -35,7 +35,8 @@ drift.
 
 The live question is not whether a lab has accurate time tags. The question is
 whether the lab can precommit the full evidence object without collapsing the
-archive and trust-audit roles into self-certification.
+archive and trust-audit roles into self-certification, including hidden
+collapses through shared critical control roots.
 
 ## Issue Draft
 
@@ -71,11 +72,13 @@ Before the first detector event, the deployment must freeze:
 3. T121/T133 wrapper-field commitments for the claimed tier.
 4. A T100-compatible authority partition with at least four non-conflicting
    domains.
-5. A raw-payload export rule, not observed payload values.
-6. Hostile-control plan for replay/spoof, perturbation/back-action,
+5. A T161 control-root map for manifest registration, archive mutation, audit
+   attestation, publication release, and revocation control.
+6. A raw-payload export rule, not observed payload values.
+7. Hostile-control plan for replay/spoof, perturbation/back-action,
    provenance-DAG truncation or false ancestry, signature/key failure, and
    delayed publication.
-7. Top-level manifest hash and timestamp before any event data are inspected.
+8. Top-level manifest hash and timestamp before any event data are inspected.
 
 ### Authority Partition Required
 
@@ -90,8 +93,11 @@ trust_auditor
 ```
 
 T100 permits a few four-domain merges, but the trust auditor must remain
-independent. Any workflow merging archive custody and trust audit is null for
-Q1B unless the packet design is changed and re-audited before data.
+independent. T161 adds that nominal role labels are insufficient when critical
+control roots are shared. Any workflow merging archive custody and trust audit,
+or sharing manifest/archive/audit/publication/revocation roots in a way that
+collapses the effective partition, is null for Q1B unless the packet design is
+changed and re-audited before data.
 
 ### After-data Packet Required
 
@@ -106,6 +112,8 @@ After event collection, the group must publish or make reviewable:
 7. Publication timing and immutable archive rows.
 8. Reconstruction-path, witness-reference, revocation, and challenge-state rows
    if the claimed tier is `claim_review`.
+9. Enough key/root provenance to audit whether the declared authority split was
+   operationally real rather than nominal only.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -130,6 +138,8 @@ Treat the route as null for Q1B if any of these occur:
 - The claimed tier changes after data.
 - Schema, wrapper policy, authority partition, or export rules drift after the
   manifest hash.
+- The nominal authority split hides shared critical control roots that collapse
+  the effective partition.
 - Archive custody and trust audit are controlled by the same authority.
 - The payload field contains observed detector values before the event
   boundary.
@@ -139,10 +149,11 @@ Treat the route as null for Q1B if any of these occur:
 ## Decision Rule
 
 If no named group will sign the pre-data manifest with independent archive and
-trust-audit roles, Q1B should remain externally blocked and should not receive
-additional internal toy-model work. Future autonomous runs should prefer
-thermodynamic-arrow, spacetime-reconstruction, or formal-machinery targets
-unless a concrete Q1B signatory appears.
+trust-audit roles and an admissible T161 control-root map, Q1B should remain
+externally blocked and should not receive additional internal toy-model work.
+Future autonomous runs should prefer thermodynamic-arrow,
+spacetime-reconstruction, or formal-machinery targets unless a concrete Q1B
+signatory appears.
 
 If a group can sign the manifest but refuses event-level packet review after
 collection, Q1B remains a scaffold-only protocol and gains no empirical
@@ -167,5 +178,5 @@ stay below active quantum-measurement work.
 
 Q1B remains `externally_blocked`. The next non-null artifact is not another
 model; it is a named detector deployment that signs the T136/T138 manifest
-pre-data and later supplies real event-level packet rows. Without that, Q1B is
-an admissibility scaffold only.
+pre-data, exposes a T161-valid control-root map, and later supplies real
+event-level packet rows. Without that, Q1B is an admissibility scaffold only.

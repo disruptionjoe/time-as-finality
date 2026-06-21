@@ -1,0 +1,147 @@
+{
+  "critical_control_kinds": [
+    "manifest_registration",
+    "archive_write",
+    "audit_attestation",
+    "publication_release",
+    "revocation_registry"
+  ],
+  "audits": [
+    {
+      "profile_name": "four_domain_distinct_critical_roots",
+      "nominal_profile_name": "merge_analysis_governor+instrument_operator",
+      "effective_profile_name": "merge_analysis_governor+instrument_operator",
+      "nominal_authority_count": 4,
+      "effective_authority_count": 4,
+      "nominal_admissible": true,
+      "effective_admissible": true,
+      "verdict": "control_roots_preserve_nominal_independence",
+      "shared_critical_roots": [],
+      "ignored_noncritical_roots": [],
+      "effective_partition": [
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ],
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ]
+      ],
+      "failure_reasons": [],
+      "interpretation": "four_domain_distinct_critical_roots preserves its nominal authority split because no critical control root merges distinct domains."
+    },
+    {
+      "profile_name": "five_domain_shared_archive_audit_hsm",
+      "nominal_profile_name": "fully_separated_five_domain_profile",
+      "effective_profile_name": "merge_archive_custodian+trust_auditor",
+      "nominal_authority_count": 5,
+      "effective_authority_count": 4,
+      "nominal_admissible": true,
+      "effective_admissible": false,
+      "verdict": "hidden_control_root_merge",
+      "shared_critical_roots": [
+        "root_shared_archive_audit_hsm:archive_custodian+trust_auditor:archive_write+audit_attestation"
+      ],
+      "ignored_noncritical_roots": [],
+      "effective_partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "failure_reasons": [
+        "shared_critical_control_root_collapses_authority_partition"
+      ],
+      "interpretation": "five_domain_shared_archive_audit_hsm is null for Q1B because shared critical roots collapse the effective authority partition: root_shared_archive_audit_hsm:archive_custodian+trust_auditor:archive_write+audit_attestation."
+    },
+    {
+      "profile_name": "five_domain_shared_governance_archive_release_root",
+      "nominal_profile_name": "fully_separated_five_domain_profile",
+      "effective_profile_name": "merge_analysis_governor+archive_custodian",
+      "nominal_authority_count": 5,
+      "effective_authority_count": 4,
+      "nominal_admissible": true,
+      "effective_admissible": false,
+      "verdict": "hidden_control_root_merge",
+      "shared_critical_roots": [
+        "root_shared_release_gate:analysis_governor+archive_custodian:manifest_registration+publication_release"
+      ],
+      "ignored_noncritical_roots": [],
+      "effective_partition": [
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ],
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ]
+      ],
+      "failure_reasons": [
+        "shared_critical_control_root_collapses_authority_partition"
+      ],
+      "interpretation": "five_domain_shared_governance_archive_release_root is null for Q1B because shared critical roots collapse the effective authority partition: root_shared_release_gate:analysis_governor+archive_custodian:manifest_registration+publication_release."
+    },
+    {
+      "profile_name": "five_domain_shared_noncritical_dashboard",
+      "nominal_profile_name": "fully_separated_five_domain_profile",
+      "effective_profile_name": "fully_separated_five_domain_profile",
+      "nominal_authority_count": 5,
+      "effective_authority_count": 5,
+      "nominal_admissible": true,
+      "effective_admissible": true,
+      "verdict": "control_roots_preserve_nominal_independence",
+      "shared_critical_roots": [],
+      "ignored_noncritical_roots": [
+        "root_shared_dashboard:analysis_governor+trust_auditor:dashboard_observability"
+      ],
+      "effective_partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "failure_reasons": [],
+      "interpretation": "five_domain_shared_noncritical_dashboard preserves its nominal authority split because no critical control root merges distinct domains."
+    }
+  ],
+  "strongest_claim": "Nominal authority labels are insufficient for Q1B. A T100/T138-valid role partition is null if critical control roots are shared, because the effective authority partition collapses back into self-certifying governance, archive, or audit control.",
+  "improved": "T161 converts an implicit governance loophole into an executable screen. Detector proposals can now be rejected before data if their archive, audit, publication, manifest, or revocation control roots quietly merge nominally separate authorities.",
+  "weakened": "This weakens Q1B again. A workflow does not clear the detector handoff merely by naming four or five roles; it must also show that critical packet-control roots do not collapse those roles in practice.",
+  "falsification_condition": "T161 fails if shared critical control roots can coexist with an honest detector packet while preserving independent archive and trust audit powers, or if only noncritical shared services are sufficient to collapse the effective authority partition.",
+  "q1b_update": "Q1B remains externally blocked. A future detector deployment must freeze not only a T100-compatible nominal authority partition but also evidence that manifest registration, archive mutation, audit attestation, publication release, and revocation roots are not shared in a way that collapses the effective partition.",
+  "claim_ledger_update": "Add T161 to Q1B: nominal four- or five-domain staffing is null when critical control roots are shared. The operative object is the effective authority partition after quotienting by shared critical packet-control roots.",
+  "open_blocker": "No named detector workflow in the repo currently exposes its critical control-root map well enough to prove that nominal authority separation is operationally real.",
+  "recommended_next": "Extend the Q1B handoff so a proposed deployment must disclose its manifest-registration, archive-write, audit-attestation, publication, and revocation control roots alongside the nominal authority roles."
+}

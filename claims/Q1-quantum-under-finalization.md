@@ -572,3 +572,8 @@ measurement effort unless a concrete platform can satisfy the
 freeze the full `R, A, H, V = g(H), L` tuple before analysis, name a live T146
 architecture class, and later expose the event-level screens required by T149
 and T150.
+
+For Q1B, do not treat nominal role labels as enough. T161 adds that a proposed
+detector deployment must expose its critical manifest-registration, archive,
+audit, publication, and revocation control roots and still preserve an
+admissible effective authority partition after quotienting by shared roots.

@@ -30,7 +30,10 @@ the first detector event. T138 turns that manifest into a human-fillable
 workflow gate: common single-lab photonic coincidence and single-lab
 public-archive repairs are null if post hoc or authority-collapsed; only a
 federated pre-data scaffold clears T136, and that remains non-evidence until
-real rows populate the bound packet.
+real rows populate the bound packet. T161 closes the nominal-federation
+loophole: role labels alone do not count if critical manifest, archive, audit,
+publication, or revocation control roots are shared, because those hidden
+merges collapse the effective authority partition back into self-certification.
 
 ## Earned Content
 
@@ -57,6 +60,11 @@ real rows populate the bound packet.
   photonic coincidence workflow and a public-archive repair with merged
   authorities are null, while a federated pre-data scaffold only clears
   claim-review readiness as a scaffold.
+- T161 shows that even a nominally admissible T100/T138 authority split is
+  null if critical control roots are shared across those roles. The operative
+  object is the effective authority partition after quotienting by shared
+  manifest-registration, archive-write, audit-attestation, publication, and
+  revocation roots.
 
 ## Not Earned
 
@@ -66,21 +74,26 @@ real rows populate the bound packet.
 - No named real lab has signed the federated T138/T136 template pre-data.
 - No upgrade from dashboard summaries, fixture counts, or post hoc
   provenance labels.
+- No named real lab in the repo exposes a critical control-root map proving
+  that its nominal authority split is operationally independent.
 
 ## Falsification Or Demotion Condition
 
 If no named realistic lab workflow can sign and freeze the federated T138/T136
 manifest before data collection, including the claimed tier, wrapper fields,
-and T100-compatible authority partition, then detector provenance should be
-demoted below the active Q1 frontier.
+T100-compatible nominal authority partition, and a critical control-root map
+whose effective partition remains admissible under T161, then detector
+provenance should be demoted below the active Q1 frontier.
 
 ## Reinstatement Condition
 
 The branch becomes live only when a concrete deployment publishes a T136
 manifest satisfying the T138 workflow-fit gate before event collection, fills
 the bound event-level packet without changing schema, authority, tier, or
-wrapper policy, passes the T87/T97/T100 and T121/T133 gates, and then yields a
-verdict that survives the T83 null criterion.
+wrapper policy, exposes enough control-root data to show that the T161
+effective authority partition remains admissible, passes the T87/T97/T100 and
+T121/T133 gates, and then yields a verdict that survives the T83 null
+criterion.
 
 ## Operational Handoff
 
@@ -105,3 +118,4 @@ trust-audit roles before detector events.
 - [T134: Detector Dry-Run Tier Gate](../tests/T134-detector-dry-run-tier-gate.md)
 - [T136: Detector Pre-registration Manifest](../tests/T136-detector-preregistration-manifest.md)
 - [T138: Detector Manifest Workflow Fit](../tests/T138-detector-manifest-workflow-fit.md)
+- [T161: Detector Control-Root Independence](../tests/T161-detector-control-root-independence.md)

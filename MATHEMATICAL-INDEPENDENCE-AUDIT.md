@@ -220,6 +220,22 @@ persona-governance notes, and TaF-specific stress tests; then send the neutral
 TF1/LossKernel and capability-projection factorization statements to an
 external mathematics or theoretical-CS reviewer.
 
+## Staleness Update - 2026-06-21 Late Stewardship Run
+
+The audit remains stale relative to the current test registry. The repository
+now lists 162 `T*.md` test notes, up by 14 since the earlier 2026-06-21
+stewardship note. Independent motivation remains **UNKNOWN**: the added work
+mostly tightens S1 causal-set diagnostic guardrails, Q1C enlarged-instrument
+admissibility, H7 substrate-family null screens, Q1B authority-root
+independence, and Q1A objectivity absorption. None of that replaces external
+mathematical motivation.
+
+Minimum next audit action: produce v0.8 as a post-T161 audit that separates
+neutral theorem-ladder progress from S1 calibration/fragility screens,
+quantum-branch admissibility gates, H7 absorber triage, and persona exploratory
+notes; then send the neutral TF1/LossKernel and capability-projection
+factorization statements to an external mathematics or theoretical-CS reviewer.
+
 ---
 
 ## What Would Advance Independence
@@ -256,3 +272,4 @@ external mathematics or theoretical-CS reviewer.
 | 2026-06-20 | late staleness note | Test registry has grown to 112 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T109 v0.7 audit that incorporates LossKernel external-review downgrades. |
 | 2026-06-20 | stewardship staleness note | Test registry has grown to 134 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T133/post-P11 v0.8 audit plus external review of neutral TF1/LossKernel and capability-projection factorization statements. |
 | 2026-06-21 | stewardship staleness note | Test registry has grown to 148 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T147 v0.8 audit that separates neutral theorem-ladder progress from branch-gate closure, absorber calibration, persona-governance notes, and TaF-specific stress tests. |
+| 2026-06-21 | late stewardship staleness note | Test registry has grown to 162 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T161 v0.8 audit that separates neutral theorem-ladder progress from S1 calibration screens, quantum-branch gates, H7 absorber triage, and persona exploratory notes. |

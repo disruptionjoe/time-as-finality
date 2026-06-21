@@ -119,16 +119,18 @@ to T130-T132.
 
 Recent P10/P11 persona-goal runs and the Candidate North Star capability
 projection folder are useful parking material, not sequence changes. Later
-P21-P27 persona-goal runs and the North Star v0.8 physics backlog are likewise
-geometry-probe or absorber-pressure material: useful for kill matrices,
-known-theory capability audits, gauge gates, finite-to-smooth bridge gates,
-operation/resource ledgers, philosophy-of-science kill criteria, and
-resource-theory calibration, but not replacements for the T125 plus TF1/S1 gate
-work. T149-T155, N8-N9, and the Q1C/H7 handoffs are branch-gate closures,
-absorber maps, or demotion/testability artifacts, not a new roadmap sequence.
-They should inform future Q1C, causal-access, S1, and H7 external asks without
-promoting capability-projection or North Star physics language into the claim
-ledger.
+P21-P31 persona-goal runs and the North Star v0.8 physics backlog are likewise
+geometry-probe, absorber-pressure, or representation-boundary material: useful
+for kill matrices, known-theory capability audits, gauge gates,
+finite-to-smooth bridge gates, operation/resource ledgers,
+philosophy-of-science kill criteria, resource-theory calibration, biological
+and neuroscience operationalization filters, and representation-invariance
+guardrails, but not replacements for the T125 plus TF1/S1 gate work. T149-T161,
+N8-N10, and the Q1A/Q1B/Q1C/H7 handoffs are branch-gate closures, absorber
+maps, calibration/fragility screens, or demotion/testability artifacts, not a
+new roadmap sequence. They should inform future Q1A/Q1B/Q1C, causal-access,
+S1, and H7 external asks without promoting capability-projection or North Star
+physics language into the claim ledger.
 
 Promotion gate before any public theorem or paper language:
 

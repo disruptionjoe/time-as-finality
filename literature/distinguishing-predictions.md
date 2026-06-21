@@ -106,6 +106,16 @@ The current Q1A witness is therefore absorbed by provenance-aware fragment
 partitioning and should be treated as admissibility/bookkeeping discipline
 unless another D1 dimension survives the same comparison.
 
+N10 adds the stronger Spectrum Broadcast Structure / strong Quantum Darwinism
+absorber. Independent, mutually agreeing, locally accessible records of a
+pointer observable are already owned by those neighbors once the pointer,
+fragment partition, distinguishability/support bounds, strong independence,
+observer-accessible fragment subset, and provenance partition are granted.
+Q1A is therefore not externally ready as a quantum-objectivity discriminator
+unless a future witness keeps the same SBS/strong-QD data and still splits the
+Q1A verdict through a predeclared physical dimension the neighbor cannot import
+for free.
+
 **Falsification condition for TaF:** If D1-redundancy and R_delta are numerically identical for
 all separable system-environment states under every admissible access boundary
 and independence criterion, D1 adds nothing over quantum Darwinism's existing

@@ -227,9 +227,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P19 - Causal Inference Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T03:52:35-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-035235-p19-causal-inference-detector-dag-audit.md
 - goal: Draw causal DAGs for detector provenance controls and state which
   interventions identify independence, copied dependence, provenance failure, or
   post hoc dashboard artifacts.

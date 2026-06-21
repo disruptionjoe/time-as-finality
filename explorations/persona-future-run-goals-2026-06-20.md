@@ -364,9 +364,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P33 - Cognitive Scientist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T18:05:15.6142458-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-180515-p33-cognitive-scientist-salience-abstraction-filters.md
 - goal: Add salience and abstraction filters to observer access and test whether
   apparent finality changes while event finality stays fixed.
 - ambition: Make cognitive observer boundaries formal without importing mind-first

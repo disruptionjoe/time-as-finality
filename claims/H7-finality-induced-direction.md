@@ -17,7 +17,11 @@ by T80, T82, T84, T106, T110, T116, and T122.
 T128 identifies the smallest finite survivors and keeps the status narrowed.
 T124 adds the reverse-edge grounding gate and blocks unqualified physical-arrow
 readings for the current witness stack. T142 calibrates the T1/T141 survivor
-against reversible uncopy and ordinary erasure/free-energy accounting.
+against reversible uncopy and ordinary erasure/free-energy accounting. T144
+requires future witnesses to declare the reverse-edge class, and T145 shows
+that fixed-accounting D1 topology splits are capability residue rather than
+arrow evidence unless physical deletion remains impossible after full absorber
+accounting.
 
 ## What This Does Not Claim
 
@@ -62,6 +66,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T141: T1 Record-Graph Admissibility Ledger](../tests/T141-t1-record-graph-admissibility-ledger.md)
 - [T142: Thermodynamic Erasure Calibration](../tests/T142-thermodynamic-erasure-calibration.md)
 - [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
+- [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -264,3 +269,21 @@ erasure/free-energy accounting under T142. Authority/provenance loss may matter
 for admissibility and future capability, but it is not thermodynamic
 irreversibility. Only physically typed record deletion remains a plausible
 future physical-arrow class, and no current witness clears that bar.
+
+## T145 Result
+
+[T145](../tests/T145-physical-record-deletion-fixed-accounting.md) screens that
+remaining physical-deletion class under matched absorber data: free-energy
+floor, capacity, sink/export state, observer boundary, provenance, source-copy
+status, and reversible-control access.
+
+The only fixed-accounting split currently present is the T142 same-chain versus
+branch-spread topology split. It can change future operation availability for a
+branch-failure task, but the deletion reverse remains ordinary one-bit erasure
+accounting. That is capability/topology residue, not thermodynamic-arrow
+evidence. The other deletion-shaped cases change erasure work, reversible
+control, sink state, access boundary, or provenance class.
+
+H7's remaining upgrade target is therefore very narrow: a physically typed
+record substrate where a `physical_record_deletion` reverse remains
+constructor-impossible after all of those absorber variables are matched.

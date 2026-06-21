@@ -73,3 +73,11 @@ still be useful, but it does not by itself ground a physical arrow.
 python -m unittest tests.test_thermodynamic_erasure_calibration -v
 python -m models.run_t142
 ```
+
+## Next Gate
+
+[T145](T145-physical-record-deletion-fixed-accounting.md) screens the remaining
+fixed-accounting deletion route. It preserves the D1 topology / future-operation
+split at fixed one-bit erasure floor, but does not treat that split as H7 arrow
+evidence unless the physical deletion reverse is constructor-impossible after
+full accounting.

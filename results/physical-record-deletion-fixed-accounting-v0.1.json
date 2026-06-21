@@ -1,0 +1,111 @@
+{
+  "audits": [
+    {
+      "fixture_id": "same_floor_branch_topology_split",
+      "source": "T142 same-chain copy vs branch-spread copy",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "d1_topology_split": true,
+      "future_operation": "survive_one_branch_failure",
+      "future_operation_split": true,
+      "reverse_status": "ordinary_erasure_accounted",
+      "h7_upgrade_candidate": false,
+      "verdict": "fixed_accounting_capability_split_not_arrow",
+      "interpretation": "same_floor_branch_topology_split preserves a task-specific capability split under matched accounting, but it does not block the deletion reverse. Treat it as FOA/topology residue, not H7 arrow evidence."
+    },
+    {
+      "fixture_id": "correlated_uncopy_vs_blind_reset",
+      "source": "T142 uncopy/erasure split",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "erased_bits",
+        "beta_work_floor",
+        "reversible_control"
+      ],
+      "d1_topology_split": false,
+      "future_operation": "restore_blank_target_without_heat",
+      "future_operation_split": true,
+      "reverse_status": "absorbed_by_reversible_control_and_erasure_cost",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_erasure_work_accounting",
+      "interpretation": "correlated_uncopy_vs_blind_reset is absorbed: The split is real, but it is exactly the standard distinction between retaining the reversible source-copy handle and losing it before blind reset."
+    },
+    {
+      "fixture_id": "one_bit_vs_two_bit_blind_reset",
+      "source": "erasure-cost hostile control",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "erased_bits",
+        "beta_work_floor",
+        "blank_capacity_delta"
+      ],
+      "d1_topology_split": true,
+      "future_operation": "pay_same_blind_reset_floor",
+      "future_operation_split": true,
+      "reverse_status": "absorbed_by_erasure_cost",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_erasure_work_accounting",
+      "interpretation": "one_bit_vs_two_bit_blind_reset is absorbed: Different deletion burden here is just different erased-bit and free-energy accounting."
+    },
+    {
+      "fixture_id": "hidden_sink_export_control",
+      "source": "T106/T116 sink-accounting warning",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "sink_delta"
+      ],
+      "d1_topology_split": false,
+      "future_operation": "recover_deleted_history_from_sink",
+      "future_operation_split": true,
+      "reverse_status": "absorbed_by_sink_state",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_sink_accounting",
+      "interpretation": "hidden_sink_export_control is absorbed: The future-operation split comes from hidden exported history, not from fixed-accounting physical deletion."
+    },
+    {
+      "fixture_id": "observer_access_revocation",
+      "source": "T141 access grant reverse",
+      "reverse_edge_class": "boundary_access_loss",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "d1_topology_split": true,
+      "future_operation": "observer_can_read_record",
+      "future_operation_split": true,
+      "reverse_status": "not_physical_record_deletion",
+      "h7_upgrade_candidate": false,
+      "verdict": "non_deletion_reverse_class",
+      "interpretation": "observer_access_revocation is not physical record deletion. The record support can remain intact; only the observer access boundary changes."
+    },
+    {
+      "fixture_id": "authority_provenance_revocation",
+      "source": "T144 authority/provenance class",
+      "reverse_edge_class": "authority_or_provenance_loss",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "d1_topology_split": true,
+      "future_operation": "use_record_for_claim_review",
+      "future_operation_split": true,
+      "reverse_status": "governance_not_thermodynamic",
+      "h7_upgrade_candidate": false,
+      "verdict": "non_deletion_reverse_class",
+      "interpretation": "authority_provenance_revocation is not physical record deletion. The record can remain materially present while claim-review authority is revoked."
+    }
+  ],
+  "fixed_accounting_capability_splits": [
+    "same_floor_branch_topology_split"
+  ],
+  "h7_arrow_candidates": [],
+  "no_current_fixed_accounting_deletion_arrow": true,
+  "strongest_claim": "At fixed free-energy floor, blank-capacity change, sink state, observer boundary, provenance state, source-copy status, and reversible-control access, the current fixtures contain one real split: branch topology changes future branch-failure robustness. That is a capability/topology residue, not H7 arrow evidence, because the deletion reverse remains ordinary erasure accounting. All arrow-looking deletion splits change an absorber variable or belong to a non-deletion reverse-edge class.",
+  "improved": "T145 turns the T142/T144 open blocker into an executable screen. Future H7 deletion witnesses must now hold the absorber vector fixed and still block the reverse for substrate-native reasons.",
+  "weakened": "The common escape 'D1 topology differs at fixed erasure floor' is not enough for a physical arrow. It can support a task-specific future-operation split, but H7 needs a constructor-impossible physical deletion reverse after full accounting.",
+  "falsification_condition": "T145 fails in H7's favor if a physically typed record substrate exhibits a physical_record_deletion pair with the full absorber vector matched, a task-natural future-operation split, and a reverse status of constructor_impossible_after_full_accounting.",
+  "h7_update": "Add T145 to H7: fixed-accounting D1 topology splits are capability residue unless the physical deletion reverse is impossible after free-energy, capacity, sink, boundary, provenance, source-copy, and reversible-control accounting are matched.",
+  "claim_ledger_update": "T145 screens the only remaining H7 physical-arrow class. At fixed absorber data, the current branch-topology split changes future operation availability but not reverse admissibility. Deletion-like arrow candidates are absorbed by changed erasure work, control handles, sink state, access boundary, or provenance class.",
+  "open_blocker": "No physically typed record substrate currently gives a constructor-impossible physical deletion reverse under matched free-energy, capacity, sink, boundary, provenance, source-copy, and reversible-control data.",
+  "suggested_next": "Either search for a substrate-native physical deletion candidate that clears the T145 gate, or demote H7's paper-facing role to a resource-accounting and reverse-edge audit discipline."
+}

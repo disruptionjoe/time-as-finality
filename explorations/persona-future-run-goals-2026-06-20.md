@@ -297,9 +297,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P26 - Philosophy Of Mathematics Researcher
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T11:01:50-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-110150-p26-philosophy-of-mathematics-losskernel-classification.md
 - goal: Classify LossKernel as object, notation, invariant, methodology, or
   research program, then rewrite one paper abstract in language matching that
   classification.

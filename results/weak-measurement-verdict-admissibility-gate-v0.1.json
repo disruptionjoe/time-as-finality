@@ -1,0 +1,176 @@
+{
+  "audits": [
+    {
+      "name": "typed_extra_environment_candidate",
+      "classification": "candidate_typed_verdict_route",
+      "active_route": true,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The proposal clears T149, names a hidden TaF axis independently of the auxiliary channel, and keeps every verdict class above the support floor.",
+      "required_next": "Bind the typed verdict target to a named monitored-qubit platform."
+    },
+    {
+      "name": "typed_enlarged_instrument_candidate",
+      "classification": "candidate_typed_verdict_route",
+      "active_route": true,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The proposal clears T149, names a hidden TaF axis independently of the auxiliary channel, and keeps every verdict class above the support floor.",
+      "required_next": "Bind the typed verdict target to a named monitored-qubit platform."
+    },
+    {
+      "name": "auxiliary_echo_gerrymander",
+      "classification": "null_auxiliary_defined_verdict",
+      "active_route": false,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The declared hidden axis does not determine the verdict. The verdict is being defined by the auxiliary output rather than inferred from an independently typed TaF target.",
+      "required_next": "Define the verdict as a fixed map from the declared TaF axis."
+    },
+    {
+      "name": "rare_target_gerrymander",
+      "classification": "null_rare_verdict_gerrymander",
+      "active_route": false,
+      "record_only_risk": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "reason": "The positive lift comes from a verdict class with too little support to count as an honest predeclared Q1C target.",
+      "required_next": "Use a verdict partition whose smallest class clears the support floor."
+    },
+    {
+      "name": "posthoc_target_choice",
+      "classification": "null_posthoc_verdict_target",
+      "active_route": false,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The verdict target is chosen after analysis, so the positive lift is not a pre-registered Q1C result.",
+      "required_next": "Predeclare the verdict class before auxiliary data are scored."
+    },
+    {
+      "name": "same_instrument_positive_lift",
+      "classification": "null_t149_architecture_not_cleared",
+      "active_route": false,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The proposal does not clear the T149 architecture gate, so verdict typing cannot rescue it.",
+      "required_next": "Name the extra structure or admit an instrument enlargement."
+    },
+    {
+      "name": "current_frontier",
+      "classification": "null_t149_architecture_not_cleared",
+      "active_route": false,
+      "record_only_risk": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "record_auxiliary_risk": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "conditional_lift": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "smallest_verdict_support": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "reason": "The proposal does not clear the T149 architecture gate, so verdict typing cannot rescue it.",
+      "required_next": "Name the extra structure or admit an instrument enlargement."
+    }
+  ],
+  "all_null_controls_rejected": true,
+  "live_cases_clear_target_gate": true,
+  "current_frontier_active": false,
+  "strongest_claim": "Positive conditional lift is still not enough for Q1C. The verdict must be a predeclared map from an independently typed TaF axis, not an auxiliary-defined label or a vanishingly rare event class.",
+  "improved": "T150 closes the verdict-gerrymandering loophole left by T149. Future Q1C proposals must declare the target axis, verdict map, and support floor before auxiliary data are allowed to matter.",
+  "weakened": "This weakens Q1C again: auxiliary-echo labels, post hoc target choice, and rare-event verdict partitions no longer count as positive weak-measurement evidence even if they show decision lift.",
+  "falsification_condition": "T150 fails if a serious Q1C platform needs neither an independently typed TaF axis nor a non-gerrymandered verdict partition to produce its positive lift, or if an auxiliary-defined verdict is still judged an honest Q1C target.",
+  "q1c_update": "Q1C remains dormant. Reopen it only with a named monitored-qubit platform that clears T149 and uses a predeclared verdict class induced from an independently typed TaF axis with nontrivial support.",
+  "claim_ledger_update": "Add T150 to Q1C: positive lift must target a predeclared TaF verdict map rather than an auxiliary-defined or rare-event label. Verdict gerrymanders are null.",
+  "open_blocker": "The repo still has no named monitored-qubit platform that supplies a T149-cleared architecture together with an independently typed TaF target axis and non-gerrymandered verdict partition.",
+  "recommended_next": "Only consider future Q1C proposals that specify a concrete physical axis H and a fixed verdict map V=g(H) before scoring auxiliary data."
+}

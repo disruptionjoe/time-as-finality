@@ -63,6 +63,10 @@ clear the independent-axis gate.
   predeclared decision-risk lift for the Q1C verdict, and the source of that
   lift must be typed as extra environment structure or an explicit instrument
   enlargement with a preserved comparison target.
+- T150 closes the verdict-gerrymandering loophole left by T149: positive lift
+  counts only when the Q1C verdict is a predeclared map from an independently
+  typed TaF axis with nontrivial class support, not when the verdict is merely
+  an auxiliary-defined label, a rare-event partition, or a post hoc target.
 
 ## Not Earned
 
@@ -70,6 +74,9 @@ clear the independent-axis gate.
 - No independent branch-support observable is named.
 - No independent undo-cost meter is named.
 - No postselected reversal result counts as a TaF verdict change.
+- No named monitored-qubit platform in the repo supplies a T149-cleared
+  auxiliary architecture plus an independently typed TaF verdict target with
+  non-gerrymandered support.
 
 ## Falsification Or Demotion Condition
 
@@ -82,7 +89,10 @@ record was fixed at a coarsened summary rather than at the full event-level
 trajectory. It also holds for same-instrument auxiliary channels whose verdict
 content is screened off once that full event-level trajectory is treated as the
 ordinary instrument log, or which never name extra environment structure or an
-explicit instrument enlargement in the first place.
+explicit instrument enlargement in the first place. It also holds when a
+proposal's apparent positive lift depends on defining the verdict directly from
+the auxiliary meter, choosing the verdict target after analysis, or isolating a
+vanishingly rare verdict class.
 
 ## Reinstatement Condition
 
@@ -91,13 +101,15 @@ axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
-Operationally, the platform must declare the full ordinary record `R`, auxiliary
-channel `A`, verdict class `V`, and loss rule, then show positive decision-risk
-lift from `(R,A)` over `R` alone. If the proposal enlarges the monitored
-instrument, that enlargement and the preserved comparison target must be
-declared explicitly in advance. If it does not enlarge the instrument, it must
-instead identify extra environment or detector structure whose verdict content
-survives conditioning on the full ordinary event log.
+Operationally, the platform must declare the full ordinary record `R`,
+auxiliary channel `A`, independently typed TaF axis `H`, verdict map `V=g(H)`,
+and loss rule, then show positive decision-risk lift from `(R,A)` over `R`
+alone. Each verdict class must have nontrivial predeclared support. If the
+proposal enlarges the monitored instrument, that enlargement and the preserved
+comparison target must be declared explicitly in advance. If it does not
+enlarge the instrument, it must instead identify extra environment or detector
+structure whose verdict content survives conditioning on the full ordinary
+event log.
 
 ## Primary Evidence
 
@@ -112,3 +124,4 @@ survives conditioning on the full ordinary event log.
 - [T143: Weak-Measurement Instrument Sufficiency Obstruction](../tests/T143-weak-measurement-instrument-sufficiency-obstruction.md)
 - [T146: Weak-Measurement Escape Architecture Gate](../tests/T146-weak-measurement-escape-architecture-gate.md)
 - [T149: Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
+- [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)

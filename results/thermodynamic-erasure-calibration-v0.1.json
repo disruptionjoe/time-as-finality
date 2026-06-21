@@ -1,0 +1,206 @@
+{
+  "t1_calibrations": [
+    {
+      "case_id": "access_grant_existing_record",
+      "before_profile": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "after_profile": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "d1_delta": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "strict_forward_increase": true,
+      "reverse_modes": [
+        {
+          "mode_id": "boundary_revoke",
+          "description": "Reverse the D1 increase by changing observer access while leaving the physical records intact.",
+          "erased_bits": 0,
+          "beta_work_lower_bound": 0.0,
+          "required_access": [
+            "access-control state"
+          ],
+          "standard_absorber": "observer-boundary/accounting state",
+          "verdict": "reversible_boundary_change"
+        }
+      ],
+      "overall_verdict": "boundary_absorbed",
+      "reason": "The strict D1 increase is an access-profile change. It has no thermodynamic arrow content once access-control state is part of the substrate."
+    },
+    {
+      "case_id": "copy_to_fresh_holder",
+      "before_profile": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "after_profile": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "d1_delta": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "strict_forward_increase": true,
+      "reverse_modes": [
+        {
+          "mode_id": "correlated_uncopy",
+          "description": "Use the source-copy correlation and reversible control to uncopy the added record into a blank target rather than blindly reset it.",
+          "erased_bits": 0,
+          "beta_work_lower_bound": 0.0,
+          "required_access": [
+            "source record",
+            "target copy",
+            "copy provenance",
+            "reversible control operation"
+          ],
+          "standard_absorber": "reversible computing with full correlation access",
+          "verdict": "reversible_when_full_microstate_available"
+        },
+        {
+          "mode_id": "blind_reset",
+          "description": "Reset or overwrite the added record without using the source-copy correlation as a reversible uncopy handle.",
+          "erased_bits": 1,
+          "beta_work_lower_bound": 0.6931471805599453,
+          "required_access": [
+            "heat bath",
+            "reset protocol",
+            "blank-state target"
+          ],
+          "standard_absorber": "Landauer-style erasure/free-energy accounting",
+          "verdict": "standard_erasure_cost_if_uncopy_unavailable"
+        }
+      ],
+      "overall_verdict": "reversible_or_landauer_absorbed",
+      "reason": "The copy-based D1 increase has two ordinary reversals: zero blind-erasure cost if full correlation/control access permits uncopy, or a one-bit erasure/free-energy ledger if the copy is blindly reset."
+    },
+    {
+      "case_id": "branch_spread_copy",
+      "before_profile": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "after_profile": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "d1_delta": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "strict_forward_increase": true,
+      "reverse_modes": [
+        {
+          "mode_id": "correlated_uncopy",
+          "description": "Use the source-copy correlation and reversible control to uncopy the added record into a blank target rather than blindly reset it.",
+          "erased_bits": 0,
+          "beta_work_lower_bound": 0.0,
+          "required_access": [
+            "source record",
+            "target copy",
+            "copy provenance",
+            "reversible control operation"
+          ],
+          "standard_absorber": "reversible computing with full correlation access",
+          "verdict": "reversible_when_full_microstate_available"
+        },
+        {
+          "mode_id": "blind_reset",
+          "description": "Reset or overwrite the added record without using the source-copy correlation as a reversible uncopy handle.",
+          "erased_bits": 1,
+          "beta_work_lower_bound": 0.6931471805599453,
+          "required_access": [
+            "heat bath",
+            "reset protocol",
+            "blank-state target"
+          ],
+          "standard_absorber": "Landauer-style erasure/free-energy accounting",
+          "verdict": "standard_erasure_cost_if_uncopy_unavailable"
+        }
+      ],
+      "overall_verdict": "reversible_or_landauer_absorbed",
+      "reason": "The copy-based D1 increase has two ordinary reversals: zero blind-erasure cost if full correlation/control access permits uncopy, or a one-bit erasure/free-energy ledger if the copy is blindly reset."
+    },
+    {
+      "case_id": "access_loss_without_erasure_control",
+      "before_profile": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "after_profile": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "d1_delta": [
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "strict_forward_increase": false,
+      "reverse_modes": [
+        {
+          "mode_id": "boundary_revoke",
+          "description": "Reverse the D1 increase by changing observer access while leaving the physical records intact.",
+          "erased_bits": 0,
+          "beta_work_lower_bound": 0.0,
+          "required_access": [
+            "access-control state"
+          ],
+          "standard_absorber": "observer-boundary/accounting state",
+          "verdict": "reversible_boundary_change"
+        }
+      ],
+      "overall_verdict": "non_arrow_control",
+      "reason": "The control is not a strict forward D1 increase and therefore does not supply an arrow-bearing calibration case."
+    }
+  ],
+  "resource_drawdown_calibration": {
+    "model_id": "test_c_resource_drawdown",
+    "source": "T128 minimal living arrow",
+    "resource_units_drawn_down": 3,
+    "physical_unit_named": false,
+    "blank_memory_interpretation": "If each unit is a blank record cell, recharge/reset is ordinary memory-preparation and erasure/free-energy accounting. If the unit is not physically typed, the finite drawdown is only an accounting token.",
+    "verdict": "not_physical_without_named_free_energy_or_capacity_unit",
+    "reason": "The T128 survivor becomes physics-facing only after the resource unit is mapped to a real free-energy, blank-memory, fuel, sink, or capacity variable. Otherwise it is a formal drawdown coordinate."
+  },
+  "no_t1_strict_increase_has_independent_thermo_arrow": true,
+  "copy_reverses_have_zero_heat_uncopy_mode": true,
+  "copy_reverses_have_landauer_reset_mode": true,
+  "same_landauer_floor_different_d1_topology": true,
+  "h7_upgrade_status": "thermodynamic_absorption_not_upgrade",
+  "strongest_claim": "The remaining H7 copy/branch-support survivors are absorbed by standard thermodynamic distinctions. With full source-copy correlation and reversible control they can be uncomputed without blind erasure; without that access, resetting the added record is ordinary erasure/free-energy accounting. D1 still distinguishes record topology at fixed erasure floor, but that does not by itself ground a physical arrow.",
+  "improved": "T142 separates three notions that were easy to conflate: D1 record topology, reversible uncopy under full microstate access, and blind erasure cost under coarse-grained reset. This makes the H7 thermodynamic absorber explicit.",
+  "weakened": "H7 cannot use T1 copy or branch-spread gains as independent thermodynamic-arrow evidence. Their reverse is either reversible with the correlation/control handle or absorbed by ordinary erasure/free-energy accounting. The T128 resource drawdown also stays formal until its resource unit is physically typed.",
+  "falsification_condition": "T142 fails in H7's favor only if a physically typed record substrate gives a strict D1 increase whose reverse remains inadmissible after full reversible-correlation access, heat-bath erasure cost, blank-capacity use, sink state, and boundary conditions are all included and matched.",
+  "h7_update": "Add T142 to H7: T1 copy/branch gains are thermodynamically absorbed, not arrow evidence. D1 topology can vary at fixed one-bit erasure floor, but reverse admissibility is still settled by reversible uncopy access or standard erasure/free-energy accounting.",
+  "claim_ledger_update": "T142 calibrates the T141/T128 survivor against thermodynamic absorbers. Access grants are boundary changes; copied records can be reversed by correlated uncopy when the full handle remains, or by ordinary one-bit erasure/free-energy accounting when blindly reset. H7 remains a resource-accounting/constructor lemma, not a thermodynamic-arrow derivation.",
+  "open_blocker": "Find a physically typed record substrate where D1 topology changes future operation availability at fixed free-energy, capacity, sink, boundary, provenance, and reversible-control data.",
+  "suggested_next": "Either demote H7's paper-facing label to resource-accounting lemma, or attempt a non-equilibrium physical model with named free-energy and capacity variables fixed before D1 scoring."
+}

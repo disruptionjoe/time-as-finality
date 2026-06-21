@@ -30,6 +30,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | open: specification-only finite causal-set/manifoldlikeness filter for canonical finality colimits, with explicit non-embeddability modes and no spacetime derivation |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
+| [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
 | [T117](tests/T117-accessible-state-space-separation.md) | Accessible State Space separation audit | T115, H7, TF1, reconstruction debt | implemented: ASP separates from coarse entropy/information/finality/viability/persistence metrics, but is mostly absorbed by enriched reachable-state and opportunity-set theories |
@@ -158,6 +159,7 @@ python -m models.run_t116
 python -m models.run_t122
 python -m models.run_t124
 python -m models.run_t128
+python -m models.run_t142
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
@@ -255,6 +257,7 @@ The suites use only Python's standard library. Evidence records:
 - [Stationary Markov Monotone Obstruction v0.1 Results](results/stationary-markov-monotone-obstruction-v0.1-results.md)
 - [Constructor-Admissibility Grounding Audit v0.1 Results](results/constructor-admissibility-grounding-audit-v0.1-results.md)
 - [Minimal Living Arrow v0.1 Results](results/minimal-living-arrow-v0.1-results.md)
+- [Thermodynamic Erasure Calibration v0.1 Results](results/thermodynamic-erasure-calibration-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

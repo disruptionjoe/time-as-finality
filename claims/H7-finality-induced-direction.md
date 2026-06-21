@@ -16,7 +16,8 @@ open-system/resource-accounting claim; weakened against direct physical reading
 by T80, T82, T84, T106, T110, T116, and T122.
 T128 identifies the smallest finite survivors and keeps the status narrowed.
 T124 adds the reverse-edge grounding gate and blocks unqualified physical-arrow
-readings for the current witness stack.
+readings for the current witness stack. T142 calibrates the T1/T141 survivor
+against reversible uncopy and ordinary erasure/free-energy accounting.
 
 ## What This Does Not Claim
 
@@ -59,6 +60,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T124: Constructor-Admissibility Grounding Audit](../tests/T124-constructor-admissibility-grounding-audit.md)
 - [T128: Minimal Living Arrow](../tests/T128-minimal-living-arrow.md)
 - [T141: T1 Record-Graph Admissibility Ledger](../tests/T141-t1-record-graph-admissibility-ledger.md)
+- [T142: Thermodynamic Erasure Calibration](../tests/T142-thermodynamic-erasure-calibration.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -223,3 +225,23 @@ observer-boundary changes. Holder-support and branch-robustness gains survive
 only as fresh-holder plus erasure-accounting edges. The current T1 substrate
 therefore still supports H7 only as reversible-boundary or
 resource-accounting language, not as a grounded physical arrow.
+
+## T142 Result
+
+[T142](../tests/T142-thermodynamic-erasure-calibration.md) applies the next
+standard absorber to the T141 survivor. Access grants remain observer-boundary
+changes. Same-chain record copies and branch-spread copies split into two
+ordinary reverse descriptions:
+
+```text
+full source-copy correlation and reversible control available -> uncopy
+blind reset or overwrite without that handle -> ordinary erasure/free-energy accounting
+```
+
+The result preserves one non-arrow residue: same-chain copy and branch-spread
+copy can have the same one-bit blind-reset floor while changing different D1
+topology dimensions. That means D1 topology is not identical to thermodynamic
+cost, but it does not create a thermodynamic arrow by itself. The current H7
+survivor remains a resource-accounting or constructor lemma unless a future
+physically typed substrate produces a D1 split at fixed free-energy, capacity,
+sink, boundary, provenance, and reversible-control data.

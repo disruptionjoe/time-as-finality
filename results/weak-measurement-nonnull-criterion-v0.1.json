@@ -1,0 +1,74 @@
+{
+  "audits": [
+    {
+      "name": "threshold_only_homodyne",
+      "independent_axes": [],
+      "classification": "null_same_record_derivation",
+      "passes_nonnull_gate": false,
+      "blocker": "The extra axis is reconstructed from the same monitoring record used by standard trajectory theory."
+    },
+    {
+      "name": "semantic_partition_relabel",
+      "independent_axes": [
+        "branch_support"
+      ],
+      "classification": "null_unpreregistered_or_post_hoc",
+      "passes_nonnull_gate": false,
+      "blocker": "The verdict rule is not fixed before analysis."
+    },
+    {
+      "name": "same_record_branch_live",
+      "independent_axes": [
+        "branch_support"
+      ],
+      "classification": "null_same_record_derivation",
+      "passes_nonnull_gate": false,
+      "blocker": "The extra axis is reconstructed from the same monitoring record used by standard trajectory theory."
+    },
+    {
+      "name": "constant_branch_support_family",
+      "independent_axes": [
+        "branch_support"
+      ],
+      "classification": "null_constant_branch_support",
+      "passes_nonnull_gate": false,
+      "blocker": "Branch support is fixed by construction, so it cannot separate TaF verdicts."
+    },
+    {
+      "name": "undo_energy_proxy",
+      "independent_axes": [
+        "reversal_cost"
+      ],
+      "classification": "null_monotone_proxy_cost",
+      "passes_nonnull_gate": false,
+      "blocker": "The reversal-cost variable is only a monotone proxy of ordinary support or coherence loss."
+    },
+    {
+      "name": "independent_meter_not_decisive",
+      "independent_axes": [
+        "reversal_cost"
+      ],
+      "classification": "independent_but_not_decisive",
+      "passes_nonnull_gate": false,
+      "blocker": "An independent meter exists, but it does not change the TaF verdict under fixed standard statistics."
+    },
+    {
+      "name": "preregistered_channel_intervention_candidate",
+      "independent_axes": [
+        "holder_redundancy"
+      ],
+      "classification": "candidate_non_null_protocol",
+      "passes_nonnull_gate": true,
+      "blocker": "No blocker in the finite audit; this is the minimum admissible shape, not empirical support."
+    }
+  ],
+  "null_count": 6,
+  "candidate_count": 1,
+  "strongest_claim": "The weak-measurement route is non-null only in a narrow shape: a pre-registered, event-level or intervention-defined D1 axis must change the TaF verdict while the ordinary decoherence and redundancy verdict stays fixed.",
+  "what_improved": "T132 upgrades the weak-measurement gate from prose into a reusable audit that can reject same-record, post hoc, constant-branch, and monotone-proxy proposals before platform-specific modeling.",
+  "weakened_claim": "Most apparent T12 rescue moves are null in the present repo framing. Naming a second label, a different threshold, a constant branch count, or an undo-energy proxy does not produce a discriminator.",
+  "falsification_condition": "T132 fails if a protocol lacking a pre-registered independent axis legitimately changes the TaF verdict under fixed standard statistics, or if an admitted candidate turns out to be reconstructible from the same monitored record.",
+  "q1c_update": "Keep Q1C dormant. The surviving task is not to search for another suggestive weak-measurement story, but to name one concrete independent measured axis and show that it alone changes the TaF verdict.",
+  "blocker": "No real platform in the repo currently instantiates the admissible candidate shape with a measured, verdict-changing independent axis.",
+  "recommended_next": "Try a single monitored platform with an intervention-defined provenance or duplicated-channel axis; if that cannot be specified before modeling, demote T12 from experimental route to standing obstruction."
+}

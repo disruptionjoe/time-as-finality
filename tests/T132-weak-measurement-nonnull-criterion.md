@@ -82,14 +82,15 @@ result reduces to access-boundary bookkeeping over standard monitored records.
 
 ## Claim Impact
 
-Q1 remains `partially_supported`, but the weak-measurement branch should now be
-stated conditionally:
+Q1 remains a demoted umbrella, and Q1C remains dormant. The weak-measurement
+branch should now be stated conditionally:
 
 ```text
-T12 is a valid route only if branch support or reversal cost acquires an
-independent operational definition inside a pre-registered monitoring protocol.
-Otherwise the branch collapses to thresholded decoherence / redundancy
-bookkeeping and should not be presented as a discriminating prediction.
+T12 is a valid route only if branch support, holder redundancy, or reversal
+cost acquires an independent operational definition inside a pre-registered
+monitoring protocol. Otherwise the branch collapses to thresholded decoherence
+/ redundancy bookkeeping and should not be presented as a discriminating
+prediction.
 ```
 
 ## Contribution Needed

@@ -66,3 +66,8 @@ are possible and reversible. After T152, metastability alone is not enough: the
 candidate must keep barrier, reservoir, erasure, capacity, sink,
 observer-boundary, provenance, source-copy, reversible-control, and task-horizon
 data fixed before claiming a constructor-impossible reverse.
+
+The current handoff artifact for that burden is
+[H7 Physical-Deletion Substrate Handoff](h7-physical-deletion-substrate-handoff.md).
+Until a named substrate clears that gate, this problem should be read as a
+conditional constructor target, not as active physical-arrow evidence.

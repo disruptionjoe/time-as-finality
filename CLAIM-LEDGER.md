@@ -1654,6 +1654,24 @@ forward direction. The converse is an open conjecture.
   source-copy, and reversible-control data.
 - Artifact: [T152 technical report](technical-reports/TECHNICAL-REPORT-metastable-record-deletion-screen-v0.1.md).
 
+### 2026-06-21 - H7 Physical-Deletion Substrate Handoff
+
+- H7 remains `weakened_conditional`; this is a testability handoff, not a
+  physics upgrade.
+- Result: the remaining H7 burden is now stated as a concrete substrate ask.
+  A live candidate must freeze the reverse-edge class
+  `physical_record_deletion`, the fixed absorber vector, the allowed control
+  class, any substrate-specific absorber fields, and a task-natural
+  future-operation split before it can count as H7-relevant.
+- Null decision: practical hardness, finite metastability, denied controls,
+  hidden sink/export changes, restored source-copy handles, infinite-barrier
+  idealizations, and misclassified access/provenance/support-loss cases do not
+  reopen H7.
+- Claim impact: do not spend more H7 effort on generic stability or
+  thermodynamic-arrow prose. The next non-null H7 move is a named substrate
+  that survives the T145/T148/T152 audit under frozen accounting data.
+- Artifact: [H7 physical-deletion substrate handoff](open-problems/h7-physical-deletion-substrate-handoff.md).
+
 ### 2026-06-21 - Weak-Measurement Verdict-Admissibility Gate (T150)
 
 - Q1C remains `dormant`; T150 is a verdict-honesty gate, not a

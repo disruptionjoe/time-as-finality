@@ -48,6 +48,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [Spacetime as Finality Colimit](../open-problems/spacetime-as-finality-colimit.md)
 - [T7: Overlapping Causal Domains](../tests/T7-overlapping-causal-domains.md)
 - [T16: Spacetime Aggregation Toy Model](../tests/T16-spacetime-aggregation.md)
+- [T126: Finality-Colimit Causal-Set Embeddability Audit](../tests/T126-finality-colimit-causal-set-embeddability.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -82,6 +83,18 @@ must also type:
 
 Without those maps, "consensus envelope" remains underdeclared and risks
 smuggling in a global synchronization layer.
+
+## T126 Causal-Set Embeddability Gate
+
+[T126](../tests/T126-finality-colimit-causal-set-embeddability.md) adds a
+finite necessary-condition screen between finality colimits and spacetime
+language. A candidate must first be canonical descent data, then a valid finite
+causal-set candidate, then survive selected manifoldlikeness diagnostics.
+
+The strongest positive T126 result is only `passes_filter_only`. Valid
+finality posets can still fail hub, interval-profile, rank/width, or local
+dimension-profile screens. Passing T126 does not derive a manifold, metric,
+Lorentzian geometry, GR, or a continuum limit.
 
 ## T153 Lorentzian Absorber Gate
 

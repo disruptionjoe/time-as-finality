@@ -191,7 +191,8 @@ T126 succeeds as a specification if it:
   manifoldlikeness gate;
 - preserves the S1 guardrail that no spacetime, GR, metric, or manifold has
   been derived;
-- leaves implementation as future work.
+- implements the finite screen without upgrading a passing witness into a
+  continuum embedding claim.
 
 ## Failure Criteria
 
@@ -229,9 +230,55 @@ candidates.
 This keeps the project from promoting a successful colimit theorem into a
 spacetime derivation without passing intermediate causal-set discipline.
 
+## Implementation Result
+
+Status: implemented.
+
+T126 now supplies an executable finite necessary-condition screen in
+`models/finality_colimit_causal_set_embeddability.py`.
+
+The implemented audit separates:
+
+```text
+not_descent_datum
+noncanonical_colimit
+not_poset
+phantom_gap_unresolved
+insufficient_scale
+hub_nonlocality_obstruction
+interval_profile_obstruction
+rank_width_obstruction
+order_dimension_obstruction
+passes_filter_only
+```
+
+Key controls:
+
+- T16 positive and partial-order controls pass the causal-set gate but are
+  classified `insufficient_scale` for manifoldlikeness diagnostics.
+- A T53-style ambiguous completion is rejected as `noncanonical_colimit`.
+- A T54-style malformed descent datum is rejected before causal-set screening.
+- A cyclic relation is rejected as `not_poset`.
+- A T56/T58-style unresolved observer-apparent gap is rejected as
+  `phantom_gap_unresolved`.
+- Valid posets with hub, complete-bipartite, chain, and mixed-interval
+  profiles fail the manifoldlikeness filter.
+- A small grid-product order receives only `passes_filter_only`.
+
+The strongest positive verdict remains:
+
+```text
+passes_filter_only
+```
+
+which is explicitly weaker than a faithful embedding theorem.
+
 ## Run Command
 
-None yet. This is a test specification only; no implementation is claimed.
+```bash
+python -m unittest tests.test_finality_colimit_causal_set_embeddability -v
+python -m models.run_t126
+```
 
 ## Dependencies
 

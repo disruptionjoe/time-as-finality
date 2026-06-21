@@ -27,7 +27,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T122](tests/T122-stationary-markov-monotone-obstruction.md) | Stationary Markov monotone obstruction | H7, T110, T116 | implemented: finite stationary Markov dynamics admit no strict scalar expected-finality monotone on stationary support |
 | [T124](tests/T124-constructor-admissibility-grounding-audit.md) | Constructor-admissibility grounding audit | H7, T18, T80, T84, T106, T110, T116, T122, T128 | implemented: reverse-edge ledger permits only constructor-only or resource-accounting readings; no current H7 witness grounds an unqualified physical arrow |
 | [T125](tests/T125-d1-boundary-connection-transport.md) | D1 boundary connection transport | D1, R1, S1, T111, T112, T113 | open: specification-only transport audit for boundary-indexed D1 profiles, identity, composition, closed loops, provenance deltas, and hostile controls |
-| [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | open: specification-only finite causal-set/manifoldlikeness filter for canonical finality colimits, with explicit non-embeddability modes and no spacetime derivation |
+| [T126](tests/T126-finality-colimit-causal-set-embeddability.md) | Finality-colimit causal-set embeddability audit | S1, T16, T51, T52, T53, T54, T56, T58 | implemented: finite causal-set/manifoldlikeness necessary-condition filter; rejects malformed, noncanonical, non-poset, phantom-gap, hub, interval, rank/width, and local-profile failures without deriving spacetime |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
@@ -165,6 +165,7 @@ python -m models.run_t110
 python -m models.run_t116
 python -m models.run_t122
 python -m models.run_t124
+python -m models.run_t126
 python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
@@ -273,6 +274,7 @@ The suites use only Python's standard library. Evidence records:
 - [H7 Paper-Facing Demotion Gate v0.1 Results](results/h7-paper-facing-demotion-gate-v0.1-results.md)
 - [Metastable-Record Deletion Screen v0.1 Results](results/metastable-record-deletion-screen-v0.1-results.md)
 - [Lorentzian Causal-Diamond Screen v0.1 Results](results/lorentzian-causal-diamond-screen-v0.1-results.md)
+- [Finality-Colimit Causal-Set Embeddability v0.1 Results](results/finality-colimit-causal-set-embeddability-v0.1-results.md)
 - [Viability Filter v0.1 Results](results/viability-filter-v0.1-results.md)
 - [Maintenance-Cost Viability Split v0.1 Results](results/maintenance-viability-split-v0.1-results.md)
 - [Accessible State Space Separation v0.1 Results](results/accessible-state-space-separation-v0.1-results.md)

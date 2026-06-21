@@ -1,0 +1,665 @@
+{
+  "audits": [
+    {
+      "name": "t16_positive_poset_control",
+      "classification": "insufficient_scale",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 4,
+        "strict_pair_count": 6,
+        "comparable_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "cover_relation_count": 3,
+        "link_density": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "height": 4,
+        "width": 1,
+        "rank_profile": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 3
+          },
+          {
+            "size": 1,
+            "count": 2
+          },
+          {
+            "size": 2,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 3
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 1
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "2/3",
+          "float": 0.6666666666666666
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "The relation is a finite causal-set candidate, but the witness is too small for the selected manifoldlikeness diagnostics.",
+      "required_next": "Use the candidate only as a causal-set gate control or build a larger colimit.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "t16_partial_order_control",
+      "classification": "insufficient_scale",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 4,
+        "strict_pair_count": 2,
+        "comparable_fraction": {
+          "fraction": "1/3",
+          "float": 0.3333333333333333
+        },
+        "cover_relation_count": 2,
+        "link_density": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "height": 2,
+        "width": 2,
+        "rank_profile": [
+          2,
+          2
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 2
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/3",
+          "float": 0.3333333333333333
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/3",
+          "float": 0.3333333333333333
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "The relation is a finite causal-set candidate, but the witness is too small for the selected manifoldlikeness diagnostics.",
+      "required_next": "Use the candidate only as a causal-set gate control or build a larger colimit.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "descent_failure_control",
+      "classification": "not_descent_datum",
+      "causal_set_candidate": false,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": false,
+        "antisymmetric": false,
+        "transitive": false,
+        "locally_finite": true,
+        "failure_reasons": [
+          "causet_gate_not_reached"
+        ],
+        "is_poset": false
+      },
+      "diagnostics": null,
+      "reason": "The T54-style descent gate failed or is missing, so no causal-set embeddability claim is meaningful.",
+      "required_next": "Repair event maps, overlap witnesses, record maps, and axis agreement first.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "noncanonical_boundary_control",
+      "classification": "noncanonical_colimit",
+      "causal_set_candidate": false,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": false,
+        "antisymmetric": false,
+        "transitive": false,
+        "locally_finite": true,
+        "failure_reasons": [
+          "causet_gate_not_reached"
+        ],
+        "is_poset": false
+      },
+      "diagnostics": null,
+      "reason": "The observer data admit more than one compatible completion, so there is no unique finality-colimit order to audit.",
+      "required_next": "Supply descent data that select a unique event-finality colimit.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "cyclic_relation_control",
+      "classification": "not_poset",
+      "causal_set_candidate": false,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": false,
+        "transitive": false,
+        "locally_finite": true,
+        "failure_reasons": [
+          "antisymmetry_violation",
+          "transitivity_violation"
+        ],
+        "is_poset": false
+      },
+      "diagnostics": null,
+      "reason": "The candidate relation is not a finite partial order: antisymmetry_violation, transitivity_violation.",
+      "required_next": "Produce a reflexive, antisymmetric, transitive colimit relation before causal-set screening.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "phantom_gap_control",
+      "classification": "phantom_gap_unresolved",
+      "causal_set_candidate": false,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 3,
+        "strict_pair_count": 2,
+        "comparable_fraction": {
+          "fraction": "2/3",
+          "float": 0.6666666666666666
+        },
+        "cover_relation_count": 2,
+        "link_density": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "height": 2,
+        "width": 2,
+        "rank_profile": [
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 2
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "Observer-apparent phantom gaps still change the strict order, so the tested relation is not yet the event-finality colimit.",
+      "required_next": "Separate observer-apparent order from ambient event-finality order before T126.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "hub_order_control",
+      "classification": "hub_nonlocality_obstruction",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 8,
+        "strict_pair_count": 7,
+        "comparable_fraction": {
+          "fraction": "1/4",
+          "float": 0.25
+        },
+        "cover_relation_count": 7,
+        "link_density": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "height": 2,
+        "width": 7,
+        "rank_profile": [
+          1,
+          7
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 7
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 7
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "One event supplies covering links to most of the set, producing an unnatural universal-hub profile for this screen.",
+      "required_next": "Replace the hub order with a colimit whose covering relations are locally distributed.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "complete_bipartite_layer_control",
+      "classification": "interval_profile_obstruction",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 8,
+        "strict_pair_count": 16,
+        "comparable_fraction": {
+          "fraction": "4/7",
+          "float": 0.5714285714285714
+        },
+        "cover_relation_count": 16,
+        "link_density": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "height": 2,
+        "width": 4,
+        "rank_profile": [
+          4,
+          4
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 16
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 16
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "4/7",
+          "float": 0.5714285714285714
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "4/7",
+          "float": 0.5714285714285714
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "Almost every comparable pair is a covering link, leaving no Alexandrov-interval structure at this scale.",
+      "required_next": "Supply intervals with nontrivial interior structure or lower the claim to a finite poset control.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "degenerate_chain_control",
+      "classification": "rank_width_obstruction",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 7,
+        "strict_pair_count": 21,
+        "comparable_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "cover_relation_count": 6,
+        "link_density": {
+          "fraction": "2/7",
+          "float": 0.2857142857142857
+        },
+        "height": 7,
+        "width": 1,
+        "rank_profile": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 6
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 4
+          },
+          {
+            "size": 3,
+            "count": 3
+          },
+          {
+            "size": 4,
+            "count": 2
+          },
+          {
+            "size": 5,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 6
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 4
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 3
+          },
+          {
+            "profile": "size=4;height=4;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=5;height=5;width=1",
+            "count": 1
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/3",
+          "float": 0.3333333333333333
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "The rank/width profile is degenerate for the selected finite control class.",
+      "required_next": "Declare a different comparison class or supply a less degenerate candidate.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "mixed_interval_profile_control",
+      "classification": "order_dimension_obstruction",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": false,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 8,
+        "strict_pair_count": 11,
+        "comparable_fraction": {
+          "fraction": "11/28",
+          "float": 0.39285714285714285
+        },
+        "cover_relation_count": 7,
+        "link_density": {
+          "fraction": "7/11",
+          "float": 0.6363636363636364
+        },
+        "height": 4,
+        "width": 3,
+        "rank_profile": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 7
+          },
+          {
+            "size": 1,
+            "count": 2
+          },
+          {
+            "size": 2,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 7
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 1
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "3/7",
+          "float": 0.42857142857142855
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "2/7",
+          "float": 0.2857142857142857
+        },
+        "profile_spread_obstruction": true
+      },
+      "reason": "Equal-size intervals have incompatible internal height/width profiles, so the local effective-dimension diagnostic is unstable.",
+      "required_next": "Match interval profiles or use a named dimension estimator with a declared tolerance.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    },
+    {
+      "name": "grid_filter_pass_control",
+      "classification": "passes_filter_only",
+      "causal_set_candidate": true,
+      "manifold_filter_passed": true,
+      "poset_report": {
+        "finite": true,
+        "reflexive": true,
+        "antisymmetric": true,
+        "transitive": true,
+        "locally_finite": true,
+        "failure_reasons": [],
+        "is_poset": true
+      },
+      "diagnostics": {
+        "event_count": 9,
+        "strict_pair_count": 27,
+        "comparable_fraction": {
+          "fraction": "3/4",
+          "float": 0.75
+        },
+        "cover_relation_count": 12,
+        "link_density": {
+          "fraction": "4/9",
+          "float": 0.4444444444444444
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 12
+          },
+          {
+            "size": 1,
+            "count": 6
+          },
+          {
+            "size": 2,
+            "count": 4
+          },
+          {
+            "size": 4,
+            "count": 4
+          },
+          {
+            "size": 7,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 12
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 6
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 4
+          },
+          {
+            "profile": "size=4;height=2;width=2",
+            "count": 4
+          },
+          {
+            "profile": "size=7;height=3;width=3",
+            "count": 1
+          }
+        ],
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": false
+      },
+      "reason": "No selected finite obstruction was found. This is only a necessary-condition pass.",
+      "required_next": "Compare against stronger causal-set dimension, sprinkling, locality, or continuum-limit diagnostics.",
+      "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics."
+    }
+  ],
+  "descent_failures_blocked_before_causet_claims": true,
+  "t16_control_passes_causet_gate": true,
+  "invalid_relations_rejected": true,
+  "valid_posets_can_fail_manifold_filter": true,
+  "passing_filter_does_not_derive_spacetime": true,
+  "strongest_claim": "A finite finality colimit is not automatically spacetime-like. It must first be canonical descent data, then a valid finite causal-set candidate, and only then may it face manifoldlikeness necessary-condition filters. T126 finds valid posets that fail those filters.",
+  "improved": "T126 turns the S1 spacetime-colimit route into an executable screen with explicit rejection modes: malformed descent data, noncanonical completion, non-poset relations, unresolved phantom gaps, hub nonlocality, degenerate rank/width profiles, interval profile failures, and local dimension-profile inconsistency.",
+  "weakened": "This weakens any reading of T16/T51/T52/T54 as a spacetime derivation. A successful finite colimit can be only a small causal-set candidate, and several valid finality orders are now explicitly rejected before S1 may claim manifold-facing content.",
+  "falsification_condition": "T126 fails if a noncanonical or malformed observer colimit can legitimately be used as embeddability evidence, or if the selected finite diagnostics reject a known-good control after its scale, dimension class, and causal-set comparison target are declared.",
+  "s1_update": "S1 remains an open formal target. Future S1 witnesses must clear descent/canonicality, causal-set validity, phantom-gap, and finite manifoldlikeness screens before claiming spacetime-reconstruction residue.",
+  "claim_ledger_update": "Add T126 to S1: finite finality colimits now face an executable causal-set/manifoldlikeness necessary-condition audit. Passing the screen is filter-only, while valid-but-degenerate posets weaken spacetime-derivation language.",
+  "open_blocker": "No continuum limit, faithful embedding theorem, Lorentzian metric reconstruction, QFT algebra, or covariance result exists for the surviving finite controls.",
+  "suggested_next": "Connect a T54/T58 canonical colimit fixture directly to T126, then compare the survivors against a named causal-set dimension or sprinkling diagnostic instead of adding new spacetime prose."
+}

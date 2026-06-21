@@ -1,0 +1,645 @@
+{
+  "target": {
+    "name": "flat_1p1_interval_abundance_jackknife",
+    "ordering_target": {
+      "name": "flat_1p1_interval_ordering_fraction",
+      "target_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "tolerance": {
+        "fraction": "1/10",
+        "float": 0.1
+      },
+      "basis": "In light-cone coordinates on a flat 1+1 causal diamond, two independent points are causally related exactly when their two coordinate orderings agree, giving ordering fraction 1/2. The 1/10 tolerance is a finite-audit band, not a continuum theorem."
+    },
+    "max_parent_interval_size": 1,
+    "required_deletion_pass_rate": {
+      "fraction": "1/1",
+      "float": 1.0
+    },
+    "basis": "At the six-event T157 scale, the declared deterministic flat 1+1 target has Alexandrov intervals with at most one interior event. A candidate promoted beyond calibration-only must also keep every single-event deletion inside the same ordering-fraction band. This is a hostile finite robustness screen, not a continuum causal-set criterion."
+  },
+  "audits": [
+    {
+      "name": "t157_flat_1p1_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "t156_verdict": "passes_ordering_fraction_control_only",
+      "event_count": 6,
+      "strict_pair_count": 7,
+      "ordering_fraction": {
+        "fraction": "7/15",
+        "float": 0.4666666666666667
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 2
+        }
+      ],
+      "largest_interval_size": 1,
+      "parent_interval_support_passed": true,
+      "deletion_audits": [
+        {
+          "removed_event": "p0",
+          "event_count": 5,
+          "strict_pair_count": 6,
+          "ordering_fraction": {
+            "fraction": "3/5",
+            "float": 0.6
+          },
+          "ordering_band_passed": true,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 2
+            }
+          ],
+          "largest_interval_size": 1,
+          "interval_support_passed": true
+        },
+        {
+          "removed_event": "p1",
+          "event_count": 5,
+          "strict_pair_count": 5,
+          "ordering_fraction": {
+            "fraction": "1/2",
+            "float": 0.5
+          },
+          "ordering_band_passed": true,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 1,
+          "interval_support_passed": true
+        },
+        {
+          "removed_event": "p2",
+          "event_count": 5,
+          "strict_pair_count": 5,
+          "ordering_fraction": {
+            "fraction": "1/2",
+            "float": 0.5
+          },
+          "ordering_band_passed": true,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 1,
+          "interval_support_passed": true
+        },
+        {
+          "removed_event": "p3",
+          "event_count": 5,
+          "strict_pair_count": 5,
+          "ordering_fraction": {
+            "fraction": "1/2",
+            "float": 0.5
+          },
+          "ordering_band_passed": true,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 1,
+          "interval_support_passed": true
+        },
+        {
+          "removed_event": "p4",
+          "event_count": 5,
+          "strict_pair_count": 2,
+          "ordering_fraction": {
+            "fraction": "1/5",
+            "float": 0.2
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 2
+            }
+          ],
+          "largest_interval_size": 0,
+          "interval_support_passed": true
+        },
+        {
+          "removed_event": "p5",
+          "event_count": 5,
+          "strict_pair_count": 5,
+          "ordering_fraction": {
+            "fraction": "1/2",
+            "float": 0.5
+          },
+          "ordering_band_passed": true,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 1,
+          "interval_support_passed": true
+        }
+      ],
+      "deletion_pass_count": 5,
+      "deletion_case_count": 6,
+      "deletion_pass_rate": {
+        "fraction": "5/6",
+        "float": 0.8333333333333334
+      },
+      "deletion_stability_passed": false,
+      "verdict": "calibration_only_fragile_jackknife",
+      "reason": "The parent candidate passes the declared ordering and interval screens, but at least one single-event deletion leaves the target band, so the pass is fragile at this finite scale.",
+      "required_next": "Treat the candidate as calibration-only; search for a family or larger sample with stable suborders before S1 residue language."
+    },
+    {
+      "name": "t157_product_grid_2x3_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "t156_verdict": "t126_pass_but_ordering_fraction_fail",
+      "event_count": 6,
+      "strict_pair_count": 12,
+      "ordering_fraction": {
+        "fraction": "4/5",
+        "float": 0.8
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 7
+        },
+        {
+          "size": 1,
+          "count": 2
+        },
+        {
+          "size": 2,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        }
+      ],
+      "largest_interval_size": 4,
+      "parent_interval_support_passed": false,
+      "deletion_audits": [
+        {
+          "removed_event": "p0_0",
+          "event_count": 5,
+          "strict_pair_count": 7,
+          "ordering_fraction": {
+            "fraction": "7/10",
+            "float": 0.7
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 1
+            },
+            {
+              "size": 2,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 2,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "p0_1",
+          "event_count": 5,
+          "strict_pair_count": 8,
+          "ordering_fraction": {
+            "fraction": "4/5",
+            "float": 0.8
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "p0_2",
+          "event_count": 5,
+          "strict_pair_count": 9,
+          "ordering_fraction": {
+            "fraction": "9/10",
+            "float": 0.9
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 2
+            },
+            {
+              "size": 2,
+              "count": 1
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "p1_0",
+          "event_count": 5,
+          "strict_pair_count": 9,
+          "ordering_fraction": {
+            "fraction": "9/10",
+            "float": 0.9
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 2
+            },
+            {
+              "size": 2,
+              "count": 1
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "p1_1",
+          "event_count": 5,
+          "strict_pair_count": 8,
+          "ordering_fraction": {
+            "fraction": "4/5",
+            "float": 0.8
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "p1_2",
+          "event_count": 5,
+          "strict_pair_count": 7,
+          "ordering_fraction": {
+            "fraction": "7/10",
+            "float": 0.7
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 5
+            },
+            {
+              "size": 1,
+              "count": 1
+            },
+            {
+              "size": 2,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 2,
+          "interval_support_passed": false
+        }
+      ],
+      "deletion_pass_count": 0,
+      "deletion_case_count": 6,
+      "deletion_pass_rate": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "deletion_stability_passed": false,
+      "verdict": "blocked_at_ordering_fraction",
+      "reason": "The candidate survived T126's selected finite filter but is too highly ordered relative to the declared 1+1 flat-interval ordering-fraction target.",
+      "required_next": "Do not treat this T126 survivor as dimension evidence; either change the declared comparison target or build a less lattice-ordered finality colimit."
+    },
+    {
+      "name": "t157_chain_6_t54_colimit",
+      "t54_classification": "canonical",
+      "t54_theorem_applies": true,
+      "t126_classification": "rank_width_obstruction",
+      "t126_filter_passed": false,
+      "t156_verdict": "blocked_before_ordering_fraction_target",
+      "event_count": 6,
+      "strict_pair_count": 15,
+      "ordering_fraction": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 5
+        },
+        {
+          "size": 1,
+          "count": 4
+        },
+        {
+          "size": 2,
+          "count": 3
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        }
+      ],
+      "largest_interval_size": 4,
+      "parent_interval_support_passed": false,
+      "deletion_audits": [
+        {
+          "removed_event": "c0",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "c1",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "c2",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "c3",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "c4",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        },
+        {
+          "removed_event": "c5",
+          "event_count": 5,
+          "strict_pair_count": 10,
+          "ordering_fraction": {
+            "fraction": "1/1",
+            "float": 1.0
+          },
+          "ordering_band_passed": false,
+          "interval_counts_by_size": [
+            {
+              "size": 0,
+              "count": 4
+            },
+            {
+              "size": 1,
+              "count": 3
+            },
+            {
+              "size": 2,
+              "count": 2
+            },
+            {
+              "size": 3,
+              "count": 1
+            }
+          ],
+          "largest_interval_size": 3,
+          "interval_support_passed": false
+        }
+      ],
+      "deletion_pass_count": 0,
+      "deletion_case_count": 6,
+      "deletion_pass_rate": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "deletion_stability_passed": false,
+      "verdict": "blocked_before_interval_jackknife",
+      "reason": "The rank/width profile is degenerate for the selected finite control class.",
+      "required_next": "Declare a different comparison class or supply a less degenerate candidate."
+    }
+  ],
+  "flat_parent_interval_support_passes": true,
+  "flat_jackknife_stability_fails": true,
+  "product_grid_parent_interval_support_fails": true,
+  "chain_control_blocked_before_interval_screen": true,
+  "t157_survivor_demoted_to_calibration_only": true,
+  "strongest_claim": "The T157 six-event T54 control still passes T126, T156, and the parent interval-support screen, but it is not deletion-stable: removing event p4 drops the ordering fraction to 1/5, outside the declared 1/2 +/- 1/10 band. It should be treated as a calibration artifact, not a robust S1 survivor.",
+  "improved": "T159 adds a stronger post-T157 finite diagnostic that combines Alexandrov interval-size support with a jackknife stability check, making the S1 causal-set bridge harder to overread.",
+  "weakened_or_falsified": "This weakens the positive reading of T157. The narrow claim that T54 can realize the ordering-fraction control survives, but the candidate fails the stricter robustness gate and therefore does not support spacetime-facing residue beyond calibration.",
+  "falsification_condition": "T159 fails if deletion suborders are not computed from the same T54-completed relation, if parent interval sizes are read from a different causal relation than T126/T156, or if a finite jackknife failure is described as a continuum no-go theorem rather than a demotion of this small control.",
+  "s1_update": "S1 remains open_formal_target. A finite T54 colimit must now clear T126, T156, interval-abundance, and robustness screens before it can be discussed as more than a calibration control.",
+  "claim_ledger_update": "Add T159 to S1: the T157 flat T54 control passes parent interval support but fails the single-deletion ordering-fraction stability screen, so the current positive S1 boundary is calibration-only.",
+  "open_blocker": "No non-hand-built T54 family, deletion-stable finite sample, sprinkling/locality diagnostic, faithful embedding theorem, continuum bridge, covariance result, or metric reconstruction exists for S1.",
+  "suggested_next": "Search for a small non-hand-built T54 family with several deletion-stable members, or move to a proper random-sprinkling comparison with declared finite-size tolerances.",
+  "not_claimed": "T159 does not estimate dimension, prove faithful embedding, validate a sprinkling process, derive a Lorentzian metric, or prove a continuum limit. The single-deletion screen is a finite fragility diagnostic only."
+}

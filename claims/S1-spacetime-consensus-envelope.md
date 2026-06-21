@@ -52,6 +52,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T154: T54/T58-to-T126 Bridge](../tests/T154-t54-t58-t126-bridge.md)
 - [T156: Myrheim-Meyer Ordering-Fraction Screen](../tests/T156-myrheim-meyer-ordering-fraction-screen.md)
 - [T157: T54 Ordering-Fraction Bridge](../tests/T157-t54-ordering-fraction-bridge.md)
+- [T159: T54 Interval-Jackknife Screen](../tests/T159-t54-interval-jackknife-screen.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -138,6 +139,20 @@ T126 while failing the target (`4/5`), and the six-event chain is rejected at
 T126. T157 shows that T54 can realize a finite 1+1-like ordering-fraction
 control, but it does not supply interval abundance, locality, sprinkling,
 embedding, covariance, continuum-limit, or Lorentzian metric evidence.
+
+## T159 Interval-Jackknife Screen
+
+[T159](../tests/T159-t54-interval-jackknife-screen.md) demotes the T157
+positive boundary back to calibration-only. The T157 flat T54 control still
+passes T126, T156, and the parent interval-support screen, but it fails a
+single-deletion stability check: deleting `p4` drops the ordering fraction to
+`1/5`, outside the declared `1/2 +/- 1/10` band.
+
+This is not a continuum no-go theorem. It is a finite fragility screen. The
+earned update is that a single hand-built T54 ordering-fraction survivor is
+not robust S1 evidence. Future S1 colimits need a non-hand-built family,
+deletion-stable finite samples, or a declared random-sprinkling/locality
+comparison before spacetime-facing residue language is considered.
 
 ## T153 Lorentzian Absorber Gate
 

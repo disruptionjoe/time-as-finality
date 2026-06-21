@@ -1,58 +1,72 @@
 # Workflows
 
 The agentic research operating layer for Time as Finality. Read
-[`RESEARCH-OPERATING-MODEL.md`](RESEARCH-OPERATING-MODEL.md) first — it defines
+[`RESEARCH-OPERATING-MODEL.md`](RESEARCH-OPERATING-MODEL.md) first - it defines
 how the program thinks. This README is the structural index.
 
-> **Phase status:** Phase 3 workflow design complete (2 LOCKED + 16 lock-candidate);
-> Phase 3.5 memory layer **built** (`context-packs/`); Phase 4 automation
-> **designed but NOT armed** (`automation/`). This README is the canonical
+> **Phase status:** Phase 3 workflow design complete for the original automation
+> set (2 LOCKED + 16 lock-candidate); Phase 3.5 memory layer **built**
+> (`context-packs/`); Phase 4 automation **designed but NOT armed**
+> (`automation/`). Five extension workflows were added after that automation
+> scaffold and are **not** mapped to triggers yet. This README is the canonical
 > route-target catalog (the family lists below). See
 > [`PROJECT-LOG.md`](PROJECT-LOG.md) and
 > [`registries/decision-history.md`](registries/decision-history.md).
 
 ## Three families
 
-- **exploit/** — develop the strongest active research lines
-  (`advance-primary`, `advance-secondary`, `challenge-primary`, `integrate-results`).
-- **explore/** — expand and search the idea landscape
+- **exploit/** - develop and stress the strongest active research lines
+  (`advance-primary`, `advance-secondary`, `challenge-primary`,
+  `contradiction-hunter`, `integrate-results`).
+- **explore/** - expand and search the idea landscape
   (`line-discovery`, `line-incubation`, `foundation-ingestion`,
   `cross-disciplinary-synthesis`, `landscape-reassessment`, `persona-expansion`,
-  `research-constellation-orchestrator`).
-- **govern/** — improve the quality, fairness, memory, and allocation of the
+  `research-constellation-orchestrator`, `motif-census-emergence-detector`,
+  `cross-repo-bridge-builder`).
+- **govern/** - improve the quality, fairness, memory, and allocation of the
   program (`line-review`, `lifecycle-review`, `portfolio-review`, `decision-review`,
-  `line-intake`, `persona-governance`, `research-memory`, `information-portfolio`).
+  `line-intake`, `persona-governance`, `research-memory`, `information-portfolio`,
+  `theory-compression-engine`, `theory-tournament`).
 
-## Registries (current state — source of truth)
+## Extension workflows
 
-- `registries/line-registry.md` — research lines + lifecycle states.
-- `registries/persona-clusters.md` — personas mapped into seven discipline clusters.
-- `registries/foundation-queue.md` — inbound reading/concept queue.
-- `registries/information-portfolio.md` — information-gain ledger.
-- `registries/decision-history.md` — constitutional record of major decisions (DEC-NNN).
-- `registries/research-line-scorecard.md` — per-line portfolio health signal (governance).
+The five extension workflows added after the Phase 4 scaffold are protocol-level
+workflow definitions only. They are route targets and may be run manually using
+the same markdown workflow convention, but `automation/COVERAGE-MATRIX.md`,
+`automation/SCHEDULE-SPEC.md`, and `automation/TRIGGER-REGISTRY.md` still describe
+the earlier automation-covered set and do not arm or schedule these extensions.
 
-## Logs (history — append-only)
+## Registries (current state - source of truth)
 
-- `logs/runs/` — one record per workflow run.
-- `logs/synthesis/` — cross-run synthesis notes.
-- `logs/best-next-move/` — the verdict block from each run.
+- `registries/line-registry.md` - research lines + lifecycle states.
+- `registries/persona-clusters.md` - personas mapped into seven discipline clusters.
+- `registries/foundation-queue.md` - inbound reading/concept queue.
+- `registries/information-portfolio.md` - information-gain ledger.
+- `registries/decision-history.md` - constitutional record of major decisions (DEC-NNN).
+- `registries/research-line-scorecard.md` - per-line portfolio health signal (governance).
+
+## Logs (history - append-only)
+
+- `logs/runs/` - one record per workflow run.
+- `logs/synthesis/` - cross-run synthesis notes.
+- `logs/best-next-move/` - the verdict block from each run.
 
 ## Conventions
 
-- **Document layout:** files declare a contract (`DOCUMENT-CONTRACT.md`) — Current
+- **Document layout:** files declare a contract (`DOCUMENT-CONTRACT.md`) - Current
   State (edit in place), Historical Record (append), or Operational Log (prepend
   newest-first). Optimize layout for the dominant read pattern.
 - **Decisions:** major architectural decisions are recorded in
   `registries/decision-history.md` (DEC-NNN).
-- **Authority order:** `RESEARCH-OPERATING-MODEL.md` §11.
+- **Authority order:** `RESEARCH-OPERATING-MODEL.md` section 11.
 
 ## How to run a workflow
 
 A workflow is markdown-prompt-only for now. An agent: (1) opens the workflow
 file, (2) reads the inputs it names (registries + recent logs first), (3) acts,
 (4) appends durable outputs and a run log, ending with the verdict block. No
-triggers are armed yet; Phase 4 automation is designed (`automation/`) but not armed.
+triggers are armed yet; Phase 4 automation is designed (`automation/`) but not
+armed.
 
 ## Templates
 

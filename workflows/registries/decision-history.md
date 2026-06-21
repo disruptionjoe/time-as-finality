@@ -477,3 +477,24 @@ Evidence / Source: Session 17 autonomous run.
 Notes: Arming prerequisites include workflows formally LOCKED, patch-acceptance
 owner decided, cadences/thresholds/budget caps set, memory layer validated.
 Authority does not decompose with size (DEC-013).
+
+## DEC-025 - Five research-machine extension workflows added
+Date: 2026-06-21
+Status: active
+Decision: Add five protocol-level extension workflows to the canonical workflow
+catalog: `exploit/contradiction-hunter`,
+`explore/motif-census-emergence-detector`,
+`govern/theory-compression-engine`, `explore/cross-repo-bridge-builder`, and
+`govern/theory-tournament`.
+Reason: Joe selected these as the first high-value research-machine workflows
+for improving falsification, motif discovery, theory compression, cross-repo
+bridging, and interpretation competition. They strengthen the program's ability
+to change what it is allowed to believe, not merely produce more artifacts.
+Applies to: `workflows/README.md`; the five extension workflow files.
+Supersedes: -
+Superseded by: -
+Evidence / Source: User request, 2026-06-21.
+Notes: These workflows are inert protocol definitions. They were added after
+the Phase 4 automation scaffold in DEC-024 and are not mapped in
+`automation/COVERAGE-MATRIX.md`, `automation/SCHEDULE-SPEC.md`, or
+`automation/TRIGGER-REGISTRY.md`.

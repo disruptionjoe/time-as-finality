@@ -208,10 +208,13 @@ observer, TaF is a restatement of causal set theory with extra notation.
 **Shared claim:** The direction of time is associated with entropy increase. The past is the
 low-entropy direction; the future is the high-entropy direction.
 
-**TaF-specific claim:** H7 claims that D1-monotone admissibility induces a temporal direction
-without requiring entropy. T9's reversible CA lifts are the test: in zero-entropy substrates,
-does finality-induced direction survive? If it does, H7 gives a temporal arrow that is not
-thermodynamic. If it doesn't, H7 collapses to thermodynamics.
+**TaF-specific claim:** H7 is currently only a weakened conditional
+constructor/resource-accounting audit. A stronger entropy-independent arrow
+would require a physically typed deletion or definalization witness whose
+reverse remains constructor-impossible after thermodynamic, capacity, sink,
+observer-boundary, provenance, source-copy, and reversible-control data are
+matched. T9's reversible CA lifts were an early test route; later H7 work has
+narrowed that route rather than promoted it.
 
 **Distinguishing criterion:** `[PARTIAL]`
 Use T9's reversible-lift results to check whether any reversible CA rule generates a nontrivial
@@ -224,10 +227,11 @@ criterion. A width-3 reversible Rule 30 lift has an injective transition map
 and zero logical information-loss bound, but its raw observer-window D1 trace
 profile decreases under the physical dynamics. T18 classifies that step as
 `strict_definalization`, so D1-monotone admissibility is not automatically
-grounded by reversible local dynamics. The remaining discriminator is not
-"reversible trace exists"; it is whether an endogenous persistent reconciler
-can make retained-record D1 monotone without reducing the effect to
-thermodynamic erasure.
+grounded by reversible local dynamics. T110/T116/T122/T145/T148/T152 and N8
+then push the remaining discriminator into fixed-accounting physical deletion:
+generic persistence, finite barriers, exported history, hidden sinks, denied
+controls, and ordinary erasure/free-energy costs are thermodynamic or resource
+absorbers, not H7 arrow evidence.
 
 **Falsification condition for TaF:** If D1-monotone admissibility is always equivalent to
 entropy non-decrease in physically grounded models, H7 adds no new content.

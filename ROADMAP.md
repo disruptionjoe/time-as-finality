@@ -96,9 +96,11 @@ high-leverage kickoff queue is now assigned:
 2. **T125: D1 boundary connection transport** for finality gauge theory:
    define identity, composition, closed-loop transport, and provenance-bearing
    access-boundary deltas before any curvature, gravity, or torsion language.
-3. **T126: Finality-colimit causal-set embeddability audit** for S1:
-   pass canonical T54-style finality colimits through finite causal-set
-   diagnostics and explicit non-embeddability modes before any geometry claim.
+3. **Completed by T126/T154:** Finality-colimit causal-set embeddability audit
+   for S1. T126 supplies the finite necessary-condition screen; T154 passes the
+   actual T54/T58 canonical completions through it and blocks the current T51/T52
+   controls at `insufficient_scale`. No spacetime, manifoldlikeness, dimension,
+   sprinkling, locality, embedding, or continuum claim is earned.
 4. **Completed by T127:** the same-neighbor-data LossKernel audit is negative
    on the current finite fixture family. No strict prior-art-separated
    attribution witness survives once CSP, provenance, abstraction, lens,
@@ -108,21 +110,25 @@ high-leverage kickoff queue is now assigned:
 
 T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
 language. T148 makes the paper-facing demotion explicit after the T145 fixed-
-accounting screen. T125-T127 remain open, specification-only artifacts and do
-not update claim status until implemented and checked. Existing number
-conflicts have been resolved by keeping T58, T88, and T115 for their canonical
-indexed artifacts and moving the colliding side tracks to T130-T132.
+accounting screen. T125 remains open/specification-only; T126 and T127 have now
+been implemented as negative or blocking audits, and T154 confirms that the
+actual T54/T58 finality-colimit bridge is scale-blocked before any geometry
+claim. Existing number conflicts have been resolved by keeping T58, T88, and
+T115 for their canonical indexed artifacts and moving the colliding side tracks
+to T130-T132.
 
 Recent P10/P11 persona-goal runs and the Candidate North Star capability
 projection folder are useful parking material, not sequence changes. Later
-P21-P23 persona-goal runs and the North Star v0.8 physics backlog are likewise
+P21-P27 persona-goal runs and the North Star v0.8 physics backlog are likewise
 geometry-probe or absorber-pressure material: useful for kill matrices,
-known-theory capability audits, gauge gates, finite-to-smooth bridge gates, and
-resource-theory calibration, but not replacements for the T125-T127
-implementation queue. T149-T152 and the Q1C/H7 handoffs are branch-gate
-closures and demotion/testability artifacts, not a new roadmap sequence. They
-should inform future Q1C, causal-access, and H7 external asks without promoting
-capability-projection or North Star physics language into the claim ledger.
+known-theory capability audits, gauge gates, finite-to-smooth bridge gates,
+operation/resource ledgers, philosophy-of-science kill criteria, and
+resource-theory calibration, but not replacements for the T125 plus TF1/S1 gate
+work. T149-T155, N8-N9, and the Q1C/H7 handoffs are branch-gate closures,
+absorber maps, or demotion/testability artifacts, not a new roadmap sequence.
+They should inform future Q1C, causal-access, S1, and H7 external asks without
+promoting capability-projection or North Star physics language into the claim
+ledger.
 
 Promotion gate before any public theorem or paper language:
 

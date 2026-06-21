@@ -26,7 +26,11 @@ not sufficient unless the T121/T133 packet wrapper is also frozen before data
 collection. T136 makes that freeze object explicit: a pre-event manifest must
 bind the T97 table hashes, T121/T133 wrapper-field commitments, T100 authority
 partition, top-level manifest hash, no-data boundary, and claimed tier before
-the first detector event.
+the first detector event. T138 turns that manifest into a human-fillable
+workflow gate: common single-lab photonic coincidence and single-lab
+public-archive repairs are null if post hoc or authority-collapsed; only a
+federated pre-data scaffold clears T136, and that remains non-evidence until
+real rows populate the bound packet.
 
 ## Earned Content
 
@@ -49,28 +53,34 @@ the first detector event.
 - T136 turns the combined packet requirement into a pre-event manifest gate:
   T97-only, post hoc, invalid-authority, deferred-tier, hash-mismatch, and
   pre-known-payload variants are null for the claimed tier.
+- T138 maps the manifest onto concrete workflow shapes: a common single-lab
+  photonic coincidence workflow and a public-archive repair with merged
+  authorities are null, while a federated pre-data scaffold only clears
+  claim-review readiness as a scaffold.
 
 ## Not Earned
 
 - No native detector-physics discriminator.
 - No calibration-free Stern-Gerlach or photon-counting prediction.
 - No empirical support without real event rows.
+- No named real lab has signed the federated T138/T136 template pre-data.
 - No upgrade from dashboard summaries, fixture counts, or post hoc
   provenance labels.
 
 ## Falsification Or Demotion Condition
 
-If no realistic lab workflow can sign and freeze the T136 manifest before data
-collection, including the claimed tier and authority partition, then detector
-provenance should be demoted below the active Q1 frontier.
+If no named realistic lab workflow can sign and freeze the federated T138/T136
+manifest before data collection, including the claimed tier, wrapper fields,
+and T100-compatible authority partition, then detector provenance should be
+demoted below the active Q1 frontier.
 
 ## Reinstatement Condition
 
-The branch becomes live only when a concrete deployment publishes the T136
-manifest before event collection, fills the bound event-level packet without
-changing schema, authority, tier, or wrapper policy, passes the T87/T97/T100
-and T121/T133 gates, and then yields a verdict that survives the T83 null
-criterion.
+The branch becomes live only when a concrete deployment publishes a T136
+manifest satisfying the T138 workflow-fit gate before event collection, fills
+the bound event-level packet without changing schema, authority, tier, or
+wrapper policy, passes the T87/T97/T100 and T121/T133 gates, and then yields a
+verdict that survives the T83 null criterion.
 
 ## Primary Evidence
 
@@ -86,3 +96,4 @@ criterion.
 - [T133: Detector Packet Tiered Minimality](../tests/T133-detector-packet-tiered-minimality.md)
 - [T134: Detector Dry-Run Tier Gate](../tests/T134-detector-dry-run-tier-gate.md)
 - [T136: Detector Pre-registration Manifest](../tests/T136-detector-preregistration-manifest.md)
+- [T138: Detector Manifest Workflow Fit](../tests/T138-detector-manifest-workflow-fit.md)

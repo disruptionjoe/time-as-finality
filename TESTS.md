@@ -105,6 +105,8 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T123](tests/T123-same-payload-packet-foa-witness.md) | Same-payload packet FOA witness | Q1B, D1, T87, T97, T100, T121 | implemented: same raw payload, immediate result, and coarse detector summary can still differ in admissibility and future operation availability through packet wrapper fields |
 | [T133](tests/T133-detector-packet-tiered-minimality.md) | Detector packet tiered minimality | Q1B, D1, T121, T123 | implemented: detector packet burden splits into provisional-admission core plus stricter claim-review extension; weakens any flat all-fields-at-once reading |
 | [T134](tests/T134-detector-dry-run-tier-gate.md) | Detector dry-run tier gate | Q1B, D1, T97, T121, T123, T133 | implemented: T97 raw-log rows are necessary but not sufficient; T121/T133 wrapper fields are required before provisional admission or claim-review readiness |
+| [T136](tests/T136-detector-preregistration-manifest.md) | Detector pre-registration manifest | Q1B, D1, T97, T100, T121, T133, T134 | implemented: pre-event manifest must bind table hashes, wrapper commitments, authority separation, claimed tier, no-data boundary, and top-level hash |
+| [T138](tests/T138-detector-manifest-workflow-fit.md) | Detector manifest workflow fit | Q1B, D1, T100, T121, T133, T136 | implemented: common single-lab and merged-authority archive workflows are null; only a federated pre-data scaffold clears T136, still without detector evidence |
 | [T132](tests/T132-weak-measurement-nonnull-criterion.md) | Weak-measurement non-null criterion | Q1, T12 | implemented: executable finite gate rejects same-record, post hoc, constant-branch, and monotone-proxy weak-measurement routes; only a verdict-changing independent measured axis survives as a candidate shape |
 | [T90](tests/T90-weak-measurement-reparameterization-obstruction.md) | Weak-measurement reparameterization obstruction | Q1, T12, T83, T132 | implemented: weak-measurement route is non-null only if an independent pre-registered axis changes the TaF verdict while standard monitored statistics are held fixed |
 | [T91](tests/T91-weak-measurement-platform-audit.md) | Weak-measurement platform audit | Q1, T12, T90 | implemented: superconducting homodyne, uncollapse, and quantum-jump reversal platforms fail the independent-axis gate; duplicated-record provenance or pre-metered undo cost remains blocked |
@@ -223,6 +225,8 @@ python -m models.run_t121
 python -m models.run_t123
 python -m models.run_t133
 python -m models.run_t134
+python -m models.run_t136
+python -m models.run_t138
 python -m models.run_t90
 python -m models.run_t91
 python -m models.run_t93
@@ -318,6 +322,8 @@ The suites use only Python's standard library. Evidence records:
 - [Same-Payload Packet FOA Witness v0.1 Results](results/same-payload-packet-foa-witness-v0.1-results.md)
 - [Detector Packet Tiered Minimality v0.1 Results](results/detector-packet-tiered-minimality-v0.1-results.md)
 - [Detector Dry-Run Tier Gate v0.1 Results](results/detector-dry-run-tier-gate-v0.1-results.md)
+- [Detector Pre-registration Manifest v0.1 Results](results/detector-preregistration-manifest-v0.1-results.md)
+- [Detector Manifest Workflow Fit v0.1 Results](results/detector-manifest-workflow-fit-v0.1-results.md)
 - [Weak-Measurement Reparameterization Obstruction v0.1 Results](results/weak-measurement-reparameterization-obstruction-v0.1-results.md)
 - [Weak-Measurement Platform Audit v0.1 Results](results/weak-measurement-platform-audit-v0.1-results.md)
 - [Weak-Measurement Undo-Cost Independence v0.1 Results](results/weak-measurement-undo-cost-independence-v0.1-results.md)

@@ -207,9 +207,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P17 - Symbolic Dynamics Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T01:10:21-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-011021-p17-symbolic-dynamics-record-persistence.md
 - goal: Search for symbolic invariants of record persistence using subshifts,
   forbidden words, entropy rates, and ordinal-pattern limits.
 - ambition: Find a dynamics-native signature instead of relying on hand-labeled

@@ -154,6 +154,25 @@ not robust S1 evidence. Future S1 colimits need a non-hand-built family,
 deletion-stable finite samples, or a declared random-sprinkling/locality
 comparison before spacetime-facing residue language is considered.
 
+## T163 Rank-Pair Family Census
+
+[T163](../tests/T163-t54-rank-pair-family-census.md) answers one part of that
+post-T159 blocker. In the exhaustive six-event T54 rank-pair family with fixed
+causal ranks and all `6!` information-rank permutations, deletion-stable
+survivors do exist: 26 labeled cases clear T126, T156, parent-interval
+support, and the T159 single-deletion screen.
+
+This improves the finite S1 boundary but only slightly. The original T157
+construction remains fragile, and most of the family is still blocked earlier:
+T126 rejects 142 cases, T156 rejects 273 more, parent-interval support rejects
+149 more, and 130 additional cases are jackknife-fragile. The surviving 26 are
+therefore a small finite subfamily, not spacetime evidence.
+
+The next burden shifts from "find any deletion-stable six-event sample" to
+"quotient and stress-test the surviving subfamily." Until that is done, S1
+still lacks isomorphism control, random-sprinkling comparison, locality tests,
+embedding theorems, covariance, and continuum reconstruction.
+
 ## T153 Lorentzian Absorber Gate
 
 [T153](../tests/T153-lorentzian-causal-diamond-screen.md) weakens any S1

@@ -61,6 +61,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T128: Minimal Living Arrow](../tests/T128-minimal-living-arrow.md)
 - [T141: T1 Record-Graph Admissibility Ledger](../tests/T141-t1-record-graph-admissibility-ledger.md)
 - [T142: Thermodynamic Erasure Calibration](../tests/T142-thermodynamic-erasure-calibration.md)
+- [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -245,3 +246,21 @@ cost, but it does not create a thermodynamic arrow by itself. The current H7
 survivor remains a resource-accounting or constructor lemma unless a future
 physically typed substrate produces a D1 split at fixed free-energy, capacity,
 sink, boundary, provenance, and reversible-control data.
+
+## T144 Result
+
+[T144](../tests/T144-definalization-reverse-edge-taxonomy.md) adds a sharper
+typing rule to the H7 blocker. "Definalization" now splits into four
+reverse-edge classes:
+
+- observer-boundary access loss;
+- support-copy removal;
+- physical record deletion; and
+- authority/provenance loss.
+
+This narrows H7 again. Boundary access loss is not physical record deletion.
+Support-copy removal is absorbed by reversible uncopy or ordinary
+erasure/free-energy accounting under T142. Authority/provenance loss may matter
+for admissibility and future capability, but it is not thermodynamic
+irreversibility. Only physically typed record deletion remains a plausible
+future physical-arrow class, and no current witness clears that bar.

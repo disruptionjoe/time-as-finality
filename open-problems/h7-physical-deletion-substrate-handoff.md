@@ -67,6 +67,7 @@ The nearest repo artifacts are:
 - [N8 H7 Stochastic-Thermodynamic Absorber Map](../literature/N8-h7-stochastic-thermodynamic-absorbers.md)
 - [N11 H7 Protected-Memory Absorber](../literature/N11-h7-protected-memory-absorber.md)
 - [N12 H7 Driven-Dissipative Absorber](../literature/N12-h7-driven-dissipative-absorber.md)
+- [N14 H7 Sector/Gauge Absorber](../literature/N14-h7-sector-gauge-absorber.md)
 - [Arrow of Time as Constructor Theorem](arrow-of-time-as-constructor-theorem.md)
 
 ### Minimum Pre-comparison Commitment
@@ -109,7 +110,10 @@ reading. T168 sharpens the sector/gauge branch: sector-rule bans,
 compensating-reservoir changes, gauge relabelings, exact ideal locks, and
 finite enforcement/control differences are null unless a finite
 gauge-invariant deletion reverse remains constructor-impossible after matched
-accounting.
+accounting. N14 then names the nearest external reasons those routes usually
+collapse: conserved quantities flow to reservoirs or boundaries, reference
+frames restore relational access, or the distinction is only gauge/sector
+bookkeeping rather than deletion.
 
 ### Required Audit Burden
 
@@ -189,4 +193,5 @@ H7 remains `weakened_conditional`. The next non-null H7 artifact is not more
 paper-facing arrow prose; it is a named physical-deletion substrate that
 clears the T160 family screen, freezes the reverse-edge class, absorber
 vector, allowed controls, and future-operation target, then survives the
-T145/T148/T152/T168 audit plus the N8 stochastic-thermodynamic absorber map.
+T145/T148/T152/T168 audit plus the N8 stochastic-thermodynamic and N14
+sector/gauge absorber maps.

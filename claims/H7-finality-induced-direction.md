@@ -36,7 +36,11 @@ driven-dissipative successes remain neighboring stability programs unless they
 freeze a true physical-deletion reverse and still survive matched accounting.
 T168 grounds the exact-sector/gauge family in an executable finite audit:
 sector-rule bans, compensating reservoirs, gauge relabelings, exact ideal
-locks, and finite control/enforcement differences do not clear H7. T172
+locks, and finite control/enforcement differences do not clear H7. N14 then
+grounds that screen in the external literature: superselection, charge-sector,
+reference-frame, and bounded-region gauge stories remain neighboring
+constraint/accounting structures unless they freeze a gauge-invariant physical
+deletion reverse and still survive matched accounting. T172
 tests the Temporal Issuance bridge and recasts finality as an observer-side
 source/readout factorization question: same-readout hidden issuance,
 `mu`-sensitive source tasks, nonmonotone access, cadence variation, and
@@ -447,6 +451,21 @@ this family only after it freezes a finite operational substrate, a
 gauge-invariant deletion distinction, matched conserved-quantity/reservoir/
 control data, and a physical deletion reverse that remains
 constructor-impossible after that accounting.
+
+## N14 Sector/Gauge Absorber
+
+[N14](../literature/N14-h7-sector-gauge-absorber.md) turns the T168
+sector/gauge screen into a source-backed absorber note. The core external
+lesson is that superselection and gauge language usually lives in one of four
+neighbor structures: ideal operation-class restriction, compensating
+conserved-quantity or boundary-flux accounting, missing reference-frame
+resources, or bounded-region sector bookkeeping.
+
+That is serious physics, but it is not yet the H7 object. A future H7 proposal
+may borrow this family only after it freezes a finite deletion task,
+gauge-invariant state distinction, allowed reference-frame/reservoir/boundary
+resources, and future-operation target, then still shows more than sector
+bookkeeping or control restriction.
 
 ## T172 Issuance-To-Finality Bridge
 

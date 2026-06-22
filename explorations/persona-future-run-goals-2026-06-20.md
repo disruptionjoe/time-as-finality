@@ -411,9 +411,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P38 - Financial Risk Modeler
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T23:09:18-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-230918-p38-financial-risk-detector-tail-stress.md
 - goal: Add adversarial tail regimes and rare-event stress tests for false
   independence, false dependence, and correlated provenance failures.
 - ambition: Stress the detector branch outside friendly priors.

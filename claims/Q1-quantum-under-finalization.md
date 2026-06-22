@@ -102,6 +102,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T103: Q1A Fixed-Data Witness](../tests/T103-q1a-fixed-data-witness.md)
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 - [T140: Q1 Frontier Escape Matrix](../tests/T140-q1-frontier-escape-matrix.md)
+- [T170: Q1D Correlation-Record Guardrail](../tests/T170-q1d-correlation-record-guardrail.md)
 
 ## T21 Result
 
@@ -523,6 +524,21 @@ This removes the remaining external-distinction reading from the current T103
 family. Once fragment partitioning is audited on both sides, the present Q1A
 witness behaves like provenance-disciplined redundancy accounting over already
 formed records, not a distinct measurement theory.
+
+## T170 Result
+
+[T170](../tests/T170-q1d-correlation-record-guardrail.md) sharpens Q1D without
+upgrading Q1. It separates local measurement records, later causal comparison,
+and reconciled joint correlation records in finite CHSH-style boxes.
+
+The only quantum contextual fixture that passes is no-signalling,
+Tsirelson-bounded, and records the joint correlation only after causal
+comparison. Signalling local marginals, hidden-variable retrofits, premature
+correlation export, and PR-box-as-quantum readings are null.
+
+This keeps Q1D as a language and admissibility guardrail only. It adds no
+measurement dynamics, collapse account, detector model, or empirical
+discriminator.
 
 ## Contribution Needed
 

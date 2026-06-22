@@ -1,0 +1,132 @@
+{
+  "audits": [
+    {
+      "scenario_id": "classical_reconciled_baseline",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 2.0,
+      "violates_classical_bound": false,
+      "exceeds_tsirelson_bound": false,
+      "correlation_record_stage": "after_causal_comparison",
+      "claims_prior_local_values": true,
+      "claimed_quantum_prediction": false,
+      "classification": "classical_reconciliation_baseline",
+      "allowed_language": "A prior local-value reading is admissible only because the fixture does not violate the CHSH classical bound.",
+      "rejected_language": "Reject upgrading this guardrail into measurement dynamics or a new inequality.",
+      "interpretation": "classical_reconciled_baseline is a classical baseline, not evidence for under-finalized quantum correlations."
+    },
+    {
+      "scenario_id": "quantum_contextual_reconciled_record",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 2.82842712474619,
+      "violates_classical_bound": true,
+      "exceeds_tsirelson_bound": false,
+      "correlation_record_stage": "after_causal_comparison",
+      "claims_prior_local_values": false,
+      "claimed_quantum_prediction": true,
+      "classification": "admissible_contextual_reconciliation_record",
+      "allowed_language": "Local records may be context-valid before comparison; the joint correlation record becomes final only after causal reconciliation.",
+      "rejected_language": "Reject upgrading this guardrail into measurement dynamics or a new inequality.",
+      "interpretation": "quantum_contextual_reconciled_record passes only as Q1D guardrail language: no-signalling local records first, correlation record after ordinary causal comparison."
+    },
+    {
+      "scenario_id": "pr_box_no_signalling_guardrail_only",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 4.0,
+      "violates_classical_bound": true,
+      "exceeds_tsirelson_bound": true,
+      "correlation_record_stage": "after_causal_comparison",
+      "claims_prior_local_values": false,
+      "claimed_quantum_prediction": false,
+      "classification": "postquantum_no_signalling_guardrail_only",
+      "allowed_language": "The case can be used only as a no-signalling/post-quantum guardrail control, not as a quantum prediction.",
+      "rejected_language": "Reject upgrading this guardrail into measurement dynamics or a new inequality.",
+      "interpretation": "pr_box_no_signalling_guardrail_only preserves no-signalling but exceeds the quantum Tsirelson bound, so it is a boundary control."
+    },
+    {
+      "scenario_id": "signalling_remote_setting_leak",
+      "no_signalling": false,
+      "max_marginal_delta": 0.7,
+      "max_chsh_score": 0.0,
+      "violates_classical_bound": false,
+      "exceeds_tsirelson_bound": false,
+      "correlation_record_stage": "local_record_stage",
+      "claims_prior_local_values": false,
+      "claimed_quantum_prediction": true,
+      "classification": "null_signalling_local_record",
+      "allowed_language": "No Q1D support language is admissible for this fixture.",
+      "rejected_language": "Reject any claim that local finality can depend on a remote setting.",
+      "interpretation": "signalling_remote_setting_leak is null for Q1D: A false-positive control where Alice's local marginal depends on Bob's setting."
+    },
+    {
+      "scenario_id": "hidden_variable_retrofit",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 2.82842712474619,
+      "violates_classical_bound": true,
+      "exceeds_tsirelson_bound": false,
+      "correlation_record_stage": "after_causal_comparison",
+      "claims_prior_local_values": true,
+      "claimed_quantum_prediction": true,
+      "classification": "null_hidden_variable_overclaim",
+      "allowed_language": "No Q1D support language is admissible for this fixture.",
+      "rejected_language": "Reject any claim that a later CHSH-violating correlation record was already an earlier local hidden fact.",
+      "interpretation": "hidden_variable_retrofit is null for Q1D: A language-level false positive: the Tsirelson box is treated as if it had earlier local hidden values."
+    },
+    {
+      "scenario_id": "premature_correlation_export",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 2.82842712474619,
+      "violates_classical_bound": true,
+      "exceeds_tsirelson_bound": false,
+      "correlation_record_stage": "local_record_stage",
+      "claims_prior_local_values": false,
+      "claimed_quantum_prediction": true,
+      "classification": "null_premature_correlation_record",
+      "allowed_language": "No Q1D support language is admissible for this fixture.",
+      "rejected_language": "Reject any claim that the joint correlation is locally finalized before the parties can compare records.",
+      "interpretation": "premature_correlation_export is null for Q1D: A timing false positive: the later joint correlation is declared final at a separated local record stage."
+    },
+    {
+      "scenario_id": "pr_box_mislabelled_quantum_prediction",
+      "no_signalling": true,
+      "max_marginal_delta": 0.0,
+      "max_chsh_score": 4.0,
+      "violates_classical_bound": true,
+      "exceeds_tsirelson_bound": true,
+      "correlation_record_stage": "after_causal_comparison",
+      "claims_prior_local_values": false,
+      "claimed_quantum_prediction": true,
+      "classification": "null_postquantum_as_quantum_prediction",
+      "allowed_language": "No Q1D support language is admissible for this fixture.",
+      "rejected_language": "Reject treating a post-quantum no-signalling box as a quantum prediction.",
+      "interpretation": "pr_box_mislabelled_quantum_prediction is null for Q1D: A post-quantum no-signalling control mislabelled as a quantum prediction."
+    }
+  ],
+  "admissible_contextual_guardrails": [
+    "quantum_contextual_reconciled_record"
+  ],
+  "null_signalling_cases": [
+    "signalling_remote_setting_leak"
+  ],
+  "null_hidden_variable_cases": [
+    "hidden_variable_retrofit"
+  ],
+  "null_premature_export_cases": [
+    "premature_correlation_export"
+  ],
+  "postquantum_guardrail_only_cases": [
+    "pr_box_no_signalling_guardrail_only"
+  ],
+  "strongest_claim": "Q1D can safely say that no-signalling contextual correlations may produce local records first and a joint correlation record only after causal comparison. It cannot say that the later correlation was already an earlier local hidden fact, and it cannot let local record-finality depend on a remote setting.",
+  "improved": "T170 makes the reconciliation-time boundary executable. Future Q1 language now has finite null controls for signalling marginals, hidden-variable retrofits, premature correlation export, and post-quantum boxes mislabelled as quantum predictions.",
+  "weakened": "This weakens Q1D's positive content to admissible language only. The passing quantum fixture adds no measurement dynamics, no new Bell inequality, no collapse account, and no empirical discriminator.",
+  "falsification_condition": "T170 fails if a model can keep no-signalling local marginals, violate the classical CHSH bound within the quantum Tsirelson limit, treat the correlation record as available only after causal comparison, avoid prior-local-value language, and still require rejection by the Q1D guardrail.",
+  "q1d_update": "Q1D remains guardrail-only. The current safe formulation is a stage rule: local record-finality is local-marginal constrained; joint correlation finality is a later causal-reconciliation record.",
+  "claim_ledger_update": "Add T170 to Q1D: no-signalling contextual correlations are admissible only when local records do not depend on remote settings and the joint correlation is recorded after causal comparison. Signalling, hidden-variable retrofits, premature correlation export, and post-quantum-as-quantum readings are null.",
+  "open_blocker": "No theorem connects this finite stage guardrail to a general decoherent-histories, algebraic-QFT, or detector-level account of classical record formation.",
+  "recommended_next": "Use T170 as a prose gate for Q1D. Do not add more Bell-style toy models unless they introduce a new typed capability object or bridge the stage rule into a mature quantum-record framework."
+}

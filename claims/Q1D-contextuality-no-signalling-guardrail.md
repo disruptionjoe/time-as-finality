@@ -28,6 +28,10 @@ standalone prediction or novelty claim.
   keeps no-signalling explicit.
 - T64 and later detector artifacts preserve the no-signalling guardrail in
   local detector marginals.
+- T170 adds a record-stage guardrail: local record-finality is constrained by
+  local marginals, while joint correlation finality is a later causal-
+  reconciliation record. It rejects signalling marginals, hidden-variable
+  retrofits, premature correlation export, and PR-box-as-quantum readings.
 
 ## Not Earned
 
@@ -36,12 +40,15 @@ standalone prediction or novelty claim.
 - No local hidden-variable repair.
 - No operational quantum prediction beyond existing contextuality/no-signalling
   structure.
+- No detector-level account of when the local or reconciled record physically
+  forms.
 
 ## Falsification Or Demotion Condition
 
 Any Q1 use that treats later reconciled correlations as earlier local hidden
-variables, or that permits local signalling through finality language, fails
-this guardrail.
+variables, permits local signalling through finality language, declares the
+joint correlation final before causal comparison, or labels post-quantum
+no-signalling structure as a quantum prediction fails this guardrail.
 
 ## Reinstatement Condition
 
@@ -53,3 +60,4 @@ decoherent-histories, or no-signalling frameworks.
 
 - [T21: Bell Contextuality Finality](../tests/T21-bell-contextuality-finality.md)
 - [T64: Stern-Gerlach Detector Access-Window Discriminator](../tests/T64-stern-gerlach-access-window.md)
+- [T170: Q1D Correlation-Record Guardrail](../tests/T170-q1d-correlation-record-guardrail.md)

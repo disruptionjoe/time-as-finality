@@ -67,10 +67,12 @@ These are bridge work cards, not claim promotions:
    cadence/access rules, projection into TaF readout, and controls for same
    issuance/different cadence, same records/different hidden issuance, same
    issuance/different `mu`, nonmonotone access loss, and gluing failure.
-2. H7 source/readout recast: stop treating finality alone as a physical-arrow
-   generator. Test whether finality can be a sound observer-readable
-   certificate or projection of a source-side realization order after absorber
-   variables are matched.
+2. Completed by
+   [Temporal Issuance Source Object Spec](../open-problems/temporal-issuance-source-object-spec.md):
+   H7 source/readout recast. Finality is treated as a possible observer
+   certificate or projection of a separately typed source process, not as a
+   physical-arrow generator. Richer bridge models are blocked until the source
+   object declares a nonabsorbed primitive and matched-data split.
 3. Completed by
    [N13](../literature/N13-temporal-issuance-absorber-map.md): absorber map
    comparing Temporal Issuance against causal set theory, block-universe causal

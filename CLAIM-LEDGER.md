@@ -2121,3 +2121,21 @@ forward direction. The converse is an open conjecture.
   the release/revocation quorum map needed to prove that escrow and trust are
   mandatory rather than optional.
 - Artifact: [T175 results](results/detector-threshold-root-quorum-screen-v0.1-results.md).
+
+### 2026-06-22 - Temporal Issuance Source Object Spec
+
+- H7 remains `weakened_conditional`; this is a source-object reopen burden,
+  not a Temporal Issuance promotion, physical-arrow result, or new model.
+- Result: the declared `Y_TI` fields (`R`, `<`, `mu`, `dR`, `O_i`,
+  `kappa_i`, `A_i`, `M`, and `G`) are all absorber-owned by default unless a
+  future proposal supplies a non-circular source primitive with units,
+  invariance/covariance behavior, operational comparison, and a task-natural
+  capability split after the N13 same-neighbor-data vector is matched.
+- Claim impact: future Temporal Issuance work should stop building richer
+  bridge models until the source object clears this contract. The bridge is
+  translation residue for H7 unless a nonabsorbed primitive and hostile
+  matched-data split are supplied.
+- Open blocker: no current Temporal Issuance field survives matching against
+  causal order, volume/counting, thermodynamic ledgers, information state,
+  instrumentation, cadence/access, and TaF gluing.
+- Artifact: [Temporal Issuance Source Object Spec](open-problems/temporal-issuance-source-object-spec.md).

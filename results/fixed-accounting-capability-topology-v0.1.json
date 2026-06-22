@@ -1,0 +1,92 @@
+{
+  "audits": [
+    {
+      "case_id": "same_accounting_branch_survival_split",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "topology_profile_split": true,
+      "future_task": "survive_one_branch_failure",
+      "future_capability_split": true,
+      "reverse_edge_class": "physical_record_deletion",
+      "reverse_status": "ordinary_erasure_accounted",
+      "fixed_accounting_capability_residue": true,
+      "h7_physical_arrow_candidate": false,
+      "verdict": "fixed_accounting_capability_topology_residue",
+      "interpretation": "Branch support changes a future survival task while the thermodynamic and control accounting vector is fixed."
+    },
+    {
+      "case_id": "same_accounting_same_topology_control",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "topology_profile_split": false,
+      "future_task": "survive_one_branch_failure",
+      "future_capability_split": false,
+      "reverse_edge_class": "physical_record_deletion",
+      "reverse_status": "ordinary_erasure_accounted",
+      "fixed_accounting_capability_residue": false,
+      "h7_physical_arrow_candidate": false,
+      "verdict": "no_capability_residue",
+      "interpretation": "Holding both accounting and topology fixed removes the future-operation split."
+    },
+    {
+      "case_id": "changed_erasure_floor_absorber_control",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "erased_bits",
+        "beta_work_floor",
+        "blank_capacity_delta"
+      ],
+      "topology_profile_split": true,
+      "future_task": "pay_same_blind_reset_floor",
+      "future_capability_split": true,
+      "reverse_edge_class": "physical_record_deletion",
+      "reverse_status": "absorbed_by_erasure_cost",
+      "fixed_accounting_capability_residue": false,
+      "h7_physical_arrow_candidate": false,
+      "verdict": "absorber_owned_capability_split",
+      "interpretation": "A task split with changed erased bits is thermodynamic accounting, not fixed-accounting topology residue."
+    },
+    {
+      "case_id": "provenance_loss_non_deletion_control",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "topology_profile_split": true,
+      "future_task": "use_record_for_claim_review",
+      "future_capability_split": true,
+      "reverse_edge_class": "authority_or_provenance_loss",
+      "reverse_status": "governance_not_thermodynamic",
+      "fixed_accounting_capability_residue": false,
+      "h7_physical_arrow_candidate": false,
+      "verdict": "non_deletion_capability_split",
+      "interpretation": "The future task changes, but the reverse edge is provenance loss rather than physical record deletion."
+    },
+    {
+      "case_id": "constructor_impossible_positive_control",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "topology_profile_split": true,
+      "future_task": "survive_one_branch_failure",
+      "future_capability_split": true,
+      "reverse_edge_class": "physical_record_deletion",
+      "reverse_status": "constructor_impossible_after_full_accounting",
+      "fixed_accounting_capability_residue": false,
+      "h7_physical_arrow_candidate": true,
+      "verdict": "synthetic_h7_reinstatement_positive_control",
+      "interpretation": "This is a synthetic positive control for the stricter H7 reinstatement gate; no current substrate supplies it."
+    }
+  ],
+  "residue_cases": [
+    "same_accounting_branch_survival_split"
+  ],
+  "h7_candidates": [
+    "constructor_impossible_positive_control"
+  ],
+  "theorem_candidate": "For a fixed absorber vector A and a fixed future task F, a record-topology profile tau carries fixed-accounting capability residue exactly when two admissible states have the same A, different tau, and different F-availability. This residue is H7 physical-arrow evidence only under the stricter added condition that the reverse edge is physical_record_deletion with status constructor_impossible_after_full_accounting.",
+  "strongest_claim": "The T145 survivor is not a thermodynamic arrow, but it is a legitimate capability-kernel target: branch topology can matter for a future operation even when ordinary deletion accounting is matched. The useful next theorem is about minimal topology data needed for future capability, not about time's arrow.",
+  "improved": "T179 preserves the negative H7 verdict while extracting a precise positive object from it: fixed-accounting capability topology. It separates three gates that were easy to blur: absorber matching, future-capability split, and constructor-impossible physical deletion.",
+  "weakened": "This weakens any attempt to cite the T145 branch-topology split as physical-arrow evidence. The same finite pattern becomes formal capability residue unless the stricter reverse-status gate is cleared.",
+  "falsification_condition": "The theorem target fails if fixed absorber vector plus topology profile is insufficient to determine the declared future task, or if a mature absorber shows that the topology profile is just a disguised thermodynamic, boundary, provenance, or control variable under the same comparison.",
+  "claim_ledger_update": "Add T179 to H7/T129: the T145 fixed-accounting branch-topology split should be preserved as capability/topology residue and formalized as a minimal future-capability kernel target, while remaining explicitly non-evidence for H7 physical-arrow promotion.",
+  "open_blocker": "No minimality theorem yet proves which record-topology fields are necessary and sufficient for a class of future tasks under matched thermodynamic and control accounting.",
+  "suggested_next": "Prove or refute the finite minimality theorem: for branch-failure tasks, branch_support is the minimal topology coordinate that restores capability sufficiency at fixed absorber vector."
+}

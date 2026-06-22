@@ -2233,3 +2233,22 @@ forward direction. The converse is an open conjecture.
   Lorentzian covariance result, or physical reduction of branch support and
   graph reversal count exists.
 - Artifact: [T125 results](results/d1-boundary-connection-transport-v0.1-results.md).
+
+### 2026-06-22 - Fixed-Accounting Capability Topology (T179)
+
+- H7 remains `weakened_conditional`; T179 is a formal residue extraction, not
+  thermodynamic-arrow evidence or a physical-arrow upgrade.
+- Result: the T145 same-accounting branch-topology split is preserved as a
+  capability-kernel target. With absorber accounting fixed, branch topology can
+  change the future task `survive_one_branch_failure`, but the deletion reverse
+  remains ordinary erasure accounting. The only H7 candidate in the model is a
+  synthetic positive control requiring
+  `constructor_impossible_after_full_accounting`.
+- Claim impact: future H7 work should not cite fixed-accounting D1 topology as
+  arrow evidence. The productive target is a minimality theorem for which
+  record-topology coordinates restore future-capability sufficiency under
+  matched thermodynamic and control data.
+- Open blocker: no theorem yet proves that `branch_support` is the minimal
+  necessary and sufficient topology coordinate for branch-failure tasks at
+  fixed absorber vector.
+- Artifact: [T179 results](results/fixed-accounting-capability-topology-v0.1-results.md).

@@ -21,11 +21,13 @@ calibrates the T1/T141 survivor against reversible uncopy and ordinary
 erasure/free-energy accounting. T144 requires future witnesses to declare the
 reverse-edge class, T145 shows that fixed-accounting D1 topology splits are
 capability residue rather than arrow evidence unless physical deletion remains
-impossible after full absorber accounting, and T148 makes the paper-facing
-demotion explicit. T152 screens metastable records and finds that finite
-barriers are kinetic/resource absorbers, while infinite barriers or denied
-controls are constructor or boundary stipulations rather than physical-arrow
-evidence. T160 extends that intake screen across the most natural remaining
+impossible after full absorber accounting, T179 preserves that survivor as a
+minimal future-capability kernel target rather than H7 arrow evidence, and
+T148 makes the paper-facing demotion explicit. T152 screens metastable records
+and finds that finite barriers are kinetic/resource absorbers, while infinite
+barriers or denied controls are constructor or boundary stipulations rather
+than physical-arrow evidence. T160 extends that intake screen across the most
+natural remaining
 substrate families: protected memories, driven dissipation, exact sector
 restrictions, and horizon-style inaccessibility are all null by default unless
 they still show finite constructor-impossible physical deletion after matched
@@ -94,6 +96,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T142: Thermodynamic Erasure Calibration](../tests/T142-thermodynamic-erasure-calibration.md)
 - [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
+- [T179: Fixed-Accounting Capability Topology](../tests/T179-fixed-accounting-capability-topology.md)
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
@@ -319,6 +322,21 @@ control, sink state, access boundary, or provenance class.
 H7's remaining upgrade target is therefore very narrow: a physically typed
 record substrate where a `physical_record_deletion` reverse remains
 constructor-impossible after all of those absorber variables are matched.
+
+## T179 Result
+
+[T179](../tests/T179-fixed-accounting-capability-topology.md) extracts the
+positive formal residue from T145 without upgrading H7. At fixed absorber
+accounting, branch topology can change a future operation such as surviving
+one branch failure. That is a capability-kernel target: the useful theorem is
+about the minimal record-topology coordinate needed for future capability under
+matched thermodynamic and control data.
+
+The same result keeps the H7 gate stricter. Fixed-accounting topology residue
+becomes physical-arrow evidence only if the reverse edge is
+`physical_record_deletion` with status
+`constructor_impossible_after_full_accounting`. No current substrate supplies
+that; the executable positive case is only a synthetic reinstatement control.
 
 ## T148 Result
 

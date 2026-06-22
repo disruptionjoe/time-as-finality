@@ -10,7 +10,7 @@ defend against the charge that it is an elaborate restatement of existing framew
 
 ## Open Neighbor Gate
 
-As of 2026-06-20, the entries still marked `[OPEN]` are:
+As of 2026-06-21, the entries still marked `[OPEN]` are:
 
 - Relational Time / Page-Wootters-style clock correlation versus D1 reversal cost.
 - Relational Quantum Mechanics versus a computable H1/global-section obstruction.
@@ -18,6 +18,9 @@ As of 2026-06-20, the entries still marked `[OPEN]` are:
 Therefore this file is not an external-readiness certificate. It is a working
 comparison ledger: external-facing language must state that several comparisons
 are still partial or open, especially outside the detector-provenance branch.
+T162 strengthens the Quantum Darwinism/Spectrum Broadcast Structure absorber for
+Q1A, and T166 keeps Q1C at a packet-intake gate; neither closes these open
+neighbors or makes the comparison table externally ready.
 
 ---
 

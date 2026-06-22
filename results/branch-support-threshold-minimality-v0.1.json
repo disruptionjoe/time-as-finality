@@ -1,0 +1,131 @@
+{
+  "absorber_vector": {
+    "erased_bits": 1,
+    "beta_work_floor": 0.6931471805599453,
+    "blank_capacity_delta": 1,
+    "sink_delta": 0,
+    "boundary_access": "matched_observer_boundary",
+    "provenance_state": "matched_valid_provenance",
+    "reversible_control": "blind_reset_only",
+    "source_copy_state": "authoritative_source_remains"
+  },
+  "future_task": "survive_one_branch_failure",
+  "profiles": [
+    {
+      "profile_id": "single_branch_triplicate",
+      "holder_count": 3,
+      "causal_chain_count": 3,
+      "branch_support": 1,
+      "provenance_valid": true,
+      "future_capability": false,
+      "interpretation": "Three holders and three causal chains still collapse to one surviving branch root after a branch failure."
+    },
+    {
+      "profile_id": "dual_branch_triplicate",
+      "holder_count": 3,
+      "causal_chain_count": 3,
+      "branch_support": 2,
+      "provenance_valid": true,
+      "future_capability": true,
+      "interpretation": "Three holders are spread across two independent surviving branch roots."
+    },
+    {
+      "profile_id": "triple_branch_triplicate",
+      "holder_count": 3,
+      "causal_chain_count": 3,
+      "branch_support": 3,
+      "provenance_valid": true,
+      "future_capability": true,
+      "interpretation": "Three holders are spread across three independent surviving branch roots."
+    },
+    {
+      "profile_id": "dual_chain_single_branch",
+      "holder_count": 2,
+      "causal_chain_count": 2,
+      "branch_support": 1,
+      "provenance_valid": true,
+      "future_capability": false,
+      "interpretation": "Two causal chains can still live on the same branch root, so chain count alone does not guarantee failure robustness."
+    },
+    {
+      "profile_id": "dual_chain_two_branch",
+      "holder_count": 2,
+      "causal_chain_count": 2,
+      "branch_support": 2,
+      "provenance_valid": true,
+      "future_capability": true,
+      "interpretation": "Two causal chains can also occupy two independent branch roots, restoring one-failure survival."
+    }
+  ],
+  "audits": [
+    {
+      "projection_name": "exact_branch_support",
+      "factors_through_capability": true,
+      "value_count": 3,
+      "witness_pair": null,
+      "verdict": "factors_through_capability",
+      "interpretation": "exact_branch_support determines the declared future task on the current admissible family."
+    },
+    {
+      "projection_name": "backup_branch_threshold",
+      "factors_through_capability": true,
+      "value_count": 2,
+      "witness_pair": null,
+      "verdict": "factors_through_capability",
+      "interpretation": "backup_branch_threshold determines the declared future task on the current admissible family."
+    },
+    {
+      "projection_name": "holder_count_only",
+      "factors_through_capability": false,
+      "value_count": 2,
+      "witness_pair": [
+        "single_branch_triplicate",
+        "dual_branch_triplicate"
+      ],
+      "verdict": "does_not_factor_through_capability",
+      "interpretation": "holder_count_only is insufficient: the witness pair single_branch_triplicate vs dual_branch_triplicate agrees on the projection but disagrees on future capability."
+    },
+    {
+      "projection_name": "causal_chain_count_only",
+      "factors_through_capability": false,
+      "value_count": 2,
+      "witness_pair": [
+        "single_branch_triplicate",
+        "dual_branch_triplicate"
+      ],
+      "verdict": "does_not_factor_through_capability",
+      "interpretation": "causal_chain_count_only is insufficient: the witness pair single_branch_triplicate vs dual_branch_triplicate agrees on the projection but disagrees on future capability."
+    },
+    {
+      "projection_name": "provenance_only",
+      "factors_through_capability": false,
+      "value_count": 1,
+      "witness_pair": [
+        "single_branch_triplicate",
+        "dual_branch_triplicate"
+      ],
+      "verdict": "does_not_factor_through_capability",
+      "interpretation": "provenance_only is insufficient: the witness pair single_branch_triplicate vs dual_branch_triplicate agrees on the projection but disagrees on future capability."
+    },
+    {
+      "projection_name": "nonsupport_topology_signature",
+      "factors_through_capability": false,
+      "value_count": 2,
+      "witness_pair": [
+        "single_branch_triplicate",
+        "dual_branch_triplicate"
+      ],
+      "verdict": "does_not_factor_through_capability",
+      "interpretation": "nonsupport_topology_signature is insufficient: the witness pair single_branch_triplicate vs dual_branch_triplicate agrees on the projection but disagrees on future capability."
+    }
+  ],
+  "exact_branch_support_nonminimal": true,
+  "threshold_projection_name": "backup_branch_threshold",
+  "strongest_claim": "For the current fixed-accounting branch-failure family, exact branch_support is not the minimal topology coordinate for the task survive_one_branch_failure. Capability already factors through the weaker threshold predicate backup_branch_threshold := [branch_support >= 2].",
+  "improved": "T180 sharpens T179's positive residue instead of inflating it. The surviving object is now task-relative and smaller: one-backup branch availability, not exact branch count.",
+  "weakened": "This weakens the stronger T179 guess that exact numeric branch_support is the minimal coordinate for the current branch-failure task. Profiles with branch_support 2 and 3 remain capability-equivalent in the tested family.",
+  "falsification_condition": "The threshold claim fails if an admissible fixed-accounting profile pair with the same backup-branch threshold but different survive_one_branch_failure capability is found, or if the task is changed so that exact branch multiplicity beyond the threshold becomes operationally relevant.",
+  "claim_ledger_update": "Add T180 to H7/T179: for the current fixed-accounting branch-failure survivor, exact branch_support is not the minimal future-capability coordinate. The current task factors through the coarser threshold backup_branch_threshold = [branch_support >= 2], while non-support topology signatures fail.",
+  "open_blocker": "No theorem yet characterizes the full task family where threshold predicates branch_support >= k+1 are necessary and sufficient, or when richer topology data beyond thresholds becomes genuinely load-bearing under matched accounting.",
+  "suggested_next": "Generalize or kill the pattern: test whether survive_k_branch_failures factors through branch_support >= k+1, and identify the first natural task that needs richer topology than a threshold."
+}

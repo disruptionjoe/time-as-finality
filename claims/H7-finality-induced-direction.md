@@ -22,7 +22,9 @@ erasure/free-energy accounting. T144 requires future witnesses to declare the
 reverse-edge class, T145 shows that fixed-accounting D1 topology splits are
 capability residue rather than arrow evidence unless physical deletion remains
 impossible after full absorber accounting, T179 preserves that survivor as a
-minimal future-capability kernel target rather than H7 arrow evidence, and
+minimal future-capability kernel target rather than H7 arrow evidence, T180
+shows that the current one-branch-failure task already factors through a
+coarser backup-branch threshold rather than exact branch multiplicity, and
 T148 makes the paper-facing demotion explicit. T152 screens metastable records
 and finds that finite barriers are kinetic/resource absorbers, while infinite
 barriers or denied controls are constructor or boundary stipulations rather
@@ -97,6 +99,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T144: Definalization Reverse-Edge Taxonomy](../tests/T144-definalization-reverse-edge-taxonomy.md)
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T179: Fixed-Accounting Capability Topology](../tests/T179-fixed-accounting-capability-topology.md)
+- [T180: Branch-Support Threshold Minimality](../tests/T180-branch-support-threshold-minimality.md)
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
@@ -337,6 +340,26 @@ becomes physical-arrow evidence only if the reverse edge is
 `physical_record_deletion` with status
 `constructor_impossible_after_full_accounting`. No current substrate supplies
 that; the executable positive case is only a synthetic reinstatement control.
+
+## T180 Result
+
+[T180](../tests/T180-branch-support-threshold-minimality.md) then tries to
+break the stronger T179 guess before it hardens. For the current
+fixed-accounting survivor and the declared task
+`survive_one_branch_failure`, exact numeric `branch_support` is not the
+minimal topology coordinate. The task already factors through the weaker
+threshold predicate:
+
+```text
+backup_branch_threshold := [branch_support >= 2]
+```
+
+Profiles with `branch_support = 2` and `branch_support = 3` remain
+capability-equivalent in the tested family, while non-support signatures such
+as holder count, causal-chain count, and their joint signature fail on
+explicit witness pairs. This sharpens the positive residue again: the earned
+object is task-relative backup-branch availability, not exact branch
+multiplicity. It does not reopen H7 as thermodynamic-arrow evidence.
 
 ## T148 Result
 

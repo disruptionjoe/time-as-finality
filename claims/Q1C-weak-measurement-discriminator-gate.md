@@ -87,6 +87,11 @@ clear the independent-axis gate.
   calorimeter-assisted quadrature families still supply ordinary records,
   replacement readout, or task changes rather than a live T146/T149/T150/T158 Q1C
   platform.
+- T182 makes that census executable: the named platform families are now
+  classified into ordinary-record baseline, same-instrument/postselected
+  control, honest readout replacement without a preserved full-standard
+  target, alternate ordinary record, or task-changed non-monitored-qubit
+  classes, and none lands in a live Q1C architecture class.
 
 ## Not Earned
 
@@ -103,6 +108,8 @@ clear the independent-axis gate.
   to show that an enlarged instrument really preserves the full ordinary
   standard record rather than only a coarse or drifted target.
 - No named platform in the repo currently clears the T166 packet-intake gate.
+- No named platform family in the repo currently clears the executable T182
+  family screen.
 
 ## Falsification Or Demotion Condition
 
@@ -168,5 +175,6 @@ The current repo handoff for that burden is:
 - [T155: Weak-Measurement Blackwell Boundary](../tests/T155-weak-measurement-blackwell-boundary.md)
 - [T158: Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
 - [T166: Weak-Measurement Platform-Packet Gate](../tests/T166-weak-measurement-platform-packet-gate.md)
+- [T182: Weak-Measurement Platform Family Screen](../tests/T182-weak-measurement-platform-family-screen.md)
 - [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

@@ -46,11 +46,11 @@
   "all_null_controls_rejected": true,
   "current_frontier_admissible": false,
   "strongest_claim": "Q1C should not be reopened by platform prose alone. A weak-measurement route is admissible for external review only after it freezes the full ordinary event-level record, auxiliary channel, architecture class, independently typed TaF axis, verdict map, support floor, loss rule, null-control plan, and event-level audit packet in advance.",
-  "improved": "T163 converts the Q1C handoff from a narrative blocker into an intake gate. Future platform ideas can now be rejected before any new internal witness work unless they clear a concrete packet contract.",
+  "improved": "T166 converts the Q1C handoff from a narrative blocker into an intake gate. Future platform ideas can now be rejected before any new internal witness work unless they clear a concrete packet contract.",
   "weakened": "This weakens the idea that a vague experimental sketch or named second meter is progress for Q1C. Without a full packet contract, the branch is still dormant.",
-  "falsification_condition": "T163 fails if a serious Q1C platform should count even though it does not freeze the full ordinary record, verdict map, loss rule, support floor, and event-level audit burden before analysis.",
-  "q1c_update": "Q1C remains dormant. Reinstatement now has two stages: first clear the T163 packet gate, then clear the T149/T150/T158 event-level verdict screens.",
-  "claim_ledger_update": "Add T163 to Q1C: external platform proposals are null or scaffold-only unless they first supply a complete pre-analysis packet, with enlarged-instrument routes also declaring a full-record preserved target and eventwise back-projection.",
-  "open_blocker": "No named monitored-qubit platform in the repo currently supplies a complete T163 packet, much less the event-level data needed for T149, T150, and T158.",
-  "recommended_next": "Do not run more internal Q1C toy models unless a concrete platform can fill a T163-valid packet template first."
+  "falsification_condition": "T166 fails if a serious Q1C platform should count even though it does not freeze the full ordinary record, verdict map, loss rule, support floor, and event-level audit burden before analysis.",
+  "q1c_update": "Q1C remains dormant. Reinstatement now has two stages: first clear the T166 packet gate, then clear the T149/T150/T158 event-level verdict screens.",
+  "claim_ledger_update": "Add T166 to Q1C: external platform proposals are null or scaffold-only unless they first supply a complete pre-analysis packet, with enlarged-instrument routes also declaring a full-record preserved target and eventwise back-projection.",
+  "open_blocker": "No named monitored-qubit platform in the repo currently supplies a complete T166 packet, much less the event-level data needed for T149, T150, and T158.",
+  "recommended_next": "Do not run more internal Q1C toy models unless a concrete platform can fill a T166-valid packet template first."
 }

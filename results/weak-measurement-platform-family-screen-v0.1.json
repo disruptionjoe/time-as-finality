@@ -1,0 +1,79 @@
+{
+  "audits": [
+    {
+      "family_id": "murch_koolstra_homodyne_trajectory",
+      "classification": "null_ordinary_record_baseline",
+      "q1c_live": false,
+      "route_type": "baseline_record",
+      "reason": "The measured trace is the ordinary monitored record itself, so there is no separate Q1C auxiliary axis yet.",
+      "required_next": "Name an auxiliary channel beyond the ordinary monitored transcript."
+    },
+    {
+      "family_id": "minev_jump_reversal",
+      "classification": "null_same_instrument_postselected_control",
+      "q1c_live": false,
+      "route_type": "same_instrument_control",
+      "reason": "The apparent discriminator is ordinary same-instrument monitoring or success-conditioned control rather than an independent TaF axis at fixed standard statistics.",
+      "required_next": "Hold reversal success fixed and expose a distinct auxiliary channel."
+    },
+    {
+      "family_id": "opremcak_photon_counter_replacement",
+      "classification": "blocked_honest_enlargement_without_preserved_target",
+      "q1c_live": false,
+      "route_type": "enlarged_instrument",
+      "reason": "The family is an honest readout replacement or enlargement, but it does not predeclare the preserved fixed-standard comparison target.",
+      "required_next": "Declare the preserved comparison target before analysis."
+    },
+    {
+      "family_id": "gunyho_thermal_detector_replacement",
+      "classification": "blocked_honest_enlargement_without_preserved_target",
+      "q1c_live": false,
+      "route_type": "enlarged_instrument",
+      "reason": "The family is an honest readout replacement or enlargement, but it does not predeclare the preserved fixed-standard comparison target.",
+      "required_next": "Declare the preserved comparison target before analysis."
+    },
+    {
+      "family_id": "karimi_nanocalorimetric_trajectory",
+      "classification": "null_alternate_ordinary_record",
+      "q1c_live": false,
+      "route_type": "alternate_record",
+      "reason": "The calorimetric or click stream is itself the trajectory-defining ordinary record, not an auxiliary verdict-changing channel over a fixed standard record.",
+      "required_next": "Keep the standard record fixed and add a non-screened-off auxiliary axis."
+    },
+    {
+      "family_id": "shojaee_calorimeter_assisted_quadrature",
+      "classification": "null_task_changed_non_monitored_qubit",
+      "q1c_live": false,
+      "route_type": "task_change",
+      "reason": "The source changes the measurement object or task rather than naming a monitored-qubit auxiliary channel over a fixed standard record.",
+      "required_next": "Return to a monitored-qubit platform with a fixed standard record."
+    },
+    {
+      "family_id": "positive_control_extra_environment",
+      "classification": "provisional_live_extra_environment_route",
+      "q1c_live": true,
+      "route_type": "extra_environment",
+      "reason": "The platform exposes a simultaneous auxiliary channel tied to extra environment structure, not screened off by the full ordinary record, and freezes the intake packet.",
+      "required_next": "Run T149/T150 event-level verdict-lift screens."
+    },
+    {
+      "family_id": "positive_control_enlarged_instrument",
+      "classification": "provisional_live_enlarged_instrument_route",
+      "q1c_live": true,
+      "route_type": "enlarged_instrument",
+      "reason": "The platform is an explicit enlarged instrument that preserves the full standard record under a declared back-projection and freezes the intake packet.",
+      "required_next": "Run T149/T150/T158 event-level verdict-lift screens."
+    }
+  ],
+  "named_platforms_live": 0,
+  "named_platforms_screened": 6,
+  "positive_controls_admitted": true,
+  "strongest_claim": "The current named Q1C-adjacent platform families do not instantiate a live TaF discriminator. They fall into ordinary-record baseline, same-instrument/postselected control, honest readout replacement without a preserved fixed-standard target, alternate ordinary record, or task-changed non-monitored-qubit classes.",
+  "improved": "T182 turns N9's literature census into an executable screen. A reader can now see exactly which route each named family falls into and which missing field keeps it out of the live Q1C frontier.",
+  "weakened": "This weakens the residual hope that one of the already named hardware families is secretly close to a Q1C witness. None of them clears even the architecture-level screening burden.",
+  "falsification_condition": "T182 fails if one of the screened named families already preserves a fixed full ordinary record while adding an auxiliary verdict-changing channel or an honest enlarged-instrument back-projection that the screen misclassifies as null or blocked.",
+  "q1c_update": "Q1C remains dormant. N9 is no longer just a prose census: T182 makes the current named-platform verdict executable and keeps the branch shut until a genuinely live family appears.",
+  "claim_ledger_update": "Add T182 to Q1C: the named superconducting homodyne, jump-reversal, photon-counter, thermal-detector, nanocalorimetric, and calorimeter-assisted families are now executable null or blocked classes rather than prose-only exclusions.",
+  "open_blocker": "No named family currently supplies a monitored-qubit simultaneous auxiliary channel independent of the full ordinary record, and no named enlarged-instrument family declares the preserved full-standard target plus back-projection needed for T158.",
+  "recommended_next": "Do not rescan the same platform families. Look only for a new source family that either exposes extra-environment eventwise structure or predeclares an honest enlarged-instrument preserved target."
+}

@@ -22,7 +22,7 @@ Q1C should not be reopened by platform prose alone. A weak-measurement route is 
 
 ## What this improved
 
-T163 converts the Q1C handoff from a narrative blocker into an intake gate. Future platform ideas can now be rejected before any new internal witness work unless they clear a concrete packet contract.
+T166 converts the Q1C handoff from a narrative blocker into an intake gate. Future platform ideas can now be rejected before any new internal witness work unless they clear a concrete packet contract.
 
 ## What this weakened
 
@@ -30,20 +30,20 @@ This weakens the idea that a vague experimental sketch or named second meter is 
 
 ## Falsification condition
 
-T163 fails if a serious Q1C platform should count even though it does not freeze the full ordinary record, verdict map, loss rule, support floor, and event-level audit burden before analysis.
+T166 fails if a serious Q1C platform should count even though it does not freeze the full ordinary record, verdict map, loss rule, support floor, and event-level audit burden before analysis.
 
 ## Q1C update
 
-Q1C remains dormant. Reinstatement now has two stages: first clear the T163 packet gate, then clear the T149/T150/T158 event-level verdict screens.
+Q1C remains dormant. Reinstatement now has two stages: first clear the T166 packet gate, then clear the T149/T150/T158 event-level verdict screens.
 
 ## Claim ledger update
 
-Add T163 to Q1C: external platform proposals are null or scaffold-only unless they first supply a complete pre-analysis packet, with enlarged-instrument routes also declaring a full-record preserved target and eventwise back-projection.
+Add T166 to Q1C: external platform proposals are null or scaffold-only unless they first supply a complete pre-analysis packet, with enlarged-instrument routes also declaring a full-record preserved target and eventwise back-projection.
 
 ## Open blocker
 
-No named monitored-qubit platform in the repo currently supplies a complete T163 packet, much less the event-level data needed for T149, T150, and T158.
+No named monitored-qubit platform in the repo currently supplies a complete T166 packet, much less the event-level data needed for T149, T150, and T158.
 
 ## Recommended next
 
-Do not run more internal Q1C toy models unless a concrete platform can fill a T163-valid packet template first.
+Do not run more internal Q1C toy models unless a concrete platform can fill a T166-valid packet template first.

@@ -362,7 +362,7 @@ def run_t166_analysis() -> T166Result:
             "null-control plan, and event-level audit packet in advance."
         ),
         improved=(
-            "T163 converts the Q1C handoff from a narrative blocker into an intake "
+            "T166 converts the Q1C handoff from a narrative blocker into an intake "
             "gate. Future platform ideas can now be rejected before any new internal "
             "witness work unless they clear a concrete packet contract."
         ),
@@ -372,7 +372,7 @@ def run_t166_analysis() -> T166Result:
             "still dormant."
         ),
         falsification_condition=(
-            "T163 fails if a serious Q1C platform should count even though it does "
+            "T166 fails if a serious Q1C platform should count even though it does "
             "not freeze the full ordinary record, verdict map, loss rule, support "
             "floor, and event-level audit burden before analysis."
         ),

@@ -34,6 +34,11 @@ real rows populate the bound packet. T161 closes the nominal-federation
 loophole: role labels alone do not count if critical manifest, archive, audit,
 publication, or revocation control roots are shared, because those hidden
 merges collapse the effective authority partition back into self-certification.
+T169 narrows the surviving frontier again: even an honest pre-data federation
+is scaffold-only unless it also commits to later reviewable event-level rows
+without schema drift. The only live external candidate class is now a pre-data
+claim-review federation with distinct critical roots and a reviewable row
+commitment.
 
 ## Earned Content
 
@@ -65,6 +70,11 @@ merges collapse the effective authority partition back into self-certification.
   object is the effective authority partition after quotienting by shared
   manifest-registration, archive-write, audit-attestation, publication, and
   revocation roots.
+- T169 composes the T138 and T161 gates at the deployment-archetype level:
+  single-lab and public-archive repairs are null before detector detail
+  matters, nominal federations with shared roots are null, private escrow
+  without reviewable rows is scaffold-only, and only a reviewable-row
+  federation remains live as an external candidate.
 
 ## Not Earned
 
@@ -76,6 +86,8 @@ merges collapse the effective authority partition back into self-certification.
   provenance labels.
 - No named real lab in the repo exposes a critical control-root map proving
   that its nominal authority split is operationally independent.
+- No named real lab in the repo instantiates the lone T169 surviving
+  reviewable-row federation archetype.
 
 ## Falsification Or Demotion Condition
 
@@ -92,8 +104,8 @@ manifest satisfying the T138 workflow-fit gate before event collection, fills
 the bound event-level packet without changing schema, authority, tier, or
 wrapper policy, exposes enough control-root data to show that the T161
 effective authority partition remains admissible, passes the T87/T97/T100 and
-T121/T133 gates, and then yields a verdict that survives the T83 null
-criterion.
+T121/T133 gates, satisfies the T169 reviewable-row commitment, and then yields
+a verdict that survives the T83 null criterion.
 
 ## Operational Handoff
 
@@ -119,3 +131,4 @@ trust-audit roles before detector events.
 - [T136: Detector Pre-registration Manifest](../tests/T136-detector-preregistration-manifest.md)
 - [T138: Detector Manifest Workflow Fit](../tests/T138-detector-manifest-workflow-fit.md)
 - [T161: Detector Control-Root Independence](../tests/T161-detector-control-root-independence.md)
+- [T169: Detector Deployment-Archetype Screen](../tests/T169-detector-deployment-archetype-screen.md)

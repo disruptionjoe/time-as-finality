@@ -2,8 +2,9 @@
 
 ## Status
 
-Specification only. No executable model, result artifact, or claim promotion
-exists yet.
+Implemented v0.1. This is a finite connection-definition prerequisite, not a
+curvature, gravity, torsion, anomaly, spacetime, or physical-observable
+upgrade.
 
 ## Route
 
@@ -258,6 +259,61 @@ That would still be only a connection-definition prerequisite. It would not
 establish a physical geometry, a spacetime derivation, or a new physical
 observable.
 
+## v0.1 Result
+
+T125 is now implemented as a finite provenance-aware transport checker.
+
+The executable artifact defines boundary objects, transport arrows,
+boundary-delta records, composition audits, and closed-loop audits over the
+T111 reference system.
+
+The main result is:
+
+```text
+pure relabeling transports close as identity;
+access-boundary transports carry typed deltas;
+lossy or boundary-changing loops retain residual provenance;
+hostile or scalarized maps are undefined.
+```
+
+The reference profile remains:
+
+```text
+(4, 2, 2, 2)
+```
+
+The access-refined and access-coarsened profiles are:
+
+```text
+refined  = (2, 2, 2, 0)
+coarsened = (5, 3, 3, 3)
+```
+
+Pure gauge loops return identity. A refinement/restore loop and a
+coarsen/restrict loop can return the same tuple, but they do not become
+gauge-trivial: both retain residual boundary deltas. This is the central
+guardrail for any future flatness or holonomy language.
+
+Negative controls reject missing boundary provenance, record-incidence break,
+holder-partition merge, causal non-isomorphism, and scalarization of the D1
+tuple before transport.
+
+## Executable Artifacts
+
+```bash
+python -m unittest tests.test_d1_boundary_connection_transport -v
+python -m models.run_t125
+```
+
+Artifacts:
+
+- [`models/d1_boundary_connection_transport.py`](../models/d1_boundary_connection_transport.py)
+- [`models/run_t125.py`](../models/run_t125.py)
+- [`tests/test_d1_boundary_connection_transport.py`](test_d1_boundary_connection_transport.py)
+- [`results/d1-boundary-connection-transport-v0.1.json`](../results/d1-boundary-connection-transport-v0.1.json)
+- [`results/d1-boundary-connection-transport-v0.1-results.md`](../results/d1-boundary-connection-transport-v0.1-results.md)
+- [`technical-reports/TECHNICAL-REPORT-d1-boundary-connection-transport-v0.1.md`](../technical-reports/TECHNICAL-REPORT-d1-boundary-connection-transport-v0.1.md)
+
 ## Known Guardrails
 
 - Gauge language is technical and must be earned by the finite maps.
@@ -270,7 +326,7 @@ observable.
 
 ## Contribution Needed
 
-Implement the finite boundary-object fixtures and transport checker. The first
-deliverable should be a small exhaustive audit over identity, composition,
-closed-loop transport, provenance-bearing boundary deltas, and the negative
-controls above.
+Define the next finite flatness or holonomy audit over the T125 transport
+object. The next result should still reject curvature and gravity language
+unless a nontrivial loop invariant survives pure relabeling and
+access-boundary absorbers.

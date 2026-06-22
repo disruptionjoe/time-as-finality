@@ -93,8 +93,8 @@ high-leverage kickoff queue is now assigned:
    resource/export payment, hidden environment, omitted return path, or
    constructor stipulation. It protects the T18 line from turning conditional
    constructor structure into a physical arrow claim.
-2. **T125: D1 boundary connection transport** for finality gauge theory:
-   define identity, composition, closed-loop transport, and provenance-bearing
+2. **Completed by T125:** D1 boundary connection transport now defines
+   identity, composition, closed-loop transport, and provenance-bearing
    access-boundary deltas before any curvature, gravity, or torsion language.
 3. **Completed by T126/T154:** Finality-colimit causal-set embeddability audit
    for S1. T126 supplies the finite necessary-condition screen; T154 passes the
@@ -110,9 +110,11 @@ high-leverage kickoff queue is now assigned:
 
 T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
 language. T148 makes the paper-facing demotion explicit after the T145 fixed-
-accounting screen. T125 remains open/specification-only; T126 and T127 have now
-been implemented as negative or blocking audits, and T154 confirms that the
-actual T54/T58 finality-colimit bridge is scale-blocked before any geometry
+accounting screen. T125 is implemented as a finite connection-definition
+prerequisite: pure relabeling loops close, access-boundary loops retain
+residual deltas, and hostile/scalarized maps are undefined. T126 and T127 have
+now been implemented as negative or blocking audits, and T154 confirms that
+the actual T54/T58 finality-colimit bridge is scale-blocked before any geometry
 claim. Existing number conflicts have been resolved by keeping T58, T88, and
 T115 for their canonical indexed artifacts and moving the colliding side tracks
 to T130-T132.

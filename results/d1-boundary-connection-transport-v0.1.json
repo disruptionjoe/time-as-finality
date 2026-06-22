@@ -1,0 +1,1959 @@
+{
+  "objects": [
+    {
+      "boundary_id": "B0",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "reference_boundary"
+      ]
+    },
+    {
+      "boundary_id": "B0_observer_relabel",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "observer_relabeling"
+      ]
+    },
+    {
+      "boundary_id": "B0_record_relabel",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "record_label_permutation"
+      ]
+    },
+    {
+      "boundary_id": "B0_holder_relabel",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "holder_relabeling"
+      ]
+    },
+    {
+      "boundary_id": "B0_causal_relabel",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "causal_graph_isomorphism"
+      ]
+    },
+    {
+      "boundary_id": "B_refined",
+      "profile": {
+        "accessible_support": 2,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 0,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "provenance": [
+        "access_boundary_refinement"
+      ]
+    },
+    {
+      "boundary_id": "B_coarsened",
+      "profile": {
+        "accessible_support": 5,
+        "distinct_holder_redundancy": 3,
+        "causal_branch_support": 3,
+        "graph_reversal_count": 3,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "provenance": [
+        "access_boundary_coarsening"
+      ]
+    },
+    {
+      "boundary_id": "B_bad_record",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 1,
+        "causal_branch_support": 1,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          1,
+          1,
+          2
+        ]
+      },
+      "provenance": [
+        "negative_record_incidence_break"
+      ]
+    },
+    {
+      "boundary_id": "B_bad_holder",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 1,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          1,
+          2,
+          2
+        ]
+      },
+      "provenance": [
+        "negative_holder_partition_merge"
+      ]
+    },
+    {
+      "boundary_id": "B_bad_causal",
+      "profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 1,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          1,
+          2
+        ]
+      },
+      "provenance": [
+        "negative_causal_nonisomorphism"
+      ]
+    }
+  ],
+  "transport_audits": [
+    {
+      "arrow_id": "id_B0",
+      "source": "B0",
+      "target": "B0",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B0"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B0_observer_relabel",
+      "source": "B0_observer_relabel",
+      "target": "B0_observer_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B0_observer_relabel"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B0_record_relabel",
+      "source": "B0_record_relabel",
+      "target": "B0_record_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B0_record_relabel"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B0_holder_relabel",
+      "source": "B0_holder_relabel",
+      "target": "B0_holder_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B0_holder_relabel"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B0_causal_relabel",
+      "source": "B0_causal_relabel",
+      "target": "B0_causal_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B0_causal_relabel"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B_refined",
+      "source": "B_refined",
+      "target": "B_refined",
+      "transported_profile": {
+        "accessible_support": 2,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 0,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 2,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 0,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 2,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 0,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B_refined"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "id_B_coarsened",
+      "source": "B_coarsened",
+      "target": "B_coarsened",
+      "transported_profile": {
+        "accessible_support": 5,
+        "distinct_holder_redundancy": 3,
+        "causal_branch_support": 3,
+        "graph_reversal_count": 3,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 5,
+          "distinct_holder_redundancy": 3,
+          "causal_branch_support": 3,
+          "graph_reversal_count": 3,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            5,
+            3,
+            3,
+            3
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 5,
+          "distinct_holder_redundancy": 3,
+          "causal_branch_support": 3,
+          "graph_reversal_count": 3,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            5,
+            3,
+            3,
+            3
+          ]
+        },
+        "operation_kind": "identity",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "identity",
+      "provenance_trace": [
+        "identity_transport",
+        "B_coarsened"
+      ],
+      "interpretation": "Identity transport preserves the source boundary profile exactly."
+    },
+    {
+      "arrow_id": "gauge_observer",
+      "source": "B0",
+      "target": "B0_observer_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "pure_gauge_relabeling",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [
+          "observer_id"
+        ],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "pure_gauge_identity_delta",
+      "provenance_trace": [
+        "observer_id_bijection"
+      ],
+      "interpretation": "Pure relabeling preserves the D1 tuple and records only gauge provenance."
+    },
+    {
+      "arrow_id": "gauge_observer_back",
+      "source": "B0_observer_relabel",
+      "target": "B0",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "pure_gauge_relabeling",
+        "changed_records": [],
+        "changed_holders": [],
+        "changed_access_boundary": [
+          "observer_id"
+        ],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "pure_gauge_identity_delta",
+      "provenance_trace": [
+        "observer_id_inverse_bijection"
+      ],
+      "interpretation": "Pure relabeling preserves the D1 tuple and records only gauge provenance."
+    },
+    {
+      "arrow_id": "gauge_record",
+      "source": "B0",
+      "target": "B0_record_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "pure_gauge_relabeling",
+        "changed_records": [
+          "('r_aux', 'aux', 'h_aux')",
+          "('r_left_1', 'left', 'h_left_1')",
+          "('r_left_2', 'left_archive', 'h_left_2')",
+          "('r_right_1', 'right', 'h_right_1')",
+          "('r_right_2', 'right_archive', 'h_right_2')",
+          "('rho_10', 'left_archive', 'h_left_2')",
+          "('rho_20', 'right_archive', 'h_right_2')",
+          "('rho_30', 'left', 'h_left_1')",
+          "('rho_40', 'right', 'h_right_1')",
+          "('rho_50', 'aux', 'h_aux')"
+        ],
+        "changed_holders": [],
+        "changed_access_boundary": [],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "pure_gauge_identity_delta",
+      "provenance_trace": [
+        "record_id_bijection"
+      ],
+      "interpretation": "Pure relabeling preserves the D1 tuple and records only gauge provenance."
+    },
+    {
+      "arrow_id": "gauge_holder",
+      "source": "B0",
+      "target": "B0_holder_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "pure_gauge_relabeling",
+        "changed_records": [
+          "('r_aux', 'aux', 'H_Aux')",
+          "('r_aux', 'aux', 'h_aux')",
+          "('r_left_1', 'left', 'H_La')",
+          "('r_left_1', 'left', 'h_left_1')",
+          "('r_left_2', 'left_archive', 'H_Lb')",
+          "('r_left_2', 'left_archive', 'h_left_2')",
+          "('r_right_1', 'right', 'H_Ra')",
+          "('r_right_1', 'right', 'h_right_1')",
+          "('r_right_2', 'right_archive', 'H_Rb')",
+          "('r_right_2', 'right_archive', 'h_right_2')"
+        ],
+        "changed_holders": [
+          "('H_Aux', 'aux_family')",
+          "('H_La', 'left_family')",
+          "('H_Lb', 'left_family')",
+          "('H_Ra', 'right_family')",
+          "('H_Rb', 'right_family')",
+          "('h_aux', 'aux_family')",
+          "('h_left_1', 'left_family')",
+          "('h_left_2', 'left_family')",
+          "('h_right_1', 'right_family')",
+          "('h_right_2', 'right_family')",
+          "access:H_La",
+          "access:H_Lb",
+          "access:H_Ra",
+          "access:H_Rb",
+          "access:h_left_1",
+          "access:h_left_2",
+          "access:h_right_1",
+          "access:h_right_2"
+        ],
+        "changed_access_boundary": [
+          "accessible_holders"
+        ],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "pure_gauge_identity_delta",
+      "provenance_trace": [
+        "holder_id_bijection_with_partition"
+      ],
+      "interpretation": "Pure relabeling preserves the D1 tuple and records only gauge provenance."
+    },
+    {
+      "arrow_id": "gauge_causal",
+      "source": "B0",
+      "target": "B0_causal_relabel",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "pure_gauge_relabeling",
+        "changed_records": [
+          "('r_aux', 'aux', 'h_aux')",
+          "('r_aux', 'sigma_A', 'h_aux')",
+          "('r_left_1', 'left', 'h_left_1')",
+          "('r_left_1', 'sigma_L', 'h_left_1')",
+          "('r_left_2', 'left_archive', 'h_left_2')",
+          "('r_left_2', 'sigma_L2', 'h_left_2')",
+          "('r_right_1', 'right', 'h_right_1')",
+          "('r_right_1', 'sigma_R', 'h_right_1')",
+          "('r_right_2', 'right_archive', 'h_right_2')",
+          "('r_right_2', 'sigma_R2', 'h_right_2')"
+        ],
+        "changed_holders": [],
+        "changed_access_boundary": [
+          "event_horizon"
+        ],
+        "changed_reachability": [
+          "event:aux",
+          "event:left",
+          "event:left_archive",
+          "event:observe",
+          "event:right",
+          "event:right_archive",
+          "event:sigma_0",
+          "event:sigma_A",
+          "event:sigma_L",
+          "event:sigma_L2",
+          "event:sigma_R",
+          "event:sigma_R2",
+          "event:sigma_obs",
+          "event:source",
+          "('aux', 'observe')",
+          "('left', 'left_archive')",
+          "('left_archive', 'observe')",
+          "('right', 'right_archive')",
+          "('right_archive', 'observe')",
+          "('sigma_0', 'sigma_A')",
+          "('sigma_0', 'sigma_L')",
+          "('sigma_0', 'sigma_R')",
+          "('sigma_A', 'sigma_obs')",
+          "('sigma_L', 'sigma_L2')",
+          "('sigma_L2', 'sigma_obs')",
+          "('sigma_R', 'sigma_R2')",
+          "('sigma_R2', 'sigma_obs')",
+          "('source', 'aux')",
+          "('source', 'left')",
+          "('source', 'right')"
+        ],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "pure_gauge_identity_delta",
+      "provenance_trace": [
+        "causal_graph_isomorphism"
+      ],
+      "interpretation": "Pure relabeling preserves the D1 tuple and records only gauge provenance."
+    },
+    {
+      "arrow_id": "refine_access",
+      "source": "B0",
+      "target": "B_refined",
+      "transported_profile": {
+        "accessible_support": 2,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 0,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 2,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 0,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        "operation_kind": "access_boundary_refinement",
+        "changed_records": [],
+        "changed_holders": [
+          "access:h_left_2",
+          "access:h_right_2"
+        ],
+        "changed_access_boundary": [
+          "accessible_holders"
+        ],
+        "changed_reachability": [],
+        "reversible": false,
+        "loss_notes": [
+          "records_hidden_from_target_boundary"
+        ]
+      },
+      "admissibility_verdict": "boundary_delta",
+      "provenance_trace": [
+        "drop_access_to_archive_holders"
+      ],
+      "interpretation": "Boundary transport is admissible because the profile change is carried as `access_boundary_refinement` provenance, not erased as gauge."
+    },
+    {
+      "arrow_id": "restore_from_refined_trace",
+      "source": "B_refined",
+      "target": "B0",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 2,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 0,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "access_boundary_coarsening_with_trace",
+        "changed_records": [],
+        "changed_holders": [
+          "access:h_left_2",
+          "access:h_right_2"
+        ],
+        "changed_access_boundary": [
+          "accessible_holders"
+        ],
+        "changed_reachability": [],
+        "reversible": true,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "boundary_delta",
+      "provenance_trace": [
+        "restore_access_using_retained_boundary_trace"
+      ],
+      "interpretation": "Boundary transport is admissible because the profile change is carried as `access_boundary_coarsening_with_trace` provenance, not erased as gauge."
+    },
+    {
+      "arrow_id": "coarsen_access",
+      "source": "B0",
+      "target": "B_coarsened",
+      "transported_profile": {
+        "accessible_support": 5,
+        "distinct_holder_redundancy": 3,
+        "causal_branch_support": 3,
+        "graph_reversal_count": 3,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 5,
+          "distinct_holder_redundancy": 3,
+          "causal_branch_support": 3,
+          "graph_reversal_count": 3,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            5,
+            3,
+            3,
+            3
+          ]
+        },
+        "operation_kind": "access_boundary_coarsening",
+        "changed_records": [],
+        "changed_holders": [
+          "access:h_aux"
+        ],
+        "changed_access_boundary": [
+          "accessible_holders"
+        ],
+        "changed_reachability": [],
+        "reversible": false,
+        "loss_notes": []
+      },
+      "admissibility_verdict": "boundary_delta",
+      "provenance_trace": [
+        "add_auxiliary_holder_access"
+      ],
+      "interpretation": "Boundary transport is admissible because the profile change is carried as `access_boundary_coarsening` provenance, not erased as gauge."
+    },
+    {
+      "arrow_id": "restrict_from_coarsened",
+      "source": "B_coarsened",
+      "target": "B0",
+      "transported_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "boundary_delta": {
+        "profile_before": {
+          "accessible_support": 5,
+          "distinct_holder_redundancy": 3,
+          "causal_branch_support": 3,
+          "graph_reversal_count": 3,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            5,
+            3,
+            3,
+            3
+          ]
+        },
+        "profile_after": {
+          "accessible_support": 4,
+          "distinct_holder_redundancy": 2,
+          "causal_branch_support": 2,
+          "graph_reversal_count": 2,
+          "tuple_order": [
+            "accessible_support",
+            "distinct_holder_redundancy",
+            "causal_branch_support",
+            "graph_reversal_count"
+          ],
+          "profile_tuple": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        "operation_kind": "access_boundary_refinement",
+        "changed_records": [],
+        "changed_holders": [
+          "access:h_aux"
+        ],
+        "changed_access_boundary": [
+          "accessible_holders"
+        ],
+        "changed_reachability": [],
+        "reversible": false,
+        "loss_notes": [
+          "auxiliary_access_removed"
+        ]
+      },
+      "admissibility_verdict": "boundary_delta",
+      "provenance_trace": [
+        "remove_auxiliary_holder_access"
+      ],
+      "interpretation": "Boundary transport is admissible because the profile change is carried as `access_boundary_refinement` provenance, not erased as gauge."
+    },
+    {
+      "arrow_id": "missing_boundary_provenance",
+      "source": "B0",
+      "target": "B_refined",
+      "transported_profile": null,
+      "boundary_delta": null,
+      "admissibility_verdict": "undefined",
+      "provenance_trace": [],
+      "interpretation": "Transport is undefined because the map lacks admissible provenance or breaks record, holder, access, or causal preservation."
+    },
+    {
+      "arrow_id": "bad_record_incidence",
+      "source": "B0",
+      "target": "B_bad_record",
+      "transported_profile": null,
+      "boundary_delta": null,
+      "admissibility_verdict": "undefined",
+      "provenance_trace": [
+        "invalid_record_event_holder_map"
+      ],
+      "interpretation": "Transport is undefined because the map lacks admissible provenance or breaks record, holder, access, or causal preservation."
+    },
+    {
+      "arrow_id": "bad_holder_partition",
+      "source": "B0",
+      "target": "B_bad_holder",
+      "transported_profile": null,
+      "boundary_delta": null,
+      "admissibility_verdict": "undefined",
+      "provenance_trace": [
+        "invalid_holder_partition_map"
+      ],
+      "interpretation": "Transport is undefined because the map lacks admissible provenance or breaks record, holder, access, or causal preservation."
+    },
+    {
+      "arrow_id": "bad_causal_reachability",
+      "source": "B0",
+      "target": "B_bad_causal",
+      "transported_profile": null,
+      "boundary_delta": null,
+      "admissibility_verdict": "undefined",
+      "provenance_trace": [
+        "invalid_causal_map"
+      ],
+      "interpretation": "Transport is undefined because the map lacks admissible provenance or breaks record, holder, access, or causal preservation."
+    },
+    {
+      "arrow_id": "scalarized_profile",
+      "source": "B0",
+      "target": "B0",
+      "transported_profile": null,
+      "boundary_delta": null,
+      "admissibility_verdict": "undefined",
+      "provenance_trace": [
+        "tuple_collapsed_to_sum"
+      ],
+      "interpretation": "Scalarization is undefined because T125 transports the D1 tuple, not a summed score."
+    }
+  ],
+  "composition_audits": [
+    {
+      "composition_id": "pure_gauge_record_then_identity",
+      "arrows": [
+        "gauge_record",
+        "id_B0_record_relabel"
+      ],
+      "direct_arrow": "gauge_record",
+      "composite_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "direct_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "deltas_preserved": true,
+      "admissibility_verdict": "composes_with_declared_direct_effect",
+      "provenance_trace": [
+        "record_id_bijection",
+        "identity_transport",
+        "B0_record_relabel"
+      ],
+      "interpretation": "Composition preserves ordered boundary provenance and reaches the declared target profile."
+    },
+    {
+      "composition_id": "refine_then_restore",
+      "arrows": [
+        "refine_access",
+        "restore_from_refined_trace"
+      ],
+      "direct_arrow": "id_B0",
+      "composite_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "direct_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "deltas_preserved": true,
+      "admissibility_verdict": "composes_with_declared_direct_effect",
+      "provenance_trace": [
+        "drop_access_to_archive_holders",
+        "restore_access_using_retained_boundary_trace"
+      ],
+      "interpretation": "Composition preserves ordered boundary provenance and reaches the declared target profile."
+    },
+    {
+      "composition_id": "coarsen_then_restrict",
+      "arrows": [
+        "coarsen_access",
+        "restrict_from_coarsened"
+      ],
+      "direct_arrow": "id_B0",
+      "composite_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "direct_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "deltas_preserved": true,
+      "admissibility_verdict": "composes_with_declared_direct_effect",
+      "provenance_trace": [
+        "add_auxiliary_holder_access",
+        "remove_auxiliary_holder_access"
+      ],
+      "interpretation": "Composition preserves ordered boundary provenance and reaches the declared target profile."
+    },
+    {
+      "composition_id": "undefined_middle_map",
+      "arrows": [
+        "missing_boundary_provenance",
+        "restore_from_refined_trace"
+      ],
+      "direct_arrow": null,
+      "composite_profile": null,
+      "direct_profile": null,
+      "deltas_preserved": false,
+      "admissibility_verdict": "undefined_intermediate",
+      "provenance_trace": [
+        "restore_access_using_retained_boundary_trace"
+      ],
+      "interpretation": "Composition is undefined because an intermediate transport is undefined."
+    }
+  ],
+  "loop_audits": [
+    {
+      "loop_id": "pure_observer_relabeling_loop",
+      "arrows": [
+        "gauge_observer",
+        "gauge_observer_back"
+      ],
+      "start_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "end_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classification": "identity_loop",
+      "residual_boundary_delta": false,
+      "provenance_trace": [
+        "observer_id_bijection",
+        "observer_id_inverse_bijection"
+      ],
+      "interpretation": "Loop returns the original profile with no residual boundary delta."
+    },
+    {
+      "loop_id": "refinement_restore_with_trace_loop",
+      "arrows": [
+        "refine_access",
+        "restore_from_refined_trace"
+      ],
+      "start_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "end_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classification": "closed_with_residual_boundary_delta",
+      "residual_boundary_delta": true,
+      "provenance_trace": [
+        "drop_access_to_archive_holders",
+        "restore_access_using_retained_boundary_trace"
+      ],
+      "interpretation": "Loop returns the profile but retains nontrivial boundary provenance."
+    },
+    {
+      "loop_id": "coarsen_restrict_lossy_boundary_loop",
+      "arrows": [
+        "coarsen_access",
+        "restrict_from_coarsened"
+      ],
+      "start_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "end_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "classification": "closed_with_residual_boundary_delta",
+      "residual_boundary_delta": true,
+      "provenance_trace": [
+        "add_auxiliary_holder_access",
+        "remove_auxiliary_holder_access"
+      ],
+      "interpretation": "Loop returns the profile but retains nontrivial boundary provenance."
+    },
+    {
+      "loop_id": "hostile_missing_provenance_loop",
+      "arrows": [
+        "missing_boundary_provenance",
+        "restore_from_refined_trace"
+      ],
+      "start_profile": {
+        "accessible_support": 4,
+        "distinct_holder_redundancy": 2,
+        "causal_branch_support": 2,
+        "graph_reversal_count": 2,
+        "tuple_order": [
+          "accessible_support",
+          "distinct_holder_redundancy",
+          "causal_branch_support",
+          "graph_reversal_count"
+        ],
+        "profile_tuple": [
+          4,
+          2,
+          2,
+          2
+        ]
+      },
+      "end_profile": null,
+      "classification": "undefined",
+      "residual_boundary_delta": true,
+      "provenance_trace": [
+        "restore_access_using_retained_boundary_trace"
+      ],
+      "interpretation": "Loop is undefined because at least one transport is inadmissible."
+    }
+  ],
+  "identity_passes": true,
+  "pure_gauge_loops_close": true,
+  "lossy_loops_report_residual_delta": true,
+  "hostile_maps_undefined": true,
+  "strongest_claim": "T125 implements a finite provenance-aware transport rule for boundary-indexed D1 profiles. Pure relabeling transports close as identity, access-boundary transports carry typed deltas, lossy loops retain residual boundary provenance, and hostile or scalarized maps are undefined.",
+  "improved": "The finality gauge-theory branch now has a connection-definition prerequisite: identity, composition, and closed-loop behavior are auditable before any curvature or gravity language is allowed.",
+  "weakened": "This weakens curvature talk. Profile changes across access boundaries are not gauge-invariant field strength; they are boundary data unless a later theorem defines a real curvature object over these transports.",
+  "falsification_condition": "T125 fails if an identity changes a D1 tuple, pure gauge transport changes a profile, composition discards intermediate provenance, a lossy boundary loop is treated as trivial, or a hostile map is silently repaired into an admissible transport.",
+  "claim_ledger_update": "Add T125 to D1/D1-Field as a formal transport prerequisite: D1 profiles can be carried across declared finite boundary maps only with provenance-bearing deltas; no curvature, gravity, torsion, or physical observable upgrade follows.",
+  "open_blocker": "No curvature functional, flatness criterion, continuum limit, Lorentzian covariance result, or physical reduction of branch support and reversal count exists.",
+  "recommended_next": "Use T125 to define a minimal flatness/holonomy audit over boundary loops, but keep it finite and reject gravity language until a nontrivial loop invariant survives relabeling and access-boundary absorbers."
+}

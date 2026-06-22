@@ -1,0 +1,82 @@
+{
+  "audits": [
+    {
+      "scenario_id": "scheduled_persistence_baseline",
+      "holonic_rule": "scheduled_window",
+      "forgotten_dims": [
+        "cross-level-recovery-detail"
+      ],
+      "micro_last_obstructed": 24,
+      "meso_last_obstructed": 29,
+      "lower_last_obstructed": 29,
+      "holonic_last_obstructed": 34,
+      "micro_relative_pg": 10,
+      "inherited_meso_gap": 5,
+      "residual_pg_after_lower_recovery": 5,
+      "residual_requires_explicit_retention": true,
+      "forgotten_dims_alone_generated_residual_pg": false,
+      "verdict": "scheduled_residual_pg_positive_control",
+      "interpretation": "PG relative to micro is 10, of which 5 comes from meso lag and 5 remains after lower-level recovery. The residual is scheduled by the holonic window."
+    },
+    {
+      "scenario_id": "no_explicit_persistence_with_forgotten_dims",
+      "holonic_rule": "propagate_current_lower",
+      "forgotten_dims": [
+        "cross-level-recovery-detail"
+      ],
+      "micro_last_obstructed": 24,
+      "meso_last_obstructed": 29,
+      "lower_last_obstructed": 29,
+      "holonic_last_obstructed": 29,
+      "micro_relative_pg": 5,
+      "inherited_meso_gap": 5,
+      "residual_pg_after_lower_recovery": 0,
+      "residual_requires_explicit_retention": false,
+      "forgotten_dims_alone_generated_residual_pg": false,
+      "verdict": "no_residual_pg_from_forgotten_dims",
+      "interpretation": "PG relative to micro is still 5, but it is entirely inherited from lower-level lag (5); residual PG after lower-level recovery is zero despite non-empty forgotten_dims."
+    },
+    {
+      "scenario_id": "no_forgotten_dims_control",
+      "holonic_rule": "propagate_current_lower",
+      "forgotten_dims": [],
+      "micro_last_obstructed": 24,
+      "meso_last_obstructed": 29,
+      "lower_last_obstructed": 29,
+      "holonic_last_obstructed": 29,
+      "micro_relative_pg": 5,
+      "inherited_meso_gap": 5,
+      "residual_pg_after_lower_recovery": 0,
+      "residual_requires_explicit_retention": false,
+      "forgotten_dims_alone_generated_residual_pg": false,
+      "verdict": "no_residual_pg_without_forgotten_dims",
+      "interpretation": "The no-forgotten-dims control also has zero residual PG, confirming that the propagated-current-lower rule itself carries no holonic recovery memory."
+    },
+    {
+      "scenario_id": "explicit_recovery_retention_positive_control",
+      "holonic_rule": "explicit_recovery_retention",
+      "forgotten_dims": [
+        "cross-level-recovery-detail"
+      ],
+      "micro_last_obstructed": 24,
+      "meso_last_obstructed": 29,
+      "lower_last_obstructed": 29,
+      "holonic_last_obstructed": 34,
+      "micro_relative_pg": 10,
+      "inherited_meso_gap": 5,
+      "residual_pg_after_lower_recovery": 5,
+      "residual_requires_explicit_retention": true,
+      "forgotten_dims_alone_generated_residual_pg": false,
+      "verdict": "explicit_retention_generates_residual_pg",
+      "interpretation": "Residual PG is 5, but it is produced by the explicit retention rule rather than by forgotten_dims alone."
+    }
+  ],
+  "baseline_residual_pg": 5,
+  "no_explicit_residual_pg": 0,
+  "no_explicit_micro_relative_pg": 5,
+  "strongest_result": "In this finite screen, non-empty forgotten_dims plus current lower-level propagation does not generate residual holonic persistence after all lower levels recover. The apparent PG relative to micro decomposes into meso inheritance plus any explicit holonic retention rule.",
+  "governance_signal": "Flag for future review only: the TS line remains useful as a diagnostic vocabulary, but PG should not be promoted as a new invariant unless a future topology screen produces residual PG without explicit retention or hidden scheduling.",
+  "claim_ledger_update": "None. T174 is a negative boundary screen, not a claim-status change.",
+  "suggested_next": "Run MINI-GOAL-TS-003 over tree, linear, ring, and dense TTN topologies using residual PG after lower-level recovery as the primary metric.",
+  "not_claimed": "T174 does not prove that no TTN topology can create residual PG, does not add a recovery operation, and does not change H1, HEF, or any lifecycle state."
+}

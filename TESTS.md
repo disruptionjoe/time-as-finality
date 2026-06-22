@@ -73,6 +73,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T38](tests/T38-minimal-multiscale-transport.md) | Minimal multiscale transport | H1+, T26, T31, T37 | implemented: H0 covers 3/10 questions; H1 covers 8/10; H1+ (TypedTransportNetwork + CompressionRecord + EmergenceRecord) covers all 10; H2 and H3 not required |
 | [T39](tests/T39-csp-satisfiability-reframing.md) | CSP / satisfiability reframing | PO1, T26, T31, T38 | implemented: PO1 gluing obstruction = binary {-1,1} parity-conflict CSP; arc consistency trivially true; typed projection (AC5, AC7) and admissibility classification are new structure not expressible in standard CSP; H_B best supported |
 | [T40](tests/T40-holarchy-lab.md) | Holarchy lab — emergent holonic finality | D1, PO1, TTN, T38, T39 | implemented: holonic emergence confirmed (3-node triangle obstruction from micro-compatible nodes); cross-level AC5 necessary for holonic PO1; H_B best supported |
+| [T174](tests/T174-ts-forgotten-dims-pg-screen.md) | Forgotten-dims persistence-gap screen | H1 boundary, T40, TS-PERSONA-SPRINT-001 | implemented: non-empty `forgotten_dims` plus current lower-level propagation produces no residual holonic PG after all lower levels recover; micro-relative PG decomposes into meso inheritance plus explicit retention |
 | [T41](tests/T41-typed-transport-category.md) | Typed transport category prototype | D1, PO1, T26, T31, T34, T37 | implemented: D1RestrictionMorphisms form a proper category (associativity 4/4, left unit 5/5, right unit 5/5); PO1 is not a Boolean functor on D1Cat (T34 restated in categorical language); H_A best supported |
 | [T42](tests/T42-local-persistence-reconciliation-split.md) | Local persistence and reconciliation split audit | R1, G2, D1, T3 | implemented: LocalPersistenceReconciliationSystem separates local accumulation from reconciliation lag; four witnesses pass (delay-only, accumulation-only, both, null); H2 best supported |
 | [T43](tests/T43-local-persistence-mechanisms.md) | Local persistence accumulation mechanism audit | R1, G2, D1, T42 | implemented: intrinsic rate, resource budget, and interaction density produce local differences with propagation fixed; propagation-shadow rejected; H4 best supported |
@@ -188,6 +189,7 @@ python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
 python -m models.run_t172
+python -m models.run_t174
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117

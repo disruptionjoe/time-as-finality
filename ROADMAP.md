@@ -727,11 +727,14 @@ Whether this gap warrants a new operation or is a deliberate modeling choice
 
 **Open goals from the sprint:**
 
-MINI-GOAL-TS-002: Test whether PG (persistence gap) emerges from non-empty
-forgotten_dims without explicit constraint scheduling. Required: modify
-`_holonic_constraints()` to remove the hardcoded persistence window (steps 30-34)
-and test whether PG > 0 still appears via TTN topology alone. If yes, PG may
-be a new invariant. If no, it remains a derived observable.
+**Completed by T174:** MINI-GOAL-TS-002 tested whether PG (persistence gap)
+emerges from non-empty `forgotten_dims` without explicit holonic persistence
+scheduling. T174 separates PG relative to micro from residual PG after all
+lower-level obstructions recover. In the current propagated-lower-level fixture,
+non-empty `forgotten_dims` produces `0` residual PG; the remaining micro-relative
+PG is inherited from meso lag. Positive residual PG appears only in the explicit
+retention controls. Result: PG remains a derived observable in this fixture, not
+a new invariant.
 
 MINI-GOAL-TS-003: Identify under what TTN topologies (tree / dense / ring /
 linear) the holonic dwell asymmetry vanishes (PG=0). If PG=0 is achievable with

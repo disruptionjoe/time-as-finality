@@ -429,9 +429,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P40 - Legal Scholar
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-22T02:07:32-05:00
+- artifact: explorations/persona-goal-runs/2026-06-22-020732-p40-legal-finality-authority-audit.md
 - goal: Use legal finality to formalize authority, appeal, jurisdiction, and
   reversal as a hostile analogy for observer-relative validity.
 - ambition: Clarify authority-bound records without importing legal metaphor into

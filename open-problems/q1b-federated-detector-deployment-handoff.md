@@ -36,7 +36,9 @@ drift.
 The live question is not whether a lab has accurate time tags. The question is
 whether the lab can precommit the full evidence object without collapsing the
 archive and trust-audit roles into self-certification, including hidden
-collapses through shared critical control roots.
+collapses through shared critical control roots, and whether it will later
+make the full bound event rows reviewable during the challenge window rather
+than substituting proofs, summaries, private escrow, or delayed release.
 
 ## Issue Draft
 
@@ -114,6 +116,9 @@ After event collection, the group must publish or make reviewable:
    if the claimed tier is `claim_review`.
 9. Enough key/root provenance to audit whether the declared authority split was
    operationally real rather than nominal only.
+10. Reviewable access to the full bound event rows during the challenge window,
+    not merely aggregate summaries, proof certificates, sampled rows, delayed
+    release, or auditor statements about private escrow.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -145,6 +150,9 @@ Treat the route as null for Q1B if any of these occur:
   boundary.
 - Hostile controls are absent or only reported as aggregate pass/fail claims.
 - The group cannot publish or independently escrow packet rows.
+- The group can only offer proof-only, summary-only, sampled-row, private-
+  escrow-only, or delayed-release substitutes instead of reviewable full rows
+  during the challenge window.
 
 ## Decision Rule
 
@@ -155,9 +163,9 @@ Future autonomous runs should prefer thermodynamic-arrow,
 spacetime-reconstruction, or formal-machinery targets unless a concrete Q1B
 signatory appears.
 
-If a group can sign the manifest but refuses event-level packet review after
-collection, Q1B remains a scaffold-only protocol and gains no empirical
-support.
+If a group can sign the manifest but refuses full event-level packet review
+during the challenge window after collection, Q1B remains a scaffold-only
+protocol and gains no empirical support.
 
 ## What This Would Improve
 
@@ -179,4 +187,6 @@ stay below active quantum-measurement work.
 Q1B remains `externally_blocked`. The next non-null artifact is not another
 model; it is a named detector deployment that signs the T136/T138 manifest
 pre-data, exposes a T161-valid control-root map, and later supplies real
-event-level packet rows. Without that, Q1B is an admissibility scaffold only.
+event-level packet rows in the stronger T171 sense: full reviewable rows during
+the challenge window with independent escrow. Without that, Q1B is an
+admissibility scaffold only.

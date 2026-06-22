@@ -1,0 +1,117 @@
+{
+  "audits": [
+    {
+      "substitute_id": "aggregate_summary_only",
+      "preserved_operations": [
+        "audit_authority"
+      ],
+      "operations_missing_vs_claim_review": [
+        "certify_packet",
+        "challenge_packet",
+        "reconstruct_event",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "classification": "scaffold_only_summary_or_proof_substitute",
+      "required_next": "Release full event-level rows instead of summaries or proof certificates.",
+      "interpretation": "aggregate_summary_only is scaffold-only because it drops certify_packet, challenge_packet, reconstruct_event, use_for_detector_claim_review, verify_lineage."
+    },
+    {
+      "substitute_id": "signed_proof_certificate_only",
+      "preserved_operations": [
+        "audit_authority"
+      ],
+      "operations_missing_vs_claim_review": [
+        "certify_packet",
+        "challenge_packet",
+        "reconstruct_event",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "classification": "scaffold_only_summary_or_proof_substitute",
+      "required_next": "Release full event-level rows instead of summaries or proof certificates.",
+      "interpretation": "signed_proof_certificate_only is scaffold-only because it drops certify_packet, challenge_packet, reconstruct_event, use_for_detector_claim_review, verify_lineage."
+    },
+    {
+      "substitute_id": "private_escrow_with_auditor_statement",
+      "preserved_operations": [
+        "audit_authority"
+      ],
+      "operations_missing_vs_claim_review": [
+        "certify_packet",
+        "challenge_packet",
+        "reconstruct_event",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "classification": "scaffold_only_private_escrow_without_review",
+      "required_next": "Grant outside review rights over the escrowed full rows during the challenge window.",
+      "interpretation": "private_escrow_with_auditor_statement is scaffold-only because it drops certify_packet, challenge_packet, reconstruct_event, use_for_detector_claim_review, verify_lineage."
+    },
+    {
+      "substitute_id": "sampled_public_rows",
+      "preserved_operations": [
+        "audit_authority",
+        "challenge_packet",
+        "verify_lineage"
+      ],
+      "operations_missing_vs_claim_review": [
+        "certify_packet",
+        "reconstruct_event",
+        "use_for_detector_claim_review"
+      ],
+      "classification": "scaffold_only_partial_row_visibility",
+      "required_next": "Expose the full bound event-row packet, not a sample or subset.",
+      "interpretation": "sampled_public_rows is scaffold-only because it drops certify_packet, reconstruct_event, use_for_detector_claim_review."
+    },
+    {
+      "substitute_id": "delayed_full_rows_after_challenge_window",
+      "preserved_operations": [
+        "audit_authority",
+        "reconstruct_event",
+        "verify_lineage"
+      ],
+      "operations_missing_vs_claim_review": [
+        "certify_packet",
+        "challenge_packet",
+        "use_for_detector_claim_review"
+      ],
+      "classification": "scaffold_only_late_review_window",
+      "required_next": "Release the full reviewable row packet before challenge or revocation rights expire.",
+      "interpretation": "delayed_full_rows_after_challenge_window is scaffold-only because it drops certify_packet, challenge_packet, use_for_detector_claim_review."
+    },
+    {
+      "substitute_id": "reviewable_full_rows_with_independent_escrow",
+      "preserved_operations": [
+        "audit_authority",
+        "certify_packet",
+        "challenge_packet",
+        "reconstruct_event",
+        "use_for_detector_claim_review",
+        "verify_lineage"
+      ],
+      "operations_missing_vs_claim_review": [],
+      "classification": "live_reviewable_row_path",
+      "required_next": "Find a named collaboration willing to sign and populate this exact route.",
+      "interpretation": "reviewable_full_rows_with_independent_escrow preserves the full claim-review operation set and is the only live T171 route."
+    }
+  ],
+  "scaffold_only_substitutes": [
+    "aggregate_summary_only",
+    "signed_proof_certificate_only",
+    "private_escrow_with_auditor_statement",
+    "sampled_public_rows",
+    "delayed_full_rows_after_challenge_window"
+  ],
+  "live_row_review_substitutes": [
+    "reviewable_full_rows_with_independent_escrow"
+  ],
+  "strongest_claim": "Within the lone T169 survivor, reviewable full event rows are not replaceable by summaries, proofs, sampled publication, private escrow, or delayed release. Claim-review operations survive only when the full bound row packet is reviewable during the challenge window and independently escrowed.",
+  "improved": "T171 turns the phrase 'reviewable rows' into a concrete capability requirement. Q1B can now say exactly why proof-only, escrow-only, sampled-row, and delayed-release workflows remain scaffold rather than live evidence routes.",
+  "weakened": "This weakens the practical Q1B frontier again. Several plausible compromise workflows that sound rigorous at first pass still lose reconstruction or challenge operations and therefore do not clear claim review.",
+  "falsification_condition": "T171 fails if any proof-only, summary-only, sampled-row, escrow-only, or delayed-release workflow preserves the same claim-review operations as full reviewable rows under the same pre-data manifest and control-root assumptions.",
+  "q1b_update": "Q1B remains externally blocked. T171 sharpens T169: the row commitment must mean full event-level rows reviewable during the challenge window, not merely summaries, proofs, samples, delayed release, or private escrow.",
+  "claim_ledger_update": "Add T171 to Q1B: within the surviving T169 federation class, proof-only, escrow-only, sampled-row, and delayed-release substitutes are scaffold-only because they drop reconstruction or challenge rights. Only full reviewable rows with independent escrow remain live.",
+  "open_blocker": "No named detector workflow in the repo currently accepts the full T171 burden: reviewable full rows before challenge expiry plus independent escrow under a pre-data claim-review manifest.",
+  "recommended_next": "Map one named collaboration onto the T169/T171 live route and ask whether it can expose full event rows during the challenge window. If not, demote Q1B below the active frontier."
+}

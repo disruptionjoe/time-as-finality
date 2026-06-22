@@ -36,9 +36,11 @@ publication, or revocation control roots are shared, because those hidden
 merges collapse the effective authority partition back into self-certification.
 T169 narrows the surviving frontier again: even an honest pre-data federation
 is scaffold-only unless it also commits to later reviewable event-level rows
-without schema drift. The only live external candidate class is now a pre-data
-claim-review federation with distinct critical roots and a reviewable row
-commitment.
+without schema drift. T171 then sharpens what that commitment must mean:
+proof-only, escrow-only, sampled-row, and delayed-release substitutes are
+scaffold-only because they lose reconstruction or challenge rights. The only
+live external candidate class is now a pre-data claim-review federation with
+distinct critical roots and full reviewable rows during the challenge window.
 
 ## Earned Content
 
@@ -75,6 +77,11 @@ commitment.
   matters, nominal federations with shared roots are null, private escrow
   without reviewable rows is scaffold-only, and only a reviewable-row
   federation remains live as an external candidate.
+- T171 resolves the last ambiguity inside that surviving class: reviewable-row
+  means the full bound event-level packet is reviewable during the challenge
+  window with independent escrow. Aggregate summaries, proof certificates,
+  private escrow with auditor statements, sampled public rows, and late full
+  release after challenge expiry are all scaffold-only substitutes.
 
 ## Not Earned
 
@@ -88,6 +95,9 @@ commitment.
   that its nominal authority split is operationally independent.
 - No named real lab in the repo instantiates the lone T169 surviving
   reviewable-row federation archetype.
+- No named real lab in the repo currently accepts the stronger T171 burden of
+  full reviewable rows before challenge expiry rather than proof-only,
+  summary-only, sampled-row, or private-escrow substitutes.
 
 ## Falsification Or Demotion Condition
 
@@ -95,7 +105,10 @@ If no named realistic lab workflow can sign and freeze the federated T138/T136
 manifest before data collection, including the claimed tier, wrapper fields,
 T100-compatible nominal authority partition, and a critical control-root map
 whose effective partition remains admissible under T161, then detector
-provenance should be demoted below the active Q1 frontier.
+provenance should be demoted below the active Q1 frontier. The same demotion
+applies if realistic groups can only offer proof-only, escrow-only,
+sampled-row, or delayed-release substitutes instead of T171-level full
+reviewable rows during the challenge window.
 
 ## Reinstatement Condition
 
@@ -104,8 +117,10 @@ manifest satisfying the T138 workflow-fit gate before event collection, fills
 the bound event-level packet without changing schema, authority, tier, or
 wrapper policy, exposes enough control-root data to show that the T161
 effective authority partition remains admissible, passes the T87/T97/T100 and
-T121/T133 gates, satisfies the T169 reviewable-row commitment, and then yields
-a verdict that survives the T83 null criterion.
+T121/T133 gates, satisfies the T169 reviewable-row commitment in the stronger
+T171 sense of full reviewable rows during the challenge window with
+independent escrow, and then yields a verdict that survives the T83 null
+criterion.
 
 ## Operational Handoff
 
@@ -132,3 +147,4 @@ trust-audit roles before detector events.
 - [T138: Detector Manifest Workflow Fit](../tests/T138-detector-manifest-workflow-fit.md)
 - [T161: Detector Control-Root Independence](../tests/T161-detector-control-root-independence.md)
 - [T169: Detector Deployment-Archetype Screen](../tests/T169-detector-deployment-archetype-screen.md)
+- [T171: Detector Row-Review Substitution Screen](../tests/T171-detector-row-review-substitution-screen.md)

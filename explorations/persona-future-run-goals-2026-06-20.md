@@ -402,9 +402,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P37 - Type-System Designer
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T22:07:34-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-220734-p37-typed-loss-calculus-audit.md
 - goal: Write a typed-loss calculus with syntax, judgments, preservation, progress
   or deliberate failure, and composition rules.
 - ambition: Make "typed loss" earn the word typed.

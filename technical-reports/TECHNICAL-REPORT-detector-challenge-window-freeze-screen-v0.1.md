@@ -131,6 +131,14 @@ The current result says only that, within the repo's surviving Q1B route, a
 mutable challenge-window policy does not support the kind of outside review
 rights the branch now requires.
 
+This should not be read as a claim that emergency, legal, or safety procedures
+are illegitimate in real detector collaborations. The narrower red-team point
+is that any such procedure exits the current Q1B claim-review route unless it
+is predeclared and audited as a preserved-rights successor policy. In
+particular, the successor policy must still show that archive custody, escrow,
+and trust cannot be bypassed on the critical release, revocation, and audit
+actions.
+
 ## Falsification Condition
 
 T176 fails if a workflow should still count for Q1B even though it can change

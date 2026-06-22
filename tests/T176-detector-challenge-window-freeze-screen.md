@@ -66,6 +66,15 @@ Include positive and negative fixtures:
   mutation can bypass it.
 - The result is described as detector evidence rather than a governance burden.
 
+## Boundary Note
+
+T176 does not claim that real collaborations can never have emergency, legal,
+or safety procedures. It only says that an unmodeled post-data procedure that
+can rewrite guardian identity or critical challenge-window rights is null for
+the current Q1B claim-review route. A predeclared exception or successor
+policy would need its own T175/T176-style audit showing that archive custody,
+escrow, and trust cannot be bypassed during the review window.
+
 ## Claim Impact
 
 Q1B remains `externally_blocked`.

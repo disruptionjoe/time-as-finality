@@ -190,6 +190,10 @@ Treat the route as null for Q1B if any of these occur:
   on the critical challenge-window actions they are meant to guard.
 - The group retains break-glass override, guardian replacement, trust
   suspension, or other challenge-window policy mutation after data collection.
+- The group has emergency, legal, or safety exception procedures that can
+  change the guardian roster or critical challenge-window rights, unless those
+  procedures are frozen pre-data and separately audited as preserving the same
+  mandatory archive, escrow, and trust guardians.
 
 ## Decision Rule
 

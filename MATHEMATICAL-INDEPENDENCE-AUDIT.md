@@ -236,6 +236,23 @@ quantum-branch admissibility gates, H7 absorber triage, and persona exploratory
 notes; then send the neutral TF1/LossKernel and capability-projection
 factorization statements to an external mathematics or theoretical-CS reviewer.
 
+## Staleness Update - 2026-06-22 Stewardship Run
+
+The audit remains stale relative to the current test registry. The repository
+now lists 175 `T*.md` test notes, up by 13 since the 2026-06-21 late
+stewardship note. Independent motivation remains **UNKNOWN**: the added work
+mostly tightens H7 sector and issuance absorber screens, Q1B detector
+claim-review authority gates, a Q1D correlation-record guardrail, S1 finite
+calibration, and time-series persistence-gap diagnostics. None of that replaces
+external mathematical motivation.
+
+Minimum next audit action: produce v0.8 as a post-T175 audit that separates
+neutral theorem-ladder progress from H7 absorber mapping, detector-provenance
+workflow gates, Q1D language guardrails, S1 finite calibration, and
+persona-governance notes; then send the neutral TF1/LossKernel and
+capability-projection factorization statements to an external mathematics or
+theoretical-CS reviewer.
+
 ---
 
 ## What Would Advance Independence
@@ -273,3 +290,4 @@ factorization statements to an external mathematics or theoretical-CS reviewer.
 | 2026-06-20 | stewardship staleness note | Test registry has grown to 134 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T133/post-P11 v0.8 audit plus external review of neutral TF1/LossKernel and capability-projection factorization statements. |
 | 2026-06-21 | stewardship staleness note | Test registry has grown to 148 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T147 v0.8 audit that separates neutral theorem-ladder progress from branch-gate closure, absorber calibration, persona-governance notes, and TaF-specific stress tests. |
 | 2026-06-21 | late stewardship staleness note | Test registry has grown to 162 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T161 v0.8 audit that separates neutral theorem-ladder progress from S1 calibration screens, quantum-branch gates, H7 absorber triage, and persona exploratory notes. |
+| 2026-06-22 | stewardship staleness note | Test registry has grown to 175 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T175 v0.8 audit that separates neutral theorem-ladder progress from H7 absorber mapping, detector workflow gates, Q1D guardrails, S1 finite calibration, time-series diagnostics, and persona-governance notes. |

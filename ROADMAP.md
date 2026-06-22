@@ -119,7 +119,8 @@ to T130-T132.
 
 Recent P10/P11 persona-goal runs and the Candidate North Star capability
 projection folder are useful parking material, not sequence changes. Later
-P21-P35 persona-goal runs and the North Star v0.8 physics backlog are likewise
+P21-P39 persona-goal runs, the North Star v0.8 physics backlog, and the
+North Star 62-persona steelman pass are likewise
 geometry-probe, absorber-pressure, representation-boundary,
 observer-filtering, safe-conditioning, or prior-art translation material:
 useful for kill matrices, known-theory capability audits, gauge gates,
@@ -127,15 +128,20 @@ finite-to-smooth bridge gates, operation/resource ledgers,
 philosophy-of-science kill criteria, resource-theory calibration, biological
 and neuroscience operationalization filters, representation-invariance
 guardrails, cognitive salience/abstraction filters, reinforcement-learning
-safe-conditioning language, semantic-merge provenance checks, and database
-provenance translation, but not replacements for the T125 plus TF1/S1 gate
-work. T149-T167, N8-N12, and the Q1A/Q1B/Q1C/H7 handoffs are branch-gate
-closures, absorber maps, calibration/fragility screens, or demotion/testability
-artifacts, not a new roadmap sequence. The new `workflows/` layer should be
+safe-conditioning language, semantic-merge provenance checks, database
+provenance translation, declassification/authorization baselines, typed-loss
+calculus checks, detector tail-risk pressure, and economic-finality collapse
+lenses, but not replacements for the T125 plus TF1/S1 gate work. T149-T175,
+N8-N13, the Temporal Issuance source-object synthesis, and the
+Q1A/Q1B/Q1C/Q1D/H7 handoffs are branch-gate
+closures, absorber maps, calibration/fragility screens, detector workflow
+gates, source/readout bridge audits, or demotion/testability artifacts, not a
+new roadmap sequence. The new `workflows/` layer should be
 treated as governance infrastructure for running and recording research lines,
 not as mathematical evidence. These materials should inform future
-Q1A/Q1B/Q1C, causal-access, S1, H7, and TF1 external asks without promoting
-capability-projection or North Star physics language into the claim ledger.
+Q1A/Q1B/Q1C/Q1D, causal-access, S1, H7, TF1, and observer-shadow external asks
+without promoting capability-projection or North Star physics language into
+the claim ledger.
 
 Promotion gate before any public theorem or paper language:
 

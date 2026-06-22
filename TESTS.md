@@ -45,7 +45,13 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T155](tests/T155-weak-measurement-blackwell-boundary.md) | Weak-measurement Blackwell boundary | Q1C, T149, T150 | implemented: screened-off auxiliary channels are null across the tested finite decision family, not just for one verdict map |
 | [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
 | [T152](tests/T152-metastable-record-deletion-screen.md) | Metastable-record deletion screen | H7, T145, T148 | implemented: finite barriers are kinetic/resource absorbers, infinite barriers are constructor idealizations, and matched finite-barrier topology residue is not arrow evidence |
+| [T168](tests/T168-h7-sector-restriction-screen.md) | H7 sector-restriction screen | H7, T145, T148, T152, T160 | implemented: sector-rule bans, reservoir changes, pure gauge relabelings, ideal locks, and finite enforcement/control differences are absorbed before H7 arrow language is allowed |
+| [T169](tests/T169-detector-deployment-archetype-screen.md) | Detector deployment-archetype screen | Q1B, T138, T161 | implemented: only a pre-data claim-review federation with independent critical roots and later reviewable event-level rows remains a live external candidate class |
+| [T170](tests/T170-q1d-correlation-record-guardrail.md) | Q1D correlation-record guardrail | Q1D, Q1, T21, T64 | implemented: local records remain local-marginal constrained and joint correlation records form only after causal reconciliation; signalling, hidden-variable retrofit, premature export, and PR-box-as-quantum controls are null |
+| [T171](tests/T171-detector-row-review-substitution-screen.md) | Detector row-review substitution screen | Q1B, T169 | implemented: proof-only, escrow-only, sampled-row, and delayed-release substitutes are scaffold-only; full reviewable rows during the challenge window plus independent escrow remain live |
 | [T172](tests/T172-issuance-to-finality-bridge.md) | Issuance-to-finality bridge | H7, D1 | implemented: source/readout bridge audit; finality can reflect visible source order under sound records, but hidden issuance, `mu`, access, cadence, and gluing block finality-alone source-arrow readings |
+| [T173](tests/T173-detector-claim-review-authority-bound.md) | Detector claim-review authority bound | Q1B, T169, T171 | implemented: the surviving claim-review route requires five effective authority domains once independent escrow is included, not the older four-domain floor |
+| [T175](tests/T175-detector-threshold-root-quorum-screen.md) | Detector threshold-root quorum screen | Q1B, T161, T171, T173 | implemented: threshold or multisig root control is null unless archive custody, escrow, and trust audit are mandatory guardians in every authorized critical challenge-window quorum they are meant to guard |
 | [T153](tests/T153-lorentzian-causal-diamond-screen.md) | Lorentzian causal-diamond screen | R1, S1, B1, T151 | implemented: 1+1 Lorentzian access/reconstructability verdicts factor through causal pasts, common futures, changed access diamonds, and domains of dependence; no same-Lorentzian-data TaF residue found |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
@@ -188,8 +194,14 @@ python -m models.run_t165
 python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
+python -m models.run_t168
+python -m models.run_t169
+python -m models.run_t170
+python -m models.run_t171
 python -m models.run_t172
+python -m models.run_t173
 python -m models.run_t174
+python -m models.run_t175
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
@@ -296,7 +308,13 @@ The suites use only Python's standard library. Evidence records:
 - [Physical Record Deletion Fixed-Accounting v0.1 Results](results/physical-record-deletion-fixed-accounting-v0.1-results.md)
 - [H7 Paper-Facing Demotion Gate v0.1 Results](results/h7-paper-facing-demotion-gate-v0.1-results.md)
 - [Metastable-Record Deletion Screen v0.1 Results](results/metastable-record-deletion-screen-v0.1-results.md)
+- [H7 Sector-Restriction Screen v0.1 Results](results/h7-sector-restriction-screen-v0.1-results.md)
+- [Detector Deployment-Archetype Screen v0.1 Results](results/detector-deployment-archetype-screen-v0.1-results.md)
+- [Q1D Correlation-Record Guardrail v0.1 Results](results/q1d-correlation-record-guardrail-v0.1-results.md)
+- [Detector Row-Review Substitution Screen v0.1 Results](results/detector-row-review-substitution-screen-v0.1-results.md)
 - [Issuance-To-Finality Bridge v0.1 Results](results/issuance-to-finality-bridge-v0.1-results.md)
+- [Detector Claim-Review Authority Bound v0.1 Results](results/detector-claim-review-authority-bound-v0.1-results.md)
+- [Detector Threshold-Root Quorum Screen v0.1 Results](results/detector-threshold-root-quorum-screen-v0.1-results.md)
 - [Lorentzian Causal-Diamond Screen v0.1 Results](results/lorentzian-causal-diamond-screen-v0.1-results.md)
 - [Finality-Colimit Causal-Set Embeddability v0.1 Results](results/finality-colimit-causal-set-embeddability-v0.1-results.md)
 - [T54/T58-to-T126 Bridge v0.1 Results](results/t54-t58-t126-bridge-v0.1-results.md)

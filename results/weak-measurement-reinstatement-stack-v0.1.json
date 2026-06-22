@@ -1,0 +1,95 @@
+{
+  "audits": [
+    {
+      "name": "positive_control_extra_environment_stack",
+      "classification": "candidate_q1c_reinstatement_route",
+      "reinstatement_candidate": true,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": "candidate_typed_verdict_route",
+      "preserved_target_classification": null,
+      "reason": "The proposal clears packet intake, architecture consistency, typed verdict lift, and any required preserved-target honesty screen.",
+      "required_next": "Bind this stack-positive shape to a named monitored-qubit platform and run the event-level screens on real data."
+    },
+    {
+      "name": "positive_control_enlarged_instrument_stack",
+      "classification": "candidate_q1c_reinstatement_route",
+      "reinstatement_candidate": true,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": "candidate_typed_verdict_route",
+      "preserved_target_classification": "candidate_honest_enlarged_instrument_route",
+      "reason": "The proposal clears packet intake, architecture consistency, typed verdict lift, and any required preserved-target honesty screen.",
+      "required_next": "Bind this stack-positive shape to a named monitored-qubit platform and run the event-level screens on real data."
+    },
+    {
+      "name": "packet_only_no_event_data",
+      "classification": "blocked_missing_event_level_verdict_data",
+      "reinstatement_candidate": false,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": null,
+      "preserved_target_classification": null,
+      "reason": "The packet clears intake, but no event-level R,A,H,V data are supplied for the T149/T150 verdict screens.",
+      "required_next": "Supply event-level verdict data before calling the packet live."
+    },
+    {
+      "name": "zero_lift_extra_environment_packet",
+      "classification": "blocked_at_verdict_gate:null_t149_architecture_not_cleared",
+      "reinstatement_candidate": false,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": "null_t149_architecture_not_cleared",
+      "preserved_target_classification": null,
+      "reason": "The proposal does not clear the T149 architecture gate, so verdict typing cannot rescue it.",
+      "required_next": "Show a positive predeclared decision-risk lift at fixed full record."
+    },
+    {
+      "name": "auxiliary_defined_verdict_packet",
+      "classification": "blocked_at_verdict_gate:null_auxiliary_defined_verdict",
+      "reinstatement_candidate": false,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": "null_auxiliary_defined_verdict",
+      "preserved_target_classification": null,
+      "reason": "The declared hidden axis does not determine the verdict. The verdict is being defined by the auxiliary output rather than inferred from an independently typed TaF target.",
+      "required_next": "Define the verdict as a fixed map from the declared TaF axis."
+    },
+    {
+      "name": "enlarged_instrument_target_drift",
+      "classification": "blocked_at_preserved_target_gate:null_target_drift_under_enlargement",
+      "reinstatement_candidate": false,
+      "packet_classification": "admissible_external_q1c_packet",
+      "verdict_classification": null,
+      "preserved_target_classification": "null_target_drift_under_enlargement",
+      "reason": "The enlarged instrument does not preserve the declared fixed-standard target eventwise. Its back-projection drifts away from the ordinary record.",
+      "required_next": "Repair the enlargement so the declared target is exactly preserved."
+    },
+    {
+      "name": "coarse_record_packet",
+      "classification": "blocked_at_packet_gate:null_coarse_ordinary_record",
+      "reinstatement_candidate": false,
+      "packet_classification": "null_coarse_ordinary_record",
+      "verdict_classification": null,
+      "preserved_target_classification": null,
+      "reason": "The packet freezes only a coarse export rather than the full ordinary event-level standard record.",
+      "required_next": "Freeze the full event-level ordinary record."
+    },
+    {
+      "name": "current_frontier",
+      "classification": "blocked_at_packet_gate:blocked_missing_frozen_ordinary_record",
+      "reinstatement_candidate": false,
+      "packet_classification": "blocked_missing_frozen_ordinary_record",
+      "verdict_classification": null,
+      "preserved_target_classification": null,
+      "reason": "The packet does not freeze the ordinary monitored record before analysis.",
+      "required_next": "Predeclare the ordinary monitored record schema."
+    }
+  ],
+  "positive_controls_admitted": true,
+  "null_controls_rejected": true,
+  "current_frontier_reopened": false,
+  "strongest_claim": "Q1C is not reopened by clearing one local gate. Reinstatement requires a stack-positive proposal: T166 packet intake, architecture consistency, T149/T150 typed verdict lift, and T158 preserved-target honesty for enlarged instruments.",
+  "improved": "T183 composes the previously separate Q1C gates into one executable proposal-level screen. A reviewer no longer has to infer how packet intake, verdict lift, and enlarged-instrument honesty interact.",
+  "weakened": "This weakens Q1C's remaining positive-control language. A packet that only promises data, a zero-lift packet, an auxiliary-defined verdict, or an enlarged instrument with target drift cannot reopen the branch.",
+  "falsification_condition": "T183 fails if a serious Q1C platform should be treated as reinstated after clearing only one of the packet, verdict, or preserved-target gates, or if either stack-positive control is rejected despite satisfying all lower-level assumptions.",
+  "q1c_update": "Q1C remains dormant. The live burden is now a stack-level reinstatement packet, not a platform-family name or a local positive control.",
+  "claim_ledger_update": "Add T183 to Q1C: reinstatement requires the composed T166/T149/T150/T158 stack. Packet-only, zero-lift, auxiliary-defined, target-drift, coarse-record, and current-frontier proposals remain blocked.",
+  "open_blocker": "No named monitored-qubit platform in the repo supplies a stack-positive Q1C proposal with frozen packet, typed verdict lift, and, if enlarged, eventwise preserved-target honesty.",
+  "suggested_next": "Stop internal Q1C toy work unless a named platform can instantiate the full T183 stack. Otherwise shift the quantum route toward Q1B deployment or away from Q1 entirely."
+}

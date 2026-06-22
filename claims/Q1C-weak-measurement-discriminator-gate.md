@@ -92,6 +92,10 @@ clear the independent-axis gate.
   control, honest readout replacement without a preserved full-standard
   target, alternate ordinary record, or task-changed non-monitored-qubit
   classes, and none lands in a live Q1C architecture class.
+- T183 composes the remaining gates into a stack-level reinstatement screen:
+  packet intake alone is not enough; a proposal must also clear architecture
+  consistency, typed verdict lift, and, for enlarged instruments, eventwise
+  preserved-target honesty.
 
 ## Not Earned
 
@@ -110,6 +114,8 @@ clear the independent-axis gate.
 - No named platform in the repo currently clears the T166 packet-intake gate.
 - No named platform family in the repo currently clears the executable T182
   family screen.
+- No named platform in the repo currently clears the composed T183
+  reinstatement stack.
 
 ## Falsification Or Demotion Condition
 
@@ -131,7 +137,9 @@ predeclared finite decision problem gains by adding that channel at all. It
 also holds when an enlarged-instrument proposal preserves only a coarse
 standard summary, lets the declared standard target drift under its claimed
 back-projection, or never exposes the eventwise projection needed to show that
-the full ordinary standard record was actually held fixed.
+the full ordinary standard record was actually held fixed. It also holds when
+a proposal clears one local Q1C gate but fails the composed packet, verdict,
+and preserved-target stack.
 
 ## Reinstatement Condition
 
@@ -140,19 +148,19 @@ axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
-Operationally, reinstatement now has two stages. First the platform must clear
-the T166 packet-intake gate by freezing the full ordinary record `R`,
-auxiliary channel `A`, live architecture class, independently typed TaF axis
-`H`, verdict map `V=g(H)`, class-support floor, loss rule, null-control plan,
-and event-level audit burden. Then it must show positive decision-risk lift
-from `(R,A)` over `R` alone under the T149/T150/T158 event-level screens. If
+Operationally, reinstatement is now a stack-level burden. First the platform
+must clear the T166 packet-intake gate by freezing the full ordinary record
+`R`, auxiliary channel `A`, live architecture class, independently typed TaF
+axis `H`, verdict map `V=g(H)`, class-support floor, loss rule, null-control
+plan, and event-level audit burden. Then it must show positive decision-risk
+lift from `(R,A)` over `R` alone under the T149/T150 event-level screens. If
 the proposal enlarges the monitored instrument, that enlargement and the
 preserved comparison target must be declared explicitly in advance, together
 with an eventwise projection from enlarged data back to the full ordinary
-standard record. That projection must preserve the declared ordinary record on
-the admissible domain. If it does not enlarge the instrument, it must instead
-identify extra environment or detector structure whose verdict content
-survives conditioning on the full ordinary event log.
+standard record, and it must clear T158 preserved-target honesty. If it does
+not enlarge the instrument, it must instead identify extra environment or
+detector structure whose verdict content survives conditioning on the full
+ordinary event log.
 
 The current repo handoff for that burden is:
 
@@ -176,5 +184,6 @@ The current repo handoff for that burden is:
 - [T158: Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
 - [T166: Weak-Measurement Platform-Packet Gate](../tests/T166-weak-measurement-platform-packet-gate.md)
 - [T182: Weak-Measurement Platform Family Screen](../tests/T182-weak-measurement-platform-family-screen.md)
+- [T183: Weak-Measurement Reinstatement Stack](../tests/T183-weak-measurement-reinstatement-stack.md)
 - [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

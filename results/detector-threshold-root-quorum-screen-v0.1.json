@@ -1,0 +1,108 @@
+{
+  "release_required_domains": [
+    "archive_custodian",
+    "escrow_custodian"
+  ],
+  "revocation_required_domains": [
+    "escrow_custodian",
+    "trust_auditor"
+  ],
+  "audit_required_domains": [
+    "trust_auditor"
+  ],
+  "audits": [
+    {
+      "policy_id": "mandatory_archive_and_escrow_release",
+      "release_guardians_preserved": true,
+      "revocation_guardians_preserved": true,
+      "audit_guardians_preserved": true,
+      "release_bypass_domains": [],
+      "revocation_bypass_domains": [],
+      "audit_bypass_domains": [],
+      "classification": "live_threshold_claim_review_policy",
+      "required_next": "Publish the quorum map pre-data and obtain a named collaboration willing to sign it.",
+      "interpretation": "mandatory_archive_and_escrow_release preserves the full T171/T173 guardian set under threshold control and is the only live quorum policy in the current fixture family."
+    },
+    {
+      "policy_id": "optional_escrow_two_of_three_release",
+      "release_guardians_preserved": false,
+      "revocation_guardians_preserved": true,
+      "audit_guardians_preserved": true,
+      "release_bypass_domains": [
+        "archive_custodian",
+        "escrow_custodian"
+      ],
+      "revocation_bypass_domains": [],
+      "audit_bypass_domains": [],
+      "classification": "null_release_quorum_bypasses_required_guardian",
+      "required_next": "Rewrite the release quorum so every authorized challenge-window row-release coalition includes both archive custody and escrow.",
+      "interpretation": "optional_escrow_two_of_three_release is null because its authorized coalitions can bypass archive_custodian, escrow_custodian on critical challenge-window actions."
+    },
+    {
+      "policy_id": "optional_archive_three_of_four_release",
+      "release_guardians_preserved": false,
+      "revocation_guardians_preserved": true,
+      "audit_guardians_preserved": true,
+      "release_bypass_domains": [
+        "archive_custodian"
+      ],
+      "revocation_bypass_domains": [],
+      "audit_bypass_domains": [],
+      "classification": "null_release_quorum_bypasses_required_guardian",
+      "required_next": "Rewrite the release quorum so every authorized challenge-window row-release coalition includes both archive custody and escrow.",
+      "interpretation": "optional_archive_three_of_four_release is null because its authorized coalitions can bypass archive_custodian on critical challenge-window actions."
+    },
+    {
+      "policy_id": "optional_trust_two_of_three_revocation",
+      "release_guardians_preserved": true,
+      "revocation_guardians_preserved": false,
+      "audit_guardians_preserved": true,
+      "release_bypass_domains": [],
+      "revocation_bypass_domains": [
+        "trust_auditor"
+      ],
+      "audit_bypass_domains": [],
+      "classification": "null_revocation_or_audit_quorum_bypasses_required_guardian",
+      "required_next": "Rewrite the revocation and audit quorums so trust audit and escrow cannot be bypassed on critical challenge-window actions.",
+      "interpretation": "optional_trust_two_of_three_revocation is null because its authorized coalitions can bypass trust_auditor on critical challenge-window actions."
+    },
+    {
+      "policy_id": "global_three_of_five_multisig",
+      "release_guardians_preserved": false,
+      "revocation_guardians_preserved": false,
+      "audit_guardians_preserved": false,
+      "release_bypass_domains": [
+        "archive_custodian",
+        "escrow_custodian"
+      ],
+      "revocation_bypass_domains": [
+        "trust_auditor"
+      ],
+      "audit_bypass_domains": [
+        "trust_auditor"
+      ],
+      "classification": "null_release_quorum_bypasses_required_guardian",
+      "required_next": "Rewrite the release quorum so every authorized challenge-window row-release coalition includes both archive custody and escrow.",
+      "interpretation": "global_three_of_five_multisig is null because its authorized coalitions can bypass archive_custodian, escrow_custodian, trust_auditor on critical challenge-window actions."
+    }
+  ],
+  "live_threshold_policies": [
+    "mandatory_archive_and_escrow_release"
+  ],
+  "null_release_bypass_policies": [
+    "optional_escrow_two_of_three_release",
+    "optional_archive_three_of_four_release",
+    "global_three_of_five_multisig"
+  ],
+  "null_revocation_bypass_policies": [
+    "optional_trust_two_of_three_revocation"
+  ],
+  "strongest_claim": "Threshold or multisig root control does not rescue Q1B merely by naming escrow or trust audit as possible signers. For the surviving T171/T173 claim-review route, every authorized challenge-window row-release quorum must include both archive custody and escrow, and every authorized revocation quorum must include both trust audit and escrow.",
+  "improved": "T175 removes a realistic governance loophole from T161/T173. The repo can now evaluate threshold-key or multisig stories without collapsing them either into naive shared-root failure or into unexamined 'distributed control' optimism.",
+  "weakened": "This weakens Q1B again. A collaboration does not clear the claim-review route by putting escrow or trust on one branch of a quorum tree. If any authorized release or revocation coalition can bypass those guardians, independent challenge rights are only rhetorical.",
+  "falsification_condition": "T175 fails if a threshold-controlled row-release or revocation policy should still count for Q1B even though some authorized coalition omits archive custody, escrow, or trust audit from the critical challenge-window actions they are meant to guard.",
+  "q1b_update": "Q1B remains externally blocked. A threshold-key or multisig workflow is admissible only when escrow is a mandatory signer in every authorized challenge-window release and revocation quorum, archive custody is mandatory in every release quorum, and trust audit is mandatory in every revocation or audit quorum.",
+  "claim_ledger_update": "Add T175 to Q1B: threshold or multisig control is null whenever challenge-window release or revocation can be authorized by a coalition that bypasses archive custody, escrow, or trust audit. Those guardians must be mandatory members of every authorized critical quorum, not optional signers.",
+  "open_blocker": "No named detector workflow in the repo currently publishes the critical release and revocation quorum map needed to show that escrow and trust are mandatory rather than optional guardians.",
+  "recommended_next": "Update the Q1B handoff to require a pre-data quorum map for challenge-window row release, audit attestation, and revocation. If a realistic collaboration can only offer optional-escrow or optional-trust multisig, demote Q1B below the active frontier."
+}

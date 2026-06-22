@@ -45,7 +45,12 @@ T173 adds that this surviving T171 route no longer fits inside the older T100
 four-domain lower bound. Once independent escrow is treated as a real claim-
 review authority rather than a slogan, no four-domain profile survives; the
 exact minimum is five authority domains, with instrument operation mergeable
-only into governance, control design, or archive custody.
+only into governance, control design, or archive custody. T175 then closes the
+obvious multisig escape hatch: threshold control counts only if archive
+custody and escrow are mandatory members of every authorized challenge-window
+release quorum, and trust audit plus escrow are mandatory members of every
+authorized revocation quorum. Naming escrow or trust as optional signers is
+null.
 
 ## Earned Content
 
@@ -91,6 +96,9 @@ only into governance, control design, or archive custody.
   pre-escrow T100 four-domain profiles are insufficient for claim review.
   Once independent escrow is treated as its own conflict-bearing authority,
   no four-domain profile survives and the exact minimum becomes five.
+- T175 shows that threshold or multisig root control does not soften that
+  burden unless the critical challenge-window quorums make archive custody,
+  escrow, and trust mandatory guardians rather than optional participants.
 
 ## Not Earned
 
@@ -109,6 +117,9 @@ only into governance, control design, or archive custody.
   summary-only, sampled-row, or private-escrow substitutes.
 - No named real lab in the repo currently supplies the extra independent
   escrow authority required by T173's five-domain claim-review lower bound.
+- No named real lab in the repo currently publishes a pre-data quorum map
+  proving that archive custody, escrow, and trust are mandatory members of
+  every authorized challenge-window release, revocation, and audit action.
 
 ## Falsification Or Demotion Condition
 
@@ -120,7 +131,11 @@ provenance should be demoted below the active Q1 frontier. The same demotion
 applies if realistic groups can only offer proof-only, escrow-only,
 sampled-row, or delayed-release substitutes instead of T171-level full
 reviewable rows during the challenge window, or if they cannot staff the
-additional independent escrow authority required by T173 for claim review.
+additional independent escrow authority required by T173 for claim review. The
+same demotion also applies if a proposed threshold-key or multisig workflow can
+authorize release, revocation, or audit actions through coalitions that bypass
+archive custody, escrow, or trust audit on those critical challenge-window
+rights.
 
 ## Reinstatement Condition
 
@@ -131,8 +146,10 @@ wrapper policy, exposes enough control-root data to show that the T161
 effective authority partition remains admissible, passes the T87/T97/T100 and
 T121/T133 gates, satisfies the T169 reviewable-row commitment in the stronger
 T171 sense of full reviewable rows during the challenge window with
-independent escrow, clears the T173 five-domain claim-review bound, and then
-yields a verdict that survives the T83 null criterion.
+independent escrow, clears the T173 five-domain claim-review bound, publishes
+a pre-data quorum map showing that archive custody, escrow, and trust are
+mandatory members of every authorized critical challenge-window quorum in the
+T175 sense, and then yields a verdict that survives the T83 null criterion.
 
 ## Operational Handoff
 
@@ -140,8 +157,9 @@ The current handoff is [Q1B Federated Detector Deployment Handoff](../open-probl
 It is a lab-facing issue draft, not evidence. It converts the external blocker
 into a pre-data manifest ask, event-row packet requirements, null conditions,
 and a demotion rule if no realistic workflow can supply independent archive and
-trust-audit roles, plus the extra independent escrow authority required for
-claim review, before detector events.
+trust-audit roles, the extra independent escrow authority required for claim
+review, and a critical-quorum map where those guardians cannot be bypassed,
+before detector events.
 
 ## Primary Evidence
 
@@ -162,3 +180,4 @@ claim review, before detector events.
 - [T169: Detector Deployment-Archetype Screen](../tests/T169-detector-deployment-archetype-screen.md)
 - [T171: Detector Row-Review Substitution Screen](../tests/T171-detector-row-review-substitution-screen.md)
 - [T173: Detector Claim-Review Authority Bound](../tests/T173-detector-claim-review-authority-bound.md)
+- [T175: Detector Threshold-Root Quorum Screen](../tests/T175-detector-threshold-root-quorum-screen.md)

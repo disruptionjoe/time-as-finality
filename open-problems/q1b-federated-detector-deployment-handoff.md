@@ -42,6 +42,9 @@ than substituting proofs, summaries, private escrow, or delayed release. T173
 adds one more burden: for claim review, independent escrow is not just a
 service feature. It is its own authority requirement, so the live route now
 needs a five-domain minimum rather than T100's older four-domain packet bound.
+T175 adds the threshold-key burden: a multisig or quorum-controlled workflow
+counts only if archive custody, escrow, and trust are mandatory guardians in
+every authorized challenge-window release, revocation, and audit quorum.
 
 ## Issue Draft
 
@@ -79,11 +82,14 @@ Before the first detector event, the deployment must freeze:
    domains.
 5. A T161 control-root map for manifest registration, archive mutation, audit
    attestation, publication release, and revocation control.
-6. A raw-payload export rule, not observed payload values.
-7. Hostile-control plan for replay/spoof, perturbation/back-action,
+6. If any critical action uses threshold keys or multisig, the full authorized
+   quorum map for challenge-window row release, revocation, and audit
+   attestation.
+7. A raw-payload export rule, not observed payload values.
+8. Hostile-control plan for replay/spoof, perturbation/back-action,
    provenance-DAG truncation or false ancestry, signature/key failure, and
    delayed publication.
-8. Top-level manifest hash and timestamp before any event data are inspected.
+9. Top-level manifest hash and timestamp before any event data are inspected.
 
 ### Authority Partition Required
 
@@ -107,7 +113,10 @@ that nominal role labels are still insufficient when critical control roots are
 shared. Any workflow merging archive custody and trust audit, merging escrow
 with another authority, or sharing manifest/archive/audit/publication/
 revocation roots in a way that collapses the effective partition, is null for
-Q1B unless the packet design is changed and re-audited before data.
+Q1B unless the packet design is changed and re-audited before data. T175 adds
+that threshold-controlled release is also null when archive custody, escrow, or
+trust appear only as optional signers. They must be mandatory members of every
+authorized challenge-window quorum they are supposed to guard.
 
 ### After-data Packet Required
 
@@ -129,6 +138,10 @@ After event collection, the group must publish or make reviewable:
     release, or auditor statements about private escrow.
 11. Enough operator and control-root provenance to show that the escrow
     custodian remained independent throughout the challenge window.
+12. If threshold keys or multisig are used, enough release-log provenance to
+    show that every authorized challenge-window release, revocation, and audit
+    path included the mandatory archive, escrow, and trust guardians promised
+    pre-data.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -163,6 +176,9 @@ Treat the route as null for Q1B if any of these occur:
 - The group can only offer proof-only, summary-only, sampled-row, private-
   escrow-only, or delayed-release substitutes instead of reviewable full rows
   during the challenge window.
+- The group uses threshold keys or multisig, but some authorized release,
+  revocation, or audit coalition can bypass archive custody, escrow, or trust
+  on the critical challenge-window actions they are meant to guard.
 
 ## Decision Rule
 
@@ -200,5 +216,8 @@ model; it is a named detector deployment that signs the T136/T138 manifest
 pre-data, exposes a T161-valid control-root map, staffs the T173 five-domain
 claim-review route including a distinct escrow authority, and later supplies
 real event-level packet rows in the stronger T171 sense: full reviewable rows
-during the challenge window with independent escrow. Without that, Q1B is an
-admissibility scaffold only.
+during the challenge window with independent escrow. If threshold keys or
+multisig are used, the deployment must also publish a T175-valid quorum map
+showing that archive custody, escrow, and trust are mandatory guardians of the
+critical challenge-window actions. Without that, Q1B is an admissibility
+scaffold only.

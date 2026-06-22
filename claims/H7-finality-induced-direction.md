@@ -40,7 +40,11 @@ locks, and finite control/enforcement differences do not clear H7. T172
 tests the Temporal Issuance bridge and recasts finality as an observer-side
 source/readout factorization question: same-readout hidden issuance,
 `mu`-sensitive source tasks, nonmonotone access, cadence variation, and
-missing gluing all block finality-alone source-arrow readings.
+missing gluing all block finality-alone source-arrow readings. N13 then maps
+the Temporal Issuance bridge against causal order, causal-set dynamics,
+stochastic thermodynamics, information theory, instrumentation, and TaF record
+reconstruction; it records the bridge as translation residue unless a
+non-circular same-neighbor-data split survives those absorbers.
 
 ## What This Does Not Claim
 
@@ -463,3 +467,20 @@ source-measure, and gluing data are declared. No typed source dynamics for
 issuance order or `mu` has yet survived absorber tests against ordinary causal
 order, entropy, information growth, record reconstruction, or a hidden global
 frontier.
+
+## N13 Temporal Issuance Absorber Map
+
+[N13](../literature/N13-temporal-issuance-absorber-map.md) tests the T172
+bridge language against the nearest mature absorbers. It treats the issuance
+order `<`, measure `mu`, frontier `dR`, observer cadence `kappa_i`, record
+generation rule, and gluing data as suspect until causal, causal-set,
+stochastic-thermodynamic, information-theoretic, instrumentation, and TaF
+record-reconstruction variables are granted as legitimate same-neighbor data.
+
+The result is negative for H7's current physical-arrow route. Temporal
+Issuance remains useful as a source/readout stress test, but it is not current
+H7 evidence. The bridge becomes more than translation residue only if a future
+artifact supplies a non-circular, covariant or label-invariant source object
+and a task-natural capability split that survives after causal order,
+volume/counting, thermodynamic ledgers, information state, observer cadence,
+access, and gluing data are matched.

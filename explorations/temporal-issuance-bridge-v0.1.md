@@ -189,6 +189,20 @@ This weakens the bridge rather than promoting it. TaF finality is currently a
 candidate observer-side certificate or projection of source realization order,
 not a source-level generator of the arrow.
 
+## N13 Absorber Result
+
+[N13](../literature/N13-temporal-issuance-absorber-map.md) runs the absorber
+map requested by this bridge note. It compares the issuance order `<`, measure
+`mu`, frontier `dR`, observer cadence `kappa_i`, access, record-generation
+rule, and gluing data against causal order, causal-set dynamics, stochastic
+thermodynamics, information theory, instrumentation, and TaF record
+reconstruction.
+
+The result is a demotion gate, not a bridge promotion. Temporal Issuance stays
+as a source/readout stress test unless a future artifact gives a non-circular
+source object and a same-neighbor-data capability split after causal,
+thermodynamic, information, cadence, access, and gluing variables are matched.
+
 ## Claim Ledger Update
 
 No claim should be promoted.
@@ -204,7 +218,8 @@ source-side realization order, but finality alone has not derived that order.
 
 ## Suggested Next
 
-Run an absorber map before adding richer bridge models. If Temporal Issuance
-collapses into causal order, entropy, information growth, ordinary record
-reconstruction, or a hidden global frontier, record absorption rather than
-preserving the bridge.
+Do not add richer bridge models until the source object is typed. The next
+non-null artifact should specify `Y_TI`, `<`, `mu`, `dR`, `kappa_i`, `A_i`, and
+`G` with an absorber status for each field. If that specification maps every
+field to causal order, thermodynamics, information theory, instrumentation, or
+TaF gluing, close the bridge as translation residue.

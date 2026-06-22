@@ -71,10 +71,12 @@ These are bridge work cards, not claim promotions:
    generator. Test whether finality can be a sound observer-readable
    certificate or projection of a source-side realization order after absorber
    variables are matched.
-3. Absorber map: compare Temporal Issuance against causal set theory, block
-   universe, thermodynamic arrow, information theory, and TaF record
-   reconstruction. Kill the bridge if issuance requires ordinary time,
-   entropy, information growth, or a preferred global frontier to do the work.
+3. Completed by
+   [N13](../literature/N13-temporal-issuance-absorber-map.md): absorber map
+   comparing Temporal Issuance against causal set theory, block-universe causal
+   order, stochastic thermodynamics, information theory, instrumentation, and
+   TaF record reconstruction. The bridge is translation residue unless a
+   non-circular same-neighbor-data split survives those absorbers.
 
 ---
 

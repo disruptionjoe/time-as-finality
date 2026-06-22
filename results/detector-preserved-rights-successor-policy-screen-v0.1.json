@@ -1,0 +1,94 @@
+{
+  "audits": [
+    {
+      "profile_id": "fully_frozen_no_successor_policy",
+      "successor_present": false,
+      "successor_predeclared": true,
+      "preserves_required_guardians": true,
+      "preserves_review_access": true,
+      "preserves_guardian_identity": true,
+      "immutable_transition_log": true,
+      "classification": "live_frozen_without_successor",
+      "required_next": "Publish the fully frozen challenge-window policy pre-data.",
+      "interpretation": "fully_frozen_no_successor_policy remains live because no post-data successor path exists."
+    },
+    {
+      "profile_id": "predeclared_preserved_rights_legal_hold_successor",
+      "successor_present": true,
+      "successor_predeclared": true,
+      "preserves_required_guardians": true,
+      "preserves_review_access": true,
+      "preserves_guardian_identity": true,
+      "immutable_transition_log": true,
+      "classification": "live_predeclared_preserved_rights_successor",
+      "required_next": "Publish the successor trigger conditions and immutable transition log format pre-data.",
+      "interpretation": "predeclared_preserved_rights_legal_hold_successor remains live because its successor path is predeclared and preserves guardians, access, identity, and logs."
+    },
+    {
+      "profile_id": "undeclared_break_glass_successor",
+      "successor_present": true,
+      "successor_predeclared": false,
+      "preserves_required_guardians": false,
+      "preserves_review_access": false,
+      "preserves_guardian_identity": false,
+      "immutable_transition_log": false,
+      "classification": "null_unpredeclared_or_unlogged_successor",
+      "required_next": "Freeze the successor trigger and transition log pre-data or remove the successor path entirely.",
+      "interpretation": "undeclared_break_glass_successor is null because its successor path yields: postdata_override_without_precommitment."
+    },
+    {
+      "profile_id": "predeclared_release_pause_pending_governance_clearance",
+      "successor_present": true,
+      "successor_predeclared": true,
+      "preserves_required_guardians": true,
+      "preserves_review_access": false,
+      "preserves_guardian_identity": true,
+      "immutable_transition_log": true,
+      "classification": "null_successor_reduces_review_rights",
+      "required_next": "Rewrite the successor policy so full row-review access remains live throughout the challenge window.",
+      "interpretation": "predeclared_release_pause_pending_governance_clearance is null because its successor path yields: temporary_loss_of_full_row_review_access."
+    },
+    {
+      "profile_id": "predeclared_escrow_rotation_successor",
+      "successor_present": true,
+      "successor_predeclared": true,
+      "preserves_required_guardians": false,
+      "preserves_review_access": true,
+      "preserves_guardian_identity": false,
+      "immutable_transition_log": true,
+      "classification": "null_successor_changes_required_guardians",
+      "required_next": "Rewrite the successor policy so archive, escrow, and trust remain mandatory guardians and named identities do not change.",
+      "interpretation": "predeclared_escrow_rotation_successor is null because its successor path yields: replace_named_escrow_custodian."
+    },
+    {
+      "profile_id": "predeclared_revocation_override_successor",
+      "successor_present": true,
+      "successor_predeclared": true,
+      "preserves_required_guardians": false,
+      "preserves_review_access": true,
+      "preserves_guardian_identity": true,
+      "immutable_transition_log": true,
+      "classification": "null_successor_changes_required_guardians",
+      "required_next": "Rewrite the successor policy so archive, escrow, and trust remain mandatory guardians and named identities do not change.",
+      "interpretation": "predeclared_revocation_override_successor is null because its successor path yields: close_challenge_rights_without_trust_or_escrow."
+    }
+  ],
+  "live_profiles": [
+    "fully_frozen_no_successor_policy",
+    "predeclared_preserved_rights_legal_hold_successor"
+  ],
+  "null_profiles": [
+    "undeclared_break_glass_successor",
+    "predeclared_release_pause_pending_governance_clearance",
+    "predeclared_escrow_rotation_successor",
+    "predeclared_revocation_override_successor"
+  ],
+  "strongest_claim": "T176's freeze burden admits at most one narrow exception. A challenge-window successor policy can still count for Q1B only if it is frozen pre-data, trigger-bounded, preserves the same mandatory archive, escrow, and trust guardians on every critical action, preserves already-granted full row-review access, preserves guardian identity, and emits immutable transition logs.",
+  "improved": "T178 makes the T176 boundary more realistic without reopening the governance loophole. The repo can now distinguish a preserved-rights successor policy from generic post-data override stories.",
+  "weakened": "This weakens Q1B's last practical exceptions. Predeclared legal, safety, or emergency procedures do not help unless they preserve the same review rights and guardian structure throughout the challenge window.",
+  "falsification_condition": "T178 fails if a successor policy should still count for Q1B even though it is undeclared, reduces review access, changes guardian identity, bypasses archive/escrow/trust on a critical action, or lacks immutable transition logs.",
+  "q1b_update": "Q1B remains externally blocked. The T176 freeze burden can be relaxed only by a T178-valid preserved-rights successor policy; generic emergency, legal, or safety override stories remain null.",
+  "claim_ledger_update": "Add T178 to Q1B: a predeclared challenge-window successor policy counts only when it preserves the same mandatory guardians, full row-review access, guardian identity, and immutable transition logging throughout the review window.",
+  "open_blocker": "No named detector workflow in the repo currently exposes either a fully frozen challenge-window policy or a predeclared preserved-rights successor policy package that can be audited pre-data.",
+  "recommended_next": "Update the Q1B handoff so emergency, legal, or safety exceptions must either be absent or arrive as a predeclared T178-valid preserved-rights successor policy with trigger conditions and transition logs fixed before data collection."
+}

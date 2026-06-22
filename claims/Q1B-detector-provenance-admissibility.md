@@ -53,6 +53,10 @@ authorized revocation quorum. Naming escrow or trust as optional signers is
 null. T176 closes the policy-mutation escape hatch: even a T175-valid static
 quorum map is scaffold-only if guardian identity or critical release,
 revocation, or audit rules can still be changed during the challenge window.
+T178 sharpens the only remaining exception class: a predeclared legal,
+safety, or emergency successor policy counts only if it preserves the same
+mandatory guardians, full row-review access, guardian identity, and
+immutable transition logging throughout the challenge window.
 
 ## Earned Content
 
@@ -105,6 +109,11 @@ revocation, or audit rules can still be changed during the challenge window.
   guardian roster or critical challenge-window policies remain mutable after
   data collection. Break-glass override, mid-window guardian replacement, and
   temporary trust suspension are null in the current finite screen.
+- T178 restores only one narrow realism concession: a predeclared successor
+  policy can replace literal no-exception freeze only when it preserves the
+  same mandatory guardians, full row-review access, guardian identity, and
+  immutable transition logs. Generic legal, safety, or emergency exception
+  language remains null.
 
 ## Not Earned
 
@@ -129,6 +138,10 @@ revocation, or audit rules can still be changed during the challenge window.
 - No named real lab in the repo currently exposes a signed pre-data freeze
   policy proving that those challenge-window guardian and rights assignments
   cannot be rewritten after data collection begins.
+- No named real lab in the repo currently exposes a predeclared preserved-
+  rights successor policy package showing that any legal, safety, or emergency
+  exception preserves the same guardians, review access, identities, and
+  immutable transition logs during the challenge window.
 
 ## Falsification Or Demotion Condition
 
@@ -147,7 +160,10 @@ archive custody, escrow, or trust audit on those critical challenge-window
 rights. The same demotion also applies if a proposed workflow preserves the
 initial guardians only nominally while retaining break-glass override,
 guardian replacement, trust suspension, or other challenge-window policy
-mutation after data collection begins.
+mutation after data collection begins. The same demotion also applies if a
+workflow appeals to legal, safety, or emergency exception procedures but
+cannot type them as a predeclared T178-valid preserved-rights successor
+policy.
 
 ## Reinstatement Condition
 
@@ -162,8 +178,9 @@ independent escrow, clears the T173 five-domain claim-review bound, publishes
 a pre-data quorum map showing that archive custody, escrow, and trust are
 mandatory members of every authorized critical challenge-window quorum in the
 T175 sense, freezes that guardian and policy map until challenge-window
-expiry in the T176 sense, and then yields a verdict that survives the T83 null
-criterion.
+expiry in the T176 sense or else replaces literal freeze only by a T178-valid
+predeclared preserved-rights successor policy, and then yields a verdict that
+survives the T83 null criterion.
 
 ## Operational Handoff
 
@@ -174,7 +191,9 @@ and a demotion rule if no realistic workflow can supply independent archive and
 trust-audit roles, the extra independent escrow authority required for claim
 review, a critical-quorum map where those guardians cannot be bypassed, and a
 challenge-window freeze policy where those rights cannot be rewritten, before
-detector events.
+detector events. Legal, safety, or emergency exceptions count only when they
+arrive as a predeclared preserved-rights successor policy, not as generic
+override language.
 
 ## Primary Evidence
 
@@ -197,3 +216,4 @@ detector events.
 - [T173: Detector Claim-Review Authority Bound](../tests/T173-detector-claim-review-authority-bound.md)
 - [T175: Detector Threshold-Root Quorum Screen](../tests/T175-detector-threshold-root-quorum-screen.md)
 - [T176: Detector Challenge-Window Freeze Screen](../tests/T176-detector-challenge-window-freeze-screen.md)
+- [T178: Detector Preserved-Rights Successor Policy Screen](../tests/T178-detector-preserved-rights-successor-policy-screen.md)

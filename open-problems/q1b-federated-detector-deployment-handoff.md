@@ -47,7 +47,10 @@ counts only if archive custody, escrow, and trust are mandatory guardians in
 every authorized challenge-window release, revocation, and audit quorum. T176
 adds the freeze burden: even a valid initial guardian map is scaffold-only if
 guardian identity or those critical policies can still be changed during the
-challenge window.
+challenge window. T178 sharpens the only allowed exception: a predeclared
+legal, safety, or emergency successor policy counts only if it preserves the
+same guardians, full row-review access, guardian identity, and immutable
+transition logging throughout the review window.
 
 ## Issue Draft
 
@@ -89,7 +92,9 @@ Before the first detector event, the deployment must freeze:
    quorum map for challenge-window row release, revocation, and audit
    attestation.
 7. A signed challenge-window freeze policy covering guardian identity and all
-   critical release, revocation, and audit rules.
+   critical release, revocation, and audit rules, or a predeclared T178-valid
+   preserved-rights successor policy package with fixed triggers and immutable
+   transition logs.
 8. A raw-payload export rule, not observed payload values.
 9. Hostile-control plan for replay/spoof, perturbation/back-action,
    provenance-DAG truncation or false ancestry, signature/key failure, and
@@ -123,7 +128,9 @@ that threshold-controlled release is also null when archive custody, escrow, or
 trust appear only as optional signers. They must be mandatory members of every
 authorized challenge-window quorum they are supposed to guard. T176 adds that
 those guardians and critical challenge-window rights must also stay frozen
-until the review window closes.
+until the review window closes. T178 adds that any exception procedure must
+preserve those same guardians and full review rights rather than merely
+documenting a fallback override.
 
 ### After-data Packet Required
 
@@ -151,6 +158,9 @@ After event collection, the group must publish or make reviewable:
     pre-data.
 13. Enough governance and change-log provenance to show that guardian identity
     and critical challenge-window rights remained frozen after data collection.
+14. If any successor policy was predeclared, enough trigger and transition-log
+    provenance to show that it preserved the same guardians, identities, and
+    full review access promised pre-data.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -192,8 +202,9 @@ Treat the route as null for Q1B if any of these occur:
   suspension, or other challenge-window policy mutation after data collection.
 - The group has emergency, legal, or safety exception procedures that can
   change the guardian roster or critical challenge-window rights, unless those
-  procedures are frozen pre-data and separately audited as preserving the same
-  mandatory archive, escrow, and trust guardians.
+  procedures are frozen pre-data as a T178-valid preserved-rights successor
+  policy with fixed triggers, preserved full row-review access, preserved
+  guardian identity, and immutable transition logs.
 
 ## Decision Rule
 
@@ -236,4 +247,7 @@ multisig are used, the deployment must also publish a T175-valid quorum map
 showing that archive custody, escrow, and trust are mandatory guardians of the
 critical challenge-window actions. It must also publish a T176-valid freeze
 policy showing that those guardians and rights cannot be changed before the
-challenge window closes. Without that, Q1B is an admissibility scaffold only.
+challenge window closes, or else a T178-valid preserved-rights successor
+policy package proving that any predeclared exception preserves the same
+guardians, access, identity, and immutable transition logs. Without that,
+Q1B is an admissibility scaffold only.

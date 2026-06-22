@@ -45,6 +45,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T155](tests/T155-weak-measurement-blackwell-boundary.md) | Weak-measurement Blackwell boundary | Q1C, T149, T150 | implemented: screened-off auxiliary channels are null across the tested finite decision family, not just for one verdict map |
 | [T148](tests/T148-h7-paper-facing-demotion-gate.md) | H7 paper-facing demotion gate | H7, T145 | implemented: H7 is paper-facing only as a conditional constructor/resource-accounting audit; physical-arrow language is demoted until a fixed-accounting physical deletion substrate clears hostile absorbers |
 | [T152](tests/T152-metastable-record-deletion-screen.md) | Metastable-record deletion screen | H7, T145, T148 | implemented: finite barriers are kinetic/resource absorbers, infinite barriers are constructor idealizations, and matched finite-barrier topology residue is not arrow evidence |
+| [T172](tests/T172-issuance-to-finality-bridge.md) | Issuance-to-finality bridge | H7, D1 | implemented: source/readout bridge audit; finality can reflect visible source order under sound records, but hidden issuance, `mu`, access, cadence, and gluing block finality-alone source-arrow readings |
 | [T153](tests/T153-lorentzian-causal-diamond-screen.md) | Lorentzian causal-diamond screen | R1, S1, B1, T151 | implemented: 1+1 Lorentzian access/reconstructability verdicts factor through causal pasts, common futures, changed access diamonds, and domains of dependence; no same-Lorentzian-data TaF residue found |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
@@ -186,6 +187,7 @@ python -m models.run_t165
 python -m models.run_t128
 python -m models.run_t142
 python -m models.run_t153
+python -m models.run_t172
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
@@ -292,6 +294,7 @@ The suites use only Python's standard library. Evidence records:
 - [Physical Record Deletion Fixed-Accounting v0.1 Results](results/physical-record-deletion-fixed-accounting-v0.1-results.md)
 - [H7 Paper-Facing Demotion Gate v0.1 Results](results/h7-paper-facing-demotion-gate-v0.1-results.md)
 - [Metastable-Record Deletion Screen v0.1 Results](results/metastable-record-deletion-screen-v0.1-results.md)
+- [Issuance-To-Finality Bridge v0.1 Results](results/issuance-to-finality-bridge-v0.1-results.md)
 - [Lorentzian Causal-Diamond Screen v0.1 Results](results/lorentzian-causal-diamond-screen-v0.1-results.md)
 - [Finality-Colimit Causal-Set Embeddability v0.1 Results](results/finality-colimit-causal-set-embeddability-v0.1-results.md)
 - [T54/T58-to-T126 Bridge v0.1 Results](results/t54-t58-t126-bridge-v0.1-results.md)

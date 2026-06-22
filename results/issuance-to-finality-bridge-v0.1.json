@@ -1,0 +1,290 @@
+{
+  "audits": [
+    {
+      "fixture_id": "sound_record_generation_reflection_control",
+      "fixture_kind": "positive_reflection_control",
+      "task": "source_order_reconstruction",
+      "same_source_order": true,
+      "same_observer_records": true,
+      "same_taf_readout_edges": true,
+      "same_mu": true,
+      "finality_profile_split": false,
+      "source_capability_split": false,
+      "taf_readout_split": false,
+      "left_source_order_recovered": true,
+      "right_source_order_recovered": true,
+      "left_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": true,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "positive_source_readout_reflection",
+      "interpretation": "The observer record chain is sound for visible source order. This is a reflection control, not evidence that finality generated the source order."
+    },
+    {
+      "fixture_id": "same_issuance_different_cadence",
+      "fixture_kind": "cadence_boundary",
+      "task": "source_order_reconstruction",
+      "same_source_order": true,
+      "same_observer_records": false,
+      "same_taf_readout_edges": true,
+      "same_mu": true,
+      "finality_profile_split": true,
+      "source_capability_split": false,
+      "taf_readout_split": false,
+      "left_source_order_recovered": true,
+      "right_source_order_recovered": true,
+      "left_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": true,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "cadence_boundary_not_source_arrow",
+      "interpretation": "The source order and readout order are unchanged while the local finality profile changes with observer cadence. The apparent timing is observer-side."
+    },
+    {
+      "fixture_id": "same_records_different_hidden_issuance",
+      "fixture_kind": "hidden_source_loss",
+      "task": "source_order_reconstruction",
+      "same_source_order": false,
+      "same_observer_records": true,
+      "same_taf_readout_edges": true,
+      "same_mu": true,
+      "finality_profile_split": false,
+      "source_capability_split": true,
+      "taf_readout_split": false,
+      "left_source_order_recovered": true,
+      "right_source_order_recovered": true,
+      "left_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": true,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "source_capability_lost_by_taf_readout",
+      "interpretation": "Identical records and TaF readout edges hide a difference in source realization order. The source capability does not factor through the readout."
+    },
+    {
+      "fixture_id": "same_issuance_records_different_mu",
+      "fixture_kind": "mu_invisible_loss",
+      "task": "source_mu_profile",
+      "same_source_order": true,
+      "same_observer_records": true,
+      "same_taf_readout_edges": true,
+      "same_mu": false,
+      "finality_profile_split": false,
+      "source_capability_split": true,
+      "taf_readout_split": false,
+      "left_source_order_recovered": true,
+      "right_source_order_recovered": true,
+      "left_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": true,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "mu_invisible_to_taf_readout",
+      "interpretation": "The same issuance order and observer records can carry different source mu data. Mu is decorative for plain finality order, but it is lost if the declared task needs source-measure information."
+    },
+    {
+      "fixture_id": "nonmonotone_access_loss",
+      "fixture_kind": "access_boundary",
+      "task": "source_order_reconstruction",
+      "same_source_order": true,
+      "same_observer_records": true,
+      "same_taf_readout_edges": true,
+      "same_mu": true,
+      "finality_profile_split": true,
+      "source_capability_split": false,
+      "taf_readout_split": false,
+      "left_source_order_recovered": true,
+      "right_source_order_recovered": true,
+      "left_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": false,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "access_boundary_not_source_arrow",
+      "interpretation": "The source order is unchanged while accessible finality support drops. The nonmonotonicity is an observer-boundary effect, not a source-arrow result."
+    },
+    {
+      "fixture_id": "gluing_failure_global_order_not_assumed",
+      "fixture_kind": "gluing_failure",
+      "task": "source_order_reconstruction",
+      "same_source_order": false,
+      "same_observer_records": true,
+      "same_taf_readout_edges": true,
+      "same_mu": true,
+      "finality_profile_split": false,
+      "source_capability_split": true,
+      "taf_readout_split": false,
+      "left_source_order_recovered": false,
+      "right_source_order_recovered": false,
+      "left_access_scores": [
+        [
+          0,
+          2
+        ]
+      ],
+      "right_access_scores": [
+        [
+          0,
+          2
+        ]
+      ],
+      "left_access_monotone": true,
+      "right_access_monotone": true,
+      "h7_source_arrow_upgrade_candidate": false,
+      "verdict": "gluing_failure_not_global_order",
+      "interpretation": "The same unglued local records are compatible with different global source orders. Global order must be reconstructed by declared gluing data, not assumed."
+    }
+  ],
+  "reflection_controls": [
+    "sound_record_generation_reflection_control"
+  ],
+  "cadence_boundaries": [
+    "same_issuance_different_cadence"
+  ],
+  "source_capability_losses": [
+    "same_records_different_hidden_issuance"
+  ],
+  "mu_invisible_losses": [
+    "same_issuance_records_different_mu"
+  ],
+  "access_boundary_cases": [
+    "nonmonotone_access_loss"
+  ],
+  "gluing_failures": [
+    "gluing_failure_global_order_not_assumed"
+  ],
+  "h7_arrow_candidates": [],
+  "strongest_claim": "Finality can be a sound observer-side reflection of a source realization order only when record generation, access, cadence, and gluing data are fixed. The same finite TaF readout can lose hidden source order or source-measure data; cadence and access can change apparent finality without changing source order; and unglued local records do not determine a global realization order.",
+  "improved": "T172 turns the Temporal Issuance bridge into an executable projection-sufficiency audit. It supplies a positive reflection control plus hostile fixtures for cadence, hidden issuance, mu, access loss, and gluing.",
+  "weakened": "This weakens any H7 or TaF prose that reads finality as generating source-level temporal direction. At most, finality is currently a typed observer readout or certificate of source order under declared soundness and reconstruction conditions.",
+  "falsification_condition": "The bridge earns a stronger claim only if a non-gerrymandered source system and observer projection prove that TaF finality preserves the declared source capability across cadence changes, hidden issuance alternatives, mu-sensitive tasks, access loss, and gluing ambiguity without importing ordinary time, entropy, information growth, or a preferred global frontier.",
+  "h7_update": "Add T172 to H7 as a source/readout recast: H7 remains weakened_conditional. Finality-induced direction should be treated as an observer-side reflection or factorization test, not as source-level arrow generation.",
+  "claim_ledger_update": "T172 tests the Temporal Issuance bridge. A sound record chain can reflect visible source order, but same-readout hidden issuance, mu-sensitive source tasks, nonmonotone access, and missing gluing all block finality-alone source-arrow readings.",
+  "open_blocker": "No typed source dynamics for issuance order or mu has yet survived absorber tests against ordinary causal order, entropy, information growth, record reconstruction, or a hidden global frontier.",
+  "suggested_next": "Run an absorber map for Temporal Issuance against causal sets, block-universe causal order, stochastic thermodynamics, and information-theoretic growth before adding richer bridge models.",
+  "not_claimed": "T172 does not import Temporal Issuance as true, does not derive the thermodynamic arrow, does not replace physical time, and does not prove that records create source realization order."
+}

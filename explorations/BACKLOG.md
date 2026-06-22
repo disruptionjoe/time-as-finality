@@ -56,6 +56,26 @@ leaving Time as Finality and Capability Projection as the main proof discipline.
    thermodynamic arrow, causal access/horizons, spin/gauge/matter, and
    experimental discriminator ladders only after the relevant gates exist.
 
+## Active Queue From Temporal Issuance Bridge
+
+Source: [temporal-issuance-bridge-v0.1](temporal-issuance-bridge-v0.1.md).
+
+These are bridge work cards, not claim promotions:
+
+1. Completed by [T172](../tests/T172-issuance-to-finality-bridge.md):
+   issuance-to-finality bridge model with source realization DAG, observer
+   cadence/access rules, projection into TaF readout, and controls for same
+   issuance/different cadence, same records/different hidden issuance, same
+   issuance/different `mu`, nonmonotone access loss, and gluing failure.
+2. H7 source/readout recast: stop treating finality alone as a physical-arrow
+   generator. Test whether finality can be a sound observer-readable
+   certificate or projection of a source-side realization order after absorber
+   variables are matched.
+3. Absorber map: compare Temporal Issuance against causal set theory, block
+   universe, thermodynamic arrow, information theory, and TaF record
+   reconstruction. Kill the bridge if issuance requires ordinary time,
+   entropy, information growth, or a preferred global frontier to do the work.
+
 ---
 
 ## Entry 2026-06-10: Distributed Records, Rendering, and Observer-Relative Reality

@@ -36,7 +36,11 @@ driven-dissipative successes remain neighboring stability programs unless they
 freeze a true physical-deletion reverse and still survive matched accounting.
 T168 grounds the exact-sector/gauge family in an executable finite audit:
 sector-rule bans, compensating reservoirs, gauge relabelings, exact ideal
-locks, and finite control/enforcement differences do not clear H7.
+locks, and finite control/enforcement differences do not clear H7. T172
+tests the Temporal Issuance bridge and recasts finality as an observer-side
+source/readout factorization question: same-readout hidden issuance,
+`mu`-sensitive source tasks, nonmonotone access, cadence variation, and
+missing gluing all block finality-alone source-arrow readings.
 
 ## What This Does Not Claim
 
@@ -86,6 +90,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
 - [T168: H7 Sector-Restriction Screen](../tests/T168-h7-sector-restriction-screen.md)
+- [T172: Issuance-To-Finality Bridge](../tests/T172-issuance-to-finality-bridge.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -438,3 +443,23 @@ this family only after it freezes a finite operational substrate, a
 gauge-invariant deletion distinction, matched conserved-quantity/reservoir/
 control data, and a physical deletion reverse that remains
 constructor-impossible after that accounting.
+
+## T172 Issuance-To-Finality Bridge
+
+[T172](../tests/T172-issuance-to-finality-bridge.md) tests the Temporal
+Issuance source/readout correction as a finite projection-sufficiency audit.
+The positive control shows that a sound observer record chain can reflect
+visible source order. The hostile fixtures then block the stronger reading:
+same source order can produce different apparent finality under different
+cadence; the same TaF readout can hide hidden source-order differences; the
+same order and records can differ in `mu`; access support can decrease without
+changing source order; and unglued local records do not determine a global
+realization order.
+
+This does not reopen H7 as a physical-arrow claim. It weakens H7 into a
+source/readout factorization target: finality may certify or project a
+source-side realization order only after record generation, access, cadence,
+source-measure, and gluing data are declared. No typed source dynamics for
+issuance order or `mu` has yet survived absorber tests against ordinary causal
+order, entropy, information growth, record reconstruction, or a hidden global
+frontier.

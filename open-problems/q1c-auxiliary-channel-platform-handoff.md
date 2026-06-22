@@ -67,10 +67,12 @@ The nearest repo artifacts are:
 - [T149 Weak-Measurement Conditional-Sufficiency Gate](../tests/T149-weak-measurement-conditional-sufficiency-gate.md)
 - [T150 Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
 - [T158 Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
+- [T166 Weak-Measurement Platform-Packet Gate](../tests/T166-weak-measurement-platform-packet-gate.md)
 
-### Minimum Pre-analysis Commitment
+### Stage 1: Minimum Pre-analysis Commitment
 
-Before analysis of the monitored run, the platform must freeze:
+Before any platform packet is treated as admissible for Q1C, it should clear
+the T166 intake gate. That means freezing:
 
 1. The full ordinary event-level monitored record schema `R`, not a dashboard
    or thresholded summary.
@@ -88,7 +90,10 @@ Before analysis of the monitored run, the platform must freeze:
 9. If the proposal enlarges the monitored instrument, an eventwise
    back-projection from enlarged data to the full ordinary standard record.
 
-### Required Data And Architecture Burden
+Packets that do not freeze those fields should be treated as null or scaffold-
+only, not as live Q1C progress.
+
+### Stage 2: Required Data And Architecture Burden
 
 The platform must later supply enough event-level detail to audit:
 
@@ -143,9 +148,10 @@ Treat the route as null for Q1C if any of these occur:
 
 ## Decision Rule
 
-If no named platform can freeze the full `R, A, H, V, L` tuple and supply the
-event-level audit burden, Q1C should remain dormant and should not receive
-additional internal toy-model effort.
+If no named platform can clear the T166 packet gate by freezing the full
+`R, A, H, V, L` tuple plus support floor, null controls, and event-level audit
+burden, Q1C should remain dormant and should not receive additional internal
+toy-model effort.
 
 If a platform can freeze the tuple but refuses the event-level screens, Q1C
 remains a scaffold-only admissibility protocol and gains no experimental
@@ -168,8 +174,9 @@ quantum-measurement work.
 ## Claim Ledger Update
 
 Q1C remains `dormant`. The next non-null artifact is not another internal weak
-measurement model; it is a named platform that predeclares `R`, `A`, `H`,
-`V = g(H)`, a support floor, a loss rule, a live T146 architecture class, and
+measurement model; it is a named platform that first clears the T166 packet
+gate by predeclaring `R`, `A`, `H`, `V = g(H)`, a support floor, a loss rule,
+a live T146 architecture class, null controls, and event-level audit data, and
 for any enlarged-instrument route an eventwise back-projection to the full
 ordinary standard record, then survives the T149/T150/T158 event-level
 screens.

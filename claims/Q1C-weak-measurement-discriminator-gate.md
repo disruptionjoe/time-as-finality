@@ -74,6 +74,13 @@ clear the independent-axis gate.
   comparison target is null unless the platform also predeclares an eventwise
   back-projection to the full ordinary standard record, preserves that record
   on the admissible domain, and still adds positive verdict lift beyond it.
+- T166 adds the intake gate for any future external platform ask: before any
+  event-level verdict test is even meaningful, the platform must freeze a
+  full-record packet containing `R`, `A`, the live architecture class, an
+  independently typed TaF axis `H`, the verdict map `V = g(H)`, support floor,
+  loss rule, null-control plan, and the event-level audit burden; enlarged-
+  instrument routes must also predeclare a full-record preserved target and an
+  eventwise back-projection.
 - N9 turns the remaining "maybe a real platform already exists" hope into a
   source-backed census: current named homodyne-trajectory, jump-reversal,
   microwave-photon-counter, thermal-detector, nanocalorimetric, and
@@ -95,6 +102,7 @@ clear the independent-axis gate.
 - No named platform in the repo exposes the eventwise back-projection needed
   to show that an enlarged instrument really preserves the full ordinary
   standard record rather than only a coarse or drifted target.
+- No named platform in the repo currently clears the T166 packet-intake gate.
 
 ## Falsification Or Demotion Condition
 
@@ -125,15 +133,17 @@ axis that is not reconstructed from the monitored record, not a control-schedule
 proxy, not postselected, not screened off by the ordinary monitored record, and
 verdict-changing under fixed coherence, redundancy, access, reversal-success
 statistics, and the full pre-registered event-level standard monitored record.
-Operationally, the platform must declare the full ordinary record `R`,
-auxiliary channel `A`, independently typed TaF axis `H`, verdict map `V=g(H)`,
-and loss rule, then show positive decision-risk lift from `(R,A)` over `R`
-alone. Each verdict class must have nontrivial predeclared support. If the
-proposal enlarges the monitored instrument, that enlargement and the preserved
-comparison target must be declared explicitly in advance, together with an
-eventwise projection from enlarged data back to the full ordinary standard
-record. That projection must preserve the declared ordinary record on the
-admissible domain. If it does not enlarge the instrument, it must instead
+Operationally, reinstatement now has two stages. First the platform must clear
+the T166 packet-intake gate by freezing the full ordinary record `R`,
+auxiliary channel `A`, live architecture class, independently typed TaF axis
+`H`, verdict map `V=g(H)`, class-support floor, loss rule, null-control plan,
+and event-level audit burden. Then it must show positive decision-risk lift
+from `(R,A)` over `R` alone under the T149/T150/T158 event-level screens. If
+the proposal enlarges the monitored instrument, that enlargement and the
+preserved comparison target must be declared explicitly in advance, together
+with an eventwise projection from enlarged data back to the full ordinary
+standard record. That projection must preserve the declared ordinary record on
+the admissible domain. If it does not enlarge the instrument, it must instead
 identify extra environment or detector structure whose verdict content
 survives conditioning on the full ordinary event log.
 
@@ -157,5 +167,6 @@ The current repo handoff for that burden is:
 - [T150: Weak-Measurement Verdict-Admissibility Gate](../tests/T150-weak-measurement-verdict-admissibility-gate.md)
 - [T155: Weak-Measurement Blackwell Boundary](../tests/T155-weak-measurement-blackwell-boundary.md)
 - [T158: Weak-Measurement Preserved-Target Gate](../tests/T158-weak-measurement-preserved-target-gate.md)
+- [T166: Weak-Measurement Platform-Packet Gate](../tests/T166-weak-measurement-platform-packet-gate.md)
 - [N9: Q1C Platform Candidate Census](../literature/N9-q1c-platform-candidate-census.md)
 - [Q1C Auxiliary-Channel Platform Handoff](../open-problems/q1c-auxiliary-channel-platform-handoff.md)

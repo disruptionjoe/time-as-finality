@@ -30,7 +30,10 @@ substrate families: protected memories, driven dissipation, exact sector
 restrictions, and horizon-style inaccessibility are all null by default unless
 they still show finite constructor-impossible physical deletion after matched
 accounting. N8 maps the broader stochastic-thermodynamic absorber stack that
-any future physical-arrow witness must survive.
+any future physical-arrow witness must survive. N11 and N12 then ground two of
+those family screens in the external literature: protected-memory and
+driven-dissipative successes remain neighboring stability programs unless they
+freeze a true physical-deletion reverse and still survive matched accounting.
 
 ## What This Does Not Claim
 
@@ -389,3 +392,24 @@ proposal may borrow this family only after it freezes the deletion task,
 allowed controls, decoder/syndrome assumptions, bath/reset channels, symmetry
 enforcement, and future-operation target, then still shows more than lifetime
 or barrier protection.
+
+## N12 Driven-Dissipative Absorber
+
+[N12](../literature/N12-h7-driven-dissipative-absorber.md) grounds the other
+high-risk T160 family directly: pumped, chemostatted, reservoir-engineered,
+and autonomously stabilized records.
+
+The result is again negative for H7's current physical-arrow route.
+Driven-dissipative successes are typically target-state preparation,
+nonequilibrium maintenance, logical-lifetime extension, autonomous reset, or
+phase-selection results under explicit drive, bath, or chemostat resources.
+Those are serious neighboring achievements, but they are not yet the same
+object as an H7 `physical_record_deletion` reverse that remains
+constructor-impossible after work, pump, bath, sink/export, source-copy, and
+control data are matched.
+
+So driven-dissipative proposals also stay in the absorber stack by default. A
+future H7 proposal may borrow this family only after it freezes the deletion
+task, allowed controls, pump/reset/decoder structure, nonequilibrium resource
+ledger, and future-operation target, then still shows more than maintained
+steady-state order or kinetic residence.

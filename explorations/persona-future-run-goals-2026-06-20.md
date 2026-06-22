@@ -374,9 +374,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P34 - Git Version Control Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T19:05:44-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-190544-p34-git-semantic-merge-attribution-audit.md
 - goal: Build a semantic-merge obstruction where two histories share endpoints
   and naive loss but differ in attribution, then compare it to LossKernel.
 - ambition: Find a concrete path-dependence witness in a familiar distributed

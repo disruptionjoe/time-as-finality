@@ -34,6 +34,9 @@ any future physical-arrow witness must survive. N11 and N12 then ground two of
 those family screens in the external literature: protected-memory and
 driven-dissipative successes remain neighboring stability programs unless they
 freeze a true physical-deletion reverse and still survive matched accounting.
+T168 grounds the exact-sector/gauge family in an executable finite audit:
+sector-rule bans, compensating reservoirs, gauge relabelings, exact ideal
+locks, and finite control/enforcement differences do not clear H7.
 
 ## What This Does Not Claim
 
@@ -82,6 +85,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
+- [T168: H7 Sector-Restriction Screen](../tests/T168-h7-sector-restriction-screen.md)
 - [T5: Thermodynamic Record Support](../tests/T5-thermodynamic-record-support.md)
 - [T9: Emergence Laboratory](../tests/T9-emergence-laboratory.md)
 
@@ -413,3 +417,24 @@ future H7 proposal may borrow this family only after it freezes the deletion
 task, allowed controls, pump/reset/decoder structure, nonequilibrium resource
 ledger, and future-operation target, then still shows more than maintained
 steady-state order or kinetic residence.
+
+## T168 Sector-Restriction Screen
+
+[T168](../tests/T168-h7-sector-restriction-screen.md) grounds the exact-sector
+and gauge-restriction branch left by T160. It tests finite fixtures for local
+sector-only deletion bans, compensating reservoirs, pure gauge relabeling,
+exact superselection locks, finite symmetry-breaking controls, and a matched
+sector topology split.
+
+The result is negative for H7's current physical-arrow route. Exact sector or
+gauge restrictions do not currently reopen H7: deletion impossibility is
+absorbed by a declared operation-class ban, conserved-quantity reservoir
+accounting, pure gauge redundancy, exact ideal-sector stipulation, or finite
+control/enforcement data. The only matched-accounting split is again
+future-operation topology residue, not physical-arrow evidence.
+
+So sector/gauge proposals stay null by default. A future H7 proposal may use
+this family only after it freezes a finite operational substrate, a
+gauge-invariant deletion distinction, matched conserved-quantity/reservoir/
+control data, and a physical deletion reverse that remains
+constructor-impossible after that accounting.

@@ -1,0 +1,131 @@
+{
+  "audits": [
+    {
+      "fixture_id": "local_sector_delete_forbidden_without_reservoir",
+      "source": "finite charged record with only local sector bookkeeping",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "finite_operational_substrate": true,
+      "gauge_invariant_difference": true,
+      "d1_topology_split": true,
+      "future_operation": "delete_record_while_preserving_declared_sector",
+      "future_operation_split": true,
+      "reverse_status": "operation_forbidden_by_declared_sector_rule",
+      "h7_upgrade_candidate": false,
+      "verdict": "sector_rule_stipulation_not_arrow",
+      "interpretation": "local_sector_delete_forbidden_without_reservoir forbids deletion by the declared operation class: Deletion is impossible only because the allowed operation class excludes the compensating degree of freedom that would carry the conserved quantity."
+    },
+    {
+      "fixture_id": "compensating_reservoir_restores_deletion",
+      "source": "charged record with explicit reservoir accounting",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "sink_delta",
+        "compensating_reservoir_state"
+      ],
+      "finite_operational_substrate": true,
+      "gauge_invariant_difference": true,
+      "d1_topology_split": true,
+      "future_operation": "delete_record_with_global_charge_conservation",
+      "future_operation_split": true,
+      "reverse_status": "finite_control_possible_with_reservoir_accounting",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_conserved_quantity_or_reservoir_accounting",
+      "interpretation": "compensating_reservoir_restores_deletion is conserved-quantity or reservoir accounting: Once the compensating reservoir is in the source description, the apparent sector obstruction becomes ordinary conserved-quantity and sink accounting."
+    },
+    {
+      "fixture_id": "gauge_relabeling_record_loss",
+      "source": "same physical gauge orbit with different representatives",
+      "reverse_edge_class": "gauge_relabeling",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "gauge_orbit_treatment"
+      ],
+      "finite_operational_substrate": true,
+      "gauge_invariant_difference": false,
+      "d1_topology_split": true,
+      "future_operation": "change_representative_label",
+      "future_operation_split": false,
+      "reverse_status": "pure_gauge_or_relabeling",
+      "h7_upgrade_candidate": false,
+      "verdict": "pure_gauge_redundancy",
+      "interpretation": "gauge_relabeling_record_loss has no gauge-invariant deletion distinction: The visible record label changes, but the physical gauge orbit does not. This is not physical deletion."
+    },
+    {
+      "fixture_id": "exact_superselection_constructor_lock",
+      "source": "exact superselection or sector-changing ban",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "finite_operational_substrate": false,
+      "gauge_invariant_difference": true,
+      "d1_topology_split": true,
+      "future_operation": "delete_across_exact_sector_boundary",
+      "future_operation_split": true,
+      "reverse_status": "constructor_stipulated_by_exact_sector",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_exact_sector_idealization",
+      "interpretation": "exact_superselection_constructor_lock relies on an exact ideal sector restriction: The reverse is forbidden by an exact sector axiom, not by a finite substrate-native deletion obstruction."
+    },
+    {
+      "fixture_id": "finite_symmetry_breaking_control",
+      "source": "finite sector enforcement with a symmetry-breaking control",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": false,
+      "absorber_mismatch_fields": [
+        "reversible_control",
+        "allowed_control_class"
+      ],
+      "finite_operational_substrate": true,
+      "gauge_invariant_difference": true,
+      "d1_topology_split": true,
+      "future_operation": "delete_record_with_finite_symmetry_breaking",
+      "future_operation_split": true,
+      "reverse_status": "finite_control_or_leak_possible",
+      "h7_upgrade_candidate": false,
+      "verdict": "absorbed_by_finite_control_or_enforcement_accounting",
+      "interpretation": "finite_symmetry_breaking_control is finite control/enforcement accounting: Finite enforcement can make deletion costly or unavailable to a restricted controller, but admitting the finite control turns the effect into control/resource accounting."
+    },
+    {
+      "fixture_id": "matched_sector_branch_topology_residue",
+      "source": "T145-style topology residue carried by charged branches",
+      "reverse_edge_class": "physical_record_deletion",
+      "absorber_vector_matched": true,
+      "absorber_mismatch_fields": [],
+      "finite_operational_substrate": true,
+      "gauge_invariant_difference": true,
+      "d1_topology_split": true,
+      "future_operation": "survive_one_charged_branch_failure",
+      "future_operation_split": true,
+      "reverse_status": "finite_control_deletion_possible",
+      "h7_upgrade_candidate": false,
+      "verdict": "fixed_accounting_sector_topology_residue_not_arrow",
+      "interpretation": "matched_sector_branch_topology_residue preserves a future-operation split under matched sector accounting, but deletion remains possible under the declared finite controls. Treat it as topology residue, not H7 arrow evidence."
+    }
+  ],
+  "sector_rule_stipulations": [
+    "local_sector_delete_forbidden_without_reservoir"
+  ],
+  "reservoir_absorptions": [
+    "compensating_reservoir_restores_deletion"
+  ],
+  "gauge_redundancies": [
+    "gauge_relabeling_record_loss"
+  ],
+  "fixed_accounting_topology_residues": [
+    "matched_sector_branch_topology_residue"
+  ],
+  "h7_arrow_candidates": [],
+  "no_sector_fixture_clears_h7": true,
+  "strongest_claim": "Exact sector or gauge restrictions do not currently reopen H7. In the finite audit, deletion impossibility is absorbed by a declared operation-class ban, conserved-quantity reservoir accounting, pure gauge redundancy, exact ideal-sector stipulation, or finite control/enforcement data. The only matched-accounting split is again future-operation topology residue, not physical-arrow evidence.",
+  "improved": "T168 converts the T160 sector/gauge null family into an executable screen. Future proposals must say whether the alleged deletion obstruction is gauge-invariant, finite-operational, and still present after compensating reservoirs and allowed controls are included.",
+  "weakened": "This weakens any H7 route that points at superselection, exact symmetry, gauge redundancy, or sector conservation as automatic record finality. Those structures may constrain operations, but they do not by themselves supply a matched-accounting physical deletion arrow.",
+  "falsification_condition": "T168 fails in H7's favor only if a finite, physically typed sector or gauge substrate supplies a gauge-invariant record-deletion task whose absorber vector is matched, whose compensating reservoirs and allowed controls are explicit, and whose physical deletion reverse remains constructor-impossible after full accounting.",
+  "h7_update": "Add T168 to H7: exact sector and gauge restriction proposals are null by default. They reopen H7 only with a finite operational substrate, a gauge-invariant deletion distinction, matched conserved-quantity/reservoir/control data, and a deletion reverse that remains constructor-impossible after that accounting.",
+  "claim_ledger_update": "T168 grounds the T160 superselection/gauge screen. Sector-rule bans, compensating-reservoir changes, gauge relabelings, exact ideal locks, and finite enforcement/control differences do not clear H7; the remaining matched topology split is capability residue rather than arrow evidence.",
+  "open_blocker": "No finite sector or gauge fixture in the current audit yields a gauge-invariant, matched-accounting, constructor-impossible physical_record_deletion reverse.",
+  "suggested_next": "Do not spend more H7 effort on generic superselection or gauge language. The remaining ungrounded T160 family is horizon/access; screen it as non-deletion unless a proposal names actual physical record destruction rather than reachability loss.",
+  "not_claimed": "T168 is not a theorem of gauge theory, not a claim that exact superselection rules are false, and not a physical model of charge dynamics. It is a finite H7 audit gate for avoiding false deletion residue."
+}

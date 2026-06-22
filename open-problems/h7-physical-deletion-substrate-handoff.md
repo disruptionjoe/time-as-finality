@@ -63,6 +63,7 @@ The nearest repo artifacts are:
 - [T148 H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152 Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160 H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
+- [T168 H7 Sector-Restriction Screen](../tests/T168-h7-sector-restriction-screen.md)
 - [N8 H7 Stochastic-Thermodynamic Absorber Map](../literature/N8-h7-stochastic-thermodynamic-absorbers.md)
 - [N11 H7 Protected-Memory Absorber](../literature/N11-h7-protected-memory-absorber.md)
 - [N12 H7 Driven-Dissipative Absorber](../literature/N12-h7-driven-dissipative-absorber.md)
@@ -92,7 +93,10 @@ Before claiming any H7 relevance, the proposal must freeze:
    - code distance, syndrome access, and bath/reset channels for protected
      memories;
    - cooling, pumping, or bias-maintenance resources for driven systems;
-   - horizon, superselection, or gauge restrictions if claimed.
+   - horizon restrictions if claimed;
+   - finite operational substrate, gauge-invariant deletion distinction,
+     conserved-quantity bookkeeping, compensating reservoirs, sector
+     enforcement, and allowed controls for superselection or gauge claims.
 7. The allowed control class used to judge possibility versus impossibility.
 8. A null-control plan covering idealization, hidden sink/export, hidden copy
    handles, denied controls, and merely exponential suppression.
@@ -101,7 +105,11 @@ T160 adds a pre-intake rule before detailed review: proposals framed only as
 protected memories, driven dissipative states, exact sector restrictions, or
 horizon-style inaccessibility should be treated as null by default unless they
 already declare why they avoid those family absorbers on a finite operational
-reading.
+reading. T168 sharpens the sector/gauge branch: sector-rule bans,
+compensating-reservoir changes, gauge relabelings, exact ideal locks, and
+finite enforcement/control differences are null unless a finite
+gauge-invariant deletion reverse remains constructor-impossible after matched
+accounting.
 
 ### Required Audit Burden
 
@@ -181,4 +189,4 @@ H7 remains `weakened_conditional`. The next non-null H7 artifact is not more
 paper-facing arrow prose; it is a named physical-deletion substrate that
 clears the T160 family screen, freezes the reverse-edge class, absorber
 vector, allowed controls, and future-operation target, then survives the
-T145/T148/T152 audit plus the N8 stochastic-thermodynamic absorber map.
+T145/T148/T152/T168 audit plus the N8 stochastic-thermodynamic absorber map.

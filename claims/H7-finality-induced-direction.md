@@ -24,8 +24,10 @@ capability residue rather than arrow evidence unless physical deletion remains
 impossible after full absorber accounting, T179 preserves that survivor as a
 minimal future-capability kernel target rather than H7 arrow evidence, T180
 shows that the current one-branch-failure task already factors through a
-coarser backup-branch threshold rather than exact branch multiplicity, and
-T148 makes the paper-facing demotion explicit. T152 screens metastable records
+coarser backup-branch threshold rather than exact branch multiplicity, T181
+generalizes that threshold result for unnamed k-branch failure tasks while
+separating margin and named-hazard capabilities, and T148 makes the
+paper-facing demotion explicit. T152 screens metastable records
 and finds that finite barriers are kinetic/resource absorbers, while infinite
 barriers or denied controls are constructor or boundary stipulations rather
 than physical-arrow evidence. T160 extends that intake screen across the most
@@ -100,6 +102,7 @@ is possible, while the reverse is not admissible under the same rule.
 - [T145: Physical Record Deletion Fixed-Accounting Screen](../tests/T145-physical-record-deletion-fixed-accounting.md)
 - [T179: Fixed-Accounting Capability Topology](../tests/T179-fixed-accounting-capability-topology.md)
 - [T180: Branch-Support Threshold Minimality](../tests/T180-branch-support-threshold-minimality.md)
+- [T181: Branch-Failure Threshold Theorem](../tests/T181-branch-failure-threshold-theorem.md)
 - [T148: H7 Paper-Facing Demotion Gate](../tests/T148-h7-paper-facing-demotion-gate.md)
 - [T152: Metastable-Record Deletion Screen](../tests/T152-metastable-record-deletion-screen.md)
 - [T160: H7 Substrate-Family Screen](../tests/T160-h7-substrate-family-screen.md)
@@ -360,6 +363,25 @@ as holder count, causal-chain count, and their joint signature fail on
 explicit witness pairs. This sharpens the positive residue again: the earned
 object is task-relative backup-branch availability, not exact branch
 multiplicity. It does not reopen H7 as thermodynamic-arrow evidence.
+
+## T181 Result
+
+[T181](../tests/T181-branch-failure-threshold-theorem.md) generalizes the T180
+weakening across a finite valid-provenance fixed-accounting branch family. For
+each unnamed fixed-k task `survive_k_branch_failures`, capability factors
+through:
+
+```text
+branch_support >= k + 1
+```
+
+Exact branch count is therefore over-specified for fixed unnamed survival
+tasks. It becomes load-bearing only for the variable margin task
+`max_tolerated_branch_failures`. Branch identity becomes load-bearing only when
+the task names or correlates failure regions, as in a named outage. This keeps
+the residue useful but narrower: thresholds handle exchangeable branch
+failures, support intersections handle named hazards, and neither reopens H7
+as physical-arrow evidence.
 
 ## T148 Result
 

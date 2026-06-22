@@ -2272,3 +2272,22 @@ forward direction. The converse is an open conjecture.
   `branch_support >= k+1` thresholds are necessary and sufficient, or the
   first natural task that genuinely needs richer topology than a threshold.
 - Artifact: [T180 results](results/branch-support-threshold-minimality-v0.1-results.md).
+
+### 2026-06-22 - Branch-Failure Threshold Theorem (T181)
+
+- H7 remains `weakened_conditional`; T181 is a fixed-accounting capability
+  theorem screen, not thermodynamic-arrow evidence or a physical-arrow upgrade.
+- Result: for unnamed branch-failure tasks, `branch_support >= k + 1` is
+  sufficient for each fixed `k`, and exact branch count is nonminimal for those
+  fixed tasks.
+- Boundary cases: exact count is needed for the variable margin capability
+  `max_tolerated_branch_failures`, while branch identity is needed for named or
+  correlated hazard tasks such as a declared outage set.
+- Claim impact: future H7 language should not treat exact branch multiplicity
+  as the generic residue. The right coordinate is task-relative: thresholds
+  for exchangeable failures, count for margin, and support identity for named
+  hazards.
+- Open blocker: no physically grounded hazard model yet tells which branch
+  identities are substrate-natural rather than labels, or how the finite
+  support predicates transport to smooth or quantum records.
+- Artifact: [T181 results](results/branch-failure-threshold-theorem-v0.1-results.md).

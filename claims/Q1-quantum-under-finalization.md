@@ -11,7 +11,10 @@ Conjecture.
 ## Status
 
 Roadmap umbrella. Q1 should not be used as a single paper-facing
-`partially_supported` physics claim.
+`partially_supported` physics claim. After T177, future Q1 work must pass a
+pre-branch intake screen before branch-local work starts: changing
+absorber-owned SBS, Quantum-Darwinism, provenance, ordinary-record,
+governance, or no-signalling data does not reopen Q1.
 
 ## Child Claims
 
@@ -103,6 +106,7 @@ Proof-carrying language may help here: later comparison can certify a nonclassic
 - [T104: Q1A Provenance-Aware Darwinism Absorption](../tests/T104-q1a-provenance-aware-darwinism-absorption.md)
 - [T140: Q1 Frontier Escape Matrix](../tests/T140-q1-frontier-escape-matrix.md)
 - [T170: Q1D Correlation-Record Guardrail](../tests/T170-q1d-correlation-record-guardrail.md)
+- [T177: Q1 Absorber-Owned Field Intake](../tests/T177-q1-absorber-owned-field-intake.md)
 
 ## T21 Result
 
@@ -540,6 +544,20 @@ This keeps Q1D as a language and admissibility guardrail only. It adds no
 measurement dynamics, collapse account, detector model, or empirical
 discriminator.
 
+## T177 Result
+
+[T177](../tests/T177-q1-absorber-owned-field-intake.md) adds a single Q1 intake
+screen before child-branch work starts. It rejects proposal motions that only
+change absorber-owned fields: Q1A partition/objectivity/support changes,
+incomplete Q1B detector governance, coarse-record Q1C second-meter packets,
+Q1C packets without typed verdict lift, and Q1D hidden-variable language.
+
+The screen is falsifiable because it admits positive controls. A future run
+may reopen Q1 only through a same-SBS-key Q1A physical split, a complete
+reviewable Q1B deployment packet, or a T166-valid Q1C packet with typed
+positive verdict-risk lift. Q1D remains guardrail-only unless a nonredundant
+theorem target is named.
+
 ## Contribution Needed
 
 T140 adds a branch-frontier rule before those needs:
@@ -552,6 +570,13 @@ escape gate.
 For now, no child branch has an active internal upgrade route. Q1B remains the
 only non-null experimental direction, and it is externally blocked pending a
 signed pre-event manifest and real event-level packet.
+
+T177 adds the first intake check before even applying those branch-frontier
+rules:
+
+```text
+Do not reopen Q1 by changing absorber-owned fields.
+```
 
 Four concrete needs remain.
 

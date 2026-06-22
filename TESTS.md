@@ -52,6 +52,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T172](tests/T172-issuance-to-finality-bridge.md) | Issuance-to-finality bridge | H7, D1 | implemented: source/readout bridge audit; finality can reflect visible source order under sound records, but hidden issuance, `mu`, access, cadence, and gluing block finality-alone source-arrow readings |
 | [T173](tests/T173-detector-claim-review-authority-bound.md) | Detector claim-review authority bound | Q1B, T169, T171 | implemented: the surviving claim-review route requires five effective authority domains once independent escrow is included, not the older four-domain floor |
 | [T175](tests/T175-detector-threshold-root-quorum-screen.md) | Detector threshold-root quorum screen | Q1B, T161, T171, T173 | implemented: threshold or multisig root control is null unless archive custody, escrow, and trust audit are mandatory guardians in every authorized critical challenge-window quorum they are meant to guard |
+| [T177](tests/T177-q1-absorber-owned-field-intake.md) | Q1 absorber-owned field intake | Q1, Q1A, Q1B, Q1C, Q1D | implemented: absorber-owned field changes do not reopen Q1; only same-SBS-key Q1A, complete reviewable Q1B, or T166-valid Q1C packet-plus-lift positive controls pass |
 | [T153](tests/T153-lorentzian-causal-diamond-screen.md) | Lorentzian causal-diamond screen | R1, S1, B1, T151 | implemented: 1+1 Lorentzian access/reconstructability verdicts factor through causal pasts, common futures, changed access diamonds, and domains of dependence; no same-Lorentzian-data TaF residue found |
 | [T114](tests/T114-viability-filter.md) | Viability filter | North Star, D1, H7, emergence | implemented: finite geometry-to-viability filter with maintenance, record-finality, and emergence-platform gates; no core claim upgrade |
 | [T115](tests/T115-maintenance-viability-split.md) | Maintenance-cost viability split | T114, H7, TF1, reconstruction debt | implemented: matched entropy/control/stability/viability/storage examples split on future operation rights, but strongest cases are absorbed by provenance, commons, and reconstruction debt |
@@ -202,6 +203,7 @@ python -m models.run_t172
 python -m models.run_t173
 python -m models.run_t174
 python -m models.run_t175
+python -m models.run_t177
 python -m models.run_t114
 python -m models.run_t115
 python -m models.run_t117
@@ -408,6 +410,7 @@ The suites use only Python's standard library. Evidence records:
 - [Q1A Fixed-Data Witness v0.1 Results](results/q1a-fixed-data-witness-v0.1-results.md)
 - [Q1A Current-Family Closure v0.1 Results](results/q1a-current-family-closure-v0.1-results.md)
 - [Q1A SBS Factorization Obstruction v0.1 Results](results/q1a-sbs-factorization-obstruction-v0.1-results.md)
+- [Q1 Absorber-Owned Field Intake v0.1 Results](results/q1-absorber-owned-field-intake-v0.1-results.md)
 - [T54 Ordinal Scaling Stress v0.1 Results](results/t54-ordinal-scaling-stress-v0.1-results.md)
 
 ## How To Add A Test

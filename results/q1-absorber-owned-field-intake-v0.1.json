@@ -1,0 +1,87 @@
+{
+  "audits": [
+    {
+      "proposal_id": "q1a_partition_relabel",
+      "branch": "Q1A",
+      "classification": "absorbed_q1a_changes_sbs_or_qd_data",
+      "should_reopen_branch": false,
+      "required_next": "Hold the SBS/strong-QD closure key fixed before claiming a Q1A split.",
+      "reason": "The proposal changes objectivity, access, provenance partition, partition visibility, audited support, or another field already importable by SBS, strong Quantum Darwinism, or provenance-aware redundancy accounting."
+    },
+    {
+      "proposal_id": "q1a_same_sbs_key_physical_split_candidate",
+      "branch": "Q1A",
+      "classification": "provisional_q1a_same_sbs_key_split",
+      "should_reopen_branch": true,
+      "required_next": "Run the hostile same-SBS-data witness and attempt SBS/strong-QD absorption.",
+      "reason": "This is the exact post-T162 Q1A positive-control shape."
+    },
+    {
+      "proposal_id": "q1b_nominal_federation",
+      "branch": "Q1B",
+      "classification": "scaffold_only_q1b_incomplete_external_packet",
+      "should_reopen_branch": false,
+      "required_next": "Complete the T136/T171/T173/T175/T176 external packet before scoring.",
+      "reason": "The deployment is missing: full reviewable rows during challenge, frozen challenge-window policy."
+    },
+    {
+      "proposal_id": "q1b_reviewable_packet_candidate",
+      "branch": "Q1B",
+      "classification": "provisional_q1b_reviewable_deployment_packet",
+      "should_reopen_branch": true,
+      "required_next": "Run the event-level packet through the detector null criterion and D1 scoring.",
+      "reason": "This clears the current Q1B intake burden but is still not evidence until rows are audited."
+    },
+    {
+      "proposal_id": "q1c_coarse_record_second_meter",
+      "branch": "Q1C",
+      "classification": "null_coarse_ordinary_record",
+      "should_reopen_branch": false,
+      "required_next": "Freeze the full event-level ordinary record.",
+      "reason": "The packet freezes only a coarse export rather than the full ordinary event-level standard record."
+    },
+    {
+      "proposal_id": "q1c_packet_without_lift",
+      "branch": "Q1C",
+      "classification": "scaffold_only_q1c_packet_without_verdict_lift",
+      "should_reopen_branch": false,
+      "required_next": "Show that (R,A) improves the declared verdict risk over R alone.",
+      "reason": "The packet is admissible, but no positive predeclared verdict-risk lift is shown."
+    },
+    {
+      "proposal_id": "q1c_packet_plus_typed_lift_candidate",
+      "branch": "Q1C",
+      "classification": "provisional_q1c_packet_plus_lift",
+      "should_reopen_branch": true,
+      "required_next": "Run T149/T150/T158 event-level screens and same-neighbor-data absorbers.",
+      "reason": "This is the post-T166 positive-control shape for Q1C."
+    },
+    {
+      "proposal_id": "q1d_hidden_variable_story",
+      "branch": "Q1D",
+      "classification": "null_q1d_hidden_variable_retrofit",
+      "should_reopen_branch": false,
+      "required_next": "Keep contextuality as a guardrail unless a new theorem target is named.",
+      "reason": "The proposal treats Q1D as a hidden-variable repair."
+    },
+    {
+      "proposal_id": "q1d_guardrail_only_language",
+      "branch": "Q1D",
+      "classification": "guardrail_only_q1d_no_new_theorem_target",
+      "should_reopen_branch": false,
+      "required_next": "Name a nonredundant contextuality or detector-record theorem target.",
+      "reason": "The proposal is admissible language discipline but not a Q1D upgrade."
+    }
+  ],
+  "null_controls_rejected": true,
+  "hypothetical_reopen_controls_admitted": true,
+  "q1_remains_roadmap_umbrella": true,
+  "strongest_claim": "Q1 should be reopened only by a proposal that clears a child-branch escape gate while holding absorber-owned fields fixed. Changing SBS, Quantum-Darwinism, provenance, ordinary-record, governance, or no-signalling data is absorption, not a quantum measurement upgrade.",
+  "improved": "T177 gives Q1 a single intake screen before branch-local work starts. It admits exact positive-control shapes for Q1A, Q1B, and Q1C, while rejecting partition relabels, nominal federations, coarse second meters, no-lift platform packets, and hidden-variable language.",
+  "weakened": "This weakens Q1 as an autonomous research route. Most plausible proposal motions are now classified as absorber-owned field changes or scaffold-only until they clear a stricter branch gate.",
+  "falsification_condition": "T177 fails if a serious Q1 proposal should reopen a branch despite changing only absorber-owned fields, omitting the child-branch closure data, lacking a real Q1B deployment packet, lacking a T166/T149-style Q1C packet-plus-lift, or violating Q1D no-signalling/staging rules.",
+  "q1_update": "Q1 remains a roadmap umbrella. Future quantum-measurement work must first pass the T177 intake screen, then the relevant child-branch gate.",
+  "claim_ledger_update": "Add T177 to Q1: absorber-owned field changes do not reopen Q1. Only a same-SBS-key Q1A physical split, a complete reviewable Q1B deployment packet, or a T166-valid Q1C packet with typed positive verdict lift passes the intake screen; Q1D remains guardrail-only absent a theorem.",
+  "open_blocker": "No current repo proposal supplies one of the admitted positive-control shapes. The screen is ready, but the frontier remains externally or physically blocked.",
+  "recommended_next": "Use T177 as the first check for any future Q1 proposal. Without a passing intake classification, shift the hourly run away from Q1."
+}

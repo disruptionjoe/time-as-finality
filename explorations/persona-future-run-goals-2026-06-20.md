@@ -393,9 +393,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P36 - Access-Control Systems Expert
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T21:06:16-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-210616-p36-access-control-finality-audit.md
 - goal: Model finality under permission inheritance, revocation, audit-log
   tampering, and security-lattice access boundaries.
 - ambition: Treat access as a formal authorization problem, not just visibility.

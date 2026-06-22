@@ -38,7 +38,10 @@ whether the lab can precommit the full evidence object without collapsing the
 archive and trust-audit roles into self-certification, including hidden
 collapses through shared critical control roots, and whether it will later
 make the full bound event rows reviewable during the challenge window rather
-than substituting proofs, summaries, private escrow, or delayed release.
+than substituting proofs, summaries, private escrow, or delayed release. T173
+adds one more burden: for claim review, independent escrow is not just a
+service feature. It is its own authority requirement, so the live route now
+needs a five-domain minimum rather than T100's older four-domain packet bound.
 
 ## Issue Draft
 
@@ -84,7 +87,7 @@ Before the first detector event, the deployment must freeze:
 
 ### Authority Partition Required
 
-For claim review, the clean scaffold uses five separated roles:
+For claim review, the clean scaffold uses six named roles:
 
 ```text
 analysis_governor
@@ -92,14 +95,19 @@ instrument_operator
 control_designer
 archive_custodian
 trust_auditor
+escrow_custodian
 ```
 
-T100 permits a few four-domain merges, but the trust auditor must remain
-independent. T161 adds that nominal role labels are insufficient when critical
-control roots are shared. Any workflow merging archive custody and trust audit,
-or sharing manifest/archive/audit/publication/revocation roots in a way that
-collapses the effective partition, is null for Q1B unless the packet design is
-changed and re-audited before data.
+T100 permits a few four-domain merges for the older pre-escrow packet, but
+T173 shows that claim review no longer fits inside that bound. Once T171-level
+independent escrow is included, the exact minimum is five authority domains:
+instrument operation may merge with governance, control design, or archive
+custody, but trust audit and escrow custody must remain separate. T161 adds
+that nominal role labels are still insufficient when critical control roots are
+shared. Any workflow merging archive custody and trust audit, merging escrow
+with another authority, or sharing manifest/archive/audit/publication/
+revocation roots in a way that collapses the effective partition, is null for
+Q1B unless the packet design is changed and re-audited before data.
 
 ### After-data Packet Required
 
@@ -119,6 +127,8 @@ After event collection, the group must publish or make reviewable:
 10. Reviewable access to the full bound event rows during the challenge window,
     not merely aggregate summaries, proof certificates, sampled rows, delayed
     release, or auditor statements about private escrow.
+11. Enough operator and control-root provenance to show that the escrow
+    custodian remained independent throughout the challenge window.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -157,8 +167,9 @@ Treat the route as null for Q1B if any of these occur:
 ## Decision Rule
 
 If no named group will sign the pre-data manifest with independent archive and
-trust-audit roles and an admissible T161 control-root map, Q1B should remain
-externally blocked and should not receive additional internal toy-model work.
+trust-audit roles, a named escrow authority, and an admissible T161 control-
+root map, Q1B should remain externally blocked and should not receive
+additional internal toy-model work.
 Future autonomous runs should prefer thermodynamic-arrow,
 spacetime-reconstruction, or formal-machinery targets unless a concrete Q1B
 signatory appears.
@@ -173,7 +184,7 @@ protocol and gains no empirical support.
 - Prevents "good detector hardware" from being confused with admissible
   detector evidence.
 - Gives a concrete demotion path if realistic workflows cannot satisfy the
-  authority and event-row requirements.
+  authority, escrow, and event-row requirements.
 
 ## What This Weakens
 
@@ -186,7 +197,8 @@ stay below active quantum-measurement work.
 
 Q1B remains `externally_blocked`. The next non-null artifact is not another
 model; it is a named detector deployment that signs the T136/T138 manifest
-pre-data, exposes a T161-valid control-root map, and later supplies real
-event-level packet rows in the stronger T171 sense: full reviewable rows during
-the challenge window with independent escrow. Without that, Q1B is an
+pre-data, exposes a T161-valid control-root map, staffs the T173 five-domain
+claim-review route including a distinct escrow authority, and later supplies
+real event-level packet rows in the stronger T171 sense: full reviewable rows
+during the challenge window with independent escrow. Without that, Q1B is an
 admissibility scaffold only.

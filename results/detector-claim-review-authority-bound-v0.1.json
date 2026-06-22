@@ -1,0 +1,5526 @@
+{
+  "claim_review_domains": [
+    "analysis_governor",
+    "instrument_operator",
+    "control_designer",
+    "archive_custodian",
+    "trust_auditor",
+    "escrow_custodian"
+  ],
+  "escrow_separation_domains": [
+    "analysis_governor",
+    "instrument_operator",
+    "control_designer",
+    "archive_custodian",
+    "trust_auditor"
+  ],
+  "audits": [
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 1,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "control_designer",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer__escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian__control_designer+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator__control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+trust_auditor__control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian__archive_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian+instrument_operator__archive_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian+trust_auditor__archive_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator__archive_custodian+escrow_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator+trust_auditor__archive_custodian+escrow_custodian",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+trust_auditor__archive_custodian+escrow_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+control_designer+instrument_operator+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator__archive_custodian+control_designer+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator+trust_auditor__archive_custodian+control_designer",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+trust_auditor__archive_custodian+control_designer+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator+trust_auditor__archive_custodian+control_designer+escrow_custodian",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 2,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer__escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian__control_designer+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator__control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+trust_auditor__control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian__archive_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian__archive_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator__archive_custodian+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator__archive_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+trust_auditor__archive_custodian+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+trust_auditor__archive_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__control_designer+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+control_designer__instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator__archive_custodian+control_designer",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator__archive_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+trust_auditor__archive_custodian+control_designer",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+trust_auditor__archive_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+control_designer__escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+escrow_custodian__control_designer+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+escrow_custodian+trust_auditor",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator+trust_auditor__archive_custodian+control_designer",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator+trust_auditor__archive_custodian+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+control_designer__escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+escrow_custodian__control_designer+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+escrow_custodian+instrument_operator",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+instrument_operator__control_designer+escrow_custodian",
+      "authority_count": 3,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_escrow_custodian+instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "control_designer"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian__control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian__control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator",
+        "archive_custodian"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator__control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian__control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+control_designer",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer",
+        "analysis_governor=archive_custodian",
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer__archive_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+control_designer",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian__archive_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "instrument_operator"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__escrow_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__control_designer+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+control_designer",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator__archive_custodian+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator+trust_auditor",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__escrow_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__control_designer+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__control_designer+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+control_designer",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+escrow_custodian",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor__archive_custodian+instrument_operator",
+      "authority_count": 4,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_instrument_operator+trust_auditor",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator",
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_escrow_custodian+instrument_operator",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "instrument_operator"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_escrow_custodian+trust_auditor",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian",
+          "trust_auditor"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "trust_auditor"
+      ],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+escrow_custodian",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "control_designer"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_control_designer+instrument_operator",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "instrument_operator"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": true,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "conflict_free_claim_review_partition"
+    },
+    {
+      "profile_name": "merge_control_designer+trust_auditor",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer",
+          "trust_auditor"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+control_designer",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "control_designer=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_archive_custodian+escrow_custodian",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "escrow_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "archive_custodian"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_archive_custodian+instrument_operator",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "instrument_operator"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": true,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "conflict_free_claim_review_partition"
+    },
+    {
+      "profile_name": "merge_archive_custodian+trust_auditor",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian",
+          "trust_auditor"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+archive_custodian",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor",
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=archive_custodian"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+control_designer",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor",
+          "control_designer"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [
+        "analysis_governor=control_designer"
+      ],
+      "escrow_conflicts": [],
+      "reason": "governance_control_archive_role_merge"
+    },
+    {
+      "profile_name": "merge_analysis_governor+escrow_custodian",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor",
+          "escrow_custodian"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [
+        "analysis_governor"
+      ],
+      "reason": "escrow_not_independent"
+    },
+    {
+      "profile_name": "merge_analysis_governor+instrument_operator",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor",
+          "instrument_operator"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": true,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "conflict_free_claim_review_partition"
+    },
+    {
+      "profile_name": "merge_analysis_governor+trust_auditor",
+      "authority_count": 5,
+      "partition": [
+        [
+          "analysis_governor",
+          "trust_auditor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ]
+      ],
+      "admissible": false,
+      "trust_auditor_independent": false,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "trust_auditor_not_independent"
+    },
+    {
+      "profile_name": "fully_separated_five_domain_profile",
+      "authority_count": 6,
+      "partition": [
+        [
+          "analysis_governor"
+        ],
+        [
+          "archive_custodian"
+        ],
+        [
+          "control_designer"
+        ],
+        [
+          "escrow_custodian"
+        ],
+        [
+          "instrument_operator"
+        ],
+        [
+          "trust_auditor"
+        ]
+      ],
+      "admissible": true,
+      "trust_auditor_independent": true,
+      "governance_conflicts": [],
+      "escrow_conflicts": [],
+      "reason": "conflict_free_claim_review_partition"
+    }
+  ],
+  "minimum_admissible_authority_count": 5,
+  "no_four_domain_profile_survives": true,
+  "admissible_five_domain_profiles": [
+    "merge_control_designer+instrument_operator",
+    "merge_archive_custodian+instrument_operator",
+    "merge_analysis_governor+instrument_operator"
+  ],
+  "strongest_claim": "T173 upgrades the T100 lower bound for the only surviving T171 claim-review route. Once full reviewable rows with independent escrow are treated as a real authority burden, no four-domain profile survives. The exact minimum becomes five authority domains, with only three minimal merge classes: instrument operation merged with exactly one of governance, control design, or archive custody.",
+  "improved": "T173 removes another ambiguity from Q1B. The repo no longer has to talk loosely about a reviewable-row federation. It can state the exact operational lower bound for the surviving claim-review path.",
+  "weakened": "This weakens Q1B again. T100's four-domain lower bound still covers weaker pre-data packet or scaffold talk, but it is no longer enough for the lone T171 live route. Any claim-review deployment that lacks a separate escrow authority should be rejected before detector evidence is discussed.",
+  "falsification_condition": "T173 fails if T171-level independent escrow can be implemented without a separate escrow authority while preserving outside challenge rights, or if a four-domain claim-review partition survives once escrow independence is stated operationally.",
+  "q1b_update": "Q1B remains externally blocked. For the only surviving T171 claim-review route, the detector packet now has a hard five-domain lower bound: governance, control, archive, trust audit, and independent escrow must remain conflict-free, with instrument operation mergeable into only one of governance, control, or archive.",
+  "claim_ledger_update": "Add T173 to Q1B: the T171 reviewable-row route is stricter than the older T100 packet. Once independent escrow is included, no four-domain claim-review profile survives; the exact minimum is five authority domains.",
+  "open_blocker": "The repo still has no named workflow that can supply both a T161-valid control-root map and the extra independent escrow authority demanded by T171 claim review.",
+  "recommended_next": "Update the Q1B deployment handoff to require a named escrow authority and then map one realistic collaboration onto one of the three surviving five-domain claim-review profiles. If none fits, demote Q1B below the active frontier."
+}

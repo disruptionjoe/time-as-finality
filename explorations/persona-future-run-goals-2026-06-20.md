@@ -384,9 +384,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P35 - Database Systems Architect
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-21T20:05:43-05:00
+- artifact: explorations/persona-goal-runs/2026-06-21-200543-p35-database-provenance-translation.md
 - goal: Translate a core typed-forgetting example into relational algebra,
   projection, joins, provenance semirings, and why-not provenance.
 - ambition: Test novelty against mature database provenance machinery.

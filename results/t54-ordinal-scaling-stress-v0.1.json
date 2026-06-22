@@ -1,0 +1,225 @@
+{
+  "comparison_target": "exact_ordinal_1p1_rank_permutation_scaling_n5_to_n7",
+  "target_basis": "For n generic points in a flat 1+1 causal diamond with no light-cone coordinate ties, sorting by one coordinate leaves the other coordinate's rank as a uniform element of S_n. T167 uses that exact finite ordinal ensemble for n=5, n=6, and n=7.",
+  "size_audits": [
+    {
+      "event_count": 5,
+      "total_rank_permutation_cases": 120,
+      "t126_classification_counts": [
+        {
+          "classification": "insufficient_scale",
+          "count": 120
+        }
+      ],
+      "t126_pass_count": 0,
+      "t156_pass_count": 0,
+      "parent_interval_pass_count": 0,
+      "stable_labeled_survivor_count": 0,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "oriented_survivor_class_count": 0,
+      "order_dual_survivor_class_count": 0,
+      "largest_oriented_class_size": 0,
+      "largest_oriented_class_probability": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "singleton_oriented_class_count": 0,
+      "deletion_pass_distribution": [],
+      "stable_strict_pair_distribution": []
+    },
+    {
+      "event_count": 6,
+      "total_rank_permutation_cases": 720,
+      "t126_classification_counts": [
+        {
+          "classification": "hub_nonlocality_obstruction",
+          "count": 110
+        },
+        {
+          "classification": "interval_profile_obstruction",
+          "count": 20
+        },
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 10
+        },
+        {
+          "classification": "passes_filter_only",
+          "count": 578
+        },
+        {
+          "classification": "rank_width_obstruction",
+          "count": 2
+        }
+      ],
+      "t126_pass_count": 578,
+      "t156_pass_count": 305,
+      "parent_interval_pass_count": 156,
+      "stable_labeled_survivor_count": 26,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "13/360",
+        "float": 0.03611111111111111
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "1/6",
+        "float": 0.16666666666666666
+      },
+      "oriented_survivor_class_count": 15,
+      "order_dual_survivor_class_count": 9,
+      "largest_oriented_class_size": 2,
+      "largest_oriented_class_probability": {
+        "fraction": "1/360",
+        "float": 0.002777777777777778
+      },
+      "singleton_oriented_class_count": 4,
+      "deletion_pass_distribution": [
+        {
+          "deletion_pass_count": 3,
+          "case_count": 8
+        },
+        {
+          "deletion_pass_count": 4,
+          "case_count": 34
+        },
+        {
+          "deletion_pass_count": 5,
+          "case_count": 88
+        },
+        {
+          "deletion_pass_count": 6,
+          "case_count": 26
+        }
+      ],
+      "stable_strict_pair_distribution": [
+        {
+          "strict_pair_count": 6,
+          "case_count": 1
+        },
+        {
+          "strict_pair_count": 7,
+          "case_count": 12
+        },
+        {
+          "strict_pair_count": 8,
+          "case_count": 13
+        }
+      ]
+    },
+    {
+      "event_count": 7,
+      "total_rank_permutation_cases": 5040,
+      "t126_classification_counts": [
+        {
+          "classification": "hub_nonlocality_obstruction",
+          "count": 182
+        },
+        {
+          "classification": "interval_profile_obstruction",
+          "count": 118
+        },
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 282
+        },
+        {
+          "classification": "passes_filter_only",
+          "count": 4456
+        },
+        {
+          "classification": "rank_width_obstruction",
+          "count": 2
+        }
+      ],
+      "t126_pass_count": 4456,
+      "t156_pass_count": 2051,
+      "parent_interval_pass_count": 561,
+      "stable_labeled_survivor_count": 174,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "29/840",
+        "float": 0.034523809523809526
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "58/187",
+        "float": 0.31016042780748665
+      },
+      "oriented_survivor_class_count": 86,
+      "order_dual_survivor_class_count": 45,
+      "largest_oriented_class_size": 4,
+      "largest_oriented_class_probability": {
+        "fraction": "1/1260",
+        "float": 0.0007936507936507937
+      },
+      "singleton_oriented_class_count": 10,
+      "deletion_pass_distribution": [
+        {
+          "deletion_pass_count": 4,
+          "case_count": 4
+        },
+        {
+          "deletion_pass_count": 5,
+          "case_count": 79
+        },
+        {
+          "deletion_pass_count": 6,
+          "case_count": 304
+        },
+        {
+          "deletion_pass_count": 7,
+          "case_count": 174
+        }
+      ],
+      "stable_strict_pair_distribution": [
+        {
+          "strict_pair_count": 9,
+          "case_count": 10
+        },
+        {
+          "strict_pair_count": 10,
+          "case_count": 88
+        },
+        {
+          "strict_pair_count": 11,
+          "case_count": 66
+        },
+        {
+          "strict_pair_count": 12,
+          "case_count": 10
+        }
+      ]
+    }
+  ],
+  "n6_stable_fraction": {
+    "fraction": "13/360",
+    "float": 0.03611111111111111
+  },
+  "n7_stable_fraction": {
+    "fraction": "29/840",
+    "float": 0.034523809523809526
+  },
+  "one_step_fraction_delta": {
+    "fraction": "-1/630",
+    "float": -0.0015873015873015873
+  },
+  "n7_oriented_class_count": 86,
+  "n7_order_dual_class_count": 45,
+  "n7_largest_class_probability": {
+    "fraction": "1/1260",
+    "float": 0.0007936507936507937
+  },
+  "strongest_claim": "The T165 rare-tail boundary survives one exact ordinal scaling step. At n=5 every case is blocked by the T126 scale floor. At n=6, 26/720 cases survive all current screens. At n=7, 174/5040 survive, a reduced fraction of 29/840, and those labels collapse to 86 oriented finite-poset classes or 45 order-dual classes.",
+  "improved": "T167 replaces the open 'try n=7' suggestion with an exact bounded scaling audit. It checks the same T126, T156, parent-interval, single-deletion, and finite-poset isomorphism stages at n=5, n=6, and n=7, so the six-event result is no longer a one-size-only comparison.",
+  "weakened_or_falsified": "This weakens two premature readings at once. The stable T54 tail does not vanish at n=7, so T165 was not merely a six-event accident. But it also does not become typical: the stable fraction slightly decreases from 13/360 to 29/840, and the largest n=7 oriented class has probability only 1/1260.",
+  "falsification_condition": "T167 fails if the ordinal S_n ensemble is not the intended exact finite model for no-tie 1+1 interval samples, if the n=6 result does not reproduce T165, if the n=7 audit changes any screen relative to T126/T156/T159, or if one-step scaling is described as a continuum-limit or generative-law result.",
+  "s1_update": "S1 remains open_formal_target. The T54 survivor tail persists from n=6 to n=7 under the declared exact ordinal comparison, but only as a rare finite tail requiring a generative mechanism, larger-n scaling law, embedding theorem, or continuum bridge.",
+  "claim_ledger_update": "Add T167 to S1: exact ordinal scaling gives n=5 scale-blocked, n=6 stable fraction 13/360, and n=7 stable fraction 29/840 with 86 oriented survivor classes and largest class probability 1/1260. Treat this as one-step persistence of a rare finite tail, not as spacetime evidence.",
+  "open_blocker": "No T54 generative law, asymptotic scaling theorem, natural measure over finality colimits, faithful embedding theorem, Lorentzian metric reconstruction, covariance result, or continuum bridge explains why the rare tail should be physically selected.",
+  "suggested_next": "Do not repeat small-n counting alone. Either derive a T54 generative measure that predicts the rare tail, add an efficient sampling/asymptotic argument for n>=8, or switch to a different S1 bridge such as embedding/covariance/metric reconstruction.",
+  "not_claimed": "T167 does not establish a continuum limit, random sprinkling law, faithful embedding, Lorentzian metric reconstruction, covariance, GR, QFT, or a generative spacetime mechanism. It only runs exact finite ordinal rank-permutation ensembles through the existing T54/T126/T156/T159 screens at n=5, n=6, and n=7."
+}

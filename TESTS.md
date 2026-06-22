@@ -35,6 +35,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T163](tests/T163-t54-rank-pair-family-census.md) | T54 rank-pair family census | S1, T126, T156, T157, T159 | implemented: exhaustive six-event T54 rank-pair census finds 26 labeled deletion-stable survivors while leaving the original T157 witness fragile |
 | [T164](tests/T164-t54-survivor-isomorphism-locality.md) | T54 survivor isomorphism and locality audit | S1, T126, T156, T159, T163 | implemented: T163 survivors quotient to 15 oriented finite-poset classes, or 9 order-dual classes, all still thin height-3 finite controls |
 | [T165](tests/T165-t54-survivor-sprinkling-stress.md) | T54 survivor sprinkling stress test | S1, T126, T156, T159, T163, T164 | implemented: exact six-point ordinal 1+1 comparison shows T164 survivors are a rare 26/720 tail, not a sprinkling law or spacetime evidence |
+| [T167](tests/T167-t54-ordinal-scaling-stress.md) | T54 ordinal scaling stress test | S1, T126, T156, T159, T163, T164, T165 | implemented: exact n=5..7 ordinal comparison shows the T54 survivor tail persists at n=7 but remains rare, with 174/5040 stable labels and 86 oriented classes |
 | [T127](tests/T127-same-neighbor-data-losskernel-audit.md) | Same-neighbor-data LossKernel audit | TF1, T34, T37, T39, T40, T69, T73, T99, T107, T108 | open: specification-only prior-art separation gate for source-anchored witness obligations after neighboring CSP/provenance/abstract-interpretation/lens/effect data are matched |
 | [T128](tests/T128-minimal-living-arrow.md) | Minimal living arrow | H7, T80, T82, T84, T106, T110, T122 | implemented: smallest non-stipulative finite survivor is explicit resource drawdown; maintenance/open-boundary survivors reduce to resource/sink/export accounting and constructor restriction is stipulative |
 | [T142](tests/T142-thermodynamic-erasure-calibration.md) | Thermodynamic erasure calibration | H7, T124, T128, T141 | implemented: T1 copy/branch-support gains are absorbed by reversible uncopy or ordinary erasure/free-energy accounting; D1 topology at fixed erasure floor is not arrow evidence |
@@ -384,6 +385,7 @@ The suites use only Python's standard library. Evidence records:
 - [Q1A Fixed-Data Witness v0.1 Results](results/q1a-fixed-data-witness-v0.1-results.md)
 - [Q1A Current-Family Closure v0.1 Results](results/q1a-current-family-closure-v0.1-results.md)
 - [Q1A SBS Factorization Obstruction v0.1 Results](results/q1a-sbs-factorization-obstruction-v0.1-results.md)
+- [T54 Ordinal Scaling Stress v0.1 Results](results/t54-ordinal-scaling-stress-v0.1-results.md)
 
 ## How To Add A Test
 

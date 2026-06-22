@@ -56,6 +56,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T163: T54 Rank-Pair Family Census](../tests/T163-t54-rank-pair-family-census.md)
 - [T164: T54 Survivor Isomorphism And Locality Audit](../tests/T164-t54-survivor-isomorphism-locality.md)
 - [T165: T54 Survivor Sprinkling Stress Test](../tests/T165-t54-survivor-sprinkling-stress.md)
+- [T167: T54 Ordinal Scaling Stress Test](../tests/T167-t54-ordinal-scaling-stress.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -212,6 +213,26 @@ small sprinkling outputs or evidence of a generative spacetime law by
 themselves. S1 now needs either a T54 generative mechanism that predicts this
 rare tail under a declared measure, or a larger-scale comparison that survives
 the same hostile conditioning.
+
+## T167 Ordinal Scaling Stress Test
+
+[T167](../tests/T167-t54-ordinal-scaling-stress.md) extends the T165 exact
+ordinal comparison one bounded step. The `n=5` ensemble is scale-blocked by
+T126. The `n=6` ensemble reproduces T165: `26/720 = 13/360` stable labeled
+survivors. The `n=7` ensemble has `174/5040 = 29/840` stable labeled
+survivors.
+
+This is one-step persistence of a rare finite tail, not an upgrade. The
+seven-event stable labels reduce to `86` oriented finite-poset classes, or
+`45` order-dual classes, and the largest oriented class has probability
+`1/1260` under the uniform ordinal ensemble.
+
+T167 weakens both easy stories: the T165 tail was not merely an immediate
+six-event accident, but it also does not become typical at seven events. S1
+therefore still needs a T54 generative law, an asymptotic scaling theorem, a
+natural measure over finality colimits, a faithful embedding theorem,
+Lorentzian metric reconstruction, covariance, or a continuum bridge before
+spacetime-facing residue language can increase.
 
 ## T153 Lorentzian Absorber Gate
 

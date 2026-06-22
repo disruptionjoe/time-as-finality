@@ -166,6 +166,24 @@ Cheap auditability test: a reviewer can see where the motif appears, what role i
 plays in each place, whether the role is stable, and what would make it a real
 definition rather than repeated language.
 
+## Governance review gate
+
+This workflow remains valid only if each run passes all five checks:
+
+- **Stopping condition:** stop after the declared census scope has been scanned,
+  occurrence statuses assigned, and consequences routed. Do not keep widening
+  the corpus until a motif looks important.
+- **Bounded artifact:** emit one motif map plus optional definition-candidate or
+  demotion proposals.
+- **Success vs noise:** success is role-stable recurrence with independent
+  origins or a useful demotion; noise is term frequency, thematic mood, or
+  ungrounded pattern matching.
+- **Overclaim protection:** recurring language is not a primitive, theorem, or
+  line merge until a later owner accepts the proposal.
+- **Claim-weakening ability:** each motif must include `could_be_definition_if`
+  and `demote_if`, so the run can narrow or discard motifs instead of only
+  generating more work.
+
 ## Future automation decomposition notes
 
 *Advisory; Phase 4 formalizes. Task atoms inherit this workflow's authority and

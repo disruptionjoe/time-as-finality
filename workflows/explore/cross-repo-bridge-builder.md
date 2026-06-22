@@ -153,6 +153,23 @@ bridge is useful.
 Cheap auditability test: every proposed bridge names operations on both sides,
 not just vocabulary, and includes a negative-control analogy.
 
+## Governance review gate
+
+This workflow remains valid only if each run passes all five checks:
+
+- **Stopping condition:** stop after one declared bridge question has operation
+  tables, false-analogy analysis, and exactly one proposed bridge test.
+- **Bounded artifact:** emit one bridge memo plus one bridge candidate or test
+  artifact proposal.
+- **Success vs noise:** success is an operation-level correspondence with a
+  negative control; noise is shared vocabulary, prestige transfer, or a broad
+  megatheory frame.
+- **Overclaim protection:** bridges are exploratory and must not import claim
+  status, physics evidence, legitimacy evidence, or roadmap authority from
+  another repo.
+- **Claim-weakening ability:** every bridge must include a false-analogy or
+  demotion path stating when the comparison collapses to metaphor.
+
 ## Future automation decomposition notes
 
 *Advisory; Phase 4 formalizes. Task atoms inherit this workflow's authority and

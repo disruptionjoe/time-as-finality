@@ -167,6 +167,24 @@ portfolio recommendations without rewriting authority surfaces.
 Cheap auditability test: a reviewer can see what all compressions agree on, what
 was lost, and whether the decompression test regenerates important work.
 
+## Governance review gate
+
+This workflow remains valid only if each run passes all five checks:
+
+- **Stopping condition:** stop after one declared theory slice receives the
+  three compression passes, shared-core comparison, lost-structure review, and
+  decompression test.
+- **Bounded artifact:** emit one compression report with candidate essence,
+  lost-structure list, decompression result, and routed recommendations.
+- **Success vs noise:** success is a compression that regenerates live tasks
+  while naming what it loses; noise is a neat summary that does not explain or
+  route anything.
+- **Overclaim protection:** compression is non-canonical until accepted and must
+  preserve minority programs as minority programs when they matter.
+- **Claim-weakening ability:** failed or overcompressed results must be labeled
+  as `legible_summary_only`, `overcompressed`, or `failed`, and any claim
+  weakening must be routed patch-first.
+
 ## Future automation decomposition notes
 
 *Advisory; Phase 4 formalizes. Task atoms inherit this workflow's authority and

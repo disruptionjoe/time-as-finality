@@ -175,6 +175,25 @@ Cheap auditability test: a reviewer can see how each interpretation scored on th
 same criteria, what artifacts it explains, what tasks it generated, and what
 would change the tournament result.
 
+## Governance review gate
+
+This workflow remains valid only if each run passes all five checks:
+
+- **Stopping condition:** stop after one declared corpus and interpretation set
+  have advocate passes, scoring, lead selection, minority preservation notes,
+  and loss conditions.
+- **Bounded artifact:** emit one tournament report with scorecard, lead
+  proposal, runner-up programs, tasks generated, and what would change the
+  result.
+- **Success vs noise:** success is a lead interpretation that explains artifacts
+  and generates falsifiable tasks; noise is rhetorical victory, school loyalty,
+  or pluralism without ranking.
+- **Overclaim protection:** the lead interpretation is a routing proposal, not
+  truth, canon, or authorization to archive rivals.
+- **Claim-weakening ability:** every tournament must state how the lead could
+  lose and which claims, lines, or interpretations should be routed for
+  challenge if its weak points matter.
+
 ## Future automation decomposition notes
 
 *Advisory; Phase 4 formalizes. Task atoms inherit this workflow's authority and

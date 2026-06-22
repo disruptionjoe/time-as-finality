@@ -420,9 +420,9 @@ Status values: `queued`, `running`, `done`, `blocked`, `skipped`.
 
 ### P39 - Economist
 
-- status: queued
-- last_run:
-- artifact:
+- status: done
+- last_run: 2026-06-22T01:07:19-05:00
+- artifact: explorations/persona-goal-runs/2026-06-22-010719-p39-economist-economic-finality-audit.md
 - goal: Model economic finality as incentive-compatible commitment under reversal
   cost, trust boundaries, and endogenous strategic behavior.
 - ambition: Distinguish costly settlement from truth or physical finality.

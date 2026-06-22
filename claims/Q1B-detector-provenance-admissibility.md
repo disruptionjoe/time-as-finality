@@ -50,7 +50,9 @@ obvious multisig escape hatch: threshold control counts only if archive
 custody and escrow are mandatory members of every authorized challenge-window
 release quorum, and trust audit plus escrow are mandatory members of every
 authorized revocation quorum. Naming escrow or trust as optional signers is
-null.
+null. T176 closes the policy-mutation escape hatch: even a T175-valid static
+quorum map is scaffold-only if guardian identity or critical release,
+revocation, or audit rules can still be changed during the challenge window.
 
 ## Earned Content
 
@@ -99,6 +101,10 @@ null.
 - T175 shows that threshold or multisig root control does not soften that
   burden unless the critical challenge-window quorums make archive custody,
   escrow, and trust mandatory guardians rather than optional participants.
+- T176 shows that even this stricter T175 map is still insufficient if the
+  guardian roster or critical challenge-window policies remain mutable after
+  data collection. Break-glass override, mid-window guardian replacement, and
+  temporary trust suspension are null in the current finite screen.
 
 ## Not Earned
 
@@ -120,6 +126,9 @@ null.
 - No named real lab in the repo currently publishes a pre-data quorum map
   proving that archive custody, escrow, and trust are mandatory members of
   every authorized challenge-window release, revocation, and audit action.
+- No named real lab in the repo currently exposes a signed pre-data freeze
+  policy proving that those challenge-window guardian and rights assignments
+  cannot be rewritten after data collection begins.
 
 ## Falsification Or Demotion Condition
 
@@ -135,7 +144,10 @@ additional independent escrow authority required by T173 for claim review. The
 same demotion also applies if a proposed threshold-key or multisig workflow can
 authorize release, revocation, or audit actions through coalitions that bypass
 archive custody, escrow, or trust audit on those critical challenge-window
-rights.
+rights. The same demotion also applies if a proposed workflow preserves the
+initial guardians only nominally while retaining break-glass override,
+guardian replacement, trust suspension, or other challenge-window policy
+mutation after data collection begins.
 
 ## Reinstatement Condition
 
@@ -149,7 +161,9 @@ T171 sense of full reviewable rows during the challenge window with
 independent escrow, clears the T173 five-domain claim-review bound, publishes
 a pre-data quorum map showing that archive custody, escrow, and trust are
 mandatory members of every authorized critical challenge-window quorum in the
-T175 sense, and then yields a verdict that survives the T83 null criterion.
+T175 sense, freezes that guardian and policy map until challenge-window
+expiry in the T176 sense, and then yields a verdict that survives the T83 null
+criterion.
 
 ## Operational Handoff
 
@@ -158,8 +172,9 @@ It is a lab-facing issue draft, not evidence. It converts the external blocker
 into a pre-data manifest ask, event-row packet requirements, null conditions,
 and a demotion rule if no realistic workflow can supply independent archive and
 trust-audit roles, the extra independent escrow authority required for claim
-review, and a critical-quorum map where those guardians cannot be bypassed,
-before detector events.
+review, a critical-quorum map where those guardians cannot be bypassed, and a
+challenge-window freeze policy where those rights cannot be rewritten, before
+detector events.
 
 ## Primary Evidence
 
@@ -181,3 +196,4 @@ before detector events.
 - [T171: Detector Row-Review Substitution Screen](../tests/T171-detector-row-review-substitution-screen.md)
 - [T173: Detector Claim-Review Authority Bound](../tests/T173-detector-claim-review-authority-bound.md)
 - [T175: Detector Threshold-Root Quorum Screen](../tests/T175-detector-threshold-root-quorum-screen.md)
+- [T176: Detector Challenge-Window Freeze Screen](../tests/T176-detector-challenge-window-freeze-screen.md)

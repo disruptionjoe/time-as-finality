@@ -593,3 +593,7 @@ For Q1B, do not treat nominal role labels as enough. T161 adds that a proposed
 detector deployment must expose its critical manifest-registration, archive,
 audit, publication, and revocation control roots and still preserve an
 admissible effective authority partition after quotienting by shared roots.
+T175 adds that threshold or multisig workflows must make archive, escrow, and
+trust mandatory guardians of the critical challenge-window actions. T176 adds
+that those guardians and rights must also be frozen until challenge-window
+expiry; otherwise Q1B remains scaffold-only.

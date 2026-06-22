@@ -1,0 +1,104 @@
+{
+  "audits": [
+    {
+      "profile_id": "fully_frozen_challenge_window_policy",
+      "base_t175_valid": true,
+      "challenge_window_mutable": false,
+      "mutable_targets": [],
+      "mutable_effects": [],
+      "mutable_authorities": [],
+      "classification": "live_frozen_challenge_window_policy",
+      "required_next": "Publish the signed challenge-window freeze policy pre-data.",
+      "interpretation": "fully_frozen_challenge_window_policy is the only live finite profile because the pre-data guardian and action map cannot be changed during review."
+    },
+    {
+      "profile_id": "governance_break_glass_release_override",
+      "base_t175_valid": true,
+      "challenge_window_mutable": true,
+      "mutable_targets": [
+        "release_quorums"
+      ],
+      "mutable_effects": [
+        "temporary_override_bypassing_archive_and_escrow"
+      ],
+      "mutable_authorities": [
+        "analysis_governor",
+        "control_designer"
+      ],
+      "classification": "null_mutable_challenge_window_rights",
+      "required_next": "Freeze guardian identity and critical release, revocation, and audit policies until challenge-window expiry.",
+      "interpretation": "governance_break_glass_release_override is null because challenge-window rights remain mutable after data collection: temporary_override_bypassing_archive_and_escrow."
+    },
+    {
+      "profile_id": "midwindow_escrow_replacement",
+      "base_t175_valid": true,
+      "challenge_window_mutable": true,
+      "mutable_targets": [
+        "guardian_roster"
+      ],
+      "mutable_effects": [
+        "replace_escrow_before_row_review"
+      ],
+      "mutable_authorities": [
+        "analysis_governor",
+        "trust_auditor"
+      ],
+      "classification": "null_mutable_challenge_window_rights",
+      "required_next": "Freeze guardian identity and critical release, revocation, and audit policies until challenge-window expiry.",
+      "interpretation": "midwindow_escrow_replacement is null because challenge-window rights remain mutable after data collection: replace_escrow_before_row_review."
+    },
+    {
+      "profile_id": "trust_suspension_before_revocation",
+      "base_t175_valid": true,
+      "challenge_window_mutable": true,
+      "mutable_targets": [
+        "revocation_quorums"
+      ],
+      "mutable_effects": [
+        "temporary_trust_suspension"
+      ],
+      "mutable_authorities": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "classification": "null_mutable_challenge_window_rights",
+      "required_next": "Freeze guardian identity and critical release, revocation, and audit policies until challenge-window expiry.",
+      "interpretation": "trust_suspension_before_revocation is null because challenge-window rights remain mutable after data collection: temporary_trust_suspension."
+    },
+    {
+      "profile_id": "postdispute_guardian_addition",
+      "base_t175_valid": true,
+      "challenge_window_mutable": true,
+      "mutable_targets": [
+        "audit_quorums"
+      ],
+      "mutable_effects": [
+        "add_substitute_guardian_postdispute"
+      ],
+      "mutable_authorities": [
+        "analysis_governor",
+        "archive_custodian"
+      ],
+      "classification": "null_mutable_challenge_window_rights",
+      "required_next": "Freeze guardian identity and critical release, revocation, and audit policies until challenge-window expiry.",
+      "interpretation": "postdispute_guardian_addition is null because challenge-window rights remain mutable after data collection: add_substitute_guardian_postdispute."
+    }
+  ],
+  "live_frozen_profiles": [
+    "fully_frozen_challenge_window_policy"
+  ],
+  "null_mutable_profiles": [
+    "governance_break_glass_release_override",
+    "midwindow_escrow_replacement",
+    "trust_suspension_before_revocation",
+    "postdispute_guardian_addition"
+  ],
+  "strongest_claim": "A T175-valid static quorum map is still insufficient for Q1B if challenge-window rights can be changed after data collection. The surviving T171/T173/T175 route stays live only when the guardian roster and critical release, revocation, and audit policies are frozen until challenge-window expiry.",
+  "improved": "T176 removes a policy-layer loophole from Q1B. The repo can now distinguish a genuinely precommitted claim-review process from one that merely starts with good guardians and then rewrites them under pressure.",
+  "weakened": "This weakens Q1B again. A detector workflow does not clear the current frontier just by publishing an admissible initial quorum map. Break-glass overrides, mid-window guardian replacement, or temporary suspension of trust or escrow make the challenge rights contingent rather than fixed.",
+  "falsification_condition": "T176 fails if a detector workflow should still count for Q1B even though it can change guardian identity or critical release, revocation, or audit rules during the challenge window after data collection begins.",
+  "q1b_update": "Q1B remains externally blocked. A T175-valid quorum map counts only if the guardian roster and critical challenge-window action policies are frozen until the review window closes.",
+  "claim_ledger_update": "Add T176 to Q1B: static guardian quorums are scaffold-only if release, revocation, audit, or guardian-identity rules can be rewritten during the challenge window. The surviving route now requires a pre-data challenge-window freeze.",
+  "open_blocker": "No named detector workflow in the repo currently exposes a pre-data freeze policy proving that challenge-window guardians and critical rights cannot be changed after data collection.",
+  "recommended_next": "Update the Q1B handoff to require a signed challenge-window freeze policy in addition to the T175 quorum map. If a realistic group needs break-glass override or mid-window guardian rotation, demote Q1B below the active frontier."
+}

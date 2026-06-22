@@ -44,7 +44,10 @@ service feature. It is its own authority requirement, so the live route now
 needs a five-domain minimum rather than T100's older four-domain packet bound.
 T175 adds the threshold-key burden: a multisig or quorum-controlled workflow
 counts only if archive custody, escrow, and trust are mandatory guardians in
-every authorized challenge-window release, revocation, and audit quorum.
+every authorized challenge-window release, revocation, and audit quorum. T176
+adds the freeze burden: even a valid initial guardian map is scaffold-only if
+guardian identity or those critical policies can still be changed during the
+challenge window.
 
 ## Issue Draft
 
@@ -85,11 +88,13 @@ Before the first detector event, the deployment must freeze:
 6. If any critical action uses threshold keys or multisig, the full authorized
    quorum map for challenge-window row release, revocation, and audit
    attestation.
-7. A raw-payload export rule, not observed payload values.
-8. Hostile-control plan for replay/spoof, perturbation/back-action,
+7. A signed challenge-window freeze policy covering guardian identity and all
+   critical release, revocation, and audit rules.
+8. A raw-payload export rule, not observed payload values.
+9. Hostile-control plan for replay/spoof, perturbation/back-action,
    provenance-DAG truncation or false ancestry, signature/key failure, and
    delayed publication.
-9. Top-level manifest hash and timestamp before any event data are inspected.
+10. Top-level manifest hash and timestamp before any event data are inspected.
 
 ### Authority Partition Required
 
@@ -116,7 +121,9 @@ revocation roots in a way that collapses the effective partition, is null for
 Q1B unless the packet design is changed and re-audited before data. T175 adds
 that threshold-controlled release is also null when archive custody, escrow, or
 trust appear only as optional signers. They must be mandatory members of every
-authorized challenge-window quorum they are supposed to guard.
+authorized challenge-window quorum they are supposed to guard. T176 adds that
+those guardians and critical challenge-window rights must also stay frozen
+until the review window closes.
 
 ### After-data Packet Required
 
@@ -142,6 +149,8 @@ After event collection, the group must publish or make reviewable:
     show that every authorized challenge-window release, revocation, and audit
     path included the mandatory archive, escrow, and trust guardians promised
     pre-data.
+13. Enough governance and change-log provenance to show that guardian identity
+    and critical challenge-window rights remained frozen after data collection.
 
 Dashboard summaries do not substitute for these rows.
 
@@ -179,6 +188,8 @@ Treat the route as null for Q1B if any of these occur:
 - The group uses threshold keys or multisig, but some authorized release,
   revocation, or audit coalition can bypass archive custody, escrow, or trust
   on the critical challenge-window actions they are meant to guard.
+- The group retains break-glass override, guardian replacement, trust
+  suspension, or other challenge-window policy mutation after data collection.
 
 ## Decision Rule
 
@@ -219,5 +230,6 @@ real event-level packet rows in the stronger T171 sense: full reviewable rows
 during the challenge window with independent escrow. If threshold keys or
 multisig are used, the deployment must also publish a T175-valid quorum map
 showing that archive custody, escrow, and trust are mandatory guardians of the
-critical challenge-window actions. Without that, Q1B is an admissibility
-scaffold only.
+critical challenge-window actions. It must also publish a T176-valid freeze
+policy showing that those guardians and rights cannot be changed before the
+challenge window closes. Without that, Q1B is an admissibility scaffold only.

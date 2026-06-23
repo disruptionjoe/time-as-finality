@@ -1,0 +1,694 @@
+{
+  "artifact": "rsps-robustness-sweep-v0.1",
+  "summary": {
+    "fixture_count": 38,
+    "verdict_counts": {
+      "pass": 33,
+      "degenerate": 3,
+      "absorber_owned_audited_redundancy_required": 2
+    },
+    "failures": [],
+    "born_weight_imports": [],
+    "main_verdict": "supported_with_boundaries"
+  },
+  "results": [
+    {
+      "fixture_id": "R0",
+      "description": "Baseline GHZ-style perfect copying",
+      "parameters": {
+        "p": 0.7,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Reproduces pointer-basis selection with no Born-weight output."
+    },
+    {
+      "fixture_id": "R1-N1",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 1
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.881291,
+      "audited_redundancy_at_pointer": 0.881291,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R1-N2",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 2
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 1.762582,
+      "audited_redundancy_at_pointer": 1.762582,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R1-N4",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 4
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 3.525164,
+      "audited_redundancy_at_pointer": 3.525164,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R1-N8",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R1-N16",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 16
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 14.100654,
+      "audited_redundancy_at_pointer": 14.100654,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R1-N32",
+      "description": "Environment-size sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 32
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 28.201309,
+      "audited_redundancy_at_pointer": 28.201309,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Pointer selection persists as N changes; redundancy scales with accessible fragments."
+    },
+    {
+      "fixture_id": "R2-p0.05",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.05,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 2.291176,
+      "audited_redundancy_at_pointer": 2.291176,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.10",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.1,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 3.751965,
+      "audited_redundancy_at_pointer": 3.751965,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.30",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.3,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.50",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.5,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 2.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 8.0,
+      "audited_redundancy_at_pointer": 8.0,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.70",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.90",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.9,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 3.751965,
+      "audited_redundancy_at_pointer": 3.751965,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R2-p0.95",
+      "description": "Branch-weight sweep",
+      "parameters": {
+        "p": 0.95,
+        "N": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 2.291176,
+      "audited_redundancy_at_pointer": 2.291176,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Score selects the basis while the Born label remains external to F."
+    },
+    {
+      "fixture_id": "R3-eta0.00",
+      "description": "Imperfect copying sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "flip_probability": 0.0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Noise degrades redundancy; at eta=0.5 record objectivity is absent even if the coupling basis term remains."
+    },
+    {
+      "fixture_id": "R3-eta0.10",
+      "description": "Imperfect copying sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "flip_probability": 0.1
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 3.646585,
+      "audited_redundancy_at_pointer": 3.646585,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Noise degrades redundancy; at eta=0.5 record objectivity is absent even if the coupling basis term remains."
+    },
+    {
+      "fixture_id": "R3-eta0.25",
+      "description": "Imperfect copying sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "flip_probability": 0.25
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 1.27738,
+      "audited_redundancy_at_pointer": 1.27738,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Noise degrades redundancy; at eta=0.5 record objectivity is absent even if the coupling basis term remains."
+    },
+    {
+      "fixture_id": "R3-eta0.49",
+      "description": "Imperfect copying sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "flip_probability": 0.49
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.001939,
+      "audited_redundancy_at_pointer": 0.001939,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Noise degrades redundancy; at eta=0.5 record objectivity is absent even if the coupling basis term remains."
+    },
+    {
+      "fixture_id": "R3-eta0.50",
+      "description": "Imperfect copying sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "flip_probability": 0.5
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 2.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.0,
+      "audited_redundancy_at_pointer": 0.0,
+      "born_weight_imported": false,
+      "verdict": "degenerate",
+      "note": "Noise degrades redundancy; at eta=0.5 record objectivity is absent even if the coupling basis term remains."
+    },
+    {
+      "fixture_id": "R4-k0",
+      "description": "Partial observer-access sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 2.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.0,
+      "audited_redundancy_at_pointer": 0.0,
+      "born_weight_imported": false,
+      "verdict": "degenerate",
+      "note": "Accessible redundancy is observer-indexed; k=0 is basis-only and not an objectivity witness."
+    },
+    {
+      "fixture_id": "R4-k1",
+      "description": "Partial observer-access sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 1
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.881291,
+      "audited_redundancy_at_pointer": 0.881291,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Accessible redundancy is observer-indexed; k=0 is basis-only and not an objectivity witness."
+    },
+    {
+      "fixture_id": "R4-k2",
+      "description": "Partial observer-access sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 2
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 1.762582,
+      "audited_redundancy_at_pointer": 1.762582,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Accessible redundancy is observer-indexed; k=0 is basis-only and not an objectivity witness."
+    },
+    {
+      "fixture_id": "R4-k4",
+      "description": "Partial observer-access sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 4
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 3.525164,
+      "audited_redundancy_at_pointer": 3.525164,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Accessible redundancy is observer-indexed; k=0 is basis-only and not an objectivity witness."
+    },
+    {
+      "fixture_id": "R4-k8",
+      "description": "Partial observer-access sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Accessible redundancy is observer-indexed; k=0 is basis-only and not an objectivity witness."
+    },
+    {
+      "fixture_id": "R5-overlap0.00",
+      "description": "Nonorthogonal record-state sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "record_overlap": 0.0,
+        "effective_eta": 0.0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Nonorthogonality degrades distinguishability; full overlap removes record information."
+    },
+    {
+      "fixture_id": "R5-overlap0.25",
+      "description": "Nonorthogonal record-state sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "record_overlap": 0.25,
+        "effective_eta": 0.015877
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 6.170378,
+      "audited_redundancy_at_pointer": 6.170378,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Nonorthogonality degrades distinguishability; full overlap removes record information."
+    },
+    {
+      "fixture_id": "R5-overlap0.50",
+      "description": "Nonorthogonal record-state sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "record_overlap": 0.5,
+        "effective_eta": 0.066987
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 4.456314,
+      "audited_redundancy_at_pointer": 4.456314,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Nonorthogonality degrades distinguishability; full overlap removes record information."
+    },
+    {
+      "fixture_id": "R5-overlap0.90",
+      "description": "Nonorthogonal record-state sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "record_overlap": 0.9,
+        "effective_eta": 0.282055
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.957781,
+      "audited_redundancy_at_pointer": 0.957781,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Nonorthogonality degrades distinguishability; full overlap removes record information."
+    },
+    {
+      "fixture_id": "R5-overlap1.00",
+      "description": "Nonorthogonal record-state sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "record_overlap": 1.0,
+        "effective_eta": 0.5
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 2.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 0.0,
+      "audited_redundancy_at_pointer": 0.0,
+      "born_weight_imported": false,
+      "verdict": "degenerate",
+      "note": "Nonorthogonality degrades distinguishability; full overlap removes record information."
+    },
+    {
+      "fixture_id": "R6-phi0.0",
+      "description": "Coupling-axis mismatch sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "monitor_axis_phi": 0.0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "The argmax follows the monitored pointer axis, guarding against a hard-coded z-basis result."
+    },
+    {
+      "fixture_id": "R6-phi0.393",
+      "description": "Coupling-axis mismatch sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "monitor_axis_phi": 0.392699081699
+      },
+      "expected_theta": 0.392699081699,
+      "argmax_theta": 0.392699081699,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "The argmax follows the monitored pointer axis, guarding against a hard-coded z-basis result."
+    },
+    {
+      "fixture_id": "R6-phi0.785",
+      "description": "Coupling-axis mismatch sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "monitor_axis_phi": 0.785398163397
+      },
+      "expected_theta": 0.785398163397,
+      "argmax_theta": 0.785398163397,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "The argmax follows the monitored pointer axis, guarding against a hard-coded z-basis result."
+    },
+    {
+      "fixture_id": "R7-roots8",
+      "description": "Provenance/audited-redundancy sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 8,
+        "provenance_roots": 8
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Raw redundancy overcounts when fragments share provenance; audited redundancy carries the TaF/Q1A discipline."
+    },
+    {
+      "fixture_id": "R7-roots4",
+      "description": "Provenance/audited-redundancy sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 8,
+        "provenance_roots": 4
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 3.525164,
+      "born_weight_imported": false,
+      "verdict": "absorber_owned_audited_redundancy_required",
+      "note": "Raw redundancy overcounts when fragments share provenance; audited redundancy carries the TaF/Q1A discipline."
+    },
+    {
+      "fixture_id": "R7-roots1",
+      "description": "Provenance/audited-redundancy sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "accessible_fragments": 8,
+        "provenance_roots": 1
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 0.881291,
+      "born_weight_imported": false,
+      "verdict": "absorber_owned_audited_redundancy_required",
+      "note": "Raw redundancy overcounts when fragments share provenance; audited redundancy carries the TaF/Q1A discipline."
+    },
+    {
+      "fixture_id": "R8-mixture1.00",
+      "description": "Mixed-state agreement-scale sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "agreement_scale": 1.0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Agreement can be weakened or removed without turning F into a Born-weight derivation."
+    },
+    {
+      "fixture_id": "R8-mixture0.50",
+      "description": "Mixed-state agreement-scale sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "agreement_scale": 0.5
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 3.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Agreement can be weakened or removed without turning F into a Born-weight derivation."
+    },
+    {
+      "fixture_id": "R8-mixture0.00",
+      "description": "Mixed-state agreement-scale sweep",
+      "parameters": {
+        "p": 0.7,
+        "N": 8,
+        "agreement_scale": 0.0
+      },
+      "expected_theta": 0.0,
+      "argmax_theta": 0.0,
+      "pointer_score": 2.0,
+      "conjugate_score": 0.0,
+      "redundancy_at_pointer": 7.050327,
+      "audited_redundancy_at_pointer": 7.050327,
+      "born_weight_imported": false,
+      "verdict": "pass",
+      "note": "Agreement can be weakened or removed without turning F into a Born-weight derivation."
+    }
+  ]
+}

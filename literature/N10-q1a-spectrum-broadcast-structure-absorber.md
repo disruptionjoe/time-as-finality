@@ -70,6 +70,13 @@ independently accessible, mutually agreeing record fragments are needed.
 
 SBS and strong Quantum Darwinism already own that physical objectivity burden.
 
+T189 adds the same rule for RSPS-style record-stability pointer selection.
+Record-fidelity/objectivity scoring may select the monitored/einselected basis
+inside a fixed-H toy model, but the result is absorbed unless the proposal
+holds the pointer observable, coupling, fragment states, observer-access
+subset, provenance partition, and trace-rule probabilities fixed while still
+splitting a predeclared TaF verdict.
+
 ## Comparison Table
 
 | Q1A-looking move | SBS / strong-QD absorber | Surviving Q1A content |
@@ -77,6 +84,7 @@ SBS and strong Quantum Darwinism already own that physical objectivity burden.
 | Count many environment records as classical finality evidence. | Quantum Darwinism and SBS already treat redundancy and objectivity through environmental fragments. | None unless observer access or provenance changes a declared task after SBS data are fixed. |
 | Reject duplicate copies as independent support. | Strong independence and SBS conditional product structure already block dependence between fragments from doing objectivity work. | Provenance remains audit metadata unless it changes a physical fragment/state criterion not already encoded. |
 | Require agreement across fragments. | SBS requires fragment states for different pointer values to be distinguishable, so observers can infer the same classical value. | No new physics claim. |
+| Use record-fidelity scoring to select a stable pointer basis. | Decoherence, Quantum Darwinism, and SBS already make pointer/objectivity data neighbor-visible once the Hamiltonian, coupling, and fragment states are fixed. | A fixed-H null gate for future proposals, not a Q1A upgrade. |
 | Require observer access to fragments. | SBS usually defines objectivity for fragment observers; access restrictions can be represented by the subset of fragments available to the observer. | Useful observer-indexed bookkeeping. |
 | Withhold verdict when the fragment partition is hidden. | Existing frameworks can also refuse an objectivity claim when the fragment structure and distinguishability conditions are not established. | Detector and provenance discipline, not measurement dynamics. |
 
@@ -162,12 +170,24 @@ Demote a proposed Q1A objectivity witness to SBS/strong-QD absorption if:
 - the access cut is just a smaller fragment subset;
 - provenance is only metadata for deciding the fragment partition;
 - the D1 verdict factors through audited accessible support count;
+- RSPS-style basis selection disappears once fixed-H decoherence/QD/SBS data
+  and trace-rule probabilities are granted to the neighbor;
 - the witness changes branch/history availability, pointer data, or fragment
   state data rather than holding the neighboring objectivity target fixed.
 
 ## Claim Ledger Update
 
 Q1A remains `bookkeeping_only`.
+
+RSPS is tracked separately as an `active` quantum-boundary claim, not as a Q1A
+status upgrade:
+
+```text
+record-fidelity/objectivity terms can select the monitored pointer basis in
+fixed-H toy models, but Born weights remain trace-rule data and the
+basis/objectivity content is absorbed by decoherence, Quantum Darwinism, and
+SBS unless a same-neighbor-data verdict split is supplied.
+```
 
 Add N10 as an absorber:
 

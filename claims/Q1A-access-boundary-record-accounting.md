@@ -34,6 +34,12 @@ SBS/strong-QD objectivity data are allowed to import the same access,
 provenance, partition-visibility, and audited support key, no same-SBS-data D1
 verdict split remains in the enumerated family.
 
+T189 adds RSPS as an adjacent fixed-H boundary, not a Q1A upgrade:
+record-fidelity/objectivity scoring may select the monitored pointer basis,
+but Born weights remain trace-rule data and the basis/objectivity content is
+absorbed by decoherence, Quantum Darwinism, and SBS unless a future witness
+holds those neighbor data fixed and still splits a predeclared TaF verdict.
+
 ## Earned Content
 
 - T2 and T62 separate pointer decoherence, environmental redundancy, and
@@ -67,6 +73,10 @@ verdict split remains in the enumerated family.
   objectivity status, accessible pointer value, partition visibility, and
   audited accessible provenance-support count. No same-full-SBS-data verdict
   split exists in the enumerated cases.
+- T189 records the RSPS boundary: fixed-H record-fidelity/objectivity scoring
+  can select the monitored pointer basis across finite perturbations, while
+  raw redundancy still requires provenance auditing and no Born-rule,
+  collapse, Temporal Issuance, or GU selector content is earned.
 
 ## Not Earned
 
@@ -83,6 +93,7 @@ verdict split remains in the enumerated family.
 - No current-family same-SBS-data D1 verdict split.
 - No external distinction from Spectrum Broadcast Structure or strong Quantum
   Darwinism for independent redundant objectivity criteria.
+- No RSPS-derived physics claim beyond a fixed-H basis/objectivity null gate.
 - No empirical quantum support beyond already formed record accounting.
 
 ## Falsification Or Demotion Condition
@@ -113,7 +124,10 @@ conditional independence or strong independence status, observer-accessible
 fragment subset, provenance partition, and audited support count. After T162,
 the current verdict family cannot meet that burden internally; a live witness
 must add a predeclared physical dimension or partition/access rule that is not
-equivalent to the SBS-importable closure key.
+equivalent to the SBS-importable closure key. After T189, a basis/objectivity
+proposal using RSPS must also clear the fixed-H null gate: decoherence, Quantum
+Darwinism, SBS, and trace-rule probabilities are granted to the neighbor before
+TaF receives any physics-facing credit.
 
 ## Primary Evidence
 
@@ -127,9 +141,11 @@ equivalent to the SBS-importable closure key.
 - [T118: Q1A Reversal-Cost Collapse](../tests/T118-q1a-reversal-cost-collapse.md)
 - [T147: Q1A Current-Family Closure](../tests/T147-q1a-current-family-closure.md)
 - [T162: Q1A SBS Factorization Obstruction](../tests/T162-q1a-sbs-factorization-obstruction.md)
+- [T189: RSPS Robustness Sweep](../tests/T189-rsps-robustness-sweep.md)
 
 ## Neighbor Positioning
 
 - [N7: Q1A Measurement-Neighbor Positioning](../literature/N7-q1a-measurement-neighbors.md)
 - [N10: Q1A Spectrum Broadcast Structure Absorber](../literature/N10-q1a-spectrum-broadcast-structure-absorber.md)
+- [RSPS: Record-Stability Pointer Selection](RSPS-record-stability-pointer-selection.md)
 - [Q1A Same-Closure-Key Handoff](../open-problems/q1a-same-closure-key-handoff.md)

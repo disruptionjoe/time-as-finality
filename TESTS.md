@@ -150,6 +150,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | [T118](tests/T118-q1a-reversal-cost-collapse.md) | Q1A reversal-cost collapse | Q1A, Q1, D1, T103, T105, T109 | implemented: in the current fixed-data family reversal cost collapses to the audited accessible-support count and adds no independent verdict content |
 | [T147](tests/T147-q1a-current-family-closure.md) | Q1A current-family closure | Q1A, Q1, D1, T105, T109, T118 | implemented: current Q1A verdict content factors through partition visibility plus audited accessible-support count; no current branch-support or reversal-cost escape remains |
 | [T162](tests/T162-q1a-sbs-factorization-obstruction.md) | Q1A SBS factorization obstruction | Q1A, Q1, D1, T147, N10 | implemented: current Q1A verdicts factor through an SBS-importable closure key; no same-full-SBS-data verdict split exists in the enumerated family |
+| [T189](tests/T189-rsps-robustness-sweep.md) | RSPS robustness sweep | RSPS, Q1A, Q1, N10 | implemented: fixed-H record-fidelity/objectivity scoring selects the monitored pointer basis across finite perturbations, while Born weights remain trace-rule data and the result stays absorbed by decoherence/QD/SBS unless a same-neighbor-data split is supplied |
 
 ## Minimum Compatibility Constraints
 
@@ -285,6 +286,7 @@ python -m models.q1a_neighbor_comparison
 python -m models.run_t103
 python -m models.run_t147
 python -m models.run_t162
+python models/rsps_robustness_sweep.py
 python -m models.run_t92
 python -m models.t19_phenomenal_bridge_separation
 python -m models.t65_causal_reduction

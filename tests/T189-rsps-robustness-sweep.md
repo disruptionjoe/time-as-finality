@@ -4,6 +4,12 @@
 
 Executed finite robustness sweep.
 
+## Target Claims
+
+- [RSPS: Record-Stability Pointer Selection](../claims/RSPS-record-stability-pointer-selection.md)
+- [Q1A: Access-Boundary Record Accounting](../claims/Q1A-access-boundary-record-accounting.md)
+- [N10: Q1A Spectrum Broadcast Structure Absorber](../literature/N10-q1a-spectrum-broadcast-structure-absorber.md)
+
 ## Purpose
 
 Test the modest RSPS boundary after the record-fidelity toy model:

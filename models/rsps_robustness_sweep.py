@@ -372,6 +372,8 @@ def markdown(results: list[CaseResult], summary: dict[str, object]) -> str:
         "",
         "The sweep supports RSPS as a modest flat-QM basis/objectivity selector across finite perturbations, with explicit boundaries. It does not derive Born weights, does not solve measurement, and does not promote a TI or GU physics bridge.",
         "",
+        "Claim placement: [RSPS](../claims/RSPS-record-stability-pointer-selection.md), bounded by [Q1A](../claims/Q1A-access-boundary-record-accounting.md) and [N10](../literature/N10-q1a-spectrum-broadcast-structure-absorber.md).",
+        "",
         "## Summary",
         "",
         f"- Fixture rows: {summary['fixture_count']}",

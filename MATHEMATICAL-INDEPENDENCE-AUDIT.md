@@ -255,6 +255,112 @@ theoretical-CS reviewer.
 
 ---
 
+## Full Audit — v0.8 (post T188, 2026-06-22)
+
+This is the first full audit pass since v0.6. The repository now has 178
+`T*.md` test notes (T184-T188 added in this session).
+
+### What Has Changed Since v0.6
+
+**Tests added since v0.6 (T41), separated by category:**
+
+#### Category A — Neutral theorem-ladder progress (strengthens mathematical independence)
+
+These tests add results that could stand outside the TaF context:
+
+| Test range | Content | Independence value |
+|---|---|---|
+| T47-T58 | FinaliEvent structure, reconstruction without background time, axis monotonicity theorem, multi-observer colimits, symmetric colimit theorem, descent theorems, conflict-enriched descent, sheaf cohomology of apparent finality, Finality Reflection Property, gap-phantom equivalence | Moderate — the colimit/descent/sheaf machinery is substrate-neutral; the specific content (apparent finality, phantom incomparability) is TaF-specific |
+| T59 | Finite-to-infinite boundary audit (Mobius witness for Z2 parity obstruction) | High — purely mathematical result about coefficient-blind scalar encoding vs transition-aware Z2 reduction |
+| T65 | Causal reduction of CHSH holonomy (Bell theorem as holonomy = -1) | Moderate — the holonomy framing is novel but adjacent to known Bell/contextuality results |
+| T69, T73, T99, T107, T108, T127 | LossKernel failure-type monotonicity, composition law, quotient separation, loss relocation, prior-art comparison | Moderate — monoid-valued annotation law is substrate-neutral; prior-art absorption findings are TaF-specific |
+| T187 | Moses exact constrained optimization (harmonic-mean formula, KKT conditions) | High — the harmonic-mean formula for optimal flow allocation is a clean optimization result |
+
+#### Category B — TaF-specific stress tests and null-gate closure
+
+These tests sharpen TaF's internal claims but do not add substrate-neutral mathematical results:
+
+| Test range | Content |
+|---|---|
+| T62, T64, T66-T86, T87, T95-T97, T100, T121, T123, T133-T138, T161, T169, T171, T173, T175-T176, T178 | Detector provenance, Q1 branch demotion, weak-measurement screens |
+| T80, T82, T84, T106, T110, T116, T122, T124, T128, T141-T145, T148, T152, T160, T168, T172, T179-T180 | H7 reversible-observer and constructor screens |
+| T101-T105, T109, T118, T147, T162, T177 | Q1A/Q1B/Q1C/Q1D branch closure |
+| T88-T94, T130, T132, T135, T137, T139, T143, T146, T149-T150, T155, T158, T166, T182-T183 | Weak-measurement platform screens |
+| T114-T115, T117, T119, T129 | Viability, accessible-state-space, future-capability |
+| T126, T154, T156-T157, T159, T163-T165, T167 | S1 causal-set finite calibration and fragility screens |
+| T151, T153, T170 | Causal-access screen, Lorentzian diamond, Q1D guardrail |
+| T174 | Forgotten-dims persistence-gap screen |
+
+#### Category C — Cross-program explorations with mixed independence value
+
+| Test range | Content | Independence value |
+|---|---|---|
+| T37-T41 | Typed transport network, minimal multiscale transport, CSP reframing, holarchy lab, transport category | High — these generalize PO1 into substrate-neutral structures |
+| T42-T46 | Local persistence/reconciliation, mechanisms, identifiability, synchronization boundary | Moderate — the RecordAccessSystem object is TaF-native but the mechanism separation is substrate-neutral |
+| T111-T113 | D1 gauge invariance, spin-observerse holonomy, gap presheaf classification | Moderate — the gauge invariance and holonomy results are mathematically clean |
+| T125 | D1 boundary connection transport | Moderate — provenance-aware transport is substrate-neutral in structure |
+| T184-T188 | Metabolic scaling, lambda*(s), metric vs causal order, Moses optimization, PO1-NCK | Mixed — Moses optimization and PO1-NCK are substrate-neutral; MTI application is TaF-specific |
+
+### Updated Theorem Ladder (post T188)
+
+Additions to the theorem ladder since v0.6:
+
+| Theorem | Status | Neutral statement |
+|---|---|---|
+| Colimit descent conditions (T54) | Earned | A multi-observer event record admits a canonical globally-coherent colimit iff identity maps, overlap witnesses, source/target compatibility, axis-profile agreement, partial-order validity, and Axis Monotonicity conditions are all satisfied. |
+| Conflict-enriched descent (T55) | Earned | The T54 colimit theorem extends to non-empty conflict relations when four additional conditions (irreflexivity, symmetry, no conflict between comparable events, upward inheritance) are satisfied. |
+| Finality Reflection Property (T57) | Earned | The gap assignment G(U) = A(U) - F(U) is restriction-closed when ambient order is monotone under record-access inclusion. Generic complement closure fails (explicit counterexample). |
+| PO1-as-CSP Theorem (T39, already earned) | Earned | D1RestrictionSystem gluing obstruction = binary {-1,1} parity-conflict CSP. Typed forgotten structure (AC5) and admissibility classification are not expressible in standard CSP. |
+| Moses Exact Optimization (T187) | Earned (new) | For hierarchical flow networks, the optimal flow allocation minimizing total weighted delivery time subject to flow conservation is w_i* = (1/t_i) / sum_j(1/t_j), with optimal delivery time T* = harmonic_mean(t_1,...,t_k). The branching exponent beta = 1 - log(T*)/log(n) is strictly decreasing in T* for fixed n. |
+| Metric-causal separation (T186, T187) | Earned (new) | Two n-event systems with identical partial-order structure (same Hasse diagram, same ordering fraction, same interval sizes) can have different Moses branching exponents if and only if their delivery-time distributions differ. The branching exponent is not determined by causal structure alone. |
+| Cap_TI hostile split (T188) | Earned (new) | A physical D1RestrictionSystem realization with higher branching exponent beta achieves lower continuous reconciliation cost R = n^(1-beta) despite identical gluing topology. The split is genuine when G encodes topology but not timing. |
+
+### Updated Independence Score (v0.8)
+
+| Criterion | Status | Notes since v0.6 |
+|---|---|---|
+| Own primitives | Present | No change — D1RestrictionSystem, D1RestrictionMorphism, ProjectionCase, TypedTransportNetwork, CompressionRecord, EmergenceRecord all stable |
+| Own operations | Present and complete | No change — D1Cat category laws verified (T41) |
+| Own theorem ladder | Present, growing | Added colimit descent (T54/T55), Finality Reflection Property (T57), Moses exact optimization (T187), metric-causal separation (T186/T187), Cap_TI hostile split (T188) |
+| Own hostile domains | Present, 6 tested | No new hostile domains added since v0.6; Moses optimization adds a new mathematical fixture |
+| Own discovery engine | Present | T35 discovery engine unchanged |
+| Independent motivation | Unknown | Still untested externally |
+
+**Five of six criteria present and complete. Independent motivation still unknown.**
+
+The most significant addition to the theorem ladder is **metric-causal separation** (T186/T187): the proof that delivery-time metric is not redundant with causal-order structure, given by the Moses optimization formula. This is a clean mathematical statement with no TaF dependence and is potentially the strongest independence claim the repo has produced: it states a separation between two natural families of mathematical structures (causal posets and metric-decorated posets), proved via an optimization argument.
+
+### What v0.8 Does Not Change
+
+- Independent motivation is still UNKNOWN. No external testing has occurred.
+- The LossKernel/TF1 program is still absorbed by monoid-valued annotation laws
+  without a prior-art separation. The external review finding (2026-06-21) stands.
+- The FUNCTOR-OBL-TaF-001 obligation (F: States(Ext_S) -> FinSets is functorial)
+  is still open and blocking PO1-NCK-001 formal promotion.
+
+### Recommended External-Review Targets (v0.8)
+
+In priority order:
+
+1. **Moses metric-causal separation** (T186/T187 combined): State as: "In a finite
+   branching-tree transport network, the optimal-flow branching exponent is
+   determined by the delivery-time distribution and not by the graph topology alone.
+   Two isomorphic graphs with different delivery times have different branching
+   exponents." This is a clean optimization theorem that requires no TaF context.
+
+2. **Typed projection-obstruction schema** (PO1, T39 CSP theorem): State as: "In a
+   finite local-to-global restriction system, the gluing obstruction is equivalent
+   to a binary parity-conflict CSP. The typed forgetting annotation (AC5) and
+   admissibility classification (AC1-AC7) are additional structure not expressible
+   in standard CSP." Send to a constraint-programming or theoretical-CS reviewer.
+
+3. **D1RestrictionMorphism category** (T41): State as: "The collection of typed
+   morphisms between finite local-restriction systems, where morphisms declare
+   preserved and forgotten information, forms a category. PO1 admissibility is not
+   a functor on this category (endpoint admissibility is not a functorial invariant)."
+
+---
+
 ## What Would Advance Independence
 
 1. **Composition law: resolved (T41).** D1RestrictionMorphisms compose
@@ -291,3 +397,4 @@ theoretical-CS reviewer.
 | 2026-06-21 | stewardship staleness note | Test registry has grown to 148 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T147 v0.8 audit that separates neutral theorem-ladder progress from branch-gate closure, absorber calibration, persona-governance notes, and TaF-specific stress tests. |
 | 2026-06-21 | late stewardship staleness note | Test registry has grown to 162 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T161 v0.8 audit that separates neutral theorem-ladder progress from S1 calibration screens, quantum-branch gates, H7 absorber triage, and persona exploratory notes. |
 | 2026-06-22 | stewardship staleness note | Test registry has grown to 175 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T175 v0.8 audit that separates neutral theorem-ladder progress from H7 absorber mapping, detector workflow gates, Q1D guardrails, S1 finite calibration, time-series diagnostics, and persona-governance notes. |
+| 2026-06-22 | v0.8 | Full audit pass post-T188. Test registry at 178 tests. Three new neutral theorem-ladder additions: Moses exact optimization (T187), metric-causal separation (T186/T187), Cap_TI hostile split (T188). Category A/B/C separation of 103 tests added since v0.6. Independent motivation remains UNKNOWN; three external-review targets prioritized (Moses separation > PO1-CSP theorem > D1Cat category). FUNCTOR-OBL-TaF-001 and external motivation remain the two open independence criteria. |

@@ -11,6 +11,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [A1](claims/A1-distributed-systems-finality-analogy.md) | analogy | active | Distributed-systems finality provides bridge language for candidate states becoming committed states; T17 gives collapse maps and T20 verifies one proof-preserving theorem transfer with boundaries. T46 adds a finite distinction between open causal-proximity scarcity and closed membership-plus-synchronization scarcity. | [T1](tests/T1-record-graph-temporal-reconstruction.md), [T6](tests/T6-snowball-record-finality.md), [T17](tests/T17-consensus-finality-crosswalk.md), [T20](tests/T20-consensus-record-theorem-transfer.md), [T46](tests/T46-open-causal-scarcity-synchronization-boundary.md) |
 | [Q1](claims/Q1-quantum-under-finalization.md) | roadmap_umbrella | demoted | Q1 is no longer a single paper-facing supported quantum-physics conjecture. T101 split it into four branch claims; T104 absorbed the current Q1A fixed-data witness into provenance-aware Quantum Darwinism. T140 makes the frontier explicit: no current child branch has an active internal upgrade route; Q1B is the only non-null experimental path, and it is externally blocked pending a signed pre-event manifest and real event-level packet. T177 adds a pre-branch intake screen: absorber-owned field changes do not reopen Q1. Only a same-SBS-key Q1A physical split, a complete reviewable Q1B deployment packet, or a T166-valid Q1C packet with typed positive verdict lift passes the screen; Q1D remains guardrail-only absent a theorem target. Use Q1 only as a navigation label until one child branch clears T177 and its own reinstatement gate. | [Q1A](claims/Q1A-access-boundary-record-accounting.md), [Q1B](claims/Q1B-detector-provenance-admissibility.md), [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md), [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md), [T101](tests/T101-q1-branch-adjudication.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md), [T140](tests/T140-q1-frontier-escape-matrix.md), [T177](tests/T177-q1-absorber-owned-field-intake.md) |
 | [Q1A](claims/Q1A-access-boundary-record-accounting.md) | quantum_subclaim | bookkeeping_only | Access-boundary and provenance-aware redundancy accounting survives only as a discipline over already formed records: raw fragment count should not be treated as observer-relative classical finality until access and independence are physically audited. The current fixed-data witness is absorbed by provenance-aware Quantum Darwinism, reduced to audited accessible-class counting, and now closed under the declared D1 dimensions: partition visibility plus audited accessible provenance-support count preserves all current verdict content, with no live branch-support or reversal-cost escape hatch. N10 adds the sharper objectivity absorber: Spectrum Broadcast Structure and strong Quantum Darwinism already own independently accessible, mutually agreeing redundant records of a pointer observable. T162 makes that absorber executable for the current family: Q1A verdicts factor through an SBS-importable closure key, and no same-full-SBS-data split exists in the enumerated cases. The next non-null Q1A artifact is not another closed-family toy witness; it is either a same-SBS-closure-key verdict split through a new physical dimension or a physical partition rule the neighbors cannot import for free. | [T2](tests/T2-quantum-measurement-record-finality.md), [T62](tests/T62-noisy-measurement-access-boundary.md), [T102](tests/T102-q1a-neighbor-comparison.md), [T103](tests/T103-q1a-fixed-data-witness.md), [T104](tests/T104-q1a-provenance-aware-darwinism-absorption.md), [T105](tests/T105-q1a-accessible-class-sufficiency.md), [T109](tests/T109-q1a-branch-support-collapse.md), [T118](tests/T118-q1a-reversal-cost-collapse.md), [T147](tests/T147-q1a-current-family-closure.md), [T162](tests/T162-q1a-sbs-factorization-obstruction.md), [N10](literature/N10-q1a-spectrum-broadcast-structure-absorber.md), [Q1A same-closure-key handoff](open-problems/q1a-same-closure-key-handoff.md) |
+| [RSPS](claims/RSPS-record-stability-pointer-selection.md) | quantum_boundary | active | Record-Stability Pointer Selection is a fixed-H null-model boundary: record-fidelity/objectivity terms may select the monitored/einselected pointer basis across finite perturbations, but Born weights remain trace-rule data and the basis/objectivity content is absorbed by decoherence, Quantum Darwinism, and SBS unless a new fixed-neighbor-data split is supplied. T189 supports this as a modest boundary, not as Q1A, TI, GU, collapse, or Born-rule evidence. | [T189](tests/T189-rsps-robustness-sweep.md), [T189 results](results/rsps-robustness-sweep-v0.1-results.md), [Q1A](claims/Q1A-access-boundary-record-accounting.md), [N10](literature/N10-q1a-spectrum-broadcast-structure-absorber.md) |
 | [Q1B](claims/Q1B-detector-provenance-admissibility.md) | quantum_subclaim | externally_blocked | Detector-side Q1 is an admissibility protocol, not empirical support: it requires a pre-registered event-level raw-log packet, hostile controls, immutable exports, and at least four non-conflicting authority domains before D1 scoring. T133 sharpens the packet burden into a provisional-admission core plus a stricter claim-review extension; T134 shows that T97 raw-log rows are necessary but not sufficient without the T121/T133 wrapper and predeclared tier. T136 makes the freeze object explicit: a pre-event manifest must bind T97 table hashes, T121/T133 wrapper commitments, T100 authority separation, and the claimed tier before the first detector event. T138 turns that into a workflow-fit gate: common single-lab/post hoc and public-archive repairs with merged authorities are null; only a federated pre-data scaffold remains non-null, still not evidence without real rows. T161 closes the nominal-federation loophole: a role-labeled authority split is still null when shared critical manifest, archive, audit, publication, or revocation roots collapse the effective partition back into self-certification. T169 narrows the surviving class again: even an honest pre-data federation is scaffold-only unless it also commits to later reviewable event-level rows. T171 sharpens that last phrase: proof-only, escrow-only, sampled-row, and delayed-release substitutes are scaffold-only because they drop reconstruction or challenge rights. Only full reviewable rows during the challenge window with independent escrow remain live as the external candidate class. T173 then shows that this surviving claim-review route no longer fits inside T100's older four-domain lower bound, because independent escrow raises the exact minimum to five authority domains. T175 closes the multisig escape hatch: threshold or quorum-controlled roots are still null whenever challenge-window release, revocation, or audit can be authorized by coalitions that bypass archive custody, escrow, or trust audit. T176 closes the policy-mutation escape hatch: even a T175-valid static map is scaffold-only if guardian identity or critical challenge-window rights can be changed after data collection begins. T178 sharpens the only allowed exception class: a predeclared successor policy counts only when it preserves the same mandatory guardians, full row-review access, guardian identity, and immutable transition logs throughout the challenge window. | [T66](tests/T66-povm-detector-calibration-obstruction.md), [T78](tests/T78-preregistered-detector-deployment-protocol.md), [T83](tests/T83-q1-detector-null-criterion.md), [T87](tests/T87-real-run-raw-log-contract.md), [T95](tests/T95-detector-stack-export-map.md), [T97](tests/T97-detector-dry-run-packet-skeleton.md), [T100](tests/T100-detector-authority-domain-bound.md), [T121](tests/T121-real-detector-packet-schema-audit.md), [T123](tests/T123-same-payload-packet-foa-witness.md), [T133](tests/T133-detector-packet-tiered-minimality.md), [T134](tests/T134-detector-dry-run-tier-gate.md), [T136](tests/T136-detector-preregistration-manifest.md), [T138](tests/T138-detector-manifest-workflow-fit.md), [T161](tests/T161-detector-control-root-independence.md), [T169](tests/T169-detector-deployment-archetype-screen.md), [T171](tests/T171-detector-row-review-substitution-screen.md), [T173](tests/T173-detector-claim-review-authority-bound.md), [T175](tests/T175-detector-threshold-root-quorum-screen.md), [T176](tests/T176-detector-challenge-window-freeze-screen.md), [T178](tests/T178-detector-preserved-rights-successor-policy-screen.md) |
 | [Q1C](claims/Q1C-weak-measurement-discriminator-gate.md) | quantum_subclaim | dormant | Weak measurement is reinstatement-only until a concrete platform names a calibrated, pre-registered branch, provenance, or undo-cost axis that is independent of the monitored record and changes the TaF verdict while standard statistics are fixed. T132 makes the gate executable: same-record re-thresholding, post hoc labels, constant branch support, and monotone undo proxies are all null. T130 narrows the obvious second-meter rescue: screened calorimetric and thermal-detector platforms provide alternate readout chains, not a simultaneous dual-meter witness with fixed standard monitored statistics. T135 tightens the literature checkpoint: recent thermal-detector qubit readout, nanocalorimetric trajectories, and calorimeter-assisted homodyne still change the readout chain or measurement formalism rather than supplying a monitored-qubit simultaneous dual-meter witness. T137 sharpens the admissibility gate again: even a simultaneous second meter is null when its event-level statistics are only a downstream transform of the ordinary monitored record. T139 closes the coarse-summary loophole: fixed ordinary monitored statistics must mean the full pre-registered event-level standard record, not a coarsened summary that an auxiliary meter merely refines. T143 adds the architecture-level obstruction: once that full ordinary log is treated as the monitored instrument's conditional transcript, same-instrument auxiliary meters are null by default unless they capture extra environment structure not screened off by the log or explicitly enlarge the monitored instrument and state an honest comparison target. T146 turns that obstruction into the live proposal filter: only extra-environment auxiliary channels or explicitly enlarged instruments with a declared preserved comparison target remain non-null architecture classes. T149 makes the filter decision-operational: the auxiliary channel must give positive predeclared verdict-risk lift over the full ordinary transcript, and the source of that lift must be physically typed. T150 closes the remaining verdict loophole: positive lift counts only for a predeclared verdict map from an independently typed TaF axis with nontrivial support. T155 adds the decision-theoretic absorber: if the full ordinary transcript screens off the auxiliary channel, that channel is null across the tested finite decision family, not just for one chosen verdict map. T158 then sharpens the enlarged-instrument escape hatch: declaring a preserved comparison target is null unless the platform also predeclares an eventwise back-projection to the full ordinary standard record, preserves that record on the admissible domain, and still adds verdict lift beyond it. T166 adds the external intake gate: platform sketches are still null or scaffold-only unless they first freeze the full `R, A, H, V, L` packet, support floor, null controls, and event-level audit burden, with enlarged-instrument routes also declaring a full-record preserved target and eventwise back-projection. N9 then checks the named platform families directly and finds no current monitored-qubit platform in the repo's live extra-environment or honest enlarged-instrument class. T182 makes that census executable: the named homodyne, jump-reversal, photon-counter, thermal-detector, nanocalorimetric, and calorimeter-assisted families are now machine-classified as ordinary-record baseline, same-instrument/postselected control, honest enlargement without a preserved full-standard target, alternate ordinary record, or task-changed non-monitored-qubit routes. T183 composes the remaining gates: Q1C reinstatement now requires the full packet, architecture, typed-verdict, and preserved-target stack, so local positive controls or packet-only promises do not reopen the branch. Zero-lift, coarse-record, postselected, auxiliary-defined, rare-target, screened-off same-instrument, coarse-or-drifted enlarged-instrument, packet-incomplete, currently named family, and stack-incomplete routes are null or blocked. | [T132](tests/T132-weak-measurement-nonnull-criterion.md), [T90](tests/T90-weak-measurement-reparameterization-obstruction.md), [T91](tests/T91-weak-measurement-platform-audit.md), [T93](tests/T93-weak-measurement-undo-cost-independence.md), [T94](tests/T94-weak-measurement-priority-demotion.md), [T130](tests/T130-weak-measurement-dual-meter-screen.md), [T135](tests/T135-weak-measurement-second-meter-checkpoint.md), [T137](tests/T137-weak-measurement-postprocessed-second-meter-obstruction.md), [T139](tests/T139-weak-measurement-full-record-sufficiency-boundary.md), [T143](tests/T143-weak-measurement-instrument-sufficiency-obstruction.md), [T146](tests/T146-weak-measurement-escape-architecture-gate.md), [T149](tests/T149-weak-measurement-conditional-sufficiency-gate.md), [T150](tests/T150-weak-measurement-verdict-admissibility-gate.md), [T155](tests/T155-weak-measurement-blackwell-boundary.md), [T158](tests/T158-weak-measurement-preserved-target-gate.md), [T166](tests/T166-weak-measurement-platform-packet-gate.md), [T182](tests/T182-weak-measurement-platform-family-screen.md), [T183](tests/T183-weak-measurement-reinstatement-stack.md), [N9](literature/N9-q1c-platform-candidate-census.md) |
 | [Q1D](claims/Q1D-contextuality-no-signalling-guardrail.md) | quantum_subclaim | guardrail_only | Contextuality and no-signalling constrain Q1 language: local records may be context-valid without a global noncontextual assignment, but this is not a new Bell theorem, hidden-variable repair, or operational prediction. T170 adds the record-stage guardrail: local record-finality is local-marginal constrained, while joint correlation finality is a later causal-reconciliation record. Signalling marginals, hidden-variable retrofits, premature correlation export, and PR-box-as-quantum readings are null. | [T21](tests/T21-bell-contextuality-finality.md), [T64](tests/T64-stern-gerlach-access-window.md), [T170](tests/T170-q1d-correlation-record-guardrail.md) |
@@ -31,6 +32,8 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [N3](literature/N3-core-formalism-known-neighbors.md) | known_neighbor | active | Lamport, quantum Darwinism, IGUS, records-of-histories, and Landauer constrain the novelty and interpretation of v0.1. | Primary-source positioning |
 | [N4](literature/N4-emergence-lab-known-neighbors.md) | known_neighbor | active | Reversible computation, cellular automata, Landauer cost, coarse-graining, and Boolean sensitivity constrain the Emergence Laboratory. | Primary-source positioning |
 | H1-Sheaf | partially_supported | open | A Cech H¹ obstruction class for incompatible finality sections exists and is computable on finite domain covers; nontrivial H¹ means no global finality section exists even when pairwise restrictions agree. T21 gives the obstruction a finite CHSH-style contextuality and score-comparison referent. | [T13](tests/T13-finality-sheaf-cohomology.md), [T21](tests/T21-bell-contextuality-finality.md) |
+| [MTI](claims/MTI-metabolic-temporal-irreducibility.md) | formal_candidate | partially_supported | In hierarchically-branched physical transport systems satisfying West-Brown-Enquist-Moses joint energy-time optimization, the temporal delivery structure (beta) contains information about source-event ordering not derivable from energy expenditure structure alone. T184 finds conditional mu_M superadditivity vs entropy subadditivity in the architectural-change transition window. T185 identifies three TaF-specific residues (stock-independent N, quadratic C, separately-typed K) surviving MSY reparameterization. T186 confirms beta(Beta)=0.4438 > beta(Alpha)=0.3491 for identical causal order (CV proxy). T187 confirms with exact Moses: beta_exact(Beta)=0.6941 > beta_exact(Alpha)=0.6651. T188 confirms G encodes topology but not timing, making the beta difference genuine for physical-substrate systems. Remaining blockers: PO1-NCK-001 promotion, FUNCTOR-OBL-TaF-001, exact WBE continuum derivation. | [T184](tests/T184-mu-m-non-additivity-composition-gate.md), [T185](tests/T185-lambda-star-msy-absorption-test.md), [T186](tests/T186-metric-vs-causal-order-beta-test.md), [T187](tests/T187-moses-exact-constrained-optimization.md), [T188](tests/T188-po1-nck-formal-claim-and-cap-ti-step4.md), [Cap_TI spec](open-problems/cap-ti-capability-object-spec.md) |
+| PO1-NCK | formal_connection | candidate | lambda*(S) may be a consequence of PO1: K(lambda,S) is the PO1 obstruction rate * lambda * |F(S)|; the interior optimum is the PO1-balance point where PO1-free extensions still outnumber PO1-creating extensions per section. Two-patch incompatible-predicate fixture confirms K = lambda when p_obstruction = 1. K superlinearity in the dynamical regime supported by self-amplifying obstruction argument. Blocked pending FUNCTOR-OBL-TaF-001 (functoriality of F: States(Ext_S) -> FinSets). | [T188](tests/T188-po1-nck-formal-claim-and-cap-ti-step4.md), [NCK formal defs](explorations/explorer-nck-formal-definitions-2026-06-22.md), [PO1 claim](claims/PO1-projection-obstruction-schema.md) |
 | [G1](guardrails/G1-human-belief-does-not-create-matter.md) | not_claimed | active | Human belief does not create matter. | Guardrail |
 | [G2](guardrails/G2-not-a-replacement-theory.md) | not_claimed | active | This does not replace QM, GR, thermodynamics, or proper time. | Guardrail |
 | [G3](guardrails/G3-observer-rendering-not-mind-created-matter.md) | not_claimed | active | Observer rendering does not mean consciousness creates matter, spacetime, physical law, or other people. | Guardrail |
@@ -2310,3 +2313,167 @@ forward direction. The converse is an open conjecture.
   stack-positive Q1C proposal with frozen packet, typed verdict lift, and, if
   enlarged, eventwise preserved-target honesty.
 - Artifact: [T183 results](results/weak-measurement-reinstatement-stack-v0.1-results.md).
+
+### 2026-06-22 - mu_M Non-Additivity Composition Gate (T184)
+
+- H7 remains `weakened_conditional`; T184 is a composition test for the
+  Temporal Issuance mu_M candidate, not thermodynamic-arrow evidence.
+- MTI (Metabolic Temporal Irreducibility) candidate remains OPEN but now has
+  partial positive content: Test B Subcase 2 (new intermediate level in
+  sequential extension) produces opposite non-additivity directions — mu_M is
+  superadditive while entropy is subadditive when branching exponent changes
+  from 3/4 to 0.85+ at the architectural-change event.
+- Test A (union composition): mu_M subadditivity under union PROVED formally
+  for 0 < beta < 1 by strict concavity of x^beta. G-absorption CONFIRMED:
+  the union branching topology is computable from G1 union G2.
+- Test B Subcase 1 (peripheral extension): low discrimination; both mu_M and
+  entropy are subadditive or approximately additive. G-absorbed.
+- Test B Subcase 2 (new intermediate level, beta_seq > 0.81):
+  mu_M superadditive, entropy subadditive. Opposite signs. G-absorption is
+  CONDITIONAL on timing of G update. In the architectural-change transition
+  window (before G is updated), mu_M carries information that G does not yet
+  reflect.
+- The composition rule for mu_M in Y_TI should specify: (a) union = absorbed;
+  (b) peripheral extension = absorbed; (c) architectural extension in transition
+  window = conditionally non-absorbed.
+- Open blocker: T186 (metric vs. causal-order beta test) must verify that beta
+  differences in Subcase 2 require temporal-metric structure beyond causal order.
+  Without T186, the Subcase 2 discrimination may still reduce to topology (G).
+- Artifact: [T184 results](results/T184-mu-m-non-additivity-composition-gate-v0.1-results.md).
+
+### 2026-06-22 - lambda*(s) MSY Absorption Test (T185)
+
+- H7 remains `weakened_conditional`; T185 is an absorption test for the
+  Temporal Issuance issuance-rate dynamics, not a physical-arrow upgrade.
+- Optimal Issuance Rate Curve Hypothesis: NOT demoted. Partial MSY absorption
+  confirmed; three TaF-specific residues survive.
+- Partial absorption: the qualitative interior-optimum structure (rising at
+  low lambda, peaking, declining at high lambda) is shared with MSY. No claim
+  of novelty for interior-optimum existence.
+- TaF-specific residues that survive MSY mapping:
+  (1) Stock-independence of N(lambda) = a*lambda (MSY's growth is S-dependent)
+  (2) Quadratic coherence cost C(lambda) = b*lambda^2 (no MSY analog)
+  (3) Separately-typed collapse risk K (not identical to harvest-equals-growth)
+- C(lambda) grounded in PO1: M/M/1 reconciliation-queue congestion dynamics
+  from section compatibility checking at rate lambda derives C proportional to
+  lambda^2. C is no longer an ungrounded assumption; it is a PO1-motivated cost.
+- Reparameterization impossibility proved: no substitution maps N-C-K to
+  standard logistic MSY when b≠0 and N is stock-independent.
+- Numerical check: lambda*(S=5) = 1.5 vs lambda_MSY = 1.0 for matching
+  parameters; 50% discrepancy attributable entirely to C term.
+- Interior-optimum stability: fixed point (S*=6.67, lambda*=1.33) is a stable
+  attractor under PO1-grounded feedback-controlled dynamics.
+- Open blocker: C grounding via M/M/1 requires section compatibility checks to
+  be serialized and for queue contention to scale with |F(S)|. These are
+  assumptions about the D1RestrictionSystem reconciliation process that should
+  be verified for specific restriction system instances.
+- Artifact: [T185 results](results/T185-lambda-star-msy-absorption-test-v0.1-results.md).
+
+### 2026-06-22 - Cap_TI Candidate C Positive Control (new result)
+
+- MTI remains OPEN; Cap_TI Candidate C advances to step 3 of 4.
+- Positive control PASSES: two D1RestrictionSystems with matching causal order,
+  entropy, event count, and gluing structure type but different beta (0.75 vs
+  0.85) yield different predicted reconciliation rounds (3 vs 2 for 20-event
+  systems). R(beta_2=0.85) = 2 < R(beta_1=0.75) = 3.
+- Hostile freeze fixture: CONDITIONAL. For abstract D1RestrictionSystems, the
+  beta difference is G-absorbed (tree depth is in G). For physical substrate
+  systems in the T184 architectural-change transition window, the split may
+  be genuine (beta changes before G is updated).
+- Candidate C status: step 3 complete (positive control), step 4 partial
+  (hostile split conditional on substrate). Do not close Candidate C.
+- Next required step: T186 metric-vs-causal-order beta test in physical
+  substrate context to complete the hostile split.
+- Artifact: [Cap_TI Candidate C results](results/cap-ti-candidate-c-positive-control-v0.1-results.md).
+
+### 2026-06-22 - T186 Registered (metric vs. causal order beta test)
+
+- T186 registered as OPEN. Tests whether branching exponent beta requires
+  temporal-metric structure (delivery times) beyond causal order.
+- Setup: two 5-event systems with identical causal order (same Hasse diagram,
+  same Myrheim-Meyer ordering fraction 0.6) but different delivery-time
+  distributions. Moses delivery-time optimization predicts beta(Alpha) ≈ 0.59
+  vs beta(Beta) ≈ 0.75 for identical causal structures.
+- Expected outcome: beta(Alpha) < beta(Beta) despite identical causal order,
+  providing first positive MTI evidence. Causal-set absorption check required.
+- This is the decisive MTI test and the prerequisite for Cap_TI Candidate C
+  step 4 completion.
+- Test spec: [T186](tests/T186-metric-vs-causal-order-beta-test.md).
+
+### 2026-06-22 - T186 Implemented: Metric vs. Causal Order Beta Test
+
+- MTI updated to **PARTIALLY_SUPPORTED**. T186 confirms positive evidence for
+  MTI (Metabolic Temporal Irreducibility).
+- Causal-set absorption check: PASS. All causal-set quantities (event count,
+  total pairs=10, comparable pairs=6, ordering fraction=3/5=0.6, interval sizes,
+  Myrheim-Meyer dimension estimate=1.5) are IDENTICAL for System Alpha and System
+  Beta. No causal-set quantity distinguishes the two systems.
+- Entropy match: PASS. Both systems have identical entropy production (5 events,
+  uniform state transitions assumed).
+- Beta comparison:
+  - beta(Alpha) = 0.3491 (delivery times {4, 2, 1}, CV=0.5345)
+  - beta(Beta)  = 0.4438 (delivery times {3, 2, 1}, CV=0.4082)
+  - beta(Alpha) < beta(Beta): TRUE. Difference = 0.0947.
+- Causal-set absorption RULES OUT: beta difference is NOT computable from
+  causal-set data (identical ordering fraction, interval sizes, MM estimate).
+  The beta difference is a metric temporal quantity absent from causal-set data.
+- Method: CV-based Moses approximation (beta = 0.75 * (1 - CV(T))). This is an
+  approximation of the full constrained optimization; directionally correct.
+- Open blocker: exact Moses constrained optimization not yet run. CV proxy
+  predicts correct direction but is not derived from first-principles W-B-E-M.
+  PO1-NCK-001 and FUNCTOR-OBL-TaF-001 remain open.
+- Cap_TI Candidate C step 4 (hostile split): advances to CONDITIONAL_PASS.
+  Delivery-time distribution is not encoded in G (G encodes topology, not timing),
+  so the split is genuine for physical-substrate systems.
+- Artifact: [T186 results](results/T186-metric-vs-causal-order-beta-v0.1-results.md).
+- Models: [models/metric_vs_causal_order_beta.py](models/metric_vs_causal_order_beta.py),
+  [models/run_t186.py](models/run_t186.py).
+
+### 2026-06-22 - T187: Moses Exact Constrained Optimization (T186 Blocker Resolved)
+
+- MTI REMAINS PARTIALLY_SUPPORTED. The primary T186 open blocker (exact Moses
+  optimization not implemented) is now resolved.
+- Exact Moses formula: beta = 1 - log(harmonic_mean(T_paths)) / log(n).
+  This follows from the KKT conditions for minimizing weighted-sum delivery time
+  subject to flow conservation; optimal flow w_i* = (1/t_i) / sum_j(1/t_j).
+- System Alpha delivery times {4,2,1}: harmonic mean = 1.714, beta_exact = 0.6651.
+- System Beta delivery times {3,2,1}: harmonic mean = 1.636, beta_exact = 0.6941.
+- Direction CONFIRMED: beta_exact(Beta) = 0.6941 > beta_exact(Alpha) = 0.6651
+  for identical causal order. Sign agrees with T186 CV approximation.
+- Both exact and CV methods agree: System Beta's tighter delivery-time distribution
+  (lower maximum path time) enables more efficient hierarchical transport, yielding
+  higher beta.
+- Open MTI blockers reduced to: (1) PO1-NCK-001 formal claim; (2) FUNCTOR-OBL-TaF-001;
+  (3) full WBE continuum derivation from first principles.
+- Cap_TI Candidate C step 4: beta difference confirmed by two independent methods;
+  split is robust to method choice for the physical-substrate context.
+- Artifact: [T187 results](results/T187-moses-exact-constrained-optimization-v0.1-results.md).
+
+### 2026-06-22 - T188: PO1-NCK Formal Claim and Cap_TI Candidate C Step 4 Complete
+
+- MTI REMAINS PARTIALLY_SUPPORTED, with stronger Cap_TI support.
+- **PO1-NCK-001 candidate formal connection established**: K(lambda, S) = PO1
+  obstruction rate * lambda * |F(S)| confirmed for the two-patch incompatible-
+  predicate fixture (p=1.0, K=lambda). The two-patch fixture confirms K is the
+  PO1 event rate. Dynamical superlinearity of K requires a multi-extension model
+  not yet fully implemented; formal promotion blocked pending FUNCTOR-OBL-TaF-001.
+- **Cap_TI Candidate C Step 4: COMPLETE**. The hostile same-neighbor-data split
+  is confirmed: G(Alpha) = G(Beta) (identical gluing topology) but beta(Alpha) ≠
+  beta(Beta) (different delivery-time metric). G encodes topology, not timing.
+  Continuous reconciliation cost R = n^(1-beta) gives R(Alpha) > R(Beta) for all n.
+  At n=20 with CV-proxy betas: R(Alpha)=7.03 rounds vs R(Beta)=5.28 rounds
+  (24.9% reduction). A system knowing mu_M correctly predicts the reduction BEFORE
+  reconciliation begins; causal-order-alone cannot.
+- Cap_TI Candidate C advances to OPERATIVE CAPABILITY for physical-substrate systems.
+  The continuous reconciliation formula replaces the ceil formula for small-n cases.
+- Artifact: [T188 results](results/T188-po1-nck-formal-claim-cap-ti-step4-v0.1-results.md).
+
+### 2026-06-22 - MTI Formal Claim and PO1-NCK Added to Ledger
+
+New entries added to CLAIM-LEDGER.md:
+- **MTI** (Metabolic Temporal Irreducibility): upgraded from exploration to
+  `partially_supported` formal claim. Evidence: T184, T185, T186, T187, T188.
+  See claims/MTI-metabolic-temporal-irreducibility.md (already updated to PARTIALLY_SUPPORTED).
+- **PO1-NCK**: added as `candidate` formal connection between PO1 and the
+  issuance-rate optimum lambda*(S). K = PO1 obstruction rate. Interior optimum
+  is the PO1-balance point. Blocked pending FUNCTOR-OBL-TaF-001.

@@ -355,3 +355,24 @@ slices of state; finality as what survives the relevance filter.
 
 Resource-constrained fidelity, level-of-detail, and detail-on-demand persistence
 in simulated worlds.
+
+## Metabolic Scaling And Network Transport
+
+Added 2026-06-22. Covers the formal biology-to-computation bridge via West-Brown-Enquist
+metabolic scaling theory: hierarchical branching transport networks, joint energy-time
+optimization, sublinear scaling laws, and their implications for temporal issuance dynamics,
+the typed multiscale transport network research target, and non-equilibrium maintenance claims.
+
+### 63. Metabolic Scaling Theorist (Maya Osei)
+
+Expert in metabolic scaling theory (West-Brown-Enquist framework and Moses et al. 2016
+extension to computing), allometric scaling laws, the joint energy-time optimization that
+produces sublinear metabolic rate scaling (B ∝ M^{3/4}), hierarchical branching transport
+networks as the architecture that joint optimization selects, and the conditions under which
+this scaling transfers across substrates (biological, electronic, distributed). Evaluates
+whether proposed mathematical structures have the right branching-network topology for
+sublinear scaling to apply; whether claimed non-equilibrium maintenance mechanisms are
+physically plausible and correctly identified; whether substrate-independent scaling
+results are being applied within their valid geometric assumptions; and whether proposed
+source measures (mu candidates) are genuinely sublinear and non-additive in system size
+rather than absorbed by standard entropy or counting measures.

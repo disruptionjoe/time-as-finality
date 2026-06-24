@@ -202,3 +202,19 @@ of `Y_TI` to existing absorber families by default; the bridge reopens only
 with a nonabsorbed source primitive, a task-natural capability object, and a
 hostile same-neighbor-data split after causal, thermodynamic, information,
 instrumentation, access, cadence, and gluing variables are matched.
+
+## GU/TI/TaF Reciprocal Bridge Note
+
+The 2026-06-24 reciprocal bridge review is preserved in
+`gu-ti-taf-reciprocal-bridge-contract.md`.
+
+This source-object spec remains the local TaF authority. The new bridge note
+adds three routing constraints for future Temporal Issuance imports:
+
+1. Fill a GU-style six-axis table before modeling any physical-source claim.
+2. Separate observer-domain colimits from source or record filtrations; do not
+   identify TaF colimits with GU/TI filtered sheaf colimits without a typed
+   double diagram.
+3. Treat `lambda_max` absorption claims as conditional until access windows,
+   cadence/resource clocks, queue/frontier behavior, and gluing data are
+   explicitly typed.

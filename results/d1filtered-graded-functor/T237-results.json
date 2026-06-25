@@ -1,0 +1,542 @@
+{
+  "identity": {
+    "gr_identity": [
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ]
+    ],
+    "graded_identity": [
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ]
+    ],
+    "identity_law_holds": true,
+    "identity_drops_nothing": true
+  },
+  "composition_battery": [
+    {
+      "label": "successive_4_3__3_2",
+      "gr_f": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "gr_g": [
+        [
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "successive_4_2__2_1",
+      "gr_f": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "gr_g": [
+        [
+          "holder_redundancy"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "shared_top_nested_4_3__4_2",
+      "gr_f": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "gr_g": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "residue_restrict_4_3__4_1",
+      "gr_f": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "gr_g": [
+        [
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy",
+          "branch_support"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy",
+          "branch_support"
+        ],
+        [
+          "accessible_support"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "right_identity",
+      "gr_f": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "gr_g": [
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "left_identity",
+      "gr_f": [
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ]
+      ],
+      "gr_g": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "gr_fg": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "mu_concat": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "saturate_4_2__2_empty",
+      "gr_f": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ]
+      ],
+      "gr_g": [
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ],
+        []
+      ],
+      "gr_fg": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ],
+        []
+      ],
+      "mu_concat": [
+        [
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy"
+        ],
+        []
+      ],
+      "composite_legal": true,
+      "gr_fg_defined": true,
+      "strict_equal": true,
+      "comparison_exists": true,
+      "same_dropped_support": true,
+      "same_bottom": true,
+      "target_refines_source": true,
+      "no_loss_no_gain": true
+    },
+    {
+      "label": "non_nested_ahb__hr",
+      "gr_f": [
+        [
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "gr_g": [
+        [
+          "accessible_support",
+          "branch_support"
+        ],
+        [
+          "holder_redundancy",
+          "reversal_cost"
+        ]
+      ],
+      "composite_filtration": [
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support"
+        ],
+        [
+          "holder_redundancy",
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy"
+        ]
+      ],
+      "composite_legal": false,
+      "gr_fg_defined": false,
+      "strict_equal": false,
+      "comparison_exists": false,
+      "same_dropped_support": false,
+      "same_bottom": false,
+      "target_refines_source": false,
+      "no_loss_no_gain": false
+    },
+    {
+      "label": "non_nested_ar__hb",
+      "gr_f": [
+        [
+          "holder_redundancy",
+          "branch_support"
+        ],
+        [
+          "accessible_support",
+          "reversal_cost"
+        ]
+      ],
+      "gr_g": [
+        [
+          "accessible_support",
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy",
+          "branch_support"
+        ]
+      ],
+      "composite_filtration": [
+        [
+          "accessible_support",
+          "holder_redundancy",
+          "branch_support",
+          "reversal_cost"
+        ],
+        [
+          "accessible_support",
+          "reversal_cost"
+        ],
+        [
+          "holder_redundancy",
+          "branch_support"
+        ],
+        []
+      ],
+      "composite_legal": false,
+      "gr_fg_defined": false,
+      "strict_equal": false,
+      "comparison_exists": false,
+      "same_dropped_support": false,
+      "same_bottom": false,
+      "target_refines_source": false,
+      "no_loss_no_gain": false
+    }
+  ],
+  "chain_associativity": {
+    "gr_full": [
+      [
+        "reversal_cost"
+      ],
+      [
+        "branch_support"
+      ],
+      [
+        "holder_redundancy"
+      ],
+      [
+        "accessible_support"
+      ],
+      []
+    ],
+    "mu_folded": [
+      [
+        "reversal_cost"
+      ],
+      [
+        "branch_support"
+      ],
+      [
+        "holder_redundancy"
+      ],
+      [
+        "accessible_support"
+      ],
+      []
+    ],
+    "strict_equal": true,
+    "comparison_exists": true,
+    "same_dropped_support": true,
+    "same_bottom": true,
+    "full_recovers_universe": true
+  },
+  "honesty_boundary": {
+    "non_monotone_is_legal": false,
+    "gr_rejects_non_monotone": true,
+    "functoriality_confined_to_descending": true,
+    "general_cocompleteness_still_open": true
+  },
+  "summary": {
+    "identity_law_holds": true,
+    "gr_composable_pairs": 7,
+    "obstructed_pairs": 2,
+    "obstruction_present": true,
+    "strict_on_composable_subdomain": true,
+    "no_loss_no_gain_on_composable": true,
+    "comparisons_exist_on_composable": true,
+    "chain_strict": true,
+    "verdict": "conditional_partial_functor"
+  }
+}

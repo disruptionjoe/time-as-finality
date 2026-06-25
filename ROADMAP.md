@@ -1373,3 +1373,68 @@ graded refinement; the MTI continuum blocker is sharpened into two named sub-obj
 No physics, geometry, or new-object language promoted this cycle. The cross-domain
 rank-classification claim is admitted at the test level pending integrator
 ratification of T224 conditional -> closed.
+
+## Phase 26: Five-Lane Run Cycle 3/5 — Breakout's Residual Same-Genre Edge Retired, Route (b) Crack Closed, Continuum Row Advances (2026-06-25)
+
+The breakout's last residual same-genre edge is retired by a genre-crossing third
+absorber; the one untested route-(b) crack closes; the CSP-PO1 continuum row advances
+on two of three fronts with its last obstruction named; the D1Cat line gains a strict-
+functor refinement; the MTI continuum blocker's second sub-object resolves positive.
+
+- **T234 (rank-k genre-crossing third absorber — hostile-domain completion):
+  conditional / PASS_GENRE_CROSS at the gate.** The verbatim T224 `compute_kappa`
+  (object-identity asserted, not re-tuned) transported kappa in {0,1,2} to a THIRD
+  a-priori-unrelated absorber of a structurally distinct native genre — social-choice
+  majority aggregation (Arrow/SMD), native obstruction = a vertex-disjoint Condorcet
+  directed-3-cycle count over an oriented, orientation-sensitive majority tournament
+  (not a Z/2 parity cover) — predicting the exact native rank on all three rungs
+  (2/2/2, 1/1/1, 0/0/0); off-by-one guard held; AST-clean of d1_restriction_system
+  and cap_theorem_bridge. Retires T229's residual same-genre edge: the cross-domain
+  RANK classification is now witnessed across THREE absorbers / TWO native genres.
+  Recommendation to integrator: with T224 + T229 this is sufficient to move T224
+  conditional -> closed. Two open edges for full closure: a non-cycle-shaped native
+  genre (CAP commit/quorum-intersection witness) and the rank ceiling at k=2.
+- **T235 (source-automorphism rigidity certificate — the one untested route-(b)
+  crack): no-go — closed at gate 2.** The certificate separates a same-nu pair, is
+  local + relabel-stable, genuinely NOT nu-measurable, and NOT absorbed by the source
+  FIELD value (nu_prime) — the new fact vs T230 — but the symmetry class is a derived
+  function of an admissible source GLUING relation, so admitting the gluing structure
+  (nu_struct) reproduces the separation; route (b) NOT cleared, route (a) bounded
+  subsumption STRENGTHENED to the structure-keyed stratum, non-vacuity holds.
+  Independent-motivation stays NOT EARNED for the LossKernel line. Next: a
+  globalization-obstruction certificate (locally nu-fixing automorphisms patching to a
+  global one; test nu_struct-measurability).
+- **T236 (CSP-PO1 continuum: cofinality + multi-cycle + Čech->derived):
+  conditional — two of three fronts discharged.** Cofinality over the full staggered
+  poset is discharged (exhaustive over 2^n, uniform bisection cofinal) and the
+  multi-cycle H1 rank>=2 case is discharged (theta witness, full Z2 cycle-space
+  cohomology cross-validated vs exhaustive 2^n; T231's wrap-parity is the rank-1
+  specialization); the Čech->derived comparison stays OPEN (is_iso None) with the
+  residual obstruction NAMED = lim^1/Mittag-Leffler vanishing over the full directed
+  tower. CSP-PO1 continuum row stays conditional, conditionality now pinned to that
+  single missing object; no continuum proto_independent promotion.
+- **T237 (functoriality of gr: D1FilteredCat -> GradedSets): conditional — D1Cat line
+  refined.** gr is a STRICT functor on the gr-composable (filtration-nested)
+  subcategory (identity + gr(f;g)=mu(gr f, gr g) across a 7-pair battery and the full
+  T228 colimit chain) but NOT total: the first exact obstruction is that
+  compose_filtered is not closed on legal morphisms (non-nested descending filtrations
+  re-sort to a non-descending illegal composite), so gr is a partial functor total
+  only under filtration-nesting. General cocompleteness at infinity stays OPEN. Next:
+  compose_meet (subset-lattice meet-closure) as a candidate legality-closed total
+  category, and a naturality / sub-functor statement.
+- **T238 (coverage-constrained WBE-native delivery — MTI sub-object 2): conditional —
+  resolved positive.** Under a WBE-native terminal-reachability delivery-time bound,
+  the metric-vs-causal separation is objective-INVARIANT: minimax (which killed it in
+  T227) now preserves it (4.4944 vs 3.3708) and total-cost still preserves it (2.6986
+  vs 2.5533) across the feasible D-window, floor derived (q=demand/K^2) not hand-set;
+  honesty guards (quantum->0, feasibility, falsification control) all pass.
+  Recommendation to integrator: move MTI metric-temporal content from
+  objective-dependent to objective-invariant-under-WBE-native-constraint. Conditional
+  on the WBE-nativeness premise (no cited WBE coverage axiom yet); does NOT promote MTI
+  (area-preserving sub-object (1), n^-1/2 / 3/4, stays open). Next: a WBE-coverage axiom
+  certificate.
+
+No physics, geometry, social-welfare-as-law, or new-object language promoted this cycle.
+Two integrator-facing recommendations stand (T224 conditional -> closed via T234's
+genre-crossing completion; MTI metric content -> objective-invariant-under-WBE-native
+-constraint via T238), both deferred to integrator ratification.

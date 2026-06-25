@@ -1,0 +1,42 @@
+{
+  "theta_h1_rank": 2,
+  "theta_class_vectors": {
+    "00_no_twist": [
+      0,
+      0
+    ],
+    "10_left_twist": [
+      1,
+      1
+    ],
+    "01_right_twist": [
+      0,
+      1
+    ],
+    "11_both_twist": [
+      1,
+      0
+    ]
+  },
+  "theta_decider_cross_validated": true,
+  "multi_cycle_refinement_stable": true,
+  "cofinality": {
+    "coarse_n": 4,
+    "num_staggered_covers": 16,
+    "every_staggered_stable": true,
+    "uniform_dominates_every_staggered": true,
+    "chain_value_equals_poset_value": true,
+    "cofinal": true
+  },
+  "cofinality_cross_validated_vs_loop_sign": true,
+  "cech_derived_comparison": {
+    "finite_colimit_equals_cycle_space_h1": true,
+    "class_stable_along_cofinal_system": true,
+    "derived_comparison_is_iso": null,
+    "residual_obstruction": "The Cech->derived comparison map H^1_Cech(colim covers) -> H^1_derived(orientation sheaf on the continuum band) is an iso only after a lim^1 / Mittag-Leffler vanishing over the directed system of covers. That vanishing is a property of the FULL infinite tower, not certifiable from any finite stage; hence the continuum identification remains OPEN. This is the single residual gap; cofinality (over the wider poset) and the multi-cycle case are discharged, the derived comparison is not.",
+    "licensed": "Finite cofinality (uniform bisection cofinal in the wider staggered poset), refinement-stability along EVERY poset edge, and multi-cycle (H1 rank >= 2) stability are discharged as finite_witness + poly_decider certificates.",
+    "forbidden": "A general continuum sheaf-cohomology theorem, or the assertion that the Cech->derived comparison is an iso, is FORBIDDEN from this finite witness (the lim^1 obstruction is not certifiable from finite data)."
+  },
+  "verdict": "conditional",
+  "summary": "T236 advances the CSP-PO1 continuum row past T231's uniform-bisection / single-cycle limitation on TWO fronts and exhibits the honest Cech->derived step. (1) COFINALITY OVER THE WIDER POSET: non-uniform (staggered) refinements -- splitting an arbitrary SUBSET of patches -- form a directed poset strictly wider than the bisection chain; the Z2 class ([g]-verdict + loop sign) is stable along EVERY refinement edge in that poset, and the uniform-bisection system is provably COFINAL in it (every staggered cover is dominated by the uniform bisection, so the colimit value is chain-independent). Enumerated exhaustively over all 2^n subsets and cross-validated against the loop-sign and T231 wrap-parity deciders. (2) MULTI-CYCLE / NON-ANNULAR: a theta-graph witness with H1 rank 2 exhibits all four independent classes (00,01,10,11) via the FULL Z2 cycle-space cohomology (b1 = #E - #V + #components; class = vector of fundamental-cycle parities, a poly_decider cross-validated against the exhaustive 2^n coboundary search); the class is refinement-stable per cycle. T231's wrap-parity is recovered as the rank-1 specialization. (3) CECH->DERIVED: the finite identity (colimit class == cycle-space H1, stable along the cofinal system) is executable; the continuum identification remains OPEN with the obstruction NAMED -- a lim^1 / Mittag-Leffler vanishing over the full directed tower, not certifiable from any finite stage. Verdict CONDITIONAL: cofinality + multi-cycle discharged, the continuum Cech->derived theorem NOT (binding honesty guard: a general continuum sheaf-cohomology theorem is FORBIDDEN from a finite witness). Tag: finite_witness + poly_decider."
+}

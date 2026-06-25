@@ -1,0 +1,214 @@
+{
+  "kappa_definition_unchanged_from_T224": "kappa(nu) = dim_{Z/2} H^1 of the signed graph of the neighbor-visible same/different cover. compute_kappa is imported VERBATIM from T224 and NOT re-tuned. Re-tuning per domain would be an automatic FAIL.",
+  "kappa_A": {
+    "two_cell_transitive_kappa2": {
+      "cover_name": "A:two_cell_transitive_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_cell_transitive_kappa1": {
+      "cover_name": "A:min_transitive_conflict",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "satisfiable_kappa0": {
+      "cover_name": "A:satisfiable_all_same",
+      "num_variables": 3,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "kappa_B_via_nu": {
+    "two_condorcet_cycle": {
+      "cover_name": "B'':two_condorcet_cycle_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_condorcet_cycle": {
+      "cover_name": "B'':one_condorcet_cycle_kappa1",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "transitive": {
+      "cover_name": "B'':transitive_kappa0",
+      "num_variables": 3,
+      "num_edges": 0,
+      "num_components": 3,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "native_B_condorcet": {
+    "two_condorcet_cycle": {
+      "profile": "two_condorcet_cycle_kappa2",
+      "num_candidates": 6,
+      "num_ballots": 3,
+      "majority_tournament": {
+        "a<b": 1,
+        "a<c": -1,
+        "a<d": 1,
+        "a<e": 1,
+        "a<f": 1,
+        "b<c": 1,
+        "b<d": 1,
+        "b<e": 1,
+        "b<f": 1,
+        "c<d": 1,
+        "c<e": 1,
+        "c<f": 1,
+        "d<e": 1,
+        "d<f": -1,
+        "e<f": 1
+      },
+      "all_condorcet_triples": [
+        [
+          "a",
+          "b",
+          "c"
+        ],
+        [
+          "d",
+          "e",
+          "f"
+        ]
+      ],
+      "disjoint_condorcet_cycles": [
+        [
+          "a",
+          "b",
+          "c"
+        ],
+        [
+          "d",
+          "e",
+          "f"
+        ]
+      ],
+      "native_condorcet_cycle_rank": 2,
+      "condorcet_winner": null,
+      "witness_kind": "directed-3-cycle count in an oriented majority tournament (Arrow/SMD genre; NOT a Z/2 signed-graph parity product)"
+    },
+    "one_condorcet_cycle": {
+      "profile": "one_condorcet_cycle_kappa1",
+      "num_candidates": 3,
+      "num_ballots": 3,
+      "majority_tournament": {
+        "a<b": 1,
+        "a<c": -1,
+        "b<c": 1
+      },
+      "all_condorcet_triples": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "disjoint_condorcet_cycles": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "native_condorcet_cycle_rank": 1,
+      "condorcet_winner": null,
+      "witness_kind": "directed-3-cycle count in an oriented majority tournament (Arrow/SMD genre; NOT a Z/2 signed-graph parity product)"
+    },
+    "transitive": {
+      "profile": "transitive_kappa0",
+      "num_candidates": 3,
+      "num_ballots": 3,
+      "majority_tournament": {
+        "a<b": 1,
+        "a<c": 1,
+        "b<c": 1
+      },
+      "all_condorcet_triples": [],
+      "disjoint_condorcet_cycles": [],
+      "native_condorcet_cycle_rank": 0,
+      "condorcet_winner": "a",
+      "witness_kind": "directed-3-cycle count in an oriented majority tournament (Arrow/SMD genre; NOT a Z/2 signed-graph parity product)"
+    }
+  },
+  "ast_shared_derivation_audit": {
+    "transport_path_imports_d1_restriction_system": false,
+    "transport_path_imports_cap_theorem_bridge": false,
+    "T28_CAP_imports_d1_restriction_system": true,
+    "native_witness_calls_compute_kappa": false,
+    "compute_kappa_is_T224_object_not_retuned": true,
+    "shares_derivation_with_T39_or_CAP": false,
+    "note": "B'' = social-choice Condorcet aggregation. Native obstruction is a directed-3-cycle count in an oriented majority tournament (Arrow/SMD genre), structurally distinct from the signed-graph parity-product witness of T21/T229. The transport path imports neither the T39 engine nor CAP, so no shared derivation; compute_kappa is the verbatim T224 object and the native witness never calls it."
+  },
+  "native_witness_orientation_sensitive": true,
+  "trials": [
+    {
+      "a_instance": "two_cell_transitive_kappa2",
+      "kappa_A": 2,
+      "predicted_kappa_B": 2,
+      "native_condorcet_rank": 2,
+      "kappa_B_via_nu": 2,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "one_cell_transitive_kappa1",
+      "kappa_A": 1,
+      "predicted_kappa_B": 1,
+      "native_condorcet_rank": 1,
+      "kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    },
+    {
+      "a_instance": "satisfiable_kappa0",
+      "kappa_A": 0,
+      "predicted_kappa_B": 0,
+      "native_condorcet_rank": 0,
+      "kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    }
+  ],
+  "all_predictions_match": true,
+  "rank_load_bearing": true,
+  "rank_separates_1_from_2": true,
+  "no_shared_derivation": true,
+  "native_independent_of_compute_kappa": true,
+  "kappa_single_formula": true,
+  "genre_is_distinct_from_signed_graph": true,
+  "gate_cleared": true,
+  "verdict": "PASS_GENRE_CROSS",
+  "meaning": "If PASS_GENRE_CROSS: kappa transported from a T39 signed-graph A-instance predicts the EXACT integer number of independent native obstructions in a THIRD absorber whose native witness is a directed-cycle count over an oriented majority tournament (Arrow/SMD genre) -- a witness structurally distinct from the parity-product genre of T21 (T224) and two-box CHSH (T229). This retires the residual 'same-genre' edge T229 named: the rank law is NOT confined to the frustrated-cycle/CHSH structural genre, so the cross-domain RANK classification is hostile-domain complete across THREE absorbers spanning TWO native genres. The integrator ratifies whether this moves T224 conditional -> closed. If KILLED: the prediction missed or compute_kappa needed re-tuning, and the transport law is bounded to the frustrated-cycle genre (still a real, citable cross-domain result).",
+  "complexity_tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "guardrails": "No physics/geometry/curvature/new-object/social-welfare-as-physical-law language promoted. kappa is a Z/2 graph-homology rank over a finite cover; 'Condorcet cycle' is a directed 3-cycle in a finite majority tournament; native rank is counted by tournament cycle detection (poly_decider, not a search), never by compute_kappa. No NP-hardness/CSP-completeness claimed."
+}

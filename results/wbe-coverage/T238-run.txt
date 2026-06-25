@@ -1,0 +1,27 @@
+=== T238: coverage-constrained WBE-native delivery model ===
+network-fixed feasibility threshold (max free time) D_min = 4.0
+network-fixed coverage quantum q = demand/K^2 = 0.1100
+
+=== PART C/D: separation under the PHYSICAL terminal-reachability bound ===
+     D  feas     TC_a     TC_b  TCsep     MM_a     MM_b  MMsep
+  4.50  True   2.6986   2.5533   True   4.4944   3.3708   True
+  5.00  True   2.6986   2.5533   True   4.4944   3.3708   True
+  6.00  True   2.6986   2.5533   True   4.4944   3.3708   True
+  8.00  True   2.6986   2.5533   True   4.4944   3.3708   True
+ 12.00  True   2.6986   2.5533   True   4.4944   3.3708   True
+
+=== PART D: objective-invariance verdict ===
+bounds tested            : (4.5, 5.0, 6.0, 8.0, 12.0)
+derived quantum          : 0.1100
+feasible                 : (True, True, True, True, True)
+total-cost separates     : (True, True, True, True, True)
+minimax separates        : (True, True, True, True, True)
+minimax sep everywhere   : True
+OBJECTIVE-INVARIANT      : True
+
+=== PART E: floor provenance (derived vs convenience) ===
+derived floor (network-fixed)        : 0.1100
+T233 numeric-floor reading separates : True
+delivery bound makes coverage binding: True
+  (binding=True => the bound, ON ITS OWN, forbids dumping all flow on
+   the fast terminal; the coverage is physically forced, not hand-set.)

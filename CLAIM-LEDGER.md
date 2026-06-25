@@ -22,7 +22,7 @@ This ledger tracks the current status of the Time as Finality conjecture suite. 
 | [IPT](claims/IPT-invariant-preserving-transformations.md) | formal_kernel | proto_independent | Invariant-preserving transformations may be the substrate-neutral mathematical transport structure connecting observer changes, theorem transfer, and record-reduction maps; T23 gives a finite typed kernel with positive cases, composition, and obstruction; T26 supplies D1 restriction morphisms as a target object, but no full IPT representation theorem yet. | [T23](tests/T23-invariant-preserving-transformations.md), [T26](tests/T26-d1-restriction-system.md), [FORMALISM](FORMALISM.md), [Technical report](TECHNICAL-REPORT-invariant-preserving-transformations-v0.1.md), [T26 report](TECHNICAL-REPORT-d1-restriction-system-v0.1.md) |
 | [TF1](claims/TF1-typed-forgetting-attribution.md) | formal_target | open_formal_target | Typed Forgetting Attribution remains open only in a narrowed recast form. T99 weakens label-only LossKernel: same endpoints, ordinary composite map, endpoint behavior, and naive lost-label set can still require opposite attribution verdicts unless LossKernel carries source-anchored witness obligations. T107 adds candidate semantics: loss relocates when target judgments remain source-lift dependent, while invariant fibers show absorbed loss. T108 finds no strict separation from why-not provenance, abstract interpretation, lenses, CSP explanation, or rich effect annotations. T127 then runs the same-neighbor-data gate directly on the current finite fixture family and gets a negative result: apparent separations are absorbed by neighbor-visible CSP/provenance/abstraction/lens/effect/path/category data, or collapse as label-only, endpoint-difference, or absorbed-loss controls. T220 upgrades that search-negative to a structural certificate: the canonical witness obligation factors through the neighbor-visible data map (obligation = psi . nu), so it is constant on each fiber of nu and same-neighbor-data separation is impossible in the canonical regime; the lone escape (a non-factoring obligation reading a hidden source datum) is not a prior-art separation because admitting that datum enlarges the neighbor package. The strongest surviving target is now a certified canonical normal form for source-derived witness obligations that collapses into neighbor data, not a paper-facing prior-art-separated obstruction theorem. | [Loss Kernel Formalization](open-problems/loss-kernel-formalization.md), [LossKernel Witness-Obligation Normal Form](open-problems/loss-kernel-witness-obligation-normal-form.md), [T34](tests/T34-po1-chained-projection.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [T40](tests/T40-holarchy-lab.md), [T41](tests/T41-typed-transport-category.md), [T99](tests/T99-losskernel-quotient-separation.md), [T107](tests/T107-loss-relocation.md), [T108](tests/T108-loss-relocation-prior-art.md), [T127](tests/T127-same-neighbor-data-losskernel-audit.md), [T220](tests/T220-losskernel-obligation-factorization-certificate.md) |
 | [PO1](claims/PO1-projection-obstruction-schema.md) | formal_schema | partially_supported | Projection from a richer finite restriction system to a restricted class can create a gluing obstruction when the projection is definable, the richer system has a global section, the restricted system is obstructed, and obstruction-resolving structure is forgotten. T31 supplies the admissibility checklist. T32 compresses it: AC4 derives from AC6, and the remaining non-intrinsic guard is AC5, the named forgotten-structure condition. T33 derives conditions from IPT+RMT frameworks; best hypothesis H3 (both required); AC5-naming remains a methodological transparency condition recommended as Principle P5. T34 adds chained projection behavior. T35 shows bounded finite generative value through a structural discovery engine. T36 (compression-finality crosswalk) confirms compressibility is a downstream observable of stable records, not a D1 dimension. T37 shows PO1 admissibility can be path-dependent in a TypedTransportNetwork: AC5 is the only condition that varies by path when paths accumulate different forgotten_structure. T39 establishes the CSP equivalence: the gluing obstruction is exactly a parity-conflicting binary CSP; PO1 adds typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7) not expressible in standard CSP. | [T27](tests/T27-class-relative-bridge-audit.md), [T28](tests/T28-cap-theorem-bridge.md), [T29](tests/T29-projection-obstruction-schema.md), [T30](tests/T30-cross-domain-projection-obstruction-validation.md), [T31](tests/T31-po1-admissibility-conditions.md), [T32](tests/T32-admissibility-derivation.md), [T33](tests/T33-po1-foundational-derivation.md), [T34](tests/T34-po1-chained-projection.md), [T35](tests/T35-projection-obstruction-discovery-engine.md), [T36](tests/T36-compression-finality-crosswalk.md), [T37](tests/T37-typed-transport-network.md), [T39](tests/T39-csp-satisfiability-reframing.md), [Technical report](TECHNICAL-REPORT-projection-obstruction-schema-v0.1.md), [T31 report](TECHNICAL-REPORT-po1-admissibility-conditions-v0.1.md), [T32 report](TECHNICAL-REPORT-po1-admissibility-derivation-v0.1.md), [T33 report](TECHNICAL-REPORT-po1-foundational-derivation-v0.1.md), [T34 report](TECHNICAL-REPORT-po1-chained-projection-v0.1.md), [T36 report](TECHNICAL-REPORT-compression-finality-crosswalk-v0.1.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md) |
-| CSP-PO1 | formal_theorem | proto_independent | PO1-as-CSP: the D1RestrictionSystem patch language is a binary {-1,1} CSP with same/different constraints. The gluing obstruction is exactly a parity-conflicting binary CSP (Theorem 3: D1-CSP Equivalence). Arc consistency is trivially true for this constraint language and adds no information (Theorem 1). PO1 adds three layers not present in standard CSP: typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7). These have no CSP analogues. Verdict H_B: the obstruction mechanism is known (signed-graph 2-colorability); the typed classification framework is the genuine new contribution. T59 adds a continuous-boundary caution: signed parity survives a Mobius orientation witness only after transition-aware Z2 reduction, while coefficient-blind scalar encoding produces a false global section. **Finite/infinite boundary (T222): conditional. Survives countably infinite constraint graphs unconditionally via propositional compactness / de Bruijn–Erdős (witness: planted finite negative triangle detected in every prefix of an infinite path). Strictly finite at the continuum unless coefficient/transition data are carried — the coefficient-blind Mobius reuse is the false-global-section witness. The continuum obstruction object is coefficient-aware sheaf H1, not blind same/different CSP. This is the most load-bearing finite restriction for paper-facing continuum claims.** **T226 (coefficient-aware Čech-H1, finite_witness): T222 Contribution-Needed #i is now BUILT — a finite Z2 cochain complex over a finite annular nerve computes the correct Möbius Z2 class (nontrivial, no global section) exactly where the coefficient-blind encoding gave a false section, and the obstruction class agrees with PO1 AC6 iff the AC5 transition data is retained (localizing the trap to AC5-forgetting). Structural correction: T222's single-overlap blind/aware comparison detected a CSP direct-parity-conflict artifact, not a genuine H1 class (a single overlap has no cover cycle ⇒ [g]=0); the real obstruction requires the annular wrap cycle. The continuum row STAYS conditional — no general continuum sheaf-cohomology theorem is claimed (honesty guard intact); remaining named hypothesis = cover-refinement-stability/colimit. Distinct from the D1Cat transfinite-colimit lane (T222 Contribution #ii, closed by T228). T224 (typed-loss transport, finite_witness): the neighbor-visible signed-cover H^1 invariant kappa, defined domain-neutrally, transported from this CSP-PO1 instance (T39) to the a-priori-unrelated T21 Bell/CHSH absorber and predicted B's native parity-product obstruction before measurement with no shared derivation — but only kappa in {0,1} was load-bearing and only one absorber cleared, so this is obstruction-PRESENCE transport, not a rank classification or theorem.** | [T39](tests/T39-csp-satisfiability-reframing.md), [T59](tests/T59-finite-to-infinite-boundary-audit.md), [T222](tests/T222-finite-to-infinite-boundary-theorem.md), [T224](tests/T224-typed-loss-transport-test.md), [T226](tests/T226-coefficient-aware-sheaf-h1-continuum.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md), [T59 report](TECHNICAL-REPORT-finite-to-infinite-boundary-audit-v0.1.md), [T222 report](TECHNICAL-REPORT-finite-to-infinite-boundary-theorem-v0.1.md) |
+| CSP-PO1 | formal_theorem | proto_independent | PO1-as-CSP: the D1RestrictionSystem patch language is a binary {-1,1} CSP with same/different constraints. The gluing obstruction is exactly a parity-conflicting binary CSP (Theorem 3: D1-CSP Equivalence). Arc consistency is trivially true for this constraint language and adds no information (Theorem 1). PO1 adds three layers not present in standard CSP: typed source (AC7), typed forgotten structure (AC5), and admissibility classification (AC1-AC7). These have no CSP analogues. Verdict H_B: the obstruction mechanism is known (signed-graph 2-colorability); the typed classification framework is the genuine new contribution. T59 adds a continuous-boundary caution: signed parity survives a Mobius orientation witness only after transition-aware Z2 reduction, while coefficient-blind scalar encoding produces a false global section. **Finite/infinite boundary (T222): conditional. Survives countably infinite constraint graphs unconditionally via propositional compactness / de Bruijn–Erdős (witness: planted finite negative triangle detected in every prefix of an infinite path). Strictly finite at the continuum unless coefficient/transition data are carried — the coefficient-blind Mobius reuse is the false-global-section witness. The continuum obstruction object is coefficient-aware sheaf H1, not blind same/different CSP. This is the most load-bearing finite restriction for paper-facing continuum claims.** **T226 (coefficient-aware Čech-H1, finite_witness): T222 Contribution-Needed #i is now BUILT — a finite Z2 cochain complex over a finite annular nerve computes the correct Möbius Z2 class (nontrivial, no global section) exactly where the coefficient-blind encoding gave a false section, and the obstruction class agrees with PO1 AC6 iff the AC5 transition data is retained (localizing the trap to AC5-forgetting). Structural correction: T222's single-overlap blind/aware comparison detected a CSP direct-parity-conflict artifact, not a genuine H1 class (a single overlap has no cover cycle ⇒ [g]=0); the real obstruction requires the annular wrap cycle. The continuum row STAYS conditional — no general continuum sheaf-cohomology theorem is claimed (honesty guard intact); remaining named hypothesis = cover-refinement-stability/colimit. Distinct from the D1Cat transfinite-colimit lane (T222 Contribution #ii, closed by T228). T224 (typed-loss transport, finite_witness): the neighbor-visible signed-cover H^1 invariant kappa, defined domain-neutrally, transported from this CSP-PO1 instance (T39) to the a-priori-unrelated T21 Bell/CHSH absorber and predicted B's native parity-product obstruction before measurement with no shared derivation — but only kappa in {0,1} was load-bearing and only one absorber cleared, so this is obstruction-PRESENCE transport, not a rank classification or theorem. **T229 (rank-2 second absorber, finite_witness + poly_decider, conditional/PASS_RANK2): the SAME `compute_kappa` (NOT re-tuned) transported kappa=2 to a second a-priori-unrelated absorber (two-box CHSH) and predicted both native obstructions before measurement (off-by-one guard held), upgrading the earned object from obstruction-PRESENCE to obstruction-RANK classification across two frustrated-cycle-genre absorbers; recommended to integrator to move T224 conditional -> closed. T234 (genre-crossing third absorber, finite_witness + poly_decider, conditional/PASS_GENRE_CROSS): the verbatim T224 `compute_kappa` transported kappa in {0,1,2} to a THIRD absorber of a structurally distinct native genre — social-choice majority aggregation (Arrow/SMD), whose native obstruction is a vertex-disjoint Condorcet directed-3-cycle count over an oriented majority tournament, orientation-sensitive (not a Z/2 parity cover) — predicting the exact native rank on all three rungs (2/2/2, 1/1/1, 0/0/0); AST-clean of d1_restriction_system and cap_theorem_bridge. This retires T229's residual same-genre edge: the cross-domain RANK classification is now witnessed across THREE absorbers / TWO native genres. Two open edges remain for full closure: a NON-cycle-shaped native genre (CAP commit/quorum-intersection witness) and the rank ceiling at k=2.** | [T39](tests/T39-csp-satisfiability-reframing.md), [T59](tests/T59-finite-to-infinite-boundary-audit.md), [T222](tests/T222-finite-to-infinite-boundary-theorem.md), [T224](tests/T224-typed-loss-transport-test.md), [T226](tests/T226-coefficient-aware-sheaf-h1-continuum.md), [T39 report](TECHNICAL-REPORT-csp-satisfiability-reframing-v0.1.md), [T59 report](TECHNICAL-REPORT-finite-to-infinite-boundary-audit-v0.1.md), [T222 report](TECHNICAL-REPORT-finite-to-infinite-boundary-theorem-v0.1.md) |
 | HEF | formal_theorem | proto_independent | Holonic Emergence and Cross-Level AC5: in a HolonicNetwork (directed graph of D1RestrictionSystems with cross-level patch constraints), holonic obstruction can arise from cross-level constraints even when every micro node is individually satisfiable (Holonic Emergence Theorem). Cross-level AC5 is necessary for holonic PO1: a source-satisfiable + target-obstructed holonic pair is not a holonic PO1 instance without named forgotten cross-level structure. H_B best supported: holonic finality is genuinely independent of micro finality. **Finite/infinite boundary (T222): survives. The cross-level obstruction is a finite negative cycle in the combined signed graph; by compactness / König's lemma an infinite-depth holarchy is obstructed iff a finite sub-holarchy is (witness: planted cross-level triangle stays obstructed at depths 0–500 under unbounded acyclic extension). The "infinite-path limit dissolves the obstruction" intuition is a coefficient-blind artifact — only dropping the −1 cross-level sign restores satisfiability (T59 false-section discipline). A genuinely continuous holarchy inherits the CSP-PO1 continuum condition; no sheaf-cohomology emergence theorem is claimed.** | [T40](tests/T40-holarchy-lab.md), [T222](tests/T222-finite-to-infinite-boundary-theorem.md), [T40 report](TECHNICAL-REPORT-holarchy-lab-v0.1.md), [T222 report](TECHNICAL-REPORT-finite-to-infinite-boundary-theorem-v0.1.md) |
 | TTN | formal_primitive | proto_independent | TypedTransportNetwork: a finite directed graph of NetworkLayer objects (D1RestrictionSystems) connected by NetworkTransport edges (typed morphisms with explicit forgotten/preserved structure). Path-dependent admissibility is a finite-family result: two simple paths between the same source and target layer can yield different PO1 verdicts when they accumulate different forgotten_structure. AC1, AC2, AC3, AC6, AC7 are endpoint-determined; only AC5 varies by path. D1RestrictionMorphism category laws are resolved by T41; T73 gives only a powerset-union monoid-valued LossKernel annotation law, with quotient/prior-art separation still open. **Finite/infinite boundary (T222): D1Cat category laws survive. Associativity and identity are algebraic in function composition and in the fixed 4-element D1_DIMENSIONS universe — site cardinality never enters (witness: laws verified on a countably-infinite index-shift site map). The PO1 Non-Functor theorem also survives: it is an existential refutation of Boolean-and functoriality, monotone under category extension, so the finite (False, False, True) counterexample embeds unchanged into any infinite-site ambient — only the negative result; a positive lax/indexed functor at infinity is open. The one open structure-level edge is now CLOSED (T228): the colimit of the transfinite strictly-descending chain is RESOLVED. (i) "transfinite" is a red herring at the morphism-data level — the preserved-dims universe is the fixed 4-element D1_DIMENSIONS, so composition-intersection saturates the descent at () after at most 4 finite steps and is constant thereafter. (ii) An empty-preserved-dimensions morphism is a LEGAL D1Cat morphism (() is a valid subset of D1_DIMENSIONS; analyze_morphism reports it 'reached' even between fully-disagreeing objects), correcting T222's "outside the profile axioms" framing — it is INSIDE the axioms. (iii) Therefore a colimit EXISTS (the content-free / empty-preserved object with the empty-preserved cocone), but the content-bearing colimit "of the desired form" is a no-go (the surviving dimension content is provably (), so every object freely admits the cocone and the universal object carries no dimension content). Honesty guard respected: this is NOT cocompleteness at infinity — the positive result is confined to descending chains and the degenerate colimit; general cocompleteness stays open. Constructive next: a graded/filtered D1FilteredMorphism carrying the descending preserved-dims filtration.** | [T37](tests/T37-typed-transport-network.md), [T41](tests/T41-typed-transport-category.md), [T73](tests/T73-losskernel-composition.md), [T222](tests/T222-finite-to-infinite-boundary-theorem.md), [T228](tests/T228-d1cat-transfinite-colimit-decision.md), [T37 report](TECHNICAL-REPORT-typed-transport-network-v0.1.md), [T222 report](TECHNICAL-REPORT-finite-to-infinite-boundary-theorem-v0.1.md) |
 | MMT | formal_primitive | proto_independent | Minimal Multiscale Transport: H1+ (TypedTransportNetwork + CompressionRecord + EmergenceRecord) is the smallest currently justified formalism for ten core transport questions. CompressionRecord tracks many-to-one site-count reduction, compression ratio, and retained aggregate invariants. EmergenceRecord tracks global structure at the target not forced at the source — orthogonal to PO1 (obstruction-creation vs. structure-creation). H2 (graph-of-graphs) and H3 (bundle/presheaf/category) not yet required. | [T38](tests/T38-minimal-multiscale-transport.md), [T38 report](TECHNICAL-REPORT-minimal-multiscale-transport-v0.1.md) |
@@ -2853,3 +2853,141 @@ New entries added to CLAIM-LEDGER.md:
   no kappa/sheaf-h1/functor/d1cat-colimit files. 22 green pytest checks. Artifacts:
   [T233](tests/T233-wbe-objective-selection.md),
   [T233 run](results/wbe-selection/T233-wbe-selection-v0.1-run.txt).
+
+### 2026-06-25 - Five-lane run cycle 3/5 (T234, T235, T236, T237, T238)
+
+- The breakout's residual same-genre edge is retired (T234, genre-crossing third
+  absorber); the one untested route-(b) crack is closed (T235); the CSP-PO1
+  continuum row advances on two of three fronts with the last obstruction named
+  (T236); the D1Cat line gains a strict-functor refinement with its first total-
+  functor obstruction exhibited (T237); the MTI continuum blocker's second
+  sub-object resolves positive (T238). No top-line claim status flips at the
+  integrator level beyond the strengthened T224 recommendation below; every lane
+  reports at the test level and defers promotion to the integrator. No physics,
+  geometry, social-welfare-as-law, or new-object language promoted this cycle.
+
+- **T234 Rank-k genre-crossing third absorber (Arrow/SMD Condorcet) — hostile-
+  domain completion. Verdict: conditional (PASS_GENRE_CROSS at the gate;
+  finite_witness, poly_decider).** The verbatim T224 `compute_kappa` (object-
+  identity asserted, NOT re-tuned) transported kappa in {0,1,2} from a T39 two-cell
+  signed-graph to a THIRD a-priori-unrelated absorber = social-choice majority
+  aggregation (Arrow/SMD), whose NATIVE obstruction is a vertex-disjoint Condorcet
+  directed-3-cycle count over an ORIENTED majority tournament — a non-signed-graph,
+  orientation-sensitive genre structurally distinct from the sign-symmetric
+  parity-product genre of T21 (T224) and two-box CHSH (T229). It predicted the
+  exact native integer rank on all three rungs (2/2/2, 1/1/1, 0/0/0) before
+  measuring; the off-by-one guard held; an orientation-sensitivity certificate
+  proves the witness is not a Z/2 parity cover. AST audit proves the transport path
+  imports neither d1_restriction_system nor cap_theorem_bridge (the CAP route is
+  avoided via Arrow/SMD), and the native witness never calls compute_kappa. This
+  RETIRES T229's residual "same-genre" edge: the cross-domain RANK classification
+  is now witnessed across THREE absorbers / TWO native genres (parity product;
+  tournament directed cycle), strengthening the criterion-6 independent-motivation
+  object the 2026-06-24 MATHEMATICAL-INDEPENDENCE-AUDIT found NOT EARNED.
+  **Recommendation to integrator: this clears the residual edge T229/T224 named;
+  with T224 + T229 it is sufficient to move T224 from conditional -> closed for the
+  cross-domain RANK-classification claim.** Two open edges remain for full closure
+  (both named): (1) a NON-cycle-shaped native genre = CAP commit/quorum-intersection
+  witness; (2) rank ceiling at k=2 (arbitrary k untested but mechanical). Tags
+  finite_witness + poly_decider; 50-test regression green (T224 + T229 untouched).
+  Artifacts: [T234](tests/T234-kappa-genre-crossing-third-absorber.md),
+  [T234 results](results/kappa-genre-crossing/T234-results.json).
+
+- **T235 Source-automorphism rigidity certificate — the one untested route-(b)
+  crack T230 named. Verdict: no-go (finite_witness).** The certificate separates a
+  same-nu pair (rigid vs symmetric source gluing -> Aut iso-class 1 vs 2 at
+  identical nu), is local + relabel-stable, is genuinely NOT nu-measurable, and is
+  NOT absorbed by admitting the source FIELD value (nu_prime) — the new fact vs
+  T230's source_reading — but it IS CLOSED at gate 2 because the symmetry class is a
+  derived function of an admissible source GLUING relation (T108/T127): admitting
+  the gluing structure (nu_struct) reproduces the separation
+  (clears_route_b=False; failure_gate=gate2_absorbed_by_admitted_source_structure;
+  route_a_strengthened=True). The non-vacuity injector confirms the gate can fire
+  positive, so the no-go is a real verdict, not a dead harness. This extends T230's
+  gate-2 trichotomy closure from field-valued to structure-valued source
+  separators; the LossKernel-line symmetry-class route is closeable.
+  Independent-motivation remains NOT EARNED for the LossKernel line; T230's model is
+  reused by import only and its suite stays green (14/14), T235's suite is 15/15
+  (pytest + unittest). Named next crack: a globalization-obstruction certificate
+  (locally-defined nu-fixing automorphisms patching to a global one; test
+  nu_struct-measurability). The integrator decides whether to demote the TF1
+  same-neighbor-data novelty route to closed. Artifacts:
+  [T235](tests/T235-source-automorphism-rigidity-certificate.md),
+  [T235 results](results/source-automorphism/T235-results.json).
+
+- **T236 Full-poset cofinality + multi-cycle stability + the Čech->derived step
+  (CSP-PO1 continuum row). Verdict: conditional (finite_witness + poly_decider).**
+  Advances the CSP-PO1 / T222 continuum row past T231's uniform-bisection /
+  single-cycle limitation on two of three fronts: (1) cofinality over the full
+  staggered-refinement poset is DISCHARGED (finite, exhaustive over 2^n subsets;
+  uniform bisection provably cofinal; chain value == poset value); (2) the
+  multi-cycle H1 rank>=2 case is DISCHARGED (theta witness, full Z2 cycle-space
+  cohomology poly_decider cross-validated against exhaustive 2^n, four
+  refinement-stable classes — T231's wrap-parity is the rank-1 specialization);
+  (3) the Čech->derived comparison is NOT closed — is_iso is honestly None and the
+  residual obstruction is NAMED = lim^1/Mittag-Leffler vanishing over the full
+  directed tower (not certifiable from finite data). The CSP-PO1 continuum row
+  therefore REMAINS conditional, with conditionality now pinned to that single
+  missing object; NO promotion to continuum proto_independent and NO general
+  continuum sheaf-cohomology theorem is warranted from a finite witness (binding
+  guard intact). Imports T231/T226 by import only (neither modified); distinct from
+  and does not touch the D1FilteredMorphism lane (T232/T237). Named next object:
+  the lim^1/Mittag-Leffler vanishing certificate for the orientation-sheaf H^0
+  inverse system over the band-cover poset (interim: extend stability to covers
+  with triple overlaps, d1 != 0). 17 new tests green (54 with T231 + T226).
+  Artifacts: [T236](tests/T236-sheaf-h1-cofinality-derived-bridge.md),
+  [T236 results](results/sheaf-h1-cofinality/T236-results.json).
+
+- **T237 Functoriality of the associated-graded map gr: D1FilteredCat ->
+  GradedSets (the D1Cat line's next rung). Verdict: conditional (finite_witness,
+  poly_decider).** T232's first named constructive-next object is decided at the
+  test level. gr (m -> associated_graded(m.filtration)) is a STRICT functor on the
+  gr-composable (filtration-nested) subcategory of D1FilteredCat: the identity law
+  holds and gr(f;g) = mu(gr f, gr g) strictly across a 7-pair nested battery AND the
+  full length-6 T228 colimit chain, no-loss / no-gain, with the canonical comparison
+  present. But gr is NOT a total functor: the first exact obstruction (latent in
+  T232's _refine_filtrations and never tested there) is that compose_filtered is NOT
+  closed on legal morphisms — two legal non-nested descending morphisms (e.g.
+  f:4->{a,h,b} and g:4->{h,r}) re-sort by size to a non-descending illegal
+  composite, so gr(f;g) is undefined off the nested subcategory and gr is a partial
+  functor, total only under the filtration-nesting hypothesis. Verdict conditional,
+  binding hypothesis = filtration-nesting / gr-composability; the honesty guard is
+  intact (gr rejects non-monotone filtrations) and general cocompleteness at
+  infinity remains OPEN (inherited T228/T232 guard). The D1Cat/D1FilteredCat line
+  now reads: transfinite-chain colimit content-free in D1Cat (T228, closed);
+  content-bearing in the graded refinement for descending chains (T232,
+  conditional); the schedule is strictly functorial on the gr-composable
+  subcategory (T237, conditional). Named next objects: (1) compose_meet =
+  subset-lattice meet-closure replacing the size-sort -> a candidate legality-closed
+  TOTAL category for gr; (2) promote the per-pair comparisons to a naturality /
+  sub-functor statement (graded_bottom o gr recovers the forgetful U). Distinct from
+  the continuum T231/T236 lane; no physics/Čech/sheaf language. 21 tests green
+  standalone (45 with T232/T228, no breakage). Artifacts:
+  [T237](tests/T237-d1filtered-graded-functor.md),
+  [T237 results](results/d1filtered-graded-functor/T237-results.json).
+
+- **T238 Coverage-constrained WBE-native delivery model (T233 MTI
+  objective-invariance sub-object 2). Verdict: conditional (finite_witness,
+  poly_decider). MTI stays PARTIALLY_SUPPORTED.** Resolves T233 sub-object (2)
+  POSITIVE: MTI's metric-temporal content is objective-INVARIANT under a WBE-native
+  terminal-reachability delivery-time bound D. Minimax — which annihilated the
+  separation in T227 — now PRESERVES it (Alpha 4.4944 vs Beta 3.3708), and
+  total-cost still preserves it (2.6986 vs 2.5533), across the whole feasible
+  D-window, with the floor DERIVED from the network (q = demand/K^2, network-fixed)
+  not hand-picked — closing T227/T233's "minimax kills it" horn on the
+  delivery-objective axis. Mechanism: requiring every terminal be reached forbids
+  minimax zeroing the slow branch; its delivery time becomes free time tau_p1
+  (4 vs 3), which is the metric label entering the binding latency. Honesty guards
+  pass: the verdict is robust to quantum -> 0.0055; the delivery bound does real
+  work (it forbids all-on-fast-branch and is infeasible below D_min = 4.0); the
+  falsification control is decisive (an identical metric label makes the separation
+  vanish). **Recommendation to integrator: move MTI's metric-temporal content from
+  objective-dependent to objective-invariant-under-WBE-native-constraint (partial
+  -> stronger-partial).** Conditional, NOT closed: WBE-nativeness is still an
+  interpretive premise (a space-filling SERVICE hierarchy), not yet a cited WBE
+  axiom — named next object is a WBE-coverage axiom certificate. Does NOT promote
+  MTI (sub-object (1), the area-preserving n^-1/2 / 3/4, stays open). Tags
+  finite_witness + poly_decider; no physics/exponent promotion; no edits to
+  kappa/sheaf-h1/attribution/d1cat files. 13 green checks. Artifacts:
+  [T238](tests/T238-coverage-constrained-wbe-delivery.md),
+  [T238 run](results/wbe-coverage/T238-run.txt).

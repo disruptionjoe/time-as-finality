@@ -1,0 +1,106 @@
+{
+  "test": "T235-source-automorphism-rigidity-certificate",
+  "tag": "finite_witness",
+  "fiber_size": 3,
+  "distinct_nu_signatures_in_fiber": 1,
+  "members": [
+    {
+      "name": "aut_rigid",
+      "hidden_source_datum": "",
+      "gluing": [
+        [
+          "p"
+        ],
+        [
+          "q",
+          "r"
+        ],
+        [
+          "s"
+        ]
+      ],
+      "automorphism_order": 1,
+      "rigid": true,
+      "rigidity_certificate": [
+        1,
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "nu_signature_hash": 8307926625359594404
+    },
+    {
+      "name": "aut_symmetric",
+      "hidden_source_datum": "",
+      "gluing": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "r",
+          "s"
+        ]
+      ],
+      "automorphism_order": 2,
+      "rigid": false,
+      "rigidity_certificate": [
+        2,
+        [
+          2,
+          2
+        ]
+      ],
+      "nu_signature_hash": 8307926625359594404
+    },
+    {
+      "name": "aut_symmetric2",
+      "hidden_source_datum": "other",
+      "gluing": [
+        [
+          "p",
+          "q"
+        ],
+        [
+          "r",
+          "s"
+        ]
+      ],
+      "automorphism_order": 2,
+      "rigid": false,
+      "rigidity_certificate": [
+        2,
+        [
+          2,
+          2
+        ]
+      ],
+      "nu_signature_hash": 8307926625359594404
+    }
+  ],
+  "certificate_nu_measurable": false,
+  "separates_same_nu_pair": true,
+  "separating_pair": [
+    "aut_rigid",
+    "aut_symmetric"
+  ],
+  "separation_absorbed_by_nu_prime": false,
+  "separation_absorbed_by_nu_struct": true,
+  "relabel_stable": true,
+  "local": true,
+  "clears_route_b": false,
+  "failure_gate": "gate2_absorbed_by_admitted_source_structure",
+  "nonvacuity_injected_pair_clears": true,
+  "route_b_alive": false,
+  "route_a_strengthened": true,
+  "verdict": "no-go",
+  "strongest_claim": "The source-automorphism rigidity certificate -- the iso-class of the group of nu-fixing, source-gluing-preserving self-maps of a typed-lossy morphism's source -- SEPARATES a same-nu pair (rigid vs symmetric source gluing give different Aut iso-class while nu is identical), is local and relabel-stable, BUT the source gluing it is computed from is admissible source structure: admitting the gluing as audit data (nu_struct) reproduces the separation, so the certificate is ABSORBED ONE LEVEL UP at gate 2 -- exactly the fate of source_reading, keyed to a structure rather than a scalar. The bet 'a symmetry class has no single field to admit' fails: the gluing IS a single admissible field. Route (b) is NOT cleared by the source-automorphism certificate on this finite family; the trichotomy's gate-2 closure extends from field-valued to structure-valued source separators.",
+  "first_obstruction": "Gate 2 absorbs the automorphism class because the source-side gluing the group is computed from is itself admissible audit data (T108/T127: mature neighbors absorb any declared source structure once named). The automorphism iso-class is a DERIVED FUNCTION of the gluing, so once the gluing is admitted, nu_struct reproduces every distinction the certificate makes. The missing object route (b) still needs is a source-side symmetry datum that is (i) not nu-visible, (ii) not a free decoration, (iii) not external/non-local, AND (iv) NOT reconstructible from any admissible source field OR source relation -- a symmetry class with genuinely no admissible carrier. The automorphism construction does not supply one: its carrier (the gluing) is admissible.",
+  "constructive_next_object": "A gluing-FREE symmetry obstruction: a source-side automorphism class that is NOT computed from any admittable source relation but from a property closed under admitting every source field/relation -- e.g. a cohomological obstruction to GLOBALIZING local nu-fixing automorphisms (whether locally-defined source self-maps patch to a global one) that is invariant under enlarging the audit data. If the obstruction to globalization is itself stable under admitting the local automorphism data, gate 2 would have nothing left to admit. Whether such a non-reconstructible symmetry obstruction exists for typed-lossy morphisms is the residual open crack; the value-keyed and structure-keyed cracks are now both closed.",
+  "meaning_for_claim": "Independent-motivation criterion: NOT flipped to EARNED. The one untested crack T230 named -- the source-automorphism rigidity certificate -- is now tested and CLOSED at gate 2: the automorphism class is a derived function of an admissible source relation, so it is absorbed exactly like a source field value. This STRENGTHENS the T230 route-(a) bounded negative: the absorption-escape trichotomy now closes over BOTH value-keyed and structure-keyed source separators on the family. The LossKernel line is cleanly closeable for the symmetry-class route; the only residual crack is a globalization obstruction not reconstructible from admitted local automorphism data (named next object). Reported conditional ONLY in the falsification sense (the injector proves the gate CAN fire positive); the real-fiber verdict is no-go / route-(a)-strengthened. Integrator ratifies.",
+  "falsification_condition": "This no-go is overturned in route (b)'s favor by exhibiting ONE same-nu pair (a,b) and the rigidity certificate (or a refined symmetry invariant) with cert(a) != cert(b), relabel-stable AND local, where the separation is NOT reproduced by nu_struct for ANY admissible enlargement (admitting every source field AND the source gluing). The harness then reports clears_route_b=True and the verdict flips to EARNED-candidate. The non-vacuity injector proves the harness CAN report this; the real source-automorphism construction does not, because its carrier (the gluing) is admissible.",
+  "next_step": "Build the globalization-obstruction invariant: take locally-defined nu-fixing source automorphisms over a cover of the source and test whether they patch to a global automorphism; the obstruction class (a finite Z/2 or torsor obstruction) is the candidate symmetry datum with no admissible single carrier. Test whether THAT obstruction is nu_struct-measurable on a same-nu fiber. If nu_struct-measurable, the LossKernel line closes fully (no-go final); if not, route (b) is alive and independent-motivation trends EARNED -- record with maximum care."
+}

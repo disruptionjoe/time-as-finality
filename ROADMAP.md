@@ -1321,3 +1321,55 @@ and the two structure-level edges T222 left conditional are now resolved.
 
 No physics, geometry, or new-object language promoted this cycle. The two-absorber
 breakout promotion gate is NOT cleared.
+
+## Phase 25: Five-Lane Run Cycle 2/5 — Breakout Promotion Gate Cleared at Test Level, Route (b) Closed (2026-06-25)
+
+The breakout's rank-2 promotion gate fires and clears; the independent-motivation
+route (b) for the LossKernel line is closed by exhaustion; the D1Cat line gains its
+graded refinement; the MTI continuum blocker is sharpened into two named sub-objects.
+
+- **T229 (rank-2 second unrelated absorber — the promotion gate): conditional /
+  PASS_RANK2 at the gate.** kappa=2 transported with the SAME `compute_kappa` (not
+  re-tuned) from a two-odd-cycle T39 instance to a second a-priori-unrelated
+  absorber B' (two-box CHSH, 8 settings) predicted BOTH native independent
+  obstructions before measurement; native rank read by T21's own per-box parity
+  witness (not kappa); off-by-one guard held (kappa_A=1 -> native 1). No shared
+  derivation (AST-verified; T28/CAP disqualified). Clears BOTH T224 conditions
+  (>=2 unrelated absorbers; rank-not-presence), upgrading the earned claim from
+  obstruction-PRESENCE transport to obstruction-RANK classification — the
+  criterion-6 independent-motivation object the 2026-06-24 audit found NOT EARNED.
+  Recommendation to integrator: move T224 conditional -> closed. Next: a
+  genre-crossing rank-k third absorber (Arrow/SMD or native-witness CAP).
+- **T230 (Open Problem 11.1, route (b)): no-go — route closed by exhaustion.** On a
+  same-nu witness family no attribution invariant clears the 3-gate
+  absorption-escape test; the trichotomy (source -> absorbed by nu' /
+  free-decoration -> non-invariant / ambient -> non-local) is exhaustive over the
+  off-nu strata, sharpening the audit's single-case T220 NOT-EARNED into
+  trichotomy-exhaustion. Route (a) bounded subsumption is SUPPORTED;
+  independent-motivation stays NOT EARNED for the LossKernel line. Next (the one
+  untested crack): a source-automorphism rigidity certificate separating by a
+  source symmetry-class, not a field value.
+- **T231 (CSP-PO1 continuum bridge): conditional — uniform-bisection half
+  discharged.** A real simplicial refinement annular_n->annular_2n with cochain
+  pullback, iterated annular_4->8->16->32, preserves the Möbius nontrivial /
+  cylinder trivial Z2 class and loop sign at every step (cross-validated vs T226's
+  exhaustive search). CSP-PO1 continuum row stays conditional; the remaining gap
+  narrows to cofinality over the full cover poset + Čech->derived comparison.
+- **T232 (D1FilteredMorphism graded colimit): conditional — D1Cat line refined.**
+  D1FilteredCat is a proper category with a forgetful functor recovering T228's
+  content-free colimit; re-posed there, the descending-chain colimit is the
+  associated-graded object recovering the full drop schedule — content-BEARING
+  where T228's bare intersection was content-free. Conditional on monotone-descending
+  typing; general cocompleteness at infinity stays OPEN (T228 guard upheld).
+- **T233 (WBE objective-selection — the sharp MTI blocker): conditional — blocker
+  split.** Dissipation minimization passes Gate 2 (induces branch-loading total-cost
+  objective; separation survives) but FAILS Gate 1 (its space-filling optimum is the
+  area-increasing n^-1/3, a=1, not the area-preserving n^-1/2 that gives 3/4). MTI
+  stays PARTIALLY_SUPPORTED; the open blocker is now two named sub-objects, both
+  required: (1) a domain-native justification for the area-preserving condition that
+  singles out n^-1/2, and (2) a WBE-native coverage/service constraint making the
+  delivery separation objective-invariant.
+
+No physics, geometry, or new-object language promoted this cycle. The cross-domain
+rank-classification claim is admitted at the test level pending integrator
+ratification of T224 conditional -> closed.

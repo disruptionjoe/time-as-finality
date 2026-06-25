@@ -2739,3 +2739,117 @@ New entries added to CLAIM-LEDGER.md:
   preserved-dims filtration (discrete category-level analogue of the sheaf-H1
   continuum lane). Artifacts:
   [T228](tests/T228-d1cat-transfinite-colimit-decision.md).
+
+### 2026-06-25 - Five-lane run cycle 2/5 (T229, T230, T231, T232, T233)
+
+- One promotion gate cleared at the test level (T229, recommended to integrator)
+  and one route closed (T230). MTI stays PARTIALLY_SUPPORTED; the CSP-PO1
+  continuum row stays conditional; the D1Cat/D1FilteredCat line gains its graded
+  refinement; no top-line claim status flips except the T224 recommendation
+  below, which is the integrator's call to ratify.
+
+- **T229 Rank-2 second unrelated absorber — the breakout's promotion gate.
+  Verdict: conditional (PASS_RANK2 at the gate; finite_witness, poly_decider).**
+  kappa=2 was transported, with the SAME `compute_kappa` (NOT re-tuned), from a
+  two-odd-cycle T39 instance (kappa_A=2) to a SECOND a-priori-unrelated absorber
+  B' (two independent CHSH boxes, 8 settings) and PREDICTED both native
+  independent obstructions before measurement. Native rank was read by T21's own
+  per-box parity-product witness, NOT by the kappa machinery, and matched the
+  prediction exactly; the off-by-one guard held (kappa_A=1 transported to native
+  rank 1, not 2), so the integer rank — not merely its sign — is load-bearing
+  across domains. No shared derivation (AST-verified: neither T21 nor the harness
+  imports d1_restriction_system; T28/CAP would and is correctly disqualified).
+  This clears BOTH of the two conditions that held T224 at conditional in cycle 1
+  (>=2 unrelated absorbers; rank-not-presence), upgrading the earned claim from
+  cross-domain obstruction-PRESENCE transport to obstruction-RANK classification —
+  the criterion-6 "independent-motivation" object the 2026-06-24
+  MATHEMATICAL-INDEPENDENCE-AUDIT found NOT EARNED. **Recommendation to integrator:
+  move T224 from conditional -> closed and admit the cross-domain RANK-
+  classification claim.** Residual open edge: both absorbers are frustrated-cycle
+  genre; the next object is a genre-crossing rank-k third absorber (Arrow/SMD or a
+  native-witness CAP). Tags finite_witness + poly_decider; 34-test regression
+  green; T224 files untouched. Artifacts:
+  [T229](tests/T229-kappa-rank2-second-absorber.md),
+  [T229 results](results/kappa-rank2/T229-results.json).
+
+- **T230 Separating attribution invariant outside the canonical construction
+  (Open Problem 11.1, route (b)). Verdict: no-go (finite_witness).** On a single
+  nu-fiber (4 typed-lossy cases sharing identical neighbor-visible nu), no
+  attribution invariant clears the 3-gate absorption-escape test: every same-nu
+  separator fails at exactly one gate — source_reading separates but is absorbed
+  by nu' (gate 2), free_label is not relabel-invariant (gate 3a), ambient_index is
+  non-local (gate 3b), and the "outside" trap source_fiber_cardinality slides back
+  inside nu (gate 1). Route (b) — the only route that flips the
+  independent-motivation criterion from NOT EARNED to EARNED for the
+  typed-forgetting / LossKernel line — is NOT cleared. The honest correction vs
+  T220: locality + relabel-stability are NOT sufficient (the source reader is both
+  yet separates), so the citable bounded negative is the three-clause form — every
+  local, relabel-stable, NON-ABSORBABLE invariant factors through nu on this
+  family; gate 2 (absorption) is load-bearing. Route (a) bounded subsumption is
+  SUPPORTED instead. Independent-motivation remains NOT EARNED for the LossKernel
+  line, which is cleanly closeable unless the named next object — a
+  source-automorphism rigidity certificate (separates via a source symmetry-CLASS,
+  not a field value, so unabsorbable by nu') — yields a non-nu-measurable
+  separator. Falsifier: any local + relabel-stable + non-absorbable invariant
+  separating a same-nu pair flips the verdict to EARNED-candidate. 14 checks green
+  under pytest and unittest. Artifacts:
+  [T230](tests/T230-attribution-invariant-separation.md).
+
+- **T231 Cover-refinement-stability colimit for the coefficient-aware Z2 Čech-H1.
+  Verdict: conditional (finite_witness; class decider poly_decider).** Built the
+  named continuum bridge: a genuine subdivision annular_n->annular_2n with an
+  explicit simplicial refinement map + cochain pullback pi^*, iterated into the
+  directed chain annular_4->8->16->32. The nontrivial Möbius class ([g]!=0, loop
+  sign -1) and the trivial cylinder class ([g]=0, loop sign +1) are PRESERVED at
+  every step (poly_decider wrap-cycle parity, cross-validated against T226's
+  exhaustive 2^n search on annular_{4,8,16}). This discharges the
+  uniform-bisection half of T222's CSP-PO1 continuum condition. The CSP-PO1
+  continuum row STAYS conditional (no continuum sheaf-cohomology theorem claimed;
+  binding guard intact); the conditionality is narrowed to one named gap =
+  cofinality over the full cover poset + Čech->derived comparison. Distinct from
+  the T232 D1FilteredMorphism lane; the T226 source object was imported only,
+  never modified; no promotion to physics or to continuum proto_independent.
+  17 new tests green (37 with T226). Artifacts:
+  [T231](tests/T231-sheaf-h1-refinement-stability.md),
+  [T231 results](results/sheaf-h1-refinement/T231-sheaf-h1-refinement-v0.1.json).
+
+- **T232 D1FilteredMorphism: content-bearing graded colimit in the filtered
+  category. Verdict: conditional (finite_witness, poly_decider).** Built
+  D1FilteredMorphism = (site_map, descending preserved-dims filtration);
+  D1FilteredCat is a proper category (associative composition = filtration
+  refinement + two-sided identities), with a forgetful functor U recovering
+  T228's bare-intersection content-free colimit. Re-posed in D1FilteredCat, the
+  descending chain's colimit is the associated-graded object whose strata
+  gr_k = F_k\F_{k+1} are the four non-empty singleton drops recovering the full
+  dimension universe in drop order — content-BEARING exactly where T228's bare
+  intersection collapsed to () content-FREE. CONDITIONAL because the positive
+  result is typed to monotone-descending chains: a non-monotone pseudo-filtration
+  is a proven-illegal morphism, so general cocompleteness at infinity is NOT
+  established and remains OPEN (the binding T228 honesty guard is upheld). T228's
+  bare-intersection no-go is undisturbed; this adds the graded refinement. The
+  D1Cat/D1FilteredCat line now reads: transfinite-chain colimit content-free in
+  D1Cat (T228, closed); content-bearing in the graded refinement D1FilteredCat for
+  descending chains (T232, conditional); cocompleteness at infinity still open.
+  Distinct from the T226/T231 continuum sheaf-H1 lane; does not touch the
+  kappa/functor/MTI files. 17 tests green. Artifacts:
+  [T232](tests/T232-d1cat-filtered-colimit.md).
+
+- **T233 WBE objective-selection principle — the sharp MTI continuum blocker.
+  Verdict: conditional (finite_witness, poly_decider). MTI stays
+  PARTIALLY_SUPPORTED.** The WBE dissipation-minimization principle fails the two
+  acceptance gates T227 named, jointly. Gate 2 PASSES: dissipation minimization
+  DOES induce the branch-loading total-cost delivery objective, and the
+  metric-vs-causal separation survives it. Gate 1 FAILS: its space-filling optimum
+  is the area-INCREASING ratio n^-1/3 (metabolic exponent a=1, verified to grid
+  precision for n=4,8,16,27), NOT the area-preserving n^-1/2 that gives 3/4 — so
+  3/4 requires the area-preserving impedance-matching condition as a SEPARATE
+  input, not as an output of dissipation minimization. Under a hard coverage floor
+  even minimax separates Alpha/Beta and loads every branch (Part C). MTI's open
+  blocker is therefore refined from "exact WBE continuum derivation" into two named
+  independent sub-objects, BOTH required for promotion: (1) a domain-native
+  justification for the area-preserving condition that singles out n^-1/2, and
+  (2) a WBE-native coverage/service constraint making the delivery-separation
+  objective-invariant. Reuses mti_wbe_continuum.py + mti_cflow_solver.py; touches
+  no kappa/sheaf-h1/functor/d1cat-colimit files. 22 green pytest checks. Artifacts:
+  [T233](tests/T233-wbe-objective-selection.md),
+  [T233 run](results/wbe-selection/T233-wbe-selection-v0.1-run.txt).

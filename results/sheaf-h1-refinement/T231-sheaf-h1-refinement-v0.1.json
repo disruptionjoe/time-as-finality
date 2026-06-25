@@ -1,0 +1,103 @@
+{
+  "mobius_steps": [
+    {
+      "coarse_n": 4,
+      "fine_n": 8,
+      "coarse_loop_sign": -1,
+      "fine_loop_sign": -1,
+      "coarse_obstructed": true,
+      "fine_obstructed": true,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_4 -> annular_8: coarse loop sign -1, fine loop sign -1 (preserved: True); coarse [g]!=0 = True, fine [g]!=0 = True (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    },
+    {
+      "coarse_n": 8,
+      "fine_n": 16,
+      "coarse_loop_sign": -1,
+      "fine_loop_sign": -1,
+      "coarse_obstructed": true,
+      "fine_obstructed": true,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_8 -> annular_16: coarse loop sign -1, fine loop sign -1 (preserved: True); coarse [g]!=0 = True, fine [g]!=0 = True (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    },
+    {
+      "coarse_n": 16,
+      "fine_n": 32,
+      "coarse_loop_sign": -1,
+      "fine_loop_sign": -1,
+      "coarse_obstructed": true,
+      "fine_obstructed": true,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_16 -> annular_32: coarse loop sign -1, fine loop sign -1 (preserved: True); coarse [g]!=0 = True, fine [g]!=0 = True (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    }
+  ],
+  "cylinder_steps": [
+    {
+      "coarse_n": 4,
+      "fine_n": 8,
+      "coarse_loop_sign": 1,
+      "fine_loop_sign": 1,
+      "coarse_obstructed": false,
+      "fine_obstructed": false,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_4 -> annular_8: coarse loop sign +1, fine loop sign +1 (preserved: True); coarse [g]!=0 = False, fine [g]!=0 = False (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    },
+    {
+      "coarse_n": 8,
+      "fine_n": 16,
+      "coarse_loop_sign": 1,
+      "fine_loop_sign": 1,
+      "coarse_obstructed": false,
+      "fine_obstructed": false,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_8 -> annular_16: coarse loop sign +1, fine loop sign +1 (preserved: True); coarse [g]!=0 = False, fine [g]!=0 = False (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    },
+    {
+      "coarse_n": 16,
+      "fine_n": 32,
+      "coarse_loop_sign": 1,
+      "fine_loop_sign": 1,
+      "coarse_obstructed": false,
+      "fine_obstructed": false,
+      "loop_sign_preserved": true,
+      "class_verdict_preserved": true,
+      "pullback_consistent": true,
+      "simplicial_map_valid": true,
+      "cocycle_valid_both": true,
+      "stable": true,
+      "detail": "annular_16 -> annular_32: coarse loop sign +1, fine loop sign +1 (preserved: True); coarse [g]!=0 = False, fine [g]!=0 = False (class verdict preserved: True); pullback pi^* consistent: True; simplicial map valid: True; cocycle valid both: True. STABLE: True."
+    }
+  ],
+  "mobius_class_refinement_stable": true,
+  "cylinder_class_refinement_stable": true,
+  "mobius_loop_sign_invariant": true,
+  "cylinder_loop_sign_invariant": true,
+  "all_steps_stable": true,
+  "verdict": "conditional",
+  "summary": "Cover-refinement-stability certificate for the coefficient-aware Z2 Cech-H1. A genuine subdivision annular_n -> annular_2n (each coarse patch split in two) with an explicit simplicial refinement map pi and cochain pullback pi^* is built and iterated into a directed chain annular_4 -> annular_8 -> annular_16. The NONTRIVIAL Mobius class ([g]!=0, loop sign -1) and the TRIVIAL cylinder class ([g]=0, loop sign +1) are PRESERVED at every refinement step: the obstruction verdict and the loop sign-product are invariant across the refinement system. This is a FINITE-DATA refinement-stability certificate -- the finite-nerve class survives subdivision -- and is the honest bridge from finite witness toward a continuum statement. IT IS NOT a general continuum sheaf-cohomology theorem (binding honesty guard): no claim is made over arbitrary covers or a derived/sheaf cohomology of a continuum space; the certificate is exhibited over an explicit cofinal annular subdivision chain only. Tag: finite_witness."
+}

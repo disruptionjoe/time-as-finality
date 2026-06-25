@@ -1,0 +1,183 @@
+{
+  "kappa_definition_unchanged_from_T224": "kappa(nu) = dim_{Z/2} H^1 of the signed graph of the neighbor-visible same/different cover. compute_kappa is imported from T224 and NOT re-tuned. Re-tuning per domain would be a FAIL.",
+  "kappa_A": {
+    "two_cell_transitive_kappa2": {
+      "cover_name": "A:two_cell_transitive_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_cell_transitive_kappa1": {
+      "cover_name": "A:min_transitive_conflict",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "satisfiable_kappa0": {
+      "cover_name": "A:satisfiable_all_same",
+      "num_variables": 3,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "kappa_B_via_nu": {
+    "two_box_frustrated_2": {
+      "cover_name": "B:two_box_chsh_frustrated_2",
+      "num_variables": 8,
+      "num_edges": 8,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_box_frustrated_1": {
+      "cover_name": "B:two_box_chsh_frustrated_1",
+      "num_variables": 8,
+      "num_edges": 8,
+      "num_components": 2,
+      "kappa": 1,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_box_frustrated_0": {
+      "cover_name": "B:two_box_chsh_frustrated_0",
+      "num_variables": 8,
+      "num_edges": 8,
+      "num_components": 2,
+      "kappa": 0,
+      "cycle_space_rank": 2,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "native_B": {
+    "two_box_frustrated_2": {
+      "scenario": "two_box_chsh_frustrated_2",
+      "num_boxes": 2,
+      "per_box": [
+        {
+          "box": "box1",
+          "parity_product": -1,
+          "no_global_assignment": true,
+          "all_local_sections_exist": true,
+          "box_frustrated": true
+        },
+        {
+          "box": "box2",
+          "parity_product": -1,
+          "no_global_assignment": true,
+          "all_local_sections_exist": true,
+          "box_frustrated": true
+        }
+      ],
+      "native_frustrated_box_rank": 2
+    },
+    "two_box_frustrated_1": {
+      "scenario": "two_box_chsh_frustrated_1",
+      "num_boxes": 2,
+      "per_box": [
+        {
+          "box": "box1",
+          "parity_product": -1,
+          "no_global_assignment": true,
+          "all_local_sections_exist": true,
+          "box_frustrated": true
+        },
+        {
+          "box": "box2",
+          "parity_product": 1,
+          "no_global_assignment": false,
+          "all_local_sections_exist": true,
+          "box_frustrated": false
+        }
+      ],
+      "native_frustrated_box_rank": 1
+    },
+    "two_box_frustrated_0": {
+      "scenario": "two_box_chsh_frustrated_0",
+      "num_boxes": 2,
+      "per_box": [
+        {
+          "box": "box1",
+          "parity_product": 1,
+          "no_global_assignment": false,
+          "all_local_sections_exist": true,
+          "box_frustrated": false
+        },
+        {
+          "box": "box2",
+          "parity_product": 1,
+          "no_global_assignment": false,
+          "all_local_sections_exist": true,
+          "box_frustrated": false
+        }
+      ],
+      "native_frustrated_box_rank": 0
+    }
+  },
+  "shared_derivation_audit": {
+    "Bprime_is_two_box_T21_chsh": true,
+    "T21_imports_d1_restriction_system": false,
+    "T28_CAP_imports_d1_restriction_system": true,
+    "rank2_module_imports_d1_restriction_system": false,
+    "Bprime_shares_derivation_with_T39": false,
+    "note": "B' = two disjoint T21 CHSH boxes; neither T21 nor this module imports the T39 signed-graph engine. T28/CAP is built FROM that engine and is correctly disqualified, exactly as T224 audited."
+  },
+  "trials": [
+    {
+      "a_instance": "two_cell_transitive_kappa2",
+      "kappa_A": 2,
+      "predicted_kappa_B": 2,
+      "measured_native_B_rank": 2,
+      "measured_kappa_B_via_nu": 2,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "one_cell_transitive_kappa1",
+      "kappa_A": 1,
+      "predicted_kappa_B": 1,
+      "measured_native_B_rank": 1,
+      "measured_kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    },
+    {
+      "a_instance": "satisfiable_kappa0",
+      "kappa_A": 0,
+      "predicted_kappa_B": 0,
+      "measured_native_B_rank": 0,
+      "measured_kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    }
+  ],
+  "all_predictions_match": true,
+  "rank_load_bearing": true,
+  "rank_separates_1_from_2": true,
+  "no_shared_derivation": true,
+  "kappa_single_formula": true,
+  "second_absorber_cleared": true,
+  "both_T224_conditions_cleared": true,
+  "verdict": "PASS_RANK2",
+  "meaning": "If PASS_RANK2: T224's two stated conditions (>= 2 unrelated absorbers; rank not just presence) are BOTH cleared for the first time. The cross-domain RANK classification 'kappa transported from A predicts the exact integer number of independent native obstructions in an unrelated absorber' is the honest claim, living in no single absorber -- the independent-motivation object the 2026-06-24 audit found NOT EARNED. The integrator ratifies whether T224 moves conditional -> closed. If KILLED: the rank-2 prediction missed and the deflation verdict stands.",
+  "complexity_tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "guardrails": "No physics/geometry/curvature/new-object language promoted. kappa is a Z/2 graph-homology rank over a finite cover; 'two boxes' = two disjoint odd cycles. The CHSH side is a structural contextuality cover (parity equations), not a quantum amplitude simulation. Native rank is counted by T21's own per-box parity witness, never by compute_kappa."
+}

@@ -179,9 +179,36 @@ Demote the idea if the advantage is reproduced by:
 - enriched reachability / opportunity-set / viability models;
 - ordinary provenance or future-operation availability accounting.
 
+## Fixture Result
+
+Implemented:
+
+```text
+models/dual_record_opportunity_fixture.py
+tests/test_dual_record_opportunity_fixture.py
+results/dual-record-opportunity-fixture-v0.1-results.md
+```
+
+Result:
+
+```text
+C beats A and B0 under equal budget, but B1 reproduces C when the critical
+2 -> 7 edge is supplied as a fixed latent edge with a matching access trigger.
+```
+
+Verdict:
+
+```text
+Project[O] + Finalize[R] + Lose[K]
+not Issue[S]
+```
+
+The dual-record architecture remains useful, but the first executable fixture
+is absorbed by exact fixed-latent graph access as source-side evidence.
+
 ## Recommended Next Artifact
 
-Create an executable TaF fixture only after the comparator is frozen:
+The executable TaF fixture now exists:
 
 ```text
 models/dual_record_opportunity_fixture.py
@@ -201,7 +228,7 @@ bounded_growing_adjacency_residue
 ## Verdict
 
 ```yaml
-status: fixture_spec
+status: fixture_executed_absorbed_by_exact_fixed_latent_edge
 best_repo_role: finite record-regime test
 primary_owner: temporal-issuance effect gate
 taF_owner: executable fixture and finality/loss metrics

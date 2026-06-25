@@ -49,8 +49,11 @@ loss machinery without promoting any TaF or GU claim.
 The dual-record opportunity placement note is
 [explorations/dual-record-opportunity-finality-crosswalk-2026-06-25.md](explorations/dual-record-opportunity-finality-crosswalk-2026-06-25.md):
 it treats stable records and opportunity-edge records as a finite fixture
-specification for local-minimum escape, while leaving source-side issuance to
-Temporal Issuance gates.
+specification for local-minimum escape. The first executable fixture is
+[results/dual-record-opportunity-fixture-v0.1-results.md](results/dual-record-opportunity-fixture-v0.1-results.md):
+growing adjacency beats the limited comparator but is absorbed by an exact
+fixed-latent edge panel, so the verdict remains `Project[O] + Finalize[R] +
+Lose[K]`, not `Issue[S]`.
 
 ## Project Definition
 

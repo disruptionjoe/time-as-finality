@@ -1,0 +1,195 @@
+{
+  "absorber_challenges": [
+    {
+      "absorber": "density_matrix_open_system",
+      "evidence": [
+        "G6 all checks passed",
+        "threshold strength=1.2",
+        "offdiag=0.044349"
+      ],
+      "owns": [
+        "offdiagonal decay",
+        "finite controlled-rotation environment model",
+        "mutual information threshold"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Use a Hamiltonian/Lindblad or lab fixture and show a capability split not absorbed by the open-system model.",
+      "s6_residue": "S6 may label the transition effect, but does not own the density-matrix dynamics.",
+      "status": "granted"
+    },
+    {
+      "absorber": "quantum_darwinism_sbs",
+      "evidence": [
+        "G7 all checks passed",
+        "sbs strength=1.2",
+        "objective fragments=4"
+      ],
+      "owns": [
+        "redundant pointer broadcasting",
+        "fragment agreement",
+        "objectivity threshold"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Hold the SBS closure key fixed and show an S6 capability split that the SBS object cannot import.",
+      "s6_residue": "S6 records the typed loss and projection around the SBS threshold, while SBS owns physical objectivity.",
+      "status": "granted"
+    },
+    {
+      "absorber": "finite_sheaf_descent",
+      "evidence": [
+        "G8 all checks passed",
+        "field support={'pointer': 4, 'prep_measure': 4, 'measure_record': 4}",
+        "stable=True"
+      ],
+      "owns": [
+        "finite site",
+        "support threshold",
+        "associated-record construction"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Prove a site-independent or physically forced sheafification condition, or keep the claim finite.",
+      "s6_residue": "The categorical wording is useful, but the current executable object is a finite descent reflector.",
+      "status": "granted"
+    },
+    {
+      "absorber": "resource_contextuality_task_theory",
+      "evidence": [
+        "G9 all checks passed",
+        "same final record=True",
+        "different presheaf capability=True"
+      ],
+      "owns": [
+        "phase-sensitive capability",
+        "contextual residue",
+        "known quantum task separations"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Source phase_sensitive_branch from a task-natural quantum resource while holding neighbor data fixed.",
+      "s6_residue": "G9 gives a finite eta_F loss witness, but not a new resource theory separation.",
+      "status": "granted"
+    },
+    {
+      "absorber": "distributed_provenance_event_dag",
+      "evidence": [
+        "G8 final capabilities include reconstruct_provenance_order",
+        "G9 final records are identical after association"
+      ],
+      "owns": [
+        "committed final records",
+        "who-knew-what-when structure",
+        "classical provenance DAG"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Show a provenance-relevant capability split after fixing the same Event-DAG data.",
+      "s6_residue": "S6 can connect local quantum-side records to the provenance DAG, but ordinary provenance owns the final record format.",
+      "status": "granted"
+    },
+    {
+      "absorber": "fixed_source_issuance_null",
+      "evidence": [
+        "G6-G9 all mark Issue[S]=false",
+        "all effects are projection/finality/loss effects"
+      ],
+      "owns": [
+        "no source-side issuance",
+        "no arrow-of-time promotion",
+        "Project/Finalize/Lose only"
+      ],
+      "promotes_s6_claim": false,
+      "reopen_burden": "Type a source object with H/A held fixed and show new operation availability that cannot be read out as projection.",
+      "s6_residue": "S6 remains a bridge effect, not evidence that finality issues time at the source.",
+      "status": "granted"
+    }
+  ],
+  "all_checks_passed": true,
+  "checks": {
+    "all_absorbers_granted": true,
+    "g7_grants_qd_sbs_absorber": true,
+    "g8_not_general_sheafification": true,
+    "g9_not_quantum_separation": true,
+    "no_s6_claim_promotion": true,
+    "residue_is_bridge_workflow_only": true,
+    "source_witnesses_pass": true
+  },
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The G9 capability difference is declared rather than sourced from a known quantum task while holding SBS/resource/provenance data fixed. That is the reopen burden.",
+  "guardrail": "Absorber audit only: this can demote or sharpen S6, but it cannot promote S6 without a same-neighbor-data physical capability split.",
+  "next_step": "Build a nonideal density-matrix or lab-facing fixture where the same SBS closure data is held fixed while a task-natural capability still separates before eta_F.",
+  "source_summary": {
+    "G6": {
+      "all_checks_passed": true,
+      "effect_verdict": {
+        "Finalize[R]": true,
+        "Issue[S]": false,
+        "Lose[K]": true,
+        "Project[O]": true
+      },
+      "guardrail": "Finite controlled-rotation state-vector fixture only: not a Hamiltonian, not Lindblad dynamics, not an SBS theorem, and not source-side issuance evidence.",
+      "test": "s6-g6-density-matrix-bridge-v0.1"
+    },
+    "G7": {
+      "all_checks_passed": true,
+      "effect_verdict": {
+        "Finalize[R]": true,
+        "Issue[S]": false,
+        "Lose[K]": true,
+        "Project[O]": true
+      },
+      "guardrail": "SBS-style score over a controlled-rotation product fixture only: not a proof of Spectrum Broadcast Structure and not a physical objectivity theorem.",
+      "test": "s6-g7-sbs-approximation-v0.1"
+    },
+    "G8": {
+      "all_checks_passed": true,
+      "effect_verdict": {
+        "Finalize[R]": true,
+        "Issue[S]": false,
+        "Lose[K]": true,
+        "Project[O]": true
+      },
+      "guardrail": "Reusable finite descent engine only: not a general sheafification theorem and not a proof that abstract sheafification creates time.",
+      "test": "s6-g8-finite-sheaf-engine-v0.1"
+    },
+    "G9": {
+      "all_checks_passed": true,
+      "effect_verdict": {
+        "Finalize[R]": true,
+        "Issue[S]": false,
+        "Lose[K]": true,
+        "Project[O]": true
+      },
+      "guardrail": "Finite same-final-record pair only: demonstrates capability loss across declared descent, not a new quantum separation theorem.",
+      "test": "s6-g9-same-final-record-capability-pair-v0.1"
+    }
+  },
+  "stress_verdict": {
+    "best_reading": "S6 currently survives as a typed bridge and audit harness, not as an independent physical mechanism.",
+    "claim_status": "do_not_promote",
+    "same_neighbor_data_escape_found": false
+  },
+  "strongest_result": "After granting density-matrix decoherence, Quantum Darwinism/SBS, finite descent, resource/contextuality, provenance, and fixed-source absorbers, S6 still usefully organizes the bridge as eta_F: local data -> associated final record -> loss profile. No stronger claim survives the hostile pass.",
+  "surviving_residue": {
+    "absorbers_granted": [
+      "density_matrix_open_system",
+      "quantum_darwinism_sbs",
+      "finite_sheaf_descent",
+      "resource_contextuality_task_theory",
+      "distributed_provenance_event_dag",
+      "fixed_source_issuance_null"
+    ],
+    "classification": "typed_bridge_workflow_only",
+    "does_not_survive_as": "A new quantum dynamics, a proof of general sheafification, an SBS alternative, or source-side time issuance.",
+    "minimum_reopen_packet": "same-SBS-data, same-resource-data, same-Event-DAG-data pair with a task-natural capability split before eta_F and no absorber-owned field changes.",
+    "survives_as": "A disciplined eta_F workflow: local context data, associated final record, capability loss, provenance output, and explicit reopen burden."
+  },
+  "tag": [
+    "absorber_stress",
+    "hostile_review",
+    "no_claim_promotion"
+  ],
+  "test": "s6-g10-hostile-absorber-stress-v0.1"
+}

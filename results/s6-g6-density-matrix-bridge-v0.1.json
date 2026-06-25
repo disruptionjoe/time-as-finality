@@ -1,0 +1,1529 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "decoherence_monotone": true,
+    "descent_record_stabilized": true,
+    "eta_loss_detected": true,
+    "redundancy_threshold_detected": true,
+    "state_density_computed": true
+  },
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The fixture uses controlled rotations with fixed strengths. It is density-matrix evidence for executability, not physical evidence for a generic quantum-to-classical bridge.",
+  "guardrail": "Finite controlled-rotation state-vector fixture only: not a Hamiltonian, not Lindblad dynamics, not an SBS theorem, and not source-side issuance evidence.",
+  "next_step": "Add SBS-style conditional distinguishability and independence scores over the same density-matrix fragments.",
+  "parameters": {
+    "couplings": [
+      1.0,
+      0.85,
+      0.7,
+      0.55,
+      0.4
+    ],
+    "descent_support": 4,
+    "expected_edges": [
+      [
+        "prep",
+        "measure"
+      ],
+      [
+        "measure",
+        "record"
+      ]
+    ],
+    "fragments": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "mutual_information_threshold": 0.2,
+    "strengths": [
+      0.0,
+      0.4,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6
+    ]
+  },
+  "strongest_result": "An explicit finite system-environment state reaches the S6 descent threshold at strength=1.2: four fragments carry >=0.2 bits of pointer information, the system off-diagonal magnitude falls below 0.05, and the pointer/provenance record stabilizes while phase capability is lost.",
+  "sweep": [
+    {
+      "descent_stable": false,
+      "eta_loss": [],
+      "fragments": [
+        {
+          "correct_probability": 0.0,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.0,
+          "name": "E0",
+          "redundant": false,
+          "theta": 0.0
+        },
+        {
+          "correct_probability": 0.0,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.0,
+          "name": "E1",
+          "redundant": false,
+          "theta": 0.0
+        },
+        {
+          "correct_probability": 0.0,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.0,
+          "name": "E2",
+          "redundant": false,
+          "theta": 0.0
+        },
+        {
+          "correct_probability": 0.0,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.0,
+          "name": "E3",
+          "redundant": false,
+          "theta": 0.0
+        },
+        {
+          "correct_probability": 0.0,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.0,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.0
+        }
+      ],
+      "gluing_error": 1.0,
+      "offdiag_magnitude": 0.5,
+      "redundant_count": 0,
+      "strength": 0.0,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": false,
+      "eta_loss": [],
+      "fragments": [
+        {
+          "correct_probability": 0.151647,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.924177,
+                0.0
+              ],
+              [
+                0.179339,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.179339,
+                0.0
+              ],
+              [
+                0.075823,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.080316,
+          "name": "E0",
+          "redundant": false,
+          "theta": 0.4
+        },
+        {
+          "correct_probability": 0.111214,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.944393,
+                0.0
+              ],
+              [
+                0.157198,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.157198,
+                0.0
+              ],
+              [
+                0.055607,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.05797,
+          "name": "E1",
+          "redundant": false,
+          "theta": 0.34
+        },
+        {
+          "correct_probability": 0.076372,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.961814,
+                0.0
+              ],
+              [
+                0.132797,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.132797,
+                0.0
+              ],
+              [
+                0.038186,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.03928,
+          "name": "E2",
+          "redundant": false,
+          "theta": 0.28
+        },
+        {
+          "correct_probability": 0.047624,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.976188,
+                0.0
+              ],
+              [
+                0.106485,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.106485,
+                0.0
+              ],
+              [
+                0.023812,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.024231,
+          "name": "E3",
+          "redundant": false,
+          "theta": 0.22
+        },
+        {
+          "correct_probability": 0.025382,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.987309,
+                0.0
+              ],
+              [
+                0.078642,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.078642,
+                0.0
+              ],
+              [
+                0.012691,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.012809,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.16
+        }
+      ],
+      "gluing_error": 1.0,
+      "offdiag_magnitude": 0.402001,
+      "redundant_count": 0,
+      "strength": 0.4,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.402001,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.402001,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": false,
+      "eta_loss": [],
+      "fragments": [
+        {
+          "correct_probability": 0.5146,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.7427,
+                0.0
+              ],
+              [
+                0.249893,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.249893,
+                0.0
+              ],
+              [
+                0.2573,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.322952,
+          "name": "E0",
+          "redundant": true,
+          "theta": 0.8
+        },
+        {
+          "correct_probability": 0.395381,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.80231,
+                0.0
+              ],
+              [
+                0.244466,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.244466,
+                0.0
+              ],
+              [
+                0.19769,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.233193,
+          "name": "E1",
+          "redundant": true,
+          "theta": 0.68
+        },
+        {
+          "correct_probability": 0.282159,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.858921,
+                0.0
+              ],
+              [
+                0.225025,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.225025,
+                0.0
+              ],
+              [
+                0.141079,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.157871,
+          "name": "E2",
+          "redundant": false,
+          "theta": 0.56
+        },
+        {
+          "correct_probability": 0.181424,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.909288,
+                0.0
+              ],
+              [
+                0.192685,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.192685,
+                0.0
+              ],
+              [
+                0.090712,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.097251,
+          "name": "E3",
+          "redundant": false,
+          "theta": 0.44
+        },
+        {
+          "correct_probability": 0.098952,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.950524,
+                0.0
+              ],
+              [
+                0.149299,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.149299,
+                0.0
+              ],
+              [
+                0.049476,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.051335,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.32
+        }
+      ],
+      "gluing_error": 0.6,
+      "offdiag_magnitude": 0.197096,
+      "redundant_count": 2,
+      "strength": 0.8,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.197096,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.197096,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": false,
+      "eta_loss": [],
+      "fragments": [
+        {
+          "correct_probability": 0.708073,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.645963,
+                0.0
+              ],
+              [
+                0.227324,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.227324,
+                0.0
+              ],
+              [
+                0.354037,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.502023,
+          "name": "E0",
+          "redundant": true,
+          "theta": 1.0
+        },
+        {
+          "correct_probability": 0.564422,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.717789,
+                0.0
+              ],
+              [
+                0.247916,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.247916,
+                0.0
+              ],
+              [
+                0.282211,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.36445,
+          "name": "E1",
+          "redundant": true,
+          "theta": 0.85
+        },
+        {
+          "correct_probability": 0.415016,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.792492,
+                0.0
+              ],
+              [
+                0.246362,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.246362,
+                0.0
+              ],
+              [
+                0.207508,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.247163,
+          "name": "E2",
+          "redundant": true,
+          "theta": 0.7
+        },
+        {
+          "correct_probability": 0.273202,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.863399,
+                0.0
+              ],
+              [
+                0.222802,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.222802,
+                0.0
+              ],
+              [
+                0.136601,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.152256,
+          "name": "E3",
+          "redundant": false,
+          "theta": 0.55
+        },
+        {
+          "correct_probability": 0.151647,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.924177,
+                0.0
+              ],
+              [
+                0.179339,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.179339,
+                0.0
+              ],
+              [
+                0.075823,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.080316,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.4
+        }
+      ],
+      "gluing_error": 0.4,
+      "offdiag_magnitude": 0.10708,
+      "redundant_count": 3,
+      "strength": 1.0,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.10708,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.10708,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": true,
+      "eta_loss": [
+        "phase_sensitive_branch"
+      ],
+      "fragments": [
+        {
+          "correct_probability": 0.868697,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.565652,
+                0.0
+              ],
+              [
+                0.168866,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.168866,
+                0.0
+              ],
+              [
+                0.434348,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.707027,
+          "name": "E0",
+          "redundant": true,
+          "theta": 1.2
+        },
+        {
+          "correct_probability": 0.726088,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.636956,
+                0.0
+              ],
+              [
+                0.222982,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.222982,
+                0.0
+              ],
+              [
+                0.363044,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.52167,
+          "name": "E1",
+          "redundant": true,
+          "theta": 1.02
+        },
+        {
+          "correct_probability": 0.554493,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.722753,
+                0.0
+              ],
+              [
+                0.248511,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.248511,
+                0.0
+              ],
+              [
+                0.277247,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.355965,
+          "name": "E2",
+          "redundant": true,
+          "theta": 0.84
+        },
+        {
+          "correct_probability": 0.375912,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.812044,
+                0.0
+              ],
+              [
+                0.242179,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.242179,
+                0.0
+              ],
+              [
+                0.187956,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.219624,
+          "name": "E3",
+          "redundant": true,
+          "theta": 0.66
+        },
+        {
+          "correct_probability": 0.21324,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.89338,
+                0.0
+              ],
+              [
+                0.204798,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.204798,
+                0.0
+              ],
+              [
+                0.10662,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.115821,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.48
+        }
+      ],
+      "gluing_error": 0.2,
+      "offdiag_magnitude": 0.044349,
+      "redundant_count": 4,
+      "strength": 1.2,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.044349,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.044349,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": true,
+      "eta_loss": [
+        "phase_sensitive_branch"
+      ],
+      "fragments": [
+        {
+          "correct_probability": 0.971111,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.514444,
+                0.0
+              ],
+              [
+                0.083747,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.083747,
+                0.0
+              ],
+              [
+                0.485556,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.905004,
+          "name": "E0",
+          "redundant": true,
+          "theta": 1.4
+        },
+        {
+          "correct_probability": 0.861869,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.569066,
+                0.0
+              ],
+              [
+                0.172519,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.172519,
+                0.0
+              ],
+              [
+                0.430934,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.696531,
+          "name": "E1",
+          "redundant": true,
+          "theta": 1.19
+        },
+        {
+          "correct_probability": 0.689726,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.655137,
+                0.0
+              ],
+              [
+                0.231303,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.231303,
+                0.0
+              ],
+              [
+                0.344863,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.482652,
+          "name": "E2",
+          "redundant": true,
+          "theta": 0.98
+        },
+        {
+          "correct_probability": 0.484604,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.757698,
+                0.0
+              ],
+              [
+                0.249881,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.249881,
+                0.0
+              ],
+              [
+                0.242302,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.29919,
+          "name": "E3",
+          "redundant": true,
+          "theta": 0.77
+        },
+        {
+          "correct_probability": 0.282159,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.858921,
+                0.0
+              ],
+              [
+                0.225025,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.225025,
+                0.0
+              ],
+              [
+                0.141079,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.157871,
+          "name": "E4",
+          "redundant": false,
+          "theta": 0.56
+        }
+      ],
+      "gluing_error": 0.2,
+      "offdiag_magnitude": 0.010701,
+      "redundant_count": 4,
+      "strength": 1.4,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.010701,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.010701,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    },
+    {
+      "descent_stable": true,
+      "eta_loss": [
+        "phase_sensitive_branch"
+      ],
+      "fragments": [
+        {
+          "correct_probability": 1.0,
+          "coupling": 1.0,
+          "density": [
+            [
+              [
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.5,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 1.0,
+          "name": "E0",
+          "redundant": true,
+          "theta": 1.570796
+        },
+        {
+          "correct_probability": 0.956219,
+          "coupling": 0.85,
+          "density": [
+            [
+              [
+                0.52189,
+                0.0
+              ],
+              [
+                0.102304,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.102304,
+                0.0
+              ],
+              [
+                0.47811,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.868934,
+          "name": "E1",
+          "redundant": true,
+          "theta": 1.36
+        },
+        {
+          "correct_probability": 0.810181,
+          "coupling": 0.7,
+          "density": [
+            [
+              [
+                0.59491,
+                0.0
+              ],
+              [
+                0.196079,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.196079,
+                0.0
+              ],
+              [
+                0.40509,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.623304,
+          "name": "E2",
+          "redundant": true,
+          "theta": 1.12
+        },
+        {
+          "correct_probability": 0.594038,
+          "coupling": 0.55,
+          "density": [
+            [
+              [
+                0.702981,
+                0.0
+              ],
+              [
+                0.245539,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.245539,
+                0.0
+              ],
+              [
+                0.297019,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.390451,
+          "name": "E3",
+          "redundant": true,
+          "theta": 0.88
+        },
+        {
+          "correct_probability": 0.356642,
+          "coupling": 0.4,
+          "density": [
+            [
+              [
+                0.821679,
+                0.0
+              ],
+              [
+                0.239504,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.239504,
+                0.0
+              ],
+              [
+                0.178321,
+                0.0
+              ]
+            ]
+          ],
+          "mutual_information": 0.20646,
+          "name": "E4",
+          "redundant": true,
+          "theta": 0.64
+        }
+      ],
+      "gluing_error": 0.0,
+      "offdiag_magnitude": 0.0,
+      "redundant_count": 5,
+      "strength": 1.6,
+      "system_density": [
+        [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            0.0
+          ]
+        ]
+      ]
+    }
+  ],
+  "tag": [
+    "finite_witness",
+    "density_matrix_toy",
+    "no_claim_promotion"
+  ],
+  "test": "s6-g6-density-matrix-bridge-v0.1",
+  "threshold": {
+    "descent_stable": true,
+    "eta_loss": [
+      "phase_sensitive_branch"
+    ],
+    "fragments": [
+      {
+        "correct_probability": 0.868697,
+        "coupling": 1.0,
+        "density": [
+          [
+            [
+              0.565652,
+              0.0
+            ],
+            [
+              0.168866,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.168866,
+              0.0
+            ],
+            [
+              0.434348,
+              0.0
+            ]
+          ]
+        ],
+        "mutual_information": 0.707027,
+        "name": "E0",
+        "redundant": true,
+        "theta": 1.2
+      },
+      {
+        "correct_probability": 0.726088,
+        "coupling": 0.85,
+        "density": [
+          [
+            [
+              0.636956,
+              0.0
+            ],
+            [
+              0.222982,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.222982,
+              0.0
+            ],
+            [
+              0.363044,
+              0.0
+            ]
+          ]
+        ],
+        "mutual_information": 0.52167,
+        "name": "E1",
+        "redundant": true,
+        "theta": 1.02
+      },
+      {
+        "correct_probability": 0.554493,
+        "coupling": 0.7,
+        "density": [
+          [
+            [
+              0.722753,
+              0.0
+            ],
+            [
+              0.248511,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.248511,
+              0.0
+            ],
+            [
+              0.277247,
+              0.0
+            ]
+          ]
+        ],
+        "mutual_information": 0.355965,
+        "name": "E2",
+        "redundant": true,
+        "theta": 0.84
+      },
+      {
+        "correct_probability": 0.375912,
+        "coupling": 0.55,
+        "density": [
+          [
+            [
+              0.812044,
+              0.0
+            ],
+            [
+              0.242179,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.242179,
+              0.0
+            ],
+            [
+              0.187956,
+              0.0
+            ]
+          ]
+        ],
+        "mutual_information": 0.219624,
+        "name": "E3",
+        "redundant": true,
+        "theta": 0.66
+      },
+      {
+        "correct_probability": 0.21324,
+        "coupling": 0.4,
+        "density": [
+          [
+            [
+              0.89338,
+              0.0
+            ],
+            [
+              0.204798,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.204798,
+              0.0
+            ],
+            [
+              0.10662,
+              0.0
+            ]
+          ]
+        ],
+        "mutual_information": 0.115821,
+        "name": "E4",
+        "redundant": false,
+        "theta": 0.48
+      }
+    ],
+    "gluing_error": 0.2,
+    "offdiag_magnitude": 0.044349,
+    "redundant_count": 4,
+    "strength": 1.2,
+    "system_density": [
+      [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.044349,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.044349,
+          0.0
+        ],
+        [
+          0.5,
+          0.0
+        ]
+      ]
+    ]
+  }
+}

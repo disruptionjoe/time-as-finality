@@ -1,0 +1,360 @@
+{
+  "all_goals_passed": true,
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The result is fixture-local. It uses a declared finite reflector and deterministic redundancy profile, so it does not prove a physical Quantum Darwinism threshold or a general sheafification theorem.",
+  "goal_results": {
+    "G1_typed_finite_site_specified": true,
+    "G2_minimal_gluing_simulation_ran": true,
+    "G3_darwinian_cover_transition_detected": true,
+    "G4_capability_non_factorization_across_eta": true,
+    "G5_temporal_provenance_reconstruction_gain": true
+  },
+  "guardrail": "Finite effective-descent toy model only: not a quantum dynamics simulation, not a general sheafification theorem, and not source-side issuance evidence.",
+  "next_step": "Replace the deterministic fragment profile with an open-system / SBS fixture and keep the same outputs: redundancy, gluing error, eta_F loss, and provenance reconstruction.",
+  "site": {
+    "capability_family": [
+      "read_pointer",
+      "phase_sensitive_branch",
+      "reconstruct_provenance_order"
+    ],
+    "contexts": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "cover": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "edge_descent_support": 3,
+    "effective_descent_support": 4,
+    "expected_edges": [
+      [
+        "prep",
+        "measure"
+      ],
+      [
+        "measure",
+        "record"
+      ]
+    ],
+    "expected_events": [
+      "prep",
+      "measure",
+      "record"
+    ],
+    "name": "S6_fixed_environment_fragment_site",
+    "overlap_count": 15,
+    "target_category": "finite_record_sets_with_phase_tags"
+  },
+  "strongest_result": "In this fixed finite cover, effective descent appears first at monitoring_strength=3, where redundancy reaches 4/6, gluing error falls to 2/6, the final pointer/provenance record stabilizes, phase capability is lost across eta_F, and provenance reconstruction improves.",
+  "sweep": [
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer"
+      ],
+      "cap_sheaf": [],
+      "counts": {
+        "false": 3,
+        "true": 1,
+        "unknown": 2
+      },
+      "gluing_error": 0.833333,
+      "loss_kernel": [
+        "phase_sensitive_branch",
+        "read_pointer"
+      ],
+      "monitoring_strength": 0,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 0.25,
+      "overlap_conflict_rate": 0.5,
+      "presheaf_temporal_score": 0.0,
+      "redundancy": 0.166667,
+      "reversal_cost_proxy": 9,
+      "sheaf_temporal_score": 0.0,
+      "sheafified": {
+        "conflict_count": 1,
+        "dropped_phase_tags": [
+          "phase_false",
+          "phase_plus",
+          "phase_unread"
+        ],
+        "edges": [],
+        "identified_local_signatures": 1,
+        "pointer": null,
+        "stable_global_section": false,
+        "support_count": 3,
+        "unknown_count": 2
+      },
+      "temporal_reconstruction_gain": 0.0
+    },
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "cap_sheaf": [],
+      "counts": {
+        "false": 2,
+        "true": 2,
+        "unknown": 2
+      },
+      "gluing_error": 0.666667,
+      "loss_kernel": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "monitoring_strength": 1,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 0.5,
+      "overlap_conflict_rate": 0.666667,
+      "presheaf_temporal_score": 0.166667,
+      "redundancy": 0.333333,
+      "reversal_cost_proxy": 4,
+      "sheaf_temporal_score": 0.0,
+      "sheafified": {
+        "conflict_count": 2,
+        "dropped_phase_tags": [
+          "phase_false",
+          "phase_minus",
+          "phase_plus",
+          "phase_unread"
+        ],
+        "edges": [],
+        "identified_local_signatures": 2,
+        "pointer": null,
+        "stable_global_section": false,
+        "support_count": 2,
+        "unknown_count": 2
+      },
+      "temporal_reconstruction_gain": -0.166667
+    },
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "cap_sheaf": [],
+      "counts": {
+        "false": 2,
+        "true": 3,
+        "unknown": 1
+      },
+      "gluing_error": 0.5,
+      "loss_kernel": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "monitoring_strength": 2,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 0.6,
+      "overlap_conflict_rate": 0.6,
+      "presheaf_temporal_score": 0.25,
+      "redundancy": 0.5,
+      "reversal_cost_proxy": 9,
+      "sheaf_temporal_score": 0.0,
+      "sheafified": {
+        "conflict_count": 2,
+        "dropped_phase_tags": [
+          "phase_false",
+          "phase_minus",
+          "phase_plus",
+          "phase_unread"
+        ],
+        "edges": [],
+        "identified_local_signatures": 2,
+        "pointer": null,
+        "stable_global_section": false,
+        "support_count": 3,
+        "unknown_count": 1
+      },
+      "temporal_reconstruction_gain": -0.25
+    },
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "cap_sheaf": [
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "counts": {
+        "false": 1,
+        "true": 4,
+        "unknown": 1
+      },
+      "gluing_error": 0.333333,
+      "loss_kernel": [
+        "phase_sensitive_branch"
+      ],
+      "monitoring_strength": 3,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 0.8,
+      "overlap_conflict_rate": 0.4,
+      "presheaf_temporal_score": 0.666667,
+      "redundancy": 0.666667,
+      "reversal_cost_proxy": 16,
+      "sheaf_temporal_score": 1.0,
+      "sheafified": {
+        "conflict_count": 1,
+        "dropped_phase_tags": [
+          "phase_false",
+          "phase_minus",
+          "phase_plus",
+          "phase_unread"
+        ],
+        "edges": [
+          [
+            "prep",
+            "measure"
+          ],
+          [
+            "measure",
+            "record"
+          ]
+        ],
+        "identified_local_signatures": 2,
+        "pointer": 1,
+        "stable_global_section": true,
+        "support_count": 4,
+        "unknown_count": 1
+      },
+      "temporal_reconstruction_gain": 0.333333
+    },
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "cap_sheaf": [
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "counts": {
+        "false": 1,
+        "true": 5,
+        "unknown": 0
+      },
+      "gluing_error": 0.166667,
+      "loss_kernel": [
+        "phase_sensitive_branch"
+      ],
+      "monitoring_strength": 4,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 0.833333,
+      "overlap_conflict_rate": 0.333333,
+      "presheaf_temporal_score": 0.833333,
+      "redundancy": 0.833333,
+      "reversal_cost_proxy": 25,
+      "sheaf_temporal_score": 1.0,
+      "sheafified": {
+        "conflict_count": 1,
+        "dropped_phase_tags": [
+          "phase_false",
+          "phase_minus",
+          "phase_plus"
+        ],
+        "edges": [
+          [
+            "prep",
+            "measure"
+          ],
+          [
+            "measure",
+            "record"
+          ]
+        ],
+        "identified_local_signatures": 2,
+        "pointer": 1,
+        "stable_global_section": true,
+        "support_count": 5,
+        "unknown_count": 0
+      },
+      "temporal_reconstruction_gain": 0.166667
+    },
+    {
+      "cap_presheaf": [
+        "phase_sensitive_branch",
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "cap_sheaf": [
+        "read_pointer",
+        "reconstruct_provenance_order"
+      ],
+      "counts": {
+        "false": 0,
+        "true": 6,
+        "unknown": 0
+      },
+      "gluing_error": 0.0,
+      "loss_kernel": [
+        "phase_sensitive_branch"
+      ],
+      "monitoring_strength": 5,
+      "non_factorization_across_eta": true,
+      "observer_agreement": 1.0,
+      "overlap_conflict_rate": 0.0,
+      "presheaf_temporal_score": 1.0,
+      "redundancy": 1.0,
+      "reversal_cost_proxy": 36,
+      "sheaf_temporal_score": 1.0,
+      "sheafified": {
+        "conflict_count": 0,
+        "dropped_phase_tags": [
+          "phase_minus",
+          "phase_plus"
+        ],
+        "edges": [
+          [
+            "prep",
+            "measure"
+          ],
+          [
+            "measure",
+            "record"
+          ]
+        ],
+        "identified_local_signatures": 2,
+        "pointer": 1,
+        "stable_global_section": true,
+        "support_count": 6,
+        "unknown_count": 0
+      },
+      "temporal_reconstruction_gain": 0.0
+    }
+  ],
+  "tag": [
+    "finite_witness",
+    "poly_decider",
+    "toy_model"
+  ],
+  "test": "associated-sheaf-finality-witness-v0.1",
+  "threshold": {
+    "first_effective_descent_level": 3,
+    "gluing_error": 0.333333,
+    "observer_agreement": 0.8,
+    "redundancy": 0.666667,
+    "reversal_cost_proxy": 16
+  }
+}

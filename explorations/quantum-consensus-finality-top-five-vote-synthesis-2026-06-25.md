@@ -6,7 +6,7 @@ write_pattern: append_only
 authority: exploratory
 summarizable: true
 created: 2026-06-25
-source: explorations/quantum-consensus-finality-all-persona-steelman-2026-06-25.md; agent-skills/time-as-finality-persona-panel/SKILL.md; personas/EXPERT-PANEL.md; ../temporal-issuance/explorations/E020-expanded-steelman-hegelian-75-persona.md; ../temporal-issuance/explorations/E065-cross-repo-os-agent-orchestration-persona-report-2026-06-24.md
+source: explorations/quantum-consensus-finality-all-persona-steelman-2026-06-25.md; explorations/sheafification-finality-bridge-addendum-2026-06-25.md; explorations/sheafification-as-finality-bridge-v0.1.md; explorations/legitimacy-monad-finality-bridge-addendum-2026-06-25.md; ../architecture-of-legitimacy/explorations/legitimacy-monad-s7-crosswalk-2026-06-25.md; agent-skills/time-as-finality-persona-panel/SKILL.md; personas/EXPERT-PANEL.md; ../temporal-issuance/explorations/E020-expanded-steelman-hegelian-75-persona.md; ../temporal-issuance/explorations/E065-cross-repo-os-agent-orchestration-persona-report-2026-06-24.md
 status: exploratory
 ---
 
@@ -207,6 +207,244 @@ verdict: `Project[O] + Finalize[R] + Lose[K]`, not `Issue[S]`.
 
 Demotion condition: if no growing observable algebra, admissibility predicate,
 or construction-space witness appears, do not promote source-side claims.
+
+## Post-Vote Addendum: S6 - Sheafification As Finality Bridge
+
+Status: proposed addition to the top-five synthesis, ready for persona re-vote.
+
+This addendum incorporates the 2026-06-25 sheafification bridge proposal after
+the original 103-persona vote. It does not rewrite the historical vote table.
+The S1-S6 re-vote is recorded separately in
+`explorations/quantum-consensus-finality-s6-revote-synthesis-2026-06-25.md`.
+
+Steelman statement:
+
+```text
+The precise mathematical structure realizing the layered finality transition is
+sheafification / effective descent over a site of local observer/context
+fragments.
+```
+
+Layer mapping:
+
+```text
+Quantum metastable / avalanche layer:
+  presheaf-like local data, including weak measurements, partial coherence,
+  local probabilities, contextual residues, holonomy, indefinite causal
+  structure, and non-factorizing capabilities.
+
+Classical committed layer:
+  sheaf-like globally glueable records whose sections can be accessed by
+  independent environment fragments as stable, provenance-rich,
+  Boolean-consistent Event-DAG-style facts.
+
+Connecting bridge:
+  the associated-sheaf reflector / sheafification unit, paired with the
+  physical Darwinian redundancy process that supplies enough local overlap data
+  for effective descent and observer objectivity.
+```
+
+Typed shape:
+
+```text
+(C, J)      site of local contexts, observer fragments, or causal neighborhoods
+F           presheaf of local quantum / record data
+aF          associated sheaf or effective descent completion
+eta_F       unit map F -> i aF
+Gamma(aF)   final record candidates / global sections
+Cap         observer capability functor or task family
+Loss_K      capability-relevant distinctions not preserved across eta_F
+PO_rec      temporal/provenance partial order, if the site carries ancestry
+```
+
+Strictly typed version of the threshold:
+
+```text
+The Darwinian redundancy threshold is not the first moment F becomes
+sheafifiable. In standard settings, the associated sheaf already exists.
+
+The threshold is the point where local data has enough redundancy,
+distinguishability, and overlap consistency for eta_F to support stable global
+records for a declared observer capability.
+```
+
+Why it is strong:
+
+- It gives S5 a categorical mechanism instead of leaving it as only an effect
+  contract.
+- It reframes S2 as obstruction to gluing rather than vague lost information.
+- It gives S4 a local-to-global transition point: presheaf metastability to
+  sheaf-like commitment.
+- It gives S1 a sharper map: test whether `Cap(F)` factors through `Cap(aF)`.
+- It makes S3 the expected output when the site contains causal/provenance
+  morphisms.
+
+Guardrails:
+
+- For set-valued presheaves, loss should not be called a kernel or cokernel
+  unless the target category supports those objects. The default loss object is
+  the unit non-isomorphism / non-preservation profile of `eta_F`.
+- Temporal order is not automatic from abstract sheafification. It becomes a
+  theorem target only after the site includes causal/provenance structure or the
+  construction proves a canonical ancestry relation.
+- This is not new physics. Quantum Darwinism / Spectrum Broadcast Structure
+  remains the physical objectivity absorber unless a witness survives the
+  existing QD/SBS and fixed-H gates.
+
+### Hegelian Analysis
+
+Thesis, S4-dominant quantum layer:
+
+```text
+Finality begins as metastable probabilistic process: continuous environmental
+sampling, graded confidence, reversible-in-principle coherent structure,
+contextuality, holonomy, and no globally agreed temporal order.
+```
+
+Antithesis, S3-dominant classical layer:
+
+```text
+Finality appears as committed stable records: objective, provenance-rich,
+Boolean-like Event-DAGs agreed upon by many observers. But this seems to demand
+consistency, causality, and objectivity that the quantum-side local data does
+not yet possess globally.
+```
+
+Synthesis, S6 bridge:
+
+```text
+Sheafification / effective descent resolves the contradiction by forcing local
+data through gluing conditions. The quantum layer is preserved as local data,
+canceled where its contextual residues cannot be globally glued, and elevated
+into stable objective records.
+```
+
+The redundancy threshold is the dialectical turning point. Capability loss and
+irreversibility are the price of consistency. A usable past appears when the
+glued record object carries a stable ancestry relation. In this reading,
+time-as-finality is not assumed at the bridge; it is the record-facing output of
+local-to-global consistency under declared observer access.
+
+### Synthesis Recommendation With S6
+
+Add S6 as a top-tier argument alongside the original five for the next
+persona-panel pass.
+
+Projected priority under a 103-persona-style re-vote:
+
+```text
+S5 remains the primary guardrail.
+S1 remains the first executable physics witness.
+S6 becomes the central unifying mathematical mechanism and second executable.
+S4 gains dynamical grounding as presheaf metastability to sheaf commitment.
+S2 becomes protected gluing-obstruction residue.
+S3 becomes the natural provenance output of a causal/provenance site.
+```
+
+Recommended next artifact update:
+
+```text
+Quantum Finalization Capability Witness v0.1
+  plus
+Associated-Sheaf Finality Witness v0.1
+```
+
+Run the finite presheaf/sheaf simulation in parallel with the S1 capability
+test. If it shows a redundancy threshold where gluing error drops, stable
+global sections appear, temporal/provenance reconstruction improves, and
+capability loss is measurable across `eta_F`, then promote S6 from proposed
+steelman to core claim candidate.
+
+## Post-Vote Addendum: S7 - Legitimacy Monad For Observer Mathematics
+
+Status: proposed refinement of S6, ready for a later S1-S7 persona pass.
+
+The S7 addendum is recorded in
+`explorations/legitimacy-monad-finality-bridge-addendum-2026-06-25.md`.
+
+Steelman statement:
+
+```text
+Legitimacy is the idempotent observer-record operation that turns local,
+obstructed, signed, or contextual data into stable records an observer can
+build mathematics on.
+```
+
+Typed shape:
+
+```text
+(C, J)   site of local observer contexts
+P        presheaf of local data
+L        idempotent legitimacy monad / reflector
+eta_P    unit map P -> L(P)
+Fix(L)   legitimate record objects, where eta is an isomorphism
+Cap      declared observer capability family
+Loss_K   non-preserved local distinctions across eta_P
+```
+
+In the current concrete model:
+
+```text
+L(P) = i aP
+```
+
+where `a` is associated-sheaf / effective-descent completion. S7 therefore
+does not replace S6; it names the role S6 plays in the observer-mathematics
+stack.
+
+Strict cross-repo guardrail:
+
+```text
+legitimate-for-observer-use does not imply source-issued.
+```
+
+Temporal Issuance still controls the source-side effect:
+
+```text
+Project[O] + Finalize[R] + Lose[K] does not imply Issue[S].
+```
+
+What S7 adds over S6:
+
+- It explains why the bridge matters: not just gluing, but permission for
+  further observer mathematics.
+- It treats sheafification as one realization of a broader idempotent
+  legitimacy operator.
+- It makes the finite S6 witness report a sharper quantity: the legitimacy
+  threshold at which `L(P)` becomes stable enough for declared capabilities.
+- It blocks a social-authority reading of "legitimacy" by making the term
+  strictly categorical and capability-relative.
+
+Existing witness reinterpretation:
+
+```text
+Associated-Sheaf Finality Witness v0.1
+  = first finite Legitimacy Monad Witness v0.1
+```
+
+At monitoring strength `3`, the witness supplies the first legitimate stable
+section in the fixture: pointer/provenance records stabilize, phase-sensitive
+capability is lost across `eta_P`, and provenance reconstruction improves. The
+effect verdict remains `Project[O] + Finalize[R] + Lose[K]`, not `Issue[S]`.
+
+Institutional-layer crosswalk:
+
+```text
+../architecture-of-legitimacy/explorations/legitimacy-monad-s7-crosswalk-2026-06-25.md
+```
+
+That repo supplies the practical contribution-workflow layer for S7:
+eligibility, validation, contestability, contribution logs, rights, governance
+transitions, and non-capture monitoring. It is the real collaborative-system
+test surface for whether legitimate records can support buildable institutions.
+
+Demotion condition:
+
+```text
+If legitimacy adds no idempotent structure, no capability factorization test,
+or no better failure surface than S6 already provides, keep S7 as a name for
+the S6 role rather than a separate steelman.
+```
 
 ## Aggregate Vote Results
 

@@ -1256,3 +1256,29 @@ finite invariance gate, not a connection. T112 strengthens the GU holonomy
 dictionary only conditionally under its load-bearing H3 and spin-lift
 convention. T113 supports a typed TaF-native gap classifier, not raw `H0(G)`
 and not a physical torsion tensor.
+
+## Phase 23: Breakout Direction — Typed-Loss Transport Test (2026-06-24)
+
+A heterodox-vs-orthodox 62-persona pass
+([explorations/heterodox-orthodox-62-persona-breakout-pass-2026-06-24.md](explorations/heterodox-orthodox-62-persona-breakout-pass-2026-06-24.md))
+diagnosed the repo's local minimum: every cycle asks whether a candidate *object*
+is new, and every object is absorbed by a mature neighbor (most recently T220
+collapsing LossKernel/TF1), leaving the program more rigorous and less
+independently motivated each pass. Both camps converged, from opposite premises,
+on the same escape: change the unit of analysis from the object (always absorbed)
+to the **map between absorbers**, which the per-domain absorber discipline is
+structurally blind to.
+
+The breakout target is the **Typed-Loss Transport Test**
+([open-problems/typed-loss-transport-test.md](open-problems/typed-loss-transport-test.md)):
+define one domain-neutral unrecoverability functional `kappa` (the canonical
+quantity from T220's `psi . nu` factoring), compute it on CSP-PO1 signed-graph
+frustration (T39), transport it via a structure-preserving map to an unrelated repo
+instance (T21 Bell/CHSH H1 or T28 CAP/consensus), and predict that instance's
+obstruction before measuring it natively. Pass = a cross-domain classification
+theorem living in no single absorber (the independent motivation the 2026-06-24
+paper audit found NOT EARNED); fail = the recurrence was a projected template and
+the bet is cleanly killed. Either outcome is non-vacuous. The dual orthodox face is
+a predictive absorption functor `(residue + AC-conditions) -> (host + collapse-witness)`.
+No physics, geometry, or new-object language is earned until the transport
+prediction passes on at least two unrelated absorbers.

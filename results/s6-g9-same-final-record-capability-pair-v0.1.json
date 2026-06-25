@@ -1,0 +1,227 @@
+{
+  "all_checks_passed": true,
+  "capability_equation": {
+    "phase_minus_plain": [
+      "phase_sensitive_branch"
+    ],
+    "plain_minus_phase": [],
+    "same_final_record": true
+  },
+  "checks": {
+    "different_presheaf_capability": true,
+    "non_factorization_witness": true,
+    "phase_capability_lost": true,
+    "plain_case_has_no_phase_loss": true,
+    "same_associated_record": true
+  },
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The capability difference is intentionally finite and declared. A stronger witness should source the capability difference from a known quantum task or resource monotone.",
+  "guardrail": "Finite same-final-record pair only: demonstrates capability loss across declared descent, not a new quantum separation theorem.",
+  "next_step": "Feed this pair into the G10 hostile absorber gauntlet and classify which neighbor owns the capability difference.",
+  "phase_case": {
+    "capabilities": [
+      "phase_sensitive_branch",
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "name": "F_phase_sensitive",
+    "records": [
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order",
+          "phase_sensitive_branch"
+        ],
+        "context": "E0",
+        "values": {
+          "measure_record": true,
+          "phase_tag": "phase_plus",
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order",
+          "phase_sensitive_branch"
+        ],
+        "context": "E1",
+        "values": {
+          "measure_record": true,
+          "phase_tag": "phase_minus",
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order",
+          "phase_sensitive_branch"
+        ],
+        "context": "E2",
+        "values": {
+          "measure_record": true,
+          "phase_tag": "phase_plus",
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order",
+          "phase_sensitive_branch"
+        ],
+        "context": "E3",
+        "values": {
+          "measure_record": true,
+          "phase_tag": "phase_minus",
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order",
+          "phase_sensitive_branch"
+        ],
+        "context": "E4",
+        "values": {
+          "measure_record": true,
+          "phase_tag": "phase_plus",
+          "pointer": 1,
+          "prep_measure": true
+        }
+      }
+    ]
+  },
+  "phase_final": {
+    "eta_loss": [
+      "phase_sensitive_branch"
+    ],
+    "field_support": {
+      "measure_record": 5,
+      "pointer": 5,
+      "prep_measure": 5
+    },
+    "final_capabilities": [
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "separated_classes": 1,
+    "stable": true,
+    "values": {
+      "measure_record": true,
+      "pointer": 1,
+      "prep_measure": true
+    }
+  },
+  "plain_case": {
+    "capabilities": [
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "name": "F_plain_final_record_only",
+    "records": [
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order"
+        ],
+        "context": "E0",
+        "values": {
+          "measure_record": true,
+          "phase_tag": null,
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order"
+        ],
+        "context": "E1",
+        "values": {
+          "measure_record": true,
+          "phase_tag": null,
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order"
+        ],
+        "context": "E2",
+        "values": {
+          "measure_record": true,
+          "phase_tag": null,
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order"
+        ],
+        "context": "E3",
+        "values": {
+          "measure_record": true,
+          "phase_tag": null,
+          "pointer": 1,
+          "prep_measure": true
+        }
+      },
+      {
+        "capabilities": [
+          "read_pointer",
+          "reconstruct_provenance_order"
+        ],
+        "context": "E4",
+        "values": {
+          "measure_record": true,
+          "phase_tag": null,
+          "pointer": 1,
+          "prep_measure": true
+        }
+      }
+    ]
+  },
+  "plain_final": {
+    "eta_loss": [],
+    "field_support": {
+      "measure_record": 5,
+      "pointer": 5,
+      "prep_measure": 5
+    },
+    "final_capabilities": [
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "separated_classes": 1,
+    "stable": true,
+    "values": {
+      "measure_record": true,
+      "pointer": 1,
+      "prep_measure": true
+    }
+  },
+  "strongest_result": "Two presheaf cases with the same pointer/provenance data sheafify to the same final record, but only the phase-sensitive case has the phase_sensitive_branch capability before eta_F. This is the cleanest finite S1/S6 non-factorization witness so far.",
+  "tag": [
+    "finite_witness",
+    "capability_non_factorization",
+    "no_claim_promotion"
+  ],
+  "test": "s6-g9-same-final-record-capability-pair-v0.1"
+}

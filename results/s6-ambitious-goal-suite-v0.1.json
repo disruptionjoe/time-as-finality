@@ -1,0 +1,509 @@
+{
+  "G1_open_system_sweep": [
+    {
+      "average_mutual_information": 0.0,
+      "coherence": 1.0,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.5,
+          "coupling": 1.0,
+          "mutual_information": 0.0,
+          "redundant": false
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.5,
+          "coupling": 0.9,
+          "mutual_information": 0.0,
+          "redundant": false
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.5,
+          "coupling": 0.8,
+          "mutual_information": 0.0,
+          "redundant": false
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.5,
+          "coupling": 0.7,
+          "mutual_information": 0.0,
+          "redundant": false
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.5,
+          "coupling": 0.6,
+          "mutual_information": 0.0,
+          "redundant": false
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.5,
+          "coupling": 0.5,
+          "mutual_information": 0.0,
+          "redundant": false
+        }
+      ],
+      "gluing_error": 1.0,
+      "pointer_distinguishability": 0.0,
+      "redundant_count": 0,
+      "stable_by_redundancy": false,
+      "strength": 0.0
+    },
+    {
+      "average_mutual_information": 0.030438,
+      "coherence": 0.25924,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.629591,
+          "coupling": 1.0,
+          "mutual_information": 0.049014,
+          "redundant": false
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.61831,
+          "coupling": 0.9,
+          "mutual_information": 0.040773,
+          "redundant": false
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.606686,
+          "coupling": 0.8,
+          "mutual_information": 0.033095,
+          "redundant": false
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.594708,
+          "coupling": 0.7,
+          "mutual_information": 0.026038,
+          "redundant": false
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.582365,
+          "coupling": 0.6,
+          "mutual_information": 0.019664,
+          "redundant": false
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.569646,
+          "coupling": 0.5,
+          "mutual_information": 0.014041,
+          "redundant": false
+        }
+      ],
+      "gluing_error": 1.0,
+      "pointer_distinguishability": 0.200435,
+      "redundant_count": 0,
+      "stable_by_redundancy": false,
+      "strength": 0.3
+    },
+    {
+      "average_mutual_information": 0.09865,
+      "coherence": 0.067206,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.725594,
+          "coupling": 1.0,
+          "mutual_information": 0.152284,
+          "redundant": false
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.708626,
+          "coupling": 0.9,
+          "mutual_information": 0.12951,
+          "redundant": false
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.690608,
+          "coupling": 0.8,
+          "mutual_information": 0.10753,
+          "redundant": false
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.671477,
+          "coupling": 0.7,
+          "mutual_information": 0.086589,
+          "redundant": false
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.651162,
+          "coupling": 0.6,
+          "mutual_information": 0.066974,
+          "redundant": false
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.629591,
+          "coupling": 0.5,
+          "mutual_information": 0.049014,
+          "redundant": false
+        }
+      ],
+      "gluing_error": 1.0,
+      "pointer_distinguishability": 0.359019,
+      "redundant_count": 0,
+      "stable_by_redundancy": false,
+      "strength": 0.6
+    },
+    {
+      "average_mutual_information": 0.182781,
+      "coherence": 0.017422,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.796715,
+          "coupling": 1.0,
+          "mutual_information": 0.271551,
+          "redundant": true
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.777571,
+          "coupling": 0.9,
+          "mutual_information": 0.235422,
+          "redundant": true
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.756624,
+          "coupling": 0.8,
+          "mutual_information": 0.19939,
+          "redundant": false
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.733704,
+          "coupling": 0.7,
+          "mutual_information": 0.163901,
+          "redundant": false
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.708626,
+          "coupling": 0.6,
+          "mutual_information": 0.12951,
+          "redundant": false
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.681186,
+          "coupling": 0.5,
+          "mutual_information": 0.096913,
+          "redundant": false
+        }
+      ],
+      "gluing_error": 0.666667,
+      "pointer_distinguishability": 0.484809,
+      "redundant_count": 2,
+      "stable_by_redundancy": false,
+      "strength": 0.9
+    },
+    {
+      "average_mutual_information": 0.271014,
+      "coherence": 0.004517,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.849403,
+          "coupling": 1.0,
+          "mutual_information": 0.388667,
+          "redundant": true
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.830202,
+          "coupling": 0.9,
+          "mutual_information": 0.342758,
+          "redundant": true
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.808554,
+          "coupling": 0.8,
+          "mutual_information": 0.295512,
+          "redundant": true
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.784145,
+          "coupling": 0.7,
+          "mutual_information": 0.247473,
+          "redundant": true
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.756624,
+          "coupling": 0.6,
+          "mutual_information": 0.19939,
+          "redundant": false
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.725594,
+          "coupling": 0.5,
+          "mutual_information": 0.152284,
+          "redundant": false
+        }
+      ],
+      "gluing_error": 0.333333,
+      "pointer_distinguishability": 0.58484,
+      "redundant_count": 4,
+      "stable_by_redundancy": true,
+      "strength": 1.2
+    },
+    {
+      "average_mutual_information": 0.356937,
+      "coherence": 0.001171,
+      "fragments": [
+        {
+          "context": "E0",
+          "correct_probability": 0.888435,
+          "coupling": 1.0,
+          "mutual_information": 0.495381,
+          "redundant": true
+        },
+        {
+          "context": "E1",
+          "correct_probability": 0.87038,
+          "coupling": 0.9,
+          "mutual_information": 0.443605,
+          "redundant": true
+        },
+        {
+          "context": "E2",
+          "correct_probability": 0.849403,
+          "coupling": 0.8,
+          "mutual_information": 0.388667,
+          "redundant": true
+        },
+        {
+          "context": "E3",
+          "correct_probability": 0.825031,
+          "coupling": 0.7,
+          "mutual_information": 0.331054,
+          "redundant": true
+        },
+        {
+          "context": "E4",
+          "correct_probability": 0.796715,
+          "coupling": 0.6,
+          "mutual_information": 0.271551,
+          "redundant": true
+        },
+        {
+          "context": "E5",
+          "correct_probability": 0.763817,
+          "coupling": 0.5,
+          "mutual_information": 0.211365,
+          "redundant": true
+        }
+      ],
+      "gluing_error": 0.0,
+      "pointer_distinguishability": 0.664594,
+      "redundant_count": 6,
+      "stable_by_redundancy": true,
+      "strength": 1.5
+    }
+  ],
+  "G1_threshold": {
+    "average_mutual_information": 0.271014,
+    "coherence": 0.004517,
+    "fragments": [
+      {
+        "context": "E0",
+        "correct_probability": 0.849403,
+        "coupling": 1.0,
+        "mutual_information": 0.388667,
+        "redundant": true
+      },
+      {
+        "context": "E1",
+        "correct_probability": 0.830202,
+        "coupling": 0.9,
+        "mutual_information": 0.342758,
+        "redundant": true
+      },
+      {
+        "context": "E2",
+        "correct_probability": 0.808554,
+        "coupling": 0.8,
+        "mutual_information": 0.295512,
+        "redundant": true
+      },
+      {
+        "context": "E3",
+        "correct_probability": 0.784145,
+        "coupling": 0.7,
+        "mutual_information": 0.247473,
+        "redundant": true
+      },
+      {
+        "context": "E4",
+        "correct_probability": 0.756624,
+        "coupling": 0.6,
+        "mutual_information": 0.19939,
+        "redundant": false
+      },
+      {
+        "context": "E5",
+        "correct_probability": 0.725594,
+        "coupling": 0.5,
+        "mutual_information": 0.152284,
+        "redundant": false
+      }
+    ],
+    "gluing_error": 0.333333,
+    "pointer_distinguishability": 0.58484,
+    "redundant_count": 4,
+    "stable_by_redundancy": true,
+    "strength": 1.2
+  },
+  "G2_descent": {
+    "edges": [
+      [
+        "prep",
+        "measure"
+      ],
+      [
+        "measure",
+        "record"
+      ]
+    ],
+    "eta_loss": [
+      "phase_sensitive_branch"
+    ],
+    "gluing_error": 0.333333,
+    "local_records_used": 6,
+    "pointer": 1,
+    "stable": true,
+    "support_count": 4
+  },
+  "G3_contextual_capability": {
+    "absorber_owner": "standard_CHSH_contextuality_QIT_control",
+    "cap_final_record": [
+      "classical_global_assignment"
+    ],
+    "cap_presheaf": [
+      "local_context_statistics",
+      "contextual_chsh_above_classical"
+    ],
+    "final_record_chsh_bound": 2.0,
+    "non_factorization": true,
+    "presheaf_chsh_score": 2.828427
+  },
+  "G4_provenance": {
+    "descent_score": 1.0,
+    "not_smuggled_by_site": true,
+    "presheaf_score": 0.833333,
+    "reconstruction_gain": 0.166667,
+    "unlabeled_control_score": 0.0
+  },
+  "G5_absorbers": [
+    {
+      "absorbs": "categorical gluing mechanism and associated-record vocabulary",
+      "granted": true,
+      "name": "ordinary_finite_sheaf_descent",
+      "residue": "TaF keeps the typed loss/provenance audit, not a new theorem."
+    },
+    {
+      "absorbs": "coherence decay and pointer distinguishability in G1",
+      "granted": true,
+      "name": "decoherence_or_dephasing_channel",
+      "residue": "S6 only organizes final-record descent metrics around it."
+    },
+    {
+      "absorbs": "physical objectivity threshold if a real SBS model is supplied",
+      "granted": true,
+      "name": "Quantum_Darwinism_or_SBS",
+      "residue": "Current run is a channel abstraction awaiting SBS replacement."
+    },
+    {
+      "absorbs": "G3 contextual capability separation",
+      "granted": true,
+      "name": "Abramsky_Brandenburger_or_standard_CHSH",
+      "residue": "S6 links the separation to eta_F loss, not new contextuality."
+    },
+    {
+      "absorbs": "source-side issuance reading",
+      "granted": true,
+      "name": "fixed_H_fixed_A_Temporal_Issuance_null",
+      "residue": "Verdict remains Project[O] + Finalize[R] + Lose[K]."
+    }
+  ],
+  "all_goals_passed": true,
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The open-system fixture is still an analytic dephasing/channel model, not a Hamiltonian/Lindblad simulation or SBS theorem. The absorber gauntlet deliberately leaves S6 as Project/Finalize/Lose discipline.",
+  "goal_results": {
+    "G1_open_system_style_redundancy_fixture": true,
+    "G2_general_finite_descent_machinery": true,
+    "G3_known_contextual_capability_non_factorization": true,
+    "G4_causal_provenance_reconstruction_fixture": true,
+    "G5_absorber_gauntlet_completed": true
+  },
+  "guardrail": "Sequential finite witnesses only: analytic dephasing channel, finite descent, CHSH control, provenance fixture, and absorber gauntlet. Not a physical proof, not a general sheaf theorem, not Issue[S].",
+  "next_step": "Replace the analytic fragment channel with a small density-matrix system-environment simulation and compare the same descent outputs.",
+  "parameters": {
+    "couplings": [
+      1.0,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5
+    ],
+    "descent_support": 4,
+    "expected_edges": [
+      [
+        "prep",
+        "measure"
+      ],
+      [
+        "measure",
+        "record"
+      ]
+    ],
+    "fragments": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "mutual_information_threshold": 0.2,
+    "strengths": [
+      0.0,
+      0.3,
+      0.6,
+      0.9,
+      1.2,
+      1.5
+    ]
+  },
+  "strongest_result": "The S6 lane survives as a typed bridge workflow after all five ambitious finite goals: dynamic redundancy creates the cover, generic descent stabilizes the record, CHSH supplies non-factorization, provenance improves only on a causal site, and absorbers block claim promotion.",
+  "tag": [
+    "finite_witness",
+    "toy_model",
+    "absorber_checked"
+  ],
+  "test": "s6-ambitious-goal-suite-v0.1"
+}

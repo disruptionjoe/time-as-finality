@@ -240,6 +240,32 @@ This executes the re-vote's recommended finite witness, but it does not promote
 S6. The next object is the open-system / SBS replacement for the deterministic
 fragment profile.
 
+## Second Executed Witness: Ambitious Goal Suite
+
+The five ambitious follow-on goals have also been run as a sequential finite
+suite:
+
+- model: `models/s6_ambitious_goal_suite.py`
+- runner: `models/run_s6_ambitious_goals.py`
+- tests: `tests/test_s6_ambitious_goal_suite.py`
+- results: `results/s6-ambitious-goal-suite-v0.1-results.md`
+- machine output: `results/s6-ambitious-goal-suite-v0.1.json`
+
+Result:
+
+```text
+G1-G5 pass on the sequential finite suite.
+Dynamic redundancy first reaches descent support at strength=1.2.
+Finite descent stabilizes the pointer/provenance record with support=4.
+CHSH supplies a known capability non-factorization control.
+Provenance reconstruction improves only on a causal/provenance site.
+Absorbers all remain granted; S6 is not promoted.
+```
+
+This strengthens S6 from a single toy witness to a bounded witness stack. It
+still leaves the same next obstruction: replace the analytic fragment channel
+with a small density-matrix or SBS-style system-environment simulation.
+
 ## Full Persona Re-Vote Ledger
 
 | persona | QV allocation | main driver |

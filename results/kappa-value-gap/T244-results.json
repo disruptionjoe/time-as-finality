@@ -1,0 +1,329 @@
+{
+  "kappa_definition_unchanged_from_T224": "kappa(nu) = dim_{Z/2} H^1 of the signed graph of the neighbor-visible same/different cover. compute_kappa is imported VERBATIM from T224 and NOT re-tuned. Re-tuning per domain would be an automatic FAIL.",
+  "kappa_A": {
+    "three_cell_transitive_kappa3": {
+      "cover_name": "A:3_cell_transitive_kappa3",
+      "num_variables": 9,
+      "num_edges": 9,
+      "num_components": 3,
+      "kappa": 3,
+      "cycle_space_rank": 3,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_cell_transitive_kappa2": {
+      "cover_name": "A:2_cell_transitive_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_cell_transitive_kappa1": {
+      "cover_name": "A:1_cell_transitive_kappa1",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "satisfiable_kappa0": {
+      "cover_name": "A:satisfiable_all_same",
+      "num_variables": 3,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "kappa_B_via_nu": {
+    "three_above_floor": {
+      "cover_name": "B'''':3_above_floor_kappa3",
+      "num_variables": 9,
+      "num_edges": 9,
+      "num_components": 3,
+      "kappa": 3,
+      "cycle_space_rank": 3,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_above_floor": {
+      "cover_name": "B'''':2_above_floor_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_above_floor": {
+      "cover_name": "B'''':1_above_floor_kappa1",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "all_at_floor": {
+      "cover_name": "B'''':0_above_floor_kappa0",
+      "num_variables": 1,
+      "num_edges": 0,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "native_B_value_gap": {
+    "three_above_floor": {
+      "system": "3_above_floor_kappa3",
+      "num_cells": 4,
+      "floor": 0.1,
+      "cell_value_gaps": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "above_cell_1",
+          "block": 1,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "above_cell_2",
+          "block": 2,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "at_floor_cell",
+          "block": 3,
+          "delta": 0.0,
+          "value_gap": 0.1,
+          "floor": 0.1,
+          "strictly_above_floor": false
+        }
+      ],
+      "above_floor_cells": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        },
+        {
+          "cell": "above_cell_1",
+          "block": 1,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        },
+        {
+          "cell": "above_cell_2",
+          "block": 2,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        }
+      ],
+      "native_value_gap_rank": 3,
+      "all_gaps_at_or_below_floor": false,
+      "witness_kind": "number of independent cells whose REAL value-of-information gap strictly exceeds a real floor (a value-gap / rate-distortion obstruction over real policy values; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle, NOT a finite-set-intersection failure)"
+    },
+    "two_above_floor": {
+      "system": "2_above_floor_kappa2",
+      "num_cells": 3,
+      "floor": 0.1,
+      "cell_value_gaps": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "above_cell_1",
+          "block": 1,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "at_floor_cell",
+          "block": 2,
+          "delta": 0.0,
+          "value_gap": 0.1,
+          "floor": 0.1,
+          "strictly_above_floor": false
+        }
+      ],
+      "above_floor_cells": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        },
+        {
+          "cell": "above_cell_1",
+          "block": 1,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        }
+      ],
+      "native_value_gap_rank": 2,
+      "all_gaps_at_or_below_floor": false,
+      "witness_kind": "number of independent cells whose REAL value-of-information gap strictly exceeds a real floor (a value-gap / rate-distortion obstruction over real policy values; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle, NOT a finite-set-intersection failure)"
+    },
+    "one_above_floor": {
+      "system": "1_above_floor_kappa1",
+      "num_cells": 2,
+      "floor": 0.1,
+      "cell_value_gaps": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "delta": 0.37,
+          "value_gap": 0.47,
+          "floor": 0.1,
+          "strictly_above_floor": true
+        },
+        {
+          "cell": "at_floor_cell",
+          "block": 1,
+          "delta": 0.0,
+          "value_gap": 0.1,
+          "floor": 0.1,
+          "strictly_above_floor": false
+        }
+      ],
+      "above_floor_cells": [
+        {
+          "cell": "above_cell_0",
+          "block": 0,
+          "value_gap": 0.47,
+          "margin_above_floor": 0.37
+        }
+      ],
+      "native_value_gap_rank": 1,
+      "all_gaps_at_or_below_floor": false,
+      "witness_kind": "number of independent cells whose REAL value-of-information gap strictly exceeds a real floor (a value-gap / rate-distortion obstruction over real policy values; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle, NOT a finite-set-intersection failure)"
+    },
+    "all_at_floor": {
+      "system": "0_above_floor_kappa0",
+      "num_cells": 1,
+      "floor": 0.1,
+      "cell_value_gaps": [
+        {
+          "cell": "at_floor_cell",
+          "block": 0,
+          "delta": 0.0,
+          "value_gap": 0.1,
+          "floor": 0.1,
+          "strictly_above_floor": false
+        }
+      ],
+      "above_floor_cells": [],
+      "native_value_gap_rank": 0,
+      "all_gaps_at_or_below_floor": true,
+      "witness_kind": "number of independent cells whose REAL value-of-information gap strictly exceeds a real floor (a value-gap / rate-distortion obstruction over real policy values; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle, NOT a finite-set-intersection failure)"
+    }
+  },
+  "ast_shared_derivation_audit": {
+    "transport_path_imports_d1_restriction_system": false,
+    "transport_path_imports_cap_theorem_bridge": false,
+    "transport_path_imports_quorum_module": false,
+    "T28_CAP_imports_d1_restriction_system": true,
+    "native_witness_calls_compute_kappa": false,
+    "native_witness_calls_any_combinatorial_helper": false,
+    "compute_kappa_is_T224_object_not_retuned": true,
+    "shares_derivation_with_T39_or_CAP": false,
+    "note": "B'''' = real-valued value-gap system. Native obstruction is the number of independent cells whose REAL value-of-information gap strictly exceeds a real floor -- a value-gap / rate-distortion obstruction over real policy values, structurally distinct from the parity-product (T21/T229), the directed-tournament-cycle (T234), AND the Helly/set-cover quorum-intersection (T239) witnesses. The A-side intentionally reuses the T39 CSP source builders to obtain kappa_A ranks; the target-side native value-gap witness is built fresh and the audited path imports neither d1_restriction_system, cap_theorem_bridge, nor the quorum module. compute_kappa is the verbatim T224 object and the native witness never calls it or any combinatorial helper."
+  },
+  "genre_distinctness_certificate": {
+    "value_gap_is_continuous_affine_in_delta": true,
+    "max_consecutive_gap_jump": 0.0010000000000000009,
+    "obstruction_flips_at_real_threshold": true,
+    "real_threshold_separates_infinitesimal_pos_from_neg": true,
+    "rank_at_delta_plus_1e_minus_9": 1,
+    "rank_at_delta_minus_1e_minus_9": 0,
+    "native_calls_no_cycle_parity_or_setintersection_helpers": true,
+    "rank_reads_strict_above_floor_sign_not_magnitude_or_cardinality": true,
+    "is_real_valued_value_gap_not_combinatorial": true,
+    "note": "Native witness is a REAL-VALUED value-of-information / rate-distortion gap above a real floor: continuous (affine) in the real parameter delta, the obstruction flips at a genuine real threshold (delta crossing 0), it separates infinitesimally-positive from infinitesimally-negative delta (no finite-set boundary), reads the strict-above-floor SIGN of a real gap (not magnitude, not cardinality), and references no cycle/parity/set-intersection helper. Structurally distinct from the signed-graph parity cycle (T21/T229), the directed tournament cycle (T234), AND the finite Helly/set-cover quorum-intersection failure (T239). This is a finite real-threshold value-gap witness, not a general genre-agnostic theorem."
+  },
+  "trials": [
+    {
+      "a_instance": "three_cell_transitive_kappa3",
+      "kappa_A": 3,
+      "predicted_kappa_B": 3,
+      "native_value_gap_rank": 3,
+      "kappa_B_via_nu": 3,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "two_cell_transitive_kappa2",
+      "kappa_A": 2,
+      "predicted_kappa_B": 2,
+      "native_value_gap_rank": 2,
+      "kappa_B_via_nu": 2,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "one_cell_transitive_kappa1",
+      "kappa_A": 1,
+      "predicted_kappa_B": 1,
+      "native_value_gap_rank": 1,
+      "kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    },
+    {
+      "a_instance": "satisfiable_kappa0",
+      "kappa_A": 0,
+      "predicted_kappa_B": 0,
+      "native_value_gap_rank": 0,
+      "kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    }
+  ],
+  "all_predictions_match": true,
+  "rank_load_bearing": true,
+  "rank_separates_0_1_2_3": true,
+  "no_shared_derivation": true,
+  "native_independent_of_compute_kappa": true,
+  "native_independent_of_combinatorial_helpers": true,
+  "kappa_single_formula": true,
+  "genre_is_noncombinatorial_real_value_gap": true,
+  "gate_cleared": true,
+  "verdict": "PASS_REAL_THRESHOLD_VALUE_GAP",
+  "meaning": "If PASS_REAL_THRESHOLD_VALUE_GAP: kappa transported from a T39 signed-graph A-instance predicts the EXACT integer number of independent native obstructions in a FIFTH absorber whose native witness is a REAL value gap above a real floor (a value-of-information / rate-distortion obstruction) -- a witness that is NOT cycle-shaped, NOT a Z/2 parity product (T21/T229), NOT a directed tournament cycle (T234), and NOT a finite-set-intersection failure (T239). This is a finite real-threshold value-gap witness outside the prior cycle/parity/intersection-native genres. The cross-domain RANK classification is witnessed across five absorbers spanning parity cycle, directed tournament cycle, Helly set-cover, and real-threshold value-gap fixtures, with the integer rank load-bearing and separating 1, 2, 3. The integrator ratifies any broader genre-agnostic reading. If FINITE_COMBINATORIAL_ONLY: predictions held but the native witness was secretly only combinatorial, naming the transport-law boundary. If KILLED: the prediction missed or compute_kappa needed re-tuning.",
+  "complexity_tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "guardrails": "No physics/geometry/curvature/new-object/value-as-physical-law language promoted. kappa is a Z/2 graph-homology rank over a finite cover; 'value gap' is a real difference of two scalar policy values over a finite 2-state/2-action decision; 'above floor' is a strict real inequality; native rank is counted by per-cell real value iteration + strict real-floor comparison over disjoint cells (poly_decider, not a search, not a continuum/measure theorem), never by compute_kappa or any combinatorial helper. No NP-hardness/CSP-completeness claimed; no continuum theorem asserted -- the gap is real-valued but the rung set and rank are finite."
+}

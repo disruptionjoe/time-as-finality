@@ -40,6 +40,12 @@ The historical `NORTH-STAR.md` has been archived under
 `Candidate North Star/archive/`. The current project orientation is the
 three-file map above.
 
+Cross-repo stress tests are kept separate from core claims. The current GU /
+Temporal Issuance bridge note is
+[explorations/gu-effect-typed-witness-transport-stress-test-2026-06-25.md](explorations/gu-effect-typed-witness-transport-stress-test-2026-06-25.md):
+it uses GU as a hostile testbed for TaF transport, projection, finality, and
+loss machinery without promoting any TaF or GU claim.
+
 ## Project Definition
 
 Time as Finality asks whether:

@@ -1,0 +1,266 @@
+{
+  "pentagon_battery": [
+    {
+      "label": "break_break_nestfull",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 5,
+      "n_target_strata": 3
+    },
+    {
+      "label": "all_non_nested",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 6,
+      "n_target_strata": 3
+    },
+    {
+      "label": "n2_chain_kn",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 10,
+      "n_target_strata": 3
+    },
+    {
+      "label": "break_kn_break",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 6,
+      "n_target_strata": 4
+    },
+    {
+      "label": "n2_break_n2",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 8,
+      "n_target_strata": 4
+    },
+    {
+      "label": "nested_full_succ",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": true,
+      "cell_invertible": true,
+      "cell_source_has_antichain": false,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 4,
+      "n_target_strata": 4
+    },
+    {
+      "label": "mid_identity",
+      "target_associator_exists": true,
+      "target_associator_strict": true,
+      "source_assoc": true,
+      "cell_exists": true,
+      "cell_strict": false,
+      "cell_invertible": false,
+      "cell_source_has_antichain": true,
+      "left_whisker_ok": true,
+      "right_whisker_ok": true,
+      "pentagon_commutes": true,
+      "n_source_strata": 5,
+      "n_target_strata": 3
+    }
+  ],
+  "off_anchor_obstruction": {
+    "obstruction_present": true,
+    "rows": [
+      {
+        "label": "break_hnest_break",
+        "cell_exists": false,
+        "composite_dropped": [
+          "accessible_support",
+          "branch_support",
+          "holder_redundancy",
+          "reversal_cost"
+        ],
+        "mu_dropped": [
+          "accessible_support",
+          "holder_redundancy",
+          "reversal_cost"
+        ],
+        "mu_under_counts": true,
+        "missing_from_mu": [
+          "branch_support"
+        ],
+        "source_assoc": true
+      },
+      {
+        "label": "gnest_break_kn",
+        "cell_exists": false,
+        "composite_dropped": [
+          "accessible_support",
+          "branch_support",
+          "reversal_cost"
+        ],
+        "mu_dropped": [
+          "accessible_support",
+          "branch_support"
+        ],
+        "mu_under_counts": true,
+        "missing_from_mu": [
+          "reversal_cost"
+        ],
+        "source_assoc": true
+      }
+    ]
+  },
+  "wrong_association_rejected": {
+    "good_fold": [
+      [
+        "reversal_cost"
+      ],
+      [
+        "accessible_support",
+        "branch_support"
+      ],
+      [
+        "holder_redundancy"
+      ],
+      []
+    ],
+    "wrong_fold": [
+      [
+        "holder_redundancy"
+      ],
+      [
+        "accessible_support"
+      ],
+      []
+    ],
+    "good_and_wrong_differ": true,
+    "cell_to_good_exists": true,
+    "cell_to_wrong_exists": false,
+    "cell_to_wrong_support_differs": true,
+    "commute_test_is_real": true
+  },
+  "non_vacuity_injector": {
+    "perturbed_fold": [
+      [],
+      [
+        "accessible_support",
+        "branch_support"
+      ],
+      [
+        "holder_redundancy"
+      ],
+      []
+    ],
+    "perturbation_changed_support": true,
+    "cell_exists_on_perturbed": false,
+    "harness_can_report_non_commute": true
+  },
+  "lax_vs_pseudo": {
+    "n_antichain_triples": 6,
+    "n_nested_triples": 1,
+    "some_cell_directed_non_invertible": true,
+    "nested_cells_strict": true,
+    "is_pseudofunctor": false,
+    "is_genuine_lax_functor": true
+  },
+  "mu_associator": {
+    "mu_associator_strict_everywhere": true,
+    "rows": [
+      {
+        "label": "break_break_nestfull",
+        "associator_strict": true
+      },
+      {
+        "label": "all_non_nested",
+        "associator_strict": true
+      },
+      {
+        "label": "n2_chain_kn",
+        "associator_strict": true
+      },
+      {
+        "label": "break_kn_break",
+        "associator_strict": true
+      },
+      {
+        "label": "n2_break_n2",
+        "associator_strict": true
+      },
+      {
+        "label": "nested_full_succ",
+        "associator_strict": true
+      },
+      {
+        "label": "mid_identity",
+        "associator_strict": true
+      }
+    ]
+  },
+  "non_circularity_guard": {
+    "composite_has_antichain": true,
+    "fold_is_chain": true,
+    "same_dropped_support": true,
+    "structures_differ": true,
+    "comparison_exists": true
+  },
+  "honesty_boundary": {
+    "non_monotone_is_legal": false,
+    "gr_rejects_non_monotone": true,
+    "coherence_is_finite_category_only": true,
+    "general_cocompleteness_still_open": true
+  },
+  "summary": {
+    "verdict": "selected_anchor_battery_commutes_blocked_off_anchor",
+    "anchored_all_pentagons_commute": true,
+    "anchored_all_cells_exist": true,
+    "anchored_all_source_associative": true,
+    "mu_associator_is_identity": true,
+    "commute_test_is_real": true,
+    "harness_can_report_non_commute": true,
+    "is_pseudofunctor": false,
+    "is_genuine_lax_functor_on_anchor_battery": true,
+    "off_anchor_obstruction_present": true,
+    "mu_independent_of_compose_code": true,
+    "general_cocompleteness_still_open": true,
+    "top_line": "conditional_selected_anchor_battery_coherent_non_strict_cells_blocked_off_anchor"
+  }
+}

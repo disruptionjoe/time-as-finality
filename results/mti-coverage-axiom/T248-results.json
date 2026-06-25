@@ -1,0 +1,47 @@
+{
+  "test": "T248-mti-coverage-axiom-certificate",
+  "verdict": "conditional",
+  "promotes_mti": false,
+  "citation": {
+    "source": "explorations/explorer-metabolic-scaling-energy-time-transport-networks-2026-06-22.md",
+    "quotes_present_in_source": true,
+    "quotes": [
+      "subject to: network fills volume V; terminal units have fixed size",
+      "distributed from central supply to distributed demand",
+      "Coverage requirement (all sites accessible)",
+      "Moses derives 3/4 from 3D space-filling branching with fixed terminal size"
+    ]
+  },
+  "axiom_stated_independently": true,
+  "axiom_is_t238_constraint": {
+    "full_coverage_reachable": true,
+    "abandoning_terminal_violates": true,
+    "match": true
+  },
+  "falsification_control": {
+    "with_axiom_minimax_separates": true,
+    "with_axiom_totalcost_separates": true,
+    "with_axiom_objective_invariant": true,
+    "without_axiom_totalcost_separates": true,
+    "without_axiom_minimax_separates": false,
+    "without_axiom_objective_dependent": true,
+    "decisive": true
+  },
+  "same_shape_as_t243": true,
+  "non_vacuity": {
+    "fabricated_axiom_fails_citation": true,
+    "circular_axiom_fails_independence": true,
+    "harness_can_report_not_earned": true
+  },
+  "feasibility_guards": {
+    "quantum_positive": true,
+    "quantum_shrinks_with_fraction": true,
+    "below_threshold_infeasible": true,
+    "above_threshold_feasible": true
+  },
+  "certificate_holds": true,
+  "tags": [
+    "finite_witness",
+    "poly_decider"
+  ]
+}

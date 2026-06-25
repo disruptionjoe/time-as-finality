@@ -1,0 +1,282 @@
+{
+  "good_cover_base": {
+    "cover_name": "triangulated_annulus_4",
+    "n_spine": 4,
+    "num_singles": 8,
+    "num_pairwise": 12,
+    "num_triples": 4,
+    "all_singles_acyclic": true,
+    "all_pairwise_acyclic": true,
+    "all_triples_acyclic": true,
+    "is_good_cover": true,
+    "triples_nonvacuous": true,
+    "detail": "triangulated_annulus_4: 8 patches, 12 pairwise overlaps, 4 GENUINE triples. All singles acyclic: True; all pairwise acyclic: True; all triples acyclic: True. GOOD COVER (every nonempty finite intersection contractible/acyclic): True. Triple intersections non-vacuous: True.",
+    "verdicts": [
+      {
+        "name": "single[U0]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U0]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U1]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U1]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U2]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U2]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U3]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U3]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U4]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U4]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U5]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U5]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U6]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U6]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "single[U7]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'single[U7]': 1 cells, 0 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[0,1]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[0,1]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[0,4]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[0,4]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[1,4]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[1,4]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[1,2]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[1,2]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[1,5]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[1,5]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[2,5]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[2,5]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[2,3]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[2,3]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[2,6]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[2,6]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[3,6]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[3,6]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[0,3]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[0,3]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[3,7]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[3,7]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "pair[0,7]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'pair[0,7]': 2 cells, 1 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "triple[0,1,4]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'triple[0,1,4]': 3 cells, 2 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "triple[1,2,5]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'triple[1,2,5]': 3 cells, 2 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "triple[2,3,6]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'triple[2,3,6]': 3 cells, 2 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      },
+      {
+        "name": "triple[0,3,7]",
+        "b0": 1,
+        "b1": 0,
+        "nonempty": true,
+        "is_acyclic": true,
+        "detail": "piece 'triple[0,3,7]': 3 cells, 2 edges; b0 = 1 (components), b1 = 0 (cycle rank); nonempty = True; acyclic (contractible: b0=1 & b1=0) = True."
+      }
+    ]
+  },
+  "refinement_stability": {
+    "scales": [
+      4,
+      6,
+      8
+    ],
+    "certificates": [
+      {
+        "cover_name": "triangulated_annulus_4",
+        "n_spine": 4,
+        "num_singles": 8,
+        "num_pairwise": 12,
+        "num_triples": 4,
+        "all_singles_acyclic": true,
+        "all_pairwise_acyclic": true,
+        "all_triples_acyclic": true,
+        "is_good_cover": true,
+        "triples_nonvacuous": true,
+        "detail": "triangulated_annulus_4: 8 patches, 12 pairwise overlaps, 4 GENUINE triples. All singles acyclic: True; all pairwise acyclic: True; all triples acyclic: True. GOOD COVER (every nonempty finite intersection contractible/acyclic): True. Triple intersections non-vacuous: True."
+      },
+      {
+        "cover_name": "triangulated_annulus_6",
+        "n_spine": 6,
+        "num_singles": 12,
+        "num_pairwise": 18,
+        "num_triples": 6,
+        "all_singles_acyclic": true,
+        "all_pairwise_acyclic": true,
+        "all_triples_acyclic": true,
+        "is_good_cover": true,
+        "triples_nonvacuous": true,
+        "detail": "triangulated_annulus_6: 12 patches, 18 pairwise overlaps, 6 GENUINE triples. All singles acyclic: True; all pairwise acyclic: True; all triples acyclic: True. GOOD COVER (every nonempty finite intersection contractible/acyclic): True. Triple intersections non-vacuous: True."
+      },
+      {
+        "cover_name": "triangulated_annulus_8",
+        "n_spine": 8,
+        "num_singles": 16,
+        "num_pairwise": 24,
+        "num_triples": 8,
+        "all_singles_acyclic": true,
+        "all_pairwise_acyclic": true,
+        "all_triples_acyclic": true,
+        "is_good_cover": true,
+        "triples_nonvacuous": true,
+        "detail": "triangulated_annulus_8: 16 patches, 24 pairwise overlaps, 8 GENUINE triples. All singles acyclic: True; all pairwise acyclic: True; all triples acyclic: True. GOOD COVER (every nonempty finite intersection contractible/acyclic): True. Triple intersections non-vacuous: True."
+      }
+    ],
+    "good_at_every_scale": true,
+    "triples_nonvacuous_every_scale": true,
+    "triple_count_grows": true,
+    "stable": true,
+    "detail": "good-cover refinement-stability over scales (4, 6, 8): good cover at every scale = True; triples non-vacuous every scale = True; triple counts [4, 6, 8] grow with density = True. STABLE: True."
+  },
+  "non_good_injector": {
+    "cyclic_piece_acyclic": false,
+    "cyclic_piece_b1": 1,
+    "disconnected_piece_acyclic": false,
+    "disconnected_piece_b0": 2,
+    "injector_correctly_rejects": true,
+    "detail": "NON-good injector: cyclic (annular) piece b1 = 1 (non-contractible: True), reported acyclic = False (must be False); disconnected piece b0 = 2 (reported acyclic = False, must be False). Injector correctly rejects both bad pieces: True. (The good-cover check is a REAL acyclicity computation, not an asserted constant.)"
+  },
+  "leray_pair": {
+    "lim1_certified_zero": true,
+    "good_cover_certified": true,
+    "leray_pair_complete_on_annular_tower": true,
+    "continuum_derived_iso_annular_tower": true,
+    "continuum_derived_iso_all_open_covers": null,
+    "annular_tower_iso_license": "For the COUNTABLE ANNULAR TOWER subsystem, Cech computes the derived-functor sheaf cohomology: the cover is GOOD (every nonempty single / pairwise / triple intersection is acyclic, b0=1 & b1=0, refinement-stably across n=4,6,8 with genuine non-vacuous triples) so the Leray acyclicity condition holds, AND the lim^1 H^0 correction is CERTIFIED zero (T241 ML certificate). Good cover (Leray) + lim^1=0 is exactly the pair that makes the Cech-to-derived comparison an iso ON THE ANNULAR-TOWER SUBSYSTEM. EXACT finite-input Leray + ML argument; the acyclicity check is real (the non-good annular/disconnected injector is correctly rejected).",
+    "residual_all_covers_object": "Identifying the cover-colimit Cech-H^1 with the derived-functor sheaf cohomology of the FULL CONTINUUM band (over ALL open covers, not just the annular tower) additionally requires the ANNULAR TOWER TO BE COFINAL IN ALL OPEN COVERS of the band -- i.e. every open cover is refined by an annular (good) cover. A COUNTABLE annular tower does NOT establish that: an arbitrary open cover (e.g. a genuinely 2-dimensional or irregular cover of the band) need not be refined by any annular cover. This all-covers cofinality is the single remaining residual; a finite witness structurally cannot supply it. (The good-cover acyclicity ingredient ITSELF is now certified on the annular tower; what remains is the all-open-covers cofinality of that tower.)",
+    "forbidden": "Asserting `continuum_derived_iso` over ALL open covers, or a GENERAL continuum sheaf-cohomology theorem, is FORBIDDEN from this finite witness: good-cover + lim^1=0 licenses the iso ONLY for the annular tower subsystem; the all-open-covers cofinality is NOT certifiable from finite data."
+  },
+  "verdict": "conditional",
+  "summary": "T246 BUILDS the finite GOOD-COVER ACYCLICITY INGREDIENT for T241's annular band tower, not the all-open-covers cofinality object itself. ATOP the already-certified lim^1 = 0 (T241), this licenses the declared annular-tower subsystem comparison only. (1) GOOD COVER: the triangulated-annulus cover (T241, with GENUINE triple overlaps) has every nonempty finite intersection -- single patch (arc), pairwise overlap (arc-overlap), and genuine triple (the bridge-meets-two-spine-arcs cell) -- CONTRACTIBLE / ACYCLIC, read as finite Z2 (co)homology b0 = 1 & b1 = 0 (the SAME machinery T236/T241 use for the global cover, imported, not re-tuned). (2) REAL CHECK: a NON-good honesty injector -- a triple 'intersection' realized as a 3-cycle (an annulus, b1 = 1, a hole; non-contractible) and a disconnected piece (b0 = 2) -- is correctly REPORTED non-acyclic, so the good-cover property is a genuine acyclicity computation, not an asserted constant. (3) REFINEMENT-STABLE: densifying the triangulation (n = 4, 6, 8, triple counts genuinely growing) preserves the good-cover property at every scale. (4) LERAY PAIR: good-cover (this module) + lim^1 = 0 (T241) is EXACTLY the pair used for the declared annular-tower comparison -- so continuum_derived_iso is now set True FOR THE COUNTABLE ANNULAR-TOWER SUBSYSTEM (good-cover acyclicity established there; all-open-covers cofinality not established). The strictly-LARGER identification over ALL open covers stays None: a countable annular tower is NOT cofinal in all open covers of the band (an arbitrary open cover need not be refined by an annular one), which is the single newly-pinned residual. Verdict CONDITIONAL: the good-cover acyclicity ingredient is BUILT and certified on the annular tower (continuum_derived_iso licensed THERE), but the all-open-covers cofinality is a residual a finite witness cannot supply (binding honesty guard: a GENERAL continuum sheaf-cohomology theorem is FORBIDDEN from this finite witness). Tag: finite_witness + poly_decider. Distinct from the D1FilteredMorphism lane."
+}

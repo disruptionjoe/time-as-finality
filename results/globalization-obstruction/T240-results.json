@@ -1,0 +1,150 @@
+{
+  "test": "T240-globalization-obstruction-certificate",
+  "tag": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "fiber_size": 2,
+  "distinct_nu_signatures_in_fiber": 1,
+  "members": [
+    {
+      "name": "glob_patch",
+      "gluing": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c",
+          "d"
+        ],
+        [
+          "e",
+          "f"
+        ]
+      ],
+      "cover": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        [
+          "a",
+          "b",
+          "e",
+          "f"
+        ],
+        [
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      ],
+      "transition_signs": [
+        0,
+        0,
+        0
+      ],
+      "local_group_orders": [
+        8,
+        8,
+        8
+      ],
+      "overlap_swap_available": [
+        1,
+        1,
+        1
+      ],
+      "triple_overlap_count": 0,
+      "is_cocycle": true,
+      "is_coboundary": true,
+      "obstruction_rank": 0,
+      "nu_signature_hash": -1845040657942116030
+    },
+    {
+      "name": "glob_obstructed",
+      "gluing": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c",
+          "d"
+        ],
+        [
+          "e",
+          "f"
+        ]
+      ],
+      "cover": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        [
+          "a",
+          "b",
+          "e",
+          "f"
+        ],
+        [
+          "c",
+          "d",
+          "e",
+          "f"
+        ]
+      ],
+      "transition_signs": [
+        1,
+        0,
+        0
+      ],
+      "local_group_orders": [
+        8,
+        8,
+        8
+      ],
+      "overlap_swap_available": [
+        1,
+        1,
+        1
+      ],
+      "triple_overlap_count": 0,
+      "is_cocycle": true,
+      "is_coboundary": false,
+      "obstruction_rank": 1,
+      "nu_signature_hash": -1845040657942116030
+    }
+  ],
+  "obstruction_nu_measurable": false,
+  "separates_same_nu_pair": true,
+  "separating_pair": [
+    "glob_patch",
+    "glob_obstructed"
+  ],
+  "separation_absorbed_by_nu_struct": false,
+  "separation_absorbed_by_nu_piece": false,
+  "separation_absorbed_by_nu_cocycle": true,
+  "relabel_stable": true,
+  "local": true,
+  "clears_route_b": false,
+  "failure_gate": "gate2_absorbed_by_admitted_transition_cocycle",
+  "nonvacuity_injected_pair_clears": true,
+  "route_b_alive": false,
+  "route_b_alive_under_piece_reading_only": true,
+  "route_a_strengthened": true,
+  "losskernel_line_closes_fully": true,
+  "verdict": "no-go",
+  "strongest_claim": "The globalization-obstruction certificate -- the finite Z/2 Cech-H^1 obstruction rank to PATCHING locally-defined nu-fixing source automorphisms (over a finite cover of the source carrier, with a per-overlap transition cocycle) into a GLOBAL automorphism -- SEPARATES a same-nu pair that shares IDENTICAL nu, source gluing, AND cover and differs ONLY in the transition cocycle (rank 0 = coboundary = patches; rank 1 = nontrivial H^1 class = does not), and it is local + relabel-stable. This separation SURVIVES T235's nu_struct (field + gluing -- identical on the pair) AND nu_piece (the per-vertex local-group iso-classes -- also identical): the bet's favorable per-piece reading holds (separation_absorbed_by_nu_struct=False, separation_absorbed_by_nu_piece=False). It dies ONLY at nu_cocycle: admitting the per-overlap transition cocycle (the cross-frame gluing RELATION) as audit data reconstructs the obstruction (separation_absorbed_by_nu_cocycle=True). The whole route-(b) question reduces to ONE crisp claim: is the transition cocycle admissible source structure? By T108/T127/T235 (a mature neighbor absorbs any declared source RELATION once named, and the gluing is such a relation), it is -- so gate 2 fires and clears_route_b=False.",
+  "first_obstruction": "The transition cocycle is admissible source structure. It is a source-side gluing-between-frames RELATION, the same KIND of object as T235's source gluing, which T235 already showed is admissible (T108/T127). The H^1 obstruction rank is a deterministic finite GF(2) function of that cocycle and the nerve, so admitting the cocycle (nu_cocycle) reconstructs every distinction the certificate makes -> absorbed one level up, exactly like T230's field value and T235's gluing, now keyed to a relational cocycle. The bet 'admitting each local piece does not reconstruct the global obstruction' is TRUE for per-PIECE admission (nu_piece) but the discipline does not stop at per-piece: the cross-overlap RELATION is itself admissible, and it is the minimal datum that carries H^1. The missing object route (b) still needs is a globalization obstruction whose carrier is NOT any admissible source relation -- but on this construction the carrier (the transition cocycle) is admissible.",
+  "constructive_next_object": "The value-keyed (T230 field), structure-keyed (T235 gluing), and globalization (T240 transition cocycle) cracks are now ALL closed at gate 2 by absorption of a source field / relation. Within the per-domain absorber discipline, EVERY source-side separator on this family has an admissible carrier; LossKernel route (b) is exhausted on the finite witness. The constructive next object is therefore NOT another LossKernel sub-object (the object is always absorbed): it is the MAP-between-absorbers frontier the 62-persona breakout named -- transport an obstruction (kappa = Z/2 H^1 rank of a neighbor-visible signed cover) BETWEEN two a-priori-unrelated absorbers via a structure-preserving map with no shared derivation, where the unit of analysis is the MAP, not the object the absorber discipline keeps swallowing.",
+  "meaning_for_claim": "Independent-motivation criterion (the single open independence criterion, criterion 6): stays NOT EARNED via the LossKernel route. T240 closes the LAST untested route-(b) crack: the globalization obstruction separates a same-nu pair and survives nu_struct AND nu_piece, but is absorbed by nu_cocycle because the transition cocycle is an admissible source relation. Route (a) bounded subsumption is now COMPLETE over all three crack types (value, structure, globalization): every local, relabel-stable source-side separator on the family is reproduced by SOME admissible enlargement (nu', nu_struct, or nu_cocycle). The LossKernel / TF1 same-neighbor-data novelty route is cleanly closeable. This STRENGTHENS the negative; it does NOT flip criterion 6 to EARNED. Reported at test level ONLY; the integrator ratifies any LossKernel / TF1 ledger movement (e.g. demoting the same-neighbor-data novelty route to closed) with maximum care. The honest nuance worth recording: this is the FIRST crack that survived two successive absorbers (nu_struct, nu_piece) and fell only to a THIRD, strictly more permissive one -- the absorber discipline had to reach for the cross-frame relation to swallow it, which is precisely the structural signal the 62-persona breakout reads as 'change the unit of analysis to the MAP between absorbers'.",
+  "falsification_condition": "This no-go is overturned toward route (b) by exhibiting a same-nu pair (a,b) and the globalization obstruction with rank(a) != rank(b), relabel-stable AND local, where the separation is reproduced by NONE of nu_struct, nu_piece, OR nu_cocycle (i.e. admitting every source field, the gluing, the cover, every per-vertex local-group iso-class, AND the full transition cocycle still leaves the pair indistinguishable to a mature neighbor). The harness then reports clears_route_b=True and the verdict flips to EARNED-candidate. The non-vacuity injector (a same-nu pair with IDENTICAL nu_struct, nu_piece AND nu_cocycle that a synthetic invariant separates) proves the harness CAN report this positive; the real transition-cocycle construction does not, because its carrier (the cocycle) is admissible. It is overturned toward route (a) / no-go -- the actual outcome -- by nu_cocycle reproducing the separation.",
+  "next_step": "Read clears_route_b / separation_absorbed_by_nu_cocycle / route_b_alive_under_piece_reading_only in results/globalization-obstruction/T240-results.json. clears_route_b=False via gate2_absorbed_by_admitted_transition_cocycle: the LossKernel line closes fully and criterion-6 work moves OFF the LossKernel object to the map-between-absorbers (kappa) frontier. To attempt a genuine route-(b) revival one would have to exhibit a globalization obstruction whose carrier is provably NOT an admissible source relation -- not supplied by the transition-cocycle construction, whose carrier is admissible."
+}

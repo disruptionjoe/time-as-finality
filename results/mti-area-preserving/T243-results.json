@@ -1,0 +1,354 @@
+{
+  "test": "T243",
+  "title": "WBE-native area-preserving justification of the 3/4 exponent (MTI sub-object 1)",
+  "verdict": "conditional",
+  "tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "n_values": [
+    4,
+    8,
+    16,
+    27
+  ],
+  "per_n": {
+    "4": {
+      "reflection_optimum": {
+        "argmin_beta_r": 0.4999759773061201,
+        "area_preserving": 0.5,
+        "R_at_argmin": 2.3084701923406467e-09,
+        "exponent": 0.7499610114912498,
+        "is_area_preserving": true
+      },
+      "dissipation_baseline_T233": {
+        "argmin_beta_r": 0.6299385003159571,
+        "area_increasing": 0.6299605249474366,
+        "exponent": 0.9999495622691521,
+        "is_area_increasing": true,
+        "recovers_3_4": false
+      },
+      "additive_blend_REJECTED": {
+        "argmins": [
+          0.6298511359091641,
+          0.6292482875963126,
+          0.6177941696521336,
+          0.5963930545459044,
+          0.572881970344695,
+          0.5553993692720008
+        ],
+        "lams": [
+          0.0,
+          1.0,
+          20.0,
+          100.0,
+          500.0,
+          2000.0
+        ],
+        "slides_continuously": true,
+        "lands_at_finite_lam": false
+      },
+      "hard_constraint_optimum": {
+        "argmin_beta_r": 0.5050197598495829,
+        "area_preserving": 0.5,
+        "exponent": 0.7581951851840634,
+        "feasible_pts": 332,
+        "selects_area_preserving": true,
+        "recovers_3_4": true
+      },
+      "convergence": {
+        "tols": [
+          0.005,
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "argmins": [
+          0.5366835378536001,
+          0.5160568481824117,
+          0.5050197598495829,
+          0.5015819782377181
+        ],
+        "exponents": [
+          0.8122224584277138,
+          0.776559442447945,
+          0.7581951851840634,
+          0.7525723402595135
+        ],
+        "argmin_to_area_preserving": true,
+        "exponent_to_3_4": true
+      },
+      "falsification_control": {
+        "constraint_on_area_preserving": true,
+        "constraint_on_exponent": 0.7581951851840634,
+        "constraint_off_area_increasing": true,
+        "constraint_off_exponent": 0.9999895939516172,
+        "decisive": true
+      },
+      "circularity_audit": {
+        "reflection_zero_is_area_preserving": true,
+        "premise_no_exponent": true,
+        "exponent_downstream": true,
+        "additive_blend_rejected": true,
+        "falsification_decisive": true,
+        "not_circular": true
+      },
+      "gate1_singles_out_3_4": true
+    },
+    "8": {
+      "reflection_optimum": {
+        "argmin_beta_r": 0.3535808023997,
+        "area_preserving": 0.3535533905932738,
+        "R_at_argmin": 6.010790994883373e-09,
+        "exponent": 0.7500419465174464,
+        "is_area_preserving": true
+      },
+      "dissipation_baseline_T233": {
+        "argmin_beta_r": 0.5,
+        "area_increasing": 0.5,
+        "exponent": 1.0,
+        "is_area_increasing": true,
+        "recovers_3_4": false
+      },
+      "additive_blend_REJECTED": {
+        "argmins": [
+          0.5,
+          0.4992503748125937,
+          0.487256371814093,
+          0.46776611694152925,
+          0.4482758620689655,
+          0.43365817091454273
+        ],
+        "lams": [
+          0.0,
+          1.0,
+          20.0,
+          100.0,
+          500.0,
+          2000.0
+        ],
+        "slides_continuously": true,
+        "lands_at_finite_lam": false
+      },
+      "hard_constraint_optimum": {
+        "argmin_beta_r": 0.3570946452677366,
+        "area_preserving": 0.3535533905932738,
+        "exponent": 0.7554309462705525,
+        "feasible_pts": 189,
+        "selects_area_preserving": true,
+        "recovers_3_4": true
+      },
+      "convergence": {
+        "tols": [
+          0.005,
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "argmins": [
+          0.3794810259487026,
+          0.3648942552872356,
+          0.3570946452677366,
+          0.35465726713664314
+        ],
+        "exponents": [
+          0.7903470833799978,
+          0.7674794767613132,
+          0.7554309462705525,
+          0.7516903315662915
+        ],
+        "argmin_to_area_preserving": true,
+        "exponent_to_3_4": true
+      },
+      "falsification_control": {
+        "constraint_on_area_preserving": true,
+        "constraint_on_exponent": 0.7554309462705525,
+        "constraint_off_area_increasing": true,
+        "constraint_off_exponent": 1.0,
+        "decisive": true
+      },
+      "circularity_audit": {
+        "reflection_zero_is_area_preserving": true,
+        "premise_no_exponent": true,
+        "exponent_downstream": true,
+        "additive_blend_rejected": true,
+        "falsification_decisive": true,
+        "not_circular": true
+      },
+      "gate1_singles_out_3_4": true
+    },
+    "16": {
+      "reflection_optimum": {
+        "argmin_beta_r": 0.250049333166968,
+        "area_preserving": 0.25,
+        "R_at_argmin": 3.893249801870664e-08,
+        "exponent": 0.750080069952998,
+        "is_area_preserving": true
+      },
+      "dissipation_baseline_T233": {
+        "argmin_beta_r": 0.3968383291744444,
+        "area_increasing": 0.3968502629920499,
+        "exponent": 0.9999783082607134,
+        "is_area_increasing": true,
+        "recovers_3_4": false
+      },
+      "additive_blend_REJECTED": {
+        "argmins": [
+          0.3966433573525333,
+          0.3962223129403578,
+          0.3848541138116198,
+          0.368433381736776,
+          0.3528547384862831,
+          0.34106549494536964
+        ],
+        "lams": [
+          0.0,
+          1.0,
+          20.0,
+          100.0,
+          500.0,
+          2000.0
+        ],
+        "slides_continuously": true,
+        "lands_at_finite_lam": false
+      },
+      "hard_constraint_optimum": {
+        "argmin_beta_r": 0.25247836952798874,
+        "area_preserving": 0.25,
+        "exponent": 0.7540241416976945,
+        "feasible_pts": 118,
+        "selects_area_preserving": true,
+        "recovers_3_4": true
+      },
+      "convergence": {
+        "tols": [
+          0.005,
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "argmins": [
+          0.2683167631410551,
+          0.2579965332602007,
+          0.25247836952798874,
+          0.2507513106499682
+        ],
+        "exponents": [
+          0.7798312032888026,
+          0.7629967682584513,
+          0.7540241416976945,
+          0.751219552390053
+        ],
+        "argmin_to_area_preserving": true,
+        "exponent_to_3_4": true
+      },
+      "falsification_control": {
+        "constraint_on_area_preserving": true,
+        "constraint_on_exponent": 0.7540241416976945,
+        "constraint_off_area_increasing": true,
+        "constraint_off_exponent": 0.9999726526718178,
+        "decisive": true
+      },
+      "circularity_audit": {
+        "reflection_zero_is_area_preserving": true,
+        "premise_no_exponent": true,
+        "exponent_downstream": true,
+        "additive_blend_rejected": true,
+        "falsification_decisive": true,
+        "not_circular": true
+      },
+      "gate1_singles_out_3_4": true
+    },
+    "27": {
+      "reflection_optimum": {
+        "argmin_beta_r": 0.19243427904845228,
+        "area_preserving": 0.19245008972987526,
+        "R_at_argmin": 6.749950976680452e-09,
+        "exponent": 0.7499719572315033,
+        "is_area_preserving": true
+      },
+      "dissipation_baseline_T233": {
+        "argmin_beta_r": 0.3333055590273438,
+        "area_increasing": 0.33333333333333337,
+        "exponent": 0.9999494379244191,
+        "is_area_increasing": true,
+        "recovers_3_4": false
+      },
+      "additive_blend_REJECTED": {
+        "argmins": [
+          0.3332222777500139,
+          0.3327780554167361,
+          0.32256094175134653,
+          0.3087900494197346,
+          0.29546337942140044,
+          0.28524626575601086
+        ],
+        "lams": [
+          0.0,
+          1.0,
+          20.0,
+          100.0,
+          500.0,
+          2000.0
+        ],
+        "slides_continuously": true,
+        "lands_at_finite_lam": false
+      },
+      "hard_constraint_optimum": {
+        "argmin_beta_r": 0.19435139354143405,
+        "area_preserving": 0.19245008972987526,
+        "exponent": 0.7533707862106144,
+        "feasible_pts": 86,
+        "selects_area_preserving": true,
+        "recovers_3_4": true
+      },
+      "convergence": {
+        "tols": [
+          0.005,
+          0.001,
+          0.0001,
+          1e-05
+        ],
+        "argmins": [
+          0.2065730046830992,
+          0.19861784688543352,
+          0.19435139354143405,
+          0.19301812687143421
+        ],
+        "exponents": [
+          0.7749777040117164,
+          0.7609246688219682,
+          0.7533707862106144,
+          0.7510073681566217
+        ],
+        "argmin_to_area_preserving": true,
+        "exponent_to_3_4": true
+      },
+      "falsification_control": {
+        "constraint_on_area_preserving": true,
+        "constraint_on_exponent": 0.7533707862106144,
+        "constraint_off_area_increasing": true,
+        "constraint_off_exponent": 0.9999797735449754,
+        "decisive": true
+      },
+      "circularity_audit": {
+        "reflection_zero_is_area_preserving": true,
+        "premise_no_exponent": true,
+        "exponent_downstream": true,
+        "additive_blend_rejected": true,
+        "falsification_decisive": true,
+        "not_circular": true
+      },
+      "gate1_singles_out_3_4": true
+    }
+  },
+  "summary": {
+    "reflection_optimum_is_area_preserving_all_n": true,
+    "additive_blend_rejected_all_n": true,
+    "hard_constraint_singles_out_3_4_all_n": true,
+    "falsification_decisive_all_n": true,
+    "not_circular_all_n": true,
+    "gate1_singles_out_3_4_all_n": true
+  },
+  "obstruction": "WBE-nativeness of the pulsatile reflectionless (impedance-matching) premise is an interpretive WBE/BMR axiom, not a theorem; defensible and argued independently of 3/4 but not yet a cited axiom in-repo."
+}

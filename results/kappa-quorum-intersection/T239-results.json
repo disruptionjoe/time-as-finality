@@ -1,0 +1,339 @@
+{
+  "kappa_definition_unchanged_from_T224": "kappa(nu) = dim_{Z/2} H^1 of the signed graph of the neighbor-visible same/different cover. compute_kappa is imported VERBATIM from T224 and NOT re-tuned. Re-tuning per domain would be an automatic FAIL.",
+  "kappa_A": {
+    "three_cell_transitive_kappa3": {
+      "cover_name": "A:3_cell_transitive_kappa3",
+      "num_variables": 9,
+      "num_edges": 9,
+      "num_components": 3,
+      "kappa": 3,
+      "cycle_space_rank": 3,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_cell_transitive_kappa2": {
+      "cover_name": "A:2_cell_transitive_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_cell_transitive_kappa1": {
+      "cover_name": "A:1_cell_transitive_kappa1",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "satisfiable_kappa0": {
+      "cover_name": "A:satisfiable_all_same",
+      "num_variables": 3,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "kappa_B_via_nu": {
+    "three_split_brain": {
+      "cover_name": "B''':3_split_brain_kappa3",
+      "num_variables": 9,
+      "num_edges": 9,
+      "num_components": 3,
+      "kappa": 3,
+      "cycle_space_rank": 3,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "two_split_brain": {
+      "cover_name": "B''':2_split_brain_kappa2",
+      "num_variables": 6,
+      "num_edges": 6,
+      "num_components": 2,
+      "kappa": 2,
+      "cycle_space_rank": 2,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "one_split_brain": {
+      "cover_name": "B''':1_split_brain_kappa1",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "global_intersection": {
+      "cover_name": "B''':global_intersection_kappa0",
+      "num_variables": 1,
+      "num_edges": 0,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "native_B_quorum": {
+    "three_split_brain": {
+      "system": "3_split_brain_kappa3",
+      "num_nodes": 12,
+      "num_quorums": 6,
+      "all_disjoint_quorum_pairs": [
+        [
+          [
+            "b0_n0",
+            "b0_n1"
+          ],
+          [
+            "b0_n2",
+            "b0_n3"
+          ]
+        ],
+        [
+          [
+            "b1_n0",
+            "b1_n1"
+          ],
+          [
+            "b1_n2",
+            "b1_n3"
+          ]
+        ],
+        [
+          [
+            "b2_n0",
+            "b2_n1"
+          ],
+          [
+            "b2_n2",
+            "b2_n3"
+          ]
+        ]
+      ],
+      "split_brain_blocks": [
+        {
+          "block": 0,
+          "quorum_1": [
+            "b0_n0",
+            "b0_n1"
+          ],
+          "quorum_2": [
+            "b0_n2",
+            "b0_n3"
+          ],
+          "intersection": []
+        },
+        {
+          "block": 1,
+          "quorum_1": [
+            "b1_n0",
+            "b1_n1"
+          ],
+          "quorum_2": [
+            "b1_n2",
+            "b1_n3"
+          ],
+          "intersection": []
+        },
+        {
+          "block": 2,
+          "quorum_1": [
+            "b2_n0",
+            "b2_n1"
+          ],
+          "quorum_2": [
+            "b2_n2",
+            "b2_n3"
+          ],
+          "intersection": []
+        }
+      ],
+      "native_quorum_obstruction_rank": 3,
+      "has_global_intersection_property": false,
+      "witness_kind": "vertex-disjoint pairs of non-intersecting quorums (Helly/set-cover obstruction over node SETS; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle)"
+    },
+    "two_split_brain": {
+      "system": "2_split_brain_kappa2",
+      "num_nodes": 8,
+      "num_quorums": 4,
+      "all_disjoint_quorum_pairs": [
+        [
+          [
+            "b0_n0",
+            "b0_n1"
+          ],
+          [
+            "b0_n2",
+            "b0_n3"
+          ]
+        ],
+        [
+          [
+            "b1_n0",
+            "b1_n1"
+          ],
+          [
+            "b1_n2",
+            "b1_n3"
+          ]
+        ]
+      ],
+      "split_brain_blocks": [
+        {
+          "block": 0,
+          "quorum_1": [
+            "b0_n0",
+            "b0_n1"
+          ],
+          "quorum_2": [
+            "b0_n2",
+            "b0_n3"
+          ],
+          "intersection": []
+        },
+        {
+          "block": 1,
+          "quorum_1": [
+            "b1_n0",
+            "b1_n1"
+          ],
+          "quorum_2": [
+            "b1_n2",
+            "b1_n3"
+          ],
+          "intersection": []
+        }
+      ],
+      "native_quorum_obstruction_rank": 2,
+      "has_global_intersection_property": false,
+      "witness_kind": "vertex-disjoint pairs of non-intersecting quorums (Helly/set-cover obstruction over node SETS; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle)"
+    },
+    "one_split_brain": {
+      "system": "1_split_brain_kappa1",
+      "num_nodes": 4,
+      "num_quorums": 2,
+      "all_disjoint_quorum_pairs": [
+        [
+          [
+            "b0_n0",
+            "b0_n1"
+          ],
+          [
+            "b0_n2",
+            "b0_n3"
+          ]
+        ]
+      ],
+      "split_brain_blocks": [
+        {
+          "block": 0,
+          "quorum_1": [
+            "b0_n0",
+            "b0_n1"
+          ],
+          "quorum_2": [
+            "b0_n2",
+            "b0_n3"
+          ],
+          "intersection": []
+        }
+      ],
+      "native_quorum_obstruction_rank": 1,
+      "has_global_intersection_property": false,
+      "witness_kind": "vertex-disjoint pairs of non-intersecting quorums (Helly/set-cover obstruction over node SETS; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle)"
+    },
+    "global_intersection": {
+      "system": "global_intersection_kappa0",
+      "num_nodes": 5,
+      "num_quorums": 2,
+      "all_disjoint_quorum_pairs": [],
+      "split_brain_blocks": [],
+      "native_quorum_obstruction_rank": 0,
+      "has_global_intersection_property": true,
+      "witness_kind": "vertex-disjoint pairs of non-intersecting quorums (Helly/set-cover obstruction over node SETS; NOT a cycle, NOT a Z/2 parity product, NOT a directed tournament cycle)"
+    }
+  },
+  "ast_shared_derivation_audit": {
+    "transport_path_imports_d1_restriction_system": false,
+    "transport_path_imports_cap_theorem_bridge": false,
+    "T28_CAP_imports_d1_restriction_system": true,
+    "native_witness_calls_compute_kappa": false,
+    "compute_kappa_is_T224_object_not_retuned": true,
+    "shares_derivation_with_T39_or_CAP": false,
+    "note": "B''' = CAP/consensus quorum system. Native obstruction is a quorum-intersection FAILURE (two disjoint quorums -- a Helly/set-cover obstruction over node SETS), structurally distinct from the parity-product (T21/T229) AND directed-tournament-cycle (T234) witnesses, and the FIRST non-cycle-shaped genre. The transport path imports neither the T39 engine nor cap_theorem_bridge (a fresh native witness built from scratch), so no shared derivation; compute_kappa is the verbatim T224 object and the native witness never calls it."
+  },
+  "genre_distinctness_certificate": {
+    "helly_monotone_shared_node_kills_obstruction": true,
+    "rank_after_adding_shared_node": 0,
+    "within_quorum_agreement_graph_is_acyclic": true,
+    "native_rank_invariant_under_relabeling": true,
+    "native_reads_set_intersection": true,
+    "native_calls_no_cycle_or_parity_genre_helpers": true,
+    "is_helly_set_cover_not_cycle_shaped": true,
+    "note": "Native witness is a Helly/set-cover obstruction (two quorums with empty intersection): destroyed by adding a shared node (monotone), carried by an ACYCLIC agreement forest (no cycle to carry a parity/orientation), and invariant under within-side relabeling. Structurally distinct from the signed-graph parity cycle (T21/T229) AND the directed tournament cycle (T234) -- the FIRST non-cycle-shaped genre."
+  },
+  "trials": [
+    {
+      "a_instance": "three_cell_transitive_kappa3",
+      "kappa_A": 3,
+      "predicted_kappa_B": 3,
+      "native_quorum_rank": 3,
+      "kappa_B_via_nu": 3,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "two_cell_transitive_kappa2",
+      "kappa_A": 2,
+      "predicted_kappa_B": 2,
+      "native_quorum_rank": 2,
+      "kappa_B_via_nu": 2,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": true
+    },
+    {
+      "a_instance": "one_cell_transitive_kappa1",
+      "kappa_A": 1,
+      "predicted_kappa_B": 1,
+      "native_quorum_rank": 1,
+      "kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    },
+    {
+      "a_instance": "satisfiable_kappa0",
+      "kappa_A": 0,
+      "predicted_kappa_B": 0,
+      "native_quorum_rank": 0,
+      "kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "rank_is_load_bearing": false
+    }
+  ],
+  "all_predictions_match": true,
+  "rank_load_bearing": true,
+  "rank_separates_0_1_2_3": true,
+  "no_shared_derivation": true,
+  "native_independent_of_compute_kappa": true,
+  "kappa_single_formula": true,
+  "genre_is_noncycle_helly_set_cover": true,
+  "gate_cleared": true,
+  "verdict": "PASS_NONCYCLE_GENRE",
+  "meaning": "If PASS_NONCYCLE_GENRE: kappa transported from a T39 signed-graph A-instance predicts the EXACT integer number of independent native obstructions in a FOURTH absorber whose native witness is a quorum-intersection FAILURE (a Helly/set-cover obstruction over node SETS) -- a witness that is NOT cycle-shaped, NOT a Z/2 parity product (T21/T229), and NOT a directed tournament cycle (T234). This is the FIRST non-cycle-shaped genre, retiring T234's residual edge: the rank law is no longer confined to cycle-shaped witnesses, so the cross-domain RANK classification is witnessed across FOUR absorbers spanning THREE structural genres (parity cycle, directed tournament cycle, Helly set-cover), and the rank ceiling is pushed to k = 3. The integrator ratifies whether this makes the classification GENRE-AGNOSTIC. If CYCLE_SHAPED_ONLY: predictions held but the native witness was secretly cycle-shaped, naming the transport-law boundary (cycle-shaped native obstructions only) -- still a real, citable multi-genre cross-domain result. If KILLED: the prediction missed or compute_kappa needed re-tuning.",
+  "complexity_tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "guardrails": "No physics/geometry/curvature/new-object/CAP-theorem-as-physical-law language promoted. kappa is a Z/2 graph-homology rank over a finite cover; 'quorum' is a finite node subset; 'split brain' is a pair of node subsets with empty intersection; native rank is counted by set-intersection emptiness + greedy vertex-disjoint block packing (poly_decider, not a search), never by compute_kappa. No NP-hardness/CSP-completeness claimed."
+}

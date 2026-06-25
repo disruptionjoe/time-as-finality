@@ -1,0 +1,132 @@
+{
+  "mittag_leffler": {
+    "chain_depth": 4,
+    "stages": [
+      {
+        "label": "annular_4",
+        "cover_size": 4,
+        "h0_dim": 1,
+        "connected": true,
+        "connecting_map_is_defined": false,
+        "connecting_map_is_iso": true,
+        "image_dim": 1
+      },
+      {
+        "label": "annular_8",
+        "cover_size": 8,
+        "h0_dim": 1,
+        "connected": true,
+        "connecting_map_is_defined": true,
+        "connecting_map_is_iso": true,
+        "image_dim": 1
+      },
+      {
+        "label": "annular_16",
+        "cover_size": 16,
+        "h0_dim": 1,
+        "connected": true,
+        "connecting_map_is_defined": true,
+        "connecting_map_is_iso": true,
+        "image_dim": 1
+      },
+      {
+        "label": "annular_32",
+        "cover_size": 32,
+        "h0_dim": 1,
+        "connected": true,
+        "connecting_map_is_defined": true,
+        "connecting_map_is_iso": true,
+        "image_dim": 1
+      },
+      {
+        "label": "annular_64",
+        "cover_size": 64,
+        "h0_dim": 1,
+        "connected": true,
+        "connecting_map_is_defined": true,
+        "connecting_map_is_iso": true,
+        "image_dim": 1
+      }
+    ],
+    "every_stage_connected": true,
+    "every_connecting_map_iso": true,
+    "images_eventually_stable": true,
+    "system_is_constant": true,
+    "lim1_vanishes": true,
+    "cofinal_chain_controls_tower": true,
+    "detail": "H^0 inverse system over the cofinal bisection chain (depth 4): H^0 dim = 1 (connected) at every stage; every restriction connecting map is the identity iso Z2->Z2; the system is CONSTANT; images are stable (all = Z2); Mittag-Leffler holds; lim^1 = 0. Cofinality (T236) reduces the full-poset lim^1 to this chain's lim^1, so lim^1 = 0 over the full cover poset. EXACT finite-input ML theorem; not a continuum inference."
+  },
+  "triple_overlap_stable": true,
+  "triple_overlap_verdicts": [
+    {
+      "name": "triangulated_cylinder_4",
+      "num_triples": 4,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": true,
+      "class_obstructed": false,
+      "loop_sign": 1,
+      "detail": "'triangulated_cylinder_4': 8 patches, 12 overlaps, 4 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: True. [g] != 0 (obstructed): False. Loop sign: +1."
+    },
+    {
+      "name": "triangulated_mobius_4",
+      "num_triples": 4,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": false,
+      "class_obstructed": true,
+      "loop_sign": 1,
+      "detail": "'triangulated_mobius_4': 8 patches, 12 overlaps, 4 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: False. [g] != 0 (obstructed): True. Loop sign: +1."
+    },
+    {
+      "name": "triangulated_cylinder_6",
+      "num_triples": 6,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": true,
+      "class_obstructed": false,
+      "loop_sign": 1,
+      "detail": "'triangulated_cylinder_6': 12 patches, 18 overlaps, 6 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: True. [g] != 0 (obstructed): False. Loop sign: +1."
+    },
+    {
+      "name": "triangulated_mobius_6",
+      "num_triples": 6,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": false,
+      "class_obstructed": true,
+      "loop_sign": 1,
+      "detail": "'triangulated_mobius_6': 12 patches, 18 overlaps, 6 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: False. [g] != 0 (obstructed): True. Loop sign: +1."
+    },
+    {
+      "name": "triangulated_cylinder_8",
+      "num_triples": 8,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": true,
+      "class_obstructed": false,
+      "loop_sign": 1,
+      "detail": "'triangulated_cylinder_8': 16 patches, 24 overlaps, 8 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: True. [g] != 0 (obstructed): False. Loop sign: +1."
+    },
+    {
+      "name": "triangulated_mobius_8",
+      "num_triples": 8,
+      "d1_nonvacuous": true,
+      "is_valid_cocycle": true,
+      "full_coboundary_section": false,
+      "class_obstructed": true,
+      "loop_sign": 1,
+      "detail": "'triangulated_mobius_8': 16 patches, 24 overlaps, 8 GENUINE triples (d1 condition non-vacuous: True). Valid cocycle (every triple sums to 0): True. Full coboundary computation reports a global section: False. [g] != 0 (obstructed): True. Loop sign: +1."
+    }
+  ],
+  "comparison": {
+    "ml_certified": true,
+    "tower_cech_iso": true,
+    "tower_cech_iso_license": "Cech-H^1(colim covers) == lim-corrected Cech-H^1 with the lim^1 H^0 correction CERTIFIED zero: the H^0 inverse system over the cofinal bisection chain has all connecting (restriction) maps equal to the identity iso Z2->Z2 (every stage connected => H^0 = Z2), so the system is constant, Mittag-Leffler holds with stable images, and lim^1 = 0. Cofinality (T236) reduces the full-poset lim^1 to this chain's lim^1. This is an EXACT finite-input ML theorem, not a continuum inference.",
+    "continuum_derived_iso": null,
+    "continuum_missing_object": "Identifying the cover-colimit Cech-H^1 with the DERIVED functor sheaf cohomology of a CONTINUUM band needs, BEYOND lim^1 H^0 = 0, that the annular refinement tower be COFINAL IN ALL OPEN COVERS of the band (a good-cover / hypercover cofinality), so that Cech computes the derived functor. A countable annular tower does NOT establish that good-cover cofinality; this is the one remaining tower-level object, and a finite witness cannot supply it. (Distinct from the lim^1 term, which IS now certified.)",
+    "forbidden": "Asserting the CONTINUUM derived-sheaf iso, or a general continuum sheaf-cohomology theorem, is FORBIDDEN from this finite witness: the ML certificate clears the lim^1 correction but NOT the good-cover cofinality that the continuum derived identification additionally needs."
+  },
+  "verdict": "conditional",
+  "summary": "T241 attacks the SINGLE residual gap T236 pinned the CSP-PO1 continuum row to (the Cech->derived comparison's lim^1 / Mittag-Leffler vanishing) and retires the thin-cover (d1 = 0) restriction. (1) lim^1 / MITTAG-LEFFLER: the orientation-sheaf H^0 inverse system over the COFINAL uniform-bisection chain has H^0 = Z2 (connected) at every stage and every restriction connecting map equal to the identity iso, so the system is CONSTANT, Mittag-Leffler holds with stable images, and lim^1 VANISHES; cofinality (imported from T236, discharged) reduces the full-poset lim^1 to this chain's lim^1. This is an EXACT finite-input ML theorem and it LICENSES the TOWER-LEVEL Cech iso (Cech-H^1 of the colimit == lim-corrected Cech-H^1, correction now zero) -- the flag T236 left None is set True WITH the ML certificate as its license. (2) TRIPLE-OVERLAP WITNESS: a triangulated-annulus cover with GENUINE triple intersections (d1 != 0 exercised) carries the orientation reversal as a valid NON-COBOUNDARY 1-cocycle (every triple's cocycle sum 0, global wrap parity odd); the FULL coboundary computation (exhaustive d0-image search, NOT the cycle-space shortcut) reports the correct Z2 class -- cylinder a section, Mobius obstructed -- refinement-stably across n = 4, 6, 8, retiring the vacuous-cocycle restriction. (3) The strictly-LARGER CONTINUUM derived-sheaf iso stays None: identifying the cover-colimit with the DERIVED sheaf cohomology of a continuum band needs, BEYOND lim^1 = 0, a GOOD-COVER / hypercover cofinality (the annular tower cofinal in ALL open covers) that a countable tower does not establish -- the one newly-named binding hypothesis. Verdict CONDITIONAL: the lim^1 gap is CLEARED at the tower level and the thin-cover restriction is RETIRED, but the continuum derived identification is bounded by the good-cover cofinality hypothesis (binding honesty guard: a general continuum sheaf-cohomology theorem is FORBIDDEN from this finite witness). Tag: finite_witness + poly_decider."
+}

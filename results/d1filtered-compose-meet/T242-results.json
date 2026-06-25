@@ -1,0 +1,601 @@
+{
+  "chain_variant_legal": {
+    "inputs_legal": true,
+    "compose_filtered_illegal": true,
+    "compose_filtered_chain": [
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ],
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support"
+      ],
+      [
+        "holder_redundancy",
+        "reversal_cost"
+      ],
+      [
+        "holder_redundancy"
+      ]
+    ],
+    "chain_variant_legal": true,
+    "chain_variant_filtration": [
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support",
+        "reversal_cost"
+      ],
+      [
+        "accessible_support",
+        "holder_redundancy",
+        "branch_support"
+      ],
+      [
+        "holder_redundancy"
+      ]
+    ],
+    "chain_variant_descending": true,
+    "meet_closure_has_antichain": true
+  },
+  "chain_variant_associativity": {
+    "chain_variant_non_associative": true,
+    "witness_triples": [
+      {
+        "label": "break_then_nested",
+        "associative": false,
+        "left_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ],
+          []
+        ],
+        "right_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "holder_redundancy"
+          ],
+          []
+        ],
+        "both_legal": true
+      },
+      {
+        "label": "all_non_nested",
+        "associative": true,
+        "left_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "holder_redundancy"
+          ]
+        ],
+        "right_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "holder_redundancy"
+          ]
+        ],
+        "both_legal": true
+      },
+      {
+        "label": "nested_control",
+        "associative": true,
+        "left_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ]
+        ],
+        "right_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ]
+        ],
+        "both_legal": true
+      }
+    ]
+  },
+  "semilattice_legal": {
+    "embed_inputs_legal": true,
+    "semilattice_composite_legal": true,
+    "semilattice_layers": [
+      [
+        "accessible_support",
+        "branch_support",
+        "holder_redundancy",
+        "reversal_cost"
+      ],
+      [
+        "accessible_support",
+        "branch_support",
+        "holder_redundancy"
+      ],
+      [
+        "holder_redundancy",
+        "reversal_cost"
+      ],
+      [
+        "holder_redundancy"
+      ]
+    ],
+    "composite_has_antichain": true,
+    "second_non_nested_legal": true
+  },
+  "semilattice_associativity": {
+    "all_associative": true,
+    "triples": [
+      {
+        "label": "nested",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      },
+      {
+        "label": "break_then_nested",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      },
+      {
+        "label": "nested_then_break",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      },
+      {
+        "label": "all_non_nested",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      },
+      {
+        "label": "n2_chain",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      },
+      {
+        "label": "with_identity",
+        "associative": true,
+        "left_legal": true,
+        "right_legal": true
+      }
+    ]
+  },
+  "semilattice_identity_laws": {
+    "left_identity_law": true,
+    "right_identity_law": true,
+    "both": true,
+    "detail": [
+      {
+        "name": "J(f_break)",
+        "left_identity": true,
+        "right_identity": true
+      },
+      {
+        "name": "J(g_break)",
+        "left_identity": true,
+        "right_identity": true
+      },
+      {
+        "name": "J(f_n2)",
+        "left_identity": true,
+        "right_identity": true
+      },
+      {
+        "name": "J(f_nest)",
+        "left_identity": true,
+        "right_identity": true
+      },
+      {
+        "name": "J(k_nn)",
+        "left_identity": true,
+        "right_identity": true
+      }
+    ]
+  },
+  "semilattice_nested_extension": {
+    "all_agree_on_nested": true,
+    "detail": [
+      {
+        "label": "succ_4_3__3_2",
+        "agree": true,
+        "old_legal": true,
+        "old_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ]
+      },
+      {
+        "label": "succ_3_2__2_1",
+        "agree": true,
+        "old_legal": true,
+        "old_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ]
+        ]
+      },
+      {
+        "label": "shared_top_4_3__4_2",
+        "agree": true,
+        "old_legal": true,
+        "old_filtration": [
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support",
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ]
+      }
+    ]
+  },
+  "gr_functor_battery": {
+    "nested_reports": [
+      {
+        "label": "nested_succ_4_3__3_2",
+        "gr_semilattice_strata": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "mu_concat": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "semilattice_is_chain": true,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": true
+      },
+      {
+        "label": "nested_succ_3_2__2_1",
+        "gr_semilattice_strata": [
+          [
+            "branch_support"
+          ],
+          [
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ]
+        ],
+        "mu_concat": [
+          [
+            "branch_support"
+          ],
+          [
+            "holder_redundancy"
+          ],
+          [
+            "accessible_support"
+          ]
+        ],
+        "semilattice_is_chain": true,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": true
+      },
+      {
+        "label": "nested_shared_top",
+        "gr_semilattice_strata": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "mu_concat": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "semilattice_is_chain": true,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": true
+      }
+    ],
+    "non_nested_reports": [
+      {
+        "label": "NEWLY_LEGAL_ahb__hr",
+        "gr_semilattice_strata": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "branch_support"
+          ],
+          [
+            "reversal_cost"
+          ],
+          [
+            "holder_redundancy"
+          ]
+        ],
+        "mu_concat": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "accessible_support",
+            "branch_support"
+          ],
+          [
+            "holder_redundancy"
+          ]
+        ],
+        "semilattice_is_chain": false,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": false
+      },
+      {
+        "label": "NEWLY_LEGAL_ar__hb",
+        "gr_semilattice_strata": [
+          [
+            "accessible_support",
+            "reversal_cost"
+          ],
+          [
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "reversal_cost"
+          ],
+          [
+            "holder_redundancy",
+            "branch_support"
+          ],
+          []
+        ],
+        "mu_concat": [
+          [
+            "holder_redundancy",
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "reversal_cost"
+          ],
+          []
+        ],
+        "semilattice_is_chain": false,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": false
+      },
+      {
+        "label": "NEWLY_LEGAL_ahb__ah",
+        "gr_semilattice_strata": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "mu_concat": [
+          [
+            "reversal_cost"
+          ],
+          [
+            "branch_support"
+          ],
+          [
+            "accessible_support",
+            "holder_redundancy"
+          ]
+        ],
+        "semilattice_is_chain": true,
+        "comparison_exists": true,
+        "same_dropped_support": true,
+        "same_bottom": true,
+        "strict_equal": true
+      }
+    ],
+    "nested_strict": true,
+    "non_nested_comparison_exists": true,
+    "non_nested_strict": false,
+    "non_nested_any_antichain": true,
+    "totality_forces_lax": true
+  },
+  "non_circularity_guard": {
+    "semilattice_has_antichain": true,
+    "mu_is_a_chain": true,
+    "same_dropped_support": true,
+    "same_bottom": true,
+    "structures_differ": true,
+    "comparison_exists": true
+  },
+  "honesty_boundary": {
+    "non_monotone_is_legal": false,
+    "gr_rejects_non_monotone": true,
+    "totality_is_finite_category_only": true,
+    "general_cocompleteness_still_open": true
+  },
+  "summary": {
+    "chain_variant_verdict": "chain_variant_legal_but_non_associative_NO_GO",
+    "chain_variant_legal_on_breaking_witness": true,
+    "chain_variant_non_associative": true,
+    "meet_closure_has_antichain": true,
+    "semilattice_total_category": true,
+    "semilattice_associative": true,
+    "semilattice_identity_laws": true,
+    "semilattice_extends_filtered_on_nested": true,
+    "functor_verdict": "lax_total_functor_on_semilattice_category",
+    "gr_total_lax_on_semilattice": true,
+    "nested_strict": true,
+    "non_nested_comparison_exists": true,
+    "non_nested_strict": false,
+    "totality_forces_lax": true,
+    "mu_independent_of_compose_code": true,
+    "general_cocompleteness_still_open": true,
+    "top_line": "conditional_total_category_requires_codomain_change_gr_lax"
+  }
+}

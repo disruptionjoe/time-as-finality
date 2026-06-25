@@ -1438,3 +1438,87 @@ No physics, geometry, social-welfare-as-law, or new-object language promoted thi
 Two integrator-facing recommendations stand (T224 conditional -> closed via T234's
 genre-crossing completion; MTI metric content -> objective-invariant-under-WBE-native
 -constraint via T238), both deferred to integrator ratification.
+
+## Phase 27: Five-Lane Run Cycle 4/5 — First Non-Cycle Native Genre, Route (b) Exhausted, CSP-PO1 lim^1 Discharged, MTI Sub-Object (1) Resolved (2026-06-25)
+
+The breakout crosses into its first NON-cycle native genre (fourth absorber, rank
+ceiling to k=3); the last route-(b) crack closes and route (a) bounded subsumption
+completes over all three crack types; the CSP-PO1 continuum row's single residual
+lim^1 gap is discharged at the tower level and the thin-cover restriction retired;
+the D1Cat line's named compose_meet repair is decided (total category only via a
+codomain change, gr total-but-lax); the MTI continuum blocker's FIRST sub-object
+(area-preserving / 3/4) resolves positive.
+
+- **T239 (rank-k NON-cycle-shaped genre — CAP/consensus quorum-intersection, fourth
+  absorber): conditional / PASS_NONCYCLE_GENRE at the gate.** The verbatim T224
+  `compute_kappa` (object-identity asserted, not re-tuned) transported kappa in
+  {0,1,2,3} to a FOURTH a-priori-unrelated absorber — a fresh-from-scratch
+  CAP/consensus quorum system whose native obstruction is a quorum-INTERSECTION
+  failure (Helly/set-cover over node SETS), provably NON-cycle-shaped (Helly-monotone:
+  a shared node kills it; acyclic agreement forest; co_names call no cycle/parity
+  helper) — predicting the exact native rank {0,1,2,3} before measuring, off-by-one
+  guard held, rank ceiling pushed to k=3; AST-clean of d1_restriction_system and
+  cap_theorem_bridge. Retires T234's "cycle-shaped only" edge: the cross-domain RANK
+  classification is now witnessed across FOUR absorbers / THREE native genres (parity
+  cycle; tournament directed cycle; Helly/set-cover quorum-intersection — the first
+  non-cycle genre), so the rank law is genre-agnostic across the demonstrated genres.
+  Recommendation to integrator: upgrade the classification to "witnessed across three
+  genres, one provably non-cycle" and decide whether this advances criterion 6. One
+  open edge: a non-combinatorial (value-gap / rate-distortion) native genre.
+- **T240 (globalization-obstruction certificate — the last untested route-(b) crack):
+  no-go — closed at gate 2.** The finite Z/2 Cech-H1 obstruction to patching local
+  nu-fixing source automorphisms over a cyclic cover separates a same-nu pair, is local
+  + relabel-stable, and SURVIVES both prior absorbers (nu_struct = field + gluing AND
+  per-piece nu_piece) but is absorbed by nu_cocycle (the per-overlap transition cocycle,
+  an admissible source relation per T108/T127/T235) — the first crack to survive TWO
+  absorbers and fall only to a THIRD. Route (a) bounded subsumption is now COMPLETE over
+  all three crack types (value T230 / structure T235 / globalization T240): every local,
+  relabel-stable source-side separator factors through some admissible enlargement.
+  Independent-motivation stays NOT EARNED via the LossKernel route; the same-neighbor-data
+  novelty route is cleanly closeable (integrator's call, maximum care). Constructive next
+  object is OFF the LossKernel object onto the map-between-absorbers (kappa) frontier.
+- **T241 (CSP-PO1 continuum: lim^1 / Mittag-Leffler vanishing + thin-cover retirement):
+  conditional — single residual gap discharged at the tower level.** The orientation-sheaf
+  H^0 inverse system over the cofinal bisection chain is constant (H^0=Z2 at every stage,
+  all restriction maps identity iso), so Mittag-Leffler holds, lim^1 vanishes, and
+  cofinality (from T236) reduces full-poset lim^1 to the chain; an exact finite-input ML
+  theorem licenses tower_cech_iso None->True. The thin-cover (d1=0, vacuous cocycle) note
+  is retired via a triangulated-annulus cover with genuine triples (full coboundary
+  computation reports the correct Z2 class refinement-stably n=4,6,8). The continuum row
+  STAYS conditional: conditionality is now pinned to ONE newly-named strictly-larger
+  hypothesis — good-cover / hypercover cofinality for the continuum derived-sheaf
+  identification (continuum_derived_iso honestly None). No continuum sheaf-cohomology
+  theorem; no continuum proto_independent promotion.
+- **T242 (compose_meet legality-closed total category; is gr a TOTAL functor?):
+  conditional — total category only via a codomain change, gr total-but-lax.** T237's
+  named compose_meet repair succeeds but the pairwise-meet-closure of two descending
+  CHAINS is in general a meet-semilattice containing an ANTICHAIN, so (a) the chain-valued
+  compose_meet_chain is always-legal but NON-ASSOCIATIVE (a real no-go for a chain-valued
+  total category of filtrations) and (b) the semilattice-valued compose_meet_semilattice
+  IS a proper TOTAL category at the cost of changing the codomain from chains to
+  meet-semilattices, on which gr_semilattice is a TOTAL but GENUINELY LAX functor (strict
+  on nested pairs, comparison-exists-not-strict on newly-legal non-nested pairs — totality
+  forces laxity). mu imported from T237 unchanged and proven independent. General
+  cocompleteness at infinity stays OPEN (binding T228 guard). Next: the lax-functor
+  coherence pentagon for gr over triples, and the chain-embedding J with bottom o
+  gr_semilattice vs T232's forgetful U.
+- **T243 (WBE/BMR-native justification of the area-preserving n^-1/2 condition — MTI
+  sub-object 1): conditional — resolved positive.** The area-preserving n^-1/2 condition
+  that yields the 3/4 exponent is singled out by a defensibly WBE/BMR-native pulsatile
+  impedance-matching (reflectionless) junction premise (R with unique zero at
+  n*beta_r^2=1 ⟺ beta_r=n^-1/2), argued independently of 3/4, non-circular (five-guard
+  audit), with a decisive falsification control reverting to T233's area-increasing
+  n^-1/3 (a=1) across n in {4,8,16,27}; the additive blend was built then rejected as a
+  forbidden exponent dial. Conditional on the WBE/BMR-nativeness interpretive premise (no
+  cited axiom yet); does NOT promote MTI. Both remaining MTI gaps are now symmetric
+  "interpretive premise -> cited axiom" upgrades (this reflectionless/area-preserving
+  axiom + T238's terminal-reachability coverage axiom); MTI promotes only when both land.
+
+No physics, geometry, consensus-as-law, exponent-as-law, or new-object language promoted
+this cycle. Standing integrator-facing recommendations: T224 conditional -> closed via
+T234 (carried from cycle 3); the cross-domain rank classification upgraded to genre-
+agnostic-across-demonstrated-genres via T239 (criterion-6 advance is the integrator's
+call); the LossKernel / same-neighbor-data novelty route demotable to closed via T240;
+MTI metric content objective-invariant-under-WBE-native-constraint via T238, with both
+MTI sub-objects (T238 coverage + T243 area-preserving) now reduced to premise->cited-axiom
+upgrades. All deferred to integrator ratification.

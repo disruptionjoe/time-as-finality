@@ -46,6 +46,12 @@ Temporal Issuance bridge note is
 it uses GU as a hostile testbed for TaF transport, projection, finality, and
 loss machinery without promoting any TaF or GU claim.
 
+The dual-record opportunity placement note is
+[explorations/dual-record-opportunity-finality-crosswalk-2026-06-25.md](explorations/dual-record-opportunity-finality-crosswalk-2026-06-25.md):
+it treats stable records and opportunity-edge records as a finite fixture
+specification for local-minimum escape, while leaving source-side issuance to
+Temporal Issuance gates.
+
 ## Project Definition
 
 Time as Finality asks whether:

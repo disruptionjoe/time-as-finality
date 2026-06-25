@@ -26,6 +26,38 @@ stable enough for the declared observer class to build further mathematics on
 It does not mean social authority, source issuance, truth of the underlying
 physics, or exemption from absorber checks.
 
+## Method Rule: Strong Form vs First Formalization
+
+Every S7 artifact should keep two layers separate.
+
+Strong-form hypothesis:
+
+```text
+Legitimacy is a first-class primitive for observer mathematics, not merely a
+derived property of finality, consensus, measurement, or geometry.
+```
+
+On this reading, a single idempotent legitimacy structure may organize how
+observers obtain buildable mathematics from local, obstructed, signed, or
+contextual data across the full stack:
+
+```text
+records -> observer readout -> effect typing -> institutional contribution
+```
+
+Conservative first formalization:
+
+```text
+Use sheafification / effective descent over a declared site as the first
+typed model of that primitive.
+```
+
+The conservative model is an implementation path, not the whole hypothesis.
+If the sheafification witness fails, that falsifies or narrows this route to
+S7; it does not automatically exhaust the strong-form idea. Conversely, if the
+sheafification witness succeeds, it supports one formalization of S7; it does
+not prove that legitimacy is the unique master primitive.
+
 ## S7 Core Claim
 
 Observer-facing mathematics requires a first-class legitimacy operation.

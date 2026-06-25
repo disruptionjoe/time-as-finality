@@ -362,6 +362,19 @@ Status: proposed refinement of S6, ready for a later S1-S7 persona pass.
 The S7 addendum is recorded in
 `explorations/legitimacy-monad-finality-bridge-addendum-2026-06-25.md`.
 
+Important separation:
+
+```text
+Strong-form S7:
+  legitimacy may be a first-class primitive for observer mathematics.
+
+Conservative route:
+  sheafification / effective descent is the first typed formalization to test.
+```
+
+The conservative route must not flatten the hypothesis. It is the first
+implementation path, not the full content of S7.
+
 Steelman statement:
 
 ```text

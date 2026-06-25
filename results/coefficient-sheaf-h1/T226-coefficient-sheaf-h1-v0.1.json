@@ -1,0 +1,68 @@
+{
+  "h1_verdicts": [
+    {
+      "nerve_name": "mobius_2set",
+      "coefficient_aware_class_trivial": true,
+      "has_global_section_aware": true,
+      "loop_sign": -1,
+      "is_valid_cocycle": true,
+      "blind_reports_section": true,
+      "blind_is_false_section": false,
+      "detail": "Cover 'mobius_2set': 2 patches, 1 overlaps, 0 triples. Transition 1-cochain g is a valid cocycle: True. [g] trivial in H1 (global section exists via coefficient-aware encoding): True. Loop sign product (informal monodromy): -1. Blind scalar encoding reports a section: True (false section: False)."
+    },
+    {
+      "nerve_name": "mobius_annular_4",
+      "coefficient_aware_class_trivial": false,
+      "has_global_section_aware": false,
+      "loop_sign": -1,
+      "is_valid_cocycle": true,
+      "blind_reports_section": true,
+      "blind_is_false_section": true,
+      "detail": "Cover 'mobius_annular_4': 4 patches, 4 overlaps, 0 triples. Transition 1-cochain g is a valid cocycle: True. [g] trivial in H1 (global section exists via coefficient-aware encoding): False. Loop sign product (informal monodromy): -1. Blind scalar encoding reports a section: True (false section: True)."
+    },
+    {
+      "nerve_name": "cylinder_annular_4",
+      "coefficient_aware_class_trivial": true,
+      "has_global_section_aware": true,
+      "loop_sign": 1,
+      "is_valid_cocycle": true,
+      "blind_reports_section": true,
+      "blind_is_false_section": false,
+      "detail": "Cover 'cylinder_annular_4': 4 patches, 4 overlaps, 0 triples. Transition 1-cochain g is a valid cocycle: True. [g] trivial in H1 (global section exists via coefficient-aware encoding): True. Loop sign product (informal monodromy): +1. Blind scalar encoding reports a section: True (false section: False)."
+    }
+  ],
+  "ac_comparisons": [
+    {
+      "nerve_name": "mobius_annular_4",
+      "ac5_transition_retained": true,
+      "ac6_restricted_obstructed": true,
+      "ac7_source_satisfiable": true,
+      "h1_obstructed": true,
+      "agrees_with_po1": true,
+      "detail": "Cover 'mobius_annular_4': AC5 transition retained = True. PO1 AC6 (restricted system globally obstructed) = True. AC7 (each patch locally orientable / source satisfiable) = True. Coefficient-aware H1 reports obstruction = True. H1 verdict agrees with PO1 AC6 = True. Carrying AC5 (the transition cochain) reproduces the PO1 restricted-obstruction verdict."
+    },
+    {
+      "nerve_name": "mobius_annular_4",
+      "ac5_transition_retained": false,
+      "ac6_restricted_obstructed": true,
+      "ac7_source_satisfiable": true,
+      "h1_obstructed": false,
+      "agrees_with_po1": false,
+      "detail": "Cover 'mobius_annular_4': AC5 transition retained = False. PO1 AC6 (restricted system globally obstructed) = True. AC7 (each patch locally orientable / source satisfiable) = True. Coefficient-aware H1 reports obstruction = False. H1 verdict agrees with PO1 AC6 = False. Forgetting AC5 (coefficient-blind) makes H1 trivial while PO1's ground-truth AC6 still flags obstruction -> the T222 false-section trap, localized to AC5-forgetting."
+    },
+    {
+      "nerve_name": "cylinder_annular_4",
+      "ac5_transition_retained": true,
+      "ac6_restricted_obstructed": false,
+      "ac7_source_satisfiable": true,
+      "h1_obstructed": false,
+      "agrees_with_po1": true,
+      "detail": "Cover 'cylinder_annular_4': AC5 transition retained = True. PO1 AC6 (restricted system globally obstructed) = False. AC7 (each patch locally orientable / source satisfiable) = True. Coefficient-aware H1 reports obstruction = False. H1 verdict agrees with PO1 AC6 = True. Carrying AC5 (the transition cochain) reproduces the PO1 restricted-obstruction verdict."
+    }
+  ],
+  "closes_false_section_trap": true,
+  "aware_agrees_with_po1_when_ac5_retained": true,
+  "blind_loses_obstruction_when_ac5_forgotten": true,
+  "verdict": "conditional",
+  "summary": "Coefficient-aware Cech-H1 over a finite annular nerve, valued in Z2, carrying the orientation transition 1-cochain. On the Mobius witness it reports a NONTRIVIAL class (no global section, loop sign -1) exactly where the T222 coefficient-blind scalar encoding falsely reported a section; on the cylinder both report a section. The transition cochain IS PO1's AC5 'named forgotten structure': retaining it reproduces PO1's AC6 restricted-obstruction verdict, forgetting it (blind encoding) collapses the class to trivial and loses the obstruction -- the T222 false-section trap localized to AC5-forgetting. FINITE WITNESS ONLY: no general continuum sheaf-cohomology theorem is claimed; this exhibits the coefficient-aware-vs-blind distinction on finite covers."
+}

@@ -1,0 +1,146 @@
+{
+  "kappa_definition": "kappa(nu) = dim_{Z/2} H^1 of the signed graph of the neighbor-visible same/different cover = rank of the frustrated cycle space = number of independent frustrated parity cycles. ONE formula (compute_kappa), parameterized only by (variables, signed edges).",
+  "kappa_A": {
+    "min_direct_conflict": {
+      "cover_name": "A:min_direct_conflict",
+      "num_variables": 2,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "min_transitive_conflict": {
+      "cover_name": "A:min_transitive_conflict",
+      "num_variables": 3,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "tree_structured": {
+      "cover_name": "A:tree_structured",
+      "num_variables": 4,
+      "num_edges": 3,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    },
+    "satisfiable_all_same": {
+      "cover_name": "A:satisfiable_all_same",
+      "num_variables": 3,
+      "num_edges": 2,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 0,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "kappa_B": {
+    "contextual_chsh": {
+      "cover_name": "B:canonical_chsh_finality_obstruction",
+      "num_variables": 4,
+      "num_edges": 4,
+      "num_components": 1,
+      "kappa": 1,
+      "cycle_space_rank": 1,
+      "global_section_exists": false,
+      "frustrated": true
+    },
+    "noncontextual_chsh": {
+      "cover_name": "B:noncontextual_chsh_all_same_control",
+      "num_variables": 4,
+      "num_edges": 4,
+      "num_components": 1,
+      "kappa": 0,
+      "cycle_space_rank": 1,
+      "global_section_exists": true,
+      "frustrated": false
+    }
+  },
+  "native_B": {
+    "contextual_chsh": {
+      "scenario": "canonical_chsh_finality_obstruction",
+      "all_local_sections_exist": true,
+      "no_global_assignment": true,
+      "parity_product": -1,
+      "h1_style_obstruction": true,
+      "native_frustrated_cycle_rank": 1
+    },
+    "noncontextual_chsh": {
+      "scenario": "noncontextual_chsh_all_same_control",
+      "all_local_sections_exist": true,
+      "no_global_assignment": false,
+      "parity_product": 1,
+      "h1_style_obstruction": false,
+      "native_frustrated_cycle_rank": 0
+    }
+  },
+  "shared_derivation_audit": {
+    "chosen_B_is_T21_bell_chsh": true,
+    "T21_imports_d1_restriction_system": false,
+    "T28_CAP_imports_d1_restriction_system": true,
+    "T21_shares_derivation_with_T39": false,
+    "T28_would_share_derivation_with_T39": true,
+    "note": "B = T21 chosen precisely because it does NOT import the T39 signed-graph engine; T28/CAP is built FROM that engine, so an A->T28 map would trivially share a derivation and is disqualified by the honesty guard in open-problems/typed-loss-transport-test.md."
+  },
+  "trials": [
+    {
+      "a_instance": "min_transitive_conflict",
+      "kappa_A": 1,
+      "a_frustrated": true,
+      "predicted_kappa_B": 1,
+      "measured_native_B_rank": 1,
+      "measured_kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "nu_consistent_across_domains": true
+    },
+    {
+      "a_instance": "min_direct_conflict",
+      "kappa_A": 1,
+      "a_frustrated": true,
+      "predicted_kappa_B": 1,
+      "measured_native_B_rank": 1,
+      "measured_kappa_B_via_nu": 1,
+      "prediction_matches_native": true,
+      "nu_consistent_across_domains": true
+    },
+    {
+      "a_instance": "satisfiable_all_same",
+      "kappa_A": 0,
+      "a_frustrated": false,
+      "predicted_kappa_B": 0,
+      "measured_native_B_rank": 0,
+      "measured_kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "nu_consistent_across_domains": true
+    },
+    {
+      "a_instance": "tree_structured",
+      "kappa_A": 0,
+      "a_frustrated": false,
+      "predicted_kappa_B": 0,
+      "measured_native_B_rank": 0,
+      "measured_kappa_B_via_nu": 0,
+      "prediction_matches_native": true,
+      "nu_consistent_across_domains": true
+    }
+  ],
+  "all_predictions_match": true,
+  "kappa_single_formula": true,
+  "no_shared_derivation": true,
+  "two_absorber_confirmation": false,
+  "verdict": "PASS",
+  "verdict_caveat": "ONE unrelated absorber (T21 Bell/CHSH) cleared the prediction this cycle with no shared derivation; the open-problem's full cross-domain classification theorem requires the prediction to clear on >= 2 unrelated absorbers. Two-absorber confirmation remains for a later cycle. No theorem is over-claimed here.",
+  "complexity_tags": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "guardrails": "No physics/geometry/curvature/new-object language promoted. kappa is a Z/2 graph-homology rank over a finite cover, computed by BFS 2-coloring (poly_decider, not a search; not an NP-hardness claim)."
+}

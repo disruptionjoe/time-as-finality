@@ -1282,3 +1282,42 @@ the bet is cleanly killed. Either outcome is non-vacuous. The dual orthodox face
 a predictive absorption functor `(residue + AC-conditions) -> (host + collapse-witness)`.
 No physics, geometry, or new-object language is earned until the transport
 prediction passes on at least two unrelated absorbers.
+
+## Phase 24: Five-Lane Run Cycle 1/5 — Breakout Kill-Switch Survives, Two T222 Edges Resolved (2026-06-25)
+
+The breakout bet survives its first kill-switch firing without earning promotion,
+and the two structure-level edges T222 left conditional are now resolved.
+
+- **T224 (THE breakout kill-switch): conditional — bet SURVIVES.** kappa, defined
+  domain-neutrally once (T220 `psi.nu` = Z/2 H^1 of the neighbor-visible signed
+  cover), transported from T39 CSP-PO1 to the a-priori-unrelated T21 Bell/CHSH
+  absorber and predicted B's native obstruction before measurement, with no shared
+  derivation (T28/CAP correctly disqualified for importing d1_restriction_system).
+  Held below promotion: one absorber cleared (bar is >=2) and only kappa in {0,1}
+  was load-bearing (CHSH cover rank 1), so this is obstruction-PRESENCE transport,
+  not a rank classification. Next: A->B' to a rank-2 unrelated absorber, predict
+  kappa=2 before measuring. [open-problems/typed-loss-transport-test.md](open-problems/typed-loss-transport-test.md)
+  stays open.
+- **T225 (orthodox dual face): conditional.** AC-signature -> host map separates
+  the resolved residue corpus on a single condition (`reads_only_nu`) and predicts
+  held-out hosts 2/2, but the corpus is binary and perfectly separable, so this is
+  consistency-of-assignment, not predictive power; no separation gate, no novel
+  host. Next: add a third host (signed-graph-parity or Čech-H1) with Sigma fixed
+  pre-hoc.
+- **T226 (CSP-PO1 continuum): conditional — T222 Contribution #i BUILT.** Finite
+  coefficient-aware Čech-H1 reports the correct Möbius Z2 class where the blind
+  encoding gave a false section; localizes the trap to AC5-forgetting; corrects
+  T222's single-overlap artifact (no cover cycle ⇒ [g]=0). Continuum row stays
+  conditional; remaining hypothesis = cover-refinement-stability/colimit.
+- **T227 (MTI continuum): conditional — blocker re-stated.** The metric-vs-causal
+  beta separation is objective-dependent (survives West total-cost, vanishes under
+  minimax/equal-load). The open blocker shifts from "missing computation" to
+  "missing WBE objective-selection principle." MTI stays PARTIALLY_SUPPORTED.
+- **T228 (D1Cat transfinite colimit): CLOSED — T222 Contribution #ii resolved.**
+  The colimit exists only as the content-free object; the content-bearing colimit
+  "of the desired form" provably does not exist; this is NOT cocompleteness at
+  infinity. Next: a graded/filtered D1FilteredMorphism carrying the descending
+  preserved-dims filtration.
+
+No physics, geometry, or new-object language promoted this cycle. The two-absorber
+breakout promotion gate is NOT cleared.

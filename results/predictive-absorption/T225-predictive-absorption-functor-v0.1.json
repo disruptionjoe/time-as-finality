@@ -1,0 +1,47 @@
+{
+  "test": "T225-predictive-absorption-functor",
+  "conditions": [
+    "reads_only_nu",
+    "monotone_accum",
+    "forward_required",
+    "named_source_field",
+    "solution_set_valued",
+    "search_negative"
+  ],
+  "learned_rule": {
+    "discriminating_condition": "reads_only_nu",
+    "host_if_present": "neighbor-data-collapse",
+    "host_if_absent": "ordinary-category-theory"
+  },
+  "n_train": 7,
+  "n_holdout": 2,
+  "holdout_eval": [
+    {
+      "residue": "T221 covariant F refuted via e_bad (1 -> 0 impossible)",
+      "sigma": [
+        "forward_required",
+        "monotone_accum",
+        "solution_set_valued"
+      ],
+      "predicted_host": "ordinary-category-theory",
+      "actual_host": "ordinary-category-theory",
+      "correct": true
+    },
+    {
+      "residue": "T220 hidden-source escape (non-factoring obligation, nu')",
+      "sigma": [
+        "named_source_field",
+        "reads_only_nu",
+        "search_negative"
+      ],
+      "predicted_host": "neighbor-data-collapse",
+      "actual_host": "neighbor-data-collapse",
+      "correct": true
+    }
+  ],
+  "all_holdout_correct": true,
+  "first_separation_gate": null,
+  "verdict": "host",
+  "tag": "finite_witness",
+  "note": "Predicts host DOMAIN from AC-signature; computes no obstruction value (distinct from kappa-transport lane)."
+}

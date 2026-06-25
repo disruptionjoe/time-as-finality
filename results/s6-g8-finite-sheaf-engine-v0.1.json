@@ -1,0 +1,99 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "all_fields_supported_at_threshold": true,
+    "eta_loss_detected": true,
+    "prethreshold_not_stable": true,
+    "site_and_cover_declared": true,
+    "threshold_stable": true
+  },
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "This is still a finite associated-record reflector over declared fields. It does not prove general sheafification or pick the site canonically.",
+  "guardrail": "Reusable finite descent engine only: not a general sheafification theorem and not a proof that abstract sheafification creates time.",
+  "next_step": "Use this generic engine to build the G9 same-final-record / different-presheaf-capability pair.",
+  "policies": [
+    {
+      "field": "pointer",
+      "required_value": null,
+      "support_threshold": 4
+    },
+    {
+      "field": "prep_measure",
+      "required_value": null,
+      "support_threshold": 4
+    },
+    {
+      "field": "measure_record",
+      "required_value": null,
+      "support_threshold": 4
+    }
+  ],
+  "prethreshold": {
+    "eta_loss": [
+      "phase_sensitive_branch",
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "field_support": {
+      "measure_record": 3,
+      "pointer": 3,
+      "prep_measure": 3
+    },
+    "final_capabilities": [],
+    "local_records_used": 5,
+    "separated_classes": 2,
+    "stable": false,
+    "values": {}
+  },
+  "site": {
+    "contexts": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "cover": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "overlap_count": 10
+  },
+  "strongest_result": "The generic finite descent engine reproduces the S6 threshold at strength=1.2 from field support alone: pointer and both provenance edges have support 4, the associated record is stable, and phase capability is lost across eta_F.",
+  "tag": [
+    "finite_witness",
+    "generic_descent_engine",
+    "no_claim_promotion"
+  ],
+  "test": "s6-g8-finite-sheaf-engine-v0.1",
+  "threshold": {
+    "eta_loss": [
+      "phase_sensitive_branch"
+    ],
+    "field_support": {
+      "measure_record": 4,
+      "pointer": 4,
+      "prep_measure": 4
+    },
+    "final_capabilities": [
+      "read_pointer",
+      "reconstruct_provenance_order"
+    ],
+    "local_records_used": 5,
+    "separated_classes": 2,
+    "stable": true,
+    "values": {
+      "measure_record": true,
+      "pointer": 1,
+      "prep_measure": true
+    }
+  }
+}

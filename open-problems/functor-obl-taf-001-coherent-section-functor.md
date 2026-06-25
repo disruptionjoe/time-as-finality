@@ -2,6 +2,33 @@
 
 ## Status
 
+RESOLVED (2026-06-24, T221) by directional split. This obligation is no longer
+open. The verdict:
+
+```text
+F  : States(Ext_S)    -> FinSets   is NOT a functor   (counterexample, T221 Part I)
+F_op : States(Ext_S)^op -> FinSets is     a functor   (proof,        T221 Part II)
+```
+
+The functorial direction (contravariant restriction-of-solutions) is the
+opposite of the covariant direction PO1-NCK-001 and the NCK forward-issuance
+dynamics required. So the blocker is settled by *refutation* of the assumed
+covariant functor, not by satisfying it. Consequence: PO1-NCK-001 is re-scoped
+(PO1 types K, not lambda*(S)); MTI is unchanged (its T184-T188 evidence never
+depended on covariant functoriality). See
+`tests/T221-coherent-section-functoriality-verdict.md` and
+`results/T221-coherent-section-functoriality-verdict-v0.1-results.md`.
+
+The original obligation text below is retained as the historical statement of
+what was being asked, including the over-optimistic covariant "minimal
+verification path" (lines reasoning toward F(e2 o e1) = F(e2) o F(e1)) that
+T190 and T221 Part I refute: the covariant morphism map is not even total, so
+composition preservation is never reached.
+
+---
+
+### Original obligation (historical, pre-T221)
+
 Open formal obligation. This is not a claim promotion, not a test result,
 and not an upgrade to any existing TaF claim. It is the blocking condition
 for promoting PO1-NCK-001 from a candidate formal connection to a supported

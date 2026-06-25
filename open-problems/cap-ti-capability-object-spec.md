@@ -217,9 +217,14 @@ Steps 1-4 are complete for Candidate C:
 The ceiling-based R formula from step 3 is replaced by the continuous R = n^(1-beta) for step 4 verification (ceiling formula too coarse at small n for the beta differences produced by T186/T187).
 
 **Remaining conditions before formal promotion:**
-- FUNCTOR-OBL-TaF-001: functoriality of F: States(Ext_S) -> FinSets must be verified
-- PO1-NCK-001 must be formally promoted to a supported formal connection
-- The reconciliation protocol grounding the continuous R formula must be specified
+- FUNCTOR-OBL-TaF-001: RESOLVED 2026-06-24 by T221 (directional split). The
+  covariant F: States(Ext_S) -> FinSets is NOT a functor; the contravariant
+  F_op IS. The functorial direction is the opposite of the one the issuance
+  dynamics need, so this is settled by refutation, not satisfaction.
+- PO1-NCK-001: re-scoped by T221 to "PO1 types K, not lambda*(S)"; it cannot be
+  promoted to a supported formal connection over covariant FinSets. Any
+  promotion of lambda*(S) now requires F_partial over ParSets (open).
+- The reconciliation protocol grounding the continuous R formula must be specified.
 
 ## Contribution Needed
 

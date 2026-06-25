@@ -10,7 +10,16 @@ Speculative extension.
 
 ## Status
 
-Open formal target.
+Requires added assumption (finite finality-colimit route); broader program
+open.
+
+The finite-colimit route is downgraded by T223: the uniform finite
+finality-colimit ensemble provably does not concentrate on manifoldlike causal
+sets through n=8, so manifoldlikeness cannot be reached from that ensemble
+without an added continuum, sprinkling, selection, or measure assumption. The
+broader S1 program (topos / NCG / path-integral / stochastic entry points in
+the open problem) is not killed; only the "enumerate finite finality colimits
+and hope manifoldlikeness emerges" route is closed.
 
 ## What This Does Not Claim
 
@@ -57,6 +66,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T164: T54 Survivor Isomorphism And Locality Audit](../tests/T164-t54-survivor-isomorphism-locality.md)
 - [T165: T54 Survivor Sprinkling Stress Test](../tests/T165-t54-survivor-sprinkling-stress.md)
 - [T167: T54 Ordinal Scaling Stress Test](../tests/T167-t54-ordinal-scaling-stress.md)
+- [T223: T54 Ordinal Scaling Decisive Verdict](../tests/T223-t54-ordinal-scaling-decisive-verdict.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -233,6 +243,41 @@ therefore still needs a T54 generative law, an asymptotic scaling theorem, a
 natural measure over finality colimits, a faithful embedding theorem,
 Lorentzian metric reconstruction, covariance, or a continuum bridge before
 spacetime-facing residue language can increase.
+
+## T223 Decisive Ordinal Scaling Verdict
+
+[T223](../tests/T223-t54-ordinal-scaling-decisive-verdict.md) runs the decisive
+advance-or-kill scale-up the open problem demanded, rather than another
+rare-tail control. It extends the exact 1+1 ordinal ensemble one further full
+exact step to `n=8` (`40320` cases) through the identical T126/T156/T159/T164
+pipeline.
+
+The unconditional band-and-deletion-stable survivor fraction is strictly
+monotone decreasing and drops sharply at the decisive size:
+`n=6 = 13/360 ~= 0.0361`, `n=7 = 29/840 ~= 0.0345`,
+`n=8 = 361/40320 ~= 0.0090` (a ~3.8x drop). Every one of the `361` `n=8`
+survivors is a thin height-3 poset with largest Alexandrov interval interior
+`<= 1`; survivor height does not grow with `n`. The labels reduce to `174`
+oriented classes (`90` order-dual), with largest oriented-class probability
+`1/10080`, and the typical ensemble member is rejected as a stable band
+survivor.
+
+The verdict is a finite no-go:
+`finite_no_go_manifoldlikeness_unreachable_without_added_assumption`. On this
+finite ordinal ensemble and these finite screens, the finality-colimit ensemble
+does not concentrate on manifoldlike causal sets; the band survivors are a thin
+decaying rare tail. Manifoldlikeness is therefore unreachable from the uniform
+finite finality-colimit ensemble without an added continuum, sprinkling,
+selection, or measure assumption.
+
+The no-go is finite and ensemble-level. It earns no spacetime, manifoldlikeness,
+dimension, Myrheim-Meyer dimension estimate, sprinkling, locality, embedding,
+covariance, Lorentzian metric, GR, QFT, or continuum claim, positive or
+negative. It does not assert that no continuum construction with added structure
+could ever produce spacetime; it only closes the "enumerate finite finality
+colimits and hope manifoldlikeness emerges" route. The survivor posets are not
+asserted to be 1+1 causal sets; they only lie inside a declared finite
+ordering-fraction band.
 
 ## T153 Lorentzian Absorber Gate
 

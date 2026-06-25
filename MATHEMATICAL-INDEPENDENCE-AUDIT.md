@@ -398,3 +398,66 @@ In priority order:
 | 2026-06-21 | late stewardship staleness note | Test registry has grown to 162 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T161 v0.8 audit that separates neutral theorem-ladder progress from S1 calibration screens, quantum-branch gates, H7 absorber triage, and persona exploratory notes. |
 | 2026-06-22 | stewardship staleness note | Test registry has grown to 175 test notes; independent motivation remains UNKNOWN. Minimum next action is a post-T175 v0.8 audit that separates neutral theorem-ladder progress from H7 absorber mapping, detector workflow gates, Q1D guardrails, S1 finite calibration, time-series diagnostics, and persona-governance notes. |
 | 2026-06-22 | v0.8 | Full audit pass post-T188. Test registry at 178 tests. Three new neutral theorem-ladder additions: Moses exact optimization (T187), metric-causal separation (T186/T187), Cap_TI hostile split (T188). Category A/B/C separation of 103 tests added since v0.6. Independent motivation remains UNKNOWN; three external-review targets prioritized (Moses separation > PO1-CSP theorem > D1Cat category). FUNCTOR-OBL-TaF-001 and external motivation remain the two open independence criteria. |
+
+---
+
+## Independent-Motivation Criterion Note - 2026-06-24 (Synthesis Pass)
+
+This note appends to the independent-motivation criterion only. It does not
+rewrite any criterion table, theorem-ladder row, or change-log entry above, and
+it does not touch CLAIM-LEDGER.md or ROADMAP.md (sibling goals edited those in
+the same session).
+
+### What was produced
+
+A neutral, time-free synthesis paper was written that frames the earned ladder as
+a finite typed calculus for local-to-global obstruction under information-losing
+morphisms, with zero use of time, finality, observer, consciousness, or physics
+vocabulary in the abstract or body:
+[`papers/typed-forgetting-local-global-obstruction-v0.2.md`](papers/typed-forgetting-local-global-obstruction-v0.2.md).
+It folds in the four sibling verdicts of this session: T220 (loss annotation
+collapses to a canonical witness-obligation normal form via `obligation = psi . nu`),
+T221 (the functorial object is the contravariant restriction-of-solutions functor;
+covariant is refuted), T222 (finite/infinite boundary: category laws, non-functor,
+and HEF survive; CSP-PO1 is continuum-conditional), and T223 (S1 finite no-go,
+explicitly kept out of scope since the paper is geometry-free).
+
+A hostile external-mathematician audit was then run against that paper, role-played
+as a category theorist / combinatorialist with no program knowledge:
+[`papers/reviews/2026-06-24-external-motivation-audit.md`](papers/reviews/2026-06-24-external-motivation-audit.md).
+
+### Independent-motivation verdict from the hostile audit
+
+**NOT EARNED**, with a narrow bounded partial. The audit's reasoning: every
+positive component is either known (parity = signed-graph imbalance), routine
+(categoryhood), or definitional (loss monoid law); the non-functor result fails on
+identities for a non-structural reason; the contravariant functor is the standard
+antitone constraint/solution map; and the one candidate new object (typed loss)
+was proven by T220 to collapse onto neighbor-visible data. The single live source
+of independent interest is Open Problem 11.1 (does any attribution invariant
+separate from neighbor data, given the canonical one provably does not), and the
+paper shows the natural route to it is structurally closed.
+
+Net effect on this criterion: the v0.8 status of **UNKNOWN** is now sharpened to
+**UNKNOWN-trending-NOT-EARNED for the typed-forgetting / LossKernel line
+specifically**. The T220 collapse certificate moved the LossKernel novelty
+candidate (flagged as the live opening in both 2026-06-20 reviews) in the negative
+direction: it is now a certified canonical normal form, not a separation. The
+overall criterion remains formally UNKNOWN because no real external mathematician
+has reviewed it; this was an internal hostile role-play, not external testing. The
+Moses metric-causal separation (T186/T187) was NOT covered by this pass and remains
+the repo's strongest untested independent-motivation candidate.
+
+### Single most important next step
+
+Promote the single-case collapse certificate (paper Theorem 8.3 / T220) into one of
+two real theorems and lead with whichever lands: (a) strong subsumption, that EVERY
+attribution invariant on typed lossy morphisms factors through the neighbor-visible
+realization map (a citable negative result the provenance community would care
+about, which also cleanly closes the LossKernel line); or (b) separation, an
+attribution invariant defined outside the canonical witness-obligation construction
+that separates two morphisms with identical neighbor signature without reading an
+absorbable hidden field. Only (b) flips the verdict to EARNED for this line.
+Independent of the typed-forgetting line, send the Moses metric-causal separation
+statement (T186/T187) to an actual external reviewer, since it is the cleanest
+TaF-free statement the repo has and was untouched by this pass.

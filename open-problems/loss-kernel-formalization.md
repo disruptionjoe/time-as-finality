@@ -8,6 +8,15 @@ Post-T127 note: the strongest live version may be the narrower
 [LossKernel Witness-Obligation Normal Form](loss-kernel-witness-obligation-normal-form.md),
 not a prior-art-separated theorem about a new attribution object.
 
+Post-T220 note: the narrower normal form is now certified as a
+collapse-into-neighbor object. The canonical witness obligation factors through
+the neighbor-visible data map (`obligation = psi . nu`), so same-neighbor-data
+separation is structurally impossible for this construction. Open Question 8
+below (separation theorem from CSP plus provenance/effect bookkeeping) is
+answered negatively for the canonical witness-obligation derivation: any such
+separation must come from outside it. See
+[T220](../tests/T220-losskernel-obligation-factorization-certificate.md).
+
 ## Diligence Gate
 
 LossKernel is not yet cleared for canon or public theorem language. External

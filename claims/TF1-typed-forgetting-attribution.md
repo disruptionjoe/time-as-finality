@@ -35,7 +35,15 @@ quotient witness. T127 now runs that gate as an executable negative audit for
 the current finite fixture family: no strict same-neighbor-data witness
 survives; apparent separations are absorbed by neighbor-visible CSP,
 provenance, abstraction, lens, effect, path, or categorical data, or collapse
-as label-only, endpoint-difference, or absorbed-loss controls.
+as label-only, endpoint-difference, or absorbed-loss controls. T220 then
+upgrades that search-negative to a structural certificate: the canonical
+witness obligation factors through the neighbor-visible data map
+(`obligation = psi . nu`), so it is constant on each fiber of `nu` and
+same-neighbor-data separation is impossible in the canonical regime, not merely
+unobserved. LossKernel is thereby certified as a canonical witness-obligation
+normal form that collapses into neighbor data; the lone escape is a
+non-factoring obligation reading a source field outside every mature neighbor
+package, which is absorbed once that field is admitted.
 
 ## Current Strongest Form
 
@@ -167,13 +175,17 @@ morphisms.
 
 ## Next Step
 
-Do not assume the same-neighbor-data rescue path is still live for the current
-finite family. The next honest move is either:
+The same-neighbor-data rescue path is now structurally closed for the canonical
+witness-obligation derivation. T220 proves the canonical obligation factors
+through the neighbor-visible data map, so no new finite pair can survive the
+T127 gate while factoring through `nu`. The honest posture is therefore:
 
-- build the recast object in
-  [LossKernel Witness-Obligation Normal Form](../open-problems/loss-kernel-witness-obligation-normal-form.md)
-  and test its canonicality/collapse directly; or
-- produce a genuinely new finite pair that survives the T127 gate; or
-- recast LossKernel more modestly as a canonical normal form / integration
-  vocabulary for source-derived witness obligations rather than a
-  prior-art-separated theorem target.
+- treat LossKernel as a certified canonical normal form / integration
+  vocabulary for source-derived witness obligations, per
+  [LossKernel Witness-Obligation Normal Form](../open-problems/loss-kernel-witness-obligation-normal-form.md);
+- stop spending autonomous effort searching for a new same-neighbor-data
+  separation pair within the canonical construction; and
+- if a separation theorem is still wanted, look outside the canonical
+  witness-obligation construction for an obligation that legitimately reads a
+  source field no mature neighbor package can absorb (T108 and T127 indicate
+  this route is not currently live).

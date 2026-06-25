@@ -55,9 +55,17 @@ PARTIALLY_SUPPORTED (as of 2026-06-22). Evidence:
    CONDITIONAL_PASS via T186 fixture.
 
 Remaining open blockers before full promotion:
-- Exact Moses constrained optimization (vs. CV approximation used in T186)
-- PO1-NCK-001 formal claim (lambda*(s) as PO1 consequence)
-- FUNCTOR-OBL-TaF-001 (functoriality of F)
+- Exact WBE continuum derivation from first principles.
+
+Settled blockers (no longer open):
+- Exact Moses constrained optimization: RESOLVED by T187 (beta direction persists
+  under exact optimization).
+- FUNCTOR-OBL-TaF-001: RESOLVED by T221 (directional split — covariant F not a
+  functor, contravariant F_op is). This does not change MTI status: the T184-T188
+  metric-vs-causal evidence never depended on covariant functoriality.
+- PO1-NCK-001: re-scoped by T221 (PO1 types K, not lambda*(S)). MTI does not rely
+  on lambda*(S) being a PO1 consequence; it relies on beta carrying metric-temporal
+  information, which stands independently.
 
 ## What This Does Not Claim
 

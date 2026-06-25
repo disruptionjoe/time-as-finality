@@ -1,0 +1,276 @@
+{
+  "comparison_target": "exact_ordinal_1p1_rank_permutation_scaling_n5_to_n8",
+  "target_basis": "For n generic points in a flat 1+1 causal diamond with no light-cone coordinate ties, sorting by one coordinate leaves the other coordinate's rank as a uniform element of S_n. T223 uses that exact finite ordinal ensemble for n=5, n=6, n=7, and the decisive new step n=8, identically to T167's n=5..7 pipeline.",
+  "size_audits": [
+    {
+      "event_count": 5,
+      "total_rank_permutation_cases": 120,
+      "t126_pass_count": 0,
+      "t156_pass_count": 0,
+      "parent_interval_pass_count": 0,
+      "stable_labeled_survivor_count": 0,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "oriented_survivor_class_count": 0,
+      "order_dual_survivor_class_count": 0,
+      "largest_oriented_class_size": 0,
+      "largest_oriented_class_probability": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "survivor_height_distribution": [],
+      "max_survivor_height": 0,
+      "survivor_max_parent_interval_distribution": [],
+      "all_survivors_thin_intervals": true,
+      "all_survivors_height_bounded": true,
+      "modal_t126_classification": "insufficient_scale",
+      "modal_t126_classification_fraction": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "event_count": 6,
+      "total_rank_permutation_cases": 720,
+      "t126_pass_count": 578,
+      "t156_pass_count": 305,
+      "parent_interval_pass_count": 156,
+      "stable_labeled_survivor_count": 26,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "13/360",
+        "float": 0.03611111111111111
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "1/6",
+        "float": 0.16666666666666666
+      },
+      "oriented_survivor_class_count": 15,
+      "order_dual_survivor_class_count": 9,
+      "largest_oriented_class_size": 2,
+      "largest_oriented_class_probability": {
+        "fraction": "1/360",
+        "float": 0.002777777777777778
+      },
+      "survivor_height_distribution": [
+        {
+          "height": 3,
+          "count": 26
+        }
+      ],
+      "max_survivor_height": 3,
+      "survivor_max_parent_interval_distribution": [
+        {
+          "max_parent_interval_interior": 1,
+          "count": 26
+        }
+      ],
+      "all_survivors_thin_intervals": true,
+      "all_survivors_height_bounded": true,
+      "modal_t126_classification": "passes_filter_only",
+      "modal_t126_classification_fraction": {
+        "fraction": "289/360",
+        "float": 0.8027777777777778
+      }
+    },
+    {
+      "event_count": 7,
+      "total_rank_permutation_cases": 5040,
+      "t126_pass_count": 4456,
+      "t156_pass_count": 2051,
+      "parent_interval_pass_count": 561,
+      "stable_labeled_survivor_count": 174,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "29/840",
+        "float": 0.034523809523809526
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "58/187",
+        "float": 0.31016042780748665
+      },
+      "oriented_survivor_class_count": 86,
+      "order_dual_survivor_class_count": 45,
+      "largest_oriented_class_size": 4,
+      "largest_oriented_class_probability": {
+        "fraction": "1/1260",
+        "float": 0.0007936507936507937
+      },
+      "survivor_height_distribution": [
+        {
+          "height": 3,
+          "count": 174
+        }
+      ],
+      "max_survivor_height": 3,
+      "survivor_max_parent_interval_distribution": [
+        {
+          "max_parent_interval_interior": 1,
+          "count": 174
+        }
+      ],
+      "all_survivors_thin_intervals": true,
+      "all_survivors_height_bounded": true,
+      "modal_t126_classification": "passes_filter_only",
+      "modal_t126_classification_fraction": {
+        "fraction": "557/630",
+        "float": 0.8841269841269841
+      }
+    },
+    {
+      "event_count": 8,
+      "total_rank_permutation_cases": 40320,
+      "t126_pass_count": 34044,
+      "t156_pass_count": 16261,
+      "parent_interval_pass_count": 2057,
+      "stable_labeled_survivor_count": 361,
+      "stable_labeled_survivor_fraction": {
+        "fraction": "361/40320",
+        "float": 0.008953373015873015
+      },
+      "stable_conditional_after_parent_fraction": {
+        "fraction": "361/2057",
+        "float": 0.1754982984929509
+      },
+      "oriented_survivor_class_count": 174,
+      "order_dual_survivor_class_count": 90,
+      "largest_oriented_class_size": 4,
+      "largest_oriented_class_probability": {
+        "fraction": "1/10080",
+        "float": 9.92063492063492e-05
+      },
+      "survivor_height_distribution": [
+        {
+          "height": 3,
+          "count": 361
+        }
+      ],
+      "max_survivor_height": 3,
+      "survivor_max_parent_interval_distribution": [
+        {
+          "max_parent_interval_interior": 1,
+          "count": 361
+        }
+      ],
+      "all_survivors_thin_intervals": true,
+      "all_survivors_height_bounded": true,
+      "modal_t126_classification": "passes_filter_only",
+      "modal_t126_classification_fraction": {
+        "fraction": "2837/3360",
+        "float": 0.8443452380952381
+      }
+    }
+  ],
+  "reproduced_prior_counts": true,
+  "stable_fraction_trajectory": [
+    {
+      "event_count": 5,
+      "value": {
+        "fraction": "0/1",
+        "float": 0.0
+      }
+    },
+    {
+      "event_count": 6,
+      "value": {
+        "fraction": "13/360",
+        "float": 0.03611111111111111
+      }
+    },
+    {
+      "event_count": 7,
+      "value": {
+        "fraction": "29/840",
+        "float": 0.034523809523809526
+      }
+    },
+    {
+      "event_count": 8,
+      "value": {
+        "fraction": "361/40320",
+        "float": 0.008953373015873015
+      }
+    }
+  ],
+  "stable_fraction_is_monotone_nonincreasing_from_n6": true,
+  "conditional_survival_trajectory": [
+    {
+      "event_count": 5,
+      "value": {
+        "fraction": "0/1",
+        "float": 0.0
+      }
+    },
+    {
+      "event_count": 6,
+      "value": {
+        "fraction": "1/6",
+        "float": 0.16666666666666666
+      }
+    },
+    {
+      "event_count": 7,
+      "value": {
+        "fraction": "58/187",
+        "float": 0.31016042780748665
+      }
+    },
+    {
+      "event_count": 8,
+      "value": {
+        "fraction": "361/2057",
+        "float": 0.1754982984929509
+      }
+    }
+  ],
+  "conditional_survival_is_monotone_nonincreasing_from_n6": false,
+  "largest_class_probability_trajectory": [
+    {
+      "event_count": 5,
+      "value": {
+        "fraction": "0/1",
+        "float": 0.0
+      }
+    },
+    {
+      "event_count": 6,
+      "value": {
+        "fraction": "1/360",
+        "float": 0.002777777777777778
+      }
+    },
+    {
+      "event_count": 7,
+      "value": {
+        "fraction": "1/1260",
+        "float": 0.0007936507936507937
+      }
+    },
+    {
+      "event_count": 8,
+      "value": {
+        "fraction": "1/10080",
+        "float": 9.92063492063492e-05
+      }
+    }
+  ],
+  "survivor_family_stays_thin_height_bounded": true,
+  "typical_member_rejected": true,
+  "verdict": "finite_no_go_manifoldlikeness_unreachable_without_added_assumption",
+  "verdict_basis": "Stable-survivor fraction trajectory (n=5:0/1, n=6:13/360, n=7:29/840, n=8:361/40320) is monotone non-increasing from n=6. Every stable survivor at every size stays thin and height-bounded (decisive size n=8 max survivor height 3, all parent intervals interior<=1: True). At the decisive size the modal ensemble member is classified 'passes_filter_only', so the typical member is rejected by the screens.",
+  "earned": "Earned: an exact finite enumeration result. At n=8 the declared 1+1 ordinal ensemble has 361/40320 band-and-deletion-stable labeled survivors, reducing to 174 oriented finite-poset classes (90 order-dual classes), with largest oriented-class probability 1/10080. Every stable survivor is a thin height-bounded poset. Earned conclusion: on this finite ensemble and these finite screens, manifoldlikeness is not reached without an added assumption (a finite, ensemble-level no-go).",
+  "not_earned": "NOT earned, in any direction: no spacetime derivation; no manifoldlikeness, dimension, or Myrheim-Meyer dimension estimate (the ordering-fraction band is an audit setting, not a dimension measurement); no sprinkling, locality, embedding, covariance, Lorentzian metric, GR, QFT, or continuum-limit claim, positive or negative. The no-go is about the finite ensemble and the finite screens only; it does not assert that no continuum construction with added structure could ever produce spacetime. The survivor posets are not asserted to be 1+1 causal sets; they only lie inside a declared finite ordering-fraction band.",
+  "strongest_claim": "Finite no-go (exact, ensemble-level). Extending the exact 1+1 ordinal ensemble to n=8 keeps the band-and-deletion-stable T54 survivor a strictly decaying rare tail (n=6=13/360, n=7=29/840, n=8=361/40320) of thin height-bounded posets whose largest Alexandrov interval has at most one interior event, while the typical ensemble member is rejected. The finite finality-colimit ensemble therefore does not concentrate on manifoldlike causal sets; manifoldlikeness is unreachable from this finite ensemble plus these finite screens without an added continuum, sprinkling, or selection assumption.",
+  "improved": "T223 replaces the open 'one more size' suggestion with a decisive exact scaling step to n=8 and a fixed advance-or-kill rubric. The rare tail is no longer evaluated one control at a time; the monotone-decay decision and the thin-survivor structural test are computed and reported together, so the S1 lane gets a verdict rather than another deferral.",
+  "weakened_or_falsified": "This closes the 'maybe it grows at the next size' escape that kept S1 at open_formal_target. The rare tail does not become typical at n=8; it decays further and stays structurally thin. The honest consequence is that the uniform finite finality-colimit ensemble is the wrong object to expect spacetime from: any S1 promotion now requires an explicitly added measure, selection, or continuum step, not more small-n counting.",
+  "falsification_condition": "T223's no-go is falsified if at any enumerated size the band-and-deletion-stable survivor fraction increases, if a stable survivor appears whose largest Alexandrov interval has more than one interior event, if the survivor height grows with n, if the n=6 or n=7 counts fail to reproduce T165/T167 (26 and 174), or if the verdict is restated as a continuum no-go or as positive spacetime evidence rather than a finite-ensemble decision.",
+  "s1_update": "S1 should be downgraded from open_formal_target to requires_added_assumption for the finite finality-colimit route. T223 supplies a finite, exact, ensemble-level no-go: the uniform 1+1 ordinal ensemble does not concentrate on manifoldlike causal sets through n=8, and the survivors stay a thin decaying rare tail. The colimit-of-finality-domains program is not killed, but it can no longer be advanced by enumerating finite finality colimits and hoping manifoldlikeness emerges; an explicit added measure, selection rule, sprinkling, or continuum bridge is now mandatory.",
+  "claim_ledger_update": "Add T223 to S1 and change status. Exact ordinal scaling (n=5=0/1, n=6=13/360, n=7=29/840, n=8=361/40320) shows the band-and-deletion-stable tail strictly decays through n=8 and every survivor stays a thin height-bounded poset, while the typical member is rejected. This is a finite ensemble-level no-go: manifoldlikeness is unreachable from the finite finality-colimit ensemble without an added assumption. Downgrade S1 (finite-colimit route) to requires_added_assumption.",
+  "open_blocker": "No natural non-uniform measure on finality colimits is known under which the thin band survivors carry non-vanishing weight, and no added selection/sprinkling/continuum bridge has been exhibited. Until one is, the finite finality-colimit ensemble cannot supply manifoldlikeness, dimension, or any spacetime-facing residue.",
+  "most_important_followon": "Is there any natural measure on finality colimits (not the uniform ordinal ensemble) under which the thin band survivors carry non-vanishing weight? If no such measure is exhibited, S1 should be downgraded from open_formal_target to requires_added_assumption, because manifoldlikeness provably does not arise from the finite finality-colimit ensemble on its own.",
+  "not_claimed": "T223 establishes no continuum limit, random-sprinkling law, faithful embedding, Lorentzian metric, dimension estimate, covariance, locality law, GR, or QFT result, and no positive spacetime or manifoldlikeness claim. It exactly enumerates the declared finite 1+1 ordinal rank-permutation ensemble at n=5,6,7,8 through the existing T126/T156/T159 screens and the T164 poset-isomorphism quotient, and issues an advance-or-kill verdict on the declared finite rubric only."
+}

@@ -2,7 +2,18 @@
 
 ## Status
 
-Open formal target after T108 and T127.
+Certified normal form (collapse-into-neighbor) after T220; recast target after
+T108 and T127.
+
+Post-T220 note: the collapse theorem requested below (progress item 3) is now
+discharged. The canonical witness obligation factors through the
+neighbor-visible data map, `obligation = psi . nu`, so it is constant on each
+fiber of `nu` and same-neighbor-data separation is impossible in the canonical
+regime. The normal form survives only as a neighbor-reconstructible audit
+object, not as a prior-art-separated obstruction object. The lone escape is a
+non-factoring obligation that reads a source field outside every mature neighbor
+package, which is absorbed once that field is admitted as legitimate audit data.
+See [T220](../tests/T220-losskernel-obligation-factorization-certificate.md).
 
 ## Why This Exists
 
@@ -138,21 +149,31 @@ with no canonical witness object.
 
 ## Current Strongest Safe Claim
 
-After T127, the strongest safe claim is:
+After T220, the strongest safe claim is:
 
 ```text
-LossKernel has not earned a prior-art-separated theorem target in the current
-finite family. At best it may survive as a canonical normal form for
-source-derived witness obligations under projection.
+LossKernel has not earned a prior-art-separated theorem target. The canonical
+witness obligation factors through the neighbor-visible data map, so it
+collapses into neighbor data and survives only as a canonical, neighbor-
+reconstructible normal form for source-derived witness obligations under
+projection. Same-neighbor-data separation is structurally impossible for this
+construction, not merely unobserved.
 ```
 
 ## Recommended Next Move
 
-Do one of these, and do not mix them:
+Option 2 below is now discharged by T220. The remaining live moves are:
 
-1. Build a finite canonicality test for `WO(f, J)` on one existing T107/T127
-   family.
-2. Prove collapse into a named neighbor object under explicit same-data
-   hypotheses.
-3. If neither survives, demote LossKernel from open theorem target to
-   integration vocabulary and stop advertising TF1 as a likely novelty route.
+1. ~~Build a finite canonicality test for `WO(f, J)`~~ -- done: T127 derives the
+   canonical obligation; T220 certifies it factors through `nu`.
+2. ~~Prove collapse into a named neighbor object under explicit same-data
+   hypotheses~~ -- done by T220 (`obligation = psi . nu`, fiber-constant).
+3. Demote LossKernel from open theorem target to integration vocabulary and
+   stop advertising TF1 as a likely novelty route via same-neighbor-data
+   separation. Develop the certified normal form as an admissibility/audit
+   checklist whose value is cleaner hostile review, not prior-art separation.
+4. If any novelty survives, it must come from outside the canonical
+   witness-obligation construction: an obligation that legitimately reads a
+   source field no mature neighbor package can absorb. T108 and T127 already
+   show mature provenance/effect/abstraction systems absorb any declared source
+   field once it is named, so this route is not currently live.

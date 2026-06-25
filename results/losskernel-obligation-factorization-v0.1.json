@@ -1,0 +1,189 @@
+{
+  "fiber_reports": [
+    {
+      "signature_index": 0,
+      "case_names": [
+        "mixed_a",
+        "mixed_b_relabelled"
+      ],
+      "obligations_agree": true,
+      "verdicts_agree": true,
+      "obligation": [
+        [
+          "left_keep",
+          "right_keep"
+        ]
+      ],
+      "verdict": "candidate_witness_obligation"
+    },
+    {
+      "signature_index": 1,
+      "case_names": [
+        "uniform_false_constraint"
+      ],
+      "obligations_agree": true,
+      "verdicts_agree": true,
+      "obligation": [],
+      "verdict": "demote_non_attribution_relevant_loss"
+    },
+    {
+      "signature_index": 2,
+      "case_names": [
+        "uniform_true_absorbed"
+      ],
+      "obligations_agree": true,
+      "verdicts_agree": true,
+      "obligation": [],
+      "verdict": "demote_non_attribution_relevant_loss"
+    },
+    {
+      "signature_index": 3,
+      "case_names": [
+        "resolved_endpoint"
+      ],
+      "obligations_agree": true,
+      "verdicts_agree": true,
+      "obligation": [],
+      "verdict": "inadmissible_no_target_obstruction"
+    }
+  ],
+  "canonical_factorization_holds": true,
+  "neighbor_reconstruction_matches": true,
+  "same_neighbor_separation_impossible_in_canonical_regime": true,
+  "pair_probes": [
+    {
+      "pair_id": "canonical_0",
+      "left_case": "mixed_a",
+      "right_case": "mixed_b_relabelled",
+      "same_neighbor_data": true,
+      "obligation_diverges": false,
+      "verdict_diverges": false,
+      "obligation_factors_through_neighbor": true,
+      "classification": "collapse",
+      "interpretation": "Neighbor-identical cases receive the same canonical obligation and verdict. LossKernel adds no separating content."
+    },
+    {
+      "pair_id": "canonical_1",
+      "left_case": "mixed_a",
+      "right_case": "uniform_false_constraint",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_2",
+      "left_case": "mixed_a",
+      "right_case": "uniform_true_absorbed",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_3",
+      "left_case": "mixed_a",
+      "right_case": "resolved_endpoint",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_4",
+      "left_case": "mixed_b_relabelled",
+      "right_case": "uniform_false_constraint",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_5",
+      "left_case": "mixed_b_relabelled",
+      "right_case": "uniform_true_absorbed",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_6",
+      "left_case": "mixed_b_relabelled",
+      "right_case": "resolved_endpoint",
+      "same_neighbor_data": false,
+      "obligation_diverges": true,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_7",
+      "left_case": "uniform_false_constraint",
+      "right_case": "uniform_true_absorbed",
+      "same_neighbor_data": false,
+      "obligation_diverges": false,
+      "verdict_diverges": false,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_8",
+      "left_case": "uniform_false_constraint",
+      "right_case": "resolved_endpoint",
+      "same_neighbor_data": false,
+      "obligation_diverges": false,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "canonical_9",
+      "left_case": "uniform_true_absorbed",
+      "right_case": "resolved_endpoint",
+      "same_neighbor_data": false,
+      "obligation_diverges": false,
+      "verdict_diverges": true,
+      "obligation_factors_through_neighbor": true,
+      "classification": "different_neighbor_data",
+      "interpretation": "Cases already differ in neighbor-visible data, so any difference is absorbed before LossKernel is consulted."
+    },
+    {
+      "pair_id": "hidden_source_escape",
+      "left_case": "hidden_escape_a",
+      "right_case": "hidden_escape_b",
+      "same_neighbor_data": true,
+      "obligation_diverges": true,
+      "verdict_diverges": false,
+      "obligation_factors_through_neighbor": false,
+      "classification": "non_factoring_escape",
+      "interpretation": "Cases are neighbor-identical yet the obligation diverges, but only because the obligation reads a hidden source datum no neighbor package exposes. This is not prior-art separation: admitting that datum as legitimate audit data enlarges the neighbor package and absorption returns one level up."
+    }
+  ],
+  "hidden_escape_separates": true,
+  "hidden_escape_factors_through_neighbor": false,
+  "hidden_escape_is_prior_art_separation": false,
+  "strict_separation_found": false,
+  "verdict": "narrowed",
+  "strongest_claim": "The canonical LossKernel witness obligation factors through the neighbor-visible data map: obligation = psi . nu. Because a map that factors through nu is constant on each fiber of nu, and the fibers of nu are exactly the same-neighbor-data classes, two cases with identical neighbor-visible data necessarily receive the same obligation and the same attribution verdict. The T127 negative is therefore not an accident of the fixture family; it is forced. The only way to separate same-neighbor-data cases is to read a source datum no neighbor package exposes, which is a non-factoring obligation and not a prior-art separation: admitting that datum as legitimate audit data enlarges the neighbor package and restores absorption one level up. LossKernel is hereby certified as a canonical witness-obligation normal form that collapses into neighbor data, not a prior-art-separated obstruction object.",
+  "improved": "T220 upgrades the T127 search-negative to a structural certificate. The repo no longer has to leave same-neighbor-data separation open as a thing that might appear with more cleverness in the current derivation; the factorization rules it out by construction and names the single remaining loophole.",
+  "weakened": "This closes the default TF1 rescue path for the canonical derivation. A prior-art-separated obstruction theorem cannot come from any obligation that is a function of neighbor-visible data, which the canonical LossKernel obligation is.",
+  "falsification_condition": "T220 is overturned in TF1's favor only by exhibiting an obligation map that (a) separates two cases sharing the full neighbor-visible signature nu, and (b) is itself a function of nu (factors through it). The factorization theorem shows these two requirements are contradictory, so the falsifier must instead argue that some source field used by the obligation is legitimately OUTSIDE every mature neighbor package -- a claim that has repeatedly failed (T108, T127) because mature provenance/effect/abstraction systems absorb any declared source field once it is named.",
+  "tf1_update": "TF1 remains open_formal_target, but its LossKernel sub-target is downgraded from 'prior-art-separated obstruction theorem' to 'certified witness-obligation normal form (collapse-into-neighbor)'. The same-neighbor-data quotient route is closed structurally, not just empirically.",
+  "claim_ledger_update": "Add T220 to TF1: the canonical witness obligation factors through the neighbor-visible data map (obligation = psi . nu), so same-neighbor-data separation is impossible in the canonical regime by fiber-constancy, certifying LossKernel as a collapse-into-neighbor witness-obligation normal form. The lone escape (non-factoring obligation reading a hidden source datum) is not a prior-art separation because admitting the datum enlarges the neighbor package. TF1 stays open_formal_target with the LossKernel sub-target downgraded to the normal-form reading.",
+  "open_blocker": "The certified normal form is weaker than a publishable separation. Its remaining value is audit/integration: a canonical, neighbor-reconstructible checklist of source-derived obligations. No new-mathematical-object language is earned.",
+  "recommended_next": "Retire same-neighbor-data separation as a live TF1 rescue. Either develop the certified normal form as an integration/audit vocabulary (cleaner admissibility checklist, neighbor-reconstructible), or redirect novelty effort to live internal movement (T125/T126 geometry gates) per the ROADMAP attention queue."
+}

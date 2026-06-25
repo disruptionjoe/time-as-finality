@@ -96,24 +96,48 @@ high-leverage kickoff queue is now assigned:
 2. **Completed by T125:** D1 boundary connection transport now defines
    identity, composition, closed-loop transport, and provenance-bearing
    access-boundary deltas before any curvature, gravity, or torsion language.
-3. **Completed by T126/T154:** Finality-colimit causal-set embeddability audit
-   for S1. T126 supplies the finite necessary-condition screen; T154 passes the
-   actual T54/T58 canonical completions through it and blocks the current T51/T52
-   controls at `insufficient_scale`. No spacetime, manifoldlikeness, dimension,
-   sprinkling, locality, embedding, or continuum claim is earned.
-4. **Completed by T127:** the same-neighbor-data LossKernel audit is negative
-   on the current finite fixture family. No strict prior-art-separated
-   attribution witness survives once CSP, provenance, abstraction, lens,
-   effect, path, and categorical packages are matched. Next blocker: decide
-   whether LossKernel is worth keeping only as canonical normal form /
-   integration vocabulary, or whether effort should leave the TF1 rescue path.
+3. **Completed by T126/T154, decided by T223:** Finality-colimit causal-set
+   embeddability audit for S1. T126 supplies the finite necessary-condition
+   screen; T154 passes the actual T54/T58 canonical completions through it and
+   blocks the current T51/T52 controls at `insufficient_scale`. The T156-T167
+   chain then exhausted the exact six- and seven-event ordinal ensembles and
+   found only a thin rare survivor tail. T223 runs the decisive advance-or-kill
+   scale-up to n=8 (40320 exact cases through the identical pipeline) and issues
+   a finite no-go: the unconditional band-and-deletion-stable survivor fraction
+   strictly decays (13/360 -> 29/840 -> 361/40320, a ~3.8x drop at n=8), every
+   survivor stays a thin height-3 poset, and the typical member is rejected. The
+   uniform finite finality-colimit ensemble therefore does not concentrate on
+   manifoldlike causal sets, so S1 is downgraded for the finite-colimit route
+   from `open_formal_target` to `requires_added_assumption`. No spacetime,
+   manifoldlikeness, dimension, sprinkling, locality, embedding, or continuum
+   claim is earned in either direction; the no-go is finite and ensemble-level.
+   The live S1 question is now whether any natural non-uniform measure on
+   finality colimits gives the thin band survivors non-vanishing weight; absent
+   one, the finite-colimit route stays closed and S1 effort should move to the
+   topos / NCG / path-integral / stochastic entry points in the open problem.
+4. **Completed by T127, certified by T220:** the same-neighbor-data LossKernel
+   audit is negative on the current finite fixture family. No strict
+   prior-art-separated attribution witness survives once CSP, provenance,
+   abstraction, lens, effect, path, and categorical packages are matched. T220
+   upgrades that search-negative to a structural certificate: the canonical
+   witness obligation factors through the neighbor-visible data map
+   (`obligation = psi . nu`), so it is constant on each fiber of `nu` and
+   same-neighbor-data separation is impossible in the canonical regime; the
+   lone escape (a non-factoring obligation reading a hidden source datum) is not
+   a prior-art separation because admitting the datum enlarges the neighbor
+   package. Decision taken: same-neighbor-data separation is retired as a live
+   TF1 rescue. LossKernel survives only as a certified canonical normal form /
+   integration vocabulary; novelty effort should move to live internal movement
+   (S1 geometry gates).
 
 T124 is implemented and keeps H7 narrowed to constructor/resource-accounting
 language. T148 makes the paper-facing demotion explicit after the T145 fixed-
 accounting screen. T125 is implemented as a finite connection-definition
 prerequisite: pure relabeling loops close, access-boundary loops retain
 residual deltas, and hostile/scalarized maps are undefined. T126 and T127 have
-now been implemented as negative or blocking audits, and T154 confirms that
+now been implemented as negative or blocking audits, T220 certifies the T127
+negative structurally via the witness-obligation factorization, and T154
+confirms that
 the actual T54/T58 finality-colimit bridge is scale-blocked before any geometry
 claim. Existing number conflicts have been resolved by keeping T58, T88, and
 T115 for their canonical indexed artifacts and moving the colliding side tracks
@@ -145,6 +169,35 @@ Q1A/Q1B/Q1C/Q1D, causal-access, S1, H7, TF1, and observer-shadow external asks
 without promoting capability-projection or North Star physics language into
 the claim ledger.
 
+## Issuance / Functoriality Frontier (T184-T192, T221)
+
+The metabolic-temporal-issuance line (MTI, PO1-NCK, Cap_TI Candidate C) named
+one shared categorical blocker, FUNCTOR-OBL-TaF-001: is the coherent-section
+construction `F: States(Ext_S) -> FinSets` a functor? Verdict (T221, resolved
+by directional split):
+
+```text
+covariant F  : States(Ext_S)    -> FinSets   is NOT a functor (counterexample)
+contravariant F_op : States(Ext_S)^op -> FinSets is a functor (proof)
+```
+
+The functorial direction is contravariant restriction-of-solutions; it is the
+opposite of the covariant forward-issuance direction the dynamics need. So:
+
+- FUNCTOR-OBL-TaF-001 is settled (by refutation of the covariant form), not by
+  satisfying it. Stop citing it as an open blocker.
+- PO1-NCK is re-scoped: PO1 natively types the obstruction term K, but does not
+  derive the interior optimum lambda*(S) (consistent with T192). The only live
+  promotion path for lambda*(S) is `F_partial` over `ParSets`, not `FinSets`.
+- MTI is unchanged (partially_supported): its T184-T188 metric-vs-causal beta
+  evidence never depended on covariant functoriality. Its single remaining open
+  blocker is the exact WBE continuum derivation.
+
+Language guardrail for this line: do not say "lambda*(S) is a consequence of
+PO1." Say "K is a PO1-native obstruction term; lambda*(S) is a mixed dynamics
+object." Do not import curvature, gravity, or torsion from the metabolic
+branching analogy.
+
 Promotion gate before any public theorem or paper language:
 
 - LossKernel must be stricter than free-text `forgotten_structure` metadata.
@@ -156,7 +209,13 @@ Promotion gate before any public theorem or paper language:
 - The paper needs either a separation theorem from ordinary CSP plus
   provenance/effect/lens machinery, or a quotient counterexample showing
   path-dependent attribution survives same endpoints, same composite map, same
-  endpoint behavior, and same naive loss set.
+  endpoint behavior, and same naive loss set. The quotient-counterexample route
+  is now structurally closed for the canonical derivation: T220 shows the
+  canonical witness obligation factors through the neighbor-visible data map, so
+  no same-neighbor-data survivor can exist unless the obligation reads a source
+  field outside every mature neighbor package (which is then absorbed once that
+  field is admitted). A separation theorem, if any survives, must come from
+  outside this canonical witness-obligation construction.
 
 Language guardrails:
 
@@ -691,10 +750,26 @@ obstructions, CSP equivalence, holonic emergence, and categorical structure.
    HolonicNodes (D1RestrictionSystems) with TypedTransportNetworks to build a
    genuine two-level holonic structure.
 
-5. **Finite-to-Infinite Boundary Audit.** Determine which T39-T41 results
-   (parity theorem, CSP equivalence, category laws, non-functor theorem) hold
-   for infinite or continuous analogues. The finite-graph restriction is
-   load-bearing for several results; the boundary deserves its own test.
+5. **Finite-to-Infinite Boundary Audit — addressed by T59 + T222.** T59 opened
+   the audit and resolved the Mobius continuum probe; T222 closes it with a
+   per-result verdict and a two-sided witness for each load-bearing
+   proto_independent result. Verdicts: D1Cat category laws, the PO1 non-functor
+   theorem, and HEF **survive** (algebraic / existential-monotone / compactness);
+   CSP-PO1 is **conditional** — survives countable scale unconditionally but is
+   strictly finite at the continuum unless coefficient/transition data are
+   carried. The single boundary line is the continuum coefficient layer of the
+   shared signed-graph parity engine; countability is never the obstruction.
+   Two `conditional` edges remain, in priority order:
+   - (a) **CSP-PO1 continuum** (most load-bearing for any paper-facing continuum
+     claim): build the coefficient-aware sheaf-H1 obstruction object for
+     continuous orientation/transition data and compare its verdict against PO1
+     admissibility metadata (the T59 recommended-next). Until then, no
+     continuous-domain obstruction language is licensed without carrying the
+     coefficient object.
+   - (b) **D1Cat colimit** (secondary, structure-level): construct a D1Cat
+     colimit for transfinite descending chains, or prove none of the desired form
+     exists (the natural preserved_dims intersection empties).
+   See [T222](tests/T222-finite-to-infinite-boundary-theorem.md).
 
 6. **External testing.** Present the PO1 schema and the Typed Transport Category
    theorem to a mathematician or logician unfamiliar with TaF. If they find the

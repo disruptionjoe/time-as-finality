@@ -1,0 +1,506 @@
+{
+  "absorber_verdict": {
+    "Quantum_Darwinism_or_SBS": "granted_as_neighbor_absorber",
+    "S6_residue": "S6 keeps the typed descent/loss/provenance audit around the objectivity threshold; it does not own SBS."
+  },
+  "all_checks_passed": true,
+  "checks": {
+    "closure_score_crosses_threshold": true,
+    "conditional_independence_defect_zero_in_product_fixture": true,
+    "objective_fragments_have_distinguishability": true,
+    "sbs_matches_descent_threshold": true,
+    "sbs_threshold_detected": true
+  },
+  "descent_threshold": {
+    "average_distinguishability": 0.720737,
+    "conditional_independence_defect": 0.0,
+    "descent_stable": true,
+    "fragment_scores": [
+      {
+        "conditional_distinguishability": 0.932039,
+        "distinguishable": true,
+        "mutual_information": 0.707027,
+        "name": "E0",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.852108,
+        "distinguishable": true,
+        "mutual_information": 0.52167,
+        "name": "E1",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.744643,
+        "distinguishable": true,
+        "mutual_information": 0.355965,
+        "name": "E2",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.613117,
+        "distinguishable": true,
+        "mutual_information": 0.219624,
+        "name": "E3",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.461779,
+        "distinguishable": false,
+        "mutual_information": 0.115821,
+        "name": "E4",
+        "objective_fragment": false,
+        "redundant": false
+      }
+    ],
+    "objective_fragment_count": 4,
+    "redundant_count": 4,
+    "sbs_closure_score": 0.57659,
+    "sbs_objective": true,
+    "strength": 1.2
+  },
+  "effect_verdict": {
+    "Finalize[R]": true,
+    "Issue[S]": false,
+    "Lose[K]": true,
+    "Project[O]": true
+  },
+  "first_obstruction": "The fixture has zero conditional-independence defect by construction because the conditional environment states factor. A real SBS test must compute this from a less ideal density-matrix model.",
+  "guardrail": "SBS-style score over a controlled-rotation product fixture only: not a proof of Spectrum Broadcast Structure and not a physical objectivity theorem.",
+  "next_step": "Use the generic finite descent engine from G8 to consume these SBS scores without bespoke threshold logic.",
+  "parameters": {
+    "descent_support": 4,
+    "distinguishability_threshold": 0.6,
+    "mutual_information_threshold": 0.2,
+    "sbs_closure_threshold": 0.55
+  },
+  "sbs_threshold": {
+    "average_distinguishability": 0.720737,
+    "conditional_independence_defect": 0.0,
+    "descent_stable": true,
+    "fragment_scores": [
+      {
+        "conditional_distinguishability": 0.932039,
+        "distinguishable": true,
+        "mutual_information": 0.707027,
+        "name": "E0",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.852108,
+        "distinguishable": true,
+        "mutual_information": 0.52167,
+        "name": "E1",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.744643,
+        "distinguishable": true,
+        "mutual_information": 0.355965,
+        "name": "E2",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.613117,
+        "distinguishable": true,
+        "mutual_information": 0.219624,
+        "name": "E3",
+        "objective_fragment": true,
+        "redundant": true
+      },
+      {
+        "conditional_distinguishability": 0.461779,
+        "distinguishable": false,
+        "mutual_information": 0.115821,
+        "name": "E4",
+        "objective_fragment": false,
+        "redundant": false
+      }
+    ],
+    "objective_fragment_count": 4,
+    "redundant_count": 4,
+    "sbs_closure_score": 0.57659,
+    "sbs_objective": true,
+    "strength": 1.2
+  },
+  "strongest_result": "The SBS-style closure score first crosses threshold at strength=1.2, the same point where G6 descent stabilizes. This supports S6 as a bridge metric around objectivity while conceding the physical objectivity mechanism to Quantum Darwinism/SBS.",
+  "sweep": [
+    {
+      "average_distinguishability": 0.0,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": false,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.0,
+          "distinguishable": false,
+          "mutual_information": 0.0,
+          "name": "E0",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.0,
+          "distinguishable": false,
+          "mutual_information": 0.0,
+          "name": "E1",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.0,
+          "distinguishable": false,
+          "mutual_information": 0.0,
+          "name": "E2",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.0,
+          "distinguishable": false,
+          "mutual_information": 0.0,
+          "name": "E3",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.0,
+          "distinguishable": false,
+          "mutual_information": 0.0,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 0,
+      "redundant_count": 0,
+      "sbs_closure_score": 0.0,
+      "sbs_objective": false,
+      "strength": 0.0
+    },
+    {
+      "average_distinguishability": 0.275362,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": false,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.389418,
+          "distinguishable": false,
+          "mutual_information": 0.080316,
+          "name": "E0",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.333487,
+          "distinguishable": false,
+          "mutual_information": 0.05797,
+          "name": "E1",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.276356,
+          "distinguishable": false,
+          "mutual_information": 0.03928,
+          "name": "E2",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.21823,
+          "distinguishable": false,
+          "mutual_information": 0.024231,
+          "name": "E3",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.159318,
+          "distinguishable": false,
+          "mutual_information": 0.012809,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 0,
+      "redundant_count": 0,
+      "sbs_closure_score": 0.0,
+      "sbs_objective": false,
+      "strength": 0.4
+    },
+    {
+      "average_distinguishability": 0.523568,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": false,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.717356,
+          "distinguishable": true,
+          "mutual_information": 0.322952,
+          "name": "E0",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.628793,
+          "distinguishable": true,
+          "mutual_information": 0.233193,
+          "name": "E1",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.531186,
+          "distinguishable": false,
+          "mutual_information": 0.157871,
+          "name": "E2",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.425939,
+          "distinguishable": false,
+          "mutual_information": 0.097251,
+          "name": "E3",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.314567,
+          "distinguishable": false,
+          "mutual_information": 0.051335,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 2,
+      "redundant_count": 2,
+      "sbs_closure_score": 0.209427,
+      "sbs_objective": false,
+      "strength": 0.8
+    },
+    {
+      "average_distinguishability": 0.629815,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": false,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.841471,
+          "distinguishable": true,
+          "mutual_information": 0.502023,
+          "name": "E0",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.75128,
+          "distinguishable": true,
+          "mutual_information": 0.36445,
+          "name": "E1",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.644218,
+          "distinguishable": true,
+          "mutual_information": 0.247163,
+          "name": "E2",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.522687,
+          "distinguishable": false,
+          "mutual_information": 0.152256,
+          "name": "E3",
+          "objective_fragment": false,
+          "redundant": false
+        },
+        {
+          "conditional_distinguishability": 0.389418,
+          "distinguishable": false,
+          "mutual_information": 0.080316,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 3,
+      "redundant_count": 3,
+      "sbs_closure_score": 0.377889,
+      "sbs_objective": false,
+      "strength": 1.0
+    },
+    {
+      "average_distinguishability": 0.720737,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": true,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.932039,
+          "distinguishable": true,
+          "mutual_information": 0.707027,
+          "name": "E0",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.852108,
+          "distinguishable": true,
+          "mutual_information": 0.52167,
+          "name": "E1",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.744643,
+          "distinguishable": true,
+          "mutual_information": 0.355965,
+          "name": "E2",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.613117,
+          "distinguishable": true,
+          "mutual_information": 0.219624,
+          "name": "E3",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.461779,
+          "distinguishable": false,
+          "mutual_information": 0.115821,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 4,
+      "redundant_count": 4,
+      "sbs_closure_score": 0.57659,
+      "sbs_objective": true,
+      "strength": 1.2
+    },
+    {
+      "average_distinguishability": 0.794328,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": true,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 0.98545,
+          "distinguishable": true,
+          "mutual_information": 0.905004,
+          "name": "E0",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.928369,
+          "distinguishable": true,
+          "mutual_information": 0.696531,
+          "name": "E1",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.830497,
+          "distinguishable": true,
+          "mutual_information": 0.482652,
+          "name": "E2",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.696135,
+          "distinguishable": true,
+          "mutual_information": 0.29919,
+          "name": "E3",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.531186,
+          "distinguishable": false,
+          "mutual_information": 0.157871,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": false
+        }
+      ],
+      "objective_fragment_count": 4,
+      "redundant_count": 4,
+      "sbs_closure_score": 0.635462,
+      "sbs_objective": true,
+      "strength": 1.4
+    },
+    {
+      "average_distinguishability": 0.84918,
+      "conditional_independence_defect": 0.0,
+      "descent_stable": true,
+      "fragment_scores": [
+        {
+          "conditional_distinguishability": 1.0,
+          "distinguishable": true,
+          "mutual_information": 1.0,
+          "name": "E0",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.977865,
+          "distinguishable": true,
+          "mutual_information": 0.868934,
+          "name": "E1",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.9001,
+          "distinguishable": true,
+          "mutual_information": 0.623304,
+          "name": "E2",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.770739,
+          "distinguishable": true,
+          "mutual_information": 0.390451,
+          "name": "E3",
+          "objective_fragment": true,
+          "redundant": true
+        },
+        {
+          "conditional_distinguishability": 0.597195,
+          "distinguishable": false,
+          "mutual_information": 0.20646,
+          "name": "E4",
+          "objective_fragment": false,
+          "redundant": true
+        }
+      ],
+      "objective_fragment_count": 4,
+      "redundant_count": 5,
+      "sbs_closure_score": 0.679344,
+      "sbs_objective": true,
+      "strength": 1.6
+    }
+  ],
+  "tag": [
+    "finite_witness",
+    "sbs_approximation",
+    "absorber_checked"
+  ],
+  "test": "s6-g7-sbs-approximation-v0.1"
+}

@@ -1,5 +1,8 @@
 # Open Problem: Finality Under Non-Static Boundaries
 
+> **DORMANT (as of 2026-06-26).** No downstream references in tests/, models/,
+> results/, CLAIM-LEDGER, or ROADMAP. Kept for the record; not an active line.
+
 ## Question
 
 How should [D1](../claims/D1-physical-finality-definition.md) characterize records formed near a finality-domain boundary that moves? Most finality-domain reasoning assumes a boundary that is fixed for the duration of record formation. A periodically moving boundary breaks that assumption.

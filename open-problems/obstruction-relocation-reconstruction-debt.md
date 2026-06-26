@@ -1,5 +1,8 @@
 # Obstruction Relocation And Reconstruction Debt
 
+> **DORMANT (as of 2026-06-26).** No downstream references in tests/, models/,
+> results/, CLAIM-LEDGER, or ROADMAP. Kept for the record; not an active line.
+
 ## Status
 
 Open formal target. Not a conservation law and not a main research line yet.

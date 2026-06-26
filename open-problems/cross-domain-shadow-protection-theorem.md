@@ -1,5 +1,8 @@
 # Cross-Domain Shadow Protection Theorem
 
+> **DORMANT (as of 2026-06-26).** No downstream references in tests/, models/,
+> results/, CLAIM-LEDGER, or ROADMAP. Kept for the record; not an active line.
+
 ## Status
 
 Open theorem target. This file is a research target extracted from the

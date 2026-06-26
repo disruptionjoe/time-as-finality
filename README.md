@@ -89,6 +89,16 @@ The project sits between foundations of time, quantum measurement, decoherence, 
 
 ## Start Here
 
+> **Reading the verdicts below.** "Confirmed", "supported", and "Theorem" in
+> these report titles almost always mean **confirmed on a finite witness** (a
+> specific 3–8 element hand-built model), not a proven general theorem. The only
+> generally-proven results are listed in [COMPLEXITY-LEDGER.md](COMPLEXITY-LEDGER.md)
+> and are narrow (T110, plus the elementary T45/T47 PO1-schema order-properties,
+> which carry no temporal content). For the honest evidence tier of every claim,
+> read the **Canon Index** at the top of [CLAIM-LEDGER.md](CLAIM-LEDGER.md). In
+> particular the **Anti-Scalar Theorem (T49/T50)** and the observer-colimit
+> results (T51/T52) are finite-witness, not general theorems.
+
 - [TECHNICAL-NOTE-v0.1.md](TECHNICAL-NOTE-v0.1.md) - first formal result and
   evidence verdict.
 - [TECHNICAL-REPORT-emergence-lab-v0.1.md](TECHNICAL-REPORT-emergence-lab-v0.1.md)

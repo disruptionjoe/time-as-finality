@@ -413,38 +413,38 @@ Language guardrails:
    should remain a graph-indexed restriction system or graduate to presheaf or
    sheaf language. Use T13/T21 obstruction machinery only if the simpler graph
    object fails.
-5. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
+9. Generalize [T17](tests/T17-consensus-finality-crosswalk.md)'s bounded
    theorem check into a parameterized distributed-systems result. Prove which
    resource-budget families cannot jointly maximize D1 dimensions and bounded
    progress, and identify the smallest model extension that breaks the
    tradeoff.
-6. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
+10. Extend [T21](tests/T21-bell-contextuality-finality.md) from ideal CHSH
    scores to detector/noise/decoherence mapping against an actual Bell-test
    protocol.
-7. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
+11. Extend [T16](tests/T16-spacetime-aggregation.md) from shared event labels
    to explicit restriction maps between local causal diamonds, then connect
    the obstruction witnesses to [T13](tests/T13-finality-sheaf-cohomology.md).
-8. Define the phenomenal formal-gap problem precisely using
+12. Define the phenomenal formal-gap problem precisely using
    [First-Person Finality and Complexity Separation](open-problems/first-person-finality-complexity-separation.md)
    and [Observer Closure Theorem](open-problems/observer-closure-theorem.md):
    state what a third-person record graph can and cannot represent.
-9. Build a persistent dynamical reconciler whose storage and access boundary
+13. Build a persistent dynamical reconciler whose storage and access boundary
    arise inside the local-update model rather than being selected as a
    terminal observer window.
-10. Extend [T2](tests/T2-quantum-measurement-record-finality.md) beyond ideal
+14. Extend [T2](tests/T2-quantum-measurement-record-finality.md) beyond ideal
    CNOT records: add partial decoherence, detector noise, and a dynamic
    pointer-basis selection criterion, then check whether the
    decohered-but-inaccessible result survives.
-11. Test whether the D1 preorder composes under record-graph merge.
-12. Replace the Landauer lower-bound calculation with an explicit stochastic
+15. Test whether the D1 preorder composes under record-graph merge.
+16. Replace the Landauer lower-bound calculation with an explicit stochastic
    bit-erasure protocol and simulated work distribution.
-13. Run a relativity sanity check for
+17. Run a relativity sanity check for
    [R1](claims/R1-relativity-no-global-commit-order.md).
-14. Build a bounded local-sampling confidence model for
+18. Build a bounded local-sampling confidence model for
    [T6](tests/T6-snowball-record-finality.md).
-15. Add a black-hole specialist critique of
+19. Add a black-hole specialist critique of
    [B1](claims/B1-black-holes-finality-boundaries.md).
-16. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
+20. Ground [T18](tests/T18-finality-direction-theorem.md)'s constructor rule
     in a physical substrate and test whether D1-monotone admissibility
     survives beyond the finite theorem model.
 

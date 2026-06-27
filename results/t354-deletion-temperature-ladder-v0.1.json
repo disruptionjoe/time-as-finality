@@ -1,0 +1,37 @@
+{
+  "task_id": "T354",
+  "title": "Deletion Temperature Ladder",
+  "metrics": [
+    {
+      "name": "soft_s_count",
+      "value": {
+        "fraction": "5120/382129",
+        "float": 0.013398616697502676
+      }
+    },
+    {
+      "name": "soft_s_count_squared",
+      "value": {
+        "fraction": "2621440/4627863",
+        "float": 0.5664471917167816
+      }
+    },
+    {
+      "name": "soft_s_count_cubed",
+      "value": {
+        "fraction": "1342177280/1705336003",
+        "float": 0.7870456482704071
+      }
+    }
+  ],
+  "verdict": "deletion_temperature_has_threshold_behavior",
+  "strongest_claim": "Tail probability rises from about 1.3 percent to 56.6 percent to 78.7 percent as the T252-deletion-count temperature increases.",
+  "improved": "T354 shows that concentration depends strongly on temperature.",
+  "weakened_or_falsified": "It weakens treating one arbitrary temperature as principled.",
+  "falsification_condition": "T354 fails if the temperature ladder changes after seeing probabilities.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T354 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

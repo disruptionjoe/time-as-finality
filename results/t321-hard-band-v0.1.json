@@ -1,0 +1,68 @@
+{
+  "task_id": "T321",
+  "title": "Hard Band",
+  "metrics": [
+    {
+      "name": "description",
+      "value": "Hard gate: T126 plus T156 band."
+    },
+    {
+      "name": "total_weight",
+      "value": 143435
+    },
+    {
+      "name": "tail_weight",
+      "value": 10
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "2/28687",
+        "float": 6.971799072750723e-05
+      }
+    },
+    {
+      "name": "parentcap_probability",
+      "value": {
+        "fraction": "66/143435",
+        "float": 0.00046013873880154774
+      }
+    },
+    {
+      "name": "selected_probability",
+      "value": {
+        "fraction": "1/143435",
+        "float": 6.9717990727507235e-06
+      }
+    },
+    {
+      "name": "lift_vs_uniform",
+      "value": {
+        "fraction": "72576/28687",
+        "float": 2.5299264475197827
+      }
+    },
+    {
+      "name": "uses_tail_label",
+      "value": false
+    },
+    {
+      "name": "empirical_target_equivalent",
+      "value": false
+    },
+    {
+      "name": "uses_deletion_t252_count",
+      "value": false
+    }
+  ],
+  "verdict": "hard_band_tail_probability_recorded",
+  "strongest_claim": "The `hard_band` candidate assigns the 10-case tail probability 2/28687.",
+  "improved": "This records an exact finite probability for a declared candidate weighting rule.",
+  "weakened_or_falsified": "The candidate is weakened as an S1-relevant measure unless it is both non-tautological and independently derivable.",
+  "falsification_condition": "T321 fails if the `hard_band` weights are changed without renaming the measure.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T321 alone.",
+  "open_blocker": "A finite weighting rule is not a physical measure until derived from finality-domain dynamics.",
+  "suggested_next": "Compare this probability against the hard-gate and soft-score rankings, then derive or reject the leading candidate.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

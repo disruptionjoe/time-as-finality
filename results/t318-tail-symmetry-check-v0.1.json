@@ -1,0 +1,37 @@
+{
+  "task_id": "T318",
+  "title": "Tail Symmetry Check",
+  "metrics": [
+    {
+      "name": "tail_symmetry_counts",
+      "value": [
+        {
+          "value": "reverse",
+          "count": 0
+        },
+        {
+          "value": "complement",
+          "count": 0
+        },
+        {
+          "value": "reverse_complement",
+          "count": 10
+        },
+        {
+          "value": "inverse",
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "verdict": "tail_symmetry_reproduced",
+  "strongest_claim": "The tail remains closed under inverse and reverse-complement transforms, not under reverse or complement alone.",
+  "improved": "T318 confirms the structural symmetry result from T301.",
+  "weakened_or_falsified": "It weakens accidental-list readings of the target tail.",
+  "falsification_condition": "T318 fails if transform definitions change after seeing the tail.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T318 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

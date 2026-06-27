@@ -1,0 +1,20 @@
+{
+  "task_id": "T368",
+  "title": "Claim Ledger Guard",
+  "metrics": [
+    {
+      "name": "safe_wording",
+      "value": "finite candidate measures can concentrate the T252-style tail, but remain underived"
+    }
+  ],
+  "verdict": "claim_ledger_guard_recorded",
+  "strongest_claim": "Safe wording is finite and conditional: candidate measures concentrate the tail but are not physical measures.",
+  "improved": "T368 prevents overclaiming from the strong finite scores.",
+  "weakened_or_falsified": "It weakens claim-ledger upgrades from this round alone.",
+  "falsification_condition": "T368 fails if it claims a derived selection law.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T368 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

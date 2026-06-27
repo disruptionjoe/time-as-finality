@@ -1,0 +1,48 @@
+{
+  "task_id": "T317",
+  "title": "Selected T252 Placement",
+  "metrics": [
+    {
+      "name": "selected_t252_diagnostics",
+      "value": {
+        "classification": "passes_filter_only",
+        "strict_pair_count": 20,
+        "cover_relation_count": 8,
+        "height": 5,
+        "width": 2,
+        "rank_profile": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "largest_interval_size": 3,
+        "largest_cover_hub_fraction": {
+          "fraction": "1/4",
+          "float": 0.25
+        }
+      }
+    },
+    {
+      "name": "selected_t252_deletion_summary",
+      "value": {
+        "deletion_count": 9,
+        "t159_thin_deletion_pass_count": 0,
+        "relaxed_interval3_deletion_pass_count": 9,
+        "t253_t126_band_deletion_pass_count": 9,
+        "t252_style_deletion_pass_count": 9
+      }
+    }
+  ],
+  "verdict": "selected_t252_has_full_deletion_t252_count",
+  "strongest_claim": "The selected T252 witness has all nine deletion suborders passing the T252-style deletion gate.",
+  "improved": "T317 anchors the selected witness inside the expanded deletion-count audit.",
+  "weakened_or_falsified": "It weakens any account that ignores deletion substructure.",
+  "falsification_condition": "T317 fails if the selected permutation is not the T252 rank order.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T317 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

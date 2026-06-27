@@ -1,0 +1,30 @@
+{
+  "task_id": "T360",
+  "title": "Cover Hub Primitive",
+  "metrics": [
+    {
+      "name": "lowcover_tail_probability",
+      "value": {
+        "fraction": "2/37",
+        "float": 0.05405405405405406
+      }
+    },
+    {
+      "name": "cover_deletion_tail_probability",
+      "value": {
+        "fraction": "5/8",
+        "float": 0.625
+      }
+    }
+  ],
+  "verdict": "cover_hub_needs_deletion_stability",
+  "strongest_claim": "Low cover alone gives probability 2/37, but low cover plus deletion-band stability gives 5/8.",
+  "improved": "T360 identifies deletion stability as the multiplier on cover sparsity.",
+  "weakened_or_falsified": "It weakens cover-only accounts.",
+  "falsification_condition": "T360 fails if the cover threshold differs from T257.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T360 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

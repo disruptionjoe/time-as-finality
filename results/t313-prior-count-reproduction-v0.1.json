@@ -1,0 +1,32 @@
+{
+  "task_id": "T313",
+  "title": "Prior Count Reproduction",
+  "metrics": [
+    {
+      "name": "band_count",
+      "value": 143435
+    },
+    {
+      "name": "t253_stable_count",
+      "value": 8339
+    },
+    {
+      "name": "parentcap_count",
+      "value": 66
+    },
+    {
+      "name": "tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "measure_stress_reproduces_prior_counts",
+  "strongest_claim": "The stress audit reproduces the prior n=9 counts: 143435 band cases, 8339 deletion-band stable cases, 66 parent-cap cases, and 10 tail cases.",
+  "improved": "T313 validates that the expanded measure audit uses the same denominator.",
+  "weakened_or_falsified": "It weakens concern that the stronger measures are computed over a shifted ensemble.",
+  "falsification_condition": "T313 fails if any reproduced count changes under the same definitions.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T313 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

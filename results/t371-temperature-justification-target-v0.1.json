@@ -1,0 +1,27 @@
+{
+  "task_id": "T371",
+  "title": "Temperature Justification Target",
+  "metrics": [
+    {
+      "name": "winning_temperature_base",
+      "value": 8
+    },
+    {
+      "name": "winning_soft_probability",
+      "value": {
+        "fraction": "1342177280/1705336003",
+        "float": 0.7870456482704071
+      }
+    }
+  ],
+  "verdict": "temperature_requires_independent_justification",
+  "strongest_claim": "The winning soft score depends on a high deletion-count temperature that has not been derived.",
+  "improved": "T371 identifies the missing parameter principle.",
+  "weakened_or_falsified": "It weakens arbitrary-temperature selection claims.",
+  "falsification_condition": "T371 fails if the base-8 temperature is treated as natural without evidence.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T371 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

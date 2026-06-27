@@ -1,0 +1,27 @@
+{
+  "task_id": "T358",
+  "title": "Tail-Label Tautology Guardrail",
+  "metrics": [
+    {
+      "name": "tail_conditioned_probability",
+      "value": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "name": "uses_tail_label",
+      "value": true
+    }
+  ],
+  "verdict": "tail_label_conditioning_rejected",
+  "strongest_claim": "Direct tail conditioning still gives probability 1 and is rejected as tautological.",
+  "improved": "T358 keeps the finite measure search honest.",
+  "weakened_or_falsified": "It weakens any attempt to call the target label a measure.",
+  "falsification_condition": "T358 fails if tail-label conditioning is treated as non-tautological.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T358 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

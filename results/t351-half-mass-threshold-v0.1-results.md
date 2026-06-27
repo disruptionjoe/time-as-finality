@@ -1,0 +1,45 @@
+# T351 Results: Half-Mass Threshold
+
+## Aggregate Checks
+
+| Metric | Value |
+| --- | --- |
+| `non_tautological_half_mass_measures` | `[{'name': 'hard_cover_deletion', 'description': 'Hard gate: low cover and deletion-band stability.', 'total_weight': 16, 'tail_weight': 10, 'parentcap_weight': 10, 'selected_weight': 1, 'tail_probability': {'fraction': '5/8', 'float': 0.625}, 'parentcap_probability': {'fraction': '5/8', 'float': 0.625}, 'selected_probability': {'fraction': '1/16', 'float': 0.0625}, 'lift_vs_uniform': {'fraction': '22680/1', 'float': 22680.0}, 'uses_tail_label': False, 'empirical_target_equivalent': False, 'uses_deletion_t252_count': False}, {'name': 'hard_interval_cover_deletion', 'description': 'Hard gate: interval<=3, low cover, and deletion-band stability.', 'total_weight': 10, 'tail_weight': 10, 'parentcap_weight': 10, 'selected_weight': 1, 'tail_probability': {'fraction': '1/1', 'float': 1.0}, 'parentcap_probability': {'fraction': '1/1', 'float': 1.0}, 'selected_probability': {'fraction': '1/10', 'float': 0.1}, 'lift_vs_uniform': {'fraction': '36288/1', 'float': 36288.0}, 'uses_tail_label': False, 'empirical_target_equivalent': True, 'uses_deletion_t252_count': False}, {'name': 'soft_s_count_squared', 'description': 'Soft score 4^(number of deletion T252-style passes).', 'total_weight': 4627863, 'tail_weight': 2621440, 'parentcap_weight': 4070400, 'selected_weight': 262144, 'tail_probability': {'fraction': '2621440/4627863', 'float': 0.5664471917167816}, 'parentcap_probability': {'fraction': '1356800/1542621', 'float': 0.8795420262008621}, 'selected_probability': {'fraction': '262144/4627863', 'float': 0.05664471917167816}, 'lift_vs_uniform': {'fraction': '10569646080/514207', 'float': 20555.23569301857}, 'uses_tail_label': False, 'empirical_target_equivalent': False, 'uses_deletion_t252_count': True}, {'name': 'soft_parent_s_squared', 'description': 'Soft score 4^(T252 deletion pass count) with a parent-cap multiplier.', 'total_weight': 16839063, 'tail_weight': 10485760, 'parentcap_weight': 16281600, 'selected_weight': 1048576, 'tail_probability': {'fraction': '10485760/16839063', 'float': 0.6227044818348859}, 'parentcap_probability': {'fraction': '5427200/5613021', 'float': 0.9668946544115905}, 'selected_probability': {'fraction': '1048576/16839063', 'float': 0.06227044818348859}, 'lift_vs_uniform': {'fraction': '14092861440/623669', 'float': 22596.70023682434}, 'uses_tail_label': False, 'empirical_target_equivalent': False, 'uses_deletion_t252_count': True}, {'name': 'soft_s_count_cubed', 'description': 'Soft score 8^(number of deletion T252-style passes).', 'total_weight': 1705336003, 'tail_weight': 1342177280, 'parentcap_weight': 1694613504, 'selected_weight': 134217728, 'tail_probability': {'fraction': '1342177280/1705336003', 'float': 0.7870456482704071}, 'parentcap_probability': {'fraction': '1694613504/1705336003', 'float': 0.9937123833771543}, 'selected_probability': {'fraction': '134217728/1705336003', 'float': 0.07870456482704072}, 'lift_vs_uniform': {'fraction': '6957847019520/243619429', 'float': 28560.312484436534}, 'uses_tail_label': False, 'empirical_target_equivalent': False, 'uses_deletion_t252_count': True}]` |
+
+- Verdict: `some_non_tautological_candidates_exceed_half_mass`
+
+## Strongest Claim
+
+Several non-tail-labeled candidates exceed half mass on the 10-case tail, led by cover+deletion and high-temperature deletion-count scores.
+
+## What This Improved
+
+T351 updates the prior concentration threshold result with a stronger candidate family.
+
+## What This Weakened Or Falsified
+
+It weakens the claim that no simple finite score can concentrate the tail.
+
+## Falsification Condition
+
+T351 fails if tail-conditioned measures are included as evidence.
+
+## S1 Update
+
+S1 remains requires_added_assumption for the finite ordinal route.
+
+## Claim Ledger Update
+
+Do not update the claim ledger from T351 alone.
+
+## Open Blocker
+
+No finality-domain dynamics derive the successful finite weighting rule yet.
+
+## Suggested Next
+
+Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.
+
+## Not Claimed
+
+These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1.

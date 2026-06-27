@@ -1,0 +1,30 @@
+{
+  "task_id": "T356",
+  "title": "Cover-Deletion Vs Cubic Soft Score",
+  "metrics": [
+    {
+      "name": "cover_deletion_tail_probability",
+      "value": {
+        "fraction": "5/8",
+        "float": 0.625
+      }
+    },
+    {
+      "name": "s_cubed_tail_probability",
+      "value": {
+        "fraction": "1342177280/1705336003",
+        "float": 0.7870456482704071
+      }
+    }
+  ],
+  "verdict": "hard_and_soft_candidates_both_concentrate_tail",
+  "strongest_claim": "A sparse hard gate and a high-temperature deletion-count soft score both concentrate the target tail.",
+  "improved": "T356 gives two distinct finite routes for future derivation attempts.",
+  "weakened_or_falsified": "It weakens dependence on one arbitrary candidate.",
+  "falsification_condition": "T356 fails if either candidate is relabeled as physical without derivation.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T356 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

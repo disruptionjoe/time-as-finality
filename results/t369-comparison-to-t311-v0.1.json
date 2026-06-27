@@ -1,0 +1,37 @@
+{
+  "task_id": "T369",
+  "title": "Comparison To T311",
+  "metrics": [
+    {
+      "name": "t311_best_non_tautological_probability",
+      "value": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      }
+    },
+    {
+      "name": "t312_t375_best_simple_hard_probability",
+      "value": {
+        "fraction": "5/8",
+        "float": 0.625
+      }
+    },
+    {
+      "name": "t312_t375_best_soft_probability",
+      "value": {
+        "fraction": "1342177280/1705336003",
+        "float": 0.7870456482704071
+      }
+    }
+  ],
+  "verdict": "expanded_measure_family_strengthens_tail_concentration",
+  "strongest_claim": "The expanded family improves the best non-tail concentration from 5/33 to 5/8 for a hard gate and above 3/4 for a soft score.",
+  "improved": "T369 updates the previous round with a stronger candidate family.",
+  "weakened_or_falsified": "It weakens the conclusion that all obvious finite weights are insufficient.",
+  "falsification_condition": "T369 fails if the prior and current candidates are not compared on the same target tail.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T369 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

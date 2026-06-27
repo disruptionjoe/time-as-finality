@@ -1,0 +1,24 @@
+{
+  "task_id": "T370",
+  "title": "Residual False Positive Target",
+  "metrics": [
+    {
+      "name": "cover_deletion_false_positive_count",
+      "value": 6
+    },
+    {
+      "name": "target_next",
+      "value": "explain_or_exclude_the_six_cover_deletion_false_positives"
+    }
+  ],
+  "verdict": "six_false_positives_are_next_local_target",
+  "strongest_claim": "The simple hard candidate's remaining problem is exactly six false positives.",
+  "improved": "T370 turns the best hard candidate into a concrete local obstruction problem.",
+  "weakened_or_falsified": "It weakens vague measure-building next steps.",
+  "falsification_condition": "T370 fails if false positives are not explicitly tracked.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T370 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

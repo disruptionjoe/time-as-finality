@@ -1,0 +1,37 @@
+{
+  "task_id": "T315",
+  "title": "Intersection Count Map",
+  "metrics": [
+    {
+      "name": "intersection_counts",
+      "value": [
+        {
+          "value": "cover_deletion",
+          "count": 16
+        },
+        {
+          "value": "interval_cover",
+          "count": 66
+        },
+        {
+          "value": "interval_cover_deletion",
+          "count": 10
+        },
+        {
+          "value": "interval_deletion",
+          "count": 7901
+        }
+      ]
+    }
+  ],
+  "verdict": "intersection_count_map_recorded",
+  "strongest_claim": "The key intersections show that low-cover plus deletion-band stability leaves 16 cases, while interval+cover+deletion leaves exactly 10.",
+  "improved": "T315 identifies which feature combinations are doing the selection work.",
+  "weakened_or_falsified": "It weakens single-feature explanations.",
+  "falsification_condition": "T315 fails if intersections are not computed from the same case flags.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T315 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

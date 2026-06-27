@@ -1,0 +1,28 @@
+{
+  "task_id": "T353",
+  "title": "Parent Cap False Positives Revisited",
+  "metrics": [
+    {
+      "name": "parentcap_count",
+      "value": 66
+    },
+    {
+      "name": "tail_inside_parentcap",
+      "value": 10
+    },
+    {
+      "name": "false_positive_count",
+      "value": 56
+    }
+  ],
+  "verdict": "parentcap_false_positive_burden_stays_large",
+  "strongest_claim": "The parent cap still has 56 false positives before deletion stability.",
+  "improved": "T353 confirms that parent shape alone is not the measure.",
+  "weakened_or_falsified": "It weakens parentcap-only selection proposals.",
+  "falsification_condition": "T353 fails if it omits the deletion-stability requirement.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T353 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

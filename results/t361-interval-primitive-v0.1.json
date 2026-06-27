@@ -1,0 +1,30 @@
+{
+  "task_id": "T361",
+  "title": "Interval Primitive",
+  "metrics": [
+    {
+      "name": "interval3_tail_probability",
+      "value": {
+        "fraction": "1/9135",
+        "float": 0.00010946907498631637
+      }
+    },
+    {
+      "name": "interval_deletion_tail_probability",
+      "value": {
+        "fraction": "10/7901",
+        "float": 0.0012656625743576763
+      }
+    }
+  ],
+  "verdict": "interval_primitive_is_weak_without_cover",
+  "strongest_claim": "Interval<=3 is weak alone and remains broad even with deletion-band stability.",
+  "improved": "T361 demotes interval depth as the primary selection driver.",
+  "weakened_or_falsified": "It weakens interval-first interpretations.",
+  "falsification_condition": "T361 fails if interval<=3 is evaluated before the band gate.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T361 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

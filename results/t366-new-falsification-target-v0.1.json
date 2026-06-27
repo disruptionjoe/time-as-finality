@@ -1,0 +1,24 @@
+{
+  "task_id": "T366",
+  "title": "New Falsification Target",
+  "metrics": [
+    {
+      "name": "candidate_to_derive",
+      "value": "cover_deletion_or_cubic_deletion_count"
+    },
+    {
+      "name": "required_derivation",
+      "value": "from finality-domain dynamics, not post-hoc ordinal tail labels"
+    }
+  ],
+  "verdict": "next_target_is_derivation_not_more_counting",
+  "strongest_claim": "The next task is to derive or reject the cover-deletion/cubic-deletion-count weights from finality-domain dynamics.",
+  "improved": "T366 converts finite success into a falsifiable derivation target.",
+  "weakened_or_falsified": "It weakens more uniform counting as the next move.",
+  "falsification_condition": "T366 fails if the candidate is accepted without derivation.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T366 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

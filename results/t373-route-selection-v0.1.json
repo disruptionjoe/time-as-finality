@@ -1,0 +1,28 @@
+{
+  "task_id": "T373",
+  "title": "Route Selection",
+  "metrics": [
+    {
+      "name": "selected_next_route",
+      "value": "derive_or_reject_cover_deletion_action_from_finality_domain_dynamics"
+    },
+    {
+      "name": "secondary_route",
+      "value": "derive_or_reject_deletion_count_temperature"
+    },
+    {
+      "name": "rejected_route",
+      "value": "more_post_hoc_tail_conditioning"
+    }
+  ],
+  "verdict": "route_is_derivation_or_rejection_of_candidate_action",
+  "strongest_claim": "The next meaningful route is derivation or rejection of the candidate action, not more post-hoc tail conditioning.",
+  "improved": "T373 makes the next research move explicit.",
+  "weakened_or_falsified": "It weakens further brute-force task inflation.",
+  "falsification_condition": "T373 fails if the route ignores the best finite candidates.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T373 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

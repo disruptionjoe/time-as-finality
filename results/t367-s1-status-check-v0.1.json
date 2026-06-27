@@ -1,0 +1,24 @@
+{
+  "task_id": "T367",
+  "title": "S1 Status Check",
+  "metrics": [
+    {
+      "name": "tail_concentration_found",
+      "value": true
+    },
+    {
+      "name": "physical_measure_derived",
+      "value": false
+    }
+  ],
+  "verdict": "s1_still_requires_added_assumption_despite_finite_concentration",
+  "strongest_claim": "Finite concentration exists, but no physical non-uniform measure has been derived.",
+  "improved": "T367 keeps S1 status aligned with the evidence.",
+  "weakened_or_falsified": "It weakens premature S1 upgrades.",
+  "falsification_condition": "T367 fails if finite concentration is treated as spacetime evidence.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T367 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

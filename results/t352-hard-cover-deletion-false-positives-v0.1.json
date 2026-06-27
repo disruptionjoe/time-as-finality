@@ -1,0 +1,28 @@
+{
+  "task_id": "T352",
+  "title": "Hard Cover-Deletion False Positives",
+  "metrics": [
+    {
+      "name": "hard_cover_deletion_count",
+      "value": 16
+    },
+    {
+      "name": "tail_count_inside_gate",
+      "value": 10
+    },
+    {
+      "name": "false_positive_count",
+      "value": 6
+    }
+  ],
+  "verdict": "cover_deletion_gate_has_six_false_positives",
+  "strongest_claim": "The strongest non-target hard gate has 6 false positives outside the 10-case target tail.",
+  "improved": "T352 makes the remaining burden explicit.",
+  "weakened_or_falsified": "It weakens treating cover+deletion as already identical to the target.",
+  "falsification_condition": "T352 fails if false positives are not counted inside the hard gate.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T352 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

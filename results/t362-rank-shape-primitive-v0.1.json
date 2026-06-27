@@ -1,0 +1,30 @@
+{
+  "task_id": "T362",
+  "title": "Rank Shape Primitive",
+  "metrics": [
+    {
+      "name": "rank_shape_tail_probability",
+      "value": {
+        "fraction": "640/987721",
+        "float": 0.0006479562548533443
+      }
+    },
+    {
+      "name": "exact_parent_shape_tail_probability",
+      "value": {
+        "fraction": "320/766449",
+        "float": 0.00041750984083742035
+      }
+    }
+  ],
+  "verdict": "rank_shape_soft_scores_do_not_concentrate_tail",
+  "strongest_claim": "T252-like rank and parent-shape bonuses enrich the tail only weakly.",
+  "improved": "T362 keeps shape-label scores from being overread.",
+  "weakened_or_falsified": "It weakens parent-shape-only soft actions.",
+  "falsification_condition": "T362 fails if shape scores include tail membership.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T362 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

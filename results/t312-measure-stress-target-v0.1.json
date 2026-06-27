@@ -1,0 +1,31 @@
+{
+  "task_id": "T312",
+  "title": "Measure Stress Target",
+  "metrics": [
+    {
+      "name": "total_cases",
+      "value": 362880
+    },
+    {
+      "name": "target_tail_count",
+      "value": 10
+    },
+    {
+      "name": "uniform_tail_probability",
+      "value": {
+        "fraction": "1/36288",
+        "float": 2.755731922398589e-05
+      }
+    }
+  ],
+  "verdict": "measure_stress_target_declared",
+  "strongest_claim": "The finite measure stress target is the same 10-case T252-style tail, with uniform probability 1/36288.",
+  "improved": "T312 fixes the target before evaluating a larger candidate-measure family.",
+  "weakened_or_falsified": "It weakens hidden-target risk in this round.",
+  "falsification_condition": "T312 fails if the target is not the T272/T311 tail.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T312 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

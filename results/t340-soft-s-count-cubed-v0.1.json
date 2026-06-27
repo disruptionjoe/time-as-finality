@@ -1,0 +1,68 @@
+{
+  "task_id": "T340",
+  "title": "Soft S Count Cubed",
+  "metrics": [
+    {
+      "name": "description",
+      "value": "Soft score 8^(number of deletion T252-style passes)."
+    },
+    {
+      "name": "total_weight",
+      "value": 1705336003
+    },
+    {
+      "name": "tail_weight",
+      "value": 1342177280
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "1342177280/1705336003",
+        "float": 0.7870456482704071
+      }
+    },
+    {
+      "name": "parentcap_probability",
+      "value": {
+        "fraction": "1694613504/1705336003",
+        "float": 0.9937123833771543
+      }
+    },
+    {
+      "name": "selected_probability",
+      "value": {
+        "fraction": "134217728/1705336003",
+        "float": 0.07870456482704072
+      }
+    },
+    {
+      "name": "lift_vs_uniform",
+      "value": {
+        "fraction": "6957847019520/243619429",
+        "float": 28560.312484436534
+      }
+    },
+    {
+      "name": "uses_tail_label",
+      "value": false
+    },
+    {
+      "name": "empirical_target_equivalent",
+      "value": false
+    },
+    {
+      "name": "uses_deletion_t252_count",
+      "value": true
+    }
+  ],
+  "verdict": "soft_s_count_cubed_tail_probability_recorded",
+  "strongest_claim": "The `soft_s_count_cubed` candidate assigns the 10-case tail probability 1342177280/1705336003.",
+  "improved": "This records an exact finite probability for a declared candidate weighting rule.",
+  "weakened_or_falsified": "The candidate is weakened as an S1-relevant measure unless it is both non-tautological and independently derivable.",
+  "falsification_condition": "T340 fails if the `soft_s_count_cubed` weights are changed without renaming the measure.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T340 alone.",
+  "open_blocker": "A finite weighting rule is not a physical measure until derived from finality-domain dynamics.",
+  "suggested_next": "Compare this probability against the hard-gate and soft-score rankings, then derive or reject the leading candidate.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

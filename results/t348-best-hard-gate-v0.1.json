@@ -1,0 +1,46 @@
+{
+  "task_id": "T348",
+  "title": "Best Hard Gate",
+  "metrics": [
+    {
+      "name": "best_hard_gate",
+      "value": {
+        "name": "hard_interval_cover_deletion",
+        "description": "Hard gate: interval<=3, low cover, and deletion-band stability.",
+        "total_weight": 10,
+        "tail_weight": 10,
+        "parentcap_weight": 10,
+        "selected_weight": 1,
+        "tail_probability": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "parentcap_probability": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "selected_probability": {
+          "fraction": "1/10",
+          "float": 0.1
+        },
+        "lift_vs_uniform": {
+          "fraction": "36288/1",
+          "float": 36288.0
+        },
+        "uses_tail_label": false,
+        "empirical_target_equivalent": true,
+        "uses_deletion_t252_count": false
+      }
+    }
+  ],
+  "verdict": "best_hard_gate_is_interval_cover_deletion_but_target_equivalent",
+  "strongest_claim": "The best hard gate is interval+cover+deletion, but it is empirically target-equivalent at n=9.",
+  "improved": "T348 separates explanatory gates from target-equivalent gates.",
+  "weakened_or_falsified": "It weakens any claim that a perfect hard gate is automatically a physical measure.",
+  "falsification_condition": "T348 fails if target-equivalent gates are not flagged.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T348 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

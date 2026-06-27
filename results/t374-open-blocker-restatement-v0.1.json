@@ -1,0 +1,20 @@
+{
+  "task_id": "T374",
+  "title": "Open Blocker Restatement",
+  "metrics": [
+    {
+      "name": "open_blocker",
+      "value": "no finality-domain derivation of cover-deletion or deletion-count weighting"
+    }
+  ],
+  "verdict": "open_blocker_is_now_derivability",
+  "strongest_claim": "The blocker has narrowed from finding a concentrating finite score to deriving that score from finality-domain structure.",
+  "improved": "T374 records the improved blocker.",
+  "weakened_or_falsified": "It weakens the older blocker that no finite candidate measure was known.",
+  "falsification_condition": "T374 fails if derivability is not distinguished from finite performance.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T374 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

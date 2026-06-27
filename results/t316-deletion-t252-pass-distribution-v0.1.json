@@ -1,0 +1,82 @@
+{
+  "task_id": "T316",
+  "title": "Deletion T252-Pass Distribution",
+  "metrics": [
+    {
+      "name": "deletion_t252_pass_distribution",
+      "value": [
+        {
+          "value": 0,
+          "count": 140470
+        },
+        {
+          "value": 1,
+          "count": 2171
+        },
+        {
+          "value": 2,
+          "count": 588
+        },
+        {
+          "value": 3,
+          "count": 68
+        },
+        {
+          "value": 4,
+          "count": 40
+        },
+        {
+          "value": 5,
+          "count": 24
+        },
+        {
+          "value": 6,
+          "count": 36
+        },
+        {
+          "value": 7,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 20
+        },
+        {
+          "value": 9,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "name": "parentcap_deletion_t252_pass_distribution",
+      "value": [
+        {
+          "value": 4,
+          "count": 28
+        },
+        {
+          "value": 7,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 20
+        },
+        {
+          "value": 9,
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "verdict": "deletion_t252_pass_distribution_recorded",
+  "strongest_claim": "Among band-positive cases, the number of deletion T252-style passes is highly concentrated near zero, while parent-cap cases split across 4, 7, 8, and 9 passes.",
+  "improved": "T316 motivates deletion-count soft actions.",
+  "weakened_or_falsified": "It weakens parent-cap-only explanations.",
+  "falsification_condition": "T316 fails if deletion counts are not rank-normalized suborders.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T316 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

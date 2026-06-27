@@ -1,0 +1,27 @@
+{
+  "task_id": "T357",
+  "title": "Target-Equivalent Gate Guardrail",
+  "metrics": [
+    {
+      "name": "interval_cover_deletion_probability",
+      "value": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "name": "empirical_target_equivalent",
+      "value": true
+    }
+  ],
+  "verdict": "perfect_gate_is_guardrailed_as_target_equivalent",
+  "strongest_claim": "The interval+cover+deletion hard gate has probability 1 because it is empirically target-equivalent at n=9.",
+  "improved": "T357 prevents a perfect finite gate from being mistaken for an explanatory measure.",
+  "weakened_or_falsified": "It weakens post-hoc target-definition laundering.",
+  "falsification_condition": "T357 fails if target-equivalent gates are ranked as physical explanations.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T357 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

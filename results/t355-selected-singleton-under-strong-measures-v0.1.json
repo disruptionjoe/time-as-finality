@@ -1,0 +1,37 @@
+{
+  "task_id": "T355",
+  "title": "Selected Singleton Under Strong Measures",
+  "metrics": [
+    {
+      "name": "selected_under_cover_deletion",
+      "value": {
+        "fraction": "1/16",
+        "float": 0.0625
+      }
+    },
+    {
+      "name": "selected_under_s_squared",
+      "value": {
+        "fraction": "262144/4627863",
+        "float": 0.05664471917167816
+      }
+    },
+    {
+      "name": "selected_under_s_cubed",
+      "value": {
+        "fraction": "134217728/1705336003",
+        "float": 0.07870456482704072
+      }
+    }
+  ],
+  "verdict": "selected_singleton_still_not_explained",
+  "strongest_claim": "Even strong tail measures do not uniquely select the original T252 permutation.",
+  "improved": "T355 separates tail selection from singleton selection.",
+  "weakened_or_falsified": "It weakens overreading of the specific selected witness.",
+  "falsification_condition": "T355 fails if singleton probability is confused with tail probability.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T355 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

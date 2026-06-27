@@ -1,0 +1,30 @@
+{
+  "task_id": "T359",
+  "title": "Anti-Parent Control",
+  "metrics": [
+    {
+      "name": "anti_parent_tail_probability",
+      "value": {
+        "fraction": "5/414813",
+        "float": 1.2053624163177143e-05
+      }
+    },
+    {
+      "name": "uniform_tail_probability",
+      "value": {
+        "fraction": "1/36288",
+        "float": 2.755731922398589e-05
+      }
+    }
+  ],
+  "verdict": "anti_parent_control_suppresses_tail",
+  "strongest_claim": "The anti-parent control suppresses the target tail below useful concentration.",
+  "improved": "T359 checks that the scoring direction matters.",
+  "weakened_or_falsified": "It weakens claims that any reweighting will make the tail look good.",
+  "falsification_condition": "T359 fails if control scores are omitted.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T359 alone.",
+  "open_blocker": "No finality-domain dynamics derive the successful finite weighting rule yet.",
+  "suggested_next": "Derive or reject the candidate action from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite measure stress tests do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

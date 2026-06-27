@@ -1,0 +1,24 @@
+{
+  "task_id": "T294",
+  "title": "Cover Plus Deletion Pair",
+  "metrics": [
+    {
+      "name": "cover_and_t253_count",
+      "value": 16
+    },
+    {
+      "name": "target_tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "cover_deletion_pair_nearly_isolates_tail",
+  "strongest_claim": "Low-cover plus T253 deletion-band stability leaves 16 cases, much closer to the 10-case tail.",
+  "improved": "T294 identifies cover+deletion as the strongest non-parent pair.",
+  "weakened_or_falsified": "It weakens interval-first narratives: cover plus deletion does most of the work.",
+  "falsification_condition": "T294 fails if cover and deletion are not evaluated on the same parent/deletion relations.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T294 alone.",
+  "open_blocker": "Six false positives remain without the interval cap.",
+  "suggested_next": "Use the full interval+cover+deletion gate as the target boundary.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

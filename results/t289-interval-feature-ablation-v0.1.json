@@ -1,0 +1,31 @@
+{
+  "task_id": "T289",
+  "title": "Interval Feature Ablation",
+  "metrics": [
+    {
+      "name": "interval3_parent_count",
+      "value": 91350
+    },
+    {
+      "name": "tail_count_inside_interval3",
+      "value": 10
+    },
+    {
+      "name": "tail_probability_after_interval3",
+      "value": {
+        "fraction": "1/9135",
+        "float": 0.00010946907498631637
+      }
+    }
+  ],
+  "verdict": "interval_feature_alone_is_too_permissive",
+  "strongest_claim": "The interval<=3 parent feature admits 91350 cases, so it cannot explain the 10-case tail by itself.",
+  "improved": "T289 separates T252's interval behavior from its cover and deletion behavior.",
+  "weakened_or_falsified": "It weakens interval-only selection stories.",
+  "falsification_condition": "T289 fails if interval<=3 is not evaluated after T126+T156.",
+  "s1_update": "S1 is unchanged; interval caps are finite screens.",
+  "claim_ledger_update": "Do not update the claim ledger from T289 alone.",
+  "open_blocker": "Interval caps alone are far from a natural measure.",
+  "suggested_next": "Pair interval caps with cover and deletion features.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

@@ -1,0 +1,34 @@
+{
+  "task_id": "T309",
+  "title": "Concentration Threshold Audit",
+  "metrics": [
+    {
+      "name": "best_non_tautological_tail_probability",
+      "value": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      }
+    },
+    {
+      "name": "threshold",
+      "value": {
+        "fraction": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "name": "passes_threshold",
+      "value": false
+    }
+  ],
+  "verdict": "no_non_tautological_candidate_reaches_half_mass",
+  "strongest_claim": "No non-tautological candidate tested here puts even half its mass on the 10-case tail.",
+  "improved": "T309 gives a clear stop condition for this finite measure family.",
+  "weakened_or_falsified": "It weakens the current candidate family as an S1 rescue.",
+  "falsification_condition": "T309 fails if a non-tautological candidate exceeds the declared threshold.",
+  "s1_update": "S1 remains requires_added_assumption.",
+  "claim_ledger_update": "Do not update the claim ledger from T309 alone.",
+  "open_blocker": "A stronger, principled measure is still missing.",
+  "suggested_next": "Reject tautological tail conditioning as a physical answer.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

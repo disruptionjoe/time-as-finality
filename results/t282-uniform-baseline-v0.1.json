@@ -1,0 +1,64 @@
+{
+  "task_id": "T282",
+  "title": "Uniform Baseline",
+  "metrics": [
+    {
+      "name": "measure",
+      "value": "uniform"
+    },
+    {
+      "name": "description",
+      "value": "Uniform ordinal ensemble over all 9! permutations."
+    },
+    {
+      "name": "total_weight",
+      "value": 362880
+    },
+    {
+      "name": "tail_weight",
+      "value": 10
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "1/36288",
+        "float": 2.755731922398589e-05
+      }
+    },
+    {
+      "name": "parent_cap_probability",
+      "value": {
+        "fraction": "11/60480",
+        "float": 0.00018187830687830687
+      }
+    },
+    {
+      "name": "selected_t252_probability",
+      "value": {
+        "fraction": "1/362880",
+        "float": 2.7557319223985893e-06
+      }
+    },
+    {
+      "name": "tail_lift_vs_uniform",
+      "value": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "name": "tautological",
+      "value": false
+    }
+  ],
+  "verdict": "uniform_tail_baseline_is_tiny",
+  "strongest_claim": "The `uniform` measure gives the 10-case T252-style tail probability 1/36288.",
+  "improved": "This quantifies selection pressure as an exact finite weighted probability.",
+  "weakened_or_falsified": "It weakens any qualitative claim about this measure unless the exact probability is high and non-tautological.",
+  "falsification_condition": "T282 fails if the `uniform` weights are changed without renaming the measure.",
+  "s1_update": "S1 is unchanged; this is a finite selection audit only.",
+  "claim_ledger_update": "Do not update the claim ledger from T282 alone.",
+  "open_blocker": "A finite weighting rule is not yet a physical finality-colimit measure.",
+  "suggested_next": "Compare this measure against the hard-gate and soft-score rankings.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

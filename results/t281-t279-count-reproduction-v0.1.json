@@ -1,0 +1,32 @@
+{
+  "task_id": "T281",
+  "title": "T279 Count Reproduction",
+  "metrics": [
+    {
+      "name": "t126_band_count",
+      "value": 143435
+    },
+    {
+      "name": "t253_deletion_band_stable_count",
+      "value": 8339
+    },
+    {
+      "name": "t252_parent_cap_count",
+      "value": 66
+    },
+    {
+      "name": "t252_style_tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "selection_audit_reproduces_t279_tail_counts",
+  "strongest_claim": "The selection audit reproduces the T279 spine: 143435 band positives, 8339 T253-style stable cases, 66 T252-style parents, and 10 T252-style stable cases.",
+  "improved": "This validates that the measure audit is using the same exact n=9 denominator.",
+  "weakened_or_falsified": "It weakens concern that selection results come from a shifted target.",
+  "falsification_condition": "T281 fails if any count disagrees with T264-T279 under the same gates.",
+  "s1_update": "S1 is unchanged; this is a regression guard.",
+  "claim_ledger_update": "Do not update the claim ledger from T281 alone.",
+  "open_blocker": "Matching prior counts still does not define a physical measure.",
+  "suggested_next": "Use the reproduced counts as the baseline for measure lift.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

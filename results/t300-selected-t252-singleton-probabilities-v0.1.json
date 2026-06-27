@@ -1,0 +1,51 @@
+{
+  "task_id": "T300",
+  "title": "Selected T252 Singleton Probabilities",
+  "metrics": [
+    {
+      "name": "uniform",
+      "value": {
+        "fraction": "1/362880",
+        "float": 2.7557319223985893e-06
+      }
+    },
+    {
+      "name": "lowcover",
+      "value": {
+        "fraction": "1/185",
+        "float": 0.005405405405405406
+      }
+    },
+    {
+      "name": "parentcap",
+      "value": {
+        "fraction": "1/66",
+        "float": 0.015151515151515152
+      }
+    },
+    {
+      "name": "deletion_soft",
+      "value": {
+        "fraction": "32/790437",
+        "float": 4.048393483604639e-05
+      }
+    },
+    {
+      "name": "shape_soft",
+      "value": {
+        "fraction": "128/987721",
+        "float": 0.00012959125097066883
+      }
+    }
+  ],
+  "verdict": "selected_singleton_remains_measure_sensitive",
+  "strongest_claim": "The selected T252 permutation remains a singleton inside every non-tautological measure; even parent-cap conditioning gives it probability only 1/66.",
+  "improved": "T300 keeps the analysis from mistaking a tail measure for a selected-witness measure.",
+  "weakened_or_falsified": "It weakens over-reading of the specific T252 permutation.",
+  "falsification_condition": "T300 fails if selected probabilities are computed outside the same n=9 denominator.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T300 alone.",
+  "open_blocker": "No rule selects the specific T252 witness rather than the tail.",
+  "suggested_next": "Audit tail symmetry and shape structure.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

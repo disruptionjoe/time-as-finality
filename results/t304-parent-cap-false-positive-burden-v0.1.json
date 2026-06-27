@@ -1,0 +1,49 @@
+{
+  "task_id": "T304",
+  "title": "Parent-Cap False Positive Burden",
+  "metrics": [
+    {
+      "name": "parent_cap_count",
+      "value": 66
+    },
+    {
+      "name": "tail_count",
+      "value": 10
+    },
+    {
+      "name": "false_positive_count",
+      "value": 56
+    },
+    {
+      "name": "t252_parent_deletion_pass_distribution",
+      "value": [
+        {
+          "value": 4,
+          "count": 28
+        },
+        {
+          "value": 7,
+          "count": 8
+        },
+        {
+          "value": 8,
+          "count": 20
+        },
+        {
+          "value": 9,
+          "count": 10
+        }
+      ]
+    }
+  ],
+  "verdict": "parent_cap_has_fifty_six_false_positives",
+  "strongest_claim": "The 66-case parent cap contains 56 cases that fail full T252-style deletion stability.",
+  "improved": "T304 shows the parent gate is not enough; deletion behavior is decisive.",
+  "weakened_or_falsified": "It weakens parent-shape-only selection proposals.",
+  "falsification_condition": "T304 fails if deletion pass counts are not computed for every parent-cap case.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T304 alone.",
+  "open_blocker": "The false positives need either a principled exclusion or a broader target.",
+  "suggested_next": "Rank hard gates and soft measures.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

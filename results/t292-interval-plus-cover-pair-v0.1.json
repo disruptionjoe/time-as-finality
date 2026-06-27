@@ -1,0 +1,27 @@
+{
+  "task_id": "T292",
+  "title": "Interval Plus Cover Pair",
+  "metrics": [
+    {
+      "name": "interval_and_cover_count",
+      "value": 66
+    },
+    {
+      "name": "tail_probability_after_interval_cover",
+      "value": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      }
+    }
+  ],
+  "verdict": "interval_cover_pair_is_the_best_parent_gate",
+  "strongest_claim": "The interval<=3 plus low-cover pair is exactly the 66-case T252 parent cap.",
+  "improved": "T292 shows that T252's parent rarity is a two-feature effect.",
+  "weakened_or_falsified": "It weakens any single-feature account of the selected witness.",
+  "falsification_condition": "T292 fails if the pair count differs from the T271 parent cap.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T292 alone.",
+  "open_blocker": "The parent gate still has 56 false positives before deletion stability.",
+  "suggested_next": "Apply deletion stability to the parent gate.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

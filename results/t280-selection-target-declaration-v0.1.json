@@ -1,0 +1,32 @@
+{
+  "task_id": "T280",
+  "title": "Selection Target Declaration",
+  "metrics": [
+    {
+      "name": "total_cases",
+      "value": 362880
+    },
+    {
+      "name": "target_tail_count",
+      "value": 10
+    },
+    {
+      "name": "selected_t252_in_tail",
+      "value": true
+    },
+    {
+      "name": "target_definition",
+      "value": "T126+T156, parent interval<=3, cover hub<=2/7, and every deletion satisfies the same gate"
+    }
+  ],
+  "verdict": "t252_style_tail_declared_for_selection_audit",
+  "strongest_claim": "The selection target is the exact 10-case T252-style deletion-stable tail from T272.",
+  "improved": "T280 turns the next route into an explicit target rather than a vague request for a better measure.",
+  "weakened_or_falsified": "It weakens any hidden-target analysis: the target is declared before comparing measures.",
+  "falsification_condition": "T280 fails if the target differs from the T272 tail definition.",
+  "s1_update": "S1 is unchanged; declaring a finite target is not a physical measure.",
+  "claim_ledger_update": "Do not update the claim ledger from T280 alone.",
+  "open_blocker": "No natural weighting rule has been supplied yet.",
+  "suggested_next": "Audit hard gates and soft weights against the declared tail.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

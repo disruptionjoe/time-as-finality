@@ -1,0 +1,64 @@
+{
+  "task_id": "T283",
+  "title": "T126 Plus T156 Conditioning",
+  "metrics": [
+    {
+      "name": "measure",
+      "value": "band"
+    },
+    {
+      "name": "description",
+      "value": "Hard conditioning on T126 plus the declared T156 ordering band."
+    },
+    {
+      "name": "total_weight",
+      "value": 143435
+    },
+    {
+      "name": "tail_weight",
+      "value": 10
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "2/28687",
+        "float": 6.971799072750723e-05
+      }
+    },
+    {
+      "name": "parent_cap_probability",
+      "value": {
+        "fraction": "66/143435",
+        "float": 0.00046013873880154774
+      }
+    },
+    {
+      "name": "selected_t252_probability",
+      "value": {
+        "fraction": "1/143435",
+        "float": 6.9717990727507235e-06
+      }
+    },
+    {
+      "name": "tail_lift_vs_uniform",
+      "value": {
+        "fraction": "72576/28687",
+        "float": 2.5299264475197827
+      }
+    },
+    {
+      "name": "tautological",
+      "value": false
+    }
+  ],
+  "verdict": "band_conditioning_barely_lifts_tail",
+  "strongest_claim": "The `band` measure gives the 10-case T252-style tail probability 2/28687.",
+  "improved": "This quantifies selection pressure as an exact finite weighted probability.",
+  "weakened_or_falsified": "It weakens any qualitative claim about this measure unless the exact probability is high and non-tautological.",
+  "falsification_condition": "T283 fails if the `band` weights are changed without renaming the measure.",
+  "s1_update": "S1 is unchanged; this is a finite selection audit only.",
+  "claim_ledger_update": "Do not update the claim ledger from T283 alone.",
+  "open_blocker": "A finite weighting rule is not yet a physical finality-colimit measure.",
+  "suggested_next": "Compare this measure against the hard-gate and soft-score rankings.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

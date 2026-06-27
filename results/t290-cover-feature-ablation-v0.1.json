@@ -1,0 +1,31 @@
+{
+  "task_id": "T290",
+  "title": "Cover Feature Ablation",
+  "metrics": [
+    {
+      "name": "low_cover_parent_count",
+      "value": 185
+    },
+    {
+      "name": "tail_count_inside_low_cover",
+      "value": 10
+    },
+    {
+      "name": "tail_probability_after_low_cover",
+      "value": {
+        "fraction": "2/37",
+        "float": 0.05405405405405406
+      }
+    }
+  ],
+  "verdict": "cover_feature_is_strong_but_not_sufficient",
+  "strongest_claim": "The low-cover parent feature leaves 185 cases and is the strongest single hard gate, but it still contains many non-tail cases.",
+  "improved": "T290 identifies cover sparsity as the main non-tautological selection signal.",
+  "weakened_or_falsified": "It weakens pure ordering-fraction or interval-only routes.",
+  "falsification_condition": "T290 fails if the cover threshold differs from T257's cap.",
+  "s1_update": "S1 is unchanged; cover sparsity is not a physical law.",
+  "claim_ledger_update": "Do not update the claim ledger from T290 alone.",
+  "open_blocker": "Cover sparsity needs a reason, not just a threshold.",
+  "suggested_next": "Combine cover with interval and deletion gates.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

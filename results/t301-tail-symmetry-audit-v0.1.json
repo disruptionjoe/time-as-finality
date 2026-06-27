@@ -1,0 +1,41 @@
+{
+  "task_id": "T301",
+  "title": "Tail Symmetry Audit",
+  "metrics": [
+    {
+      "name": "tail_symmetry_counts",
+      "value": [
+        {
+          "value": "reverse",
+          "count": 0
+        },
+        {
+          "value": "complement",
+          "count": 0
+        },
+        {
+          "value": "reverse_complement",
+          "count": 10
+        },
+        {
+          "value": "inverse",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "name": "tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "tail_closed_under_inverse_and_reverse_complement",
+  "strongest_claim": "The 10-case tail is closed under inverse and reverse-complement transforms, but not under reverse or complement alone.",
+  "improved": "T301 adds invariant structure to the target tail.",
+  "weakened_or_falsified": "It weakens a purely accidental-list reading of the 10 cases.",
+  "falsification_condition": "T301 fails if transform definitions are changed after seeing the result.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T301 alone.",
+  "open_blocker": "Finite symmetry is not a physical selection rule.",
+  "suggested_next": "Inspect shape signatures next.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

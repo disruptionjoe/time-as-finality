@@ -1,0 +1,27 @@
+{
+  "task_id": "T310",
+  "title": "Tautology Guardrail",
+  "metrics": [
+    {
+      "name": "tail_conditioned_probability",
+      "value": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "name": "tail_conditioned_tautological",
+      "value": true
+    }
+  ],
+  "verdict": "tail_conditioning_rejected_as_measure_answer",
+  "strongest_claim": "Conditioning directly on the target tail gives probability 1, but it is tautological and not a selection explanation.",
+  "improved": "T310 keeps the added-assumption route honest.",
+  "weakened_or_falsified": "It weakens any attempt to relabel the target definition as a measure.",
+  "falsification_condition": "T310 fails if target-conditioned weighting is treated as a physical or explanatory measure.",
+  "s1_update": "S1 remains requires_added_assumption.",
+  "claim_ledger_update": "Do not update the claim ledger from T310 alone.",
+  "open_blocker": "The actual non-uniform finality-colimit measure remains unbuilt.",
+  "suggested_next": "State the synthesis and next task.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

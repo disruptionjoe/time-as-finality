@@ -1,0 +1,24 @@
+{
+  "task_id": "T295",
+  "title": "Interval Cover Deletion Triple",
+  "metrics": [
+    {
+      "name": "interval_cover_t253_count",
+      "value": 10
+    },
+    {
+      "name": "t252_style_tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "interval_cover_deletion_triple_matches_t252_tail",
+  "strongest_claim": "The interval+cover+deletion triple leaves exactly the 10 T252-style stable cases.",
+  "improved": "T295 shows which finite ingredients isolate the selected tail.",
+  "weakened_or_falsified": "It weakens broader finite-gate optimism: isolating the tail requires all three ingredients.",
+  "falsification_condition": "T295 fails if the triple no longer equals the T272 tail.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T295 alone.",
+  "open_blocker": "The triple is still a target definition, not a derived measure.",
+  "suggested_next": "Test soft weights that use these features without hard-targeting the tail.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

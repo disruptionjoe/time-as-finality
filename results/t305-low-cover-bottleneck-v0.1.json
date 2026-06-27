@@ -1,0 +1,28 @@
+{
+  "task_id": "T305",
+  "title": "Low-Cover Bottleneck",
+  "metrics": [
+    {
+      "name": "low_cover_parent_count",
+      "value": 185
+    },
+    {
+      "name": "parent_cap_count",
+      "value": 66
+    },
+    {
+      "name": "tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "low_cover_is_the_main_bottleneck_before_deletion",
+  "strongest_claim": "Low cover reduces the band-positive set to 185 cases; interval then reduces it to 66, and deletion to 10.",
+  "improved": "T305 identifies the sequence of bottlenecks in the finite target.",
+  "weakened_or_falsified": "It weakens stories centered only on ordering fraction or interval size.",
+  "falsification_condition": "T305 fails if the bottleneck counts use different parent filters.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T305 alone.",
+  "open_blocker": "The bottleneck still needs a non-ad hoc source.",
+  "suggested_next": "Compare local T255 behavior against the global bottleneck.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "T291",
+  "title": "Deletion-Band Ablation",
+  "metrics": [
+    {
+      "name": "t253_deletion_band_stable_count",
+      "value": 8339
+    },
+    {
+      "name": "tail_probability_after_t253",
+      "value": {
+        "fraction": "10/8339",
+        "float": 0.001199184554502938
+      }
+    }
+  ],
+  "verdict": "deletion_band_stability_is_broad",
+  "strongest_claim": "T253-style deletion-band stability leaves 8339 cases, so deletion-band stability alone does not recover the T252-style shape.",
+  "improved": "T291 locates T253 as a robustness filter, not a locality selector.",
+  "weakened_or_falsified": "It weakens deletion-stability-only optimism.",
+  "falsification_condition": "T291 fails if deletion suborders are not rank-normalized restrictions.",
+  "s1_update": "S1 remains guarded.",
+  "claim_ledger_update": "Do not update the claim ledger from T291 alone.",
+  "open_blocker": "Deletion-band stability needs shape constraints to become selective.",
+  "suggested_next": "Add interval and cover features.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "T306",
+  "title": "T255 Local Vs Selection Tail",
+  "metrics": [
+    {
+      "name": "t255_t252_style_neighbor_count",
+      "value": 0
+    },
+    {
+      "name": "global_t252_parent_cap_count",
+      "value": 66
+    },
+    {
+      "name": "global_t252_style_tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "t255_neighbors_do_not_preserve_t252_style_cap",
+  "strongest_claim": "None of the 36 one-swap T255 neighbors satisfy the T252-style parent cap, even though the global ensemble has 66 parent-cap cases.",
+  "improved": "T306 explains why local mutation abundance did not become a selection measure.",
+  "weakened_or_falsified": "It weakens local-neighborhood optimism.",
+  "falsification_condition": "T306 fails if the T255 neighborhood is not the one-transposition neighborhood of T252.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T306 alone.",
+  "open_blocker": "The target tail is locally fragile under one-swap moves.",
+  "suggested_next": "Rank the hard and soft candidates.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

@@ -1,0 +1,486 @@
+{
+  "task_id": "T302",
+  "title": "Tail Shape Signature Distribution",
+  "metrics": [
+    {
+      "name": "tail_signature_distribution",
+      "value": [
+        {
+          "value": [
+            16,
+            7,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            17,
+            8,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            18,
+            9,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            20,
+            8,
+            5,
+            2,
+            [
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            20,
+            8,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "parent_signature_distribution",
+      "value": [
+        {
+          "value": [
+            15,
+            8,
+            4,
+            3,
+            [
+              2,
+              3,
+              2,
+              2
+            ],
+            2,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            15,
+            8,
+            4,
+            3,
+            [
+              2,
+              3,
+              3,
+              1
+            ],
+            2,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            15,
+            8,
+            5,
+            3,
+            [
+              2,
+              3,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 10
+        },
+        {
+          "value": [
+            15,
+            8,
+            5,
+            3,
+            [
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 10
+        },
+        {
+          "value": [
+            15,
+            8,
+            5,
+            3,
+            [
+              3,
+              3,
+              1,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            15,
+            8,
+            5,
+            4,
+            [
+              2,
+              4,
+              1,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            15,
+            8,
+            5,
+            4,
+            [
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            16,
+            7,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            16,
+            7,
+            5,
+            3,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            16,
+            7,
+            5,
+            3,
+            [
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            16,
+            8,
+            5,
+            3,
+            [
+              2,
+              3,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 6
+        },
+        {
+          "value": [
+            17,
+            8,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            17,
+            8,
+            5,
+            3,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            17,
+            8,
+            5,
+            3,
+            [
+              2,
+              3,
+              2,
+              1,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            18,
+            9,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            20,
+            8,
+            5,
+            2,
+            [
+              1,
+              2,
+              2,
+              2,
+              2
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            20,
+            8,
+            5,
+            2,
+            [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            3,
+            {
+              "fraction": "1/4",
+              "float": 0.25
+            }
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "verdict": "tail_has_five_shape_signatures",
+  "strongest_claim": "The 10-case tail occupies five parent shape signatures, so it is narrow but not a single shape.",
+  "improved": "T302 prevents treating the tail as one rigid poset.",
+  "weakened_or_falsified": "It weakens both singleton and broad-family readings.",
+  "falsification_condition": "T302 fails if signatures do not include strict pairs, covers, height, width, rank profile, interval cap, and cover hub.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T302 alone.",
+  "open_blocker": "The shape signatures still lack a generative explanation.",
+  "suggested_next": "Record representatives for future measure proposals.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

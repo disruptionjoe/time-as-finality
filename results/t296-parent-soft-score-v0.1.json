@@ -1,0 +1,64 @@
+{
+  "task_id": "T296",
+  "title": "Parent Soft Score",
+  "metrics": [
+    {
+      "name": "measure",
+      "value": "parent_soft"
+    },
+    {
+      "name": "description",
+      "value": "Soft integer score 2^(band + interval3 + lowcover)."
+    },
+    {
+      "name": "total_weight",
+      "value": 689517
+    },
+    {
+      "name": "tail_weight",
+      "value": 80
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "80/689517",
+        "float": 0.00011602324525718728
+      }
+    },
+    {
+      "name": "parent_cap_probability",
+      "value": {
+        "fraction": "176/229839",
+        "float": 0.0007657534186974361
+      }
+    },
+    {
+      "name": "selected_t252_probability",
+      "value": {
+        "fraction": "8/689517",
+        "float": 1.1602324525718728e-05
+      }
+    },
+    {
+      "name": "tail_lift_vs_uniform",
+      "value": {
+        "fraction": "322560/76613",
+        "float": 4.210251523892812
+      }
+    },
+    {
+      "name": "tautological",
+      "value": false
+    }
+  ],
+  "verdict": "parent_soft_score_lifts_tail_weakly",
+  "strongest_claim": "The `parent_soft` measure gives the 10-case T252-style tail probability 80/689517.",
+  "improved": "This quantifies selection pressure as an exact finite weighted probability.",
+  "weakened_or_falsified": "It weakens any qualitative claim about this measure unless the exact probability is high and non-tautological.",
+  "falsification_condition": "T296 fails if the `parent_soft` weights are changed without renaming the measure.",
+  "s1_update": "S1 is unchanged; this is a finite selection audit only.",
+  "claim_ledger_update": "Do not update the claim ledger from T296 alone.",
+  "open_blocker": "A finite weighting rule is not yet a physical finality-colimit measure.",
+  "suggested_next": "Compare this measure against the hard-gate and soft-score rankings.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

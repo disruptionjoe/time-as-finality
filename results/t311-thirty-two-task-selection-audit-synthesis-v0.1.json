@@ -1,0 +1,39 @@
+{
+  "task_id": "T311",
+  "title": "Thirty-Two Task Selection Audit Synthesis",
+  "metrics": [
+    {
+      "name": "completed_task_count",
+      "value": 32
+    },
+    {
+      "name": "target_tail_count",
+      "value": 10
+    },
+    {
+      "name": "best_non_tautological_hard_gate",
+      "value": "parentcap"
+    },
+    {
+      "name": "best_non_tautological_tail_probability",
+      "value": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      }
+    },
+    {
+      "name": "round_verdict",
+      "value": "selection_measure_candidates_insufficient_without_new_principle"
+    }
+  ],
+  "verdict": "selection_measure_candidates_insufficient_without_new_principle",
+  "strongest_claim": "T280-T311 complete a 32-task finite selection audit: current hard and soft candidates can enrich the T252-style tail, but none gives a non-tautological physical selection measure.",
+  "improved": "The round turns the post-n=9 open blocker into concrete evidence about which finite gates matter.",
+  "weakened_or_falsified": "It weakens the idea that the T252-style tail can be rescued by obvious finite reweighting alone.",
+  "falsification_condition": "T311 fails if a tested non-tautological measure actually concentrates most mass on the tail.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Safe future wording: finite selection probes identify cover sparsity plus deletion stability as necessary bottlenecks, but no natural non-uniform measure has been derived.",
+  "open_blocker": "The missing object is still a principled finality-colimit measure or a different continuum bridge.",
+  "suggested_next": "Next build or reject a principled non-uniform measure from finality-domain data rather than from post-hoc tail labels.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

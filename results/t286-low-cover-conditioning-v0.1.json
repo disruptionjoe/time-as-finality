@@ -1,0 +1,64 @@
+{
+  "task_id": "T286",
+  "title": "Low-Cover Conditioning",
+  "metrics": [
+    {
+      "name": "measure",
+      "value": "lowcover"
+    },
+    {
+      "name": "description",
+      "value": "Hard conditioning on T126+band and parent cover hub <= 2/7."
+    },
+    {
+      "name": "total_weight",
+      "value": 185
+    },
+    {
+      "name": "tail_weight",
+      "value": 10
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "2/37",
+        "float": 0.05405405405405406
+      }
+    },
+    {
+      "name": "parent_cap_probability",
+      "value": {
+        "fraction": "66/185",
+        "float": 0.3567567567567568
+      }
+    },
+    {
+      "name": "selected_t252_probability",
+      "value": {
+        "fraction": "1/185",
+        "float": 0.005405405405405406
+      }
+    },
+    {
+      "name": "tail_lift_vs_uniform",
+      "value": {
+        "fraction": "72576/37",
+        "float": 1961.5135135135135
+      }
+    },
+    {
+      "name": "tautological",
+      "value": false
+    }
+  ],
+  "verdict": "low_cover_is_best_single_hard_gate",
+  "strongest_claim": "The `lowcover` measure gives the 10-case T252-style tail probability 2/37.",
+  "improved": "This quantifies selection pressure as an exact finite weighted probability.",
+  "weakened_or_falsified": "It weakens any qualitative claim about this measure unless the exact probability is high and non-tautological.",
+  "falsification_condition": "T286 fails if the `lowcover` weights are changed without renaming the measure.",
+  "s1_update": "S1 is unchanged; this is a finite selection audit only.",
+  "claim_ledger_update": "Do not update the claim ledger from T286 alone.",
+  "open_blocker": "A finite weighting rule is not yet a physical finality-colimit measure.",
+  "suggested_next": "Compare this measure against the hard-gate and soft-score rankings.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

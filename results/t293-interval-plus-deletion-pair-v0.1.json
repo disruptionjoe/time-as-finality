@@ -1,0 +1,24 @@
+{
+  "task_id": "T293",
+  "title": "Interval Plus Deletion Pair",
+  "metrics": [
+    {
+      "name": "interval_and_t253_count",
+      "value": 7901
+    },
+    {
+      "name": "target_tail_count",
+      "value": 10
+    }
+  ],
+  "verdict": "interval_deletion_pair_remains_broad",
+  "strongest_claim": "Interval<=3 plus T253 deletion-band stability leaves 7901 cases.",
+  "improved": "T293 shows that deletion stability mostly tracks the interval-relaxed population, not the tiny T252 tail.",
+  "weakened_or_falsified": "It weakens interval+deletion selection stories without cover sparsity.",
+  "falsification_condition": "T293 fails if the pair uses the wrong deletion target.",
+  "s1_update": "S1 is unchanged.",
+  "claim_ledger_update": "Do not update the claim ledger from T293 alone.",
+  "open_blocker": "The cover feature is still required.",
+  "suggested_next": "Compare cover+deletion next.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

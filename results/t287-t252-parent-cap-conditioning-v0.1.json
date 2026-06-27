@@ -1,0 +1,64 @@
+{
+  "task_id": "T287",
+  "title": "T252 Parent-Cap Conditioning",
+  "metrics": [
+    {
+      "name": "measure",
+      "value": "parentcap"
+    },
+    {
+      "name": "description",
+      "value": "Hard conditioning on the T252-style parent interval and cover cap."
+    },
+    {
+      "name": "total_weight",
+      "value": 66
+    },
+    {
+      "name": "tail_weight",
+      "value": 10
+    },
+    {
+      "name": "tail_probability",
+      "value": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      }
+    },
+    {
+      "name": "parent_cap_probability",
+      "value": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "name": "selected_t252_probability",
+      "value": {
+        "fraction": "1/66",
+        "float": 0.015151515151515152
+      }
+    },
+    {
+      "name": "tail_lift_vs_uniform",
+      "value": {
+        "fraction": "60480/11",
+        "float": 5498.181818181818
+      }
+    },
+    {
+      "name": "tautological",
+      "value": false
+    }
+  ],
+  "verdict": "parent_cap_concentrates_but_does_not_isolate_tail",
+  "strongest_claim": "The `parentcap` measure gives the 10-case T252-style tail probability 5/33.",
+  "improved": "This quantifies selection pressure as an exact finite weighted probability.",
+  "weakened_or_falsified": "It weakens any qualitative claim about this measure unless the exact probability is high and non-tautological.",
+  "falsification_condition": "T287 fails if the `parentcap` weights are changed without renaming the measure.",
+  "s1_update": "S1 is unchanged; this is a finite selection audit only.",
+  "claim_ledger_update": "Do not update the claim ledger from T287 alone.",
+  "open_blocker": "A finite weighting rule is not yet a physical finality-colimit measure.",
+  "suggested_next": "Compare this measure against the hard-gate and soft-score rankings.",
+  "not_claimed": "These finite selection audits do not define a physical measure, estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

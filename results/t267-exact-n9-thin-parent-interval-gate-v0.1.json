@@ -1,0 +1,60 @@
+{
+  "task_id": "T267",
+  "title": "Exact n=9 Thin Parent-Interval Gate",
+  "metrics": [
+    {
+      "name": "parent_interval_cap1_count",
+      "value": 7813
+    },
+    {
+      "name": "parent_interval_cap1_fraction",
+      "value": {
+        "fraction": "7813/362880",
+        "float": 0.021530533509700175
+      }
+    },
+    {
+      "name": "t156_largest_interval_distribution",
+      "value": [
+        {
+          "value": 1,
+          "count": 7813
+        },
+        {
+          "value": 2,
+          "count": 35404
+        },
+        {
+          "value": 3,
+          "count": 48133
+        },
+        {
+          "value": 4,
+          "count": 34339
+        },
+        {
+          "value": 5,
+          "count": 13921
+        },
+        {
+          "value": 6,
+          "count": 3392
+        },
+        {
+          "value": 7,
+          "count": 433
+        }
+      ]
+    }
+  ],
+  "verdict": "n9_thin_parent_interval_gate_complete",
+  "strongest_claim": "Only 7813 n=9 T126+T156 cases have largest parent interval size at most 1.",
+  "improved": "This extends the T159/T223 thin-parent gate to the n=9 denominator.",
+  "weakened_or_falsified": "It weakens the selected T252 route under the older thin gate: T252 has largest interval size 3, not 1.",
+  "falsification_condition": "T267 fails if largest interval sizes are not computed from the audited strict relation.",
+  "s1_update": "S1 is unchanged; thin parent intervals are finite diagnostics only.",
+  "claim_ledger_update": "Do not update the claim ledger from T267 alone.",
+  "open_blocker": "Thinness is still a hostile finite screen, not a continuum theorem.",
+  "suggested_next": "Check deletion stability for the thin-parent cases.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

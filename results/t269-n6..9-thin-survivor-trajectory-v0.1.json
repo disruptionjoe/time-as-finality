@@ -1,0 +1,53 @@
+{
+  "task_id": "T269",
+  "title": "n=6..9 Thin Survivor Trajectory",
+  "metrics": [
+    {
+      "name": "thin_stable_fraction_trajectory",
+      "value": [
+        [
+          6,
+          {
+            "fraction": "13/360",
+            "float": 0.03611111111111111
+          }
+        ],
+        [
+          7,
+          {
+            "fraction": "29/840",
+            "float": 0.034523809523809526
+          }
+        ],
+        [
+          8,
+          {
+            "fraction": "361/40320",
+            "float": 0.008953373015873015
+          }
+        ],
+        [
+          9,
+          {
+            "fraction": "1583/362880",
+            "float": 0.0043623236331569665
+          }
+        ]
+      ]
+    },
+    {
+      "name": "monotone_nonincreasing_from_n6",
+      "value": true
+    }
+  ],
+  "verdict": "n9_strengthens_t223_decay_trajectory",
+  "strongest_claim": "Adding n=9 keeps the thin survivor fraction monotone non-increasing from n=6 through n=9.",
+  "improved": "T269 turns the T223 follow-on into an exact next-size trajectory point.",
+  "weakened_or_falsified": "It weakens the 'maybe n=9 rebounds' escape for the uniform ordinal ensemble.",
+  "falsification_condition": "T269 fails if the n=9 survivor fraction exceeds the n=8 fraction under the same thin gate.",
+  "s1_update": "S1 remains requires_added_assumption for this finite route.",
+  "claim_ledger_update": "Safe future wording: the exact n=9 thin-tail count strengthens the T223 finite no-go trajectory.",
+  "open_blocker": "The result still concerns the declared finite ordinal ensemble only.",
+  "suggested_next": "Stop expecting uniform ordinal counting alone to produce manifoldlikeness; look for a non-uniform selection principle.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

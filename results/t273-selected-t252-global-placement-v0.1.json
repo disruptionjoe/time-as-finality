@@ -1,0 +1,59 @@
+{
+  "task_id": "T273",
+  "title": "Selected T252 Global Placement",
+  "metrics": [
+    {
+      "name": "selected_t252_rank_permutation",
+      "value": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "selected_t252_strict_pairs",
+      "value": 20
+    },
+    {
+      "name": "selected_t252_largest_interval",
+      "value": 3
+    },
+    {
+      "name": "selected_t252_cover_hub",
+      "value": {
+        "fraction": "1/4",
+        "float": 0.25
+      }
+    },
+    {
+      "name": "selected_t252_deletion_summary",
+      "value": {
+        "deletion_count": 9,
+        "t159_thin_deletion_pass_count": 0,
+        "relaxed_interval3_deletion_pass_count": 9,
+        "t253_t126_band_deletion_pass_count": 9,
+        "t252_style_deletion_pass_count": 9
+      }
+    },
+    {
+      "name": "selected_is_t252_style_deletion_stable",
+      "value": true
+    }
+  ],
+  "verdict": "selected_t252_is_one_of_the_ten_t252_style_stable_cases",
+  "strongest_claim": "The selected T252 permutation is one of the 10 exact n=9 T252-style deletion-stable cases.",
+  "improved": "This anchors the selected witness inside the global count instead of leaving it as a hand-picked orphan.",
+  "weakened_or_falsified": "It weakens overclaiming: T252 fails the older thin cap, so its support depends on the relaxed interval/cover gate.",
+  "falsification_condition": "T273 fails if the selected permutation is not audited as the same rank order used in T252.",
+  "s1_update": "S1 remains guarded; global placement is not physical selection.",
+  "claim_ledger_update": "Do not update the claim ledger from T273 alone.",
+  "open_blocker": "Being one of ten finite cases does not explain why nature would select that tail.",
+  "suggested_next": "Compare the local T255 neighborhood against global rates.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

@@ -1,0 +1,47 @@
+# T266 Results: Exact n=9 Ordering-Band Census
+
+## Aggregate Checks
+
+| Metric | Value |
+| --- | --- |
+| `t156_pass_count_after_t126` | `143435` |
+| `t156_pass_fraction_of_total` | `{'fraction': '28687/72576', 'float': 0.39526840828924165}` |
+| `t126_pass_strict_pair_distribution` | `[{'value': 1, 'count': 8}, {'value': 2, 'count': 35}, {'value': 3, 'count': 111}, {'value': 4, 'count': 285}, {'value': 5, 'count': 628}, {'value': 6, 'count': 1224}, {'value': 7, 'count': 2175}, {'value': 8, 'count': 3558}, {'value': 9, 'count': 4907}, {'value': 10, 'count': 7409}, {'value': 11, 'count': 10379}, {'value': 12, 'count': 13609}, {'value': 13, 'count': 16821}, {'value': 14, 'count': 19684}, {'value': 15, 'count': 21892}, {'value': 16, 'count': 23147}, {'value': 17, 'count': 23225}, {'value': 18, 'count': 22328}, {'value': 19, 'count': 20376}, {'value': 20, 'count': 17711}, {'value': 21, 'count': 14756}, {'value': 22, 'count': 11723}, {'value': 23, 'count': 8974}, {'value': 24, 'count': 6490}, {'value': 25, 'count': 4497}, {'value': 26, 'count': 2977}, {'value': 27, 'count': 1878}, {'value': 28, 'count': 1054}, {'value': 29, 'count': 617}, {'value': 30, 'count': 311}, {'value': 31, 'count': 160}, {'value': 32, 'count': 69}, {'value': 33, 'count': 21}, {'value': 34, 'count': 6}, {'value': 35, 'count': 2}]` |
+
+- Verdict: `n9_t126_t156_band_census_complete`
+
+## Strongest Claim
+
+At n=9, 143435 permutations pass both T126 and the declared T156 ordering band.
+
+## What This Improved
+
+This separates broad T126 passing from the smaller ordering-band subset.
+
+## What This Weakened Or Falsified
+
+It weakens any claim that ordering fraction alone is a strong locality or manifoldlikeness screen.
+
+## Falsification Condition
+
+T266 fails if T156 is not applied to the same strict-pair counts as T126.
+
+## S1 Update
+
+S1 is unchanged; the ordering band is an audit target, not a dimension estimate.
+
+## Claim Ledger Update
+
+Do not update the claim ledger from T266 alone.
+
+## Open Blocker
+
+The band-positive set is still large and structurally mixed.
+
+## Suggested Next
+
+Apply interval, cover, and deletion labels to the band-positive set.
+
+## Not Claimed
+
+These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1.

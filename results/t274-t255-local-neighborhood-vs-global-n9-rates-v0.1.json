@@ -1,0 +1,56 @@
+{
+  "task_id": "T274",
+  "title": "T255 Local Neighborhood Vs Global n=9 Rates",
+  "metrics": [
+    {
+      "name": "t255_t126_band_neighbor_rate",
+      "value": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      }
+    },
+    {
+      "name": "global_t126_band_rate",
+      "value": {
+        "fraction": "28687/72576",
+        "float": 0.39526840828924165
+      }
+    },
+    {
+      "name": "t255_t252_style_neighbor_count",
+      "value": 0
+    },
+    {
+      "name": "global_t252_parent_cap_count",
+      "value": 66
+    },
+    {
+      "name": "global_t252_deletion_stable_count",
+      "value": 10
+    },
+    {
+      "name": "global_t252_parent_rate",
+      "value": {
+        "fraction": "11/60480",
+        "float": 0.00018187830687830687
+      }
+    },
+    {
+      "name": "global_t252_deletion_stable_rate",
+      "value": {
+        "fraction": "1/36288",
+        "float": 2.755731922398589e-05
+      }
+    }
+  ],
+  "verdict": "t255_neighborhood_enriched_for_band_but_not_t252_style_cap",
+  "strongest_claim": "The T255 one-swap neighborhood is enriched for T126+band passes, but none of the 36 neighbors match the stricter T252-style cap.",
+  "improved": "This explains the mixed T255 result: local band positives do not preserve the full T252 interval/cover shape.",
+  "weakened_or_falsified": "It weakens the idea that one-swap abundance is enough to support the selected witness.",
+  "falsification_condition": "T274 fails if the local T255 rates are compared against a different n=9 ensemble.",
+  "s1_update": "S1 is unchanged; local enrichment is not a global measure.",
+  "claim_ledger_update": "Do not update the claim ledger from T274 alone.",
+  "open_blocker": "The selected shape is locally fragile under one-swap mutations.",
+  "suggested_next": "Use shape distributions to see what the broader band-positive set looks like.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

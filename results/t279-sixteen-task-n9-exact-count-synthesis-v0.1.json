@@ -1,0 +1,48 @@
+{
+  "task_id": "T279",
+  "title": "Sixteen-Task n=9 Exact Count Synthesis",
+  "metrics": [
+    {
+      "name": "completed_task_count",
+      "value": 16
+    },
+    {
+      "name": "total_n9_cases",
+      "value": 362880
+    },
+    {
+      "name": "t126_pass_count",
+      "value": 263047
+    },
+    {
+      "name": "t126_t156_pass_count",
+      "value": 143435
+    },
+    {
+      "name": "thin_stable_count",
+      "value": 1583
+    },
+    {
+      "name": "t252_style_parent_count",
+      "value": 66
+    },
+    {
+      "name": "t252_style_stable_count",
+      "value": 10
+    },
+    {
+      "name": "round_verdict",
+      "value": "sixteen_task_n9_exact_count_round_complete"
+    }
+  ],
+  "verdict": "sixteen_task_n9_exact_count_round_complete",
+  "strongest_claim": "T264-T279 complete the exact n=9 ordinal-count round: the uniform ordinal ensemble remains a rare-tail story, while the T252-style deletion-stable tail has exactly 10 labeled cases.",
+  "improved": "The round replaces local T252/T255 evidence with global n=9 denominators.",
+  "weakened_or_falsified": "It weakens optimistic readings of local mutation abundance and further weakens uniform ordinal counting as an S1 route without added structure.",
+  "falsification_condition": "T279 fails if any T264-T278 constituent result changes under the same screens.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T279 alone unless recording the exact n=9 follow-on as strengthening T223.",
+  "open_blocker": "No non-uniform measure, embedding theorem, or continuum bridge has been supplied.",
+  "suggested_next": "Build the selection-measure task next, using the 10 T252-style stable cases as the target tail.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

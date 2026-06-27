@@ -1,0 +1,56 @@
+{
+  "task_id": "T268",
+  "title": "Exact n=9 Thin Deletion Stability",
+  "metrics": [
+    {
+      "name": "thin_parent_count",
+      "value": 7813
+    },
+    {
+      "name": "thin_deletion_stable_count",
+      "value": 1583
+    },
+    {
+      "name": "thin_stable_fraction",
+      "value": {
+        "fraction": "1583/362880",
+        "float": 0.0043623236331569665
+      }
+    },
+    {
+      "name": "thin_stable_strict_pair_distribution",
+      "value": [
+        {
+          "value": 16,
+          "count": 26
+        },
+        {
+          "value": 17,
+          "count": 718
+        },
+        {
+          "value": 18,
+          "count": 601
+        },
+        {
+          "value": 19,
+          "count": 220
+        },
+        {
+          "value": 20,
+          "count": 18
+        }
+      ]
+    }
+  ],
+  "verdict": "n9_t159_thin_stable_survivor_count_complete",
+  "strongest_claim": "At n=9, the T159/T223 thin deletion-stable tail has 1583 labeled survivors.",
+  "improved": "This gives the exact next-size count that T223 deliberately left as follow-on work.",
+  "weakened_or_falsified": "It weakens any hope that the thin tail becomes common at n=9; the count rises but the fraction continues to fall.",
+  "falsification_condition": "T268 fails if deletion suborders are not rank-normalized restrictions of the parent permutation.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Do not update the claim ledger from T268 alone; combine with the trajectory result.",
+  "open_blocker": "Thin deletion stability still gives a rare finite tail, not spacetime evidence.",
+  "suggested_next": "Compare the n=9 stable fraction to n=6..8.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

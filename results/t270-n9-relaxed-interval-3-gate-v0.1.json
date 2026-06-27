@@ -1,0 +1,31 @@
+{
+  "task_id": "T270",
+  "title": "n=9 Relaxed Interval-3 Gate",
+  "metrics": [
+    {
+      "name": "parent_interval_cap3_count",
+      "value": 91350
+    },
+    {
+      "name": "relaxed_interval3_deletion_stable_count",
+      "value": 9176
+    },
+    {
+      "name": "parent_interval_cap3_fraction",
+      "value": {
+        "fraction": "145/576",
+        "float": 0.2517361111111111
+      }
+    }
+  ],
+  "verdict": "n9_relaxed_interval3_gate_complete",
+  "strongest_claim": "Relaxing the parent interval cap from 1 to 3 admits 91350 parents and 9176 deletion-stable cases.",
+  "improved": "This quantifies how much of T252's interval behavior is excluded by the older thin gate.",
+  "weakened_or_falsified": "It weakens a binary reading of interval size: cap 3 is much less rare than T252's full cover-local shape.",
+  "falsification_condition": "T270 fails if the relaxed cap is mixed with the older T159 thin cap.",
+  "s1_update": "S1 is unchanged; relaxing a finite cap does not establish locality.",
+  "claim_ledger_update": "Do not update the claim ledger from T270 alone.",
+  "open_blocker": "Interval cap 3 alone is too permissive to explain T252's selected shape.",
+  "suggested_next": "Add the cover-hub cap from T257.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

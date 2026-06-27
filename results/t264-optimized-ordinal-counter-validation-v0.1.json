@@ -1,0 +1,44 @@
+{
+  "task_id": "T264",
+  "title": "Optimized Ordinal Counter Validation",
+  "metrics": [
+    {
+      "name": "n6_t126_t156_stable",
+      "value": [
+        578,
+        305,
+        26
+      ]
+    },
+    {
+      "name": "n7_t126_t156_stable",
+      "value": [
+        4456,
+        2051,
+        174
+      ]
+    },
+    {
+      "name": "n8_t126_t156_stable",
+      "value": [
+        34044,
+        16261,
+        361
+      ]
+    },
+    {
+      "name": "reproduces_t223_counts",
+      "value": true
+    }
+  ],
+  "verdict": "optimized_counter_reproduces_t223_n6_to_n8_counts",
+  "strongest_claim": "The optimized relation-level ordinal counter reproduces the published T223 n=6, n=7, and n=8 counts.",
+  "improved": "This makes the n=9 count feasible without rerunning T54 completion for every permutation.",
+  "weakened_or_falsified": "It weakens concern that the n=9 sweep is a new, incompatible pipeline.",
+  "falsification_condition": "T264 fails if any reproduced T223 count differs from the published values.",
+  "s1_update": "S1 is unchanged; this is validation of a finite counting implementation.",
+  "claim_ledger_update": "Do not update the claim ledger from T264 alone.",
+  "open_blocker": "The validation says the counter matches prior finite counts; it does not pick a physical measure.",
+  "suggested_next": "Use the optimized counter for the exact n=9 sweep.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

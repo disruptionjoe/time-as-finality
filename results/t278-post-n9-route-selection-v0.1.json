@@ -1,0 +1,32 @@
+{
+  "task_id": "T278",
+  "title": "Post-n=9 Route Selection",
+  "metrics": [
+    {
+      "name": "thin_stable_count",
+      "value": 1583
+    },
+    {
+      "name": "t252_style_stable_count",
+      "value": 10
+    },
+    {
+      "name": "selected_next_route",
+      "value": "non_uniform_selection_measure_for_t252_style_tail"
+    },
+    {
+      "name": "rejected_route",
+      "value": "more_uniform_ordinal_counting_without_new_measure"
+    }
+  ],
+  "verdict": "post_n9_route_requires_non_uniform_selection_or_new_bridge",
+  "strongest_claim": "After exact n=9 counting, the meaningful next route is a non-uniform selection measure or a different bridge, not more uniform ordinal counting alone.",
+  "improved": "T278 converts the 16-task data into an actionable research decision.",
+  "weakened_or_falsified": "It weakens further hand-picked or uniform-count-only rounds: the exact count already says the relevant tails are rare.",
+  "falsification_condition": "T278 fails if the n=9 count is incomplete or if route selection ignores the tiny T252-style tail.",
+  "s1_update": "S1 remains requires_added_assumption for the finite ordinal route.",
+  "claim_ledger_update": "Safe future wording: exact n=9 counting strengthens the need for an added selection assumption.",
+  "open_blocker": "The actual added measure or continuum bridge remains unbuilt.",
+  "suggested_next": "Next, define and test a non-uniform finality-colimit measure against the 10 T252-style cases.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

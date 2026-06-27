@@ -1,0 +1,45 @@
+{
+  "task_id": "T277",
+  "title": "n=9 T126 Obstruction Anatomy",
+  "metrics": [
+    {
+      "name": "t126_blocked_total",
+      "value": 99833
+    },
+    {
+      "name": "t126_blocked_classification_counts",
+      "value": [
+        {
+          "value": "hub_nonlocality_obstruction",
+          "count": 7341
+        },
+        {
+          "value": "interval_profile_obstruction",
+          "count": 2050
+        },
+        {
+          "value": "order_dimension_obstruction",
+          "count": 90440
+        },
+        {
+          "value": "rank_width_obstruction",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "dominant_blocker",
+      "value": "order_dimension_obstruction"
+    }
+  ],
+  "verdict": "n9_t126_blockers_dominated_by_profile_spread",
+  "strongest_claim": "Among n=9 T126 rejections, the dominant obstruction is order-dimension/profile-spread instability.",
+  "improved": "This matches the T259 local-neighborhood lesson at global scale.",
+  "weakened_or_falsified": "It weakens the value of the ordering band without the T126 profile-spread gate.",
+  "falsification_condition": "T277 fails if obstruction labels are not the same labels used by T126.",
+  "s1_update": "S1 is unchanged; obstruction anatomy is diagnostic.",
+  "claim_ledger_update": "Do not update the claim ledger from T277 alone.",
+  "open_blocker": "The obstruction labels do not derive a physical dimension estimator.",
+  "suggested_next": "Carry the profile-spread gate into any future selection measure.",
+  "not_claimed": "These exact counts do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, establish a continuum limit, or settle S1."
+}

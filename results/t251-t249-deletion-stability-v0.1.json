@@ -1,0 +1,383 @@
+{
+  "target": {
+    "name": "flat_1p1_interval_ordering_fraction",
+    "target_fraction": {
+      "fraction": "1/2",
+      "float": 0.5
+    },
+    "tolerance": {
+      "fraction": "1/10",
+      "float": 0.1
+    },
+    "basis": "In light-cone coordinates on a flat 1+1 causal diamond, two independent points are causally related exactly when their two coordinate orderings agree, giving ordering fraction 1/2. The 1/10 tolerance is a finite-audit band, not a continuum theorem."
+  },
+  "parent_ordering_fraction": {
+    "fraction": "3/4",
+    "float": 0.75
+  },
+  "parent_band_passed": false,
+  "deletion_audits": [
+    {
+      "removed_event": "p00",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 19,
+      "ordering_fraction": {
+        "fraction": "19/28",
+        "float": 0.6785714285714286
+      },
+      "ordering_band_passed": false,
+      "height": 4,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 4
+        },
+        {
+          "size": 2,
+          "count": 3
+        },
+        {
+          "size": 4,
+          "count": 2
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p01",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 21,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 2
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p02",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 23,
+      "ordering_fraction": {
+        "fraction": "23/28",
+        "float": 0.8214285714285714
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 2,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 3
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 2
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p10",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 21,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 2
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p11",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 21,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 2,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 6
+        },
+        {
+          "size": 3,
+          "count": 4
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p12",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 21,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 2
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p20",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 23,
+      "ordering_fraction": {
+        "fraction": "23/28",
+        "float": 0.8214285714285714
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 2,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 3
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 2
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p21",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 21,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 5
+        },
+        {
+          "size": 2,
+          "count": 2
+        },
+        {
+          "size": 3,
+          "count": 2
+        },
+        {
+          "size": 4,
+          "count": 1
+        },
+        {
+          "size": 6,
+          "count": 1
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    },
+    {
+      "removed_event": "p22",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 19,
+      "ordering_fraction": {
+        "fraction": "19/28",
+        "float": 0.6785714285714286
+      },
+      "ordering_band_passed": false,
+      "height": 4,
+      "width": 3,
+      "interval_counts_by_size": [
+        {
+          "size": 0,
+          "count": 10
+        },
+        {
+          "size": 1,
+          "count": 4
+        },
+        {
+          "size": 2,
+          "count": 3
+        },
+        {
+          "size": 4,
+          "count": 2
+        }
+      ],
+      "verdict": "t126_pass_but_ordering_fraction_fail"
+    }
+  ],
+  "deletion_case_count": 9,
+  "deletion_t126_pass_count": 9,
+  "deletion_band_pass_count": 0,
+  "deletion_band_pass_rate": {
+    "fraction": "0/1",
+    "float": 0.0
+  },
+  "verdict": "stable_over_ordering_under_single_deletion",
+  "strongest_claim": "The T249 grid's ordering-fraction failure is stable under every single-event deletion tested here: all nine deletions still clear T126, and none enter the declared flat 1+1 band.",
+  "improved": "T251 distinguishes a fragile diagnostic failure from a structural one for the T249 witness. The over-ordering is not caused by one special grid event.",
+  "weakened_or_falsified": "This further weakens T249 as an S1-facing candidate. The witness is useful as a T54/T126 construction control, but its mismatch with the declared 1+1 ordering band survives all single deletions.",
+  "falsification_condition": "T251 fails if deletion suborders are not computed from the same T249 quotient-union relation, if T126 and T156 use different strict relations, or if this finite deletion result is treated as a general continuum or sprinkling theorem.",
+  "s1_update": "S1 remains open_formal_target. T249 should be treated as a stable over-ordered finite control, not as spacetime-facing residue.",
+  "claim_ledger_update": "Do not update the claim ledger from T251 alone. Safe future wording: T249's T156 failure is stable under all single-event deletions while T126 continues to pass.",
+  "open_blocker": "No deletion-stable T54-native nine-event witness has been found inside the declared flat 1+1 ordering-fraction band.",
+  "suggested_next": "Search beyond lattice-grid witnesses for T54-native candidates whose parent and deletion suborders both match the declared band, then apply locality and sprinkling comparisons.",
+  "not_claimed": "T251 does not prove a continuum no-go, estimate dimension, validate or falsify random sprinkling in general, derive metric structure, or settle S1."
+}

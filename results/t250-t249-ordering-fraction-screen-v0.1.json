@@ -1,0 +1,46 @@
+{
+  "t249_t54_classification": "canonical",
+  "t249_t54_theorem_applies": true,
+  "t249_t126_classification": "passes_filter_only",
+  "t249_t126_filter_passed": true,
+  "t156_audit": {
+    "name": "t250_t249_larger_grid_t54_colimit",
+    "source": "T250 reuse of the T249 T54-native 3x3 grid colimit",
+    "t126_classification": "passes_filter_only",
+    "causal_set_candidate": true,
+    "t126_filter_passed": true,
+    "event_count": 9,
+    "strict_pair_count": 27,
+    "ordering_fraction": {
+      "fraction": "3/4",
+      "float": 0.75
+    },
+    "target_name": "flat_1p1_interval_ordering_fraction",
+    "target_fraction": {
+      "fraction": "1/2",
+      "float": 0.5
+    },
+    "tolerance": {
+      "fraction": "1/10",
+      "float": 0.1
+    },
+    "absolute_gap": {
+      "fraction": "1/4",
+      "float": 0.25
+    },
+    "target_verdict": "outside_declared_ordering_fraction_band",
+    "verdict": "t126_pass_but_ordering_fraction_fail",
+    "reason": "The candidate survived T126's selected finite filter but is too highly ordered relative to the declared 1+1 flat-interval ordering-fraction target.",
+    "required_next": "Do not treat this T126 survivor as dimension evidence; either change the declared comparison target or build a less lattice-ordered finality colimit."
+  },
+  "verdict": "t249_t126_pass_but_ordering_fraction_fail",
+  "strongest_claim": "The T249 nine-event T54-native grid colimit clears T126 but fails the declared flat 1+1 Myrheim-Meyer ordering-fraction band: its ordering fraction is 3/4, not within 1/2 +/- 1/10.",
+  "improved": "T250 removes ambiguity from the T249 next step by applying the existing named T156 diagnostic to the actual T249 T54-native witness, not to a synthetic product-grid control.",
+  "weakened_or_falsified": "This weakens the positive reading of T249. The larger canonical grid is a useful T54/T126 bridge control, but it is too ordered for the declared flat 1+1 ordering-fraction target.",
+  "falsification_condition": "T250 fails if the relation sent to T156 is not the same T249 quotient-union relation audited by T126, if the target band is changed after seeing the result, or if a failed ordering-fraction screen is described as spacetime evidence.",
+  "s1_update": "S1 remains open_formal_target. T249 now has a named-diagnostic demotion: T126 passing alone is not enough.",
+  "claim_ledger_update": "Do not update the claim ledger from T250 alone. Safe future wording: the T249 T54-native grid passes T126 but fails the declared T156 flat 1+1 ordering-fraction band.",
+  "open_blocker": "No T54-native nine-event witness currently both clears T126 and matches the declared flat 1+1 ordering-fraction target.",
+  "suggested_next": "Search for a T54-native scale-cleared witness with ordering fraction inside the declared band, then apply deletion, interval, locality, and sprinkling screens before any S1 upgrade.",
+  "not_claimed": "T250 does not estimate dimension, prove a faithful embedding, validate sprinkling behavior, derive a metric, or support a continuum claim."
+}

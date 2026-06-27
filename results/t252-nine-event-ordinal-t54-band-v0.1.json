@@ -1,0 +1,37 @@
+{
+  "permutation": [
+    0,
+    5,
+    6,
+    7,
+    8,
+    1,
+    2,
+    3,
+    4
+  ],
+  "t54_classification": "canonical",
+  "t54_theorem_applies": true,
+  "condition_failures": [],
+  "t126_classification": "passes_filter_only",
+  "t126_filter_passed": true,
+  "event_count": 9,
+  "strict_pair_count": 20,
+  "ordering_fraction": {
+    "fraction": "5/9",
+    "float": 0.5555555555555556
+  },
+  "height": 5,
+  "width": 2,
+  "t156_verdict": "passes_ordering_fraction_control_only",
+  "verdict": "nine_event_t54_ordinal_band_control",
+  "strongest_claim": "A fixed nine-event ordinal T54 datum clears T126 and lands inside the declared flat 1+1 ordering-fraction band with fraction 5/9.",
+  "improved": "T252 gives the T249 grid a same-scale, T54-native contrast case that is not a product lattice and is not automatically over-ordered.",
+  "weakened_or_falsified": "This falsifies the narrow post-T251 blocker that no T54-native nine-event witness can match the declared ordering-fraction band. It does not weaken the broader T223 rare-tail/no-concentration verdict for the uniform ordinal ensemble.",
+  "falsification_condition": "T252 fails if the T54 completion is not canonical, if T126 and T156 are not run on the same strict relation, or if this selected finite witness is treated as typical or continuum-facing.",
+  "s1_update": "S1 remains requires_added_assumption/open_formal_target. This is a selected finite control, not a generative spacetime route.",
+  "claim_ledger_update": "Do not update the claim ledger from T252 alone. Safe future wording: one selected nine-event T54-native ordinal control passes T126 and the declared T156 ordering-fraction band.",
+  "open_blocker": "No generative law, abundance result, locality diagnostic, sprinkling comparison, embedding theorem, or continuum bridge is attached to this selected witness.",
+  "suggested_next": "Test deletion stability and mutation sensitivity before treating the witness as more than a same-scale control.",
+  "not_claimed": "These controls do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

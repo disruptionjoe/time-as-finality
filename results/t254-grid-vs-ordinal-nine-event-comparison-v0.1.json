@@ -1,0 +1,24 @@
+{
+  "grid_ordering_fraction": {
+    "fraction": "3/4",
+    "float": 0.75
+  },
+  "grid_band_passed": false,
+  "grid_deletion_band_pass_count": 0,
+  "ordinal_ordering_fraction": {
+    "fraction": "5/9",
+    "float": 0.5555555555555556
+  },
+  "ordinal_band_passed": true,
+  "ordinal_deletion_band_pass_count": 9,
+  "verdict": "same_scale_contrast_control_only",
+  "strongest_claim": "At the same nine-event scale, T249 and T252 separate two finite behaviors: the grid is stably over-ordered, while the selected ordinal witness is deletion-stable inside the declared band.",
+  "improved": "T254 turns the T249/T252 pair into an explicit comparison rather than two isolated examples.",
+  "weakened_or_falsified": "The comparison weakens product-grid optimism, not the existing T223 finite no-go. A selected positive control does not imply typicality or concentration.",
+  "falsification_condition": "T254 fails if the compared witnesses are not audited through the same T126/T156 targets, if deletion pass counts are misreported, or if the contrast is read as an S1 upgrade.",
+  "s1_update": "S1 remains guarded. The contrast identifies candidate shape as important but does not provide a generative or continuum argument.",
+  "claim_ledger_update": "Do not update the claim ledger from T254 alone. Safe future wording: same-scale T54-native controls can diverge sharply under the T156 band and deletion screen.",
+  "open_blocker": "The repo still lacks a principled rule selecting the ordinal control over the grid or over the broader rare-tail ensemble.",
+  "suggested_next": "Run a local mutation screen around the selected ordinal witness to see whether the positive behavior is isolated or nearby.",
+  "not_claimed": "These controls do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

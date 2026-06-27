@@ -1,0 +1,955 @@
+{
+  "mutation_audits": [
+    {
+      "swapped_positions": [
+        0,
+        1
+      ],
+      "permutation": [
+        5,
+        0,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2
+    },
+    {
+      "swapped_positions": [
+        0,
+        2
+      ],
+      "permutation": [
+        6,
+        5,
+        0,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        0,
+        3
+      ],
+      "permutation": [
+        7,
+        5,
+        6,
+        0,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/12",
+        "float": 0.4166666666666667
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        0,
+        4
+      ],
+      "permutation": [
+        8,
+        5,
+        6,
+        7,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "13/36",
+        "float": 0.3611111111111111
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        0,
+        5
+      ],
+      "permutation": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        0,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2
+    },
+    {
+      "swapped_positions": [
+        0,
+        6
+      ],
+      "permutation": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        1,
+        0,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        0,
+        7
+      ],
+      "permutation": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        0,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/12",
+        "float": 0.4166666666666667
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        0,
+        8
+      ],
+      "permutation": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        0
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "13/36",
+        "float": 0.3611111111111111
+      },
+      "ordering_band_passed": false,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        1,
+        2
+      ],
+      "permutation": [
+        0,
+        6,
+        5,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        1,
+        3
+      ],
+      "permutation": [
+        0,
+        7,
+        6,
+        5,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        1,
+        4
+      ],
+      "permutation": [
+        0,
+        8,
+        6,
+        7,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/12",
+        "float": 0.4166666666666667
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        1,
+        5
+      ],
+      "permutation": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        5,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        1,
+        6
+      ],
+      "permutation": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        1,
+        5,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        1,
+        7
+      ],
+      "permutation": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        1,
+        2,
+        5,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        1,
+        8
+      ],
+      "permutation": [
+        0,
+        4,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        5
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2
+    },
+    {
+      "swapped_positions": [
+        2,
+        3
+      ],
+      "permutation": [
+        0,
+        5,
+        7,
+        6,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        2,
+        4
+      ],
+      "permutation": [
+        0,
+        5,
+        8,
+        7,
+        6,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        2,
+        5
+      ],
+      "permutation": [
+        0,
+        5,
+        1,
+        7,
+        8,
+        6,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        2,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        2,
+        7,
+        8,
+        1,
+        6,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 4,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        2,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        3,
+        7,
+        8,
+        1,
+        2,
+        6,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 4,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        2,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        4,
+        7,
+        8,
+        1,
+        2,
+        3,
+        6
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        3,
+        4
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        8,
+        7,
+        1,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        3,
+        5
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        1,
+        8,
+        7,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        3,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        2,
+        8,
+        1,
+        7,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 4,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        3,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        3,
+        8,
+        1,
+        2,
+        7,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 4,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        3,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        4,
+        8,
+        1,
+        2,
+        3,
+        7
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        4,
+        5
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        1,
+        8,
+        2,
+        3,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2
+    },
+    {
+      "swapped_positions": [
+        4,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        2,
+        1,
+        8,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        4,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        3,
+        1,
+        2,
+        8,
+        4
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        4,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        4,
+        1,
+        2,
+        3,
+        8
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        5,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        2,
+        1,
+        3,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        5,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        3,
+        2,
+        1,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        5,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        4,
+        2,
+        3,
+        1
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/12",
+        "float": 0.4166666666666667
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        6,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        3,
+        2,
+        4
+      ],
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    },
+    {
+      "swapped_positions": [
+        6,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        4,
+        3,
+        2
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 4
+    },
+    {
+      "swapped_positions": [
+        7,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        4,
+        3
+      ],
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 3
+    }
+  ],
+  "mutation_count": 36,
+  "t126_pass_and_band_count": 21,
+  "t126_pass_outside_band_count": 2,
+  "t126_blocked_inside_band_count": 13,
+  "band_total_count": 34,
+  "verdict": "mutation_neighborhood_mixed_but_band_common",
+  "strongest_claim": "In the 36 one-transposition neighbors of the T252 permutation, 21 still pass both T126 and the ordering band, 13 remain inside the band but are blocked by T126, and 2 pass T126 outside the band.",
+  "improved": "T255 shows the T252 witness is not a single isolated permutation, but the T126 shape filter still matters inside its local mutation neighborhood.",
+  "weakened_or_falsified": "The result weakens both extremes: T252 is not unique, but its neighborhood is not uniformly good enough to support an S1 upgrade.",
+  "falsification_condition": "T255 fails if mutations are not single transpositions of the declared permutation, if T126/T156 targets differ from T252, or if local mutation abundance is treated as a global ensemble result.",
+  "s1_update": "S1 remains guarded. Mutation-local abundance is a search hint, not a selection law or continuum bridge.",
+  "claim_ledger_update": "Do not update the claim ledger from T255 alone. Safe future wording: the selected ordinal witness has nearby finite controls, but the local neighborhood is mixed under T126.",
+  "open_blocker": "No global abundance, measure, locality, sprinkling, or Lorentzian selection principle has been derived for the positive neighborhood.",
+  "suggested_next": "If continuing, run a bounded exact n=9 class count or a stricter locality diagnostic, rather than adding more hand-picked examples.",
+  "not_claimed": "These controls do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

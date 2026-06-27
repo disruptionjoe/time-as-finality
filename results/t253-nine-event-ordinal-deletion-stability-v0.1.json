@@ -1,0 +1,161 @@
+{
+  "parent_ordering_fraction": {
+    "fraction": "5/9",
+    "float": 0.5555555555555556
+  },
+  "parent_band_passed": true,
+  "deletion_audits": [
+    {
+      "removed_event": "e0",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 12,
+      "ordering_fraction": {
+        "fraction": "3/7",
+        "float": 0.42857142857142855
+      },
+      "ordering_band_passed": true,
+      "height": 4,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e1",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e2",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e3",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e4",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e5",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e6",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e7",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    },
+    {
+      "removed_event": "e8",
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "event_count": 8,
+      "strict_pair_count": 16,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "ordering_band_passed": true,
+      "height": 5,
+      "width": 2,
+      "verdict": "t126_pass_and_ordering_fraction_pass"
+    }
+  ],
+  "deletion_case_count": 9,
+  "deletion_t126_pass_count": 9,
+  "deletion_band_pass_count": 9,
+  "deletion_band_pass_rate": {
+    "fraction": "1/1",
+    "float": 1.0
+  },
+  "verdict": "nine_event_ordinal_deletion_stable_band_control",
+  "strongest_claim": "The selected T252 nine-event ordinal witness is stable under every single-event deletion for the current finite screens: all nine deletions pass T126 and stay inside the declared ordering band.",
+  "improved": "T253 supplies the deletion-stability contrast missing from T252 and separates it from the T249 grid, whose deletions all failed the same band.",
+  "weakened_or_falsified": "This weakens only the specific T249-style over-ordering concern. It does not show that such witnesses are common, natural, local, sprinkling-like, or continuum-relevant.",
+  "falsification_condition": "T253 fails if deletion suborders are not restrictions of the T252 quotient-union relation, if any deletion leaves the declared band without being reported, or if finite deletion stability is promoted into a continuum claim.",
+  "s1_update": "S1 remains guarded. The selected witness is deletion-stable under the declared finite screens only.",
+  "claim_ledger_update": "Do not update the claim ledger from T253 alone. Safe future wording: the selected T252 witness is single-deletion stable for T126 and T156.",
+  "open_blocker": "Deletion stability has not been connected to a selection measure, locality law, random sprinkling ensemble, or Lorentzian data.",
+  "suggested_next": "Compare the T252 witness against the T249 grid and run a small mutation screen to estimate finite sensitivity.",
+  "not_claimed": "These controls do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

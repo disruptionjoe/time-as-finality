@@ -76,12 +76,12 @@
     {
       "predecessor": "e1_A_locking",
       "successor": "e3_composite_locking",
-      "basis": "O1_locked_A.records = {'r_A_locked'} \u2286 U3_composite_source.records = {'r_A_locked', 'r_B_locked', 'r_composite_raw'}"
+      "basis": "O1_locked_A.records = ['r_A_locked'] \u2286 U3_composite_source.records = ['r_A_locked', 'r_B_locked', 'r_composite_raw']"
     },
     {
       "predecessor": "e2_B_locking",
       "successor": "e3_composite_locking",
-      "basis": "O2_locked_B.records = {'r_B_locked'} \u2286 U3_composite_source.records = {'r_A_locked', 'r_B_locked', 'r_composite_raw'}"
+      "basis": "O2_locked_B.records = ['r_B_locked'] \u2286 U3_composite_source.records = ['r_A_locked', 'r_B_locked', 'r_composite_raw']"
     }
   ],
   "partial_order": {

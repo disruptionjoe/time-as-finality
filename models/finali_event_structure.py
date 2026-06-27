@@ -375,8 +375,8 @@ def _compute_order(
                     predecessor=ej.name,
                     successor=ei.name,
                     basis=(
-                        f"{ej.morphism.target.name}.records = {set(ej_out)} "
-                        f"⊆ {ei.morphism.source.name}.records = {set(ei_in)}"
+                        f"{ej.morphism.target.name}.records = {sorted(ej_out)} "
+                        f"⊆ {ei.morphism.source.name}.records = {sorted(ei_in)}"
                     ),
                 ))
 

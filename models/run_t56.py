@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import sys
 
 from models.sheaf_cohomology_apparent_finality import (
     AuditOutcome,
@@ -22,6 +23,9 @@ def _hr(char: str = "-", width: int = 72) -> str:
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
     print(_hr("="))
     print("T56: Sheaf Cohomology of Apparent Finality -- Research Audit")
     print(_hr("="))
@@ -178,7 +182,7 @@ def main() -> None:
     # -----------------------------------------------------------------------
     out_path = "results/sheaf-cohomology-apparent-finality-v0.1-results.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(t56_result_to_dict(result), f, indent=2)
+        json.dump(t56_result_to_dict(result), f, indent=2, ensure_ascii=False)
     print(f"\nResults written to {out_path}")
 
 

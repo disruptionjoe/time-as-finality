@@ -369,6 +369,14 @@ explorations/   Heterodox layer splits and sketches before claim promotion.
 
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
+python -m models.run_readme_formal_models
+```
+
+The helper above runs the README-declared model runners below in order with UTF-8
+child-process output enabled. Use `--list`, `--dry-run`, or `--start-after
+models.run_t56` for runner inspection or resume.
+
+```bash
 python -m models.run_t1
 python -m models.run_t2
 python -m models.run_emergence_lab

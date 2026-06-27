@@ -1,0 +1,20 @@
+{
+  "t256_verdict": "ordinal_interval_profiles_bounded_under_deletion",
+  "t257_verdict": "ordinal_cover_locality_stable_under_deletion",
+  "t258_verdict": "positive_mutation_neighbors_keep_band_but_shape_varies",
+  "t259_verdict": "inside_band_neighbors_blocked_by_profile_spread",
+  "t260_verdict": "outside_band_neighbors_are_two_low_fraction_edge_cases",
+  "t261_verdict": "grid_is_more_ordered_and_interval_deeper_than_ordinal_control",
+  "t262_verdict": "exact_nine_event_count_preferred_over_more_selected_examples",
+  "completed_task_count": 8,
+  "round_verdict": "eight_task_ordinal_neighborhood_diagnostic_round_complete",
+  "strongest_claim": "T256-T263 complete an eight-task finite diagnostic round around T252: the selected witness has bounded interval and cover profiles, its mutation neighborhood is mixed, and exact n=9 counting is the next meaningful route.",
+  "improved": "The round replaces a bare positive witness with a shape-aware neighborhood map and a concrete next-task recommendation.",
+  "weakened_or_falsified": "The round weakens both overconfident readings and dead-end readings: T252 is not isolated, but the local neighborhood is not uniformly S1-facing.",
+  "falsification_condition": "T263 fails if any constituent T256-T262 task is computed from a different relation family or target band.",
+  "s1_update": "S1 remains requires_added_assumption/open_formal_target. No claim ledger upgrade follows from this round.",
+  "claim_ledger_update": "Do not update the claim ledger from T263 alone. Safe wording: T256-T263 add finite structural diagnostics and recommend exact n=9 counting.",
+  "open_blocker": "The open blocker is now global abundance under a declared finite ensemble, plus any later continuum-facing comparison.",
+  "suggested_next": "Run the bounded exact n=9 class count with T126, T156, interval, and cover labels.",
+  "not_claimed": "These diagnostics do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

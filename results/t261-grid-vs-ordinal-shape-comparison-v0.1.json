@@ -1,0 +1,178 @@
+{
+  "grid_shape": {
+    "name": "t249_grid",
+    "classification": "passes_filter_only",
+    "t126_filter_passed": true,
+    "event_count": 9,
+    "strict_pair_count": 27,
+    "ordering_fraction": {
+      "fraction": "3/4",
+      "float": 0.75
+    },
+    "cover_relation_count": 12,
+    "link_density": {
+      "fraction": "4/9",
+      "float": 0.4444444444444444
+    },
+    "height": 5,
+    "width": 3,
+    "rank_profile": [
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "interval_counts_by_size": [
+      {
+        "size": 0,
+        "count": 12
+      },
+      {
+        "size": 1,
+        "count": 6
+      },
+      {
+        "size": 2,
+        "count": 4
+      },
+      {
+        "size": 4,
+        "count": 4
+      },
+      {
+        "size": 7,
+        "count": 1
+      }
+    ],
+    "interval_profile_counts": [
+      {
+        "profile": "size=0;height=0;width=0",
+        "count": 12
+      },
+      {
+        "profile": "size=1;height=1;width=1",
+        "count": 6
+      },
+      {
+        "profile": "size=2;height=1;width=2",
+        "count": 4
+      },
+      {
+        "profile": "size=4;height=2;width=2",
+        "count": 4
+      },
+      {
+        "profile": "size=7;height=3;width=3",
+        "count": 1
+      }
+    ],
+    "largest_interval_size": 7,
+    "largest_comparable_hub_fraction": {
+      "fraction": "1/1",
+      "float": 1.0
+    },
+    "largest_cover_hub_fraction": {
+      "fraction": "1/2",
+      "float": 0.5
+    },
+    "profile_spread_obstruction": false
+  },
+  "ordinal_shape": {
+    "name": "t252_parent",
+    "classification": "passes_filter_only",
+    "t126_filter_passed": true,
+    "event_count": 9,
+    "strict_pair_count": 20,
+    "ordering_fraction": {
+      "fraction": "5/9",
+      "float": 0.5555555555555556
+    },
+    "cover_relation_count": 8,
+    "link_density": {
+      "fraction": "2/5",
+      "float": 0.4
+    },
+    "height": 5,
+    "width": 2,
+    "rank_profile": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "interval_counts_by_size": [
+      {
+        "size": 0,
+        "count": 8
+      },
+      {
+        "size": 1,
+        "count": 6
+      },
+      {
+        "size": 2,
+        "count": 4
+      },
+      {
+        "size": 3,
+        "count": 2
+      }
+    ],
+    "interval_profile_counts": [
+      {
+        "profile": "size=0;height=0;width=0",
+        "count": 8
+      },
+      {
+        "profile": "size=1;height=1;width=1",
+        "count": 6
+      },
+      {
+        "profile": "size=2;height=2;width=1",
+        "count": 4
+      },
+      {
+        "profile": "size=3;height=3;width=1",
+        "count": 2
+      }
+    ],
+    "largest_interval_size": 3,
+    "largest_comparable_hub_fraction": {
+      "fraction": "1/1",
+      "float": 1.0
+    },
+    "largest_cover_hub_fraction": {
+      "fraction": "1/4",
+      "float": 0.25
+    },
+    "profile_spread_obstruction": false
+  },
+  "strict_pair_delta_grid_minus_ordinal": 7,
+  "ordering_fraction_gap_grid_minus_ordinal": {
+    "fraction": "7/36",
+    "float": 0.19444444444444445
+  },
+  "cover_relation_delta_grid_minus_ordinal": 4,
+  "link_density_gap_grid_minus_ordinal": {
+    "fraction": "2/45",
+    "float": 0.044444444444444446
+  },
+  "largest_interval_delta_grid_minus_ordinal": 4,
+  "cover_hub_gap_grid_minus_ordinal": {
+    "fraction": "1/4",
+    "float": 0.25
+  },
+  "width_delta_grid_minus_ordinal": 1,
+  "verdict": "grid_is_more_ordered_and_interval_deeper_than_ordinal_control",
+  "strongest_claim": "At the same nine-event scale, the T249 grid is more ordered than the T252 ordinal witness: +7 strict pairs, +4 cover relations, and largest interval size 7 instead of 3.",
+  "improved": "T261 gives the T249/T252 contrast a structural explanation beyond the ordering-fraction pass/fail result.",
+  "weakened_or_falsified": "This weakens product-grid optimism: T249's failure aligns with deeper intervals and a larger cover hub, not just a marginal band miss.",
+  "falsification_condition": "T261 fails if the compared shapes are not the original T249 and T252 audited relations, or if a finite contrast is reported as a general theorem.",
+  "s1_update": "S1 remains guarded; same-scale contrast is not a continuum bridge.",
+  "claim_ledger_update": "Do not update the claim ledger from T261 alone. Safe wording: the T249 grid and T252 ordinal control differ sharply in finite shape diagnostics.",
+  "open_blocker": "The comparison still does not say how often T252-like shapes occur under a principled ensemble.",
+  "suggested_next": "Prefer exact n=9 counting with these labels over more hand-picked grid-vs-ordinal examples.",
+  "not_claimed": "These diagnostics do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

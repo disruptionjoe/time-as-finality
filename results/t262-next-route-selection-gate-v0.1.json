@@ -1,0 +1,29 @@
+{
+  "parent_and_deletions_stay_inside_interval_cap": true,
+  "parent_and_deletions_stay_below_cover_hub_cap": true,
+  "mutation_count": 36,
+  "positive_neighbor_count": 21,
+  "blocked_inside_band_count": 13,
+  "outside_band_count": 2,
+  "positive_neighbor_rate": {
+    "fraction": "7/12",
+    "float": 0.5833333333333334
+  },
+  "band_neighbor_rate": {
+    "fraction": "17/18",
+    "float": 0.9444444444444444
+  },
+  "selected_next_route": "bounded_exact_n9_class_count_with_shape_labels",
+  "secondary_route": "turn_T256_T257_interval_cover_caps_into_a_stricter_gate",
+  "rejected_route": "keep_adding_hand_picked_selected_examples",
+  "verdict": "exact_nine_event_count_preferred_over_more_selected_examples",
+  "strongest_claim": "The next meaningful route is a bounded exact n=9 count with the T126/T156/T256/T257 labels attached, not another selected example.",
+  "improved": "T262 converts the diagnostic batch into an orchestration choice for the next round.",
+  "weakened_or_falsified": "This weakens the value of more hand-picked witnesses: the local neighborhood already shows both positive abundance and active obstructions.",
+  "falsification_condition": "T262 fails if the mutation partition does not cover all 36 T255 neighbors or if exact counting is infeasible without an explicit bounded search plan.",
+  "s1_update": "S1 remains guarded; route selection is a research-process result.",
+  "claim_ledger_update": "Do not update the claim ledger from T262 alone. Safe wording: the next recommended finite task is exact n=9 counting with shape labels.",
+  "open_blocker": "Exact global abundance for nine-event ordinal controls is still uncomputed.",
+  "suggested_next": "Run the bounded exact n=9 class count, then decide whether the interval/cover caps should become formal gates.",
+  "not_claimed": "These diagnostics do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

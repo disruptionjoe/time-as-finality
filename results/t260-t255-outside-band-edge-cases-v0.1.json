@@ -1,0 +1,227 @@
+{
+  "outside_band_neighbors": [
+    {
+      "swapped_positions": [
+        0,
+        4
+      ],
+      "permutation": [
+        8,
+        5,
+        6,
+        7,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": false,
+      "shape": {
+        "name": "swap_0_4",
+        "classification": "passes_filter_only",
+        "t126_filter_passed": true,
+        "event_count": 9,
+        "strict_pair_count": 13,
+        "ordering_fraction": {
+          "fraction": "13/36",
+          "float": 0.3611111111111111
+        },
+        "cover_relation_count": 6,
+        "link_density": {
+          "fraction": "6/13",
+          "float": 0.46153846153846156
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 6
+          },
+          {
+            "size": 1,
+            "count": 4
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 6
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 4
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/4",
+          "float": 0.25
+        },
+        "profile_spread_obstruction": false
+      }
+    },
+    {
+      "swapped_positions": [
+        0,
+        8
+      ],
+      "permutation": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        0
+      ],
+      "ordering_band_passed": false,
+      "shape": {
+        "name": "swap_0_8",
+        "classification": "passes_filter_only",
+        "t126_filter_passed": true,
+        "event_count": 9,
+        "strict_pair_count": 13,
+        "ordering_fraction": {
+          "fraction": "13/36",
+          "float": 0.3611111111111111
+        },
+        "cover_relation_count": 6,
+        "link_density": {
+          "fraction": "6/13",
+          "float": 0.46153846153846156
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 6
+          },
+          {
+            "size": 1,
+            "count": 4
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 6
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 4
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/4",
+          "float": 0.25
+        },
+        "profile_spread_obstruction": false
+      }
+    }
+  ],
+  "outside_band_count": 2,
+  "outside_band_swaps": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      8
+    ]
+  ],
+  "ordering_fraction_distribution": [
+    {
+      "value": {
+        "fraction": "13/36",
+        "float": 0.3611111111111111
+      },
+      "count": 2
+    }
+  ],
+  "cover_count_distribution": [
+    {
+      "value": 6,
+      "count": 2
+    }
+  ],
+  "cover_hub_distribution": [
+    {
+      "value": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "count": 2
+    }
+  ],
+  "verdict": "outside_band_neighbors_are_two_low_fraction_edge_cases",
+  "strongest_claim": "Only two T255 neighbors pass T126 while missing the declared ordering band, and both miss low at ordering fraction 13/36.",
+  "improved": "T260 records the small outside-band tail so that the positive count is not mistaken for all T126-passing mutations.",
+  "weakened_or_falsified": "This weakens a uniform-neighborhood reading: even T126-passing one-transposition neighbors can fall below the target band.",
+  "falsification_condition": "T260 fails if outside-band status is computed from a different target band, or if swaps outside the T255 transposition list are included.",
+  "s1_update": "S1 remains guarded; two low-fraction edge cases are controls only.",
+  "claim_ledger_update": "Do not update the claim ledger from T260 alone. Safe wording: two T126-passing T255 neighbors fall below the declared ordering band.",
+  "open_blocker": "No principle currently explains the boundary between low-fraction T126 passes and in-band positives.",
+  "suggested_next": "Use exact counting or a stricter local shape gate before adding more selected examples.",
+  "not_claimed": "These diagnostics do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

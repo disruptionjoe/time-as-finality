@@ -1,0 +1,1344 @@
+{
+  "blocked_inside_band_neighbors": [
+    {
+      "swapped_positions": [
+        1,
+        2
+      ],
+      "permutation": [
+        0,
+        6,
+        5,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_1_2",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 19,
+        "ordering_fraction": {
+          "fraction": "19/36",
+          "float": 0.5277777777777778
+        },
+        "cover_relation_count": 9,
+        "link_density": {
+          "fraction": "9/19",
+          "float": 0.47368421052631576
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 9
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 9
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        1,
+        3
+      ],
+      "permutation": [
+        0,
+        7,
+        6,
+        5,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_1_3",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 17,
+        "ordering_fraction": {
+          "fraction": "17/36",
+          "float": 0.4722222222222222
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/17",
+          "float": 0.5882352941176471
+        },
+        "height": 5,
+        "width": 4,
+        "rank_profile": [
+          1,
+          4,
+          2,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 3
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 3
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=1;width=3",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        1,
+        6
+      ],
+      "permutation": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        1,
+        5,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_1_6",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/21",
+          "float": 0.47619047619047616
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 4
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 2
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        1,
+        7
+      ],
+      "permutation": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        1,
+        2,
+        5,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_1_7",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/21",
+          "float": 0.47619047619047616
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 6
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 3
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 6
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        2,
+        3
+      ],
+      "permutation": [
+        0,
+        5,
+        7,
+        6,
+        8,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_2_3",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 19,
+        "ordering_fraction": {
+          "fraction": "19/36",
+          "float": 0.5277777777777778
+        },
+        "cover_relation_count": 9,
+        "link_density": {
+          "fraction": "9/19",
+          "float": 0.47368421052631576
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 9
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 9
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        2,
+        5
+      ],
+      "permutation": [
+        0,
+        5,
+        1,
+        7,
+        8,
+        6,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_2_5",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/21",
+          "float": 0.47619047619047616
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 4
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 2
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        2,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        2,
+        7,
+        8,
+        1,
+        6,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_2_6",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 12,
+        "link_density": {
+          "fraction": "4/7",
+          "float": 0.5714285714285714
+        },
+        "height": 4,
+        "width": 3,
+        "rank_profile": [
+          1,
+          3,
+          3,
+          2
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 12
+          },
+          {
+            "size": 1,
+            "count": 4
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 3
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 12
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 4
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=1;width=3",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 2
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        2,
+        8
+      ],
+      "permutation": [
+        0,
+        5,
+        4,
+        7,
+        8,
+        1,
+        2,
+        3,
+        6
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_2_8",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 11,
+        "link_density": {
+          "fraction": "11/21",
+          "float": 0.5238095238095238
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 11
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 1
+          },
+          {
+            "size": 5,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 11
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=5;height=3;width=3",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 5,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        3,
+        5
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        1,
+        8,
+        7,
+        2,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_3_5",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/21",
+          "float": 0.47619047619047616
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 6
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 3
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 6
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        4,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        2,
+        1,
+        8,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_4_6",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 21,
+        "ordering_fraction": {
+          "fraction": "7/12",
+          "float": 0.5833333333333334
+        },
+        "cover_relation_count": 11,
+        "link_density": {
+          "fraction": "11/21",
+          "float": 0.5238095238095238
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 11
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 1
+          },
+          {
+            "size": 5,
+            "count": 1
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 11
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=5;height=3;width=3",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 5,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        5,
+        6
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        2,
+        1,
+        3,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_5_6",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 19,
+        "ordering_fraction": {
+          "fraction": "19/36",
+          "float": 0.5277777777777778
+        },
+        "cover_relation_count": 9,
+        "link_density": {
+          "fraction": "9/19",
+          "float": 0.47368421052631576
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 9
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 9
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        5,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        3,
+        2,
+        1,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_5_7",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 17,
+        "ordering_fraction": {
+          "fraction": "17/36",
+          "float": 0.4722222222222222
+        },
+        "cover_relation_count": 10,
+        "link_density": {
+          "fraction": "10/17",
+          "float": 0.5882352941176471
+        },
+        "height": 5,
+        "width": 4,
+        "rank_profile": [
+          1,
+          4,
+          2,
+          1,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 10
+          },
+          {
+            "size": 1,
+            "count": 3
+          },
+          {
+            "size": 2,
+            "count": 2
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 10
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 3
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=1;width=3",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "1/2",
+          "float": 0.5
+        },
+        "profile_spread_obstruction": true
+      }
+    },
+    {
+      "swapped_positions": [
+        6,
+        7
+      ],
+      "permutation": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        1,
+        3,
+        2,
+        4
+      ],
+      "ordering_band_passed": true,
+      "shape": {
+        "name": "swap_6_7",
+        "classification": "order_dimension_obstruction",
+        "t126_filter_passed": false,
+        "event_count": 9,
+        "strict_pair_count": 19,
+        "ordering_fraction": {
+          "fraction": "19/36",
+          "float": 0.5277777777777778
+        },
+        "cover_relation_count": 9,
+        "link_density": {
+          "fraction": "9/19",
+          "float": 0.47368421052631576
+        },
+        "height": 5,
+        "width": 3,
+        "rank_profile": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "interval_counts_by_size": [
+          {
+            "size": 0,
+            "count": 9
+          },
+          {
+            "size": 1,
+            "count": 5
+          },
+          {
+            "size": 2,
+            "count": 3
+          },
+          {
+            "size": 3,
+            "count": 2
+          }
+        ],
+        "interval_profile_counts": [
+          {
+            "profile": "size=0;height=0;width=0",
+            "count": 9
+          },
+          {
+            "profile": "size=1;height=1;width=1",
+            "count": 5
+          },
+          {
+            "profile": "size=2;height=1;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=2;height=2;width=1",
+            "count": 2
+          },
+          {
+            "profile": "size=3;height=2;width=2",
+            "count": 1
+          },
+          {
+            "profile": "size=3;height=3;width=1",
+            "count": 1
+          }
+        ],
+        "largest_interval_size": 3,
+        "largest_comparable_hub_fraction": {
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "largest_cover_hub_fraction": {
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "profile_spread_obstruction": true
+      }
+    }
+  ],
+  "blocked_inside_band_count": 13,
+  "classification_distribution": [
+    {
+      "value": "order_dimension_obstruction",
+      "count": 13
+    }
+  ],
+  "profile_spread_obstruction_count": 13,
+  "ordering_fraction_distribution": [
+    {
+      "value": {
+        "fraction": "17/36",
+        "float": 0.4722222222222222
+      },
+      "count": 2
+    },
+    {
+      "value": {
+        "fraction": "19/36",
+        "float": 0.5277777777777778
+      },
+      "count": 4
+    },
+    {
+      "value": {
+        "fraction": "7/12",
+        "float": 0.5833333333333334
+      },
+      "count": 7
+    }
+  ],
+  "rank_profile_distribution": [
+    {
+      "value": [
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "count": 2
+    },
+    {
+      "value": [
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "count": 4
+    },
+    {
+      "value": [
+        1,
+        3,
+        2,
+        2,
+        1
+      ],
+      "count": 4
+    },
+    {
+      "value": [
+        1,
+        3,
+        3,
+        2
+      ],
+      "count": 1
+    },
+    {
+      "value": [
+        1,
+        4,
+        2,
+        1,
+        1
+      ],
+      "count": 2
+    }
+  ],
+  "verdict": "inside_band_neighbors_blocked_by_profile_spread",
+  "strongest_claim": "All 13 inside-band neighbors blocked by T126 are classified as order-dimension obstructions, and all 13 trip the profile-spread diagnostic.",
+  "improved": "T259 explains why the T156 band alone is too weak in the local neighborhood: it admits cases with unstable interval profiles.",
+  "weakened_or_falsified": "This weakens any plan to use the Myrheim-Meyer ordering-fraction band by itself as the next S1-facing filter.",
+  "falsification_condition": "T259 fails if any inside-band T255 blocked neighbor has a different T126 classification or lacks profile-spread obstruction.",
+  "s1_update": "S1 remains guarded; the obstruction confirms the need for multiple finite screens.",
+  "claim_ledger_update": "Do not update the claim ledger from T259 alone. Safe wording: in the T255 neighborhood, every inside-band T126 failure is a profile-spread/order-dimension obstruction.",
+  "open_blocker": "The obstruction is diagnostic, not a theorem identifying the right continuum dimension or a selection measure.",
+  "suggested_next": "Keep the T126 profile-spread gate active in any exact n=9 count.",
+  "not_claimed": "These diagnostics do not estimate dimension, prove faithful embedding, validate random sprinkling, derive metric structure, or settle S1."
+}

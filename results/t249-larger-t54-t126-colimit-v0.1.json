@@ -1,0 +1,111 @@
+{
+  "completion": {
+    "datum_name": "T249_larger_grid_colimit",
+    "classification": "canonical",
+    "theorem_applies": true,
+    "condition_failures": [],
+    "global_event_count": 9,
+    "strict_pair_count": 27,
+    "product_order_exact": true
+  },
+  "local_gap_summaries": [
+    {
+      "observer": "NW",
+      "local_event_count": 4,
+      "ambient_pair_count": 5,
+      "local_pair_count": 5,
+      "gap_count": 0,
+      "local_is_suborder": true
+    },
+    {
+      "observer": "NE",
+      "local_event_count": 4,
+      "ambient_pair_count": 5,
+      "local_pair_count": 5,
+      "gap_count": 0,
+      "local_is_suborder": true
+    },
+    {
+      "observer": "SW",
+      "local_event_count": 4,
+      "ambient_pair_count": 5,
+      "local_pair_count": 5,
+      "gap_count": 0,
+      "local_is_suborder": true
+    },
+    {
+      "observer": "SE",
+      "local_event_count": 4,
+      "ambient_pair_count": 5,
+      "local_pair_count": 5,
+      "gap_count": 0,
+      "local_is_suborder": true
+    }
+  ],
+  "t126_audit": {
+    "name": "t249_larger_grid_t54_colimit",
+    "classification": "passes_filter_only",
+    "causal_set_candidate": true,
+    "manifold_filter_passed": true,
+    "reason": "No selected finite obstruction was found. This is only a necessary-condition pass.",
+    "required_next": "Compare against stronger causal-set dimension, sprinkling, locality, or continuum-limit diagnostics.",
+    "not_claimed": "Passing T126 is not a faithful embedding proof and does not derive spacetime, GR, metric structure, Lorentzian geometry, or continuum physics.",
+    "diagnostics": {
+      "event_count": 9,
+      "strict_pair_count": 27,
+      "comparable_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "cover_relation_count": 12,
+      "link_density": {
+        "fraction": "4/9",
+        "float": 0.4444444444444444
+      },
+      "height": 5,
+      "width": 3,
+      "rank_profile": [
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "interval_counts_by_size": [
+        [
+          0,
+          12
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "largest_cover_hub_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "profile_spread_obstruction": false
+    }
+  },
+  "strongest_claim": "A nine-event T54-native observer descent datum can reconstruct the 3x3 product order and reach T126 above the minimum scale floor, where it receives only the verdict passes_filter_only.",
+  "improved": "This closes the T154 immediate blocker at the finite-control level: the larger T126 grid is no longer merely a synthetic causet control, because it now has an explicit T54 observer-descent source.",
+  "weakened": "The result weakens any broad S1 reading. Clearing the selected finite T126 filter is not an embedding theorem and does not supply sprinkling, locality, covariance, metric, or continuum evidence.",
+  "falsification_condition": "T249 fails if the quotient-union order differs from the 3x3 product order, if any observer-local patch has a non-suborder gap relative to the ambient order, or if T126 is read as stronger than a finite necessary-condition filter.",
+  "s1_update": "S1 remains open_formal_target. The finite bridge now has a larger T54-native control, but no continuum-facing claim follows.",
+  "claim_ledger_update": "Do not update the claim ledger from T249 alone. If recorded later, the safe wording is: a nine-event T54-native grid colimit passes the current T126 finite filter only.",
+  "open_blocker": "No named causal-set dimension estimator, random sprinkling test, locality diagnostic, faithful embedding theorem, or continuum-limit argument has been applied to this T54-native witness.",
+  "suggested_next": "Compare this grid-derived finality colimit against a declared Myrheim-Meyer, sprinkling, or locality diagnostic, with tolerance chosen before seeing the verdict."
+}

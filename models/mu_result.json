@@ -1,0 +1,1655 @@
+{
+  "L": 1048576,
+  "summaries": {
+    "A": {
+      "cell": "A",
+      "n_values": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "info_sign": "ZERO",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": true,
+      "kappa_by_n": [
+        [
+          4,
+          0.002586
+        ],
+        [
+          5,
+          0.004034
+        ],
+        [
+          6,
+          0.005802
+        ],
+        [
+          7,
+          0.007891
+        ],
+        [
+          8,
+          0.0103
+        ],
+        [
+          9,
+          0.013029
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ],
+        [
+          6,
+          0.0
+        ],
+        [
+          7,
+          0.0
+        ],
+        [
+          8,
+          0.0
+        ],
+        [
+          9,
+          0.0
+        ]
+      ]
+    },
+    "B": {
+      "cell": "B",
+      "n_values": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "info_sign": "ZERO",
+      "comp_class": "IRREDUCIBLE",
+      "bijection_all": true,
+      "kappa_by_n": [
+        [
+          4,
+          1.0
+        ],
+        [
+          5,
+          1.0
+        ],
+        [
+          6,
+          1.0
+        ],
+        [
+          7,
+          1.0
+        ],
+        [
+          8,
+          1.0
+        ],
+        [
+          9,
+          1.0
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ],
+        [
+          6,
+          0.0
+        ],
+        [
+          7,
+          0.0
+        ],
+        [
+          8,
+          0.0
+        ],
+        [
+          9,
+          0.0
+        ]
+      ]
+    },
+    "C": {
+      "cell": "C",
+      "n_values": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "info_sign": "POS",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": false,
+      "kappa_by_n": [
+        [
+          6,
+          0.000732
+        ],
+        [
+          7,
+          0.000995
+        ],
+        [
+          8,
+          0.001297
+        ],
+        [
+          9,
+          0.001639
+        ],
+        [
+          10,
+          0.002022
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          6,
+          2.0
+        ],
+        [
+          7,
+          1.0
+        ],
+        [
+          8,
+          2.0
+        ],
+        [
+          9,
+          1.0
+        ],
+        [
+          10,
+          2.0
+        ]
+      ]
+    },
+    "D": {
+      "cell": "D",
+      "n_values": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "info_sign": "POS",
+      "comp_class": "IRREDUCIBLE",
+      "bijection_all": false,
+      "kappa_by_n": [
+        [
+          6,
+          1.0
+        ],
+        [
+          7,
+          1.0
+        ],
+        [
+          8,
+          1.0
+        ],
+        [
+          9,
+          1.0
+        ],
+        [
+          10,
+          1.0
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          6,
+          0.868936
+        ],
+        [
+          7,
+          0.806316
+        ],
+        [
+          8,
+          0.57066
+        ],
+        [
+          9,
+          0.897662
+        ],
+        [
+          10,
+          0.8603
+        ]
+      ]
+    },
+    "E": {
+      "cell": "E",
+      "n_values": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "info_sign": "ZERO",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": true,
+      "kappa_by_n": [
+        [
+          4,
+          0.002586
+        ],
+        [
+          5,
+          0.004034
+        ],
+        [
+          6,
+          0.005802
+        ],
+        [
+          7,
+          0.007891
+        ],
+        [
+          8,
+          0.0103
+        ],
+        [
+          9,
+          0.013029
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ],
+        [
+          6,
+          0.0
+        ],
+        [
+          7,
+          0.0
+        ],
+        [
+          8,
+          0.0
+        ],
+        [
+          9,
+          0.0
+        ]
+      ]
+    },
+    "Cp": {
+      "cell": "Cp",
+      "n_values": [
+        6,
+        8,
+        10
+      ],
+      "info_sign": "POS",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": false,
+      "kappa_by_n": [
+        [
+          6,
+          0.000732
+        ],
+        [
+          8,
+          0.001297
+        ],
+        [
+          10,
+          0.002022
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          6,
+          2.0
+        ],
+        [
+          8,
+          2.0
+        ],
+        [
+          10,
+          2.0
+        ]
+      ]
+    },
+    "A150": {
+      "cell": "A150",
+      "n_values": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "info_sign": "ZERO",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": true,
+      "kappa_by_n": [
+        [
+          4,
+          0.002586
+        ],
+        [
+          5,
+          0.004034
+        ],
+        [
+          6,
+          0.005802
+        ],
+        [
+          7,
+          0.007891
+        ],
+        [
+          8,
+          0.0103
+        ],
+        [
+          9,
+          0.013029
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ],
+        [
+          6,
+          0.0
+        ],
+        [
+          7,
+          0.0
+        ],
+        [
+          8,
+          0.0
+        ],
+        [
+          9,
+          0.0
+        ]
+      ]
+    },
+    "B30": {
+      "cell": "B30",
+      "n_values": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "info_sign": "ZERO",
+      "comp_class": "IRREDUCIBLE",
+      "bijection_all": true,
+      "kappa_by_n": [
+        [
+          4,
+          1.0
+        ],
+        [
+          5,
+          1.0
+        ],
+        [
+          6,
+          1.0
+        ],
+        [
+          7,
+          1.0
+        ],
+        [
+          8,
+          1.0
+        ],
+        [
+          9,
+          1.0
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          4,
+          0.0
+        ],
+        [
+          5,
+          0.0
+        ],
+        [
+          6,
+          0.0
+        ],
+        [
+          7,
+          0.0
+        ],
+        [
+          8,
+          0.0
+        ],
+        [
+          9,
+          0.0
+        ]
+      ]
+    },
+    "C150": {
+      "cell": "C150",
+      "n_values": [
+        6,
+        9
+      ],
+      "info_sign": "POS",
+      "comp_class": "REDUCIBLE",
+      "bijection_all": false,
+      "kappa_by_n": [
+        [
+          6,
+          0.000732
+        ],
+        [
+          9,
+          0.001639
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          6,
+          2.0
+        ],
+        [
+          9,
+          2.0
+        ]
+      ]
+    },
+    "D30": {
+      "cell": "D30",
+      "n_values": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "info_sign": "POS",
+      "comp_class": "IRREDUCIBLE",
+      "bijection_all": false,
+      "kappa_by_n": [
+        [
+          6,
+          1.0
+        ],
+        [
+          7,
+          1.0
+        ],
+        [
+          8,
+          1.0
+        ],
+        [
+          9,
+          1.0
+        ],
+        [
+          10,
+          1.0
+        ]
+      ],
+      "info_rate_by_n": [
+        [
+          6,
+          0.333333
+        ],
+        [
+          7,
+          0.23913
+        ],
+        [
+          8,
+          0.411765
+        ],
+        [
+          9,
+          0.22541
+        ],
+        [
+          10,
+          0.421053
+        ]
+      ]
+    }
+  },
+  "dropped_injectivity_precondition": {
+    "C150": [
+      7,
+      8,
+      10
+    ]
+  },
+  "gates": {
+    "G1_reversible_all_bijection": true,
+    "G2_irreversible_nonbijection": true,
+    "G3_nonlinear_reducible_E_Cp": true,
+    "G4_battery_rails": true,
+    "G5_thermo_common_cause_Cp_pos": true,
+    "G6_horizon_adequacy": true
+  },
+  "all_gates_pass": true,
+  "replication_ok": true,
+  "verdict": "CONFIRM_TWO_SOURCES",
+  "raw": [
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 4,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.002586,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 544,
+      "naive_bitops": 4194304,
+      "L": 1048576
+    },
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 5,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.004034,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1050,
+      "naive_bitops": 5242880,
+      "L": 1048576
+    },
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 6,
+      "W": 12,
+      "bijection": true,
+      "n_recurrent": 4096,
+      "n_images": 4096,
+      "states": 4096,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.005802,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1800,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 7,
+      "W": 14,
+      "bijection": true,
+      "n_recurrent": 16384,
+      "n_images": 16384,
+      "states": 16384,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.007891,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 2842,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 8,
+      "W": 16,
+      "bijection": true,
+      "n_recurrent": 65536,
+      "n_images": 65536,
+      "states": 65536,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.0103,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 4224,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "A",
+      "order": 2,
+      "rule": 90,
+      "conj": false,
+      "n": 9,
+      "W": 18,
+      "bijection": true,
+      "n_recurrent": 262144,
+      "n_images": 262144,
+      "states": 262144,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.013029,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 5994,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 4,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 4194304,
+      "naive_bitops": 4194304,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 5,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 5242880,
+      "naive_bitops": 5242880,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 6,
+      "W": 12,
+      "bijection": true,
+      "n_recurrent": 4096,
+      "n_images": 4096,
+      "states": 4096,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 6291456,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 7,
+      "W": 14,
+      "bijection": true,
+      "n_recurrent": 16384,
+      "n_images": 16384,
+      "states": 16384,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 7340032,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 8,
+      "W": 16,
+      "bijection": true,
+      "n_recurrent": 65536,
+      "n_images": 65536,
+      "states": 65536,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 8388608,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "B",
+      "order": 2,
+      "rule": 110,
+      "conj": false,
+      "n": 9,
+      "W": 18,
+      "bijection": true,
+      "n_recurrent": 262144,
+      "n_images": 262144,
+      "states": 262144,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 9437184,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "C",
+      "order": 1,
+      "rule": 90,
+      "conj": false,
+      "n": 6,
+      "W": 6,
+      "bijection": false,
+      "n_recurrent": 16,
+      "n_images": 16,
+      "states": 64,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.000732,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 252,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "C",
+      "order": 1,
+      "rule": 90,
+      "conj": false,
+      "n": 7,
+      "W": 7,
+      "bijection": false,
+      "n_recurrent": 64,
+      "n_images": 64,
+      "states": 128,
+      "info_rate_bits": 1.0,
+      "info_sign": "POS",
+      "kappa": 0.000995,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 392,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "C",
+      "order": 1,
+      "rule": 90,
+      "conj": false,
+      "n": 8,
+      "W": 8,
+      "bijection": false,
+      "n_recurrent": 1,
+      "n_images": 64,
+      "states": 256,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.001297,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 576,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "C",
+      "order": 1,
+      "rule": 90,
+      "conj": false,
+      "n": 9,
+      "W": 9,
+      "bijection": false,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 512,
+      "info_rate_bits": 1.0,
+      "info_sign": "POS",
+      "kappa": 0.001639,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 810,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "C",
+      "order": 1,
+      "rule": 90,
+      "conj": false,
+      "n": 10,
+      "W": 10,
+      "bijection": false,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 1024,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.002022,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1100,
+      "naive_bitops": 10485760,
+      "L": 1048576
+    },
+    {
+      "cell": "D",
+      "order": 1,
+      "rule": 110,
+      "conj": false,
+      "n": 6,
+      "W": 6,
+      "bijection": false,
+      "n_recurrent": 19,
+      "n_images": 41,
+      "states": 64,
+      "info_rate_bits": 0.868936,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 6291456,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "D",
+      "order": 1,
+      "rule": 110,
+      "conj": false,
+      "n": 7,
+      "W": 7,
+      "bijection": false,
+      "n_recurrent": 15,
+      "n_images": 79,
+      "states": 128,
+      "info_rate_bits": 0.806316,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 7340032,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "D",
+      "order": 1,
+      "rule": 110,
+      "conj": false,
+      "n": 8,
+      "W": 8,
+      "bijection": false,
+      "n_recurrent": 45,
+      "n_images": 154,
+      "states": 256,
+      "info_rate_bits": 0.57066,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 8388608,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "D",
+      "order": 1,
+      "rule": 110,
+      "conj": false,
+      "n": 9,
+      "W": 9,
+      "bijection": false,
+      "n_recurrent": 73,
+      "n_images": 302,
+      "states": 512,
+      "info_rate_bits": 0.897662,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 9437184,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "D",
+      "order": 1,
+      "rule": 110,
+      "conj": false,
+      "n": 10,
+      "W": 10,
+      "bijection": false,
+      "n_recurrent": 131,
+      "n_images": 582,
+      "states": 1024,
+      "info_rate_bits": 0.8603,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 10485760,
+      "naive_bitops": 10485760,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 4,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.002586,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 544,
+      "naive_bitops": 4194304,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 5,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.004034,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 1050,
+      "naive_bitops": 5242880,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 6,
+      "W": 12,
+      "bijection": true,
+      "n_recurrent": 4096,
+      "n_images": 4096,
+      "states": 4096,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.005802,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 1800,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 7,
+      "W": 14,
+      "bijection": true,
+      "n_recurrent": 16384,
+      "n_images": 16384,
+      "states": 16384,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.007891,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 2842,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 8,
+      "W": 16,
+      "bijection": true,
+      "n_recurrent": 65536,
+      "n_images": 65536,
+      "states": 65536,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.0103,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 4224,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "E",
+      "order": 2,
+      "rule": 90,
+      "conj": true,
+      "n": 9,
+      "W": 18,
+      "bijection": true,
+      "n_recurrent": 262144,
+      "n_images": 262144,
+      "states": 262144,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.013029,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 5994,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "Cp",
+      "order": 1,
+      "rule": 90,
+      "conj": true,
+      "n": 6,
+      "W": 6,
+      "bijection": false,
+      "n_recurrent": 16,
+      "n_images": 16,
+      "states": 64,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.000732,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 252,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "Cp",
+      "order": 1,
+      "rule": 90,
+      "conj": true,
+      "n": 8,
+      "W": 8,
+      "bijection": false,
+      "n_recurrent": 1,
+      "n_images": 64,
+      "states": 256,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.001297,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 576,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "Cp",
+      "order": 1,
+      "rule": 90,
+      "conj": true,
+      "n": 10,
+      "W": 10,
+      "bijection": false,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 1024,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.002022,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "affine_after_recoding:hinv",
+      "build_bitops": 1100,
+      "naive_bitops": 10485760,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 4,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.002586,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 544,
+      "naive_bitops": 4194304,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 5,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.004034,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1050,
+      "naive_bitops": 5242880,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 6,
+      "W": 12,
+      "bijection": true,
+      "n_recurrent": 4096,
+      "n_images": 4096,
+      "states": 4096,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.005802,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1800,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 7,
+      "W": 14,
+      "bijection": true,
+      "n_recurrent": 16384,
+      "n_images": 16384,
+      "states": 16384,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.007891,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 2842,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 8,
+      "W": 16,
+      "bijection": true,
+      "n_recurrent": 65536,
+      "n_images": 65536,
+      "states": 65536,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.0103,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 4224,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "A150",
+      "order": 2,
+      "rule": 150,
+      "conj": false,
+      "n": 9,
+      "W": 18,
+      "bijection": true,
+      "n_recurrent": 262144,
+      "n_images": 262144,
+      "states": 262144,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.013029,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 5994,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 4,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 4194304,
+      "naive_bitops": 4194304,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 5,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 5242880,
+      "naive_bitops": 5242880,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 6,
+      "W": 12,
+      "bijection": true,
+      "n_recurrent": 4096,
+      "n_images": 4096,
+      "states": 4096,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 6291456,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 7,
+      "W": 14,
+      "bijection": true,
+      "n_recurrent": 16384,
+      "n_images": 16384,
+      "states": 16384,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 7340032,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 8,
+      "W": 16,
+      "bijection": true,
+      "n_recurrent": 65536,
+      "n_images": 65536,
+      "states": 65536,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 8388608,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "B30",
+      "order": 2,
+      "rule": 30,
+      "conj": false,
+      "n": 9,
+      "W": 18,
+      "bijection": true,
+      "n_recurrent": 262144,
+      "n_images": 262144,
+      "states": 262144,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 9437184,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "C150",
+      "order": 1,
+      "rule": 150,
+      "conj": false,
+      "n": 6,
+      "W": 6,
+      "bijection": false,
+      "n_recurrent": 4,
+      "n_images": 16,
+      "states": 64,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.000732,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 252,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "C150",
+      "order": 1,
+      "rule": 150,
+      "conj": false,
+      "n": 7,
+      "W": 7,
+      "bijection": true,
+      "n_recurrent": 128,
+      "n_images": 128,
+      "states": 128,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.000995,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 392,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "C150",
+      "order": 1,
+      "rule": 150,
+      "conj": false,
+      "n": 8,
+      "W": 8,
+      "bijection": true,
+      "n_recurrent": 256,
+      "n_images": 256,
+      "states": 256,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.001297,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 576,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "C150",
+      "order": 1,
+      "rule": 150,
+      "conj": false,
+      "n": 9,
+      "W": 9,
+      "bijection": false,
+      "n_recurrent": 128,
+      "n_images": 128,
+      "states": 512,
+      "info_rate_bits": 2.0,
+      "info_sign": "POS",
+      "kappa": 0.001639,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 810,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "C150",
+      "order": 1,
+      "rule": 150,
+      "conj": false,
+      "n": 10,
+      "W": 10,
+      "bijection": true,
+      "n_recurrent": 1024,
+      "n_images": 1024,
+      "states": 1024,
+      "info_rate_bits": 0.0,
+      "info_sign": "ZERO",
+      "kappa": 0.002022,
+      "comp_class": "REDUCIBLE",
+      "battery_member": "global_affine:id",
+      "build_bitops": 1100,
+      "naive_bitops": 10485760,
+      "L": 1048576
+    },
+    {
+      "cell": "D30",
+      "order": 1,
+      "rule": 30,
+      "conj": false,
+      "n": 6,
+      "W": 6,
+      "bijection": false,
+      "n_recurrent": 3,
+      "n_images": 52,
+      "states": 64,
+      "info_rate_bits": 0.333333,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 6291456,
+      "naive_bitops": 6291456,
+      "L": 1048576
+    },
+    {
+      "cell": "D30",
+      "order": 1,
+      "rule": 30,
+      "conj": false,
+      "n": 7,
+      "W": 7,
+      "bijection": false,
+      "n_recurrent": 92,
+      "n_images": 106,
+      "states": 128,
+      "info_rate_bits": 0.23913,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 7340032,
+      "naive_bitops": 7340032,
+      "L": 1048576
+    },
+    {
+      "cell": "D30",
+      "order": 1,
+      "rule": 30,
+      "conj": false,
+      "n": 8,
+      "W": 8,
+      "bijection": false,
+      "n_recurrent": 51,
+      "n_images": 223,
+      "states": 256,
+      "info_rate_bits": 0.411765,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 8388608,
+      "naive_bitops": 8388608,
+      "L": 1048576
+    },
+    {
+      "cell": "D30",
+      "order": 1,
+      "rule": 30,
+      "conj": false,
+      "n": 9,
+      "W": 9,
+      "bijection": false,
+      "n_recurrent": 244,
+      "n_images": 455,
+      "states": 512,
+      "info_rate_bits": 0.22541,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 9437184,
+      "naive_bitops": 9437184,
+      "L": 1048576
+    },
+    {
+      "cell": "D30",
+      "order": 1,
+      "rule": 30,
+      "conj": false,
+      "n": 10,
+      "W": 10,
+      "bijection": false,
+      "n_recurrent": 38,
+      "n_images": 923,
+      "states": 1024,
+      "info_rate_bits": 0.421053,
+      "info_sign": "POS",
+      "kappa": 1.0,
+      "comp_class": "IRREDUCIBLE",
+      "battery_member": "none(naive)",
+      "build_bitops": 10485760,
+      "naive_bitops": 10485760,
+      "L": 1048576
+    }
+  ]
+}

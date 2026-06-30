@@ -1,0 +1,62 @@
+{
+  "c1_c2": {
+    "E_discovery": [
+      {
+        "n": 4,
+        "found": true,
+        "via": "discovered_recoding:F1(1,0,1)",
+        "G3_earned_by_search": true,
+        "handed_excluded": "F1(1,3,1)"
+      },
+      {
+        "n": 5,
+        "found": true,
+        "via": "discovered_recoding:F1(1,0,1)",
+        "G3_earned_by_search": true,
+        "handed_excluded": "F1(1,3,1)"
+      },
+      {
+        "n": 6,
+        "found": true,
+        "via": "discovered_recoding:F1(1,0,1)",
+        "G3_earned_by_search": true,
+        "handed_excluded": "F1(1,3,1)"
+      }
+    ],
+    "B_robustness": [
+      {
+        "n": 4,
+        "reduced": false,
+        "via": null
+      },
+      {
+        "n": 5,
+        "reduced": false,
+        "via": null
+      },
+      {
+        "n": 6,
+        "reduced": false,
+        "via": null
+      }
+    ]
+  },
+  "c3": {
+    "8": {
+      "info_pos&comp_irr": 240,
+      "info_pos&comp_red": 8,
+      "info_zero&comp_irr": 0,
+      "info_zero&comp_red": 8,
+      "all_four_corners_populated": false,
+      "phi": 0.6956
+    },
+    "10": {
+      "info_pos&comp_irr": 240,
+      "info_pos&comp_red": 8,
+      "info_zero&comp_irr": 0,
+      "info_zero&comp_red": 8,
+      "all_four_corners_populated": false,
+      "phi": 0.6956
+    }
+  }
+}

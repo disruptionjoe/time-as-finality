@@ -50,10 +50,23 @@ Proposed companion principle (to sit *beside* G1/G3, not replace them), for Joe 
 > where the gluing obstruction (H1) vanishes. This neither weakens G1/G3 nor admits mind-created matter: it
 > states the positive content G1/G3 leave implicit.
 
-Status: PROPOSAL only. Do not promote to `guardrails/` without Joe's explicit approval in chat. The most
-dangerous failure mode (flagged by the philosopher and decoherence lenses) is "create" sliding back to
-*authorship* or *Born-measure-biasing*; G4 exists precisely to block that slide while admitting genuine
-observer-level binding.
+Status: PROPOSAL only. The most dangerous failure mode (flagged by the philosopher and decoherence lenses) is
+"create" sliding back to *authorship* or *Born-measure-biasing*; G4 exists precisely to block that slide while
+admitting genuine observer-level binding.
+
+**Judgment (2026-06-30, delegated by Joe): do NOT promote G4 to canon now; bind its promotion to the mu
+trigger.** Reasons: (1) G4 is a *positive substantive claim*, not a refusal -- the wrong shape for the
+guardrails layer, whose job is to constrain claims, not host them; (2) it is premature for the same reason the
+whole driving hypothesis is incubated rather than minted -- the central object `mu` does not exist yet, and
+the guardrails are a protected zone where churn is costly; (3) nothing is left unprotected meanwhile -- the
+*refusal kernel* (no matter/substrate authorship, no Born-measure-biasing, no self-certified finality) is
+already operative via G1/G3 (matter), G2 (no replacement of QM / no modified Born rule), and the
+driving-hypothesis Discipline section.
+
+**Promotion trigger for G4 = the same `mu` trigger as the repo spin-out**
+(`temporal-issuance/DRIVING-HYPOTHESIS-OBSERVER-ISSUANCE.md`): the day `mu` yields a falsifiable prediction,
+G4 graduates to `guardrails/` (reworded as needed so its *refusal* content leads) alongside the new
+integration repo. Until then it stays a proposal with a defined gate, not a floating idea.
 
 ## Other TaF-facing deliverables (from the council)
 

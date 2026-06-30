@@ -254,8 +254,8 @@ def comparator_verdicts(result_bits: dict[str, bool]) -> tuple[ComparatorVerdict
             status="finite_completed_table_absorbs",
             absorbs=True,
             reason=(
-                "the finite carrier can be pre-enumerated, so append can be read as reveal/access "
-                "rather than source-side growth"
+                "the finite carrier can be pre-enumerated, so the shared substrate can be read "
+                "as a completed compatibility table rather than a live compatibility generator"
             ),
         ),
         ComparatorVerdict(
@@ -324,13 +324,15 @@ def run_t377_analysis() -> T377Result:
             else "fixture_failed"
         ),
         strongest_claim=(
-            "A finite no-time-column u/v record carrier can render two observer coordinate "
-            "histories with different simultaneity slices and the same interval-like invariant; "
-            "however the fixed carrier schema and finite completed-table absorbers still fire."
+            "A finite no-time-column u/v compatibility substrate can render two observer "
+            "coordinate histories with different simultaneity slices and the same interval-like "
+            "invariant; however the fixed carrier schema and finite completed-table absorbers "
+            "still fire."
         ),
         claim_ledger_update=(
-            "Register T377 as a finite rendering calibration, not a claim upgrade. It supports "
-            "the next-test shape but does not defeat fixed-schema or fixed-completed-table absorption."
+            "Register T377 as a relativistic compatibility-substrate calibration, not a temporal "
+            "issuance result and not a claim upgrade. It supports the shared-substrate question "
+            "but does not defeat fixed-schema or fixed-completed-table absorption."
         ),
     )
 

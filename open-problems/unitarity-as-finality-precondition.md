@@ -54,3 +54,28 @@ State a minimal finite model with a "non-conserved ledger" sector and ask whethe
 on it. If finality degenerates exactly when the conserved positive ledger is removed, that is the
 constructive version of the precondition. Keep the result in record/ledger language; reference unitarity only
 as the external analogue.
+
+## Update (2026-06-30): Turok-Bateman Krein-space resolution reframes the precondition
+
+The reading set's capstone (Turok, *A Route to Quantum Gravity (Without Strings)*, Theories of Everything
+podcast, 2026; Turok-Bateman quadratic-gravity papers) sharpens this open problem in a useful and partly
+adversarial way. Turok-Bateman argue that **norm-positivity is NOT required** for sensible probabilities.
+Working in a **Krein space** (pseudo-Hilbert, with positive, null, and negative-norm states), they claim that
+*provided the theory has a discrete "ghost-parity" symmetry* (an operator giving +1 on positive-norm and -1 on
+negative-norm states), probabilities can be defined via **projection operators and a trace over all states
+(including ghosts)** -- a modified Born rule that never normalizes a state -- and the results are positive and
+sum to one. Negative-norm states are unobservable labels; what is observable (transition probabilities) stays
+positive.
+
+Consequence for this open problem: the candidate precondition is probably **not** "a positive ledger." It is
+the weaker, more structural condition: *a discrete symmetry plus a projection/trace construction that makes a
+conserved positive probability well-defined.* That is strikingly parallel to TaF's own machinery -- finality
+as projection/superselection ([T10](../tests/T10-finality-superselection-rule.md),
+[T29](../tests/T29-projection-obstruction-schema.md)). The revised question to attack: **is the precondition
+for record-finality the existence of a ghost-parity-like discrete symmetry and a projection structure, rather
+than positivity of the underlying ledger?** A finite model with negative-"norm" record weights but a
+ghost-parity symmetry should still support well-defined finality; one without the symmetry should not.
+
+Caveat (carry it): Turok's program is explicitly "halfway there" by his own statement -- an external
+provocation, not a result. Projection != finality still holds; the Krein/ghost-parity structure is the
+analogue to interrogate, not evidence.

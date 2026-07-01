@@ -29,3 +29,6 @@ Routine detail stays here; it is not loaded by default.
   shapes are byte-faithful to the shapes in `CONTRIBUTING.md` and assert no claims;
   `templates/README.md` points back at CONTRIBUTING and restates (not overrides) the
   promotion gates. No transcribe-then-retire obligation outstanding.
+## 2026-07-01
+
+- Discovery fleet pass found attention-weighting is the main need: review pending high-gravity audit material and keep complexity/theorem language disciplined. See `steward/runs/2026-07-01-discovery-fleet-pass.md`.

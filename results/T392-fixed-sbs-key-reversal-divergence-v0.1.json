@@ -1,0 +1,137 @@
+{
+  "theta": 1.0471975511965976,
+  "v_star": 0.9,
+  "ordinary_records_equal": true,
+  "ordinary_record_A": {
+    "00": 0.4999999999999999,
+    "10": 0.37499999999999994,
+    "11": 0.12499999999999994
+  },
+  "ordinary_record_B": {
+    "00": 0.4999999999999999,
+    "10": 0.37499999999999994,
+    "11": 0.12499999999999994
+  },
+  "sbs_keys_equal": true,
+  "sbs_key_A": [
+    "computational_z",
+    "sbs_objective",
+    "computational_z",
+    true,
+    4
+  ],
+  "sbs_key_B": [
+    "computational_z",
+    "sbs_objective",
+    "computational_z",
+    true,
+    4
+  ],
+  "d1_finalized_A": true,
+  "d1_finalized_B": true,
+  "reversal_A": {
+    "preparation": "A",
+    "per_outcome": {
+      "0": {
+        "prob": 0.8749999999999998,
+        "vis_before": 0.0,
+        "vis_after": 0.9897433186107869
+      },
+      "1": {
+        "prob": 0.12499999999999994,
+        "vis_before": 0.0,
+        "vis_after": 0.0
+      }
+    },
+    "best_branch_visibility": 0.9897433186107869
+  },
+  "reversal_B": {
+    "preparation": "B",
+    "per_outcome": {
+      "0": {
+        "prob": 0.8749999999999998,
+        "vis_before": 0.0,
+        "vis_after": 0.0
+      },
+      "1": {
+        "prob": 0.12499999999999994,
+        "vis_before": 0.0,
+        "vis_after": 0.0
+      }
+    },
+    "best_branch_visibility": 0.0
+  },
+  "visibility_gap": 0.9897433186107869,
+  "H_A": 4.0,
+  "H_B": "inf",
+  "verdict_A": "recoverable-at-access-K",
+  "verdict_B": "final-relative-to-K",
+  "screening": {
+    "verdict_by_prep": {
+      "A": "recoverable-at-access-K",
+      "B": "final-relative-to-K"
+    },
+    "class_support": {
+      "recoverable-at-access-K": 0.4999999999999999,
+      "final-relative-to-K": 0.4999999999999999
+    },
+    "both_classes_populated": true,
+    "lift_by_loss": {
+      "zero_one": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      },
+      "false_recover_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      },
+      "false_final_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      }
+    },
+    "all_losses_positive_lift": true,
+    "cmi_class1_bits": 0.4999999999999999,
+    "cmi_positive": true,
+    "null_lift_by_loss": {
+      "zero_one": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      },
+      "false_recover_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      },
+      "false_final_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      }
+    },
+    "null_all_zero_lift": true,
+    "null_cmi_bits": 0.0
+  },
+  "bprime": {
+    "statevector_identical": true,
+    "records_equal": true,
+    "sbs_keys_equal": true,
+    "reversal_equal": true,
+    "H_equal": true
+  },
+  "witness_holds": true,
+  "verdict_language": "witness holds in this finite family: at a fixed ordinary event-level record and a fixed SBS closure key over F1..F4, the reversal-cost axis splits the D1-relative-to-access verdict, and an auxiliary channel on extra environment structure (A0) gives positive, non-screened-off decision-risk lift across the tested loss family. Q1C Class 1 is non-empty in this finite model.",
+  "artifact": "T392-fixed-sbs-key-reversal-divergence-v0.1",
+  "tags": [
+    "finite_witness",
+    "q1c_class1_existence_probe",
+    "sbs_key_fixed",
+    "reversal_divergence",
+    "no_claim_promotion",
+    "q1c_remains_dormant"
+  ]
+}

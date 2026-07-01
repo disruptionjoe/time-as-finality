@@ -10,8 +10,9 @@ fits the broader Clifford-RS / chimeric-bundle observerse class information:
       -> open two-leg-to-null bridge
 
 The verdict is deliberately adversarial. The class material does not solve the
-two-leg-to-null bridge, but it does supply a useful next hypothesis: TaF's
-observer rendering may be a forgetful shadow of a richer interface geometry.
+two-leg-to-null bridge, and the newest temporal-issuance explorations warn that
+shadow/projection language is often an absorber: it can name useful interface
+vocabulary without proving that the metaphor is the correct source structure.
 """
 
 from __future__ import annotations
@@ -25,6 +26,14 @@ class ClassSourceFact:
     source_path: str
     statement: str
     relevance_to_taf: str
+
+
+@dataclass(frozen=True)
+class TemporalIssuanceCaution:
+    caution_id: str
+    source_path: str
+    statement: str
+    consequence_for_taf: str
 
 
 @dataclass(frozen=True)
@@ -52,12 +61,15 @@ class T390Result:
     uses_class_not_gu_specific: bool
     class_material_resolves_two_leg_to_null_bridge: bool
     class_material_supplies_testable_bridge_hypothesis: bool
+    temporal_issuance_demotes_shadow_definiteness: bool
+    shadow_projection_definiteness_rejected: bool
     source_action_observer_slice_rejected: bool
     generation_chirality_mapping_rejected: bool
     direct_14d_to_two_leg_identity_rejected: bool
     strongest_fit_ids: tuple[str, ...]
     rejected_overfit_ids: tuple[str, ...]
     source_facts: tuple[ClassSourceFact, ...]
+    temporal_issuance_cautions: tuple[TemporalIssuanceCaution, ...]
     alignment_verdicts: tuple[AlignmentVerdict, ...]
     comparator_verdicts: tuple[ComparatorVerdict, ...]
     overall_verdict: str
@@ -121,7 +133,10 @@ def class_source_facts() -> tuple[ClassSourceFact, ...]:
                 "Class-relative maps emphasize richer substrate data and forgetful shadows; "
                 "the relation-side can survive while the mechanism is forgotten."
             ),
-            "This is the best class-level pattern for TaF's observer rendering from hidden substrate structure.",
+            (
+                "This is a possible pattern for TaF's observer rendering, but it must be "
+                "treated as a cautioned heuristic rather than a favored ontology."
+            ),
         ),
         ClassSourceFact(
             "riemannian_ehresmannian_shadow",
@@ -130,7 +145,10 @@ def class_source_facts() -> tuple[ClassSourceFact, ...]:
                 "The Riemannian-reduction functor forgets Ehresmannian distortion data while "
                 "retaining the smooth effective relation-side."
             ),
-            "This suggests a testable analogy: TaF null rendering may be a shadow of richer interface data.",
+            (
+                "This suggests an analogy to test with absorber controls; it does not make "
+                "shadow projection the correct metaphor by default."
+            ),
         ),
         ClassSourceFact(
             "truth_seeking_posture",
@@ -140,6 +158,59 @@ def class_source_facts() -> tuple[ClassSourceFact, ...]:
                 "structure that survives adversarial checks."
             ),
             "The alignment screen should be adversarial and allowed to reject attractive matches.",
+        ),
+    )
+
+
+def temporal_issuance_cautions() -> tuple[TemporalIssuanceCaution, ...]:
+    return (
+        TemporalIssuanceCaution(
+            "record_table_demoted_to_interface",
+            "temporal-issuance/explorations/E107-record-table-online-issuance-lift-or-demote-2026-07-01.md",
+            (
+                "The record-table route is useful interface vocabulary but is demoted as "
+                "an independent formal object; it does not beat fixed precontainment by itself."
+            ),
+            (
+                "TaF should not treat a good projection/interface map as evidence that the "
+                "shadow metaphor is source-correct."
+            ),
+        ),
+        TemporalIssuanceCaution(
+            "external_completion_absorbs_lc_witness",
+            "temporal-issuance/explorations/E108-online-issuance-witness-machine-check-2026-07-01.md",
+            (
+                "The local-constructive witness is executable, but external Platonist "
+                "completion still absorbs the whole trace outside the local constructive class."
+            ),
+            (
+                "A class-relative success can be real while still failing as physical or "
+                "metaphysical source evidence."
+            ),
+        ),
+        TemporalIssuanceCaution(
+            "projection_access_negative_rejected",
+            "temporal-issuance/explorations/E113-oi-lc-assembly-source-adapter-fixture-2026-07-01.md",
+            (
+                "Projection access, fixed complete assembly space, experimenter-added schema, "
+                "and fixed search processes are all rejected as source evidence."
+            ),
+            (
+                "Any TaF shadow/projection story needs negative controls for fixed-source, "
+                "bounded access, modeler schema, and fixed search or dynamics."
+            ),
+        ),
+        TemporalIssuanceCaution(
+            "candidate_scout_not_evidence",
+            "temporal-issuance/explorations/E112-oi-lc-candidate-scout-w1-w6-table-2026-07-01.md",
+            (
+                "A fixture-candidate verdict means test this next, not evidence; GU-style "
+                "adapter language remains parked under bounded-access and gauge-language pressure."
+            ),
+            (
+                "T390 should route to an absorber screen, not to a confirmation-seeking "
+                "class-shadow derivation."
+            ),
         ),
     )
 
@@ -163,14 +234,15 @@ def alignment_verdicts() -> tuple[AlignmentVerdict, ...]:
             "taf_finality_to_class_forgetful_shadow",
             "observer rendering from finalizable compatibility",
             "class-relative forgetful image where relation-side survives and mechanism is lost",
-            "bridge_hypothesis",
-            "strong",
+            "cautionary_bridge_heuristic",
+            "medium",
             False,
             (
-                "The class map gives a precise pattern for TaF: visible observer relations "
-                "may be the forgetful image of richer interface geometry."
+                "The class map gives a possible pattern for TaF, but temporal-issuance "
+                "E107-E113 warn that projection/access language can be absorbed by fixed "
+                "source, fixed boundary, bounded-access, or modeler-schema explanations."
             ),
-            "Build a class-shadow screen for whether two-leg protocols can forget to null observer relations.",
+            "Build an absorber screen before using shadow projection as a live bridge metaphor.",
         ),
         AlignmentVerdict(
             "taf_handshake_to_source_rulebook",
@@ -189,14 +261,14 @@ def alignment_verdicts() -> tuple[AlignmentVerdict, ...]:
             "taf_two_leg_to_ehresmannian_hidden_mechanism",
             "two-leg-to-null signal bridge",
             "Riemannian shadow forgetting Ehresmannian mechanism data",
-            "bridge_hypothesis",
-            "medium",
+            "cautionary_bridge_heuristic",
+            "weak_to_medium",
             False,
             (
-                "The class material suggests where to look: null observer geometry may be a "
-                "shadow after forgetting richer connection/interface data."
+                "The class material suggests one place to look, but the temporal-issuance "
+                "controls make this only a hypothesis to try to break, not a derivation."
             ),
-            "Compare null, timelike, delayed, and hidden-mechanism two-leg fixtures.",
+            "Compare null, timelike, delayed, hidden-mechanism, fixed-source, and bounded-access fixtures.",
         ),
         AlignmentVerdict(
             "taf_two_null_basis_to_generation_chirality",
@@ -265,13 +337,19 @@ def comparator_verdicts() -> tuple[ComparatorVerdict, ...]:
             "two_leg_to_null_bridge",
             "still_open",
             True,
-            "the class material suggests a bridge hypothesis but does not resolve nullness or bilinearity",
+            "the class material suggests a metaphor to stress-test but does not resolve nullness or bilinearity",
         ),
         ComparatorVerdict(
             "forgetful_shadow_hypothesis",
-            "supported_as_next_test",
-            False,
-            "the strongest fit is the relation-side/shadow pattern from class-relative maps",
+            "demoted_to_cautionary_heuristic",
+            True,
+            "temporal-issuance controls show projection/access stories can be interface vocabulary without source evidence",
+        ),
+        ComparatorVerdict(
+            "temporal_issuance_projection_absorber",
+            "active_caution",
+            True,
+            "E107-E113 require fixed-source, fixed-boundary, bounded-access, schema, and search/dynamics controls",
         ),
         ComparatorVerdict(
             "source_action_shortcut",
@@ -293,7 +371,7 @@ def run_t390_analysis() -> T390Result:
     strongest = tuple(
         verdict.alignment_id
         for verdict in verdicts
-        if verdict.classification in {"natural_fit", "bridge_hypothesis"}
+        if verdict.classification == "natural_fit"
     )
     rejected = tuple(
         verdict.alignment_id
@@ -304,6 +382,8 @@ def run_t390_analysis() -> T390Result:
         uses_class_not_gu_specific=True,
         class_material_resolves_two_leg_to_null_bridge=False,
         class_material_supplies_testable_bridge_hypothesis=True,
+        temporal_issuance_demotes_shadow_definiteness=True,
+        shadow_projection_definiteness_rejected=True,
         source_action_observer_slice_rejected=(
             "taf_handshake_as_source_action_observer_slice" in rejected
         ),
@@ -316,29 +396,31 @@ def run_t390_analysis() -> T390Result:
         strongest_fit_ids=strongest,
         rejected_overfit_ids=rejected,
         source_facts=class_source_facts(),
+        temporal_issuance_cautions=temporal_issuance_cautions(),
         alignment_verdicts=verdicts,
         comparator_verdicts=comparator_verdicts(),
         overall_verdict=(
-            "class_material_supports_forgetful_shadow_hypothesis_not_two_leg_null_derivation"
+            "class_material_suggests_shadow_heuristic_but_temporal_issuance_rejects_definite_projection_metaphor"
         ),
         strongest_claim=(
             "The GU-formalization class material does not solve TaF's two-leg-to-null bridge. "
-            "Its strongest contribution is a class-level pattern: visible observer relations "
-            "can be forgetful shadows of richer interface geometry. That gives a testable "
-            "class-shadow hypothesis for TaF, while direct mappings to source action, 14D "
-            "geometry, or generation/chirality are rejected as overfits."
+            "Its shadow/projection language is useful only as a cautioned heuristic. The "
+            "new temporal-issuance explorations show why that metaphor cannot be treated "
+            "as definitely correct: fixed-source, fixed-boundary, bounded-access, schema, "
+            "and search/dynamics absorbers can reproduce projection-style stories. Direct "
+            "mappings to source action, 14D geometry, or generation/chirality remain rejected "
+            "as overfits."
         ),
         claim_ledger_update=(
             "Register T390 as a class-shape alignment screen: use the class material as a "
-            "hypothesis generator, not a GU vindication; next target is a class-shadow "
-            "two-leg-to-null bridge screen."
+            "hypothesis generator, not a GU vindication or definitive shadow metaphor; "
+            "next target is a projection-metaphor absorber screen."
         ),
         recommended_next_goal=(
-            "T391 class-shadow two-leg-to-null bridge screen: test whether a finalizable "
-            "two-leg TaF interface can forget to null observer geometry under a richer "
-            "class-style mechanism, with controls for timelike legs, delayed/noisy legs, "
-            "gauge relabels, source-action shortcuts, generation/chirality overfit, and "
-            "direct 14D identity overfit."
+            "T391 projection-metaphor absorber screen: test whether the shadow/projection "
+            "reading of TaF's two-leg-to-null bridge survives fixed-source, fixed-boundary, "
+            "bounded-access, modeler-schema, search/dynamics, timelike-leg, delayed/noisy-leg, "
+            "gauge-relabel, source-action, generation/chirality, and direct-14D controls."
         ),
     )
 
@@ -351,6 +433,12 @@ def t390_result_to_dict(result: T390Result) -> dict[str, object]:
         ),
         "class_material_supplies_testable_bridge_hypothesis": (
             result.class_material_supplies_testable_bridge_hypothesis
+        ),
+        "temporal_issuance_demotes_shadow_definiteness": (
+            result.temporal_issuance_demotes_shadow_definiteness
+        ),
+        "shadow_projection_definiteness_rejected": (
+            result.shadow_projection_definiteness_rejected
         ),
         "source_action_observer_slice_rejected": result.source_action_observer_slice_rejected,
         "generation_chirality_mapping_rejected": result.generation_chirality_mapping_rejected,
@@ -365,6 +453,15 @@ def t390_result_to_dict(result: T390Result) -> dict[str, object]:
                 "relevance_to_taf": fact.relevance_to_taf,
             }
             for fact in result.source_facts
+        ],
+        "temporal_issuance_cautions": [
+            {
+                "caution_id": caution.caution_id,
+                "source_path": caution.source_path,
+                "statement": caution.statement,
+                "consequence_for_taf": caution.consequence_for_taf,
+            }
+            for caution in result.temporal_issuance_cautions
         ],
         "alignment_verdicts": [
             {

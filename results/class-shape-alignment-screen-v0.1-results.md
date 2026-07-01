@@ -5,23 +5,39 @@
 The class material from `gu-formalization` does not solve TaF's
 `two_leg_to_null_signal_bridge`.
 
-It does supply a useful next hypothesis:
+It supplies a useful but explicitly cautioned heuristic:
 
 ```text
 TaF's observer-visible null relation may be a forgetful shadow of richer
-interface geometry.
+interface geometry, but that shadow/projection metaphor is not established.
 ```
 
-This is not a GU-specific vindication. It is a class-level fit test.
+This is not a GU-specific vindication, and it is not a projection-metaphor
+vindication. It is a class-level fit test plus a temporal-issuance caution.
 
 ## What Fits
 
 | TaF object | class-level feature | verdict |
 |---|---|---|
 | record-finalizable shared-state compatibility | observer universe plus external boundary/interface conditions | strong natural fit |
-| observer rendering from finalizable compatibility | forgetful-image pattern where relation-side survives and mechanism is lost | strong bridge hypothesis |
+| observer rendering from finalizable compatibility | forgetful-image pattern where relation-side survives and mechanism is lost | cautioned heuristic |
 | minimal bidirectional handshake | missing source-action rulebook | partial only |
-| two-leg-to-null bridge | Riemannian/Ehresmannian shadow pattern | useful hypothesis, not a derivation |
+| two-leg-to-null bridge | Riemannian/Ehresmannian shadow pattern | stress-test only, not a derivation |
+
+## Temporal Issuance Caution
+
+The newest temporal-issuance explorations warn against treating
+shadow/projection language as the definite correct metaphor:
+
+- `E107`: record-table structure is useful interface vocabulary but demoted as
+  an independent formal object; it does not beat fixed precontainment by itself.
+- `E108`: a local-constructive witness can be executable while external
+  completion still absorbs the trace outside that class.
+- `E112`: a fixture-candidate verdict means "test this next," not evidence; GU
+  adapter language remains parked under bounded-access and gauge-language
+  pressure.
+- `E113`: projection access, fixed complete source, modeler-added schema, and
+  fixed search controls are all rejected as source evidence.
 
 ## What Does Not Fit
 
@@ -34,16 +50,16 @@ This is not a GU-specific vindication. It is a class-level fit test.
 ## Strongest Claim
 
 The class material does not derive TaF's nullness, bilinearity, or invariant
-signal unit. Its strongest contribution is a class-level pattern:
+signal unit. Its strongest contribution is weaker than the previous phrasing:
 
 ```text
-visible observer relations can be forgetful shadows of richer interface
-geometry.
+visible observer relations might be modeled with shadow/projection language,
+but temporal-issuance absorber controls show why that metaphor cannot be
+treated as definitely correct.
 ```
 
-That gives TaF a sharper next experiment: test whether finalizable two-leg
-interfaces can forget to null observer geometry under class-style hidden
-mechanism data.
+That gives TaF a sharper next experiment: try to break the shadow/projection
+reading before using it as the next bridge metaphor.
 
 ## Source Facts Used
 
@@ -57,11 +73,11 @@ mechanism data.
 ## Next Goal
 
 ```text
-T391 class-shadow two-leg-to-null bridge screen: test whether a finalizable
-two-leg TaF interface can forget to null observer geometry under a richer
-class-style mechanism, with controls for timelike legs, delayed/noisy legs,
-gauge relabels, source-action shortcuts, generation/chirality overfit, and
-direct 14D identity overfit.
+T391 projection-metaphor absorber screen: test whether the shadow/projection
+reading of TaF's two-leg-to-null bridge survives fixed-source, fixed-boundary,
+bounded-access, modeler-schema, search/dynamics, timelike-leg,
+delayed/noisy-leg, gauge-relabel, source-action, generation/chirality, and
+direct-14D controls.
 ```
 
 ## Claim Ledger Update
@@ -69,5 +85,5 @@ direct 14D identity overfit.
 Register T390 as:
 
 ```text
-class_material_supports_forgetful_shadow_hypothesis_not_two_leg_null_derivation
+class_material_suggests_shadow_heuristic_but_temporal_issuance_rejects_definite_projection_metaphor
 ```

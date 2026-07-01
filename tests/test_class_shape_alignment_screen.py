@@ -14,6 +14,10 @@ class ClassShapeAlignmentScreenTests(unittest.TestCase):
             verdict.alignment_id: verdict for verdict in self.result.alignment_verdicts
         }
         self.facts = {fact.fact_id: fact for fact in self.result.source_facts}
+        self.cautions = {
+            caution.caution_id: caution
+            for caution in self.result.temporal_issuance_cautions
+        }
 
     def test_uses_class_material_not_gu_vindication(self) -> None:
         self.assertTrue(self.result.uses_class_not_gu_specific)
@@ -40,21 +44,45 @@ class ClassShapeAlignmentScreenTests(unittest.TestCase):
         self.assertIn("forced analogy", self.facts["source_action_observer_slice_killed"].statement)
         self.assertIn("forgetful shadows", self.facts["forgetful_image_relation_side"].statement)
 
-    def test_strongest_fit_is_forgetful_shadow_not_direct_null_derivation(self) -> None:
-        self.assertFalse(self.result.class_material_resolves_two_leg_to_null_bridge)
-        self.assertTrue(self.result.class_material_supplies_testable_bridge_hypothesis)
+    def test_temporal_issuance_cautions_demote_shadow_definiteness(self) -> None:
+        expected = {
+            "record_table_demoted_to_interface",
+            "external_completion_absorbs_lc_witness",
+            "projection_access_negative_rejected",
+            "candidate_scout_not_evidence",
+        }
+        self.assertEqual(set(self.cautions), expected)
+        self.assertTrue(self.result.temporal_issuance_demotes_shadow_definiteness)
+        self.assertTrue(self.result.shadow_projection_definiteness_rejected)
         self.assertIn(
-            "taf_finality_to_class_forgetful_shadow",
-            self.result.strongest_fit_ids,
+            "interface vocabulary",
+            self.cautions["record_table_demoted_to_interface"].statement,
         )
         self.assertIn(
-            "taf_two_leg_to_ehresmannian_hidden_mechanism",
-            self.result.strongest_fit_ids,
+            "fixed-source",
+            self.cautions["projection_access_negative_rejected"].consequence_for_taf,
+        )
+
+    def test_shadow_projection_is_cautionary_heuristic_not_direct_null_derivation(self) -> None:
+        self.assertFalse(self.result.class_material_resolves_two_leg_to_null_bridge)
+        self.assertTrue(self.result.class_material_supplies_testable_bridge_hypothesis)
+        self.assertNotIn("taf_finality_to_class_forgetful_shadow", self.result.strongest_fit_ids)
+        self.assertEqual(
+            self.verdicts["taf_finality_to_class_forgetful_shadow"].classification,
+            "cautionary_bridge_heuristic",
+        )
+        self.assertIn(
+            "absorbed by fixed",
+            self.verdicts["taf_finality_to_class_forgetful_shadow"].reason,
         )
         self.assertFalse(
             self.verdicts[
                 "taf_two_leg_to_ehresmannian_hidden_mechanism"
             ].resolves_two_leg_to_null_bridge
+        )
+        self.assertIn(
+            "controls",
+            self.verdicts["taf_two_leg_to_ehresmannian_hidden_mechanism"].reason,
         )
 
     def test_source_action_observer_slice_mapping_is_rejected(self) -> None:
@@ -83,21 +111,34 @@ class ClassShapeAlignmentScreenTests(unittest.TestCase):
             verdict.comparator_id: verdict for verdict in self.result.comparator_verdicts
         }
         self.assertTrue(comparators["two_leg_to_null_bridge"].absorbs)
+        self.assertTrue(comparators["forgetful_shadow_hypothesis"].absorbs)
+        self.assertEqual(
+            comparators["forgetful_shadow_hypothesis"].status,
+            "demoted_to_cautionary_heuristic",
+        )
+        self.assertEqual(
+            comparators["temporal_issuance_projection_absorber"].status,
+            "active_caution",
+        )
 
     def test_overall_verdict_and_claim_ledger_are_honest(self) -> None:
         self.assertEqual(
             self.result.overall_verdict,
-            "class_material_supports_forgetful_shadow_hypothesis_not_two_leg_null_derivation",
+            "class_material_suggests_shadow_heuristic_but_temporal_issuance_rejects_definite_projection_metaphor",
         )
         self.assertIn("does not solve", self.result.strongest_claim)
+        self.assertIn("cannot be treated as definitely correct", self.result.strongest_claim)
         self.assertIn("overfits", self.result.strongest_claim)
         self.assertIn("hypothesis generator", self.result.claim_ledger_update)
+        self.assertIn("definitive shadow metaphor", self.result.claim_ledger_update)
 
-    def test_recommended_next_goal_is_class_shadow_bridge_screen(self) -> None:
+    def test_recommended_next_goal_is_projection_metaphor_absorber_screen(self) -> None:
         self.assertIn("T391", self.result.recommended_next_goal)
-        self.assertIn("class-shadow two-leg-to-null bridge", self.result.recommended_next_goal)
-        self.assertIn("source-action shortcuts", self.result.recommended_next_goal)
-        self.assertIn("generation/chirality overfit", self.result.recommended_next_goal)
+        self.assertIn("projection-metaphor absorber screen", self.result.recommended_next_goal)
+        self.assertIn("fixed-source", self.result.recommended_next_goal)
+        self.assertIn("bounded-access", self.result.recommended_next_goal)
+        self.assertIn("source-action", self.result.recommended_next_goal)
+        self.assertIn("generation/chirality", self.result.recommended_next_goal)
 
 
 if __name__ == "__main__":

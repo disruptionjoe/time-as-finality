@@ -18,6 +18,14 @@ Use the GU-formalization repo as read-only class-level source material:
 - `docs/WHERE-GU-STANDS-AND-THE-MISSING-OBJECT-2026-06-27.md`,
 - `canon/no-go-class-relative-map.md`.
 
+Also use the newest temporal-issuance explorations as read-only caution
+material:
+
+- `E107-record-table-online-issuance-lift-or-demote-2026-07-01.md`,
+- `E108-online-issuance-witness-machine-check-2026-07-01.md`,
+- `E112-oi-lc-candidate-scout-w1-w6-table-2026-07-01.md`,
+- `E113-oi-lc-assembly-source-adapter-fixture-2026-07-01.md`.
+
 Compare TaF objects against class-level features:
 
 - observer universe / external boundary data,
@@ -32,6 +40,8 @@ Compare TaF objects against class-level features:
 - Identify natural fits.
 - Reject overfit mappings.
 - Preserve the two-leg-to-null bridge as open unless actually derived.
+- Demote shadow/projection language to a cautioned heuristic unless it survives
+  temporal-issuance-style fixed-source and access absorbers.
 - Produce a concrete next screen.
 
 ## Failure Criteria
@@ -41,6 +51,8 @@ Compare TaF objects against class-level features:
 - Revive the killed "source action = observer slice" analogy.
 - Identify 14D class geometry directly with TaF's two protocol legs.
 - Claim nullness or bilinearity from class material without a bridge.
+- Treat forgetful-shadow projection as the definite correct metaphor merely
+  because it is a good interface fit.
 
 ## Known Constraints
 
@@ -51,4 +63,5 @@ TaF.
 ## Contribution Needed
 
 If the class material supplies a good hypothesis but not a derivation, the next
-goal should test that hypothesis directly.
+goal should first try to break that hypothesis with projection/access/source
+absorber controls.

@@ -1,5 +1,5 @@
 {
-  "artifact": "T397-region-capability-no-go",
+  "artifact": "T407-region-capability-no-go",
   "version": "v0.1",
   "conventions": {
     "subsystem_order": "(c, r1, r2, e1, e2, t) index-sorted, dims (3,2,2,2,2,2)",

@@ -3,7 +3,7 @@
 ## Target Claims
 
 - [Region-Indexed Capability Discriminator](../open-problems/region-indexed-capability-discriminator.md)
-- T397 region-indexed capability no-go
+- T407 region-indexed capability no-go
 - T398 resource-profile absorber
 
 ## Setup

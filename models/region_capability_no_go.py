@@ -1,4 +1,4 @@
-"""T397: Region-Indexed Capability No-Go (first executable C(R) instance).
+"""T407: Region-Indexed Capability No-Go (first executable C(R) instance).
 
 Lineage: the bounded-region capability assignment named in the meta-synthesis
 (audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md, Section 4;
@@ -1432,7 +1432,7 @@ def run_analysis() -> dict:
     leg2 = leg2_analysis(profiles)
     leg3 = leg3_analysis(profiles)
     return {
-        "artifact": "T397-region-capability-no-go",
+        "artifact": "T407-region-capability-no-go",
         "version": "v0.1",
         "conventions": {
             "subsystem_order": "(c, r1, r2, e1, e2, t) index-sorted, dims (3,2,2,2,2,2)",
@@ -1477,7 +1477,7 @@ if __name__ == "__main__":
     print(json.dumps(res, indent=2, default=float))
     print()
     print("=" * 72)
-    print("SUMMARY -- T397 Region-Indexed Capability No-Go")
+    print("SUMMARY -- T407 Region-Indexed Capability No-Go")
     print("=" * 72)
     l1, cert, l2, l3 = (
         res["leg1"],

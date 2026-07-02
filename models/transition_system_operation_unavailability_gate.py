@@ -611,7 +611,7 @@ def run_transition_system_operation_unavailability_gate() -> dict[str, Any]:
         "recommended_next": [
             "Do not treat operation-unavailability language as progress unless the transition-system completion is already matched.",
             "A future positive route needs a domain-native law or measured substrate dynamics that forces the transition relation rather than restating it.",
-            "Keep the T404/basis-free lane separate until Joe resolves the number collision and promotion posture.",
+            "Keep the T408/basis-free lane separate until Joe resolves the promotion posture (number collision resolved 2026-07-01, authorized by Joe: basis-free renumbered T404 to T408).",
         ],
         "falsification_condition": FALSIFICATION_CONDITION,
     }

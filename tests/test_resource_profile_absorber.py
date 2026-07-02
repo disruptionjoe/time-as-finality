@@ -1,4 +1,4 @@
-"""Tests for T398: Resource-Profile Absorber for the T397 C(R) object."""
+"""Tests for T398: Resource-Profile Absorber for the T407 C(R) object."""
 
 import json
 
@@ -19,7 +19,7 @@ def res():
 
 def test_artifact_identity_and_source(res):
     assert res["artifact"] == ARTIFACT
-    assert res["source_artifact"] == "T397-region-capability-no-go"
+    assert res["source_artifact"] == "T407-region-capability-no-go"
     assert res["claim_ledger_update"] == "none; no claim promotion"
 
 

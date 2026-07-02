@@ -10,7 +10,7 @@
 
 ## Verdict
 
-The T397 `C(R)` profile object is absorbed at the finite
+The T407 `C(R)` profile object is absorbed at the finite
 resource-preorder level.
 
 Once `C(R)` profiles are admitted as resource states under the declared
@@ -20,11 +20,11 @@ exactly the product of two resource coordinates:
 - undo capability: 3 levels;
 - readout capability: 4 levels.
 
-The quotient has 12 resource objects, relation size 48 under T397's strict
+The quotient has 12 resource objects, relation size 48 under T407's strict
 comparability convention, preorder size 60 including reflexives, and 18
 incomparable pairs. Two axes jointly classify every object.
 
-So Leg 2 of T397 remains a valid finite audit result, but not a
+So Leg 2 of T407 remains a valid finite audit result, but not a
 resource-theory novelty route. It is ordinary non-total resource
 convertibility once the resource profile is granted.
 
@@ -35,16 +35,16 @@ convertibility once the resource profile is granted.
 | Anti-scalar theorem shape | Absorbed. Product resource preorders naturally have incomparable elements and no faithful scalar total preorder. |
 | Statistics-flat class | Absorbed as incomplete observer shadow. Declared Z-readout statistics omit the admitted resource profile. |
 | Region indexing | Absorbed as context parameter in this finite run. The declared region, menu, and task family are the resource-theory context. |
-| Physical realization | Translation residue. T397 remains useful as a region-indexed statistics/capability audit example. |
+| Physical realization | Translation residue. T407 remains useful as a region-indexed statistics/capability audit example. |
 
 ## Exact Checks
 
-- Resource quotient: 12 objects from all 24 T397 configurations.
+- Resource quotient: 12 objects from all 24 T407 configurations.
 - Preorder: 48 strict comparable pairs, 18 incomparable pairs.
 - Axes: 3 undo levels x 4 readout levels, jointly complete.
-- Scalar gate: T397's 4,683 weak-order scan still has 0 reproducing scalars,
+- Scalar gate: T407's 4,683 weak-order scan still has 0 reproducing scalars,
   but T398 classifies that as absorbed resource-preorder behavior.
-- Factorization: no same-resource-profile configurations split on any T397
+- Factorization: no same-resource-profile configurations split on any T407
   capability verdict.
 - Statistics-flat class: size 16, statistics constant, all 12 resource
   objects realized.
@@ -52,7 +52,7 @@ convertibility once the resource profile is granted.
 
 ## What Survives
 
-T397 survives as a disciplined translation artifact:
+T407 survives as a disciplined translation artifact:
 
 ```text
 declared statistics can be an incomplete observer shadow of admitted

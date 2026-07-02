@@ -109,9 +109,9 @@ enlarging access.
 
 ## 2026-07-02 T398 Resource-Profile Absorber
 
-T398 runs the resource-theory absorber named by T397 for the bounded-region
+T398 runs the resource-theory absorber named by T407 for the bounded-region
 capability profile object `C(R)`. Finite verdict: once profiles are admitted
-as resource states under the declared region/menu/task context, the T397
+as resource states under the declared region/menu/task context, the T407
 profile quotient is exactly a 3 x 4 product resource preorder. The anti-scalar
 shape and statistics-flat class are absorbed as resource-preorder behavior
 and incomplete observer shadow, respectively.

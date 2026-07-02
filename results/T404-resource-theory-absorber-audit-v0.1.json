@@ -1,0 +1,412 @@
+{
+  "artifact": "T404-resource-theory-absorber-audit",
+  "claim_ledger_update": "none; no claim promotion",
+  "demotion_clause": "Predeclared demotion: should the flagged dynamical/channel resource-theory literature verify as owning causality-indexed free-class families with forced monotone capability loss, AND the comparison-of-experiments literature verify as owning fixed-readout capability underdetermination, then T407 is to be re-scoped as resource theory with extra bookkeeping, and no promotion may cite this audit as support; the audit gates the program either way.",
+  "falsification_conditions": [
+    "residue (a) falls if verified dynamical/channel resource-theory literature exhibits causality-indexed free-operation families with forced monotone capability loss of this shape",
+    "residue (b) falls if verified comparison-of-experiments literature covers menu-relative capability profiles at a fixed declared readout",
+    "the audit itself fails if any executable check flips: an escape chain increases a capability component, the boundary-crossing inverse fails to restore visibility 1, a menu protocol moves the outside marginal, the fingerprint factorization is violated, or the statistics-flat class stops spanning the resource objects"
+  ],
+  "from_memory_flags": [
+    "Nielsen majorization theorem / LOCC-incomparable bipartite pure states (~1999) -- Leg A analog",
+    "Chitambar-Gour resource-theory review (free operations, monotones, no total order on resources) -- frame vocabulary",
+    "dynamical resource theories / resource theories of channels and processes (superchannels as free operations); resource theories of causal connection -- candidate absorber of residue (a)",
+    "Blackwell comparison of statistical experiments; quantum sufficiency and deficiency orderings -- candidate absorber of residue (b)"
+  ],
+  "leg_a_anti_scalar": {
+    "grid_normal_form": {
+      "is_exact_product_order": true,
+      "n_readout_levels": 4,
+      "n_undo_levels": 3,
+      "reading": "the realized poset is the monotone-vector normal form (product of two chains) -- standard resource-vector structure, nothing frame-exotic"
+    },
+    "scalar_impossible_shape": true,
+    "shape_identical": true,
+    "standard_analog": {
+      "attribution": "Nielsen majorization / Vidal-style tails, FROM MEMORY, unverified",
+      "certificate_shape": [
+        -1,
+        1
+      ],
+      "majorization_incomparable": true,
+      "p_majorizes_q": false,
+      "q_majorizes_p": false,
+      "schmidt_p": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "schmidt_q": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "tail_monotone_E1_p_q": [
+        0.5,
+        0.6000000000000001
+      ],
+      "tail_monotone_E2_p_q": [
+        0.25,
+        0.2
+      ]
+    },
+    "t397_featured_pair": {
+      "certificate_shape": [
+        -1,
+        1
+      ],
+      "pair": [
+        "pristine",
+        "publisher"
+      ],
+      "readout_axis_ranks": [
+        0,
+        3
+      ],
+      "undo_axis_ranks": [
+        2,
+        0
+      ]
+    },
+    "verdict": "absorbed_as_theorem_shape: incomparable resources under a fixed free-operation class are standard resource theory; the majorization/LOCC-style analog is constructed explicitly and its incomparability certificate has the same shape as T407's featured-pair certificate (two monotones ordering one pair oppositely, hence no scalar); T407 Leg 2 contributes a finite physical instance, not new order mathematics (attribution from memory, unverified)"
+  },
+  "leg_b1_profile_factorization": {
+    "merged_classes": [
+      [
+        [
+          "none|none|burn",
+          "none|none|none"
+        ]
+      ],
+      [
+        [
+          "none|fine_phase|burn",
+          "none|fine_phase|none"
+        ]
+      ],
+      [
+        [
+          "class_phase|none|burn",
+          "class_phase|none|none"
+        ]
+      ],
+      [
+        [
+          "class_phase|fine_phase|burn",
+          "class_phase|fine_phase|none"
+        ]
+      ],
+      [
+        [
+          "class_zbasis|none|burn",
+          "class_zbasis|none|none"
+        ]
+      ],
+      [
+        [
+          "class_zbasis|fine_phase|burn",
+          "class_zbasis|fine_phase|none"
+        ]
+      ]
+    ],
+    "merged_classes_are_exactly_burn_none_pairs": true,
+    "n_configs": 24,
+    "n_family_fingerprint_classes": 18,
+    "n_merged_classes": 6,
+    "n_single_state_classes": 18,
+    "partitions_equal": true,
+    "profile_factorization_violations": [],
+    "profile_factors_through_state": true,
+    "single_state_suffices_in_family": true,
+    "statistics_factor_max_violation": 0.0,
+    "statistics_factor_through_state": true,
+    "verdict": "factors_through_region_state: every T407 capability verdict is a function of the region conditional state data at the fixed free class CPTP(R) -- zero violations across all 24 configurations, with the six fingerprint-merged pairs exactly the burn/none pairs; in this family the single unphased rho_R already suffices; the profile-from-state map is absorbed content, not residue"
+  },
+  "leg_b2_causal_indexing": {
+    "boundary_certificates": {
+      "burn_creates_no_ce_correlation": true,
+      "correlating_escape_writes_exceed_floors": true,
+      "escape_write_ce_correlation": {
+        "burn": 5.551115123125783e-17,
+        "class": 0.2222222222222222,
+        "full": 0.2222222222222222,
+        "none": 5.551115123125783e-17
+      },
+      "escape_write_outside_move": {
+        "burn": 0.9999999999999996,
+        "class": 0.3333333333333332,
+        "full": 0.6666666666666663
+      },
+      "free_ops_leave_outside_invariant": true,
+      "menu_max_outside_marginal_move": 4.440892098500626e-16,
+      "reading": "the capability-degrading operations are certified NON-FREE for CPTP(R) (they move the outside marginal, which no R-supported map can) and NON-FREE for CPTP(R) (x) CPTP(E) (they create R-E correlation from a product start, which no product map can); burn is non-free too (it moves the outside marginal) but creates no correlation and no capability change -- the loss tracks the correlating writes exactly"
+    },
+    "candidate_absorber_flag": "dynamical resource theories / resource theories of channels and processes (superchannels as free operations); resource theories of causal connection -- candidate absorber of residue (a)",
+    "escape_chains": {
+      "all_chains_monotone": true,
+      "burn_null_inert": true,
+      "burn_null_max_profile_diff": 0.0,
+      "chains": [
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              0.333333333,
+              0.666666667
+            ],
+            [
+              1.0,
+              0.0,
+              0.333333333,
+              0.666666667
+            ],
+            [
+              0.0,
+              0.0,
+              0.333333333,
+              0.666666667
+            ]
+          ],
+          "record_writes": [
+            "none",
+            "none"
+          ]
+        },
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              0.666666667,
+              0.666666667
+            ],
+            [
+              1.0,
+              0.0,
+              0.666666667,
+              0.666666667
+            ],
+            [
+              0.0,
+              0.0,
+              0.666666667,
+              0.666666667
+            ]
+          ],
+          "record_writes": [
+            "none",
+            "fine_phase"
+          ]
+        },
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              0.666666667,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.666666667,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.666666667,
+              1.0
+            ]
+          ],
+          "record_writes": [
+            "class_phase",
+            "none"
+          ]
+        },
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "record_writes": [
+            "class_phase",
+            "fine_phase"
+          ]
+        },
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              0.666666667,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.666666667,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.666666667,
+              1.0
+            ]
+          ],
+          "record_writes": [
+            "class_zbasis",
+            "none"
+          ]
+        },
+        {
+          "componentwise_monotone_nonincreasing": true,
+          "has_strict_drop": true,
+          "profiles_along_chain": [
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "record_writes": [
+            "class_zbasis",
+            "fine_phase"
+          ]
+        }
+      ],
+      "n_chains": 6,
+      "n_chains_with_strict_drop": 6
+    },
+    "frame_enumeration": {
+      "boundary_crossing_inverse_outside_move": 0.9999999999999998,
+      "f_r_worst_channel_bound": 3.4557317547863794e-16,
+      "f_r_worst_phi_independence": 2.0816681711721685e-17,
+      "frames": {
+        "CPTP(R)": {
+          "loss_expressible_as_free_conversion": false,
+          "no_go_sound": true,
+          "why": "escape writes are certified non-free (boundary certificates); within this frame the loss is an exogenous state jump, not a conversion -- the frame preserves the verdicts but cannot say why the free class was ever capable, nor that the loss was forced"
+        },
+        "CPTP(R) (x) CPTP(E)": {
+          "loss_expressible_as_free_conversion": false,
+          "no_go_sound": true,
+          "why": "escape writes create R-E correlation from a product start, which no product map can -- same silence as CPTP(R)"
+        },
+        "CPTP(R+E)": {
+          "loss_expressible_as_free_conversion": true,
+          "min_restored_visibility_over_24x2": 0.9999999999999991,
+          "no_go_sound": false,
+          "restores_all_undo_to_one": true,
+          "why": "the preparation inverse is free here and restores every undo value to 1.0, so the realized undo distinctions (3 levels) vanish -- the frame internalizes the loss at the price of the no-go itself"
+        }
+      },
+      "min_restored_visibility_over_24x2": 0.9999999999999991,
+      "no_fixed_frame_carries_all_three_legs": true,
+      "t393_citation": "the time-indexing itself (recovery window closes exactly at the escape step; counterfactual boundary enlargement restores recovery exactly) is T393's Tier-1 result, cited not re-derived; the executable stand-ins here are the escape-chain monotone loss and the boundary-crossing restoration"
+    },
+    "residue_located": true,
+    "verdict": "residue_located_static_frame: no fixed free-operation class in the declared candidate set {CPTP(R), CPTP(R+E), CPTP(R) (x) CPTP(E)} both preserves T407's realized capability distinctions and internalizes the escape-driven monotone loss -- CPTP(R) is sound for the no-go but the loss is enacted only by certified non-free boundary-crossing operations, CPTP(R+E) internalizes the loss but one free protocol restores every undo value to 1.0 so the distinctions vanish, and the product class behaves like CPTP(R) -- so the object is a causality-indexed FAMILY of resource theories with forced monotone capability loss (T393's window pattern), not one resource theory; dynamical/channel resource theories are the flagged from-memory candidate absorber of even this indexed-family shape (unverified); if they verify, this residue demotes to translation"
+  },
+  "leg_b3_declared_record": {
+    "candidate_absorber_flag": "Blackwell comparison of statistical experiments; quantum sufficiency and deficiency orderings -- candidate absorber of residue (b)",
+    "experiment_map_is_state_functional": {
+      "is_functional": true,
+      "max_diff_readout_vs_rho_r_diagonal": 5.551115123125783e-17,
+      "reading": "the declared readout is an experiment (a fixed POVM) on the frame's own states -- extra Blackwell-type structure the frame does not supply, not something outside physics"
+    },
+    "flat_class_size": 16,
+    "flat_class_spans_all_resource_objects": true,
+    "n_resource_objects_realized_in_flat_class": 12,
+    "profile_does_not_factor_through_record": {
+      "capability_gaps_both_directions": [
+        0.9999999999999998,
+        0.6666666666666667
+      ],
+      "featured_pair": [
+        "pristine",
+        "publisher"
+      ],
+      "stats_max_diff": 0.0
+    },
+    "readout_axis_span_in_flat_class": [
+      4,
+      4
+    ],
+    "record_does_not_factor_through_resource_object": {
+      "converse_pair": [
+        "class_keeper",
+        "z_keeper"
+      ],
+      "profile_max_diff": 4.440892098500626e-16,
+      "stats_max_diff": 0.08333333333333333
+    },
+    "residue_located": true,
+    "statistics_partition_sizes": [
+      16,
+      8
+    ],
+    "two_way_non_reduction": true,
+    "undo_axis_span_in_flat_class": [
+      3,
+      3
+    ],
+    "verdict": "residue_located_frame_interface: the declared-record layer is two-way non-reducing against the frame's resource objects -- the statistics-flat 16-class realizes all 12 objects across the full span of both monotone axes, and a capability-identical pair splits the statistics -- so 'identical declared records, different resources' is not a statement in the fixed-frame vocabulary; it requires the declared readout as an extra experiment-map primitive (verified to be a functional of the frame's own states), which is Blackwell-type comparison-of-experiments structure, flagged from memory as the candidate absorber of that layer (unverified); if it verifies, this residue also demotes to translation"
+  },
+  "relation_to_t398": "T398 admitted the C(R) profiles as resource states and absorbed the profile poset (product resource preorder; translation residue). This audit tests the frame one level down and confirms T398's absorption of the order content, while refining its 'region indexing absorbed as context parameter' line: as a static context parameter the region is absorbed, but no fixed choice of free class carries all three T407 legs at once -- the context parameter is causality-indexed, and that indexing, plus the declared-record layer, is where the residue sits.",
+  "rt_frame": {
+    "free_operations": "all CPTP maps supported on R = (c, r1, r2, t), fixed once; alternative fixed classes CPTP(R+E) and CPTP(R) (x) CPTP(E) are enumerated as candidate frames, not mixed in",
+    "preorder_and_monotones": "reachability under the fixed free class; monotone vector = the two T407 axes (undo level, readout level), certified against the whole class by T407's imported all-channel certificates",
+    "states": "region conditional state data per configuration: the single unphased rho_R and the phi-indexed family {rho_R(phi)} over the imported T393 certificate sweep (both carried; their induced partitions are compared)"
+  },
+  "source_artifact": "T407-region-capability-no-go",
+  "verdicts": {
+    "leg_a": "absorbed_as_theorem_shape: incomparable resources under a fixed free-operation class are standard resource theory; the majorization/LOCC-style analog is constructed explicitly and its incomparability certificate has the same shape as T407's featured-pair certificate (two monotones ordering one pair oppositely, hence no scalar); T407 Leg 2 contributes a finite physical instance, not new order mathematics (attribution from memory, unverified)",
+    "leg_b_causal_indexing": "residue_located_static_frame: no fixed free-operation class in the declared candidate set {CPTP(R), CPTP(R+E), CPTP(R) (x) CPTP(E)} both preserves T407's realized capability distinctions and internalizes the escape-driven monotone loss -- CPTP(R) is sound for the no-go but the loss is enacted only by certified non-free boundary-crossing operations, CPTP(R+E) internalizes the loss but one free protocol restores every undo value to 1.0 so the distinctions vanish, and the product class behaves like CPTP(R) -- so the object is a causality-indexed FAMILY of resource theories with forced monotone capability loss (T393's window pattern), not one resource theory; dynamical/channel resource theories are the flagged from-memory candidate absorber of even this indexed-family shape (unverified); if they verify, this residue demotes to translation",
+    "leg_b_declared_record": "residue_located_frame_interface: the declared-record layer is two-way non-reducing against the frame's resource objects -- the statistics-flat 16-class realizes all 12 objects across the full span of both monotone axes, and a capability-identical pair splits the statistics -- so 'identical declared records, different resources' is not a statement in the fixed-frame vocabulary; it requires the declared readout as an extra experiment-map primitive (verified to be a functional of the frame's own states), which is Blackwell-type comparison-of-experiments structure, flagged from memory as the candidate absorber of that layer (unverified); if it verifies, this residue also demotes to translation",
+    "leg_b_profile_map": "factors_through_region_state: every T407 capability verdict is a function of the region conditional state data at the fixed free class CPTP(R) -- zero violations across all 24 configurations, with the six fingerprint-merged pairs exactly the burn/none pairs; in this family the single unphased rho_R already suffices; the profile-from-state map is absorbed content, not residue",
+    "overall": "partially_absorbed_residue_located: all order-theoretic content of T407 (Leg 2, and the profile-from-state map behind Legs 1 and 3) is absorbed by a fairly-strong static resource-theory frame, confirming and extending T398; two residues survive the static frame, both at its interface -- the causal indexing of the free-operation class (residue a) and the declared-record epistemics (residue b) -- and each carries a named from-memory candidate absorber; if both verify, T407 demotes to resource theory with extra bookkeeping"
+  },
+  "version": "v0.1"
+}

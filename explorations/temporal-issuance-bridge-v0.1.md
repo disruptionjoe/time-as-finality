@@ -223,3 +223,36 @@ non-null artifact should specify `Y_TI`, `<`, `mu`, `dR`, `kappa_i`, `A_i`, and
 `G` with an absorber status for each field. If that specification maps every
 field to causal order, thermodynamics, information theory, instrumentation, or
 TaF gluing, close the bridge as translation residue.
+
+## 2026-07-02 Fixture Availability Addendum (exploratory)
+
+Status: exploration note only. No claim import in either direction; the two
+ledgers stay separate; TI's one-way rule (cross-repo material is stress-test
+input, never mutual support) is respected. Recorded during the 2026-07-01
+stewardship pass under Joe's direct authorization.
+
+TI's `FORMAL-DEFINITION-REPAIR.md` names, as Next Test Candidate 2, the open
+burden: test whether any source extension rule changes observer capabilities
+in a way time-as-finality readout cannot already express. TaF now holds
+executable capability-discriminator fixtures with exactly that shape, built
+along the capability line distilled from the tri-repo synthesis
+(`audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`):
+
+- **T392** (fixed-SBS-key reversal divergence): same accessible data,
+  different reversal capability, finite witness.
+- **T395** (record-order trade-off probe): record read vs ignored moves zero
+  declared process statistics while the capability boundary moves.
+- **T407** (region-indexed capability no-go; renumbered from T397 on the
+  2026-07-01 collision resolution): a statistics-flat class realizing all 12
+  capability profiles, with no scalar capability monotone.
+- **T404** (resource-theory absorber audit): verdict
+  `partially_absorbed_residue_located` — the surviving residue sits at the
+  causal-indexing frame and the declared-record interface.
+- **T408** (basis-free capability boundary; renumbered from T404 on the same
+  resolution): operator-level flat pair with a causally sourced,
+  all-channel-certified capability gap.
+
+These are offered only as CANDIDATE discriminator fixtures for TI's burden.
+Whether any of them instantiates a genuine `Ext_S` surplus is TI's question,
+adjudicated in TI's own ledger; TaF explicitly did not earn a TI-facing
+`Ext_S` surplus (out of scope by construction in T407/T408).

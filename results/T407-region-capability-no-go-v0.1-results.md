@@ -1,19 +1,21 @@
-# T397 Region-Indexed Capability No-Go — Results v0.1
+# T407 Region-Indexed Capability No-Go — Results v0.1
 
-- **Artifact:** `T397-region-capability-no-go-v0.1`
-- **Spec:** [tests/T397-region-capability-no-go.md](../tests/T397-region-capability-no-go.md)
+- **Artifact:** `T407-region-capability-no-go-v0.1`
+- **Spec:** [tests/T407-region-capability-no-go.md](../tests/T407-region-capability-no-go.md)
 - **Model:** [models/region_capability_no_go.py](../models/region_capability_no_go.py)
 - **Test:** [tests/test_region_capability_no_go.py](../tests/test_region_capability_no_go.py)
-- **Numbers:** [T397-region-capability-no-go-v0.1.json](T397-region-capability-no-go-v0.1.json)
+- **Numbers:** [T407-region-capability-no-go-v0.1.json](T407-region-capability-no-go-v0.1.json)
 - **Tags:** direction_a, capability_object, region_indexed_no_go,
   first_c_of_r_instance, anti_scalar_capability, statistics_underdetermination,
   exhaustive_finite_family, no_claim_promotion, prior_art_flagged_from_memory
 
-**Numbering collision, flagged for Joe:** a second, distinct quartet also
-numbered T397 (`multipath-class-marker-absorber`, another lane) landed
-mid-session before this spec registered. Distinct slugs, both intact;
-renumbering pauses for Joe (see the spec's Status section — the two
-artifacts compose rather than compete).
+**Numbering collision — resolved 2026-07-01, authorized by Joe:** a
+second, distinct quartet also numbered T397
+(`multipath-class-marker-absorber`, another lane) landed mid-session before
+this spec registered. Distinct slugs, both intact; the multipath quartet
+registered first and keeps T397; this artifact is renumbered T397 → T407
+(see the spec's Status section — the two artifacts compose rather than
+compete).
 
 ## Verdict (house vocabulary; all three legs passed as stated)
 
@@ -276,7 +278,7 @@ tests/test_region_capability_no_go.py::test_result_dict_is_json_serializable PAS
 ```
 
 The T392 (18), T393 (29), T394 (29), and T395 (35) suites were re-run
-alongside and remain green (111 passed in 15.2 s). T397 imports from all
+alongside and remain green (111 passed in 15.2 s). T407 imports from all
 four by name.
 
 ## Recommended next (no promotion)

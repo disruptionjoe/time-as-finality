@@ -1,4 +1,4 @@
-# T397: Region-Indexed Capability No-Go
+# T407: Region-Indexed Capability No-Go
 
 ## Route
 
@@ -70,16 +70,17 @@ Implemented; all three legs hold in this finite family. 34 tests green;
 T392/T393/T394/T395 suites re-run alongside, still green (111 passed). No
 claim promotion; no CLAIM-LEDGER entry; all decisions pause for Joe.
 
-**Numbering collision, flagged for Joe:** while this artifact was being
-built, another lane landed a complete quartet also numbered T397
-(`tests/T397-multipath-class-marker-absorber.md` — the T395-recommended
-multipath absorber run, timestamped before this spec registered). Distinct
-slugs; both quartets intact; renumbering pauses for Joe per house precedent
-(the session mount forbids renames). Substantively the two artifacts
-compose: the absorber's verdict (T395's k >= 3 class-coarse signature is
-generic multipath class-marker algebra) closes the statistics-side route,
-which is exactly why this artifact's capability-side route is Direction A's
-surviving rung.
+**Numbering collision — resolved 2026-07-01, authorized by Joe:** while
+this artifact was being built, another lane landed a complete quartet also
+numbered T397 (`tests/T397-multipath-class-marker-absorber.md` — the
+T395-recommended multipath absorber run, timestamped before this spec
+registered). Distinct slugs; both quartets intact. Resolution (stewardship
+pass under Joe's direct authorization): the multipath quartet registered
+first and keeps T397; this artifact is renumbered T397 → T407.
+Substantively the two artifacts compose: the absorber's verdict (T395's
+k >= 3 class-coarse signature is generic multipath class-marker algebra)
+closes the statistics-side route, which is exactly why this artifact's
+capability-side route is Direction A's surviving rung.
 
 ## Target Claims
 

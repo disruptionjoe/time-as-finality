@@ -1,4 +1,4 @@
-"""Pytest suite for T397: Region-Indexed Capability No-Go.
+"""Pytest suite for T407: Region-Indexed Capability No-Go.
 
 Exact assertions for the three legs of the C(R) claim:
 

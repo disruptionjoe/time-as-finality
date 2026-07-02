@@ -5,7 +5,7 @@
       "status": "absorbed"
     },
     "physical_realization": {
-      "reason": "The exact T397 construction remains useful as a region-indexed audit example where statistics and capability typing diverge.",
+      "reason": "The exact T407 construction remains useful as a region-indexed audit example where statistics and capability typing diverge.",
       "status": "translation_residue"
     },
     "region_indexing": {
@@ -17,7 +17,7 @@
       "status": "absorbed_as_incomplete_shadow"
     }
   },
-  "absorber_verdict": "absorbed_as_finite_product_resource_preorder: once C(R) profiles are admitted as resource states under the declared region/menu/task context, the anti-scalar and incomparability content is exactly a product resource-preorder fact; T397 remains translation residue / physical realization, not a promoted resource-theory residue",
+  "absorber_verdict": "absorbed_as_finite_product_resource_preorder: once C(R) profiles are admitted as resource states under the declared region/menu/task context, the anti-scalar and incomparability content is exactly a product resource-preorder fact; T407 remains translation residue / physical realization, not a promoted resource-theory residue",
   "artifact": "T398-resource-profile-absorber-v0.1",
   "claim_ledger_update": "none; no claim promotion",
   "factorization_audit": {
@@ -623,7 +623,7 @@
   },
   "residue_label": "translation_residue",
   "resource_frame": {
-    "external_prior_art_status": "not verified here; this is the finite internal resource-preorder absorber gate requested by T397",
+    "external_prior_art_status": "not verified here; this is the finite internal resource-preorder absorber gate requested by T407",
     "free_downgrade_reading": "a higher profile can simulate a lower one by declining or discarding available task capability",
     "objects": "mutual-convertibility classes of admitted C(R) profiles",
     "preorder": "componentwise capability dominance in the declared region/menu/task context"
@@ -906,5 +906,5 @@
       "undo_rank": 2
     }
   ],
-  "source_artifact": "T397-region-capability-no-go"
+  "source_artifact": "T407-region-capability-no-go"
 }

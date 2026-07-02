@@ -1,0 +1,303 @@
+{
+  "artifact": "T408-basis-free-capability-boundary-v0.1",
+  "labeling_convention": "registers index-sorted (S, M, F1, F2, F3, F4, AX, C0, C1, C2); all distributions keyed in this order",
+  "theta": 1.0471975511965976,
+  "v_star": 0.9,
+  "region": {
+    "record_region": [
+      "S",
+      "M",
+      "F1",
+      "F2",
+      "F3",
+      "F4"
+    ],
+    "access_zone": [
+      "S",
+      "M",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "AX",
+      "C0",
+      "C1"
+    ],
+    "escaped": [
+      "C2"
+    ],
+    "n_steps": 2
+  },
+  "flatness": {
+    "max_operator_diff_over_preps_phases_alphas": 1.1102230246251565e-16,
+    "max_trace_distance": 7.376145397762941e-17,
+    "max_operator_diff_per_step": 0.0,
+    "conditional_R_active_diff": 0.0,
+    "phi_flatness_within_A": 1.6653345369377348e-16,
+    "phi_flatness_within_B": 1.6653345369377348e-16,
+    "random_basis_spot_check": {
+      "samples": 20,
+      "seed": 20260703,
+      "max_prob_diff": 0.0,
+      "note": "illustrative; the operator equality carries the claim"
+    },
+    "declared_z_readout_diff": 0.0,
+    "flat": true
+  },
+  "capability": {
+    "vis_A_locked": 0.9897433186107869,
+    "vis_A_analytic": 0.989743318610787,
+    "vis_B_locked": 6.060429935570895e-17,
+    "capability_gap": 0.9897433186107868,
+    "r_only_null": {
+      "cert_A": 2.220446049250313e-16,
+      "cert_B": 2.220446049250313e-16,
+      "bound_A": 1.249000902703301e-16,
+      "bound_B": 1.249000902703301e-16
+    },
+    "zone_cert_B": 2.220446049250313e-16,
+    "zone_cert_A_teeth": 0.857142857142857,
+    "zone_bound_B": 1.360466698596701e-16,
+    "zone_bound_A_sanity": 1.9794866372215738,
+    "haar_spot_check": {
+      "samples": 15,
+      "seed": 20260702,
+      "max_locked_visibility": 1.5959514902908962e-17
+    },
+    "manufactured_coherence_control": {
+      "raw_visibility": 0.9999999999999998,
+      "locked_visibility": 6.938893903907228e-17
+    },
+    "H_A": 5.0,
+    "H_B": "inf",
+    "best_four_holder_visibility_A": 0.0,
+    "verdict_A": "recoverable-in-access-zone",
+    "verdict_B": "final-relative-to-access-zone"
+  },
+  "bprime": {
+    "vis_Bprime_locked": 0.9897433186107869,
+    "abs_diff_from_A": 0.0,
+    "region_state_diff_from_A": 0.0,
+    "chain_excitation": {
+      "A": 0.0,
+      "B": 0.4999999999999999,
+      "Bprime": 0.9999999999999998
+    }
+  },
+  "window": {
+    "window": {
+      "0": {
+        "locked_visibility_in_zone_undo": 0.9897433186107869,
+        "zone_cert_diff": 0.857142857142857
+      },
+      "1": {
+        "locked_visibility_in_zone_undo": 0.9897433186107869,
+        "zone_cert_diff": 0.857142857142857
+      },
+      "2": {
+        "locked_visibility_in_zone_undo": 6.060429935570895e-17,
+        "zone_cert_diff": 2.220446049250313e-16
+      }
+    },
+    "enlarged_locked_visibility_B": 0.9897433186107869,
+    "abs_diff_from_A": 0.0,
+    "enlarged_cert_diff_B": 0.857142857142857
+  },
+  "obstruction": {
+    "tail_witnesses": {
+      "A": {
+        "zone_family_diff": 1.1102230246251565e-16,
+        "vis_diff": 2.220446049250313e-16,
+        "bound_diff": 4.440892098500626e-16,
+        "H_base": 5.0,
+        "H_tail": 5.0
+      },
+      "B": {
+        "zone_family_diff": 1.1102230246251565e-16,
+        "vis_diff": 6.064842443445297e-17,
+        "bound_diff": 1.2160670112709958e-16,
+        "H_base": "inf",
+        "H_tail": "inf"
+      }
+    },
+    "zone_trace_distance_A_vs_B": 0.4948716593053935,
+    "zone_joint_z_readout_diff": 0.0,
+    "zone_single_qubit_marginal_diff": 0.0,
+    "lemma": "capability under a menu supported on Z is a functional of the phi-indexed conditional state family on Z; operator flatness on the FULL menu support therefore forces zero capability gap. The flat surface is maximal at the complement of the menu support: flat-on-R with a certified gap is constructed, flat-on-Z with a gap is impossible, and the trace the gap requires lives in zone coherences invisible to R and to every Z-basis readout on Z."
+  },
+  "graded": {
+    "v_star": 0.9,
+    "alpha_feasible_analytic": 0.8582667739416969,
+    "alpha_feasible_analytic_over_pi": 0.27319479912871075,
+    "sweep": [
+      {
+        "alpha_over_pi": 0.0,
+        "emission_probability": 0.0,
+        "region_flatness_diff": 0.0,
+        "achieved_locked_visibility": 0.9897433186107869,
+        "analytic_cos_half_alpha_times_vis_A": 0.9897433186107869,
+        "channel_bound_zone": 1.9794866372215738,
+        "capability_gap": 0.0,
+        "escaped_distinguishability": 0.0,
+        "escaped_holevo_bits": 3.2034265038149176e-16,
+        "complementarity_residual": 0.0,
+        "threshold_restoration": "feasible_zero_cost"
+      },
+      {
+        "alpha_over_pi": 0.25,
+        "emission_probability": 0.14644660940672624,
+        "region_flatness_diff": 5.551115123125783e-17,
+        "achieved_locked_visibility": 0.9144035945043035,
+        "analytic_cos_half_alpha_times_vis_A": 0.9144035945043033,
+        "channel_bound_zone": 1.828807189008607,
+        "capability_gap": 0.07533972410648337,
+        "escaped_distinguishability": 0.3826834323650898,
+        "escaped_holevo_bits": 0.22954858092937572,
+        "complementarity_residual": 4.440892098500626e-16,
+        "threshold_restoration": "feasible_zero_cost"
+      },
+      {
+        "alpha_over_pi": 0.5,
+        "emission_probability": 0.4999999999999999,
+        "region_flatness_diff": 5.551115123125783e-17,
+        "achieved_locked_visibility": 0.6998542122237651,
+        "analytic_cos_half_alpha_times_vis_A": 0.6998542122237651,
+        "channel_bound_zone": 1.3997084244475302,
+        "capability_gap": 0.2898891063870218,
+        "escaped_distinguishability": 0.7071067811865475,
+        "escaped_holevo_bits": 0.5916727785823275,
+        "complementarity_residual": 0.0,
+        "threshold_restoration": "undetermined_by_bound"
+      },
+      {
+        "alpha_over_pi": 0.7,
+        "emission_probability": 0.7938926261462365,
+        "region_flatness_diff": 5.721958498152797e-17,
+        "achieved_locked_visibility": 0.4493340638299887,
+        "analytic_cos_half_alpha_times_vis_A": 0.44933406382998864,
+        "channel_bound_zone": 0.8986681276599774,
+        "capability_gap": 0.5404092547807982,
+        "escaped_distinguishability": 0.8910065241883676,
+        "escaped_holevo_bits": 0.8330945362723532,
+        "complementarity_residual": 4.440892098500626e-16,
+        "threshold_restoration": "certified_infeasible"
+      },
+      {
+        "alpha_over_pi": 0.75,
+        "emission_probability": 0.8535533905932737,
+        "region_flatness_diff": 5.551115123125783e-17,
+        "achieved_locked_visibility": 0.3787583703263907,
+        "analytic_cos_half_alpha_times_vis_A": 0.37875837032639065,
+        "channel_bound_zone": 0.7575167406527814,
+        "capability_gap": 0.6109849482843962,
+        "escaped_distinguishability": 0.9238795325112866,
+        "escaped_holevo_bits": 0.8783350259826536,
+        "complementarity_residual": 2.220446049250313e-16,
+        "threshold_restoration": "certified_infeasible"
+      },
+      {
+        "alpha_over_pi": 0.9,
+        "emission_probability": 0.9755282581475768,
+        "region_flatness_diff": 1.1102230246251565e-16,
+        "achieved_locked_visibility": 0.15482996657402132,
+        "analytic_cos_half_alpha_times_vis_A": 0.1548299665740213,
+        "channel_bound_zone": 0.30965993314804263,
+        "capability_gap": 0.8349133520367655,
+        "escaped_distinguishability": 0.9876883405951378,
+        "escaped_holevo_bits": 0.9677451454082807,
+        "complementarity_residual": 0.0,
+        "threshold_restoration": "certified_infeasible"
+      },
+      {
+        "alpha_over_pi": 0.98,
+        "emission_probability": 0.9990133642141359,
+        "region_flatness_diff": 5.551115123125783e-17,
+        "achieved_locked_visibility": 0.03108858893007071,
+        "analytic_cos_half_alpha_times_vis_A": 0.0310885889300707,
+        "channel_bound_zone": 0.06217717786014142,
+        "capability_gap": 0.9586547296807162,
+        "escaped_distinguishability": 0.9995065603657316,
+        "escaped_holevo_bits": 0.9845260365595268,
+        "complementarity_residual": 2.220446049250313e-16,
+        "threshold_restoration": "certified_infeasible"
+      },
+      {
+        "alpha_over_pi": 1.0,
+        "emission_probability": 1.0,
+        "region_flatness_diff": 0.0,
+        "achieved_locked_visibility": 6.060429935570895e-17,
+        "analytic_cos_half_alpha_times_vis_A": 6.060429935570895e-17,
+        "channel_bound_zone": 1.360466698596701e-16,
+        "capability_gap": 0.9897433186107868,
+        "escaped_distinguishability": 1.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "complementarity_residual": 0.0,
+        "threshold_restoration": "certified_infeasible"
+      }
+    ],
+    "note": "the bound is not tight in the mid-range; alphas with achieved < v* <= bound are honestly undetermined by this artifact (T393's open analytic alpha*(v*) card)"
+  },
+  "ledger": {
+    "landauer_nat_per_bit": 0.6931471805599453,
+    "restore_A": {
+      "mode": "correlated_uncopy",
+      "holders_uncomputed": 5,
+      "erased_bits": 0,
+      "beta_work_lower_bound": 0.0,
+      "achieved_locked_visibility": 0.9897433186107869,
+      "handles_available_in_zone": true,
+      "t142_verdict": "reversible_when_full_microstate_available"
+    },
+    "blind_reset_A": {
+      "mode": "blind_reset",
+      "erased_bits_naive_per_holder": 5,
+      "beta_work_lower_bound_naive": 3.4657359027997265,
+      "joint_record_bits_given_M0": 0.9852281360342515,
+      "joint_record_bits_unconditioned": 1.0,
+      "note_correlation_aware": "the five holders are perfectly correlated copies of one branch bit; a correlation-aware joint reset floor is the joint record entropy, not 5 bits -- both are bookkeeping readings of T142's convention, disclosed side by side",
+      "capability_after_reset": 0.0,
+      "record_deleted_residual_distinguishability": 0.0,
+      "deletion_is_not_definalization": true,
+      "t142_verdict": "standard_erasure_cost_if_uncopy_unavailable"
+    },
+    "restore_B_in_zone": {
+      "feasible_in_zone": false,
+      "certificates": {
+        "zone_phi_independence": 2.220446049250313e-16,
+        "zone_channel_bound": 1.360466698596701e-16
+      },
+      "min_cost_convention": "inf (infimum over an empty feasible set)",
+      "min_beta_work": "inf",
+      "limiting_resource": "access to the escaped holder, not work",
+      "not_a_work_bound": "the infinity is NOT a divergent Landauer/work requirement: this closed unitary model has no work parameter that could diverge; no channel supported on the zone restores the phase at ANY resource expenditure (phi-independence certificate). Calling it a 'cost' is an extended-real bookkeeping convention."
+    },
+    "restore_B_counterfactual": {
+      "mode": "correlated_uncopy_with_boundary_enlargement",
+      "holders_uncomputed": 6,
+      "erased_bits": 0,
+      "beta_work_lower_bound": 0.0,
+      "achieved_locked_visibility": 0.9897433186107869,
+      "abs_diff_from_A": 0.0,
+      "blind_reset_disclosure_bits": 6,
+      "blind_reset_beta_work_naive": 4.1588830833596715
+    },
+    "correspondence": "in this finite family, capability loss and escaped record content correspond exactly: capability retained cos(alpha/2), escaped-holder branch distinguishability sin(alpha/2) (complementarity residual < 1e-9 across the sweep), escaped Holevo content rising 0 -> h2(3/7) bits; the in-zone restoration ledger is 0 (correlated uncopy) wherever restoration is feasible and an empty-set infimum (inf) where certified infeasible; blind-reset dissipation at any alpha buys record deletion, never capability restoration. Bookkeeping in a finite model, not a thermodynamic theorem.",
+    "tier2_card": "open-system bath dispersion: undo cost scaling with bath contact (work/entropy of coherent recollection vs bath size) -- T393's Tier-2, Direction-C-facing, NOT built here"
+  },
+  "q1d": {
+    "declared_readout_invariance": 1.1102230246251565e-16,
+    "no_signal_out_in_zone_undo": 0.0,
+    "enlarged_undo_moves_escaped_marginal_teeth": 0.4285714285714287,
+    "zone_trace_distance_teeth": 0.4948716593053935,
+    "r1_note": "R1 untouched: no claim about global temporal order or spacetime; the discrete SWAP-chain lightcone carries T393/T379's own caveats"
+  },
+  "verdict_tags": [
+    "basis_free_flat_pair",
+    "menu_support_obstruction",
+    "graded_flat_curve",
+    "dissipation_bookkeeping_only",
+    "no_claim_promotion"
+  ],
+  "physicalization_holds": true,
+  "verdict_language": "the basis-free flat pair holds in this finite family: two preparations with EXACTLY identical full region states (every POVM on R equal, every R-supported intervention statistic equal) split on capability under one fixed accessible-zone menu, with the zero side certified against all zone channels; the split is sourced in whether the annex record carrier escaped the causal boundary, so T407's statistics-flatness is upgraded from declared-readout-relative to operator-level, and the residual boundary is the menu support itself (obstruction lemma: flat-on-menu-support forces no gap). Graded alpha family sits on one flat surface; dissipation ledger is bookkeeping only. No claim promotion; decisions pause for Joe."
+}

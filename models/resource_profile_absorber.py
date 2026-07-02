@@ -1,19 +1,19 @@
-"""T398: Resource-Profile Absorber for the T397 C(R) object.
+"""T398: Resource-Profile Absorber for the T407 C(R) object.
 
-This model runs the named absorber gate from T397 one level up. It does not
+This model runs the named absorber gate from T407 one level up. It does not
 verify external LOCC, coherence, or majorization literature. Instead it asks
 the finite internal question that a resource-theory reviewer would raise:
 
-    If the T397 capability profile C(R) is admitted as the resource state,
+    If the T407 capability profile C(R) is admitted as the resource state,
     and the declared region/menu/task context is admitted as the operation
     context, does any formal anti-scalar residue remain?
 
 Verdict: no formal resource-order residue remains in this finite family. The
-T397 profile quotient is exactly a product resource preorder: a 3-chain of
+T407 profile quotient is exactly a product resource preorder: a 3-chain of
 undo capability times a 4-chain of readout capability. The no-scalar result
 is absorbed as ordinary non-total resource convertibility. The statistics-flat
 class is absorbed as an incomplete observer shadow that omits the resource
-profile. The remaining value is translation residue: T397 is still a useful
+profile. The remaining value is translation residue: T407 is still a useful
 region-indexed physical realization and statistics/capability audit, but not
 a promoted new resource-theory object.
 """
@@ -40,7 +40,7 @@ ABSORBER_VERDICT = (
     "absorbed_as_finite_product_resource_preorder: once C(R) profiles are "
     "admitted as resource states under the declared region/menu/task context, "
     "the anti-scalar and incomparability content is exactly a product "
-    "resource-preorder fact; T397 remains translation residue / physical "
+    "resource-preorder fact; T407 remains translation residue / physical "
     "realization, not a promoted resource-theory residue"
 )
 
@@ -69,7 +69,7 @@ def readout_axis(profile: tuple[float, ...]) -> tuple[float, float]:
 
 
 def resource_leq(a: tuple[float, ...], b: tuple[float, ...]) -> bool:
-    """T397 enactability order: a <= b iff b can do at least everything a can."""
+    """T407 enactability order: a <= b iff b can do at least everything a can."""
     return all(x <= y + TOL_EXACT for x, y in zip(a, b))
 
 
@@ -120,7 +120,7 @@ def _relations(objects: list[dict[str, Any]]) -> dict[str, Any]:
         else:
             incomparable_pairs.append(sorted([a["id"], b["id"]]))
 
-    # Keep T397's relation accounting: relation_size is strict comparable
+    # Keep T407's relation accounting: relation_size is strict comparable
     # unordered pairs; reflexives are reported separately for the preorder.
     reflexive_pairs = [[obj["id"], obj["id"]] for obj in objects]
     return {
@@ -250,7 +250,7 @@ def _absorber_challenges() -> dict[str, Any]:
         "physical_realization": {
             "status": "translation_residue",
             "reason": (
-                "The exact T397 construction remains useful as a region-indexed "
+                "The exact T407 construction remains useful as a region-indexed "
                 "audit example where statistics and capability typing diverge."
             ),
         },
@@ -275,7 +275,7 @@ def run_resource_profile_absorber() -> dict[str, Any]:
             ),
             "external_prior_art_status": (
                 "not verified here; this is the finite internal resource-preorder "
-                "absorber gate requested by T397"
+                "absorber gate requested by T407"
             ),
         },
         "resource_objects": objects,

@@ -21,6 +21,13 @@ Weak measurement is not an active discriminator for the project. The named
 superconducting homodyne, uncollapse, and quantum-jump-reversal routes do not
 clear the independent-axis gate.
 
+The T146 live class `extra_environment_candidate` is, however, no longer
+merely named: it is constructively non-empty in a finite model (T392) and
+causally forced conditional on emission in that same family (T393). No
+platform is named by either result; status remains Dormant, and platform
+reinstatement still requires the T166 packet-intake stack (with the
+T149/T150/T158/T183 screens behind it).
+
 ## Earned Content
 
 - T90 defines the reparameterization obstruction: standard-only axes are null,
@@ -96,6 +103,14 @@ clear the independent-axis gate.
   packet intake alone is not enough; a proposal must also clear architecture
   consistency, typed verdict lift, and, for enlarged instruments, eventwise
   preserved-target honesty.
+- T392 constructs a finite witness for the T146 `extra_environment_candidate`
+  live class (T150: `typed_extra_environment_candidate`): in a fixed-SBS-key
+  finite model, an auxiliary axis survives conditioning on the full ordinary
+  record, so the class is non-empty as a mathematical object. No platform is
+  named; Q1C is not reinstated.
+- T393 shows that the T392 extra structure is causally forced conditional on
+  emission in the same finite family rather than engineered in by hand; Q1C
+  stays Dormant and the T166 stack remains the reinstatement burden.
 
 ## Not Earned
 

@@ -34,6 +34,11 @@ SBS/strong-QD objectivity data are allowed to import the same access,
 provenance, partition-visibility, and audited support key, no same-SBS-data D1
 verdict split remains in the enumerated family.
 
+Scope clarification: the bookkeeping-only verdict is earned within the fixed
+accessible-fragment-data family; T392/T393 locate a reversal-cost residue at
+that family's access boundary — a boundary observation, not a reopening of
+Q1A.
+
 ## Earned Content
 
 - T2 and T62 separate pointer decoherence, environmental redundancy, and

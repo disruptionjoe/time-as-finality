@@ -18,7 +18,7 @@ same structural residue:
 
 - **time-as-finality:** whether a record is read or ignored moves zero process
   statistics (T395); capability profiles admit no scalar ranking and are not
-  determined by declared statistics (T397, finite-witness, partially absorbed
+  determined by declared statistics (T407, finite-witness, partially absorbed
   by T398 at the resource-preorder level); the arrow reappears as capability
   loss across an access boundary.
 - **gu-formalization:** the interior matter geometry is vectorlike and cannot
@@ -59,12 +59,33 @@ The existing lead line already IS this leg. No redirection needed:
 - **Machinery this repo supplies to the joint effort:** the
   spec → model → tests → results finite-witness pattern; the T392/T393
   equality-certificate and screening-off toolkit; the absorber / hostile-review
-  loop that partially absorbed T397's own headline the next day (T398) —
+  loop that partially absorbed T407's own headline the next day (T398) —
   exactly the discipline a foundational definition needs before anyone
   trusts it.
 - **Existing bridge contracts:**
   `open-problems/gu-ti-taf-reciprocal-bridge-contract.md`,
   `open-problems/cap-ti-capability-object-spec.md`.
+
+## Verification tiers (shared cross-repo vocabulary, ratified by Joe 2026-07-02)
+
+Each repo's native grade vocabulary remains authoritative for its own claims
+(here: the Canon Index evidence tiers in CLAIM-LEDGER.md and the
+COMPLEXITY-LEDGER conventions). This three-tier overlay is for cross-repo
+communication and public writeups, so "internally verified" never
+masquerades as "established":
+
+1. **recorded** — result exists with runnable artifacts; not yet survived
+   adversarial review. (T409 sits here while its hostile review is queued.)
+2. **internally established** — survived the repo's own hostile review, with
+   numbers independently re-derived from scratch and everything reproducible
+   from the tree. (T407 sits here.) Maps to the standard reproduced-vs-
+   replicated distinction: reproduced, not yet replicated.
+3. **externally established** — verified outside the process: independent
+   replication, peer review, or named-specialist sign-off.
+
+Single-process ceiling: because internal reviewers are spawned by the same
+process that produced the result, no internal step — however adversarial —
+can promote a result to tier 3.
 
 ## Guards (standing, repo-local)
 
@@ -72,7 +93,7 @@ The existing lead line already IS this leg. No redirection needed:
 - Cross-repo material is stress-test input, never support: GU is not evidence
   for capability language; TI claims are not moved by TaF results except
   through their own ledgers.
-- T397-class results remain finite-witness / computed grade; the declared
+- T407-class results remain finite-witness / computed grade; the declared
   readout-basis caveat and the T398 resource-preorder absorption are carried
   wherever the result is cited.
 - Single-process caution: all three repos are maintained by the same research

@@ -205,7 +205,8 @@ claim): `technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md`. It
 derives from (and reframes) the primary open problem after the
 finite-closed scope-theorem candidate was reviewed down from a universal no-go
 (prior art all located: E1 Kadanoff, E2 crypto, E3 resource-theory-of-asymmetry,
-framing constructor theory). The next result-directed swing is the **E2**
-computational-finality / computational-arrow-of-time question
-(`open-problems/computational-finality-arrow.md`, frozen; awaits go); the **E3**
-GU adapter is held as the cross-repo prize.
+framing constructor theory). The first **E2** computational-finality /
+computational-arrow-of-time swing is now recorded as T419 with a REDESIGN verdict:
+the toy orbit fails the anti-relabel guard, so the D2 question remains open for a
+redesign/abandon decision (`open-problems/computational-finality-arrow.md`). The
+**E3** GU adapter is held as the cross-repo prize.

@@ -42,8 +42,9 @@ frame ⊂ A_all):
 ## Tri-repo alignment
 
 - **E1** ≈ TaF game / Aumann–Shapley non-atomic limit (T413).
-- **E2** ≈ TaF computational finality (T417); the live novelty candidate is the
-  *computational arrow of time* (`open-problems/computational-finality-arrow.md`).
+- **E2** ≈ TaF computational finality (T417); the computational-arrow swing is
+  recorded as T419 REDESIGN, so any remaining novelty is a redesign/abandon
+  question (`open-problems/computational-finality-arrow.md`).
 - **E3** ≈ **GU** structural-symmetry no-go (antilinear index-nullity / Krein
   grading) — one-way adjacency, never cited as support.
 - **E0** is the mode every absorbed TaF attempt used (stipulated gaps through

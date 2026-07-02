@@ -2,13 +2,14 @@
 
 ## Status
 
-**Open problem — frozen problem statement (D2). No build yet; the swing pauses for
-Joe's go.** This scopes the one direction the divergent persona pass (2026-07-02,
+**Open problem - D2 first swing recorded as T419 v0.1 with REDESIGN verdict.**
+This scopes the one direction the divergent persona pass (2026-07-02,
 `papers/drafts/prior-art-verification-and-divergent-direction-pass-2026-07-02.md`)
 flagged as the least-covered and most-plausibly-novel angle in the E2 mode of the
 adopted taxonomy (`technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md`).
-Spec-before-build discipline: the novelty bar and kill criteria below are fixed
-*before* any fixture is written. No claim promotion; ledger untouched.
+The novelty bar and kill criteria below were fixed before the fixture. T419 does
+not clear them: K4 fires on the exhibited toy orbit. No claim promotion; ledger
+untouched; next redesign/abandon decision pauses for Joe.
 
 ## The question
 
@@ -80,12 +81,65 @@ is already taken.
 - Prior art turns up a clean statement of exactly this (a cryptographic arrow of
   time with these properties) → cite and demote to synthesis.
 
-## What a swing would build (NOT now)
+## First swing boundary
 
-A finite dynamical fixture: a forward-easy / backward-hard record evolution keyed on
-a one-way construction, with the three success separations above computed, run
-against the taxonomy's E0/E1 absorbers. Provisional next T-number after the current
-highest. **Do not build until Joe greenlights D2.**
+A finite dynamical fixture was built: a forward-easy / backward-hard record
+evolution keyed on a one-way construction, with the three success separations above
+computed against the taxonomy's E0/E1 absorbers. Its recorded verdict is REDESIGN,
+because the toy orbit is short-cycle reversible by public forward iteration and
+therefore fails the anti-relabel guard.
 
 No North Star, canon, public-posture, cross-repo, or ledger movement. GU/TI remain
 stress-test input only.
+
+---
+
+## Swing outcome — 2026-07-02 (T419 v0.1, recorded-tier, REDESIGN)
+
+The D2 swing was built and hostile-reviewed (provisional **T419**; TESTS.md and
+CLAIM-LEDGER.md untouched; no promotion). Artifact and full leg/verdict record:
+`results/T419-computational-arrow-of-time-v0.1-results.md`; spec
+`tests/T419-computational-arrow-of-time.md`; model
+`models/computational_arrow_of_time.py`.
+
+**Construction built:** Rabin/BBS squaring permutation `F(x)=x² mod 77` on `QR_77`
+(15 elements, bijection since `|QR_N|` odd), orbit from seed 4 with emitted BBS bit
+record.
+
+**Verdict: REDESIGN — a kill fired.** Six-probe adversarial panel:
+- **K1 thermodynamic/E1** — DID NOT FIRE (survives, 0.85): verified zero Landauer
+  erasure (bijection on `QR_77`); Bennett reversibility makes backward-hardness a
+  time-complexity, not erasure, cost. Cleanest surviving separation (E2 vs E1/Wolpert).
+- **K2 Brown–Susskind** — PARTIAL (0.62): the *exhibited* object is time-symmetric,
+  reversible, short-Poincaré-recurrent; the intended one-way distinction survives only
+  at unexhibited cryptographic scale.
+- **K3 stipulated-hardness/E0** — DID NOT FIRE (survives, 0.78): Rabin (1979)
+  sqrt≡factoring is a genuine reduction, not fiat; rigor defect noted (reduction
+  omits an `r²==a` check, confounded at toy `N`).
+- **K4 static-T417-relabel** — **FIRED (breaks, 0.90).** The original anti-relabel
+  guard (Leg 6) was fabricated: `backward_feasible_without_trapdoor` was hardcoded
+  `[]`, false on the period-4 orbit where `F⁻¹=F³` recovers every predecessor
+  trapdoor-free. The committed T419 model now computes this failure directly.
+  Evaluating the static
+  square-root boundary along a time index is literally the relabel K4 forbids; the
+  emitted bit-stream is also period-4, so cited BBS forward-security is vacuous here.
+- **K5 prior-art** — PARTIAL (0.70): core concept largely pre-empted by reversible-CA
+  public-key cryptosystems (Kari 1990 line) and Towell, "The Beautiful Deception"
+  (arXiv:2510.12802, 2025), which states the trapdoor "arrow of time" idea directly;
+  the fixture's full differentiated packaging is not cleanly published, so residual
+  value is **synthesis/differentiation only**.
+- **Correctness** — survives (0.90): every number independently re-derived; `12
+  passed`; no numeric or logic error. The defect is the *mechanism story*, not the
+  arithmetic.
+
+**Consequence.** T419 as built does **not** clear the D2 novelty bar: it exhibits a
+time-symmetric reversible-recurrent dynamics, not a distinct computational arrow. The
+break is in the *exhibition* (toy `N`, short discoverable cycle, failed guard), not
+proven fatal to the *intended* construction, so **REDESIGN** — the identified fix is
+to relocate the hardness from point-square-root to **period-finding** (hard without
+factoring at scale) and honestly concede the arrow is not executably exhibitable at
+toy scale. **ABANDON fallback:** if a redesign cannot restore an executable per-step
+asymmetry (likely impossible for a finite permutation on a toy), the K4 demotion
+consequence governs — **demote to T417**, and per K5 treat any survivor as synthesis,
+not a novel result. The v0.1 results doc's original "no kill fired" verdict is
+retracted. No claim promotion; ledger and next-step decision pause for Joe.

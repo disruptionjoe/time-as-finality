@@ -1,8 +1,8 @@
-"""T413 - Certificate-Identity Bridge.
+"""T414 - Certificate-Identity Bridge.
 
 Bridge obligation #1 of the governance-Shapley-finality homology
 (explorations/governance-shapley-finality-homology-note-2026-07-02.md): does the
-T412 game's efficiency-forced `final-relative-to-R` separator instantiate the
+T413 game's efficiency-forced `final-relative-to-R` separator instantiate the
 SAME typed certificate as T411's `final-relative-to-R+`?
 
 Built falsifiable and non-circular: the certificate primitive is a
@@ -52,7 +52,7 @@ def instantiates_signature(cert):
 
 
 # ---------------------------------------------------------------------------
-# Game instantiation (fully computed from T412 machinery).
+# Game instantiation (fully computed from T413 machinery).
 # ---------------------------------------------------------------------------
 def _separation_delta(div_base, div_alt, focus=FOCUS):
     return shapley_by_dividends(div_alt)[focus] - shapley_by_dividends(div_base)[focus]
@@ -96,7 +96,7 @@ def game_invariance_sweep(div_base=DIV_A, div_alt=DIV_C, focus=FOCUS):
 
     # full admissible class: a localizing re-weighting changes phi but breaks
     # the symmetry axiom -> it is illegitimate, so the dependence cannot be
-    # declared away. (T412 Leg 5, recomputed here.)
+    # declared away. (T413 Leg 5, recomputed here.)
     bb = boundary_blind_value(div_alt, focus=focus)
     localizer_changes_phi = bb["value"][focus] != shapley_by_dividends(div_alt)[focus]
     localizer_breaks_symmetry = not symmetry_holds(bb["value"], div_alt)
@@ -156,9 +156,11 @@ def _proper_subsets(players):
 
 
 # ---------------------------------------------------------------------------
-# T411 adapter (RECORDED fields, cited; NOT re-derived).
+# T411/T412 adapter (RECORDED fields, cited; NOT re-derived).
 # Source: results/T411-departed-record-capability-discriminator-v0.1-results.md
 # and steward/runs/2026-07-02-physical-boundary-swing.md. T411 is RECORDED tier.
+# Source for the refactorization standing:
+# results/T412-separator-refactorization-gate-v0.1-results.md.
 # ---------------------------------------------------------------------------
 def t411_adapter_certificate():
     return {
@@ -168,10 +170,17 @@ def t411_adapter_certificate():
         "verdict": "final-relative-to-R",   # B is final-relative-to-R+ (recorded)
         "stability_witness": {"no_in_R_overturn": True,
                               "evidence": "all-channel phi-independence certificate (recorded)"},
-        "invariance_witness": {"irrelevant_class": True,   # Lieb-Robinson relabel survives (recorded)
-                               "full_admissible_class": False,  # OPEN (pass linchpin G-50)
+        "invariance_witness": {"irrelevant_class": True,   # LR/product class survives (recorded)
+                               "product_factorization_class": True,  # T412
+                               "entangling_refactorization_class": False,  # T412
+                               "full_admissible_class": False,
                                "complete": False,
-                               "mechanism": "LR-class only; full relabel test unproven"},
+                               "mechanism": (
+                                   "T412: product-structure-preserving relabels "
+                                   "survive, but arbitrary entangling "
+                                   "refactorization localizes the datum; a "
+                                   "factorization/coupling guardrail is required"
+                               )},
         "datum_locus": "whole",   # beta=0 datum in no proper subset (recorded)
     }
 
@@ -205,7 +214,7 @@ def compare(cert_game, cert_t411):
     elif not divergent:
         verdict = "FULL-HOMOLOGY"
     elif divergent == ["invariance_witness.complete"]:
-        verdict = "PARTIAL-HOMOLOGY (invariance owed by T411)"
+        verdict = "PARTIAL-HOMOLOGY (factorization guardrail required)"
     else:
         verdict = "PARTIAL (multiple divergences)"
 
@@ -219,7 +228,7 @@ def run():
     cert_t411 = t411_adapter_certificate()
 
     return {
-        "artifact": "T413-certificate-identity-bridge-v0.1",
+        "artifact": "T414-certificate-identity-bridge-v0.1",
         "signature_fields": list(SIGNATURE_FIELDS),
         "game_pair2_instantiates": instantiates_signature(cert_A_C),
         "t411_instantiates": instantiates_signature(cert_t411),

@@ -1,7 +1,7 @@
-# T412 — Legitimacy-as-Shapley Finality Probe — Results v0.1
+# T413 — Legitimacy-as-Shapley Finality Probe — Results v0.1
 
-- **Artifact:** `T412-legitimacy-shapley-finality-probe-v0.1`
-- **Spec:** [tests/T412-legitimacy-shapley-finality-probe.md](../tests/T412-legitimacy-shapley-finality-probe.md)
+- **Artifact:** `T413-legitimacy-shapley-finality-probe-v0.1`
+- **Spec:** [tests/T413-legitimacy-shapley-finality-probe.md](../tests/T413-legitimacy-shapley-finality-probe.md)
 - **Model:** [models/legitimacy_shapley_finality_probe.py](../models/legitimacy_shapley_finality_probe.py)
 - **Test:** [tests/test_legitimacy_shapley_finality_probe.py](../tests/test_legitimacy_shapley_finality_probe.py)
 - **Tags:** exploratory_homology_probe, governance_shapley_finality,
@@ -10,8 +10,8 @@
 
 **Exploratory big-swing probe of a candidate homology — NOT a discriminator
 result.** Cross-domain material (cooperative game theory / governance) is the
-**object of study**, never evidence for physics or any sibling repo. Provisional
-T-number (TESTS.md untouched; noted here only). No CLAIM-LEDGER entry. Ledger
+**object of study**, never evidence for physics or any sibling repo. Registered
+as T413 after normalizing the committed provisional numbering. No CLAIM-LEDGER entry. Ledger
 actions pause for Joe. Predeclaration: spec frozen before the model existed;
 every closed-form value below was hand-derived at spec-freeze.
 

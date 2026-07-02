@@ -1,9 +1,9 @@
-"""Tests for T413: Certificate-Identity Bridge (bridge obligation #1).
+"""Tests for T414: Certificate-Identity Bridge (bridge obligation #1).
 
-Asserts the predeclared legs of tests/T413-certificate-identity-bridge.md
+Asserts the predeclared legs of tests/T414-certificate-identity-bridge.md
 (frozen before the model existed). Exploratory; no claim promotion; ledger
-untouched. Built falsifiable: Pair 1 must be REJECTED; T411 invariance reported
-honestly as partial.
+untouched. Built falsifiable: Pair 1 must be REJECTED; T411/T412 invariance is
+reported honestly as factorization-guarded.
 """
 
 from models.certificate_identity_bridge import run, SIGNATURE_FIELDS
@@ -29,17 +29,20 @@ def test_leg3_datum_locus_match_pair2():
 
 
 def test_leg4_invariance_divergence_is_the_honest_asymmetry():
-    # game: complete (proven); T411: incomplete (LR only, full class open)
+    # game: complete (proven); quantum side: incomplete after T412 because
+    # arbitrary entangling refactorization localizes the datum.
     assert R["cert_game_pair2"]["invariance_witness"]["complete"] is True
     assert R["cert_t411"]["invariance_witness"]["complete"] is False
-    # T411 IS invariant on the irrelevant (LR) class, just not the full class
+    # T411/T412 IS invariant on the LR/product class, but not the full class.
     assert R["cert_t411"]["invariance_witness"]["irrelevant_class"] is True
+    assert R["cert_t411"]["invariance_witness"]["product_factorization_class"] is True
+    assert R["cert_t411"]["invariance_witness"]["entangling_refactorization_class"] is False
     assert R["cert_t411"]["invariance_witness"]["full_admissible_class"] is False
 
 
 def test_leg5_bridge_verdict_partial_homology():
     b = R["bridge_pair2_vs_t411"]
-    assert b["bridge_verdict"] == "PARTIAL-HOMOLOGY (invariance owed by T411)"
+    assert b["bridge_verdict"] == "PARTIAL-HOMOLOGY (factorization guardrail required)"
     # exactly one divergent field, and it is the invariance completeness
     assert b["divergent_fields"] == ["invariance_witness.complete"]
     # 4 of 5 conceptual fields identical (region+menu counted separately -> 5)
@@ -68,7 +71,7 @@ def test_leg7_game_invariance_sweep_executable():
 def test_headline_bridge_holds_on_4of5_invariance_owed():
     """The stab: the shared signature is genuinely instantiated by both, the
     verdict derives identically, 4/5 fields match, and the ONE gap is exactly
-    the relabel-invariance the persona pass already flagged T411 owes."""
+    the factorization guardrail T412 already forced."""
     b = R["bridge_pair2_vs_t411"]
     assert b["bridge_verdict"].startswith("PARTIAL-HOMOLOGY")
     assert b["divergent_fields"] == ["invariance_witness.complete"]

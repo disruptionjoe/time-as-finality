@@ -1,7 +1,7 @@
-# T412 — Legitimacy-as-Shapley Finality Probe (spec, frozen)
+# T413 — Legitimacy-as-Shapley Finality Probe (spec, frozen)
 
-**Status:** exploratory big-swing fixture spec. Provisional T-number (next free
-after T411; **TESTS.md NOT edited** — noted here only). No claim promotion; no
+**Status:** exploratory big-swing fixture spec. Registered as T413 after
+normalizing the committed provisional numbering. No claim promotion; no
 CLAIM-LEDGER entry; ledger actions pause for Joe. Cross-domain (cooperative game
 theory / governance) is the **object of study**, never evidence for physics or
 for any sibling repo. This spec is frozen before the model file exists.

@@ -1,14 +1,14 @@
-# T413 — Certificate-Identity Bridge (spec, frozen)
+# T414 — Certificate-Identity Bridge (spec, frozen)
 
 **Status:** exploratory bridge probe (bridge obligation #1 of the
-governance–Shapley–finality homology note, 2026-07-02). Provisional T-number
-(**TESTS.md NOT edited**; noted here only). No claim promotion; no CLAIM-LEDGER
+governance-Shapley-finality homology note, 2026-07-02). Registered as T414 after
+normalizing the committed provisional numbering. No claim promotion; no CLAIM-LEDGER
 entry; ledger actions pause for Joe. Cross-domain material is the **object of
 study**, never evidence. Spec frozen before the model file exists.
 
 ## Purpose
 
-Discharge (or fail) bridge obligation #1: *show the T412 game's
+Discharge (or fail) bridge obligation #1: *show the T413 game's
 efficiency-forced `final-relative-to-R` separator is the **same typed certificate
 object** as T411's `final-relative-to-R+`, in a shared typed signature — not
 merely the same verdict word.* Built to be **falsifiable and non-circular**: the
@@ -46,17 +46,18 @@ relabel-proof        ⇔  invariance_witness.complete   (full admissible class, 
 
 ## Instantiations under test
 
-- **Game (T412, fully computed).** R = `{0,1,2}`; M = dividend reallocations on
+- **Game (T413, fully computed).** R = `{0,1,2}`; M = dividend reallocations on
   subsets of R. Stability = no in-R dividend change moves the A-vs-C separation
   (which lives in `d(N)`). Invariance = irrelevant-relabel class (boundary
   permutations; dividends on coalitions disjoint from the focus) **and** full
   admissible class (any localizing re-weighting breaks the **symmetry** axiom —
-  T412 Leg 5). datum_locus = whole (Pair 2) / proper-subset (Pair 1).
-- **T411 adapter (recorded fields, cited — NOT re-derived).** R = declared `R+`;
+  T413 Leg 5). datum_locus = whole (Pair 2) / proper-subset (Pair 1).
+- **T411/T412 adapter (recorded fields, cited - NOT re-derived).** R = declared `R+`;
   M = all CPTP channels on R + unlimited work. Stability = all-channel
-  φ-independence certificate (recorded). Invariance = Lieb-Robinson class
-  **survives** (recorded); full admissible class **OPEN** (persona-pass linchpin
-  G-50, unproven). datum_locus = whole (recorded: β=0 datum in no proper subset).
+  phi-independence certificate (recorded). Invariance = Lieb-Robinson/product class
+  **survives** (recorded); arbitrary entangling refactorization localizes the
+  datum unless excluded by a factorization/coupling admissibility rule (T412).
+  datum_locus = whole (recorded: beta=0 datum in no proper subset).
 
 ## Predeclared legs (verdicts fixed before running)
 
@@ -68,13 +69,15 @@ relabel-proof        ⇔  invariance_witness.complete   (full admissible class, 
 3. **Datum-locus match (Pair 2).** Game Pair 2 and T411 both `datum_locus = whole`.
 4. **Invariance divergence (the honest asymmetry).** Game invariance
    `complete = True` (irrelevant class invariant **and** full class axiom-forced);
-   T411 invariance `complete = False` (LR class True, full class OPEN). This is
-   the one divergent field.
+   T411/T412 invariance `complete = False` (LR/product class True, arbitrary
+   entangling refactorization fails unless excluded). This is the one divergent
+   field.
 5. **Bridge verdict = PARTIAL HOMOLOGY / SHARED SIGNATURE.** 4 of 5 fields
    structurally identical; the divergent field is exactly `invariance_witness.
-   complete`, where the game is **strictly stronger** (proven) than T411
-   (conjectured). Predeclared payload: the game supplies the **proof template**
-   (an IIA/symmetry-type invariance axiom) that T411's open relabel test owes.
+   complete`, where the game is **strictly stronger** (proven) than T411/T412
+   (factorization-guarded). Current payload: the game supplies the **proof
+   template** (an IIA/symmetry-type invariance axiom) for the admissibility rule
+   T412 showed the quantum separator needs.
 6. **Falsifiability teeth.** Game **Pair 1** (boundary dividend) has
    `datum_locus = proper-subset`; therefore `bridge(Pair1, T411) = REJECT`. The
    signature discriminates — it does not pass everything.
@@ -86,9 +89,9 @@ relabel-proof        ⇔  invariance_witness.complete   (full admissible class, 
 ## Success / honesty criteria
 
 Succeeds as exploration if the shared signature is genuinely instantiated by both
-and the comparison is honest — including reporting the invariance field as
-**partial** for T411 rather than forcing a match, and **rejecting** Pair 1. A
-result of "PARTIAL HOMOLOGY, invariance owed by T411" is the predeclared honest
-outcome and would **promote the analogy toward a homology on 4/5 fields** while
-naming the exact remaining debt. No physics claim, no governance claim, no
-cross-repo import, no promotion. Pauses for Joe.
+and the comparison is honest - including reporting the invariance field as
+**partial** for T411/T412 rather than forcing a match, and **rejecting** Pair 1.
+A result of "PARTIAL HOMOLOGY, factorization guardrail required" is the current
+honest outcome after T412: it would **promote the analogy toward a homology on
+4/5 fields** while naming the exact remaining debt. No physics claim, no
+governance claim, no cross-repo import, no promotion. Pauses for Joe.

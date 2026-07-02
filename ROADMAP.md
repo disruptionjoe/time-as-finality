@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T413/T414 Provisional Artifact Normalization
+
+This run normalized the committed exploratory governance-Shapley artifacts that
+had collided with the already-registered T412 separator gate. The
+legitimacy-as-Shapley finality probe is now T413, and the certificate-identity
+bridge is now T414.
+
+The useful research result is the current-standing update: T414 keeps the
+bridge at partial homology. The game side has a complete symmetry/IIA-style
+invariance axiom, while the quantum side is now T412-guarded rather than merely
+open: product-structure relabels survive, but arbitrary entangling
+refactorization localizes the datum unless excluded by a factorization/coupling
+admissibility rule. No claim-ledger, North Star, canon, or public-posture
+movement is earned.
+
 ## 2026-07-02 T412 Separator Refactorization Gate
 
 T412 executes the linchpin named by the physical-boundary post-mortem: whether

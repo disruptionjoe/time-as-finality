@@ -7,7 +7,7 @@ authority: exploratory
 created: 2026-07-02
 source: >
   physical-boundary-hegelian-persona-pass-2026-07-02.md;
-  results/T412-legitimacy-shapley-finality-probe-v0.1-results.md;
+  results/T413-legitimacy-shapley-finality-probe-v0.1-results.md;
   Joe chat 2026-07-02 (governance-layering pattern; Nash/Shapley intuition)
 status: exploratory
 ---
@@ -18,9 +18,9 @@ status: exploratory
 a claim. Method, not evidence. Nothing here moves a ledger, edits TESTS.md /
 CLAIM-LEDGER.md, or promotes anything. Cross-domain material (governance,
 cooperative game theory) is the **object of study**, never evidence for physics
-or for a sibling repo. The T412 probe (results linked above) is a
-provisional-T-number exploratory fixture. Single-process ceiling: this note, the
-persona pass, the T412 model, and Joe's hints are one collaborative process
+or for a sibling repo. The T413 probe (results linked above) is a registered
+exploratory fixture. Single-process ceiling: this note, the persona pass, the
+T413 model, and Joe's hints are one collaborative process
 building a self-consistent story — convergence generates targets, never
 corroboration. The house discipline applies: distinguish **analogy → homology →
 reduction → equivalence**, and the Poet/Skeptic guard (personas 42/50) is invited
@@ -42,18 +42,18 @@ value asserted legitimately at the infinite layers."
 The bet: this is not decoration. It rhymes with the exact mathematical shapes the
 2026-07-02 persona pass isolated. We took a big swing to see whether the rhyme is
 structural — by porting the T411 discriminator into a classical cooperative game
-and running the same four-absorber gauntlet (T412).
+and running the same four-absorber gauntlet (T413).
 
 ## The correspondence (now partly executable)
 
-| Governance / game-theoretic structure | Finality shape it reproduces | Status after T412 |
+| Governance / game-theoretic structure | Finality shape it reproduces | Status after T413 |
 | --- | --- | --- |
 | Emergent legitimacy — not locally optimizable, present only in the whole | The surviving separator: a global datum in **no proper subset** (R1) | **Constructed classically** via the **efficiency axiom** (Pair 2: datum in `v(N)`, absent from every proper coalition) |
 | "Layer integrity: surface the tension, don't hide it" | Compute the gluing **obstruction** instead of faking a global section (H¹) | Homolog held (efficiency = the whole constrains every share); the *no-marginal* H¹ residue is **quantum**, does not port (Leg 8) |
-| Physical vs declared boundary | Automorphism-forced vs stipulated | **Symmetry axiom = automorphism-invariance**: the localizing re-weighting is efficient but **breaks symmetry** (T412 Leg 5) — declared, illegitimate |
+| Physical vs declared boundary | Automorphism-forced vs stipulated | **Symmetry axiom = automorphism-invariance**: the localizing re-weighting is efficient but **breaks symmetry** (T413 Leg 5) — declared, illegitimate |
 | Constitution sealed against overwrite-from-below | `final-relative-to-R` (T392/T411) | Homolog held: no in-R menu operation enacts the higher-layer change without the ratification gate |
-| Slower change-rate at higher layers | Separation of timescales = the **asymptotic gap** escape (M1) | Gestured: Aumann–Shapley non-atomic limit; grand-coalition grip on a single share falls with N (T412 Leg 7) |
-| **Nash at finite scale vs Shapley at infinite layers** (Joe's hint) | Finite **multiplicity** (declared) vs axiom-forced **uniqueness** (legitimate) | **Executable** (T412 Leg 7): imputation polytope dim 4 (many declared splits) vs the unique Shapley point; unconditional only in the non-atomic limit |
+| Slower change-rate at higher layers | Separation of timescales = the **asymptotic gap** escape (M1) | Gestured: Aumann–Shapley non-atomic limit; grand-coalition grip on a single share falls with N (T413 Leg 7) |
+| **Nash at finite scale vs Shapley at infinite layers** (Joe's hint) | Finite **multiplicity** (declared) vs axiom-forced **uniqueness** (legitimate) | **Executable** (T413 Leg 7): imputation polytope dim 4 (many declared splits) vs the unique Shapley point; unconditional only in the non-atomic limit |
 
 ## What the swing actually found
 
@@ -98,13 +98,13 @@ is, under this lens, the **ratification/aggregation gradient** — and it has th
 named pieces:
 
 - **Nash, finite scale = the declared layer.** Local best-response fixed points;
-  multiple; coordinate-dependent; the imputation polytope (T412: dimension 4).
+  multiple; coordinate-dependent; the imputation polytope (T413: dimension 4).
   This is the artifact/implementation layer — many legitimate-looking splits, no
   forced one.
 - **Shapley = the axiom-forced legitimate value.** Unique because symmetry
   (automorphism-invariance), efficiency (the whole in every part), null-player,
   and additivity pin it. This is the "physical rather than declared" object — and
-  T412 shows the localizing move that would declare it away is precisely a
+  T413 shows the localizing move that would declare it away is precisely a
   **symmetry violation**.
 - **Aumann–Shapley, non-atomic = legitimacy asserted at the infinite layers.**
   In the continuum-of-players limit, Aumann's equivalence theorem (core =
@@ -161,33 +161,38 @@ Bridge obligation #1 (certificate identity) was taken as a big swing, preceded b
 a 10-lens game-theory steelman that chose the certificate primitive: **not** the
 Shapley value (circular) but a **stability/no-deviation** predicate
 (core-relative-to-R ≈ strategyproof ≈ ESS-uninvadable) plus an **invariance
-axiom** (Arrow-IIA / Shapley symmetry). Fixture: T413
-(`results/T413-certificate-identity-bridge-v0.1-results.md`), `8 passed`.
+axiom** (Arrow-IIA / Shapley symmetry). Fixture: T414
+(`results/T414-certificate-identity-bridge-v0.1-results.md`), `8 passed`.
 
-Result: the T412 game separator and T411's `final-relative-to-R+` instantiate the
+Result: the T413 game separator and T411's `final-relative-to-R+` instantiate the
 **same typed certificate on 5 of 6 field comparisons** (region+menu, verdict,
 stability-witness, datum-locus = whole). The **sole divergence is
 `invariance_witness.complete`**: the game's invariance is proven complete (any
-localizer breaks symmetry), while T411's is partial (Lieb-Robinson class only;
-full admissible class OPEN). Built falsifiable — **Pair 1 is REJECTED**
+localizer breaks symmetry), while the T411/T412 quantum side is partial
+(Lieb-Robinson/product class only; arbitrary entangling refactorization localizes
+unless excluded by a factorization/coupling admissibility rule). Built falsifiable — **Pair 1 is REJECTED**
 (proper-subset datum), so the signature discriminates rather than passing
-everything, and T411's invariance is reported honestly as partial, not forced.
+everything, and T411/T412's invariance is reported honestly as partial, not
+forced.
 
 Consequence: bridge obligation #1 is **discharged to partial-homology**, and the
 one un-bridged field **coincides exactly with the persona pass's #1 open target**
-(the separator-relabel test, G-50). The game supplies the **proof template** that
-target owes: find a symmetry/IIA-type invariance axiom for the quantum separator
-whose violation is the localizing re-factorization. Obligations #2–#4 remain
-open; #2 (port the relabel proof to the quantum side) is now the sharp next move.
+(the separator-relabel test, G-50), now executed in T412 with a conservative
+answer. The game supplies the **proof template** that target still owes: find a
+symmetry/IIA-type factorization admissibility axiom for the quantum separator
+whose violation is the localizing entangling re-factorization. Obligations
+#2–#4 remain open; #2 is now the axiom-building problem T412 exposed rather than
+an unrun relabel test.
 
 ## Honest bottom line
 
 The rhyme survived a real swing. It is **not** a metaphor: the finality wound,
 the R1/R2 split, and the two escape hatches all reproduce in classical game
 theory, and Joe's Nash/Shapley intuition maps onto an established ladder
-(Nash → Shapley → Aumann–Shapley). But it is **not yet** a homology in the
-repo's strict sense — that requires the certificate-identity bridge (obligation
-1). And it earns **no** physical claim: the game reproduces the wound, declares
-its own datum (R2 unpaid), and cannot host the quantum residue (Leg 8). Worth
-taking more seriously than exploration on the strength of bridge obligation 1;
-worth *no* promotion until it is discharged. Pauses for Joe.
+(Nash → Shapley → Aumann–Shapley). But it is **not a full homology** in the
+repo's strict sense: bridge obligation 1 is discharged only to partial-homology,
+and the remaining invariance field now requires the factorization/coupling
+admissibility axiom exposed by T412. It earns **no** physical claim: the game
+reproduces the wound, declares its own datum (R2 unpaid), and cannot host the
+quantum residue (Leg 8). Worth taking more seriously than analogy; worth *no*
+promotion. Pauses for Joe.

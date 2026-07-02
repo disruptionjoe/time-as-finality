@@ -1,6 +1,6 @@
-"""Tests for T412: Legitimacy-as-Shapley Finality Probe.
+"""Tests for T413: Legitimacy-as-Shapley Finality Probe.
 
-Asserts the predeclared legs of tests/T412-legitimacy-shapley-finality-probe.md
+Asserts the predeclared legs of tests/T413-legitimacy-shapley-finality-probe.md
 (frozen before the model existed). Exploratory homology probe; no claim
 promotion; ledger untouched. Cross-domain material is the object of study, not
 evidence.

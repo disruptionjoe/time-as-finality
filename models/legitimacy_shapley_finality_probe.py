@@ -1,7 +1,7 @@
-"""T412 - Legitimacy-as-Shapley Finality Probe.
+"""T413 - Legitimacy-as-Shapley Finality Probe.
 
 Exploratory big-swing model for the governance-layering <-> finality homology
-(see tests/T412-legitimacy-shapley-finality-probe.md, frozen first). Classical
+(see tests/T413-legitimacy-shapley-finality-probe.md, frozen first). Classical
 finite cooperative game; the Shapley value plays the role of the legitimate
 (axiom-forced) capability of an in-region player. We port the T411 discriminator
 structure into a game and run the four-absorber gauntlet.
@@ -295,7 +295,7 @@ def run():
     }
 
     return {
-        "artifact": "T412-legitimacy-shapley-finality-probe-v0.1",
+        "artifact": "T413-legitimacy-shapley-finality-probe-v0.1",
         "leg1_crosscheck_efficiency": leg1,
         "leg2_within_R_equality": leg2,
         "leg3_shapley_separation": leg3,

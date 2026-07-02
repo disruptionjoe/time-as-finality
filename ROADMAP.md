@@ -1,5 +1,21 @@
 ﻿# Roadmap
 
+## 2026-07-02 T406 Transition-System Operation-Unavailability Gate
+
+T406 tests the next post-T405 word, operation unavailability. It keeps the
+T405/T403 causal payload, final verdict payload, revision budget, operation
+menu, resource accounting, provenance, reversible-control class, observer
+boundary, and non-dynamic substrate support fixed while varying only the
+finite operation-labeled transition relation for `revise_verdict`.
+
+This is useful but absorbing. The main pair splits only
+`can_revise_final_verdict`, but the split appears exactly because the transition
+relation differs. Transition-system completion restores factorization, and all
+matched-transition pairs in the finite fixture have matched capabilities. No
+claim-ledger movement is earned. The next stronger burden is a domain-native
+law or measured substrate dynamics that forces the transition relation without
+using transition-system underdescription as the separator.
+
 ## 2026-07-02 T405 Physical-Latch Finality-Lock Screen
 
 T405 strengthens the post-T403 same-domain lane by replacing the stipulated

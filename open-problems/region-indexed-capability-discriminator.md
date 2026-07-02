@@ -5,7 +5,7 @@
 Open problem / next-artifact spec. No claim promotion.
 
 Seeded by `audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`
-and updated against the later T397-T402 absorber results.
+and updated against the later T397-T406 absorber results.
 
 T398 closes the first resource-profile absorber gate at the finite internal
 level: T397's `C(R)` profiles form a 3 x 4 product resource preorder once the
@@ -69,6 +69,17 @@ physical"; it is to supply a substrate-native irreversibility or operation-
 unavailability result that does not factor through latch topology, resource
 state, provenance state, control handle, or observer boundary.
 
+T406 tests the operation-unavailability version of that burden. It holds the
+T405/T403 payload, operation menu, fixed-accounting absorber vector, and
+non-dynamic substrate support constant while varying only the finite
+operation-labeled transition relation for `revise_verdict`. The revision
+capability splits, but transition-system completion restores factorization;
+matched transition-system completions do not split capability in the finite
+fixture. The remaining burden is therefore not "say the operation is
+unavailable"; it is to supply a domain-native law or measured substrate
+dynamics that forces the transition relation without using transition-system
+underdescription as the separator.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -81,11 +92,14 @@ T398 then absorbs the first `C(R)` profile poset as a finite product resource
 preorder, T401 absorbs finite finality reconciliation as joint-record
 completion, T402 absorbs the causal-domain substrate version as standard
 causal-domain completion, T403 absorbs the first same-domain split as explicit
-finality-state completion, and T405 absorbs the finite physical-latch version
-as latch-substrate completion. The next Direction-A move cannot be another
-visibility scalarization over class records, same-profile resource-order claim,
-ordinary joint-record separator, ordinary causal-domain separator, stipulated
-provisional/sealed finality flag, or explicit latch-topology separator.
+finality-state completion, T405 absorbs the finite physical-latch version as
+latch-substrate completion, and T406 absorbs operation-unavailability language
+as transition-system completion when the transition relation itself differs.
+The next Direction-A move cannot be another visibility scalarization over
+class records, same-profile resource-order claim, ordinary joint-record
+separator, ordinary causal-domain separator, stipulated provisional/sealed
+finality flag, explicit latch-topology separator, or transition-system
+underdescription.
 
 The live object is therefore not a statistics-only record/order inequality.
 It is a region-indexed capability discriminator:
@@ -121,6 +135,8 @@ Build a finite fixture with:
   than explicit finality-state, operation-menu, provenance, or resource
   completion;
 - positive controls where region enlargement restores the capability;
+- a T406-style absorber check showing whether operation-unavailability
+  language is more than changed transition-system completion;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.
 
@@ -156,6 +172,8 @@ Demote or close this route if:
   in T403;
 - the physical finality-lock separator reduces to explicit latch-substrate
   completion, as in T405;
+- operation unavailability reduces to changed transition-system completion, as
+  in T406;
 - the intervention menu has to smuggle in the hidden datum it is supposed to
   reveal.
 

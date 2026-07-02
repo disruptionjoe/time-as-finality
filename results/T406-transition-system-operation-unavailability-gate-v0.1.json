@@ -1,0 +1,1268 @@
+{
+  "absorber_audit": {
+    "causal_reachability_and_domain_of_dependence": {
+      "reason": "The gate imports the same T405/T403 causal payload for both main-pair cases.",
+      "status": "matched_not_explanatory"
+    },
+    "claim_promotion": {
+      "reason": "The artifact is a finite absorber/precheck for operation unavailability, not a physical-arrow theorem.",
+      "status": "blocked"
+    },
+    "fixed_accounting_resource_provenance_control_boundary": {
+      "reason": "The T145-style absorber vector is identical in the main pair.",
+      "status": "matched_not_explanatory_for_main_pair"
+    },
+    "latch_topology_completion": {
+      "reason": "The main pair does not vary latch topology; latch-marker variation is isolated as a blocked shortcut control.",
+      "status": "blocked_for_main_pair"
+    },
+    "operation_menu_completion": {
+      "reason": "The main pair has the same declared operation menu and revision budget; operation-menu variation is isolated as a control.",
+      "status": "matched_not_explanatory_for_main_pair"
+    },
+    "ordinary_joint_input_completion": {
+      "reason": "The main pair keeps the joint payload and verdict payload fixed.",
+      "status": "matched_not_explanatory"
+    },
+    "transition_system_completion": {
+      "main_pair_completion_differences": [
+        "transition_edges"
+      ],
+      "reason": "Adding the finite transition relation restores factorization of the revision capability.",
+      "status": "absorbs"
+    }
+  },
+  "artifact": "T406-transition-system-operation-unavailability-gate-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "factorization_check": {
+    "checked_pairs": 66,
+    "matched_transition_completion_pairs": 15,
+    "same_transition_system_implies_same_capability": true,
+    "violations": []
+  },
+  "falsification_condition": "This gate fails if two cases with identical fixed-accounting projection and identical transition-system completion split on revision capability; if the main pair differs in causal payload, operation menu, resource, provenance, control, boundary, or non-dynamic substrate support; if a hidden label or latch-topology shortcut performs the split; or if a transition-system absorber is treated as a physical-arrow theorem.",
+  "main_pair_summary": {
+    "absorber_mismatch_fields": [],
+    "capability_split": true,
+    "differing_capability_fields": [
+      "can_revise_final_verdict"
+    ],
+    "fixed_accounting_projection_equal": true,
+    "pair_id": "transition_unavailability_main_pair",
+    "residue_label": "absorbed_by_transition_system_completion",
+    "same_non_dynamic_substrate_support": true,
+    "same_operation_menu": true,
+    "same_revision_budget": true,
+    "transition_system_completion_equal": false
+  },
+  "pair_audits": [
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [],
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "transition_unavailability_main_pair",
+      "residue_label": "absorbed_by_transition_system_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "unreachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "transition_edges"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [],
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "matched_transition_control",
+      "residue_label": "no_capability_split",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable_copy",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [],
+      "transition_system_completion_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [
+        "operation_menu"
+      ],
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "operation_menu_completion_control",
+      "residue_label": "absorbed_by_fixed_accounting_or_menu_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "without_revision_menu",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": false,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "operation_menu"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [
+        "erased_bits",
+        "beta_work_floor",
+        "blank_capacity_delta"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [
+        "absorber_vector"
+      ],
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "resource_accounting_control",
+      "residue_label": "absorbed_by_resource_accounting",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 1.3862943611198906,
+          "blank_capacity_delta": 2,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 2,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "two_bit_resource",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "absorber_vector"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [
+        "provenance_state"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict",
+          "can_certify_final_record"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": false,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [
+        "absorber_vector"
+      ],
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "provenance_completion_control",
+      "residue_label": "absorbed_by_provenance_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "authority_invalidated",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "invalid_provenance",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "absorber_vector"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [
+        "reversible_control"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [
+        "absorber_vector"
+      ],
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "control_completion_control",
+      "residue_label": "absorbed_by_control_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "rewrite_handle_disabled",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "disabled_control",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "absorber_vector"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [
+        "boundary_access"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_read_verdict",
+          "can_append_correction",
+          "can_revise_final_verdict",
+          "can_certify_final_record"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": false,
+          "can_certify_final_record": false,
+          "can_read_verdict": false,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [
+        "absorber_vector"
+      ],
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "reachable",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "boundary_completion_control",
+      "residue_label": "absorbed_by_boundary_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "observer_boundary_closed",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "closed_boundary",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [
+        "absorber_vector"
+      ],
+      "transition_system_completion_equal": false
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [],
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": true,
+      "latch_topology_shortcut_attempt": false,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "hidden_alpha",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": "alpha",
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "hidden_label_shortcut_control",
+      "residue_label": "blocked_hidden_label_shortcut",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "hidden_beta",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": "beta",
+        "latch_topology_marker": "not_declared",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [],
+      "transition_system_completion_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "fixed_accounting_projection_differences": [],
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_topology_shortcut_attempt": true,
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "latch_rewritable_marker",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "rewritable_gate",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "pair_id": "latch_topology_shortcut_control",
+      "residue_label": "blocked_latch_topology_shortcut",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "case_id": "latch_fused_marker",
+        "current_state": "final_verdict_same",
+        "hidden_source_label": null,
+        "latch_topology_marker": "fused_gate",
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1,
+        "substrate_carrier": "matched_final_record_cell",
+        "substrate_support_class": "matched_non_dynamic_support",
+        "transition_edges": [
+          {
+            "operation": "append_correction",
+            "source": "final_verdict_same",
+            "target": "correction_appended_same"
+          },
+          {
+            "operation": "certify_verdict",
+            "source": "final_verdict_same",
+            "target": "certified_verdict_same"
+          },
+          {
+            "operation": "read_verdict",
+            "source": "final_verdict_same",
+            "target": "final_verdict_same"
+          },
+          {
+            "operation": "revise_verdict",
+            "source": "final_verdict_same",
+            "target": "revised_verdict_same"
+          }
+        ]
+      },
+      "same_non_dynamic_substrate_support": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "transition_system_completion_differences": [],
+      "transition_system_completion_equal": true
+    }
+  ],
+  "recommended_next": [
+    "Do not treat operation-unavailability language as progress unless the transition-system completion is already matched.",
+    "A future positive route needs a domain-native law or measured substrate dynamics that forces the transition relation rather than restating it.",
+    "Keep the T404/basis-free lane separate until Joe resolves the number collision and promotion posture."
+  ],
+  "residue_label": "operation_unavailability_absorbed_by_transition_system_completion",
+  "setup": {
+    "capability_object": "future operation availability for reading, appending, revising, and certifying the final verdict",
+    "declared_before_pair": true,
+    "fixed_projection": "T405/T403 causal payload + revision budget + operation menu + T145-style absorber vector + non-dynamic substrate support",
+    "task": "given a common-future final verdict with fixed T405/T403 payload and accounting, decide whether revise_verdict is available under the declared finite transition relation",
+    "transition_system_completion": "fixed projection + current state + finite operation-labeled transition edges"
+  },
+  "source_artifact": "T405-physical-latch-finality-lock-screen-v0.1",
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "absorbed_cases": {
+      "boundary_completion_control": "absorbed_by_boundary_completion",
+      "control_completion_control": "absorbed_by_control_completion",
+      "hidden_label_shortcut_control": "blocked_hidden_label_shortcut",
+      "latch_topology_shortcut_control": "blocked_latch_topology_shortcut",
+      "matched_transition_control": "no_capability_split",
+      "operation_menu_completion_control": "absorbed_by_fixed_accounting_or_menu_completion",
+      "provenance_completion_control": "absorbed_by_provenance_completion",
+      "resource_accounting_control": "absorbed_by_resource_accounting",
+      "transition_unavailability_main_pair": "absorbed_by_transition_system_completion"
+    },
+    "same_fixed_accounting_split_cases": [
+      "transition_unavailability_main_pair"
+    ]
+  },
+  "verdict": "finite transition-system operation-unavailability gate built: under matched T405/T403 payload, operation menu, fixed accounting, and non-dynamic substrate support, a revision capability split appears only when the declared transition relation differs; admitting that relation as native operation-availability data restores factorization, and matched transition systems do not split revision capability, so no claim-ledger movement is earned"
+}

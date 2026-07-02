@@ -1,5 +1,21 @@
 ﻿# Roadmap
 
+## 2026-07-02 T403 Same-Domain Finality-Lock Screen
+
+T403 tests the stronger post-T402 same-domain lane. It imports the T402 causal
+fixture, then matches causal-domain data, joint payload, verdict payload,
+revision budget, and declared operation menu while changing only the
+record-finality state from provisional to sealed.
+
+The result is useful but absorbing. The revision capability splits
+(`can_revise_final_verdict`) without being explained by causal reachability,
+domain of dependence, or ordinary joint input completion. But explicit
+finality-state completion restores factorization, so the split is a
+finality-state absorber screen rather than a claim upgrade. No claim-ledger
+movement is earned. The next stronger burden is a physically typed
+finality-lock substrate whose provisional/sealed state is not merely
+stipulated.
+
 ## 2026-07-02 T402 Causal-Domain Boundary Forcing Screen
 
 T402 tests the stronger post-T401 request for a physical substrate. In a finite

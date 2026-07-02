@@ -47,6 +47,17 @@ version must match causal-domain data and still produce a capability split not
 expressible as causal reachability, domain of dependence, or ordinary joint
 input completion.
 
+T403 makes that next live version finite and explicit. It matches the T402
+causal-domain signature, joint payload, verdict payload, revision budget, and
+declared operation menu, while changing only the record-finality state from
+provisional to sealed. The revision capability splits (`can_revise_final_verdict`),
+so the separator is not ordinary causal-domain or joint-input completion. But
+the split is absorbed by explicit finality-state completion. The remaining
+burden is therefore not "find any same-domain split"; it is to supply a
+physically typed finality-lock substrate whose provisional/sealed state is not
+merely stipulated and survives fixed-accounting resource, provenance, control,
+and boundary absorbers.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -57,10 +68,12 @@ changing what a record holder can do or postdict. T397 absorbs T395's
 `k >= 3` class-coarse residue as generic multipath class-marker algebra.
 T398 then absorbs the first `C(R)` profile poset as a finite product resource
 preorder, T401 absorbs finite finality reconciliation as joint-record
-completion, and T402 absorbs the causal-domain substrate version as standard
-causal-domain completion. The next Direction-A move cannot be another
+completion, T402 absorbs the causal-domain substrate version as standard
+causal-domain completion, and T403 absorbs the first same-domain split as
+explicit finality-state completion. The next Direction-A move cannot be another
 visibility scalarization over class records, same-profile resource-order claim,
-ordinary joint-record separator, or ordinary causal-domain separator.
+ordinary joint-record separator, ordinary causal-domain separator, or stipulated
+provisional/sealed finality flag.
 
 The live object is therefore not a statistics-only record/order inequality.
 It is a region-indexed capability discriminator:
@@ -92,6 +105,9 @@ Build a finite fixture with:
   joint-record reconciliation;
 - a T402-style absorber check showing whether the task is more than ordinary
   causal reachability, domain of dependence, or joint input completion;
+- a T403-style absorber check showing whether any same-domain split is more
+  than explicit finality-state, operation-menu, provenance, or resource
+  completion;
 - positive controls where region enlargement restores the capability;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.
@@ -123,6 +139,9 @@ Demote or close this route if:
 - the task reduces to ordinary joint-record completion, as in T401;
 - the physical-substrate separator reduces to ordinary causal-domain
   completion or joint input access, as in T402;
+- the same-domain split reduces to explicit finality-state completion,
+  operation-menu completion, provenance, or fixed-accounting resource state, as
+  in T403;
 - the intervention menu has to smuggle in the hidden datum it is supposed to
   reveal.
 

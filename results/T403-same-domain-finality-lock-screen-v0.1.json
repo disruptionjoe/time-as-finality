@@ -1,0 +1,1123 @@
+{
+  "absorber_audit": {
+    "causal_reachability_and_domain_of_dependence": {
+      "reason": "The main pair shares the same T402 causal-domain signature, so reachability and domain-of-dependence data do not separate the revision capability.",
+      "status": "matched_not_explanatory"
+    },
+    "claim_promotion": {
+      "reason": "The artifact supplies a finite finality-state absorber screen, not a physical-substrate result or claim-status change.",
+      "status": "blocked"
+    },
+    "finality_state_completion": {
+      "main_pair_completion_differences": [
+        "finality_state"
+      ],
+      "reason": "Adding the provisional/sealed record-finality state restores factorization of the revision capability.",
+      "status": "absorbs"
+    },
+    "hidden_label_or_class_marker": {
+      "reason": "A source label can separate only as an extra hidden marker; it is not accepted as causal-domain, joint-input, or finality state evidence.",
+      "status": "blocked"
+    },
+    "operation_menu_completion": {
+      "reason": "The declared operation menu and revision budget are identical in the main pair; operation-menu variation is isolated as a separate absorber control.",
+      "status": "matched_not_explanatory_for_main_pair"
+    },
+    "ordinary_joint_input_completion": {
+      "reason": "The main pair has the same joint payload and same verdict payload, so ordinary joint input completion does not separate the revision capability.",
+      "status": "matched_not_explanatory"
+    }
+  },
+  "artifact": "T403-same-domain-finality-lock-screen-v0.1",
+  "causal_domain_signature": {
+    "B_only_domain_contains_verdict": false,
+    "RB_joint_domain_contains_verdict": true,
+    "R_and_B_are_spacelike": true,
+    "R_only_domain_contains_verdict": false,
+    "events": {
+      "B_input": {
+        "event_id": "B_input",
+        "records": [
+          "right_record"
+        ],
+        "t": 0.0,
+        "x": 1.0
+      },
+      "R_input": {
+        "event_id": "R_input",
+        "records": [
+          "left_record"
+        ],
+        "t": 0.0,
+        "x": -1.0
+      },
+      "common_future_verdict": {
+        "event_id": "common_future_verdict",
+        "records": [],
+        "t": 1.0,
+        "x": 0.0
+      }
+    },
+    "initial_data_intervals": {
+      "B_only": {
+        "interval_id": "B_only_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": 1.0
+      },
+      "RB_joint": {
+        "interval_id": "RB_joint_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": -1.0
+      },
+      "R_only": {
+        "interval_id": "R_only_slice",
+        "t0": 0.0,
+        "x_max": -1.0,
+        "x_min": -1.0
+      }
+    },
+    "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+    "verdict_in_common_future": true
+  },
+  "claim_ledger_update": "none; no claim promotion",
+  "falsification_condition": "This screen would fail if the main pair differed in causal-domain data, joint payload, revision budget, or operation menu; if the revision split survived after finality-state completion; if a hidden label performed the separation; or if the finite lock state were treated as a physical claim.",
+  "main_pair_summary": {
+    "capability_split": true,
+    "differing_capability_fields": [
+      "can_revise_final_verdict"
+    ],
+    "pair_id": "same_domain_finality_lock_pair",
+    "residue_label": "absorbed_by_finality_state_completion",
+    "same_causal_domain_data": true,
+    "same_joint_payload": true,
+    "same_operation_menu": true,
+    "same_revision_budget": true,
+    "visible_projection_equal": true
+  },
+  "pair_audits": [
+    {
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "hidden_label_shortcut_attempt": false,
+      "left": {
+        "case_id": "provisional_same",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "same_domain_finality_lock_pair",
+      "residue_label": "absorbed_by_finality_state_completion",
+      "right": {
+        "case_id": "sealed_same",
+        "finality_state": "sealed",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_causal_domain_data": true,
+      "same_joint_payload": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "state_completion": {
+        "differing_fields": [
+          "finality_state"
+        ],
+        "left": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "finality_state": "sealed",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "visible_projection_equal": true
+    },
+    {
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "hidden_label_shortcut_attempt": false,
+      "left": {
+        "case_id": "provisional_same",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "matched_finality_control",
+      "residue_label": "no_capability_split",
+      "right": {
+        "case_id": "provisional_same_copy",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_causal_domain_data": true,
+      "same_joint_payload": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "state_completion": {
+        "differing_fields": [],
+        "left": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "visible_projection_equal": true
+    },
+    {
+      "capability": {
+        "differing_fields": [
+          "verdict_payload"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "different"
+        }
+      },
+      "hidden_label_shortcut_attempt": false,
+      "left": {
+        "case_id": "provisional_same",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "joint_input_completion_control",
+      "residue_label": "absorbed_by_causal_or_joint_input_completion",
+      "right": {
+        "case_id": "provisional_different",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          0
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_causal_domain_data": true,
+      "same_joint_payload": false,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": false,
+      "state_completion": {
+        "differing_fields": [
+          "visible_projection"
+        ],
+        "left": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              0
+            ],
+            "verdict_payload": "different"
+          }
+        }
+      },
+      "visible_projection_equal": false
+    },
+    {
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "hidden_label_shortcut_attempt": false,
+      "left": {
+        "case_id": "provisional_same",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "operation_menu_completion_control",
+      "residue_label": "absorbed_by_operation_menu_completion",
+      "right": {
+        "case_id": "provisional_without_revision_menu",
+        "finality_state": "provisional",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction"
+        ],
+        "revision_budget": 1
+      },
+      "same_causal_domain_data": true,
+      "same_joint_payload": true,
+      "same_operation_menu": false,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "state_completion": {
+        "differing_fields": [
+          "operation_menu"
+        ],
+        "left": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "visible_projection_equal": true
+    },
+    {
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "hidden_label_shortcut_attempt": true,
+      "left": {
+        "case_id": "hidden_alpha",
+        "finality_state": "provisional",
+        "hidden_source_label": "alpha",
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "hidden_label_shortcut_control",
+      "residue_label": "blocked_hidden_label_shortcut",
+      "right": {
+        "case_id": "hidden_beta",
+        "finality_state": "provisional",
+        "hidden_source_label": "beta",
+        "joint_payload": [
+          1,
+          1
+        ],
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_causal_domain_data": true,
+      "same_joint_payload": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "state_completion": {
+        "differing_fields": [],
+        "left": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "finality_state": "provisional",
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict"
+          ],
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "visible_projection_equal": true
+    }
+  ],
+  "recommended_next": [
+    "Treat T403 as a finality-state absorber screen, not a claim upgrade.",
+    "Do not count sealed/provisional state as a hidden causal-domain discriminator.",
+    "A future upgrade needs a physically typed finality-lock substrate whose state is not merely stipulated."
+  ],
+  "residue_label": "same_domain_finality_state_split_absorbed",
+  "setup": {
+    "capability_object": "future operation availability for reading, appending a correction, and revising the final verdict",
+    "declared_before_pair": true,
+    "task": "given a common-future final verdict with fixed causal-domain data and fixed joint payload, decide whether the verdict can still be revised before the horizon",
+    "visible_projection": "T402 causal-domain signature + joint payload + verdict payload"
+  },
+  "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "absorbed_cases": {
+      "hidden_label_shortcut_control": "blocked_hidden_label_shortcut",
+      "joint_input_completion_control": "absorbed_by_causal_or_joint_input_completion",
+      "matched_finality_control": "no_capability_split",
+      "operation_menu_completion_control": "absorbed_by_operation_menu_completion",
+      "same_domain_finality_lock_pair": "absorbed_by_finality_state_completion"
+    },
+    "same_domain_split_cases": [
+      "same_domain_finality_lock_pair"
+    ]
+  },
+  "verdict": "finite same-causal-domain finality-state screen built: a provisional and sealed record have identical causal-domain data, joint payload, verdict payload, revision budget, and declared operation menu, while only the provisional record can revise the final verdict; the split is not causal reachability or joint input completion, but is absorbed by explicit finality-state completion, so no claim-ledger movement is earned"
+}

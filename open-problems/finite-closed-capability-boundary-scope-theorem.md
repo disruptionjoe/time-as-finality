@@ -96,10 +96,37 @@ and **never** via:
   which is not a resource barrier at all and collapses to *declared* (dies to
   joint-record completion / the reservoir-idealization absorber).
 
-**Stated gap.** "Exactly one of (E1)/(E2)" is an **exhaustiveness claim** over
-the ways a co-present datum's extraction cost can be made prohibitive; it is
-argued and thrice-witnessed below but **not** proven in full generality. Closing
-it (or exhibiting a fourth mode) is the promotion obligation.
+**Closure argument (reduces the exhaustiveness gap).** The claim "exactly (E1) or
+(E2), never a fourth mode" reduces to one observation about finite closed models:
+
+1. *Single-instance cost is always finite.* For a fixed finite configuration the
+   separating datum is a fixed finite object; any procedure that enumerates the
+   configuration extracts it in finite resources. So `cost_R` at a single instance
+   is finite — for **every** resource (energy in a finite system is bounded;
+   computation over a finite domain halts; model-size is fixed).
+2. *Therefore "prohibitive" is inherently asymptotic.* A finite cost is never
+   prohibitive in an absolute sense; prohibitiveness is only meaningful **relative
+   to a budget or across a family**. A stipulated finite budget is **(E0)** —
+   declared, and it collapses (Part 1). So a *non-declared* prohibitive cost is
+   necessarily a statement about a **family** of models (cost or non-locality as a
+   function of instance size).
+3. *An asymptotic lower-bound claim has exactly two epistemic statuses.* Either it
+   is **unconditionally provable** — the naive extraction resource, or the datum's
+   non-locality, provably diverges: **(E1)** — or it holds only **conditional on a
+   hypothesis** that no cleverer feasible procedure beats the growth: **(E2)**.
+   There is no third status for a growth claim: a bound is a theorem or it rests on
+   an assumption.
+
+Hence the modes are exhaustive: **(E0)** declared (collapses), **(E1)** provable
+asymptotic divergence, **(E2)** assumption-conditional asymptotic bound. A "fourth
+mode" would be a single-instance non-declared prohibitive cost, which step 1 rules
+out. **Residual softness (the honest remainder):** this argument fixes the
+*epistemic* taxonomy; it still leans on an informal notion of "extraction
+resource." Pinning that to a precise resource measure (a cost functional on the
+finite model, with brute-force as its finite upper bound) is the remaining
+internal-rigor obligation — a definitional formalization, not a missing idea.
+(E1) and (E2) are additionally *unified* by T417: computation is one scaling
+resource, so (E2) is (E1) with a hardness hypothesis supplying the lower bound.
 
 ## The three witnesses
 
@@ -139,21 +166,39 @@ fact. That is the theorem.
   from *outside* the separator (an (E1)/(E2) resource structure), never from the
   co-present datum itself.
 
-## What would promote this to a theorem
+## Path to internal establishment (the solo ceiling worth driving to)
 
-1. **Close the exhaustiveness gap** in Part 2: a precise definition of
-   "extraction resource" and a proof that prohibitive cost in a closed model
-   entails (E1) or (E2) — or a fourth mode, which would itself be a result.
-2. **A rigorous model-class statement** for the Lemma beyond the elementary
-   argument (name the category of finite closed models; state closedness as an
-   axiom; prove declarability as a structural fact).
-3. **A fourth independent witness** in a genuinely different class (e.g. a
-   topological/cohomological one, per the sheaf-cluster reading) would raise
-   confidence past the single-process ceiling only if produced by an independent
-   process.
-4. **Externalization:** the single-process ceiling caps this at *internally
-   established* at best; a named-specialist read or an independent reproduction is
-   required for any external "theorem" standing.
+Verification tiers are ordered *recorded → internally established → externally
+established*. **Internal establishment is a legitimate, self-sufficient standing**
+— survived the repo's own hostile review, numbers/arguments re-derived from
+scratch, everything reproducible from the tree — and it is the ceiling a solo
+researcher drives to. External establishment (tier 3) is gated behind the
+single-process ceiling *by construction*; that is a statement about a ceiling,
+**not a prerequisite for progress**. So the work below is what closes the distance
+to internal establishment; it is not blocked on any outside party.
+
+**Internal obligations (do these):**
+
+1. **Formalize the extraction-resource measure** so the Part-2 closure argument is
+   fully rigorous: a cost functional on the finite model whose finite brute-force
+   upper bound makes step 1 a lemma, not an observation. (Definitional; the idea
+   is in hand.)
+2. **Rigorous model-class statement of Part 1** — name the category of finite
+   closed models, state closedness as an axiom, prove the Declarability Lemma as a
+   structural fact rather than an elementary argument.
+3. **Internal hostile review** — the repo's mechanism for *recorded → internally
+   established*: independent from-scratch re-derivation of the Lemma and the
+   closure argument, plus an adversarial subset trying to exhibit a fourth mode or
+   a single-instance non-declared boundary. This is the concrete next step.
+4. *(Confidence, not required)* A fourth independent witness in a genuinely
+   different class (e.g. a topological/cohomological one) further supports the
+   pattern — but note the single-process ceiling: extra self-produced witnesses
+   raise conviction, never tier.
+
+**External standing (flagged available, NOT blocking):** a named-specialist read
+or independent reproduction would move this to *externally established*. That path
+stays open for whenever an outside verifier appears; the program does not wait on
+it, and nothing above is contingent on it.
 
 ## Relation to the lead line and guards
 

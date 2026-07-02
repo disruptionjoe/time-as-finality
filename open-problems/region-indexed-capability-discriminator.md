@@ -271,3 +271,21 @@ coupling graph, or declared access factorization. If arbitrary entangling
 refactorization is admitted, the global-correlation separator demotes to a
 coordinate-dependent exhibit. No claim promotion; the open problem remains
 open.
+
+## Status Addendum (2026-07-02): reframed by the scope-theorem candidate
+
+See `open-problems/finite-closed-capability-boundary-scope-theorem.md`. That
+candidate formalizes the persona pass's M1 across three executable witnesses
+(T411 thermal, T413 game-theoretic, T417 computational) and reframes **this**
+problem: the physical-boundary discriminator, *as a single-instance finite-closed
+object*, is not merely unbuilt but **candidate-provably out of scope**. Its
+Declarability Lemma (proven, elementary) shows the separating datum is always
+co-present in R's complement (joint-record completion in general form); its
+Part-2 closure argument shows a *physical* boundary requires leaving the
+single-instance regime via an asymptotic gap (E1, Door B) or a forcing assumption
+(E2, Door C) — never a stipulated gap (E0), which is what every absorbed attempt
+used. The honest successors are therefore (a) the R1 relabel-proof separator
+(built; relabel-proof modulo the operational-automorphism admissibility of
+T412/T415/T416) and (b) the (E1)/(E2) family/assumption boundaries — not a single
+finite closed discriminator. No claim promotion; the scope theorem is a candidate
+pausing for Joe; this problem stays open in its reframed form.

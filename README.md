@@ -35,6 +35,11 @@ Read these first:
 3. [Lead Research Line - Time as Finality.md](Lead%20Research%20Line%20-%20Time%20as%20Finality.md)
    - the lead technical research line: record stabilization, finality, and
    temporal direction inside the broader vision.
+4. [Coordination - Tri-Repo Division of Labor.md](Coordination%20-%20Tri-Repo%20Division%20of%20Labor.md)
+   - TaF's leg of the ratified tri-repo effort (2026-07-02): TaF owns the
+   capability measure (C(R), certificates, the region-indexed capability
+   discriminator); gu-formalization owns boundary content; temporal-issuance
+   owns the source question. Identity claims across the three remain gated.
 
 The historical `NORTH-STAR.md` has been archived under
 `Candidate North Star/archive/`. The current project orientation is the

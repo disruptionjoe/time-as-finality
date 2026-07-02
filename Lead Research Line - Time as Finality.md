@@ -184,3 +184,14 @@ The success criterion is not arrival at the destination.
 
 The success criterion is that each step leaves us with mathematics that is more
 precise, more falsifiable, and more explanatory than what we had before.
+
+## Tri-Repo Placement (2026-07-02)
+
+This lead line is TaF's leg of the ratified tri-repo division of labor: TaF
+owns the **capability measure** — defining and testing the bounded-region
+capability object C(R), the certificate machinery, and the region-indexed
+capability discriminator (`open-problems/region-indexed-capability-discriminator.md`),
+which is the current primary open problem. gu-formalization owns boundary
+content; temporal-issuance owns the source question. Identity claims across
+the three repos remain gated behind adapter contracts. See
+[Coordination - Tri-Repo Division of Labor.md](Coordination%20-%20Tri-Repo%20Division%20of%20Labor.md).

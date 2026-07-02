@@ -112,11 +112,13 @@ The existing dirty worktree was preserved.
 
 ## Verification
 
-Planned checks:
+Ran:
 
 ```text
-git diff --check -- technical-reports/TECHNICAL-REPORT-native-comparison-regime-appendix-v0.1.md steward/runs/2026-07-02-native-comparison-regime-appendix.md
+git diff --cached --check
 ```
+
+Result: passed before commit.
 
 No numbered test suite was run because this was a method-hardening report, not
 an executable model.
@@ -129,4 +131,10 @@ two-domain native-comparison shadow audit that fills
 `workflows/templates/north-star-shadow-audit.template.md` twice and compares
 only the shared audit spine.
 
-Completed: 2026-07-02T08:04:00-05:00 local.
+Committed and pushed:
+
+```text
+6b0ab70 Add native comparison appendix
+```
+
+Completed: 2026-07-02T08:05:00-05:00 local.

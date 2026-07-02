@@ -1,0 +1,910 @@
+{
+  "artifact": "T397-multipath-class-marker-absorber-v0.1",
+  "canonical_equivalence": true,
+  "canonical_three_order": [
+    {
+      "label": "t395_three_order",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 0.0,
+      "marker_overlap": 1.0,
+      "class_distinguishability": 0.0,
+      "path_postdiction_success": 0.3333333333333333,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 1.0,
+      "normalized_pairwise_factors": [
+        {
+          "left": "ABC",
+          "right": "BAC",
+          "factor": 1.0
+        },
+        {
+          "left": "ABC",
+          "right": "CAB",
+          "factor": 1.0
+        },
+        {
+          "left": "BAC",
+          "right": "CAB",
+          "factor": 1.0
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      }
+    },
+    {
+      "label": "t395_three_order",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 0.7853981633974483,
+      "marker_overlap": 0.9238795325112867,
+      "class_distinguishability": 0.3826834323650898,
+      "path_postdiction_success": 0.4608944774550299,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.9238795325112867,
+      "normalized_pairwise_factors": [
+        {
+          "left": "ABC",
+          "right": "BAC",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "ABC",
+          "right": "CAB",
+          "factor": 1.0
+        },
+        {
+          "left": "BAC",
+          "right": "CAB",
+          "factor": 0.9238795325112867
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.062307048490736094,
+        "minimum": -0.10983495705504476,
+        "maximum": 0.03661165235168151
+      }
+    },
+    {
+      "label": "t395_three_order",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 1.5707963267948966,
+      "marker_overlap": 0.7071067811865476,
+      "class_distinguishability": 0.7071067811865476,
+      "path_postdiction_success": 0.5690355937288492,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.7071067811865476,
+      "normalized_pairwise_factors": [
+        {
+          "left": "ABC",
+          "right": "BAC",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "ABC",
+          "right": "CAB",
+          "factor": 1.0
+        },
+        {
+          "left": "BAC",
+          "right": "CAB",
+          "factor": 0.7071067811865476
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.22739698613931236,
+        "minimum": -0.3749999999999999,
+        "maximum": 0.125
+      }
+    },
+    {
+      "label": "t395_three_order",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 2.356194490192345,
+      "marker_overlap": 0.38268343236508984,
+      "class_distinguishability": 0.9238795325112867,
+      "path_postdiction_success": 0.6412931775037622,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.38268343236508984,
+      "normalized_pairwise_factors": [
+        {
+          "left": "ABC",
+          "right": "BAC",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "ABC",
+          "right": "CAB",
+          "factor": 1.0
+        },
+        {
+          "left": "BAC",
+          "right": "CAB",
+          "factor": 0.38268343236508984
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.4403316337864299,
+        "minimum": -0.6401650429449552,
+        "maximum": 0.2133883476483185
+      }
+    },
+    {
+      "label": "t395_three_order",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 3.141592653589793,
+      "marker_overlap": 6.123233995736766e-17,
+      "class_distinguishability": 1.0,
+      "path_postdiction_success": 0.6666666666666666,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 6.123233995736766e-17,
+      "normalized_pairwise_factors": [
+        {
+          "left": "ABC",
+          "right": "BAC",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "ABC",
+          "right": "CAB",
+          "factor": 1.0
+        },
+        {
+          "left": "BAC",
+          "right": "CAB",
+          "factor": 6.123233995736766e-17
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.6388888888888888,
+        "minimum": -0.75,
+        "maximum": 0.25
+      }
+    }
+  ],
+  "generic_three_path": [
+    {
+      "label": "generic_three_path",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 0.0,
+      "marker_overlap": 1.0,
+      "class_distinguishability": 0.0,
+      "path_postdiction_success": 0.3333333333333333,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 1.0,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 1.0
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      }
+    },
+    {
+      "label": "generic_three_path",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 0.7853981633974483,
+      "marker_overlap": 0.9238795325112867,
+      "class_distinguishability": 0.3826834323650898,
+      "path_postdiction_success": 0.4608944774550299,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.9238795325112867,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.9238795325112867
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.062307048490736094,
+        "minimum": -0.10983495705504476,
+        "maximum": 0.03661165235168151
+      }
+    },
+    {
+      "label": "generic_three_path",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 1.5707963267948966,
+      "marker_overlap": 0.7071067811865476,
+      "class_distinguishability": 0.7071067811865476,
+      "path_postdiction_success": 0.5690355937288492,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.7071067811865476,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.7071067811865476
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.22739698613931236,
+        "minimum": -0.3749999999999999,
+        "maximum": 0.125
+      }
+    },
+    {
+      "label": "generic_three_path",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 2.356194490192345,
+      "marker_overlap": 0.38268343236508984,
+      "class_distinguishability": 0.9238795325112867,
+      "path_postdiction_success": 0.6412931775037622,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.38268343236508984,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.38268343236508984
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.4403316337864299,
+        "minimum": -0.6401650429449552,
+        "maximum": 0.2133883476483185
+      }
+    },
+    {
+      "label": "generic_three_path",
+      "k": 3,
+      "class_sizes": [
+        2,
+        1
+      ],
+      "gamma": 3.141592653589793,
+      "marker_overlap": 6.123233995736766e-17,
+      "class_distinguishability": 1.0,
+      "path_postdiction_success": 0.6666666666666666,
+      "perfect_record_path_ceiling": 0.6666666666666666,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 6.123233995736766e-17,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 6.123233995736766e-17
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.6388888888888888,
+        "minimum": -0.75,
+        "maximum": 0.25
+      }
+    }
+  ],
+  "six_path_parity": [
+    {
+      "label": "six_path_parity",
+      "k": 6,
+      "class_sizes": [
+        3,
+        3
+      ],
+      "gamma": 0.0,
+      "marker_overlap": 1.0,
+      "class_distinguishability": 0.0,
+      "path_postdiction_success": 0.16666666666666666,
+      "perfect_record_path_ceiling": 0.3333333333333333,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 1.0,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p3",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p3",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p4",
+          "right": "p5",
+          "factor": 1.0
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      }
+    },
+    {
+      "label": "six_path_parity",
+      "k": 6,
+      "class_sizes": [
+        3,
+        3
+      ],
+      "gamma": 0.7853981633974483,
+      "marker_overlap": 0.9238795325112867,
+      "class_distinguishability": 0.3826834323650898,
+      "path_postdiction_success": 0.23044723872751496,
+      "perfect_record_path_ceiling": 0.3333333333333333,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.9238795325112867,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p3",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p0",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p5",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p1",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p4",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p1",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p3",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p2",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p5",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p3",
+          "right": "p4",
+          "factor": 0.9238795325112867
+        },
+        {
+          "left": "p3",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p4",
+          "right": "p5",
+          "factor": 0.9238795325112867
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.08340073940473491,
+        "minimum": -0.14058874503045726,
+        "maximum": 0.005857864376269006
+      }
+    },
+    {
+      "label": "six_path_parity",
+      "k": 6,
+      "class_sizes": [
+        3,
+        3
+      ],
+      "gamma": 1.5707963267948966,
+      "marker_overlap": 0.7071067811865476,
+      "class_distinguishability": 0.7071067811865476,
+      "path_postdiction_success": 0.2845177968644246,
+      "perfect_record_path_ceiling": 0.3333333333333333,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.7071067811865476,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p3",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p0",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p5",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p1",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p4",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p1",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p3",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p2",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p5",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p3",
+          "right": "p4",
+          "factor": 0.7071067811865476
+        },
+        {
+          "left": "p3",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p4",
+          "right": "p5",
+          "factor": 0.7071067811865476
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.3005887450304572,
+        "minimum": -0.47999999999999987,
+        "maximum": 0.020000000000000018
+      }
+    },
+    {
+      "label": "six_path_parity",
+      "k": 6,
+      "class_sizes": [
+        3,
+        3
+      ],
+      "gamma": 2.356194490192345,
+      "marker_overlap": 0.38268343236508984,
+      "class_distinguishability": 0.9238795325112867,
+      "path_postdiction_success": 0.3206465887518811,
+      "perfect_record_path_ceiling": 0.3333333333333333,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 0.38268343236508984,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p3",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p0",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p5",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p1",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p4",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p1",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p3",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p2",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p5",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p3",
+          "right": "p4",
+          "factor": 0.38268343236508984
+        },
+        {
+          "left": "p3",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p4",
+          "right": "p5",
+          "factor": 0.38268343236508984
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.5694490374546044,
+        "minimum": -0.8194112549695427,
+        "maximum": 0.03414213562373103
+      }
+    },
+    {
+      "label": "six_path_parity",
+      "k": 6,
+      "class_sizes": [
+        3,
+        3
+      ],
+      "gamma": 3.141592653589793,
+      "marker_overlap": 6.123233995736766e-17,
+      "class_distinguishability": 1.0,
+      "path_postdiction_success": 0.3333333333333333,
+      "perfect_record_path_ceiling": 0.3333333333333333,
+      "within_class_factor": 1.0,
+      "cross_class_factor": 6.123233995736766e-17,
+      "normalized_pairwise_factors": [
+        {
+          "left": "p0",
+          "right": "p1",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p0",
+          "right": "p2",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p3",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p0",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p0",
+          "right": "p5",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p1",
+          "right": "p2",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p1",
+          "right": "p3",
+          "factor": 1.0
+        },
+        {
+          "left": "p1",
+          "right": "p4",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p1",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p3",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p2",
+          "right": "p4",
+          "factor": 1.0
+        },
+        {
+          "left": "p2",
+          "right": "p5",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p3",
+          "right": "p4",
+          "factor": 6.123233995736766e-17
+        },
+        {
+          "left": "p3",
+          "right": "p5",
+          "factor": 1.0
+        },
+        {
+          "left": "p4",
+          "right": "p5",
+          "factor": 6.123233995736766e-17
+        }
+      ],
+      "scalarization_residuals": {
+        "mean": -0.7999999999999999,
+        "minimum": -0.96,
+        "maximum": 0.040000000000000036
+      }
+    }
+  ],
+  "exhaustive_bipartition_sweeps": [
+    {
+      "k": 3,
+      "bipartitions_checked": 3,
+      "gamma_values_checked": 5,
+      "within_class_flat_all": true,
+      "cross_class_duality_all": true,
+      "postdiction_formula_all": true,
+      "scalarizations_fail_binary_at_perfect_record_all": true
+    },
+    {
+      "k": 4,
+      "bipartitions_checked": 7,
+      "gamma_values_checked": 5,
+      "within_class_flat_all": true,
+      "cross_class_duality_all": true,
+      "postdiction_formula_all": true,
+      "scalarizations_fail_binary_at_perfect_record_all": true
+    },
+    {
+      "k": 5,
+      "bipartitions_checked": 15,
+      "gamma_values_checked": 5,
+      "within_class_flat_all": true,
+      "cross_class_duality_all": true,
+      "postdiction_formula_all": true,
+      "scalarizations_fail_binary_at_perfect_record_all": true
+    },
+    {
+      "k": 6,
+      "bipartitions_checked": 31,
+      "gamma_values_checked": 5,
+      "within_class_flat_all": true,
+      "cross_class_duality_all": true,
+      "postdiction_formula_all": true,
+      "scalarizations_fail_binary_at_perfect_record_all": true
+    }
+  ],
+  "full_resolution_path_postdiction_at_perfect_record": 1.0,
+  "full_resolution_max_pairwise_coherence_at_perfect_record": 0.0,
+  "absorber_verdict": "absorbed: the T395 k>=3 class-coarse record signature is exactly generic multipath class-marker algebra in this finite audit",
+  "strongest_safe_claim": "For two-class records over k>=3 equally weighted branches, the T395 signatures depend only on the class partition and the marker overlap cos(gamma/2): same-class coherences are unchanged, cross-class coherences are multiplied by cos(gamma/2), individual path postdiction is (1+sin(gamma/2))/k, and the perfect class record ceiling is 2/k. Composition-order labels add no extra structure in this branch-marker model.",
+  "direction_a_update": "Do not promote T395's k>=3 partial-record residue as a temporal-order inequality ingredient by itself. Direction A should move to a genuine causal-process witness, multi-holder finality/reversal cost, or another structure not already present in generic multipath class markers.",
+  "falsification_condition": "This absorber would fail if a composition-order family with the same class partition and marker overlaps produced a capability, causal witness, or coherence invariant that is not reproduced by the generic path-marker signature.",
+  "next_gate": "Replace visibility with a causal-process witness or add D1-native multi-holder/reversal-cost structure before attempting any record-order inequality."
+}

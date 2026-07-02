@@ -1,0 +1,1583 @@
+{
+  "artifact": "T397-region-capability-no-go",
+  "version": "v0.1",
+  "conventions": {
+    "subsystem_order": "(c, r1, r2, e1, e2, t) index-sorted, dims (3,2,2,2,2,2)",
+    "region_R": [
+      "c",
+      "r1",
+      "r2",
+      "t"
+    ],
+    "outside": [
+      "e1",
+      "e2"
+    ],
+    "record_subregion": [
+      "r1",
+      "r2"
+    ],
+    "orders": [
+      "ABC",
+      "BAC",
+      "CAB"
+    ],
+    "class_partition": "A-before-B (class_of = [0, 1, 0]), T395 canonical",
+    "tasks": [
+      "undo_within",
+      "undo_cross",
+      "order_postdiction",
+      "class_readout"
+    ],
+    "thresholds": {
+      "undo_within": 0.9,
+      "undo_cross": 0.9,
+      "order_postdiction": 0.9,
+      "class_readout": 0.9
+    },
+    "v_star_provenance": "V_STAR imported from T392/T393, unchanged",
+    "menu": {
+      "unitary_generators": [
+        "unwrite_r1_zbasis",
+        "unwrite_r1_phase",
+        "unwrite_r2_phase",
+        "unswitch"
+      ],
+      "n_unitary_protocols": 16,
+      "measurement_settings": [
+        "ZxZ",
+        "ZxX",
+        "XxZ",
+        "XxX"
+      ]
+    },
+    "config_family": "3 r1-writes x 2 r2-writes x 4 e-writes = 24, exhaustive",
+    "cap_gap_min": 0.5
+  },
+  "named_configs": {
+    "pristine": "none|none|none",
+    "full_keeper": "class_phase|fine_phase|none",
+    "amnesic_emitter": "none|none|full",
+    "publisher": "class_phase|fine_phase|full",
+    "class_keeper_class_emitter": "class_phase|none|class",
+    "fine_keeper_full_emitter": "none|fine_phase|full",
+    "class_keeper": "class_phase|none|none",
+    "z_keeper": "class_zbasis|none|none",
+    "burn_emitter": "none|none|burn"
+  },
+  "profiles": {
+    "none|none|none": {
+      "writes": {
+        "r1": "none",
+        "r2": "none",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.3333333333333333,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 1.1102230246251565e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": "pristine"
+    },
+    "none|none|class": {
+      "writes": {
+        "r1": "none",
+        "r2": "none",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.3333333333333333,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 1.1102230246251565e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": null
+    },
+    "none|none|full": {
+      "writes": {
+        "r1": "none",
+        "r2": "none",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.3333333333333333,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 1.1102230246251565e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": "amnesic_emitter"
+    },
+    "none|none|burn": {
+      "writes": {
+        "r1": "none",
+        "r2": "none",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.3333333333333333,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 1.1102230246251565e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": "burn_emitter"
+    },
+    "none|fine_phase|none": {
+      "writes": {
+        "r1": "none",
+        "r2": "fine_phase",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": null
+    },
+    "none|fine_phase|class": {
+      "writes": {
+        "r1": "none",
+        "r2": "fine_phase",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": null
+    },
+    "none|fine_phase|full": {
+      "writes": {
+        "r1": "none",
+        "r2": "fine_phase",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": "fine_keeper_full_emitter"
+    },
+    "none|fine_phase|burn": {
+      "writes": {
+        "r1": "none",
+        "r2": "fine_phase",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.6666666666666666
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": false
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 2.220446049250313e-16
+      },
+      "named": null
+    },
+    "class_phase|none|none": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "none",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999997
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unwrite_r1_phase+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 0.0
+      },
+      "named": "class_keeper"
+    },
+    "class_phase|none|class": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "none",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999997
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 0.0
+      },
+      "named": "class_keeper_class_emitter"
+    },
+    "class_phase|none|full": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "none",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999997
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 0.0
+      },
+      "named": null
+    },
+    "class_phase|none|burn": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "none",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999997
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unwrite_r1_phase+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 0.0
+      },
+      "named": null
+    },
+    "class_phase|fine_phase|none": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "fine_phase",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999996
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unwrite_r1_phase+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 8.881784197001252e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": "full_keeper"
+    },
+    "class_phase|fine_phase|class": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "fine_phase",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.0,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999996
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 8.881784197001252e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_phase|fine_phase|full": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "fine_phase",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999996
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 8.881784197001252e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": "publisher"
+    },
+    "class_phase|fine_phase|burn": {
+      "writes": {
+        "r1": "class_phase",
+        "r2": "fine_phase",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999996
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unwrite_r1_phase+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 8.881784197001252e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|none|none": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "none",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.9999999999999991,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unwrite_r1_zbasis+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": "z_keeper"
+    },
+    "class_zbasis|none|class": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "none",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|none|full": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "none",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|none|burn": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "none",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.9999999999999991,
+        "order_postdiction": 0.6666666666666666,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": false,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unswitch",
+        "undo_cross": "unwrite_r1_zbasis+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 2.220446049250313e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|fine_phase|none": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "fine_phase",
+        "e": "none"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.9999999999999991,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unwrite_r1_zbasis+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 6.661338147750939e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|fine_phase|class": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "fine_phase",
+        "e": "class"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.0,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": false,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 6.661338147750939e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|fine_phase|full": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "fine_phase",
+        "e": "full"
+      },
+      "profile": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": false,
+        "undo_cross": false,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "id",
+        "undo_cross": "id"
+      },
+      "menu_residuals": {
+        "order_postdiction": 6.661338147750939e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    },
+    "class_zbasis|fine_phase|burn": {
+      "writes": {
+        "r1": "class_zbasis",
+        "r2": "fine_phase",
+        "e": "burn"
+      },
+      "profile": {
+        "undo_within": 0.9999999999999993,
+        "undo_cross": 0.9999999999999991,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999998
+      },
+      "passes": {
+        "undo_within": true,
+        "undo_cross": true,
+        "order_postdiction": true,
+        "class_readout": true
+      },
+      "undo_best_protocols": {
+        "undo_within": "unwrite_r2_phase+unswitch",
+        "undo_cross": "unwrite_r1_zbasis+unswitch"
+      },
+      "menu_residuals": {
+        "order_postdiction": 6.661338147750939e-16,
+        "class_readout": 1.1102230246251565e-16
+      },
+      "named": null
+    }
+  },
+  "leg1": {
+    "n_configurations": 24,
+    "distinct_profile_count": 12,
+    "distinct_profiles": [
+      [
+        0.0,
+        0.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        0.0,
+        0.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        0.0,
+        0.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        1.0,
+        0.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        1.0,
+        0.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        1.0,
+        1.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        1.0,
+        1.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "max_menu_vs_closed_form_residual": 8.881784197001252e-16,
+    "undo_within_ge_undo_cross_everywhere": true,
+    "cross_checks": {
+      "max_branch_sum_vs_gate_built_diff": 3.925231146709438e-17,
+      "max_order_unitary_vs_t395_diff": 0.0,
+      "all_norms_one": true
+    }
+  },
+  "certificates": {
+    "n_zero_legs": 18,
+    "zero_legs": {
+      "none|none|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.7660871115576786e-16
+      },
+      "none|none|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.382710778154774e-16
+      },
+      "none|none|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.4557317547863794e-16
+      },
+      "none|fine_phase|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.7660871115576786e-16
+      },
+      "none|fine_phase|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.382710778154774e-16
+      },
+      "none|fine_phase|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.4557317547863794e-16
+      },
+      "class_phase|none|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.7660871115576786e-16
+      },
+      "class_phase|none|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.382710778154774e-16
+      },
+      "class_phase|none|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.4557317547863794e-16
+      },
+      "class_phase|fine_phase|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.7660871115576786e-16
+      },
+      "class_phase|fine_phase|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.382710778154774e-16
+      },
+      "class_phase|fine_phase|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.0816681711721685e-17,
+        "channel_bound": 3.4557317547863794e-16
+      },
+      "class_zbasis|none|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 4.166948782366562e-17,
+        "channel_bound": 3.031067413431119e-16
+      },
+      "class_zbasis|none|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.7755575615628914e-17,
+        "channel_bound": 2.0013590938048271e-16
+      },
+      "class_zbasis|none|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 4.166948782366562e-17,
+        "channel_bound": 2.3635269719997795e-16
+      },
+      "class_zbasis|fine_phase|class::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 4.166948782366562e-17,
+        "channel_bound": 3.031067413431119e-16
+      },
+      "class_zbasis|fine_phase|full::undo_within": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 2.7755575615628914e-17,
+        "channel_bound": 2.0013590938048271e-16
+      },
+      "class_zbasis|fine_phase|full::undo_cross": {
+        "menu_max": 0.0,
+        "phi_independence_max_pairwise_diff": 4.166948782366562e-17,
+        "channel_bound": 2.3635269719997795e-16
+      }
+    },
+    "all_zero_legs_certified": true,
+    "pass_legs_phi_dependence_min": 0.10206207261596573,
+    "pristine_bound_respects_achievable": {
+      "channel_bound": 2.8284271247461894,
+      "achieved": 0.9999999999999993
+    },
+    "haar_spot_check": {
+      "config": "publisher",
+      "samples": 20,
+      "max_locked_visibility": 3.314184547378654e-17,
+      "ceiling": 0.05
+    },
+    "manufactured_coherence_null": {
+      "config": "publisher",
+      "raw_normalized": 1.4999999999999996,
+      "locked": 3.925231146709438e-17
+    }
+  },
+  "leg2": {
+    "n_profiles": 12,
+    "profiles_by_label": [
+      [
+        0.0,
+        0.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        0.0,
+        0.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        0.0,
+        0.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        1.0,
+        0.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        1.0,
+        0.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.333333333,
+        0.666666667
+      ],
+      [
+        1.0,
+        1.0,
+        0.666666667,
+        0.666666667
+      ],
+      [
+        1.0,
+        1.0,
+        0.666666667,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "members_by_label": {
+      "0": [
+        "none|none|full"
+      ],
+      "1": [
+        "none|fine_phase|full"
+      ],
+      "2": [
+        "class_phase|none|full",
+        "class_zbasis|none|full"
+      ],
+      "3": [
+        "class_phase|fine_phase|full",
+        "class_zbasis|fine_phase|full"
+      ],
+      "4": [
+        "none|none|class"
+      ],
+      "5": [
+        "none|fine_phase|class"
+      ],
+      "6": [
+        "class_phase|none|class",
+        "class_zbasis|none|class"
+      ],
+      "7": [
+        "class_phase|fine_phase|class",
+        "class_zbasis|fine_phase|class"
+      ],
+      "8": [
+        "none|none|none",
+        "none|none|burn"
+      ],
+      "9": [
+        "none|fine_phase|none",
+        "none|fine_phase|burn"
+      ],
+      "10": [
+        "class_phase|none|none",
+        "class_phase|none|burn",
+        "class_zbasis|none|none",
+        "class_zbasis|none|burn"
+      ],
+      "11": [
+        "class_phase|fine_phase|none",
+        "class_phase|fine_phase|burn",
+        "class_zbasis|fine_phase|none",
+        "class_zbasis|fine_phase|burn"
+      ]
+    },
+    "natural_labeling": true,
+    "relation_size": 48,
+    "n_incomparable_pairs": 18,
+    "incomparable_pairs": [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        7,
+        10
+      ]
+    ],
+    "is_chain": false,
+    "order_dimension": 2,
+    "realizer": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        0,
+        4,
+        8,
+        1,
+        5,
+        9,
+        2,
+        6,
+        10,
+        3,
+        7,
+        11
+      ]
+    ],
+    "realizer_reconstruction_verified": true,
+    "two_axis_magnitudes": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        12,
+        12
+      ]
+    ],
+    "grid_product_structure": {
+      "n_undo_levels": 3,
+      "n_readout_levels": 4,
+      "undo_part_is_chain": true,
+      "readout_part_is_chain": true,
+      "is_exact_product_order": true,
+      "undo_levels": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "readout_levels": [
+        [
+          0.333333333,
+          0.666666667
+        ],
+        [
+          0.666666667,
+          0.666666667
+        ],
+        [
+          0.666666667,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    "hasse_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "scalar_refutation_exhaustive": {
+      "subfamily": [
+        "amnesic_emitter",
+        "fine_keeper_full_emitter",
+        "publisher",
+        "class_keeper_class_emitter",
+        "pristine",
+        "full_keeper"
+      ],
+      "subfamily_profiles": [
+        [
+          0.0,
+          0.0,
+          0.333333333,
+          0.666666667
+        ],
+        [
+          0.0,
+          0.0,
+          0.666666667,
+          0.666666667
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.666666667,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.333333333,
+          0.666666667
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "n_weak_orders_scanned": 4683,
+      "n_reproducing_scalars": 0
+    },
+    "trichotomy_witnesses": {
+      "pristine_vs_publisher": {
+        "pair": [
+          "pristine",
+          "publisher"
+        ],
+        "tasks_where_first_strictly_better": [
+          "undo_within",
+          "undo_cross"
+        ],
+        "tasks_where_second_strictly_better": [
+          "order_postdiction",
+          "class_readout"
+        ],
+        "incomparable": true,
+        "max_gap_first_direction": 0.9999999999999998,
+        "max_gap_second_direction": 0.6666666666666667
+      },
+      "class_keeper_class_emitter_vs_publisher": {
+        "pair": [
+          "class_keeper_class_emitter",
+          "publisher"
+        ],
+        "tasks_where_first_strictly_better": [
+          "undo_within"
+        ],
+        "tasks_where_second_strictly_better": [
+          "order_postdiction"
+        ],
+        "incomparable": true,
+        "max_gap_first_direction": 0.9999999999999998,
+        "max_gap_second_direction": 0.33333333333333337
+      }
+    }
+  },
+  "leg3": {
+    "statistics_partition": {
+      "n_classes": 2,
+      "class_sizes": [
+        16,
+        8
+      ],
+      "classes": [
+        [
+          "none|none|none",
+          "none|none|class",
+          "none|none|full",
+          "none|none|burn",
+          "none|fine_phase|none",
+          "none|fine_phase|class",
+          "none|fine_phase|full",
+          "none|fine_phase|burn",
+          "class_phase|none|none",
+          "class_phase|none|class",
+          "class_phase|none|full",
+          "class_phase|none|burn",
+          "class_phase|fine_phase|none",
+          "class_phase|fine_phase|class",
+          "class_phase|fine_phase|full",
+          "class_phase|fine_phase|burn"
+        ],
+        [
+          "class_zbasis|none|none",
+          "class_zbasis|none|class",
+          "class_zbasis|none|full",
+          "class_zbasis|none|burn",
+          "class_zbasis|fine_phase|none",
+          "class_zbasis|fine_phase|class",
+          "class_zbasis|fine_phase|full",
+          "class_zbasis|fine_phase|burn"
+        ]
+      ],
+      "max_intra_class_diff": 0.0,
+      "min_inter_class_diff": 0.08333333333333333
+    },
+    "flat_class_size": 16,
+    "n_profiles_realized_in_flat_class": 12,
+    "flat_class_realizes_all_profiles": true,
+    "featured_pair": {
+      "configs": [
+        "pristine",
+        "publisher"
+      ],
+      "stats_max_diff": 0.0,
+      "profile_first": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": 0.3333333333333333,
+        "class_readout": 0.6666666666666666
+      },
+      "profile_second": {
+        "undo_within": 0.0,
+        "undo_cross": 0.0,
+        "order_postdiction": 1.0,
+        "class_readout": 0.9999999999999996
+      },
+      "gaps_first_minus_second": {
+        "undo_within": 0.9999999999999998,
+        "undo_cross": 0.9999999999999993,
+        "order_postdiction": -0.6666666666666667,
+        "class_readout": -0.3333333333333329
+      },
+      "max_gap_each_direction": [
+        0.9999999999999998,
+        0.6666666666666667
+      ],
+      "gap_floor_met_both_directions": true
+    },
+    "capability_test_undecidable_by_statistics": {
+      "test": "undo_cross >= v* (0.9)",
+      "flat_class_statistics_constant": true,
+      "test_nonconstant_on_flat_class": true,
+      "n_pass": 8,
+      "n_fail": 8
+    },
+    "converse_pair": {
+      "configs": [
+        "class_keeper",
+        "z_keeper"
+      ],
+      "profile_max_diff": 4.440892098500626e-16,
+      "stats_max_diff": 0.08333333333333333
+    },
+    "screening": {
+      "verdict_map": {
+        "pristine": "cross-undo-capable-at-R",
+        "publisher": "cross-undo-incapable-at-R"
+      },
+      "prior_only_risk": {
+        "zero_one": 0.4999999999999997,
+        "false_capable_costly": 0.4999999999999997,
+        "false_incapable_costly": 0.4999999999999997
+      },
+      "full_declared_readout_risk": {
+        "zero_one": 0.4999999999999997,
+        "false_capable_costly": 0.4999999999999997,
+        "false_incapable_costly": 0.4999999999999997
+      },
+      "statistics_lift": {
+        "zero_one": 0.0,
+        "false_capable_costly": 0.0,
+        "false_incapable_costly": 0.0
+      },
+      "mutual_information_verdict_vs_statistics_bits": 1.2813706015259669e-15,
+      "probe_statistics_part_risk": {
+        "zero_one": 0.49999999999999967,
+        "false_capable_costly": 0.49999999999999967,
+        "false_incapable_costly": 0.49999999999999967
+      },
+      "probe_full_risk": {
+        "zero_one": 0.16666666666666657,
+        "false_capable_costly": 0.16666666666666657,
+        "false_incapable_costly": 0.16666666666666657
+      },
+      "probe_lift": {
+        "zero_one": 0.3333333333333331,
+        "false_capable_costly": 0.3333333333333331,
+        "false_incapable_costly": 0.3333333333333331
+      },
+      "cmi_verdict_probe_given_statistics_bits": 0.6666666666666662,
+      "t137_null_risk": {
+        "zero_one": 0.49999999999999967,
+        "false_capable_costly": 0.49999999999999967,
+        "false_incapable_costly": 0.49999999999999967
+      },
+      "t137_null_lift": {
+        "zero_one": 0.0,
+        "false_capable_costly": 0.0,
+        "false_incapable_costly": 0.0
+      },
+      "t137_null_cmi_bits": 0.0
+    },
+    "vacuity_control": {
+      "pair": [
+        "pristine",
+        "z_keeper"
+      ],
+      "stats_max_diff": 0.08333333333333333,
+      "zero_one_risk_from_statistics": 0.25,
+      "zero_one_lift_from_statistics": 0.25
+    },
+    "burn_null": {
+      "profile_max_diff_vs_pristine": 0.0,
+      "stats_max_diff_vs_pristine": 0.0,
+      "excitation_probability_burn": 0.9999999999999996,
+      "excitation_probability_pristine": 0.0
+    }
+  },
+  "no_signalling": {
+    "max_readout_diff_over_phase": 2.7755575615628914e-17,
+    "max_readout_diff_over_escape_writes": 0.0,
+    "max_c_r_marginal_diff_over_settings": 4.163336342344337e-17,
+    "max_target_marginal_span_over_settings": 0.12980702797542631
+  },
+  "verdicts": {
+    "leg1": "C(R) realized: at one fixed region, one fixed finite intervention menu, and one declared four-task set, all 24 configurations of the declared write family have exactly computed capability profiles; menu-achieved values match closed-form optima exactly and 12 distinct profiles are realized -- a constructed finite object in this family, not a statement about physical agents",
+    "leg2": "anti-scalar at the capability level: the realized capability poset is the exact product of an undo chain and a readout chain (a 3x4 grid) with incomparable pairs, and its order dimension is exactly 2; by T394 (Theorem 2, the T49 anti-scalar rung, with T394's tie-collapse closure) no scalar capability monotone -- with or without ties -- reproduces the enactability order, while the two exhibited monotone axes reconstruct it exactly; finite realized structure in this family, not a theorem about physical agents",
+    "leg3": "statistics underdetermine capability in this family: the declared-readout statistics are constant (max diff 0.0 at every swept phase) across a 16-configuration class that realizes ALL 12 capability profiles, so no functional of the declared R-statistics decides any capability-typed test that varies on that class; the featured statistics-identical pair is capability-incomparable with gaps >= 0.5 in both directions, and a capability-identical pair differs in statistics -- neither typing refines the other; finite observation in this family, not a theorem"
+  }
+}

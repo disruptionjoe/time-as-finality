@@ -1,5 +1,22 @@
 ﻿# Roadmap
 
+## 2026-07-02 Tri-Repo Synthesis Distillation
+
+The tri-repo synthesis in
+[audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md](audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md)
+has been distilled into a TaF-owned next-artifact target:
+[region-indexed-capability-discriminator](open-problems/region-indexed-capability-discriminator.md).
+
+The key update is post-T397: T395's `k >= 3` partial-record/class-coarse
+residue should not be promoted as a temporal-order inequality ingredient by
+itself. Direction A should move to either a genuine causal-process witness or
+a D1-native multi-holder / reversal-cost structure. The capability
+discriminator states the safer version: fixed bounded-region statistics,
+including declared region-supported interventions, may underdetermine the
+enactable transformation set once boundary-crossing menus are excluded.
+
+No claim-ledger movement is earned by the synthesis or this placement.
+
 ## Mathematical Spine
 
 The repo's next phase is to move from many discovered patterns to one explicit

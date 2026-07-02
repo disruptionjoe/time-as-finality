@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T399 Boundary-Crossing Intervention Screen
+
+T399 runs the stronger post-T398 discriminator shape in a deliberately small
+finite fixture. Two Bell states have identical `R` marginals and identical
+boundary-local marginals, so every `R`-supported intervention statistic is
+identical; a joint boundary-crossing parity/Bell readout separates them
+perfectly.
+
+The verdict is absorbing, not promotional: the separator is ordinary
+cross-boundary correlation once the enlarged `RB` state and joint measurement
+are admitted. Direction A should not repeat this trivial boundary-access
+screen. The next worthwhile version has to make the boundary-crossing task
+physically forced by the declared setup rather than merely allowed by
+enlarging access.
+
 ## 2026-07-02 T398 Resource-Profile Absorber
 
 T398 runs the resource-theory absorber named by T397 for the bounded-region

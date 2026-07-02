@@ -40,3 +40,4 @@ Routine detail stays here; it is not loaded by default.
 ## 2026-07-02
 
 - Progress run created T398, the resource-profile absorber for T397's `C(R)` object. Verdict: once C(R) profiles are admitted as resource states under the declared region/menu/task context, the T397 profile quotient is exactly a 3 x 4 product resource preorder; anti-scalar shape and statistics-flat class are absorbed as resource-preorder behavior / incomplete observer shadow. No claim-ledger movement. See `steward/runs/2026-07-02-resource-profile-absorber.md`.
+- Progress run created T399, the boundary-crossing intervention statistics screen. Verdict: the strengthened formal shape exists in a Bell-pair fixture (all R-supported statistics/interventions equal, joint boundary menu separates), but it is absorbed by ordinary enlarged-state access and boundary relocation. No claim-ledger movement. See `steward/runs/2026-07-02-boundary-crossing-intervention-screen.md`.

@@ -5,7 +5,7 @@
 Open problem / next-artifact spec. No claim promotion.
 
 Seeded by `audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`
-and updated against the later T397 and T398 absorber results.
+and updated against the later T397, T398, and T399 absorber results.
 
 T398 closes the first resource-profile absorber gate at the finite internal
 level: T397's `C(R)` profiles form a 3 x 4 product resource preorder once the
@@ -13,6 +13,15 @@ capability profile and declared region/menu/task context are admitted. The
 anti-scalar profile shape and statistics-flat class therefore do not promote
 `C(R)` as a resource-theory novelty route. They remain useful translation
 material for designing the stronger discriminator below.
+
+T399 closes the trivial version of the stronger discriminator. A Bell-pair
+screen proves the formal shape can be realized: all `R`-supported statistics
+and interventions are identical because the `R` marginals are identical, while
+a joint boundary-crossing parity/Bell readout separates the pair. That result
+is absorbed by ordinary enlarged-state access and boundary relocation. The
+remaining burden is not "show any boundary-crossing separator"; it is to find a
+nontrivial task where crossing the boundary is forced by the declared physical
+or finality setup rather than merely admitted as the enlarged state.
 
 ## Problem
 
@@ -48,6 +57,8 @@ Build a finite fixture with:
 - exact equality certificates for statistics under interventions in `M_R`;
 - a boundary move or extension menu `M_ext` that changes reversal,
   recollection, postdiction, or record-recovery capability;
+- a reason the boundary-crossing menu is forced by the declared setup rather
+  than merely the ordinary enlarged-state completion;
 - positive controls where region enlargement restores the capability;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.
@@ -70,7 +81,8 @@ new physics claim.
 Demote or close this route if:
 
 - the separating capability factors through an ordinary enlarged-state
-  description already licensed by a mature neighbor;
+  description already licensed by a mature neighbor (T399 closes this trivial
+  version);
 - the difference is just boundary relocation already expressed by D1
   relative-to-access;
 - the criterion factors through the SBS closure key at fixed access;

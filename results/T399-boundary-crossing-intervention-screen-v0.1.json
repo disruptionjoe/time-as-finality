@@ -1,0 +1,360 @@
+{
+  "absorber_audit": {
+    "R_supported_intervention_underdescription": {
+      "all_R_supported_statistic_bound": 0.0,
+      "reason": "Equal R marginals imply equality for every R-supported channel followed by every R-supported statistic.",
+      "status": "certified_no_separator"
+    },
+    "SBS_or_closure_key": {
+      "reason": "The fixture is a two-qubit correlation screen with no stable broadcast-structure claim and no claim that an SBS key is fixed.",
+      "status": "not_invoked"
+    },
+    "boundary_relocation": {
+      "reason": "The separation appears exactly when the task menu crosses the declared boundary; it does not require a new capability object.",
+      "status": "absorbs_as_access_boundary"
+    },
+    "ordinary_enlarged_state_completion": {
+      "full_trace_distance": 1.0,
+      "reason": "The full RB states are orthogonal. Once the boundary system and joint RB measurements are admitted, separation is an ordinary enlarged-state fact.",
+      "status": "absorbs"
+    }
+  },
+  "artifact": "T399-boundary-crossing-intervention-screen-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "controls": {
+    "phase_correlation_pair": {
+      "bell_basis_separates": true,
+      "boundary_local_trace_distance": 0.0,
+      "full_trace_distance": 1.0,
+      "joint_Z_parity_max_diff": 0.0,
+      "pair": [
+        "phi_plus",
+        "phi_minus"
+      ],
+      "purpose": "null control: not every cross-boundary distinction is visible to parity; the Bell menu is the full boundary-crossing readout",
+      "region_trace_distance": 0.0
+    },
+    "region_visible_pair": {
+      "pair": [
+        "00_product",
+        "10_product"
+      ],
+      "purpose": "teeth control: the finite R statistics can distinguish a pair when the R marginal actually differs",
+      "region_only_binary_success": 1.0,
+      "region_trace_distance": 1.0
+    }
+  },
+  "falsification_condition": "This screen would fail if the selected pair became distinguishable by any R-supported statistic, if the boundary-crossing menu did not separate it, or if the separation could not be explained by the ordinary enlarged state.",
+  "main_pair_audit": {
+    "all_R_supported_statistic_bound": 0.0,
+    "all_boundary_local_statistic_bound": 0.0,
+    "boundary_crossing_menu": {
+      "bell_basis_readout": {
+        "binary_success": 1.0,
+        "phi_plus": {
+          "phi_minus": 0.0,
+          "phi_plus": 1.0,
+          "psi_minus": 0.0,
+          "psi_plus": 0.0
+        },
+        "psi_plus": {
+          "phi_minus": 0.0,
+          "phi_plus": 0.0,
+          "psi_minus": 0.0,
+          "psi_plus": 1.0
+        },
+        "separates_pair": true
+      },
+      "joint_Z_parity_readout": {
+        "binary_success": 1.0,
+        "phi_plus": {
+          "even": 1.0,
+          "odd": 0.0
+        },
+        "psi_plus": {
+          "even": 0.0,
+          "odd": 1.0
+        },
+        "separates_pair": true
+      }
+    },
+    "boundary_local_binary_success": 0.5,
+    "boundary_local_statistics": {
+      "max_diff": 0.0,
+      "phi_plus": {
+        "X": [
+          0.5,
+          0.5
+        ],
+        "Y": [
+          0.5,
+          0.5
+        ],
+        "Z": [
+          0.5,
+          0.5
+        ]
+      },
+      "psi_plus": {
+        "X": [
+          0.5,
+          0.5
+        ],
+        "Y": [
+          0.5,
+          0.5
+        ],
+        "Z": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "boundary_local_trace_distance": 0.0,
+    "finite_region_intervention_menu": {
+      "max_diff": 0.0,
+      "measurement_bases": [
+        "Z",
+        "X",
+        "Y"
+      ],
+      "n_statistics": 24,
+      "sample_phi_plus": {
+        "H->X": [
+          0.5,
+          0.5
+        ],
+        "H->Y": [
+          0.5,
+          0.5
+        ],
+        "H->Z": [
+          0.5,
+          0.5
+        ],
+        "HS->X": [
+          0.5,
+          0.5
+        ],
+        "HS->Y": [
+          0.5,
+          0.5
+        ],
+        "HS->Z": [
+          0.5,
+          0.5
+        ],
+        "I->X": [
+          0.5,
+          0.5
+        ],
+        "I->Y": [
+          0.5,
+          0.5
+        ],
+        "I->Z": [
+          0.5,
+          0.5
+        ],
+        "S->X": [
+          0.5,
+          0.5
+        ],
+        "S->Y": [
+          0.5,
+          0.5
+        ],
+        "S->Z": [
+          0.5,
+          0.5
+        ],
+        "SH->X": [
+          0.5,
+          0.5
+        ],
+        "SH->Y": [
+          0.5,
+          0.5
+        ],
+        "SH->Z": [
+          0.5,
+          0.5
+        ],
+        "X->X": [
+          0.5,
+          0.5
+        ],
+        "X->Y": [
+          0.5,
+          0.5
+        ],
+        "X->Z": [
+          0.5,
+          0.5
+        ],
+        "Y->X": [
+          0.5,
+          0.5
+        ],
+        "Y->Y": [
+          0.5,
+          0.5
+        ],
+        "Y->Z": [
+          0.5,
+          0.5
+        ],
+        "Z->X": [
+          0.5,
+          0.5
+        ],
+        "Z->Y": [
+          0.5,
+          0.5
+        ],
+        "Z->Z": [
+          0.5,
+          0.5
+        ]
+      },
+      "sample_psi_plus": {
+        "H->X": [
+          0.5,
+          0.5
+        ],
+        "H->Y": [
+          0.5,
+          0.5
+        ],
+        "H->Z": [
+          0.5,
+          0.5
+        ],
+        "HS->X": [
+          0.5,
+          0.5
+        ],
+        "HS->Y": [
+          0.5,
+          0.5
+        ],
+        "HS->Z": [
+          0.5,
+          0.5
+        ],
+        "I->X": [
+          0.5,
+          0.5
+        ],
+        "I->Y": [
+          0.5,
+          0.5
+        ],
+        "I->Z": [
+          0.5,
+          0.5
+        ],
+        "S->X": [
+          0.5,
+          0.5
+        ],
+        "S->Y": [
+          0.5,
+          0.5
+        ],
+        "S->Z": [
+          0.5,
+          0.5
+        ],
+        "SH->X": [
+          0.5,
+          0.5
+        ],
+        "SH->Y": [
+          0.5,
+          0.5
+        ],
+        "SH->Z": [
+          0.5,
+          0.5
+        ],
+        "X->X": [
+          0.5,
+          0.5
+        ],
+        "X->Y": [
+          0.5,
+          0.5
+        ],
+        "X->Z": [
+          0.5,
+          0.5
+        ],
+        "Y->X": [
+          0.5,
+          0.5
+        ],
+        "Y->Y": [
+          0.5,
+          0.5
+        ],
+        "Y->Z": [
+          0.5,
+          0.5
+        ],
+        "Z->X": [
+          0.5,
+          0.5
+        ],
+        "Z->Y": [
+          0.5,
+          0.5
+        ],
+        "Z->Z": [
+          0.5,
+          0.5
+        ]
+      },
+      "unitaries": [
+        "I",
+        "X",
+        "Y",
+        "Z",
+        "H",
+        "S",
+        "HS",
+        "SH"
+      ]
+    },
+    "full_state_binary_success": 1.0,
+    "full_trace_distance": 1.0,
+    "pair": [
+      "phi_plus",
+      "psi_plus"
+    ],
+    "region_only_binary_success": 0.5,
+    "region_trace_distance": 0.0
+  },
+  "recommended_next": [
+    "Treat this as a clean finite boundary-access screen, not a promoted residue.",
+    "For stronger Direction-A work, require a nontrivial task where the boundary crossing is physically forced rather than merely admitted.",
+    "Keep external-facing resource/correlation language behind a separate prior-art note."
+  ],
+  "residue_label": "absorbed_boundary_access_translation",
+  "setup": {
+    "R_supported_interventions": "arbitrary channels/statistics on R are covered by equality of the R marginals; the finite unitary/readout table is a concrete check",
+    "boundary_B": [
+      "second_qubit"
+    ],
+    "boundary_crossing_menu": [
+      "joint Z parity readout",
+      "Bell-basis readout"
+    ],
+    "main_pair": "Bell states phi_plus and psi_plus",
+    "region_R": [
+      "first_qubit"
+    ]
+  },
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "verdict": "finite boundary-crossing discriminator shape exists but is absorbed: the two source states are identical under every R-supported statistic because their R marginals are equal, while a joint boundary-crossing menu separates them by accessing ordinary cross-boundary correlation; this is a boundary-access translation result, not a ledger upgrade"
+}

@@ -1,0 +1,1527 @@
+{
+  "artifact": "T411-departed-record-capability-discriminator-v0.1",
+  "labeling_convention": "retained density matrix ordered (S, REC, E1_1..E1_m and, in R++ runs, E2_1..E2_m); M measured, M = 0 selected, removed (pure, factorized); carriers DEPART (partial trace) per the run's declared reach: R departs both tiers, R+ departs tier-2, R++ retains both",
+  "open_problem_criterion": "No functional of R-supported statistics, including statistics under all declared R-supported interventions, separates the two capability states; but a boundary-crossing task menu separates them.",
+  "theta_meter": 1.0471975511965976,
+  "v_star": 0.9,
+  "vis_A_analytic": 0.989743318610787,
+  "theta_broadcast": 3.141592653589793,
+  "m_sweep": [
+    1,
+    2,
+    3
+  ],
+  "beta_sweep": [
+    "inf",
+    "1.0",
+    "0.0"
+  ],
+  "cascades": [
+    "swap",
+    "broadcast"
+  ],
+  "menu_declaration": "ALL CPTP channels supported on the reach, with unlimited work ancillas in any (necessarily phi-independent) state, pure or Gibbs; reach = the physically retained register set of the run; no exclusion clause over co-present registers exists",
+  "construction": {
+    "worst_cross_module_A_Rplus_vs_T410": 0.0,
+    "worst_cross_module_A_R_vs_T410": 0.0,
+    "worst_Rplus_to_R_marginal_consistency": 0.0,
+    "p_m0_values": [
+      0.8749999999999998,
+      0.875,
+      0.8749999999999998,
+      0.8749999999999998,
+      0.8749999999999998,
+      0.8749999999999999
+    ],
+    "worst_p_m0_deviation": 2.220446049250313e-16,
+    "t410_standing_note": "T410 is recorded-tier machinery (hostile review QUEUED); every T410-derived fact used here is re-asserted inside this artifact's own suite"
+  },
+  "equality_observational": {
+    "worst_rho_R_entrywise_diff": 5.551115123125783e-17,
+    "comparisons": 252,
+    "note": "rho_R^A = rho_R^B exactly: at theta = pi the broadcast multiplies the S-REC coherence block by f^m = 0, so rho_R = diag(4/7, 3/7) on {|00>, |11>}, phi-independent and identical for both states at every beta and m"
+  },
+  "equality_interventional": {
+    "pairs_checked": 54,
+    "haar_seed": 20260704,
+    "haar_samples": 15,
+    "worst": {
+      "lemma_operator_level": 1.1102230246251565e-16,
+      "unitary_family": 5.551115123125783e-17,
+      "instrument_probs": 5.551115123125783e-17,
+      "instrument_states": 2.220446049250313e-16,
+      "sequential_probs": 5.551115123125783e-17,
+      "sequential_states": 5.629470901083221e-17,
+      "haar_family": 1.112289053805588e-16,
+      "commutation_in_action": 0.0
+    },
+    "worst_overall": 2.220446049250313e-16,
+    "lemma": "B's retained R+ state = (id_R (x) Lambda_E)(A's), Lambda_E acting only on tier-1 factors (replacement for SWAP, exact Z-dephasing for the broadcast cascade); Lambda_E commutes with every R-supported CPTP map, instrument, and work-assisted sequence (disjoint tensor factors) and is trace-preserving, so ALL R-supported outcome statistics -- including per-branch continuations -- are identical. The lemma carries the ALL quantifier; a later R-statistic depends on a conditioned joint state only through its R marginal (Tr_E[(Phi (x) id) sigma] = Phi(Tr_E sigma)), so per-branch R-marginal equality covers arbitrary continuations. The Haar rows are illustrative; sampling never carries the equality verdict."
+  },
+  "forcing": {
+    "rows_checked": 27,
+    "worst_phi_cert_at_R": 2.220446049250313e-16,
+    "worst_bound_at_R": 1.3877787807814457e-16,
+    "worst_work_dilation_diff": 4.163336342344337e-17,
+    "all_final_relative_to_R": true,
+    "sample_rows": [
+      {
+        "variant": "A",
+        "cascade": "swap",
+        "m": 1,
+        "beta": "inf",
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "verdict": "final-relative-to-R"
+      },
+      {
+        "variant": "B",
+        "cascade": "swap",
+        "m": 1,
+        "beta": "inf",
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "verdict": "final-relative-to-R"
+      },
+      {
+        "variant": "B",
+        "cascade": "broadcast",
+        "m": 1,
+        "beta": "inf",
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "verdict": "final-relative-to-R"
+      },
+      {
+        "variant": "A",
+        "cascade": "swap",
+        "m": 1,
+        "beta": 1.0,
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "verdict": "final-relative-to-R"
+      },
+      {
+        "variant": "B",
+        "cascade": "swap",
+        "m": 1,
+        "beta": 1.0,
+        "achieved": 0.0,
+        "phi_cert": 1.6653345369377348e-16,
+        "bound": 1.3877787807814457e-16,
+        "verdict": "final-relative-to-R"
+      },
+      {
+        "variant": "B",
+        "cascade": "broadcast",
+        "m": 1,
+        "beta": 1.0,
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.3877787807814457e-16,
+        "verdict": "final-relative-to-R"
+      }
+    ],
+    "note": "the restoration task is certified impossible inside R for BOTH states, against all channels with unlimited work (pure and Gibbs registers asserted): boundary crossing is forced by the task, not optional. Disclosed: T400's compulsion clause (an agent FORCED to attempt) is not modeled; forcing here is task-relative and certificate-carried."
+  },
+  "separation": {
+    "A_rows": [
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 1,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.989743318610787,
+        "phi_cert": 0.6266216388257184,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 1,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.4285714285714285,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 1,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 2,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.458097124618734,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 2,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.21428571428571425,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 2,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 3,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.3348958327982639,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 3,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": null
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.10714285714285712,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R+",
+        "certified_by": "achieving_protocol",
+        "variant": "A",
+        "m": 3,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": null
+      }
+    ],
+    "B_swap_rows": [
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 1.1102230246251565e-16,
+        "bound": 1.6306400674181987e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 1.1102230246251565e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 1.1102230246251565e-16,
+        "bound": 1.1709383462843448e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 5.551115123125783e-17,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 8.326672684688674e-17,
+        "bound": 8.738669510233166e-17,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.7755575615628914e-17,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "swap"
+      }
+    ],
+    "B_broadcast_rows": [
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 1.1102230246251565e-16,
+        "bound": 1.6306400674181987e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 1.1102230246251565e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 1,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 8.326672684688674e-17,
+        "bound": 1.1709383462843448e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 5.551115123125783e-17,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 2,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": "inf",
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 5.551115123125783e-17,
+        "bound": 8.304988641238964e-17,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": 1.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.0,
+        "phi_cert": 2.7755575615628914e-17,
+        "bound": 1.249000902703301e-16,
+        "band": "certified_infeasible",
+        "verdict": "final-relative-to-R+",
+        "certified_by": "phi_independence",
+        "variant": "B",
+        "m": 3,
+        "beta": 0.0,
+        "reach": "R+",
+        "cascade": "broadcast"
+      }
+    ],
+    "A_all_restorable_at_Rplus": true,
+    "worst_A_restore_vs_visA": 1.1102230246251565e-16,
+    "min_A_record_trace_cert": 0.10714285714285712,
+    "record_trace_floor": 0.05,
+    "B_swap_all_final_at_Rplus": true,
+    "worst_B_swap_product_residual": 2.7755575615628914e-17,
+    "worst_B_swap_phi_cert": 2.220446049250313e-16,
+    "worst_B_unwrite_locked": 0.0,
+    "dilation_cert_with_work": 1.1102230246251565e-16,
+    "dilation_bound_diff_with_work": 4.336808689942018e-17,
+    "B_broadcast_all_final_at_Rplus": true,
+    "worst_B_broadcast_phi_cert": 2.220446049250313e-16,
+    "B_broadcast_fallback_used": false,
+    "obstruction_lemma_note": "A's nonzero R+ record trace is REQUIRED by T408's menu-support obstruction lemma: a capability gap needs a statistical trace within the separating menu's support; the flat surface (R) is exactly the complement of that support"
+  },
+  "positive_control": {
+    "rows": [
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.458097124618734,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.458097124618734,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.21428571428571425,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.21428571428571425,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 1,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.24482847151461062,
+        "bound": 1.9794866372215743,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.24482847151461062,
+        "bound": 1.9794866372215743,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.05357142857142856,
+        "bound": 1.979486637221574,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.05357142857142856,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 2,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.857142857142857,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": "inf",
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.13084775529658318,
+        "bound": 1.9794866372215743,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107871,
+        "phi_cert": 0.13084775529658318,
+        "bound": 1.979486637221574,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": 1.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.01339285714285714,
+        "bound": 1.9794866372215738,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "swap"
+      },
+      {
+        "achieved": 0.9897433186107869,
+        "phi_cert": 0.01339285714285714,
+        "bound": 1.9794866372215736,
+        "band": "feasible_zero_cost",
+        "verdict": "restorable-at-R++",
+        "certified_by": "achieving_protocol",
+        "variant": "B",
+        "m": 3,
+        "beta": 0.0,
+        "reach": "R++",
+        "cascade": "broadcast"
+      }
+    ],
+    "all_B_restorable_at_Rpp": true,
+    "worst_restore_vs_visA": 1.1102230246251565e-16,
+    "cascade_ledgers": [
+      {
+        "m": 1,
+        "beta": "inf",
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.4285714285714287,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 1.3658162094009434,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 1,
+        "beta": "inf",
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 0.4285714285714287,
+        "total_Q": 0.4285714285714287,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 1.3658162094009434,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 1,
+        "beta": 1.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025428993,
+            "delta_S_complex_nats": 0.6829081047004718,
+            "mutual_information_nats": 0.7916714860082326,
+            "Sigma_i": 0.8809583149547617,
+            "sigma_identity_residual": 1.1102230246251565e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.19805021025428993,
+        "total_Sigma_nats": 0.8809583149547617,
+        "total_mutual_information_departed_nats": 0.7916714860082326,
+        "min_Sigma": 0.8809583149547617,
+        "worst_identity_residual": 1.1102230246251565e-16
+      },
+      {
+        "m": 1,
+        "beta": 1.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.2158048452704283,
+            "Q_i": 0.2158048452704283,
+            "delta_S_complex_nats": 0.6829081047004718,
+            "mutual_information_nats": 0.7933867513981048,
+            "Sigma_i": 0.8987129499709001,
+            "sigma_identity_residual": 0.0
+          }
+        ],
+        "total_W": 0.2158048452704283,
+        "total_Q": 0.2158048452704283,
+        "total_Sigma_nats": 0.8987129499709001,
+        "total_mutual_information_departed_nats": 0.7933867513981048,
+        "min_Sigma": 0.8987129499709001,
+        "worst_identity_residual": 0.0
+      },
+      {
+        "m": 1,
+        "beta": 0.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004718,
+            "mutual_information_nats": 0.6829081047004719,
+            "Sigma_i": 0.6829081047004718,
+            "sigma_identity_residual": 1.1102230246251565e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004718,
+        "total_mutual_information_departed_nats": 0.6829081047004719,
+        "min_Sigma": 0.6829081047004718,
+        "worst_identity_residual": 1.1102230246251565e-16
+      },
+      {
+        "m": 1,
+        "beta": 0.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004718,
+            "mutual_information_nats": 0.6829081047004719,
+            "Sigma_i": 0.6829081047004718,
+            "sigma_identity_residual": 1.1102230246251565e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004718,
+        "total_mutual_information_departed_nats": 0.6829081047004719,
+        "min_Sigma": 0.6829081047004718,
+        "worst_identity_residual": 1.1102230246251565e-16
+      },
+      {
+        "m": 2,
+        "beta": "inf",
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.8571428571428574,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 2.048724314101415,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 2,
+        "beta": "inf",
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 2,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 0.8571428571428574,
+        "total_Q": 0.8571428571428574,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 2.048724314101415,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 2,
+        "beta": 1.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025428993,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 0.7916714860082326,
+            "Sigma_i": 0.8809583149547616,
+            "sigma_identity_residual": 0.0
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025429004,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.10876338130776064,
+            "Sigma_i": 0.19805021025429004,
+            "sigma_identity_residual": 3.3306690738754696e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.39610042050857996,
+        "total_Sigma_nats": 1.0790085252090518,
+        "total_mutual_information_departed_nats": 0.9004348673159932,
+        "min_Sigma": 0.19805021025429004,
+        "worst_identity_residual": 3.3306690738754696e-16
+      },
+      {
+        "m": 2,
+        "beta": 1.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.2158048452704283,
+            "Q_i": 0.2158048452704283,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 0.7933867513981046,
+            "Sigma_i": 0.8987129499709,
+            "sigma_identity_residual": 1.1102230246251565e-16
+          },
+          {
+            "i": 2,
+            "W_i": 0.2158048452704283,
+            "Q_i": 0.2158048452704283,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.11047864669763285,
+            "Sigma_i": 0.2158048452704283,
+            "sigma_identity_residual": 2.220446049250313e-16
+          }
+        ],
+        "total_W": 0.4316096905408566,
+        "total_Q": 0.4316096905408566,
+        "total_Sigma_nats": 1.1145177952413283,
+        "total_mutual_information_departed_nats": 0.9038653980957374,
+        "min_Sigma": 0.2158048452704283,
+        "worst_identity_residual": 2.220446049250313e-16
+      },
+      {
+        "m": 2,
+        "beta": 0.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004715,
+            "mutual_information_nats": 0.6829081047004721,
+            "Sigma_i": 0.6829081047004715,
+            "sigma_identity_residual": 6.661338147750939e-16
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": -4.440892098500626e-16,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 4.440892098500626e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004715,
+        "total_mutual_information_departed_nats": 0.6829081047004717,
+        "min_Sigma": 0.0,
+        "worst_identity_residual": 6.661338147750939e-16
+      },
+      {
+        "m": 2,
+        "beta": 0.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004715,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": 0.6829081047004715,
+            "sigma_identity_residual": 2.220446049250313e-16
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": -4.440892098500626e-16,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 4.440892098500626e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004715,
+        "total_mutual_information_departed_nats": 0.6829081047004713,
+        "min_Sigma": 0.0,
+        "worst_identity_residual": 4.440892098500626e-16
+      },
+      {
+        "m": 3,
+        "beta": "inf",
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 3,
+            "W_i": 0.0,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 1.285714285714286,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 2.731632418801887,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 3,
+        "beta": "inf",
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.6829081047004717,
+            "mutual_information_nats": 1.3658162094009434,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 2,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          },
+          {
+            "i": 3,
+            "W_i": 0.4285714285714287,
+            "Q_i": 0.4285714285714287,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.6829081047004717,
+            "Sigma_i": "inf",
+            "sigma_identity_residual": null
+          }
+        ],
+        "total_W": 1.285714285714286,
+        "total_Q": 1.285714285714286,
+        "total_Sigma_nats": "inf",
+        "total_mutual_information_departed_nats": 2.731632418801887,
+        "min_Sigma": null,
+        "worst_identity_residual": null
+      },
+      {
+        "m": 3,
+        "beta": 1.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025428993,
+            "delta_S_complex_nats": 0.6829081047004719,
+            "mutual_information_nats": 0.7916714860082332,
+            "Sigma_i": 0.8809583149547618,
+            "sigma_identity_residual": 4.440892098500626e-16
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025428998,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.10876338130776109,
+            "Sigma_i": 0.19805021025428998,
+            "sigma_identity_residual": 1.6653345369377348e-16
+          },
+          {
+            "i": 3,
+            "W_i": 0.0,
+            "Q_i": 0.19805021025428993,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.10876338130776109,
+            "Sigma_i": 0.19805021025428993,
+            "sigma_identity_residual": 2.220446049250313e-16
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.5941506307628699,
+        "total_Sigma_nats": 1.2770587354633418,
+        "total_mutual_information_departed_nats": 1.0091982486237554,
+        "min_Sigma": 0.19805021025428993,
+        "worst_identity_residual": 4.440892098500626e-16
+      },
+      {
+        "m": 3,
+        "beta": 1.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.2158048452704283,
+            "Q_i": 0.21580484527042826,
+            "delta_S_complex_nats": 0.6829081047004719,
+            "mutual_information_nats": 0.7933867513981054,
+            "Sigma_i": 0.8987129499709001,
+            "sigma_identity_residual": 6.661338147750939e-16
+          },
+          {
+            "i": 2,
+            "W_i": 0.2158048452704282,
+            "Q_i": 0.2158048452704283,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.1104786466976333,
+            "Sigma_i": 0.2158048452704283,
+            "sigma_identity_residual": 2.220446049250313e-16
+          },
+          {
+            "i": 3,
+            "W_i": 0.2158048452704283,
+            "Q_i": 0.2158048452704283,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.1104786466976333,
+            "Sigma_i": 0.2158048452704283,
+            "sigma_identity_residual": 3.3306690738754696e-16
+          }
+        ],
+        "total_W": 0.6474145358112848,
+        "total_Q": 0.6474145358112848,
+        "total_Sigma_nats": 1.3303226405117567,
+        "total_mutual_information_departed_nats": 1.014344044793372,
+        "min_Sigma": 0.2158048452704283,
+        "worst_identity_residual": 6.661338147750939e-16
+      },
+      {
+        "m": 3,
+        "beta": 0.0,
+        "cascade": "swap",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004721,
+            "mutual_information_nats": 0.6829081047004721,
+            "Sigma_i": 0.6829081047004721,
+            "sigma_identity_residual": 0.0
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.0,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 0.0
+          },
+          {
+            "i": 3,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.0,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 0.0
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004721,
+        "total_mutual_information_departed_nats": 0.6829081047004721,
+        "min_Sigma": 0.0,
+        "worst_identity_residual": 0.0
+      },
+      {
+        "m": 3,
+        "beta": 0.0,
+        "cascade": "broadcast",
+        "collisions": [
+          {
+            "i": 1,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.6829081047004721,
+            "mutual_information_nats": 0.6829081047004721,
+            "Sigma_i": 0.6829081047004721,
+            "sigma_identity_residual": 0.0
+          },
+          {
+            "i": 2,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.0,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 0.0
+          },
+          {
+            "i": 3,
+            "W_i": 0.0,
+            "Q_i": 0.0,
+            "delta_S_complex_nats": 0.0,
+            "mutual_information_nats": 0.0,
+            "Sigma_i": 0.0,
+            "sigma_identity_residual": 0.0
+          }
+        ],
+        "total_W": 0.0,
+        "total_Q": 0.0,
+        "total_Sigma_nats": 0.6829081047004721,
+        "total_mutual_information_departed_nats": 0.6829081047004721,
+        "min_Sigma": 0.0,
+        "worst_identity_residual": 0.0
+      }
+    ],
+    "worst_swap_cascade_work": 0.0,
+    "worst_Q_closed_form_residual": 1.6653345369377348e-16,
+    "worst_sigma_identity_residual": 6.661338147750939e-16,
+    "min_Sigma_over_sweep": 0.0,
+    "sigma_beta0_m1_nats": 0.6829081047004718,
+    "sigma_beta0_m1_predeclared": 0.6829081047004717,
+    "sigma_beta0_equals_departed_mi_residual": 1.1102230246251565e-16,
+    "worst_unswap_work": 4.440892098500626e-16,
+    "worst_unwrite_refund_law_residual": 6.661338147750939e-16,
+    "beta_inf_typing": "at beta = inf with Q > 0, Sigma_casc is typed inf (zero-temperature limit; D(rho'||pure) divergent) -- extended-real bookkeeping, disclosed, not asserted",
+    "beta0_note": "the beta = 0 corner is predeclared as expected and NOT spun as entropy pricing: W = 0 and Q = 0, yet Sigma_casc = H(3/7) = 0.682908 nats = exactly the mutual information the departing tier carries away (the identity's I term with D = 0): the ledger books the record's departure as entropy production with zero work and zero heat flow",
+    "conditionality": "departure-by-trace is the standard reservoir idealization -- adopted, not derived (T410's concession, inherited verbatim); boundary physicality is conditional on the model class; the transport rung (work literally buying reach) stays named-unbuilt"
+  },
+  "marginal_blindness": {
+    "proper_subsets_checked_beta0": 200,
+    "worst_proper_subset_marginal_diff_beta0": 0.0,
+    "td_full_joint_beta0_by_m": {
+      "1": 0.4948716593053935,
+      "2": 0.4948716593053935,
+      "3": 0.4948716593053935
+    },
+    "td_beta0_predeclared": 0.4948716593053935,
+    "worst_td_beta0_residual": 0.0,
+    "td_full_joint_betainf_swap_by_m": {
+      "1": 0.7535596025193394,
+      "2": 0.7535596025193394,
+      "3": 0.7535596025193394
+    },
+    "td_betainf_predeclared_swap": 0.7535596025193393,
+    "worst_td_betainf_residual": 1.1102230246251565e-16,
+    "td_full_joint_betainf_broadcast_by_m": {
+      "1": 0.49487165930539356,
+      "2": 0.49487165930539356,
+      "3": 0.49487165930539356
+    },
+    "carrier_marginal_rows": {
+      "inf": {
+        "carrier_marginal_diff": 0.4285714285714287,
+        "closed_form_3_7_tanh": 0.42857142857142855
+      },
+      "1.0": {
+        "carrier_marginal_diff": 0.19805021025428993,
+        "closed_form_3_7_tanh": 0.19805021025428987
+      },
+      "0.0": {
+        "carrier_marginal_diff": 0.0,
+        "closed_form_3_7_tanh": 0.0
+      }
+    },
+    "worst_carrier_marginal_closed_form_residual": 1.6653345369377348e-16,
+    "worst_cascade_variant_merge_beta0": 0.0,
+    "mutual_information_bits": {
+      "1": {
+        "inf": {
+          "I_A": 1.970456272068503,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.9852281360342515
+        },
+        "1.0": {
+          "I_A": 1.1421405268772735,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.1569123908430219
+        },
+        "0.0": {
+          "I_A": 0.9852281360342516,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.0
+        }
+      },
+      "2": {
+        "inf": {
+          "I_A": 1.970456272068503,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.9852281360342515
+        },
+        "1.0": {
+          "I_A": 1.2670022033355126,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.281774067301261
+        },
+        "0.0": {
+          "I_A": 0.9852281360342516,
+          "I_B_swap": 4.440892098500626e-16,
+          "I_B_broadcast": 4.440892098500626e-16
+        }
+      },
+      "3": {
+        "inf": {
+          "I_A": 1.970456272068503,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.9852281360342515
+        },
+        "1.0": {
+          "I_A": 1.3700411676521624,
+          "I_B_swap": 0.0,
+          "I_B_broadcast": 0.3848130316179108
+        },
+        "0.0": {
+          "I_A": 0.9852281360342516,
+          "I_B_swap": -4.440892098500626e-16,
+          "I_B_broadcast": -4.440892098500626e-16
+        }
+      }
+    },
+    "worst_mi_closed_form_residual": 4.440892098500626e-16,
+    "worst_I_B_swap": 4.440892098500626e-16,
+    "finding": "at beta = 0 EVERY proper-subset marginal of the retained R+ register set is identical between the two capability states -- 'which registers hold the discriminating datum' has no answer short of everything -- while the full joints differ by trace distance exactly vis_A/2 and the capability verdicts split; the LOCAL trace of dispersal depth fades as (3/7) tanh(beta/2) to exactly zero while both equality certificates and both capability verdicts are beta-blind. Flagged from memory, unverified: no-hiding-theorem lineage (Braunstein-Pati); discord-type locally-hidden correlations."
+  },
+  "battery": {
+    "t399_enlarged_state": {
+      "answer": "the positive control IS the leg: enlargement (R++) restores B and its price is tabulated (leg 5). The claim is never 'the reviewer cannot compute'; at FIXED R+ -- full access to everything the B run retains -- the split is sourced in dispersal depth whose B-side trace is exactly zero (the product state). Against boundary relocation: B is final relative to EVERYTHING retained in its run; the R++ run is a different, counterfactual retention, run as the priced positive control."
+    },
+    "t400_stipulated_flag": {
+      "flag_state_diff": 0.0,
+      "flag_moved_capability": false,
+      "answer": "two copies of the same physical preparation carrying different stipulated flags are bit-identical and get identical verdicts: a stipulated label alone moves nothing; in T411 every declared field is matched and the capability still splits. The task functional reads no label. Disclosed: T400's compulsion clause (agent FORCED to attempt) is not modeled; forcing is task-relative and certificate-carried (leg 3)."
+    },
+    "t401_joint_record": {
+      "answer": "granting the COMPLETE retained joint state at R+ gives, for B(SWAP), an exact product (mutual information 0 -- leg 6): the completion is exhausted and returns nothing; completing further requires the departed tier, i.e. the open-system premise itself. Sharper, via the broadcast contrast: joint-record completion there DOES return the which-way datum (classical h2(3/7) bits at beta = inf) and the verdict is STILL final-relative-to-R+, certified -- the record datum and the capability are transverse; joint-record completion cannot absorb the split."
+    },
+    "t402_t406_matched_fields": {
+      "declared_fields_equal": true,
+      "verdict_swaps_with_input": true,
+      "differing_item": "the physical cascade history only (B: m cascade collisions with fresh Gibbs tier-2 carriers, departed) -- carried as a physical process with an energy/entropy ledger entry (leg 5), not as a declared bookkeeping field; operation unavailability (restoration infeasibility) is DERIVED by the one label-free verdict functional from the retained state, never stipulated as a flag, latch topology, or transition relation"
+    },
+    "t398_t404_resource_projection": {
+      "profile_A": [
+        "final-relative-to-R",
+        "restorable-at-R+"
+      ],
+      "profile_B": [
+        "final-relative-to-R",
+        "final-relative-to-R+",
+        "restorable-at-R++"
+      ],
+      "conceded": "admitted as resource objects, the per-reach capability profiles' ORDER content absorbs exactly as T398 showed (ordinary non-total convertibility) -- conceded",
+      "residue_a_causal_indexing": "work -- the athermality frame's own currency -- is certified unable to purchase what reach purchases (dilation-invariant certificates, pure and Gibbs work registers, legs 3-4); inherits T404 residue (a) WITH its predeclared conditional demotion clause: candidate absorbers dynamical resource theories / superchannels -- named, from memory, unverified; if verified as absorbing, this residue demotes per T404's clause",
+      "residue_b_locally_hidden": "the beta = 0 sharpening (leg 6: no proper subset holds the datum); candidate absorber Blackwell comparison of experiments -- named, from memory, unverified; same conditional demotion clause"
+    },
+    "t397_sbs_markers": {
+      "answer": "no class markers and no SBS closure key exist in the fixture: the task is a threshold on a computed functional of the post-protocol state, not a readout of any label; the stipulated-flag control is the numeric witness"
+    },
+    "lieb_robinson": {
+      "answer": "no geometry exists (all-to-one contact graph); the boundary is a departure boundary, not a light cone (Lieb-Robinson named as an absorber risk, from memory, unverified)"
+    },
+    "re_scope_clause": "if the assembled object is standard (environment-assisted recovery / quantum Darwinism / data processing on a dilation), the artifact re-scopes to a repo-internal calibration of the certificate toolkit"
+  },
+  "q1d": {
+    "declared_record_invariance": 5.551115123125783e-17,
+    "worst_no_signal_out_of_R": 2.220446049250313e-16,
+    "teeth_by_beta": {
+      "inf": {
+        "enlarged_protocol_moves_tier1_marginal": 0.4285714285714287,
+        "teeth_analytic_3_7_tanh": 0.42857142857142855
+      },
+      "1.0": {
+        "enlarged_protocol_moves_tier1_marginal": 0.19805021025428993,
+        "teeth_analytic_3_7_tanh": 0.19805021025428987
+      },
+      "0.0": {
+        "enlarged_protocol_moves_tier1_marginal": 0.0,
+        "teeth_analytic_3_7_tanh": 0.0
+      }
+    },
+    "worst_teeth_closed_form_residual": 1.6653345369377348e-16,
+    "beta0_visibility_jump": {
+      "achieved_at_R": 0.0,
+      "achieved_at_Rplus": 0.9897433186107869
+    },
+    "r1_note": "R1 untouched: no claim about global temporal order or spacetime; the fixture is a discrete interaction sequence with a departure boundary, not a light cone (Lieb-Robinson is a named absorber risk, flagged from memory, unverified)"
+  },
+  "legs": {
+    "leg1_equality_observational": true,
+    "leg2_equality_interventional": true,
+    "leg3_forcing_at_R": true,
+    "leg4_separation_at_Rplus": true,
+    "leg5_positive_control_priced": true,
+    "leg6_beta0_marginal_blindness": true,
+    "leg7_absorber_battery": true,
+    "leg8_guardrails": true,
+    "discipline_construction_anchors": true
+  },
+  "failure_legs": {
+    "equality_fails": {
+      "fired": false,
+      "halting": true
+    },
+    "separation_fails_A": {
+      "fired": false
+    },
+    "separation_not_certified_B": {
+      "fired_primary_swap": false,
+      "fired_contrast_broadcast": false,
+      "fired": false,
+      "note": "primary (SWAP) firing withdraws the discriminator claim; contrast (broadcast) firing is reported as undetermined_by_bound for that row only"
+    },
+    "positive_control_fails": {
+      "fired": false,
+      "halting": true
+    },
+    "marginal_blindness_fails": {
+      "fired": false
+    },
+    "separator_factors_through_declared_field": {
+      "fired": false
+    },
+    "boundary_physicality_reduces_to_declaration": {
+      "fired": false,
+      "conditionality_conceded": "independently of firing: departure-by-trace is the reservoir idealization, adopted, not derived -- the boundary is physical GIVEN the model class; this leg polices the stronger, in-model failure mode"
+    }
+  },
+  "verdict_tags": [
+    "departed_record_capability_discriminator",
+    "region_indexed_capability_states",
+    "interventional_equality_lemma_carried",
+    "boundary_crossing_menu_separation",
+    "forcing_certified_inside_R",
+    "departure_carried_completion_datum",
+    "positive_control_priced",
+    "absorber_battery_run",
+    "no_claim_promotion"
+  ],
+  "departed_record_discriminator_holds": true,
+  "verdict_language": "the departed-record capability discriminator holds in this finite family: two capability states on T410's thermal collision substrate are exactly equal under ALL R-supported statistics -- observational and under every R-supported intervention, the ALL quantifier carried by the environment-side channel lemma and asserted on the predeclared operational family -- while one fixed boundary-crossing menu separates them: A is restorable-at-R+ and B is final-relative-to-R+, the final verdict carried by the exact phi-independence certificate against all channels with unlimited work, pure or Gibbs. Crossing is forced (the task is certified impossible inside R for both states); the completing datum -- dispersal depth -- departed with the traced-out tier-2 carriers and has exactly zero retained trace (B's R+ state is an exact product), so joint-record completion returns nothing, and at beta = 0 no proper subset of the reach holds the datum at all; enlargement restores capability and is priced in the ledger (the positive control). This realizes the open problem's success criterion at the declared R, in this finite fixture, relative to the declared reaches and menu -- finite-witness. The boundary is physical GIVEN the repeated-interaction reservoir idealization, which is adopted, not derived (T407's standing objection is NOT claimed discharged unconditionally); the transport rung -- work literally buying reach, an unconditional physical boundary -- stays named-unbuilt, as do the T404-interface residues' verifications. Whether this fixture discharges the open problem is a review decision; no claim promotion; no CLAIM-LEDGER entry; ledger actions pause for Joe per AGENTS.md."
+}

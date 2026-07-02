@@ -1,0 +1,1357 @@
+{
+  "artifact": "T409-capability-restoration-frontier-v0.1",
+  "labeling_convention": "registers index-sorted (S, M, REC, B1..B7); collision order = bath index order; all distributions keyed in this order",
+  "theta_meter": 1.0471975511965976,
+  "v_star": 0.9,
+  "vis_A_analytic": 0.989743318610787,
+  "theta_onset_edge_over_pi": 0.27319479912871075,
+  "theta_bite_edge_over_pi": 0.6995191685342946,
+  "reach_convention": {
+    "core_active": [
+      "S",
+      "REC"
+    ],
+    "meter": "M measured; verdicts conditional on M = 0",
+    "menu": "all channels supported on core + reached bath qubits, with unlimited work ancillas (Leg 2)"
+  },
+  "frontier_theta_pi": {
+    "theta_over_pi": 1.0,
+    "deficit_allowance_d": 0,
+    "min_certified_deficit_u": 1.0,
+    "onset_n": 1,
+    "per_n": [
+      {
+        "n": 1,
+        "rows": [
+          {
+            "n": 1,
+            "reach": 0,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.360466698596701e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 1,
+            "reach": 1,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 1,
+        "r_cert": 1,
+        "r_feas_analytic": 1,
+        "r_cert_analytic": 1
+      },
+      {
+        "n": 2,
+        "rows": [
+          {
+            "n": 2,
+            "reach": 0,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 2,
+            "reach": 1,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.360466698596701e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 2,
+            "reach": 2,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 2,
+        "r_cert": 2,
+        "r_feas_analytic": 2,
+        "r_cert_analytic": 2
+      },
+      {
+        "n": 3,
+        "rows": [
+          {
+            "n": 3,
+            "reach": 0,
+            "unreached": 3,
+            "achieved": 2.2722972707523057e-49,
+            "analytic": 2.2722972707523057e-49,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 3,
+            "reach": 1,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 3,
+            "reach": 2,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.360466698596701e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 3,
+            "reach": 3,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 3,
+        "r_cert": 3,
+        "r_feas_analytic": 3,
+        "r_cert_analytic": 3
+      },
+      {
+        "n": 4,
+        "rows": [
+          {
+            "n": 4,
+            "reach": 0,
+            "unreached": 4,
+            "achieved": 1.3913807896690389e-65,
+            "analytic": 1.391380789669039e-65,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 4,
+            "reach": 1,
+            "unreached": 3,
+            "achieved": 2.2722972707523057e-49,
+            "analytic": 2.2722972707523057e-49,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 4,
+            "reach": 2,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 4,
+            "reach": 3,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.360466698596701e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 4,
+            "reach": 4,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 4,
+        "r_cert": 4,
+        "r_feas_analytic": 4,
+        "r_cert_analytic": 4
+      },
+      {
+        "n": 5,
+        "rows": [
+          {
+            "n": 5,
+            "reach": 0,
+            "unreached": 5,
+            "achieved": 8.519750152316526e-82,
+            "analytic": 8.519750152316527e-82,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 5,
+            "reach": 1,
+            "unreached": 4,
+            "achieved": 1.3913807896690389e-65,
+            "analytic": 1.391380789669039e-65,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 5,
+            "reach": 2,
+            "unreached": 3,
+            "achieved": 2.2722972707523057e-49,
+            "analytic": 2.2722972707523057e-49,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 5,
+            "reach": 3,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 5,
+            "reach": 4,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.3604666985967014e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 5,
+            "reach": 5,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 5,
+        "r_cert": 5,
+        "r_feas_analytic": 5,
+        "r_cert_analytic": 5
+      },
+      {
+        "n": 6,
+        "rows": [
+          {
+            "n": 6,
+            "reach": 0,
+            "unreached": 6,
+            "achieved": 5.2168423767848044e-98,
+            "analytic": 5.216842376784805e-98,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 1,
+            "unreached": 5,
+            "achieved": 8.519750152316526e-82,
+            "analytic": 8.519750152316527e-82,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 2,
+            "unreached": 4,
+            "achieved": 1.3913807896690389e-65,
+            "analytic": 1.391380789669039e-65,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 3,
+            "unreached": 3,
+            "achieved": 2.2722972707523057e-49,
+            "analytic": 2.2722972707523057e-49,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 4,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 5,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.360466698596702e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 6,
+            "reach": 6,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 6,
+        "r_cert": 6,
+        "r_feas_analytic": 6,
+        "r_cert_analytic": 6
+      },
+      {
+        "n": 7,
+        "rows": [
+          {
+            "n": 7,
+            "reach": 0,
+            "unreached": 7,
+            "achieved": 3.194394659192891e-114,
+            "analytic": 3.1943946591928907e-114,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 1,
+            "unreached": 6,
+            "achieved": 5.2168423767848044e-98,
+            "analytic": 5.216842376784805e-98,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 2,
+            "unreached": 5,
+            "achieved": 8.519750152316526e-82,
+            "analytic": 8.519750152316527e-82,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 3,
+            "unreached": 4,
+            "achieved": 1.3913807896690389e-65,
+            "analytic": 1.391380789669039e-65,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 4,
+            "unreached": 3,
+            "achieved": 2.2722972707523057e-49,
+            "analytic": 2.2722972707523057e-49,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 5,
+            "unreached": 2,
+            "achieved": 3.7109430610268486e-33,
+            "analytic": 3.710943061026849e-33,
+            "bound": 1.249000902703301e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 6,
+            "unreached": 1,
+            "achieved": 6.060429935570895e-17,
+            "analytic": 6.060429935570896e-17,
+            "bound": 1.3604666985967024e-16,
+            "phi_cert": 2.220446049250313e-16,
+            "band": "certified_infeasible"
+          },
+          {
+            "n": 7,
+            "reach": 7,
+            "unreached": 0,
+            "achieved": 0.9897433186107869,
+            "analytic": 0.989743318610787,
+            "bound": 1.9794866372215738,
+            "phi_cert": 0.857142857142857,
+            "band": "feasible_zero_cost"
+          }
+        ],
+        "r_feas": 7,
+        "r_cert": 7,
+        "r_feas_analytic": 7,
+        "r_cert_analytic": 7
+      }
+    ],
+    "r_feas_by_n": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "r_cert_by_n": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "exhaustive_certification": [
+    {
+      "n": 1,
+      "theta_over_pi": 0.5,
+      "subsets_checked": 2,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 0.6998542122237651,
+          "bound": 1.3997084244475302,
+          "max_phi_cert": 0.6060915267313264,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "1": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215736,
+          "max_phi_cert": 0.6060915267313264,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 1
+    },
+    {
+      "n": 2,
+      "theta_over_pi": 0.5,
+      "subsets_checked": 4,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 0.49487165930539356,
+          "bound": 0.9897433186107871,
+          "max_phi_cert": 0.4285714285714286,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "1": {
+          "n_subsets": 2,
+          "achieved": 0.6998542122237651,
+          "bound": 1.3997084244475304,
+          "max_phi_cert": 0.4285714285714286,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "2": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.4285714285714286,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 2
+    },
+    {
+      "n": 3,
+      "theta_over_pi": 0.5,
+      "subsets_checked": 8,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 0.3499271061118826,
+          "bound": 0.6998542122237652,
+          "max_phi_cert": 0.30304576336566325,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 3,
+          "achieved": 0.49487165930539356,
+          "bound": 0.9897433186107871,
+          "max_phi_cert": 0.30304576336566325,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "2": {
+          "n_subsets": 3,
+          "achieved": 0.6998542122237651,
+          "bound": 1.3997084244475302,
+          "max_phi_cert": 0.30304576336566325,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "3": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.30304576336566325,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 3
+    },
+    {
+      "n": 4,
+      "theta_over_pi": 0.5,
+      "subsets_checked": 16,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 0.2474358296526968,
+          "bound": 0.4948716593053936,
+          "max_phi_cert": 0.21428571428571433,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 4,
+          "achieved": 0.3499271061118826,
+          "bound": 0.6998542122237653,
+          "max_phi_cert": 0.21428571428571433,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "2": {
+          "n_subsets": 6,
+          "achieved": 0.49487165930539356,
+          "bound": 0.9897433186107871,
+          "max_phi_cert": 0.21428571428571433,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "3": {
+          "n_subsets": 4,
+          "achieved": 0.6998542122237651,
+          "bound": 1.3997084244475304,
+          "max_phi_cert": 0.21428571428571433,
+          "bands": [
+            "undetermined_by_bound"
+          ]
+        },
+        "4": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.21428571428571433,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 4
+    },
+    {
+      "n": 1,
+      "theta_over_pi": 1.0,
+      "subsets_checked": 2,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 6.060429935570895e-17,
+          "bound": 1.360466698596701e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.857142857142857,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 1
+    },
+    {
+      "n": 2,
+      "theta_over_pi": 1.0,
+      "subsets_checked": 4,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 3.7109430610268486e-33,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 2,
+          "achieved": 6.060429935570895e-17,
+          "bound": 1.360466698596701e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "2": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.857142857142857,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 2
+    },
+    {
+      "n": 3,
+      "theta_over_pi": 1.0,
+      "subsets_checked": 8,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 2.2722972707523057e-49,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 3,
+          "achieved": 3.7109430610268486e-33,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "2": {
+          "n_subsets": 3,
+          "achieved": 6.060429935570895e-17,
+          "bound": 1.360466698596701e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "3": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.857142857142857,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 3
+    },
+    {
+      "n": 4,
+      "theta_over_pi": 1.0,
+      "subsets_checked": 16,
+      "by_size": {
+        "0": {
+          "n_subsets": 1,
+          "achieved": 1.3913807896690389e-65,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "1": {
+          "n_subsets": 4,
+          "achieved": 2.2722972707523057e-49,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "2": {
+          "n_subsets": 6,
+          "achieved": 3.7109430610268486e-33,
+          "bound": 1.249000902703301e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "3": {
+          "n_subsets": 4,
+          "achieved": 6.060429935570895e-17,
+          "bound": 1.360466698596701e-16,
+          "max_phi_cert": 2.220446049250313e-16,
+          "bands": [
+            "certified_infeasible"
+          ]
+        },
+        "4": {
+          "n_subsets": 1,
+          "achieved": 0.9897433186107869,
+          "bound": 1.9794866372215738,
+          "max_phi_cert": 0.857142857142857,
+          "bands": [
+            "feasible_zero_cost"
+          ]
+        }
+      },
+      "max_same_size_spread": 0.0,
+      "r_feas_exhaustive": 4
+    }
+  ],
+  "symmetry": {
+    "compared_sizes": [
+      1,
+      3,
+      6
+    ],
+    "n": 7,
+    "thetas_over_pi": [
+      1.0,
+      0.25
+    ],
+    "max_state_diff": 1.1102230246251565e-16
+  },
+  "monotonicity": {
+    "monotone_nondecreasing": true,
+    "slope_one_beyond_onset": true,
+    "escape_velocity_reach_units_per_collision": 1,
+    "saturations": [
+      {
+        "theta_over_pi": 0.1,
+        "kind": "onset_beyond_family",
+        "detail": "r_feas = 0 for every n <= 7; analytic onset n = 8 exceeds the bath size"
+      }
+    ],
+    "frontiers": {
+      "0.10pi": {
+        "d": 7,
+        "u_min_cert": 64.0,
+        "r_feas_by_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "r_cert_by_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0.15pi": {
+        "d": 3,
+        "u_min_cert": 29.0,
+        "r_feas_by_n": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "r_cert_by_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0.20pi": {
+        "d": 1,
+        "u_min_cert": 16.0,
+        "r_feas_by_n": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "r_cert_by_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0.25pi": {
+        "d": 1,
+        "u_min_cert": 10.0,
+        "r_feas_by_n": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "r_cert_by_n": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "0.50pi": {
+        "d": 0,
+        "u_min_cert": 3.0,
+        "r_feas_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "r_cert_by_n": [
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.70pi": {
+        "d": 0,
+        "u_min_cert": 1.0,
+        "r_feas_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "r_cert_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "0.75pi": {
+        "d": 0,
+        "u_min_cert": 1.0,
+        "r_feas_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "r_cert_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "1.00pi": {
+        "d": 0,
+        "u_min_cert": 1.0,
+        "r_feas_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "r_cert_by_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  "swap_probe": {
+    "later_collisions_change_nothing_max_diff": 0.0,
+    "restore_via_B1_by_n": {
+      "1": 0.9897433186107869,
+      "2": 0.9897433186107869,
+      "3": 0.9897433186107869,
+      "4": 0.9897433186107869,
+      "5": 0.9897433186107869
+    },
+    "empty_reach_phi_cert_by_n": {
+      "1": 2.220446049250313e-16,
+      "2": 2.220446049250313e-16,
+      "3": 2.220446049250313e-16,
+      "4": 2.220446049250313e-16,
+      "5": 2.220446049250313e-16
+    },
+    "exhaustive_n3": {
+      "()": {
+        "contains_B1": false,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16
+      },
+      "(3,)": {
+        "contains_B1": true,
+        "achieved": 0.9897433186107869
+      },
+      "(4,)": {
+        "contains_B1": false,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16
+      },
+      "(5,)": {
+        "contains_B1": false,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16
+      },
+      "(3, 4)": {
+        "contains_B1": true,
+        "achieved": 0.9897433186107869
+      },
+      "(3, 5)": {
+        "contains_B1": true,
+        "achieved": 0.9897433186107869
+      },
+      "(4, 5)": {
+        "contains_B1": false,
+        "phi_cert": 2.220446049250313e-16,
+        "bound": 1.249000902703301e-16
+      },
+      "(3, 4, 5)": {
+        "contains_B1": true,
+        "achieved": 0.9897433186107869
+      }
+    },
+    "r_feas_by_n": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "finding": "saturation located exactly: the full-SWAP stream displaces the record once and never disperses it; r(n) = 1 for every n >= 1 and the frontier is subset-specific (B1 or nothing). Frontier GROWTH is sourced in broadcast -- new record-bearing contacts -- not in motion of the record."
+  },
+  "uncorrelated_null": {
+    "theta_over_pi": 0.5,
+    "rows": {
+      "1": {
+        "achieved_at_reach_0": 0.9897433186107869,
+        "bath_excitation": 0.4999999999999997
+      },
+      "4": {
+        "achieved_at_reach_0": 0.9897433186107867,
+        "bath_excitation": 1.9999999999999991
+      },
+      "7": {
+        "achieved_at_reach_0": 0.9897433186107883,
+        "bath_excitation": 3.5
+      }
+    },
+    "r_feas": 0
+  },
+  "work": {
+    "scenario": {
+      "n": 4,
+      "theta_over_pi": 1.0,
+      "reach": [
+        "B1",
+        "B2"
+      ],
+      "work_registers": [
+        "B6",
+        "B7"
+      ]
+    },
+    "phi_cert_bare": 2.220446049250313e-16,
+    "phi_cert_with_work": 2.220446049250313e-16,
+    "bound_bare": 1.249000902703301e-16,
+    "bound_with_work": 1.249000902703301e-16,
+    "bound_ancilla_invariance_diff": 0.0,
+    "frontier_bound_max_diff_with_work": 4.930380657631324e-32,
+    "manufactured_coherence": {
+      "raw_visibility": 0.9999999999999998,
+      "locked_visibility": 6.938893903907228e-17
+    },
+    "feedback_channel_locked": 0.0,
+    "haar_spot_check": {
+      "samples": 15,
+      "seed": 20260702,
+      "active": [
+        "0",
+        "2",
+        "3",
+        "4",
+        "9"
+      ],
+      "max_locked_visibility": 2.0816681711721685e-17,
+      "note": "illustrative; the certificates carry the verdict"
+    },
+    "dilation_lemma": "any channel on the reach assisted by finitely many work registers in any state IS a channel on the reach (Stinespring); adjoining a fixed state sigma sends X to X tensor sigma and ||A tensor sigma||_1 = ||A||_1, so both certificates -- and hence the frontier -- are invariant under unlimited work. Sharp form: the frontier is priced in reach, not work."
+  },
+  "ledger": {
+    "landauer_nat_per_bit": 0.6931471805599453,
+    "restore_within_reach": {
+      "mode": "correlated_uncopy",
+      "holders_uncomputed": 5,
+      "erased_bits": 0,
+      "beta_work_lower_bound": 0.0,
+      "achieved_locked_visibility": 0.9897433186107869,
+      "t142_verdict": "reversible_when_full_microstate_available"
+    },
+    "blind_reset": {
+      "mode": "blind_reset",
+      "erased_bits_naive_per_holder": 5,
+      "beta_work_lower_bound_naive": 3.4657359027997265,
+      "joint_record_bits_given_M0": 0.9852281360342516,
+      "joint_record_bits_unconditioned": 1.0,
+      "capability_after_reset": 0.0,
+      "record_deleted_residual_distinguishability": 0.0,
+      "deletion_is_not_definalization": true,
+      "t142_verdict": "standard_erasure_cost_if_uncopy_unavailable"
+    },
+    "restore_beyond_frontier": {
+      "scenario": "n = 4 perfect contacts, reach = 2 (< frontier 4)",
+      "feasible_at_reach": false,
+      "certificates": {
+        "phi_independence": 2.220446049250313e-16,
+        "channel_bound": 1.249000902703301e-16
+      },
+      "min_cost_convention": "inf (infimum over an empty feasible set)",
+      "min_beta_work": "inf",
+      "limiting_resource": "reach to the record-bearing contacts, not work",
+      "not_a_work_bound": "the infinity is NOT a divergent Landauer/work requirement: this closed unitary model has no work parameter that could diverge; no channel supported on the reach restores the phase at ANY resource expenditure (phi-independence certificate, work-invariant by the dilation lemma). Calling it a 'cost' is an extended-real bookkeeping convention."
+    },
+    "correspondence_rows": [
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 7,
+        "unreached_contacts": 0,
+        "achieved": 0.9897433186107869,
+        "capability_deficit": 2.220446049250313e-16,
+        "displaced_distinguishability": 0.0,
+        "complementarity_residual": 2.220446049250313e-16,
+        "escaped_holevo_bits": -0.0,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 6,
+        "unreached_contacts": 1,
+        "achieved": 0.6998542122237651,
+        "capability_deficit": 0.5000000000000001,
+        "displaced_distinguishability": 0.7071067811865476,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.5916727785823278,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 5,
+        "unreached_contacts": 2,
+        "achieved": 0.49487165930539356,
+        "capability_deficit": 0.7499999999999999,
+        "displaced_distinguishability": 0.8660254037844386,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.7991083205782717,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 4,
+        "unreached_contacts": 3,
+        "achieved": 0.3499271061118826,
+        "capability_deficit": 0.875,
+        "displaced_distinguishability": 0.9354143466934852,
+        "complementarity_residual": 2.220446049250313e-16,
+        "escaped_holevo_bits": 0.894344800295044,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 3,
+        "unreached_contacts": 4,
+        "achieved": 0.2474358296526968,
+        "capability_deficit": 0.9375,
+        "displaced_distinguishability": 0.9682458365518543,
+        "complementarity_residual": 1.1102230246251565e-16,
+        "escaped_holevo_bits": 0.940285958670631,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 2,
+        "unreached_contacts": 5,
+        "achieved": 0.1749635530559413,
+        "capability_deficit": 0.96875,
+        "displaced_distinguishability": 0.9842509842514764,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9628770334809202,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 1,
+        "unreached_contacts": 6,
+        "achieved": 0.12371791482634842,
+        "capability_deficit": 0.984375,
+        "displaced_distinguishability": 0.9921567416492245,
+        "complementarity_residual": 5.995204332975845e-15,
+        "escaped_holevo_bits": 0.974082007318899,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 0.5,
+        "n": 7,
+        "reach": 0,
+        "unreached_contacts": 7,
+        "achieved": 0.08748177652797069,
+        "capability_deficit": 0.9921875,
+        "displaced_distinguishability": 0.9960860906568316,
+        "complementarity_residual": 9.769962616701378e-15,
+        "escaped_holevo_bits": 0.9796623577019352,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 7,
+        "unreached_contacts": 0,
+        "achieved": 0.9897433186107869,
+        "capability_deficit": 2.220446049250313e-16,
+        "displaced_distinguishability": 0.0,
+        "complementarity_residual": 2.220446049250313e-16,
+        "escaped_holevo_bits": 3.2034265038149176e-16,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 6,
+        "unreached_contacts": 1,
+        "achieved": 6.060429935570895e-17,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 1.0,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 5,
+        "unreached_contacts": 2,
+        "achieved": 3.7109430610268486e-33,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 1.0,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 4,
+        "unreached_contacts": 3,
+        "achieved": 2.2722972707523057e-49,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 1.0,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 3,
+        "unreached_contacts": 4,
+        "achieved": 1.3913807896690389e-65,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 1.0,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 2,
+        "unreached_contacts": 5,
+        "achieved": 8.519750152316526e-82,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 0.9999999999999999,
+        "complementarity_residual": 2.220446049250313e-16,
+        "escaped_holevo_bits": 0.9852281360342513,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 1,
+        "unreached_contacts": 6,
+        "achieved": 5.2168423767848044e-98,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 1.0,
+        "complementarity_residual": 0.0,
+        "escaped_holevo_bits": 0.9852281360342515,
+        "holevo_monotone_from_prev": true
+      },
+      {
+        "theta_over_pi": 1.0,
+        "n": 7,
+        "reach": 0,
+        "unreached_contacts": 7,
+        "achieved": 3.194394659192891e-114,
+        "capability_deficit": 1.0,
+        "displaced_distinguishability": 0.9999999999999999,
+        "complementarity_residual": 2.220446049250313e-16,
+        "escaped_holevo_bits": 0.9852281360342513,
+        "holevo_monotone_from_prev": true
+      }
+    ],
+    "h2_3_7_bits": 0.9852281360342515,
+    "correspondence": "in this finite family the capability deficit equals the squared branch distinguishability displaced into the unreached bath (exact complementarity), and the reach deficit u = n - r counts the record-bearing contacts beyond reach. DISCLOSURE with teeth: at theta = pi the escaped Holevo content saturates at h2(3/7) = 0.98523 bits for every u >= 1 (one branch bit, redundantly broadcast) while the frontier keeps growing -- the frontier is priced in record-bearing CONTACTS, not in escaped bits and not in work. Bookkeeping in a finite closed unitary model, not a thermodynamic theorem.",
+    "tier2_scope": "Tier-2 forcing earned HERE means: in this finite collision family, capability loss for any fixed-reach agent is forced (all-channel certificates), work-insensitive (dilation lemma), and monotonically growing in bath contact (frontier tables). The continuum/asymptotic bath-dispersion theorem -- work/entropy scaling in a genuine open-system bath -- stays named-unbuilt."
+  },
+  "q1d": {
+    "declared_record_invariance": 1.1102230246251565e-16,
+    "no_signal_out_reach_protocol": 0.0,
+    "enlarged_protocol_moves_unreached_marginal_teeth": 0.4285714285714287,
+    "r1_note": "R1 untouched: no claim about global temporal order or spacetime; the collision stream is a discrete interaction sequence, and the 'frontier' is a reach frontier through the bath, not a light cone (Lieb-Robinson is a named absorber risk, flagged from memory)"
+  },
+  "legs": {
+    "leg1_dispersion_forces_reach_growth": true,
+    "leg2_work_does_not_substitute": true,
+    "leg3_graded_frontier_and_ledger": true
+  },
+  "verdict_tags": [
+    "capability_restoration_frontier",
+    "reach_forced_growth",
+    "work_does_not_substitute_for_reach",
+    "graded_frontier_ledger_bookkeeping_only",
+    "tier2_forcing_finite_family",
+    "no_claim_promotion"
+  ],
+  "frontier_holds": true,
+  "verdict_language": "the capability restoration frontier holds in this finite collision family: dispersion (record broadcast into the bath) forces monotonically growing reach for threshold restoration, exactly r(n) = n at perfect collision strength with every insufficient reach certified against ALL channels; work does not substitute for reach (both certificates and the frontier itself are invariant under adjoining unlimited work registers, and fresh work manufactures only phase-unlocked coherence); the graded frontier surface r = max(0, n - d(theta)) is computed with certified and honestly-undetermined bands, and the T142 ledger prices restoration in reach -- correlated uncopy at zero floor within reach, empty-feasible-set infimum typed as access-not-work beyond it, blind reset paying the floor and restoring nothing. Tier-2 forcing earned in this finite family: a finite-reach agent in a broadcasting environment suffers forced, work-insensitive, growing capability loss. The continuum bath-dispersion theorem stays named-unbuilt; bookkeeping only; no claim promotion; ledger actions pause for Joe."
+}

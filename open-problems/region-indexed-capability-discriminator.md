@@ -5,10 +5,10 @@
 Open problem / next-artifact spec. No claim promotion.
 
 Seeded by `audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`
-and updated against the later T397-T406 absorber results.
+and updated against the later T397-T408 absorber results.
 
 T398 closes the first resource-profile absorber gate at the finite internal
-level: T397's `C(R)` profiles form a 3 x 4 product resource preorder once the
+level: T407's `C(R)` profiles form a 3 x 4 product resource preorder once the
 capability profile and declared region/menu/task context are admitted. The
 anti-scalar profile shape and statistics-flat class therefore do not promote
 `C(R)` as a resource-theory novelty route. They remain useful translation
@@ -187,3 +187,63 @@ finite finality/readout/capability side of the test.
 
 GU participates only as a future interface-stress surface. GU material should
 not be cited as support for this object.
+
+## Status Addendum (2026-07-02): physical-boundary big-swing attempt — ABSORBED
+
+Append-only. The problem statement above is unchanged. This records an
+attempt and its verdict.
+
+The big swing (adapter test #1) built two new artifacts on the
+quantum-Darwinism collision substrate and ran the four-absorber adapter
+gauntlet against them. Records:
+`steward/runs/2026-07-02-physical-boundary-swing.md`.
+
+- **T409 — capability restoration frontier** (input): hostile-reviewed,
+  `audits/2026-07-02-t409-hostile-review.md`, aggregate
+  survives-with-corrections; moved recorded -> internally established in a
+  re-scoped calibration standing only. Its physical-boundary framing did
+  NOT survive; T407's declared-vs-physical objection was not discharged.
+- **T410 — thermal-collision work–reach frontier** (new, recorded):
+  `results/T410-thermal-collision-work-reach-frontier-v0.1-results.md`.
+  The Hamiltonian-bath rung; reach = the retained register set; boundary
+  physical CONDITIONAL on the reservoir idealization (adopted, not
+  derived).
+- **T411 — departed-record capability discriminator** (new, recorded):
+  `results/T411-departed-record-capability-discriminator-v0.1-results.md`.
+  Realizes the success criterion at the declared R as finite-witness,
+  conditional on the reservoir idealization — two states equal under all
+  R-supported statistics (observational and interventional, the ALL
+  quantifier carried by an environment-side channel lemma), separated at a
+  boundary-crossing menu R+, forcing certified inside R, priced positive
+  control at R++.
+
+**Adapter-test verdict: ABSORBED.** Killing move: **joint-record
+completion (the T401 demotion criterion)**, corroborated by the
+decoherence-bookkeeping absorber. Gauntlet verdicts: resource-theory
+(T398) partially-absorbed; joint-record completion (T401) absorbed;
+decoherence-bookkeeping absorbed; Lieb-Robinson relabel survives. In T411
+both states physically RETAIN their tier-1 carriers (only tier-2 departs),
+so R is a declared strict subset of the co-present retained register set;
+the separating boundary R -> R+ crosses only declared bookkeeping — the
+enlarged-state / joint-record completion the Failure/Demotion criteria
+above forbid. The one genuinely physical departure (tier-2, R+ -> R++)
+does no discriminating work — A and B already differ at R+ — and drives
+only the priced enlargement control that is T399-standard. The
+decoherence absorber independently fires the honest
+`boundary_physicality_reduces_to_declaration` failure leg at the
+model-class level: departure-by-partial-trace is the reservoir
+idealization, declared, not dynamically forced.
+
+**This route remains OPEN.** What survives is not the discriminator: the
+Lieb-Robinson relabel genuinely fails (the discriminating datum is a
+global correlation in no proper subset of the reach; the verdict-flip is a
+data-processing step, not a light cone), and the resource-theory absorber
+leaves only the physical-forcing assertion un-absorbed — the very claim
+the joint-record and decoherence moves kill, and which the artifacts
+concede is adopted, not derived. The surviving standing of T410/T411 is a
+repo-internal calibration of the certificate toolkit (all-channel
+certificates, graded bands, T142 ledger) on a thermal QD collision family,
+with the contrast-probe triple and a priced enlargement control as
+residue. The physical-escape mechanism is the still-named-unbuilt
+transport rung, where work literally buys reach rather than being denied a
+channel by fiat. No claim promotion; ledger actions pause for Joe.

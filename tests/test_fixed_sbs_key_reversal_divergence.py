@@ -25,6 +25,7 @@ from models.fixed_sbs_key_reversal_divergence import (
     FRAGMENT_QUBITS,
     V_STAR,
     d1_finalized_from_key,
+    declared_conditional_state,
     dominant_meter_outcome,
     ordinary_record_distribution,
     prepare,
@@ -142,6 +143,31 @@ def test_reversal_cost_infinite_when_no_accessible_subset_reaches_vstar():
     psi_b = prepare("B")
     m = dominant_meter_outcome(psi_b)
     assert math.isinf(reversal_cost(psi_b, m, V_STAR))
+
+
+def test_phi_independence_lemma_grounds_infinite_cost_in_B():
+    # v0.1.1 lemma: the accessible conditional state rho_{S,F1..F4 | M=0} in
+    # preparation B is EXACTLY independent of the initial S phase phi, while
+    # in preparation A it is phi-dependent. Raw visibility 1.0 is achievable
+    # in B by manufactured coherence (e.g. CNOT(F1->S) then H(S)), but
+    # manufactured coherence carries no phi information and would trivialize
+    # A equally; so H(B) = inf rests on this lemma, not on the
+    # inverse-coupling protocol restriction.
+    phis = (0.0, math.pi / 7.0, math.pi / 3.0, 2.0 * math.pi / 3.0, math.pi)
+
+    def max_pairwise_diff(kind: str) -> float:
+        rhos = [
+            declared_conditional_state(prepare(kind, s_phase=phi), 0)
+            for phi in phis
+        ]
+        diff = 0.0
+        for i in range(len(rhos)):
+            for j in range(i + 1, len(rhos)):
+                diff = max(diff, float(np.max(np.abs(rhos[i] - rhos[j]))))
+        return diff
+
+    assert max_pairwise_diff("B") < 1e-12  # exact phi-independence in B
+    assert max_pairwise_diff("A") > 0.1  # genuine phi-dependence in A
 
 
 # --------------------------------------------------------------------------- #

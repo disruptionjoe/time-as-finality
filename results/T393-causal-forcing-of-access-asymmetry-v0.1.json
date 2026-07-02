@@ -1,0 +1,283 @@
+{
+  "artifact": "T393-causal-forcing-of-access-asymmetry-v0.1",
+  "labeling_convention": "all outcome tuples are index-sorted; ordinary record tuples read (S, M) with S = qubit 0, M = qubit 1",
+  "theta": 1.0471975511965976,
+  "v_star": 0.9,
+  "region": {
+    "control_region_qubits": [
+      "S",
+      "M",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "C0",
+      "C1"
+    ],
+    "chain_length": 3,
+    "region_radius_r": 1,
+    "escape_step": 2
+  },
+  "lightcone": [
+    {
+      "step": 0,
+      "mode_site": 0,
+      "in_control_region": true
+    },
+    {
+      "step": 1,
+      "mode_site": 1,
+      "in_control_region": true
+    },
+    {
+      "step": 2,
+      "mode_site": 2,
+      "in_control_region": false
+    }
+  ],
+  "record_max_diff_AB": 0.0,
+  "ordinary_record_A": {
+    "00": 0.4999999999999999,
+    "10": 0.37499999999999994,
+    "11": 0.12499999999999994
+  },
+  "ordinary_record_B": {
+    "00": 0.4999999999999999,
+    "10": 0.37499999999999994,
+    "11": 0.12499999999999994
+  },
+  "sbs_signature_max_diff_AB": 0.0,
+  "sbs_key_A": [
+    "computational_z",
+    "sbs_objective",
+    "computational_z",
+    true,
+    4
+  ],
+  "sbs_key_B": [
+    "computational_z",
+    "sbs_objective",
+    "computational_z",
+    true,
+    4
+  ],
+  "d1_finalized_A": true,
+  "d1_finalized_B": true,
+  "declared_coherence_max_diff_AB_disclosure": 0.43301270189221924,
+  "reversal": {
+    "vis_A_locked": 0.9897433186107869,
+    "vis_A_raw": 0.9897433186107869,
+    "vis_B_locked": 0.0,
+    "vis_B_raw": 0.0,
+    "visibility_gap": 0.9897433186107869
+  },
+  "forcing_certificate": {
+    "phi_values": [
+      0.0,
+      1.0,
+      1.4142135623730951,
+      1.0471975511965976,
+      2.0943951023931953,
+      0.4487989505128276
+    ],
+    "max_pairwise_diff_B": 2.220446049250313e-16,
+    "max_pairwise_diff_A": 0.857142857142857
+  },
+  "haar_spot_check_illustrative": {
+    "samples": 50,
+    "seed": 20260701,
+    "max_phi_locked_visibility": 1.5515838457795457e-17,
+    "max_raw_visibility_disclosure": 0.1613042298005736
+  },
+  "manufactured_coherence_control": {
+    "raw_visibility": 0.9999999999999997,
+    "phi_locked_visibility": 7.473417450352271e-17
+  },
+  "feedback_channel_locked_visibility": 0.0,
+  "H_A": 4.0,
+  "H_B": "inf",
+  "verdict_A": "recoverable-in-control-region",
+  "verdict_B": "final-relative-to-control-region",
+  "screening": {
+    "verdict_by_prep": {
+      "A": "recoverable-in-control-region",
+      "B": "final-relative-to-control-region"
+    },
+    "class_support": {
+      "recoverable-in-control-region": 0.4999999999999999,
+      "final-relative-to-control-region": 0.4999999999999999
+    },
+    "both_classes_populated": true,
+    "lift_by_loss": {
+      "zero_one": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      },
+      "false_recover_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      },
+      "false_final_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.24999999999999994,
+        "lift": 0.24999999999999994
+      }
+    },
+    "all_losses_positive_lift": true,
+    "cmi_bits": 0.4999999999999999,
+    "cmi_positive": true,
+    "null_lift_by_loss": {
+      "zero_one": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      },
+      "false_recover_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      },
+      "false_final_costly": {
+        "risk_R": 0.4999999999999999,
+        "risk_R_aux": 0.4999999999999999,
+        "lift": 0.0
+      }
+    },
+    "null_all_zero_lift": true,
+    "null_cmi_bits": 0.0
+  },
+  "emission_confound_mixture_disclosure": {
+    "verdict_by_prep": {
+      "A": "recoverable-in-control-region",
+      "B": "final-relative-to-control-region",
+      "Bprime": "recoverable-in-control-region"
+    },
+    "lift_by_loss": {
+      "zero_one": {
+        "risk_R": 0.33333333333333326,
+        "risk_R_aux": 0.33333333333333326,
+        "lift": 0.0
+      },
+      "false_recover_costly": {
+        "risk_R": 0.6666666666666665,
+        "risk_R_aux": 0.33333333333333326,
+        "lift": 0.33333333333333326
+      },
+      "false_final_costly": {
+        "risk_R": 0.33333333333333326,
+        "risk_R_aux": 0.33333333333333326,
+        "lift": 0.0
+      }
+    },
+    "cmi_bits": 0.25162916738782276,
+    "note": "disclosed boundary: at the uniform {A,B,B'} prior the 0-1 and false-final-costly lifts are exactly zero while CMI and the false-recover-costly lift remain positive; the artifact's lift claim is scoped to the declared A/B family per T392"
+  },
+  "bprime_control": {
+    "record_max_diff": 0.0,
+    "sbs_signature_max_diff": 0.0,
+    "region_conditional_state_max_diff": 0.0,
+    "full_undo_locked_visibility_A": 0.9897433186107869,
+    "full_undo_locked_visibility_Bprime": 0.9897433186107869,
+    "H_A": 4.0,
+    "H_Bprime": 4.0,
+    "verdict_A": "recoverable-in-control-region",
+    "verdict_Bprime": "recoverable-in-control-region",
+    "emission_is_real_global_statevector_diff": 0.7071067811865475,
+    "chain_excitation": {
+      "A": 0.0,
+      "B": 0.4999999999999999,
+      "Bprime": 0.9999999999999998
+    }
+  },
+  "recovery_window": {
+    "0": {
+      "mode_site": 0,
+      "in_control_region": true,
+      "locked_visibility_in_region_undo": 0.9897433186107869
+    },
+    "1": {
+      "mode_site": 1,
+      "in_control_region": true,
+      "locked_visibility_in_region_undo": 0.9897433186107869
+    },
+    "2": {
+      "mode_site": 2,
+      "in_control_region": false,
+      "locked_visibility_in_region_undo": 0.0
+    }
+  },
+  "boundary_enlargement": {
+    "locked_visibility_A_in_region": 0.9897433186107869,
+    "locked_visibility_B_with_escaped_site": 0.9897433186107869,
+    "abs_diff": 0.0,
+    "enlarged_state_phi_dependence_B": 0.857142857142857
+  },
+  "boundary_location_sweep": {
+    "region_active_r0": [
+      "S",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "C0"
+    ],
+    "region_active_r2": [
+      "S",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "C0",
+      "C1",
+      "C2"
+    ],
+    "r0_step1_mode_outside_cert_diff_B": 2.220446049250313e-16,
+    "r0_step0_mode_inside_cert_diff_B": 0.857142857142857,
+    "r2_step2_mode_inside_cert_diff_B": 0.857142857142857
+  },
+  "partial_amplitude_robustness": {
+    "v_star": 0.9,
+    "bound_construction": "2*(||Re X||_1 + ||Im X||_1), X = mean_phi e^{i phi} rho_region|M=0(phi); Hoelder + CPTP trace-norm contractivity",
+    "channel_bound_A_sanity": 1.9794866372215738,
+    "channel_bound_B_cnot": 1.249000902703301e-16,
+    "alpha_pi_equals_cnot_statevector_diff": 3.7496997163046154e-17,
+    "sweep": [
+      {
+        "alpha_over_pi": 0.75,
+        "emission_probability": 0.8535533905932737,
+        "fragment_undo_locked_visibility": 0.3787583703263907,
+        "analytic_cos_half_alpha_times_vis_A": 0.37875837032639065,
+        "in_region_channel_bound": 0.7575167406527814,
+        "bound_below_v_star": true
+      },
+      {
+        "alpha_over_pi": 0.9,
+        "emission_probability": 0.9755282581475768,
+        "fragment_undo_locked_visibility": 0.15482996657402132,
+        "analytic_cos_half_alpha_times_vis_A": 0.1548299665740213,
+        "in_region_channel_bound": 0.30965993314804263,
+        "bound_below_v_star": true
+      },
+      {
+        "alpha_over_pi": 0.98,
+        "emission_probability": 0.9990133642141359,
+        "fragment_undo_locked_visibility": 0.03108858893007071,
+        "analytic_cos_half_alpha_times_vis_A": 0.0310885889300707,
+        "in_region_channel_bound": 0.06217717786014142,
+        "bound_below_v_star": true
+      },
+      {
+        "alpha_over_pi": 1.0,
+        "emission_probability": 1.0,
+        "fragment_undo_locked_visibility": 6.060429935570895e-17,
+        "analytic_cos_half_alpha_times_vis_A": 6.060429935570895e-17,
+        "in_region_channel_bound": 1.360466698596701e-16,
+        "bound_below_v_star": true
+      }
+    ]
+  },
+  "forcing_holds": true,
+  "verdict_language": "forcing holds at the causal tier in this finite family: when the record-carrying mode is emitted onto the discrete lightcone and propagates past the control-region boundary, the T392 access asymmetry follows from causal geometry alone -- the region conditional state is exactly phase-independent, so NO channel supported on the control region recovers the prepared phase, while the same in-region undo recovers it before escape and a counterfactual enlargement across the boundary recovers it after. The upgrade from the engineered tier to the causal tier is conditional on emission occurring; the B-prime control shows emission alone, without record correlation, splits nothing."
+}

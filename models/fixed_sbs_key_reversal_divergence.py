@@ -1,9 +1,10 @@
 """T392: Fixed-SBS-Key Reversal Divergence Witness.
 
-A finite, exactly-simulable statevector model that tests whether Q1C Class 1
-(auxiliary channel tied to extra environment structure not screened off by the
-full ordinary event-level record) is *non-empty*, using reversal cost as the
-independently typed TaF axis, at FIXED SBS closure keys.
+A finite, exactly-simulable statevector model that tests whether the T146 live
+class ``extra_environment_candidate`` (T150: ``typed_extra_environment_candidate``)
+-- an auxiliary channel tied to extra environment structure not screened off by
+the full ordinary event-level record -- is *non-empty*, using reversal cost as
+the independently typed TaF axis, at FIXED SBS closure keys.
 
 The construction attacks the one boundary T162 did not close: the honest access
 boundary. It builds two preparations that agree exactly on
@@ -185,14 +186,24 @@ def x_visibility_of_S(psi: np.ndarray, n: int = N_QUBITS) -> float:
 # Circuit construction
 # --------------------------------------------------------------------------- #
 
-def prepare(kind: str) -> np.ndarray:
+def prepare(kind: str, s_phase: float = 0.0) -> np.ndarray:
     """Return the exact statevector for a named preparation.
 
     ``A``  shallow branching: S->|+>, controlled-Ry meter, four fragment copies.
     ``B``  deep branching: A plus CNOT F4->A0 (extra inaccessible ancilla copy).
     ``Bprime`` null control: A0 copies nothing (product); identical to A.
+
+    ``s_phase`` parameterizes the initial S state as
+    ``(|0> + e^{i s_phase}|1>)/sqrt(2)`` for the phi-independence lemma
+    (v0.1.1). The default ``0.0`` applies no additional gate, so every
+    pre-existing quantity is bit-identical to v0.1.
     """
     psi = single_qubit_gate(_HADAMARD, S) @ zero_state()
+    if s_phase != 0.0:
+        phase_gate = np.array(
+            [[1.0, 0.0], [0.0, np.exp(1j * s_phase)]], dtype=complex
+        )
+        psi = single_qubit_gate(phase_gate, S) @ psi
     psi = controlled_ry(THETA, S, M) @ psi
     for frag in FRAGMENT_QUBITS:
         psi = cnot(S, frag) @ psi
@@ -214,11 +225,15 @@ def prepare(kind: str) -> np.ndarray:
 # --------------------------------------------------------------------------- #
 
 def ordinary_record_distribution(psi: np.ndarray) -> dict:
-    """Full ordinary event-level record = joint Z distribution of (M, S).
+    """Full ordinary event-level record = joint Z distribution over {S, M}.
 
-    M is the meter outcome; S is the standard final system readout in Z. This
-    is the declared ordinary instrument's complete event-level transcript. A0
-    is extra environment and is deliberately excluded.
+    M is the meter outcome; S is the standard final system readout in Z.
+    NOTE (v0.1.1 label fix): ``z_distribution`` sorts qubit indices, and
+    S = qubit 0 < M = qubit 1, so the stored outcome tuples are ordered
+    ``(S, M)``, not ``(M, S)``. E.g. the tuple ``(1, 0)`` reads
+    ``P(S=1, M=0)``. This is the declared ordinary instrument's complete
+    event-level transcript. A0 is extra environment and is deliberately
+    excluded.
     """
     return z_distribution(psi, [M, S])
 
@@ -363,6 +378,20 @@ class ReversalReport:
     preparation: str
     per_outcome: dict
     best_branch_visibility: float
+
+
+def declared_conditional_state(psi: np.ndarray, m_outcome: int = 0) -> np.ndarray:
+    """rho_{S, F1..F4 | M = m_outcome}: the full accessible conditional state.
+
+    Ground object of the phi-independence lemma (v0.1.1): this is everything
+    any accessible protocol -- inverse-coupling or otherwise -- can act on
+    once the meter outcome is fixed. If it carries no information about the
+    prepared S phase, no accessible protocol can recover that phase.
+    """
+    prob, conditioned = project_qubit(psi, M, m_outcome)
+    if prob <= 1e-15:
+        raise ValueError(f"meter outcome {m_outcome} has zero probability")
+    return reduced_density_matrix(conditioned, [S, F1, F2, F3, F4])
 
 
 def reversal_report(psi: np.ndarray, preparation: str) -> ReversalReport:
@@ -691,13 +720,16 @@ def run_analysis() -> WitnessResult:
             "reversal-cost axis splits the D1-relative-to-access verdict, and "
             "an auxiliary channel on extra environment structure (A0) gives "
             "positive, non-screened-off decision-risk lift across the tested "
-            "loss family. Q1C Class 1 is non-empty in this finite model."
+            "loss family. The T146 live class extra_environment_candidate "
+            "(T150: typed_extra_environment_candidate) is non-empty in this "
+            "finite model."
         )
     else:
         verdict_language = (
             "collapse extended: no construction in this family produced a "
             "reversal split at fixed ordinary record and fixed SBS key with a "
-            "non-screened-off auxiliary lift. Q1C Class 1 remains unwitnessed."
+            "non-screened-off auxiliary lift. The T146 class "
+            "extra_environment_candidate remains unwitnessed."
         )
 
     return WitnessResult(

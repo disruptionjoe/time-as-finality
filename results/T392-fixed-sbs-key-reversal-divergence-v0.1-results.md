@@ -14,8 +14,9 @@ record and a fixed SBS closure key over the declared fragments `F1..F4`, the
 reversal-cost axis splits the D1-relative-to-access verdict, and an auxiliary
 channel on extra environment structure (`A0`) gives positive, non-screened-off
 predeclared decision-risk lift across the tested finite loss family. On the
-strength of this seven-qubit statevector model, **Q1C Class 1 is non-empty as a
-finite existence result.**
+strength of this seven-qubit statevector model, **the T146 live class
+`extra_environment_candidate` (T150: `typed_extra_environment_candidate`) is
+non-empty as a finite existence result.**
 
 This does **not** reinstate Q1C, does not name a platform, and does not clear
 the T166 packet-intake gate or the T183 reinstatement stack. Q1C remains
@@ -34,9 +35,11 @@ the T166 packet-intake gate or the T183 reinstatement stack. Q1C remains
 
 ### 1. Ordinary-record equality
 
-Full ordinary event-level record `R` = joint `Z` distribution of `(M, S)`.
+Full ordinary event-level record `R` = joint `Z` distribution over `{S, M}`.
+The stored outcome tuples are index-sorted, so the labels below read `(S, M)`
+(`S` = qubit 0, `M` = qubit 1); e.g. the `0.375` row reads `P(S=1, M=0)`.
 
-| `(M, S)` | P (prep A) | P (prep B) |
+| `(S, M)` | P (prep A) | P (prep B) |
 | --- | --- | --- |
 | `(0, 0)` | 0.500000 | 0.500000 |
 | `(1, 0)` | 0.375000 | 0.375000 |
@@ -131,7 +134,7 @@ the reopening door T162 explicitly named.
 
 ```
 platform linux -- Python 3.10.12, pytest-9.1.1, pluggy-1.6.0
-collected 17 items
+collected 18 items
 
 tests/test_fixed_sbs_key_reversal_divergence.py::test_ordinary_event_level_record_identical PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_ordinary_record_is_a_normalized_distribution PASSED
@@ -143,6 +146,7 @@ tests/test_fixed_sbs_key_reversal_divergence.py::test_reversal_gap_matches_analy
 tests/test_fixed_sbs_key_reversal_divergence.py::test_typed_axis_H_finite_for_A_infinite_for_B PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_verdict_map_splits_the_two_preparations PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_reversal_cost_infinite_when_no_accessible_subset_reaches_vstar PASSED
+tests/test_fixed_sbs_key_reversal_divergence.py::test_phi_independence_lemma_grounds_infinite_cost_in_B PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_both_verdict_classes_populated_no_gerrymander PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_auxiliary_channel_gives_positive_lift_across_loss_family PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_conditional_mutual_information_strictly_positive PASSED
@@ -151,7 +155,7 @@ tests/test_fixed_sbs_key_reversal_divergence.py::test_bprime_shows_zero_divergen
 tests/test_fixed_sbs_key_reversal_divergence.py::test_witness_holds_end_to_end PASSED
 tests/test_fixed_sbs_key_reversal_divergence.py::test_witness_language_is_restrained_house_vocabulary PASSED
 
-17 passed
+18 passed
 ```
 
 ## Recommended next (no promotion)
@@ -159,3 +163,34 @@ tests/test_fixed_sbs_key_reversal_divergence.py::test_witness_language_is_restra
 - Do not treat this as a Q1C reopening. If Joe wants to press it, the next step
   is a physical-forcing argument for `A0`-like structure and a robustness sweep
   over imperfect copies and `theta`, staged through the T166 packet intake.
+
+## v0.1 -> v0.1.1 review patches
+
+Hostile review ruling: **stands, patches required** (reviewer scratch at
+`_local/t392_hostile_check.py`). Five patches applied; no computed number
+changed.
+
+1. **Mixture legitimacy** — spec section added answering "the lift is merely
+   preparation identification": the T137/T150 gates structurally require an
+   A/B family; the 50/50 mixture is physically equivalent to a single frozen
+   8-qubit architecture with one unmonitored coin qubit controlling the
+   `F4 -> A0` coupling; and the earned verdict non-factorization content is
+   independent of the mixture reading.
+2. **Record labeling** — the ordinary-record table mislabeled the stored
+   tuples as `(M, S)`; they are index-sorted `(S, M)`, so the correct reading
+   of the `0.375` row is `P(S=1, M=0)`, not `P(M=1, S=0)`. Labels fixed here
+   and in the model docstring; the `.json` stores unlabeled bitstrings (in
+   `(S, M)` order) and needed no change. Every computed number unchanged.
+3. **Class naming** — headline "Q1C Class 1" replaced with the repo's named
+   classes: T146 `extra_environment_candidate` / T150
+   `typed_extra_environment_candidate` (informal "Class 1" collides with
+   T146's own numbering, where class 1 is a null class).
+4. **Phi-independence lemma** — spec section plus a new test earning it:
+   `rho_{S,F1..F4|M=0}` is exactly phi-independent in prep B and genuinely
+   phi-dependent in prep A, which is the protocol-independent ground for
+   `H(B) = inf`; disclosed that raw visibility alone is gameable by
+   manufactured coherence, so the inverse-coupling restriction is not what
+   `H(B) = inf` rests on. Suite is now 18 tests; all pre-existing numbers
+   bit-identical.
+5. **Registration** — T392 entered in TESTS.md (with a note that T391 is
+   unassigned), and the model summary / verdict phrasing updated per patch 3.

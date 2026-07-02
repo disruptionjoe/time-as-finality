@@ -124,7 +124,7 @@
     "H_equal": true
   },
   "witness_holds": true,
-  "verdict_language": "witness holds in this finite family: at a fixed ordinary event-level record and a fixed SBS closure key over F1..F4, the reversal-cost axis splits the D1-relative-to-access verdict, and an auxiliary channel on extra environment structure (A0) gives positive, non-screened-off decision-risk lift across the tested loss family. Q1C Class 1 is non-empty in this finite model.",
+  "verdict_language": "witness holds in this finite family: at a fixed ordinary event-level record and a fixed SBS closure key over F1..F4, the reversal-cost axis splits the D1-relative-to-access verdict, and an auxiliary channel on extra environment structure (A0) gives positive, non-screened-off decision-risk lift across the tested loss family. The T146 live class extra_environment_candidate (T150: typed_extra_environment_candidate) is non-empty in this finite model.",
   "artifact": "T392-fixed-sbs-key-reversal-divergence-v0.1",
   "tags": [
     "finite_witness",

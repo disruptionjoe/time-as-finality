@@ -12,7 +12,11 @@ repo's own SBS-importable closure key over the declared fragment family, yet
 differ in reversal cost, so that an auxiliary channel tied to extra environment
 structure gives positive, non-screened-off predeclared decision-risk lift for a
 verdict `V = g(H)` whose independently typed axis `H` is reversal cost. If this
-holds, Q1C Class 1 is non-empty **in this finite model**.
+holds, the T146 live class `extra_environment_candidate` (T150:
+`typed_extra_environment_candidate`) is non-empty **in this finite model**.
+(Informal usage has called this "Q1C Class 1"; that label collides with T146's
+own class numbering, where class 1 — `coarse_record_only` — is a null class,
+which is why the named class is used.)
 
 ## Class
 
@@ -211,6 +215,55 @@ is the formal separation. A reviewer may still argue the extra environment here
 is engineered rather than physically forced; that is true, and is exactly why
 this earns only a finite existence result, not a platform (see below).
 
+## Mixture Legitimacy (why the A/B family is not smuggled)
+
+A related objection: "the lift is merely preparation identification — the A/B
+mixture is an artifact of posing a two-preparation problem." Three answers, in
+decreasing order of dependence on the mixture reading:
+
+1. **The gates structurally require a family.** T137's null condition is
+   defined over a joint distribution with a latent branch-relevant variable,
+   and T150's support floor requires both verdict classes to carry mass, which
+   forces `H` to vary across runs. A single frozen preparation can satisfy
+   neither; an A/B family is required by the gates this artifact clears, not
+   smuggled in to manufacture lift.
+
+2. **The mixture is physically a single frozen architecture.** The 50/50 A/B
+   mixture is physically equivalent to one fixed 8-qubit circuit with a single
+   extra unmonitored coin qubit `C` prepared in `|+>` and controlling the
+   `F4 -> A0` coupling. Cross terms between the two branches carry `|0><1|_C`
+   and vanish under partial trace for every observable excluding `C`; the
+   branch overlap `<psi_A|psi_B> = 1/2` never becomes visible to any such
+   observable. Nothing in the family requires switching circuits between runs.
+
+3. **The earned content survives without the mixture reading.** Independently
+   of how the mixture is interpreted, the artifact establishes verdict
+   non-factorization: identical `R` and identical T162 keys, yet different
+   D1-relative-to-access verdicts. The verdict does not factor through
+   `(R, key)` in this family, and that statement makes no reference to a prior
+   over preparations.
+
+## The Phi-Independence Lemma (what `H(B) = inf` rests on)
+
+Disclosure first: the visibility metric alone is gameable under unrestricted
+accessible unitaries. Raw visibility `1.0` is achievable in preparation B by
+manufactured coherence — e.g. `CNOT (F1 -> S)` followed by `H` on `S` — so the
+inverse-coupling protocol restriction is NOT what `H(B) = inf` rests on.
+Manufactured coherence carries no information about the prepared state and
+would trivialize A equally.
+
+What `H(B) = inf` does rest on is a protocol-independent lemma, verified
+exactly in the test suite: parameterize the initial `S` state as
+`(|0> + e^{i phi}|1>)/sqrt(2)`. Then the full accessible conditional state
+`rho_{S,F1..F4 | M=0}` in preparation B is EXACTLY independent of `phi`
+(max difference `0.0` to machine precision, asserted `< 1e-12`, across the
+sweep `phi in {0, pi/7, pi/3, 2pi/3, pi}`), while in preparation A it is
+genuinely `phi`-dependent (max difference `0.9897`, asserted `> 0.1`). In B,
+no operation confined to the accessible register — inverse-coupling or
+otherwise — can recover the prepared phase, because the accessible conditional
+state carries no `phi` information at all. That, and not the protocol
+restriction, is the ground for `H(B) = inf`.
+
 ## Known Physics Constraints
 
 - No-cloning is respected: fragments and `A0` copy only in the `Z` (pointer)
@@ -231,9 +284,9 @@ this earns only a finite existence result, not a platform (see below).
 - It does **not** overturn T162: T162's factorization holds in the fixed-*data*
   family; this model lives in a richer family (with undo dynamics) that T162
   itself named as the reopening door.
-- The result is scoped to this seven-qubit family. It shows Class 1 is non-empty
-  as a mathematical possibility, not that any accessible physical system
-  realizes it.
+- The result is scoped to this seven-qubit family. It shows the
+  `extra_environment_candidate` class is non-empty as a mathematical
+  possibility, not that any accessible physical system realizes it.
 
 ## Reproduction
 

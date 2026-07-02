@@ -1,5 +1,19 @@
 ﻿# Roadmap
 
+## 2026-07-02 T402 Causal-Domain Boundary Forcing Screen
+
+T402 tests the stronger post-T401 request for a physical substrate. In a finite
+1+1 causal-domain fixture, `R` and `B` inputs are spacelike, the verdict event
+lies in their common future and in the joint `R:B` domain of dependence, and
+the `R`-only / `B`-only domains do not determine the verdict.
+
+The result clears the physical task-shape burden but is still absorbing rather
+than promotional: the same/different separator is ordinary causal-domain
+completion plus joint input access once the common-future event is admitted.
+No claim-ledger movement is earned. The next stronger burden is a same-causal-
+domain-data capability split not expressible as causal reachability, domain of
+dependence, or ordinary joint input completion.
+
 ## 2026-07-02 T401 Finality-Boundary Reconciliation Screen
 
 T401 replaces T400's synthetic parity control with a finite finality-native
@@ -11,9 +25,9 @@ bounded-region record and boundary-holder record attest the same event value.
 The predeclared reconciliation task passes the forced-task gate because its
 output requires the `R:B` record relation. The result is still absorbing rather
 than promotional: once both holder records are admitted, the separator is an
-ordinary joint-record fact. No claim-ledger movement is earned. The next
-stronger Direction-A burden is a physical substrate where boundary crossing is
-forced by the setup and not absorbed as ordinary joint-record reconciliation.
+ordinary joint-record fact. No claim-ledger movement is earned. T402 runs the
+next physical-substrate screen and absorbs the causal-domain version as
+ordinary causal-domain completion.
 
 ## 2026-07-02 T400 Boundary-Forced Task Gate
 

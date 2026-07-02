@@ -1,0 +1,367 @@
+{
+  "absorber_audit": {
+    "R_supported_intervention_underdescription": {
+      "all_R_supported_statistic_bound": 0.0,
+      "reason": "Equal R marginals imply equality for every declared R-supported map/readout; the finite menu is an executable check.",
+      "status": "certified_no_separator"
+    },
+    "claim_promotion": {
+      "reason": "The artifact supplies a physical-substrate absorber screen, not a same-causal-data finality or physics residue.",
+      "status": "blocked"
+    },
+    "lorentzian_causal_domain_completion": {
+      "RB_joint_domain_contains_verdict": true,
+      "R_only_domain_contains_verdict": false,
+      "reason": "The verdict event is in the common future and joint domain of the R and B inputs, but not in the R-only or B-only domain. The capability split follows from ordinary causal-domain data.",
+      "status": "absorbs"
+    },
+    "ordinary_joint_input_completion": {
+      "full_joint_total_variation": 1.0,
+      "reason": "Once the common-future event has both incoming records, the same/different verdict is an ordinary function of joint inputs.",
+      "status": "absorbs_after_domain_access"
+    }
+  },
+  "artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+  "causal_domain_task_audits": [
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "case_id": "causal_common_future_verdict_task",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_task": true,
+        "region_only_domain_suffices": false,
+        "requires_common_future_event": true,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Issue the common-future final verdict only at the event whose causal past contains both the bounded-region input and the boundary input.",
+        "verdict_event_in_joint_domain": true
+      },
+      "causal_domain_task_gate": "pass",
+      "failure_label": null,
+      "measurement_gate": {
+        "boundary_local_statistics_equal": true,
+        "common_future_verdict_advantage": 0.5,
+        "joint_domain_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "physical_substrate_burden_cleared": true,
+      "residue_label": "candidate_physical_forced_task_absorbed_by_causal_domain"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": true,
+        "case_id": "optional_joint_state_label",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_task": false,
+        "region_only_domain_suffices": false,
+        "requires_common_future_event": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Admit arbitrary joint R:B access and label which source distribution was prepared.",
+        "verdict_event_in_joint_domain": true
+      },
+      "causal_domain_task_gate": "fail",
+      "failure_label": "optional_boundary_menu_only",
+      "measurement_gate": {
+        "boundary_local_statistics_equal": true,
+        "common_future_verdict_advantage": 0.5,
+        "joint_domain_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "physical_substrate_burden_cleared": false,
+      "residue_label": "absorbed_optional_enlarged_access"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "case_id": "region_hidden_source_bit",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_task": false,
+        "region_only_domain_suffices": true,
+        "requires_common_future_event": false,
+        "smuggles_hidden_datum_into_R": true,
+        "task_statement": "Give R an additional hidden bit naming aligned versus anti-aligned before causal propagation.",
+        "verdict_event_in_joint_domain": false
+      },
+      "causal_domain_task_gate": "fail",
+      "failure_label": "hidden_datum_smuggled_into_region",
+      "measurement_gate": {
+        "boundary_local_statistics_equal": true,
+        "common_future_verdict_advantage": 0.5,
+        "joint_domain_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "physical_substrate_burden_cleared": false,
+      "residue_label": "blocked_hidden_datum_smuggling"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "case_id": "closure_key_shortcut",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": true,
+        "declared_before_pair": true,
+        "domain_native_physical_task": false,
+        "region_only_domain_suffices": true,
+        "requires_common_future_event": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Attach a precomputed closure key to the bounded region that already contains the same/different verdict.",
+        "verdict_event_in_joint_domain": false
+      },
+      "causal_domain_task_gate": "fail",
+      "failure_label": "absorbed_by_closure_key",
+      "measurement_gate": {
+        "boundary_local_statistics_equal": true,
+        "common_future_verdict_advantage": 0.5,
+        "joint_domain_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "physical_substrate_burden_cleared": false,
+      "residue_label": "absorbed_closure_key_bookkeeping"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "case_id": "class_marker_shortcut",
+        "class_marker_signature_only": true,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_task": false,
+        "region_only_domain_suffices": true,
+        "requires_common_future_event": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Use the global aligned/anti-aligned class name instead of the causal inputs at the verdict event.",
+        "verdict_event_in_joint_domain": false
+      },
+      "causal_domain_task_gate": "fail",
+      "failure_label": "absorbed_by_class_marker_signature",
+      "measurement_gate": {
+        "boundary_local_statistics_equal": true,
+        "common_future_verdict_advantage": 0.5,
+        "joint_domain_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "physical_substrate_burden_cleared": false,
+      "residue_label": "absorbed_class_marker_signature"
+    }
+  ],
+  "causal_geometry": {
+    "B_only_domain_contains_verdict": false,
+    "RB_joint_domain_contains_verdict": true,
+    "R_and_B_are_spacelike": true,
+    "R_only_domain_contains_verdict": false,
+    "boundary_crossing_forced_by_domain": true,
+    "events": {
+      "B_input": {
+        "event_id": "B_input",
+        "records": [
+          "right_record"
+        ],
+        "t": 0.0,
+        "x": 1.0
+      },
+      "R_input": {
+        "event_id": "R_input",
+        "records": [
+          "left_record"
+        ],
+        "t": 0.0,
+        "x": -1.0
+      },
+      "common_future_verdict": {
+        "event_id": "common_future_verdict",
+        "records": [],
+        "t": 1.0,
+        "x": 0.0
+      }
+    },
+    "initial_data_intervals": {
+      "B_only": {
+        "interval_id": "B_only_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": 1.0
+      },
+      "RB_joint": {
+        "interval_id": "RB_joint_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": -1.0
+      },
+      "R_only": {
+        "interval_id": "R_only_slice",
+        "t0": 0.0,
+        "x_max": -1.0,
+        "x_min": -1.0
+      }
+    },
+    "verdict_in_common_future": true
+  },
+  "claim_ledger_update": "none; no claim promotion",
+  "controls": {
+    "causal_domain_negative_control": {
+      "RB_joint_domain_contains_event": false,
+      "event": {
+        "event_id": "off_axis_event",
+        "records": [],
+        "t": 1.0,
+        "x": 2.5
+      },
+      "purpose": "null control: the declared joint interval does not determine events outside its future domain"
+    },
+    "region_visible_control": {
+      "pair": [
+        "R_always_0",
+        "R_always_1"
+      ],
+      "purpose": "teeth control: R-supported readouts distinguish pairs when the R marginal actually differs",
+      "region_only_binary_success": 1.0,
+      "region_total_variation": 1.0
+    }
+  },
+  "falsification_condition": "This screen would fail if any R-supported statistic separated the pair, if the verdict event were determined by the R-only domain, if boundary access were merely optional rather than forced by the common-future task, or if causal-domain completion were ignored as the absorber.",
+  "main_pair_audit": {
+    "all_R_supported_statistic_bound": 0.0,
+    "all_boundary_local_statistic_bound": 0.0,
+    "boundary_local_binary_success": 0.5,
+    "boundary_local_total_variation": 0.0,
+    "boundary_marginals": {
+      "aligned": [
+        0.5,
+        0.5
+      ],
+      "anti_aligned": [
+        0.5,
+        0.5
+      ]
+    },
+    "common_future_verdict_relation": {
+      "aligned": {
+        "different": 0.0,
+        "same": 1.0
+      },
+      "anti_aligned": {
+        "different": 1.0,
+        "same": 0.0
+      },
+      "binary_success": 1.0,
+      "separates_pair": true
+    },
+    "common_future_verdict_success": 1.0,
+    "finite_region_intervention_menu": {
+      "aligned": {
+        "erase_to_0": [
+          1.0,
+          0.0
+        ],
+        "erase_to_1": [
+          0.0,
+          1.0
+        ],
+        "flip": [
+          0.5,
+          0.5
+        ],
+        "identity": [
+          0.5,
+          0.5
+        ]
+      },
+      "anti_aligned": {
+        "erase_to_0": [
+          1.0,
+          0.0
+        ],
+        "erase_to_1": [
+          0.0,
+          1.0
+        ],
+        "flip": [
+          0.5,
+          0.5
+        ],
+        "identity": [
+          0.5,
+          0.5
+        ]
+      },
+      "maps": [
+        "identity",
+        "flip",
+        "erase_to_0",
+        "erase_to_1"
+      ],
+      "max_diff": 0.0,
+      "n_statistics": 4
+    },
+    "full_joint_total_variation": 1.0,
+    "pair": [
+      "aligned",
+      "anti_aligned"
+    ],
+    "region_marginals": {
+      "aligned": [
+        0.5,
+        0.5
+      ],
+      "anti_aligned": [
+        0.5,
+        0.5
+      ]
+    },
+    "region_only_binary_success": 0.5,
+    "region_total_variation": 0.0,
+    "source_distributions": {
+      "aligned": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      },
+      "anti_aligned": {
+        "00": 0.0,
+        "01": 0.5,
+        "10": 0.5,
+        "11": 0.0
+      }
+    }
+  },
+  "recommended_next": [
+    "Treat T402 as a physical-substrate absorber screen, not a claim upgrade.",
+    "Do not repeat causal-domain completion as if it were a surviving discriminator.",
+    "A future upgrade needs a same-causal-domain-data capability split not expressible as causal reachability, domain of dependence, or ordinary joint input completion."
+  ],
+  "residue_label": "candidate_physical_forced_task_absorbed_by_causal_domain_completion",
+  "setup": {
+    "boundary_B": "right input event at t=0, x=1",
+    "declared_before_pair": true,
+    "region_R": "left input event at t=0, x=-1",
+    "substrate": "finite 1+1 causal-domain record propagation",
+    "task": "issue a common-future final verdict at t=1, x=0 from the same/different relation of the incoming records"
+  },
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "blocked_cases": {
+      "class_marker_shortcut": "absorbed_by_class_marker_signature",
+      "closure_key_shortcut": "absorbed_by_closure_key",
+      "optional_joint_state_label": "optional_boundary_menu_only",
+      "region_hidden_source_bit": "hidden_datum_smuggled_into_region"
+    },
+    "pass_cases": [
+      "causal_common_future_verdict_task"
+    ],
+    "physical_substrate_pass_cases": [
+      "causal_common_future_verdict_task"
+    ]
+  },
+  "verdict": "finite physical-substrate forced-boundary candidate built: a common-future verdict event is causally downstream of both R and B inputs, while R-only statistics and declared R interventions remain flat; the result clears the causal-domain task-shape burden but is absorbed by ordinary causal-domain completion and joint input access, so no claim-ledger movement is earned"
+}

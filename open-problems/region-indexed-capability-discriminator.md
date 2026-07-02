@@ -5,7 +5,7 @@
 Open problem / next-artifact spec. No claim promotion.
 
 Seeded by `audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`
-and updated against the later T397, T398, and T399 absorber results.
+and updated against the later T397-T402 absorber results.
 
 T398 closes the first resource-profile absorber gate at the finite internal
 level: T397's `C(R)` profiles form a 3 x 4 product resource preorder once the
@@ -38,6 +38,15 @@ finality level, but remains absorbed by ordinary joint-record completion: once
 both holder records are admitted, the separator is just the joint record
 relation. No claim promotion follows.
 
+T402 tests the next physical-substrate version. In a finite 1+1 causal-domain
+fixture, the verdict event is in the common future and joint `R:B` domain of
+dependence but not in the `R`-only or `B`-only domains. The physical task-shape
+burden clears, but the result is still absorbed: the separator follows from
+ordinary causal-domain completion plus joint input access. The next live
+version must match causal-domain data and still produce a capability split not
+expressible as causal reachability, domain of dependence, or ordinary joint
+input completion.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -47,8 +56,11 @@ record accessibility can move no reduced process marginal at all while still
 changing what a record holder can do or postdict. T397 absorbs T395's
 `k >= 3` class-coarse residue as generic multipath class-marker algebra.
 T398 then absorbs the first `C(R)` profile poset as a finite product resource
-preorder, so the next Direction-A move cannot be another visibility
-scalarization over class records or a same-profile resource-order claim.
+preorder, T401 absorbs finite finality reconciliation as joint-record
+completion, and T402 absorbs the causal-domain substrate version as standard
+causal-domain completion. The next Direction-A move cannot be another
+visibility scalarization over class records, same-profile resource-order claim,
+ordinary joint-record separator, or ordinary causal-domain separator.
 
 The live object is therefore not a statistics-only record/order inequality.
 It is a region-indexed capability discriminator:
@@ -78,6 +90,8 @@ Build a finite fixture with:
   shortcut absorbers ruled out;
 - a T401-style absorber check showing whether the task is more than ordinary
   joint-record reconciliation;
+- a T402-style absorber check showing whether the task is more than ordinary
+  causal reachability, domain of dependence, or joint input completion;
 - positive controls where region enlargement restores the capability;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.
@@ -107,6 +121,8 @@ Demote or close this route if:
 - the criterion factors through the SBS closure key at fixed access;
 - the only separator is a class-marker signature already absorbed by T397;
 - the task reduces to ordinary joint-record completion, as in T401;
+- the physical-substrate separator reduces to ordinary causal-domain
+  completion or joint input access, as in T402;
 - the intervention menu has to smuggle in the hidden datum it is supposed to
   reveal.
 

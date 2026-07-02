@@ -1,0 +1,126 @@
+{
+  "artifact": "T418-schwarzschild-horizon-access-profile-screen-v0.1",
+  "status": "implemented_guardrail_no_claim_promotion",
+  "source_method_action": "Method next action: run a GR causal-accessibility witness using simple models first; access-profile alignment report named this as the safe follow-up.",
+  "model_scope": "radial Schwarzschild causal-access screen in ingoing Eddington-Finkelstein coordinates; finite exterior cutoff, no QFT",
+  "horizon_geometry_audit": {
+    "slope_inside": -0.16666666666666663,
+    "slope_on_horizon": 0.0,
+    "slope_outside": 0.16666666666666669,
+    "inside_trace": {
+      "start_radius": 1.5,
+      "final_radius": 0.0,
+      "steps": 53,
+      "escaped_to_exterior_cutoff": false,
+      "crossed_outward_through_horizon": false,
+      "hit_singularity": true,
+      "classification": "hits_singularity_before_escape"
+    },
+    "horizon_trace": {
+      "start_radius": 2.0,
+      "final_radius": 2.0,
+      "steps": 20000,
+      "escaped_to_exterior_cutoff": false,
+      "crossed_outward_through_horizon": false,
+      "hit_singularity": false,
+      "classification": "horizon_generator_no_escape"
+    },
+    "outside_trace": {
+      "start_radius": 3.0,
+      "final_radius": 6.012493368938,
+      "steps": 232,
+      "escaped_to_exterior_cutoff": true,
+      "crossed_outward_through_horizon": false,
+      "hit_singularity": false,
+      "classification": "reaches_exterior_cutoff"
+    }
+  },
+  "access_profile_alignment_audit": {
+    "case_id": "same_exterior_shadow_different_interior_record",
+    "states": [
+      "BH0",
+      "BH1"
+    ],
+    "exterior_projection_left": {
+      "profile_id": "stationary_exterior_observer",
+      "mass": 1.0,
+      "horizon_radius": 2.0,
+      "exterior_log": [
+        "collapse_mass_1",
+        "horizon_radius_2"
+      ],
+      "received_interior_record": null
+    },
+    "exterior_projection_right": {
+      "profile_id": "stationary_exterior_observer",
+      "mass": 1.0,
+      "horizon_radius": 2.0,
+      "exterior_log": [
+        "collapse_mass_1",
+        "horizon_radius_2"
+      ],
+      "received_interior_record": null
+    },
+    "exterior_projection_equal": true,
+    "aligned_exterior_capability_left": {
+      "profile_id": "stationary_exterior_observer",
+      "can_recover_record": false,
+      "recovered_record": null,
+      "reason": "event lies inside the Schwarzschild horizon; outgoing null trace classified as hits_singularity_before_escape"
+    },
+    "aligned_exterior_capability_right": {
+      "profile_id": "stationary_exterior_observer",
+      "can_recover_record": false,
+      "recovered_record": null,
+      "reason": "event lies inside the Schwarzschild horizon; outgoing null trace classified as hits_singularity_before_escape"
+    },
+    "aligned_exterior_capability_equal": true,
+    "cross_profile_capability_left": {
+      "profile_id": "infalling_or_full_slice_profile",
+      "can_recover_record": true,
+      "recovered_record": "interior_bit_0",
+      "reason": "this profile is not the exterior observer: it is granted interior or full-slice access by definition"
+    },
+    "cross_profile_capability_right": {
+      "profile_id": "infalling_or_full_slice_profile",
+      "can_recover_record": true,
+      "recovered_record": "interior_bit_1",
+      "reason": "this profile is not the exterior observer: it is granted interior or full-slice access by definition"
+    },
+    "cross_profile_capability_split": true,
+    "alignment_gate_verdict": "no_same_profile_projection_failure",
+    "mismatch_verdict": "cross_profile_mismatch_absorbed_by_horizon_access_profile",
+    "residue_label": "absorbed_by_schwarzschild_causal_access_and_profile_alignment"
+  },
+  "positive_control": {
+    "case_id": "outside_signal_positive_control",
+    "same_geometry": true,
+    "both_reach_exterior": true,
+    "records_distinguished_by_exterior_profile": true,
+    "residue_label": "ordinary_exterior_causal_record_access",
+    "reason": "The guard has teeth: records emitted outside the horizon can reach the exterior cutoff and are ordinary causal record access."
+  },
+  "absorber_audit": {
+    "schwarzschild_event_horizon": {
+      "status": "absorbs",
+      "reason": "Inside the horizon, outgoing radial null directions do not increase through r_s. Exterior non-recovery is ordinary GR causal-access structure in this model."
+    },
+    "access_profile_alignment": {
+      "status": "absorbs",
+      "reason": "Exterior projection compared to exterior capability does not split. The split appears only when the capability is silently moved to an infalling/full-slice profile."
+    },
+    "black_hole_information_claim": {
+      "status": "not_attempted",
+      "reason": "The artifact does not model Hawking radiation, QFT algebras, Page curves, holography, or evaporation."
+    }
+  },
+  "verdict": "T418 supplies a GR causal-accessibility absorber screen: same exterior Schwarzschild shadow plus different interior records does not create an exterior capability split; comparing to an infalling or full-slice capability is a cross-profile mismatch unless declared.",
+  "claim_ledger_update": "none; no claim promotion",
+  "north_star_or_public_posture_update": "none",
+  "recommended_next": [
+    "Use T418 as a horizon/access-profile guardrail for future B1/S1/R1 screens.",
+    "Do not cite interior-record recovery by a non-exterior profile as exterior projection residue.",
+    "A stronger GR-facing artifact would need matched access profiles plus a native black-hole information or algebraic-QFT capability object declared up front."
+  ],
+  "falsification_condition": "The screen would fail in TaF's favor only if two states matched the Schwarzschild exterior geometry, observer access profile, received record algebra, and task boundary, yet split an exterior-native capability not expressible as standard horizon causal access."
+}

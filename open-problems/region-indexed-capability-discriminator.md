@@ -289,3 +289,18 @@ used. The honest successors are therefore (a) the R1 relabel-proof separator
 T412/T415/T416) and (b) the (E1)/(E2) family/assumption boundaries — not a single
 finite closed discriminator. No claim promotion; the scope theorem is a candidate
 pausing for Joe; this problem stays open in its reframed form.
+
+**Correction (2026-07-02, post adversarial review):** the scope-theorem's
+*universal* no-go framing above is **withdrawn**. An external adversarial referee
+found (i) the Part-1 "datum is a function of the complement" fails in the quantum
+case (the datum can be an `R`–`R^c` correlation in no marginal — exactly the T411
+witness); and (ii) a **fourth forcing mode E3** exists — conservation-law /
+superselection / Wigner–Araki–Yanase no-gos are *exact, single-instance,
+physically-forced* barriers — so a single-instance physical boundary is **not**
+impossible in the quantum regime (it is only impossible in the *classical
+finite-state* regime, where the closure argument holds). The surviving object is a
+four-mode taxonomy (E0 declared / E1 asymptotic / E2 hardness / **E3
+structural-symmetry ≈ GU**), Part 1 restated algebraically. So this problem's
+successors now also include the **E3 route** (a symmetry/superselection-forced
+boundary). See the revised
+`open-problems/finite-closed-capability-boundary-scope-theorem.md`.

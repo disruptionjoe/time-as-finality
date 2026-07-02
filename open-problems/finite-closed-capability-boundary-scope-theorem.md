@@ -1,224 +1,220 @@
-# Finite-Closed Capability-Boundary Scope Theorem (candidate)
+# Finite-Closed Capability-Boundary Taxonomy (candidate; universal no-go withdrawn)
 
 ## Status
 
-Theorem-candidate / open problem. **No claim promotion; no CLAIM-LEDGER entry;
-no TESTS.md edit; promotion pauses for Joe.** This document formalizes **M1** —
-the strongest convergence of the 2026-07-02 physical-boundary persona pass
-(`explorations/physical-boundary-hegelian-persona-pass-2026-07-02.md`) — and
-marshals three independent executable witnesses (T411, T413, T417) plus a general
-argument. Part 1 (the Declarability Lemma) is proven at the finite-witness /
-elementary-argument level; Part 2 (Physicality-Requires-a-Gap) is a
-theorem-**candidate** with a stated exhaustiveness gap. **Single-process ceiling
-in full force:** the three witnesses were produced by one process; their
-agreement motivates the theorem and supplies instances, but the *argument*, not
-the convergence, is what carries it. Cross-domain witnesses (cooperative game
-theory, cryptography) are the **object of study**, never evidence for physics.
+Taxonomy / synthesis candidate — **the universal no-go theorem framing is
+withdrawn** after adversarial review (see the change record at the bottom and
+`literature/Adversarial Referee Report ... deep-research-report.md`). **No claim
+promotion; no CLAIM-LEDGER entry; no TESTS.md edit; promotion pauses for Joe.**
 
-## Informal statement
+What this document now is: a **map of capability-boundary modes** in finite closed
+models — one declared mode and three physical-forcing modes — with a genuinely
+proven fragment in the *classical* regime and honestly bounded claims in the
+*quantum* regime. What it is **not**: an established "no finite closed single-
+instance model has a physical boundary" theorem (that headline is false — mode E3
+falsifies it). Single-process ceiling in force; cross-domain witnesses (game
+theory, cryptography) and the GU adjacency are the **object of study**, never
+evidence for physics; GU/TI are one-way stress-test input only.
 
-> In any **finite closed** model, a capability boundary between two
-> R-statistically-identical configurations is **informationally declared** — the
-> separating datum is always co-present in the complement of R. Making the
-> boundary **physically forced** (not a removable access-restriction) requires
-> leaving the finite-closed **single-instance** regime, via exactly one of an
-> **asymptotic/limit gap** or a **forcing assumption**. No finite closed model
-> exhibits an unconditionally physical single-instance capability boundary.
+**Model class is now stated explicitly (referee hardening #1).** Two regimes,
+kept separate:
 
-This is the scope no-go the program has been circling: it explains *why* every
-physical-boundary attempt was absorbed, and it says precisely what a genuine
-physical boundary would have to buy from outside the finite-closed-single-instance
-regime.
+- **(C) Classical finite-state.** A finite configuration space `Ω`; the full
+  configuration `ω = (ω_R, ω_{R^c})` literally decomposes over `R` and its
+  complement; observables are functions `Ω → values`.
+- **(Q) Finite-dimensional quantum/operational.** A finite-dimensional Hilbert
+  space with an observable *algebra*; `R` is a subalgebra `A_R` (e.g. operators on
+  a tensor factor), not a set of coordinates. States need not decompose as a
+  product; information can live in `R`–`R^c` correlations present in no marginal.
+
+Claims below are tagged **(C)**, **(Q)**, or **both**.
+
+## Informal statement (revised)
+
+> In a finite closed model, a capability boundary between two
+> `R`-statistically-identical configurations is either **informationally declared**
+> — the separating datum sits outside the observable algebra `M_R` generates but is
+> recoverable by an admissible enlargement — or **physically forced**, and forcing
+> comes in exactly three modes: **(E1)** an asymptotic/limit gap, **(E2)** a
+> hardness assumption, or **(E3)** a structural symmetry / conservation-law no-go.
+> In the **classical** regime (C), E3 is empty and the closure argument holds, so a
+> *single-instance* physical boundary is impossible (only E1/E2, which are
+> family-level). In the **quantum** regime (Q), E3 is nonempty: exact single-
+> instance physically-forced boundaries exist (Wigner–Araki–Yanase), so the
+> classical no-go does **not** extend. The declared/physical line is **relative to a
+> declared class of admissible enlargements** (defined below); it is not absolute.
 
 ## Definitions
 
-- **Finite closed model.** A finite configuration space with deterministic
-  endomorphism or finite-dimensional unitary dynamics; *closed* = no external
-  reservoir, the full configuration is retained. Two configurations `c_A, c_B`.
-- **Region `R` with menu `M_R`.** A sub-structure (subsystem / subset of tensor
-  factors / subset of feasibly-queryable data) together with the operations and
-  queries supported within it (observational and interventional-within-`R`).
-- **`R`-statistical equivalence.** `c_A` and `c_B` yield identical outcomes under
-  every `M_R`-supported query.
-- **Capability boundary.** A boundary-crossing menu `M⁺ ⊋ M_R` and an `M⁺`-query
-  that separates `c_A` from `c_B` (they differ in an enactable / recoverable
-  transformation).
-- **Declared vs physical.** The boundary is **declared** if the separating datum
-  is a function of co-present complement data that `M_R` is merely *not permitted*
-  to query (a restriction removable by enlarging access within the model's own
-  resources). It is **physical / forced** if no enlargement of `R`-supported
-  operations *within the model's own resources* recovers the datum — the inability
-  is a consequence of the dynamics/structure, not a stipulated access-restriction.
+- **Finite closed model.** As above, regime (C) or (Q); *closed* = no external
+  reservoir, the full configuration/state is retained.
+- **Region `R` and its menu.** `M_R` = the operations/queries supported within `R`
+  (observational and interventional-within-`R`), generating an observable algebra
+  `⟨M_R⟩` (in (C), functions of `ω_R`; in (Q), the subalgebra `A_R`).
+- **`R`-statistical equivalence.** `c_A, c_B` give identical outcomes under every
+  `M_R`-supported query — i.e. they agree on `⟨M_R⟩`.
+- **Capability boundary.** A larger menu `M⁺ ⊋ M_R` with an `M⁺`-query that
+  separates `c_A, c_B`.
+- **Admissible enlargements (referee hardening: this was the undefined hinge).**
+  The declared/physical verdict is *relative to* a declared class `A` of legitimate
+  enlargements of `M_R`. Canonical ladder:
+  - **A0 — own-region:** only more operations already supported in `R`.
+  - **A1 — ancilla/region-extended:** `R` may adjoin co-present ancillas or enlarge
+    to more of the model's own factors. *(Default; this is the "admit the co-present
+    registers" of joint-record completion.)*
+  - **A2 — resource-extended:** A1 plus reference frames / asymmetry resources.
+  - **A_all:** every operation physically realizable in the model.
+  A boundary is **declared-relative-to-A** if some menu in `A` recovers the datum,
+  **physical-relative-to-A** otherwise. *Nothing is "declared" or "physical"
+  absolutely* — always name `A`. Default `A` = A1 unless stated.
 
-## Part 1 — Informational Declarability Lemma (proven)
+## Part 1 — Algebraic Declarability (restated; referee fix adopted)
 
-**Lemma.** In a finite closed model, if `c_A` and `c_B` are `R`-statistically
-equivalent but some capability boundary separates them, then the separating datum
-is a function of the complement of `R` in the full (co-present) configuration.
+The original "the separating datum is a function of `R`'s complement" is **false in
+(Q)** — information can live in `R`–`R^c` correlations present in *no* marginal
+(quantum masking). Our own **T411 witness is exactly this case** (β=0 datum a global
+correlation, in no proper subset), so the naive lemma was refuted by our own
+evidence. Restated algebraically:
 
-**Proof.** The full configuration determines the outcome of every query
-(closedness + finiteness). `R`-statistical equivalence says the separating datum
-is *not* a function of `R`-supported data alone. Since the model is closed, the
-full configuration is `R`-data together with its co-present complement; a function
-of the whole that is not a function of the `R`-part is a nonconstant function of
-the complement. Hence the datum is a function of the co-present complement. ∎
+**Lemma (algebraic form; both regimes).** If `c_A, c_B` are `R`-statistically
+equivalent yet a capability boundary separates them, the separating datum lies
+**outside the observable algebra `⟨M_R⟩`**. It is recoverable only by observables
+not generated by `M_R` — global, relational, or `R`–`R^c`-correlation observables.
 
-**Corollary (informational boundary is declared).** The information required to
-cross is *always co-present*; the informational boundary is therefore a declared
-access-restriction, not a physical absence. This is exactly the **joint-record
-completion** kill (the T401 move) in general form — and it is why "exclude the
-retained registers from `R`" was pure declaration in every thermal attempt.
+- **(C) corollary.** In the classical regime `⟨M_R⟩` = functions of `ω_R`, and the
+  full configuration decomposes as `(ω_R, ω_{R^c})`; so the datum is a nonconstant
+  function of the co-present complement `ω_{R^c}`. This is the original lemma, now
+  correctly *scoped to (C)*, and it is the general form of the **joint-record
+  completion** kill (the T401 move).
+- **(Q) corollary.** In the quantum regime the datum need not be a marginal of `R^c`
+  at all; it may be an `R`–`R^c` correlation observable (masking; Koashi–Imoto's
+  inaccessible/read-only split). Complete-hiding-to-the-remainder (no-hiding,
+  Braunstein–Pati) is a *special case*; masking is the general behavior, and it is
+  the counterexample that broke the naive lemma.
 
-## Part 2 — Physicality-Requires-a-Gap (candidate)
+**Net.** "Informationally declared" means *outside `⟨M_R⟩` but inside `⟨A⟩` for an
+admissible enlargement `A`" — not "a function of a co-present complement." The
+distinction is algebraic and `A`-relative.
 
-By the Lemma the datum is co-present, so a physical boundary cannot be an
-*informational* absence; it can only be an **extraction-resource** barrier. Let
-`cost_R(c_A, c_B)` be the resources (energy, computation, or model-size) an
-`M_R`-agent must spend to extract the co-present separating datum.
+## Part 2 — The forcing modes (E0/E1/E2/E3; exhaustiveness now regime-dependent)
 
-**Candidate theorem.** For the boundary to be physical (forced), `cost_R` must be
-prohibitive. In a finite closed model **at a single instance**, `cost_R` is
-finite, so extraction is achievable by finite brute force — the single-instance
-boundary is **declared/crackable**. Hence a physical boundary requires leaving the
-finite-closed **single-instance** regime, via exactly one of:
+By Part 1 the datum is present in the global algebra, so a *physical* boundary is
+not an informational absence — it is an obstruction to recovering the datum by any
+menu in the admissible class `A`. There are **four** modes, not two:
 
-- **(E1) Asymptotic / limit gap.** A *family* of models in which the extraction
-  cost, or the datum's non-locality, diverges in a limit — so the boundary is a
-  limit-invariant, not a single-instance fact. (RG relevant-operator survival;
-  the Aumann–Shapley non-atomic value; a diverging recovery cost.)
-- **(E2) Forcing assumption.** A hardness or impossibility hypothesis under which
-  no *feasible* `M_R`-procedure extracts the datum across the family. (A
-  complexity conjecture; a no-go theorem.)
+- **(E0) Declared (collapses).** Recoverable by some menu in `A` (e.g. admit the
+  co-present registers). A stipulated partial-trace / fiat restriction is E0 and
+  dies to joint-record completion. *Not physical relative to `A`.*
+- **(E1) Asymptotic / limit gap (both regimes; family-level).** A *family* of models
+  in which the recovery cost, or the datum's non-locality, diverges in a limit; the
+  boundary is a limit-invariant, not a single-instance fact. (RG relevant operators;
+  Aumann–Shapley non-atomic value; diverging recovery cost.)
+- **(E2) Forcing assumption (both regimes; family-level).** A hardness hypothesis
+  under which no *feasible* menu in `A` recovers the datum across the family. E2 is
+  E1 with a conjectured (not proven) lower bound.
+- **(E3) Structural symmetry / conservation-law no-go (regime (Q); single-instance).**
+  An additive conservation law or superselection rule under which the recovering
+  operation is **exactly impossible on physical states, at a single instance,
+  regardless of resources** — the Wigner–Araki–Yanase phenomenon (exact position
+  measurement under momentum conservation is impossible; exact channel/measurement
+  restrictions under additive conserved observables). This is a genuine physical,
+  non-asymptotic, non-hardness barrier. **It falsifies the old universal headline.**
 
-and **never** via:
+**Closure argument — now correctly scoped to (C).** In the *classical* regime the
+single-instance recovery cost is finite (enumerate the finite configuration; every
+resource — energy, computation, model-size — is bounded), so "prohibitive" is only
+meaningful across a family; a family-level lower bound is either provable (E1) or
+assumption-conditional (E2). Hence **in (C), E3 is empty and E0/E1/E2 are
+exhaustive** — a single-instance classical physical boundary is impossible.
 
-- **(E0) Stipulated gap.** A declared partial trace or a fiat menu-restriction —
-  which is not a resource barrier at all and collapses to *declared* (dies to
-  joint-record completion / the reservoir-idealization absorber).
+**Why the closure argument fails in (Q) (referee fix adopted).** The brute-force
+step is *not* an operationally legitimate primitive quantumly: a single specimen of
+a finite-dimensional quantum state cannot in general be exactly read into classical
+bits (accessible information is Holevo-bounded). So "finite ⇒ finite extraction" is
+a classical-only move, and (Q) additionally admits E3. The classical no-go therefore
+**does not extend to (Q)**.
 
-**Closure argument (reduces the exhaustiveness gap).** The claim "exactly (E1) or
-(E2), never a fourth mode" reduces to one observation about finite closed models:
+**The E3-vs-E0 hinge (referee nuance adopted).** Whether a superselection barrier is
+E3 (forced) or E0 (declared) depends on the admissible class `A`. Under A1 a
+symmetry-forbidden operation is physical (E3). If a reference frame / asymmetry
+resource lifting it is admitted (A2), the same barrier can become declared
+(Bartlett–Rudolph–Spekkens: some superselection is "declared-like," an omitted
+relational resource). But WAY shows *exact* implementation can remain impossible even
+with resources — so E3 is not eliminable by resource-admission in general. This is
+exactly why `A` must be named.
 
-1. *Single-instance cost is always finite.* For a fixed finite configuration the
-   separating datum is a fixed finite object; any procedure that enumerates the
-   configuration extracts it in finite resources. So `cost_R` at a single instance
-   is finite — for **every** resource (energy in a finite system is bounded;
-   computation over a finite domain halts; model-size is fixed).
-2. *Therefore "prohibitive" is inherently asymptotic.* A finite cost is never
-   prohibitive in an absolute sense; prohibitiveness is only meaningful **relative
-   to a budget or across a family**. A stipulated finite budget is **(E0)** —
-   declared, and it collapses (Part 1). So a *non-declared* prohibitive cost is
-   necessarily a statement about a **family** of models (cost or non-locality as a
-   function of instance size).
-3. *An asymptotic lower-bound claim has exactly two epistemic statuses.* Either it
-   is **unconditionally provable** — the naive extraction resource, or the datum's
-   non-locality, provably diverges: **(E1)** — or it holds only **conditional on a
-   hypothesis** that no cleverer feasible procedure beats the growth: **(E2)**.
-   There is no third status for a growth claim: a bound is a theorem or it rests on
-   an assumption.
+## Witnesses (each an object of study; GU is one-way adjacency, not support)
 
-Hence the modes are exhaustive: **(E0)** declared (collapses), **(E1)** provable
-asymptotic divergence, **(E2)** assumption-conditional asymptotic bound. A "fourth
-mode" would be a single-instance non-declared prohibitive cost, which step 1 rules
-out. **Extraction-resource v0.1:** the first formalization pass is now recorded in
-`technical-reports/TECHNICAL-REPORT-finite-closed-extraction-resource-measure-v0.1.md`
-with executable support in `models/finite_closed_extraction_resource_measure.py`.
-It defines a finite closed boundary instance `I = (C, V, F, d)` and the lookup
-upper bound `L(I) = |im(F)| <= |C|`, making the single-instance
-declared/crackable ceiling explicit. The remaining internal-rigor burden is no
-longer the idea of a resource measure, but hostile pressure on whether this
-lookup-cost formalization is the right model-class abstraction. (E1) and (E2)
-are additionally *unified* by T417: computation is one scaling resource, so (E2)
-is (E1) with a hardness hypothesis supplying the lower bound.
+| Witness | Regime | Mode | What it shows / concedes |
+| --- | --- | --- | --- |
+| **T411** departed-record discriminator | (Q) thermal QD | **E0** (+ Part-1 (Q) case) | datum a global correlation in no marginal (the masking case that broke the naive lemma); its gap was a stipulated trace → absorbed by joint-record completion |
+| **T413** legitimacy-as-Shapley | (C) cooperative game | **E0/E1** | single grand-coalition query is finite → E0/declared; Aumann–Shapley non-atomic limit is genuine E1 |
+| **T417** computational finality | (C) number theory (GM) | **E2** (+E1) | co-present datum, feasibly-hard recovery; physical conditional on factoring hardness, family-level |
+| **GU antilinear/Krein no-go** | (Q) physics | **E3** *(adjacency only)* | an exact admissibility-class (Krein/ghost-grading) index-nullity no-go — the single-instance structural obstruction this taxonomy was missing. **Flagged, never cited as support; one-way rule.** |
 
-## The three witnesses
+## Prior art (referee-supplied; NOT independently re-verified — verification pending)
 
-Each is an executable finite fixture in a *different model class*; each exhibits
-the Lemma and lands on a different escape mode.
+Citations as located by the adversarial referee report; I have not re-verified them.
+Treat as leads to check before any submission.
 
-| Witness | Model class | Datum's co-present locus (Lemma) | Gap mode | Verdict |
-| --- | --- | --- | --- | --- |
-| **T411** departed-record discriminator | thermal quantum Darwinism | retained tier-1 registers (a single retained-Z measurement separates) | **(E0)** stipulated partial trace | **absorbed** — died to joint-record completion / reservoir idealization, exactly as Part 1 predicts |
-| **T413** legitimacy-as-Shapley probe | finite cooperative game | the grand-coalition value `v(N)` (or boundary coalitions) | **(E0/E1)** single grand-coalition query is finite → declared; the Aumann–Shapley non-atomic limit is genuine **(E1)** | R1 object built; R2 declared; physical only in the non-atomic limit |
-| **T417** computational finality boundary | number theory (Goldwasser–Micali) | `(x, N)` — brute-force factoring recovers it | **(E2)** QRA/factoring hardness, **+ (E1)** asymptotic cost growth | first door the reservoir killer cannot touch; physical **conditional** on QRA and **family-level** only |
+- **E1 backbone (sharpness needs a limit) — known:** Kadanoff, *Theories of Matter:
+  Infinities and Renormalization* (2010, arXiv:1002.2985), "extended singularity
+  theorem"; Butterfield, "Less is Different" (2011, arXiv:1106.0702); Landsman, SSB
+  emergence/reduction (2013, arXiv:1305.4473). **This is the single strongest threat
+  to novelty — the E1 idea is not ours.**
+- **Part 1 / masking:** Koashi–Imoto (2001, quant-ph/0101144, read-only/inaccessible
+  split); Zhu, hiding/masking (2020, arXiv:2010.07843); Braunstein–Pati no-hiding
+  (2006, gr-qc/0603046) as the special case.
+- **E3 / WAY:** Kuramochi–Tajima, WAY for continuous/unbounded conserved observables
+  (2023, arXiv:2208.13494); Bartlett–Rudolph–Spekkens, reference frames /
+  superselection (2007, quant-ph/0610030); generalized WAY resource-cost tradeoffs.
+- **E2:** Goldwasser–Micali, Probabilistic Encryption (1984); Yao, trapdoor functions
+  (FOCS 1982) — computational indistinguishability is inherently family-indexed.
+- **E0/reversibility framing:** Bennett, Landauer's principle / reversible computation
+  (2002, physics/0210005).
 
-Reading the table: the recurring **reservoir-idealization** death is specific to
-witnesses that used **(E0)** (a stipulated gap). Strip the stipulation and the
-death vanishes (T417) — but then the boundary is physical only via **(E1)/(E2)**,
-i.e. as a *family/limit + assumption*, never as a single-instance closed-model
-fact. That is the theorem.
+**Honest novelty read:** the four-mode *packaging* (E0 declared / E1 asymptotic /
+E2 hardness / E3 structural-symmetry, plus the crypto crosswalk and the tri-repo
+alignment E3=GU) was not found verbatim and may be a genuine synthesis. The *pieces*
+are known, and the E1 backbone in particular is Kadanoff/Butterfield/Landsman. Net:
+**a modest taxonomy/synthesis contribution, not a new theorem.**
 
-## Corollaries
+## Corollaries (updated)
 
-- **R1/R2, reinterpreted.** The persona pass's repair split is a corollary. **R1**
-  (a relabel-proof separator supported on no proper subset) is a witness that the
-  Lemma's complement is the *whole* — achievable *inside* finite closed models
-  (T413's `v(N)`; T411/T412's β=0 correlation). **R2** (physical forcing) is
-  precisely **(E1)/(E2)** — provably *not* a single-instance closed-model fact.
-  The program's difficulty was demanding R2 of a single finite closed fixture,
-  which the theorem says is impossible.
-- **Why every attempt was absorbed.** T398–T406 and the T410/T411 swing each
-  supplied a boundary whose datum was co-present (Part 1) and whose gap was **(E0)**
-  stipulated — so joint-record completion ate them by construction.
-- **The two honest escapes are named and instantiated.** (E1) is Door B
-  (asymptotic; Aumann–Shapley); (E2) is Door C (assumption; QRA) — and T417 shows
-  they unify (computation as the scaling resource).
-- **T416 consistency.** The coupling-graph forcing gate's result — the separator
-  cannot self-certify its factorization; independent operation/coupling evidence
-  is required — is the operational face of Part 1: the boundary's forcing must come
-  from *outside* the separator (an (E1)/(E2) resource structure), never from the
-  co-present datum itself.
+- **R1/R2 reinterpreted.** R1 (a relabel-proof separator in no proper subset) is a
+  Part-1 (Q) object — datum in the global algebra, admissible-menu-relative;
+  achievable inside finite closed models. R2 (physical forcing) is E1/E2/E3 — in (C)
+  never single-instance; in (Q) available as E3.
+- **Why every thermal attempt was absorbed.** They were E0 under A1 (stipulated gaps
+  through co-present registers).
+- **Tri-repo map.** E1 ≈ TaF game / Aumann–Shapley; E2 ≈ TaF computational; **E3 ≈
+  GU** structural-symmetry no-go. The taxonomy is now four-mode and tri-repo-aligned
+  — the review sharpened the map even as it killed the theorem.
 
-## Path to internal establishment (the solo ceiling worth driving to)
+## Standing and next choice
 
-Verification tiers are ordered *recorded → internally established → externally
-established*. **Internal establishment is a legitimate, self-sufficient standing**
-— survived the repo's own hostile review, numbers/arguments re-derived from
-scratch, everything reproducible from the tree — and it is the ceiling a solo
-researcher drives to. External establishment (tier 3) is gated behind the
-single-process ceiling *by construction*; that is a statement about a ceiling,
-**not a prerequisite for progress**. So the work below is what closes the distance
-to internal establishment; it is not blocked on any outside party.
+**Not a hard-theorem paper.** Two honest paths (Joe's choice, pending):
 
-**Internal obligations (do these):**
+- **(A) Classical theorem.** Restrict to regime (C), prove the algebraic
+  Declarability Lemma and the E0/E1/E2 exhaustiveness rigorously — a small, real
+  theorem (foundations/TCS). Drops (Q), E3, and the tri-repo content.
+- **(B) Foundations/taxonomy paper.** Keep (Q); present the four-mode map with
+  bounded claims, Part 1 algebraic, situated against the idealization / masking / WAY
+  literatures. Target: Foundations of Physics / Studies in HPMP / Synthese / Phil of
+  Science. The four-mode, tri-repo-aligned map is the contribution.
 
-1. **Formalize the extraction-resource measure** so the Part-2 closure argument is
-   fully rigorous: v0.1 now exists as the finite lookup upper-bound support
-   artifact in
-   `technical-reports/TECHNICAL-REPORT-finite-closed-extraction-resource-measure-v0.1.md`
-   and `models/finite_closed_extraction_resource_measure.py`. It still needs
-   hostile review and integration into a rigorous model-class statement.
-2. **Rigorous model-class statement of Part 1** — name the category of finite
-   closed models, state closedness as an axiom, prove the Declarability Lemma as a
-   structural fact rather than an elementary argument.
-3. **Internal hostile review** — the repo's mechanism for *recorded → internally
-   established*: independent from-scratch re-derivation of the Lemma and the
-   closure argument, plus an adversarial subset trying to exhibit a fourth mode or
-   a single-instance non-declared boundary. This is the concrete next step.
-4. *(Confidence, not required)* A fourth independent witness in a genuinely
-   different class (e.g. a topological/cohomological one) further supports the
-   pattern — but note the single-process ceiling: extra self-produced witnesses
-   raise conviction, never tier.
+Internal establishment remains the solo ceiling worth driving to (survive the repo's
+own hostile review; reproducible from the tree); external standing is available but
+never a prerequisite. Remaining internal obligations: verify the prior-art
+citations; a rigorous (C) proof; a clean (Q) statement of E3 with the admissible-menu
+`A` fixed; then an internal hostile review of the *repaired* claims.
 
-**External standing (flagged available, NOT blocking):** a named-specialist read
-or independent reproduction would move this to *externally established*. That path
-stays open for whenever an outside verifier appears; the program does not wait on
-it, and nothing above is contingent on it.
-
-## Relation to the lead line and guards
-
-This reframes the primary open problem
-(`open-problems/region-indexed-capability-discriminator.md`): the physical-
-boundary discriminator, *as a single-instance finite-closed object*, is **not
-merely unbuilt but provably out of scope** (candidate); its honest successors are
-the R1 separator (built, relabel-proof modulo the operational-automorphism
-admissibility of T415/T416) and the (E1)/(E2) family/assumption boundaries. No
-North Star, canon, public-posture, cross-repo, or ledger movement. GU/TI material
+No North Star, canon, public-posture, cross-repo, or ledger movement. GU/TI material
 remains stress-test input only. Every promotion decision pauses for Joe.
 
-*Prepared 2026-07-02. Candidate formalization; Part 1 proven (elementary), Part 2
-argued + thrice-witnessed with a stated exhaustiveness gap. No repo state modified
-beyond this file.*
+*Revised 2026-07-02 after adversarial review: universal no-go withdrawn; Part 1
+restated algebraically with a (C)/(Q) split; E3 added; admissible-menu class defined;
+prior art recorded (unverified). Change record below.*
 
 ---
 
@@ -229,7 +225,7 @@ candidate (`literature/Adversarial Referee Report on the Finite-Closed
 Capability-Boundary Scope Theorem deep-research-report.md`). Verdict: **the result
 does not survive as a universal no-go theorem.** Recorded honestly; the universal
 claim is withdrawn to a taxonomy/synthesis with bounded scope. Four load-bearing
-findings, all judged correct:
+findings, all judged correct (and all now incorporated in the body above):
 
 1. **Part 1 is over-general (FIX).** "The separating datum is a function of the
    complement" is false in quantum/statistical models where the difference lives
@@ -252,30 +248,19 @@ findings, all judged correct:
    admissibility no-go) — the door this taxonomy was missing is the one GU owns.
    Caveat (Bartlett–Rudolph–Spekkens): some superselection barriers are
    *declared-like* (omitted reference-frame resource), so (E3) vs (E0) hinges on
-   the admissible-menu definition (see obligation below).
+   the admissible-menu definition (now fixed in the body).
 3. **The brute-force closure step is quantum-invalid.** "Single-instance cost is
    finite because you can enumerate the configuration" holds for classical
    finite-state models but **not** one-shot quantum ones (accessible information is
    Holevo-bounded; a single specimen is not exactly classically readable). The
-   closure argument must be scoped to classical finite-state, or rebuilt.
+   closure argument is now scoped to classical finite-state (C).
 4. **Prior-art backbone is known (PARTIALLY-KNOWN).** The Part-2 "sharpness needs a
    limit" backbone is Kadanoff's extended-singularity discussion (2010), Butterfield
    "Less is Different" (2011), Landsman (2013). The exact declared-vs-physical +
    E0/E1/E2 + crypto-crosswalk *packaging* was not found verbatim and may be novel,
    but it is "new packaging on known components, missing a whole category (E3)."
 
-**Undischarged obligation surfaced:** *define admissible enlarged menus* (ancillas?
-reference frames? relational observables? symmetry-covariant-only?). The entire
-declared-vs-physical distinction — and whether a superselection barrier is (E3) or
-(E0) — is undefined until this is fixed.
-
-**Revised standing.** Not a hard-theorem paper. Two honest paths: **(A)** narrow to
-a classical finite-state ontic setting and prove a small rigorous algebraic result
-(the closure argument survives there); or **(B)** keep the quantum ambition and
-recast as a **conceptual foundations / taxonomy paper** — a map of capability-
-boundary modes (E0 declared / E1 asymptotic / E2 hardness / E3 structural-symmetry),
-Part 1 restated algebraically, explicitly situated against the idealization,
-masking, and WAY literatures, with bounded claims. The taxonomy — now four-mode and
-tri-repo-aligned (E3 = GU) — is the surviving contribution; the universal no-go is
-not. Recast pending Joe's choice of path A or B. No claim promotion; ledger
-untouched.
+**Revised standing.** Not a hard-theorem paper. Path (A) classical theorem or (B)
+foundations/taxonomy paper, per the Standing section above. The taxonomy — now
+four-mode and tri-repo-aligned (E3 = GU) — is the surviving contribution; the
+universal no-go is not. No claim promotion; ledger untouched.

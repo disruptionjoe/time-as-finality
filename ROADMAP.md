@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T416 Coupling-Graph Forcing Gate
+
+T416 takes the R2 question exposed by T412/T414/T415 and makes it executable:
+does the separator itself force the operational automorphism group, or is
+independent operation/coupling evidence required?
+
+The result narrows the burden without moving claims. Separator-only evidence
+admits the T415 equality-preserving class: 24 reversible linear
+refactorizations, including 18 entangling equality-preservers. Independent
+singleton-operation support restricts the class to the 6 product atom
+permutations, and adding an independent path coupling graph restricts it to the
+2 graph automorphisms. Therefore R2 is not discharged by separator statistics;
+future factorization/coupling work must supply independent operational evidence
+for the product atoms or graph it wants to treat as physically forced.
+
 ## 2026-07-02 T413/T414 Provisional Artifact Normalization
 
 This run normalized the committed exploratory governance-Shapley artifacts that

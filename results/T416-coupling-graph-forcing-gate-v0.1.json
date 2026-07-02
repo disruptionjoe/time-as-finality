@@ -1,0 +1,138 @@
+{
+  "artifact": "T416-coupling-graph-forcing-gate-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "counts": {
+    "GL_3_2": 168,
+    "entangling_equality_preserving": 18,
+    "path_coupling_graph_preserving": 2,
+    "separator_equality_preserving": 24,
+    "singleton_operation_support_preserving": 6
+  },
+  "decision_rule": {
+    "coupling_graph": "sufficient_for_graph_automorphisms_only_if_independently_measured_or_physically_supplied",
+    "separator_only": "insufficient_for_R2",
+    "singleton_operations": "sufficient_for_product_atoms_only_if_independently_measured_or_physically_supplied"
+  },
+  "demotion_condition": "If the only available evidence for the factorization is that it makes the separator global, the R2 burden is unpaid and the separator remains factorization-relative.",
+  "evidence_packets": {
+    "path_coupling_graph": {
+      "admissible_count_linear": 2,
+      "admissible_count_with_local_bit_flips_if_affine_extended": 16,
+      "admits_entangling_equality_preserver": false,
+      "automorphism_permutations": [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "entangling_equality_preservers_admitted": 0,
+      "independent_of_target_separator": true,
+      "name": "path_coupling_graph",
+      "sample_entangling_equality_preserver": null,
+      "status": "forces_declared_path_graph_up_to_reversal_if_independent"
+    },
+    "separator_only": {
+      "admissible_count_linear": 24,
+      "admissible_count_with_local_bit_flips_if_affine_extended": 192,
+      "admits_entangling_equality_preserver": true,
+      "entangling_equality_preservers_admitted": 18,
+      "independent_of_target_separator": false,
+      "name": "separator_only",
+      "sample_entangling_equality_preserver": [
+        "001",
+        "011",
+        "101"
+      ],
+      "status": "does_not_force_product_or_coupling_structure"
+    },
+    "singleton_operation_support": {
+      "admissible_count_linear": 6,
+      "admissible_count_with_local_bit_flips_if_affine_extended": 48,
+      "admits_entangling_equality_preserver": false,
+      "entangling_equality_preservers_admitted": 0,
+      "independent_of_target_separator": true,
+      "name": "singleton_operation_support",
+      "sample_entangling_equality_preserver": null,
+      "status": "forces_product_atoms_up_to_permutation_if_independent"
+    }
+  },
+  "named_attacks": {
+    "entangling_equality_preserver": {
+      "equality_preserving": true,
+      "global_parity_preserving": true,
+      "map": "y0=x0^x2, y1=x1^x2, y2=x2",
+      "preserves_singleton_operations": false,
+      "rows": [
+        "101",
+        "011",
+        "001"
+      ],
+      "support_signature": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    "fanin_localizer": {
+      "equality_preserving": false,
+      "global_parity_preserving": false,
+      "map": "y0=x0^x1^x2, y1=x1, y2=x2",
+      "preserves_singleton_operations": false,
+      "rows": [
+        "111",
+        "010",
+        "001"
+      ],
+      "support_signature": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  },
+  "r2_question": "Is the operational structure - tensor product, singleton operations, or coupling graph - physically forced rather than selected to save the separator?",
+  "source": [
+    "tests/T412-separator-refactorization-gate.md",
+    "tests/T414-certificate-identity-bridge.md",
+    "tests/T415-admissibility-derivation-probe.md",
+    "explorations/governance-shapley-finality-homology-note-2026-07-02.md"
+  ],
+  "universe": {
+    "count": 168,
+    "local_bit_flips": "not enumerated here because T415 is linear; they multiply the support-preserving counts by 8 and do not change support or graph",
+    "refactorizations": "GL(3,2) reversible linear refactorizations"
+  },
+  "verdict": "R2 is not discharged by separator statistics: separator-only evidence admits the T415 equality-preserving class, including entangling refactorizations. Independent singleton-operation evidence forces the product atom structure up to permutation, and independent path-coupling evidence further restricts admissibility to graph automorphisms."
+}

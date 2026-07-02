@@ -120,13 +120,16 @@ and **never** via:
 Hence the modes are exhaustive: **(E0)** declared (collapses), **(E1)** provable
 asymptotic divergence, **(E2)** assumption-conditional asymptotic bound. A "fourth
 mode" would be a single-instance non-declared prohibitive cost, which step 1 rules
-out. **Residual softness (the honest remainder):** this argument fixes the
-*epistemic* taxonomy; it still leans on an informal notion of "extraction
-resource." Pinning that to a precise resource measure (a cost functional on the
-finite model, with brute-force as its finite upper bound) is the remaining
-internal-rigor obligation — a definitional formalization, not a missing idea.
-(E1) and (E2) are additionally *unified* by T417: computation is one scaling
-resource, so (E2) is (E1) with a hardness hypothesis supplying the lower bound.
+out. **Extraction-resource v0.1:** the first formalization pass is now recorded in
+`technical-reports/TECHNICAL-REPORT-finite-closed-extraction-resource-measure-v0.1.md`
+with executable support in `models/finite_closed_extraction_resource_measure.py`.
+It defines a finite closed boundary instance `I = (C, V, F, d)` and the lookup
+upper bound `L(I) = |im(F)| <= |C|`, making the single-instance
+declared/crackable ceiling explicit. The remaining internal-rigor burden is no
+longer the idea of a resource measure, but hostile pressure on whether this
+lookup-cost formalization is the right model-class abstraction. (E1) and (E2)
+are additionally *unified* by T417: computation is one scaling resource, so (E2)
+is (E1) with a hardness hypothesis supplying the lower bound.
 
 ## The three witnesses
 
@@ -180,9 +183,11 @@ to internal establishment; it is not blocked on any outside party.
 **Internal obligations (do these):**
 
 1. **Formalize the extraction-resource measure** so the Part-2 closure argument is
-   fully rigorous: a cost functional on the finite model whose finite brute-force
-   upper bound makes step 1 a lemma, not an observation. (Definitional; the idea
-   is in hand.)
+   fully rigorous: v0.1 now exists as the finite lookup upper-bound support
+   artifact in
+   `technical-reports/TECHNICAL-REPORT-finite-closed-extraction-resource-measure-v0.1.md`
+   and `models/finite_closed_extraction_resource_measure.py`. It still needs
+   hostile review and integration into a rigorous model-class statement.
 2. **Rigorous model-class statement of Part 1** — name the category of finite
    closed models, state closedness as an axiom, prove the Declarability Lemma as a
    structural fact rather than an elementary argument.

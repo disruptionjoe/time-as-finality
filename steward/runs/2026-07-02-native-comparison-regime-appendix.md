@@ -135,6 +135,7 @@ Committed and pushed:
 
 ```text
 6b0ab70 Add native comparison appendix
+c4ac885 Update native comparison receipt
 ```
 
 Completed: 2026-07-02T08:05:00-05:00 local.

@@ -1,0 +1,186 @@
+{
+  "artifact": "T400-boundary-forced-task-gate-v0.1",
+  "audits": [
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": true,
+        "boundary_relation_is_task_native": false,
+        "case_id": "t399_optional_state_label",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_or_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Separate phi_plus from psi_plus after admitting any joint RB readout."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "optional_boundary_menu_only",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_optional_enlarged_access"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": true,
+        "case_id": "synthetic_RB_parity_task",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_or_finality_task": false,
+        "requires_boundary_variables": true,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Output whether the R and B records have equal or unequal Z-parity in the event."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": null,
+      "formal_forced_task_gate": "pass",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "formal_positive_control_only"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "hidden_datum_in_R_shortcut",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_or_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": true,
+        "task_statement": "Give R an extra task bit naming which Bell state was prepared."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "hidden_datum_smuggled_into_region",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "blocked_hidden_datum_smuggling"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "closure_key_shortcut",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": true,
+        "declared_before_pair": true,
+        "domain_native_physical_or_finality_task": false,
+        "requires_boundary_variables": true,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Declare an SBS/closure key that already contains the parity separator."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "absorbed_by_closure_key",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_closure_key_bookkeeping"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "class_marker_shortcut",
+        "class_marker_signature_only": true,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_physical_or_finality_task": false,
+        "requires_boundary_variables": true,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Use a generic class-marker signature rather than a boundary relation native to the task."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "absorbed_by_class_marker_signature",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_class_marker_signature"
+    }
+  ],
+  "claim_ledger_update": "none; no claim promotion",
+  "falsification_condition": "This gate would fail if optional enlarged-state access passed as forced, if a declared relational task did not require boundary variables, if any shortcut case passed, or if the synthetic control were treated as ledger movement.",
+  "gate_definition": {
+    "required_measurement_conditions": [
+      "all R-supported statistics equal",
+      "declared finite R intervention/readout menu equal",
+      "boundary-local statistics equal",
+      "joint boundary-crossing menu improves capability"
+    ],
+    "required_task_conditions": [
+      "task declared before selecting the witness pair",
+      "task output requires variables from both R and B",
+      "boundary relation is native to the declared task",
+      "boundary menu is not merely optional enlarged-state access",
+      "no hidden datum is smuggled into R",
+      "no closure key already contains the separator",
+      "no generic class-marker signature is doing the work"
+    ]
+  },
+  "recommended_next": [
+    "Do not repeat T399-style optional boundary-access screens.",
+    "Use this gate before any future Direction-A boundary-crossing discriminator.",
+    "Replace the synthetic parity control with a domain-native physical or finality task before asking for ledger movement."
+  ],
+  "residue_label": "gate_operationalized_no_claim_promotion",
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "blocked_cases": {
+      "class_marker_shortcut": "absorbed_by_class_marker_signature",
+      "closure_key_shortcut": "absorbed_by_closure_key",
+      "hidden_datum_in_R_shortcut": "hidden_datum_smuggled_into_region",
+      "t399_optional_state_label": "optional_boundary_menu_only"
+    },
+    "domain_native_pass_cases": [],
+    "formal_pass_cases": [
+      "synthetic_RB_parity_task"
+    ]
+  },
+  "uses_substrate": {
+    "all_R_supported_statistic_bound": 0.0,
+    "bell_basis_success": 1.0,
+    "boundary_crossing_success": 1.0,
+    "boundary_local_binary_success": 0.5,
+    "boundary_local_trace_distance": 0.0,
+    "finite_region_intervention_menu_max_diff": 0.0,
+    "full_trace_distance": 1.0,
+    "joint_parity_success": 1.0,
+    "pair": [
+      "phi_plus",
+      "psi_plus"
+    ],
+    "region_only_binary_success": 0.5,
+    "region_trace_distance": 0.0,
+    "source_artifact": "T399-boundary-crossing-intervention-screen-v0.1"
+  },
+  "verdict": "finite forced-task gate operationalized: T399-style optional boundary access fails, a synthetic R:B relational parity task passes the formal forced-task control, and hidden-datum, closure-key, and class-marker shortcuts are blocked; no domain-native physical/finality task is earned"
+}

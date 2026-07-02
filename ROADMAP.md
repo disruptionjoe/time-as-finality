@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T400 Boundary-Forced Task Gate
+
+T400 converts T399's remaining burden into an executable task gate. The
+underlying Bell-pair substrate is unchanged: all `R`-supported statistics,
+finite `R` intervention statistics, and boundary-local statistics agree, while
+a joint boundary-crossing menu separates.
+
+The gate rejects T399-style optional enlarged-state access and blocks
+hidden-datum, closure-key, and class-marker shortcuts. A synthetic `R:B` parity
+task passes only as a formal positive control, not as a domain-native
+physical/finality discriminator. No claim-ledger movement is earned. Direction
+A should now use this gate before any future boundary-crossing artifact; the
+next real burden is a task whose boundary crossing is forced by the physical or
+finality setup before the witness pair is selected.
+
 ## 2026-07-02 T399 Boundary-Crossing Intervention Screen
 
 T399 runs the stronger post-T398 discriminator shape in a deliberately small

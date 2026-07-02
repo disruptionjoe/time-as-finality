@@ -23,6 +23,12 @@ remaining burden is not "show any boundary-crossing separator"; it is to find a
 nontrivial task where crossing the boundary is forced by the declared physical
 or finality setup rather than merely admitted as the enlarged state.
 
+T400 operationalizes that burden as a finite task gate. It rejects the
+T399-style optional state-label readout, blocks hidden-datum / closure-key /
+class-marker shortcuts, and admits only a synthetic `R:B` parity task as a
+formal positive control. This does not solve the open problem; it turns the
+next discriminator requirement into an executable gate.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -59,6 +65,8 @@ Build a finite fixture with:
   recollection, postdiction, or record-recovery capability;
 - a reason the boundary-crossing menu is forced by the declared setup rather
   than merely the ordinary enlarged-state completion;
+- a T400-style forced-task gate pass, with optional boundary access and
+  shortcut absorbers ruled out;
 - positive controls where region enlargement restores the capability;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.

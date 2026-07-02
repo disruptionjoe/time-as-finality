@@ -1,5 +1,21 @@
 ﻿# Roadmap
 
+## 2026-07-02 T405 Physical-Latch Finality-Lock Screen
+
+T405 strengthens the post-T403 same-domain lane by replacing the stipulated
+provisional/sealed flag with a finite physical latch substrate. The main pair
+matches T403 causal-domain data, joint payload, verdict payload, revision
+budget, operation menu, resource accounting, provenance, reversible-control
+class, observer boundary, and latch support fields except topology. The
+rewritable latch can revise the final verdict; the fused latch cannot.
+
+This is useful but absorbing. The split is not a stipulated finality label and
+survives the fixed-accounting projection, but explicit latch-substrate
+completion restores factorization. No claim-ledger movement is earned. The
+next stronger burden is a substrate-native irreversibility or operation-
+unavailability result that does not factor through explicit latch topology,
+resource state, provenance state, control handle, or observer boundary.
+
 ## 2026-07-02 T403 Same-Domain Finality-Lock Screen
 
 T403 tests the stronger post-T402 same-domain lane. It imports the T402 causal

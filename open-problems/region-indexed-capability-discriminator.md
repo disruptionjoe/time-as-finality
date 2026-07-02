@@ -58,6 +58,17 @@ physically typed finality-lock substrate whose provisional/sealed state is not
 merely stipulated and survives fixed-accounting resource, provenance, control,
 and boundary absorbers.
 
+T405 supplies that physically typed finite latch screen. It replaces the
+stipulated finality label with a rewritable-versus-fused latch topology while
+matching causal-domain data, joint payload, verdict payload, revision budget,
+operation menu, resource accounting, provenance, reversible-control class,
+observer boundary, and latch support fields except topology. The split survives
+that fixed-accounting projection, but it is absorbed by explicit latch-
+substrate completion. The remaining burden is therefore not "make the lock
+physical"; it is to supply a substrate-native irreversibility or operation-
+unavailability result that does not factor through latch topology, resource
+state, provenance state, control handle, or observer boundary.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -69,11 +80,12 @@ changing what a record holder can do or postdict. T397 absorbs T395's
 T398 then absorbs the first `C(R)` profile poset as a finite product resource
 preorder, T401 absorbs finite finality reconciliation as joint-record
 completion, T402 absorbs the causal-domain substrate version as standard
-causal-domain completion, and T403 absorbs the first same-domain split as
-explicit finality-state completion. The next Direction-A move cannot be another
+causal-domain completion, T403 absorbs the first same-domain split as explicit
+finality-state completion, and T405 absorbs the finite physical-latch version
+as latch-substrate completion. The next Direction-A move cannot be another
 visibility scalarization over class records, same-profile resource-order claim,
-ordinary joint-record separator, ordinary causal-domain separator, or stipulated
-provisional/sealed finality flag.
+ordinary joint-record separator, ordinary causal-domain separator, stipulated
+provisional/sealed finality flag, or explicit latch-topology separator.
 
 The live object is therefore not a statistics-only record/order inequality.
 It is a region-indexed capability discriminator:
@@ -142,6 +154,8 @@ Demote or close this route if:
 - the same-domain split reduces to explicit finality-state completion,
   operation-menu completion, provenance, or fixed-accounting resource state, as
   in T403;
+- the physical finality-lock separator reduces to explicit latch-substrate
+  completion, as in T405;
 - the intervention menu has to smuggle in the hidden datum it is supposed to
   reveal.
 

@@ -1,0 +1,2531 @@
+{
+  "absorber_audit": {
+    "causal_reachability_and_domain_of_dependence": {
+      "reason": "The main pair imports the same T403/T402 causal-domain signature, so causal reachability does not separate the revision capability.",
+      "status": "matched_not_explanatory"
+    },
+    "claim_promotion": {
+      "reason": "The artifact supplies a finite latch-substrate absorber screen, not a physical-arrow theorem or claim-status change.",
+      "status": "blocked"
+    },
+    "fixed_accounting_resource_provenance_control_boundary": {
+      "reason": "The T145-style absorber vector is identical in the main pair; resource, provenance, reversible-control, and observer-boundary variation are isolated as controls.",
+      "status": "matched_not_explanatory_for_main_pair"
+    },
+    "hidden_label_or_class_marker": {
+      "reason": "A source label can separate only as an extra hidden marker; it is not accepted as latch-substrate or fixed-accounting evidence.",
+      "status": "blocked"
+    },
+    "ordinary_joint_input_completion": {
+      "reason": "The main pair has the same joint payload and verdict payload.",
+      "status": "matched_not_explanatory"
+    },
+    "physical_latch_substrate_completion": {
+      "main_pair_completion_differences": [
+        "physical_latch",
+        "derived_lock_state"
+      ],
+      "reason": "Adding the finite latch topology and seal-bridge state restores factorization of the revision capability.",
+      "status": "absorbs"
+    },
+    "stipulated_finality_state": {
+      "reason": "Accepted finality labels are not used by the capability function; the lock state is derived from latch topology.",
+      "status": "blocked"
+    }
+  },
+  "artifact": "T405-physical-latch-finality-lock-screen-v0.1",
+  "causal_domain_signature": {
+    "B_only_domain_contains_verdict": false,
+    "RB_joint_domain_contains_verdict": true,
+    "R_and_B_are_spacelike": true,
+    "R_only_domain_contains_verdict": false,
+    "events": {
+      "B_input": {
+        "event_id": "B_input",
+        "records": [
+          "right_record"
+        ],
+        "t": 0.0,
+        "x": 1.0
+      },
+      "R_input": {
+        "event_id": "R_input",
+        "records": [
+          "left_record"
+        ],
+        "t": 0.0,
+        "x": -1.0
+      },
+      "common_future_verdict": {
+        "event_id": "common_future_verdict",
+        "records": [],
+        "t": 1.0,
+        "x": 0.0
+      }
+    },
+    "initial_data_intervals": {
+      "B_only": {
+        "interval_id": "B_only_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": 1.0
+      },
+      "RB_joint": {
+        "interval_id": "RB_joint_slice",
+        "t0": 0.0,
+        "x_max": 1.0,
+        "x_min": -1.0
+      },
+      "R_only": {
+        "interval_id": "R_only_slice",
+        "t0": 0.0,
+        "x_max": -1.0,
+        "x_min": -1.0
+      }
+    },
+    "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+    "verdict_in_common_future": true
+  },
+  "claim_ledger_update": "none; no claim promotion",
+  "falsification_condition": "This screen would fail if the main pair differed in causal-domain data, joint payload, revision budget, operation menu, resource accounting, provenance, control class, or observer boundary; if a stipulated label or hidden marker performed the separation; if latch-substrate completion did not restore factorization; or if the finite latch were treated as evidence for a physical arrow or new physics.",
+  "main_pair_summary": {
+    "absorber_mismatch_fields": [],
+    "capability_split": true,
+    "derived_lock_states": {
+      "left": "physically_rewritable",
+      "right": "physically_sealed"
+    },
+    "differing_capability_fields": [
+      "can_revise_final_verdict"
+    ],
+    "fixed_accounting_projection_equal": true,
+    "pair_id": "physical_latch_finality_lock_pair",
+    "residue_label": "absorbed_by_physical_latch_substrate_completion",
+    "same_joint_payload": true,
+    "same_latch_support_without_topology": true,
+    "same_operation_menu": true,
+    "same_revision_budget": true,
+    "visible_causal_payload_equal": true
+  },
+  "pair_audits": [
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_sealed"
+      },
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [
+          "physical_latch",
+          "derived_lock_state"
+        ],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_sealed",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "fused_gate",
+            "mechanical_continuity": "fused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": true
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "physical_latch_finality_lock_pair",
+      "residue_label": "absorbed_by_physical_latch_substrate_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "fused_same",
+        "derived_lock_state": "physically_sealed",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "fused_gate",
+          "mechanical_continuity": "fused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": true
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "matched_latch_control",
+      "residue_label": "no_capability_split",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same_copy",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [
+        "erased_bits",
+        "beta_work_floor",
+        "blank_capacity_delta"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [
+          "absorber_vector"
+        ],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 1.3862943611198906,
+            "blank_capacity_delta": 2,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 2,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "resource_accounting_control",
+      "residue_label": "absorbed_by_resource_accounting",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 1.3862943611198906,
+          "blank_capacity_delta": 2,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 2,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_two_bit_resource",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [
+        "provenance_state"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict",
+          "can_certify_final_record"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": false,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [
+          "absorber_vector"
+        ],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "authority_invalidated",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "provenance_completion_control",
+      "residue_label": "absorbed_by_provenance_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "authority_invalidated",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_invalid_provenance",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [
+        "reversible_control"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_revise_final_verdict"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [
+          "absorber_vector"
+        ],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "rewrite_handle_disabled",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "control_completion_control",
+      "residue_label": "absorbed_by_control_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "rewrite_handle_disabled",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_disabled_control",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [
+        "boundary_access"
+      ],
+      "capability": {
+        "differing_fields": [
+          "can_read_verdict",
+          "can_append_correction",
+          "can_revise_final_verdict",
+          "can_certify_final_record"
+        ],
+        "differs": true,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": false,
+          "can_certify_final_record": false,
+          "can_read_verdict": false,
+          "can_revise_final_verdict": false,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": false,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [
+          "absorber_vector"
+        ],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "observer_boundary_closed",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_same",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "boundary_completion_control",
+      "residue_label": "absorbed_by_boundary_completion",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "observer_boundary_closed",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "rewritable_closed_boundary",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": true,
+      "latch_substrate_completion": {
+        "differing_fields": [],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "hidden_alpha",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": "alpha",
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "hidden_label_shortcut_control",
+      "residue_label": "blocked_hidden_label_shortcut",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": null,
+        "case_id": "hidden_beta",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": "beta",
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": false,
+      "visible_causal_payload_equal": true
+    },
+    {
+      "absorber_mismatch_fields": [],
+      "capability": {
+        "differing_fields": [],
+        "differs": false,
+        "left": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        },
+        "right": {
+          "can_append_correction": true,
+          "can_certify_final_record": true,
+          "can_read_verdict": true,
+          "can_revise_final_verdict": true,
+          "verdict_payload": "same"
+        }
+      },
+      "derived_lock_states": {
+        "left": "physically_rewritable",
+        "right": "physically_rewritable"
+      },
+      "fixed_accounting_projection_equal": true,
+      "hidden_label_shortcut_attempt": false,
+      "latch_substrate_completion": {
+        "differing_fields": [],
+        "left": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        },
+        "restores_factorization": true,
+        "right": {
+          "absorber_vector": {
+            "beta_work_floor": 0.6931471805599453,
+            "blank_capacity_delta": 1,
+            "boundary_access": "matched_observer_boundary",
+            "erased_bits": 1,
+            "provenance_state": "matched_valid_provenance",
+            "reversible_control": "blind_reset_only",
+            "sink_delta": 0,
+            "source_copy_state": "authoritative_source_remains"
+          },
+          "derived_lock_state": "physically_rewritable",
+          "latch_support_without_topology": {
+            "carrier": "matched_record_cell",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology"
+          },
+          "operation_menu": [
+            "read_verdict",
+            "append_correction",
+            "revise_verdict",
+            "certify_verdict"
+          ],
+          "physical_latch": {
+            "carrier": "matched_record_cell",
+            "material_topology": "rewritable_gate",
+            "mechanical_continuity": "unfused_bridge",
+            "rewrite_handle_present": true,
+            "seal_basis": "finite latch topology",
+            "seal_bridge_closed": false
+          },
+          "revision_budget": 1,
+          "visible_projection": {
+            "causal_domain_signature": {
+              "B_only_domain_contains_verdict": false,
+              "RB_joint_domain_contains_verdict": true,
+              "R_and_B_are_spacelike": true,
+              "R_only_domain_contains_verdict": false,
+              "events": {
+                "B_input": {
+                  "event_id": "B_input",
+                  "records": [
+                    "right_record"
+                  ],
+                  "t": 0.0,
+                  "x": 1.0
+                },
+                "R_input": {
+                  "event_id": "R_input",
+                  "records": [
+                    "left_record"
+                  ],
+                  "t": 0.0,
+                  "x": -1.0
+                },
+                "common_future_verdict": {
+                  "event_id": "common_future_verdict",
+                  "records": [],
+                  "t": 1.0,
+                  "x": 0.0
+                }
+              },
+              "initial_data_intervals": {
+                "B_only": {
+                  "interval_id": "B_only_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": 1.0
+                },
+                "RB_joint": {
+                  "interval_id": "RB_joint_slice",
+                  "t0": 0.0,
+                  "x_max": 1.0,
+                  "x_min": -1.0
+                },
+                "R_only": {
+                  "interval_id": "R_only_slice",
+                  "t0": 0.0,
+                  "x_max": -1.0,
+                  "x_min": -1.0
+                }
+              },
+              "source_artifact": "T402-causal-domain-boundary-forcing-screen-v0.1",
+              "verdict_in_common_future": true
+            },
+            "joint_payload": [
+              1,
+              1
+            ],
+            "verdict_payload": "same"
+          }
+        }
+      },
+      "left": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": "provisional",
+        "case_id": "stipulated_provisional",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "pair_id": "stipulated_finality_label_control",
+      "residue_label": "blocked_stipulated_finality_label",
+      "right": {
+        "absorber": {
+          "beta_work_floor": 0.6931471805599453,
+          "blank_capacity_delta": 1,
+          "boundary_access": "matched_observer_boundary",
+          "erased_bits": 1,
+          "provenance_state": "matched_valid_provenance",
+          "reversible_control": "blind_reset_only",
+          "sink_delta": 0,
+          "source_copy_state": "authoritative_source_remains"
+        },
+        "accepted_finality_label": "sealed",
+        "case_id": "stipulated_sealed",
+        "derived_lock_state": "physically_rewritable",
+        "hidden_source_label": null,
+        "joint_payload": [
+          1,
+          1
+        ],
+        "latch": {
+          "carrier": "matched_record_cell",
+          "material_topology": "rewritable_gate",
+          "mechanical_continuity": "unfused_bridge",
+          "rewrite_handle_present": true,
+          "seal_basis": "finite latch topology",
+          "seal_bridge_closed": false
+        },
+        "operation_menu": [
+          "read_verdict",
+          "append_correction",
+          "revise_verdict",
+          "certify_verdict"
+        ],
+        "revision_budget": 1
+      },
+      "same_joint_payload": true,
+      "same_latch_support_without_topology": true,
+      "same_operation_menu": true,
+      "same_revision_budget": true,
+      "same_verdict_payload": true,
+      "stipulated_finality_label_attempt": true,
+      "visible_causal_payload_equal": true
+    }
+  ],
+  "recommended_next": [
+    "Treat T405 as a latch-substrate absorber screen, not a claim upgrade.",
+    "Do not count a finite fused latch as physical-arrow evidence.",
+    "A future upgrade needs a substrate-native irreversibility or operation-unavailability result that does not factor through explicit latch, resource, provenance, control, or boundary state."
+  ],
+  "residue_label": "physical_latch_substrate_split_absorbed",
+  "setup": {
+    "capability_object": "future operation availability for reading, appending, revising, and certifying the final verdict",
+    "declared_before_pair": true,
+    "fixed_accounting_projection": "visible projection + revision budget + operation menu + T145-style absorber vector + latch support without topology",
+    "lock_state_source": "derived from finite latch topology, not an accepted label",
+    "task": "given a common-future final verdict with fixed causal-domain data, fixed joint payload, and fixed accounting, decide whether the verdict can still be physically rewritten",
+    "visible_projection": "T403 causal-domain signature + joint payload + verdict payload"
+  },
+  "source_artifact": "T403-same-domain-finality-lock-screen-v0.1",
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "absorbed_cases": {
+      "boundary_completion_control": "absorbed_by_boundary_completion",
+      "control_completion_control": "absorbed_by_control_completion",
+      "hidden_label_shortcut_control": "blocked_hidden_label_shortcut",
+      "matched_latch_control": "no_capability_split",
+      "physical_latch_finality_lock_pair": "absorbed_by_physical_latch_substrate_completion",
+      "provenance_completion_control": "absorbed_by_provenance_completion",
+      "resource_accounting_control": "absorbed_by_resource_accounting",
+      "stipulated_finality_label_control": "blocked_stipulated_finality_label"
+    },
+    "same_fixed_accounting_split_cases": [
+      "physical_latch_finality_lock_pair"
+    ]
+  },
+  "verdict": "finite physical-latch finality-lock screen built: a rewritable latch and a fused latch have identical T403 causal-domain data, joint payload, verdict payload, revision budget, operation menu, resource accounting, provenance, control class, and observer boundary, while only the rewritable latch can revise the final verdict; the split is not a stipulated finality label and survives the fixed-accounting projection, but it is absorbed by explicit latch-substrate completion, so no claim-ledger movement is earned"
+}

@@ -155,6 +155,31 @@ established mathematics.
    interface-signature / shared-certificate version is admissible, gated behind
    bridge obligation 1.
 
+## Addendum (2026-07-02): bridge obligation #1 probed — PARTIAL-HOMOLOGY
+
+Bridge obligation #1 (certificate identity) was taken as a big swing, preceded by
+a 10-lens game-theory steelman that chose the certificate primitive: **not** the
+Shapley value (circular) but a **stability/no-deviation** predicate
+(core-relative-to-R ≈ strategyproof ≈ ESS-uninvadable) plus an **invariance
+axiom** (Arrow-IIA / Shapley symmetry). Fixture: T413
+(`results/T413-certificate-identity-bridge-v0.1-results.md`), `8 passed`.
+
+Result: the T412 game separator and T411's `final-relative-to-R+` instantiate the
+**same typed certificate on 5 of 6 field comparisons** (region+menu, verdict,
+stability-witness, datum-locus = whole). The **sole divergence is
+`invariance_witness.complete`**: the game's invariance is proven complete (any
+localizer breaks symmetry), while T411's is partial (Lieb-Robinson class only;
+full admissible class OPEN). Built falsifiable — **Pair 1 is REJECTED**
+(proper-subset datum), so the signature discriminates rather than passing
+everything, and T411's invariance is reported honestly as partial, not forced.
+
+Consequence: bridge obligation #1 is **discharged to partial-homology**, and the
+one un-bridged field **coincides exactly with the persona pass's #1 open target**
+(the separator-relabel test, G-50). The game supplies the **proof template** that
+target owes: find a symmetry/IIA-type invariance axiom for the quantum separator
+whose violation is the localizing re-factorization. Obligations #2–#4 remain
+open; #2 (port the relabel proof to the quantum side) is now the sharp next move.
+
 ## Honest bottom line
 
 The rhyme survived a real swing. It is **not** a metaphor: the finality wound,

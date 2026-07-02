@@ -195,3 +195,17 @@ which is the current primary open problem. gu-formalization owns boundary
 content; temporal-issuance owns the source question. Identity claims across
 the three repos remain gated behind adapter contracts. See
 [Coordination - Tri-Repo Division of Labor.md](Coordination%20-%20Tri-Repo%20Division%20of%20Labor.md).
+
+## Adopted organizing frame (2026-07-02): capability-boundary mode taxonomy
+
+The program's working classification of capability/finality boundaries is the
+**four-mode taxonomy** — E0 declared / E1 asymptotic-limit / E2 hardness-assumption
+/ E3 structural-symmetry — adopted as an internal map (a frame, not a promoted
+claim): `technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md`. It
+derives from (and reframes) the primary open problem after the
+finite-closed scope-theorem candidate was reviewed down from a universal no-go
+(prior art all located: E1 Kadanoff, E2 crypto, E3 resource-theory-of-asymmetry,
+framing constructor theory). The next result-directed swing is the **E2**
+computational-finality / computational-arrow-of-time question
+(`open-problems/computational-finality-arrow.md`, frozen; awaits go); the **E3**
+GU adapter is held as the cross-repo prize.

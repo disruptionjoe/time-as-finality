@@ -11,8 +11,8 @@ mode: bounded-local-cross-repo-read
 
 This run compared Time as Finality with two local neighboring repos:
 
-- `C:\Users\joe\JB\Github Repos\architecture-of-legitimacy`
-- `C:\Users\joe\JB\Github Repos\gu-formalization`
+- `Github Repos\architecture-of-legitimacy`
+- `Github Repos\gu-formalization`
 
 It read only top-level orientation and schema docs to keep the pass bounded.
 No files in the neighboring repos were edited.

@@ -12,7 +12,7 @@ export const meta = {
 const DATE = (args && args.date) ? args.date : 'unknown-date'
 const FOCUS = (args && args.focus) ? args.focus : null
 
-const REPO = String.raw`C:\Users\joe\JB\Github Repos\time-as-finality`
+const REPO = String.raw`Github Repos\time-as-finality`
 
 // Current repo context prompt — each group agent reads these files itself
 const REPO_CONTEXT_PROMPT = `

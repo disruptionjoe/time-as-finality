@@ -8,18 +8,18 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T26-d1-restriction-system.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T26-d1-restriction-system.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/d1_restriction_system.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/d1_restriction_system.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T39-csp-satisfiability-reframing.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T39-csp-satisfiability-reframing.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/csp_satisfiability_reframing.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/csp_satisfiability_reframing.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T54-finite-finality-descent-theorem.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T54-finite-finality-descent-theorem.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/finality_descent_theorem.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/finality_descent_theorem.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T110-finite-permutation-monotone-obstruction.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T110-finite-permutation-monotone-obstruction.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/finite_permutation_monotone_obstruction.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/finite_permutation_monotone_obstruction.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/weak_measurement_nonnull_criterion.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/weak_measurement_nonnull_criterion.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/detector_manifest_workflow_fit.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/detector_manifest_workflow_fit.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/tests/T26-d1-restriction-system.md`](</Github Repos/time-as-finality/tests/T26-d1-restriction-system.md>)
+- [`/Github Repos/time-as-finality/models/d1_restriction_system.py`](</Github Repos/time-as-finality/models/d1_restriction_system.py>)
+- [`/Github Repos/time-as-finality/tests/T39-csp-satisfiability-reframing.md`](</Github Repos/time-as-finality/tests/T39-csp-satisfiability-reframing.md>)
+- [`/Github Repos/time-as-finality/models/csp_satisfiability_reframing.py`](</Github Repos/time-as-finality/models/csp_satisfiability_reframing.py>)
+- [`/Github Repos/time-as-finality/tests/T54-finite-finality-descent-theorem.md`](</Github Repos/time-as-finality/tests/T54-finite-finality-descent-theorem.md>)
+- [`/Github Repos/time-as-finality/models/finality_descent_theorem.py`](</Github Repos/time-as-finality/models/finality_descent_theorem.py>)
+- [`/Github Repos/time-as-finality/tests/T110-finite-permutation-monotone-obstruction.md`](</Github Repos/time-as-finality/tests/T110-finite-permutation-monotone-obstruction.md>)
+- [`/Github Repos/time-as-finality/models/finite_permutation_monotone_obstruction.py`](</Github Repos/time-as-finality/models/finite_permutation_monotone_obstruction.py>)
+- [`/Github Repos/time-as-finality/models/weak_measurement_nonnull_criterion.py`](</Github Repos/time-as-finality/models/weak_measurement_nonnull_criterion.py>)
+- [`/Github Repos/time-as-finality/models/detector_manifest_workflow_fit.py`](</Github Repos/time-as-finality/models/detector_manifest_workflow_fit.py>)
+- [`/Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md`](</Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
 
 ## Work Performed
 

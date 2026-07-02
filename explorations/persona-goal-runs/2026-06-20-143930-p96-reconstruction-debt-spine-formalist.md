@@ -8,14 +8,14 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/workflows/explore/research-constellation-orchestrator.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/workflows/explore/research-constellation-orchestrator.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/losskernel_quotient_separation.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/losskernel_quotient_separation.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md`](</Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/workflows/explore/research-constellation-orchestrator.md`](</Github Repos/time-as-finality/workflows/explore/research-constellation-orchestrator.md>)
+- [`/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
+- [`/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md`](</Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md>)
+- [`/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
+- [`/Github Repos/time-as-finality/models/losskernel_quotient_separation.py`](</Github Repos/time-as-finality/models/losskernel_quotient_separation.py>)
+- [`/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md`](</Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
 
 ## Drafted Goal
 

@@ -8,16 +8,16 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T65-causal-reduction-holonomy.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T65-causal-reduction-holonomy.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T69-losskernel-failure-type.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T69-losskernel-failure-type.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/finite-to-infinite-boundary-audit-v0.1-results.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/results/finite-to-infinite-boundary-audit-v0.1-results.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/losskernel-failure-type-v0.1-results.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/results/losskernel-failure-type-v0.1-results.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/accessible-witness-gap-restriction-v0.1-results.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/results/accessible-witness-gap-restriction-v0.1-results.md)
+- [`/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
+- [`/Github Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md`](/Github%20Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md)
+- [`/Github Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md`](/Github%20Repos/time-as-finality/tests/T59-finite-to-infinite-boundary-audit.md)
+- [`/Github Repos/time-as-finality/tests/T65-causal-reduction-holonomy.md`](/Github%20Repos/time-as-finality/tests/T65-causal-reduction-holonomy.md)
+- [`/Github Repos/time-as-finality/tests/T69-losskernel-failure-type.md`](/Github%20Repos/time-as-finality/tests/T69-losskernel-failure-type.md)
+- [`/Github Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md`](/Github%20Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md)
+- [`/Github Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md`](/Github%20Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md)
+- [`/Github Repos/time-as-finality/results/finite-to-infinite-boundary-audit-v0.1-results.md`](/Github%20Repos/time-as-finality/results/finite-to-infinite-boundary-audit-v0.1-results.md)
+- [`/Github Repos/time-as-finality/results/losskernel-failure-type-v0.1-results.md`](/Github%20Repos/time-as-finality/results/losskernel-failure-type-v0.1-results.md)
+- [`/Github Repos/time-as-finality/results/accessible-witness-gap-restriction-v0.1-results.md`](/Github%20Repos/time-as-finality/results/accessible-witness-gap-restriction-v0.1-results.md)
 
 ## Work Performed
 

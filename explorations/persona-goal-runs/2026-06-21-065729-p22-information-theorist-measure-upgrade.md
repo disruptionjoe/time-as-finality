@@ -8,14 +8,14 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/D1-physical-finality-definition.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/claims/D1-physical-finality-definition.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/Q1A-access-boundary-record-accounting.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/claims/Q1A-access-boundary-record-accounting.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/literature/distinguishing-predictions.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/literature/distinguishing-predictions.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T22-d1-physical-reduction-map.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T22-d1-physical-reduction-map.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T62-noisy-measurement-access-boundary.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T62-noisy-measurement-access-boundary.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_d1_physical_reduction_map.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/test_d1_physical_reduction_map.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_q1a_provenance_absorption.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/test_q1a_provenance_absorption.py)
+- [`/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](/Github%20Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md)
+- [`/Github Repos/time-as-finality/claims/D1-physical-finality-definition.md`](/Github%20Repos/time-as-finality/claims/D1-physical-finality-definition.md)
+- [`/Github Repos/time-as-finality/claims/Q1A-access-boundary-record-accounting.md`](/Github%20Repos/time-as-finality/claims/Q1A-access-boundary-record-accounting.md)
+- [`/Github Repos/time-as-finality/literature/distinguishing-predictions.md`](/Github%20Repos/time-as-finality/literature/distinguishing-predictions.md)
+- [`/Github Repos/time-as-finality/tests/T22-d1-physical-reduction-map.md`](/Github%20Repos/time-as-finality/tests/T22-d1-physical-reduction-map.md)
+- [`/Github Repos/time-as-finality/tests/T62-noisy-measurement-access-boundary.md`](/Github%20Repos/time-as-finality/tests/T62-noisy-measurement-access-boundary.md)
+- [`/Github Repos/time-as-finality/tests/test_d1_physical_reduction_map.py`](/Github%20Repos/time-as-finality/tests/test_d1_physical_reduction_map.py)
+- [`/Github Repos/time-as-finality/tests/test_q1a_provenance_absorption.py`](/Github%20Repos/time-as-finality/tests/test_q1a_provenance_absorption.py)
 
 ## Work Performed
 

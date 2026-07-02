@@ -14,15 +14,15 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-loss-relocation-2026-06-20-155625.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-loss-relocation-2026-06-20-155625.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T107-loss-relocation.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T107-loss-relocation.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/loss-relocation-v0.1-results.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/results/loss-relocation-v0.1-results.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation_prior_art.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation_prior_art.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/loss-relocation-prior-art-v0.1-results.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/results/loss-relocation-prior-art-v0.1-results.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/explorations/research-constellation-loss-relocation-2026-06-20-155625.md`](</Github Repos/time-as-finality/explorations/research-constellation-loss-relocation-2026-06-20-155625.md>)
+- [`/Github Repos/time-as-finality/tests/T107-loss-relocation.md`](</Github Repos/time-as-finality/tests/T107-loss-relocation.md>)
+- [`/Github Repos/time-as-finality/models/loss_relocation.py`](</Github Repos/time-as-finality/models/loss_relocation.py>)
+- [`/Github Repos/time-as-finality/results/loss-relocation-v0.1-results.md`](</Github Repos/time-as-finality/results/loss-relocation-v0.1-results.md>)
+- [`/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md`](</Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md>)
+- [`/Github Repos/time-as-finality/models/loss_relocation_prior_art.py`](</Github Repos/time-as-finality/models/loss_relocation_prior_art.py>)
+- [`/Github Repos/time-as-finality/results/loss-relocation-prior-art-v0.1-results.md`](</Github Repos/time-as-finality/results/loss-relocation-prior-art-v0.1-results.md>)
+- [`/Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md`](</Github Repos/time-as-finality/open-problems/obstruction-relocation-reconstruction-debt.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
 
 ## Drafted Goal
 

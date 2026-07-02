@@ -8,15 +8,15 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/Q1-quantum-under-finalization.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/claims/Q1-quantum-under-finalization.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/D1-physical-finality-definition.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/claims/D1-physical-finality-definition.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T75-real-detector-stack-provenance.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T75-real-detector-stack-provenance.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T78-preregistered-detector-deployment-protocol.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T78-preregistered-detector-deployment-protocol.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T87-real-run-raw-log-contract.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T87-real-run-raw-log-contract.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T91-weak-measurement-platform-audit.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T91-weak-measurement-platform-audit.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/real_detector_stack_provenance.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/models/real_detector_stack_provenance.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/preregistered_detector_deployment_protocol.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/models/preregistered_detector_deployment_protocol.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/real_run_raw_log_contract.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/models/real_run_raw_log_contract.py)
+- [`/Github Repos/time-as-finality/claims/Q1-quantum-under-finalization.md`](/Github%20Repos/time-as-finality/claims/Q1-quantum-under-finalization.md)
+- [`/Github Repos/time-as-finality/claims/D1-physical-finality-definition.md`](/Github%20Repos/time-as-finality/claims/D1-physical-finality-definition.md)
+- [`/Github Repos/time-as-finality/tests/T75-real-detector-stack-provenance.md`](/Github%20Repos/time-as-finality/tests/T75-real-detector-stack-provenance.md)
+- [`/Github Repos/time-as-finality/tests/T78-preregistered-detector-deployment-protocol.md`](/Github%20Repos/time-as-finality/tests/T78-preregistered-detector-deployment-protocol.md)
+- [`/Github Repos/time-as-finality/tests/T87-real-run-raw-log-contract.md`](/Github%20Repos/time-as-finality/tests/T87-real-run-raw-log-contract.md)
+- [`/Github Repos/time-as-finality/tests/T91-weak-measurement-platform-audit.md`](/Github%20Repos/time-as-finality/tests/T91-weak-measurement-platform-audit.md)
+- [`/Github Repos/time-as-finality/models/real_detector_stack_provenance.py`](/Github%20Repos/time-as-finality/models/real_detector_stack_provenance.py)
+- [`/Github Repos/time-as-finality/models/preregistered_detector_deployment_protocol.py`](/Github%20Repos/time-as-finality/models/preregistered_detector_deployment_protocol.py)
+- [`/Github Repos/time-as-finality/models/real_run_raw_log_contract.py`](/Github%20Repos/time-as-finality/models/real_run_raw_log_contract.py)
 
 ## Work Performed
 

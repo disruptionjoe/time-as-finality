@@ -8,17 +8,17 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T37-typed-transport-network.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T37-typed-transport-network.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T73-losskernel-composition.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T73-losskernel-composition.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T107-loss-relocation.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T107-loss-relocation.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/losskernel_quotient_separation.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/losskernel_quotient_separation.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation_prior_art.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/loss_relocation_prior_art.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
+- [`/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
+- [`/Github Repos/time-as-finality/tests/T37-typed-transport-network.md`](</Github Repos/time-as-finality/tests/T37-typed-transport-network.md>)
+- [`/Github Repos/time-as-finality/tests/T73-losskernel-composition.md`](</Github Repos/time-as-finality/tests/T73-losskernel-composition.md>)
+- [`/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
+- [`/Github Repos/time-as-finality/tests/T107-loss-relocation.md`](</Github Repos/time-as-finality/tests/T107-loss-relocation.md>)
+- [`/Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md`](</Github Repos/time-as-finality/tests/T108-loss-relocation-prior-art.md>)
+- [`/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md`](</Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md>)
+- [`/Github Repos/time-as-finality/models/losskernel_quotient_separation.py`](</Github Repos/time-as-finality/models/losskernel_quotient_separation.py>)
+- [`/Github Repos/time-as-finality/models/loss_relocation_prior_art.py`](</Github Repos/time-as-finality/models/loss_relocation_prior_art.py>)
+- [`/Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md`](</Github Repos/time-as-finality/explorations/research-constellation-orchestrator-2026-06-20.md>)
 
 ## Work Performed
 

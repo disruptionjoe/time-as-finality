@@ -8,14 +8,14 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/pati_salam_typed_forgetting_crosswalk.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/models/pati_salam_typed_forgetting_crosswalk.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_pati_salam_typed_forgetting_crosswalk.py`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_pati_salam_typed_forgetting_crosswalk.py>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/all-persona-last-24h-review-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/all-persona-last-24h-review-2026-06-20.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md`](</Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md>)
+- [`/Github Repos/time-as-finality/models/pati_salam_typed_forgetting_crosswalk.py`](</Github Repos/time-as-finality/models/pati_salam_typed_forgetting_crosswalk.py>)
+- [`/Github Repos/time-as-finality/tests/test_pati_salam_typed_forgetting_crosswalk.py`](</Github Repos/time-as-finality/tests/test_pati_salam_typed_forgetting_crosswalk.py>)
+- [`/Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md`](</Github Repos/time-as-finality/tests/T99-losskernel-quotient-separation.md>)
+- [`/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
+- [`/Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md`](</Github Repos/time-as-finality/explorations/recurring-structure-map-v0.1.md>)
+- [`/Github Repos/time-as-finality/explorations/all-persona-last-24h-review-2026-06-20.md`](</Github Repos/time-as-finality/explorations/all-persona-last-24h-review-2026-06-20.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md`](</Github Repos/time-as-finality/explorations/persona-future-run-goals-2026-06-20.md>)
 
 ## Drafted Goal
 

@@ -8,16 +8,16 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T57-finality-reflection-property.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T57-finality-reflection-property.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/TECHNICAL-REPORT-finality-reflection-property-v0.1.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/TECHNICAL-REPORT-finality-reflection-property-v0.1.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/TECHNICAL-REPORT-accessible-witness-gap-lemma-v0.1.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/TECHNICAL-REPORT-accessible-witness-gap-lemma-v0.1.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/gap-phantom-equivalence-v0.1-results.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/results/gap-phantom-equivalence-v0.1-results.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/reconstruction-failure-taxonomy.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/explorations/reconstruction-failure-taxonomy.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/reconstruction-failure-h0-h1-cover-structure.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/explorations/reconstruction-failure-h0-h1-cover-structure.md)
+- [`/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
+- [`/Github Repos/time-as-finality/tests/T57-finality-reflection-property.md`](/Github%20Repos/time-as-finality/tests/T57-finality-reflection-property.md)
+- [`/Github Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md`](/Github%20Repos/time-as-finality/tests/T58-gap-phantom-equivalence.md)
+- [`/Github Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md`](/Github%20Repos/time-as-finality/tests/T89-accessible-witness-gap-lemma.md)
+- [`/Github Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md`](/Github%20Repos/time-as-finality/tests/T92-accessible-witness-gap-restriction.md)
+- [`/Github Repos/time-as-finality/TECHNICAL-REPORT-finality-reflection-property-v0.1.md`](/Github%20Repos/time-as-finality/TECHNICAL-REPORT-finality-reflection-property-v0.1.md)
+- [`/Github Repos/time-as-finality/TECHNICAL-REPORT-accessible-witness-gap-lemma-v0.1.md`](/Github%20Repos/time-as-finality/TECHNICAL-REPORT-accessible-witness-gap-lemma-v0.1.md)
+- [`/Github Repos/time-as-finality/results/gap-phantom-equivalence-v0.1-results.md`](/Github%20Repos/time-as-finality/results/gap-phantom-equivalence-v0.1-results.md)
+- [`/Github Repos/time-as-finality/explorations/reconstruction-failure-taxonomy.md`](/Github%20Repos/time-as-finality/explorations/reconstruction-failure-taxonomy.md)
+- [`/Github Repos/time-as-finality/explorations/reconstruction-failure-h0-h1-cover-structure.md`](/Github%20Repos/time-as-finality/explorations/reconstruction-failure-h0-h1-cover-structure.md)
 
 ## Work Performed
 

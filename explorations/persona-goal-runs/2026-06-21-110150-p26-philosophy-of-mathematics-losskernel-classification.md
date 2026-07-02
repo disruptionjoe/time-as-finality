@@ -8,14 +8,14 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/MATHEMATICAL-INDEPENDENCE-AUDIT.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/MATHEMATICAL-INDEPENDENCE-AUDIT.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/results/same-neighbor-data-losskernel-audit-v0.1-results.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/results/same-neighbor-data-losskernel-audit-v0.1-results.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-103822-p02-category-theorist-losskernel-structure.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-103822-p02-category-theorist-losskernel-structure.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-194724-p11-programming-languages-typed-effects.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-194724-p11-programming-languages-typed-effects.md>)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md>)
+- [`/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](</Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md>)
+- [`/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](</Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md>)
+- [`/Github Repos/time-as-finality/MATHEMATICAL-INDEPENDENCE-AUDIT.md`](</Github Repos/time-as-finality/MATHEMATICAL-INDEPENDENCE-AUDIT.md>)
+- [`/Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md`](</Github Repos/time-as-finality/tests/T127-same-neighbor-data-losskernel-audit.md>)
+- [`/Github Repos/time-as-finality/results/same-neighbor-data-losskernel-audit-v0.1-results.md`](</Github Repos/time-as-finality/results/same-neighbor-data-losskernel-audit-v0.1-results.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-103822-p02-category-theorist-losskernel-structure.md`](</Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-103822-p02-category-theorist-losskernel-structure.md>)
+- [`/Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-194724-p11-programming-languages-typed-effects.md`](</Github Repos/time-as-finality/explorations/persona-goal-runs/2026-06-20-194724-p11-programming-languages-typed-effects.md>)
+- [`/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](</Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md>)
 
 ## Work Performed
 
@@ -69,7 +69,7 @@ The cleanest ontology is:
 
 Paper chosen:
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](</C:/Users/joe/JB/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md>)
+- [`/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](</Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md>)
 
 Replacement abstract matching the classification above:
 

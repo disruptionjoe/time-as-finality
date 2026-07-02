@@ -8,15 +8,15 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/open-problems/loss-kernel-formalization.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T41-typed-transport-category.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T41-typed-transport-category.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T73-losskernel-composition.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T73-losskernel-composition.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/typed_transport_category.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/models/typed_transport_category.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/models/losskernel_composition.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/models/losskernel_composition.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_typed_transport_category.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/test_typed_transport_category.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/test_losskernel_composition.py`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/test_losskernel_composition.py)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md)
+- [`/Github Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md`](/Github%20Repos/time-as-finality/claims/TF1-typed-forgetting-attribution.md)
+- [`/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](/Github%20Repos/time-as-finality/open-problems/loss-kernel-formalization.md)
+- [`/Github Repos/time-as-finality/tests/T41-typed-transport-category.md`](/Github%20Repos/time-as-finality/tests/T41-typed-transport-category.md)
+- [`/Github Repos/time-as-finality/tests/T73-losskernel-composition.md`](/Github%20Repos/time-as-finality/tests/T73-losskernel-composition.md)
+- [`/Github Repos/time-as-finality/models/typed_transport_category.py`](/Github%20Repos/time-as-finality/models/typed_transport_category.py)
+- [`/Github Repos/time-as-finality/models/losskernel_composition.py`](/Github%20Repos/time-as-finality/models/losskernel_composition.py)
+- [`/Github Repos/time-as-finality/tests/test_typed_transport_category.py`](/Github%20Repos/time-as-finality/tests/test_typed_transport_category.py)
+- [`/Github Repos/time-as-finality/tests/test_losskernel_composition.py`](/Github%20Repos/time-as-finality/tests/test_losskernel_composition.py)
+- [`/Github Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md`](/Github%20Repos/time-as-finality/papers/typed-loss-kernels-obstruction-attribution-v0.1.md)
 
 ## Work Performed
 

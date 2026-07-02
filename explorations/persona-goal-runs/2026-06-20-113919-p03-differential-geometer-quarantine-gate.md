@@ -8,15 +8,15 @@
 
 ## Repo Context Read
 
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/README.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/README.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/FORMALISM.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/FORMALISM.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/TESTS.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/TESTS.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/open-problems/loss-kernel-formalization.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T131-bell-test-h1-mapping.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T131-bell-test-h1-mapping.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T63-taf-gu-holonomy-dictionary.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T63-taf-gu-holonomy-dictionary.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T69-losskernel-failure-type.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T69-losskernel-failure-type.md)
-- [`/C:/Users/joe/JB/Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md`](/C:/Users/joe/JB/Github%20Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md)
+- [`/Github Repos/time-as-finality/README.md`](/Github%20Repos/time-as-finality/README.md)
+- [`/Github Repos/time-as-finality/FORMALISM.md`](/Github%20Repos/time-as-finality/FORMALISM.md)
+- [`/Github Repos/time-as-finality/TESTS.md`](/Github%20Repos/time-as-finality/TESTS.md)
+- [`/Github Repos/time-as-finality/open-problems/loss-kernel-formalization.md`](/Github%20Repos/time-as-finality/open-problems/loss-kernel-formalization.md)
+- [`/Github Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md`](/Github%20Repos/time-as-finality/tests/T56-sheaf-cohomology-apparent-finality.md)
+- [`/Github Repos/time-as-finality/tests/T131-bell-test-h1-mapping.md`](/Github%20Repos/time-as-finality/tests/T131-bell-test-h1-mapping.md)
+- [`/Github Repos/time-as-finality/tests/T63-taf-gu-holonomy-dictionary.md`](/Github%20Repos/time-as-finality/tests/T63-taf-gu-holonomy-dictionary.md)
+- [`/Github Repos/time-as-finality/tests/T69-losskernel-failure-type.md`](/Github%20Repos/time-as-finality/tests/T69-losskernel-failure-type.md)
+- [`/Github Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md`](/Github%20Repos/time-as-finality/tests/T88-pati-salam-typed-forgetting-crosswalk.md)
 
 ## Work Performed
 

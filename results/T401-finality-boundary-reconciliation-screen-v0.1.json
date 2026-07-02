@@ -1,0 +1,317 @@
+{
+  "absorber_audit": {
+    "R_supported_intervention_underdescription": {
+      "all_R_supported_statistic_bound": 0.0,
+      "reason": "Equal R marginals imply equality for every declared R-supported map/readout; the finite menu is an executable check.",
+      "status": "certified_no_separator"
+    },
+    "claim_promotion": {
+      "reason": "The result is finite record-reconciliation discipline and is absorbed by ordinary joint-record access.",
+      "status": "blocked"
+    },
+    "class_marker_signature": {
+      "reason": "The source class name is not accepted as a substitute for the per-event reconciliation relation.",
+      "status": "blocked"
+    },
+    "closure_key_or_SBS_shortcut": {
+      "reason": "The passing task computes the per-event holder relation. A precomputed key naming that relation is audited separately and fails as closure-key bookkeeping.",
+      "status": "blocked_not_invoked"
+    },
+    "ordinary_joint_record_completion": {
+      "full_joint_total_variation": 1.0,
+      "reason": "Once both holder records are admitted, the same/different relation is an ordinary joint-record fact.",
+      "status": "absorbs"
+    }
+  },
+  "artifact": "T401-finality-boundary-reconciliation-screen-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "controls": {
+    "region_visible_control": {
+      "pair": [
+        "R_always_0",
+        "R_always_1"
+      ],
+      "purpose": "teeth control: R-supported readouts distinguish pairs when the R marginal actually differs",
+      "region_only_binary_success": 1.0,
+      "region_total_variation": 1.0
+    },
+    "uncorrelated_boundary_control": {
+      "binary_success_against_aligned_or_anti": 0.5,
+      "distribution": {
+        "00": 0.25,
+        "01": 0.25,
+        "10": 0.25,
+        "11": 0.25
+      },
+      "purpose": "null control: local marginals alone do not supply a determinate same/different reconciliation relation",
+      "record_reconciliation_relation": {
+        "different": 0.5,
+        "same": 0.5
+      }
+    }
+  },
+  "falsification_condition": "This screen would fail if any R-supported statistic separated the pair, if the reconciliation task did not require both record holders, if a shortcut key or class marker did the work, or if the ordinary joint-record absorber were ignored.",
+  "forced_task_audits": [
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": true,
+        "case_id": "finality_record_reconciliation_task",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_finality_task": true,
+        "requires_boundary_variables": true,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Issue a merged/final record verdict only after checking whether the bounded-region record and boundary-holder record attest the same event value."
+      },
+      "domain_native_burden_cleared": true,
+      "failure_label": null,
+      "formal_forced_task_gate": "pass",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "candidate_finality_native_forced_task_absorbed"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": true,
+        "boundary_relation_is_task_native": false,
+        "case_id": "optional_joint_state_label",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Admit any joint R:B readout and label which source distribution was prepared."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "optional_boundary_menu_only",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_optional_enlarged_access"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "hidden_datum_in_R_shortcut",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": true,
+        "task_statement": "Give R an extra hidden task bit naming aligned versus anti-aligned."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "hidden_datum_smuggled_into_region",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "blocked_hidden_datum_smuggling"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "closure_key_shortcut",
+        "class_marker_signature_only": false,
+        "closure_key_contains_separator": true,
+        "declared_before_pair": true,
+        "domain_native_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Add a precomputed closure key to R that already contains the same/different separator."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "absorbed_by_closure_key",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_closure_key_bookkeeping"
+    },
+    {
+      "candidate": {
+        "boundary_menu_merely_admitted": false,
+        "boundary_relation_is_task_native": false,
+        "case_id": "class_marker_shortcut",
+        "class_marker_signature_only": true,
+        "closure_key_contains_separator": false,
+        "declared_before_pair": true,
+        "domain_native_finality_task": false,
+        "requires_boundary_variables": false,
+        "smuggles_hidden_datum_into_R": false,
+        "task_statement": "Use the global aligned/anti-aligned class name instead of the per-event record relation."
+      },
+      "domain_native_burden_cleared": false,
+      "failure_label": "absorbed_by_class_marker_signature",
+      "formal_forced_task_gate": "fail",
+      "measurement_gate": {
+        "boundary_crossing_advantage": 0.5,
+        "boundary_local_statistics_equal": true,
+        "region_enlargement_restores_capability": true,
+        "region_intervention_statistics_equal": true,
+        "region_statistics_equal": true
+      },
+      "residue_label": "absorbed_class_marker_signature"
+    }
+  ],
+  "main_pair_audit": {
+    "all_R_supported_statistic_bound": 0.0,
+    "all_boundary_local_statistic_bound": 0.0,
+    "boundary_crossing_menu": {
+      "record_reconciliation_relation": {
+        "aligned": {
+          "different": 0.0,
+          "same": 1.0
+        },
+        "anti_aligned": {
+          "different": 1.0,
+          "same": 0.0
+        },
+        "binary_success": 1.0,
+        "separates_pair": true
+      }
+    },
+    "boundary_local_binary_success": 0.5,
+    "boundary_local_total_variation": 0.0,
+    "boundary_marginals": {
+      "aligned": [
+        0.5,
+        0.5
+      ],
+      "anti_aligned": [
+        0.5,
+        0.5
+      ]
+    },
+    "finite_region_intervention_menu": {
+      "aligned": {
+        "erase_to_0": [
+          1.0,
+          0.0
+        ],
+        "erase_to_1": [
+          0.0,
+          1.0
+        ],
+        "flip": [
+          0.5,
+          0.5
+        ],
+        "identity": [
+          0.5,
+          0.5
+        ]
+      },
+      "anti_aligned": {
+        "erase_to_0": [
+          1.0,
+          0.0
+        ],
+        "erase_to_1": [
+          0.0,
+          1.0
+        ],
+        "flip": [
+          0.5,
+          0.5
+        ],
+        "identity": [
+          0.5,
+          0.5
+        ]
+      },
+      "maps": [
+        "identity",
+        "flip",
+        "erase_to_0",
+        "erase_to_1"
+      ],
+      "max_diff": 0.0,
+      "n_statistics": 4
+    },
+    "full_joint_total_variation": 1.0,
+    "joint_record_binary_success": 1.0,
+    "pair": [
+      "aligned",
+      "anti_aligned"
+    ],
+    "region_marginals": {
+      "aligned": [
+        0.5,
+        0.5
+      ],
+      "anti_aligned": [
+        0.5,
+        0.5
+      ]
+    },
+    "region_only_binary_success": 0.5,
+    "region_total_variation": 0.0,
+    "source_distributions": {
+      "aligned": {
+        "00": 0.5,
+        "01": 0.0,
+        "10": 0.0,
+        "11": 0.5
+      },
+      "anti_aligned": {
+        "00": 0.0,
+        "01": 0.5,
+        "10": 0.5,
+        "11": 0.0
+      }
+    }
+  },
+  "recommended_next": [
+    "Treat T401 as a finite finality-native task screen, not a physics or claim upgrade.",
+    "Use the same forced-task audit before any stronger physical boundary-crossing discriminator.",
+    "A future upgrade needs an absorber-resistant physical setup, not just ordinary joint-record reconciliation."
+  ],
+  "residue_label": "candidate_finality_native_forced_task_absorbed_as_joint_record_access",
+  "setup": {
+    "boundary_B": "boundary holder of one event record bit",
+    "declared_before_pair": true,
+    "region_R": "bounded holder of one event record bit",
+    "task": "issue a merged/final record verdict by checking whether the two holders attest the same event value"
+  },
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "summary": {
+    "blocked_cases": {
+      "class_marker_shortcut": "absorbed_by_class_marker_signature",
+      "closure_key_shortcut": "absorbed_by_closure_key",
+      "hidden_datum_in_R_shortcut": "hidden_datum_smuggled_into_region",
+      "optional_joint_state_label": "optional_boundary_menu_only"
+    },
+    "domain_native_pass_cases": [
+      "finality_record_reconciliation_task"
+    ],
+    "formal_pass_cases": [
+      "finality_record_reconciliation_task"
+    ]
+  },
+  "verdict": "finite finality-native forced-task candidate built: same R and B local statistics, including the declared R intervention/readout menu, do not separate aligned from anti-aligned record pairs, while the predeclared record-reconciliation task forces the R:B relation and separates them; the result is absorbed as ordinary joint-record access and earns no claim-ledger movement"
+}

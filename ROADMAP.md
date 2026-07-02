@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T401 Finality-Boundary Reconciliation Screen
+
+T401 replaces T400's synthetic parity control with a finite finality-native
+record-reconciliation task. Two source distributions have identical `R`
+marginals, identical boundary-local marginals, and identical statistics after
+the declared finite `R` intervention/readout menu, but differ in whether the
+bounded-region record and boundary-holder record attest the same event value.
+
+The predeclared reconciliation task passes the forced-task gate because its
+output requires the `R:B` record relation. The result is still absorbing rather
+than promotional: once both holder records are admitted, the separator is an
+ordinary joint-record fact. No claim-ledger movement is earned. The next
+stronger Direction-A burden is a physical substrate where boundary crossing is
+forced by the setup and not absorbed as ordinary joint-record reconciliation.
+
 ## 2026-07-02 T400 Boundary-Forced Task Gate
 
 T400 converts T399's remaining burden into an executable task gate. The

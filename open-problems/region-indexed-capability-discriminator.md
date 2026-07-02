@@ -29,6 +29,15 @@ class-marker shortcuts, and admits only a synthetic `R:B` parity task as a
 formal positive control. This does not solve the open problem; it turns the
 next discriminator requirement into an executable gate.
 
+T401 replaces the synthetic parity control with a finite finality-native
+record-reconciliation task. Same-region and boundary-local statistics still
+fail to separate aligned from anti-aligned record-pair distributions, but the
+predeclared task of issuing a merged/final record verdict forces checking the
+`R:B` same/different relation. This clears the task-shape burden at the finite
+finality level, but remains absorbed by ordinary joint-record completion: once
+both holder records are admitted, the separator is just the joint record
+relation. No claim promotion follows.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:
@@ -67,6 +76,8 @@ Build a finite fixture with:
   than merely the ordinary enlarged-state completion;
 - a T400-style forced-task gate pass, with optional boundary access and
   shortcut absorbers ruled out;
+- a T401-style absorber check showing whether the task is more than ordinary
+  joint-record reconciliation;
 - positive controls where region enlargement restores the capability;
 - absorber controls against multipath marker algebra, ordinary causal
   intervention underdescription, and SBS-closure-key bookkeeping.
@@ -95,6 +106,7 @@ Demote or close this route if:
   relative-to-access;
 - the criterion factors through the SBS closure key at fixed access;
 - the only separator is a class-marker signature already absorbed by T397;
+- the task reduces to ordinary joint-record completion, as in T401;
 - the intervention menu has to smuggle in the hidden datum it is supposed to
   reveal.
 

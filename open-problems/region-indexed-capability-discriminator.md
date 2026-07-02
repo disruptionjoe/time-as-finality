@@ -247,3 +247,27 @@ with the contrast-probe triple and a priced enlargement control as
 residue. The physical-escape mechanism is the still-named-unbuilt
 transport rung, where work literally buys reach rather than being denied a
 channel by fiat. No claim promotion; ledger actions pause for Joe.
+
+## Status Addendum (2026-07-02): separator-refactorization linchpin - guardrail required
+
+Append-only. The physical-boundary post-mortem ranked the
+separator-relabel test as the next linchpin before any transport-rung rebuild:
+does the T411 global-correlation separator resist all admissible
+refactorizations of the reach, or only support/light-cone relabels?
+
+T412 answers conservatively:
+`results/T412-separator-refactorization-gate-v0.1-results.md`.
+
+In a minimal three-qubit parity shadow of the T411 beta=0 shape, every
+nonempty proper-subset marginal is identical while full parity separates
+perfectly. This property survives product-structure-preserving relabels
+(qubit permutations, local bit flips, and a product-basis spot check), but an
+entangling parity fan-in refactorization localizes the datum into one output
+factor.
+
+Verdict: the R1 fallback is not factorization-free. It is useful only relative
+to an admissibility rule that preserves the operational tensor product,
+coupling graph, or declared access factorization. If arbitrary entangling
+refactorization is admitted, the global-correlation separator demotes to a
+coordinate-dependent exhibit. No claim promotion; the open problem remains
+open.

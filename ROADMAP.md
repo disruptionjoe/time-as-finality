@@ -1,5 +1,21 @@
 ﻿# Roadmap
 
+## 2026-07-02 T412 Separator Refactorization Gate
+
+T412 executes the linchpin named by the physical-boundary post-mortem: whether
+the T411 global-correlation separator resists all admissible refactorizations or
+only support/light-cone relabels.
+
+The result is a useful guardrail, not a claim upgrade. A three-qubit parity
+fixture has identical proper-subset marginals and perfect full-joint
+separation. That separator survives product-structure-preserving relabels
+(qubit permutations, local bit flips, and a product-basis spot check), but an
+entangling parity fan-in refactorization localizes the datum into one output
+factor. The R1 fallback therefore requires an explicit admissibility rule:
+factorization changes must preserve the operational tensor product, coupling
+graph, or declared access factorization. Without that rule, the separator is a
+coordinate-dependent exhibit rather than a factorization-free result.
+
 ## 2026-07-02 T406 Transition-System Operation-Unavailability Gate
 
 T406 tests the next post-T405 word, operation unavailability. It keeps the

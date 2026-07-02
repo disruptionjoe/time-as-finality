@@ -1,0 +1,105 @@
+{
+  "admissibility_verdict": {
+    "arbitrary_entangling_refactorizations": "fail",
+    "product_structure_preserving_relabels": "pass",
+    "rule_needed": "admissible relabels must preserve the operational tensor product, coupling graph, or declared access factorization"
+  },
+  "artifact": "T412-separator-refactorization-gate-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "declared_factorization": {
+    "full_parity_readout": {
+      "binary_success": 1.0,
+      "even_state": {
+        "even": 1.0,
+        "odd": 0.0
+      },
+      "odd_state": {
+        "even": 0.0,
+        "odd": 1.0
+      }
+    },
+    "full_trace_distance": 1.0,
+    "max_proper_subset_trace_distance": 0.0,
+    "proper_subset_trace_distances": {
+      "0": 0.0,
+      "01": 0.0,
+      "02": 0.0,
+      "1": 0.0,
+      "12": 0.0,
+      "2": 0.0
+    }
+  },
+  "demotion_condition": "If a future result allows arbitrary entangling refactorization as an admissible change of reach description, the R1 anti-relabel separator demotes to a coordinate-dependent global-correlation exhibit.",
+  "entangling_refactorization_attack": {
+    "collapses_if_admissible": true,
+    "full_trace_distance_after_refactorization": 1.0,
+    "localized_factor": "0",
+    "localized_factor_even_state": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "localized_factor_odd_state": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "localized_factor_trace_distance": 1.0,
+    "map": "y0 = x0 xor x1 xor x2; y1 = x1; y2 = x2",
+    "proper_subset_trace_distances": {
+      "0": 1.0,
+      "01": 1.0,
+      "02": 1.0,
+      "1": 0.0,
+      "12": 0.0,
+      "2": 0.0
+    }
+  },
+  "fixture": {
+    "description": "three-qubit even/odd parity mixed-state pair",
+    "proper_subsets": [
+      "0",
+      "1",
+      "2",
+      "01",
+      "02",
+      "12"
+    ],
+    "t411_shadow": "canonical finite shadow of T411 beta=0: no proper subset carries the datum, while the full joint does"
+  },
+  "residue_label": "factorization_guardrail_required",
+  "source": [
+    "explorations/physical-boundary-hegelian-persona-pass-2026-07-02.md",
+    "results/T411-departed-record-capability-discriminator-v0.1-results.md",
+    "open-problems/region-indexed-capability-discriminator.md"
+  ],
+  "structure_preserving_relabels": {
+    "class": "qubit permutations + local bit flips; product-basis spot check",
+    "max_proper_subset_trace_distance_after_relabels": 0.0,
+    "n_permutation_flip_relabels": 48,
+    "product_basis_spot_check": {
+      "full_trace_distance": 1.0,
+      "max_proper_subset_trace_distance": 0.0,
+      "proper_subset_trace_distances": {
+        "0": 0.0,
+        "01": 0.0,
+        "02": 0.0,
+        "1": 0.0,
+        "12": 0.0,
+        "2": 0.0
+      }
+    },
+    "survives": true
+  },
+  "verdict": "the global-correlation separator survives product-structure-preserving relabels, but arbitrary entangling refactorization localizes the datum into one factor; the fallback therefore needs an explicit factorization/coupling-preservation admissibility rule, not physical-boundary language"
+}

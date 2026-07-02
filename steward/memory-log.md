@@ -33,3 +33,4 @@ Routine detail stays here; it is not loaded by default.
 
 - Stewardship fleet pass preserved the high-gravity audit and T392 finite-witness artifacts while leaving claim ledger and roadmap unchanged. See `steward/runs/2026-07-01-stewardship-fleet-pass.md`.
 - Discovery fleet pass found attention-weighting is the main need: review pending high-gravity audit material and keep complexity/theorem language disciplined. See `steward/runs/2026-07-01-discovery-fleet-pass.md`.
+- Progress run advanced Direction A without touching the active T392/T393 lane. It created `technical-reports/TECHNICAL-REPORT-direction-a-finite-anti-scalar-generalization-v0.1.md` and `steward/runs/2026-07-01-direction-a-progress-run.md`, sharpening the anti-scalar gate: exact scalar failure is easy, but scalar tie-collapse resistance is the real next executable target.

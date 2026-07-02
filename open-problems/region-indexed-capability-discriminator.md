@@ -5,7 +5,14 @@
 Open problem / next-artifact spec. No claim promotion.
 
 Seeded by `audits/2026-07-01-tri-repo-synthesis-hegelian-metasynthesis.md`
-and updated against the later T397 absorber result.
+and updated against the later T397 and T398 absorber results.
+
+T398 closes the first resource-profile absorber gate at the finite internal
+level: T397's `C(R)` profiles form a 3 x 4 product resource preorder once the
+capability profile and declared region/menu/task context are admitted. The
+anti-scalar profile shape and statistics-flat class therefore do not promote
+`C(R)` as a resource-theory novelty route. They remain useful translation
+material for designing the stronger discriminator below.
 
 ## Problem
 
@@ -14,9 +21,10 @@ same declared record/SBS-side data can leave different reversal capability
 depending on what the region can recollect or undo. T395 then showed that
 record accessibility can move no reduced process marginal at all while still
 changing what a record holder can do or postdict. T397 absorbs T395's
-`k >= 3` class-coarse residue as generic multipath class-marker algebra, so
-the next Direction-A move cannot be another visibility scalarization over
-class records.
+`k >= 3` class-coarse residue as generic multipath class-marker algebra.
+T398 then absorbs the first `C(R)` profile poset as a finite product resource
+preorder, so the next Direction-A move cannot be another visibility
+scalarization over class records or a same-profile resource-order claim.
 
 The live object is therefore not a statistics-only record/order inequality.
 It is a region-indexed capability discriminator:

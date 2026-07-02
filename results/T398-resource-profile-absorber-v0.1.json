@@ -1,0 +1,910 @@
+{
+  "absorber_challenges": {
+    "anti_scalar_theorem_shape": {
+      "reason": "A product of two resource coordinates naturally has incomparable elements and no faithful scalar total preorder.",
+      "status": "absorbed"
+    },
+    "physical_realization": {
+      "reason": "The exact T397 construction remains useful as a region-indexed audit example where statistics and capability typing diverge.",
+      "status": "translation_residue"
+    },
+    "region_indexing": {
+      "reason": "The declared region, menu, and task family are exactly the resource-theory context. The current finite artifact does not derive an additional conversion obstruction beyond that context.",
+      "status": "absorbed_as_context_parameter"
+    },
+    "statistics_flatness": {
+      "reason": "Declared Z-readout statistics omit the admitted resource profile. Once the profile is granted, capability verdicts factor through it.",
+      "status": "absorbed_as_incomplete_shadow"
+    }
+  },
+  "absorber_verdict": "absorbed_as_finite_product_resource_preorder: once C(R) profiles are admitted as resource states under the declared region/menu/task context, the anti-scalar and incomparability content is exactly a product resource-preorder fact; T397 remains translation residue / physical realization, not a promoted resource-theory residue",
+  "artifact": "T398-resource-profile-absorber-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "factorization_audit": {
+    "capability_factors_through_resource_profile": true,
+    "capability_test": {
+      "factors_through_resource_profile": true,
+      "not_decidable_from_declared_statistics": true,
+      "test": "undo_cross >= v* (0.9)"
+    },
+    "featured_pair_resource_objects": {
+      "pristine": "U2_R0",
+      "publisher": "U0_R3"
+    },
+    "featured_pair_same_statistics_different_resource": true,
+    "n_configs": 24,
+    "n_resource_objects": 12,
+    "same_resource_capability_splits": [],
+    "statistics_flat_class": {
+      "n_resource_objects_realized": 12,
+      "resource_objects_realized": [
+        "U0_R0",
+        "U0_R1",
+        "U0_R2",
+        "U0_R3",
+        "U1_R0",
+        "U1_R1",
+        "U1_R2",
+        "U1_R3",
+        "U2_R0",
+        "U2_R1",
+        "U2_R2",
+        "U2_R3"
+      ],
+      "size": 16,
+      "spans_all_resource_objects": true,
+      "stats_constant": true
+    }
+  },
+  "falsification_condition": "This absorber would fail if two configurations in the same admitted resource profile and same declared context split on a capability verdict, or if the region index induced a conversion obstruction not captured by the admitted profile preorder plus declared region/menu/task context.",
+  "monotone_audit": {
+    "axes_jointly_classify": true,
+    "axes_monotone": true,
+    "axis_pair_count": 12,
+    "n_readout_levels": 4,
+    "n_undo_levels": 3,
+    "readout_axis_levels": [
+      [
+        0.333333333333,
+        0.666666666667
+      ],
+      [
+        0.666666666667,
+        0.666666666667
+      ],
+      [
+        0.666666666667,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "scalar_absorbed": {
+      "absorber_reading": "no total scalar is expected in a two-coordinate resource preorder; this is an absorbed non-total-order fact, not a new scalar no-go",
+      "t397_reproducing_scalars": 0,
+      "t397_weak_orders_scanned": 4683
+    },
+    "undo_axis_levels": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ]
+  },
+  "recommended_next": [
+    "Keep C(R) as a region-indexed audit/readout object, not a promoted resource-theory novelty claim.",
+    "For a stronger discriminator, require equality under all R-supported intervention statistics and separation only by a boundary-crossing menu.",
+    "Run a separate verified literature note before any external-facing resource-theory language."
+  ],
+  "relations": {
+    "incomparable_pairs": [
+      [
+        "U0_R1",
+        "U1_R0"
+      ],
+      [
+        "U0_R1",
+        "U2_R0"
+      ],
+      [
+        "U0_R2",
+        "U1_R0"
+      ],
+      [
+        "U0_R2",
+        "U1_R1"
+      ],
+      [
+        "U0_R2",
+        "U2_R0"
+      ],
+      [
+        "U0_R2",
+        "U2_R1"
+      ],
+      [
+        "U0_R3",
+        "U1_R0"
+      ],
+      [
+        "U0_R3",
+        "U1_R1"
+      ],
+      [
+        "U0_R3",
+        "U1_R2"
+      ],
+      [
+        "U0_R3",
+        "U2_R0"
+      ],
+      [
+        "U0_R3",
+        "U2_R1"
+      ],
+      [
+        "U0_R3",
+        "U2_R2"
+      ],
+      [
+        "U1_R1",
+        "U2_R0"
+      ],
+      [
+        "U1_R2",
+        "U2_R0"
+      ],
+      [
+        "U1_R2",
+        "U2_R1"
+      ],
+      [
+        "U1_R3",
+        "U2_R0"
+      ],
+      [
+        "U1_R3",
+        "U2_R1"
+      ],
+      [
+        "U1_R3",
+        "U2_R2"
+      ]
+    ],
+    "n_incomparable_pairs": 18,
+    "preorder_size_including_reflexives": 60,
+    "relation_pairs": [
+      [
+        "U0_R0",
+        "U0_R0"
+      ],
+      [
+        "U0_R1",
+        "U0_R1"
+      ],
+      [
+        "U0_R2",
+        "U0_R2"
+      ],
+      [
+        "U0_R3",
+        "U0_R3"
+      ],
+      [
+        "U1_R0",
+        "U1_R0"
+      ],
+      [
+        "U1_R1",
+        "U1_R1"
+      ],
+      [
+        "U1_R2",
+        "U1_R2"
+      ],
+      [
+        "U1_R3",
+        "U1_R3"
+      ],
+      [
+        "U2_R0",
+        "U2_R0"
+      ],
+      [
+        "U2_R1",
+        "U2_R1"
+      ],
+      [
+        "U2_R2",
+        "U2_R2"
+      ],
+      [
+        "U2_R3",
+        "U2_R3"
+      ],
+      [
+        "U0_R0",
+        "U0_R1"
+      ],
+      [
+        "U0_R0",
+        "U0_R2"
+      ],
+      [
+        "U0_R0",
+        "U0_R3"
+      ],
+      [
+        "U0_R0",
+        "U1_R0"
+      ],
+      [
+        "U0_R0",
+        "U1_R1"
+      ],
+      [
+        "U0_R0",
+        "U1_R2"
+      ],
+      [
+        "U0_R0",
+        "U1_R3"
+      ],
+      [
+        "U0_R0",
+        "U2_R0"
+      ],
+      [
+        "U0_R0",
+        "U2_R1"
+      ],
+      [
+        "U0_R0",
+        "U2_R2"
+      ],
+      [
+        "U0_R0",
+        "U2_R3"
+      ],
+      [
+        "U0_R1",
+        "U0_R2"
+      ],
+      [
+        "U0_R1",
+        "U0_R3"
+      ],
+      [
+        "U0_R1",
+        "U1_R1"
+      ],
+      [
+        "U0_R1",
+        "U1_R2"
+      ],
+      [
+        "U0_R1",
+        "U1_R3"
+      ],
+      [
+        "U0_R1",
+        "U2_R1"
+      ],
+      [
+        "U0_R1",
+        "U2_R2"
+      ],
+      [
+        "U0_R1",
+        "U2_R3"
+      ],
+      [
+        "U0_R2",
+        "U0_R3"
+      ],
+      [
+        "U0_R2",
+        "U1_R2"
+      ],
+      [
+        "U0_R2",
+        "U1_R3"
+      ],
+      [
+        "U0_R2",
+        "U2_R2"
+      ],
+      [
+        "U0_R2",
+        "U2_R3"
+      ],
+      [
+        "U0_R3",
+        "U1_R3"
+      ],
+      [
+        "U0_R3",
+        "U2_R3"
+      ],
+      [
+        "U1_R0",
+        "U1_R1"
+      ],
+      [
+        "U1_R0",
+        "U1_R2"
+      ],
+      [
+        "U1_R0",
+        "U1_R3"
+      ],
+      [
+        "U1_R0",
+        "U2_R0"
+      ],
+      [
+        "U1_R0",
+        "U2_R1"
+      ],
+      [
+        "U1_R0",
+        "U2_R2"
+      ],
+      [
+        "U1_R0",
+        "U2_R3"
+      ],
+      [
+        "U1_R1",
+        "U1_R2"
+      ],
+      [
+        "U1_R1",
+        "U1_R3"
+      ],
+      [
+        "U1_R1",
+        "U2_R1"
+      ],
+      [
+        "U1_R1",
+        "U2_R2"
+      ],
+      [
+        "U1_R1",
+        "U2_R3"
+      ],
+      [
+        "U1_R2",
+        "U1_R3"
+      ],
+      [
+        "U1_R2",
+        "U2_R2"
+      ],
+      [
+        "U1_R2",
+        "U2_R3"
+      ],
+      [
+        "U1_R3",
+        "U2_R3"
+      ],
+      [
+        "U2_R0",
+        "U2_R1"
+      ],
+      [
+        "U2_R0",
+        "U2_R2"
+      ],
+      [
+        "U2_R0",
+        "U2_R3"
+      ],
+      [
+        "U2_R1",
+        "U2_R2"
+      ],
+      [
+        "U2_R1",
+        "U2_R3"
+      ],
+      [
+        "U2_R2",
+        "U2_R3"
+      ]
+    ],
+    "relation_size": 48,
+    "strict_pairs": [
+      [
+        "U0_R0",
+        "U0_R1"
+      ],
+      [
+        "U0_R0",
+        "U0_R2"
+      ],
+      [
+        "U0_R0",
+        "U0_R3"
+      ],
+      [
+        "U0_R0",
+        "U1_R0"
+      ],
+      [
+        "U0_R0",
+        "U1_R1"
+      ],
+      [
+        "U0_R0",
+        "U1_R2"
+      ],
+      [
+        "U0_R0",
+        "U1_R3"
+      ],
+      [
+        "U0_R0",
+        "U2_R0"
+      ],
+      [
+        "U0_R0",
+        "U2_R1"
+      ],
+      [
+        "U0_R0",
+        "U2_R2"
+      ],
+      [
+        "U0_R0",
+        "U2_R3"
+      ],
+      [
+        "U0_R1",
+        "U0_R2"
+      ],
+      [
+        "U0_R1",
+        "U0_R3"
+      ],
+      [
+        "U0_R1",
+        "U1_R1"
+      ],
+      [
+        "U0_R1",
+        "U1_R2"
+      ],
+      [
+        "U0_R1",
+        "U1_R3"
+      ],
+      [
+        "U0_R1",
+        "U2_R1"
+      ],
+      [
+        "U0_R1",
+        "U2_R2"
+      ],
+      [
+        "U0_R1",
+        "U2_R3"
+      ],
+      [
+        "U0_R2",
+        "U0_R3"
+      ],
+      [
+        "U0_R2",
+        "U1_R2"
+      ],
+      [
+        "U0_R2",
+        "U1_R3"
+      ],
+      [
+        "U0_R2",
+        "U2_R2"
+      ],
+      [
+        "U0_R2",
+        "U2_R3"
+      ],
+      [
+        "U0_R3",
+        "U1_R3"
+      ],
+      [
+        "U0_R3",
+        "U2_R3"
+      ],
+      [
+        "U1_R0",
+        "U1_R1"
+      ],
+      [
+        "U1_R0",
+        "U1_R2"
+      ],
+      [
+        "U1_R0",
+        "U1_R3"
+      ],
+      [
+        "U1_R0",
+        "U2_R0"
+      ],
+      [
+        "U1_R0",
+        "U2_R1"
+      ],
+      [
+        "U1_R0",
+        "U2_R2"
+      ],
+      [
+        "U1_R0",
+        "U2_R3"
+      ],
+      [
+        "U1_R1",
+        "U1_R2"
+      ],
+      [
+        "U1_R1",
+        "U1_R3"
+      ],
+      [
+        "U1_R1",
+        "U2_R1"
+      ],
+      [
+        "U1_R1",
+        "U2_R2"
+      ],
+      [
+        "U1_R1",
+        "U2_R3"
+      ],
+      [
+        "U1_R2",
+        "U1_R3"
+      ],
+      [
+        "U1_R2",
+        "U2_R2"
+      ],
+      [
+        "U1_R2",
+        "U2_R3"
+      ],
+      [
+        "U1_R3",
+        "U2_R3"
+      ],
+      [
+        "U2_R0",
+        "U2_R1"
+      ],
+      [
+        "U2_R0",
+        "U2_R2"
+      ],
+      [
+        "U2_R0",
+        "U2_R3"
+      ],
+      [
+        "U2_R1",
+        "U2_R2"
+      ],
+      [
+        "U2_R1",
+        "U2_R3"
+      ],
+      [
+        "U2_R2",
+        "U2_R3"
+      ]
+    ]
+  },
+  "residue_label": "translation_residue",
+  "resource_frame": {
+    "external_prior_art_status": "not verified here; this is the finite internal resource-preorder absorber gate requested by T397",
+    "free_downgrade_reading": "a higher profile can simulate a lower one by declining or discarding available task capability",
+    "objects": "mutual-convertibility classes of admitted C(R) profiles",
+    "preorder": "componentwise capability dominance in the declared region/menu/task context"
+  },
+  "resource_objects": [
+    {
+      "configs": [
+        "none|none|full"
+      ],
+      "id": "U0_R0",
+      "profile": [
+        0.0,
+        0.0,
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_rank": 0,
+      "undo_axis": [
+        0.0,
+        0.0
+      ],
+      "undo_rank": 0
+    },
+    {
+      "configs": [
+        "none|fine_phase|full"
+      ],
+      "id": "U0_R1",
+      "profile": [
+        0.0,
+        0.0,
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_rank": 1,
+      "undo_axis": [
+        0.0,
+        0.0
+      ],
+      "undo_rank": 0
+    },
+    {
+      "configs": [
+        "class_phase|none|full",
+        "class_zbasis|none|full"
+      ],
+      "id": "U0_R2",
+      "profile": [
+        0.0,
+        0.0,
+        0.666666666667,
+        1.0
+      ],
+      "readout_axis": [
+        0.666666666667,
+        1.0
+      ],
+      "readout_rank": 2,
+      "undo_axis": [
+        0.0,
+        0.0
+      ],
+      "undo_rank": 0
+    },
+    {
+      "configs": [
+        "class_phase|fine_phase|full",
+        "class_zbasis|fine_phase|full"
+      ],
+      "id": "U0_R3",
+      "profile": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "readout_axis": [
+        1.0,
+        1.0
+      ],
+      "readout_rank": 3,
+      "undo_axis": [
+        0.0,
+        0.0
+      ],
+      "undo_rank": 0
+    },
+    {
+      "configs": [
+        "none|none|class"
+      ],
+      "id": "U1_R0",
+      "profile": [
+        1.0,
+        0.0,
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_rank": 0,
+      "undo_axis": [
+        1.0,
+        0.0
+      ],
+      "undo_rank": 1
+    },
+    {
+      "configs": [
+        "none|fine_phase|class"
+      ],
+      "id": "U1_R1",
+      "profile": [
+        1.0,
+        0.0,
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_rank": 1,
+      "undo_axis": [
+        1.0,
+        0.0
+      ],
+      "undo_rank": 1
+    },
+    {
+      "configs": [
+        "class_phase|none|class",
+        "class_zbasis|none|class"
+      ],
+      "id": "U1_R2",
+      "profile": [
+        1.0,
+        0.0,
+        0.666666666667,
+        1.0
+      ],
+      "readout_axis": [
+        0.666666666667,
+        1.0
+      ],
+      "readout_rank": 2,
+      "undo_axis": [
+        1.0,
+        0.0
+      ],
+      "undo_rank": 1
+    },
+    {
+      "configs": [
+        "class_phase|fine_phase|class",
+        "class_zbasis|fine_phase|class"
+      ],
+      "id": "U1_R3",
+      "profile": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "readout_axis": [
+        1.0,
+        1.0
+      ],
+      "readout_rank": 3,
+      "undo_axis": [
+        1.0,
+        0.0
+      ],
+      "undo_rank": 1
+    },
+    {
+      "configs": [
+        "none|none|burn",
+        "none|none|none"
+      ],
+      "id": "U2_R0",
+      "profile": [
+        1.0,
+        1.0,
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.333333333333,
+        0.666666666667
+      ],
+      "readout_rank": 0,
+      "undo_axis": [
+        1.0,
+        1.0
+      ],
+      "undo_rank": 2
+    },
+    {
+      "configs": [
+        "none|fine_phase|burn",
+        "none|fine_phase|none"
+      ],
+      "id": "U2_R1",
+      "profile": [
+        1.0,
+        1.0,
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_axis": [
+        0.666666666667,
+        0.666666666667
+      ],
+      "readout_rank": 1,
+      "undo_axis": [
+        1.0,
+        1.0
+      ],
+      "undo_rank": 2
+    },
+    {
+      "configs": [
+        "class_phase|none|burn",
+        "class_phase|none|none",
+        "class_zbasis|none|burn",
+        "class_zbasis|none|none"
+      ],
+      "id": "U2_R2",
+      "profile": [
+        1.0,
+        1.0,
+        0.666666666667,
+        1.0
+      ],
+      "readout_axis": [
+        0.666666666667,
+        1.0
+      ],
+      "readout_rank": 2,
+      "undo_axis": [
+        1.0,
+        1.0
+      ],
+      "undo_rank": 2
+    },
+    {
+      "configs": [
+        "class_phase|fine_phase|burn",
+        "class_phase|fine_phase|none",
+        "class_zbasis|fine_phase|burn",
+        "class_zbasis|fine_phase|none"
+      ],
+      "id": "U2_R3",
+      "profile": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "readout_axis": [
+        1.0,
+        1.0
+      ],
+      "readout_rank": 3,
+      "undo_axis": [
+        1.0,
+        1.0
+      ],
+      "undo_rank": 2
+    }
+  ],
+  "source_artifact": "T397-region-capability-no-go"
+}

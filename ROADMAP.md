@@ -1,5 +1,20 @@
 ﻿# Roadmap
 
+## 2026-07-02 T398 Resource-Profile Absorber
+
+T398 runs the resource-theory absorber named by T397 for the bounded-region
+capability profile object `C(R)`. Finite verdict: once profiles are admitted
+as resource states under the declared region/menu/task context, the T397
+profile quotient is exactly a 3 x 4 product resource preorder. The anti-scalar
+shape and statistics-flat class are absorbed as resource-preorder behavior
+and incomplete observer shadow, respectively.
+
+No claim-ledger movement is earned. `C(R)` remains useful as a
+region-indexed audit/readout object, not a promoted resource-theory novelty
+claim. The stronger Direction-A discriminator now has to require equality
+under all `R`-supported intervention statistics and separation only by a
+boundary-crossing menu.
+
 ## 2026-07-02 Tri-Repo Synthesis Distillation
 
 The tri-repo synthesis in

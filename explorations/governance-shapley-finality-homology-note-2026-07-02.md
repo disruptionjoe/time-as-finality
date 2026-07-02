@@ -184,6 +184,32 @@ whose violation is the localizing entangling re-factorization. Obligations
 #2–#4 remain open; #2 is now the axiom-building problem T412 exposed rather than
 an unrun relabel test.
 
+## Addendum (2026-07-02): bridge obligation #2 probed (T415) — structurally bridged, R2-conditional
+
+Bridge obligation #2 was taken as a swing: T415
+(`results/T415-admissibility-derivation-probe-v0.1-results.md`), `7 passed`,
+built on the registered T412 gate. Enumerating the full group of reversible
+refactorizations `GL(3,2)` (168) distinguishes two ports of the game's admissibility rule:
+
+- **(P1) equality-preservation — REFUTED as circular.** Full-joint TD is unitarily
+  invariant, so "equality-preserving" = "keeps the separator a separator"
+  (tautological); and it is strictly broader than product-preservation — **18
+  entangling refactorizations preserve the equality** (24 global-parity-preserving
+  minus 6 permutations). It cannot justify the rule. (The clean "derives for free"
+  outcome hoped for is the one that died — the method working.)
+- **(P2) operational automorphism group — the correct port.** Admissible = the
+  automorphisms of the operational structure (product/coupling-preserving = T412's
+  class) = the exact analog of the game's symmetry axiom. The separator survives
+  it; it is an operational commitment, not a free declaration; but its physicality
+  is **R2** (is the coupling graph forced?).
+
+Net: the T414 divergent field (relabel-invariance) is now **structurally bridged**
+— game symmetry axiom ↔ quantum operational-automorphism admissibility, the same
+kind of object — with its physicality **pinned to R2**. Every thread of the
+homology now converges on one remaining question: *is the operational structure
+(coupling graph / factorization / the value of the whole) physically forced or
+declared?* — the program's central open gap. Obligations #3–#4 remain open.
+
 ## Honest bottom line
 
 The rhyme survived a real swing. It is **not** a metaphor: the finality wound,

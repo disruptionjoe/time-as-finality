@@ -17,6 +17,6 @@ GitHub is the routine versioning surface when Joe has authorized repo work. No n
 - Keep the split clear: vision can be aggressive; research program cannot.
 - Contributions follow `CONTRIBUTING.md`.
 - Claim promotion requires a runnable artifact that earns it.
-- Promotion, external consequence, or cross-repo capture-risk decisions pause for Joe.
+- Promotion and external consequence pause for Joe. Cross-repo actions are not executed directly: drop a proposal note in the target surface's mailbox (`CapacityOS/mailboxes/<surface>/`) for that steward to decide (see `CapacityOS/mailboxes/README.md`).
 - CapacityOS architecture questions route to CapacityOS; JoeOps coordination questions route to JoeOps.
 - Scratch, caches, and intermediate renders belong in `_local/`.

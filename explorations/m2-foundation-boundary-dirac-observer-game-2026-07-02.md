@@ -187,3 +187,43 @@ verdict). Absent that, the finality datum is **finite-witnessed but not canonica
 computed.** Recorded-tier; no promotion; TESTS.md / CLAIM-LEDGER.md untouched;
 committed as recorded-tier in `68f814b`. The Route-A redesign lane remains a
 separate follow-up; no claim move follows from T423.
+
+## Addendum — Route A swung (T424): REDESIGN. The wall is unified.
+
+Route A (the index channel — the one the Shapley-linearity lemma does not touch)
+was built as the decisive fiber-variation test (T424,
+`results/T424-m2-route-a-index-probe-v0.1-results.md`; 23 tests; recorded-tier;
+TESTS.md/CLAIM-LEDGER.md untouched; one-way import audit in-suite). Three design
+agents converged on the diagnosis; the build confirmed it.
+
+**Verdict: REDESIGN (no GO) — but strictly stronger than Route B, with the wall
+now unified across all three swings.** On the n=3 dilemma class (2 v_gap fibers):
+- **I_chi (combinatorial-Hodge Euler char) and I_fr (signed-graph frustration)
+  GENUINELY ESCAPE the relabel bar** — both are non-constant on the verdict's
+  fibers, i.e. genuinely independent channels, *which Route B could never produce*
+  (Shapley linearity forbade it). This is the real earn.
+- **But neither equals the finality separator across the class.** I_chi=1 collides
+  (carries both sep=0 and sep=1); I_fr fires on all 6 dilemmas (necessary) but also
+  18 non-dilemmas (not sufficient). I_sf (spectral flow) is **null at n=3** — the
+  twisted triangle Dirac is provably gapless (`det B(θ) = -1 + P·e^{iθ}` hits the
+  origin), so its only residue re-reads the frustration cocycle. (Honest caveat:
+  I_sf is null *at this witness size*, not proven null in general.)
+- Guard-the-guard PASSED both directions, so the test is trustworthy. Extra
+  finding: I_fr's independence is **doctrine-specific** — in the XOR class it
+  degenerates to a genuine relabel (Horn 2).
+
+**The unified wall (the durable result).** Canonicity fails because **independence
+and separator-agreement are in tension**: on a finite combinatorial object, any
+invariant that *equals* the finality datum is a function of the majority verdict (a
+relabel — T423's Shapley-linearity lemma, index-side), while any genuinely
+*independent* invariant computes *different* data. You get one, not both. Same wall
+as T422 (category-relativity) and T423 (shared-primitive), now shown a third time
+from the index direction — **one structural reason the "global-no-local finality
+object" resists canonical finite-witness computation.** Escape needs a genuine
+continuum (an SSH Brillouin circle / a spin structure), and *choosing* it is exactly
+T422's hand-picked category.
+
+**Net for M2.** The finality datum is **finite-witnessed but not canonically
+computed** by the value route (T423) or the index route (T424) — the honest ceiling,
+now with a proof-shaped diagnosis rather than a bare negative. No claim promotion;
+ledger untouched; pauses for Joe.

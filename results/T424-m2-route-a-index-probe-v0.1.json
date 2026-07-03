@@ -1,0 +1,1172 @@
+{
+  "artifact": "T424-m2-route-a-index-probe-v0.1",
+  "canonical_coalitions": [
+    [],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3
+    ]
+  ],
+  "overall_verdict": {
+    "verdict": "REDESIGN",
+    "reason": "no index is a clean relabel-free separator. In the AND dilemma class each channel is one of: a degenerate/null channel (I_sf: the twisted triangle is gapless at n=3, spectral flow re-reads the frustration cocycle), a genuine relabel (Horn 2), or INDEPENDENT-of-v_gap-but-different-data (Horn 1.5): it escapes the relabel bar yet the same index value carries BOTH separator=1 and separator=0 profiles, so it cannot be thresholded to the finality separator. The frustration escape valve fires on every genuine dilemma (necessary) but ALSO on non-dilemma profiles (not sufficient). Confirms the unified index-side lemma; the wall stands a third time (T422 / T423 / Route-A).",
+    "per_index_horn_AND": {
+      "I_chi": 1.5,
+      "I_sf": "null",
+      "I_fr": 1.5
+    },
+    "per_index_go_AND": {
+      "I_chi": false,
+      "I_sf": false,
+      "I_fr": false
+    }
+  },
+  "doctrine_reports": {
+    "AND": {
+      "doctrine": "AND",
+      "n_profiles": 64,
+      "n_fibers": 2,
+      "n_separator_profiles": 6,
+      "per_index": {
+        "I_chi": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "1": 52,
+            "2": 12
+          },
+          "fiber_test": {
+            "n_fibers": 2,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": false,
+            "n_separator_profiles": 6,
+            "perfectly_predicts_separator": false,
+            "index_values_carrying_sep1": [
+              1
+            ],
+            "index_values_carrying_sep0": [
+              1,
+              2
+            ],
+            "colliding_values": {
+              "1": [
+                0,
+                1
+              ]
+            },
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 1
+            },
+            "profile_b": {
+              "serial": 3,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 2
+            }
+          },
+          "verdict": {
+            "index": "I_chi",
+            "fiber_constant": false,
+            "horn": 1.5,
+            "reading": "INDEPENDENT of v_gap (escapes the relabel bar) but disagrees off-fixture: the same index value carries both separator=1 and separator=0 profiles (different data) -> still no GO.",
+            "go": false
+          }
+        },
+        "I_sf": {
+          "n_distinct_values": 1,
+          "value_distribution": {
+            "1": 64
+          },
+          "fiber_test": {
+            "n_fibers": 2,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_sf",
+            "fiber_constant": true,
+            "horn": "null",
+            "reading": "DEGENERATE / NULL channel: a single value across the whole class -> carries no signal (not available at this witness size).",
+            "go": false
+          }
+        },
+        "I_fr": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "0": 40,
+            "1": 24
+          },
+          "fiber_test": {
+            "n_fibers": 2,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": false,
+            "n_separator_profiles": 6,
+            "perfectly_predicts_separator": false,
+            "index_values_carrying_sep1": [
+              1
+            ],
+            "index_values_carrying_sep0": [
+              0,
+              1
+            ],
+            "colliding_values": {
+              "1": [
+                0,
+                1
+              ]
+            },
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 0
+            },
+            "profile_b": {
+              "serial": 6,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "index": 1
+            }
+          },
+          "verdict": {
+            "index": "I_fr",
+            "fiber_constant": false,
+            "horn": 1.5,
+            "reading": "INDEPENDENT of v_gap (escapes the relabel bar) but disagrees off-fixture: the same index value carries both separator=1 and separator=0 profiles (different data) -> still no GO.",
+            "go": false
+          }
+        }
+      },
+      "guard_the_guard": {
+        "relabel_detector_positive_control": {
+          "index": "i_fake_relabel = sum(v_gap)",
+          "must_be": "constant_on_all_fibers",
+          "observed_constant": true,
+          "pass": true
+        },
+        "independence_detector_positive_control": {
+          "index": "i_fake_independent = profile serial id",
+          "must_be": "non-constant (>=1 fiber varies)",
+          "observed_nonconstant_fibers": 2,
+          "pass": true
+        }
+      }
+    },
+    "OR": {
+      "doctrine": "OR",
+      "n_profiles": 64,
+      "n_fibers": 10,
+      "n_separator_profiles": 0,
+      "per_index": {
+        "I_chi": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "1": 52,
+            "2": 12
+          },
+          "fiber_test": {
+            "n_fibers": 10,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              1,
+              2
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 1
+            },
+            "profile_b": {
+              "serial": 3,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 2
+            }
+          },
+          "verdict": {
+            "index": "I_chi",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        },
+        "I_sf": {
+          "n_distinct_values": 1,
+          "value_distribution": {
+            "1": 64
+          },
+          "fiber_test": {
+            "n_fibers": 10,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_sf",
+            "fiber_constant": true,
+            "horn": "null",
+            "reading": "DEGENERATE / NULL channel: a single value across the whole class -> carries no signal (not available at this witness size).",
+            "go": false
+          }
+        },
+        "I_fr": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "0": 40,
+            "1": 24
+          },
+          "fiber_test": {
+            "n_fibers": 10,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              0,
+              1
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 0
+            },
+            "profile_b": {
+              "serial": 7,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 1
+            }
+          },
+          "verdict": {
+            "index": "I_fr",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        }
+      },
+      "guard_the_guard": {
+        "relabel_detector_positive_control": {
+          "index": "i_fake_relabel = sum(v_gap)",
+          "must_be": "constant_on_all_fibers",
+          "observed_constant": true,
+          "pass": true
+        },
+        "independence_detector_positive_control": {
+          "index": "i_fake_independent = profile serial id",
+          "must_be": "non-constant (>=1 fiber varies)",
+          "observed_nonconstant_fibers": 10,
+          "pass": true
+        }
+      }
+    },
+    "DICT": {
+      "doctrine": "DICT",
+      "n_profiles": 64,
+      "n_fibers": 1,
+      "n_separator_profiles": 0,
+      "per_index": {
+        "I_chi": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "1": 52,
+            "2": 12
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              1,
+              2
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 1
+            },
+            "profile_b": {
+              "serial": 3,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 2
+            }
+          },
+          "verdict": {
+            "index": "I_chi",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        },
+        "I_sf": {
+          "n_distinct_values": 1,
+          "value_distribution": {
+            "1": 64
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_sf",
+            "fiber_constant": true,
+            "horn": "null",
+            "reading": "DEGENERATE / NULL channel: a single value across the whole class -> carries no signal (not available at this witness size).",
+            "go": false
+          }
+        },
+        "I_fr": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "0": 40,
+            "1": 24
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              0,
+              1
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 0
+            },
+            "profile_b": {
+              "serial": 6,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "index": 1
+            }
+          },
+          "verdict": {
+            "index": "I_fr",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        }
+      },
+      "guard_the_guard": {
+        "relabel_detector_positive_control": {
+          "index": "i_fake_relabel = sum(v_gap)",
+          "must_be": "constant_on_all_fibers",
+          "observed_constant": true,
+          "pass": true
+        },
+        "independence_detector_positive_control": {
+          "index": "i_fake_independent = profile serial id",
+          "must_be": "non-constant (>=1 fiber varies)",
+          "observed_nonconstant_fibers": 1,
+          "pass": true
+        }
+      }
+    },
+    "NOCONN": {
+      "doctrine": "NOCONN",
+      "n_profiles": 64,
+      "n_fibers": 1,
+      "n_separator_profiles": 0,
+      "per_index": {
+        "I_chi": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "1": 52,
+            "2": 12
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              1,
+              2
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 1
+            },
+            "profile_b": {
+              "serial": 3,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 2
+            }
+          },
+          "verdict": {
+            "index": "I_chi",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        },
+        "I_sf": {
+          "n_distinct_values": 1,
+          "value_distribution": {
+            "1": 64
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_sf",
+            "fiber_constant": true,
+            "horn": "null",
+            "reading": "DEGENERATE / NULL channel: a single value across the whole class -> carries no signal (not available at this witness size).",
+            "go": false
+          }
+        },
+        "I_fr": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "0": 40,
+            "1": 24
+          },
+          "fiber_test": {
+            "n_fibers": 1,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              0,
+              1
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 0
+            },
+            "profile_b": {
+              "serial": 6,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "index": 1
+            }
+          },
+          "verdict": {
+            "index": "I_fr",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        }
+      },
+      "guard_the_guard": {
+        "relabel_detector_positive_control": {
+          "index": "i_fake_relabel = sum(v_gap)",
+          "must_be": "constant_on_all_fibers",
+          "observed_constant": true,
+          "pass": true
+        },
+        "independence_detector_positive_control": {
+          "index": "i_fake_independent = profile serial id",
+          "must_be": "non-constant (>=1 fiber varies)",
+          "observed_nonconstant_fibers": 1,
+          "pass": true
+        }
+      }
+    },
+    "XOR": {
+      "doctrine": "XOR",
+      "n_profiles": 64,
+      "n_fibers": 16,
+      "n_separator_profiles": 0,
+      "per_index": {
+        "I_chi": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "1": 52,
+            "2": 12
+          },
+          "fiber_test": {
+            "n_fibers": 16,
+            "n_fibers_nonconstant": 1,
+            "constant_on_all_fibers": false,
+            "nonconstant_examples": [
+              {
+                "fiber": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "index_values": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "separator_agreement": {
+            "vacuous_no_separator_in_class": true,
+            "n_separator_profiles": 0,
+            "perfectly_predicts_separator": null,
+            "index_values_carrying_sep1": [],
+            "index_values_carrying_sep0": [
+              1,
+              2
+            ],
+            "colliding_values": {},
+            "n_distinct_index_values": 2
+          },
+          "invariance_witness": {
+            "shared_v_gap_fiber": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "profile_a": {
+              "serial": 0,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "index": 1
+            },
+            "profile_b": {
+              "serial": 3,
+              "profile": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "index": 2
+            }
+          },
+          "verdict": {
+            "index": "I_chi",
+            "fiber_constant": false,
+            "horn": "1-indep",
+            "reading": "INDEPENDENT of v_gap, but this class has NO finality separator -> agreement is vacuous (not a GO).",
+            "go": false
+          }
+        },
+        "I_sf": {
+          "n_distinct_values": 1,
+          "value_distribution": {
+            "1": 64
+          },
+          "fiber_test": {
+            "n_fibers": 16,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_sf",
+            "fiber_constant": true,
+            "horn": "null",
+            "reading": "DEGENERATE / NULL channel: a single value across the whole class -> carries no signal (not available at this witness size).",
+            "go": false
+          }
+        },
+        "I_fr": {
+          "n_distinct_values": 2,
+          "value_distribution": {
+            "0": 40,
+            "1": 24
+          },
+          "fiber_test": {
+            "n_fibers": 16,
+            "n_fibers_nonconstant": 0,
+            "constant_on_all_fibers": true,
+            "nonconstant_examples": []
+          },
+          "separator_agreement": null,
+          "invariance_witness": null,
+          "verdict": {
+            "index": "I_fr",
+            "fiber_constant": true,
+            "horn": 2,
+            "reading": "RELABEL: I = f(v_gap); index-side linearity lemma fires.",
+            "go": false
+          }
+        }
+      },
+      "guard_the_guard": {
+        "relabel_detector_positive_control": {
+          "index": "i_fake_relabel = sum(v_gap)",
+          "must_be": "constant_on_all_fibers",
+          "observed_constant": true,
+          "pass": true
+        },
+        "independence_detector_positive_control": {
+          "index": "i_fake_independent = profile serial id",
+          "must_be": "non-constant (>=1 fiber varies)",
+          "observed_nonconstant_fibers": 16,
+          "pass": true
+        }
+      }
+    }
+  }
+}

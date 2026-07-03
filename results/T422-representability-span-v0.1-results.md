@@ -6,7 +6,8 @@
 > ledger actions pause for Joe. Cross-domain material (Cech cohomology,
 > computational complexity, CRT / quadratic residuosity) is the OBJECT OF STUDY,
 > never evidence for physics or a sibling repo. One-way rule holds (GU adjacency
-> only). Not committed.
+> only). T422 was committed as repo-local recorded-tier work in `2123b68`; it
+> remains non-promotional.
 
 - Spec (frozen first): `tests/T422-representability-span.md`
 - Model: `models/representability_span.py`

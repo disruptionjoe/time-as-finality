@@ -154,7 +154,8 @@ M2's status at *conjecture-with-a-decidable-test*.
 Ranked next-move **#1 (the representability/span theorem, M1+M3)** was taken as an
 exploratory big swing → **T422** (`results/T422-representability-span-v0.1-results.md`,
 recorded-tier, finite-witness ceiling; TESTS.md / CLAIM-LEDGER.md untouched; not
-committed; pauses for Joe). This is a *finite-witness demonstration + argument-sketch
+promotional; committed as repo-local recorded-tier work in `2123b68`; pauses for
+Joe). This is a *finite-witness demonstration + argument-sketch
 + falsifier*, **not** the universal theorem #1 asked for — the honest ceiling was held.
 
 **Outcome: GO (qualified).** The load-bearing thesis survived all four success legs,
@@ -191,8 +192,10 @@ arithmetic independently re-derived in sympy).
 Gour–Spekkens / Coecke–Fritz–Spekkens; plus a live *counter-thesis*, arXiv:2501.15950,
 embedding hardness AS a thermodynamic coordinate). Un-pre-empted: only the finality
 cross-application. **M1/M3 stand as falsifiable and now finite-witness-instantiated;
-M2's "exhibit the operator/game" (next-move #2) remains the open lift.** Single-process
-and steering caveats stand; no claim moves; pauses for Joe.
+M2's "exhibit the operator/game" (next-move #2) remains the open lift.** The prep
+note `explorations/m2-foundation-boundary-dirac-observer-game-2026-07-02.md`
+scopes route A / route B and leaves the actual swing gated for Joe. Single-process
+and steering caveats stand; no claim moves.
 
 ---
 

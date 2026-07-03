@@ -1,0 +1,324 @@
+{
+  "artifact": "T435-quantum-e3-admissible-menu-gate-v0.1",
+  "source_taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md",
+  "source_open_problem": "open-problems/finite-closed-capability-boundary-scope-theorem.md",
+  "purpose": "Make the quantum E3 admissible-menu hinge explicit after the T433 classical C-fragment proof certificate.",
+  "gate_requirements": [
+    "finite quantum regime",
+    "predeclared symmetry/superselection packet",
+    "one shared symmetry rule across the pair",
+    "admissible class A is named",
+    "A1 statistics are equal",
+    "separator is predeclared and capability-separating",
+    "separator does not commute with the symmetry",
+    "no A2 reference/asymmetry resource is admitted",
+    "no hidden case label or post-hoc selector is used"
+  ],
+  "candidate_audits": [
+    {
+      "candidate_id": "z2_phase_pair_a1_no_reference",
+      "description": "Main control: |+> and |-> share the A1 sector-population shadow, but X separates them and is not symmetry-admissible without a reference.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "z2_phase_a1_no_reference",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": true,
+      "residue_label": "E3_STRUCTURAL_SYMMETRY_RELATIVE_TO_A1_NO_REFERENCE",
+      "reason": "The pair is A1-equivalent, the separator is noncommuting, and no reference/asymmetry resource is admitted."
+    },
+    {
+      "candidate_id": "z2_phase_pair_a2_reference",
+      "description": "A2 control: the same pair becomes declared once a reference/asymmetry resource admits X.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "z2_phase_a2_reference",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A2",
+        "reference_resource_admitted": true,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "E0_DECLARED_RELATIVE_TO_A2_REFERENCE_RESOURCE",
+      "reason": "A2 admits the reference/asymmetry resource that recovers the phase datum."
+    },
+    {
+      "candidate_id": "charge_population_visible_control",
+      "description": "A1 already distinguishes charge-sector populations.",
+      "left_state": "charge_0",
+      "right_state": "charge_1",
+      "packet": {
+        "packet_id": "charge_population_visible",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "P",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        1.0,
+        0.0
+      ],
+      "a1_shadow_right": [
+        0.0,
+        1.0
+      ],
+      "a1_statistics_equal": false,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": true,
+      "separator_commutator_norm": 0.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "no_boundary_a1_already_distinguishes",
+      "reason": "A1 symmetry-respecting statistics already distinguish the pair."
+    },
+    {
+      "candidate_id": "classical_full_code_control",
+      "description": "Classical finite-code controls remain T433-style E0 declared, not quantum E3.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "classical_full_code_control",
+        "regime": "classical_finite",
+        "source_kind": "classical_full_code",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "control_not_quantum_e3_regime",
+      "reason": "The candidate is not in the finite quantum symmetry regime."
+    },
+    {
+      "candidate_id": "post_hoc_symmetry_selector",
+      "description": "A symmetry-looking packet selected after the pair is rejected.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "post_hoc_symmetry_selector",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": false,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "not_admitted_post_hoc_symmetry_or_separator",
+      "reason": "The symmetry or separator was not frozen before pair selection."
+    },
+    {
+      "candidate_id": "hidden_label_phase_oracle",
+      "description": "A separator that reads a hidden case label rather than state data.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "hidden_label_phase_oracle",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": true
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "blocked_hidden_label_oracle",
+      "reason": "The separator reads a hidden label rather than the declared quantum state."
+    },
+    {
+      "candidate_id": "no_symmetry_packet",
+      "description": "A noncommuting separator without a frozen symmetry packet.",
+      "left_state": "plus",
+      "right_state": "minus",
+      "packet": {
+        "packet_id": "no_symmetry_packet",
+        "regime": "finite_quantum",
+        "source_kind": "none",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": -1.0,
+      "separator_gap": 2.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": false,
+      "residue_label": "not_admitted_no_predeclared_symmetry",
+      "reason": "No predeclared symmetry/superselection packet is supplied."
+    },
+    {
+      "candidate_id": "symmetric_mixed_state_control",
+      "description": "A coherent state and its dephased mixture are A1-equivalent; the phase capability is again E3-style only relative to A1 without reference.",
+      "left_state": "plus",
+      "right_state": "maximally_mixed",
+      "packet": {
+        "packet_id": "symmetric_mixed_state_control",
+        "regime": "finite_quantum",
+        "source_kind": "predeclared_symmetry_superselection",
+        "declared_before_pair": true,
+        "shared_symmetry_across_pair": true,
+        "generator": "P=diag(1,-1)",
+        "admissible_class": "A1",
+        "reference_resource_admitted": false,
+        "separator_observable": "X",
+        "separator_declared_before_pair": true,
+        "reads_case_id_or_hidden_label": false
+      },
+      "a1_shadow_left": [
+        0.5,
+        0.5
+      ],
+      "a1_shadow_right": [
+        0.5,
+        0.5
+      ],
+      "a1_statistics_equal": true,
+      "separator_expectation_left": 1.0,
+      "separator_expectation_right": 0.0,
+      "separator_gap": 1.0,
+      "separator_commutes_with_symmetry": false,
+      "separator_commutator_norm": 2.0,
+      "admitted_e3_relative_to_a1": true,
+      "residue_label": "E3_STRUCTURAL_SYMMETRY_RELATIVE_TO_A1_NO_REFERENCE",
+      "reason": "The pair is A1-equivalent, the separator is noncommuting, and no reference/asymmetry resource is admitted."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "QUANTUM_E3_A_CLASS_GATE_BUILT_NO_CLAIM_PROMOTION",
+    "main_pair_admitted_e3_relative_to_A1": true,
+    "same_pair_A2_declared": true,
+    "admitted_e3_candidate_ids": [
+      "z2_phase_pair_a1_no_reference",
+      "symmetric_mixed_state_control"
+    ],
+    "reading": "T435 supplies a finite A-class control for the taxonomy: a relative phase datum can be structurally inaccessible to A1 symmetry-respecting menus, while the same datum becomes E0-declared when A2 admits the reference/asymmetry resource. This is a gate shape only, not a physics theorem or claim promotion."
+  },
+  "honest_ceiling": "Recorded-tier taxonomy/admission gate only. This finite parity toy illustrates A1/A2 dependence for a standard symmetry-resource shape; it is not a WAY theorem, not a quantum physics claim, not a GU/TaF adapter, not cross-repo evidence, and not claim-ledger movement.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Future quantum E3 attempts must name A, the symmetry, and the reference-resource policy.",
+    "Do not revive the T421 GU-adjacent adapter as stated.",
+    "Treat T435 as an internal taxonomy control, not as WAY proof or external-facing physics."
+  ]
+}

@@ -268,6 +268,29 @@ is not a universal no-go theorem, not a quantum theorem, not an E3/WAY result,
 not claim-ledger movement, not public-posture movement, and not cross-repo
 evidence.
 
+## Internal support addendum (2026-07-03): T435 quantum E3 A-class gate
+
+T435 creates a finite admissible-menu control for the quantum E3 side:
+`results/T435-quantum-e3-admissible-menu-gate-v0.1-results.md`.
+
+The artifact fixes a predeclared parity/superselection generator
+`P=diag(1,-1)` and separates the admissible classes:
+
+- `A1`: symmetry-respecting operations/observables, no reference/asymmetry resource;
+- `A2`: A1 plus a reference/asymmetry resource that admits relative-phase access.
+
+The main pair `|+><+|` versus `|-><-|` is identical under the A1
+sector-population shadow, while `X` separates the pair and does not commute with
+`P`. The result is therefore E3-style only relative to A1 without a reference
+resource. The same datum is E0-declared relative to A2 once the reference resource
+is admitted.
+
+This records the clean `(Q)` A-class statement named as an internal obligation:
+E3 depends on the declared admissible class `A`, the symmetry, and the
+reference-resource policy. It is not a WAY theorem, not a quantum physics claim,
+not an E3 promotion, not a revival of the T421 GU-adjacent adapter, and not
+cross-repo evidence.
+
 ---
 
 ## Adversarial review outcome (2026-07-02): universal-theorem framing WITHDRAWN

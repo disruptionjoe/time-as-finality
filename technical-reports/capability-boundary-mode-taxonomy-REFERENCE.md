@@ -95,3 +95,22 @@ single-instance physical boundary.
 
 This is support for using the taxonomy internally, not a promoted theorem. It
 does not touch the quantum E3 route or the T421 logged disanalogy.
+
+## Internal support update (2026-07-03): quantum E3 A-class gate
+
+T435 (`results/T435-quantum-e3-admissible-menu-gate-v0.1-results.md`) supplies a
+recorded-tier finite A-class control for the taxonomy's quantum E3 hinge. In a
+two-sector parity/superselection toy with `P=diag(1,-1)`, the states `|+><+|` and
+`|-><-|` share the same A1 symmetry-respecting sector-population shadow, while
+the relative-phase observable `X` separates them and does not commute with `P`.
+
+Verdict: `QUANTUM_E3_A_CLASS_GATE_BUILT_NO_CLAIM_PROMOTION`. Relative to A1
+without a reference/asymmetry resource, the phase datum is recorded as
+`E3_STRUCTURAL_SYMMETRY_RELATIVE_TO_A1_NO_REFERENCE`. The same pair becomes
+`E0_DECLARED_RELATIVE_TO_A2_REFERENCE_RESOURCE` once A2 admits the reference
+resource. Visible A1 controls, classical finite-code controls, post-hoc symmetry
+selectors, missing-symmetry packets, and hidden-label oracles do not pass.
+
+This is a taxonomy/admission gate only. It is not a WAY theorem, not a quantum
+physics claim, not a GU/TaF adapter, not cross-repo evidence, and not a claim
+promotion. T421's logged disanalogy remains closed as stated.

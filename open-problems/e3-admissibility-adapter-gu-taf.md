@@ -119,3 +119,59 @@ Provisional next T-number. **Do not build until Joe greenlights D3.**
 
 No North Star, canon, public-posture, cross-repo-truth, or ledger movement. GU/TI
 remain stress-test input only.
+
+---
+
+## Addendum — swing outcome (2026-07-02): ABANDON to logged disanalogy
+
+A greenlit exploratory swing (T421, recorded-tier) built the adapter and
+adversarially tested it. **Outcome: the typed adapter does NOT type-check as a
+functor; the `no-functor` kill fired.** Recorded as a **logged disanalogy** —
+informative, not a null result. Artifacts: `models/e3_admissibility_adapter.py`,
+`tests/test_e3_admissibility_adapter.py` (27 passed, toy-only),
+`results/T421-e3-admissibility-adapter-v0.1-results.md`, probes in `_local/`.
+TESTS.md and CLAIM-LEDGER.md untouched; no claim promotion; not committed.
+
+**What fired.** The `no-functor` / ABANDON criterion, on four independently
+reproduced cracks: (1) the `VerdictFunctor` Protocol type-check is vacuous
+(`isinstance` checks method names only — a class returning a string/int passes);
+(2) on **500/500** menus from the *legitimate* observable class (K-pseudo-
+Hermitian, `A† = KAK`) the two functors **disagree** — agreement holds only at
+2–3 engineered toy points; (3) the "provenance-disjoint" TaF functor is in fact
+fed the ghost-parity `P`-eigenlines as its datum (physics-loaded input mislabeled
+disjoint); (4) the toy's decisive grading-breaker `Z = diag(1,−1)` is **not**
+K-pseudo-Hermitian (`KZK = −Z ≠ Z†`), so the "single observable-algebra move"
+silently swaps the fixed Krein metric `K` for the identity — the ambient is not
+fixed across the arrow.
+
+**What survived (the salvage).** (a) The **one-way rule held cleanly** — GU/
+pseudo-Hermitian physics is never load-bearing for a TaF verdict (poisoning
+probes confirm `F_TaF` is invariant under mutating `K_FORM` and the metric
+machinery); the build is import-free in the strong sense. (b) **Recoverability is
+a genuinely distinct predicate** from Mostafazadeh metric-selection (400/400
+disagreement on random self-adjoint menus), so this is *not* a pure reduction of
+TaF to physics either — the pure-reduction kill was only PARTIAL. (c) The
+**kinematic ceiling was honored** — no dynamical overreach; the dynamical
+identity stays correctly gated on GU's unbuilt source action (`[P_ghost, S] = 0`)
+and a TaF dynamics, which neither repo owns.
+
+**The disanalogy (why the two E3s differ).** Physics metric-selection tracks
+whether the observable *family pins a definite metric* — a Schur/commutant fact
+about the algebra. TaF admissibility tracks whether an operational *datum is
+reachable* — a fact about the algebra's *action on a specific line*. These
+coincide only when the datum is aligned to the grading and the ambient metric is
+the one the family pins; generically they diverge. The prior-art pass (PARTIAL)
+notes the general operational↔superselection↔resource-theory connection is
+already prior-stated (Bartlett–Rudolph–Spekkens RMP 79, 555; Mostafazadeh), so
+the genuinely-new margin was only the Krein specialization + cross-repo packaging
+— which is exactly what broke.
+
+**Status of this open problem.** The specific `⟨M_R⟩ → metric/grading` vs
+`⟨M_R⟩ → declared/forced` adapter is **refused as a functor** and closed to a
+logged disanalogy. It does not reopen as stated. Any future revival must (i)
+restrict `Obs` to genuinely legitimate K-pseudo-Hermitian menus, (ii) replace the
+vacuous Protocol with a real typed check on codomains, (iii) not source the TaF
+datum from the ghost-parity eigenstructure, and (iv) confront the 500/500
+divergence head-on — a redesign that, on current evidence, would reveal the
+disanalogy rather than repair it. The tri-repo interface-signature contract now
+has one honestly-refuted candidate.

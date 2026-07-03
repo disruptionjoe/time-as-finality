@@ -173,3 +173,31 @@ cycle. It must declare and defend family-level period hardness, change the agent
 public transition knowledge, leave the closed public-permutation regime, or demote
 the temporal story to T417's static E2 boundary. No claim promotion; ledger and the
 redesign/abandon decision still pause for Joe.
+
+---
+
+## Admission-gate outcome - 2026-07-03 (T438 v0.1)
+
+T438 still does **not** take the redesign/abandon decision. It converts T420's
+post-redesign rule into a reusable E2 packet classifier:
+`results/T438-e2-period-hardness-admission-gate-v0.1-results.md`; spec
+`tests/T438-e2-period-hardness-admission-gate.md`; model
+`models/e2_period_hardness_admission_gate.py`.
+
+**Gate:** future D2 work is admitted only as a predeclared family-level
+period-hardness redesign packet. It must name the family, security parameter,
+closed public-permutation regime, fixed public transition, period/reversal
+problem, named hardness assumption or theorem target, and predeclared reduction
+or proof obligation.
+
+The gate rejects finite public cycles, bounded non-recovery without a family
+assumption, point-inversion-only static relabels, single-instance hard-theorem
+claims, thermodynamic/E1 packets, Brown-Susskind-style symmetric complexity growth
+packets, and post-hoc or hidden-selector packets. Changed-public-transition and
+open/nonpermutation ideas are routed to a separate spec rather than admitted as
+closed-public-permutation D2.
+
+**Consequence for any later D2 continuation:** first supply the admitted
+period-hardness packet fields. If that packet cannot be supplied, demote the
+temporal story to T417's static E2 boundary. No claim promotion; ledger and the
+redesign/abandon decision still pause for Joe.

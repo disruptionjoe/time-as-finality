@@ -153,3 +153,21 @@ paper, claim-ledger movement, real absolute E3, D2 redesign/abandon, T421 reviva
 GU/TaF adapter movement, or cross-repo support. Use the taxonomy internally for
 classification and routing only unless Joe authorizes a separate promotion or
 external posture decision.
+
+## Internal support update (2026-07-03): E2 period-hardness admission gate
+
+T438 (`results/T438-e2-period-hardness-admission-gate-v0.1-results.md`) applies
+the taxonomy internally to the D2/E2 computational-finality lane after T419/T420.
+
+Verdict: `E2_PERIOD_HARDNESS_ADMISSION_GATE_BUILT_NO_D2_DECISION`. The gate admits
+only a predeclared family-level period-hardness packet as a future E2 redesign
+target. It rejects finite public cycles, bounded non-recovery, point-inversion-only
+static relabels, thermodynamic/E1 packets, Brown-Susskind complexity-growth
+packets, single-instance claims, and post-hoc selectors. Packets that change public
+transition knowledge or leave the closed public-permutation regime require a
+separate spec.
+
+This is routing support for the internal taxonomy, not D2 progress at claim level.
+It does not redesign or abandon D2, prove a computational arrow, prove
+cryptographic hardness, make a physics claim, update the claim ledger, or authorize
+public posture.

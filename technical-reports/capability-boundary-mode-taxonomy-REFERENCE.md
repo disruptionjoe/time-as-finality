@@ -135,3 +135,21 @@ status. A real absolute E3 artifact must bring an independently typed exact no-g
 witness that survives the resource-lift audit. T436 is not a WAY theorem, not a
 quantum physics claim, not a GU/TaF adapter, not cross-repo evidence, and not a
 claim promotion.
+
+## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
+
+T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits
+the repaired taxonomy packet against the adversarial-review checklist after T433,
+T435, and T436.
+
+Verdict: `REPAIRED_TAXONOMY_INTERNAL_MAP_SURVIVES_HOSTILE_REVIEW_NO_PROMOTION`.
+The repair packet passes as an internal mode classifier: the universal no-go stays
+withdrawn; prior art is recorded as low-novelty context; the classical C-fragment
+has a constructive proof certificate; and the quantum E3 side is guarded by A-class
+and A2 resource-lift reporting.
+
+The gate keeps promotion blocked. It does not authorize a public hard-theorem
+paper, claim-ledger movement, real absolute E3, D2 redesign/abandon, T421 revival,
+GU/TaF adapter movement, or cross-repo support. Use the taxonomy internally for
+classification and routing only unless Joe authorizes a separate promotion or
+external posture decision.

@@ -205,9 +205,12 @@ are known, and the E1 backbone in particular is Kadanoff/Butterfield/Landsman. N
 
 Internal establishment remains the solo ceiling worth driving to (survive the repo's
 own hostile review; reproducible from the tree); external standing is available but
-never a prerequisite. Remaining internal obligations: verify the prior-art
-citations; a rigorous (C) proof; a clean (Q) statement of E3 with the admissible-menu
-`A` fixed; then an internal hostile review of the *repaired* claims.
+never a prerequisite. The repo-local repair packet now has recorded-tier support
+for prior-art verification, the classical (C) proof certificate, the quantum (Q)
+A-class statement, the A2 resource-lift guardrail, and the internal hostile review
+of the repaired claims. Remaining obligations are separate gates: no public
+hard-theorem posture without Joe, no absolute E3 without an independently typed
+exact no-go witness, and no D2 redesign/abandon decision from this taxonomy repair.
 
 No North Star, canon, public-posture, cross-repo, or ledger movement. GU/TI material
 remains stress-test input only. Every promotion decision pauses for Joe.
@@ -311,6 +314,21 @@ resource-lift status, and separately justify any absolute no-go claim with an
 independently typed exact witness. T436 is not a WAY theorem, not a quantum
 physics claim, not an E3 promotion, not a revival of T421, and not cross-repo
 evidence.
+
+## Internal support addendum (2026-07-03): T437 repaired-taxonomy hostile review
+
+T437 records the repo-local hostile-review gate over the repaired packet:
+`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`.
+
+Verdict: `REPAIRED_TAXONOMY_INTERNAL_MAP_SURVIVES_HOSTILE_REVIEW_NO_PROMOTION`.
+The universal no-go remains withdrawn, prior art is treated as low-novelty local
+context, T433 supplies the classical C-fragment proof certificate, and T435/T436
+make the quantum side A-class and resource-lift guarded.
+
+The result clears the taxonomy only for internal use as a mode classifier and
+progress-routing map. It explicitly blocks public hard-theorem posture, claim
+promotion, real absolute E3, D2 redesign/abandon, T421 revival, GU/TaF adapter
+movement, and cross-repo support.
 
 ---
 

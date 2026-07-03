@@ -1,0 +1,1573 @@
+{
+  "artifact": "T428-m2-nonquota-aggregation-family-gate-v0.1",
+  "sizes": [
+    3,
+    4,
+    5
+  ],
+  "state_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "baseline": {
+    "name": "strict_conclusion_majority_baseline",
+    "purpose": "Regression for the inherited T423/T425 issue-wise conclusion lane.",
+    "size_reports": {
+      "3": {
+        "n": 3,
+        "n_profiles": 64,
+        "separator_profiles": 6,
+        "absorbed_profiles": 0,
+        "verdict_distribution": {
+          "SURVIVES-R1": 6,
+          "no-separation": 58
+        },
+        "min_sep_size_distribution": {
+          "none": 58,
+          "3": 6
+        },
+        "sample_separator": {
+          "serial": 27,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "grand_gap": 1,
+          "min_sep_size": 3
+        }
+      },
+      "4": {
+        "n": 4,
+        "n_profiles": 256,
+        "separator_profiles": 0,
+        "absorbed_profiles": 60,
+        "verdict_distribution": {
+          "ABSORBED": 60,
+          "no-separation": 196
+        },
+        "min_sep_size_distribution": {
+          "none": 196,
+          "3": 60
+        },
+        "sample_separator": null
+      },
+      "5": {
+        "n": 5,
+        "n_profiles": 1024,
+        "separator_profiles": 0,
+        "absorbed_profiles": 390,
+        "verdict_distribution": {
+          "ABSORBED": 390,
+          "no-separation": 634
+        },
+        "min_sep_size_distribution": {
+          "none": 634,
+          "3": 390
+        },
+        "sample_separator": null
+      }
+    }
+  },
+  "selector_family_reports": [
+    {
+      "family": {
+        "name": "plurality_reject",
+        "selector": "plurality",
+        "tie_completion": "reject",
+        "label": "full-judgment plurality, tie reject",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 6,
+          "nonzero_gap_profiles": 6,
+          "absorbed_profiles": 0,
+          "verdict_distribution": {
+            "SURVIVES-R1": 6,
+            "no-separation": 58
+          },
+          "min_sep_size_distribution": {
+            "none": 58,
+            "3": 6
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1), (1, 0))": 6,
+            "((0, 0), (0, 1), (1, 1))": 6,
+            "((0, 0), (1, 0), (1, 1))": 6,
+            "((0, 0),)": 10,
+            "((0, 1), (1, 0), (1, 1))": 6,
+            "((0, 1),)": 10,
+            "((1, 0),)": 10,
+            "((1, 1),)": 10
+          },
+          "grand_accept_distribution": {
+            "0": 54,
+            "1": 10
+          },
+          "sample_separator": {
+            "serial": 27,
+            "profile": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 1,
+            "grand_gap": 1,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              1,
+              2,
+              3
+            ]
+          },
+          "sample_absorbed": null
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 24,
+          "nonzero_gap_profiles": 84,
+          "absorbed_profiles": 60,
+          "verdict_distribution": {
+            "ABSORBED": 60,
+            "SURVIVES-R1": 24,
+            "no-separation": 172
+          },
+          "min_sep_size_distribution": {
+            "none": 172,
+            "3": 60,
+            "4": 24
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 6,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 24,
+            "((0, 0), (1, 0))": 6,
+            "((0, 0), (1, 1))": 6,
+            "((0, 0),)": 49,
+            "((0, 1), (1, 0))": 6,
+            "((0, 1), (1, 1))": 6,
+            "((0, 1),)": 49,
+            "((1, 0), (1, 1))": 6,
+            "((1, 0),)": 49,
+            "((1, 1),)": 49
+          },
+          "grand_accept_distribution": {
+            "0": 207,
+            "1": 49
+          },
+          "sample_separator": {
+            "serial": 31,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              1,
+              1,
+              0,
+              2
+            ],
+            "grand_winner_set": [
+              [
+                1,
+                1
+              ]
+            ],
+            "selector_accepts_grand": 1,
+            "premise_accepts_grand": 0,
+            "grand_gap": -1,
+            "min_sep_size": 4,
+            "min_sep_coalition": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "sample_absorbed": {
+            "serial": 27,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 550,
+          "absorbed_profiles": 550,
+          "verdict_distribution": {
+            "ABSORBED": 550,
+            "no-separation": 474
+          },
+          "min_sep_size_distribution": {
+            "none": 474,
+            "3": 390,
+            "4": 160
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 60,
+            "((0, 0), (1, 0))": 60,
+            "((0, 0), (1, 1))": 60,
+            "((0, 0),)": 166,
+            "((0, 1), (1, 0))": 60,
+            "((0, 1), (1, 1))": 60,
+            "((0, 1),)": 166,
+            "((1, 0), (1, 1))": 60,
+            "((1, 0),)": 166,
+            "((1, 1),)": 166
+          },
+          "grand_accept_distribution": {
+            "0": 858,
+            "1": 166
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 27,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              2,
+              1,
+              1,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "family": {
+        "name": "plurality_accept",
+        "selector": "plurality",
+        "tie_completion": "accept",
+        "label": "full-judgment plurality, tie accept",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 36,
+          "absorbed_profiles": 36,
+          "verdict_distribution": {
+            "ABSORBED": 36,
+            "no-separation": 28
+          },
+          "min_sep_size_distribution": {
+            "none": 28,
+            "2": 36
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1), (1, 0))": 6,
+            "((0, 0), (0, 1), (1, 1))": 6,
+            "((0, 0), (1, 0), (1, 1))": 6,
+            "((0, 0),)": 10,
+            "((0, 1), (1, 0), (1, 1))": 6,
+            "((0, 1),)": 10,
+            "((1, 0),)": 10,
+            "((1, 1),)": 10
+          },
+          "grand_accept_distribution": {
+            "0": 36,
+            "1": 28
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              3
+            ]
+          }
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 174,
+          "absorbed_profiles": 174,
+          "verdict_distribution": {
+            "ABSORBED": 174,
+            "no-separation": 82
+          },
+          "min_sep_size_distribution": {
+            "none": 82,
+            "2": 174
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 6,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 24,
+            "((0, 0), (1, 0))": 6,
+            "((0, 0), (1, 1))": 6,
+            "((0, 0),)": 49,
+            "((0, 1), (1, 0))": 6,
+            "((0, 1), (1, 1))": 6,
+            "((0, 1),)": 49,
+            "((1, 0), (1, 1))": 6,
+            "((1, 0),)": 49,
+            "((1, 1),)": 49
+          },
+          "grand_accept_distribution": {
+            "0": 165,
+            "1": 91
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              3,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              4
+            ]
+          }
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 780,
+          "absorbed_profiles": 780,
+          "verdict_distribution": {
+            "ABSORBED": 780,
+            "no-separation": 244
+          },
+          "min_sep_size_distribution": {
+            "none": 244,
+            "2": 780
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 60,
+            "((0, 0), (1, 0))": 60,
+            "((0, 0), (1, 1))": 60,
+            "((0, 0),)": 166,
+            "((0, 1), (1, 0))": 60,
+            "((0, 1), (1, 1))": 60,
+            "((0, 1),)": 166,
+            "((1, 0), (1, 1))": 60,
+            "((1, 0),)": 166,
+            "((1, 1),)": 166
+          },
+          "grand_accept_distribution": {
+            "0": 678,
+            "1": 346
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              4,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "family": {
+        "name": "kemeny_reject",
+        "selector": "kemeny_hamming",
+        "tie_completion": "reject",
+        "label": "Kemeny/Hamming median, tie reject",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 0,
+          "absorbed_profiles": 0,
+          "verdict_distribution": {
+            "no-separation": 64
+          },
+          "min_sep_size_distribution": {
+            "none": 64
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0),)": 16,
+            "((0, 1),)": 16,
+            "((1, 0),)": 16,
+            "((1, 1),)": 16
+          },
+          "grand_accept_distribution": {
+            "0": 48,
+            "1": 16
+          },
+          "sample_separator": null,
+          "sample_absorbed": null
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 0,
+          "absorbed_profiles": 0,
+          "verdict_distribution": {
+            "no-separation": 256
+          },
+          "min_sep_size_distribution": {
+            "none": 256
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 30,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 36,
+            "((0, 0), (1, 0))": 30,
+            "((0, 0),)": 25,
+            "((0, 1), (1, 1))": 30,
+            "((0, 1),)": 25,
+            "((1, 0), (1, 1))": 30,
+            "((1, 0),)": 25,
+            "((1, 1),)": 25
+          },
+          "grand_accept_distribution": {
+            "0": 231,
+            "1": 25
+          },
+          "sample_separator": null,
+          "sample_absorbed": null
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 0,
+          "absorbed_profiles": 0,
+          "verdict_distribution": {
+            "no-separation": 1024
+          },
+          "min_sep_size_distribution": {
+            "none": 1024
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0),)": 256,
+            "((0, 1),)": 256,
+            "((1, 0),)": 256,
+            "((1, 1),)": 256
+          },
+          "grand_accept_distribution": {
+            "0": 768,
+            "1": 256
+          },
+          "sample_separator": null,
+          "sample_absorbed": null
+        }
+      }
+    },
+    {
+      "family": {
+        "name": "kemeny_accept",
+        "selector": "kemeny_hamming",
+        "tie_completion": "accept",
+        "label": "Kemeny/Hamming median, tie accept",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 48,
+          "absorbed_profiles": 48,
+          "verdict_distribution": {
+            "ABSORBED": 48,
+            "no-separation": 16
+          },
+          "min_sep_size_distribution": {
+            "none": 16,
+            "2": 48
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0),)": 16,
+            "((0, 1),)": 16,
+            "((1, 0),)": 16,
+            "((1, 1),)": 16
+          },
+          "grand_accept_distribution": {
+            "0": 48,
+            "1": 16
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              2,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              3
+            ]
+          }
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 224,
+          "absorbed_profiles": 224,
+          "verdict_distribution": {
+            "ABSORBED": 224,
+            "no-separation": 32
+          },
+          "min_sep_size_distribution": {
+            "none": 32,
+            "2": 224
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 30,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 36,
+            "((0, 0), (1, 0))": 30,
+            "((0, 0),)": 25,
+            "((0, 1), (1, 1))": 30,
+            "((0, 1),)": 25,
+            "((1, 0), (1, 1))": 30,
+            "((1, 0),)": 25,
+            "((1, 1),)": 25
+          },
+          "grand_accept_distribution": {
+            "0": 135,
+            "1": 121
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              3,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              4
+            ]
+          }
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 960,
+          "absorbed_profiles": 960,
+          "verdict_distribution": {
+            "ABSORBED": 960,
+            "no-separation": 64
+          },
+          "min_sep_size_distribution": {
+            "none": 64,
+            "2": 960
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0),)": 256,
+            "((0, 1),)": 256,
+            "((1, 0),)": 256,
+            "((1, 1),)": 256
+          },
+          "grand_accept_distribution": {
+            "0": 768,
+            "1": 256
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 3,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              4,
+              0,
+              0,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              1,
+              5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "family": {
+        "name": "minimax_reject",
+        "selector": "minimax_hamming",
+        "tie_completion": "reject",
+        "label": "minimax Hamming selector, tie reject",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 9,
+          "nonzero_gap_profiles": 9,
+          "absorbed_profiles": 0,
+          "verdict_distribution": {
+            "SURVIVES-R1": 9,
+            "no-separation": 55
+          },
+          "min_sep_size_distribution": {
+            "none": 55,
+            "3": 9
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 6,
+            "((0, 0), (1, 0))": 6,
+            "((0, 0), (1, 1))": 6,
+            "((0, 0),)": 7,
+            "((0, 1), (1, 0))": 6,
+            "((0, 1), (1, 1))": 6,
+            "((0, 1),)": 7,
+            "((1, 0), (1, 1))": 6,
+            "((1, 0),)": 7,
+            "((1, 1),)": 7
+          },
+          "grand_accept_distribution": {
+            "0": 57,
+            "1": 7
+          },
+          "sample_separator": {
+            "serial": 15,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              1,
+              0,
+              0,
+              2
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 1,
+            "grand_gap": 1,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              1,
+              2,
+              3
+            ]
+          },
+          "sample_absorbed": null
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 24,
+          "nonzero_gap_profiles": 90,
+          "absorbed_profiles": 66,
+          "verdict_distribution": {
+            "ABSORBED": 66,
+            "SURVIVES-R1": 24,
+            "no-separation": 166
+          },
+          "min_sep_size_distribution": {
+            "none": 166,
+            "3": 66,
+            "4": 24
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 14,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 24,
+            "((0, 0), (1, 0))": 14,
+            "((0, 0), (1, 1))": 14,
+            "((0, 0),)": 37,
+            "((0, 1), (1, 0))": 14,
+            "((0, 1), (1, 1))": 14,
+            "((0, 1),)": 37,
+            "((1, 0), (1, 1))": 14,
+            "((1, 0),)": 37,
+            "((1, 1),)": 37
+          },
+          "grand_accept_distribution": {
+            "0": 219,
+            "1": 37
+          },
+          "sample_separator": {
+            "serial": 91,
+            "profile": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              0,
+              2,
+              1,
+              1
+            ],
+            "grand_winner_set": [
+              [
+                1,
+                1
+              ]
+            ],
+            "selector_accepts_grand": 1,
+            "premise_accepts_grand": 0,
+            "grand_gap": -1,
+            "min_sep_size": 4,
+            "min_sep_coalition": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "sample_absorbed": {
+            "serial": 15,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              2,
+              0,
+              0,
+              2
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 565,
+          "absorbed_profiles": 565,
+          "verdict_distribution": {
+            "ABSORBED": 565,
+            "no-separation": 459
+          },
+          "min_sep_size_distribution": {
+            "none": 459,
+            "3": 375,
+            "4": 190
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 30,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 240,
+            "((0, 0), (1, 0))": 30,
+            "((0, 0), (1, 1))": 30,
+            "((0, 0),)": 151,
+            "((0, 1), (1, 0))": 30,
+            "((0, 1), (1, 1))": 30,
+            "((0, 1),)": 151,
+            "((1, 0), (1, 1))": 30,
+            "((1, 0),)": 151,
+            "((1, 1),)": 151
+          },
+          "grand_accept_distribution": {
+            "0": 873,
+            "1": 151
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 15,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              3,
+              0,
+              0,
+              2
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              1,
+              4,
+              5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "family": {
+        "name": "minimax_accept",
+        "selector": "minimax_hamming",
+        "tie_completion": "accept",
+        "label": "minimax Hamming selector, tie accept",
+        "family_class": "full_judgment_selector",
+        "issue_quota_rule": false
+      },
+      "size_reports": {
+        "3": {
+          "n": 3,
+          "n_profiles": 64,
+          "separator_profiles": 3,
+          "nonzero_gap_profiles": 45,
+          "absorbed_profiles": 42,
+          "verdict_distribution": {
+            "ABSORBED": 42,
+            "SURVIVES-R1": 3,
+            "no-separation": 19
+          },
+          "min_sep_size_distribution": {
+            "none": 19,
+            "2": 42,
+            "3": 3
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 6,
+            "((0, 0), (1, 0))": 6,
+            "((0, 0), (1, 1))": 6,
+            "((0, 0),)": 7,
+            "((0, 1), (1, 0))": 6,
+            "((0, 1), (1, 1))": 6,
+            "((0, 1),)": 7,
+            "((1, 0), (1, 1))": 6,
+            "((1, 0),)": 7,
+            "((1, 1),)": 7
+          },
+          "grand_accept_distribution": {
+            "0": 39,
+            "1": 25
+          },
+          "sample_separator": {
+            "serial": 15,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "full_support_counts": [
+              1,
+              0,
+              0,
+              2
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 1,
+            "grand_gap": 1,
+            "min_sep_size": 3,
+            "min_sep_coalition": [
+              1,
+              2,
+              3
+            ]
+          },
+          "sample_absorbed": {
+            "serial": 6,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "full_support_counts": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              2,
+              3
+            ]
+          }
+        },
+        "4": {
+          "n": 4,
+          "n_profiles": 256,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 220,
+          "absorbed_profiles": 220,
+          "verdict_distribution": {
+            "ABSORBED": 220,
+            "no-separation": 36
+          },
+          "min_sep_size_distribution": {
+            "none": 36,
+            "2": 210,
+            "3": 10
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 14,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 24,
+            "((0, 0), (1, 0))": 14,
+            "((0, 0), (1, 1))": 14,
+            "((0, 0),)": 37,
+            "((0, 1), (1, 0))": 14,
+            "((0, 1), (1, 1))": 14,
+            "((0, 1),)": 37,
+            "((1, 0), (1, 1))": 14,
+            "((1, 0),)": 37,
+            "((1, 1),)": 37
+          },
+          "grand_accept_distribution": {
+            "0": 153,
+            "1": 103
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 6,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "full_support_counts": [
+              2,
+              1,
+              1,
+              0
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              3,
+              4
+            ]
+          }
+        },
+        "5": {
+          "n": 5,
+          "n_profiles": 1024,
+          "separator_profiles": 0,
+          "nonzero_gap_profiles": 955,
+          "absorbed_profiles": 955,
+          "verdict_distribution": {
+            "ABSORBED": 955,
+            "no-separation": 69
+          },
+          "min_sep_size_distribution": {
+            "none": 69,
+            "2": 930,
+            "3": 25
+          },
+          "support_fiber_mixed_separator_count": 0,
+          "support_fiber_mixed_examples": [],
+          "grand_winner_distribution": {
+            "((0, 0), (0, 1))": 30,
+            "((0, 0), (0, 1), (1, 0), (1, 1))": 240,
+            "((0, 0), (1, 0))": 30,
+            "((0, 0), (1, 1))": 30,
+            "((0, 0),)": 151,
+            "((0, 1), (1, 0))": 30,
+            "((0, 1), (1, 1))": 30,
+            "((0, 1),)": 151,
+            "((1, 0), (1, 1))": 30,
+            "((1, 0),)": 151,
+            "((1, 1),)": 151
+          },
+          "grand_accept_distribution": {
+            "0": 543,
+            "1": 481
+          },
+          "sample_separator": null,
+          "sample_absorbed": {
+            "serial": 6,
+            "profile": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "full_support_counts": [
+              3,
+              1,
+              1,
+              0
+            ],
+            "grand_winner_set": [
+              [
+                0,
+                0
+              ]
+            ],
+            "selector_accepts_grand": 0,
+            "premise_accepts_grand": 0,
+            "grand_gap": 0,
+            "min_sep_size": 2,
+            "min_sep_coalition": [
+              4,
+              5
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "REDESIGN_NONQUOTA_SELECTOR_COMPLETION",
+    "stable_larger_n_families": [],
+    "larger_positive_cells": [
+      {
+        "family": "plurality_reject",
+        "n": 4,
+        "separator_profiles": 24,
+        "support_fiber_mixed_separator_count": 0,
+        "min_sep_size_distribution": {
+          "none": 172,
+          "3": 60,
+          "4": 24
+        }
+      },
+      {
+        "family": "minimax_reject",
+        "n": 4,
+        "separator_profiles": 24,
+        "support_fiber_mixed_separator_count": 0,
+        "min_sep_size_distribution": {
+          "none": 166,
+          "3": 66,
+          "4": 24
+        }
+      }
+    ],
+    "support_leak_clean": true,
+    "reading": "The tested nonquota selectors do not repair M2 canonicity. Conservative plurality/minimax tie completion creates n=4 positives, but no tested selector has positives at both n=4 and n=5. Every selector separator is constant on full-support fibers, so the result is selector/full-support completion rather than an independent finality channel.",
+    "next_gate": "Move to a genuinely different separator object, or predeclare a stronger aggregation family with a no-selector-leakage control."
+  }
+}

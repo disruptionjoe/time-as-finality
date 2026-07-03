@@ -1,0 +1,199 @@
+{
+  "E1_winding": {
+    "asymptotic_proxy_note": "E1's real forcing is a LIMIT/divergence (recovery cost diverges only in a family). The finite winding w=1 is an explicit PROXY of that local-to-global STRUCTURE (a global section with no local witness); refinement-stability n->2n is the finite E1-flavor signature.",
+    "class": {
+      "coefficient_group": "Z",
+      "h0": 1,
+      "h1_trivial": false,
+      "loop_sum": 1,
+      "mod": 0,
+      "n_independent_cycles": 1,
+      "winding": 1
+    },
+    "class_nonzero": true,
+    "coefficient_group": "Z",
+    "iso_invariant": true,
+    "mode": "E1_asymptotic_limit_forcing",
+    "n_arcs": 4,
+    "no_local_witness": true,
+    "proper_subcover_scan": {
+      "every_proper_subcover_trivial": true,
+      "proper_subcovers_checked": 14,
+      "some_proper_subset_witnesses_class": false
+    },
+    "refined_winding": 1,
+    "refinement_stable": true,
+    "winding": 1
+  },
+  "E2_hardness": {
+    "P1_N_coordinates": {
+      "feasible_local_predicate": "Jacobi(x, N)",
+      "jacobi_A": 1,
+      "jacobi_B": 1,
+      "local_separates": false,
+      "verdict": "FORCED"
+    },
+    "P2_CRT_coordinates": {
+      "feasible_local_predicate": "per-factor Legendre (x/p),(x/q)",
+      "legendre_A": [
+        1,
+        1
+      ],
+      "legendre_B": [
+        -1,
+        -1
+      ],
+      "local_separates": true,
+      "verdict": "DECLARED"
+    },
+    "crt_isomorphism": {
+      "bijective": true,
+      "is_genuine_ring_iso": true,
+      "map": "phi(x) = (x mod p, x mod q)  [canonical CRT ring iso]",
+      "preserves_QR_on_units": true,
+      "preserves_addition": true,
+      "preserves_multiplication": true
+    },
+    "datum": {
+      "A_is_QR": true,
+      "B_is_QR": false,
+      "datum_differs": true
+    },
+    "deformation_scan": {
+      "family": [
+        77,
+        79,
+        91,
+        143,
+        899
+      ],
+      "forcing_indicator": {
+        "77": 1,
+        "79": 0,
+        "91": 1,
+        "143": 1,
+        "899": 1
+      },
+      "forcing_not_conserved": true,
+      "note": "forcing jumps 0/1 with primality: no ker/coker exchange, no index conservation."
+    },
+    "mode": "E2_computational_hardness_forcing",
+    "object": "units mod N=77=7*11, QR 2-coloring; x_A=58 (QR), x_B=24 (non-QR, Jacobi +1)",
+    "step1_positive_control": {
+      "P1_coloring_cech": {
+        "h0": 2,
+        "h1": 0,
+        "n_color_classes": 2
+      },
+      "P2_coloring_cech": {
+        "h0": 2,
+        "h1": 0,
+        "n_color_classes": 2
+      },
+      "cech_invariants_equal": true,
+      "note": "H^0=2 (two color classes), H^1=0 under BOTH presentations. The object HAS presentation-independent Cech invariants; it is not pathological. What fails to be an invariant is specifically the HARDNESS verdict."
+    },
+    "two_horn_dilemma": "Two-horn dilemma. Either CRT is a FREE morphism (then a functorial invariant must assign phi-related presentations EQUAL value; but the hardness verdict differs, so hardness is not functorial) OR CRT is declared NOT a morphism (then hardness is admitted to depend on the presentation). Both horns ARE the conclusion: E2 hardness is represented by no Cech / functorial class.",
+    "verdict_flips_across_iso": true
+  },
+  "E3_twist": {
+    "class": {
+      "coefficient_group": "Z/2",
+      "h0": 1,
+      "h1_trivial": false,
+      "loop_sum": 1,
+      "mod": 2,
+      "n_independent_cycles": 1,
+      "winding": 1
+    },
+    "class_nonzero": true,
+    "coefficient_group": "Z/2",
+    "iso_invariant": true,
+    "mode": "E3_structural_symmetry_forcing",
+    "monodromy": 1,
+    "n_arcs": 4,
+    "no_local_witness": true,
+    "proper_subcover_scan": {
+      "every_proper_subcover_trivial": true,
+      "proper_subcovers_checked": 14,
+      "some_proper_subset_witnesses_class": false
+    },
+    "refined_winding": 1,
+    "refinement_stable": true,
+    "same_engine_as_E1": "e1_winding and e3_twist call the identical cech_h1 function; the ONLY difference is mod=0 (Z) vs mod=2 (Z/2). This is the retro-prediction of T421's Z-vs-Z/2 bifurcation: same functor, different coefficient object.",
+    "t412_crosscheck": {
+      "full_joint_separates": 1.0,
+      "matches_T412": true,
+      "max_proper_subset_witness": 0.0
+    }
+  },
+  "artifact": "T422-representability-span-v0.1",
+  "claim_ledger_update": "none; no claim promotion",
+  "falsifier": {
+    "candidate_that_is_both": [],
+    "candidates": [
+      {
+        "name": "spectral gap of the C_n cover transition operator",
+        "phi_invariant": true,
+        "tracks_hardness": false,
+        "why": "purely topological; identical for the easy prime object and the hard pq object"
+      },
+      {
+        "name": "minimal-circuit-size proxy to decide QR-ness",
+        "phi_invariant": false,
+        "tracks_hardness": true,
+        "why": "large in N-coords, small in CRT-coords -> phi-discontinuous"
+      },
+      {
+        "name": "family cost-growth index (trial-division steps growth)",
+        "phi_invariant": false,
+        "tracks_hardness": true,
+        "why": "tracks the QRA gap but is not preserved by the CRT iso"
+      },
+      {
+        "name": "description-length proxy (bit-length of N)",
+        "phi_invariant": true,
+        "tracks_hardness": false,
+        "why": "invariant but blind: a large easy prime has the same bit-length as a hard product"
+      },
+      {
+        "name": "Cech winding of the coloring cover",
+        "phi_invariant": true,
+        "tracks_hardness": false,
+        "why": "genuine functorial invariant but identically 0 -> tracks nothing"
+      }
+    ],
+    "falsifier_statement": "Exhibit a single quantity computed from (x, N) that is BOTH CRT/refinement-invariant AND tracks the QRA hardness gap (FORCED != DECLARED). Such a quantity would be a functorial / homotopy representative for E2 -> the span collapses (K1).",
+    "falsifier_triggers": false,
+    "verdict": "no candidate is simultaneously phi-invariant and hardness-tracking; the falsifier does NOT trigger"
+  },
+  "honesty_ceiling": "Finite witnesses + colimit-invariance argument + stated falsifier -- NOT a universal theorem. E1 forcing is asymptotic; finite winding is an explicit proxy. The separation lives in the cost-blind category (isos/refinements); a reviewer demanding the poly-time-reduction category declines the category rather than refuting it -- and there the E1/E3 indices are not preserved either. K5 prior art conceded (complexity is not a homotopy/functorial invariant; Immerman-Vardi; Goldwasser-Micali); novelty confined to the finality / forcing-mode cross-application (synthesis-tier).",
+  "kill_legs": {
+    "K1_e2_functorial_invariant_found": false,
+    "K2_e1e3_index_engineered_or_trivial": false,
+    "K3_e2_flip_by_fiat": false,
+    "K4_interconvertibility_exists": false
+  },
+  "monotone": {
+    "argument": "delta is preserved by the free operations (cover refinement, object isomorphism) by the Cech-colimit definition: any quantity that IS a Cech class has delta=0. E1/E3 (delta=0) ARE Cech-representable; E2 hardness (delta=1) is not. Free ops preserve delta, so NO free operation carries an E1/E3 boundary to an E2 boundary or the reverse -- E2 is the categorical obstruction to unification.",
+    "delta_E1": 0,
+    "delta_E2": 1,
+    "delta_E3": 0,
+    "positive_control": {
+      "battery_returns_zero_on_E1E3": true,
+      "note": "if the battery were rigged to eject E2 it would eject E3 too; it does not.",
+      "t412_n_relabels": 48,
+      "t412_relabels_survive": true
+    },
+    "separates_E2_from_E1E3": true,
+    "t110_orbit_lemma_holds": true
+  },
+  "success_legs": {
+    "S1_common_invariant": true,
+    "S2_e2_nonrepresentable": true,
+    "S3_noninterconvertible": true,
+    "S4_falsifier_stated_not_triggered": true
+  },
+  "tier": "recorded / exploratory big-swing (synthesis-tier margin only)",
+  "verdict": "GO"
+}

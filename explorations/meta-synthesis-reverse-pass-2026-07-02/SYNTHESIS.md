@@ -149,6 +149,53 @@ M2's status at *conjecture-with-a-decidable-test*.
    state-delivery network has WBE branching geometry — the decidable route to
    *deriving* observer-boundedness (the North Star gap).
 
+## Addendum 2026-07-02 — Next-move #1 was swung (T422): GO (qualified)
+
+Ranked next-move **#1 (the representability/span theorem, M1+M3)** was taken as an
+exploratory big swing → **T422** (`results/T422-representability-span-v0.1-results.md`,
+recorded-tier, finite-witness ceiling; TESTS.md / CLAIM-LEDGER.md untouched; not
+committed; pauses for Joe). This is a *finite-witness demonstration + argument-sketch
++ falsifier*, **not** the universal theorem #1 asked for — the honest ceiling was held.
+
+**Outcome: GO (qualified).** The load-bearing thesis survived all four success legs,
+14/14 exact/deterministic tests, and six adversarial attacks. **No kill fired** (no E2
+invariant found; no E2↔E1/E3 conversion; core not circular; not fully pre-empted;
+arithmetic independently re-derived in sympy).
+
+- **S1 (E1≅E3 common home):** one coefficient-generic Čech `H¹(C₄;A)=A` engine;
+  E1 (A=ℤ) winding=1, E3 (A=ℤ/2) monodromy=1; all 14 proper subcovers trivialize
+  (genuine no-local-witness), refinement-stable; reproduces T412's ℤ/2 parity.
+- **S2 (E2 non-representable, exhibited not by fiat):** T417 GM object mod 77; the
+  FORCED/DECLARED hardness verdict *flips* across the verified CRT ring iso while the
+  object's genuine Čech invariants (H⁰=2,H¹=0) are *preserved* by it (positive
+  control) — presentation-dependence shown on a demonstrably well-behaved object.
+- **S3 (monotone):** δ(E1)=δ(E3)=0, δ(E2)=1; separates E2.
+
+**Two honest scope corrections the adversarial pass forced (recorded, not buried):**
+1. The blanket "all three non-interconvertible" is too strong — E1→E3 admits a genuine
+   *one-way* free conversion (coefficient reduction ℤ→ℤ/2 carries winding 1 → monodromy
+   1), because the toy builds both from the identical nerve. This corroborates E1~E3
+   (it's inside the pair already unified) and does not touch the load-bearing E2
+   obstruction; but the M1 phrasing should read *"E2 is non-interconvertible with
+   E1/E3"*, not *"all three mutually non-interconvertible."* Correspondingly the
+   "ℤ-vs-ℤ/2 bifurcation" retro-predicting T421 is a coefficient/label realization,
+   not an independently forced structural fork.
+2. The δ separation is **category-relative**, not category-free — E1/E3 get a cost-blind
+   quantity, E2 a cost-sensitive one; there is *no single category* in which E1/E3 are
+   representable and E2 is not (in the cost-blind category E2 also has a φ-invariant
+   representative; in the poly-reduction category E1/E3's indices also fail). This is
+   the residue of confirm-by-construction flagged in this synthesis's own steering
+   caveat, and it caps the result at **finite-witness synthesis tier**, not theorem.
+
+**Prior-art:** the general machinery is pre-empted (Immerman–Vardi / Goldwasser–Micali;
+Gour–Spekkens / Coecke–Fritz–Spekkens; plus a live *counter-thesis*, arXiv:2501.15950,
+embedding hardness AS a thermodynamic coordinate). Un-pre-empted: only the finality
+cross-application. **M1/M3 stand as falsifiable and now finite-witness-instantiated;
+M2's "exhibit the operator/game" (next-move #2) remains the open lift.** Single-process
+and steering caveats stand; no claim moves; pauses for Joe.
+
+---
+
 **Bottom line.** The mode-by-mode swings kept getting pre-empted because the novelty
 was never in the modes — it is in the **stratified structure relating them**: a
 resource theory of forcing in which **E1 and E3 are cohomologically cognate and E2

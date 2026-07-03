@@ -237,3 +237,24 @@ matching and A2 resource/reference-lift audit.
 Only synthetic E1/E3 controls are admitted for future review. This does not
 reopen H7, prove an E1 limit theorem, prove an E3 no-go theorem, prove WAY,
 move the claim ledger, or authorize public posture.
+
+## Status Addendum (2026-07-03): E1 family-limit packet gate
+
+T441 implements the E1 family-limit review gate named by T440:
+`results/T441-e1-family-limit-packet-gate-v0.1-results.md`; spec
+`tests/T441-e1-family-limit-packet-gate.md`; model
+`models/e1_family_limit_packet_gate.py`.
+
+Verdict: `E1_FAMILY_LIMIT_PACKET_GATE_BUILT_NO_PROMOTION`. A future E1 packet
+must now freeze the family and scale parameter, finite approximants,
+approximant-to-limit map, stable task and operation class, fixed observer and
+resource accounting, a predeclared limit invariant auditable on finite
+approximants, convergence/error controls, a negative control, and a recovery
+cost or nonlocality quantity that diverges across the family.
+
+Single-instance ideal locks, finite barriers, finite positive gaps, post-hoc
+limit selectors, family reencoding drift, hidden resource or boundary changes,
+missing approximants, missing invariants, missing controls, bounded cost
+families, and E2/E3 packets do not pass as E1. Only a synthetic full packet is
+admitted as a future review target. This does not reopen H7, prove an E1 limit
+theorem, move the claim ledger, or authorize public posture.

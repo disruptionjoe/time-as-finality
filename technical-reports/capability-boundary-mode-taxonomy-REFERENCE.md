@@ -211,3 +211,22 @@ boundary, reference, allowed-control, and A2 resource-lift audit.
 Only synthetic E1/E3 controls are admitted as future review targets. T440 does
 not promote H7, prove an E1 theorem, prove an E3 theorem, prove WAY, move the
 claim ledger, or authorize public posture.
+
+## Internal support update (2026-07-03): E1 family-limit packet gate
+
+T441 (`results/T441-e1-family-limit-packet-gate-v0.1-results.md`) implements
+the E1 family-limit packet gate required by T440.
+
+Verdict: `E1_FAMILY_LIMIT_PACKET_GATE_BUILT_NO_PROMOTION`. The gate admits only
+a predeclared family-level E1 packet with finite approximants, an
+approximant-to-limit map, stable task and operation class, fixed observer and
+resource accounting, a finite-auditable limit invariant, convergence/error
+controls, a negative control, and a diverging recovery cost or nonlocality
+quantity.
+
+Single-instance idealizations, finite barriers, finite gaps, post-hoc
+selectors, family drift, hidden resources, missing controls, bounded cost
+families, and E2/E3 packets are rejected, absorbed, or routed to the proper
+mode gate. Only a synthetic E1 control is admitted for future review. T441 does
+not promote H7, prove an E1 theorem, prove a thermodynamic arrow, move the
+claim ledger, or authorize public posture.

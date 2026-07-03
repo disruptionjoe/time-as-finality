@@ -208,3 +208,37 @@ is falsifiable, it is un-pre-empted, and it already predicts the exact failures 
 arc produced. Under a rigorous-heterodox standard, that is the real, interesting
 thing this pass found. Single-process ceiling and steering caveat stand; no claim
 moves; pauses for Joe.
+
+---
+
+## ADDENDUM 2026-07-02 -- next-move #2 (M2, "exhibit the operator/game") attempted: REDESIGN
+
+M2 -- the open lift flagged above ("exhibit the operator/game" remains the open
+lift") -- was executed via Route B (List-Pettit discursive dilemma as a finite
+observer-game). Recorded at `results/T423-m2-observer-game-v0.1-results.md`
+(18/18 tests, exact arithmetic, n=3 enumerated, TaF-native T413 the only import).
+
+**Outcome: REDESIGN.** The finite object was built and behaves: a genuine doctrinal
+paradox whose gap game v_gap is exactly the unanimity game u_N (global datum on N,
+zero on all 7 proper coalitions), Aumann-Shapley value (1/3,1/3,1/3) with d(N)=1
+IS T413's SURVIVES-R1 grand-dividend separator. Five of six adversarial probes
+leave that intact (dilemma-genuine, shapley-is-separator, one-way-clean,
+correctness, and the finality-specific cross-application un-pre-empted).
+
+**But the load-bearing canonicity move failed -- and it failed in the way this
+synthesis predicted.** M2 needed the finality datum computed by TWO independent
+descriptions to escape T422's category-relativity. The two on offer collapse to one
+shared majority primitive (`v_gap(S) == dilemma_indicator(S)` over all 8
+coalitions; they diverge off-fixture), so the same-number agreement is
+category-relative -- **T422's ceiling recurs, exactly the "E2 is the categorical
+obstruction to unification" prediction.** The stratified-structure thesis again
+predicts its own failure mode: the global-no-local index is real at the atomic
+witness, but the *canonical* two-category identification is the obstruction, not a
+free lunch.
+
+So of the reverse-pass next-moves, M2 (#2) now joins M1/M3 as **finite-witness
+instantiated but not promoted** -- with the added, sharper finding that its
+canonicity leg is category-relative (REDESIGN), leaving a concrete rebuild target:
+a second measurement channel that is not a set-function relabel of the majority
+verdict (the optional Route-A H^1/index reading). Single-process and steering
+caveats stand; no claim moves; not committed; pauses for Joe.

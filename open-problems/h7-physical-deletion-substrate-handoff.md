@@ -195,3 +195,25 @@ clears the T160 family screen, freezes the reverse-edge class, absorber
 vector, allowed controls, and future-operation target, then survives the
 T145/T148/T152/T168 audit plus the N8 stochastic-thermodynamic and N14
 sector/gauge absorber maps.
+
+## Status Addendum (2026-07-03): finite-time/catalytic admission gate
+
+T439 converts the finite-time/catalytic thermodynamic-resource branch into an
+executable admission gate:
+`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`;
+spec `tests/T439-finite-time-catalytic-thermo-witness-gate.md`; model
+`models/finite_time_catalytic_thermo_witness_gate.py`.
+
+Verdict: `FINITE_TIME_CATALYTIC_THERMO_GATE_BUILT_NO_H7_PROMOTION`. The gate
+imports the T142 guardrail, rejects reversible uncopy, blind erasure, finite
+barriers, nonequilibrium current-only packets, omitted feedback memory ledgers,
+hidden sinks/export, untyped resource units, undeclared or consumed catalysts,
+and ledger-matched splits that vanish after accounting. Exact ideal-limit or
+sector-lock packets route to a separate E1/E3/idealization spec.
+
+The only admitted packet is a synthetic future-target shape with a named finite
+substrate, finite-time protocol, physical-record-deletion reverse edge, fixed
+stochastic-thermodynamic and information ledgers, exact catalyst return,
+negative control, repeated trajectory evidence, and a task-natural split that
+persists after matching. This is admission-only; it does not reopen H7, prove a
+thermodynamic arrow, move the claim ledger, or authorize public posture.

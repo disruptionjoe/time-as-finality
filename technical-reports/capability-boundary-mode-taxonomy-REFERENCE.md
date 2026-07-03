@@ -171,3 +171,23 @@ This is routing support for the internal taxonomy, not D2 progress at claim leve
 It does not redesign or abandon D2, prove a computational arrow, prove
 cryptographic hardness, make a physics claim, update the claim ledger, or authorize
 public posture.
+
+## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
+
+T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)
+applies the taxonomy's E1 thermodynamic-resource discipline to H7-style
+finite-time and catalytic record-deletion packets.
+
+Verdict: `FINITE_TIME_CATALYTIC_THERMO_GATE_BUILT_NO_H7_PROMOTION`. The gate
+rejects reversible uncopy, blind Landauer-style erasure, finite kinetic
+barriers, nonequilibrium current-only packets, omitted feedback-memory ledgers,
+hidden sinks/export, untyped resource units, undeclared or consumed catalysts,
+and task splits that disappear once thermodynamic and information ledgers are
+matched. Exact ideal-limit or sector-lock packets are routed to a separate
+E1/E3/idealization spec rather than admitted as finite-time thermodynamic
+witnesses.
+
+Only a full-accounting synthetic packet is admitted as a future review target.
+T439 does not promote H7, derive a thermodynamic arrow, prove a stochastic-
+thermodynamic or catalytic resource theorem, update the claim ledger, or
+authorize public posture.

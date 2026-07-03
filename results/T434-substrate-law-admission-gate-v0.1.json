@@ -1,0 +1,335 @@
+{
+  "artifact": "T434-substrate-law-admission-gate-v0.1",
+  "source_open_problem": "open-problems/region-indexed-capability-discriminator.md",
+  "source_artifact": "T406-transition-system-operation-unavailability-gate-v0.1",
+  "purpose": "Turn T406's remaining burden into an executable admission gate for future substrate-law or measured-dynamics transition splits.",
+  "gate_requirements": [
+    "law or measured-dynamics package frozen before pair selection",
+    "one shared formula/protocol across both sides",
+    "does not read the transition relation",
+    "does not read hidden case labels",
+    "uses declared substrate observables",
+    "preserves fixed accounting",
+    "derives the declared transition relation",
+    "measured dynamics has enough repeated evidence and a negative control"
+  ],
+  "minimum_measured_replicates": 8,
+  "candidate_audits": [
+    {
+      "candidate_id": "bare_t406_main_pair",
+      "description": "The T406 main split with no independent law package.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": null,
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_no_independent_law_or_measurement",
+      "reason": "The split is still only a transition-system difference."
+    },
+    {
+      "candidate_id": "transition_table_restatement",
+      "description": "A package that reproduces the edge set by reading the edge set.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "transition_table_restatement",
+        "source_kind": "transition_table",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": true,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff a revise_verdict edge is listed",
+        "substrate_observables": [
+          "transition_edges"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_transition_table_restatement",
+      "reason": "The package restates the transition relation it is supposed to force."
+    },
+    {
+      "candidate_id": "post_hoc_conservation_selector",
+      "description": "A conservation-looking rule selected after seeing the pair.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "post_hoc_selector",
+        "source_kind": "conservation_law",
+        "declared_before_pair": false,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff substrate invariant remains neutral",
+        "substrate_observables": [
+          "substrate_invariant",
+          "operation_delta"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_post_hoc_law",
+      "reason": "The law package was not frozen before the pair was selected."
+    },
+    {
+      "candidate_id": "pair_specific_law",
+      "description": "Each side gets its own rule, so the law is not one shared domain law.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "pair_specific_law",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": false,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff substrate invariant remains neutral",
+        "substrate_observables": [
+          "substrate_invariant",
+          "operation_delta"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_pair_specific_law",
+      "reason": "The two sides use different formulae rather than one shared law."
+    },
+    {
+      "candidate_id": "hidden_label_law",
+      "description": "A rule that reads hidden case labels rather than substrate observables.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "hidden_label_law",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": true,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff case_id == reachable",
+        "substrate_observables": [
+          "case_id"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "blocked_hidden_label_law",
+      "reason": "The package reads a hidden case label rather than substrate data."
+    },
+    {
+      "candidate_id": "non_native_observable",
+      "description": "A rule that uses an undeclared substrate observable.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "non_native_observable",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": false,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff substrate invariant remains neutral",
+        "substrate_observables": [
+          "oracle_transition_secret"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_non_native_observable",
+      "reason": "The package uses observables outside the declared substrate vocabulary."
+    },
+    {
+      "candidate_id": "underpowered_measured_dynamics",
+      "description": "A measured-dynamics packet with too little evidence and no control.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "underpowered_measured_dynamics",
+        "source_kind": "measured_dynamics",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": false,
+        "measurement_replicates": 2,
+        "formula": "measured transition attempts determine revise availability",
+        "substrate_observables": [
+          "attempt_log",
+          "failure_mode"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_underpowered_measured_dynamics",
+      "reason": "Measured dynamics needs repeated evidence and a negative control."
+    },
+    {
+      "candidate_id": "fixed_accounting_change_control",
+      "description": "A law-looking split that also changes fixed accounting.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": false,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "fixed_accounting_change_control",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff substrate invariant remains neutral",
+        "substrate_observables": [
+          "substrate_invariant",
+          "operation_delta"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "absorbed_by_fixed_accounting_completion",
+      "reason": "The pair changes fixed accounting before any law verdict matters."
+    },
+    {
+      "candidate_id": "conservation_law_positive_control",
+      "description": "Synthetic control: one predeclared conservation-style rule derives revise availability from substrate invariants, not from edges.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "conservation_law_positive_control",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise_verdict allowed iff measured substrate charge plus operation delta remains in the neutral sector",
+        "substrate_observables": [
+          "charge_sector",
+          "operation_charge_delta"
+        ]
+      },
+      "synthetic_positive_control": true,
+      "admitted": true,
+      "residue_label": "admitted_conservation_law_forced_transition_candidate",
+      "reason": "The law packet is predeclared, shared, substrate-native, and derives the transition relation without reading it."
+    },
+    {
+      "candidate_id": "measured_dynamics_positive_control",
+      "description": "Synthetic control: a predeclared repeated dynamics protocol derives operation availability without reading the transition table.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "measured_dynamics_positive_control",
+        "source_kind": "measured_dynamics",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 12,
+        "formula": "revise_verdict admitted iff the predeclared substrate-dynamics attempt protocol succeeds in the neutral control and fails in the blocked control",
+        "substrate_observables": [
+          "predeclared_attempt_log",
+          "instrumented_failure_mode"
+        ]
+      },
+      "synthetic_positive_control": true,
+      "admitted": true,
+      "residue_label": "admitted_measured_dynamics_forced_transition_candidate",
+      "reason": "The measured-dynamics packet is predeclared, controlled, and derives the transition relation without reading it."
+    },
+    {
+      "candidate_id": "matched_transition_no_split_control",
+      "description": "A matched-transition control where no capability split exists.",
+      "capability_split": false,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": true,
+      "law_package": {
+        "package_id": "matched_transition_no_split_control",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise allowed iff substrate invariant remains neutral",
+        "substrate_observables": [
+          "substrate_invariant",
+          "operation_delta"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_needed_no_capability_split",
+      "reason": "No revision-capability split is present."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "SUBSTRATE_LAW_ADMISSION_GATE_BUILT_CURRENT_T406_NOT_ADMITTED",
+    "current_t406_main_pair_admitted": false,
+    "admitted_candidate_ids": [
+      "conservation_law_positive_control",
+      "measured_dynamics_positive_control"
+    ],
+    "synthetic_positive_controls_only": true,
+    "reading": "The current T406 split remains unadmitted because no independent domain-native law or measured-dynamics packet forces the transition relation. Synthetic controls show the admissible shape for a future run but do not supply real physics or claim support."
+  },
+  "honest_ceiling": "Admission gate only. Synthetic controls show what would pass the gate; they do not name a real physical substrate law, do not discharge the region-indexed capability discriminator, and do not move claims.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Do not repeat T406 by changing only the transition relation.",
+    "Future Direction-A work must first supply a concrete law or measured-dynamics packet that clears T434.",
+    "Treat admitted synthetic controls as gate calibration only, not evidence."
+  ]
+}

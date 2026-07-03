@@ -80,6 +80,16 @@ unavailable"; it is to supply a domain-native law or measured substrate
 dynamics that forces the transition relation without using transition-system
 underdescription as the separator.
 
+T434 turns that post-T406 burden into an executable admission gate. The current
+T406 main pair is not admitted because it has no independent law or measured-
+dynamics package; transition-table restatements, post hoc laws, pair-specific
+rules, hidden labels, non-native observables, underpowered measurements, and
+fixed-accounting changes are rejected. Synthetic conservation-law and measured-
+dynamics controls show the shape a future packet must have, but they are gate
+calibration only. The next positive Direction-A attempt must bring a concrete
+predeclared law or measured substrate-dynamics packet that clears T434 before it
+re-runs the discriminator.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

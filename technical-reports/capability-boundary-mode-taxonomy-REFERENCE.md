@@ -47,7 +47,9 @@ frame ⊂ A_all):
   so any remaining novelty is a family-level period-hardness redesign/abandon
   question (`open-problems/computational-finality-arrow.md`).
 - **E3** ≈ **GU** structural-symmetry no-go (antilinear index-nullity / Krein
-  grading) — one-way adjacency, never cited as support.
+  grading) — one-way adjacency, never cited as support. T421 refutes the first
+  GU-adjacent admissibility-adapter candidate as a functor and records it as a
+  logged disanalogy, not a claim move.
 - **E0** is the mode every absorbed TaF attempt used (stipulated gaps through
   co-present registers).
 
@@ -59,7 +61,8 @@ have established homes** (verified by arXiv fetch, 2026-07-02). So this taxonomy
 a **useful internal map and at most a synthesis/perspective**, not a novel result.
 Its value is organizing the program: it explains the kill history, tells any new
 boundary attempt which mode it lives in, and localizes where genuine novelty could
-still be (E2 computational finality; the E3=GU adapter).
+still be (E2 computational finality; any future E3 adapter must start from the
+T421 disanalogy rather than restating the refused functor).
 
 ## How to use it
 

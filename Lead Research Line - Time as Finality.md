@@ -209,5 +209,8 @@ framing constructor theory). The first **E2** computational-finality /
 computational-arrow-of-time swing is recorded as T419 with a REDESIGN verdict, and
 T420 now hardens the finite-cycle anti-relabel guard: the D2 question remains open
 for a family-level period-hardness redesign/abandon decision
-(`open-problems/computational-finality-arrow.md`). The **E3** GU adapter is held as
-the cross-repo prize.
+(`open-problems/computational-finality-arrow.md`). The first **E3** GU-adjacent
+adapter swing is recorded as T421 and closes to a logged disanalogy: TaF
+operational recoverability and physics metric/grading selection did not type-check
+as one functor. The tri-repo adapter contract remains gated; no GU/TI claim,
+identity, or support relation is earned.

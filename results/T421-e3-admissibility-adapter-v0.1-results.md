@@ -11,12 +11,13 @@
   [_local/oneway_violation_probe.py](../_local/oneway_violation_probe.py)
 - **Tags:** exploratory_cross_repo_adapter, D3, E3_admissibility, natural_transformation,
   krein_pseudo_hermitian_adjacency, one_way_rule, import_free, kinematic_only,
-  no_claim_promotion, provisional_T_number, logged_disanalogy
+  no_claim_promotion, registered_T_number, logged_disanalogy
 
-> Provisional next-free T-number (repo highest was T420). TESTS.md and
-> CLAIM-LEDGER.md UNTOUCHED. Recorded-tier exploratory swing. GU / pseudo-Hermitian
-> QM is a two-sided structural check and adjacency ONLY — never cited as support
-> for a TaF claim. No CLAIM-LEDGER entry. Ledger actions pause for Joe.
+> T421 is a recorded-tier exploratory swing. `CLAIM-LEDGER.md` is untouched;
+> same-day record repair registered the abandoned/logged-disanalogy artifact in
+> `TESTS.md` without claim movement. GU / pseudo-Hermitian QM is a two-sided
+> structural check and adjacency ONLY — never cited as support for a TaF claim.
+> No CLAIM-LEDGER entry. Ledger actions pause for Joe.
 
 ## Verdict (house vocabulary): the adapter does NOT type-check as a functor
 

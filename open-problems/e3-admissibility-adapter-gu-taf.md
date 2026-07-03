@@ -2,9 +2,16 @@
 
 ## Status
 
-**Open problem — frozen problem statement (D3 setup). No build/swing yet; pauses
-for Joe's go.** This scopes the tri-repo adapter the divergent persona pass flagged
-as the cross-repo prize (D3): does TaF's **operational-admissibility** hinge (the
+**Current status after T421 v0.1: closed to logged disanalogy.** The frozen setup
+language below is retained as provenance, not as the current state. T421 executed
+the D3 swing and the no-functor kill fired: the specific adapter does not type-
+check as a functor and should not reopen as stated. `CLAIM-LEDGER.md` remains
+untouched, and GU/pseudo-Hermitian material remains adjacency and object-of-study
+only, never support for a TaF claim.
+
+**Original frozen problem statement (D3 setup; superseded by T421).** This scoped
+the tri-repo adapter the divergent persona pass flagged as a candidate D3
+cross-repo prize: does TaF's **operational-admissibility** hinge (the
 E0-vs-E3 "define admissible menus" question) *type-check* against the physics
 **metric-operator / grading selection** (pseudo-Hermitian QM; Krein / ghost-parity;
 the GU antilinear no-go)? Spec-before-build: the novelty bar and the honest ceiling
@@ -130,7 +137,9 @@ functor; the `no-functor` kill fired.** Recorded as a **logged disanalogy** —
 informative, not a null result. Artifacts: `models/e3_admissibility_adapter.py`,
 `tests/test_e3_admissibility_adapter.py` (27 passed, toy-only),
 `results/T421-e3-admissibility-adapter-v0.1-results.md`, probes in `_local/`.
-TESTS.md and CLAIM-LEDGER.md untouched; no claim promotion; not committed.
+`CLAIM-LEDGER.md` untouched; no claim promotion. T421 is committed as a
+recorded-tier artifact and registered in `TESTS.md` only as an abandoned/logged
+disanalogy.
 
 **What fired.** The `no-functor` / ABANDON criterion, on four independently
 reproduced cracks: (1) the `VerdictFunctor` Protocol type-check is vacuous

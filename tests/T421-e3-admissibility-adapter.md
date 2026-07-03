@@ -1,9 +1,9 @@
 # T421: E3 Admissibility Adapter (GU-adjacent physics <-> TaF)
 
-> Provisional next-free T-number (repo highest was T420). TESTS.md and
-> CLAIM-LEDGER.md are UNTOUCHED; if this number collides, the numbering
-> automation normalizes later. Recorded-tier, exploratory cross-repo adapter
-> swing. NO claim promotion; ledger actions pause for Joe.
+> T421 is a recorded-tier exploratory cross-repo adapter swing. `CLAIM-LEDGER.md`
+> is untouched; same-day record repair registered the abandoned/logged-disanalogy
+> artifact in `TESTS.md` without claim movement. NO claim promotion; ledger
+> actions pause for Joe.
 
 ## Route
 

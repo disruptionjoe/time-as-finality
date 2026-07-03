@@ -1,0 +1,313 @@
+{
+  "artifact": "T427-m2-threshold-index-leakage-gate-v0.1",
+  "cell_specs": [
+    [
+      "three_quarters",
+      4
+    ],
+    [
+      "three_quarters",
+      5
+    ],
+    [
+      "four_fifths",
+      4
+    ],
+    [
+      "four_fifths",
+      5
+    ]
+  ],
+  "target_cells": [
+    [
+      "four_fifths",
+      5
+    ],
+    [
+      "three_quarters",
+      4
+    ]
+  ],
+  "universe": {
+    "cell_reports": [
+      {
+        "rule": "three_quarters",
+        "n": 4,
+        "target_cell": true,
+        "n_profiles": 256,
+        "separator_profiles": 12,
+        "verdict_distribution": {
+          "SURVIVES-R1": 12,
+          "no-separation": 244
+        },
+        "grand_requirement": 3,
+        "top_proper_requirement": 3
+      },
+      {
+        "rule": "three_quarters",
+        "n": 5,
+        "target_cell": false,
+        "n_profiles": 1024,
+        "separator_profiles": 0,
+        "verdict_distribution": {
+          "ABSORBED": 140,
+          "no-separation": 884
+        },
+        "grand_requirement": 4,
+        "top_proper_requirement": 3
+      },
+      {
+        "rule": "four_fifths",
+        "n": 4,
+        "target_cell": false,
+        "n_profiles": 256,
+        "separator_profiles": 0,
+        "verdict_distribution": {
+          "no-separation": 256
+        },
+        "grand_requirement": 4,
+        "top_proper_requirement": 3
+      },
+      {
+        "rule": "four_fifths",
+        "n": 5,
+        "target_cell": true,
+        "n_profiles": 1024,
+        "separator_profiles": 20,
+        "verdict_distribution": {
+          "SURVIVES-R1": 20,
+          "no-separation": 1004
+        },
+        "grand_requirement": 4,
+        "top_proper_requirement": 4
+      }
+    ],
+    "n_profiles": 2560,
+    "separator_profiles": 32,
+    "channel_reports": {
+      "support_only": {
+        "name": "support_only",
+        "channel_type": "support_control",
+        "n_distinct_values": 91,
+        "perfectly_predicts_separator": false,
+        "guardrail_verdict": "FAILS_SEPARATOR",
+        "n_collision_values": 2,
+        "collision_examples": [
+          {
+            "value": [
+              0,
+              1,
+              1,
+              2
+            ],
+            "separator_0": 12,
+            "separator_1": 12
+          },
+          {
+            "value": [
+              0,
+              1,
+              1,
+              3
+            ],
+            "separator_0": 20,
+            "separator_1": 20
+          }
+        ],
+        "separator_only_values": []
+      },
+      "cell_local_support": {
+        "name": "cell_local_support",
+        "channel_type": "quota_support_leak",
+        "n_distinct_values": 182,
+        "perfectly_predicts_separator": true,
+        "guardrail_verdict": "REJECT_LEAKAGE",
+        "n_collision_values": 0,
+        "collision_examples": [],
+        "separator_only_values": [
+          {
+            "value": [
+              "four_fifths",
+              5,
+              [
+                0,
+                1,
+                1,
+                3
+              ]
+            ],
+            "separator_0": 0,
+            "separator_1": 20
+          },
+          {
+            "value": [
+              "three_quarters",
+              4,
+              [
+                0,
+                1,
+                1,
+                2
+              ]
+            ],
+            "separator_0": 0,
+            "separator_1": 12
+          }
+        ]
+      },
+      "support_plus_quota_step": {
+        "name": "support_plus_quota_step",
+        "channel_type": "quota_support_leak",
+        "n_distinct_values": 182,
+        "perfectly_predicts_separator": true,
+        "guardrail_verdict": "REJECT_LEAKAGE",
+        "n_collision_values": 0,
+        "collision_examples": [],
+        "separator_only_values": [
+          {
+            "value": [
+              [
+                0,
+                1,
+                1,
+                2
+              ],
+              3,
+              3
+            ],
+            "separator_0": 0,
+            "separator_1": 12
+          },
+          {
+            "value": [
+              [
+                0,
+                1,
+                1,
+                3
+              ],
+              4,
+              4
+            ],
+            "separator_0": 0,
+            "separator_1": 20
+          }
+        ]
+      },
+      "quota_margin_signature": {
+        "name": "quota_margin_signature",
+        "channel_type": "quota_support_leak",
+        "n_distinct_values": 112,
+        "perfectly_predicts_separator": true,
+        "guardrail_verdict": "REJECT_LEAKAGE",
+        "n_collision_values": 0,
+        "collision_examples": [],
+        "separator_only_values": [
+          {
+            "value": [
+              0,
+              0,
+              -1,
+              0
+            ],
+            "separator_0": 0,
+            "separator_1": 32
+          }
+        ]
+      },
+      "crossing_count": {
+        "name": "crossing_count",
+        "channel_type": "candidate_index",
+        "n_distinct_values": 6,
+        "perfectly_predicts_separator": false,
+        "guardrail_verdict": "FAILS_SEPARATOR",
+        "n_collision_values": 1,
+        "collision_examples": [
+          {
+            "value": 1,
+            "separator_0": 224,
+            "separator_1": 32
+          }
+        ],
+        "separator_only_values": []
+      },
+      "compatibility_cycle_rank": {
+        "name": "compatibility_cycle_rank",
+        "channel_type": "candidate_index",
+        "n_distinct_values": 7,
+        "perfectly_predicts_separator": false,
+        "guardrail_verdict": "FAILS_SEPARATOR",
+        "n_collision_values": 2,
+        "collision_examples": [
+          {
+            "value": 2,
+            "separator_0": 324,
+            "separator_1": 12
+          },
+          {
+            "value": 5,
+            "separator_0": 140,
+            "separator_1": 20
+          }
+        ],
+        "separator_only_values": []
+      },
+      "signed_frustration_index": {
+        "name": "signed_frustration_index",
+        "channel_type": "candidate_index",
+        "n_distinct_values": 4,
+        "perfectly_predicts_separator": false,
+        "guardrail_verdict": "FAILS_SEPARATOR",
+        "n_collision_values": 1,
+        "collision_examples": [
+          {
+            "value": 1,
+            "separator_0": 736,
+            "separator_1": 32
+          }
+        ],
+        "separator_only_values": []
+      },
+      "graph_index_triple": {
+        "name": "graph_index_triple",
+        "channel_type": "candidate_index",
+        "n_distinct_values": 14,
+        "perfectly_predicts_separator": false,
+        "guardrail_verdict": "FAILS_SEPARATOR",
+        "n_collision_values": 2,
+        "collision_examples": [
+          {
+            "value": [
+              1,
+              2,
+              1
+            ],
+            "separator_0": 84,
+            "separator_1": 12
+          },
+          {
+            "value": [
+              1,
+              5,
+              1
+            ],
+            "separator_0": 140,
+            "separator_1": 20
+          }
+        ],
+        "separator_only_values": []
+      }
+    },
+    "clean_candidate_channels": [],
+    "leaking_perfect_channels": [
+      "cell_local_support",
+      "support_plus_quota_step",
+      "quota_margin_signature"
+    ]
+  },
+  "overall_verdict": {
+    "verdict": "REDESIGN_THRESHOLD_INDEX_LEAKAGE",
+    "reading": "The only perfect separator channels read quota/support data: cell-local support, support plus quota step, or the direct quota margin signature. Every graph/frustration-style candidate index collides with nonseparator profiles. The T426 positives remain finite threshold testbeds, not clean M2 canonicity progress.",
+    "next_gate": "Move to a genuinely different aggregation family or separator object, or predeclare a new index with an explicit no-leakage control stronger than support/quota-step recovery."
+  }
+}

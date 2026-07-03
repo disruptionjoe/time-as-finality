@@ -291,6 +291,27 @@ reference-resource policy. It is not a WAY theorem, not a quantum physics claim,
 not an E3 promotion, not a revival of the T421 GU-adjacent adapter, and not
 cross-repo evidence.
 
+## Internal support addendum (2026-07-03): T436 quantum E3 resource-lift classifier
+
+T436 records the guardrail forced by T435:
+`results/T436-quantum-e3-resource-lift-classifier-v0.1-results.md`.
+
+The artifact classifies whether a T435-style A1 obstruction survives an A2
+reference/asymmetry-resource audit. The T435 phase pair and dephased-mixture
+control are both A1-relative and become E0-declared relative to A2 once the
+reference resource is admitted. They are not absolute E3/no-go results.
+
+A synthetic exact no-go control shows what an absolute-after-resource shape would
+look like, but it is calibration only. Large resource cost, missing A2 audit,
+post-hoc resource policies, hidden-resource oracles, A1-visible controls, and
+classical full-code controls do not pass.
+
+This records a reporting rule for the `(Q)` side: state A1 status, state A2
+resource-lift status, and separately justify any absolute no-go claim with an
+independently typed exact witness. T436 is not a WAY theorem, not a quantum
+physics claim, not an E3 promotion, not a revival of T421, and not cross-repo
+evidence.
+
 ---
 
 ## Adversarial review outcome (2026-07-02): universal-theorem framing WITHDRAWN

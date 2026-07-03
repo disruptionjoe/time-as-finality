@@ -114,3 +114,24 @@ selectors, missing-symmetry packets, and hidden-label oracles do not pass.
 This is a taxonomy/admission gate only. It is not a WAY theorem, not a quantum
 physics claim, not a GU/TaF adapter, not cross-repo evidence, and not a claim
 promotion. T421's logged disanalogy remains closed as stated.
+
+## Internal support update (2026-07-03): quantum E3 resource-lift classifier
+
+T436 (`results/T436-quantum-e3-resource-lift-classifier-v0.1-results.md`) adds the
+resource-lift guardrail that T435 makes necessary. A candidate that clears the A1
+symmetry-respecting menu is not automatically an absolute E3/no-go result. It must
+also audit A2 reference/asymmetry resources.
+
+Verdict: `QUANTUM_E3_RESOURCE_LIFT_CLASSIFIER_BUILT_T435_RELATIVE_NOT_ABSOLUTE`.
+The T435 phase pair and dephased-mixture control are both classified as
+`A1_RELATIVE_LIFTED_TO_E0_BY_A2_REFERENCE`, not absolute E3. A synthetic exact
+no-go control proves the classifier can report the absolute-after-resource shape,
+but it is calibration only. Large resource cost, missing A2 audit, post-hoc
+resource policy, hidden-resource oracle, A1-visible controls, and classical
+full-code controls do not pass.
+
+Future quantum E3 attempts should report both A1 status and A2 resource-lift
+status. A real absolute E3 artifact must bring an independently typed exact no-go
+witness that survives the resource-lift audit. T436 is not a WAY theorem, not a
+quantum physics claim, not a GU/TaF adapter, not cross-repo evidence, and not a
+claim promotion.

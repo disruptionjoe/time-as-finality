@@ -1,0 +1,340 @@
+{
+  "artifact": "T433-classical-declarability-proof-certificate-v0.1",
+  "scope": "Recorded-tier constructive proof certificate for the classical C-fragment.",
+  "proof_certificate": {
+    "theorem_name": "Classical finite A1 declarability lemma",
+    "statement": "For any finite classical product code Omega and any total datum d: Omega -> V, d is A1-measurable when A1 contains the full co-present code / identity readout. Therefore an A0 boundary created by d not factoring through the region projection is E0-declared relative to A1, not a single-instance physical boundary.",
+    "proof_steps": [
+      {
+        "id": "P1",
+        "step": "Classical instance is a finite product code Omega.",
+        "discharged_by": "FiniteProductCode(domains)"
+      },
+      {
+        "id": "P2",
+        "step": "A0 observables factor through the declared region projection pi_R.",
+        "discharged_by": "is_constant_on_projection(code, table, region)"
+      },
+      {
+        "id": "P3",
+        "step": "A1 includes the identity/full-code readout on Omega.",
+        "discharged_by": "code.full_coords"
+      },
+      {
+        "id": "P4",
+        "step": "Every total datum factors through identity by finite lookup.",
+        "discharged_by": "is_constant_on_projection(code, table, code.full_coords)"
+      },
+      {
+        "id": "P5",
+        "step": "A boundary is physical relative to A1 only if it has an A0 same-fiber split and fails A1 measurability.",
+        "discharged_by": "has_boundary and not a1_measurable is always false for valid cases"
+      }
+    ],
+    "verdict": "CLASSICAL_DECLARABILITY_PROOF_CERTIFIED",
+    "honest_scope": "Classical finite product codes only. This is not a quantum theorem, not an E3/WAY statement, not a universal no-go, not claim-ledger movement, and not cross-repo evidence.",
+    "failure_conditions": [
+      "A1 does not contain the full co-present code / identity readout.",
+      "The datum is not a total function on the finite classical instance.",
+      "The model is quantum/operational rather than a classical product code.",
+      "The question is family-level cost or hardness rather than single-instance declarability."
+    ]
+  },
+  "overall_verdict": {
+    "verdict": "CLASSICAL_DECLARABILITY_PROOF_CERTIFIED",
+    "all_named_boundary_cases_declared_relative_to_A1": true,
+    "no_physical_candidates_in_mixed_sweep": true,
+    "reading": "T433 discharges the classical single-instance proof obligation: once A1 contains the full co-present finite classical code, every total separator is recoverable by lookup. A0 insufficiency is a declared boundary relative to A1, not a physical one."
+  },
+  "named_cases": [
+    {
+      "name": "region_visible_control",
+      "domain_sizes": [
+        2,
+        2,
+        2
+      ],
+      "region": [
+        0,
+        1
+      ],
+      "region_label": "{x0,x1}",
+      "truth_table": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "a0_region_measurable": true,
+      "a1_full_code_measurable": true,
+      "has_boundary_pair": false,
+      "boundary_pair_count": 0,
+      "boundary_pair_examples": [],
+      "minimal_coordinate_support_labels": [
+        "{x0}"
+      ],
+      "has_no_proper_coordinate_support": false,
+      "a1_lookup_upper_bound": 8,
+      "single_instance_physical_candidate_relative_to_A1": false,
+      "verdict": "NO_BOUNDARY_A0_REGION_DETERMINES_DATUM"
+    },
+    {
+      "name": "hidden_complement_bit",
+      "domain_sizes": [
+        2,
+        2
+      ],
+      "region": [
+        0
+      ],
+      "region_label": "{x0}",
+      "truth_table": [
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "a0_region_measurable": false,
+      "a1_full_code_measurable": true,
+      "has_boundary_pair": true,
+      "boundary_pair_count": 2,
+      "boundary_pair_examples": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1"
+          ]
+        ]
+      ],
+      "minimal_coordinate_support_labels": [
+        "{x1}"
+      ],
+      "has_no_proper_coordinate_support": false,
+      "a1_lookup_upper_bound": 4,
+      "single_instance_physical_candidate_relative_to_A1": false,
+      "verdict": "E0_DECLARED_RELATIVE_TO_A1_BY_CONSTRUCTIVE_LOOKUP"
+    },
+    {
+      "name": "full_support_parity_guard",
+      "domain_sizes": [
+        2,
+        2,
+        2
+      ],
+      "region": [
+        0,
+        1
+      ],
+      "region_label": "{x0,x1}",
+      "truth_table": [
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "a0_region_measurable": false,
+      "a1_full_code_measurable": true,
+      "has_boundary_pair": true,
+      "boundary_pair_count": 4,
+      "boundary_pair_examples": [
+        [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "1"
+          ]
+        ]
+      ],
+      "minimal_coordinate_support_labels": [
+        "{x0,x1,x2}"
+      ],
+      "has_no_proper_coordinate_support": true,
+      "a1_lookup_upper_bound": 8,
+      "single_instance_physical_candidate_relative_to_A1": false,
+      "verdict": "E0_DECLARED_RELATIVE_TO_A1_BY_CONSTRUCTIVE_LOOKUP"
+    },
+    {
+      "name": "nonbinary_region_complement_relation",
+      "domain_sizes": [
+        3,
+        2
+      ],
+      "region": [
+        0
+      ],
+      "region_label": "{x0}",
+      "truth_table": [
+        "0-a",
+        "0-b",
+        "1-a",
+        "1-b",
+        "2-a",
+        "2-b"
+      ],
+      "a0_region_measurable": false,
+      "a1_full_code_measurable": true,
+      "has_boundary_pair": true,
+      "boundary_pair_count": 3,
+      "boundary_pair_examples": [
+        [
+          [
+            "0",
+            "a"
+          ],
+          [
+            "0",
+            "b"
+          ]
+        ],
+        [
+          [
+            "1",
+            "a"
+          ],
+          [
+            "1",
+            "b"
+          ]
+        ],
+        [
+          [
+            "2",
+            "a"
+          ],
+          [
+            "2",
+            "b"
+          ]
+        ]
+      ],
+      "minimal_coordinate_support_labels": [
+        "{x0,x1}"
+      ],
+      "has_no_proper_coordinate_support": true,
+      "a1_lookup_upper_bound": 6,
+      "single_instance_physical_candidate_relative_to_A1": false,
+      "verdict": "E0_DECLARED_RELATIVE_TO_A1_BY_CONSTRUCTIVE_LOOKUP"
+    }
+  ],
+  "exhaustive_mixed_sweep": [
+    {
+      "domain_shape": [
+        2
+      ],
+      "proper_region_count": 1,
+      "total_region_function_checks": 4,
+      "boundary_functions": 2,
+      "a1_declared_boundaries": 2,
+      "single_instance_physical_candidates_relative_to_A1": 0
+    },
+    {
+      "domain_shape": [
+        2,
+        2
+      ],
+      "proper_region_count": 3,
+      "total_region_function_checks": 48,
+      "boundary_functions": 38,
+      "a1_declared_boundaries": 38,
+      "single_instance_physical_candidates_relative_to_A1": 0
+    },
+    {
+      "domain_shape": [
+        2,
+        3
+      ],
+      "proper_region_count": 3,
+      "total_region_function_checks": 192,
+      "boundary_functions": 178,
+      "a1_declared_boundaries": 178,
+      "single_instance_physical_candidates_relative_to_A1": 0
+    },
+    {
+      "domain_shape": [
+        3,
+        2
+      ],
+      "proper_region_count": 3,
+      "total_region_function_checks": 192,
+      "boundary_functions": 178,
+      "a1_declared_boundaries": 178,
+      "single_instance_physical_candidates_relative_to_A1": 0
+    },
+    {
+      "domain_shape": [
+        2,
+        2,
+        2
+      ],
+      "proper_region_count": 7,
+      "total_region_function_checks": 1792,
+      "boundary_functions": 1730,
+      "a1_declared_boundaries": 1730,
+      "single_instance_physical_candidates_relative_to_A1": 0
+    }
+  ],
+  "honest_ceiling": "Classical finite product codes only. This is not a quantum theorem, not an E3/WAY statement, not a universal no-go, not claim-ledger movement, and not cross-repo evidence."
+}

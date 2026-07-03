@@ -86,5 +86,12 @@ by `A1`. The full-support parity guard has no proper coordinate support and is
 still `A1`-declared. The exhaustive `n in {1,2,3}` Boolean sweep found zero
 single-instance physical candidates.
 
+T433 (`results/T433-classical-declarability-proof-certificate-v0.1-results.md`)
+adds the constructive proof certificate for that same classical C-fragment:
+for a finite classical product code `Omega`, region projection `pi_R`, and total
+datum `d : Omega -> V`, `A1` contains `id_Omega`, so `d = L o id_Omega` by finite
+lookup. A0 insufficiency is therefore E0-declared relative to A1, not a
+single-instance physical boundary.
+
 This is support for using the taxonomy internally, not a promoted theorem. It
 does not touch the quantum E3 route or the T421 logged disanalogy.

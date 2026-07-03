@@ -238,6 +238,36 @@ This supports only the scoped classical (C) fragment as a recorded-tier internal
 certificate. It is not a universal no-go theorem, not a quantum statement, not an
 E3 result, not claim-ledger movement, and not cross-repo evidence.
 
+## Internal support addendum (2026-07-03): T433 classical proof certificate
+
+T433 converts the T432 sweep into a constructive finite-product proof certificate:
+`results/T433-classical-declarability-proof-certificate-v0.1-results.md`.
+
+The proof certificate fixes:
+
+- `Omega`: a finite classical product code;
+- `A0`: observables factoring through the declared region projection `pi_R`;
+- `A1`: the full co-present finite classical code / identity readout;
+- `d`: a total datum `Omega -> V`.
+
+Verdict: `CLASSICAL_DECLARABILITY_PROOF_CERTIFIED`. Since `A1` contains
+`id_Omega`, every total datum factors through `A1` by finite lookup:
+
+```text
+d = L o id_Omega
+```
+
+If `d` fails to factor through `pi_R`, that creates an `A0` boundary, but it is
+still `E0`-declared relative to `A1`. The mixed finite sweep over binary-valued
+datums on product domains `(2)`, `(2,2)`, `(2,3)`, `(3,2)`, and `(2,2,2)` found
+2,126 boundary functions, all `A1`-declared and zero single-instance physical
+candidates.
+
+This discharges the internal classical single-instance proof obligation only. It
+is not a universal no-go theorem, not a quantum theorem, not an E3/WAY result,
+not claim-ledger movement, not public-posture movement, and not cross-repo
+evidence.
+
 ---
 
 ## Adversarial review outcome (2026-07-02): universal-theorem framing WITHDRAWN

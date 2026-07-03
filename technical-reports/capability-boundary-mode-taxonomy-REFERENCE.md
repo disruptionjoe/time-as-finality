@@ -75,3 +75,16 @@ single-instance quantum one must be E3.
 
 No North Star, canon, public-posture, cross-repo, or ledger movement. GU/TI remain
 stress-test input only. Promotion of any mode to a claim pauses for Joe.
+
+## Internal support update (2026-07-03): classical C-fragment executable gate
+
+T432 (`results/T432-classical-finite-boundary-declarability-gate-v0.1-results.md`)
+turns the classical finite-state fragment into a recorded-tier executable check.
+With `A0` as declared region observables and `A1` as the full co-present finite
+classical code, every tested single-instance separator outside `A0` is recovered
+by `A1`. The full-support parity guard has no proper coordinate support and is
+still `A1`-declared. The exhaustive `n in {1,2,3}` Boolean sweep found zero
+single-instance physical candidates.
+
+This is support for using the taxonomy internally, not a promoted theorem. It
+does not touch the quantum E3 route or the T421 logged disanalogy.

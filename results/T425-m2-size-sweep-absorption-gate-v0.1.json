@@ -1,0 +1,271 @@
+{
+  "artifact": "T425-m2-size-sweep-absorption-gate-v0.1",
+  "sizes": [
+    3,
+    4,
+    5
+  ],
+  "overall_verdict": {
+    "verdict": "REDESIGN",
+    "reading": "The inherited T423/T424 SURVIVES-R1 finality datum is atomic at n=3 in the finite AND strict-majority family. At n=4 and n=5, every nonzero gap is absorbed by a 3-judge proper subset, so a larger index complex is blocked before separator-agreement can even be tested.",
+    "next_gate": "Any rescue must predeclare a different aggregation family, threshold rule, or separator object; it is not a direct Route-A continuation of T424."
+  },
+  "size_reports": {
+    "3": {
+      "n": 3,
+      "n_profiles": 64,
+      "n_vgap_fibers": 2,
+      "separator_profiles": 6,
+      "nonzero_gap_profiles": 6,
+      "verdict_distribution": {
+        "SURVIVES-R1": 6,
+        "no-separation": 58
+      },
+      "min_sep_size_distribution": {
+        "None": 58,
+        "3": 6
+      },
+      "fiber_mixed_separator_count": 0,
+      "separator_fiber_sizes": [
+        6
+      ],
+      "larger_absorption_complete": false,
+      "cycle_diagnostic": {
+        "compatibility_graph_cycle_rank_distribution": {
+          "0": 36,
+          "1": 28
+        },
+        "positive_cycle_profiles": 28,
+        "positive_cycle_profiles_without_separator": null,
+        "cycle_rank_by_verdict": {
+          "SURVIVES-R1": {
+            "0": 6
+          },
+          "no-separation": {
+            "0": 30,
+            "1": 28
+          }
+        }
+      },
+      "sample_separator": {
+        "serial": 27,
+        "profile": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "v_gap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "cycle_rank": 0
+      },
+      "sample_absorbed": null
+    },
+    "4": {
+      "n": 4,
+      "n_profiles": 256,
+      "n_vgap_fibers": 17,
+      "separator_profiles": 0,
+      "nonzero_gap_profiles": 60,
+      "verdict_distribution": {
+        "ABSORBED": 60,
+        "no-separation": 196
+      },
+      "min_sep_size_distribution": {
+        "None": 196,
+        "3": 60
+      },
+      "fiber_mixed_separator_count": 0,
+      "separator_fiber_sizes": [],
+      "larger_absorption_complete": true,
+      "cycle_diagnostic": {
+        "compatibility_graph_cycle_rank_distribution": {
+          "0": 12,
+          "1": 136,
+          "2": 48,
+          "3": 60
+        },
+        "positive_cycle_profiles": 244,
+        "positive_cycle_profiles_without_separator": 244,
+        "cycle_rank_by_verdict": {
+          "ABSORBED": {
+            "1": 48,
+            "2": 12
+          },
+          "no-separation": {
+            "0": 12,
+            "1": 88,
+            "2": 36,
+            "3": 60
+          }
+        }
+      },
+      "sample_separator": null,
+      "sample_absorbed": {
+        "serial": 27,
+        "profile": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "v_gap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "min_sep_size": 3,
+        "cycle_rank": 1
+      }
+    },
+    "5": {
+      "n": 5,
+      "n_profiles": 1024,
+      "n_vgap_fibers": 136,
+      "separator_profiles": 0,
+      "nonzero_gap_profiles": 390,
+      "verdict_distribution": {
+        "ABSORBED": 390,
+        "no-separation": 634
+      },
+      "min_sep_size_distribution": {
+        "None": 634,
+        "3": 390
+      },
+      "fiber_mixed_separator_count": 0,
+      "separator_fiber_sizes": [],
+      "larger_absorption_complete": true,
+      "cycle_diagnostic": {
+        "compatibility_graph_cycle_rank_distribution": {
+          "1": 40,
+          "2": 120,
+          "3": 420,
+          "4": 240,
+          "5": 80,
+          "6": 124
+        },
+        "positive_cycle_profiles": 1024,
+        "positive_cycle_profiles_without_separator": 1024,
+        "cycle_rank_by_verdict": {
+          "ABSORBED": {
+            "2": 30,
+            "3": 280,
+            "4": 60,
+            "5": 20
+          },
+          "no-separation": {
+            "1": 40,
+            "2": 90,
+            "3": 140,
+            "4": 180,
+            "5": 60,
+            "6": 124
+          }
+        }
+      },
+      "sample_separator": null,
+      "sample_absorbed": {
+        "serial": 27,
+        "profile": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "v_gap": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "min_sep_size": 3,
+        "cycle_rank": 3
+      }
+    }
+  }
+}

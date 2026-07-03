@@ -241,4 +241,4 @@ instantiated but not promoted** -- with the added, sharper finding that its
 canonicity leg is category-relative (REDESIGN), leaving a concrete rebuild target:
 a second measurement channel that is not a set-function relabel of the majority
 verdict (the optional Route-A H^1/index reading). Single-process and steering
-caveats stand; no claim moves; not committed; pauses for Joe.
+caveats stand; no claim moves; committed as recorded-tier work; pauses for Joe.

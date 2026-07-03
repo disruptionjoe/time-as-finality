@@ -10,7 +10,8 @@
 > ai-epistemology / architecture-of-legitimacy are ADJACENCY / TEMPLATE /
 > VOCABULARY only; the only code imports are TaF-native T413
 > (`models.legitimacy_shapley_finality_probe`) and T423
-> (`models.m2_observer_game`). Do NOT commit (per orchestrator instruction).
+> (`models.m2_observer_game`). T424 was committed as repo-local recorded-tier
+> work in `9c5b733`; it remains non-promotional.
 
 - Spec (frozen first): `tests/T424-m2-route-a-index-probe.md`
 - Model: `models/m2_route_a_index_probe.py`

@@ -254,3 +254,30 @@ or predeclare an independent measurement channel with no-completion controls for
 support counts, ambient size, quota step, selector/tie completion, and
 proper-subset deletion-critical wording. No claim promotion; TESTS.md, ROADMAP.md,
 CLAIM-LEDGER.md, North Star, canon, and public posture remain untouched.
+
+## Addendum - Independent-channel admission gate (T431): no current channel admitted
+
+T431 operationalizes T430's next gate
+(`results/T431-m2-independent-channel-admission-gate-v0.1-results.md`). It asks
+whether a candidate M2 measurement channel can count as independent only if it is
+not recoverable from support counts, ambient size, quota step, selector/tie
+completion, or proper-subset deletion-critical wording.
+
+**Verdict: REDESIGN_M2_NO_CURRENT_INDEPENDENT_CHANNEL.** The current T424 Route-A
+channels do not clear the stricter admission bar:
+
+- `I_chi` and `I_fr` remain genuinely nonconstant on the old `v_gap` fibers, so
+  T424's relabel-escape finding is preserved;
+- both are nevertheless recoverable from full support-count / quota-step
+  completion over the four judgment states, so they are not admissible as fresh
+  M2 measurement channels after T430;
+- `I_sf` remains null at this finite witness size;
+- leaky support/quota controls are rejected, while a profile-serial guard proves
+  the detector can see independence when a deliberately non-domain label is
+  supplied.
+
+Future M2 work should not reopen support, quota, selector, tie-completion,
+ambient-size, or deletion-critical variants until a newly predeclared domain
+channel passes this admission gate. This is a finite admission/control artifact
+only: it is not a universal no-go theorem, not a claim move, and not cross-repo or
+physics evidence.

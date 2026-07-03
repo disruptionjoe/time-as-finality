@@ -191,3 +191,23 @@ Only a full-accounting synthetic packet is admitted as a future review target.
 T439 does not promote H7, derive a thermodynamic arrow, prove a stochastic-
 thermodynamic or catalytic resource theorem, update the claim ledger, or
 authorize public posture.
+
+## Internal support update (2026-07-03): ideal-limit / sector-lock routing gate
+
+T440 (`results/T440-ideal-limit-sector-lock-routing-gate-v0.1-results.md`)
+implements the separate E1/E3/idealization spec that T439 required for exact
+ideal-limit and sector-lock packets.
+
+Verdict: `IDEAL_LIMIT_SECTOR_LOCK_ROUTING_GATE_BUILT_NO_PROMOTION`. Infinite
+barriers and exact sector bans without finite operational substrate route to
+H7-null idealization; gauge representative changes are not physical deletion;
+finite barriers, finite enforcement, leakage paths, compensating reservoirs,
+and reference resources route to absorber or E0/resource completion. E1 review
+requires a family-level limit packet with finite approximants, a predeclared
+limit invariant, and diverging recovery cost or nonlocality. E3 review requires
+an exact no-go on physical states that survives conserved-quantity, reservoir,
+boundary, reference, allowed-control, and A2 resource-lift audit.
+
+Only synthetic E1/E3 controls are admitted as future review targets. T440 does
+not promote H7, prove an E1 theorem, prove an E3 theorem, prove WAY, move the
+claim ledger, or authorize public posture.

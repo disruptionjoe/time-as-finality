@@ -217,3 +217,23 @@ stochastic-thermodynamic and information ledgers, exact catalyst return,
 negative control, repeated trajectory evidence, and a task-natural split that
 persists after matching. This is admission-only; it does not reopen H7, prove a
 thermodynamic arrow, move the claim ledger, or authorize public posture.
+
+## Status Addendum (2026-07-03): ideal-limit / sector-lock routing gate
+
+T440 implements the separate E1/E3/idealization spec named by T439:
+`results/T440-ideal-limit-sector-lock-routing-gate-v0.1-results.md`; spec
+`tests/T440-ideal-limit-sector-lock-routing-gate.md`; model
+`models/ideal_limit_sector_lock_routing_gate.py`.
+
+Verdict: `IDEAL_LIMIT_SECTOR_LOCK_ROUTING_GATE_BUILT_NO_PROMOTION`. Infinite
+barriers and exact sector bans without finite operational substrate are
+H7-null idealizations; gauge representative changes are not physical deletion;
+finite enforcement, leakage paths, reservoirs, and reference resources are
+absorbers or E0 completions. Future E1 review needs a family-level limit packet
+with finite approximants, a predeclared limit invariant, and diverging recovery
+cost/nonlocality. Future E3 review needs an exact no-go that survives absorber
+matching and A2 resource/reference-lift audit.
+
+Only synthetic E1/E3 controls are admitted for future review. This does not
+reopen H7, prove an E1 limit theorem, prove an E3 no-go theorem, prove WAY,
+move the claim ledger, or authorize public posture.

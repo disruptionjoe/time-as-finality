@@ -133,3 +133,56 @@ One-way rule strict: GU / TI / ai-epistemology / architecture-of-legitimacy are
 its own object. Recorded-tier; no claim promotion; no ledger/TESTS.md edit; single-
 process ceiling; honest ceiling (finite-witness + canonicity argument, not a
 universal theorem). Prep only — the swing pauses for Joe's go.
+
+---
+
+## ADDENDUM 2026-07-02 -- M2 swing run (Route B): outcome = REDESIGN
+
+The M2 swing was executed via **Route B** (finite discrete backbone: List-Pettit
+discursive dilemma / doctrinal paradox as the observer-game). Recorded at
+`results/T423-m2-observer-game-v0.1-results.md` (model `models/m2_observer_game.py`,
+18/18 tests pass, exact `Fraction` arithmetic, n=3 fully enumerated). Only code
+import is TaF-native T413; one-way rule held (verified by static + runtime import
+audit).
+
+**What landed (survives adversarial audit).**
+- **Genuine dilemma.** Frozen profile p=(1,1,0), q=(1,0,1), r_i=p_i&q_i=(1,0,0):
+  judges individually consistent, collective inconsistent (maj-p=maj-q=1 accept r
+  via premises; maj-r=0 rejects r). Strict 2/3 majorities, no tie artifact.
+- **Global-no-local (atomic k=1).** The gap game v_gap = P(S)-C(S) is EXACTLY the
+  unanimity game u_N: 0 on all 7 proper coalitions, 1 only on N. SURVIVES-R1;
+  collective verdict reconstructible from NO proper subset. *Caveat:* this strict
+  no-local-witness property is an **atomic knife-edge** -- it FAILS under k>=2
+  replication (a one-of-each-type size-3 sub-coalition reproduces the dilemma). The
+  non-atomic limit preserves only Delta = v_gap(N) = 1 with vanishing atoms.
+- **Aumann-Shapley IS the separator.** phi = (1/3,1/3,1/3), d(N)=1 IS T413 Pair-2's
+  SURVIVES-R1 grand-dividend (structurally, not a fresh number). Two independent
+  Shapley routines agree; a rigged u_12 decouples value-sums-to-1 from
+  datum-location, proving SURVIVES-R1 tracks location, not efficiency.
+- **Finality-specific cross-application un-pre-empted** (prior-art partial; see
+  below).
+
+**What did NOT land -- the predeclared REDESIGN kill fired.** The M2 target was
+**canonicity**: one datum computed by TWO independent descriptions. The two on
+offer -- coalition-lattice Shapley d(N) and proposition-lattice MI-set omega -- both
+equal 1, BUT `v_gap(S) == dilemma_indicator(S)` as set functions over all 8
+coalitions: **one majority primitive read twice, not two channels.** Off the frozen
+fixture the readings diverge (collective triple (0,0,1): omega=2, indicator=1), so
+the same-datum equality is a category-relative point coincidence. This is exactly
+the kill this prep note predeclared -- *"only computable in one hand-picked category
+(category-relative, as T422) -> REDESIGN."* **T422's ceiling recurs.**
+
+**Prior-art (partial).** The generic "Shapley value of an inconsistency /
+MI-set obstruction measure" connection is pre-empted (Livshits & Kimelfeld,
+arXiv:2009.13819). The finality-specific piece -- discursive-dilemma gap-game value
+with the no-local-witness / non-atomic-legitimacy framing -- is not pre-empted
+(~7 targeted searches).
+
+**Verdict: REDESIGN, not GO, not ABANDON.** Keep the finite witness + the
+cross-application (synthesis tier, method not evidence). To reach GO, the canonicity
+leg must be rebuilt on a second description that does **not** reduce to the
+coalition-majority primitive -- a genuinely independent channel (e.g. the optional
+Route-A H^1/index reading, provided it is not a set-function relabel of the majority
+verdict). Absent that, the finality datum is **finite-witnessed but not canonically
+computed.** Recorded-tier; no promotion; TESTS.md / CLAIM-LEDGER.md untouched; not
+committed; pauses for Joe.

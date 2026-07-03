@@ -43,7 +43,8 @@ frame ⊂ A_all):
 
 - **E1** ≈ TaF game / Aumann–Shapley non-atomic limit (T413).
 - **E2** ≈ TaF computational finality (T417); the computational-arrow swing is
-  recorded as T419 REDESIGN, so any remaining novelty is a redesign/abandon
+  recorded as T419 REDESIGN, and T420 hardens the finite-cycle anti-relabel gate,
+  so any remaining novelty is a family-level period-hardness redesign/abandon
   question (`open-problems/computational-finality-arrow.md`).
 - **E3** ≈ **GU** structural-symmetry no-go (antilinear index-nullity / Krein
   grading) — one-way adjacency, never cited as support.

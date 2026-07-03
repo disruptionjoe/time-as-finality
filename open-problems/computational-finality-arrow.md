@@ -143,3 +143,33 @@ asymmetry (likely impossible for a finite permutation on a toy), the K4 demotion
 consequence governs — **demote to T417**, and per K5 treat any survivor as synthesis,
 not a novel result. The v0.1 results doc's original "no kill fired" verdict is
 retracted. No claim promotion; ledger and next-step decision pause for Joe.
+
+---
+
+## Guardrail outcome - 2026-07-02 (T420 v0.1)
+
+T420 does **not** take the redesign/abandon decision. It formalizes the finite-cycle
+anti-relabel gate created by T419's K4 failure:
+`results/T420-finite-cycle-anti-relabel-gate-v0.1-results.md`; spec
+`tests/T420-finite-cycle-anti-relabel-gate.md`; model
+`models/finite_cycle_anti_relabel_gate.py`.
+
+**Guardrail:** on a closed finite public permutation, if a state lies on a cycle of
+length `L`, its predecessor is recovered by public forward iteration:
+
+```text
+predecessor(y) = F^(L-1)(y)
+```
+
+Applied to T419's `QR_77` squaring permutation, every cycle is publicly reversible
+within at most three forward steps; the seed-4 orbit is `4 -> 16 -> 25 -> 9 -> 4`,
+so the predecessor of `4` is `9` by `F^3` without trapdoor. A bounded long-cycle
+control shows that failure inside a small search bound is not arrow evidence by
+itself; it is only a pointer to the need for a declared family-level period-hardness
+assumption or a different regime.
+
+**Consequence for any later D2 redesign:** it cannot rely on a toy finite public
+cycle. It must declare and defend family-level period hardness, change the agent's
+public transition knowledge, leave the closed public-permutation regime, or demote
+the temporal story to T417's static E2 boundary. No claim promotion; ledger and the
+redesign/abandon decision still pause for Joe.

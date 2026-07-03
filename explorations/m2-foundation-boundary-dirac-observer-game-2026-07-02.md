@@ -227,3 +227,30 @@ T422's hand-picked category.
 computed** by the value route (T423) or the index route (T424) — the honest ceiling,
 now with a proof-shaped diagnosis rather than a bare negative. No claim promotion;
 ledger untouched; pauses for Joe.
+
+## Addendum - Support-family closure gate (T430): bounded REDESIGN closure
+
+After Route A failed, the bounded support-family escape hatches were tested as
+T425-T429 and summarized by T430
+(`results/T430-m2-support-completion-closure-gate-v0.1-results.md`). T430 is a
+recorded-tier closure artifact, not a universal no-go theorem.
+
+**Verdict: REDESIGN_M2_BOUNDED_SUPPORT_COMPLETION_CLOSURE.** Within the tested
+AND-doctrine judgment-state universe (`n in {3,4,5}`, states `(00,01,10,11)`), the
+post-T424 support-family rescues all close:
+
+- the inherited strict-majority separator is atomic to n=3 and has no larger
+  target at n=4 or n=5;
+- threshold positives are size-matched testbeds whose clean readings leak
+  support/quota-step data;
+- common nonquota full-judgment selectors are full-support completions;
+- the only separator object stable at both n=4 and n=5 reads ambient support
+  shape directly.
+
+Future M2 work should not keep varying support counts, quota thresholds, selector
+tie-completions, or simple support/graph separator objects inside this same
+four-state finite family. A new attempt must move off this support-family universe
+or predeclare an independent measurement channel with no-completion controls for
+support counts, ambient size, quota step, selector/tie completion, and
+proper-subset deletion-critical wording. No claim promotion; TESTS.md, ROADMAP.md,
+CLAIM-LEDGER.md, North Star, canon, and public posture remain untouched.

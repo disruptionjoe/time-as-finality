@@ -6,7 +6,8 @@
 > judgment aggregation, cooperative game theory) is the OBJECT OF STUDY, never
 > evidence for physics or a sibling repo. ONE-WAY RULE holds: GU / TI /
 > ai-epistemology are vocabulary and template only; the only code import is
-> TaF-native T413. Do NOT commit (per orchestrator instruction).
+> TaF-native T413. Committed as recorded-tier in `68f814b`; no claim promotion,
+> `TESTS.md`, or `CLAIM-LEDGER.md` movement is earned.
 
 - Spec (frozen first): `tests/T423-m2-observer-game.md`
 - Model: `models/m2_observer_game.py`

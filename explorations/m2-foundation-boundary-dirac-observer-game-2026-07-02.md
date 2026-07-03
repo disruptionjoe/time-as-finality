@@ -184,5 +184,6 @@ leg must be rebuilt on a second description that does **not** reduce to the
 coalition-majority primitive -- a genuinely independent channel (e.g. the optional
 Route-A H^1/index reading, provided it is not a set-function relabel of the majority
 verdict). Absent that, the finality datum is **finite-witnessed but not canonically
-computed.** Recorded-tier; no promotion; TESTS.md / CLAIM-LEDGER.md untouched; not
-committed; pauses for Joe.
+computed.** Recorded-tier; no promotion; TESTS.md / CLAIM-LEDGER.md untouched;
+committed as recorded-tier in `68f814b`. The Route-A redesign lane remains a
+separate follow-up; no claim move follows from T423.

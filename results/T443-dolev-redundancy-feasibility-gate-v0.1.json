@@ -1,0 +1,199 @@
+{
+  "test_id": "T443",
+  "title": "Dolev Redundancy Feasibility Gate",
+  "tier": "recorded / finite admission gate",
+  "theorem_boundary": "Known consensus-theory feasibility condition, encoded here as an audit gate: n >= 3f + 1 and vertex connectivity >= 2f + 1 in the synchronous point-to-point Byzantine setting.",
+  "targets": [
+    "A1",
+    "D1 holder-redundancy axis"
+  ],
+  "not_claimed": [
+    "thermodynamic surcharge",
+    "H7 physical arrow",
+    "new distributed-systems theorem",
+    "claim-ledger movement",
+    "public-posture movement"
+  ],
+  "overall_verdict": "DOLEV_REDUNDANCY_FEASIBILITY_GATE_BUILT_NO_COST_CLAIM",
+  "checks": {
+    "line_star_cycle_complete_kappas": true,
+    "f1_requires_three_vertex_connectivity": true,
+    "f2_requires_seven_nodes_and_five_connectivity": true,
+    "t442_graphs_reframed_as_feasibility_not_cost": true,
+    "f0_reduces_to_plain_connectivity": true,
+    "no_thermodynamic_cost_claim_reintroduced": true,
+    "all_passed": true
+  },
+  "audits": {
+    "t442_line_k5_f0": {
+      "fixture_id": "t442_line_k5_f0",
+      "graph_name": "line",
+      "n": 5,
+      "faults": 0,
+      "vertex_connectivity": 1,
+      "required_nodes": 1,
+      "required_vertex_connectivity": 1,
+      "admitted": true,
+      "blockers": [],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_ADMITTED_NO_COST_CLAIM"
+    },
+    "t442_line_k5_f1": {
+      "fixture_id": "t442_line_k5_f1",
+      "graph_name": "line",
+      "n": 5,
+      "faults": 1,
+      "vertex_connectivity": 1,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": false,
+      "blockers": [
+        "vertex_connectivity_below_2f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "t442_star_k5_f1": {
+      "fixture_id": "t442_star_k5_f1",
+      "graph_name": "star",
+      "n": 5,
+      "faults": 1,
+      "vertex_connectivity": 1,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": false,
+      "blockers": [
+        "vertex_connectivity_below_2f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "t442_cycle_k5_f1": {
+      "fixture_id": "t442_cycle_k5_f1",
+      "graph_name": "cycle",
+      "n": 5,
+      "faults": 1,
+      "vertex_connectivity": 2,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": false,
+      "blockers": [
+        "vertex_connectivity_below_2f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "t442_complete_k5_f1": {
+      "fixture_id": "t442_complete_k5_f1",
+      "graph_name": "complete",
+      "n": 5,
+      "faults": 1,
+      "vertex_connectivity": 4,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": true,
+      "blockers": [],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_ADMITTED_NO_COST_CLAIM"
+    },
+    "complete_k4_f1_minimal_pass": {
+      "fixture_id": "complete_k4_f1_minimal_pass",
+      "graph_name": "complete",
+      "n": 4,
+      "faults": 1,
+      "vertex_connectivity": 3,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": true,
+      "blockers": [],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_ADMITTED_NO_COST_CLAIM"
+    },
+    "cycle_k4_f1_connectivity_fail": {
+      "fixture_id": "cycle_k4_f1_connectivity_fail",
+      "graph_name": "cycle",
+      "n": 4,
+      "faults": 1,
+      "vertex_connectivity": 2,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": false,
+      "blockers": [
+        "vertex_connectivity_below_2f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "k33_f1_pass": {
+      "fixture_id": "k33_f1_pass",
+      "graph_name": "complete_bipartite_3_3",
+      "n": 6,
+      "faults": 1,
+      "vertex_connectivity": 3,
+      "required_nodes": 4,
+      "required_vertex_connectivity": 3,
+      "admitted": true,
+      "blockers": [],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_ADMITTED_NO_COST_CLAIM"
+    },
+    "complete_k6_f2_node_count_fail": {
+      "fixture_id": "complete_k6_f2_node_count_fail",
+      "graph_name": "complete",
+      "n": 6,
+      "faults": 2,
+      "vertex_connectivity": 5,
+      "required_nodes": 7,
+      "required_vertex_connectivity": 5,
+      "admitted": false,
+      "blockers": [
+        "node_count_below_3f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "cycle_k7_f2_connectivity_fail": {
+      "fixture_id": "cycle_k7_f2_connectivity_fail",
+      "graph_name": "cycle",
+      "n": 7,
+      "faults": 2,
+      "vertex_connectivity": 2,
+      "required_nodes": 7,
+      "required_vertex_connectivity": 5,
+      "admitted": false,
+      "blockers": [
+        "vertex_connectivity_below_2f_plus_1"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    },
+    "complete_k7_f2_minimal_pass": {
+      "fixture_id": "complete_k7_f2_minimal_pass",
+      "graph_name": "complete",
+      "n": 7,
+      "faults": 2,
+      "vertex_connectivity": 6,
+      "required_nodes": 7,
+      "required_vertex_connectivity": 5,
+      "admitted": true,
+      "blockers": [],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_ADMITTED_NO_COST_CLAIM"
+    },
+    "disconnected_f0_fail": {
+      "fixture_id": "disconnected_f0_fail",
+      "graph_name": "disconnected_pair",
+      "n": 4,
+      "faults": 0,
+      "vertex_connectivity": 0,
+      "required_nodes": 1,
+      "required_vertex_connectivity": 1,
+      "admitted": false,
+      "blockers": [
+        "not_connected"
+      ],
+      "cost_claim_made": false,
+      "verdict": "D1_HOLDER_REDUNDANCY_FEASIBILITY_BLOCKED_NO_COST_CLAIM"
+    }
+  }
+}

@@ -90,6 +90,16 @@ calibration only. The next positive Direction-A attempt must bring a concrete
 predeclared law or measured substrate-dynamics packet that clears T434 before it
 re-runs the discriminator.
 
+T445 runs that next big swing with a finite Z2 conservation-law packet. It clears
+the T434 admission shape and does not reduce to transition-table
+underdescription: R-supported statistics and interventions remain equal while a
+boundary compensator changes revision capability by the predeclared law. The
+result is still absorbed by explicit law-sector completion, and a reference
+resource removes the split. So T445 is a useful finite law-packet calibration,
+not a region-indexed discriminator success and not claim support. A stronger
+packet must make the law-sector completion itself physically non-admissible, not
+merely outside R.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

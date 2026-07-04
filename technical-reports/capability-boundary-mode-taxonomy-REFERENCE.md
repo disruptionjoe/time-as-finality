@@ -136,6 +136,25 @@ witness that survives the resource-lift audit. T436 is not a WAY theorem, not a
 quantum physics claim, not a GU/TaF adapter, not cross-repo evidence, and not a
 claim promotion.
 
+## Internal support update (2026-07-04): quantum E3 exact no-go big swing
+
+T447 (`results/T447-quantum-e3-exact-no-go-big-swing-v0.1-results.md`) attempts
+the first finite exact-no-go packet after the T435/T436 A1/A2 discipline.
+
+Verdict:
+`QUANTUM_E3_FINITE_CATALYTIC_NO_GO_PACKET_BUILT_RECORDED_TIER_NOT_UNRESTRICTED_ABSOLUTE`.
+In a finite two-sector charge toy, exact charge flip under a declared finite
+non-wrapping exact-catalyst A2 policy would require a nonzero unit-modulus
+eigenvector of a finite nilpotent shift; none exists. This survives only relative
+to that declared finite catalytic policy. Cyclic references, consumed references,
+ideal phase references, and the T435 phase-reference control route away from an
+unrestricted absolute E3 claim.
+
+This is a recorded-tier finite toy packet. It is not a WAY theorem, not a quantum
+physics claim, not a GU/TaF adapter, not cross-repo evidence, and not claim-ledger
+movement. Stronger E3 attempts must type the resource policy before the task and
+handle cyclic, consumed, and ideal-reference absorbers.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits
@@ -190,6 +209,25 @@ This is routing support for the internal taxonomy, not D2 progress at claim
 level. It does not redesign or abandon D2, prove a computational arrow, prove
 cryptographic hardness, make a physics claim, update the claim ledger, or
 authorize public posture.
+
+## Internal support update (2026-07-04): E2 family/open-regime packet swing
+
+T446 (`results/T446-e2-family-open-regime-big-swing-v0.1-results.md`) runs the
+first recorded-tier positive packet swing after T438/T444.
+
+Verdict:
+`E2_OPEN_RABIN_LIFT_PACKET_SURVIVES_SCREEN_WITH_T417_CHAIN_RESIDUAL_NO_D2_DECISION`.
+The open Rabin-lift chain clears T438/T444 routing and the main absorber screen:
+public transition, injective open dynamics, information-theoretic reversal, named
+Rabin/factoring hardness, no E1 cost basis, no symmetric complexity-growth basis,
+and no hidden transition policy. The result remains recorded-tier because the
+hard part may still be chained T417/Rabin static inversion, and the lift carries
+growth debt.
+
+This is D2/E2 routing support and candidate-packet pressure, not D2 redesign,
+D2 success, claim support, cryptographic theorem, physics claim, or public
+posture. The next useful E2 question is whether coupled open iteration adds any
+theorem beyond per-step Rabin inversion.
 
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 

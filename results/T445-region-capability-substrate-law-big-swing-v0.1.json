@@ -1,0 +1,1613 @@
+{
+  "artifact": "T445-region-capability-substrate-law-big-swing-v0.1",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t434": "T434-substrate-law-admission-gate-v0.1",
+    "t406": "T406-transition-system-operation-unavailability-gate-v0.1",
+    "taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md"
+  },
+  "purpose": "Pressure-test whether a substrate-law packet can clear the post-T434 burden without becoming transition-table underdescription.",
+  "setup": {
+    "law": "finite Z2 charge conservation",
+    "region": "R observes only final-record payload and R charge sector",
+    "capability_object": "availability of revise_final_verdict under R-only, boundary, and reference-resource menus",
+    "revision_charge_delta": 1,
+    "r_menu": [
+      "read_verdict",
+      "append_neutral_annotation",
+      "try_local_revise",
+      "certify_verdict"
+    ],
+    "boundary_menu": [
+      "read_verdict",
+      "append_neutral_annotation",
+      "try_local_revise",
+      "certify_verdict",
+      "revise_with_boundary_compensator"
+    ],
+    "reference_menu": [
+      "read_verdict",
+      "append_neutral_annotation",
+      "try_local_revise",
+      "certify_verdict",
+      "revise_with_boundary_compensator",
+      "borrow_reference_compensator"
+    ],
+    "declared_before_pair": true
+  },
+  "t434_admission_audits": {
+    "main_z2_conservation_packet": {
+      "candidate_id": "main_z2_conservation_packet",
+      "description": "T445 finite Z2 conservation-law packet deriving revision availability from admitted compensator charge.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "z2_charge_conservation_boundary_packet",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise_final_verdict is admitted iff the local revision charge delta plus an admitted compensator charge is neutral mod 2",
+        "substrate_observables": [
+          "revision_charge_delta",
+          "admitted_compensator_charge",
+          "total_Z2_charge_neutrality"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": true,
+      "residue_label": "admitted_conservation_law_forced_transition_candidate",
+      "reason": "The law packet is predeclared, shared, substrate-native, and derives the transition relation without reading it."
+    },
+    "transition_table_restatement_control": {
+      "candidate_id": "transition_table_restatement_control",
+      "description": "T445 finite Z2 conservation-law packet deriving revision availability from admitted compensator charge.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "transition_table_restatement_control",
+        "source_kind": "transition_table",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": true,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise_final_verdict is admitted iff the local revision charge delta plus an admitted compensator charge is neutral mod 2",
+        "substrate_observables": [
+          "revision_charge_delta",
+          "admitted_compensator_charge",
+          "total_Z2_charge_neutrality"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_transition_table_restatement",
+      "reason": "The package restates the transition relation it is supposed to force."
+    },
+    "post_hoc_law_control": {
+      "candidate_id": "post_hoc_law_control",
+      "description": "T445 finite Z2 conservation-law packet deriving revision availability from admitted compensator charge.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "post_hoc_law_control",
+        "source_kind": "conservation_law",
+        "declared_before_pair": false,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": false,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise_final_verdict is admitted iff the local revision charge delta plus an admitted compensator charge is neutral mod 2",
+        "substrate_observables": [
+          "revision_charge_delta",
+          "admitted_compensator_charge",
+          "total_Z2_charge_neutrality"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "not_admitted_post_hoc_law",
+      "reason": "The law package was not frozen before the pair was selected."
+    },
+    "hidden_label_law_control": {
+      "candidate_id": "hidden_label_law_control",
+      "description": "T445 finite Z2 conservation-law packet deriving revision availability from admitted compensator charge.",
+      "capability_split": true,
+      "fixed_accounting_projection_equal": true,
+      "transition_system_completion_equal": false,
+      "law_package": {
+        "package_id": "hidden_label_law_control",
+        "source_kind": "conservation_law",
+        "declared_before_pair": true,
+        "shared_formula_across_pair": true,
+        "reads_transition_relation": false,
+        "reads_case_id_or_hidden_label": true,
+        "uses_allowed_substrate_observables": true,
+        "preserves_fixed_accounting": true,
+        "derives_declared_transition_relation": true,
+        "has_negative_control": true,
+        "measurement_replicates": 0,
+        "formula": "revise_final_verdict is admitted iff the local revision charge delta plus an admitted compensator charge is neutral mod 2",
+        "substrate_observables": [
+          "revision_charge_delta",
+          "admitted_compensator_charge",
+          "total_Z2_charge_neutrality"
+        ]
+      },
+      "synthetic_positive_control": false,
+      "admitted": false,
+      "residue_label": "blocked_hidden_label_law",
+      "reason": "The package reads a hidden case label rather than substrate data."
+    }
+  },
+  "pair_audits": [
+    {
+      "pair_id": "main_boundary_compensator_pair",
+      "menu_policy": "boundary",
+      "left": {
+        "case_id": "compensator_available",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "right": {
+        "case_id": "no_compensator",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 0,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": true,
+        "observational_statistics_equal": true,
+        "interventional_statistics_equal": true,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": true,
+      "law_sector_completion_equal": false,
+      "transition_system_completion_equal": false,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": false,
+          "revision_blocked_reason": "Z2_charge_conservation_without_admitted_compensator",
+          "available_compensator_charge": 0,
+          "menu_policy": "boundary"
+        },
+        "differs": true,
+        "differing_fields": [
+          "can_revise_final_verdict",
+          "revision_blocked_reason",
+          "available_compensator_charge"
+        ]
+      },
+      "hidden_selector_shortcut_attempt": false
+    },
+    {
+      "pair_id": "r_only_no_split_control",
+      "menu_policy": "R_only",
+      "left": {
+        "case_id": "compensator_available",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "right": {
+        "case_id": "no_compensator",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 0,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": true,
+        "observational_statistics_equal": true,
+        "interventional_statistics_equal": true,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": true,
+      "law_sector_completion_equal": true,
+      "transition_system_completion_equal": true,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": false,
+          "revision_blocked_reason": "Z2_charge_conservation_without_admitted_compensator",
+          "available_compensator_charge": 0,
+          "menu_policy": "R_only"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": false,
+          "revision_blocked_reason": "Z2_charge_conservation_without_admitted_compensator",
+          "available_compensator_charge": 0,
+          "menu_policy": "R_only"
+        },
+        "differs": false,
+        "differing_fields": []
+      },
+      "hidden_selector_shortcut_attempt": false
+    },
+    {
+      "pair_id": "reference_resource_lift_control",
+      "menu_policy": "reference_resource",
+      "left": {
+        "case_id": "compensator_available",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "right": {
+        "case_id": "no_compensator",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 0,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": true,
+        "observational_statistics_equal": true,
+        "interventional_statistics_equal": true,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": true,
+      "law_sector_completion_equal": true,
+      "transition_system_completion_equal": true,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "reference_resource"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "reference_resource"
+        },
+        "differs": false,
+        "differing_fields": []
+      },
+      "hidden_selector_shortcut_attempt": false
+    },
+    {
+      "pair_id": "matched_compensator_control",
+      "menu_policy": "boundary",
+      "left": {
+        "case_id": "compensator_available",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "right": {
+        "case_id": "compensator_available_copy",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": true,
+        "observational_statistics_equal": true,
+        "interventional_statistics_equal": true,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": true,
+      "law_sector_completion_equal": true,
+      "transition_system_completion_equal": true,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "differs": false,
+        "differing_fields": []
+      },
+      "hidden_selector_shortcut_attempt": false
+    },
+    {
+      "pair_id": "r_visible_charge_control",
+      "menu_policy": "boundary",
+      "left": {
+        "case_id": "compensator_available",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "right": {
+        "case_id": "visible_region_charge_control",
+        "verdict_payload": "same",
+        "region_charge": 1,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": null
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": false,
+        "observational_statistics_equal": false,
+        "interventional_statistics_equal": false,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 1,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "1": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "1": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "1": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "1": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": false,
+      "law_sector_completion_equal": false,
+      "transition_system_completion_equal": true,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "differs": false,
+        "differing_fields": []
+      },
+      "hidden_selector_shortcut_attempt": false
+    },
+    {
+      "pair_id": "hidden_selector_control",
+      "menu_policy": "boundary",
+      "left": {
+        "case_id": "hidden_alpha",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": "alpha"
+      },
+      "right": {
+        "case_id": "hidden_beta",
+        "verdict_payload": "same",
+        "region_charge": 0,
+        "correction_budget": 1,
+        "complement_compensator_charge": 1,
+        "record_support": "matched_final_record_cell",
+        "provenance_state": "matched_valid_provenance",
+        "control_class": "charge_respecting_control",
+        "hidden_selector_label": "beta"
+      },
+      "region_equality_certificate": {
+        "r_visible_projection_equal": true,
+        "observational_statistics_equal": true,
+        "interventional_statistics_equal": true,
+        "tested_r_interventions": [
+          "read_verdict",
+          "append_neutral_annotation",
+          "try_local_revise",
+          "certify_verdict"
+        ],
+        "left_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "right_r_projection": {
+          "verdict_payload": "same",
+          "region_charge": 0,
+          "correction_budget": 1,
+          "record_support": "matched_final_record_cell",
+          "provenance_state": "matched_valid_provenance",
+          "control_class": "charge_respecting_control",
+          "operation_menu": [
+            "read_verdict",
+            "append_neutral_annotation",
+            "try_local_revise",
+            "certify_verdict"
+          ],
+          "observable_algebra": "R_record_and_R_charge_only",
+          "boundary_access": "not_admitted"
+        },
+        "left_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        },
+        "right_r_interventions": {
+          "read_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "read_same"
+          },
+          "append_neutral_annotation": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "neutral_annotation_appended"
+          },
+          "try_local_revise": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "local_revision_blocked",
+            "failure_mode": "requires_admitted_compensator"
+          },
+          "certify_verdict": {
+            "verdict_distribution": {
+              "same": 1.0
+            },
+            "region_charge_distribution": {
+              "0": 1.0
+            },
+            "visible_revision_budget": 1,
+            "boundary_compensator_observable": "not_in_R_algebra",
+            "intervention_outcome": "certified_without_revision"
+          }
+        }
+      },
+      "fixed_accounting_projection_equal": true,
+      "law_sector_completion_equal": true,
+      "transition_system_completion_equal": true,
+      "left_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "right_derived_transition_edges": [
+        {
+          "operation": "append_neutral_annotation",
+          "source": "final_verdict_same",
+          "target": "neutral_annotation_appended"
+        },
+        {
+          "operation": "certify_verdict",
+          "source": "final_verdict_same",
+          "target": "certified_verdict_same"
+        },
+        {
+          "operation": "read_verdict",
+          "source": "final_verdict_same",
+          "target": "final_verdict_same"
+        },
+        {
+          "operation": "revise_final_verdict",
+          "source": "final_verdict_same",
+          "target": "revised_verdict_same"
+        }
+      ],
+      "capability": {
+        "left": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "right": {
+          "can_read_verdict": true,
+          "can_append_neutral_annotation": true,
+          "can_certify_verdict": true,
+          "can_revise_final_verdict": true,
+          "revision_blocked_reason": "none",
+          "available_compensator_charge": 1,
+          "menu_policy": "boundary"
+        },
+        "differs": false,
+        "differing_fields": []
+      },
+      "hidden_selector_shortcut_attempt": true
+    }
+  ],
+  "absorber_audit": {
+    "t434_substrate_law_admission": {
+      "status": "passes",
+      "residue_label": "admitted_conservation_law_forced_transition_candidate",
+      "reason": "The Z2 packet is predeclared, shared, substrate-native, and derives boundary revision availability without reading edges."
+    },
+    "transition_table_underdescription": {
+      "status": "does_not_fire_for_main_packet",
+      "transition_table_restatement_admitted": false,
+      "reason": "The main packet derives the revise edge from the conservation formula; the explicit transition-table restatement control is rejected by T434."
+    },
+    "r_supported_statistics_and_interventions": {
+      "status": "matched_for_main_pair",
+      "reason": "The main pair has identical R-visible projections, observations, and all tested R-supported intervention signatures."
+    },
+    "forced_boundary_task_shape": {
+      "status": "passes_shape_only",
+      "reason": "R-only local revision is blocked in both cases. Boundary revision is forced by the declared conservation formula because it needs an admitted compensator charge."
+    },
+    "ordinary_joint_record_or_law_sector_completion": {
+      "status": "absorbs_recorded_result",
+      "main_pair_law_sector_completion_equal": false,
+      "factorization_check": {
+        "checked_pairs": 36,
+        "matched_law_sector_completion_pairs": 7,
+        "violations": [],
+        "capability_factors_through_law_sector_completion": true
+      },
+      "reason": "Once the admitted compensator sector is added to the state description, capability factors. The result is not a new region-indexed discriminator success."
+    },
+    "resource_reference_lift": {
+      "status": "relative_only",
+      "reference_resource_pair_split": false,
+      "reason": "If a reference compensator resource is admitted, both sides can revise; the boundary split is relative to the declared A-class."
+    },
+    "causal_domain_and_latch_absorbers": {
+      "status": "not_the_explaining_difference_here",
+      "reason": "The finite packet holds record payload, provenance, control, and local operation menu fixed. The live explaining difference is the law-sector compensator, not causal reachability or latch topology."
+    },
+    "claim_promotion": {
+      "status": "blocked",
+      "reason": "Recorded-tier pressure test only; no ledger or public posture move."
+    }
+  },
+  "overall_verdict": {
+    "verdict": "SUBSTRATE_LAW_PACKET_CLEARS_T434_NOT_TRANSITION_TABLE_UNDERDESCRIPTION_BUT_FACTORS_THROUGH_LAW_SECTOR_COMPLETION",
+    "t434_main_packet_admitted": true,
+    "main_pair_r_statistics_equal": true,
+    "main_pair_r_interventions_equal": true,
+    "r_only_pair_splits": false,
+    "boundary_pair_splits": true,
+    "reference_resource_pair_splits": false,
+    "transition_table_restatement_rejected": true,
+    "law_sector_completion_absorbs": true,
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "The Z2 conservation packet is a real post-T434 shape in the finite model: it derives the revise edge from a predeclared law rather than from a transition table, while R-supported statistics and interventions remain equal. The honest ceiling is still absorptive: admitting the compensator sector restores ordinary law-sector factorization, and a reference resource removes the split."
+  },
+  "honest_ceiling": "Recorded-tier finite substrate-law pressure test only. The packet clears T434 as a law-forced transition shape and avoids transition-table underdescription, but it is still absorbed by explicit law-sector completion. It is not a real physics law, not a WAY theorem, not a region-indexed discriminator success, and not claim-ledger movement.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Treat this as a recorded finite law-packet calibration, not a discriminator success.",
+    "A stronger packet must make the law-sector completion itself physically non-admissible, not merely hidden from R.",
+    "Keep future attempts paired with T434 admission and T436-style resource-lift reporting."
+  ]
+}

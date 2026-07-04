@@ -1,0 +1,436 @@
+{
+  "artifact": "T447-quantum-e3-exact-no-go-big-swing-v0.1",
+  "source_taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md",
+  "source_t435": "results/T435-quantum-e3-admissible-menu-gate-v0.1-results.md",
+  "source_t436": "results/T436-quantum-e3-resource-lift-classifier-v0.1-results.md",
+  "purpose": "Attempt a finite exact structural-symmetry no-go packet after the T435/T436 A1/A2 discipline, while recording any route back to relative/not-absolute.",
+  "declared_packet": {
+    "system": "two-sector charge toy with system charges {0, 1}",
+    "target_task": "exact charge-flip unitary on the system",
+    "a1_policy": "no reference resource; exact charge-conserving operations",
+    "a2_policy": "finite non-wrapping charge-ladder reference; exact total-charge conservation; exact catalytic return",
+    "exact_witness": "finite nilpotent shift has no nonzero unit-modulus eigenvector"
+  },
+  "case_audits": [
+    {
+      "case_id": "finite_nonwrapping_exact_catalyst_charge_flip",
+      "description": "Main packet: exact charge flip under total charge conservation with a finite non-wrapping A2 reference that must be returned exactly.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "finite_nonwrapping_exact_catalyst",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": {
+        "reference_model": "finite_nonwrapping_charge_ladder",
+        "dimension": 5,
+        "shift_operator": "unilateral_weighted_shift",
+        "nilpotent_power": 5,
+        "requires_nonzero_unit_modulus_eigenvector": true,
+        "has_nonzero_unit_modulus_eigenvector": false,
+        "proof_obligation": "S eta = lambda eta with |lambda| = 1",
+        "proof": "Finite non-wrapping shifts are nilpotent. If S^N = 0 and S eta = lambda eta with |lambda| = 1, then 0 = S^N eta = lambda^N eta, so eta = 0. Exact catalytic return needs a nonzero eta, contradiction."
+      },
+      "survives_declared_finite_a2_resource_lift": true,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "FINITE_A2_EXACT_CATALYTIC_NO_GO_SURVIVES_TOY_RESOURCE_LIFT",
+      "reason": "The charge flip would require a nonzero unit-modulus eigenvector of a finite non-wrapping shift. The shift is nilpotent, so the exact catalyst equation has only the zero solution."
+    },
+    {
+      "case_id": "a1_only_missing_a2_audit",
+      "description": "A case that clears A1 but never runs the A2 resource-lift audit.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "missing_a2_audit",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": false,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "A1_RELATIVE_ONLY_A2_RESOURCE_LIFT_UNTESTED",
+      "reason": "The case clears only the A1 obstruction; A2 has not been audited."
+    },
+    {
+      "case_id": "finite_reference_may_be_consumed",
+      "description": "Finite charge resource without exact catalytic return is resource completion, not an exact no-go.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "finite_reference_may_be_consumed",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": false,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "RESOURCE_COMPLETION_REFERENCE_MAY_CHANGE_NOT_ABSOLUTE",
+      "reason": "Without exact catalytic return, the finite reference can be spent or changed; that is resource completion, not an exact A2 no-go."
+    },
+    {
+      "case_id": "consumed_charge_battery_control",
+      "description": "A declared consumed charge battery supplies the missing charge.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "consumed_charge_battery",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "consumed_charge_battery",
+        "exact_catalyst_return_required": false,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": null,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "RESOURCE_COMPLETION_CONSUMED_REFERENCE_NOT_ABSOLUTE",
+      "reason": "A consumable charge battery changes state to supply the charge. That is an A2 resource completion, not an exact catalytic no-go."
+    },
+    {
+      "case_id": "cyclic_reference_control",
+      "description": "A finite cyclic reference has exact shift eigenvectors and blocks unrestricted overclaiming.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "cyclic_reference",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_cyclic_charge_reference",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": {
+        "reference_model": "finite_cyclic_charge_reference",
+        "dimension": 5,
+        "shift_operator": "cyclic_shift",
+        "nilpotent_power": null,
+        "requires_nonzero_unit_modulus_eigenvector": true,
+        "has_nonzero_unit_modulus_eigenvector": true,
+        "example_eigenvector": "uniform superposition over cyclic charges",
+        "control_reading": "A cyclic reference is a different toy policy. It has exact shift eigenvectors, so the finite non-wrapping nilpotent no-go does not survive this control."
+      },
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "LIFTED_BY_CYCLIC_REFERENCE_TOY_CONTROL",
+      "reason": "A cyclic reference has exact shift eigenvectors, so this control blocks reading the non-wrapping finite no-go as unrestricted."
+    },
+    {
+      "case_id": "ideal_phase_reference_control",
+      "description": "An ideal phase reference is outside the finite exact packet.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "ideal_phase_reference",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "ideal_phase_reference",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": null,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "ROUTES_TO_IDEAL_OR_LIMIT_REFERENCE_NOT_FINITE_EXACT",
+      "reason": "An ideal phase reference is outside the finite non-wrapping toy. It routes to idealization/E1-style review or an E0 ideal-reference policy."
+    },
+    {
+      "case_id": "post_hoc_exact_witness_blocked",
+      "description": "A no-go witness chosen after seeing the target is blocked.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "post_hoc_exact_witness",
+        "declared_before_task": false,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "BLOCKED_POST_HOC_NO_GO_WITNESS",
+      "reason": "The no-go/resource policy was selected after the task."
+    },
+    {
+      "case_id": "hidden_label_oracle_blocked",
+      "description": "A policy that reads a hidden case label is blocked.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "hidden_label_oracle",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": true
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "BLOCKED_HIDDEN_LABEL_OR_CASE_ID",
+      "reason": "The packet reads a hidden case label rather than the declared state/task."
+    },
+    {
+      "case_id": "large_resource_cost_only_control",
+      "description": "Large resource burden alone routes to E1/E2, not exact E3.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "exact_charge_flip_unitary",
+      "target_changes_system_charge": true,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "A1_EXACT_STRUCTURAL_OBSTRUCTION_CHARGE_CHANGE_NO_REFERENCE",
+        "a1_reason": "With no reference resource and exact charge conservation, A1 cannot implement a system operation that changes the charge sector."
+      },
+      "policy": {
+        "policy_id": "large_resource_cost_only",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": true,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "NOT_EXACT_E3_COST_ONLY_E1_E2_CANDIDATE",
+      "reason": "Large resource cost is not an exact single-instance no-go."
+    },
+    {
+      "case_id": "a1_visible_task_control",
+      "description": "A control where A1 already sees or can do the task.",
+      "regime": "finite_quantum_charge_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "sector_population_readout",
+      "target_changes_system_charge": false,
+      "a1_shadow_equal_or_task_invisible": false,
+      "a1_audit": {
+        "a1_structural_obstruction": false,
+        "a1_label": "A1_ALREADY_SEES_OR_CAN_DO_TASK",
+        "a1_reason": "A1 is not blind to the candidate distinction or task."
+      },
+      "policy": {
+        "policy_id": "a1_visible_task_control",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "finite_nonwrapping_charge_ladder",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": 5,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": null,
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "NOT_E3_A1_BASELINE_FAILED",
+      "reason": "A1 is not blind to the candidate distinction or task."
+    },
+    {
+      "case_id": "t435_phase_pair_relative_control",
+      "description": "The T435/T436 phase pair remains the relative-not-absolute control.",
+      "regime": "finite_quantum_parity_phase_toy",
+      "system_charge_sectors": [
+        0,
+        1
+      ],
+      "task_kind": "relative_phase_separator",
+      "target_changes_system_charge": false,
+      "a1_shadow_equal_or_task_invisible": true,
+      "a1_audit": {
+        "a1_structural_obstruction": true,
+        "a1_label": "T435_A1_RELATIVE_PHASE_OBSTRUCTION_CONTROL",
+        "a1_reason": "The T435 phase pair is A1-equivalent under the parity shadow and separated only by the A2 reference policy."
+      },
+      "policy": {
+        "policy_id": "t435_phase_reference_control",
+        "declared_before_task": true,
+        "a2_reference_resource_considered": true,
+        "reference_kind": "t435_phase_reference_control",
+        "exact_catalyst_return_required": true,
+        "total_charge_conservation_required": true,
+        "exact_no_go_witness_predeclared": true,
+        "reference_dimension": null,
+        "resource_cost_only_large_not_impossible": false,
+        "reads_hidden_label_or_case_id": false
+      },
+      "certificate": {
+        "source_case_id": "t435_phase_pair_lifted_by_a2_reference",
+        "t436_label": "A1_RELATIVE_LIFTED_TO_E0_BY_A2_REFERENCE",
+        "t436_absolute_after_resource_lift": false,
+        "control_reading": "The T435 phase pair remains the relative-not-absolute control: A2 reference resources recover the separator."
+      },
+      "survives_declared_finite_a2_resource_lift": false,
+      "unrestricted_absolute_e3_earned": false,
+      "resource_lift_label": "T435_CONTROL_A1_RELATIVE_LIFTED_BY_A2_REFERENCE",
+      "reason": "The T435 phase pair remains relative to A1 and lifted by A2."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "QUANTUM_E3_FINITE_CATALYTIC_NO_GO_PACKET_BUILT_RECORDED_TIER_NOT_UNRESTRICTED_ABSOLUTE",
+    "main_case_label": "FINITE_A2_EXACT_CATALYTIC_NO_GO_SURVIVES_TOY_RESOURCE_LIFT",
+    "main_case_survives_declared_finite_a2": true,
+    "finite_a2_survivor_case_ids": [
+      "finite_nonwrapping_exact_catalyst_charge_flip"
+    ],
+    "unrestricted_absolute_e3_case_ids": [],
+    "routed_not_absolute_control_case_ids": [
+      "consumed_charge_battery_control",
+      "cyclic_reference_control",
+      "ideal_phase_reference_control",
+      "t435_phase_pair_relative_control"
+    ],
+    "reading": "T447 gets a positive finite toy packet: under the declared finite non-wrapping exact-catalyst A2 policy, exact charge-flip would require a nonzero unit-modulus eigenvector of a nilpotent shift, which is impossible. The artifact still does not earn an unrestricted absolute E3 result, because cyclic, consumed, ideal, and T435-style reference policies route away from the finite catalytic no-go."
+  },
+  "honest_ceiling": "Recorded-tier finite toy only. T447 builds an exact no-go relative to a declared finite non-wrapping exact-catalyst A2 policy. It is not a WAY theorem, not a quantum physics claim, not a GU/TaF adapter, not cross-repo evidence, not claim-ledger movement, and not an unrestricted absolute E3 result.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Treat the main case as finite exact-catalytic A2 residue only.",
+    "Do not cite this as a WAY theorem or public quantum-physics claim.",
+    "Any stronger E3 attempt must type the resource policy before the task and handle cyclic, consumed, and ideal-reference absorbers."
+  ]
+}

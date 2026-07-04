@@ -229,3 +229,30 @@ T438.
 separate-regime packet. T444 admission is not D2 redesign, D2 success, claim
 support, crypto theorem, physics evidence, or public posture. No claim promotion;
 ledger and the redesign/abandon decision still pause for Joe.
+
+---
+
+## Packet-swing outcome - 2026-07-04 (T446 v0.1)
+
+T446 still does **not** take the redesign/abandon decision. It runs the first
+recorded-tier positive packet swing after T438/T444:
+`results/T446-e2-family-open-regime-big-swing-v0.1-results.md`; spec
+`tests/T446-e2-family-open-regime-big-swing.md`; model
+`models/e2_family_open_regime_big_swing.py`.
+
+**Packet:** an open Rabin-lift chain. Given `x_t in QR(N_t)`, compute
+`r_t = x_t^2 mod N_t`, then lift `x_{t+1} = r_t^2` as an integer QR element in
+`N_{t+1}`, with `N_{t+1} > N_t^2`. The public transition, domain tags, and lift
+law are frozen; the claimed forcing burden is Rabin square-root/factoring
+hardness at the current Blum modulus.
+
+**Verdict:** `E2_OPEN_RABIN_LIFT_PACKET_SURVIVES_SCREEN_WITH_T417_CHAIN_RESIDUAL_NO_D2_DECISION`.
+The packet clears T438/T444 routing and survives the literal absorber screen:
+open/nonpermutation dynamics, information-theoretic reversal, named hardness, no
+E1 cost basis, no symmetric complexity-growth basis, and no hidden transition
+policy. The toy arithmetic remains crackable and is used only to check algebra.
+
+**Residual:** the strongest absorber is still that the hard part may be only
+chained T417/Rabin static inversion. The next useful D2 move is to prove or kill
+whether coupled open iteration adds any theorem beyond per-step Rabin inversion.
+No claim promotion; ledger and the redesign/abandon decision still pause for Joe.

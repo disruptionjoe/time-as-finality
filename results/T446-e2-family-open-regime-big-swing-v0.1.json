@@ -1,0 +1,305 @@
+{
+  "artifact": "T446-e2-family-open-regime-big-swing-v0.1",
+  "sources": {
+    "d2_open_problem": "open-problems/computational-finality-arrow.md",
+    "t417": "results/T417-computational-finality-boundary-v0.1-results.md",
+    "t438": "results/T438-e2-period-hardness-admission-gate-v0.1-results.md",
+    "t444": "results/T444-e2-changed-transition-regime-gate-v0.1-results.md"
+  },
+  "purpose": "Attempt the strongest safe next E2 packet after T438/T444: a family-level open/nonpermutation Rabin-lift chain that tests whether computational finality can avoid T417 static relabel, finite-cycle toy reversal, pure ignorance, E1 cost, and symmetric complexity growth.",
+  "family_packet": {
+    "name": "open_rabin_lift_chain",
+    "security_parameter": "minimum bit length of each public Blum modulus in the family; the concrete schedule is only an executable algebra sanity check",
+    "symbolic_update": "Given x_t in QR(N_t), compute r_t = x_t^2 mod N_t, then lift x_{t+1} = r_t^2 as an integer QR element in N_{t+1}, with N_{t+1} > N_t^2.",
+    "public_transition": "all N_t values, domain tags, and lift law are public",
+    "private_trapdoor": "factorizations of the N_t values",
+    "hardness_assumption": "Rabin square-root/factoring hardness for the current Blum modulus at each backward step",
+    "not_used_as_evidence": [
+      "toy non-recovery",
+      "state-size growth",
+      "thermodynamic cost",
+      "unknown transition policy"
+    ]
+  },
+  "schedule_audit": {
+    "rows": [
+      {
+        "label": "N0_T417_T419",
+        "p": 7,
+        "q": 11,
+        "n": 77,
+        "qr_size": 15,
+        "is_blum_prime_pair": true,
+        "next_n_gt_n_squared": true
+      },
+      {
+        "label": "N1_lift_domain",
+        "p": 83,
+        "q": 103,
+        "n": 8549,
+        "qr_size": 2091,
+        "is_blum_prime_pair": true,
+        "next_n_gt_n_squared": true
+      },
+      {
+        "label": "N2_lift_domain",
+        "p": 9007,
+        "q": 9011,
+        "n": 81162077,
+        "qr_size": 20286015,
+        "is_blum_prime_pair": true
+      }
+    ],
+    "all_blum_prime_pairs": true,
+    "all_next_moduli_leave_injective_lift_room": true
+  },
+  "gate_routes": {
+    "t438": {
+      "packet": {
+        "packet_id": "t446_open_rabin_lift_chain_packet",
+        "description": "Open/nonpermutation Rabin-lift family packet for T446.",
+        "closed_public_permutation_regime": false,
+        "family_level_declared": true,
+        "security_parameter_declared": true,
+        "public_transition_known": true,
+        "finite_toy_arrow_claim": false,
+        "public_cycle_recovery_within_bound": false,
+        "bounded_nonrecovery_used_as_evidence": false,
+        "period_problem_declared": false,
+        "period_hardness_assumption_named": false,
+        "period_hardness_reduction_predeclared": false,
+        "point_inversion_hardness_only": false,
+        "thermodynamic_or_erasure_cost_basis": false,
+        "symmetric_complexity_growth_basis": false,
+        "single_instance_physical_claim": false,
+        "post_hoc_or_pair_specific_policy": false,
+        "hidden_label_or_private_selector": false,
+        "changed_public_transition_knowledge": false,
+        "open_or_nonpermutation_regime": true
+      },
+      "admitted_for_future_d2_work": false,
+      "route": "separate_spec_required",
+      "label": "ROUTE_TO_DIFFERENT_REGIME_SPEC",
+      "reason": "The packet leaves the closed public-permutation regime. It may be worth a separate spec, but T438 does not admit it as the D2 E2 packet."
+    },
+    "t444": {
+      "packet": {
+        "packet_id": "t446_open_rabin_lift_chain_packet",
+        "description": "Open/nonpermutation Rabin-lift family packet for T446.",
+        "closed_public_permutation_regime": false,
+        "changed_public_transition_knowledge": false,
+        "open_or_nonpermutation_regime": true,
+        "family_level_declared": true,
+        "security_parameter_declared": true,
+        "agent_access_boundary_declared": false,
+        "transition_evidence_frozen": true,
+        "transition_update_law_predeclared": true,
+        "public_verification_or_audit_trail": true,
+        "hardness_or_unpredictability_burden_named": true,
+        "predeclared_reduction_or_theorem_target": true,
+        "distinguishes_capability_from_ignorance": true,
+        "post_hoc_or_pair_specific_policy": false,
+        "hidden_selector_or_private_oracle": false,
+        "thermodynamic_or_erasure_cost_basis": false,
+        "symmetric_complexity_growth_basis": false,
+        "bounded_toy_only": false,
+        "resource_or_environment_completion_absorbs": false,
+        "claims_d2_success": false
+      },
+      "admitted_for_separate_spec_review": true,
+      "route": "admitted_as_separate_spec_target",
+      "label": "ADMITTED_OPEN_NONPERMUTATION_SEPARATE_SPEC_NO_D2_DECISION",
+      "reason": "The packet freezes the family, dynamics law, evidence, audit trail, and forcing burden. It is admitted only as a separate-regime review target."
+    }
+  },
+  "chain_trace": {
+    "seed": 4,
+    "steps": [
+      {
+        "step": 0,
+        "current_modulus": {
+          "label": "N0_T417_T419",
+          "p": 7,
+          "q": 11,
+          "n": 77,
+          "qr_size": 15,
+          "is_blum_prime_pair": true
+        },
+        "next_modulus": {
+          "label": "N1_lift_domain",
+          "p": 83,
+          "q": 103,
+          "n": 8549,
+          "qr_size": 2091,
+          "is_blum_prime_pair": true
+        },
+        "x_t": 4,
+        "rabin_image": 16,
+        "x_next": 256,
+        "public_lift_inverse": 16,
+        "public_lift_inverse_matches_rabin_image": true,
+        "trapdoor_predecessor": 4,
+        "trapdoor_predecessor_matches_x_t": true,
+        "brute_force_predecessor": 4,
+        "brute_force_predecessor_matches_x_t": true,
+        "public_cycle_predecessor": 4,
+        "public_cycle_predecessor_matches_x_t": true,
+        "public_cycle_steps": 3,
+        "injective_lift_room": true,
+        "x_next_in_next_qr_by_construction": true
+      },
+      {
+        "step": 1,
+        "current_modulus": {
+          "label": "N1_lift_domain",
+          "p": 83,
+          "q": 103,
+          "n": 8549,
+          "qr_size": 2091,
+          "is_blum_prime_pair": true
+        },
+        "next_modulus": {
+          "label": "N2_lift_domain",
+          "p": 9007,
+          "q": 9011,
+          "n": 81162077,
+          "qr_size": 20286015,
+          "is_blum_prime_pair": true
+        },
+        "x_t": 256,
+        "rabin_image": 5693,
+        "x_next": 32410249,
+        "public_lift_inverse": 5693,
+        "public_lift_inverse_matches_rabin_image": true,
+        "trapdoor_predecessor": 256,
+        "trapdoor_predecessor_matches_x_t": true,
+        "brute_force_predecessor": 256,
+        "brute_force_predecessor_matches_x_t": true,
+        "public_cycle_predecessor": 256,
+        "public_cycle_predecessor_matches_x_t": true,
+        "public_cycle_steps": 39,
+        "injective_lift_room": true,
+        "x_next_in_next_qr_by_construction": true
+      }
+    ],
+    "domain_labels": [
+      "N0_T417_T419",
+      "N1_lift_domain",
+      "N2_lift_domain"
+    ],
+    "domain_moduli": [
+      77,
+      8549,
+      81162077
+    ],
+    "closed_public_permutation_regime": false,
+    "transition_count": 2
+  },
+  "rabin_reductions": [
+    {
+      "modulus": {
+        "label": "N0_T417_T419",
+        "p": 7,
+        "q": 11,
+        "n": 77,
+        "qr_size": 15,
+        "is_blum_prime_pair": true
+      },
+      "rabin_reduction_exhibited": {
+        "witness_w": 2,
+        "oracle_root": 9,
+        "nontrivial_factor": 7,
+        "cofactor": 11
+      },
+      "sqrt_oracle_yields_factor": true,
+      "hardness_basis": "Rabin square-root inversion is equivalent to factoring for Blum integers; exhibited here only as a toy reduction."
+    },
+    {
+      "modulus": {
+        "label": "N1_lift_domain",
+        "p": 83,
+        "q": 103,
+        "n": 8549,
+        "qr_size": 2091,
+        "is_blum_prime_pair": true
+      },
+      "rabin_reduction_exhibited": {
+        "witness_w": 2,
+        "oracle_root": 3401,
+        "nontrivial_factor": 103,
+        "cofactor": 83
+      },
+      "sqrt_oracle_yields_factor": true,
+      "hardness_basis": "Rabin square-root inversion is equivalent to factoring for Blum integers; exhibited here only as a toy reduction."
+    }
+  ],
+  "absorber_screen": [
+    {
+      "id": "t438_t444_route",
+      "status": "survives",
+      "passed": true,
+      "reading": "The packet is not admitted as a closed public-permutation period packet; it routes through T444 and is coherent enough for this separate-regime swing."
+    },
+    {
+      "id": "information_present_reversal_exists",
+      "status": "survives",
+      "passed": true,
+      "reading": "Each current state has a unique predecessor on the image: the public lift inverse exposes the Rabin image, and the trapdoor principal square root recovers x_t."
+    },
+    {
+      "id": "finite_cycle_toy_absorber",
+      "status": "survives_with_toy_caveat",
+      "passed": true,
+      "reading": "The packet is open/nonpermutation because the public state moves from domain t to domain t+1. The toy moduli are still crackable by same-modulus cycle search, so toy non-recovery is not used as evidence.",
+      "toy_public_cycle_crackable": true
+    },
+    {
+      "id": "static_t417_relabel_absorber",
+      "status": "partial_residual",
+      "passed": true,
+      "reading": "Literal static relabel does not fire: the next state is produced by a coupled transition from the previous state, and two steps are chained. The residual absorber remains strong: the hardness source is still per-step Rabin/T417 inversion."
+    },
+    {
+      "id": "pure_ignorance_absorber",
+      "status": "survives",
+      "passed": true,
+      "reading": "The public moduli, update law, domain tags, lift inverse, and audit trace are frozen. The missing object is the factorization trapdoor, not a hidden transition rule."
+    },
+    {
+      "id": "e1_thermodynamic_cost_absorber",
+      "status": "survives",
+      "passed": true,
+      "reading": "The transition is injective on its declared image. No erasure, heat, reservoir, or Landauer cost is used as the lock."
+    },
+    {
+      "id": "symmetric_complexity_growth_absorber",
+      "status": "survives_with_growth_debt",
+      "passed": true,
+      "reading": "The packet does not use a growing complexity monotone as evidence; with trapdoors, reversal is cheap despite the larger next domain. The open lift has storage-growth debt and is not by itself an arrow."
+    },
+    {
+      "id": "named_hardness_reduction",
+      "status": "survives_conditionally",
+      "passed": true,
+      "reading": "The forcing burden is named: Rabin square-root/factoring for each current Blum modulus. This is cited/conditional, not proven."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "E2_OPEN_RABIN_LIFT_PACKET_SURVIVES_SCREEN_WITH_T417_CHAIN_RESIDUAL_NO_D2_DECISION",
+    "screen_passed": true,
+    "residual_absorbers": [
+      "static_t417_relabel_absorber",
+      "symmetric_complexity_growth_absorber"
+    ],
+    "reading": "The open Rabin-lift packet is the strongest safe candidate found in this swing. It clears the literal gate and absorber checks as a recorded-tier candidate packet: public transition, injective open dynamics, information-theoretic reversal, named Rabin hardness, and no reliance on E1 cost or symmetric complexity growth. It still carries a serious residual: the hard part is per-step Rabin/T417 inversion, so the packet may be a chained static boundary rather than a new D2 arrow theorem.",
+    "d2_decision": "none; redesign/abandon remains separately gated",
+    "claim_ledger_update": "none; no claim promotion",
+    "toy_status": "toy arithmetic is crackable and used only to check algebra, not to evidence hardness"
+  },
+  "recommended_next": [
+    "Try to prove or kill the T417-chain residual: does coupled open iteration add any theorem beyond per-step Rabin inversion?",
+    "Try to replace the size-growing lift with a bounded-growth open family, or record growth as a resource-completion absorber.",
+    "Keep any future result recorded-tier until it earns a separate theorem or separation."
+  ],
+  "honest_ceiling": "Recorded-tier packet swing only. T446 does not redesign or abandon D2, does not promote a claim, does not prove factoring hardness, does not make a physics claim, and does not authorize public posture. The strongest residual absorber is that the packet may be only a chained T417/Rabin static boundary with an open lift."
+}

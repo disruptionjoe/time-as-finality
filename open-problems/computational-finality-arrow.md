@@ -307,3 +307,28 @@ unless it changes the theorem obligation; it should either formulate the exact
 hidden-order cycle-length assumption/reduction/lower-bound burden or demote the
 temporal route back to T417's static E2 boundary. No claim promotion; ledger and
 the broader redesign/abandon decision still pause for Joe.
+
+---
+
+## Period-oracle trapdoor outcome - 2026-07-04 (T450 v0.1)
+
+T450 stress-tests whether the T449 hidden-order period target is independent of
+the T417/Rabin trapdoor:
+`results/T450-e2-period-oracle-trapdoor-equivalence-v0.1-results.md`; spec
+`tests/T450-e2-period-oracle-trapdoor-equivalence.md`; model
+`models/e2_period_oracle_trapdoor_equivalence.py`.
+
+**Verdict:** `PERIOD_ORACLE_COLLAPSES_TO_RABIN_TRAPDOOR_NO_INDEPENDENT_D2_ROUTE`.
+For the current closed public-squaring route, an all-target period oracle is
+trapdoor-strength. A target period gives the unique predecessor by public forward
+iteration, and that predecessor oracle is the principal square-root oracle.
+Rabin's square-root oracle reduction then factors `N`. Conversely,
+group-order/factorization completion computes periods.
+
+**Consequence:** the current closed public-squaring period route has no
+independent finite-witness residue beyond the standard Rabin/factoring boundary.
+D2 should continue only if a nonstandard period assumption is specified with
+scope that avoids both single-seed weakness and all-target trapdoor equivalence.
+Otherwise the temporal D2 route should be demoted to T417's static E2 boundary in
+a separate governed decision packet. No claim promotion; ledger and the broader
+redesign/abandon decision still pause for Joe.

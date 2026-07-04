@@ -267,6 +267,28 @@ seed-distribution controls. It does not redesign or abandon D2, prove period
 hardness, prove a computational arrow, prove cryptographic hardness, make a
 physics claim, update the claim ledger, or authorize public posture.
 
+## Internal support update (2026-07-04): E2 period-oracle trapdoor equivalence
+
+T450 (`results/T450-e2-period-oracle-trapdoor-equivalence-v0.1-results.md`)
+stress-tests whether T449's hidden-order period route is independent of the
+T417/Rabin trapdoor.
+
+Verdict:
+`PERIOD_ORACLE_COLLAPSES_TO_RABIN_TRAPDOOR_NO_INDEPENDENT_D2_ROUTE`. For the
+current closed public-squaring route, an all-target period oracle gives unique
+predecessors; Rabin's square-root oracle reduction factors `N` from that
+predecessor oracle. Conversely, group-order/factorization completion computes
+periods.
+
+This absorbs the current closed public-squaring period route as Rabin/factoring
+trapdoor equivalence. It does not redesign or abandon D2, prove period hardness,
+prove a computational arrow, prove cryptographic hardness, make a physics claim,
+update the claim ledger, or authorize public posture. Continuing D2 now requires
+a nonstandard period assumption with a declared scope that avoids both
+single-seed weakness and all-target trapdoor equivalence; otherwise the temporal
+route should be demoted to T417's static E2 boundary in a separate governed
+decision packet.
+
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 
 T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)

@@ -248,6 +248,25 @@ posture. Future D2 work needs either T438-style true family-level period hardnes
 or a packet whose chain inversion is not product-decomposable into public unwraps
 plus independent step inversions.
 
+## Internal support update (2026-07-04): E2 period-hardness packet audit
+
+T449 (`results/T449-e2-period-hardness-packet-audit-v0.1-results.md`) sharpens
+T438's remaining closed public-permutation route after T448.
+
+Verdict:
+`E2_PERIOD_HARDNESS_PACKET_SHARPENED_TO_HIDDEN_ORDER_THEOREM_TARGET_NO_D2_DECISION`.
+For BBS-style public squaring on `QR_N`, `F_N^t(x) = x^(2^t)`, and if
+`d = ord_N(x)`, the orbit period is `L = ord_d(2)`. Once `L` is known,
+predecessor recovery is public forward iteration. In the toy family, the formula
+matches public cycle discovery and known period recovers predecessors. Granting
+`|QR_N|` is recorded as trapdoor completion because `N` and `|QR_N|` recover
+`p,q` in the semiprime setting.
+
+This keeps D2 alive only as a hidden-order / cycle-length theorem target with
+seed-distribution controls. It does not redesign or abandon D2, prove period
+hardness, prove a computational arrow, prove cryptographic hardness, make a
+physics claim, update the claim ledger, or authorize public posture.
+
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 
 T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)

@@ -1,0 +1,341 @@
+{
+  "artifact": "T449-e2-period-hardness-packet-audit-v0.1",
+  "sources": {
+    "d2_open_problem": "open-problems/computational-finality-arrow.md",
+    "t420": "results/T420-finite-cycle-anti-relabel-gate-v0.1-results.md",
+    "t438": "results/T438-e2-period-hardness-admission-gate-v0.1-results.md",
+    "t448": "results/T448-e2-chain-residual-factorization-v0.1-results.md"
+  },
+  "purpose": "After T448 absorbed the open-chain route, sharpen T438's closed public-permutation period-hardness path into an exact hidden-order theorem target.",
+  "packet": {
+    "name": "bbs_hidden_order_period_packet",
+    "transition": "F_N(x) = x^2 mod N on QR_N",
+    "security_parameter": "bit length of N in a Blum-integer family",
+    "period_problem": "Given public N, seed x in QR_N, and y = F_N(x), recover x by determining the orbit period L and computing F_N^(L-1)(y).",
+    "named_burden": "hidden-order/cycle-length hardness for public squaring in RSA/Blum groups; theorem target only in this repo artifact",
+    "not_used_as_evidence": [
+      "bounded toy non-recovery",
+      "single fixed finite instance",
+      "point square-root inversion alone",
+      "thermodynamic cost",
+      "symmetric complexity growth"
+    ]
+  },
+  "t438_route": {
+    "packet": {
+      "packet_id": "t449_bbs_hidden_order_period_packet",
+      "description": "Closed public squaring family over QR_N; reversal is public once the orbit period is known; period hardness remains a theorem target.",
+      "closed_public_permutation_regime": true,
+      "family_level_declared": true,
+      "security_parameter_declared": true,
+      "public_transition_known": true,
+      "finite_toy_arrow_claim": false,
+      "public_cycle_recovery_within_bound": false,
+      "bounded_nonrecovery_used_as_evidence": false,
+      "period_problem_declared": true,
+      "period_hardness_assumption_named": true,
+      "period_hardness_reduction_predeclared": true,
+      "point_inversion_hardness_only": false,
+      "thermodynamic_or_erasure_cost_basis": false,
+      "symmetric_complexity_growth_basis": false,
+      "single_instance_physical_claim": false,
+      "post_hoc_or_pair_specific_policy": false,
+      "hidden_label_or_private_selector": false,
+      "changed_public_transition_knowledge": false,
+      "open_or_nonpermutation_regime": false
+    },
+    "admitted_for_future_d2_work": true,
+    "route": "admitted_as_future_target",
+    "label": "ADMITTED_E2_PERIOD_HARDNESS_REDESIGN_PACKET_NO_D2_DECISION",
+    "reason": "The packet declares the family, security parameter, public transition, period/reversal problem, named hardness assumption, and predeclared reduction target. It is admitted only as a future E2 redesign target."
+  },
+  "family_period_audit": {
+    "family": [
+      {
+        "label": "N0_T419_control",
+        "p": 7,
+        "q": 11,
+        "n": 77,
+        "qr_size": 15
+      },
+      {
+        "label": "N1_hidden_order_control",
+        "p": 11,
+        "q": 19,
+        "n": 209,
+        "qr_size": 45
+      },
+      {
+        "label": "N2_hidden_order_control",
+        "p": 23,
+        "q": 31,
+        "n": 713,
+        "qr_size": 165
+      },
+      {
+        "label": "N3_hidden_order_control",
+        "p": 83,
+        "q": 103,
+        "n": 8549,
+        "qr_size": 2091
+      },
+      {
+        "label": "N4_hidden_order_control",
+        "p": 131,
+        "q": 179,
+        "n": 23449,
+        "qr_size": 5785
+      }
+    ],
+    "rows": [
+      {
+        "modulus": {
+          "label": "N0_T419_control",
+          "p": 7,
+          "q": 11,
+          "n": 77,
+          "qr_size": 15
+        },
+        "seed": 4,
+        "order_of_seed": 15,
+        "period_formula": 4,
+        "period_by_public_iteration": 4,
+        "formula_matches_iteration": true,
+        "target_state": 16,
+        "predecessor_from_period": 4,
+        "period_known_reverses_target": true,
+        "qr_group_order_recovers_factorization": true,
+        "recovered_factors_from_qr_size": [
+          7,
+          11
+        ]
+      },
+      {
+        "modulus": {
+          "label": "N1_hidden_order_control",
+          "p": 11,
+          "q": 19,
+          "n": 209,
+          "qr_size": 45
+        },
+        "seed": 4,
+        "order_of_seed": 45,
+        "period_formula": 12,
+        "period_by_public_iteration": 12,
+        "formula_matches_iteration": true,
+        "target_state": 16,
+        "predecessor_from_period": 4,
+        "period_known_reverses_target": true,
+        "qr_group_order_recovers_factorization": true,
+        "recovered_factors_from_qr_size": [
+          11,
+          19
+        ]
+      },
+      {
+        "modulus": {
+          "label": "N2_hidden_order_control",
+          "p": 23,
+          "q": 31,
+          "n": 713,
+          "qr_size": 165
+        },
+        "seed": 9,
+        "order_of_seed": 165,
+        "period_formula": 20,
+        "period_by_public_iteration": 20,
+        "formula_matches_iteration": true,
+        "target_state": 81,
+        "predecessor_from_period": 9,
+        "period_known_reverses_target": true,
+        "qr_group_order_recovers_factorization": true,
+        "recovered_factors_from_qr_size": [
+          23,
+          31
+        ]
+      },
+      {
+        "modulus": {
+          "label": "N3_hidden_order_control",
+          "p": 83,
+          "q": 103,
+          "n": 8549,
+          "qr_size": 2091
+        },
+        "seed": 4,
+        "order_of_seed": 2091,
+        "period_formula": 40,
+        "period_by_public_iteration": 40,
+        "formula_matches_iteration": true,
+        "target_state": 16,
+        "predecessor_from_period": 4,
+        "period_known_reverses_target": true,
+        "qr_group_order_recovers_factorization": true,
+        "recovered_factors_from_qr_size": [
+          83,
+          103
+        ]
+      },
+      {
+        "modulus": {
+          "label": "N4_hidden_order_control",
+          "p": 131,
+          "q": 179,
+          "n": 23449,
+          "qr_size": 5785
+        },
+        "seed": 3,
+        "order_of_seed": 5785,
+        "period_formula": 132,
+        "period_by_public_iteration": 132,
+        "formula_matches_iteration": true,
+        "target_state": 9,
+        "predecessor_from_period": 3,
+        "period_known_reverses_target": true,
+        "qr_group_order_recovers_factorization": true,
+        "recovered_factors_from_qr_size": [
+          131,
+          179
+        ]
+      }
+    ],
+    "all_formula_match_iteration": true,
+    "all_period_known_reverses_target": true,
+    "all_qr_group_orders_recover_factorization": true,
+    "max_periods": [
+      4,
+      12,
+      20,
+      40,
+      132
+    ]
+  },
+  "small_period_seed_controls": [
+    {
+      "modulus": {
+        "label": "N0_T419_control",
+        "p": 7,
+        "q": 11,
+        "n": 77,
+        "qr_size": 15
+      },
+      "seed": 1,
+      "period_formula": 1,
+      "period_by_public_iteration": 1,
+      "period_known_reverses_target": true,
+      "admitted_as_period_hardness_evidence": false,
+      "reason": "Seed 1 is a fixed point. A period-hardness packet must declare the seed distribution or generator and reject small-period controls."
+    },
+    {
+      "modulus": {
+        "label": "N1_hidden_order_control",
+        "p": 11,
+        "q": 19,
+        "n": 209,
+        "qr_size": 45
+      },
+      "seed": 1,
+      "period_formula": 1,
+      "period_by_public_iteration": 1,
+      "period_known_reverses_target": true,
+      "admitted_as_period_hardness_evidence": false,
+      "reason": "Seed 1 is a fixed point. A period-hardness packet must declare the seed distribution or generator and reject small-period controls."
+    },
+    {
+      "modulus": {
+        "label": "N2_hidden_order_control",
+        "p": 23,
+        "q": 31,
+        "n": 713,
+        "qr_size": 165
+      },
+      "seed": 1,
+      "period_formula": 1,
+      "period_by_public_iteration": 1,
+      "period_known_reverses_target": true,
+      "admitted_as_period_hardness_evidence": false,
+      "reason": "Seed 1 is a fixed point. A period-hardness packet must declare the seed distribution or generator and reject small-period controls."
+    },
+    {
+      "modulus": {
+        "label": "N3_hidden_order_control",
+        "p": 83,
+        "q": 103,
+        "n": 8549,
+        "qr_size": 2091
+      },
+      "seed": 1,
+      "period_formula": 1,
+      "period_by_public_iteration": 1,
+      "period_known_reverses_target": true,
+      "admitted_as_period_hardness_evidence": false,
+      "reason": "Seed 1 is a fixed point. A period-hardness packet must declare the seed distribution or generator and reject small-period controls."
+    },
+    {
+      "modulus": {
+        "label": "N4_hidden_order_control",
+        "p": 131,
+        "q": 179,
+        "n": 23449,
+        "qr_size": 5785
+      },
+      "seed": 1,
+      "period_formula": 1,
+      "period_by_public_iteration": 1,
+      "period_known_reverses_target": true,
+      "admitted_as_period_hardness_evidence": false,
+      "reason": "Seed 1 is a fixed point. A period-hardness packet must declare the seed distribution or generator and reject small-period controls."
+    }
+  ],
+  "absorber_screen": [
+    {
+      "id": "t438_admission",
+      "status": "admitted_as_theorem_target",
+      "passed": true,
+      "reading": "The packet clears T438 as a future target because it declares the family, security parameter, public transition, period problem, named hidden-order burden, and theorem target."
+    },
+    {
+      "id": "period_formula_matches_public_cycle",
+      "status": "toy_formula_verified",
+      "passed": true,
+      "reading": "For the toy family, period = ord_{ord_N(x)}(2) matches public cycle discovery. This is algebra sanity, not hardness evidence."
+    },
+    {
+      "id": "known_period_publicly_reverses",
+      "status": "period_is_missing_capability_object",
+      "passed": true,
+      "reading": "Once the cycle period is known, predecessor recovery is just public forward iteration F^(L-1)."
+    },
+    {
+      "id": "group_order_completion_absorbs",
+      "status": "trapdoor_completion_recorded",
+      "passed": true,
+      "reading": "Granting QR group order is essentially trapdoor completion in the semiprime toy: N and |QR_N| recover p,q."
+    },
+    {
+      "id": "small_period_seed_controls",
+      "status": "seed_distribution_required",
+      "passed": true,
+      "reading": "The family alone is not enough. Small-period seeds collapse the period route, so future packets must declare a seed distribution or generator with small-period rejection controls."
+    },
+    {
+      "id": "hardness_theorem_gap",
+      "status": "open_theorem_obligation",
+      "passed": true,
+      "reading": "T449 proves no period-hardness theorem. The live D2 burden is a hidden-order/cycle-length lower bound or reduction, not another finite witness."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "E2_PERIOD_HARDNESS_PACKET_SHARPENED_TO_HIDDEN_ORDER_THEOREM_TARGET_NO_D2_DECISION",
+    "screen_passed": true,
+    "d2_decision": "none; redesign/abandon remains separately gated",
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "The best remaining D2 route is now sharply typed: a closed public squaring family where the missing capability object is the orbit period. If the period is known, reversal is public; if group-order trapdoor data is admitted, the toy family is completed. What is not earned is the hardness theorem. Future progress needs a real hidden-order/cycle-length reduction or lower-bound target, plus seed-distribution controls."
+  },
+  "recommended_next": [
+    "Do not build another finite D2 toy unless it changes the theorem obligation.",
+    "If D2 continues, write a theorem-target note for hidden-order cycle length: exact assumption, seed distribution, and reduction/lower-bound burden.",
+    "If no such theorem target is acceptable, demote the temporal route back to T417's static E2 boundary."
+  ],
+  "honest_ceiling": "Recorded-tier period-hardness packet audit only. T449 does not redesign or abandon D2, does not prove period hardness, does not prove factoring hardness, does not promote a claim, does not make a physics claim, and does not authorize public posture."
+}

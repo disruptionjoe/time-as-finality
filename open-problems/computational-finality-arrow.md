@@ -280,3 +280,30 @@ period-hardness path or supply a different packet whose chain inversion is not
 product-decomposable into public unwraps plus independent step inversions. No
 claim promotion; ledger and the broader redesign/abandon decision still pause for
 Joe.
+
+---
+
+## Period-hardness packet outcome - 2026-07-04 (T449 v0.1)
+
+T449 returns to T438's closed public-permutation path after T448 closed the
+open-chain route:
+`results/T449-e2-period-hardness-packet-audit-v0.1-results.md`; spec
+`tests/T449-e2-period-hardness-packet-audit.md`; model
+`models/e2_period_hardness_packet_audit.py`.
+
+**Verdict:** `E2_PERIOD_HARDNESS_PACKET_SHARPENED_TO_HIDDEN_ORDER_THEOREM_TARGET_NO_D2_DECISION`.
+For BBS-style public squaring on `QR_N`, `F_N^t(x) = x^(2^t)`, and if
+`d = ord_N(x)`, the orbit period is `L = ord_d(2)`. Once `L` is known,
+predecessor recovery is public forward iteration `F_N^(L-1)`. In the toy family,
+the formula matches public cycle discovery and known period recovers the
+predecessor. Granting `|QR_N|` is trapdoor completion: with semiprime `N=p*q`,
+`N` and `|QR_N|` recover `p,q`.
+
+**Consequence:** the best remaining D2 route is now sharply typed as a
+hidden-order / cycle-length theorem target with seed-distribution controls.
+Small-period seeds collapse the route, and finite toy period discovery is not
+hardness evidence. A future D2 continuation should not build another finite toy
+unless it changes the theorem obligation; it should either formulate the exact
+hidden-order cycle-length assumption/reduction/lower-bound burden or demote the
+temporal route back to T417's static E2 boundary. No claim promotion; ledger and
+the broader redesign/abandon decision still pause for Joe.

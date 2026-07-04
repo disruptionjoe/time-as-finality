@@ -1,0 +1,275 @@
+{
+  "artifact": "T448-e2-chain-residual-factorization-v0.1",
+  "sources": {
+    "d2_open_problem": "open-problems/computational-finality-arrow.md",
+    "t417": "results/T417-computational-finality-boundary-v0.1-results.md",
+    "t438": "results/T438-e2-period-hardness-admission-gate-v0.1-results.md",
+    "t444": "results/T444-e2-changed-transition-regime-gate-v0.1-results.md",
+    "t446": "results/T446-e2-family-open-regime-big-swing-v0.1-results.md"
+  },
+  "purpose": "Resolve the T446 residual by testing whether the open Rabin-lift chain adds a theorem beyond independent per-step Rabin/T417 inversion.",
+  "tested_packet": "T446 open Rabin-lift chain",
+  "factorization_audit": {
+    "expected_states_forward_order": [
+      4,
+      256,
+      32410249
+    ],
+    "inversion": {
+      "input_final_state": 32410249,
+      "schedule": [
+        {
+          "label": "N0_T417_T419",
+          "p": 7,
+          "q": 11,
+          "n": 77,
+          "qr_size": 15,
+          "is_blum_prime_pair": true
+        },
+        {
+          "label": "N1_lift_domain",
+          "p": 83,
+          "q": 103,
+          "n": 8549,
+          "qr_size": 2091,
+          "is_blum_prime_pair": true
+        },
+        {
+          "label": "N2_lift_domain",
+          "p": 9007,
+          "q": 9011,
+          "n": 81162077,
+          "qr_size": 20286015,
+          "is_blum_prime_pair": true
+        }
+      ],
+      "public_unwraps": [
+        {
+          "reverse_order": 0,
+          "step": 1,
+          "state_seen": 32410249,
+          "public_integer_sqrt": 5693,
+          "exact_square": true
+        },
+        {
+          "reverse_order": 1,
+          "step": 0,
+          "state_seen": 256,
+          "public_integer_sqrt": 16,
+          "exact_square": true
+        }
+      ],
+      "step_oracle_calls": [
+        {
+          "reverse_order": 0,
+          "step": 1,
+          "current_modulus_label": "N1_lift_domain",
+          "current_modulus_n": 8549,
+          "rabin_image": 5693,
+          "recovered_predecessor": 256
+        },
+        {
+          "reverse_order": 1,
+          "step": 0,
+          "current_modulus_label": "N0_T417_T419",
+          "current_modulus_n": 77,
+          "rabin_image": 16,
+          "recovered_predecessor": 4
+        }
+      ],
+      "step_oracle_call_count": 2,
+      "states_forward_order": [
+        4,
+        256,
+        32410249
+      ],
+      "states_reverse_order": [
+        32410249,
+        256,
+        4
+      ],
+      "decomposition": "ChainInverse = public_lift_unwraps + product of independent RabinStepInverse(N_t) calls."
+    },
+    "recovered_expected_states": true,
+    "transition_count": 2,
+    "oracle_call_count_equals_transition_count": true,
+    "oracle_moduli_reverse_order": [
+      8549,
+      77
+    ],
+    "public_unwraps_all_exact": true,
+    "new_global_oracle_needed": false
+  },
+  "length_one_embedding_audit": {
+    "current_modulus": {
+      "label": "N0_T417_T419",
+      "p": 7,
+      "q": 11,
+      "n": 77,
+      "qr_size": 15,
+      "is_blum_prime_pair": true
+    },
+    "next_modulus": {
+      "label": "N1_lift_domain",
+      "p": 83,
+      "q": 103,
+      "n": 8549,
+      "qr_size": 2091,
+      "is_blum_prime_pair": true
+    },
+    "challenge_predecessor": 4,
+    "rabin_image": 16,
+    "embedded_final_state": 256,
+    "one_step_schedule": [
+      {
+        "label": "N0_T417_T419",
+        "p": 7,
+        "q": 11,
+        "n": 77,
+        "qr_size": 15,
+        "is_blum_prime_pair": true
+      },
+      {
+        "label": "N1_lift_domain",
+        "p": 83,
+        "q": 103,
+        "n": 8549,
+        "qr_size": 2091,
+        "is_blum_prime_pair": true
+      }
+    ],
+    "recovered_predecessor": 4,
+    "recovers_rabin_predecessor": true,
+    "reading": "A one-step T446 chain is exactly a Rabin inversion challenge wrapped in a public integer-square lift. Any chain-inversion theorem would already contain the per-step Rabin inversion problem."
+  },
+  "no_coupling_control": {
+    "current_modulus": {
+      "label": "N0_T417_T419",
+      "p": 7,
+      "q": 11,
+      "n": 77,
+      "qr_size": 15,
+      "is_blum_prime_pair": true
+    },
+    "default_next_modulus": {
+      "label": "N1_lift_domain",
+      "p": 83,
+      "q": 103,
+      "n": 8549,
+      "qr_size": 2091,
+      "is_blum_prime_pair": true
+    },
+    "alternate_next_modulus": {
+      "label": "N1_alternate_lift_domain",
+      "p": 83,
+      "q": 107,
+      "n": 8881,
+      "qr_size": 2173,
+      "is_blum_prime_pair": true
+    },
+    "alternate_next_has_lift_room": true,
+    "rabin_image": 16,
+    "default_final": 256,
+    "alternate_final": 256,
+    "lift_state_identical": true,
+    "default_recovered_predecessor": 4,
+    "alternate_recovered_predecessor": 4,
+    "next_domain_changes_predecessor": false,
+    "reading": "Once the public lift has exposed the Rabin image, the next domain choice does not participate in predecessor recovery for this packet."
+  },
+  "missing_step_dependency_audit": [
+    {
+      "omitted_modulus_n": 77,
+      "omitted_modulus_label": "N0_T417_T419",
+      "available_step_oracle_moduli": [
+        8549
+      ],
+      "product_decomposition_can_run": false,
+      "blocked_reason": "The product decomposition needs the Rabin step oracle for N0_T417_T419; no cross-step coupling bypass is present in the current T446 packet."
+    },
+    {
+      "omitted_modulus_n": 8549,
+      "omitted_modulus_label": "N1_lift_domain",
+      "available_step_oracle_moduli": [
+        77
+      ],
+      "product_decomposition_can_run": false,
+      "blocked_reason": "The product decomposition needs the Rabin step oracle for N1_lift_domain; no cross-step coupling bypass is present in the current T446 packet."
+    },
+    {
+      "omitted_modulus_n": null,
+      "omitted_modulus_label": null,
+      "available_step_oracle_moduli": [
+        77,
+        8549
+      ],
+      "product_decomposition_can_run": true,
+      "recovered_expected_states": true
+    }
+  ],
+  "growth_debt_audit": {
+    "states_forward_order": [
+      4,
+      256,
+      32410249
+    ],
+    "state_bit_lengths": [
+      3,
+      9,
+      25
+    ],
+    "domain_modulus_bit_lengths": [
+      7,
+      14,
+      27
+    ],
+    "state_bits_non_decreasing": true,
+    "domain_bits_increase": true,
+    "reading": "The open lift still carries domain-growth debt. T448 does not treat growth as the lock; the lock factorizes through per-step Rabin inversion."
+  },
+  "absorber_screen": [
+    {
+      "id": "full_chain_inversion_factors_through_step_oracles",
+      "status": "residual_killed_for_current_packet",
+      "passed": true,
+      "reading": "Full T446-chain inversion decomposes into public unwraps plus one independent Rabin step inversion per transition."
+    },
+    {
+      "id": "length_one_embedding_is_rabin_step_problem",
+      "status": "no_new_chain_problem",
+      "passed": true,
+      "reading": "The one-step open chain embeds the ordinary T417/Rabin inversion problem, so a chain theorem would already include the step theorem."
+    },
+    {
+      "id": "next_domain_coupling_control",
+      "status": "no_coupling_detected",
+      "passed": true,
+      "reading": "Changing the next lift domain while preserving lift room does not change predecessor recovery in the current packet."
+    },
+    {
+      "id": "missing_step_oracle_dependency",
+      "status": "product_dependency_recorded",
+      "passed": true,
+      "reading": "If a per-step Rabin oracle is missing, the product decomposition blocks exactly at that modulus; T448 finds no bypass from chain coupling."
+    },
+    {
+      "id": "growth_debt_not_lock",
+      "status": "growth_debt_remains",
+      "passed": true,
+      "reading": "The open packet still grows domains, but growth is not doing the E2 locking work after factorization."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "T446_CHAIN_RESIDUAL_FACTORS_THROUGH_PER_STEP_RABIN_NO_NEW_D2_THEOREM",
+    "screen_passed": true,
+    "d2_decision": "none; redesign/abandon remains separately gated",
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "For the current T446 packet, coupled open iteration adds no new theorem beyond per-step Rabin inversion. Full-chain recovery factors through public lift unwraps and independent step oracles, and the length-one chain is already a Rabin inversion challenge. This kills the T446 residual as a positive D2 route, without abandoning the broader D2 open problem."
+  },
+  "recommended_next": [
+    "Treat the current T446 open Rabin-lift chain as absorbed by chained T417/Rabin inversion.",
+    "If D2 continues, require a packet whose chain inversion is not product-decomposable into public unwraps plus independent step inversions.",
+    "Alternatively return to T438 and pursue a true family-level period-hardness packet."
+  ],
+  "honest_ceiling": "Recorded-tier residual audit only. T448 clarifies the current T446 packet; it does not redesign or abandon D2, does not prove or refute factoring hardness, does not promote a claim, does not make a physics claim, and does not authorize public posture."
+}

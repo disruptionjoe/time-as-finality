@@ -229,6 +229,25 @@ D2 success, claim support, cryptographic theorem, physics claim, or public
 posture. The next useful E2 question is whether coupled open iteration adds any
 theorem beyond per-step Rabin inversion.
 
+## Internal support update (2026-07-04): E2 chain residual factorization
+
+T448 (`results/T448-e2-chain-residual-factorization-v0.1-results.md`) resolves
+the T446 residual for the current open Rabin-lift packet.
+
+Verdict:
+`T446_CHAIN_RESIDUAL_FACTORS_THROUGH_PER_STEP_RABIN_NO_NEW_D2_THEOREM`. Full-chain
+recovery factors through public integer-square lift unwraps plus one independent
+Rabin square-root inversion per current modulus. A length-one T446 chain already
+embeds the ordinary T417/Rabin inversion problem, and changing the next lift
+domain while preserving lift room does not change predecessor recovery.
+
+This absorbs the current T446 chain as chained T417/Rabin inversion. It does not
+redesign or abandon D2, prove a computational arrow, prove cryptographic
+hardness, make a physics claim, update the claim ledger, or authorize public
+posture. Future D2 work needs either T438-style true family-level period hardness
+or a packet whose chain inversion is not product-decomposable into public unwraps
+plus independent step inversions.
+
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 
 T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)

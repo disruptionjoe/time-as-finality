@@ -256,3 +256,27 @@ policy. The toy arithmetic remains crackable and is used only to check algebra.
 chained T417/Rabin static inversion. The next useful D2 move is to prove or kill
 whether coupled open iteration adds any theorem beyond per-step Rabin inversion.
 No claim promotion; ledger and the redesign/abandon decision still pause for Joe.
+
+---
+
+## Residual-audit outcome - 2026-07-04 (T448 v0.1)
+
+T448 resolves the T446 residual for the current open Rabin-lift packet:
+`results/T448-e2-chain-residual-factorization-v0.1-results.md`; spec
+`tests/T448-e2-chain-residual-factorization.md`; model
+`models/e2_chain_residual_factorization.py`.
+
+**Verdict:** `T446_CHAIN_RESIDUAL_FACTORS_THROUGH_PER_STEP_RABIN_NO_NEW_D2_THEOREM`.
+Full-chain recovery factors through public integer-square lift unwraps plus one
+independent Rabin square-root inversion for each current modulus. A length-one
+T446 chain already embeds the ordinary T417/Rabin inversion problem, and changing
+the next lift domain while preserving lift room does not change predecessor
+recovery.
+
+**Consequence:** the current T446 open Rabin-lift chain is absorbed as chained
+T417/Rabin inversion. This closes that positive route without abandoning D2. A
+future D2 continuation must either return to T438's true family-level
+period-hardness path or supply a different packet whose chain inversion is not
+product-decomposable into public unwraps plus independent step inversions. No
+claim promotion; ledger and the broader redesign/abandon decision still pause for
+Joe.

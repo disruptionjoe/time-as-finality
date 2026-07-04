@@ -172,6 +172,25 @@ It does not redesign or abandon D2, prove a computational arrow, prove
 cryptographic hardness, make a physics claim, update the claim ledger, or authorize
 public posture.
 
+## Internal support update (2026-07-04): E2 changed-transition regime gate
+
+T444 (`results/T444-e2-changed-transition-regime-gate-v0.1-results.md`) implements
+the separate-spec route that T438 required for changed-public-transition and
+open/nonpermutation packets.
+
+Verdict: `E2_CHANGED_TRANSITION_REGIME_GATE_BUILT_NO_D2_DECISION`. The gate
+admits only predeclared changed-transition or open/nonpermutation packets for
+separate-regime review. It rejects post-hoc/hidden transition policies,
+thermodynamic/E1 packets, Brown-Susskind symmetric-complexity packets, pure
+epistemic ignorance, unfrozen transition evidence, open packets with no dynamics
+law, and resource/environment completion. Closed public-permutation packets route
+back to T438.
+
+This is routing support for the internal taxonomy, not D2 progress at claim
+level. It does not redesign or abandon D2, prove a computational arrow, prove
+cryptographic hardness, make a physics claim, update the claim ledger, or
+authorize public posture.
+
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 
 T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)

@@ -201,3 +201,31 @@ closed-public-permutation D2.
 period-hardness packet fields. If that packet cannot be supplied, demote the
 temporal story to T417's static E2 boundary. No claim promotion; ledger and the
 redesign/abandon decision still pause for Joe.
+
+---
+
+## Separate-regime gate outcome - 2026-07-04 (T444 v0.1)
+
+T444 still does **not** take the redesign/abandon decision. It makes T438's
+"separate spec required" route executable for changed-public-transition and
+open/nonpermutation packets:
+`results/T444-e2-changed-transition-regime-gate-v0.1-results.md`; spec
+`tests/T444-e2-changed-transition-regime-gate.md`; model
+`models/e2_changed_transition_regime_gate.py`.
+
+**Gate:** changed-transition or open/nonpermutation packets are admitted only as
+separate-regime review targets if they freeze a family, security parameter,
+access boundary where applicable, transition evidence, update/dynamics law,
+public audit trail, capability-vs-ignorance distinction, forcing burden, and
+predeclared reduction or theorem target.
+
+The gate rejects post-hoc or hidden transition policies, thermodynamic/E1
+packets, Brown-Susskind symmetric-complexity packets, pure epistemic ignorance,
+unfrozen transition evidence, open packets with no dynamics law, and ordinary
+resource/environment completion. Closed public-permutation packets route back to
+T438.
+
+**Consequence for any later non-T438 D2 continuation:** first clear T444 as a
+separate-regime packet. T444 admission is not D2 redesign, D2 success, claim
+support, crypto theorem, physics evidence, or public posture. No claim promotion;
+ledger and the redesign/abandon decision still pause for Joe.

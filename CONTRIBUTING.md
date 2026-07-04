@@ -57,6 +57,15 @@ Promotion gates:
 - Preserve negative results and demotions as first-class progress.
 - Keep the recurring-structure map active: separate known mechanisms from the
   repo's possible contribution before naming novelty.
+- Promotion is agent-owned once these gates are met — it does not pause for Joe.
+  A hard promotion (raising a claim into the `theorem_backed` tier of the Canon
+  Index, or asserting a top-line claim as proven/resolved) files an evidence-trail
+  awareness note in `CapacityOS/mailboxes/joeops/` using
+  `templates/hard-promotion-joeops-notice.md`: what was promoted, the case FOR, the
+  steelmanned case AGAINST, how the call was made, risks, supporting
+  artifacts/certificates, and how to reverse. Awareness, not approval.
+- The one hard barrier is external publication: nothing enters `papers/published/`
+  until Joe publishes externally.
 
 ## Claim File Shape
 

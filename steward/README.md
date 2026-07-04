@@ -46,7 +46,7 @@ This repo owns its research truth: claim ledger, formalism, glossary, hypotheses
 - Load the current North Star map before repo work: `Vision - North Star.md`, `Method - Research Program Guidelines.md`, and `Lead Research Line - Time as Finality.md`.
 - Contributions follow `CONTRIBUTING.md`.
 - Preserve the split: vision can be aggressive; research program cannot.
-- Claim-status changes, promotions/demotions, publishing/external decisions, and cross-repo stress-test results bearing on core claims pause for Joe.
+- Claim-status changes, promotions/demotions, and Canon-Index tier moves are agent-owned once earned by a runnable artifact; a hard promotion (into `theorem_backed`, or asserting a top-line claim as proven/resolved) files an evidence-trail awareness note in `CapacityOS/mailboxes/joeops/` (template `templates/hard-promotion-joeops-notice.md`) — awareness, not approval. Publishing/external decisions and relicensing pause for Joe; nothing enters `papers/published/` before Joe publishes externally. Cross-repo results are proposed via the target surface's mailbox, not executed directly.
 - Proposed T-numbers are placeholders until checked against `TESTS.md` and `tests/`.
 
 ## Routing
@@ -65,7 +65,7 @@ This repo owns its research truth: claim ledger, formalism, glossary, hypotheses
 
 - This repo is public and CC-BY 4.0.
 - The current North Star map supersedes the archived historical `NORTH-STAR.md`.
-- The real pause boundary is promotion or external consequence, not internal drafting.
+- The real pause boundary is external publication (publishing/relicensing, and `papers/published/`), not promotion or internal drafting; a hard promotion proceeds under agent ownership but files a JoeOps evidence-trail notice.
 
 ## Principles
 

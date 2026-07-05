@@ -289,6 +289,25 @@ single-seed weakness and all-target trapdoor equivalence; otherwise the temporal
 route should be demoted to T417's static E2 boundary in a separate governed
 decision packet.
 
+## Internal support update (2026-07-05): D2 temporal route demotion packet
+
+T451 (`results/T451-d2-temporal-route-demotion-packet-v0.1-results.md`) executes
+the separate governed decision packet recommended by T450.
+
+Verdict:
+`CURRENT_D2_TEMPORAL_ROUTE_DEMOTED_TO_T417_STATIC_E2_BOUNDARY`. The current
+D2 temporal computational-arrow route has exhausted its tested continuations:
+finite public cycles are absorbed by public period traversal, the tested open
+Rabin-lift chain factors through per-step T417/Rabin inversion, and the closed
+public-squaring period route collapses to Rabin/factoring trapdoor equivalence.
+
+This closes the current temporal D2 route back to T417's static E2 boundary as
+an internal route-level decision. It does not demote the D2 definition, promote
+a claim, prove a computational arrow, prove cryptographic hardness, make a
+physics claim, update the claim ledger, or authorize public posture. Future D2
+work remains admissible only if it supplies a changed assumption or scope that
+clears the T438/T444 gates and avoids the T448/T450 absorbers.
+
 ## Internal support update (2026-07-03): finite-time/catalytic thermodynamic gate
 
 T439 (`results/T439-finite-time-catalytic-thermo-witness-gate-v0.1-results.md`)

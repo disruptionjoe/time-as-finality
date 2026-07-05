@@ -2,14 +2,16 @@
 
 ## Status
 
-**Open problem - D2 first swing recorded as T419 v0.1 with REDESIGN verdict.**
-This scopes the one direction the divergent persona pass (2026-07-02,
-`papers/drafts/prior-art-verification-and-divergent-direction-pass-2026-07-02.md`)
-flagged as the least-covered and most-plausibly-novel angle in the E2 mode of the
-adopted taxonomy (`technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md`).
-The novelty bar and kill criteria below were fixed before the fixture. T419 does
-not clear them: K4 fires on the exhibited toy orbit. No claim promotion; ledger
-untouched; next redesign/abandon decision pauses for Joe.
+**Route status updated by T451 (2026-07-05): the current temporal D2
+computational-arrow route is demoted to T417's static E2 boundary.** T419 first
+recorded the route as REDESIGN; T420/T438 blocked finite public-cycle and bounded
+non-recovery variants; T448 absorbed the tested open Rabin-lift chain; T450
+absorbed the current closed public-squaring period route as Rabin/factoring
+trapdoor equivalence. T451 executes the governed decision packet recommended by
+T450. Future temporal D2 work is not banned, but it must supply a changed
+assumption or scope rather than rebuild the absorbed public-squaring route.
+No claim promotion; `CLAIM-LEDGER.md`, `ROADMAP.md`, `TESTS.md`, README, and
+North Star files remain untouched.
 
 ## The question
 
@@ -332,3 +334,28 @@ scope that avoids both single-seed weakness and all-target trapdoor equivalence.
 Otherwise the temporal D2 route should be demoted to T417's static E2 boundary in
 a separate governed decision packet. No claim promotion; ledger and the broader
 redesign/abandon decision still pause for Joe.
+
+---
+
+## Route-demotion decision - 2026-07-05 (T451 v0.1)
+
+T451 executes the separate governed decision packet recommended by T450:
+`results/T451-d2-temporal-route-demotion-packet-v0.1-results.md`; spec
+`tests/T451-d2-temporal-route-demotion-packet.md`; model
+`models/d2_temporal_route_demotion_packet.py`.
+
+**Verdict:** `CURRENT_D2_TEMPORAL_ROUTE_DEMOTED_TO_T417_STATIC_E2_BOUNDARY`.
+The current D2 temporal computational-arrow route has exhausted its tested
+continuations. Finite public cycles are absorbed by public period traversal; the
+tested open chain factors through per-step Rabin/T417 inversion; and the closed
+public-squaring period route collapses to Rabin/factoring trapdoor equivalence.
+
+**Consequence:** stop rebuilding the current public-squaring temporal D2 route.
+T417 remains as the static E2 computational-finality boundary. Temporal D2 may
+reopen only through a genuinely changed assumption or scope: for example, a
+nonstandard period assumption avoiding both single-seed weakness and all-target
+trapdoor equivalence, or a separate changed-transition/open-regime packet that
+clears T438/T444 without factoring through T448/T450. No claim-ledger movement,
+claim promotion, computational-arrow theorem, crypto theorem, physics claim,
+North Star movement, public posture, hard-policy movement, or cross-repo truth
+movement is earned.

@@ -1,0 +1,165 @@
+{
+  "artifact": "T451-d2-temporal-route-demotion-packet-v0.1",
+  "sources": {
+    "d2_open_problem": "open-problems/computational-finality-arrow.md",
+    "t417_static_boundary": "results/T417-computational-finality-boundary-v0.1-results.md",
+    "t438": "results/T438-e2-period-hardness-admission-gate-v0.1-results.md",
+    "t444": "results/T444-e2-changed-transition-regime-gate-v0.1-results.md",
+    "t448": "results/T448-e2-chain-residual-factorization-v0.1-results.md",
+    "t449": "results/T449-e2-period-hardness-packet-audit-v0.1-results.md",
+    "t450": "results/T450-e2-period-oracle-trapdoor-equivalence-v0.1-results.md"
+  },
+  "purpose": "Execute the separate governed decision packet recommended by T450 for the current temporal D2 computational-arrow route.",
+  "imported_evidence": {
+    "t438": {
+      "verdict": "E2_PERIOD_HARDNESS_ADMISSION_GATE_BUILT_NO_D2_DECISION",
+      "admitted_packet_ids": [
+        "predeclared_period_hardness_family_packet"
+      ],
+      "routed_packet_ids": [
+        "changed_public_transition_packet",
+        "open_nonpermutation_packet"
+      ],
+      "rejected_packet_ids": [
+        "t419_qr77_finite_public_cycle",
+        "long_cycle_bounded_nonrecovery_only",
+        "point_sqrt_hardness_static_relabel",
+        "single_instance_hard_theorem_claim",
+        "thermodynamic_reversal_cost_packet",
+        "brown_susskind_complexity_growth_packet",
+        "post_hoc_period_policy_packet"
+      ],
+      "d2_decision": "none; redesign/abandon remains separately gated",
+      "claim_ledger_update": "none; no claim promotion",
+      "reading": "T438 admits only a predeclared family-level period-hardness packet as a future E2 redesign target. It rejects finite public cycles, bounded non-recovery, point-inversion-only static relabels, E1 thermodynamic packets, Brown-Susskind complexity-growth packets, single-instance claims, and post-hoc selectors. Packets that leave the closed public-permutation regime require a separate spec."
+    },
+    "t444": {
+      "verdict": "E2_CHANGED_TRANSITION_REGIME_GATE_BUILT_NO_D2_DECISION",
+      "admitted_packet_ids": [
+        "predeclared_changed_transition_packet",
+        "predeclared_open_nonpermutation_packet"
+      ],
+      "routed_back_to_t438_packet_ids": [
+        "closed_public_permutation_period_packet"
+      ],
+      "rejected_packet_ids": [
+        "post_hoc_transition_swap_packet",
+        "hidden_oracle_transition_packet",
+        "thermodynamic_transition_cost_packet",
+        "brown_susskind_complexity_packet",
+        "pure_unknown_transition_packet",
+        "unfrozen_transition_evidence_packet",
+        "open_nonpermutation_no_law_packet",
+        "resource_completion_absorbed_open_packet"
+      ],
+      "d2_decision": "none; redesign/abandon remains separately gated",
+      "claim_ledger_update": "none; no claim promotion",
+      "reading": "T444 admits only predeclared changed-transition or open/nonpermutation packets for separate-spec review. It rejects post-hoc/hidden transition policies, thermodynamic/E1 packets, Brown-Susskind symmetric-complexity packets, pure epistemic ignorance, unfrozen transition evidence, missing open-dynamics law, and resource/environment completion. Closed public-permutation packets route back to T438."
+    },
+    "t448": {
+      "verdict": "T446_CHAIN_RESIDUAL_FACTORS_THROUGH_PER_STEP_RABIN_NO_NEW_D2_THEOREM",
+      "screen_passed": true,
+      "d2_decision": "none; redesign/abandon remains separately gated",
+      "claim_ledger_update": "none; no claim promotion",
+      "reading": "For the current T446 packet, coupled open iteration adds no new theorem beyond per-step Rabin inversion. Full-chain recovery factors through public lift unwraps and independent step oracles, and the length-one chain is already a Rabin inversion challenge. This kills the T446 residual as a positive D2 route, without abandoning the broader D2 open problem."
+    },
+    "t449": {
+      "verdict": "E2_PERIOD_HARDNESS_PACKET_SHARPENED_TO_HIDDEN_ORDER_THEOREM_TARGET_NO_D2_DECISION",
+      "screen_passed": true,
+      "d2_decision": "none; redesign/abandon remains separately gated",
+      "claim_ledger_update": "none; no claim promotion",
+      "reading": "The best remaining D2 route is now sharply typed: a closed public squaring family where the missing capability object is the orbit period. If the period is known, reversal is public; if group-order trapdoor data is admitted, the toy family is completed. What is not earned is the hardness theorem. Future progress needs a real hidden-order/cycle-length reduction or lower-bound target, plus seed-distribution controls."
+    },
+    "t450": {
+      "verdict": "PERIOD_ORACLE_COLLAPSES_TO_RABIN_TRAPDOOR_NO_INDEPENDENT_D2_ROUTE",
+      "screen_passed": true,
+      "d2_decision": "none; redesign/abandon remains separately gated",
+      "claim_ledger_update": "none; no claim promotion",
+      "reading": "For the current closed public-squaring route, an all-target period oracle is trapdoor-strength: it gives unique predecessors, and Rabin's reduction factors N from such a predecessor oracle. Conversely, group-order/factorization completion computes periods. The remaining D2 route therefore has no independent finite-witness residue beyond the standard Rabin/factoring boundary unless a future theorem target changes the oracle scope or assumption."
+    }
+  },
+  "route_matrix": [
+    {
+      "route": "finite_public_cycle_or_bounded_nonrecovery",
+      "source": "T420/T438",
+      "status": "absorbed",
+      "reason": "Closed finite public cycles recover predecessors by public forward iteration once the period is traversable; bounded non-recovery is not evidence without a family assumption.",
+      "decision_effect": "cannot carry D2 temporal-arrow novelty"
+    },
+    {
+      "route": "open_rabin_lift_chain",
+      "source": "T446/T448",
+      "status": "absorbed",
+      "reason": "For the current T446 packet, coupled open iteration adds no new theorem beyond per-step Rabin inversion. Full-chain recovery factors through public lift unwraps and independent step oracles, and the length-one chain is already a Rabin inversion challenge. This kills the T446 residual as a positive D2 route, without abandoning the broader D2 open problem.",
+      "decision_effect": "collapses to chained T417/Rabin inversion"
+    },
+    {
+      "route": "closed_public_squaring_period_oracle",
+      "source": "T449/T450",
+      "status": "absorbed",
+      "reason": "For the current closed public-squaring route, an all-target period oracle is trapdoor-strength: it gives unique predecessors, and Rabin's reduction factors N from such a predecessor oracle. Conversely, group-order/factorization completion computes periods. The remaining D2 route therefore has no independent finite-witness residue beyond the standard Rabin/factoring boundary unless a future theorem target changes the oracle scope or assumption.",
+      "decision_effect": "no independent finite-witness temporal residue"
+    },
+    {
+      "route": "changed_transition_or_open_nonpermutation",
+      "source": "T444 plus T448 tested packet",
+      "status": "future_exception_only",
+      "reason": "T444 admits this only as a separate-regime review target. The tested open Rabin-lift packet was then absorbed by T448.",
+      "decision_effect": "future work must supply a different packet, not reuse the T446 chain shape"
+    },
+    {
+      "route": "nonstandard_period_assumption",
+      "source": "T449/T450",
+      "status": "future_exception_only",
+      "reason": "T449 named hidden-order cycle length as the theorem burden, but T450 showed the current useful all-target period oracle is trapdoor-strength. No nonstandard replacement assumption is supplied by the current route.",
+      "decision_effect": "only remaining admissible D2 continuation shape"
+    }
+  ],
+  "decision_screen": [
+    {
+      "id": "finite_cycle_route_closed",
+      "passed": true,
+      "status": "closed_by_t420_t438",
+      "reading": "Finite public-cycle and bounded-search variants cannot carry D2."
+    },
+    {
+      "id": "open_chain_route_closed",
+      "passed": true,
+      "status": "closed_by_t448",
+      "reading": "The tested open-chain route is product-decomposable into T417 steps."
+    },
+    {
+      "id": "closed_period_route_closed",
+      "passed": true,
+      "status": "closed_by_t450",
+      "reading": "The current period-oracle route is trapdoor-strength."
+    },
+    {
+      "id": "future_exception_preserved",
+      "passed": true,
+      "status": "future_changed_assumption_only",
+      "reading": "Future D2 work remains admissible only if it supplies a changed assumption or scope: for example, a nonstandard period assumption avoiding both single-seed weakness and all-target trapdoor equivalence, or a separate changed-transition/open-regime packet that does not factor through per-step T417/Rabin inversion."
+    },
+    {
+      "id": "protected_surfaces_unchanged",
+      "passed": true,
+      "status": "no_claim_or_public_posture_move",
+      "reading": "This packet updates route standing only. CLAIM-LEDGER, TESTS, ROADMAP, README, and North Star files are not required for the decision."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "CURRENT_D2_TEMPORAL_ROUTE_DEMOTED_TO_T417_STATIC_E2_BOUNDARY",
+    "screen_passed": true,
+    "current_route_decision": "demote current temporal D2 route to T417 static E2 boundary",
+    "future_exception": "Future D2 work remains admissible only if it supplies a changed assumption or scope: for example, a nonstandard period assumption avoiding both single-seed weakness and all-target trapdoor equivalence, or a separate changed-transition/open-regime packet that does not factor through per-step T417/Rabin inversion.",
+    "claim_ledger_update": "none; no claim status change",
+    "public_posture_update": "none",
+    "reading": "The current D2 temporal computational-arrow route has exhausted its tested continuations. Finite public cycles are absorbed by public period traversal, the tested open chain factors through per-step Rabin/T417 inversion, and the closed public-squaring period route collapses to Rabin/factoring trapdoor equivalence. The route is therefore demoted to T417's static E2 boundary, with future D2 work reserved for a genuinely changed assumption or scope."
+  },
+  "recommended_next": [
+    "Stop rebuilding the current public-squaring temporal D2 route.",
+    "Keep T417 as the static E2 computational-finality boundary.",
+    "Only reopen temporal D2 with a changed assumption or packet that clears T438/T444 and avoids T448/T450 absorbers."
+  ],
+  "honest_ceiling": "Route-demotion packet only. T451 closes the current temporal D2 route back to T417's static E2 boundary; it does not demote the whole D2 definition, does not promote a claim, does not prove or refute factoring hardness, does not make a physics claim, and does not authorize public posture."
+}

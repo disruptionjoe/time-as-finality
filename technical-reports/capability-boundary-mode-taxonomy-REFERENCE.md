@@ -155,6 +155,26 @@ physics claim, not a GU/TaF adapter, not cross-repo evidence, and not claim-ledg
 movement. Stronger E3 attempts must type the resource policy before the task and
 handle cyclic, consumed, and ideal-reference absorbers.
 
+## Internal support update (2026-07-05): E3-to-region adapter gate
+
+T453 (`results/T453-e3-to-region-nonadmissibility-adapter-gate-v0.1-results.md`)
+tests whether T447's finite exact E3 no-go can discharge T452's
+region-indexed law-sector nonadmissibility burden.
+
+Verdict: `T447_E3_NO_GO_DOES_NOT_DISCHARGE_REGION_T452_BURDEN`. T447 supplies
+an exact no-go witness pattern, but T447 alone has no region-indexed pair.
+Citation-only T445+T447 still leaves the T452 absorber firing because the exact
+witness is not tied to T445's named law-sector completion. Reference-policy
+splits factor through admitted completion and remain E0-declared. Generic
+sector/gauge shortcuts route to the N14 absorber.
+
+Only a synthetic integrated E3-region packet is admitted as a future review
+target. Future Direction-A packets that cite E3 must integrate the exact no-go
+with the same completion that would otherwise restore region-packet
+factorization. T453 is not a region-indexed discriminator success, not a WAY
+theorem, not a quantum physics theorem, not a GU/TaF adapter, not cross-repo
+support, and not claim-ledger movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

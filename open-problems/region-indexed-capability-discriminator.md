@@ -110,6 +110,16 @@ completion, supply a predeclared exact nonadmissibility witness, and include a
 negative control. Only a synthetic future-target packet passes T452. This is a
 gate, not a discriminator success or claim support.
 
+T453 tests the tempting shortcut from T447's finite exact E3 no-go into this
+T452 burden. The shortcut does not pass. Bare T447 has an exact no-go witness
+but no region-indexed pair; citation-only T445+T447 still leaves the T452
+absorber firing because the witness is not tied to the named T445 law-sector
+completion; and reference-policy splits factor through admitted completion as
+E0-declared boundaries. Generic sector/gauge language routes to the N14 absorber.
+Only a synthetic integrated E3-region packet is admitted as a future review
+target. Future Direction-A work must integrate the exact no-go with the same
+completion that would otherwise restore factorization.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

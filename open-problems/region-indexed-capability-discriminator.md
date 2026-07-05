@@ -100,6 +100,16 @@ not a region-indexed discriminator success and not claim support. A stronger
 packet must make the law-sector completion itself physically non-admissible, not
 merely outside R.
 
+T452 turns that post-T445 burden into an executable admission gate. The current
+T445 Z2 packet is not admitted because law-sector completion remains physically
+admissible once the boundary/law sector is included; it is only outside R. The
+gate requires a future packet to clear T434, match all R-supported statistics and
+interventions, name the law-sector completion being blocked, freeze the
+operation/resource class before pair selection, audit A2 reference/resource
+completion, supply a predeclared exact nonadmissibility witness, and include a
+negative control. Only a synthetic future-target packet passes T452. This is a
+gate, not a discriminator success or claim support.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

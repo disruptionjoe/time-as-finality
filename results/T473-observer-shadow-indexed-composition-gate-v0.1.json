@@ -1,0 +1,205 @@
+{
+  "artifact_id": "T473-observer-shadow-indexed-composition-gate-v0.1",
+  "verdict": "INDEXED_COMPOSITION_GATE_BUILT_ASSOCIATIVE_BOOKKEEPING_ONLY",
+  "transport_fixture": {
+    "fixture_id": "three_step_transport_index_fixture",
+    "left_signature": [
+      "source:A",
+      "target:D",
+      "site_map:a_A->d_A,a_B->d_B,a_C->d_C",
+      "preserved:accessible_support,holder_redundancy,branch_support,reversal_cost"
+    ],
+    "right_signature": [
+      "source:A",
+      "target:D",
+      "site_map:a_A->d_A,a_B->d_B,a_C->d_C",
+      "preserved:accessible_support,holder_redundancy,branch_support,reversal_cost"
+    ],
+    "left_forgotten_index": [
+      "type_guarantee",
+      "branch_support",
+      "reversal_cost"
+    ],
+    "right_forgotten_index": [
+      "type_guarantee",
+      "branch_support",
+      "reversal_cost"
+    ],
+    "structurally_associative": true,
+    "forgotten_index_associative": true,
+    "classification": "finite_indexed_transport_composition_associative",
+    "category_evidence": false,
+    "notes": [
+      "checks the current D1 morphism core up to structural fields, not morphism names",
+      "forgotten-structure index accumulation is association-invariant in this finite fixture",
+      "finite associativity is bookkeeping support only, not a category theorem"
+    ]
+  },
+  "atoms": [
+    {
+      "atom_id": "transport_endpoint_only",
+      "packet_id": "transport_endpoint_only_packet",
+      "family": "typed_transport",
+      "route_label": "reject_missing_load_bearing_indices",
+      "admitted": false,
+      "declared_indices": [
+        "endpoint"
+      ],
+      "evidence_kind": "rejected"
+    },
+    {
+      "atom_id": "transport_path_indexed",
+      "packet_id": "transport_path_indexed_packet",
+      "family": "typed_transport",
+      "route_label": "admitted_indexed_completion",
+      "admitted": true,
+      "declared_indices": [
+        "accumulated_forgotten_structure",
+        "endpoint",
+        "path_label"
+      ],
+      "evidence_kind": "indexed_bookkeeping"
+    },
+    {
+      "atom_id": "losskernel_neighbor_preservation",
+      "packet_id": "losskernel_neighbor_preservation_packet",
+      "family": "losskernel",
+      "route_label": "admitted_preservation_control",
+      "admitted": true,
+      "declared_indices": [
+        "neighbor_signature"
+      ],
+      "evidence_kind": "preservation_control"
+    },
+    {
+      "atom_id": "losskernel_hidden_source_completed",
+      "packet_id": "losskernel_hidden_source_completed_packet",
+      "family": "losskernel",
+      "route_label": "absorber_completion_recorded",
+      "admitted": true,
+      "declared_indices": [
+        "hidden_source_datum",
+        "neighbor_signature"
+      ],
+      "evidence_kind": "absorber_completion"
+    }
+  ],
+  "route_cases": [
+    {
+      "case_id": "transport_indexed_bookkeeping_threefold",
+      "atom_ids": [
+        "transport_path_indexed",
+        "transport_path_indexed",
+        "transport_path_indexed"
+      ],
+      "left_route": "indexed_bookkeeping_route",
+      "right_route": "indexed_bookkeeping_route",
+      "association_invariant": true,
+      "final_route": "indexed_bookkeeping_route",
+      "admitted": true,
+      "counts_as_preservation_control": false,
+      "category_evidence": false,
+      "classification": "associative_indexed_bookkeeping_only",
+      "notes": [
+        "declared indices compose as bookkeeping only"
+      ]
+    },
+    {
+      "case_id": "losskernel_preservation_threefold",
+      "atom_ids": [
+        "losskernel_neighbor_preservation",
+        "losskernel_neighbor_preservation",
+        "losskernel_neighbor_preservation"
+      ],
+      "left_route": "preservation_control_route",
+      "right_route": "preservation_control_route",
+      "association_invariant": true,
+      "final_route": "preservation_control_route",
+      "admitted": true,
+      "counts_as_preservation_control": true,
+      "category_evidence": false,
+      "classification": "associative_finite_preservation_control",
+      "notes": [
+        "finite preservation controls compose within one family"
+      ]
+    },
+    {
+      "case_id": "losskernel_absorber_taints_composition",
+      "atom_ids": [
+        "losskernel_neighbor_preservation",
+        "losskernel_hidden_source_completed",
+        "losskernel_neighbor_preservation"
+      ],
+      "left_route": "absorber_completion_route",
+      "right_route": "absorber_completion_route",
+      "association_invariant": true,
+      "final_route": "absorber_completion_route",
+      "admitted": true,
+      "counts_as_preservation_control": false,
+      "category_evidence": false,
+      "classification": "absorber_completion_blocks_category_evidence",
+      "notes": [
+        "absorber completion remains state-completion bookkeeping"
+      ]
+    },
+    {
+      "case_id": "endpoint_rejection_blocks_composition",
+      "atom_ids": [
+        "transport_endpoint_only",
+        "transport_path_indexed"
+      ],
+      "left_route": "reject_unadmitted_packet",
+      "right_route": "reject_unadmitted_packet",
+      "association_invariant": true,
+      "final_route": "reject_unadmitted_packet",
+      "admitted": false,
+      "counts_as_preservation_control": false,
+      "category_evidence": false,
+      "classification": "blocked_by_t472_rejection",
+      "notes": [
+        "composition contains a packet rejected by T472"
+      ]
+    },
+    {
+      "case_id": "cross_family_bridge_missing",
+      "atom_ids": [
+        "transport_path_indexed",
+        "losskernel_neighbor_preservation"
+      ],
+      "left_route": "reject_no_cross_family_bridge",
+      "right_route": "reject_no_cross_family_bridge",
+      "association_invariant": true,
+      "final_route": "reject_no_cross_family_bridge",
+      "admitted": false,
+      "counts_as_preservation_control": false,
+      "category_evidence": false,
+      "classification": "blocked_by_missing_cross_family_bridge",
+      "notes": [
+        "no cross-family bridge has been declared for this composition"
+      ]
+    }
+  ],
+  "claim_ledger_update": "none",
+  "indexed_bookkeeping_associative_in_fixture": true,
+  "cross_family_composition_supported": false,
+  "absorber_completion_category_evidence": false,
+  "global_category_theorem_supported": false,
+  "strongest_reading": "T473 finds finite associativity for the current indexed transport bookkeeping and for repeated LossKernel preservation controls, but only as a route gate. Absorber completion taints a composition as state-completion bookkeeping, rejected upstream packets stay blocked, and cross-family composition has no declared bridge. This supports an indexed audit-atlas guardrail, not an observer-shadow category or fibration theorem.",
+  "future_packet_minimum": [
+    "declare source and target family before composing observer-shadow packets",
+    "prove or test associativity for the declared indices rather than assuming it",
+    "separate finite preservation-control composition from indexed bookkeeping",
+    "route any absorber completion outside category evidence",
+    "supply an explicit cross-family bridge before composing transport and LossKernel-style packets"
+  ],
+  "not_earned": [
+    "observer-shadow category theorem",
+    "indexed category or fibration theorem",
+    "North Star geometry proof",
+    "D1, PO1, TF1, or LossKernel promotion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "public-posture movement"
+  ]
+}

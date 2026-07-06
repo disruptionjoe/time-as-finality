@@ -192,3 +192,34 @@ observer-shadow category theorem, indexed-category/fibration theorem, North
 Star geometry proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness
 claim, claim-ledger movement, roadmap movement, or public-posture movement is
 earned.
+
+## T473 addendum: indexed-composition gate
+
+T473 tests whether T472-admitted indexed packets compose in finite controls:
+`results/T473-observer-shadow-indexed-composition-gate-v0.1-results.md`; spec
+`tests/T473-observer-shadow-indexed-composition-gate.md`; model
+`models/observer_shadow_indexed_composition_gate.py`.
+
+Verdict:
+
+```text
+INDEXED_COMPOSITION_GATE_BUILT_ASSOCIATIVE_BOOKKEEPING_ONLY
+```
+
+In the finite three-step transport fixture, the current D1 morphism core is
+associative up to structural fields, and forgotten-structure index accumulation
+is association-invariant. Repeated path-indexed transport packets compose only
+as indexed bookkeeping. Repeated LossKernel neighbor-visible preservation
+packets compose only as a finite preservation control. Hidden-source completion
+taints any composition as absorber/state-completion bookkeeping, rejected T472
+packets stay blocked, and transport/LossKernel cross-family composition is
+rejected without a declared bridge.
+
+This supports only an indexed audit-atlas guardrail: future observer-shadow
+composition packets must declare source/target family, test associativity for
+their chosen indices, separate preservation controls from bookkeeping, route
+absorber completion outside category evidence, and supply an explicit
+cross-family bridge before composing unlike packet families. No observer-shadow
+category theorem, indexed-category/fibration theorem, North Star geometry
+proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness claim,
+claim-ledger movement, roadmap movement, or public-posture movement is earned.

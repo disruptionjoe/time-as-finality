@@ -1,0 +1,284 @@
+{
+  "artifact_id": "T474-observer-shadow-bridge-admission-gate-v0.1",
+  "verdict": "CROSS_FAMILY_BRIDGE_GATE_BUILT_ATLAS_BRIDGE_ONLY_NO_CATEGORY",
+  "controls": [
+    {
+      "control_id": "transport_bookkeeping_positive",
+      "source_case_id": "transport_indexed_bookkeeping_threefold",
+      "control_kind": "typed_transport_positive",
+      "available": true,
+      "description": "path-indexed transport composes only as indexed bookkeeping"
+    },
+    {
+      "control_id": "losskernel_preservation_positive",
+      "source_case_id": "losskernel_preservation_threefold",
+      "control_kind": "losskernel_positive",
+      "available": true,
+      "description": "LossKernel neighbor-visible preservation composes as a finite control"
+    },
+    {
+      "control_id": "no_bridge_hostile",
+      "source_case_id": "cross_family_bridge_missing",
+      "control_kind": "missing_bridge_negative",
+      "available": true,
+      "description": "transport/LossKernel composition is rejected when no bridge is declared"
+    },
+    {
+      "control_id": "upstream_rejection_hostile",
+      "source_case_id": "endpoint_rejection_blocks_composition",
+      "control_kind": "upstream_rejection_negative",
+      "available": true,
+      "description": "T472-rejected packets remain blocked under composition"
+    },
+    {
+      "control_id": "absorber_completion_hostile",
+      "source_case_id": "losskernel_absorber_taints_composition",
+      "control_kind": "absorber_completion_negative",
+      "available": true,
+      "description": "hidden-source completion taints composition as absorber bookkeeping"
+    }
+  ],
+  "proposals": [
+    {
+      "proposal_id": "no_declared_bridge_packet",
+      "source_family": "typed_transport",
+      "target_family": "losskernel",
+      "declared_bridge_relation": "",
+      "declared_shadow_relation": [],
+      "declared_capability_relation": [],
+      "required_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "supplied_controls": [],
+      "uses_absorber_completion": false,
+      "attempts_direct_category_composition": true,
+      "intended_use": "compose unlike packet families by position in the route algebra"
+    },
+    {
+      "proposal_id": "semantic_keyword_bridge_packet",
+      "source_family": "typed_transport",
+      "target_family": "losskernel",
+      "declared_bridge_relation": "both packets involve loss, forgetting, or hidden data",
+      "declared_shadow_relation": [
+        "shared English gloss only"
+      ],
+      "declared_capability_relation": [
+        "loss-like capability phrase"
+      ],
+      "required_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "supplied_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "uses_absorber_completion": false,
+      "attempts_direct_category_composition": false,
+      "intended_use": "treat semantic similarity as a bridge"
+    },
+    {
+      "proposal_id": "absorber_completion_bridge_packet",
+      "source_family": "typed_transport",
+      "target_family": "losskernel",
+      "declared_bridge_relation": "complete hidden source state and compare completed packets",
+      "declared_shadow_relation": [
+        "completed state alignment"
+      ],
+      "declared_capability_relation": [
+        "ordinary state-completion comparison"
+      ],
+      "required_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "supplied_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "uses_absorber_completion": true,
+      "attempts_direct_category_composition": false,
+      "intended_use": "use absorber completion to repair the cross-family bridge"
+    },
+    {
+      "proposal_id": "direct_category_bridge_packet",
+      "source_family": "typed_transport",
+      "target_family": "losskernel",
+      "declared_bridge_relation": "identify both packet families as morphisms in one category",
+      "declared_shadow_relation": [
+        "transport path index maps to neighbor signature",
+        "accumulated forgotten structure maps to obligation normal form"
+      ],
+      "declared_capability_relation": [
+        "PO1 admissibility and witness obligation are treated as one K object"
+      ],
+      "required_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "supplied_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "uses_absorber_completion": false,
+      "attempts_direct_category_composition": true,
+      "intended_use": "promote cross-family bridge into direct category composition"
+    },
+    {
+      "proposal_id": "audit_atlas_bridge_packet",
+      "source_family": "typed_transport",
+      "target_family": "losskernel",
+      "declared_bridge_relation": "audit-atlas bridge comparing route evidence while preserving family-specific shadows, capability objects, and native comparisons",
+      "declared_shadow_relation": [
+        "typed_transport keeps endpoint, path_label, and accumulated_forgotten_structure",
+        "losskernel keeps neighbor_signature and blocks hidden-source omission"
+      ],
+      "declared_capability_relation": [
+        "PO1 admissibility remains boolean equality on PO1 evidence",
+        "LossKernel obligation remains tuple equality on obligation normal form",
+        "bridge compares only route labels and control status"
+      ],
+      "required_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "supplied_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "uses_absorber_completion": false,
+      "attempts_direct_category_composition": false,
+      "intended_use": "admit cross-family observer-shadow packets for review as atlas metadata"
+    }
+  ],
+  "admissions": [
+    {
+      "proposal_id": "no_declared_bridge_packet",
+      "admitted": false,
+      "route_label": "reject_bridge_not_declared",
+      "missing_controls": [
+        "transport_bookkeeping_positive",
+        "losskernel_preservation_positive",
+        "no_bridge_hostile",
+        "upstream_rejection_hostile",
+        "absorber_completion_hostile"
+      ],
+      "classification": "missing_bridge_rejection",
+      "counts_as_cross_family_bridge": false,
+      "counts_as_category_evidence": false,
+      "notes": [
+        "no bridge relation is declared"
+      ]
+    },
+    {
+      "proposal_id": "semantic_keyword_bridge_packet",
+      "admitted": false,
+      "route_label": "reject_semantic_relabel_bridge",
+      "missing_controls": [],
+      "classification": "semantic_relabel_rejection",
+      "counts_as_cross_family_bridge": false,
+      "counts_as_category_evidence": false,
+      "notes": [
+        "semantic similarity is not a typed bridge relation"
+      ]
+    },
+    {
+      "proposal_id": "absorber_completion_bridge_packet",
+      "admitted": false,
+      "route_label": "reject_absorber_completion_bridge",
+      "missing_controls": [],
+      "classification": "absorber_completion_rejection",
+      "counts_as_cross_family_bridge": false,
+      "counts_as_category_evidence": false,
+      "notes": [
+        "absorber completion is state-completion bookkeeping"
+      ]
+    },
+    {
+      "proposal_id": "direct_category_bridge_packet",
+      "admitted": false,
+      "route_label": "reject_direct_category_shortcut",
+      "missing_controls": [],
+      "classification": "category_shortcut_rejection",
+      "counts_as_cross_family_bridge": false,
+      "counts_as_category_evidence": false,
+      "notes": [
+        "direct category composition is not earned by finite controls"
+      ]
+    },
+    {
+      "proposal_id": "audit_atlas_bridge_packet",
+      "admitted": true,
+      "route_label": "admit_audit_atlas_bridge_only",
+      "missing_controls": [],
+      "classification": "atlas_bridge_admitted_no_category_evidence",
+      "counts_as_cross_family_bridge": true,
+      "counts_as_category_evidence": false,
+      "notes": [
+        "bridge is admitted only as audit-atlas metadata",
+        "family-specific capability objects and comparisons remain separate"
+      ]
+    }
+  ],
+  "claim_ledger_update": "none",
+  "admitted_bridges": [
+    "audit_atlas_bridge_packet"
+  ],
+  "rejected_bridges": [
+    "no_declared_bridge_packet",
+    "semantic_keyword_bridge_packet",
+    "absorber_completion_bridge_packet",
+    "direct_category_bridge_packet"
+  ],
+  "atlas_bridge_available": true,
+  "direct_cross_family_category_composition_supported": false,
+  "global_category_theorem_supported": false,
+  "strongest_reading": "T474 makes T473's missing-bridge burden executable. A bridge can be admitted only as audit-atlas metadata that keeps typed-transport and LossKernel capability objects separate, carries positive and hostile controls from T473, and refuses absorber completion as category evidence. The admitted bridge is enough to review cross-family packets, but not enough to compose unlike families into an observer-shadow category or fibration theorem.",
+  "future_packet_minimum": [
+    "declare the source and target packet families",
+    "declare the bridge relation without identifying family-specific capability objects",
+    "supply positive controls from each family",
+    "supply a no-bridge hostile control",
+    "supply upstream-rejection and absorber-completion hostile controls",
+    "state whether the bridge is audit-atlas metadata or direct composition",
+    "block category or fibration language unless cross-family preservation is proved beyond metadata"
+  ],
+  "not_earned": [
+    "observer-shadow category theorem",
+    "indexed category or fibration theorem",
+    "North Star geometry proof",
+    "D1, PO1, TF1, or LossKernel promotion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "public-posture movement"
+  ]
+}

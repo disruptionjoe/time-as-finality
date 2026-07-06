@@ -223,3 +223,33 @@ cross-family bridge before composing unlike packet families. No observer-shadow
 category theorem, indexed-category/fibration theorem, North Star geometry
 proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness claim,
 claim-ledger movement, roadmap movement, or public-posture movement is earned.
+
+## T474 addendum: bridge-admission gate
+
+T474 makes T473's missing cross-family bridge burden executable:
+`results/T474-observer-shadow-bridge-admission-gate-v0.1-results.md`; spec
+`tests/T474-observer-shadow-bridge-admission-gate.md`; model
+`models/observer_shadow_bridge_admission_gate.py`.
+
+Verdict:
+
+```text
+CROSS_FAMILY_BRIDGE_GATE_BUILT_ATLAS_BRIDGE_ONLY_NO_CATEGORY
+```
+
+The no-bridge packet, semantic keyword bridge, absorber-completion bridge, and
+direct category bridge shortcut are all rejected. Only the audit-atlas bridge
+is admitted, and only as metadata for reviewing cross-family packets while
+keeping typed-transport shadows, LossKernel shadows, their capability objects,
+and their native comparisons separate.
+
+This supplies the bridge-admission guardrail requested by T473, but does not
+turn transport/LossKernel comparison into direct category composition. Future
+cross-family packets must declare source and target families, preserve
+family-specific capability objects, include positive controls from each family,
+include no-bridge/upstream-rejection/absorber-completion hostile controls, and
+state whether the bridge is audit-atlas metadata or direct composition. No
+observer-shadow category theorem, indexed-category/fibration theorem, North
+Star geometry proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness
+claim, claim-ledger movement, roadmap movement, or public-posture movement is
+earned.

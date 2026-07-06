@@ -44,6 +44,9 @@ function), and whether there is a fixed point (a scale-invariant finality struct
 - [T24: D1 Multiscale Observer Field](../tests/T24-d1-multiscale-observer-field.md)
 - North-star direction: typed multiscale transport network (program memory).
 - [free-boundary-paper-persona-sprint-2026-06-30](../explorations/free-boundary-paper-persona-sprint-2026-06-30.md)
+- [N15: Conformal Gravity as a Scale-Genesis Calibration Neighbor](../literature/N15-conformal-gravity-scale-genesis-calibration.md)
+  (added 2026-07-06): the maximally symmetric member of the same higher-derivative family; exact
+  conformal symmetry as the "no intrinsic scale" endpoint of the fixed-point picture. Same guards.
 
 ## Contribution Needed
 

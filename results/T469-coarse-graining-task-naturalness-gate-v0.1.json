@@ -1,0 +1,186 @@
+{
+  "artifact_id": "T469-coarse-graining-task-naturalness-gate-v0.1",
+  "objective": "Make T468's future packet minimum executable: independent three-holder positive controls, cheap accessible non-finality hostile controls, and a predeclared task-naturalness account.",
+  "budget": {
+    "accessible_fields": [
+      0,
+      1,
+      2
+    ],
+    "max_fields_read": 3,
+    "max_predicate_cost": 4,
+    "min_holder_redundancy": 2,
+    "max_reversal_cost": 2
+  },
+  "state_count": 16,
+  "candidate_evaluations": [
+    {
+      "candidate_id": "three_holder_finality_band",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 3,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "three_holder_support_count",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 4,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "two_holder_finality_band",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 3,
+      "role": "legacy_positive_control"
+    },
+    {
+      "candidate_id": "two_holder_support_count",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 3,
+      "role": "legacy_positive_control"
+    },
+    {
+      "candidate_id": "cheap_accessible_xor_with_task_label",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "certified_record_object_not_named",
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 2,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "label_restatement_lookup",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 2,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "hidden_fourth_field_task",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "blockers": [
+        "base_gate:INACCESSIBLE_RECORD_FIELD"
+      ],
+      "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+      "base_admitted": false,
+      "class_count": 4,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "observer_creates_truth_overread",
+      "admitted": false,
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "blockers": [
+        "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+        "observer_creates_truth_overread"
+      ],
+      "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "base_admitted": false,
+      "class_count": 3,
+      "role": "forbidden_control"
+    }
+  ],
+  "packet_evaluations": [
+    {
+      "packet_id": "repaired_three_holder_packet",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "REPAIRED_TASK_NATURALNESS_PACKET_ADMITTED",
+      "blockers": [],
+      "positive_control_ids": [
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "positive_controls_independent": true,
+      "hostile_control_ids": [
+        "cheap_accessible_xor_with_task_label",
+        "label_restatement_lookup",
+        "hidden_fourth_field_task",
+        "observer_creates_truth_overread"
+      ],
+      "hostile_controls_blocked": true
+    },
+    {
+      "packet_id": "legacy_two_holder_packet",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "POSITIVE_CONTROL_INDEPENDENCE_NOT_MET",
+      "blockers": [
+        "positive_controls_not_independent"
+      ],
+      "positive_control_ids": [
+        "two_holder_finality_band",
+        "two_holder_support_count"
+      ],
+      "positive_controls_independent": false,
+      "hostile_control_ids": [],
+      "hostile_controls_blocked": true
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "TASK_NATURALNESS_GATE_BUILT_FIXTURE_REPAIRED_NO_PROMOTION",
+    "repaired_three_holder_packet_admitted": true,
+    "legacy_two_holder_packet_admitted": false,
+    "legacy_two_holder_positive_controls_independent": false,
+    "cheap_xor_base_gate_admitted": true,
+    "cheap_xor_t469_admitted": false,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "physics_claim_earned": false,
+    "reading": "The repaired three-holder packet clears review admission with independent finality-band and support-count positives, while the legacy two-holder packet fails positive-control independence. The cheap accessible xor control still passes the old mechanical gate if a task label is asserted, but T469 blocks it because no certified record object or natural finality task is supplied."
+  },
+  "future_packet_minimum": [
+    "use independent positive controls when claiming constructive support",
+    "include cheap accessible non-finality hostile controls",
+    "name a certified record object before selecting the relation",
+    "show the task preserves record value, support, or finality status",
+    "include a demotion condition for label-restatement or observer-creates-truth overread"
+  ],
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ]
+}

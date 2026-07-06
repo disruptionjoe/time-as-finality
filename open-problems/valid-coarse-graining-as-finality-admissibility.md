@@ -111,3 +111,32 @@ positive controls, include a cheap accessible non-finality partition as a
 hostile control, and supply a predeclared task-naturalness account rather than
 only a boolean finality-task flag. No D1/T10/T29, Observer Theory, physics,
 consciousness, claim-ledger, roadmap, or public-posture movement is earned.
+
+## T469 addendum: task-naturalness gate
+
+T469 converts T468's future-packet burden into an executable admission gate:
+`results/T469-coarse-graining-task-naturalness-gate-v0.1-results.md`; spec
+`tests/T469-coarse-graining-task-naturalness-gate.md`; model
+`models/coarse_graining_task_naturalness_gate.py`.
+
+Verdict:
+
+```text
+TASK_NATURALNESS_GATE_BUILT_FIXTURE_REPAIRED_NO_PROMOTION
+```
+
+The repaired three-holder packet clears review admission: three-holder
+finality band and support count are independent positive controls, and cheap
+accessible xor, label restatement, hidden-field dependence, and
+observer-creates-truth overread are blocked. The inherited two-holder T467
+packet remains individually well formed but fails packet admission because its
+positive controls are not independent.
+
+This repairs the fixture and hardens future intake; it does not prove that TaF
+supplies Observer Theory's missing criterion. Future packets must include
+independent positive controls when claiming constructive support, cheap
+accessible non-finality hostile controls, a named certified record object, a
+task account that preserves record value/support/finality status, and a
+demotion condition for label restatement or observer-creates-truth overread.
+No D1/T10/T29, Observer Theory, physics, consciousness, claim-ledger, roadmap,
+or public-posture movement is earned.

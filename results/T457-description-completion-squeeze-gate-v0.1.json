@@ -1,0 +1,1203 @@
+{
+  "artifact": "T457-description-completion-squeeze-gate-v0.1",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t454": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md",
+    "t455": "results/T455-t454-hostile-review-gate-v0.1-results.md",
+    "t456": "results/T456-policy-invariant-region-theorem-gate-v0.1-results.md",
+    "taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md"
+  },
+  "purpose": "Sharpen T456's description-nonfactorization blocker for the current T454-style boundary-resource packet class.",
+  "t456_import_summary": {
+    "verdict": "POLICY_INVARIANT_REGION_THEOREM_GATE_BUILT_CURRENT_T454_NOT_ADMITTED",
+    "current_t454_t455_label": "NOT_ADMITTED_DESCRIPTION_POLICY_THEOREM_BLOCKS",
+    "current_t454_t455_missing_requirements": [
+      "description_nonfactorization",
+      "reference_policy_invariance",
+      "policy_independent_region_theorem"
+    ],
+    "admitted_candidates_are_synthetic_only": true
+  },
+  "capability_deciding_fields": [
+    "correction_budget",
+    "boundary_charge_available",
+    "operation_resource_class"
+  ],
+  "candidate_evaluations": [
+    {
+      "candidate_id": "current_t454_boundary_resource_description",
+      "description": "The current T454/T455 class after admitting the boundary resource descriptor that decides revision capability.",
+      "source": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md; results/T455-t454-hostile-review-gate-v0.1-results.md; results/T456-policy-invariant-region-theorem-gate-v0.1-results.md",
+      "candidate": {
+        "candidate_id": "current_t454_boundary_resource_description",
+        "description": "The current T454/T455 class after admitting the boundary resource descriptor that decides revision capability.",
+        "source": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md; results/T455-t454-hostile-review-gate-v0.1-results.md; results/T456-policy-invariant-region-theorem-gate-v0.1-results.md",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": false,
+        "theorem_policy_independent": false,
+        "reference_policy_variants_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": false
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [],
+        "same_description_pairs": 1,
+        "split_pairs": [],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": false,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": false,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": true,
+        "description_nonfactorization_witnessed": false
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": false,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": false,
+        "reference_policy_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "description_nonfactorization_witnessed",
+        "theorem_policy_independent",
+        "reference_policy_invariant_or_precluded"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_DESCRIPTION_COMPLETION_FACTORS",
+      "reason": "Within this packet class, admitted description already decides the boundary-menu capability, so description completion restores factorization."
+    },
+    {
+      "candidate_id": "omitted_boundary_resource_control",
+      "description": "A same-description split created by omitting the boundary resource field from the descriptor.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "omitted_boundary_resource_control",
+        "description": "A same-description split created by omitting the boundary resource field from the descriptor.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": false,
+        "theorem_policy_independent": false,
+        "reference_policy_variants_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": false
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 3,
+        "split_pairs": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            }
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": true,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": false,
+        "theorem_policy_independent": false,
+        "reference_policy_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "omitted_deciding_fields_theorem_supported",
+        "theorem_policy_independent",
+        "reference_policy_invariant_or_precluded"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_UNDERDESCRIBED_BOUNDARY_RESOURCE",
+      "reason": "The apparent split is created by omitting a capability-deciding boundary-resource field without an independent theorem that makes that field physically non-admissible."
+    },
+    {
+      "candidate_id": "description_complete_synthetic_control",
+      "description": "Synthetic control proving that once the capability-deciding field is included, the split disappears into description completion.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "description_complete_synthetic_control",
+        "description": "Synthetic control proving that once the capability-deciding field is included, the split disappears into description completion.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": true,
+        "reference_policy_variants_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [],
+        "same_description_pairs": 1,
+        "split_pairs": [],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": false,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": false,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": true,
+        "description_nonfactorization_witnessed": false
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": false,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": true,
+        "reference_policy_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "description_nonfactorization_witnessed"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_DESCRIPTION_COMPLETION_FACTORS",
+      "reason": "Within this packet class, admitted description already decides the boundary-menu capability, so description completion restores factorization."
+    },
+    {
+      "candidate_id": "synthetic_non_descriptive_theorem_target",
+      "description": "Future target shape: the descriptor omits the boundary resource, but a policy-independent theorem makes that field physically non-admissible while reference variants are handled.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_non_descriptive_theorem_target",
+        "description": "Future target shape: the descriptor omits the boundary resource, but a policy-independent theorem makes that field physically non-admissible while reference variants are handled.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": true,
+        "reference_policy_variants_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 3,
+        "split_pairs": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            }
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": true,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": true,
+        "reference_policy_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [],
+      "admitted_future_target": true,
+      "gate_label": "ADMITTED_NON_DESCRIPTIVE_THEOREM_TARGET_NO_PROMOTION",
+      "reason": "The candidate has the future target shape: nonfactorization under the declared description, a theorem supporting omission of the capability-deciding field, policy independence, reference-policy invariance or preclusion, frozen operations, A2 audit, and controls."
+    },
+    {
+      "candidate_id": "synthetic_no_policy_independence",
+      "description": "A nonfactorizing packet with no policy-independent theorem.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_no_policy_independence",
+        "description": "A nonfactorizing packet with no policy-independent theorem.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": false,
+        "reference_policy_variants_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 3,
+        "split_pairs": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            }
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": true,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": false,
+        "reference_policy_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "theorem_policy_independent"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_NO_POLICY_INDEPENDENT_THEOREM",
+      "reason": "The packet supplies a split but not a policy-independent theorem."
+    },
+    {
+      "candidate_id": "synthetic_reference_policy_fragile",
+      "description": "A nonfactorizing packet whose reference variants are still fragile.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_reference_policy_fragile",
+        "description": "A nonfactorizing packet whose reference variants are still fragile.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": true,
+        "reference_policy_variants_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 3,
+        "split_pairs": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            }
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": true,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": true,
+        "reference_policy_invariant_or_precluded": false,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "reference_policy_invariant_or_precluded"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_REFERENCE_POLICY_FRAGILITY",
+      "reason": "Cyclic, consumed, or ideal reference variants are not invariantly handled or independently precluded."
+    },
+    {
+      "candidate_id": "hidden_label_shortcut_control",
+      "description": "A shortcut that reads hidden case labels.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "hidden_label_shortcut_control",
+        "description": "A shortcut that reads hidden case labels.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "hidden_alpha",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": "alpha"
+          },
+          {
+            "case_id": "hidden_beta",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": "beta"
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": true,
+        "reference_policy_variants_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": true,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 1,
+        "split_pairs": [
+          {
+            "left": "hidden_alpha",
+            "right": "hidden_beta",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "hidden_alpha",
+            "right": "hidden_beta",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": true,
+        "reference_policy_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": false,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "no_hidden_label_or_case_id"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "BLOCKED_HIDDEN_LABEL_OR_CASE_ID",
+      "reason": "The packet reads a hidden selector rather than a description theorem."
+    },
+    {
+      "candidate_id": "synthetic_missing_negative_control",
+      "description": "A future-shaped packet missing its negative control.",
+      "source": "T457-description-completion-squeeze-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_missing_negative_control",
+        "description": "A future-shaped packet missing its negative control.",
+        "source": "T457-description-completion-squeeze-gate-v0.1",
+        "cases": [
+          {
+            "case_id": "boundary_resource_available",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_deficient",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 0,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          },
+          {
+            "case_id": "boundary_resource_available_copy",
+            "verdict_payload": "same",
+            "region_charge": 0,
+            "correction_budget": 1,
+            "boundary_charge_available": 1,
+            "operation_resource_class": "charge_respecting_control",
+            "reference_policy": "finite_nonwrapping_exact_catalyst",
+            "hidden_selector_label": null
+          }
+        ],
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "descriptor_admitted": true,
+        "omitted_capability_field_has_theorem": true,
+        "theorem_policy_independent": true,
+        "reference_policy_variants_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": false,
+        "declared_before_pair": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "factorization_audit": {
+        "description_fields": [
+          "verdict_payload",
+          "region_charge",
+          "correction_budget",
+          "operation_resource_class",
+          "reference_policy"
+        ],
+        "capability_deciding_fields": [
+          "correction_budget",
+          "boundary_charge_available",
+          "operation_resource_class"
+        ],
+        "omitted_capability_deciding_fields": [
+          "boundary_charge_available"
+        ],
+        "same_description_pairs": 3,
+        "split_pairs": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            }
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "description": {
+              "verdict_payload": "same",
+              "region_charge": 0,
+              "correction_budget": 1,
+              "operation_resource_class": "charge_respecting_control",
+              "reference_policy": "finite_nonwrapping_exact_catalyst"
+            },
+            "left_capability": {
+              "can_revise_final_verdict": false,
+              "revision_blocked_reason": "requires_admitted_boundary_resource"
+            },
+            "right_capability": {
+              "can_revise_final_verdict": true,
+              "revision_blocked_reason": "none"
+            }
+          }
+        ],
+        "pair_rows": [
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_deficient",
+            "same_description": true,
+            "capability_split": true
+          },
+          {
+            "left": "boundary_resource_available",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": false
+          },
+          {
+            "left": "boundary_resource_deficient",
+            "right": "boundary_resource_available_copy",
+            "same_description": true,
+            "capability_split": true
+          }
+        ],
+        "capability_factors_through_description": false,
+        "description_nonfactorization_witnessed": true
+      },
+      "requirement_audit": {
+        "descriptor_admitted": true,
+        "description_nonfactorization_witnessed": true,
+        "omitted_deciding_fields_theorem_supported": true,
+        "theorem_policy_independent": true,
+        "reference_policy_invariant_or_precluded": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": false,
+        "declared_before_pair": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "negative_control_present"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_NO_NEGATIVE_CONTROL",
+      "reason": "A nearby negative control is required."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "DESCRIPTION_COMPLETION_SQUEEZE_GATE_BUILT_T454_CLASS_FACTORS_THROUGH_DESCRIPTION",
+    "current_t454_class_label": "NOT_ADMITTED_DESCRIPTION_COMPLETION_FACTORS",
+    "current_t454_class_factors_through_description": true,
+    "admitted_candidate_ids": [
+      "synthetic_non_descriptive_theorem_target"
+    ],
+    "admitted_candidates_are_synthetic_only": true,
+    "current_artifacts_admitted_for_stronger_posture": false,
+    "region_discriminator_success": false,
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "The current T454/T455 packet class cannot clear T456's description-nonfactorization requirement while the boundary-resource descriptor remains admitted and capability-deciding. Omitting that descriptor creates only an underdescription split unless a future policy-independent theorem makes the omitted field physically non-admissible."
+  },
+  "honest_ceiling": "Admission/guardrail gate only. T457 shows that the current T454-style boundary-resource packet class cannot clear T456's description-nonfactorization requirement while the boundary-resource descriptor remains admitted and capability-deciding. It does not prove a region-indexed discriminator, real substrate law, quantum physics theorem, WAY theorem, GU/TaF adapter, claim support, public posture, or cross-repo support.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Do not seek stronger posture inside the current T454 boundary-resource-description class.",
+    "Future Direction-A packets must change class by supplying a policy-independent nonadmissibility theorem for the omitted capability-deciding field.",
+    "If no such theorem packet can be supplied, demote the integrated E3-region route to a useful negative guardrail."
+  ]
+}

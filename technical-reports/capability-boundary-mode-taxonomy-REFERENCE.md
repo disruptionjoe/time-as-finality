@@ -231,6 +231,26 @@ not a region-indexed discriminator success, real substrate law, quantum physics
 theorem, WAY theorem, GU/TaF adapter, cross-repo support, claim-ledger movement,
 public posture, or hard-policy movement.
 
+## Internal support update (2026-07-05): description-completion squeeze gate
+
+T457 (`results/T457-description-completion-squeeze-gate-v0.1-results.md`)
+sharpens T456's description-nonfactorization blocker for the current T454-style
+packet class.
+
+Verdict:
+`DESCRIPTION_COMPLETION_SQUEEZE_GATE_BUILT_T454_CLASS_FACTORS_THROUGH_DESCRIPTION`.
+When the admitted boundary-resource descriptor includes the capability-deciding
+fields (`correction_budget`, `boundary_charge_available`, and
+`operation_resource_class`), the boundary-menu revision capability factors
+through admitted description. Omitting those fields creates only
+underdescription unless a future policy-independent theorem makes the omitted
+field physically non-admissible.
+
+Only a synthetic non-descriptive theorem target clears the gate. T457 is a
+guardrail for the integrated E3-region route, not a discriminator success,
+substrate law, quantum physics theorem, WAY theorem, GU/TaF adapter, cross-repo
+support, claim-ledger movement, public posture, or hard-policy movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

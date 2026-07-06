@@ -147,6 +147,16 @@ not a discriminator success or claim support. Future Direction-A packets must
 clear T456 before any stronger posture movement; if no packet can clear it, the
 integrated E3-region route should demote to a useful negative guardrail lane.
 
+T457 sharpens T456's first blocker. In the current T454-style packet class, the
+admitted boundary-resource descriptor (`correction_budget`,
+`boundary_charge_available`, and `operation_resource_class`) decides the
+boundary-menu revision capability, so capability factors through admitted
+description and description completion restores factorization. Omitting the
+boundary-resource descriptor creates only underdescription unless a future
+policy-independent theorem makes the omitted field physically non-admissible.
+Only a synthetic non-descriptive theorem target passes T457; current T454/T455
+does not move beyond recorded-tier review target.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

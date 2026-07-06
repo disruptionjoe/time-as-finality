@@ -1,0 +1,129 @@
+{
+  "artifact": "T455-t454-hostile-review-gate-v0.1",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t447": "results/T447-quantum-e3-exact-no-go-big-swing-v0.1-results.md",
+    "t452": "results/T452-law-sector-nonadmissibility-gate-v0.1-results.md",
+    "t453": "results/T453-e3-to-region-nonadmissibility-adapter-gate-v0.1-results.md",
+    "t454": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md",
+    "taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md"
+  },
+  "purpose": "Run hostile review on T454 before any stronger Direction-A posture movement.",
+  "survival_checks": [
+    {
+      "check_id": "region_packet_mechanical_correctness",
+      "question": "Does T454 actually match R-supported data while splitting only under the boundary menu?",
+      "status": "PASS",
+      "passed": true,
+      "evidence": [
+        "T454 main pair has equal R visible projection.",
+        "T454 main pair has equal observational and R-interventional signatures.",
+        "R-only capability does not split; boundary menu splits can_revise_final_verdict."
+      ],
+      "residual_risk": "This is correctness of the finite packet, not evidence that the boundary resource is physically non-declared.",
+      "gate_class": "survival"
+    },
+    {
+      "check_id": "exact_witness_tied_to_named_completion",
+      "question": "Is the T447-style exact no-go tied to the same completion that would repair the deficient side?",
+      "status": "PASS",
+      "passed": true,
+      "evidence": [
+        "T454 main packet names exact charge completion through a finite non-wrapping catalyst.",
+        "T454 imports the T447 nilpotent-shift certificate for that completion.",
+        "T452 exact-witness and completion-nonadmissibility checks pass for the main packet."
+      ],
+      "residual_risk": "The witness is tied to a declared finite non-wrapping exact-catalyst policy only; it does not cover cyclic, consumed, or ideal references.",
+      "gate_class": "survival"
+    },
+    {
+      "check_id": "negative_controls_keep_scope_narrow",
+      "question": "Do T454 controls reject nearby overreads?",
+      "status": "PASS",
+      "passed": true,
+      "evidence": [
+        "Cyclic, consumed, ideal, and description-only completions are not admitted as the main result.",
+        "Post-hoc, hidden-label, missing-region, missing-control, and no-split packets are rejected.",
+        "Only the main integrated packet is admitted as a review target."
+      ],
+      "residual_risk": "The controls narrow T454; they also expose why the result cannot be read as a stable Direction-A success.",
+      "gate_class": "survival"
+    }
+  ],
+  "hostile_objections": [
+    {
+      "check_id": "law_sector_description_absorber_still_fires",
+      "question": "Does admitting the boundary-charge description still explain the capability split?",
+      "status": "FIRES",
+      "passed": false,
+      "evidence": [
+        "T454 description-factorization check reports no violations.",
+        "Capability factors through the boundary-charge description once that descriptor is admitted.",
+        "T454 itself records this as the honest ceiling below discriminator success."
+      ],
+      "residual_risk": "The packet remains below region-indexed discriminator success because a lawful description still says which side has the boundary resource.",
+      "gate_class": "promotion_block"
+    },
+    {
+      "check_id": "reference_policy_fragility_still_fires",
+      "question": "Does the positive packet depend on the declared finite non-wrapping exact-catalyst policy?",
+      "status": "FIRES",
+      "passed": false,
+      "evidence": [
+        "Cyclic reference control restores completion.",
+        "Consumed battery control routes to resource completion.",
+        "Ideal reference control routes away from the finite exact packet."
+      ],
+      "residual_risk": "The T447 witness remains policy-relative. A stronger packet must preclude, not merely exclude, these reference policies.",
+      "gate_class": "promotion_block"
+    },
+    {
+      "check_id": "no_new_region_theorem_beyond_integration",
+      "question": "Does T454 prove a new coupling theorem beyond the region packet plus the T447 no-go?",
+      "status": "FIRES",
+      "passed": false,
+      "evidence": [
+        "T454 combines a correct finite region packet with the T447 finite non-wrapping certificate.",
+        "T454 records region_discriminator_success as false.",
+        "No minimality, uniqueness, or policy-independent coupling theorem is claimed or supplied."
+      ],
+      "residual_risk": "This is acceptable for a review target, but it blocks a stronger Direction-A posture move.",
+      "gate_class": "promotion_block"
+    },
+    {
+      "check_id": "stronger_direction_a_posture_blocked",
+      "question": "Does T455 authorize claim, roadmap, public, or cross-repo movement?",
+      "status": "BLOCKED",
+      "passed": false,
+      "evidence": [
+        "T454 is recorded-tier only.",
+        "The hostile objections above still fire.",
+        "Repo governance forbids changing public posture or cross-repo truth here."
+      ],
+      "residual_risk": "Any future promotion requires a new artifact that clears the description-completion and reference-policy objections.",
+      "gate_class": "promotion_block"
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "T454_SURVIVES_HOSTILE_REVIEW_AS_REVIEW_TARGET_PROMOTION_BLOCKED",
+    "t454_survives_as_review_target": true,
+    "fired_objection_ids": [
+      "law_sector_description_absorber_still_fires",
+      "reference_policy_fragility_still_fires",
+      "no_new_region_theorem_beyond_integration",
+      "stronger_direction_a_posture_blocked"
+    ],
+    "stronger_direction_a_posture_earned": false,
+    "region_discriminator_success": false,
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "T454 survives hostile review only at the level it claimed: a finite integrated review target. Its region equality, boundary split, exact-witness integration, and negative controls check out. Promotion remains blocked because law-sector description still explains the boundary resource, cyclic/consumed/ideal reference policies route away, and no new policy-independent region theorem is supplied."
+  },
+  "recommended_next": [
+    "Keep T454 as a recorded-tier review target, not a Direction-A success.",
+    "Do not move claim ledger, TESTS, roadmap, North Star, public posture, or cross-repo truth from T454/T455.",
+    "A stronger packet must make the boundary resource less descriptive and handle cyclic, consumed, and ideal reference policies.",
+    "If no such packet can be typed, demote the integrated E3-region route to a useful negative/guardrail lane."
+  ],
+  "honest_ceiling": "Hostile-review gate only. T455 preserves T454 as a finite integrated review target while blocking any stronger Direction-A posture movement. It does not prove a region-indexed discriminator, real substrate law, quantum physics theorem, WAY theorem, GU/TaF adapter, claim support, or public posture.",
+  "claim_ledger_update": "none; no claim promotion"
+}

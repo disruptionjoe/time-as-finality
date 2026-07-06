@@ -192,8 +192,24 @@ success: cyclic, consumed, and ideal reference controls route away from the
 finite exact packet, and law-sector description still explains which side has
 the boundary resource. It is not a real substrate law, not a quantum physics
 theorem, not a WAY theorem, not a GU/TaF adapter, not cross-repo support, and
-not claim-ledger movement. The next useful move is hostile review of this
-integrated packet before any stronger Direction-A posture movement.
+not claim-ledger movement.
+
+## Internal support update (2026-07-05): T454 hostile-review gate
+
+T455 (`results/T455-t454-hostile-review-gate-v0.1-results.md`) performs that
+hostile review before any stronger Direction-A posture movement.
+
+Verdict: `T454_SURVIVES_HOSTILE_REVIEW_AS_REVIEW_TARGET_PROMOTION_BLOCKED`. The
+finite packet survives only at its claimed level: R-equality, boundary splitting,
+exact-witness integration, and negative controls check out. Promotion remains
+blocked because law-sector description still explains the boundary resource,
+cyclic/consumed/ideal references route away from the finite exact packet, and no
+policy-independent region theorem is supplied beyond the integration.
+
+T455 preserves T454 as a recorded-tier review target only. It is not a
+region-indexed discriminator success, real substrate law, quantum physics
+theorem, WAY theorem, GU/TaF adapter, cross-repo support, claim-ledger movement,
+public posture, or hard-policy movement.
 
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 

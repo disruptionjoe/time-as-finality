@@ -126,8 +126,16 @@ the boundary menu, and ties the named deficient-side completion to T447's finite
 non-wrapping exact-catalyst no-go. The packet is admitted only as a recorded-tier
 review target, not as a discriminator success: cyclic, consumed, and ideal
 reference policies route away, and law-sector description still explains which
-side has the boundary resource. The next honest move is hostile review of T454's
-remaining ceiling before any stronger Direction-A posture movement.
+side has the boundary resource.
+
+T455 runs that hostile review. T454's mechanical legs survive: R-supported
+statistics/interventions match, the boundary menu splits revision capability,
+the T447 witness is tied to the named completion, and negative controls reject
+nearby overreads. The hostile objections still fire: law-sector description
+explains the boundary resource, cyclic/consumed/ideal reference policies route
+away, and no policy-independent region theorem is supplied beyond the
+integration. T454 therefore remains a recorded-tier review target only. No
+stronger Direction-A posture movement is earned.
 
 ## Problem
 

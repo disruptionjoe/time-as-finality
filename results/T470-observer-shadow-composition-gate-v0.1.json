@@ -1,0 +1,306 @@
+{
+  "artifact_id": "T470-observer-shadow-composition-gate-v0.1",
+  "verdict": "OBSERVER_SHADOW_SCHEMA_BUILT_INDEXED_COMPLETION_REQUIRED_NO_PROMOTION",
+  "objects": [
+    {
+      "object_id": "transport_endpoint_via_L_A",
+      "family": "typed_transport",
+      "source_system": "T37 diamond typed-transport network",
+      "observer_profile": "D1 restriction observer over SRC/TGT endpoint",
+      "shadow_projection": "transport endpoint shadow",
+      "shadow_key": [
+        "network:diamond_network",
+        "source:SRC",
+        "target:TGT"
+      ],
+      "capability_object": "PO1 admissibility verdict",
+      "capability_value": "po1",
+      "native_comparison": "boolean equality on PO1 evidence",
+      "declared_indices": [
+        "endpoint"
+      ]
+    },
+    {
+      "object_id": "transport_endpoint_via_L_B",
+      "family": "typed_transport",
+      "source_system": "T37 diamond typed-transport network",
+      "observer_profile": "D1 restriction observer over SRC/TGT endpoint",
+      "shadow_projection": "transport endpoint shadow",
+      "shadow_key": [
+        "network:diamond_network",
+        "source:SRC",
+        "target:TGT"
+      ],
+      "capability_object": "PO1 admissibility verdict",
+      "capability_value": "not_po1",
+      "native_comparison": "boolean equality on PO1 evidence",
+      "declared_indices": [
+        "endpoint"
+      ]
+    },
+    {
+      "object_id": "transport_path_indexed_via_L_A",
+      "family": "typed_transport",
+      "source_system": "T37 diamond typed-transport network",
+      "observer_profile": "D1 restriction observer over SRC/TGT endpoint",
+      "shadow_projection": "path-indexed transport shadow",
+      "shadow_key": [
+        "network:diamond_network",
+        "source:SRC",
+        "target:TGT",
+        "path:SRC -> L_A -> TGT",
+        "forgotten:type_guarantee"
+      ],
+      "capability_object": "PO1 admissibility verdict",
+      "capability_value": "po1",
+      "native_comparison": "boolean equality on PO1 evidence",
+      "declared_indices": [
+        "endpoint",
+        "path_label",
+        "accumulated_forgotten_structure"
+      ]
+    },
+    {
+      "object_id": "transport_path_indexed_via_L_B",
+      "family": "typed_transport",
+      "source_system": "T37 diamond typed-transport network",
+      "observer_profile": "D1 restriction observer over SRC/TGT endpoint",
+      "shadow_projection": "path-indexed transport shadow",
+      "shadow_key": [
+        "network:diamond_network",
+        "source:SRC",
+        "target:TGT",
+        "path:SRC -> L_B -> TGT",
+        "forgotten:none"
+      ],
+      "capability_object": "PO1 admissibility verdict",
+      "capability_value": "not_po1",
+      "native_comparison": "boolean equality on PO1 evidence",
+      "declared_indices": [
+        "endpoint",
+        "path_label",
+        "accumulated_forgotten_structure"
+      ]
+    },
+    {
+      "object_id": "losskernel_neighbor_mixed_a",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "neighbor-visible signature nu",
+      "shadow_key": [
+        "nu:048221cecba2"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "left_keep:right_keep",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature"
+      ]
+    },
+    {
+      "object_id": "losskernel_neighbor_mixed_b",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "neighbor-visible signature nu",
+      "shadow_key": [
+        "nu:048221cecba2"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "left_keep:right_keep",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature"
+      ]
+    },
+    {
+      "object_id": "losskernel_hidden_omitted_a",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "neighbor-visible signature nu",
+      "shadow_key": [
+        "nu:1250876c150d"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "hidden:secret_X",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature"
+      ]
+    },
+    {
+      "object_id": "losskernel_hidden_omitted_b",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "neighbor-visible signature nu",
+      "shadow_key": [
+        "nu:1250876c150d"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "hidden:secret_Y",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature"
+      ]
+    },
+    {
+      "object_id": "losskernel_hidden_completed_a",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "completed neighbor-visible signature",
+      "shadow_key": [
+        "nu:1250876c150d",
+        "hidden_source:secret_X"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "hidden:secret_X",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature",
+        "hidden_source_datum"
+      ]
+    },
+    {
+      "object_id": "losskernel_hidden_completed_b",
+      "family": "losskernel",
+      "source_system": "T220 LossKernel witness-obligation fixture",
+      "observer_profile": "mature-neighbor audit observer",
+      "shadow_projection": "completed neighbor-visible signature",
+      "shadow_key": [
+        "nu:1250876c150d",
+        "hidden_source:secret_Y"
+      ],
+      "capability_object": "canonical witness obligation",
+      "capability_value": "hidden:secret_Y",
+      "native_comparison": "tuple equality on obligation normal form",
+      "declared_indices": [
+        "neighbor_signature",
+        "hidden_source_datum"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "transport_endpoint_only_collapse",
+      "family": "typed_transport",
+      "source_object_id": "transport_endpoint_via_L_A",
+      "target_object_id": "transport_endpoint_via_L_B",
+      "proposed_morphism": "collapse paths to the same endpoint shadow",
+      "same_shadow": true,
+      "capability_equivalent": false,
+      "protection_preserved": false,
+      "classification": "composition_requires_path_index",
+      "obstruction": "The two transport paths share the same endpoint shadow but have different accumulated forgotten structure and different PO1 capability verdicts.",
+      "repaired_by": "index the shadow by path label and accumulated forgotten structure"
+    },
+    {
+      "check_id": "transport_path_indexed_completion",
+      "family": "typed_transport",
+      "source_object_id": "transport_path_indexed_via_L_A",
+      "target_object_id": "transport_path_indexed_via_L_B",
+      "proposed_morphism": "compare after path-indexed completion",
+      "same_shadow": false,
+      "capability_equivalent": false,
+      "protection_preserved": true,
+      "classification": "separated_after_completion",
+      "obstruction": "none",
+      "repaired_by": "already separated by path-indexed observer-shadow data"
+    },
+    {
+      "check_id": "losskernel_neighbor_factoring_preserves",
+      "family": "losskernel",
+      "source_object_id": "losskernel_neighbor_mixed_a",
+      "target_object_id": "losskernel_neighbor_mixed_b",
+      "proposed_morphism": "factor through neighbor-visible nu",
+      "same_shadow": true,
+      "capability_equivalent": true,
+      "protection_preserved": true,
+      "classification": "verdict_preserved",
+      "obstruction": "none",
+      "repaired_by": "not needed"
+    },
+    {
+      "check_id": "losskernel_hidden_source_omitted",
+      "family": "losskernel",
+      "source_object_id": "losskernel_hidden_omitted_a",
+      "target_object_id": "losskernel_hidden_omitted_b",
+      "proposed_morphism": "omit hidden source datum from neighbor shadow",
+      "same_shadow": true,
+      "capability_equivalent": false,
+      "protection_preserved": false,
+      "classification": "state_completion_required",
+      "obstruction": "The cases share the same neighbor-visible signature but the obligation reads a hidden source datum outside that signature.",
+      "repaired_by": "admit the hidden source datum into the shadow index, which routes the distinction back to ordinary state completion"
+    },
+    {
+      "check_id": "losskernel_hidden_source_completed",
+      "family": "losskernel",
+      "source_object_id": "losskernel_hidden_completed_a",
+      "target_object_id": "losskernel_hidden_completed_b",
+      "proposed_morphism": "compare after hidden-source completion",
+      "same_shadow": false,
+      "capability_equivalent": false,
+      "protection_preserved": true,
+      "classification": "separated_after_completion",
+      "obstruction": "none",
+      "repaired_by": "already separated by completed neighbor-visible state"
+    }
+  ],
+  "family_summaries": [
+    {
+      "family": "typed_transport",
+      "checks": [
+        "transport_endpoint_only_collapse",
+        "transport_path_indexed_completion"
+      ],
+      "passes_shared_schema": true,
+      "requires_indexed_completion": true,
+      "strongest_reading": "Typed transport fits the shared schema only when the observer-shadow object carries path and accumulated-loss indices. Endpoint-only composition loses load-bearing data.",
+      "not_earned": [
+        "observer-shadow category theorem",
+        "PO1 functor repair",
+        "new D1 or PO1 claim movement"
+      ]
+    },
+    {
+      "family": "losskernel",
+      "checks": [
+        "losskernel_neighbor_factoring_preserves",
+        "losskernel_hidden_source_omitted",
+        "losskernel_hidden_source_completed"
+      ],
+      "passes_shared_schema": true,
+      "requires_indexed_completion": true,
+      "strongest_reading": "LossKernel fits the same schema as a neighbor-visible factoring case. The only separating escape requires source-state completion, which T220 already routes back to absorption.",
+      "not_earned": [
+        "LossKernel prior-art-separated theorem",
+        "TF1 promotion",
+        "new mathematical object language"
+      ]
+    }
+  ],
+  "shared_schema_expresses_both_families": true,
+  "endpoint_only_global_category_supported": false,
+  "indexed_atlas_required": true,
+  "claim_ledger_update": "none",
+  "strongest_reading": "A shared observer-shadow audit-object schema can express both finite families, but verdict preservation is not automatic under endpoint-only composition. The first bounded run supports an indexed audit atlas, not a single global observer-shadow category.",
+  "future_packet_minimum": [
+    "declare source system, observer/access profile, shadow projection, capability object, and native comparison",
+    "state which indices are part of the observer-shadow object before comparing morphisms",
+    "include a positive preservation control where same shadow gives same capability",
+    "include a negative or hostile control where omitted indices break preservation",
+    "name the completion that repairs the bookkeeping and whether it routes to an absorber"
+  ],
+  "not_earned": [
+    "observer-shadow category theorem",
+    "North Star geometry proof",
+    "D1, PO1, TF1, or LossKernel promotion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ]
+}

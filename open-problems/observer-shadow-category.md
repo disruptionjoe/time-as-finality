@@ -127,3 +127,39 @@ If the category fails, preserve the negative result:
 The North Star currently needs an atlas of domain-specific audits rather than
 a single observer-shadow category.
 ```
+
+## T470 addendum: bounded composition gate
+
+T470 runs the first bounded object/morphism check requested above:
+`results/T470-observer-shadow-composition-gate-v0.1-results.md`; spec
+`tests/T470-observer-shadow-composition-gate.md`; model
+`models/observer_shadow_composition_gate.py`.
+
+Verdict:
+
+```text
+OBSERVER_SHADOW_SCHEMA_BUILT_INDEXED_COMPLETION_REQUIRED_NO_PROMOTION
+```
+
+The shared audit-object schema can express both finite families tested:
+T37/T41 typed transport and T220 LossKernel factorization. The transport family
+shows the obstruction: collapsing two diamond paths to the same endpoint shadow
+breaks protection because the paths have different accumulated forgotten
+structure and different PO1 capability verdicts. Adding path label and
+accumulated forgotten-structure indices repairs the bookkeeping by separating
+the shadows.
+
+The LossKernel family gives the positive preservation control: the canonical
+same-neighbor pair factors through `nu` and preserves the witness obligation.
+The hidden-source escape fails when the source datum is omitted from `nu`, and
+is repaired only by state completion, which routes back to ordinary absorption.
+
+This supports an indexed audit-atlas reading, not a single global
+observer-shadow category theorem. Future packets must declare source system,
+observer/access profile, shadow projection, capability object, native
+comparison, and load-bearing indices before morphism comparison; include both
+positive preservation and omitted-index hostile controls; and name whether
+completion repairs the object or routes to an absorber. No observer-shadow
+category theorem, North Star geometry proof, D1/PO1/TF1/LossKernel promotion,
+physics/consciousness claim, claim-ledger movement, roadmap movement, or
+public-posture movement is earned.

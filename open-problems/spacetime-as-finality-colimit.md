@@ -61,3 +61,30 @@ The result remains intentionally weak relative to this open problem: it defines 
 ## Contribution Needed
 
 Choose one entry point and make it precise. The minimum deliverable is a formal definition of the colimit/limit object and a check that it is well-defined (not just that it "should be" classical spacetime by hand-waving). The maximum deliverable is a proof that the construction reproduces a known result in GR or QFT as a limiting case.
+
+## Status Addendum (2026-07-06): added-assumption admission gate
+
+T464 turns the post-T223 burden into an executable admission gate:
+`results/T464-s1-added-assumption-admission-gate-v0.1-results.md`; spec
+`tests/T464-s1-added-assumption-admission-gate.md`; model
+`models/s1_added_assumption_admission_gate.py`.
+
+Verdict:
+`S1_ADDED_ASSUMPTION_ADMISSION_GATE_BUILT_NO_S1_PROMOTION`. T223 remains the
+inherited finite no-go baseline for the uniform finite finality-colimit
+ensemble. More finite uniform enumeration, selected survivor positives, screen
+drift, post-hoc assumptions, circular or tail-tuned measures, missing finite
+audits, single-size positives, missing Lorentzian target constraints,
+claim-promotion shortcuts, public-posture shortcuts, and non-GitHub external
+action shortcuts are rejected or blocked.
+
+Only a future added-assumption packet is admitted for review: it must declare a
+non-uniform measure, selection rule, sprinkling law, or continuum bridge before
+scoring; justify naturality through finality-native structure or a neighboring
+theory; avoid tuning to the known T223 survivor tail; audit against the existing
+T126/T156/T159/T223 pipeline; show multi-size persistence or a real limit
+target; preserve the finite guardrail screens; and name the later Lorentzian
+causal, metric, covariance, locality, or embedding constraints it must face.
+This does not promote S1, reverse T223, derive spacetime, prove
+manifoldlikeness, supply a dimension estimate, prove a sprinkling law, establish
+a continuum theorem, or move public posture.

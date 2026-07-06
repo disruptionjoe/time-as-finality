@@ -253,3 +253,34 @@ observer-shadow category theorem, indexed-category/fibration theorem, North
 Star geometry proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness
 claim, claim-ledger movement, roadmap movement, or public-posture movement is
 earned.
+
+## T475 addendum: bridge-review gate
+
+T475 tests whether the T474 audit-atlas bridge can support a concrete
+cross-family review packet:
+`results/T475-observer-shadow-bridge-review-gate-v0.1-results.md`; spec
+`tests/T475-observer-shadow-bridge-review-gate.md`; model
+`models/observer_shadow_bridge_review_gate.py`.
+
+Verdict:
+
+```text
+BRIDGE_REVIEW_GATE_BUILT_REVIEW_METADATA_ONLY_NO_CATEGORY
+```
+
+The T474 audit-atlas bridge supports one concrete cross-family review packet
+only as verdict/control metadata. The admitted packet preserves typed-transport
+and LossKernel shadows separately, preserves their capability objects and
+native comparisons separately, and supplies both positive family controls and
+hostile bridge controls. Packets with no admitted bridge, semantic bridging,
+absorber-completion bridging, direct composition/category shortcuts, incomplete
+controls, or PO1/LossKernel capability-object identification are rejected.
+
+This makes cross-family review possible without category promotion. Future
+bridge-review packets must cite an admitted audit-atlas bridge, keep source and
+target family data separate, include positive and hostile controls, and state
+that the packet is review metadata unless direct cross-family preservation has
+been independently proved. No observer-shadow category theorem,
+indexed-category/fibration theorem, North Star geometry proof, D1/PO1/TF1/
+LossKernel promotion, physics/consciousness claim, claim-ledger movement,
+roadmap movement, or public-posture movement is earned.

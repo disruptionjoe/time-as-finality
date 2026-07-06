@@ -1,0 +1,748 @@
+{
+  "artifact_id": "T467-valid-coarse-graining-admissibility-gate-v0.1",
+  "objective": "Make the valid-coarse-graining-as-finality-admissibility filter executable on a finite record-state universe.",
+  "budget": {
+    "accessible_fields": [
+      0,
+      1,
+      2
+    ],
+    "max_fields_read": 2,
+    "max_predicate_cost": 3,
+    "min_holder_redundancy": 2,
+    "max_reversal_cost": 2
+  },
+  "state_count": 16,
+  "candidates": [
+    {
+      "candidate_id": "two_holder_finality_band",
+      "description": "Two accessible holders certify 00, 11, or mismatch as the record-status band.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 2,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": true,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "bounded_local_count",
+      "description": "A bounded observer records the count of finalized support in two accessible holders.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 2,
+      "holder_redundancy": 2,
+      "reversal_cost": 2,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": true,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "microstate_identity",
+      "description": "The equivalence relation is equality of the full state.",
+      "fields_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "predicate_cost": 4,
+      "holder_redundancy": 4,
+      "reversal_cost": 4,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "constant_all_states",
+      "description": "All source states are collapsed into one class.",
+      "fields_read": [],
+      "predicate_cost": 0,
+      "holder_redundancy": 0,
+      "reversal_cost": 0,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "hidden_fourth_field",
+      "description": "The class depends on a field outside the observer boundary.",
+      "fields_read": [
+        0,
+        3
+      ],
+      "predicate_cost": 2,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "ornate_table_lookup",
+      "description": "A declared but computationally ornate lookup table is required to recognize the class.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 12,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "posthoc_exception_partition",
+      "description": "The relation is selected after seeing the state set.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 2,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": false,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "projection_only_shadow",
+      "description": "A visible projection is present, but no record is certified.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 1,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": false,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": true,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "single_holder_dashboard",
+      "description": "A one-holder dashboard label lacks D1-style redundancy.",
+      "fields_read": [
+        0
+      ],
+      "predicate_cost": 1,
+      "holder_redundancy": 1,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "candidate_id": "observer_creates_truth_overread",
+      "description": "The relation asks to treat observer equivalencing as making the underlying fact true.",
+      "fields_read": [
+        0,
+        1
+      ],
+      "predicate_cost": 2,
+      "holder_redundancy": 2,
+      "reversal_cost": 1,
+      "declared_before_use": true,
+      "certified_record_available": true,
+      "finality_native_task": true,
+      "expected_valid": false,
+      "projection_only_no_record": false,
+      "observer_creates_truth_overread": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    }
+  ],
+  "evaluations": [
+    {
+      "candidate_id": "two_holder_finality_band",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "blockers": [],
+      "class_count": 3,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "stable_one",
+          "members": [
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        },
+        {
+          "label": "stable_zero",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011"
+          ]
+        },
+        {
+          "label": "unsettled",
+          "members": [
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011"
+          ]
+        }
+      ],
+      "expected_valid": true
+    },
+    {
+      "candidate_id": "bounded_local_count",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "blockers": [],
+      "class_count": 3,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "count_0",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011"
+          ]
+        },
+        {
+          "label": "count_1",
+          "members": [
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011"
+          ]
+        },
+        {
+          "label": "count_2",
+          "members": [
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": true
+    },
+    {
+      "candidate_id": "microstate_identity",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TOO_FINE_MICROSTATE_TRACKING",
+      "blockers": [
+        "uses_inaccessible_record_fields",
+        "field_budget_exceeded",
+        "predicate_cost_ornate",
+        "reversal_cost_over_budget",
+        "too_fine_microstate_identity"
+      ],
+      "class_count": 16,
+      "singleton_classes": 16,
+      "partition_signature": [
+        {
+          "label": "state_0000",
+          "members": [
+            "0000"
+          ]
+        },
+        {
+          "label": "state_0001",
+          "members": [
+            "0001"
+          ]
+        },
+        {
+          "label": "state_0010",
+          "members": [
+            "0010"
+          ]
+        },
+        {
+          "label": "state_0011",
+          "members": [
+            "0011"
+          ]
+        },
+        {
+          "label": "state_0100",
+          "members": [
+            "0100"
+          ]
+        },
+        {
+          "label": "state_0101",
+          "members": [
+            "0101"
+          ]
+        },
+        {
+          "label": "state_0110",
+          "members": [
+            "0110"
+          ]
+        },
+        {
+          "label": "state_0111",
+          "members": [
+            "0111"
+          ]
+        },
+        {
+          "label": "state_1000",
+          "members": [
+            "1000"
+          ]
+        },
+        {
+          "label": "state_1001",
+          "members": [
+            "1001"
+          ]
+        },
+        {
+          "label": "state_1010",
+          "members": [
+            "1010"
+          ]
+        },
+        {
+          "label": "state_1011",
+          "members": [
+            "1011"
+          ]
+        },
+        {
+          "label": "state_1100",
+          "members": [
+            "1100"
+          ]
+        },
+        {
+          "label": "state_1101",
+          "members": [
+            "1101"
+          ]
+        },
+        {
+          "label": "state_1110",
+          "members": [
+            "1110"
+          ]
+        },
+        {
+          "label": "state_1111",
+          "members": [
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "constant_all_states",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TOO_COARSE_NO_TASK_SEPARATION",
+      "blockers": [
+        "holder_redundancy_below_d1_floor",
+        "too_coarse_no_task_separation"
+      ],
+      "class_count": 1,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "all_states",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "hidden_fourth_field",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "INACCESSIBLE_RECORD_FIELD",
+      "blockers": [
+        "uses_inaccessible_record_fields"
+      ],
+      "class_count": 4,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "visible_hidden_0_0",
+          "members": [
+            "0000",
+            "0010",
+            "0100",
+            "0110"
+          ]
+        },
+        {
+          "label": "visible_hidden_0_1",
+          "members": [
+            "0001",
+            "0011",
+            "0101",
+            "0111"
+          ]
+        },
+        {
+          "label": "visible_hidden_1_0",
+          "members": [
+            "1000",
+            "1010",
+            "1100",
+            "1110"
+          ]
+        },
+        {
+          "label": "visible_hidden_1_1",
+          "members": [
+            "1001",
+            "1011",
+            "1101",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "ornate_table_lookup",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "COMPUTATION_COST_ORNATE_OR_OVER_BUDGET",
+      "blockers": [
+        "predicate_cost_ornate"
+      ],
+      "class_count": 3,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "lookup_0",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        },
+        {
+          "label": "lookup_1",
+          "members": [
+            "1000",
+            "1001",
+            "1010",
+            "1011"
+          ]
+        },
+        {
+          "label": "lookup_2",
+          "members": [
+            "0100",
+            "0101",
+            "0110",
+            "0111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "posthoc_exception_partition",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "POSTHOC_EQUIVALENCE_NOT_VALID",
+      "blockers": [
+        "posthoc_equivalence_relation"
+      ],
+      "class_count": 2,
+      "singleton_classes": 1,
+      "partition_signature": [
+        {
+          "label": "exception",
+          "members": [
+            "1111"
+          ]
+        },
+        {
+          "label": "other",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "projection_only_shadow",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "PROJECTION_IS_NOT_FINALITY",
+      "blockers": [
+        "projection_without_certified_record"
+      ],
+      "class_count": 2,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "shadow_0",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111"
+          ]
+        },
+        {
+          "label": "shadow_1",
+          "members": [
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "single_holder_dashboard",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "D1_CERTIFICATION_BUDGET_NOT_MET",
+      "blockers": [
+        "holder_redundancy_below_d1_floor"
+      ],
+      "class_count": 2,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "holder_0",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "0100",
+            "0101",
+            "0110",
+            "0111"
+          ]
+        },
+        {
+          "label": "holder_1",
+          "members": [
+            "1000",
+            "1001",
+            "1010",
+            "1011",
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    },
+    {
+      "candidate_id": "observer_creates_truth_overread",
+      "admitted": false,
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "blockers": [
+        "observer_creates_truth_overread"
+      ],
+      "class_count": 2,
+      "singleton_classes": 0,
+      "partition_signature": [
+        {
+          "label": "overread_False",
+          "members": [
+            "0100",
+            "0101",
+            "0110",
+            "0111",
+            "1000",
+            "1001",
+            "1010",
+            "1011"
+          ]
+        },
+        {
+          "label": "overread_True",
+          "members": [
+            "0000",
+            "0001",
+            "0010",
+            "0011",
+            "1100",
+            "1101",
+            "1110",
+            "1111"
+          ]
+        }
+      ],
+      "expected_valid": false
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "VALID_COARSE_GRAINING_ADMISSIBILITY_GATE_BUILT_NO_PROMOTION",
+    "admitted_candidate_ids": [
+      "two_holder_finality_band",
+      "bounded_local_count"
+    ],
+    "predeclared_valid_candidate_ids": [
+      "two_holder_finality_band",
+      "bounded_local_count"
+    ],
+    "filter_matches_predeclared_valid_set": true,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "physics_claim_earned": false,
+    "reading": "In this finite fixture, the bounded-observer certification filter admits only the declared finality-record band and local count controls. Microstate identity, trivial collapse, hidden fields, ornate lookup, posthoc partitions, projection-only shadows, one-holder dashboards, and observer-creates-truth overreads all fail before claim movement."
+  },
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ],
+  "future_packet_minimum": [
+    "finite state universe and candidate equivalence relation declared",
+    "record fields needed to classify each state named before selection",
+    "all fields inside the observer access boundary",
+    "recognition predicate within the declared computation budget",
+    "D1-style holder redundancy and reversal-cost floors satisfied",
+    "nontrivial coarse-graining: neither all states nor microstate identity",
+    "certified record available, not projection alone",
+    "finality-native task declared without observer-creates-truth overread",
+    "positive and hostile controls included before any claim movement"
+  ]
+}

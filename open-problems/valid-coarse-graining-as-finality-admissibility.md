@@ -53,3 +53,33 @@ On a finite record-graph model, enumerate candidate equivalence relations (coars
 whether it is bounded-observer-certifiable under D1, and test whether that set coincides with the
 intuitively-valid coarse-grainings. A clean coincidence is the constructive version of the claim; a mismatch
 bounds what TaF's filter actually characterizes. Keep cost-model assumptions explicit.
+
+## T467 addendum: finite admissibility gate
+
+T467 converts the contribution request into an executable finite gate:
+`results/T467-valid-coarse-graining-admissibility-gate-v0.1-results.md`; spec
+`tests/T467-valid-coarse-graining-admissibility-gate.md`; model
+`models/valid_coarse_graining_admissibility_gate.py`.
+
+Verdict:
+
+```text
+VALID_COARSE_GRAINING_ADMISSIBILITY_GATE_BUILT_NO_PROMOTION
+```
+
+In the finite fixture, the bounded-observer certification filter admits only
+the two predeclared positive controls: a two-holder finality-status band and a
+bounded local count. Microstate identity fails as too fine, all-state collapse
+fails as too coarse, a hidden-field relation fails the access boundary, an
+ornate lookup fails the computation budget, a posthoc exception relation fails
+predeclaration, a projection-only shadow fails because projection is not
+finality, a one-holder dashboard fails D1 redundancy, and an observer-creates-
+truth overread is blocked.
+
+This strengthens the open problem only as an admission gate. It does not prove
+that TaF supplies the exact missing Observer Theory criterion, does not promote
+D1/T10/T29, and does not earn a physics, consciousness, or public-posture move.
+Future packets must declare the finite state universe, equivalence relation,
+observer access boundary, recognition budget, D1-style certification fields,
+nontrivial coarse-graining condition, certified-record object, and hostile
+controls before any claim movement.

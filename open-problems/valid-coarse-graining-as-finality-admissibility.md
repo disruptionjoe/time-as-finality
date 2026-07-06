@@ -197,3 +197,35 @@ arithmetic, label-restatement, microstate, and observer-creates-truth hostile
 controls active before any claim movement. No D1/T10/T29, Observer Theory,
 global valid-coarse-graining criterion, physics, consciousness, claim-ledger,
 roadmap, or public-posture movement is earned.
+
+## T478 addendum: budget-lattice gate
+
+T478 expands T477 from a single nested-budget chain to a finite access-budget
+lattice:
+`results/T478-coarse-graining-budget-lattice-gate-v0.1-results.md`; spec
+`tests/T478-coarse-graining-budget-lattice-gate.md`; model
+`models/coarse_graining_budget_lattice_gate.py`.
+
+Verdict:
+
+```text
+BUDGET_LATTICE_GATE_BUILT_PATH_INDEPENDENT_NO_PROMOTION
+```
+
+The repaired coarse-graining packet is coherent across the tested lattice.
+Admitted finality-natural relations persist across budget-inclusion edges,
+incomparable-budget joins preserve prior admissions, new join admissions are
+explained by newly accessible certified record fields, and top-budget verdicts
+are independent of the access-expansion path. Cheap arithmetic,
+label-restatement, microstate identity, and observer-creates-truth controls
+remain blocked whenever they become accessible.
+
+This hardens the bounded-observer intake discipline from chain-indexed to
+lattice-indexed review, but it is still only a finite guardrail. Future packets
+must declare the observer-budget poset, report edge monotonicity and join/path
+checks, explain every new admission by certified record access, and treat
+budget-indexed admissions as local review targets rather than a global valid
+coarse-graining criterion. No D1/T10/T29 promotion, Observer Theory equivalence
+theorem, global valid-coarse-graining criterion, physics, consciousness,
+claim-ledger, roadmap, README, public-posture, hard-policy, protected-license,
+or cross-repo truth movement is earned.

@@ -1,0 +1,1601 @@
+{
+  "artifact_id": "T478-coarse-graining-budget-lattice-gate-v0.1",
+  "objective": "Test whether post-T477 valid-coarse-graining admission is coherent across a finite observer-budget lattice: no admitted relation is lost under access expansion, joins are path independent, newly accessible finality tasks are observer-indexed, and hostile controls remain blocked when they become accessible.",
+  "state_count": 16,
+  "budget_results": [
+    {
+      "budget_id": "budget_01",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1
+        ],
+        "max_fields_read": 2,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "pair_01_finality_band"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_02",
+      "budget": {
+        "accessible_fields": [
+          0,
+          2
+        ],
+        "max_fields_read": 2,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "pair_02_finality_band"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_03",
+      "budget": {
+        "accessible_fields": [
+          0,
+          3
+        ],
+        "max_fields_read": 2,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "boundary_pair_status"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_012",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1,
+          2
+        ],
+        "max_fields_read": 3,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "pair_01_finality_band",
+        "pair_02_finality_band",
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_013",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1,
+          3
+        ],
+        "max_fields_read": 3,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "boundary_pair_status",
+        "pair_01_finality_band"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_023",
+      "budget": {
+        "accessible_fields": [
+          0,
+          2,
+          3
+        ],
+        "max_fields_read": 3,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "boundary_pair_status",
+        "pair_02_finality_band"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    },
+    {
+      "budget_id": "budget_0123",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "max_fields_read": 4,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "admitted_candidate_ids": [
+        "boundary_pair_status",
+        "pair_01_finality_band",
+        "pair_02_finality_band",
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "candidate_evaluations": [
+        {
+          "candidate_id": "pair_01_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "pair_02_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 4,
+          "role": "join_positive_control"
+        },
+        {
+          "candidate_id": "cheap_pair01_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "cheap_triple_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ]
+    }
+  ],
+  "edge_checks": [
+    {
+      "from_budget": "budget_01",
+      "to_budget": "budget_012",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_01",
+      "to_budget": "budget_013",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_02",
+      "to_budget": "budget_012",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_02",
+      "to_budget": "budget_023",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_03",
+      "to_budget": "budget_013",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_03",
+      "to_budget": "budget_023",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_012",
+      "to_budget": "budget_0123",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_013",
+      "to_budget": "budget_0123",
+      "lost_admissions": [],
+      "monotone": true
+    },
+    {
+      "from_budget": "budget_023",
+      "to_budget": "budget_0123",
+      "lost_admissions": [],
+      "monotone": true
+    }
+  ],
+  "join_checks": [
+    {
+      "left_budget": "budget_01",
+      "right_budget": "budget_02",
+      "join_budget": "budget_012",
+      "newly_admitted_at_join": [
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_01",
+      "right_budget": "budget_03",
+      "join_budget": "budget_013",
+      "newly_admitted_at_join": [],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_01",
+      "right_budget": "budget_023",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_02",
+      "right_budget": "budget_03",
+      "join_budget": "budget_023",
+      "newly_admitted_at_join": [],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_02",
+      "right_budget": "budget_013",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_03",
+      "right_budget": "budget_012",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_012",
+      "right_budget": "budget_013",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_012",
+      "right_budget": "budget_023",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    },
+    {
+      "left_budget": "budget_013",
+      "right_budget": "budget_023",
+      "join_budget": "budget_0123",
+      "newly_admitted_at_join": [
+        "three_holder_finality_band",
+        "three_holder_support_count"
+      ],
+      "no_preexisting_admission_loss": true,
+      "new_admissions_explained_by_join_budget": true,
+      "path_independent_and_explained": true
+    }
+  ],
+  "path_checks": [
+    {
+      "path_id": "pair01_then_three_then_top",
+      "path": [
+        "budget_01",
+        "budget_012",
+        "budget_0123"
+      ],
+      "sequence": [
+        {
+          "budget_id": "budget_01",
+          "newly_admitted": [
+            "pair_01_finality_band"
+          ],
+          "admitted": [
+            "pair_01_finality_band"
+          ]
+        },
+        {
+          "budget_id": "budget_012",
+          "newly_admitted": [
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ],
+          "admitted": [
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        },
+        {
+          "budget_id": "budget_0123",
+          "newly_admitted": [
+            "boundary_pair_status"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        }
+      ],
+      "top_vector_matches_direct_top": true
+    },
+    {
+      "path_id": "pair02_then_three_then_top",
+      "path": [
+        "budget_02",
+        "budget_012",
+        "budget_0123"
+      ],
+      "sequence": [
+        {
+          "budget_id": "budget_02",
+          "newly_admitted": [
+            "pair_02_finality_band"
+          ],
+          "admitted": [
+            "pair_02_finality_band"
+          ]
+        },
+        {
+          "budget_id": "budget_012",
+          "newly_admitted": [
+            "pair_01_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ],
+          "admitted": [
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        },
+        {
+          "budget_id": "budget_0123",
+          "newly_admitted": [
+            "boundary_pair_status"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        }
+      ],
+      "top_vector_matches_direct_top": true
+    },
+    {
+      "path_id": "boundary_then_013_then_top",
+      "path": [
+        "budget_03",
+        "budget_013",
+        "budget_0123"
+      ],
+      "sequence": [
+        {
+          "budget_id": "budget_03",
+          "newly_admitted": [
+            "boundary_pair_status"
+          ],
+          "admitted": [
+            "boundary_pair_status"
+          ]
+        },
+        {
+          "budget_id": "budget_013",
+          "newly_admitted": [
+            "pair_01_finality_band"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_01_finality_band"
+          ]
+        },
+        {
+          "budget_id": "budget_0123",
+          "newly_admitted": [
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        }
+      ],
+      "top_vector_matches_direct_top": true
+    },
+    {
+      "path_id": "boundary_then_023_then_top",
+      "path": [
+        "budget_03",
+        "budget_023",
+        "budget_0123"
+      ],
+      "sequence": [
+        {
+          "budget_id": "budget_03",
+          "newly_admitted": [
+            "boundary_pair_status"
+          ],
+          "admitted": [
+            "boundary_pair_status"
+          ]
+        },
+        {
+          "budget_id": "budget_023",
+          "newly_admitted": [
+            "pair_02_finality_band"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_02_finality_band"
+          ]
+        },
+        {
+          "budget_id": "budget_0123",
+          "newly_admitted": [
+            "pair_01_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ],
+          "admitted": [
+            "boundary_pair_status",
+            "pair_01_finality_band",
+            "pair_02_finality_band",
+            "three_holder_finality_band",
+            "three_holder_support_count"
+          ]
+        }
+      ],
+      "top_vector_matches_direct_top": true
+    }
+  ],
+  "candidate_transition_rows": [
+    {
+      "candidate_id": "pair_01_finality_band",
+      "role": "positive_control",
+      "required_fields": [
+        0,
+        1
+      ],
+      "admitted_budgets": [
+        "budget_01",
+        "budget_012",
+        "budget_013",
+        "budget_0123"
+      ],
+      "first_admitted_budgets": [
+        "budget_01"
+      ]
+    },
+    {
+      "candidate_id": "pair_02_finality_band",
+      "role": "positive_control",
+      "required_fields": [
+        0,
+        2
+      ],
+      "admitted_budgets": [
+        "budget_02",
+        "budget_012",
+        "budget_023",
+        "budget_0123"
+      ],
+      "first_admitted_budgets": [
+        "budget_02"
+      ]
+    },
+    {
+      "candidate_id": "boundary_pair_status",
+      "role": "observer_index_positive_control",
+      "required_fields": [
+        0,
+        3
+      ],
+      "admitted_budgets": [
+        "budget_03",
+        "budget_013",
+        "budget_023",
+        "budget_0123"
+      ],
+      "first_admitted_budgets": [
+        "budget_03"
+      ]
+    },
+    {
+      "candidate_id": "three_holder_finality_band",
+      "role": "join_positive_control",
+      "required_fields": [
+        0,
+        1,
+        2
+      ],
+      "admitted_budgets": [
+        "budget_012",
+        "budget_0123"
+      ],
+      "first_admitted_budgets": [
+        "budget_012"
+      ]
+    },
+    {
+      "candidate_id": "three_holder_support_count",
+      "role": "join_positive_control",
+      "required_fields": [
+        0,
+        1,
+        2
+      ],
+      "admitted_budgets": [
+        "budget_012",
+        "budget_0123"
+      ],
+      "first_admitted_budgets": [
+        "budget_012"
+      ]
+    },
+    {
+      "candidate_id": "cheap_pair01_parity_with_task_label",
+      "role": "hostile_control",
+      "required_fields": [
+        0,
+        1
+      ],
+      "admitted_budgets": [],
+      "first_admitted_budgets": []
+    },
+    {
+      "candidate_id": "cheap_triple_parity_with_task_label",
+      "role": "hostile_control",
+      "required_fields": [
+        0,
+        1,
+        2
+      ],
+      "admitted_budgets": [],
+      "first_admitted_budgets": []
+    },
+    {
+      "candidate_id": "label_restatement_lookup",
+      "role": "hostile_control",
+      "required_fields": [
+        0,
+        1,
+        2
+      ],
+      "admitted_budgets": [],
+      "first_admitted_budgets": []
+    },
+    {
+      "candidate_id": "microstate_identity",
+      "role": "hostile_control",
+      "required_fields": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "admitted_budgets": [],
+      "first_admitted_budgets": []
+    },
+    {
+      "candidate_id": "observer_creates_truth_overread",
+      "role": "forbidden_control",
+      "required_fields": [
+        0,
+        1
+      ],
+      "admitted_budgets": [],
+      "first_admitted_budgets": []
+    }
+  ],
+  "hostile_violations": [],
+  "top_budget_admitted_positive_ids": [
+    "boundary_pair_status",
+    "pair_01_finality_band",
+    "pair_02_finality_band",
+    "three_holder_finality_band",
+    "three_holder_support_count"
+  ],
+  "top_budget_positives_independent": true,
+  "overall_verdict": {
+    "verdict": "BUDGET_LATTICE_GATE_BUILT_PATH_INDEPENDENT_NO_PROMOTION",
+    "gate_passed": true,
+    "edge_monotonicity_passed": true,
+    "join_path_independence_passed": true,
+    "top_path_independence_passed": true,
+    "hostile_controls_blocked_when_accessible": true,
+    "top_budget_positive_controls_independent": true,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "global_valid_coarse_graining_criterion_earned": false,
+    "physics_claim_earned": false,
+    "reading": "The repaired coarse-graining packet is coherent across this finite observer-budget lattice: admitted finality-natural relations do not disappear under access expansion, joins preserve prior admissions and admit only relations whose certified fields become available, and top-budget verdicts are independent of the access expansion path. Cheap arithmetic, label restatement, microstate identity, and observer-creates-truth controls remain blocked when they become accessible. This is an observer-indexed intake guardrail only, not a global valid-coarse-graining criterion."
+  },
+  "future_packet_minimum": [
+    "declare a finite observer-budget poset, not only one chain",
+    "report edge monotonicity for admitted finality-natural relations",
+    "report join/path checks for incomparable budget expansions",
+    "explain every new admission by newly accessible certified record fields",
+    "keep cheap arithmetic, label-restatement, microstate, and observer-creates-truth controls blocked at every accessible budget",
+    "treat budget-indexed admissions as local review targets, not global valid-coarse-graining criteria"
+  ],
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "global valid-coarse-graining criterion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "public-posture movement"
+  ]
+}

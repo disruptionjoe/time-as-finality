@@ -282,3 +282,27 @@ drifting-task, hidden-relay, and E2-labeled controls fail or route through T441.
 No H7 promotion, E1 theorem, thermodynamic-arrow theorem, physical-deletion
 substrate claim, claim-ledger movement, public posture, or cross-repo support is
 earned.
+
+## Status Addendum (2026-07-06): H7 physical-deletion overread absorber
+
+T462 makes the physical-deletion overread absorber from T461 executable:
+`results/T462-h7-physical-deletion-overread-absorber-v0.1-results.md`; spec
+`tests/T462-h7-physical-deletion-overread-absorber.md`; model
+`models/h7_physical_deletion_overread_absorber.py`.
+
+Verdict:
+`H7_PHYSICAL_DELETION_OVERREAD_ABSORBER_BUILT_NO_H7_REOPENING`. T462 absorbs
+T461-style locality depth, access loss, provenance loss, support-copy removal,
+finite kinetic barriers, hidden sink/export, changed thermodynamic ledgers,
+hidden source-copy or reversible-control gaps, exact ideal/sector locks, and
+gauge relabeling before H7 can reopen.
+
+The minimum H7 review object is now executable: `physical_record_deletion`
+reverse edge; named physical substrate; frozen record encoding and tasks;
+task-natural future-operation split; matched H7 absorber vector; substrate-
+specific absorber data; allowed control class; finite operational substrate;
+constructor impossibility after full accounting; surviving split after matching;
+and negative controls. The only admitted T462 packet is a synthetic full-burden
+review target. No H7 promotion, physical-deletion substrate evidence,
+thermodynamic-arrow theorem, E1/E3 theorem, physics claim, claim-ledger
+movement, public posture, or cross-repo support is earned.

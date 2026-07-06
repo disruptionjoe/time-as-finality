@@ -540,3 +540,25 @@ absorber audit. Single-instance, finite-barrier, post-hoc selector,
 drifting-task, hidden-relay, and E2-labeled controls fail or route through T441.
 No H7 promotion, E1 theorem, thermodynamic-arrow theorem, physics claim,
 claim-ledger movement, public posture, or cross-repo support is earned.
+
+## Internal support update (2026-07-06): H7 physical-deletion overread absorber
+
+T462 (`results/T462-h7-physical-deletion-overread-absorber-v0.1-results.md`)
+implements the separate H7 absorber audit required by T461.
+
+Verdict:
+`H7_PHYSICAL_DELETION_OVERREAD_ABSORBER_BUILT_NO_H7_REOPENING`. T462 classifies
+T461-style local recovery depth as locality accounting, not physical deletion.
+It also rejects or routes access loss, provenance loss, support-copy removal,
+finite kinetic barriers, hidden sink/export, changed thermodynamic ledgers,
+hidden source-copy or reversible-control gaps, exact ideal/sector locks, and
+gauge relabelings through the existing H7 absorber stack.
+
+The only admitted packet is a synthetic full-burden H7 review target requiring a
+typed `physical_record_deletion` reverse edge, named physical substrate, frozen
+record encoding and task, matched H7 absorber vector, substrate-specific
+absorber data, declared controls, finite operational substrate, constructor
+impossibility after full accounting, surviving future-operation split, and
+negative controls. T462 does not promote H7, supply physical-deletion substrate
+evidence, prove a thermodynamic-arrow theorem, prove an E1/E3 theorem, move the
+claim ledger, or authorize public posture.

@@ -137,6 +137,16 @@ away, and no policy-independent region theorem is supplied beyond the
 integration. T454 therefore remains a recorded-tier review target only. No
 stronger Direction-A posture movement is earned.
 
+T456 turns the post-T455 burden into an executable admission gate. Current
+T454/T455 is not admitted for stronger posture because it still misses three
+requirements: description nonfactorization for the boundary resource,
+reference-policy invariance or independent preclusion for cyclic/consumed/ideal
+reference variants, and a policy-independent region theorem beyond packet
+integration. Only a synthetic future theorem packet passes, so T456 is a gate,
+not a discriminator success or claim support. Future Direction-A packets must
+clear T456 before any stronger posture movement; if no packet can clear it, the
+integrated E3-region route should demote to a useful negative guardrail lane.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

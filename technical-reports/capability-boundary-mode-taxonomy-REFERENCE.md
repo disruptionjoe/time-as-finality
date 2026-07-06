@@ -211,6 +211,26 @@ region-indexed discriminator success, real substrate law, quantum physics
 theorem, WAY theorem, GU/TaF adapter, cross-repo support, claim-ledger movement,
 public posture, or hard-policy movement.
 
+## Internal support update (2026-07-05): policy-invariant region theorem gate
+
+T456 (`results/T456-policy-invariant-region-theorem-gate-v0.1-results.md`)
+turns T455's blocker set into the next admission gate for Direction-A packets.
+
+Verdict:
+`POLICY_INVARIANT_REGION_THEOREM_GATE_BUILT_CURRENT_T454_NOT_ADMITTED`. Current
+T454/T455 remains a recorded-tier review target and is not admitted for stronger
+posture because three requirements still fail: the boundary-resource completion
+factors through law-sector description, cyclic/consumed/ideal reference policies
+are not invariantly handled or independently precluded, and no
+policy-independent region theorem is supplied beyond packet integration.
+
+Only a synthetic future target clears the gate. Future Direction-A packets must
+bring description nonfactorization, reference-policy invariance or preclusion,
+and a policy-independent theorem before any stronger posture movement. T456 is
+not a region-indexed discriminator success, real substrate law, quantum physics
+theorem, WAY theorem, GU/TaF adapter, cross-repo support, claim-ledger movement,
+public posture, or hard-policy movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

@@ -1,0 +1,212 @@
+{
+  "artifact_id": "T468-coarse-graining-positive-control-independence-v0.1",
+  "objective": "Audit T467's positive controls for extensional independence and test whether the finality-native task requirement is load-bearing.",
+  "positive_control_comparisons": [
+    {
+      "holder_width": 1,
+      "state_count": 2,
+      "finality_band_class_count": 2,
+      "local_count_class_count": 2,
+      "partitions_identical": true,
+      "finality_band_partition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "local_count_partition": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    {
+      "holder_width": 2,
+      "state_count": 4,
+      "finality_band_class_count": 3,
+      "local_count_class_count": 3,
+      "partitions_identical": true,
+      "finality_band_partition": [
+        [
+          "00"
+        ],
+        [
+          "01",
+          "10"
+        ],
+        [
+          "11"
+        ]
+      ],
+      "local_count_partition": [
+        [
+          "00"
+        ],
+        [
+          "01",
+          "10"
+        ],
+        [
+          "11"
+        ]
+      ]
+    },
+    {
+      "holder_width": 3,
+      "state_count": 8,
+      "finality_band_class_count": 3,
+      "local_count_class_count": 4,
+      "partitions_identical": false,
+      "finality_band_partition": [
+        [
+          "000"
+        ],
+        [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        [
+          "111"
+        ]
+      ],
+      "local_count_partition": [
+        [
+          "000"
+        ],
+        [
+          "001",
+          "010",
+          "100"
+        ],
+        [
+          "011",
+          "101",
+          "110"
+        ],
+        [
+          "111"
+        ]
+      ]
+    },
+    {
+      "holder_width": 4,
+      "state_count": 16,
+      "finality_band_class_count": 3,
+      "local_count_class_count": 5,
+      "partitions_identical": false,
+      "finality_band_partition": [
+        [
+          "0000"
+        ],
+        [
+          "0001",
+          "0010",
+          "0011",
+          "0100",
+          "0101",
+          "0110",
+          "0111",
+          "1000",
+          "1001",
+          "1010",
+          "1011",
+          "1100",
+          "1101",
+          "1110"
+        ],
+        [
+          "1111"
+        ]
+      ],
+      "local_count_partition": [
+        [
+          "0000"
+        ],
+        [
+          "0001",
+          "0010",
+          "0100",
+          "1000"
+        ],
+        [
+          "0011",
+          "0101",
+          "0110",
+          "1001",
+          "1010",
+          "1100"
+        ],
+        [
+          "0111",
+          "1011",
+          "1101",
+          "1110"
+        ],
+        [
+          "1111"
+        ]
+      ]
+    }
+  ],
+  "minimum_holder_width_for_positive_independence": 3,
+  "task_semantics_probe": {
+    "candidate_shape": "cheap accessible xor over two holders",
+    "without_finality_task": {
+      "candidate_id": "cheap_accessible_xor_without_task",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "NO_FINALIZED_RECORD_TASK",
+      "blockers": [
+        "no_finalized_record_task"
+      ],
+      "class_count": 2
+    },
+    "with_finality_task_label": {
+      "candidate_id": "cheap_accessible_xor_with_task",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "blockers": [],
+      "class_count": 2
+    },
+    "task_semantics_load_bearing": true,
+    "reading": "A cheap accessible xor partition is rejected when no finality-native task is declared, but it would pass the mechanical budget gate if the task flag were simply asserted. Future packets therefore need a task-naturalness audit, not just access and cost fields."
+  },
+  "overall_verdict": {
+    "verdict": "T467_POSITIVE_CONTROLS_COLLAPSE_TASK_GATE_LOAD_BEARING",
+    "t467_binary_two_holder_positives_independent": false,
+    "minimum_holder_width_for_positive_independence": 3,
+    "task_semantics_load_bearing": true,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "physics_claim_earned": false,
+    "reading": "T467's two admitted positive controls are extensionally the same partition on a binary two-holder fixture. They first separate at three holders, where finality-band and local-count coarse-grainings diverge. The cheap-xor probe also shows that finality-task semantics is load-bearing: bounded access and cost alone do not select a valid finality coarse-graining."
+  },
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ],
+  "future_packet_minimum": [
+    "use at least three binary holders or a multi-valued fixture when claiming independent positive controls",
+    "include a cheap accessible non-finality partition as a hostile control",
+    "supply a predeclared task-naturalness account rather than only a boolean finality-task flag",
+    "keep bounded certification, certified record, and observer-creates-truth guardrails from T467"
+  ]
+}

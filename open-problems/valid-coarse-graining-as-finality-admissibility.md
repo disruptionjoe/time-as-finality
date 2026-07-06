@@ -83,3 +83,31 @@ Future packets must declare the finite state universe, equivalence relation,
 observer access boundary, recognition budget, D1-style certification fields,
 nontrivial coarse-graining condition, certified-record object, and hostile
 controls before any claim movement.
+
+## T468 addendum: positive-control independence audit
+
+T468 audits T467's fixture rather than strengthening the claim:
+`results/T468-coarse-graining-positive-control-independence-v0.1-results.md`;
+spec `tests/T468-coarse-graining-positive-control-independence.md`; model
+`models/coarse_graining_positive_control_independence.py`.
+
+Verdict:
+
+```text
+T467_POSITIVE_CONTROLS_COLLAPSE_TASK_GATE_LOAD_BEARING
+```
+
+The two T467 admitted positive controls are extensionally identical in the
+binary two-holder fixture: finality band and local count induce the same
+partition. They first separate at three binary holders, where finality band has
+three classes and local count has four. T468 also shows that a cheap accessible
+xor partition is rejected only when the finality-native-task requirement is
+enforced; if that task flag is merely asserted, the mechanical budget gate would
+admit it.
+
+This weakens the constructive reading of T467. Future packets should use at
+least three binary holders or a multi-valued fixture when claiming independent
+positive controls, include a cheap accessible non-finality partition as a
+hostile control, and supply a predeclared task-naturalness account rather than
+only a boolean finality-task flag. No D1/T10/T29, Observer Theory, physics,
+consciousness, claim-ledger, roadmap, or public-posture movement is earned.

@@ -1,0 +1,649 @@
+{
+  "artifact_id": "T465-ab-contextuality-kappa-absorber-v0.1",
+  "objective": "Make Abramsky-Brandenburger contextuality an executable hostile absorber for kappa prediction-language.",
+  "models": {
+    "native_ab_obstructions": {
+      "ab_single_contextual_block": {
+        "model_id": "ab_single_contextual_block",
+        "all_local_sections_exist": true,
+        "global_section_exists": false,
+        "native_contextuality_rank": 1,
+        "native_source": "AB support table plus global-section existence",
+        "native_computation_independent_of_compute_kappa": true,
+        "blocks": [
+          {
+            "block": "C0",
+            "variables": [
+              "C0_A0",
+              "C0_B0",
+              "C0_B1",
+              "C0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C0_A0B0",
+                "left": "C0_A0",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A0B1",
+                "left": "C0_A0",
+                "right": "C0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B0",
+                "left": "C0_A1",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B1",
+                "left": "C0_A1",
+                "right": "C0_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          }
+        ]
+      },
+      "ab_two_contextual_blocks": {
+        "model_id": "ab_two_contextual_blocks",
+        "all_local_sections_exist": true,
+        "global_section_exists": false,
+        "native_contextuality_rank": 2,
+        "native_source": "AB support table plus global-section existence",
+        "native_computation_independent_of_compute_kappa": true,
+        "blocks": [
+          {
+            "block": "C0",
+            "variables": [
+              "C0_A0",
+              "C0_B0",
+              "C0_B1",
+              "C0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C0_A0B0",
+                "left": "C0_A0",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A0B1",
+                "left": "C0_A0",
+                "right": "C0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B0",
+                "left": "C0_A1",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B1",
+                "left": "C0_A1",
+                "right": "C0_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          },
+          {
+            "block": "C1",
+            "variables": [
+              "C1_A0",
+              "C1_B0",
+              "C1_B1",
+              "C1_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C1_A0B0",
+                "left": "C1_A0",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A0B1",
+                "left": "C1_A0",
+                "right": "C1_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B0",
+                "left": "C1_A1",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B1",
+                "left": "C1_A1",
+                "right": "C1_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          }
+        ]
+      },
+      "ab_three_contextual_blocks": {
+        "model_id": "ab_three_contextual_blocks",
+        "all_local_sections_exist": true,
+        "global_section_exists": false,
+        "native_contextuality_rank": 3,
+        "native_source": "AB support table plus global-section existence",
+        "native_computation_independent_of_compute_kappa": true,
+        "blocks": [
+          {
+            "block": "C0",
+            "variables": [
+              "C0_A0",
+              "C0_B0",
+              "C0_B1",
+              "C0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C0_A0B0",
+                "left": "C0_A0",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A0B1",
+                "left": "C0_A0",
+                "right": "C0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B0",
+                "left": "C0_A1",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B1",
+                "left": "C0_A1",
+                "right": "C0_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          },
+          {
+            "block": "C1",
+            "variables": [
+              "C1_A0",
+              "C1_B0",
+              "C1_B1",
+              "C1_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C1_A0B0",
+                "left": "C1_A0",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A0B1",
+                "left": "C1_A0",
+                "right": "C1_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B0",
+                "left": "C1_A1",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B1",
+                "left": "C1_A1",
+                "right": "C1_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          },
+          {
+            "block": "C2",
+            "variables": [
+              "C2_A0",
+              "C2_B0",
+              "C2_B1",
+              "C2_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C2_A0B0",
+                "left": "C2_A0",
+                "right": "C2_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C2_A0B1",
+                "left": "C2_A0",
+                "right": "C2_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C2_A1B0",
+                "left": "C2_A1",
+                "right": "C2_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C2_A1B1",
+                "left": "C2_A1",
+                "right": "C2_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          }
+        ]
+      },
+      "ab_mixed_two_contextual_one_balanced": {
+        "model_id": "ab_mixed_two_contextual_one_balanced",
+        "all_local_sections_exist": true,
+        "global_section_exists": false,
+        "native_contextuality_rank": 2,
+        "native_source": "AB support table plus global-section existence",
+        "native_computation_independent_of_compute_kappa": true,
+        "blocks": [
+          {
+            "block": "C0",
+            "variables": [
+              "C0_A0",
+              "C0_B0",
+              "C0_B1",
+              "C0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C0_A0B0",
+                "left": "C0_A0",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A0B1",
+                "left": "C0_A0",
+                "right": "C0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B0",
+                "left": "C0_A1",
+                "right": "C0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C0_A1B1",
+                "left": "C0_A1",
+                "right": "C0_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          },
+          {
+            "block": "C1",
+            "variables": [
+              "C1_A0",
+              "C1_B0",
+              "C1_B1",
+              "C1_A1"
+            ],
+            "contexts": [
+              {
+                "name": "C1_A0B0",
+                "left": "C1_A0",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A0B1",
+                "left": "C1_A0",
+                "right": "C1_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B0",
+                "left": "C1_A1",
+                "right": "C1_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "C1_A1B1",
+                "left": "C1_A1",
+                "right": "C1_B1",
+                "parity": -1,
+                "relation": "different"
+              }
+            ],
+            "parity_product": -1,
+            "local_sections_exist": true,
+            "global_section_exists": false,
+            "native_contextual": true,
+            "native_h1_rank": 1
+          },
+          {
+            "block": "N0",
+            "variables": [
+              "N0_A0",
+              "N0_B0",
+              "N0_B1",
+              "N0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "N0_A0B0",
+                "left": "N0_A0",
+                "right": "N0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A0B1",
+                "left": "N0_A0",
+                "right": "N0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A1B0",
+                "left": "N0_A1",
+                "right": "N0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A1B1",
+                "left": "N0_A1",
+                "right": "N0_B1",
+                "parity": 1,
+                "relation": "same"
+              }
+            ],
+            "parity_product": 1,
+            "local_sections_exist": true,
+            "global_section_exists": true,
+            "native_contextual": false,
+            "native_h1_rank": 0
+          }
+        ]
+      },
+      "ab_balanced_control": {
+        "model_id": "ab_balanced_control",
+        "all_local_sections_exist": true,
+        "global_section_exists": true,
+        "native_contextuality_rank": 0,
+        "native_source": "AB support table plus global-section existence",
+        "native_computation_independent_of_compute_kappa": true,
+        "blocks": [
+          {
+            "block": "N0",
+            "variables": [
+              "N0_A0",
+              "N0_B0",
+              "N0_B1",
+              "N0_A1"
+            ],
+            "contexts": [
+              {
+                "name": "N0_A0B0",
+                "left": "N0_A0",
+                "right": "N0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A0B1",
+                "left": "N0_A0",
+                "right": "N0_B1",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A1B0",
+                "left": "N0_A1",
+                "right": "N0_B0",
+                "parity": 1,
+                "relation": "same"
+              },
+              {
+                "name": "N0_A1B1",
+                "left": "N0_A1",
+                "right": "N0_B1",
+                "parity": 1,
+                "relation": "same"
+              }
+            ],
+            "parity_product": 1,
+            "local_sections_exist": true,
+            "global_section_exists": true,
+            "native_contextual": false,
+            "native_h1_rank": 0
+          }
+        ]
+      }
+    },
+    "kappa_on_same_support_cover": {
+      "ab_single_contextual_block": {
+        "cover_name": "AB:ab_single_contextual_block",
+        "num_variables": 4,
+        "num_edges": 4,
+        "num_components": 1,
+        "kappa": 1,
+        "cycle_space_rank": 1,
+        "global_section_exists": false,
+        "frustrated": true
+      },
+      "ab_two_contextual_blocks": {
+        "cover_name": "AB:ab_two_contextual_blocks",
+        "num_variables": 8,
+        "num_edges": 8,
+        "num_components": 2,
+        "kappa": 2,
+        "cycle_space_rank": 2,
+        "global_section_exists": false,
+        "frustrated": true
+      },
+      "ab_three_contextual_blocks": {
+        "cover_name": "AB:ab_three_contextual_blocks",
+        "num_variables": 12,
+        "num_edges": 12,
+        "num_components": 3,
+        "kappa": 3,
+        "cycle_space_rank": 3,
+        "global_section_exists": false,
+        "frustrated": true
+      },
+      "ab_mixed_two_contextual_one_balanced": {
+        "cover_name": "AB:ab_mixed_two_contextual_one_balanced",
+        "num_variables": 12,
+        "num_edges": 12,
+        "num_components": 3,
+        "kappa": 2,
+        "cycle_space_rank": 3,
+        "global_section_exists": false,
+        "frustrated": true
+      },
+      "ab_balanced_control": {
+        "cover_name": "AB:ab_balanced_control",
+        "num_variables": 4,
+        "num_edges": 4,
+        "num_components": 1,
+        "kappa": 0,
+        "cycle_space_rank": 1,
+        "global_section_exists": true,
+        "frustrated": false
+      }
+    }
+  },
+  "paired_fixture_audits": [
+    {
+      "model_id": "ab_single_contextual_block",
+      "claimed_source_kappa": 1,
+      "native_ab_rank": 1,
+      "kappa_from_same_support_cover": 1,
+      "pairing_passes": true,
+      "transport_map_is_identity_on_integer_k": true,
+      "independent_prediction_branch": false,
+      "native_and_kappa_read_same_support_table": true,
+      "gate_label": "NATIVE_H1_REENCODING_NOT_PREDICTION"
+    },
+    {
+      "model_id": "ab_two_contextual_blocks",
+      "claimed_source_kappa": 2,
+      "native_ab_rank": 2,
+      "kappa_from_same_support_cover": 2,
+      "pairing_passes": true,
+      "transport_map_is_identity_on_integer_k": true,
+      "independent_prediction_branch": false,
+      "native_and_kappa_read_same_support_table": true,
+      "gate_label": "NATIVE_H1_REENCODING_NOT_PREDICTION"
+    },
+    {
+      "model_id": "ab_three_contextual_blocks",
+      "claimed_source_kappa": 3,
+      "native_ab_rank": 3,
+      "kappa_from_same_support_cover": 3,
+      "pairing_passes": true,
+      "transport_map_is_identity_on_integer_k": true,
+      "independent_prediction_branch": false,
+      "native_and_kappa_read_same_support_table": true,
+      "gate_label": "NATIVE_H1_REENCODING_NOT_PREDICTION"
+    },
+    {
+      "model_id": "ab_mixed_two_contextual_one_balanced",
+      "claimed_source_kappa": 2,
+      "native_ab_rank": 2,
+      "kappa_from_same_support_cover": 2,
+      "pairing_passes": true,
+      "transport_map_is_identity_on_integer_k": true,
+      "independent_prediction_branch": false,
+      "native_and_kappa_read_same_support_table": true,
+      "gate_label": "NATIVE_H1_REENCODING_NOT_PREDICTION"
+    },
+    {
+      "model_id": "ab_balanced_control",
+      "claimed_source_kappa": 0,
+      "native_ab_rank": 0,
+      "kappa_from_same_support_cover": 0,
+      "pairing_passes": true,
+      "transport_map_is_identity_on_integer_k": true,
+      "independent_prediction_branch": false,
+      "native_and_kappa_read_same_support_table": true,
+      "gate_label": "NATIVE_H1_REENCODING_NOT_PREDICTION"
+    }
+  ],
+  "mismatch_control": {
+    "model_id": "ab_single_contextual_mismatch_control",
+    "claimed_source_kappa": 2,
+    "native_ab_rank": 1,
+    "kappa_from_same_support_cover": 1,
+    "pairing_passes": false,
+    "transport_map_is_identity_on_integer_k": false,
+    "independent_prediction_branch": false,
+    "native_and_kappa_read_same_support_table": true,
+    "gate_label": "MISMATCH_CONTROL_FAILS_AS_EXPECTED"
+  },
+  "absorber_findings": {
+    "paired_fixtures_pass": true,
+    "paired_fixtures_are_identity_on_integer_k": true,
+    "native_and_kappa_read_same_support_table": true,
+    "independent_prediction_branch_present": false,
+    "mismatch_control_fails": true,
+    "native_ab_witness_independent_of_compute_kappa": true,
+    "t224_promotion_earned": false,
+    "genre_agnostic_theorem_earned": false,
+    "claim_ledger_update": "none; no claim promotion or demotion"
+  },
+  "overall_verdict": {
+    "verdict": "AB_CONTEXTUALITY_KAPPA_ABSORBER_BUILT_REENCODING_NOT_PREDICTION",
+    "claim_movement": "none",
+    "reading": "T465 does not kill the finite kappa re-encoding catalogue. It does kill the stronger reading that AB contextuality supplies an independent kappa prediction: the native AB obstruction and kappa both read the same support/global-section data."
+  },
+  "not_earned": [
+    "T224 promotion",
+    "CSP-PO1 promotion",
+    "genre-agnostic kappa theorem",
+    "Abramsky-Brandenburger novelty",
+    "physics or quantum prediction",
+    "claim-ledger movement",
+    "public-posture movement"
+  ],
+  "recommended_next": [
+    "Use T465 as the hostile AB absorber before calling kappa predictive in sheaf contextuality.",
+    "Do not reopen T224 as a genre-agnostic theorem without a non-identity target-side witness.",
+    "If kappa work continues, seek a target whose native invariant is not just the same support H1/global-section rank."
+  ],
+  "honest_ceiling": "AB contextuality is a decisive absorber for prediction-language: once the native support table is admitted, kappa reads the same global-section/H1 obstruction. This supports the finite re-encoding catalogue only; it does not earn a genre-agnostic theorem or claim promotion."
+}

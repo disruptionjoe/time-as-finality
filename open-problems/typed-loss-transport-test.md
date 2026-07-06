@@ -108,3 +108,22 @@ the host assignment is its *domain*.
   only claim allowed on success is a cross-domain classification/transport theorem,
   and only after the protocol's prediction step passes on at least two unrelated
   absorbers.
+
+## T465 addendum: AB contextuality absorber
+
+T465 makes the strongest sheaf-contextuality objection executable. For an
+Abramsky-Brandenburger style support table, the native target-side witness is
+already local sections without a compatible global section. Computing kappa on
+the same support table's signed cover faithfully re-expresses that native
+H1/global-section obstruction, but it is not an independent target-side
+prediction.
+
+This narrows the reading of the existing kappa catalogue. T224/T229/T234/T239/T244
+remain useful finite re-encoding evidence across several obstruction genres, but
+AB contextuality should be treated as an absorber for prediction-language unless
+a future target supplies a non-identity native witness not already identical to
+the same support/global-section rank.
+
+T465 does not promote T224, CSP-PO1, Q1/Q1D, T21, T58, or any kappa claim; it
+does not earn a genre-agnostic theorem, physics result, quantum prediction,
+public-posture movement, or claim-ledger movement.

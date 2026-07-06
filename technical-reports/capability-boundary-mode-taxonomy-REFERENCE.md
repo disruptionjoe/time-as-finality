@@ -270,6 +270,25 @@ discriminator success, substrate law, quantum physics theorem, WAY theorem,
 GU/TaF adapter, cross-repo support, claim-ledger movement, public posture, or
 hard-policy movement.
 
+## Internal support update (2026-07-06): policy-independent theorem-supply gate
+
+T459 (`results/T459-policy-independent-theorem-supply-gate-v0.1-results.md`)
+audits the last T456 blocker after T457 and T458.
+
+Verdict:
+`POLICY_INDEPENDENT_THEOREM_SUPPLY_GATE_BUILT_CURRENT_ROUTE_DEMOTED_TO_NEGATIVE_GUARDRAIL`.
+Current T454/T455/T457/T458 lacks an independent theorem beyond packet
+integration. Description completion and reference-policy fragility remain live,
+so the current integrated E3-region packet class is demoted to route-level
+negative guardrail only.
+
+Only a synthetic future target with a predeclared, policy-independent theorem
+that targets and precludes the named completion, supplies description
+nonfactorization, and handles or independently precludes reference variants
+clears the gate. T459 is not a region-indexed discriminator success, substrate
+law, quantum physics theorem, WAY theorem, GU/TaF adapter, cross-repo support,
+claim-ledger movement, public posture, or hard-policy movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

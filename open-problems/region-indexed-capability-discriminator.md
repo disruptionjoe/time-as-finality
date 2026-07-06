@@ -166,6 +166,17 @@ consumed, and ideal policies, or preclude the non-finite variants by a
 policy-independent theorem declared before pair selection, pass T458. The
 current integrated E3-region route remains a recorded-tier review target.
 
+T459 audits the remaining theorem-supply blocker after T457 and T458. Current
+T454/T455/T457/T458 has no independent policy-invariant theorem beyond packet
+integration that both makes the capability-deciding completion physically
+non-admissible and clears description/reference-policy absorbers. Packet
+integration, description-factorizing, reference-policy-relative, policy-dependent,
+post-hoc, untargeted, completion-permissive, hidden-label, and missing-control
+variants fail. Only a synthetic future theorem target passes. The current
+integrated E3-region packet class is therefore demoted at route level to a useful
+negative guardrail only; no claim, public posture, hard policy, or cross-repo
+truth moves.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

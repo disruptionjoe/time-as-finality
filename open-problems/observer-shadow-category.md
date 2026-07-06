@@ -284,3 +284,31 @@ been independently proved. No observer-shadow category theorem,
 indexed-category/fibration theorem, North Star geometry proof, D1/PO1/TF1/
 LossKernel promotion, physics/consciousness claim, claim-ledger movement,
 roadmap movement, or public-posture movement is earned.
+
+## T476 addendum: post-T475 category closure router
+
+T476 closes the current T470-T475 observer-shadow category thread against
+minor restart packets:
+`results/T476-post-t475-observer-shadow-category-closure-router-v0.1-results.md`;
+spec `tests/T476-post-t475-observer-shadow-category-closure-router.md`; model
+`models/post_t475_observer_shadow_category_closure_router.py`.
+
+Verdict:
+
+```text
+POST_T475_OBSERVER_SHADOW_CATEGORY_THREAD_CLOSED_NEW_EVIDENCE_ONLY
+```
+
+T475 review metadata cannot be upgraded into category or fibration evidence.
+Semantic atlas renames, absorber-completion restarts, capability-object
+identification, incomplete controls, governance/public-posture shortcuts, and
+minor variants of the current T470-T475 packet class are rejected or blocked.
+
+The only future reopen targets admitted by T476 are synthetic review targets:
+an independent direct cross-family preservation theorem packet with formal
+semantics, or a genuinely new packet-family atlas extension with its own
+index, bridge, review, positive-control, and hostile-control gates. Admission
+as a future target is not category evidence. No observer-shadow category
+theorem, indexed-category/fibration theorem, North Star geometry proof,
+D1/PO1/TF1/LossKernel promotion, physics/consciousness claim, claim-ledger
+movement, roadmap movement, or public-posture movement is earned.

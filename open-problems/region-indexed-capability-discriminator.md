@@ -157,6 +157,15 @@ policy-independent theorem makes the omitted field physically non-admissible.
 Only a synthetic non-descriptive theorem target passes T457; current T454/T455
 does not move beyond recorded-tier review target.
 
+T458 sharpens T456's second blocker. Current T454/T455/T457 preserves the split
+only for the finite non-wrapping exact-catalyst policy. Cyclic, consumed, and
+ideal reference variants are unhandled because they restore completion or route
+away, and no independent preclusion theorem has been supplied. Only synthetic
+targets that either preserve the split across finite non-wrapping, cyclic,
+consumed, and ideal policies, or preclude the non-finite variants by a
+policy-independent theorem declared before pair selection, pass T458. The
+current integrated E3-region route remains a recorded-tier review target.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

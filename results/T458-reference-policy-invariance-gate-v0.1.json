@@ -1,0 +1,1373 @@
+{
+  "artifact": "T458-reference-policy-invariance-gate-v0.1",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t454": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md",
+    "t455": "results/T455-t454-hostile-review-gate-v0.1-results.md",
+    "t456": "results/T456-policy-invariant-region-theorem-gate-v0.1-results.md",
+    "t457": "results/T457-description-completion-squeeze-gate-v0.1-results.md",
+    "taxonomy": "technical-reports/capability-boundary-mode-taxonomy-REFERENCE.md"
+  },
+  "purpose": "Sharpen T456's reference-policy invariance/preclusion blocker for the current integrated E3-region route.",
+  "t457_import_summary": {
+    "verdict": "DESCRIPTION_COMPLETION_SQUEEZE_GATE_BUILT_T454_CLASS_FACTORS_THROUGH_DESCRIPTION",
+    "current_t454_class_label": "NOT_ADMITTED_DESCRIPTION_COMPLETION_FACTORS",
+    "current_t454_class_factors_through_description": true,
+    "admitted_candidates_are_synthetic_only": true
+  },
+  "required_reference_policies": [
+    "finite_nonwrapping_exact_catalyst",
+    "finite_cyclic_reference",
+    "consumed_charge_battery",
+    "ideal_phase_reference"
+  ],
+  "candidate_evaluations": [
+    {
+      "candidate_id": "current_t454_t455_t457_reference_policy_packet",
+      "description": "The current integrated E3-region packet after T455 hostile review and T457 description-completion squeeze.",
+      "source": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md; results/T455-t454-hostile-review-gate-v0.1-results.md; results/T457-description-completion-squeeze-gate-v0.1-results.md",
+      "candidate": {
+        "candidate_id": "current_t454_t455_t457_reference_policy_packet",
+        "description": "The current integrated E3-region packet after T455 hostile review and T457 description-completion squeeze.",
+        "source": "results/T454-integrated-e3-region-packet-swing-v0.1-results.md; results/T455-t454-hostile-review-gate-v0.1-results.md; results/T457-description-completion-squeeze-gate-v0.1-results.md",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "ADMITTED_INTEGRATED_E3_REGION_REVIEW_TARGET_NO_PROMOTION",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "T454 main finite exact-catalyst packet survives as review target."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "COMPLETION_RESTORED_BY_CYCLIC_REFERENCE_CONTROL",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Cyclic shift has exact eigenvectors, so the nilpotent no-go does not apply."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "RESOURCE_COMPLETION_ROUTES_AWAY_FROM_EXACT_CATALYTIC_E3",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Consumed reference routes to resource completion."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "IDEAL_REFERENCE_ROUTES_TO_IDEAL_OR_LIMIT_POLICY",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Ideal reference routes away from the finite exact packet."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": false
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "ADMITTED_INTEGRATED_E3_REGION_REVIEW_TARGET_NO_PROMOTION",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "T454 main finite exact-catalyst packet survives as review target."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "COMPLETION_RESTORED_BY_CYCLIC_REFERENCE_CONTROL",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "not_precluded_and_does_not_preserve_split",
+            "note": "Cyclic shift has exact eigenvectors, so the nilpotent no-go does not apply."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "RESOURCE_COMPLETION_ROUTES_AWAY_FROM_EXACT_CATALYTIC_E3",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "not_precluded_and_does_not_preserve_split",
+            "note": "Consumed reference routes to resource completion."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "IDEAL_REFERENCE_ROUTES_TO_IDEAL_OR_LIMIT_POLICY",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": true,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "not_precluded_and_does_not_preserve_split",
+            "note": "Ideal reference routes away from the finite exact packet."
+          }
+        ],
+        "unhandled_reference_policies": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "all_required_reference_policies_handled"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_REFERENCE_POLICY_FRAGILITY",
+      "reason": "At least one admitted reference-policy variant restores completion or routes away without an independent preclusion theorem."
+    },
+    {
+      "candidate_id": "finite_policy_only_selection_control",
+      "description": "A packet that declares only the finite non-wrapping policy and does not handle cyclic, consumed, or ideal references.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "finite_policy_only_selection_control",
+        "description": "A packet that declares only the finite non-wrapping policy and does not handle cyclic, consumed, or ideal references.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "FINITE_ONLY_DECLARED_POLICY",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Finite policy selected without handling other reference variants."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": false
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "finite_nonwrapping_exact_catalyst"
+        ],
+        "missing_reference_policies": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "FINITE_ONLY_DECLARED_POLICY",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Finite policy selected without handling other reference variants."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": false,
+        "all_required_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": false,
+        "all_required_reference_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "reference_scope_complete",
+        "all_required_reference_policies_handled"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_REFERENCE_SCOPE_INCOMPLETE",
+      "reason": "Finite non-wrapping, cyclic, consumed, and ideal reference policies must all be handled or independently precluded."
+    },
+    {
+      "candidate_id": "synthetic_reference_policy_invariant_target",
+      "description": "Synthetic target: the boundary split survives finite non-wrapping, cyclic, consumed, and ideal reference policies.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_reference_policy_invariant_target",
+        "description": "Synthetic target: the boundary split survives finite non-wrapping, cyclic, consumed, and ideal reference policies.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [],
+      "admitted_future_target": true,
+      "gate_label": "ADMITTED_REFERENCE_POLICY_INVARIANT_OR_PRECLUDED_TARGET_NO_PROMOTION",
+      "reason": "The candidate has the future target shape: all required reference policies either preserve the boundary split or are precluded by a policy-independent theorem declared before pair selection."
+    },
+    {
+      "candidate_id": "synthetic_reference_policy_preclusion_target",
+      "description": "Synthetic target: non-finite variants are precluded by a policy-independent theorem declared before pair selection.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_reference_policy_preclusion_target",
+        "description": "Synthetic target: non-finite variants are precluded by a policy-independent theorem declared before pair selection.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_independent_preclusion",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_independent_preclusion",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_independent_preclusion",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [],
+      "admitted_future_target": true,
+      "gate_label": "ADMITTED_REFERENCE_POLICY_INVARIANT_OR_PRECLUDED_TARGET_NO_PROMOTION",
+      "reason": "The candidate has the future target shape: all required reference policies either preserve the boundary split or are precluded by a policy-independent theorem declared before pair selection."
+    },
+    {
+      "candidate_id": "synthetic_policy_dependent_preclusion_control",
+      "description": "A preclusion packet whose exclusions are policy-relative.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_policy_dependent_preclusion_control",
+        "description": "A preclusion packet whose exclusions are policy-relative.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "preclusion_not_policy_independent",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "preclusion_not_policy_independent",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": false,
+            "failure_reason": "preclusion_not_policy_independent",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "unhandled_reference_policies": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": false
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": false,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": false,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "all_required_reference_policies_handled",
+        "all_preclusions_policy_independent"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_POLICY_DEPENDENT_PRECLUSION",
+      "reason": "A variant is excluded by a policy-relative rule, not by an independent preclusion theorem."
+    },
+    {
+      "candidate_id": "synthetic_post_hoc_preclusion_control",
+      "description": "A preclusion packet whose exclusions are post-hoc.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_post_hoc_preclusion_control",
+        "description": "A preclusion packet whose exclusions are post-hoc.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_FINITE_NONWRAPPING_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: finite non-wrapping split remains."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "handled": false,
+            "failure_reason": "preclusion_is_post_hoc",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "handled": false,
+            "failure_reason": "preclusion_is_post_hoc",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_INDEPENDENTLY_PRECLUDED_REFERENCE_VARIANT",
+            "preserves_boundary_split": false,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": true,
+            "preclusion_theorem_policy_independent": true,
+            "preclusion_declared_before_pair": false,
+            "handled": false,
+            "failure_reason": "preclusion_is_post_hoc",
+            "note": "Synthetic target: this policy variant is not in the admissible physical class by an independent theorem."
+          }
+        ],
+        "unhandled_reference_policies": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "post_hoc_preclusions": [
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": false,
+        "all_preclusions_declared_before_pair": false,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": false,
+        "all_preclusions_declared_before_pair": false,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "all_required_reference_policies_handled",
+        "all_preclusions_declared_before_pair"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_POST_HOC_POLICY_PRECLUSION",
+      "reason": "A reference-policy variant is precluded only after seeing the packet."
+    },
+    {
+      "candidate_id": "hidden_label_policy_control",
+      "description": "A policy gate that reads hidden case labels.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "hidden_label_policy_control",
+        "description": "A policy gate that reads hidden case labels.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": true,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": false,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "no_hidden_label_or_case_id"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "BLOCKED_HIDDEN_LABEL_OR_CASE_ID",
+      "reason": "The packet reads a hidden selector rather than a policy theorem."
+    },
+    {
+      "candidate_id": "post_hoc_reference_scope_control",
+      "description": "A packet that chooses the reference scope after the pair.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "post_hoc_reference_scope_control",
+        "description": "A packet that chooses the reference scope after the pair.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "reference_scope_declared_before_pair": false,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": false,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": true,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "reference_scope_declared_before_pair"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "BLOCKED_POST_HOC_REFERENCE_SCOPE",
+      "reason": "The reference-policy scope must be declared before pair selection."
+    },
+    {
+      "candidate_id": "synthetic_missing_negative_control",
+      "description": "A future-shaped packet missing its negative control.",
+      "source": "T458-reference-policy-invariance-gate-v0.1",
+      "candidate": {
+        "candidate_id": "synthetic_missing_negative_control",
+        "description": "A future-shaped packet missing its negative control.",
+        "source": "T458-reference-policy-invariance-gate-v0.1",
+        "variants": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "reference_scope_declared_before_pair": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": false,
+        "reads_hidden_label_or_case_id": false,
+        "requests_external_posture": false,
+        "synthetic_control_only": true
+      },
+      "reference_policy_audit": {
+        "required_reference_policies": [
+          "finite_nonwrapping_exact_catalyst",
+          "finite_cyclic_reference",
+          "consumed_charge_battery",
+          "ideal_phase_reference"
+        ],
+        "present_reference_policies": [
+          "consumed_charge_battery",
+          "finite_cyclic_reference",
+          "finite_nonwrapping_exact_catalyst",
+          "ideal_phase_reference"
+        ],
+        "missing_reference_policies": [],
+        "extra_reference_policies": [],
+        "variant_rows": [
+          {
+            "policy_id": "finite_nonwrapping_exact_catalyst",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "finite_cyclic_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "consumed_charge_battery",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          },
+          {
+            "policy_id": "ideal_phase_reference",
+            "completion_label": "SYNTHETIC_POLICY_INVARIANT_SPLIT",
+            "preserves_boundary_split": true,
+            "completion_restores_or_routes_away": false,
+            "precluded_by_independent_theorem": false,
+            "preclusion_theorem_policy_independent": false,
+            "preclusion_declared_before_pair": true,
+            "handled": true,
+            "failure_reason": "handled_by_invariant_split",
+            "note": "Synthetic target: the boundary split survives this policy variant."
+          }
+        ],
+        "unhandled_reference_policies": [],
+        "post_hoc_preclusions": [],
+        "policy_dependent_preclusions": [],
+        "reference_scope_complete": true,
+        "all_required_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true
+      },
+      "requirement_audit": {
+        "reference_scope_declared_before_pair": true,
+        "reference_scope_complete": true,
+        "all_required_reference_policies_handled": true,
+        "all_preclusions_declared_before_pair": true,
+        "all_preclusions_policy_independent": true,
+        "exact_witness_tied_to_named_completion": true,
+        "operation_resource_class_frozen": true,
+        "a2_resource_lift_audited": true,
+        "negative_control_present": false,
+        "no_hidden_label_or_case_id": true,
+        "no_external_posture_request": true
+      },
+      "missing_requirements": [
+        "negative_control_present"
+      ],
+      "admitted_future_target": false,
+      "gate_label": "NOT_ADMITTED_NO_NEGATIVE_CONTROL",
+      "reason": "A nearby negative control is required."
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "REFERENCE_POLICY_INVARIANCE_GATE_BUILT_CURRENT_T454_POLICY_RELATIVE_NOT_ADMITTED",
+    "current_packet_label": "NOT_ADMITTED_REFERENCE_POLICY_FRAGILITY",
+    "current_packet_unhandled_reference_policies": [
+      "finite_cyclic_reference",
+      "consumed_charge_battery",
+      "ideal_phase_reference"
+    ],
+    "admitted_candidate_ids": [
+      "synthetic_reference_policy_invariant_target",
+      "synthetic_reference_policy_preclusion_target"
+    ],
+    "admitted_candidates_are_synthetic_only": true,
+    "current_artifacts_admitted_for_stronger_posture": false,
+    "region_discriminator_success": false,
+    "claim_ledger_update": "none; no claim promotion",
+    "reading": "The current T454/T455/T457 packet remains reference-policy relative. It preserves the split only for the finite non-wrapping exact-catalyst policy; cyclic, consumed, and ideal reference variants are unhandled because they restore completion or route away and have not been independently precluded."
+  },
+  "honest_ceiling": "Admission/guardrail gate only. T458 shows that the current integrated E3-region packet remains relative to the finite non-wrapping exact-catalyst policy. It does not prove a region-indexed discriminator, real substrate law, quantum physics theorem, WAY theorem, GU/TaF adapter, claim support, public posture, or cross-repo support.",
+  "claim_ledger_update": "none; no claim promotion",
+  "recommended_next": [
+    "Do not seek stronger posture from the current finite non-wrapping policy packet.",
+    "Future Direction-A packets must either make the split invariant across cyclic, consumed, and ideal reference policies or preclude those policies by an independent theorem.",
+    "If the reference-policy gate cannot be cleared, demote the integrated E3-region route to a useful negative guardrail after the theorem-supply blocker is also audited."
+  ]
+}

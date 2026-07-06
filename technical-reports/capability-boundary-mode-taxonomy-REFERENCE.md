@@ -251,6 +251,25 @@ guardrail for the integrated E3-region route, not a discriminator success,
 substrate law, quantum physics theorem, WAY theorem, GU/TaF adapter, cross-repo
 support, claim-ledger movement, public posture, or hard-policy movement.
 
+## Internal support update (2026-07-05): reference-policy invariance gate
+
+T458 (`results/T458-reference-policy-invariance-gate-v0.1-results.md`) sharpens
+T456's reference-policy invariance/preclusion blocker for the integrated
+E3-region route after T457.
+
+Verdict:
+`REFERENCE_POLICY_INVARIANCE_GATE_BUILT_CURRENT_T454_POLICY_RELATIVE_NOT_ADMITTED`.
+Current T454/T455/T457 remains reference-policy relative: the split survives only
+for the finite non-wrapping exact-catalyst policy, while cyclic, consumed, and
+ideal reference variants restore completion or route away and have not been
+independently precluded.
+
+Only synthetic invariant or independently precluded future targets clear the
+gate. T458 is a guardrail for the integrated E3-region route, not a
+discriminator success, substrate law, quantum physics theorem, WAY theorem,
+GU/TaF adapter, cross-repo support, claim-ledger movement, public posture, or
+hard-policy movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

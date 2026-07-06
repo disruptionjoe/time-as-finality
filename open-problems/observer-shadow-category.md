@@ -163,3 +163,32 @@ completion repairs the object or routes to an absorber. No observer-shadow
 category theorem, North Star geometry proof, D1/PO1/TF1/LossKernel promotion,
 physics/consciousness claim, claim-ledger movement, roadmap movement, or
 public-posture movement is earned.
+
+## T472 addendum: index admission gate
+
+T472 turns T470's future-packet minimum into an executable admission gate:
+`results/T472-observer-shadow-index-admission-gate-v0.1-results.md`; spec
+`tests/T472-observer-shadow-index-admission-gate.md`; model
+`models/observer_shadow_index_admission_gate.py`.
+
+Verdict:
+
+```text
+OBSERVER_SHADOW_INDEX_GATE_BUILT_COMPLETION_SEPARATED_NO_PROMOTION
+```
+
+Endpoint-only transport comparison fails because path label and accumulated
+forgotten structure are load-bearing indices. Path-indexed transport is
+admitted only as indexed bookkeeping, not as a theorem. LossKernel
+neighbor-visible factoring is the genuine preservation control. Hidden-source
+omission fails the gate, and hidden-source completion is recorded as ordinary
+absorber/state-completion bookkeeping rather than new category evidence.
+
+This adds an index-admission guardrail for future observer-shadow packets:
+declare all load-bearing indices before morphism comparison, include one
+genuine preservation control, include an omitted-index hostile control, and
+separate indexed bookkeeping completion from absorber state completion. No
+observer-shadow category theorem, indexed-category/fibration theorem, North
+Star geometry proof, D1/PO1/TF1/LossKernel promotion, physics/consciousness
+claim, claim-ledger movement, roadmap movement, or public-posture movement is
+earned.

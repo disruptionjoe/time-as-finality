@@ -1,0 +1,199 @@
+{
+  "artifact_id": "T472-observer-shadow-index-admission-gate-v0.1",
+  "verdict": "OBSERVER_SHADOW_INDEX_GATE_BUILT_COMPLETION_SEPARATED_NO_PROMOTION",
+  "packets": [
+    {
+      "packet_id": "transport_endpoint_only_packet",
+      "check_id": "transport_endpoint_only_collapse",
+      "declared_indices": [
+        "endpoint"
+      ],
+      "required_indices": [
+        "endpoint",
+        "path_label",
+        "accumulated_forgotten_structure"
+      ],
+      "completion_kind": "none",
+      "expected_route": "reject_missing_load_bearing_indices",
+      "intended_use": "collapse transport paths to endpoint-only observer shadow"
+    },
+    {
+      "packet_id": "transport_path_indexed_packet",
+      "check_id": "transport_path_indexed_completion",
+      "declared_indices": [
+        "accumulated_forgotten_structure",
+        "endpoint",
+        "path_label"
+      ],
+      "required_indices": [
+        "endpoint",
+        "path_label",
+        "accumulated_forgotten_structure"
+      ],
+      "completion_kind": "indexed_bookkeeping",
+      "expected_route": "admitted_indexed_completion",
+      "intended_use": "compare transport paths only after path and accumulated-loss indices are declared"
+    },
+    {
+      "packet_id": "losskernel_neighbor_preservation_packet",
+      "check_id": "losskernel_neighbor_factoring_preserves",
+      "declared_indices": [
+        "neighbor_signature"
+      ],
+      "required_indices": [
+        "neighbor_signature"
+      ],
+      "completion_kind": "none",
+      "expected_route": "admitted_preservation_control",
+      "intended_use": "preserve the T220 canonical obligation under same neighbor-visible signature"
+    },
+    {
+      "packet_id": "losskernel_hidden_source_omitted_packet",
+      "check_id": "losskernel_hidden_source_omitted",
+      "declared_indices": [
+        "neighbor_signature"
+      ],
+      "required_indices": [
+        "neighbor_signature",
+        "hidden_source_datum"
+      ],
+      "completion_kind": "none",
+      "expected_route": "reject_missing_load_bearing_indices",
+      "intended_use": "omit source datum while using a capability object that reads it"
+    },
+    {
+      "packet_id": "losskernel_hidden_source_completed_packet",
+      "check_id": "losskernel_hidden_source_completed",
+      "declared_indices": [
+        "hidden_source_datum",
+        "neighbor_signature"
+      ],
+      "required_indices": [
+        "neighbor_signature",
+        "hidden_source_datum"
+      ],
+      "completion_kind": "absorber_state_completion",
+      "expected_route": "absorber_completion_recorded",
+      "intended_use": "record that hidden-source completion repairs the bookkeeping by ordinary state completion"
+    }
+  ],
+  "admissions": [
+    {
+      "packet_id": "transport_endpoint_only_packet",
+      "check_id": "transport_endpoint_only_collapse",
+      "admitted": false,
+      "route_label": "reject_missing_load_bearing_indices",
+      "missing_indices": [
+        "path_label",
+        "accumulated_forgotten_structure"
+      ],
+      "classification": "composition_requires_path_index",
+      "same_shadow": true,
+      "capability_equivalent": false,
+      "protection_preserved": false,
+      "completion_kind": "none",
+      "counts_as_preservation_control": false,
+      "notes": [
+        "packet omits indices required by the T470 obstruction"
+      ]
+    },
+    {
+      "packet_id": "transport_path_indexed_packet",
+      "check_id": "transport_path_indexed_completion",
+      "admitted": true,
+      "route_label": "admitted_indexed_completion",
+      "missing_indices": [],
+      "classification": "separated_after_completion",
+      "same_shadow": false,
+      "capability_equivalent": false,
+      "protection_preserved": true,
+      "completion_kind": "indexed_bookkeeping",
+      "counts_as_preservation_control": false,
+      "notes": [
+        "declared indices separate the shadows before comparison"
+      ]
+    },
+    {
+      "packet_id": "losskernel_neighbor_preservation_packet",
+      "check_id": "losskernel_neighbor_factoring_preserves",
+      "admitted": true,
+      "route_label": "admitted_preservation_control",
+      "missing_indices": [],
+      "classification": "verdict_preserved",
+      "same_shadow": true,
+      "capability_equivalent": true,
+      "protection_preserved": true,
+      "completion_kind": "none",
+      "counts_as_preservation_control": true,
+      "notes": [
+        "same declared shadow preserves the native capability value"
+      ]
+    },
+    {
+      "packet_id": "losskernel_hidden_source_omitted_packet",
+      "check_id": "losskernel_hidden_source_omitted",
+      "admitted": false,
+      "route_label": "reject_missing_load_bearing_indices",
+      "missing_indices": [
+        "hidden_source_datum"
+      ],
+      "classification": "state_completion_required",
+      "same_shadow": true,
+      "capability_equivalent": false,
+      "protection_preserved": false,
+      "completion_kind": "none",
+      "counts_as_preservation_control": false,
+      "notes": [
+        "packet omits indices required by the T470 obstruction"
+      ]
+    },
+    {
+      "packet_id": "losskernel_hidden_source_completed_packet",
+      "check_id": "losskernel_hidden_source_completed",
+      "admitted": true,
+      "route_label": "absorber_completion_recorded",
+      "missing_indices": [],
+      "classification": "separated_after_completion",
+      "same_shadow": false,
+      "capability_equivalent": false,
+      "protection_preserved": true,
+      "completion_kind": "absorber_state_completion",
+      "counts_as_preservation_control": false,
+      "notes": [
+        "completion repairs bookkeeping only by ordinary state completion"
+      ]
+    }
+  ],
+  "claim_ledger_update": "none",
+  "admitted_preservation_controls": [
+    "losskernel_neighbor_preservation_packet"
+  ],
+  "admitted_indexed_completions": [
+    "transport_path_indexed_packet"
+  ],
+  "absorber_completions": [
+    "losskernel_hidden_source_completed_packet"
+  ],
+  "rejected_packets": [
+    "transport_endpoint_only_packet",
+    "losskernel_hidden_source_omitted_packet"
+  ],
+  "global_category_theorem_supported": false,
+  "strongest_reading": "T472 makes T470's index burden executable: endpoint-only transport and hidden-source omission fail admission, path-indexed transport is admitted only as indexed bookkeeping, LossKernel neighbor factoring is the genuine preservation control, and hidden-source completion is recorded as absorber/state-completion bookkeeping. This supports an index-admission guardrail, not a global observer-shadow category theorem.",
+  "future_packet_minimum": [
+    "declare all load-bearing indices before morphism comparison",
+    "include one genuine preservation control with same shadow and same capability",
+    "include one omitted-index hostile control that fails the gate",
+    "separate indexed bookkeeping completion from absorber state completion",
+    "block category, fibration, or theorem language until preservation survives beyond finite controls"
+  ],
+  "not_earned": [
+    "observer-shadow category theorem",
+    "indexed category or fibration theorem",
+    "North Star geometry proof",
+    "D1, PO1, TF1, or LossKernel promotion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ]
+}

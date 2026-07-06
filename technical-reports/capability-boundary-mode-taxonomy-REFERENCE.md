@@ -519,3 +519,24 @@ families, and E2/E3 packets are rejected, absorbed, or routed to the proper
 mode gate. Only a synthetic E1 control is admitted for future review. T441 does
 not promote H7, prove an E1 theorem, prove a thermodynamic arrow, move the
 claim ledger, or authorize public posture.
+
+## Internal support update (2026-07-06): E1 local-recovery family audition
+
+T461 (`results/T461-e1-local-recovery-family-audition-v0.1-results.md`) turns
+T441's synthetic E1 family target into a concrete finite local-recovery control.
+
+Verdict:
+`E1_LOCAL_RECOVERY_FAMILY_AUDITION_BUILT_LOCALITY_ONLY_NO_H7_REOPENING`. A path
+family with observer/control endpoint `0`, record endpoint `n`, and
+nearest-neighbor operation radius `1` clears the T441 structural E1 admission
+shape: finite approximants exist, task and operation class stay stable,
+observer/resource accounting stays fixed, and minimum recovery depth grows with
+endpoint distance.
+
+The ceiling is the point. This is a locality/nonlocality control, not H7
+physical-deletion evidence: the split factors through admitted endpoint distance
+and operation radius. A physical-deletion overread routes to a separate H7
+absorber audit. Single-instance, finite-barrier, post-hoc selector,
+drifting-task, hidden-relay, and E2-labeled controls fail or route through T441.
+No H7 promotion, E1 theorem, thermodynamic-arrow theorem, physics claim,
+claim-ledger movement, public posture, or cross-repo support is earned.

@@ -258,3 +258,27 @@ missing approximants, missing invariants, missing controls, bounded cost
 families, and E2/E3 packets do not pass as E1. Only a synthetic full packet is
 admitted as a future review target. This does not reopen H7, prove an E1 limit
 theorem, move the claim ledger, or authorize public posture.
+
+## Status Addendum (2026-07-06): E1 local-recovery family audition
+
+T461 converts T441's synthetic E1 target into a concrete finite local-recovery
+control:
+`results/T461-e1-local-recovery-family-audition-v0.1-results.md`; spec
+`tests/T461-e1-local-recovery-family-audition.md`; model
+`models/e1_local_recovery_family_audition.py`.
+
+Verdict:
+`E1_LOCAL_RECOVERY_FAMILY_AUDITION_BUILT_LOCALITY_ONLY_NO_H7_REOPENING`. In the
+main family, the observer/control region is one endpoint of a path graph and the
+record is the other endpoint at distance `n`; nearest-neighbor recovery requires
+depth `n`, so fixed-depth recovery eventually fails while the finite approximants
+remain auditable. The family clears T441's structural E1 packet shape, but the
+split factors through ordinary endpoint distance and operation radius.
+
+This is a positive locality control for future E1 packet review, not H7
+evidence. A physical-deletion reading of the same local-depth family routes to a
+separate H7 absorber audit. Single-instance, finite-barrier, post-hoc selector,
+drifting-task, hidden-relay, and E2-labeled controls fail or route through T441.
+No H7 promotion, E1 theorem, thermodynamic-arrow theorem, physical-deletion
+substrate claim, claim-ledger movement, public posture, or cross-repo support is
+earned.

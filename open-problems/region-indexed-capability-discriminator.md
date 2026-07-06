@@ -177,6 +177,16 @@ integrated E3-region packet class is therefore demoted at route level to a usefu
 negative guardrail only; no claim, public posture, hard policy, or cross-repo
 truth moves.
 
+T460 turns that route disposition into an executable restart router. Current
+T454-T459 and minor boundary-resource variations are closed as Direction-A
+restart candidates. E1/E2-style alternatives route through their existing mode
+gates first, and cross-repo support shortcuts are blocked. Only a new
+region-indexed packet class with a predeclared independent theorem that targets
+and precludes the named completion, clears T457 description completion, handles
+or precludes T458 reference-policy variants, and clears T459 theorem supply is
+admitted as a future review target. The admitted target is synthetic only; no
+claim, public posture, hard policy, or cross-repo truth moves.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

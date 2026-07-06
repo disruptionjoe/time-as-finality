@@ -289,6 +289,25 @@ clears the gate. T459 is not a region-indexed discriminator success, substrate
 law, quantum physics theorem, WAY theorem, GU/TaF adapter, cross-repo support,
 claim-ledger movement, public posture, or hard-policy movement.
 
+## Internal support update (2026-07-06): post-T459 Direction-A restart router
+
+T460 (`results/T460-post-t459-direction-a-restart-router-v0.1-results.md`)
+converts T459's route-level demotion into an executable router.
+
+Verdict:
+`POST_T459_DIRECTION_A_RESTART_ROUTER_BUILT_CURRENT_ROUTE_CLOSED_NEW_CLASS_ONLY`.
+The current T454-T459 integrated E3-region packet class and minor variations are
+closed as Direction-A restart candidates. E1/E2-style alternatives route through
+their existing mode gates first, and cross-repo support shortcuts are blocked.
+
+Only a genuinely new region-indexed packet class with a predeclared independent
+theorem that targets and precludes the named completion, clears T457 description
+completion, handles or precludes T458 reference-policy variants, and clears T459
+theorem supply is admitted, and only as a synthetic future review target. T460 is
+not a region-indexed discriminator success, substrate law, quantum physics
+theorem, WAY theorem, GU/TaF adapter, cross-repo support, claim-ledger movement,
+public posture, or hard-policy movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

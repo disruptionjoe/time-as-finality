@@ -306,3 +306,29 @@ and negative controls. The only admitted T462 packet is a synthetic full-burden
 review target. No H7 promotion, physical-deletion substrate evidence,
 thermodynamic-arrow theorem, E1/E3 theorem, physics claim, claim-ledger
 movement, public posture, or cross-repo support is earned.
+
+## Status Addendum (2026-07-06): post-T462 H7/E1 restart router
+
+T463 converts the post-T462 disposition into an executable restart router:
+`results/T463-post-t462-h7-e1-restart-router-v0.1-results.md`; spec
+`tests/T463-post-t462-h7-e1-restart-router.md`; model
+`models/post_t462_h7_e1_restart_router.py`.
+
+Verdict:
+`POST_T462_H7_E1_RESTART_ROUTER_BUILT_FULL_BURDEN_ONLY`. T461/T462 minor
+variations do not reopen H7. E1 family-limit or locality packets route through
+T441/T461, E2 hardness packets route through T438/T444/T451, E3 exact-no-go or
+sector/ideal packets route through T440/T436/T447/T168, and finite-time or
+catalytic thermodynamic packets route through T439 before any H7 reading.
+Access-loss, substrate-name-only, absorber-uncleared, missing-control,
+cross-repo, external-action, public-posture, and claim-promotion shortcuts are
+rejected or blocked.
+
+Only a full-burden H7 packet can be admitted as a future review target: it must
+type the reverse edge as `physical_record_deletion`, name a physical substrate,
+freeze the full T462 object, clear the T462 absorber, include negative controls,
+and provide real substrate evidence before any evidential reading. This run
+supplies no actual substrate packet and no H7 evidence. No H7 promotion,
+physical-deletion substrate evidence, thermodynamic-arrow theorem,
+stochastic-thermodynamic theorem, E1/E2/E3 theorem, physics claim,
+claim-ledger movement, public posture, or cross-repo support is earned.

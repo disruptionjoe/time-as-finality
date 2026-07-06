@@ -562,3 +562,22 @@ impossibility after full accounting, surviving future-operation split, and
 negative controls. T462 does not promote H7, supply physical-deletion substrate
 evidence, prove a thermodynamic-arrow theorem, prove an E1/E3 theorem, move the
 claim ledger, or authorize public posture.
+
+## Internal support update (2026-07-06): post-T462 H7/E1 restart router
+
+T463 (`results/T463-post-t462-h7-e1-restart-router-v0.1-results.md`) turns the
+post-T462 H7/E1 disposition into a reusable router.
+
+Verdict: `POST_T462_H7_E1_RESTART_ROUTER_BUILT_FULL_BURDEN_ONLY`. T461/T462
+minor variations are closed as H7 restart candidates. E1, E2, E3,
+finite-time/catalytic, and ideal/sector packets route to their existing mode
+gates before any H7 reading. Access-loss, substrate-name-only,
+absorber-uncleared, missing-control, cross-repo, external-action,
+public-posture, and claim-promotion shortcuts are rejected or blocked.
+
+The only H7 restart shape admitted is a full-burden future review target:
+`physical_record_deletion` reverse edge, named physical substrate, full T462 H7
+object frozen, T462 absorber pass, negative controls, and real substrate
+evidence before evidential reading. T463 supplies no actual substrate evidence,
+does not reopen H7, does not prove an E1/E2/E3 theorem, does not prove a
+thermodynamic-arrow theorem, and does not move claim status or public posture.

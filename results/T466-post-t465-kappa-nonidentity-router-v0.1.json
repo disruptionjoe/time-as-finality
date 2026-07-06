@@ -1,0 +1,274 @@
+{
+  "artifact_id": "T466-post-t465-kappa-nonidentity-router-v0.1",
+  "objective": "Make the post-T465 kappa non-identity burden executable without claim movement.",
+  "proposals": [
+    {
+      "proposal_id": "current_t224_t244_catalogue",
+      "description": "Existing finite kappa catalogue where source k, native target rank, and synthetic nu rank are paired by construction.",
+      "source_kappa": 3,
+      "native_target_rank": 3,
+      "nu_kappa": 3,
+      "native_witness_kind": "finite re-encoding catalogue",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": true,
+      "source_rank_independent_of_target_construction": false,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "ab_contextuality_after_t465",
+      "description": "AB support-table contextuality where the native target witness is already the same local-section/global-section obstruction.",
+      "source_kappa": 2,
+      "native_target_rank": 2,
+      "nu_kappa": 2,
+      "native_witness_kind": "AB support/global-section rank",
+      "target_witness_is_same_support_global_section_rank": true,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "integer_echo_without_falsifier",
+      "description": "A paired fixture that writes the same integer into source, native target, and nu, but has no mismatch branch.",
+      "source_kappa": 1,
+      "native_target_rank": 1,
+      "nu_kappa": 1,
+      "native_witness_kind": "paired integer echo",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": true,
+      "source_rank_independent_of_target_construction": false,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": false,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "shared_derivation_cap_shortcut",
+      "description": "A CAP-shaped shortcut that routes through the source engine.",
+      "source_kappa": 1,
+      "native_target_rank": 1,
+      "nu_kappa": 1,
+      "native_witness_kind": "shared source-derived witness",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": false,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "native_witness_calls_kappa",
+      "description": "A target whose native witness directly calls kappa.",
+      "source_kappa": 1,
+      "native_target_rank": 1,
+      "nu_kappa": 1,
+      "native_witness_kind": "native witness dependent on compute_kappa",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": false,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "presence_only_packet",
+      "description": "A packet that only distinguishes obstruction presence.",
+      "source_kappa": 1,
+      "native_target_rank": 1,
+      "nu_kappa": 1,
+      "native_witness_kind": "presence-only target",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": false,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "claim_promotion_shortcut",
+      "description": "A packet that asks to promote T224 immediately.",
+      "source_kappa": 2,
+      "native_target_rank": 2,
+      "nu_kappa": 2,
+      "native_witness_kind": "promotion shortcut",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": true,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    },
+    {
+      "proposal_id": "synthetic_future_nonidentity_packet",
+      "description": "A future-review packet shape with an independently fixed source rank, a predeclared transport map, an independent native target witness not identical to support/global-section rank, mismatch controls, no shared derivation, and rank load-bearing.",
+      "source_kappa": 2,
+      "native_target_rank": 2,
+      "nu_kappa": 2,
+      "native_witness_kind": "non-identity target-side witness",
+      "target_witness_is_same_support_global_section_rank": false,
+      "synthetic_nu_written_from_native_rank": false,
+      "source_rank_independent_of_target_construction": true,
+      "native_witness_independent_of_compute_kappa": true,
+      "predeclared_mapping_before_target_measurement": true,
+      "has_mismatch_or_negative_control": true,
+      "no_shared_derivation_with_source": true,
+      "rank_load_bearing": true,
+      "claim_promotion_requested": false,
+      "public_posture_move_requested": false,
+      "cross_repo_truth_move_requested": false
+    }
+  ],
+  "evaluations": [
+    {
+      "proposal_id": "current_t224_t244_catalogue",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "FINITE_REENCODING_CATALOGUE_HELD_NO_PROMOTION",
+      "blockers": [
+        "synthetic_nu_written_from_native_rank",
+        "source_rank_not_independent_of_target_construction"
+      ],
+      "allowed_action": "catalogue evidence only"
+    },
+    {
+      "proposal_id": "ab_contextuality_after_t465",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "T465_ABSORBER_REENCODING_NOT_PREDICTION",
+      "blockers": [
+        "same_support_global_section_rank_reencoding"
+      ],
+      "allowed_action": "use as absorber or guardrail only"
+    },
+    {
+      "proposal_id": "integer_echo_without_falsifier",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "FINITE_REENCODING_CATALOGUE_HELD_NO_PROMOTION",
+      "blockers": [
+        "synthetic_nu_written_from_native_rank",
+        "source_rank_not_independent_of_target_construction",
+        "no_mismatch_or_negative_control",
+        "rank_not_load_bearing"
+      ],
+      "allowed_action": "catalogue evidence only"
+    },
+    {
+      "proposal_id": "shared_derivation_cap_shortcut",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "SHARED_DERIVATION_SHORTCUT",
+      "blockers": [
+        "shared_derivation_with_source"
+      ],
+      "allowed_action": "route away before kappa review"
+    },
+    {
+      "proposal_id": "native_witness_calls_kappa",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "NATIVE_WITNESS_NOT_INDEPENDENT",
+      "blockers": [
+        "native_witness_calls_or_depends_on_compute_kappa"
+      ],
+      "allowed_action": "repair native witness before review"
+    },
+    {
+      "proposal_id": "presence_only_packet",
+      "admitted_future_target": false,
+      "decision": "not_admitted",
+      "route_label": "NONIDENTITY_BURDEN_NOT_MET",
+      "blockers": [
+        "rank_not_load_bearing"
+      ],
+      "allowed_action": "repair packet shape before review"
+    },
+    {
+      "proposal_id": "claim_promotion_shortcut",
+      "admitted_future_target": false,
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_POSTURE_OR_CLAIM_MOVE",
+      "blockers": [
+        "claim_promotion_requested"
+      ],
+      "allowed_action": "record blocker only"
+    },
+    {
+      "proposal_id": "synthetic_future_nonidentity_packet",
+      "admitted_future_target": true,
+      "decision": "admitted_for_review",
+      "route_label": "SYNTHETIC_NONIDENTITY_REVIEW_TARGET_ONLY",
+      "blockers": [],
+      "allowed_action": "future review target only; no claim movement"
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "POST_T465_KAPPA_NONIDENTITY_ROUTER_BUILT_NO_PROMOTION",
+    "admitted_future_target_ids": [
+      "synthetic_future_nonidentity_packet"
+    ],
+    "admitted_targets_are_synthetic_only": true,
+    "current_catalogue_promoted": false,
+    "t224_promotion_earned": false,
+    "genre_agnostic_theorem_earned": false,
+    "claim_ledger_update": "none",
+    "reading": "T224/T229/T234/T239/T244 remain a finite re-encoding catalogue; T465 blocks AB prediction-language; future kappa promotion requires a non-identity native target witness with a falsifying branch and independent source rank."
+  },
+  "not_earned": [
+    "T224 promotion",
+    "CSP-PO1 promotion",
+    "prediction-language",
+    "genre-agnostic theorem",
+    "physics or quantum prediction",
+    "claim-ledger movement",
+    "public-posture movement"
+  ],
+  "future_packet_minimum": [
+    "source rank fixed independently before target construction",
+    "transport map predeclared before target measurement",
+    "target native witness independent of compute_kappa",
+    "target native witness not identical to same support/global-section rank",
+    "synthetic nu not written from the native rank by construction",
+    "mismatch or negative control included",
+    "rank, not only presence, load-bearing",
+    "no shared derivation with the source engine",
+    "review only; no claim movement from packet shape alone"
+  ]
+}

@@ -127,3 +127,29 @@ the same support/global-section rank.
 T465 does not promote T224, CSP-PO1, Q1/Q1D, T21, T58, or any kappa claim; it
 does not earn a genre-agnostic theorem, physics result, quantum prediction,
 public-posture movement, or claim-ledger movement.
+
+## T466 addendum: post-T465 non-identity router
+
+T466 converts the post-T465 burden into an executable admission router. The
+current T224/T229/T234/T239/T244 catalogue remains a finite re-encoding
+catalogue, not prediction: source rank, target native rank, and synthetic `nu`
+rank are still paired by construction in the live artifacts. AB contextuality
+routes through T465 as same-support/global-section re-encoding rather than an
+independent target-side prediction.
+
+Future kappa promotion packets are not admitted unless they clear the full
+non-identity burden:
+
+- source rank fixed independently before target construction;
+- transport map predeclared before target measurement;
+- target native witness independent of `compute_kappa`;
+- target native witness not identical to same support/global-section rank;
+- synthetic `nu` not written from the native rank by construction;
+- mismatch or negative control included;
+- rank, not only presence, load-bearing;
+- no shared derivation with the source engine;
+- review only; no claim movement from packet shape alone.
+
+T466 admits only a synthetic future non-identity review packet and earns no
+T224, CSP-PO1, Q1/Q1D, T21, T58, kappa, genre-agnostic theorem, physics result,
+quantum prediction, public-posture, or claim-ledger movement.

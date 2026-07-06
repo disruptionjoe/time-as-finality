@@ -120,6 +120,15 @@ Only a synthetic integrated E3-region packet is admitted as a future review
 target. Future Direction-A work must integrate the exact no-go with the same
 completion that would otherwise restore factorization.
 
+T454 builds that integrated finite toy target. It matches all declared
+R-supported statistics and interventions, splits revision capability only under
+the boundary menu, and ties the named deficient-side completion to T447's finite
+non-wrapping exact-catalyst no-go. The packet is admitted only as a recorded-tier
+review target, not as a discriminator success: cyclic, consumed, and ideal
+reference policies route away, and law-sector description still explains which
+side has the boundary resource. The next honest move is hostile review of T454's
+remaining ceiling before any stronger Direction-A posture movement.
+
 ## Problem
 
 T392 and T393 moved finality toward a bounded-control-region reading:

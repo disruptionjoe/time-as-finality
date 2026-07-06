@@ -175,6 +175,26 @@ factorization. T453 is not a region-indexed discriminator success, not a WAY
 theorem, not a quantum physics theorem, not a GU/TaF adapter, not cross-repo
 support, and not claim-ledger movement.
 
+## Internal support update (2026-07-05): integrated E3-region packet swing
+
+T454 (`results/T454-integrated-e3-region-packet-swing-v0.1-results.md`) realizes
+the T453 synthetic target as a finite toy review packet.
+
+Verdict: `INTEGRATED_E3_REGION_PACKET_ADMITTED_REVIEW_TARGET_NO_PROMOTION`. The
+main packet matches all declared R-supported statistics and interventions,
+splits revision capability only under the boundary menu, names the deficient-side
+completion, and ties that completion to T447's finite non-wrapping
+exact-catalyst no-go. It therefore passes the T452 check as a recorded-tier
+review target.
+
+The ceiling remains explicit. T454 is not a region-indexed discriminator
+success: cyclic, consumed, and ideal reference controls route away from the
+finite exact packet, and law-sector description still explains which side has
+the boundary resource. It is not a real substrate law, not a quantum physics
+theorem, not a WAY theorem, not a GU/TaF adapter, not cross-repo support, and
+not claim-ledger movement. The next useful move is hostile review of this
+integrated packet before any stronger Direction-A posture movement.
+
 ## Internal support update (2026-07-03): repaired-taxonomy hostile-review gate
 
 T437 (`results/T437-repaired-taxonomy-hostile-review-gate-v0.1-results.md`) audits

@@ -1,0 +1,295 @@
+{
+  "artifact_id": "T471-coarse-graining-multivalued-fixture-gate-v0.1",
+  "objective": "Stress T469's repaired task-naturalness packet against a ternary record alphabet while retaining cheap non-finality, label restatement, hidden-field, microstate, and observer-creates-truth hostile controls.",
+  "budget": {
+    "accessible_fields": [
+      0,
+      1,
+      2
+    ],
+    "max_fields_read": 3,
+    "max_predicate_cost": 4,
+    "min_holder_redundancy": 2,
+    "max_reversal_cost": 2
+  },
+  "alphabet_sizes": [
+    2,
+    3
+  ],
+  "positive_control_comparisons": [
+    {
+      "alphabet_size": 2,
+      "holder_width": 3,
+      "state_count": 8,
+      "finality_band_class_count": 3,
+      "support_count_class_count": 4,
+      "partitions_identical": false
+    },
+    {
+      "alphabet_size": 3,
+      "holder_width": 3,
+      "state_count": 27,
+      "finality_band_class_count": 4,
+      "support_count_class_count": 4,
+      "partitions_identical": false
+    }
+  ],
+  "candidate_evaluations": [
+    {
+      "candidate_id": "binary_finality_band",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 3,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "binary_support_count",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 4,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "binary_mod_sum_with_task_label",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "certified_record_object_not_named",
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 2,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "binary_label_restatement_lookup",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 2,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "binary_hidden_fourth_field_task",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "blockers": [
+        "base_gate:INACCESSIBLE_RECORD_FIELD"
+      ],
+      "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+      "base_admitted": false,
+      "class_count": 4,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "binary_microstate_identity",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "blockers": [
+        "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+      ],
+      "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+      "base_admitted": false,
+      "class_count": 16,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "binary_observer_creates_truth_overread",
+      "admitted": false,
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "blockers": [
+        "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+        "observer_creates_truth_overread"
+      ],
+      "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "base_admitted": false,
+      "class_count": 3,
+      "role": "forbidden_control"
+    },
+    {
+      "candidate_id": "ternary_finality_band",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 4,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "ternary_support_count",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+      "blockers": [],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 4,
+      "role": "positive_control"
+    },
+    {
+      "candidate_id": "ternary_mod_sum_with_task_label",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "certified_record_object_not_named",
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 3,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "ternary_label_restatement_lookup",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "TASK_NATURALNESS_NOT_MET",
+      "blockers": [
+        "record_value_or_support_not_preserved",
+        "task_semantics_restates_label"
+      ],
+      "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "base_admitted": true,
+      "class_count": 2,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "ternary_hidden_fourth_field_task",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "blockers": [
+        "base_gate:INACCESSIBLE_RECORD_FIELD"
+      ],
+      "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+      "base_admitted": false,
+      "class_count": 9,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "ternary_microstate_identity",
+      "admitted": false,
+      "decision": "not_admitted",
+      "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "blockers": [
+        "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+      ],
+      "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+      "base_admitted": false,
+      "class_count": 81,
+      "role": "hostile_control"
+    },
+    {
+      "candidate_id": "ternary_observer_creates_truth_overread",
+      "admitted": false,
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "blockers": [
+        "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+        "observer_creates_truth_overread"
+      ],
+      "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "base_admitted": false,
+      "class_count": 4,
+      "role": "forbidden_control"
+    }
+  ],
+  "packet_evaluations": [
+    {
+      "packet_id": "binary_three_holder_packet",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "REPAIRED_TASK_NATURALNESS_PACKET_ADMITTED",
+      "blockers": [],
+      "positive_control_ids": [
+        "binary_finality_band",
+        "binary_support_count"
+      ],
+      "positive_controls_independent": true,
+      "hostile_control_ids": [
+        "binary_mod_sum_with_task_label",
+        "binary_label_restatement_lookup",
+        "binary_hidden_fourth_field_task",
+        "binary_microstate_identity",
+        "binary_observer_creates_truth_overread"
+      ],
+      "hostile_controls_blocked": true
+    },
+    {
+      "packet_id": "ternary_three_holder_packet",
+      "admitted": true,
+      "decision": "admitted_for_review",
+      "route_label": "REPAIRED_TASK_NATURALNESS_PACKET_ADMITTED",
+      "blockers": [],
+      "positive_control_ids": [
+        "ternary_finality_band",
+        "ternary_support_count"
+      ],
+      "positive_controls_independent": true,
+      "hostile_control_ids": [
+        "ternary_mod_sum_with_task_label",
+        "ternary_label_restatement_lookup",
+        "ternary_hidden_fourth_field_task",
+        "ternary_microstate_identity",
+        "ternary_observer_creates_truth_overread"
+      ],
+      "hostile_controls_blocked": true
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "MULTIVALUED_FIXTURE_GATE_BUILT_NO_PROMOTION",
+    "binary_reference_packet_admitted": true,
+    "ternary_packet_admitted": true,
+    "ternary_positive_controls_independent": true,
+    "ternary_hostile_controls_blocked": true,
+    "ternary_mod_sum_base_gate_admitted": true,
+    "ternary_mod_sum_t470_admitted": false,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "physics_claim_earned": false,
+    "reading": "The T469 packet shape survives the ternary holder alphabet: finality band and support count remain independent positive controls, while cheap modular sum, label restatement, hidden field, microstate identity, and observer-creates-truth controls are blocked. This is an alphabet-stress gate only, not an Observer Theory equivalence theorem or claim promotion."
+  },
+  "future_packet_minimum": [
+    "stress constructive packets across at least one non-binary alphabet",
+    "keep independent positive controls under alphabet transport",
+    "include cheap accessible arithmetic partitions as hostile controls",
+    "block label restatement and microstate identity before claim movement",
+    "keep certified-record and observer-creates-truth guardrails active"
+  ],
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "public-posture movement"
+  ]
+}

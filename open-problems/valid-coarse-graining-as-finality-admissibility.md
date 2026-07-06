@@ -140,3 +140,30 @@ task account that preserves record value/support/finality status, and a
 demotion condition for label restatement or observer-creates-truth overread.
 No D1/T10/T29, Observer Theory, physics, consciousness, claim-ledger, roadmap,
 or public-posture movement is earned.
+
+## T471 addendum: multi-valued fixture gate
+
+T471 stress-tests the T469 repair against a non-binary record alphabet:
+`results/T471-coarse-graining-multivalued-fixture-gate-v0.1-results.md`; spec
+`tests/T471-coarse-graining-multivalued-fixture-gate.md`; model
+`models/coarse_graining_multivalued_fixture_gate.py`.
+
+Verdict:
+
+```text
+MULTIVALUED_FIXTURE_GATE_BUILT_NO_PROMOTION
+```
+
+The T469 packet shape survives a ternary holder alphabet: finality band and
+support count remain independent positive controls, while cheap modular sum,
+label restatement, hidden-field dependence, microstate identity, and
+observer-creates-truth overread are blocked. The binary three-holder packet is
+retained as a reference control and also clears.
+
+This hardens the fixture against a binary-only objection, but it still does
+not prove that TaF supplies Observer Theory's missing criterion. Future packets
+should stress constructive support across at least one non-binary alphabet,
+keep cheap accessible arithmetic partitions as hostile controls, and block
+label restatement and microstate identity before any claim movement. No
+D1/T10/T29, Observer Theory, physics, consciousness, claim-ledger, roadmap, or
+public-posture movement is earned.

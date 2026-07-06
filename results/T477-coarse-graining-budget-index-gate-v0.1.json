@@ -1,0 +1,335 @@
+{
+  "artifact_id": "T477-coarse-graining-budget-index-gate-v0.1",
+  "objective": "Test whether valid coarse-graining admission is indexed to the observer budget: local positives persist under budget expansion, a boundary-pair record becomes admissible only when the boundary field enters access, and non-finality hostiles remain blocked.",
+  "state_count": 16,
+  "budget_results": [
+    {
+      "budget_id": "three_holder_budget",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1,
+          2
+        ],
+        "max_fields_read": 3,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "candidate_evaluations": [
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 4,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:INACCESSIBLE_RECORD_FIELD"
+          ],
+          "base_route_label": "INACCESSIBLE_RECORD_FIELD",
+          "base_admitted": false,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "cheap_accessible_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ],
+      "packet_evaluation": {
+        "packet_id": "three_holder_budget_packet",
+        "admitted": true,
+        "decision": "admitted_for_review",
+        "route_label": "REPAIRED_TASK_NATURALNESS_PACKET_ADMITTED",
+        "blockers": [],
+        "positive_control_ids": [
+          "three_holder_finality_band",
+          "three_holder_support_count"
+        ],
+        "positive_controls_independent": true,
+        "hostile_control_ids": [
+          "cheap_accessible_parity_with_task_label",
+          "label_restatement_lookup",
+          "microstate_identity",
+          "observer_creates_truth_overread"
+        ],
+        "hostile_controls_blocked": true
+      }
+    },
+    {
+      "budget_id": "four_holder_budget",
+      "budget": {
+        "accessible_fields": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "max_fields_read": 4,
+        "max_predicate_cost": 4,
+        "min_holder_redundancy": 2,
+        "max_reversal_cost": 2
+      },
+      "candidate_evaluations": [
+        {
+          "candidate_id": "three_holder_finality_band",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 3,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "three_holder_support_count",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 4,
+          "role": "positive_control"
+        },
+        {
+          "candidate_id": "boundary_pair_status",
+          "admitted": true,
+          "decision": "admitted_for_review",
+          "route_label": "TASK_NATURALNESS_PACKET_CLEARED",
+          "blockers": [],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "observer_index_positive_control"
+        },
+        {
+          "candidate_id": "cheap_accessible_parity_with_task_label",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "certified_record_object_not_named",
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "label_restatement_lookup",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "TASK_NATURALNESS_NOT_MET",
+          "blockers": [
+            "record_value_or_support_not_preserved",
+            "task_semantics_restates_label"
+          ],
+          "base_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+          "base_admitted": true,
+          "class_count": 2,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "microstate_identity",
+          "admitted": false,
+          "decision": "not_admitted",
+          "route_label": "BASE_CERTIFICATION_GATE_NOT_MET",
+          "blockers": [
+            "base_gate:TOO_FINE_MICROSTATE_TRACKING"
+          ],
+          "base_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+          "base_admitted": false,
+          "class_count": 16,
+          "role": "hostile_control"
+        },
+        {
+          "candidate_id": "observer_creates_truth_overread",
+          "admitted": false,
+          "decision": "blocked",
+          "route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "blockers": [
+            "base_gate:FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+            "observer_creates_truth_overread"
+          ],
+          "base_route_label": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+          "base_admitted": false,
+          "class_count": 3,
+          "role": "forbidden_control"
+        }
+      ],
+      "packet_evaluation": {
+        "packet_id": "four_holder_budget_packet",
+        "admitted": true,
+        "decision": "admitted_for_review",
+        "route_label": "REPAIRED_TASK_NATURALNESS_PACKET_ADMITTED",
+        "blockers": [],
+        "positive_control_ids": [
+          "three_holder_finality_band",
+          "three_holder_support_count",
+          "boundary_pair_status"
+        ],
+        "positive_controls_independent": true,
+        "hostile_control_ids": [
+          "cheap_accessible_parity_with_task_label",
+          "label_restatement_lookup",
+          "microstate_identity",
+          "observer_creates_truth_overread"
+        ],
+        "hostile_controls_blocked": true
+      }
+    }
+  ],
+  "budget_transition_rows": [
+    {
+      "candidate_id": "three_holder_finality_band",
+      "three_holder_route": "TASK_NATURALNESS_PACKET_CLEARED",
+      "four_holder_route": "TASK_NATURALNESS_PACKET_CLEARED",
+      "transition": "persists_admitted"
+    },
+    {
+      "candidate_id": "three_holder_support_count",
+      "three_holder_route": "TASK_NATURALNESS_PACKET_CLEARED",
+      "four_holder_route": "TASK_NATURALNESS_PACKET_CLEARED",
+      "transition": "persists_admitted"
+    },
+    {
+      "candidate_id": "boundary_pair_status",
+      "three_holder_route": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "four_holder_route": "TASK_NATURALNESS_PACKET_CLEARED",
+      "transition": "observer_budget_reveals_new_admission"
+    },
+    {
+      "candidate_id": "cheap_accessible_parity_with_task_label",
+      "three_holder_route": "TASK_NATURALNESS_NOT_MET",
+      "four_holder_route": "TASK_NATURALNESS_NOT_MET",
+      "transition": "stays_blocked"
+    },
+    {
+      "candidate_id": "label_restatement_lookup",
+      "three_holder_route": "TASK_NATURALNESS_NOT_MET",
+      "four_holder_route": "TASK_NATURALNESS_NOT_MET",
+      "transition": "stays_blocked"
+    },
+    {
+      "candidate_id": "microstate_identity",
+      "three_holder_route": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "four_holder_route": "BASE_CERTIFICATION_GATE_NOT_MET",
+      "transition": "stays_blocked"
+    },
+    {
+      "candidate_id": "observer_creates_truth_overread",
+      "three_holder_route": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "four_holder_route": "FORBIDDEN_POSTURE_OR_CREATION_OVERREAD",
+      "transition": "stays_blocked"
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "BUDGET_INDEX_GATE_BUILT_OBSERVER_INDEXED_NO_PROMOTION",
+    "local_positives_persist_under_expansion": true,
+    "boundary_pair_routes_by_observer_budget": true,
+    "hostile_controls_stay_blocked_under_expansion": true,
+    "all_budget_packets_admitted_for_review": true,
+    "claim_ledger_update": "none",
+    "d1_promotion_earned": false,
+    "t10_promotion_earned": false,
+    "t29_promotion_earned": false,
+    "observer_theory_identification_earned": false,
+    "physics_claim_earned": false,
+    "reading": "The repaired valid-coarse-graining packet is observer-budget indexed. Three-holder positives persist when the observer budget expands; the boundary-pair record is rejected as inaccessible under the three-holder budget and admitted only after the fourth holder enters the declared access boundary. Cheap arithmetic, label restatement, microstate identity, and observer-creates-truth controls remain blocked under expanded access. This is a budget-index guardrail only, not an Observer Theory equivalence theorem or claim promotion."
+  },
+  "future_packet_minimum": [
+    "declare the observer budget before selecting the relation",
+    "report budget transitions for every candidate relation",
+    "treat newly accessible record tasks as observer-indexed admissions, not global criteria",
+    "show that cheap arithmetic and label-restatement controls remain blocked under expanded budgets",
+    "keep microstate identity and observer-creates-truth overreads blocked before claim movement"
+  ],
+  "not_earned": [
+    "D1 promotion",
+    "T10 superselection result",
+    "T29 projection-obstruction promotion",
+    "observer-theory equivalence theorem",
+    "global valid-coarse-graining criterion",
+    "physics or consciousness claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "public-posture movement"
+  ]
+}

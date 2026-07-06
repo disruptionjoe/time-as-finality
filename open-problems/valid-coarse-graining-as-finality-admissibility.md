@@ -167,3 +167,33 @@ keep cheap accessible arithmetic partitions as hostile controls, and block
 label restatement and microstate identity before any claim movement. No
 D1/T10/T29, Observer Theory, physics, consciousness, claim-ledger, roadmap, or
 public-posture movement is earned.
+
+## T477 addendum: budget-index gate
+
+T477 stress-tests the T469/T471 repair across nested observer budgets:
+`results/T477-coarse-graining-budget-index-gate-v0.1-results.md`; spec
+`tests/T477-coarse-graining-budget-index-gate.md`; model
+`models/coarse_graining_budget_index_gate.py`.
+
+Verdict:
+
+```text
+BUDGET_INDEX_GATE_BUILT_OBSERVER_INDEXED_NO_PROMOTION
+```
+
+The repaired valid-coarse-graining packet is observer-budget indexed rather
+than a fixed global whitelist. Three-holder finality-band and support-count
+positives persist when the observer budget expands. A boundary-pair record
+using holder 3 is rejected as inaccessible under the three-holder budget and
+admitted only when holder 3 enters the declared access boundary. Cheap
+arithmetic, label restatement, microstate identity, and observer-creates-truth
+controls remain blocked under expanded access.
+
+This supports the bounded-observer intake discipline only. Future packets must
+declare the observer budget before relation selection, report budget
+transitions for candidate relations, treat newly accessible record tasks as
+observer-indexed admissions rather than global criteria, and keep cheap
+arithmetic, label-restatement, microstate, and observer-creates-truth hostile
+controls active before any claim movement. No D1/T10/T29, Observer Theory,
+global valid-coarse-graining criterion, physics, consciousness, claim-ledger,
+roadmap, or public-posture movement is earned.

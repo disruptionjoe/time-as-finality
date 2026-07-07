@@ -1,0 +1,254 @@
+{
+  "artifact": "T493-levin-competency-cr-absorber-gate-v0.1",
+  "sources": {
+    "n16": "literature/N16-levin-competency-capability-neighbor.md",
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t407": "results/T407-region-capability-no-go-v0.1-results.md",
+    "t398": "results/T398-resource-profile-absorber-v0.1-results.md",
+    "t460": "results/T460-post-t459-direction-a-restart-router-v0.1-results.md"
+  },
+  "primary_source_status": "not_checked_pointer_grade_only",
+  "absorber_audit": {
+    "full_profile_absorber": {
+      "frame": "competency as full intervention-measured task-success profile",
+      "absorbs_current_c_r": true,
+      "reason": "Once the task-success vector over the declared region, menu, and task family is granted, current T407 C(R) is exactly the admitted capability profile, and T398 shows capability verdicts factor through that profile.",
+      "same_resource_capability_splits": [],
+      "t398_source": "results/T398-resource-profile-absorber-v0.1-results.md",
+      "profile_summary": {
+        "n_configurations": 24,
+        "n_distinct_profiles": 12,
+        "task_names": [
+          "undo_within",
+          "undo_cross",
+          "order_postdiction",
+          "class_readout"
+        ],
+        "flat_statistics_class_size": 16,
+        "flat_statistics_distinct_profile_count": 12,
+        "flat_statistics_spans_all_profiles": true,
+        "featured_pair": {
+          "names": [
+            "pristine",
+            "publisher"
+          ],
+          "profiles": {
+            "pristine": [
+              1.0,
+              1.0,
+              0.333333333333,
+              0.666666666667
+            ],
+            "publisher": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ]
+          },
+          "statistics_max_diff": 0.0,
+          "capability_incomparable": true
+        }
+      }
+    },
+    "single_goal_control": {
+      "single_goal_statistic": "class_readout_success",
+      "collision_count": 2,
+      "collisions": [
+        {
+          "single_goal_value": 0.666666666667,
+          "witness_configs": [
+            "none|none|class",
+            "none|none|none"
+          ],
+          "witness_profiles": [
+            [
+              1.0,
+              0.0,
+              0.333333333333,
+              0.666666666667
+            ],
+            [
+              1.0,
+              1.0,
+              0.333333333333,
+              0.666666666667
+            ]
+          ],
+          "split_task": "undo_cross"
+        },
+        {
+          "single_goal_value": 1.0,
+          "witness_configs": [
+            "class_phase|none|class",
+            "class_phase|none|none"
+          ],
+          "witness_profiles": [
+            [
+              1.0,
+              0.0,
+              0.666666666667,
+              1.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.666666666667,
+              1.0
+            ]
+          ],
+          "split_task": "undo_cross"
+        }
+      ],
+      "single_goal_absorbs_full_c_r": false
+    },
+    "zero_trace_surplus_review": {
+      "admitted_as_review_target": true,
+      "novelty_claim_admitted": false,
+      "reason": "T407's flat declared R-statistics class spans all admitted profiles, so simple observed statistics do not decide the capability profile. But this is not surplus over a full competency profile, because that profile already includes the intervention-measured task-success vector.",
+      "statistics_flat_spans_all_profiles": true,
+      "featured_pair_statistics_max_diff": 0.0,
+      "featured_pair_capability_incomparable": true
+    },
+    "external_source_status": {
+      "n16_primary_sources_checked": false,
+      "source_grade": "pointer_grade_intake_extract",
+      "safe_use": "internal calibration and absorber-target formulation only"
+    }
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "full_competency_profile_absorber",
+      "admitted": true,
+      "label": "ADMITTED_AS_FULL_PROFILE_ABSORBER_NO_CLAIM",
+      "action": "absorb_current_c_r_as_competency_profile",
+      "reason": "Full intervention-measured competency profile is equivalent to the current admitted C(R) profile.",
+      "candidate": {
+        "candidate_id": "full_competency_profile_absorber",
+        "description": "Treat competency as the full intervention-measured task-success profile over the declared region, menu, and task family.",
+        "grants_full_task_success_profile": true,
+        "uses_single_observed_success_statistic": false,
+        "declares_region_menu_task_context": true,
+        "uses_t407_zero_trace_split": false,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": false,
+        "claims_novelty_or_public_posture": false,
+        "requests_cross_repo_truth": false
+      }
+    },
+    {
+      "candidate_id": "single_goal_navigation_statistic",
+      "admitted": false,
+      "label": "REJECTED_SINGLE_GOAL_STATISTIC_COLLIDES_WITH_C_R",
+      "action": "reject",
+      "reason": "Single observed success statistic has 2 collision(s) with different C(R) profiles.",
+      "candidate": {
+        "candidate_id": "single_goal_navigation_statistic",
+        "description": "Treat competency as one observed navigation/readout success statistic and ask it to absorb the whole C(R) profile.",
+        "grants_full_task_success_profile": false,
+        "uses_single_observed_success_statistic": true,
+        "declares_region_menu_task_context": true,
+        "uses_t407_zero_trace_split": false,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": false,
+        "claims_novelty_or_public_posture": false,
+        "requests_cross_repo_truth": false
+      }
+    },
+    {
+      "candidate_id": "t407_zero_trace_surplus_target",
+      "admitted": true,
+      "label": "ADMITTED_REVIEW_TARGET_SIMPLE_STATISTICS_ONLY_NO_NOVELTY",
+      "action": "keep_as_future_surplus_target",
+      "reason": "T407 can challenge simple observed-statistic readings, not a full competency profile.",
+      "candidate": {
+        "candidate_id": "t407_zero_trace_surplus_target",
+        "description": "Use T407's statistics-flat capability spread as a future surplus target over simple observed statistics.",
+        "grants_full_task_success_profile": false,
+        "uses_single_observed_success_statistic": false,
+        "declares_region_menu_task_context": true,
+        "uses_t407_zero_trace_split": true,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": false,
+        "claims_novelty_or_public_posture": false,
+        "requests_cross_repo_truth": false
+      }
+    },
+    {
+      "candidate_id": "external_mechanism_import",
+      "admitted": false,
+      "label": "REJECTED_EXTERNAL_MECHANISM_IMPORT_PRIMARY_SOURCES_UNCHECKED",
+      "action": "reject",
+      "reason": "N16 is pointer-grade, and coupling/free-energy mechanisms are not TaF C(R) machinery.",
+      "candidate": {
+        "candidate_id": "external_mechanism_import",
+        "description": "Import Levin/Fields mechanism language, active inference, or free-energy substrate into TaF C(R).",
+        "grants_full_task_success_profile": false,
+        "uses_single_observed_success_statistic": false,
+        "declares_region_menu_task_context": false,
+        "uses_t407_zero_trace_split": false,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": true,
+        "claims_novelty_or_public_posture": false,
+        "requests_cross_repo_truth": false
+      }
+    },
+    {
+      "candidate_id": "novelty_or_public_posture_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_NOVELTY_PUBLIC_POSTURE_SHORTCUT",
+      "action": "stop",
+      "reason": "N16 resonance is not evidence for claim, novelty, or public-posture movement.",
+      "candidate": {
+        "candidate_id": "novelty_or_public_posture_shortcut",
+        "description": "Treat N16 resonance as evidence that TaF has a public novelty or claim-status upgrade over competency.",
+        "grants_full_task_success_profile": false,
+        "uses_single_observed_success_statistic": false,
+        "declares_region_menu_task_context": false,
+        "uses_t407_zero_trace_split": true,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": false,
+        "claims_novelty_or_public_posture": true,
+        "requests_cross_repo_truth": false
+      }
+    },
+    {
+      "candidate_id": "cross_repo_active_inference_absorber_update",
+      "admitted": false,
+      "label": "BLOCKED_CROSS_REPO_TRUTH_UPDATE",
+      "action": "stop",
+      "reason": "Cross-repo absorber updates must route as proposals; this run stays inside TaF.",
+      "candidate": {
+        "candidate_id": "cross_repo_active_inference_absorber_update",
+        "description": "Update a temporal-issuance or active-inference absorber from this TaF run.",
+        "grants_full_task_success_profile": false,
+        "uses_single_observed_success_statistic": false,
+        "declares_region_menu_task_context": false,
+        "uses_t407_zero_trace_split": false,
+        "primary_sources_checked": false,
+        "imports_external_mechanism": false,
+        "claims_novelty_or_public_posture": false,
+        "requests_cross_repo_truth": true
+      }
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "N16_COMPETENCY_GATE_BUILT_FULL_PROFILE_ABSORBS_SURPLUS_REVIEW_ONLY",
+    "admitted_candidate_ids": [
+      "full_competency_profile_absorber",
+      "t407_zero_trace_surplus_target"
+    ],
+    "full_profile_absorbs_current_c_r": true,
+    "single_goal_absorbs_full_c_r": false,
+    "zero_trace_surplus_is_review_only": true
+  },
+  "reading": "N16 is useful precisely because it cuts both ways. A full intervention-measured task-success profile over region R behaves like the current finite C(R) object and absorbs it as competency-style capability bookkeeping. A weaker single-goal or observed-navigation statistic does not absorb C(R). T407's zero-trace statistics/capability split therefore remains a review target for surplus over simple observed statistics, but not a novelty claim over Levin/Fields competency.",
+  "claim_ledger_update": "none; no claim promotion or demotion",
+  "recommended_next": [
+    "Use N16 as a calibration/absorber checklist for future C(R) packets.",
+    "Do not cite T493 as novelty over Levin/Fields competency.",
+    "Before any external-facing statement, verify primary sources and run a separate literature absorber note.",
+    "Any stronger Direction-A restart still has to satisfy T460's new-packet-class requirements."
+  ],
+  "honest_ceiling": "Calibration and absorber gate only. T493 does not verify Levin/Fields primary sources, does not prove novelty over competency/TAME, does not import active inference or free-energy mechanisms, does not prove a region-indexed discriminator success, and does not move claim ledger, roadmap, public posture, hard policy, protected-license material, or cross-repo truth."
+}

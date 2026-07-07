@@ -411,3 +411,24 @@ structural-symmetry ≈ GU**), Part 1 restated algebraically. So this problem's
 successors now also include the **E3 route** (a symmetry/superselection-forced
 boundary). See the revised
 `open-problems/finite-closed-capability-boundary-scope-theorem.md`.
+
+## Status Addendum (2026-07-07): N16 competency neighbor converted to absorber gate
+
+N16 adds Levin/Fields competency as a pointer-grade calibration neighbor and
+absorber candidate for `C(R)`. T493 makes the dual role executable:
+`results/T493-levin-competency-cr-absorber-gate-v0.1-results.md`.
+
+Verdict: `N16_COMPETENCY_GATE_BUILT_FULL_PROFILE_ABSORBS_SURPLUS_REVIEW_ONLY`.
+If competency is granted as the full intervention-measured task-success profile
+over a declared region, menu, and task family, the current T407/T398 `C(R)`
+object is absorbed as competency-style capability bookkeeping. If competency is
+weakened to one observed navigation/readout statistic, it does not absorb the
+multi-task `C(R)` profile. T407's zero-trace statistics/capability split remains
+a review target over simple observed statistics only; it is not a novelty claim
+over a full competency profile.
+
+N16 remains pointer-grade and primary sources are not checked. T493 does not
+import active-inference/free-energy machinery, does not prove a region-indexed
+discriminator success, and does not move claims, roadmap, public posture, hard
+policy, protected-license material, or cross-repo truth. Future external-facing
+use needs a separate primary-source literature absorber note.

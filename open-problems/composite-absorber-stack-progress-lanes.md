@@ -128,6 +128,12 @@ Best next progress:
 Ask whether any C(R) residual survives after granting competency, resource
 preorder, permission lattice, and provenance completion together.
 
+T500 result: current T493/T494 C(R) material is absorbed as a composite
+operational profile once full competency profile, resource preorder,
+permission lattice, and provenance completion are all granted. Weak
+single-layer readings are rejected, and only a future packet with controlled
+capability spread after the full stack is admitted for review.
+
 ### 5. Typed Translation / Object-Identity Stack
 
 Stack:
@@ -160,5 +166,5 @@ explanation: same interface, not same object.
 4. Competency + Resource + Permission Stack.
 5. Typed Translation / Object-Identity Stack.
 
-T497, T498, and T499 have now made the first three lanes executable. The next
-unconsumed lane is Competency + Resource + Permission Stack.
+T497, T498, T499, and T500 have now made the first four lanes executable. The
+next unconsumed lane is Typed Translation / Object-Identity Stack.

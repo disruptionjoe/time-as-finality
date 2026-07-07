@@ -63,14 +63,28 @@ range is unobservably free. (Gorard's argument.)
   forced and real is the record/capability structure (the invariant); which side you attribute the finalizing
   to is free. **Open theorem:** does bounded-observer record-finitude force the gauge-invariant record
   structure that TaF calls finality? T12' and F2 are forced fragments of it; the theorem is unproven.
-- **The humbling cost (CT-3).** Observer-gauge and system-gauge are **equivalent presentations**, so betting
-  that the structure is "really in the observer" (our capability framework) versus "really in the system"
-  (the physics) is a difference the equivalence forbids you to observe -- exactly the category-theoretic
-  corrective **CT-3 (Check-Presentation-Equivalence)**
-  (`ai-epistemology/field-guide/branch-5-evolvability/category-theoretic-method-correctives.md`). So **the
-  capability framework is a gauge CHOICE, not the truth**; the empiricist gauge is equally valid. What is real
-  is the invariant. This is the same non-triumphalism as substrate-complementarity: do not mistake a chosen
-  presentation for a fact about nature.
+- **The realism correction (Deutsch's dinosaur) -- corrects an over-hasty CT-3 deflation.** An earlier draft
+  of this note slid from "the observer/system split is not directly perceivable" to "therefore it is a gauge
+  CHOICE, not a fact -- the capability framework is not 'the truth.'" **That is the verificationist mistake.**
+  No one has seen or will see a dinosaur; the fossils are explained by a model that logically IMPLIES
+  dinosaurs, and that implication IS the evidence (Deutsch). Unobservability of a distinction does not demote
+  it to a choice -- most of science is unobservable-but-real by inference to the best explanation. The correct
+  criterion: **a distinction is real if the BEST explanation requires it**, where "best" = **hard to vary**
+  (unifying, no ad-hoc dials), not merely empirically adequate.
+  - *Rescues the program from self-deflation.* The capability framework is a candidate EXPLANATION, real to the
+    degree it is the hardest-to-vary account of the invariant records -- the realism that makes paleontology
+    knowledge, not geology. If unobservability demoted it to "choice," the framework would be self-undermining.
+  - *Corrects the use of CT-3.* CT-3 ("equivalent presentations -> the invariant cannot move") is legitimate
+    ONLY when the equivalence is PROVEN (all consequences identical -- e.g. the genuine Quillen equivalence in
+    the substrate-thesis case, where the count-obstruction really cannot move). The observer/system split is
+    NOT proven-equivalent; it is UNDERDETERMINED by current data -- a live question decided by best
+    explanation, not a gauge. Reading "gauge" off "no observed difference" is the dinosaur mistake. (See the
+    CT-3 dinosaur guard added to the methodology registry.)
+  - *The genuinely-gauge category still exists* (PROVEN symmetries: coordinate choice, a real categorical
+    equivalence) and there there is no fact of the matter -- but membership is decided by explanatory
+    difference, NOT by perceivability. The non-triumphalism survives in its correct form: do not mistake a
+    proven-equivalent presentation for a fact; but do not mistake an unobservable-yet-explanatorily-required
+    structure for a mere choice either.
 
 ## The operational payoff (folded into the adapter work)
 
@@ -85,7 +99,10 @@ they share one tunable knob it is gauge (manufactured). This is folded into
 ## Discipline (the anchor)
 
 The **split** is free; the **total** (observed behavior, records) is invariant; the **capability bound**
-fences the split. That triple is what keeps this from collapsing into "it is all gauge, nothing is real." The
-gauge is also the manufactured-convergence risk itself, so any cross-repo agreement must be checked for
-whether it survives an independently-fixed gauge, not a shared tunable one. Single-process caution: this frame
-and the programs it organizes are one research process; it is an organizing lens, not evidence.
+fences the split. That triple is what keeps this from collapsing into "it is all gauge, nothing is real."
+The gauge is also the manufactured-convergence risk itself -- and the test is **explanatory, not perceptual**:
+manufactured convergence is a BAD explanation (EASY to vary -- the split/encoding was dialed until the pieces
+agreed), real convergence is HARD to vary (each side forced independently, no free dial). So any cross-repo
+agreement is judged by whether it is hard-to-vary under independently-fixed gauges, NOT by whether the
+difference is perceivable (the verificationist trap). Single-process caution: this frame and the programs it
+organizes are one research process; it is an organizing lens, not evidence.

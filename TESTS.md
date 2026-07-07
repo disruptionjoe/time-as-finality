@@ -614,6 +614,7 @@ suites additionally use numpy. Evidence records:
 - [T420 Finite-Cycle Anti-Relabel Gate Results](results/T420-finite-cycle-anti-relabel-gate-v0.1-results.md)
 - [T421 E3 Admissibility Adapter Results](results/T421-e3-admissibility-adapter-v0.1-results.md)
 - [T487 Reachability Quotient Capability Spread Gate Results](results/T487-reachability-quotient-capability-spread-gate-v0.1-results.md)
+- [T488 Post-T487 Reachability Quotient Closure Router Results](results/T488-post-t487-reachability-quotient-closure-router-v0.1-results.md)
 
 ## How To Add A Test
 

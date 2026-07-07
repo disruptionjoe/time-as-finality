@@ -1,0 +1,524 @@
+{
+  "artifact_id": "T488-post-t487-reachability-quotient-closure-router-v0.1",
+  "verdict": "POST_T487_REACHABILITY_QUOTIENT_THREAD_CLOSED_NEW_EVIDENCE_ONLY",
+  "t487_anchor": {
+    "artifact_id": "T487-reachability-quotient-capability-spread-gate-v0.1",
+    "verdict": "REACHABILITY_QUOTIENT_CAPABILITY_SPREAD_BUILT_TASK_ONLY",
+    "anchor_ok": true,
+    "gate_passed": true,
+    "admitted_candidate_ids": [
+      "source_target_reachability_task",
+      "quotient_role_profile_task"
+    ],
+    "reachability_task_sufficient": true,
+    "role_profile_task_sufficient": true,
+    "path_latency_underdetermined": true,
+    "relay_budget_underdetermined": true,
+    "component_size_underdetermined": true,
+    "hostile_controls_blocked": true,
+    "record_finality_change_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "physics_claim_earned": false,
+    "future_packet_minimum_preserved": true
+  },
+  "proposals": [
+    {
+      "proposal_id": "repeat_reachability_quotient_upgrade",
+      "proposal_kind": "minor_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": true,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "upgrade the admitted reachability task into stronger structure"
+    },
+    {
+      "proposal_id": "role_profile_internal_scale_restart",
+      "proposal_kind": "minor_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": true,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "treat the quotient role profile as internal scale structure"
+    },
+    {
+      "proposal_id": "path_latency_relabel_restart",
+      "proposal_kind": "refinement_artifact_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": true,
+      "uses_path_latency_or_relay_artifact": true,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "read path-latency bands as determined by the quotient"
+    },
+    {
+      "proposal_id": "relay_budget_clock_restart",
+      "proposal_kind": "refinement_artifact_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": true,
+      "uses_path_latency_or_relay_artifact": true,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "read relay count as a clock or duration proxy"
+    },
+    {
+      "proposal_id": "component_size_capacity_restart",
+      "proposal_kind": "refinement_artifact_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": true,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": true,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "read component-size capacity as determined by the quotient"
+    },
+    {
+      "proposal_id": "record_finality_bridge_shortcut",
+      "proposal_kind": "finality_shortcut",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": true,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "treat reachability sufficiency as record-finality evidence"
+    },
+    {
+      "proposal_id": "rg_conformal_import_restart",
+      "proposal_kind": "external_mechanism_restart",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": false,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": false,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": true,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "import RG or conformal fixed-point mechanism into the quotient lane"
+    },
+    {
+      "proposal_id": "claim_public_posture_shortcut",
+      "proposal_kind": "governance_shortcut",
+      "repeats_current_t485_t487_packet_class": true,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": false,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": true,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": true,
+      "requests_claim_or_posture_movement": true,
+      "intended_use": "move claim or public posture from quotient sufficiency"
+    },
+    {
+      "proposal_id": "independent_capability_missing_controls",
+      "proposal_kind": "undercontrolled_future_packet",
+      "repeats_current_t485_t487_packet_class": false,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": false,
+      "independent_of_t485_t487_quotient": true,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": false,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "propose a new capability object without hostile controls"
+    },
+    {
+      "proposal_id": "future_independent_capability_object_packet",
+      "proposal_kind": "future_independent_capability_target",
+      "repeats_current_t485_t487_packet_class": false,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": true,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": false,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "future packet with a new independent capability object"
+    },
+    {
+      "proposal_id": "future_domain_native_morphism_class_packet",
+      "proposal_kind": "future_domain_native_morphism_target",
+      "repeats_current_t485_t487_packet_class": false,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": true,
+      "has_domain_native_morphism_class": true,
+      "has_direct_record_finality_bridge_theorem": false,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": false,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "future packet with a stricter domain-native topology morphism class"
+    },
+    {
+      "proposal_id": "future_direct_record_finality_bridge_packet",
+      "proposal_kind": "future_record_finality_bridge_target",
+      "repeats_current_t485_t487_packet_class": false,
+      "cites_t487_anchor": true,
+      "declares_capability_object": true,
+      "computes_capability_spread": true,
+      "supplies_positive_controls": true,
+      "supplies_hostile_controls": true,
+      "independent_of_t485_t487_quotient": true,
+      "has_domain_native_morphism_class": false,
+      "has_direct_record_finality_bridge_theorem": true,
+      "uses_t487_reachability_sufficiency_as_proof": false,
+      "uses_role_profile_as_scale_structure": false,
+      "uses_non_singleton_spread_as_determined": false,
+      "uses_path_latency_or_relay_artifact": false,
+      "uses_component_size_artifact": false,
+      "imports_rg_or_conformal_mechanism": false,
+      "claims_scale_clock_duration_finality_or_physics": false,
+      "requests_claim_or_posture_movement": false,
+      "intended_use": "future direct theorem bridging reachability tasks to record finality"
+    }
+  ],
+  "decisions": [
+    {
+      "proposal_id": "repeat_reachability_quotient_upgrade",
+      "admitted": false,
+      "route_label": "reject_reachability_upgrade_shortcut",
+      "classification": "reachability_upgrade_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "reachability-task sufficiency is not evidence for stronger readings"
+      ]
+    },
+    {
+      "proposal_id": "role_profile_internal_scale_restart",
+      "admitted": false,
+      "route_label": "reject_role_profile_scale_shortcut",
+      "classification": "scale_shortcut_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "role profile is reachability-task bookkeeping, not internal scale"
+      ]
+    },
+    {
+      "proposal_id": "path_latency_relabel_restart",
+      "admitted": false,
+      "route_label": "reject_t487_underdetermined_capability_restart",
+      "classification": "underdetermined_capability_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "T487 explicitly made this capability non-singleton over quotient fibers"
+      ]
+    },
+    {
+      "proposal_id": "relay_budget_clock_restart",
+      "admitted": false,
+      "route_label": "reject_t487_underdetermined_capability_restart",
+      "classification": "underdetermined_capability_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "T487 explicitly made this capability non-singleton over quotient fibers"
+      ]
+    },
+    {
+      "proposal_id": "component_size_capacity_restart",
+      "admitted": false,
+      "route_label": "reject_t487_underdetermined_capability_restart",
+      "classification": "underdetermined_capability_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "T487 explicitly made this capability non-singleton over quotient fibers"
+      ]
+    },
+    {
+      "proposal_id": "record_finality_bridge_shortcut",
+      "admitted": false,
+      "route_label": "reject_reachability_upgrade_shortcut",
+      "classification": "reachability_upgrade_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "reachability-task sufficiency is not evidence for stronger readings"
+      ]
+    },
+    {
+      "proposal_id": "rg_conformal_import_restart",
+      "admitted": false,
+      "route_label": "reject_rg_or_conformal_import_restart",
+      "classification": "external_mechanism_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "capability_spread_computed",
+        "hostile_overread_controls",
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "RG and conformal material remain external calibration only"
+      ]
+    },
+    {
+      "proposal_id": "claim_public_posture_shortcut",
+      "admitted": false,
+      "route_label": "block_governance_or_public_posture_shortcut",
+      "classification": "governance_boundary_block",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": true,
+      "missing_requirements": [
+        "direct_record_finality_or_scale_bridge_theorem",
+        "domain_native_morphism_class"
+      ],
+      "notes": [
+        "T488 has no authority to move claim status or public posture"
+      ]
+    },
+    {
+      "proposal_id": "independent_capability_missing_controls",
+      "admitted": false,
+      "route_label": "reject_missing_reopen_requirements",
+      "classification": "missing_reopen_requirement_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": false,
+      "missing_requirements": [
+        "hostile_overread_controls"
+      ],
+      "notes": [
+        "proposal lacks mandatory T488 reopen controls"
+      ]
+    },
+    {
+      "proposal_id": "future_independent_capability_object_packet",
+      "admitted": true,
+      "route_label": "admit_future_independent_capability_review_target",
+      "classification": "future_independent_capability_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": false,
+      "missing_requirements": [],
+      "notes": [
+        "future capability packet may be reviewed as new evidence",
+        "admission is not claim evidence"
+      ]
+    },
+    {
+      "proposal_id": "future_domain_native_morphism_class_packet",
+      "admitted": true,
+      "route_label": "admit_future_domain_native_morphism_review_target",
+      "classification": "future_domain_native_morphism_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": false,
+      "missing_requirements": [],
+      "notes": [
+        "future morphism packet may be reviewed as new evidence",
+        "admission is not scale or physics evidence"
+      ]
+    },
+    {
+      "proposal_id": "future_direct_record_finality_bridge_packet",
+      "admitted": true,
+      "route_label": "admit_future_record_finality_bridge_review_target",
+      "classification": "future_record_finality_bridge_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_thread_evidence": false,
+      "closes_current_thread": false,
+      "missing_requirements": [],
+      "notes": [
+        "future theorem packet may be reviewed as new evidence",
+        "admission is not record-finality evidence"
+      ]
+    }
+  ],
+  "claim_ledger_update": "none",
+  "current_thread_closed": true,
+  "admitted_future_targets": [
+    "future_independent_capability_object_packet",
+    "future_domain_native_morphism_class_packet",
+    "future_direct_record_finality_bridge_packet"
+  ],
+  "rejected_restart_packets": [
+    "repeat_reachability_quotient_upgrade",
+    "role_profile_internal_scale_restart",
+    "path_latency_relabel_restart",
+    "relay_budget_clock_restart",
+    "component_size_capacity_restart",
+    "record_finality_bridge_shortcut",
+    "rg_conformal_import_restart",
+    "claim_public_posture_shortcut",
+    "independent_capability_missing_controls"
+  ],
+  "strongest_reading": "T488 closes the current T479-T487 RG/multiscale reachability-quotient thread to minor restarts. T487 provides reachability-task sufficiency only. It is not internal scale structure, not a record clock, not duration, not finality, not scale genesis, not physics evidence, and not claim or public posture support. Future work can reopen the surface only by bringing a newly declared independent capability object with capability-spread controls, a domain-native morphism class that changes the invariance burden, or a direct record-finality bridge theorem with hostile controls.",
+  "future_reopen_minimum": [
+    "cite T479-T487 and state why the reachability-quotient closure is insufficient",
+    "declare the capability object before witness construction",
+    "compute capability spread over the declared visible fibers",
+    "preserve positive reachability controls and hostile path, relay, component-size, finality, RG/conformal, and promotion controls",
+    "supply evidence independent of the T485/T487 quotient when claiming a new generator",
+    "declare a domain-native morphism class before reusing topology as an invariant",
+    "provide a direct record-finality bridge theorem before using finality language",
+    "keep scale, clock, duration, temporal-arrow, RG/conformal, physics, claim-ledger, roadmap, North Star, public-posture, and cross-repo readings blocked unless separately earned"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "cross-repo truth movement"
+  ]
+}

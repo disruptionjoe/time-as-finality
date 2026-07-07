@@ -302,3 +302,33 @@ scale structure, record clock, duration, temporal arrow, record-finality
 change, scale-genesis theorem, physics claim, D1 promotion, RG/TaF equivalence
 theorem, claim-ledger movement, roadmap movement, North Star movement,
 public-posture movement, or cross-repo truth is earned.
+
+## T488 addendum: post-T487 reachability quotient closure router
+
+T488 closes the current T479-T487 RG/multiscale reachability-quotient thread
+against minor restarts:
+`results/T488-post-t487-reachability-quotient-closure-router-v0.1-results.md`;
+spec `tests/T488-post-t487-reachability-quotient-closure-router.md`; model
+`models/post_t487_reachability_quotient_closure_router.py`.
+
+Verdict:
+
+```text
+POST_T487_REACHABILITY_QUOTIENT_THREAD_CLOSED_NEW_EVIDENCE_ONLY
+```
+
+The router treats T487 as reachability-task sufficiency only. It rejects
+reachability-quotient upgrades, role-profile scale restarts, path-latency,
+relay-budget, component-size, record-finality, RG/conformal import, and
+claim/public-posture shortcuts. An undercontrolled independent-capability
+packet is also rejected for missing hostile controls.
+
+Future work can reopen the surface only by bringing a newly declared
+independent capability object with capability-spread controls, a domain-native
+morphism class that changes the invariance burden, or a direct record-finality
+bridge theorem with hostile controls. Admitted future targets are review
+targets only; they are not evidence. No independent internal scale structure,
+record clock, duration, temporal arrow, record-finality change,
+scale-genesis theorem, physics claim, D1 promotion, RG/TaF equivalence
+theorem, claim-ledger movement, roadmap movement, README movement, North Star
+movement, public-posture movement, or cross-repo truth is earned.

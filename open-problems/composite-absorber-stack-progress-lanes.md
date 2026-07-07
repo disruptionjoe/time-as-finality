@@ -75,6 +75,12 @@ Use the kappa line as the structural model for future composite-residual
 packets: same object, unrelated native absorbers, native witnesses, no
 post-hoc tuning.
 
+T499 result: the T224-T244 kappa catalogue clears this core structural template
+only as method: fixed invariant, unrelated absorber genres, no retuning, native
+witnesses, falsifying controls, and rank load-bearing. T465/T466 still cap the
+line below prediction-language or theorem-language unless a future non-identity
+target witness clears independent source-rank and predeclared-map burdens.
+
 ### 3. Authoritative Commit / Settlement Stack
 
 Stack:
@@ -154,6 +160,5 @@ explanation: same interface, not same object.
 4. Competency + Resource + Permission Stack.
 5. Typed Translation / Object-Identity Stack.
 
-The first lane is active as the immediate next swing because T495 already gives
-an executable foothold and T496 admits a bounded-retrieval lower-bound packet as
-review material only.
+T497, T498, and T499 have now made the first three lanes executable. The next
+unconsumed lane is Competency + Resource + Permission Stack.

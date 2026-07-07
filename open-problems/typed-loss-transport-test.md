@@ -153,3 +153,20 @@ non-identity burden:
 T466 admits only a synthetic future non-identity review packet and earns no
 T224, CSP-PO1, Q1/Q1D, T21, T58, kappa, genre-agnostic theorem, physics result,
 quantum prediction, public-posture, or claim-ledger movement.
+
+## T499 addendum: kappa as composite-residual method template
+
+T499 converts the kappa composite absorber-stack lane into an executable method
+gate. The T224-T244 catalogue is admitted as a structural template only: one
+fixed invariant, multiple unrelated absorber genres, no retuning, native target
+witnesses, falsifying controls, and rank load-bearing. That is useful for future
+composite absorber packets, but it is not prediction-language or promotion.
+
+The T465/T466 ceiling remains controlling. A future kappa packet must still
+clear the non-identity burden before theorem or prediction language is even
+reviewable: independent source rank, predeclared transport map, target native
+witness independent of `compute_kappa`, target witness not identical to the same
+support/global-section rank, synthetic `nu` not written from native rank,
+falsifying control, rank load-bearing, and no shared derivation. T499 earns no
+T224 upgrade, kappa promotion, genre-agnostic theorem, physics result,
+public-posture movement, or claim-ledger movement.

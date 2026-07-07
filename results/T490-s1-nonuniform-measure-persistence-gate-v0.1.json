@@ -1,0 +1,1037 @@
+{
+  "artifact_id": "T490-s1-nonuniform-measure-persistence-gate-v0.1",
+  "verdict": "S1_NONUNIFORM_MEASURE_PERSISTENCE_GATE_BUILT_SCREEN_CONDITIONING_NOT_ENOUGH",
+  "sources": {
+    "open_problem": "open-problems/spacetime-as-finality-colimit.md",
+    "t223_results": "results/t54-ordinal-scaling-decisive-v0.1-results.md",
+    "t464_results": "results/T464-s1-added-assumption-admission-gate-v0.1-results.md"
+  },
+  "t223_census": [
+    {
+      "event_count": 6,
+      "total_cases": 720,
+      "parent_interval_pass_count": 156,
+      "stable_survivor_count": 26,
+      "uniform_survivor_mass": {
+        "fraction": "13/360",
+        "float": 0.03611111111111111
+      },
+      "parent_conditioned_survivor_mass": {
+        "fraction": "1/6",
+        "float": 0.16666666666666666
+      }
+    },
+    {
+      "event_count": 7,
+      "total_cases": 5040,
+      "parent_interval_pass_count": 561,
+      "stable_survivor_count": 174,
+      "uniform_survivor_mass": {
+        "fraction": "29/840",
+        "float": 0.034523809523809526
+      },
+      "parent_conditioned_survivor_mass": {
+        "fraction": "58/187",
+        "float": 0.31016042780748665
+      }
+    },
+    {
+      "event_count": 8,
+      "total_cases": 40320,
+      "parent_interval_pass_count": 2057,
+      "stable_survivor_count": 361,
+      "uniform_survivor_mass": {
+        "fraction": "361/40320",
+        "float": 0.008953373015873015
+      },
+      "parent_conditioned_survivor_mass": {
+        "fraction": "361/2057",
+        "float": 0.1754982984929509
+      }
+    }
+  ],
+  "uniform_survivor_mass_trajectory": [
+    {
+      "event_count": 6,
+      "value": {
+        "fraction": "13/360",
+        "float": 0.03611111111111111
+      }
+    },
+    {
+      "event_count": 7,
+      "value": {
+        "fraction": "29/840",
+        "float": 0.034523809523809526
+      }
+    },
+    {
+      "event_count": 8,
+      "value": {
+        "fraction": "361/40320",
+        "float": 0.008953373015873015
+      }
+    }
+  ],
+  "parent_interval_conditioned_survivor_mass_trajectory": [
+    {
+      "event_count": 6,
+      "value": {
+        "fraction": "1/6",
+        "float": 0.16666666666666666
+      }
+    },
+    {
+      "event_count": 7,
+      "value": {
+        "fraction": "58/187",
+        "float": 0.31016042780748665
+      }
+    },
+    {
+      "event_count": 8,
+      "value": {
+        "fraction": "361/2057",
+        "float": 0.1754982984929509
+      }
+    }
+  ],
+  "nonvanishing_review_floor": {
+    "fraction": "1/20",
+    "float": 0.05
+  },
+  "packets": [
+    {
+      "packet_id": "uniform_ordinal_baseline",
+      "description": "Rerun the exact 1+1 ordinal rank-permutation ensemble.",
+      "measure_kind": "uniform_ordinal",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": false,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": true,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "known_survivor_tail_indicator",
+      "description": "Put all mass on the already-known T223 survivors.",
+      "measure_kind": "tail_indicator",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": false,
+      "has_independent_generating_law": false,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": true,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "parent_interval_conditioned_measure",
+      "description": "Normalize only over the T159 parent-interval guardrail pass set and read its conditional survivor mass as a natural measure.",
+      "measure_kind": "guardrail_conditioned",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": false,
+      "has_independent_generating_law": false,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": true,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "full_screen_stack_conditioned_measure",
+      "description": "Condition on passing the current finite screen stack.",
+      "measure_kind": "guardrail_conditioned",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": false,
+      "has_independent_generating_law": false,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": true,
+      "conditions_on_guardrail_screen": true,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "screen_drift_after_t223",
+      "description": "Change T126/T156/T159 after seeing the T223 tail.",
+      "measure_kind": "selection_rule",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": false,
+      "has_independent_generating_law": false,
+      "finite_audit_fixed_screens": false,
+      "audited_sizes": [
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": true,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "single_size_n8_positive",
+      "description": "Declare a positive nonuniform weight only at n=8.",
+      "measure_kind": "nonuniform_measure",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": true,
+      "declared_survivor_masses": [
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/4",
+            "float": 0.25
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "unjustified_nonuniform_weight",
+      "description": "Declare weights with no finality-native or neighbor-theory law.",
+      "measure_kind": "nonuniform_measure",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": false,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/7",
+            "float": 0.14285714285714285
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "nonvanishing_but_no_lorentzian_targets",
+      "description": "A predeclared finite measure with no later causal/metric constraints.",
+      "measure_kind": "nonuniform_measure",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": false,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": false
+    },
+    {
+      "packet_id": "claim_promotion_shortcut",
+      "description": "Promote S1 because a measure gate admits a future target.",
+      "measure_kind": "nonuniform_measure",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "requests_s1_promotion": true,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": true
+    },
+    {
+      "packet_id": "external_publication_shortcut",
+      "description": "Require external publication before local finite audit.",
+      "measure_kind": "continuum_bridge",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": true,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": true
+    },
+    {
+      "packet_id": "synthetic_predeclared_measure_review_target",
+      "description": "Synthetic future target with a predeclared finality-native measure law, fixed screens, multi-size audit, nonvanishing finite survivor mass, and named later Lorentzian constraints.",
+      "measure_kind": "nonuniform_measure",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": true
+    },
+    {
+      "packet_id": "synthetic_continuum_bridge_weight_target",
+      "description": "Synthetic future target whose finite approximant weights are audited before any continuum or Lorentzian reading.",
+      "measure_kind": "continuum_bridge",
+      "declares_t223_context": true,
+      "predeclared_before_scoring": true,
+      "has_independent_generating_law": true,
+      "finite_audit_fixed_screens": true,
+      "audited_sizes": [
+        6,
+        7,
+        8
+      ],
+      "provides_nonvanishing_mass_claim": true,
+      "names_lorentzian_targets": true,
+      "uses_uniform_ordinal_baseline": false,
+      "conditions_on_survivor_success": false,
+      "conditions_on_guardrail_screen": false,
+      "changes_t126_t156_t159_screens": false,
+      "uses_single_size_positive": false,
+      "declared_survivor_masses": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "3/20",
+            "float": 0.15
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "7/50",
+            "float": 0.14
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/8",
+            "float": 0.125
+          }
+        }
+      ],
+      "requests_s1_promotion": false,
+      "requests_public_posture": false,
+      "requires_non_github_external_action": false,
+      "overclaims_spacetime_or_lorentzian_result": false,
+      "synthetic_control_only": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "uniform_ordinal_baseline",
+      "admitted": false,
+      "gate_label": "REJECTED_UNIFORM_BASELINE_CLOSED_BY_T223",
+      "classification": "uniform_t223_baseline_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "nonvanishing_mass_claim",
+        "nonvanishing_review_floor",
+        "later_lorentzian_constraints_named",
+        "not_uniform_t223_baseline"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "13/360",
+            "float": 0.03611111111111111
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "29/840",
+            "float": 0.034523809523809526
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "361/40320",
+            "float": 0.008953373015873015
+          }
+        }
+      ],
+      "notes": [
+        "Uniform finite ordinal enumeration is the T223 no-go baseline."
+      ]
+    },
+    {
+      "packet_id": "known_survivor_tail_indicator",
+      "admitted": false,
+      "gate_label": "REJECTED_TAIL_INDICATOR_OR_SUCCESS_CONDITIONING",
+      "classification": "tail_tuned_measure_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_before_scoring",
+        "independent_generating_law",
+        "later_lorentzian_constraints_named",
+        "not_conditioned_on_survivor_success"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        }
+      ],
+      "notes": [
+        "Conditioning on the known survivor tail is circular."
+      ]
+    },
+    {
+      "packet_id": "parent_interval_conditioned_measure",
+      "admitted": false,
+      "gate_label": "REJECTED_GUARDRAIL_SCREEN_CONDITIONING",
+      "classification": "screen_conditioned_measure_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_before_scoring",
+        "independent_generating_law",
+        "later_lorentzian_constraints_named",
+        "not_guardrail_screen_conditioned"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "58/187",
+            "float": 0.31016042780748665
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "361/2057",
+            "float": 0.1754982984929509
+          }
+        }
+      ],
+      "notes": [
+        "Guardrail conditioning is diagnostic normalization, not a natural measure."
+      ]
+    },
+    {
+      "packet_id": "full_screen_stack_conditioned_measure",
+      "admitted": false,
+      "gate_label": "REJECTED_TAIL_INDICATOR_OR_SUCCESS_CONDITIONING",
+      "classification": "tail_tuned_measure_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_before_scoring",
+        "independent_generating_law",
+        "later_lorentzian_constraints_named",
+        "not_conditioned_on_survivor_success",
+        "not_guardrail_screen_conditioned"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/1",
+            "float": 1.0
+          }
+        }
+      ],
+      "notes": [
+        "Conditioning on the known survivor tail is circular."
+      ]
+    },
+    {
+      "packet_id": "screen_drift_after_t223",
+      "admitted": false,
+      "gate_label": "REJECTED_SCREEN_DRIFT_AFTER_T223",
+      "classification": "screen_drift_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_before_scoring",
+        "independent_generating_law",
+        "finite_audit_fixed_screens",
+        "multi_size_or_limit_audit",
+        "nonvanishing_review_floor",
+        "later_lorentzian_constraints_named",
+        "no_screen_drift"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "361/40320",
+            "float": 0.008953373015873015
+          }
+        }
+      ],
+      "notes": [
+        "Changing screens after T223 is target drift."
+      ]
+    },
+    {
+      "packet_id": "single_size_n8_positive",
+      "admitted": false,
+      "gate_label": "REJECTED_SINGLE_SIZE_POSITIVE",
+      "classification": "single_size_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "multi_size_or_limit_audit"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/4",
+            "float": 0.25
+          }
+        }
+      ],
+      "notes": [
+        "T490 requires multi-size persistence or a declared limit target."
+      ]
+    },
+    {
+      "packet_id": "unjustified_nonuniform_weight",
+      "admitted": false,
+      "gate_label": "REJECTED_NO_INDEPENDENT_GENERATING_LAW",
+      "classification": "missing_measure_requirement_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "independent_generating_law"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/7",
+            "float": 0.14285714285714285
+          }
+        }
+      ],
+      "notes": [
+        "The packet lacks the T490 measure-persistence burden."
+      ]
+    },
+    {
+      "packet_id": "nonvanishing_but_no_lorentzian_targets",
+      "admitted": false,
+      "gate_label": "REJECTED_NO_LORENTZIAN_CONSTRAINT_TARGETS",
+      "classification": "missing_measure_requirement_rejection",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "later_lorentzian_constraints_named"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "notes": [
+        "The packet lacks the T490 measure-persistence burden."
+      ]
+    },
+    {
+      "packet_id": "claim_promotion_shortcut",
+      "admitted": false,
+      "gate_label": "BLOCKED_S1_PROMOTION_REQUEST",
+      "classification": "governance_boundary_block",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "no_s1_promotion_request"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "notes": [
+        "Measure admission is not S1 evidence or promotion."
+      ]
+    },
+    {
+      "packet_id": "external_publication_shortcut",
+      "admitted": false,
+      "gate_label": "BLOCKED_EXTERNAL_ACTION_REQUIRED",
+      "classification": "external_action_block",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "no_external_action_required"
+      ],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "notes": [
+        "External publication or outreach needs separate authorization."
+      ]
+    },
+    {
+      "packet_id": "synthetic_predeclared_measure_review_target",
+      "admitted": true,
+      "gate_label": "ADMITTED_MEASURE_PERSISTENCE_REVIEW_TARGET_NO_PROMOTION",
+      "classification": "future_measure_persistence_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "1/5",
+            "float": 0.2
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "3/16",
+            "float": 0.1875
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/6",
+            "float": 0.16666666666666666
+          }
+        }
+      ],
+      "notes": [
+        "Admission is review-only and counts as no S1 evidence."
+      ]
+    },
+    {
+      "packet_id": "synthetic_continuum_bridge_weight_target",
+      "admitted": true,
+      "gate_label": "ADMITTED_MEASURE_PERSISTENCE_REVIEW_TARGET_NO_PROMOTION",
+      "classification": "future_measure_persistence_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [],
+      "survivor_mass_trajectory": [
+        {
+          "event_count": 6,
+          "value": {
+            "fraction": "3/20",
+            "float": 0.15
+          }
+        },
+        {
+          "event_count": 7,
+          "value": {
+            "fraction": "7/50",
+            "float": 0.14
+          }
+        },
+        {
+          "event_count": 8,
+          "value": {
+            "fraction": "1/8",
+            "float": 0.125
+          }
+        }
+      ],
+      "notes": [
+        "Admission is review-only and counts as no S1 evidence."
+      ]
+    }
+  ],
+  "admitted_future_targets": [
+    "synthetic_predeclared_measure_review_target",
+    "synthetic_continuum_bridge_weight_target"
+  ],
+  "all_admitted_targets_are_synthetic_only": true,
+  "s1_promoted": false,
+  "t223_reversed": false,
+  "claim_ledger_update": "none",
+  "strongest_reading": "T490 makes T464's nonuniform-measure branch sharper. The T223 uniform baseline stays closed; putting mass on known survivors is tail tuning; normalizing over parent-interval or screen-stack passes is guardrail conditioning, not an independent natural measure; and a single-size positive is insufficient. Only a future packet with a predeclared independent generating law, fixed finite screens, multi-size or limit persistence, a nonvanishing-mass claim, and named later Lorentzian constraints is admitted for review. Admission is not S1 evidence.",
+  "future_packet_minimum": [
+    "inherit T223 finite no-go and T464 admission burden",
+    "predeclare the nonuniform measure, selection law, sprinkling law, or continuum bridge before scoring survivors",
+    "supply an independent finality-native or neighbor-theory generating law",
+    "keep T126/T156/T159/T223 finite screens fixed",
+    "audit at least two finite sizes or declare a real limit target",
+    "state a nonvanishing survivor-mass or concentration target before scoring",
+    "do not condition directly on survivor success or guardrail-screen pass predicates",
+    "name later causal, metric, covariance, locality, embedding, or Lorentzian constraints",
+    "make no S1 promotion, spacetime derivation, public-posture, or external-action shortcut"
+  ],
+  "not_earned": [
+    "S1 promotion",
+    "T223 reversal",
+    "spacetime derivation",
+    "manifoldlikeness result",
+    "dimension estimate",
+    "sprinkling law",
+    "Lorentzian metric",
+    "locality or covariance theorem",
+    "embedding theorem",
+    "continuum theorem",
+    "GR or QFT result",
+    "claim-ledger movement",
+    "ROADMAP movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "cross-repo truth movement"
+  ]
+}

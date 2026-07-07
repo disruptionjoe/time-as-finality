@@ -88,3 +88,26 @@ causal, metric, covariance, locality, or embedding constraints it must face.
 This does not promote S1, reverse T223, derive spacetime, prove
 manifoldlikeness, supply a dimension estimate, prove a sprinkling law, establish
 a continuum theorem, or move public posture.
+
+## Status Addendum (2026-07-07): nonuniform-measure persistence gate
+
+T490 sharpens T464's nonuniform-measure branch:
+`results/T490-s1-nonuniform-measure-persistence-gate-v0.1-results.md`; spec
+`tests/T490-s1-nonuniform-measure-persistence-gate.md`; model
+`models/s1_nonuniform_measure_persistence_gate.py`.
+
+Verdict:
+`S1_NONUNIFORM_MEASURE_PERSISTENCE_GATE_BUILT_SCREEN_CONDITIONING_NOT_ENOUGH`.
+The T223 uniform baseline stays closed; putting mass on the known survivors is
+tail tuning; normalizing over parent-interval or screen-stack passes is
+guardrail conditioning, not an independent natural measure; and a single-size
+positive is insufficient. Parent-conditioned survivor mass is recorded only as
+a diagnostic trajectory, not as S1 evidence.
+
+Only a future packet with a predeclared independent finality-native or
+neighbor-theory generating law, fixed T126/T156/T159/T223 screens, multi-size
+or limit persistence, a nonvanishing survivor-mass target, and named later
+causal, metric, covariance, locality, embedding, or Lorentzian constraints is
+admitted for review. This does not promote S1, reverse T223, derive spacetime,
+prove manifoldlikeness, supply a dimension estimate, prove a sprinkling law,
+establish a continuum theorem, move public posture, or move the claim ledger.

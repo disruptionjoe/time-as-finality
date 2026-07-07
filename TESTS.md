@@ -616,6 +616,7 @@ suites additionally use numpy. Evidence records:
 - [T487 Reachability Quotient Capability Spread Gate Results](results/T487-reachability-quotient-capability-spread-gate-v0.1-results.md)
 - [T488 Post-T487 Reachability Quotient Closure Router Results](results/T488-post-t487-reachability-quotient-closure-router-v0.1-results.md)
 - [T489 Post-T478 Valid Coarse-Graining Closure Router Results](results/T489-post-t478-valid-coarse-graining-closure-router-v0.1-results.md)
+- [T490 S1 Nonuniform Measure Persistence Gate Results](results/T490-s1-nonuniform-measure-persistence-gate-v0.1-results.md)
 
 ## How To Add A Test
 

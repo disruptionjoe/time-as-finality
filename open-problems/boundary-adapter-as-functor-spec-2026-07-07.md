@@ -195,6 +195,27 @@ from the TI side and grounded in TI's OWN forcing, not GU's:
   records-vs-redundancy legs. Adapter tally: **2 of 2 built and coherent, both physics/logic-forced;
   de-correlation pending.**
 
+## De-correlation, made concrete (2026-07-07) — the observer/system gauge
+
+"De-correlation" (the remaining requirement to close the two-adapter gate) was vague; the observer/system
+gauge makes it precise. To collapse the multiway to one thread an observer makes path-equivalences, so
+`(computation done by the system) + (computation done by the observer) = observed behavior`, and only the
+total is observable — **the split is a gauge freedom** (Gorard; see
+`explorations/physics-from-a-finite-observer-and-the-observer-system-gauge-2026-07-07.md`). That gauge is the
+**manufactured-convergence knob**: one could attribute the individual<->collective boundary to the system
+(GU's Krein structure) or to the observer (the capability reading) and *tune the split* to force `F` and `S`
+to agree.
+
+So **de-correlation = fixing the observer/system gauge INDEPENDENTLY on each adapter**: `F` fixes it via GU
+physics (T12' — a system-side forcing), `S` fixes it via TI source-logic (F2 — a different forcing). If the
+two independently-set splits *coincide*, the agreement is real; if they secretly share one tunable knob, the
+agreement is gauge (manufactured). The current build's honest status — "independent-forcing within one
+process/encoding" — is exactly the statement that the two splits are *forced* but not yet *demonstrably
+un-shared*; a genuinely de-correlated run (different models/framings, no shared brief, per the ai-epistemology
+de-correlation test) is what would show the knob is not shared. **The capability bound (`C(R)`, the complexity
+lower bounds) fences the gauge**: a finite observer cannot carry unbounded burden, so the split is free only
+up to capability — which is why the forcing on each side is finite and checkable rather than freely tunable.
+
 ## Guards
 
 - **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are

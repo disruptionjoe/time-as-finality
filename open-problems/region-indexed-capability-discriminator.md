@@ -432,3 +432,23 @@ import active-inference/free-energy machinery, does not prove a region-indexed
 discriminator success, and does not move claims, roadmap, public posture, hard
 policy, protected-license material, or cross-repo truth. Future external-facing
 use needs a separate primary-source literature absorber note.
+
+## Status Addendum (2026-07-07): N16 source status upgraded, absorber pressure preserved
+
+T494 adds the missing primary-source check for the N16 scope:
+`results/T494-levin-fields-primary-source-absorber-gate-v0.1-results.md`.
+The source-backed literature note is
+`literature/N17-levin-fields-primary-source-competency-absorber.md`.
+
+Verdict: `PRIMARY_SOURCE_COMPETENCY_ABSORBER_BUILT_NO_CLAIM_MOVEMENT`.
+Levin/Fields competency, TAME, cognitive light cone, scale-free biology,
+sorting-algorithm competency, and polycomputing sources support N16 as a real
+calibration neighbor for region-indexed capability. They also strengthen the
+absorber warning: future `C(R)` packets must show surplus over full
+competency-style task-success profiles, not merely over weak observed
+statistics.
+
+T494 does not import active-inference, free-energy, TAME, or polycomputing
+mechanisms into TaF; does not prove region-indexed discriminator success; and
+does not move claims, roadmap, README, North Star, public posture, hard policy,
+protected-license material, external publication, or cross-repo truth.

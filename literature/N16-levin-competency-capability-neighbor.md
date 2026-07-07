@@ -1,8 +1,22 @@
 # N16: Levin/Fields Competency as an External Calibration Neighbor (and Absorber Candidate) for C(R)
 
-Status: intake extract 2026-07-07; primary sources NOT yet checked. Pointer-grade.
+Status: intake extract 2026-07-07; source status upgraded by N17/T494 for
+bounded calibration/absorber use. Historical pointer-grade intake preserved
+below.
 
-## Source
+## Source Status
+
+This N16 file records the original Joe-digest intake. The bounded primary-source
+check now lives in
+`literature/N17-levin-fields-primary-source-competency-absorber.md` and is made
+executable by T494:
+`results/T494-levin-fields-primary-source-absorber-gate-v0.1-results.md`.
+
+The upgraded verdict is conservative: Levin/Fields competency is a serious
+calibration neighbor and absorber for `C(R)`, not evidence that TaF has novelty
+over competency.
+
+## Original Source Intake
 
 Michael Levin & Chris Fields, the competency / TAME framework (multi-scale competency architecture):
 TAME (arXiv:2201.10346), Fields & Levin competency work (Entropy 2022), the sorting-algorithm minimal
@@ -31,11 +45,15 @@ This cuts both ways and must be held both ways:
 
 - **As calibration:** an independent-process formalization of capability-by-intervention strengthens the
   case that C(R) is a natural object, not a TaF idiosyncrasy.
-- **As absorber:** if TaF's C(R) reduces without residue to Levin/Fields competency (or to its active-
-  inference substrate — see `temporal-issuance/absorbers/active-inference-free-energy.md`), then C(R)
+- **As absorber:** if TaF's C(R) reduces without residue to Levin/Fields competency or to an external
+  mechanism substrate, then C(R)
   is not novel and the capability-discriminator lane must show surplus over it. The named surplus
   candidate is the T395 result — a capability difference with *zero statistical trace* on the region —
   which competency-by-navigation does not obviously predict (navigation success is an observed statistic).
+
+Updated by T493/T494: the surviving surplus target is narrower. T407-style
+zero-trace capability spread remains review material over simple observed
+statistics only, not novelty over a full competency profile.
 
 ## Guards (standing)
 
@@ -44,8 +62,8 @@ This cuts both ways and must be held both ways:
   navigation of a structured space), never mechanism.
 - Maximal manufactured-convergence risk: Levin's framework is highly resonant with C(R), and it was
   surfaced by the same process that owns C(R). Resemblance is a warning, not evidence. The cure is the
-  absorber test above (clean reduction = kill; a T395-style zero-trace surplus = survives), not the
+  absorber test above (clean reduction = kill; T407-style zero-trace capability spread survives only as review material), not the
   strength of the analogy.
-- Single external program; primary sources unchecked. No claim movement; analogy/absorber-candidate
-  grade only. Related: the tri-repo capability object (`Coordination - Tri-Repo Division of Labor.md`)
-  and its guards.
+- N17/T494 check the core primary-source family for bounded calibration/absorber use only. No claim
+  movement; analogy/absorber-candidate grade only. Related: the tri-repo capability object
+  (`Coordination - Tri-Repo Division of Labor.md`) and its guards.

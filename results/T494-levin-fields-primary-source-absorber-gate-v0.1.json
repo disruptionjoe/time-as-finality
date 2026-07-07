@@ -1,0 +1,306 @@
+{
+  "artifact": "T494-levin-fields-primary-source-absorber-gate-v0.1",
+  "sources": {
+    "n16": "literature/N16-levin-competency-capability-neighbor.md",
+    "n17": "literature/N17-levin-fields-primary-source-competency-absorber.md",
+    "t493": "results/T493-levin-competency-cr-absorber-gate-v0.1-results.md",
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md"
+  },
+  "primary_sources": [
+    {
+      "source_id": "fields_levin_2022_competency",
+      "citation": "Chris Fields and Michael Levin, Competency in Navigating Arbitrary Spaces as an Invariant for Analyzing Cognition in Diverse Embodiments, Entropy 24(6):819, 2022.",
+      "url": "https://doi.org/10.3390/e24060819",
+      "primary_source_checked": true,
+      "supports_competency_navigation": true,
+      "supports_observer_access_boundary": false,
+      "supports_scale_or_substrate_agnosticism": true,
+      "supports_external_mechanism_neighbor": false,
+      "supports_polycomputing_observer_dependence": false,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports the core N16 calibration: competency is framed as problem-space navigation across embodiments, not as TaF record finality."
+    },
+    {
+      "source_id": "levin_2022_tame",
+      "citation": "Michael Levin, Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds, Frontiers in Systems Neuroscience 16:768201, 2022.",
+      "url": "https://doi.org/10.3389/fnsys.2022.768201",
+      "primary_source_checked": true,
+      "supports_competency_navigation": true,
+      "supports_observer_access_boundary": false,
+      "supports_scale_or_substrate_agnosticism": true,
+      "supports_external_mechanism_neighbor": false,
+      "supports_polycomputing_observer_dependence": false,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports TAME as a substrate-agnostic agency/competency frame, not as an imported TaF mechanism."
+    },
+    {
+      "source_id": "levin_2019_computational_boundary",
+      "citation": "Michael Levin, The Computational Boundary of a Self: Developmental Bioelectricity Drives Multicellularity and Scale-Free Cognition, Frontiers in Psychology 10:2688, 2019.",
+      "url": "https://doi.org/10.3389/fpsyg.2019.02688",
+      "primary_source_checked": true,
+      "supports_competency_navigation": false,
+      "supports_observer_access_boundary": true,
+      "supports_scale_or_substrate_agnosticism": true,
+      "supports_external_mechanism_neighbor": false,
+      "supports_polycomputing_observer_dependence": false,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports cognitive light cone language as a bounded measurement/action horizon, a calibration neighbor for region-indexed capability."
+    },
+    {
+      "source_id": "fields_levin_2020_scale_free_biology",
+      "citation": "Chris Fields and Michael Levin, Scale-Free Biology: Integrating Evolutionary and Developmental Thinking, BioEssays 42(8):e1900228, 2020.",
+      "url": "https://doi.org/10.1002/bies.201900228",
+      "primary_source_checked": true,
+      "supports_competency_navigation": false,
+      "supports_observer_access_boundary": false,
+      "supports_scale_or_substrate_agnosticism": true,
+      "supports_external_mechanism_neighbor": true,
+      "supports_polycomputing_observer_dependence": false,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports active-inference and predictive-coding as external scale-free biology neighbors; it does not license importing those mechanisms into TaF C(R)."
+    },
+    {
+      "source_id": "zhang_goldstein_levin_2023_sorting",
+      "citation": "Taining Zhang, Adam Goldstein, and Michael Levin, Classical Sorting Algorithms as a Model of Morphogenesis, arXiv:2401.05375, 2023.",
+      "url": "https://doi.org/10.48550/arXiv.2401.05375",
+      "primary_source_checked": true,
+      "supports_competency_navigation": true,
+      "supports_observer_access_boundary": false,
+      "supports_scale_or_substrate_agnosticism": true,
+      "supports_external_mechanism_neighbor": false,
+      "supports_polycomputing_observer_dependence": false,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports a minimal problem-space traversal calibration, not a biological or TaF claim."
+    },
+    {
+      "source_id": "bongard_levin_2022_polycomputing",
+      "citation": "Joshua Bongard and Michael Levin, There's Plenty of Room Right Here: Biological Systems as Evolved, Overloaded, Multi-scale Machines, arXiv:2212.10675, 2022.",
+      "url": "https://doi.org/10.48550/arXiv.2212.10675",
+      "primary_source_checked": true,
+      "supports_competency_navigation": false,
+      "supports_observer_access_boundary": false,
+      "supports_scale_or_substrate_agnosticism": false,
+      "supports_external_mechanism_neighbor": false,
+      "supports_polycomputing_observer_dependence": true,
+      "supports_taf_c_r_novelty": false,
+      "imports_taf_mechanism": false,
+      "note": "Supports observer-dependent computational modeling as a guardrail against objective-identity overreads."
+    }
+  ],
+  "source_audit": {
+    "source_count": 6,
+    "checked_ids": [
+      "fields_levin_2022_competency",
+      "levin_2022_tame",
+      "levin_2019_computational_boundary",
+      "fields_levin_2020_scale_free_biology",
+      "zhang_goldstein_levin_2023_sorting",
+      "bongard_levin_2022_polycomputing"
+    ],
+    "all_core_sources_checked": true,
+    "calibration_ids": [
+      "fields_levin_2022_competency",
+      "levin_2022_tame",
+      "levin_2019_computational_boundary",
+      "zhang_goldstein_levin_2023_sorting",
+      "bongard_levin_2022_polycomputing"
+    ],
+    "absorber_risk_ids": [
+      "fields_levin_2022_competency",
+      "levin_2022_tame",
+      "fields_levin_2020_scale_free_biology",
+      "zhang_goldstein_levin_2023_sorting",
+      "bongard_levin_2022_polycomputing"
+    ],
+    "supports_taf_c_r_novelty_ids": [],
+    "imports_taf_mechanism_ids": []
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "n16_primary_source_status_upgrade",
+      "admitted": true,
+      "label": "ADMITTED_PRIMARY_SOURCE_ABSORBER_WARNING_NO_CLAIM",
+      "action": "absorb_or_calibrate",
+      "reason": "Core N16 sources are checked for bounded use and strengthen the competency absorber warning.",
+      "candidate": {
+        "candidate_id": "n16_primary_source_status_upgrade",
+        "description": "Upgrade N16 from pointer-grade to primary-source checked for the bounded calibration/absorber scope.",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": true,
+        "treats_as_absorber_warning": true,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "competency_as_full_profile_absorber",
+      "admitted": true,
+      "label": "ADMITTED_PRIMARY_SOURCE_ABSORBER_WARNING_NO_CLAIM",
+      "action": "absorb_or_calibrate",
+      "reason": "Core N16 sources are checked for bounded use and strengthen the competency absorber warning.",
+      "candidate": {
+        "candidate_id": "competency_as_full_profile_absorber",
+        "description": "Treat full competency/problem-space success profile as an absorber warning for current C(R).",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": true,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "cognitive_light_cone_region_indexing_calibration",
+      "admitted": true,
+      "label": "ADMITTED_REGION_INDEXING_CALIBRATION_NO_CLAIM",
+      "action": "calibrate",
+      "reason": "Cognitive light cone sources back bounded measurement/action horizon language only.",
+      "candidate": {
+        "candidate_id": "cognitive_light_cone_region_indexing_calibration",
+        "description": "Use cognitive light cone as a calibration neighbor for bounded measurement/action horizons.",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": true,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": true,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "single_statistic_equals_full_c_r",
+      "admitted": false,
+      "label": "REJECTED_SINGLE_STATISTIC_FULL_PROFILE_COLLAPSE",
+      "action": "reject",
+      "reason": "T493 already shows a single observed statistic collides with the full C(R) profile.",
+      "candidate": {
+        "candidate_id": "single_statistic_equals_full_c_r",
+        "description": "Treat one observed navigation/readout statistic as equivalent to the full C(R) profile.",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": true,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "active_inference_mechanism_import",
+      "admitted": false,
+      "label": "REJECTED_MECHANISM_IMPORT",
+      "action": "reject",
+      "reason": "Scale-free biology and active-inference sources remain external neighbors, not TaF mechanisms.",
+      "candidate": {
+        "candidate_id": "active_inference_mechanism_import",
+        "description": "Import active-inference or free-energy mechanisms into TaF C(R).",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": true,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "novelty_over_competency_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_NOVELTY_OVER_COMPETENCY_SHORTCUT",
+      "action": "stop",
+      "reason": "The checked sources increase absorber pressure; they do not prove TaF novelty.",
+      "candidate": {
+        "candidate_id": "novelty_over_competency_shortcut",
+        "description": "Treat source resonance as evidence that TaF is novel over Levin/Fields competency.",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": true,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": false
+      }
+    },
+    {
+      "candidate_id": "polycomputing_objective_identity_shortcut",
+      "admitted": false,
+      "label": "REJECTED_POLYCOMPUTING_OBJECTIVE_IDENTITY",
+      "action": "reject",
+      "reason": "Polycomputing supports observer-dependent modeling, not objective identity with C(R).",
+      "candidate": {
+        "candidate_id": "polycomputing_objective_identity_shortcut",
+        "description": "Treat observer-dependent polycomputing as objective identity between Levin/Fields and TaF C(R).",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": false,
+        "claims_polycomputing_objective_identity": true
+      }
+    },
+    {
+      "candidate_id": "public_or_cross_repo_update_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_PUBLIC_OR_CROSS_REPO_UPDATE",
+      "action": "stop",
+      "reason": "Source checking inside TaF does not authorize public posture or cross-repo truth movement.",
+      "candidate": {
+        "candidate_id": "public_or_cross_repo_update_shortcut",
+        "description": "Use the source check to update public posture or cross-repo absorber truth.",
+        "uses_primary_source_check": true,
+        "treats_as_calibration_neighbor": false,
+        "treats_as_absorber_warning": false,
+        "uses_cognitive_light_cone_for_region_indexing": false,
+        "equates_single_statistic_with_full_c_r": false,
+        "imports_active_inference_or_free_energy": false,
+        "claims_novelty_over_competency": false,
+        "claims_public_or_cross_repo_update": true,
+        "claims_polycomputing_objective_identity": false
+      }
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "PRIMARY_SOURCE_COMPETENCY_ABSORBER_BUILT_NO_CLAIM_MOVEMENT",
+    "admitted_candidate_ids": [
+      "n16_primary_source_status_upgrade",
+      "competency_as_full_profile_absorber",
+      "cognitive_light_cone_region_indexing_calibration"
+    ],
+    "n16_upgraded_for_bounded_scope": true,
+    "calibration_only": true,
+    "claim_movement": false,
+    "public_or_cross_repo_movement": false
+  },
+  "reading": "The primary sources support N16 as a real calibration neighbor: they frame competency as scale-agnostic navigation or problem-solving across spaces, cognitive light cones as bounded measurement/action horizons, and polycomputing as observer-dependent computational modeling. The same sources strengthen the absorber warning. If C(R) is just the full intervention-measured task-success profile in a declared region/menu/task context, T493 already absorbs it as competency-style bookkeeping. The surplus target remains only T407-style spread over simpler observed statistics, not novelty over a full competency profile.",
+  "claim_ledger_update": "none; no claim promotion or demotion",
+  "recommended_next": [
+    "Cite N17, not the old pointer-grade N16 text, for Levin/Fields source status.",
+    "Keep using T493 as the executable C(R)-versus-competency absorber gate.",
+    "Do not reopen Direction A unless the packet clears T460 and survives the T493/T494 competency absorbers.",
+    "Do not import active-inference, free-energy, or polycomputing mechanism language into TaF without a separate gate."
+  ],
+  "honest_ceiling": "Primary-source absorber note and admission gate only. T494 checks the core N16 source family for calibration/absorber use, but does not prove novelty over Levin/Fields competency, does not import active inference or free-energy mechanisms into TaF, does not prove a region-indexed capability discriminator, and does not move claims, roadmap, README, North Star, public posture, hard policy, protected-license material, external publication, or cross-repo truth."
+}

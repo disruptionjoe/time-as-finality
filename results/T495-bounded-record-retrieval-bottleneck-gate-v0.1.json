@@ -1,0 +1,303 @@
+{
+  "artifact": "T495-bounded-record-retrieval-bottleneck-gate-v0.1",
+  "source_exploration": "explorations/finality-as-computation-state-vs-attention-2026-07-07.md",
+  "stream_space": {
+    "alphabet": [
+      0,
+      1
+    ],
+    "length": 5,
+    "stream_count": 32
+  },
+  "scenario_evaluations": [
+    {
+      "scenario_id": "full_history_arbitrary_retrieval_control",
+      "factorizes": true,
+      "label": "PRESERVATION_CONTROL_PASSED",
+      "projection_class_count": 32,
+      "capability_class_count": 32,
+      "max_capability_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "example_collision": null,
+      "interpretation": "Full retention is the positive preservation control."
+    },
+    {
+      "scenario_id": "last2_state_arbitrary_retrieval_bottleneck",
+      "factorizes": false,
+      "label": "BOTTLENECK_DETECTED_AS_EXPECTED",
+      "projection_class_count": 4,
+      "capability_class_count": 32,
+      "max_capability_spread": 8,
+      "non_singleton_fiber_count": 4,
+      "example_collision": {
+        "visible_state": [
+          "last_k",
+          5,
+          2,
+          0,
+          0
+        ],
+        "first_stream": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_capability": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "second_stream": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "second_capability": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      },
+      "interpretation": "The bounded state loses arbitrary retrieval capability: old bits vary across a fixed visible committed state."
+    },
+    {
+      "scenario_id": "last2_state_suffix_retrieval_control",
+      "factorizes": true,
+      "label": "PRESERVATION_CONTROL_PASSED",
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "example_collision": null,
+      "interpretation": "Bounded state is sufficient for the task it explicitly retains."
+    },
+    {
+      "scenario_id": "parity_state_parity_task_control",
+      "factorizes": true,
+      "label": "PRESERVATION_CONTROL_PASSED",
+      "projection_class_count": 2,
+      "capability_class_count": 2,
+      "max_capability_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "example_collision": null,
+      "interpretation": "A summary can preserve its native declared task."
+    },
+    {
+      "scenario_id": "parity_state_arbitrary_retrieval_bottleneck",
+      "factorizes": false,
+      "label": "BOTTLENECK_DETECTED_AS_EXPECTED",
+      "projection_class_count": 2,
+      "capability_class_count": 32,
+      "max_capability_spread": 16,
+      "non_singleton_fiber_count": 2,
+      "example_collision": {
+        "visible_state": [
+          "parity",
+          5,
+          0
+        ],
+        "first_stream": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_capability": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "second_stream": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "second_capability": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "interpretation": "Parity retention is not arbitrary record retrieval."
+    }
+  ],
+  "reading_evaluations": [
+    {
+      "reading_id": "retention_axis_capability_probe",
+      "admitted": true,
+      "label": "ADMITTED_RETENTION_AXIS_CAPABILITY_PROBE",
+      "action": "record",
+      "reason": "The bounded-state retrieval bottleneck is admitted as a finite review target for C(R)-style capability language.",
+      "reading": {
+        "reading_id": "retention_axis_capability_probe",
+        "description": "Treat full-history versus bounded committed-state access as a finite capability probe for arbitrary retrieval.",
+        "uses_retention_axis": true,
+        "claims_naive_attention_quantum_copyability": false,
+        "claims_physics_mechanism": false,
+        "claims_complexity_theorem": false,
+        "treats_as_capability_review_target": true,
+        "claims_public_or_cross_repo_update": false
+      }
+    },
+    {
+      "reading_id": "naive_attention_quantum_copyability_mapping",
+      "admitted": false,
+      "label": "REJECTED_NAIVE_COPYABILITY_MAPPING",
+      "action": "reject",
+      "reason": "The gate preserves retrieval for stored classical records; it does not map unknown quantum states to copyable records.",
+      "reading": {
+        "reading_id": "naive_attention_quantum_copyability_mapping",
+        "description": "Infer from full-history retrieval that the attention side maps directly to copyable quantum states.",
+        "uses_retention_axis": false,
+        "claims_naive_attention_quantum_copyability": true,
+        "claims_physics_mechanism": false,
+        "claims_complexity_theorem": false,
+        "treats_as_capability_review_target": false,
+        "claims_public_or_cross_repo_update": false
+      }
+    },
+    {
+      "reading_id": "physics_mechanism_import",
+      "admitted": false,
+      "label": "REJECTED_PHYSICS_MECHANISM_IMPORT",
+      "action": "reject",
+      "reason": "The finite retention-axis fixture is not a decoherence, Standard Model, or physical mechanism result.",
+      "reading": {
+        "reading_id": "physics_mechanism_import",
+        "description": "Treat the finite gate as a decoherence or Standard Model mechanism.",
+        "uses_retention_axis": true,
+        "claims_naive_attention_quantum_copyability": false,
+        "claims_physics_mechanism": true,
+        "claims_complexity_theorem": false,
+        "treats_as_capability_review_target": false,
+        "claims_public_or_cross_repo_update": false
+      }
+    },
+    {
+      "reading_id": "complexity_theorem_shortcut",
+      "admitted": false,
+      "label": "REJECTED_COMPLEXITY_THEOREM_SHORTCUT",
+      "action": "reject",
+      "reason": "Finite enumeration can motivate a lower-bound target, but it is not itself an SSM/Transformer theorem.",
+      "reading": {
+        "reading_id": "complexity_theorem_shortcut",
+        "description": "Treat this finite enumeration as if it proved an SSM/Transformer complexity lower bound.",
+        "uses_retention_axis": true,
+        "claims_naive_attention_quantum_copyability": false,
+        "claims_physics_mechanism": false,
+        "claims_complexity_theorem": true,
+        "treats_as_capability_review_target": false,
+        "claims_public_or_cross_repo_update": false
+      }
+    },
+    {
+      "reading_id": "public_or_cross_repo_update_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_PUBLIC_OR_CROSS_REPO_UPDATE",
+      "action": "stop",
+      "reason": "A repo-local finite screen does not authorize public posture or cross-repo truth movement.",
+      "reading": {
+        "reading_id": "public_or_cross_repo_update_shortcut",
+        "description": "Use the computation analogy to move public posture or cross-repo truth.",
+        "uses_retention_axis": false,
+        "claims_naive_attention_quantum_copyability": false,
+        "claims_physics_mechanism": false,
+        "claims_complexity_theorem": false,
+        "treats_as_capability_review_target": false,
+        "claims_public_or_cross_repo_update": true
+      }
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "BOUNDED_RETRIEVAL_BOTTLENECK_BUILT_RETENTION_AXIS_ONLY",
+    "all_scenarios_matched_expected": true,
+    "admitted_reading_ids": [
+      "retention_axis_capability_probe"
+    ],
+    "retention_axis_only": true,
+    "claim_movement": false,
+    "public_or_cross_repo_movement": false
+  },
+  "strongest_result": "In the finite five-bit stream space, full-history visibility factors arbitrary indexed retrieval, but last-2 and parity committed states have non-singleton arbitrary-retrieval spreads. The same bounded states pass native positive controls for retained suffix or parity queries. The useful computation analogy is therefore a typed retention bottleneck, not the failed copyability mapping.",
+  "recommended_next": [
+    "If this lane continues, cite real SSM/attention lower-bound sources before importing any theorem language.",
+    "Use T495 as a finite C(R)-style review target for bounded-record retrieval, not as physics support.",
+    "Keep the naive attention/quantum copyability mapping demoted unless a separate typed packet repairs it."
+  ],
+  "honest_ceiling": "Finite capability-audit toy only. T495 supports the information-retention axis named by the computation exploration: full-history access determines arbitrary retrieval while bounded committed summaries do not. It does not prove a quantum, Standard Model, decoherence, or complexity-theorem claim; does not assert that physics is literally a Transformer or SSM; and does not move claim ledger, roadmap, README, North Star, public posture, hard policy, external publication, or cross-repo truth."
+}

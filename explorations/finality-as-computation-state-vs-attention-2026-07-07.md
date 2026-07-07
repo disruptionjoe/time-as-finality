@@ -83,6 +83,20 @@ be subject to an analogous retrieval bound (what a bounded classical record can 
 from the pre-collapse process). That is a capability statement (C(R)-typed), not a picture, and it is
 where T392/T395 machinery could bite.
 
+## Executable check: T495
+
+T495 converts the surviving part of the analogy into a finite C(R)-style
+capability screen: full-history visibility factors arbitrary indexed retrieval
+over a five-bit stream, while last-2 and parity committed states have
+non-singleton arbitrary-retrieval spreads. The same bounded states pass their
+native retained-suffix or parity positive controls.
+
+Verdict: `BOUNDED_RETRIEVAL_BOTTLENECK_BUILT_RETENTION_AXIS_ONLY`. This supports
+only the retention-axis review target. It does not revive the naive
+attention/quantum copyability mapping, does not prove a physics mechanism, and
+does not import SSM/Transformer lower-bound theorem language without a separate
+source-checked packet.
+
 ## Honest grades and guards
 
 - **Analogy grade**, shape-level. Coupling-flow is not record-flow; projection is not finality; TaF has

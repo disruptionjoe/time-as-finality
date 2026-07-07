@@ -1,0 +1,363 @@
+{
+  "artifact_id": "T482-internal-scale-generator-invariance-probe-v0.1",
+  "objective": "Make T481's synthetic internal-scale review target concrete by testing a predeclared D1-support-gradient generator for comparison-domain discipline, controls, and relabel invariance.",
+  "local_anchor_checks": {
+    "t481_gate_passed": true,
+    "t481_synthetic_review_target_admitted": true,
+    "t481_external_bookkeeping_still_admitted": true,
+    "t481_no_internal_scale_structure_earned": true,
+    "t481_no_clock_or_duration_earned": true,
+    "t481_future_packet_requires_relabel_invariance": true
+  },
+  "support_gradient_probe": {
+    "generator_rule": "support_depth = accessible_support + holder_redundancy + branch_support + reversal_cost; bands are low<=4, middle<=8, high>8",
+    "comparison_domain": "declared T24 observer sites and transport edges, with no hidden calendar, clock, RG scale, or finality-status field",
+    "stratified_assignments": [
+      {
+        "observer_id": "civilization",
+        "profile_tuple": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "support_depth": 0,
+        "support_band": "low_support"
+      },
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "support_depth": 6,
+        "support_band": "middle_support"
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "support_depth": 4,
+        "support_band": "low_support"
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "support_depth": 0,
+        "support_band": "low_support"
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "support_depth": 11,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "science",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "support_depth": 6,
+        "support_band": "middle_support"
+      }
+    ],
+    "uniform_assignments": [
+      {
+        "observer_id": "civilization",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      },
+      {
+        "observer_id": "science",
+        "profile_tuple": [
+          4,
+          4,
+          2,
+          3
+        ],
+        "support_depth": 13,
+        "support_band": "high_support"
+      }
+    ],
+    "class_counts": {
+      "high_support": 1,
+      "low_support": 3,
+      "middle_support": 2
+    },
+    "uniform_class_counts": {
+      "high_support": 6
+    },
+    "relabel_signature": [
+      [
+        "high_support",
+        11
+      ],
+      [
+        "low_support",
+        0
+      ],
+      [
+        "low_support",
+        0
+      ],
+      [
+        "low_support",
+        4
+      ],
+      [
+        "middle_support",
+        6
+      ],
+      [
+        "middle_support",
+        6
+      ]
+    ],
+    "controls": {
+      "stratified_packet_nontrivial": true,
+      "uniform_packet_collapses_to_single_band": true,
+      "support_gradient_relabel_invariant": true,
+      "comparison_domain_predeclared_as_transport_edges": true,
+      "generator_factors_through_d1_profile": true,
+      "uses_clock_duration_or_finality_status": false,
+      "imports_rg_or_conformal_mechanism": false
+    },
+    "reading": "The finite support-gradient generator is stable under observer-label relabeling and produces a nontrivial stratified fixture, but it is not independent of D1 because every band is computed directly from the D1 profile tuple."
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "d1_support_gradient_review_packet",
+      "role": "positive_review_control",
+      "generator_rule": "sum D1 tuple components into support_depth and assign predeclared bands low<=4, middle<=8, high>8",
+      "comparison_domain": "T24 observer sites and declared T38/T480 transport edges over field-valued D1 profiles",
+      "local_taf_anchor": "T24/T38/T480/T481",
+      "factors_through_d1_profile": true,
+      "admitted": true,
+      "decision": "admit_review_packet_no_scale_structure",
+      "route_label": "D1_SUPPORT_GRADIENT_REVIEW_ADMITTED_BOOKKEEPING_ONLY",
+      "blockers": []
+    },
+    {
+      "candidate_id": "label_word_internal_scale",
+      "role": "hostile_control",
+      "generator_rule": "call each observer label a scale",
+      "comparison_domain": "observer labels",
+      "local_taf_anchor": "T481 shortcut",
+      "factors_through_d1_profile": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "generator_not_predeclared",
+        "comparison_domain_not_predeclared",
+        "positive_negative_controls_missing",
+        "relabel_invariance_check_missing",
+        "label_word_without_generator"
+      ]
+    },
+    {
+      "candidate_id": "posthoc_support_thresholds",
+      "role": "hostile_control",
+      "generator_rule": "choose support-depth thresholds after seeing the split",
+      "comparison_domain": "selected after separator construction",
+      "local_taf_anchor": "T24/T481 overread",
+      "factors_through_d1_profile": true,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "generator_not_predeclared",
+        "comparison_domain_not_predeclared",
+        "posthoc_thresholds"
+      ]
+    },
+    {
+      "candidate_id": "observer_id_rank_generator",
+      "role": "hostile_control",
+      "generator_rule": "rank observer identifiers alphabetically",
+      "comparison_domain": "observer-id order",
+      "local_taf_anchor": "T24 labels only",
+      "factors_through_d1_profile": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "observer_label_order_not_relabel_invariant"
+      ]
+    },
+    {
+      "candidate_id": "hidden_time_step_generator",
+      "role": "hostile_control",
+      "generator_rule": "derive scale from hidden time_step or calendar order",
+      "comparison_domain": "hidden temporal order",
+      "local_taf_anchor": "T24 metadata overread",
+      "factors_through_d1_profile": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "positive_negative_controls_missing",
+        "hidden_calendar_or_time_order",
+        "clock_duration_or_arrow_overread"
+      ]
+    },
+    {
+      "candidate_id": "finality_by_support_band",
+      "role": "hostile_control",
+      "generator_rule": "mark high support-depth sites final",
+      "comparison_domain": "support-depth bands",
+      "local_taf_anchor": "T24/D1 overread",
+      "factors_through_d1_profile": true,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "record_finality_change_overread"
+      ]
+    },
+    {
+      "candidate_id": "rg_fixed_point_scale_generator",
+      "role": "hostile_control",
+      "generator_rule": "import RG or conformal fixed point as scale source",
+      "comparison_domain": "external RG scale classes",
+      "local_taf_anchor": "external RG/conformal mechanism",
+      "factors_through_d1_profile": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "positive_negative_controls_missing",
+        "relabel_invariance_check_missing",
+        "rg_or_conformal_mechanism_imported",
+        "scale_genesis_or_physics_claim_overread",
+        "no_local_taf_anchor"
+      ]
+    },
+    {
+      "candidate_id": "promotion_shortcut_generator",
+      "role": "hostile_control",
+      "generator_rule": "declare support bands to be internal scale structure",
+      "comparison_domain": "T24 sites",
+      "local_taf_anchor": "T24/T38/T481 promotion shortcut",
+      "factors_through_d1_profile": true,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INTERNAL_SCALE_GENERATOR_PACKET_BLOCKED",
+      "blockers": [
+        "scale_genesis_or_physics_claim_overread",
+        "claim_or_public_posture_promotion_shortcut"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "d1_support_gradient_review_packet"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "D1_SUPPORT_GRADIENT_PROBE_BUILT_BOOKKEEPING_ONLY_NO_SCALE_STRUCTURE",
+    "gate_passed": true,
+    "support_gradient_review_packet_admitted": true,
+    "hostile_controls_blocked": true,
+    "factors_through_existing_d1_profile": true,
+    "internal_scale_structure_earned": false,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "record_clock_or_duration_earned": false,
+    "record_finality_change_earned": false,
+    "reading": "T482 makes T481's review target concrete with a D1-support gradient generator. The packet is predeclared, uses the T24 field-valued D1 profile and T38/T480 comparison edges, passes positive/null controls, and is invariant under observer-label relabeling. It is still only D1-support bookkeeping because the bands factor entirely through the existing D1 profile tuple; no independent internal scale structure is earned."
+  },
+  "future_packet_minimum": [
+    "keep support-gradient packets labeled as D1 bookkeeping unless an independent generator is supplied",
+    "predeclare bands, comparison domain, controls, and relabel-invariance checks before witness construction",
+    "include a null control where uniform D1 support collapses to one band",
+    "include hostile controls for label order, posthoc thresholds, hidden time, finality changes, RG imports, and promotion shortcuts",
+    "block clock, duration, temporal-arrow, finality, scale-genesis, physics, and claim movement unless separately earned"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

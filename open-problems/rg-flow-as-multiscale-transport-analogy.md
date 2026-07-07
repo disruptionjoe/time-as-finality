@@ -145,3 +145,35 @@ posture, and claim movement blocked unless separately earned. No D1 promotion,
 RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
 claim-ledger movement, roadmap movement, North Star movement, public-posture
 movement, or cross-repo truth movement is earned.
+
+## T482 addendum: internal scale-generator invariance probe
+
+T482 makes T481's synthetic review target concrete:
+`results/T482-internal-scale-generator-invariance-probe-v0.1-results.md`;
+spec `tests/T482-internal-scale-generator-invariance-probe.md`; model
+`models/internal_scale_generator_invariance_probe.py`.
+
+Verdict:
+
+```text
+D1_SUPPORT_GRADIENT_PROBE_BUILT_BOOKKEEPING_ONLY_NO_SCALE_STRUCTURE
+```
+
+The probe predeclares a finite D1-support-gradient generator:
+`support_depth = accessible_support + holder_redundancy + branch_support +
+reversal_cost`, with fixed low/middle/high bands. The stratified T24 packet
+produces nontrivial support bands, the uniform T24 null control collapses to
+one band, and the generated band multiset is invariant under observer-label
+relabeling.
+
+This admits the packet only as review-grade D1 bookkeeping. The scale bands
+factor entirely through the existing D1 profile tuple, so T482 earns no
+independent internal scale structure. Label-only, posthoc-threshold,
+observer-label-order, hidden-time, duration/arrow, finality, RG/conformal,
+physics, and promotion shortcuts remain blocked. Future packets must either
+keep support-gradient bands labeled as D1 bookkeeping or supply an independent
+TaF-native generator that does not merely factor through the D1 tuple. No D1
+promotion, internal scale-structure theorem, RG/TaF equivalence theorem,
+scale-genesis theorem, physics claim, claim-ledger movement, roadmap movement,
+North Star movement, public-posture movement, or cross-repo truth movement is
+earned.

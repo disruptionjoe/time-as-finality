@@ -229,3 +229,37 @@ coarse-graining criterion. No D1/T10/T29 promotion, Observer Theory equivalence
 theorem, global valid-coarse-graining criterion, physics, consciousness,
 claim-ledger, roadmap, README, public-posture, hard-policy, protected-license,
 or cross-repo truth movement is earned.
+
+## T489 addendum: post-T478 closure router
+
+T489 closes the current T467-T478 valid-coarse-graining thread against minor
+restarts:
+`results/T489-post-t478-valid-coarse-graining-closure-router-v0.1-results.md`;
+spec `tests/T489-post-t478-valid-coarse-graining-closure-router.md`; model
+`models/post_t478_valid_coarse_graining_closure_router.py`.
+
+Verdict:
+
+```text
+POST_T478_VALID_COARSE_GRAINING_THREAD_CLOSED_NEW_EVIDENCE_ONLY
+```
+
+T478 remains a finite observer-budget lattice intake guardrail only. Its
+budget-indexed admissions are review targets, not a global
+valid-coarse-graining criterion, not an Observer Theory equivalence theorem,
+not D1/T10/T29 promotion, and not physics, consciousness, claim, or
+public-posture evidence. T489 rejects minor restarts based on T467 binary
+control reuse, asserted task labels, budget-lattice/global-criterion upgrades,
+boundary-pair global overreads, lattice path-independence promotion shortcuts,
+cheap arithmetic/xor partitions, microstate identity, label restatement,
+observer-creates-truth readings, Observer Theory identity, and
+claim/public-posture shortcuts.
+
+Future packets may reopen the surface only as review targets if they bring a
+newly declared certified-record capability object with hostile controls, a
+domain-native cost/certifiability theorem, or a direct Observer Theory/TaF
+equivalence theorem with explicit limits and controls. No D1/T10/T29 promotion,
+Observer Theory equivalence theorem, global valid-coarse-graining criterion,
+cost/certifiability theorem, physics or consciousness claim, observer-creates-
+truth claim, claim-ledger, roadmap, README, North Star, public-posture,
+hard-policy, protected-license, or cross-repo truth movement is earned.

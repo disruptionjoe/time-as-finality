@@ -172,6 +172,29 @@ requirement is now precise: (i) a dimension-carrying capability encoding to make
 (ii) a SECOND, INDEPENDENT adapter (e.g. via TI issuance or independent physics). No claim moved; no identity
 asserted.
 
+## Second INDEPENDENT adapter (2026-07-07) — the TI side, `models/boundary_adapter_second_ti.py`, exit 0
+
+The two-adapter gate requires a SECOND adapter that is INDEPENDENT of the first (not F and its inverse). Built
+from the TI side and grounded in TI's OWN forcing, not GU's:
+
+- **The independent forcing:** TI's E002 bridge toy model, fixture **F2 (Same Records, Different Hidden
+  Issuance)**, shows a source difference in a hidden constraint `h not in A_i` leaves ZERO trace on the
+  individual observer's records — TI's own zero-trace / T395 signature, reached through source-realization
+  logic, NOT Krein positivity. So `S : TIsrc -> D1Cat` forces `hidden.accessible = 0` via F2, exactly as
+  `F` forces `mirror.accessible = 0` via T12'. **Two different primitives, same signature.**
+- **Checked:** `S` is a functor into the same proven `D1Cat`; it order-reflects the accessible-vs-hidden FACE
+  (forced by F2 — a TI-WRONG `S` with `hidden.accessible=1`, i.e. F2 refuted, FAILS it); `F` and `S` COHERE
+  (land on the same D1 objects under the iso `physical<->accessible`, `mirror<->hidden`); and the agreement is
+  FALSIFIABLE (the TI-wrong `S` disagrees with `F`), so it is not vacuous.
+- **HONEST CAVEAT — gate ADVANCED, NOT CLOSED.** Both adapters were built by ONE process in ONE encoding
+  (the D1 profile convention, the shared poset shape). Per the registry's de-correlation test, TRUE
+  independence needs genuinely de-correlated processes. So this is **independent-forcing within one program** —
+  stronger than one adapter, weaker than external independent arrival. **The identity "GU boundary = TaF
+  capability = TI source" is NOT licensed.** Remaining to close: (i) the dimension-carrying encoding (build 2's
+  fix), (ii) genuine DE-CORRELATION of the two adapters, (iii) the still-uncomputed mu<->boundary and
+  records-vs-redundancy legs. Adapter tally: **2 of 2 built and coherent, both physics/logic-forced;
+  de-correlation pending.**
+
 ## Guards
 
 - **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are

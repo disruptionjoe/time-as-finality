@@ -73,3 +73,24 @@ Give the typed subobject an abstract definition that is not merely a checklist
 over the current finite witnesses, and compare it against the T19
 accessible-witness gap to test whether both are instances of one typed gap
 category.
+
+## Status Addendum (2026-07-07): typed-gap bridge
+
+T492 answers the contribution-needed item conservatively:
+`results/T492-typed-gap-category-bridge-v0.1-results.md`; spec
+`tests/T492-typed-gap-category-bridge.md`; model
+`models/typed_gap_category_bridge.py`.
+
+Verdict:
+`COMMON_TYPED_GAP_SCHEMA_SUPPORTED_OBJECT_IDENTITY_BLOCKED`. T113 order-pair
+phantom gaps and T92 unary proposition gaps share a finite typed-gap schema:
+patches, ambient object `A`, local/auditable subobject `F`, gap object `G`, a
+typed admissibility predicate `tau`, and restriction closure. They are not the
+same section object, classifier, or theorem target. Raw `H0(G)` remains blocked
+by T113, while T92 continues to block identity with T58 order-pair gaps.
+
+This sharpens the abstract definition into a schema, not a category theorem.
+Future stronger work would need explicit morphisms between typed gap systems and
+a naturality/equivalence theorem across at least one additional carrier kind.
+No claim-ledger, roadmap, public-posture, physical-torsion, cohomology, GU,
+consciousness, complexity-class, or cross-repo truth movement is earned.

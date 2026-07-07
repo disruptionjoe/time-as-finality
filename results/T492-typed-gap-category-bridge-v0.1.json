@@ -1,0 +1,190 @@
+{
+  "artifact": "T492-typed-gap-category-bridge-v0.1",
+  "sources": {
+    "t92": "results/accessible-witness-gap-restriction-v0.1-results.md",
+    "t113": "results/gap-presheaf-classification-v0.1-results.md",
+    "t89": "tests/T89-accessible-witness-gap-lemma.md",
+    "gap_presheaf_problem": "open-problems/gap-presheaf-classification.md",
+    "accessible_witness_problem": "open-problems/accessible-witness-gap-restriction-theorem.md"
+  },
+  "t113_summary": {
+    "instance_id": "t113_order_pair_phantom_gap",
+    "source": "results/gap-presheaf-classification-v0.1-results.md",
+    "carrier_kind": "nonreflexive_order_pair_sections",
+    "target_kind": "phantom_incomparability_witnesses",
+    "typed_rule": "endpoint-accessible + canonical ambient completion + F(U) subset A(U) + local incomparability",
+    "closure_status": "FRP restriction closure preserved",
+    "raw_gap_status": "raw H0(G) refuted as classifier",
+    "positive_count": 10,
+    "control_count": 10,
+    "strongest_reading": "A typed subobject of H0(G), not raw H0(G), classifies phantom incomparability in the tested finite witness family.",
+    "blocked_reading": "Raw H0(G), physical torsion, GU validation, and general cohomology/sheafification readings remain blocked."
+  },
+  "t92_summary": {
+    "instance_id": "t92_unary_accessible_witness_gap",
+    "source": "results/accessible-witness-gap-restriction-v0.1-results.md",
+    "carrier_kind": "unary_typed_proposition_sections",
+    "target_kind": "accessible_witness_unauditability_gaps",
+    "typed_rule": "ambient restriction + audit monotonicity + stable proposition typing",
+    "closure_status": "supported_with_explicit_boundaries",
+    "raw_gap_status": "not a raw T58 order-pair object; T92 uses typed proposition gaps",
+    "positive_count": 7,
+    "control_count": 2,
+    "strongest_reading": "For finite typed proposition-domain accessible-witness systems, G(U)=A(U)-F(U) restricts contravariantly when ambient truth restricts, local auditability is monotone under patch inclusion, and proposition types are not relabeled under restriction. The T19 unary gap and a non-chain joint-witness gap both satisfy these conditions.",
+    "blocked_reading": "T92 does not identify T19 proposition gaps with T58 order-pair gaps and does not prove a consciousness or complexity-class result."
+  },
+  "abstract_schema": [
+    "finite patch family with restriction maps",
+    "ambient object A(U) of content fixed by the larger system",
+    "local or auditable subobject F(U) with a declared inclusion into A(U)",
+    "gap object G(U)=A(U)-F(U) or its typed subobject",
+    "typed admissibility predicate tau selecting meaningful gap sections",
+    "restriction closure rho(tau(G(U))) subset tau(G(V)) for V subset U",
+    "domain-specific target interpretation kept outside the schema"
+  ],
+  "candidate_evaluations": [
+    {
+      "candidate_id": "common_minimal_typed_gap_schema",
+      "admitted": true,
+      "label": "ADMITTED_COMMON_TYPED_GAP_SCHEMA_NO_IDENTITY",
+      "reason": "Both branches instantiate the same minimal finite schema while keeping carrier kind, target kind, and typing predicates distinct.",
+      "candidate": {
+        "candidate_id": "common_minimal_typed_gap_schema",
+        "description": "T113 and T92 share a finite typed-gap schema: patches, ambient object A, local/auditable subobject F, gap G=A-F, typed admissibility predicate, and restriction closure.",
+        "requires_same_carrier": false,
+        "requires_raw_h0_classifier": false,
+        "requires_common_schema_only": true,
+        "requires_t113_typed_exactness": true,
+        "requires_t92_restriction_closure": true,
+        "requires_controls_rejected": true,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": false
+      }
+    },
+    {
+      "candidate_id": "raw_h0_gap_identity",
+      "admitted": false,
+      "label": "REJECTED_RAW_H0_REFUTED_BY_T113",
+      "reason": "raw_h0_refuted_by_t113",
+      "candidate": {
+        "candidate_id": "raw_h0_gap_identity",
+        "description": "Raw H0(G) is the common classifier for both branches.",
+        "requires_same_carrier": false,
+        "requires_raw_h0_classifier": true,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": false,
+        "requires_t92_restriction_closure": true,
+        "requires_controls_rejected": true,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": false
+      }
+    },
+    {
+      "candidate_id": "same_section_object_identity",
+      "admitted": false,
+      "label": "REJECTED_CARRIER_MISMATCH",
+      "reason": "carrier_mismatch",
+      "candidate": {
+        "candidate_id": "same_section_object_identity",
+        "description": "T113 and T92 use the same section object.",
+        "requires_same_carrier": true,
+        "requires_raw_h0_classifier": false,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": true,
+        "requires_t92_restriction_closure": true,
+        "requires_controls_rejected": true,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": false
+      }
+    },
+    {
+      "candidate_id": "cohomology_or_physical_torsion_promotion",
+      "admitted": false,
+      "label": "REJECTED_COHOMOLOGY_TORSION_PROMOTION_BLOCKED",
+      "reason": "cohomology_torsion_promotion_blocked",
+      "candidate": {
+        "candidate_id": "cohomology_or_physical_torsion_promotion",
+        "description": "The bridge promotes T92/T113 into cohomology or physical torsion language.",
+        "requires_same_carrier": false,
+        "requires_raw_h0_classifier": false,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": true,
+        "requires_t92_restriction_closure": true,
+        "requires_controls_rejected": true,
+        "promotes_cohomology_or_torsion": true,
+        "promotes_consciousness_or_complexity": false
+      }
+    },
+    {
+      "candidate_id": "consciousness_or_complexity_promotion",
+      "admitted": false,
+      "label": "REJECTED_CONSCIOUSNESS_COMPLEXITY_PROMOTION_BLOCKED",
+      "reason": "consciousness_complexity_promotion_blocked",
+      "candidate": {
+        "candidate_id": "consciousness_or_complexity_promotion",
+        "description": "The bridge promotes T92 into a consciousness or complexity-class claim.",
+        "requires_same_carrier": false,
+        "requires_raw_h0_classifier": false,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": false,
+        "requires_t92_restriction_closure": true,
+        "requires_controls_rejected": true,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": true
+      }
+    },
+    {
+      "candidate_id": "semantic_relabeling_as_bridge",
+      "admitted": false,
+      "label": "REJECTED_CARRIER_MISMATCH",
+      "reason": "carrier_mismatch",
+      "candidate": {
+        "candidate_id": "semantic_relabeling_as_bridge",
+        "description": "Semantic relabeling may identify proposition gaps with observer-state gaps.",
+        "requires_same_carrier": true,
+        "requires_raw_h0_classifier": false,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": false,
+        "requires_t92_restriction_closure": false,
+        "requires_controls_rejected": false,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": false
+      }
+    },
+    {
+      "candidate_id": "local_reversal_as_gap",
+      "admitted": false,
+      "label": "REJECTED_RAW_H0_REFUTED_BY_T113",
+      "reason": "raw_h0_refuted_by_t113",
+      "candidate": {
+        "candidate_id": "local_reversal_as_gap",
+        "description": "Local reversal/conflict controls may count as typed gaps.",
+        "requires_same_carrier": false,
+        "requires_raw_h0_classifier": true,
+        "requires_common_schema_only": false,
+        "requires_t113_typed_exactness": false,
+        "requires_t92_restriction_closure": false,
+        "requires_controls_rejected": false,
+        "promotes_cohomology_or_torsion": false,
+        "promotes_consciousness_or_complexity": false
+      }
+    }
+  ],
+  "verdict": "COMMON_TYPED_GAP_SCHEMA_SUPPORTED_OBJECT_IDENTITY_BLOCKED",
+  "reading": "T113 and T92 share a common finite typed-gap schema, but not the same section object, classifier, or theorem target. The useful abstraction is a typed gap-system interface: A, F, G, restriction, and an admissibility predicate tau. The target interpretation stays domain-specific.",
+  "no_identity_reasons": [
+    "T113 carriers are nonreflexive ordered event-pair sections; T92 carriers are unary typed proposition sections.",
+    "T113 classifies phantom incomparability witnesses; T92 classifies accessible-witness unauditability gaps.",
+    "T113's typing rule is endpoint/canonical/local-incomparability; T92's typing rule is ambient-restriction/audit-monotonicity/stable-proposition-typing.",
+    "T113 refutes raw H0(G) as too broad, so a raw-gap identity cannot be the bridge.",
+    "T92 explicitly blocks identifying T19 proposition gaps with T58 order-pair gaps."
+  ],
+  "claim_update": "none; C1/gap language may be sharpened only as a finite typed-gap schema shared across distinct section objects",
+  "open_blocker": "T492 does not prove a general category theorem. A future result would need explicit morphisms between typed gap systems and a natural transformation or equivalence theorem, not just two instances of a schema.",
+  "recommended_next": [
+    "Use the typed-gap schema as a checklist for future T19/T58 bridge attempts.",
+    "Do not use raw H0(G), physical torsion, cohomology, consciousness, or complexity-class language from T492.",
+    "If this branch continues, define morphisms between typed gap systems and test a third carrier kind."
+  ],
+  "honest_ceiling": "Finite typed-schema bridge only. T492 supports a common typed-gap schema for T113 order-pair phantom gaps and T92 unary proposition gaps, but blocks object identity, raw H0(G) classification, a general cohomology theorem, physical torsion language, consciousness claims, complexity-class claims, claim-ledger movement, public posture, and cross-repo support."
+}

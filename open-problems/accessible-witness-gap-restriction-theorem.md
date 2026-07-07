@@ -224,3 +224,24 @@ Does the T19 proposition-domain gap object actually restrict like the T57
 gap object, or was the all-persona review right to keep it as a neglected
 but risky bridge?
 ```
+
+## Status Addendum (2026-07-07): typed-gap bridge outcome
+
+T92 implemented the minimal restriction theorem target. T492 then tested the
+remaining bridge question against T113:
+`results/T492-typed-gap-category-bridge-v0.1-results.md`.
+
+Verdict:
+`COMMON_TYPED_GAP_SCHEMA_SUPPORTED_OBJECT_IDENTITY_BLOCKED`. The T19/T92
+proposition-domain gap and the T58/T113 order-pair phantom gap share a common
+finite typed-gap schema, but not object identity. The schema is:
+
+```text
+patches + A(U) + F(U) + G(U)=A(U)-F(U) + typed predicate tau + restriction
+```
+
+The T19 branch therefore joins the T56-T58 gap program only as a typed-gap
+schema instance. It remains distinct from T58 order-pair phantom gaps and still
+does not prove a consciousness, cohomology, or complexity-class theorem. Future
+work would need actual morphisms between typed gap systems, not just another
+same-shape finite witness.

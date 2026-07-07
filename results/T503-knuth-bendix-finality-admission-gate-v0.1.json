@@ -1,0 +1,502 @@
+{
+  "artifact_id": "T503-knuth-bendix-finality-admission-gate-v0.1",
+  "verdict": "REWRITE_COMPLETION_FINALITY_GATE_BUILT_REFINES_D1_REVIEW_ONLY",
+  "source_status": {
+    "gorard_sources": "abstract-level arXiv anchors checked; no theorem imported",
+    "knuth_bendix_use": "style/analogy for finite completion-confluence gate only",
+    "repo_objects": [
+      "T61",
+      "T55",
+      "T467",
+      "T489"
+    ]
+  },
+  "objective": "Test whether a finite rewrite-completion/confluence criterion adds new branch/cost structure beyond the existing D1-style bounded observer certification gate.",
+  "t61_anchor": {
+    "anchor_ok": true,
+    "positive_classification": "reconciled_without_contradiction",
+    "failure_classification": "rollback_required_conflict_handled",
+    "failure_conflict_classification": "canonical",
+    "failure_conflict_theorem_applies": true,
+    "claim_classification": "Strengthens A1 as a formal analogy/homology candidate inside engineered distributed simulation. It does not justify a new named claim yet."
+  },
+  "completion_rule_budget": 2,
+  "cases": [
+    {
+      "case_id": "t61_positive_prediction_completion",
+      "description": "T61 positive branch: client prediction and authority commit normalize to one reconciled history.",
+      "t61_anchor": "positive_prediction_confirmed",
+      "start_terms": [
+        "client_pred_move_a",
+        "authority_commit_move_a"
+      ],
+      "rules": [
+        {
+          "rule_id": "prediction_confirmed_by_authority",
+          "source": "client_pred_move_a",
+          "target": "authority_commit_move_a",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "authority_commit_reconciles_client",
+          "source": "authority_commit_move_a",
+          "target": "reconciled_move_a",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        }
+      ],
+      "candidate_id": "t61_positive_finality_band",
+      "expected_relationship": "coincident_admission",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "t61_conflict_rollback_completion",
+      "description": "T61 failure branch: incompatible stale predictions normalize only after explicit rollback/conflict completion.",
+      "t61_anchor": "failure_stale_conflicting_prediction",
+      "start_terms": [
+        "client_a_claim_gem",
+        "client_b_claim_gem"
+      ],
+      "rules": [
+        {
+          "rule_id": "client_a_claim_wins_authority",
+          "source": "client_a_claim_gem",
+          "target": "authority_claim_a",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "client_b_claim_rolls_back",
+          "source": "client_b_claim_gem",
+          "target": "rollback_claim_b",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "winner_enters_resolved_thread",
+          "source": "authority_claim_a",
+          "target": "resolved_claim_a_with_rollback_b",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "rollback_enters_resolved_thread",
+          "source": "rollback_claim_b",
+          "target": "resolved_claim_a_with_rollback_b",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        }
+      ],
+      "candidate_id": "t61_rollback_support_count",
+      "expected_relationship": "coincident_admission",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "accessible_two_normal_forms_no_join",
+      "description": "Accessible certified branches terminate, but they keep two normal forms because no completion rule joins them.",
+      "t61_anchor": null,
+      "start_terms": [
+        "branch_left",
+        "branch_right"
+      ],
+      "rules": [
+        {
+          "rule_id": "left_settles",
+          "source": "branch_left",
+          "target": "normal_left",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "right_settles",
+          "source": "branch_right",
+          "target": "normal_right",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        }
+      ],
+      "candidate_id": "accessible_nonconfluent_band",
+      "expected_relationship": "completion_refines_d1",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "accessible_cycle_no_final_normal_form",
+      "description": "Accessible certified branches cycle under rewrite, so the observer has no terminating completion.",
+      "t61_anchor": null,
+      "start_terms": [
+        "cycle_a"
+      ],
+      "rules": [
+        {
+          "rule_id": "cycle_a_to_b",
+          "source": "cycle_a",
+          "target": "cycle_b",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "cycle_b_to_a",
+          "source": "cycle_b",
+          "target": "cycle_a",
+          "added_by_completion": false,
+          "requires_hidden_authority": false
+        }
+      ],
+      "candidate_id": "accessible_cycle_band",
+      "expected_relationship": "completion_refines_d1",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "accessible_over_budget_completion",
+      "description": "The branches are finitely joinable, but require more completion rules than the declared observer budget permits.",
+      "t61_anchor": null,
+      "start_terms": [
+        "branch_0",
+        "branch_1",
+        "branch_2"
+      ],
+      "rules": [
+        {
+          "rule_id": "join_branch_0",
+          "source": "branch_0",
+          "target": "joined",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "join_branch_1",
+          "source": "branch_1",
+          "target": "joined",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        },
+        {
+          "rule_id": "join_branch_2",
+          "source": "branch_2",
+          "target": "joined",
+          "added_by_completion": true,
+          "requires_hidden_authority": false
+        }
+      ],
+      "candidate_id": "accessible_over_budget_support_count",
+      "expected_relationship": "completion_refines_d1",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "hidden_authority_completion_shortcut",
+      "description": "A hidden authority rule makes the rewrite system confluent, but the required record field is outside the observer budget.",
+      "t61_anchor": null,
+      "start_terms": [
+        "hidden_left",
+        "hidden_right"
+      ],
+      "rules": [
+        {
+          "rule_id": "hidden_left_authority_join",
+          "source": "hidden_left",
+          "target": "hidden_authority_normal",
+          "added_by_completion": false,
+          "requires_hidden_authority": true
+        },
+        {
+          "rule_id": "hidden_right_authority_join",
+          "source": "hidden_right",
+          "target": "hidden_authority_normal",
+          "added_by_completion": false,
+          "requires_hidden_authority": true
+        }
+      ],
+      "candidate_id": "hidden_authority_record",
+      "expected_relationship": "completion_not_sufficient",
+      "completion_rule_budget": 2
+    },
+    {
+      "case_id": "microstate_identity_completion_shortcut",
+      "description": "A single microstate is trivially normal, but the corresponding coarse-graining is full state identity.",
+      "t61_anchor": null,
+      "start_terms": [
+        "state_0101"
+      ],
+      "rules": [],
+      "candidate_id": "microstate_identity_completion",
+      "expected_relationship": "completion_not_sufficient",
+      "completion_rule_budget": 2
+    }
+  ],
+  "evaluations": [
+    {
+      "case_id": "t61_positive_prediction_completion",
+      "t61_anchor": "positive_prediction_confirmed",
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": true,
+      "completion_cost": 1,
+      "completion_within_budget": true,
+      "completion_admitted": true,
+      "d1_admitted": true,
+      "d1_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "relationship": "coincident_admission",
+      "normal_forms_by_start": [
+        {
+          "start": "client_pred_move_a",
+          "normal_forms": [
+            "reconciled_move_a"
+          ]
+        },
+        {
+          "start": "authority_commit_move_a",
+          "normal_forms": [
+            "reconciled_move_a"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "reconciled_move_a"
+      ],
+      "hidden_completion_rule_used": false,
+      "route_label": "ADMITTED_BY_D1_AND_COMPLETION_REVIEW_ONLY",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "t61_conflict_rollback_completion",
+      "t61_anchor": "failure_stale_conflicting_prediction",
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": true,
+      "completion_cost": 2,
+      "completion_within_budget": true,
+      "completion_admitted": true,
+      "d1_admitted": true,
+      "d1_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "relationship": "coincident_admission",
+      "normal_forms_by_start": [
+        {
+          "start": "client_a_claim_gem",
+          "normal_forms": [
+            "resolved_claim_a_with_rollback_b"
+          ]
+        },
+        {
+          "start": "client_b_claim_gem",
+          "normal_forms": [
+            "resolved_claim_a_with_rollback_b"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "resolved_claim_a_with_rollback_b"
+      ],
+      "hidden_completion_rule_used": false,
+      "route_label": "ADMITTED_BY_D1_AND_COMPLETION_REVIEW_ONLY",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "accessible_two_normal_forms_no_join",
+      "t61_anchor": null,
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": false,
+      "completion_cost": 0,
+      "completion_within_budget": true,
+      "completion_admitted": false,
+      "d1_admitted": true,
+      "d1_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "relationship": "completion_refines_d1",
+      "normal_forms_by_start": [
+        {
+          "start": "branch_left",
+          "normal_forms": [
+            "normal_left"
+          ]
+        },
+        {
+          "start": "branch_right",
+          "normal_forms": [
+            "normal_right"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "normal_left",
+        "normal_right"
+      ],
+      "hidden_completion_rule_used": false,
+      "route_label": "COMPLETION_REJECTS_D1_ADMITTED_NONCONFLUENCE",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "accessible_cycle_no_final_normal_form",
+      "t61_anchor": null,
+      "rewrite_terminates": false,
+      "rewrite_confluent_to_single_normal_form": false,
+      "completion_cost": 0,
+      "completion_within_budget": true,
+      "completion_admitted": false,
+      "d1_admitted": true,
+      "d1_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "relationship": "completion_refines_d1",
+      "normal_forms_by_start": [
+        {
+          "start": "cycle_a",
+          "normal_forms": []
+        }
+      ],
+      "terminal_normal_forms": [],
+      "hidden_completion_rule_used": false,
+      "route_label": "COMPLETION_REJECTS_D1_ADMITTED_CYCLE",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "accessible_over_budget_completion",
+      "t61_anchor": null,
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": true,
+      "completion_cost": 3,
+      "completion_within_budget": false,
+      "completion_admitted": false,
+      "d1_admitted": true,
+      "d1_route_label": "BOUNDED_OBSERVER_CERTIFIABLE",
+      "relationship": "completion_refines_d1",
+      "normal_forms_by_start": [
+        {
+          "start": "branch_0",
+          "normal_forms": [
+            "joined"
+          ]
+        },
+        {
+          "start": "branch_1",
+          "normal_forms": [
+            "joined"
+          ]
+        },
+        {
+          "start": "branch_2",
+          "normal_forms": [
+            "joined"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "joined"
+      ],
+      "hidden_completion_rule_used": false,
+      "route_label": "COMPLETION_REJECTS_D1_ADMITTED_OVER_BUDGET_JOIN",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "hidden_authority_completion_shortcut",
+      "t61_anchor": null,
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": true,
+      "completion_cost": 0,
+      "completion_within_budget": true,
+      "completion_admitted": true,
+      "d1_admitted": false,
+      "d1_route_label": "INACCESSIBLE_RECORD_FIELD",
+      "relationship": "completion_not_sufficient",
+      "normal_forms_by_start": [
+        {
+          "start": "hidden_left",
+          "normal_forms": [
+            "hidden_authority_normal"
+          ]
+        },
+        {
+          "start": "hidden_right",
+          "normal_forms": [
+            "hidden_authority_normal"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "hidden_authority_normal"
+      ],
+      "hidden_completion_rule_used": true,
+      "route_label": "D1_REJECTS_HIDDEN_COMPLETION_SHORTCUT",
+      "counts_as_claim_evidence": false
+    },
+    {
+      "case_id": "microstate_identity_completion_shortcut",
+      "t61_anchor": null,
+      "rewrite_terminates": true,
+      "rewrite_confluent_to_single_normal_form": true,
+      "completion_cost": 0,
+      "completion_within_budget": true,
+      "completion_admitted": true,
+      "d1_admitted": false,
+      "d1_route_label": "TOO_FINE_MICROSTATE_TRACKING",
+      "relationship": "completion_not_sufficient",
+      "normal_forms_by_start": [
+        {
+          "start": "state_0101",
+          "normal_forms": [
+            "state_0101"
+          ]
+        }
+      ],
+      "terminal_normal_forms": [
+        "state_0101"
+      ],
+      "hidden_completion_rule_used": false,
+      "route_label": "D1_REJECTS_COMPLETION_ONLY_MICROSTATE_OR_ACCESS_SHORTCUT",
+      "counts_as_claim_evidence": false
+    }
+  ],
+  "relationship_index": {
+    "coincident_admission": [
+      "t61_positive_prediction_completion",
+      "t61_conflict_rollback_completion"
+    ],
+    "completion_refines_d1": [
+      "accessible_two_normal_forms_no_join",
+      "accessible_cycle_no_final_normal_form",
+      "accessible_over_budget_completion"
+    ],
+    "completion_not_sufficient": [
+      "hidden_authority_completion_shortcut",
+      "microstate_identity_completion_shortcut"
+    ],
+    "coincident_rejection": []
+  },
+  "overall": {
+    "t61_anchor_cases_remain_admitted_by_both": true,
+    "completion_refines_d1_on_branch_or_cost_controls": true,
+    "completion_alone_is_not_sufficient_without_d1_access": true,
+    "t489_route": "future_domain_native_cost_certifiability_review_target_only",
+    "t489_thread_reopened_as_claim_evidence": false,
+    "domain_native_theorem_supplied": false,
+    "claim_ledger_update": "none",
+    "d1_t10_t29_promotion_earned": false,
+    "observer_theory_equivalence_earned": false,
+    "global_valid_coarse_graining_criterion_earned": false,
+    "physics_or_wolfram_model_claim_earned": false,
+    "public_posture_movement": false,
+    "cross_repo_truth_movement": false,
+    "strongest_reading": "A finite rewrite-completion check is useful as an intake gate: T61-style confirmed and rollback branches normalize cleanly, while accessible but nonconfluent, cyclic, or over-budget branch systems are D1-admissible yet completion-rejected. Conversely, a confluent hidden-authority or microstate case is not TaF-admissible without the certified-record/access guards. So completion refines D1 for branching/cost controls, but it does not replace D1 and does not prove Observer Theory/TaF identity."
+  },
+  "future_packet_minimum": [
+    "verify primary Gorard/Wolfram sources before load-bearing use",
+    "cite T489 and state why T467-T478 budget-lattice closure is insufficient",
+    "declare the finite abstract rewrite system before scoring",
+    "report termination, single-normal-form confluence, and completion-rule cost",
+    "compare the completion verdict against D1 bounded-observer certification on the same cases",
+    "include D1-admitted but nonconfluent/cyclic/over-budget hostile controls",
+    "include completion-confluent but D1-inaccessible or too-fine hostile controls",
+    "keep admission review-only until a domain-native cost/certifiability theorem is supplied"
+  ],
+  "not_earned": [
+    "Knuth-Bendix theorem inside TaF",
+    "direct Observer Theory/TaF equivalence theorem",
+    "global valid-coarse-graining criterion",
+    "D1/T10/T29 promotion",
+    "Wolfram-model physics claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "hard-policy movement",
+    "protected-license movement",
+    "external publication",
+    "cross-repo truth movement"
+  ]
+}

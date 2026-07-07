@@ -263,3 +263,39 @@ Observer Theory equivalence theorem, global valid-coarse-graining criterion,
 cost/certifiability theorem, physics or consciousness claim, observer-creates-
 truth claim, claim-ledger, roadmap, README, North Star, public-posture,
 hard-policy, protected-license, or cross-repo truth movement is earned.
+
+## T503 addendum: rewrite-completion finality admission gate
+
+T503 executes the Gorard/Knuth-Bendix Thread A intake as a finite
+rewrite-completion gate:
+`results/T503-knuth-bendix-finality-admission-gate-v0.1-results.md`;
+spec `tests/T503-knuth-bendix-finality-admission-gate.md`; model
+`models/knuth_bendix_finality_admission_gate.py`.
+
+Verdict:
+
+```text
+REWRITE_COMPLETION_FINALITY_GATE_BUILT_REFINES_D1_REVIEW_ONLY
+```
+
+The T61 confirmed-prediction and rollback/conflict branches normalize cleanly
+to single histories and remain admitted by both D1-style bounded-observer
+certification and rewrite completion. Three hostile controls show that
+completion adds a branch/cost check not captured by the mechanical D1 gate
+alone: accessible certified branches are completion-rejected when they have two
+normal forms, cycle without a terminal form, or require more completion rules
+than the declared observer budget permits. Two opposite controls show that
+completion cannot replace D1: hidden-authority and microstate-identity
+shortcuts are completion-confluent but D1-rejected.
+
+This admits rewrite completion only as a future cost/certifiability review
+target under T489. It does not supply a Knuth-Bendix theorem inside TaF, does
+not prove an Observer Theory/TaF equivalence, does not establish a global
+valid-coarse-graining criterion, and does not move D1/T10/T29, physics,
+claim-ledger, roadmap, README, North Star, public posture, hard policy,
+protected license, external publication, or cross-repo truth. Future packets
+must source-check Gorard/Wolfram claims before load-bearing use, declare the
+finite rewrite system before scoring, report termination, single-normal-form
+confluence, and completion-rule cost, compare against D1 on the same cases, and
+include both D1-admitted/nonconfluent and completion-confluent/D1-rejected
+hostile controls.

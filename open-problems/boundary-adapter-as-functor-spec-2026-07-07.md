@@ -84,6 +84,41 @@ shape, a discriminating control (constant functors are refused), and a first bui
 3. Only then ask about non-triviality, a companion functor, and adjunction. Do **not** assert "the adapter" in
    prose again until step 2 typechecks.
 
+## First build result (2026-07-07) — `models/boundary_adapter_functor.py`, exit 0
+
+Built and ran. **`GUBdy` is a category and `F : GUBdy -> D1Cat` is a well-defined functor into the PROVEN
+`D1Cat`** — and the controls make the result honest and self-critical:
+
+- **Source category built:** `GUBdy` = the poset `{W+0 < W+ < W, W-}` of Krein sub-sectors, morphisms =
+  K-isometric inclusions (signature monotone along each). Composition closure and identities hold. The chain
+  `W+0 <= W+ <= W` gives a non-trivial composite to test.
+- **`F` into the real `D1Cat`:** every `F(object)` is a valid `D1RestrictionSystem`; every `F(inclusion)` is a
+  reached `D1RestrictionMorphism`; **composition and identity are preserved** (checked with the actual T41
+  machinery `_compose_morphisms` / `morphisms_equal_modulo_name` / `analyze_morphism`). The action-on-morphisms
+  the contract's `S`/`R` prose omitted is now supplied.
+- **Profiles grounded, not asserted:** a mini-T12' fixes `accessible_support(mirror) = 0` (individually
+  invisible) and `accessible_support(physical) = 1`. *Honest caveat:* the individual-invisibility leg here is
+  **analytic** (a W+-supported observable depends only on the W+ component, so two states sharing their W+ part
+  are indistinguishable to it); the full empirical zero-trace over random accessible operations is the
+  192-dim T12' (`gu-formalization/tests/big-swing/t12p_mirror_capability_wall.py`), not re-run in this fixture.
+
+**The decisive finding (why a passing functor is NOT the adapter): functoriality is
+NECESSARY-NOT-SUFFICIENT.** Two controls fire:
+
+1. A **constant** functor (every object -> one system, every morphism -> its identity) **also passes**
+   functoriality — it "connects everything" and proves nothing. What separates the real `F` from it is
+   **faithfulness** (the real `F` distinguishes the two boundary faces `F(W+<=W) != F(W-<=W)`; the constant
+   functor collapses them).
+2. A **physics-wrong** functor (`mirror.accessible_support = 1`, contradicting T12') **also passes**
+   functoriality and validity — so the functor axioms **do not enforce the physics**; the T12' grounding is
+   *extra content* on top of functoriality.
+
+**So the adapter's real content, now named by construction, is: (i) FAITHFULNESS + (ii) PHYSICS-GROUNDING
+(profiles FORCED by T12', not chosen), plus (iii) a companion adjoint/inverse (the two-adapter gate).** This
+is the CT-2 lesson applied to itself: functoriality is the "pushout-easy" part; the content is the harder
+limit-side (faithfulness / forced structure). The build advanced #1 from prose to a definite object and
+**located the next requirement**; it did not close the adapter, and no claim moved.
+
 ## Guards
 
 - **No claim moves.** This is a spec; `F` is not built. The finding "`GUBdy` is not yet a category" is the

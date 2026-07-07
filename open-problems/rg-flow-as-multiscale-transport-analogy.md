@@ -238,3 +238,36 @@ temporal arrow, record-finality change, scale-genesis theorem, physics claim,
 D1 promotion, RG/TaF equivalence theorem, claim-ledger movement, roadmap
 movement, North Star movement, public-posture movement, or cross-repo truth is
 earned.
+
+## T485 addendum: transport-topology invariant quotient gate
+
+T485 makes T484's invariant-morphism caveat executable:
+`results/T485-transport-topology-invariant-quotient-gate-v0.1-results.md`;
+spec `tests/T485-transport-topology-invariant-quotient-gate.md`; model
+`models/transport_topology_invariant_quotient_gate.py`.
+
+Verdict:
+
+```text
+TRANSPORT_TOPOLOGY_INVARIANT_QUOTIENT_BUILT_REACHABILITY_ONLY
+```
+
+The gate declares the finite morphism class of observer-label relabeling plus
+trust-edge subdivision, with relay sites forgotten back to original observer
+reachability. Under that class, the source/target trust-reachability quotient
+over original observer sites is stable and still separates the connected and
+partitioned fixed-D1 pair, so it remains admitted as review-grade bookkeeping
+only.
+
+Component count is absorbed as a derived quotient summary. Component size,
+shortest-path length, hop bands, and relay count vary under benign iterated
+subdivision, so they remain blocked as internal-scale, clock, duration,
+finality, or scale-genesis evidence. Future topology packets must declare
+their morphism/refinement class before using topology as a generator, quotient
+refinement artifacts away, and keep reachability separate from scale, clocks,
+duration, finality, RG/conformal mechanisms, physics posture, and claim
+promotion unless a separate theorem earns more. No independent internal scale
+structure, record clock, duration, temporal arrow, record-finality change,
+scale-genesis theorem, physics claim, D1 promotion, RG/TaF equivalence theorem,
+claim-ledger movement, roadmap movement, North Star movement, public-posture
+movement, or cross-repo truth is earned.

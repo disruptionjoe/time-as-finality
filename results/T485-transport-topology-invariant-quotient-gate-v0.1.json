@@ -1,0 +1,605 @@
+{
+  "artifact_id": "T485-transport-topology-invariant-quotient-gate-v0.1",
+  "objective": "Make T484's invariant-morphism caveat executable by admitting only the trust-reachability quotient over original observer sites, while rejecting component size, path length, hop bands, relay count, clock/finality, RG/conformal, physics, and promotion overreads.",
+  "local_anchor_checks": {
+    "t484_gate_passed": true,
+    "t484_reachability_bookkeeping_only": true,
+    "t484_component_size_blocked": true,
+    "t484_path_length_blocked": true,
+    "t484_no_internal_scale_structure_earned": true,
+    "t484_future_packet_requires_refinement_controls": true
+  },
+  "quotient_probe": {
+    "generator_rule": "same trust-preserving component quotient over original observer sites, with quotient blocks typed by source/target reachability role",
+    "morphism_class": "observer-label relabeling plus finite subdivision of trust-preserving transport edges, with relay sites forgotten back to original observer sites",
+    "fixture_summaries": {
+      "connected_original": {
+        "quotient_blocks": [
+          {
+            "role": "source_target_component",
+            "original_observer_count": 4,
+            "component_size_including_relays": 4,
+            "original_observers": [
+              "family",
+              "individual",
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_target_component",
+            4
+          ]
+        ],
+        "quotient_block_count": 1,
+        "component_size_signature": [
+          [
+            "family",
+            4
+          ],
+          [
+            "individual",
+            4
+          ],
+          [
+            "institution",
+            4
+          ],
+          [
+            "lab",
+            4
+          ]
+        ],
+        "source_target_path_length": 3,
+        "source_target_hop_band": "short",
+        "relay_site_count": 0
+      },
+      "connected_subdivided_once": {
+        "quotient_blocks": [
+          {
+            "role": "source_target_component",
+            "original_observer_count": 4,
+            "component_size_including_relays": 7,
+            "original_observers": [
+              "family",
+              "individual",
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_target_component",
+            4
+          ]
+        ],
+        "quotient_block_count": 1,
+        "component_size_signature": [
+          [
+            "family",
+            7
+          ],
+          [
+            "individual",
+            7
+          ],
+          [
+            "institution",
+            7
+          ],
+          [
+            "lab",
+            7
+          ]
+        ],
+        "source_target_path_length": 6,
+        "source_target_hop_band": "middle",
+        "relay_site_count": 3
+      },
+      "connected_subdivided_twice": {
+        "quotient_blocks": [
+          {
+            "role": "source_target_component",
+            "original_observer_count": 4,
+            "component_size_including_relays": 13,
+            "original_observers": [
+              "family",
+              "individual",
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_target_component",
+            4
+          ]
+        ],
+        "quotient_block_count": 1,
+        "component_size_signature": [
+          [
+            "family",
+            13
+          ],
+          [
+            "individual",
+            13
+          ],
+          [
+            "institution",
+            13
+          ],
+          [
+            "lab",
+            13
+          ]
+        ],
+        "source_target_path_length": 12,
+        "source_target_hop_band": "long",
+        "relay_site_count": 9
+      },
+      "partitioned_original": {
+        "quotient_blocks": [
+          {
+            "role": "source_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 2,
+            "original_observers": [
+              "family",
+              "individual"
+            ]
+          },
+          {
+            "role": "target_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 2,
+            "original_observers": [
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_side_component",
+            2
+          ],
+          [
+            "target_side_component",
+            2
+          ]
+        ],
+        "quotient_block_count": 2,
+        "component_size_signature": [
+          [
+            "family",
+            2
+          ],
+          [
+            "individual",
+            2
+          ],
+          [
+            "institution",
+            2
+          ],
+          [
+            "lab",
+            2
+          ]
+        ],
+        "source_target_path_length": null,
+        "source_target_hop_band": "unreachable",
+        "relay_site_count": 0
+      },
+      "partitioned_subdivided_once": {
+        "quotient_blocks": [
+          {
+            "role": "source_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 3,
+            "original_observers": [
+              "family",
+              "individual"
+            ]
+          },
+          {
+            "role": "target_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 3,
+            "original_observers": [
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_side_component",
+            2
+          ],
+          [
+            "target_side_component",
+            2
+          ]
+        ],
+        "quotient_block_count": 2,
+        "component_size_signature": [
+          [
+            "family",
+            3
+          ],
+          [
+            "individual",
+            3
+          ],
+          [
+            "institution",
+            3
+          ],
+          [
+            "lab",
+            3
+          ]
+        ],
+        "source_target_path_length": null,
+        "source_target_hop_band": "unreachable",
+        "relay_site_count": 2
+      },
+      "partitioned_subdivided_twice": {
+        "quotient_blocks": [
+          {
+            "role": "source_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 5,
+            "original_observers": [
+              "family",
+              "individual"
+            ]
+          },
+          {
+            "role": "target_side_component",
+            "original_observer_count": 2,
+            "component_size_including_relays": 5,
+            "original_observers": [
+              "institution",
+              "lab"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_side_component",
+            2
+          ],
+          [
+            "target_side_component",
+            2
+          ]
+        ],
+        "quotient_block_count": 2,
+        "component_size_signature": [
+          [
+            "family",
+            5
+          ],
+          [
+            "individual",
+            5
+          ],
+          [
+            "institution",
+            5
+          ],
+          [
+            "lab",
+            5
+          ]
+        ],
+        "source_target_path_length": null,
+        "source_target_hop_band": "unreachable",
+        "relay_site_count": 6
+      },
+      "connected_relabel": {
+        "quotient_blocks": [
+          {
+            "role": "source_target_component",
+            "original_observer_count": 4,
+            "component_size_including_relays": 4,
+            "original_observers": [
+              "site_0",
+              "site_1",
+              "site_2",
+              "site_3"
+            ]
+          }
+        ],
+        "quotient_signature": [
+          [
+            "source_target_component",
+            4
+          ]
+        ],
+        "quotient_block_count": 1,
+        "component_size_signature": [
+          [
+            "site_0",
+            4
+          ],
+          [
+            "site_1",
+            4
+          ],
+          [
+            "site_2",
+            4
+          ],
+          [
+            "site_3",
+            4
+          ]
+        ],
+        "source_target_path_length": 3,
+        "source_target_hop_band": "short",
+        "relay_site_count": 0
+      }
+    },
+    "controls": {
+      "original_d1_vectors_fixed": true,
+      "reachability_quotient_separates_fixed_d1_pair": true,
+      "connected_quotient_stable_under_refinement": true,
+      "partitioned_quotient_stable_under_refinement": true,
+      "quotient_relabel_invariant": true,
+      "component_size_changes_under_iterated_refinement": true,
+      "path_length_changes_under_iterated_refinement": true,
+      "hop_band_changes_under_iterated_refinement": true,
+      "component_count_is_quotient_summary": true,
+      "uses_clock_duration_or_finality_status": false,
+      "imports_rg_or_conformal_mechanism": false
+    },
+    "reading": "The reachability quotient survives the declared refinement class and still separates the connected and partitioned fixed-D1 pair. The quantities that look scale-like before quotienting are exactly the refinement artifacts: component size, path length, hop bands, and relay count."
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "reachability_quotient_packet",
+      "role": "positive_review_control",
+      "generator_rule": "collapse trust-preserving transport refinements to the finite same-component quotient over original observer sites, typed by source/target reachability role",
+      "comparison_domain": "T24/T38 connected and partitioned fixed-D1 fixtures, observer relabelings, and iterated trust-edge subdivisions",
+      "local_taf_anchor": "T24/T38/T480/T481/T482/T483/T484",
+      "uses_reachability_quotient": true,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": true,
+      "decision": "admit_reachability_quotient_no_scale_structure",
+      "route_label": "REACHABILITY_QUOTIENT_BOOKKEEPING_ADMITTED_NO_SCALE_STRUCTURE",
+      "blockers": []
+    },
+    {
+      "candidate_id": "component_count_summary",
+      "role": "absorbed_control",
+      "generator_rule": "count source/target reachability quotient blocks",
+      "comparison_domain": "same quotient used by the positive packet",
+      "local_taf_anchor": "T484 caveat",
+      "uses_reachability_quotient": false,
+      "uses_component_count": true,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "absorb_quotient_summary_no_independent_generator",
+      "route_label": "QUOTIENT_SUMMARY_ABSORBED",
+      "blockers": [
+        "component_count_derived_from_reachability_quotient"
+      ]
+    },
+    {
+      "candidate_id": "component_size_invariant_scale",
+      "role": "hostile_control",
+      "generator_rule": "use total trust-component size as internal scale",
+      "comparison_domain": "original and edge-subdivided T24/T38 fixtures",
+      "local_taf_anchor": "T484 overread",
+      "uses_reachability_quotient": false,
+      "uses_component_count": false,
+      "uses_component_size": true,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "component_size_refinement_variant",
+        "scale_genesis_or_physics_claim_overread"
+      ]
+    },
+    {
+      "candidate_id": "shortest_path_invariant_scale",
+      "role": "hostile_control",
+      "generator_rule": "use source-target shortest trust path as internal scale",
+      "comparison_domain": "original and edge-subdivided T24/T38 fixtures",
+      "local_taf_anchor": "T484 overread",
+      "uses_reachability_quotient": false,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": true,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "path_length_refinement_variant",
+        "scale_genesis_or_physics_claim_overread"
+      ]
+    },
+    {
+      "candidate_id": "finite_hop_band_scale",
+      "role": "hostile_control",
+      "generator_rule": "bucket source-target hop count into short/middle/long scale bands",
+      "comparison_domain": "iterated edge subdivisions of the same connected fixture",
+      "local_taf_anchor": "T484 caveat",
+      "uses_reachability_quotient": false,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": true,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "hop_band_refinement_variant",
+        "scale_genesis_or_physics_claim_overread"
+      ]
+    },
+    {
+      "candidate_id": "relay_count_internal_clock",
+      "role": "hostile_control",
+      "generator_rule": "treat inserted refinement relays as elapsed record time",
+      "comparison_domain": "edge-subdivision metadata",
+      "local_taf_anchor": "T484 relay overread",
+      "uses_reachability_quotient": false,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "quotient_or_invariant_not_declared",
+        "relay_count_is_refinement_artifact",
+        "hidden_calendar_or_time_order",
+        "clock_duration_or_arrow_overread"
+      ]
+    },
+    {
+      "candidate_id": "quotient_as_internal_scale_structure",
+      "role": "hostile_control",
+      "generator_rule": "declare the reachability quotient itself to be internal scale",
+      "comparison_domain": "T24/T38/T484 reachability quotient",
+      "local_taf_anchor": "T484 promotion shortcut",
+      "uses_reachability_quotient": true,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TOPOLOGY_QUOTIENT_PACKET_BLOCKED",
+      "blockers": [
+        "reachability_quotient_not_internal_scale_structure"
+      ]
+    },
+    {
+      "candidate_id": "reachability_finality_status",
+      "role": "hostile_control",
+      "generator_rule": "mark source-target reachable blocks as record-final",
+      "comparison_domain": "reachability quotient roles",
+      "local_taf_anchor": "T484 finality overread",
+      "uses_reachability_quotient": true,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TOPOLOGY_QUOTIENT_PACKET_BLOCKED",
+      "blockers": [
+        "record_finality_change_overread"
+      ]
+    },
+    {
+      "candidate_id": "rg_conformal_morphism_class_import",
+      "role": "hostile_control",
+      "generator_rule": "use RG or conformal fixed-point equivalence as the topology morphism class",
+      "comparison_domain": "external RG/conformal scale classes",
+      "local_taf_anchor": "external RG/conformal mechanism",
+      "uses_reachability_quotient": false,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TOPOLOGY_QUOTIENT_PACKET_BLOCKED",
+      "blockers": [
+        "fixed_d1_control_missing",
+        "refinement_invariance_check_missing",
+        "relabel_invariance_check_missing",
+        "rg_or_conformal_mechanism_imported",
+        "scale_genesis_or_physics_claim_overread",
+        "no_local_taf_anchor"
+      ]
+    },
+    {
+      "candidate_id": "promotion_shortcut_quotient",
+      "role": "hostile_control",
+      "generator_rule": "promote refinement-stable reachability quotient to D1 or scale theorem",
+      "comparison_domain": "T24/T38/T484 quotient evidence",
+      "local_taf_anchor": "T484 promotion shortcut",
+      "uses_reachability_quotient": true,
+      "uses_component_count": false,
+      "uses_component_size": false,
+      "uses_path_length": false,
+      "uses_hop_band": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TOPOLOGY_QUOTIENT_PACKET_BLOCKED",
+      "blockers": [
+        "reachability_quotient_not_internal_scale_structure",
+        "scale_genesis_or_physics_claim_overread",
+        "claim_or_public_posture_promotion_shortcut"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "reachability_quotient_packet"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "TRANSPORT_TOPOLOGY_INVARIANT_QUOTIENT_BUILT_REACHABILITY_ONLY",
+    "gate_passed": true,
+    "reachability_quotient_admitted": true,
+    "component_count_absorbed": true,
+    "component_size_scale_blocked": true,
+    "path_length_scale_blocked": true,
+    "hop_band_scale_blocked": true,
+    "hostile_controls_blocked": true,
+    "internal_scale_structure_earned": false,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "record_clock_or_duration_earned": false,
+    "record_finality_change_earned": false,
+    "reading": "T485 turns T484's invariant-morphism caveat into a finite gate. After quotienting away trust-edge subdivisions and observer relabelings, the only admitted topology datum is the source/target trust-reachability quotient over original observer sites. Component count is a derived quotient summary, not an independent generator. Component size, shortest path, hop bands, and relay counts vary under benign refinement, so they remain blocked as internal-scale, clock, duration, finality, or scale-genesis evidence."
+  },
+  "future_packet_minimum": [
+    "declare the topology morphism or refinement class before using topology as a generator",
+    "quotient relay/refinement artifacts away from original observer-site reachability",
+    "treat component count as a quotient summary, not an independent internal-scale generator",
+    "reject component size, shortest path length, hop bands, and relay count under trust-edge subdivision unless a stricter domain-native morphism class is justified",
+    "preserve fixed-D1 controls and observer-label relabel invariance",
+    "keep reachability topology separate from scale, clock, duration, finality, RG/conformal, physics, and promotion language"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

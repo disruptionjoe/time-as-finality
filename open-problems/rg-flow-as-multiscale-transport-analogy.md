@@ -53,3 +53,33 @@ function), and whether there is a fixed point (a scale-invariant finality struct
 On the T24 multiscale model, attempt to name the three RG analogues explicitly (transported structure,
 transport law, fixed point). If even one cannot be named, that is a useful negative bounding what "multiscale
 transport" can mean in TaF. Keep it as an analogy ledger; do not promote to a claim.
+
+## T479 addendum: RG-flow multiscale calibration gate
+
+T479 makes the contribution request executable:
+`results/T479-rg-flow-multiscale-calibration-gate-v0.1-results.md`; spec
+`tests/T479-rg-flow-multiscale-calibration-gate.md`; model
+`models/rg_flow_multiscale_calibration_gate.py`.
+
+Verdict:
+
+```text
+RG_FLOW_CALIBRATION_GATE_BUILT_ANALOGY_ONLY_NO_PROMOTION
+```
+
+The gate admits one local calibration packet only. T24 supplies field-valued
+D1 as the transported structure, T38 supplies finite H1+ transport as the
+transport-law analogue, and the conformal/fixed-point neighbor is usable only
+as a no-intrinsic-scale endpoint that requires a declared scale-label operation
+before record-clock structure appears. Coupling-flow import, Lagrangian/action
+import, fixed-point clocks, record-finality-from-RG, conformal-phenomenology
+support, and fixed-point-only packets are blocked.
+
+This keeps the lane at analogy-ledger grade. Future packets must primary-source
+check the RG/conformal-gravity neighbor before stronger use, declare the TaF
+transported structure and transport law separately from RG beta functions, and
+state the scale-label or symmetry-breaking operation before using clocks,
+durations, or scale-genesis language. No D1 promotion, field-valued D1 canon
+update, RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
+claim-ledger movement, roadmap movement, North Star movement, public-posture
+movement, or cross-repo truth movement is earned.

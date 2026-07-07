@@ -1,0 +1,159 @@
+{
+  "artifact_id": "T479-rg-flow-multiscale-calibration-gate-v0.1",
+  "objective": "Test whether the RG-flow multiscale-transport analogy can name a TaF transported structure, transport law, and fixed-point / scale-genesis endpoint using existing finite TaF objects while blocking mechanism import and claim overread.",
+  "local_anchor_checks": {
+    "t24_vector_d1_required_for_multiscale_snapshots": true,
+    "t24_field_d1_required_for_transport_and_gluing_claims": true,
+    "t24_scalar_recoverable_only_as_special_case": true,
+    "t38_h1_plus_is_best_supported": true,
+    "t38_compression_record_present": true,
+    "t38_emergence_record_present": true,
+    "t38_h2_required": false,
+    "t38_h3_required": false
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "taf_d1_h1_plus_scale_calibration",
+      "role": "positive_control",
+      "transported_structure": "field-valued D1 profile: local observer profiles plus transport and gluing data",
+      "transport_law": "finite TypedTransportNetwork/H1+ transport with compression and emergence annotations",
+      "fixed_point_analogue": "scale-invariant calibration endpoint with no intrinsic record-clock scale until a declared scale-label operation",
+      "local_taf_anchor": "T24 field-valued D1 plus T38 H1+ transport",
+      "external_anchor_grade": "pointer_grade_rg_conformal_neighbor",
+      "admitted": true,
+      "decision": "admit_as_analogy_calibration",
+      "route_label": "ANALOGY_CALIBRATION_ADMITTED_NO_PROMOTION",
+      "blockers": []
+    },
+    {
+      "candidate_id": "coupling_flow_import",
+      "role": "hostile_control",
+      "transported_structure": "coupling constants",
+      "transport_law": "beta function copied from RG",
+      "fixed_point_analogue": "field-theory coupling fixed point",
+      "local_taf_anchor": "external RG only",
+      "external_anchor_grade": "external_mechanism_import",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "no_local_taf_transport_anchor",
+        "coupling_flow_imported_as_record_flow"
+      ]
+    },
+    {
+      "candidate_id": "lagrangian_record_action",
+      "role": "hostile_control",
+      "transported_structure": "record action functional",
+      "transport_law": "Euler-Lagrange flow over records",
+      "fixed_point_analogue": "stationary action endpoint",
+      "local_taf_anchor": "no existing TaF action",
+      "external_anchor_grade": "external_mechanism_import",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "lagrangian_action_imported_onto_records"
+      ]
+    },
+    {
+      "candidate_id": "clocked_fixed_point_overread",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "finite scale transport",
+      "fixed_point_analogue": "scale-invariant endpoint already carrying intrinsic clocks",
+      "local_taf_anchor": "T24/T38 named but fixed-point guard violated",
+      "external_anchor_grade": "pointer_grade_rg_conformal_neighbor",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "fixed_point_carries_intrinsic_scale_or_clock"
+      ]
+    },
+    {
+      "candidate_id": "record_finality_from_rg_claim",
+      "role": "hostile_control",
+      "transported_structure": "record/finality structure",
+      "transport_law": "RG flow as record flow",
+      "fixed_point_analogue": "scale genesis proves record finality",
+      "local_taf_anchor": "T24/T38 overread",
+      "external_anchor_grade": "pointer_grade_rg_conformal_neighbor",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "record_finality_derived_from_rg_overread",
+        "physics_or_public_posture_overread"
+      ]
+    },
+    {
+      "candidate_id": "fixed_point_only_no_transport",
+      "role": "hostile_control",
+      "transported_structure": "",
+      "transport_law": "",
+      "fixed_point_analogue": "scale-free endpoint",
+      "local_taf_anchor": "N15 pointer only",
+      "external_anchor_grade": "pointer_grade_rg_conformal_neighbor",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "transported_structure_not_named",
+        "transport_law_not_named",
+        "no_local_taf_transport_anchor"
+      ]
+    },
+    {
+      "candidate_id": "conformal_phenomenology_support",
+      "role": "hostile_control",
+      "transported_structure": "record/finality structure",
+      "transport_law": "finite scale transport",
+      "fixed_point_analogue": "scale-free conformal endpoint",
+      "local_taf_anchor": "T24/T38 named but support source misused",
+      "external_anchor_grade": "pointer_grade_rg_conformal_neighbor",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "ANALOGY_CALIBRATION_BLOCKED",
+      "blockers": [
+        "conformal_phenomenology_used_as_support"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "taf_d1_h1_plus_scale_calibration"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "RG_FLOW_CALIBRATION_GATE_BUILT_ANALOGY_ONLY_NO_PROMOTION",
+    "gate_passed": true,
+    "positive_calibration_packet_admitted": true,
+    "hostile_controls_blocked": true,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "observer_theory_or_rg_equivalence_earned": false,
+    "reading": "The RG-flow analogy clears only as a calibration scaffold: T24 supplies field-valued D1 as the transported structure, T38 supplies finite H1+ transport as the transport-law analogue, and the conformal/fixed-point neighbor is usable only as a no-intrinsic-scale endpoint that requires a declared scale-label operation before record-clock structure appears. Coupling flow, Lagrangian/action import, conformal phenomenology, and record-finality-from-RG overreads stay blocked."
+  },
+  "future_packet_minimum": [
+    "declare the TaF transported structure, not just the word multiscale",
+    "declare the TaF transport law separately from RG beta functions",
+    "state whether the fixed-point analogue carries no intrinsic scale",
+    "declare the scale-label or symmetry-breaking operation before using clocks or durations",
+    "keep external RG and conformal-gravity sources at analogy-ledger grade until primary sources are checked",
+    "block coupling-flow, action-functional, phenomenology, physics-claim, and public-posture overreads"
+  ],
+  "not_earned": [
+    "D1 promotion",
+    "field-valued D1 canon update",
+    "RG/TaF equivalence theorem",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

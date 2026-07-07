@@ -1,0 +1,337 @@
+{
+  "artifact_id": "T483-internal-scale-generator-independence-gate-v0.1",
+  "objective": "Convert T482's independence burden into an executable fixed-D1 counterfactual gate for future internal-scale generator packets.",
+  "local_anchor_checks": {
+    "t482_gate_passed": true,
+    "t482_support_gradient_admitted_as_bookkeeping": true,
+    "t482_support_gradient_factors_through_d1": true,
+    "t482_no_internal_scale_structure_earned": true,
+    "t482_no_clock_or_duration_earned": true,
+    "t482_future_packet_requires_independent_generator": true
+  },
+  "fixed_d1_independence_probe": {
+    "generator_rule": "transport_topology_band = source_target_component if the site is in the trust-preserving component containing both source and target; otherwise source_side_component, target_side_component, or other_component",
+    "comparison_domain": "connected_transport_scenario vs partitioned_transport_scenario from T24, holding observer IDs and D1 profile vectors fixed",
+    "connected_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 4,
+        "topology_band": "source_target_component"
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 4,
+        "topology_band": "source_target_component"
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 4,
+        "topology_band": "source_target_component"
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 4,
+        "topology_band": "source_target_component"
+      }
+    ],
+    "partitioned_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 2,
+        "topology_band": "source_side_component"
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 0,
+        "component_size": 2,
+        "topology_band": "source_side_component"
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 1,
+        "component_size": 2,
+        "topology_band": "target_side_component"
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "component_id": 1,
+        "component_size": 2,
+        "topology_band": "target_side_component"
+      }
+    ],
+    "connected_signature": {
+      "source_target_component": 4
+    },
+    "partitioned_signature": {
+      "source_side_component": 2,
+      "target_side_component": 2
+    },
+    "relabel_signature": {
+      "source_target_component": 4
+    },
+    "controls": {
+      "fixed_d1_vectors_match": true,
+      "transport_topology_separates": true,
+      "transport_topology_relabel_invariant": true,
+      "connected_source_target_reachable": true,
+      "partitioned_source_target_reachable": false,
+      "d1_profile_completion_insufficient": true,
+      "uses_clock_duration_or_finality_status": false,
+      "imports_rg_or_conformal_mechanism": false
+    },
+    "reading": "The transport-topology generator separates connected and partitioned fixtures even though their D1 profile vectors match. This is enough to reject D1-profile completion, but it is only transport-topology bookkeeping unless a separate theorem connects it to internal scale."
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "t482_d1_support_gradient",
+      "role": "absorbed_control",
+      "generator_rule": "support_depth = accessible_support + holder_redundancy + branch_support + reversal_cost",
+      "comparison_domain": "T24 observer sites with D1 profile tuples",
+      "local_taf_anchor": "T482",
+      "uses_transport_topology": false,
+      "d1_profile_completion_sufficient": true,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_d1_completion_absorbed",
+      "route_label": "D1_COMPLETION_ABSORBED_GENERATOR",
+      "blockers": [
+        "d1_profile_completion_absorbs_generator"
+      ]
+    },
+    {
+      "candidate_id": "transport_topology_review_target",
+      "role": "positive_review_control",
+      "generator_rule": "classify observer sites by trust-preserving transport component relative to the declared source and target",
+      "comparison_domain": "T24/T38 connected and partitioned transport fixtures with identical observer IDs and D1 profile vectors",
+      "local_taf_anchor": "T24/T38/T480/T481/T482",
+      "uses_transport_topology": true,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": true,
+      "admitted": true,
+      "decision": "admit_review_target_no_scale_structure",
+      "route_label": "TRANSPORT_TOPOLOGY_REVIEW_TARGET_ADMITTED_NO_SCALE_STRUCTURE",
+      "blockers": []
+    },
+    {
+      "candidate_id": "label_word_independence",
+      "role": "hostile_control",
+      "generator_rule": "call the generator independent",
+      "comparison_domain": "declared after the packet is named",
+      "local_taf_anchor": "T482 shortcut",
+      "uses_transport_topology": false,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "generator_not_predeclared",
+        "comparison_domain_not_predeclared",
+        "fixed_d1_counterfactual_control_missing",
+        "relabel_invariance_check_missing",
+        "label_word_without_generator"
+      ]
+    },
+    {
+      "candidate_id": "posthoc_counterfactual_selector",
+      "role": "hostile_control",
+      "generator_rule": "choose the counterfactual pair after seeing the split",
+      "comparison_domain": "selected after the separating topology is known",
+      "local_taf_anchor": "T24/T38 overread",
+      "uses_transport_topology": true,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "generator_not_predeclared",
+        "comparison_domain_not_predeclared",
+        "posthoc_counterfactual_selection"
+      ]
+    },
+    {
+      "candidate_id": "observer_id_rank_independence",
+      "role": "hostile_control",
+      "generator_rule": "rank observer identifiers alphabetically",
+      "comparison_domain": "observer-id order",
+      "local_taf_anchor": "T24 labels only",
+      "uses_transport_topology": false,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "observer_label_order_not_relabel_invariant"
+      ]
+    },
+    {
+      "candidate_id": "hidden_time_order_independence",
+      "role": "hostile_control",
+      "generator_rule": "derive scale from hidden time_step or calendar order",
+      "comparison_domain": "hidden temporal order",
+      "local_taf_anchor": "T24 metadata overread",
+      "uses_transport_topology": false,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "fixed_d1_counterfactual_control_missing",
+        "hidden_calendar_or_time_order",
+        "clock_duration_or_arrow_overread"
+      ]
+    },
+    {
+      "candidate_id": "finality_by_transport_component",
+      "role": "hostile_control",
+      "generator_rule": "mark the target-side component as final",
+      "comparison_domain": "transport component labels",
+      "local_taf_anchor": "T24/T38 overread",
+      "uses_transport_topology": true,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "record_finality_change_overread"
+      ]
+    },
+    {
+      "candidate_id": "rg_fixed_point_independence_source",
+      "role": "hostile_control",
+      "generator_rule": "import RG or conformal fixed point as generator",
+      "comparison_domain": "external RG scale classes",
+      "local_taf_anchor": "external RG/conformal mechanism",
+      "uses_transport_topology": false,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "fixed_d1_counterfactual_control_missing",
+        "relabel_invariance_check_missing",
+        "rg_or_conformal_mechanism_imported",
+        "scale_genesis_or_physics_claim_overread",
+        "no_local_taf_anchor"
+      ]
+    },
+    {
+      "candidate_id": "promotion_shortcut_independence",
+      "role": "hostile_control",
+      "generator_rule": "declare fixed-D1 separation to be internal scale",
+      "comparison_domain": "T24/T38 fixtures",
+      "local_taf_anchor": "T24/T38/T482 promotion shortcut",
+      "uses_transport_topology": true,
+      "d1_profile_completion_sufficient": false,
+      "separates_fixed_d1_transport_counterfactual": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "INDEPENDENCE_PACKET_BLOCKED",
+      "blockers": [
+        "scale_genesis_or_physics_claim_overread",
+        "claim_or_public_posture_promotion_shortcut"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "transport_topology_review_target"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "INTERNAL_SCALE_INDEPENDENCE_GATE_BUILT_REVIEW_TARGET_ONLY_NO_PROMOTION",
+    "gate_passed": true,
+    "transport_topology_review_target_admitted": true,
+    "d1_completion_control_blocked": true,
+    "hostile_controls_blocked": true,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "record_clock_or_duration_earned": false,
+    "record_finality_change_earned": false,
+    "internal_scale_structure_earned": false,
+    "reading": "T483 rejects T482-style support-gradient generators as D1 completion. A synthetic transport-topology generator separates T24/T38 connected vs partitioned fixtures while their D1 vectors are fixed and survives observer-label relabeling. This is admitted only as a future review target and transport-topology bookkeeping; it earns no internal scale structure, clock, duration, finality change, scale-genesis theorem, physics support, claim movement, or public-posture movement."
+  },
+  "future_packet_minimum": [
+    "prove the generator is not recoverable from the existing D1 profile tuple",
+    "include a fixed-D1 counterfactual pair before claiming independence",
+    "separate transport topology from scale, clock, duration, and finality language",
+    "preserve relabel-invariance under observer ID permutation",
+    "block label-only, posthoc, hidden-time, finality, RG/conformal, physics, and promotion shortcuts",
+    "treat fixed-D1 transport-topology separation as review metadata unless a separate theorem earns more"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

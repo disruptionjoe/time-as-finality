@@ -177,3 +177,32 @@ promotion, internal scale-structure theorem, RG/TaF equivalence theorem,
 scale-genesis theorem, physics claim, claim-ledger movement, roadmap movement,
 North Star movement, public-posture movement, or cross-repo truth movement is
 earned.
+
+## T483 addendum: internal scale-generator independence gate
+
+T483 makes T482's independence burden executable:
+`results/T483-internal-scale-generator-independence-gate-v0.1-results.md`;
+spec `tests/T483-internal-scale-generator-independence-gate.md`; model
+`models/internal_scale_generator_independence_gate.py`.
+
+Verdict:
+
+```text
+INTERNAL_SCALE_INDEPENDENCE_GATE_BUILT_REVIEW_TARGET_ONLY_NO_PROMOTION
+```
+
+The gate rejects T482's support-gradient generator as D1-profile completion. A
+synthetic transport-topology generator separates T24/T38 connected vs
+partitioned fixtures while their D1 vectors are fixed and survives
+observer-label relabeling. This is admitted only as a future review target and
+transport-topology bookkeeping.
+
+Future packets must prove the generator is not recoverable from the existing
+D1 profile tuple, include a fixed-D1 counterfactual pair, preserve
+relabel-invariance, and keep transport topology separate from scale, clock,
+duration, finality, RG/conformal, physics, and promotion language unless a
+separate theorem earns more. No independent internal scale structure, record
+clock, duration, temporal arrow, record-finality change, scale-genesis theorem,
+physics claim, D1 promotion, RG/TaF equivalence theorem, claim-ledger movement,
+roadmap movement, North Star movement, public-posture movement, or cross-repo
+truth is earned.

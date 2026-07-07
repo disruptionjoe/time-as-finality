@@ -1,0 +1,455 @@
+{
+  "artifact_id": "T484-transport-topology-refinement-naturalness-gate-v0.1",
+  "objective": "Test whether T483's transport-topology review target survives benign graph refinement as reachability bookkeeping only, while rejecting refinement-sensitive scale overreads.",
+  "local_anchor_checks": {
+    "t483_gate_passed": true,
+    "t483_transport_topology_review_target_admitted": true,
+    "t483_fixed_d1_control_passed": true,
+    "t483_no_internal_scale_structure_earned": true,
+    "t483_no_clock_or_duration_earned": true,
+    "t483_future_packet_requires_fixed_d1_control": true
+  },
+  "refinement_probe": {
+    "generator_rule": "topology_role = source_target_component, source_side_component, target_side_component, or other_component for original observer sites under trust-preserving reachability",
+    "comparison_domain": "T24/T38 connected and partitioned transport fixtures plus edge subdivision refinements that preserve original observer D1 profiles",
+    "connected_original_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 4,
+        "distance_from_source": 1
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 4,
+        "distance_from_source": 0
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 4,
+        "distance_from_source": 3
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 4,
+        "distance_from_source": 2
+      }
+    ],
+    "connected_refined_original_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 7,
+        "distance_from_source": 2
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 7,
+        "distance_from_source": 0
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 7,
+        "distance_from_source": 6
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_target_component",
+        "component_size": 7,
+        "distance_from_source": 4
+      }
+    ],
+    "partitioned_original_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_side_component",
+        "component_size": 2,
+        "distance_from_source": 1
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_side_component",
+        "component_size": 2,
+        "distance_from_source": 0
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "target_side_component",
+        "component_size": 2,
+        "distance_from_source": null
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "target_side_component",
+        "component_size": 2,
+        "distance_from_source": null
+      }
+    ],
+    "partitioned_refined_original_assignments": [
+      {
+        "observer_id": "family",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_side_component",
+        "component_size": 3,
+        "distance_from_source": 2
+      },
+      {
+        "observer_id": "individual",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "source_side_component",
+        "component_size": 3,
+        "distance_from_source": 0
+      },
+      {
+        "observer_id": "institution",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "target_side_component",
+        "component_size": 3,
+        "distance_from_source": null
+      },
+      {
+        "observer_id": "lab",
+        "profile_tuple": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "topology_role": "target_side_component",
+        "component_size": 3,
+        "distance_from_source": null
+      }
+    ],
+    "connected_signature": {
+      "source_target_component": 4
+    },
+    "connected_refined_signature": {
+      "source_target_component": 4
+    },
+    "partitioned_signature": {
+      "source_side_component": 2,
+      "target_side_component": 2
+    },
+    "partitioned_refined_signature": {
+      "source_side_component": 2,
+      "target_side_component": 2
+    },
+    "connected_component_sizes": {
+      "family": 4,
+      "individual": 4,
+      "institution": 4,
+      "lab": 4
+    },
+    "connected_refined_component_sizes": {
+      "family": 7,
+      "individual": 7,
+      "institution": 7,
+      "lab": 7
+    },
+    "connected_source_target_path_length": 3,
+    "connected_refined_source_target_path_length": 6,
+    "partitioned_source_target_path_length": null,
+    "controls": {
+      "original_d1_vectors_fixed": true,
+      "reachability_separates_fixed_d1_pair": true,
+      "connected_refinement_preserves_original_roles": true,
+      "partitioned_refinement_preserves_original_roles": true,
+      "reachability_relabel_invariant": true,
+      "component_size_changes_under_refinement": true,
+      "path_length_changes_under_refinement": true,
+      "partitioned_source_target_remain_unreachable": true,
+      "uses_clock_duration_or_finality_status": false,
+      "imports_rg_or_conformal_mechanism": false
+    },
+    "reading": "Reachability roles for original observers survive benign edge subdivision and relabeling. Component size and shortest path length change under the same refinement, so they cannot serve as natural internal-scale generators without a stronger invariant morphism class."
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "source_target_reachability_packet",
+      "role": "positive_review_control",
+      "generator_rule": "classify original observer sites by trust-preserving component role relative to the declared source and target",
+      "comparison_domain": "T24/T38 connected and partitioned transport fixtures, plus edge-subdivided refinements over the same original observer sites",
+      "local_taf_anchor": "T24/T38/T480/T481/T482/T483",
+      "uses_reachability_relation": true,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": true,
+      "decision": "admit_reachability_bookkeeping_no_scale_structure",
+      "route_label": "REACHABILITY_BOOKKEEPING_ADMITTED_NO_SCALE_STRUCTURE",
+      "blockers": []
+    },
+    {
+      "candidate_id": "component_size_as_scale",
+      "role": "hostile_control",
+      "generator_rule": "use the size of the source/target transport component as scale",
+      "comparison_domain": "T24/T38 connected and subdivided transport fixtures",
+      "local_taf_anchor": "T483 overread",
+      "uses_reachability_relation": false,
+      "uses_component_size": true,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "component_size_refinement_variant"
+      ]
+    },
+    {
+      "candidate_id": "shortest_path_length_as_scale",
+      "role": "hostile_control",
+      "generator_rule": "use source-to-target shortest path length as scale",
+      "comparison_domain": "T24/T38 connected and subdivided transport fixtures",
+      "local_taf_anchor": "T483 overread",
+      "uses_reachability_relation": false,
+      "uses_component_size": false,
+      "uses_path_length_metric": true,
+      "admitted": false,
+      "decision": "reject_refinement_variant",
+      "route_label": "REFINEMENT_VARIANT_SCALE_READING_BLOCKED",
+      "blockers": [
+        "path_length_refinement_variant"
+      ]
+    },
+    {
+      "candidate_id": "label_word_topology_scale",
+      "role": "hostile_control",
+      "generator_rule": "call the transport component an internal scale",
+      "comparison_domain": "component labels",
+      "local_taf_anchor": "T483 shortcut",
+      "uses_reachability_relation": false,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "generator_not_predeclared",
+        "refinement_invariance_check_missing",
+        "relabel_invariance_check_missing",
+        "label_word_without_generator"
+      ]
+    },
+    {
+      "candidate_id": "observer_id_component_order",
+      "role": "hostile_control",
+      "generator_rule": "rank components by observer identifier order",
+      "comparison_domain": "observer-id labels",
+      "local_taf_anchor": "T24 labels only",
+      "uses_reachability_relation": false,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "observer_label_order_not_relabel_invariant"
+      ]
+    },
+    {
+      "candidate_id": "relay_count_as_clock",
+      "role": "hostile_control",
+      "generator_rule": "treat added relay count as elapsed record time",
+      "comparison_domain": "subdivision relay metadata",
+      "local_taf_anchor": "T24/T38 overread",
+      "uses_reachability_relation": false,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "hidden_calendar_or_time_order",
+        "clock_duration_or_arrow_overread"
+      ]
+    },
+    {
+      "candidate_id": "record_finality_by_reachability",
+      "role": "hostile_control",
+      "generator_rule": "mark source-target reachable sites as final",
+      "comparison_domain": "transport reachability roles",
+      "local_taf_anchor": "T483 overread",
+      "uses_reachability_relation": true,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "record_finality_change_overread"
+      ]
+    },
+    {
+      "candidate_id": "rg_fixed_point_topology_source",
+      "role": "hostile_control",
+      "generator_rule": "import RG or conformal fixed point as topology source",
+      "comparison_domain": "external RG scale classes",
+      "local_taf_anchor": "external RG/conformal mechanism",
+      "uses_reachability_relation": false,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "fixed_d1_counterfactual_control_missing",
+        "refinement_invariance_check_missing",
+        "relabel_invariance_check_missing",
+        "rg_or_conformal_mechanism_imported",
+        "scale_genesis_or_physics_claim_overread",
+        "no_local_taf_anchor"
+      ]
+    },
+    {
+      "candidate_id": "promotion_shortcut_topology",
+      "role": "hostile_control",
+      "generator_rule": "declare refinement-stable reachability to be internal scale",
+      "comparison_domain": "T24/T38 transport fixtures",
+      "local_taf_anchor": "T24/T38/T483 promotion shortcut",
+      "uses_reachability_relation": true,
+      "uses_component_size": false,
+      "uses_path_length_metric": false,
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "TRANSPORT_TOPOLOGY_PACKET_BLOCKED",
+      "blockers": [
+        "scale_genesis_or_physics_claim_overread",
+        "claim_or_public_posture_promotion_shortcut"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "source_target_reachability_packet"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "TRANSPORT_TOPOLOGY_REFINEMENT_GATE_BUILT_REACHABILITY_BOOKKEEPING_ONLY",
+    "gate_passed": true,
+    "reachability_packet_admitted": true,
+    "component_size_scale_blocked": true,
+    "path_length_scale_blocked": true,
+    "hostile_controls_blocked": true,
+    "internal_scale_structure_earned": false,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "record_clock_or_duration_earned": false,
+    "record_finality_change_earned": false,
+    "reading": "T484 narrows the T483 transport-topology review target. Source/target reachability roles for the original T24/T38 observer sites are stable under edge subdivision and observer-label relabeling, so they remain admitted as review-grade reachability bookkeeping. Component size and shortest-path length change under the same benign refinement, so they are rejected as internal-scale, clock, duration, finality, or scale-genesis evidence."
+  },
+  "future_packet_minimum": [
+    "treat fixed-D1 topology separation as reachability bookkeeping unless a separate theorem earns more",
+    "include transport-refinement controls before using topology as a generator",
+    "reject component-size and path-length scale readings unless an invariant morphism class is declared",
+    "preserve observer-label relabel invariance",
+    "separate reachability topology from scale, clock, duration, finality, RG/conformal, physics, and promotion language"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

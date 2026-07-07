@@ -206,3 +206,35 @@ clock, duration, temporal arrow, record-finality change, scale-genesis theorem,
 physics claim, D1 promotion, RG/TaF equivalence theorem, claim-ledger movement,
 roadmap movement, North Star movement, public-posture movement, or cross-repo
 truth is earned.
+
+## T484 addendum: transport-topology refinement naturalness gate
+
+T484 makes the T483 topology review-target burden stricter:
+`results/T484-transport-topology-refinement-naturalness-gate-v0.1-results.md`;
+spec `tests/T484-transport-topology-refinement-naturalness-gate.md`; model
+`models/transport_topology_refinement_naturalness_gate.py`.
+
+Verdict:
+
+```text
+TRANSPORT_TOPOLOGY_REFINEMENT_GATE_BUILT_REACHABILITY_BOOKKEEPING_ONLY
+```
+
+The gate subdivides trust-preserving transport edges in the T24/T38 connected
+and partitioned fixtures while preserving the D1 profile tuples for original
+observer sites. Source/target reachability roles remain stable under
+subdivision and observer-label relabeling, so the T483 topology packet remains
+admitted only as review-grade reachability bookkeeping.
+
+Component size and shortest-path length change under the same benign
+refinement, so they are blocked as internal-scale, clock, duration, finality,
+or scale-genesis evidence. Future packets must include transport-refinement
+controls before using topology as a generator, reject component-size and
+path-length scale readings unless an invariant morphism class is declared, and
+keep reachability topology separate from scale, clock, duration, finality,
+RG/conformal, physics, and promotion language unless a separate theorem earns
+more. No independent internal scale structure, record clock, duration,
+temporal arrow, record-finality change, scale-genesis theorem, physics claim,
+D1 promotion, RG/TaF equivalence theorem, claim-ledger movement, roadmap
+movement, North Star movement, public-posture movement, or cross-repo truth is
+earned.

@@ -83,3 +83,34 @@ durations, or scale-genesis language. No D1 promotion, field-valued D1 canon
 update, RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
 claim-ledger movement, roadmap movement, North Star movement, public-posture
 movement, or cross-repo truth movement is earned.
+
+## T480 addendum: scale-label operation gate
+
+T480 makes the post-T479 scale-label burden executable:
+`results/T480-scale-label-operation-gate-v0.1-results.md`; spec
+`tests/T480-scale-label-operation-gate.md`; model
+`models/scale_label_operation_gate.py`.
+
+Verdict:
+
+```text
+SCALE_LABEL_OPERATION_GATE_BUILT_BOOKKEEPING_ONLY_NO_CLOCK_PROMOTION
+```
+
+The gate admits a single declared scale-label operation only as bookkeeping
+over T24 field-valued D1 and T38 H1+ transport. It may label observer/scale
+sites for future review and state which transport edges can be compared, but
+it does not create record clocks, durations, record finality, scale genesis,
+or physics support. Fixed-point clock language, RG-scale imports, label-only
+packets, hidden calendar order, duration or arrow extraction,
+finality-by-relabeling, conformal-phenomenology support, and promotion
+shortcuts are blocked.
+
+Future packets must declare the scale-label operation as an operation, not a
+label word; keep transported structure and transport law separate from the
+scale label; state whether the label is external bookkeeping or earned
+internal structure; and keep clocks, durations, arrows, finality changes, RG
+mechanics, and physics posture blocked unless separately earned. No D1
+promotion, RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
+claim-ledger movement, roadmap movement, North Star movement, public-posture
+movement, or cross-repo truth movement is earned.

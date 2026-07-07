@@ -1,0 +1,190 @@
+{
+  "artifact_id": "T480-scale-label-operation-gate-v0.1",
+  "objective": "Make T479's scale-label operation burden executable: admit only declared TaF-native scale-index bookkeeping before future review, while blocking fixed-point clocks, RG-scale imports, label-only shortcuts, hidden calendar order, duration/arrow overreads, finality-by-relabeling, phenomenology support, and claim promotion.",
+  "local_anchor_checks": {
+    "t479_gate_passed": true,
+    "t479_scale_label_burden_declared": true,
+    "t479_no_record_clock_earned": true,
+    "t24_field_d1_required_for_transport_and_gluing_claims": true,
+    "t24_scalar_recoverable_only_as_special_case": true,
+    "t38_h1_plus_is_best_supported": true,
+    "t38_compression_and_emergence_records_present": true
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "declared_scale_section_bookkeeping",
+      "role": "positive_control",
+      "transported_structure": "field-valued D1 profile over observer, trust, time, and scale sites",
+      "transport_law": "T38 H1+ typed transport with compression and emergence records retained separately",
+      "scale_label_operation": "attach an external finite scale label sigma in {micro, meso, macro} to each ObserverSite and allow only declared transport-edge comparisons between labeled sites",
+      "admitted_reading": "scale-index bookkeeping for future review; no clock, duration, scale genesis, or finality promotion",
+      "local_taf_anchor": "T24 field-valued D1 plus T38 H1+ plus T479 guard",
+      "admitted": true,
+      "decision": "admit_as_bookkeeping",
+      "route_label": "SCALE_LABEL_BOOKKEEPING_ADMITTED_NO_CLOCK_PROMOTION",
+      "blockers": []
+    },
+    {
+      "candidate_id": "fixed_point_intrinsic_clock",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "finite scale transport",
+      "scale_label_operation": "fixed point emits an intrinsic record clock",
+      "admitted_reading": "clock appears at the fixed point",
+      "local_taf_anchor": "T479 overread",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "fixed_point_generates_intrinsic_clock"
+      ]
+    },
+    {
+      "candidate_id": "rg_scale_parameter_as_clock",
+      "role": "hostile_control",
+      "transported_structure": "RG effective couplings",
+      "transport_law": "beta function",
+      "scale_label_operation": "identify RG scale mu with record-clock time",
+      "admitted_reading": "RG scale becomes TaF duration",
+      "local_taf_anchor": "external RG mechanism import",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "no_local_taf_anchor",
+        "rg_scale_imported_as_record_clock"
+      ]
+    },
+    {
+      "candidate_id": "label_only_no_operation",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "T38 H1+ typed transport",
+      "scale_label_operation": "",
+      "admitted_reading": "uses the word scale without an operation",
+      "local_taf_anchor": "T24/T38 named but T479 burden unpaid",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "scale_label_operation_not_declared",
+        "label_word_without_operation"
+      ]
+    },
+    {
+      "candidate_id": "hidden_calendar_breaking",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "T38 H1+ typed transport",
+      "scale_label_operation": "assign scale labels by an undeclared calendar order hidden from the packet",
+      "admitted_reading": "clock order smuggled through labels",
+      "local_taf_anchor": "T24/T38 named but hidden time source",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "hidden_calendar_or_time_order"
+      ]
+    },
+    {
+      "candidate_id": "duration_from_scale_order",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "T38 H1+ typed transport",
+      "scale_label_operation": "order the labels micro < meso < macro",
+      "admitted_reading": "ordered labels define duration and arrow",
+      "local_taf_anchor": "T24/T38 named but clock overread",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "duration_or_arrow_derived_from_scale_label"
+      ]
+    },
+    {
+      "candidate_id": "record_finality_by_relabel",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "T38 H1+ typed transport",
+      "scale_label_operation": "rename a site macro and mark it final",
+      "admitted_reading": "label change changes record finality status",
+      "local_taf_anchor": "T24/T38 named but finality overread",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "record_finality_changed_by_label"
+      ]
+    },
+    {
+      "candidate_id": "conformal_phenomenology_support",
+      "role": "hostile_control",
+      "transported_structure": "record/finality structure",
+      "transport_law": "finite scale transport",
+      "scale_label_operation": "use conformal-gravity phenomenology as support",
+      "admitted_reading": "phenomenology supports TaF scale genesis",
+      "local_taf_anchor": "N15 pointer overread",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "no_local_taf_transport_anchor",
+        "conformal_phenomenology_used_as_support",
+        "scale_genesis_or_physics_claim_overread"
+      ]
+    },
+    {
+      "candidate_id": "scale_genesis_claim_promotion",
+      "role": "hostile_control",
+      "transported_structure": "field-valued D1 profile",
+      "transport_law": "T38 H1+ typed transport",
+      "scale_label_operation": "declare a scale label",
+      "admitted_reading": "scale genesis theorem and physics posture earned",
+      "local_taf_anchor": "T24/T38/T479 promotion shortcut",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "SCALE_LABEL_PACKET_BLOCKED",
+      "blockers": [
+        "scale_genesis_or_physics_claim_overread"
+      ]
+    }
+  ],
+  "admitted_candidate_ids": [
+    "declared_scale_section_bookkeeping"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "SCALE_LABEL_OPERATION_GATE_BUILT_BOOKKEEPING_ONLY_NO_CLOCK_PROMOTION",
+    "gate_passed": true,
+    "positive_bookkeeping_packet_admitted": true,
+    "hostile_controls_blocked": true,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "physics_claim_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "record_clock_or_duration_earned": false,
+    "reading": "T480 admits a single declared scale-label operation only as bookkeeping over T24 field-valued D1 and T38 H1+ transport. The operation may label sites for future review, but it does not create clocks, durations, record finality, scale genesis, or physics support. Fixed-point clock language, RG-scale imports, label-only packets, hidden calendar order, duration or arrow extraction, finality-by-relabeling, conformal phenomenology, and promotion shortcuts stay blocked."
+  },
+  "future_packet_minimum": [
+    "declare the scale-label operation as an operation, not a label word",
+    "keep transported structure and transport law separate from the scale label",
+    "state whether the label is external bookkeeping or earned internal structure",
+    "state what observers and transport edges can compare after labeling",
+    "block clocks, durations, temporal arrows, and finality changes unless separately earned",
+    "keep RG and conformal-gravity sources at analogy-ledger grade"
+  ],
+  "not_earned": [
+    "record clock",
+    "duration or temporal arrow",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

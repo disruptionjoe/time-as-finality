@@ -1,0 +1,230 @@
+{
+  "artifact": "T498-authoritative-commit-settlement-stack-gate-v0.1",
+  "verdict": "AUTHORITATIVE_COMMIT_SETTLEMENT_STACK_BUILT_COMPOSITE_EXPLANATION",
+  "source_t496": "tests/T496-bridge-functor-admission-packet-gate.md",
+  "source_t497": "tests/T497-bounded-retrieval-source-checked-stack-gate.md",
+  "source_progress_lanes": "open-problems/composite-absorber-stack-progress-lanes.md",
+  "source_packet_report": "technical-reports/TECHNICAL-REPORT-bridge-functor-admission-packet-v0.1.md",
+  "honest_ceiling": "T498 is a finite authoritative-settlement composite explanation and review target. It does not prove Time as Finality, does not promote a distributed-systems metaphor into physics, and does not move claim ledger, roadmap, README, North Star, public posture, hard policy, external publication, or cross-repo truth.",
+  "source_states": [
+    {
+      "state_id": "settled_commit",
+      "local_visible_record": "client:order-7:commit-marker-visible",
+      "client_claim": "committed",
+      "server_verdict": "settled",
+      "ledger_log": [
+        "client_submit",
+        "server_accept",
+        "ledger_commit"
+      ],
+      "rollback_rule": "rollback_closed",
+      "completion_rights": [
+        "client_record",
+        "server_verdict",
+        "ledger_log",
+        "rollback_rule"
+      ]
+    },
+    {
+      "state_id": "pending_reconciliation",
+      "local_visible_record": "client:order-7:commit-marker-visible",
+      "client_claim": "committed",
+      "server_verdict": "pending",
+      "ledger_log": [
+        "client_submit",
+        "server_accept",
+        "reconciliation_open"
+      ],
+      "rollback_rule": "rollback_open",
+      "completion_rights": [
+        "client_record",
+        "server_verdict",
+        "ledger_log",
+        "rollback_rule"
+      ]
+    },
+    {
+      "state_id": "rolled_back_commit",
+      "local_visible_record": "client:order-7:commit-marker-visible",
+      "client_claim": "committed",
+      "server_verdict": "rolled_back",
+      "ledger_log": [
+        "client_submit",
+        "server_accept",
+        "rollback_recorded"
+      ],
+      "rollback_rule": "rollback_closed",
+      "completion_rights": [
+        "client_record",
+        "server_verdict",
+        "ledger_log",
+        "rollback_rule"
+      ]
+    },
+    {
+      "state_id": "fork_conflict",
+      "local_visible_record": "client:order-7:commit-marker-visible",
+      "client_claim": "committed",
+      "server_verdict": "conflict",
+      "ledger_log": [
+        "client_submit",
+        "server_accept",
+        "competing_authority_commit"
+      ],
+      "rollback_rule": "adjudication_required",
+      "completion_rights": [
+        "client_record",
+        "server_verdict",
+        "ledger_log",
+        "rollback_rule"
+      ]
+    }
+  ],
+  "absorber_stack": [
+    {
+      "absorber_id": "local_visible_record",
+      "status": "granted_and_tested",
+      "granted_form": "The client-local commit marker and client claim are visible.",
+      "effect": "Local display capability factors, but settlement capability does not."
+    },
+    {
+      "absorber_id": "server_verdict_completion",
+      "status": "granted_and_tested",
+      "granted_form": "The authoritative server verdict is visible.",
+      "effect": "Settlement status is no longer inferred from the local marker."
+    },
+    {
+      "absorber_id": "ledger_log_completion",
+      "status": "granted_and_tested",
+      "granted_form": "The ledger or authority log is visible.",
+      "effect": "Commit, pending reconciliation, rollback, and conflict histories are distinguished."
+    },
+    {
+      "absorber_id": "rollback_reconciliation_rule",
+      "status": "granted_and_tested",
+      "granted_form": "Rollback window and adjudication rules are part of the state.",
+      "effect": "Provisional versus closed finality is ordinary settlement bookkeeping."
+    },
+    {
+      "absorber_id": "explicit_completion_rights",
+      "status": "granted_and_tested",
+      "granted_form": "The observer profile states whether client, server, ledger, and rule fields are accessible.",
+      "effect": "The capability split is classified as access/completion mismatch, not new finality structure."
+    }
+  ],
+  "projection_evaluations": [
+    {
+      "projection_label": "local_visible",
+      "capability_label": "authoritative_settlement",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 1,
+      "capability_class_count": 4,
+      "max_capability_spread": 4,
+      "expected_max_spread": 4,
+      "non_singleton_fiber_count": 1,
+      "label": "EXPECTED_SETTLEMENT_STACK_BEHAVIOR"
+    },
+    {
+      "projection_label": "local_visible",
+      "capability_label": "local_display",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 1,
+      "capability_class_count": 1,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_SETTLEMENT_STACK_BEHAVIOR"
+    },
+    {
+      "projection_label": "client_claim_only",
+      "capability_label": "authoritative_settlement",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 1,
+      "capability_class_count": 4,
+      "max_capability_spread": 4,
+      "expected_max_spread": 4,
+      "non_singleton_fiber_count": 1,
+      "label": "EXPECTED_SETTLEMENT_STACK_BEHAVIOR"
+    },
+    {
+      "projection_label": "ledger_server_completion",
+      "capability_label": "authoritative_settlement",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_SETTLEMENT_STACK_BEHAVIOR"
+    },
+    {
+      "projection_label": "full_authority_completion",
+      "capability_label": "authoritative_settlement",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_SETTLEMENT_STACK_BEHAVIOR"
+    }
+  ],
+  "reading_decisions": [
+    {
+      "reading_id": "authoritative_commit_composite_explanation",
+      "admitted": true,
+      "label": "ADMITTED_COMPOSITE_ABSORBER_EXPLANATION",
+      "action": "record",
+      "reason": "The stack explains apparent settlement finality as local record plus authority completion."
+    },
+    {
+      "reading_id": "local_marker_as_finality_residual",
+      "admitted": false,
+      "label": "REJECTED_UNDERDESCRIBED_LOCAL_PROJECTION",
+      "action": "reject",
+      "reason": "The local-marker split disappears after granting native server, ledger, rollback, and completion state."
+    },
+    {
+      "reading_id": "distributed_systems_metaphor_proves_taf",
+      "admitted": false,
+      "label": "REJECTED_DISTRIBUTED_SYSTEMS_METAPHOR",
+      "action": "reject",
+      "reason": "Settlement systems are a domain-native fixture here, not proof of TaF or physics."
+    },
+    {
+      "reading_id": "claim_or_public_posture_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_CLAIM_OR_PUBLIC_POSTURE_SHORTCUT",
+      "action": "stop",
+      "reason": "Composite explanation does not move claims, roadmap, README, North Star, or public posture."
+    },
+    {
+      "reading_id": "external_or_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_EXTERNAL_OR_CROSS_REPO_SHORTCUT",
+      "action": "stop",
+      "reason": "The fixture does not authorize external publication or cross-repo truth movement."
+    }
+  ],
+  "overall": {
+    "all_projection_checks_expected": true,
+    "local_visible_settlement_factorizes": false,
+    "full_authority_completion_factorizes": true,
+    "outcome": "COMPOSITE_ABSORBER_EXPLANATION",
+    "review_target_only": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "strongest_result": "A single client-visible commit marker supports the native local display task but has a four-way settlement capability spread across settled, pending, rolled-back, and conflict authority states. Full server/ledger/log/rollback completion restores factorization, so the result is a composite absorber explanation of authoritative settlement rather than new finality residue.",
+  "recommended_next": "If this lane continues, source-check a domain-native commit or consensus protocol and compare its exact finality/rollback rules against the T498 finite stack before using any theorem language."
+}

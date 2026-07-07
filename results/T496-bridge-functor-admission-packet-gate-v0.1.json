@@ -1,0 +1,543 @@
+{
+  "artifact": "T496-bridge-functor-admission-packet-gate-v0.1",
+  "source_synthesis": "explorations/persona-missing-analysis-hegelian-metasynthesis-2026-07-07.md",
+  "source_packet_report": "technical-reports/TECHNICAL-REPORT-bridge-functor-admission-packet-v0.1.md",
+  "source_packet_template": "workflows/templates/bridge-functor-admission-packet.template.md",
+  "verdict": "BRIDGE_FUNCTOR_ADMISSION_GATE_BUILT_REVIEW_ONLY",
+  "honest_ceiling": "Admission gate only. T496 turns the all-persona synthesis into a hostile packet form for future work. Admission means review target, not theorem, claim movement, North Star movement, public posture, hard policy, external publication, or cross-repo truth.",
+  "allowed_domain_law_sources": [
+    "adversarial_protocol",
+    "cost_law",
+    "direct_preservation_theorem",
+    "direct_record_finality_bridge_theorem",
+    "domain_native_certifiability_theorem",
+    "domain_native_morphism_class",
+    "finite_to_continuum_bridge",
+    "measure_law",
+    "source_checked_lower_bound"
+  ],
+  "closed_routes": {
+    "bounded_record_retrieval": {
+      "route_id": "bounded_record_retrieval",
+      "closing_tests": [
+        "T495"
+      ],
+      "required_new_keys": [
+        "source_checked_lower_bound",
+        "channel_resource_task",
+        "indexed_retrieval_theorem_packet"
+      ],
+      "note": "T495 admits retention-axis review only; lower-bound language needs source checking."
+    },
+    "generic_new_bridge": {
+      "route_id": "generic_new_bridge",
+      "closing_tests": [],
+      "required_new_keys": [],
+      "note": "No specific closed lineage; generic packets still need the common form."
+    },
+    "rg_reachability_quotient": {
+      "route_id": "rg_reachability_quotient",
+      "closing_tests": [
+        "T487",
+        "T488"
+      ],
+      "required_new_keys": [
+        "independent_capability_object",
+        "domain_native_morphism_class",
+        "direct_record_finality_bridge_theorem"
+      ],
+      "note": "T488 closes reachability-quotient restarts without independent capability or morphism/theorem evidence."
+    },
+    "s1_finite_colimit": {
+      "route_id": "s1_finite_colimit",
+      "closing_tests": [
+        "T490",
+        "T491"
+      ],
+      "required_new_keys": [
+        "independent_measure_law",
+        "finite_to_continuum_bridge",
+        "separate_formal_entry_point"
+      ],
+      "note": "T491 closes finite S1 colimit restarts without new measure/bridge/formal entry."
+    },
+    "typed_gap_bridge": {
+      "route_id": "typed_gap_bridge",
+      "closing_tests": [
+        "T492"
+      ],
+      "required_new_keys": [
+        "direct_preservation_theorem",
+        "invariant_obstruction_class",
+        "schema_to_object_identity_criterion"
+      ],
+      "note": "T492 supports a shared finite schema but blocks object identity and cohomology overreads."
+    },
+    "valid_coarse_graining": {
+      "route_id": "valid_coarse_graining",
+      "closing_tests": [
+        "T478",
+        "T489"
+      ],
+      "required_new_keys": [
+        "certified_record_capability_object",
+        "domain_native_certifiability_theorem",
+        "direct_observer_theory_taf_equivalence"
+      ],
+      "note": "T489 closes minor observer-budget/coarse-graining restarts."
+    }
+  },
+  "packets": [
+    {
+      "packet_id": "typed_gap_direct_preservation_packet",
+      "title": "Typed-gap direct preservation theorem packet",
+      "route_id": "typed_gap_bridge",
+      "closed_lineage_citations": [
+        "T492"
+      ],
+      "new_keys": [
+        "direct_preservation_theorem",
+        "invariant_obstruction_class"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "same_section_identity",
+          "status": "tested",
+          "note": "T492 block preserved."
+        },
+        {
+          "name": "semantic_relabeling",
+          "status": "tested",
+          "note": "Relabel controls declared."
+        },
+        {
+          "name": "cohomology_overread",
+          "status": "tested",
+          "note": "Obstruction class must be direct."
+        }
+      ],
+      "domain_law_source": "direct_preservation_theorem",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "s1_independent_measure_packet",
+      "title": "S1 independent measure bridge packet",
+      "route_id": "s1_finite_colimit",
+      "closed_lineage_citations": [
+        "T490",
+        "T491"
+      ],
+      "new_keys": [
+        "independent_measure_law",
+        "finite_to_continuum_bridge"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "survivor_tail_circularity",
+          "status": "tested",
+          "note": "T490 control retained."
+        },
+        {
+          "name": "screen_conditioning",
+          "status": "tested",
+          "note": "T491 closure retained."
+        },
+        {
+          "name": "single_size_positive",
+          "status": "tested",
+          "note": "Multi-size burden declared."
+        }
+      ],
+      "domain_law_source": "measure_law",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "bounded_retrieval_lower_bound_packet",
+      "title": "Bounded-record indexed retrieval lower-bound packet",
+      "route_id": "bounded_record_retrieval",
+      "closed_lineage_citations": [
+        "T495"
+      ],
+      "new_keys": [
+        "source_checked_lower_bound",
+        "indexed_retrieval_theorem_packet"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "full_history_completion",
+          "status": "tested",
+          "note": "T495 positive control retained."
+        },
+        {
+          "name": "compression_coding_theory",
+          "status": "tested",
+          "note": "Lower-bound source must be checked."
+        },
+        {
+          "name": "competency_profile",
+          "status": "tested",
+          "note": "T493/T494 absorber declared."
+        }
+      ],
+      "domain_law_source": "source_checked_lower_bound",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "analogy_only_geometry_restart",
+      "title": "Geometry analogy restart without law source",
+      "route_id": "rg_reachability_quotient",
+      "closed_lineage_citations": [
+        "T487",
+        "T488"
+      ],
+      "new_keys": [
+        "independent_capability_object"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "reachability_completion",
+          "status": "tested",
+          "note": "Prior closure cited."
+        }
+      ],
+      "domain_law_source": null,
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "closed_route_without_new_key",
+      "title": "S1 finite-colimit restart without the named new key",
+      "route_id": "s1_finite_colimit",
+      "closed_lineage_citations": [
+        "T490",
+        "T491"
+      ],
+      "new_keys": [
+        "screen_conditioning_variant"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "screen_conditioning",
+          "status": "tested",
+          "note": "But only as a variant."
+        }
+      ],
+      "domain_law_source": "measure_law",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "missing_native_capability_object",
+      "title": "Packet that names a bridge but not Cap",
+      "route_id": "generic_new_bridge",
+      "closed_lineage_citations": [],
+      "new_keys": [],
+      "declares_native_capability_object": false,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "full_state_completion",
+          "status": "tested",
+          "note": "Declared."
+        }
+      ],
+      "domain_law_source": "domain_native_morphism_class",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "absorbers_declared_only",
+      "title": "Packet with absorbers named but not tested",
+      "route_id": "generic_new_bridge",
+      "closed_lineage_citations": [],
+      "new_keys": [],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "full_state_completion",
+          "status": "declared_only",
+          "note": "No hostile check."
+        }
+      ],
+      "domain_law_source": "domain_native_morphism_class",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "no_capability_spread_packet",
+      "title": "Packet with law source but no spread evidence",
+      "route_id": "generic_new_bridge",
+      "closed_lineage_citations": [],
+      "new_keys": [],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "full_state_completion",
+          "status": "tested",
+          "note": "Declared."
+        }
+      ],
+      "domain_law_source": "domain_native_morphism_class",
+      "capability_spread_non_singleton": false,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false
+    },
+    {
+      "packet_id": "public_posture_shortcut_packet",
+      "title": "Packet requesting public-posture or claim movement",
+      "route_id": "bounded_record_retrieval",
+      "closed_lineage_citations": [
+        "T495"
+      ],
+      "new_keys": [
+        "source_checked_lower_bound"
+      ],
+      "declares_native_capability_object": true,
+      "declares_task_family": true,
+      "declares_observer_access_boundary": true,
+      "declares_completion_rights": true,
+      "declares_visible_projection": true,
+      "absorber_checks": [
+        {
+          "name": "full_history_completion",
+          "status": "tested",
+          "note": "Declared."
+        }
+      ],
+      "domain_law_source": "source_checked_lower_bound",
+      "capability_spread_non_singleton": true,
+      "positive_controls_pass": true,
+      "minimality_condition_declared": true,
+      "demotion_path_declared": true,
+      "requests_claim_movement": true,
+      "requests_public_posture_movement": true,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "typed_gap_direct_preservation_packet",
+      "admitted": true,
+      "label": "ADMITTED_BRIDGE_FUNCTOR_REVIEW_TARGET",
+      "action": "review",
+      "review_target_only": true,
+      "missing_requirements": [],
+      "blocked_shortcuts": [],
+      "reason": "Packet supplies Cap, absorbers, law source, spread, controls, minimality, and demotion path.",
+      "strongest_allowed_reading": "Review target only. The packet may be executed or inspected, but it does not count as theorem, physics support, claim movement, public posture, or cross-repo truth."
+    },
+    {
+      "packet_id": "s1_independent_measure_packet",
+      "admitted": true,
+      "label": "ADMITTED_BRIDGE_FUNCTOR_REVIEW_TARGET",
+      "action": "review",
+      "review_target_only": true,
+      "missing_requirements": [],
+      "blocked_shortcuts": [],
+      "reason": "Packet supplies Cap, absorbers, law source, spread, controls, minimality, and demotion path.",
+      "strongest_allowed_reading": "Review target only. The packet may be executed or inspected, but it does not count as theorem, physics support, claim movement, public posture, or cross-repo truth."
+    },
+    {
+      "packet_id": "bounded_retrieval_lower_bound_packet",
+      "admitted": true,
+      "label": "ADMITTED_BRIDGE_FUNCTOR_REVIEW_TARGET",
+      "action": "review",
+      "review_target_only": true,
+      "missing_requirements": [],
+      "blocked_shortcuts": [],
+      "reason": "Packet supplies Cap, absorbers, law source, spread, controls, minimality, and demotion path.",
+      "strongest_allowed_reading": "Review target only. The packet may be executed or inspected, but it does not count as theorem, physics support, claim movement, public posture, or cross-repo truth."
+    },
+    {
+      "packet_id": "analogy_only_geometry_restart",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_ADMISSION_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "domain_native_law_or_theorem_source"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The packet does not satisfy the common Bridge-Functor form.",
+      "strongest_allowed_reading": "The idea may be rewritten as a complete packet."
+    },
+    {
+      "packet_id": "closed_route_without_new_key",
+      "admitted": false,
+      "label": "REJECTED_CLOSED_ROUTE_WITHOUT_REQUIRED_NEW_KEY",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "closed_route_new_key"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The cited closed route requires one of its named reopen keys.",
+      "strongest_allowed_reading": "Protected lineage remains closed to minor variants."
+    },
+    {
+      "packet_id": "missing_native_capability_object",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_ADMISSION_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "native_capability_object"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The packet does not satisfy the common Bridge-Functor form.",
+      "strongest_allowed_reading": "The idea may be rewritten as a complete packet."
+    },
+    {
+      "packet_id": "absorbers_declared_only",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_ADMISSION_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "tested_absorber_checks"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The packet does not satisfy the common Bridge-Functor form.",
+      "strongest_allowed_reading": "The idea may be rewritten as a complete packet."
+    },
+    {
+      "packet_id": "no_capability_spread_packet",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_ADMISSION_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "capability_spread_evidence"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The packet does not satisfy the common Bridge-Functor form.",
+      "strongest_allowed_reading": "The idea may be rewritten as a complete packet."
+    },
+    {
+      "packet_id": "public_posture_shortcut_packet",
+      "admitted": false,
+      "label": "BLOCKED_GOVERNANCE_OR_EXTERNAL_SHORTCUT",
+      "action": "stop",
+      "review_target_only": false,
+      "missing_requirements": [],
+      "blocked_shortcuts": [
+        "claim_movement",
+        "public_posture_movement",
+        "cross_repo_truth_movement"
+      ],
+      "reason": "Admission packets cannot move claims, posture, publication, or cross-repo truth.",
+      "strongest_allowed_reading": "No repo-local review target is admitted until shortcuts are removed."
+    }
+  ],
+  "admitted_packet_ids": [
+    "typed_gap_direct_preservation_packet",
+    "s1_independent_measure_packet",
+    "bounded_retrieval_lower_bound_packet"
+  ],
+  "rejected_packet_ids": [
+    "analogy_only_geometry_restart",
+    "closed_route_without_new_key",
+    "missing_native_capability_object",
+    "absorbers_declared_only",
+    "no_capability_spread_packet",
+    "public_posture_shortcut_packet"
+  ],
+  "overall": {
+    "admitted_count": 3,
+    "rejected_count": 6,
+    "review_target_only": true,
+    "claim_movement": false,
+    "public_posture_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "strongest_result": "The Bridge-Functor packet form admits only fully typed review targets that cite closed lineage, bring a required new key, declare Cap/pi/observer/completion rights, test mature absorbers, supply a domain-native law or theorem source, show capability-spread evidence, pass positive controls, and declare minimality plus demotion. It rejects analogy-only, incomplete, minor-restart, and governance shortcut packets.",
+  "recommended_next": "Use T496 as the preflight gate before reopening S1, RG/reachability, valid-coarse-graining, typed-gap, or bounded-retrieval surfaces. Do not treat admission as evidence; execute the admitted packet first."
+}

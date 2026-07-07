@@ -317,6 +317,16 @@ confusing effect as a stack of known components.
 Use `workflows/templates/bridge-functor-admission-packet.template.md` for the
 next candidate lane.
 
+Executable companion:
+
+```text
+T496 Bridge-Functor admission packet gate
+```
+
+T496 makes this report's packet form machine-checkable as a hostile preflight
+gate. It admits a packet only as a review target, never as theorem, claim,
+public-posture, external-publication, or cross-repo evidence.
+
 The best first candidate is a T495 successor framed as:
 
 ```text

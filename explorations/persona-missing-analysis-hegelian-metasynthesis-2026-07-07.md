@@ -223,3 +223,18 @@ analogy" to "make every analogy instantiate a hostile admission packet." The
 breakout is methodological but operational: it turns closure-router negative
 knowledge into a reusable intake structure for the next executable theorem
 attempt.
+
+## Executable Check: T496
+
+T496 turns the Bridge-Functor Admission Packet recommendation into an
+executable gate. It admits complete typed packets only as review targets when
+they cite closed lineage, bring a named new key, declare `Cap`, `pi`,
+observer/access boundary and completion rights, test mature absorbers, supply a
+domain-native law or theorem source, show capability-spread evidence, pass
+positive controls, and declare minimality plus demotion. It blocks
+analogy-only, incomplete, minor-restart, claim/posture, external-publication,
+and cross-repo shortcut packets.
+
+Verdict: `BRIDGE_FUNCTOR_ADMISSION_GATE_BUILT_REVIEW_ONLY`. This is method
+hardening only; it does not move claims, roadmap, README, North Star, public
+posture, hard policy, external publication, or cross-repo truth.

@@ -176,6 +176,15 @@ obstruction all survive the stack.
 5. Typed Translation / Object-Identity Stack.
 
 T497, T498, T499, T500, and T501 have now made all five preserved lanes
-executable. The lane set is complete as a progress-selection artifact. Future
-work should use these gates as admission screens and should not reopen a lane
-without the named new burden in that lane's latest result.
+executable. T502 closes the completed lane set to minor restarts and overreads:
+last-2 retrieval reruns, local-marker settlement residuals, kappa
+prediction-language, C(R) single-statistic readings, same-schema object
+identity, analogy-only packets, synthetic-control overreads, claim/public
+posture shortcuts, and external/cross-repo shortcuts are rejected or blocked.
+
+The lane set is complete as a progress-selection artifact. Future work should
+use T502 as the routing screen and should not reopen a lane without the named
+new burden in that lane's latest result: a checked bounded-retrieval theorem
+packet, source-checked authoritative protocol packet, kappa non-identity packet,
+full-stack C(R) residual packet, or exact-object typed-preservation packet.
+Admission remains review-only.

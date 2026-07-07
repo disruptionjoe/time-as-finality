@@ -1,0 +1,398 @@
+{
+  "artifact": "T497-bounded-retrieval-source-checked-stack-gate-v0.1",
+  "verdict": "BOUNDED_RETRIEVAL_SOURCE_CHECKED_STACK_BUILT_COMPOSITE_EXPLANATION",
+  "source_t495": "tests/T495-bounded-record-retrieval-bottleneck-gate.md",
+  "source_t496": "tests/T496-bridge-functor-admission-packet-gate.md",
+  "source_n18": "literature/N18-bounded-retrieval-copying-lower-bound-sources.md",
+  "source_progress_lanes": "open-problems/composite-absorber-stack-progress-lanes.md",
+  "honest_ceiling": "T497 is a source-checked computation-lane composite explanation and finite review target. It does not prove an SSM/Transformer theorem, does not claim physics mechanism, does not assert attention equals quantum copyability, and does not move claim ledger, roadmap, README, North Star, public posture, hard policy, external publication, or cross-repo truth.",
+  "source_checks": [
+    {
+      "source_id": "jelassi_2024_copying",
+      "citation": "Jelassi, Brandfonbrener, Kakade, and Malach, 'Repeat After Me: Transformers are Better than State Space Models at Copying,' ICML 2024.",
+      "checked": true,
+      "supports_copying_retrieval_workload": true,
+      "supports_fixed_state_caveat": true,
+      "blocks_overread": "Does not imply physics or TaF novelty; scope is copying/retrieval workloads.",
+      "allowed_use": "Primary support for source-checked bounded retrieval workload language."
+    },
+    {
+      "source_id": "gu_dao_2023_mamba",
+      "citation": "Gu and Dao, 'Mamba: Linear-Time Sequence Modeling with Selective State Spaces,' arXiv:2312.00752.",
+      "checked": true,
+      "supports_copying_retrieval_workload": false,
+      "supports_fixed_state_caveat": true,
+      "blocks_overread": "Blocks simplistic SSM-bad readings; selective/input-dependent state matters.",
+      "allowed_use": "Architecture caveat for any SSM comparison."
+    },
+    {
+      "source_id": "schlag_2021_fast_weights",
+      "citation": "Schlag, Irie, and Schmidhuber, 'Linear Transformers Are Secretly Fast Weight Programmers,' ICML 2021.",
+      "checked": true,
+      "supports_copying_retrieval_workload": true,
+      "supports_fixed_state_caveat": true,
+      "blocks_overread": "Blocks naive full-attention-is-unbounded-history readings; fast-weight memory has capacity structure.",
+      "allowed_use": "Memory-programming caveat for attention/linear-attention comparisons."
+    }
+  ],
+  "direct_copying_retrieval_sources": [
+    "jelassi_2024_copying",
+    "schlag_2021_fast_weights"
+  ],
+  "absorber_stack": [
+    {
+      "absorber_id": "full_history_access",
+      "status": "granted_and_tested",
+      "granted_form": "The full stream is visible.",
+      "effect": "Arbitrary indexed retrieval factors through visibility."
+    },
+    {
+      "absorber_id": "bounded_retained_state_summary",
+      "status": "granted_and_tested",
+      "granted_form": "Only the last k bits are visible as committed state.",
+      "effect": "Arbitrary indexed retrieval has non-singleton spread for n > k."
+    },
+    {
+      "absorber_id": "native_retained_task_control",
+      "status": "granted_and_tested",
+      "granted_form": "The task asks only for the retained suffix.",
+      "effect": "The bounded summary factors its native task."
+    },
+    {
+      "absorber_id": "source_checked_copying_retrieval_workload",
+      "status": "source_checked",
+      "granted_form": "N18 sources permit computation-side copying/retrieval workload language.",
+      "effect": "The lane can use lower-bound-source status as review scaffolding, not as theorem import."
+    },
+    {
+      "absorber_id": "architecture_caveat_stack",
+      "status": "granted",
+      "granted_form": "Fixed latent state, selective state, and fast-weight memory distinctions are not collapsed.",
+      "effect": "Naive SSM/attention polarity and physics overreads are blocked."
+    }
+  ],
+  "length_evaluations": [
+    {
+      "length": 2,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 2,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 2,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 3,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 8,
+      "capability_class_count": 8,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 3,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 8,
+      "max_capability_spread": 2,
+      "expected_max_spread": 2,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 3,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 4,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 16,
+      "capability_class_count": 16,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 4,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 16,
+      "max_capability_spread": 4,
+      "expected_max_spread": 4,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 4,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 5,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 32,
+      "capability_class_count": 32,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 5,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 32,
+      "max_capability_spread": 8,
+      "expected_max_spread": 8,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 5,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 6,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 64,
+      "capability_class_count": 64,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 6,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 64,
+      "max_capability_spread": 16,
+      "expected_max_spread": 16,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 6,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 7,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 128,
+      "capability_class_count": 128,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 7,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 128,
+      "max_capability_spread": 32,
+      "expected_max_spread": 32,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 7,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 8,
+      "projection_label": "full_history",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 256,
+      "capability_class_count": 256,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 8,
+      "projection_label": "last_2_state",
+      "capability_label": "arbitrary_retrieval",
+      "factorizes": false,
+      "expected_factorizes": false,
+      "projection_class_count": 4,
+      "capability_class_count": 256,
+      "max_capability_spread": 64,
+      "expected_max_spread": 64,
+      "non_singleton_fiber_count": 4,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    },
+    {
+      "length": 8,
+      "projection_label": "last_2_state",
+      "capability_label": "last_2_suffix_retrieval",
+      "factorizes": true,
+      "expected_factorizes": true,
+      "projection_class_count": 4,
+      "capability_class_count": 4,
+      "max_capability_spread": 1,
+      "expected_max_spread": 1,
+      "non_singleton_fiber_count": 0,
+      "label": "EXPECTED_STACK_BEHAVIOR"
+    }
+  ],
+  "reading_decisions": [
+    {
+      "reading_id": "bounded_retrieval_composite_explanation",
+      "admitted": true,
+      "label": "ADMITTED_COMPOSITE_ABSORBER_EXPLANATION",
+      "action": "record",
+      "reason": "The stack explains native retention success plus arbitrary retrieval failure under bounded committed state."
+    },
+    {
+      "reading_id": "complexity_theorem_import",
+      "admitted": false,
+      "label": "REJECTED_THEOREM_IMPORT_SHORTCUT",
+      "action": "reject",
+      "reason": "T497 source-checks theorem neighborhood but does not reproduce or prove the source theorem."
+    },
+    {
+      "reading_id": "physics_mechanism_import",
+      "admitted": false,
+      "label": "REJECTED_PHYSICS_MECHANISM_IMPORT",
+      "action": "reject",
+      "reason": "N18 supports a computation-side retrieval workload only, not a physics mechanism."
+    },
+    {
+      "reading_id": "attention_quantum_copyability_revival",
+      "admitted": false,
+      "label": "REJECTED_NAIVE_COPYABILITY_REVIVAL",
+      "action": "reject",
+      "reason": "Architecture retrieval/copying comparisons do not map to unknown quantum-state copyability."
+    },
+    {
+      "reading_id": "public_or_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_PUBLIC_OR_CROSS_REPO_SHORTCUT",
+      "action": "stop",
+      "reason": "Source checking a computation-side workload does not authorize public posture or cross-repo truth movement."
+    }
+  ],
+  "overall": {
+    "all_length_checks_expected": true,
+    "source_checked_retrieval_workload": true,
+    "outcome": "COMPOSITE_ABSORBER_EXPLANATION",
+    "review_target_only": true,
+    "claim_movement": false,
+    "public_posture_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "strongest_result": "Across finite binary streams of length 2 through 8, full-history visibility factors arbitrary indexed retrieval, while last-2 committed state has growing arbitrary-retrieval spread once length exceeds 2 and still factors its native retained-suffix task. N18 source-checks copying/retrieval workload language for this computation lane, but T497 admits only composite absorber explanation and review-target status.",
+  "recommended_next": "If the lane continues, build a theorem-facing packet that restates one checked copying/retrieval lower-bound theorem with its exact assumptions, then compare that theorem's state model to the T497 finite capability-spread fixture."
+}

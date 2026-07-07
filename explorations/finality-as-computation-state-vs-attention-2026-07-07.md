@@ -41,6 +41,38 @@ FINALIZED — the structure stable under collapse of the process. This ties to G
 the SM content is *located* as what survives finalization, not *forced* by the mechanism. The separateness
 is then a prediction (two irreducible modes + a selection), not an embarrassment.
 
+## Differential test (Joe's challenge, 2026-07-07): does it beat metaphor?
+
+Pushed to check whether this lines up with MEASURABLE quantum-vs-classical differences in ways other
+explanations do not, the honest result is a downgrade AND a sharpening:
+
+- **The naive mapping FAILS a polarity test.** "Attention = quantum superposition" implies quantum =
+  good-at-copying, because Transformers are good at copying/retrieval and SSMs are bad at it. But the
+  copyable states in physics are the CLASSICAL (measured/decohered) ones; unknown quantum states cannot be
+  cloned. The mapping points the wrong way — because "attention" conflates two properties: an all-paths
+  PROCESS (superposition-like) and RETRIEVAL of stored items (memory-like). Only the second is load-bearing.
+- **The surviving mapping is the information-RETENTION axis, and it is measurable.** Transformer = retain
+  the full history explicitly (KV cache O(n)), reversible-in-principle, information-conserving. SSM =
+  compress the past irreversibly into a bounded O(1) state, provably losing arbitrary-retrieval. That axis
+  lines up with a real measurable distinction: unitary evolution conserves information (interference
+  visibility, coherence times, the black-hole information paradox) vs decoherence/thermodynamic evolution
+  that loses it (entropy production, Landauer kT ln2 erasure). Same quantitative tradeoff: the cost of the
+  full reversible description grows with system size on both sides (KV cache with sequence length <-> quantum
+  coherence with system size). The SSM<-Transformer compression IS structurally decoherence = finality.
+- **But as an EXPLANATION it is not novel — it is isomorphic to one physics already has.** Zurek
+  decoherence/einselection + quantum Darwinism (classicality = information loss to environment + redundancy)
+  and Landauer (irreversibility = thermodynamic cost) already give this. The SSM/Transformer framing
+  restates it in architecture vocabulary; it does not out-explain the decoherence account. Claiming
+  otherwise would be overselling. (from memory: Zurek; Landauer.)
+- **Where it could be MORE than metaphor — the real payload.** The SSM-vs-Transformer literature has
+  something the physics side states only loosely: HARD, PROVABLE complexity-separation theorems about
+  exactly what a bounded-state model CANNOT compute that full-attention can (copying / state-tracking lower
+  bounds; Merrill et al., from memory). Physics says "classical coarse-graining loses information" vaguely;
+  the SSM lower bounds name PRECISELY which class of retrievals a bounded memory provably cannot perform —
+  which is exactly the shape of the C(R) open problem (what a bounded classical record can/cannot
+  re-collect). The non-trivial move is therefore NOT "physics is a Transformer" but **importing the SSM
+  lower-bound theorems as candidate sharp statements of the finality/capability boundary.**
+
 ## The one falsifiable prediction (the cure for manufactured convergence)
 
 The composite must predict something neither half does. Candidate: **the classical<-quantum transition

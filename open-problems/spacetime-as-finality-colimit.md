@@ -111,3 +111,25 @@ causal, metric, covariance, locality, embedding, or Lorentzian constraints is
 admitted for review. This does not promote S1, reverse T223, derive spacetime,
 prove manifoldlikeness, supply a dimension estimate, prove a sprinkling law,
 establish a continuum theorem, move public posture, or move the claim ledger.
+
+## Status Addendum (2026-07-07): finite-colimit closure router
+
+T491 closes the current T223-T490 finite S1 colimit route to minor restarts:
+`results/T491-post-t490-s1-finite-colimit-closure-router-v0.1-results.md`;
+spec `tests/T491-post-t490-s1-finite-colimit-closure-router.md`; model
+`models/post_t490_s1_finite_colimit_closure_router.py`.
+
+Verdict:
+`POST_T490_S1_FINITE_COLIMIT_ROUTE_CLOSED_NEW_EVIDENCE_ONLY`. T490 admission
+is review-only and counts as no S1 evidence. Uniform finite-colimit reruns,
+survivor-tail indicators, guardrail-screen conditioning, post-T223 screen
+drift, single-size positives, T490-admission overreads, spacetime or Lorentzian
+overclaims, claim/public-posture shortcuts, and external-action shortcuts are
+rejected or blocked.
+
+Only future packets with a predeclared independent measure law, a finite-to-
+continuum bridge, or a separate formal entry point such as topos, NCG,
+path-integral, or stochastic geometry are admitted for review, and only as new
+evidence targets. This does not promote S1, reverse T223, derive spacetime,
+prove manifoldlikeness, supply a dimension estimate, prove a sprinkling law,
+establish a continuum theorem, move public posture, or move the claim ledger.

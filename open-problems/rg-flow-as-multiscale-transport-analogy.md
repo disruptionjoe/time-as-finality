@@ -114,3 +114,34 @@ mechanics, and physics posture blocked unless separately earned. No D1
 promotion, RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
 claim-ledger movement, roadmap movement, North Star movement, public-posture
 movement, or cross-repo truth movement is earned.
+
+## T481 addendum: internal scale-structure admission gate
+
+T481 makes T480's external-bookkeeping/internal-structure split executable:
+`results/T481-internal-scale-structure-admission-gate-v0.1-results.md`; spec
+`tests/T481-internal-scale-structure-admission-gate.md`; model
+`models/internal_scale_structure_admission_gate.py`.
+
+Verdict:
+
+```text
+INTERNAL_SCALE_STRUCTURE_GATE_BUILT_REVIEW_ONLY_NO_CLOCK_PROMOTION
+```
+
+The gate admits external scale labels only as comparison-domain bookkeeping
+over T24/T38/T480. It also admits one synthetic future internal-scale packet
+only as a review target when the packet predeclares a TaF-native internal
+generating rule, comparison domain, positive and negative controls, and
+relabel-invariance checks. Assertion-only internal structure, label-only
+structure, posthoc comparison domains, hidden calendar order, duration or
+arrow extraction, finality-by-scale-labeling, RG/conformal mechanism import,
+physics support, and promotion shortcuts are blocked.
+
+This earns no internal scale structure. Future packets must state whether the
+scale label is external bookkeeping or claimed internal structure before
+witness construction, predeclare the comparison domain, and keep clocks,
+durations, temporal arrows, finality changes, RG/conformal mechanics, physics
+posture, and claim movement blocked unless separately earned. No D1 promotion,
+RG/TaF equivalence theorem, scale-genesis theorem, physics claim,
+claim-ledger movement, roadmap movement, North Star movement, public-posture
+movement, or cross-repo truth movement is earned.

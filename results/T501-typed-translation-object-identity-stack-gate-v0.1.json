@@ -1,0 +1,530 @@
+{
+  "artifact": "T501-typed-translation-object-identity-stack-gate-v0.1",
+  "verdict": "TYPED_TRANSLATION_OBJECT_IDENTITY_STACK_BUILT_SCHEMA_PRESERVATION_ONLY",
+  "sources": {
+    "progress_lanes": "open-problems/composite-absorber-stack-progress-lanes.md",
+    "t492": "results/T492-typed-gap-category-bridge-v0.1-results.md",
+    "t496": "results/T496-bridge-functor-admission-packet-gate-v0.1-results.md",
+    "t92": "results/accessible-witness-gap-restriction-v0.1-results.md",
+    "t113": "results/gap-presheaf-classification-v0.1-results.md"
+  },
+  "stack_layers": [
+    "typed_schema_interface",
+    "relabeling_quotient",
+    "object_identity_criterion",
+    "gauge_coordinate_quotient",
+    "direct_preservation_theorem"
+  ],
+  "honest_ceiling": "T501 is a finite typed-translation/object-identity admission gate only. It does not prove a category theorem, cohomology theorem, physical torsion claim, consciousness claim, complexity claim, geometry claim, claim-ledger movement, roadmap movement, README movement, North Star movement, public posture movement, hard-policy movement, protected-license movement, external publication, or cross-repo truth.",
+  "systems": {
+    "future_exact_gap_system": {
+      "system_id": "future_exact_gap_system",
+      "source": "synthetic_future_packet",
+      "schema_slots": [
+        "finite patch family with restriction maps",
+        "ambient object A(U) of content fixed by the larger system",
+        "local or auditable subobject F(U) with a declared inclusion into A(U)",
+        "gap object G(U)=A(U)-F(U) or its typed subobject",
+        "typed admissibility predicate tau selecting meaningful gap sections",
+        "restriction closure rho(tau(G(U))) subset tau(G(V)) for V subset U",
+        "domain-specific target interpretation kept outside the schema"
+      ],
+      "carrier_kind": "future_exact_typed_gap_sections",
+      "target_kind": "future_exact_obstruction_targets",
+      "admissibility_rule": "same_tau_same_carrier_same_target",
+      "restriction_rule": "direct_preservation_theorem_supplied",
+      "object_identity_key": [
+        "carrier:future_exact_typed_gap_sections",
+        "target:future_exact_obstruction_targets",
+        "tau:same_tau_same_carrier_same_target",
+        "theorem:direct_preservation"
+      ],
+      "relabeling_quotient_signature": [
+        "label_relabeling_removed",
+        "target_semantics_preserved"
+      ],
+      "gauge_coordinate_quotient_signature": [
+        "coordinate_choice_removed",
+        "obstruction_class_preserved"
+      ],
+      "preserved_invariants": [
+        "typed_gap_schema",
+        "object_identity_key",
+        "invariant_obstruction_class"
+      ],
+      "blocked_overreads": [
+        "claim_promotion",
+        "geometry_or_physics_promotion"
+      ]
+    },
+    "t113_order_pair": {
+      "system_id": "t113_order_pair",
+      "source": "results/gap-presheaf-classification-v0.1-results.md",
+      "schema_slots": [
+        "finite patch family with restriction maps",
+        "ambient object A(U) of content fixed by the larger system",
+        "local or auditable subobject F(U) with a declared inclusion into A(U)",
+        "gap object G(U)=A(U)-F(U) or its typed subobject",
+        "typed admissibility predicate tau selecting meaningful gap sections",
+        "restriction closure rho(tau(G(U))) subset tau(G(V)) for V subset U",
+        "domain-specific target interpretation kept outside the schema"
+      ],
+      "carrier_kind": "nonreflexive_order_pair_sections",
+      "target_kind": "phantom_incomparability_witnesses",
+      "admissibility_rule": "endpoint-accessible + canonical ambient completion + F(U) subset A(U) + local incomparability",
+      "restriction_rule": "FRP restriction closure preserved",
+      "object_identity_key": [
+        "carrier:nonreflexive_order_pair_sections",
+        "target:phantom_incomparability_witnesses",
+        "tau:endpoint_canonical_local_incomparability",
+        "raw_h0:refuted"
+      ],
+      "relabeling_quotient_signature": [
+        "event_name_relabeling_removed",
+        "endpoint_role_preserved",
+        "local_incomparability_preserved"
+      ],
+      "gauge_coordinate_quotient_signature": [
+        "presentation_order_removed",
+        "canonical_ambient_completion_preserved"
+      ],
+      "preserved_invariants": [
+        "typed_gap_schema",
+        "restriction_closure",
+        "phantom_incomparability_target"
+      ],
+      "blocked_overreads": [
+        "raw_h0_classifier",
+        "same_object_as_unary_proposition",
+        "cohomology_or_physical_torsion"
+      ]
+    },
+    "t92_unary_proposition": {
+      "system_id": "t92_unary_proposition",
+      "source": "results/accessible-witness-gap-restriction-v0.1-results.md",
+      "schema_slots": [
+        "finite patch family with restriction maps",
+        "ambient object A(U) of content fixed by the larger system",
+        "local or auditable subobject F(U) with a declared inclusion into A(U)",
+        "gap object G(U)=A(U)-F(U) or its typed subobject",
+        "typed admissibility predicate tau selecting meaningful gap sections",
+        "restriction closure rho(tau(G(U))) subset tau(G(V)) for V subset U",
+        "domain-specific target interpretation kept outside the schema"
+      ],
+      "carrier_kind": "unary_typed_proposition_sections",
+      "target_kind": "accessible_witness_unauditability_gaps",
+      "admissibility_rule": "ambient restriction + audit monotonicity + stable proposition typing",
+      "restriction_rule": "supported_with_explicit_boundaries",
+      "object_identity_key": [
+        "carrier:unary_typed_proposition_sections",
+        "target:accessible_witness_unauditability_gaps",
+        "tau:ambient_restriction_audit_monotonicity_stable_proposition",
+        "raw_h0:not_order_pair_object"
+      ],
+      "relabeling_quotient_signature": [
+        "proposition_name_relabeling_removed",
+        "audit_boundary_preserved",
+        "stable_typing_preserved"
+      ],
+      "gauge_coordinate_quotient_signature": [
+        "presentation_order_removed",
+        "audit_monotonicity_preserved"
+      ],
+      "preserved_invariants": [
+        "typed_gap_schema",
+        "restriction_closure",
+        "accessible_witness_gap_target"
+      ],
+      "blocked_overreads": [
+        "same_object_as_order_pair",
+        "consciousness_or_complexity_claim",
+        "semantic_relabeling_identity"
+      ]
+    }
+  },
+  "packets": [
+    {
+      "packet_id": "t92_t113_schema_translation",
+      "description": "The actual T492 bridge: T92 and T113 share the typed-gap interface, but carrier, target, and admissibility semantics differ.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "same_object_identity_overread",
+      "description": "A packet that treats shared schema as same object identity.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": true,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "raw_h0_classifier_overread",
+      "description": "A packet that revives raw H0(G) as the shared classifier.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": true,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "semantic_relabeling_identity",
+      "description": "A packet that uses semantic relabeling as identity.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": false,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": true,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "gauge_coordinate_choice_identity",
+      "description": "A packet that treats quotienting presentation choices as object identity.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": false,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": true,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "cohomology_physical_torsion_shortcut",
+      "description": "A packet that upgrades schema preservation to cohomology or torsion.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": true,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "consciousness_complexity_shortcut",
+      "description": "A packet that upgrades unary proposition gaps to consciousness or complexity.",
+      "source_system_id": "t92_unary_proposition",
+      "target_system_id": "t113_order_pair",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "incomplete_schema_only_packet",
+      "description": "A packet that names the interface but omits quotient and identity burdens.",
+      "source_system_id": "t113_order_pair",
+      "target_system_id": "t92_unary_proposition",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": false,
+      "grants_object_identity_criterion": false,
+      "grants_gauge_coordinate_quotient": false,
+      "supplies_direct_preservation_theorem": false,
+      "theorem_preserves_target_semantics": false,
+      "invariant_obstruction_survives_stack": false,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "synthetic_exact_object_preservation_packet",
+      "description": "A future packet shape: same carrier, target, tau, quotients, and direct theorem still leave an invariant obstruction.",
+      "source_system_id": "future_exact_gap_system",
+      "target_system_id": "future_exact_gap_system",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": true,
+      "theorem_preserves_target_semantics": true,
+      "invariant_obstruction_survives_stack": true,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "claim_public_posture_shortcut",
+      "description": "A packet that asks to treat typed translation as public-facing support.",
+      "source_system_id": "future_exact_gap_system",
+      "target_system_id": "future_exact_gap_system",
+      "declares_typed_schema_interface": true,
+      "grants_relabeling_quotient": true,
+      "grants_object_identity_criterion": true,
+      "grants_gauge_coordinate_quotient": true,
+      "supplies_direct_preservation_theorem": true,
+      "theorem_preserves_target_semantics": true,
+      "invariant_obstruction_survives_stack": true,
+      "asks_same_object_identity": false,
+      "uses_raw_h0_classifier": false,
+      "uses_semantic_relabeling_as_identity": false,
+      "uses_gauge_coordinate_choice_as_identity": false,
+      "promotes_cohomology_or_physical_torsion": false,
+      "promotes_consciousness_or_complexity": false,
+      "requests_claim_or_public_posture": true,
+      "requests_external_publication": true,
+      "requests_cross_repo_truth": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "t92_t113_schema_translation",
+      "admitted": true,
+      "label": "COMPOSITE_ABSORBER_EXPLANATION_SCHEMA_TRANSLATION_ONLY",
+      "action": "record_composite_explanation",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "The typed interface is preserved, but object identity or direct theorem burden is not met."
+    },
+    {
+      "packet_id": "same_object_identity_overread",
+      "admitted": false,
+      "label": "REJECTED_OBJECT_IDENTITY_CRITERION_FAILS",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "Carrier, target semantics, admissibility rule, or identity key differ."
+    },
+    {
+      "packet_id": "raw_h0_classifier_overread",
+      "admitted": false,
+      "label": "REJECTED_RAW_H0_CLASSIFIER_REVIVAL",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "T113 already refutes raw H0(G) as the classifier."
+    },
+    {
+      "packet_id": "semantic_relabeling_identity",
+      "admitted": false,
+      "label": "REJECTED_SEMANTIC_RELABELING_IDENTITY",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "object_identity_criterion"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "Relabeling quotient removes naming conventions; it does not supply object identity."
+    },
+    {
+      "packet_id": "gauge_coordinate_choice_identity",
+      "admitted": false,
+      "label": "REJECTED_GAUGE_COORDINATE_IDENTITY",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "object_identity_criterion"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "Gauge or coordinate quotient removes presentation choices; it does not identify target semantics."
+    },
+    {
+      "packet_id": "cohomology_physical_torsion_shortcut",
+      "admitted": false,
+      "label": "REJECTED_COHOMOLOGY_OR_PHYSICAL_TORSION_SHORTCUT",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "T492/T501 do not supply a cohomology theorem or physical torsion result."
+    },
+    {
+      "packet_id": "consciousness_complexity_shortcut",
+      "admitted": false,
+      "label": "REJECTED_CONSCIOUSNESS_OR_COMPLEXITY_SHORTCUT",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "Unary proposition gaps do not promote to consciousness or complexity-class claims."
+    },
+    {
+      "packet_id": "incomplete_schema_only_packet",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_TRANSLATION_STACK",
+      "action": "reject",
+      "interface_preserved": true,
+      "object_identity_passes": false,
+      "direct_preservation_passes": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "relabeling_quotient",
+        "object_identity_criterion",
+        "gauge_coordinate_quotient"
+      ],
+      "blocked_shortcuts": [],
+      "reason": "The packet omits at least one required stack layer."
+    },
+    {
+      "packet_id": "synthetic_exact_object_preservation_packet",
+      "admitted": true,
+      "label": "ADMITTED_FUTURE_REVIEW_TARGET_OBJECT_IDENTITY_AND_RESIDUAL",
+      "action": "review_only",
+      "interface_preserved": true,
+      "object_identity_passes": true,
+      "direct_preservation_passes": true,
+      "residual_survives_stack": true,
+      "missing_layers": [],
+      "blocked_shortcuts": [],
+      "reason": "The packet clears object identity and direct preservation while retaining an invariant obstruction."
+    },
+    {
+      "packet_id": "claim_public_posture_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_GOVERNANCE_OR_EXTERNAL_SHORTCUT",
+      "action": "stop",
+      "interface_preserved": true,
+      "object_identity_passes": true,
+      "direct_preservation_passes": true,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "blocked_shortcuts": [
+        "claim_or_public_posture",
+        "external_publication",
+        "cross_repo_truth"
+      ],
+      "reason": "Typed translation gates cannot move claims, posture, publication, or cross-repo truth."
+    }
+  ],
+  "overall": {
+    "actual_t92_t113_interface_preserved": true,
+    "actual_t92_t113_object_identity_passes": false,
+    "actual_t92_t113_direct_preservation_passes": false,
+    "actual_t92_t113_residual_survives_stack": false,
+    "synthetic_exact_packet_admitted_for_review": true,
+    "review_target_only_for_residuals": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "hard_policy_movement": false,
+    "protected_license_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "strongest_result": "The current T92/T113 bridge preserves a typed-gap schema interface under quotient discipline, but it fails object identity because carrier kind, target kind, and admissibility rule remain distinct. No direct preservation theorem is supplied for the actual pair, so the honest result is a composite absorber explanation: same interface, not same object.",
+  "recommended_next": "Treat the five composite absorber-stack lanes as executed. Future typed-gap work should not reopen object identity unless it supplies a same-carrier/same-target identity key plus a direct preservation theorem and an invariant obstruction that survives the full stack."
+}

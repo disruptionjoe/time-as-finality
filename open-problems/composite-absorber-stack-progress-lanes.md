@@ -158,6 +158,15 @@ Best next progress:
 Try a typed preservation-theorem packet. If it fails, record the composite
 explanation: same interface, not same object.
 
+T501 result: the T92/T113 bridge preserves the typed-gap schema interface under
+relabeling and quotient discipline, but object identity remains blocked because
+carrier kind, target kind, and admissibility rule differ. No direct
+preservation theorem is supplied for the actual pair, so the result is a
+composite explanation: same interface, not same object. A synthetic exact-object
+packet is admitted only as a future review target when same carrier, same
+target, same admissibility rule, direct preservation theorem, and invariant
+obstruction all survive the stack.
+
 ## Priority
 
 1. Bounded Retrieval Stack.
@@ -166,5 +175,7 @@ explanation: same interface, not same object.
 4. Competency + Resource + Permission Stack.
 5. Typed Translation / Object-Identity Stack.
 
-T497, T498, T499, and T500 have now made the first four lanes executable. The
-next unconsumed lane is Typed Translation / Object-Identity Stack.
+T497, T498, T499, T500, and T501 have now made all five preserved lanes
+executable. The lane set is complete as a progress-selection artifact. Future
+work should use these gates as admission screens and should not reopen a lane
+without the named new burden in that lane's latest result.

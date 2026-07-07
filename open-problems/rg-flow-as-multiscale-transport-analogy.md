@@ -271,3 +271,34 @@ structure, record clock, duration, temporal arrow, record-finality change,
 scale-genesis theorem, physics claim, D1 promotion, RG/TaF equivalence theorem,
 claim-ledger movement, roadmap movement, North Star movement, public-posture
 movement, or cross-repo truth is earned.
+
+## T487 addendum: reachability quotient capability-spread gate
+
+T487 consumes T485's committed quotient result without rerunning the T485
+topology gate:
+`results/T487-reachability-quotient-capability-spread-gate-v0.1-results.md`;
+spec `tests/T487-reachability-quotient-capability-spread-gate.md`; model
+`models/reachability_quotient_capability_spread_gate.py`.
+
+Verdict:
+
+```text
+REACHABILITY_QUOTIENT_CAPABILITY_SPREAD_BUILT_TASK_ONLY
+```
+
+The T485 quotient signature is sufficient for two declared transport-task
+capabilities: source-target reachability and the quotient role profile over
+original observer sites. It is not sufficient for path-latency, relay-budget,
+or component-size capability readings, because those spreads are non-singleton
+over the connected quotient-visible fiber. Finality, clock, duration, scale,
+physics, and promotion readings remain blocked overreads.
+
+Future packets that use the T485 quotient must declare the capability object
+before treating the quotient as sufficient, compute capability spread over
+quotient-visible fibers, and keep reachability sufficiency separate from
+scale, clock, duration, finality, RG/conformal mechanisms, physics posture, or
+claim promotion unless a separate theorem earns more. No independent internal
+scale structure, record clock, duration, temporal arrow, record-finality
+change, scale-genesis theorem, physics claim, D1 promotion, RG/TaF equivalence
+theorem, claim-ledger movement, roadmap movement, North Star movement,
+public-posture movement, or cross-repo truth is earned.

@@ -1,0 +1,680 @@
+{
+  "artifact_id": "T487-reachability-quotient-capability-spread-gate-v0.1",
+  "objective": "Consume T485's stable reachability quotient and test capability spread over the quotient-visible fibers without rerunning T485.",
+  "t485_anchor": {
+    "artifact_id": "T485-transport-topology-invariant-quotient-gate-v0.1",
+    "verdict": "TRANSPORT_TOPOLOGY_INVARIANT_QUOTIENT_BUILT_REACHABILITY_ONLY",
+    "gate_passed": true,
+    "reachability_quotient_admitted": true,
+    "component_size_scale_blocked": true,
+    "hop_band_scale_blocked": true,
+    "record_finality_change_earned": false
+  },
+  "visible_projection": "T485 quotient_signature over original observer-site source/target reachability roles",
+  "fixture_rows": [
+    {
+      "fixture_id": "connected_original",
+      "quotient_signature": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_reachable": true,
+      "quotient_role_profile": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_hop_band": "short",
+      "relay_site_count": 0,
+      "component_size_signature": [
+        [
+          "family",
+          4
+        ],
+        [
+          "individual",
+          4
+        ],
+        [
+          "institution",
+          4
+        ],
+        [
+          "lab",
+          4
+        ]
+      ],
+      "max_component_size": 4,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "connected_subdivided_once",
+      "quotient_signature": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_reachable": true,
+      "quotient_role_profile": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_hop_band": "middle",
+      "relay_site_count": 3,
+      "component_size_signature": [
+        [
+          "family",
+          7
+        ],
+        [
+          "individual",
+          7
+        ],
+        [
+          "institution",
+          7
+        ],
+        [
+          "lab",
+          7
+        ]
+      ],
+      "max_component_size": 7,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "connected_subdivided_twice",
+      "quotient_signature": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_reachable": true,
+      "quotient_role_profile": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_hop_band": "long",
+      "relay_site_count": 9,
+      "component_size_signature": [
+        [
+          "family",
+          13
+        ],
+        [
+          "individual",
+          13
+        ],
+        [
+          "institution",
+          13
+        ],
+        [
+          "lab",
+          13
+        ]
+      ],
+      "max_component_size": 13,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "partitioned_original",
+      "quotient_signature": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_reachable": false,
+      "quotient_role_profile": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_hop_band": "unreachable",
+      "relay_site_count": 0,
+      "component_size_signature": [
+        [
+          "family",
+          2
+        ],
+        [
+          "individual",
+          2
+        ],
+        [
+          "institution",
+          2
+        ],
+        [
+          "lab",
+          2
+        ]
+      ],
+      "max_component_size": 2,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "partitioned_subdivided_once",
+      "quotient_signature": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_reachable": false,
+      "quotient_role_profile": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_hop_band": "unreachable",
+      "relay_site_count": 2,
+      "component_size_signature": [
+        [
+          "family",
+          3
+        ],
+        [
+          "individual",
+          3
+        ],
+        [
+          "institution",
+          3
+        ],
+        [
+          "lab",
+          3
+        ]
+      ],
+      "max_component_size": 3,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "partitioned_subdivided_twice",
+      "quotient_signature": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_reachable": false,
+      "quotient_role_profile": [
+        [
+          "source_side_component",
+          2
+        ],
+        [
+          "target_side_component",
+          2
+        ]
+      ],
+      "source_target_hop_band": "unreachable",
+      "relay_site_count": 6,
+      "component_size_signature": [
+        [
+          "family",
+          5
+        ],
+        [
+          "individual",
+          5
+        ],
+        [
+          "institution",
+          5
+        ],
+        [
+          "lab",
+          5
+        ]
+      ],
+      "max_component_size": 5,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    },
+    {
+      "fixture_id": "connected_relabel",
+      "quotient_signature": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_reachable": true,
+      "quotient_role_profile": [
+        [
+          "source_target_component",
+          4
+        ]
+      ],
+      "source_target_hop_band": "short",
+      "relay_site_count": 0,
+      "component_size_signature": [
+        [
+          "site_0",
+          4
+        ],
+        [
+          "site_1",
+          4
+        ],
+        [
+          "site_2",
+          4
+        ],
+        [
+          "site_3",
+          4
+        ]
+      ],
+      "max_component_size": 4,
+      "record_finality_status": "unchanged",
+      "claim_or_public_posture_status": "none"
+    }
+  ],
+  "capability_spreads": {
+    "source_target_reachable": {
+      "cap_field": "source_target_reachable",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "False"
+        ],
+        "(('source_target_component', 4),)": [
+          "True"
+        ]
+      },
+      "all_visible_classes_singleton": true,
+      "non_singleton_visible_classes": []
+    },
+    "quotient_role_profile": {
+      "cap_field": "quotient_role_profile",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "(('source_side_component', 2), ('target_side_component', 2))"
+        ],
+        "(('source_target_component', 4),)": [
+          "(('source_target_component', 4),)"
+        ]
+      },
+      "all_visible_classes_singleton": true,
+      "non_singleton_visible_classes": []
+    },
+    "source_target_hop_band": {
+      "cap_field": "source_target_hop_band",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "'unreachable'"
+        ],
+        "(('source_target_component', 4),)": [
+          "'long'",
+          "'middle'",
+          "'short'"
+        ]
+      },
+      "all_visible_classes_singleton": false,
+      "non_singleton_visible_classes": [
+        "(('source_target_component', 4),)"
+      ]
+    },
+    "relay_site_count": {
+      "cap_field": "relay_site_count",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "0",
+          "2",
+          "6"
+        ],
+        "(('source_target_component', 4),)": [
+          "0",
+          "3",
+          "9"
+        ]
+      },
+      "all_visible_classes_singleton": false,
+      "non_singleton_visible_classes": [
+        "(('source_side_component', 2), ('target_side_component', 2))",
+        "(('source_target_component', 4),)"
+      ]
+    },
+    "max_component_size": {
+      "cap_field": "max_component_size",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "2",
+          "3",
+          "5"
+        ],
+        "(('source_target_component', 4),)": [
+          "13",
+          "4",
+          "7"
+        ]
+      },
+      "all_visible_classes_singleton": false,
+      "non_singleton_visible_classes": [
+        "(('source_side_component', 2), ('target_side_component', 2))",
+        "(('source_target_component', 4),)"
+      ]
+    },
+    "record_finality_status": {
+      "cap_field": "record_finality_status",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "'unchanged'"
+        ],
+        "(('source_target_component', 4),)": [
+          "'unchanged'"
+        ]
+      },
+      "all_visible_classes_singleton": true,
+      "non_singleton_visible_classes": []
+    },
+    "claim_or_public_posture_status": {
+      "cap_field": "claim_or_public_posture_status",
+      "visible_class_spreads": {
+        "(('source_side_component', 2), ('target_side_component', 2))": [
+          "'none'"
+        ],
+        "(('source_target_component', 4),)": [
+          "'none'"
+        ]
+      },
+      "all_visible_classes_singleton": true,
+      "non_singleton_visible_classes": []
+    }
+  },
+  "candidate_evaluations": [
+    {
+      "candidate_id": "source_target_reachability_task",
+      "role": "positive_review_control",
+      "cap_field": "source_target_reachable",
+      "native_comparison": "Boolean equality for the declared transport task",
+      "local_anchor": "T485 admitted reachability quotient",
+      "admitted": true,
+      "decision": "admit_declared_reachability_task_only",
+      "route_label": "REACHABILITY_CAPABILITY_SPREAD_SINGLETON",
+      "blockers": [],
+      "spread": {
+        "cap_field": "source_target_reachable",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "False"
+          ],
+          "(('source_target_component', 4),)": [
+            "True"
+          ]
+        },
+        "all_visible_classes_singleton": true,
+        "non_singleton_visible_classes": []
+      }
+    },
+    {
+      "candidate_id": "quotient_role_profile_task",
+      "role": "positive_review_control",
+      "cap_field": "quotient_role_profile",
+      "native_comparison": "role-profile equality over original observer sites",
+      "local_anchor": "T485 admitted reachability quotient",
+      "admitted": true,
+      "decision": "admit_declared_reachability_task_only",
+      "route_label": "REACHABILITY_CAPABILITY_SPREAD_SINGLETON",
+      "blockers": [],
+      "spread": {
+        "cap_field": "quotient_role_profile",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "(('source_side_component', 2), ('target_side_component', 2))"
+          ],
+          "(('source_target_component', 4),)": [
+            "(('source_target_component', 4),)"
+          ]
+        },
+        "all_visible_classes_singleton": true,
+        "non_singleton_visible_classes": []
+      }
+    },
+    {
+      "candidate_id": "path_latency_band_task",
+      "role": "hostile_control",
+      "cap_field": "source_target_hop_band",
+      "native_comparison": "hop-band equality",
+      "local_anchor": "T485 blocked hop-band scale reading",
+      "admitted": false,
+      "decision": "reject_non_singleton_spread",
+      "route_label": "CAPABILITY_UNDERDETERMINED_BY_QUOTIENT",
+      "blockers": [
+        "capability_not_task_natural_under_t485",
+        "non_singleton_capability_spread",
+        "path_or_hop_band_refinement_variant",
+        "clock_duration_or_arrow_overread"
+      ],
+      "spread": {
+        "cap_field": "source_target_hop_band",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "'unreachable'"
+          ],
+          "(('source_target_component', 4),)": [
+            "'long'",
+            "'middle'",
+            "'short'"
+          ]
+        },
+        "all_visible_classes_singleton": false,
+        "non_singleton_visible_classes": [
+          "(('source_target_component', 4),)"
+        ]
+      }
+    },
+    {
+      "candidate_id": "relay_budget_task",
+      "role": "hostile_control",
+      "cap_field": "relay_site_count",
+      "native_comparison": "exact relay-count equality",
+      "local_anchor": "T485 blocked relay-count reading",
+      "admitted": false,
+      "decision": "reject_non_singleton_spread",
+      "route_label": "CAPABILITY_UNDERDETERMINED_BY_QUOTIENT",
+      "blockers": [
+        "capability_not_task_natural_under_t485",
+        "non_singleton_capability_spread",
+        "relay_count_refinement_artifact",
+        "clock_duration_or_arrow_overread"
+      ],
+      "spread": {
+        "cap_field": "relay_site_count",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "0",
+            "2",
+            "6"
+          ],
+          "(('source_target_component', 4),)": [
+            "0",
+            "3",
+            "9"
+          ]
+        },
+        "all_visible_classes_singleton": false,
+        "non_singleton_visible_classes": [
+          "(('source_side_component', 2), ('target_side_component', 2))",
+          "(('source_target_component', 4),)"
+        ]
+      }
+    },
+    {
+      "candidate_id": "component_size_capacity_task",
+      "role": "hostile_control",
+      "cap_field": "max_component_size",
+      "native_comparison": "component-size equality",
+      "local_anchor": "T485 blocked component-size reading",
+      "admitted": false,
+      "decision": "reject_non_singleton_spread",
+      "route_label": "CAPABILITY_UNDERDETERMINED_BY_QUOTIENT",
+      "blockers": [
+        "capability_not_task_natural_under_t485",
+        "non_singleton_capability_spread",
+        "component_size_refinement_variant",
+        "reachability_quotient_not_internal_scale_structure"
+      ],
+      "spread": {
+        "cap_field": "max_component_size",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "2",
+            "3",
+            "5"
+          ],
+          "(('source_target_component', 4),)": [
+            "13",
+            "4",
+            "7"
+          ]
+        },
+        "all_visible_classes_singleton": false,
+        "non_singleton_visible_classes": [
+          "(('source_side_component', 2), ('target_side_component', 2))",
+          "(('source_target_component', 4),)"
+        ]
+      }
+    },
+    {
+      "candidate_id": "reachability_finality_task",
+      "role": "hostile_control",
+      "cap_field": "record_finality_status",
+      "native_comparison": "finality-status equality",
+      "local_anchor": "T485 finality overread guard",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "CAPABILITY_READING_BLOCKED",
+      "blockers": [
+        "capability_not_task_natural_under_t485",
+        "record_finality_change_overread"
+      ],
+      "spread": {
+        "cap_field": "record_finality_status",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "'unchanged'"
+          ],
+          "(('source_target_component', 4),)": [
+            "'unchanged'"
+          ]
+        },
+        "all_visible_classes_singleton": true,
+        "non_singleton_visible_classes": []
+      }
+    },
+    {
+      "candidate_id": "quotient_promotion_task",
+      "role": "hostile_control",
+      "cap_field": "claim_or_public_posture_status",
+      "native_comparison": "promotion-status equality",
+      "local_anchor": "T485 promotion shortcut guard",
+      "admitted": false,
+      "decision": "reject_or_block",
+      "route_label": "CAPABILITY_READING_BLOCKED",
+      "blockers": [
+        "capability_not_task_natural_under_t485",
+        "reachability_quotient_not_internal_scale_structure",
+        "scale_genesis_or_physics_claim_overread",
+        "claim_or_public_posture_promotion_shortcut"
+      ],
+      "spread": {
+        "cap_field": "claim_or_public_posture_status",
+        "visible_class_spreads": {
+          "(('source_side_component', 2), ('target_side_component', 2))": [
+            "'none'"
+          ],
+          "(('source_target_component', 4),)": [
+            "'none'"
+          ]
+        },
+        "all_visible_classes_singleton": true,
+        "non_singleton_visible_classes": []
+      }
+    }
+  ],
+  "admitted_candidate_ids": [
+    "source_target_reachability_task",
+    "quotient_role_profile_task"
+  ],
+  "hostile_violations": [],
+  "overall_verdict": {
+    "verdict": "REACHABILITY_QUOTIENT_CAPABILITY_SPREAD_BUILT_TASK_ONLY",
+    "gate_passed": true,
+    "reachability_task_sufficient": true,
+    "role_profile_task_sufficient": true,
+    "path_latency_underdetermined": true,
+    "relay_budget_underdetermined": true,
+    "component_size_underdetermined": true,
+    "hostile_controls_blocked": true,
+    "internal_scale_structure_earned": false,
+    "record_clock_or_duration_earned": false,
+    "record_finality_change_earned": false,
+    "scale_genesis_theorem_earned": false,
+    "physics_claim_earned": false,
+    "claim_ledger_update": "none",
+    "north_star_update": "none",
+    "roadmap_update": "none",
+    "public_posture_update": "none",
+    "reading": "The T485 quotient signature is sufficient for the declared reachability task and quotient role-profile task. It is not sufficient for path-latency, relay-budget, or component-size capabilities, whose spreads are non-singleton over the same visible quotient class. Finality, scale, physics, and promotion readings remain blocked overreads."
+  },
+  "future_packet_minimum": [
+    "state the capability object before reading the reachability quotient as sufficient",
+    "compute capability spread over quotient-visible fibers",
+    "treat non-singleton path, relay, and component-size spreads as underdetermination",
+    "do not convert reachability sufficiency into scale, clock, duration, finality, physics, or promotion evidence"
+  ],
+  "not_earned": [
+    "independent internal scale structure",
+    "record clock",
+    "duration or temporal arrow",
+    "record-finality change",
+    "scale-genesis theorem",
+    "physics or conformal-gravity claim",
+    "D1 promotion",
+    "RG/TaF equivalence theorem",
+    "claim-ledger movement",
+    "roadmap movement",
+    "North Star movement",
+    "public-posture movement"
+  ]
+}

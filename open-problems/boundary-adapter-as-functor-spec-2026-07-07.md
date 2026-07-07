@@ -140,6 +140,38 @@ only/bad-composition controls, and keep the result review-only until source-cate
 owning surface. T504 earns no real GU source category, real GU/TaF adapter, two-adapter gate, adjunction,
 equivalence, mirror-boundary claim, or claim/public-posture movement.
 
+## Second build result (2026-07-07) — faithfulness + adjoint, `models/boundary_adapter_functor_faithfulness.py`, exit 0
+
+The named next legs, built and run. A subtlety first: `GUBdy` is a THIN category (a poset), so plain
+faithfulness is automatic; the property that carries content is **ORDER-REFLECTION** (a D1 morphism
+`F(A)->F(B)` exists IFF `A<=B`). An order-reflecting + injective-on-objects functor is an ORDER-EMBEDDING.
+
+- **FAITHFULNESS LEG — PROMOTED on the physics-critical distinction, and it UNIFIES with physics-grounding.**
+  `F` order-reflects the physical-vs-mirror FACE distinction: no mismatch involves `W-`, and `F(W-)->F(W+)`
+  does NOT exist — the two boundary faces are reflected as incomparable. This holds PRECISELY because T12'
+  gives `mirror.accessible_support = 0`, and the PHYSICS-WRONG functor (`mirror.accessible=1`) now FAILS it
+  (a spurious `F(W-)->F(W+)` appears). So order-reflection is the exact property that functoriality missed in
+  the first build, and the physics is what supplies it — the "faithfulness" and "physics-grounding" next-legs
+  are **ONE leg**.
+- **THE PRECISE LIMIT (a real finding, surfaced by the check, not a clean pass).** `F` is NOT a FULL
+  order-embedding: its ONLY order-reflection failure is the pure-physical DIMENSION collapse `F(W+)->F(W+0)`.
+  The flat per-site capability profile is blind to redundant identical physical directions, so D1 morphisms
+  collapse the physical sector onto its sub-sector. Named fix: the capability object must carry sub-sector
+  DIMENSION in a morphism-respecting way (profile-exact preservation makes this a genuine design question
+  about what "restriction" means for capability). The mirror face is unaffected — the physics protects it.
+- **ADJOINT / SECOND-ADAPTER LEG — PARTIAL.** `G = F^{-1}` gives `G o F = id` on objects and an order-iso only
+  for the FACE poset `{physical, mirror, full}`; `F` is FAITHFUL-NOT-FULL into `D1Cat` (2 morphisms
+  `F(W+0)->F(W+)` vs 1 in `GUBdy`). So this is ONE adapter (F and its inverse onto a non-full image), NOT the
+  two INDEPENDENT adapters the tri-repo gate requires; a genuine reflection `G : D1Cat -> GUBdy` on all of
+  `D1Cat` is unbuilt. The two-adapter gate is NOT closed.
+
+Net after both builds: the adapter is a definite object that reflects the individual<->collective FACE
+distinction **physics-forcedly** (the real content, and the physics is what makes it faithful), is blind to
+within-face dimension (named fix), and stands as **ONE of the two** required adapters. The remaining
+requirement is now precise: (i) a dimension-carrying capability encoding to make `F` a full embedding, and
+(ii) a SECOND, INDEPENDENT adapter (e.g. via TI issuance or independent physics). No claim moved; no identity
+asserted.
+
 ## Guards
 
 - **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are

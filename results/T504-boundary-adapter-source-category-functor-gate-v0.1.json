@@ -1,0 +1,383 @@
+{
+  "artifact_id": "T504-boundary-adapter-source-category-functor-gate-v0.1",
+  "verdict": "BOUNDARY_SOURCE_CATEGORY_FUNCTOR_GATE_BUILT_REVIEW_ONLY",
+  "source_open_problem": "open-problems/boundary-adapter-as-functor-spec-2026-07-07.md",
+  "target_category_anchor": {
+    "name": "T41 D1Cat",
+    "forms_proper_category": true,
+    "all_category_laws_hold": true,
+    "po1_is_functor_to_bool": false
+  },
+  "objective": "Make CT-1's boundary-adapter burden executable: no adapter packet is admitted until it names a source category, maps objects and morphisms into D1Cat, satisfies identity and composition laws, and is non-constant.",
+  "packets": [
+    {
+      "packet_id": "synthetic_sector_restriction_functor",
+      "description": "Finite synthetic source category with a non-constant functor into D1Cat.",
+      "source_category_declared": true,
+      "target_fixture_kind": "valid_nonconstant",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "object_only_mirror_bridge",
+      "description": "Names the mirror object and C(R) object but gives no action on morphisms.",
+      "source_category_declared": true,
+      "target_fixture_kind": "object_only",
+      "declares_object_map": true,
+      "declares_morphism_map": false,
+      "maps_w_minus_to_collective_complement": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "missing_source_morphisms",
+      "description": "Uses boundary-sector objects without a category of morphisms.",
+      "source_category_declared": false,
+      "target_fixture_kind": "missing_source",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "constant_functor_control",
+      "description": "Maps every source object and morphism into one D1 object.",
+      "source_category_declared": true,
+      "target_fixture_kind": "constant",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": false,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "bad_composite_morphism_map",
+      "description": "Maps objects and morphisms but violates F(g;f)=F(g);F(f).",
+      "source_category_declared": true,
+      "target_fixture_kind": "bad_composition",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "w_minus_wrong_target",
+      "description": "A non-constant functor that does not send W-minus to collective complement.",
+      "source_category_declared": true,
+      "target_fixture_kind": "wrong_w_minus_target",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": false,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": false,
+      "depends_on_sibling_repo_truth": false
+    },
+    {
+      "packet_id": "sibling_truth_shortcut",
+      "description": "Attempts to treat sibling-repo GU carrier content as already verified here.",
+      "source_category_declared": true,
+      "target_fixture_kind": "valid_nonconstant",
+      "declares_object_map": true,
+      "declares_morphism_map": true,
+      "maps_w_minus_to_collective_complement": true,
+      "requests_claim_movement": false,
+      "requests_public_posture_movement": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth_movement": true,
+      "depends_on_sibling_repo_truth": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "synthetic_sector_restriction_functor",
+      "admitted": true,
+      "label": "ADMITTED_SOURCE_CATEGORY_FUNCTOR_REVIEW_TARGET",
+      "action": "review",
+      "review_target_only": true,
+      "missing_requirements": [],
+      "blocked_shortcuts": [],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": {
+        "object_map_total": true,
+        "morphism_map_total": true,
+        "identity_laws_hold": true,
+        "composition_laws_hold": true,
+        "functor_laws_hold": true,
+        "nonconstant_on_objects": true,
+        "nonconstant_on_nonidentity_morphisms": true,
+        "nonconstant_functor": true,
+        "w_minus_maps_to_collective_complement": true,
+        "failed_composition_checks": []
+      },
+      "strongest_allowed_reading": "Synthetic finite review target only. The packet proves that the CT-1 check is executable against D1Cat, not that GU has supplied the real source category or that the tri-repo adapter is true."
+    },
+    {
+      "packet_id": "object_only_mirror_bridge",
+      "admitted": false,
+      "label": "REJECTED_OBJECT_ONLY_NOT_A_FUNCTOR",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "morphism_map"
+      ],
+      "blocked_shortcuts": [],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": null,
+      "strongest_allowed_reading": "Rejected packet; no adapter review target admitted."
+    },
+    {
+      "packet_id": "missing_source_morphisms",
+      "admitted": false,
+      "label": "REJECTED_SOURCE_CATEGORY_NOT_BUILT",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "source_category"
+      ],
+      "blocked_shortcuts": [],
+      "source_category_report": null,
+      "functor_report": null,
+      "strongest_allowed_reading": "Rejected packet; no adapter review target admitted."
+    },
+    {
+      "packet_id": "constant_functor_control",
+      "admitted": false,
+      "label": "REJECTED_CONSTANT_FUNCTOR_CONTROL",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "nonconstant_functor",
+        "w_minus_collective_complement_target"
+      ],
+      "blocked_shortcuts": [],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": {
+        "object_map_total": true,
+        "morphism_map_total": true,
+        "identity_laws_hold": true,
+        "composition_laws_hold": true,
+        "functor_laws_hold": true,
+        "nonconstant_on_objects": false,
+        "nonconstant_on_nonidentity_morphisms": false,
+        "nonconstant_functor": false,
+        "w_minus_maps_to_collective_complement": false,
+        "failed_composition_checks": []
+      },
+      "strongest_allowed_reading": "Rejected packet; no adapter review target admitted."
+    },
+    {
+      "packet_id": "bad_composite_morphism_map",
+      "admitted": false,
+      "label": "REJECTED_FUNCTOR_LAW_FAILURE",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "functor_laws"
+      ],
+      "blocked_shortcuts": [],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": {
+        "object_map_total": true,
+        "morphism_map_total": true,
+        "identity_laws_hold": true,
+        "composition_laws_hold": false,
+        "functor_laws_hold": false,
+        "nonconstant_on_objects": true,
+        "nonconstant_on_nonidentity_morphisms": true,
+        "nonconstant_functor": true,
+        "w_minus_maps_to_collective_complement": true,
+        "failed_composition_checks": [
+          "composition:restrict_to_mirror;restrict_to_wall"
+        ]
+      },
+      "strongest_allowed_reading": "Rejected packet; no adapter review target admitted."
+    },
+    {
+      "packet_id": "w_minus_wrong_target",
+      "admitted": false,
+      "label": "REJECTED_WRONG_W_MINUS_TARGET",
+      "action": "reject",
+      "review_target_only": false,
+      "missing_requirements": [
+        "w_minus_collective_complement_target"
+      ],
+      "blocked_shortcuts": [],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": {
+        "object_map_total": true,
+        "morphism_map_total": true,
+        "identity_laws_hold": true,
+        "composition_laws_hold": true,
+        "functor_laws_hold": true,
+        "nonconstant_on_objects": true,
+        "nonconstant_on_nonidentity_morphisms": true,
+        "nonconstant_functor": true,
+        "w_minus_maps_to_collective_complement": false,
+        "failed_composition_checks": []
+      },
+      "strongest_allowed_reading": "Rejected packet; no adapter review target admitted."
+    },
+    {
+      "packet_id": "sibling_truth_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_CROSS_REPO_OR_GOVERNANCE_SHORTCUT",
+      "action": "stop",
+      "review_target_only": false,
+      "missing_requirements": [],
+      "blocked_shortcuts": [
+        "cross_repo_truth_movement",
+        "sibling_repo_truth_dependency"
+      ],
+      "source_category_report": {
+        "identities_exist": true,
+        "composition_closed": true,
+        "associativity_holds": true,
+        "left_units_hold": true,
+        "right_units_hold": true,
+        "forms_category": true,
+        "object_count": 3,
+        "morphism_count": 6,
+        "composable_pair_count": 10
+      },
+      "functor_report": {
+        "object_map_total": true,
+        "morphism_map_total": true,
+        "identity_laws_hold": true,
+        "composition_laws_hold": true,
+        "functor_laws_hold": true,
+        "nonconstant_on_objects": true,
+        "nonconstant_on_nonidentity_morphisms": true,
+        "nonconstant_functor": true,
+        "w_minus_maps_to_collective_complement": true,
+        "failed_composition_checks": []
+      },
+      "strongest_allowed_reading": "The packet must be rewritten as repo-local review intake; sibling-repo truth and cross-repo movement are not executed here."
+    }
+  ],
+  "admitted_packet_ids": [
+    "synthetic_sector_restriction_functor"
+  ],
+  "rejected_packet_ids": [
+    "object_only_mirror_bridge",
+    "missing_source_morphisms",
+    "constant_functor_control",
+    "bad_composite_morphism_map",
+    "w_minus_wrong_target",
+    "sibling_truth_shortcut"
+  ],
+  "overall": {
+    "admitted_count": 1,
+    "rejected_count": 6,
+    "review_target_only": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "hard_policy_movement": false,
+    "protected_license_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false,
+    "sibling_repo_inspection": false,
+    "strongest_reading": "T504 does not build the real GU/TaF adapter. It builds the TaF-side admission gate for such an adapter. A synthetic finite boundary-sector category can map non-constantly into D1Cat and satisfy functor laws, which proves the check is executable. Object-only bridges, missing source morphisms, constant functors, bad composition maps, W-minus mis-targeting, and cross-repo shortcut packets are rejected or blocked."
+  },
+  "future_packet_minimum": [
+    "declare boundary-sector objects inside a named source category",
+    "declare source morphisms that compose and have identities",
+    "map every source object to a D1Cat object or declared D1 subcategory object",
+    "map every source morphism to a D1RestrictionMorphism",
+    "prove F(id) = id and F(g;f) = F(g);F(f) on the finite fixture",
+    "show the functor is non-constant on objects or nonidentity morphisms",
+    "send the W-minus or mirror-sector object to the declared collective-complement target",
+    "include constant-functor, object-only, and bad-composition hostile controls",
+    "keep admission review-only until sibling repo source-category truth is supplied by that repo"
+  ],
+  "not_earned": [
+    "real GU source category",
+    "real GU/TaF adapter",
+    "two-adapter gate",
+    "adjunction or equivalence",
+    "mirror equals collective-capability boundary",
+    "category theorem beyond the finite synthetic fixture",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "hard-policy movement",
+    "external publication",
+    "cross-repo truth movement"
+  ]
+}

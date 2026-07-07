@@ -119,10 +119,31 @@ is the CT-2 lesson applied to itself: functoriality is the "pushout-easy" part; 
 limit-side (faithfulness / forced structure). The build advanced #1 from prose to a definite object and
 **located the next requirement**; it did not close the adapter, and no claim moved.
 
+## TaF-side admission gate: T504
+
+T504 (`tests/T504-boundary-adapter-source-category-functor-gate.md`) turns the same CT-1 burden into a
+repo-local executable admission gate:
+
+```text
+BOUNDARY_SOURCE_CATEGORY_FUNCTOR_GATE_BUILT_REVIEW_ONLY
+```
+
+T504 deliberately does **not** inspect sibling repos or assert their source-category truth. It uses a finite
+synthetic boundary-sector fixture only to prove that the TaF-side check is executable against the T41 `D1Cat`
+target. The gate admits one synthetic non-constant functor as a review target and rejects or blocks object-only
+bridges, missing source morphisms, constant functors, bad composite morphism maps, wrong W-minus targets, and
+sibling-repo/cross-repo shortcut packets.
+
+The remaining burden is therefore sharper: a future real bridge packet must supply source-owned boundary
+objects and morphisms, prove functor laws into `D1Cat` or a declared D1 subcategory, include constant/object-
+only/bad-composition controls, and keep the result review-only until source-category truth is supplied by the
+owning surface. T504 earns no real GU source category, real GU/TaF adapter, two-adapter gate, adjunction,
+equivalence, mirror-boundary claim, or claim/public-posture movement.
+
 ## Guards
 
-- **No claim moves.** This is a spec; `F` is not built. The finding "`GUBdy` is not yet a category" is the
-  honest first result.
+- **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are
+  review material; they do not close the real adapter or move ledgers.
 - **Manufactured-convergence, categorical form:** a constant functor, or one factoring through a trivial
   category, "connects" everything and proves nothing — refuse it exactly as the Z/3-gate refused the
   "both mod-3" method.

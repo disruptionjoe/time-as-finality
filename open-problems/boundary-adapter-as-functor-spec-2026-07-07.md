@@ -247,6 +247,36 @@ out a shared knob or shared brief, include falsifiable disagreement controls,
 declare the finite capability bound, and remain review-only until a runnable
 artifact earns a narrower update.
 
+## TaF-side dimension-carrying embedding gate: T506
+
+T506 (`tests/T506-boundary-adapter-dimension-carrying-embedding-gate.md`) makes
+build 2's named dimension defect executable:
+
+```text
+DIMENSION_CARRYING_EMBEDDING_GATE_BUILT_REVIEW_ONLY
+```
+
+The flat D1 baseline still admits the spurious pure-physical collapse
+`F(W+) -> F(W+0)`, so a plain per-site profile is not enough to make the
+adapter a full order-reflecting embedding. A local synthetic dimension-carrying
+encoding repairs that specific defect when it predeclares exact dimension
+atoms, requires injective site maps, and preserves the physical/mirror face
+kind. Under those constraints, the finite boundary-sector order is reflected
+exactly: expected inclusions remain and non-source-order target morphisms are
+blocked.
+
+The hostile controls matter as much as the positive fixture. Cardinality-only
+dimension counting can block the `W+ -> W+0` collapse while losing the
+mirror/physical face guard under a physics-wrong mirror packet. Noninjective
+"dimension" maps still allow the original many-to-one collapse. Post-hoc
+dimension retuning, claim/public-posture shortcuts, external-publication
+shortcuts, and cross-repo shortcuts are rejected or blocked.
+
+This earns only a TaF-side admission pattern for a future dimension packet. It
+does not supply real GU source-category truth, real TI source truth, real
+adapter identity, de-correlated adapter arrival, two-adapter gate closure,
+claim-ledger movement, or public-posture movement.
+
 ## Guards
 
 - **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are

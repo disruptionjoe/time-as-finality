@@ -64,3 +64,15 @@ The result is deliberately priced: the standard positivity/BRST plus full-Born c
 plus full-Born is visible rather than hidden; the hidden-record reading survives only as review material in the
 Krein-retention plus self-normalized/projector Born corner. T507 does not decide BRST exactness, accept
 Krein-retention quantization, prove a hidden mirror record, move claims, or move cross-repo truth.
+
+## Governed artifact pointer: T508
+
+T508 (`tests/T508-brst-cohomology-record-admission-gate.md`) now carries the
+repo-native admission gate for the BRST/exactness burden named above. A future
+packet must predeclare a nilpotent constraint operator `Q`, prove the mirror is
+Q-closed, decide exactness by membership in `im(Q)`, declare the cohomology or
+physical-state quotient and Q-closed observables, include exact/nontrivial
+controls, and still pay T507's operation and normalization gates. T508 admits a
+nontrivial mirror class only as review material and does not decide real BRST
+status, Krein quantization, hidden-record physics, source-action truth, claim
+status, public posture, or cross-repo truth.

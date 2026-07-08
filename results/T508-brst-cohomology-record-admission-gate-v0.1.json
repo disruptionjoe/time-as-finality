@@ -1,0 +1,581 @@
+{
+  "artifact": "T508-brst-cohomology-record-admission-gate-v0.1",
+  "verdict": "BRST_COHOMOLOGY_RECORD_GATE_BUILT_REVIEW_ONLY",
+  "source_gate": "tests/T507-finality-record-redundancy-double-gate.md",
+  "objective": "Make T507's BRST/exactness burden executable as a finite admission gate. BRST language must supply a predeclared nilpotent constraint structure, cohomology quotient, observable discipline, exact/nontrivial controls, and the T507 operation/normalization controls before any hidden-record review target is admitted.",
+  "basis": [
+    "physical",
+    "mirror",
+    "gauge_seed",
+    "auxiliary"
+  ],
+  "packets": [
+    {
+      "packet_id": "exact_mirror_default",
+      "description": "Synthetic exact-control packet: Q maps a gauge seed onto the mirror vector, so the mirror is closed and exact.",
+      "q_kind": "exact_mirror",
+      "operation_algebra": "positivity_preserving",
+      "normalization_rule": "full_born",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "nontrivial_mirror_full_krein_selfnorm",
+      "description": "Synthetic review packet: the mirror is Q-closed and not Q-exact, with T507's full-Krein recovery and self-normalized hiddenness controls paid.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "nontrivial_mirror_full_born",
+      "description": "The cohomology class is nontrivial, but the packet keeps full-space Born normalization, so T507's hiddenness gate is not paid.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "full_born",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "nontrivial_mirror_no_recovery",
+      "description": "The cohomology class is nontrivial, but the admissible operation algebra is still positivity-preserving.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "positivity_preserving",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "non_nilpotent_control",
+      "description": "Invalid packet: the declared Q is not nilpotent.",
+      "q_kind": "non_nilpotent",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "mirror_not_closed_control",
+      "description": "Invalid packet: the mirror is not Q-closed.",
+      "q_kind": "mirror_not_closed",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "post_hoc_q_shortcut",
+      "description": "The constraint operator is selected after the split.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": false,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "description": "The packet declares a Q but omits control burdens.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": false,
+      "q_closed_observables_declared": false,
+      "includes_exact_control": false,
+      "includes_nontrivial_control": false,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "untyped_brst_shortcut",
+      "description": "The packet asserts BRST status without a Q structure.",
+      "q_kind": "not_supplied",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": false,
+      "quotient_or_cohomology_declared": false,
+      "q_closed_observables_declared": false,
+      "includes_exact_control": false,
+      "includes_nontrivial_control": false,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "description": "The packet tries to move claims or cross-repo truth.",
+      "q_kind": "nontrivial_mirror",
+      "operation_algebra": "full_krein_collective",
+      "normalization_rule": "self_normalized",
+      "q_predeclared": true,
+      "quotient_or_cohomology_declared": true,
+      "q_closed_observables_declared": true,
+      "includes_exact_control": true,
+      "includes_nontrivial_control": true,
+      "includes_t507_operation_controls": true,
+      "includes_t507_normalization_controls": true,
+      "brst_asserted_without_constraint_structure": false,
+      "requests_claim_or_public_posture": true,
+      "requests_external_publication": true,
+      "requests_cross_repo_truth": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "exact_mirror_default",
+      "admitted": false,
+      "label": "BRST_EXACT_REDUNDANCY_RECORDED",
+      "action": "record_negative",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "t507_double_gate_paid": false,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "In this finite fixture, an exact mirror vector routes to redundancy rather than hidden-record support."
+    },
+    {
+      "packet_id": "nontrivial_mirror_full_krein_selfnorm",
+      "admitted": true,
+      "label": "ADMITTED_NONTRIVIAL_COHOMOLOGY_REVIEW_TARGET",
+      "action": "review_only",
+      "review_target_only": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A predeclared nilpotent Q with mirror in ker(Q) but not im(Q), plus the T507 double gate, is admitted only as a hidden-record review target."
+    },
+    {
+      "packet_id": "nontrivial_mirror_full_born",
+      "admitted": false,
+      "label": "REJECTED_NONTRIVIAL_BUT_FULL_BORN_VISIBLE",
+      "action": "demote_to_visible_physical_dof",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": false,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A nontrivial mirror class under full-space Born normalization is visible by T507's leakage control, not hidden record support."
+    },
+    {
+      "packet_id": "nontrivial_mirror_no_recovery",
+      "admitted": false,
+      "label": "REJECTED_NONTRIVIAL_BUT_NO_RECORD_RECOVERY",
+      "action": "demote_to_nonrecoverable_class",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": false,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A nontrivial cohomology class is not a record reading unless the declared operation algebra can recover the mirror split."
+    },
+    {
+      "packet_id": "non_nilpotent_control",
+      "admitted": false,
+      "label": "REJECTED_NON_NILPOTENT_CONSTRAINT",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": false,
+      "mirror_q_closed": false,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": -1,
+      "missing_requirements": [
+        "nilpotency Q^2 = 0",
+        "mirror vector in ker(Q)"
+      ],
+      "strongest_allowed_reading": "A BRST-style packet needs Q^2 = 0 before cohomology exists."
+    },
+    {
+      "packet_id": "mirror_not_closed_control",
+      "admitted": false,
+      "label": "REJECTED_MIRROR_NOT_Q_CLOSED",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": false,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": false,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [
+        "mirror vector in ker(Q)"
+      ],
+      "strongest_allowed_reading": "A mirror vector outside ker(Q) cannot define a cohomology class or exactness question."
+    },
+    {
+      "packet_id": "post_hoc_q_shortcut",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_CONSTRAINT_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [
+        "predeclared constraint operator Q"
+      ],
+      "strongest_allowed_reading": "The packet is structurally typed but has not paid its controls."
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_CONSTRAINT_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [
+        "declared quotient/cohomology object",
+        "Q-closed observable discipline",
+        "exact-mirror redundancy control",
+        "nontrivial-mirror review control"
+      ],
+      "strongest_allowed_reading": "The packet is structurally typed but has not paid its controls."
+    },
+    {
+      "packet_id": "untyped_brst_shortcut",
+      "admitted": false,
+      "label": "REJECTED_UNTYPED_BRST_ASSERTION",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 4,
+      "missing_requirements": [
+        "predeclared nilpotent constraint operator Q"
+      ],
+      "strongest_allowed_reading": "BRST/exactness language is only a placeholder until a typed constraint or gauge structure is supplied."
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_CLAIM_OR_PUBLIC_POSTURE_SHORTCUT",
+      "action": "stop",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "t507_double_gate_paid": true,
+      "counts_as_claim_evidence": false,
+      "cohomology_dimension": 2,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A constraint packet cannot move claim status, public posture, external publication, or cross-repo truth."
+    }
+  ],
+  "constraint_summaries": {
+    "exact_mirror": {
+      "kind": "exact_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_squared_zero": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 1,
+      "rank_q_squared": 0,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    },
+    "nontrivial_mirror": {
+      "kind": "nontrivial_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_squared_zero": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "rank_q": 1,
+      "rank_q_squared": 0,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    },
+    "non_nilpotent": {
+      "kind": "non_nilpotent",
+      "q_matrix": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_squared_zero": false,
+      "q_nilpotent": false,
+      "mirror_q_closed": false,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 2,
+      "rank_q_squared": 1,
+      "kernel_dimension": 2,
+      "image_dimension": 2,
+      "cohomology_dimension": -1
+    },
+    "mirror_not_closed": {
+      "kind": "mirror_not_closed",
+      "q_matrix": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_squared_zero": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": false,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 1,
+      "rank_q_squared": 0,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    }
+  },
+  "overall": {
+    "exact_mirror_routes_to_redundancy": true,
+    "nontrivial_mirror_requires_t507_double_gate": true,
+    "nontrivial_double_gate_admitted_review_only": true,
+    "full_born_nontrivial_rejected_as_hidden_record": true,
+    "untyped_brst_rejected": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "hard_policy_movement": false,
+    "protected_license_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false,
+    "sibling_repo_inspection": false,
+    "brst_exactness_decided_for_real_physics": false,
+    "brst_nontriviality_decided_for_real_physics": false,
+    "krein_quantization_decided": false,
+    "hidden_mirror_record_claim_earned": false,
+    "physics_claim_earned": false
+  },
+  "future_packet_minimum": [
+    "predeclare the constraint or gauge operator Q before selecting the mirror pair",
+    "prove Q is nilpotent with Q^2 = 0",
+    "prove the mirror vector is Q-closed",
+    "decide exactness by membership in im(Q), not by assertion",
+    "declare the cohomology quotient or physical-state quotient",
+    "declare the Q-closed observable discipline",
+    "include exact-mirror redundancy and nontrivial-mirror review controls",
+    "pay T507's operation-algebra recovery controls",
+    "pay T507's full-Born leakage and self-normalized hiddenness controls",
+    "keep any nontrivial class review-only until physics-side constraints are supplied"
+  ],
+  "not_earned": [
+    "real BRST exactness decision",
+    "real BRST cohomology nontriviality decision",
+    "Krein-retention quantization accepted as physical",
+    "full-Krein collective operations accepted as physically admissible",
+    "self-normalized observer convention accepted as physical",
+    "hidden mirror record claim",
+    "source-action truth",
+    "mass-gap evidence",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "hard-policy movement",
+    "external publication",
+    "cross-repo truth movement"
+  ],
+  "strongest_result": "T508 makes the post-T507 BRST burden explicit. In the finite fixture, a Q-exact mirror vector routes to redundancy; a Q-closed but non-exact mirror vector can be admitted only as a review target when the packet also pays T507's full-Krein operation and self-normalized hiddenness gates. Non-nilpotent, not-closed, post-hoc, missing-control, full-Born, claim/public, external-publication, and cross-repo shortcuts are rejected or blocked. This builds an intake gate; it does not decide the real physics."
+}

@@ -98,3 +98,14 @@ of Line 1. It preserves the negative default: positivity-preserving/block-diagon
 difference, while full-Krein recovery plus self-normalized observation is admitted only as a hidden-record
 review target. T507 does not decide BRST exactness, Krein quantization, source-action truth, mass-gap evidence,
 claim status, public posture, external publication, or cross-repo truth.
+
+## Governed artifact pointer: T508
+
+T508 (`tests/T508-brst-cohomology-record-admission-gate.md`) now converts the
+remaining BRST/exactness bottleneck for Line 1 into a finite admission gate. In
+the synthetic fixture, an exact mirror routes to redundancy; a Q-closed but
+non-exact mirror is admitted only as a review target when T507's full-Krein and
+self-normalized gates are also paid. This sharpens the next packet burden
+without deciding real BRST exactness, BRST nontriviality, source-action truth,
+mass-gap evidence, claim status, public posture, external publication, or
+cross-repo truth.

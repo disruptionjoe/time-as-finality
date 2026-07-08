@@ -216,6 +216,37 @@ de-correlation test) is what would show the knob is not shared. **The capability
 lower bounds) fences the gauge**: a finite observer cannot carry unbounded burden, so the split is free only
 up to capability — which is why the forcing on each side is finite and checkable rather than freely tunable.
 
+## TaF-side CT-3 dinosaur guard: T505
+
+T505 (`tests/T505-observer-system-gauge-reality-gate.md`) makes the CT-3
+correction executable:
+
+```text
+OBSERVER_SYSTEM_GAUGE_REALITY_GATE_BUILT_DINOSAUR_GUARD_REVIEW_ONLY
+```
+
+The gate separates three cases:
+
+- proven equivalence or reversible presentation change: route to invariant-only
+  treatment;
+- lack of direct observability alone: reject as a verificationist gauge
+  shortcut;
+- unobservable but hard-to-vary, falsifiable explanatory structure: admit only
+  as review material.
+
+For the current boundary-adapter lane, T505 classifies the F/S state as
+single-process independent forcing: stronger than one adapter because the GU
+and TI sides supply different forcing sources, but still not de-correlated
+because the build shares one process and one D1 encoding. Constant/trivial
+convergence, shared tunable knobs, missing hard-to-vary burden, and
+claim/public-posture/external/cross-repo shortcuts are rejected or blocked.
+
+The current two-adapter gate is therefore still open. A future de-correlated
+packet must independently fix the observer/system split on each adapter, rule
+out a shared knob or shared brief, include falsifiable disagreement controls,
+declare the finite capability bound, and remain review-only until a runnable
+artifact earns a narrower update.
+
 ## Guards
 
 - **No claim moves.** This remains an open-problem record. Fixture builds and TaF-side admission gates are

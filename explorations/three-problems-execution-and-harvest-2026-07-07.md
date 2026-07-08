@@ -109,3 +109,14 @@ self-normalized gates are also paid. This sharpens the next packet burden
 without deciding real BRST exactness, BRST nontriviality, source-action truth,
 mass-gap evidence, claim status, public posture, external publication, or
 cross-repo truth.
+
+## Governed artifact pointer: T509
+
+T509 (`tests/T509-brst-observable-compatibility-gate.md`) checks the next
+Line-1 quotient/readout burden. The finite BRST fixture rejects full-Krein
+recovery when it does not descend through the quotient, rejects W+
+representative leakage as non-exact-invariant readout, and admits direct
+cohomology readout only as review material. The finality line therefore remains
+priced below claim evidence: nontrivial cohomology can be reviewable, but
+hidden W+ record recovery is blocked unless a future packet supplies a
+quotient-compatible recovery/readout pair and the physics-side constraints.

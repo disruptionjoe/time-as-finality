@@ -76,3 +76,13 @@ controls, and still pay T507's operation and normalization gates. T508 admits a
 nontrivial mirror class only as review material and does not decide real BRST
 status, Krein quantization, hidden-record physics, source-action truth, claim
 status, public posture, or cross-repo truth.
+
+## Governed artifact pointer: T509
+
+T509 (`tests/T509-brst-observable-compatibility-gate.md`) makes the Q-closed
+observable/readout burden executable. The T507-style full-Krein recovery is
+blocked in the finite BRST fixture because it does not descend through the
+quotient, and W+ representative leakage is blocked because ordinary W+ readout
+is not exact-invariant. A direct cohomology observable is admitted only as a
+review target, not hidden-record or physics evidence. This further narrows the
+record reading without moving claim status, public posture, or cross-repo truth.

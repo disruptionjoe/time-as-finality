@@ -1,0 +1,677 @@
+{
+  "artifact": "T509-brst-observable-compatibility-gate-v0.1",
+  "verdict": "BRST_OBSERVABLE_COMPATIBILITY_GATE_BUILT_RECOVERY_BLOCKED",
+  "source_gate": "tests/T508-brst-cohomology-record-admission-gate.md",
+  "objective": "Make T508's Q-closed observable discipline executable. A nontrivial mirror cohomology class is reviewable only through operations that descend through the BRST quotient and readouts that annihilate exact representative changes.",
+  "basis": [
+    "physical_exact",
+    "mirror",
+    "gauge_seed",
+    "auxiliary"
+  ],
+  "states": {
+    "state_a": [
+      0.7,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "state_b": [
+      0.7,
+      -0.5,
+      0.0,
+      0.0
+    ],
+    "share_wplus_before_operation": true,
+    "mirror_delta_before_operation": 1.0
+  },
+  "packets": [
+    {
+      "packet_id": "t508_full_krein_recovery",
+      "description": "T508's admitted corner tries to use a full-Krein boost to recover the mirror difference into W+.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "full_krein_boost",
+      "readout_kind": "wplus_projector",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "chain_map_representative_leakage",
+      "description": "A chain-map operation sends mirror to mirror plus an exact physical representative, creating W+ leakage without a cohomology readout.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "representative_leakage_chain_map",
+      "readout_kind": "wplus_projector",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "direct_cohomology_observable",
+      "description": "A direct mirror-class functional annihilates exact states and separates the nontrivial cohomology class.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "cohomology_scaling_control",
+      "description": "A quotient-descending operation scales the mirror class; it is observable only by a direct cohomology readout.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "cohomology_scaling",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "exact_mirror_redundancy_control",
+      "description": "Exact-control packet: the mirror lies in im(Q), so mirror readout does not descend and the class routes to redundancy.",
+      "q_kind": "exact_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "wplus_observable_shortcut",
+      "description": "A packet declares ordinary W+ readout as physical without checking exact-invariance.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "wplus_projector",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "post_hoc_readout_shortcut",
+      "description": "The packet selects the readout after seeing the mirror split.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": false,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "description": "The packet omits the new T509 controls.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": false,
+      "includes_nondescending_operation_control": false,
+      "includes_representative_leakage_control": false,
+      "includes_cohomology_observable_control": false,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "description": "The packet tries to move claim or cross-repo truth.",
+      "q_kind": "nontrivial_mirror",
+      "operation_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "operation_predeclared": true,
+      "readout_predeclared": true,
+      "includes_exact_mirror_control": true,
+      "includes_nondescending_operation_control": true,
+      "includes_representative_leakage_control": true,
+      "includes_cohomology_observable_control": true,
+      "includes_t507_t508_controls": true,
+      "requests_claim_or_public_posture": true,
+      "requests_external_publication": true,
+      "requests_cross_repo_truth": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "t508_full_krein_recovery",
+      "admitted": false,
+      "label": "REJECTED_RECOVERY_OPERATION_NOT_BRST_COMPATIBLE",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": false,
+      "readout_descends_to_cohomology": false,
+      "wplus_recovery_score": 0.7585837018395333,
+      "cohomology_readout_delta": 0.7585837018395333,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "The recovery operation exposes W+ differences only by failing to descend through the BRST quotient."
+    },
+    {
+      "packet_id": "chain_map_representative_leakage",
+      "admitted": false,
+      "label": "REJECTED_EXACT_REPRESENTATIVE_LEAKAGE",
+      "action": "demote_to_representative_artifact",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "wplus_recovery_score": 1.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": true,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "The operation is a chain map, but the W+ signal is exact representative leakage; it is not a quotient-level observable."
+    },
+    {
+      "packet_id": "direct_cohomology_observable",
+      "admitted": true,
+      "label": "ADMITTED_COHOMOLOGY_OBSERVABLE_REVIEW_TARGET",
+      "action": "review_only",
+      "review_target_only": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A direct exact-invariant cohomology readout separates the mirror class. This is a review target only, not hidden-record or physics evidence."
+    },
+    {
+      "packet_id": "cohomology_scaling_control",
+      "admitted": true,
+      "label": "ADMITTED_COHOMOLOGY_OBSERVABLE_REVIEW_TARGET",
+      "action": "review_only",
+      "review_target_only": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 2.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A direct exact-invariant cohomology readout separates the mirror class. This is a review target only, not hidden-record or physics evidence."
+    },
+    {
+      "packet_id": "exact_mirror_redundancy_control",
+      "admitted": false,
+      "label": "BRST_EXACT_REDUNDANCY_RECORDED",
+      "action": "record_negative",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "The mirror is exact in this packet, so exact-invariant readouts erase it rather than support a hidden-record reading."
+    },
+    {
+      "packet_id": "wplus_observable_shortcut",
+      "admitted": false,
+      "label": "REJECTED_NON_DESCENDING_READOUT",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 0.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "exact-invariant readout"
+      ],
+      "strongest_allowed_reading": "The declared readout changes under exact representative shifts and therefore does not define a cohomology observable."
+    },
+    {
+      "packet_id": "post_hoc_readout_shortcut",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_OBSERVABLE_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "predeclared exact-invariant readout"
+      ],
+      "strongest_allowed_reading": "The packet has not paid the quotient/readout controls."
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_OBSERVABLE_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "exact-mirror redundancy control",
+        "non-descending recovery-operation control",
+        "exact-representative leakage control",
+        "direct cohomology-observable control"
+      ],
+      "strongest_allowed_reading": "The packet has not paid the quotient/readout controls."
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_CLAIM_OR_PUBLIC_POSTURE_SHORTCUT",
+      "action": "stop",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "operation_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "representative_leakage": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "Observable compatibility cannot move claims, public posture, external publication, or cross-repo truth."
+    }
+  ],
+  "constraint_summaries": {
+    "nontrivial_mirror": {
+      "kind": "nontrivial_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "rank_q": 1,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    },
+    "exact_mirror": {
+      "kind": "exact_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 1,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    }
+  },
+  "operation_summaries": {
+    "full_krein_boost": {
+      "kind": "full_krein_boost",
+      "operation_matrix": [
+        [
+          1.255169005630943,
+          0.7585837018395334,
+          0.0,
+          0.0
+        ],
+        [
+          0.7585837018395334,
+          1.255169005630943,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": false,
+      "preserves_exact_subspace": false,
+      "operation_descends_to_cohomology": false,
+      "wplus_recovery_score": 0.7585837018395333
+    },
+    "representative_leakage_chain_map": {
+      "kind": "representative_leakage_chain_map",
+      "operation_matrix": [
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "operation_descends_to_cohomology": true,
+      "wplus_recovery_score": 1.0
+    },
+    "cohomology_scaling": {
+      "kind": "cohomology_scaling",
+      "operation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "operation_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0
+    },
+    "identity": {
+      "kind": "identity",
+      "operation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "operation_descends_to_cohomology": true,
+      "wplus_recovery_score": 0.0
+    }
+  },
+  "readout_summaries": {
+    "wplus_projector": {
+      "kind": "wplus_projector",
+      "readout_vector": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "values_on_exact_generators": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "readout_descends_to_cohomology": false
+    },
+    "mirror_cohomology_functional": {
+      "kind": "mirror_cohomology_functional",
+      "readout_vector": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "values_on_exact_generators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readout_descends_to_cohomology": true
+    }
+  },
+  "overall": {
+    "t508_full_krein_recovery_rejected_by_quotient_discipline": true,
+    "representative_leakage_rejected": true,
+    "direct_cohomology_observable_admitted_review_only": true,
+    "exact_mirror_routes_to_redundancy": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "hard_policy_movement": false,
+    "protected_license_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false,
+    "sibling_repo_inspection": false,
+    "brst_exactness_decided_for_real_physics": false,
+    "brst_nontriviality_decided_for_real_physics": false,
+    "krein_quantization_decided": false,
+    "hidden_mirror_record_claim_earned": false,
+    "physics_claim_earned": false
+  },
+  "future_packet_minimum": [
+    "predeclare Q, the quotient/cohomology object, operation algebra, and readout",
+    "prove the recovery operation descends through the BRST quotient",
+    "prove the readout annihilates exact representative shifts",
+    "include a non-descending full-Krein recovery control",
+    "include an exact-representative leakage control",
+    "include exact-mirror redundancy and direct cohomology-observable controls",
+    "treat direct cohomology readout as review-only until physics-side constraints are supplied",
+    "do not treat W+ representative leakage as a hidden physical record"
+  ],
+  "not_earned": [
+    "real BRST exactness decision",
+    "real BRST cohomology nontriviality decision",
+    "Krein-retention quantization accepted as physical",
+    "full-Krein collective operations accepted as physically admissible",
+    "self-normalized observer convention accepted as physical",
+    "hidden mirror record claim",
+    "source-action truth",
+    "mass-gap evidence",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "hard-policy movement",
+    "external publication",
+    "cross-repo truth movement"
+  ],
+  "strongest_result": "T509 makes the T508 observable/readout burden explicit. The T507-style full-Krein recovery of a mirror difference is rejected in the finite BRST fixture because it does not descend through the quotient. A chain-map operation can create W+ representative leakage, but W+ readout is not exact-invariant, so that leakage is rejected as gauge-representative dependence. Only a direct exact-invariant cohomology readout is admitted, and only as a review target rather than hidden-record or physics evidence."
+}

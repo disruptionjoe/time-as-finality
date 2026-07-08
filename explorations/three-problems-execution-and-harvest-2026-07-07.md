@@ -90,3 +90,11 @@ the record reading to the ghost-parity bet -- an honest lean against the home te
 existing carrier, no source action needed. Line 2 is a negative reconciliation that strengthens an existing
 paper, not a new claim. Line 3 is explicitly NOT built (parked per recommendation). Harvest is an index of
 already-filed GU-independent artifacts. Nothing here promotes any claim; from-memory physics flagged. -- main loop
+
+## Governed artifact pointer: T507
+
+T507 (`tests/T507-finality-record-redundancy-double-gate.md`) now carries the repo-governed executable version
+of Line 1. It preserves the negative default: positivity-preserving/block-diagonal operations recover no W-
+difference, while full-Krein recovery plus self-normalized observation is admitted only as a hidden-record
+review target. T507 does not decide BRST exactness, Krein quantization, source-action truth, mass-gap evidence,
+claim status, public posture, external publication, or cross-repo truth.

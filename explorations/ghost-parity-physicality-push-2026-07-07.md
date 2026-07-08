@@ -56,3 +56,11 @@ question is genuinely open), but it is now precisely priced: two special bets, d
 Cross-links: `finality-records-vs-redundancy` discriminator (the dichotomy this pushes),
 `finality-best-explanation-swing-2026-07-07.md` (records = promissory note), the ghost-parity/Krein synthesis
 in `gu-formalization/canon/ghost-parity-krein-synthesis.md`. No claim moves in any repo.
+
+## Governed artifact pointer: T507
+
+T507 (`tests/T507-finality-record-redundancy-double-gate.md`) now records this push as a repo-native double gate.
+The result is deliberately priced: the standard positivity/BRST plus full-Born corner is redundancy; full-Krein
+plus full-Born is visible rather than hidden; the hidden-record reading survives only as review material in the
+Krein-retention plus self-normalized/projector Born corner. T507 does not decide BRST exactness, accept
+Krein-retention quantization, prove a hidden mirror record, move claims, or move cross-repo truth.

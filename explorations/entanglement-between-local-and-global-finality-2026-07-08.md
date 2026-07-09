@@ -101,3 +101,57 @@ H^1 frustrated-cycle invariant can, in principle, bookkeep it.
 - Structural analogy is not identity. Entanglement's reversibility is LOCC-relative; TaF finality is
   record-stabilization. The transferable content is the *grading-by-resource-class*, not the quantum
   mechanism.
+
+## Second steelman: distributed systems and privacy cryptography (ten personas)
+
+Added 2026-07-08. Motivation: "finality" is the *literal, engineered* term in distributed systems,
+which abandoned the fiction of an instantaneous global present decades ago. This batch is corroboration
+from systems that must actually run, not interpret. Barandes' no-signaling point (correlation without
+controllable communication) recurs as the cross-cutting invariant.
+
+| Persona | Contribution to the hypothesis |
+|---|---|
+| Hashgraph (gossip-about-gossip, virtual voting) | Finality computed from the correlation structure of who-heard-what, no vote ever sent; between-band = before a "famous witness" is decided. |
+| Avalanche (metastability) | The between-band is a named engineering regime; finality is a confidence gradient crossing a safety threshold beta, not a binary flip. |
+| MMO networking engineer | Client-predicted shared state is final-for-some-clients and rolled back if it diverges; server tick = global finalization. |
+| Byzantine finality (Tendermint/PBFT) | "Locked for me, committed for none" = the axiom, made accountable (slashing prices the reversal attempt). |
+| CRDT / strong eventual consistency | Finality as determined-outcome-under-commutativity: fixed by the algebra before any replica holds the global value. |
+| Lamport causality / vector clocks | Concurrency = the relational band; global finality = partial order forced to total. Lands on the repo's PO1 / FinaliEvent spine. |
+| Commitment / ZK | Binding (irreversible) + hiding (no local value exposed) = the axiom implemented; ZK certifies the correlation without disclosing the locals (Hardy). |
+| Threshold crypto (Shamir) | Cardinality-graded finality made exact: threshold t; below t nothing is finalized; share count = monogamy knob. |
+| MPC | Possible jointly, impossible severally (Deutsch) in production; Beaver triples = pre-distributed correlation consumed as a resource -- the most direct entanglement analog. |
+| Differential privacy / mix-nets | The between-band as deliberate un-finalizability of the local; anonymity-set size = observer-cardinality below which no fact pins to a local value. |
+
+**What this batch adds:**
+
+1. **DS already killed the fiction the hypothesis fights.** Light-speed and partitions made binary
+   global finality impossible, so distributed systems *engineered* the graded between-band
+   (probabilistic finality, confirmation depth, quorum certificates, metastability). The hypothesis
+   imports that realism into quantum foundations; it is "the standard model of finality" wherever a
+   system must actually run.
+2. **CAP and FLP are the DS Bell-theorems.** They *prove* the between-band is unavoidable (no
+   consistency + availability under partition; no deterministic async consensus with one fault). The
+   partition window = spatial separation = the entanglement band. Candidate no-go analogs to sit beside
+   Bell / no-signaling.
+3. **No-signaling is the cross-cutting invariant.** Secret shares, commitments, MPC, DP all give
+   *correlation without local recovery or control.* "Correlation without control" is the candidate
+   **signature invariant of the between-band** across physics and distributed systems -- a definition,
+   not just an analogy.
+4. **Convergent core, sharpened:** finality is a **quorum/threshold predicate over a resource class**;
+   the between-band is where a quorum-for-some exists but the global certificate does not. Implemented
+   independently in three production stacks (BFT, threshold crypto, MPC) -- evidence the axiom is
+   coherent and mechanizable.
+5. **The order parameter:** DS supplies the discrete, tunable observer-cardinality the physics side
+   only gestured at (Hardy's certification count, Zurek's redundancy R): **the size of the smallest set
+   that can no longer reverse the commit.** Proposed as the scalar to build the formalism on.
+
+**New actions from this batch:**
+
+- Adopt **"smallest irreversible quorum"** (size of the least set that can no longer reverse a commit)
+  as the candidate order parameter for the finality gradient; check it against Zurek redundancy R and
+  Hardy certification count for consistency.
+- Draft CAP and FLP as **candidate no-go analogs** in an open-problem stub, testing whether either has
+  the shape of a TaF-native "two finality properties you cannot jointly have" theorem (cf. T17
+  no-joint-maximization, and the Stelle unitarity stub).
+- Test **"correlation without control"** as a *defining* predicate of the band (not merely a property):
+  does it separate the band from both the local and global ends across all twenty personas?

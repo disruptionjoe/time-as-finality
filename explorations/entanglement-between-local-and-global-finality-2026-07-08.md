@@ -328,6 +328,13 @@ repo's existing frontier** -- independent corroboration of landed negatives more
      the band interior has NO intrinsic grading under a fixed algebra -- the "graded interior" the pullback
      demanded is an artifact of algebra-widening, not a state property; carry this caveat back to the
      pullback pass.
+     **P1 done (`explorations/P1-constructor-axiom-and-three-wall-ladder-2026-07-08.md`, model
+     `models/finality_constructor_axiom_band.py`, exit 0):** the constructor axiom (reversible+deterministic
+     +state-preserving disentangling task) is IMPOSSIBLE-severally iff entangled, flipping exactly where
+     negativity crosses 0 (p=1/3); both swing fixes confirmed. **Key structure:** the between-band is a
+     **three-wall LADDER**, each rung with its own monotone: entanglement (p=1/3, negativity, constructor
+     task) < monogamy (p=2/3, k_max, swing C) < CHSH (p=1/sqrt2). The constructor task pins the OUTERMOST
+     rung. Concrete quantum instance of T17's "finality is a vector, not a scalar."
   2. **Axiom, correctly restricted (P1)** -- state the reversible+deterministic+state-preserving task
      explicitly; on a 2-qubit family from product to Bell, check the constructor possible->impossible flip
      coincides with an LOCC monotone (concurrence/negativity) hitting 0; hand grading to QRT.

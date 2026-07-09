@@ -303,10 +303,16 @@ repo's existing frontier** -- independent corroboration of landed negatives more
 - **Demote:** P2 (kappa is a faithful re-encoding, not an independent band invariant; cannot resolve the
   Tsirelson/PR-box interior that defines the band).
 - **Pursue (small, buildable):**
-  1. **Two-invariant band (P4)** -- the clear win. Formalize: no-signaling = lower-boundary marker;
-     records-vs-redundancy (recoverable-by-admissible-op vs annihilated, T507) = upper closer. Build the
-     3-point separation table over {classical shared randomness, entangled pair, redundant global record}
-     evaluating no-signaling (constant, non-separating) vs local-readability (flips only at the global end).
+  1. **Two-invariant band (P4)** -- DONE, run to completion 2026-07-08. Model
+     `models/finality_two_invariant_band_separation.py` (exit 0); writeup
+     `explorations/two-invariant-band-P4-2026-07-08.md`. Result: **confirmed but reshaped.** No-signaling is
+     FLAT across product/classical/band/global (separates nothing -- demoted). Local readability is
+     NON-MONOTONE (readable, dip at band, readable) -- it is a diagnostic, not an order parameter, and the
+     band IS the dip. The two boundary invariants are **entanglement-onset (lower, CHSH crosses 2)** and
+     **redundancy-onset (upper, broadcast restores readability)**, crossed by two different events.
+     **Correction to the pullback pass below:** the promotion of "correlation without control" to a
+     *necessary defining face* is OVERTURNED by measurement -- it is a background property, not a band
+     invariant.
   2. **Axiom, correctly restricted (P1)** -- state the reversible+deterministic+state-preserving task
      explicitly; on a 2-qubit family from product to Bell, check the constructor possible->impossible flip
      coincides with an LOCC monotone (concurrence/negativity) hitting 0; hand grading to QRT.

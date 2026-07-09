@@ -319,6 +319,15 @@ repo's existing frontier** -- independent corroboration of landed negatives more
      contains classically-correlated-but-scrambled states. Outer wall = not recoverable by admissible local
      ops (both edges, one algebra); inner label = CHSH > 2 (genuine entanglement). The TaF-native object is
      the outer band; entanglement is one way to realise it.
+     **Cluster-swing update (2026-07-08, `explorations/cluster-swing-results-2026-07-08.md`):** the inner
+     label CHSH > 2 is **superseded**. Swing C shows the sharper inner discriminator is the **shareability
+     number k_max** (monogamy): `k_max` finite <=> inner band, `inf` <=> outer, and it *comes apart* from
+     CHSH on the Werner window `2/3 < p <= 1/sqrt2` (un-shareable but CHSH <= 2). Corrected threshold ladder
+     `1/3 < 2/3 (shareability wall) < 1/sqrt2 (CHSH)`. Swing A: the access-structure order parameter is
+     intrinsic ONLY at this inner corner (double dissociation), not across the whole band. Swing E (dead):
+     the band interior has NO intrinsic grading under a fixed algebra -- the "graded interior" the pullback
+     demanded is an artifact of algebra-widening, not a state property; carry this caveat back to the
+     pullback pass.
   2. **Axiom, correctly restricted (P1)** -- state the reversible+deterministic+state-preserving task
      explicitly; on a 2-qubit family from product to Bell, check the constructor possible->impossible flip
      coincides with an LOCC monotone (concurrence/negativity) hitting 0; hand grading to QRT.

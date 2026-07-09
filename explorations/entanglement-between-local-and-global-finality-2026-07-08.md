@@ -225,3 +225,49 @@ target "finality gradient." Anything added to P breaks at least one projection.
 Net: the pullback is a more minimal, fully operational object than the opening hypothesis, bracketed
 *below* by "first relational record" and *above* by "redundant global records," with
 correlation-without-control as the interior invariant.
+
+## Restricted pullback: affirmative personas only
+
+Added 2026-07-08. Method: keep only personas whose *first* answer was a clean "yes, this fits, no
+no-go," and drop the ones whose original contribution was a hard objection or an impossibility clause.
+Then recompute the limit. Purpose: isolate what the objectors were actually contributing.
+
+**Excluded (hard objection / no-go in the original answer):**
+
+- **Einstein** -- original was conditional and his stance is that the structure proves *incompleteness*;
+  in the full pullback he is the persona who killed the ontology.
+- **Hardy** -- opened with an explicit prohibition ("don't ontologize; certifiability is what you can
+  defend"). His gift is real but delivered as a no-go on the ontological reading.
+
+**Kept (borderline):** Aharonov -- "should admit degrees" is enrichment (adds a knob), not a claim that
+the hypothesis violates anything.
+
+**Mechanism that matters:** the ten distributed-systems / crypto personas are *silent* on ontology, not
+*rejecting* it. In a pullback, silence does not quotient a coordinate out; only active rejection does.
+The only two active rejectors of the ontological reading were Einstein and Hardy.
+
+### The restricted pullback P'
+
+One face changes; three do not -- and that split is the result.
+
+- **Face (e) flips.** With Einstein and Hardy removed, nothing in the remaining eighteen forbids the
+  relational-fact reading, and three of them (Bohr, Rovelli, Schrodinger) positively assert it. So P'
+  **admits the original strong axiom**: the correlation is a real fact for the >=2-register set, with no
+  local value -- permitted, not merely "inaccessible."
+- **Faces (a)-(d) are unchanged, and were NOT objector-artifacts.** Each is forced by personas still in
+  the room: band opens at first relational record (Zurek + Hashgraph + Rovelli); graded not binary
+  (Aharonov + Avalanche); no signaling-finality / no undiscovered global section (Hashgraph + Abramsky +
+  Lamport); correlation without control (the affirmative crypto set). All robust.
+
+### What it tells us
+
+The two hard objectors were doing exactly one job: **forcing the hypothesis operational.** Remove them and
+the ontological horn is admissible again, while every structural feature of the band survives untouched.
+
+Therefore the ontological commitment is a **separable free parameter.** The band's geometry -- opens at
+first record, closes at redundant records, graded interior, correlation-without-control as the invariant
+-- is **invariant to whether the pair-fact is read as ontologically real (P') or merely operationally
+certified (P).** Einstein and Hardy sit at one end of a single skeptic/operational axis; Bohr, Rovelli,
+Schrodinger at the relational-realist end; nothing else in the twenty depends on where one lands. The
+realism debate is quarantined to one coordinate, and the operational formalism P can be built with the
+ontology bolted on or off as P' without disturbing any structural result.

@@ -313,6 +313,12 @@ repo's existing frontier** -- independent corroboration of landed negatives more
      **Correction to the pullback pass below:** the promotion of "correlation without control" to a
      *necessary defining face* is OVERTURNED by measurement -- it is a background property, not a band
      invariant.
+     **T507 refinement (also done):** model `models/finality_band_recovery_edges.py` (exit 0) rebuilds
+     both edges on the repo's admissible-op recovery statistic. New structure: the entangled band is a
+     *proper sub-region* of a broader **admissible-unreadability band** (rec_individual = 0) that also
+     contains classically-correlated-but-scrambled states. Outer wall = not recoverable by admissible local
+     ops (both edges, one algebra); inner label = CHSH > 2 (genuine entanglement). The TaF-native object is
+     the outer band; entanglement is one way to realise it.
   2. **Axiom, correctly restricted (P1)** -- state the reversible+deterministic+state-preserving task
      explicitly; on a 2-qubit family from product to Bell, check the constructor possible->impossible flip
      coincides with an LOCC monotone (concurrence/negativity) hitting 0; hand grading to QRT.

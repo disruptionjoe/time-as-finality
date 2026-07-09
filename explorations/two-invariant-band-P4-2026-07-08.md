@@ -67,9 +67,48 @@ drops out:
   "recoverable by an admissible op" but is a *specific* admissible-op choice (local classical readout),
   not the full positivity-preserving algebra.
 
+## T507 refinement (done 2026-07-08)
+
+Model: `models/finality_band_recovery_edges.py` (exit 0). Replaces the ad-hoc fragment count with the
+repo's own recovery-by-admissible-op statistic (imports `recovery`, `individual_operation`,
+`collective_boost` from the T507 double gate). "Locally readable" = the value difference is recoverable by
+the ADMISSIBLE (individual / positivity-preserving, block-diagonal) algebra; "hidden" = recoverable only by
+the non-standard full-Krein collective algebra.
+
+Result table:
+
+| scenario | CHSH | rec_individual | rec_collective | readable | redundant | unreadable-band |
+|---|---|---|---|---|---|---|
+| LOCAL (definite value) | 0.00 | 0.50 | 1.08 | True | False | False |
+| CLASSICAL (shared randomness) | 2.00 | 0.50 | 1.08 | True | False | False |
+| **BAND (entangled)** | **2.83** | **0.00** | 0.76 | False | False | **True** |
+| **ENCRYPTED (classical, scrambled)** | **2.00** | **0.00** | 0.76 | False | False | **True** |
+| GLOBAL (redundant broadcast) | 2.00 | 0.50 | 1.08 | True | True | False |
+
+Two things this buys:
+
+1. **Both edges now use ONE repo-native algebra.** The lower edge (readable -> unreadable) and the upper
+   edge (unreadable -> readable) are both just admissible recovery (rec_individual) crossing zero. No ad-hoc
+   fragment threshold in the edge definition; redundancy only labels *why* recovery returns at the top.
+
+2. **NEW structure -- the entangled band is nested inside a broader unreadability band.** The
+   admissible-unreadability wall (rec_individual = 0) catches BOTH the entangled pair AND a
+   classically-correlated-but-scrambled value (ENCRYPTED, CHSH <= 2). So:
+   - **outer band** = not recoverable by admissible local ops (the readability wall, both edges, one algebra);
+   - **inner band** = additionally CHSH > 2 (genuine entanglement).
+
+   The value in the band is a genuine HIDDEN record, not absence: the collective algebra recovers it
+   (rec_collective ~ 0.76 > 0). Entangling vs encrypting are two different ways to enter the outer wall from
+   below; redundant broadcast is what reopens it from above. No-signaling remains irrelevant.
+
+This means "the entanglement between-band" is a *labelled sub-region* of a more fundamental object: the
+band of facts that are jointly present but not recoverable by an observer's admissible local operations.
+That is the TaF-native object; entanglement is one way to realise it.
+
 ## Next
 
-- Replace the integer fragment count with the records-vs-redundancy recovery statistic (T507) so the upper
-  edge is defined by the same admissible-op algebra as the rest of the repo, not an ad-hoc threshold.
-- Then P1 (constructor axiom, restricted to the reversible+deterministic+state-preserving task, graded by
-  QRT) can sit on top of this cleanly bounded band.
+- **P1 on the bounded band:** state the constructor axiom (reverse-the-correlation) restricted to the
+  reversible+deterministic+state-preserving task, graded by QRT, and check its possible->impossible flip
+  tracks the outer wall (rec_individual crossing zero), with CHSH>2 as the entanglement label.
+- Optional: pin the redundancy threshold to a recovery-count over disjoint fragments (all one algebra)
+  rather than an integer, closing the last ad-hoc constant.

@@ -1,0 +1,770 @@
+{
+  "artifact": "T510-brst-conserved-ledger-compatibility-gate-v0.1",
+  "verdict": "BRST_CONSERVED_LEDGER_GATE_BUILT_STABILITY_REVIEW_ONLY",
+  "source_gate": "tests/T509-brst-observable-compatibility-gate.md",
+  "objective": "Make the post-T509 conserved-ledger burden finite and checkable. A direct cohomology readout can be review material only when the predeclared dynamics descends through the BRST quotient and conserves the readout across representative changes and time steps.",
+  "basis": [
+    "physical_exact",
+    "mirror",
+    "gauge_seed",
+    "auxiliary"
+  ],
+  "states": {
+    "state_a": [
+      0.7,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "state_b": [
+      0.7,
+      -0.5,
+      0.0,
+      0.0
+    ],
+    "share_wplus_before_dynamics": true,
+    "mirror_delta_before_dynamics": 1.0,
+    "sample_states": [
+      [
+        0.7,
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.7,
+        -0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.1,
+        0.25,
+        0.0,
+        0.6
+      ],
+      [
+        -0.2,
+        -0.4,
+        0.0,
+        0.3
+      ]
+    ]
+  },
+  "packets": [
+    {
+      "packet_id": "conserved_direct_cohomology_ledger",
+      "description": "A direct exact-invariant mirror-class readout is paired with identity dynamics, so the quotient ledger is stable.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "exact_representative_noise_control",
+      "description": "The dynamics adds exact representative noise to the W+ coordinate while preserving the mirror cohomology ledger.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "exact_representative_noise",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "cohomology_scaling_drift_control",
+      "description": "The dynamics descends to cohomology but scales the mirror class, so the ledger itself drifts.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "cohomology_scaling_drift",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "full_krein_dynamics_shortcut",
+      "description": "A full-Krein boost tries to create a visible record but does not descend through the BRST quotient.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "full_krein_boost",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "wplus_ledger_shortcut",
+      "description": "A W+-only ledger is conserved under identity dynamics but is not exact-invariant.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "identity",
+      "readout_kind": "wplus_projector",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "exact_mirror_redundancy_control",
+      "description": "Exact-control packet: the mirror is in im(Q), so no nontrivial conserved mirror ledger exists.",
+      "q_kind": "exact_mirror",
+      "dynamics_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "non_nilpotent_constraint_control",
+      "description": "The constraint operator is not nilpotent.",
+      "q_kind": "non_nilpotent",
+      "dynamics_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "description": "The packet omits the new T510 controls.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": false,
+      "includes_ledger_drift_control": false,
+      "includes_exact_representative_noise_control": false,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": false,
+      "requests_external_publication": false,
+      "requests_cross_repo_truth": false
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "description": "The packet tries to move claim or cross-repo truth.",
+      "q_kind": "nontrivial_mirror",
+      "dynamics_kind": "identity",
+      "readout_kind": "mirror_cohomology_functional",
+      "q_predeclared": true,
+      "quotient_declared": true,
+      "dynamics_predeclared": true,
+      "readout_predeclared": true,
+      "includes_t509_controls": true,
+      "includes_nondescending_dynamics_control": true,
+      "includes_ledger_drift_control": true,
+      "includes_exact_representative_noise_control": true,
+      "includes_exact_mirror_control": true,
+      "requests_claim_or_public_posture": true,
+      "requests_external_publication": true,
+      "requests_cross_repo_truth": true
+    }
+  ],
+  "decisions": [
+    {
+      "packet_id": "conserved_direct_cohomology_ledger",
+      "admitted": true,
+      "label": "ADMITTED_CONSERVED_COHOMOLOGY_LEDGER_REVIEW_TARGET",
+      "action": "review_only",
+      "review_target_only": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A direct exact-invariant cohomology readout is conserved by the predeclared dynamics. This is review material only, not hidden-record, unitarity, or physics evidence."
+    },
+    {
+      "packet_id": "exact_representative_noise_control",
+      "admitted": true,
+      "label": "ADMITTED_CONSERVED_COHOMOLOGY_LEDGER_REVIEW_TARGET",
+      "action": "review_only",
+      "review_target_only": true,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.5,
+      "exact_representative_noise_absorbed": true,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "A direct exact-invariant cohomology readout is conserved by the predeclared dynamics. This is review material only, not hidden-record, unitarity, or physics evidence."
+    },
+    {
+      "packet_id": "cohomology_scaling_drift_control",
+      "admitted": false,
+      "label": "REJECTED_NONCONSERVED_COHOMOLOGY_LEDGER",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": false,
+      "ledger_drift_score": 0.5,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "dynamics-conserved quotient ledger"
+      ],
+      "strongest_allowed_reading": "The dynamics descends through the quotient, but the cohomology readout itself drifts, so it cannot serve as a stable record/finality ledger."
+    },
+    {
+      "packet_id": "full_krein_dynamics_shortcut",
+      "admitted": false,
+      "label": "REJECTED_DYNAMICS_NOT_BRST_COMPATIBLE",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": false,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": false,
+      "ledger_drift_score": 0.6585930941031448,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.5579101548614267,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "The dynamics creates apparent ledger structure only by failing to descend through the BRST quotient."
+    },
+    {
+      "packet_id": "wplus_ledger_shortcut",
+      "admitted": false,
+      "label": "REJECTED_NON_DESCENDING_LEDGER_READOUT",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 0.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "exact-invariant ledger readout"
+      ],
+      "strongest_allowed_reading": "The proposed ledger changes under exact representative shifts and therefore is not a quotient ledger."
+    },
+    {
+      "packet_id": "exact_mirror_redundancy_control",
+      "admitted": false,
+      "label": "BRST_EXACT_REDUNDANCY_RECORDED",
+      "action": "record_negative",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "The mirror is exact in this packet, so a conserved cohomology ledger erases it rather than supporting a hidden-record reading."
+    },
+    {
+      "packet_id": "non_nilpotent_constraint_control",
+      "admitted": false,
+      "label": "REJECTED_NON_NILPOTENT_CONSTRAINT",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": false,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": false,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "nilpotency Q^2 = 0"
+      ],
+      "strongest_allowed_reading": "No BRST quotient ledger exists without Q^2 = 0."
+    },
+    {
+      "packet_id": "missing_controls_shortcut",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_LEDGER_PACKET",
+      "action": "reject",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [
+        "non-descending dynamics control",
+        "ledger drift control",
+        "exact-representative noise control"
+      ],
+      "strongest_allowed_reading": "The packet has not paid the conserved-ledger controls."
+    },
+    {
+      "packet_id": "claim_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_CLAIM_OR_PUBLIC_POSTURE_SHORTCUT",
+      "action": "stop",
+      "review_target_only": false,
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "dynamics_descends_to_cohomology": true,
+      "readout_descends_to_cohomology": true,
+      "ledger_conserved": true,
+      "ledger_drift_score": 0.0,
+      "cohomology_readout_delta": 1.0,
+      "exact_representative_noise_score": 0.0,
+      "exact_representative_noise_absorbed": false,
+      "counts_as_claim_evidence": false,
+      "missing_requirements": [],
+      "strongest_allowed_reading": "Conserved-ledger compatibility cannot move claims, public posture, external publication, or cross-repo truth."
+    }
+  ],
+  "constraint_summaries": {
+    "nontrivial_mirror": {
+      "kind": "nontrivial_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": false,
+      "mirror_cohomology_nontrivial": true,
+      "rank_q": 1,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    },
+    "exact_mirror": {
+      "kind": "exact_mirror",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_nilpotent": true,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 1,
+      "kernel_dimension": 3,
+      "image_dimension": 1,
+      "cohomology_dimension": 2
+    },
+    "non_nilpotent": {
+      "kind": "non_nilpotent",
+      "q_matrix": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "q_nilpotent": false,
+      "mirror_q_closed": true,
+      "mirror_q_exact": true,
+      "mirror_cohomology_nontrivial": false,
+      "rank_q": 2,
+      "kernel_dimension": 2,
+      "image_dimension": 2,
+      "cohomology_dimension": -1
+    }
+  },
+  "dynamics_summaries": {
+    "identity": {
+      "kind": "identity",
+      "dynamics_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "dynamics_descends_to_cohomology": true,
+      "exact_representative_noise_score": 0.0,
+      "mirror_ledger_drift_score": 0.0,
+      "wplus_ledger_drift_score": 0.0
+    },
+    "exact_representative_noise": {
+      "kind": "exact_representative_noise",
+      "dynamics_matrix": [
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "dynamics_descends_to_cohomology": true,
+      "exact_representative_noise_score": 0.5,
+      "mirror_ledger_drift_score": 0.0,
+      "wplus_ledger_drift_score": 0.5
+    },
+    "cohomology_scaling_drift": {
+      "kind": "cohomology_scaling_drift",
+      "dynamics_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": true,
+      "preserves_exact_subspace": true,
+      "dynamics_descends_to_cohomology": true,
+      "exact_representative_noise_score": 0.0,
+      "mirror_ledger_drift_score": 0.5,
+      "wplus_ledger_drift_score": 0.0
+    },
+    "full_krein_boost": {
+      "kind": "full_krein_boost",
+      "dynamics_matrix": [
+        [
+          1.255169005630943,
+          0.7585837018395334,
+          0.0,
+          0.0
+        ],
+        [
+          0.7585837018395334,
+          1.255169005630943,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "commutes_with_q": false,
+      "preserves_exact_subspace": false,
+      "dynamics_descends_to_cohomology": false,
+      "exact_representative_noise_score": 0.5579101548614267,
+      "mirror_ledger_drift_score": 0.6585930941031448,
+      "wplus_ledger_drift_score": 0.5579101548614267
+    }
+  },
+  "readout_summaries": {
+    "mirror_cohomology_functional": {
+      "kind": "mirror_cohomology_functional",
+      "readout_vector": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "values_on_exact_generators": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readout_descends_to_cohomology": true
+    },
+    "wplus_projector": {
+      "kind": "wplus_projector",
+      "readout_vector": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "values_on_exact_generators": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "readout_descends_to_cohomology": false
+    }
+  },
+  "overall": {
+    "direct_cohomology_ledger_admitted_review_only": true,
+    "exact_representative_noise_absorbed": true,
+    "cohomology_drift_rejected": true,
+    "nondescending_dynamics_rejected": true,
+    "non_descending_readout_rejected": true,
+    "exact_mirror_routes_to_redundancy": true,
+    "claim_movement": false,
+    "roadmap_movement": false,
+    "readme_movement": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "hard_policy_movement": false,
+    "protected_license_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false,
+    "sibling_repo_inspection": false,
+    "unitarity_theorem_claimed": false,
+    "physical_inner_product_chosen": false,
+    "brst_exactness_decided_for_real_physics": false,
+    "hidden_mirror_record_claim_earned": false,
+    "physics_claim_earned": false
+  },
+  "future_packet_minimum": [
+    "predeclare Q, the quotient/cohomology object, dynamics, and readout",
+    "prove the dynamics descends through the BRST quotient",
+    "prove the readout annihilates exact representative shifts",
+    "prove the quotient readout is conserved by the declared dynamics",
+    "include non-descending dynamics and ledger-drift controls",
+    "include exact-representative noise and exact-mirror redundancy controls",
+    "treat conserved cohomology readout as review-only until physics-side constraints are supplied",
+    "do not treat W+ representative leakage or drifting cohomology as a hidden physical record"
+  ],
+  "not_earned": [
+    "unitarity theorem",
+    "physical inner product selection",
+    "real BRST exactness decision",
+    "real BRST cohomology nontriviality decision",
+    "Krein-retention quantization accepted as physical",
+    "full-Krein collective operations accepted as physically admissible",
+    "hidden mirror record claim",
+    "source-action truth",
+    "mass-gap evidence",
+    "claim-ledger movement",
+    "roadmap movement",
+    "README movement",
+    "North Star movement",
+    "public-posture movement",
+    "hard-policy movement",
+    "external publication",
+    "cross-repo truth movement"
+  ],
+  "strongest_result": "T510 reprices T509's direct cohomology readout as a conserved ledger problem. A stable direct cohomology ledger and an exact-representative-noise control are admitted only as review targets. A quotient-descending dynamics that scales the mirror class is rejected because the ledger drifts; a full-Krein boost is rejected because it does not descend through the quotient; ordinary W+ ledger language is rejected because the readout is not exact-invariant."
+}

@@ -80,9 +80,9 @@ Caveat (carry it): Turok's program is explicitly "halfway there" by his own stat
 provocation, not a result. Projection != finality still holds; the Krein/ghost-parity structure is the
 analogue to interrogate, not evidence.
 
-## Update (2026-07-07): T507-T509 price the ghost-parity route as review-only
+## Update (2026-07-07): T507-T510 price the ghost-parity route as review-only
 
-T507, T508, and T509 convert the ghost-parity/finality provocation into
+T507, T508, T509, and T510 convert the ghost-parity/finality provocation into
 repo-local finite admission gates. T507 records the default reading as
 redundancy under positivity-preserving operations and full-Born leakage, with
 hidden-record review material only in the full-Krein plus self-normalized
@@ -91,11 +91,17 @@ and nontrivial mirror cohomology is only reviewable. T509 adds the observable
 compatibility gate: recovery operations must descend through the BRST quotient
 and readouts must be exact-invariant; the tested full-Krein recovery and W+
 representative leakage are blocked, while direct cohomology readout remains
-review-only.
+review-only. T510 adds the conserved-ledger burden: even a quotient-compatible
+direct cohomology readout is only review material when the predeclared dynamics
+descends through the quotient and conserves the readout. Quotient-descending
+cohomology drift, non-descending full-Krein dynamics, W+ ledger shortcuts,
+exact mirrors, non-nilpotent constraints, and missing-control packets are
+rejected or blocked.
 
 The open problem is therefore narrower than the June formulation. A future
 positive packet must supply a real constraint/gauge structure, a
 quotient-compatible operation algebra, an exact-invariant observable/readout,
-and physics-side support before this can become a finality precondition rather
-than a guarded analogy. No claim, public posture, source-action, mass-gap, or
-cross-repo truth is earned by the current finite gates.
+a dynamics-conserved quotient ledger, and physics-side support before this can
+become a finality precondition rather than a guarded analogy. No claim, public
+posture, source-action, mass-gap, unitarity theorem, physical inner product
+selection, or cross-repo truth is earned by the current finite gates.

@@ -71,7 +71,39 @@ extension POCS, and it prints the empirical entanglement wall (expect `1/d`) and
 TODO (the real remaining build): (a) CGLMP Bell operator + isotropic threshold, (b) CCNR bound-entanglement
 witness, (c) the random-state statewise sweep, (d) literature confirmation of `F_share(3)` and `F_CGLMP(3)`.
 
+## Recommended implementation approach (ten-persona methods pass, 2026-07-09)
+
+The key realization: **most of this test should not be brute-forced.**
+
+- **Calibration by symmetry reduction, not POCS.** The isotropic family is `U (x) conj(U)`-invariant, so the
+  extension SDP twirls into a block-diagonal form (Schur-Weyl / commutant) and collapses to a handful of
+  scalars -- `F_share(d)` comes out closed-form. This replaces the slow, tolerance-fragile POCS calibration
+  AND supplies the literature value in one move. (Generalizes swing C's S_3-twirl.)
+- **Prove the nesting order, do not test it.** Both implications are theorems (Toner-Verstraete monogamy;
+  separable => shareable). Computation is only needed for whether the walls stay DISTINCT (gaps non-empty)
+  off the symmetric line.
+- **Off-symmetry distinctness sweep = the only hard part.** Build it as: batched/vectorized NLA (numpy
+  stacks or Torch/GPU) for negativity + CGLMP over many states; a cheap learned/heuristic classifier to gate
+  the expensive step to near-boundary states only; an EXACT SDP with dual certificates (DPS-1 + PPT via
+  CVXPY/PICOS -> MOSEK/SCS) for those -- infeasibility returns an unextendibility witness, not a tolerance
+  verdict (this is what removes the POCS false-negative failure mode); and property-based fuzzing that
+  actively hunts counterexamples at bound-entangled and high-symmetry states.
+- **Fail-closed calibration gate.** Regression-test against the PROVEN d=2 numbers and HALT on mismatch --
+  encode "never trust an uncalibrated tool" as a hard check. Seed RNG; emit JSON with provenance.
+
+**Other ways (counterfactual / alternative formulations) to keep as cross-checks:**
+
+- **Cloning-game (counterfactual):** recast 2-shareability as "could a hypothetical symmetric third party
+  hold the same correlation?" -- a monogamy game value, not a matrix construction. Independent cross-check on
+  the SDP verdict.
+- **Operational certification:** certify each wall from correlations + witnesses (CGLMP from statistics;
+  monogamy witness for unshareability), bypassing the state representation and its tolerance ambiguity.
+- **Formal proof** (Lean / rigorous interval SDP) for the theorem-backed implications and the final wall
+  values.
+
 ## First move next session
 
-Confirm `F_share(3)` and `F_CGLMP(3)` from the literature (a short research step), wire them into the
-skeleton's calibration asserts, implement the CGLMP operator, then run the statewise sweep.
+Symmetry-reduce the isotropic calibration to get `F_share(3)` closed-form (this replaces the POCS
+calibration and confirms the literature value at once); confirm `F_CGLMP(3)`; implement the CGLMP operator;
+then run the off-symmetry distinctness sweep with the certified-SDP-behind-a-classifier stack above. Use the
+cloning-game as an independent cross-check on shareability.

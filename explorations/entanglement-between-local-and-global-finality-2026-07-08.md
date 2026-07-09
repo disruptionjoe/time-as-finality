@@ -155,3 +155,73 @@ controllable communication) recurs as the cross-cutting invariant.
   no-joint-maximization, and the Stelle unitarity stub).
 - Test **"correlation without control"** as a *defining* predicate of the band (not merely a property):
   does it separate the band from both the local and global ends across all twenty personas?
+
+## Pullback pass (not synthesis)
+
+Added 2026-07-08. Method: each of the twenty personas reads the other nineteen and reports what its
+lens **quotients out** (refuses to admit), then nominates the fiber it can accept. The result is a
+**limit, not a colimit**: not "glue everything together" but "the largest object that maps validly into
+every persona's world over the shared target (the finality gradient)." Rejections are the constraints;
+the pullback is what no lens rejects.
+
+| Persona | Quotients out | Pullback nomination |
+|---|---|---|
+| Einstein | "no local value *exists*" (contested) | operational/epistemic, agnostic on ontology |
+| Bohr | parts carry separate values apart from the whole | the closed phenomenon, indivisible |
+| Schrodinger | whole-knowledge reducing to part-knowledge | max joint info, min marginal info |
+| Bell | local hidden variables; untestable ontology | correlation exceeding local bounds, certified |
+| Zurek | "final with zero records" | incipient-not-redundant record; 1 < support < many |
+| Rovelli | absolute facts; also "no fact at all" | fact stabilized relative to >=2 systems, not absolute |
+| Abramsky | presupposing a global section exists | local sections + non-zero gluing obstruction |
+| Deutsch | fuzzy finality with no task | "reverse it" impossible-severally, possible-jointly |
+| Aharonov | binary/discrete-only finality | quorum as the limit of a weak-measurement continuum |
+| Hardy | primitives not cashed as certification | device-independently certifiable correlation |
+| Hashgraph | finality by explicit global vote/broadcast | finality computed from record structure, no signal |
+| Avalanche | binary tipping; no confidence accumulation | metastable region, confidence -> safety threshold |
+| MMO netcode | state not locally reversible; or never reconciling | predicted shared state, reversible until reconciliation |
+| Tendermint | reversal without cost | "locked, not committed," accountable reversal price |
+| CRDT | finality requiring current agreement | outcome fixed by commutativity, no replica holds it |
+| Lamport | total order forced before earned | concurrency under a partial order not yet total |
+| Commitment/ZK | finalization that exposes the local value | binding + hiding, simultaneously |
+| Shamir | finality below threshold t; single-share leakage | exists only across >=t registers; below t, void |
+| MPC | any party holding the value; recoverable inputs | joint result, impossible-severally; correlated randomness |
+| Differential privacy | attributability of the local | aggregate fixed, individual un-finalizable in anonymity set |
+
+### The pullback object P
+
+P is a **jointly-certifiable correlation** over a bounded set of >=2 registers that:
+
+- (a) carries **at least one relational record but no redundant/global records** (1 < support < many);
+- (b) admits **no global section** -- a non-trivial gluing obstruction is present;
+- (c) **cannot be locally read, extracted, controlled, or signalled through** (correlation without control);
+- (d) is **reversible only jointly** -- impossible-severally, possible-jointly -- across a threshold that
+  is the **limit of a graded confidence**, not a bare integer;
+- (e) makes **no commitment about whether an underlying local value exists** -- only that none is accessible.
+
+**Universal property:** P is the largest structure that maps validly into every persona's world over the
+target "finality gradient." Anything added to P breaks at least one projection.
+
+### What the pullback drops (the payoff of limit over colimit)
+
+1. **The ontological horn is gone.** "Real for the pair, no local value" fits inside neither Einstein,
+   Hardy, nor any of the ten distributed-systems lenses (all speak only access/certification). Survives
+   only as "no local value is *accessible*." **The pullback is forced operational** -- which also aligns
+   it with the repo's standing "projection != finality" discipline.
+2. **Bare entanglement is relocated.** Zurek + Hashgraph + Rovelli refuse zero-record correlation, so the
+   band **opens at the first relational record**, not at the correlation's creation. Isolated,
+   un-interacted entanglement sits just *below* the band. A real correction to the opening hypothesis,
+   produced purely by the limit.
+3. **Binary cardinality is gone.** Aharonov + Avalanche force the quorum to be the threshold of a
+   continuum; the order parameter needs a weak-measurement / confidence limit, not a bare integer t.
+4. **Signaling-finality and undiscovered-global-section are gone** (Hashgraph/no-signaling;
+   Abramsky/Lamport).
+
+### Confirmed defining faces
+
+- **Correlation without control** -- face (c) -- is now a *necessary* face (every lens' rejection enforces
+  it), promoted from family-resemblance to structural invariant.
+- **Smallest irreversible quorum** -- face (d) -- survives but recast as a graded threshold.
+
+Net: the pullback is a more minimal, fully operational object than the opening hypothesis, bracketed
+*below* by "first relational record" and *above* by "redundant global records," with
+correlation-without-control as the interior invariant.

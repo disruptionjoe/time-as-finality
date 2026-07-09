@@ -271,3 +271,45 @@ certified (P).** Einstein and Hardy sit at one end of a single skeptic/operation
 Schrodinger at the relational-realist end; nothing else in the twenty depends on where one lands. The
 realism debate is quarantined to one coordinate, and the operational formalism P can be built with the
 ontology bolted on or off as P' without disturbing any structural result.
+
+> **Correction (from starter-swing P7, 2026-07-08):** the invariance band is narrower than stated above.
+> It runs across **relational-realism <-> operational**, NOT "ontology on/off." Face (b) ("no global
+> section") is a finite CSP obstruction that is non-trivial *only when local sections are nonempty*
+> (T36-sheaf-cohomology-audit). A strong *absolute*-realist reading ("no local value exists") would empty
+> the local relations and collapse face (b) to vacuity. The restricted pullback already excluded absolute
+> realism (it dropped Einstein), so the result stands within its own frame -- but the quarantine is to the
+> relational-to-operational band, not to all ontologies.
+
+## Starter swings: parallel viability probes (2026-07-08)
+
+Seven parallel probe agents, each with a designed kill-shot, executed against the open paths (workflow
+`finality-starter-swings`). Agents ran repo models live. Dominant meta-finding: **most paths re-walk the
+repo's existing frontier** -- independent corroboration of landed negatives more than new ground.
+
+| Path | Verdict | Decisive finding |
+|---|---|---|
+| P3 swap discriminator | **dead** | Not empirical: both ledgers reproduce identical A~D statistics. Standard decoherence is already per-partition / non-monotone and books swapping trivially; the "monotone must call it spooky" premise is backwards. Absorbed by H7 lineage (T80/T110/T148, N11-N14). |
+| P5 quorum as THE scalar | **dead** | T17 no-joint-maximization refutes scalar sufficiency (finality is a 4-D vector). "Smallest set to reverse" is ambiguous/non-monotone across BFT (2f+1 vs f+1) and Shamir (reconstruction != reversal). A quorum-intersection Helly *rank* (T239) survives as a component, not the scalar. |
+| P2 kappa vs CHSH | conditional (weak) | kappa fires on CHSH without retuning, but repo's own T465 already ruled it REENCODING_NOT_PREDICTION, and it reads only the sign skeleton -- blind to the Tsirelson/PR-box boundary (T58/T131: quantum probability presheaf has Z/2 and real H^1 = 0). Decorative for band geometry. |
+| P6 CAP/FLP no-go | conditional | CAP already landed (T28, structural identity with Nielsen-Ninomiya). Finite FLP does not survive finitization per the 2026-07-02 cluster-C audit (unreachability != non-existence). One untested crack: non-healable asynchrony via a pinned reach budget. |
+| P1 constructor axiom | conditional (salvageable) | States cleanly as a Deutsch-Marletto task pair at the ordinal top of the LOCC hierarchy. Requires: (a) restrict "reverse" to the reversible+deterministic+state-preserving task (else false -- local measurement decreases entanglement), (b) grading via QRT, not constructor theory (binary). |
+| P4 correlation-without-control | conditional (salvageable) | Separates the band from the local end only; no-signaling holds at the global end too, so it cannot close the band from above. Needs a second invariant -- records-vs-redundancy (T507) -- as the upper closer. The two-invariant instinct was correct. |
+| P7 ontology free parameter | conditional | Quarantine holds only across relational-realism <-> operational; absolute realism collapses face (b). See the Correction block above. |
+
+### Disposition
+
+- **Close (dead):** P3 (swap is not an empirical discriminator; re-describes monogamy+LOCC), P5 (quorum
+  is not a sufficient scalar order parameter).
+- **Demote:** P2 (kappa is a faithful re-encoding, not an independent band invariant; cannot resolve the
+  Tsirelson/PR-box interior that defines the band).
+- **Pursue (small, buildable):**
+  1. **Two-invariant band (P4)** -- the clear win. Formalize: no-signaling = lower-boundary marker;
+     records-vs-redundancy (recoverable-by-admissible-op vs annihilated, T507) = upper closer. Build the
+     3-point separation table over {classical shared randomness, entangled pair, redundant global record}
+     evaluating no-signaling (constant, non-separating) vs local-readability (flips only at the global end).
+  2. **Axiom, correctly restricted (P1)** -- state the reversible+deterministic+state-preserving task
+     explicitly; on a 2-qubit family from product to Bell, check the constructor possible->impossible flip
+     coincides with an LOCC monotone (concurrence/negativity) hitting 0; hand grading to QRT.
+  3. **FLP non-healing crack (P6)** -- extend cap_theorem_bridge.py with a non-healable asynchrony
+     parameter and test whether C-and-A becomes unsatisfiable specifically because co-presence is denied.
+- **Corrected:** P7 -- invariance band narrowed to relational-realism <-> operational (see block above).

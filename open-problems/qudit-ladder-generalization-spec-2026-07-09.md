@@ -1,5 +1,13 @@
 # Spec: generalizing the three-wall ladder to qudits (d > 2)
 
+> **STATUS 2026-07-09: big swing DONE for d=3** -- three distinct nested walls confirmed
+> (1/d < F_share=0.670 < F_CGLMP=0.730), CGLMP operator built and self-checked (2.8729 on maxent; visibility
+> 0.696 matches literature), I1 confirmed non-vacuously on 49 genuine violators. Result:
+> `explorations/qudit-three-wall-ladder-result-2026-07-09.md`, model `models/finality_qudit_three_walls.py`.
+> Remaining: certified SDP (POCS -> dual witness) + symmetry-reduced closed-form F_share; CCNR bound-
+> entanglement witness; d>=4. The items below are the still-open build.
+
+
 Open-problem spec, 2026-07-09. Sets up the next campaign: does the three-wall ladder
 (entanglement < shareability < Bell) survive beyond two qubits? Companion skeleton:
 `models/finality_ladder_qudit.py`. Prior result (two qubits, confirmed):

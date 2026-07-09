@@ -1,0 +1,100 @@
+{
+  "verdict": "T3_SPACELIKE_SANITY_CHECK_BUILT_REVIEW_ONLY",
+  "events": {
+    "A": {
+      "name": "A",
+      "t": 0.0,
+      "x": -1.0
+    },
+    "B": {
+      "name": "B",
+      "t": 0.0,
+      "x": 1.0
+    },
+    "C": {
+      "name": "C",
+      "t": 3.0,
+      "x": 0.0
+    }
+  },
+  "interval_ab": -4.0,
+  "interval_ac": 8.0,
+  "interval_bc": 8.0,
+  "frames": [
+    {
+      "frame": "lab",
+      "velocity": 0.0,
+      "transformed_events": {
+        "A": [
+          0.0,
+          -1.0
+        ],
+        "B": [
+          0.0,
+          1.0
+        ],
+        "C": [
+          3.0,
+          0.0
+        ]
+      },
+      "ab_order": "simultaneous_in_frame"
+    },
+    {
+      "frame": "observer_plus_half_c",
+      "velocity": 0.5,
+      "transformed_events": {
+        "A": [
+          0.5773502691896258,
+          -1.1547005383792517
+        ],
+        "B": [
+          -0.5773502691896258,
+          1.1547005383792517
+        ],
+        "C": [
+          3.4641016151377553,
+          -1.7320508075688776
+        ]
+      },
+      "ab_order": "B_before_A"
+    },
+    {
+      "frame": "observer_minus_half_c",
+      "velocity": -0.5,
+      "transformed_events": {
+        "A": [
+          -0.5773502691896258,
+          -1.1547005383792517
+        ],
+        "B": [
+          0.5773502691896258,
+          1.1547005383792517
+        ],
+        "C": [
+          3.4641016151377553,
+          1.7320508075688776
+        ]
+      },
+      "ab_order": "A_before_B"
+    }
+  ],
+  "common_future_reconciliation": {
+    "A_to_C": true,
+    "B_to_C": true,
+    "A_to_B_spacelike": true
+  },
+  "proper_time_check": {
+    "lab_frame": 1.7320508075688772,
+    "observer_rest_frame": 1.7320508075688776,
+    "absolute_difference": 4.440892098500626e-16
+  },
+  "safe_finality_reading": "Finality language may track when records from A and B can be compared at C, but it must not add an invariant global commit order between spacelike-separated A and B.",
+  "not_earned": [
+    "R1 claim promotion",
+    "replacement spacetime geometry",
+    "hidden universal present",
+    "global commit order for spacelike events",
+    "proper-time replacement"
+  ]
+}

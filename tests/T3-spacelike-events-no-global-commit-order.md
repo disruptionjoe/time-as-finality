@@ -25,3 +25,16 @@ Model two spacelike-separated events `A` and `B`, two observers in relative moti
 ## Contribution Needed
 
 Provide a relativity sanity check with diagrams or equations showing exactly where finality language is safe and where it stops.
+
+## Status Addendum: T3 Sanity Packet v0.1
+
+`models/t3_spacelike_commit_order_sanity.py` supplies a finite 1+1 Minkowski
+sanity check. Events `A` and `B` are spacelike-separated, so their order changes
+between inertial frames; event `C` lies in the common causal future of both, so
+record reconciliation at `C` is causal.
+
+Safe reading: finality language may track when records become comparable at a
+common future event, but it must not add a hidden universal present, global
+commit order, or replacement geometry for spacelike-separated events.
+
+Result packet: `results/T3-spacelike-commit-order-sanity-v0.1-results.md`.

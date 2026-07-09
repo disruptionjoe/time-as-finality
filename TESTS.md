@@ -8,7 +8,7 @@ The project is useful only if claims can be formalized, stressed, or broken.
 | --- | --- | --- | --- |
 | [T1](tests/T1-record-graph-temporal-reconstruction.md) | Record graph temporal reconstruction | C1, D1, D2 | implemented: partial success |
 | [T2](tests/T2-quantum-measurement-record-finality.md) | Quantum measurement record finality | Q1, D1, G2 | implemented: dynamical measurement finality lab |
-| [T3](tests/T3-spacelike-events-no-global-commit-order.md) | Spacelike events and no global commit order | R1, G2 | open |
+| [T3](tests/T3-spacelike-events-no-global-commit-order.md) | Spacelike events and no global commit order | R1, G2 | implemented: 1+1 Minkowski sanity check; no global commit order or replacement geometry |
 | [T4](tests/T4-black-hole-causal-access-boundary.md) | Black-hole causal access boundary | B1, G2 | open |
 | [T5](tests/T5-thermodynamic-record-support.md) | Thermodynamic record support | D1, C1 | structural benchmark implemented |
 | [T6](tests/T6-snowball-record-finality.md) | Snowball record finality | A1, D1, Q1 | open |

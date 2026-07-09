@@ -62,11 +62,38 @@ from "the" inner label) marks only the innermost.
   that finality is a multi-dimensional vector, not a scalar. The ladder is the concrete quantum instance of
   that.
 
+## Off-Werner generalization (2026-07-09) -- the ladder is NOT a one-family artifact
+
+Model: `models/finality_ladder_off_werner.py` (exit 0). This attacked the load-bearing question: is the
+three-wall nesting real, or a Werner-line artifact?
+
+The two nesting implications are **theorems**, so the ORDER is general by proof:
+- **I1** CHSH-violating => NOT 2-shareable (Toner-Verstraete monogamy of Bell correlations);
+- **I2** NOT 2-shareable => entangled (separable states are infinitely shareable; and for two qubits
+  PPT <=> separable <=> shareable, Horodecki).
+
+Computational confirmation off the Werner line:
+- **Calibration passed:** the symmetric-extension (2-shareability) test, implemented by projections onto
+  PSD and the affine {symmetric, correct marginal} set, reproduces swing C's Werner wall at **0.665 ~= 2/3**
+  -- so the tool is trustworthy off-Werner.
+- **Nesting holds statewise:** on 400 random general 2-qubit states, zero CHSH-violating separable states;
+  on the off-Werner sample, zero I1 violations (genuine POCS test) and zero I2 violations (theorem-enforced).
+- **Both gaps stay non-empty off Werner:** 62 entangled-but-shareable states and 27 un-shareable-but-CHSH-
+  local states -- the three walls remain genuinely DISTINCT, not coincident, beyond the Werner family.
+
+One honest wrinkle handled correctly: an initial run flagged 6 "un-shareable separable" states (an I2
+violation). Because I2 is a theorem, those were numerical false-negatives of the iterative extension test on
+near-separable states, resolved by the 2-qubit PPT=separable short-circuit (PPT => shareable by theorem),
+not by loosening a threshold.
+
+**Verdict:** the ladder ORDER (separable < shareable-bound < CHSH-bound) is theorem-backed and confirmed
+general; the Werner NUMBERS (1/3, 2/3, 1/sqrt2) are family-specific. The three-wall structure survives the
+generalization attack.
+
 ## Honest limits / next
 
-- The ladder is shown on the Werner family only. Whether the three walls stay ordered and distinct off the
-  Werner line (general 2-qubit, then qudit) is unchecked; the ordering 1/3 < 2/3 < 1/sqrt2 is Werner-specific
-  in its numbers though the *nesting* (separable < shareable-bound < CHSH-bound) is general.
+- Confirmed for general two-qubit states. Qudit (d>2) is still unchecked -- and note the PPT=separable
+  short-circuit used above is two-qubit-specific (fails for d>2), so a qudit test needs a full extension SDP.
 - The 2/3 shareability wall is imported from swing C, not re-derived here.
 - Natural next step: state each rung's constructor task explicitly (reversible-disentangle, reversible-
   unshare, reversible-de-nonlocalise) and check each flip tracks its own monotone -- turning the ladder into

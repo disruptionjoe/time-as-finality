@@ -25,3 +25,29 @@ Model an exterior observer, an infalling observer, and an event horizon as a cau
 ## Contribution Needed
 
 Add a specialist critique of the phrase "finality-domain boundary" and propose safer wording where needed.
+
+## Status Addendum: T418 Horizon Access-Profile Guardrail v0.1
+
+`models/schwarzschild_horizon_access_profile_screen.py` supplies the runnable
+guardrail requested by this T4 spec. The artifact is registered as
+[T418](T418-schwarzschild-horizon-access-profile-screen.md) because the
+Schwarzschild access-profile audit was built later in the numbered sequence.
+
+T418 uses radial null structure in ingoing Eddington-Finkelstein coordinates to
+separate two questions:
+
+- Exterior-native capability: two states with the same exterior Schwarzschild
+  shadow and different interior records do not split exterior record-recovery
+  capability.
+- Cross-profile capability: an infalling or full-slice profile can distinguish
+  the interior records, but that is an access-profile mismatch unless the
+  profile change is declared.
+
+Safe reading: the event horizon is a standard GR causal-access boundary for the
+stationary exterior observer in this screen. It is not TaF residue by itself,
+does not deny local interior experience, and does not make a black-hole
+information, holography, evaporation, semiclassical-gravity, or replacement
+geometry claim.
+
+Result packet:
+`results/T418-schwarzschild-horizon-access-profile-screen-v0.1-results.md`.

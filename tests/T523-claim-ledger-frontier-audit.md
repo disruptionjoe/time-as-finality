@@ -1,0 +1,35 @@
+# T523: Claim-Ledger Frontier Audit
+
+## Target Claims
+
+`CLAIM-LEDGER.md` Canon Index coverage-note coherence after the Ledger
+Reconciliation Trigger. This is not a research claim, claim promotion, or
+public-posture artifact.
+
+## Setup
+
+Treat `TESTS.md` and the top coverage note in `CLAIM-LEDGER.md` as data.
+
+## Success Criteria
+
+- The coverage note names the current highest test registry ID.
+- The still-untriaged frontier is declared as `T249-T513`.
+- T517-T519 are preserved as already routed no-row DS-bridge prospecting, not
+  recounted as untriaged frontier.
+- T521-T523 are declared infrastructure/no-row artifacts.
+- T523 does not create a claim row.
+
+## Failure Criteria
+
+Any mismatch between the test registry ceiling, the coverage note, the
+declared untriaged range, or no-row infrastructure language fails the audit.
+
+## Known Physics Constraints
+
+None. This is ledger-frontier declaration hygiene only.
+
+## Contribution Needed
+
+Keep this audit scoped to frontier declaration. Do not convert it into claim
+tier movement, canon verdict movement, roadmap movement, North Star movement,
+public-posture movement, publication, or cross-repository truth.

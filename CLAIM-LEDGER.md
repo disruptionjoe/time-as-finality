@@ -15,7 +15,7 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
-**Coverage / staleness supersession (2026-07-10).** This note supersedes the 2026-07-09 coverage note below. The test registry (`TESTS.md`) is now at **T522**. T521 is detector-manifest review infrastructure only, and T522 is registry hygiene only; neither creates a claim row, claim-status movement, canon verdict, or public-posture movement. The un-triaged frontier remains **T249-T513, T517-T519**, while TWL (T514-T516) and T520 have already received the limited placements described below. The remaining ratification pass is still due under the steward Ledger Reconciliation Trigger.
+**Coverage / staleness supersession (2026-07-10).** This note supersedes the 2026-07-09 coverage note below. The test registry (`TESTS.md`) is now at **T523**. T521 is detector-manifest review infrastructure, T522 is registry hygiene, and T523 is ledger-frontier declaration hygiene; none creates a claim row, claim-status movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T249-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T249-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
 
 **Coverage / staleness (2026-07-09).** This index and table track claims through **T248**, plus two 2026-07-09 ratification placements now triaged into it: **TWL** (three-wall nonlocality ladder, T514–T516; finite-witness supported) and the **T520** copy-law screen (lane B, absorbed — negative, no claim row). The test registry (`TESTS.md`) is at **T520**, so the rest of the frontier **T249–T513, T517–T519 remains un-triaged here** (M2/E-gate negatives, boundary-adapter gates, and the T517–T519 DS-bridge prospecting, which is structural-only / SHUT and earns no row). A reader must not read a tier's *absence* here as "unsupported"; it may simply be un-triaged. The remaining ratification pass is still due under the steward Ledger Reconciliation Trigger. `COMPLEXITY-LEDGER.md` tracks through T138; the independence audit through T222/T223.
 
@@ -3324,3 +3324,16 @@ T517–T519) remains due.
 - **T517–T519 DS-bridge prospecting — no rows.** Monogamy-wall↔BFT SHUT (T517);
   QD-redundancy↔replication structural-only, quantitative bridge open (T518/T519).
   Tracked in the lane-status ledger, not claim-bearing.
+
+### 2026-07-10 - Ledger-frontier declaration audit (T523)
+
+Mechanical follow-up under the Ledger Reconciliation Trigger. T523 checks that
+the top coverage note matches the current `TESTS.md` ceiling and separates the
+still-untriaged frontier from no-row infrastructure. It creates no claim row,
+no claim-status movement, no Canon Index tier movement, no canon verdict
+movement, and no public-posture movement.
+
+- **T523 claim-ledger frontier audit - no row.** The executable audit verifies
+  that the registry is at T523, the still-untriaged frontier is T249-T513, T517-T519
+  are already no-row DS-bridge prospecting, T521-T523 are infrastructure/no-row
+  artifacts, and T523 itself has no claim row.

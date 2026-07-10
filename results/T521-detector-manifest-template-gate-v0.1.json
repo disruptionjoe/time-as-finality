@@ -1,0 +1,30 @@
+{
+  "artifact_id": "T521-detector-manifest-template-gate-v0.1",
+  "template_path": "templates\\detector-preregistration-manifest.template.md",
+  "verdict": "DETECTOR_MANIFEST_TEMPLATE_GATE_BUILT_REVIEW_ONLY",
+  "missing_t97_tables": [],
+  "missing_wrapper_fields": [],
+  "wrong_commitment_kinds": [],
+  "missing_authority_domains": [],
+  "missing_tier_choices": [],
+  "has_no_data_boundary": true,
+  "has_observed_value_commitment": false,
+  "required_claim_review_fields": [
+    "detector_identity",
+    "run_session_id",
+    "causal_ordering_data",
+    "raw_measurement_payload",
+    "calibration_reference",
+    "provenance_chain",
+    "signatures",
+    "authority_domains",
+    "publication_status",
+    "revocation_status",
+    "key_state",
+    "admissibility_tokens",
+    "witness_references",
+    "reconstruction_paths",
+    "challenge_status"
+  ],
+  "scope_boundary": "Template/review gate only: no detector evidence, Q1B movement, claim-ledger movement, public-posture movement, external publication, or observed payload values."
+}

@@ -106,3 +106,31 @@ their home architecture) — itself a weak in-vivo instance of observer-relative
    way no interior layer can be, or inherits the regress it was invoked to close.
 
 Persona sprints generate; only compute->verify decides. No bet moves any claim.
+
+## Addendum 2 (2026-07-10): limit / pullback of the betting book (structured analogy, honest tier)
+
+Treat each persona assessment as a local section (valuation + home-ontology translation); the book
+was a COLIMIT-flavored aggregation (glue, majorities win). Computing the duals:
+
+- **Limit WITH objectors (vetoes bind):** nearly bare -- only (1) the disjunction (nobody shorted
+  all three; every objector went long somewhere), (2) the fossil METHODOLOGY itself (the signature
+  table is the diagram's equalizer -- every persona used it unchanged), (3) weak H1 (the only
+  unvetoed hypothesis). So sum-aggregation crowns H3 while limit-aggregation crowns H1: "fewest
+  enemies" IS the limit-winner property, "broadest coalition" the colimit-winner property. Which
+  aggregation is correct is itself the verifier-topology question (peer consensus = colimit-shaped;
+  settlement verification = limit-shaped) -- the vote about verification cannot be tallied without
+  answering the question being voted on. Genuine recursion, not ornament.
+- **Pullback H2 x_B H3** over the base B = "a record level distinct from the bulk exists": the
+  LAYER-THAT-SETTLES composite (H2 = identity leg, H3 = function leg). Fossil-check = conjunction
+  (universality AND imported constraints); the two shorts' demands are its compatibility conditions.
+- **Pullback WITHOUT objectors:** all three glue -- H1's bridges become the layer's internal wiring
+  (entanglement graph of the shares), H2 the substrate, H3 the function:
+  links-as-wiring < layer-as-substrate < settlement-as-function -- i.e. the holographic (AdS/CFT)
+  picture with a settlement reading. Remove the objectors and the steelmen reassemble into
+  mainstream holography.
+- **The objectors ARE the obstruction class:** in this file's own sheaf language, the shorts are
+  the nonzero H^1 blocking the global section, each pricing its own removal (H2 leg: homology-vs-
+  convergence separator; H3 leg: non-regressive verifier story). Distance from the bare limit to
+  the holographic tri-composite = exactly two named data.
+
+Generation-tier; no bet or gluing moves any claim.

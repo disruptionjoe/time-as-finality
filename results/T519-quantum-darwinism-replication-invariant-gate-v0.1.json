@@ -1,0 +1,190 @@
+{
+  "artifact_id": "T519-quantum-darwinism-replication-invariant-gate-v0.1",
+  "verdict": "CRASH_TRANSLATION_ONLY_BYZANTINE_INVARIANT_FAILS",
+  "model": "models/quantum_darwinism_replication_invariant_gate.py",
+  "N": 8,
+  "candidate_invariant": "D_delta = 1 - f_delta/N",
+  "rows": [
+    {
+      "N": 8,
+      "theta_pi": 1.0,
+      "delta": 0.1,
+      "H_S": 1.0,
+      "f_delta": 1,
+      "R_delta": 8.0,
+      "info_deficit": 0.875,
+      "curve": [
+        {
+          "f": 1,
+          "avg_info": 1.0
+        },
+        {
+          "f": 2,
+          "avg_info": 1.0
+        },
+        {
+          "f": 3,
+          "avg_info": 1.0
+        },
+        {
+          "f": 4,
+          "avg_info": 1.0
+        },
+        {
+          "f": 5,
+          "avg_info": 1.0
+        },
+        {
+          "f": 6,
+          "avg_info": 1.0
+        },
+        {
+          "f": 7,
+          "avg_info": 1.0
+        },
+        {
+          "f": 8,
+          "avg_info": 1.9999999999999998
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "theta_pi": 0.6,
+      "delta": 0.1,
+      "H_S": 0.999853560511694,
+      "f_delta": 2,
+      "R_delta": 4.0,
+      "info_deficit": 0.75,
+      "curve": [
+        {
+          "f": 1,
+          "avg_info": 0.7342533874492121
+        },
+        {
+          "f": 2,
+          "avg_info": 0.9131771148435064
+        },
+        {
+          "f": 3,
+          "avg_info": 0.9734514848111603
+        },
+        {
+          "f": 4,
+          "avg_info": 0.9998535605116939
+        },
+        {
+          "f": 5,
+          "avg_info": 1.0262556362122273
+        },
+        {
+          "f": 6,
+          "avg_info": 1.0865300061798808
+        },
+        {
+          "f": 7,
+          "avg_info": 1.2654537335741738
+        },
+        {
+          "f": 8,
+          "avg_info": 1.999707121023388
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "theta_pi": 0.6,
+      "delta": 0.05,
+      "H_S": 0.999853560511694,
+      "f_delta": 3,
+      "R_delta": 2.6666666666666665,
+      "info_deficit": 0.625,
+      "curve": [
+        {
+          "f": 1,
+          "avg_info": 0.7342533874492121
+        },
+        {
+          "f": 2,
+          "avg_info": 0.9131771148435064
+        },
+        {
+          "f": 3,
+          "avg_info": 0.9734514848111603
+        },
+        {
+          "f": 4,
+          "avg_info": 0.9998535605116939
+        },
+        {
+          "f": 5,
+          "avg_info": 1.0262556362122273
+        },
+        {
+          "f": 6,
+          "avg_info": 1.0865300061798808
+        },
+        {
+          "f": 7,
+          "avg_info": 1.2654537335741738
+        },
+        {
+          "f": 8,
+          "avg_info": 1.999707121023388
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "theta_pi": 0.6,
+      "delta": 0.2,
+      "H_S": 0.999853560511694,
+      "f_delta": 2,
+      "R_delta": 4.0,
+      "info_deficit": 0.75,
+      "curve": [
+        {
+          "f": 1,
+          "avg_info": 0.7342533874492121
+        },
+        {
+          "f": 2,
+          "avg_info": 0.9131771148435064
+        },
+        {
+          "f": 3,
+          "avg_info": 0.9734514848111603
+        },
+        {
+          "f": 4,
+          "avg_info": 0.9998535605116939
+        },
+        {
+          "f": 5,
+          "avg_info": 1.0262556362122273
+        },
+        {
+          "f": 6,
+          "avg_info": 1.0865300061798808
+        },
+        {
+          "f": 7,
+          "avg_info": 1.2654537335741738
+        },
+        {
+          "f": 8,
+          "avg_info": 1.999707121023388
+        }
+      ]
+    }
+  ],
+  "crash_quorum_reading": "D_delta equals crash survival only when q is set to f_delta.",
+  "byzantine_reading": {
+    "faulty": 2,
+    "minimum_safe_quorum": 6,
+    "survival_fraction": 0.25,
+    "matches_all_rows": false
+  },
+  "checks_passed": 5,
+  "checks_failed": 0
+}

@@ -97,3 +97,17 @@ converts the bridge from analogy to discovery.
   dimensionless invariant both sides compute identically -- candidate: the
   information deficit `1 - f_delta/N`).
   `results/T518-quantum-darwinism-replication-bridge-v0.1-results.md`.
+
+## Update (2026-07-09, RUN-297): T518 wake-condition candidate tested
+
+- **Corner 1 candidate invariant `1 - f_delta/N` -- SHUT as quantitative bridge
+  (T519).** The information-deficit candidate matches a crash-quorum survival
+  fraction only by setting the distributed quorum size to the QD fragment
+  threshold (`q=f_delta`). That is a useful translation identity, not an
+  independent invariant. It is also delta-sensitive for fixed physics and fails
+  a predeclared Byzantine quorum-intersection reading (`N=8`, `f=2`, minimum
+  safe quorum `q=6`, survival `0.25`, while perfect-copy QD gives `D=0.875`).
+  Corner 1 remains structurally open, but the quantitative bridge now requires
+  a new invariant that survives a predeclared DS failure model rather than
+  adapting the DS model after the QD threshold is known.
+  `results/T519-quantum-darwinism-replication-invariant-gate-v0.1-results.md`.

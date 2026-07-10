@@ -81,3 +81,28 @@ absorbed the access-profile version of "crossing changes capability" into ordina
 accounting. B1's absorbers are undefeated. Any promotion path runs: type the non-reachability
 capability -> build the finite fixture -> survive the causal-access absorber that killed the
 predecessors. Curiosity capture; no claim, lane, or ledger movement; no wake condition set.
+
+## Addendum (2026-07-10): 20-persona betting book (inline pass; generation only)
+
+Twenty divergent personas (Einstein, ZK cryptographer, rollup architect, Avalanche designer,
+hashgraph engineer, MMO netcode, Minecraft engineer, topologist, QI theorist, LQG, string theorist,
+condensed-matter, thermodynamicist, category theorist, BFT classicist, LIGO observer, Wheeler, AIT,
+distributed-DB engineer, bookmaker), 10 intensity units each, longs/shorts allowed, placement
+mandatory. **Book: H3 net +65 (broadest), H2 net +53 (deepest conviction, two near-all-ins),
+H1 net +38 (fewest enemies, fewest lovers).** Nine personas split H2+H3 — the pair reads as one
+composite (the layer exists AND functions as settlement); the live rivalry is that coalition vs H1
+(level vs links as fundamental ontology). Discipline-correlated betting throughout (everyone bet
+their home architecture) — itself a weak in-vivo instance of observer-relative rendering.
+
+**Two genuine sharpenings from the shorts (upgrade the fossil-checks above):**
+1. **H2 must rule out convergent evolution** (condensed-matter short, -6): universality classes
+   prove identical laws emerge WITHOUT one underlying object; the homology argument (one anatomy =>
+   one ancestor) needs a discriminator between shared substance and shared math. H2's fossil-check
+   is now: universality PLUS a homology-vs-convergence separator, not universality alone.
+2. **H3 must answer "who verifies the settlement layer"** (BFT short, -8): a settlement layer
+   reintroduces a trusted third party — exactly the verifier-topology regress
+   (`verifier-topology-of-finality-2026-07-10.md` topology 2->3). H3's honest form is therefore
+   recursive: settlement-shaped finality either terminates in a layer that is SELF-verifying in a
+   way no interior layer can be, or inherits the regress it was invoked to close.
+
+Persona sprints generate; only compute->verify decides. No bet moves any claim.

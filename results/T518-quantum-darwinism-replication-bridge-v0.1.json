@@ -1,0 +1,23 @@
+{
+  "artifact_id": "T518-quantum-darwinism-replication-bridge-v0.1",
+  "verdict": "STRUCTURAL_CORRESPONDENCE_CONFIRMED_QUANTITATIVE_BRIDGE_OPEN",
+  "source": "explorations/lane-status-and-adjacent-space-prospecting-2026-07-09.md (prospecting corner 1: strongest unbuilt lead)",
+  "model": "models/quantum_darwinism_replication_bridge.py",
+  "objective": "Build a finite executable version of both the quantum-Darwinism redundancy plateau and a distributed-systems replication factor and test whether the correspondence is more than vocabulary.",
+  "qd_model": "system qubit |+>, N=8 environment qubits each an imperfect copy via controlled Ry(theta). Exact partial information I(S:F); redundancy R_delta = N/f_delta, f_delta = smallest fragment reaching (1-delta)H(S).",
+  "redundancy_plateau_delta_0.1": {
+    "theta=1.00pi": {"f_delta": 1, "R": 8.0},
+    "theta=0.60pi": {"f_delta": 2, "R": 4.0},
+    "theta=0.35pi": {"f_delta": 4, "R": 2.0},
+    "theta=0.20pi": {"f_delta": 4, "R": 2.0}
+  },
+  "quantitative_test": {
+    "theta=0.6pi, delta=0.05": {"f": 3, "R": 2.67},
+    "theta=0.6pi, delta=0.20": {"f": 2, "R": 4.0},
+    "reading": "R_delta is NOT delta-invariant, so it is not yet a well-defined replication factor."
+  },
+  "verdict_text": "CONFIRMED correspondence, NOT yet a discovery. The redundancy plateau (many disjoint fragments each independently sufficient) is structurally the eventual-consistency replication property (any read quorum reconstructs the value; record survives losing all but one quorum) -- more than vocabulary. But the quantitative map R_delta = replication factor is unbuilt: R_delta depends on delta, and the DS replication factor depends on the failure model and quorum-intersection rule; no shared dimensionless invariant computes the same number on both sides.",
+  "wake_condition": "find a dimensionless invariant (candidate: information deficit 1 - f_delta/N vs a quorum-intersection redundancy) that both sides compute identically; if it exists, the bridge converts from analogy to discovery.",
+  "checks_passed": 5,
+  "checks_failed": 0
+}

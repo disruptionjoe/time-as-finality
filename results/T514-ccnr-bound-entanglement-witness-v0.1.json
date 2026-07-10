@@ -1,0 +1,24 @@
+{
+  "artifact_id": "T514-ccnr-bound-entanglement-witness-v0.1",
+  "verdict": "CCNR_WITNESS_VERIFIED_OUTER_WALL_UPGRADED",
+  "source": "explorations/qudit-three-wall-ladder-result-2026-07-09.md (honest limit #2)",
+  "model": "models/finality_ccnr_bound_entanglement_witness.py",
+  "objective": "Close honest-limit #2 of the qudit ladder: upgrade the outer wall from 'NPT-entangled' (negativity) to genuinely 'entangled' by adding the CCNR/realignment criterion, a bound-entanglement witness independent of the PPT test.",
+  "criterion": "||R(rho)||_1 > 1 => entangled, where R(rho)[(a a'),(b b')] = rho[(a b),(a' b')]. Sufficient, not necessary.",
+  "calibration": {
+    "separable_product_CCNR": 0.4181,
+    "isotropic_sep_point_F=1/3_CCNR": 1.000000,
+    "isotropic_entangled_F=0.9_CCNR": 2.7000,
+    "isotropic_entangled_F=0.9_negativity": 0.8500
+  },
+  "payoff": {
+    "state": "Tiles UPB bound-entangled state (Bennett et al., 3x3)",
+    "negativity": 1.67e-16,
+    "ccnr": 1.0874,
+    "reading": "PPT (negativity ~ 0, invisible to the old outer wall) but CCNR > 1 (caught by the upgraded wall)."
+  },
+  "effect_on_ladder": "On the isotropic family PPT <=> separable, so CCNR and negativity give the SAME entanglement wall at F = 1/d. The qudit ladder result is UNCHANGED on the isotropic line; the upgrade only adds detection of bound entanglement off that line.",
+  "scope_limits": "CCNR is sufficient, not necessary; PPT-entangled states it misses may remain. No claim-ledger movement.",
+  "checks_passed": 7,
+  "checks_failed": 0
+}

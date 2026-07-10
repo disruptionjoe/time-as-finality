@@ -51,6 +51,25 @@ line; and the key implication (CGLMP-violating => un-shareable) holds statewise 
 Werner/isotropic NUMBERS differ from d=2 but the STRUCTURE is the same -- consistent with the theorem-backed
 generality established in the two-qubit off-Werner test.
 
+## Follow-up (2026-07-09, later session): three honest limits closed
+
+- **#1 shareability closed form -- CLOSED (T516).** The isotropic 2-shareability
+  wall is `F_share(d) = (d+1)/(2d)` (Johnson & Viola PRA 88 032323; arXiv
+  0906.5255), independently bracketed by POCS at d=2,3,4. So `F_share=0.670` at
+  d=3 is exactly `2/3`. `results/T516-isotropic-shareability-closed-form-v0.1-results.md`.
+- **#2 bound entanglement -- CLOSED (T514).** A CCNR/realignment witness upgrades
+  the outer wall from "NPT-entangled" to "entangled"; it detects the Tiles UPB
+  bound-entangled state (negativity ~0, CCNR 1.087). The isotropic-line ladder is
+  unchanged (PPT=sep there). `results/T514-ccnr-bound-entanglement-witness-v0.1-results.md`.
+- **#4 d>=4 -- EXTENDED (T515).** The ladder holds at d=4 too. Building CGLMP-4
+  surfaced a latent sign bug in `models.finality_qudit_three_walls.cglmp` (the
+  k>=1 term, never fired at d<=3); the corrected operator matches the standard
+  CGLMP values exactly at d=2,3,4,5. **This d=3 result is unaffected** (it only
+  ever used k=0). `results/T515-qudit-d4-ladder-v0.1-results.md`.
+
+Still open: certified dual-witness SDP for shareability (POCS remains a
+feasibility test); CGLMP measurements are a witness (sufficient, not necessary).
+
 ## Honest limits (the remaining build, unchanged from the spec)
 
 - **Shareability via POCS, not a certified SDP.** POCS returns a tolerance verdict, not a dual-witness

@@ -1,0 +1,19 @@
+{
+  "artifact_id": "T516-isotropic-shareability-closed-form-v0.1",
+  "verdict": "ISOTROPIC_2SHAREABILITY_WALL_HAS_CLOSED_FORM_(d+1)/2d",
+  "source": "explorations/qudit-three-wall-ladder-result-2026-07-09.md (honest limit #1: confirm F_share against a closed form)",
+  "model": "models/finality_isotropic_shareability_closed_form.py",
+  "closed_form": "F_share(d) = (d+1)/(2d)   [visibility form v_share(d) = (d+2)/(2(d+1))]",
+  "literature": "Symmetric-extendibility boundary for isotropic states; Johnson & Viola PRA 88 032323 (2013); arXiv 0906.5255.",
+  "predictions": {"d2": 0.750, "d3": 0.667, "d4": 0.625, "d5": 0.600},
+  "independent_pocs_brackets": {
+    "d2": {"bracket": [0.73, 0.77], "closed_form": 0.7500, "contained": true},
+    "d3": {"bracket": [0.6467, 0.6867], "closed_form": 0.6667, "contained": true},
+    "d4": {"bracket": [0.605, 0.645], "closed_form": 0.6250, "contained": true}
+  },
+  "structural_facts": ["F_share(d) > 1/d for all d (shareability strictly above separability)", "monotone decreasing, -> 1/2 as d -> inf"],
+  "d3_link": "F_share(3) = 2/3 = 0.6667, matching the qudit ladder's POCS value 0.670.",
+  "scope": "POCS is a feasibility test (no dual-witness certificate); the closed form is the certified value, POCS is an independent numeric confirmation.",
+  "checks_passed": 6,
+  "checks_failed": 0
+}

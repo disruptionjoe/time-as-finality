@@ -1,0 +1,28 @@
+{
+  "artifact_id": "T515-qudit-d4-ladder-v0.1",
+  "verdict": "THREE_WALL_LADDER_GENERALIZES_TO_D4_CGLMP_OPERATOR_CORRECTED",
+  "source": "explorations/qudit-three-wall-ladder-result-2026-07-09.md (honest limit #4: d>=4 unchecked)",
+  "model": "models/finality_qudit_d4_ladder.py",
+  "objective": "Extend the entanglement < shareability < CGLMP ladder to d=4, and correct the CGLMP-d operator.",
+  "cglmp_operator_finding": {
+    "bug": "models.finality_qudit_three_walls.cglmp has a sign error in the k>=1 positive term P(B2=A1+k): coded QAB(P12,k), must be QAB(P12,-k). Identical for k=0, so d in {2,3} were correct and untested on k>=1.",
+    "old_d4_maxent": 2.9149,
+    "corrected_maxent_vs_standard": {"d2": [2.8284, 2.8284], "d3": [2.8729, 2.8729], "d4": [2.8962, 2.8962], "d5": [2.9105, 2.9105]},
+    "d3_ladder_impact": "none (d=3 uses only the k=0 term)"
+  },
+  "walls_d4": {
+    "entanglement_F": 0.250,
+    "shareability_F_POCS": 0.600,
+    "shareability_F_closed_form": 0.625,
+    "cglmp_F": 0.710,
+    "cglmp_visibility": 0.6907,
+    "cglmp_visibility_literature": 0.6906
+  },
+  "statewise_sweep": {
+    "n_states": 55, "cglmp_violating": 25, "shareable": 2,
+    "I1_violations": 0, "cglmp_but_separable": 0
+  },
+  "verdict_text": "Three distinct nested walls confirmed at d=4 (1/d < (d+1)/2d < F_CGLMP), both gaps populated, I1 (CGLMP-violating => un-shareable) holds statewise. The ladder holds at d=2,3,4; numbers move with d, structure is dimension-independent.",
+  "checks_passed": 21,
+  "checks_failed": 0
+}

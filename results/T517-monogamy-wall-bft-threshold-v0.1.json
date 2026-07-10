@@ -1,0 +1,18 @@
+{
+  "artifact_id": "T517-monogamy-wall-bft-threshold-v0.1",
+  "verdict": "SHUT_AS_STATED_monogamy_wall_vs_BFT_2/3_is_a_d2_parametrization_coincidence",
+  "source": "explorations/lane-status-and-adjacent-space-prospecting-2026-07-09.md (prospecting corner 4)",
+  "model": "models/finality_monogamy_wall_bft_threshold.py",
+  "hypothesis_tested": "H(structural): the 2-shareability wall equals the BFT honest-fraction threshold 2/3 because monogamy of entanglement is the structural cause of fault-tolerance bounds.",
+  "datum_for": "v_share(2) = (d+2)/(2(d+1)) = 4/6 = 2/3 exactly; classical BFT needs > 2/3 honest nodes.",
+  "data_against": {
+    "wall_drifts": "v_share(d) = (d+2)/(2(d+1)) decreases monotonically -> 1/2, while BFT 2/3 is d-independent.",
+    "qutrit_wall": "v_share(3) = 5/8 = 0.625, not 2/3 (matches the note's datum).",
+    "parametrization_dependent": "the coincidence lands at d=2 in visibility but at d=3 in fidelity (F_share(3)=2/3); a coincidence signature.",
+    "axis_mismatch": "2-shareability fixes shares at 2 and varies local dimension d; BFT fixes local structure and varies party count n (n>3f). The two 2/3's are values of functions of different variables."
+  },
+  "verdict_text": "SHUT as stated: the monogamy-wall <-> BFT-2/3 correspondence is falsified as a structural correspondence and preserved as a labeled coincidence. The genuine monogamy <-> access-structure (secret-sharing) bridge is untouched.",
+  "pocs_wall_confirmation": {"d2": 0.750, "d3": 0.667, "d4": 0.625},
+  "checks_passed": 14,
+  "checks_failed": 0
+}

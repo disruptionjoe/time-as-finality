@@ -76,3 +76,24 @@ system to weigh. The two highest-prospect new questions the map generates: (1) b
 replication correspondence quantitatively (corner 1, apparently unbuilt); (2) attempt a *reverse transfer* --
 use a monogamy bound to derive a distributed fault-tolerance limit (corner 4). Either, if it transfers,
 converts the bridge from analogy to discovery.
+
+## Update (2026-07-09, later session): corners 1 and 4 executed
+
+- **Corner 4 (monogamy wall vs BFT 2/3) -- SHUT as stated (T517).** The specific
+  numerical correspondence is a d=2, single-parametrization coincidence: the
+  2-shareability wall drifts as `v_share(d)=(d+2)/(2(d+1)) -> 1/2` while BFT `2/3`
+  is d-independent; the qutrit wall is `5/8`; the coincidence even moves to d=3
+  under the fidelity parametrization; and the two `2/3`s are functions of
+  different variables (local dimension at fixed 2 shares vs party count `n>3f`).
+  Preserved as a labeled negative result. The genuine monogamy<->access-structure
+  bridge is untouched. `results/T517-monogamy-wall-bft-threshold-v0.1-results.md`.
+- **Corner 1 (redundancy <-> replication) -- built, structural match confirmed,
+  quantitative bridge still OPEN (T518).** A finite executable model of both
+  sides shows the quantum-Darwinism redundancy plateau maps *structurally* onto
+  eventual-consistency replication (objectivity via redundant independent access)
+  -- more than vocabulary. But `R_delta` is not delta-invariant and the DS
+  replication factor is failure-model-dependent, so the *quantitative* map is not
+  yet a discovery. Deprioritized with a concrete wake condition (find a
+  dimensionless invariant both sides compute identically -- candidate: the
+  information deficit `1 - f_delta/N`).
+  `results/T518-quantum-darwinism-replication-bridge-v0.1-results.md`.

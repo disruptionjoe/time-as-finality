@@ -360,8 +360,9 @@ def _enumerate_invariants(family: tuple[Case, ...]) -> tuple[PartitionVerdict, .
     for c in family:
         fp_to_cases.setdefault(_freeze(structural_fingerprint(c)), []).append(c)
     fps = tuple(fp_to_cases.keys())
-    fp_index = {fp: i for i, fp in enumerate(fps)}
     reps = [fp_to_cases[fp][0] for fp in fps]
+    rep_nu = [nu(c) for c in reps]
+    rep_nu_join = [_freeze(nu_join(c)) for c in reps]
 
     verdicts: list[PartitionVerdict] = []
     for partition in _all_partitions(tuple(range(len(fps)))):
@@ -375,8 +376,7 @@ def _enumerate_invariants(family: tuple[Case, ...]) -> tuple[PartitionVerdict, .
         # same-nu, but we check explicitly for fidelity to the theorem statement.
         separated_pair: tuple[int, int] | None = None
         for i, j in combinations(range(len(fps)), 2):
-            ci, cj = reps[i], reps[j]
-            if nu(ci) == nu(cj) and block_of[i] != block_of[j]:
+            if rep_nu[i] == rep_nu[j] and block_of[i] != block_of[j]:
                 separated_pair = (i, j)
                 break
         separates = separated_pair is not None
@@ -388,10 +388,9 @@ def _enumerate_invariants(family: tuple[Case, ...]) -> tuple[PartitionVerdict, .
         absorbed = True
         any_separated = False
         for i, j in combinations(range(len(fps)), 2):
-            ci, cj = reps[i], reps[j]
-            if nu(ci) == nu(cj) and block_of[i] != block_of[j]:
+            if rep_nu[i] == rep_nu[j] and block_of[i] != block_of[j]:
                 any_separated = True
-                if not _absorbed_by_nu_join((ci, cj)):
+                if rep_nu_join[i] == rep_nu_join[j]:
                     absorbed = False
                     break
         # if it separates nothing, absorption is vacuously irrelevant

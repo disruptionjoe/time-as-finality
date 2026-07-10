@@ -1,0 +1,41 @@
+{
+  "test": "T247-attribution-strong-subsumption-theorem",
+  "tag": [
+    "finite_witness",
+    "poly_decider"
+  ],
+  "family_size": 8,
+  "distinct_nu_signatures": 1,
+  "distinct_structural_fingerprints": 8,
+  "refinement_chain_holds": true,
+  "total_separation_patterns_enumerated": 4140,
+  "separating_patterns": 4139,
+  "separating_patterns_all_absorbed_by_nu_join": true,
+  "route_b_clears_found": 0,
+  "trichotomy_exhaustive_on_family": true,
+  "per_stratum_absorber_census": {
+    "nu_prime": 16,
+    "nu_struct": 8,
+    "nu_cocycle": 4,
+    "none": 0
+  },
+  "nonvacuity_injector_clears": true,
+  "object_identity_guards": {
+    "nu_is_t230": true,
+    "nu_prime_is_t230": true,
+    "nu_struct_is_t235": true,
+    "nu_cocycle_is_t240": true,
+    "globalization_obstruction_is_t240": true,
+    "separating_finder_is_t230": true
+  },
+  "general_factorization_holds": true,
+  "covered_invariant_class": "every relabel-stable, LOCAL attribution invariant on the unified off-nu witness family F (8 same-nu cases spanning field x gluing x cocycle), enumerated EXHAUSTIVELY up to separation-equivalence as every set-partition of the finite structural-fingerprint set",
+  "covered_strata": "the three off-nu structural strata {source field value (T230), source gluing relation (T235), transition cocycle over a finite cover (T240)} above a shared nu and cover; this is the EXHAUSTIVE off-nu structure on F (certified by trichotomy_exhaustive_on_family) -- there is no fourth off-nu stratum on F to read",
+  "verdict": "closed",
+  "strongest_claim": "GENERAL route-(a) strong-subsumption theorem, bounded form, HOLDS on the unified off-nu witness family F. Promoting the three witness-by-witness gate-2 closures (T230 value, T235 structure, T240 globalization) into a single universally-quantified statement: enumerating EVERY relabel-stable local attribution invariant on F up to separation-equivalence -- as every set-partition of the finite structural-fingerprint set, the EXHAUSTIVE space of separation patterns such invariants can induce -- EVERY partition that separates a same-nu pair is reproduced by the join enlargement nu_join = (nu_prime, nu_struct, nu_cocycle). Equivalently every separating relabel-stable local invariant factors through nu_join, hence carries NO neighbor-data-novel content. The three crack types are the EXHAUSTIVE trichotomy over the off-nu strata (certified: two members share a structural fingerprint iff they agree on field, gluing, AND cocycle -- there is no fourth off-nu stratum on F). The per-stratum census confirms each separation is absorbed by exactly its predecessor's enlargement (field->nu_prime, gluing->nu_struct, cocycle->nu_cocycle); nu_join is precisely the union of the three predecessor absorbers. No route-(b) clear is found; the non-vacuity injector proves the harness CAN report one, so this is a genuine bounded NEGATIVE.",
+  "first_obstruction": "The theorem's exact reach is the WITNESS FAMILY F (a finite carrier with the three off-nu strata present), not the full typed-lossy category. The bounded negative is: no neighbor-data-novel separator exists ON F. The first object a full (unbounded) strong-subsumption theorem would still need is a proof that the trichotomy {field, gluing, cocycle} is exhaustive over the off-nu strata for EVERY typed-lossy morphism, not just F -- i.e. that the source-side data of an arbitrary typed-lossy morphism decomposes into exactly these three admissible strata above nu, with no fourth non-absorbable stratum. On F this is certified by construction; the general categorical statement is the residual gap. Within F the factorization is complete and exhaustive.",
+  "constructive_next_object": "Two honest next objects. (1) To extend strong subsumption OFF F: a decomposition theorem for the off-nu source-side data of an arbitrary typed-lossy morphism into admissible strata, proving the field/gluing/cocycle trichotomy is complete categorically (this would be the full route-(a) theorem the audit's 'every attribution invariant factors through nu' asks for, beyond the finite witness). (2) Orthogonally, the map-between-absorbers (kappa) frontier the 62-persona breakout named: since EVERY object-level separator is absorbed, the live criterion-6 content moves to laws ranging over a MAP between two absorbers (no single absorber owns a cross-host law) -- already advanced by the kappa transport line (T224/T229/T234/T239), independent of this lane.",
+  "meaning_for_claim": "Independent-motivation criterion (criterion 6) for the LossKernel / typed-forgetting line: this lane PROMOTES the witness-by-witness route-(a) bounded subsumption to the GENERAL bounded theorem the 2026-06-24 audit named as one of the two routes to flip criterion 6 to EARNED -- 'prove every attribution invariant on typed lossy morphisms factors through nu'. On the finite witness family the universal quantifier is now DISCHARGED EXHAUSTIVELY: every relabel-stable local separating invariant factors through admissible neighbor data (nu_join). This is the citable NEGATIVE the audit said the provenance community would care about ('obstruction attribution is determined by existing provenance/effect data'), now as a general statement over the enumerated class, not three hand-picked witnesses. Whether this ratifies demoting the same-neighbor-data novelty route to CLOSED in the LossKernel line -- and what it implies for criterion 6 -- is the INTEGRATOR's call (maximum care: criterion-6 crux). This result is reported at the TEST level ONLY and carries NO criterion_6_earned / independence_earned field; it never self-promotes. The honest boundary: 'general' means general over the enumerated relabel-stable-local invariant class on F, not over the full typed-lossy category (named explicitly in covered_invariant_class / covered_strata).",
+  "falsification_condition": "The general factorization is falsified by exhibiting ONE relabel-stable local attribution invariant on F (equivalently one separation partition refining the relabel-orbit partition) that separates a same-nu pair (a,b) with nu_join(a) == nu_join(b) -- a separation reproduced by NONE of nu_prime, nu_struct, nu_cocycle. The enumeration would then report route_b_clears_found > 0 and separating_patterns_all_absorbed_by_nu_join = False, and the verdict would drop from closed to conditional (route (b) alive on F). The non-vacuity injector constructs exactly such a synthetic pair+invariant (identical nu_join, synthetic separator) and the harness reports injector_clears = True, proving the negative is real and not a constant-no. It is also falsified more weakly by trichotomy_exhaustive_on_family = False (a fourth off-nu stratum on F), which would mean the enumeration's fingerprint does not capture all readable data.",
+  "next_step": "Read general_factorization_holds, route_b_clears_found, separating_patterns_all_absorbed_by_nu_join, trichotomy_exhaustive_on_family, per_stratum_absorber_census, and nonvacuity_injector_clears in results/attribution-strong-subsumption/T247-results.json. With general_factorization_holds = True and route_b_clears_found = 0 the general route-(a) theorem lands on F: every relabel-stable local separating invariant factors through nu_join. The integrator decides (maximum care) whether this closes the LossKernel same-neighbor-data novelty route in the ledger. To push strong subsumption OFF the finite witness, build the categorical off-nu strata decomposition theorem (next object 1); the orthogonal criterion-6 surface is the kappa map-between-absorbers line, not another LossKernel object."
+}

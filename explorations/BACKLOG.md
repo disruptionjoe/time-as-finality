@@ -102,6 +102,13 @@ promotions, or ledger movement:
    pair-structured correlations, H2 predicts universality with no pair
    structure, and H3 predicts imported ledger constraints. Standing: parked by
    default, no claim or lane movement.
+   2026-07-10 addenda: the inline betting-book and limit/pullback passes remain
+   generation-tier, but sharpen the parked pickup tests. H2 now needs a
+   homology-vs-convergent-universality separator before "one boundary" can be
+   more than shared mathematics; H3 now needs a non-regressive verifier story
+   before "settlement layer" can avoid reintroducing a trusted third party.
+   Without those two data, the most honest synthesis is still a curiosity
+   capture with no wake condition, no B1 movement, and no holography claim.
 
 ---
 

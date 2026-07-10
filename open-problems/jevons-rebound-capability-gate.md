@@ -96,4 +96,3 @@ TaF owns only the capability/finality accounting side: `C(R,M)`, declared
 operation menus, aggregate burden, and future-operation availability. If a
 future packet needs a source-side possibility-growth interpretation, route it
 to the Temporal Issuance mailbox rather than importing TI truth here.
-

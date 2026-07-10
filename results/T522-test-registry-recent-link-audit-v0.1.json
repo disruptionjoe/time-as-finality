@@ -1,6 +1,6 @@
 {
   "artifact_id": "T522-test-registry-recent-link-audit-v0.1",
-  "audited_count": 33,
+  "audited_count": 34,
   "audited_ids": [
     492,
     493,
@@ -34,11 +34,12 @@
     521,
     522,
     523,
-    524
+    524,
+    525
   ],
   "duplicate_ids": [],
   "home_path_hits": [],
-  "max_test_id": 524,
+  "max_test_id": 525,
   "min_test_id": 492,
   "missing_executable_suite_links": [],
   "missing_ids": [],

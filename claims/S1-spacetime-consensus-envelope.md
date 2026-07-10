@@ -16,10 +16,14 @@ open.
 The finite-colimit route is downgraded by T223: the uniform finite
 finality-colimit ensemble provably does not concentrate on manifoldlike causal
 sets through n=8, so manifoldlikeness cannot be reached from that ensemble
-without an added continuum, sprinkling, selection, or measure assumption. The
-broader S1 program (topos / NCG / path-integral / stochastic entry points in
-the open problem) is not killed; only the "enumerate finite finality colimits
-and hope manifoldlikeness emerges" route is closed.
+without an added continuum, sprinkling, selection, or measure assumption. T524
+repairs the reading of one T126 leg by quarantining `order_dimension_obstruction`
+as finite interval-profile regularity, not a continuum wall. T525 then confirms
+the practical finite-route closure under a repaired random-sprinkle-calibrated
+suite: random controls pass, hard controls reject, and no current finite colimit
+survives. The broader S1 program (topos / NCG / path-integral / stochastic entry
+points in the open problem) is not killed; only the "enumerate finite finality
+colimits and hope manifoldlikeness emerges" route is closed.
 
 ## What This Does Not Claim
 
@@ -67,6 +71,8 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T165: T54 Survivor Sprinkling Stress Test](../tests/T165-t54-survivor-sprinkling-stress.md)
 - [T167: T54 Ordinal Scaling Stress Test](../tests/T167-t54-ordinal-scaling-stress.md)
 - [T223: T54 Ordinal Scaling Decisive Verdict](../tests/T223-t54-ordinal-scaling-decisive-verdict.md)
+- [T524: T126 Random-Sprinkle Diagnostic Repair](../tests/T524-t126-random-sprinkle-diagnostic-repair.md)
+- [T525: Repaired S1 Manifoldlikeness Suite](../tests/T525-repaired-s1-manifoldlikeness-suite.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -278,6 +284,35 @@ could ever produce spacetime; it only closes the "enumerate finite finality
 colimits and hope manifoldlikeness emerges" route. The survivor posets are not
 asserted to be 1+1 causal sets; they only lie inside a declared finite
 ordering-fraction band.
+
+## T524 T126 Diagnostic Repair
+
+[T524](../tests/T524-t126-random-sprinkle-diagnostic-repair.md) repairs the
+interpretation of one T126 leg. Seeded random 1+1 light-cone sprinkles are
+increasingly rejected by T126's `order_dimension_obstruction` exactly as their
+mean ordering-fraction gap from `1/2` improves. That leg is therefore a finite
+interval-profile regularity screen, not a continuum manifoldlikeness wall.
+
+This does not promote S1 or reverse T223. It narrows the honest negative
+reading: the bad diagnostic leg cannot be treated as a genuine wall, but the
+finite route still needs a repaired suite, a measure, or a continuum bridge.
+
+## T525 Repaired Manifoldlikeness Suite
+
+[T525](../tests/T525-repaired-s1-manifoldlikeness-suite.md) performs that
+bounded repair. It keeps T126's hard gates, quarantines profile-spread/order-
+dimension, and calibrates finite ordering fraction, height, width, and largest
+Alexandrov interval size against seeded 1+1 random-sprinkle controls.
+
+The repaired suite passes random controls and still rejects hard negative
+controls. No current finite colimit survives: T249/grid controls fail the
+calibrated largest-interval envelope, while the T252 selected ordinal witness
+fails the calibrated width envelope.
+
+This strengthens the diagnostic basis for the current S1 status without
+promoting it. S1 remains `requires_added_assumption`; the live paths are an
+independent measure law, a separate formal entry point, or a continuum/
+embedding bridge.
 
 ## T153 Lorentzian Absorber Gate
 

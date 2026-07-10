@@ -1,0 +1,368 @@
+{
+  "comparison_target": "seeded_1p1_sprinkle_calibrated_repaired_s1_suite",
+  "target_basis": "The suite treats seeded random 1+1 light-cone sprinkles as finite calibration controls at each event count. It keeps T126's hard causal-set gates, quarantines profile-spread/order-dimension as finite regularity, and asks whether candidate diagnostics fall inside the observed random-control envelope.",
+  "calibration_bands": [
+    {
+      "event_count": 7,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "2/7",
+        "float": 0.2857142857142857
+      },
+      "ordering_fraction_max": {
+        "fraction": "16/21",
+        "float": 0.7619047619047619
+      },
+      "height_min": 3,
+      "height_max": 5,
+      "width_min": 3,
+      "width_max": 4,
+      "largest_interval_min": 1,
+      "largest_interval_max": 4,
+      "order_dimension_obstruction_count": 1
+    },
+    {
+      "event_count": 8,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "ordering_fraction_max": {
+        "fraction": "5/7",
+        "float": 0.7142857142857143
+      },
+      "height_min": 3,
+      "height_max": 6,
+      "width_min": 3,
+      "width_max": 5,
+      "largest_interval_min": 1,
+      "largest_interval_max": 5,
+      "order_dimension_obstruction_count": 1
+    },
+    {
+      "event_count": 9,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "ordering_fraction_max": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "height_min": 3,
+      "height_max": 6,
+      "width_min": 3,
+      "width_max": 6,
+      "largest_interval_min": 1,
+      "largest_interval_max": 6,
+      "order_dimension_obstruction_count": 1
+    },
+    {
+      "event_count": 12,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "7/22",
+        "float": 0.3181818181818182
+      },
+      "ordering_fraction_max": {
+        "fraction": "43/66",
+        "float": 0.6515151515151515
+      },
+      "height_min": 3,
+      "height_max": 6,
+      "width_min": 4,
+      "width_max": 7,
+      "largest_interval_min": 2,
+      "largest_interval_max": 8,
+      "order_dimension_obstruction_count": 4
+    },
+    {
+      "event_count": 16,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "17/60",
+        "float": 0.2833333333333333
+      },
+      "ordering_fraction_max": {
+        "fraction": "79/120",
+        "float": 0.6583333333333333
+      },
+      "height_min": 4,
+      "height_max": 7,
+      "width_min": 4,
+      "width_max": 9,
+      "largest_interval_min": 3,
+      "largest_interval_max": 12,
+      "order_dimension_obstruction_count": 8
+    },
+    {
+      "event_count": 20,
+      "sample_count": 8,
+      "ordering_fraction_min": {
+        "fraction": "53/190",
+        "float": 0.2789473684210526
+      },
+      "ordering_fraction_max": {
+        "fraction": "21/38",
+        "float": 0.5526315789473685
+      },
+      "height_min": 4,
+      "height_max": 9,
+      "width_min": 5,
+      "width_max": 10,
+      "largest_interval_min": 5,
+      "largest_interval_max": 15,
+      "order_dimension_obstruction_count": 8
+    }
+  ],
+  "candidate_audits": [
+    {
+      "name": "random_1p1_sprinkle_n8_seed0",
+      "group": "random_sprinkle_control",
+      "event_count": 8,
+      "original_t126_classification": "order_dimension_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": true,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "17/28",
+        "float": 0.6071428571428571
+      },
+      "height": 4,
+      "width": 3,
+      "largest_interval_size": 4,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_filter_passed": true,
+      "verdict": "passes_repaired_suite",
+      "reason": "profile-spread/order-dimension leg quarantined; calibrated statistics pass"
+    },
+    {
+      "name": "random_1p1_sprinkle_n12_seed0",
+      "group": "random_sprinkle_control",
+      "event_count": 12,
+      "original_t126_classification": "order_dimension_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": true,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/33",
+        "float": 0.5757575757575758
+      },
+      "height": 5,
+      "width": 4,
+      "largest_interval_size": 6,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_filter_passed": true,
+      "verdict": "passes_repaired_suite",
+      "reason": "profile-spread/order-dimension leg quarantined; calibrated statistics pass"
+    },
+    {
+      "name": "random_1p1_sprinkle_n16_seed0",
+      "group": "random_sprinkle_control",
+      "event_count": 16,
+      "original_t126_classification": "order_dimension_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": true,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "height": 6,
+      "width": 5,
+      "largest_interval_size": 8,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_filter_passed": true,
+      "verdict": "passes_repaired_suite",
+      "reason": "profile-spread/order-dimension leg quarantined; calibrated statistics pass"
+    },
+    {
+      "name": "random_1p1_sprinkle_n20_seed0",
+      "group": "random_sprinkle_control",
+      "event_count": 20,
+      "original_t126_classification": "order_dimension_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": true,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "97/190",
+        "float": 0.5105263157894737
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 11,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_filter_passed": true,
+      "verdict": "passes_repaired_suite",
+      "reason": "profile-spread/order-dimension leg quarantined; calibrated statistics pass"
+    },
+    {
+      "name": "t249_grid_colimit",
+      "group": "current_finite_colimit",
+      "event_count": 9,
+      "original_t126_classification": "passes_filter_only",
+      "original_t126_filter_passed": true,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "height": 5,
+      "width": 3,
+      "largest_interval_size": 7,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": false,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "largest_interval_outside_random_band"
+    },
+    {
+      "name": "t252_ordinal_band_control",
+      "group": "current_finite_colimit",
+      "event_count": 9,
+      "original_t126_classification": "passes_filter_only",
+      "original_t126_filter_passed": true,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/9",
+        "float": 0.5555555555555556
+      },
+      "height": 5,
+      "width": 2,
+      "largest_interval_size": 3,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": false,
+      "largest_interval_in_band": true,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "width_outside_random_band"
+    },
+    {
+      "name": "hub_order_control",
+      "group": "hard_negative_control",
+      "event_count": 8,
+      "original_t126_classification": "hub_nonlocality_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": false,
+      "ordering_fraction": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "height": 2,
+      "width": 7,
+      "largest_interval_size": 0,
+      "ordering_fraction_in_band": true,
+      "height_in_band": false,
+      "width_in_band": false,
+      "largest_interval_in_band": false,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "hard T126 gate rejected: hub_nonlocality_obstruction"
+    },
+    {
+      "name": "complete_bipartite_layer_control",
+      "group": "hard_negative_control",
+      "event_count": 8,
+      "original_t126_classification": "interval_profile_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": false,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "height": 2,
+      "width": 4,
+      "largest_interval_size": 0,
+      "ordering_fraction_in_band": true,
+      "height_in_band": false,
+      "width_in_band": true,
+      "largest_interval_in_band": false,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "hard T126 gate rejected: interval_profile_obstruction"
+    },
+    {
+      "name": "degenerate_chain_control",
+      "group": "hard_negative_control",
+      "event_count": 7,
+      "original_t126_classification": "rank_width_obstruction",
+      "original_t126_filter_passed": false,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": false,
+      "ordering_fraction": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "height": 7,
+      "width": 1,
+      "largest_interval_size": 5,
+      "ordering_fraction_in_band": false,
+      "height_in_band": false,
+      "width_in_band": false,
+      "largest_interval_in_band": false,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "hard T126 gate rejected: rank_width_obstruction"
+    },
+    {
+      "name": "synthetic_3x3_grid_control",
+      "group": "current_finite_colimit",
+      "event_count": 9,
+      "original_t126_classification": "passes_filter_only",
+      "original_t126_filter_passed": true,
+      "order_dimension_quarantined": false,
+      "hard_gate_passed": true,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "height": 5,
+      "width": 3,
+      "largest_interval_size": 7,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": false,
+      "repaired_filter_passed": false,
+      "verdict": "fails_repaired_suite",
+      "reason": "largest_interval_outside_random_band"
+    }
+  ],
+  "random_controls_pass_repaired_suite": true,
+  "hard_negative_controls_rejected": true,
+  "current_finite_colimit_survivor_count": 0,
+  "current_finite_colimits_survive_repaired_suite": false,
+  "t249_grid_rejected_by_repaired_suite": true,
+  "t252_ordinal_rejected_by_repaired_suite": true,
+  "verdict": "repaired_s1_suite_no_current_finite_colimit_survivor",
+  "strongest_claim": "A repaired finite S1 suite can pass true random 1+1 controls while rejecting the current finite colimit witnesses. T249's grid is outside the calibrated interval-abundance envelope, and T252's selected ordinal witness is outside the calibrated width envelope.",
+  "improved": "T525 removes the known T126 profile-spread artifact from the wall set and replaces it with explicit random-control calibration. This keeps the S1 closure honest: current witnesses still fail, but not because genuine random sprinkles are punished for fluctuating.",
+  "weakened_or_rescoped": "This rescopes T223/T126 language away from the bad `order_dimension_obstruction` leg while preserving the practical S1 conclusion: no current finite finality colimit survives a repaired finite manifoldlikeness screen.",
+  "falsification_condition": "T525 fails if seeded random controls do not pass the repaired suite, if hard negative controls pass, if the T249/T252 verdicts are not computed against event-count-matched calibration bands, or if the finite repaired screen is promoted into a continuum theorem.",
+  "s1_update": "S1 remains `requires_added_assumption`. T525 strengthens the diagnostic basis for that status after T524: the known bad leg is quarantined, but no current finite colimit survives the repaired suite. The live paths remain an independent measure law, a separate formal entry point, or a continuum/embedding bridge.",
+  "claim_ledger_update": "Record T525 as S1 claim-history only: repaired finite diagnostic suite, no current finite colimit survivor, no S1 promotion, and no T223 reversal. Add T525 to the S1 test list and sync the S1 claim file.",
+  "open_blocker": "No finality-native measure, locality law, abundance theorem, embedding theorem, covariance result, Lorentzian metric reconstruction, or continuum bridge selects a repaired-suite survivor.",
+  "suggested_next": "Either build an independent generative measure that produces repaired-suite survivors without tail tuning, or leave the finite S1 colimit route closed and move to a separate formal entry point.",
+  "not_claimed": "T525 does not derive spacetime, prove manifoldlikeness, estimate continuum dimension, establish a random-sprinkling law, reconstruct a Lorentzian metric, prove locality/covariance, derive GR/QFT, or promote S1. It is a finite repaired diagnostic suite calibrated on seeded controls."
+}

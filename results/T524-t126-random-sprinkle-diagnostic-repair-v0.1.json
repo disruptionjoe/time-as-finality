@@ -1,0 +1,780 @@
+{
+  "comparison_target": "seeded_random_flat_1p1_lightcone_sprinkles_n8_to_n20",
+  "target_basis": "In flat 1+1 light-cone coordinates, a finite causal diamond sample orders p<q exactly when u_p<u_q and v_p<v_q. Its ordering fraction approaches the Myrheim-Meyer 1+1 target 1/2 in expectation; finite interval profiles naturally fluctuate.",
+  "sizes": [
+    8,
+    12,
+    16,
+    20
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "calibration_control_classification": "passes_filter_only",
+  "calibration_control_passed": true,
+  "calibration_control_ordering_fraction": {
+    "fraction": "7/15",
+    "float": 0.4666666666666667
+  },
+  "sample_audits": [
+    {
+      "event_count": 8,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "17/28",
+        "float": 0.6071428571428571
+      },
+      "absolute_gap_from_half": {
+        "fraction": "3/28",
+        "float": 0.10714285714285714
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 17,
+      "height": 4,
+      "width": 3,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 8,
+      "seed": 1,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "absolute_gap_from_half": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 14,
+      "height": 4,
+      "width": 4,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 2,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "9/14",
+        "float": 0.6428571428571429
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/7",
+        "float": 0.14285714285714285
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 18,
+      "height": 4,
+      "width": 4,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 3,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 7,
+      "height": 3,
+      "width": 5,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "19/28",
+        "float": 0.6785714285714286
+      },
+      "absolute_gap_from_half": {
+        "fraction": "5/28",
+        "float": 0.17857142857142858
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 19,
+      "height": 6,
+      "width": 3,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 5,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "5/7",
+        "float": 0.7142857142857143
+      },
+      "absolute_gap_from_half": {
+        "fraction": "3/14",
+        "float": 0.21428571428571427
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 20,
+      "height": 5,
+      "width": 3,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 6,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "13/28",
+        "float": 0.4642857142857143
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/28",
+        "float": 0.03571428571428571
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 13,
+      "height": 3,
+      "width": 4,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 8,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "9/14",
+        "float": 0.6428571428571429
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/7",
+        "float": 0.14285714285714285
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 18,
+      "height": 3,
+      "width": 3,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 12,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "19/33",
+        "float": 0.5757575757575758
+      },
+      "absolute_gap_from_half": {
+        "fraction": "5/66",
+        "float": 0.07575757575757576
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 38,
+      "height": 5,
+      "width": 4,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 12,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "9/22",
+        "float": 0.4090909090909091
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/11",
+        "float": 0.09090909090909091
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 27,
+      "height": 5,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 12,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/11",
+        "float": 0.6363636363636364
+      },
+      "absolute_gap_from_half": {
+        "fraction": "3/22",
+        "float": 0.13636363636363635
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 42,
+      "height": 6,
+      "width": 4,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 12,
+      "seed": 3,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "7/22",
+        "float": 0.3181818181818182
+      },
+      "absolute_gap_from_half": {
+        "fraction": "2/11",
+        "float": 0.18181818181818182
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 21,
+      "height": 3,
+      "width": 7,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 12,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "43/66",
+        "float": 0.6515151515151515
+      },
+      "absolute_gap_from_half": {
+        "fraction": "5/33",
+        "float": 0.15151515151515152
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 43,
+      "height": 6,
+      "width": 4,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 12,
+      "seed": 5,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "35/66",
+        "float": 0.5303030303030303
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/33",
+        "float": 0.030303030303030304
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 35,
+      "height": 5,
+      "width": 4,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 12,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "17/33",
+        "float": 0.5151515151515151
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/66",
+        "float": 0.015151515151515152
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 34,
+      "height": 6,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 12,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "t126_filter_passed": true,
+      "ordering_fraction": {
+        "fraction": "13/22",
+        "float": 0.5909090909090909
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/11",
+        "float": 0.09090909090909091
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 39,
+      "height": 5,
+      "width": 5,
+      "profile_spread_obstruction": false
+    },
+    {
+      "event_count": 16,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/120",
+        "float": 0.008333333333333333
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 61,
+      "height": 6,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "7/15",
+        "float": 0.4666666666666667
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/30",
+        "float": 0.03333333333333333
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 56,
+      "height": 6,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "79/120",
+        "float": 0.6583333333333333
+      },
+      "absolute_gap_from_half": {
+        "fraction": "19/120",
+        "float": 0.15833333333333333
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 79,
+      "height": 7,
+      "width": 4,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "17/60",
+        "float": 0.2833333333333333
+      },
+      "absolute_gap_from_half": {
+        "fraction": "13/60",
+        "float": 0.21666666666666667
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 34,
+      "height": 4,
+      "width": 9,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "11/20",
+        "float": 0.55
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/20",
+        "float": 0.05
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 66,
+      "height": 7,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/120",
+        "float": 0.008333333333333333
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 61,
+      "height": 7,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "absolute_gap_from_half": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 60,
+      "height": 6,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 16,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/120",
+        "float": 0.008333333333333333
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 61,
+      "height": 5,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "97/190",
+        "float": 0.5105263157894737
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/95",
+        "float": 0.010526315789473684
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 97,
+      "height": 6,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "absolute_gap_from_half": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 95,
+      "height": 8,
+      "width": 5,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "52/95",
+        "float": 0.5473684210526316
+      },
+      "absolute_gap_from_half": {
+        "fraction": "9/190",
+        "float": 0.04736842105263158
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 104,
+      "height": 7,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "53/190",
+        "float": 0.2789473684210526
+      },
+      "absolute_gap_from_half": {
+        "fraction": "21/95",
+        "float": 0.22105263157894736
+      },
+      "t156_band_passed": false,
+      "strict_pair_count": 53,
+      "height": 4,
+      "width": 10,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "21/38",
+        "float": 0.5526315789473685
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/19",
+        "float": 0.05263157894736842
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 105,
+      "height": 8,
+      "width": 8,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "21/38",
+        "float": 0.5526315789473685
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/19",
+        "float": 0.05263157894736842
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 105,
+      "height": 9,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "49/95",
+        "float": 0.5157894736842106
+      },
+      "absolute_gap_from_half": {
+        "fraction": "3/190",
+        "float": 0.015789473684210527
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 98,
+      "height": 8,
+      "width": 6,
+      "profile_spread_obstruction": true
+    },
+    {
+      "event_count": 20,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "t126_filter_passed": false,
+      "ordering_fraction": {
+        "fraction": "93/190",
+        "float": 0.48947368421052634
+      },
+      "absolute_gap_from_half": {
+        "fraction": "1/95",
+        "float": 0.010526315789473684
+      },
+      "t156_band_passed": true,
+      "strict_pair_count": 93,
+      "height": 5,
+      "width": 7,
+      "profile_spread_obstruction": true
+    }
+  ],
+  "size_summaries": [
+    {
+      "event_count": 8,
+      "sample_count": 8,
+      "t126_pass_count": 7,
+      "order_dimension_obstruction_count": 1,
+      "other_obstruction_count": 0,
+      "t156_band_pass_count": 2,
+      "mean_ordering_fraction": {
+        "fraction": "9/16",
+        "float": 0.5625
+      },
+      "mean_absolute_gap_from_half": {
+        "fraction": "15/112",
+        "float": 0.13392857142857142
+      },
+      "order_dimension_obstruction_rate": {
+        "fraction": "1/8",
+        "float": 0.125
+      },
+      "t156_band_pass_rate": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "classification_counts": [
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 1
+        },
+        {
+          "classification": "passes_filter_only",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "event_count": 12,
+      "sample_count": 8,
+      "t126_pass_count": 4,
+      "order_dimension_obstruction_count": 4,
+      "other_obstruction_count": 0,
+      "t156_band_pass_count": 5,
+      "mean_ordering_fraction": {
+        "fraction": "93/176",
+        "float": 0.5284090909090909
+      },
+      "mean_absolute_gap_from_half": {
+        "fraction": "17/176",
+        "float": 0.09659090909090909
+      },
+      "order_dimension_obstruction_rate": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "t156_band_pass_rate": {
+        "fraction": "5/8",
+        "float": 0.625
+      },
+      "classification_counts": [
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 4
+        },
+        {
+          "classification": "passes_filter_only",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "event_count": 16,
+      "sample_count": 8,
+      "t126_pass_count": 0,
+      "order_dimension_obstruction_count": 8,
+      "other_obstruction_count": 0,
+      "t156_band_pass_count": 6,
+      "mean_ordering_fraction": {
+        "fraction": "239/480",
+        "float": 0.4979166666666667
+      },
+      "mean_absolute_gap_from_half": {
+        "fraction": "29/480",
+        "float": 0.06041666666666667
+      },
+      "order_dimension_obstruction_rate": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "t156_band_pass_rate": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "classification_counts": [
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "event_count": 20,
+      "sample_count": 8,
+      "t126_pass_count": 0,
+      "order_dimension_obstruction_count": 8,
+      "other_obstruction_count": 0,
+      "t156_band_pass_count": 7,
+      "mean_ordering_fraction": {
+        "fraction": "75/152",
+        "float": 0.4934210526315789
+      },
+      "mean_absolute_gap_from_half": {
+        "fraction": "39/760",
+        "float": 0.05131578947368421
+      },
+      "order_dimension_obstruction_rate": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "t156_band_pass_rate": {
+        "fraction": "7/8",
+        "float": 0.875
+      },
+      "classification_counts": [
+        {
+          "classification": "order_dimension_obstruction",
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "mean_ordering_gap_decreases_with_size": true,
+  "order_dimension_rejection_rate_increases_with_size": true,
+  "larger_sprinkles_all_order_dimension_rejected": true,
+  "artifact_confirmed": true,
+  "verdict": "t126_order_dimension_leg_confirmed_finite_regular_screen",
+  "strongest_claim": "The seeded random 1+1 controls confirm that T126's `order_dimension_obstruction` is not a reliable manifoldlikeness falsifier. The repo's six-event flat control passes, but random 1+1 sprinkles are increasingly rejected by that leg as their mean ordering-fraction gap from 1/2 decreases.",
+  "improved": "T524 upgrades the earlier deterministic calibration note into an executable RNG-ensemble repair audit. It separates the T126 causal-set gate and other obstruction legs from the profile-spread leg that mistakes random interval fluctuation for non-manifoldness.",
+  "weakened_or_rescoped": "This rescopes any S1/T223 language that treats the T126 order-dimension leg as a genuine manifoldlikeness wall. It does not weaken the independent T223 rare-tail counting result, and it does not make current finite finality colimits manifoldlike.",
+  "falsification_condition": "T524 fails if the seeded random controls stop approaching the declared 1+1 ordering-fraction target, if larger random sprinkles are not rejected by `order_dimension_obstruction`, if the flat six-event control no longer passes, or if the result is used to promote S1 rather than repair one diagnostic leg.",
+  "s1_update": "S1 remains `requires_added_assumption`. T524 only says the T126 profile-spread leg must be treated as a finite-regularity screen, not as a continuum manifoldlikeness wall. Future S1 work still needs an added measure, selection rule, sprinkling law, dimension estimator, or continuum bridge.",
+  "claim_ledger_update": "Record T524 as an S1 claim-history repair: the T126 `order_dimension_obstruction` leg is quarantined as diagnostic regularity, while T223 remains a finite-screen/finite-ensemble no-go. No S1 status movement and no claim promotion.",
+  "open_blocker": "No repaired manifoldlikeness suite has replaced the profile-spread leg, and no current finality-colimit family has been shown to survive a robust causal-set dimension, abundance, locality, sprinkling, or continuum-limit diagnostic.",
+  "suggested_next": "Replace the T126 profile-spread leg with a declared statistical dimension/locality diagnostic calibrated on random sprinkles, then rerun the S1 finite-colimit route only on that repaired suite.",
+  "not_claimed": "T524 is not a manifoldlikeness proof, dimension estimate, faithful embedding theorem, random-sprinkling law, continuum limit, Lorentzian metric reconstruction, GR, QFT, or S1 promotion. It audits one T126 diagnostic leg against seeded finite random 1+1 controls."
+}

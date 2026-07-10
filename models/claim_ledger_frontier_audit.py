@@ -21,7 +21,7 @@ TESTS_PATH = Path("TESTS.md")
 CLAIM_LEDGER_PATH = Path("CLAIM-LEDGER.md")
 RESULT_PATH = Path("results/T523-claim-ledger-frontier-audit-v0.1.json")
 
-EXPECTED_MAX_TEST_ID = 523
+EXPECTED_MAX_TEST_ID = 524
 EXPECTED_UNTRIAGED_RANGES = ((249, 513),)
 
 VERDICT_PASS = "CLAIM_LEDGER_FRONTIER_DECLARED_COHERENT"
@@ -41,8 +41,10 @@ class ClaimLedgerFrontierAudit:
     expected_untriaged_ranges: tuple[tuple[int, int], ...]
     t517_t519_no_row_receipt_present: bool
     t521_t523_infrastructure_no_row_present: bool
+    t524_diagnostic_repair_no_status_movement_present: bool
     twl_claim_row_present: bool
     t523_claim_row_present: bool
+    t524_claim_row_present: bool
     blockers: tuple[str, ...]
     verdict: str
 
@@ -79,8 +81,14 @@ def audit_claim_ledger_frontier(
         required=("T519", "no rows"),
     )
     t521_t523_infra_no_row = all(token in coverage_note for token in ("T521", "T522", "T523"))
+    t524_no_status_movement = _nearby_contains(
+        coverage_note,
+        "T524",
+        required=("S1 diagnostic-repair", "no claim row", "claim-status movement"),
+    )
     twl_claim_row_present = "| [TWL](" in ledger_text
     t523_claim_row_present = "| [T523](" in ledger_text
+    t524_claim_row_present = "| [T524](" in ledger_text
 
     blockers: list[str] = []
     if max_test_id != EXPECTED_MAX_TEST_ID:
@@ -95,10 +103,14 @@ def audit_claim_ledger_frontier(
         blockers.append("missing T517-T519 no-row receipt")
     if not t521_t523_infra_no_row:
         blockers.append("missing T521-T523 infrastructure no-row language")
+    if not t524_no_status_movement:
+        blockers.append("missing T524 diagnostic-repair no-status-movement language")
     if not twl_claim_row_present:
         blockers.append("missing TWL claim row")
     if t523_claim_row_present:
         blockers.append("T523 unexpectedly has a claim row")
+    if t524_claim_row_present:
+        blockers.append("T524 unexpectedly has a claim row")
 
     verdict = VERDICT_FAIL if blockers else VERDICT_PASS
     return ClaimLedgerFrontierAudit(
@@ -108,8 +120,10 @@ def audit_claim_ledger_frontier(
         expected_untriaged_ranges=EXPECTED_UNTRIAGED_RANGES,
         t517_t519_no_row_receipt_present=t517_t519_no_row_receipt,
         t521_t523_infrastructure_no_row_present=t521_t523_infra_no_row,
+        t524_diagnostic_repair_no_status_movement_present=t524_no_status_movement,
         twl_claim_row_present=twl_claim_row_present,
         t523_claim_row_present=t523_claim_row_present,
+        t524_claim_row_present=t524_claim_row_present,
         blockers=tuple(blockers),
         verdict=verdict,
     )

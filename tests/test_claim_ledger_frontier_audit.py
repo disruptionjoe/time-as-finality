@@ -27,10 +27,12 @@ class ClaimLedgerFrontierAuditTests(unittest.TestCase):
     def test_already_routed_no_row_segments_are_not_recounted_as_frontier(self) -> None:
         self.assertTrue(self.audit.t517_t519_no_row_receipt_present)
         self.assertTrue(self.audit.t521_t523_infrastructure_no_row_present)
+        self.assertTrue(self.audit.t524_diagnostic_repair_no_status_movement_present)
 
     def test_no_claim_row_is_created_for_the_audit_itself(self) -> None:
         self.assertTrue(self.audit.twl_claim_row_present)
         self.assertFalse(self.audit.t523_claim_row_present)
+        self.assertFalse(self.audit.t524_claim_row_present)
 
     def test_payload_is_serializable_and_passes(self) -> None:
         self.assertEqual(self.audit.blockers, ())

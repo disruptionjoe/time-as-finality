@@ -14,12 +14,14 @@ routed no-row artifacts.
 
 ## Findings
 
-- `TESTS.md` is at T523.
-- The coverage note names T523 as the registry ceiling.
+- `TESTS.md` is at T524.
+- The coverage note names T524 as the registry ceiling.
 - The still-untriaged frontier is declared as T249-T513.
 - T517-T519 are preserved as already routed no-row DS-bridge prospecting.
 - T521-T523 are infrastructure/no-row artifacts.
+- T524 is declared as S1 diagnostic repair with no claim-status movement.
 - T523 creates no claim row.
+- T524 creates no claim row.
 
 ## Interpretation
 

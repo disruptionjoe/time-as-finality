@@ -66,6 +66,20 @@ parts that are not (monogamy strut, colimit theorems, redundancy plateau) are ex
 survived the screens. Any future work on this note must run the same absorber discipline before any
 claim language.
 
+## Addendum (2026-07-10, later same day): the "witness without access" has a published mechanism
+
+The secret-sharing reading is stronger than analogy: in holography, **entanglement-wedge
+reconstruction / bulk-locality-as-quantum-error-correction** (Almheiri-Dong-Harlow 2014; Harlow's
+three-qutrit code) is literally a threshold scheme — a bulk interior record is reconstructable from
+any 2-of-3 boundary regions and from NO single region. Individually blank shares, jointly
+determining: the "witness without the access" is the published mechanism of bulk spacetime
+reconstruction, not a metaphor for it. This upgrades the broadcast/monogamous split above with a
+mainstream anchor and strengthens topology (3): the boundary layer is where the shares live.
+
+Same conversation also produced the black-hole extension of this note — the access-limited boundary
+structure connecting horizons — captured as three mutually-distinguishable steelmen (B1 wake
+candidates) in `horizon-connectivity-three-steelmen-2026-07-10.md`.
+
 ## Handoff
 
 Curiosity capture; deprioritized by default, no wake condition set. If picked up: the natural first

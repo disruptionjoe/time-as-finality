@@ -228,15 +228,39 @@ The ceiling-based R formula from step 3 is replaced by the continuous R = n^(1-b
 
 ## Contribution Needed
 
-All 4 steps are now completed for Candidate C. The outstanding work is:
+All 4 steps are now completed for Candidate C. Later gates resolved or repriced
+the remaining follow-up burdens:
 
-1. Verify FUNCTOR-OBL-TaF-001 (composition law for F).
-2. Ground the continuous reconciliation cost formula in a formal protocol.
-3. If both are verified: promote Cap_TI Candidate C to a supported formal
-   capability claim for Temporal Issuance, and construct the full source-object
-   contract as specified in temporal-issuance-source-object-spec.md.
-4. If demotion occurs (e.g., G is extended to include timing): record the
+1. FUNCTOR-OBL-TaF-001 is resolved by T221 as a directional refutation, not as
+   the covariant functor the issuance dynamics wanted.
+2. The continuous reconciliation cost formula is grounded only as review
+   machinery by T513.
+3. Promotion would still require a governed source-object contract and claim
+   movement path; T513 does not supply either.
+4. If demotion occurs (e.g., G is extended to include timing), record the
    demotion condition here.
 
 No capability candidate from this file should be promoted to Cap_TI status
 without steps 3 and 4 being executed on it. Candidate C has now cleared steps 1-4.
+
+## Status Update - 2026-07-09: T513 Protocol-Grounding Gate
+
+T513 makes the remaining protocol-grounding burden executable:
+`tests/T513-cap-ti-reconciliation-protocol-gate.md`.
+
+Verdict:
+`CAP_TI_RECONCILIATION_PROTOCOL_GATE_BUILT_REVIEW_ONLY`. A future Cap_TI
+reconciliation packet must predeclare beta, the timing metric beta reads, the
+finite reconciliation unit, observer-pair schedule, hierarchy capacity
+`ceil(n^beta)`, and integer round interpretation `ceil(n^(1 - beta))` before
+using the continuous formula as review material. A synthetic high-beta packet
+requires fewer rounds than the matched low-beta packet, same-beta null controls
+match, and formula-only, topology-only, post-hoc beta, hidden-timing,
+round-mismatch, claim/public-posture, external-publication, and cross-repo
+shortcuts are rejected, absorbed, or blocked.
+
+This grounds the formula as review machinery only. It does not promote Cap_TI,
+H7, Temporal Issuance source truth, a physical-substrate theorem, source-object
+contract completion, claim-ledger movement, roadmap movement, README movement,
+North Star movement, public-posture movement, hard-policy movement, external
+publication, or cross-repo truth movement.

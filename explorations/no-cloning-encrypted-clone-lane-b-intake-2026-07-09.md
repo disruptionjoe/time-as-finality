@@ -40,5 +40,12 @@ one-time-pad / resource-monotone reduction, or factor through it?) is specified 
 
 ## Disposition
 
-Queued for the ratification pass. No claim-ledger, TESTS.md, roadmap, README, North
-Star, public-posture, external-publication, or cross-repo truth movement.
+**Screened and closed as T520 (2026-07-09):**
+`COPY_LAW_SINGLE_USE_KEY_ABSORBED_BY_RESOURCE_MONOTONE`. The candidate cleared the
+letter of the wake condition (a conserved `A`, unlike `J+R`) but was absorbed by a
+bare consumable resource monotone -- the single-use key is one-time-pad
+key-consumption under a finality relabel. Lane B stays shut-as-stated; monogamy
+residue routes to the secret-sharing strut (arXiv 2605.26866). See
+`results/T520-copy-law-single-use-key-absorber-screen-v0.1-results.md`. No
+claim-ledger, roadmap, README, North Star, public-posture, external-publication, or
+cross-repo truth movement.

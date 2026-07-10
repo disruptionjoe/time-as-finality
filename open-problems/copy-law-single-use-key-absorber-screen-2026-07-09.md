@@ -1,8 +1,25 @@
 # Copy-Law Wake Candidate: Single-Use Key as the Conserved Quantity (lane B absorber screen)
 
-Status: open problem / predeclared absorber screen (review-only; no claim movement)
+Status: RUN 2026-07-09 as **T520** -> `COPY_LAW_SINGLE_USE_KEY_ABSORBED_BY_RESOURCE_MONOTONE` (absorbed; lane B stays shut-as-stated). Review-only; no claim movement.
 Date: 2026-07-09
 Lane: B (copy law / finality dual to no-cloning)
+
+## Outcome (T520, 2026-07-09)
+
+The screen was executed exactly as predeclared below. Result: the single-use key
+clears the *letter* of the wake condition (`A = readable + key_authority` is a
+different quantity and, unlike `J+R`, is conserved at 1) but **fails the
+non-absorption burden at its decisive gate**: all 12 scenarios have identical
+finality and resource vectors, so every verdict-bearing finality quantity factors
+through the bare consumable monotone `M`. The "exactly-once" property is itself a
+monotone value. Only residue candidate (which clone is authoritative) is a free
+symmetric choice, not a verdict. Lane B stays SHUT-as-stated with a sharper
+epitaph; monogamy residue routes to the secret-sharing strut (arXiv 2605.26866).
+Artifacts: `models/finality_encrypted_clone_single_use_key.py`,
+`tests/test_finality_encrypted_clone_single_use_key.py` (8 passed),
+`results/T520-copy-law-single-use-key-absorber-screen-v0.1-results.md`,
+`tests/T520-copy-law-single-use-key-absorber-screen.md`. The predeclared spec
+below is preserved as run of record.
 
 ## Problem
 

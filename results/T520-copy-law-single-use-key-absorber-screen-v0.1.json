@@ -1,0 +1,207 @@
+{
+  "artifact_id": "T520-copy-law-single-use-key-absorber-screen-v0.1",
+  "verdict": "COPY_LAW_SINGLE_USE_KEY_ABSORBED_BY_RESOURCE_MONOTONE",
+  "model": "models/finality_encrypted_clone_single_use_key.py",
+  "wake_candidate": "arXiv 2602.10695 (encrypted cloning, single-use decryption key)",
+  "lane": "B (finality dual to no-cloning)",
+  "clears_wake_condition_letter": {
+    "different_conserved_quantity": true,
+    "A_conserved_single_use": true,
+    "note": "unlike falsified J+R (1->6), A = readable + key_authority is conserved"
+  },
+  "but_fails_non_absorption_burden": {
+    "A_fixed_before_resource_encoding": true,
+    "verdict_quantity_not_computed_by_ledger": false,
+    "key_role_irreducible_to_OTP_consumption": false,
+    "negative_control_distinguished_only_by_finality": false,
+    "which_clone_forced_not_free": false,
+    "structure_rank_load_bearing_beyond_conserved_label": false,
+    "no_shared_derivation_finality_vs_resource": true
+  },
+  "unreadable_band_relabel_confirmed": true,
+  "scenarios": [
+    {
+      "key": "single-use",
+      "n_clones": 1,
+      "finality_vector": [
+        true,
+        1,
+        1
+      ],
+      "resource_vector": [
+        true,
+        1,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "single-use",
+      "n_clones": 2,
+      "finality_vector": [
+        true,
+        1,
+        1
+      ],
+      "resource_vector": [
+        true,
+        1,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "single-use",
+      "n_clones": 3,
+      "finality_vector": [
+        true,
+        1,
+        1
+      ],
+      "resource_vector": [
+        true,
+        1,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "single-use",
+      "n_clones": 6,
+      "finality_vector": [
+        true,
+        1,
+        1
+      ],
+      "resource_vector": [
+        true,
+        1,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "double-use",
+      "n_clones": 1,
+      "finality_vector": [
+        true,
+        1,
+        1
+      ],
+      "resource_vector": [
+        true,
+        1,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "double-use",
+      "n_clones": 2,
+      "finality_vector": [
+        true,
+        2,
+        1
+      ],
+      "resource_vector": [
+        true,
+        2,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "double-use",
+      "n_clones": 3,
+      "finality_vector": [
+        true,
+        2,
+        1
+      ],
+      "resource_vector": [
+        true,
+        2,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "double-use",
+      "n_clones": 6,
+      "finality_vector": [
+        true,
+        2,
+        1
+      ],
+      "resource_vector": [
+        true,
+        2,
+        1
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "absent",
+      "n_clones": 1,
+      "finality_vector": [
+        false,
+        0,
+        0
+      ],
+      "resource_vector": [
+        false,
+        0,
+        0
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "absent",
+      "n_clones": 2,
+      "finality_vector": [
+        false,
+        0,
+        0
+      ],
+      "resource_vector": [
+        false,
+        0,
+        0
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "absent",
+      "n_clones": 3,
+      "finality_vector": [
+        false,
+        0,
+        0
+      ],
+      "resource_vector": [
+        false,
+        0,
+        0
+      ],
+      "reproduced_by_resource_ledger": true
+    },
+    {
+      "key": "absent",
+      "n_clones": 6,
+      "finality_vector": [
+        false,
+        0,
+        0
+      ],
+      "resource_vector": [
+        false,
+        0,
+        0
+      ],
+      "reproduced_by_resource_ledger": true
+    }
+  ],
+  "monogamy_residue_routes_to": "monogamy <-> quantum secret sharing strut (arXiv 2605.26866)",
+  "checks_passed": 8,
+  "checks_failed": 0
+}

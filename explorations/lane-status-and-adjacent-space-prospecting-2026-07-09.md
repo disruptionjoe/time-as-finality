@@ -111,3 +111,25 @@ converts the bridge from analogy to discovery.
   a new invariant that survives a predeclared DS failure model rather than
   adapting the DS model after the QD threshold is known.
   `results/T519-quantum-darwinism-replication-invariant-gate-v0.1-results.md`.
+
+## Update (2026-07-09, T520): lane B wake candidate screened -- ABSORBED
+
+The lane B wake condition ("a different conserved / priced quantity") drew a
+concrete candidate from arXiv 2602.10695 (encrypted cloning with a single-use
+decryption key). Screened as **T520**.
+
+- The candidate clears the *letter* of the wake condition: `A = readable_copies +
+  remaining_key_authority` is a different quantity and, unlike the falsified `J+R`
+  (`1->6`), is genuinely conserved (`A=1` band->global). It also adds a real object
+  lane B lacked -- a consumable resource external to the band.
+- But it is **absorbed by a bare consumable resource monotone** (the same absorber
+  that ate lane B's monogamy / Landauer residue): all 12 scenarios have identical
+  finality and resource verdict vectors, and the "exactly-once" property is itself
+  a monotone value. The single-use key IS one-time-pad key-consumption under a
+  finality relabel.
+
+Net: lane B stays SHUT-as-stated even under its strongest available candidate. The
+lane's general framing is not proven universally impossible, but its best concrete
+wake lead is now closed; any monogamy residue routes to the monogamy <-> quantum
+secret sharing strut (arXiv 2605.26866), a known real bridge, not to lane B.
+`results/T520-copy-law-single-use-key-absorber-screen-v0.1-results.md`.

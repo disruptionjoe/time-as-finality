@@ -15,7 +15,7 @@ Change rule: do not change this North Star without very explicit conversation wi
 - Maintain the aggressive vision in `Vision - North Star.md`.
 - Follow the method in `Method - Research Program Guidelines.md`.
 - Advance the lead technical line in `Lead Research Line - Time as Finality.md`.
-- Keep roadmap, hypotheses, claim ledger, and complexity ledger mutually coherent.
+- Keep roadmap, hypotheses, claim ledger, and complexity ledger mutually coherent, and not lagging the test registry (see the Ledger Reconciliation Trigger).
 
 ## Measures And Countermeasures
 
@@ -48,6 +48,32 @@ This repo owns its research truth: claim ledger, formalism, glossary, hypotheses
 - Preserve the split: vision can be aggressive; research program cannot.
 - Claim-status changes, promotions/demotions, and Canon-Index tier moves are agent-owned once earned by a runnable artifact; a hard promotion (into `theorem_backed`, or asserting a top-line claim as proven/resolved) files an evidence-trail awareness note in `CapacityOS/mailboxes/joeops/` (template `templates/hard-promotion-joeops-notice.md`) — awareness, not approval. Publishing/external decisions and relicensing pause for Joe; nothing enters `papers/published/` before Joe publishes externally. Cross-repo results are proposed via the target surface's mailbox, not executed directly.
 - Proposed T-numbers are placeholders until checked against `TESTS.md` and `tests/`.
+
+## Ledger Reconciliation Trigger
+
+The governance ledgers must not silently drift behind the test registry. Mutual
+coherence alone does not catch this: the ledgers can be internally consistent while
+collectively lagging `TESTS.md` by hundreds of tests, which lets earned or killed
+results pile up un-triaged and makes the Canon Index answer as of a stale date.
+
+A **reconciliation pass is due** whenever the highest test in `TESTS.md` exceeds the
+highest test tracked in `CLAIM-LEDGER.md` or `COMPLEXITY-LEDGER.md` by more than
+**25**. The pass has two separable parts; do the mechanical part unconditionally and
+flag the judgment part:
+
+1. **Mechanical (agent-owned, no tier judgment):** relocate any ledger cell over
+   ~120 words into the `Test Histories` section (leave a compact disposition in the
+   table, per the YAML-compact / narrative-to-body rule); re-stamp the Canon Index
+   with the current highest-tracked T and today's date; and, if the frontier is still
+   un-triaged, say so in the index rather than letting a stale date imply coverage.
+2. **Ratification (agent-owned once earned, but consequential):** triage the new
+   results into tiers. Negative results, demotions, and finite-witness moves need no
+   note; a hard promotion into `theorem_backed` files the JoeOps awareness note
+   (Operating Guardrails, above). Do not fabricate tier movements to close the lag —
+   an honest "un-triaged frontier: T_x–T_y" is a valid ledger state.
+
+The trigger fires on drift size, not a clock, consistent with registry-driven (not
+arbitrary-cap) discipline.
 
 ## Routing
 

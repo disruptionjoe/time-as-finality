@@ -15,6 +15,8 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
+**Coverage / staleness (2026-07-09).** This index and table track claims through **T248**. The test registry (`TESTS.md`) is at **T519**, so the frontier **T249–T519 is un-triaged here** — most consequentially the quantum three-wall ladder (entanglement < shareability < CGLMP nonlocality, generalized qubit→qutrit→d=4; T514–T519) and its distributed-systems bridge prospecting, which live in `results/`, `tests/`, and `explorations/` but have not yet been assigned a tier. A reader must not read a tier's *absence* here as "unsupported"; it may simply be un-triaged. A ratification pass is due under the steward Ledger Reconciliation Trigger. `COMPLEXITY-LEDGER.md` tracks through T138; the independence audit through T222/T223.
+
 **Promotion is agent-owned (2026-07-03).** Agents may move a claim's tier/status once a runnable artifact earns it, without pausing for Joe. Raising a claim into `theorem_backed` — or otherwise asserting a top-line claim as proven/resolved, the move an external reader would read as "this repo says this is definitely true" — requires an evidence-trail awareness note in `CapacityOS/mailboxes/joeops/` (template `templates/hard-promotion-joeops-notice.md`). Awareness, not approval. Demotions and lower-tier moves need no note. The one hard barrier is external publication: nothing enters `papers/published/` until Joe publishes externally.
 
 | ID | Class | Status | Claim | Primary test / work item |

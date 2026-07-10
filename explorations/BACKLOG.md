@@ -80,6 +80,29 @@ These are bridge work cards, not claim promotions:
    TaF record reconstruction. The bridge is translation residue unless a
    non-circular same-neighbor-data split survives those absorbers.
 
+## Parked Curiosity Captures From 2026-07-10 Verifier/Horizon Thread
+
+Source:
+[verifier-topology-of-finality-2026-07-10](verifier-topology-of-finality-2026-07-10.md)
+and
+[horizon-connectivity-three-steelmen-2026-07-10](horizon-connectivity-three-steelmen-2026-07-10.md).
+
+These are parking notes, not active work cards, wake conditions, claim
+promotions, or ledger movement:
+
+1. Verifier topology of finality: if reopened, the natural first executable
+   object is a finite fixture comparing peer-verified vs boundary-verified
+   finality with identical interior statistics, asking whether any
+   interior-accessible imported-ledger constraint separates them. Nearest
+   reusable machinery: T518/T519 quantum-Darwinism replication screens.
+   Standing: parked by default, no wake condition.
+2. Horizon connectivity / B1 follow-up candidates: any pickup must first type
+   the non-reachability capability and build a finite fixture that survives the
+   T151/T418 causal-access absorbers and B1's weakened floor. H1 predicts
+   pair-structured correlations, H2 predicts universality with no pair
+   structure, and H3 predicts imported ledger constraints. Standing: parked by
+   default, no claim or lane movement.
+
 ---
 
 ## Entry 2026-06-10: Distributed Records, Rendering, and Observer-Relative Reality

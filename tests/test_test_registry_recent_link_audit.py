@@ -18,7 +18,7 @@ class TestRegistryRecentLinkAuditTests(unittest.TestCase):
 
     def test_recent_registry_rows_are_present_and_contiguous(self) -> None:
         self.assertEqual(self.audit.min_test_id, MIN_RECENT_TEST_ID)
-        self.assertGreaterEqual(self.audit.max_test_id, 522)
+        self.assertGreaterEqual(self.audit.max_test_id, 526)
         self.assertEqual(self.audit.missing_ids, ())
         self.assertEqual(self.audit.duplicate_ids, ())
 

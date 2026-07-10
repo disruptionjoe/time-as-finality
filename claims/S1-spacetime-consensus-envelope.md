@@ -21,9 +21,12 @@ repairs the reading of one T126 leg by quarantining `order_dimension_obstruction
 as finite interval-profile regularity, not a continuum wall. T525 then confirms
 the practical finite-route closure under a repaired random-sprinkle-calibrated
 suite: random controls pass, hard controls reject, and no current finite colimit
-survives. The broader S1 program (topos / NCG / path-integral / stochastic entry
-points in the open problem) is not killed; only the "enumerate finite finality
-colimits and hope manifoldlikeness emerges" route is closed.
+survives. T526 shows the repaired suite is passable by an external 1+1
+causal-diamond reference law, but that law is calibration-only because it
+imports Lorentzian u/v coordinates and supplies no finality-colimit descent.
+The broader S1 program (topos / NCG / path-integral / stochastic entry points
+in the open problem) is not killed; only the "enumerate finite finality colimits
+and hope manifoldlikeness emerges" route is closed.
 
 ## What This Does Not Claim
 
@@ -73,6 +76,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T223: T54 Ordinal Scaling Decisive Verdict](../tests/T223-t54-ordinal-scaling-decisive-verdict.md)
 - [T524: T126 Random-Sprinkle Diagnostic Repair](../tests/T524-t126-random-sprinkle-diagnostic-repair.md)
 - [T525: Repaired S1 Manifoldlikeness Suite](../tests/T525-repaired-s1-manifoldlikeness-suite.md)
+- [T526: S1 Reference-Law Gap Audit](../tests/T526-s1-reference-law-gap-audit.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -313,6 +317,24 @@ This strengthens the diagnostic basis for the current S1 status without
 promoting it. S1 remains `requires_added_assumption`; the live paths are an
 independent measure law, a separate formal entry point, or a continuum/
 embedding bridge.
+
+## T526 Reference-Law Gap Audit
+
+[T526](../tests/T526-s1-reference-law-gap-audit.md) asks whether the live
+blocker after T525 is the repaired suite itself or the missing source law. The
+external seeded 1+1 causal-diamond reference law clears all 32 calibrated
+repaired-suite samples, while current finite finality colimits still have zero
+survivors.
+
+This is constructive calibration only, not S1 evidence. The reference law
+imports Lorentzian u/v coordinates; it does not descend from finality-domain
+colimit data. The missing object is therefore sharper: a predeclared
+finality-native generator, measure law, or continuum bridge that produces
+finite causets without u/v coordinates as primitives, passes the repaired suite,
+includes hostile controls, and names later Lorentzian causal/metric/covariance/
+embedding constraints.
+
+S1 remains `requires_added_assumption`; T223 is not reversed.
 
 ## T153 Lorentzian Absorber Gate
 

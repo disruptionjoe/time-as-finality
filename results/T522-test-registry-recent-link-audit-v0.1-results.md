@@ -14,7 +14,7 @@ pointer.
 
 ## Findings
 
-- T492 through T525 are contiguous in the audited segment.
+- T492 through T526 are contiguous in the audited segment.
 - All audited specs exist and match their T-number prefixes.
 - All audited rows cite existing result Markdown artifacts.
 - All audited result Markdown artifacts are listed in the Executable Suite.

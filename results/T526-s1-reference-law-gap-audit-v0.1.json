@@ -1,0 +1,756 @@
+{
+  "reference_law": "external_seeded_1p1_causal_diamond_random_law",
+  "reference_basis": "Sample independent u,v light-cone coordinates and order p<q iff u_p<u_q and v_p<v_q. This is a standard external Lorentzian causal-diamond reference law, not a finality-colimit generator.",
+  "sample_audits": [
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "17/28",
+        "float": 0.6071428571428571
+      },
+      "height": 4,
+      "width": 3,
+      "largest_interval_size": 4,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 1,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "height": 4,
+      "width": 4,
+      "largest_interval_size": 4,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 2,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "9/14",
+        "float": 0.6428571428571429
+      },
+      "height": 4,
+      "width": 4,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 3,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "height": 3,
+      "width": 5,
+      "largest_interval_size": 1,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "19/28",
+        "float": 0.6785714285714286
+      },
+      "height": 6,
+      "width": 3,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 5,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "5/7",
+        "float": 0.7142857142857143
+      },
+      "height": 5,
+      "width": 3,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 6,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "13/28",
+        "float": 0.4642857142857143
+      },
+      "height": 3,
+      "width": 4,
+      "largest_interval_size": 1,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 8,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "9/14",
+        "float": 0.6428571428571429
+      },
+      "height": 3,
+      "width": 3,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "19/33",
+        "float": 0.5757575757575758
+      },
+      "height": 5,
+      "width": 4,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "9/22",
+        "float": 0.4090909090909091
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "7/11",
+        "float": 0.6363636363636364
+      },
+      "height": 6,
+      "width": 4,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 3,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "7/22",
+        "float": 0.3181818181818182
+      },
+      "height": 3,
+      "width": 7,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "43/66",
+        "float": 0.6515151515151515
+      },
+      "height": 6,
+      "width": 4,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 5,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "35/66",
+        "float": 0.5303030303030303
+      },
+      "height": 5,
+      "width": 4,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "17/33",
+        "float": 0.5151515151515151
+      },
+      "height": 6,
+      "width": 5,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 12,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "13/22",
+        "float": 0.5909090909090909
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "height": 6,
+      "width": 5,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "7/15",
+        "float": 0.4666666666666667
+      },
+      "height": 6,
+      "width": 5,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "79/120",
+        "float": 0.6583333333333333
+      },
+      "height": 7,
+      "width": 4,
+      "largest_interval_size": 12,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "17/60",
+        "float": 0.2833333333333333
+      },
+      "height": 4,
+      "width": 9,
+      "largest_interval_size": 3,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "11/20",
+        "float": 0.55
+      },
+      "height": 7,
+      "width": 6,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "height": 7,
+      "width": 5,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 16,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "61/120",
+        "float": 0.5083333333333333
+      },
+      "height": 5,
+      "width": 6,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "97/190",
+        "float": 0.5105263157894737
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 11,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "height": 8,
+      "width": 5,
+      "largest_interval_size": 15,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "52/95",
+        "float": 0.5473684210526316
+      },
+      "height": 7,
+      "width": 6,
+      "largest_interval_size": 13,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "53/190",
+        "float": 0.2789473684210526
+      },
+      "height": 4,
+      "width": 10,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "21/38",
+        "float": 0.5526315789473685
+      },
+      "height": 8,
+      "width": 8,
+      "largest_interval_size": 13,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "21/38",
+        "float": 0.5526315789473685
+      },
+      "height": 9,
+      "width": 6,
+      "largest_interval_size": 11,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "49/95",
+        "float": 0.5157894736842106
+      },
+      "height": 8,
+      "width": 6,
+      "largest_interval_size": 11,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "law_id": "external_1p1_causal_diamond_reference_law",
+      "event_count": 20,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "93/190",
+        "float": 0.48947368421052634
+      },
+      "height": 5,
+      "width": 7,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    }
+  ],
+  "reference_sample_count": 32,
+  "reference_pass_count": 32,
+  "reference_pass_rate": {
+    "fraction": "1/1",
+    "float": 1.0
+  },
+  "reference_law_passes_repaired_suite": true,
+  "current_finite_colimit_survivor_count": 0,
+  "current_finite_colimits_survive_repaired_suite": false,
+  "law_packet_decisions": [
+    {
+      "packet_id": "external_1p1_causal_diamond_reference_law",
+      "classification": "calibration_only_external_reference_law",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "finality_colimit_descent",
+        "no_imported_lorentzian_coordinates"
+      ],
+      "reason": "The law is a useful external calibration target, but it imports the target Lorentzian structure and supplies no TaF descent."
+    },
+    {
+      "packet_id": "current_t249_t252_finite_colimit_route",
+      "classification": "rejected_repaired_suite_failure",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "repaired_suite_pass"
+      ],
+      "reason": "The packet does not pass the repaired finite suite."
+    },
+    {
+      "packet_id": "screen_conditioned_survivor_law",
+      "classification": "rejected_screen_conditioned_generator",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_generator",
+        "not_conditioned_on_repaired_suite_success",
+        "finality_colimit_descent",
+        "later_lorentzian_constraints_named",
+        "hostile_controls"
+      ],
+      "reason": "Conditioning the law on passing the diagnostic is circular."
+    },
+    {
+      "packet_id": "lorentzian_import_promotion_shortcut",
+      "classification": "blocked_s1_promotion_shortcut",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "finality_colimit_descent",
+        "no_imported_lorentzian_coordinates",
+        "no_overclaim_language",
+        "no_s1_promotion_request"
+      ],
+      "reason": "Passing an imported reference law cannot promote S1."
+    },
+    {
+      "packet_id": "future_taf_native_generator_bridge_target",
+      "classification": "admitted_future_taf_native_generator_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [],
+      "reason": "This is the right future packet shape, but it has no executed law yet and therefore counts as no S1 evidence."
+    }
+  ],
+  "external_reference_counts_as_s1_evidence": false,
+  "taf_native_future_target_admitted": true,
+  "verdict": "s1_reference_law_calibrates_suite_but_taf_descent_missing",
+  "strongest_reading": "The repaired S1 suite is passable: the predeclared external 1+1 causal-diamond reference law clears it on every calibrated sample. The current TaF finite colimits still do not. Therefore the live S1 blocker is not the repaired manifoldlikeness screen itself; it is the missing finality-native generator or bridge that produces such a law without importing Lorentzian coordinates.",
+  "improved": "T526 turns T525's negative result into a constructive calibration target. Future S1 work can now be asked to match a concrete reference-law packet while also paying the descent burden that the reference law deliberately does not pay.",
+  "missing_object": "A predeclared finality-native generator, measure law, or continuum bridge whose finite samples descend from finality-domain colimit data, pass the repaired suite, include hostile controls, and name later Lorentzian causal/metric/covariance/embedding constraints.",
+  "falsification_condition": "T526 fails if the external reference law does not pass the repaired suite, if current finite colimits survive T525 after all, if an imported Lorentzian coordinate law is counted as S1 evidence, or if the result is used to promote S1 before a TaF-native descent law exists.",
+  "s1_update": "S1 remains `requires_added_assumption`. T526 narrows the next positive burden: not merely 'pass repaired manifoldlikeness', but produce a finality-native source law or bridge that passes it without importing the target spacetime structure.",
+  "claim_ledger_update": "Record T526 as S1 claim-history only: external reference law calibration passes the repaired suite, current finite colimits do not, and the missing object is finality-native generator descent. No claim row, S1 status movement, or T223 reversal.",
+  "suggested_next": "Attempt the smallest TaF-native generator descent packet: declare record-domain data and local compatibility rules first, generate finite causets without u/v coordinates as primitives, then compare against the T526 reference-law diagnostics and T525 repaired suite.",
+  "not_claimed": "T526 does not derive spacetime, prove manifoldlikeness, establish a TaF-native sprinkling law, reconstruct a Lorentzian metric, prove an embedding or continuum theorem, reverse T223, or promote S1. It separates external reference-law calibration from S1 evidence."
+}

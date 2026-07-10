@@ -133,3 +133,25 @@ path-integral, or stochastic geometry are admitted for review, and only as new
 evidence targets. This does not promote S1, reverse T223, derive spacetime,
 prove manifoldlikeness, supply a dimension estimate, prove a sprinkling law,
 establish a continuum theorem, move public posture, or move the claim ledger.
+
+## Status Addendum (2026-07-10): reference-law gap audit
+
+T526 turns the post-T525 blocker into a constructive calibration target:
+`results/T526-s1-reference-law-gap-audit-v0.1-results.md`; spec
+`tests/T526-s1-reference-law-gap-audit.md`; model
+`models/t526_s1_reference_law_gap_audit.py`.
+
+Verdict:
+`s1_reference_law_calibrates_suite_but_taf_descent_missing`. The external
+seeded 1+1 causal-diamond reference law passes all 32 calibrated repaired-suite
+samples, while current finite finality colimits still have zero survivors.
+This shows the repaired suite is passable. It does not promote S1, because the
+reference law imports Lorentzian u/v coordinates and supplies no
+finality-colimit descent.
+
+The next live S1 packet should therefore not merely pass repaired
+manifoldlikeness. It should predeclare a finality-native generator, measure
+law, or continuum bridge; generate finite causets without u/v coordinates as
+primitives; pass the repaired suite; include hostile controls; and name later
+Lorentzian causal, metric, covariance, locality, or embedding constraints. The
+external reference law is calibration-only, not S1 evidence.

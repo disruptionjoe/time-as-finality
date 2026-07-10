@@ -19,9 +19,11 @@ Treat `TESTS.md` and the top coverage note in `CLAIM-LEDGER.md` as data.
 - T521-T523 are declared infrastructure/no-row artifacts.
 - T524 is declared as S1 diagnostic repair with no status movement.
 - T525 is declared as S1 repaired diagnostic suite with no status movement.
+- T526 is declared as S1 reference-law gap audit with no status movement.
 - T523 does not create a claim row.
 - T524 does not create a claim row.
 - T525 does not create a claim row.
+- T526 does not create a claim row.
 
 ## Failure Criteria
 

@@ -1,0 +1,800 @@
+{
+  "generator_id": "two_receipt_finality_generator",
+  "generator_basis": "Generate record events with two independent local receipt orders. Declare x<y only when both receipt orders place x before y. The packet uses local receipt comparability, not imported Lorentzian light-cone coordinates, and is audited against the T525 repaired suite.",
+  "sample_audits": [
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "3/4",
+        "float": 0.75
+      },
+      "height": 5,
+      "width": 3,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 1,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "3/7",
+        "float": 0.42857142857142855
+      },
+      "height": 4,
+      "width": 3,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 2,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "height": 4,
+      "width": 4,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 3,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "13/28",
+        "float": 0.4642857142857143
+      },
+      "height": 4,
+      "width": 5,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "4/7",
+        "float": 0.5714285714285714
+      },
+      "height": 4,
+      "width": 4,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 5,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "11/28",
+        "float": 0.39285714285714285
+      },
+      "height": 3,
+      "width": 4,
+      "largest_interval_size": 1,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 6,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "13/28",
+        "float": 0.4642857142857143
+      },
+      "height": 5,
+      "width": 4,
+      "largest_interval_size": 3,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 8,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "5/14",
+        "float": 0.35714285714285715
+      },
+      "height": 3,
+      "width": 4,
+      "largest_interval_size": 1,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 0,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "7/22",
+        "float": 0.3181818181818182
+      },
+      "height": 4,
+      "width": 5,
+      "largest_interval_size": 2,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "6/11",
+        "float": 0.5454545454545454
+      },
+      "height": 6,
+      "width": 5,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 2,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "6/11",
+        "float": 0.5454545454545454
+      },
+      "height": 7,
+      "width": 4,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": false,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": false,
+      "reason": "height_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "19/33",
+        "float": 0.5757575757575758
+      },
+      "height": 6,
+      "width": 4,
+      "largest_interval_size": 7,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 4,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "35/66",
+        "float": 0.5303030303030303
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 5,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "49/66",
+        "float": 0.7424242424242424
+      },
+      "height": 7,
+      "width": 4,
+      "largest_interval_size": 7,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": false,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band, height_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "23/33",
+        "float": 0.696969696969697
+      },
+      "height": 7,
+      "width": 3,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": false,
+      "width_in_band": false,
+      "largest_interval_in_band": false,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band, height_outside_t525_band, width_outside_t525_band, largest_interval_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 12,
+      "seed": 7,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "20/33",
+        "float": 0.6060606060606061
+      },
+      "height": 4,
+      "width": 5,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 0,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "59/120",
+        "float": 0.49166666666666664
+      },
+      "height": 5,
+      "width": 7,
+      "largest_interval_size": 10,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "3/5",
+        "float": 0.6
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 6,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "11/24",
+        "float": 0.4583333333333333
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "8/15",
+        "float": 0.5333333333333333
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "13/24",
+        "float": 0.5416666666666666
+      },
+      "height": 7,
+      "width": 6,
+      "largest_interval_size": 8,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "53/120",
+        "float": 0.44166666666666665
+      },
+      "height": 5,
+      "width": 5,
+      "largest_interval_size": 4,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 6,
+      "t126_classification": "passes_filter_only",
+      "order_dimension_quarantined": false,
+      "ordering_fraction": {
+        "fraction": "2/5",
+        "float": 0.4
+      },
+      "height": 5,
+      "width": 6,
+      "largest_interval_size": 7,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "T525 hard gates and calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 16,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "43/120",
+        "float": 0.35833333333333334
+      },
+      "height": 4,
+      "width": 7,
+      "largest_interval_size": 4,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 0,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "87/190",
+        "float": 0.45789473684210524
+      },
+      "height": 8,
+      "width": 6,
+      "largest_interval_size": 11,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 1,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "49/95",
+        "float": 0.5157894736842106
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 2,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "48/95",
+        "float": 0.5052631578947369
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 7,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 3,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "11/19",
+        "float": 0.5789473684210527
+      },
+      "height": 7,
+      "width": 7,
+      "largest_interval_size": 16,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": false,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band, largest_interval_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 4,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "123/190",
+        "float": 0.6473684210526316
+      },
+      "height": 7,
+      "width": 6,
+      "largest_interval_size": 13,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 5,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "44/95",
+        "float": 0.4631578947368421
+      },
+      "height": 6,
+      "width": 6,
+      "largest_interval_size": 9,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 6,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "101/190",
+        "float": 0.531578947368421
+      },
+      "height": 6,
+      "width": 8,
+      "largest_interval_size": 15,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": true,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": true,
+      "reason": "order-dimension/profile-spread leg quarantined; T525 calibrated statistics pass"
+    },
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "event_count": 20,
+      "seed": 7,
+      "t126_classification": "order_dimension_obstruction",
+      "order_dimension_quarantined": true,
+      "ordering_fraction": {
+        "fraction": "117/190",
+        "float": 0.6157894736842106
+      },
+      "height": 7,
+      "width": 5,
+      "largest_interval_size": 13,
+      "hard_gate_passed": true,
+      "ordering_fraction_in_band": false,
+      "height_in_band": true,
+      "width_in_band": true,
+      "largest_interval_in_band": true,
+      "repaired_suite_passed": false,
+      "reason": "order-dimension quarantined, but ordering_fraction_outside_t525_band"
+    }
+  ],
+  "sample_count": 32,
+  "pass_count": 25,
+  "pass_rate": {
+    "fraction": "25/32",
+    "float": 0.78125
+  },
+  "pass_summary_by_size": [
+    {
+      "event_count": 8,
+      "sample_count": 8,
+      "pass_count": 7,
+      "pass_rate": {
+        "fraction": "7/8",
+        "float": 0.875
+      }
+    },
+    {
+      "event_count": 12,
+      "sample_count": 8,
+      "pass_count": 5,
+      "pass_rate": {
+        "fraction": "5/8",
+        "float": 0.625
+      }
+    },
+    {
+      "event_count": 16,
+      "sample_count": 8,
+      "pass_count": 8,
+      "pass_rate": {
+        "fraction": "1/1",
+        "float": 1.0
+      }
+    },
+    {
+      "event_count": 20,
+      "sample_count": 8,
+      "pass_count": 5,
+      "pass_rate": {
+        "fraction": "5/8",
+        "float": 0.625
+      }
+    }
+  ],
+  "hostile_control_audits": [
+    {
+      "control_id": "one_channel_chain_control",
+      "event_count": 8,
+      "t126_classification": "rank_width_obstruction",
+      "repaired_suite_passed": false,
+      "reason": "hard T126 gate rejected: rank_width_obstruction"
+    },
+    {
+      "control_id": "hub_order_control",
+      "event_count": 8,
+      "t126_classification": "hub_nonlocality_obstruction",
+      "repaired_suite_passed": false,
+      "reason": "hard T126 gate rejected: hub_nonlocality_obstruction"
+    }
+  ],
+  "hostile_controls_rejected": true,
+  "packet_decisions": [
+    {
+      "packet_id": "two_receipt_finality_generator",
+      "classification": "rejected_repaired_suite_incomplete",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "repaired_suite_all_samples_pass",
+        "independent_naturality_or_neighbor_theory"
+      ],
+      "reason": "Not all executed samples pass the repaired S1 suite."
+    },
+    {
+      "packet_id": "screen_conditioned_survivor_law",
+      "classification": "rejected_screen_conditioned_generator",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "predeclared_generator",
+        "finality_domain_descent",
+        "not_conditioned_on_repaired_suite_success",
+        "hostile_controls",
+        "later_lorentzian_constraints_named",
+        "independent_naturality_or_neighbor_theory"
+      ],
+      "reason": "Conditioning the law on diagnostic success is circular."
+    },
+    {
+      "packet_id": "lorentzian_import_promotion_shortcut",
+      "classification": "blocked_s1_promotion_shortcut",
+      "admitted_as_future_review_target": false,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [
+        "finality_domain_descent",
+        "no_imported_lorentzian_coordinates",
+        "independent_naturality_or_neighbor_theory",
+        "no_overclaim_language",
+        "no_s1_promotion_request"
+      ],
+      "reason": "A preflight or imported reference law cannot promote S1."
+    },
+    {
+      "packet_id": "future_full_burden_generator_packet",
+      "classification": "admitted_future_full_burden_review_target",
+      "admitted_as_future_review_target": true,
+      "counts_as_s1_evidence": false,
+      "missing_requirements": [],
+      "reason": "The shape is admissible for future review, but no samples exist yet."
+    }
+  ],
+  "main_packet_classification": "rejected_repaired_suite_incomplete",
+  "main_packet_counts_as_s1_evidence": false,
+  "verdict": "s1_finality_native_generator_preflight_rejects_first_packet",
+  "strongest_reading": "The first TaF-native-looking two-receipt packet is not enough. It avoids explicit target-spacetime coordinates, but only 25 of 32 multi-size samples pass the repaired S1 suite, so it is rejected before S1 evidence or posture movement.",
+  "improved": "T528 converts T526's suggested next step into an executable intake screen. Future generator packets now need all repaired-suite samples to pass, independent naturality or neighbor-theory support, hostile controls, and no imported Lorentzian coordinate shortcut.",
+  "missing_object": "A predeclared finality-native generator, measure law, or continuum bridge whose samples pass the repaired suite across sizes, whose naturality is justified independently of the diagnostic, and whose later Lorentzian causal, metric, covariance, locality, and embedding constraints are named before promotion pressure.",
+  "falsification_condition": "T528 fails if the packet counts an incomplete repaired-suite pass as S1 evidence, admits a screen-conditioned generator, imports Lorentzian coordinates as the source law, or changes S1/claim/canon posture from a preflight result.",
+  "s1_update": "S1 remains `requires_added_assumption`. T528 rejects the first two-receipt finality-native generator packet as incomplete and therefore does not reverse T223 or promote S1.",
+  "claim_ledger_update": "No claim-ledger update is earned. T528 is a test-registry preflight only: no claim row, no S1 status movement, and no T223 reversal.",
+  "suggested_next": "Try a stronger predeclared generator or bridge with independent naturality support and all T525 repaired-suite samples passing, or route S1 effort to a separate formal entry point.",
+  "not_claimed": "T528 does not derive spacetime, prove manifoldlikeness, establish a TaF-native sprinkling law, reconstruct a Lorentzian metric, prove an embedding or continuum theorem, reverse T223, or promote S1. It is a finite generator-preflight packet only."
+}

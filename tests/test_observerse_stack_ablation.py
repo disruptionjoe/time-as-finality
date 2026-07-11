@@ -37,6 +37,27 @@ class ObserverseStackAblationTests(unittest.TestCase):
         self.assertEqual(self.payload["minimum_stack_under_near_term_governance"], 5)
         self.assertEqual(self.payload["minimum_stack_when_rules_anticipate_full_horizon"], 4)
 
+    def test_governance_sensitivity_is_monotone(self) -> None:
+        ratios = [
+            row["scs_ratio_to_full"]
+            for row in self.payload["governance_rule_horizon_sensitivity"]
+        ]
+        self.assertEqual(ratios, sorted(ratios))
+        self.assertTrue(self.payload["governance_sensitivity_monotone"])
+
+    def test_governance_sensitivity_has_three_regions(self) -> None:
+        rows = self.payload["governance_rule_horizon_sensitivity"]
+        by_fill = {row["rule_fill"]: row for row in rows}
+        self.assertEqual(by_fill[40]["classification"], "collapsed")
+        self.assertEqual(by_fill[120]["classification"], "partial_recovery")
+        self.assertEqual(by_fill[150]["classification"], "near_full_recovery")
+        self.assertEqual(self.payload["first_rule_fill_above_collapse_band"], 110)
+        self.assertEqual(self.payload["first_rule_fill_near_full_recovery"], 150)
+        self.assertEqual(
+            self.payload["sensitivity_classifications_seen"],
+            ["collapsed", "near_full_recovery", "partial_recovery"],
+        )
+
     def test_payload_preserves_review_only_boundary(self) -> None:
         self.assertEqual(self.payload["verdict"], VERDICT)
         self.assertEqual(self.payload["grade"], "illustration_regression_only")

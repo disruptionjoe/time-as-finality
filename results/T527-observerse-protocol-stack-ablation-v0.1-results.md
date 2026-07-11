@@ -21,17 +21,37 @@
 | `- governance (near-term rules)` | 0.000 | 0.000 | `ossification` |
 | `- governance (full-horizon rules)` | 1.218 | 1.000 | `no_collapse_rules_anticipated_all` |
 
+## Governance Horizon Sensitivity
+
+- Monotone sensitivity: `True`
+- First rule horizon above the collapse band: 110
+- First rule horizon with near-full recovery: 150
+
+| fixed rule horizon | SCS | ratio to full | classification |
+| ---: | ---: | ---: | --- |
+| 0 | 0.000 | 0.000 | `collapsed` |
+| 40 | 0.000 | 0.000 | `collapsed` |
+| 80 | 0.000 | 0.000 | `collapsed` |
+| 100 | 0.000 | 0.000 | `collapsed` |
+| 105 | 0.140 | 0.115 | `collapsed` |
+| 110 | 0.275 | 0.226 | `partial_recovery` |
+| 120 | 0.532 | 0.437 | `partial_recovery` |
+| 130 | 0.774 | 0.636 | `partial_recovery` |
+| 140 | 1.002 | 0.823 | `partial_recovery` |
+| 145 | 1.111 | 0.913 | `partial_recovery` |
+| 150 | 1.218 | 1.000 | `near_full_recovery` |
+
 ## Strongest Reading
 
-The deterministic ablation model matches its review-only claim: each core layer collapses sustained coherent structure to at most 20% of the full stack, while governance is load-bearing only when fixed rules do not already anticipate the full novelty horizon.
+The deterministic ablation model matches its review-only claim: each core layer collapses sustained coherent structure to at most 20% of the full stack, while governance is load-bearing only when fixed rules do not already anticipate the full novelty horizon. The sensitivity map makes the transition explicit: fixed rules remain in the collapse band through rule horizon 105, partially recover after 110, and reach near-full recovery only at the full 150-tick horizon.
 
 ## What This Improved
 
-T527 turns the recent Observerse stack ablation into a repeatable regression harness and frozen result packet, without changing the underlying model or promoting the exploration.
+T527 turns the recent Observerse stack ablation into a repeatable regression harness and frozen result packet. The governance-horizon sensitivity map hardens the conditional without changing the underlying source model or promoting the exploration.
 
 ## Falsification Condition
 
-T527 fails if a core-layer removal stays above 20% of full sustained coherent structure, if the governance near-term/full-horizon contrast disappears, or if the result is used as validation rather than illustration-grade compositional accounting.
+T527 fails if a core-layer removal stays above 20% of full sustained coherent structure, if the governance near-term/full-horizon contrast disappears, or if the sensitivity map ceases to be monotone from collapse through partial recovery to near-full recovery. It also fails if the result is used as validation rather than illustration-grade compositional accounting.
 
 ## Not Claimed
 

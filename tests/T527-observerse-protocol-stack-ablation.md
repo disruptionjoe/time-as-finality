@@ -9,7 +9,9 @@
 
 Does the recent deterministic Observerse protocol-stack ablation remain
 mechanically checkable as an illustration-grade model, with each advertised
-collapse mode and the governance conditional preserved?
+collapse mode and the governance conditional preserved? Within that boundary,
+where does fixed-rule governance leave the collapse band as its anticipated
+novelty horizon increases?
 
 ## Setup
 
@@ -23,6 +25,8 @@ The harness freezes the review-only interpretation:
 - core-layer removals must reduce SCS to at most 20% of the full stack;
 - governance with near-term fixed rules must collapse;
 - governance with rules that anticipate the full horizon must not collapse;
+- governance-horizon sensitivity must be monotone and must expose collapsed,
+  partial-recovery, and near-full-recovery regions;
 - the result remains illustration/compositionality grade, not validation.
 
 ## Success Criteria
@@ -30,6 +34,8 @@ The harness freezes the review-only interpretation:
 - Full stack SCS is positive and stable.
 - Each core-layer removal is at or below 20% of the full-stack SCS.
 - The governance near-term/full-horizon contrast is visible.
+- The fixed-rule sensitivity map is monotone and shows a partial-recovery band
+  before full-horizon recovery.
 - The generated result packet preserves no-claim, no-canon, and no-public-
   posture boundary flags.
 
@@ -39,6 +45,8 @@ T527 fails if:
 
 - any core-layer removal remains above 20% of the full-stack SCS;
 - the governance conditional disappears;
+- the governance-horizon sensitivity map becomes non-monotone or collapses to a
+  binary near-term/full-horizon artifact;
 - the result is framed as validating Observerse, proving S1, or proving the
   Bitcoin analogy;
 - any claim status, canon verdict, or public posture is moved.
@@ -50,7 +58,9 @@ Status: implemented.
 The deterministic ablation harness passes. Issuance, admissibility,
 sybil/finality, and consensus removals each collapse sustained coherent
 structure to at most 20% of the full-stack baseline. Governance is conditional:
-near-term fixed rules collapse, while full-horizon rules do not.
+near-term fixed rules collapse, while full-horizon rules do not. The sensitivity
+map shows collapse through the sampled 105-tick rule horizon, partial recovery
+from 110 through 145, and near-full recovery only at the full 150-tick horizon.
 
 ## Run Command
 

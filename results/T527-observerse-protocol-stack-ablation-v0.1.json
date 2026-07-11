@@ -53,6 +53,82 @@
       "scs_ratio_to_full": 1.0
     }
   ],
+  "governance_rule_horizon_sensitivity": [
+    {
+      "rule_fill": 0,
+      "scs": 0.0,
+      "scs_ratio_to_full": 0.0,
+      "classification": "collapsed"
+    },
+    {
+      "rule_fill": 40,
+      "scs": 0.0,
+      "scs_ratio_to_full": 0.0,
+      "classification": "collapsed"
+    },
+    {
+      "rule_fill": 80,
+      "scs": 0.0,
+      "scs_ratio_to_full": 0.0,
+      "classification": "collapsed"
+    },
+    {
+      "rule_fill": 100,
+      "scs": 0.0,
+      "scs_ratio_to_full": 0.0,
+      "classification": "collapsed"
+    },
+    {
+      "rule_fill": 105,
+      "scs": 0.139873821057,
+      "scs_ratio_to_full": 0.114860154114,
+      "classification": "collapsed"
+    },
+    {
+      "rule_fill": 110,
+      "scs": 0.275021296962,
+      "scs_ratio_to_full": 0.225839176446,
+      "classification": "partial_recovery"
+    },
+    {
+      "rule_fill": 120,
+      "scs": 0.532343842146,
+      "scs_ratio_to_full": 0.437144672882,
+      "classification": "partial_recovery"
+    },
+    {
+      "rule_fill": 130,
+      "scs": 0.774108522091,
+      "scs_ratio_to_full": 0.635674520627,
+      "classification": "partial_recovery"
+    },
+    {
+      "rule_fill": 140,
+      "scs": 1.002089828631,
+      "scs_ratio_to_full": 0.822885878738,
+      "classification": "partial_recovery"
+    },
+    {
+      "rule_fill": 145,
+      "scs": 1.111385973676,
+      "scs_ratio_to_full": 0.912636569534,
+      "classification": "partial_recovery"
+    },
+    {
+      "rule_fill": 150,
+      "scs": 1.21777497284,
+      "scs_ratio_to_full": 1.0,
+      "classification": "near_full_recovery"
+    }
+  ],
+  "governance_sensitivity_monotone": true,
+  "first_rule_fill_above_collapse_band": 110,
+  "first_rule_fill_near_full_recovery": 150,
+  "sensitivity_classifications_seen": [
+    "collapsed",
+    "near_full_recovery",
+    "partial_recovery"
+  ],
   "core_layers_each_earn_slot": true,
   "governance_conditional_visible": true,
   "minimum_stack_under_near_term_governance": 5,
@@ -60,8 +136,8 @@
   "claim_status_changed": false,
   "canon_verdict_changed": false,
   "public_posture_changed": false,
-  "strongest_reading": "The deterministic ablation model matches its review-only claim: each core layer collapses sustained coherent structure to at most 20% of the full stack, while governance is load-bearing only when fixed rules do not already anticipate the full novelty horizon.",
-  "what_this_improves": "T527 turns the recent Observerse stack ablation into a repeatable regression harness and frozen result packet, without changing the underlying model or promoting the exploration.",
-  "falsification_condition": "T527 fails if a core-layer removal stays above 20% of full sustained coherent structure, if the governance near-term/full-horizon contrast disappears, or if the result is used as validation rather than illustration-grade compositional accounting.",
+  "strongest_reading": "The deterministic ablation model matches its review-only claim: each core layer collapses sustained coherent structure to at most 20% of the full stack, while governance is load-bearing only when fixed rules do not already anticipate the full novelty horizon. The sensitivity map makes the transition explicit: fixed rules remain in the collapse band through rule horizon 105, partially recover after 110, and reach near-full recovery only at the full 150-tick horizon.",
+  "what_this_improves": "T527 turns the recent Observerse stack ablation into a repeatable regression harness and frozen result packet. The governance-horizon sensitivity map hardens the conditional without changing the underlying source model or promoting the exploration.",
+  "falsification_condition": "T527 fails if a core-layer removal stays above 20% of full sustained coherent structure, if the governance near-term/full-horizon contrast disappears, or if the sensitivity map ceases to be monotone from collapse through partial recovery to near-full recovery. It also fails if the result is used as validation rather than illustration-grade compositional accounting.",
   "not_claimed": "T527 does not validate Observerse, derive S1, prove the Bitcoin analogy, promote any claim, or change canon/public posture. It is only a regression harness for the deterministic illustration model."
 }

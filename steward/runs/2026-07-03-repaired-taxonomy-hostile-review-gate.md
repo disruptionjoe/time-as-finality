@@ -13,13 +13,13 @@
 ## Governance Loaded
 
 - Workspace routing instructions supplied in chat.
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
+- `CapacityOS\Agents Start Here.md`
 - `AGENTS.md`
 - `steward/README.md`
 - North Star map: `Vision - North Star.md`, `Method - Research Program Guidelines.md`,
   `Lead Research Line - Time as Finality.md`
 - `CONTRIBUTING.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
 - Automation memory and `steward/memory-log.md`
 - Recent T433/T435/T436 artifacts and the repaired taxonomy/open-problem context.
 

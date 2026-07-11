@@ -10,10 +10,10 @@
 
 ## Governance Loaded
 
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\AGENTS.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\README.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\AGENTS.md`
+- `CapacityOS\kernel\run-convention\README.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
 - Repo `AGENTS.md`
 - Repo `steward/README.md`
 - North Star map:

@@ -8,9 +8,9 @@
 
 ## Governance Loaded
 
-- Workspace root instructions from `C:\Users\joe\JB\AGENTS.md` in chat.
-- CapacityOS entrypoint: `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`.
-- CapacityOS agent map: `C:\Users\joe\JB\CapacityOS\AGENTS.md`.
+- Workspace root instructions from `JB\AGENTS.md` in chat.
+- CapacityOS entrypoint: `CapacityOS\Agents Start Here.md`.
+- CapacityOS agent map: `CapacityOS\AGENTS.md`.
 - CapacityOS run convention: `kernel/run-convention/README.md` and `standard-run-model.md`.
 - CapacityOS architecture and subsidiarity context.
 - Repo instructions: `AGENTS.md`.

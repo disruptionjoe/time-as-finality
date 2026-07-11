@@ -32,7 +32,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 5d2f4df [main]
+repos/public/time-as-finality 5d2f4df [main]
 ```
 
 The latest run was T432, which made the classical C-fragment executable by small

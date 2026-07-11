@@ -28,7 +28,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 10d09d3 [main]
+repos/public/time-as-finality 10d09d3 [main]
 ```
 
 The latest completed run is T427. It blocks the threshold-index reading and names

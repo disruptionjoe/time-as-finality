@@ -25,7 +25,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 81b0df1 [main]
+repos/public/time-as-finality 81b0df1 [main]
 ```
 
 No open or pending repo-local run artifact overlaps the threshold-index leakage

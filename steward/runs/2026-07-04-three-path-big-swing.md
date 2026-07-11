@@ -11,7 +11,7 @@
 ## Governance Loaded
 
 - Workspace routing instructions supplied in chat.
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
+- `CapacityOS\Agents Start Here.md`
 - Repo `AGENTS.md` and `steward/README.md`.
 - Current top-three path readout from the active chat:
   1. region-indexed capability discriminator via substrate-law packet;

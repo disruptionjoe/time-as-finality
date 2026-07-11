@@ -10,8 +10,8 @@
 
 ## Governance Loaded
 
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\AGENTS.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\AGENTS.md`
 - Repo `AGENTS.md`
 - Repo `steward/README.md`
 - North Star map:

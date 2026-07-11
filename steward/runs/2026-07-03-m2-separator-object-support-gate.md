@@ -27,7 +27,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 3d0e550 [main]
+repos/public/time-as-finality 3d0e550 [main]
 ```
 
 The latest completed run was T428. It blocked the common nonquota full-judgment

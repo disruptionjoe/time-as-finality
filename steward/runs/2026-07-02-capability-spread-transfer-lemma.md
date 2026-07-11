@@ -12,9 +12,9 @@ Started: 2026-07-02T12:02:00-05:00 local.
 
 ## Required Reads
 
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\README.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\kernel\run-convention\README.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
 - `AGENTS.md`
 - `steward/README.md`
 - `Vision - North Star.md`

@@ -11,10 +11,10 @@
 ## Governance Loaded
 
 - Workspace and CapacityOS routing instructions supplied in chat.
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\AGENTS.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\README.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\AGENTS.md`
+- `CapacityOS\kernel\run-convention\README.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
 - CapacityOS architecture/subsidiarity/decision-index orientation.
 - Repo `AGENTS.md`, `steward/README.md`, North Star map, and `CONTRIBUTING.md`.
 

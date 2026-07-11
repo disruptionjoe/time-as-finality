@@ -32,7 +32,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 198f14a [main]
+repos/public/time-as-finality 198f14a [main]
 ```
 
 The latest run was T431, which closed the current M2 support-family channel until

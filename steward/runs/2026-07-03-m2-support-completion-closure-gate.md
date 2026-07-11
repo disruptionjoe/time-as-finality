@@ -30,7 +30,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality b80745d [main]
+repos/public/time-as-finality b80745d [main]
 ```
 
 The latest completed run was T429. It closed the simple separator-object branch

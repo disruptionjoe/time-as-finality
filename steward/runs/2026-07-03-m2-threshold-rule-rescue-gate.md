@@ -27,7 +27,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality 5ed68d3 [main]
+repos/public/time-as-finality 5ed68d3 [main]
 ```
 
 The latest completed run is T425. It closed the direct larger-index rescue for

@@ -33,7 +33,7 @@ The worktree was clean on `main` and aligned with `origin/main` at run start.
 `git worktree list` showed only this repository worktree:
 
 ```text
-C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality caeb986 [main]
+repos/public/time-as-finality caeb986 [main]
 ```
 
 The latest landed run was T433, which discharged the classical C-fragment proof

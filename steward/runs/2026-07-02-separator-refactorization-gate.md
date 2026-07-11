@@ -12,7 +12,7 @@ Started: 2026-07-02T13:03:00-05:00 local.
 
 ## Required Reads
 
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
+- `CapacityOS\Agents Start Here.md`
 - `AGENTS.md`
 - `steward/README.md`
 - `Vision - North Star.md`

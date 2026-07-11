@@ -12,12 +12,12 @@ Started: 2026-07-02T11:06:41-05:00 local.
 
 ## Required Reads
 
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\system\meta\architecture\capacityos-canonical-architecture.md`
-- `C:\Users\joe\JB\CapacityOS\system\meta\architecture\subsidiarity-architecture.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\README.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
-- `C:\Users\joe\JB\CapacityOS\system\meta\decisions\INDEX.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\system\meta\architecture\capacityos-canonical-architecture.md`
+- `CapacityOS\system\meta\architecture\subsidiarity-architecture.md`
+- `CapacityOS\kernel\run-convention\README.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\system\meta\decisions\INDEX.md`
 - `AGENTS.md`
 - `steward/README.md`
 - `Vision - North Star.md`

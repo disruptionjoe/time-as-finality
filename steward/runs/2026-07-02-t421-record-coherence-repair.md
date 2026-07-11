@@ -9,8 +9,8 @@
 
 ## Governance Loaded
 
-- Workspace root instructions from `C:\Users\joe\JB\AGENTS.md` in chat.
-- CapacityOS entrypoint: `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`.
+- Workspace root instructions from `JB\AGENTS.md` in chat.
+- CapacityOS entrypoint: `CapacityOS\Agents Start Here.md`.
 - CapacityOS run model: `kernel/run-convention/standard-run-model.md`.
 - Repo instructions: `AGENTS.md`.
 - Repo steward: `steward/README.md`.

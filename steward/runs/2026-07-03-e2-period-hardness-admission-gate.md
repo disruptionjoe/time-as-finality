@@ -13,15 +13,15 @@
 ## Governance Loaded
 
 - Workspace routing instructions supplied in chat.
-- `C:\Users\joe\JB\CapacityOS\Agents Start Here.md`
-- `C:\Users\joe\JB\CapacityOS\AGENTS.md`
+- `CapacityOS\Agents Start Here.md`
+- `CapacityOS\AGENTS.md`
 - `AGENTS.md`
 - `steward/README.md`
 - North Star map: `Vision - North Star.md`, `Method - Research Program Guidelines.md`,
   `Lead Research Line - Time as Finality.md`
 - `CONTRIBUTING.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\README.md`
-- `C:\Users\joe\JB\CapacityOS\kernel\run-convention\standard-run-model.md`
+- `CapacityOS\kernel\run-convention\README.md`
+- `CapacityOS\kernel\run-convention\standard-run-model.md`
 - Automation memory and recent local run receipts.
 - T417/T419/T420 D2 computational-finality context.
 - Repaired capability-boundary taxonomy reference and T437 hostile-review result.

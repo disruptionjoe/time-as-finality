@@ -21,7 +21,7 @@ TESTS_PATH = Path("TESTS.md")
 CLAIM_LEDGER_PATH = Path("CLAIM-LEDGER.md")
 RESULT_PATH = Path("results/T523-claim-ledger-frontier-audit-v0.1.json")
 
-EXPECTED_MAX_TEST_ID = 528
+EXPECTED_MAX_TEST_ID = 529
 EXPECTED_UNTRIAGED_RANGES = ((256, 513),)
 
 VERDICT_PASS = "CLAIM_LEDGER_FRONTIER_DECLARED_COHERENT"
@@ -47,12 +47,14 @@ class ClaimLedgerFrontierAudit:
     t526_reference_law_no_status_movement_present: bool
     t527_observerse_no_row_present: bool
     t528_s1_preflight_no_status_movement_present: bool
+    t529_competency_surplus_no_status_movement_present: bool
     twl_claim_row_present: bool
     t523_claim_row_present: bool
     t524_claim_row_present: bool
     t525_claim_row_present: bool
     t526_claim_row_present: bool
     t528_claim_row_present: bool
+    t529_claim_row_present: bool
     blockers: tuple[str, ...]
     verdict: str
 
@@ -120,12 +122,18 @@ def audit_claim_ledger_frontier(
         "T528",
         required=("S1 generator-preflight", "no claim row", "claim-status movement"),
     )
+    t529_competency_surplus_no_status_movement = _nearby_contains(
+        coverage_note,
+        "T529",
+        required=("competency-surplus", "no claim row", "claim-status movement"),
+    )
     twl_claim_row_present = "| [TWL](" in ledger_text
     t523_claim_row_present = "| [T523](" in ledger_text
     t524_claim_row_present = "| [T524](" in ledger_text
     t525_claim_row_present = "| [T525](" in ledger_text
     t526_claim_row_present = "| [T526](" in ledger_text
     t528_claim_row_present = "| [T528](" in ledger_text
+    t529_claim_row_present = "| [T529](" in ledger_text
 
     blockers: list[str] = []
     if max_test_id != EXPECTED_MAX_TEST_ID:
@@ -152,6 +160,8 @@ def audit_claim_ledger_frontier(
         blockers.append("missing T527 Observerse no-row language")
     if not t528_s1_preflight_no_status_movement:
         blockers.append("missing T528 S1 preflight no-status-movement language")
+    if not t529_competency_surplus_no_status_movement:
+        blockers.append("missing T529 competency-surplus no-status-movement language")
     if not twl_claim_row_present:
         blockers.append("missing TWL claim row")
     if t523_claim_row_present:
@@ -164,6 +174,8 @@ def audit_claim_ledger_frontier(
         blockers.append("T526 unexpectedly has a claim row")
     if t528_claim_row_present:
         blockers.append("T528 unexpectedly has a claim row")
+    if t529_claim_row_present:
+        blockers.append("T529 unexpectedly has a claim row")
 
     verdict = VERDICT_FAIL if blockers else VERDICT_PASS
     return ClaimLedgerFrontierAudit(
@@ -179,12 +191,14 @@ def audit_claim_ledger_frontier(
         t526_reference_law_no_status_movement_present=t526_no_status_movement,
         t527_observerse_no_row_present=t527_observerse_no_row,
         t528_s1_preflight_no_status_movement_present=t528_s1_preflight_no_status_movement,
+        t529_competency_surplus_no_status_movement_present=t529_competency_surplus_no_status_movement,
         twl_claim_row_present=twl_claim_row_present,
         t523_claim_row_present=t523_claim_row_present,
         t524_claim_row_present=t524_claim_row_present,
         t525_claim_row_present=t525_claim_row_present,
         t526_claim_row_present=t526_claim_row_present,
         t528_claim_row_present=t528_claim_row_present,
+        t529_claim_row_present=t529_claim_row_present,
         blockers=tuple(blockers),
         verdict=verdict,
     )

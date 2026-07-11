@@ -33,6 +33,7 @@ class ClaimLedgerFrontierAuditTests(unittest.TestCase):
         self.assertTrue(self.audit.t526_reference_law_no_status_movement_present)
         self.assertTrue(self.audit.t527_observerse_no_row_present)
         self.assertTrue(self.audit.t528_s1_preflight_no_status_movement_present)
+        self.assertTrue(self.audit.t529_competency_surplus_no_status_movement_present)
 
     def test_no_claim_row_is_created_for_the_audit_itself(self) -> None:
         self.assertTrue(self.audit.twl_claim_row_present)
@@ -41,6 +42,7 @@ class ClaimLedgerFrontierAuditTests(unittest.TestCase):
         self.assertFalse(self.audit.t525_claim_row_present)
         self.assertFalse(self.audit.t526_claim_row_present)
         self.assertFalse(self.audit.t528_claim_row_present)
+        self.assertFalse(self.audit.t529_claim_row_present)
 
     def test_payload_is_serializable_and_passes(self) -> None:
         self.assertEqual(self.audit.blockers, ())

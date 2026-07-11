@@ -1,7 +1,7 @@
 {
   "artifact_id": "T523-claim-ledger-frontier-audit-v0.1",
   "blockers": [],
-  "coverage_note_max_test_id": 528,
+  "coverage_note_max_test_id": 529,
   "declared_untriaged_ranges": [
     [
       256,
@@ -14,7 +14,7 @@
       513
     ]
   ],
-  "max_test_id": 528,
+  "max_test_id": 529,
   "no_movement_boundary": "ledger-frontier declaration only; no claim-status, canon-verdict, Canon Index tier, roadmap, North Star, public-posture, external-publication, or cross-repo truth movement",
   "scope": "CLAIM-LEDGER.md Canon Index coverage note and TESTS.md ceiling",
   "t249_t255_s1_history_present": true,
@@ -30,6 +30,8 @@
   "t527_observerse_no_row_present": true,
   "t528_claim_row_present": false,
   "t528_s1_preflight_no_status_movement_present": true,
+  "t529_claim_row_present": false,
+  "t529_competency_surplus_no_status_movement_present": true,
   "twl_claim_row_present": true,
   "verdict": "CLAIM_LEDGER_FRONTIER_DECLARED_COHERENT"
 }

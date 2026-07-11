@@ -14,8 +14,8 @@ routed no-row artifacts.
 
 ## Findings
 
-- `TESTS.md` is at T528.
-- The coverage note names T528 as the registry ceiling.
+- `TESTS.md` is at T529.
+- The coverage note names T529 as the registry ceiling.
 - The still-untriaged frontier is declared as T256-T513.
 - T249-T255 are preserved as S1 finite-colimit history.
 - T517-T519 are preserved as already routed no-row DS-bridge prospecting.
@@ -27,12 +27,15 @@ routed no-row artifacts.
   claim-status movement.
 - T528 is declared as S1 generator-preflight history with no claim-status
   movement.
+- T529 is declared as competency-surplus review-only admission infrastructure
+  with no claim-status movement.
 - T523 creates no claim row.
 - T524 creates no claim row.
 - T525 creates no claim row.
 - T526 creates no claim row.
 - T527 creates no claim row.
 - T528 creates no claim row.
+- T529 creates no claim row.
 
 ## Interpretation
 

@@ -21,8 +21,8 @@ TESTS_PATH = Path("TESTS.md")
 CLAIM_LEDGER_PATH = Path("CLAIM-LEDGER.md")
 RESULT_PATH = Path("results/T523-claim-ledger-frontier-audit-v0.1.json")
 
-EXPECTED_MAX_TEST_ID = 526
-EXPECTED_UNTRIAGED_RANGES = ((249, 513),)
+EXPECTED_MAX_TEST_ID = 527
+EXPECTED_UNTRIAGED_RANGES = ((256, 513),)
 
 VERDICT_PASS = "CLAIM_LEDGER_FRONTIER_DECLARED_COHERENT"
 VERDICT_FAIL = "CLAIM_LEDGER_FRONTIER_DECLARATION_DRIFT"
@@ -39,11 +39,13 @@ class ClaimLedgerFrontierAudit:
     coverage_note_max_test_id: int | None
     declared_untriaged_ranges: tuple[tuple[int, int], ...]
     expected_untriaged_ranges: tuple[tuple[int, int], ...]
+    t249_t255_s1_history_present: bool
     t517_t519_no_row_receipt_present: bool
     t521_t523_infrastructure_no_row_present: bool
     t524_diagnostic_repair_no_status_movement_present: bool
     t525_repaired_suite_no_status_movement_present: bool
     t526_reference_law_no_status_movement_present: bool
+    t527_observerse_no_row_present: bool
     twl_claim_row_present: bool
     t523_claim_row_present: bool
     t524_claim_row_present: bool
@@ -79,6 +81,12 @@ def audit_claim_ledger_frontier(
     coverage_note = _coverage_supersession_note(ledger_text)
     coverage_note_max = _coverage_note_max_test_id(coverage_note)
     declared_untriaged = _declared_untriaged_ranges(coverage_note)
+    t249_t255_s1_history = _nearby_contains(
+        ledger_text,
+        "T249-T255",
+        required=("S1 finite-colimit", "claim-status movement", "T256-T513"),
+        window=1200,
+    )
     t517_t519_no_row_receipt = _nearby_contains(
         ledger_text,
         "T517",
@@ -100,6 +108,11 @@ def audit_claim_ledger_frontier(
         "T526",
         required=("S1 reference-law", "no claim row", "claim-status movement"),
     )
+    t527_observerse_no_row = _nearby_contains(
+        coverage_note,
+        "T527",
+        required=("Observerse review-only", "no claim row", "claim-status movement"),
+    )
     twl_claim_row_present = "| [TWL](" in ledger_text
     t523_claim_row_present = "| [T523](" in ledger_text
     t524_claim_row_present = "| [T524](" in ledger_text
@@ -115,6 +128,8 @@ def audit_claim_ledger_frontier(
         blockers.append(
             f"declared_untriaged={declared_untriaged}, expected {EXPECTED_UNTRIAGED_RANGES}"
         )
+    if not t249_t255_s1_history:
+        blockers.append("missing T249-T255 S1 finite-colimit history placement")
     if not t517_t519_no_row_receipt:
         blockers.append("missing T517-T519 no-row receipt")
     if not t521_t523_infra_no_row:
@@ -125,6 +140,8 @@ def audit_claim_ledger_frontier(
         blockers.append("missing T525 repaired-suite no-status-movement language")
     if not t526_no_status_movement:
         blockers.append("missing T526 reference-law no-status-movement language")
+    if not t527_observerse_no_row:
+        blockers.append("missing T527 Observerse no-row language")
     if not twl_claim_row_present:
         blockers.append("missing TWL claim row")
     if t523_claim_row_present:
@@ -142,11 +159,13 @@ def audit_claim_ledger_frontier(
         coverage_note_max_test_id=coverage_note_max,
         declared_untriaged_ranges=declared_untriaged,
         expected_untriaged_ranges=EXPECTED_UNTRIAGED_RANGES,
+        t249_t255_s1_history_present=t249_t255_s1_history,
         t517_t519_no_row_receipt_present=t517_t519_no_row_receipt,
         t521_t523_infrastructure_no_row_present=t521_t523_infra_no_row,
         t524_diagnostic_repair_no_status_movement_present=t524_no_status_movement,
         t525_repaired_suite_no_status_movement_present=t525_no_status_movement,
         t526_reference_law_no_status_movement_present=t526_no_status_movement,
+        t527_observerse_no_row_present=t527_observerse_no_row,
         twl_claim_row_present=twl_claim_row_present,
         t523_claim_row_present=t523_claim_row_present,
         t524_claim_row_present=t524_claim_row_present,
@@ -165,7 +184,7 @@ def write_result(path: Path = RESULT_PATH) -> ClaimLedgerFrontierAudit:
 
 
 def _coverage_supersession_note(text: str) -> str:
-    marker = "**Coverage / staleness supersession (2026-07-10).**"
+    marker = "**Coverage / staleness supersession (2026-07-11).**"
     start = text.index(marker)
     next_note = text.find("\n\n**", start + len(marker))
     if next_note == -1:

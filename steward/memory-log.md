@@ -178,3 +178,4 @@ Routine detail stays here; it is not loaded by default.
 ## 2026-07-11
 
 - RUN-334 child progress mechanically refreshed `CLAIM-LEDGER.md` coverage after T527 landed. T527 is recorded as Observerse review-only regression infrastructure/no-row: no Observerse validation, S1 derivation, Bitcoin-analogy proof, claim-status movement, Canon Index tier movement, canon verdict, public posture, North Star, paper, protected-research, external-publication, or cross-repo truth movement. The run also repaired the stale top `Status: active` marker on the completed RUN-330 child record.
+- RUN-335 child progress placed the T249-T255 S1 finite-colimit tranche in `CLAIM-LEDGER.md` as finite-control history and refreshed the T523 frontier audit to T527 / remaining frontier T256-T513. No claim row, S1 status movement, Canon Index tier movement, canon verdict, public posture, North Star, external publication, or cross-repo truth movement.

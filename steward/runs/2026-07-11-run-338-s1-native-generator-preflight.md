@@ -1,6 +1,6 @@
 # 2026-07-11 RUN-338 Child Progress: S1 Native Generator Preflight
 
-Status: active
+Status: completed
 
 ## Target
 
@@ -127,5 +127,5 @@ Canon Index tier movement, canon verdict, North Star, public posture, hard
 policy, external publication, CapacityOS parent record, or sibling-repo truth
 movement.
 
-Commit/push: completed by this run; see final response for the resulting commit
-hash.
+Commit/push: `eabe0f7` (`Add S1 generator preflight`) and `5f908cd`
+(`Correct RUN-338 receipt timestamps`), pushed to `origin/main`.

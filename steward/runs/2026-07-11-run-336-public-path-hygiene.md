@@ -1,6 +1,6 @@
 # 2026-07-11 RUN-336 Child Progress: Public Path Hygiene
 
-Status: active
+Status: completed
 
 ## Target
 
@@ -99,5 +99,5 @@ Versioned files changed:
 - `steward/runs/2026-07-11-run-336-public-path-hygiene.md`.
 - `steward/memory-log.md`.
 
-Commit/push: completed by this run; see final response for the resulting commit
-hash.
+Commit/push: `93ac62a` (`Normalize steward run path references`), pushed to
+`origin/main`.

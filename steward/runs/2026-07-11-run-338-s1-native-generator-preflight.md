@@ -80,12 +80,12 @@ cross-repo write, public-posture movement, or external publication would stop.
 
 ## Execution Notes
 
-- 2026-07-11 03:17 CDT: Created this run plan after clean/even preflight and
+- 2026-07-11 03:10 CDT: Created this run plan after clean/even preflight and
   recent-run collision checks.
-- 2026-07-11 03:37 CDT: Added T528 as a bounded post-T526 S1 generator
+- 2026-07-11 03:15 CDT: Added T528 as a bounded post-T526 S1 generator
   preflight. The first two-receipt finality-native packet executed 32 samples
   and was rejected as incomplete at 25/32 repaired-suite passes.
-- 2026-07-11 03:42 CDT: Registered T528 in `TESTS.md` and froze JSON/Markdown
+- 2026-07-11 03:17 CDT: Registered T528 in `TESTS.md` and froze JSON/Markdown
   results without editing claim ledgers, canon verdicts, public posture, North
   Star, external-publication state, or sibling repos.
 
@@ -101,7 +101,7 @@ cross-repo write, public-posture movement, or external publication would stop.
 
 ## Receipt
 
-Completed: 2026-07-11 03:43 CDT.
+Completed: 2026-07-11 03:19 CDT.
 
 Outcome: T528 created and validated. The run added a finality-native generator
 preflight for the S1/T526 follow-up burden. The two-receipt local record

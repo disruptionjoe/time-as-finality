@@ -15,6 +15,8 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
+**Coverage / staleness supersession (2026-07-11).** This note supersedes the 2026-07-10 coverage note below. The test registry (`TESTS.md`) is now at **T527**. T521 is detector-manifest review infrastructure, T522 is registry hygiene, T523 is ledger-frontier declaration hygiene, and T527 is Observerse review-only regression infrastructure; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, and T526 is an S1 reference-law gap entry. T521-T527 create no claim row, claim-status movement, Canon Index tier movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T249-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T249-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
+
 **Coverage / staleness supersession (2026-07-10).** This note supersedes the 2026-07-09 coverage note below. The test registry (`TESTS.md`) is now at **T526**. T521 is detector-manifest review infrastructure, T522 is registry hygiene, and T523 is ledger-frontier declaration hygiene; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, and T526 is an S1 reference-law gap entry, each creating no claim row, claim-status movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T249-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T249-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
 
 **Coverage / staleness (2026-07-09).** This index and table track claims through **T248**, plus two 2026-07-09 ratification placements now triaged into it: **TWL** (three-wall nonlocality ladder, T514–T516; finite-witness supported) and the **T520** copy-law screen (lane B, absorbed — negative, no claim row). The test registry (`TESTS.md`) is at **T520**, so the rest of the frontier **T249–T513, T517–T519 remains un-triaged here** (M2/E-gate negatives, boundary-adapter gates, and the T517–T519 DS-bridge prospecting, which is structural-only / SHUT and earns no row). A reader must not read a tier's *absence* here as "unsupported"; it may simply be un-triaged. The remaining ratification pass is still due under the steward Ledger Reconciliation Trigger. `COMPLEXITY-LEDGER.md` tracks through T138; the independence audit through T222/T223.
@@ -3388,3 +3390,19 @@ no public-posture movement.
   without importing target spacetime structure, passes the repaired suite, and
   carries hostile controls plus later Lorentzian constraints. S1 remains
   `requires_added_assumption`; T223 is not reversed.
+
+### 2026-07-11 - Observerse protocol-stack ablation regression harness (T527)
+
+Mechanical coverage follow-up after T527 landed in `TESTS.md`. T527 is
+review-only regression infrastructure around an illustration-grade Observerse
+ablation model. It creates no claim row, no S1 or Observerse validation, no
+claim-status movement, no Canon Index tier movement, no canon verdict movement,
+and no public-posture movement.
+
+- **T527 Observerse protocol-stack ablation - no row.** The deterministic
+  ablation harness verifies the advertised failure map: removing issuance,
+  admissibility, sybil/finality, or consensus drops sustained coherent
+  structure to at most 20% of full, and governance is load-bearing only under
+  near-term fixed rules. The result is regression infrastructure only, not
+  Observerse validation, S1 derivation, Bitcoin-analogy proof, claim-status
+  movement, canon movement, or public-posture movement.

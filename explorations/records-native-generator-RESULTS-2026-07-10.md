@@ -1,5 +1,12 @@
 # RESULTS: finality-native generator dimension-collapse sweep -- PARTIAL (real collapse, 1+1 not validated)
 
+> **FOLLOW-UP SETTLED IT (2026-07-10): INERTIAL-ONLY.** The decisive native-vs-inertial test
+> (`records-native-vs-inertial-RESULTS-2026-07-10.md`) showed the collapse below requires the imposed
+> ballistic (inertial) motion: a genuinely native content-based attention process gives a near-chain
+> temporal order with NO collapse. So the partial-collapse below was inertial (smuggled Minkowski);
+> records-as-rows is a reinterpretation, not a generator, for the geometry lane.
+
+
 2026-07-10. Executes the frozen spec `records-native-generator-PREDECLARED-SPEC-2026-07-10.md` (committed
 first). Model: `models/records_native_generator_sweep.py` (exit 0, deterministic seed 20260710). Screen
 grade. **Verdict: PARTIAL** -- a genuine dimensional collapse occurs, but it is not validated as 1+1 and

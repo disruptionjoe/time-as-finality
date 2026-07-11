@@ -77,6 +77,7 @@ This keeps the heterodox "rendered interface" intuition alive while forcing a lo
 - [T524: T126 Random-Sprinkle Diagnostic Repair](../tests/T524-t126-random-sprinkle-diagnostic-repair.md)
 - [T525: Repaired S1 Manifoldlikeness Suite](../tests/T525-repaired-s1-manifoldlikeness-suite.md)
 - [T526: S1 Reference-Law Gap Audit](../tests/T526-s1-reference-law-gap-audit.md)
+- [Myrheim-Meyer Dimension Estimator (2026-07-10 exploration)](../explorations/myrheim-meyer-dimension-estimator-and-s1-2026-07-10.md)
 - [T151: Causal-Access Screen](../tests/T151-causal-access-screen.md)
 - [T153: Lorentzian Causal-Diamond Screen](../tests/T153-lorentzian-causal-diamond-screen.md)
 
@@ -335,6 +336,24 @@ includes hostile controls, and names later Lorentzian causal/metric/covariance/
 embedding constraints.
 
 S1 remains `requires_added_assumption`; T223 is not reversed.
+
+## Myrheim-Meyer Dimension Estimator (2026-07-10)
+
+The [Myrheim-Meyer dimension estimator](../explorations/myrheim-meyer-dimension-estimator-and-s1-2026-07-10.md)
+supplies the continuum dimension read-out that T223, T524, and T525 each explicitly disclaimed. It
+inverts the Myrheim-Meyer relation `f(d) = Gamma(d+1)Gamma(d/2) / (2 Gamma(3d/2))`, validated against
+direct Minkowski sprinklings (recovers d=2,3,4 within +/-0.25). Genuine random 1+1 sprinkles -- the
+objects T126's order-dimension leg wrongly rejected -- read `d_hat = 2.00`, so they PASS a principled
+continuum statistic; a pure chain reads `d_hat = 1.00` (the estimator discriminates). The finite
+finality-colimit witnesses read `d_hat = 1.44` (T249 grid) and `1.86` (T252 ordinal) -- below
+manifold-like 2D, upgrading T525's empirical-envelope rejection to an interpretable
+wrong-effective-dimension one.
+
+This strengthens the diagnostic basis for the current status without changing it. S1 remains
+`requires_added_assumption`. Honest limit: the estimator is Lorentzian-calibrated (its ground truth is
+Minkowski sprinklings), so like T526's reference law it improves the SCREEN, not the GENERATOR; the
+finality-native generator T526 named is still the missing object. Ordering fraction is one necessary
+(not sufficient) statistic; T223's n=8 survivor-fraction leg is untouched. No claim-ledger movement.
 
 ## T153 Lorentzian Absorber Gate
 

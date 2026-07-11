@@ -1,0 +1,231 @@
+{
+  "artifact": "T529-competency-surplus-admission-gate-v0.1",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t493": "results/T493-levin-competency-cr-absorber-gate-v0.1-results.md",
+    "t494": "results/T494-levin-fields-primary-source-absorber-gate-v0.1-results.md",
+    "t460": "results/T460-post-t459-direction-a-restart-router-v0.1-results.md"
+  },
+  "absorber_floor": {
+    "t493_verdict": "N16_COMPETENCY_GATE_BUILT_FULL_PROFILE_ABSORBS_SURPLUS_REVIEW_ONLY",
+    "t494_verdict": "PRIMARY_SOURCE_COMPETENCY_ABSORBER_BUILT_NO_CLAIM_MOVEMENT",
+    "t493_full_profile_absorbs_current_c_r": true,
+    "t493_same_resource_capability_splits": [],
+    "t493_distinct_c_r_profiles": 12,
+    "t493_statistics_flat_spans_all_profiles": true,
+    "t493_single_goal_collision_count": 2,
+    "t493_single_goal_absorbs_full_c_r": false,
+    "t493_zero_trace_review_only": true,
+    "t494_primary_source_scope_checked": true,
+    "t494_claim_movement": false,
+    "t494_public_or_cross_repo_movement": false
+  },
+  "packet_evaluations": [
+    {
+      "packet_id": "current_t407_simple_statistics_surplus",
+      "admitted": true,
+      "label": "ADMITTED_SIMPLE_STATISTICS_REVIEW_ONLY_NOT_COMPETENCY_SURPLUS",
+      "action": "keep_as_simple_statistics_review_target",
+      "reason": "T493 says simple statistics can be flat while full C(R) profiles differ, so this is not surplus over full competency.",
+      "packet": {
+        "packet_id": "current_t407_simple_statistics_surplus",
+        "description": "Use T407-style equality of simple observed statistics as the claimed surplus target.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": false,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": true,
+        "independent_noncompletion_witness": false,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "full_competency_profile_equivalent",
+      "admitted": false,
+      "label": "ABSORBED_BY_FULL_COMPETENCY_PROFILE",
+      "action": "absorb",
+      "reason": "If the capability is a task-success coordinate, the full competency profile contains it.",
+      "packet": {
+        "packet_id": "full_competency_profile_equivalent",
+        "description": "Package a C(R) profile that is exactly the full intervention-measured task-success vector.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": false,
+        "same_full_competency_profile": false,
+        "capability_split": false,
+        "capability_is_task_success_coordinate": true,
+        "independent_noncompletion_witness": false,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "weak_single_statistic_proxy",
+      "admitted": false,
+      "label": "ABSORBED_BY_FULL_COMPETENCY_PROFILE",
+      "action": "absorb",
+      "reason": "If the capability is a task-success coordinate, the full competency profile contains it.",
+      "packet": {
+        "packet_id": "weak_single_statistic_proxy",
+        "description": "Ask one observed navigation/readout statistic to stand for the full C(R) profile.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": false,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": true,
+        "independent_noncompletion_witness": false,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "synthetic_competency_surplus_review_target",
+      "admitted": true,
+      "label": "ADMITTED_COMPETENCY_SURPLUS_FUTURE_REVIEW_TARGET",
+      "action": "review_only",
+      "reason": "The packet shape clears the formal admission burden, but T529 does not instantiate it or move claims.",
+      "packet": {
+        "packet_id": "synthetic_competency_surplus_review_target",
+        "description": "A future packet shape with fixed region/menu/task context, matched full competency profile, and a predeclared independent noncompletion witness for a non-task-success capability.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": true,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": false,
+        "independent_noncompletion_witness": true,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "post_hoc_hidden_residual",
+      "admitted": false,
+      "label": "REJECTED_POST_HOC_OR_UNWITNESSED_RESIDUAL",
+      "action": "reject",
+      "reason": "A post-hoc hidden residual is underdescription unless a predeclared noncompletion witness is supplied.",
+      "packet": {
+        "packet_id": "post_hoc_hidden_residual",
+        "description": "Assert a hidden residual after pair selection without an independent noncompletion witness.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": true,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": false,
+        "independent_noncompletion_witness": false,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "unchecked_source_status_packet",
+      "admitted": false,
+      "label": "REJECTED_UNCHECKED_COMPETENCY_SOURCE_STATUS",
+      "action": "reject",
+      "reason": "Future packets must use the T494 bounded source-status discipline.",
+      "packet": {
+        "packet_id": "unchecked_source_status_packet",
+        "description": "Use competency vocabulary without T494 primary-source status or bounded absorber scope.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": false,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": true,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": false,
+        "independent_noncompletion_witness": true,
+        "imports_external_mechanism": false,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "active_inference_mechanism_import",
+      "admitted": false,
+      "label": "REJECTED_EXTERNAL_MECHANISM_IMPORT",
+      "action": "reject",
+      "reason": "T494 treats external mechanisms as neighbors and absorber pressure, not TaF machinery.",
+      "packet": {
+        "packet_id": "active_inference_mechanism_import",
+        "description": "Import active-inference/free-energy/polycomputing mechanisms as the reason C(R) escapes competency absorption.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": true,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": false,
+        "independent_noncompletion_witness": true,
+        "imports_external_mechanism": true,
+        "claims_current_success": false,
+        "claims_public_or_cross_repo_update": false,
+        "changes_claim_or_canon_status": false
+      }
+    },
+    {
+      "packet_id": "claim_public_cross_repo_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_GOVERNANCE_OR_CROSS_REPO_SHORTCUT",
+      "action": "stop",
+      "reason": "Admission gates cannot move claims, canon, public posture, or cross-repo truth.",
+      "packet": {
+        "packet_id": "claim_public_cross_repo_shortcut",
+        "description": "Use the admission gate to move claims, public posture, or cross-repo truth.",
+        "fixed_region_menu_task_context": true,
+        "checks_t493_t494_absorbers": true,
+        "primary_source_status_checked": true,
+        "same_simple_observed_statistics": true,
+        "same_full_competency_profile": true,
+        "capability_split": true,
+        "capability_is_task_success_coordinate": false,
+        "independent_noncompletion_witness": true,
+        "imports_external_mechanism": false,
+        "claims_current_success": true,
+        "claims_public_or_cross_repo_update": true,
+        "changes_claim_or_canon_status": true
+      }
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "COMPETENCY_SURPLUS_GATE_BUILT_REVIEW_ONLY",
+    "admitted_packet_ids": [
+      "current_t407_simple_statistics_surplus",
+      "synthetic_competency_surplus_review_target"
+    ],
+    "synthetic_future_review_target_admitted": true,
+    "current_simple_statistics_surplus_is_competency_surplus": false,
+    "current_discriminator_success": false,
+    "claim_movement": false,
+    "canon_or_public_posture_movement": false,
+    "cross_repo_movement": false
+  },
+  "reading": "A future C(R) packet cannot count as competency-surplus merely because simple observed statistics are flat. T493 already shows that the current flat-statistics class spans the admitted C(R) profiles, while a full intervention-measured competency profile absorbs current C(R). T529 therefore requires the future packet to match the full competency profile and supply an independent noncompletion witness for a capability that is not just another task-success coordinate.",
+  "claim_ledger_update": "none; no claim promotion or demotion",
+  "recommended_next": [
+    "Use T529 as the admission checklist before reopening the C(R) route.",
+    "Treat T407-style flat simple statistics as review material only.",
+    "Reject packets whose alleged surplus is just another task-success coordinate.",
+    "Any future positive packet still needs its own executable witness and T460-class route checks."
+  ],
+  "honest_ceiling": "Review-only admission gate. T529 does not exhibit a successful region-indexed discriminator, does not prove surplus over Levin/Fields competency, does not import active-inference/free-energy/polycomputing mechanisms, and does not move claim status, Canon Index tiers, canon verdicts, roadmap, README, North Star, public posture, hard policy, external publication, or cross-repo truth."
+}

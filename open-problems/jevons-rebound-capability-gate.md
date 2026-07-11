@@ -60,6 +60,34 @@ A future packet should include:
 - an absorber check against ordinary resource theory, maintenance load,
   queueing/congestion, and viability/control accounting.
 
+## Pre-T executable helper (2026-07-11)
+
+The first runnable gate helper is
+`models/jevons_rebound_capability_gate.py`, with focused tests in
+`tests/test_jevons_rebound_capability_gate.py`.
+
+It is intentionally **pre-T**: it does not add a `TESTS.md` row, does not
+produce a numbered result packet, and does not move claims, canon, public
+posture, or cross-repo truth. Its job is to make the admission shape executable
+before a concrete Jevons packet is worth numbering.
+
+Current classifier behavior:
+
+- admits a positive control where lower unit cost remains a net capability
+  improvement after demand response is modeled;
+- absorbs the classic rebound case as ordinary resource-demand accounting when
+  lower unit cost increases total demand and aggregate burden enough to erase
+  the apparent improvement;
+- rejects hidden demand-response labels and post-hoc burden variables;
+- routes source-side possibility-growth interpretations outside TaF;
+- admits only a synthetic future review target when a predeclared finality
+  witness remains after ordinary resource-demand accounting is granted.
+
+Use this helper before assigning a future T-number. A numbered packet should
+only be opened once there is a concrete operation, demand-response rule or
+measured packet, burden variable, fixed region/menu, controls, and absorber
+check to record.
+
 ## Success Criteria
 
 The gate succeeds if it distinguishes:

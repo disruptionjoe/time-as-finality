@@ -9,3 +9,6 @@ __pycache__/
 
 # Scratch / working state (steward convention)
 _local/
+
+# Public-repo local ops records
+steward/runs/

@@ -1,0 +1,67 @@
+{
+  "verdict": "observerse_stack_ablation_regression_harness_passes_review_only",
+  "grade": "illustration_regression_only",
+  "source_model": "models/observerse_stack_ablation.py",
+  "rows": [
+    {
+      "id": "full_stack",
+      "label": "FULL STACK (all 5)",
+      "scs": 1.21777497284,
+      "predicted_mode": "baseline",
+      "scs_ratio_to_full": 1.0
+    },
+    {
+      "id": "without_issuance",
+      "label": "- issuance",
+      "scs": 0.0,
+      "predicted_mode": "freeze",
+      "scs_ratio_to_full": 0.0
+    },
+    {
+      "id": "without_admissibility",
+      "label": "- admissibility",
+      "scs": 0.0,
+      "predicted_mode": "incoherence",
+      "scs_ratio_to_full": 0.0
+    },
+    {
+      "id": "without_sybil_finality",
+      "label": "- sybil/finality",
+      "scs": 0.0,
+      "predicted_mode": "capture",
+      "scs_ratio_to_full": 0.0
+    },
+    {
+      "id": "without_consensus",
+      "label": "- consensus",
+      "scs": 0.243554994568,
+      "predicted_mode": "fragment",
+      "scs_ratio_to_full": 0.2
+    },
+    {
+      "id": "without_governance_near_term_rules",
+      "label": "- governance (near-term rules)",
+      "scs": 0.0,
+      "predicted_mode": "ossification",
+      "scs_ratio_to_full": 0.0
+    },
+    {
+      "id": "without_governance_full_horizon_rules",
+      "label": "- governance (full-horizon rules)",
+      "scs": 1.21777497284,
+      "predicted_mode": "no_collapse_rules_anticipated_all",
+      "scs_ratio_to_full": 1.0
+    }
+  ],
+  "core_layers_each_earn_slot": true,
+  "governance_conditional_visible": true,
+  "minimum_stack_under_near_term_governance": 5,
+  "minimum_stack_when_rules_anticipate_full_horizon": 4,
+  "claim_status_changed": false,
+  "canon_verdict_changed": false,
+  "public_posture_changed": false,
+  "strongest_reading": "The deterministic ablation model matches its review-only claim: each core layer collapses sustained coherent structure to at most 20% of the full stack, while governance is load-bearing only when fixed rules do not already anticipate the full novelty horizon.",
+  "what_this_improves": "T527 turns the recent Observerse stack ablation into a repeatable regression harness and frozen result packet, without changing the underlying model or promoting the exploration.",
+  "falsification_condition": "T527 fails if a core-layer removal stays above 20% of full sustained coherent structure, if the governance near-term/full-horizon contrast disappears, or if the result is used as validation rather than illustration-grade compositional accounting.",
+  "not_claimed": "T527 does not validate Observerse, derive S1, prove the Bitcoin analogy, promote any claim, or change canon/public posture. It is only a regression harness for the deterministic illustration model."
+}

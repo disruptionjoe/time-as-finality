@@ -15,7 +15,7 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
-**Coverage / staleness supersession (2026-07-11).** This note supersedes the 2026-07-10 coverage note below. The test registry (`TESTS.md`) is now at **T527**. T249-T255 are now recorded below as S1 finite-colimit history; T521 is detector-manifest review infrastructure, T522 is registry hygiene, T523 is ledger-frontier declaration hygiene, and T527 is Observerse review-only regression infrastructure; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, and T526 is an S1 reference-law gap entry. T249-T255 and T521-T527 create no claim row, claim-status movement, Canon Index tier movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T256-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T256-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
+**Coverage / staleness supersession (2026-07-11).** This note supersedes the 2026-07-10 coverage note below. The test registry (`TESTS.md`) is now at **T528**. T249-T255 are now recorded below as S1 finite-colimit history; T521 is detector-manifest review infrastructure, T522 is registry hygiene, T523 is ledger-frontier declaration hygiene, and T527 is Observerse review-only regression infrastructure; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, T526 is an S1 reference-law gap entry, and T528 is S1 generator-preflight history. T249-T255 and T521-T528 create no claim row, claim-status movement, Canon Index tier movement, canon verdict, S1 posture movement, T223 reversal, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T256-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T256-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
 
 **Coverage / staleness supersession (2026-07-10).** This note supersedes the 2026-07-09 coverage note below. The test registry (`TESTS.md`) is now at **T526**. T521 is detector-manifest review infrastructure, T522 is registry hygiene, and T523 is ledger-frontier declaration hygiene; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, and T526 is an S1 reference-law gap entry, each creating no claim row, claim-status movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T249-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T249-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
 
@@ -3422,3 +3422,21 @@ remaining untriaged frontier is T256-T513.
   contrast, and T255 records mixed one-swap mutation sensitivity. The tranche
   is finite-control bookkeeping only: S1 remains `requires_added_assumption`,
   and the untriaged frontier now starts at T256.
+
+### 2026-07-11 - S1 generator-preflight placement (T528)
+
+Mechanical coverage follow-up after T528 landed in `TESTS.md`. T528 is S1
+preflight history only. It creates no claim row, no S1 status movement, no
+Canon Index tier movement, no canon verdict movement, no T223 reversal, and no
+public-posture movement.
+
+- **T528 S1 finality-native generator preflight - no row.** The first
+  two-receipt finality-native generator packet avoids imported Lorentzian
+  `u/v` coordinates, but only 25 of 32 multi-size samples pass the repaired S1
+  suite, so it is rejected as incomplete before S1 evidence or posture
+  movement. Hostile one-channel chain and hub controls reject; screen-
+  conditioned and Lorentzian-import shortcuts are rejected or blocked. S1
+  remains `requires_added_assumption`, T223 is not reversed, and the remaining
+  live burden is a predeclared finality-native generator, measure law, or
+  continuum bridge with independent naturality support and all repaired-suite
+  samples passing.

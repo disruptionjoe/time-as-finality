@@ -1,5 +1,19 @@
 ﻿# Roadmap
 
+## 2026-07-12 T536 TAF11 Source-Law Successor Router
+
+T536 executes the TAF11 successor choice after T534 paused the S1 finite-generator
+route and T535 found no real TAF10 packet. It selects the next Track-1 packet:
+`t537_source_law_family_and_falsifier_packet`.
+
+The next packet should generate a small menu of genuinely new finality-domain
+law families, exclude the spent two-channel, three-channel, and record-window
+finite-generator shapes, require independent naturality and a predeclared
+falsifier for each family, and avoid target import. Shadow-protection remains a
+feeder branch, TAF12 remains paused for real data, target-statistic changes are
+blocked until a law or falsifier earns them, and no claim-ledger, canon,
+public-posture, external-publication, or cross-repo movement is earned.
+
 ## 2026-07-02 T416 Coupling-Graph Forcing Gate
 
 T416 takes the R2 question exposed by T412/T414/T415 and makes it executable:

@@ -13,7 +13,7 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 ## attention_priority
 
 Generated ranking from `attention/taf_priority_condorcet.py` after Wave 2
-T534/T535 on 2026-07-12:
+T534/T535 and the T536 successor-router pass on 2026-07-12:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
    Why: T534 paused the current S1 finite-generator route without falsifying the
@@ -133,7 +133,7 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, top priority | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T534 completed. `record_window_separation_order` is finality-domain native but density 1/3, not 1/2. Difficulty is not falsification; current finite-generator route pauses until a new law exists. |
+| TAF11 | open, top priority | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T536 completed. The next route is `t537_source_law_family_and_falsifier_packet`: generate new finality-domain law families, require independent naturality plus falsifiers, and avoid spent finite-generator shapes. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
 | TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law. |
@@ -146,13 +146,11 @@ Discipline:
 
 When Joe opens the lane, route the next swing to TAF11:
 
-Run a directed source-law reassessment that preserves the North Star and does
-not retreat to a quick byproduct. The swing should decide which source-law route
-remains live after the S1 finite-generator pause: a new finality-domain law
-family, a changed target statistic, a higher-level shadow-protection theorem,
-or a precise falsifier. It must not rerun the spent two-channel, three-channel,
-or record-window candidates, and it must not import Lorentzian coordinates or
-condition on the repaired S1 screen.
+Run T537 as a source-law family and falsifier packet. It should generate a
+small menu of genuinely new finality-domain law families, exclude the spent
+two-channel, three-channel, and record-window candidates, require independent
+naturality and a predeclared falsifier for each family, and select only a law
+family that can later be computed without target import.
 
 TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
 until TAF11 supplies a law or TAF12 supplies a real noncompletion target.

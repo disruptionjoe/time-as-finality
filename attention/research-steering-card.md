@@ -12,16 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T541 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T542 on
 2026-07-12:
 
-1. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T541 built the review-only nonidentity packet gate; the next value is a
-   real domain-native packet under the same predeclared spine.
-2. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T539 retired the current descent-obstruction family as a programmable
-   scalar-rank channel; TAF11 needs a genuinely new non-rank family before it
-   returns to the front.
+1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
+   Why: T542 selected APRD / reconstruction-boundary descent as the next
+   non-rank source-law packet after T539 retired the programmable rank route.
+2. TAF8 - Cross-domain shadow-protection theorem target.
+   Why: T541 built the review-only nonidentity packet gate, but T542 keeps TAF8
+   waiting until a real domain-native packet is in hand.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: the C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -29,8 +28,8 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T541 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: still blocked until TAF11 supplies a nonprogrammatic source law; T539
-   retired the current descent-obstruction route.
+   Why: still blocked until TAF11's new APRD successor supplies a
+   nonprogrammatic source-law survivor.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -134,24 +133,26 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, demoted until new family | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T539 completed. Removing the pairwise depth table still collapsed to a programmable scalar activation-rank channel, so the current `descent_obstruction_resolution_family` route is retired. TAF11 needs a genuinely new non-rank source-law family before returning to the front. |
+| TAF11 | open, next packet selected | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T542 selected `aprd_reconstruction_boundary_descent_family` as the next non-rank successor and named `t543_aprd_reconstruction_boundary_descent_packet`. The retired T539 route stays retired. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T539 retired the current descent-obstruction route as a programmable rank channel. |
+| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T542 routes the next source-law attempt through APRD / reconstruction-boundary descent before TAF4 can move. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, top priority theorem target | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. The current T499/T501 catalogue pair remains scaffold-only; the synthetic T466/T501 pair clears the executable packet shape but is not domain-native. |
+| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T542 leaves TAF8 waiting until a real domain-native packet exists under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, keep the next swing on TAF8:
+When Joe opens the lane, run the TAF11 successor selected by T542:
 
-Use the T541 gate only when a real domain-native packet is available: same
-predeclared spine, independent kappa nonidentity target, typed-gap transfer
-morphism or identity key, direct preservation theorem, and native absorber
-completion. Keep it review-only unless the runnable artifact earns more.
+Run `t543_aprd_reconstruction_boundary_descent_packet`. Define APRD as an
+access/provenance reconstruction-boundary object and test whether it reproduces
+the T19/T66 and T51/T58-style projection/descent burdens without scalar-rank
+proxy, target-statistic import, Lorentzian reference import, or native absorber
+collapse.
 
-TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
-until TAF11 supplies a genuinely new non-rank source-law family or TAF12
+Use the T541 TAF8 gate only when a real domain-native packet is available under
+the same predeclared spine. TAF12 may run only if a real data-bearing packet
+exists. TAF3 remains blocked until TAF11 supplies a source-law survivor or TAF12
 supplies a real noncompletion target.

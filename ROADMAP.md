@@ -1,5 +1,26 @@
 ﻿# Roadmap
 
+## 2026-07-12 T542 Post-Retirement Source-Law Reassessment Router
+
+T542 consumes the two live constraints left by the latest Track-1 work. T539
+retired the current `descent_obstruction_resolution_family` because its
+generator collapsed to a programmable scalar activation-rank channel. T541 built
+the TAF8 witness-packet gate, but left TAF8 waiting for a real domain-native
+packet.
+
+The result is a work-selection result, not a source law. T542 selects
+`aprd_reconstruction_boundary_descent_family` as the next non-rank TAF11
+successor and names `t543_aprd_reconstruction_boundary_descent_packet` as the
+next packet. The packet should define APRD as an access/provenance
+reconstruction-boundary object and test whether it reproduces T19/T66 and
+T51/T58-style projection/descent burdens without scalar-rank proxy, target
+statistics, Lorentzian reference import, or native absorber collapse.
+
+Immediate TAF8 execution remains paused until a real domain-native packet exists.
+The retired T539 route stays retired. No source-law establishment,
+cross-domain theorem, claim-ledger, Canon Index, canon-verdict, public-posture,
+North Star, external-publication, or cross-repo movement is earned by T542.
+
 ## 2026-07-12 T541 Nonidentity Shadow-Protection Witness Packet
 
 T541 executes the TAF8 nonidentity witness-packet gate named by T540. It

@@ -1,0 +1,263 @@
+{
+  "artifact": "T542-post-retirement-source-law-reassessment-router-v0.1",
+  "candidate_decisions": [
+    {
+      "candidate_id": "aprd_reconstruction_boundary_descent_family",
+      "missing_requirements": [],
+      "next_packet": "t543_aprd_reconstruction_boundary_descent_packet",
+      "outcome": "SELECTED_FOR_EXECUTION",
+      "predeclared_falsifier": "Reject if APRD reduces to scalar rank/order, if it cannot be computed before reading target statistics, if the T19/T66 and T51/T58-style projection/descent burdens are not reproduced in the declared fixtures, or if native absorbers explain the split.",
+      "reason": "The candidate is finality-native, non-rank, new after T539, computable without target import, and specific enough for the next packet.",
+      "selected_for_next_execution": true,
+      "source_variables": [
+        "access_profile",
+        "provenance_axis",
+        "local_record_section",
+        "calibration_section",
+        "reconstruction_boundary",
+        "descent_gap",
+        "native_absorber_outcome"
+      ],
+      "track_role": "track_1_next_family"
+    },
+    {
+      "candidate_id": "taf8_domain_native_packet_execution",
+      "missing_requirements": [
+        "non_rank_source_law_family",
+        "source_variables_declared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "respects_t541_wait_state",
+        "domain_native_taf8_packet_in_hand"
+      ],
+      "next_packet": "none",
+      "outcome": "PAUSED_TAF8_WAITING_FOR_DOMAIN_NATIVE_PACKET",
+      "predeclared_falsifier": "Reject unless the packet is domain-native and clears the T541 nonidentity, typed-gap, preservation, and absorber burdens.",
+      "reason": "T541 says to use the gate only when a real domain-native packet exists.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "future_domain_native_packet"
+      ],
+      "track_role": "taf8_waiting"
+    },
+    {
+      "candidate_id": "descent_obstruction_resolution_family_replay",
+      "missing_requirements": [
+        "new_after_t539_retirement",
+        "non_rank_source_law_family",
+        "executable_next_packet_specific",
+        "consumes_t539_retirement",
+        "no_retired_t539_family_replay"
+      ],
+      "next_packet": "none",
+      "outcome": "REJECTED_RETIRED_T539_ROUTE",
+      "predeclared_falsifier": "Already failed: T539 found only a programmable scalar rank channel.",
+      "reason": "T539 retired this route as a programmable scalar rank channel.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "resolution_depth",
+        "compatible_local_sections"
+      ],
+      "track_role": "retired"
+    },
+    {
+      "candidate_id": "stabilization_certificate_filtration_family",
+      "missing_requirements": [
+        "non_rank_source_law_family",
+        "executable_next_packet_specific",
+        "bridge_to_taf8_or_taf11_burdens"
+      ],
+      "next_packet": "none",
+      "outcome": "REVIEW_ONLY",
+      "predeclared_falsifier": "Reject if certificate equivalence is underdeclared, if the family reduces to endpoint-window separation, or if filtration levels are tuned from target outcomes.",
+      "reason": "The candidate is useful context but lacks one or more T542 execution requirements.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "record_token",
+        "stabilization_certificate",
+        "filtration_level",
+        "persistence_window"
+      ],
+      "track_role": "underdeclared_or_feeder"
+    },
+    {
+      "candidate_id": "observerse_protocol_stack_ablation_family",
+      "missing_requirements": [
+        "executable_next_packet_specific",
+        "bridge_to_taf8_or_taf11_burdens"
+      ],
+      "next_packet": "none",
+      "outcome": "REVIEW_ONLY",
+      "predeclared_falsifier": "Reject if layers are post-hoc, if ablations do not have predicted collapse modes, or if the stack merely explains away prior S1 negatives.",
+      "reason": "The candidate is useful context but lacks one or more T542 execution requirements.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "issuance_layer",
+        "access_control_layer",
+        "admissibility_layer",
+        "provenance_layer",
+        "governance_layer"
+      ],
+      "track_role": "underdeclared_or_feeder"
+    },
+    {
+      "candidate_id": "ordering_fraction_target_refit_family",
+      "missing_requirements": [
+        "finality_native",
+        "new_after_t539_retirement",
+        "non_rank_source_law_family",
+        "independent_naturality",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "bridge_to_taf8_or_taf11_burdens",
+        "consumes_t539_retirement",
+        "no_target_or_lorentzian_import"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_TARGET_IMPORT",
+      "predeclared_falsifier": "Reject because target matching chooses the law.",
+      "reason": "The candidate chooses the law from target statistics or Lorentzian data.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "target_ordering_fraction",
+        "posthoc_relation_band"
+      ],
+      "track_role": "blocked"
+    },
+    {
+      "candidate_id": "taf12_real_packet_wait_family",
+      "missing_requirements": [
+        "finality_native",
+        "non_rank_source_law_family",
+        "source_variables_declared",
+        "independent_naturality",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "hostile_controls_named",
+        "bridge_to_taf8_or_taf11_burdens",
+        "not_blocked_on_real_data_packet",
+        "track_2_does_not_replace_track_1"
+      ],
+      "next_packet": "none",
+      "outcome": "PAUSED_TRACK_2",
+      "predeclared_falsifier": "Reject as a Track-1 replacement unless a real TAF10/TAF12 packet exists.",
+      "reason": "No real data-bearing packet is in hand, and Track 2 cannot replace Track 1.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "future_full_stack_profile",
+        "future_noncompletion_witness"
+      ],
+      "track_role": "track_2_waiting"
+    },
+    {
+      "candidate_id": "s1_claim_or_public_posture_shortcut",
+      "missing_requirements": [
+        "finality_native",
+        "new_after_t539_retirement",
+        "non_rank_source_law_family",
+        "source_variables_declared",
+        "independent_naturality",
+        "predeclared_falsifier",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "hostile_controls_named",
+        "bridge_to_taf8_or_taf11_burdens",
+        "consumes_t539_retirement",
+        "respects_t541_wait_state",
+        "no_claim_canon_public_or_external_movement"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "predeclared_falsifier": "Blocked by governance.",
+      "reason": "A router cannot move claims, canon, public posture, or external state.",
+      "selected_for_next_execution": false,
+      "source_variables": [],
+      "track_role": "forbidden"
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T539 is consumed as retiring the current descent-obstruction resolution family."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T541 is consumed as leaving TAF8 waiting for a real domain-native packet."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Exactly one T542 successor is selected: aprd_reconstruction_boundary_descent_family."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "TAF8 immediate execution, retired-family replay, target import, Track-2 replacement, and governance shortcuts are blocked or paused: taf8_domain_native_packet_execution, descent_obstruction_resolution_family_replay, ordering_fraction_target_refit_family, taf12_real_packet_wait_family, s1_claim_or_public_posture_shortcut."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "APRD / reconstruction-boundary descent is the best next Track-1 packet because it uses access, provenance, and descent burdens directly rather than scalar rank, while still feeding the TAF8 shadow-protection question."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T542 is work selection and source-family scoping only; it leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "hostile_controls": [
+    {
+      "blocks_candidate_ids": [
+        "descent_obstruction_resolution_family_replay"
+      ],
+      "control_id": "t539_retired_family_control",
+      "reason": "The descent-obstruction resolution family remains retired unless a genuinely non-rank generator is supplied."
+    },
+    {
+      "blocks_candidate_ids": [
+        "taf8_domain_native_packet_execution"
+      ],
+      "control_id": "t541_taf8_wait_state_control",
+      "reason": "T541's gate is executable only when a real domain-native packet is available."
+    },
+    {
+      "blocks_candidate_ids": [
+        "descent_obstruction_resolution_family_replay",
+        "stabilization_certificate_filtration_family"
+      ],
+      "control_id": "no_scalar_rank_proxy_control",
+      "reason": "The next TAF11 successor must not be another scalar rank or filtration proxy."
+    },
+    {
+      "blocks_candidate_ids": [
+        "ordering_fraction_target_refit_family"
+      ],
+      "control_id": "target_import_control",
+      "reason": "A source law must be chosen before target statistics or Lorentzian data are read."
+    },
+    {
+      "blocks_candidate_ids": [
+        "taf12_real_packet_wait_family"
+      ],
+      "control_id": "track_2_replacement_control",
+      "reason": "A future data-bearing packet may help, but it cannot replace Track 1 now."
+    },
+    {
+      "blocks_candidate_ids": [
+        "s1_claim_or_public_posture_shortcut"
+      ],
+      "control_id": "governance_posture_control",
+      "reason": "Routers do not move claims, canon, public posture, or external state."
+    }
+  ],
+  "not_claimed": "T542 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a post-retirement source-law work-selection router only.",
+  "recommended_next": "Run t543_aprd_reconstruction_boundary_descent_packet. It should define APRD as an access/provenance reconstruction-boundary object, test whether it reproduces the T19, T66, and T51/T58-style projection/descent burdens without a scalar rank proxy, and reject if target statistics or Lorentzian coordinates are needed to choose the relation.",
+  "selected_family_ids": [
+    "aprd_reconstruction_boundary_descent_family"
+  ],
+  "source_t539_family_status": "RETIRED_CURRENT_ROUTE_REQUIRES_NEW_SOURCE_LAW_FAMILY",
+  "source_t539_verdict": "descent_obstruction_family_retired_programmable_rank_generator",
+  "source_t541_taf8_status": "EXECUTABLE_PACKET_SHAPE_BUILT_THEOREM_BURDEN_OPEN",
+  "source_t541_verdict": "T541_NONIDENTITY_WITNESS_PACKET_BUILT_REVIEW_ONLY",
+  "taf11_update": "TAF11 receives a new non-rank successor route: APRD / reconstruction-boundary descent. The retired T539 route stays retired.",
+  "taf8_update": "TAF8 remains open but waiting. T541 supplies the review gate; T542 does not run TAF8 because no real domain-native packet is in hand.",
+  "verdict": "taf11_post_retirement_router_selected_aprd_descent_packet"
+}

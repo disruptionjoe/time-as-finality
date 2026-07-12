@@ -1,0 +1,663 @@
+{
+  "artifact": "T533-cr-surplus-starter-packet-classifier-v0.1",
+  "verdict": "CR_SURPLUS_STARTER_CLASSIFIER_BUILT_REVIEW_ONLY_NO_SUCCESS",
+  "sources": {
+    "open_problem": "open-problems/region-indexed-capability-discriminator.md",
+    "t500": "results/T500-competency-resource-permission-stack-gate-v0.1-results.md",
+    "t529": "results/T529-competency-surplus-admission-gate-v0.1-results.md"
+  },
+  "stack_layers": [
+    "full_competency_profile",
+    "resource_profile",
+    "permission_profile",
+    "provenance_profile"
+  ],
+  "reading": "Post-T529 C(R) surplus requires more than flat simple statistics and more than a completed resource account. A future packet must match the full competency, resource, permission, and provenance profiles while supplying an independent noncompletion witness for a capability that is not merely another task-success coordinate. T533 makes that burden reproducible as a classifier over packet shapes.",
+  "honest_ceiling": "T533 is a starter classifier and review gate only. It does not instantiate a successful C(R) surplus packet, does not prove a region-indexed discriminator, does not prove surplus over competency/resource completion, and does not move claim status, Canon Index tiers, canon verdicts, roadmap, README, North Star, public posture, hard policy, external publication, or cross-repo truth.",
+  "absorber_floor": {
+    "t500_verdict": "COMPETENCY_RESOURCE_PERMISSION_STACK_BUILT_NO_RESIDUAL_AFTER_FULL_STACK",
+    "t500_current_full_stack_absorbed": true,
+    "t500_current_residual_survives_full_stack": false,
+    "t500_synthetic_residual_review_only": true,
+    "t529_verdict": "COMPETENCY_SURPLUS_GATE_BUILT_REVIEW_ONLY",
+    "t529_synthetic_future_target_admitted": true,
+    "t529_current_success": false,
+    "t529_claim_movement": false,
+    "t529_canon_or_public_posture_movement": false
+  },
+  "packets": [
+    {
+      "packet_id": "simple_statistic_flatness_packet",
+      "description": "Flat simple observed statistics with no full-stack match.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": null,
+      "resource": null,
+      "permission": null,
+      "provenance": null,
+      "witness": null,
+      "uses_simple_observed_statistic": true,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "full_profile_equivalent_task_success_packet",
+      "description": "A packet whose alleged residual is another task-success coordinate.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": {
+        "layer": "full_competency_profile",
+        "left_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "right_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "certificate_source": "synthetic_exact_full_competency_profile_match_certificate"
+      },
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": {
+        "layer": "permission_profile",
+        "left_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "right_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "certificate_source": "synthetic_exact_permission_profile_match_certificate"
+      },
+      "provenance": {
+        "layer": "provenance_profile",
+        "left_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "right_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "certificate_source": "synthetic_exact_provenance_profile_match_certificate"
+      },
+      "witness": {
+        "witness_id": "task_success_coordinate",
+        "capability_kind": "task_success_coordinate",
+        "left_value": "task_pass",
+        "right_value": "task_fail",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": false,
+        "not_task_success_coordinate": false,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": true,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "declared_only_completion_packet",
+      "description": "A packet declaring full-stack equality without reproducible certificates.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": null,
+      "resource": null,
+      "permission": null,
+      "provenance": null,
+      "witness": {
+        "witness_id": "synthetic_non_task_success_noncompletion_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "completion_blocked",
+        "right_value": "completion_available",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": true,
+        "not_task_success_coordinate": true,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": true,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "resource_only_completion_packet",
+      "description": "A resource-matched packet omitting competency, permission, and provenance completion.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": null,
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": null,
+      "provenance": null,
+      "witness": {
+        "witness_id": "synthetic_non_task_success_noncompletion_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "completion_blocked",
+        "right_value": "completion_available",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": true,
+        "not_task_success_coordinate": true,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "unmatched_permission_control_packet",
+      "description": "A nominal packet whose permission profiles do not match.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": {
+        "layer": "full_competency_profile",
+        "left_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "right_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "certificate_source": "synthetic_exact_full_competency_profile_match_certificate"
+      },
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": {
+        "layer": "permission_profile",
+        "left_profile": [
+          "read=matched",
+          "write=left_only"
+        ],
+        "right_profile": [
+          "read=matched",
+          "write=right_only"
+        ],
+        "certificate_source": "synthetic_unmatched_permission_profile_control"
+      },
+      "provenance": {
+        "layer": "provenance_profile",
+        "left_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "right_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "certificate_source": "synthetic_exact_provenance_profile_match_certificate"
+      },
+      "witness": {
+        "witness_id": "synthetic_non_task_success_noncompletion_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "completion_blocked",
+        "right_value": "completion_available",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": true,
+        "not_task_success_coordinate": true,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "post_hoc_noncompletion_packet",
+      "description": "A full-stack-matched packet with a split but no independent witness.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": {
+        "layer": "full_competency_profile",
+        "left_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "right_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "certificate_source": "synthetic_exact_full_competency_profile_match_certificate"
+      },
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": {
+        "layer": "permission_profile",
+        "left_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "right_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "certificate_source": "synthetic_exact_permission_profile_match_certificate"
+      },
+      "provenance": {
+        "layer": "provenance_profile",
+        "left_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "right_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "certificate_source": "synthetic_exact_provenance_profile_match_certificate"
+      },
+      "witness": {
+        "witness_id": "post_hoc_hidden_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "blocked",
+        "right_value": "available",
+        "predeclared": false,
+        "domain_native": true,
+        "independent_from_stack_profiles": false,
+        "not_task_success_coordinate": true,
+        "not_completion_field": false
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "synthetic_future_noncompletion_review_target",
+      "description": "A future-target shape with exact full-stack profile matches and an independent non-task-success noncompletion witness.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": {
+        "layer": "full_competency_profile",
+        "left_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "right_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "certificate_source": "synthetic_exact_full_competency_profile_match_certificate"
+      },
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": {
+        "layer": "permission_profile",
+        "left_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "right_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "certificate_source": "synthetic_exact_permission_profile_match_certificate"
+      },
+      "provenance": {
+        "layer": "provenance_profile",
+        "left_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "right_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "certificate_source": "synthetic_exact_provenance_profile_match_certificate"
+      },
+      "witness": {
+        "witness_id": "synthetic_non_task_success_noncompletion_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "completion_blocked",
+        "right_value": "completion_available",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": true,
+        "not_task_success_coordinate": true,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": false,
+      "requests_claim_or_canon_movement": false,
+      "requests_public_or_cross_repo_movement": false
+    },
+    {
+      "packet_id": "claim_or_public_posture_shortcut",
+      "description": "A packet asking the classifier to move claims or public posture.",
+      "fixed_region_menu_task_context": true,
+      "checks_t500_t529_floor": true,
+      "competency": {
+        "layer": "full_competency_profile",
+        "left_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "right_profile": [
+          "reconcile=1",
+          "revise=1",
+          "postdict=1",
+          "recover=1"
+        ],
+        "certificate_source": "synthetic_exact_full_competency_profile_match_certificate"
+      },
+      "resource": {
+        "layer": "resource_profile",
+        "left_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "right_profile": [
+          "energy_budget=matched",
+          "reference_access=matched",
+          "conversion_order=matched"
+        ],
+        "certificate_source": "synthetic_exact_resource_profile_match_certificate"
+      },
+      "permission": {
+        "layer": "permission_profile",
+        "left_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "right_profile": [
+          "read=matched",
+          "write=matched",
+          "revise=matched",
+          "boundary=matched"
+        ],
+        "certificate_source": "synthetic_exact_permission_profile_match_certificate"
+      },
+      "provenance": {
+        "layer": "provenance_profile",
+        "left_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "right_profile": [
+          "raw_log=matched",
+          "source_chain=matched",
+          "calibration=matched"
+        ],
+        "certificate_source": "synthetic_exact_provenance_profile_match_certificate"
+      },
+      "witness": {
+        "witness_id": "synthetic_non_task_success_noncompletion_axis",
+        "capability_kind": "non_task_success_operation_availability",
+        "left_value": "completion_blocked",
+        "right_value": "completion_available",
+        "predeclared": true,
+        "domain_native": true,
+        "independent_from_stack_profiles": true,
+        "not_task_success_coordinate": true,
+        "not_completion_field": true
+      },
+      "uses_simple_observed_statistic": false,
+      "declares_match_without_certificate": false,
+      "full_profile_equivalent": false,
+      "claims_current_success": true,
+      "requests_claim_or_canon_movement": true,
+      "requests_public_or_cross_repo_movement": true
+    }
+  ],
+  "classifications": [
+    {
+      "packet_id": "simple_statistic_flatness_packet",
+      "admitted": false,
+      "label": "REJECTED_SIMPLE_STATISTIC_NOT_FULL_STACK_SURPLUS",
+      "action": "reject",
+      "stack_complete": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "full_competency_profile",
+        "resource_profile",
+        "permission_profile",
+        "provenance_profile"
+      ],
+      "reason": "Flat simple statistics are not surplus over the completed profile stack."
+    },
+    {
+      "packet_id": "full_profile_equivalent_task_success_packet",
+      "admitted": false,
+      "label": "ABSORBED_FULL_PROFILE_EQUIVALENT_TASK_SUCCESS_COORDINATE",
+      "action": "absorb",
+      "stack_complete": true,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "reason": "A task-success coordinate is already contained in the full competency profile."
+    },
+    {
+      "packet_id": "declared_only_completion_packet",
+      "admitted": false,
+      "label": "REJECTED_DECLARED_ONLY_NO_REPRODUCIBLE_CERTIFICATES",
+      "action": "reject",
+      "stack_complete": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "full_competency_profile",
+        "resource_profile",
+        "permission_profile",
+        "provenance_profile"
+      ],
+      "reason": "Declared equality without exact profile certificates is not a matched-stack packet."
+    },
+    {
+      "packet_id": "resource_only_completion_packet",
+      "admitted": false,
+      "label": "REJECTED_RESOURCE_ONLY_INCOMPLETE_COMPLETION_STACK",
+      "action": "reject",
+      "stack_complete": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "full_competency_profile",
+        "permission_profile",
+        "provenance_profile"
+      ],
+      "reason": "Every competency, resource, permission, and provenance profile must match exactly."
+    },
+    {
+      "packet_id": "unmatched_permission_control_packet",
+      "admitted": false,
+      "label": "REJECTED_INCOMPLETE_COMPLETION_STACK",
+      "action": "reject",
+      "stack_complete": false,
+      "residual_survives_stack": false,
+      "missing_layers": [
+        "permission_profile"
+      ],
+      "reason": "Every competency, resource, permission, and provenance profile must match exactly."
+    },
+    {
+      "packet_id": "post_hoc_noncompletion_packet",
+      "admitted": false,
+      "label": "REJECTED_NONCOMPLETION_WITNESS_NOT_INDEPENDENT",
+      "action": "reject",
+      "stack_complete": true,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "reason": "The witness must be predeclared, domain-native, independent from stack profiles, and not a completion field."
+    },
+    {
+      "packet_id": "synthetic_future_noncompletion_review_target",
+      "admitted": true,
+      "label": "ADMITTED_SYNTHETIC_FUTURE_REVIEW_TARGET_NO_SUCCESS",
+      "action": "review_only",
+      "stack_complete": true,
+      "residual_survives_stack": true,
+      "missing_layers": [],
+      "reason": "The packet shape clears the starter screen, but T533 supplies no real packet and no C(R) success."
+    },
+    {
+      "packet_id": "claim_or_public_posture_shortcut",
+      "admitted": false,
+      "label": "BLOCKED_GOVERNANCE_OR_POSTURE_SHORTCUT",
+      "action": "stop",
+      "stack_complete": true,
+      "residual_survives_stack": false,
+      "missing_layers": [],
+      "reason": "T533 cannot move claims, canon, public posture, external publication, or cross-repo truth."
+    }
+  ],
+  "claim_table": [
+    {
+      "claim": "T500 and T529 floors remain review-only and report no current C(R) success.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Read directly from t500.run() and t529.run()."
+    },
+    {
+      "claim": "Simple-statistic, declared-only, full-profile-equivalent, and resource-only packets fail this screen.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Deterministic classifier labels over built-in negative controls."
+    },
+    {
+      "claim": "The synthetic future packet is admissible only as review-only and not as current success.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Deterministic classifier label and overall flags."
+    },
+    {
+      "claim": "This classifier is the right starter screen for TAF2 after T529.",
+      "status": "ARGUED",
+      "confidence": "medium",
+      "basis": "It operationalizes the T500/T529 burdens but does not test a real domain packet."
+    }
+  ],
+  "overall": {
+    "admitted_packet_ids": [
+      "synthetic_future_noncompletion_review_target"
+    ],
+    "only_synthetic_future_target_admitted": true,
+    "current_c_r_success": false,
+    "surplus_over_full_stack_proved": false,
+    "review_target_only": true,
+    "claim_movement": false,
+    "canon_or_public_posture_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "recommended_next": "Use T533 as the first post-T529 TAF2 starter screen. A later run may replace the synthetic future target with a real domain packet only if exact full-stack profile certificates and an independent noncompletion witness are supplied before pair selection."
+}

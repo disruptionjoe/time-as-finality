@@ -20,18 +20,18 @@ from statistics import mean
 
 
 ITEMS = {
-    "TAF1": {
-        "title": "Finality-native ordering-fraction measure law",
+    "TAF9": {
+        "title": "New finality-domain law with independent comparability density",
         "why": (
-            "T526 showed the repaired S1 suite is passable by an external law; "
-            "T528/T530/T531 isolate the missing native ordering-fraction law."
+            "T532 found no cleared law candidate; the next S1 swing must bring "
+            "a new source law or stop the finite-generator route."
         ),
     },
-    "TAF2": {
-        "title": "C(R) surplus over competency and resource completion",
+    "TAF10": {
+        "title": "Real C(R) surplus packet replacing the T533 synthetic target",
         "why": (
-            "The bounded-region capability object must show surplus over full "
-            "competency, resource, permission, and provenance profiles."
+            "T533 admits only a synthetic future shape; the next C(R) swing must "
+            "supply a real full-stack-matched noncompletion witness."
         ),
     },
     "TAF3": {
@@ -81,79 +81,79 @@ ITEMS = {
 
 BALLOTS = {
     "orthodox_professor": [
-        "TAF1",
-        "TAF2",
+        "TAF9",
+        "TAF10",
+        "TAF8",
         "TAF3",
         "TAF4",
         "TAF6",
-        "TAF8",
         "TAF5",
         "TAF7",
     ],
     "heterodox_rigorous_professor": [
-        "TAF1",
+        "TAF9",
         "TAF3",
-        "TAF2",
+        "TAF10",
+        "TAF8",
         "TAF4",
         "TAF5",
-        "TAF8",
         "TAF6",
         "TAF7",
     ],
     "commercial_scientist": [
-        "TAF1",
-        "TAF2",
+        "TAF9",
+        "TAF10",
         "TAF3",
+        "TAF8",
         "TAF7",
         "TAF6",
         "TAF4",
-        "TAF8",
         "TAF5",
     ],
     "philosopher_of_science": [
-        "TAF1",
-        "TAF2",
-        "TAF3",
+        "TAF9",
+        "TAF10",
         "TAF8",
+        "TAF3",
         "TAF4",
         "TAF6",
         "TAF5",
         "TAF7",
     ],
     "wild_frontier_scientist": [
-        "TAF1",
+        "TAF9",
         "TAF4",
         "TAF3",
-        "TAF2",
+        "TAF10",
+        "TAF8",
         "TAF5",
         "TAF6",
-        "TAF8",
         "TAF7",
     ],
     "causal_set_lorentzian": [
-        "TAF1",
+        "TAF9",
         "TAF4",
         "TAF3",
-        "TAF2",
-        "TAF5",
+        "TAF10",
         "TAF8",
+        "TAF5",
         "TAF6",
         "TAF7",
     ],
     "quantum_information_decoherence": [
         "TAF6",
-        "TAF2",
+        "TAF10",
         "TAF3",
-        "TAF1",
+        "TAF9",
         "TAF7",
         "TAF8",
         "TAF4",
         "TAF5",
     ],
     "distributed_systems_consensus": [
-        "TAF2",
+        "TAF10",
         "TAF3",
-        "TAF1",
+        "TAF9",
         "TAF8",
         "TAF7",
         "TAF6",
@@ -161,9 +161,9 @@ BALLOTS = {
         "TAF4",
     ],
     "resource_theory_thermodynamics": [
-        "TAF2",
+        "TAF10",
         "TAF3",
-        "TAF1",
+        "TAF9",
         "TAF6",
         "TAF8",
         "TAF4",
@@ -171,20 +171,20 @@ BALLOTS = {
         "TAF7",
     ],
     "category_sheaf_obstruction": [
-        "TAF1",
+        "TAF9",
         "TAF4",
         "TAF8",
         "TAF5",
         "TAF3",
-        "TAF2",
+        "TAF10",
         "TAF6",
         "TAF7",
     ],
     "complexity_cryptography": [
         "TAF8",
-        "TAF2",
+        "TAF10",
         "TAF3",
-        "TAF1",
+        "TAF9",
         "TAF6",
         "TAF4",
         "TAF5",
@@ -192,8 +192,8 @@ BALLOTS = {
     ],
     "detector_metrology_provenance": [
         "TAF7",
-        "TAF2",
-        "TAF1",
+        "TAF10",
+        "TAF9",
         "TAF3",
         "TAF6",
         "TAF8",
@@ -303,4 +303,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

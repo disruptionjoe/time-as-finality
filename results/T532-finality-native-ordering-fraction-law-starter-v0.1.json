@@ -1,0 +1,176 @@
+{
+  "artifact": "T532-finality-native-ordering-fraction-law-starter-v0.1",
+  "source_t531_verdict": "ordering_fraction_measure_law_contract_built_review_only",
+  "source_t531_admitted_packet_ids": [
+    "predeclared_finality_native_ordering_measure_law_contract"
+  ],
+  "source_t530_primary_failure_axis": "ordering_fraction",
+  "source_t528_pass_count": 25,
+  "source_t528_sample_count": 32,
+  "source_t528_ordering_failure_count": 6,
+  "candidate_decisions": [
+    {
+      "law_id": "two_channel_receipt_product_order",
+      "classification": "negative_independent_naturality_candidate",
+      "action": "preserve_negative_result",
+      "independent_naturality_candidate": true,
+      "clears_t531_contract_terms": true,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "deterministic_evidence": "T528 executed this law shape: 25/32 samples passed, with 6 failed samples missing the ordering-fraction band.",
+      "missing_requirements": [],
+      "reason": "The law is independently motivated, but the executed T528 packet passed only 25/32 samples and had 6 ordering-fraction failures."
+    },
+    {
+      "law_id": "three_channel_receipt_product_order",
+      "classification": "negative_expected_density_mismatch",
+      "action": "preserve_negative_result",
+      "independent_naturality_candidate": true,
+      "clears_t531_contract_terms": true,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": {
+        "fraction": "1/4",
+        "float": 0.25
+      },
+      "deterministic_evidence": "Exchangeable receipt-product calculation gives expected ordering fraction 1/4.",
+      "missing_requirements": [],
+      "reason": "The law is independently motivated, but its exchangeable receipt model has expected ordering fraction 1/4, not the T530 primary ordering-fraction target neighborhood."
+    },
+    {
+      "law_id": "external_lorentzian_uv_reference_law",
+      "classification": "rejected_target_import",
+      "action": "reject",
+      "independent_naturality_candidate": false,
+      "clears_t531_contract_terms": false,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": null,
+      "deterministic_evidence": "T526 identifies this as an external Lorentzian calibration law.",
+      "missing_requirements": [
+        "finality_native_observable",
+        "no_lorentzian_reference_import"
+      ],
+      "reason": "The candidate imports the target Lorentzian reference law."
+    },
+    {
+      "law_id": "t528_screen_conditioned_receipt_mixture",
+      "classification": "rejected_screen_conditioned_law",
+      "action": "reject",
+      "independent_naturality_candidate": false,
+      "clears_t531_contract_terms": false,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": null,
+      "deterministic_evidence": "The candidate is defined from the repaired diagnostic screen.",
+      "missing_requirements": [
+        "law_declared_before_sampling",
+        "independent_naturality_or_neighbor_theory",
+        "hostile_controls_named",
+        "hostile_controls_independent_of_screen",
+        "sample_family_predeclared",
+        "no_t528_screen_conditioning"
+      ],
+      "reason": "The candidate is tuned from the diagnostic it must clear."
+    },
+    {
+      "law_id": "posthoc_repaired_band_fit",
+      "classification": "rejected_post_hoc_band_fit",
+      "action": "reject",
+      "independent_naturality_candidate": false,
+      "clears_t531_contract_terms": false,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": null,
+      "deterministic_evidence": "The candidate is defined from the repaired diagnostic screen.",
+      "missing_requirements": [
+        "law_declared_before_sampling",
+        "finality_native_observable",
+        "independent_naturality_or_neighbor_theory",
+        "hostile_controls_named",
+        "hostile_controls_independent_of_screen",
+        "sample_family_predeclared",
+        "later_lorentzian_locality_covariance_embedding_burdens_named",
+        "no_t528_screen_conditioning",
+        "no_post_hoc_band_fit"
+      ],
+      "reason": "The candidate defines the law from the repaired-screen band."
+    },
+    {
+      "law_id": "s1_promotion_from_starter_screen",
+      "classification": "blocked_governance_or_posture_shortcut",
+      "action": "stop",
+      "independent_naturality_candidate": false,
+      "clears_t531_contract_terms": false,
+      "clears_as_real_candidate": false,
+      "counts_as_s1_evidence": false,
+      "expected_ordering_fraction": null,
+      "deterministic_evidence": "The candidate requests forbidden posture movement.",
+      "missing_requirements": [
+        "no_s1_claim_canon_public_or_external_movement"
+      ],
+      "reason": "A starter router cannot move S1, claims, canon, public posture, or external state."
+    }
+  ],
+  "independent_naturality_candidate_ids": [
+    "two_channel_receipt_product_order",
+    "three_channel_receipt_product_order"
+  ],
+  "cleared_candidate_ids": [],
+  "rejected_or_negative_candidate_ids": [
+    "two_channel_receipt_product_order",
+    "three_channel_receipt_product_order",
+    "external_lorentzian_uv_reference_law",
+    "t528_screen_conditioned_receipt_mixture",
+    "posthoc_repaired_band_fit",
+    "s1_promotion_from_starter_screen"
+  ],
+  "verdict": "no_real_ordering_fraction_law_candidate_clears_starter_router",
+  "strongest_reading": "The first TAF1 starter screen distinguishes independently natural receipt-product laws from bad shortcuts, but none currently clears as a real finality-native ordering-fraction law. The two-channel receipt law is the only executed finality-native candidate, and T528/T530 already record its negative ordering-fraction evidence.",
+  "recommended_next": "A next swing should either predeclare a new finality-domain law with an independent reason for its comparability density, or stop the S1 finite-generator route until such a law exists. Do not tune from the T525/T528 screen and do not import the Lorentzian reference as the source law.",
+  "claim_labels": [
+    {
+      "label": "COMPUTED",
+      "status": "high",
+      "confidence": "high",
+      "text": "T531's admitted route is preserved and T530's primary failure axis remains ordering_fraction."
+    },
+    {
+      "label": "COMPUTED",
+      "status": "high",
+      "confidence": "high",
+      "text": "The executed two-channel receipt candidate preserves T528's negative result, including 6 failed samples on the ordering-fraction axis."
+    },
+    {
+      "label": "COMPUTED",
+      "status": "high",
+      "confidence": "high",
+      "text": "Target-import, screen-conditioned, post-hoc band-fit, and posture-movement candidates are rejected or blocked."
+    },
+    {
+      "label": "COMPUTED",
+      "status": "high",
+      "confidence": "high",
+      "text": "No candidate clears as a real finality-native ordering-fraction law candidate in this starter router: 0 cleared."
+    },
+    {
+      "label": "ARGUED",
+      "status": "medium",
+      "confidence": "medium",
+      "text": "Receipt-product laws are independently natural starter candidates because they are stated in local finality-receipt order data and are invariant under event relabeling and monotone receipt-rank renaming."
+    },
+    {
+      "label": "ARGUED",
+      "status": "medium",
+      "confidence": "medium",
+      "text": "Independent naturality is not enough for S1-facing progress; 2 independently natural starter candidates remain negative or review-only here."
+    }
+  ],
+  "s1_update": "S1 remains `requires_added_assumption`. T532 reports no real candidate clearing the T531 starter router.",
+  "claim_ledger_update": "No claim-ledger update is earned. T532 is a starter artifact with negative routing evidence only: no claim row, no S1 status movement, and no T223 reversal.",
+  "not_claimed": "T532 does not derive spacetime, prove manifoldlikeness, establish a finality-native sprinkling law, repair T528, reverse T223, promote S1, change claim status, change canon, change public posture, authorize external publication, or support cross-repo truth. It is only a starter router for T531 candidate law shapes."
+}

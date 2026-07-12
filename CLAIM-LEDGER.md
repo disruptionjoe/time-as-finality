@@ -15,6 +15,8 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
+**Coverage / staleness supersession (2026-07-12).** This note supersedes the 2026-07-11 coverage note below. The test registry (`TESTS.md`) is now at **T531**. T249-T255 are recorded below as S1 finite-colimit history; T521 is detector-manifest review infrastructure; T522 is registry hygiene; T523 is ledger-frontier declaration hygiene; T527 is Observerse review-only regression infrastructure; T524 is an S1 diagnostic-repair entry; T525 is an S1 repaired-suite entry; T526 is an S1 reference-law gap entry; T528 is S1 generator-preflight history; T529 is competency-surplus review-only admission infrastructure; T530 is T528 failure-routing / future-packet admission infrastructure; and T531 is a pre-execution ordering-fraction measure-law contract. T249-T255 and T521-T531 create no claim row, claim-status movement, Canon Index tier movement, canon verdict, S1 posture movement, T223 reversal, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The claim-ledger un-triaged frontier remains **T256-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. `COMPLEXITY-LEDGER.md` remains explicitly reconciled only through T138; it now carries a separate staleness note rather than inferring computational-status coverage for T139-T531. The remaining T256-T513 ratification pass and post-T138 complexity-ledger reconciliation pass are still due under the steward Ledger Reconciliation Trigger.
+
 **Coverage / staleness supersession (2026-07-11).** This note supersedes the 2026-07-10 coverage note below. The test registry (`TESTS.md`) is now at **T529**. T249-T255 are now recorded below as S1 finite-colimit history; T521 is detector-manifest review infrastructure, T522 is registry hygiene, T523 is ledger-frontier declaration hygiene, and T527 is Observerse review-only regression infrastructure; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, T526 is an S1 reference-law gap entry, T528 is S1 generator-preflight history, and T529 is competency-surplus review-only admission infrastructure. T249-T255 and T521-T529 create no claim row, claim-status movement, Canon Index tier movement, canon verdict, S1 posture movement, T223 reversal, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The claim-ledger un-triaged frontier remains **T256-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. `COMPLEXITY-LEDGER.md` remains explicitly reconciled only through T138; it now carries a separate staleness note rather than inferring computational-status coverage for T139-T529. The remaining T256-T513 ratification pass and post-T138 complexity-ledger reconciliation pass are still due under the steward Ledger Reconciliation Trigger.
 
 **Coverage / staleness supersession (2026-07-10).** This note supersedes the 2026-07-09 coverage note below. The test registry (`TESTS.md`) is now at **T526**. T521 is detector-manifest review infrastructure, T522 is registry hygiene, and T523 is ledger-frontier declaration hygiene; T524 is an S1 diagnostic-repair entry, T525 is an S1 repaired-suite entry, and T526 is an S1 reference-law gap entry, each creating no claim row, claim-status movement, canon verdict, or public-posture movement. T517-T519 are already recorded below as no-row DS-bridge prospecting. The un-triaged frontier remains **T249-T513**, while TWL (T514-T516), T517-T519, and T520 have already received the limited/no-row placements described below. The remaining T249-T513 ratification pass is still due under the steward Ledger Reconciliation Trigger.
@@ -3440,3 +3442,31 @@ public-posture movement.
   live burden is a predeclared finality-native generator, measure law, or
   continuum bridge with independent naturality support and all repaired-suite
   samples passing.
+
+### 2026-07-12 - Review-only frontier placement (T529-T531)
+
+User-directed coverage follow-up after T529-T531 landed in `TESTS.md`. This is
+ledger-frontier reconciliation, not a new research result. T529-T531 are placed
+as review-only / no-row infrastructure and create no claim-status movement,
+Canon Index tier movement, canon verdict movement, S1 posture movement, T223
+reversal, public-posture movement, external-publication implication, or
+cross-repo truth movement.
+
+- **T529 competency-surplus admission gate - no row.** The gate makes the
+  post-T493/T494 burden executable for future C(R) packets: current flat simple
+  statistics remain review-only, full-profile-equivalent packets are absorbed,
+  and only a synthetic future packet with a matched full competency profile plus
+  an independent noncompletion witness is admitted as a review target. No
+  current discriminator success is earned.
+- **T530 T528 generator failure router - no row.** The router preserves T528's
+  25/32 pass rate, identifies ordering fraction as the primary failure axis,
+  and admits only a future predeclared finality-native ordering-fraction
+  measure-law packet with independent naturality and hostile controls. It
+  supplies no S1 evidence, no T223 reversal, and no claim/canon movement.
+- **T531 ordering-fraction measure-law contract - no row.** The contract turns
+  T530's admitted future packet shape into a pre-execution admission contract.
+  It does not run a generator, derive a finality-native law, repair T528,
+  establish S1 evidence, reverse T223, or authorize posture movement. The next
+  substantive S1 burden remains an actual law/sample packet that clears the
+  contract without screen-conditioning, Lorentzian import, or missing-naturality
+  shortcuts.

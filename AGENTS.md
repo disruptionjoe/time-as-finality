@@ -45,3 +45,27 @@ The explore/exploit binary hides a THIRD mode:
 - Track 1 = the North Star, the repo's standing posture (unconditional; force-or-falsify the big thing).
 - Track 2 = one branch that formalizes byproducts under EXPLICITLY DECLARED postulates (the conditional-theorem form: "X given S" never asserts S). It reports UP; it does not change the posture.
 - A Track-1 win collapses the branch back into the North Star. The branch de-risks and produces results; it is never the objective.
+
+## Operating note: the construction fork (identify which construction, do not default)
+
+A discipline for any program built on a NON-STANDARD primitive (surfaced in the GU drive; transferable here).
+
+When a program is built on a non-standard primitive, many of its objects share a NAME with a standard-field
+object but are BUILT differently. Each such object is a fork: a standard/default construction and a
+program-native one. The rule is NOT "prefer the native construction" (that is just a silent default to the
+other side). The rule:
+1. IDENTIFY the fork -- notice when the object has two possible constructions.
+2. NAME which one you are using, and WHY -- state it in the work.
+3. STAY OPEN on which side the answer lives -- you do not know a priori; some forks resolve native, some
+   standard.
+4. A no-go / kill is only as strong as the construction it was derived in -- if you hit a wall, check whether
+   it survives in the OTHER construction. A default-construction wall may be an artifact; a native result may
+   fail to transfer.
+5. NEVER default silently, to either side.
+
+Settled forks are RESULTS (with the reason for the determined side), not a standing preference. Orchestrators:
+put a condensed fork table + this rule in every team/branch brief; require teams to state the construction they
+used for each load-bearing object; do not accept a reported kill until you know which construction it lives in.
+Full worked instance (9 GU objects, each fork determined-or-open):
+gu-formalization/GEOMETER-VS-PHYSICS-OBJECTS.md. Method observation:
+ai-epistemology/field-guide/branch-5-evolvability/observations/construction-fork-identify-not-default-2026-07-11.md.

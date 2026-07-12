@@ -11,21 +11,21 @@ Seed assessment: `attention/initial-council-assessment-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after Wave 1
-T532/T533 on 2026-07-12:
+Generated ranking from `attention/taf_priority_condorcet.py` after Wave 2
+T534/T535 on 2026-07-12:
 
-1. TAF9 - New finality-domain law with independent comparability density.
-   Why: T532 found no cleared law candidate; the next S1 swing must bring a new
-   source law or stop the finite-generator route.
-2. TAF10 - Real C(R) surplus packet replacing the T533 synthetic target.
-   Why: T533 admits only a synthetic future shape; the next C(R) swing must
-   supply a real full-stack-matched noncompletion witness.
+1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
+   Why: T534 paused the current S1 finite-generator route without falsifying the
+   North Star; the next move must seek a new directed source-law route.
+2. TAF8 - Cross-domain shadow-protection theorem target.
+   Why: the kappa and typed-gap catalogues suggest reusable structure, but
+   identity and independent-motivation burdens are still open.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: the C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
-4. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: the kappa and typed-gap catalogues suggest reusable structure, but
-   identity and independent-motivation burdens are still open.
+4. TAF12 - Data-bearing C(R) packet acquisition for TAF10.
+   Why: T535 found no real packet in hand; the branch waits for exact
+   full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
    Why: if a native finite law survives, test whether its objects descend toward
    causal-set or Lorentzian structure without coordinate import.
@@ -132,10 +132,10 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF9 | open, top priority | Can a new finality-domain law supply independent comparability density after T532 found no cleared candidate? | T532 completed. Two-channel receipt-product stays independently natural but negative; three-channel receipt-product has expected density 1/4; target import, screen conditioning, and band fitting reject. |
-| TAF10 | open | Can a real C(R) packet replace T533's synthetic future target with exact full-stack profile matches plus an independent non-task-success noncompletion witness? | T533 completed. Only the synthetic future target admits as review-only; no current C(R) success. |
-| TAF3 | open, blocked on TAF9 or TAF10 | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Started as a dependency lane in Wave 1; no law-derived menu claim is allowed yet. |
-| TAF4 | open, depends on TAF9 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532 found no cleared law. |
+| TAF11 | open, top priority | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T534 completed. `record_window_separation_order` is finality-domain native but density 1/3, not 1/2. Difficulty is not falsification; current finite-generator route pauses until a new law exists. |
+| TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
+| TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
+| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
@@ -143,16 +143,15 @@ Discipline:
 
 ## next_action
 
-When Joe opens the lane, route the next swing to TAF9:
+When Joe opens the lane, route the next swing to TAF11:
 
-Predeclare a new finality-domain law with an independent reason for its
-comparability density. It must not be the already-negative two-channel receipt
-product, the density-mismatched three-channel product, a Lorentzian u/v import,
-T528/T530 screen conditioning, or a post-hoc repaired-band fit. The swing should
-produce one deterministic test plus one writeup labeling COMPUTED vs ARGUED
-claims with confidence.
+Run a directed source-law reassessment that preserves the North Star and does
+not retreat to a quick byproduct. The swing should decide which source-law route
+remains live after the S1 finite-generator pause: a new finality-domain law
+family, a changed target statistic, a higher-level shadow-protection theorem,
+or a precise falsifier. It must not rerun the spent two-channel, three-channel,
+or record-window candidates, and it must not import Lorentzian coordinates or
+condition on the repaired S1 screen.
 
-If no credible new law can be predeclared, the correct move is a demotion or
-pause packet for the S1 finite-generator route, not another gate. TAF10 can run
-in parallel if a real domain packet exists, but TAF3 remains blocked until TAF9
-or TAF10 supplies a law or noncompletion target.
+TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
+until TAF11 supplies a law or TAF12 supplies a real noncompletion target.

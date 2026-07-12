@@ -1,0 +1,169 @@
+{
+  "artifact": "T534-new-finality-domain-law-pause-router-v0.1",
+  "source_t532_verdict": "no_real_ordering_fraction_law_candidate_clears_starter_router",
+  "source_t532_cleared_candidate_ids": [],
+  "excluded_law_ids": [
+    "two_channel_receipt_product_order",
+    "three_channel_receipt_product_order",
+    "external_lorentzian_uv_reference_law",
+    "t528_screen_conditioned_receipt_mixture",
+    "posthoc_repaired_band_fit"
+  ],
+  "candidate_menu_ids": [
+    "record_window_separation_order"
+  ],
+  "endpoint_patterns": [
+    {
+      "pattern_id": "endpoint_pattern_1",
+      "a_positions": [
+        1,
+        2
+      ],
+      "b_positions": [
+        3,
+        4
+      ],
+      "relation": "a_before_b"
+    },
+    {
+      "pattern_id": "endpoint_pattern_2",
+      "a_positions": [
+        1,
+        3
+      ],
+      "b_positions": [
+        2,
+        4
+      ],
+      "relation": "incomparable"
+    },
+    {
+      "pattern_id": "endpoint_pattern_3",
+      "a_positions": [
+        1,
+        4
+      ],
+      "b_positions": [
+        2,
+        3
+      ],
+      "relation": "incomparable"
+    },
+    {
+      "pattern_id": "endpoint_pattern_4",
+      "a_positions": [
+        2,
+        3
+      ],
+      "b_positions": [
+        1,
+        4
+      ],
+      "relation": "incomparable"
+    },
+    {
+      "pattern_id": "endpoint_pattern_5",
+      "a_positions": [
+        2,
+        4
+      ],
+      "b_positions": [
+        1,
+        3
+      ],
+      "relation": "incomparable"
+    },
+    {
+      "pattern_id": "endpoint_pattern_6",
+      "a_positions": [
+        3,
+        4
+      ],
+      "b_positions": [
+        1,
+        2
+      ],
+      "relation": "b_before_a"
+    }
+  ],
+  "exact_pair_pattern_count": 6,
+  "exact_comparable_pattern_count": 2,
+  "target_comparability_density": {
+    "fraction": "1/2",
+    "float": 0.5
+  },
+  "candidate_decisions": [
+    {
+      "law_id": "record_window_separation_order",
+      "outcome": "NARROWED",
+      "clears_source_law_gate": false,
+      "counts_as_s1_evidence": false,
+      "expected_comparability_density": {
+        "fraction": "1/3",
+        "float": 0.3333333333333333
+      },
+      "target_comparability_density": {
+        "fraction": "1/2",
+        "float": 0.5
+      },
+      "missing_requirements": [],
+      "reason": "The candidate is new and finality-domain native, but its exact comparability density is 1/3, not the target 1/2.",
+      "deterministic_evidence": "Exact endpoint-order enumeration for two finality windows gives 2/6 comparable patterns, so the expected comparability density is 1/3."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "control_id": "all_windows_overlap_control",
+      "comparability_density": {
+        "fraction": "0/1",
+        "float": 0.0
+      },
+      "clears_source_law_gate": false,
+      "reason": "If every record window overlaps, the law yields no comparabilities."
+    },
+    {
+      "control_id": "zero_duration_chain_control",
+      "comparability_density": {
+        "fraction": "1/1",
+        "float": 1.0
+      },
+      "clears_source_law_gate": false,
+      "reason": "If every window collapses to a point in one stream, the law collapses to a one-channel chain control."
+    }
+  ],
+  "cleared_candidate_ids": [],
+  "route_outcome": "PAUSE",
+  "verdict": "pause_s1_finite_generator_route_no_cleared_new_source_law",
+  "strongest_reading": "The record-window separation law is a genuine new finality-domain candidate, but its exact independent comparability density is 1/3, not the T532 target density 1/2. It narrows the search by showing that a natural finalization-window law does not rescue the S1 finite-generator route.",
+  "recommended_next": "Difficulty alone is not falsification. The North Star is not demoted because a source law is hard to find. But the S1 finite-generator route should pause until a new finality-domain source law exists with an independent comparability-density reason that clears the T531/T532 burden.",
+  "claim_labels": [
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "The T534 candidate menu excludes the T532-negative receipt products, Lorentzian target import, T528/T530 screen conditioning, and post-hoc band fitting."
+    },
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "The record-window separation law has exact endpoint-pattern density 2/6 = 1/3."
+    },
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "No new source law clears in T534: 0 cleared."
+    },
+    {
+      "label": "ARGUED",
+      "confidence": "medium",
+      "text": "The record-window separation law is finality-domain native because it uses only record opening and finalization endpoints, not target spacetime coordinates."
+    },
+    {
+      "label": "ARGUED",
+      "confidence": "medium",
+      "text": "Difficulty alone is not falsification. The North Star is not demoted because a source law is hard to find. But the S1 finite-generator route should pause until a new finality-domain source law exists with an independent comparability-density reason that clears the T531/T532 burden."
+    }
+  ],
+  "s1_update": "S1 remains `requires_added_assumption`. T534 supplies no cleared source law and no S1 evidence.",
+  "claim_ledger_update": "No claim-ledger update is earned. T534 is a TAF9 routing artifact only: no claim row, no S1 status movement, and no T223 reversal.",
+  "not_claimed": "T534 does not derive spacetime, prove manifoldlikeness, establish a finality-native sprinkling law, repair T528, reverse T223, promote S1, change claim status, change canon, change public posture, authorize external publication, or support cross-repo truth. It is a TAF9 source-law router only."
+}

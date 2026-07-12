@@ -1,0 +1,558 @@
+{
+  "artifact": "T535-real-taf10-packet-screen-v0.1",
+  "verdict": "NO_REAL_TAF10_PACKET_IN_HAND_PAUSE",
+  "t533_criteria_source": "T533-cr-surplus-starter-packet-classifier-v0.1",
+  "honest_ceiling": "T535 is a Track-2 screen only. It does not prove a C(R) success, does not replace the Track-1 source-law question, does not move claims, canon, roadmap, North Star, public posture, hard policy, external publication, or cross-repo truth.",
+  "exact_missing_field_if_none_clears": "a real data-bearing packet with reproducible exact-match certificates for full competency, resource, permission, and provenance profiles, plus a predeclared domain-native non-task-success noncompletion witness whose split is independent of those profiles and is not absorbed as a resource, competency, permission, provenance, joint-record, or completion field",
+  "source_floor": {
+    "t533_criteria_source": "T533-cr-surplus-starter-packet-classifier-v0.1",
+    "source_paths": {
+      "t407": "results/T407-region-capability-no-go-v0.1.json",
+      "t398": "results/T398-resource-profile-absorber-v0.1.json",
+      "t411": "results/T411-departed-record-capability-discriminator-v0.1.json",
+      "t412": "results/T412-separator-refactorization-gate-v0.1.json",
+      "t493": "results/T493-levin-competency-cr-absorber-gate-v0.1.json",
+      "t494": "results/T494-levin-fields-primary-source-absorber-gate-v0.1.json",
+      "t516": "results/T516-isotropic-shareability-closed-form-v0.1.json",
+      "t517": "results/T517-monogamy-wall-bft-threshold-v0.1.json",
+      "t519": "results/T519-quantum-darwinism-replication-invariant-gate-v0.1.json",
+      "t520": "results/T520-copy-law-single-use-key-absorber-screen-v0.1.json",
+      "t521": "results/T521-detector-manifest-template-gate-v0.1.json"
+    },
+    "source_artifacts": {
+      "t407": "T407-region-capability-no-go",
+      "t398": "T398-resource-profile-absorber-v0.1",
+      "t411": "T411-departed-record-capability-discriminator-v0.1",
+      "t412": "T412-separator-refactorization-gate-v0.1",
+      "t493": "T493-levin-competency-cr-absorber-gate-v0.1",
+      "t494": "T494-levin-fields-primary-source-absorber-gate-v0.1",
+      "t516": "T516-isotropic-shareability-closed-form-v0.1",
+      "t517": "T517-monogamy-wall-bft-threshold-v0.1",
+      "t519": "T519-quantum-darwinism-replication-invariant-gate-v0.1",
+      "t520": "T520-copy-law-single-use-key-absorber-screen-v0.1",
+      "t521": "T521-detector-manifest-template-gate-v0.1"
+    },
+    "source_verdicts": {
+      "t398": "absorbed_as_finite_product_resource_preorder: once C(R) profiles are admitted as resource states under the declared region/menu/task context, the anti-scalar and incomparability content is exactly a product resource-preorder fact; T407 remains translation residue / physical realization, not a promoted resource-theory residue",
+      "t412": "the global-correlation separator survives product-structure-preserving relabels, but arbitrary entangling refactorization localizes the datum into one factor; the fallback therefore needs an explicit factorization/coupling-preservation admissibility rule, not physical-boundary language",
+      "t493": "N16_COMPETENCY_GATE_BUILT_FULL_PROFILE_ABSORBS_SURPLUS_REVIEW_ONLY",
+      "t494": "PRIMARY_SOURCE_COMPETENCY_ABSORBER_BUILT_NO_CLAIM_MOVEMENT",
+      "t520": "COPY_LAW_SINGLE_USE_KEY_ABSORBED_BY_RESOURCE_MONOTONE",
+      "t521": "DETECTOR_MANIFEST_TEMPLATE_GATE_BUILT_REVIEW_ONLY"
+    },
+    "computed_source_flags": {
+      "t398_capability_factors_through_resource_profile": true,
+      "t398_same_resource_capability_splits": [],
+      "t493_full_profile_absorbs_current_c_r": true,
+      "t494_primary_source_scope_checked": true,
+      "t520_resource_reproduces_all_scenarios": true,
+      "t521_template_has_no_data_boundary": true,
+      "t521_has_observed_value_commitment": false
+    },
+    "t533_absorber_floor": {
+      "t500_verdict": "COMPETENCY_RESOURCE_PERMISSION_STACK_BUILT_NO_RESIDUAL_AFTER_FULL_STACK",
+      "t500_current_full_stack_absorbed": true,
+      "t500_current_residual_survives_full_stack": false,
+      "t500_synthetic_residual_review_only": true,
+      "t529_verdict": "COMPETENCY_SURPLUS_GATE_BUILT_REVIEW_ONLY",
+      "t529_synthetic_future_target_admitted": true,
+      "t529_current_success": false,
+      "t529_claim_movement": false,
+      "t529_canon_or_public_posture_movement": false
+    }
+  },
+  "candidate_inputs": [
+    {
+      "candidate_id": "t407_t398_t493_t494_current_cr_family",
+      "source_family": "T407/T398/T493/T494 current C(R) family",
+      "source_keys": [
+        "t407",
+        "t398",
+        "t493",
+        "t494"
+      ],
+      "source_basis": "T407 realizes flat declared statistics with capability-profile spread; T398 and T493/T494 absorb the current reading once resource and full competency profiles are admitted.",
+      "t533_packet": {
+        "packet_id": "t407_t398_t493_t494_current_cr_family",
+        "description": "Current C(R) family reread as a TAF10 surplus packet.",
+        "fixed_region_menu_task_context": true,
+        "checks_t500_t529_floor": true,
+        "competency": {
+          "layer": "full_competency_profile",
+          "left_profile": [
+            "undo_cross=pass",
+            "class_readout=2/3"
+          ],
+          "right_profile": [
+            "undo_cross=fail",
+            "class_readout=1"
+          ],
+          "certificate_source": "existing_source_full_competency_profile_mismatch"
+        },
+        "resource": {
+          "layer": "resource_profile",
+          "left_profile": [
+            "U2_R0"
+          ],
+          "right_profile": [
+            "U0_R3"
+          ],
+          "certificate_source": "existing_source_resource_profile_mismatch"
+        },
+        "permission": {
+          "layer": "permission_profile",
+          "left_profile": [
+            "declared_region=R",
+            "declared_menu=fixed",
+            "boundary_policy=fixed"
+          ],
+          "right_profile": [
+            "declared_region=R",
+            "declared_menu=fixed",
+            "boundary_policy=fixed"
+          ],
+          "certificate_source": "existing_source_exact_permission_profile_match"
+        },
+        "provenance": {
+          "layer": "provenance_profile",
+          "left_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "right_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "certificate_source": "existing_source_exact_provenance_profile_match"
+        },
+        "witness": {
+          "witness_id": "t407_capability_profile_split",
+          "capability_kind": "task_success_coordinate",
+          "left_value": "undo_cross_pass",
+          "right_value": "undo_cross_fail",
+          "predeclared": true,
+          "domain_native": true,
+          "independent_from_stack_profiles": false,
+          "not_task_success_coordinate": false,
+          "not_completion_field": true
+        },
+        "uses_simple_observed_statistic": false,
+        "declares_match_without_certificate": false,
+        "full_profile_equivalent": false,
+        "claims_current_success": false,
+        "requests_claim_or_canon_movement": false,
+        "requests_public_or_cross_repo_movement": false
+      },
+      "data_bearing_packet": true,
+      "known_absorber": "resource profile and full competency profile completion",
+      "intended_taf10_reading": "surplus over simple observed statistics",
+      "useful_remainder": "review material over simple statistics only",
+      "expected_outcome": "REVIEW_ONLY"
+    },
+    {
+      "candidate_id": "t411_t412_departed_record_boundary_family",
+      "source_family": "T411/T412 physical-boundary lineage",
+      "source_keys": [
+        "t411",
+        "t412"
+      ],
+      "source_basis": "T411 supplied an exact finite witness before review; the later addendum absorbs the physical-boundary reading by joint-record completion, and T412 requires an admissible factorization guardrail.",
+      "t533_packet": {
+        "packet_id": "t411_t412_departed_record_boundary_family",
+        "description": "Departed-record boundary reread as a TAF10 packet.",
+        "fixed_region_menu_task_context": true,
+        "checks_t500_t529_floor": true,
+        "competency": {
+          "layer": "full_competency_profile",
+          "left_profile": [
+            "restorable_at_R_plus=true"
+          ],
+          "right_profile": [
+            "restorable_at_R_plus=false"
+          ],
+          "certificate_source": "existing_source_full_competency_profile_mismatch"
+        },
+        "resource": {
+          "layer": "resource_profile",
+          "left_profile": [
+            "reach=R_plus_with_retained_tier1"
+          ],
+          "right_profile": [
+            "reach=R_plus_product_completion"
+          ],
+          "certificate_source": "existing_source_resource_profile_mismatch"
+        },
+        "permission": {
+          "layer": "permission_profile",
+          "left_profile": [
+            "R_excludes_copresent_tier1"
+          ],
+          "right_profile": [
+            "joint_record_completion_admitted"
+          ],
+          "certificate_source": "existing_source_permission_profile_mismatch"
+        },
+        "provenance": {
+          "layer": "provenance_profile",
+          "left_profile": [
+            "cascade_history=retained_correlation"
+          ],
+          "right_profile": [
+            "cascade_history=departed_trace"
+          ],
+          "certificate_source": "existing_source_provenance_profile_mismatch"
+        },
+        "witness": {
+          "witness_id": "t411_restoration_finality_split",
+          "capability_kind": "restoration_task_success",
+          "left_value": "restorable_at_R_plus",
+          "right_value": "final_at_R_plus",
+          "predeclared": true,
+          "domain_native": true,
+          "independent_from_stack_profiles": false,
+          "not_task_success_coordinate": false,
+          "not_completion_field": false
+        },
+        "uses_simple_observed_statistic": false,
+        "declares_match_without_certificate": false,
+        "full_profile_equivalent": false,
+        "claims_current_success": false,
+        "requests_claim_or_canon_movement": false,
+        "requests_public_or_cross_repo_movement": false
+      },
+      "data_bearing_packet": true,
+      "known_absorber": "joint-record completion and declared-boundary bookkeeping",
+      "intended_taf10_reading": "physical noncompletion after R-supported equality",
+      "useful_remainder": "certificate toolkit calibration, not a TAF10 packet",
+      "expected_outcome": "FALSIFIED"
+    },
+    {
+      "candidate_id": "t516_t517_t519_quantum_access_monogamy_lane",
+      "source_family": "T514-T520 quantum access and monogamy lane",
+      "source_keys": [
+        "t516",
+        "t517",
+        "t519"
+      ],
+      "source_basis": "The quantum lane preserves a real access-structure strut, but T517 falsifies the BFT threshold correspondence and T519 keeps the replication invariant translation-only.",
+      "t533_packet": {
+        "packet_id": "t516_t517_t519_quantum_access_monogamy_lane",
+        "description": "Quantum access/monogamy lane reread as a C(R) packet.",
+        "fixed_region_menu_task_context": false,
+        "checks_t500_t529_floor": true,
+        "competency": null,
+        "resource": {
+          "layer": "resource_profile",
+          "left_profile": [
+            "shareability_wall=closed_form",
+            "replication=translation_only"
+          ],
+          "right_profile": [
+            "shareability_wall=closed_form",
+            "replication=translation_only"
+          ],
+          "certificate_source": "existing_source_exact_resource_profile_match"
+        },
+        "permission": null,
+        "provenance": {
+          "layer": "provenance_profile",
+          "left_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "right_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "certificate_source": "existing_source_exact_provenance_profile_match"
+        },
+        "witness": null,
+        "uses_simple_observed_statistic": false,
+        "declares_match_without_certificate": false,
+        "full_profile_equivalent": false,
+        "claims_current_success": false,
+        "requests_claim_or_canon_movement": false,
+        "requests_public_or_cross_repo_movement": false
+      },
+      "data_bearing_packet": true,
+      "known_absorber": "not a C(R) packet; routes to TAF6 rather than TAF10",
+      "intended_taf10_reading": "quantum access noncompletion target",
+      "useful_remainder": "narrowed successor for TAF6 access-structure work",
+      "expected_outcome": "NARROWED"
+    },
+    {
+      "candidate_id": "t520_single_use_key_copy_law_packet",
+      "source_family": "T520 copy-law single-use-key screen",
+      "source_keys": [
+        "t520"
+      ],
+      "source_basis": "T520 supplies a real single-use-key quantity, but the finality verdict vector equals the resource ledger vector in every scenario.",
+      "t533_packet": {
+        "packet_id": "t520_single_use_key_copy_law_packet",
+        "description": "Single-use-key authority reread as noncompletion.",
+        "fixed_region_menu_task_context": true,
+        "checks_t500_t529_floor": true,
+        "competency": {
+          "layer": "full_competency_profile",
+          "left_profile": [
+            "can_finalize_now=true",
+            "max_authoritative_copies=1"
+          ],
+          "right_profile": [
+            "can_finalize_now=false",
+            "max_authoritative_copies=0"
+          ],
+          "certificate_source": "existing_source_full_competency_profile_mismatch"
+        },
+        "resource": {
+          "layer": "resource_profile",
+          "left_profile": [
+            "remaining_key_authority=1"
+          ],
+          "right_profile": [
+            "remaining_key_authority=0"
+          ],
+          "certificate_source": "existing_source_resource_profile_mismatch"
+        },
+        "permission": {
+          "layer": "permission_profile",
+          "left_profile": [
+            "decrypt_right=present"
+          ],
+          "right_profile": [
+            "decrypt_right=absent"
+          ],
+          "certificate_source": "existing_source_permission_profile_mismatch"
+        },
+        "provenance": {
+          "layer": "provenance_profile",
+          "left_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "right_profile": [
+            "source_artifacts=checked",
+            "result_json=present",
+            "predecessor_chain=declared"
+          ],
+          "certificate_source": "existing_source_exact_provenance_profile_match"
+        },
+        "witness": {
+          "witness_id": "single_use_key_authority",
+          "capability_kind": "resource_completion_field",
+          "left_value": "completion_available",
+          "right_value": "completion_blocked",
+          "predeclared": true,
+          "domain_native": true,
+          "independent_from_stack_profiles": false,
+          "not_task_success_coordinate": true,
+          "not_completion_field": false
+        },
+        "uses_simple_observed_statistic": false,
+        "declares_match_without_certificate": false,
+        "full_profile_equivalent": false,
+        "claims_current_success": false,
+        "requests_claim_or_canon_movement": false,
+        "requests_public_or_cross_repo_movement": false
+      },
+      "data_bearing_packet": true,
+      "known_absorber": "resource monotone computes the finality verdict vector",
+      "intended_taf10_reading": "noncompletion via exactly-one authority",
+      "useful_remainder": "negative guardrail for copy-law finality readings",
+      "expected_outcome": "FALSIFIED"
+    },
+    {
+      "candidate_id": "t521_detector_manifest_template_lane",
+      "source_family": "T521 detector provenance lane",
+      "source_keys": [
+        "t521"
+      ],
+      "source_basis": "T521 builds the manifest template and no-data boundary; it does not contain observed detector payloads or a filled real packet.",
+      "t533_packet": {
+        "packet_id": "t521_detector_manifest_template_lane",
+        "description": "Detector manifest template reread as a TAF10 packet.",
+        "fixed_region_menu_task_context": true,
+        "checks_t500_t529_floor": true,
+        "competency": null,
+        "resource": null,
+        "permission": null,
+        "provenance": {
+          "layer": "provenance_profile",
+          "left_profile": [
+            "manifest_template=complete",
+            "observed_payload=absent"
+          ],
+          "right_profile": [
+            "manifest_template=complete",
+            "observed_payload=absent"
+          ],
+          "certificate_source": "existing_source_exact_provenance_profile_match"
+        },
+        "witness": null,
+        "uses_simple_observed_statistic": false,
+        "declares_match_without_certificate": false,
+        "full_profile_equivalent": false,
+        "claims_current_success": false,
+        "requests_claim_or_canon_movement": false,
+        "requests_public_or_cross_repo_movement": false
+      },
+      "data_bearing_packet": false,
+      "known_absorber": "no data-bearing packet in hand",
+      "intended_taf10_reading": "detector provenance noncompletion target",
+      "useful_remainder": "pause until a predeclared filled manifest exists",
+      "expected_outcome": "PAUSE"
+    }
+  ],
+  "classifications": [
+    {
+      "candidate_id": "t407_t398_t493_t494_current_cr_family",
+      "source_family": "T407/T398/T493/T494 current C(R) family",
+      "outcome": "REVIEW_ONLY",
+      "t533_label": "REJECTED_INCOMPLETE_COMPLETION_STACK",
+      "full_stack_exact_match": false,
+      "independent_noncompletion_witness": false,
+      "data_bearing_packet": true,
+      "source_json_present": true,
+      "known_absorber": "resource profile and full competency profile completion",
+      "missing_fields": [
+        "full_competency_profile",
+        "resource_profile",
+        "independent_non_task_success_noncompletion_witness"
+      ],
+      "reason": "The source remains useful only under a weaker review reading; it does not match the full T533 stack or supply an independent non-task-success noncompletion witness.",
+      "useful_remainder": "review material over simple statistics only"
+    },
+    {
+      "candidate_id": "t411_t412_departed_record_boundary_family",
+      "source_family": "T411/T412 physical-boundary lineage",
+      "outcome": "FALSIFIED",
+      "t533_label": "REJECTED_INCOMPLETE_COMPLETION_STACK",
+      "full_stack_exact_match": false,
+      "independent_noncompletion_witness": false,
+      "data_bearing_packet": true,
+      "source_json_present": true,
+      "known_absorber": "joint-record completion and declared-boundary bookkeeping",
+      "missing_fields": [
+        "full_competency_profile",
+        "resource_profile",
+        "permission_profile",
+        "provenance_profile",
+        "independent_non_task_success_noncompletion_witness"
+      ],
+      "reason": "The intended TAF10 reading is absorbed by joint-record completion and declared-boundary bookkeeping.",
+      "useful_remainder": "certificate toolkit calibration, not a TAF10 packet"
+    },
+    {
+      "candidate_id": "t516_t517_t519_quantum_access_monogamy_lane",
+      "source_family": "T514-T520 quantum access and monogamy lane",
+      "outcome": "NARROWED",
+      "t533_label": "REJECTED_UNFIXED_REGION_MENU_TASK_CONTEXT",
+      "full_stack_exact_match": false,
+      "independent_noncompletion_witness": false,
+      "data_bearing_packet": true,
+      "source_json_present": true,
+      "known_absorber": "not a C(R) packet; routes to TAF6 rather than TAF10",
+      "missing_fields": [
+        "full_competency_profile",
+        "permission_profile",
+        "independent_non_task_success_noncompletion_witness"
+      ],
+      "reason": "The source narrows a real adjacent lane, but it is not a full TAF10 C(R) surplus packet.",
+      "useful_remainder": "narrowed successor for TAF6 access-structure work"
+    },
+    {
+      "candidate_id": "t520_single_use_key_copy_law_packet",
+      "source_family": "T520 copy-law single-use-key screen",
+      "outcome": "FALSIFIED",
+      "t533_label": "REJECTED_INCOMPLETE_COMPLETION_STACK",
+      "full_stack_exact_match": false,
+      "independent_noncompletion_witness": false,
+      "data_bearing_packet": true,
+      "source_json_present": true,
+      "known_absorber": "resource monotone computes the finality verdict vector",
+      "missing_fields": [
+        "full_competency_profile",
+        "resource_profile",
+        "permission_profile",
+        "independent_non_task_success_noncompletion_witness"
+      ],
+      "reason": "The intended TAF10 reading is absorbed by resource monotone computes the finality verdict vector.",
+      "useful_remainder": "negative guardrail for copy-law finality readings"
+    },
+    {
+      "candidate_id": "t521_detector_manifest_template_lane",
+      "source_family": "T521 detector provenance lane",
+      "outcome": "PAUSE",
+      "t533_label": "REJECTED_INCOMPLETE_COMPLETION_STACK",
+      "full_stack_exact_match": false,
+      "independent_noncompletion_witness": false,
+      "data_bearing_packet": false,
+      "source_json_present": true,
+      "known_absorber": "no data-bearing packet in hand",
+      "missing_fields": [
+        "full_competency_profile",
+        "resource_profile",
+        "permission_profile",
+        "independent_non_task_success_noncompletion_witness"
+      ],
+      "reason": "The source is structurally useful but has no data-bearing packet with observed values and profile certificates.",
+      "useful_remainder": "pause until a predeclared filled manifest exists"
+    }
+  ],
+  "claim_table": [
+    {
+      "claim": "T535 consumed the T533 full-stack and witness criteria.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Imported T533-cr-surplus-starter-packet-classifier-v0.1 and used t533.classify, missing_layers, and witness_is_admissible."
+    },
+    {
+      "claim": "At least two existing-source packet candidates were evaluated.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Evaluated 5 candidates from existing result JSON artifacts."
+    },
+    {
+      "claim": "No evaluated real-source candidate clears the TAF10 packet burden.",
+      "status": "COMPUTED",
+      "confidence": "high",
+      "basis": "Cleared candidate ids: []."
+    },
+    {
+      "claim": "The blocking field is the absence of a full-stack-matched independent non-task-success noncompletion witness not absorbed by native completion.",
+      "status": "ARGUED",
+      "confidence": "medium",
+      "basis": "This phrases the shared missing field across the T407/T398, T411/T412, T520, and T521 failures."
+    },
+    {
+      "claim": "T535 should feed TAF9/TAF3 only as a negative or pause packet, not as C(R) success.",
+      "status": "ARGUED",
+      "confidence": "medium",
+      "basis": "Track 2 remains subordinate to the source-law lane and no candidate cleared."
+    }
+  ],
+  "overall": {
+    "candidate_count": 5,
+    "cleared_candidate_ids": [],
+    "outcome_counts": {
+      "REVIEW_ONLY": 1,
+      "FALSIFIED": 2,
+      "NARROWED": 1,
+      "PAUSE": 1
+    },
+    "real_taf10_packet_in_hand": false,
+    "current_c_r_success": false,
+    "surplus_over_full_stack_proved": false,
+    "track_2_subordinate": true,
+    "claim_movement": false,
+    "canon_or_public_posture_movement": false,
+    "external_publication": false,
+    "cross_repo_truth_movement": false
+  },
+  "integration_notes": "No registry or card update is made by T535. Parent integration can record TAF10 as paused unless a future packet supplies the exact missing field. The negative result can feed TAF3 only as a noncompletion-target absence, not as a C(R) success."
+}

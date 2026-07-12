@@ -9,6 +9,19 @@ earn about scale, search, and hardness.
 Use this ledger before saying that a branch is brute-force, polynomial,
 theorem-backed, NP-hard, CSP-complete, or scalable.
 
+## Coverage / Staleness
+
+As of 2026-07-11, the test registry in `TESTS.md` reaches T529, while this
+ledger has explicit computational-status placements only through T138. T139-T529
+are not computational-status ratified here unless named elsewhere in this file.
+Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, or
+`open_hardness` status from silence in this ledger.
+
+This note is mechanical frontier hygiene. It creates no claim-status movement,
+Canon Index tier movement, theorem claim, hardness claim, public-posture
+movement, or external-publication implication. A dedicated complexity-ledger
+reconciliation pass remains due for the post-T138 frontier.
+
 ## Status Labels
 
 | Label | Meaning |
@@ -34,7 +47,8 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 ## Global Guardrail
 
-No surveyed core branch currently earns:
+Within the explicitly reconciled computational-status set through T138, no
+surveyed core branch currently earns:
 
 ```text
 NP-hard / CSP-complete core result
@@ -44,7 +58,7 @@ Hardness language is blocked until a branch proves a reduction or supplies an
 accepted complexity-class placement under declared input encoding and
 admissible transformations.
 
-The honest current summary is:
+The honest current summary for the explicitly reconciled set is:
 
 ```text
 mixed computational status: finite witnesses, several polynomial finite

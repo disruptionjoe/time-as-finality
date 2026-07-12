@@ -7,7 +7,9 @@ import unittest
 from models.t528_s1_finality_native_generator_preflight import (
     VERDICT,
     run_t528_analysis,
+    t528_result_to_dict,
 )
+from models.run_t528 import _render_markdown
 
 
 class S1FinalityNativeGeneratorPreflightTests(unittest.TestCase):
@@ -78,6 +80,16 @@ class S1FinalityNativeGeneratorPreflightTests(unittest.TestCase):
         self.assertIn("S1 remains `requires_added_assumption`", self.result.s1_update)
         self.assertIn("No claim-ledger update is earned", self.result.claim_ledger_update)
         self.assertIn("does not derive spacetime", self.result.not_claimed)
+
+    def test_generated_markdown_reports_unreduced_sample_counts(self) -> None:
+        markdown = _render_markdown(t528_result_to_dict(self.result))
+
+        self.assertIn(
+            "- Repaired-suite samples passing: 25/32 (0.7812)",
+            markdown,
+        )
+        self.assertNotIn("25/32 (25/32", markdown)
+        self.assertIn("| 16 | 8 | 8 | 8/8 (1.0000) |", markdown)
 
 
 if __name__ == "__main__":

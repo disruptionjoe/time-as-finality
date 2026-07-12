@@ -27,7 +27,16 @@ def _fraction(value: dict[str, Any]) -> str:
     return f"{value['fraction']} ({value['float']:.4f})"
 
 
+def _sample_rate(passed: int, total: int, value: dict[str, Any]) -> str:
+    return f"{passed}/{total} ({value['float']:.4f})"
+
+
 def _render_markdown(payload: dict[str, Any]) -> str:
+    total_pass_rate = _sample_rate(
+        payload["pass_count"],
+        payload["sample_count"],
+        payload["pass_rate"],
+    )
     lines = [
         "# T528 Results: S1 Finality-Native Generator Preflight",
         "",
@@ -35,11 +44,7 @@ def _render_markdown(payload: dict[str, Any]) -> str:
         "",
         f"- Verdict: `{payload['verdict']}`",
         f"- Generator: `{payload['generator_id']}`",
-        (
-            "- Repaired-suite samples passing: "
-            f"{payload['pass_count']}/{payload['sample_count']} "
-            f"({_fraction(payload['pass_rate'])})"
-        ),
+        f"- Repaired-suite samples passing: {total_pass_rate}",
         (
             "- Main packet classification: "
             f"`{payload['main_packet_classification']}`"
@@ -63,12 +68,17 @@ def _render_markdown(payload: dict[str, Any]) -> str:
         "| ---: | ---: | ---: | ---: |",
     ]
     for summary in payload["pass_summary_by_size"]:
+        pass_rate = _sample_rate(
+            summary["pass_count"],
+            summary["sample_count"],
+            summary["pass_rate"],
+        )
         lines.append(
             "| "
             f"{summary['event_count']} | "
             f"{summary['sample_count']} | "
             f"{summary['pass_count']} | "
-            f"{_fraction(summary['pass_rate'])} |"
+            f"{pass_rate} |"
         )
 
     failed = [audit for audit in payload["sample_audits"] if not audit["repaired_suite_passed"]]

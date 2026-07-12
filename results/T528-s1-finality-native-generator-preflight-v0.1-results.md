@@ -4,7 +4,7 @@
 
 - Verdict: `s1_finality_native_generator_preflight_rejects_first_packet`
 - Generator: `two_receipt_finality_generator`
-- Repaired-suite samples passing: 25/32 (25/32 (0.7812))
+- Repaired-suite samples passing: 25/32 (0.7812)
 - Main packet classification: `rejected_repaired_suite_incomplete`
 - Main packet counts as S1 evidence: `False`
 - Hostile controls rejected: `True`
@@ -19,7 +19,7 @@ Generate record events with two independent local receipt orders. Declare x<y on
 | ---: | ---: | ---: | ---: |
 | 8 | 8 | 7 | 7/8 (0.8750) |
 | 12 | 8 | 5 | 5/8 (0.6250) |
-| 16 | 8 | 8 | 1/1 (1.0000) |
+| 16 | 8 | 8 | 8/8 (1.0000) |
 | 20 | 8 | 5 | 5/8 (0.6250) |
 
 ## Failed Sample Audits

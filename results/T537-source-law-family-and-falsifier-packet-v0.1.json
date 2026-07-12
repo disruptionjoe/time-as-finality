@@ -1,0 +1,196 @@
+{
+  "artifact": "T537-source-law-family-and-falsifier-packet-v0.1",
+  "source_t536_verdict": "taf11_successor_route_selected_source_law_family_and_falsifier_packet",
+  "source_t536_selected_routes": [
+    "t537_source_law_family_and_falsifier_packet"
+  ],
+  "spent_shapes": [
+    "two_channel_receipt_product_order",
+    "three_channel_receipt_product_order",
+    "record_window_separation_order",
+    "external_lorentzian_uv_reference_law",
+    "t528_screen_conditioned_receipt_mixture",
+    "posthoc_repaired_band_fit"
+  ],
+  "family_decisions": [
+    {
+      "family_id": "descent_obstruction_resolution_family",
+      "outcome": "SELECTED_FOR_EXECUTION",
+      "selected_for_next_execution": true,
+      "track_role": "track_1_next_family",
+      "missing_requirements": [],
+      "reason": "The family is finality-domain native, new relative to spent shapes, computable without target import, and carries an explicit falsifier.",
+      "next_packet": "t538_descent_obstruction_resolution_source_law_packet",
+      "source_variables": [
+        "local_record_cover",
+        "restriction_maps",
+        "compatible_local_sections",
+        "descent_obstruction_witness",
+        "allowed_refinement_steps",
+        "resolution_depth"
+      ],
+      "predeclared_falsifier": "Reject if the relation is not invariant under cover relabeling and restriction-map isomorphism, if it collapses to total-chain or antichain controls, or if any density target or Lorentzian coordinate is needed to choose the relation."
+    },
+    {
+      "family_id": "stabilization_certificate_filtration_family",
+      "outcome": "REVIEW_ONLY",
+      "selected_for_next_execution": false,
+      "track_role": "underdeclared_family",
+      "missing_requirements": [
+        "executable_next_packet_specific"
+      ],
+      "reason": "The family is useful context but lacks one or more T537 execution requirements.",
+      "next_packet": "none",
+      "source_variables": [
+        "record_token",
+        "stabilization_certificate",
+        "filtration_level",
+        "persistence_window"
+      ],
+      "predeclared_falsifier": "Reject if certificate equivalence is underdeclared, if the family reduces to endpoint-window separation, or if the filtration is tuned from repaired-suite outcomes."
+    },
+    {
+      "family_id": "record_window_separation_rescue_family",
+      "outcome": "REJECTED_DUPLICATE",
+      "selected_for_next_execution": false,
+      "track_role": "spent",
+      "missing_requirements": [
+        "new_relative_to_spent_shapes",
+        "executable_next_packet_specific",
+        "no_spent_shape_repeat"
+      ],
+      "reason": "The family repeats a shape already spent by T532/T534.",
+      "next_packet": "none",
+      "source_variables": [
+        "record_open_endpoint",
+        "record_finalized_endpoint"
+      ],
+      "predeclared_falsifier": "Already falsified for the T534 target-density burden."
+    },
+    {
+      "family_id": "ordering_fraction_target_fit_family",
+      "outcome": "BLOCKED_TARGET_IMPORT",
+      "selected_for_next_execution": false,
+      "track_role": "blocked",
+      "missing_requirements": [
+        "finality_domain_family",
+        "new_relative_to_spent_shapes",
+        "independent_naturality",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "later_burdens_named",
+        "no_target_density_fit"
+      ],
+      "reason": "The family chooses the law from the target statistic.",
+      "next_packet": "none",
+      "source_variables": [
+        "target_ordering_fraction",
+        "posthoc_relation_band"
+      ],
+      "predeclared_falsifier": "Reject because target matching chooses the law."
+    },
+    {
+      "family_id": "lorentzian_reference_sampler_family",
+      "outcome": "BLOCKED_TARGET_IMPORT",
+      "selected_for_next_execution": false,
+      "track_role": "blocked",
+      "missing_requirements": [
+        "finality_domain_family",
+        "new_relative_to_spent_shapes",
+        "independent_naturality",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "later_burdens_named",
+        "no_lorentzian_reference_import"
+      ],
+      "reason": "The family imports the target Lorentzian reference law.",
+      "next_packet": "none",
+      "source_variables": [
+        "external_u_coordinate",
+        "external_v_coordinate"
+      ],
+      "predeclared_falsifier": "Reject because the law imports the target."
+    },
+    {
+      "family_id": "real_taf10_data_packet_wait_family",
+      "outcome": "PAUSED_TRACK_2",
+      "selected_for_next_execution": false,
+      "track_role": "track_2_waiting",
+      "missing_requirements": [
+        "finality_domain_family",
+        "source_variables_declared",
+        "independent_naturality",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "hostile_controls_named",
+        "later_burdens_named",
+        "not_blocked_on_real_data_packet",
+        "track_2_does_not_replace_track_1"
+      ],
+      "reason": "T535 found no real data-bearing packet, and Track 2 cannot replace Track 1.",
+      "next_packet": "none",
+      "source_variables": [
+        "future_full_stack_profile",
+        "future_noncompletion_witness"
+      ],
+      "predeclared_falsifier": "Reject as a Track-1 replacement unless a real TAF10 packet exists."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "control_id": "isomorphic_cover_relabel_control",
+      "blocks_family_ids": [],
+      "reason": "A selected family must give the same decision under cover relabeling and restriction-map isomorphism."
+    },
+    {
+      "control_id": "total_chain_and_antichain_collapse_control",
+      "blocks_family_ids": [],
+      "reason": "A selected family must not succeed only by collapsing every fixture to a total chain or an antichain."
+    },
+    {
+      "control_id": "spent_shape_replay_control",
+      "blocks_family_ids": [
+        "record_window_separation_rescue_family"
+      ],
+      "reason": "Spent finite-generator and endpoint-window shapes do not re-enter TAF11."
+    },
+    {
+      "control_id": "target_import_control",
+      "blocks_family_ids": [
+        "ordering_fraction_target_fit_family",
+        "lorentzian_reference_sampler_family"
+      ],
+      "reason": "A source law must be chosen before target statistics or Lorentzian coordinates are read."
+    }
+  ],
+  "selected_family_ids": [
+    "descent_obstruction_resolution_family"
+  ],
+  "verdict": "source_law_family_packet_selected_descent_obstruction_resolution_family",
+  "recommended_next": "Run t538_descent_obstruction_resolution_source_law_packet. It should instantiate finite record-cover fixtures for the descent-obstruction resolution family, compute the obstruction-resolution relation before seeing any target ordering statistic, and reject the family if it collapses under the predeclared hostile controls.",
+  "claim_labels": [
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "T536 is consumed as selecting the source-law family and falsifier packet route."
+    },
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "Exactly one T537 family is selected: descent_obstruction_resolution_family."
+    },
+    {
+      "label": "COMPUTED",
+      "confidence": "high",
+      "text": "Spent-shape replay, target-density fitting, Lorentzian reference import, and Track-2 replacement are rejected or paused: record_window_separation_rescue_family, ordering_fraction_target_fit_family, lorentzian_reference_sampler_family, real_taf10_data_packet_wait_family."
+    },
+    {
+      "label": "ARGUED",
+      "confidence": "medium",
+      "text": "The descent-obstruction family is the best next source-law candidate because it uses record-cover, restriction, and obstruction-resolution data already native to the TaF proof program while remaining falsifiable before target import."
+    }
+  ],
+  "s1_update": "S1 remains `requires_added_assumption`. T537 selects one computable source-law family for the next packet and supplies no S1 evidence.",
+  "claim_ledger_update": "No claim-ledger update is earned. T537 is TAF11 work selection and source-family scoping only; it leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "not_claimed": "T537 does not establish a source law, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause the S1 finite-generator route, promote S1, change claim status, change canon, change public posture, authorize external publication, or move cross-repo truth. It is a Track-1 source-law family selection packet only."
+}

@@ -1,5 +1,21 @@
 ﻿# Roadmap
 
+## 2026-07-12 T537 Source-Law Family And Falsifier Packet
+
+T537 executes the family-selection packet that T536 selected for the TAF11
+source-law lane. It screens six source-family shapes and selects exactly one
+next computable family: `descent_obstruction_resolution_family`.
+
+The next packet is `t538_descent_obstruction_resolution_source_law_packet`.
+It should instantiate finite record-cover fixtures, compute the
+obstruction-resolution relation before reading any target ordering statistic,
+and reject the family if it fails cover-relabel invariance, restriction-map
+isomorphism invariance, total-chain or antichain collapse controls, or the
+no-target-import rule. Spent endpoint-window replay, target-density fitting,
+Lorentzian reference import, and Track-2 replacement remain rejected or paused.
+No claim-ledger, canon, public-posture, external-publication, or cross-repo
+movement is earned.
+
 ## 2026-07-12 T536 TAF11 Source-Law Successor Router
 
 T536 executes the TAF11 successor choice after T534 paused the S1 finite-generator

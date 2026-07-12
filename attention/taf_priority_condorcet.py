@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T534 paused the current S1 finite-generator route without falsifying "
-            "the North Star; the next move must seek a new directed source-law route."
+            "T537 selected the descent-obstruction resolution family; the next "
+            "move must compute or kill that source-law packet without target import."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "If a native finite law survives, test whether its objects descend "
-            "toward causal-set or Lorentzian structure without coordinate import."
+            "If the T538 source-law packet survives, test whether its objects "
+            "descend toward causal-set or Lorentzian structure without coordinate import."
         ),
     },
     "TAF5": {

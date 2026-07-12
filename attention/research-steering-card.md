@@ -12,13 +12,13 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T539 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T540 on
 2026-07-12:
 
 1. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T539 removed the current TAF11 family from the front; the kappa and
-   typed-gap catalogues are now the highest-value theorem target with a
-   reusable shadow-protection burden.
+   Why: T540 turned the kappa plus typed-gap catalogue into a scaffold-only
+   transfer gate; the next value is a nonidentity witness packet, not another
+   router.
 2. TAF11 - North Star source-law reassessment beyond the finite-generator route.
    Why: T539 retired the current descent-obstruction family as a programmable
    scalar-rank channel; TAF11 needs a genuinely new non-rank family before it
@@ -142,16 +142,17 @@ Discipline:
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, top priority theorem target | Can shadow protection transfer across domains without identity-by-construction? | T492/T499/T501 show schema value but object identity remains blocked. T539 demoted the current source-law family, making TAF8 the next highest-value executable theorem target. |
+| TAF8 | open, top priority theorem target | Can shadow protection transfer across domains without identity-by-construction? | T540 completed the transfer-precondition gate. The current T499/T501 catalogue pair is scaffold-only: kappa nonidentity, typed-gap transfer morphism, and direct preservation/spread theorem burdens remain open. |
 
 ## next_action
 
-When Joe opens the lane, route the next swing to TAF8:
+When Joe opens the lane, keep the next swing on TAF8:
 
-Build the next cross-domain shadow-protection theorem packet from the kappa and
-typed-gap catalogues. Keep identity-by-construction blocked, state the transfer
-burden explicitly, and require one executable artifact before any claim-ledger
-movement.
+Build `T541_nonidentity_shadow_protection_witness_packet`: one nonidentity
+kappa target and one typed-gap transfer target under the same predeclared
+shadow-protection spine, with native controls, absorber completion, and an
+explicit direct spread or preservation theorem. Keep it review-only unless the
+runnable artifact earns more.
 
 TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
 until TAF11 supplies a genuinely new non-rank source-law family or TAF12

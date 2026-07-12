@@ -73,9 +73,9 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T539 removed the current TAF11 family from the front; the kappa and "
-            "typed-gap catalogues are now the highest-value theorem target with "
-            "a reusable shadow-protection burden."
+            "T540 made the current kappa plus typed-gap catalogue scaffold-only; "
+            "the next value is a nonidentity witness packet under one "
+            "predeclared shadow-protection spine."
         ),
     },
 }

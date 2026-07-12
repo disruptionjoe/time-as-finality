@@ -1,5 +1,26 @@
 ﻿# Roadmap
 
+## 2026-07-12 T540 Cross-Domain Shadow-Protection Transfer Gate
+
+T540 executes the TAF8 transfer-precondition gate routed by T539. It consumes
+the T492/T499/T501 ceilings and asks whether the kappa and typed-gap catalogues
+already support a reusable cross-domain shadow-protection theorem without
+identity by construction.
+
+The result is scaffold-only, but useful. The current catalogue pair passes the
+shared TAF8 scaffold: shadow/capability comparison, same proof-spine discipline,
+native controls, absorber completion, and demotion boundaries. It does not earn
+a theorem. T499 remains method-template only until nonidentity target burdens
+clear, and T501 remains schema-preservation only until a transfer morphism or
+identity key plus direct preservation theorem is supplied.
+
+The next TAF8 swing should instantiate
+`T541_nonidentity_shadow_protection_witness_packet`: one nonidentity kappa
+target and one typed-gap transfer target under the same predeclared spine, with
+native controls, absorber completion, and an explicit direct spread or
+preservation theorem. No claim-ledger, canon, public-posture,
+external-publication, or cross-repo movement is earned by T540.
+
 ## 2026-07-12 T539 Resolution-Depth Generator Packet
 
 T539 executes the generator gate opened by T538. It removes the free pairwise

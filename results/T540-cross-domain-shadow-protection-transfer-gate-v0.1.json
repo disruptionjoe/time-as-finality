@@ -1,0 +1,290 @@
+{
+  "artifact": "T540-cross-domain-shadow-protection-transfer-gate-v0.1",
+  "candidates": [
+    {
+      "candidate_id": "current_t499_t501_catalogue_pair",
+      "claim_movement_requested": false,
+      "cross_repo_truth_requested": false,
+      "description": "Current T499 kappa method-template lane plus current T501 typed-gap schema lane.",
+      "direct_spread_or_preservation_theorem": false,
+      "external_publication_requested": false,
+      "identity_by_construction": false,
+      "kappa_nonidentity_burden_cleared": false,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": true,
+      "negative_nonfactorization_fixtures": true,
+      "no_per_domain_retuning": true,
+      "positive_preservation_controls": true,
+      "public_posture_requested": false,
+      "same_proof_spine_declared": true,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": false
+    },
+    {
+      "candidate_id": "identity_by_construction_shortcut",
+      "claim_movement_requested": false,
+      "cross_repo_truth_requested": false,
+      "description": "A shortcut that treats shared schema or shared rank as same object identity.",
+      "direct_spread_or_preservation_theorem": true,
+      "external_publication_requested": false,
+      "identity_by_construction": true,
+      "kappa_nonidentity_burden_cleared": true,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": true,
+      "negative_nonfactorization_fixtures": true,
+      "no_per_domain_retuning": true,
+      "positive_preservation_controls": true,
+      "public_posture_requested": false,
+      "same_proof_spine_declared": true,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": true
+    },
+    {
+      "candidate_id": "retuned_domain_specific_pair",
+      "claim_movement_requested": false,
+      "cross_repo_truth_requested": false,
+      "description": "A pair that chooses a separate invariant or proof spine after seeing each domain.",
+      "direct_spread_or_preservation_theorem": true,
+      "external_publication_requested": false,
+      "identity_by_construction": false,
+      "kappa_nonidentity_burden_cleared": true,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": true,
+      "negative_nonfactorization_fixtures": true,
+      "no_per_domain_retuning": false,
+      "positive_preservation_controls": true,
+      "public_posture_requested": false,
+      "same_proof_spine_declared": false,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": true
+    },
+    {
+      "candidate_id": "missing_native_controls_pair",
+      "claim_movement_requested": false,
+      "cross_repo_truth_requested": false,
+      "description": "A pair that names two domains but omits positive controls, negative fixtures, or absorber completion.",
+      "direct_spread_or_preservation_theorem": true,
+      "external_publication_requested": false,
+      "identity_by_construction": false,
+      "kappa_nonidentity_burden_cleared": true,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": false,
+      "negative_nonfactorization_fixtures": false,
+      "no_per_domain_retuning": true,
+      "positive_preservation_controls": false,
+      "public_posture_requested": false,
+      "same_proof_spine_declared": true,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": true
+    },
+    {
+      "candidate_id": "synthetic_full_burden_pair",
+      "claim_movement_requested": false,
+      "cross_repo_truth_requested": false,
+      "description": "The future packet shape assembled from T499's synthetic nonidentity burden and T501's synthetic exact-object direct preservation burden.",
+      "direct_spread_or_preservation_theorem": true,
+      "external_publication_requested": false,
+      "identity_by_construction": false,
+      "kappa_nonidentity_burden_cleared": true,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": true,
+      "negative_nonfactorization_fixtures": true,
+      "no_per_domain_retuning": true,
+      "positive_preservation_controls": true,
+      "public_posture_requested": false,
+      "same_proof_spine_declared": true,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": true
+    },
+    {
+      "candidate_id": "claim_public_posture_shortcut",
+      "claim_movement_requested": true,
+      "cross_repo_truth_requested": false,
+      "description": "A structurally strong transfer packet that asks to move claims or public posture immediately.",
+      "direct_spread_or_preservation_theorem": true,
+      "external_publication_requested": false,
+      "identity_by_construction": false,
+      "kappa_nonidentity_burden_cleared": true,
+      "mature_lane_count": 2,
+      "minimal_enrichment_or_demoter_named": true,
+      "native_absorbers_granted": true,
+      "negative_nonfactorization_fixtures": true,
+      "no_per_domain_retuning": true,
+      "positive_preservation_controls": true,
+      "public_posture_requested": true,
+      "same_proof_spine_declared": true,
+      "shadow_capability_comparison_declared": true,
+      "source_artifacts": [
+        "T499-kappa-composite-residual-template-gate-v0.1",
+        "T501-typed-translation-object-identity-stack-gate-v0.1"
+      ],
+      "typed_gap_transfer_morphism_cleared": true
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T499 and T501 are consumed as current ceilings: method template and schema preservation, not theorem proof."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The current catalogue pair passes the TAF8 scaffold but fails theorem preconditions on nonidentity and direct preservation burdens."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "TAF8 remains the best next lane because it now has a specific executable burden rather than an open-ended cross-domain aspiration."
+    }
+  ],
+  "decisions": [
+    {
+      "allowed_action": "use as TAF8 scaffold; build nonidentity packet next",
+      "blockers": [
+        "kappa_nonidentity_burden_not_cleared",
+        "typed_gap_transfer_morphism_not_cleared",
+        "direct_spread_or_preservation_theorem_missing"
+      ],
+      "candidate_id": "current_t499_t501_catalogue_pair",
+      "decision": "admitted_scaffold_only",
+      "route_label": "TRANSFER_SCAFFOLD_ONLY_THEOREM_BURDEN_OPEN",
+      "scaffold_passes": true,
+      "theorem_preconditions_pass": false
+    },
+    {
+      "allowed_action": "reject same-object shortcut",
+      "blockers": [
+        "identity_by_construction"
+      ],
+      "candidate_id": "identity_by_construction_shortcut",
+      "decision": "rejected",
+      "route_label": "IDENTITY_BY_CONSTRUCTION_BLOCKED",
+      "scaffold_passes": true,
+      "theorem_preconditions_pass": false
+    },
+    {
+      "allowed_action": "repair scaffold before theorem review",
+      "blockers": [
+        "same_proof_spine_missing",
+        "per_domain_retuning"
+      ],
+      "candidate_id": "retuned_domain_specific_pair",
+      "decision": "not_admitted",
+      "route_label": "TRANSFER_SCAFFOLD_BURDEN_NOT_MET",
+      "scaffold_passes": false,
+      "theorem_preconditions_pass": false
+    },
+    {
+      "allowed_action": "repair scaffold before theorem review",
+      "blockers": [
+        "positive_preservation_controls_missing",
+        "negative_nonfactorization_fixtures_missing",
+        "native_absorbers_not_granted"
+      ],
+      "candidate_id": "missing_native_controls_pair",
+      "decision": "not_admitted",
+      "route_label": "TRANSFER_SCAFFOLD_BURDEN_NOT_MET",
+      "scaffold_passes": false,
+      "theorem_preconditions_pass": false
+    },
+    {
+      "allowed_action": "future review target only; no claim movement",
+      "blockers": [],
+      "candidate_id": "synthetic_full_burden_pair",
+      "decision": "admitted_future_review_target",
+      "route_label": "TAF8_THEOREM_PACKET_SHAPE_ONLY",
+      "scaffold_passes": true,
+      "theorem_preconditions_pass": true
+    },
+    {
+      "allowed_action": "record blocker only",
+      "blockers": [
+        "claim_movement_requested",
+        "public_posture_requested"
+      ],
+      "candidate_id": "claim_public_posture_shortcut",
+      "decision": "blocked",
+      "route_label": "FORBIDDEN_GOVERNANCE_OR_EXTERNAL_SHORTCUT",
+      "scaffold_passes": true,
+      "theorem_preconditions_pass": false
+    }
+  ],
+  "not_claimed": "T540 does not prove a cross-domain theorem, promote kappa, promote a typed-gap category theorem, move claim status, move Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a TAF8 transfer-precondition gate only.",
+  "overall": {
+    "canon_movement": false,
+    "claim_movement": false,
+    "cross_repo_truth_movement": false,
+    "current_catalogue_blockers": [
+      "kappa_nonidentity_burden_not_cleared",
+      "typed_gap_transfer_morphism_not_cleared",
+      "direct_spread_or_preservation_theorem_missing"
+    ],
+    "current_catalogue_scaffold_passes": true,
+    "current_catalogue_theorem_preconditions_pass": false,
+    "external_publication": false,
+    "north_star_movement": false,
+    "public_posture_movement": false,
+    "synthetic_full_burden_admitted_for_review": true
+  },
+  "recommended_next": "Run T541_nonidentity_shadow_protection_witness_packet: instantiate one nonidentity kappa target and one typed-gap transfer target under the same predeclared shadow-protection spine, with native controls, absorber completion, and an explicit direct spread or preservation theorem. Keep it review-only unless the runnable artifact earns more.",
+  "source_summary": {
+    "kappa_catalogue_method_template": true,
+    "kappa_promotion_earned": false,
+    "kappa_synthetic_nonidentity_review_target": true,
+    "t499_verdict": "KAPPA_COMPOSITE_TEMPLATE_GATE_BUILT_METHOD_ONLY_NO_PROMOTION",
+    "t501_verdict": "TYPED_TRANSLATION_OBJECT_IDENTITY_STACK_BUILT_SCHEMA_PRESERVATION_ONLY",
+    "typed_gap_actual_direct_preservation_passes": false,
+    "typed_gap_actual_interface_preserved": true,
+    "typed_gap_actual_object_identity_passes": false,
+    "typed_gap_synthetic_exact_packet_review_target": true
+  },
+  "sources": {
+    "t492": "results/T492-typed-gap-category-bridge-v0.1-results.md",
+    "t499": "results/T499-kappa-composite-residual-template-gate-v0.1-results.md",
+    "t501": "results/T501-typed-translation-object-identity-stack-gate-v0.1-results.md",
+    "taf8_open_problem": "open-problems/cross-domain-shadow-protection-theorem.md"
+  },
+  "strongest_result": "The kappa and typed-gap catalogues now share an executable TAF8 transfer scaffold: both can be read through shadow, capability comparison, native controls, absorber completion, and demotion discipline. The current catalogues still do not earn a theorem. T499 remains method-template only until nonidentity target burdens clear, and T501 remains schema-preservation only until a transfer morphism or identity key plus direct preservation theorem is supplied.",
+  "theorem_status": "NOT_EARNED_CURRENT_CATALOGUES_NEED_NONIDENTITY_PACKET",
+  "transfer_preconditions": [
+    "at least two mature lanes",
+    "visible shadow, capability object, and native comparison declared",
+    "same proof spine before domain-specific examples",
+    "no per-domain retuning",
+    "positive preservation controls and negative non-factorization fixtures",
+    "native absorbers granted before residue is assigned",
+    "minimal enrichment or honest demoter named",
+    "no identity by construction",
+    "kappa nonidentity burden cleared",
+    "typed-gap transfer morphism or identity key cleared",
+    "direct spread, factorization, or preservation theorem supplied",
+    "no claim, canon, public-posture, external, or cross-repo movement"
+  ],
+  "verdict": "TAF8_TRANSFER_GATE_BUILT_CURRENT_CATALOGUES_SCAFFOLD_ONLY"
+}

@@ -1,5 +1,30 @@
 ﻿# Roadmap
 
+## 2026-07-12 T543 APRD Reconstruction-Boundary Descent Packet
+
+T543 executes the APRD packet selected by T542. It defines accessible
+provenance reconstruction debt as a set-valued boundary object: the typed set
+of required reconstruction sections that are absent from an observer's
+accessible sections, plus explicit underdeclared threshold/provenance
+obligations.
+
+The result is useful but bounded. APRD reproduces four declared burdens without
+scalar-rank proxy, target-statistic import, or Lorentzian reference import:
+T19 internal self-finality access debt, T66 threshold-rule debt, T66
+provenance-partition debt, and the T51/T58 Observer B phantom-gap descent debt.
+The T58 local-reversal control is blocked as conflict rather than phantom
+descent, and scalar-rank/target/Lorentzian shortcut controls reject.
+
+APRD does not yet earn source-law status because the T66 splits are explicitly
+absorbed by native detector threshold and provenance completion. The next
+useful packet is `t544_aprd_minimality_and_absorber_separation_gate`: test
+whether APRD has a minimal non-absorbed enrichment theorem fixed before
+outcomes, still set-valued, surviving same-neighbor-data completion, and
+separating at least one non-detector native fixture without reducing to scalar
+rank. No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, or cross-repo
+movement is earned by T543.
+
 ## 2026-07-12 T542 Post-Retirement Source-Law Reassessment Router
 
 T542 consumes the two live constraints left by the latest Track-1 work. T539

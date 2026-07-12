@@ -1,0 +1,244 @@
+{
+  "aprd_definition": {
+    "abbreviation": "APRD",
+    "forbidden_shortcuts": [
+      "scalar_rank_proxy",
+      "target_statistic_import",
+      "lorentzian_reference_import",
+      "post_hoc_threshold_or_provenance_choice"
+    ],
+    "inputs": [
+      "access_profile",
+      "provenance_axis",
+      "required_reconstruction_sections",
+      "accessible_sections",
+      "threshold_rule",
+      "local_apparent_order",
+      "ambient_descent_order",
+      "native_absorber_outcome"
+    ],
+    "kind": "set_valued_boundary_object",
+    "name": "accessible_provenance_reconstruction_debt",
+    "not_a_scalar": true,
+    "rule": "APRD is the typed set of required reconstruction sections that are absent from the observer-accessible sections, plus explicit underdeclared threshold/provenance obligations. It is evaluated only when the local apparent order is a suborder of the ambient descent order."
+  },
+  "aprd_status": "SUPPORTED_FEEDER_NATIVE_ABSORBER_BOUNDARY",
+  "artifact": "T543-aprd-reconstruction-boundary-descent-packet-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "APRD reproduces the declared reference burdens: t19_internal_self_finality_boundary, t66_threshold_rule_boundary, t66_provenance_partition_boundary, t51_t58_observer_b_phantom_gap."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "APRD rejects scalar-rank, target-statistic, and Lorentzian reference shortcuts in the hostile controls."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "A native absorber boundary is present."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "APRD is now a useful Track-1 feeder object, but source-law status requires a minimality and absorber-separation theorem."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T543 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "controls": [
+    {
+      "control_id": "t542_source_family_consumed",
+      "passed": true,
+      "reason": "T543 consumes the APRD successor selected by T542."
+    },
+    {
+      "control_id": "reference_burdens_reproduced",
+      "passed": true,
+      "reason": "T19, T66, and T51/T58 burdens reproduce under APRD."
+    },
+    {
+      "control_id": "positive_control_has_no_debt",
+      "passed": true,
+      "reason": "The external T19 observer has all required sections."
+    },
+    {
+      "control_id": "local_reversal_not_phantom",
+      "passed": true,
+      "reason": "T58's local-reversal control is blocked as conflict, not APRD."
+    },
+    {
+      "control_id": "scalar_rank_target_lorentzian_shortcuts_reject",
+      "passed": true,
+      "reason": "T542-forbidden shortcuts reject before source-law reading."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T543 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "evaluations": [
+    {
+      "case_id": "t19_internal_self_finality_boundary",
+      "classification": "aprd_reconstruction_boundary_detected",
+      "counts_as_source_law_evidence": true,
+      "debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "missing_sections": [
+        "R_self_finality_external_witness"
+      ],
+      "native_absorber_available": false,
+      "reason": "The required reconstruction sections are typed and missing from the declared access profile.",
+      "reconstruction_complete": false,
+      "reproduces_reference_burden": true,
+      "role": "reference_burden",
+      "source_test": "T19"
+    },
+    {
+      "case_id": "t66_threshold_rule_boundary",
+      "classification": "reproduced_but_native_absorbed",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [
+        "missing:information_threshold_rule",
+        "underdeclared:threshold_rule"
+      ],
+      "missing_sections": [
+        "information_threshold_rule"
+      ],
+      "native_absorber_available": true,
+      "reason": "APRD detects the debt, but a native completion explains the split under the same access/provenance data.",
+      "reconstruction_complete": false,
+      "reproduces_reference_burden": true,
+      "role": "reference_burden",
+      "source_test": "T66"
+    },
+    {
+      "case_id": "t66_provenance_partition_boundary",
+      "classification": "reproduced_but_native_absorbed",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [
+        "missing:provenance_partition",
+        "underdeclared:provenance_rule"
+      ],
+      "missing_sections": [
+        "provenance_partition"
+      ],
+      "native_absorber_available": true,
+      "reason": "APRD detects the debt, but a native completion explains the split under the same access/provenance data.",
+      "reconstruction_complete": false,
+      "reproduces_reference_burden": true,
+      "role": "reference_burden",
+      "source_test": "T66"
+    },
+    {
+      "case_id": "t51_t58_observer_b_phantom_gap",
+      "classification": "aprd_reconstruction_boundary_detected",
+      "counts_as_source_law_evidence": true,
+      "debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "missing_sections": [
+        "ambient_pair:e1_A_locking<=e3_composite_locking",
+        "provenance_record:r_A_locked"
+      ],
+      "native_absorber_available": false,
+      "reason": "The required reconstruction sections are typed and missing from the declared access profile.",
+      "reconstruction_complete": false,
+      "reproduces_reference_burden": true,
+      "role": "reference_burden",
+      "source_test": "T51/T58"
+    },
+    {
+      "case_id": "t19_external_meta_positive_control",
+      "classification": "positive_control_no_debt",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [],
+      "missing_sections": [],
+      "native_absorber_available": false,
+      "reason": "All declared reconstruction sections are accessible.",
+      "reconstruction_complete": true,
+      "reproduces_reference_burden": true,
+      "role": "positive_control",
+      "source_test": "T19"
+    },
+    {
+      "case_id": "t58_local_reversal_control",
+      "classification": "invalid_extension_boundary",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [
+        "missing:ambient_pair:a<=b"
+      ],
+      "missing_sections": [
+        "ambient_pair:a<=b"
+      ],
+      "native_absorber_available": false,
+      "reason": "Local apparent order is not a suborder of the ambient order, so the gap is a conflict boundary rather than phantom descent debt.",
+      "reconstruction_complete": false,
+      "reproduces_reference_burden": true,
+      "role": "hostile_control",
+      "source_test": "T58"
+    },
+    {
+      "case_id": "scalar_rank_proxy_control",
+      "classification": "rejected_forbidden_rank_or_import",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [],
+      "missing_sections": [],
+      "native_absorber_available": false,
+      "reason": "The packet used scalar rank, target statistics, or Lorentzian reference import, which T542 excluded before execution.",
+      "reconstruction_complete": true,
+      "reproduces_reference_burden": true,
+      "role": "hostile_control",
+      "source_test": "T542"
+    },
+    {
+      "case_id": "target_statistic_import_control",
+      "classification": "rejected_forbidden_rank_or_import",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [],
+      "missing_sections": [],
+      "native_absorber_available": false,
+      "reason": "The packet used scalar rank, target statistics, or Lorentzian reference import, which T542 excluded before execution.",
+      "reconstruction_complete": true,
+      "reproduces_reference_burden": true,
+      "role": "hostile_control",
+      "source_test": "T542"
+    },
+    {
+      "case_id": "lorentzian_reference_import_control",
+      "classification": "rejected_forbidden_rank_or_import",
+      "counts_as_source_law_evidence": false,
+      "debt_ids": [],
+      "missing_sections": [],
+      "native_absorber_available": false,
+      "reason": "The packet used scalar rank, target statistics, or Lorentzian reference import, which T542 excluded before execution.",
+      "reconstruction_complete": true,
+      "reproduces_reference_burden": true,
+      "role": "hostile_control",
+      "source_test": "T542"
+    }
+  ],
+  "native_absorber_collapse_found": true,
+  "not_claimed": "T543 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It defines and stress-tests an APRD boundary object only.",
+  "recommended_next": "Run t544_aprd_minimality_and_absorber_separation_gate. It should test whether APRD has a minimal non-absorbed enrichment theorem: the debt object must be fixed before outcomes, remain set-valued, survive same-neighbor-data completion, and separate at least one non-detector native fixture without reducing to scalar rank.",
+  "reproduced_reference_burdens": [
+    "t19_internal_self_finality_boundary",
+    "t66_threshold_rule_boundary",
+    "t66_provenance_partition_boundary",
+    "t51_t58_observer_b_phantom_gap"
+  ],
+  "source_t542_selected_family": "aprd_reconstruction_boundary_descent_family",
+  "source_t542_verdict": "taf11_post_retirement_router_selected_aprd_descent_packet",
+  "source_t58_extension_condition_necessary": true,
+  "source_t58_t51_gap_equals_phantoms": true,
+  "source_t66_independence_verdict_flips": true,
+  "source_t66_threshold_verdict_flips": true,
+  "strongest_reading": "APRD is a coherent set-valued reconstruction-boundary object for the declared fixtures: it reproduces T19 access-boundary debt, T66 threshold/provenance debt, and T51/T58 phantom-gap descent debt without scalar rank, target statistics, or Lorentzian reference import. It does not yet earn a source law because the T66 splits are explicitly absorbed by native detector threshold and provenance completion.",
+  "taf11_update": "TAF11 remains open. T543 gives APRD a real executable object, but source-law status waits on a minimality and native-absorber separation gate.",
+  "taf8_update": "TAF8 remains waiting for a domain-native packet. APRD is a possible feeder because it supplies typed-gap and reconstruction boundary objects, but it does not prove cross-domain shadow protection.",
+  "verdict": "aprd_boundary_object_built_source_law_not_earned"
+}

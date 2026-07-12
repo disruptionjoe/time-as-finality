@@ -12,13 +12,13 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after Wave 2
-T534/T535, the T536 successor-router pass, and the T537 source-family packet on
-2026-07-12:
+Generated ranking from `attention/taf_priority_condorcet.py` after Wave 3
+T538 on 2026-07-12:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T537 selected the descent-obstruction resolution family; the next move
-   must compute or kill that source-law packet without target import.
+   Why: T538 narrowed the descent-obstruction family as underconstrained; the
+   next move must derive a nonprogrammatic resolution-depth generator or retire
+   that family.
 2. TAF8 - Cross-domain shadow-protection theorem target.
    Why: the kappa and typed-gap catalogues suggest reusable structure, but
    identity and independent-motivation burdens are still open.
@@ -29,8 +29,8 @@ T534/T535, the T536 successor-router pass, and the T537 source-family packet on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: if the T538 source-law packet survives, test whether its objects descend
-   toward causal-set or Lorentzian structure without coordinate import.
+   Why: still blocked until TAF11 supplies a nonprogrammatic source law; T538
+   showed the current ordered-depth packet is programmable.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -134,10 +134,10 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, top priority | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T537 completed. The next route is `t538_descent_obstruction_resolution_source_law_packet`: compute finite record-cover fixtures for the selected descent-obstruction resolution family and reject it if hostile controls fail. |
+| TAF11 | open, top priority | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T538 completed. The selected descent-obstruction family survived shallow invariance diagnostics but was NARROWED because free ordered resolution depths can program antichain, total-chain, diamond, and fork relations. The next route is `t539_resolution_depth_generator_packet`: derive depths from local record-cover, restriction-map, and compatible-section data or retire this family. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T537 only selected a family for T538 computation. |
+| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T538 showed the current descent-obstruction packet is programmable without a depth generator. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
@@ -147,13 +147,12 @@ Discipline:
 
 When Joe opens the lane, route the next swing to TAF11:
 
-Run T538 as a descent-obstruction resolution source-law packet. It should
-instantiate finite record-cover fixtures for the selected family, compute the
-obstruction-resolution relation before reading target ordering statistics, and
-reject the family if it fails cover-relabel invariance, restriction-map
-isomorphism invariance, total-chain or antichain collapse controls, or the
-no-target-import rule.
+Run T539 as a resolution-depth generator packet. It must derive ordered depths
+from local record-cover, restriction-map, and compatible-section data rather
+than accepting pairwise depths as free inputs. If no nonprogrammatic generator
+exists, retire the descent-obstruction resolution family and re-rank TAF11
+against TAF8.
 
 TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
-until TAF11 supplies a law through T538 or TAF12 supplies a real noncompletion
-target.
+until TAF11 supplies a law through a nonprogrammatic generator or TAF12 supplies
+a real noncompletion target.

@@ -23,8 +23,9 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T537 selected the descent-obstruction resolution family; the next "
-            "move must compute or kill that source-law packet without target import."
+            "T538 narrowed the descent-obstruction family as underconstrained; "
+            "the next move must derive a nonprogrammatic resolution-depth generator "
+            "or retire that family."
         ),
     },
     "TAF12": {
@@ -44,8 +45,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "If the T538 source-law packet survives, test whether its objects "
-            "descend toward causal-set or Lorentzian structure without coordinate import."
+            "Still blocked until TAF11 supplies a nonprogrammatic source law; "
+            "T538 showed the current ordered-depth packet is programmable."
         ),
     },
     "TAF5": {

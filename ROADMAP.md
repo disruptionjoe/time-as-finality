@@ -1,5 +1,25 @@
 ﻿# Roadmap
 
+## 2026-07-12 T541 Nonidentity Shadow-Protection Witness Packet
+
+T541 executes the TAF8 nonidentity witness-packet gate named by T540. It
+combines T466's synthetic nonidentity kappa packet shape and T501's synthetic
+exact-object preservation packet under one predeclared TAF8 spine: shadow
+object, capability object, native comparison, positive controls, negative
+controls, absorber completion, demoter, and no per-domain retuning.
+
+The result is review-only but useful. The current T499/T501 catalogue pair
+still fails the nonidentity and typed-gap transfer burdens. The synthetic
+T466/T501 pair clears the executable packet shape, but it is not domain-native
+and therefore does not earn a cross-domain theorem.
+
+The next TAF8 swing should wait for a real domain-native packet with the same
+spine, an independent kappa nonidentity target, a typed-gap transfer morphism
+or identity key, a direct preservation theorem, and native absorber completion.
+Until then, TAF8 remains executable but review-only. No claim-ledger, Canon
+Index, canon-verdict, public-posture, external-publication, or cross-repo
+movement is earned by T541.
+
 ## 2026-07-12 T540 Cross-Domain Shadow-Protection Transfer Gate
 
 T540 executes the TAF8 transfer-precondition gate routed by T539. It consumes

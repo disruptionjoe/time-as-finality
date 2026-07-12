@@ -73,9 +73,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T540 made the current kappa plus typed-gap catalogue scaffold-only; "
-            "the next value is a nonidentity witness packet under one "
-            "predeclared shadow-protection spine."
+            "T541 built the review-only nonidentity packet gate; the next value "
+            "is a real domain-native packet under the same predeclared spine."
         ),
     },
 }

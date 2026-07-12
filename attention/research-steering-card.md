@@ -12,13 +12,12 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T540 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T541 on
 2026-07-12:
 
 1. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T540 turned the kappa plus typed-gap catalogue into a scaffold-only
-   transfer gate; the next value is a nonidentity witness packet, not another
-   router.
+   Why: T541 built the review-only nonidentity packet gate; the next value is a
+   real domain-native packet under the same predeclared spine.
 2. TAF11 - North Star source-law reassessment beyond the finite-generator route.
    Why: T539 retired the current descent-obstruction family as a programmable
    scalar-rank channel; TAF11 needs a genuinely new non-rank family before it
@@ -142,17 +141,16 @@ Discipline:
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, top priority theorem target | Can shadow protection transfer across domains without identity-by-construction? | T540 completed the transfer-precondition gate. The current T499/T501 catalogue pair is scaffold-only: kappa nonidentity, typed-gap transfer morphism, and direct preservation/spread theorem burdens remain open. |
+| TAF8 | open, top priority theorem target | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. The current T499/T501 catalogue pair remains scaffold-only; the synthetic T466/T501 pair clears the executable packet shape but is not domain-native. |
 
 ## next_action
 
 When Joe opens the lane, keep the next swing on TAF8:
 
-Build `T541_nonidentity_shadow_protection_witness_packet`: one nonidentity
-kappa target and one typed-gap transfer target under the same predeclared
-shadow-protection spine, with native controls, absorber completion, and an
-explicit direct spread or preservation theorem. Keep it review-only unless the
-runnable artifact earns more.
+Use the T541 gate only when a real domain-native packet is available: same
+predeclared spine, independent kappa nonidentity target, typed-gap transfer
+morphism or identity key, direct preservation theorem, and native absorber
+completion. Keep it review-only unless the runnable artifact earns more.
 
 TAF12 may run only if a real data-bearing packet exists. TAF3 remains blocked
 until TAF11 supplies a genuinely new non-rank source-law family or TAF12

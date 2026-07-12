@@ -8,6 +8,7 @@ and returns the top few ranked items in order, each with a one-line why, and
 nothing else.
 
 Seed assessment: `attention/initial-council-assessment-2026-07-12.md`.
+Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 

@@ -1,0 +1,309 @@
+{
+  "aprd_gate_status": "FINITE_MINIMAL_SURVIVOR_FOUND_SOURCE_LAW_NOT_EARNED",
+  "artifact": "T544-aprd-minimality-absorber-separation-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Non-detector APRD survivor fixtures cleared the finite gate: t51_t58_observer_b_non_detector_separator, t19_self_finality_external_witness_separator, record_transport_same_rank_separator."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Native absorber completion still absorbs: t66_detector_threshold_absorber_control."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "APRD did not reduce to scalar rank."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The finite survivor justifies a refinement-stability packet, not source-law, claim-ledger, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T544 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "controls": [
+    {
+      "control_id": "source_t543_consumed",
+      "passed": true,
+      "reason": "T544 consumes the APRD object built by T543."
+    },
+    {
+      "control_id": "expected_classifications_match",
+      "passed": true,
+      "reason": "Every fixture follows its predeclared gate branch."
+    },
+    {
+      "control_id": "detector_absorber_still_absorbs",
+      "passed": true,
+      "reason": "T66-style detector threshold debt is absorbed by native completion."
+    },
+    {
+      "control_id": "non_detector_minimal_survivor_exists",
+      "passed": true,
+      "reason": "At least one non-detector APRD fixture survives allowed completion."
+    },
+    {
+      "control_id": "scalar_rank_not_sufficient",
+      "passed": true,
+      "reason": "Two survivor fixtures share scalar rank while carrying distinct debt labels, and scalar-only replacement rejects."
+    },
+    {
+      "control_id": "minimality_and_posthoc_controls_reject",
+      "passed": true,
+      "reason": "Padding and outcome-selected debt cannot clear the APRD gate."
+    },
+    {
+      "control_id": "positive_control_has_no_debt",
+      "passed": true,
+      "reason": "Full access produces no reconstruction debt."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T544 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "evaluations": [
+    {
+      "absorbed_by_native_completion": true,
+      "case_id": "t66_detector_threshold_absorber_control",
+      "classification": "native_absorbed_after_same_neighbor_completion",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:information_threshold_rule",
+        "underdeclared:threshold_rule"
+      ],
+      "domain": "detector_threshold_provenance",
+      "expected_classification": "native_absorbed_after_same_neighbor_completion",
+      "minimal": false,
+      "non_detector_survivor": false,
+      "reason": "Same-neighbor-data completion supplies the missing detector threshold/provenance sections under the native absorber.",
+      "residual_debt_ids": [],
+      "role": "native_absorber_control",
+      "same_neighbor_completion_ids": [
+        "missing:information_threshold_rule",
+        "underdeclared:threshold_rule"
+      ],
+      "scalar_rank_signature": 2,
+      "separation_requires": [],
+      "source_test": "T66"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "t51_t58_observer_b_non_detector_separator",
+      "classification": "minimal_nonabsorbed_separator",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "domain": "record_provenance_descent",
+      "expected_classification": "minimal_nonabsorbed_separator",
+      "minimal": true,
+      "non_detector_survivor": true,
+      "reason": "The predeclared debt set remains after allowed completion and each atom is load-bearing for the finite separation.",
+      "residual_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "role": "non_detector_survivor",
+      "same_neighbor_completion_ids": [
+        "local_pair:e2_B_locking<=e3_composite_locking"
+      ],
+      "scalar_rank_signature": 2,
+      "separation_requires": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_test": "T51/T58"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "t19_self_finality_external_witness_separator",
+      "classification": "minimal_nonabsorbed_separator",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "domain": "self_finality_record_access",
+      "expected_classification": "minimal_nonabsorbed_separator",
+      "minimal": true,
+      "non_detector_survivor": true,
+      "reason": "The predeclared debt set remains after allowed completion and each atom is load-bearing for the finite separation.",
+      "residual_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "role": "non_detector_survivor",
+      "same_neighbor_completion_ids": [
+        "R_obs_internal_record"
+      ],
+      "scalar_rank_signature": 1,
+      "separation_requires": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_test": "T19"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "record_transport_same_rank_separator",
+      "classification": "minimal_nonabsorbed_separator",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "domain": "record_transport",
+      "expected_classification": "minimal_nonabsorbed_separator",
+      "minimal": true,
+      "non_detector_survivor": true,
+      "reason": "The predeclared debt set remains after allowed completion and each atom is load-bearing for the finite separation.",
+      "residual_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "role": "scalar_rank_discriminator",
+      "same_neighbor_completion_ids": [
+        "declared:local_transport_edge"
+      ],
+      "scalar_rank_signature": 2,
+      "separation_requires": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_test": "finite_record_transport_control"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "padded_aprd_minimality_control",
+      "classification": "rejected_nonminimal_padding",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked",
+        "padding:rank_hint"
+      ],
+      "domain": "record_provenance_descent",
+      "expected_classification": "rejected_nonminimal_padding",
+      "minimal": false,
+      "non_detector_survivor": false,
+      "reason": "The APRD set contains debt atoms not needed for separation.",
+      "residual_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked",
+        "padding:rank_hint"
+      ],
+      "role": "hostile_control",
+      "same_neighbor_completion_ids": [],
+      "scalar_rank_signature": 3,
+      "separation_requires": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_test": "T51/T58"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "scalar_rank_collapse_control",
+      "classification": "rejected_scalar_rank_collapse",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "rank:2"
+      ],
+      "domain": "rank_proxy",
+      "expected_classification": "rejected_scalar_rank_collapse",
+      "minimal": false,
+      "non_detector_survivor": false,
+      "reason": "The fixture replaced the APRD debt set with a scalar count.",
+      "residual_debt_ids": [
+        "rank:2"
+      ],
+      "role": "hostile_control",
+      "same_neighbor_completion_ids": [],
+      "scalar_rank_signature": 1,
+      "separation_requires": [
+        "rank:2"
+      ],
+      "source_test": "T542"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "post_hoc_outcome_leakage_control",
+      "classification": "rejected_post_hoc_outcome_leakage",
+      "classification_matches_expected": true,
+      "debt_ids": [
+        "missing:chosen_after_verdict"
+      ],
+      "domain": "outcome_selected_debt",
+      "expected_classification": "rejected_post_hoc_outcome_leakage",
+      "minimal": false,
+      "non_detector_survivor": false,
+      "reason": "The debt object was not fixed before outcome inspection.",
+      "residual_debt_ids": [
+        "missing:chosen_after_verdict"
+      ],
+      "role": "hostile_control",
+      "same_neighbor_completion_ids": [],
+      "scalar_rank_signature": 1,
+      "separation_requires": [
+        "missing:chosen_after_verdict"
+      ],
+      "source_test": "T544"
+    },
+    {
+      "absorbed_by_native_completion": false,
+      "case_id": "full_access_positive_control",
+      "classification": "positive_control_no_debt",
+      "classification_matches_expected": true,
+      "debt_ids": [],
+      "domain": "self_finality_record_access",
+      "expected_classification": "positive_control_no_debt",
+      "minimal": false,
+      "non_detector_survivor": false,
+      "reason": "No reconstruction debt is present after declared access.",
+      "residual_debt_ids": [],
+      "role": "positive_control",
+      "same_neighbor_completion_ids": [],
+      "scalar_rank_signature": 0,
+      "separation_requires": [],
+      "source_test": "T19"
+    }
+  ],
+  "gate_definition": {
+    "name": "aprd_minimality_and_absorber_separation_gate",
+    "required_properties": [
+      "debt_object_fixed_before_outcomes",
+      "set_valued_debt_ids_not_scalar_rank",
+      "same_neighbor_data_completion_tested",
+      "native_absorber_cases_absorb_when_completion_is_legitimate",
+      "at_least_one_non_detector_fixture_survives_completion",
+      "every_surviving_debt_atom_is_load_bearing"
+    ],
+    "source": "T543 APRD object",
+    "survivor_reading": "A finite survivor keeps APRD alive as a feeder object. It is not a source law until the debt object is stable under refinement, restriction, relabeling, and native morphisms."
+  },
+  "native_absorber_cases": [
+    "t66_detector_threshold_absorber_control"
+  ],
+  "non_detector_survivors": [
+    "t51_t58_observer_b_non_detector_separator",
+    "t19_self_finality_external_witness_separator",
+    "record_transport_same_rank_separator"
+  ],
+  "not_claimed": "T544 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a finite APRD minimality and absorber-separation gate only.",
+  "recommended_next": "Run t545_aprd_refinement_stability_packet. It should test whether the surviving APRD debt sets are stable under refinement, relabeling, and restriction maps. If the survivor changes under harmless presentation changes, the route should narrow or retire before any theorem reading.",
+  "rejected_controls": [
+    "padded_aprd_minimality_control",
+    "scalar_rank_collapse_control",
+    "post_hoc_outcome_leakage_control"
+  ],
+  "same_rank_distinct_debt_pair_found": true,
+  "source_t543_status": "SUPPORTED_FEEDER_NATIVE_ABSORBER_BOUNDARY",
+  "source_t543_verdict": "aprd_boundary_object_built_source_law_not_earned",
+  "strongest_reading": "APRD survives the finite T544 gate as a predeclared, set-valued, minimal boundary object on non-detector record/provenance fixtures, while detector threshold/provenance cases remain absorbed by native completion. This keeps TAF11 alive as a source-law feeder but does not establish a source law.",
+  "taf11_update": "TAF11 remains the live Track-1 route. T544 finds a finite non-detector APRD survivor, but source-law status still waits on refinement stability and functorial behavior.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T544 supplies a cleaner APRD feeder, not a shadow-protection transfer theorem.",
+  "verdict": "aprd_minimality_gate_finds_nonabsorbed_provenance_survivor"
+}

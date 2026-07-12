@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T543 built APRD as a set-valued reconstruction-boundary object, "
-            "but source-law status waits on minimality and absorber separation."
+            "T544 found finite non-detector APRD survivors, but source-law "
+            "status waits on refinement stability and functorial behavior."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked until APRD or another TAF11 route supplies a "
-            "nonprogrammatic source-law survivor."
+            "Still blocked until APRD or another TAF11 route survives "
+            "refinement and restriction-map stability."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T543 supplies typed-gap and reconstruction-boundary feeder objects, "
-            "but no domain-native cross-domain packet is in hand."
+            "T544 supplies a cleaner APRD feeder, but no domain-native "
+            "cross-domain packet is in hand."
         ),
     },
 }

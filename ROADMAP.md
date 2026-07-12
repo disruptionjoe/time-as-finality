@@ -1,5 +1,28 @@
 ﻿# Roadmap
 
+## 2026-07-12 T544 APRD Minimality And Absorber Separation Gate
+
+T544 executes the APRD gate selected by T543. It tests whether accessible
+provenance reconstruction debt remains useful after three stricter checks:
+same-neighbor-data completion, minimality of every surviving debt atom, and
+scalar-rank collapse controls.
+
+The result keeps APRD alive but bounded. Detector threshold/provenance debt is
+still absorbed by native completion, so T544 does not reverse the T66 absorber
+result. Non-detector record/provenance fixtures do survive: the T51/T58
+Observer B separator, the T19 external-witness separator, and a same-rank
+record-transport control all retain predeclared set-valued debt after allowed
+completion. The same-rank control prevents reducing APRD to scalar debt count,
+while padded and post-hoc debt controls reject.
+
+APRD now has finite feeder evidence for a minimal non-absorbed boundary object,
+but it still does not earn source-law status. The next useful packet is
+`t545_aprd_refinement_stability_packet`: test whether the surviving APRD debt
+sets are stable under refinement, relabeling, and restriction maps before any
+theorem reading. No source law, shadow-protection theorem, claim-ledger, Canon
+Index, canon-verdict, public-posture, North Star, external-publication, or
+cross-repo movement is earned by T544.
+
 ## 2026-07-12 T543 APRD Reconstruction-Boundary Descent Packet
 
 T543 executes the APRD packet selected by T542. It defines accessible

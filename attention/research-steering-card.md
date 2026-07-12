@@ -12,24 +12,24 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T543 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T544 on
 2026-07-12:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T543 built APRD as a set-valued reconstruction-boundary object, but
-   source-law status waits on minimality and absorber separation.
+   Why: T544 found finite non-detector APRD survivors, but source-law status
+   waits on refinement stability and functorial behavior.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T543 supplies typed-gap and reconstruction-boundary feeder objects, but
-   no domain-native cross-domain packet is in hand.
+   Why: T544 supplies a cleaner APRD feeder, but no domain-native cross-domain
+   packet is in hand.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
-   Why: the C(R) line keeps losing to declared-boundary and completion
+   Why: The C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
 4. TAF12 - Data-bearing C(R) packet acquisition for TAF10.
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: still blocked until APRD or another TAF11 route supplies a
-   nonprogrammatic source-law survivor.
+   Why: Still blocked until APRD or another TAF11 route survives refinement and
+   restriction-map stability.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -133,23 +133,23 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, APRD feeder built | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T543 defined APRD as a set-valued reconstruction-boundary object and reproduced T19/T66/T51/T58 burdens, but source-law status is not earned because T66 is native-absorber-completed. Next packet: `t544_aprd_minimality_and_absorber_separation_gate`. |
+| TAF11 | open, APRD survivor built | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T544 found finite minimal non-detector APRD survivors while preserving the T66 native-absorber boundary. Source-law status is not earned. Next packet: `t545_aprd_refinement_stability_packet`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T543 leaves APRD needing minimality and absorber separation before TAF4 can move. |
+| TAF4 | blocked on TAF11 survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T544 leaves APRD needing refinement and restriction-map stability before TAF4 can move. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T543 supplies APRD typed-gap/reconstruction-boundary feeder objects, but no domain-native cross-domain packet exists under the same spine. |
+| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T544 supplies a cleaner APRD feeder, but no domain-native cross-domain packet exists under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the next APRD separation gate:
+When Joe opens the lane, run the next APRD stability gate:
 
-Run `t544_aprd_minimality_and_absorber_separation_gate`. Test whether APRD has
-a minimal non-absorbed enrichment theorem: the debt object must be fixed before
-outcomes, remain set-valued, survive same-neighbor-data completion, and separate
-at least one non-detector native fixture without reducing to scalar rank.
+Run `t545_aprd_refinement_stability_packet`. Test whether the surviving APRD
+debt sets are stable under refinement, relabeling, and restriction maps. If the
+survivor changes under harmless presentation changes, narrow or retire the
+route before any theorem reading.
 
 Use the T541 TAF8 gate only when a real domain-native packet is available under
 the same predeclared spine. TAF12 may run only if a real data-bearing packet

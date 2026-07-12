@@ -23,9 +23,9 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T538 narrowed the descent-obstruction family as underconstrained; "
-            "the next move must derive a nonprogrammatic resolution-depth generator "
-            "or retire that family."
+            "T539 retired the current descent-obstruction family as a programmable "
+            "scalar-rank channel; TAF11 needs a genuinely new non-rank family before "
+            "it returns to the front."
         ),
     },
     "TAF12": {
@@ -46,7 +46,7 @@ ITEMS = {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
             "Still blocked until TAF11 supplies a nonprogrammatic source law; "
-            "T538 showed the current ordered-depth packet is programmable."
+            "T539 retired the current descent-obstruction route."
         ),
     },
     "TAF5": {
@@ -73,8 +73,9 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "The kappa and typed-gap catalogues suggest reusable structure, but "
-            "identity and independent-motivation burdens are still open."
+            "T539 removed the current TAF11 family from the front; the kappa and "
+            "typed-gap catalogues are now the highest-value theorem target with "
+            "a reusable shadow-protection burden."
         ),
     },
 }
@@ -82,8 +83,8 @@ ITEMS = {
 
 BALLOTS = {
     "orthodox_professor": [
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF4",
         "TAF3",
         "TAF12",
@@ -92,8 +93,8 @@ BALLOTS = {
         "TAF7",
     ],
     "heterodox_rigorous_professor": [
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF3",
         "TAF4",
         "TAF5",
@@ -102,9 +103,9 @@ BALLOTS = {
         "TAF7",
     ],
     "commercial_scientist": [
+        "TAF8",
         "TAF11",
         "TAF12",
-        "TAF8",
         "TAF3",
         "TAF7",
         "TAF6",
@@ -112,8 +113,8 @@ BALLOTS = {
         "TAF5",
     ],
     "philosopher_of_science": [
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF3",
         "TAF12",
         "TAF4",
@@ -122,9 +123,9 @@ BALLOTS = {
         "TAF7",
     ],
     "wild_frontier_scientist": [
+        "TAF8",
         "TAF11",
         "TAF4",
-        "TAF8",
         "TAF3",
         "TAF5",
         "TAF12",
@@ -132,9 +133,9 @@ BALLOTS = {
         "TAF7",
     ],
     "causal_set_lorentzian": [
+        "TAF8",
         "TAF11",
         "TAF4",
-        "TAF8",
         "TAF3",
         "TAF12",
         "TAF5",
@@ -143,8 +144,8 @@ BALLOTS = {
     ],
     "quantum_information_decoherence": [
         "TAF6",
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF12",
         "TAF3",
         "TAF7",
@@ -154,8 +155,8 @@ BALLOTS = {
     "distributed_systems_consensus": [
         "TAF12",
         "TAF3",
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF7",
         "TAF6",
         "TAF5",
@@ -164,16 +165,16 @@ BALLOTS = {
     "resource_theory_thermodynamics": [
         "TAF12",
         "TAF3",
-        "TAF11",
         "TAF6",
         "TAF8",
+        "TAF11",
         "TAF4",
         "TAF5",
         "TAF7",
     ],
     "category_sheaf_obstruction": [
-        "TAF11",
         "TAF8",
+        "TAF11",
         "TAF4",
         "TAF5",
         "TAF3",

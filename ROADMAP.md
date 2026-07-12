@@ -1,5 +1,23 @@
 ﻿# Roadmap
 
+## 2026-07-12 T539 Resolution-Depth Generator Packet
+
+T539 executes the generator gate opened by T538. It removes the free pairwise
+ordered-depth table and derives depths from cover ranks, local record sections,
+and compatible-section blocks.
+
+The result is a useful negative result. The generated-depth recipe is
+target-blind and relabel-invariant, but it collapses to a programmable scalar
+activation-rank channel. Antichain, total-chain, diamond, and fork controls can
+be realized by moving compatible local sections across ranks, so the current
+`descent_obstruction_resolution_family` route is retired rather than promoted
+or wrapped in another router.
+
+The next swing should route to TAF8, the cross-domain shadow-protection theorem
+target, unless TAF11 supplies a genuinely new non-rank source-law family. S1
+remains `requires_added_assumption`; no claim-ledger, canon, public-posture,
+external-publication, or cross-repo movement is earned.
+
 ## 2026-07-12 T537 Source-Law Family And Falsifier Packet
 
 T537 executes the family-selection packet that T536 selected for the TAF11

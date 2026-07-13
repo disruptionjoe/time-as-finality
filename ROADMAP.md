@@ -1,5 +1,29 @@
 ﻿# Roadmap
 
+## 2026-07-13 T555 Observerse Protocol-Stack Absorber-Separation Gate
+
+T555 executes the absorber-separation gate selected by T554. It preserves
+T554's bounded class and minimal-layer payload, then grants mature protocol,
+consensus/distributed-systems, governance, and record-provenance absorbers their
+normal state and comparison rights before any source-law reading.
+
+The packet finds that the strong Observerse source-law reading is not separated
+after same-neighbor-data completion. Protocol/state-machine completion absorbs
+issuance, admissibility, and governance pressure; consensus/distributed-systems
+completion absorbs sybil/finality and consensus pressure; governance-process
+completion absorbs the near-term/full-horizon governance split; and
+record-provenance completion absorbs the trace/approval/contradiction structure.
+
+T555 names the next TAF11 packet:
+`t556_observerse_protocol_stack_post_absorber_route_reset_gate`. That packet
+should reset the route after absorber completion: either name a fresh source-law
+family with absorbers predeclared, or park the Observerse protocol-stack route
+as audit translation residue.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T555.
+
 ## 2026-07-13 T554 Observerse Protocol-Stack Minimality Gate
 
 T554 executes the layer-minimality gate selected by T553. It consumes T553 as

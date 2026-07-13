@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T554 cleared bounded-class layer minimality and selected T555 "
-            "absorber separation before any promotion."
+            "T555 absorbed the strong Observerse source-law reading after "
+            "same-neighbor-data completion and selected T556 route reset."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T554: bounded-native layer minimality is not "
-            "a finite-to-continuum bridge."
+            "Still blocked after T555: absorber completion is not a "
+            "finite-to-continuum bridge."
         ),
     },
     "TAF5": {
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T554 preserved the T541 wait state: internal TAF11 minimality "
+            "T555 preserved the T541 wait state: internal TAF11 absorber "
             "work is not a domain-native cross-domain packet."
         ),
     },

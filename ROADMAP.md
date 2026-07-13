@@ -1,5 +1,27 @@
 ﻿# Roadmap
 
+## 2026-07-12 T547 APRD Held-Out Prediction Packet
+
+T547 executes the held-out prediction packet selected by T546. It tests whether
+the frozen APRD object predicts native fixture reconstruction debt before
+target-outcome labels are read or the rule is retuned.
+
+The result keeps APRD alive but still bounded. A complete record-transport
+fixture predicts no debt. Record-transport missing-certificate, T51/T58
+missing-provenance, and T19 missing-external-witness fixtures predict their
+APRD debt sets before label reveal. Outcome-label leakage, proxy-label reading,
+post-hoc retuning, hidden support change, non-native fixture import, and
+source-law overclaiming all reject.
+
+APRD now has finite presentation-stability, native-composite, and held-out
+prediction evidence, but it still does not earn source-law status. The next
+useful packet is `t548_aprd_cross_family_prediction_stress_packet`: stress the
+frozen APRD predictor on a distinct native family or adversarial cross-family
+fixture before any finite-to-continuum or source-law reading. No source law,
+shadow-protection theorem, claim-ledger, Canon Index, canon-verdict,
+public-posture, North Star, external-publication, or cross-repo movement is
+earned by T547.
+
 ## 2026-07-12 T546 APRD Functoriality Naturality Packet
 
 T546 executes the functoriality packet selected by T545. It tests whether APRD

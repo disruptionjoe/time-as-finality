@@ -1,0 +1,372 @@
+{
+  "accepted_prediction_cases": [
+    "heldout_record_transport_complete_clear",
+    "heldout_record_transport_missing_certificate",
+    "heldout_t51_missing_provenance_record",
+    "heldout_t19_missing_external_witness"
+  ],
+  "aprd_prediction_status": "HELD_OUT_PREDICTION_PRESSURE_SOURCE_LAW_NOT_EARNED",
+  "artifact": "T547-aprd-held-out-prediction-packet-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Frozen APRD predictor matched held-out native fixtures: heldout_record_transport_complete_clear, heldout_record_transport_missing_certificate, heldout_t51_missing_provenance_record, heldout_t19_missing_external_witness."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Clear held-out fixture predicted no debt: heldout_record_transport_complete_clear."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Debt-bearing held-out fixtures predicted APRD debt: heldout_record_transport_missing_certificate, heldout_t51_missing_provenance_record, heldout_t19_missing_external_witness."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Prediction shortcut controls rejected: control_outcome_label_leakage, control_proxy_label_reading, control_posthoc_retuning, control_hidden_support_change, control_non_native_cross_family_fixture, control_source_law_overclaim."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Held-out finite prediction justifies cross-family stress, not source-law, claim-ledger, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T547 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "clear_prediction_cases": [
+    "heldout_record_transport_complete_clear"
+  ],
+  "controls": [
+    {
+      "control_id": "source_t546_consumed",
+      "passed": true,
+      "reason": "T547 consumes the APRD functoriality object built by T546."
+    },
+    {
+      "control_id": "expected_classifications_match",
+      "passed": true,
+      "reason": "Every fixture follows its predeclared prediction branch."
+    },
+    {
+      "control_id": "clear_native_case_predicted",
+      "passed": true,
+      "reason": "A held-out complete native fixture predicts no APRD debt."
+    },
+    {
+      "control_id": "debt_bearing_native_cases_predicted",
+      "passed": true,
+      "reason": "Held-out record-transport, T51/T58, and T19 native debt fixtures are predicted before target label reveal."
+    },
+    {
+      "control_id": "accepted_predictions_match_revealed_labels",
+      "passed": true,
+      "reason": "Every accepted held-out prediction matches the revealed label."
+    },
+    {
+      "control_id": "hostile_prediction_shortcuts_reject",
+      "passed": true,
+      "reason": "Outcome leakage, proxy labels, retuning, hidden support, non-native fixtures, and source-law overclaiming all reject."
+    },
+    {
+      "control_id": "source_law_status_not_earned",
+      "passed": true,
+      "reason": "Finite held-out prediction pressure is not promoted to source-law status."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T547 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "debt_prediction_cases": [
+    "heldout_record_transport_missing_certificate",
+    "heldout_t51_missing_provenance_record",
+    "heldout_t19_missing_external_witness"
+  ],
+  "evaluations": [
+    {
+      "accepted_prediction": true,
+      "actual_debt_ids": [],
+      "case_id": "heldout_record_transport_complete_clear",
+      "classification": "held_out_clear_prediction_matched",
+      "classification_matches_expected": true,
+      "clear_prediction": true,
+      "debt_prediction": false,
+      "expected_classification": "held_out_clear_prediction_matched",
+      "family": "record_transport",
+      "observed_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "predicted_debt_ids": [],
+      "prediction_matched": true,
+      "reason": "The frozen predictor correctly predicted no APRD debt.",
+      "rejected": false,
+      "required_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "role": "native_clear_control"
+    },
+    {
+      "accepted_prediction": true,
+      "actual_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "heldout_record_transport_missing_certificate",
+      "classification": "held_out_debt_prediction_matched",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": true,
+      "expected_classification": "held_out_debt_prediction_matched",
+      "family": "record_transport",
+      "observed_support_ids": [
+        "source_record_support"
+      ],
+      "predicted_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "prediction_matched": true,
+      "reason": "The frozen predictor correctly predicted APRD debt.",
+      "rejected": false,
+      "required_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "role": "native_debt_control"
+    },
+    {
+      "accepted_prediction": true,
+      "actual_debt_ids": [
+        "missing:provenance_record:r_A_locked"
+      ],
+      "case_id": "heldout_t51_missing_provenance_record",
+      "classification": "held_out_debt_prediction_matched",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": true,
+      "expected_classification": "held_out_debt_prediction_matched",
+      "family": "t51_t58_locking",
+      "observed_support_ids": [
+        "ambient_pair:e1_A_locking<=e3_composite_locking"
+      ],
+      "predicted_debt_ids": [
+        "missing:provenance_record:r_A_locked"
+      ],
+      "prediction_matched": true,
+      "reason": "The frozen predictor correctly predicted APRD debt.",
+      "rejected": false,
+      "required_support_ids": [
+        "ambient_pair:e1_A_locking<=e3_composite_locking",
+        "provenance_record:r_A_locked"
+      ],
+      "role": "native_debt_control"
+    },
+    {
+      "accepted_prediction": true,
+      "actual_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "case_id": "heldout_t19_missing_external_witness",
+      "classification": "held_out_debt_prediction_matched",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": true,
+      "expected_classification": "held_out_debt_prediction_matched",
+      "family": "t19_external_witness",
+      "observed_support_ids": [],
+      "predicted_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "prediction_matched": true,
+      "reason": "The frozen predictor correctly predicted APRD debt.",
+      "rejected": false,
+      "required_support_ids": [
+        "R_self_finality_external_witness"
+      ],
+      "role": "native_debt_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "control_outcome_label_leakage",
+      "classification": "rejected_outcome_label_leakage",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_outcome_label_leakage",
+      "family": "record_transport",
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The target outcome label is visible before prediction.",
+      "rejected": true,
+      "required_support_ids": [
+        "transport_compatibility_certificate"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [
+        "missing:provenance_record:r_A_locked"
+      ],
+      "case_id": "control_proxy_label_reading",
+      "classification": "rejected_proxy_label_reading",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_proxy_label_reading",
+      "family": "t51_t58_locking",
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "A proxy outcome hint is visible before prediction.",
+      "rejected": true,
+      "required_support_ids": [
+        "provenance_record:r_A_locked"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "control_posthoc_retuning",
+      "classification": "rejected_posthoc_retuning",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_posthoc_retuning",
+      "family": "record_transport",
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The predictor asks to retune after seeing a target fixture.",
+      "rejected": true,
+      "required_support_ids": [
+        "transport_compatibility_certificate"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [
+        "missing:source_record_support"
+      ],
+      "case_id": "control_hidden_support_change",
+      "classification": "rejected_hidden_support_change",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_hidden_support_change",
+      "family": "record_transport",
+      "observed_support_ids": [
+        "source_record_support"
+      ],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The fixture hides a support change while presenting as native.",
+      "rejected": true,
+      "required_support_ids": [
+        "source_record_support"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [
+        "missing:quorum_intersection_certificate"
+      ],
+      "case_id": "control_non_native_cross_family_fixture",
+      "classification": "rejected_non_native_heldout_fixture",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_non_native_heldout_fixture",
+      "family": "cross_domain_quorum_fixture",
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The fixture is not native to the frozen APRD predictor family.",
+      "rejected": true,
+      "required_support_ids": [
+        "quorum_intersection_certificate"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "accepted_prediction": false,
+      "actual_debt_ids": [],
+      "case_id": "control_source_law_overclaim",
+      "classification": "rejected_source_law_overclaim",
+      "classification_matches_expected": true,
+      "clear_prediction": false,
+      "debt_prediction": false,
+      "expected_classification": "rejected_source_law_overclaim",
+      "family": "record_transport",
+      "observed_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "predicted_debt_ids": [],
+      "prediction_matched": true,
+      "reason": "The fixture requests source-law status from finite prediction.",
+      "rejected": true,
+      "required_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "role": "hostile_control"
+    }
+  ],
+  "not_claimed": "T547 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a finite held-out APRD prediction gate only.",
+  "prediction_definition": {
+    "frozen_rule": [
+      "read_required_support_before_target_label",
+      "map_absent_native_support_to_predeclared_aprd_debt_atoms",
+      "do_not_read_actual_debt_ids_until_validation",
+      "do_not_retune_rules_after_target_fixture_selection"
+    ],
+    "name": "aprd_held_out_prediction_packet",
+    "prediction_acceptance": [
+      "native_fixture",
+      "outcome_label_hidden_before_prediction",
+      "no_proxy_outcome_hint",
+      "no_posthoc_retuning",
+      "no_hidden_support_change",
+      "predicted_debt_set_equals_revealed_debt_set"
+    ],
+    "rejected_shortcuts": [
+      "outcome_label_leakage",
+      "proxy_label_reading",
+      "posthoc_retuning",
+      "hidden_support_change",
+      "non_native_fixture",
+      "finite_prediction_read_as_source_law"
+    ],
+    "source": "T546 finite native APRD functoriality object",
+    "survivor_reading": "Held-out prediction pressure keeps APRD alive as a source-law feeder. Source-law reading still waits on cross-family stress."
+  },
+  "recommended_next": "Run t548_aprd_cross_family_prediction_stress_packet. It should stress the frozen APRD predictor on a distinct native family or adversarial cross-family fixture before any finite-to-continuum or source-law reading.",
+  "rejected_controls": [
+    "control_outcome_label_leakage",
+    "control_proxy_label_reading",
+    "control_posthoc_retuning",
+    "control_hidden_support_change",
+    "control_non_native_cross_family_fixture",
+    "control_source_law_overclaim"
+  ],
+  "source_t546_status": "FINITE_FUNCTORIAL_SOURCE_LAW_NOT_EARNED",
+  "source_t546_verdict": "aprd_finite_functoriality_gate_clears_native_composites",
+  "strongest_reading": "The frozen T546 APRD object predicts held-out native fixture debt for clear, record-transport, T51/T58, and T19 cases before outcome labels are read. Leakage, proxy-label reading, retuning, hidden support change, non-native fixtures, and source-law overclaiming reject. This is predictive pressure, not source-law status.",
+  "taf11_update": "TAF11 remains the live Track-1 route. T547 clears bounded held-out APRD prediction pressure, but source-law status still waits on cross-family stress without retuning.",
+  "taf4_update": "TAF4 remains blocked. T547 gives APRD a stronger finite predictor, but finite-to-continuum movement still needs cross-family or adversarial predictive pressure before geometric reading.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T547 strengthens APRD as a typed-gap predictor, not as a shadow-protection transfer theorem.",
+  "verdict": "aprd_held_out_prediction_gate_clears_native_fixtures"
+}

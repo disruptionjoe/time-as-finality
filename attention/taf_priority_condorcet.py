@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T550 froze the protocol-stack preflight contract and selected "
-            "T551 as the next executable TAF11 stress packet."
+            "T551 gave the frozen protocol stack a bounded native stress "
+            "survivor and selected T552 as the independent-transfer gate."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T550: the Observerse stack is only "
-            "preflighted for a later TAF11 stress packet."
+            "Still blocked after T551: one bounded Observerse survivor is "
+            "not a finite-to-continuum bridge."
         ),
     },
     "TAF5": {
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T550 preserved the T541 wait state: no domain-native cross-domain "
+            "T551 preserved the T541 wait state: no domain-native cross-domain "
             "packet is in hand."
         ),
     },

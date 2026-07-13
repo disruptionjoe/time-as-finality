@@ -1,0 +1,267 @@
+{
+  "artifact": "T549-taf11-post-aprd-route-reset-router-v0.1",
+  "candidate_decisions": [
+    {
+      "candidate_id": "observerse_protocol_stack_ablation_preflight",
+      "missing_requirements": [],
+      "next_packet": "t550_observerse_protocol_stack_ablation_preflight_packet",
+      "outcome": "SELECTED_FOR_EXECUTION",
+      "predeclared_falsifier": "Reject if layers are chosen post-hoc after outcomes, if ablations do not have predicted collapse modes, if the stack merely patches APRD, if cross-repo truth is imported, or if the packet tries to move TAF4/source-law status without a later survivor.",
+      "reason": "The candidate is finality-native, new after APRD narrowing, specific enough to execute, and has layer-ablation falsifiers.",
+      "selected_for_next_execution": true,
+      "source_variables": [
+        "issuance_layer",
+        "access_control_layer",
+        "admissibility_layer",
+        "provenance_layer",
+        "record_finality_layer",
+        "collapse_mode_prediction"
+      ],
+      "track_role": "track_1_next_packet"
+    },
+    {
+      "candidate_id": "fresh_source_law_family_menu",
+      "missing_requirements": [
+        "source_variables_declared",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "executable_next_packet_specific"
+      ],
+      "next_packet": "none",
+      "outcome": "REVIEW_ONLY_UNDERDECLARED",
+      "predeclared_falsifier": "Reject if the family is selected from target fit or repeats APRD.",
+      "reason": "The candidate lacks one or more post-APRD reset execution requirements.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "future_family_variables"
+      ],
+      "track_role": "underdeclared_or_feeder"
+    },
+    {
+      "candidate_id": "taf8_pause_until_domain_native_packet",
+      "missing_requirements": [
+        "finality_native",
+        "source_variables_declared",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "bridge_to_taf11_burdens",
+        "respects_taf8_wait_state",
+        "domain_native_taf8_packet_in_hand"
+      ],
+      "next_packet": "none",
+      "outcome": "PAUSED_TAF8_WAITING_FOR_DOMAIN_NATIVE_PACKET",
+      "predeclared_falsifier": "Reject unless a real domain-native packet exists under the T541 gate.",
+      "reason": "T541's gate needs a real domain-native packet, and none is in hand.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "future_domain_native_packet"
+      ],
+      "track_role": "taf8_waiting"
+    },
+    {
+      "candidate_id": "deepen_or_retune_aprd_family",
+      "missing_requirements": [
+        "new_after_aprd_narrowing",
+        "no_aprd_retune_or_replay",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "bridge_to_taf11_burdens",
+        "no_aprd_route_replay"
+      ],
+      "next_packet": "none",
+      "outcome": "REJECTED_APRD_REPLAY",
+      "predeclared_falsifier": "Already rejected by T548 cross-family stress.",
+      "reason": "T548 already rejected cross-family APRD retuning or replay.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "aprd_family_rule"
+      ],
+      "track_role": "retired_or_narrowed"
+    },
+    {
+      "candidate_id": "taf4_from_aprd_continuum_bridge",
+      "missing_requirements": [
+        "finality_native",
+        "new_after_aprd_narrowing",
+        "no_aprd_retune_or_replay",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "bridge_to_taf11_burdens",
+        "blocks_taf4_movement",
+        "no_taf4_movement_from_aprd"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "predeclared_falsifier": "Blocked because T548 found no cross-family survivor.",
+      "reason": "T548 narrowed APRD before any finite-to-continuum movement.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "aprd_debt_set",
+        "continuum_target"
+      ],
+      "track_role": "blocked"
+    },
+    {
+      "candidate_id": "quantum_access_structure_immediate_theorem",
+      "missing_requirements": [
+        "finality_native",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "executable_next_packet_specific",
+        "bridge_to_taf11_burdens",
+        "not_secondary_lane_only"
+      ],
+      "next_packet": "none",
+      "outcome": "REVIEW_ONLY_SECONDARY_LANE",
+      "predeclared_falsifier": "Reject if this bypasses the existing TAF6 lane or lacks a native shareability law.",
+      "reason": "The candidate belongs to another lane and is not the TAF11 route reset.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "access_structure_definition",
+        "shareability_witness"
+      ],
+      "track_role": "secondary_lane"
+    },
+    {
+      "candidate_id": "taf12_data_packet_wait",
+      "missing_requirements": [
+        "finality_native",
+        "source_variables_declared",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "hostile_controls_named",
+        "bridge_to_taf11_burdens",
+        "not_blocked_on_real_data_packet",
+        "track_2_does_not_replace_track_1"
+      ],
+      "next_packet": "none",
+      "outcome": "PAUSED_TRACK_2",
+      "predeclared_falsifier": "Reject as a Track-1 replacement unless a real TAF10/TAF12 packet exists.",
+      "reason": "No real data-bearing packet is in hand, and Track 2 cannot replace Track 1.",
+      "selected_for_next_execution": false,
+      "source_variables": [
+        "future_full_stack_profile",
+        "future_noncompletion_witness"
+      ],
+      "track_role": "track_2_waiting"
+    },
+    {
+      "candidate_id": "s1_claim_or_public_posture_shortcut",
+      "missing_requirements": [
+        "finality_native",
+        "new_after_aprd_narrowing",
+        "no_aprd_retune_or_replay",
+        "source_variables_declared",
+        "protocol_stack_layers_declared",
+        "ablation_collapse_modes_predeclared",
+        "computable_without_target_import",
+        "executable_next_packet_specific",
+        "hostile_controls_named",
+        "bridge_to_taf11_burdens",
+        "respects_taf8_wait_state",
+        "blocks_taf4_movement",
+        "no_cross_repo_truth_import",
+        "no_claim_canon_public_or_external_movement"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "predeclared_falsifier": "Blocked by governance.",
+      "reason": "A router cannot move claims, canon, public posture, or external state.",
+      "selected_for_next_execution": false,
+      "source_variables": [],
+      "track_role": "forbidden"
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T548 is consumed as APRD narrowing with no cross-family survivors: stress_quantum_access_missing_shareability_witness, stress_protocol_stack_missing_sybil_layer."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Exactly one post-APRD route is selected: observerse_protocol_stack_ablation_preflight."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "APRD replay, TAF4 overread, premature TAF8 pause, Track-2 replacement, secondary-lane shortcut, and governance shortcuts are blocked or paused: taf8_pause_until_domain_native_packet, deepen_or_retune_aprd_family, taf4_from_aprd_continuum_bridge, quantum_access_structure_immediate_theorem, taf12_data_packet_wait, s1_claim_or_public_posture_shortcut."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "A protocol-stack ablation preflight is the next honest TAF11 swing because it asks whether a layered finality object, not a family-local APRD patch, is needed."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T549 is route selection and preflight scoping only; it leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "hostile_controls": [
+    {
+      "blocks_candidate_ids": [
+        "deepen_or_retune_aprd_family"
+      ],
+      "control_id": "t548_aprd_narrowing_control",
+      "reason": "T548 found no cross-family APRD survivor without retuning."
+    },
+    {
+      "blocks_candidate_ids": [
+        "taf4_from_aprd_continuum_bridge"
+      ],
+      "control_id": "taf4_movement_control",
+      "reason": "APRD cannot feed finite-to-continuum movement after T548."
+    },
+    {
+      "blocks_candidate_ids": [
+        "taf8_pause_until_domain_native_packet"
+      ],
+      "control_id": "taf8_wait_state_control",
+      "reason": "T541's TAF8 gate is usable only when a real domain-native packet exists."
+    },
+    {
+      "blocks_candidate_ids": [
+        "taf12_data_packet_wait"
+      ],
+      "control_id": "track_2_replacement_control",
+      "reason": "A future C(R) packet may help, but it cannot replace Track 1 now."
+    },
+    {
+      "blocks_candidate_ids": [
+        "quantum_access_structure_immediate_theorem"
+      ],
+      "control_id": "secondary_lane_control",
+      "reason": "The quantum access miss belongs to TAF6 until a TAF11 law is declared."
+    },
+    {
+      "blocks_candidate_ids": [
+        "s1_claim_or_public_posture_shortcut"
+      ],
+      "control_id": "governance_posture_control",
+      "reason": "Routers do not move claims, canon, public posture, or external state."
+    }
+  ],
+  "not_claimed": "T549 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4 from APRD, or move cross-repo truth. It is a post-APRD TAF11 route-selection router only.",
+  "post_aprd_status": "APRD_ROUTE_NARROWED_RESET_REQUIRED",
+  "recommended_next": "Run t550_observerse_protocol_stack_ablation_preflight_packet. It should predeclare a minimal protocol stack, predict each ablation's collapse mode before reading outcomes, and reject if the stack is post-hoc, imports cross-repo truth, retunes APRD, or tries to move TAF4/source-law status directly.",
+  "selected_route_ids": [
+    "observerse_protocol_stack_ablation_preflight"
+  ],
+  "source_t548_cross_family_survivors": [],
+  "source_t548_narrowed_cases": [
+    "stress_quantum_access_missing_shareability_witness",
+    "stress_protocol_stack_missing_sybil_layer"
+  ],
+  "source_t548_status": "CROSS_FAMILY_STRESS_FAILED_WITHOUT_RETUNING",
+  "source_t548_verdict": "aprd_cross_family_stress_narrows_to_family_local_feeder",
+  "taf11_update": "TAF11 remains the active Track-1 source-law route, but APRD is no longer the route to deepen. The next executable swing is an observerse protocol-stack ablation preflight with native layers and collapse-mode falsifiers.",
+  "taf4_update": "TAF4 remains blocked. T549 consumes T548 as a negative control against finite-to-continuum movement from APRD.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T549 does not pause TAF11 behind TAF8 because no such packet is in hand.",
+  "verdict": "taf11_post_aprd_router_selected_protocol_stack_ablation_preflight"
+}

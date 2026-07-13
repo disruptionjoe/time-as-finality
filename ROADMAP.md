@@ -1,5 +1,25 @@
 ﻿# Roadmap
 
+## 2026-07-13 T549 TAF11 Post-APRD Route Reset Router
+
+T549 executes the post-APRD route reset selected by T548. It consumes T548 as
+an APRD narrowing state: the known record-transport regression still matches,
+but no distinct cross-family APRD survivor clears without retuning.
+
+The router selects exactly one next route:
+`observerse_protocol_stack_ablation_preflight`, with next packet
+`t550_observerse_protocol_stack_ablation_preflight_packet`. The selected route
+must predeclare a minimal protocol stack, source variables, ablation collapse
+modes, and hostile controls before target outcomes are read. Broad new-family
+search remains underdeclared, TAF8 remains waiting for a real domain-native
+packet, APRD replay rejects, TAF4 movement from APRD blocks, Track-2 replacement
+pauses, and governance/public-posture shortcuts block.
+
+TAF11 remains the active Track-1 source-law route, but APRD is no longer the
+route to deepen. No source law, shadow-protection theorem, claim-ledger, Canon
+Index, canon-verdict, public-posture, North Star, external-publication, TAF4
+movement, or cross-repo movement is earned by T549.
+
 ## 2026-07-13 T548 APRD Cross-Family Prediction Stress Packet
 
 T548 executes the cross-family prediction stress packet selected by T547. It

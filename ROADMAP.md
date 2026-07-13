@@ -1,5 +1,29 @@
 ﻿# Roadmap
 
+## 2026-07-13 T550 Observerse Protocol-Stack Ablation Preflight Packet
+
+T550 executes the protocol-stack preflight selected by T549. It consumes T549
+as route authority and T527 as frozen illustration-grade evidence, not as
+Observerse validation.
+
+The packet freezes a five-layer near-term stack contract before any new target
+outcomes are read: issuance predicts freeze, admissibility predicts
+incoherence, sybil/finality predicts capture, consensus predicts fragmentation,
+and governance predicts ossification under near-term fixed rules. Governance
+remains conditional rather than unconditional: T527's full-horizon-rule control
+still shows recovery when rules already anticipate the full novelty horizon.
+
+T550 names the next executable TAF11 packet:
+`t551_observerse_protocol_stack_source_law_stress_packet`. That packet should
+keep the T550 layer contracts frozen and test whether the stack predicts
+collapse/rescue on a native finality fixture without target-outcome reading,
+APRD retuning, cross-repo truth import, post-hoc layer choice, or direct
+TAF4/source-law movement.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T550.
+
 ## 2026-07-13 T549 TAF11 Post-APRD Route Reset Router
 
 T549 executes the post-APRD route reset selected by T548. It consumes T548 as

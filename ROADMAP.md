@@ -1,5 +1,32 @@
 ﻿# Roadmap
 
+## 2026-07-13 T552 Observerse Protocol-Stack Independent Transfer Gate
+
+T552 executes the independent-transfer gate selected by T551. It consumes T551
+as bounded transfer authority and keeps the frozen five-layer contract
+unchanged: issuance, admissibility, sybil/finality, consensus, and conditional
+governance.
+
+The packet builds a structurally different handoff/partition/repair finality
+fixture with disjoint records, multi-phase transfer, left/right/both partition
+structure, one mirror capture attempt, one contradictory merge repair, and late
+novelty beyond the near-term rule horizon. The complete stack rescues the
+transfer fixture, and single-layer removals still match the frozen collapse
+modes: freeze, incoherence, capture, fragment, and near-term ossification. The
+full-horizon governance control still rescues, so governance remains
+conditional rather than unconditional.
+
+T552 names the next TAF11 gate:
+`t553_observerse_protocol_stack_generalization_boundary_gate`. That packet
+should treat T551 and T552 as two bounded native survivors rather than a source
+law, then test what generalization boundary would falsify or narrow the
+protocol-stack route before any source-law, TAF4, TAF8, claim-ledger, or public
+posture reading.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T552.
+
 ## 2026-07-13 T551 Observerse Protocol-Stack Source-Law Stress Packet
 
 T551 executes the source-law stress packet selected by T550. It consumes T550

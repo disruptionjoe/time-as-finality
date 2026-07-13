@@ -1,0 +1,379 @@
+{
+  "aprd_stability_status": "STABLE_PRESENTATION_SOURCE_LAW_NOT_EARNED",
+  "artifact": "T545-aprd-refinement-stability-packet-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "APRD survivor debt sets stayed canonical under finite harmless presentation changes: t51_refinement_splits_ambient_debt, t51_relabeling_renames_events, t19_refinement_external_witness_cover, record_transport_relabeling_certificate, record_transport_support_preserving_restriction."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Non-harmless restriction narrowed rather than promoted: t19_support_losing_restriction_narrows."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Hostile stability controls rejected: hostile_harmless_relabel_changes_debt, hostile_refinement_adds_padding, hostile_hidden_support_change, hostile_scalar_rank_replacement."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Finite presentation stability justifies a functoriality packet, not source-law, claim-ledger, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T545 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "controls": [
+    {
+      "control_id": "source_t544_consumed",
+      "passed": true,
+      "reason": "T545 consumes the APRD survivors built by T544."
+    },
+    {
+      "control_id": "expected_classifications_match",
+      "passed": true,
+      "reason": "Every fixture follows its predeclared stability branch."
+    },
+    {
+      "control_id": "harmless_refinement_and_relabeling_stable",
+      "passed": true,
+      "reason": "Canonical APRD debt sets survive declared harmless refinement and relabeling."
+    },
+    {
+      "control_id": "support_preserving_restriction_stable",
+      "passed": true,
+      "reason": "Declared support-preserving restriction keeps the debt set fixed."
+    },
+    {
+      "control_id": "nonharmless_restriction_narrows_not_promotes",
+      "passed": true,
+      "reason": "A restriction that removes needed support is treated as a narrowing, not theorem evidence."
+    },
+    {
+      "control_id": "hostile_controls_reject",
+      "passed": true,
+      "reason": "Hidden support change, padding, unstable harmless relabeling, and scalar replacement all reject."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T545 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "evaluations": [
+    {
+      "canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "case_id": "t51_refinement_splits_ambient_debt",
+      "classification": "stable_harmless_presentation",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "expected_classification": "stable_harmless_presentation",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "Canonical APRD debt labels are unchanged by the declared presentation transform.",
+      "rejected": false,
+      "role": "stable_presentation_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_t544_case_id": "t51_t58_observer_b_non_detector_separator",
+      "stable": true,
+      "transform_kind": "refinement",
+      "transformed_debt_ids": [
+        "missing:provenance_record:r_A_locked",
+        "refined:e1_A_locking_source",
+        "refined:e3_composite_locking_target"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "case_id": "t51_relabeling_renames_events",
+      "classification": "stable_harmless_presentation",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "expected_classification": "stable_harmless_presentation",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "Canonical APRD debt labels are unchanged by the declared presentation transform.",
+      "rejected": false,
+      "role": "stable_presentation_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_t544_case_id": "t51_t58_observer_b_non_detector_separator",
+      "stable": true,
+      "transform_kind": "relabeling",
+      "transformed_debt_ids": [
+        "missing:ambient_pair:a_lock<=c_lock",
+        "missing:provenance_record:rho_A_locked"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "case_id": "t19_refinement_external_witness_cover",
+      "classification": "stable_harmless_presentation",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "expected_classification": "stable_harmless_presentation",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "Canonical APRD debt labels are unchanged by the declared presentation transform.",
+      "rejected": false,
+      "role": "stable_presentation_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_t544_case_id": "t19_self_finality_external_witness_separator",
+      "stable": true,
+      "transform_kind": "refinement",
+      "transformed_debt_ids": [
+        "missing:R_self_finality_external_witness.left_patch",
+        "missing:R_self_finality_external_witness.right_patch"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "record_transport_relabeling_certificate",
+      "classification": "stable_harmless_presentation",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "expected_classification": "stable_harmless_presentation",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "Canonical APRD debt labels are unchanged by the declared presentation transform.",
+      "rejected": false,
+      "role": "stable_presentation_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_t544_case_id": "record_transport_same_rank_separator",
+      "stable": true,
+      "transform_kind": "relabeling",
+      "transformed_debt_ids": [
+        "missing:src_record_support",
+        "missing:transport_cert"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "record_transport_support_preserving_restriction",
+      "classification": "stable_support_preserving_restriction",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "expected_classification": "stable_support_preserving_restriction",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "The declared restriction map preserves the support carrying the APRD debt set.",
+      "rejected": false,
+      "role": "support_preserving_restriction_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_t544_case_id": "record_transport_same_rank_separator",
+      "stable": true,
+      "transform_kind": "restriction",
+      "transformed_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ]
+    },
+    {
+      "canonical_debt_ids": [],
+      "case_id": "t19_support_losing_restriction_narrows",
+      "classification": "narrowed_by_nonharmless_restriction",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [],
+      "expected_classification": "narrowed_by_nonharmless_restriction",
+      "narrowed_by_nonharmless_restriction": true,
+      "reason": "The restriction removes support needed by the source APRD object, so the result narrows rather than counts as harmless stability.",
+      "rejected": false,
+      "role": "nonharmless_restriction_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_t544_case_id": "t19_self_finality_external_witness_separator",
+      "stable": false,
+      "transform_kind": "restriction",
+      "transformed_debt_ids": []
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:R_self_finality_private_witness"
+      ],
+      "case_id": "hostile_harmless_relabel_changes_debt",
+      "classification": "rejected_unstable_harmless_transform",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "expected_classification": "rejected_unstable_harmless_transform",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "A transform declared harmless changed the canonical APRD debt set.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_t544_case_id": "t19_self_finality_external_witness_separator",
+      "stable": false,
+      "transform_kind": "relabeling",
+      "transformed_debt_ids": [
+        "missing:R_self_finality_private_witness"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked",
+        "padding:rank_hint"
+      ],
+      "case_id": "hostile_refinement_adds_padding",
+      "classification": "rejected_nonminimal_padding",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "expected_classification": "rejected_nonminimal_padding",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "The transform added debt atoms beyond the T544 survivor set.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_t544_case_id": "t51_t58_observer_b_non_detector_separator",
+      "stable": false,
+      "transform_kind": "refinement",
+      "transformed_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked",
+        "padding:rank_hint"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "missing:source_record_support"
+      ],
+      "case_id": "hostile_hidden_support_change",
+      "classification": "rejected_hidden_support_change",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "expected_classification": "rejected_hidden_support_change",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "The transform claimed to be harmless while changing the support needed to interpret the debt set.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_t544_case_id": "record_transport_same_rank_separator",
+      "stable": false,
+      "transform_kind": "relabeling",
+      "transformed_debt_ids": [
+        "missing:source_record_support"
+      ]
+    },
+    {
+      "canonical_debt_ids": [
+        "rank:2"
+      ],
+      "case_id": "hostile_scalar_rank_replacement",
+      "classification": "rejected_scalar_rank_collapse",
+      "classification_matches_expected": true,
+      "expected_canonical_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "expected_classification": "rejected_scalar_rank_collapse",
+      "narrowed_by_nonharmless_restriction": false,
+      "reason": "The transform replaced the APRD debt set with a scalar value.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_t544_case_id": "record_transport_same_rank_separator",
+      "stable": false,
+      "transform_kind": "rank_proxy",
+      "transformed_debt_ids": [
+        "rank:2"
+      ]
+    }
+  ],
+  "narrowed_cases": [
+    "t19_support_losing_restriction_narrows"
+  ],
+  "not_claimed": "T545 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a finite APRD refinement-stability gate only.",
+  "recommended_next": "Run t546_aprd_functoriality_naturality_packet. It should test whether APRD assignments behave naturally across native morphisms and composites, not merely under finite presentation changes.",
+  "rejected_controls": [
+    "hostile_harmless_relabel_changes_debt",
+    "hostile_refinement_adds_padding",
+    "hostile_hidden_support_change",
+    "hostile_scalar_rank_replacement"
+  ],
+  "source_t544_status": "FINITE_MINIMAL_SURVIVOR_FOUND_SOURCE_LAW_NOT_EARNED",
+  "source_t544_verdict": "aprd_minimality_gate_finds_nonabsorbed_provenance_survivor",
+  "stability_definition": {
+    "name": "aprd_refinement_stability_packet",
+    "not_stability": [
+      "support_loss_hidden_as_relabeling",
+      "padding_extra_debt_atoms",
+      "scalar_rank_replacement",
+      "nonharmless_restriction_read_as_theorem_evidence"
+    ],
+    "source": "T544 APRD minimal non-detector survivors",
+    "stable_when": [
+      "canonical_debt_set_preserved_by_harmless_refinement",
+      "canonical_debt_set_preserved_by_harmless_relabeling",
+      "canonical_debt_set_preserved_by_declared_support_preserving_restriction"
+    ],
+    "survivor_reading": "Finite stability keeps APRD alive as a source-law feeder. Source-law reading still waits on functorial naturality across native morphisms."
+  },
+  "stable_cases": [
+    "t51_refinement_splits_ambient_debt",
+    "t51_relabeling_renames_events",
+    "t19_refinement_external_witness_cover",
+    "record_transport_relabeling_certificate",
+    "record_transport_support_preserving_restriction"
+  ],
+  "strongest_reading": "The T544 non-detector APRD survivors are stable under finite harmless refinement, relabeling, and declared support-preserving restriction maps in this packet. Non-harmless support loss narrows the object rather than promoting it, and hostile controls reject hidden support changes, padding, and scalar replacement.",
+  "taf11_update": "TAF11 remains the live Track-1 route. T545 clears finite refinement-stability controls for APRD, but source-law status still waits on functorial naturality across native morphisms.",
+  "taf4_update": "TAF4 remains blocked. T545 gives APRD a cleaner finite feeder, but finite-to-continuum movement still needs functorial behavior before restriction-map stability can be read geometrically.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T545 strengthens APRD as a typed-gap feeder, not as a shadow-protection transfer theorem.",
+  "verdict": "aprd_refinement_stability_gate_clears_harmless_changes"
+}

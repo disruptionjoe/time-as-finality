@@ -1,5 +1,26 @@
 ﻿# Roadmap
 
+## 2026-07-12 T545 APRD Refinement Stability Packet
+
+T545 executes the refinement-stability packet selected by T544. It tests
+whether the surviving APRD debt sets remain canonical under finite harmless
+refinement, relabeling, and declared support-preserving restriction maps.
+
+The result keeps APRD alive but still bounded. The T51/T58, T19, and
+record-transport survivor debt sets remain stable under harmless presentation
+changes. A support-preserving restriction keeps the record-transport debt set
+fixed, while a support-losing restriction narrows the object rather than
+promoting it. Hidden support change, padded refinement, unstable harmless
+relabeling, and scalar-rank replacement reject.
+
+APRD now has finite presentation-stability evidence, but it still does not earn
+source-law status. The next useful packet is
+`t546_aprd_functoriality_naturality_packet`: test whether APRD assignments
+behave naturally across native morphisms and composites, not merely under
+finite presentation changes. No source law, shadow-protection theorem,
+claim-ledger, Canon Index, canon-verdict, public-posture, North Star,
+external-publication, or cross-repo movement is earned by T545.
+
 ## 2026-07-12 T544 APRD Minimality And Absorber Separation Gate
 
 T544 executes the APRD gate selected by T543. It tests whether accessible

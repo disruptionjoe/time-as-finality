@@ -1,0 +1,488 @@
+{
+  "aprd_functoriality_status": "FINITE_FUNCTORIAL_SOURCE_LAW_NOT_EARNED",
+  "artifact": "T546-aprd-functoriality-naturality-packet-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Native APRD morphism cases preserved debt assignments: identity_t51_t58_debt_object, identity_t19_external_witness, t51_native_relabel_pullback_natural, record_transport_relabel_pullback_natural, record_transport_support_preserving_restriction_natural."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Declared APRD composites agreed with direct pullback: record_transport_two_step_restriction_composite, t51_relabel_then_identity_composite."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Support-losing morphisms narrowed rather than promoted: t19_support_losing_morphism_narrows."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Hostile functoriality controls rejected: hostile_non_native_t19_to_transport_map, hostile_hidden_support_change_as_natural, hostile_unmapped_target_debt, hostile_outcome_selected_target_repair, hostile_composite_drops_provenance."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Finite native functoriality justifies a held-out prediction packet, not source-law, claim-ledger, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T546 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "composite_evaluations": [
+    {
+      "case_id": "record_transport_two_step_restriction_composite",
+      "classification": "functorial_composite_preserved",
+      "classification_matches_expected": true,
+      "composed_pullback_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "direct_pullback_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "expected_classification": "functorial_composite_preserved",
+      "functorial": true,
+      "narrowed": false,
+      "reason": "The two-step and direct APRD pullbacks agree with source debt.",
+      "rejected": false,
+      "role": "native_composite_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_object_id": "record_transport",
+      "target_object_id": "record_transport_twice_restricted",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "t51_relabel_then_identity_composite",
+      "classification": "functorial_composite_preserved",
+      "classification_matches_expected": true,
+      "composed_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "direct_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "expected_classification": "functorial_composite_preserved",
+      "functorial": true,
+      "narrowed": false,
+      "reason": "The two-step and direct APRD pullbacks agree with source debt.",
+      "rejected": false,
+      "role": "native_composite_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_object_id": "t51_t58_observer_b",
+      "target_object_id": "t51_t58_observer_b_relabel",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "hostile_composite_drops_provenance",
+      "classification": "rejected_composite_mismatch",
+      "classification_matches_expected": true,
+      "composed_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking"
+      ],
+      "direct_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "expected_classification": "rejected_composite_mismatch",
+      "functorial": false,
+      "narrowed": false,
+      "reason": "The two-step pullback does not equal the direct pullback.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_object_id": "t51_t58_observer_b",
+      "target_object_id": "t51_bad_composite",
+      "unmapped_target_debt_ids": []
+    }
+  ],
+  "controls": [
+    {
+      "control_id": "source_t545_consumed",
+      "passed": true,
+      "reason": "T546 consumes the APRD stability survivors built by T545."
+    },
+    {
+      "control_id": "expected_classifications_match",
+      "passed": true,
+      "reason": "Every fixture follows its predeclared functoriality branch."
+    },
+    {
+      "control_id": "identity_morphisms_natural",
+      "passed": true,
+      "reason": "Identity morphisms preserve APRD assignments."
+    },
+    {
+      "control_id": "native_morphism_naturality",
+      "passed": true,
+      "reason": "Native relabeling and support-preserving restriction preserve APRD pullbacks."
+    },
+    {
+      "control_id": "composite_functoriality",
+      "passed": true,
+      "reason": "Declared two-step pullbacks equal direct pullbacks."
+    },
+    {
+      "control_id": "support_loss_narrows_not_promotes",
+      "passed": true,
+      "reason": "Support-losing morphisms narrow rather than count as theorem evidence."
+    },
+    {
+      "control_id": "hostile_controls_reject",
+      "passed": true,
+      "reason": "Non-native maps, hidden support change, unmapped debt, outcome-selected repairs, and composite mismatch all reject."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T546 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "functorial_composite_cases": [
+    "record_transport_two_step_restriction_composite",
+    "t51_relabel_then_identity_composite"
+  ],
+  "functoriality_definition": {
+    "name": "aprd_functoriality_naturality_packet",
+    "natural_when": [
+      "identity_morphisms_preserve_aprd_assignment",
+      "native_pullback_preserves_source_debt_set",
+      "support_preserving_restrictions_preserve_debt_set",
+      "declared_composites_equal_direct_pullback"
+    ],
+    "not_natural": [
+      "support_loss_hidden_as_native_morphism",
+      "non_native_cross_domain_morphism",
+      "unmapped_target_debt",
+      "composite_pullback_mismatch",
+      "outcome_selected_target_repair"
+    ],
+    "source": "T545 APRD refinement-stable survivors",
+    "survivor_reading": "Finite functoriality keeps APRD alive as a source-law feeder. Source-law reading still waits on held-out predictive pressure."
+  },
+  "morphism_evaluations": [
+    {
+      "case_id": "identity_t51_t58_debt_object",
+      "classification": "natural_aprd_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "natural_aprd_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "morphism_kind": "identity",
+      "narrowed": false,
+      "natural": true,
+      "pulled_back_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "reason": "The native pullback preserves the APRD debt assignment.",
+      "rejected": false,
+      "role": "identity_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_object_id": "t51_t58_observer_b",
+      "target_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "target_object_id": "t51_t58_observer_b",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "identity_t19_external_witness",
+      "classification": "natural_aprd_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "natural_aprd_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "morphism_kind": "identity",
+      "narrowed": false,
+      "natural": true,
+      "pulled_back_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "reason": "The native pullback preserves the APRD debt assignment.",
+      "rejected": false,
+      "role": "identity_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_object_id": "t19_external_witness",
+      "target_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "target_object_id": "t19_external_witness",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "t51_native_relabel_pullback_natural",
+      "classification": "natural_aprd_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "natural_aprd_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "morphism_kind": "native_relabeling",
+      "narrowed": false,
+      "natural": true,
+      "pulled_back_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "reason": "The native pullback preserves the APRD debt assignment.",
+      "rejected": false,
+      "role": "native_pullback_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_object_id": "t51_t58_observer_b",
+      "target_debt_ids": [
+        "missing:ambient_pair:a_lock<=c_lock",
+        "missing:provenance_record:rho_A_locked"
+      ],
+      "target_object_id": "t51_t58_observer_b_relabel",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "record_transport_relabel_pullback_natural",
+      "classification": "natural_aprd_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "natural_aprd_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "morphism_kind": "native_relabeling",
+      "narrowed": false,
+      "natural": true,
+      "pulled_back_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "reason": "The native pullback preserves the APRD debt assignment.",
+      "rejected": false,
+      "role": "native_pullback_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_object_id": "record_transport",
+      "target_debt_ids": [
+        "missing:src_record_support",
+        "missing:transport_cert"
+      ],
+      "target_object_id": "record_transport_relabel",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "record_transport_support_preserving_restriction_natural",
+      "classification": "natural_aprd_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "natural_aprd_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "morphism_kind": "restriction",
+      "narrowed": false,
+      "natural": true,
+      "pulled_back_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "reason": "The native pullback preserves the APRD debt assignment.",
+      "rejected": false,
+      "role": "support_preserving_restriction_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_object_id": "record_transport",
+      "target_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "target_object_id": "record_transport_restricted_support",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "t19_support_losing_morphism_narrows",
+      "classification": "narrowed_by_support_losing_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "narrowed_by_support_losing_morphism",
+      "expected_pullback_debt_ids": [],
+      "morphism_kind": "restriction",
+      "narrowed": true,
+      "natural": false,
+      "pulled_back_debt_ids": [],
+      "reason": "The morphism removes support needed by the source APRD assignment, so it narrows rather than promotes.",
+      "rejected": false,
+      "role": "support_loss_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_object_id": "t19_external_witness",
+      "target_debt_ids": [],
+      "target_object_id": "t19_support_lost",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "hostile_non_native_t19_to_transport_map",
+      "classification": "rejected_non_native_morphism",
+      "classification_matches_expected": true,
+      "expected_classification": "rejected_non_native_morphism",
+      "expected_pullback_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "morphism_kind": "cross_domain_shortcut",
+      "narrowed": false,
+      "natural": false,
+      "pulled_back_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "reason": "The proposed morphism is not native to the declared APRD objects.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_object_id": "t19_external_witness",
+      "target_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "target_object_id": "record_transport",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "hostile_hidden_support_change_as_natural",
+      "classification": "rejected_hidden_support_change",
+      "classification_matches_expected": true,
+      "expected_classification": "rejected_hidden_support_change",
+      "expected_pullback_debt_ids": [
+        "missing:source_record_support"
+      ],
+      "morphism_kind": "hidden_support_change",
+      "narrowed": false,
+      "natural": false,
+      "pulled_back_debt_ids": [
+        "missing:source_record_support"
+      ],
+      "reason": "The morphism hides a support change while presenting as natural.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:source_record_support",
+        "missing:transport_compatibility_certificate"
+      ],
+      "source_object_id": "record_transport",
+      "target_debt_ids": [
+        "missing:source_record_support"
+      ],
+      "target_object_id": "record_transport_hidden_support_change",
+      "unmapped_target_debt_ids": []
+    },
+    {
+      "case_id": "hostile_unmapped_target_debt",
+      "classification": "rejected_unmapped_target_debt",
+      "classification_matches_expected": true,
+      "expected_classification": "rejected_unmapped_target_debt",
+      "expected_pullback_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "morphism_kind": "unmapped_target_extension",
+      "narrowed": false,
+      "natural": false,
+      "pulled_back_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "reason": "Target debt atoms lack a declared native pullback.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked"
+      ],
+      "source_object_id": "t51_t58_observer_b",
+      "target_debt_ids": [
+        "missing:ambient_pair:e1_A_locking<=e3_composite_locking",
+        "missing:provenance_record:r_A_locked",
+        "missing:secret_repair_channel"
+      ],
+      "target_object_id": "t51_extra_target_debt",
+      "unmapped_target_debt_ids": [
+        "missing:secret_repair_channel"
+      ]
+    },
+    {
+      "case_id": "hostile_outcome_selected_target_repair",
+      "classification": "rejected_outcome_selected_target_repair",
+      "classification_matches_expected": true,
+      "expected_classification": "rejected_outcome_selected_target_repair",
+      "expected_pullback_debt_ids": [],
+      "morphism_kind": "outcome_selected_repair",
+      "narrowed": false,
+      "natural": false,
+      "pulled_back_debt_ids": [],
+      "reason": "The target repair was selected after reading the desired outcome.",
+      "rejected": true,
+      "role": "hostile_control",
+      "source_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "source_object_id": "t19_external_witness",
+      "target_debt_ids": [
+        "missing:R_self_finality_external_witness"
+      ],
+      "target_object_id": "t19_repaired_after_outcome",
+      "unmapped_target_debt_ids": []
+    }
+  ],
+  "narrowed_cases": [
+    "t19_support_losing_morphism_narrows"
+  ],
+  "natural_morphism_cases": [
+    "identity_t51_t58_debt_object",
+    "identity_t19_external_witness",
+    "t51_native_relabel_pullback_natural",
+    "record_transport_relabel_pullback_natural",
+    "record_transport_support_preserving_restriction_natural"
+  ],
+  "not_claimed": "T546 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a finite APRD functoriality and naturality gate only.",
+  "recommended_next": "Run t547_aprd_held_out_prediction_packet. It should test whether the functorial APRD object predicts a held-out native fixture's reconstruction debt before target-outcome reading. If it cannot predict a held-out case without retuning, retire or narrow the source-law route before finite-to-continuum movement.",
+  "rejected_controls": [
+    "hostile_non_native_t19_to_transport_map",
+    "hostile_hidden_support_change_as_natural",
+    "hostile_unmapped_target_debt",
+    "hostile_outcome_selected_target_repair",
+    "hostile_composite_drops_provenance"
+  ],
+  "source_t545_status": "STABLE_PRESENTATION_SOURCE_LAW_NOT_EARNED",
+  "source_t545_verdict": "aprd_refinement_stability_gate_clears_harmless_changes",
+  "strongest_reading": "The T545 APRD survivors clear a finite native functoriality gate: identity, native pullback, support-preserving restriction, and declared composites preserve the APRD assignment in this packet. Support loss narrows rather than promotes, and hostile controls reject non-native, unmapped, composite-mismatch, and outcome-selected repairs.",
+  "taf11_update": "TAF11 remains the live Track-1 route. T546 clears finite native morphism and composite controls for APRD, but source-law status still waits on held-out predictive pressure.",
+  "taf4_update": "TAF4 remains blocked. APRD is now cleaner as a finite functorial feeder, but finite-to-continuum movement still needs predictive source-law pressure before geometric reading.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T546 strengthens APRD as a typed-gap feeder, not as a shadow-protection transfer theorem.",
+  "verdict": "aprd_finite_functoriality_gate_clears_native_composites"
+}

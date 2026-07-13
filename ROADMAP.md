@@ -1,5 +1,28 @@
 ﻿# Roadmap
 
+## 2026-07-12 T546 APRD Functoriality Naturality Packet
+
+T546 executes the functoriality packet selected by T545. It tests whether APRD
+assignments behave naturally across native morphisms and composites, not merely
+under isolated finite presentation changes.
+
+The result keeps APRD alive but still bounded. Identity morphisms, native
+relabeling pullbacks, support-preserving restriction, and declared two-step
+composites preserve the APRD debt assignment in the finite packet. Support loss
+narrows rather than promotes. Non-native cross-domain shortcuts, hidden support
+change, unmapped target debt, outcome-selected repair, and composite mismatch
+all reject.
+
+APRD now has finite presentation-stability and native-composite evidence, but
+it still does not earn source-law status. The next useful packet is
+`t547_aprd_held_out_prediction_packet`: test whether the functorial APRD object
+predicts a held-out native fixture's reconstruction debt before target-outcome
+reading. If it cannot predict a held-out case without retuning, retire or narrow
+the source-law route before finite-to-continuum movement. No source law,
+shadow-protection theorem, claim-ledger, Canon Index, canon-verdict,
+public-posture, North Star, external-publication, or cross-repo movement is
+earned by T546.
+
 ## 2026-07-12 T545 APRD Refinement Stability Packet
 
 T545 executes the refinement-stability packet selected by T544. It tests

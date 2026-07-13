@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T547 cleared bounded held-out APRD prediction, but source-law "
-            "status waits on cross-family stress without retuning."
+            "T548 narrowed APRD to a family-local feeder; source-law route "
+            "selection now needs reset without TAF4 movement."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked until APRD or another TAF11 route survives "
-            "cross-family predictive pressure before geometric reading."
+            "Still blocked after T548: APRD failed cross-family stress "
+            "without retuning, so no geometric reading is earned."
         ),
     },
     "TAF5": {
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T547 supplies a stronger APRD feeder, but no domain-native "
+            "T548 supplies a useful negative control, but no domain-native "
             "cross-domain packet is in hand."
         ),
     },

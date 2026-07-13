@@ -1,5 +1,27 @@
 ﻿# Roadmap
 
+## 2026-07-13 T548 APRD Cross-Family Prediction Stress Packet
+
+T548 executes the cross-family prediction stress packet selected by T547. It
+tests whether the frozen T547 APRD predictor can assign reconstruction debt for
+distinct native-candidate families before outcome labels and without adding a
+family-specific rule after target selection.
+
+The result narrows APRD rather than promoting it. The known record-transport
+family regression still predicts its APRD debt, but the quantum access-structure
+and observerse protocol-stack stress fixtures both return the frozen
+unknown-family marker. Manual family-rule injection, outcome-label leakage,
+proxy-label reading, hidden support change, cross-repo truth import, and
+TAF4/source-law overreading all reject.
+
+APRD remains useful as a family-local feeder object, but it does not earn
+cross-family source-law status and cannot feed finite-to-continuum movement.
+The next useful packet is `t549_taf11_post_aprd_route_reset_router`: choose
+whether TAF11 now needs a new source-law family, a protocol-stack ablation
+preflight, or a deliberate pause behind TAF8 until a domain-native packet
+exists. No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, or cross-repo
+movement is earned by T548.
 ## 2026-07-12 T547 APRD Held-Out Prediction Packet
 
 T547 executes the held-out prediction packet selected by T546. It tests whether

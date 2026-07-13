@@ -1,0 +1,326 @@
+{
+  "aprd_cross_family_status": "CROSS_FAMILY_STRESS_FAILED_WITHOUT_RETUNING",
+  "artifact": "T548-aprd-cross-family-prediction-stress-packet-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Known-family APRD regression still matches: regression_t547_record_transport_missing_certificate."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Distinct candidate families narrowed under the frozen predictor: stress_quantum_access_missing_shareability_witness, stress_protocol_stack_missing_sybil_layer."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Cross-family shortcut controls rejected: control_manual_family_rule_injection, control_outcome_label_leakage, control_proxy_label_reading, control_hidden_support_change, control_cross_repo_truth_import, control_taf4_source_law_overread."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "T548 narrows APRD to a family-local feeder and blocks TAF4 or source-law movement from the APRD line."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T548 leaves claim rows, Canon Index tiers, and canon verdicts unchanged.",
+  "controls": [
+    {
+      "control_id": "source_t547_consumed",
+      "passed": true,
+      "reason": "T548 consumes the held-out APRD predictor built by T547."
+    },
+    {
+      "control_id": "expected_classifications_match",
+      "passed": true,
+      "reason": "Every stress fixture follows its predeclared branch."
+    },
+    {
+      "control_id": "known_family_regression_still_matches",
+      "passed": true,
+      "reason": "The frozen predictor still handles a known T547 native family."
+    },
+    {
+      "control_id": "distinct_candidate_families_narrow",
+      "passed": true,
+      "reason": "Distinct candidate families require a native family rule rather than cross-family prediction by the frozen APRD predictor."
+    },
+    {
+      "control_id": "no_cross_family_survivor_without_retuning",
+      "passed": true,
+      "reason": "No distinct candidate family clears without adding a rule."
+    },
+    {
+      "control_id": "hostile_controls_reject",
+      "passed": true,
+      "reason": "Rule injection, leakage, proxy hints, hidden support, cross-repo truth import, and TAF4/source-law overread all reject."
+    },
+    {
+      "control_id": "no_claim_or_posture_movement",
+      "passed": true,
+      "reason": "T548 performs no claim, canon, public-posture, or external movement."
+    }
+  ],
+  "cross_family_survivors": [],
+  "evaluations": [
+    {
+      "actual_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "case_id": "regression_t547_record_transport_missing_certificate",
+      "classification": "known_family_regression_matched",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "known_family_regression_matched",
+      "family": "record_transport",
+      "known_family_regression": true,
+      "narrowed": false,
+      "observed_support_ids": [
+        "source_record_support"
+      ],
+      "predicted_debt_ids": [
+        "missing:transport_compatibility_certificate"
+      ],
+      "prediction_matched": true,
+      "reason": "The frozen predictor still works on its known native family.",
+      "rejected": false,
+      "required_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "role": "known_family_regression"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:monogamy_shareability_witness"
+      ],
+      "case_id": "stress_quantum_access_missing_shareability_witness",
+      "classification": "narrowed_unknown_family_requires_native_rule",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "narrowed_unknown_family_requires_native_rule",
+      "family": "quantum_access_structure",
+      "known_family_regression": false,
+      "narrowed": true,
+      "observed_support_ids": [
+        "access_structure_definition"
+      ],
+      "predicted_debt_ids": [
+        "missing:unknown_native_family_rule"
+      ],
+      "prediction_matched": false,
+      "reason": "The frozen T547 predictor has no rule for this candidate family, so cross-family prediction would require retuning.",
+      "rejected": false,
+      "required_support_ids": [
+        "access_structure_definition",
+        "monogamy_shareability_witness"
+      ],
+      "role": "distinct_native_candidate"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:sybil_resistance_layer"
+      ],
+      "case_id": "stress_protocol_stack_missing_sybil_layer",
+      "classification": "narrowed_unknown_family_requires_native_rule",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "narrowed_unknown_family_requires_native_rule",
+      "family": "observerse_protocol_stack",
+      "known_family_regression": false,
+      "narrowed": true,
+      "observed_support_ids": [
+        "fork_choice_rule",
+        "issuance_log"
+      ],
+      "predicted_debt_ids": [
+        "missing:unknown_native_family_rule"
+      ],
+      "prediction_matched": false,
+      "reason": "The frozen T547 predictor has no rule for this candidate family, so cross-family prediction would require retuning.",
+      "rejected": false,
+      "required_support_ids": [
+        "fork_choice_rule",
+        "issuance_log",
+        "sybil_resistance_layer"
+      ],
+      "role": "distinct_native_candidate"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:monogamy_shareability_witness"
+      ],
+      "case_id": "control_manual_family_rule_injection",
+      "classification": "rejected_posthoc_family_rule_injection",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_posthoc_family_rule_injection",
+      "family": "quantum_access_structure",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "A new family rule is injected after target selection.",
+      "rejected": true,
+      "required_support_ids": [
+        "monogamy_shareability_witness"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:monogamy_shareability_witness"
+      ],
+      "case_id": "control_outcome_label_leakage",
+      "classification": "rejected_outcome_label_leakage",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_outcome_label_leakage",
+      "family": "quantum_access_structure",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The target outcome label is visible before prediction.",
+      "rejected": true,
+      "required_support_ids": [
+        "monogamy_shareability_witness"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:sybil_resistance_layer"
+      ],
+      "case_id": "control_proxy_label_reading",
+      "classification": "rejected_proxy_label_reading",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_proxy_label_reading",
+      "family": "observerse_protocol_stack",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "A proxy outcome hint is visible before prediction.",
+      "rejected": true,
+      "required_support_ids": [
+        "sybil_resistance_layer"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:sybil_resistance_layer"
+      ],
+      "case_id": "control_hidden_support_change",
+      "classification": "rejected_hidden_support_change",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_hidden_support_change",
+      "family": "observerse_protocol_stack",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [
+        "sybil_resistance_layer"
+      ],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The fixture hides a support change while presenting as native.",
+      "rejected": true,
+      "required_support_ids": [
+        "sybil_resistance_layer"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "actual_debt_ids": [
+        "missing:external_source_category_truth"
+      ],
+      "case_id": "control_cross_repo_truth_import",
+      "classification": "rejected_cross_repo_truth_import",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_cross_repo_truth_import",
+      "family": "gu_ti_taf_adapter",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [],
+      "predicted_debt_ids": [],
+      "prediction_matched": false,
+      "reason": "The fixture asks TaF to import another repo's truth directly.",
+      "rejected": true,
+      "required_support_ids": [
+        "external_source_category_truth"
+      ],
+      "role": "hostile_control"
+    },
+    {
+      "actual_debt_ids": [],
+      "case_id": "control_taf4_source_law_overread",
+      "classification": "rejected_taf4_or_source_law_overread",
+      "classification_matches_expected": true,
+      "cross_family_survivor": false,
+      "expected_classification": "rejected_taf4_or_source_law_overread",
+      "family": "record_transport",
+      "known_family_regression": false,
+      "narrowed": false,
+      "observed_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "predicted_debt_ids": [],
+      "prediction_matched": true,
+      "reason": "The fixture tries to read finite stress as source-law or TAF4 movement.",
+      "rejected": true,
+      "required_support_ids": [
+        "source_record_support",
+        "transport_compatibility_certificate"
+      ],
+      "role": "hostile_control"
+    }
+  ],
+  "known_family_regressions": [
+    "regression_t547_record_transport_missing_certificate"
+  ],
+  "narrowed_cases": [
+    "stress_quantum_access_missing_shareability_witness",
+    "stress_protocol_stack_missing_sybil_layer"
+  ],
+  "not_claimed": "T548 does not establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, or move cross-repo truth. It is a finite cross-family APRD stress and narrowing packet only.",
+  "recommended_next": "Run t549_taf11_post_aprd_route_reset_router. It should choose the next TAF11 route after APRD failed cross-family prediction without retuning: either a new source-law family with its own falsifier, a protocol-stack ablation preflight, or a deliberate pause behind TAF8 until a domain-native packet exists.",
+  "rejected_controls": [
+    "control_manual_family_rule_injection",
+    "control_outcome_label_leakage",
+    "control_proxy_label_reading",
+    "control_hidden_support_change",
+    "control_cross_repo_truth_import",
+    "control_taf4_source_law_overread"
+  ],
+  "source_t547_status": "HELD_OUT_PREDICTION_PRESSURE_SOURCE_LAW_NOT_EARNED",
+  "source_t547_verdict": "aprd_held_out_prediction_gate_clears_native_fixtures",
+  "stress_definition": {
+    "name": "aprd_cross_family_prediction_stress_packet",
+    "narrowing_condition": "If distinct native-candidate families return the frozen unknown-family marker, APRD remains family-local and must not feed TAF4 or source-law status without a new governed route.",
+    "source": "T547 frozen APRD held-out predictor",
+    "stress_question": "Can the frozen predictor assign APRD debt for a distinct native-candidate family before outcome labels and without adding a family-specific rule?",
+    "success_requires": [
+      "known_family_regression_still_matches",
+      "distinct_family_prediction_matches_without_new_rule",
+      "no_outcome_label_leakage",
+      "no_proxy_outcome_hint",
+      "no_posthoc_retuning",
+      "no_manual_family_rule_injection",
+      "no_cross_repo_truth_import",
+      "no_taf4_or_source_law_overread"
+    ]
+  },
+  "strongest_reading": "The frozen T547 APRD predictor still matches its known native record-transport family, but it does not predict distinct access-structure or protocol-stack candidate families without adding a new family rule. Manual rule injection, outcome leakage, proxy hints, hidden support change, cross-repo truth import, and TAF4/source-law overreading all reject. APRD narrows to a useful family-local feeder object.",
+  "taf11_update": "TAF11 remains open but APRD is narrowed. T548 blocks reading the T543-T547 APRD line as a cross-family source law; the next move should reset route selection rather than deepen APRD toward TAF4.",
+  "taf4_update": "TAF4 remains blocked. T548 specifically rejects finite-to-continuum movement from APRD because the frozen predictor does not survive new-family stress without retuning.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T548 supplies a negative control: cross-family prediction cannot be obtained by injecting a family rule after target selection.",
+  "verdict": "aprd_cross_family_stress_narrows_to_family_local_feeder"
+}

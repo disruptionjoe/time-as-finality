@@ -133,23 +133,23 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, APRD held-out prediction built | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T547 found bounded held-out APRD prediction for complete, record-transport, T51/T58, and T19 native fixtures. Source-law status is not earned. Next packet: `t548_aprd_cross_family_prediction_stress_packet`. |
+| TAF11 | open, APRD narrowed by cross-family stress | How should the North Star source-law pursuit continue after the S1 finite-generator route paused without falsification? | T548 found the known-family APRD regression still matches, but quantum access-structure and observerse protocol-stack stress need new native rules. Source-law status is not earned. Next packet: `t549_taf11_post_aprd_route_reset_router`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on TAF11 cross-family stress | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T547 leaves APRD needing cross-family predictive pressure before TAF4 can move. |
+| TAF4 | blocked on TAF11 route reset | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, and T548 narrowed APRD before any finite-to-continuum movement. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T547 supplies a stronger APRD feeder, but no domain-native cross-domain packet exists under the same spine. |
+| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T548 supplies a negative control against post-hoc cross-family APRD rule injection; no domain-native cross-domain packet exists under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the next APRD cross-family prediction stress gate:
+When Joe opens the lane, run the TAF11 post-APRD route reset:
 
-Run `t548_aprd_cross_family_prediction_stress_packet`. Stress the frozen APRD
-predictor on a distinct native family or adversarial cross-family fixture
-before any finite-to-continuum or source-law reading. If it cannot survive that
-without retuning, narrow the source-law route before TAF4 movement.
+Run `t549_taf11_post_aprd_route_reset_router`. Choose whether TAF11 now needs a
+new source-law family with its own falsifier, an observerse protocol-stack
+ablation preflight, or a deliberate pause behind TAF8 until a domain-native
+packet exists. Do not move TAF4 from APRD alone.
 
 Use the T541 TAF8 gate only when a real domain-native packet is available under
 the same predeclared spine. TAF12 may run only if a real data-bearing packet

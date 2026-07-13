@@ -1,5 +1,29 @@
 ﻿# Roadmap
 
+## 2026-07-13 T556 Observerse Protocol-Stack Post-Absorber Route Reset Gate
+
+T556 executes the route-reset gate selected by T555. It consumes T555 as
+absorber-completion authority: the mature protocol/state-machine,
+consensus/distributed-systems, governance, and record-provenance absorbers
+received their normal state and comparison rights, and the strong Observerse
+source-law reading was absorbed.
+
+The packet parks the T550-T555 Observerse protocol-stack route as audit
+translation residue. More bounded Observerse fixtures are rejected as
+source-law evidence after absorber completion, and immediate fresh-family
+selection pauses because no new source-law family, source variables, mature
+absorbers, or falsifier are declared in this packet.
+
+T556 names the next TAF11 packet:
+`t557_taf11_fresh_source_law_family_preflight_gate`. That packet may run only
+as a fresh-family preflight: name a new TAF11 source-law family, declare its
+source variables, predeclare mature absorbers and falsifiers, and reject if it
+reuses the absorbed Observerse protocol-stack route as evidence.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T556.
+
 ## 2026-07-13 T555 Observerse Protocol-Stack Absorber-Separation Gate
 
 T555 executes the absorber-separation gate selected by T554. It preserves

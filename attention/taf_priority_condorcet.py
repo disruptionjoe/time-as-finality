@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T555 absorbed the strong Observerse source-law reading after "
-            "same-neighbor-data completion and selected T556 route reset."
+            "T556 parked the absorbed Observerse protocol-stack route as audit "
+            "translation residue and selected T557 fresh-family preflight."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T555: absorber completion is not a "
-            "finite-to-continuum bridge."
+            "Still blocked after T556: parking the absorbed Observerse route "
+            "does not supply a finite-to-continuum bridge."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T555 preserved the T541 wait state: internal TAF11 absorber "
-            "work is not a domain-native cross-domain packet."
+            "T556 preserved the T541 wait state: internal TAF11 route reset is "
+            "not a domain-native cross-domain packet."
         ),
     },
 }

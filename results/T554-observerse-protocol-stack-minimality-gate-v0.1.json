@@ -1,0 +1,667 @@
+{
+  "admitted_fixtures": [
+    {
+      "bounded_fixture": true,
+      "complete_mode": "rescue",
+      "complete_rescues": true,
+      "conditional_governance": true,
+      "description": "Original bounded native finality fixture.",
+      "fixture_id": "t551_bounded_native_fixture",
+      "frozen_layers": [
+        "issuance",
+        "admissibility",
+        "sybil_finality",
+        "consensus",
+        "governance"
+      ],
+      "full_horizon_governance_mode": "rescue_with_precomputed_rules",
+      "layer_drop_modes": {
+        "admissibility": "incoherence",
+        "consensus": "fragment",
+        "governance": "ossification",
+        "issuance": "freeze",
+        "sybil_finality": "capture"
+      },
+      "native_finality": true,
+      "record_ids": [
+        "r_alpha",
+        "r_beta",
+        "r_gamma",
+        "r_delta",
+        "r_epsilon",
+        "r_zeta"
+      ],
+      "source": "T551",
+      "target_blind": true,
+      "trusted_consensus": true
+    },
+    {
+      "bounded_fixture": true,
+      "complete_mode": "rescue",
+      "complete_rescues": true,
+      "conditional_governance": true,
+      "description": "Independent handoff/partition/repair transfer fixture.",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "frozen_layers": [
+        "issuance",
+        "admissibility",
+        "sybil_finality",
+        "consensus",
+        "governance"
+      ],
+      "full_horizon_governance_mode": "rescue_with_precomputed_rules",
+      "layer_drop_modes": {
+        "admissibility": "incoherence",
+        "consensus": "fragment",
+        "governance": "ossification",
+        "issuance": "freeze",
+        "sybil_finality": "capture"
+      },
+      "native_finality": true,
+      "record_ids": [
+        "x_seed_left",
+        "x_seed_right",
+        "x_partition_left",
+        "x_partition_right",
+        "x_mirror_capture",
+        "x_merge_certificate",
+        "x_merge_conflict",
+        "x_late_handoff",
+        "x_late_repair",
+        "x_tail_closure"
+      ],
+      "source": "T552",
+      "target_blind": true,
+      "trusted_consensus": true
+    },
+    {
+      "bounded_fixture": true,
+      "complete_mode": "rescue",
+      "complete_rescues": true,
+      "conditional_governance": true,
+      "description": "Phase-rotated issuance/review/bridge/closure native fixture.",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "frozen_layers": [
+        "issuance",
+        "admissibility",
+        "sybil_finality",
+        "consensus",
+        "governance"
+      ],
+      "full_horizon_governance_mode": "rescue_with_precomputed_rules",
+      "layer_drop_modes": {
+        "admissibility": "incoherence",
+        "consensus": "fragment",
+        "governance": "ossification",
+        "issuance": "freeze",
+        "sybil_finality": "capture"
+      },
+      "native_finality": true,
+      "record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_shadow_capture",
+        "p_bridge_conflict",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "source": "T554",
+      "target_blind": true,
+      "trusted_consensus": true
+    }
+  ],
+  "artifact": "T554-observerse-protocol-stack-minimality-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The complete frozen stack rescues every admitted fixture: t551_bounded_native_fixture, t552_independent_transfer_fixture, third_phase_rotated_native_fixture."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Each frozen layer is minimal across the admitted class: issuance, admissibility, sybil_finality, consensus, governance."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Governance remains conditional: near-term removal ossifies, while full-horizon precomputed rules rescue in every fixture."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The next useful TAF11 burden is absorber separation, not source-law, TAF4, TAF8, claim-ledger, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T554 is a layer-minimality gate and next absorber-gate selector; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "frozen_layers": [
+    "issuance",
+    "admissibility",
+    "sybil_finality",
+    "consensus",
+    "governance"
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t553_boundary_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T553 completed the boundary map and selected T554."
+    },
+    {
+      "gate_id": "admitted_class_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The admitted bounded-native class remains T551, T552, and the phase-rotated fixture."
+    },
+    {
+      "gate_id": "frozen_layer_contract_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The five-layer contract remains frozen."
+    },
+    {
+      "gate_id": "complete_stack_rescues_all_fixtures",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The complete stack rescues every admitted bounded-native fixture."
+    },
+    {
+      "gate_id": "every_layer_minimal_across_class",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every frozen layer is load-bearing in every admitted fixture."
+    },
+    {
+      "gate_id": "conditional_governance_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Near-term governance is minimal while full-horizon rules still rescue."
+    },
+    {
+      "gate_id": "phase_rotated_fixture_not_replay",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The phase-rotated fixture is not a replay of T551 or T552 records."
+    },
+    {
+      "gate_id": "next_packet_specific",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "A single absorber-separation gate is named as the next packet."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No claim, canon, public-posture, TAF4, TAF8, external, or cross-repo movement is attempted."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "blocks": "Dropping any frozen layer from the bounded-native stack.",
+      "control_id": "layer_drop_control",
+      "reason": "T554 requires each layer to fail in its expected mode across every admitted fixture."
+    },
+    {
+      "blocks": "Counting a renamed T551 or T552 fixture as the third admitted shape.",
+      "control_id": "phase_rotated_replay_control",
+      "reason": "The phase-rotated fixture uses distinct records, phases, channels, and observer ids."
+    },
+    {
+      "blocks": "Making governance unconditional or deleting it without the near-term/full-horizon split.",
+      "control_id": "conditional_governance_control",
+      "reason": "Governance is minimal under near-term rules and non-minimal only when full-horizon rules are granted."
+    },
+    {
+      "blocks": "Treating bounded-class minimality as source-law proof.",
+      "control_id": "source_law_overread_control",
+      "reason": "Minimality does not grant mature absorber separation or a source-law theorem."
+    },
+    {
+      "blocks": "Skipping protocol, consensus, governance, or provenance absorbers after minimality.",
+      "control_id": "absorber_bypass_control",
+      "reason": "The next gate must grant same-neighbor-data completion before stronger readings."
+    },
+    {
+      "blocks": "Moving TAF4 or executing TAF8 from an internal TAF11 minimality result.",
+      "control_id": "taf4_taf8_shortcut_control",
+      "reason": "Layer minimality is neither a finite-to-continuum bridge nor a cross-domain packet."
+    },
+    {
+      "blocks": "Changing claim rows, Canon Index tiers, canon verdicts, public posture, or publication state.",
+      "control_id": "governance_posture_control",
+      "reason": "The packet has no governance movement authority."
+    }
+  ],
+  "layer_aggregates": [
+    {
+      "all_fixtures_minimal": true,
+      "expected_drop_mode": "freeze",
+      "layer_id": "issuance",
+      "minimal_fixture_ids": [
+        "t551_bounded_native_fixture",
+        "t552_independent_transfer_fixture",
+        "third_phase_rotated_native_fixture"
+      ],
+      "reason": "`issuance` is load-bearing in every admitted fixture."
+    },
+    {
+      "all_fixtures_minimal": true,
+      "expected_drop_mode": "incoherence",
+      "layer_id": "admissibility",
+      "minimal_fixture_ids": [
+        "t551_bounded_native_fixture",
+        "t552_independent_transfer_fixture",
+        "third_phase_rotated_native_fixture"
+      ],
+      "reason": "`admissibility` is load-bearing in every admitted fixture."
+    },
+    {
+      "all_fixtures_minimal": true,
+      "expected_drop_mode": "capture",
+      "layer_id": "sybil_finality",
+      "minimal_fixture_ids": [
+        "t551_bounded_native_fixture",
+        "t552_independent_transfer_fixture",
+        "third_phase_rotated_native_fixture"
+      ],
+      "reason": "`sybil_finality` is load-bearing in every admitted fixture."
+    },
+    {
+      "all_fixtures_minimal": true,
+      "expected_drop_mode": "fragment",
+      "layer_id": "consensus",
+      "minimal_fixture_ids": [
+        "t551_bounded_native_fixture",
+        "t552_independent_transfer_fixture",
+        "third_phase_rotated_native_fixture"
+      ],
+      "reason": "`consensus` is load-bearing in every admitted fixture."
+    },
+    {
+      "all_fixtures_minimal": true,
+      "expected_drop_mode": "ossification",
+      "layer_id": "governance",
+      "minimal_fixture_ids": [
+        "t551_bounded_native_fixture",
+        "t552_independent_transfer_fixture",
+        "third_phase_rotated_native_fixture"
+      ],
+      "reason": "`governance` is load-bearing in every admitted fixture."
+    }
+  ],
+  "layer_minimality_outcomes": [
+    {
+      "actual_drop_mode": "freeze",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "freeze",
+      "fixture_id": "t551_bounded_native_fixture",
+      "layer_id": "issuance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `issuance` changes `rescue` to `freeze` as expected."
+    },
+    {
+      "actual_drop_mode": "incoherence",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "incoherence",
+      "fixture_id": "t551_bounded_native_fixture",
+      "layer_id": "admissibility",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `admissibility` changes `rescue` to `incoherence` as expected."
+    },
+    {
+      "actual_drop_mode": "capture",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "capture",
+      "fixture_id": "t551_bounded_native_fixture",
+      "layer_id": "sybil_finality",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `sybil_finality` changes `rescue` to `capture` as expected."
+    },
+    {
+      "actual_drop_mode": "fragment",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "fragment",
+      "fixture_id": "t551_bounded_native_fixture",
+      "layer_id": "consensus",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `consensus` changes `rescue` to `fragment` as expected."
+    },
+    {
+      "actual_drop_mode": "ossification",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "ossification",
+      "fixture_id": "t551_bounded_native_fixture",
+      "layer_id": "governance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `governance` changes `rescue` to `ossification` as expected."
+    },
+    {
+      "actual_drop_mode": "freeze",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "freeze",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "layer_id": "issuance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `issuance` changes `rescue` to `freeze` as expected."
+    },
+    {
+      "actual_drop_mode": "incoherence",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "incoherence",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "layer_id": "admissibility",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `admissibility` changes `rescue` to `incoherence` as expected."
+    },
+    {
+      "actual_drop_mode": "capture",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "capture",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "layer_id": "sybil_finality",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `sybil_finality` changes `rescue` to `capture` as expected."
+    },
+    {
+      "actual_drop_mode": "fragment",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "fragment",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "layer_id": "consensus",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `consensus` changes `rescue` to `fragment` as expected."
+    },
+    {
+      "actual_drop_mode": "ossification",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "ossification",
+      "fixture_id": "t552_independent_transfer_fixture",
+      "layer_id": "governance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `governance` changes `rescue` to `ossification` as expected."
+    },
+    {
+      "actual_drop_mode": "freeze",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "freeze",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "layer_id": "issuance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `issuance` changes `rescue` to `freeze` as expected."
+    },
+    {
+      "actual_drop_mode": "incoherence",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "incoherence",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "layer_id": "admissibility",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `admissibility` changes `rescue` to `incoherence` as expected."
+    },
+    {
+      "actual_drop_mode": "capture",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "capture",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "layer_id": "sybil_finality",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `sybil_finality` changes `rescue` to `capture` as expected."
+    },
+    {
+      "actual_drop_mode": "fragment",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "fragment",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "layer_id": "consensus",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `consensus` changes `rescue` to `fragment` as expected."
+    },
+    {
+      "actual_drop_mode": "ossification",
+      "complete_mode": "rescue",
+      "expected_drop_mode": "ossification",
+      "fixture_id": "third_phase_rotated_native_fixture",
+      "layer_id": "governance",
+      "matched": true,
+      "minimal_in_fixture": true,
+      "reason": "Dropping `governance` changes `rescue` to `ossification` as expected."
+    }
+  ],
+  "minimality_status": "LAYER_MINIMALITY_CLEARED_BOUNDED_NATIVE_CLASS_NO_SOURCE_LAW_STATUS",
+  "not_claimed": "T554 does not validate Observerse, establish a source law, prove a shadow-protection theorem, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It tests layer minimality inside the bounded-native T550-T553 protocol-stack route only.",
+  "phase_rotated_outcomes": [
+    {
+      "actual_mode": "rescue",
+      "capture_count": 0,
+      "channel_count": 4,
+      "contradiction_count": 0,
+      "expected_mode": "rescue",
+      "final_record_count": 7,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "finality_score": 7.45,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `rescue`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 1,
+        "no_issuance": 0,
+        "rule_gap": 0,
+        "sybil": 1
+      },
+      "scenario_id": "phase_rotated_full_stack_rescue",
+      "shared_fraction": 1.0,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "freeze",
+      "capture_count": 0,
+      "channel_count": 0,
+      "contradiction_count": 0,
+      "expected_mode": "freeze",
+      "final_record_count": 0,
+      "final_record_ids": [],
+      "finality_score": 0.0,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `freeze`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 0,
+        "no_issuance": 9,
+        "rule_gap": 0,
+        "sybil": 0
+      },
+      "scenario_id": "phase_rotated_without_issuance",
+      "shared_fraction": 0.0,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "incoherence",
+      "capture_count": 0,
+      "channel_count": 4,
+      "contradiction_count": 1,
+      "expected_mode": "incoherence",
+      "final_record_count": 8,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_bridge_conflict",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "finality_score": 6.45,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `incoherence`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 0,
+        "no_issuance": 0,
+        "rule_gap": 0,
+        "sybil": 1
+      },
+      "scenario_id": "phase_rotated_without_admissibility",
+      "shared_fraction": 1.0,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "capture",
+      "capture_count": 1,
+      "channel_count": 4,
+      "contradiction_count": 0,
+      "expected_mode": "capture",
+      "final_record_count": 7,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "finality_score": 5.45,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `capture`.",
+      "rejected_by_reason": {
+        "consensus": 1,
+        "contradiction": 1,
+        "no_issuance": 0,
+        "rule_gap": 0,
+        "sybil": 0
+      },
+      "scenario_id": "phase_rotated_without_sybil_finality",
+      "shared_fraction": 1.0,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "fragment",
+      "capture_count": 0,
+      "channel_count": 4,
+      "contradiction_count": 0,
+      "expected_mode": "fragment",
+      "final_record_count": 7,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "finality_score": 2.2,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `fragment`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 1,
+        "no_issuance": 0,
+        "rule_gap": 0,
+        "sybil": 1
+      },
+      "scenario_id": "phase_rotated_without_consensus",
+      "shared_fraction": 0.25,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "ossification",
+      "capture_count": 0,
+      "channel_count": 4,
+      "contradiction_count": 0,
+      "expected_mode": "ossification",
+      "final_record_count": 4,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren"
+      ],
+      "finality_score": 2.95,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `ossification`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 1,
+        "no_issuance": 0,
+        "rule_gap": 3,
+        "sybil": 1
+      },
+      "scenario_id": "phase_rotated_without_governance_near_term",
+      "shared_fraction": 1.0,
+      "target_blind_prediction": true
+    },
+    {
+      "actual_mode": "rescue_with_precomputed_rules",
+      "capture_count": 0,
+      "channel_count": 4,
+      "contradiction_count": 0,
+      "expected_mode": "rescue_with_precomputed_rules",
+      "final_record_count": 7,
+      "final_record_ids": [
+        "p_seed_mira",
+        "p_seed_paz",
+        "p_review_noel",
+        "p_bridge_oren",
+        "p_closure_noel",
+        "p_late_mira",
+        "p_tail_paz"
+      ],
+      "finality_score": 7.45,
+      "prediction_matched": true,
+      "reason": "Prediction matched the phase-rotated mode `rescue_with_precomputed_rules`.",
+      "rejected_by_reason": {
+        "consensus": 0,
+        "contradiction": 1,
+        "no_issuance": 0,
+        "rule_gap": 0,
+        "sybil": 1
+      },
+      "scenario_id": "phase_rotated_without_governance_full_horizon",
+      "shared_fraction": 1.0,
+      "target_blind_prediction": true
+    }
+  ],
+  "recommended_next": "Run t555_observerse_protocol_stack_absorber_separation_gate. It should grant mature protocol, consensus, distributed-systems, governance, and record-provenance absorbers their normal state/comparison rights before treating the minimal bounded-native stack as source-law evidence.",
+  "selected_next_packet": "t555_observerse_protocol_stack_absorber_separation_gate",
+  "source_law_reading": "The stack is minimal for the current bounded-native class because each frozen layer is load-bearing under near-term governance. That is stronger internal route control, not source-law status.",
+  "source_t553_admitted_class_ids": [
+    "t551_bounded_native_fixture",
+    "t552_independent_transfer_fixture",
+    "third_phase_rotated_native_fixture"
+  ],
+  "source_t553_selected_next_packet": "t554_observerse_protocol_stack_minimality_gate",
+  "source_t553_verdict": "observerse_protocol_stack_generalization_boundary_mapped",
+  "taf11_update": "TAF11 remains active. T554 finds the frozen five-layer stack layer-minimal across the admitted bounded-native class, but the next burden is absorber separation, not promotion.",
+  "taf4_update": "TAF4 remains blocked. Layer minimality inside bounded native Observerse fixtures is not a finite-to-continuum bridge.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. Minimality inside the TAF11 class does not execute TAF8.",
+  "verdict": "observerse_protocol_stack_minimality_gate_clears_bounded_class"
+}

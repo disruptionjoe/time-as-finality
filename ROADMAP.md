@@ -1,5 +1,28 @@
 ﻿# Roadmap
 
+## 2026-07-13 T554 Observerse Protocol-Stack Minimality Gate
+
+T554 executes the layer-minimality gate selected by T553. It consumes T553 as
+boundary authority, keeps the T550-T553 five-layer stack frozen, and tests the
+admitted bounded-native class: the T551 bounded native fixture, the T552
+independent transfer fixture, and one phase-rotated native fixture.
+
+The packet finds that the complete stack rescues every admitted fixture, while
+dropping issuance, admissibility, sybil/finality, consensus, or near-term
+governance yields the expected failure modes: freeze, incoherence, capture,
+fragment, and ossification. The full-horizon governance control still rescues,
+so governance remains conditional rather than unconditional.
+
+T554 names the next TAF11 packet:
+`t555_observerse_protocol_stack_absorber_separation_gate`. That packet should
+grant mature protocol, consensus, distributed-systems, governance, and
+record-provenance absorbers their normal state and comparison rights before any
+source-law, TAF4, TAF8, claim-ledger, or public-posture reading.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T554.
+
 ## 2026-07-13 T553 Observerse Protocol-Stack Generalization-Boundary Gate
 
 T553 executes the generalization-boundary gate selected by T552. It consumes

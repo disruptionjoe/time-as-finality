@@ -12,15 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T552 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T553 on
 2026-07-13:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T552 gave the frozen protocol stack a second independent native
-   transfer survivor and selected T553 as the generalization-boundary gate.
+   Why: T553 mapped the bounded-native generalization class and selected T554
+   as the layer-minimality gate before any promotion.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T552 preserved the T541 wait state; internal TAF11 transfer is not a
-   domain-native cross-domain packet.
+   Why: T553 preserved the T541 wait state; internal TAF11 class-boundary work
+   is not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -28,7 +28,7 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T552 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T552; two bounded Observerse survivors are not a
+   Why: Still blocked after T553; a bounded-native class boundary is not a
    finite-to-continuum bridge.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
@@ -133,29 +133,27 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, independent transfer survivor | Can the frozen five-layer Observerse stack generalize beyond two bounded native fixtures without overfitting? | T552 consumed T551, matched all frozen collapse/rescue modes on a structurally different handoff/partition/repair finality fixture, and selected `t553_observerse_protocol_stack_generalization_boundary_gate`. Source-law status is not earned. |
+| TAF11 | open, bounded-native class mapped | Are all five frozen protocol-stack layers minimal across the admitted bounded-native class? | T553 consumed T551/T552, admitted a bounded-native class, rejected consensus-light, unconditional-governance, APRD-retuned, TAF8, TAF4, and source-law-overread shortcuts, and selected `t554_observerse_protocol_stack_minimality_gate`. Source-law status is not earned. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on TAF11 generalization boundary | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T552 remains bounded internal transfer only. TAF4 movement still waits for a real generalization bridge. |
+| TAF4 | blocked on TAF11 minimality/generalization | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T553 remains bounded internal class-boundary work only. TAF4 movement still waits for a real generalization bridge. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T552 keeps TAF8 waiting because internal TAF11 transfer is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T553 keeps TAF8 waiting because internal TAF11 class-boundary work is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the TAF11 protocol-stack generalization-boundary
-gate:
+When Joe opens the lane, run the TAF11 protocol-stack layer-minimality gate:
 
-Run `t553_observerse_protocol_stack_generalization_boundary_gate`. Keep the
-same frozen five-layer contract from T550/T551/T552, treat the two bounded
-native survivors as evidence to be falsified or narrowed rather than promoted,
-and test what boundary would make the stack stop transferring. Reject if the
-gate treats T551/T552 as source-law proof, drops conditional governance,
-retunes APRD, imports cross-repo truth, executes TAF8, or moves TAF4/source-law
-status directly.
+Run `t554_observerse_protocol_stack_minimality_gate`. Keep the same frozen
+five-layer contract from T550/T551/T552/T553, treat the bounded-native class as
+evidence to be minimized rather than promoted, and test whether each layer is
+load-bearing across the admitted class. Reject if the gate treats T551-T553 as
+source-law proof, drops conditional governance, retunes APRD, imports
+cross-repo truth, executes TAF8, or moves TAF4/source-law status directly.
 
 Use the T541 TAF8 gate only when a real domain-native packet is available under
 the same predeclared spine. TAF12 may run only if a real data-bearing packet
-exists. TAF3 remains blocked until TAF11 supplies a real generalization
+exists. TAF3 remains blocked until TAF11 supplies a real minimal generalized
 survivor or TAF12 supplies a real noncompletion target.

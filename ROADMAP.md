@@ -1,5 +1,27 @@
 ﻿# Roadmap
 
+## 2026-07-13 T553 Observerse Protocol-Stack Generalization-Boundary Gate
+
+T553 executes the generalization-boundary gate selected by T552. It consumes
+T551 and T552 as two bounded native survivors for the frozen five-layer
+contract, but treats them as evidence to bound rather than promote.
+
+The packet maps the admitted class as bounded native finality fixtures with
+target blindness, frozen layers, trusted consensus, and conditional governance.
+It admits T551, T552, and one further phase-rotated native fixture shape. It
+rejects or bounds consensus-light cases, unconditional governance,
+APRD-retuned rescue, cross-domain TAF8 import, Lorentzian/causal-set target
+import, and source-law overread.
+
+T553 names the next TAF11 packet:
+`t554_observerse_protocol_stack_minimality_gate`. That packet should test
+whether every frozen layer is minimal across the admitted bounded-native class
+before any source-law, TAF4, TAF8, claim-ledger, or public posture reading.
+
+No Observerse validation, source law, shadow-protection theorem, claim-ledger,
+Canon Index, canon-verdict, public-posture, North Star, external-publication,
+TAF4 movement, TAF8 execution, or cross-repo movement is earned by T553.
+
 ## 2026-07-13 T552 Observerse Protocol-Stack Independent Transfer Gate
 
 T552 executes the independent-transfer gate selected by T551. It consumes T551

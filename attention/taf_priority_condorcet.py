@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T552 gave the frozen protocol stack a second independent native "
-            "transfer survivor and selected T553 as the generalization-boundary gate."
+            "T553 mapped the bounded-native generalization class and selected "
+            "T554 as the layer-minimality gate before any promotion."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T552: two bounded Observerse survivors are "
-            "not a finite-to-continuum bridge."
+            "Still blocked after T553: a bounded-native class boundary is not "
+            "a finite-to-continuum bridge."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T552 preserved the T541 wait state: internal TAF11 transfer is "
-            "not a domain-native cross-domain packet."
+            "T553 preserved the T541 wait state: internal TAF11 class-boundary "
+            "work is not a domain-native cross-domain packet."
         ),
     },
 }

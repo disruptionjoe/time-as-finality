@@ -1,5 +1,29 @@
 ﻿# Roadmap
 
+## 2026-07-14 T562 Domain-Native Sheaf Transport Minimality Gate
+
+T562 executes the minimality burden selected by T561. It consumes the mapped
+bounded class: the T559 record-finality transport-square survivor, the T560
+handoff/rotation/repair transfer survivor, and the T561 multicover
+seal/handoff fixture.
+
+The complete frozen `sheaf_obstruction_transport_family` packet admits every
+fixture. Dropping any of the six source variables produces the expected failure
+mode across every fixture: finite event cover, local finality sections,
+restriction morphisms, settlement obstruction witness, transport consistency
+square, and allowed refinement steps are all load-bearing. The same is true
+for the core boundaries, all four mature absorber boundaries, and all four
+falsifier boundaries.
+
+T562 names the next executable TAF11 burden:
+`t563_domain_native_sheaf_transport_absorber_separation_gate`. That packet
+should grant mature absorbers their normal same-neighbor-data completion rights
+against the minimal bounded class before any source-law reading.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T562.
+
 ## 2026-07-13 T561 Domain-Native Sheaf Transport Generalization Boundary Gate
 
 T561 executes the generalization-boundary burden selected by T560. It keeps the

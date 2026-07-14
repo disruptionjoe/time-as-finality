@@ -1,0 +1,676 @@
+{
+  "admitted_family_ids": [
+    "calibration_chain_role_recoding_family",
+    "archive_manifest_handoff_role_recoding_family"
+  ],
+  "artifact": "T570-domain-native-sheaf-transport-fresh-family-stress-gate-v0.1",
+  "candidates": [
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "calibration_chain_role_recoding_family",
+      "family_id": "instrument_calibration_chain_finality_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Fresh source domain: calibration custody can force a repair payload through incompatible local attestations without using prior sheaf-transport fixture labels.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "calibration custody chain with irreversible repair windows",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "archive_manifest_handoff_role_recoding_family",
+      "family_id": "archive_manifest_handoff_finality_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Second fresh source domain: archive manifests change the vocabulary and operational story while preserving role-level finality and transport burdens.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "archive migration manifest with delayed custody handoff",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "same_family_surface_relabel_replay_control",
+      "family_id": "renamed_prior_holdout_family",
+      "fixture_label_terms": [
+        "escrow_window_rotation_holdout"
+      ],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": true,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": true,
+      "rationale": "Rejects same-family relabeling as fresh-family evidence.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "same sheaf-transport holdout with renamed labels",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "missing_transport_square_fresh_name_control",
+      "family_id": "fresh_name_without_square_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "noncommuting_transport_square": false,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Rejects fresh vocabulary that lacks transport noncommutation.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "fresh audit vocabulary without a noncommuting square",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "target_geometry_import_family_control",
+      "family_id": "target_geometry_import_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": false,
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Rejects target-language import and missing native payload forcing.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "causal-set target reconstruction vocabulary",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [
+        "lorentzian_dimension_target"
+      ]
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "optional_payload_family_control",
+      "family_id": "optional_payload_recoding_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": false,
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witness": true,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Rejects recodings where the payload is compatible but not forced.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "fresh audit vocabulary with optional settlement payload",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "candidate_id": "absorber_complete_trivial_completion_control",
+      "family_id": "ordinary_completion_family",
+      "fixture_label_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": false,
+      "noncommuting_transport_square": false,
+      "nontrivial_obstruction_witness": false,
+      "outcome_label_read": false,
+      "predeclared_before_evaluation": true,
+      "prior_family_replay": false,
+      "rationale": "Rejects ordinary completion as source-family evidence.",
+      "role_projection_id": "fresh_role_recoding_projection_v1",
+      "source_domain": "ordinary same-neighbor completion bookkeeping",
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Fresh-family role stress admits: calibration_chain_role_recoding_family, archive_manifest_handoff_role_recoding_family."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Fresh-family role stress rejects controls: same_family_surface_relabel_replay_control, missing_transport_square_fresh_name_control, target_geometry_import_family_control, optional_payload_family_control, absorber_complete_trivial_completion_control."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law status remains blocked by multi-family falsifier rotation."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Fresh-family role recoding strengthens route evidence without promoting it."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T570 fresh-family stress keeps the semantic-generator route review-only and selects multi-family falsifier rotation; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "closure_checks": [
+    {
+      "check_id": "t569_authority",
+      "evidence": [
+        "T569 independently reimplemented the semantic generator.",
+        "T569 selected fresh-family stress as next packet."
+      ],
+      "passed": true,
+      "residual_risk": "T569 is review authority, not source-law status.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "fresh_projection_changes_surface_vocabulary",
+      "evidence": [
+        "certificate_window_cover",
+        "local_attestation_panels",
+        "scope_restriction_maps",
+        "irreversible_disagreement_witnesses",
+        "handoff_commutation_squares",
+        "audit_refinement_moves"
+      ],
+      "passed": true,
+      "residual_risk": "Role recoding is finite and still review-only.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "fresh_families_admitted",
+      "evidence": [
+        "calibration_chain_role_recoding_family",
+        "archive_manifest_handoff_role_recoding_family"
+      ],
+      "passed": true,
+      "residual_risk": "Two admitted families are not a source law.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "fresh_controls_rejected",
+      "evidence": [
+        "same_family_surface_relabel_replay_control",
+        "missing_transport_square_fresh_name_control",
+        "target_geometry_import_family_control",
+        "optional_payload_family_control",
+        "absorber_complete_trivial_completion_control"
+      ],
+      "passed": true,
+      "residual_risk": "More controls may expose failure modes.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "literal_replay_control_active",
+      "evidence": [
+        "REJECTED_LITERAL_OR_OUTCOME_REPLAY"
+      ],
+      "passed": true,
+      "residual_risk": "Replay controls are synthetic.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "semantic_and_target_controls_active",
+      "evidence": [
+        "REJECTED_MISSING_TRANSPORT_SQUARE",
+        "REJECTED_TARGET_IMPORT",
+        "REJECTED_NATIVE_PAYLOAD_NOT_FORCED",
+        "REJECTED_MISSING_TRANSPORT_SQUARE"
+      ],
+      "passed": true,
+      "residual_risk": "Finite controls do not exhaust mature absorber space.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "governance_boundaries_preserved",
+      "evidence": [
+        "No claim-ledger movement.",
+        "No Canon Index movement.",
+        "No public-posture, TAF4, TAF8, S1, external, or cross-repo movement."
+      ],
+      "passed": true,
+      "residual_risk": "None inside this packet; the next packet remains review-only.",
+      "status": "PASS"
+    }
+  ],
+  "evaluations": [
+    {
+      "candidate_id": "calibration_chain_role_recoding_family",
+      "failed_checks": [],
+      "fresh_family_admissible": true,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "reason": "The fresh family satisfies the role-level semantic generator stress.",
+      "role_projection_complete": true,
+      "status": "ADMITTED_BY_FRESH_FAMILY_ROLE_STRESS"
+    },
+    {
+      "candidate_id": "archive_manifest_handoff_role_recoding_family",
+      "failed_checks": [],
+      "fresh_family_admissible": true,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "reason": "The fresh family satisfies the role-level semantic generator stress.",
+      "role_projection_complete": true,
+      "status": "ADMITTED_BY_FRESH_FAMILY_ROLE_STRESS"
+    },
+    {
+      "candidate_id": "same_family_surface_relabel_replay_control",
+      "failed_checks": [
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent"
+      ],
+      "fresh_family_admissible": false,
+      "literal_replay_rejected": true,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "reason": "Fresh-family stress rejects prior-family replay, fixture labels, or outcome reading.",
+      "role_projection_complete": true,
+      "status": "REJECTED_LITERAL_OR_OUTCOME_REPLAY"
+    },
+    {
+      "candidate_id": "missing_transport_square_fresh_name_control",
+      "failed_checks": [
+        "noncommuting_transport_square"
+      ],
+      "fresh_family_admissible": false,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "reason": "Fresh vocabulary is insufficient without a noncommuting transport square.",
+      "role_projection_complete": true,
+      "status": "REJECTED_MISSING_TRANSPORT_SQUARE"
+    },
+    {
+      "candidate_id": "target_geometry_import_family_control",
+      "failed_checks": [
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "fresh_family_admissible": false,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square"
+      ],
+      "reason": "Fresh-family stress rejects target-language import.",
+      "role_projection_complete": true,
+      "status": "REJECTED_TARGET_IMPORT"
+    },
+    {
+      "candidate_id": "optional_payload_family_control",
+      "failed_checks": [
+        "native_payload_forced"
+      ],
+      "fresh_family_admissible": false,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "target_blind_language"
+      ],
+      "reason": "Fresh-family stress rejects unforced native payload.",
+      "role_projection_complete": true,
+      "status": "REJECTED_NATIVE_PAYLOAD_NOT_FORCED"
+    },
+    {
+      "candidate_id": "absorber_complete_trivial_completion_control",
+      "failed_checks": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced"
+      ],
+      "fresh_family_admissible": false,
+      "literal_replay_rejected": false,
+      "passed_checks": [
+        "t569_contract_source_roles_preserved",
+        "t569_contract_absorber_roles_preserved",
+        "fresh_projection_uses_new_field_names",
+        "predeclared_before_evaluation",
+        "fresh_family_not_prior_replay",
+        "fixture_labels_absent",
+        "role_projection_complete",
+        "forbidden_shortcuts_absent",
+        "target_blind_language"
+      ],
+      "reason": "Fresh vocabulary is insufficient without a noncommuting transport square.",
+      "role_projection_complete": true,
+      "status": "REJECTED_MISSING_TRANSPORT_SQUARE"
+    }
+  ],
+  "fresh_family_projection": {
+    "absorber_role_to_fresh_boundary": [
+      [
+        "ordinary_sheaf_gluing_completion",
+        "ordinary_panel_gluing_completion"
+      ],
+      [
+        "resource_transport_monotone_absorber",
+        "resource_monotone_relabel_absorber"
+      ],
+      [
+        "consensus_state_machine_absorber",
+        "state_machine_quorum_absorber"
+      ],
+      [
+        "record_provenance_completion_absorber",
+        "custody_provenance_completion_absorber"
+      ]
+    ],
+    "forbidden_shortcuts": [
+      "target_labels",
+      "cross_repo_truth",
+      "observerse_replay",
+      "aprd_replay",
+      "direct_taf4_movement",
+      "taf8_execution",
+      "s1_movement",
+      "source_law_overread",
+      "claim_ledger_movement",
+      "canon_index_movement",
+      "public_posture_movement",
+      "external_publication"
+    ],
+    "literal_source_variable_names_used_as_fields": [],
+    "projection_id": "fresh_role_recoding_projection_v1",
+    "rationale": "The stress gate changes surface vocabulary and source domain while preserving the declared source-variable and absorber-boundary roles.",
+    "semantic_requirements": [
+      "nontrivial_obstruction_witness",
+      "noncommuting_transport_square",
+      "native_payload_forced",
+      "target_blind_language"
+    ],
+    "source_contract_id": "semantic_source_variable_complete_holdout_generator_v2",
+    "source_role_to_fresh_field": [
+      [
+        "finite_event_covers",
+        "certificate_window_cover"
+      ],
+      [
+        "local_finality_sections",
+        "local_attestation_panels"
+      ],
+      [
+        "restriction_morphisms",
+        "scope_restriction_maps"
+      ],
+      [
+        "settlement_obstruction_witnesses",
+        "irreversible_disagreement_witnesses"
+      ],
+      [
+        "transport_consistency_squares",
+        "handoff_commutation_squares"
+      ],
+      [
+        "allowed_refinement_steps",
+        "audit_refinement_moves"
+      ]
+    ]
+  },
+  "fresh_family_status": "FRESH_FAMILY_STRESS_SURVIVES_ROLE_LEVEL_RECODING",
+  "fresh_family_stress_cleared": true,
+  "gate_decisions": [
+    {
+      "gate_id": "t569_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T569 supplies fresh-family stress authority."
+    },
+    {
+      "gate_id": "fresh_projection_not_literal_replay",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The projection changes vocabulary and rejects same-family replay."
+    },
+    {
+      "gate_id": "fresh_families_expected_status",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Fresh families admit while replay, semantic, target, and completion controls reject."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law promotion is rejected."
+    },
+    {
+      "gate_id": "multi_family_falsifier_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Multi-family falsifier rotation is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No governance boundary was crossed."
+    }
+  ],
+  "not_claimed": "T570 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It stress-tests the independently reimplemented semantic generator on fresh-family role recodings and selects multi-family falsifier rotation as the next review-only burden.",
+  "recommended_next": "Run t571_domain_native_sheaf_transport_multi_family_falsifier_rotation_gate. The next gate should rotate falsifiers across multiple admitted families and try to break the role-level projection before any source-law, claim, canon, public-posture, TAF4, TAF8, or S1 movement.",
+  "rejected_control_ids": [
+    "same_family_surface_relabel_replay_control",
+    "missing_transport_square_fresh_name_control",
+    "target_geometry_import_family_control",
+    "optional_payload_family_control",
+    "absorber_complete_trivial_completion_control"
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_REVIEW_ONLY_MULTI_FAMILY_FALSIFIER_REQUIRED",
+      "reason": "Fresh-family stress clears a role-recoding check but not multi-family falsifier pressure.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_multi_family_falsifier_rotation_gate",
+      "next_packet": "t571_domain_native_sheaf_transport_multi_family_falsifier_rotation_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The next honest review step is rotating falsifiers across multiple admitted families.",
+      "selected": true
+    },
+    {
+      "decision_id": "abandon_semantic_generator_route",
+      "next_packet": "none",
+      "outcome": "PAUSED_FRESH_FAMILY_STRESS_CLEARED",
+      "reason": "Route reset is premature because fresh-family stress cleared.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_taf4_from_t570",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "Fresh-family stress of a finite generator is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t570",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 generator stress is not cross-domain shadow protection.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_status": "fresh_family_stress_clears_multi_family_falsifier_required",
+  "selected_next_packet": "t571_domain_native_sheaf_transport_multi_family_falsifier_rotation_gate",
+  "source_law_earned": false,
+  "source_law_reading": "T570 preserves the T568/T569 semantic generator under fresh role-level recodings in two non-replay domains and rejects replay, target-import, missing-square, optional-payload, and trivial completion controls. That is stronger route evidence, but it is still finite review evidence rather than a public source law.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_MULTI_FAMILY_FALSIFIER_REQUIRED",
+  "source_t569_independent_reimplementation_cleared": true,
+  "source_t569_selected_next_packet": "t570_domain_native_sheaf_transport_fresh_family_stress_gate",
+  "source_t569_verdict": "domain_native_sheaf_transport_independent_reimplementation_matches_review_only",
+  "taf11_update": "TAF11 remains the top active lane. Fresh-family role recoding survived, but source-law status still waits for multi-family falsifier rotation.",
+  "taf4_update": "TAF4 remains blocked. Fresh-family stress of a finite semantic generator is not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T570 is still internal TAF11 generator stress, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_fresh_family_stress_survives_review_only"
+}

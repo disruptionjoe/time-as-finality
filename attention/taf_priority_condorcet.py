@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Fresh-family stress for the TAF11 generator",
+        "title": "Multi-family falsifier rotation for the TAF11 generator",
         "why": (
-            "T569 independently reimplemented the semantic generator but left "
-            "source-law status blocked until fresh-family stress."
+            "T570 survived fresh-family role recoding but left source-law "
+            "status blocked until multi-family falsifier rotation."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T569: a finite semantic generator is not "
+            "Still blocked after T570: a finite semantic generator is not "
             "continuum descent or Lorentzian target import."
         ),
     },
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T569 preserved the T541 wait state: internal TAF11 generator "
+            "T570 preserved the T541 wait state: internal TAF11 generator "
             "hygiene is not a domain-native cross-domain packet."
         ),
     },

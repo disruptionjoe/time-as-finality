@@ -1,5 +1,49 @@
 ﻿# Roadmap
 
+## 2026-07-14 T570 Domain-Native Sheaf Transport Fresh-Family Stress Gate
+
+T570 executes the fresh-family stress burden selected by T569. It consumes the
+independently reimplemented T568 semantic generator and tests whether the same
+load-bearing source roles survive a change in surface vocabulary and source
+domain.
+
+The fresh-family projection preserves the declared roles:
+
+- finite event covers;
+- local finality sections;
+- restriction morphisms;
+- settlement obstruction witnesses;
+- transport consistency squares;
+- allowed refinement steps;
+- the four mature absorber boundaries.
+
+It recodes those roles into fresh certificate, attestation, restriction,
+disagreement, handoff, and audit-refinement vocabulary. The role-level stress
+admits two non-replay families:
+
+- `calibration_chain_role_recoding_family`;
+- `archive_manifest_handoff_role_recoding_family`.
+
+It rejects five controls:
+
+- `same_family_surface_relabel_replay_control`;
+- `missing_transport_square_fresh_name_control`;
+- `target_geometry_import_family_control`;
+- `optional_payload_family_control`;
+- `absorber_complete_trivial_completion_control`.
+
+This strengthens the TAF11 route by showing that the semantic generator is not
+only a literal fixture-label replay, but it remains review-only. Source-law
+status, claim-ledger movement, Canon Index movement, canon-verdict movement,
+public-posture movement, TAF4 movement, TAF8 execution, S1 movement, external
+publication, and cross-repo movement remain blocked.
+
+T570 names the next executable TAF11 burden:
+`t571_domain_native_sheaf_transport_multi_family_falsifier_rotation_gate`. That
+packet should rotate falsifiers across multiple admitted families and try to
+break the role-level generator before any source-law, claim, canon,
+public-posture, TAF4, TAF8, or S1 movement.
+
 ## 2026-07-14 T569 Domain-Native Sheaf Transport Independent Reimplementation Gate
 
 T569 executes the independent-reimplementation burden selected by T568. It

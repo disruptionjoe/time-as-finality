@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Source-law firebreak for the TAF11 generator",
+        "title": "Candidate-package limitation for the TAF11 generator",
         "why": (
-            "T576 closed the finite hostile-search scope as review-only, so "
-            "the next burden is preventing promotion by inertia."
+            "T577 allowed only firewalled review packaging, so the next burden "
+            "is testing the package limitations."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T576: hostile scope closure is not "
+            "Still blocked after T577: review-only candidate packaging is not "
             "continuum descent or Lorentzian target import."
         ),
     },
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T576 preserved the T541 wait state: internal TAF11 scope closure "
-            "is not a domain-native cross-domain packet."
+            "T577 preserved the T541 wait state: internal TAF11 candidate "
+            "packaging is not a domain-native cross-domain packet."
         ),
     },
 }

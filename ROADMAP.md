@@ -1,5 +1,31 @@
 ﻿# Roadmap
 
+## 2026-07-14 T577 Domain-Native Sheaf Transport Source-Law Firebreak Gate
+
+T577 executes the source-law firebreak selected by T576. It decides whether
+the T559-T576 review-only sheaf-transport route may be packaged as an internal
+source-law candidate without promotion by inertia.
+
+The firebreak passes five criteria:
+
+- T576 authority;
+- route-chain packageability across T559-T576;
+- hostile pressure completed for the declared finite scope;
+- promotion firebreak still needed;
+- protected TAF4, TAF8, S1, claim, canon, public-posture, publication, and
+  cross-repo boundaries still blocked.
+
+T577 allows only the internal label
+`taf11_source_law_candidate_package_review_only`. This is a bounded review
+package, not public source-law status. It does not establish source law, move
+any claim ledger or Canon Index tier, change canon verdict or public posture,
+move TAF4 or TAF8, move S1, authorize publication, or move cross-repo truth.
+
+T577 names the next executable TAF11 burden:
+`t578_domain_native_sheaf_transport_candidate_package_limitation_gate`. That
+packet should stress the candidate package's limitations before any stronger
+reading of the finite synthetic route.
+
 ## 2026-07-14 T576 Domain-Native Sheaf Transport Hostile Search Scope Closure Gate
 
 T576 executes the hostile-search scope-closure burden selected by T575. It

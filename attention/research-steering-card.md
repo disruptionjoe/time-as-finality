@@ -12,15 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T576 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T577 on
 2026-07-14:
 
-1. TAF11 - Source-law firebreak for the TAF11 generator.
-   Why: T576 closed the finite hostile-search scope as review-only, so the
-   next burden is preventing promotion by inertia.
+1. TAF11 - Candidate-package limitation for the TAF11 generator.
+   Why: T577 allowed only firewalled review packaging, so the next burden is
+   testing the package limitations.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T576 preserved the T541 wait state; internal TAF11 scope closure is
-   not a domain-native cross-domain packet.
+   Why: T577 preserved the T541 wait state; internal TAF11 candidate packaging
+   is not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The current C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -28,8 +28,8 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T576 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T576; hostile scope closure is not continuum
-   descent or Lorentzian target import.
+   Why: Still blocked after T577; review-only candidate packaging is not
+   continuum descent or Lorentzian target import.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -133,27 +133,27 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, source-law firebreak selected | Does the T559-T576 review-only sheaf-transport route deserve any source-law candidate packaging without promotion by inertia? | T576 closed the declared finite hostile-search scope as review-only, kept source-law promotion blocked, and selected `t577_domain_native_sheaf_transport_source_law_firebreak_gate`. |
+| TAF11 | open, candidate-package limitation selected | What are the limits of the firewalled T559-T577 source-law candidate package? | T577 allowed only the internal label `taf11_source_law_candidate_package_review_only`, kept source-law promotion blocked, and selected `t578_domain_native_sheaf_transport_candidate_package_limitation_gate`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T576 supplied only finite hostile-scope closure. TAF4 movement still waits for a real bridge, not a target import. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T577 supplied only review candidate packaging. TAF4 movement still waits for a real bridge, not a target import. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T576 keeps TAF8 waiting because internal TAF11 scope closure is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T577 keeps TAF8 waiting because internal TAF11 candidate packaging is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the selected source-law firebreak burden:
+When Joe opens the lane, run the selected candidate-package limitation burden:
 
-Run `t577_domain_native_sheaf_transport_source_law_firebreak_gate` before any
-claim or canon movement. Decide whether the T559-T576 review-only route
-deserves any source-law candidate packaging while blocking promotion by
-inertia. Do not promote source-law status from finite scope closure alone, and
-do not move TAF4, TAF8, S1, public posture, or cross-repo truth.
+Run `t578_domain_native_sheaf_transport_candidate_package_limitation_gate`
+before any claim or canon movement. Stress the limitations of the T559-T577
+review-only candidate package while blocking promotion by inertia. Do not
+promote source-law status from internal packaging alone, and do not move TAF4,
+TAF8, S1, public posture, or cross-repo truth.
 
 Use the T541 TAF8 gate only when a real domain-native cross-domain packet is
 available under the same predeclared spine. TAF12 may run only if a real
-data-bearing packet exists. TAF3 remains blocked until the TAF11 firebreak
-keeps, retires, or redirects the semantic generator route, or TAF12 supplies a
-real noncompletion target.
+data-bearing packet exists. TAF3 remains blocked until the TAF11 candidate
+package is limited, retired, or redirected, or TAF12 supplies a real
+noncompletion target.

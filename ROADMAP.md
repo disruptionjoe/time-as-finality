@@ -1,5 +1,32 @@
 ﻿# Roadmap
 
+## 2026-07-14 T566 Domain-Native Sheaf Transport Typed Generator Gate
+
+T566 executes the typed-generator burden selected by T565. It consumes T565's
+predictive-holdout authority and types a source-variable-complete admissible
+case generator before fixture-specific outcome reading.
+
+The generator declares the frozen T557-T565 source variables and absorber
+boundaries, admits one new multiphase escrow repair holdout candidate, and
+rejects four hostile controls:
+
+- a candidate missing the transport consistency square;
+- a target-label import shortcut;
+- a post-hoc candidate selected after outcome reading;
+- a direct replay of the T565 rotating multi-ledger repair holdout.
+
+This completes the internal T564/T565/T566 source-law review packet, but it is
+still review-only. Public source-law status, claim-ledger movement, Canon Index
+movement, canon-verdict movement, public-posture movement, TAF4 movement, TAF8
+execution, S1 movement, external publication, and cross-repo movement remain
+unearned.
+
+T566 names the next executable TAF11 burden:
+`t567_domain_native_sheaf_transport_source_law_hostile_review_gate`. That packet
+should try to break the typed generator with same-field adversaries, disguised
+target imports, absorber-complete-but-trivial cases, and alternate native record
+scenarios before any claim, canon, public-posture, TAF4, TAF8, or S1 movement.
+
 ## 2026-07-14 T565 Domain-Native Sheaf Transport Predictive Holdout Gate
 
 T565 executes the predictive-holdout burden selected by T564. It freezes the

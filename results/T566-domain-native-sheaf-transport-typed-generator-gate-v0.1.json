@@ -1,0 +1,464 @@
+{
+  "artifact": "T566-domain-native-sheaf-transport-typed-generator-gate-v0.1",
+  "candidate_cases": [
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "case_id": "new_multiphase_escrow_repair_holdout",
+      "forbidden_shortcuts_used": [],
+      "native_record_scenario": "multiphase escrow finality repair",
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "A future holdout candidate with complete source variables and absorber boundaries, different from the T559-T565 fixtures.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "case_id": "missing_transport_square_control",
+      "forbidden_shortcuts_used": [],
+      "native_record_scenario": "incomplete transport repair",
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Rejects candidates missing a load-bearing source variable.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "case_id": "target_import_shortcut_control",
+      "forbidden_shortcuts_used": [
+        "target_labels"
+      ],
+      "native_record_scenario": "target-labeled repair",
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Rejects candidates that rely on target labels.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "case_id": "posthoc_outcome_reading_control",
+      "forbidden_shortcuts_used": [],
+      "native_record_scenario": "post-hoc selected repair",
+      "outcome_label_read": true,
+      "predeclared_before_outcome_reading": false,
+      "rationale": "Rejects candidates selected after fixture-specific outcome reading.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "case_id": "prior_fixture_replay_control",
+      "forbidden_shortcuts_used": [],
+      "native_record_scenario": "t565 rotating multi-ledger repair holdout",
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Rejects direct replay of the already evaluated T565 holdout.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    }
+  ],
+  "candidate_evaluations": [
+    {
+      "admissible": true,
+      "case_id": "new_multiphase_escrow_repair_holdout",
+      "failed_checks": [],
+      "passed_checks": [
+        "predeclared_before_outcome_reading",
+        "source_variables_complete",
+        "absorber_boundaries_complete",
+        "forbidden_shortcuts_absent",
+        "not_prior_fixture_replay"
+      ],
+      "reason": "The candidate is selected by the typed generator before outcome reading.",
+      "status": "ADMISSIBLE_TYPED_HOLDOUT_CANDIDATE"
+    },
+    {
+      "admissible": false,
+      "case_id": "missing_transport_square_control",
+      "failed_checks": [
+        "source_variables_complete"
+      ],
+      "passed_checks": [
+        "predeclared_before_outcome_reading",
+        "absorber_boundaries_complete",
+        "forbidden_shortcuts_absent",
+        "not_prior_fixture_replay"
+      ],
+      "reason": "The typed generator rejects the candidate because: source_variables_complete",
+      "status": "REJECTED_BY_TYPED_GENERATOR"
+    },
+    {
+      "admissible": false,
+      "case_id": "target_import_shortcut_control",
+      "failed_checks": [
+        "forbidden_shortcuts_absent"
+      ],
+      "passed_checks": [
+        "predeclared_before_outcome_reading",
+        "source_variables_complete",
+        "absorber_boundaries_complete",
+        "not_prior_fixture_replay"
+      ],
+      "reason": "The typed generator rejects the candidate because: forbidden_shortcuts_absent",
+      "status": "REJECTED_BY_TYPED_GENERATOR"
+    },
+    {
+      "admissible": false,
+      "case_id": "posthoc_outcome_reading_control",
+      "failed_checks": [
+        "predeclared_before_outcome_reading"
+      ],
+      "passed_checks": [
+        "source_variables_complete",
+        "absorber_boundaries_complete",
+        "forbidden_shortcuts_absent",
+        "not_prior_fixture_replay"
+      ],
+      "reason": "The typed generator rejects the candidate because: predeclared_before_outcome_reading",
+      "status": "REJECTED_BY_TYPED_GENERATOR"
+    },
+    {
+      "admissible": false,
+      "case_id": "prior_fixture_replay_control",
+      "failed_checks": [
+        "not_prior_fixture_replay"
+      ],
+      "passed_checks": [
+        "predeclared_before_outcome_reading",
+        "source_variables_complete",
+        "absorber_boundaries_complete",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The typed generator rejects the candidate because: not_prior_fixture_replay",
+      "status": "REJECTED_BY_TYPED_GENERATOR"
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The typed generator admits: new_multiphase_escrow_repair_holdout."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The typed generator rejects: missing_transport_square_control, target_import_shortcut_control, posthoc_outcome_reading_control, prior_fixture_replay_control."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The cleared burdens are: t565_typed_generator_authority, typed_source_generator, source_law_review_packet, governance_boundaries_preserved."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Governance movement remains blocked by: hostile_review_before_governance_movement."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "A complete internal review packet justifies hostile review, not promotion."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T566 clears an internal typed generator burden and selects hostile review; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "gate_decisions": [
+    {
+      "gate_id": "t565_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T565 supplies typed-generator authority."
+    },
+    {
+      "gate_id": "generator_type_declared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The typed generator declares every frozen source variable and absorber boundary."
+    },
+    {
+      "gate_id": "future_candidate_admitted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "A new source-variable-complete future holdout candidate is admitted."
+    },
+    {
+      "gate_id": "controls_rejected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Incomplete, target-import, post-hoc, and replay controls are rejected."
+    },
+    {
+      "gate_id": "generator_audits_pass",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "All generator audits pass."
+    },
+    {
+      "gate_id": "review_packet_complete_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The internal review packet is complete but not promoted."
+    },
+    {
+      "gate_id": "hostile_review_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Hostile review is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, and public-posture movements are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No claim, canon, publication, public-posture, S1, TAF4, TAF8, or cross-repo movement is made."
+    }
+  ],
+  "generator_audits": [
+    {
+      "audit_id": "generator_type_declared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The generator declares every required source-variable and boundary field."
+    },
+    {
+      "audit_id": "admits_complete_future_candidate",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "A new source-variable-complete future holdout candidate is selected."
+    },
+    {
+      "audit_id": "rejects_incomplete_or_shortcut_candidates",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Incomplete, target-import, post-hoc, and replay controls are rejected."
+    },
+    {
+      "audit_id": "selection_precedes_outcome_reading",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No admitted candidate depends on fixture-specific outcome labels."
+    }
+  ],
+  "generator_status": "TYPED_GENERATOR_CLEARS_SOURCE_LAW_REVIEW_GATE",
+  "generator_type": {
+    "forbidden_shortcuts": [
+      "target_labels",
+      "cross_repo_truth",
+      "observerse_replay",
+      "aprd_replay",
+      "direct_taf4_movement",
+      "taf8_execution",
+      "s1_movement",
+      "source_law_overread",
+      "claim_ledger_movement",
+      "canon_index_movement",
+      "public_posture_movement",
+      "external_publication"
+    ],
+    "generator_id": "source_variable_complete_holdout_generator_v1",
+    "required_absorber_ids": [
+      "ordinary_sheaf_gluing_completion",
+      "resource_transport_monotone_absorber",
+      "consensus_state_machine_absorber",
+      "record_provenance_completion_absorber"
+    ],
+    "required_fields": [
+      "fixture_id",
+      "native_record_scenario",
+      "predeclared_before_outcome_reading",
+      "finite_event_covers",
+      "local_finality_sections",
+      "restriction_morphisms",
+      "settlement_obstruction_witnesses",
+      "transport_consistency_squares",
+      "allowed_refinement_steps",
+      "absorber_boundary_profile"
+    ],
+    "required_source_variables": [
+      "finite_event_covers",
+      "local_finality_sections",
+      "restriction_morphisms",
+      "settlement_obstruction_witnesses",
+      "transport_consistency_squares",
+      "allowed_refinement_steps"
+    ],
+    "selection_rule": "A candidate is admissible exactly when it is predeclared before outcome reading, includes every frozen source variable, includes every frozen absorber boundary, uses no forbidden shortcut, and is not a fixture replay."
+  },
+  "hostile_controls": [
+    {
+      "blocks": "Calling a selector typed while it omits a frozen source variable.",
+      "control_id": "underdeclared_generator_control",
+      "reason": "The missing-transport-square control is rejected."
+    },
+    {
+      "blocks": "Using target labels, Lorentzian structure, or cross-repo truth as selection help.",
+      "control_id": "target_import_control",
+      "reason": "The target-import control is rejected."
+    },
+    {
+      "blocks": "Selecting cases after reading fixture-specific outcomes.",
+      "control_id": "posthoc_control",
+      "reason": "The post-hoc outcome-reading control is rejected."
+    },
+    {
+      "blocks": "Counting T565 replay as a generated future candidate.",
+      "control_id": "replay_control",
+      "reason": "The prior-fixture replay control is rejected."
+    },
+    {
+      "blocks": "Promoting claim, canon, TAF4, TAF8, S1, or public posture from internal generator evidence.",
+      "control_id": "review_only_control",
+      "reason": "The route selects hostile review rather than governance movement."
+    }
+  ],
+  "not_claimed": "T566 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It types an internal admissible-case generator and sends the route to hostile review.",
+  "recommended_next": "Run t567_domain_native_sheaf_transport_source_law_hostile_review_gate. Hostile review should try to break the typed generator by supplying same-field adversaries, disguised target imports, absorber-complete-but-trivial cases, and alternate native record scenarios before any claim, canon, public-posture, TAF4, TAF8, or S1 movement.",
+  "remaining_burdens": [
+    {
+      "blocking": false,
+      "burden_id": "t565_typed_generator_authority",
+      "cleared": true,
+      "reason": "T565 selected the typed generator gate after clearing predictive holdout.",
+      "status": "CLEARED"
+    },
+    {
+      "blocking": false,
+      "burden_id": "typed_source_generator",
+      "cleared": true,
+      "reason": "The generator selects complete future candidates and rejects incomplete, shortcut, post-hoc, and replay controls.",
+      "status": "CLEARED"
+    },
+    {
+      "blocking": false,
+      "burden_id": "source_law_review_packet",
+      "cleared": true,
+      "reason": "T564/T565/T566 now provide absorber separation, predictive holdout, and typed generator review evidence.",
+      "status": "COMPLETE_REVIEW_ONLY"
+    },
+    {
+      "blocking": true,
+      "burden_id": "hostile_review_before_governance_movement",
+      "cleared": false,
+      "reason": "A complete internal review packet still needs hostile review before any claim, canon, public-posture, TAF4, TAF8, or S1 movement.",
+      "status": "BLOCKING_NEXT_REVIEW"
+    },
+    {
+      "blocking": false,
+      "burden_id": "governance_boundaries_preserved",
+      "cleared": true,
+      "reason": "No governance, publication, TAF4, TAF8, S1, or cross-repo movement is made.",
+      "status": "CLEARED"
+    }
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_claim_or_canon_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_REVIEW_ONLY_PACKET",
+      "reason": "The packet is internal review evidence only and does not move claims or canon.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_hostile_review_gate",
+      "next_packet": "t567_domain_native_sheaf_transport_source_law_hostile_review_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The internal review packet is complete, so the next honest step is hostile review.",
+      "selected": true
+    },
+    {
+      "decision_id": "move_taf4_from_t566",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "A typed finite generator is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t566",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 generator evidence is not cross-domain shadow protection.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_status": "typed_generator_clears_hostile_review_required",
+  "selected_next_packet": "t567_domain_native_sheaf_transport_source_law_hostile_review_gate",
+  "source_law_public_or_canon_status_earned": false,
+  "source_law_reading": "The typed generator selects source-variable-complete, absorber-boundary-complete holdout candidates before outcome reading and rejects incomplete, shortcut-bearing, replay, and post-hoc candidates. That completes the internal T564/T565 source-law review burden, but it is not a public source-law claim or canon movement.",
+  "source_law_review_packet_complete": true,
+  "source_law_status": "SOURCE_LAW_REVIEW_PACKET_COMPLETE_CLAIM_CANON_UNCHANGED",
+  "source_t565_predictive_holdout_cleared": true,
+  "source_t565_selected_next_packet": "t566_domain_native_sheaf_transport_typed_generator_gate",
+  "source_t565_verdict": "domain_native_sheaf_transport_predictive_holdout_survives_review_only",
+  "taf11_update": "TAF11 now has an internal review packet: predictive holdout plus typed generator. It remains review-only until hostile review tests whether the generator is overfit or underdeclared.",
+  "taf4_update": "TAF4 remains blocked. A typed finite holdout generator is not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T566 is an internal TAF11 generator packet, not a domain-native cross-domain shadow-protection packet.",
+  "typed_source_generator_cleared": true,
+  "verdict": "domain_native_sheaf_transport_typed_generator_clears_review_only"
+}

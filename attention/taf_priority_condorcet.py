@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "North Star source-law reassessment beyond the finite-generator route",
+        "title": "Hostile review of the TAF11 source-law packet",
         "why": (
-            "T565 cleared the predictive holdout and named T566 "
-            "as typed generator gate."
+            "T566 completed the internal review packet and named T567 "
+            "as hostile review gate."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T565: a finite holdout is not a continuum "
-            "bridge or Lorentzian target import."
+            "Still blocked after T566: a typed finite generator is not "
+            "continuum descent or Lorentzian target import."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T565 preserved the T541 wait state: internal TAF11 holdout evidence "
-            "is not a domain-native cross-domain packet."
+            "T566 preserved the T541 wait state: internal TAF11 generator "
+            "evidence is not a domain-native cross-domain packet."
         ),
     },
 }

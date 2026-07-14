@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Semantic strengthening for the TAF11 generator",
+        "title": "Independent reimplementation for the TAF11 generator",
         "why": (
-            "T567 exposed absorber-complete triviality and disguised target "
-            "import gaps in the T566 field selector."
+            "T568 strengthened the semantic generator but left source-law "
+            "status blocked until an independent reimplementation."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T567: finite generator hostile review is not "
+            "Still blocked after T568: a finite semantic generator is not "
             "continuum descent or Lorentzian target import."
         ),
     },
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T567 preserved the T541 wait state: internal TAF11 generator "
-            "hostile review is not a domain-native cross-domain packet."
+            "T568 preserved the T541 wait state: internal TAF11 generator "
+            "hygiene is not a domain-native cross-domain packet."
         ),
     },
 }

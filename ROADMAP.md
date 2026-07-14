@@ -1,5 +1,42 @@
 ﻿# Roadmap
 
+## 2026-07-14 T568 Domain-Native Sheaf Transport Semantic Generator Strengthening Gate
+
+T568 executes the semantic-strengthening burden selected by T567. It consumes
+the hostile-review result that preserved T566 as a field-complete selector while
+showing that field names alone admitted absorber-complete triviality and
+disguised Lorentzian target import.
+
+The strengthened generator keeps the inherited T566 source-variable and
+absorber-boundary selector, then adds four semantic screens:
+
+- nontrivial obstruction witness;
+- noncommuting transport square;
+- forced finality-native payload;
+- target-blind language.
+
+The strengthened generator preserves the two same-field finality-native
+survivors found by T567:
+
+- `alternate_multisig_delay_repair_survivor`;
+- `alternate_checkpoint_quorum_repair_survivor`.
+
+It rejects both named semantic gaps:
+
+- `absorber_complete_trivial_gluing_case`;
+- `disguised_lorentzian_target_import`.
+
+This narrows the route but remains review-only. Source-law status,
+claim-ledger movement, Canon Index movement, canon-verdict movement,
+public-posture movement, TAF4 movement, TAF8 execution, S1 movement, external
+publication, and cross-repo movement remain blocked.
+
+T568 names the next executable TAF11 burden:
+`t569_domain_native_sheaf_transport_independent_reimplementation_gate`. That
+packet should independently reimplement the strengthened generator from the
+declared semantic contract, not from T567/T568 fixture labels, before any
+source-law, claim, canon, public-posture, TAF4, TAF8, or S1 movement.
+
 ## 2026-07-14 T567 Domain-Native Sheaf Transport Source-Law Hostile Review Gate
 
 T567 executes the hostile-review burden selected by T566. It consumes the

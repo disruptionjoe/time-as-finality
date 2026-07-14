@@ -1,5 +1,44 @@
 ﻿# Roadmap
 
+## 2026-07-14 T571 Domain-Native Sheaf Transport Multi-Family Falsifier Rotation Gate
+
+T571 executes the multi-family falsifier-rotation burden selected by T570. It
+keeps the T570 role-level projection fixed and rotates missing-role,
+ordinary-completion, optional-payload, target-import, and cross-family alias
+falsifiers across the admitted fresh families.
+
+The rotation covers both T570 families:
+
+- `calibration_chain_role_recoding_family`;
+- `archive_manifest_handoff_role_recoding_family`.
+
+It admits two family survivors:
+
+- `calibration_chain_rotated_survivor`;
+- `archive_manifest_rotated_survivor`.
+
+It rejects five rotated falsifiers:
+
+- `calibration_missing_scope_restriction_falsifier`;
+- `calibration_single_panel_completion_falsifier`;
+- `archive_payload_optional_falsifier`;
+- `archive_target_geometry_import_falsifier`;
+- `cross_family_alias_replay_falsifier`.
+
+This strengthens the TAF11 route by showing that the finite role-level
+generator survives falsifier rotation over the admitted family set, but it
+remains review-only. Source-law status, claim-ledger movement, Canon Index
+movement, canon-verdict movement, public-posture movement, TAF4 movement, TAF8
+execution, S1 movement, external publication, and cross-repo movement remain
+blocked.
+
+T571 names the next executable TAF11 burden:
+`t572_domain_native_sheaf_transport_blind_family_holdout_gate`. That packet
+should predeclare a blind family before evaluation and test whether the
+generator predicts it without target import, family replay, source-law overread,
+claim movement, canon movement, public-posture movement, TAF4 movement, TAF8
+execution, or S1 movement.
+
 ## 2026-07-14 T570 Domain-Native Sheaf Transport Fresh-Family Stress Gate
 
 T570 executes the fresh-family stress burden selected by T569. It consumes the

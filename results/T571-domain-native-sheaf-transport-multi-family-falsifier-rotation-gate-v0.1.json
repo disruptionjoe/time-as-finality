@@ -1,0 +1,721 @@
+{
+  "admitted_probe_ids": [
+    "calibration_chain_rotated_survivor",
+    "archive_manifest_rotated_survivor"
+  ],
+  "artifact": "T571-domain-native-sheaf-transport-multi-family-falsifier-rotation-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Multi-family rotation admits: calibration_chain_rotated_survivor, archive_manifest_rotated_survivor."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Multi-family rotation rejects: calibration_missing_scope_restriction_falsifier, calibration_single_panel_completion_falsifier, archive_payload_optional_falsifier, archive_target_geometry_import_falsifier, cross_family_alias_replay_falsifier."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law status remains blocked by blind-family holdout."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Falsifier rotation strengthens route evidence without promoting it."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T571 rotates falsifiers across the T570 admitted families and selects blind-family holdout; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "closure_checks": [
+    {
+      "check_id": "t570_authority",
+      "evidence": [
+        "T570 cleared fresh-family stress.",
+        "T570 selected multi-family falsifier rotation."
+      ],
+      "passed": true,
+      "residual_risk": "T570 is review authority, not source-law status.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "all_t570_families_rotated",
+      "evidence": [
+        "calibration_chain_role_recoding_family",
+        "archive_manifest_handoff_role_recoding_family"
+      ],
+      "passed": true,
+      "residual_risk": "Two families are not enough for public source-law status.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "expected_survivors_admitted",
+      "evidence": [
+        "calibration_chain_rotated_survivor",
+        "archive_manifest_rotated_survivor"
+      ],
+      "passed": true,
+      "residual_risk": "Survivors are finite review probes.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "rotated_falsifiers_rejected",
+      "evidence": [
+        "calibration_missing_scope_restriction_falsifier",
+        "calibration_single_panel_completion_falsifier",
+        "archive_payload_optional_falsifier",
+        "archive_target_geometry_import_falsifier",
+        "cross_family_alias_replay_falsifier"
+      ],
+      "passed": true,
+      "residual_risk": "More falsifier axes may still expose failure modes.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "all_rotated_axes_exercised",
+      "evidence": [
+        "missing_scope_restriction",
+        "ordinary_completion_triviality",
+        "optional_payload",
+        "target_geometry_import",
+        "cross_family_alias_replay"
+      ],
+      "passed": true,
+      "residual_risk": "Axis coverage is finite and synthetic.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "expectations_matched",
+      "evidence": [
+        "calibration_chain_rotated_survivor",
+        "archive_manifest_rotated_survivor",
+        "calibration_missing_scope_restriction_falsifier",
+        "calibration_single_panel_completion_falsifier",
+        "archive_payload_optional_falsifier",
+        "archive_target_geometry_import_falsifier",
+        "cross_family_alias_replay_falsifier"
+      ],
+      "passed": true,
+      "residual_risk": "Expectation matching is not independent blind prediction.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "governance_boundaries_preserved",
+      "evidence": [
+        "No claim-ledger movement.",
+        "No Canon Index movement.",
+        "No public-posture, TAF4, TAF8, S1, external, or cross-repo movement."
+      ],
+      "passed": true,
+      "residual_risk": "None inside this packet; the next packet remains review-only.",
+      "status": "PASS"
+    }
+  ],
+  "evaluations": [
+    {
+      "expectation_matched": true,
+      "expected_admissible": true,
+      "failed_checks": [],
+      "family_id": "calibration_chain_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "no_cross_family_alias_replay",
+        "target_blind_language",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "calibration_chain_rotated_survivor",
+      "reason": "The probe satisfies the rotated role-level generator.",
+      "rotation_admissible": true,
+      "status": "ADMITTED_BY_MULTI_FAMILY_ROTATION"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": true,
+      "failed_checks": [],
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "no_cross_family_alias_replay",
+        "target_blind_language",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "archive_manifest_rotated_survivor",
+      "reason": "The probe satisfies the rotated role-level generator.",
+      "rotation_admissible": true,
+      "status": "ADMITTED_BY_MULTI_FAMILY_ROTATION"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "source_roles_complete"
+      ],
+      "family_id": "calibration_chain_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "no_cross_family_alias_replay",
+        "target_blind_language",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "calibration_missing_scope_restriction_falsifier",
+      "reason": "The rotation rejects a missing source role.",
+      "rotation_admissible": false,
+      "status": "REJECTED_MISSING_SOURCE_ROLE"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "semantic_requirements_complete",
+        "no_family_specific_shortcut",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "family_id": "calibration_chain_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "active_falsifier_axis_registered",
+        "no_cross_family_alias_replay",
+        "target_blind_language"
+      ],
+      "probe_id": "calibration_single_panel_completion_falsifier",
+      "reason": "The rotation rejects unforced native payload.",
+      "rotation_admissible": false,
+      "status": "REJECTED_NATIVE_PAYLOAD_NOT_FORCED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "semantic_requirements_complete",
+        "native_payload_forced"
+      ],
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "no_cross_family_alias_replay",
+        "target_blind_language",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "archive_payload_optional_falsifier",
+      "reason": "The rotation rejects unforced native payload.",
+      "rotation_admissible": false,
+      "status": "REJECTED_NATIVE_PAYLOAD_NOT_FORCED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "target_blind_language"
+      ],
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "no_cross_family_alias_replay",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "archive_target_geometry_import_falsifier",
+      "reason": "The rotation rejects target-language import.",
+      "rotation_admissible": false,
+      "status": "REJECTED_TARGET_IMPORT"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "no_cross_family_alias_replay"
+      ],
+      "family_id": "calibration_chain_role_recoding_family",
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "known_t570_admitted_family",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "active_falsifier_axis_registered",
+        "no_family_specific_shortcut",
+        "target_blind_language",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "cross_family_alias_replay_falsifier",
+      "reason": "The rotation rejects cross-family alias replay.",
+      "rotation_admissible": false,
+      "status": "REJECTED_CROSS_FAMILY_ALIAS_REPLAY"
+    }
+  ],
+  "family_summaries": [
+    {
+      "admitted_probe_ids": [
+        "calibration_chain_rotated_survivor"
+      ],
+      "falsifier_axes_exercised": [
+        "missing_scope_restriction",
+        "ordinary_completion_triviality",
+        "cross_family_alias_replay"
+      ],
+      "family_id": "calibration_chain_role_recoding_family",
+      "passed": true,
+      "rejected_probe_ids": [
+        "calibration_missing_scope_restriction_falsifier",
+        "calibration_single_panel_completion_falsifier",
+        "cross_family_alias_replay_falsifier"
+      ],
+      "residual_risk": "Family rotation is finite and still not a blind family holdout.",
+      "status": "PASS"
+    },
+    {
+      "admitted_probe_ids": [
+        "archive_manifest_rotated_survivor"
+      ],
+      "falsifier_axes_exercised": [
+        "optional_payload",
+        "target_geometry_import"
+      ],
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "passed": true,
+      "rejected_probe_ids": [
+        "archive_payload_optional_falsifier",
+        "archive_target_geometry_import_falsifier"
+      ],
+      "residual_risk": "Family rotation is finite and still not a blind family holdout.",
+      "status": "PASS"
+    }
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t570_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T570 supplies multi-family falsifier-rotation authority."
+    },
+    {
+      "gate_id": "all_t570_families_rotated",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every T570 admitted family has a survivor and rotated rejected falsifiers."
+    },
+    {
+      "gate_id": "expected_rotation_pattern",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Survivors admit and all rotated falsifier axes reject as expected."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law promotion is rejected."
+    },
+    {
+      "gate_id": "blind_family_holdout_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Blind-family holdout is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No governance boundary was crossed."
+    }
+  ],
+  "multi_family_rotation_cleared": true,
+  "not_claimed": "T571 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It rotates falsifiers across the T570 admitted fresh families and selects a blind-family holdout as the next review-only burden.",
+  "probes": [
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "missing_scope_restriction",
+      "cross_family_alias_replay": false,
+      "expected_admissible": true,
+      "family_id": "calibration_chain_role_recoding_family",
+      "family_rationale": "Calibration custody still forces a payload after the active missing-scope falsifier is rotated into the family.",
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "calibration_chain_rotated_survivor",
+      "probe_kind": "family_survivor",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "optional_payload",
+      "cross_family_alias_replay": false,
+      "expected_admissible": true,
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "family_rationale": "Archive handoff still forces a payload after the optional-payload falsifier is rotated into the family.",
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "archive_manifest_rotated_survivor",
+      "probe_kind": "family_survivor",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "missing_scope_restriction",
+      "cross_family_alias_replay": false,
+      "expected_admissible": false,
+      "family_id": "calibration_chain_role_recoding_family",
+      "family_rationale": "Rejects a calibration packet with the restriction role removed.",
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "calibration_missing_scope_restriction_falsifier",
+      "probe_kind": "rotated_falsifier",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "ordinary_completion_triviality",
+      "cross_family_alias_replay": false,
+      "expected_admissible": false,
+      "family_id": "calibration_chain_role_recoding_family",
+      "family_rationale": "Rejects ordinary single-panel completion as a shortcut.",
+      "native_payload_forced": false,
+      "noncommuting_transport_square": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "calibration_single_panel_completion_falsifier",
+      "probe_kind": "rotated_falsifier",
+      "rotated_family_specific_shortcut": true,
+      "semantic_requirements_met": [
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "optional_payload",
+      "cross_family_alias_replay": false,
+      "expected_admissible": false,
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "family_rationale": "Rejects archive handoff when the payload is optional.",
+      "native_payload_forced": false,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "archive_payload_optional_falsifier",
+      "probe_kind": "rotated_falsifier",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "target_geometry_import",
+      "cross_family_alias_replay": false,
+      "expected_admissible": false,
+      "family_id": "archive_manifest_handoff_role_recoding_family",
+      "family_rationale": "Rejects archive handoff when target geometry language is imported.",
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "archive_target_geometry_import_falsifier",
+      "probe_kind": "rotated_falsifier",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [
+        "lorentzian_interval_target",
+        "causal_set_link_target"
+      ]
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "active_falsifier_axis": "cross_family_alias_replay",
+      "cross_family_alias_replay": true,
+      "expected_admissible": false,
+      "family_id": "calibration_chain_role_recoding_family",
+      "family_rationale": "Rejects a calibration-labeled replay of archive-manifest surface evidence.",
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "cross_family_alias_replay_falsifier",
+      "probe_kind": "rotated_falsifier",
+      "rotated_family_specific_shortcut": false,
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": []
+    }
+  ],
+  "recommended_next": "Run t572_domain_native_sheaf_transport_blind_family_holdout_gate. The next packet should predeclare a blind family holdout before evaluation and then decide whether the generator predicts that family without target import, replay, source-law overread, claim movement, canon movement, public-posture movement, TAF4 movement, TAF8 execution, or S1 movement.",
+  "rejected_probe_ids": [
+    "calibration_missing_scope_restriction_falsifier",
+    "calibration_single_panel_completion_falsifier",
+    "archive_payload_optional_falsifier",
+    "archive_target_geometry_import_falsifier",
+    "cross_family_alias_replay_falsifier"
+  ],
+  "rotation_contract": {
+    "absorber_boundaries": [
+      "ordinary_sheaf_gluing_completion",
+      "resource_transport_monotone_absorber",
+      "consensus_state_machine_absorber",
+      "record_provenance_completion_absorber"
+    ],
+    "admitted_family_ids": [
+      "calibration_chain_role_recoding_family",
+      "archive_manifest_handoff_role_recoding_family"
+    ],
+    "contract_id": "multi_family_falsifier_rotation_v1",
+    "forbidden_shortcuts": [
+      "target_labels",
+      "cross_repo_truth",
+      "observerse_replay",
+      "aprd_replay",
+      "direct_taf4_movement",
+      "taf8_execution",
+      "s1_movement",
+      "source_law_overread",
+      "claim_ledger_movement",
+      "canon_index_movement",
+      "public_posture_movement",
+      "external_publication"
+    ],
+    "rationale": "The rotation keeps the T570 role-level projection fixed and moves active falsifiers across each admitted family.",
+    "rotated_falsifier_axes": [
+      "missing_scope_restriction",
+      "ordinary_completion_triviality",
+      "optional_payload",
+      "target_geometry_import",
+      "cross_family_alias_replay"
+    ],
+    "semantic_requirements": [
+      "nontrivial_obstruction_witness",
+      "noncommuting_transport_square",
+      "native_payload_forced",
+      "target_blind_language"
+    ],
+    "source_roles": [
+      "finite_event_covers",
+      "local_finality_sections",
+      "restriction_morphisms",
+      "settlement_obstruction_witnesses",
+      "transport_consistency_squares",
+      "allowed_refinement_steps"
+    ],
+    "source_t570_projection_id": "fresh_role_recoding_projection_v1"
+  },
+  "rotation_status": "MULTI_FAMILY_FALSIFIER_ROTATION_SURVIVES",
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_REVIEW_ONLY_BLIND_FAMILY_HOLDOUT_REQUIRED",
+      "reason": "Multi-family falsifier rotation clears a stress check but not blind holdout pressure.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_blind_family_holdout_gate",
+      "next_packet": "t572_domain_native_sheaf_transport_blind_family_holdout_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The next honest review step is a predeclared blind-family holdout.",
+      "selected": true
+    },
+    {
+      "decision_id": "abandon_semantic_generator_route",
+      "next_packet": "none",
+      "outcome": "PAUSED_MULTI_FAMILY_ROTATION_CLEARED",
+      "reason": "Route reset is premature because multi-family rotation cleared.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_taf4_from_t571",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "Finite multi-family generator stress is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t571",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 generator stress is not cross-domain shadow protection.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_status": "multi_family_rotation_clears_blind_family_holdout_required",
+  "selected_next_packet": "t572_domain_native_sheaf_transport_blind_family_holdout_gate",
+  "source_law_earned": false,
+  "source_law_reading": "T571 rotates missing-role, trivial-completion, optional-payload, target-import, and cross-family alias falsifiers across the two T570 admitted families. The role-level generator survives the rotation, but the result is still finite review evidence rather than a public source law because no blind family was withheld.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_BLIND_FAMILY_HOLDOUT_REQUIRED",
+  "source_t570_fresh_family_stress_cleared": true,
+  "source_t570_selected_next_packet": "t571_domain_native_sheaf_transport_multi_family_falsifier_rotation_gate",
+  "source_t570_verdict": "domain_native_sheaf_transport_fresh_family_stress_survives_review_only",
+  "taf11_update": "TAF11 remains the top active lane. Multi-family falsifier rotation survived over the T570 admitted families, but source-law status still waits for a blind-family holdout.",
+  "taf4_update": "TAF4 remains blocked. Multi-family falsifier rotation over a finite semantic generator is not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T571 is still internal TAF11 generator stress, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_multi_family_falsifier_rotation_survives_review_only"
+}

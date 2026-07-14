@@ -1,5 +1,37 @@
 ﻿# Roadmap
 
+## 2026-07-14 T573 Domain-Native Sheaf Transport Adversarial Blind-Family Holdout Gate
+
+T573 executes the adversarial blind-family holdout burden selected by T572. It
+keeps the T570-T572 source roles, absorber boundaries, and semantic
+requirements frozen while changing the blind-family surface genre from
+settlement attestation into redaction-dispute audit vocabulary.
+
+The adversarial holdout admits one survivor:
+
+- `redaction_dispute_adversarial_survivor`.
+
+It rejects six controls:
+
+- settlement-attestation family replay;
+- Lorentzian/causal-set target import;
+- optional native payload;
+- commuting-square replacement;
+- absorber-complete triviality;
+- cross-repo, Observerse, and APRD foreign-truth replay.
+
+Source-law status remains unearned. T573 is stronger review pressure on the
+TAF11 semantic generator, not public source-law evidence, claim movement, Canon
+Index movement, public-posture movement, TAF4 movement, TAF8 execution, S1
+movement, external publication, or cross-repo truth.
+
+T573 names the next executable TAF11 burden:
+`t574_domain_native_sheaf_transport_source_law_route_adjudication_gate`. That
+packet should adjudicate whether the T559-T573 route has enough
+frozen-generator, absorber-separation, predictive, blind, and adversarial
+pressure to keep the route open, retire it, or name a further non-promotion
+burden.
+
 ## 2026-07-14 T572 Domain-Native Sheaf Transport Blind-Family Holdout Gate
 
 T572 executes the blind-family holdout burden selected by T571. It freezes the

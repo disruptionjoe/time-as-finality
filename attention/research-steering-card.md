@@ -12,14 +12,14 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T572 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T573 on
 2026-07-14:
 
-1. TAF11 - Adversarial blind-family holdout for the TAF11 generator.
-   Why: T572's predeclared blind family survived, but source-law status
-   is still blocked until adversarial holdout pressure clears.
+1. TAF11 - Source-law route adjudication for the TAF11 generator.
+   Why: T573's adversarial blind-family holdout survived, but source-law
+   status is still blocked until the route is adjudicated without promotion.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T572 preserved the T541 wait state; internal TAF11 generator hygiene
+   Why: T573 preserved the T541 wait state; internal TAF11 generator hygiene
    is not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The current C(R) line keeps losing to declared-boundary and completion
@@ -28,7 +28,7 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T572 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T572; a finite semantic generator is not continuum
+   Why: Still blocked after T573; a finite semantic generator is not continuum
    descent or Lorentzian target import.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
@@ -133,29 +133,28 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, adversarial blind-family holdout burden selected | Can the blind-family-surviving TAF11 semantic generator withstand adversarial holdout pressure without target import or replay? | T572 froze the T570/T571 generator, admitted `settlement_attestation_blind_survivor`, rejected calibration replay, target-import, optional-payload, missing-square, and foreign-truth controls, and selected `t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate`. |
+| TAF11 | open, source-law route adjudication burden selected | Has the T559-T573 sheaf-transport route earned continued pursuit, retirement, or a further non-promotion burden? | T573 changed the blind-family surface genre into redaction-dispute audit vocabulary, admitted `redaction_dispute_adversarial_survivor`, rejected replay, target-import, optional-payload, commuting-square, absorber-complete, and foreign-truth controls, and selected `t574_domain_native_sheaf_transport_source_law_route_adjudication_gate`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T572 supplied only finite semantic-generator stress. TAF4 movement still waits for a real bridge, not a target import. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T573 supplied only finite semantic-generator stress. TAF4 movement still waits for a real bridge, not a target import. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T572 keeps TAF8 waiting because internal TAF11 generator stress is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T573 keeps TAF8 waiting because internal TAF11 generator stress is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the selected adversarial blind-family holdout burden:
+When Joe opens the lane, run the selected route-adjudication burden:
 
-Run `t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate`
-before any claim or canon movement. Change the blind family's surface genre
-again while preserving the frozen source roles, absorber boundaries, and
-semantic requirements, and test whether the generator survives without target
-import, family replay, cross-repo truth, Observerse replay, APRD replay, TAF8
-execution, direct TAF4 movement, S1 movement, source-law overread, or
-public-posture movement.
+Run `t574_domain_native_sheaf_transport_source_law_route_adjudication_gate`
+before any claim or canon movement. Adjudicate whether the T559-T573 route has
+enough frozen-generator, absorber-separation, predictive, blind, and
+adversarial pressure to keep the route open, retire it, or name a further
+non-promotion burden. Do not promote source-law status from T573 alone, and do
+not move TAF4, TAF8, S1, public posture, or cross-repo truth.
 
 Use the T541 TAF8 gate only when a real domain-native cross-domain packet is
 available under the same predeclared spine. TAF12 may run only if a real
-data-bearing packet exists. TAF3 remains blocked until TAF11 adversarial holdout
-clears or abandons the semantic generator route, or TAF12 supplies a real
-noncompletion target.
+data-bearing packet exists. TAF3 remains blocked until TAF11 route adjudication
+keeps, retires, or redirects the semantic generator route, or TAF12 supplies a
+real noncompletion target.

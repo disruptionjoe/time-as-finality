@@ -1,0 +1,301 @@
+{
+  "artifact": "T565-domain-native-sheaf-transport-predictive-holdout-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The predeclared holdout `t565_rotating_multiledger_repair_holdout` clears the frozen source-variable and absorber-boundary screen."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The cleared burdens are: t564_predictive_holdout_authority, independent_predictive_holdout, governance_boundaries_preserved."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law status remains blocked by: typed_source_generator."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "One independent holdout justifies a typed generator gate, but not claim, canon, TAF4, TAF8, S1, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T565 clears a predictive holdout screen and selects a typed generator gate; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "frozen_absorber_ids": [
+    "ordinary_sheaf_gluing_completion",
+    "resource_transport_monotone_absorber",
+    "consensus_state_machine_absorber",
+    "record_provenance_completion_absorber"
+  ],
+  "frozen_source_variables": [
+    "finite_event_covers",
+    "local_finality_sections",
+    "restriction_morphisms",
+    "settlement_obstruction_witnesses",
+    "transport_consistency_squares",
+    "allowed_refinement_steps"
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t564_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T564 is consumed as predictive-holdout authority."
+    },
+    {
+      "gate_id": "absorber_context_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T563 absorber-separated bounded class remains the context."
+    },
+    {
+      "gate_id": "holdout_predeclared_and_independent",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The holdout is predeclared and independent from the prior bounded class."
+    },
+    {
+      "gate_id": "frozen_contract_used",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The holdout uses the frozen source variables and absorber boundaries."
+    },
+    {
+      "gate_id": "forbidden_shortcuts_absent",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No target import, cross-repo, replay, TAF4, TAF8, S1, claim, canon, public-posture, or external shortcut is used."
+    },
+    {
+      "gate_id": "predictive_holdout_cleared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The predictive holdout clears the frozen-contract screen."
+    },
+    {
+      "gate_id": "source_law_still_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law status remains unearned until a typed generator exists."
+    },
+    {
+      "gate_id": "typed_generator_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The next packet is the typed generator gate."
+    },
+    {
+      "gate_id": "taf4_taf8_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4 and TAF8 shortcuts are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No claim, canon, public-posture, external, S1, or cross-repo movement is attempted."
+    }
+  ],
+  "holdout_evaluation": {
+    "absorber_boundaries_frozen": true,
+    "absorber_screens": [
+      {
+        "absorber_boundary_predicted": true,
+        "absorber_id": "ordinary_sheaf_gluing_completion",
+        "actual_status": "separated_from_ordinary_sheaf_gluing_completion",
+        "expected_status": "separated_from_ordinary_sheaf_gluing_completion",
+        "fixture_id": "t565_rotating_multiledger_repair_holdout",
+        "reason": "`t565_rotating_multiledger_repair_holdout` remains separated from `ordinary_sheaf_gluing_completion` under the frozen T557-T564 absorber boundary."
+      },
+      {
+        "absorber_boundary_predicted": true,
+        "absorber_id": "resource_transport_monotone_absorber",
+        "actual_status": "separated_from_resource_transport_monotone_absorber",
+        "expected_status": "separated_from_resource_transport_monotone_absorber",
+        "fixture_id": "t565_rotating_multiledger_repair_holdout",
+        "reason": "`t565_rotating_multiledger_repair_holdout` remains separated from `resource_transport_monotone_absorber` under the frozen T557-T564 absorber boundary."
+      },
+      {
+        "absorber_boundary_predicted": true,
+        "absorber_id": "consensus_state_machine_absorber",
+        "actual_status": "separated_from_consensus_state_machine_absorber",
+        "expected_status": "separated_from_consensus_state_machine_absorber",
+        "fixture_id": "t565_rotating_multiledger_repair_holdout",
+        "reason": "`t565_rotating_multiledger_repair_holdout` remains separated from `consensus_state_machine_absorber` under the frozen T557-T564 absorber boundary."
+      },
+      {
+        "absorber_boundary_predicted": true,
+        "absorber_id": "record_provenance_completion_absorber",
+        "actual_status": "separated_from_record_provenance_completion_absorber",
+        "expected_status": "separated_from_record_provenance_completion_absorber",
+        "fixture_id": "t565_rotating_multiledger_repair_holdout",
+        "reason": "`t565_rotating_multiledger_repair_holdout` remains separated from `record_provenance_completion_absorber` under the frozen T557-T564 absorber boundary."
+      }
+    ],
+    "fixture_id": "t565_rotating_multiledger_repair_holdout",
+    "independent_from_prior_bounded_class": true,
+    "no_forbidden_shortcuts": true,
+    "predeclared_before_evaluation": true,
+    "predicted_by_frozen_contract": true,
+    "reason": "The predeclared independent holdout preserves the frozen family variables and remains separated from every frozen absorber boundary.",
+    "source_variables_frozen": true,
+    "status": "holdout_predicted_by_frozen_contract_review_only"
+  },
+  "holdout_spec": {
+    "absorber_ids": [
+      "ordinary_sheaf_gluing_completion",
+      "resource_transport_monotone_absorber",
+      "consensus_state_machine_absorber",
+      "record_provenance_completion_absorber"
+    ],
+    "expected_status": "holdout_predicted_by_frozen_contract_review_only",
+    "fixture_id": "t565_rotating_multiledger_repair_holdout",
+    "forbidden_shortcuts_used": [],
+    "independent_from_prior_bounded_class": true,
+    "predeclared_before_evaluation": true,
+    "rationale": "The holdout uses the same finite covers, finality sections, restriction morphisms, obstruction witnesses, transport squares, and refinement steps, but changes the native record scenario to a rotating multi-ledger repair path not present in the T559/T560/T561 bounded class.",
+    "source_variables": [
+      "finite_event_covers",
+      "local_finality_sections",
+      "restriction_morphisms",
+      "settlement_obstruction_witnesses",
+      "transport_consistency_squares",
+      "allowed_refinement_steps"
+    ]
+  },
+  "holdout_status": "PREDICTIVE_HOLDOUT_CLEARS_GENERATOR_STILL_REQUIRED",
+  "hostile_controls": [
+    {
+      "blocks": "Fitting a holdout after reading the desired result.",
+      "control_id": "predeclaration_control",
+      "reason": "The holdout shape is named before evaluation and has fixed source variables."
+    },
+    {
+      "blocks": "Counting T559, T560, or T561 replay as independent prediction.",
+      "control_id": "replay_control",
+      "reason": "The holdout changes the native record scenario while preserving the frozen family contract."
+    },
+    {
+      "blocks": "Using target labels, Lorentzian structure, or cross-repo truth to make the holdout work.",
+      "control_id": "target_import_control",
+      "reason": "The holdout must be predicted from the T557-T564 finality-native contract alone."
+    },
+    {
+      "blocks": "Calling one holdout a source law without a typed generator.",
+      "control_id": "generator_underdeclaration_control",
+      "reason": "T565 clears only the holdout burden; generator selection remains open."
+    },
+    {
+      "blocks": "Moving TAF4 or executing TAF8 from finite TAF11 holdout evidence.",
+      "control_id": "taf4_taf8_shortcut_control",
+      "reason": "The packet is neither finite-to-continuum descent nor a cross-domain packet."
+    },
+    {
+      "blocks": "Changing claim rows, Canon Index tiers, canon verdicts, public posture, or publication state.",
+      "control_id": "public_posture_control",
+      "reason": "The packet has no governance movement authority."
+    }
+  ],
+  "not_claimed": "T565 does not establish a source law, validate sheaf obstruction transport as a source family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It tests one predeclared independent holdout and leaves typed generator burden as the next source-law gate.",
+  "predictive_holdout_cleared": true,
+  "recommended_next": "Run t566_domain_native_sheaf_transport_typed_generator_gate. It should type the admissible-case generator that would select source-variable-complete holdout candidates before fixture-specific outcome reading, while preserving the same target import, cross-repo, Observerse, APRD, TAF4, TAF8, S1, claim, canon, public-posture, and external-publication boundaries.",
+  "remaining_burdens": [
+    {
+      "blocking": false,
+      "burden_id": "t564_predictive_holdout_authority",
+      "cleared": true,
+      "reason": "T564 selected T565 as the next predictive-holdout burden.",
+      "status": "CLEARED"
+    },
+    {
+      "blocking": false,
+      "burden_id": "independent_predictive_holdout",
+      "cleared": true,
+      "reason": "The predeclared independent holdout preserves the frozen family variables and remains separated from every frozen absorber boundary.",
+      "status": "CLEARED"
+    },
+    {
+      "blocking": true,
+      "burden_id": "typed_source_generator",
+      "cleared": false,
+      "reason": "T565 has not typed an admissible-case generator; it only tests one predeclared holdout under the frozen family contract.",
+      "status": "BLOCKED_GENERATOR_NOT_TYPED"
+    },
+    {
+      "blocking": false,
+      "burden_id": "governance_boundaries_preserved",
+      "cleared": true,
+      "reason": "The holdout makes no claim-ledger, Canon Index, canon, public-posture, North Star, external-publication, TAF4, TAF8, S1, or cross-repo movement.",
+      "status": "CLEARED"
+    }
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_GENERATOR_NOT_TYPED",
+      "reason": "Source-law promotion is rejected because the typed generator burden remains open.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_typed_generator_gate",
+      "next_packet": "t566_domain_native_sheaf_transport_typed_generator_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The predictive holdout clears, so the next honest test is a typed generator gate rather than promotion or route reset.",
+      "selected": true
+    },
+    {
+      "decision_id": "route_reset_after_holdout_failure",
+      "next_packet": "none",
+      "outcome": "PAUSED_HOLDOUT_DID_NOT_FAIL",
+      "reason": "Route reset is premature because the holdout cleared the frozen-contract screen.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_taf4_from_t565",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "A finite holdout is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t565",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 holdout evidence is not a cross-domain shadow-protection packet.",
+      "selected": false
+    },
+    {
+      "decision_id": "claim_canon_public_posture_shortcut",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "The packet has no authority to move claim, canon, public posture, or external state.",
+      "selected": false
+    }
+  ],
+  "route_status": "holdout_survives_source_law_still_review_only",
+  "selected_next_packet": "t566_domain_native_sheaf_transport_typed_generator_gate",
+  "source_law_earned": false,
+  "source_law_reading": "The independent holdout clears the frozen T557-T564 source-variable and absorber-boundary prediction screen. That is a stronger TAF11 review result than T564, but it still does not establish a source law because the route has not typed a generator that selects future admissible cases without manual fixture design.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_TYPED_GENERATOR_REQUIRED",
+  "source_t563_absorber_status": "ABSORBER_SEPARATION_SURVIVES_BOUNDED_CLASS_SOURCE_LAW_NOT_EARNED",
+  "source_t563_bounded_class": [
+    "t559_record_finality_transport_square_survivor",
+    "t560_handoff_rotation_repair_transfer_survivor",
+    "third_multicover_seal_handoff_fixture"
+  ],
+  "source_t564_blocking_burdens": [
+    "independent_predictive_holdout",
+    "typed_source_generator"
+  ],
+  "source_t564_selected_next_packet": "t565_domain_native_sheaf_transport_predictive_holdout_gate",
+  "source_t564_verdict": "domain_native_sheaf_transport_source_law_adjudication_requires_predictive_holdout",
+  "taf11_update": "TAF11 remains active and narrowed. T565 clears the independent predictive holdout burden but leaves typed source generator as the remaining source-law gate.",
+  "taf4_update": "TAF4 remains blocked. A finite predictive holdout is not a finite-to-continuum bridge, causal-set descent, Lorentzian target import, or manifoldlikeness result.",
+  "taf8_update": "TAF8 remains waiting. T565 is internal TAF11 holdout evidence, not a domain-native cross-domain shadow-protection packet.",
+  "typed_source_generator_cleared": false,
+  "verdict": "domain_native_sheaf_transport_predictive_holdout_survives_review_only"
+}

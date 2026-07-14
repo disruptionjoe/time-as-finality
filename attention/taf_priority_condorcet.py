@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T564 rejected immediate source-law status and named T565 "
-            "as predictive holdout."
+            "T565 cleared the predictive holdout and named T566 "
+            "as typed generator gate."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T564: source-law adjudication is not a continuum "
+            "Still blocked after T565: a finite holdout is not a continuum "
             "bridge or Lorentzian target import."
         ),
     },
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T564 preserved the T541 wait state: internal TAF11 adjudication "
+            "T565 preserved the T541 wait state: internal TAF11 holdout evidence "
             "is not a domain-native cross-domain packet."
         ),
     },

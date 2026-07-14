@@ -12,15 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T564 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T565 on
 2026-07-14:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T564 rejected immediate source-law status and named T565 as
-   predictive holdout.
+   Why: T565 cleared the predictive holdout and named T566 as typed generator
+   gate.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T564 preserved the T541 wait state; internal TAF11 adjudication
-   is not a domain-native cross-domain packet.
+   Why: T565 preserved the T541 wait state; internal TAF11 holdout evidence is
+   not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The current C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -28,7 +28,7 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T564 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T564; source-law adjudication is not a continuum
+   Why: Still blocked after T565; a finite holdout is not a continuum
    bridge or Lorentzian target import.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
@@ -133,28 +133,27 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, predictive-holdout burden selected | Can the absorber-separated bounded sheaf transport class predict an independent holdout without target imports or governance shortcuts? | T564 consumed T563 as absorber-separation authority and rejected immediate source-law status because `independent_predictive_holdout` and `typed_source_generator` remain open. It selected `t565_domain_native_sheaf_transport_predictive_holdout_gate`. |
+| TAF11 | open, typed-generator burden selected | Can the absorber-separated bounded sheaf transport class be selected by a typed admissible-case generator rather than manual fixture design? | T565 consumed T564 as predictive-holdout authority, predeclared an independent rotating multi-ledger repair holdout, and cleared the frozen-contract screen. Source-law status remains unearned because `typed_source_generator` is still open. It selected `t566_domain_native_sheaf_transport_typed_generator_gate`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T564 supplied source-law adjudication without a predictive holdout. TAF4 movement still waits for a real bridge, not a target import. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T565 supplied only finite holdout evidence. TAF4 movement still waits for a real bridge, not a target import. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T564 keeps TAF8 waiting because internal TAF11 adjudication is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T565 keeps TAF8 waiting because internal TAF11 holdout evidence is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the selected predictive-holdout burden:
+When Joe opens the lane, run the selected typed-generator burden:
 
-Run `t565_domain_native_sheaf_transport_predictive_holdout_gate` before any
-claim or canon movement. Freeze the T557-T564 family contract, predeclare an
-independent holdout shape before outcome reading, and test whether the same
-source variables and absorber boundaries predict the holdout without target
-labels, cross-repo truth, Observerse replay, APRD replay, TAF8 execution,
-direct TAF4 movement, S1 movement, source-law overread, or public-posture
-movement.
+Run `t566_domain_native_sheaf_transport_typed_generator_gate` before any claim
+or canon movement. Type the admissible-case generator that selects future
+source-variable-complete holdout candidates before fixture-specific outcome
+reading, while preserving the same target import, cross-repo truth, Observerse
+replay, APRD replay, TAF8 execution, direct TAF4 movement, S1 movement,
+source-law overread, or public-posture movement.
 
 Use the T541 TAF8 gate only when a real domain-native cross-domain packet is
 available under the same predeclared spine. TAF12 may run only if a real
 data-bearing packet exists. TAF3 remains blocked until TAF11 tests the
-predictive holdout or TAF12 supplies a real noncompletion target.
+typed generator or TAF12 supplies a real noncompletion target.

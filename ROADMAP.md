@@ -1,5 +1,36 @@
 ﻿# Roadmap
 
+## 2026-07-14 T565 Domain-Native Sheaf Transport Predictive Holdout Gate
+
+T565 executes the predictive-holdout burden selected by T564. It freezes the
+T557-T564 sheaf transport family contract and predeclares one independent
+holdout before evaluation: the rotating multi-ledger repair path.
+
+The holdout clears the frozen-contract screen:
+
+- it is independent from the prior T559/T560/T561 bounded class;
+- it preserves the same finite event covers, local finality sections,
+  restriction morphisms, settlement obstruction witnesses, transport
+  consistency squares, and allowed refinement steps;
+- it preserves the same mature absorber boundaries;
+- it uses no target labels, cross-repo truth, Observerse replay, APRD replay,
+  TAF4 movement, TAF8 execution, S1 movement, source-law overread, or
+  claim/canon/public-posture shortcut.
+
+This is stronger TAF11 review evidence, but source-law status is still not
+earned. The remaining burden is a typed source generator that selects future
+admissible cases before fixture-specific outcome reading.
+
+T565 names the next executable TAF11 burden:
+`t566_domain_native_sheaf_transport_typed_generator_gate`. That packet should
+type the admissible-case generator while preserving the same target import,
+cross-repo, Observerse, APRD, TAF4, TAF8, S1, claim, canon, public-posture, and
+external-publication boundaries.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T565.
+
 ## 2026-07-14 T564 Domain-Native Sheaf Transport Source-Law Adjudication Gate
 
 T564 executes the source-law adjudication burden selected by T563. It consumes

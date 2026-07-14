@@ -1,5 +1,33 @@
 ﻿# Roadmap
 
+## 2026-07-14 T564 Domain-Native Sheaf Transport Source-Law Adjudication Gate
+
+T564 executes the source-law adjudication burden selected by T563. It consumes
+the T559/T560/T561 bounded class after absorber separation: ordinary sheaf
+gluing, resource transport, consensus/state-machine, and record-provenance
+absorbers all received normal same-neighbor-data rights, still absorbed their
+native controls, and did not absorb the bounded class.
+
+The positive review burdens clear, but source-law status is not earned. The
+route still lacks two load-bearing pieces:
+
+- an independent predictive holdout tested after the source variables and
+  absorber boundaries are frozen;
+- a typed source generator that selects future admissible cases without manual
+  fixture design.
+
+T564 names the next executable TAF11 burden:
+`t565_domain_native_sheaf_transport_predictive_holdout_gate`. That packet
+should freeze the T557-T564 family contract, predeclare an independent holdout
+shape before outcome reading, and test whether the same source variables and
+absorber boundaries predict the holdout without target labels, cross-repo
+truth, Observerse replay, APRD replay, TAF4 movement, TAF8 execution, S1
+movement, claim-ledger movement, or public-posture movement.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T564.
+
 ## 2026-07-14 T563 Domain-Native Sheaf Transport Absorber-Separation Gate
 
 T563 executes the absorber-separation burden selected by T562. It consumes the

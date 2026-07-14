@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T563 separated the minimal bounded sheaf transport class from "
-            "the mature absorbers and named T564 as source-law adjudication."
+            "T564 rejected immediate source-law status and named T565 "
+            "as predictive holdout."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T563: absorber separation is not a continuum "
+            "Still blocked after T564: source-law adjudication is not a continuum "
             "bridge or Lorentzian target import."
         ),
     },
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T563 preserved the T541 wait state: internal TAF11 absorber "
-            "separation is not a domain-native cross-domain packet."
+            "T564 preserved the T541 wait state: internal TAF11 adjudication "
+            "is not a domain-native cross-domain packet."
         ),
     },
 }

@@ -1,0 +1,612 @@
+{
+  "absorber_aggregates": [
+    {
+      "absorber_id": "ordinary_sheaf_gluing_completion",
+      "all_fixtures_separated": true,
+      "fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ],
+      "native_control_absorbed": true,
+      "reason": "`ordinary_sheaf_gluing_completion` absorbs its native control but not the bounded class.",
+      "separated_fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ]
+    },
+    {
+      "absorber_id": "resource_transport_monotone_absorber",
+      "all_fixtures_separated": true,
+      "fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ],
+      "native_control_absorbed": true,
+      "reason": "`resource_transport_monotone_absorber` absorbs its native control but not the bounded class.",
+      "separated_fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ]
+    },
+    {
+      "absorber_id": "consensus_state_machine_absorber",
+      "all_fixtures_separated": true,
+      "fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ],
+      "native_control_absorbed": true,
+      "reason": "`consensus_state_machine_absorber` absorbs its native control but not the bounded class.",
+      "separated_fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ]
+    },
+    {
+      "absorber_id": "record_provenance_completion_absorber",
+      "all_fixtures_separated": true,
+      "fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ],
+      "native_control_absorbed": true,
+      "reason": "`record_provenance_completion_absorber` absorbs its native control but not the bounded class.",
+      "separated_fixture_ids": [
+        "t559_record_finality_transport_square_survivor",
+        "t560_handoff_rotation_repair_transfer_survivor",
+        "third_multicover_seal_handoff_fixture"
+      ]
+    }
+  ],
+  "absorber_controls": [
+    {
+      "absorber_id": "ordinary_sheaf_gluing_completion",
+      "actual_status": "absorbed_by_ordinary_sheaf_gluing",
+      "control_case_id": "ordinary_gluing_compatible_sections_control",
+      "expected_status": "absorbed_by_ordinary_sheaf_gluing",
+      "granted_comparisons": [
+        "section equality after restriction",
+        "Cech-style obstruction disappearance under compatible gluing"
+      ],
+      "granted_state": [
+        "local section values",
+        "restriction maps",
+        "compatible-family completion",
+        "cover refinement relation"
+      ],
+      "matched": true,
+      "native_control_absorbed": true,
+      "native_theory": "ordinary sheaf gluing and section completion",
+      "reason": "ordinary sheaf gluing and section completion absorbs its native positive-control case after same-neighbor-data completion.",
+      "same_neighbor_data_granted": true
+    },
+    {
+      "absorber_id": "resource_transport_monotone_absorber",
+      "actual_status": "absorbed_by_resource_transport_monotone",
+      "control_case_id": "resource_budget_monotone_control",
+      "expected_status": "absorbed_by_resource_transport_monotone",
+      "granted_comparisons": [
+        "resource-profile equality",
+        "monotone-factorization of transport capability"
+      ],
+      "granted_state": [
+        "resource budget vector",
+        "allowed transport cost",
+        "monotone drawdown profile",
+        "matched residual budget"
+      ],
+      "matched": true,
+      "native_control_absorbed": true,
+      "native_theory": "resource transport monotone and budget accounting",
+      "reason": "resource transport monotone and budget accounting absorbs its native positive-control case after same-neighbor-data completion.",
+      "same_neighbor_data_granted": true
+    },
+    {
+      "absorber_id": "consensus_state_machine_absorber",
+      "actual_status": "absorbed_by_consensus_state_machine",
+      "control_case_id": "consensus_state_machine_completion_control",
+      "expected_status": "absorbed_by_consensus_state_machine",
+      "granted_comparisons": [
+        "trace equivalence under declared protocol state",
+        "safety/liveness preservation"
+      ],
+      "granted_state": [
+        "protocol state",
+        "message and fork profile",
+        "quorum/fault boundary",
+        "state transition trace"
+      ],
+      "matched": true,
+      "native_control_absorbed": true,
+      "native_theory": "consensus/state-machine safety and liveness theory",
+      "reason": "consensus/state-machine safety and liveness theory absorbs its native positive-control case after same-neighbor-data completion.",
+      "same_neighbor_data_granted": true
+    },
+    {
+      "absorber_id": "record_provenance_completion_absorber",
+      "actual_status": "absorbed_by_record_provenance_completion",
+      "control_case_id": "record_provenance_completion_control",
+      "expected_status": "absorbed_by_record_provenance_completion",
+      "granted_comparisons": [
+        "provenance-preserving trace isomorphism",
+        "completed witness-field equality"
+      ],
+      "granted_state": [
+        "provenance graph",
+        "witness and approval trace",
+        "channel/partition metadata",
+        "why-not provenance fields"
+      ],
+      "matched": true,
+      "native_control_absorbed": true,
+      "native_theory": "record provenance and audit-log completion",
+      "reason": "record provenance and audit-log completion absorbs its native positive-control case after same-neighbor-data completion.",
+      "same_neighbor_data_granted": true
+    }
+  ],
+  "absorber_status": "ABSORBER_SEPARATION_SURVIVES_BOUNDED_CLASS_SOURCE_LAW_NOT_EARNED",
+  "artifact": "T563-domain-native-sheaf-transport-absorber-separation-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The bounded fixtures remain absorber-separated: t559_record_finality_transport_square_survivor, t560_handoff_rotation_repair_transfer_survivor, third_multicover_seal_handoff_fixture."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The mature absorbers still absorb their native controls: ordinary_gluing_compatible_sections_control, resource_budget_monotone_control, consensus_state_machine_completion_control, record_provenance_completion_control."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Absorber separation was checked against: ordinary_sheaf_gluing_completion, resource_transport_monotone_absorber, consensus_state_machine_absorber, record_provenance_completion_absorber."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The next useful burden is source-law adjudication, not claim, canon, TAF4, TAF8, S1, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T563 is an absorber-separation screen and source-law-adjudication selector; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "fixture_aggregates": [
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "all_absorbers_granted": true,
+      "all_absorbers_separated": true,
+      "fixture_id": "t559_record_finality_transport_square_survivor",
+      "reason": "`t559_record_finality_transport_square_survivor` remains separated from every mature absorber.",
+      "separated_absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "all_absorbers_granted": true,
+      "all_absorbers_separated": true,
+      "fixture_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "reason": "`t560_handoff_rotation_repair_transfer_survivor` remains separated from every mature absorber.",
+      "separated_absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "all_absorbers_granted": true,
+      "all_absorbers_separated": true,
+      "fixture_id": "third_multicover_seal_handoff_fixture",
+      "reason": "`third_multicover_seal_handoff_fixture` remains separated from every mature absorber.",
+      "separated_absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ]
+    }
+  ],
+  "fixture_screens": [
+    {
+      "absorber_id": "ordinary_sheaf_gluing_completion",
+      "absorber_separated": true,
+      "actual_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "expected_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "fixture_id": "t559_record_finality_transport_square_survivor",
+      "granted_comparisons": [
+        "section equality after restriction",
+        "Cech-style obstruction disappearance under compatible gluing"
+      ],
+      "granted_state": [
+        "local section values",
+        "restriction maps",
+        "compatible-family completion",
+        "cover refinement relation"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "ordinary sheaf gluing and section completion",
+      "reason": "`t559_record_finality_transport_square_survivor` remains nonabsorbed by `ordinary_sheaf_gluing_completion` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "resource_transport_monotone_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_resource_transport_monotone_absorber",
+      "expected_status": "separated_from_resource_transport_monotone_absorber",
+      "fixture_id": "t559_record_finality_transport_square_survivor",
+      "granted_comparisons": [
+        "resource-profile equality",
+        "monotone-factorization of transport capability"
+      ],
+      "granted_state": [
+        "resource budget vector",
+        "allowed transport cost",
+        "monotone drawdown profile",
+        "matched residual budget"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "resource transport monotone and budget accounting",
+      "reason": "`t559_record_finality_transport_square_survivor` remains nonabsorbed by `resource_transport_monotone_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "consensus_state_machine_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_consensus_state_machine_absorber",
+      "expected_status": "separated_from_consensus_state_machine_absorber",
+      "fixture_id": "t559_record_finality_transport_square_survivor",
+      "granted_comparisons": [
+        "trace equivalence under declared protocol state",
+        "safety/liveness preservation"
+      ],
+      "granted_state": [
+        "protocol state",
+        "message and fork profile",
+        "quorum/fault boundary",
+        "state transition trace"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "consensus/state-machine safety and liveness theory",
+      "reason": "`t559_record_finality_transport_square_survivor` remains nonabsorbed by `consensus_state_machine_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "record_provenance_completion_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_record_provenance_completion_absorber",
+      "expected_status": "separated_from_record_provenance_completion_absorber",
+      "fixture_id": "t559_record_finality_transport_square_survivor",
+      "granted_comparisons": [
+        "provenance-preserving trace isomorphism",
+        "completed witness-field equality"
+      ],
+      "granted_state": [
+        "provenance graph",
+        "witness and approval trace",
+        "channel/partition metadata",
+        "why-not provenance fields"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "record provenance and audit-log completion",
+      "reason": "`t559_record_finality_transport_square_survivor` remains nonabsorbed by `record_provenance_completion_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "ordinary_sheaf_gluing_completion",
+      "absorber_separated": true,
+      "actual_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "expected_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "fixture_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "granted_comparisons": [
+        "section equality after restriction",
+        "Cech-style obstruction disappearance under compatible gluing"
+      ],
+      "granted_state": [
+        "local section values",
+        "restriction maps",
+        "compatible-family completion",
+        "cover refinement relation"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "ordinary sheaf gluing and section completion",
+      "reason": "`t560_handoff_rotation_repair_transfer_survivor` remains nonabsorbed by `ordinary_sheaf_gluing_completion` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "resource_transport_monotone_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_resource_transport_monotone_absorber",
+      "expected_status": "separated_from_resource_transport_monotone_absorber",
+      "fixture_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "granted_comparisons": [
+        "resource-profile equality",
+        "monotone-factorization of transport capability"
+      ],
+      "granted_state": [
+        "resource budget vector",
+        "allowed transport cost",
+        "monotone drawdown profile",
+        "matched residual budget"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "resource transport monotone and budget accounting",
+      "reason": "`t560_handoff_rotation_repair_transfer_survivor` remains nonabsorbed by `resource_transport_monotone_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "consensus_state_machine_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_consensus_state_machine_absorber",
+      "expected_status": "separated_from_consensus_state_machine_absorber",
+      "fixture_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "granted_comparisons": [
+        "trace equivalence under declared protocol state",
+        "safety/liveness preservation"
+      ],
+      "granted_state": [
+        "protocol state",
+        "message and fork profile",
+        "quorum/fault boundary",
+        "state transition trace"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "consensus/state-machine safety and liveness theory",
+      "reason": "`t560_handoff_rotation_repair_transfer_survivor` remains nonabsorbed by `consensus_state_machine_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "record_provenance_completion_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_record_provenance_completion_absorber",
+      "expected_status": "separated_from_record_provenance_completion_absorber",
+      "fixture_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "granted_comparisons": [
+        "provenance-preserving trace isomorphism",
+        "completed witness-field equality"
+      ],
+      "granted_state": [
+        "provenance graph",
+        "witness and approval trace",
+        "channel/partition metadata",
+        "why-not provenance fields"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "record provenance and audit-log completion",
+      "reason": "`t560_handoff_rotation_repair_transfer_survivor` remains nonabsorbed by `record_provenance_completion_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "ordinary_sheaf_gluing_completion",
+      "absorber_separated": true,
+      "actual_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "expected_status": "separated_from_ordinary_sheaf_gluing_completion",
+      "fixture_id": "third_multicover_seal_handoff_fixture",
+      "granted_comparisons": [
+        "section equality after restriction",
+        "Cech-style obstruction disappearance under compatible gluing"
+      ],
+      "granted_state": [
+        "local section values",
+        "restriction maps",
+        "compatible-family completion",
+        "cover refinement relation"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "ordinary sheaf gluing and section completion",
+      "reason": "`third_multicover_seal_handoff_fixture` remains nonabsorbed by `ordinary_sheaf_gluing_completion` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "resource_transport_monotone_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_resource_transport_monotone_absorber",
+      "expected_status": "separated_from_resource_transport_monotone_absorber",
+      "fixture_id": "third_multicover_seal_handoff_fixture",
+      "granted_comparisons": [
+        "resource-profile equality",
+        "monotone-factorization of transport capability"
+      ],
+      "granted_state": [
+        "resource budget vector",
+        "allowed transport cost",
+        "monotone drawdown profile",
+        "matched residual budget"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "resource transport monotone and budget accounting",
+      "reason": "`third_multicover_seal_handoff_fixture` remains nonabsorbed by `resource_transport_monotone_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "consensus_state_machine_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_consensus_state_machine_absorber",
+      "expected_status": "separated_from_consensus_state_machine_absorber",
+      "fixture_id": "third_multicover_seal_handoff_fixture",
+      "granted_comparisons": [
+        "trace equivalence under declared protocol state",
+        "safety/liveness preservation"
+      ],
+      "granted_state": [
+        "protocol state",
+        "message and fork profile",
+        "quorum/fault boundary",
+        "state transition trace"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "consensus/state-machine safety and liveness theory",
+      "reason": "`third_multicover_seal_handoff_fixture` remains nonabsorbed by `consensus_state_machine_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    },
+    {
+      "absorber_id": "record_provenance_completion_absorber",
+      "absorber_separated": true,
+      "actual_status": "separated_from_record_provenance_completion_absorber",
+      "expected_status": "separated_from_record_provenance_completion_absorber",
+      "fixture_id": "third_multicover_seal_handoff_fixture",
+      "granted_comparisons": [
+        "provenance-preserving trace isomorphism",
+        "completed witness-field equality"
+      ],
+      "granted_state": [
+        "provenance graph",
+        "witness and approval trace",
+        "channel/partition metadata",
+        "why-not provenance fields"
+      ],
+      "matched": true,
+      "minimal_payload_preserved": true,
+      "native_theory": "record provenance and audit-log completion",
+      "reason": "`third_multicover_seal_handoff_fixture` remains nonabsorbed by `record_provenance_completion_absorber` after normal state/comparison completion.",
+      "same_neighbor_data_granted": true,
+      "strong_reading_absorbed": false
+    }
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t562_minimality_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T562 completed bounded-class minimality and selected T563."
+    },
+    {
+      "gate_id": "minimal_bounded_class_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T559/T560/T561 minimal bounded class is preserved."
+    },
+    {
+      "gate_id": "absorber_same_neighbor_data_granted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every mature absorber receives normal state and comparison rights."
+    },
+    {
+      "gate_id": "native_controls_absorbed",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Each mature absorber still absorbs its native positive-control case."
+    },
+    {
+      "gate_id": "bounded_class_separated_from_absorbers",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every bounded fixture remains separated from every mature absorber."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The result stays review-only and does not promote source-law status."
+    },
+    {
+      "gate_id": "next_packet_specific",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "A single source-law-adjudication gate is named as the next packet."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No claim, canon, public-posture, TAF4, TAF8, S1, external, or cross-repo movement is attempted."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "blocks": "Testing absorbers against impoverished state or comparison rights.",
+      "control_id": "same_neighbor_data_control",
+      "reason": "T563 grants ordinary gluing, resource, consensus, and provenance absorbers their normal data."
+    },
+    {
+      "blocks": "Declaring absorber separation when the absorber no longer absorbs its native control.",
+      "control_id": "native_control_control",
+      "reason": "Each mature absorber must still absorb its ordinary positive-control case."
+    },
+    {
+      "blocks": "Treating absorber separation as source-law establishment.",
+      "control_id": "source_law_overread_control",
+      "reason": "Source-law status needs a separate adjudication gate after absorber separation."
+    },
+    {
+      "blocks": "Using target labels, cross-repo truth, Observerse replay, APRD replay, or relabel-only success.",
+      "control_id": "replay_and_import_control",
+      "reason": "T563 inherits the T557-T562 frozen falsifier boundary."
+    },
+    {
+      "blocks": "Moving TAF4 or executing TAF8 from internal TAF11 absorber separation.",
+      "control_id": "taf4_taf8_shortcut_control",
+      "reason": "Absorber separation is neither finite-to-continuum descent nor a cross-domain packet."
+    },
+    {
+      "blocks": "Changing claim rows, Canon Index tiers, canon verdicts, public posture, or publication state.",
+      "control_id": "governance_posture_control",
+      "reason": "The packet has no governance movement authority."
+    }
+  ],
+  "not_claimed": "T563 does not establish a source law, validate sheaf obstruction transport as a source family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It grants the four mature absorbers same-neighbor-data rights against the bounded T559/T560/T561 class and records only review-grade absorber separation.",
+  "recommended_next": "Run t564_domain_native_sheaf_transport_source_law_adjudication_gate. It should adjudicate whether the absorber-separated bounded class satisfies a source-law burden without target labels, cross-repo truth, Observerse replay, APRD replay, TAF4 movement, TAF8 execution, claim-ledger movement, or public-posture movement.",
+  "route_status": "bounded_absorber_separated_source_law_candidate_review_only",
+  "selected_next_packet": "t564_domain_native_sheaf_transport_source_law_adjudication_gate",
+  "source_law_reading": "The minimal bounded T559/T560/T561 class is not absorbed by the four predeclared mature absorbers when those absorbers receive normal state and comparison rights. That makes the route an absorber-separated review candidate, not a source law.",
+  "source_t562_bounded_class": [
+    "t559_record_finality_transport_square_survivor",
+    "t560_handoff_rotation_repair_transfer_survivor",
+    "third_multicover_seal_handoff_fixture"
+  ],
+  "source_t562_minimality_status": "SHEAF_TRANSPORT_MINIMALITY_CLEARED_BOUNDED_CLASS_NO_SOURCE_LAW",
+  "source_t562_selected_next_packet": "t563_domain_native_sheaf_transport_absorber_separation_gate",
+  "source_t562_verdict": "domain_native_sheaf_transport_minimality_clears_bounded_class_review_only",
+  "taf11_update": "TAF11 remains active and narrowed. T563 separates the minimal bounded sheaf transport class from the four mature absorbers, but source-law status still needs a dedicated adjudication gate.",
+  "taf4_update": "TAF4 remains blocked. Absorber separation inside finite finality fixtures is not a finite-to-continuum bridge, causal-set descent, Lorentzian target import, or manifoldlikeness result.",
+  "taf8_update": "TAF8 remains waiting. T563 is internal TAF11 absorber separation, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_absorber_separation_survives_review_only"
+}

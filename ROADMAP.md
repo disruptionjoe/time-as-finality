@@ -1,5 +1,33 @@
 ﻿# Roadmap
 
+## 2026-07-14 T563 Domain-Native Sheaf Transport Absorber-Separation Gate
+
+T563 executes the absorber-separation burden selected by T562. It consumes the
+minimal bounded class: the T559 record-finality transport-square survivor, the
+T560 handoff/rotation/repair transfer survivor, and the T561 multicover
+seal/handoff fixture.
+
+The four mature absorbers receive their normal same-neighbor-data rights:
+ordinary sheaf gluing and section completion, resource transport monotone and
+budget accounting, consensus/state-machine safety and liveness theory, and
+record provenance and audit-log completion. Each absorber still absorbs its
+native positive-control case.
+
+The minimal bounded class remains separated from all four mature absorbers.
+That is stronger TAF11 route evidence, but it remains review-only and does not
+establish a source law.
+
+T563 names the next executable TAF11 burden:
+`t564_domain_native_sheaf_transport_source_law_adjudication_gate`. That packet
+should adjudicate whether the absorber-separated bounded class satisfies a
+source-law burden without target labels, cross-repo truth, Observerse replay,
+APRD replay, TAF4 movement, TAF8 execution, claim-ledger movement, or
+public-posture movement.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T563.
+
 ## 2026-07-14 T562 Domain-Native Sheaf Transport Minimality Gate
 
 T562 executes the minimality burden selected by T561. It consumes the mapped

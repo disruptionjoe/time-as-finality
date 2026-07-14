@@ -21,10 +21,11 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Out-of-panel absorber probe for the TAF11 package",
+        "title": "External-panel scope closure for the TAF11 package",
         "why": (
-            "T578 kept the candidate package review-only; the next burden is "
-            "testing it against pressure outside the T559-T577 panel."
+            "T579 applied out-of-panel absorber pressure and kept the package "
+            "limited to review material; the next burden closes or expands "
+            "that panel."
         ),
     },
     "TAF12": {
@@ -44,8 +45,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T578: the candidate package has no continuum, "
-            "causal-set, Lorentzian, or manifoldlikeness bridge."
+            "Still blocked after T579: the causal-set measure-law probe "
+            "supplied no finality-native continuum bridge."
         ),
     },
     "TAF5": {
@@ -72,8 +73,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T578 preserved the T541 wait state: an internal limitation gate "
-            "is not a domain-native cross-domain packet."
+            "T579 preserved the T541 wait state: absorber pressure is not a "
+            "domain-native cross-domain packet."
         ),
     },
 }

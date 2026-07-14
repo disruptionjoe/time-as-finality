@@ -12,15 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T578 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T579 on
 2026-07-14:
 
-1. TAF11 - Out-of-panel absorber probe for the TAF11 package.
-   Why: T578 kept the candidate package review-only; the next burden is
-   testing it against pressure outside the T559-T577 panel.
+1. TAF11 - External-panel scope closure for the TAF11 package.
+   Why: T579 applied out-of-panel absorber pressure and kept the package
+   limited to review material; the next burden closes or expands that panel.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T578 preserved the T541 wait state; an internal limitation gate is not
-   a domain-native cross-domain packet.
+   Why: T579 preserved the T541 wait state; absorber pressure is not a
+   domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The current C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -28,8 +28,8 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T578 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T578; the candidate package has no continuum,
-   causal-set, Lorentzian, or manifoldlikeness bridge.
+   Why: Still blocked after T579; the causal-set measure-law probe supplied no
+   finality-native continuum bridge.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -133,28 +133,27 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, out-of-panel absorber probe selected | Does the firewalled T559-T578 package survive pressure outside the internal panel? | T578 kept the candidate package review-only, exposed load-bearing finite-scope/route/internal-panel/downstream limits, and selected `t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate`. |
+| TAF11 | open, external-panel scope closure selected | Does the firewalled T559-T579 package survive and scope external absorber pressure honestly? | T579 applied out-of-panel pressure from thermodynamics, detector metrology, causal-set measure-law calibration, and quantum access-structure monogamy; the package survives only as limited review material and selected `t580_domain_native_sheaf_transport_external_panel_scope_closure_gate`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T578 exposed that the candidate package has no continuum or Lorentzian bridge. TAF4 movement still waits for a real bridge, not a target import. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T579's causal-set measure-law probe supplied no continuum or Lorentzian bridge. TAF4 movement still waits for a real bridge, not a target import. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T578 keeps TAF8 waiting because internal TAF11 limitation testing is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T579 keeps TAF8 waiting because quantum access-structure absorber pressure is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the selected out-of-panel absorber burden:
+When Joe opens the lane, run the selected external-panel scope-closure burden:
 
-Run `t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate`
-before any claim or canon movement. Add an out-of-panel absorber or adversarial
-family and test whether the T559-T578 review-only candidate package survives
-without relying only on its internal panel. Do not promote source-law status
-from internal packaging alone, and do not move TAF4, TAF8, S1, public posture,
-or cross-repo truth.
+Run `t580_domain_native_sheaf_transport_external_panel_scope_closure_gate`
+before any claim or canon movement. Close or expand the external absorber panel
+after T579's thermodynamic, detector, causal-set, and quantum probes. Do not
+promote source-law status from limited review survival, and do not move TAF4,
+TAF8, S1, public posture, or cross-repo truth.
 
 Use the T541 TAF8 gate only when a real domain-native cross-domain packet is
 available under the same predeclared spine. TAF12 may run only if a real
-data-bearing packet exists. TAF3 remains blocked until the TAF11 candidate
-package survives, fails, or redirects under out-of-panel pressure, or TAF12
-supplies a real noncompletion target.
+data-bearing packet exists. TAF3 remains blocked until the TAF11 external-panel
+scope closes, expands, or redirects, or TAF12 supplies a real noncompletion
+target.

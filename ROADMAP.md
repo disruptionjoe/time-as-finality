@@ -1,5 +1,27 @@
 ﻿# Roadmap
 
+## 2026-07-14 T579 Domain-Native Sheaf Transport Out-Of-Panel Absorber Probe Gate
+
+T579 executes the out-of-panel absorber probe selected by T578. It tests the
+firewalled T559-T578 candidate package against absorber pressure outside the
+route's internal panel:
+
+- stochastic thermodynamics and maintenance accounting;
+- detector metrology, calibration, and provenance;
+- causal-set measure law and Lorentzian calibration;
+- quantum access structures, shareability, and monogamy.
+
+The external panel does not break the package as bounded review material, but
+every probe absorbs source-law or downstream-overread interpretations. The
+package survives only as limited review material. Source-law promotion remains
+blocked, and there is no claim-ledger, Canon Index, canon-verdict,
+public-posture, TAF4, TAF8, S1, publication, or cross-repo movement.
+
+T579 names the next executable TAF11 burden:
+`t580_domain_native_sheaf_transport_external_panel_scope_closure_gate`. That
+packet should close or expand the external-panel scope before any stronger
+reading of the TAF11 candidate package.
+
 ## 2026-07-14 T578 Domain-Native Sheaf Transport Candidate Package Limitation Gate
 
 T578 executes the candidate-package limitation burden selected by T577. It

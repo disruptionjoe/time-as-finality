@@ -1,5 +1,30 @@
 ﻿# Roadmap
 
+## 2026-07-14 T574 Domain-Native Sheaf Transport Source-Law Route Adjudication Gate
+
+T574 executes the route-adjudication burden selected by T573. It reviews the
+T559-T573 route without promoting source-law status.
+
+The adjudication keeps the route open because the required route criteria pass:
+
+- bounded class, minimality, and absorber separation across T559-T564;
+- predictive holdout and typed generator across T565-T566;
+- hostile review and semantic strengthening across T567-T568;
+- independent reimplementation and fresh-family stress across T569-T570;
+- multi-family falsifier rotation, blind-family holdout, and adversarial
+  blind-family holdout across T571-T573.
+
+Promotion remains blocked. T574 records the evidence as finite synthetic route
+pressure, not a public source law. It also names the missing pressure: hostile
+counterfamily search under the frozen source roles, absorber boundaries, and
+semantic requirements.
+
+T574 names the next executable TAF11 burden:
+`t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate`. That
+packet should try to break the route with an independent finality-native
+counterfamily before any source-law, claim-ledger, Canon Index, canon-verdict,
+public-posture, TAF4, TAF8, S1, external-publication, or cross-repo movement.
+
 ## 2026-07-14 T573 Domain-Native Sheaf Transport Adversarial Blind-Family Holdout Gate
 
 T573 executes the adversarial blind-family holdout burden selected by T572. It

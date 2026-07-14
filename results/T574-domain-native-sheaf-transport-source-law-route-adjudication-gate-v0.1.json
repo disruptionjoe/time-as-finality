@@ -1,0 +1,228 @@
+{
+  "adjudication_status": "ROUTE_KEPT_OPEN_SOURCE_LAW_NOT_PROMOTED",
+  "artifact": "T574-domain-native-sheaf-transport-source-law-route-adjudication-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Route adjudication passed required criteria: t573_authority, bounded_class_minimality_and_absorber_separation, predictive_and_typed_generator_burdens_cleared, hostile_review_and_semantic_strengthening_cleared, independent_reimplementation_and_fresh_family_stress_cleared, rotation_blind_and_adversarial_holdouts_cleared."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law promotion remains blocked by: finite_synthetic_route_only, hostile_counterfamily_search_missing, no_taf4_continuum_descent, no_taf8_cross_domain_packet, protected_governance_surfaces."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The route is worth keeping open only through hostile counterfamily search."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T574 keeps the TAF11 route open as review-only, blocks promotion, and selects hostile counterfamily search; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "gate_decisions": [
+    {
+      "gate_id": "t573_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T573 supplies route-adjudication authority."
+    },
+    {
+      "gate_id": "route_evidence_keeps_route_open",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Required T559-T573 route criteria passed."
+    },
+    {
+      "gate_id": "promotion_blockers_active",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Promotion blockers remain active and source-law status is not earned."
+    },
+    {
+      "gate_id": "hostile_counterfamily_search_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Hostile counterfamily search is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law promotion is blocked."
+    }
+  ],
+  "not_claimed": "T574 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It adjudicates the T559-T573 route as review-only and names a further hostile counterfamily burden.",
+  "promotion_blockers": [
+    {
+      "active": true,
+      "blocker_id": "finite_synthetic_route_only",
+      "reason": "The evidence is finite synthetic route pressure, not a public source law.",
+      "required_next": "t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate"
+    },
+    {
+      "active": true,
+      "blocker_id": "hostile_counterfamily_search_missing",
+      "reason": "The route has not searched for an independent hostile counterfamily.",
+      "required_next": "t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate"
+    },
+    {
+      "active": true,
+      "blocker_id": "no_taf4_continuum_descent",
+      "reason": "The route supplies no finite-to-continuum descent or Lorentzian bridge.",
+      "required_next": "keep_taf4_blocked"
+    },
+    {
+      "active": true,
+      "blocker_id": "no_taf8_cross_domain_packet",
+      "reason": "The route is internal TAF11 generator stress, not TAF8 shadow protection.",
+      "required_next": "keep_taf8_waiting"
+    },
+    {
+      "active": true,
+      "blocker_id": "protected_governance_surfaces",
+      "reason": "Claim rows, Canon Index tiers, canon verdicts, public posture, S1, publication, and cross-repo truth remain protected.",
+      "required_next": "no_governance_movement"
+    }
+  ],
+  "recommended_next": "Run t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate. The next packet should search for a hostile domain-native counterfamily under the frozen source roles, absorber boundaries, and semantic requirements before any source-law, claim, canon, public-posture, TAF4, TAF8, S1, publication, or cross-repo movement.",
+  "route_criteria": [
+    {
+      "criterion_id": "t573_authority",
+      "evidence": [
+        "domain_native_sheaf_transport_adversarial_blind_holdout_survives_review_only",
+        "t574_domain_native_sheaf_transport_source_law_route_adjudication_gate",
+        "adversarial_holdout_cleared"
+      ],
+      "passed": true,
+      "residual_risk": "T573 is finite synthetic review pressure, not a public law.",
+      "route_effect": "Supplies route-adjudication authority without promotion.",
+      "source_span": "T573",
+      "weight": "required"
+    },
+    {
+      "criterion_id": "bounded_class_minimality_and_absorber_separation",
+      "evidence": [
+        "bounded class mapped",
+        "minimality cleared",
+        "absorber separation cleared",
+        "predictive and typed-generator burdens named at T564"
+      ],
+      "passed": true,
+      "residual_risk": "This still does not establish a law beyond the synthetic class.",
+      "route_effect": "The route has a bounded class and survived native absorbers.",
+      "source_span": "T559-T564",
+      "weight": "required"
+    },
+    {
+      "criterion_id": "predictive_and_typed_generator_burdens_cleared",
+      "evidence": [
+        "predictive holdout survived",
+        "typed generator selected future admissible cases"
+      ],
+      "passed": true,
+      "residual_risk": "The generator still needed hostile review and semantic hardening.",
+      "route_effect": "The route moved beyond manual fixture reading.",
+      "source_span": "T565-T566",
+      "weight": "required"
+    },
+    {
+      "criterion_id": "hostile_review_and_semantic_strengthening_cleared",
+      "evidence": [
+        "same-field alternates survived hostile review",
+        "semantic screens reject trivial completion and target import"
+      ],
+      "passed": true,
+      "residual_risk": "Semantic strengthening may still overfit the tested families.",
+      "route_effect": "The route corrected field-name overbreadth.",
+      "source_span": "T567-T568",
+      "weight": "required"
+    },
+    {
+      "criterion_id": "independent_reimplementation_and_fresh_family_stress_cleared",
+      "evidence": [
+        "independent reimplementation matched",
+        "fresh family stress survived"
+      ],
+      "passed": true,
+      "residual_risk": "Fresh family stress remains finite and synthetic.",
+      "route_effect": "The route is not merely fixture-label replay.",
+      "source_span": "T569-T570",
+      "weight": "required"
+    },
+    {
+      "criterion_id": "rotation_blind_and_adversarial_holdouts_cleared",
+      "evidence": [
+        "multi-family falsifier rotation survived",
+        "blind-family holdout survived",
+        "adversarial blind-family holdout survived"
+      ],
+      "passed": true,
+      "residual_risk": "No hostile counterfamily search has tried to break the route.",
+      "route_effect": "The route has enough pressure to stay open.",
+      "source_span": "T571-T573",
+      "weight": "required"
+    }
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "BLOCKED_PROMOTION_BAR_NOT_MET",
+      "reason": "Route evidence is strong enough to continue but still review-only.",
+      "selected": false
+    },
+    {
+      "decision_id": "retire_semantic_generator_route",
+      "next_packet": "none",
+      "outcome": "PAUSED_ROUTE_STILL_OPEN",
+      "reason": "Retirement is premature because required route criteria passed.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_hostile_counterfamily_search_gate",
+      "next_packet": "t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The route should be kept open by trying to break it with a hostile counterfamily before any promotion.",
+      "selected": true
+    },
+    {
+      "decision_id": "move_taf4_from_t574",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "Route adjudication is not continuum descent or target-spacetime recovery.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t574",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 route adjudication is not a cross-domain shadow-protection packet.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_kept_open": true,
+  "selected_next_packet": "t575_domain_native_sheaf_transport_hostile_counterfamily_search_gate",
+  "source_law_earned": false,
+  "source_law_reading": "T574 adjudicates the T559-T573 route as strong enough to keep open but still insufficient for public source-law status. The route has bounded-class, minimality, absorber-separation, predictive, typed-generator, hostile-review, semantic-strengthening, independent-reimplementation, fresh-family, falsifier-rotation, blind-family, and adversarial blind-family pressure. It still lacks hostile counterfamily search and any public law, continuum, cross-domain, or external evidence.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_COUNTERFAMILY_SEARCH_REQUIRED",
+  "source_t573_adversarial_holdout_cleared": true,
+  "source_t573_selected_next_packet": "t574_domain_native_sheaf_transport_source_law_route_adjudication_gate",
+  "source_t573_verdict": "domain_native_sheaf_transport_adversarial_blind_holdout_survives_review_only",
+  "taf11_update": "TAF11 remains the top active lane. T574 keeps the semantic-generator route open, blocks promotion, and turns the next burden toward hostile counterfamily search.",
+  "taf4_update": "TAF4 remains blocked. Route adjudication is not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T574 is internal TAF11 route adjudication, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_route_kept_open_counterfamily_required_review_only"
+}

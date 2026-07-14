@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Source-law route adjudication for the TAF11 generator",
+        "title": "Hostile counterfamily search for the TAF11 generator",
         "why": (
-            "T573's adversarial blind-family holdout survived, but source-law "
-            "status is still blocked until the route is adjudicated without promotion."
+            "T574 kept the route open but blocked promotion until hostile "
+            "counterfamily search tries to break the generator."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T573: a finite semantic generator is not "
+            "Still blocked after T574: route adjudication is not "
             "continuum descent or Lorentzian target import."
         ),
     },
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T573 preserved the T541 wait state: internal TAF11 generator "
-            "hygiene is not a domain-native cross-domain packet."
+            "T574 preserved the T541 wait state: internal TAF11 route "
+            "adjudication is not a domain-native cross-domain packet."
         ),
     },
 }

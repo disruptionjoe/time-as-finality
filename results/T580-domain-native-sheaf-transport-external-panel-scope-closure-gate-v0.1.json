@@ -1,0 +1,167 @@
+{
+  "artifact": "T580-domain-native-sheaf-transport-external-panel-scope-closure-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "External-panel scope axes evaluated: internal_route_scope, external_absorber_scope, empirical_detector_scope, continuum_taf4_scope, cross_domain_taf8_scope, future_reopen_scope."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Current external panel is closed for limited review."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Further absorber panels need a new packet or evidence source, not unattended churn."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source law, claim, canon, public posture, TAF4, TAF8, S1, publication, and cross-repo movement remain blocked."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T580 is a review-scope closure gate; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "current_external_panel_closed": true,
+  "gate_decisions": [
+    {
+      "gate_id": "t579_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T579 supplies scope-closure authority."
+    },
+    {
+      "gate_id": "review_scope_axes_declared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "All six review-scope axes are declared and covered for limited review."
+    },
+    {
+      "gate_id": "no_immediate_panel_expansion",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No immediate panel expansion is selected without new evidence."
+    },
+    {
+      "gate_id": "scope_closure_not_promotion",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Scope closure is separated from source-law promotion."
+    },
+    {
+      "gate_id": "closeout_router_selected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Review-package closeout router is selected as the next burden."
+    },
+    {
+      "gate_id": "protected_movements_blocked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Protected claim, canon, public, publication, TAF4, TAF8, S1, and cross-repo movements are blocked."
+    }
+  ],
+  "immediate_expansion_required": false,
+  "not_claimed": "T580 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, create detector evidence, or move cross-repo truth. It closes the current external-panel scope only for review-package discipline.",
+  "package_status": "PACKAGE_PARKED_AS_LIMITED_REVIEW_TARGET",
+  "recommended_next": "Run t581_domain_native_sheaf_transport_review_package_closeout_router. The next packet should route the limited TAF11 package into closeout discipline: preserve it as review material, name the reopen conditions, and prevent promotion by momentum.",
+  "scope_axes": [
+    {
+      "axis_id": "internal_route_scope",
+      "covered_for_review": true,
+      "reason": "T559-T578 already supplied minimality, absorber separation, predictive, hostile, blind, and limitation pressure before T579.",
+      "requires_immediate_expansion": false,
+      "source": "T559-T578 internal panel plus T579 authority",
+      "stronger_reading_blocked": "source-law status"
+    },
+    {
+      "axis_id": "external_absorber_scope",
+      "covered_for_review": true,
+      "reason": "T579 applied four out-of-panel absorber families and every one absorbed stronger readings while leaving limited review value.",
+      "requires_immediate_expansion": false,
+      "source": "stochastic_thermodynamic_maintenance_absorber, detector_metrology_calibration_absorber, causal_set_measure_law_absorber, quantum_access_structure_monogamy_absorber",
+      "stronger_reading_blocked": "source-law and downstream overread"
+    },
+    {
+      "axis_id": "empirical_detector_scope",
+      "covered_for_review": true,
+      "reason": "Detector data remain gated on real manifests; more abstract detector probing would only repeat the same no-data boundary.",
+      "requires_immediate_expansion": false,
+      "source": "detector metrology and provenance probe",
+      "stronger_reading_blocked": "empirical detector evidence"
+    },
+    {
+      "axis_id": "continuum_taf4_scope",
+      "covered_for_review": true,
+      "reason": "The measure-law probe blocks continuum overread; a true TAF4 move requires a separate finality-native continuum packet.",
+      "requires_immediate_expansion": false,
+      "source": "causal-set measure-law probe",
+      "stronger_reading_blocked": "TAF4 continuum bridge or S1 movement"
+    },
+    {
+      "axis_id": "cross_domain_taf8_scope",
+      "covered_for_review": true,
+      "reason": "Access-structure pressure is absorber context only; a TAF8 move requires a domain-native cross-domain packet.",
+      "requires_immediate_expansion": false,
+      "source": "quantum access-structure monogamy probe",
+      "stronger_reading_blocked": "TAF8 theorem or shadow protection"
+    },
+    {
+      "axis_id": "future_reopen_scope",
+      "covered_for_review": true,
+      "reason": "Unattended Progress should not keep inventing panels without a new packet, empirical manifest, continuum bridge, or cross-domain claim to test.",
+      "requires_immediate_expansion": false,
+      "source": "new evidence only",
+      "stronger_reading_blocked": "unbounded absorber-panel churn"
+    }
+  ],
+  "scope_decisions": [
+    {
+      "decision_id": "close_current_external_panel_scope",
+      "next_packet": "none",
+      "outcome": "SELECTED_SCOPE_CLOSURE",
+      "reason": "The current panel is closed for limited review-package use.",
+      "selected": true
+    },
+    {
+      "decision_id": "expand_absorber_panel_now",
+      "next_packet": "none",
+      "outcome": "BLOCKED_AS_CHURN_WITHOUT_NEW_PACKET",
+      "reason": "More panels would be speculative churn without a new packet or evidence source.",
+      "selected": false
+    },
+    {
+      "decision_id": "promote_taf11_source_law",
+      "next_packet": "none",
+      "outcome": "BLOCKED_SCOPE_CLOSURE_IS_NOT_PROMOTION",
+      "reason": "Closing review scope does not convert the package into source-law status.",
+      "selected": false
+    },
+    {
+      "decision_id": "route_to_review_package_closeout",
+      "next_packet": "t581_domain_native_sheaf_transport_review_package_closeout_router",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The package needs closeout discipline and explicit reopen conditions.",
+      "selected": true
+    },
+    {
+      "decision_id": "move_taf4_taf8_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "TAF4, TAF8, S1, claim, canon, public-posture, publication, and cross-repo movements stay outside this gate.",
+      "selected": false
+    }
+  ],
+  "scope_reading": "T580 closes the current external panel only for the review-package question. The T559-T579 route has faced internal route pressure, hostile search, blind-family pressure, and four out-of-panel absorber families. More panels would be useful only if a new domain-native packet, empirical manifest, continuum bridge, or cross-domain shadow-protection packet appears.",
+  "scope_status": "EXTERNAL_PANEL_SCOPE_CLOSED_FOR_LIMITED_REVIEW",
+  "selected_next_packet": "t581_domain_native_sheaf_transport_review_package_closeout_router",
+  "source_law_earned": false,
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_SCOPE_CLOSURE_IS_NOT_PROMOTION",
+  "source_t579_selected_next_packet": "t580_domain_native_sheaf_transport_external_panel_scope_closure_gate",
+  "source_t579_verdict": "domain_native_sheaf_transport_out_of_panel_probe_survives_limited_review_only",
+  "taf11_update": "TAF11 remains open as a limited review target only. The current external panel is closed enough for no stronger unattended reading.",
+  "taf4_update": "TAF4 remains blocked. T580 treats continuum, causal-set, and measure-law questions as a separate future packet, not as an implicit consequence of the TAF11 package.",
+  "taf8_update": "TAF8 remains waiting. Access-structure pressure is absorber context, not a domain-native cross-domain shadow-protection theorem.",
+  "verdict": "domain_native_sheaf_transport_external_panel_scope_closed_review_only"
+}

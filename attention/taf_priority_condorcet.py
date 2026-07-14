@@ -21,11 +21,11 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "External-panel scope closure for the TAF11 package",
+        "title": "TAF11 review-package closeout router",
         "why": (
-            "T579 applied out-of-panel absorber pressure and kept the package "
-            "limited to review material; the next burden closes or expands "
-            "that panel."
+            "T580 closed the current external panel for limited review; the "
+            "next burden preserves the package, names reopen conditions, and "
+            "blocks promotion by momentum."
         ),
     },
     "TAF12": {

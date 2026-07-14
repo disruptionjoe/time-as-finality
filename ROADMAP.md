@@ -1,5 +1,30 @@
 ﻿# Roadmap
 
+## 2026-07-14 T580 Domain-Native Sheaf Transport External-Panel Scope Closure Gate
+
+T580 executes the external-panel scope-closure burden selected by T579. It
+decides whether the current external panel should close for limited review use
+or expand before any stronger reading of the TAF11 package.
+
+The gate names six scope axes:
+
+- internal T559-T578 route pressure plus T579 authority;
+- T579's out-of-panel absorber panel;
+- empirical detector manifest and provenance boundary;
+- TAF4 continuum / causal-set measure-law boundary;
+- TAF8 cross-domain shadow-protection boundary;
+- future reopen boundary.
+
+The current external panel closes for limited review-package discipline.
+Immediate absorber-panel expansion is blocked as churn unless a new
+domain-native packet, empirical manifest, continuum bridge, or cross-domain
+packet appears. Scope closure is not source-law promotion.
+
+T580 names the next executable TAF11 burden:
+`t581_domain_native_sheaf_transport_review_package_closeout_router`. That
+packet should preserve the limited review package, name reopen conditions, and
+prevent promotion by momentum.
+
 ## 2026-07-14 T579 Domain-Native Sheaf Transport Out-Of-Panel Absorber Probe Gate
 
 T579 executes the out-of-panel absorber probe selected by T578. It tests the

@@ -12,12 +12,13 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T579 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T580 on
 2026-07-14:
 
-1. TAF11 - External-panel scope closure for the TAF11 package.
-   Why: T579 applied out-of-panel absorber pressure and kept the package
-   limited to review material; the next burden closes or expands that panel.
+1. TAF11 - TAF11 review-package closeout router.
+   Why: T580 closed the current external panel for limited review; the next
+   burden preserves the package, names reopen conditions, and blocks promotion
+   by momentum.
 2. TAF8 - Cross-domain shadow-protection theorem target.
    Why: T579 preserved the T541 wait state; absorber pressure is not a
    domain-native cross-domain packet.

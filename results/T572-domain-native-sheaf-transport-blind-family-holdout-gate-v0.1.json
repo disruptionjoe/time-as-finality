@@ -1,0 +1,664 @@
+{
+  "admitted_probe_ids": [
+    "settlement_attestation_blind_survivor"
+  ],
+  "artifact": "T572-domain-native-sheaf-transport-blind-family-holdout-gate-v0.1",
+  "blind_family_holdout_cleared": true,
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Blind-family holdout admits: settlement_attestation_blind_survivor."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Blind-family holdout rejects: blind_family_calibration_replay_falsifier, blind_family_target_import_falsifier, blind_family_optional_payload_falsifier, blind_family_missing_transport_square_falsifier, blind_family_foreign_truth_falsifier."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law status remains blocked by adversarial holdout pressure."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Blind-family success strengthens route evidence without promoting it."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T572 records a review-only blind-family holdout and selects adversarial holdout pressure; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "closure_checks": [
+    {
+      "check_id": "t571_authority",
+      "evidence": [
+        "T571 cleared multi-family falsifier rotation.",
+        "T571 selected blind-family holdout."
+      ],
+      "passed": true,
+      "residual_risk": "T571 is review authority, not source-law status.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "blind_family_predeclared_and_withheld",
+      "evidence": [
+        "settlement_attestation_blind_family",
+        "The settlement-attestation family is named before evaluation and withheld from the T570/T571 admitted-family panel."
+      ],
+      "passed": true,
+      "residual_risk": "One blind family is still finite synthetic evidence.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "blind_survivor_admitted",
+      "evidence": [
+        "settlement_attestation_blind_survivor"
+      ],
+      "passed": true,
+      "residual_risk": "The survivor is not a public source law.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "blind_falsifiers_rejected",
+      "evidence": [
+        "blind_family_calibration_replay_falsifier",
+        "blind_family_target_import_falsifier",
+        "blind_family_optional_payload_falsifier",
+        "blind_family_missing_transport_square_falsifier",
+        "blind_family_foreign_truth_falsifier"
+      ],
+      "passed": true,
+      "residual_risk": "More adversarial holdouts may still break the generator.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "expectations_matched",
+      "evidence": [
+        "settlement_attestation_blind_survivor",
+        "blind_family_calibration_replay_falsifier",
+        "blind_family_target_import_falsifier",
+        "blind_family_optional_payload_falsifier",
+        "blind_family_missing_transport_square_falsifier",
+        "blind_family_foreign_truth_falsifier"
+      ],
+      "passed": true,
+      "residual_risk": "Expectation matching is finite and synthetic.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "no_replay_import_or_foreign_truth",
+      "evidence": [
+        "settlement_attestation_blind_survivor"
+      ],
+      "passed": true,
+      "residual_risk": "The admitted survivor still needs adversarial holdout pressure.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "governance_boundaries_preserved",
+      "evidence": [
+        "No claim-ledger movement.",
+        "No Canon Index movement.",
+        "No public-posture, TAF4, TAF8, S1, external, or cross-repo movement."
+      ],
+      "passed": true,
+      "residual_risk": "None inside this packet; the next packet remains review-only.",
+      "status": "PASS"
+    }
+  ],
+  "evaluations": [
+    {
+      "expectation_matched": true,
+      "expected_admissible": true,
+      "failed_checks": [],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": true,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_was_withheld",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "no_family_replay",
+        "target_blind_language",
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay",
+        "native_payload_forced",
+        "noncommuting_transport_square",
+        "independent_family_vocabulary"
+      ],
+      "probe_id": "settlement_attestation_blind_survivor",
+      "reason": "Blind-family probe satisfies every frozen generator screen.",
+      "status": "ADMITTED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "family_was_withheld",
+        "no_family_replay",
+        "independent_family_vocabulary"
+      ],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": false,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "target_blind_language",
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay",
+        "native_payload_forced",
+        "noncommuting_transport_square"
+      ],
+      "probe_id": "blind_family_calibration_replay_falsifier",
+      "reason": "Rejected by: family_was_withheld, no_family_replay, independent_family_vocabulary",
+      "status": "REJECTED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "target_blind_language"
+      ],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": false,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_was_withheld",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "no_family_replay",
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay",
+        "native_payload_forced",
+        "noncommuting_transport_square",
+        "independent_family_vocabulary"
+      ],
+      "probe_id": "blind_family_target_import_falsifier",
+      "reason": "Rejected by: target_blind_language",
+      "status": "REJECTED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "semantic_requirements_complete",
+        "native_payload_forced"
+      ],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": false,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_was_withheld",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "no_family_replay",
+        "target_blind_language",
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay",
+        "noncommuting_transport_square",
+        "independent_family_vocabulary"
+      ],
+      "probe_id": "blind_family_optional_payload_falsifier",
+      "reason": "Rejected by: semantic_requirements_complete, native_payload_forced",
+      "status": "REJECTED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "semantic_requirements_complete",
+        "noncommuting_transport_square"
+      ],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": false,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_was_withheld",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "no_family_replay",
+        "target_blind_language",
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay",
+        "native_payload_forced",
+        "independent_family_vocabulary"
+      ],
+      "probe_id": "blind_family_missing_transport_square_falsifier",
+      "reason": "Rejected by: semantic_requirements_complete, noncommuting_transport_square",
+      "status": "REJECTED"
+    },
+    {
+      "expectation_matched": true,
+      "expected_admissible": false,
+      "failed_checks": [
+        "no_cross_repo_truth_import",
+        "no_observerse_replay",
+        "no_aprd_replay"
+      ],
+      "family_id": "settlement_attestation_blind_family",
+      "holdout_admissible": false,
+      "passed_checks": [
+        "predeclared_before_evaluation",
+        "family_was_withheld",
+        "family_not_in_t570_t571_panel",
+        "source_roles_complete",
+        "absorber_boundaries_complete",
+        "semantic_requirements_complete",
+        "no_family_replay",
+        "target_blind_language",
+        "native_payload_forced",
+        "noncommuting_transport_square",
+        "independent_family_vocabulary"
+      ],
+      "probe_id": "blind_family_foreign_truth_falsifier",
+      "reason": "Rejected by: no_cross_repo_truth_import, no_observerse_replay, no_aprd_replay",
+      "status": "REJECTED"
+    }
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t571_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T571 supplies blind-family holdout authority."
+    },
+    {
+      "gate_id": "blind_family_predeclared_and_withheld",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The blind family was predeclared and absent from T570/T571 panels."
+    },
+    {
+      "gate_id": "expected_holdout_pattern",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The survivor admits and all holdout falsifiers reject as expected."
+    },
+    {
+      "gate_id": "no_replay_import_or_foreign_truth",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The admitted survivor uses no family replay, target import, or foreign truth."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law promotion is rejected."
+    },
+    {
+      "gate_id": "adversarial_holdout_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Adversarial blind-family holdout is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No governance boundary was crossed."
+    }
+  ],
+  "holdout_contract": {
+    "absorber_boundaries": [
+      "ordinary_sheaf_gluing_completion",
+      "resource_transport_monotone_absorber",
+      "consensus_state_machine_absorber",
+      "record_provenance_completion_absorber"
+    ],
+    "blind_family_id": "settlement_attestation_blind_family",
+    "blind_predeclaration": "The settlement-attestation family is named before evaluation and withheld from the T570/T571 admitted-family panel.",
+    "contract_id": "blind_family_holdout_v1",
+    "forbidden_shortcuts": [
+      "target_labels",
+      "cross_repo_truth",
+      "observerse_replay",
+      "aprd_replay",
+      "direct_taf4_movement",
+      "taf8_execution",
+      "s1_movement",
+      "source_law_overread",
+      "claim_ledger_movement",
+      "canon_index_movement",
+      "public_posture_movement",
+      "external_publication",
+      "family_replay",
+      "cross_repo_truth_import"
+    ],
+    "rationale": "A blind family is the next honest pressure after multi-family rotation because it tests prediction under frozen roles rather than retuning to known family names.",
+    "semantic_requirements": [
+      "nontrivial_obstruction_witness",
+      "noncommuting_transport_square",
+      "native_payload_forced",
+      "target_blind_language"
+    ],
+    "source_roles": [
+      "finite_event_covers",
+      "local_finality_sections",
+      "restriction_morphisms",
+      "settlement_obstruction_witnesses",
+      "transport_consistency_squares",
+      "allowed_refinement_steps"
+    ],
+    "source_t571_admitted_family_ids": [
+      "calibration_chain_role_recoding_family",
+      "archive_manifest_handoff_role_recoding_family"
+    ],
+    "source_t571_contract_id": "multi_family_falsifier_rotation_v1",
+    "source_t571_selected_next_packet": "t572_domain_native_sheaf_transport_blind_family_holdout_gate",
+    "source_t571_verdict": "domain_native_sheaf_transport_multi_family_falsifier_rotation_survives_review_only"
+  },
+  "holdout_status": "BLIND_FAMILY_HOLDOUT_SURVIVES",
+  "not_claimed": "T572 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It tests one predeclared blind family as review-only pressure on the T570/T571 semantic generator.",
+  "probes": [
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": false,
+      "cross_repo_truth_import": false,
+      "expected_admissible": true,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [],
+      "independent_family_vocabulary": true,
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "observerse_replay": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "settlement_attestation_blind_survivor",
+      "probe_kind": "blind_family_survivor",
+      "rationale": "Settlement attestations use issue, co-signature, scope, dispute, handoff, and audit-amendment vocabulary rather than the T570 family names, while preserving the frozen source roles.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [],
+      "withheld_family": true
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": false,
+      "cross_repo_truth_import": false,
+      "expected_admissible": false,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [
+        "calibration_chain_role_recoding_family",
+        "calibration_chain_rotated_survivor"
+      ],
+      "independent_family_vocabulary": false,
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "observerse_replay": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "blind_family_calibration_replay_falsifier",
+      "probe_kind": "blind_family_falsifier",
+      "rationale": "Rejects a so-called blind packet that reuses a T570 family.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [],
+      "withheld_family": false
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": false,
+      "cross_repo_truth_import": false,
+      "expected_admissible": false,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [],
+      "independent_family_vocabulary": true,
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "observerse_replay": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "blind_family_target_import_falsifier",
+      "probe_kind": "blind_family_falsifier",
+      "rationale": "Rejects a blind family that imports target spacetime language.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [
+        "lorentzian_interval_target",
+        "causal_set_link_target"
+      ],
+      "withheld_family": true
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": false,
+      "cross_repo_truth_import": false,
+      "expected_admissible": false,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [],
+      "independent_family_vocabulary": true,
+      "native_payload_forced": false,
+      "noncommuting_transport_square": true,
+      "observerse_replay": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "blind_family_optional_payload_falsifier",
+      "probe_kind": "blind_family_falsifier",
+      "rationale": "Rejects a blind family when the payload is optional.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [],
+      "withheld_family": true
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": false,
+      "cross_repo_truth_import": false,
+      "expected_admissible": false,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [],
+      "independent_family_vocabulary": true,
+      "native_payload_forced": true,
+      "noncommuting_transport_square": false,
+      "observerse_replay": false,
+      "predeclared_before_evaluation": true,
+      "probe_id": "blind_family_missing_transport_square_falsifier",
+      "probe_kind": "blind_family_falsifier",
+      "rationale": "Rejects a blind family with no noncommuting square.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [],
+      "withheld_family": true
+    },
+    {
+      "absorber_boundary_coverage": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "aprd_replay": true,
+      "cross_repo_truth_import": true,
+      "expected_admissible": false,
+      "family_id": "settlement_attestation_blind_family",
+      "family_replay_terms": [],
+      "independent_family_vocabulary": true,
+      "native_payload_forced": true,
+      "noncommuting_transport_square": true,
+      "observerse_replay": true,
+      "predeclared_before_evaluation": true,
+      "probe_id": "blind_family_foreign_truth_falsifier",
+      "probe_kind": "blind_family_falsifier",
+      "rationale": "Rejects foreign-truth, Observerse, and APRD replay routes.",
+      "semantic_requirements_met": [
+        "nontrivial_obstruction_witness",
+        "noncommuting_transport_square",
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "source_role_coverage": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ],
+      "target_import_terms": [],
+      "withheld_family": true
+    }
+  ],
+  "recommended_next": "Run t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate. The next packet should turn the blind-family success into adversarial holdout pressure by changing the blind family's surface genre again while preserving the frozen source roles, absorber boundaries, and semantic requirements.",
+  "rejected_probe_ids": [
+    "blind_family_calibration_replay_falsifier",
+    "blind_family_target_import_falsifier",
+    "blind_family_optional_payload_falsifier",
+    "blind_family_missing_transport_square_falsifier",
+    "blind_family_foreign_truth_falsifier"
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_REVIEW_ONLY_ADVERSARIAL_HOLDOUT_REQUIRED",
+      "reason": "One blind-family survivor is not enough for public source-law status.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_adversarial_blind_family_holdout_gate",
+      "next_packet": "t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The next honest review step is adversarial blind-family holdout pressure.",
+      "selected": true
+    },
+    {
+      "decision_id": "abandon_semantic_generator_route",
+      "next_packet": "none",
+      "outcome": "PAUSED_BLIND_FAMILY_HOLDOUT_CLEARED",
+      "reason": "Route reset is premature because blind-family holdout cleared.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_taf4_from_t572",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "A blind family in a finite generator is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t572",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 generator stress is not cross-domain shadow protection.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_status": "blind_family_holdout_clears_adversarial_holdout_required",
+  "selected_next_packet": "t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate",
+  "source_law_earned": false,
+  "source_law_reading": "T572 freezes the T570/T571 role-level semantic generator before evaluation and admits one withheld settlement-attestation blind family while rejecting family replay, target import, optional payload, missing transport-square, and foreign-truth controls. This is still review-only: a single blind family does not earn a public source law.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_ADVERSARIAL_HOLDOUT_REQUIRED",
+  "source_t571_multi_family_rotation_cleared": true,
+  "source_t571_selected_next_packet": "t572_domain_native_sheaf_transport_blind_family_holdout_gate",
+  "source_t571_verdict": "domain_native_sheaf_transport_multi_family_falsifier_rotation_survives_review_only",
+  "taf11_update": "TAF11 remains the top active lane. The predeclared blind-family holdout survived, but source-law status still waits for adversarial holdout pressure beyond one synthetic family.",
+  "taf4_update": "TAF4 remains blocked. A blind-family generator holdout is not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T572 is internal TAF11 generator stress, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_blind_family_holdout_survives_review_only"
+}

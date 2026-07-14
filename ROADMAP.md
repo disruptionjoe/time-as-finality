@@ -1,5 +1,37 @@
 ﻿# Roadmap
 
+## 2026-07-14 T572 Domain-Native Sheaf Transport Blind-Family Holdout Gate
+
+T572 executes the blind-family holdout burden selected by T571. It freezes the
+T570/T571 role-level semantic generator before evaluation and predeclares a
+withheld `settlement_attestation_blind_family`.
+
+The holdout admits one blind-family survivor:
+
+- `settlement_attestation_blind_survivor`.
+
+It rejects five controls:
+
+- `blind_family_calibration_replay_falsifier`;
+- `blind_family_target_import_falsifier`;
+- `blind_family_optional_payload_falsifier`;
+- `blind_family_missing_transport_square_falsifier`;
+- `blind_family_foreign_truth_falsifier`.
+
+The result strengthens the TAF11 route by showing that the frozen generator
+predicts one withheld family without known-family replay, target import,
+optional payload, missing transport square, Observerse/APRD replay, or
+cross-repo truth import. It remains review-only. Source-law status is not
+earned, and claim-ledger movement, Canon Index movement, canon-verdict movement,
+public-posture movement, TAF4 movement, TAF8 execution, S1 movement, external
+publication, and cross-repo movement remain blocked.
+
+T572 names the next executable TAF11 burden:
+`t573_domain_native_sheaf_transport_adversarial_blind_family_holdout_gate`. That
+packet should turn the blind-family success into adversarial holdout pressure by
+changing the blind family's surface genre again while preserving the frozen
+source roles, absorber boundaries, and semantic requirements.
+
 ## 2026-07-14 T571 Domain-Native Sheaf Transport Multi-Family Falsifier Rotation Gate
 
 T571 executes the multi-family falsifier-rotation burden selected by T570. It

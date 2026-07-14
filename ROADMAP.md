@@ -1,5 +1,31 @@
 ﻿# Roadmap
 
+## 2026-07-14 T576 Domain-Native Sheaf Transport Hostile Search Scope Closure Gate
+
+T576 executes the hostile-search scope-closure burden selected by T575. It
+checks whether the T575 hostile panel was broad enough across the declared
+finite review scope before any source-law, claim, canon, public-posture, TAF4,
+TAF8, S1, publication, or cross-repo movement.
+
+The scope-closure gate passes six axes:
+
+- frozen source-role coverage;
+- absorber-boundary coverage;
+- semantic-requirement coverage;
+- rejected shortcut classes;
+- independent survivor families;
+- T574/T575 route-history pressure.
+
+This closes the declared finite hostile-search scope as review-only. It does
+not establish source-law status, move any claim ledger or Canon Index tier,
+change canon verdict or public posture, move TAF4 or TAF8, move S1, authorize
+publication, or move cross-repo truth.
+
+T576 names the next executable TAF11 burden:
+`t577_domain_native_sheaf_transport_source_law_firebreak_gate`. That packet
+should decide whether the T559-T576 review-only route deserves any source-law
+candidate packaging while blocking promotion by inertia.
+
 ## 2026-07-14 T575 Domain-Native Sheaf Transport Hostile Counterfamily Search Gate
 
 T575 executes the hostile-counterfamily burden selected by T574. It searches

@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Hostile-search scope closure for the TAF11 generator",
+        "title": "Source-law firebreak for the TAF11 generator",
         "why": (
-            "T575 found no true hostile counterfamily, but the finite search "
-            "scope must close before promotion."
+            "T576 closed the finite hostile-search scope as review-only, so "
+            "the next burden is preventing promotion by inertia."
         ),
     },
     "TAF12": {
@@ -44,7 +44,7 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T575: hostile counterfamily search is not "
+            "Still blocked after T576: hostile scope closure is not "
             "continuum descent or Lorentzian target import."
         ),
     },
@@ -72,7 +72,7 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T575 preserved the T541 wait state: internal TAF11 hostile search "
+            "T576 preserved the T541 wait state: internal TAF11 scope closure "
             "is not a domain-native cross-domain packet."
         ),
     },

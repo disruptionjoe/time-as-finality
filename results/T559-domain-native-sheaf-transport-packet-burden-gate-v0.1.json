@@ -1,0 +1,270 @@
+{
+  "absorbed_cases": [
+    "ordinary_gluing_domain_payload_control",
+    "resource_budget_transport_control",
+    "consensus_state_machine_payload_control",
+    "record_provenance_completion_payload_control"
+  ],
+  "admitted_domain_native_packets": [
+    "record_finality_transport_square_payload"
+  ],
+  "artifact": "T559-domain-native-sheaf-transport-packet-burden-gate-v0.1",
+  "case_decisions": [
+    {
+      "absorber": "ordinary_sheaf_gluing_completion",
+      "admitted": false,
+      "case_id": "ordinary_gluing_domain_payload_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_ORDINARY_SHEAF_GLUE",
+      "reason": "Ordinary sheaf gluing receives normal state and comparison rights.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "all_obstructions_glue_under_declared_restrictions",
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "resource_transport_monotone_absorber",
+      "admitted": false,
+      "case_id": "resource_budget_transport_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_RESOURCE_TRANSPORT_MONOTONE",
+      "reason": "The apparent obstruction factors through a native resource transport monotone.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "consensus_state_machine_absorber",
+      "admitted": false,
+      "case_id": "consensus_state_machine_payload_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_CONSENSUS_STATE_MACHINE",
+      "reason": "Ordinary consensus or state-machine completion absorbs the split.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "record_provenance_completion_absorber",
+      "admitted": false,
+      "case_id": "record_provenance_completion_payload_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_RECORD_PROVENANCE_COMPLETION",
+      "reason": "Completing normal provenance fields absorbs the missing-witness pressure.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "same_variables_relabel_target_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_RELABELING_FALSIFIER",
+      "reason": "The same source variables realize the target by relabeling only.",
+      "role": "falsifier",
+      "triggered_falsifiers": [
+        "same_source_variables_realize_target_by_relabeling"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "hidden_target_import_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_HIDDEN_TARGET_OR_CROSS_REPO_IMPORT",
+      "reason": "The payload depends on target labels or cross-repo truth.",
+      "role": "falsifier",
+      "triggered_falsifiers": [
+        "hidden_target_label_or_cross_repo_rule_required"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "observerse_replay_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_OBSERVERSE_REPLAY",
+      "reason": "T556 parked the Observerse route as audit residue only.",
+      "role": "spent_route",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "aprd_replay_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_APRD_REPLAY",
+      "reason": "APRD remains family-local feeder evidence, not this fresh burden.",
+      "role": "narrowed_route",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "formal_residue_without_payload_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_NO_DOMAIN_NATIVE_PAYLOAD",
+      "reason": "The packet has a formal transport shape but no finality-native payload.",
+      "role": "formal_only",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": true,
+      "case_id": "record_finality_transport_square_payload",
+      "missing_source_variables": [],
+      "outcome": "ADMITTED_DOMAIN_NATIVE_BURDEN_PACKET_REVIEW_ONLY",
+      "reason": "The payload carries the frozen variables, remains noncommuting, and survives the four mature absorbers.",
+      "role": "domain_native_review_payload",
+      "triggered_falsifiers": []
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T558 is consumed as burden authority: sheaf_obstruction_transport_packet_formal_residue_no_source_law."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "1 domain-native payload is admitted as review material."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "4 mature absorber controls and 5 shortcut controls keep the T559 admission narrow."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The admitted payload is finality-native because its operation menu is built from local finality sections, restriction morphisms, settlement obstruction witnesses, and allowed refinements, but one packet is not a source law."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T559 admits review material and a next burden only; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "frozen_falsifiers": [
+    "all_obstructions_glue_under_declared_restrictions",
+    "transport_square_commutes_after_mature_absorbers",
+    "same_source_variables_realize_target_by_relabeling",
+    "hidden_target_label_or_cross_repo_rule_required"
+  ],
+  "frozen_mature_absorbers": [
+    "ordinary_sheaf_gluing_completion",
+    "resource_transport_monotone_absorber",
+    "consensus_state_machine_absorber",
+    "record_provenance_completion_absorber"
+  ],
+  "frozen_source_variables": [
+    "finite_event_cover",
+    "local_finality_sections",
+    "restriction_morphisms",
+    "settlement_obstruction_witness",
+    "transport_consistency_square",
+    "allowed_refinement_steps"
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t558_domain_native_burden_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T558 selected T559 as the domain-native packet burden."
+    },
+    {
+      "gate_id": "family_contract_frozen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T557/T558 variables, absorbers, and falsifiers are unchanged."
+    },
+    {
+      "gate_id": "domain_native_payload_present",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Exactly one domain-native payload is admitted as review material."
+    },
+    {
+      "gate_id": "all_mature_absorbers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every mature absorber receives a control case."
+    },
+    {
+      "gate_id": "all_declared_falsifiers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every declared falsifier is triggered by at least one control case."
+    },
+    {
+      "gate_id": "spent_routes_and_imports_rejected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Observerse replay, APRD replay, and hidden target import are rejected."
+    },
+    {
+      "gate_id": "admitted_payload_survives_absorber_screen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The admitted payload survives all mature absorbers and no falsifier fires."
+    },
+    {
+      "gate_id": "no_source_law_or_governance_movement",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No source law, TAF4, TAF8, claim, canon, public-posture, external, or cross-repo movement is attempted."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "blocks": "Treating formal noncommutation as enough.",
+      "control_id": "domain_native_payload_control",
+      "reason": "T559 admits only a payload whose operations are native to record finality and allowed refinements."
+    },
+    {
+      "blocks": "Promoting compatible local sections as source-law residue.",
+      "control_id": "ordinary_sheaf_gluing_control",
+      "reason": "If all obstructions glue under declared restrictions, ordinary sheaf completion absorbs the case."
+    },
+    {
+      "blocks": "Reading budget or monotone drawdown as sheaf obstruction law.",
+      "control_id": "resource_transport_control",
+      "reason": "Resource transport receives normal state and comparison rights."
+    },
+    {
+      "blocks": "Reading state-machine divergence or missing provenance as finality-native obstruction.",
+      "control_id": "consensus_and_provenance_control",
+      "reason": "Consensus/state-machine and provenance completion absorbers are tested before admission."
+    },
+    {
+      "blocks": "Using target labels, cross-repo truth, Observerse replay, or APRD replay.",
+      "control_id": "target_import_and_replay_control",
+      "reason": "T559 inherits the T557/T558 falsifier screen."
+    },
+    {
+      "blocks": "Moving TAF4, executing TAF8, or changing claim/canon/public posture.",
+      "control_id": "taf4_taf8_public_posture_control",
+      "reason": "A single domain-native TAF11 payload is review material only."
+    }
+  ],
+  "not_claimed": "T559 does not establish a source law, validate sheaf obstruction transport as a source family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It only admits one domain-native TAF11 payload as review material and names the next independent-transfer burden.",
+  "packet_status": "TAF11_DOMAIN_NATIVE_PAYLOAD_ADMITTED_NO_SOURCE_LAW",
+  "recommended_next": "Run t560_domain_native_sheaf_transport_independent_transfer_gate before any source-law reading. Keep the T559 payload frozen and test an independently shaped domain-native finality fixture against the same absorber and falsifier screen.",
+  "rejected_cases": [
+    "same_variables_relabel_target_control",
+    "hidden_target_import_control",
+    "observerse_replay_control",
+    "aprd_replay_control",
+    "formal_residue_without_payload_control"
+  ],
+  "selected_next_packet": "t560_domain_native_sheaf_transport_independent_transfer_gate",
+  "source_t558_packet_status": "TAF11_FORMAL_RESIDUE_ONLY_DOMAIN_NATIVE_PACKET_REQUIRED",
+  "source_t558_selected_next_packet": "t559_domain_native_sheaf_transport_packet_burden_gate",
+  "source_t558_verdict": "sheaf_obstruction_transport_packet_formal_residue_no_source_law",
+  "taf11_update": "TAF11 remains active and narrowed. T559 supplies one domain-native sheaf transport payload that survives the declared absorber screen, but a single admitted payload is review material only, not a source law.",
+  "taf4_update": "TAF4 remains blocked. A domain-native finite payload is not a finite-to-continuum bridge, causal-set descent, or Lorentzian target import.",
+  "taf8_update": "TAF8 remains waiting. T559 is internal TAF11 burden clearance, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_payload_admitted_review_only"
+}

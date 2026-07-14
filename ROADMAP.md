@@ -1,5 +1,31 @@
 ﻿# Roadmap
 
+## 2026-07-13 T559 Domain-Native Sheaf Transport Packet Burden Gate
+
+T559 executes the domain-native burden selected by T558. It keeps the frozen
+`sheaf_obstruction_transport_family` contract unchanged: finite event covers,
+local finality sections, restriction morphisms, settlement obstruction
+witnesses, transport consistency squares, allowed refinement steps, the four
+mature absorbers, and the four falsifiers remain the T557/T558 set.
+
+The packet admits exactly one domain-native record-finality transport-square
+payload as review material. That payload carries complete provenance, derives
+its operation menu from local finality sections and allowed refinements, keeps a
+noncommuting transport square, and survives ordinary sheaf gluing, resource
+transport, consensus/state-machine, and record-provenance completion absorbers.
+Ordinary gluing, resource, consensus, provenance, relabel-only, target import,
+Observerse replay, APRD replay, and formal-only controls all reject or absorb.
+
+T559 names the next executable TAF11 burden:
+`t560_domain_native_sheaf_transport_independent_transfer_gate`. That packet
+should freeze the admitted payload shape and test an independently shaped
+domain-native finality fixture against the same absorber and falsifier screen
+before any source-law reading.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T559.
+
 ## 2026-07-13 T558 Sheaf Obstruction Transport Source-Law Packet
 
 T558 executes the first packet selected by T557. It consumes T557 as frozen

@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T558 left only formal sheaf obstruction transport residue and "
-            "named T559 as the domain-native packet burden."
+            "T559 admitted one domain-native sheaf transport payload as "
+            "review material and named T560 as the independent-transfer gate."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T558: formal sheaf obstruction transport "
-            "residue is not a continuum bridge or Lorentzian target import."
+            "Still blocked after T559: a single domain-native finite payload "
+            "is not a continuum bridge or Lorentzian target import."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T558 preserved the T541 wait state: internal TAF11 residue is "
-            "not a domain-native cross-domain packet."
+            "T559 preserved the T541 wait state: internal TAF11 payload "
+            "admission is not a domain-native cross-domain packet."
         ),
     },
 }

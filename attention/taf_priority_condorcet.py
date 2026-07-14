@@ -21,10 +21,10 @@ from statistics import mean
 
 ITEMS = {
     "TAF11": {
-        "title": "Candidate-package limitation for the TAF11 generator",
+        "title": "Out-of-panel absorber probe for the TAF11 package",
         "why": (
-            "T577 allowed only firewalled review packaging, so the next burden "
-            "is testing the package limitations."
+            "T578 kept the candidate package review-only; the next burden is "
+            "testing it against pressure outside the T559-T577 panel."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T577: review-only candidate packaging is not "
-            "continuum descent or Lorentzian target import."
+            "Still blocked after T578: the candidate package has no continuum, "
+            "causal-set, Lorentzian, or manifoldlikeness bridge."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T577 preserved the T541 wait state: internal TAF11 candidate "
-            "packaging is not a domain-native cross-domain packet."
+            "T578 preserved the T541 wait state: an internal limitation gate "
+            "is not a domain-native cross-domain packet."
         ),
     },
 }

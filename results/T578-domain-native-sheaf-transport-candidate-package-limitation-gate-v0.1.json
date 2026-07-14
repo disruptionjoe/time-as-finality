@@ -1,0 +1,229 @@
+{
+  "artifact": "T578-domain-native-sheaf-transport-candidate-package-limitation-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Limitation axes exposed: finite_synthetic_scope, route_internality, absorber_panel_incompleteness, downstream_bridge_absence, label_status_gap."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Package pressures resisted: source_law_promotion_pressure, claim_canon_public_posture_pressure, downstream_lane_pressure, review_package_retention_pressure."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The candidate package remains useful only as review material."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law promotion and downstream movement remain blocked."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T578 records limitations on a review-only candidate package; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "gate_decisions": [
+    {
+      "gate_id": "t577_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T577 supplies candidate-package limitation authority."
+    },
+    {
+      "gate_id": "limitation_axes_exposed",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every declared limitation axis is exposed."
+    },
+    {
+      "gate_id": "package_pressures_resisted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every promotion or downstream pressure is resisted."
+    },
+    {
+      "gate_id": "package_remains_review_only",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The package remains review-only and source-law promotion stays blocked."
+    },
+    {
+      "gate_id": "out_of_panel_absorber_probe_selected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The out-of-panel absorber probe is selected as the next burden."
+    },
+    {
+      "gate_id": "protected_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    }
+  ],
+  "limitation_axes": [
+    {
+      "axis_id": "finite_synthetic_scope",
+      "evidence": [
+        "taf11_source_law_candidate_package_review_only",
+        "T559-T576 internal review route",
+        "evidence_summary_plus_residual_risks"
+      ],
+      "exposed": true,
+      "limits_to": "finite synthetic review package, not a general source law",
+      "next_pressure": "test an out-of-panel absorber or family"
+    },
+    {
+      "axis_id": "route_internality",
+      "evidence": [
+        "bounded class",
+        "same TAF11 sheaf-transport route chain",
+        "candidate package rather than independent theorem"
+      ],
+      "exposed": true,
+      "limits_to": "same-route evidence aggregation",
+      "next_pressure": "seek pressure outside the T559-T577 route chain"
+    },
+    {
+      "axis_id": "absorber_panel_incompleteness",
+      "evidence": [
+        "ordinary sheaf gluing",
+        "resource transport",
+        "consensus/state-machine",
+        "record provenance",
+        "declared hostile panel"
+      ],
+      "exposed": true,
+      "limits_to": "declared absorber and hostile panels only",
+      "next_pressure": "add an out-of-panel absorber or adversarial frame"
+    },
+    {
+      "axis_id": "downstream_bridge_absence",
+      "evidence": [
+        "TAF4 blocked",
+        "TAF8 blocked",
+        "S1 and cross-repo movement blocked"
+      ],
+      "exposed": true,
+      "limits_to": "no downstream bridge or governance movement",
+      "next_pressure": "earn any downstream bridge in a separate packet"
+    },
+    {
+      "axis_id": "label_status_gap",
+      "evidence": [
+        "taf11_source_law_candidate_package_review_only",
+        "SOURCE_LAW_NOT_EARNED_CANDIDATE_PACKAGE_FIREWALLED",
+        "review-only candidate label"
+      ],
+      "exposed": true,
+      "limits_to": "candidate label only, not public status",
+      "next_pressure": "keep the firebreak until a new burden is earned"
+    }
+  ],
+  "limitation_reading": "T578 keeps the T559-T577 candidate package useful only as an internal review object. The package is finite, route-internal, limited to the declared absorber and hostile panels, and lacks a downstream bridge to TAF4, TAF8, S1, claim, canon, public-posture, publication, or cross-repo movement.",
+  "limitation_status": "CANDIDATE_PACKAGE_LIMITED_REVIEW_ONLY",
+  "not_claimed": "T578 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It keeps the T559-T577 candidate package as review-only and requires an out-of-panel absorber probe before any stronger reading.",
+  "package_pressures": [
+    {
+      "evidence": [
+        "finite_synthetic_scope",
+        "route_internality",
+        "absorber_panel_incompleteness",
+        "downstream_bridge_absence",
+        "label_status_gap"
+      ],
+      "outcome": "BLOCKED_BY_LIMITATIONS",
+      "passed": true,
+      "pressure_id": "source_law_promotion_pressure",
+      "reason": "Every limitation axis remains load-bearing."
+    },
+    {
+      "evidence": [
+        "claim ledger unchanged",
+        "canon unchanged",
+        "public posture unchanged"
+      ],
+      "outcome": "BLOCKED_BY_GOVERNANCE_FIREWALL",
+      "passed": true,
+      "pressure_id": "claim_canon_public_posture_pressure",
+      "reason": "The candidate package supplies no governed status movement."
+    },
+    {
+      "evidence": [
+        "TAF4 waiting",
+        "TAF8 waiting",
+        "S1 waiting"
+      ],
+      "outcome": "BLOCKED_BY_NO_BRIDGE",
+      "passed": true,
+      "pressure_id": "downstream_lane_pressure",
+      "reason": "The package does not contain a downstream bridge."
+    },
+    {
+      "evidence": [
+        "taf11_source_law_candidate_package_review_only",
+        "CANDIDATE_PACKAGE_LIMITED_REVIEW_ONLY"
+      ],
+      "outcome": "RETAINED_AS_LIMITED_REVIEW_TARGET",
+      "passed": true,
+      "pressure_id": "review_package_retention_pressure",
+      "reason": "The package remains useful as a bounded review target."
+    }
+  ],
+  "package_remains_review_only": true,
+  "recommended_next": "Run t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate. The next packet should add an out-of-panel absorber or adversarial family and ask whether the package still survives without relying only on the T559-T577 internal panel.",
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_from_package",
+      "next_packet": "none",
+      "outcome": "BLOCKED_LIMITATIONS_LOAD_BEARING",
+      "reason": "The limitation gate finds the review package too limited for source-law status.",
+      "selected": false
+    },
+    {
+      "decision_id": "retain_candidate_package",
+      "next_packet": "none",
+      "outcome": "SELECTED_REVIEW_ONLY_RETENTION",
+      "reason": "The package remains useful as a bounded internal review object.",
+      "selected": true
+    },
+    {
+      "decision_id": "run_out_of_panel_absorber_probe",
+      "next_packet": "t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The next honest pressure is outside the existing absorber and hostile panels.",
+      "selected": true
+    },
+    {
+      "decision_id": "move_taf4_from_t578",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "Limitation exposure is not continuum descent or target-spacetime recovery.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t578",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "The limitation gate is not a cross-domain shadow-protection theorem packet.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "selected_next_packet": "t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate",
+  "source_law_earned": false,
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_LIMITATIONS_LOAD_BEARING",
+  "source_package_label": "taf11_source_law_candidate_package_review_only",
+  "source_t577_selected_next_packet": "t578_domain_native_sheaf_transport_candidate_package_limitation_gate",
+  "source_t577_verdict": "domain_native_sheaf_transport_source_law_firebreak_allows_candidate_package_review_only",
+  "taf11_update": "TAF11 remains the top active lane, but T578 narrows the candidate package to review-only status and selects an out-of-panel absorber probe before any stronger source-law reading.",
+  "taf4_update": "TAF4 remains blocked. T578 exposes that the candidate package has no finite-to-continuum, causal-set, Lorentzian, or manifoldlikeness bridge.",
+  "taf8_update": "TAF8 remains waiting. T578 is an internal TAF11 limitation gate, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_candidate_package_limited_review_only"
+}

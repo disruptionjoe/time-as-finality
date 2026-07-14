@@ -1,5 +1,30 @@
 ﻿# Roadmap
 
+## 2026-07-14 T578 Domain-Native Sheaf Transport Candidate Package Limitation Gate
+
+T578 executes the candidate-package limitation burden selected by T577. It
+stress-tests whether the firewalled T559-T577 review-only package can support
+any stronger reading by itself.
+
+The limitation gate exposes five load-bearing limits:
+
+- finite synthetic scope;
+- route internality;
+- absorber-panel incompleteness;
+- downstream bridge absence;
+- candidate-label versus source-law-status gap.
+
+T578 keeps the package useful only as internal review material. Source-law
+promotion remains blocked, and there is no claim-ledger, Canon Index,
+canon-verdict, public-posture, TAF4, TAF8, S1, publication, or cross-repo
+movement.
+
+T578 names the next executable TAF11 burden:
+`t579_domain_native_sheaf_transport_out_of_panel_absorber_probe_gate`. That
+packet should add an out-of-panel absorber or adversarial family and test
+whether the package survives without relying only on the T559-T577 internal
+panel.
+
 ## 2026-07-14 T577 Domain-Native Sheaf Transport Source-Law Firebreak Gate
 
 T577 executes the source-law firebreak selected by T576. It decides whether

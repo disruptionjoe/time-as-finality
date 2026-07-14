@@ -12,14 +12,14 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T559 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T560 on
 2026-07-13:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T559 admitted one domain-native sheaf transport payload as review
-   material and named T560 as the independent-transfer gate.
+   Why: T560 admitted one independent domain-native sheaf transport transfer as
+   review material and named T561 as the generalization boundary gate.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T559 preserved the T541 wait state; internal TAF11 payload admission is
+   Why: T560 preserved the T541 wait state; internal TAF11 transfer survival is
    not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The C(R) line keeps losing to declared-boundary and completion
@@ -28,8 +28,8 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T559 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T559; a single domain-native finite payload is not a
-   continuum bridge or Lorentzian target import.
+   Why: Still blocked after T560; two bounded finite transfer survivors are not
+   a continuum bridge or Lorentzian target import.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -133,25 +133,25 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, independent-transfer burden selected | Can the admitted domain-native sheaf transport payload transfer to an independently shaped finality fixture? | T559 consumed T558 burden authority, kept the family contract frozen, exercised all four absorbers and falsifiers, rejected formal-only residue, admitted one record-finality transport-square payload as review material, and selected `t560_domain_native_sheaf_transport_independent_transfer_gate`. |
+| TAF11 | open, generalization-boundary burden selected | How far do the two bounded domain-native sheaf transport survivors generalize before absorber or falsifier failure? | T560 consumed T559 transfer authority, rejected T559 replay as self-confirming, kept the family contract frozen, exercised all four absorbers and falsifiers, admitted one independently shaped handoff/rotation/repair transfer as review material, and selected `t561_domain_native_sheaf_transport_generalization_boundary_gate`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T559 supplied only a single review payload. TAF4 movement still waits for a real generalization bridge. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T560 supplied only bounded review transfer. TAF4 movement still waits for a real generalization bridge. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T559 keeps TAF8 waiting because internal TAF11 payload admission is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T560 keeps TAF8 waiting because internal TAF11 transfer survival is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the selected independent-transfer burden:
+When Joe opens the lane, run the selected generalization-boundary burden:
 
-Run `t560_domain_native_sheaf_transport_independent_transfer_gate` before any
-source-law reading. Keep the T559 payload shape frozen and test an independently
-shaped domain-native finality fixture against the same absorber and falsifier
-screen. Reject if target labels, cross-repo truth, Observerse replay, APRD
-replay, TAF8 execution, direct TAF4 movement, or public-posture movement enters
-the result.
+Run `t561_domain_native_sheaf_transport_generalization_boundary_gate` before any
+source-law reading. Treat T559 and T560 as two bounded domain-native survivors,
+then test the generalization boundary with a third predeclared fixture and the
+same absorber/falsifier screen. Reject if target labels, cross-repo truth,
+Observerse replay, APRD replay, TAF8 execution, direct TAF4 movement, or
+public-posture movement enters the result.
 
 Use the T541 TAF8 gate only when a real domain-native cross-domain packet is
 available under the same predeclared spine. TAF12 may run only if a real

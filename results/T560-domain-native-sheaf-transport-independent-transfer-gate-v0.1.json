@@ -1,0 +1,285 @@
+{
+  "absorbed_cases": [
+    "ordinary_gluing_transfer_control",
+    "resource_budget_transfer_control",
+    "consensus_state_machine_transfer_control",
+    "record_provenance_transfer_control"
+  ],
+  "artifact": "T560-domain-native-sheaf-transport-independent-transfer-gate-v0.1",
+  "case_decisions": [
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "t559_payload_replay_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_T559_PAYLOAD_REPLAY",
+      "reason": "The transfer is not independent of the T559 payload shape.",
+      "role": "self_confirmation",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "ordinary_sheaf_gluing_completion",
+      "admitted": false,
+      "case_id": "ordinary_gluing_transfer_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_ORDINARY_SHEAF_GLUE",
+      "reason": "Ordinary sheaf gluing receives normal state and comparison rights.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "all_obstructions_glue_under_declared_restrictions",
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "resource_transport_monotone_absorber",
+      "admitted": false,
+      "case_id": "resource_budget_transfer_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_RESOURCE_TRANSPORT_MONOTONE",
+      "reason": "The apparent transfer gap factors through a native resource monotone.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "consensus_state_machine_absorber",
+      "admitted": false,
+      "case_id": "consensus_state_machine_transfer_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_CONSENSUS_STATE_MACHINE",
+      "reason": "Ordinary consensus or state-machine completion absorbs the transfer split.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "record_provenance_completion_absorber",
+      "admitted": false,
+      "case_id": "record_provenance_transfer_control",
+      "missing_source_variables": [],
+      "outcome": "ABSORBED_RECORD_PROVENANCE_COMPLETION",
+      "reason": "Completing normal provenance fields absorbs the transfer pressure.",
+      "role": "absorbed_control",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "same_variables_relabel_target_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_RELABELING_FALSIFIER",
+      "reason": "The same source variables realize the target by relabeling only.",
+      "role": "falsifier",
+      "triggered_falsifiers": [
+        "same_source_variables_realize_target_by_relabeling"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "hidden_target_import_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_HIDDEN_TARGET_OR_CROSS_REPO_IMPORT",
+      "reason": "The transfer depends on target labels or cross-repo truth.",
+      "role": "falsifier",
+      "triggered_falsifiers": [
+        "hidden_target_label_or_cross_repo_rule_required"
+      ]
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "observerse_replay_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_OBSERVERSE_REPLAY",
+      "reason": "T556 parked the Observerse route as audit residue only.",
+      "role": "spent_route",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "aprd_replay_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_APRD_REPLAY",
+      "reason": "APRD remains family-local feeder evidence, not this transfer.",
+      "role": "narrowed_route",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": false,
+      "case_id": "formal_residue_without_payload_control",
+      "missing_source_variables": [],
+      "outcome": "REJECTED_NO_DOMAIN_NATIVE_PAYLOAD",
+      "reason": "The transfer has formal shape but no finality-native payload.",
+      "role": "formal_only",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "admitted": true,
+      "case_id": "handoff_rotation_repair_transfer_payload",
+      "missing_source_variables": [],
+      "outcome": "ADMITTED_INDEPENDENT_DOMAIN_NATIVE_TRANSFER_REVIEW_ONLY",
+      "reason": "The transfer is independently shaped, finality-native, noncommuting, and survives the four mature absorbers.",
+      "role": "independent_domain_native_review_payload",
+      "triggered_falsifiers": []
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T559 is consumed as independent-transfer authority: domain_native_sheaf_transport_payload_admitted_review_only."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "1 independent domain-native transfer is admitted as review material."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "4 mature absorber controls and 6 shortcut controls keep the T560 transfer narrow."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The admitted transfer is independent from T559 by record ids, phase structure, and partition shape, but two bounded survivors are not a source law."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T560 is an independent-transfer gate and next-gate selector; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "frozen_falsifiers": [
+    "all_obstructions_glue_under_declared_restrictions",
+    "transport_square_commutes_after_mature_absorbers",
+    "same_source_variables_realize_target_by_relabeling",
+    "hidden_target_label_or_cross_repo_rule_required"
+  ],
+  "frozen_mature_absorbers": [
+    "ordinary_sheaf_gluing_completion",
+    "resource_transport_monotone_absorber",
+    "consensus_state_machine_absorber",
+    "record_provenance_completion_absorber"
+  ],
+  "frozen_source_variables": [
+    "finite_event_cover",
+    "local_finality_sections",
+    "restriction_morphisms",
+    "settlement_obstruction_witness",
+    "transport_consistency_square",
+    "allowed_refinement_steps"
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t559_independent_transfer_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T559 selected T560 as the independent-transfer burden."
+    },
+    {
+      "gate_id": "family_contract_frozen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T557/T558/T559 variables, absorbers, and falsifiers are unchanged."
+    },
+    {
+      "gate_id": "t559_payload_shape_frozen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The source T559 admitted payload remains the expected single review packet."
+    },
+    {
+      "gate_id": "independent_transfer_fixture_declared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The admitted fixture is record-disjoint, multi-phase, and partitioned differently from T559."
+    },
+    {
+      "gate_id": "all_mature_absorbers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every mature absorber receives a transfer control case."
+    },
+    {
+      "gate_id": "all_declared_falsifiers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every declared falsifier is triggered by at least one control case."
+    },
+    {
+      "gate_id": "spent_routes_imports_and_replay_rejected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T559 replay, Observerse replay, APRD replay, and hidden import are rejected."
+    },
+    {
+      "gate_id": "admitted_transfer_survives_absorber_screen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The admitted transfer survives all mature absorbers and no falsifier fires."
+    },
+    {
+      "gate_id": "no_source_law_or_governance_movement",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No source law, TAF4, TAF8, claim, canon, public-posture, external, or cross-repo movement is attempted."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "blocks": "Treating the T559 payload replay as independent transfer.",
+      "control_id": "t559_self_confirmation_control",
+      "reason": "T560 requires disjoint record ids, a different phase shape, and a different partition shape."
+    },
+    {
+      "blocks": "Treating formal noncommutation as enough.",
+      "control_id": "domain_native_payload_control",
+      "reason": "The admitted transfer must derive its operation menu from record finality and allowed refinements."
+    },
+    {
+      "blocks": "Reading ordinary gluing, resource, consensus, or provenance completion as source-law evidence.",
+      "control_id": "absorber_screen_control",
+      "reason": "The same four mature absorbers from T557/T558/T559 receive transfer controls."
+    },
+    {
+      "blocks": "Using target labels, cross-repo truth, Observerse replay, APRD replay, or relabel-only transfer.",
+      "control_id": "target_import_and_replay_control",
+      "reason": "T560 inherits the frozen falsifier screen and adds explicit T559 replay rejection."
+    },
+    {
+      "blocks": "Moving TAF4, executing TAF8, or changing claim/canon/public posture.",
+      "control_id": "taf4_taf8_public_posture_control",
+      "reason": "Two bounded TAF11 survivors remain review material only."
+    }
+  ],
+  "independent_transfer_packets": [
+    "handoff_rotation_repair_transfer_payload"
+  ],
+  "not_claimed": "T560 does not establish a source law, validate sheaf obstruction transport as a source family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It only shows that the T559 review payload has one independently shaped domain-native transfer survivor under the same absorber and falsifier screen.",
+  "recommended_next": "Run t561_domain_native_sheaf_transport_generalization_boundary_gate before any source-law reading. Treat T559 and T560 as two bounded domain-native survivors, then test the generalization boundary with a third predeclared fixture and the same absorber/falsifier screen.",
+  "rejected_cases": [
+    "t559_payload_replay_control",
+    "same_variables_relabel_target_control",
+    "hidden_target_import_control",
+    "observerse_replay_control",
+    "aprd_replay_control",
+    "formal_residue_without_payload_control"
+  ],
+  "selected_next_packet": "t561_domain_native_sheaf_transport_generalization_boundary_gate",
+  "source_t559_admitted_packets": [
+    "record_finality_transport_square_payload"
+  ],
+  "source_t559_packet_status": "TAF11_DOMAIN_NATIVE_PAYLOAD_ADMITTED_NO_SOURCE_LAW",
+  "source_t559_selected_next_packet": "t560_domain_native_sheaf_transport_independent_transfer_gate",
+  "source_t559_verdict": "domain_native_sheaf_transport_payload_admitted_review_only",
+  "taf11_update": "TAF11 remains active and narrowed. T560 gives the T559 payload one independently shaped domain-native transfer survivor, but two bounded survivors are still review material, not a source law.",
+  "taf4_update": "TAF4 remains blocked. Independent finite transfer is not a finite-to-continuum bridge, causal-set descent, Lorentzian target import, or manifoldlikeness result.",
+  "taf8_update": "TAF8 remains waiting. T560 is internal TAF11 transfer work, not a domain-native cross-domain shadow-protection packet.",
+  "transfer_status": "TAF11_INDEPENDENT_TRANSFER_SURVIVOR_NO_SOURCE_LAW",
+  "verdict": "domain_native_sheaf_transport_independent_transfer_survives_review_only"
+}

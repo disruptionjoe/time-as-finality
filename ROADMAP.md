@@ -1,5 +1,32 @@
 ﻿# Roadmap
 
+## 2026-07-14 T567 Domain-Native Sheaf Transport Source-Law Hostile Review Gate
+
+T567 executes the hostile-review burden selected by T566. It consumes the
+completed internal T564/T565/T566 source-law review packet and tests whether the
+typed generator can survive same-field adversaries before any source-law or
+governance movement.
+
+The review preserves T566 as a field-complete selector and finds two valid
+same-field alternates:
+
+- `alternate_multisig_delay_repair_survivor`;
+- `alternate_checkpoint_quorum_repair_survivor`.
+
+It also exposes the current semantic ceiling: the T566 field-name selector would
+admit an absorber-complete trivial gluing case and a disguised Lorentzian target
+import, while hostile review rejects both. Source-law status remains unearned.
+Claim-ledger movement, Canon Index movement, canon-verdict movement,
+public-posture movement, TAF4 movement, TAF8 execution, S1 movement, external
+publication, and cross-repo movement remain blocked.
+
+T567 names the next executable TAF11 burden:
+`t568_domain_native_sheaf_transport_semantic_generator_strengthening_gate`. That
+packet should strengthen the generator with semantic nontriviality,
+noncommuting transport-square, native-payload-forcing, and target-language
+screens before any source-law, claim, canon, public-posture, TAF4, TAF8, or S1
+movement.
+
 ## 2026-07-14 T566 Domain-Native Sheaf Transport Typed Generator Gate
 
 T566 executes the typed-generator burden selected by T565. It consumes T565's

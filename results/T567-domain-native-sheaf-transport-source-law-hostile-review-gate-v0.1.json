@@ -1,0 +1,461 @@
+{
+  "adversaries": [
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "alternate_native_record_scenario",
+      "adversary_id": "alternate_multisig_delay_repair_survivor",
+      "disguised_target_import_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "native_record_scenario": "multi-signature delay repair with rotating certificate windows",
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witnesses": true,
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "A same-field finality-native alternate with nontrivial obstruction and transport-square content.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "alternate_native_record_scenario",
+      "adversary_id": "alternate_checkpoint_quorum_repair_survivor",
+      "disguised_target_import_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "native_record_scenario": "checkpoint quorum repair with staggered local finality sections",
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witnesses": true,
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "A second same-field survivor that changes the native record scenario without target labels or replay.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "absorber_complete_but_trivial_case",
+      "adversary_id": "absorber_complete_trivial_gluing_case",
+      "disguised_target_import_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": false,
+      "native_record_scenario": "same-cover sheaf gluing bookkeeping",
+      "noncommuting_transport_square": false,
+      "nontrivial_obstruction_witnesses": false,
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Has every field name and absorber boundary, but carries no nontrivial obstruction, no noncommuting square, and no forced record-finality payload.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "disguised_target_import",
+      "adversary_id": "disguised_lorentzian_target_import",
+      "disguised_target_import_terms": [
+        "causal_set_link_recovery",
+        "lorentzian_dimension_target"
+      ],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": false,
+      "native_record_scenario": "record repair described by causal-set link recovery",
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witnesses": true,
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Keeps the same field names but smuggles target geometry into the scenario language instead of forcing a finality-native payload.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "underdeclared_generator_control",
+      "adversary_id": "missing_obstruction_witness_underdeclared_control",
+      "disguised_target_import_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "native_record_scenario": "underdeclared repair packet",
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witnesses": false,
+      "outcome_label_read": false,
+      "predeclared_before_outcome_reading": true,
+      "rationale": "Verifies T566 still rejects missing source-variable controls.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    },
+    {
+      "absorber_ids": [
+        "ordinary_sheaf_gluing_completion",
+        "resource_transport_monotone_absorber",
+        "consensus_state_machine_absorber",
+        "record_provenance_completion_absorber"
+      ],
+      "adversary_class": "posthoc_control",
+      "adversary_id": "posthoc_outcome_reading_control",
+      "disguised_target_import_terms": [],
+      "forbidden_shortcuts_used": [],
+      "native_payload_forced": true,
+      "native_record_scenario": "post-hoc repair packet",
+      "noncommuting_transport_square": true,
+      "nontrivial_obstruction_witnesses": true,
+      "outcome_label_read": true,
+      "predeclared_before_outcome_reading": false,
+      "rationale": "Verifies outcome-reading controls still reject.",
+      "source_variables": [
+        "finite_event_covers",
+        "local_finality_sections",
+        "restriction_morphisms",
+        "settlement_obstruction_witnesses",
+        "transport_consistency_squares",
+        "allowed_refinement_steps"
+      ]
+    }
+  ],
+  "artifact": "T567-domain-native-sheaf-transport-source-law-hostile-review-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Same-field alternate survivors: alternate_multisig_delay_repair_survivor, alternate_checkpoint_quorum_repair_survivor."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Semantic generator gaps exposed by: absorber_complete_trivial_gluing_case, disguised_lorentzian_target_import."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law status remains blocked by semantic generator strengthening."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Hostile review narrows the route rather than killing it or promoting it."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T567 narrows the TAF11 route to a semantic-generator strengthening burden; claim rows, Canon Index tiers, canon verdicts, and public posture remain unchanged.",
+  "gate_decisions": [
+    {
+      "gate_id": "t566_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T566 supplies the expected hostile-review authority."
+    },
+    {
+      "gate_id": "same_field_alternates_survive",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Two alternate finality-native same-field cases survive hostile review."
+    },
+    {
+      "gate_id": "semantic_gaps_detected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Hostile review detects both absorber-complete triviality and disguised target import gaps."
+    },
+    {
+      "gate_id": "source_law_not_promoted",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Source-law promotion is rejected."
+    },
+    {
+      "gate_id": "semantic_strengthening_selected_next",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Semantic generator strengthening is selected as the next burden."
+    },
+    {
+      "gate_id": "taf4_taf8_s1_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4, TAF8, S1, cross-repo, publication, claim, canon, and public-posture shortcuts are blocked."
+    }
+  ],
+  "hostile_evaluations": [
+    {
+      "adversary_id": "alternate_multisig_delay_repair_survivor",
+      "failed_checks": [],
+      "hostile_review_admissible": true,
+      "passed_checks": [
+        "t566_field_selector_admits",
+        "semantic_nontriviality",
+        "native_payload_forced",
+        "target_blind_language",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The same-field alternate survives both T566 and semantic hostile review.",
+      "status": "SURVIVES_HOSTILE_REVIEW",
+      "t566_selector_admissible": true
+    },
+    {
+      "adversary_id": "alternate_checkpoint_quorum_repair_survivor",
+      "failed_checks": [],
+      "hostile_review_admissible": true,
+      "passed_checks": [
+        "t566_field_selector_admits",
+        "semantic_nontriviality",
+        "native_payload_forced",
+        "target_blind_language",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The same-field alternate survives both T566 and semantic hostile review.",
+      "status": "SURVIVES_HOSTILE_REVIEW",
+      "t566_selector_admissible": true
+    },
+    {
+      "adversary_id": "absorber_complete_trivial_gluing_case",
+      "failed_checks": [
+        "semantic_nontriviality",
+        "native_payload_forced"
+      ],
+      "hostile_review_admissible": false,
+      "passed_checks": [
+        "t566_field_selector_admits",
+        "target_blind_language",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The T566 field selector admits this case, but hostile review rejects it because: semantic_nontriviality, native_payload_forced",
+      "status": "T566_SELECTOR_ADMITS_HOSTILE_REJECTS",
+      "t566_selector_admissible": true
+    },
+    {
+      "adversary_id": "disguised_lorentzian_target_import",
+      "failed_checks": [
+        "native_payload_forced",
+        "target_blind_language"
+      ],
+      "hostile_review_admissible": false,
+      "passed_checks": [
+        "t566_field_selector_admits",
+        "semantic_nontriviality",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The T566 field selector admits this case, but hostile review rejects it because: native_payload_forced, target_blind_language",
+      "status": "T566_SELECTOR_ADMITS_HOSTILE_REJECTS",
+      "t566_selector_admissible": true
+    },
+    {
+      "adversary_id": "missing_obstruction_witness_underdeclared_control",
+      "failed_checks": [
+        "t566_field_selector_admits",
+        "semantic_nontriviality"
+      ],
+      "hostile_review_admissible": false,
+      "passed_checks": [
+        "native_payload_forced",
+        "target_blind_language",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The case is already rejected before semantic hostile review because: t566_field_selector_admits, semantic_nontriviality",
+      "status": "REJECTED_BY_T566_AND_HOSTILE_REVIEW",
+      "t566_selector_admissible": false
+    },
+    {
+      "adversary_id": "posthoc_outcome_reading_control",
+      "failed_checks": [
+        "t566_field_selector_admits"
+      ],
+      "hostile_review_admissible": false,
+      "passed_checks": [
+        "semantic_nontriviality",
+        "native_payload_forced",
+        "target_blind_language",
+        "forbidden_shortcuts_absent"
+      ],
+      "reason": "The case is already rejected before semantic hostile review because: t566_field_selector_admits",
+      "status": "REJECTED_BY_T566_AND_HOSTILE_REVIEW",
+      "t566_selector_admissible": false
+    }
+  ],
+  "hostile_review_status": "HOSTILE_REVIEW_NARROWS_TYPED_GENERATOR",
+  "not_claimed": "T567 does not establish a public source law, promote TAF11, prove shadow protection, derive spacetime, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It hostile-reviews the internal T564/T565/T566 packet and selects a semantic-generator strengthening burden.",
+  "recommended_next": "Run t568_domain_native_sheaf_transport_semantic_generator_strengthening_gate. The next gate should strengthen the generator with semantic nontriviality, noncommuting transport-square, native-payload-forcing, and target-language screens before any source-law, claim, canon, public-posture, TAF4, TAF8, or S1 movement.",
+  "review_checks": [
+    {
+      "check_id": "t566_authority",
+      "evidence": [
+        "T566 verdict is the typed-generator review-only clearance.",
+        "T566 selected T567 as hostile review.",
+        "T566 marked the internal T564/T565/T566 packet complete but not promoted."
+      ],
+      "passed": true,
+      "residual_risk": "T566 is a narrow field selector, not source-law status.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "valid_same_field_alternates_survive",
+      "evidence": [
+        "alternate_multisig_delay_repair_survivor",
+        "alternate_checkpoint_quorum_repair_survivor"
+      ],
+      "passed": true,
+      "residual_risk": "The surviving alternates show the route is not empty, but they do not erase the semantic generator burden.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "absorber_complete_trivial_case_exposes_ceiling",
+      "evidence": [
+        "The trivial case has every frozen field name and absorber boundary.",
+        "T566 admits it under the field-selector contract.",
+        "Hostile review rejects it for missing semantic nontriviality and native payload forcing."
+      ],
+      "passed": true,
+      "residual_risk": "A strengthened generator must inspect nontrivial obstruction and noncommuting transport-square content, not only field names.",
+      "status": "FIRES"
+    },
+    {
+      "check_id": "disguised_target_import_exposes_ceiling",
+      "evidence": [
+        "The disguised import has every frozen field name and absorber boundary.",
+        "T566 admits it because the explicit shortcut list is empty.",
+        "Hostile review rejects target-geometry language and absent native-payload forcing."
+      ],
+      "passed": true,
+      "residual_risk": "A strengthened generator must screen scenario language for target imports instead of relying only on declared shortcut flags.",
+      "status": "FIRES"
+    },
+    {
+      "check_id": "original_t566_controls_still_reject",
+      "evidence": [
+        "Missing source-variable control is rejected.",
+        "Post-hoc outcome-reading control is rejected."
+      ],
+      "passed": true,
+      "residual_risk": "The original T566 checks still matter, but they are insufficient for semantic source-law readiness.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "governance_boundaries_preserved",
+      "evidence": [
+        "No claim-ledger movement.",
+        "No Canon Index movement.",
+        "No public-posture, TAF4, TAF8, S1, external, or cross-repo movement."
+      ],
+      "passed": true,
+      "residual_risk": "None inside this packet; the next packet remains review-only.",
+      "status": "PASS"
+    }
+  ],
+  "route_decisions": [
+    {
+      "decision_id": "promote_source_law_now",
+      "next_packet": "none",
+      "outcome": "REJECTED_SEMANTIC_GENERATOR_BURDEN",
+      "reason": "Hostile review exposed a semantic generator burden, so source-law promotion is rejected.",
+      "selected": false
+    },
+    {
+      "decision_id": "run_semantic_generator_strengthening_gate",
+      "next_packet": "t568_domain_native_sheaf_transport_semantic_generator_strengthening_gate",
+      "outcome": "SELECTED_NEXT_BURDEN",
+      "reason": "The T566 field selector must be strengthened against semantic triviality and disguised target import.",
+      "selected": true
+    },
+    {
+      "decision_id": "run_independent_reimplementation_now",
+      "next_packet": "none",
+      "outcome": "PAUSED_UNTIL_SEMANTIC_GENERATOR_STRENGTHENED",
+      "reason": "Independent reimplementation is premature until the generator's semantic fields are tightened.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_taf4_from_t567",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "A finite hostile-review result is not finite-to-continuum descent.",
+      "selected": false
+    },
+    {
+      "decision_id": "execute_taf8_from_t567",
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 hostile review is not cross-domain shadow protection.",
+      "selected": false
+    },
+    {
+      "decision_id": "move_s1_or_cross_repo_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "No S1, cross-repo, publication, claim, canon, or public-posture movement is authorized.",
+      "selected": false
+    }
+  ],
+  "route_status": "semantic_generator_strengthening_required",
+  "selected_next_packet": "t568_domain_native_sheaf_transport_semantic_generator_strengthening_gate",
+  "semantic_gap_adversary_ids": [
+    "absorber_complete_trivial_gluing_case",
+    "disguised_lorentzian_target_import"
+  ],
+  "semantic_generator_burden_exposed": true,
+  "source_law_earned": false,
+  "source_law_reading": "T567 preserves T566 as a field-complete selector but hostile review exposes a semantic gap: field-name completeness alone can admit absorber-complete trivial packets and disguised target-import language. The source-law route is narrowed, not promoted.",
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_SEMANTIC_GENERATOR_REQUIRED",
+  "source_t566_review_packet_complete": true,
+  "source_t566_selected_next_packet": "t567_domain_native_sheaf_transport_source_law_hostile_review_gate",
+  "source_t566_verdict": "domain_native_sheaf_transport_typed_generator_clears_review_only",
+  "t566_field_selector_survives_narrow_contract": true,
+  "taf11_update": "TAF11 remains the active top lane, but the route is narrowed: hostile review found valid alternate same-field survivors and also found semantic adversaries that T566's field selector is too coarse to reject.",
+  "taf4_update": "TAF4 remains blocked. T567 is a finite generator hostile-review gate, not finite-to-continuum descent, causal-set recovery, Lorentzian target import, or manifoldlikeness evidence.",
+  "taf8_update": "TAF8 remains waiting. T567 is internal TAF11 source-law hygiene, not a domain-native cross-domain shadow-protection packet.",
+  "valid_alternate_survivor_ids": [
+    "alternate_multisig_delay_repair_survivor",
+    "alternate_checkpoint_quorum_repair_survivor"
+  ],
+  "verdict": "domain_native_sheaf_transport_hostile_review_exposes_semantic_generator_burden_review_only"
+}

@@ -1,5 +1,43 @@
 ﻿# Roadmap
 
+## 2026-07-14 T569 Domain-Native Sheaf Transport Independent Reimplementation Gate
+
+T569 executes the independent-reimplementation burden selected by T568. It
+rebuilds the strengthened TAF11 semantic generator from the declared semantic
+contract, not from T567/T568 fixture labels.
+
+The independent generator reconstructs the frozen source variables, absorber
+boundaries, forbidden shortcut screen, and four semantic requirements:
+
+- nontrivial obstruction witness;
+- noncommuting transport square;
+- forced finality-native payload;
+- target-blind language.
+
+It matches the T568 contract on a fresh panel. It admits two fresh
+finality-native holdouts:
+
+- `escrow_window_rotation_holdout`;
+- `checkpoint_quorum_handoff_holdout`.
+
+It rejects four controls:
+
+- `same_neighbor_trivial_gluing_control`;
+- `target_geometry_language_import_control`;
+- `payload_optional_near_miss_control`;
+- `fixture_label_alias_control`.
+
+This closes fixture-label replay risk for this review step but remains
+review-only. Source-law status, claim-ledger movement, Canon Index movement,
+canon-verdict movement, public-posture movement, TAF4 movement, TAF8 execution,
+S1 movement, external publication, and cross-repo movement remain blocked.
+
+T569 names the next executable TAF11 burden:
+`t570_domain_native_sheaf_transport_fresh_family_stress_gate`. That packet
+should stress the independently reimplemented generator against a fresh family
+or sharply explain why no fresh-family stress is available before any
+source-law, claim, canon, public-posture, TAF4, TAF8, or S1 movement.
+
 ## 2026-07-14 T568 Domain-Native Sheaf Transport Semantic Generator Strengthening Gate
 
 T568 executes the semantic-strengthening burden selected by T567. It consumes

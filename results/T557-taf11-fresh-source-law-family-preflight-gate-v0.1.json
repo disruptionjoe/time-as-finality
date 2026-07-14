@@ -1,0 +1,245 @@
+{
+  "artifact": "T557-taf11-fresh-source-law-family-preflight-gate-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T556 is consumed as route-reset authority: observerse_protocol_stack_route_parked_after_absorber_completion."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The selected fresh family is sheaf_obstruction_transport_family with next packet t558_sheaf_obstruction_transport_source_law_packet."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The selected family declares 6 source variables, 4 mature absorbers, and 4 falsifiers."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "Sheaf obstruction transport is the next honest TAF11 family because it is fresh relative to Observerse and APRD while remaining finality-native and falsifiable before target import."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T557 declares a test family and next packet only; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "family_decisions": [
+    {
+      "candidate_id": "sheaf_obstruction_transport_family",
+      "missing_requirements": [],
+      "next_packet": "t558_sheaf_obstruction_transport_source_law_packet",
+      "outcome": "SELECTED_FRESH_FAMILY_PREFLIGHT",
+      "reason": "The family declares variables, mature absorbers, falsifiers, and a next packet before target reading.",
+      "role": "taf11_fresh_family_contract",
+      "selected": true
+    },
+    {
+      "candidate_id": "observerse_protocol_stack_replay",
+      "missing_requirements": [
+        "source_variables_declared",
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "does_not_reuse_absorbed_observerse_stack",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "REJECTED_OBSERVERSE_REPLAY",
+      "reason": "T556 parked the absorbed Observerse route as audit residue only.",
+      "role": "retired_route",
+      "selected": false
+    },
+    {
+      "candidate_id": "aprd_replay_as_fresh_family",
+      "missing_requirements": [
+        "falsifiers_predeclared",
+        "does_not_replay_narrowed_aprd_family",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "REJECTED_APRD_REPLAY",
+      "reason": "T548 narrowed APRD to family-local feeder evidence, not a fresh family.",
+      "role": "narrowed_route",
+      "selected": false
+    },
+    {
+      "candidate_id": "target_or_cross_repo_import_family",
+      "missing_requirements": [
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "no_target_or_cross_repo_import",
+        "computable_before_target_reading",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_TARGET_OR_CROSS_REPO_IMPORT",
+      "reason": "Fresh-family preflight must be declared before target labels or cross-repo truth enter.",
+      "role": "forbidden_import",
+      "selected": false
+    },
+    {
+      "candidate_id": "pause_no_fresh_family_declared",
+      "missing_requirements": [
+        "source_variables_declared",
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "REJECTED_NO_FAMILY_DECLARED",
+      "reason": "T556 specifically requires this packet to declare a fresh family contract.",
+      "role": "underdeclared",
+      "selected": false
+    },
+    {
+      "candidate_id": "taf4_from_fresh_family_preflight",
+      "missing_requirements": [
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "no_target_or_cross_repo_import",
+        "computable_before_target_reading",
+        "blocks_taf4_movement",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF4_OVERREAD",
+      "reason": "A preflight family declaration is not a finite-to-continuum bridge.",
+      "role": "blocked",
+      "selected": false
+    },
+    {
+      "candidate_id": "taf8_from_fresh_family_preflight",
+      "missing_requirements": [
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "blocks_taf8_execution",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_TAF8_OVERREAD",
+      "reason": "Internal TAF11 family selection is not a domain-native TAF8 packet.",
+      "role": "blocked",
+      "selected": false
+    },
+    {
+      "candidate_id": "claim_canon_public_posture_shortcut",
+      "missing_requirements": [
+        "mature_absorbers_predeclared",
+        "falsifiers_predeclared",
+        "no_claim_canon_public_external_movement",
+        "next_packet_declared"
+      ],
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "Family preflight cannot move claims, canon, public posture, or external state.",
+      "role": "forbidden",
+      "selected": false
+    }
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t556_route_reset_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T556 selected the fresh-family preflight as the next TAF11 burden."
+    },
+    {
+      "gate_id": "exactly_one_fresh_family_selected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Exactly one fresh family and next packet are selected."
+    },
+    {
+      "gate_id": "source_variables_absorbers_and_falsifiers_declared",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The selected family declares source variables, mature absorbers, and falsifiers."
+    },
+    {
+      "gate_id": "observerse_and_aprd_replays_rejected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Observerse and APRD replay routes are rejected."
+    },
+    {
+      "gate_id": "target_and_cross_repo_imports_blocked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Target-label and cross-repo imports are blocked."
+    },
+    {
+      "gate_id": "taf4_taf8_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF4 and TAF8 shortcuts are blocked."
+    },
+    {
+      "gate_id": "governance_boundaries_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "No claim, canon, public-posture, external, or cross-repo movement is attempted."
+    }
+  ],
+  "hostile_controls": [
+    {
+      "blocks": "Reusing the absorbed T550-T556 Observerse protocol-stack route.",
+      "control_id": "observerse_absorber_replay_control",
+      "reason": "T556 parked that route as audit translation residue only."
+    },
+    {
+      "blocks": "Replaying APRD as if T548 did not narrow it.",
+      "control_id": "aprd_narrowing_control",
+      "reason": "APRD remains useful feeder evidence but not the fresh source-law family."
+    },
+    {
+      "blocks": "Selecting the family from target labels or cross-repo truth.",
+      "control_id": "target_import_control",
+      "reason": "The family contract must be declared before target reading."
+    },
+    {
+      "blocks": "Testing a family without mature absorbers and falsifiers.",
+      "control_id": "absorber_and_falsifier_control",
+      "reason": "T556 required absorbers and falsifiers before renewed TAF11 source-law attempts."
+    },
+    {
+      "blocks": "Moving TAF4 or executing TAF8 from preflight selection.",
+      "control_id": "taf4_taf8_shortcut_control",
+      "reason": "A family contract is not a continuum bridge or cross-domain theorem."
+    },
+    {
+      "blocks": "Changing claim rows, Canon Index tiers, canon verdicts, public posture, or publication state.",
+      "control_id": "public_posture_control",
+      "reason": "The packet has no governance movement authority."
+    }
+  ],
+  "not_claimed": "T557 does not establish a source law, validate the selected family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It only declares a fresh TAF11 family contract and the next executable packet that must test it.",
+  "preflight_status": "TAF11_FRESH_FAMILY_DECLARED_PREFLIGHT_ONLY",
+  "recommended_next": "Run t558_sheaf_obstruction_transport_source_law_packet as the first test of the selected family. Keep the family contract frozen, test the declared sheaf obstruction transport variables against the mature absorbers and falsifiers, and reject if target labels, cross-repo truth, Observerse replay, or APRD replay enter the result.",
+  "selected_falsifiers": [
+    "all_obstructions_glue_under_declared_restrictions",
+    "transport_square_commutes_after_mature_absorbers",
+    "same_source_variables_realize_target_by_relabeling",
+    "hidden_target_label_or_cross_repo_rule_required"
+  ],
+  "selected_family_id": "sheaf_obstruction_transport_family",
+  "selected_mature_absorbers": [
+    "ordinary_sheaf_gluing_completion",
+    "resource_transport_monotone_absorber",
+    "consensus_state_machine_absorber",
+    "record_provenance_completion_absorber"
+  ],
+  "selected_next_packet": "t558_sheaf_obstruction_transport_source_law_packet",
+  "selected_source_variables": [
+    "finite_event_cover",
+    "local_finality_sections",
+    "restriction_morphisms",
+    "settlement_obstruction_witness",
+    "transport_consistency_square",
+    "allowed_refinement_steps"
+  ],
+  "source_t556_selected_next_packet": "t557_taf11_fresh_source_law_family_preflight_gate",
+  "source_t556_verdict": "observerse_protocol_stack_route_parked_after_absorber_completion",
+  "taf11_update": "TAF11 remains the active high-value route. T557 selects the fresh sheaf obstruction transport family as a preflight contract only; source-law status waits for the next executable packet.",
+  "taf4_update": "TAF4 remains blocked. A fresh TAF11 family preflight is not a finite-to-continuum bridge, causal-set descent, or Lorentzian target import.",
+  "taf8_update": "TAF8 remains waiting for a real domain-native cross-domain packet. T557 is internal TAF11 family selection, not TAF8 execution.",
+  "verdict": "fresh_source_law_family_preflight_selects_sheaf_obstruction_transport"
+}

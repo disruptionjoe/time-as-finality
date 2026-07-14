@@ -12,15 +12,15 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
-Generated ranking from `attention/taf_priority_condorcet.py` after T556 on
+Generated ranking from `attention/taf_priority_condorcet.py` after T557 on
 2026-07-13:
 
 1. TAF11 - North Star source-law reassessment beyond the finite-generator route.
-   Why: T556 parked the absorbed Observerse protocol-stack route as audit
-   translation residue and selected T557 fresh-family preflight.
+   Why: T557 selected the sheaf obstruction transport family and named T558 as
+   the first source-law packet to test it.
 2. TAF8 - Cross-domain shadow-protection theorem target.
-   Why: T556 preserved the T541 wait state; internal TAF11 route reset is not a
-   domain-native cross-domain packet.
+   Why: T557 preserved the T541 wait state; internal TAF11 family selection is
+   not a domain-native cross-domain packet.
 3. TAF3 - Law-derived C(R) menus and physical noncompletion witness.
    Why: The C(R) line keeps losing to declared-boundary and completion
    absorbers; derive the operation menu from dynamics.
@@ -28,8 +28,8 @@ Generated ranking from `attention/taf_priority_condorcet.py` after T556 on
    Why: T535 found no real packet in hand; the branch waits for exact
    full-stack profiles plus an independent noncompletion witness.
 5. TAF4 - Finite-to-continuum finality colimit bridge.
-   Why: Still blocked after T556; parking the absorbed Observerse route does
-   not supply a finite-to-continuum bridge.
+   Why: Still blocked after T557; family preflight is not a finite-to-continuum
+   bridge or Lorentzian target import.
 6. TAF6 - Quantum access-structure and monogamy finality theorem.
    Why: T514-T520 leave a cleaner secret-sharing/access-structure strut than the
    falsified BFT threshold analogy.
@@ -133,24 +133,24 @@ Discipline:
 
 | id | status | live question | current state |
 | --- | --- | --- | --- |
-| TAF11 | open, route reset to fresh-family preflight | What fresh source-law family can be declared with source variables, mature absorbers, and falsifiers before target reading? | T556 consumed T555 absorber completion, parked the T550-T555 Observerse protocol-stack route as audit translation residue, rejected more bounded Observerse fixtures as source-law evidence, and selected `t557_taf11_fresh_source_law_family_preflight_gate`. |
+| TAF11 | open, sheaf obstruction transport packet selected | Can the selected sheaf obstruction transport family survive mature absorbers and falsifiers without target reading? | T557 consumed T556 route-reset authority, selected `sheaf_obstruction_transport_family`, declared six source variables, four mature absorbers, and four falsifiers, and selected `t558_sheaf_obstruction_transport_source_law_packet`. |
 | TAF12 | paused branch | Can a real data-bearing packet replace T533/T535 synthetic or absent C(R) targets? | T535 completed. Five existing-source candidates checked; none has exact full-stack profiles plus independent non-task-success noncompletion witness. |
 | TAF3 | blocked | Can C(R) menus and noncompletion be derived from a domain-native law rather than declared boundaries? | Still blocked. T534 supplied no source law and T535 supplied no real noncompletion target. |
-| TAF4 | blocked on fresh TAF11 family | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T556 parked the Observerse route. TAF4 movement still waits for a real generalization bridge. |
+| TAF4 | blocked on source-law survivor | Can native finite finality objects descend toward causal-set or Lorentzian structure? | T526 calibrates target, T528 native preflight incomplete, T532/T534 found no cleared law, T548 narrowed APRD, and T557 only declared a TAF11 family preflight. TAF4 movement still waits for a real generalization bridge. |
 | TAF5 | open, lower immediate rank | Can GU/TI/TAF adapters de-correlate enough to carry source-category truth? | T504-T506 gates built, real source categories not supplied. |
 | TAF6 | open, secondary lane | Can quantum access-structure and monogamy results yield a clean finality theorem? | T514-T520 narrowed away false BFT/copy-law analogies. |
 | TAF7 | open, execution-ready only with data | Can detector provenance supply a predeclared independent finality axis? | T521 manifest template built, no data-bearing packet. |
-| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T556 keeps TAF8 waiting because internal TAF11 route reset is not a domain-native cross-domain packet under the same spine. |
+| TAF8 | open, waiting for domain-native packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T557 keeps TAF8 waiting because internal TAF11 family selection is not a domain-native cross-domain packet under the same spine. |
 
 ## next_action
 
-When Joe opens the lane, run the TAF11 fresh-family preflight:
+When Joe opens the lane, run the selected TAF11 source-law packet:
 
-Run `t557_taf11_fresh_source_law_family_preflight_gate`. Name a new TAF11
-source-law family, declare its source variables, predeclare mature absorbers and
-falsifiers, and reject if the packet reuses the absorbed Observerse
-protocol-stack route as evidence, imports cross-repo truth, executes TAF8, or
-moves TAF4/source-law status directly.
+Run `t558_sheaf_obstruction_transport_source_law_packet`. Keep the T557 family
+contract frozen, test the declared sheaf obstruction transport variables
+against the mature absorbers and falsifiers, and reject if target labels,
+cross-repo truth, Observerse replay, APRD replay, TAF8 execution, or direct TAF4
+movement enters the result.
 
 Use the T541 TAF8 gate only when a real domain-native packet is available under
 the same predeclared spine. TAF12 may run only if a real data-bearing packet

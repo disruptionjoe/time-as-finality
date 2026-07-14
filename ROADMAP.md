@@ -1,5 +1,31 @@
 ﻿# Roadmap
 
+## 2026-07-13 T557 TAF11 Fresh Source-Law Family Preflight Gate
+
+T557 executes the fresh-family preflight selected by T556. It consumes T556 as
+route-reset authority: the T550-T555 Observerse protocol-stack route is parked
+as audit translation residue, APRD remains narrowed to family-local feeder
+evidence, and any renewed TAF11 attempt must declare source variables, mature
+absorbers, and falsifiers before target reading.
+
+The packet selects `sheaf_obstruction_transport_family` as the fresh TAF11
+preflight contract. The selected family declares finite event covers, local
+finality sections, restriction morphisms, settlement obstruction witnesses,
+transport consistency squares, and allowed refinement steps as source
+variables. It predeclares ordinary sheaf gluing, resource transport monotone,
+consensus state-machine, and record-provenance completion absorbers, plus four
+falsifiers.
+
+T557 names the next executable TAF11 packet:
+`t558_sheaf_obstruction_transport_source_law_packet`. That packet should keep
+the selected family contract frozen and test whether the declared obstruction
+transport variables survive the mature absorbers and falsifiers without target
+labels, cross-repo truth, Observerse replay, or APRD replay.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, or cross-repo movement is earned by T557.
+
 ## 2026-07-13 T556 Observerse Protocol-Stack Post-Absorber Route Reset Gate
 
 T556 executes the route-reset gate selected by T555. It consumes T555 as

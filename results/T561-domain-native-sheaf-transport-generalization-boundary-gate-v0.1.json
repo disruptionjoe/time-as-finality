@@ -1,0 +1,344 @@
+{
+  "artifact": "T561-domain-native-sheaf-transport-generalization-boundary-gate-v0.1",
+  "boundary_outcomes": [
+    {
+      "absorber": "none",
+      "actual_status": "inside_bounded_domain_native_class",
+      "case_id": "t559_record_finality_transport_square_survivor",
+      "expected_status": "inside_bounded_domain_native_class",
+      "in_generalization_class": true,
+      "matched": true,
+      "reason": "The case is bounded, finality-native, target-blind, provenance-complete, noncommuting, and survives the mature absorbers.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "inside_bounded_domain_native_class",
+      "case_id": "t560_handoff_rotation_repair_transfer_survivor",
+      "expected_status": "inside_bounded_domain_native_class",
+      "in_generalization_class": true,
+      "matched": true,
+      "reason": "The case is bounded, finality-native, target-blind, provenance-complete, noncommuting, and survives the mature absorbers.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "inside_bounded_domain_native_class",
+      "case_id": "third_multicover_seal_handoff_fixture",
+      "expected_status": "inside_bounded_domain_native_class",
+      "in_generalization_class": true,
+      "matched": true,
+      "reason": "The case is bounded, finality-native, target-blind, provenance-complete, noncommuting, and survives the mature absorbers.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_t559_payload_replay",
+      "case_id": "t559_payload_replay_as_new_fixture",
+      "expected_status": "rejected_t559_payload_replay",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "A prior T559 survivor cannot count as a new generalization member.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_t560_transfer_replay",
+      "case_id": "t560_transfer_replay_as_new_fixture",
+      "expected_status": "rejected_t560_transfer_replay",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "A prior T560 survivor cannot count as a third fixture.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "ordinary_sheaf_gluing_completion",
+      "actual_status": "absorbed_ordinary_sheaf_glue",
+      "case_id": "ordinary_gluing_boundary_control",
+      "expected_status": "absorbed_ordinary_sheaf_glue",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "Ordinary sheaf gluing receives normal state and comparison rights.",
+      "triggered_falsifiers": [
+        "all_obstructions_glue_under_declared_restrictions",
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "resource_transport_monotone_absorber",
+      "actual_status": "absorbed_resource_transport_monotone",
+      "case_id": "resource_budget_boundary_control",
+      "expected_status": "absorbed_resource_transport_monotone",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "The apparent boundary factors through a native resource monotone.",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "consensus_state_machine_absorber",
+      "actual_status": "absorbed_consensus_state_machine",
+      "case_id": "consensus_state_machine_boundary_control",
+      "expected_status": "absorbed_consensus_state_machine",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "Ordinary consensus or state-machine completion absorbs the split.",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "record_provenance_completion_absorber",
+      "actual_status": "absorbed_record_provenance_completion",
+      "case_id": "record_provenance_boundary_control",
+      "expected_status": "absorbed_record_provenance_completion",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "Completing normal provenance fields absorbs the boundary pressure.",
+      "triggered_falsifiers": [
+        "transport_square_commutes_after_mature_absorbers"
+      ]
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_relabeling_falsifier",
+      "case_id": "same_variables_relabel_target_boundary",
+      "expected_status": "rejected_relabeling_falsifier",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "The same source variables realize the target by relabeling only.",
+      "triggered_falsifiers": [
+        "same_source_variables_realize_target_by_relabeling"
+      ]
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_hidden_target_or_cross_repo_import",
+      "case_id": "hidden_target_import_boundary",
+      "expected_status": "rejected_hidden_target_or_cross_repo_import",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "The case depends on target labels or cross-repo truth.",
+      "triggered_falsifiers": [
+        "hidden_target_label_or_cross_repo_rule_required"
+      ]
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_observerse_replay",
+      "case_id": "observerse_replay_boundary",
+      "expected_status": "rejected_observerse_replay",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "T556 parked the Observerse route as audit residue only.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "rejected_aprd_replay",
+      "case_id": "aprd_replay_boundary",
+      "expected_status": "rejected_aprd_replay",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "APRD remains family-local feeder evidence, not this boundary.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "out_of_scope_taf8_cross_domain",
+      "case_id": "taf8_cross_domain_boundary",
+      "expected_status": "out_of_scope_taf8_cross_domain",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "TAF8 cross-domain packets require their own domain-native spine.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "blocked_taf4_target_import",
+      "case_id": "taf4_lorentzian_target_import_boundary",
+      "expected_status": "blocked_taf4_target_import",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "TAF4 or Lorentzian target import cannot define sheaf transport success.",
+      "triggered_falsifiers": []
+    },
+    {
+      "absorber": "none",
+      "actual_status": "blocked_source_law_overread",
+      "case_id": "source_law_overread_boundary",
+      "expected_status": "blocked_source_law_overread",
+      "in_generalization_class": false,
+      "matched": true,
+      "reason": "Bounded survivors do not establish source-law status.",
+      "triggered_falsifiers": []
+    }
+  ],
+  "bounded_survivor_class": [
+    "t559_record_finality_transport_square_survivor",
+    "t560_handoff_rotation_repair_transfer_survivor",
+    "third_multicover_seal_handoff_fixture"
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The bounded domain-native class currently includes: t559_record_finality_transport_square_survivor, t560_handoff_rotation_repair_transfer_survivor, third_multicover_seal_handoff_fixture."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The gate blocks or absorbs these overreach cases: t559_payload_replay_as_new_fixture, t560_transfer_replay_as_new_fixture, ordinary_gluing_boundary_control, resource_budget_boundary_control, consensus_state_machine_boundary_control, record_provenance_boundary_control, same_variables_relabel_target_boundary, hidden_target_import_boundary, observerse_replay_boundary, aprd_replay_boundary, taf8_cross_domain_boundary, taf4_lorentzian_target_import_boundary, source_law_overread_boundary."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "4 mature absorber controls and 4 declared falsifiers remain active at the boundary."
+    },
+    {
+      "confidence": "medium",
+      "label": "ARGUED",
+      "text": "The next useful test is minimality across the admitted bounded class, not source-law, TAF4, TAF8, or public-posture movement."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T561 is a boundary map and next-minimality-gate selector; it leaves claim rows, Canon Index tiers, canon verdicts, and public posture unchanged.",
+  "frozen_falsifiers": [
+    "all_obstructions_glue_under_declared_restrictions",
+    "transport_square_commutes_after_mature_absorbers",
+    "same_source_variables_realize_target_by_relabeling",
+    "hidden_target_label_or_cross_repo_rule_required"
+  ],
+  "frozen_mature_absorbers": [
+    "ordinary_sheaf_gluing_completion",
+    "resource_transport_monotone_absorber",
+    "consensus_state_machine_absorber",
+    "record_provenance_completion_absorber"
+  ],
+  "frozen_source_variables": [
+    "finite_event_cover",
+    "local_finality_sections",
+    "restriction_morphisms",
+    "settlement_obstruction_witness",
+    "transport_consistency_square",
+    "allowed_refinement_steps"
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t559_t560_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T559 and T560 are completed bounded survivors and T560 selected T561."
+    },
+    {
+      "gate_id": "family_contract_frozen",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T557-T560 variables, absorbers, and falsifiers are unchanged."
+    },
+    {
+      "gate_id": "source_survivors_preserved",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The T559 and T560 survivors are preserved as source state."
+    },
+    {
+      "gate_id": "third_fixture_independent",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The third fixture is record-disjoint, multi-phase, differently partitioned, and independent."
+    },
+    {
+      "gate_id": "bounded_class_has_three_members",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The bounded class contains exactly the two prior survivors plus the third fixture."
+    },
+    {
+      "gate_id": "all_mature_absorbers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every mature absorber receives a boundary control case."
+    },
+    {
+      "gate_id": "all_declared_falsifiers_exercised",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every declared falsifier is triggered by at least one control case."
+    },
+    {
+      "gate_id": "replay_and_spent_routes_rejected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T559 replay, T560 replay, Observerse replay, and APRD replay are rejected."
+    },
+    {
+      "gate_id": "taf4_taf8_and_source_law_boundaries_detected",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "TAF8, TAF4, and source-law overread shortcuts are rejected."
+    },
+    {
+      "gate_id": "all_boundary_predictions_match",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Every boundary case matched the predeclared status."
+    },
+    {
+      "gate_id": "next_packet_specific",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "A single minimality gate is named as the next packet."
+    }
+  ],
+  "generalization_status": "TAF11_GENERALIZATION_BOUNDARY_MAPPED_NO_SOURCE_LAW",
+  "hostile_controls": [
+    {
+      "blocks": "Treating three bounded domain-native survivors as source-law proof.",
+      "control_id": "source_law_overread_control",
+      "reason": "T561 maps a bounded class boundary; it does not promote the class."
+    },
+    {
+      "blocks": "Counting T559 or T560 shape replay as new generalization.",
+      "control_id": "prior_survivor_replay_control",
+      "reason": "The third fixture must be record-disjoint and differently partitioned."
+    },
+    {
+      "blocks": "Reading ordinary gluing, resource, consensus, or provenance completion as residue.",
+      "control_id": "absorber_screen_control",
+      "reason": "The same four mature absorbers receive boundary controls."
+    },
+    {
+      "blocks": "Using Lorentzian, causal-set, or finite-to-continuum targets as success criteria.",
+      "control_id": "taf4_target_import_control",
+      "reason": "T561 is internal TAF11 route control, not TAF4 bridge evidence."
+    },
+    {
+      "blocks": "Executing TAF8 or importing a cross-domain transfer packet.",
+      "control_id": "taf8_cross_domain_control",
+      "reason": "TAF8 still needs a real domain-native packet under its own spine."
+    },
+    {
+      "blocks": "Replaying Observerse or APRD as the generalization route.",
+      "control_id": "spent_route_control",
+      "reason": "Observerse is parked after T556 and APRD narrowed after T548."
+    }
+  ],
+  "not_claimed": "T561 does not establish a source law, validate sheaf obstruction transport as a source family, prove shadow protection, derive spacetime, prove manifoldlikeness, repair T528, reverse T223, unpause S1, promote S1, change claim status, change Canon Index tiers, change canon verdicts, change public posture, change the North Star, authorize external publication, move TAF4, execute TAF8, or move cross-repo truth. It maps the bounded generalization boundary for the current TAF11 sheaf transport route only.",
+  "recommended_next": "Run t562_domain_native_sheaf_transport_minimality_gate. It should test whether every frozen source variable and boundary condition is minimal across the admitted bounded class before any source-law, TAF4, TAF8, claim-ledger, or public-posture movement.",
+  "selected_next_packet": "t562_domain_native_sheaf_transport_minimality_gate",
+  "source_law_reading": "The route now has a mapped bounded class with three domain-native fixture shapes and explicit rejection boundaries. That is stronger route control, not source-law status.",
+  "source_t559_admitted_packets": [
+    "record_finality_transport_square_payload"
+  ],
+  "source_t559_verdict": "domain_native_sheaf_transport_payload_admitted_review_only",
+  "source_t560_independent_transfer_packets": [
+    "handoff_rotation_repair_transfer_payload"
+  ],
+  "source_t560_selected_next_packet": "t561_domain_native_sheaf_transport_generalization_boundary_gate",
+  "source_t560_verdict": "domain_native_sheaf_transport_independent_transfer_survives_review_only",
+  "taf11_update": "TAF11 remains active and narrowed. T561 maps the current sheaf transport generalization class as bounded, domain-native, target-blind, noncommuting, provenance-complete fixtures under the frozen absorber and falsifier screen.",
+  "taf4_update": "TAF4 remains blocked. A bounded finite generalization boundary is not a finite-to-continuum bridge, causal-set descent, Lorentzian target import, or manifoldlikeness result.",
+  "taf8_update": "TAF8 remains waiting. T561 is internal TAF11 boundary mapping, not a domain-native cross-domain shadow-protection packet.",
+  "verdict": "domain_native_sheaf_transport_generalization_boundary_mapped_review_only"
+}

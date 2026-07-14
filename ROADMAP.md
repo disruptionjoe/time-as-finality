@@ -1,5 +1,34 @@
 ﻿# Roadmap
 
+## 2026-07-13 T561 Domain-Native Sheaf Transport Generalization Boundary Gate
+
+T561 executes the generalization-boundary burden selected by T560. It keeps the
+frozen `sheaf_obstruction_transport_family` contract unchanged: finite event
+covers, local finality sections, restriction morphisms, settlement obstruction
+witnesses, transport consistency squares, allowed refinement steps, the four
+mature absorbers, and the four falsifiers remain the T557/T558/T559/T560 set.
+
+The packet maps a bounded domain-native class with exactly three members:
+the T559 record-finality transport-square survivor, the T560
+handoff/rotation/repair transfer survivor, and one third predeclared
+multicover seal/handoff fixture. The third fixture is record-disjoint,
+multi-phase, differently partitioned, finality-native, target-blind,
+noncommuting, provenance-complete, and independent from both prior survivors.
+T559 replay, T560 replay, ordinary gluing, resource transport,
+consensus/state-machine, provenance completion, relabel-only target
+realization, hidden target import, Observerse replay, APRD replay, TAF8
+cross-domain import, TAF4 target import, and source-law overread all reject or
+absorb.
+
+T561 names the next executable TAF11 burden:
+`t562_domain_native_sheaf_transport_minimality_gate`. That packet should test
+whether every frozen source variable and boundary condition remains minimal
+across the admitted bounded class before any source-law reading.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T561.
+
 ## 2026-07-13 T560 Domain-Native Sheaf Transport Independent Transfer Gate
 
 T560 executes the independent-transfer burden selected by T559. It keeps the

@@ -23,8 +23,8 @@ ITEMS = {
     "TAF11": {
         "title": "North Star source-law reassessment beyond the finite-generator route",
         "why": (
-            "T557 selected the sheaf obstruction transport family and named "
-            "T558 as the first source-law packet to test it."
+            "T558 left only formal sheaf obstruction transport residue and "
+            "named T559 as the domain-native packet burden."
         ),
     },
     "TAF12": {
@@ -44,8 +44,8 @@ ITEMS = {
     "TAF4": {
         "title": "Finite-to-continuum finality colimit bridge",
         "why": (
-            "Still blocked after T557: family preflight is not a "
-            "finite-to-continuum bridge or Lorentzian target import."
+            "Still blocked after T558: formal sheaf obstruction transport "
+            "residue is not a continuum bridge or Lorentzian target import."
         ),
     },
     "TAF5": {
@@ -72,8 +72,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T557 preserved the T541 wait state: internal TAF11 family "
-            "selection is not a domain-native cross-domain packet."
+            "T558 preserved the T541 wait state: internal TAF11 residue is "
+            "not a domain-native cross-domain packet."
         ),
     },
 }

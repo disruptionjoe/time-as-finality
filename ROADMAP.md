@@ -1,5 +1,33 @@
 ﻿# Roadmap
 
+## 2026-07-13 T558 Sheaf Obstruction Transport Source-Law Packet
+
+T558 executes the first packet selected by T557. It consumes T557 as frozen
+preflight authority: the selected family remains
+`sheaf_obstruction_transport_family`; the source variables remain finite event
+covers, local finality sections, restriction morphisms, settlement obstruction
+witnesses, transport consistency squares, and allowed refinement steps; and the
+mature absorbers and falsifiers remain exactly the T557-declared set.
+
+The packet narrows rather than promotes the route. Ordinary sheaf gluing,
+resource transport monotone, consensus state-machine, and record-provenance
+completion controls all absorb their corresponding readings. The relabel-only,
+hidden target/cross-repo import, Observerse replay, and APRD replay controls all
+reject. Exactly one formal noncommuting transport fixture remains, but because
+it has no domain-native payload it is formal residue only, not source-law
+evidence.
+
+T558 names the next executable TAF11 burden:
+`t559_domain_native_sheaf_transport_packet_burden_gate`. That packet should run
+only if it can supply a domain-native payload with the same frozen variables and
+a noncommuting transport square that survives the four mature absorbers without
+target labels, cross-repo truth, Observerse replay, APRD replay, TAF8 execution,
+or direct TAF4 movement.
+
+No source law, shadow-protection theorem, claim-ledger, Canon Index,
+canon-verdict, public-posture, North Star, external-publication, TAF4 movement,
+TAF8 execution, S1 movement, or cross-repo movement is earned by T558.
+
 ## 2026-07-13 T557 TAF11 Fresh Source-Law Family Preflight Gate
 
 T557 executes the fresh-family preflight selected by T556. It consumes T556 as

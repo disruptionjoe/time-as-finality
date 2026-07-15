@@ -20,14 +20,6 @@ from statistics import mean
 
 
 ITEMS = {
-    "TAF11": {
-        "title": "TAF11 review-package closeout router",
-        "why": (
-            "T580 closed the current external panel for limited review; the "
-            "next burden preserves the package, names reopen conditions, and "
-            "blocks promotion by momentum."
-        ),
-    },
     "TAF12": {
         "title": "Data-bearing C(R) packet acquisition for TAF10",
         "why": (
@@ -73,8 +65,8 @@ ITEMS = {
     "TAF8": {
         "title": "Cross-domain shadow-protection theorem target",
         "why": (
-            "T579 preserved the T541 wait state: absorber pressure is not a "
-            "domain-native cross-domain packet."
+            "T582 absorbed W192 as explicit state/resource completion, so "
+            "TAF8 still waits for a real domain-native cross-domain packet."
         ),
     },
 }
@@ -82,7 +74,6 @@ ITEMS = {
 
 BALLOTS = {
     "orthodox_professor": [
-        "TAF11",
         "TAF8",
         "TAF4",
         "TAF3",
@@ -92,7 +83,6 @@ BALLOTS = {
         "TAF7",
     ],
     "heterodox_rigorous_professor": [
-        "TAF11",
         "TAF8",
         "TAF3",
         "TAF4",
@@ -102,7 +92,6 @@ BALLOTS = {
         "TAF7",
     ],
     "commercial_scientist": [
-        "TAF11",
         "TAF8",
         "TAF12",
         "TAF3",
@@ -112,7 +101,6 @@ BALLOTS = {
         "TAF5",
     ],
     "philosopher_of_science": [
-        "TAF11",
         "TAF8",
         "TAF3",
         "TAF12",
@@ -122,7 +110,6 @@ BALLOTS = {
         "TAF7",
     ],
     "wild_frontier_scientist": [
-        "TAF11",
         "TAF8",
         "TAF4",
         "TAF3",
@@ -132,7 +119,6 @@ BALLOTS = {
         "TAF7",
     ],
     "causal_set_lorentzian": [
-        "TAF11",
         "TAF8",
         "TAF4",
         "TAF3",
@@ -143,7 +129,6 @@ BALLOTS = {
     ],
     "quantum_information_decoherence": [
         "TAF6",
-        "TAF11",
         "TAF8",
         "TAF12",
         "TAF3",
@@ -154,7 +139,6 @@ BALLOTS = {
     "distributed_systems_consensus": [
         "TAF12",
         "TAF3",
-        "TAF11",
         "TAF8",
         "TAF7",
         "TAF6",
@@ -165,14 +149,12 @@ BALLOTS = {
         "TAF12",
         "TAF3",
         "TAF6",
-        "TAF11",
         "TAF8",
         "TAF4",
         "TAF5",
         "TAF7",
     ],
     "category_sheaf_obstruction": [
-        "TAF11",
         "TAF8",
         "TAF4",
         "TAF5",
@@ -182,7 +164,6 @@ BALLOTS = {
         "TAF7",
     ],
     "complexity_cryptography": [
-        "TAF11",
         "TAF8",
         "TAF12",
         "TAF3",
@@ -194,7 +175,6 @@ BALLOTS = {
     "detector_metrology_provenance": [
         "TAF7",
         "TAF12",
-        "TAF11",
         "TAF3",
         "TAF6",
         "TAF8",

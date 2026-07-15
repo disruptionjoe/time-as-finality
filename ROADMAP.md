@@ -1,5 +1,42 @@
 ﻿# Roadmap
 
+## 2026-07-14 T582 W192 Record-Conditioned Capability Discriminator Gate
+
+T582 executes the separate W192 gate selected by T581. It tests whether the
+frozen written-spinor proxy supplies a finality-native capability discriminator
+or is absorbed by explicit state/resource completion.
+
+The gate finds one task delta:
+
+- `record_conditioned_vertex_lift` changes only when access to the frozen
+  `psi` record is supplied.
+
+That delta is screened off by explicit state/resource completion. The proxy
+does not supply a native typed current, joint gauge quotient, independent
+holdout, retarded response, physical boundary, or cross-domain identity. No
+claim-ledger, Canon Index, canon-verdict, public-posture, publication, TAF4,
+TAF8, S1, or cross-repo truth movement is earned.
+
+T582 leaves TAF8 waiting for a real domain-native cross-domain packet under the
+T541 spine. W192 in its current frozen proxy form is not that packet.
+
+## 2026-07-14 T581 Domain-Native Sheaf Transport Review-Package Closeout Router
+
+T581 executes the closeout router selected by T580. It preserves the T559-T580
+review package as limited review material, names concrete reopen conditions,
+and blocks promotion by momentum.
+
+The router selects:
+
+- close and park the TAF11 review package;
+- route W192 to a separate packet gate;
+- block source-law and protected-truth movement.
+
+The old TAF11 route has no unattended successor. Reopen requires concrete new
+evidence: a domain-native source packet, empirical detector manifest,
+finality-native continuum bridge, or a cross-domain shadow-protection packet
+that opens its own gate rather than retroactively promoting TAF11.
+
 ## 2026-07-14 T580 Domain-Native Sheaf Transport External-Panel Scope Closure Gate
 
 T580 executes the external-panel scope-closure burden selected by T579. It

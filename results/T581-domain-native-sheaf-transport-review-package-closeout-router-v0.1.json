@@ -1,0 +1,145 @@
+{
+  "artifact": "T581-domain-native-sheaf-transport-review-package-closeout-router-v0.1",
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "T580 authority closes and parks the TAF11 review package."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "Reopen conditions declared: new_domain_native_source_packet, empirical_detector_manifest, finality_native_continuum_bridge, cross_domain_shadow_protection_packet."
+    },
+    {
+      "confidence": "high",
+      "label": "ARGUED",
+      "text": "W192 should be evaluated separately rather than reopening TAF11."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "Source-law and protected truth movements remain blocked."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. Package closeout preserves the existing review-only status and blocks promotion by momentum.",
+  "closeout_decisions": [
+    {
+      "decision_id": "close_and_park_taf11_review_package",
+      "next_packet": "none",
+      "outcome": "SELECTED_CLOSE_AND_PARK",
+      "reason": "The scoped package is preserved as limited review material.",
+      "selected": true
+    },
+    {
+      "decision_id": "continue_old_route_unattended",
+      "next_packet": "none",
+      "outcome": "BLOCKED_NO_NEW_EVIDENCE",
+      "reason": "The T559-T581 route has no unattended successor.",
+      "selected": false
+    },
+    {
+      "decision_id": "promote_package_by_momentum",
+      "next_packet": "none",
+      "outcome": "BLOCKED_CLOSEOUT_IS_NOT_PROMOTION",
+      "reason": "Review survival and scope closure do not earn source-law status.",
+      "selected": false
+    },
+    {
+      "decision_id": "route_w192_as_separate_packet",
+      "next_packet": "t582_w192_record_conditioned_capability_discriminator_gate",
+      "outcome": "SELECTED_SEPARATE_PACKET_GATE",
+      "reason": "W192 is new cross-domain input, not continuation evidence for TAF11.",
+      "selected": true
+    },
+    {
+      "decision_id": "move_protected_truth",
+      "next_packet": "none",
+      "outcome": "BLOCKED_GOVERNANCE",
+      "reason": "Claim, canon, public, publication, TAF4, TAF8, S1, and cross-repo movements remain blocked.",
+      "selected": false
+    }
+  ],
+  "gate_decisions": [
+    {
+      "gate_id": "t580_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T580 supplies closeout authority."
+    },
+    {
+      "gate_id": "package_closed_and_parked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The TAF11 package is closed and parked as limited review material."
+    },
+    {
+      "gate_id": "evidence_only_reopen_conditions_named",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Four concrete evidence-only reopen conditions are named and none is present."
+    },
+    {
+      "gate_id": "promotion_by_momentum_blocked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Closeout cannot promote the package by momentum."
+    },
+    {
+      "gate_id": "w192_routed_separately",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "W192 is routed to a separate capability gate."
+    },
+    {
+      "gate_id": "protected_movements_blocked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Protected truth and governance movements remain blocked."
+    }
+  ],
+  "not_claimed": "T581 does not establish a source law, promote TAF11, prove shadow protection, derive spacetime, move claim status or Canon Index tiers, change canon verdicts or public posture, authorize publication, move TAF4 or TAF8, promote S1, or move cross-repo truth. It closes and parks the TAF11 review package and routes W192 to a separate gate.",
+  "old_route_next_packet": "none",
+  "package_closed": true,
+  "package_parked": true,
+  "package_status": "TAF11_REVIEW_PACKAGE_CLOSED_AND_PARKED",
+  "recommended_next": "Keep the TAF11 package parked. Reopen it only when one named condition arrives with concrete evidence. Evaluate frozen W192 separately through t582_w192_record_conditioned_capability_discriminator_gate.",
+  "reopen_conditions": [
+    {
+      "condition_id": "new_domain_native_source_packet",
+      "current_evidence_present": false,
+      "evidence_required": "A new packet with a predeclared native source law, source-role fields, independent holdout, and completed native absorbers.",
+      "reason": "Only new domain-native evidence can reopen the source-law route.",
+      "reopens_old_package": true
+    },
+    {
+      "condition_id": "empirical_detector_manifest",
+      "current_evidence_present": false,
+      "evidence_required": "A predeclared data-bearing detector manifest with raw provenance, controls, and an independent axis.",
+      "reason": "Abstract detector pressure cannot substitute for a real manifest.",
+      "reopens_old_package": true
+    },
+    {
+      "condition_id": "finality_native_continuum_bridge",
+      "current_evidence_present": false,
+      "evidence_required": "A finality-native finite-to-continuum packet with causal, measure, covariance, and descent certificates.",
+      "reason": "The causal-set target remains separate until a bridge exists.",
+      "reopens_old_package": true
+    },
+    {
+      "condition_id": "cross_domain_shadow_protection_packet",
+      "current_evidence_present": false,
+      "evidence_required": "A domain-native nonidentity packet under the frozen T541 spine with typed transfer, direct preservation, and native absorbers.",
+      "reason": "A cross-domain packet opens its own gate; it does not retroactively promote or reopen the TAF11 package.",
+      "reopens_old_package": false
+    }
+  ],
+  "separate_packet": "t582_w192_record_conditioned_capability_discriminator_gate",
+  "source_law_earned": false,
+  "source_law_status": "SOURCE_LAW_NOT_EARNED_PACKAGE_CLOSEOUT_IS_NOT_PROMOTION",
+  "source_t580_selected_next_packet": "t581_domain_native_sheaf_transport_review_package_closeout_router",
+  "source_t580_verdict": "domain_native_sheaf_transport_external_panel_scope_closed_review_only",
+  "taf11_update": "TAF11 is closed and parked as limited review material. No unattended successor remains on the T559-T581 route.",
+  "taf8_update": "TAF8 remains open. W192 is a separate candidate packet and does not inherit support from the parked TAF11 package.",
+  "verdict": "domain_native_sheaf_transport_review_package_closed_parked_limited_review"
+}

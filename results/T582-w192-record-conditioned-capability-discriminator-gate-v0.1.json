@@ -1,0 +1,497 @@
+{
+  "absorber_matrix": [
+    {
+      "absorber_id": "readout_completion",
+      "fires": true,
+      "reason": "Adding psi to the completed shadow decides the changed task.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "explicit_state_completion",
+      "fires": true,
+      "reason": "The state-access field decides the capability delta.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "description_completion",
+      "fires": true,
+      "reason": "psi_access and psi_identifier screen off the task result.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "fixed_source_completion",
+      "fires": true,
+      "reason": "A fixed spinor family with delayed access reproduces the transition.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "resource_competency_completion",
+      "fires": true,
+      "reason": "Possession of psi is the one changed task resource.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "latch_substrate_completion",
+      "fires": true,
+      "reason": "The frozen state is an explicit substrate field without noncompletion.",
+      "status": "FIRES"
+    },
+    {
+      "absorber_id": "joint_record_completion",
+      "fires": false,
+      "reason": "It fires if another holder supplies psi.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "absorber_id": "finality_label_completion",
+      "fires": false,
+      "reason": "It fires if frozen or admitted is the separator.",
+      "status": "CONDITIONAL"
+    },
+    {
+      "absorber_id": "causal_domain_completion",
+      "fires": false,
+      "reason": "No causal domain or transport law is supplied.",
+      "status": "NOT_TESTABLE"
+    },
+    {
+      "absorber_id": "transition_menu_completion",
+      "fires": false,
+      "reason": "The frozen menu is identical; the changed-menu control must absorb.",
+      "status": "CONTROL_ONLY"
+    },
+    {
+      "absorber_id": "law_sector_completion",
+      "fires": false,
+      "reason": "No theorem makes completed state access physically inadmissible.",
+      "status": "NOT_DEFEATED"
+    },
+    {
+      "absorber_id": "gauge_basis_completion",
+      "fires": false,
+      "reason": "The native quotient is absent.",
+      "status": "NOT_TESTABLE"
+    },
+    {
+      "absorber_id": "spectral_dynamical_absorber",
+      "fires": false,
+      "reason": "The native retarded response is absent.",
+      "status": "BLOCKS_PHYSICAL_READING"
+    }
+  ],
+  "action_dependencies": {
+    "action2_native_source_and_type_evidence_present": false,
+    "action3_noncompletion_evidence_present": false,
+    "missing_evidence_never_defaults_true": true,
+    "positive_verdict_requires_both": true
+  },
+  "artifact": "T582-w192-record-conditioned-capability-discriminator-gate-v0.1",
+  "blockers": [
+    "access_complete_and_intervention_equality_not_earned",
+    "physical_boundary_not_forced",
+    "action2_native_source_and_type_evidence_absent",
+    "action3_fixed_source_noncompletion_evidence_absent",
+    "retarded_physics_not_ready"
+  ],
+  "capability_delta": [
+    "record_conditioned_vertex_lift"
+  ],
+  "cases": [
+    {
+      "action_or_el_residual": "ABSENT",
+      "boundary_data_hash": "ABSENT",
+      "case_id": "w192_before_psi_access",
+      "formation_evidence_hash": "ABSENT",
+      "formation_mode": "FIXED_FAMILY_ACCESS_WITHHELD",
+      "gauge_orbit_identifier": "ABSENT",
+      "psi_access": false,
+      "psi_exists": "UNKNOWN_NOT_SUPPLIED",
+      "psi_identifier": "ABSENT",
+      "psi_provenance": "ABSENT"
+    },
+    {
+      "action_or_el_residual": "ABSENT",
+      "boundary_data_hash": "ABSENT",
+      "case_id": "w192_after_psi_access",
+      "formation_evidence_hash": "ABSENT",
+      "formation_mode": "FIXED_FAMILY_ACCESS_GRANTED",
+      "gauge_orbit_identifier": "ABSENT",
+      "psi_access": true,
+      "psi_exists": "PACKET_SUPPLIED",
+      "psi_identifier": "frozen_K_positive_record_spinor",
+      "psi_provenance": "PACKET_DECLARED"
+    }
+  ],
+  "claim_labels": [
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The proxy task delta is exactly: record_conditioned_vertex_lift."
+    },
+    {
+      "confidence": "high",
+      "label": "COMPUTED",
+      "text": "The current W192 fixture verdict is EXPLICIT_STATE_RESOURCE_COMPLETION."
+    },
+    {
+      "confidence": "high",
+      "label": "ARGUED",
+      "text": "The native response must pass type, quotient, and retarded stages in order."
+    },
+    {
+      "confidence": "high",
+      "label": "BLOCKED",
+      "text": "A positive capability reading waits for independent Action 2 and Action 3 evidence."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger update is earned. T582 is a finite cross-domain stress-test gate whose current result is completion absorption.",
+  "construction_ledger": {
+    "ambient_signature": [
+      9,
+      5
+    ],
+    "inner_product": "native_Krein",
+    "native_adjoint_current": "absent",
+    "native_gauge_real_form": "Sp_32_32_H_not_instantiated",
+    "native_phi_ad": "absent",
+    "observer_section": [
+      0,
+      1,
+      2,
+      9
+    ],
+    "observer_section_signature": [
+      3,
+      1
+    ],
+    "proxy_central_no_go_scope": "V_to_V_tensor_S_only",
+    "proxy_to_native_transfer_allowed": false,
+    "spinor_space": "complex_C128",
+    "written_phi_nullity": 256,
+    "written_phi_rank": 512,
+    "written_phi_shape": [
+      512,
+      768
+    ],
+    "written_phi_surjective": true
+  },
+  "control_results": [
+    {
+      "control_id": "no_psi_no_psi",
+      "outcome": "NO_CAPABILITY_DIFFERENCE",
+      "passed": true,
+      "reason": "Matching absent resources remove the delta."
+    },
+    {
+      "control_id": "psi_psi",
+      "outcome": "NO_CAPABILITY_DIFFERENCE",
+      "passed": true,
+      "reason": "Matching supplied resources remove the delta."
+    },
+    {
+      "control_id": "proxy_central_failure",
+      "outcome": "EXACT_FAIL_BOTH",
+      "passed": true,
+      "reason": "The state-independent proxy task fails in both cases."
+    },
+    {
+      "control_id": "arbitrary_v_surjectivity",
+      "outcome": "PASS_BOTH_FIBER_DIM_256",
+      "passed": true,
+      "reason": "The target is independent of psi."
+    },
+    {
+      "control_id": "operator_only_shell",
+      "outcome": "PASS_SAME_OUTPUT",
+      "passed": true,
+      "reason": "The operator shell is common to both cases."
+    },
+    {
+      "control_id": "fixed_richer_source_delayed_access",
+      "outcome": "FIXED_SOURCE_COMPLETION_FIRES",
+      "passed": true,
+      "reason": "Delayed access reproduces the after task."
+    },
+    {
+      "control_id": "completed_shadow",
+      "outcome": "READOUT_STATE_COMPLETION_FIRES",
+      "passed": true,
+      "reason": "Adding psi restores factorization."
+    },
+    {
+      "control_id": "changed_menu",
+      "outcome": "TRANSITION_MENU_COMPLETION_FIRES",
+      "passed": true,
+      "reason": "A menu change cannot count as a capability residue."
+    },
+    {
+      "control_id": "missing_native_response",
+      "outcome": "UNTYPED_BOTH",
+      "passed": true,
+      "reason": "No proxy result fills native response fields."
+    },
+    {
+      "control_id": "action2_only",
+      "outcome": "WAITING_ACTION_3",
+      "passed": true,
+      "reason": "Action 2 cannot substitute for Action 3."
+    },
+    {
+      "control_id": "action3_only",
+      "outcome": "WAITING_ACTION_2",
+      "passed": true,
+      "reason": "Action 3 cannot substitute for Action 2."
+    },
+    {
+      "control_id": "synthetic_complete",
+      "outcome": "PHYSICALLY_FORCED_CAPABILITY_REVIEW_CANDIDATE",
+      "passed": true,
+      "reason": "Even a fully populated synthetic case reaches review-candidate status only."
+    }
+  ],
+  "deciding_fields": [
+    "psi_access",
+    "psi_identifier"
+  ],
+  "equality_certificates": [
+    {
+      "certificate_id": "structural_observation_equality",
+      "outcome": "PASS_UNDERDESCRIBED_FOR_CAPABILITY",
+      "passed": true,
+      "reason": "H, S, K, Phi_H, C_T, rank, nullity, and shell facts match."
+    },
+    {
+      "certificate_id": "access_complete_observation_equality",
+      "outcome": "FAIL_CAPABILITY_DECIDING_RESOURCE_DIFFERS",
+      "passed": false,
+      "reason": "psi_access, identifier, and provenance differ."
+    },
+    {
+      "certificate_id": "all_region_supported_intervention_equality",
+      "outcome": "UNAVAILABLE_RECORD_INTERVENTION_AND_RESPONSE_MODEL_ABSENT",
+      "passed": false,
+      "reason": "The record-conditioned intervention is unsupported before access and no response model exists."
+    }
+  ],
+  "fixed_menu": [
+    "state_independent_spin_equivariant_proxy_lift",
+    "record_conditioned_vertex_lift",
+    "arbitrary_v_written_shiab_preimage",
+    "operator_only_written_proxy_shell",
+    "typed_adjoint_current_and_adapter",
+    "joint_gauge_quotient",
+    "current_carrier_overlap",
+    "independent_rank_minor_holdout",
+    "native_retarded_current_response"
+  ],
+  "fixed_source_null_reproduces": true,
+  "gate_decisions": [
+    {
+      "gate_id": "t581_separate_route_authority",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "T581 parks TAF11 and routes W192 separately."
+    },
+    {
+      "gate_id": "exact_one_task_delta",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Only the record-conditioned vertex lift changes."
+    },
+    {
+      "gate_id": "proxy_native_constructions_separated",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "The proxy no-go does not decide the native ad(P) task."
+    },
+    {
+      "gate_id": "equality_certificates_fail_closed",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Structural equality is separated from failed access-complete equality."
+    },
+    {
+      "gate_id": "completion_controls_pass",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "All immediate negative and dependency controls pass."
+    },
+    {
+      "gate_id": "response_stages_ordered",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Retarded readiness cannot precede quotient and type readiness."
+    },
+    {
+      "gate_id": "current_verdict_completion_absorbed",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Current W192 is classified as explicit state/resource completion."
+    },
+    {
+      "gate_id": "protected_movements_blocked",
+      "outcome": "PASS",
+      "passed": true,
+      "reason": "Claim, Canon, public, publication, TAF4, TAF8, S1, and cross-repo movements are blocked."
+    }
+  ],
+  "not_claimed": "T582 does not establish a physical C(R) difference, a source law, a native ad(P) current, a retarded response, shadow protection, issuance, or cross-repo identity. It does not move claims, Canon Index tiers, canon verdicts, public posture, publication, TAF4, TAF8, S1, or cross-repo truth.",
+  "positive_capability_verdict_allowed": false,
+  "region_record": {
+    "access_complete_shadow_fields": [
+      "structural_handles",
+      "psi_access",
+      "psi_identifier",
+      "psi_provenance"
+    ],
+    "boundary_mode": "E0_DECLARED",
+    "causal_domain": "ABSENT",
+    "detector_cadence": "ABSENT",
+    "gauge_quotient": "ABSENT",
+    "horizon": "ABSENT",
+    "information_ledger": "ABSENT",
+    "observer_section_is_causal_region": false,
+    "observer_worldline": "ABSENT",
+    "overlap_gluing_data": "ABSENT",
+    "physical_boundary_witness": "ABSENT",
+    "region_id": "R_W192",
+    "resource_cost_model": "ABSENT",
+    "structural_handles": [
+      "H",
+      "S",
+      "K",
+      "Phi_H",
+      "C_T_spin"
+    ],
+    "thermodynamic_ledger": "ABSENT"
+  },
+  "response_stages": [
+    {
+      "gauge_scope": "proxy",
+      "missing_fields": [
+        "representation_or_embedding",
+        "real_action",
+        "g_star_valued_variational_current",
+        "nondegenerate_invariant_form",
+        "ward_certificate",
+        "state_provenance",
+        "typed_adapter",
+        "identity_claim_status"
+      ],
+      "ready": false,
+      "reason": "Type readiness preserves proxy, embedded-subalgebra, and full-native scope labels.",
+      "stage_id": "TYPE_ADMISSIBLE"
+    },
+    {
+      "gauge_scope": "proxy",
+      "missing_fields": [
+        "joint_gauge_quotient",
+        "current_carrier_overlap",
+        "selector_ledger",
+        "independent_holdout",
+        "rival_construction"
+      ],
+      "ready": false,
+      "reason": "Quotient response cannot precede type admissibility.",
+      "stage_id": "QUOTIENT_RESPONSE_READY"
+    },
+    {
+      "gauge_scope": "proxy",
+      "missing_fields": [
+        "hamiltonian_or_kinetic_operator",
+        "retarded_prescription",
+        "rho_J",
+        "pole_sheets",
+        "thresholds",
+        "interacting_C_metric",
+        "perturbative_stability"
+      ],
+      "ready": false,
+      "reason": "Only this stage can support a physical-response reading.",
+      "stage_id": "RETARDED_PHYSICS_READY"
+    }
+  ],
+  "source_packet": "gu_w192_frozen_written_spinor_proxy",
+  "source_t581_package_parked": true,
+  "source_t581_verdict": "domain_native_sheaf_transport_review_package_closed_parked_limited_review",
+  "task_results": [
+    {
+      "after_outcome": "EXACT_FAIL_CENTRAL_PARITY",
+      "before_outcome": "EXACT_FAIL_CENTRAL_PARITY",
+      "capability_changes": false,
+      "construction": "written_spinor_proxy",
+      "reason": "Freezing psi does not create a full Spin-equivariant state-independent map.",
+      "task_id": "state_independent_spin_equivariant_proxy_lift"
+    },
+    {
+      "after_outcome": "PROXY_PASS_STABILIZER_EQUIVARIANT",
+      "before_outcome": "MISSING_RESOURCE",
+      "capability_changes": true,
+      "construction": "written_spinor_proxy_L_psi",
+      "reason": "The outcome is decided exactly by access to the frozen psi resource.",
+      "task_id": "record_conditioned_vertex_lift"
+    },
+    {
+      "after_outcome": "SURJECTIVE_PASS_FIBER_DIM_256",
+      "before_outcome": "SURJECTIVE_PASS_FIBER_DIM_256",
+      "capability_changes": false,
+      "construction": "written_spinor_proxy_Phi_H",
+      "reason": "The independently supplied v control excludes v(psi).",
+      "task_id": "arbitrary_v_written_shiab_preimage"
+    },
+    {
+      "after_outcome": "PROXY_PASS_OPERATOR_ONLY",
+      "before_outcome": "PROXY_PASS_OPERATOR_ONLY",
+      "capability_changes": false,
+      "construction": "written_spinor_proxy_C_T",
+      "reason": "The shell task excludes record-vertex visibility of the shell.",
+      "task_id": "operator_only_written_proxy_shell"
+    },
+    {
+      "after_outcome": "UNAVAILABLE_NATIVE_OBJECT_ABSENT",
+      "before_outcome": "UNAVAILABLE_NATIVE_OBJECT_ABSENT",
+      "capability_changes": false,
+      "construction": "native_adjoint_current",
+      "reason": "The proxy central no-go does not decide the absent ad(P) construction.",
+      "task_id": "typed_adjoint_current_and_adapter"
+    },
+    {
+      "after_outcome": "UNAVAILABLE",
+      "before_outcome": "UNAVAILABLE",
+      "capability_changes": false,
+      "construction": "native_joint_gauge_quotient",
+      "reason": "No joint gauge quotient is supplied.",
+      "task_id": "joint_gauge_quotient"
+    },
+    {
+      "after_outcome": "UNAVAILABLE",
+      "before_outcome": "UNAVAILABLE",
+      "capability_changes": false,
+      "construction": "native_current_carrier_overlap",
+      "reason": "Typed current and quotient evidence are prerequisites.",
+      "task_id": "current_carrier_overlap"
+    },
+    {
+      "after_outcome": "UNAVAILABLE",
+      "before_outcome": "UNAVAILABLE",
+      "capability_changes": false,
+      "construction": "independent_rank_minor_holdout",
+      "reason": "No independent holdout is supplied by the frozen packet.",
+      "task_id": "independent_rank_minor_holdout"
+    },
+    {
+      "after_outcome": "UNAVAILABLE",
+      "before_outcome": "UNAVAILABLE",
+      "capability_changes": false,
+      "construction": "native_retarded_current_response",
+      "reason": "No Hamiltonian, retarded rho_J, physical pole, or interacting C metric exists.",
+      "task_id": "native_retarded_current_response"
+    }
+  ],
+  "verdict": "EXPLICIT_STATE_RESOURCE_COMPLETION",
+  "verdict_trace": [
+    "schema invalid",
+    "no capability delta",
+    "delta factors through explicit state/resource access"
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "alternatives": [
+    "A formation-only intervention under the fixed access set {h1,h2} (add (p2,1)@h2, (p5,0)@h1, (p5,0)@h2) reproduces ALPHA's task-delta exactly; recorded as the witness for the simulability direction of fact 3, not issued as a separate method."
+  ],
+  "assumptions": [
+    "A1 (definition): TaF T1/FORMALISM record model — causal record graph, record tokens, causal-availability conditions 1-2, reconstruction rule, D1 profile.",
+    "A2 (construction_choice): threshold k=2 fixed before evaluation; evaluation event e_obs causally after all formation events; uniform erasure_cost=1.",
+    "A3 (construction_choice): the specific finite worlds W0, W_A, W_B and TV; designed witnesses, not sampled or physically measured systems.",
+    "A4 (implementation): the frozen Python program correctly implements A1 over A3.",
+    "A5 (definition): task achievability means reconstructibility under the reconstruction rule, TaF's native task semantics; any other task semantics is receiver mapping work."
+  ],
+  "claim": {
+    "convergence": "not_applicable",
+    "independence_scope": "The ALPHA and BETA evaluations share one implementation, one baseline world, and one task vocabulary; they are not evidentially independent methods, and this packet asserts no independence result of any type.",
+    "independence_type": "not_applicable",
+    "joint_argument_artifact": "blobs/taf001_semantics.md",
+    "method_count": 2,
+    "scope": "One designed finite world family (W0, W_A, W_B) and one five-task vocabulary in the TaF T1/FORMALISM record model at the pinned revision; exploration tier, formal-only grade; no physical substrate; no general theorem.",
+    "source_status_unchanged": true,
+    "statement": "In the designed finite witness family, under TaF's reconstruction rule and shared task vocabulary TV: (1) the access-only intervention ALPHA changes the achievability vector (1,0,0,0,1)->(1,1,0,0,0), so access enlargement is not monotone in task achievability; (2) the formation-only intervention BETA changes it (1,0,0,0,1)->(1,0,1,0,1) with access byte-identical; (3) the non-interchangeability of the two deltas is one-directional: no access-set change of W0 produces BETA's delta (exhaustive over all 16 access subsets), while a formation-only intervention under the same fixed access set reproduces ALPHA's delta exactly."
+  },
+  "construction_forks": [
+    {
+      "alternatives": [
+        "threshold-only semantics without the no-competing-value clause",
+        "receiver-side task semantics (e.g. POMDP/policy achievability); mapping is receiver work"
+      ],
+      "name": "task semantics",
+      "selected": "reconstructibility under TaF's reconstruction rule (fixed threshold k plus no-competing-value clause) — TaF's native task semantics (premise A5)",
+      "transfer_status": "untested"
+    },
+    {
+      "alternatives": [
+        "other finite thresholds"
+      ],
+      "name": "reconstruction threshold",
+      "selected": "k = 2, fixed before evaluation",
+      "transfer_status": "untested"
+    },
+    {
+      "alternatives": [
+        "sampled or physically measured systems"
+      ],
+      "name": "witness family",
+      "selected": "designed finite worlds W0, W_A, W_B and five-task vocabulary TV",
+      "transfer_status": "source_only"
+    }
+  ],
+  "evidence_structure": {
+    "method_dependency_edges": [
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M2",
+        "exact_statement": "M1 and M2 are two evaluations of one implementation (blobs/taf001_paired_intervention.py), one run."
+      },
+      {
+        "antecedent_method_id": "M2",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M1",
+        "exact_statement": "M1 and M2 are two evaluations of one implementation (blobs/taf001_paired_intervention.py), one run."
+      },
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_data",
+        "dependent_method_id": "M2",
+        "exact_statement": "M1 and M2 share the same baseline world W0 and task vocabulary TV."
+      },
+      {
+        "antecedent_method_id": "M2",
+        "dependency_type": "shares_data",
+        "dependent_method_id": "M1",
+        "exact_statement": "M1 and M2 share the same baseline world W0 and task vocabulary TV."
+      }
+    ],
+    "premise_ledger": [
+      {
+        "exact_statement": "The TaF T1/FORMALISM record model: causal record graph, record tokens (id, proposition, value, event, holder, erasure_cost), causal-availability conditions 1-2, reconstruction rule (fixed threshold plus no-competing-value clause), and D1 profile (A, R, B, C) as a componentwise preorder.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2"
+        ],
+        "premise_id": "A1",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/FORMALISM.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "Threshold k=2 fixed before evaluation; evaluation event e_obs causally after all formation events; uniform erasure_cost=1.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2"
+        ],
+        "premise_id": "A2",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "blobs/taf001_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The specific finite worlds W0, W_A, W_B and task vocabulary TV as enumerated in the semantics body and implemented in the computation blob; designed witnesses.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2"
+        ],
+        "premise_id": "A3",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "blobs/taf001_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The frozen Python program blobs/taf001_paired_intervention.py correctly implements the A1 model over the A3 worlds.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2"
+        ],
+        "premise_id": "A4",
+        "premise_type": "implementation",
+        "source_artifact_path": "blobs/taf001_paired_intervention.py",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "Task achievability means reconstructibility under the reconstruction rule; this is TaF's native task semantics, and mapping to any other task semantics is the receiver's work.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2"
+        ],
+        "premise_id": "A5",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/FORMALISM.md",
+        "source_status": "asserted_in_source"
+      }
+    ],
+    "raw_method_count": 2,
+    "raw_method_count_is_independence_count": false,
+    "shared_load_bearing_premise_ids": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ]
+  },
+  "integrity": {
+    "bundle_digest": "0b0085419670a619c9574cd2accf1c4347e68ab6f249762372d8626bd8256a94",
+    "canonicalization_profile": "ptc-frozen-bundle-v1",
+    "digest": "0b0085419670a619c9574cd2accf1c4347e68ab6f249762372d8626bd8256a94",
+    "frozen": true,
+    "hash_algorithm": "sha256",
+    "hash_scope": [
+      "blobs/FORMALISM.md",
+      "blobs/T46-open-causal-scarcity-synchronization-boundary.md",
+      "blobs/taf001_output.txt",
+      "blobs/taf001_paired_intervention.py",
+      "blobs/taf001_semantics.md"
+    ],
+    "manifest": [
+      {
+        "byte_length": 41204,
+        "content_sha256": "0e5034945d3e2205af7f4aa5bd4923e6f6eb0a9f14d9cc7a60262829abed1816",
+        "path": "blobs/FORMALISM.md"
+      },
+      {
+        "byte_length": 3905,
+        "content_sha256": "749258eb902c2836f23242afec169942de4f1204de9f269558e4034e0ab8a6eb",
+        "path": "blobs/T46-open-causal-scarcity-synchronization-boundary.md"
+      },
+      {
+        "byte_length": 2038,
+        "content_sha256": "c3ada0d8367f76638f1ffba7889a748bd355b8fcd4c67262236b08a496f060d0",
+        "path": "blobs/taf001_output.txt"
+      },
+      {
+        "byte_length": 8181,
+        "content_sha256": "e945cd89fc59e4ab644ec49d4513742ca17911edf760d239eabaebb2e1c8b34c",
+        "path": "blobs/taf001_paired_intervention.py"
+      },
+      {
+        "byte_length": 16235,
+        "content_sha256": "8c69b2c9bffdd088ba467a940f32722b652b7e987ab49bb39a978722c5fddeb2",
+        "path": "blobs/taf001_semantics.md"
+      }
+    ],
+    "manifest_digest": "b9a06ac273acd4fe3294267572a480eab45c8b096b7dac2da108f07b751e9d1f",
+    "packet_digest": "baf974fc92875774511428935327beec3ea8b4288d594a1f2e75c290a5562f9a"
+  },
+  "interfaces": [
+    {
+      "ownership_status": "target_owned",
+      "requested_datum": "classification of the ALPHA/BETA intervention pair under the receiver's preregistered frames",
+      "target_repository": "possibility-to-capability"
+    }
+  ],
+  "method_ledger": [
+    {
+      "artifact_path": "blobs/taf001_paired_intervention.py",
+      "artifact_revision": "e0414d6497e8344df811ce594648649ee1480ba4",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed)",
+      "label": "ALPHA evaluation (access-structure change, record inventory and graph fixed)",
+      "method_id": "M1",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "result": "Achievability vector over TV changes (1,0,0,0,1) -> (1,1,0,0,0): tau2 newly achievable, tau5 newly unachievable; access enlargement is not monotone in task achievability under the reconstruction rule.",
+      "verification": "Re-run blobs/taf001_paired_intervention.py; byte-compare stdout against blobs/taf001_output.txt."
+    },
+    {
+      "artifact_path": "blobs/taf001_paired_intervention.py",
+      "artifact_revision": "e0414d6497e8344df811ce594648649ee1480ba4",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed)",
+      "label": "BETA evaluation (record-formation change, observer access set fixed)",
+      "method_id": "M2",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "result": "Achievability vector over TV changes (1,0,0,0,1) -> (1,0,1,0,1): tau3 newly achievable via new formation events at already-accessible holders; tau4 stays unachievable because the no-competing-value clause binds.",
+      "verification": "Re-run blobs/taf001_paired_intervention.py; byte-compare stdout against blobs/taf001_output.txt."
+    }
+  ],
+  "nonclaims": [
+    "TaF assigns no diagnostic label of any kind to ALPHA or BETA under any receiver taxonomy; the intervention descriptions are mechanical statements of which TaF object was edited, and any label the receiver assigns is receiver-owned and must not be attributed to TaF.",
+    "No claim that reconstructibility is the correct or unique normalization of task capability; it is only TaF's native task semantics (A5).",
+    "No physics: nothing here derives relativity, c, measurement, thermodynamic cost, or real market/consensus behavior; T46's own constraint list is inherited.",
+    "No TaF claim status changes; no statement about GU, Temporal Issuance, or any other repository.",
+    "Two methods are not two independent evidential units (see evidence_structure).",
+    "The designed witnesses do not establish that real systems exhibit these deltas."
+  ],
+  "ownership": {
+    "authority_transfer": false,
+    "receiving_owner": "possibility-to-capability",
+    "source_owner": "time-as-finality"
+  },
+  "packet_id": "TAF-001",
+  "packet_status": "SOURCE_FROZEN",
+  "quantifiers": [
+    "Computed facts 1, 2, 4, 5 are existential: they hold for the specific designed finite worlds W0, W_A, W_B and task vocabulary TV at the pinned revision; no universal claim over worlds, thresholds, or task semantics is made.",
+    "Fact 3's unreachability direction is universal over all 16 access subsets of {h1,h2,h3,h4} in W0 only (finite exhaustive check); its simulability direction is witnessed by one explicit formation-only intervention in W0."
+  ],
+  "question": {
+    "decision_type": "other",
+    "exact_question": "Given one fixed finite baseline world W0 in the TaF T1/FORMALISM record model and one shared finite task vocabulary TV, what are the exact task-achievability consequences, under TaF's own reconstruction rule, of (ALPHA) enlarging one observer's bounded holder-access set with the causal record graph held byte-identical, versus (BETA) adding record-formation events to the causal record graph with the observer's access set held byte-identical?"
+  },
+  "residuals": [
+    "R-1: Within W0, formation-only edits can reproduce this access edit's task-delta while no access edit can reproduce the formation delta; whether this direction of simulability holds beyond this witness family is open, and no general theorem is claimed in either direction.",
+    "R-2: The tau5 non-monotonicity depends on the no-competing-value clause; under a task semantics without that clause the ALPHA delta would be monotone; clause sensitivity is not swept.",
+    "R-3: C_therm vs C divergence is not exercised (uniform erasure costs); cost-ordering evidence needs a further packet.",
+    "R-4: The composite ALPHA-then-BETA world is not computed; interventions are evaluated separately from W0.",
+    "R-5: T46's open-causal vs closed-synchronization scarcity distinction is used as vocabulary only; neither witness models propagation delay or quorum rules."
+  ],
+  "schema_version": "0.2",
+  "source": {
+    "artifact_paths": [
+      "blobs/FORMALISM.md",
+      "blobs/T46-open-causal-scarcity-synchronization-boundary.md",
+      "blobs/taf001_output.txt",
+      "blobs/taf001_paired_intervention.py",
+      "blobs/taf001_semantics.md"
+    ],
+    "claim_status": "exploration",
+    "evidence_grade": "formal only (finite executable toy model)",
+    "issued_at": "2026-07-16T00:00:00Z",
+    "repository": "time-as-finality",
+    "revision": "e0414d6497e8344df811ce594648649ee1480ba4",
+    "source_packet_id": "TAF-001"
+  },
+  "verification": {
+    "artifacts": [
+      "blobs/taf001_paired_intervention.py",
+      "blobs/taf001_output.txt",
+      "blobs/taf001_semantics.md"
+    ],
+    "replication_status": "Replicated. Re-executed by the receiver-side adversarial referee (2026-07-16): exit 0, output byte-identical to blobs/taf001_output.txt. Independently re-executed by the TaF steward at issuance (2026-07-16): exit 0, output byte-identical; fact-3 asymmetry independently confirmed by exhaustive access-set sweep and explicit alternative formation edit."
+  }
+}

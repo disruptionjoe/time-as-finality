@@ -1,0 +1,268 @@
+{
+  "artifact": "T586-record-capability-order-gate-v0.1",
+  "audits": [
+    {
+      "audit_id": "record_dependency_partial_order",
+      "passed": true,
+      "reason": "The produced-record dependency closure is irreflexive, transitive, antisymmetric, and matches the preregistered finite fixture.",
+      "relation": "STRICT_PARTIAL_ORDER"
+    },
+    {
+      "audit_id": "cycle_counterexample_rejected",
+      "passed": true,
+      "reason": "A two-event mutual record requirement creates reflexive closure and is rejected as circular.",
+      "relation": "CIRCULAR_RECORD_DEPENDENCY"
+    },
+    {
+      "audit_id": "clock_label_control",
+      "passed": true,
+      "reason": "Permuting presentation clock labels leaves the record order unchanged, and the clock-label total order is different.",
+      "relation": "CLOCK_LABELS_NOT_USED"
+    },
+    {
+      "audit_id": "entropy_scalar_control",
+      "passed": true,
+      "reason": "The event entropy ranks do not reproduce the record-dependency partial order.",
+      "relation": "NOT_ENTROPY_SCALAR_ORDER"
+    },
+    {
+      "audit_id": "causal_overread_control",
+      "passed": true,
+      "reason": "The supplied causal relation contains extra ordinary-causal edges not licensed by executable record dependence.",
+      "relation": "STRICT_SUBRELATION_OF_SUPPLIED_CAUSAL_ORDER"
+    },
+    {
+      "audit_id": "irreversible_computation_control",
+      "passed": true,
+      "reason": "At least one record-dependency edge connects two non-irreversible operations, so the order is not only an irreversibility flag.",
+      "relation": "NOT_REDUCED_TO_IRREVERSIBLE_OPERATION_FLAG"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "t585_verdict_available",
+      "passed": true,
+      "reason": "T585 supplies the review-only Landauer physical capability fixture."
+    },
+    {
+      "check_id": "t585_erasure_capability_nontrivial",
+      "passed": true,
+      "reason": "The fixed T585 work budget distinguishes erasure capability for known and max-entropy records."
+    },
+    {
+      "check_id": "all_events_executable_from_produced_records",
+      "passed": true,
+      "reason": "Every required record in the fixture is produced inside the declared event set."
+    },
+    {
+      "check_id": "record_order_is_partial_not_total",
+      "passed": true,
+      "reason": "The independent biased-reference event remains incomparable with the main chain."
+    },
+    {
+      "check_id": "controls_pass",
+      "passed": true,
+      "reason": "The partial-order result survives the cycle, clock, entropy, causal, and irreversibility controls."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger or Canon Index update is earned.",
+  "cycle_counterexample": {
+    "antisymmetric": false,
+    "closure": [
+      [
+        "cycle_a",
+        "cycle_a"
+      ],
+      [
+        "cycle_a",
+        "cycle_b"
+      ],
+      [
+        "cycle_b",
+        "cycle_a"
+      ],
+      [
+        "cycle_b",
+        "cycle_b"
+      ]
+    ],
+    "direct_edges": [
+      {
+        "record_id": "r_b",
+        "source_event": "cycle_b",
+        "target_event": "cycle_a",
+        "task_id": "use_b"
+      },
+      {
+        "record_id": "r_a",
+        "source_event": "cycle_a",
+        "target_event": "cycle_b",
+        "task_id": "use_a"
+      }
+    ],
+    "failure_class": "CIRCULAR_RECORD_DEPENDENCY",
+    "irreflexive": false,
+    "missing_required_records": [],
+    "strict_partial_order": false,
+    "transitive": true
+  },
+  "events": [
+    {
+      "causal_parents": [],
+      "clock_label": 20,
+      "entropy_rank": 0.1,
+      "event_id": "seed_known_record",
+      "executable_tasks": [
+        "certify_record_stability"
+      ],
+      "irreversible_operation": false,
+      "produced_records": [
+        "r_known_zero"
+      ],
+      "required_records": []
+    },
+    {
+      "causal_parents": [
+        "seed_known_record"
+      ],
+      "clock_label": 10,
+      "entropy_rank": 0.7,
+      "event_id": "copy_known_record",
+      "executable_tasks": [
+        "copy_stable_record"
+      ],
+      "irreversible_operation": false,
+      "produced_records": [
+        "r_copied_zero"
+      ],
+      "required_records": [
+        "r_known_zero"
+      ]
+    },
+    {
+      "causal_parents": [
+        "copy_known_record"
+      ],
+      "clock_label": 40,
+      "entropy_rank": 0.2,
+      "event_id": "erase_standard_record",
+      "executable_tasks": [
+        "erase_to_standard_record"
+      ],
+      "irreversible_operation": true,
+      "produced_records": [
+        "r_erased_standard"
+      ],
+      "required_records": [
+        "r_copied_zero"
+      ]
+    },
+    {
+      "causal_parents": [
+        "erase_standard_record",
+        "prepare_biased_reference"
+      ],
+      "clock_label": 30,
+      "entropy_rank": 0.4,
+      "event_id": "certify_erased_record",
+      "executable_tasks": [
+        "certify_record_stability"
+      ],
+      "irreversible_operation": false,
+      "produced_records": [
+        "r_erasure_certificate"
+      ],
+      "required_records": [
+        "r_erased_standard"
+      ]
+    },
+    {
+      "causal_parents": [
+        "seed_known_record"
+      ],
+      "clock_label": 50,
+      "entropy_rank": 0.3,
+      "event_id": "prepare_biased_reference",
+      "executable_tasks": [
+        "certify_record_stability"
+      ],
+      "irreversible_operation": false,
+      "produced_records": [
+        "r_biased_reference"
+      ],
+      "required_records": []
+    }
+  ],
+  "next_work": "Without a provenance-valid frozen p2c witness packet or a new physical source packet, the active lane has no higher-ranked unblocked hourly item. Future work should adjudicate such a packet or attack T586 with a stronger circularity, causal-collapse, or physical-naturalness counterexample.",
+  "not_claimed": "T586 does not derive physical time, prove temporal issuance, replace causal order, establish a universal capability measure, promote TAF3 or TAF8, move S1, assert source-law novelty, change public posture, publish externally, or move cross-repo truth.",
+  "order_report": {
+    "antisymmetric": true,
+    "closure": [
+      [
+        "copy_known_record",
+        "certify_erased_record"
+      ],
+      [
+        "copy_known_record",
+        "erase_standard_record"
+      ],
+      [
+        "erase_standard_record",
+        "certify_erased_record"
+      ],
+      [
+        "seed_known_record",
+        "certify_erased_record"
+      ],
+      [
+        "seed_known_record",
+        "copy_known_record"
+      ],
+      [
+        "seed_known_record",
+        "erase_standard_record"
+      ]
+    ],
+    "direct_edges": [
+      {
+        "record_id": "r_known_zero",
+        "source_event": "seed_known_record",
+        "target_event": "copy_known_record",
+        "task_id": "copy_stable_record"
+      },
+      {
+        "record_id": "r_copied_zero",
+        "source_event": "copy_known_record",
+        "target_event": "erase_standard_record",
+        "task_id": "erase_to_standard_record"
+      },
+      {
+        "record_id": "r_erased_standard",
+        "source_event": "erase_standard_record",
+        "target_event": "certify_erased_record",
+        "task_id": "certify_record_stability"
+      }
+    ],
+    "failure_class": "NONE",
+    "irreflexive": true,
+    "missing_required_records": [],
+    "strict_partial_order": true,
+    "transitive": true
+  },
+  "physical_result": "In the T585 one-bit memory fixture, produced-record dependence gives a noncircular finite event order for seed, copy, erase, and certify tasks while leaving an independent biased-reference event incomparable. The relation is invariant to clock-label presentation and is not the entropy scalar order, the supplied causal-order superset, or an irreversible-operation flag.",
+  "source_input": "T585 Landauer physical capability gate, used as review-only source-owned physical input.",
+  "source_input_checks": [
+    {
+      "check_id": "t585_verdict_available",
+      "passed": true,
+      "reason": "T585 supplies the review-only Landauer physical capability fixture."
+    },
+    {
+      "check_id": "t585_erasure_capability_nontrivial",
+      "passed": true,
+      "reason": "The fixed T585 work budget distinguishes erasure capability for known and max-entropy records."
+    }
+  ],
+  "theorem_statement": "Finite theorem: for a finite event set with unique produced-record ownership, no missing required records, and an acyclic produced-record dependency graph, the strict transitive closure of executable task dependencies is a strict partial order. A record-dependency cycle is the finite counterexample boundary.",
+  "verdict": "RECORD_CAPABILITY_ORDER_FINITE_PARTIAL_ORDER_REVIEW_ONLY"
+}

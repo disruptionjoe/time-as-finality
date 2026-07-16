@@ -31,7 +31,7 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status.",
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [
@@ -58,10 +58,11 @@
         },
         {
           "id": "TAF-RECORD-CAPABILITY-ORDER",
-          "state": "READY",
-          "priority_score": 29,
-          "hourly_eligible": true,
+          "state": "ENDPOINT_POSITIVE_REVIEW_ONLY",
+          "priority_score": 14,
+          "hourly_eligible": false,
           "activation": "A genuine physical capability model with explicit record dependencies survives its controls.",
+          "result": "T586: produced-record dependency among executable tasks yields a finite strict partial order in the Landauer memory fixture; the circularity counterexample is caught, and clock-label, entropy-rank, causal-superset, and irreversible-operation controls do not reproduce the order. Review-only; no temporal-order or claim-status movement.",
           "next_swing": "Use T585 only as a source-owned capability input. Define event A before B from a pre-temporal dependency of B's executable tasks on records produced by A. Prove partial-order properties or locate their failure, then compare the result with causal order, clock time, entropy production, memory, and irreversible computation.",
           "success_condition": "A noncircular invariant order is obtained and adds a precise distinction beyond coordinate time in the worked physical system.",
           "kill_condition": "Records or task dependence require a prior temporal order, producing circularity, or the construction reduces without residue to an already supplied causal order."

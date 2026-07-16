@@ -14,17 +14,22 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.data = json.loads(PORTFOLIO.read_text(encoding="utf-8"))
 
-    def test_active_lane_and_ready_work_exist(self) -> None:
+    def test_active_lane_frontier_state_is_explicit(self) -> None:
         active = [lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE"]
         self.assertEqual([lane["id"] for lane in active], [self.data["north_star_lane"]])
+        items = {item["id"]: item for item in active[0]["internal_work_items"]}
         ready = [
             item
             for item in active[0]["internal_work_items"]
             if item["state"] == "READY" and item["hourly_eligible"]
         ]
-        self.assertGreaterEqual(len(ready), 1)
-        selected = max(ready, key=lambda item: item["priority_score"])
-        self.assertEqual(selected["id"], "TAF-RECORD-CAPABILITY-ORDER")
+        self.assertEqual(ready, [])
+        self.assertEqual(
+            items["TAF-RECORD-CAPABILITY-ORDER"]["state"],
+            "ENDPOINT_POSITIVE_REVIEW_ONLY",
+        )
+        self.assertFalse(items["TAF-RECORD-CAPABILITY-ORDER"]["hourly_eligible"])
+        self.assertEqual(items["TAF-P2C-WITNESS-ADJUDICATION"]["state"], "GATED_FROZEN_PACKET")
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
         for lane in self.data["lanes"]:

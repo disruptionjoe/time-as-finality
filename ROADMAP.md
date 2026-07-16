@@ -15,12 +15,17 @@ erasure system: known, biased, and max-entropy records have law-derived reset
 costs, and the fixed work budget produces a nontrivial physical capability
 relation invariant under unit representation, bit-label gauge, and irrelevant
 metadata. Access, work-budget, and hidden-entropy overreads are absorbed by
-completion controls. No time, temporal order, issuance, source-law novelty,
-claim-ledger movement, Canon Index movement, canon verdict, public posture,
-publication, or cross-repo truth is earned. The next decisive work is the
-noncircular record-capability order. A provenance-valid p2c witness packet
-activates a separate TaF-owned capability adjudication, never an issuance
-verdict.
+completion controls. T586 then uses T585 only as source-owned input and defines
+a finite event order from executable task dependence on records produced by
+other events. In the Landauer memory fixture the produced-record dependency
+closure is a strict partial order; a mutual-record-dependency fixture is caught
+as circular, and clock-label, entropy-rank, causal-superset, and
+irreversible-operation controls do not reproduce the relation. No time,
+temporal order, issuance, source-law novelty, claim-ledger movement, Canon
+Index movement, canon verdict, public posture, publication, or cross-repo truth
+is earned. The active lane is now gated on a provenance-valid p2c witness
+packet, a stronger physical source packet, or a concrete falsifier for T586's
+circularity/causal-collapse/physical-naturalness boundary.
 
 Each material Progress run re-ranks these internal items before its receipt.
 Blocked and negative outcomes remain first-class results; difficulty is not a

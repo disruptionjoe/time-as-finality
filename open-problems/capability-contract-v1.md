@@ -24,6 +24,15 @@ next burden is whether record-dependent capability change can define a
 noncircular order rather than restating background time, entropy, access, or
 resources.
 
+T586 gives the first finite record-capability order gate over that burden. It
+defines event order from executable task dependence on records produced by
+other events and proves the finite closure is a strict partial order when the
+produced-record dependency graph is acyclic and all required records are
+supplied. The Landauer memory fixture survives clock-label, entropy-rank,
+causal-superset, and irreversible-operation controls, while a mutual-record
+dependency is rejected as circular. This is still review-only and does not
+derive physical time, temporal issuance, source-law novelty, or claim status.
+
 ## Purpose
 
 Capability language is too cheap unless the physical and operational context

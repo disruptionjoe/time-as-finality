@@ -31,36 +31,38 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 only as a finite review instrument. It fixes explicit contexts, Pareto envelopes, and basic controls, but it does not establish substantive representation invariance, a genuine physical capability measure, or time.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status.",
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [
         {
           "id": "TAF-CAPABILITY-INVARIANCE",
-          "state": "READY",
-          "priority_score": 28,
-          "hourly_eligible": true,
+          "state": "ENDPOINT_POSITIVE_REVIEW_ONLY",
+          "priority_score": 12,
+          "hourly_eligible": false,
+          "result": "T584: representation, gauge, and irrelevant-coarse-graining morphisms preserve the native capability envelope; task-vocabulary merge is the caught inadmissible counterexample.",
           "next_swing": "Lift T583 beyond label controls: define admissible representation, gauge, and irrelevant-coarse-graining morphisms on the capability contract, then prove invariance or produce the smallest counterexample. Include a nontrivial representation change that alters implementation while preserving physical content.",
           "success_condition": "Capability factors through a declared physical-equivalence quotient and remains nontrivial on at least one substantive model.",
           "kill_condition": "Equivalent physical descriptions yield different capability relations, or invariance is obtained only by choosing the quotient after seeing the desired classification."
         },
         {
           "id": "TAF-REAL-PHYSICAL-CAPABILITY",
-          "state": "READY_AFTER_INVARIANCE",
-          "priority_score": 27,
+          "state": "ENDPOINT_POSITIVE_REVIEW_ONLY",
+          "priority_score": 13,
           "hourly_eligible": false,
           "activation": "TAF-CAPABILITY-INVARIANCE reaches a decision-grade survivor or a source packet supplies a stronger native quotient.",
+          "result": "T585: one-bit Landauer-style memory erasure supplies a genuine physical capability fixture with unit, bit-label gauge, irrelevant-metadata, access, resource, and hidden-state controls; it remains review-only and earns no temporal order.",
           "next_swing": "Instantiate one genuine physical system with source-derived states, operations, resources, costs, records, access, gauge quotient, and measured or law-derived task performance. Compute the capability relation and run access, resource, hidden-state, and coarse-graining controls.",
           "success_condition": "The model agrees with ordinary physical time where expected while exposing an invariant capability distinction not reducible to coordinate labels or knowledge alone.",
           "kill_condition": "The result is fully explained by changed access, resources, task definition, state description, or a standard reachability relation with no added discrimination."
         },
         {
           "id": "TAF-RECORD-CAPABILITY-ORDER",
-          "state": "READY_AFTER_PHYSICAL_MODEL",
-          "priority_score": 26,
-          "hourly_eligible": false,
+          "state": "READY",
+          "priority_score": 29,
+          "hourly_eligible": true,
           "activation": "A genuine physical capability model with explicit record dependencies survives its controls.",
-          "next_swing": "Define event A before B from a pre-temporal dependency of B's executable tasks on records produced by A. Prove partial-order properties or locate their failure, then compare the result with causal order, clock time, entropy production, memory, and irreversible computation.",
+          "next_swing": "Use T585 only as a source-owned capability input. Define event A before B from a pre-temporal dependency of B's executable tasks on records produced by A. Prove partial-order properties or locate their failure, then compare the result with causal order, clock time, entropy production, memory, and irreversible computation.",
           "success_condition": "A noncircular invariant order is obtained and adds a precise distinction beyond coordinate time in the worked physical system.",
           "kill_condition": "Records or task dependence require a prior temporal order, producing circularity, or the construction reduces without residue to an already supplied causal order."
         },

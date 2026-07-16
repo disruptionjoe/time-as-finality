@@ -11,9 +11,18 @@ or move cross-repository truth.
 T584 adds the first finite invariance morphism gate over the contract. In that
 fixture, capability factors through admissible representation, gauge, and
 irrelevant-coarse-graining quotients, while a task-vocabulary merge is caught
-as an inadmissible counterexample. This is still review-only; the next burden
-is a genuine physical system with source-derived states, operations, resources,
-costs, records, access, quotient, and task performance.
+as an inadmissible counterexample.
+
+T585 supplies the first genuine physical instantiation: a one-bit
+Landauer-style memory erasure system with source-derived states, operations,
+resources, costs, records, access, quotient, and task performance. The fixed
+work budget distinguishes erasure capability for known, biased, and
+max-entropy records while preserving unit representation, bit-label gauge, and
+irrelevant-metadata invariance. Access, resource/budget, and hidden-entropy
+overreads are absorbed by completion controls. This remains review-only; the
+next burden is whether record-dependent capability change can define a
+noncircular order rather than restating background time, entropy, access, or
+resources.
 
 ## Purpose
 

@@ -9,11 +9,18 @@ review-only T-number scaffolds.
 T583 supplies the finite CapabilityContract v1 baseline. T584 adds the first
 finite invariance morphism gate: admissible representation, gauge, and
 irrelevant-coarse-graining morphisms preserve the native capability envelope,
-while a task-vocabulary merge is caught as an inadmissible counterexample. The
-next decisive work is one genuine physical instantiation of the surviving
-quotient and then the noncircular record-capability order. A
-provenance-valid p2c witness packet activates a separate TaF-owned capability
-adjudication, never an issuance verdict.
+while a task-vocabulary merge is caught as an inadmissible counterexample.
+T585 instantiates the surviving quotient in a one-bit Landauer-style memory
+erasure system: known, biased, and max-entropy records have law-derived reset
+costs, and the fixed work budget produces a nontrivial physical capability
+relation invariant under unit representation, bit-label gauge, and irrelevant
+metadata. Access, work-budget, and hidden-entropy overreads are absorbed by
+completion controls. No time, temporal order, issuance, source-law novelty,
+claim-ledger movement, Canon Index movement, canon verdict, public posture,
+publication, or cross-repo truth is earned. The next decisive work is the
+noncircular record-capability order. A provenance-valid p2c witness packet
+activates a separate TaF-owned capability adjudication, never an issuance
+verdict.
 
 Each material Progress run re-ranks these internal items before its receipt.
 Blocked and negative outcomes remain first-class results; difficulty is not a

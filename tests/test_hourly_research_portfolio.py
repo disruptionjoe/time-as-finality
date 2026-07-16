@@ -24,12 +24,12 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         ]
         self.assertGreaterEqual(len(ready), 1)
         selected = max(ready, key=lambda item: item["priority_score"])
-        self.assertEqual(selected["id"], "TAF-CAPABILITY-INVARIANCE")
+        self.assertEqual(selected["id"], "TAF-RECORD-CAPABILITY-ORDER")
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
         for lane in self.data["lanes"]:
             for item in lane.get("internal_work_items", []):
-                if not item["hourly_eligible"]:
+                if item["state"].startswith("READY_AFTER") or item["state"].startswith("GATED"):
                     self.assertTrue(item.get("activation"))
         contract = self.data["selection_contract"]
         self.assertTrue(contract["select_highest_ranked_unblocked_item"])

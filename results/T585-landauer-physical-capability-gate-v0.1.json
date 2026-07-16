@@ -1,0 +1,430 @@
+{
+  "artifact": "T585-landauer-physical-capability-gate-v0.1",
+  "assessments": [
+    {
+      "capability_relation": "SUPERSET",
+      "completion_class": "ACCESS_COMPLETION",
+      "context_differences": [
+        "access_profile",
+        "access_provenance"
+      ],
+      "pair_id": "blind_distribution_access_control",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A named completion or context difference reproduces the capability delta.",
+      "verdict": "ACCESS_COMPLETION"
+    },
+    {
+      "capability_relation": "SUPERSET",
+      "completion_class": "RESOURCE_BUDGET_COMPLETION",
+      "context_differences": [
+        "resource_provenance",
+        "cost_error_budget"
+      ],
+      "pair_id": "low_work_store_budget_control",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A named completion or context difference reproduces the capability delta.",
+      "verdict": "RESOURCE_BUDGET_COMPLETION"
+    },
+    {
+      "capability_relation": "SUPERSET",
+      "completion_class": "NATIVE_STATE_COMPLETION",
+      "context_differences": [],
+      "pair_id": "same_display_hidden_entropy_completion",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A named completion or context difference reproduces the capability delta.",
+      "verdict": "NATIVE_STATE_COMPLETION"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": "source_law_capability_distinction",
+      "completion_class": "SOURCE_STATE_INDUCED_PHYSICAL_CAPABILITY_DELTA",
+      "passed": true,
+      "reason": "A low-entropy memory can erase inside the fixed work budget while a max-entropy memory cannot.",
+      "relation": "SUPERSET"
+    },
+    {
+      "audit_id": "joule_unit_representation",
+      "completion_class": "RENAMING_OR_REPRESENTATION_EQUIVALENCE",
+      "passed": true,
+      "reason": "Joule costs at the reference temperature normalize back to the same kBT ln 2 units.",
+      "relation": "EQUIVALENT"
+    },
+    {
+      "audit_id": "bit_label_gauge_swap",
+      "completion_class": "RENAMING_OR_GAUGE_EQUIVALENCE",
+      "passed": true,
+      "reason": "Swapping bit labels changes p_one to 1-p_one but preserves entropy and the native envelope.",
+      "relation": "EQUIVALENT"
+    },
+    {
+      "audit_id": "irrelevant_metadata_coarse_graining",
+      "completion_class": "IRRELEVANT_COARSE_GRAINING",
+      "passed": true,
+      "reason": "Display and sensor fields drop while entropy, encoding, and record stability remain fixed.",
+      "relation": "EQUIVALENT"
+    },
+    {
+      "audit_id": "blind_distribution_access_control",
+      "completion_class": "ACCESS_COMPLETION",
+      "passed": true,
+      "reason": "Removing distribution access forces a worst-case reset accounting and is classified as access completion.",
+      "relation": "SUPERSET"
+    },
+    {
+      "audit_id": "low_work_store_budget_control",
+      "completion_class": "RESOURCE_BUDGET_COMPLETION",
+      "passed": true,
+      "reason": "Changing the work budget removes feasible erasure and is classified as resource/budget completion.",
+      "relation": "SUPERSET"
+    },
+    {
+      "audit_id": "same_display_hidden_entropy_completion",
+      "completion_class": "NATIVE_STATE_COMPLETION",
+      "passed": true,
+      "reason": "Same display label with different source entropy is absorbed by native thermodynamic state completion.",
+      "relation": "SUPERSET"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "landauer_costs_ordered",
+      "passed": true,
+      "reason": "The source law separates known, biased, and max-entropy one-bit memories."
+    },
+    {
+      "check_id": "physical_capability_nontrivial",
+      "passed": true,
+      "reason": "Under the fixed work budget, erasure is feasible for the known record but not for the max-entropy record."
+    },
+    {
+      "check_id": "unit_representation_invariant",
+      "passed": true,
+      "reason": "Changing from normalized units to joules and back preserves the capability envelope."
+    },
+    {
+      "check_id": "bit_label_gauge_invariant",
+      "passed": true,
+      "reason": "The bit-label gauge swap preserves the entropy-derived capability envelope."
+    },
+    {
+      "check_id": "irrelevant_coarse_graining_invariant",
+      "passed": true,
+      "reason": "Display and sensor fields declared irrelevant do not alter the physical payload."
+    },
+    {
+      "check_id": "access_control_absorbed",
+      "passed": true,
+      "reason": "Loss of distribution access is not counted as intrinsic capability change."
+    },
+    {
+      "check_id": "resource_budget_control_absorbed",
+      "passed": true,
+      "reason": "A changed work budget is not counted as intrinsic capability change."
+    },
+    {
+      "check_id": "hidden_state_completion_absorbed",
+      "passed": true,
+      "reason": "Hidden entropy differences are handled as native source-state completion."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger or Canon Index update is earned.",
+  "contexts": [
+    {
+      "access_profile": [
+        "memory_record_distribution",
+        "record_readout",
+        "thermal_bath_temperature",
+        "work_store"
+      ],
+      "access_provenance": "declared_local_lab_memory_access",
+      "budget": {
+        "communication": 1.0,
+        "energy": 0.75,
+        "error": 0.01,
+        "memory": 1.0,
+        "time": 5.0
+      },
+      "context_id": "ctx_landauer_memory",
+      "gauge_quotient": "logical_bit_label_swap",
+      "gauge_representative": "canonical",
+      "horizon": "single_reset_cycle",
+      "irrelevant_coarse_graining_fields": [
+        "display_label",
+        "sensor_serial",
+        "coordinate_name"
+      ],
+      "menu_provenance": "law_derived_landauer_bound",
+      "native_comparison": "task_indexed_pareto_cover",
+      "observer_id": "O_local_controller",
+      "operation_menu": [
+        "landauer_reset",
+        "stability_readout"
+      ],
+      "physical_equivalence": "unit_representation_and_bit_label_swap",
+      "region_id": "R_memory_cell",
+      "representation_label": "canonical",
+      "resource_provenance": "fixed_thermal_bath_and_work_store",
+      "source_theory": "one_bit_memory_landauer_erasure",
+      "task_family": [
+        "erase_to_standard_record",
+        "certify_record_stability"
+      ]
+    },
+    {
+      "access_profile": [
+        "record_readout",
+        "thermal_bath_temperature",
+        "work_store"
+      ],
+      "access_provenance": "record_distribution_not_accessible",
+      "budget": {
+        "communication": 1.0,
+        "energy": 0.75,
+        "error": 0.01,
+        "memory": 1.0,
+        "time": 5.0
+      },
+      "context_id": "ctx_blind_distribution_access",
+      "gauge_quotient": "logical_bit_label_swap",
+      "gauge_representative": "canonical",
+      "horizon": "single_reset_cycle",
+      "irrelevant_coarse_graining_fields": [
+        "display_label",
+        "sensor_serial",
+        "coordinate_name"
+      ],
+      "menu_provenance": "law_derived_landauer_bound",
+      "native_comparison": "task_indexed_pareto_cover",
+      "observer_id": "O_local_controller",
+      "operation_menu": [
+        "landauer_reset",
+        "stability_readout"
+      ],
+      "physical_equivalence": "unit_representation_and_bit_label_swap",
+      "region_id": "R_memory_cell",
+      "representation_label": "canonical",
+      "resource_provenance": "fixed_thermal_bath_and_work_store",
+      "source_theory": "one_bit_memory_landauer_erasure",
+      "task_family": [
+        "erase_to_standard_record",
+        "certify_record_stability"
+      ]
+    },
+    {
+      "access_profile": [
+        "memory_record_distribution",
+        "record_readout",
+        "thermal_bath_temperature",
+        "work_store"
+      ],
+      "access_provenance": "declared_local_lab_memory_access",
+      "budget": {
+        "communication": 1.0,
+        "energy": 0.3,
+        "error": 0.01,
+        "memory": 1.0,
+        "time": 5.0
+      },
+      "context_id": "ctx_low_work_budget",
+      "gauge_quotient": "logical_bit_label_swap",
+      "gauge_representative": "canonical",
+      "horizon": "single_reset_cycle",
+      "irrelevant_coarse_graining_fields": [
+        "display_label",
+        "sensor_serial",
+        "coordinate_name"
+      ],
+      "menu_provenance": "law_derived_landauer_bound",
+      "native_comparison": "task_indexed_pareto_cover",
+      "observer_id": "O_local_controller",
+      "operation_menu": [
+        "landauer_reset",
+        "stability_readout"
+      ],
+      "physical_equivalence": "unit_representation_and_bit_label_swap",
+      "region_id": "R_memory_cell",
+      "representation_label": "canonical",
+      "resource_provenance": "same_bath_low_work_store",
+      "source_theory": "one_bit_memory_landauer_erasure",
+      "task_family": [
+        "erase_to_standard_record",
+        "certify_record_stability"
+      ]
+    }
+  ],
+  "envelopes": [
+    {
+      "context_id": "ctx_landauer_memory",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        },
+        {
+          "communication_cost": 0.0,
+          "energy_cost": 0.0,
+          "error": 0.001,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.999,
+          "task_id": "erase_to_standard_record",
+          "time_cost": 1.0
+        }
+      ],
+      "state_id": "known_zero_record"
+    },
+    {
+      "context_id": "ctx_landauer_memory",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        },
+        {
+          "communication_cost": 0.0,
+          "energy_cost": 0.468995594,
+          "error": 0.001,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.999,
+          "task_id": "erase_to_standard_record",
+          "time_cost": 1.468995594
+        }
+      ],
+      "state_id": "biased_record"
+    },
+    {
+      "context_id": "ctx_landauer_memory",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        }
+      ],
+      "state_id": "max_entropy_record"
+    },
+    {
+      "context_id": "ctx_joule_representation",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        },
+        {
+          "communication_cost": 0.0,
+          "energy_cost": 0.468995594,
+          "error": 0.001,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.999,
+          "task_id": "erase_to_standard_record",
+          "time_cost": 1.468995594
+        }
+      ],
+      "state_id": "biased_record_joule_representation"
+    },
+    {
+      "context_id": "ctx_bit_label_swapped",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        },
+        {
+          "communication_cost": 0.0,
+          "energy_cost": 0.468995594,
+          "error": 0.001,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.999,
+          "task_id": "erase_to_standard_record",
+          "time_cost": 1.468995594
+        }
+      ],
+      "state_id": "biased_record_bit_label_swapped"
+    },
+    {
+      "context_id": "ctx_blind_distribution_access",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        }
+      ],
+      "state_id": "known_zero_blind_distribution"
+    },
+    {
+      "context_id": "ctx_low_work_budget",
+      "native_structure": "task_indexed_pareto_preorder",
+      "points": [
+        {
+          "communication_cost": 0.1,
+          "energy_cost": 0.05,
+          "error": 0.002,
+          "memory_cost": 0.1,
+          "protocol_id": "canonical_protocol",
+          "success": 0.995,
+          "task_id": "certify_record_stability",
+          "time_cost": 0.2
+        }
+      ],
+      "state_id": "biased_low_work_budget"
+    }
+  ],
+  "landauer_costs": {
+    "biased_record": 0.468995594,
+    "biased_record_bit_label_swapped": 0.468995594,
+    "known_zero_record": 0.0,
+    "max_entropy_record": 1.0
+  },
+  "next_work": "Use the physical capability model only as a source-owned input for the next burden: test whether record-dependent capability change can define a noncircular order rather than restating background time, entropy, access, or resources.",
+  "not_claimed": "T585 does not derive time, temporal order, issuance, a universal capability measure, a new thermodynamic theorem, a source law beyond the declared Landauer-style input, public posture, publication, TAF3, TAF8, S1, or cross-repo truth.",
+  "physical_result": "The surviving capability quotient has a concrete physical instantiation: a fixed work budget distinguishes erasure capability for known, biased, and max-entropy one-bit memory states while remaining invariant under unit representation, bit-label gauge, and declared irrelevant metadata.",
+  "source_contract": "T583 CapabilityContract v1 plus T584 invariance quotient",
+  "source_law": "Minimum reset work is represented in normalized kBT ln 2 units as the binary entropy of the one-bit memory state.",
+  "source_system": "one_bit_memory_erasure_with_thermal_bath_and_work_store",
+  "verdict": "LANDAUER_PHYSICAL_CAPABILITY_INSTANTIATES_QUOTIENT_REVIEW_ONLY"
+}

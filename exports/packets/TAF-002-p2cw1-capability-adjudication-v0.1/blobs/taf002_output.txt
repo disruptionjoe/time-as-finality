@@ -1,0 +1,31 @@
+TAF-002 adjudication computation: frozen P2C-W1 counterfactual pair
+in the TaF T1 record model + T583/T584 capability semantics
+==========================================================================
+declared frame, matched budget=50, horizon=100:
+  S branch achievability (tau_Q, tau_I, tau_P) = (1, 1, 1)
+  N branch achievability (tau_Q, tau_I, tau_P) = (0, 0, 0)
+[E] b1-pair-delta: PASS -- S=(1, 1, 1) vs N=(0, 0, 0): the declared pair separates on all three signature tasks under the reconstruction rule
+  S record D1 profile (A,R,B,C) = (1, 1, 1, 1), C_therm = 8
+[T] b2-d1-profile-reported: PASS -- single-holder S record carries a nonzero graph-reversal cost with macroscopic C_therm; componentwise, no scalarization
+[E] c1-access-control: PASS -- N with maximally enlarged access stays (0, 0, 0): the delta does not factor through the observer-access side (not an ALPHA edit)
+[E] c2-resource-control: PASS -- N with budget x10^6 stays (0, 0, 0): tau_Q/tau_I fail at every budget; tau_P fails because any N holding strategy has positive draw
+[E] c3-hidden-state-control: PASS -- adding latent auxiliary records to N cannot manufacture quantization, invariance, or zero-cost persistence
+[E] c4-admissible-reformulation: PASS -- unit-representation and holder-gauge morphisms preserve both branch envelopes; the pair delta survives the declared quotient
+[E] c5-coarse-graining: PASS -- removing declared-irrelevant telemetry preserves the physical payload and the attainable envelope
+[F] c6-task-merge-rejected: PASS -- the task-vocabulary merge collapses distinct native envelopes (1, 1, 0) and (1, 0, 0) to the same merged value 1; envelope structure is destroyed, so the merge is inadmissible (protects: c4-admissible-reformulation)
+[E] c7-label-swap-neutrality: PASS -- presenting the branches in swapped order moves the verdict with the physics, not with the branch label
+[F] c8-label-keyed-scorer-fails: PASS -- a label-keyed scorer mis-scores S physics wearing an N label; the real evaluator does not consume the label (protects: c7-label-swap-neutrality)
+[E] c9-whole-family-absorbs: PASS -- a single declared context whose region contains the S phase and whose menu crosses Tc already contains the task family: no two-context delta exists under that declaration (exhibited, not endorsed)
+[F] c10-whole-family-needs-target-phase: PASS -- the same single-context move without the target phase does not absorb the candidate: absorption is caused specifically by admitting the target phase into the declared region (protects: c9-whole-family-absorbs)
+[E] c11-formation-side-carrier: PASS -- with access sets and budgets byte-identical across the pair, the entire delta lives in record-formation/erasure structure: which tokens are formable, their lattice, invariance, draw, lifetime, and erasure cost (the TAF-001 BETA-side object)
+[E] c12-persistence-grade-cap: PASS -- beyond the literature-graded metastability cap (horizon 1000000000000+1) the model does NOT assert tau_P for S: persistence is 'effectively infinite' at literature grade, not provably infinite
+==========================================================================
+headline: 10 [E] + 3 [F] evidential checks; 1 [T] theorem-consequence checks (no evidential weight)
+computed verdict inputs:
+  V1 pair delta in declared frame: S=(1,1,1) vs N=(0,0,0)
+  V2 not access-side (c1), not resource-side (c2), not hidden-state (c3)
+  V3 survives declared admissible reformulations (c4, c5; guarded by c6)
+  V4 carrier is record-formation/erasure structure under identical access+budget (c11)
+  V5 single-context whole-family declaration absorbs the delta (c9), specifically via admitting the target phase (c10); the pair verdict is frame-indexed only
+  V6 tau_P graded: capped at literature metastability horizon (c12)
+exit 0

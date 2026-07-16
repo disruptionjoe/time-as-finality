@@ -73,6 +73,7 @@
           "priority_score": 25,
           "hourly_eligible": false,
           "activation": "A provenance-valid p2c witness packet fixes one construction, physical region, tasks, resources, costs, records, access, quotient, and holdout without a desired capability verdict.",
+          "result": "P2C-W1 (superconducting ring, sha256-manifest-pinned) adjudicated 2026-07-16 and returned as frozen packet TAF-002 (exports/packets/TAF-002-p2cw1-capability-adjudication-v0.1/): split verdict - capability change AFFIRMED frame-indexed to the declared budget-matched counterfactual pair (delta survives T584 reformulations and access/resource/hidden-state controls); factor named as record-formation/erasure structure (TAF-001 BETA side, non-deflationary in TaF semantics); the fixed-family absorber is NOT adjudicable by TaF standards (frame-taking contract) and stays with TI. Exploration tier, review-only; gate re-arms for any future provenance-valid witness.",
           "next_swing": "Apply the best surviving TaF capability object to the frozen witness, preserve construction forks, and return PASS, FAIL, BLOCKED, INDETERMINATE, or contract revision with exact evidence.",
           "success_condition": "The same frozen witness exhibits an invariant physical capability change under the preregistered contract.",
           "kill_condition": "The delta disappears under an admitted access, resource, state, gauge, task, or completion control."

@@ -6,10 +6,12 @@ The active hourly portfolio is `steward/research-portfolio.json`. The protected
 technical lane is `CAPABILITY-TO-TEMPORAL-ORDER`, not continued production of
 review-only T-number scaffolds.
 
-T583 supplies the finite CapabilityContract v1 baseline. The next decisive
-work is substantive invariance under admissible representation, gauge, and
-coarse-graining morphisms. A survivor proceeds to one genuine physical
-instantiation and then to the noncircular record-capability order. A
+T583 supplies the finite CapabilityContract v1 baseline. T584 adds the first
+finite invariance morphism gate: admissible representation, gauge, and
+irrelevant-coarse-graining morphisms preserve the native capability envelope,
+while a task-vocabulary merge is caught as an inadmissible counterexample. The
+next decisive work is one genuine physical instantiation of the surviving
+quotient and then the noncircular record-capability order. A
 provenance-valid p2c witness packet activates a separate TaF-owned capability
 adjudication, never an issuance verdict.
 

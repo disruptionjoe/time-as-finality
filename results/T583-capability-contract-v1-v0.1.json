@@ -1,0 +1,225 @@
+{
+  "artifact": "T583-capability-contract-v1-v0.1",
+  "assessments": [
+    {
+      "capability_relation": "EQUIVALENT",
+      "completion_class": "NO_CAPABILITY_DELTA",
+      "context_differences": [],
+      "pair_id": "renaming_gauge_preservation",
+      "positive_capability_verdict_allowed": false,
+      "reason": "The native task-performance-cost envelopes are equivalent.",
+      "verdict": "PRESERVATION_CONTROL_PASS"
+    },
+    {
+      "capability_relation": "EQUIVALENT",
+      "completion_class": "NO_CAPABILITY_DELTA",
+      "context_differences": [],
+      "pair_id": "distinct_states_equal_capability",
+      "positive_capability_verdict_allowed": false,
+      "reason": "The native task-performance-cost envelopes are equivalent.",
+      "verdict": "PRESERVATION_CONTROL_PASS"
+    },
+    {
+      "capability_relation": "SUPERSET",
+      "completion_class": "RESOURCE_BUDGET_COMPLETION",
+      "context_differences": [
+        "resource_provenance",
+        "cost_error_budget"
+      ],
+      "pair_id": "budget_mutation_control",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A named completion or context difference reproduces the capability delta.",
+      "verdict": "RESOURCE_BUDGET_COMPLETION"
+    },
+    {
+      "capability_relation": "INCOMPARABLE",
+      "completion_class": "NATIVE_STATE_COMPLETION",
+      "context_differences": [],
+      "pair_id": "negative_nonfactorization_control",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A named completion or context difference reproduces the capability delta.",
+      "verdict": "NATIVE_STATE_COMPLETION"
+    },
+    {
+      "capability_relation": "SUBSET",
+      "completion_class": "EXPLICIT_STATE_RESOURCE_COMPLETION",
+      "context_differences": [
+        "access_profile",
+        "access_provenance",
+        "resource_provenance"
+      ],
+      "pair_id": "w192_explicit_state_resource_absorption",
+      "positive_capability_verdict_allowed": false,
+      "reason": "The capability delta is decided by explicit state or resource access.",
+      "verdict": "EXPLICIT_STATE_RESOURCE_COMPLETION"
+    },
+    {
+      "capability_relation": "INCOMPARABLE",
+      "completion_class": "NO_ADMITTED_COMPLETION_FOUND_IN_DECLARED_SCOPE",
+      "context_differences": [],
+      "pair_id": "synthetic_complete_candidate",
+      "positive_capability_verdict_allowed": false,
+      "reason": "A synthetic or finite contract pass cannot establish a physical capability theorem.",
+      "verdict": "CAPABILITY_DELTA_REVIEW_CANDIDATE"
+    }
+  ],
+  "capability_definition": {
+    "native_comparison": "Pareto cover preorder with equivalence, superset, subset, or incomparability",
+    "object": "C(R,O,T,M,B,h)",
+    "physics_direction": "known physics to induced capability object",
+    "scalar_default": false,
+    "value": "task-indexed nondominated attainable performance-cost-error envelope"
+  },
+  "checks": [
+    {
+      "check_id": "pareto_not_scalar_default",
+      "passed": true,
+      "reason": "Capability is a task-indexed Pareto envelope with incomparable cost-performance tradeoffs."
+    },
+    {
+      "check_id": "explicit_cost_error_budget",
+      "passed": true,
+      "reason": "Energy, time, communication, memory, and error budgets are explicit."
+    },
+    {
+      "check_id": "access_menu_resource_provenance",
+      "passed": true,
+      "reason": "Access, menu, and resource provenance are mandatory context fields."
+    },
+    {
+      "check_id": "renaming_gauge_invariance",
+      "passed": true,
+      "reason": "Task aliases and gauge or representation labels do not change the envelope."
+    },
+    {
+      "check_id": "irrelevant_coarse_graining_stability",
+      "passed": true,
+      "reason": "Declared presentation-only fields are removed without changing physical payload."
+    },
+    {
+      "check_id": "equal_capability_nontriviality",
+      "passed": true,
+      "reason": "Distinct physical state identifiers may have equal capability envelopes."
+    },
+    {
+      "check_id": "positive_preservation_control",
+      "passed": true,
+      "reason": "A representation-equivalent pair preserves capability."
+    },
+    {
+      "check_id": "negative_nonfactorization_control",
+      "passed": true,
+      "reason": "A visible-flat capability split is detected and then honestly absorbed by native state completion."
+    },
+    {
+      "check_id": "resource_budget_completion",
+      "passed": true,
+      "reason": "A changed cost budget is classified as completion, not intrinsic capability creation."
+    },
+    {
+      "check_id": "w192_absorption",
+      "passed": true,
+      "reason": "W192 remains explicit state/resource completion."
+    },
+    {
+      "check_id": "synthetic_review_ceiling",
+      "passed": true,
+      "reason": "Even the fully populated synthetic case stops at review-candidate status."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger or Canon Index update is earned.",
+  "context_inventory": [
+    {
+      "access_provenance": "declared_local_lab_access",
+      "budget": {
+        "communication": 2.0,
+        "energy": 5.0,
+        "error": 0.1,
+        "memory": 8.0,
+        "time": 10.0
+      },
+      "context_id": "ctx_base",
+      "menu_provenance": "law_derived_finite_control",
+      "native_comparison": "task_indexed_pareto_cover",
+      "region_id": "R_demo",
+      "resource_provenance": "fixed_declared_budget"
+    },
+    {
+      "access_provenance": "declared_local_lab_access",
+      "budget": {
+        "communication": 2.0,
+        "energy": 5.0,
+        "error": 0.1,
+        "memory": 8.0,
+        "time": 10.0
+      },
+      "context_id": "ctx_renamed_gauge",
+      "menu_provenance": "law_derived_finite_control",
+      "native_comparison": "task_indexed_pareto_cover",
+      "region_id": "R_demo",
+      "resource_provenance": "fixed_declared_budget"
+    },
+    {
+      "access_provenance": "declared_local_lab_access",
+      "budget": {
+        "communication": 2.0,
+        "energy": 1.0,
+        "error": 0.1,
+        "memory": 8.0,
+        "time": 10.0
+      },
+      "context_id": "ctx_low_budget",
+      "menu_provenance": "law_derived_finite_control",
+      "native_comparison": "task_indexed_pareto_cover",
+      "region_id": "R_demo",
+      "resource_provenance": "declared_low_energy_budget"
+    },
+    {
+      "access_provenance": "packet_declared_no_psi_access",
+      "budget": {
+        "communication": 0.0,
+        "energy": 1.0,
+        "error": 0.0,
+        "memory": 1.0,
+        "time": 1.0
+      },
+      "context_id": "w192_before",
+      "menu_provenance": "frozen_proxy_menu",
+      "native_comparison": "task_indexed_pareto_cover",
+      "region_id": "R_W192",
+      "resource_provenance": "frozen_psi_absent"
+    },
+    {
+      "access_provenance": "packet_declared_psi_access",
+      "budget": {
+        "communication": 0.0,
+        "energy": 1.0,
+        "error": 0.0,
+        "memory": 1.0,
+        "time": 1.0
+      },
+      "context_id": "w192_after",
+      "menu_provenance": "frozen_proxy_menu",
+      "native_comparison": "task_indexed_pareto_cover",
+      "region_id": "R_W192",
+      "resource_provenance": "frozen_psi_present"
+    }
+  ],
+  "contract_status": "provisional_executable_review_instrument",
+  "not_claimed": "T583 does not establish a universal capability measure, a scalar arrow, a physical capability transition, a source law, time emergence, issuance, or cross-repo identity. It does not move claims, canon, public posture, publication, TAF3, TAF8, S1, or cross-repo truth.",
+  "null_completion_classes": [
+    "NO_CAPABILITY_DELTA",
+    "RENAMING_OR_GAUGE_EQUIVALENCE",
+    "IRRELEVANT_COARSE_GRAINING",
+    "TASK_REDEFINITION_COMPLETION",
+    "MENU_COMPLETION",
+    "ACCESS_COMPLETION",
+    "RESOURCE_BUDGET_COMPLETION",
+    "EXPLICIT_STATE_RESOURCE_COMPLETION",
+    "FIXED_SOURCE_COMPLETION",
+    "NATIVE_STATE_COMPLETION"
+  ],
+  "synthetic_candidate_ceiling": "CAPABILITY_DELTA_REVIEW_CANDIDATE",
+  "verdict": "CAPABILITY_CONTRACT_V1_IMPLEMENTED_REVIEW_ONLY",
+  "w192_verdict": "EXPLICIT_STATE_RESOURCE_COMPLETION"
+}

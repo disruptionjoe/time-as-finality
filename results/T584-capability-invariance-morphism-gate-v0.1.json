@@ -1,0 +1,80 @@
+{
+  "artifact": "T584-capability-invariance-morphism-gate-v0.1",
+  "audits": [
+    {
+      "admissible": true,
+      "invariant_or_caught": true,
+      "kind": "representation",
+      "morphism_id": "unit_and_interface_representation",
+      "reason": "Admissible physical-equivalence morphism preserves the native envelope.",
+      "relation": "EQUIVALENT",
+      "substantive_change": "raw tasks, units, protocol labels, and implementation traces differ"
+    },
+    {
+      "admissible": true,
+      "invariant_or_caught": true,
+      "kind": "gauge",
+      "morphism_id": "gauge_orbit_phase_shift",
+      "reason": "Admissible physical-equivalence morphism preserves the native envelope.",
+      "relation": "EQUIVALENT",
+      "substantive_change": "gauge phase and representative differ"
+    },
+    {
+      "admissible": true,
+      "invariant_or_caught": true,
+      "kind": "irrelevant_coarse_graining",
+      "morphism_id": "telemetry_coarse_graining",
+      "reason": "Admissible physical-equivalence morphism preserves the native envelope.",
+      "relation": "EQUIVALENT",
+      "substantive_change": "telemetry and display fields are removed"
+    },
+    {
+      "admissible": false,
+      "invariant_or_caught": true,
+      "kind": "inadmissible_task_coarse_graining",
+      "morphism_id": "task_vocabulary_merge_counterexample",
+      "reason": "Non-equivalence exposes the proposed morphism as inadmissible.",
+      "relation": "INCOMPARABLE",
+      "substantive_change": "certification task is merged into recovery task"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "admissible_morphisms_preserve_capability",
+      "passed": true,
+      "reason": "Representation, gauge, and irrelevant coarse-graining preserve the envelope."
+    },
+    {
+      "check_id": "substantive_representation_change",
+      "passed": true,
+      "reason": "Representation changes raw units, interface names, and implementation traces."
+    },
+    {
+      "check_id": "gauge_factors_through_quotient",
+      "passed": true,
+      "reason": "Gauge representative and phase changes do not create new capabilities."
+    },
+    {
+      "check_id": "irrelevant_coarse_graining_stable",
+      "passed": true,
+      "reason": "Declared irrelevant metadata drops without changing the physical payload."
+    },
+    {
+      "check_id": "task_merge_counterexample_caught",
+      "passed": true,
+      "reason": "Merging distinct task semantics changes the envelope and is rejected."
+    },
+    {
+      "check_id": "capability_not_state_identity",
+      "passed": true,
+      "reason": "Different controller traces can remain capability-equivalent."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger or Canon Index update is earned.",
+  "counterexample_statement": "The smallest found counterexample is a task-vocabulary merge: certification and recovery cannot be coarse-grained into one task without changing the native capability type.",
+  "next_work": "Instantiate the surviving quotient in a genuine physical system with source-derived states, operations, resources, costs, records, access, gauge quotient, and measured or law-derived task performance.",
+  "not_claimed": "T584 is a finite invariance gate only. It does not establish a universal capability measure, physical time, issuance, a source law, a genuine physical model, or cross-repo identity.",
+  "source_contract": "T583 CapabilityContract v1",
+  "survivor_statement": "In this finite fixture, capability factors through the declared representation, gauge, and irrelevant-coarse-graining quotient.",
+  "verdict": "CAPABILITY_INVARIANCE_MORPHISMS_SURVIVE_FINITE_GATE_REVIEW_ONLY"
+}

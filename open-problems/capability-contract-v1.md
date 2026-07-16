@@ -8,6 +8,13 @@ T583 implements this contract as a finite deterministic instrument. It does
 not promote a claim, establish a universal capability measure, derive time,
 or move cross-repository truth.
 
+T584 adds the first finite invariance morphism gate over the contract. In that
+fixture, capability factors through admissible representation, gauge, and
+irrelevant-coarse-graining quotients, while a task-vocabulary merge is caught
+as an inadmissible counterexample. This is still review-only; the next burden
+is a genuine physical system with source-derived states, operations, resources,
+costs, records, access, quotient, and task performance.
+
 ## Purpose
 
 Capability language is too cheap unless the physical and operational context

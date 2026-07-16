@@ -1,5 +1,22 @@
 ﻿# Roadmap
 
+## 2026-07-16 Current Operational Frontier
+
+The active hourly portfolio is `steward/research-portfolio.json`. The protected
+technical lane is `CAPABILITY-TO-TEMPORAL-ORDER`, not continued production of
+review-only T-number scaffolds.
+
+T583 supplies the finite CapabilityContract v1 baseline. The next decisive
+work is substantive invariance under admissible representation, gauge, and
+coarse-graining morphisms. A survivor proceeds to one genuine physical
+instantiation and then to the noncircular record-capability order. A
+provenance-valid p2c witness packet activates a separate TaF-owned capability
+adjudication, never an issuance verdict.
+
+Each material Progress run re-ranks these internal items before its receipt.
+Blocked and negative outcomes remain first-class results; difficulty is not a
+reason to replace this lane with an easier formal byproduct.
+
 ## 2026-07-14 T582 W192 Record-Conditioned Capability Discriminator Gate
 
 T582 executes the separate W192 gate selected by T581. It tests whether the

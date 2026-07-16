@@ -17,6 +17,29 @@ Change rule: do not change this North Star without very explicit conversation wi
 - Advance the lead technical line in `Lead Research Line - Time as Finality.md`.
 - Keep roadmap, hypotheses, claim ledger, and complexity ledger mutually coherent, and not lagging the test registry (see the Ledger Reconciliation Trigger).
 
+## Current Hourly Research Portfolio
+
+The machine-readable owner is `steward/research-portfolio.json`. Every Repo
+Progress run must load it, select the highest-ranked unblocked internal work
+item, carry out a material technical swing, and re-rank the remaining items in
+its Next-Work Handoff. Repo Stewardship may revise the ranking when a real
+falsifier, survivor, dependency change, or frozen source packet changes the
+frontier.
+
+The active lane is `CAPABILITY-TO-TEMPORAL-ORDER`. Its execution sequence is:
+
+1. lift T583 from label controls to substantive representation, gauge, and
+   coarse-graining invariance or find the counterexample;
+2. instantiate the surviving object in a genuine physical system;
+3. derive or kill a noncircular record-dependent capability order; and
+4. adjudicate frozen p2c witnesses when they arrive.
+
+T583 is a useful finite contract, not completion of the lane. Hourly Progress
+must prefer a theorem, counterexample, executable physical model, or frozen
+witness adjudication over another summary or easy T-number. Difficulty alone
+does not park the active lane. Cross-repo packets may activate an item but may
+not move TaF claim status or supply the desired verdict.
+
 ## Measures And Countermeasures
 
 Measures:
@@ -109,6 +132,12 @@ Lightweight upward-learning pointer: method/workflow-module learnings go to `Cap
 
 Supports CapacityOS-orchestrated and direct repo-mounted runs. Automations are thin triggers; RCCM workflow plus this steward context supply the repo-local operation.
 
+Repo Progress loads `steward/research-portfolio.json` before selecting work.
+Repo Stewardship keeps the portfolio aligned with the current North Star map,
+ROADMAP, executable results, and frozen cross-repo returns. A gated item must
+retain an explicit activation condition and automatically re-enter ranking
+when that condition is met.
+
 ## Local Source References
 
 - `Vision - North Star.md`
@@ -121,3 +150,4 @@ Supports CapacityOS-orchestrated and direct repo-mounted runs. Automations are t
 - `CONTRIBUTING.md`
 - `TESTS.md`
 - `tests/`
+- `steward/research-portfolio.json`

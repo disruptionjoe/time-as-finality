@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "updated": "2026-07-16",
+  "authority": "repo-local stewardship",
+  "north_star_lane": "CAPABILITY-TO-TEMPORAL-ORDER",
+  "selection_contract": {
+    "progress_must_load_this_file": true,
+    "select_highest_ranked_unblocked_item": true,
+    "one_active_technical_item_per_run": true,
+    "continue_to_linked_checkpoint_when_first_closes_quickly": true,
+    "rerank_after_every_material_run": true,
+    "difficulty_is_not_a_demotion_signal": true,
+    "blocked_is_not_complete": true,
+    "minimum_material_output": "A definition with nontrivial invariance checks, a theorem or counterexample, an executable physical model, or a source-owned capability adjudication. A queue, summary, or scalar chosen for convenience is insufficient.",
+    "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
+  },
+  "lanes": [
+    {
+      "id": "CAPABILITY-TO-TEMPORAL-ORDER",
+      "state": "ACTIVE",
+      "hourly_eligible": true,
+      "owner": "time-as-finality",
+      "purpose": "Construct or kill an invariant region-indexed capability object and determine whether record-dependent capability change yields a noncircular physical order related to causal and thermodynamic time.",
+      "priority_score": 25,
+      "score": {
+        "impact": 5,
+        "information_gain": 5,
+        "readiness": 4,
+        "distinctiveness": 5,
+        "effort": 5,
+        "wall_risk": 4,
+        "duplication_risk": 0
+      },
+      "current_authority": "T583 implements CapabilityContract v1 only as a finite review instrument. It fixes explicit contexts, Pareto envelopes, and basic controls, but it does not establish substantive representation invariance, a genuine physical capability measure, or time.",
+      "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
+      "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
+      "internal_work_items": [
+        {
+          "id": "TAF-CAPABILITY-INVARIANCE",
+          "state": "READY",
+          "priority_score": 28,
+          "hourly_eligible": true,
+          "next_swing": "Lift T583 beyond label controls: define admissible representation, gauge, and irrelevant-coarse-graining morphisms on the capability contract, then prove invariance or produce the smallest counterexample. Include a nontrivial representation change that alters implementation while preserving physical content.",
+          "success_condition": "Capability factors through a declared physical-equivalence quotient and remains nontrivial on at least one substantive model.",
+          "kill_condition": "Equivalent physical descriptions yield different capability relations, or invariance is obtained only by choosing the quotient after seeing the desired classification."
+        },
+        {
+          "id": "TAF-REAL-PHYSICAL-CAPABILITY",
+          "state": "READY_AFTER_INVARIANCE",
+          "priority_score": 27,
+          "hourly_eligible": false,
+          "activation": "TAF-CAPABILITY-INVARIANCE reaches a decision-grade survivor or a source packet supplies a stronger native quotient.",
+          "next_swing": "Instantiate one genuine physical system with source-derived states, operations, resources, costs, records, access, gauge quotient, and measured or law-derived task performance. Compute the capability relation and run access, resource, hidden-state, and coarse-graining controls.",
+          "success_condition": "The model agrees with ordinary physical time where expected while exposing an invariant capability distinction not reducible to coordinate labels or knowledge alone.",
+          "kill_condition": "The result is fully explained by changed access, resources, task definition, state description, or a standard reachability relation with no added discrimination."
+        },
+        {
+          "id": "TAF-RECORD-CAPABILITY-ORDER",
+          "state": "READY_AFTER_PHYSICAL_MODEL",
+          "priority_score": 26,
+          "hourly_eligible": false,
+          "activation": "A genuine physical capability model with explicit record dependencies survives its controls.",
+          "next_swing": "Define event A before B from a pre-temporal dependency of B's executable tasks on records produced by A. Prove partial-order properties or locate their failure, then compare the result with causal order, clock time, entropy production, memory, and irreversible computation.",
+          "success_condition": "A noncircular invariant order is obtained and adds a precise distinction beyond coordinate time in the worked physical system.",
+          "kill_condition": "Records or task dependence require a prior temporal order, producing circularity, or the construction reduces without residue to an already supplied causal order."
+        },
+        {
+          "id": "TAF-P2C-WITNESS-ADJUDICATION",
+          "state": "GATED_FROZEN_PACKET",
+          "priority_score": 25,
+          "hourly_eligible": false,
+          "activation": "A provenance-valid p2c witness packet fixes one construction, physical region, tasks, resources, costs, records, access, quotient, and holdout without a desired capability verdict.",
+          "next_swing": "Apply the best surviving TaF capability object to the frozen witness, preserve construction forks, and return PASS, FAIL, BLOCKED, INDETERMINATE, or contract revision with exact evidence.",
+          "success_condition": "The same frozen witness exhibits an invariant physical capability change under the preregistered contract.",
+          "kill_condition": "The delta disappears under an admitted access, resource, state, gauge, task, or completion control."
+        }
+      ],
+      "handoffs": {
+        "from_possibility_to_capability": "A mailbox proposal is only an activation candidate until packet provenance and source fields validate.",
+        "to_possibility_to_capability": "Return a frozen capability adjudication without importing TI issuance or GU native-versus-forced judgments.",
+        "to_temporal_issuance": "Capability change may be supplied as evidence, but it does not assert irreducible issuance.",
+        "return_activation": "A material frozen return or counterexample triggers stewardship reranking."
+      }
+    },
+    {
+      "id": "FORMAL-BYPRODUCTS",
+      "state": "RESERVE",
+      "hourly_eligible": true,
+      "priority_score": 13,
+      "purpose": "Lean, finite combinatorics, ledger repair, and conditional theorem work that directly supports the active capability lane.",
+      "activation": "Select only when it closes a named active-lane blocker or no active technical item is executable.",
+      "forbidden_shortcut": "Do not let finishable T-number production displace the physical capability and noncircular-order frontier."
+    }
+  ]
+}

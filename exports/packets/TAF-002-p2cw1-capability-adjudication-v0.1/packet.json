@@ -1,0 +1,249 @@
+{
+  "alternatives": [
+    "A decline (NOT-YET-ADJUDICABLE with named deficiencies) was available and not needed: the bundle verified cleanly and the declared frame was well-posed in T583 terms.",
+    "A single-clause affirmation or a single-clause factors-through return were both rejected as dishonest: under TaF semantics the two clauses are simultaneously true and the proposal's dichotomy is non-exclusive (see claim.statement)."
+  ],
+  "assumptions": [
+    "A1 (definition): TaF T1/FORMALISM record model - causal record graph, record tokens, causal-availability conditions 1-2, reconstruction rule, D1 profile (frozen in blobs/FORMALISM.md).",
+    "A2 (definition): task achievability means reconstructibility under the reconstruction rule - TaF's native task semantics (TAF-001 premise A5, reused verbatim).",
+    "A3 (definition): TaF's admissible reformulations are the T584 morphism classes over the T583 contract; admitted controls are the T583/T585-style fail-closed completion classes (access, resource, hidden-state) as implemented in the fixture.",
+    "A4 (external_stipulation): the branch physics as frozen in P2C-W1 (WITNESS-FREEZE.md sections 0-1 under the R-D1 frame declaration), consumed at literature grade and quarantined; TaF asserts nothing about real superconductors beyond consuming this stipulation.",
+    "A5 (construction_choice): threshold k=1 fixed before evaluation; horizon 100 epochs; matched residual budget 50; flux sweep {1/5, 2/5, 3/5, 4/5, 13/10}; DEFORM drift 3/100; metastability cap 10^12 epochs. Designed witness, not a measured system.",
+    "A6 (implementation): the frozen Python program correctly implements A1-A3 over A4-A5."
+  ],
+  "claim": {
+    "convergence": "not_applicable",
+    "independence_scope": "This packet contains one deterministic computation over one designed frame; it asserts no independence result of any type. The witness's own discriminator was re-run for bundle verification only and lends this packet no evidential weight.",
+    "independence_type": "not_applicable",
+    "joint_argument_artifact": "blobs/taf002_semantics.md",
+    "method_count": 1,
+    "scope": "One designed finite frame implementing the P2C-W1 declared budget-matched counterfactual pair in the TaF T1/FORMALISM record model with T583/T584 capability discipline, at the pinned revision; exploration tier, formal-only grade over literature-grade stipulated physics; frame-indexed only; no universal claim.",
+    "source_status_unchanged": true,
+    "statement": "SPLIT VERDICT on the P2C-W1 capability-adjudication question, each clause scoped exactly. Clause 1 (AFFIRMED, frame-indexed): under TaF's invariant standards - task achievability as reconstructibility over two declared region-indexed contexts with matched task family, menu, access, budget, horizon, and quotient - the N-to-S pair is a capability change: the achievability delta (1,1,1) vs (0,0,0) over (tau_Q, tau_I, tau_P) survives TaF's admissible reformulations (T584 representation, gauge, irrelevant-coarse-graining) and does not disappear under TaF's admitted fail-closed controls (access enlargement, resource enlargement x10^6, hidden state). Clause 2 (FACTOR NAMED, non-deflationary): with access and budget byte-identical, the delta factors entirely through record-formation/erasure structure (the TAF-001 BETA side) - not through holder access (not ALPHA) and not through resource accounting in the declared frame; in TaF semantics formation-structure change is the mechanism of achievability change, so the proposal's dichotomy (capability change XOR factors through record machinery) is non-exclusive and the honest answer is BOTH. Clause 3 (BOUNDARY): the fixed-family absorber is not adjudicable by TaF's standards - TaF's capability object is frame-TAKING by construction (context is declared input; T583 treats any changed context as unmatched in both directions); the one-context whole-family reading absorbs the delta (exhibited executably, absorption caused specifically by admitting the target phase) and TaF endorses neither individuation; P2C falsifier F1 remains live and untouched. Grading riders: tau_P is affirmed only up to the literature metastability cap; tau_Q and tau_I are the carriers at every horizon and budget."
+  },
+  "construction_forks": [
+    {
+      "alternatives": [
+        "receiver-side task semantics (P2C hierarchy Capability type); mapping is receiver work",
+        "threshold-only semantics without the no-competing-value clause"
+      ],
+      "name": "task semantics",
+      "selected": "reconstructibility under TaF's reconstruction rule - TaF's native task semantics (premise A2)",
+      "transfer_status": "untested"
+    },
+    {
+      "alternatives": [
+        "one-context whole-family individuation (single region containing both phases, COOL in menu): absorbs the delta; exhibited in checks c9/c10 and NOT endorsed or rejected - the fork is the unadjudicated boundary itself"
+      ],
+      "name": "context individuation of the pair",
+      "selected": "two region-indexed contexts as declared by the witness's R-D1 frame (budget-matched counterfactual pair)",
+      "transfer_status": "source_only"
+    },
+    {
+      "alternatives": [
+        "BCS microscopic, topological/TQFT, thermodynamic readings retained by the witness; the fixture consumes only signature-level structure (lattice, invariance, draw, lifetime, erasure cost), which the witness states transfers across GL/BCS/TQFT"
+      ],
+      "name": "branch physics construction",
+      "selected": "GL/London signature-level stipulation as frozen in P2C-W1 (premise A4, literature grade, quarantined)",
+      "transfer_status": "untested"
+    }
+  ],
+  "evidence_structure": {
+    "method_dependency_edges": [],
+    "premise_ledger": [
+      {
+        "exact_statement": "The TaF T1/FORMALISM record model: causal record graph, record tokens (id, proposition, value, event, holder, erasure_cost), causal-availability conditions 1-2, reconstruction rule (fixed threshold plus no-competing-value clause), and D1 profile (A, R, B, C) as a componentwise preorder with C_therm reported separately.",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A1",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/FORMALISM.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "Task achievability means reconstructibility under the reconstruction rule; this is TaF's native task semantics, and mapping to any other task semantics is the receiver's work.",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A2",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/FORMALISM.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "TaF's admissible reformulations are the T584 morphism classes (representation, gauge, declared irrelevant coarse-graining) over the T583 CapabilityContract discipline (region-indexed envelope; changed context is never a matched comparison; completions fail closed).",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A3",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/T584-capability-invariance-morphism-gate.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The branch physics stipulated at literature grade by the frozen P2C-W1 bundle (integer fluxoid lattice, DEFORM/gauge-invariant winding, zero maintenance draw, metastability-capped lifetime, macroscopic erasure cost in S; continuous, non-invariant, positive-draw, short-lifetime, near-zero erasure cost in N), under the R-D1 budget-matched counterfactual frame declaration.",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A4",
+        "premise_type": "external_stipulation",
+        "source_artifact_path": "blobs/taf002_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "Threshold k=1 fixed before evaluation; horizon 100; matched residual budget 50; flux sweep {1/5, 2/5, 3/5, 4/5, 13/10}; DEFORM drift 3/100; metastability cap 10^12 epochs.",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A5",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "blobs/taf002_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The frozen Python program blobs/taf002_p2cw1_adjudication.py correctly implements the A1-A3 semantics over the A4-A5 frame.",
+        "load_bearing_for_method_ids": [
+          "M1"
+        ],
+        "premise_id": "A6",
+        "premise_type": "implementation",
+        "source_artifact_path": "blobs/taf002_p2cw1_adjudication.py",
+        "source_status": "asserted_in_source"
+      }
+    ],
+    "raw_method_count": 1,
+    "raw_method_count_is_independence_count": false,
+    "shared_load_bearing_premise_ids": []
+  },
+  "integrity": {
+    "bundle_digest": "0237f93b6e075968600b065b08dbd2ee334290dd428b3821eb4c57502e17ed79",
+    "canonicalization_profile": "ptc-frozen-bundle-v1",
+    "digest": "0237f93b6e075968600b065b08dbd2ee334290dd428b3821eb4c57502e17ed79",
+    "frozen": true,
+    "hash_algorithm": "sha256",
+    "hash_scope": [
+      "blobs/FORMALISM.md",
+      "blobs/T583-capability-contract-v1.md",
+      "blobs/T584-capability-invariance-morphism-gate.md",
+      "blobs/taf002_output.txt",
+      "blobs/taf002_p2cw1_adjudication.py",
+      "blobs/taf002_semantics.md"
+    ],
+    "manifest": [
+      {
+        "byte_length": 41204,
+        "content_sha256": "0e5034945d3e2205af7f4aa5bd4923e6f6eb0a9f14d9cc7a60262829abed1816",
+        "path": "blobs/FORMALISM.md"
+      },
+      {
+        "byte_length": 2069,
+        "content_sha256": "d3889737ea1e0ddfa0cb1974461285f20c68af9ee06318ead49c179e67d6d27d",
+        "path": "blobs/T583-capability-contract-v1.md"
+      },
+      {
+        "byte_length": 1936,
+        "content_sha256": "0c9f7d964df1e8709395cab72bf69a58c70cc1de84f877ababfa07217fcf8c5b",
+        "path": "blobs/T584-capability-invariance-morphism-gate.md"
+      },
+      {
+        "byte_length": 3832,
+        "content_sha256": "aba2329f9539b5f7641391a56e1a418334a04ec2d3e9b94f860d154afd483789",
+        "path": "blobs/taf002_output.txt"
+      },
+      {
+        "byte_length": 18891,
+        "content_sha256": "1c75eec784687b14d965f95665f0e52a25b5a250381e62b40d061cbd54ffcfcd",
+        "path": "blobs/taf002_p2cw1_adjudication.py"
+      },
+      {
+        "byte_length": 17435,
+        "content_sha256": "5980b236776cf48f25641a74f0bb8afd1fc48d666b7a34d77e588e7e2cca3c8b",
+        "path": "blobs/taf002_semantics.md"
+      }
+    ],
+    "manifest_digest": "6826fc19dfbddaaab6b2226620a41b70b0a9d936efe509ebe908142ec0255487",
+    "packet_digest": "4bf8c8efe8ad6f9bbeb9a7b7b920bd613e2bcb4439b1c040a374992c54159c72"
+  },
+  "interfaces": [
+    {
+      "ownership_status": "target_owned",
+      "requested_datum": "none: this packet is the return of the capability-adjudication datum P2C requested for witness P2C-W1 (bundle identified by its full sha256 manifest in blobs/taf002_semantics.md section 1); all downstream classification, combination with the Temporal Issuance return, and hierarchy-grade mapping is receiver-owned",
+      "target_repository": "possibility-to-capability"
+    }
+  ],
+  "method_ledger": [
+    {
+      "artifact_path": "blobs/taf002_p2cw1_adjudication.py",
+      "artifact_revision": "0749ce51c2eb542defe4010341787f1974a56a7d",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed; 10 [E] + 3 [F] evidential checks, 1 [T])",
+      "label": "pair evaluation plus fail-closed controls (access, resource, hidden-state, admissible-reformulation, neutrality, whole-family exhibition, persistence grading)",
+      "method_id": "M1",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
+      "result": "S achieves (tau_Q, tau_I, tau_P) = (1,1,1) and N achieves (0,0,0) in the declared frame; the delta survives admissible reformulations and access/resource/hidden-state controls; the carrier is record-formation/erasure structure under byte-identical access and budget; the one-context whole-family declaration absorbs the delta specifically via admitting the target phase; tau_P is not asserted beyond the metastability cap.",
+      "verification": "Re-run blobs/taf002_p2cw1_adjudication.py; byte-compare stdout against blobs/taf002_output.txt."
+    }
+  ],
+  "nonclaims": [
+    "No verdict on the fixed-family absorber / P2C hierarchy falsifier F1, in either direction; the completion-legitimacy question remains with Temporal Issuance per the witness's own routing.",
+    "No claim about capability 'enlargement' versus 'disclosure': those are P2C hierarchy terms; TaF asserts only the frame-indexed achievability delta and its factor structure in TaF vocabulary, and any mapping onto P2C's hierarchy grades is receiver-owned work.",
+    "No claim that superconductivity is finality or any TaF object; no physics derived; no real superconductor measured; literature-grade stipulations are consumed, not endorsed, and any error in them propagates to Clause 1 unchanged.",
+    "No temporal-order, issuance, or T586-style record-capability-order consequence over this witness.",
+    "No TaF claim-status, Canon-Index, ledger, or public-posture movement; TAF-001 and all TaF claims are untouched.",
+    "No statement about Temporal Issuance's return; combinability of the two sovereign returns is P2C's determination under its own manifest rule."
+  ],
+  "ownership": {
+    "authority_transfer": false,
+    "receiving_owner": "possibility-to-capability",
+    "source_owner": "time-as-finality"
+  },
+  "packet_id": "TAF-002",
+  "packet_status": "SOURCE_FROZEN",
+  "quantifiers": [
+    "All computed facts are existential over the one designed finite frame (A5) implementing the declared counterfactual pair at the pinned revision; no universal claim over frames, thresholds, horizons, budgets, or task semantics is made.",
+    "The resource control is checked at budget x10^6 plus the structural argument that tau_P excludes positive-draw strategies at every budget; the access control is checked at the maximal declared holder set; neither is an exhaustive sweep beyond the stated domains."
+  ],
+  "question": {
+    "decision_type": "other",
+    "exact_question": "Given the declared budget-matched counterfactual pair frozen in P2C-W1, is the N-to-S pair a capability change under TaF's invariant standards - does the task 'hold a quantized, locally-invariant, zero-maintenance-cost persistent record' constitute a change in achievability that survives TaF's admissible reformulations - or does it factor through TaF's own machinery: a change in record formation, holder access, or resource/erasure structure that TaF's record/access analysis (in the spirit of the TAF-001 ALPHA/BETA intervention separation) already accounts for without a capability-level change?"
+  },
+  "residuals": [
+    "R-1: Existential over one designed finite frame; no universal claim over frames, thresholds, horizons, or task semantics.",
+    "R-2: tau_P beyond the metastability cap is unadjudicated by construction; a receiver needing unbounded-horizon persistence has no TaF support here.",
+    "R-3: The fixture consumes the witness's physics as stipulation; corrections to the bundle would produce a witness v0.2 and require re-adjudication.",
+    "R-4: Whether TAF-001's formation-side simulability residual (R-1 there) bears on the whole-family question is unexplored; no bridge from Clause 2 to Clause 3 is claimed.",
+    "R-5: The D1 profile is exercised at k=1 with a single holder; redundancy and branch structure with multiple holders/probes are not exercised."
+  ],
+  "schema_version": "0.2",
+  "source": {
+    "artifact_paths": [
+      "blobs/FORMALISM.md",
+      "blobs/T583-capability-contract-v1.md",
+      "blobs/T584-capability-invariance-morphism-gate.md",
+      "blobs/taf002_output.txt",
+      "blobs/taf002_p2cw1_adjudication.py",
+      "blobs/taf002_semantics.md"
+    ],
+    "claim_status": "exploration",
+    "evidence_grade": "formal only (finite executable designed witness over literature-grade stipulated physics)",
+    "issued_at": "2026-07-16T00:00:00Z",
+    "repository": "time-as-finality",
+    "revision": "0749ce51c2eb542defe4010341787f1974a56a7d",
+    "source_packet_id": "TAF-002"
+  },
+  "verification": {
+    "artifacts": [
+      "blobs/taf002_p2cw1_adjudication.py",
+      "blobs/taf002_output.txt",
+      "blobs/taf002_semantics.md"
+    ],
+    "replication_status": "Executed and frozen by the TaF steward at issuance (2026-07-16): exit 0, deterministic (re-run diff empty), stdout byte-identical to blobs/taf002_output.txt. Bundle-verification receipts for the adjudicated P2C-W1 witness (blob re-hash, commit existence, content-revision byte-identity, discriminator byte-identical re-run) are recorded in blobs/taf002_semantics.md section 1."
+  }
+}

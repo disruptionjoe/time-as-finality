@@ -2,7 +2,6 @@
   "version": 1,
   "updated": "2026-07-16",
   "authority": "repo-local stewardship",
-  "north_star_lane": "CAPABILITY-TO-TEMPORAL-ORDER",
   "selection_contract": {
     "progress_must_load_this_file": true,
     "select_highest_ranked_unblocked_item": true,
@@ -14,7 +13,9 @@
     "minimum_material_output": "A definition with nontrivial invariance checks, a theorem or counterexample, an executable physical model, or a source-owned capability adjudication. A queue, summary, or scalar chosen for convenience is insufficient.",
     "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
   },
-  "lanes": [
+  "lane_manifest_ref": "LANES.yaml",
+  "artifact_role": "Repository-owned work and ranking portfolio. Durable Lane definitions and control state exist only in root LANES.yaml.",
+  "work_groups": [
     {
       "id": "CAPABILITY-TO-TEMPORAL-ORDER",
       "state": "ACTIVE",
@@ -84,7 +85,8 @@
         "to_possibility_to_capability": "Return a frozen capability adjudication without importing TI issuance or GU native-versus-forced judgments.",
         "to_temporal_issuance": "Capability change may be supplied as evidence, but it does not assert irreducible issuance.",
         "return_activation": "A material frozen return or counterexample triggers stewardship reranking."
-      }
+      },
+      "parent_lane_id": "1"
     },
     {
       "id": "FORMAL-BYPRODUCTS",
@@ -93,7 +95,9 @@
       "priority_score": 13,
       "purpose": "Lean, finite combinatorics, ledger repair, and conditional theorem work that directly supports the active capability lane.",
       "activation": "Select only when it closes a named active-lane blocker or no active technical item is executable.",
-      "forbidden_shortcut": "Do not let finishable T-number production displace the physical capability and noncircular-order frontier."
+      "forbidden_shortcut": "Do not let finishable T-number production displace the physical capability and noncircular-order frontier.",
+      "parent_lane_id": "1"
     }
-  ]
+  ],
+  "lane_1_work_group": "CAPABILITY-TO-TEMPORAL-ORDER"
 }

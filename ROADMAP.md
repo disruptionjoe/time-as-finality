@@ -25,7 +25,11 @@ temporal order, issuance, source-law novelty, claim-ledger movement, Canon
 Index movement, canon verdict, public posture, publication, or cross-repo truth
 is earned. The active lane is now gated on a provenance-valid p2c witness
 packet, a stronger physical source packet, or a concrete falsifier for T586's
-circularity/causal-collapse/physical-naturalness boundary.
+circularity/causal-collapse/physical-naturalness boundary. The 2026-07-18
+mailbox disposition accepted the T586 causal-collapse and boundary-input
+proposals as the next TaF-owned attack: compare the record-capability order
+against ordinary dependency and causal order, then return either a precise
+residual or a clean downgrade.
 
 Each material Progress run re-ranks these internal items before its receipt.
 Blocked and negative outcomes remain first-class results; difficulty is not a

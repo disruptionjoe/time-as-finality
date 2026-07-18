@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-16",
+  "updated": "2026-07-18",
   "authority": "repo-local stewardship",
   "selection_contract": {
     "progress_must_load_this_file": true,
@@ -22,7 +22,7 @@
       "hourly_eligible": true,
       "owner": "time-as-finality",
       "purpose": "Construct or kill an invariant region-indexed capability object and determine whether record-dependent capability change yields a noncircular physical order related to causal and thermodynamic time.",
-      "priority_score": 25,
+      "priority_score": 27,
       "score": {
         "impact": 5,
         "information_gain": 5,
@@ -32,7 +32,7 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. The 2026-07-18 mailbox disposition accepts the T586 causal-collapse and boundary-input proposals as a TaF-owned falsifier/strengthening target.",
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [
@@ -67,6 +67,16 @@
           "next_swing": "Use T585 only as a source-owned capability input. Define event A before B from a pre-temporal dependency of B's executable tasks on records produced by A. Prove partial-order properties or locate their failure, then compare the result with causal order, clock time, entropy production, memory, and irreversible computation.",
           "success_condition": "A noncircular invariant order is obtained and adds a precise distinction beyond coordinate time in the worked physical system.",
           "kill_condition": "Records or task dependence require a prior temporal order, producing circularity, or the construction reduces without residue to an already supplied causal order."
+        },
+        {
+          "id": "TAF-T586-CAUSAL-COLLAPSE-ATTACK",
+          "state": "ACTIVE_NEXT",
+          "priority_score": 27,
+          "hourly_eligible": true,
+          "activation": "Mailbox proposals 20260716-lane-steering-t586-causal-collapse-attack and 20260717-boundary-input-record-and-order-forks were accepted as repo-local steering evidence on 2026-07-18.",
+          "next_swing": "Reopen T586 only as an attack. On the same frozen event system, compare record-capability order against the strongest standard dependency-order and causal-order comparators. Test acyclicity, transitivity, antisymmetry/strictness, clock-label independence, resource/access controls, pre-temporal circularity, and the boundary-input classes that separate physical records, access changes, capability changes, final-boundary selection, observer readout, physical intervention, autonomous feedback, edge/defect degrees of freedom, continuous source flux, stochastic input, and native record-issuance rules.",
+          "success_condition": "The attack returns either an exact residual beyond ordinary reachability/causal order under the declared frame or a clear downgrade that no such residual survives.",
+          "kill_condition": "The relation factors through a standard causal or dependency order, requires a prior temporal ordering, or counts representation/section choice as physical record production."
         },
         {
           "id": "TAF-P2C-WITNESS-ADJUDICATION",

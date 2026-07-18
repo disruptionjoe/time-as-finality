@@ -1,0 +1,21 @@
+lane_state_version: '1.0'
+owner_id: time-as-finality
+manifest_ref: LANES.yaml
+manifest_revision: 1
+evaluated_at: '2026-07-18T11:37:00-05:00'
+run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+lanes:
+- lane_id: '1'
+  light: green
+  reason_code: active_next_attack
+  evidence_ref: steward/research-portfolio.json
+  summary: T586 causal-collapse and boundary-input attack is active next.
+  evaluated_at: '2026-07-18T11:37:00-05:00'
+  run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+- lane_id: A
+  light: green
+  reason_code: mailbox_disposition_recorded
+  evidence_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+  summary: Mailbox steering was dispositioned into repo-local ranking.
+  evaluated_at: '2026-07-18T11:37:00-05:00'
+  run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md

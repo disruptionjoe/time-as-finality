@@ -2,20 +2,32 @@ lane_state_version: '1.0'
 owner_id: time-as-finality
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-18T11:37:00-05:00'
-run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+evaluated_at: '2026-07-18T22:45:00-05:00'
+run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
 lanes:
 - lane_id: '1'
-  light: green
-  reason_code: active_next_attack
-  evidence_ref: steward/research-portfolio.json
-  summary: T586 causal-collapse and boundary-input attack is active next.
-  evaluated_at: '2026-07-18T11:37:00-05:00'
-  run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+  work_status: source_packet_waiting
+  last_movement: T587 downgraded T586 to a typed record-prerequisite filter.
+  movement_ref: results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md
+  steering_attention: wait_for_stronger_source_evidence
+  steering_prompt: Reopen only for a physical source packet, frozen capability witness, or sharper issuance counterexample.
+  steering_ref: steward/research-portfolio.json
+  light: yellow
+  reason_code: t586_attack_closed_waiting_source_packet
+  evidence_ref: results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md
+  summary: T587 closed T586 attack; Lane 1 waits for stronger source evidence.
+  evaluated_at: '2026-07-18T22:45:00-05:00'
+  run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
 - lane_id: A
+  work_status: cycle_closed
+  last_movement: Repo-local progress recorded and state refreshed.
+  movement_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
+  steering_attention: none
+  steering_prompt: No unarchived mailbox item was present in this child run.
+  steering_ref: steward/research-portfolio.json
   light: green
-  reason_code: mailbox_disposition_recorded
-  evidence_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
-  summary: Mailbox steering was dispositioned into repo-local ranking.
-  evaluated_at: '2026-07-18T11:37:00-05:00'
-  run_ref: agent-runs/RUN-20260718-487-t586-causal-collapse-rerank.md
+  reason_code: repo_cycle_closed
+  evidence_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
+  summary: Steward cycle closed with repo-local T587 progress.
+  evaluated_at: '2026-07-18T22:45:00-05:00'
+  run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md

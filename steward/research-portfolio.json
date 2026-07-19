@@ -18,11 +18,11 @@
   "work_groups": [
     {
       "id": "CAPABILITY-TO-TEMPORAL-ORDER",
-      "state": "ACTIVE",
-      "hourly_eligible": true,
+      "state": "WAITING_FOR_SOURCE_PACKET",
+      "hourly_eligible": false,
       "owner": "time-as-finality",
       "purpose": "Construct or kill an invariant region-indexed capability object and determine whether record-dependent capability change yields a noncircular physical order related to causal and thermodynamic time.",
-      "priority_score": 27,
+      "priority_score": 17,
       "score": {
         "impact": 5,
         "information_gain": 5,
@@ -32,7 +32,7 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. The 2026-07-18 mailbox disposition accepts the T586 causal-collapse and boundary-input proposals as a TaF-owned falsifier/strengthening target.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. T587 reopens T586 as a causal-collapse and boundary-input attack: the relation collapses exactly to ordinary task-prerequisite dependency and is absorbed as a typed subrelation of the strongest standard dependency and causal comparators. The surviving value is only a typed record-prerequisite filter over issued records. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. Reopen requires a provenance-valid physical source packet, frozen capability witness, or sharper counterexample that changes the record-issuance contract.",
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [
@@ -70,11 +70,12 @@
         },
         {
           "id": "TAF-T586-CAUSAL-COLLAPSE-ATTACK",
-          "state": "ACTIVE_NEXT",
-          "priority_score": 27,
-          "hourly_eligible": true,
+          "state": "ENDPOINT_NEGATIVE_REVIEW_ONLY",
+          "priority_score": 16,
+          "hourly_eligible": false,
           "activation": "Mailbox proposals 20260716-lane-steering-t586-causal-collapse-attack and 20260717-boundary-input-record-and-order-forks were accepted as repo-local steering evidence on 2026-07-18.",
-          "next_swing": "Reopen T586 only as an attack. On the same frozen event system, compare record-capability order against the strongest standard dependency-order and causal-order comparators. Test acyclicity, transitivity, antisymmetry/strictness, clock-label independence, resource/access controls, pre-temporal circularity, and the boundary-input classes that separate physical records, access changes, capability changes, final-boundary selection, observer readout, physical intervention, autonomous feedback, edge/defect degrees of freedom, continuous source flux, stochastic input, and native record-issuance rules.",
+          "result": "T587: on the same frozen T586 event system, ordinary task-prerequisite dependency exactly reproduces the record-capability order, and the strongest standard dependency and supplied causal comparators strictly absorb it. The boundary-input screen admits only physical record production and native record-issuance rules as record-order sources; access changes, capability deltas by themselves, final-boundary selection, observer readout, physical intervention, autonomous feedback, edge/defect degrees of freedom, continuous flux, and stochastic input do not count without issued records. Review-only downgrade; no temporal-order or claim-status movement.",
+          "next_swing": "Do not reopen from T586 alone. Reopen only for a provenance-valid physical source packet, frozen capability witness, or sharper counterexample that changes the record-issuance contract.",
           "success_condition": "The attack returns either an exact residual beyond ordinary reachability/causal order under the declared frame or a clear downgrade that no such residual survives.",
           "kill_condition": "The relation factors through a standard causal or dependency order, requires a prior temporal ordering, or counts representation/section choice as physical record production."
         },

@@ -1,6 +1,6 @@
 ﻿# Roadmap
 
-## 2026-07-16 Current Operational Frontier
+## 2026-07-18 Current Operational Frontier
 
 The active hourly portfolio is `steward/research-portfolio.json`. The protected
 technical lane is `CAPABILITY-TO-TEMPORAL-ORDER`, not continued production of
@@ -20,20 +20,45 @@ a finite event order from executable task dependence on records produced by
 other events. In the Landauer memory fixture the produced-record dependency
 closure is a strict partial order; a mutual-record-dependency fixture is caught
 as circular, and clock-label, entropy-rank, causal-superset, and
-irreversible-operation controls do not reproduce the relation. No time,
-temporal order, issuance, source-law novelty, claim-ledger movement, Canon
-Index movement, canon verdict, public posture, publication, or cross-repo truth
-is earned. The active lane is now gated on a provenance-valid p2c witness
-packet, a stronger physical source packet, or a concrete falsifier for T586's
-circularity/causal-collapse/physical-naturalness boundary. The 2026-07-18
-mailbox disposition accepted the T586 causal-collapse and boundary-input
-proposals as the next TaF-owned attack: compare the record-capability order
-against ordinary dependency and causal order, then return either a precise
-residual or a clean downgrade.
+irreversible-operation controls do not reproduce the relation. T587 reopens
+T586 as the requested causal-collapse and boundary-input attack. It finds that
+ordinary task-prerequisite dependency exactly reproduces the record-capability
+order, while the strongest standard dependency and supplied causal comparators
+strictly absorb it. The surviving value is only a typed record-prerequisite
+filter over issued records; access changes, capability deltas by themselves,
+final-boundary selection, observer readout, physical intervention, autonomous
+feedback, edge/defect degrees of freedom, continuous flux, and stochastic input
+do not count without issued records. No time, temporal order, issuance,
+source-law novelty, claim-ledger movement, Canon Index movement, canon verdict,
+public posture, publication, or cross-repo truth is earned. The active lane is
+now waiting for a provenance-valid physical source packet, frozen capability
+witness, or sharper counterexample that changes the record-issuance contract.
 
 Each material Progress run re-ranks these internal items before its receipt.
 Blocked and negative outcomes remain first-class results; difficulty is not a
 reason to replace this lane with an easier formal byproduct.
+
+## 2026-07-18 T587 T586 Causal-Collapse Boundary Attack
+
+T587 executes the attack selected by the 2026-07-18 T586 rerank. On the frozen
+T586 Landauer event system, the ordinary task-prerequisite dependency
+comparator exactly reproduces the record-capability order. The strongest
+standard dependency comparator and supplied causal order both strictly contain
+the record order by adding nonrecord causal/input edges. The result downgrades
+T586 from a possible residual temporal-order candidate to a typed
+record-prerequisite filter.
+
+The boundary-input screen admits only explicit physical record production and
+native record-issuance rules as record-order sources. Access changes,
+capability changes by themselves, final-boundary selection, observer readout,
+physical intervention, autonomous feedback, edge/defect degrees of freedom,
+continuous source flux, and stochastic input are rejected unless a source-owned
+issuance rule turns them into stable records consumed by later executable tasks.
+
+No claim-ledger, Canon Index, canon-verdict, public-posture, TAF3, TAF8, S1,
+publication, or cross-repo movement is earned. Reopen requires a provenance-
+valid physical source packet, frozen capability witness, or sharper
+counterexample that changes the record-issuance contract.
 
 ## 2026-07-14 T582 W192 Record-Conditioned Capability Discriminator Gate
 

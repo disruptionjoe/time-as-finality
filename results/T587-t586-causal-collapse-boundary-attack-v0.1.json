@@ -1,0 +1,459 @@
+{
+  "adjudication": "T587 returns a downgrade. T586 has no relation-level residual beyond ordinary task-prerequisite dependency and is absorbed by the strongest standard dependency and causal comparators on the frozen event system. What survives is a typed record-prerequisite filter: it identifies which causal dependencies are issued-record prerequisites for executable tasks.",
+  "artifact": "T587-t586-causal-collapse-boundary-attack-v0.1",
+  "audits": [
+    {
+      "audit_id": "ordinary_dependency_collapse_detected",
+      "passed": true,
+      "reason": "The untyped task-prerequisite dependency comparator exactly reproduces T586.",
+      "result_class": "COLLAPSES_TO_TASK_PREREQUISITE_DEPENDENCY"
+    },
+    {
+      "audit_id": "strongest_dependency_absorbs_record_order",
+      "passed": true,
+      "reason": "The strongest standard dependency comparator strictly contains the T586 record order.",
+      "result_class": "RECORD_ORDER_IS_TYPED_SUBRELATION"
+    },
+    {
+      "audit_id": "causal_order_absorbs_record_order",
+      "passed": true,
+      "reason": "Every T586 record-order edge is already causally ordered in the frozen fixture.",
+      "result_class": "CAUSAL_SUPERSET_ABSORBS_RELATION"
+    },
+    {
+      "audit_id": "boundary_input_firebreak",
+      "passed": true,
+      "reason": "Access, intervention, section choice, flux, stochastic input, and observer readout are not counted without an issued record consumed by a task.",
+      "result_class": "ONLY_ISSUED_RECORDS_COUNT"
+    }
+  ],
+  "boundary_inputs": [
+    {
+      "class_id": "physical_record_production",
+      "classification": "RECORD_ORDER_ADMISSIBLE",
+      "counts_as_record_source": true,
+      "reason": "A stable produced record with a unique producer may support a task-prerequisite edge."
+    },
+    {
+      "class_id": "access_change",
+      "classification": "ACCESS_COMPLETION_NOT_RECORD_SOURCE",
+      "counts_as_record_source": false,
+      "reason": "Changing who can read a record changes access; it does not issue a new produced record."
+    },
+    {
+      "class_id": "capability_change",
+      "classification": "CAPABILITY_DELTA_NOT_RECORD_SOURCE_BY_ITSELF",
+      "counts_as_record_source": false,
+      "reason": "A changed envelope is evidence for capability comparison, not an event-order edge unless an issued record is consumed."
+    },
+    {
+      "class_id": "final_boundary_selection",
+      "classification": "SECTION_CHOICE_NOT_RECORD_SOURCE",
+      "counts_as_record_source": false,
+      "reason": "Choosing a boundary or section is a metatheoretic selection unless the source model issues a record token."
+    },
+    {
+      "class_id": "observer_readout",
+      "classification": "READOUT_NOT_RECORD_SOURCE_BY_ITSELF",
+      "counts_as_record_source": false,
+      "reason": "Readout may reveal a record; readout alone is not native record production."
+    },
+    {
+      "class_id": "physical_intervention",
+      "classification": "CAUSAL_INPUT_NOT_RECORD_SOURCE_BY_ITSELF",
+      "counts_as_record_source": false,
+      "reason": "An intervention can be a causal parent without being an issued-record prerequisite."
+    },
+    {
+      "class_id": "autonomous_feedback",
+      "classification": "FEEDBACK_REQUIRES_EXPLICIT_ISSUANCE_RULE",
+      "counts_as_record_source": false,
+      "reason": "Feedback counts only when the model emits a stable record consumed by a later executable task."
+    },
+    {
+      "class_id": "edge_defect_degrees_of_freedom",
+      "classification": "STATE_VARIABLE_NOT_RECORD_SOURCE_BY_ITSELF",
+      "counts_as_record_source": false,
+      "reason": "Edge or defect degrees of freedom are source variables until an issuance rule turns them into records."
+    },
+    {
+      "class_id": "continuous_source_flux",
+      "classification": "FLUX_REQUIRES_FROZEN_RECORD_PACKET",
+      "counts_as_record_source": false,
+      "reason": "Continuous flux must be discretized or recorded by a declared source rule before it can enter the record order."
+    },
+    {
+      "class_id": "stochastic_input",
+      "classification": "SAMPLE_NOT_RECORD_SOURCE_BY_ITSELF",
+      "counts_as_record_source": false,
+      "reason": "Random input is not a record-order source unless the sampled outcome is issued as a stable record."
+    },
+    {
+      "class_id": "native_record_issuance_rule",
+      "classification": "RECORD_ORDER_ADMISSIBLE",
+      "counts_as_record_source": true,
+      "reason": "A source-owned issuance rule is the explicit bridge from physical input to produced-record prerequisite."
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "source_t586_review_only_available",
+      "passed": true,
+      "reason": "T586 supplies the finite review-only record-capability-order fixture."
+    },
+    {
+      "check_id": "dependency_and_causal_comparators_attacked",
+      "passed": true,
+      "reason": "The ordinary-dependency, strongest-dependency, and causal comparators all reach a definite collapse/absorption result."
+    },
+    {
+      "check_id": "boundary_classes_are_typed",
+      "passed": true,
+      "reason": "The boundary-input screen admits only explicit record production or native record issuance."
+    },
+    {
+      "check_id": "no_relation_level_residual_claimed",
+      "passed": true,
+      "reason": "The only survivor is a typed filter over standard dependency/causal structure, not a new temporal relation."
+    }
+  ],
+  "claim_ledger_update": "No claim-ledger or Canon Index update is earned.",
+  "comparators": [
+    {
+      "collapse_result": "RELATION_LEVEL_COLLAPSE",
+      "comparator_id": "ordinary_task_prerequisite_dependency",
+      "comparator_minus_record": [],
+      "reason": "If ordinary dependency is allowed to mean task prerequisite on produced records, the T586 relation is exactly that dependency closure rather than a new relation type.",
+      "record_minus_comparator": [],
+      "record_relation_status": "EQUAL",
+      "relation": [
+        [
+          "copy_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "copy_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "erase_standard_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "erase_standard_record"
+        ]
+      ]
+    },
+    {
+      "collapse_result": "ABSORBED_AS_TYPED_SUBRELATION",
+      "comparator_id": "strongest_standard_dependency_order",
+      "comparator_minus_record": [
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ],
+      "reason": "Adding all declared causal parents gives a strict superset of the record order; the extra edges are ordinary causal/input dependencies not licensed as executable record prerequisites.",
+      "record_minus_comparator": [],
+      "record_relation_status": "RECORD_SUBRELATION",
+      "relation": [
+        [
+          "copy_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "copy_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "erase_standard_record",
+          "certify_erased_record"
+        ],
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ]
+    },
+    {
+      "collapse_result": "ABSORBED_AS_TYPED_SUBRELATION",
+      "comparator_id": "supplied_causal_order",
+      "comparator_minus_record": [
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ],
+      "reason": "The supplied causal order absorbs every record-order edge and adds nonrecord causal dependencies, so T586 cannot replace or out-rank causal order on this fixture.",
+      "record_minus_comparator": [],
+      "record_relation_status": "RECORD_SUBRELATION",
+      "relation": [
+        [
+          "copy_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "copy_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "erase_standard_record",
+          "certify_erased_record"
+        ],
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ]
+    },
+    {
+      "collapse_result": "NO_COLLAPSE",
+      "comparator_id": "clock_label_order",
+      "comparator_minus_record": [
+        [
+          "certify_erased_record",
+          "erase_standard_record"
+        ],
+        [
+          "certify_erased_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "copy_known_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "copy_known_record",
+          "seed_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ],
+      "reason": "Clock labels disagree with the record order and remain only a presentation control.",
+      "record_minus_comparator": [
+        [
+          "erase_standard_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "copy_known_record"
+        ]
+      ],
+      "record_relation_status": "OVERLAP_ONLY",
+      "relation": [
+        [
+          "certify_erased_record",
+          "erase_standard_record"
+        ],
+        [
+          "certify_erased_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "copy_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "copy_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "copy_known_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "copy_known_record",
+          "seed_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "seed_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ]
+    },
+    {
+      "collapse_result": "NO_COLLAPSE",
+      "comparator_id": "entropy_rank_order",
+      "comparator_minus_record": [
+        [
+          "certify_erased_record",
+          "copy_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "copy_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "prepare_biased_reference",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ],
+      "reason": "Entropy ranks disagree with the record order and cannot supply the claimed relation.",
+      "record_minus_comparator": [
+        [
+          "copy_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "copy_known_record",
+          "erase_standard_record"
+        ]
+      ],
+      "record_relation_status": "OVERLAP_ONLY",
+      "relation": [
+        [
+          "certify_erased_record",
+          "copy_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "certify_erased_record"
+        ],
+        [
+          "erase_standard_record",
+          "copy_known_record"
+        ],
+        [
+          "erase_standard_record",
+          "prepare_biased_reference"
+        ],
+        [
+          "prepare_biased_reference",
+          "certify_erased_record"
+        ],
+        [
+          "prepare_biased_reference",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "certify_erased_record"
+        ],
+        [
+          "seed_known_record",
+          "copy_known_record"
+        ],
+        [
+          "seed_known_record",
+          "erase_standard_record"
+        ],
+        [
+          "seed_known_record",
+          "prepare_biased_reference"
+        ]
+      ]
+    }
+  ],
+  "next_work": "Do not continue producing T-number scaffolds from T586 alone. Reopen Lane 1 only for a provenance-valid physical source packet, a frozen capability witness, or a sharper counterexample that changes the record-issuance contract.",
+  "not_claimed": "T587 does not prove time, temporal issuance, source-law novelty, causal-order replacement, a universal capability measure, TAF3, TAF8, S1, public-posture movement, external publication, or cross-repo truth.",
+  "physical_result": "The T586 Landauer fixture still distinguishes issued records from access changes, interventions, observer readouts, stochastic inputs, continuous flux, and section choices. That distinction is useful as a screen against boundary-input overread, but it does not derive physical time or an independent temporal order.",
+  "record_order": [
+    [
+      "copy_known_record",
+      "certify_erased_record"
+    ],
+    [
+      "copy_known_record",
+      "erase_standard_record"
+    ],
+    [
+      "erase_standard_record",
+      "certify_erased_record"
+    ],
+    [
+      "seed_known_record",
+      "certify_erased_record"
+    ],
+    [
+      "seed_known_record",
+      "copy_known_record"
+    ],
+    [
+      "seed_known_record",
+      "erase_standard_record"
+    ]
+  ],
+  "source_gate": "T586-record-capability-order-gate-v0.1",
+  "source_verdict": "RECORD_CAPABILITY_ORDER_FINITE_PARTIAL_ORDER_REVIEW_ONLY",
+  "verdict": "T586_DOWNGRADED_TO_TYPED_RECORD_PREREQUISITE_FILTER_REVIEW_ONLY"
+}

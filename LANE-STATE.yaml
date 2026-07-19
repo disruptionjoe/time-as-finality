@@ -1,33 +1,101 @@
-lane_state_version: '1.0'
+schema_version: "2.0"
 owner_id: time-as-finality
-manifest_ref: LANES.yaml
-manifest_revision: 1
-evaluated_at: '2026-07-18T22:45:00-05:00'
-run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
+group: church-of-ai
+rule_ref: system/runtime/flows/refresh-lane-state.md
+updated_at: "2026-07-19T12:52:00-05:00"
+run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
+bottom_line: "T587 parked capability-to-temporal-order; wait for source evidence instead of inventing another T-swing."
+decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
+needs_joe: false
 lanes:
-- lane_id: '1'
-  work_status: source_packet_waiting
-  last_movement: T587 downgraded T586 to a typed record-prerequisite filter.
-  movement_ref: results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md
-  steering_attention: wait_for_stronger_source_evidence
-  steering_prompt: Reopen only for a physical source packet, frozen capability witness, or sharper issuance counterexample.
-  steering_ref: steward/research-portfolio.json
-  light: yellow
-  reason_code: t586_attack_closed_waiting_source_packet
-  evidence_ref: results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md
-  summary: T587 closed T586 attack; Lane 1 waits for stronger source evidence.
-  evaluated_at: '2026-07-18T22:45:00-05:00'
-  run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
-- lane_id: A
-  work_status: cycle_closed
-  last_movement: Repo-local progress recorded and state refreshed.
-  movement_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
-  steering_attention: none
-  steering_prompt: No unarchived mailbox item was present in this child run.
-  steering_ref: steward/research-portfolio.json
-  light: green
-  reason_code: repo_cycle_closed
-  evidence_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
-  summary: Steward cycle closed with repo-local T587 progress.
-  evaluated_at: '2026-07-18T22:45:00-05:00'
-  run_ref: agent-runs/RUN-20260718-516-t587-causal-collapse-boundary-attack.md
+  - lane_id: "1"
+    work_status: thin
+    last_movement: "T587 downgraded T586 to a typed record-prerequisite filter."
+    movement_ref: "results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md"
+    steering_attention: watch
+    steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
+    steering_ref: "steward/research-portfolio.json"
+    light: yellow
+    reason_code: t586_attack_closed_waiting_source_packet
+    evidence_ref: "results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md"
+    summary: "Lane 1 parked after T587; reopen only on source evidence."
+    evaluated_at: "2026-07-19T12:52:00-05:00"
+    run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
+    objective: "Formalize and test capability restriction as noncircular temporal order and finality."
+    progress_delta: "No new technical movement this run; state shape was refreshed after T587."
+    scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
+    trend_24h: up
+    confidence: high
+    recommendation: "Wait for source evidence."
+    findings:
+      - "T587 closed the T586 attack as review-only downgrade."
+      - "Active portfolio marks CAPABILITY-TO-TEMPORAL-ORDER as waiting for source packet."
+      - "No new physical source packet or sharper counterexample was present."
+    options:
+      - id: A
+        label: "Wait for evidence"
+        recommended: true
+        description: "Do not run another technical swing until a qualifying source packet or counterexample appears."
+      - id: B
+        label: "Prepare source gate"
+        recommended: false
+        description: "Draft only if a provenance-valid packet arrives inside the repo or mailbox."
+      - id: C
+        label: "Run byproduct"
+        recommended: false
+        description: "Use only when it closes a named active-lane blocker."
+      - id: D
+        label: "Hold for Joe"
+        recommended: false
+        description: "Pause Lane 1 until Joe supplies a new direction."
+    decision_default: "Wait for source evidence."
+    needs_joe: false
+  - lane_id: A
+    work_status: moving
+    last_movement: "Converted LANE-STATE to schema 2.0 after no mailbox or run collision."
+    movement_ref: "LANE-STATE.yaml"
+    steering_attention: none
+    steering_prompt: "none"
+    steering_ref: "AGENTS.md; LANES.yaml"
+    light: green
+    reason_code: lane_state_schema_refreshed
+    evidence_ref: "git status; system/mailboxes/time-as-finality; LANES.yaml; LANE-STATE.yaml"
+    summary: "Stewardship repaired state shape; no mailbox or collision."
+    evaluated_at: "2026-07-19T12:52:00-05:00"
+    run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
+    objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
+    progress_delta: "Verified no mailbox payload, no writer lock, no RUN-534 footprint, and refreshed schema 2.0 state."
+    trend_24h: up
+    confidence: high
+    recommendation: "Continue normal cycles."
+    findings:
+      - "Mailbox contained README.md plus archive only."
+      - "Search found no local RUN-20260719-534 or open-run artifact."
+      - "Emergency revocations remain revision 1 with no entries."
+    options:
+      - id: A
+        label: "Continue cycles"
+        recommended: true
+        description: "Keep future checks bounded to mailbox, stewardship, discovery, and qualified progress evidence."
+      - id: B
+        label: "Inspect memory"
+        recommended: false
+        description: "Load steward history only if future evidence becomes ambiguous."
+      - id: C
+        label: "Watch source gate"
+        recommended: false
+        description: "Reopen progress only when source evidence enters the repo or mailbox."
+      - id: D
+        label: "Pause cycles"
+        recommended: false
+        description: "Stop only if Joe changes owner control state."
+    decision_default: "Continue normal cycles."
+    needs_joe: false
+    drift_verdict: clean
+    action_counts:
+      mail: 0
+      reconciled: 1
+      integrity_repairs: 1
+      seeds_routed: 0
+      escalations: 0
+    attention_pointer: "Nothing needs you; Lane 1 is waiting for source evidence."

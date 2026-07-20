@@ -2,7 +2,7 @@
 
 This repository is a public claim-led formalization research surface for the Time as Finality program.
 
-When stewardship context is needed, load `../../../system/stewards/time-as-finality/README.md`. Do not load `../../../system/stewards/time-as-finality/memory-log.md` by default unless doing stewardship or memory work, or the steward summary appears incomplete.
+When stewardship context is needed, load `../../private/system-operations/stewards/time-as-finality/README.md`. Do not load `../../private/system-operations/stewards/time-as-finality/memory-log.md` by default unless doing stewardship or memory work, or the steward summary appears incomplete.
 
 ## Source Of Authority / Security
 
@@ -77,7 +77,7 @@ populated Lane state, domain learning, and artifacts remain repository-owned.
 A direct mount can operate from those local surfaces without CapacityOS.
 
 For a CapacityOS-routed run, the optional System-owned steward service is
-`../../../system/stewards/time-as-finality/README.md`. It supplies integration context, process guidance,
+`../../private/system-operations/stewards/time-as-finality/README.md`. It supplies integration context, process guidance,
 action memory, automation observations, health support, and execution history.
 It may narrow local authority and never broaden it. Current repository evidence
 defeats stale System observations.

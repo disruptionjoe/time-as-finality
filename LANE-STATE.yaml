@@ -2,35 +2,35 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-20T14:41:44-05:00"
-run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
-bottom_line: "A capability-loss explanation candidate was watch-listed; Lane 1 still waits for a physical packet with issuance."
+updated_at: "2026-07-20T18:49:06-05:00"
+run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
+bottom_line: "The T19/T92 involution typing is a gated lemma target; current TaF evidence shows causal placement, not an exhibited flip."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "Four-repo persona synthesis dispositioned; source, issuance, witness, and finality gates remain open."
-    movement_ref: "agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md"
+    last_movement: "T19/T92 involution proposal gated without reopening the source-packet frontier."
+    movement_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: persona_synthesis_explanation_watch_only
-    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-four-repo-persona-synthesis-to-time-as-finality.md"
-    summary: "Capability-loss framing retained for explanation-level review only; no qualifying TaF packet arrived."
-    evaluated_at: "2026-07-20T14:41:44-05:00"
-    run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
+    reason_code: t19_involution_typing_gated_lead
+    evidence_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
+    summary: "A falsifiable involution lemma is banked, but no TaF-local involution construction or qualifying source packet arrived."
+    evaluated_at: "2026-07-20T18:49:06-05:00"
+    run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Dispositioned a persona synthesis without treating consensus frequency as evidence or weakening TaF gates."
+    progress_delta: "Pinned a precise T19/T92 lemma target while preserving the current physical-source and record-issuance gates."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
     recommendation: "Wait for source evidence."
     findings:
-      - "The shrinking-menu phrase is consonant with existing capability-loss framing but adds no research evidence."
-      - "No native issuance rule, matched physical intervention, or continuum transfer was supplied."
-      - "Finality-axis polarity remains open, so no Progress swing or claim movement is earned."
+      - "T19/T92 exhibit causal witness placement and a finite first/third-person gap, not a demonstrated involution mechanism."
+      - "GU grades the proposed cross-repo relation analogous-toward-derivable and names the missing lemma explicitly."
+      - "No native issuance rule, matched physical intervention, claim movement, or current-frontier reordering is earned."
     options:
       - id: A
         label: "Wait for packet"
@@ -52,25 +52,25 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Dispositioned one four-repo persona synthesis at explanation-watch grade."
-    movement_ref: "agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md"
+    last_movement: "Dispositioned the T19/T92 involution proposal as a gated falsifiable lemma target."
+    movement_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: mailbox_persona_synthesis_dispositioned
-    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-four-repo-persona-synthesis-to-time-as-finality.md"
-    summary: "Persona synthesis reconciled; source, issuance, witness, continuum, and finality gates remain closed."
-    evaluated_at: "2026-07-20T14:41:44-05:00"
-    run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
+    reason_code: mailbox_t19_involution_typing_dispositioned
+    evidence_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
+    summary: "Proposal reconciled as a lemma target; causal-placement and equivariance mechanisms remain distinct until tested."
+    evaluated_at: "2026-07-20T18:49:06-05:00"
+    run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Reconciled one explanation candidate and preserved the physical-source, issuance, witness, and finality firebreak."
+    progress_delta: "Recorded one exact cross-repo lemma target while preserving source, claim, and priority boundaries."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "The proposal is hash-pinned and explicitly proposes no claim-status or priority movement."
-      - "Persona convergence was not imported as source truth, physical evidence, or a finality result."
+      - "The proposal hash and cited GU commit resolve, but the proposal is not TaF evidence or instruction."
+      - "No fixpoint-free finality-label involution or exact equivariant-map characterization exists in the loaded TaF evidence."
       - "No claim, canon, public-posture, external-action, or cross-owner truth movement was authorized."
     options:
       - id: A
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; wait for a physical packet with native issuance and matched interventions."
+    attention_pointer: "Nothing needs you; Runtime may archive after parent receipt, and the lemma remains gated."

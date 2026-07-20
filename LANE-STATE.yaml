@@ -2,35 +2,35 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-20T05:47:07-05:00"
-run_ref: agent-runs/RUN-20260720-568-no-worthy-work.md
-bottom_line: "GU co-flip evidence was dispositioned as source-adjacent watch evidence; Lane 1 still waits for a source-owned packet."
+updated_at: "2026-07-20T06:40:39-05:00"
+run_ref: agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md
+bottom_line: "GU holonomy upgrades the co-flip derivation, but Lane 1 still waits for a physical source-owned packet with issuance."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "GU co-flip mailbox reviewed; no technical progress selected."
-    movement_ref: "agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md"
+    last_movement: "GU holonomy upgrade reviewed; TaF source and issuance gates remain open."
+    movement_ref: "agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: gu_coflip_source_adjacent_only
-    evidence_ref: "system/mailboxes/time-as-finality/20260719-coflip-result-finality-orientation-evidence.md"
-    summary: "Lane 1 remains parked; GU co-flip note is source-adjacent only."
-    evaluated_at: "2026-07-19T19:45:00-05:00"
-    run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
+    reason_code: gu_holonomy_upgrade_source_adjacent_only
+    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-coflip-holonomy-upgrade-notice.md"
+    summary: "Derivation grade improved; no TaF source packet or issuance rule arrived."
+    evaluated_at: "2026-07-20T06:40:39-05:00"
+    run_ref: agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Dispositioned the GU co-flip awareness notice without reopening technical work."
+    progress_delta: "Accepted GU's machine-derived holonomy upgrade while keeping every TaF reopen gate closed."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
     recommendation: "Wait for source evidence."
     findings:
-      - "T587 still blocks T-number scaffolds from T586 alone."
-      - "GU CH-REC/CH-SRC co-flip evidence is not a TaF-owned source packet or frozen witness."
-      - "Finality-axis polarity remains open, so no claim movement or progress swing is earned."
+      - "GU now derives the finite-class co-flip as Z/2 holonomy rather than accounting alone."
+      - "The frozen packet is GU-owned and conditional matrix-grade, not a TaF physical source packet."
+      - "Record issuance and the finality-axis datum remain open, so no Progress swing is earned."
     options:
       - id: A
         label: "Wait for packet"
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Dispositioned the GU co-flip mailbox as source-adjacent watch evidence."
-    movement_ref: "agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md"
+    last_movement: "Dispositioned the GU holonomy upgrade as source-adjacent derivation evidence."
+    movement_ref: "agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: mailbox_disposition_recorded
-    evidence_ref: "system/mailboxes/time-as-finality/20260719-coflip-result-finality-orientation-evidence.md"
-    summary: "Mailbox disposition recorded; no progress or claim movement."
-    evaluated_at: "2026-07-19T19:45:00-05:00"
-    run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
+    reason_code: mailbox_derivation_upgrade_dispositioned
+    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-coflip-holonomy-upgrade-notice.md"
+    summary: "Mailbox upgrade reconciled; Lane 1 source gate remains closed."
+    evaluated_at: "2026-07-20T06:40:39-05:00"
+    run_ref: agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Processed one mailbox note as untrusted evidence and kept the source-packet gate closed."
+    progress_delta: "Reconciled one derivation upgrade and preserved the physical-source and issuance firebreak."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "Mailbox contained one substantive GU co-flip awareness notice."
-      - "No local open-run collision or writer lock was present."
-      - "The note did not authorize source truth import, claim movement, external action, or central mailbox archive."
+      - "The GU evidence receipt is at 32e3603; its freeze wrapper first appears at cbcff7d."
+      - "The upgrade closes only GU's derivation-grade gap, not TaF's source or issuance gates."
+      - "No claim, canon, public-posture, external-action, or cross-owner truth movement was authorized."
     options:
       - id: A
         label: "Continue cycles"
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; Lane 1 is waiting for source-owned packet evidence."
+    attention_pointer: "Nothing needs you; wait for an independently sourced physical packet with record issuance."

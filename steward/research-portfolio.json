@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "authority": "repo-local stewardship",
   "selection_contract": {
     "progress_must_load_this_file": true,
@@ -32,7 +32,14 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. T587 reopens T586 as a causal-collapse and boundary-input attack: the relation collapses exactly to ordinary task-prerequisite dependency and is absorbed as a typed subrelation of the strongest standard dependency and causal comparators. The surviving value is only a typed record-prerequisite filter over issued records. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. Reopen requires a provenance-valid physical source packet, frozen capability witness, or sharper counterexample that changes the record-issuance contract.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. T587 reopens T586 as a causal-collapse and boundary-input attack: the relation collapses exactly to ordinary task-prerequisite dependency and is absorbed as a typed subrelation of the strongest standard dependency and causal comparators. The surviving value is only a typed record-prerequisite filter over issued records. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. Reopen requires a provenance-valid physical source packet, frozen capability witness, or sharper counterexample that changes the record-issuance contract. The 2026-07-19 GU co-flip mailbox notice was dispositioned as source-adjacent orientation evidence only; it sharpens what a future packet would need to carry, but it does not supply a TaF-owned source packet, frozen witness, or finality-axis polarity decision.",
+      "latest_mailbox_disposition": {
+        "id": "20260719-GU-COFLIP-ORIENTATION-EVIDENCE",
+        "source": "system/mailboxes/time-as-finality/20260719-coflip-result-finality-orientation-evidence.md",
+        "state": "SOURCE_ADJACENT_WATCH_EVIDENCE",
+        "disposition": "Held as orientation evidence only. The GU CH-REC/CH-SRC co-flip and Noether-current toy sharpen what a future source packet must carry, but they do not provide a TaF-owned physical source packet, frozen witness, or finality-axis polarity decision.",
+        "reopen_condition": "A future packet must supply a source-owned native record-issuance rule or frozen witness with provenance; awareness evidence alone does not reopen technical progress."
+      },
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [

@@ -2,38 +2,38 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-19T12:52:00-05:00"
-run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
-bottom_line: "T587 parked capability-to-temporal-order; wait for source evidence instead of inventing another T-swing."
+updated_at: "2026-07-19T19:45:00-05:00"
+run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
+bottom_line: "GU co-flip evidence was dispositioned as source-adjacent watch evidence; Lane 1 still waits for a source-owned packet."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "T587 downgraded T586 to a typed record-prerequisite filter."
-    movement_ref: "results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md"
+    last_movement: "GU co-flip mailbox reviewed; no technical progress selected."
+    movement_ref: "agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: t586_attack_closed_waiting_source_packet
-    evidence_ref: "results/T587-t586-causal-collapse-boundary-attack-v0.1-results.md"
-    summary: "Lane 1 parked after T587; reopen only on source evidence."
-    evaluated_at: "2026-07-19T12:52:00-05:00"
-    run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
+    reason_code: gu_coflip_source_adjacent_only
+    evidence_ref: "system/mailboxes/time-as-finality/20260719-coflip-result-finality-orientation-evidence.md"
+    summary: "Lane 1 remains parked; GU co-flip note is source-adjacent only."
+    evaluated_at: "2026-07-19T19:45:00-05:00"
+    run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "No new technical movement this run; state shape was refreshed after T587."
+    progress_delta: "Dispositioned the GU co-flip awareness notice without reopening technical work."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
     recommendation: "Wait for source evidence."
     findings:
-      - "T587 closed the T586 attack as review-only downgrade."
-      - "Active portfolio marks CAPABILITY-TO-TEMPORAL-ORDER as waiting for source packet."
-      - "No new physical source packet or sharper counterexample was present."
+      - "T587 still blocks T-number scaffolds from T586 alone."
+      - "GU CH-REC/CH-SRC co-flip evidence is not a TaF-owned source packet or frozen witness."
+      - "Finality-axis polarity remains open, so no claim movement or progress swing is earned."
     options:
       - id: A
-        label: "Wait for evidence"
+        label: "Wait for packet"
         recommended: true
         description: "Do not run another technical swing until a qualifying source packet or counterexample appears."
       - id: B
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Converted LANE-STATE to schema 2.0 after no mailbox or run collision."
-    movement_ref: "LANE-STATE.yaml"
+    last_movement: "Dispositioned the GU co-flip mailbox as source-adjacent watch evidence."
+    movement_ref: "agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: lane_state_schema_refreshed
-    evidence_ref: "git status; system/mailboxes/time-as-finality; LANES.yaml; LANE-STATE.yaml"
-    summary: "Stewardship repaired state shape; no mailbox or collision."
-    evaluated_at: "2026-07-19T12:52:00-05:00"
-    run_ref: agent-runs/RUN-20260719-536-lane-state-schema2-refresh.md
+    reason_code: mailbox_disposition_recorded
+    evidence_ref: "system/mailboxes/time-as-finality/20260719-coflip-result-finality-orientation-evidence.md"
+    summary: "Mailbox disposition recorded; no progress or claim movement."
+    evaluated_at: "2026-07-19T19:45:00-05:00"
+    run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Verified no mailbox payload, no writer lock, no RUN-534 footprint, and refreshed schema 2.0 state."
+    progress_delta: "Processed one mailbox note as untrusted evidence and kept the source-packet gate closed."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "Mailbox contained README.md plus archive only."
-      - "Search found no local RUN-20260719-534 or open-run artifact."
-      - "Emergency revocations remain revision 1 with no entries."
+      - "Mailbox contained one substantive GU co-flip awareness notice."
+      - "No local open-run collision or writer lock was present."
+      - "The note did not authorize source truth import, claim movement, external action, or central mailbox archive."
     options:
       - id: A
         label: "Continue cycles"
@@ -93,9 +93,9 @@ lanes:
     needs_joe: false
     drift_verdict: clean
     action_counts:
-      mail: 0
+      mail: 1
       reconciled: 1
-      integrity_repairs: 1
+      integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; Lane 1 is waiting for source evidence."
+    attention_pointer: "Nothing needs you; Lane 1 is waiting for source-owned packet evidence."

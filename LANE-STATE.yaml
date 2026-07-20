@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-20T06:40:39-05:00"
-run_ref: agent-runs/RUN-20260720-063650-coflip-holonomy-mailbox.md
+updated_at: "2026-07-20T07:42:33-05:00"
+run_ref: agent-runs/RUN-20260720-073651-no-worthy-work.md
 bottom_line: "GU holonomy upgrades the co-flip derivation, but Lane 1 still waits for a physical source-owned packet with issuance."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false

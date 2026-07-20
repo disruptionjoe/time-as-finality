@@ -2,35 +2,35 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-20T10:38:43-05:00"
-run_ref: agent-runs/RUN-20260720-103623-toe-arrow-watch-mailbox.md
-bottom_line: "Three unverified arrow-mechanism pointers were watch-listed; Lane 1 still waits for a physical packet with issuance."
+updated_at: "2026-07-20T14:41:44-05:00"
+run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
+bottom_line: "A capability-loss explanation candidate was watch-listed; Lane 1 still waits for a physical packet with issuance."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "TOE transcript pointers watch-listed; source and issuance gates remain open."
-    movement_ref: "agent-runs/RUN-20260720-103623-toe-arrow-watch-mailbox.md"
+    last_movement: "Four-repo persona synthesis dispositioned; source, issuance, witness, and finality gates remain open."
+    movement_ref: "agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: toe_transcripts_unverified_watch_only
-    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-toe-transcripts-arrow-evidence-pointer.md"
-    summary: "Mechanism pointers added at watch grade; no qualifying TaF packet arrived."
-    evaluated_at: "2026-07-20T10:38:43-05:00"
-    run_ref: agent-runs/RUN-20260720-103623-toe-arrow-watch-mailbox.md
+    reason_code: persona_synthesis_explanation_watch_only
+    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-four-repo-persona-synthesis-to-time-as-finality.md"
+    summary: "Capability-loss framing retained for explanation-level review only; no qualifying TaF packet arrived."
+    evaluated_at: "2026-07-20T14:41:44-05:00"
+    run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Watch-listed three unverified arrow mechanisms without weakening TaF's source and issuance gates."
+    progress_delta: "Dispositioned a persona synthesis without treating consensus frequency as evidence or weakening TaF gates."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
     recommendation: "Wait for source evidence."
     findings:
-      - "Bianconi, Mannheim, and evaporation pointers remain unverified against primary sources."
-      - "The pointers offer mechanism shapes only, not a TaF physical witness or issuance rule."
-      - "Finality-axis polarity remains open, so no Progress swing is earned."
+      - "The shrinking-menu phrase is consonant with existing capability-loss framing but adds no research evidence."
+      - "No native issuance rule, matched physical intervention, or continuum transfer was supplied."
+      - "Finality-axis polarity remains open, so no Progress swing or claim movement is earned."
     options:
       - id: A
         label: "Wait for packet"
@@ -52,25 +52,25 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Dispositioned one TOE transcript pointer note at unverified watch grade."
-    movement_ref: "agent-runs/RUN-20260720-103623-toe-arrow-watch-mailbox.md"
+    last_movement: "Dispositioned one four-repo persona synthesis at explanation-watch grade."
+    movement_ref: "agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: mailbox_watch_pointer_dispositioned
-    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-toe-transcripts-arrow-evidence-pointer.md"
-    summary: "Mailbox pointers reconciled; source, issuance, and witness gates remain closed."
-    evaluated_at: "2026-07-20T10:38:43-05:00"
-    run_ref: agent-runs/RUN-20260720-103623-toe-arrow-watch-mailbox.md
+    reason_code: mailbox_persona_synthesis_dispositioned
+    evidence_ref: "system/mailboxes/time-as-finality/archive/20260720-four-repo-persona-synthesis-to-time-as-finality.md"
+    summary: "Persona synthesis reconciled; source, issuance, witness, continuum, and finality gates remain closed."
+    evaluated_at: "2026-07-20T14:41:44-05:00"
+    run_ref: agent-runs/RUN-20260720-143630-four-repo-persona-synthesis-mailbox.md
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Reconciled one watch note and preserved the physical-source, issuance, and witness firebreak."
+    progress_delta: "Reconciled one explanation candidate and preserved the physical-source, issuance, witness, and finality firebreak."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "The notice is hash-pinned and explicitly labels all three pointers unverified."
-      - "No cited transcript or paper was imported as instruction, source truth, or claim evidence."
+      - "The proposal is hash-pinned and explicitly proposes no claim-status or priority movement."
+      - "Persona convergence was not imported as source truth, physical evidence, or a finality result."
       - "No claim, canon, public-posture, external-action, or cross-owner truth movement was authorized."
     options:
       - id: A
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; primary verification alone would still not replace the missing issuance packet."
+    attention_pointer: "Nothing needs you; wait for a physical packet with native issuance and matched interventions."

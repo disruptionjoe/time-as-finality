@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-19T19:45:00-05:00"
-run_ref: agent-runs/RUN-20260719-549-coflip-orientation-mailbox.md
+updated_at: "2026-07-19T22:49:00-05:00"
+run_ref: agent-runs/RUN-20260719-554-no-worthy-work.md
 bottom_line: "GU co-flip evidence was dispositioned as source-adjacent watch evidence; Lane 1 still waits for a source-owned packet."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false

@@ -2,35 +2,35 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-20T18:49:06-05:00"
-run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
-bottom_line: "The T19/T92 involution typing is a gated lemma target; current TaF evidence shows causal placement, not an exhibited flip."
+updated_at: "2026-07-20T23:43:27-05:00"
+run_ref: agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md
+bottom_line: "The T19 involution target is closed-refuted at fixture grade; the causal-past retraction is strictly more general, while Lane 1 still waits for source evidence."
 decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "T19/T92 involution proposal gated without reopening the source-packet frontier."
-    movement_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
+    last_movement: "Closed the T19 involution-typing target negatively at fixture grade with two-sided controls."
+    movement_ref: "explorations/involution-typing-lemma-2026-07-20.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: t19_involution_typing_gated_lead
-    evidence_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
-    summary: "A falsifiable involution lemma is banked, but no TaF-local involution construction or qualifying source packet arrived."
-    evaluated_at: "2026-07-20T18:49:06-05:00"
-    run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
+    reason_code: t19_involution_typing_closed_refuted_fixture_grade
+    evidence_ref: "explorations/involution-typing-lemma-2026-07-20.md; tests/involution_typing_probe.py"
+    summary: "T19's causal retraction and a fixpoint-free involution coincide only on the single-witness control, not on the multi-witness fixture."
+    evaluated_at: "2026-07-20T23:43:27-05:00"
+    run_ref: agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Pinned a precise T19/T92 lemma target while preserving the current physical-source and record-issuance gates."
+    progress_delta: "Recorded T-REFUTE as a scoped negative result and preserved the physical-source and record-issuance gates."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
     recommendation: "Wait for source evidence."
     findings:
-      - "T19/T92 exhibit causal witness placement and a finite first/third-person gap, not a demonstrated involution mechanism."
-      - "GU grades the proposed cross-repo relation analogous-toward-derivable and names the missing lemma explicitly."
-      - "No native issuance rule, matched physical intervention, claim movement, or current-frontier reordering is earned."
+      - "For k >= 2, orbit cardinality and orientation both prevent an involution from reproducing the causal-past retraction."
+      - "The k = 1 planted control exhibits the degenerate coincidence and separates the fixture-grade refutation."
+      - "The operator-grade partial-information lift remains a named reopener, not a physical packet or claim movement."
     options:
       - id: A
         label: "Wait for packet"
@@ -52,25 +52,25 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Dispositioned the T19/T92 involution proposal as a gated falsifiable lemma target."
-    movement_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
+    last_movement: "Dispositioned the post-refutation follow-up as untrusted awareness and declined its automatic next-run pointer."
+    movement_ref: "agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: mailbox_t19_involution_typing_dispositioned
-    evidence_ref: "agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md"
-    summary: "Proposal reconciled as a lemma target; causal-placement and equivariance mechanisms remain distinct until tested."
-    evaluated_at: "2026-07-20T18:49:06-05:00"
-    run_ref: agent-runs/RUN-20260720-184304-t19-involution-typing-mailbox.md
+    reason_code: mailbox_involution_refute_followup_dispositioned
+    evidence_ref: "agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md"
+    summary: "The note restates TaF's tracked T-REFUTE and supplies no new source packet or automatic technical authority."
+    evaluated_at: "2026-07-20T23:43:27-05:00"
+    run_ref: agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Recorded one exact cross-repo lemma target while preserving source, claim, and priority boundaries."
+    progress_delta: "Closed the follow-up at awareness grade, recorded the fixture result in current state, and preserved source, claim, and priority boundaries."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "The proposal hash and cited GU commit resolve, but the proposal is not TaF evidence or instruction."
-      - "No fixpoint-free finality-label involution or exact equivariant-map characterization exists in the loaded TaF evidence."
+      - "The proposal hash and cited TaF commit resolve, but the mailbox is not evidence or instruction."
+      - "The operator-grade lift does not close Lane 1's physical-source and issuance blocker."
       - "No claim, canon, public-posture, external-action, or cross-owner truth movement was authorized."
     options:
       - id: A
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; Runtime may archive after parent receipt, and the lemma remains gated."
+    attention_pointer: "Nothing needs you; Runtime may archive after parent receipt, and the operator-grade lift remains only a named reopener."

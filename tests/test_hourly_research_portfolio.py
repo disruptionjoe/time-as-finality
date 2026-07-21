@@ -15,12 +15,17 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         cls.data = json.loads(PORTFOLIO.read_text(encoding="utf-8"))
 
     def test_active_lane_frontier_state_is_explicit(self) -> None:
-        active = [lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE"]
-        self.assertEqual([lane["id"] for lane in active], [self.data["north_star_lane"]])
-        items = {item["id"]: item for item in active[0]["internal_work_items"]}
+        lane_1 = next(
+            group
+            for group in self.data["work_groups"]
+            if group["id"] == self.data["lane_1_work_group"]
+        )
+        self.assertEqual(lane_1["state"], "WAITING_FOR_SOURCE_PACKET")
+        self.assertFalse(lane_1["hourly_eligible"])
+        items = {item["id"]: item for item in lane_1["internal_work_items"]}
         ready = [
             item
-            for item in active[0]["internal_work_items"]
+            for item in lane_1["internal_work_items"]
             if item["state"] == "READY" and item["hourly_eligible"]
         ]
         self.assertEqual(ready, [])
@@ -32,8 +37,8 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertEqual(items["TAF-P2C-WITNESS-ADJUDICATION"]["state"], "GATED_FROZEN_PACKET")
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
-        for lane in self.data["lanes"]:
-            for item in lane.get("internal_work_items", []):
+        for group in self.data["work_groups"]:
+            for item in group.get("internal_work_items", []):
                 if item["state"].startswith("READY_AFTER") or item["state"].startswith("GATED"):
                     self.assertTrue(item.get("activation"))
         contract = self.data["selection_contract"]
@@ -42,11 +47,15 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertIn("insufficient", contract["minimum_material_output"])
 
     def test_t583_is_baseline_not_completion(self) -> None:
-        lane = next(lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE")
-        self.assertIn("finite review instrument", lane["current_authority"])
-        context = (ROOT / "steward" / "README.md").read_text(encoding="utf-8")
+        lane_1 = next(
+            group
+            for group in self.data["work_groups"]
+            if group["id"] == self.data["lane_1_work_group"]
+        )
+        self.assertIn("finite review instrument", lane_1["current_authority"])
+        context = (ROOT / "LANES.yaml").read_text(encoding="utf-8")
         self.assertIn("steward/research-portfolio.json", context)
-        self.assertIn(self.data["north_star_lane"], context)
+        self.assertIn("Formalization and truth testing", context)
 
 
 if __name__ == "__main__":

@@ -96,6 +96,17 @@ Discovery is Lane-less. A direct mount uses these local surfaces without
 CapacityOS. System observations, health, schedules, and execution history are
 not Lane truth.
 
+## Purpose, Passion, and Practice
+
+- **Purpose:** Test whether individual and collective record accumulation, with
+  differing resistance to reversal, can ground physical structures including
+  relativity and quantum dynamics.
+- **Passion:** Test whether agents can reason rigorously across distributed
+  computing and physics without dissolving either into metaphor.
+- **Practice:** Understand disciplinary boundaries, identify transferable
+  methods, and create credible proof when cross-domain work yields useful
+  information.
+
 ## Versioning Default
 
 After any coherent batch of repository changes that Joe has authorized, commit

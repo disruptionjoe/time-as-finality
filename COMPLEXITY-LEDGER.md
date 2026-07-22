@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T162. T163-T587
+ledger has explicit computational-status placements only through T170. T171-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -24,7 +24,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T162, is now reconciled below.
+T139-T170, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -78,10 +78,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T160 H7 Substrate-Family Screen](tests/T160-h7-substrate-family-screen.md) | `non_computational` | Four prose-defined substrate families and the inherited H7 reinstatement burden. | Claim-triage synthesis over existing absorber results; no new executable procedure or scale claim. | The default-null taxonomy does not prove impossibility for every member of a substrate family. |
 | [T161 Detector Control-Root Independence](tests/T161-detector-control-root-independence.md) | `poly_decider` | Finite nominal authority assignments and critical/noncritical control-root assignments. | Union/quotient of authority domains by shared critical roots followed by the existing finite authority audit. | This is infrastructure admissibility, not detector evidence, physics, or Q1B support. |
 | [T162 Q1A SBS Factorization Obstruction](tests/T162-q1a-sbs-factorization-obstruction.md) | `finite_witness` | Enumerated finite SBS-style objectivity, access, provenance, and independence cases. | Exact closure-key comparison checks factorization of current-family D1 verdicts over the frozen cases. | This is a current-family obstruction, not a no-go theorem for quantum measurement or all SBS models. |
+| [T163 T54 Rank-Pair Family Census](tests/T163-t54-rank-pair-family-census.md) | `finite_witness` | All 720 labeled six-event information-rank permutations with fixed causal ranks. | Exhaustive enumeration through the frozen T54/T126/T156/T159 pipeline counts blocked, fragile, and stable cases. | The census is a complete finite family result, not an asymptotic, generic causal-set, or continuum theorem. |
+| [T164 T54 Survivor Isomorphism And Locality Audit](tests/T164-t54-survivor-isomorphism-locality.md) | `finite_witness` | The 26 labeled stable T163 survivors on six events. | Exhaustive finite-poset canonicalization and order-dual quotienting compute class and locality diagnostics. | Isomorphism compression of six-event controls does not establish random sprinkling, embedding, metric, or covariance structure. |
+| [T165 T54 Survivor Sprinkling Stress Test](tests/T165-t54-survivor-sprinkling-stress.md) | `finite_witness` | The exact 720-element six-point ordinal 1+1 permutation ensemble. | Complete finite counting computes unconditional, conditional, and class-abundance fractions. | Exactness holds only for the declared six-point ordinal ensemble; rarity is not a continuum or generative-law result. |
+| [T166 Weak-Measurement Platform-Packet Gate](tests/T166-weak-measurement-platform-packet-gate.md) | `poly_decider` | Declared platform packet fields, architecture class, record target, projection, and audit-data burden. | A fixed finite intake classifier rejects incomplete, coarse, same-instrument, and scaffold-only packets. | Packet admission precedes event-level screens and supplies no platform evidence or Q1C upgrade. |
+| [T167 T54 Ordinal Scaling Stress Test](tests/T167-t54-ordinal-scaling-stress.md) | `finite_witness` | Complete ordinal permutation ensembles at n=5, 6, and 7, totaling 5,880 labeled cases. | Exhaustive completion, screening, and finite-poset quotienting reports one-step size dependence. | This bounded scaling audit is not an asymptotic, continuum-limit, covariance, or spacetime-reconstruction theorem. |
+| [T168 H7 Sector-Restriction Screen](tests/T168-h7-sector-restriction-screen.md) | `poly_decider` | Declared sector, reservoir, gauge, control, absorber, substrate, and reverse-status features. | A fixed finite gate classifies operation restrictions, accounting absorbers, relabelings, idealizations, capability residue, and candidates. | It is not a theorem of gauge theory and does not prove physical deletion impossibility. |
+| [T169 Detector Deployment-Archetype Screen](tests/T169-detector-deployment-archetype-screen.md) | `poly_decider` | Declared pre-data, authority-root, archive, escrow, and event-row review features. | A fixed finite classifier routes six deployment archetypes through T138/T161-style gates. | The sole live class is an external review candidate, not detector evidence, dynamics, or Q1B support. |
+| [T170 Q1D Correlation-Record Guardrail](tests/T170-q1d-correlation-record-guardrail.md) | `poly_decider` | Finite declared boxes with local marginals, correlation stage, hidden-value, signalling, and quantum-status flags. | Exact finite probability checks plus fixed stage/typing rules reject signalling and interpretation shortcuts. | Passing guardrail language is not a new Bell inequality, measurement theory, collapse model, or empirical result. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T162, no
+Within the explicitly reconciled computational-status set through T170, no
 surveyed core branch currently earns:
 
 ```text

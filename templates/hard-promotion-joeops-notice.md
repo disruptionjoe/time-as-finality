@@ -1,6 +1,8 @@
 <!--
-TEMPLATE — copy into CapacityOS/mailboxes/joeops/ as
-    YYYYMMDD-canon-promotion-<slug>-to-joeops.md
+TEMPLATE — save the completed durable note in this repository as
+    attention/YYYYMMDD-canon-promotion-<slug>.md
+Then place a pointer-only envelope naming that source path in
+    ../../../repos/private/system-runtime/mailboxes/system-attention/
 Awareness note for an ALREADY-EXECUTED hard promotion in time-as-finality
 (a claim raised into the `theorem_backed` tier of the Canon Index, or otherwise
 asserted as proven/resolved — the move an outside reader would take as
@@ -52,4 +54,5 @@ clear it.
 How to undo cleanly: revert commit <hash>, demote the Canon Index / `CLAIM-LEDGER.md`
 row to <prior tier/status>, and note any downstream wording that must be re-aligned.
 
-<!-- JoeOps appends "## Processing Receipt" on processing, then moves this file to archive/. -->
+<!-- System Attention indexes the owner-source pointer as unread. Runtime may archive the
+pointer envelope only after the pointer appears in the Attention awareness index. -->

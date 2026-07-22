@@ -59,12 +59,12 @@
         },
         {
           "id": "TAF-REFLECTOR-SELF-DUAL-CHECK",
-          "state": "READY_SPEC_FIRST",
+          "state": "SPEC_FROZEN_READY_FOR_REFERENCE_GATE",
           "priority_score": 22,
           "hourly_eligible": true,
           "activation": "The 2026-07-22 strategic reprioritization retains source-law work only as a bounded own-absorber check feeding Dynamic Unity.",
-          "result": "No new result. The next bounded check is the reversal-self-dual reflector enumeration, with F4 first as the knob-free anchor. TaF-2 may enter only later as family F6 after its independent gate survives.",
-          "next_swing": "Freeze the F4-first reflector-enumeration specification before any result. Preserve the three informative outcomes: generator found, self-duality under-selects, or representation theorem.",
+          "result": "The F4-first reflector-enumeration specification is frozen at explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md. It fixes constructions, finite panel, sample cap/seed, controls, outcomes, and non-claim boundaries before results.",
+          "next_swing": "Locate and freeze the exact existing repaired-S1 suite and Myrheim-Meyer estimator references and thresholds. Then run the frozen finite panel without retuning or return blocked_missing_registered_observable.",
           "success_condition": "The bounded enumeration supplies a result that sharpens TaF's finality/geometry leg without tuning a continuous coordinate knob.",
           "kill_condition": "The self-dual ensemble under-selects or the result reduces to imported metric/coordinate structure; report either outcome without extending the search indefinitely.",
           "forbidden_shortcut": "Do not restore source-law generation as an open-ended headline, seed or harden Dynamic Unity's assembly, or treat F6 as independent support before TaF-2 passes its own gate."

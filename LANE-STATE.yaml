@@ -2,31 +2,31 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T16:50:00-05:00"
-run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
-bottom_line: "The 2026-07-22 strategic reprioritization is reconciled: native hardening, publication, capability measurement, and the TaF-2 anomaly prediction are first-class Lane-1 output. Open-ended source-law search remains demoted to the bounded TaF-1 reflector check feeding Dynamic Unity. The TaF-2 finite reflection-anomaly specification is frozen before implementation; no anomaly, claim, canon, or public-posture result is asserted."
-decision_default: "Implement the frozen TaF-2 finite fixture without retuning after a source-backed anomaly operator is fixed; keep F4 as the independent knob-free reflector anchor; preserve the S4 paper fixture-grade ceiling and broad-headline embargo."
+updated_at: "2026-07-22T18:49:00-05:00"
+run_ref: RUN-20260722-184245-repository-work-cycle-nbl-hourly
+bottom_line: "TaF-2 remains blocked on a source-backed anomaly operator, so the bounded F4-first reversal-self-dual reflector specification is now frozen before results. It fixes a knob-free native construction, matched controls, finite panel, and informative negative outcomes without claiming a source law or continuum result."
+decision_default: "Locate and freeze the existing repaired-S1 and Myrheim-Meyer executable references and thresholds, then run the F4 finite panel without retuning or return the declared missing-observable block."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Re-ranked Lane 1 under the strategic reprioritization and froze the TaF-2 finite reflection-anomaly experiment contract before implementation. The contract fixes the Z2 charge, lattice grid, construction fork, hostile controls, and negative/blocked outcomes; it performs no computation."
-    movement_ref: "LANES.yaml; steward/research-portfolio.json; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md"
+    last_movement: "Froze the F4-first reversal-self-dual reflector enumeration before results after the higher-ranked TaF-2 implementation remained blocked on its declared operator prerequisite."
+    movement_ref: "explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md"
     steering_attention: watch
     steering_prompt: "Run TaF-2 only from the frozen finite-fixture specification after fixing a source-backed anomaly operator. Keep F4 as the independent TaF-1 reflector anchor. Do not reopen T586, import GU sigma/w1 as evidence, or lift the TaF-3 broad-headline embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: strategic_rerank_taf2_finite_anomaly_spec_frozen
-    evidence_ref: "LANES.yaml; explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; workflows/logs/synthesis/2026-06-27-finality-anomaly-cancellation-preflight.md"
-    summary: "TaF-2 is now the highest-ranked executable Lane-1 route at specification grade. Its finite 1+1D U(1)/reflection fixture is preregistered with an explicit record-versus-field construction fork, Z2 charge, fixed-data separation and threshold-restatement controls, and exact negative/blocked outcomes. The source-law route is a bounded reflector check, not an open-ended headline."
-    evaluated_at: "2026-07-22T16:50:00-05:00"
-    run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
+    reason_code: taf2_operator_blocked_f4_reflector_spec_frozen
+    evidence_ref: "LANES.yaml; explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md"
+    summary: "TaF-2 remains first-ranked but cannot implement without its declared source-backed anomaly operator. The independent F4 reflector fallback is now preregistered with a knob-free reversal-self-dual construction, matched random/KR controls, finite panel, and exact positive, negative, blocked, and inconclusive outcomes."
+    evaluated_at: "2026-07-22T18:49:00-05:00"
+    run_ref: RUN-20260722-184245-repository-work-cycle-nbl-hourly
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Converted the stale source-wait posture into the accepted publish/predict priority, froze the TaF-2 experiment before results, and removed formal-byproduct eligibility while technical work is executable."
+    progress_delta: "Froze the bounded F4 construction fork, finite panel, matched controls, outcome classes, and no-overread boundary without running the enumeration."
     scope_position: "TaF-2 finite prediction gate first; TaF-1 F4 reflector check second and bounded; TaF-3 S4 paper route preserved at fixture grade; T586 remains closed to repetition."
     trend_24h: up
     confidence: high
-    recommendation: "Fix a source-backed lattice anomaly operator, then implement the frozen TaF-2 grid exactly. If that prerequisite fails, return the declared blocked outcome and move to the bounded F4 reflector specification."
+    recommendation: "Recover the registered repaired-S1/MM references and thresholds, then run or block the frozen F4 panel without retuning."
     findings:
       - "The causal-past retraction pi induces an S4 interior operator: its faithful (pi-saturated) and orientation-faithful (pi-stable, int(A) = A cap pi^{-1}(A)) interiors both satisfy all four Kuratowski axioms on the frozen T19 fixture."
       - "The gate has teeth: pi's raw set-image readings are not interior operators (direct image fails K1 top and K4 meet-preservation; preimage fails K2 contractivity), so the FAIL branch was reachable and PASS is a computed result."
@@ -34,6 +34,7 @@ lanes:
       - "The operator-grade partial-information lift remains a named reopener for the parked T586 line, but it no longer blocks first-class TaF-2 prediction work or native hardening."
       - "The accepted strategic reprioritization promotes the TaF-2 prediction and native hardening while retaining source-law work only as a bounded own-absorber check feeding Dynamic Unity."
       - "The TaF-2 specification treats the record charge and reflection/Pin+ anomaly as distinct constructions until an explicit noncircular bridge is supplied."
+      - "The F4 family label is explicitly separated from the repository's unrelated Theorem F4, preventing a name collision from becoming evidence."
     options:
       - id: A
         label: "Implement frozen TaF-2 gate"

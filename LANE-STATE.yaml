@@ -2,45 +2,47 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T16:15:00-05:00"
-run_ref: RUN-20260722-161500-taf3-kuratowski-interior-gate-directed
-bottom_line: "TaF-3 paper-routing gate landed (Track-2, subordinate): the causal-past retraction pi's faithful knowledge-modality interior PASSES all four Kuratowski axioms on the frozen T19 fixture, so an S4-interior-operator title is licensed at fixture grade (broad 'certify your own present' headline stays embargoed pending the all-finite-graphs quantifier). Track-1 posture is UNCHANGED: Lane 1 still waits for a physical source or an independently specified operator-grade lift. Wave-1 prep steering has landed, re-framing the next Track-1 wave toward the TaF-1 source-law reflector-enumeration swing, armed with TaF-2 as family F6."
-decision_default: "Preserve the full-forget refute and the physical-source gate; route the first-person-finality paper to the S4-interior framing at fixture grade with the embargo held; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired verdict."
+updated_at: "2026-07-22T16:50:00-05:00"
+run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
+bottom_line: "The 2026-07-22 strategic reprioritization is reconciled: native hardening, publication, capability measurement, and the TaF-2 anomaly prediction are first-class Lane-1 output. Open-ended source-law search remains demoted to the bounded TaF-1 reflector check feeding Dynamic Unity. The TaF-2 finite reflection-anomaly specification is frozen before implementation; no anomaly, claim, canon, or public-posture result is asserted."
+decision_default: "Implement the frozen TaF-2 finite fixture without retuning after a source-backed anomaly operator is fixed; keep F4 as the independent knob-free reflector anchor; preserve the S4 paper fixture-grade ceiling and broad-headline embargo."
 needs_joe: false
 lanes:
   - lane_id: "1"
-    work_status: thin
-    last_movement: "Track-2 (paper lane): landed the TaF-3 Kuratowski interior-operator gate. The causal-past retraction pi's faithful knowledge-modality interior (opens = pi-saturated / A*(R)-accessible subsets) PASSES all four Kuratowski axioms on the frozen T19 fixture; raw set-image readings of pi are not interior operators (teeth). Routes the first-person-finality paper to an S4-interior framing at fixture grade. Track-1 posture unchanged."
-    movement_ref: "explorations/kuratowski-interior-gate-first-person-finality-2026-07-22.md; steward/PROPOSAL-kuratowski-interior-paper-route-2026-07-22.md"
+    work_status: moving
+    last_movement: "Re-ranked Lane 1 under the strategic reprioritization and froze the TaF-2 finite reflection-anomaly experiment contract before implementation. The contract fixes the Z2 charge, lattice grid, construction fork, hostile controls, and negative/blocked outcomes; it performs no computation."
+    movement_ref: "LANES.yaml; steward/research-portfolio.json; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md"
     steering_attention: watch
-    steering_prompt: "Wave-1 prep landed. Track-1: wait for source evidence, do not reopen from T586 alone; the next Track-1 wave is the TaF-1 source-law reflector-enumeration swing (F4 first), armed with TaF-2 as F6. Track-2: paper route decided (S4-interior, fixture grade); hold the broad-headline embargo."
+    steering_prompt: "Run TaF-2 only from the frozen finite-fixture specification after fixing a source-backed anomaly operator. Keep F4 as the independent TaF-1 reflector anchor. Do not reopen T586, import GU sigma/w1 as evidence, or lift the TaF-3 broad-headline embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: taf3_kuratowski_interior_gate_pass_s4_title_licensed_fixture_grade_track1_unchanged
-    evidence_ref: "explorations/kuratowski-interior-gate-first-person-finality-2026-07-22.md; steward/PROPOSAL-kuratowski-interior-paper-route-2026-07-22.md; tests/involution_typing_probe.py; explorations/involution-typing-lemma-2026-07-20.md; explorations/partial-future-information-involution-audit-2026-07-21.md"
-    summary: "First-person finality is an S4-interior (knowledge) modality at fixture grade: pi's saturated and pi-stable interiors satisfy int(X)=X, int A subset A, int int A = int A, and int(A cap B) = int A cap int B. The excluded-future interior is the degenerate indiscrete modality; substantive S4 content lives on the full causal order. The broad 'certify your own present' headline stays embargoed pending the all-finite-graphs quantifier."
-    evaluated_at: "2026-07-22T16:15:00-05:00"
-    run_ref: RUN-20260722-161500-taf3-kuratowski-interior-gate-directed
+    reason_code: strategic_rerank_taf2_finite_anomaly_spec_frozen
+    evidence_ref: "LANES.yaml; explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; workflows/logs/synthesis/2026-06-27-finality-anomaly-cancellation-preflight.md"
+    summary: "TaF-2 is now the highest-ranked executable Lane-1 route at specification grade. Its finite 1+1D U(1)/reflection fixture is preregistered with an explicit record-versus-field construction fork, Z2 charge, fixed-data separation and threshold-restatement controls, and exact negative/blocked outcomes. The source-law route is a bounded reflector check, not an open-ended headline."
+    evaluated_at: "2026-07-22T16:50:00-05:00"
+    run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Landed the subordinate Track-2 paper-routing gate (Kuratowski PASS -> S4-interior title licensed, fixture grade, embargo held) without moving any Track-1 claim, verdict, or posture; preserved the full-forget refute and the physical-source gate."
-    scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness. Track-2 paper lane: S4-interior route decided at fixture grade; broad headline embargoed."
+    progress_delta: "Converted the stale source-wait posture into the accepted publish/predict priority, froze the TaF-2 experiment before results, and removed formal-byproduct eligibility while technical work is executable."
+    scope_position: "TaF-2 finite prediction gate first; TaF-1 F4 reflector check second and bounded; TaF-3 S4 paper route preserved at fixture grade; T586 remains closed to repetition."
     trend_24h: up
     confidence: high
-    recommendation: "Track-1: wait for a physical source or independently fixed operator-grade retained-information map; queue the TaF-1 source-law reflector-enumeration swing (F4 first) as the next Track-1 wave. Track-2: adopt the oriented S4-interior paper framing at fixture grade and hold the broad-headline embargo."
+    recommendation: "Fix a source-backed lattice anomaly operator, then implement the frozen TaF-2 grid exactly. If that prerequisite fails, return the declared blocked outcome and move to the bounded F4 reflector specification."
     findings:
       - "The causal-past retraction pi induces an S4 interior operator: its faithful (pi-saturated) and orientation-faithful (pi-stable, int(A) = A cap pi^{-1}(A)) interiors both satisfy all four Kuratowski axioms on the frozen T19 fixture."
       - "The gate has teeth: pi's raw set-image readings are not interior operators (direct image fails K1 top and K4 meet-preservation; preimage fails K2 contractivity), so the FAIL branch was reachable and PASS is a computed result."
       - "The interior on the excluded future subspace is the degenerate indiscrete modality (faithful to T19); the paper must place substantive S4 content on the full causal order and hold the broad-headline embargo pending an all-finite-graphs quantifier."
-      - "Track-1 is unchanged: the operator-grade partial-information lift remains a named reopener and must fix its retained-information map before testing involution alignment; Lane 1 still waits for a provenance-valid physical source packet."
+      - "The operator-grade partial-information lift remains a named reopener for the parked T586 line, but it no longer blocks first-class TaF-2 prediction work or native hardening."
+      - "The accepted strategic reprioritization promotes the TaF-2 prediction and native hardening while retaining source-law work only as a bounded own-absorber check feeding Dynamic Unity."
+      - "The TaF-2 specification treats the record charge and reflection/Pin+ anomaly as distinct constructions until an explicit noncircular bridge is supplied."
     options:
       - id: A
-        label: "Wait for packet"
+        label: "Implement frozen TaF-2 gate"
         recommended: true
-        description: "Do not run another physical swing until a qualifying source packet appears; admit an operator lift only with a pre-fixed retained-information map."
+        description: "First freeze a source-backed operator, then execute the predeclared finite grid without retuning."
       - id: B
-        label: "Prepare source gate"
+        label: "Freeze F4 reflector spec"
         recommended: false
-        description: "Draft only if a provenance-valid packet arrives inside the repo or mailbox."
+        description: "Use the bounded knob-free reflector check if TaF-2 is blocked or after it closes."
       - id: C
         label: "Run byproduct"
         recommended: false
@@ -49,26 +51,26 @@ lanes:
         label: "Hold for Joe"
         recommended: false
         description: "Pause Lane 1 until Joe supplies a new direction."
-    decision_default: "Wait for source evidence or an independently specified operator-grade lift."
+    decision_default: "Implement TaF-2 from the frozen specification after its operator prerequisite is fixed."
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled computational status for T195-T202 across finite DAG proxies, continuum/absorber audits, reviewer synthesis, LP/fairness theorems, and a shared-edge counterexample."
-    movement_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
+    last_movement: "Reconciled the accepted strategic reprioritization across Lane state and the ranked portfolio, then opened the due repository VSM refresh caused by the material change."
+    movement_ref: "LANES.yaml; LANE-STATE.yaml; steward/research-portfolio.json; agent-runs/RUN-20260722-162359-repository-work-cycle-nbl.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: complexity_ledger_t195_t202_slice_reconciled_t189_gap_preserved
-    evidence_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
-    summary: "The ledger now places T195-T202, separating finite proxies and counterexamples from non-computational audits and two elementary optimization theorems; the T189 gap remains explicit."
-    evaluated_at: "2026-07-22T15:40:00-05:00"
-    run_ref: RUN-20260722-153603-repository-work-cycle-cai-hourly
+    reason_code: strategic_priority_and_vsm_material_change_reconciled
+    evidence_ref: "LANES.yaml; steward/research-portfolio.json; agent-runs/RUN-20260722-143532-repository-vsm-discovery.md"
+    summary: "Control now matches the accepted publish/predict priority. Repository-recursive VSM coverage was refreshed because the strategic reprioritization materially changed S2-S5 evidence after the prior 14:40 receipt."
+    evaluated_at: "2026-07-22T16:50:00-05:00"
+    run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Advanced eight artifacts, recognizing the exact LP and equal-load arguments without promoting the surrounding proxy, continuum, or absorber claims."
+    progress_delta: "Re-ranked two technical items, retired stale formal-byproduct eligibility, refreshed VSM coverage, and froze one specification without changing claims or canon."
     trend_24h: up
     confidence: high
-    recommendation: "Continue normal cycles."
+    recommendation: "Run the TaF-2 implementation prerequisite check next; preserve the bounded F4 fallback and all scientific ceilings."
     findings:
       - "T195, T198, and T202 are finite proxy/control/counterexample surfaces; none earns arbitrary-DAG or continuum language."
       - "T200 and T201 earn elementary theorem-backed placements for their declared optimization objectives, while T196, T197, and T199 are non-computational audits or synthesis."
@@ -92,11 +94,11 @@ lanes:
         description: "Stop only if Joe changes owner control state."
     decision_default: "Continue normal cycles."
     needs_joe: false
-    drift_verdict: clean
+    drift_verdict: repaired_strategic_priority_lag
     action_counts:
-      mail: 1
-      reconciled: 1
-      integrity_repairs: 0
+      mail: 0
+      reconciled: 3
+      integrity_repairs: 2
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; Claim Ledger coverage declaration and registry ceiling are coherent through T587."
+    attention_pointer: "Nothing needs Joe; the next technical action is bounded by the frozen TaF-2 specification and its operator prerequisite."

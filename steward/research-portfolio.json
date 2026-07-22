@@ -18,11 +18,11 @@
   "work_groups": [
     {
       "id": "CAPABILITY-TO-TEMPORAL-ORDER",
-      "state": "WAITING_FOR_SOURCE_PACKET",
-      "hourly_eligible": false,
+      "state": "ACTIVE_REPRIORITIZED",
+      "hourly_eligible": true,
       "owner": "time-as-finality",
       "purpose": "Construct or kill an invariant region-indexed capability object and determine whether record-dependent capability change yields a noncircular physical order related to causal and thermodynamic time.",
-      "priority_score": 17,
+      "priority_score": 24,
       "score": {
         "impact": 5,
         "information_gain": 5,
@@ -32,7 +32,7 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
-      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. T587 reopens T586 as a causal-collapse and boundary-input attack: the relation collapses exactly to ordinary task-prerequisite dependency and is absorbed as a typed subrelation of the strongest standard dependency and causal comparators. The surviving value is only a typed record-prerequisite filter over issued records. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. Reopen requires a provenance-valid physical source packet, frozen capability witness, or sharper counterexample that changes the record-issuance contract. The 2026-07-20 GU holonomy freeze upgrades the co-flip's internal evidence to a machine-derived finite-class geometric result but remains GU-owned and conditional. The TOE transcript notice adds three unverified mechanism-shape pointers only. The later four-repo persona synthesis is consonant with the existing capability-loss framing but supplies explanation-level steering only. TaF commit e99f8c58 closes the T19 involution-typing target as CLOSED_REFUTED_FIXTURE_GRADE: the causal-past retraction is strictly more general than a fixpoint-free involution for k >= 2, with coincidence only at the k = 1 control. The result preserves T19/T92 and moves no claim. An operator-grade partial-information lift is a named reopener, not a source packet or automatic technical commission. Lane 1 stays parked. Subordinate Track-2 update (2026-07-22, TaF-3 Wave-1 gate): the downstream first-person-finality paper-routing gate returned Kuratowski PASS -- the causal-past retraction's faithful accessible-knowledge interior (opens = pi-saturated / A*(R)-accessible subsets) and its orientation-faithful pi-stable interior both satisfy all four Kuratowski interior axioms on the frozen T19 fixture, while pi's raw set-image readings are not interior operators (teeth). This licenses an S4-interior-operator title for the paper at fixture grade, with the broad 'certify your own present is final' headline embargoed pending an all-finite-graphs quantifier. It is a paper-lane disposition reported up; it moves no C1, T19, T92, claim, canon, or public posture and does not change the Track-1 posture. See explorations/kuratowski-interior-gate-first-person-finality-2026-07-22.md and steward/PROPOSAL-kuratowski-interior-paper-route-2026-07-22.md.",
+      "current_authority": "T583 implements CapabilityContract v1 as a finite review instrument. T584 shows the envelope factors through declared representation, gauge, and irrelevant-coarse-graining morphisms in the finite gate. T585 instantiates the quotient in a one-bit Landauer-style physical memory model. T586 defines a finite record-capability strict partial order from produced-record task dependence and rejects cycle, clock-label, entropy-rank, causal-superset, and irreversible-operation overreads. T587 reopens T586 as a causal-collapse and boundary-input attack: the relation collapses exactly to ordinary task-prerequisite dependency and is absorbed as a typed subrelation of the strongest standard dependency and causal comparators. The surviving value is only a typed record-prerequisite filter over issued records. None of these establish time, issuance, a universal capability measure, source-law novelty, or claim status. The 2026-07-22 strategic reprioritization in LANES.yaml preserves that negative result while promoting native hardening, publication, capability measurement, and TaF-2 anomaly prediction as first-class Lane-1 output. Open-ended source-law search is demoted to the bounded TaF-1 reflector check feeding Dynamic Unity, with F4 as the independent anchor and TaF-2 available only as family F6 after it survives its own controls. The TaF-2 finite reflection-anomaly specification is now frozen before implementation at explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md. Subordinate Track-2 update: the TaF-3 Kuratowski gate licenses an S4-interior paper title at fixture grade while the broad headline remains embargoed. No claim, canon, public posture, GU identification, or external action moves.",
       "partial_information_scope_correction": "The 2026-07-21 audit narrows the CLOSED_REFUTED_FIXTURE_GRADE result to the frozen full-forget construction. For a lifted A*(R) retaining q:X->Q, its computable class equals the alpha-even class exactly when q's fiber partition equals alpha's orbit partition. Aligned partial information can restore coincidence for k >= 2; the retained-information map must be fixed independently of the desired verdict.",
       "latest_mailbox_disposition": {
         "id": "20260720-INVOLUTION-REFUTE-FOLLOWUP",
@@ -45,6 +45,30 @@
       "kill_condition": "If capability comparison cannot be made invariant without making the context or task vocabulary entail the desired answer, narrow the program to context-indexed diagnostics and do not derive time.",
       "forbidden_shortcut": "Do not count state difference, access change, resource change, irreversible evolution, background time labels, or arbitrary scalarization as intrinsic capability change or derived temporal direction.",
       "internal_work_items": [
+        {
+          "id": "TAF-ANOMALY-CANCELLATION-PREDICTION",
+          "state": "SPEC_FROZEN_READY_FOR_IMPLEMENTATION",
+          "priority_score": 24,
+          "hourly_eligible": true,
+          "activation": "The 2026-07-22 strategic reprioritization promotes TaF-2 as a first-class Lane-1 prediction route. Its finite reflection-anomaly specification is frozen before results.",
+          "result": "Specification only: a 1+1-dimensional finite U(1)/reflection fixture, Z2 record charge, fixed-data separation control, threshold-restatement kill, reflection-removal control, and exact blocked/negative outcomes are predeclared. No anomaly has been computed.",
+          "next_swing": "Implement only after freezing a source-backed finite lattice operator construction in the test document. Execute the declared L in {4,6,8}, flux, reflection, and holder-count grid without retuning, then return exactly one predeclared outcome.",
+          "success_condition": "A target-independent Z2 obstruction coefficient survives relabeling and fixed-data controls, responds to reflection removal, differs from a D1 threshold restatement, and agrees across all three lattice sizes.",
+          "kill_condition": "No noncircular record-to-field coefficient bridge exists; no source-backed anomaly operator exists; fixed lattice data absorb the effect; reflection does not carry it; gauge typing fails; or the coefficient only restates the holder threshold.",
+          "forbidden_shortcut": "Do not identify T111 invariance with an anomaly coefficient, import the GU sigma/w1 proposal as evidence, choose the operator or modulus after results, or claim QFT/Pin+/IR/classical-objectivity consequences from a finite fixture."
+        },
+        {
+          "id": "TAF-REFLECTOR-SELF-DUAL-CHECK",
+          "state": "READY_SPEC_FIRST",
+          "priority_score": 22,
+          "hourly_eligible": true,
+          "activation": "The 2026-07-22 strategic reprioritization retains source-law work only as a bounded own-absorber check feeding Dynamic Unity.",
+          "result": "No new result. The next bounded check is the reversal-self-dual reflector enumeration, with F4 first as the knob-free anchor. TaF-2 may enter only later as family F6 after its independent gate survives.",
+          "next_swing": "Freeze the F4-first reflector-enumeration specification before any result. Preserve the three informative outcomes: generator found, self-duality under-selects, or representation theorem.",
+          "success_condition": "The bounded enumeration supplies a result that sharpens TaF's finality/geometry leg without tuning a continuous coordinate knob.",
+          "kill_condition": "The self-dual ensemble under-selects or the result reduces to imported metric/coordinate structure; report either outcome without extending the search indefinitely.",
+          "forbidden_shortcut": "Do not restore source-law generation as an open-ended headline, seed or harden Dynamic Unity's assembly, or treat F6 as independent support before TaF-2 passes its own gate."
+        },
         {
           "id": "TAF-CAPABILITY-INVARIANCE",
           "state": "ENDPOINT_POSITIVE_REVIEW_ONLY",
@@ -111,7 +135,7 @@
     {
       "id": "FORMAL-BYPRODUCTS",
       "state": "RESERVE",
-      "hourly_eligible": true,
+      "hourly_eligible": false,
       "priority_score": 13,
       "purpose": "Lean, finite combinatorics, ledger repair, and conditional theorem work that directly supports the active capability lane.",
       "activation": "Select only when it closes a named active-lane blocker or no active technical item is executable.",

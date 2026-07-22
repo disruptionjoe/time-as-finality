@@ -11,18 +11,19 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 ## Coverage / Staleness
 
-As of 2026-07-12, the test registry in `TESTS.md` reaches T531, while this
-ledger has explicit computational-status placements only through T138. T139-T531
+As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
+ledger has explicit computational-status placements only through T138. T139-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
 
-Mechanical frontier note: the claim ledger has placed T529-T531 as review-only
-/ no-row infrastructure, but this file has not yet assigned computational
-status to the post-T138 frontier. T530 and T531 may use finite executable gates
-and passing tests, but this ledger does not promote them to `poly_decider`,
-`theorem_backed`, or any hardness/scalability class until a dedicated
-computational-status reconciliation pass reviews the relevant artifacts.
+Mechanical frontier note: the claim ledger is current through T587 except for
+its explicitly deferred T408-T409 adjudication, but claim-ledger placement does
+not assign computational status. Post-T138 artifacts may use finite executable
+gates and passing tests, but this ledger does not promote any of them to
+`finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
+class until a dedicated computational-status reconciliation pass reviews the
+relevant artifact and input encoding.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture

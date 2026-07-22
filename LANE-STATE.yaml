@@ -2,35 +2,36 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T15:40:00-05:00"
-run_ref: RUN-20260722-153603-repository-work-cycle-cai-hourly
-bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
-decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
+updated_at: "2026-07-22T16:15:00-05:00"
+run_ref: RUN-20260722-161500-taf3-kuratowski-interior-gate-directed
+bottom_line: "TaF-3 paper-routing gate landed (Track-2, subordinate): the causal-past retraction pi's faithful knowledge-modality interior PASSES all four Kuratowski axioms on the frozen T19 fixture, so an S4-interior-operator title is licensed at fixture grade (broad 'certify your own present' headline stays embargoed pending the all-finite-graphs quantifier). Track-1 posture is UNCHANGED: Lane 1 still waits for a physical source or an independently specified operator-grade lift. Wave-1 prep steering has landed, re-framing the next Track-1 wave toward the TaF-1 source-law reflector-enumeration swing, armed with TaF-2 as family F6."
+decision_default: "Preserve the full-forget refute and the physical-source gate; route the first-person-finality paper to the S4-interior framing at fixture grade with the embargo held; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired verdict."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "Corrected the partial-information scope of the T19 involution refute and machine-checked aligned and misaligned coarse channels."
-    movement_ref: "explorations/partial-future-information-involution-audit-2026-07-21.md"
+    last_movement: "Track-2 (paper lane): landed the TaF-3 Kuratowski interior-operator gate. The causal-past retraction pi's faithful knowledge-modality interior (opens = pi-saturated / A*(R)-accessible subsets) PASSES all four Kuratowski axioms on the frozen T19 fixture; raw set-image readings of pi are not interior operators (teeth). Routes the first-person-finality paper to an S4-interior framing at fixture grade. Track-1 posture unchanged."
+    movement_ref: "explorations/kuratowski-interior-gate-first-person-finality-2026-07-22.md; steward/PROPOSAL-kuratowski-interior-paper-route-2026-07-22.md"
     steering_attention: watch
-    steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
-    steering_ref: "steward/research-portfolio.json"
+    steering_prompt: "Wave-1 prep landed. Track-1: wait for source evidence, do not reopen from T586 alone; the next Track-1 wave is the TaF-1 source-law reflector-enumeration swing (F4 first), armed with TaF-2 as F6. Track-2: paper route decided (S4-interior, fixture grade); hold the broad-headline embargo."
+    steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: t19_full_forget_refute_partial_information_scope_corrected
-    evidence_ref: "explorations/partial-future-information-involution-audit-2026-07-21.md; explorations/involution-typing-lemma-2026-07-20.md; tests/involution_typing_probe.py"
-    summary: "The full-forget partition cannot match a multi-orbit involution, but a retained-information channel matches exactly when its fibers equal the involution orbits."
-    evaluated_at: "2026-07-21T22:40:00-05:00"
-    run_ref: RUN-20260721-223532-repository-work-cycle-cai-hourly
+    reason_code: taf3_kuratowski_interior_gate_pass_s4_title_licensed_fixture_grade_track1_unchanged
+    evidence_ref: "explorations/kuratowski-interior-gate-first-person-finality-2026-07-22.md; steward/PROPOSAL-kuratowski-interior-paper-route-2026-07-22.md; tests/involution_typing_probe.py; explorations/involution-typing-lemma-2026-07-20.md; explorations/partial-future-information-involution-audit-2026-07-21.md"
+    summary: "First-person finality is an S4-interior (knowledge) modality at fixture grade: pi's saturated and pi-stable interiors satisfy int(X)=X, int A subset A, int int A = int A, and int(A cap B) = int A cap int B. The excluded-future interior is the degenerate indiscrete modality; substantive S4 content lives on the full causal order. The broad 'certify your own present' headline stays embargoed pending the all-finite-graphs quantifier."
+    evaluated_at: "2026-07-22T16:15:00-05:00"
+    run_ref: RUN-20260722-161500-taf3-kuratowski-interior-gate-directed
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Removed an overbroad stability claim, proved the exact orbit-alignment criterion, and preserved the narrower full-forget refute and physical-source gate."
-    scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
+    progress_delta: "Landed the subordinate Track-2 paper-routing gate (Kuratowski PASS -> S4-interior title licensed, fixture grade, embargo held) without moving any Track-1 claim, verdict, or posture; preserved the full-forget refute and the physical-source gate."
+    scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness. Track-2 paper lane: S4-interior route decided at fixture grade; broad headline embargoed."
     trend_24h: up
     confidence: high
-    recommendation: "Wait for a physical source or independently fixed operator-grade retained-information map."
+    recommendation: "Track-1: wait for a physical source or independently fixed operator-grade retained-information map; queue the TaF-1 source-law reflector-enumeration swing (F4 first) as the next Track-1 wave. Track-2: adopt the oriented S4-interior paper framing at fixture grade and hold the broad-headline embargo."
     findings:
-      - "For the frozen full-forget fixture, one information block cannot equal the multiple size-two orbits of a fixpoint-free involution."
-      - "For k = 2, retained parity matches global-complement orbits while a retained first bit does not; alignment, not information amount, controls coincidence."
-      - "The operator-grade lift remains a named reopener and must fix its retained-information map before testing involution alignment."
+      - "The causal-past retraction pi induces an S4 interior operator: its faithful (pi-saturated) and orientation-faithful (pi-stable, int(A) = A cap pi^{-1}(A)) interiors both satisfy all four Kuratowski axioms on the frozen T19 fixture."
+      - "The gate has teeth: pi's raw set-image readings are not interior operators (direct image fails K1 top and K4 meet-preservation; preimage fails K2 contractivity), so the FAIL branch was reachable and PASS is a computed result."
+      - "The interior on the excluded future subspace is the degenerate indiscrete modality (faithful to T19); the paper must place substantive S4 content on the full causal order and hold the broad-headline embargo pending an all-finite-graphs quantifier."
+      - "Track-1 is unchanged: the operator-grade partial-information lift remains a named reopener and must fix its retained-information map before testing involution alignment; Lane 1 still waits for a provenance-valid physical source packet."
     options:
       - id: A
         label: "Wait for packet"

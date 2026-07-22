@@ -38,9 +38,23 @@ exactly when P_q is alpha's orbit partition. An aligned partial-information
 channel can therefore restore coincidence for k>=2; the original refutation
 is stable only for the frozen full-forget construction.
 
+KURATOWSKI INTERIOR-OPERATOR GATE (TaF-3, added 2026-07-22). The
+kuratowski_interior_checks section asks a downstream, paper-routing question:
+does the causal-past retraction pi induce an INTERIOR OPERATOR satisfying the
+four Kuratowski axioms (int(X)=X; int A subset A; int int A = int A;
+int(A cap B) = int A cap int B)? PASS licenses an S4-interior-operator title for
+the first-person-finality paper; FAIL would route it to a retraction-algebra
+framing plus a publishable sub-S4 negative. Verdict on the frozen T19 fixture:
+PASS -- pi's faithful knowledge-modality interior (opens = pi-saturated /
+A*(R)-accessible subsets) satisfies all four axioms. The raw set-image readings
+of pi are not interior operators and are shown to fail specific axioms, giving
+the gate teeth. The broad "certify your own present is final" headline stays
+EMBARGOED (it needs an all-finite-graphs quantifier not established here).
+
 Deterministic (double-run byte-identical), numpy for the seeded functional
 identity only, seed 20260720, exit 0. Tagged checks: [T] setup, [E] exhibit,
-[F] refute/teeth. Run:  python tests/involution_typing_probe.py
+[F] refute/teeth, [P] partial-information scope, [K] Kuratowski paper-routing
+gate. Run:  python tests/involution_typing_probe.py
 """
 
 from __future__ import annotations
@@ -119,6 +133,52 @@ def fiber_partition(labels):
     for i, label in enumerate(labels):
         blocks.setdefault(label, set()).add(i)
     return frozenset(frozenset(block) for block in blocks.values())
+
+
+def powerset(ground):
+    """Yield every subset of `ground` (a frozenset) as a frozenset."""
+    elems = list(ground)
+    for r in range(len(elems) + 1):
+        for combo in itertools.combinations(elems, r):
+            yield frozenset(combo)
+
+
+def partition_interior(partition):
+    """Interior operator whose OPEN sets are the unions of `partition` blocks:
+    int(A) = union of the blocks entirely contained in A. This is the standard
+    epistemic/topological interior of an indistinguishability partition (the
+    A*(R)-accessible-knowledge modality). Returns a callable frozenset->frozenset."""
+    blocks = list(partition)
+
+    def interior(A):
+        result: set = set()
+        for block in blocks:
+            if block <= A:
+                result |= block
+        return frozenset(result)
+
+    return interior
+
+
+def kuratowski_axioms(interior, ground):
+    """Check the four Kuratowski INTERIOR axioms EXHAUSTIVELY over powerset(ground).
+
+    An operator satisfying all four is exactly an S4 interior (necessity) modality:
+      K1  int(X) = X                      (preserves the top / normalization)
+      K2  int A subset A                  (deflationary / contractive)
+      K3  int int A = int A               (idempotent)
+      K4  int(A cap B) = int A cap int B  (preserves finite meets / the K axiom)
+    Returns an ordered dict {axiom_name: bool}."""
+    subsets = list(powerset(ground))
+    return {
+        "int(X)=X": interior(ground) == ground,
+        "int A subset A": all(interior(A) <= A for A in subsets),
+        "int int A = int A": all(interior(interior(A)) == interior(A)
+                                 for A in subsets),
+        "int(A cap B) = int A cap int B": all(
+            interior(A & B) == (interior(A) & interior(B))
+            for A in subsets for B in subsets),
+    }
 
 
 def exhibit_fires_for_k(k: int) -> bool:
@@ -323,16 +383,109 @@ def partial_information_checks() -> None:
           and fiber_partition(first_bit_labels) != flip2_orbits)
 
 
+def kuratowski_interior_checks() -> None:
+    """[K] THE PAPER-ROUTING GATE (TaF-3).
+
+    Does the causal-past retraction pi induce an INTERIOR OPERATOR satisfying the
+    four Kuratowski interior axioms on the frozen T19 fixture? The verdict routes
+    the first-person-finality paper:
+      PASS (all four hold) -> an S4-interior-operator title is LICENSED;
+      FAIL                 -> route to a retraction-algebra framing plus a
+                              publishable sub-S4 NEGATIVE (a monotone modality
+                              that breaks the K / meet-preservation axiom).
+
+    Construction fork (AGENTS.md: identify, name, do not default). pi is a POINT
+    map (idempotent, non-invertible, oriented), not a set operator; there are
+    several ways to read "pi's interior". The FAITHFUL knowledge-modality reading
+    is the interior whose OPEN sets are the pi-saturated (A*(R)-accessible)
+    subsets. The RAW set-image readings of pi (direct image, preimage) are NOT
+    interior operators, and the probe shows them failing specific axioms -- that
+    is the test's teeth: the FAIL branch is reachable, so a PASS is not a rubber
+    stamp. The verdict disposes; the desired title does not.
+    """
+    # Ground set: indices of the 4 full T19 configs (past bit p, future bit u).
+    configs = [(p, u) for p in (0, 1) for u in (0, 1)]
+    ci = {c: i for i, c in enumerate(configs)}
+    ground = frozenset(range(4))
+    pi_map = {i: ci[(configs[i][0], 0)] for i in range(4)}  # pi forgets future bit
+
+    def pi_preimage(A):
+        return frozenset(i for i in range(4) if pi_map[i] in A)
+
+    def pi_image(A):
+        return frozenset(pi_map[i] for i in A)
+
+    # --- Construction 1 (FAITHFUL): the A*(R)-accessible interior = the interior
+    # whose opens are the pi-saturated subsets. On the full config space kernel(pi)
+    # partitions by the past bit into TWO blocks {(0,*),(1,*)}: a non-degenerate
+    # S4 interior. ---
+    past_partition = fiber_partition([configs[i][0] for i in range(4)])
+    int_sat = partition_interior(past_partition)
+    ax_sat = kuratowski_axioms(int_sat, ground)
+    for name, ok in ax_sat.items():
+        check("K", f"pi-saturated (A*(R)) interior axiom [{name}]", ok)
+    check("K", "pi-saturated interior satisfies ALL FOUR Kuratowski axioms",
+          all(ax_sat.values()))
+    check("K", "pi-saturated interior is NON-DEGENERATE (a proper open block exists)",
+          any(int_sat(A) not in (frozenset(), ground) for A in powerset(ground)))
+
+    # --- Construction 2: on the EXCLUDED future-config space X_2 the A*(R)
+    # indistinguishability partition is the SINGLE all-of-X block -> the INDISCRETE
+    # interior. Still a genuine interior operator (all four axioms hold), but the
+    # DEGENERATE S4 modality: int(A) = empty unless A = X. This is faithful to T19
+    # (R certifies nothing contingent about its own finality FUTURE). ---
+    int_ind = partition_interior(astar_partition(4))
+    ax_ind = kuratowski_axioms(int_ind, ground)
+    check("K", "future-space indiscrete interior satisfies all four axioms",
+          all(ax_ind.values()))
+    check("K", "future-space interior is DEGENERATE (int A = empty for A != X)",
+          all(int_ind(A) == frozenset()
+              for A in powerset(ground) if A != ground))
+
+    # --- Construction 3 (ORIENTATION-FAITHFUL): the pi-stable interior
+    # int(A) = A cap pi^{-1}(A), built directly from pi as an oriented idempotent
+    # (no symmetrization to an equivalence). Its opens are the pi-stable subsets
+    # (x in A => pi(x) in A). ---
+    def int_pi_stable(A):
+        return A & pi_preimage(A)
+    ax_pi = kuratowski_axioms(int_pi_stable, ground)
+    for name, ok in ax_pi.items():
+        check("K", f"orientation-faithful pi-stable interior axiom [{name}]", ok)
+    check("K", "pi-stable interior satisfies ALL FOUR Kuratowski axioms",
+          all(ax_pi.values()))
+
+    # --- TEETH: the RAW set-image readings of pi are NOT interior operators. Each
+    # check PASSES by asserting the EXPECTED axiom FAILURE, proving the Kuratowski
+    # gate can detect a non-interior operator (the FAIL branch is reachable). ---
+    check("K", "TEETH: direct-image pi(.) FAILS K1 int(X)=X (not an interior op)",
+          pi_image(ground) != ground)
+    a_w = frozenset({ci[(0, 0)], ci[(1, 1)]})
+    b_w = frozenset({ci[(0, 1)], ci[(1, 0)]})
+    check("K", "TEETH: direct-image pi(.) FAILS K4 meet-preservation (witness)",
+          pi_image(a_w & b_w) != (pi_image(a_w) & pi_image(b_w)))
+    check("K", "TEETH: preimage pi^-1(.) FAILS K2 contractivity (int A subset A)",
+          any(not (pi_preimage(A) <= A) for A in powerset(ground)))
+
+    # --- ROUTING VERDICT: all THREE principled interior constructions satisfy all
+    # four axioms -> PASS -> S4-interior-operator title LICENSED. ---
+    s4_licensed = (all(ax_sat.values()) and all(ax_ind.values())
+                   and all(ax_pi.values()))
+    check("K", "ROUTING VERDICT: Kuratowski PASS -> S4-interior title LICENSED",
+          s4_licensed)
+
+
 def main() -> int:
     setup_checks()
     exhibit_checks()
     refute_checks()
     partial_information_checks()
+    kuratowski_interior_checks()
 
     n_e = sum(1 for p in PASS if p.startswith("[E]"))
     n_f = sum(1 for p in PASS if p.startswith("[F]"))
     n_t = sum(1 for p in PASS if p.startswith("[T]"))
     n_p = sum(1 for p in PASS if p.startswith("[P]"))
+    n_k = sum(1 for p in PASS if p.startswith("[K]"))
 
     print("=" * 66)
     print("INVOLUTION-TYPING PROBE  --  GU/TaF boundary-law TIME face (T19/T92)")
@@ -345,8 +498,8 @@ def main() -> int:
 
     ok = not FAIL
     total = n_e + n_f
-    headline = (f"{n_e} [E] + {n_f} [F] = {total} "
-                f"(setup [T] = {n_t}; scope [P] = {n_p} excluded) "
+    headline = (f"{n_e} [E] + {n_f} [F] = {total}  |  [K] Kuratowski gate = "
+                f"{n_k} PASS  (setup [T] = {n_t}; scope [P] = {n_p} excluded) "
                 + ("ALL PASS" if ok else f"{len(FAIL)} FAIL"))
     print("HEADLINE: " + headline)
     print("OUTCOME:  T-REFUTE fired for the TaF T19 fixture (k>=2 witnesses).")
@@ -357,6 +510,20 @@ def main() -> int:
     print("          This LEG-deep verdict is scoped to the full-forget fixture.")
     print("          Partial retained information restores coincidence exactly")
     print("          when its fiber partition equals alpha's orbit partition.")
+    print("-" * 66)
+    print("KURATOWSKI (paper-routing gate, TaF-3):  PASS.")
+    print("          pi's induced interior operator (opens = pi-saturated /")
+    print("          A*(R)-accessible subsets) satisfies ALL FOUR interior")
+    print("          axioms: int(X)=X; int A subset A; int int A = int A;")
+    print("          int(A cap B) = int A cap int B. => S4-interior-operator")
+    print("          paper title is LICENSED. Raw set-image readings of pi are")
+    print("          NOT interior operators (teeth: direct image fails K1+K4,")
+    print("          preimage fails K2). The interior on the EXCLUDED future")
+    print("          subspace is the DEGENERATE (indiscrete) S4 modality; the")
+    print("          non-degenerate S4 content lives on the full causal order.")
+    print("          EMBARGO: the broad 'certify your own present is final'")
+    print("          headline is NOT asserted (needs the all-finite-graphs")
+    print("          quantifier, not in hand).")
     print("=" * 66)
 
     return 0 if ok else 1

@@ -12,8 +12,21 @@ Branch map: `attention/branch-map-council-2026-07-12.md`.
 
 ## attention_priority
 
+Steering note (2026-07-22): the Wave-1 triple-diamond prep steering has landed
+(`explorations/2026-07-22-wave1-triple-diamond-prep-steering.md`). It re-frames
+the next Track-1 wave toward the TaF-1 finality-native source-law swing
+(de-pause TAF9/TAF11; run the reversal-self-dual reflector enumeration, F4
+first), armed with TaF-2's anomaly-matching as family F6. The subordinate
+Track-2 TaF-3 paper-routing gate is now RESOLVED: the Kuratowski
+interior-operator check PASSED, licensing an S4-interior title for the
+first-person-finality paper at fixture grade (broad "certify your own present"
+headline stays embargoed). Track-2 paper work reports up and is not a council
+pick; the Condorcet ranking below is over Track-1 research-advancement items
+only and is unchanged by this run (re-run 2026-07-22, deterministic, exit 0:
+TAF8 > TAF3 > TAF12 > TAF4 > TAF6 > TAF5 > TAF7).
+
 Generated ranking from `attention/taf_priority_condorcet.py` after T582 on
-2026-07-14:
+2026-07-14 (unchanged on the 2026-07-22 re-run):
 
 1. TAF8 - Cross-domain shadow-protection theorem target.
    Why: T582 absorbed W192 as explicit state/resource completion, so TAF8 still
@@ -140,6 +153,14 @@ Discipline:
 | TAF8 | open, waiting for cross-domain packet | Can shadow protection transfer across domains without identity-by-construction? | T541 completed the review-only nonidentity witness-packet gate. T582 tested frozen W192 separately and absorbed it as explicit state/resource completion, so TAF8 still waits for a real domain-native cross-domain packet under the same spine. |
 
 ## next_action
+
+Wave-1 prep landed (2026-07-22). Next Track-1 wave: the TaF-1 finality-native
+source-law swing - de-pause TAF9/TAF11 and run the reversal-self-dual reflector
+enumeration (F4 first, the knob-free anchor; F2/F3 as funded challengers),
+committing the frozen spec before results; arm with TaF-2's anomaly-matching as
+family F6. TaF-2 is spec-prep only (no compute yet). The Track-2 TaF-3 paper gate
+is resolved (Kuratowski PASS, S4-interior title licensed at fixture grade); hold
+the broad-headline embargo. Paper-lane work reports up and is not a council pick.
 
 Do not rerun T580, T581, or T582. TAF11 is parked unless one named T581 reopen
 condition arrives with concrete evidence.

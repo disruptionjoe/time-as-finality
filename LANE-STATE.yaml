@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T13:39:00-05:00"
-run_ref: RUN-20260722-133630-repository-work-cycle-cai-hourly
+updated_at: "2026-07-22T15:40:00-05:00"
+run_ref: RUN-20260722-153603-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled available computational-status surfaces for T187-T194 and exposed the missing T189 test/result pair."
+    last_movement: "Reconciled computational status for T195-T202 across finite DAG proxies, continuum/absorber audits, reviewer synthesis, LP/fairness theorems, and a shared-edge counterexample."
     movement_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: complexity_ledger_t187_t194_available_slice_reconciled_t189_gap
+    reason_code: complexity_ledger_t195_t202_slice_reconciled_t189_gap_preserved
     evidence_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
-    summary: "The ledger now places T187-T188 and T190-T194 while refusing to infer a status for the referenced-but-absent T189 artifact."
-    evaluated_at: "2026-07-22T13:39:00-05:00"
-    run_ref: RUN-20260722-133630-repository-work-cycle-cai-hourly
+    summary: "The ledger now places T195-T202, separating finite proxies and counterexamples from non-computational audits and two elementary optimization theorems; the T189 gap remains explicit."
+    evaluated_at: "2026-07-22T15:40:00-05:00"
+    run_ref: RUN-20260722-153603-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Advanced seven available artifacts, separated an elementary restricted-subcategory theorem from finite proxy results, and made the T189 availability gap explicit."
+    progress_delta: "Advanced eight artifacts, recognizing the exact LP and equal-load arguments without promoting the surrounding proxy, continuum, or absorber claims."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "T187-T188, T190, and T193-T194 remain finite witnesses with corrected proxy or fixture ceilings."
-      - "T191 earns only an elementary theorem for a deliberately restricted subcategory; T192 is a non-computational derivation boundary."
-      - "T189 is cited by claim surfaces but its test and result files are absent, so no computational status was inferred."
+      - "T195, T198, and T202 are finite proxy/control/counterexample surfaces; none earns arbitrary-DAG or continuum language."
+      - "T200 and T201 earn elementary theorem-backed placements for their declared optimization objectives, while T196, T197, and T199 are non-computational audits or synthesis."
+      - "The missing T189 source pair still blocks a contiguous frontier beyond T188."
     options:
       - id: A
         label: "Continue cycles"

@@ -13,7 +13,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T194. The referenced T189 test and result
+plus explicit placements for T190-T202. The referenced T189 test and result
 surfaces are absent from the checkout, so T189 and T195-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
@@ -26,7 +26,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T188 and the available T190-T194 surfaces are now reconciled below. T189
+T139-T188 and the available T190-T202 surfaces are now reconciled below. T189
 remains a named artifact-availability gap rather than receiving an inferred
 status from claim-ledger summaries.
 
@@ -113,11 +113,19 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T192 lambda-star Derivation From PO1 Obstruction Dynamics](tests/T192-lambda-star-derivation-from-po1-obstruction-dynamics.md) | `non_computational` | A symbolic decomposition of benefit, obstruction load, and reconciliation cost. | Analytic/prose dependency audit separates the PO1-native `K` term from independently required `N` and `C`. | It is a derivation boundary, not an algorithm or a theorem that PO1 determines a nonzero interior optimum. |
 | [T193 Cap_TI Minimal Sufficient Statistic Search](tests/T193-cap-ti-minimal-sufficient-statistic-search.md) | `finite_witness` | Declared finite harmonic-proxy timing families with fixed event count. | Manual arithmetic compares path-time descriptions with the reduced `(n,T*)` summary. | Sufficiency is conditional on the harmonic-proxy regime and does not transfer to corrected LP or shared-edge DAG-flow models. |
 | [T194 Cap_TI Hostile Same-Neighbor-Data Family](tests/T194-cap-ti-hostile-same-neighbor-data-adversarial-family.md) | `finite_witness` | Four constructed finite source families matched on neighbor data and harmonic summary. | Direct finite comparison searches for a survivor after freezing `(n,T*)`. | Collapse is fixture- and proxy-regime-bound; it is not an exact Moses, arbitrary-flow, or continuum result. |
+| [T195 Metric-Causal Separation Beyond Tree Fixtures](tests/T195-metric-causal-separation-beyond-tree-fixtures.md) | `finite_witness` | Constructed finite weighted reconvergent and layered DAG families. | Direct path enumeration and harmonic path-time summaries compare matched causal orders. | The result is a path-summary proxy, not a shared-edge flow model or arbitrary-DAG theorem. |
+| [T196 Exact WBE-Continuum Bridge Audit](tests/T196-exact-wbe-continuum-bridge-audit.md) | `non_computational` | A typed comparison between the earned finite proxy and proposed continuum target. | Prose assumption audit checks whether a declared approximation, target, scaling parameter, and controls exist. | The audit kills the claimed bridge; it supplies no continuum algorithm or limit theorem. |
+| [T197 MTI Absorber Audit](tests/T197-mti-absorber-audit-against-scheduling-queueing-flow-theory.md) | `non_computational` | The current harmonic/equal-load timing interpretation and neighboring theory objects. | Conceptual absorber comparison tests whether any PO1-specific residue survives standard performance summaries. | Absorption is a claim-boundary judgment, not a computational procedure or general theorem. |
+| [T198 Cap_TI Positive/Null Control Suite](tests/T198-cap-ti-positive-null-control-suite.md) | `finite_witness` | Declared finite positive and matched-`(n,T*)` null families. | Manual finite harmonic-summary comparisons operationalize the proxy's calibration controls. | Promotion is infrastructure-only and conditional on the harmonic-proxy regime. |
+| [T199 Reviewer-Facing Metric-Causal Packet](tests/T199-reviewer-facing-metric-causal-separation-packet.md) | `non_computational` | A bounded synthesis of T186-T198 finite claims, corrections, and absorbers. | Prose export audit preserves the finite statement and required caveats. | The packet is not an algorithm, exact optimization, arbitrary-DAG theorem, or continuum result. |
+| [T200 T187 Linear-Program / KKT Audit](tests/T200-t187-linear-program-kkt-audit.md) | `theorem_backed` | Arbitrary finite positive path times under the stated simplex-constrained linear objective. | Elementary linear-program reasoning shows the optimum concentrates on a fastest path rather than using inverse-time weights. | This kills the claimed derivation only; it does not kill the harmonic summary as an explicitly declared proxy. |
+| [T201 Regularized / Fairness Objective Audit](tests/T201-regularized-fairness-objective-harmonic-weight-audit.md) | `theorem_backed` | Arbitrary finite positive path times under the declared minimax equal-load objective. | Equalization of `w_i t_i` with the simplex constraint yields normalized inverse-time weights. | The result is conditional on an explicit fairness/equal-load premise and is not a WBE-native derivation. |
+| [T202 Shared-Edge DAG Path-Harmonic Counterexample](tests/T202-shared-edge-dag-path-harmonic-counterexample.md) | `finite_witness` | A constructed finite DAG with overlapping source-to-sink paths. | Direct path-summary and shared-edge accounting comparison exhibits double-counting. | The counterexample narrows T195; it does not classify all capacitated DAG objectives. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T194 surfaces, no
+the available T190-T202 surfaces, no
 surveyed core branch currently earns:
 
 ```text

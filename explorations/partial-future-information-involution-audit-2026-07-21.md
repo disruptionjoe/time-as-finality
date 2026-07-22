@@ -1,8 +1,11 @@
 # Partial-future-information involution audit
 
-Date: 2026-07-21 22:39 CDT  
-Run: `RUN-20260721-223532-repository-work-cycle-cai-hourly`  
-Lane: 1 — Formalization and truth testing  
+Date: 2026-07-21 22:39 CDT
+
+Run: `RUN-20260721-223532-repository-work-cycle-cai-hourly`
+
+Lane: 1 — Formalization and truth testing
+
 Status: exploration-tier scope correction; no claim, canon, or public-posture movement
 
 ## Question

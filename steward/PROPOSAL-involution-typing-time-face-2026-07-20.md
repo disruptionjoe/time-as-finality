@@ -32,7 +32,8 @@ machine-checked, the answer is: **no such involution exists for T19's
 fixture.** The coincidence `alpha`-even `==` `A*(R)`-computable holds IFF
 the excluded causal-future carries a single `Z/2` witness (`k = 1`). T19
 has `k >= 2` independent witnesses (`e_E1`, `e_E2`), so the exclusion
-engine is strictly more general than any fixpoint-free flip.
+engine is strictly more general than any fixpoint-free flip under the frozen
+full-forget construction.
 
 The more-general structure is named exactly: T19 excludes by the
 **causal-past retraction** `pi` (restriction to R's accessible down-set) --
@@ -50,7 +51,7 @@ It differs from a fixpoint-free involution on two independent axes:
 1. explicit finality-label object + involution: the future-config space
    `X = 2^k` of `R_self_finality` witnesses; candidates `alpha_swap`
    (witness swap) and `alpha_flip` (finality-value flip). DONE.
-2. exhaustive finite check of the coincidence: machine-verified that
+2. exhaustive finite check of the full-forget coincidence: machine-verified that
    `alpha`-even `==` `A*(R)`-computable IFF `k <= 1` (brute-force
    involution enumeration for `n <= 8`; orbit-count fact for larger `k`).
    DONE.
@@ -60,8 +61,9 @@ It differs from a fixpoint-free involution on two independent axes:
 4. external-cure + fixed-point dissolution control: the `k = 1` EXHIBIT
    toy (fixing the bit reads the odd datum; `alpha = id` dissolves the
    obstruction). DONE.
-5. same-engine vs distinct-engine comparison: DISTINCT -- causal placement
-   is the causal-past retraction `pi`, strictly more general. DONE.
+5. same-engine vs distinct-engine comparison for the frozen fixture: DISTINCT
+   -- causal placement is the causal-past retraction `pi`, strictly more
+   general under full forgetting. DONE.
 
 ## Recommendation
 
@@ -72,17 +74,22 @@ causal-boundary reading of T19 (richer than an involution, not secretly
 one); it does not weaken T19 or T92. C1 stays `weakened`.
 
 Reopener (single, named): an operator-grade lift in which `A*(R)` retains
-partial coarse future information. The refute is predicted stable under it
-(the coincidence can only get harder), but that lift is not machine-checked
-here.
+partial coarse future information. The 2026-07-21 follow-up audit corrects
+the former stability prediction: the lifted computable class equals the
+involution-even class exactly when the retained-information fiber partition
+equals the involution-orbit partition. An aligned lift can therefore restore
+coincidence; its information map must be fixed independently to avoid a
+circular construction.
 
 ## Receipts
 
 - `explorations/involution-typing-lemma-2026-07-20.md` (construction,
   outcome, coincidence check, five-lens council, boundary).
 - `tests/involution_typing_probe.py` -- HEADLINE
-  `13 [E] + 11 [F] = 24 (setup [T] = 5 excluded) ALL PASS`, exit 0,
+  `13 [E] + 11 [F] = 24 (setup [T] = 5; scope [P] = 4 excluded) ALL PASS`, exit 0,
   deterministic, seed 20260720.
+- `explorations/partial-future-information-involution-audit-2026-07-21.md`
+  -- exact orbit-alignment criterion with aligned and misaligned controls.
 
 ## Cross-repo courtesy note (awareness only; no GU claim movement requested)
 

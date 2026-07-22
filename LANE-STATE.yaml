@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-21T22:40:00-05:00"
-run_ref: RUN-20260721-223532-repository-work-cycle-cai-hourly
+updated_at: "2026-07-21T23:39:00-05:00"
+run_ref: RUN-20260721-233633-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Dispositioned the post-refutation follow-up as untrusted awareness and declined its automatic next-run pointer."
-    movement_ref: "agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md"
+    last_movement: "Reconciled the steward proposal and portfolio with the partial-information orbit-alignment correction."
+    movement_ref: "steward/PROPOSAL-involution-typing-time-face-2026-07-20.md; steward/research-portfolio.json"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: mailbox_involution_refute_followup_dispositioned
-    evidence_ref: "agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md"
-    summary: "The note restates TaF's tracked T-REFUTE and supplies no new source packet or automatic technical authority."
-    evaluated_at: "2026-07-20T23:43:27-05:00"
-    run_ref: agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md
+    reason_code: partial_information_scope_correction_reconciled
+    evidence_ref: "steward/PROPOSAL-involution-typing-time-face-2026-07-20.md; steward/research-portfolio.json; explorations/partial-future-information-involution-audit-2026-07-21.md"
+    summary: "All current steward surfaces now scope the involution refute to full forgetting and preserve the independently specified orbit-alignment reopener."
+    evaluated_at: "2026-07-21T23:39:00-05:00"
+    run_ref: RUN-20260721-233633-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Closed the follow-up at awareness grade, recorded the fixture result in current state, and preserved source, claim, and priority boundaries."
+    progress_delta: "Removed the stale predicted-stability language from the steward proposal and added the exact scope correction to the authoritative portfolio."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "The proposal hash and cited TaF commit resolve, but the mailbox is not evidence or instruction."
-      - "The operator-grade lift does not close Lane 1's physical-source and issuance blocker."
-      - "No claim, canon, public-posture, external-action, or cross-owner truth movement was authorized."
+      - "The former claim that partial information could only make coincidence harder was false and is no longer present in the current steward proposal."
+      - "The portfolio now states the exact orbit-alignment condition and the independent-specification guard against circular coarse-graining."
+      - "No claim, canon, public-posture, external-action, or cross-owner truth moved."
     options:
       - id: A
         label: "Continue cycles"
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; Runtime may archive after parent receipt, and the operator-grade lift remains only a named reopener."
+    attention_pointer: "Nothing needs you; the full-forget result and partial-information reopener are now coherent across current steward surfaces."

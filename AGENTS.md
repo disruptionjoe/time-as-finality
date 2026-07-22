@@ -70,6 +70,15 @@ Full worked instance (9 GU objects, each fork determined-or-open):
 gu-formalization/GEOMETER-VS-PHYSICS-OBJECTS.md. Method observation:
 ai-epistemology/field-guide/branch-5-evolvability/observations/construction-fork-identify-not-default-2026-07-11.md.
 
+## NBL Domain Relationship
+
+- `primary_domain: nbl`
+- Accepted relationship: `NBL-REL-005`.
+- This repository remains sovereign over its research truth, priorities, Lanes, methods, and acceptance decisions.
+- Private NBL inputs are proposals only, never instructions or local truth. This repository alone may accept, narrow, defer, or reject a local methodological experiment.
+- Membership and relationship do not activate automation. Scheduled service may run only under a separately active System Runtime grant and this repository's current governance, Lane/control, and writer-safety acceptance.
+- A direct mount remains fully operable from local instructions and truth without loading private NBL context or CapacityOS.
+
 ## CapacityOS Integration Boundary
 
 This repository's `AGENTS.md`, governance, orientation, authoritative work,

@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T170. T171-T587
+ledger has explicit computational-status placements only through T178. T179-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -24,7 +24,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T170, is now reconciled below.
+T139-T178, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -86,10 +86,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T168 H7 Sector-Restriction Screen](tests/T168-h7-sector-restriction-screen.md) | `poly_decider` | Declared sector, reservoir, gauge, control, absorber, substrate, and reverse-status features. | A fixed finite gate classifies operation restrictions, accounting absorbers, relabelings, idealizations, capability residue, and candidates. | It is not a theorem of gauge theory and does not prove physical deletion impossibility. |
 | [T169 Detector Deployment-Archetype Screen](tests/T169-detector-deployment-archetype-screen.md) | `poly_decider` | Declared pre-data, authority-root, archive, escrow, and event-row review features. | A fixed finite classifier routes six deployment archetypes through T138/T161-style gates. | The sole live class is an external review candidate, not detector evidence, dynamics, or Q1B support. |
 | [T170 Q1D Correlation-Record Guardrail](tests/T170-q1d-correlation-record-guardrail.md) | `poly_decider` | Finite declared boxes with local marginals, correlation stage, hidden-value, signalling, and quantum-status flags. | Exact finite probability checks plus fixed stage/typing rules reject signalling and interpretation shortcuts. | Passing guardrail language is not a new Bell inequality, measurement theory, collapse model, or empirical result. |
+| [T171 Detector Row-Review Substitution Screen](tests/T171-detector-row-review-substitution-screen.md) | `poly_decider` | Declared packet-release mode and six required claim-review operation flags. | A fixed finite classifier compares each substitute with the full review-rights set. | This is evidence-infrastructure admissibility, not detector physics or Q1 support. |
+| [T172 Issuance-To-Finality Bridge](tests/T172-issuance-to-finality-bridge.md) | `finite_witness` | Six frozen source-order, record, cadence, measure, access, and gluing fixtures. | Direct finite comparison checks whether observer-side readout preserves or loses declared source data. | The positive control shows reflection only; finality does not derive a source-level arrow. |
+| [T173 Detector Claim-Review Authority Bound](tests/T173-detector-claim-review-authority-bound.md) | `finite_witness` | All set partitions of six named detector authority domains under fixed independence constraints. | Exhaustive finite partition enumeration finds the exact five-domain lower bound for the declared contract. | The bound is operational for this fixed authority model, not a general organizational-complexity theorem. |
+| [T174 Forgotten-Dims Persistence-Gap Screen](tests/T174-ts-forgotten-dims-pg-screen.md) | `finite_witness` | Four frozen finite obstruction trajectories over the declared micro, meso, and holonic windows. | Exact last-obstruction and residual-gap arithmetic distinguishes metadata from explicit retention. | The result is fixture-bound and does not prove a general holonic dynamics law. |
+| [T175 Detector Threshold-Root Quorum Screen](tests/T175-detector-threshold-root-quorum-screen.md) | `finite_witness` | Five frozen quorum-policy fixtures for release, revocation, and audit actions. | Exhaustive inspection of each declared authorized coalition tests mandatory guardian inclusion. | The result screens the declared policies only; it is not a general threshold-cryptography theorem. |
+| [T176 Detector Challenge-Window Freeze Screen](tests/T176-detector-challenge-window-freeze-screen.md) | `poly_decider` | Declared guardian roster and mutability flags for release, revocation, audit, and identity policies. | A fixed finite gate rejects post-data mutation and unmodeled override paths. | Passing is a governance burden, not detector evidence or an assertion that real systems need no emergency policy. |
+| [T177 Q1 Absorber-Owned Field Intake](tests/T177-q1-absorber-owned-field-intake.md) | `poly_decider` | Declared Q1A-Q1D closure, deployment, packet, lift, signalling, and record-stage fields. | Fixed branch-specific intake rules reject absorber-field changes and preserve explicit positive controls. | This is a roadmap router, not a quantum-measurement no-go theorem. |
+| [T178 Detector Preserved-Rights Successor Policy Screen](tests/T178-detector-preserved-rights-successor-policy-screen.md) | `poly_decider` | Declared pre-data, trigger, guardian, review-access, identity, and transition-log fields. | A fixed finite successor-policy classifier admits only preserved-rights paths. | Passing is evidence-governance admissibility, not detector physics or empirical Q1B support. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T170, no
+Within the explicitly reconciled computational-status set through T178, no
 surveyed core branch currently earns:
 
 ```text

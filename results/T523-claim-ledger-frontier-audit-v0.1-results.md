@@ -14,8 +14,8 @@ routed no-row artifacts.
 
 ## Findings
 
-- `TESTS.md` is at T529.
-- The coverage note names T529 as the registry ceiling.
+- `TESTS.md` is at T587.
+- The newest coverage note names T587 as the registry ceiling.
 - The still-untriaged frontier is declared as T256-T513.
 - T249-T255 are preserved as S1 finite-colimit history.
 - T517-T519 are preserved as already routed no-row DS-bridge prospecting.
@@ -40,7 +40,8 @@ routed no-row artifacts.
 ## Interpretation
 
 This is mechanical ledger hygiene for the Ledger Reconciliation Trigger. It
-places T249-T255 as S1 finite-colimit history, leaves T256-T513 still
+reads the newest dated supersession note rather than a hard-coded historical
+note, places T249-T255 as S1 finite-colimit history, leaves T256-T513 still
 untriaged, and does not promote, demote, or reclassify any claim tier.
 
 ## No-Movement Boundary

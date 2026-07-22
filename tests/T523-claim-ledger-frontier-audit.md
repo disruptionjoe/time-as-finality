@@ -13,6 +13,8 @@ Treat `TESTS.md` and the top coverage note in `CLAIM-LEDGER.md` as data.
 ## Success Criteria
 
 - The coverage note names the current highest test registry ID.
+- The audit reads the newest dated coverage-supersession note rather than a
+  hard-coded historical note or numeric ceiling.
 - The still-untriaged frontier is declared as `T256-T513`.
 - T249-T255 are preserved as S1 finite-colimit history, not recounted as
   untriaged frontier.

@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T00:40:00-05:00"
-run_ref: RUN-20260722-003634-repository-work-cycle-cai-hourly
+updated_at: "2026-07-22T01:40:00-05:00"
+run_ref: RUN-20260722-013635-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Repaired recent-test registry drift: restored T581/T582 rows and sixteen missing executable-suite result links through T587."
-    movement_ref: "TESTS.md; results/T522-test-registry-recent-link-audit-v0.1.json; results/T522-test-registry-recent-link-audit-v0.1-results.md"
+    last_movement: "Repaired Claim Ledger frontier drift and removed T523's hard-coded T529 ceiling and historical-note selector."
+    movement_ref: "CLAIM-LEDGER.md; models/claim_ledger_frontier_audit.py; results/T523-claim-ledger-frontier-audit-v0.1.json"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: recent_test_registry_links_repaired_coherent
-    evidence_ref: "TESTS.md; tests/T522-test-registry-recent-link-audit.md; results/T522-test-registry-recent-link-audit-v0.1.json"
-    summary: "The T492-T587 registry is contiguous, every row resolves to a matching spec and result, every result is indexed in the executable suite, and no local home path leaks."
-    evaluated_at: "2026-07-22T00:40:00-05:00"
-    run_ref: RUN-20260722-003634-repository-work-cycle-cai-hourly
+    reason_code: claim_ledger_frontier_declaration_repaired_coherent
+    evidence_ref: "CLAIM-LEDGER.md; tests/T523-claim-ledger-frontier-audit.md; results/T523-claim-ledger-frontier-audit-v0.1.json"
+    summary: "The newest coverage note now matches the T587 registry ceiling, preserves the T256-T513 untriaged frontier, and makes no claim or canon movement."
+    evaluated_at: "2026-07-22T01:40:00-05:00"
+    run_ref: RUN-20260722-013635-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Changed T522 from RECENT_TEST_REGISTRY_LINKS_DRIFT to RECENT_TEST_REGISTRY_LINKS_COHERENT over the full T492-T587 segment."
+    progress_delta: "Changed T523 from CLAIM_LEDGER_FRONTIER_DECLARATION_DRIFT to coherent while making future registry ceilings data-driven."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "T581 and T582 had completed specs and results but were absent from the registry table."
-      - "Sixteen T568-T587 result artifacts were absent from the executable-suite index."
-      - "The repaired audit reports no missing IDs, specs, results, suite links, mismatches, duplicates, or home-path leaks."
+      - "The Claim Ledger coverage note stopped at T531 while TESTS reached T587."
+      - "T523 selected the 2026-07-11 note and expected T529 even when newer notes existed."
+      - "The repaired audit derives the registry ceiling from TESTS and selects the newest supersession note."
     options:
       - id: A
         label: "Continue cycles"
@@ -98,4 +98,4 @@ lanes:
       integrity_repairs: 0
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs you; recent registry and result-pointer integrity is coherent through T587."
+    attention_pointer: "Nothing needs you; Claim Ledger coverage declaration and registry ceiling are coherent through T587."

@@ -21,7 +21,6 @@ TESTS_PATH = Path("TESTS.md")
 CLAIM_LEDGER_PATH = Path("CLAIM-LEDGER.md")
 RESULT_PATH = Path("results/T523-claim-ledger-frontier-audit-v0.1.json")
 
-EXPECTED_MAX_TEST_ID = 529
 EXPECTED_UNTRIAGED_RANGES = ((256, 513),)
 
 VERDICT_PASS = "CLAIM_LEDGER_FRONTIER_DECLARED_COHERENT"
@@ -136,8 +135,6 @@ def audit_claim_ledger_frontier(
     t529_claim_row_present = "| [T529](" in ledger_text
 
     blockers: list[str] = []
-    if max_test_id != EXPECTED_MAX_TEST_ID:
-        blockers.append(f"max_test_id={max_test_id}, expected {EXPECTED_MAX_TEST_ID}")
     if coverage_note_max != max_test_id:
         blockers.append(f"coverage_note_max={coverage_note_max}, max_test_id={max_test_id}")
     if declared_untriaged != EXPECTED_UNTRIAGED_RANGES:
@@ -212,7 +209,7 @@ def write_result(path: Path = RESULT_PATH) -> ClaimLedgerFrontierAudit:
 
 
 def _coverage_supersession_note(text: str) -> str:
-    marker = "**Coverage / staleness supersession (2026-07-11).**"
+    marker = "**Coverage / staleness supersession ("
     start = text.index(marker)
     next_note = text.find("\n\n**", start + len(marker))
     if next_note == -1:

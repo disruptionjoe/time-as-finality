@@ -6,7 +6,6 @@ import json
 import unittest
 
 from models.claim_ledger_frontier_audit import (
-    EXPECTED_MAX_TEST_ID,
     EXPECTED_UNTRIAGED_RANGES,
     VERDICT_PASS,
     audit_claim_ledger_frontier,
@@ -18,7 +17,6 @@ class ClaimLedgerFrontierAuditTests(unittest.TestCase):
         self.audit = audit_claim_ledger_frontier()
 
     def test_registry_ceiling_matches_coverage_note(self) -> None:
-        self.assertEqual(self.audit.max_test_id, EXPECTED_MAX_TEST_ID)
         self.assertEqual(self.audit.coverage_note_max_test_id, self.audit.max_test_id)
 
     def test_untriaged_frontier_is_declared_narrowly(self) -> None:

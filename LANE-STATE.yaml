@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T01:40:00-05:00"
-run_ref: RUN-20260722-013635-repository-work-cycle-cai-hourly
+updated_at: "2026-07-22T03:40:00-05:00"
+run_ref: RUN-20260722-033537-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,19 +52,19 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Repaired Claim Ledger frontier drift and removed T523's hard-coded T529 ceiling and historical-note selector."
-    movement_ref: "CLAIM-LEDGER.md; models/claim_ledger_frontier_audit.py; results/T523-claim-ledger-frontier-audit-v0.1.json"
+    last_movement: "Aligned the T523 registry description with the repaired data-driven audit and live T587 ceiling."
+    movement_ref: "TESTS.md; models/claim_ledger_frontier_audit.py; results/T523-claim-ledger-frontier-audit-v0.1.json"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: claim_ledger_frontier_declaration_repaired_coherent
-    evidence_ref: "CLAIM-LEDGER.md; tests/T523-claim-ledger-frontier-audit.md; results/T523-claim-ledger-frontier-audit-v0.1.json"
-    summary: "The newest coverage note now matches the T587 registry ceiling, preserves the T256-T513 untriaged frontier, and makes no claim or canon movement."
-    evaluated_at: "2026-07-22T01:40:00-05:00"
-    run_ref: RUN-20260722-013635-repository-work-cycle-cai-hourly
+    reason_code: t523_registry_description_aligned_with_live_audit
+    evidence_ref: "TESTS.md; tests/T523-claim-ledger-frontier-audit.md; results/T523-claim-ledger-frontier-audit-v0.1.json"
+    summary: "The T523 registry row now accurately describes the repaired data-driven audit and its live T587 ceiling, with no claim or canon movement."
+    evaluated_at: "2026-07-22T03:40:00-05:00"
+    run_ref: RUN-20260722-033537-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Changed T523 from CLAIM_LEDGER_FRONTIER_DECLARATION_DRIFT to coherent while making future registry ceilings data-driven."
+    progress_delta: "Removed the stale T529 wording that remained in TESTS.md after the audit itself became data-driven at T587."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."

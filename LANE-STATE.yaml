@@ -2,40 +2,40 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-21T18:40:23-05:00"
-run_ref: RUN-20260721-183628-repository-work-cycle-cai-hourly
-bottom_line: "The T19 involution target is closed-refuted at fixture grade; the causal-past retraction is strictly more general, while Lane 1 still waits for source evidence."
-decision_default: "No technical progress until a provenance-valid physical source packet, frozen witness, or sharper counterexample appears."
+updated_at: "2026-07-21T22:40:00-05:00"
+run_ref: RUN-20260721-223532-repository-work-cycle-cai-hourly
+bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
+decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: thin
-    last_movement: "Closed the T19 involution-typing target negatively at fixture grade with two-sided controls."
-    movement_ref: "explorations/involution-typing-lemma-2026-07-20.md"
+    last_movement: "Corrected the partial-information scope of the T19 involution refute and machine-checked aligned and misaligned coarse channels."
+    movement_ref: "explorations/partial-future-information-involution-audit-2026-07-21.md"
     steering_attention: watch
     steering_prompt: "Wait for source evidence; do not reopen from T586 alone."
     steering_ref: "steward/research-portfolio.json"
     light: yellow
-    reason_code: t19_involution_typing_closed_refuted_fixture_grade
-    evidence_ref: "explorations/involution-typing-lemma-2026-07-20.md; tests/involution_typing_probe.py"
-    summary: "T19's causal retraction and a fixpoint-free involution coincide only on the single-witness control, not on the multi-witness fixture."
-    evaluated_at: "2026-07-20T23:43:27-05:00"
-    run_ref: agent-runs/RUN-20260720-233708-involution-refute-followup-mailbox.md
+    reason_code: t19_full_forget_refute_partial_information_scope_corrected
+    evidence_ref: "explorations/partial-future-information-involution-audit-2026-07-21.md; explorations/involution-typing-lemma-2026-07-20.md; tests/involution_typing_probe.py"
+    summary: "The full-forget partition cannot match a multi-orbit involution, but a retained-information channel matches exactly when its fibers equal the involution orbits."
+    evaluated_at: "2026-07-21T22:40:00-05:00"
+    run_ref: RUN-20260721-223532-repository-work-cycle-cai-hourly
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Recorded T-REFUTE as a scoped negative result and preserved the physical-source and record-issuance gates."
+    progress_delta: "Removed an overbroad stability claim, proved the exact orbit-alignment criterion, and preserved the narrower full-forget refute and physical-source gate."
     scope_position: "CAPABILITY-TO-TEMPORAL-ORDER: 4 endpoint review items; P2C gate frozen for future witness."
     trend_24h: up
     confidence: high
-    recommendation: "Wait for source evidence."
+    recommendation: "Wait for a physical source or independently fixed operator-grade retained-information map."
     findings:
-      - "For k >= 2, orbit cardinality and orientation both prevent an involution from reproducing the causal-past retraction."
-      - "The k = 1 planted control exhibits the degenerate coincidence and separates the fixture-grade refutation."
-      - "The operator-grade partial-information lift remains a named reopener, not a physical packet or claim movement."
+      - "For the frozen full-forget fixture, one information block cannot equal the multiple size-two orbits of a fixpoint-free involution."
+      - "For k = 2, retained parity matches global-complement orbits while a retained first bit does not; alignment, not information amount, controls coincidence."
+      - "The operator-grade lift remains a named reopener and must fix its retained-information map before testing involution alignment."
     options:
       - id: A
         label: "Wait for packet"
         recommended: true
-        description: "Do not run another technical swing until a qualifying source packet or counterexample appears."
+        description: "Do not run another physical swing until a qualifying source packet appears; admit an operator lift only with a pre-fixed retained-information map."
       - id: B
         label: "Prepare source gate"
         recommended: false
@@ -48,7 +48,7 @@ lanes:
         label: "Hold for Joe"
         recommended: false
         description: "Pause Lane 1 until Joe supplies a new direction."
-    decision_default: "Wait for source evidence."
+    decision_default: "Wait for source evidence or an independently specified operator-grade lift."
     needs_joe: false
   - lane_id: A
     work_status: moving

@@ -228,9 +228,12 @@ the RIGHT reading -- richer than an involution, not secretly one.
   ALL future changes (the whole up-set is forgotten). This is faithful to
   the T19 model (`ValueError` on every external node), but a future
   operator-grade lift where `A*(R)` retains PARTIAL, coarse future
-  information would enlarge the surviving invariant class; the coincidence
-  could then only get HARDER, never easier, so the refute is stable under
-  that generalization. Recorded as the honest residue, not a hole.
+  information changes the relevant partition. The follow-up audit
+  `partial-future-information-involution-audit-2026-07-21.md` corrects the
+  original stability sentence: coincidence is restored exactly when the
+  retained-information fiber partition equals the involution-orbit
+  partition. The refute is stable for the frozen full-forget fixture, not
+  for every operator-grade lift.
 - **TaF-native finality theorist (T19/T92 fidelity):** the extraction is
   faithful and moves nothing. `A*(R)` is the fixed-point access down-set;
   the finality label is `R_self_finality`; the mechanism is causal
@@ -313,8 +316,9 @@ temporal-issuance touched read-only; nothing written outside
 time-as-finality. Fixture grade throughout: finite Z/2-sets, exhaustive
 involution enumeration for `n <= 8`, the fixpoint-free orbit-count fact for
 larger `k`. Named residues: (i) the operator-grade lift where `A*(R)`
-retains partial coarse future information (the refute is stable under it,
-per the categorical-logician note, but is not machine-checked there);
+retains partial coarse future information (now audited: the full-forget
+refute need not survive an orbit-aligned retained partition; see
+`partial-future-information-involution-audit-2026-07-21.md`);
 (ii) T92's gap presheaf is a distinct object, not addressed as an
 involution class here; (iii) the VALUE of the finality bit remains what
 T19 says it is -- nothing here posits or moves it. Nothing here moves C1,
@@ -343,6 +347,7 @@ GU/TaF time-face unification is confirmed LEG-deep (shared first/third-person
 conclusion shape), not MECHANISM-deep. This CONFIRMS, and does not weaken,
 the ledger's causal-boundary reading of T19. No C1, T19, T92, Complexity
 Ledger, Canon Index, public posture, or external action moves. If a future
-operator-grade lift gives `A*(R)` partial future information, the refute is
-predicted stable (coincidence only gets harder); that lift is the one open
-reopener.
+operator-grade lift gives `A*(R)` partial future information, the comparison
+must be rerun against the retained-information fiber partition. The follow-up
+audit gives an exact orbit-alignment criterion and explicit positive and
+negative controls; that lift remains the one open reopener.

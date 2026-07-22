@@ -24,12 +24,19 @@ Core objects (all frozen from TaF T19, models/t19_phenomenal_bridge_separation.p
   * The A*(R)-indistinguishability relation on future-configs is therefore the
     single all-of-X block; its invariants are the constants.
 
-The coincidence question reduces EXACTLY to a partition question:
+For the frozen full-forget fixture, the coincidence question reduces EXACTLY
+to a partition question:
   even-class(alpha) == A*(R)-class  <=>  orbit-partition(alpha) == { all of X }.
 An involution has orbits of size <= 2. The A*(R) block has size |X| = 2^k
 (k = number of independent future witnesses). They coincide IFF 2^k <= 2, i.e.
 k <= 1 (a SINGLE Z/2 witness). T19's fixture has k >= 2 (independent witnesses
-e_E1, e_E2) -> no such involution exists.
+e_E1, e_E2) -> no such involution exists under full forgetting.
+
+If a lifted A*(R) retains a coarse label q:X->Q, its computable maps are
+constant on the fiber partition P_q. Equality with alpha-even maps then holds
+exactly when P_q is alpha's orbit partition. An aligned partial-information
+channel can therefore restore coincidence for k>=2; the original refutation
+is stable only for the frozen full-forget construction.
 
 Deterministic (double-run byte-identical), numpy for the seeded functional
 identity only, seed 20260720, exit 0. Tagged checks: [T] setup, [E] exhibit,
@@ -104,6 +111,14 @@ def orbit_partition(perm):
 def astar_partition(n):
     """A*(R)-indistinguishability partition of X (|X|=n): the single block."""
     return frozenset({frozenset(range(n))})
+
+
+def fiber_partition(labels):
+    """Partition indices by equality of a retained-information label."""
+    blocks = {}
+    for i, label in enumerate(labels):
+        blocks.setdefault(label, set()).add(i)
+    return frozenset(frozenset(block) for block in blocks.values())
 
 
 def exhibit_fires_for_k(k: int) -> bool:
@@ -281,14 +296,43 @@ def refute_checks() -> None:
           exhibit_fires_for_k(1) and not exhibit_fires_for_k(2))
 
 
+def partial_information_checks() -> None:
+    """Scope the refute against operator-grade retained information."""
+    configs2 = [(a, b) for a in (0, 1) for b in (0, 1)]
+    idx2 = {c: i for i, c in enumerate(configs2)}
+    flip2 = tuple(idx2[(1 - c[0], 1 - c[1])] for c in configs2)
+    flip2_orbits = orbit_partition(flip2)
+
+    parity_labels = [a ^ b for a, b in configs2]
+    check("P", "k=2 aligned parity channel equals global-flip orbit partition",
+          fiber_partition(parity_labels) == flip2_orbits)
+
+    first_bit_labels = [a for a, _ in configs2]
+    check("P", "k=2 misaligned first-bit channel does not restore coincidence",
+          fiber_partition(first_bit_labels) != flip2_orbits)
+
+    configs3 = list(itertools.product((0, 1), repeat=3))
+    idx3 = {c: i for i, c in enumerate(configs3)}
+    flip3 = tuple(idx3[tuple(1 - bit for bit in c)] for c in configs3)
+    pair_labels = [min(c, tuple(1 - bit for bit in c)) for c in configs3]
+    check("P", "k=3 complement-pair channel equals global-flip orbit partition",
+          fiber_partition(pair_labels) == orbit_partition(flip3))
+
+    check("P", "partial-information audit has teeth: aligned passes, misaligned fails",
+          fiber_partition(parity_labels) == flip2_orbits
+          and fiber_partition(first_bit_labels) != flip2_orbits)
+
+
 def main() -> int:
     setup_checks()
     exhibit_checks()
     refute_checks()
+    partial_information_checks()
 
     n_e = sum(1 for p in PASS if p.startswith("[E]"))
     n_f = sum(1 for p in PASS if p.startswith("[F]"))
     n_t = sum(1 for p in PASS if p.startswith("[T]"))
+    n_p = sum(1 for p in PASS if p.startswith("[P]"))
 
     print("=" * 66)
     print("INVOLUTION-TYPING PROBE  --  GU/TaF boundary-law TIME face (T19/T92)")
@@ -301,7 +345,8 @@ def main() -> int:
 
     ok = not FAIL
     total = n_e + n_f
-    headline = (f"{n_e} [E] + {n_f} [F] = {total} (setup [T] = {n_t} excluded) "
+    headline = (f"{n_e} [E] + {n_f} [F] = {total} "
+                f"(setup [T] = {n_t}; scope [P] = {n_p} excluded) "
                 + ("ALL PASS" if ok else f"{len(FAIL)} FAIL"))
     print("HEADLINE: " + headline)
     print("OUTCOME:  T-REFUTE fired for the TaF T19 fixture (k>=2 witnesses).")
@@ -309,7 +354,9 @@ def main() -> int:
     print("          non-invertible); a fixpoint-free involution is the k=1")
     print("          single-Z/2-witness special case. Control k=1 -> T-EXHIBIT,")
     print("          control k>=2 -> T-REFUTE; the probe SEPARATES them.")
-    print("          Time-face unification is LEG-deep, not MECHANISM-deep.")
+    print("          This LEG-deep verdict is scoped to the full-forget fixture.")
+    print("          Partial retained information restores coincidence exactly")
+    print("          when its fiber partition equals alpha's orbit partition.")
     print("=" * 66)
 
     return 0 if ok else 1

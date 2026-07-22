@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T138. T139-T587
+ledger has explicit computational-status placements only through T146. T147-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -23,7 +23,8 @@ not assign computational status. Post-T138 artifacts may use finite executable
 gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
-relevant artifact and input encoding.
+relevant artifact and input encoding. The first bounded post-T138 slice,
+T139-T146, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -38,6 +39,7 @@ reconciliation pass remains due for the post-T138 frontier.
 | `poly_decider` | The implemented decision surface is a finite polynomial-style classifier over declared inputs, not a hidden search over completions. |
 | `theorem_backed` | The main claim has an explicit scalable proof argument, with finite code used only for sanity checks or examples. |
 | `open_hardness` | Hardness is only an open question. Do not use NP-hard or CSP-complete language. |
+| `non_computational` | The artifact is a prose taxonomy, conditional obstruction, or governance boundary and makes no algorithmic, scaling, or hardness claim to classify. |
 
 ## Current Ledger
 
@@ -52,10 +54,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T110 Finite-Permutation Monotone Obstruction](tests/T110-finite-permutation-monotone-obstruction.md) | `theorem_backed` | Finite closed reversible dynamics, modeled as permutation orbits. | Orbit argument: edgewise nondecrease on a finite cycle forces constancy. Exhaustive finite cycle checks are controls. | This blocks strict scalar finality monotones in finite closed reversible systems only. Open-system, coarse-grained, resource, and constructor variants require their own assumptions. |
 | [T132 Weak-Measurement Non-Null Criterion](tests/T132-weak-measurement-nonnull-criterion.md) | `poly_decider` | Declared protocol features for a weak-measurement candidate. | Fixed finite rule audit classifies same-record, post hoc, constant-branch, monotone-proxy, and independent-axis cases. | This is a gate, not a prediction. It does not make Q1C empirical or near-ready. |
 | [T138 Detector Manifest Workflow Fit](tests/T138-detector-manifest-workflow-fit.md) | `poly_decider` | Declared T136 manifest fields and authority-domain workflow structure. | Finite field, authority, pre-data-boundary, and outcome-smuggling checks via the T136 validator. | Passing a scaffold is not detector evidence. Q1B remains externally blocked until real pre-event manifest and event-level packet exist. |
+| [T139 Weak-Measurement Full-Record Sufficiency Boundary](tests/T139-weak-measurement-full-record-sufficiency-boundary.md) | `poly_decider` | Declared coarse-summary, full-record, and auxiliary-witness features. | A fixed finite rule classifies refinement-only, downstream-null, and full-record escape shapes. | This is a proposal/admissibility classifier, not a scalable physical inference or platform-independent no-go. |
+| [T140 Q1 Frontier Escape Matrix](tests/T140-q1-frontier-escape-matrix.md) | `poly_decider` | Declared Q1A-Q1D packet and route features. | Fixed branch-specific Boolean gates classify bookkeeping, external-block, dormant/null, guardrail, and candidate-route states. | It selects routes; it does not establish detector evidence, a new theorem, or physical scalability. |
+| [T141 T1 Record-Graph Admissibility Ledger](tests/T141-t1-record-graph-admissibility-ledger.md) | `finite_witness` | Four declared transformations on the explicit finite T1 record graph. | Direct finite graph/profile comparison and reverse-edge classification over the frozen cases. | Do not generalize the tested absence of constructor-impossible reverses to arbitrary substrates. |
+| [T142 Thermodynamic Erasure Calibration](tests/T142-thermodynamic-erasure-calibration.md) | `finite_witness` | T141's finite cases plus declared uncopy and blind-reset modes. | Exact finite bookkeeping applies the dimensionless one-bit Landauer floor and named absorber classes. | This is calibration/accounting, not a thermodynamic theorem or general arrow result. |
+| [T143 Weak-Measurement Instrument Sufficiency Obstruction](tests/T143-weak-measurement-instrument-sufficiency-obstruction.md) | `non_computational` | Conditional prose comparison of an ordinary monitored instrument and auxiliary channel. | No executable decision procedure or scale claim; the artifact names a conditional obstruction and escape classes. | Do not restate it as a universal dual-meter no-go theorem. |
+| [T144 Definalization Reverse-Edge Taxonomy](tests/T144-definalization-reverse-edge-taxonomy.md) | `non_computational` | Four named reverse-edge classes for future record-finality audits. | Prose taxonomy and declaration requirement only. | Classification vocabulary does not prove thermodynamic irreversibility or constructor impossibility. |
+| [T145 Physical Record Deletion Fixed-Accounting Screen](tests/T145-physical-record-deletion-fixed-accounting.md) | `poly_decider` | Declared absorber vectors and reverse-edge features for a finite fixture family or future packet. | A fixed finite gate compares accounting vectors and requires physical deletion, matched absorbers, a task-natural split, and constructor impossibility. | Passing the syntactic gate would create a review candidate, not itself prove a physical arrow. |
+| [T146 Weak-Measurement Escape Architecture Gate](tests/T146-weak-measurement-escape-architecture-gate.md) | `poly_decider` | Declared full-record, screening, proxy, instrument, environment, comparison-target, and verdict features. | A fixed finite architecture classifier rejects null/underdeclared shapes and admits two review classes. | It is an intake gate, not evidence that either live architecture exists physically. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T138, no
+Within the explicitly reconciled computational-status set through T146, no
 surveyed core branch currently earns:
 
 ```text

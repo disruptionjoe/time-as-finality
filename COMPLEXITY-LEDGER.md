@@ -12,8 +12,10 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T186. T187-T587
-are not computational-status ratified here unless named elsewhere in this file.
+ledger has a contiguous explicit computational-status frontier through T188,
+plus explicit placements for T190-T194. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T195-T587 are not
+computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
 
@@ -24,7 +26,9 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T186, is now reconciled below.
+T139-T188 and the available T190-T194 surfaces are now reconciled below. T189
+remains a named artifact-availability gap rather than receiving an inferred
+status from claim-ledger summaries.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -102,10 +106,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T184 mu_M Non-Additivity Composition Gate](tests/T184-mu-m-non-additivity-composition-gate.md) | `finite_witness` | Declared elementary compositions and numerical fixtures. | Manual algebra and finite numerical comparisons test additivity and conditional G-absorption. | The result is fixture-bound and conditional; no general composition theorem or executable scalable model is claimed. |
 | [T185 lambda*(s) MSY Absorption Test](tests/T185-lambda-star-msy-absorption-test.md) | `finite_witness` | Declared finite numerical cases and an algebraic reparameterization comparison. | Manual finite evaluation compares the lambda-star dependence with the proposed MSY absorber. | The test does not prove a general absorption law or physical identification. |
 | [T186 Metric vs Causal Order Beta Test](tests/T186-metric-vs-causal-order-beta-test.md) | `finite_witness` | A frozen five-event pair with declared metric and causal-order data. | Exact finite comparison plus a CV-based Moses approximation evaluates the beta fixture. | The finite pair is not a general metric-reconstruction, causal-set, or scalability theorem. |
+| [T187 Moses Finite Harmonic-Proxy Audit](tests/T187-moses-exact-constrained-optimization.md) | `finite_witness` | The frozen Alpha/Beta timing pair and its harmonic summary. | Direct finite arithmetic checks whether the narrowed harmonic proxy preserves the T186 sign. | The original exact constrained-optimization/KKT claim is invalid; this does not close the exact-Moses blocker. |
+| [T188 PO1-NCK Formal Claim and Cap_TI Step 4](tests/T188-po1-nck-formal-claim-and-cap-ti-step4.md) | `finite_witness` | A two-patch incompatible-predicate fixture plus declared finite timing controls. | Manual finite obstruction-rate and reconciliation-cost calculations check the proposed connection and hostile split. | The fixture does not prove functoriality, superlinearity, or a general capability theorem; later T221 re-scopes the connection. |
+| [T190 Coherent Section Functor Base Cases](tests/T190-coherent-section-functor-base-cases.md) | `finite_witness` | Finite binary same/different restriction systems and short extension chains. | Direct section-set calculation tests identity, composition, and section-killing extensions. | Base cases refute the stated covariant `FinSets` typing but do not alone prove either repaired construction generally. |
+| [T191 Restricted Functoriality Under Admissible Composition](tests/T191-restricted-functoriality-under-admissible-composition.md) | `theorem_backed` | Arbitrary arrows in the definitionally section-preserving subcategory. | A definition-level argument shows section sets are unchanged, so arrows act identically and identity/composition close. | This is an elementary theorem for a deliberately restricted, dynamics-collapsing subcategory; it does not rescue the useful covariant construction. |
+| [T192 lambda-star Derivation From PO1 Obstruction Dynamics](tests/T192-lambda-star-derivation-from-po1-obstruction-dynamics.md) | `non_computational` | A symbolic decomposition of benefit, obstruction load, and reconciliation cost. | Analytic/prose dependency audit separates the PO1-native `K` term from independently required `N` and `C`. | It is a derivation boundary, not an algorithm or a theorem that PO1 determines a nonzero interior optimum. |
+| [T193 Cap_TI Minimal Sufficient Statistic Search](tests/T193-cap-ti-minimal-sufficient-statistic-search.md) | `finite_witness` | Declared finite harmonic-proxy timing families with fixed event count. | Manual arithmetic compares path-time descriptions with the reduced `(n,T*)` summary. | Sufficiency is conditional on the harmonic-proxy regime and does not transfer to corrected LP or shared-edge DAG-flow models. |
+| [T194 Cap_TI Hostile Same-Neighbor-Data Family](tests/T194-cap-ti-hostile-same-neighbor-data-adversarial-family.md) | `finite_witness` | Four constructed finite source families matched on neighbor data and harmonic summary. | Direct finite comparison searches for a survivor after freezing `(n,T*)`. | Collapse is fixture- and proxy-regime-bound; it is not an exact Moses, arbitrary-flow, or continuum result. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T186, no
+Within the explicitly reconciled computational-status set through T188 and
+the available T190-T194 surfaces, no
 surveyed core branch currently earns:
 
 ```text

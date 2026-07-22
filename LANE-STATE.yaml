@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T12:45:00-05:00"
-run_ref: RUN-20260722-123629-repository-work-cycle-cai-hourly
+updated_at: "2026-07-22T13:39:00-05:00"
+run_ref: RUN-20260722-133630-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,26 +52,26 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled computational status for T179-T186 across capability topology, branch thresholds, weak-measurement gates, absorption tests, and metric/causal-order comparison."
+    last_movement: "Reconciled available computational-status surfaces for T187-T194 and exposed the missing T189 test/result pair."
     movement_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: complexity_ledger_t179_t186_slice_reconciled
+    reason_code: complexity_ledger_t187_t194_available_slice_reconciled_t189_gap
     evidence_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
-    summary: "The complexity ledger now distinguishes fixed finite witnesses from reusable declared-input deciders through T186 while leaving T187-T587 explicitly unratified."
-    evaluated_at: "2026-07-22T12:45:00-05:00"
-    run_ref: RUN-20260722-123629-repository-work-cycle-cai-hourly
+    summary: "The ledger now places T187-T188 and T190-T194 while refusing to infer a status for the referenced-but-absent T189 artifact."
+    evaluated_at: "2026-07-22T13:39:00-05:00"
+    run_ref: RUN-20260722-133630-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Advanced the dedicated reconciliation backlog by eight artifacts and preserved finite-fixture ceilings for the theorem-labeled and manual absorption surfaces."
+    progress_delta: "Advanced seven available artifacts, separated an elementary restricted-subcategory theorem from finite proxy results, and made the T189 availability gap explicit."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."
     findings:
-      - "T179, T182, and T183 are fixed declared-input classifiers and earn poly_decider only."
-      - "T180, T181, T184, T185, and T186 remain finite witnesses despite theorem, composition, absorption, or beta-test naming."
-      - "No T179-T186 surface earns a general scalable theorem or hardness claim."
+      - "T187-T188, T190, and T193-T194 remain finite witnesses with corrected proxy or fixture ceilings."
+      - "T191 earns only an elementary theorem for a deliberately restricted subcategory; T192 is a non-computational derivation boundary."
+      - "T189 is cited by claim surfaces but its test and result files are absent, so no computational status was inferred."
     options:
       - id: A
         label: "Continue cycles"

@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T154. T155-T587
+ledger has explicit computational-status placements only through T162. T163-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -24,7 +24,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T154, is now reconciled below.
+T139-T162, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -70,10 +70,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T152 Metastable-Record Deletion Screen](tests/T152-metastable-record-deletion-screen.md) | `poly_decider` | Declared barrier, lifetime, absorber-vector, control, and reverse-status features. | A fixed finite gate separates kinetic/resource, boundary, idealization, topology-residue, and candidate classes. | Finite barriers and fixture passes do not prove constructor impossibility or a thermodynamic arrow. |
 | [T153 Lorentzian Causal-Diamond Screen](tests/T153-lorentzian-causal-diamond-screen.md) | `finite_witness` | Five frozen fixtures in explicit 1+1 Minkowski coordinates. | Exact causal-order, diamond-membership, and interval domain-of-dependence calculations evaluate the declared cases. | Do not promote this finite 1+1 absorber check to a general spacetime-reconstruction or black-hole theorem. |
 | [T154 T54/T58-to-T126 Bridge](tests/T154-t54-t58-t126-bridge.md) | `finite_witness` | The specific T51/T52 canonical completions and T53 underdetermined boundary. | Direct adaptation through the T58 exact-match gate into the finite T126 screen. | The tiny candidates are insufficient-scale controls; no continuum, dimension, locality, or embeddability result is earned. |
+| [T155 Weak-Measurement Blackwell Boundary](tests/T155-weak-measurement-blackwell-boundary.md) | `poly_decider` | Declared finite joint distributions and a predeclared finite loss-table family. | Exact posterior equality and finite Bayes-risk minimization compare the ordinary record with the augmented record. | The result is restricted to the declared finite decision family, not all experiments or loss functions. |
+| [T156 Myrheim-Meyer Ordering-Fraction Screen](tests/T156-myrheim-meyer-ordering-fraction-screen.md) | `poly_decider` | A finite strict relation plus the declared T126 gate, target fraction, and tolerance. | Pair counting computes ordering fraction and a fixed gate classifies blocked, in-band, and over-ordered candidates. | A band pass is calibration only, not a dimension estimate, sprinkling theorem, embedding, or spacetime derivation. |
+| [T157 T54 Ordering-Fraction Bridge](tests/T157-t54-ordering-fraction-bridge.md) | `finite_witness` | Three frozen T54 descent datums, including one six-event flat-control construction. | Canonical quotient-union completion followed by the existing finite T126 and T156 screens. | The positive case is a constructed finite control; no locality, covariance, continuum, or metric claim is earned. |
+| [T158 Weak-Measurement Preserved-Target Gate](tests/T158-weak-measurement-preserved-target-gate.md) | `poly_decider` | Finite standard and enlarged event records, a declared projection, target status, and lift status. | A fixed eventwise equality and admissibility classifier rejects coarse, drifting, underdeclared, and no-lift shapes. | Passing is an intake condition and does not validate an enlarged instrument or Q1C. |
+| [T159 T54 Interval-Jackknife Screen](tests/T159-t54-interval-jackknife-screen.md) | `finite_witness` | The three frozen T157 candidates and every single-event deletion suborder. | Exact interval counts, ordering fractions, and exhaustive deletion checks test the declared finite controls. | Jackknife failure demotes one fixture; it is neither a continuum no-go nor a scalable robustness theorem. |
+| [T160 H7 Substrate-Family Screen](tests/T160-h7-substrate-family-screen.md) | `non_computational` | Four prose-defined substrate families and the inherited H7 reinstatement burden. | Claim-triage synthesis over existing absorber results; no new executable procedure or scale claim. | The default-null taxonomy does not prove impossibility for every member of a substrate family. |
+| [T161 Detector Control-Root Independence](tests/T161-detector-control-root-independence.md) | `poly_decider` | Finite nominal authority assignments and critical/noncritical control-root assignments. | Union/quotient of authority domains by shared critical roots followed by the existing finite authority audit. | This is infrastructure admissibility, not detector evidence, physics, or Q1B support. |
+| [T162 Q1A SBS Factorization Obstruction](tests/T162-q1a-sbs-factorization-obstruction.md) | `finite_witness` | Enumerated finite SBS-style objectivity, access, provenance, and independence cases. | Exact closure-key comparison checks factorization of current-family D1 verdicts over the frozen cases. | This is a current-family obstruction, not a no-go theorem for quantum measurement or all SBS models. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T154, no
+Within the explicitly reconciled computational-status set through T162, no
 surveyed core branch currently earns:
 
 ```text

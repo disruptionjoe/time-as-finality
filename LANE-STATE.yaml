@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T06:41:00-05:00"
-run_ref: RUN-20260722-063540-repository-work-cycle-cai-hourly
+updated_at: "2026-07-22T07:41:00-05:00"
+run_ref: RUN-20260722-073641-repository-work-cycle-cai-hourly
 bottom_line: "The T19 full-forget fixture remains refuted, but an orbit-aligned partial-information lift can restore exact involution equivalence; Lane 1 still waits for a physical source or independently specified operator lift."
 decision_default: "Preserve the full-forget refute; admit an operator-grade recheck only after its retained-information map is fixed independently of the desired involution verdict."
 needs_joe: false
@@ -52,19 +52,19 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled computational status for T147-T154, extending the reviewed frontier through Q1, H7, causal-access, Lorentzian, and finite-colimit bridge artifacts."
+    last_movement: "Reconciled computational status for T155-T162 across decision-risk gates, causal-set controls, H7 family triage, authority quotients, and the SBS obstruction."
     movement_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: complexity_ledger_t147_t154_slice_reconciled
+    reason_code: complexity_ledger_t155_t162_slice_reconciled
     evidence_ref: "COMPLEXITY-LEDGER.md; TESTS.md; CLAIM-LEDGER.md"
-    summary: "The complexity ledger now distinguishes finite witnesses and finite deciders through T154 while leaving T155-T587 explicitly unratified."
-    evaluated_at: "2026-07-22T06:41:00-05:00"
-    run_ref: RUN-20260722-063540-repository-work-cycle-cai-hourly
+    summary: "The complexity ledger now distinguishes finite witnesses, finite deciders, and prose-only triage through T162 while leaving T163-T587 explicitly unratified."
+    evaluated_at: "2026-07-22T07:41:00-05:00"
+    run_ref: RUN-20260722-073641-repository-work-cycle-cai-hourly
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Advanced the dedicated reconciliation backlog by eight more artifacts, with 48 targeted tests confirming the classified executable surfaces."
+    progress_delta: "Advanced the dedicated reconciliation backlog by eight artifacts, with 34 targeted tests confirming the seven executable surfaces and T160 classified explicitly as non-computational."
     trend_24h: up
     confidence: high
     recommendation: "Continue normal cycles."

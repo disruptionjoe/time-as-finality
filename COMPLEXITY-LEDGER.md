@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T146. T147-T587
+ledger has explicit computational-status placements only through T154. T155-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -24,7 +24,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T146, is now reconciled below.
+T139-T154, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -62,10 +62,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T144 Definalization Reverse-Edge Taxonomy](tests/T144-definalization-reverse-edge-taxonomy.md) | `non_computational` | Four named reverse-edge classes for future record-finality audits. | Prose taxonomy and declaration requirement only. | Classification vocabulary does not prove thermodynamic irreversibility or constructor impossibility. |
 | [T145 Physical Record Deletion Fixed-Accounting Screen](tests/T145-physical-record-deletion-fixed-accounting.md) | `poly_decider` | Declared absorber vectors and reverse-edge features for a finite fixture family or future packet. | A fixed finite gate compares accounting vectors and requires physical deletion, matched absorbers, a task-natural split, and constructor impossibility. | Passing the syntactic gate would create a review candidate, not itself prove a physical arrow. |
 | [T146 Weak-Measurement Escape Architecture Gate](tests/T146-weak-measurement-escape-architecture-gate.md) | `poly_decider` | Declared full-record, screening, proxy, instrument, environment, comparison-target, and verdict features. | A fixed finite architecture classifier rejects null/underdeclared shapes and admits two review classes. | It is an intake gate, not evidence that either live architecture exists physically. |
+| [T147 Q1A Current-Family Closure](tests/T147-q1a-current-family-closure.md) | `poly_decider` | Declared partition visibility, audited accessible provenance support, and current D1 proxy features. | A fixed closure-key calculation checks whether every current-family verdict factors through the declared quotient. | The closure is current-family only; it is not a theorem about arbitrary quantum measurements or future physical dimensions. |
+| [T148 H7 Paper-Facing Demotion Gate](tests/T148-h7-paper-facing-demotion-gate.md) | `poly_decider` | Declared constructor theorem, obstruction, reverse-grounding, deletion, and capability-residue status flags. | A fixed finite status gate produces allowed claims, rejected claims, blockers, and reinstatement conditions. | This governs claim language; it neither proves a physical arrow nor deletes the conditional T18 theorem. |
+| [T149 Weak-Measurement Conditional-Sufficiency Gate](tests/T149-weak-measurement-conditional-sufficiency-gate.md) | `poly_decider` | Finite declared joint distributions over full record, auxiliary output, and verdict plus architecture flags. | Exact finite Bayes-risk comparison and a fixed architecture gate classify zero-lift, underdeclared, and candidate shapes. | Positive lift is only an intake condition and does not establish a physical platform or scalable inference result. |
+| [T150 Weak-Measurement Verdict-Admissibility Gate](tests/T150-weak-measurement-verdict-admissibility-gate.md) | `poly_decider` | T149 output plus declared hidden-axis typing, verdict map, support floor, and predeclaration status. | A fixed finite rule rejects auxiliary-defined, rare, and post-hoc verdict targets. | Passing creates a review candidate only; it does not validate the hidden axis or reinstate Q1C. |
+| [T151 Causal-Access Screen](tests/T151-causal-access-screen.md) | `poly_decider` | Finite directed record-channel graph, observer profile, boundary direction, and channel type. | Graph reachability plus typed channel and boundary checks classify direct classical record access. | The screen is restricted to declared classical channels and cannot adjudicate encoded, holographic, or quantum information claims. |
+| [T152 Metastable-Record Deletion Screen](tests/T152-metastable-record-deletion-screen.md) | `poly_decider` | Declared barrier, lifetime, absorber-vector, control, and reverse-status features. | A fixed finite gate separates kinetic/resource, boundary, idealization, topology-residue, and candidate classes. | Finite barriers and fixture passes do not prove constructor impossibility or a thermodynamic arrow. |
+| [T153 Lorentzian Causal-Diamond Screen](tests/T153-lorentzian-causal-diamond-screen.md) | `finite_witness` | Five frozen fixtures in explicit 1+1 Minkowski coordinates. | Exact causal-order, diamond-membership, and interval domain-of-dependence calculations evaluate the declared cases. | Do not promote this finite 1+1 absorber check to a general spacetime-reconstruction or black-hole theorem. |
+| [T154 T54/T58-to-T126 Bridge](tests/T154-t54-t58-t126-bridge.md) | `finite_witness` | The specific T51/T52 canonical completions and T53 underdetermined boundary. | Direct adaptation through the T58 exact-match gate into the finite T126 screen. | The tiny candidates are insufficient-scale controls; no continuum, dimension, locality, or embeddability result is earned. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T146, no
+Within the explicitly reconciled computational-status set through T154, no
 surveyed core branch currently earns:
 
 ```text

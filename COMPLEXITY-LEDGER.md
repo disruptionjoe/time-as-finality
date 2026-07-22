@@ -12,7 +12,7 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 ## Coverage / Staleness
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
-ledger has explicit computational-status placements only through T178. T179-T587
+ledger has explicit computational-status placements only through T186. T187-T587
 are not computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -24,7 +24,7 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T178, is now reconciled below.
+T139-T186, is now reconciled below.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
@@ -94,10 +94,18 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T176 Detector Challenge-Window Freeze Screen](tests/T176-detector-challenge-window-freeze-screen.md) | `poly_decider` | Declared guardian roster and mutability flags for release, revocation, audit, and identity policies. | A fixed finite gate rejects post-data mutation and unmodeled override paths. | Passing is a governance burden, not detector evidence or an assertion that real systems need no emergency policy. |
 | [T177 Q1 Absorber-Owned Field Intake](tests/T177-q1-absorber-owned-field-intake.md) | `poly_decider` | Declared Q1A-Q1D closure, deployment, packet, lift, signalling, and record-stage fields. | Fixed branch-specific intake rules reject absorber-field changes and preserve explicit positive controls. | This is a roadmap router, not a quantum-measurement no-go theorem. |
 | [T178 Detector Preserved-Rights Successor Policy Screen](tests/T178-detector-preserved-rights-successor-policy-screen.md) | `poly_decider` | Declared pre-data, trigger, guardian, review-access, identity, and transition-log fields. | A fixed finite successor-policy classifier admits only preserved-rights paths. | Passing is evidence-governance admissibility, not detector physics or empirical Q1B support. |
+| [T179 Fixed-Accounting Capability Topology](tests/T179-fixed-accounting-capability-topology.md) | `poly_decider` | Declared absorber equality, topology equality, future-task, and reverse-class fields. | A fixed finite classifier separates accounting, topology, future-task, and capability residues. | This classifies declared capability/topology residue only; it does not establish an H7 arrow. |
+| [T180 Branch-Support Threshold Minimality](tests/T180-branch-support-threshold-minimality.md) | `finite_witness` | A small declared family of admissible branch-support topologies. | Direct finite comparison checks threshold factorization and minimality in the frozen cases. | Exact finite counts do not establish a general threshold-minimality theorem. |
+| [T181 Branch-Failure Threshold Theorem](tests/T181-branch-failure-threshold-theorem.md) | `finite_witness` | The frozen A/B/C/D branch-support family. | Exhaustive evaluation of the declared finite family identifies failure thresholds. | The theorem label is fixture-local; no general scalable theorem is earned. |
+| [T182 Weak-Measurement Platform Family Screen](tests/T182-weak-measurement-platform-family-screen.md) | `poly_decider` | Six named source-backed platform families and declared positive controls. | A fixed typed classifier routes the finite family declarations. | Classification is intake technology, not platform evidence or Q1C support. |
+| [T183 Weak-Measurement Reinstatement Stack](tests/T183-weak-measurement-reinstatement-stack.md) | `poly_decider` | Declared outputs from the finite weak-measurement proposal gates. | A composed fixed gate classifies whether the reinstatement burden is met. | A pass creates a review candidate only; it does not reinstate the physical claim. |
+| [T184 mu_M Non-Additivity Composition Gate](tests/T184-mu-m-non-additivity-composition-gate.md) | `finite_witness` | Declared elementary compositions and numerical fixtures. | Manual algebra and finite numerical comparisons test additivity and conditional G-absorption. | The result is fixture-bound and conditional; no general composition theorem or executable scalable model is claimed. |
+| [T185 lambda*(s) MSY Absorption Test](tests/T185-lambda-star-msy-absorption-test.md) | `finite_witness` | Declared finite numerical cases and an algebraic reparameterization comparison. | Manual finite evaluation compares the lambda-star dependence with the proposed MSY absorber. | The test does not prove a general absorption law or physical identification. |
+| [T186 Metric vs Causal Order Beta Test](tests/T186-metric-vs-causal-order-beta-test.md) | `finite_witness` | A frozen five-event pair with declared metric and causal-order data. | Exact finite comparison plus a CV-based Moses approximation evaluates the beta fixture. | The finite pair is not a general metric-reconstruction, causal-set, or scalability theorem. |
 
 ## Global Guardrail
 
-Within the explicitly reconciled computational-status set through T178, no
+Within the explicitly reconciled computational-status set through T186, no
 surveyed core branch currently earns:
 
 ```text

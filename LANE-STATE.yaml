@@ -2,31 +2,31 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T18:49:00-05:00"
-run_ref: RUN-20260722-184245-repository-work-cycle-nbl-hourly
-bottom_line: "TaF-2 remains blocked on a source-backed anomaly operator, so the bounded F4-first reversal-self-dual reflector specification is now frozen before results. It fixes a knob-free native construction, matched controls, finite panel, and informative negative outcomes without claiming a source law or continuum result."
-decision_default: "Locate and freeze the existing repaired-S1 and Myrheim-Meyer executable references and thresholds, then run the F4 finite panel without retuning or return the declared missing-observable block."
+updated_at: "2026-07-22T21:01:00-05:00"
+run_ref: RUN-20260722-204348-time-as-finality-progress
+bottom_line: "The F4 reference gate returned blocked_missing_registered_observable before enumeration. Exact repaired-S1 and Myrheim-Meyer sources exist, but no frozen public adapter maps arbitrary F4 posets into T126 control fields, n=6 lies outside registered calibration sizes, and no predeclared planted-control MM agreement band exists. TaF-2 remains separately blocked on its source-backed anomaly operator. No panel, claim, canon, or public posture moved."
+decision_default: "Do not enumerate or substitute a proxy. Reopen F4 only after an owner-governed pre-results adapter freezes the arbitrary-poset mapping, n=6 treatment, repaired-S1 interface, Myrheim-Meyer planted-control comparison, multi-observable agreement rule, and density matching."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Froze the F4-first reversal-self-dual reflector enumeration before results after the higher-ranked TaF-2 implementation remained blocked on its declared operator prerequisite."
-    movement_ref: "explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md"
+    last_movement: "Located and froze the exact repaired-S1/MM sources, then returned the predeclared missing-registered-observable block before F4 enumeration because the required arbitrary-candidate adapter and comparison bands are not owner-frozen."
+    movement_ref: "explorations/reversal-self-dual-reflector-F4-REGISTERED-OBSERVABLE-FREEZE-2026-07-22.md"
     steering_attention: watch
-    steering_prompt: "Run TaF-2 only from the frozen finite-fixture specification after fixing a source-backed anomaly operator. Keep F4 as the independent TaF-1 reflector anchor. Do not reopen T586, import GU sigma/w1 as evidence, or lift the TaF-3 broad-headline embargo."
+    steering_prompt: "Keep TaF-2 blocked until its source-backed anomaly operator exists. Keep F4 blocked until a pre-results registered-observable adapter resolves its exact wake; do not enumerate, proxy, retune, or lift the TaF-3 broad-headline embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: taf2_operator_blocked_f4_reflector_spec_frozen
-    evidence_ref: "LANES.yaml; explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md"
-    summary: "TaF-2 remains first-ranked but cannot implement without its declared source-backed anomaly operator. The independent F4 reflector fallback is now preregistered with a knob-free reversal-self-dual construction, matched random/KR controls, finite panel, and exact positive, negative, blocked, and inconclusive outcomes."
-    evaluated_at: "2026-07-22T18:49:00-05:00"
-    run_ref: RUN-20260722-184245-repository-work-cycle-nbl-hourly
+    reason_code: taf2_operator_blocked_f4_registered_observable_adapter_blocked
+    evidence_ref: "LANES.yaml; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-REGISTERED-OBSERVABLE-FREEZE-2026-07-22.md"
+    summary: "TaF-2 cannot implement without its source-backed anomaly operator. F4 now also has an exact local block: its sources resolve, but the registered executable adapter and pre-results comparison bands needed by the frozen panel do not."
+    evaluated_at: "2026-07-22T21:01:00-05:00"
+    run_ref: RUN-20260722-204348-time-as-finality-progress
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Froze the bounded F4 construction fork, finite panel, matched controls, outcome classes, and no-overread boundary without running the enumeration."
-    scope_position: "TaF-2 finite prediction gate first; TaF-1 F4 reflector check second and bounded; TaF-3 S4 paper route preserved at fixture grade; T586 remains closed to repetition."
+    progress_delta: "Froze exact registered sources and converted an ambiguous implementation step into a typed pre-results block with a complete adapter wake, without running the panel."
+    scope_position: "TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
     trend_24h: up
     confidence: high
-    recommendation: "Recover the registered repaired-S1/MM references and thresholds, then run or block the frozen F4 panel without retuning."
+    recommendation: "Prepare the exact pre-results F4 adapter only when owner-local evidence justifies its construction choices; otherwise preserve both current blocks."
     findings:
       - "The causal-past retraction pi induces an S4 interior operator: its faithful (pi-saturated) and orientation-faithful (pi-stable, int(A) = A cap pi^{-1}(A)) interiors both satisfy all four Kuratowski axioms on the frozen T19 fixture."
       - "The gate has teeth: pi's raw set-image readings are not interior operators (direct image fails K1 top and K4 meet-preservation; preimage fails K2 contractivity), so the FAIL branch was reachable and PASS is a computed result."

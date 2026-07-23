@@ -13,8 +13,8 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 As of 2026-07-22, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T202. The referenced T189 test and result
-surfaces are absent from the checkout, so T189 and T195-T587 are not
+plus explicit placements for T190-T218. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T219-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -26,14 +26,14 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T188 and the available T190-T202 surfaces are now reconciled below. T189
+T139-T188 and the available T190-T218 surfaces are now reconciled below. T189
 remains a named artifact-availability gap rather than receiving an inferred
 status from claim-ledger summaries.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
-movement, or external-publication implication. A dedicated complexity-ledger
-reconciliation pass remains due for the post-T138 frontier.
+movement, or external-publication implication. Dedicated complexity-ledger
+reconciliation remains due for the available frontier from T219 onward.
 
 ## Status Labels
 
@@ -121,11 +121,27 @@ reconciliation pass remains due for the post-T138 frontier.
 | [T200 T187 Linear-Program / KKT Audit](tests/T200-t187-linear-program-kkt-audit.md) | `theorem_backed` | Arbitrary finite positive path times under the stated simplex-constrained linear objective. | Elementary linear-program reasoning shows the optimum concentrates on a fastest path rather than using inverse-time weights. | This kills the claimed derivation only; it does not kill the harmonic summary as an explicitly declared proxy. |
 | [T201 Regularized / Fairness Objective Audit](tests/T201-regularized-fairness-objective-harmonic-weight-audit.md) | `theorem_backed` | Arbitrary finite positive path times under the declared minimax equal-load objective. | Equalization of `w_i t_i` with the simplex constraint yields normalized inverse-time weights. | The result is conditional on an explicit fairness/equal-load premise and is not a WBE-native derivation. |
 | [T202 Shared-Edge DAG Path-Harmonic Counterexample](tests/T202-shared-edge-dag-path-harmonic-counterexample.md) | `finite_witness` | A constructed finite DAG with overlapping source-to-sink paths. | Direct path-summary and shared-edge accounting comparison exhibits double-counting. | The counterexample narrows T195; it does not classify all capacitated DAG objectives. |
+| [T203 Edge-Capacity / Flow-Conservation DAG Model](tests/T203-edge-capacity-flow-conservation-dag-model.md) | `non_computational` | A prose definition of finite path-flow state, congestion law, and minimax capability. | The artifact specifies the corrected object and controls but implements no solver; T210 supplies the later executable surface. | A mathematical model definition is not itself an algorithm, complexity result, or scalable optimizer. |
+| [T204 Same Path Harmonic, Different Edge Congestion Family](tests/T204-same-path-harmonic-different-edge-congestion-family.md) | `finite_witness` | Two hand-computed two-path networks with fixed demand, times, and capacities. | Exact finite arithmetic gives equal free-path harmonic means but `C_flow` values `8/3` and `10/3`. | This is an existential fixture against projection sufficiency, not a classifier for arbitrary capacitated DAGs. |
+| [T205 Continuum / Refinement Stability Of Finite Harmonic Proxy](tests/T205-continuum-refinement-stability-of-finite-harmonic-proxy.md) | `finite_witness` | One serial subdivision and one path-multiplicity refinement of small declared path lists. | Direct harmonic-mean arithmetic shows invariance in the control and failure under hostile multiplicity refinement. | Killing this proxy as a bridge does not prove that no weighted measure or flow object has a continuum limit. |
+| [T206 Native WBE / Allometric-Network Absorber Audit](tests/T206-native-wbe-allometric-network-absorber-audit.md) | `non_computational` | A prose comparison after granting native incidence, conductance, cost, demand, and objective variables. | Conceptual state-completion audit classifies the corrected proxy as standard transport structure. | Absorption is a claim-boundary judgment, not an executable WBE decision procedure or hardness result. |
+| [T207 Cap_TI Minimal Statistic After Corrections](tests/T207-cap-ti-minimal-statistic-after-corrections.md) | `non_computational` | A symbolic regime-by-regime reclassification of harmonic, LP, lower-bound LP, and shared-edge flow summaries. | Analytic/prose audit maps each objective and constraint regime to the state it actually requires. | The artifact narrows an exactness claim; it does not implement minimal-sufficiency search or prove a general statistic theorem. |
+| [T208 Reviewer-Facing Errata For T187-T199](tests/T208-reviewer-facing-errata-t187-t199.md) | `non_computational` | A bounded correction map over eight named prior artifacts. | Prose export audit preserves valid fixture arithmetic and removes invalid LP, DAG-flow, and continuum language. | Errata governance is not an algorithmic or scaling result. |
+| [T209 LP-Harmonic-DAG Sanity Harness](tests/T209-lp-harmonic-dag-sanity-harness.md) | `poly_decider` | Finite positive time sequences and finite path-edge incidence lists. | Direct scans compute harmonic means, closed-form simplex LP controls, and shared-edge loads in polynomial time in the declared representation. | This is an arithmetic preregistration gate, not a general congestion optimizer or proof of physical scalability. |
+| [T210 C_flow Solver Base Cases](tests/T210-cflow-solver-base-cases.md) | `finite_witness` | Small finite path networks at a fixed demand-simplex grid step. | `solve_minimax_cflow` exhaustively enumerates grid allocations and minimizes maximum loaded-path latency. | Runtime grows combinatorially with path count and demand ticks; do not call this a scalable flow solver or polynomial algorithm. |
+| [T211 Executable Same-Harmonic Different-C_flow Fixture](tests/T211-executable-same-harmonic-different-cflow.md) | `finite_witness` | The two frozen disjoint/shared-prefix networks from T204. | T210's grid solver reproduces the `8/3` versus `10/3` split under equal free-path harmonic mean. | Executable reproduction strengthens the finite counterexample only; it does not establish an arbitrary-DAG separation bound. |
+| [T212 Path-Harmonic Projection Insufficiency Theorem](tests/T212-path-harmonic-projection-insufficiency-theorem.md) | `theorem_backed` | Any projection with two exhibited inputs sharing its value but differing in the target value. | Elementary fiber argument: the T211 witness pair proves that free-path harmonic cannot determine `C_flow`. | This earns only existential projection insufficiency; it says nothing about typical spread, approximation error, continuum behavior, or hardness. |
+| [T213 C_flow Invariance And Monotonicity Controls](tests/T213-cflow-invariance-monotonicity-controls.md) | `finite_witness` | The current small disjoint/shared-prefix fixtures and one relabeling/capacity change. | Exact regression checks cover relabeling invariance, shared-edge detection, and capacity monotonicity on those cases. | Current controls do not prove the properties for arbitrary networks or validate the grid search asymptotically. |
+| [T214 Capacity-Weighted Refinement Repair Audit](tests/T214-capacity-weighted-refinement-repair-audit.md) | `non_computational` | A prose comparison of unweighted refinement failure with capacity-aware repair requirements. | Assumption audit identifies the missing refinement functor, measure, convergence notion, and native WBE comparison. | A plausible repair direction is not an implemented refinement algorithm or continuum theorem. |
+| [T215 Fixed Native Network Record-Finality Split](tests/T215-fixed-native-network-record-finality-split.md) | `finite_witness` | One fixed two-path network and two declared record policies. | The executable fixture holds `C_flow` fixed while a Boolean record-reconstructability predicate splits append-only and overwrite policies. | This is a typed finite task split, not evidence for a general physical finality law or independent transport residue. |
+| [T216 Record-Policy Native Absorber Audit](tests/T216-record-policy-native-absorber-audit.md) | `non_computational` | A prose state-completion comparison for the T215 record-policy split. | Conceptual absorber audit grants native provenance and retention state and classifies the split as record-layer structure. | Absorption does not compute arbitrary record capability or prove a no-go theorem. |
+| [T217 Two-Layer Transport / Record Capability Object](tests/T217-two-layer-transport-record-capability-object.md) | `non_computational` | A typed product proposal `(C_flow, record_reconstructable)` over declared transport and policy inputs. | Prose synthesis separates the two coordinates and their native absorbers. | A product definition is audit structure, not a derived physical law, algorithm, or new complexity class. |
+| [T218 C_flow / Record-Finality Reviewer Packet](tests/T218-cflow-record-finality-reviewer-packet.md) | `non_computational` | A bounded reviewer-facing synthesis of T210-T217. | Prose export audit foregrounds projection insufficiency, native-flow absorption, and separate record typing. | The packet makes no continuum, arbitrary-physics, scalable-algorithm, or hardness claim. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T202 surfaces, no
+the available T190-T218 surfaces, no
 surveyed core branch currently earns:
 
 ```text
@@ -140,9 +156,10 @@ The honest current summary for the explicitly reconciled set is:
 
 ```text
 mixed computational status: finite witnesses, several polynomial finite
-classifiers, and three theorem-backed results — the T110 finite-permutation
-obstruction (a NEGATIVE result, under the weakened H7) plus the T45/T47 elementary
-order-properties of the partially-supported PO1 schema (no temporal or empirical
-content). No top-line claim is a proven general theorem; no earned general
-hardness rhetoric.
+classifiers, and seven narrowly theorem-backed placements. These are T45/T47's
+elementary PO1 order properties, T110's finite-permutation obstruction, T191's
+definitionally restricted functoriality, T200/T201's objective-specific finite
+optimization arguments, and T212's elementary projection-insufficiency
+implication. None supplies a top-line temporal or physical theorem, a scalable
+general optimizer, or earned general hardness rhetoric.
 ```

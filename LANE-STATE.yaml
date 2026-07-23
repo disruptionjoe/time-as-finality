@@ -56,25 +56,27 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled the accepted strategic reprioritization across Lane state and the ranked portfolio, then opened the due repository VSM refresh caused by the material change."
-    movement_ref: "LANES.yaml; LANE-STATE.yaml; steward/research-portfolio.json; agent-runs/RUN-20260722-162359-repository-work-cycle-nbl.md"
+    last_movement: "Reconciled computational status for T203-T218 and verified the two executable arithmetic/flow suites with 12 passing tests."
+    movement_ref: "COMPLEXITY-LEDGER.md; agent-runs/RUN-20260722-214018-complexity-ledger-t203-t218.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: strategic_priority_and_vsm_material_change_reconciled
-    evidence_ref: "LANES.yaml; steward/research-portfolio.json; agent-runs/RUN-20260722-143532-repository-vsm-discovery.md"
-    summary: "Control now matches the accepted publish/predict priority. Repository-recursive VSM coverage was refreshed because the strategic reprioritization materially changed S2-S5 evidence after the prior 14:40 receipt."
-    evaluated_at: "2026-07-22T16:50:00-05:00"
-    run_ref: RUN-20260722-162359-repository-work-cycle-nbl-hourly
+    reason_code: complexity_ledger_t203_t218_reconciled
+    evidence_ref: "COMPLEXITY-LEDGER.md; agent-runs/RUN-20260722-214018-complexity-ledger-t203-t218.md"
+    summary: "The computational-status frontier now covers the available surfaces through T218, preserving T189 as a source gap and preventing the finite C_flow grid solver from being described as scalable."
+    evaluated_at: "2026-07-22T21:44:00-05:00"
+    run_ref: RUN-20260722-214018-time-as-finality-direct
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Re-ranked two technical items, retired stale formal-byproduct eligibility, refreshed VSM coverage, and froze one specification without changing claims or canon."
+    progress_delta: "Added sixteen evidence-backed computational-status rows and verified 12 executable controls without changing claims, canon, or scientific Lane state."
     trend_24h: up
     confidence: high
-    recommendation: "Run the TaF-2 implementation prerequisite check next; preserve the bounded F4 fallback and all scientific ceilings."
+    recommendation: "Preserve the scientific blocks and continue computational-status review at T219 only as bounded stewardship capacity permits."
     findings:
       - "T195, T198, and T202 are finite proxy/control/counterexample surfaces; none earns arbitrary-DAG or continuum language."
       - "T200 and T201 earn elementary theorem-backed placements for their declared optimization objectives, while T196, T197, and T199 are non-computational audits or synthesis."
+      - "T209 is a polynomial-style arithmetic gate over declared finite encodings; T210 is a combinatorial fixed-grid finite solver, not a scalable optimizer."
+      - "T212 earns only the elementary same-projection/different-target insufficiency implication; T203-T218 otherwise separate finite fixtures from non-computational audits and packets."
       - "The missing T189 source pair still blocks a contiguous frontier beyond T188."
     options:
       - id: A
@@ -95,11 +97,11 @@ lanes:
         description: "Stop only if Joe changes owner control state."
     decision_default: "Continue normal cycles."
     needs_joe: false
-    drift_verdict: repaired_strategic_priority_lag
+    drift_verdict: repaired_computational_status_lag
     action_counts:
       mail: 0
-      reconciled: 3
-      integrity_repairs: 2
+      reconciled: 16
+      integrity_repairs: 1
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs Joe; the next technical action is bounded by the frozen TaF-2 specification and its operator prerequisite."
+    attention_pointer: "Nothing needs Joe; scientific work remains bounded by the TaF-2 operator prerequisite and F4 adapter block, while ledger stewardship continues at T219."

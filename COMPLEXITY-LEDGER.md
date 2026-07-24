@@ -13,8 +13,8 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 As of 2026-07-23, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T219. The referenced T189 test and result
-surfaces are absent from the checkout, so T189 and T220-T587 are not
+plus explicit placements for T190-T220. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T221-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -26,14 +26,14 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T188 and the available T190-T219 surfaces are now reconciled below. T189
+T139-T188 and the available T190-T220 surfaces are now reconciled below. T189
 remains a named artifact-availability gap rather than receiving an inferred
 status from claim-ledger summaries.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
 movement, or external-publication implication. Dedicated complexity-ledger
-reconciliation remains due for the available frontier from T220 onward.
+reconciliation remains due for the available frontier from T221 onward.
 
 ## Status Labels
 
@@ -138,11 +138,12 @@ reconciliation remains due for the available frontier from T220 onward.
 | [T217 Two-Layer Transport / Record Capability Object](tests/T217-two-layer-transport-record-capability-object.md) | `non_computational` | A typed product proposal `(C_flow, record_reconstructable)` over declared transport and policy inputs. | Prose synthesis separates the two coordinates and their native absorbers. | A product definition is audit structure, not a derived physical law, algorithm, or new complexity class. |
 | [T218 C_flow / Record-Finality Reviewer Packet](tests/T218-cflow-record-finality-reviewer-packet.md) | `non_computational` | A bounded reviewer-facing synthesis of T210-T217. | Prose export audit foregrounds projection insufficiency, native-flow absorption, and separate record typing. | The packet makes no continuum, arbitrary-physics, scalable-algorithm, or hardness claim. |
 | [T219 C_flow / Record-Finality Integrated Guardrail](tests/T219-cflow-record-finality-integrated-guardrail.md) | `finite_witness` | The frozen LP/harmonic, two-path `C_flow`, relabeling, capacity, and record-policy fixtures exercised by the two declared test modules. | The integrated regression command runs direct finite arithmetic and T210's fixed-grid combinatorial solver, then checks the predeclared transport/record separations. | Passing 12 fixture tests protects current claim hygiene; it is not a general decision procedure, scalable optimizer, complexity placement, or physical-finality theorem. |
+| [T220 LossKernel Witness-Obligation Factorization Certificate](tests/T220-losskernel-obligation-factorization-certificate.md) | `finite_witness` | The declared finite canonical case family, its neighbor-signature fibers, pair probes, and one hidden-source escape control. | Exhaustive fiber-constancy and reconstruction checks show the canonical obligation factors through the neighbor-visible signature on the implemented family. | The general fiber criterion is elementary, but the repository certificate is finite-family and canonical-regime scoped; it does not prove arbitrary LossKernel factorization, prior-art separation, hardness, or scalability. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T219 surfaces, no
+the available T190-T220 surfaces, no
 surveyed core branch currently earns:
 
 ```text

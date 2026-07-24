@@ -168,6 +168,6 @@ request a scientific or governance decision.
   live mailbox/control/emergency/material research change; or repository S2-S5
   due at `2026-07-30T20:15:45-05:00`.
 - Execution-profile observation: policy `shadow`; source `explicit_spawn`;
-  actual model `gpt-5`; reasoning effort `high`; work class `routine_owner`;
-  validation `pass`; fit `well_matched`; confounders `[]`; recommended profile
+  actual model `gpt-5`; reasoning effort `unknown`; work class `routine_owner`;
+  validation `pass`; fit `indeterminate`; confounders `[unknown]`; recommended profile
   `null`; adjustment applied `false`.

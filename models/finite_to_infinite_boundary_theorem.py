@@ -130,11 +130,12 @@ class BoundaryVerdict:
 # unsatisfiable, detected by a finite sub-graph). The decider above is exact on
 # the finite witness sub-graph; compactness lifts the verdict.
 #
-# Continuum obstruction (the strictly-finite edge): the coefficient-blind scalar
-# Mobius encoding of T59. A nontrivial-monodromy orientation cover is reported
-# satisfiable when the transition signs are forgotten -- a false global section.
-# Parity is licensed at the continuum only after coefficient/transition data are
-# reduced to a signed finite problem (transition-aware Z2).
+# Continuum boundary control: the coefficient-blind scalar Mobius encoding of
+# T59. A nontrivial-monodromy orientation cover is reported satisfiable when the
+# transition signs are forgotten. T226 later corrected the interpretation: the
+# two-open transition-aware control below is a direct signed-CSP conflict, not a
+# genuine Cech-H1 class. The continuum object requires coefficient-aware H1 on a
+# cyclic nerve and a refinement/derived bridge.
 
 
 def _infinite_chain_finite_window(n: int, conflict: bool) -> tuple[list[str], list[SignedEdge]]:
@@ -190,12 +191,11 @@ def csp_po1_verdict() -> BoundaryVerdict:
         ),
     )
 
-    # --- Continuum obstruction side: T59 Mobius coefficient-blind false section ---
-    # Reuse the exact T59 witness so the boundary is consolidated, not re-derived.
-    # Mobius cover: overlap signs (+1, -1) -> monodromy -1 -> orientation
-    # obstructed. Transition-aware encoding: same + different on (U0, U1) ->
-    # direct parity conflict -> obstruction detected. Coefficient-blind encoding:
-    # same + same -> satisfiable -> FALSE GLOBAL SECTION.
+    # --- Continuum boundary side: T59 coefficient-forgetting control ---
+    # Reuse the exact T59 signed-CSP witness so the boundary is consolidated.
+    # T226 establishes that a single overlap has trivial H1: the aware result
+    # here is only a direct parity conflict. The genuine coefficient-aware H1
+    # replacement needs an annular cover cycle.
     mobius_aware_edges: list[SignedEdge] = [("U0", "U1", 1), ("U0", "U1", -1)]
     mobius_blind_edges: list[SignedEdge] = [("U0", "U1", 1), ("U0", "U1", 1)]
     aware_detects = (
@@ -209,9 +209,9 @@ def csp_po1_verdict() -> BoundaryVerdict:
     continuum = SideWitness(
         side="continuum_obstruction",
         description=(
-            "Continuous orientation data (Mobius): coefficient-blind scalar "
-            "encoding reports a false global section; parity is not a generic "
-            "continuum detector."
+            "T59 continuum-boundary control: coefficient forgetting changes "
+            "the signed-CSP verdict, but the two-open aware control is a direct "
+            "parity conflict rather than a genuine Cech-H1 class."
         ),
         holds=aware_detects and blind_false_section and cyl_aware,
         detail=(
@@ -219,7 +219,8 @@ def csp_po1_verdict() -> BoundaryVerdict:
             f"conflict -> obstruction detected ({aware_detects}). Coefficient-"
             f"blind scalar encoding (same + same) is satisfiable ({blind_false_section}) "
             "despite monodromy -1: a false global section. Cylinder control "
-            f"satisfiable in both ({cyl_aware}). Inherited from T59."
+            f"satisfiable in both ({cyl_aware}). This is the T59 finite control; "
+            "T226 supplies the corrected annular H1 object."
         ),
     )
 
@@ -239,13 +240,14 @@ def csp_po1_verdict() -> BoundaryVerdict:
         boundary_line=(
             "Boundary sits at the continuum coefficient layer, not at "
             "countability. Countable: survives. Continuous: conditional on "
-            "carrying transition data; the obstruction object is sheaf H1 with "
-            "the correct coefficient group, not blind same/different CSP."
+            "carrying transition data through coefficient-aware H1 on a cyclic "
+            "nerve and its refinement/derived bridge; T222's two-open signed-CSP "
+            "control is not itself that object."
         ),
         guardrail_note=(
-            "No general Cech/sheaf-cohomology theorem is claimed from the finite "
-            "Mobius witness. The continuum statement is a counterexample plus a "
-            "stated replacement target (coefficient-aware H1)."
+            "No general Cech/sheaf-cohomology theorem is claimed from this finite "
+            "control. T226 proves that the single-overlap aware conflict has "
+            "trivial H1 and relocates the genuine class to an annular cyclic nerve."
         ),
     )
 
@@ -262,14 +264,11 @@ def csp_po1_verdict() -> BoundaryVerdict:
 # finitely-represented countably-infinite site map (an index-shift on N), which
 # is well-defined at every coordinate.
 #
-# Conditional edge (the genuinely fragile point flagged by T59/T34): the COLIMIT
-# of a transfinite descending chain of D1RestrictionSystems. The accumulated
-# forgotten_structure colimit is a set (countable union), fine. But preserved_dims
-# is intersected along the chain, and over an infinite strictly-descending chain
-# the intersection can empty out -- the colimit morphism preserves no dimension,
-# which is outside the profile axioms that every finite D1 object satisfies. This
-# is the explicit obstruction: category laws survive; the colimit-closure of the
-# category does not, absent a construction that does not yet exist.
+# T228 later closes the named descending-chain edge. The preserved-dimension
+# universe is fixed at four elements, so strict descent saturates at the empty
+# tuple after at most four drops. Empty preserved_dims is legal. The chain has a
+# content-free colimit; only a content-bearing colimit of the desired form is
+# ruled out. This does not establish general cocompleteness.
 
 D1_DIMENSIONS = (
     "accessible_support",
@@ -332,17 +331,22 @@ def d1cat_verdict() -> BoundaryVerdict:
         ),
     )
 
-    # --- Conditional edge: colimit of a transfinite descending chain ---
-    # Each morphism in the chain forgets one more dimension. After finitely many
-    # steps preserved_dims is still non-empty; over the full infinite descending
-    # chain the intersection empties. Model the chain explicitly and take the
-    # intersection limit.
-    chain_preserved = [frozenset(D1_DIMENSIONS[:k]) for k in range(len(D1_DIMENSIONS), 0, -1)]
-    # extend the descending chain infinitely by repeating the empty tail
+    # --- Corrected edge: finite saturation and content-free colimit ---
+    # Strict descent in the fixed four-element universe reaches empty after at
+    # most four drops and is constant thereafter; "transfinite" adds no new
+    # preserved-dimension behavior.
+    chain_preserved = [
+        frozenset(D1_DIMENSIONS[:k])
+        for k in range(len(D1_DIMENSIONS), -1, -1)
+    ]
     descending_intersection = frozenset(D1_DIMENSIONS)
-    for step in chain_preserved + [frozenset()]:  # the +[] models the limit step
+    for step in chain_preserved:
         descending_intersection = descending_intersection & step
     colimit_empties = descending_intersection == frozenset()
+    descent_saturates_finitely = (
+        len(chain_preserved) == len(D1_DIMENSIONS) + 1
+        and chain_preserved[-1] == frozenset()
+    )
     # forgotten_structure colimit is a set union -> always well-defined as a set.
     forgotten_union = set()
     for k in range(1, 50):
@@ -352,17 +356,23 @@ def d1cat_verdict() -> BoundaryVerdict:
     colimit = SideWitness(
         side="infinite_obstruction",
         description=(
-            "Colimit of a transfinite strictly-descending chain: preserved_dims "
-            "intersection empties; the colimit morphism preserves no dimension, "
-            "outside the profile axioms every finite D1 object satisfies."
+            "The named descending chain reaches empty preserved_dims after four "
+            "finite drops. Empty preservation is legal, so a content-free colimit "
+            "exists; only the desired content-bearing form is absent."
         ),
-        holds=colimit_empties and forgotten_union_well_defined,
+        holds=(
+            colimit_empties
+            and descent_saturates_finitely
+            and forgotten_union_well_defined
+        ),
         detail=(
-            f"Descending preserved_dims chain reaches the empty intersection "
-            f"({colimit_empties}). The accumulated forgotten_structure colimit "
-            f"remains a well-defined set union ({forgotten_union_well_defined}), "
-            "so the failure is specifically the empty-preservation limit object, "
-            "not the loss annotation. No D1Cat colimit construction exists yet."
+            f"Descending preserved_dims sizes are "
+            f"{[len(step) for step in chain_preserved]}; finite saturation is "
+            f"{descent_saturates_finitely} and the empty intersection is "
+            f"{colimit_empties}. Empty preserved_dims is a legal D1Cat morphism. "
+            f"The forgotten_structure union is well defined "
+            f"({forgotten_union_well_defined}). T228 closes this chain with the "
+            "degenerate colimit and rules out nonempty surviving content."
         ),
     )
 
@@ -375,21 +385,22 @@ def d1cat_verdict() -> BoundaryVerdict:
             "Category laws (associativity, left/right identity) survive to "
             "arbitrary (countably infinite) site sets unconditionally; the proof "
             "is algebraic in functions and in the fixed 4-element dimension "
-            "universe. The SEPARATE colimit-closure question (transfinite chains, "
-            "T34 extension) is conditional: it needs a colimit construction that "
-            "does not yet exist, and the natural intersection limit empties."
+            "universe. T228 closes the named descending-chain edge: descent "
+            "saturates finitely and the legal colimit is content-free. General "
+            "D1Cat cocompleteness remains open."
         ),
         witnesses=(survival, colimit),
         boundary_line=(
             "The category itself is boundary-free. The boundary lies one level "
-            "up: completeness/cocompleteness (limits/colimits) of D1Cat at "
-            "transfinite depth is not established and the obvious limit object is "
-            "degenerate."
+            "up: T228 closes this descending-chain colimit in degenerate form and "
+            "rules out the desired content-bearing form, without establishing "
+            "general completeness or cocompleteness."
         ),
         guardrail_note=(
             "Do not over-read 'category survives' as 'D1Cat is complete at "
             "infinity'. Only the three category axioms are shown finiteness-"
-            "independent; colimit closure is an explicit open obstruction."
+            "independent; the named colimit chain is closed by T228, while "
+            "general cocompleteness remains open."
         ),
     )
 
@@ -677,8 +688,10 @@ def run_t222_analysis() -> T222Result:
         "restriction is the one place a coefficient-blind reuse silently "
         "produces a false global section. Any external paper that states a "
         "continuous-domain obstruction must carry the coefficient/transition "
-        "object (transition-aware Z2 / coefficient-aware H1); the D1Cat colimit "
-        "gap is a secondary, contained, structure-level open item."
+        "object through a genuine coefficient-aware H1 construction. T222's "
+        "single-overlap conflict is only a finite signed-CSP control (corrected "
+        "by T226). T228 separately closes the named D1Cat descending-chain edge "
+        "with a content-free colimit; general cocompleteness remains open."
     )
 
     summary = (

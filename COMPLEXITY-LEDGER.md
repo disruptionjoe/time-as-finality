@@ -13,8 +13,8 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 As of 2026-07-24, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T221. The referenced T189 test and result
-surfaces are absent from the checkout, so T189 and T222-T587 are not
+plus explicit placements for T190-T222. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T223-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -26,14 +26,14 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T188 and the available T190-T220 surfaces are now reconciled below. T189
+T139-T188 and the available T190-T222 surfaces are now reconciled below. T189
 remains a named artifact-availability gap rather than receiving an inferred
 status from claim-ledger summaries.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
 movement, or external-publication implication. Dedicated complexity-ledger
-reconciliation remains due for the available frontier from T222 onward.
+reconciliation remains due for the available frontier from T223 onward.
 
 ## Status Labels
 
@@ -140,11 +140,12 @@ reconciliation remains due for the available frontier from T222 onward.
 | [T219 C_flow / Record-Finality Integrated Guardrail](tests/T219-cflow-record-finality-integrated-guardrail.md) | `finite_witness` | The frozen LP/harmonic, two-path `C_flow`, relabeling, capacity, and record-policy fixtures exercised by the two declared test modules. | The integrated regression command runs direct finite arithmetic and T210's fixed-grid combinatorial solver, then checks the predeclared transport/record separations. | Passing 12 fixture tests protects current claim hygiene; it is not a general decision procedure, scalable optimizer, complexity placement, or physical-finality theorem. |
 | [T220 LossKernel Witness-Obligation Factorization Certificate](tests/T220-losskernel-obligation-factorization-certificate.md) | `finite_witness` | The declared finite canonical case family, its neighbor-signature fibers, pair probes, and one hidden-source escape control. | Exhaustive fiber-constancy and reconstruction checks show the canonical obligation factors through the neighbor-visible signature on the implemented family. | The general fiber criterion is elementary, but the repository certificate is finite-family and canonical-regime scoped; it does not prove arbitrary LossKernel factorization, prior-art separation, hardness, or scalability. |
 | [T221 Coherent-Section Functoriality Verdict](tests/T221-coherent-section-functoriality-verdict.md) | `theorem_backed` | Arbitrary finite binary same/different restriction systems whose admissible extensions only add constraints. | The proof refutes the covariant `FinSets` assignment by the explicit `1 -> 0` typing failure, then proves the contravariant restriction-of-solutions functor by subset inclusion, identity, and composition. | This is a directional categorical result only: it does not supply a covariant, dynamically non-trivial `FinSets` functor, derive PO1's `lambda*`, promote MTI, establish physical time, or make a scale/hardness claim. |
+| [T222 Finite-to-Infinite Boundary Theorem](tests/T222-finite-to-infinite-boundary-theorem.md) | `theorem_backed` | Countable signed-parity constraint systems, arbitrary countable site maps with a fixed four-dimension preservation universe, finite counterexamples embedded in larger ambients, and finite-cycle obstructions under unbounded acyclic extension. | Propositional compactness, algebraic associativity/identity, existential counterexample persistence, and finite-obstruction compactness carry the four declared countable/infinite verdicts; the executable windows are controls. T226/T228 correct the separate continuum-H1 and descending-colimit interpretations. | Theorem-backed status is limited to the declared countable/category/negative-persistence statements. T222's two-open parity conflict is not a genuine Čech-H1 class, the T228 colimit is legal but content-free, and no general continuum-cohomology, cocompleteness, physics, hardness, or scalable-algorithm result is earned. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T221 surfaces, no
+the available T190-T222 surfaces, no
 surveyed core branch currently earns:
 
 ```text
@@ -159,11 +160,12 @@ The honest current summary for the explicitly reconciled set is:
 
 ```text
 mixed computational status: finite witnesses, several polynomial finite
-classifiers, and eight narrowly theorem-backed placements. These are T45/T47's
+classifiers, and nine narrowly theorem-backed placements. These are T45/T47's
 elementary PO1 order properties, T110's finite-permutation obstruction, T191's
 definitionally restricted functoriality, T200/T201's objective-specific finite
 optimization arguments, T212's elementary projection-insufficiency implication,
-and T221's contravariant functoriality proof. None supplies a top-line temporal
-or physical theorem, a scalable general optimizer, or earned general hardness
-rhetoric.
+T221's contravariant functoriality proof, and T222's bounded countable/infinite
+boundary arguments. None supplies a top-line temporal or physical theorem, a
+general continuum result, a scalable general optimizer, or earned general
+hardness rhetoric.
 ```

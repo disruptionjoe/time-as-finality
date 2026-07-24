@@ -1,40 +1,35 @@
 schema_version: "2.0"
 owner_id: time-as-finality
-group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-24T08:09:58-05:00"
-run_ref: RUN-20260724-080958-time-as-finality
-bottom_line: "The F4 reference gate returned blocked_missing_registered_observable before enumeration. Exact repaired-S1 and Myrheim-Meyer sources exist, but no frozen public adapter maps arbitrary F4 posets into T126 control fields, n=6 lies outside registered calibration sizes, and no predeclared planted-control MM agreement band exists. TaF-2 remains separately blocked on its source-backed anomaly operator. No panel, claim, canon, or public posture moved."
-decision_default: "Do not enumerate or substitute a proxy. Reopen F4 only after an owner-governed pre-results adapter freezes the arbitrary-poset mapping, n=6 treatment, repaired-S1 interface, Myrheim-Meyer planted-control comparison, multi-observable agreement rule, and density matching."
+updated_at: "2026-07-24T18:44:01-05:00"
+run_ref: RUN-20260724-231035-time-as-finality
+bottom_line: "T222 is corrected and theorem-bounded; preserve its continuum/cocompleteness guardrails, then review T223. TaF-2/F4 gates remain."
+decision_default: "Review T223 from the corrected T222 boundary; preserve the exact TaF-2 and F4 gates."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Located and froze the exact repaired-S1/MM sources, then returned the predeclared missing-registered-observable block before F4 enumeration because the required arbitrary-candidate adapter and comparison bands are not owner-frozen."
-    movement_ref: "explorations/reversal-self-dual-reflector-F4-REGISTERED-OBSERVABLE-FREEZE-2026-07-22.md"
+    last_movement: "Corrected T222 from T226/T228 and classified its surviving infinite results as theorem-backed."
+    movement_ref: "tests/T222-finite-to-infinite-boundary-theorem.md; models/finite_to_infinite_boundary_theorem.py; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260724-231035-time-as-finality.md"
     steering_attention: watch
-    steering_prompt: "Keep TaF-2 blocked until its source-backed anomaly operator exists. Keep F4 blocked until a pre-results registered-observable adapter resolves its exact wake; do not enumerate, proxy, retune, or lift the TaF-3 broad-headline embargo."
+    steering_prompt: "Keep TaF-2/F4 blocked until exact operator/adapter wakes; do not proxy, retune, or lift the TaF-3 embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: taf2_operator_blocked_f4_registered_observable_adapter_blocked
-    evidence_ref: "LANES.yaml; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-PREDECLARED-SPEC-2026-07-22.md; explorations/reversal-self-dual-reflector-F4-REGISTERED-OBSERVABLE-FREEZE-2026-07-22.md"
-    summary: "TaF-2 cannot implement without its source-backed anomaly operator. F4 now also has an exact local block: its sources resolve, but the registered executable adapter and pre-results comparison bands needed by the frozen panel do not."
-    evaluated_at: "2026-07-22T21:01:00-05:00"
-    run_ref: RUN-20260722-204348-time-as-finality-progress
+    reason_code: t222_earned_corrections_and_theorem_status_reconciled
+    evidence_ref: "tests/T222-finite-to-infinite-boundary-theorem.md; tests/T226-coefficient-aware-sheaf-h1-continuum.md; tests/T228-d1cat-transfinite-colimit-decision.md; results/finite-to-infinite-boundary-theorem-v0.1-results.md; COMPLEXITY-LEDGER.md"
+    summary: "T222 keeps bounded infinite results; T226/T228 correct its H1 and D1Cat colimit interpretations."
+    evaluated_at: "2026-07-24T18:44:01-05:00"
+    run_ref: RUN-20260724-231035-time-as-finality
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Froze exact registered sources and converted an ambiguous implementation step into a typed pre-results block with a complete adapter wake, without running the panel."
-    scope_position: "TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
+    progress_delta: "Corrected T222's H1/colimit readings, added guards, regenerated results, and extended ledger coverage through T222."
+    scope_position: "T222 is corrected and computationally classified; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
     trend_24h: up
     confidence: high
-    recommendation: "Prepare the exact pre-results F4 adapter only when owner-local evidence justifies its construction choices; otherwise preserve both current blocks."
+    recommendation: "Preserve gates; review T223 with corrected T222."
     findings:
-      - "The causal-past retraction pi induces an S4 interior operator: its faithful (pi-saturated) and orientation-faithful (pi-stable, int(A) = A cap pi^{-1}(A)) interiors both satisfy all four Kuratowski axioms on the frozen T19 fixture."
-      - "The gate has teeth: pi's raw set-image readings are not interior operators (direct image fails K1 top and K4 meet-preservation; preimage fails K2 contractivity), so the FAIL branch was reachable and PASS is a computed result."
-      - "The interior on the excluded future subspace is the degenerate indiscrete modality (faithful to T19); the paper must place substantive S4 content on the full causal order and hold the broad-headline embargo pending an all-finite-graphs quantifier."
-      - "The operator-grade partial-information lift remains a named reopener for the parked T586 line, but it no longer blocks first-class TaF-2 prediction work or native hardening."
-      - "The accepted strategic reprioritization promotes the TaF-2 prediction and native hardening while retaining source-law work only as a bounded own-absorber check feeding Dynamic Unity."
-      - "The TaF-2 specification treats the record charge and reflection/Pin+ anomaly as distinct constructions until an explicit noncircular bridge is supplied."
-      - "The F4 family label is explicitly separated from the repository's unrelated Theorem F4, preventing a name collision from becoming evidence."
+      - "T222's two-open transition-aware construction is a direct signed-CSP conflict, not a genuine Čech-H1 class; T226 relocates the class to a cyclic annular nerve."
+      - "The fixed four-element D1 preservation universe reaches empty after four finite drops; empty preservation is legal and T228 closes the named chain with a content-free colimit."
+      - "The remaining T222 theorem-backed content is bounded to compactness/algebraic/existential arguments; the executable finite windows are controls rather than a scalable continuum procedure."
     options:
       - id: A
         label: "Implement frozen TaF-2 gate"
@@ -64,14 +59,14 @@ lanes:
     light: green
     reason_code: t221_directional_functoriality_verdict_reconciled
     evidence_ref: "COMPLEXITY-LEDGER.md; tests/T221-coherent-section-functoriality-verdict.md; results/T221-coherent-section-functoriality-verdict-v0.1-results.md"
-    summary: "T221 is theorem-backed only for the contravariant restriction-of-solutions functor; it does not restore covariant forward dynamics."
+    summary: "T221 proves only the contravariant solution functor; covariant forward dynamics remain absent."
     evaluated_at: "2026-07-24T08:09:58-05:00"
     run_ref: RUN-20260724-080958-time-as-finality
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
     progress_delta: "Added T221's directional theorem-backed row and advanced the available computational-status frontier to T222."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve both science gates; continue ledger review at T222."
+    recommendation: "Preserve both science gates; continue ledger review at T223."
     findings:
       - "T221 proves a contravariant `FinSets` functor under monotone constraint accumulation and refutes the covariant reading by a `1 -> 0` typing failure."
       - "The categorical result does not supply covariant forward dynamics, PO1's lambda-star, or an MTI promotion."
@@ -102,4 +97,4 @@ lanes:
       integrity_repairs: 1
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs Joe; science remains gated, and the next bounded ledger frontier is T222."
+    attention_pointer: "Nothing needs Joe; science remains gated, and the next bounded ledger frontier is T223."

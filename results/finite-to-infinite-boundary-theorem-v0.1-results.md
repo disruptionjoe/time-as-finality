@@ -10,8 +10,8 @@ Counts: survives = 3, conditional = 1, strictly_finite = 0. All witnesses hold =
 
 | Result | Source tests | Verdict | Boundary line |
 | --- | --- | --- | --- |
-| CSP-PO1 (Signed-graph 2-colorability gluing obstruction (PO1-as-CSP)) | T39, T59 | **conditional** | Boundary sits at the continuum coefficient layer, not at countability. Countable: survives. Continuous: conditional on carrying transition data; the obstruction object is sheaf H1 with the correct coefficient group, not blind same/different CSP. |
-| D1Cat (Typed transport category laws (associativity / identity)) | T41, T34 | **survives** | The category itself is boundary-free. The boundary lies one level up: completeness/cocompleteness (limits/colimits) of D1Cat at transfinite depth is not established and the obvious limit object is degenerate. |
+| CSP-PO1 (Signed-graph 2-colorability gluing obstruction (PO1-as-CSP)) | T39, T59 | **conditional** | Boundary sits at the continuum coefficient layer, not at countability. Countable: survives. Continuous: conditional on carrying transition data through coefficient-aware H1 on a cyclic nerve and its refinement/derived bridge; T222's two-open signed-CSP control is not itself that object. |
+| D1Cat (Typed transport category laws (associativity / identity)) | T41, T34 | **survives** | The category itself is boundary-free. The boundary lies one level up: T228 closes this descending-chain colimit in degenerate form and rules out the desired content-bearing form, without establishing general completeness or cocompleteness. |
 | PO1-NonFunctor (PO1 admissibility is not a Boolean functor on D1Cat) | T41, T34 | **survives** | No boundary on the negative result: non-functoriality is monotone under category extension. The open frontier is the positive direction (repaired lax/indexed functor) for infinite systems. |
 | HEF (Holonic emergence / cross-level parity obstruction) | T40, T59 | **survives** | No depth boundary for the obstruction phenomenon: finite-cycle obstructions are compactness-stable. The boundary that does exist is the same continuum-coefficient boundary as CSP-PO1, inherited via the shared signed-graph parity engine. |
 
@@ -23,21 +23,21 @@ Survival hypothesis: Survives to countably infinite constraint graphs unconditio
 
 - **infinite_survival** [holds]: Countably infinite signed CSP: satisfiability decided by finite sub-graphs via propositional compactness (de Bruijn-Erdos).
   - Growing prefixes of an all-same infinite path stay satisfiable (windows n=3,5,8,20 -> [True, True, True, True]); a planted finite negative triangle is detected in every prefix containing it (unsat windows -> [False, False, False, False]). Compactness lifts the finite verdict to the countable limit.
-- **continuum_obstruction** [holds]: Continuous orientation data (Mobius): coefficient-blind scalar encoding reports a false global section; parity is not a generic continuum detector.
-  - Transition-aware Z2 encoding (same + different) is a direct parity conflict -> obstruction detected (True). Coefficient-blind scalar encoding (same + same) is satisfiable (True) despite monodromy -1: a false global section. Cylinder control satisfiable in both (True). Inherited from T59.
+- **continuum_obstruction** [holds]: T59 continuum-boundary control: coefficient forgetting changes the signed-CSP verdict, but the two-open aware control is a direct parity conflict rather than a genuine Cech-H1 class.
+  - Transition-aware Z2 encoding (same + different) is a direct parity conflict -> obstruction detected (True). Coefficient-blind scalar encoding (same + same) is satisfiable (True) despite monodromy -1: a false global section. Cylinder control satisfiable in both (True). This is the T59 finite control; T226 supplies the corrected annular H1 object.
 
-Guardrail: No general Cech/sheaf-cohomology theorem is claimed from the finite Mobius witness. The continuum statement is a counterexample plus a stated replacement target (coefficient-aware H1).
+Guardrail: No general Cech/sheaf-cohomology theorem is claimed from this finite control. T226 proves that the single-overlap aware conflict has trivial H1 and relocates the genuine class to an annular cyclic nerve.
 
 ### D1Cat — survives
 
-Survival hypothesis: Category laws (associativity, left/right identity) survive to arbitrary (countably infinite) site sets unconditionally; the proof is algebraic in functions and in the fixed 4-element dimension universe. The SEPARATE colimit-closure question (transfinite chains, T34 extension) is conditional: it needs a colimit construction that does not yet exist, and the natural intersection limit empties.
+Survival hypothesis: Category laws (associativity, left/right identity) survive to arbitrary (countably infinite) site sets unconditionally; the proof is algebraic in functions and in the fixed 4-element dimension universe. T228 closes the named descending-chain edge: descent saturates finitely and the legal colimit is content-free. General D1Cat cocompleteness remains open.
 
 - **infinite_survival** [holds]: Category laws hold for countably infinite site sets: site_map composition is function composition (associative); preserved_dims is intersection in the fixed 4-element D1_DIMENSIONS universe.
   - Index-shift site maps on N: associativity True, left unit True, right unit True over 1000 coordinates. preserved_dims intersection over all 16 subsets of the fixed universe: associative True, identity True. Site cardinality never enters the proof.
-- **infinite_obstruction** [holds]: Colimit of a transfinite strictly-descending chain: preserved_dims intersection empties; the colimit morphism preserves no dimension, outside the profile axioms every finite D1 object satisfies.
-  - Descending preserved_dims chain reaches the empty intersection (True). The accumulated forgotten_structure colimit remains a well-defined set union (True), so the failure is specifically the empty-preservation limit object, not the loss annotation. No D1Cat colimit construction exists yet.
+- **infinite_obstruction** [holds]: The named descending chain reaches empty preserved_dims after four finite drops. Empty preservation is legal, so a content-free colimit exists; only the desired content-bearing form is absent.
+  - Descending preserved_dims sizes are [4, 3, 2, 1, 0]; finite saturation is True and the empty intersection is True. Empty preserved_dims is a legal D1Cat morphism. The forgotten_structure union is well defined (True). T228 closes this chain with the degenerate colimit and rules out nonempty surviving content.
 
-Guardrail: Do not over-read 'category survives' as 'D1Cat is complete at infinity'. Only the three category axioms are shown finiteness-independent; colimit closure is an explicit open obstruction.
+Guardrail: Do not over-read 'category survives' as 'D1Cat is complete at infinity'. Only the three category axioms are shown finiteness-independent; the named colimit chain is closed by T228, while general cocompleteness remains open.
 
 ### PO1-NonFunctor — survives
 
@@ -63,4 +63,4 @@ Guardrail: Survival is for the discrete (countable) cross-level CSP. A genuinely
 
 ## Most Load-Bearing Finite Restriction
 
-CSP-PO1 at the continuum. The signed-graph parity obstruction is the shared engine under HEF and the holonic results, and its continuum restriction is the one place a coefficient-blind reuse silently produces a false global section. Any external paper that states a continuous-domain obstruction must carry the coefficient/transition object (transition-aware Z2 / coefficient-aware H1); the D1Cat colimit gap is a secondary, contained, structure-level open item.
+CSP-PO1 at the continuum. The signed-graph parity obstruction is the shared engine under HEF and the holonic results, and its continuum restriction is the one place a coefficient-blind reuse silently produces a false global section. Any external paper that states a continuous-domain obstruction must carry the coefficient/transition object through a genuine coefficient-aware H1 construction. T222's single-overlap conflict is only a finite signed-CSP control (corrected by T226). T228 separately closes the named D1Cat descending-chain edge with a content-free colimit; general cocompleteness remains open.

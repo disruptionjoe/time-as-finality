@@ -54,6 +54,8 @@ class CSPPO1BoundaryTests(unittest.TestCase):
 
     def test_guardrail_blocks_cohomology_overreach(self) -> None:
         self.assertIn("Cech", self.v.guardrail_note)
+        self.assertIn("single-overlap", self.v.guardrail_note)
+        self.assertIn("annular", self.v.guardrail_note)
 
 
 class D1CatBoundaryTests(unittest.TestCase):
@@ -67,13 +69,17 @@ class D1CatBoundaryTests(unittest.TestCase):
         w = next(x for x in self.v.witnesses if x.side == "infinite_survival")
         self.assertTrue(w.holds)
 
-    def test_colimit_obstruction_is_explicit(self) -> None:
+    def test_colimit_correction_is_explicit(self) -> None:
         w = next(x for x in self.v.witnesses if x.side == "infinite_obstruction")
         self.assertTrue(w.holds)
         self.assertIn("empt", w.detail.lower())
+        self.assertIn("legal", w.detail.lower())
+        self.assertIn("finite saturation", w.detail.lower())
+        self.assertNotIn("outside the profile axioms", w.description.lower())
 
     def test_guard_blocks_completeness_overread(self) -> None:
         self.assertIn("colimit", self.v.guardrail_note.lower())
+        self.assertIn("general cocompleteness remains open", self.v.guardrail_note.lower())
 
 
 class PO1NonFunctorBoundaryTests(unittest.TestCase):

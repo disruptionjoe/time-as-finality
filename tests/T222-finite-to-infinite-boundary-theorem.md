@@ -2,6 +2,9 @@
 
 **Status:** implemented — per-result verdicts with two-sided witnesses; pytest
 green (`24 passed`)
+**Earned corrections:** T226 replaces the single-overlap parity interpretation
+with a genuine annular coefficient-aware Čech-H1 object; T228 closes the named
+D1Cat descending-chain edge with a legal content-free colimit.
 **Builds on:** [T59](T59-finite-to-infinite-boundary-audit.md) (audit frame and
 Mobius template), [T39](T39-csp-satisfiability-reframing.md),
 [T40](T40-holarchy-lab.md), [T41](T41-typed-transport-category.md)
@@ -45,19 +48,21 @@ result has a dedicated verdict function that constructs both sides:
 
 | Result | Survival witness | Other-side witness |
 | --- | --- | --- |
-| CSP-PO1 | Compactness over countable graphs: growing prefixes of an all-same infinite path stay satisfiable; a planted finite negative triangle is detected in every prefix. de Bruijn–Erdős lifts the finite verdict. | Continuum: T59 coefficient-blind Mobius encoding (same + same) reports a **false global section** despite monodromy −1. |
-| D1Cat | Category laws on a countably-infinite (index-shift) site map: associativity and unit laws hold at every coordinate; `preserved_dims` intersection is exhaustively associative/identity in the fixed 4-element universe. | Colimit of a transfinite strictly-descending chain: `preserved_dims` intersection empties; the colimit morphism preserves no dimension — outside the profile axioms every finite D1 object satisfies. |
+| CSP-PO1 | Compactness over countable graphs: growing prefixes of an all-same infinite path stay satisfiable; a planted finite negative triangle is detected in every prefix. de Bruijn–Erdős lifts the finite verdict. | Continuum boundary: T222's T59 two-open signed-CSP control changes verdict when coefficient data are forgotten, but T226 proves the aware single-overlap conflict is not a genuine H1 class and supplies the annular cyclic-nerve correction. |
+| D1Cat | Category laws on a countably-infinite (index-shift) site map: associativity and unit laws hold at every coordinate; `preserved_dims` intersection is exhaustively associative/identity in the fixed 4-element universe. | T228 correction: descent reaches empty preservation after at most four finite drops; empty preservation is legal, the chain has a content-free colimit, and only the desired content-bearing form is absent. |
 | PO1 Non-Functor | Existential monotonicity: the finite `(False, False, True)` functor-failure triple embeds unchanged into any infinite-site ambient because PO1 is endpoint-pair-local. | Scope guard (passing note): only the **negative** result persists; a repaired lax/indexed functor at infinity is a separate open question. |
 | HEF | Compactness over depth (König): the planted cross-level negative triangle stays obstructed at depths 0…500; unbounded acyclic levels never dissolve it. | False-dissolution guard: the only way depth "dissolves" the obstruction is by dropping the −1 cross-level sign — the same coefficient-blind move T59 flags. |
 
 ## The Mobius Template (Honesty Guard)
 
 T59's Mobius result is the template for testing continuum survival without
-self-deception: a **coefficient-blind scalar encoding** can give a false global
-section. T222 reuses that exact witness for CSP-PO1 and re-applies its discipline
-to HEF (the "infinite-path limit dissolves the obstruction" intuition is shown to
-be the same false-section move, not a real limit effect). No result is allowed to
-"survive to the continuum" by forgetting transition/coefficient data.
+self-deception: a **coefficient-blind scalar encoding** can report a section
+after the transition sign is forgotten. T222 reuses that finite signed-CSP
+control and re-applies its discipline to HEF. T226 later proves that the
+two-open aware conflict is not itself a Čech-H1 class: a genuine H1 obstruction
+requires a cyclic nerve. No result is allowed to "survive to the continuum" by
+forgetting transition/coefficient data or by relabeling a direct CSP conflict
+as cohomology.
 
 ## Success Criteria
 
@@ -80,8 +85,8 @@ be the same false-section move, not a real limit effect). No result is allowed t
   (the T59 false-section trap).
 - A general Čech / sheaf-cohomology theorem is stated from a finite toy witness
   (explicit ROADMAP language guardrail).
-- The D1Cat colimit obstruction is hidden inside a blanket "category survives"
-  claim, over-reading the three axioms as cocompleteness.
+- The legal content-free D1Cat colimit is mistaken for an absent colimit, or
+  the one closed descending-chain case is over-read as general cocompleteness.
 - The PO1 non-functor "survival" is inverted to assert a positive functor at
   infinity.
 
@@ -98,20 +103,21 @@ the compactness lifts are existence arguments, not complexity claims.
 
 | Result | Verdict | Boundary |
 | --- | --- | --- |
-| CSP-PO1 | **conditional** | Survives countable scale unconditionally (compactness). Continuum: conditional on carrying transition data; coefficient-blind reuse is strictly finite and produces false global sections. |
-| D1Cat (category laws) | **survives** | Boundary-free at the category level; the separate colimit-closure at transfinite depth is an explicit open obstruction (intersection empties). |
+| CSP-PO1 | **conditional** | Survives countable scale unconditionally (compactness). Continuum: conditional on a genuine coefficient-aware H1 object and refinement/derived bridge; the T222 two-open control is only a finite signed-CSP discriminator. |
+| D1Cat (category laws) | **survives** | Boundary-free at the category-law level. T228 closes the named descending-chain edge with a legal content-free colimit and rules out the desired content-bearing form; general cocompleteness remains open. |
 | PO1 Non-Functor | **survives** | No boundary on the negative result; monotone under category extension. Positive functor at infinity remains open. |
 | HEF | **survives** | Survives infinite nesting depth under compactness; inherits the CSP-PO1 continuum condition only if the holarchy becomes genuinely continuous. |
 
 The single boundary line: **the continuum coefficient layer of the shared
 signed-graph parity engine. Countability is never the obstruction.**
 
-## Contribution Needed
+## Contribution Status
 
-- Build the coefficient-aware sheaf-H1 replacement for continuous orientation
-  data (the recommended-next from T59) and compare its verdict against PO1
-  admissibility metadata.
-- Construct a D1Cat colimit (or prove none of the desired form exists) so the
-  transfinite-chain edge moves from `conditional` to a verdict.
+- **Advanced by T226/T231/T236/T241/T246:** the coefficient-aware H1 object,
+  refinement stability, bounded cofinality, and declared annular-tower bridge
+  now exist; the all-open-cover continuum statement remains bounded by those
+  later artifacts.
+- **Closed by T228:** the named D1Cat descending-chain colimit exists in
+  content-free form; the desired content-bearing form does not.
 - Decide the positive direction for PO1 at infinity: does a repaired lax /
   indexed functor exist for infinite-system morphisms?

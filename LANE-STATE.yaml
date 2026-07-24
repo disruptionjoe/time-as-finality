@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-22T21:01:00-05:00"
-run_ref: RUN-20260722-204348-time-as-finality-progress
+updated_at: "2026-07-23T22:37:43-05:00"
+run_ref: RUN-20260723-214037-time-as-finality-stewardship
 bottom_line: "The F4 reference gate returned blocked_missing_registered_observable before enumeration. Exact repaired-S1 and Myrheim-Meyer sources exist, but no frozen public adapter maps arbitrary F4 posets into T126 control fields, n=6 lies outside registered calibration sizes, and no predeclared planted-control MM agreement band exists. TaF-2 remains separately blocked on its source-backed anomaly operator. No panel, claim, canon, or public posture moved."
 decision_default: "Do not enumerate or substitute a proxy. Reopen F4 only after an owner-governed pre-results adapter freezes the arbitrary-poset mapping, n=6 treatment, repaired-S1 interface, Myrheim-Meyer planted-control comparison, multi-observable agreement rule, and density matching."
 needs_joe: false
@@ -56,27 +56,25 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Reconciled computational status for T203-T218 and verified the two executable arithmetic/flow suites with 12 passing tests."
-    movement_ref: "COMPLEXITY-LEDGER.md; agent-runs/RUN-20260722-214018-complexity-ledger-t203-t218.md"
+    last_movement: "Reconciled T219 computational status and removed stale hourly eligibility from the source-blocked TaF-2 implementation."
+    movement_ref: "COMPLEXITY-LEDGER.md; steward/research-portfolio.json; agent-runs/RUN-20260723-214037-time-as-finality-stewardship.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: complexity_ledger_t203_t218_reconciled
-    evidence_ref: "COMPLEXITY-LEDGER.md; agent-runs/RUN-20260722-214018-complexity-ledger-t203-t218.md"
-    summary: "The computational-status frontier now covers the available surfaces through T218, preserving T189 as a source gap and preventing the finite C_flow grid solver from being described as scalable."
-    evaluated_at: "2026-07-22T21:44:00-05:00"
-    run_ref: RUN-20260722-214018-time-as-finality-direct
+    reason_code: t219_status_and_taf2_eligibility_reconciled
+    evidence_ref: "COMPLEXITY-LEDGER.md; steward/research-portfolio.json; explorations/finality-anomaly-cancellation-PREDECLARED-SPEC-2026-07-22.md"
+    summary: "T219 is now fixture-scoped in the ledger, and TaF-2 no longer advertises hourly implementation before its operator wake."
+    evaluated_at: "2026-07-23T22:37:43-05:00"
+    run_ref: RUN-20260723-214037-time-as-finality-stewardship
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Added sixteen evidence-backed computational-status rows and verified 12 executable controls without changing claims, canon, or scientific Lane state."
+    progress_delta: "Added T219's fixture-scoped guardrail row and aligned TaF-2 eligibility with its existing source-backed operator prerequisite."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve the scientific blocks and continue computational-status review at T219 only as bounded stewardship capacity permits."
+    recommendation: "Preserve both science gates; continue ledger review at T220."
     findings:
-      - "T195, T198, and T202 are finite proxy/control/counterexample surfaces; none earns arbitrary-DAG or continuum language."
-      - "T200 and T201 earn elementary theorem-backed placements for their declared optimization objectives, while T196, T197, and T199 are non-computational audits or synthesis."
-      - "T209 is a polynomial-style arithmetic gate over declared finite encodings; T210 is a combinatorial fixed-grid finite solver, not a scalable optimizer."
-      - "T212 earns only the elementary same-projection/different-target insufficiency implication; T203-T218 otherwise separate finite fixtures from non-computational audits and packets."
+      - "T219 integrates 12 finite regression checks but inherits T210's fixed-grid combinatorial ceiling."
+      - "A frozen TaF-2 specification is not implementation-ready until a source-backed finite anomaly operator is frozen."
       - "The missing T189 source pair still blocks a contiguous frontier beyond T188."
     options:
       - id: A
@@ -97,11 +95,11 @@ lanes:
         description: "Stop only if Joe changes owner control state."
     decision_default: "Continue normal cycles."
     needs_joe: false
-    drift_verdict: repaired_computational_status_lag
+    drift_verdict: repaired_t219_status_and_taf2_eligibility
     action_counts:
       mail: 0
-      reconciled: 16
+      reconciled: 2
       integrity_repairs: 1
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs Joe; scientific work remains bounded by the TaF-2 operator prerequisite and F4 adapter block, while ledger stewardship continues at T219."
+    attention_pointer: "Nothing needs Joe; science remains gated, and the next bounded ledger frontier is T220."

@@ -47,9 +47,9 @@
       "internal_work_items": [
         {
           "id": "TAF-ANOMALY-CANCELLATION-PREDICTION",
-          "state": "SPEC_FROZEN_READY_FOR_IMPLEMENTATION",
+          "state": "BLOCKED_MISSING_SOURCE_BACKED_ANOMALY_OPERATOR",
           "priority_score": 24,
-          "hourly_eligible": true,
+          "hourly_eligible": false,
           "activation": "The 2026-07-22 strategic reprioritization promotes TaF-2 as a first-class Lane-1 prediction route. Its finite reflection-anomaly specification is frozen before results.",
           "result": "Specification only: a 1+1-dimensional finite U(1)/reflection fixture, Z2 record charge, fixed-data separation control, threshold-restatement kill, reflection-removal control, and exact blocked/negative outcomes are predeclared. No anomaly has been computed.",
           "next_swing": "Implement only after freezing a source-backed finite lattice operator construction in the test document. Execute the declared L in {4,6,8}, flux, reflection, and holder-count grid without retuning, then return exactly one predeclared outcome.",

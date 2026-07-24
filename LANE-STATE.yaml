@@ -2,8 +2,8 @@ schema_version: "2.0"
 owner_id: time-as-finality
 group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-24T00:00:21-05:00"
-run_ref: RUN-20260723-231008-time-as-finality
+updated_at: "2026-07-24T08:09:58-05:00"
+run_ref: RUN-20260724-080958-time-as-finality
 bottom_line: "The F4 reference gate returned blocked_missing_registered_observable before enumeration. Exact repaired-S1 and Myrheim-Meyer sources exist, but no frozen public adapter maps arbitrary F4 posets into T126 control fields, n=6 lies outside registered calibration sizes, and no predeclared planted-control MM agreement band exists. TaF-2 remains separately blocked on its source-backed anomaly operator. No panel, claim, canon, or public posture moved."
 decision_default: "Do not enumerate or substitute a proxy. Reopen F4 only after an owner-governed pre-results adapter freezes the arbitrary-poset mapping, n=6 treatment, repaired-S1 interface, Myrheim-Meyer planted-control comparison, multi-observable agreement rule, and density matching."
 needs_joe: false
@@ -56,25 +56,25 @@ lanes:
     needs_joe: false
   - lane_id: A
     work_status: moving
-    last_movement: "Classified T220 as a finite-family factorization certificate and advanced the ledger frontier."
-    movement_ref: "COMPLEXITY-LEDGER.md; tests/T220-losskernel-obligation-factorization-certificate.md; agent-runs/RUN-20260723-231008-time-as-finality.md"
+    last_movement: "Classified T221's directional categorical verdict and advanced the available ledger frontier."
+    movement_ref: "COMPLEXITY-LEDGER.md; tests/T221-coherent-section-functoriality-verdict.md; agent-runs/RUN-20260724-080958-time-as-finality.md"
     steering_attention: none
     steering_prompt: "none"
     steering_ref: "AGENTS.md; LANES.yaml"
     light: green
-    reason_code: t220_finite_factorization_certificate_reconciled
-    evidence_ref: "COMPLEXITY-LEDGER.md; tests/T220-losskernel-obligation-factorization-certificate.md; results/losskernel-obligation-factorization-v0.1-results.md"
-    summary: "T220 is fixture-scoped in the ledger; its general fiber criterion does not broaden the finite certificate."
-    evaluated_at: "2026-07-24T00:00:21-05:00"
-    run_ref: RUN-20260723-231008-time-as-finality
+    reason_code: t221_directional_functoriality_verdict_reconciled
+    evidence_ref: "COMPLEXITY-LEDGER.md; tests/T221-coherent-section-functoriality-verdict.md; results/T221-coherent-section-functoriality-verdict-v0.1-results.md"
+    summary: "T221 is theorem-backed only for the contravariant restriction-of-solutions functor; it does not restore covariant forward dynamics."
+    evaluated_at: "2026-07-24T08:09:58-05:00"
+    run_ref: RUN-20260724-080958-time-as-finality
     objective: "Keep Time as Finality viable and trustworthy through integrated stewardship."
-    progress_delta: "Added T220's finite-witness row and advanced the available computational-status frontier to T221."
+    progress_delta: "Added T221's directional theorem-backed row and advanced the available computational-status frontier to T222."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve both science gates; continue ledger review at T221."
+    recommendation: "Preserve both science gates; continue ledger review at T222."
     findings:
-      - "T220's implemented certificate is exhaustive only over its declared canonical finite case family."
-      - "The general fiber-constancy criterion does not upgrade the repository artifact beyond finite_witness."
+      - "T221 proves a contravariant `FinSets` functor under monotone constraint accumulation and refutes the covariant reading by a `1 -> 0` typing failure."
+      - "The categorical result does not supply covariant forward dynamics, PO1's lambda-star, or an MTI promotion."
       - "The missing T189 source pair still blocks a contiguous frontier beyond T188."
     options:
       - id: A
@@ -102,4 +102,4 @@ lanes:
       integrity_repairs: 1
       seeds_routed: 0
       escalations: 0
-    attention_pointer: "Nothing needs Joe; science remains gated, and the next bounded ledger frontier is T221."
+    attention_pointer: "Nothing needs Joe; science remains gated, and the next bounded ledger frontier is T222."

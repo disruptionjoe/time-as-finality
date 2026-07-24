@@ -11,10 +11,10 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 ## Coverage / Staleness
 
-As of 2026-07-23, the test registry in `TESTS.md` reaches T587, while this
+As of 2026-07-24, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T220. The referenced T189 test and result
-surfaces are absent from the checkout, so T189 and T221-T587 are not
+plus explicit placements for T190-T221. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T222-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -33,7 +33,7 @@ status from claim-ledger summaries.
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
 movement, or external-publication implication. Dedicated complexity-ledger
-reconciliation remains due for the available frontier from T221 onward.
+reconciliation remains due for the available frontier from T222 onward.
 
 ## Status Labels
 
@@ -139,11 +139,12 @@ reconciliation remains due for the available frontier from T221 onward.
 | [T218 C_flow / Record-Finality Reviewer Packet](tests/T218-cflow-record-finality-reviewer-packet.md) | `non_computational` | A bounded reviewer-facing synthesis of T210-T217. | Prose export audit foregrounds projection insufficiency, native-flow absorption, and separate record typing. | The packet makes no continuum, arbitrary-physics, scalable-algorithm, or hardness claim. |
 | [T219 C_flow / Record-Finality Integrated Guardrail](tests/T219-cflow-record-finality-integrated-guardrail.md) | `finite_witness` | The frozen LP/harmonic, two-path `C_flow`, relabeling, capacity, and record-policy fixtures exercised by the two declared test modules. | The integrated regression command runs direct finite arithmetic and T210's fixed-grid combinatorial solver, then checks the predeclared transport/record separations. | Passing 12 fixture tests protects current claim hygiene; it is not a general decision procedure, scalable optimizer, complexity placement, or physical-finality theorem. |
 | [T220 LossKernel Witness-Obligation Factorization Certificate](tests/T220-losskernel-obligation-factorization-certificate.md) | `finite_witness` | The declared finite canonical case family, its neighbor-signature fibers, pair probes, and one hidden-source escape control. | Exhaustive fiber-constancy and reconstruction checks show the canonical obligation factors through the neighbor-visible signature on the implemented family. | The general fiber criterion is elementary, but the repository certificate is finite-family and canonical-regime scoped; it does not prove arbitrary LossKernel factorization, prior-art separation, hardness, or scalability. |
+| [T221 Coherent-Section Functoriality Verdict](tests/T221-coherent-section-functoriality-verdict.md) | `theorem_backed` | Arbitrary finite binary same/different restriction systems whose admissible extensions only add constraints. | The proof refutes the covariant `FinSets` assignment by the explicit `1 -> 0` typing failure, then proves the contravariant restriction-of-solutions functor by subset inclusion, identity, and composition. | This is a directional categorical result only: it does not supply a covariant, dynamically non-trivial `FinSets` functor, derive PO1's `lambda*`, promote MTI, establish physical time, or make a scale/hardness claim. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T220 surfaces, no
+the available T190-T221 surfaces, no
 surveyed core branch currently earns:
 
 ```text
@@ -158,10 +159,11 @@ The honest current summary for the explicitly reconciled set is:
 
 ```text
 mixed computational status: finite witnesses, several polynomial finite
-classifiers, and seven narrowly theorem-backed placements. These are T45/T47's
+classifiers, and eight narrowly theorem-backed placements. These are T45/T47's
 elementary PO1 order properties, T110's finite-permutation obstruction, T191's
 definitionally restricted functoriality, T200/T201's objective-specific finite
-optimization arguments, and T212's elementary projection-insufficiency
-implication. None supplies a top-line temporal or physical theorem, a scalable
-general optimizer, or earned general hardness rhetoric.
+optimization arguments, T212's elementary projection-insufficiency implication,
+and T221's contravariant functoriality proof. None supplies a top-line temporal
+or physical theorem, a scalable general optimizer, or earned general hardness
+rhetoric.
 ```

@@ -1,5 +1,5 @@
 lane_contract_version: '1.0'
-manifest_revision: 1
+manifest_revision: 2
 owner:
   owner_id: time-as-finality
   display_name: Time as Finality
@@ -139,3 +139,11 @@ lanes:
 special_rules:
 - A future Lane 2 requires a later owner-governed decision that an independently steerable mathematical
   operation has emerged.
+extensions:
+  operating_architecture:
+    contract_version: "1.0"
+    operating_contract_refs: ["Method - Research Program Guidelines.md"]
+    work_state_refs: ["FORMALISM.md", "ROADMAP.md", "TESTS.md", "steward/research-portfolio.json"]
+    channel_contract_refs: []
+    lane_a_portfolio_refs: ["LANE-STATE.yaml"]
+    return_contract_refs: ["Method - Research Program Guidelines.md"]

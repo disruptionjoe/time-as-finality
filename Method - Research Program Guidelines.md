@@ -648,3 +648,14 @@ known-physics toy model, or cross-domain transfer theorem.
 A witness should be demoted whenever a mature absorber supplies the relevant
 state completion, theorem, comparison repair, threshold account, or
 representation/gauge correction under the same declared audit context.
+
+## Operating path and return
+
+The current research object moves through framing, formalization, computation
+or test, interpretation, and harden-or-demote disposition. Formal, model,
+empirical, collision, and paper treatments use their own evidence standards
+while remaining subordinate to the same claim and absorber discipline.
+
+Lane A composes the claim, complexity, and roadmap ledgers by pointer. Each
+result returns with typed comparison, evidence grade, live absorber, and next
+discriminating target; a clean artifact alone is not a research verdict.

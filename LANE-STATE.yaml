@@ -1,35 +1,35 @@
 schema_version: "2.0"
 owner_id: time-as-finality
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-25T08:15:00-05:00"
-run_ref: RUN-20260725-080909-time-as-finality-progress
-bottom_line: "T225's fixed host-prediction evidence is now separated from its polynomial classifier; preserve TaF-2/F4 gates."
-decision_default: "Preserve the exact TaF-2 and F4 gates; select the next bounded computational-status frontier only when nonduplicative."
+updated_at: "2026-07-25T13:08:59-05:00"
+run_ref: RUN-20260725-130859-time-as-finality-progress
+bottom_line: "T226's finite coefficient-aware obstruction is now classified; preserve its continuum and TaF-2/F4 gates."
+decision_default: "Preserve the exact continuum, TaF-2, and F4 gates; select the next bounded computational-status frontier only when nonduplicative."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Separated T225's finite binary-corpus host prediction from its polynomial learned-rule classifier."
-    movement_ref: "tests/T225-predictive-absorption-functor.md; results/predictive-absorption/T225-predictive-absorption-functor-v0.1.json; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260725-080909-time-as-finality-progress.md"
+    last_movement: "Classified T226's coefficient-aware finite H1 fixture without inflating it into continuum cohomology."
+    movement_ref: "tests/T226-coefficient-aware-sheaf-h1-continuum.md; results/coefficient-sheaf-h1/T226-coefficient-sheaf-h1-v0.1.json; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260725-130859-time-as-finality-progress.md"
     steering_attention: watch
-    steering_prompt: "Keep TaF-2/F4 blocked until exact operator/adapter wakes; do not proxy, retune, or lift the TaF-3 embargo."
+    steering_prompt: "Keep T226's continuum bridge and TaF-2/F4 blocked until their exact wakes; do not proxy, retune, or lift the TaF-3 embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: t225_finite_host_prediction_poly_classifier_status_reconciled
-    evidence_ref: "tests/T225-predictive-absorption-functor.md; tests/test_predictive_absorption_functor.py; results/predictive-absorption/T225-predictive-absorption-functor-v0.1.json; COMPLEXITY-LEDGER.md"
-    summary: "T225's two-host prediction is finite evidence; only its encoded-corpus learned rule earns polynomial-classifier status."
-    evaluated_at: "2026-07-25T08:15:00-05:00"
-    run_ref: RUN-20260725-080909-time-as-finality-progress
+    reason_code: t226_finite_coefficient_aware_h1_status_reconciled
+    evidence_ref: "tests/T226-coefficient-aware-sheaf-h1-continuum.md; tests/test_coefficient_sheaf_h1.py; results/coefficient-sheaf-h1/T226-coefficient-sheaf-h1-v0.1.json; COMPLEXITY-LEDGER.md"
+    summary: "T226's finite coefficient-aware H1 object closes the declared false-section trap without earning a continuum theorem."
+    evaluated_at: "2026-07-25T13:08:59-05:00"
+    run_ref: RUN-20260725-130859-time-as-finality-progress
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Reconciled T225's mixed finite/poly scope and extended computational-status coverage through T225."
-    scope_position: "T224 is computationally classified; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
+    progress_delta: "Extended computational-status coverage through T226 and recorded its finite-witness boundary."
+    scope_position: "T224-T226 are computationally classified; T226's continuum bridge remains open; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve gates; do not lift the fixed-corpus prediction into a general absorber theorem."
+    recommendation: "Preserve gates; do not lift T226's finite nerve result into a continuum cohomology theorem."
     findings:
-      - "T224's scientific verdict rests on four fixed T39-to-T21 trials, one unrelated absorber, and load-bearing kappa values only in {0,1}."
-      - "compute_kappa uses a spanning forest, signed potential, and edge scan rather than assignment or completion search."
-      - "Polynomial status belongs only to that declared-cover classifier, not to cross-domain transport, absorber independence, or a theorem."
+      - "T226's Möbius annular fixture has nontrivial coefficient-aware H1 while the coefficient-blind encoding falsely admits a section."
+      - "The two-open parity conflict is not a genuine H1 class; a cycle in the finite cover nerve is required."
+      - "Refinement stability and a continuum comparison theorem remain unbuilt and are not inferred."
     options:
       - id: A
         label: "Implement frozen TaF-2 gate"

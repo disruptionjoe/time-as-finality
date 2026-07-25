@@ -11,10 +11,10 @@ theorem-backed, NP-hard, CSP-complete, or scalable.
 
 ## Coverage / Staleness
 
-As of 2026-07-24, the test registry in `TESTS.md` reaches T587, while this
+As of 2026-07-25, the test registry in `TESTS.md` reaches T587, while this
 ledger has a contiguous explicit computational-status frontier through T188,
-plus explicit placements for T190-T222. The referenced T189 test and result
-surfaces are absent from the checkout, so T189 and T223-T587 are not
+plus explicit placements for T190-T224. The referenced T189 test and result
+surfaces are absent from the checkout, so T189 and T225-T587 are not
 computational-status ratified here unless named elsewhere in this file.
 Do not infer `finite_witness`, `poly_decider`, `theorem_backed`, `open_hardness`,
 or scalable-algorithm status from silence in this ledger.
@@ -26,14 +26,14 @@ gates and passing tests, but this ledger does not promote any of them to
 `finite_witness`, `poly_decider`, `theorem_backed`, or a hardness/scalability
 class until a dedicated computational-status reconciliation pass reviews the
 relevant artifact and input encoding. The first bounded post-T138 slice,
-T139-T188 and the available T190-T222 surfaces are now reconciled below. T189
+T139-T188 and the available T190-T224 surfaces are now reconciled below. T189
 remains a named artifact-availability gap rather than receiving an inferred
 status from claim-ledger summaries.
 
 This note is mechanical frontier hygiene. It creates no claim-status movement,
 Canon Index tier movement, theorem claim, hardness claim, public-posture
 movement, or external-publication implication. Dedicated complexity-ledger
-reconciliation remains due for the available frontier from T223 onward.
+reconciliation remains due for the available frontier from T225 onward.
 
 ## Status Labels
 
@@ -142,11 +142,12 @@ reconciliation remains due for the available frontier from T223 onward.
 | [T221 Coherent-Section Functoriality Verdict](tests/T221-coherent-section-functoriality-verdict.md) | `theorem_backed` | Arbitrary finite binary same/different restriction systems whose admissible extensions only add constraints. | The proof refutes the covariant `FinSets` assignment by the explicit `1 -> 0` typing failure, then proves the contravariant restriction-of-solutions functor by subset inclusion, identity, and composition. | This is a directional categorical result only: it does not supply a covariant, dynamically non-trivial `FinSets` functor, derive PO1's `lambda*`, promote MTI, establish physical time, or make a scale/hardness claim. |
 | [T222 Finite-to-Infinite Boundary Theorem](tests/T222-finite-to-infinite-boundary-theorem.md) | `theorem_backed` | Countable signed-parity constraint systems, arbitrary countable site maps with a fixed four-dimension preservation universe, finite counterexamples embedded in larger ambients, and finite-cycle obstructions under unbounded acyclic extension. | Propositional compactness, algebraic associativity/identity, existential counterexample persistence, and finite-obstruction compactness carry the four declared countable/infinite verdicts; the executable windows are controls. T226/T228 correct the separate continuum-H1 and descending-colimit interpretations. | Theorem-backed status is limited to the declared countable/category/negative-persistence statements. T222's two-open parity conflict is not a genuine Čech-H1 class, the T228 colimit is legal but content-free, and no general continuum-cohomology, cocompleteness, physics, hardness, or scalable-algorithm result is earned. |
 | [T223 T54 Ordinal Scaling Decisive Verdict](tests/T223-t54-ordinal-scaling-decisive-verdict.md) | `finite_witness` | The exact rank-permutation ensembles `S_n` for the fixed sizes `n=5,6,7,8`, with the declared T126/T156/T159 screens and T164 finite-poset quotient. | Complete permutation enumeration checks `120 + 720 + 5040 + 40320` labeled cases and applies the fixed advance-or-kill rubric; canonical results reproduce the prior `n=6,7` counts and classify all `n=8` cases. | Exactness is confined to the declared finite sizes and screens. The implementation enumerates `n!` permutations (with additional per-case finite audits), so it is not a scalable manifoldlikeness decider, continuum no-go, dimension estimator, hardness result, or polynomial algorithm. |
+| [T224 Typed-Loss Transport Test](tests/T224-typed-loss-transport-test.md) | `finite_witness` (transport verdict); `poly_decider` (`compute_kappa`) | Four fixed T39-to-T21 transport trials over finite signed same/different covers, with the load-bearing target limited to one unrelated CHSH absorber and `kappa` values in `{0,1}`. The classifier accepts a declared finite cover `(V,E,sign)`. | The transport verdict compares precomputed predictions with the four native finite outcomes. Separately, `compute_kappa` builds a spanning forest and signed potential, then scans non-forest edges in polynomial time (linear in the declared cover representation up to dictionary/union-find overhead); it does not enumerate assignments or completions. | The polynomial placement applies only to the implemented signed-cover classifier, not to semantic cover construction, absorber independence, cross-domain transport, or the scientific verdict. The finite panel does not prove a general cohomology theorem, scalable cross-domain classification, rank transport above 1, hardness result, physics result, or theorem-backed claim. |
 
 ## Global Guardrail
 
 Within the explicitly reconciled computational-status set through T188 and
-the available T190-T223 surfaces, no
+the available T190-T224 surfaces, no
 surveyed core branch currently earns:
 
 ```text

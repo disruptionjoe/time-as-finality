@@ -1,35 +1,35 @@
 schema_version: "2.0"
 owner_id: time-as-finality
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-24T23:26:41-05:00"
-run_ref: RUN-20260724-230909-time-as-finality
-bottom_line: "T223 is exact only on fixed finite ensembles and is now classified accordingly; preserve the TaF-2/F4 gates, then review T224."
-decision_default: "Review T224's finite/poly split while preserving the exact TaF-2 and F4 gates."
+updated_at: "2026-07-25T03:31:36-05:00"
+run_ref: RUN-20260725-031112-time-as-finality-progress
+bottom_line: "T224's finite transport evidence is now separated from its polynomial classifier; preserve TaF-2/F4 gates, then review T225."
+decision_default: "Review T225's finite host-prediction fixture while preserving the exact TaF-2 and F4 gates."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Classified T223's exact fixed-size permutation enumeration as a finite witness rather than a scalable procedure."
-    movement_ref: "tests/T223-t54-ordinal-scaling-decisive-verdict.md; results/t54-ordinal-scaling-decisive-v0.1-results.md; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260724-230909-time-as-finality.md"
+    last_movement: "Separated T224's finite transport verdict from the polynomial signed-cover classifier it uses."
+    movement_ref: "tests/T224-typed-loss-transport-test.md; results/typed-loss-transport/T224-results.json; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260725-031112-time-as-finality-progress.md"
     steering_attention: watch
     steering_prompt: "Keep TaF-2/F4 blocked until exact operator/adapter wakes; do not proxy, retune, or lift the TaF-3 embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: t223_exact_finite_enumeration_status_reconciled
-    evidence_ref: "tests/T223-t54-ordinal-scaling-decisive-verdict.md; models/t54_ordinal_scaling_decisive.py; results/t54-ordinal-scaling-decisive-v0.1-results.md; COMPLEXITY-LEDGER.md"
-    summary: "T223 exactly enumerates fixed n=5..8 ensembles; its n-factorial procedure earns finite-witness status only."
-    evaluated_at: "2026-07-24T23:26:41-05:00"
-    run_ref: RUN-20260724-230909-time-as-finality
+    reason_code: t224_finite_transport_poly_classifier_status_reconciled
+    evidence_ref: "tests/T224-typed-loss-transport-test.md; models/typed_loss_transport.py; results/typed-loss-transport/T224-results.json; COMPLEXITY-LEDGER.md"
+    summary: "T224's four transport trials are finite evidence; only compute_kappa earns polynomial-classifier status."
+    evaluated_at: "2026-07-25T03:31:36-05:00"
+    run_ref: RUN-20260725-031112-time-as-finality-progress
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Reconciled T223's exact-enumeration scope and extended computational-status coverage through T223."
-    scope_position: "T223 is computationally classified; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
+    progress_delta: "Reconciled T224's mixed finite/poly scope and extended computational-status coverage through T224."
+    scope_position: "T224 is computationally classified; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve gates; review T224's declared finite/poly split."
+    recommendation: "Preserve gates; review T225's finite host prediction."
     findings:
-      - "T223 exhausts exactly 46,200 labeled permutations across n=5..8 and reproduces its declared prior-count controls."
-      - "The implementation enumerates n-factorial cases and performs additional finite audits per case; exactness does not imply scalability."
-      - "The earned finite no-go remains bounded to the declared ensemble and screens, with no continuum, dimension, manifoldlikeness, or hardness result."
+      - "T224's scientific verdict rests on four fixed T39-to-T21 trials, one unrelated absorber, and load-bearing kappa values only in {0,1}."
+      - "compute_kappa uses a spanning forest, signed potential, and edge scan rather than assignment or completion search."
+      - "Polynomial status belongs only to that declared-cover classifier, not to cross-domain transport, absorber independence, or a theorem."
     options:
       - id: A
         label: "Implement frozen TaF-2 gate"
@@ -47,7 +47,7 @@ lanes:
         label: "Hold for Joe"
         recommended: false
         description: "Pause Lane 1 until Joe supplies a new direction."
-    decision_default: "Review T224 while waiting for the exact TaF-2 or F4 wake."
+    decision_default: "Review T225 while waiting for the exact TaF-2 or F4 wake."
     needs_joe: false
   - lane_id: A
     work_status: moving

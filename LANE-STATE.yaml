@@ -1,31 +1,31 @@
 schema_version: "2.0"
 owner_id: time-as-finality
 rule_ref: system/runtime/flows/refresh-lane-state.md
-updated_at: "2026-07-25T03:31:36-05:00"
-run_ref: RUN-20260725-031112-time-as-finality-progress
-bottom_line: "T224's finite transport evidence is now separated from its polynomial classifier; preserve TaF-2/F4 gates, then review T225."
-decision_default: "Review T225's finite host-prediction fixture while preserving the exact TaF-2 and F4 gates."
+updated_at: "2026-07-25T08:15:00-05:00"
+run_ref: RUN-20260725-080909-time-as-finality-progress
+bottom_line: "T225's fixed host-prediction evidence is now separated from its polynomial classifier; preserve TaF-2/F4 gates."
+decision_default: "Preserve the exact TaF-2 and F4 gates; select the next bounded computational-status frontier only when nonduplicative."
 needs_joe: false
 lanes:
   - lane_id: "1"
     work_status: moving
-    last_movement: "Separated T224's finite transport verdict from the polynomial signed-cover classifier it uses."
-    movement_ref: "tests/T224-typed-loss-transport-test.md; results/typed-loss-transport/T224-results.json; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260725-031112-time-as-finality-progress.md"
+    last_movement: "Separated T225's finite binary-corpus host prediction from its polynomial learned-rule classifier."
+    movement_ref: "tests/T225-predictive-absorption-functor.md; results/predictive-absorption/T225-predictive-absorption-functor-v0.1.json; COMPLEXITY-LEDGER.md; agent-runs/RUN-20260725-080909-time-as-finality-progress.md"
     steering_attention: watch
     steering_prompt: "Keep TaF-2/F4 blocked until exact operator/adapter wakes; do not proxy, retune, or lift the TaF-3 embargo."
     steering_ref: "explorations/2026-07-22-wave1-triple-diamond-prep-steering.md; steward/research-portfolio.json"
     light: yellow
-    reason_code: t224_finite_transport_poly_classifier_status_reconciled
-    evidence_ref: "tests/T224-typed-loss-transport-test.md; models/typed_loss_transport.py; results/typed-loss-transport/T224-results.json; COMPLEXITY-LEDGER.md"
-    summary: "T224's four transport trials are finite evidence; only compute_kappa earns polynomial-classifier status."
-    evaluated_at: "2026-07-25T03:31:36-05:00"
-    run_ref: RUN-20260725-031112-time-as-finality-progress
+    reason_code: t225_finite_host_prediction_poly_classifier_status_reconciled
+    evidence_ref: "tests/T225-predictive-absorption-functor.md; tests/test_predictive_absorption_functor.py; results/predictive-absorption/T225-predictive-absorption-functor-v0.1.json; COMPLEXITY-LEDGER.md"
+    summary: "T225's two-host prediction is finite evidence; only its encoded-corpus learned rule earns polynomial-classifier status."
+    evaluated_at: "2026-07-25T08:15:00-05:00"
+    run_ref: RUN-20260725-080909-time-as-finality-progress
     objective: "Formalize and test capability restriction as noncircular temporal order and finality."
-    progress_delta: "Reconciled T224's mixed finite/poly scope and extended computational-status coverage through T224."
+    progress_delta: "Reconciled T225's mixed finite/poly scope and extended computational-status coverage through T225."
     scope_position: "T224 is computationally classified; TaF-2 waits on a source-backed operator; F4 waits on an owner-frozen registered-observable adapter; TaF-3 stays fixture-grade with the broad headline embargoed; T586 remains closed."
     trend_24h: up
     confidence: high
-    recommendation: "Preserve gates; review T225's finite host prediction."
+    recommendation: "Preserve gates; do not lift the fixed-corpus prediction into a general absorber theorem."
     findings:
       - "T224's scientific verdict rests on four fixed T39-to-T21 trials, one unrelated absorber, and load-bearing kappa values only in {0,1}."
       - "compute_kappa uses a spanning forest, signed potential, and edge scan rather than assignment or completion search."

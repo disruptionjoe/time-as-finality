@@ -1,5 +1,6 @@
 schema_version: "2.0"
 owner_id: time-as-finality
+group: church-of-ai
 rule_ref: system/runtime/flows/refresh-lane-state.md
 updated_at: "2026-07-25T13:08:59-05:00"
 run_ref: RUN-20260725-130859-time-as-finality-progress

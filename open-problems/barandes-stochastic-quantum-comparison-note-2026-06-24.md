@@ -28,6 +28,30 @@ Barandes matters because it gives a precise route:
 stochastic process -> CPTP map -> Kraus form -> unitary dilation
 ```
 
+### 2026-07-26 scope correction
+
+The shorthand must not be read as a dilation of an interventionally complete
+multi-time process. In the revised
+[Stochastic-Quantum Theorem](https://arxiv.org/html/2309.03085v2), the proof
+singles out \(\Gamma(t\leftarrow0)\), and the constructed enlarged process has
+\(\widetilde{\mathcal T}_0=\{0\}\). It recovers the distinguished
+initial-time transition family after marginalization. It does not show that
+one dilation preserves every original conditioning-time kernel, full
+trajectory distribution, or held-out intervention.
+
+The exact TaF null-model reading is therefore:
+
+```text
+base-time stochastic transition family
+    -> nonunique amplitude/Kraus representation
+    -> Stinespring/unitary dilation
+```
+
+When the target is multi-time history, provenance, memory, or continuation,
+the comparator must additionally supply a full process tensor, quantum comb,
+or consistent finite-dimensional distribution. Otherwise same base-time data
+can hide different intermediate temporal facts.
+
 So it is a good benchmark for:
 
 - `claims/Q1-quantum-under-finalization.md`
@@ -76,6 +100,10 @@ That supports TaF's existing instinct to keep apart:
 - record generation,
 - finality or stabilization,
 - scalar or semantic readout.
+
+The scope correction adds a fourth separation:
+
+- base-time transition representation versus complete multi-time process.
 
 ## What It Does Not Yet Do For TaF
 

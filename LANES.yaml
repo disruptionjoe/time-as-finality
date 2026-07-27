@@ -4,7 +4,7 @@ owner:
   owner_id: time-as-finality
   display_name: Time as Finality
   scope_type: repository
-  charter_ref: North Star - README.md
+  charter_ref: CHARTER.md
   governance_refs:
   - AGENTS.md
   authoritative_state_refs: &id001
@@ -53,10 +53,10 @@ lanes:
   label: Lane 1
   ordinal: 1
   kind: progress
-  title: Formalization and truth testing
+  title: Preferred-frame theory research
   north_star: true
-  purpose: Formalize and test whether capability restriction can generate noncircular temporal order and
-    finality without overclaiming finite witnesses.
+  purpose: Determine whether Lorentz-compatible preferred-frame or global-tick theories earn physical or
+    explanatory standing, and what they contribute to time, records, and finality.
   purpose_type: north_star
   relation_to_lane_1: primary_operational_expression
   environment: The owner's governed repository, its declared operating interfaces, and its authoritative

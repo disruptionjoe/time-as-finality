@@ -26,24 +26,22 @@ scalable.
 
 Read these first:
 
-1. [Vision - North Star.md](Vision%20-%20North%20Star.md) - the aggressive
-   geometry vision: find the geometry whose shadows are physics, then prove it
-   or break it.
+1. [CHARTER.md](CHARTER.md) - the active research question: whether a
+   Lorentz-compatible preferred-frame or global-tick theory earns physical or
+   explanatory standing.
 2. [Method - Research Program Guidelines.md](Method%20-%20Research%20Program%20Guidelines.md)
    - the methodology: how claims are typed, tested, demoted, absorbed, or
    killed.
-3. [Lead Research Line - Time as Finality.md](Lead%20Research%20Line%20-%20Time%20as%20Finality.md)
-   - the lead technical research line: record stabilization, finality, and
-   temporal direction inside the broader vision.
+3. [Vision - North Star.md](Vision%20-%20North%20Star.md) - speculative
+   maximal-geometry context, not the current charter.
 4. [Coordination - Tri-Repo Division of Labor.md](Coordination%20-%20Tri-Repo%20Division%20of%20Labor.md)
-   - TaF's leg of the ratified tri-repo effort (2026-07-02): TaF owns the
-   capability measure (C(R), certificates, the region-indexed capability
-   discriminator); gu-formalization owns boundary content; temporal-issuance
-   owns the source question. Identity claims across the three remain gated.
+   - an historical division-of-labor reference. Dynamic Unity now owns broader
+   geometry-and-record integration; Time as Finality returns independently
+   earned results or constraints by pointer.
 
-The historical `NORTH-STAR.md` has been archived under
-`Candidate North Star/archive/`. The current project orientation is the
-three-file map above.
+The historical `NORTH-STAR.md` remains under `Candidate North Star/archive/`.
+The active project orientation is [[CHARTER|CHARTER.md]] plus the research
+method; the candidate North Star folder remains speculative context.
 
 Cross-repo stress tests are kept separate from core claims. The current GU /
 Temporal Issuance bridge note is
@@ -64,11 +62,12 @@ Lose[K]`, not `Issue[S]`.
 
 Time as Finality asks whether:
 
-> For an embedded record-processing system, a temporal partial order can be
-> reconstructed from the causal partial order and stabilization frontiers of
-> accessible records.
+> A Lorentz-compatible preferred-frame, or global-tick, theory can earn
+> physical or explanatory standing over the best current account of reality.
 
-The project sits between foundations of time, quantum measurement, decoherence, classical objectivity, relativity, black-hole causal access, thermodynamics, and distributed-systems finality.
+Record finality, observer access, relativity, quantum foundations, and causal
+order are the central comparison terrain—not assumptions in favor of the
+preferred-frame alternative.
 
 ## What This Is
 

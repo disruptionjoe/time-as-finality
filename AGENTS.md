@@ -109,14 +109,19 @@ not Lane truth.
 
 ## Purpose, Passion, and Practice
 
-- **Purpose:** Test whether individual and collective record accumulation, with
-  differing resistance to reversal, can ground physical structures including
-  relativity and quantum dynamics.
-- **Passion:** Test whether agents can reason rigorously across distributed
-  computing and physics without dissolving either into metaphor.
-- **Practice:** Understand disciplinary boundaries, identify transferable
-  methods, and create credible proof when cross-domain work yields useful
-  information.
+- **Purpose:** Determine whether a Lorentz-compatible preferred-frame, or
+  global-tick, theory can explain physical reality more coherently than the
+  best current account—or show exactly where it fails.
+- **Passion:** Test whether agents can rigorously investigate a serious
+  heterodox idea: connect relevant knowledge, separate mechanism from analogy,
+  and try to falsify it without reflexive dismissal or protection.
+- **Practice:** Develop reusable DJC practice for investigating consequential,
+  unconventional possibilities and reaching honest, decision-ready conclusions.
+
+The active research charter is [[CHARTER|CHARTER.md]]. The maximal-geometry
+vision remains a speculative context, not this repository's charter. Dynamic
+Unity owns broader geometry-and-record integration; Time as Finality returns
+only independently earned, source-bounded results or constraints.
 
 ## Versioning Default
 

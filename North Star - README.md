@@ -1,6 +1,7 @@
 # Candidate North Star
 
-Read this folder as the current orientation layer.
+Read this folder as speculative and historical context. The active owner
+charter is [[CHARTER|../CHARTER.md]].
 
 ## Reading Order
 
@@ -12,7 +13,7 @@ Read this folder as the current orientation layer.
 
 | File | Role | Source |
 | --- | --- | --- |
-| `Vision - North Star.md` | The current North Star: the maximal geometry vision. | Copy of `archive/Candidate North Star v0.8 Maximal Geometry Vision Draft.md`. |
+| `Vision - North Star.md` | Speculative maximal-geometry context. | Copy of `archive/Candidate North Star v0.8 Maximal Geometry Vision Draft.md`. |
 | `Method - Research Program Guidelines.md` | The research discipline: how claims are typed, tested, demoted, or killed. | Copy of `archive/Candidate North Star v0.6.md`. |
 | `Lead Research Line - Time as Finality.md` | The main proof-against line of research for record finality and temporal direction. | Copy of root `NORTH-STAR.md`. |
 
@@ -25,13 +26,12 @@ history and scratchpad for future candidate cycles.
 The current map is:
 
 ```text
+CHARTER
+  The active preferred-frame / global-tick research question.
+
 Vision - North Star
-  What we are trying to prove or break.
+  Speculative maximal-geometry context; not a current owner commitment.
 
 Method - Research Program Guidelines
-  How we prevent the vision from becoming unfalsifiable.
-
-Lead Research Line - Time as Finality
-  The active technical line that tests record stabilization, finality, and
-  temporal direction inside the broader vision.
+  How claims are typed, tested, demoted, absorbed, or killed.
 ```

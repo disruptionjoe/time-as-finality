@@ -35,6 +35,24 @@ cheapest route to a preferred frame in this programme.
 No claim promotion earned; recorded as a negative result on one declared
 bookkeeping contract. T586's downgraded order claim is not revived.
 
+**Routing correction, same day.** The residual A-versus-C fork is
+temporal-issuance's PP-3 verbatim — A is schema disclosure to a bounded
+observer, C is genuine type creation — and TI owns the source question under
+the ratified tri-repo division. TI has already reduced it to one structural bit
+(D-FORK: Goedelian versus fixed-finite effective type space), discharged the
+categorical signature (FUNCTOR-OBL-001: non-naturality is the fingerprint of
+issuance versus disclosure), and named the deciding fixture (E042 6.2). Routed
+to TI rather than rebuilt here. TaF's own remaining question is narrower and
+record-local: is the record-reconciliation map natural? If it is, A and C are
+operationally identical at the record layer and issuance lives strictly below
+records.
+
+Caution recorded in `next_work`: a joint can exceed its parts *informationally*
+without any type being created. Shamir threshold sharing is the witness —
+sub-threshold shares carry provably zero information, yet the secret was fixed
+in advance. Invertibility-style tests catch that case and misread it as
+creation.
+
 ## 2026-07-18 Current Operational Frontier
 
 The active hourly portfolio is `steward/research-portfolio.json`. The protected

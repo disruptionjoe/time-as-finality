@@ -476,7 +476,11 @@ causal-partial-order account, complete on its own terms." It is:
 > (a) selects record-issuing events (posited issuance typing; Landauer-class
 > stabilization), (b) supplies all non-horizon hardness-to-undo (FAPP-graded,
 > e^{−ω}), and (c) carries the account's answer to the Wigner-friend
-> no-gos (a named exit, at a named price). The causal layer contributes the
+> no-gos (a named exit, at a named price), and (d) fixes the
+> system/environment split and record coarse-graining (D) — at fixture
+> level derived up to a declared equivalence class from already-priced
+> ingredients rather than standing as an independent privileged structure
+> (S4). The causal layer contributes the
 > access geometry: light-cone bounds on record meeting, the horizon-case
 > kind-level finality, and the no-preferred-structure economy.
 
@@ -487,7 +491,7 @@ the tick side's ledger):
 |---|---|---|---|
 | 1 | Record-issuance module posited, not derived from causal structure; selection is thermodynamic typing (source-owned issuance rules) | R1 | structural debt, shared with the tick side (TI owns the source question) |
 | 2 | Finality FAPP-graded outside horizons: un-commit probability e^{−ω}, nonzero for all finite ω; "hard to undo" is inherited thermodynamics, not causal-structure content | R2 | degree-not-kind; kind-level finality only at causal horizons |
-| 3 | Wigner-friend exit unpaid until named: exact AOE-rejection (records observer-indexed all the way down), or locality-rejection (spends "causally bounded"), or FAPP-absoluteness + privileged decomposition | R3 | one entry mandatory; symmetric in shape to the foliation side's beables entry |
+| 3 | Wigner-friend exit **settled** (S5): **LF — paid at AOE.** Assumption 1 ("An observed event is a real single event, and not relative to anything or anyone") is rejected in graded form: for every finite-ω record, value-absoluteness is relative to the family of agent classes whose envelopes cannot un-commit it; exact absoluteness is available for no finite record outside causal horizons. Intra-family record agreement (all sub-un-commit classes, all mutually final records) is retained. **FR — blocked at (C):** promotion of conclusions is denied across un-commit boundaries; (C)-at-grade retained; the account lands in FR's own drop-(C) column with a physical criterion (S3-conditional; condition met at fixture level by S3's landing). The exit's decomposition half is priced by S4: on the T58x fixtures D is derived up to equivalence (T584 orbit + a terminal-record horizon convention) from consumption structure + the declared task context + a grade-stability criterion, so "privileged decomposition" re-prices to "declared-context-relative selection" ([commit-module-s4-decomposition-debt-2026-07-28.md](commit-module-s4-decomposition-debt-2026-07-28.md); continuum case named-not-worked). | R3 → S4/S5 | the heavier LF entry taken honestly; mirror-symmetric to the foliation side's payment — the symmetry restatement is [commit-module-s5-wigner-settlement-2026-07-28.md](commit-module-s5-wigner-settlement-2026-07-28.md) §6 |
 | 4 | The "causal does more constraining work than records" exhibit rests on two hand-declared fixture edges | recorded caveat | resolved same-wave by the sweep ([fixture-family-sweep-2026-07-28.md](fixture-family-sweep-2026-07-28.md)): REGIME-DEPENDENT at the sweep's earned wording — an alignment-discipline fact of causally-aligned fixtures, not a typing theorem, reversible in fixtures the typing also admits (38/200 inverted); stays a scope entry, neither theorem nor artifact |
 
 **Retained assets, stated with equal care:** no preferred structure claimed;

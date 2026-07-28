@@ -1,5 +1,29 @@
 ﻿# Roadmap
 
+## 2026-07-28 Commit-Module Series (Goal 3, rival side) — CM = (I, G, D) at Its Earned Form
+
+Six-swing series on the rival's "thermodynamic commit module" (the Goal-2
+verdict's §3 clause): schema + dependency DAG + debts L1–L4
+(`explorations/commit-module-schema-2026-07-28.md`); issuance-from-redundancy
+PARTIAL, kill fired scoped — SBS selection is degenerate-or-split-fragile on
+the fixture class (`explorations/commit-module-s2-redundancy-issuance-2026-07-28.md`
++ `models/redundancy_issuance_probe.py`, 26/26); commit(A, r) delivered —
+T584-invariant, capability-monotone, limit-recovering, kill does not fire
+(`explorations/commit-module-s3-capability-graded-finality-2026-07-28.md` +
+probe, 16/16); D derived up to the T584 orbit at fixture level, priced in
+declaration currency (`explorations/commit-module-s4-decomposition-debt-2026-07-28.md`
++ probe, 27/27); Wigner-friend settlement SPLIT — LF exit-collapses, paid at
+AOE-at-grade; FR real exit at (C), S3-conditional
+(`explorations/commit-module-s5-wigner-settlement-2026-07-28.md`); series
+conclusion: the relabeling conviction does NOT fire — L1
+discharged-conditional, L2 discharged, L3 partial, L4 split
+(`explorations/commit-module-s6-series-conclusion-2026-07-28.md`).
+Cost-column, schema-ledger, goal2 §3, and rival-map updates enacted per S6
+§4. No claim movement; no rival promotion; no tick-family credit; steward
+grading of the series open. Next objects: Q-0066 seed (two-stroke ratchet,
+wiki-registered), S2 richer-fixture reopener, S4 continuum halves,
+boost-equivariance gate.
+
 ## 2026-07-28 Goal 1 Preferred-Frame Family Classification Campaign
 
 Two-day campaign (2026-07-27/28): the preferred-frame family is classified

@@ -217,6 +217,9 @@ declared it):
   status from measurements inside them (H2's vocabulary; T587's
   `observer_readout` row) — the R3 exit-(iii) posture. Whether that posture
   actually exits the no-go theorems is Debt L4 / S5, not assumed here.
+  Settled (S5): the posture exits FR at (C) (S3-conditional; condition met
+  at fixture level by S3's landing); it does not exit LF; the AOE entry is
+  paid, graded.
 - **Below the record layer: silent.** The source question is out of scope
   by the ratified tri-repo division.
 
@@ -514,12 +517,12 @@ swing**: it binds S2's fixture class (causally-aligned) and is not reopened.
 
 ### Ledger summary
 
-| debt | component | status after S1 | discharge shape | conviction shape | swing kill (short form) |
-|---|---|---|---|---|---|
-| L1 | I | declared typing; embeds G, D | derived I reproducing the T586 order | no route reproduces the order | S2: reproduce T586 order, causally aligned, without consuming D |
-| L2 | G | derived functional; FAPP identification | commit(A, r): invariant, monotone, correct limits | invariance/monotonicity/limits fail | S3: T584-invariant, capability-monotone, bounded-class limit |
-| L3 | D | implicit; fixture-declared | route A (locality + sieve) or route B fixed point | both routes circular → declared priced primitive | S4: circular-both-ways ⇒ declared priced primitive |
-| L4 | scope/objectivity | exit (iii) posture, unsettled | premise-level exit located | exit collapses into AOE-rejection | S5: an actual exit of the premises, not a wish |
+| debt | component | status after S1 | discharge shape | conviction shape | swing kill (short form) | disposition after S6 |
+|---|---|---|---|---|---|---|
+| L1 | I | declared typing; embeds G, D | derived I reproducing the T586 order | no route reproduces the order | S2: reproduce T586 order, causally aligned, without consuming D | DISCHARGED-CONDITIONAL (S2 PARTIAL + S4's D-derivation jointly; fixture level) |
+| L2 | G | derived functional; FAPP identification | commit(A, r): invariant, monotone, correct limits | invariance/monotonicity/limits fail | S3: T584-invariant, capability-monotone, bounded-class limit | DISCHARGED (S3, fixture level; kill did not fire) |
+| L3 | D | implicit; fixture-declared | route A (locality + sieve) or route B fixed point | both routes circular → declared priced primitive | S4: circular-both-ways ⇒ declared priced primitive | PARTIAL (route A up to the T584 orbit at fixture level; continuum halves open, kill registered there) |
+| L4 | scope/objectivity | exit (iii) posture, unsettled | premise-level exit located | exit collapses into AOE-rejection | S5: an actual exit of the premises, not a wish | settled SPLIT (S5): LF collapse at Assumption 1, graded; FR real exit at (C), S3-conditional |
 
 ---
 

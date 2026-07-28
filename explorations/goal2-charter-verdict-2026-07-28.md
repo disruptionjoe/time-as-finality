@@ -393,6 +393,15 @@ unpriced exit. The rival's earned form, binding on every comparative use:
 > versus causal order+commit module, with the thermodynamic record module a
 > shared import on both sides.
 
+*(Commit-module series, 2026-07-28: the module itself is now stated and
+priced — CM = (I, G, D); issuance derived-conditional-on-(G, D) (S2);
+commit(A, r) delivered at fixture level (S3); D derived up to a declared
+equivalence class at fixture level (S4); the Wigner-friend exit settled
+SPLIT — LF paid at AOE-at-grade, FR exited at (C), S3-conditional met at
+fixture level (S5) — so this clause's "named-but-unpaid Wigner-friend
+exit" now reads: named and paid, at the S5 price;
+[commit-module-s6-series-conclusion-2026-07-28.md](commit-module-s6-series-conclusion-2026-07-28.md).)*
+
 The cost column's fourth entry — the "causal does more constraining work"
 exhibit resting on two hand-declared fixture edges — was pending the fixture
 sweep at the swings' drafting time and resolves now, per the swings' own

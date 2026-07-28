@@ -1,5 +1,11 @@
 # Finality Gauge Theory and the Gravitational Connection
 
+**Status:** connection-based route closed for merge-transport (see
+[merge-transport dichotomy](../explorations/merge-transport-dichotomy-2026-07-27.md));
+the lax-functor route remains open
+([T242](../tests/T242-compose-meet-total-functor.md),
+[T245](../tests/T245-d1filtered-gr-lax-coherence.md)).
+
 ## Problem
 
 Can the finality preorder be reformulated as a connection on a fiber bundle
@@ -73,6 +79,14 @@ question without relying directly on S1's speculative extension.
 3. **Flatness or holonomy audit:** Define a finite loop invariant over the
    T125 transport object. This must separate pure-gauge identity loops from
    residual-boundary loops before any curvature language is used.
+   Decided negatively for the merge-transport sector by the
+   [merge-transport dichotomy](../explorations/merge-transport-dichotomy-2026-07-27.md):
+   any transport instantiated as a semilattice/CRDT merge, or any
+   redelivery-idempotent or information-destroying merge, has invertible
+   sector exactly {id} — trivial holonomy identically, or no connection
+   defined at all. A nontrivial loop object, if one exists, must be built on
+   non-idempotent invertible transport (T111's pure relabeling sector) or on
+   non-invertible directed structure (the T242/T245 lax route), not on merge.
 4. **Curvature computation:** Blocked. A curvature 2-form, flat-spacetime
    comparison, or relative-motion interpretation should not be attempted until
    a nontrivial finite loop invariant survives T125's relabeling and

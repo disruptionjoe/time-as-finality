@@ -419,3 +419,28 @@ reads T587's third condition as requiring an executed counterexample first,
 run the ρ₁ witness as an un-T-numbered exploration companion (the same
 discipline as the wave-3 note's overlay model) and re-submit this packet
 with the run attached.
+
+---
+
+## Execution attached (2026-07-28)
+
+The fallback path named directly above has been executed as an un-T-numbered
+exploration companion: the ρ₁ witness ran with the full check slate — the
+36-composite extensivity grid, Δ(ρ₁)/Δ(ρ₂) with monotonicity and T584
+invariance, all four must-fail controls, and the T584 extension legs —
+deterministic, exit 0.
+
+- Run note:
+  [composition-extensivity-execution-2026-07-28.md](composition-extensivity-execution-2026-07-28.md)
+- Model:
+  [../models/composition_extensivity_probe.py](../models/composition_extensivity_probe.py)
+- One-line outcome: **Exit A — envelope extensivity holds bitwise on all 36
+  independent grid composites; Δ(ρ₁) is exactly the predicted
+  `ns2::certify_cross_record_stability` frontier point, monotone from ρ₁ to
+  ρ₂ and T584-invariant; all four controls fail closed; the wave-3
+  extensivity kill un-arms (un-armed ≠ alive — the packet's caveat is
+  inherited in full).**
+
+This section is the re-submission the fallback path specifies. The owner
+decision on the reopening — and any T-number — remains open and untouched by
+the attachment.

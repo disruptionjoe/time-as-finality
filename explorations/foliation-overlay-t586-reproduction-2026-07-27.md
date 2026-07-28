@@ -166,3 +166,43 @@ the swing-2 numbers now exist inside TaF, recomputed under its own
 conventions from its own fixture and helpers, with all 17 checks matching.
 Grading, narrowing, deferral, or rejection of the swing-2 result is now
 unblocked and remains a separate step.
+
+## Independence scope correction (2026-07-28)
+
+The original text above is left in place per house correction style; this
+section states what its independence language actually covers, verified
+against the model file by an adversarial pass.
+
+The Status line's "in-repo re-derivation" and the Method section's
+"re-derived from scratch" / "agreement between two independently written
+derivations" overstate the independence scope if read broadly. Precisely:
+
+- `models/foliation_overlay_t586_reproduction.py` imports the T586 module's
+  fixture (`_landauer_record_events`) and its four helpers
+  (`build_order_report`, `causal_relation`, `transitive_closure`,
+  `clock_label_relation`) **wholesale** — the Method section says so
+  ("reused unchanged, not copied"), but the headline framing can be read as
+  claiming a fully independent pipeline.
+- The independently written content is the **enumeration overlay only** —
+  roughly thirty lines: the linear-extension check, the 120-permutation
+  sweep, the added-comparability accounting, and the foliation-label
+  re-labeling harness.
+- Every expected value in the 17-check table is **carried from the mailbox
+  note**, not derived blind: the script certifies agreement with reported
+  values, it does not rediscover them.
+
+What the reproduction therefore certifies is exactly: (a) determinism and
+stability of the shared T586 machinery under a foliation overlay, and
+(b) agreement of an independently written enumeration layer with the
+out-of-repo note's reported values. Independence from the original
+out-of-repo scratch script is real — it was not consulted or imported.
+Independence from T586's own fixture and helpers was never achieved, and
+was not the design goal; a shared-machinery error common to T586 and this
+script would pass all 17 checks undetected.
+
+The actual robustness instrument for that residual risk is the
+fixture-family sweep executed this wave
+([fixture-family-sweep-2026-07-28.md](fixture-family-sweep-2026-07-28.md)),
+which varies the fixture rather than re-running it. Nothing in this
+correction changes the reproduced numbers, the closure of the "reproduce
+before grading" flag, or any claim status.

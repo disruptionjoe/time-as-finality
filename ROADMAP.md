@@ -1,5 +1,48 @@
 ﻿# Roadmap
 
+## 2026-07-28 Goal 1 Preferred-Frame Family Classification Campaign
+
+Two-day campaign (2026-07-27/28): the preferred-frame family is classified
+under Goal 1's three-way measure — one live bin-1 membership (the
+universal-rate family), bin 2 closed empty of candidacies (constitutive
+reading terminal INTERPRETATION-ONLY; causal invariance withdrawn), four
+named bin-3 members plus the schema catch-all. Swing 3's registered kill
+("family undefined") does not fire; corrections 1–9 are enacted into the
+table and verdict.
+
+Kills registered, each with its artifact:
+
+- **Uniform-percolation Hořava window, both signs.** Subluminal in print
+  (LMS, PRL 109, 151602 (2012) — priority theirs); superluminal in-house via
+  the LHAASO splitting limits, margin 10–22x against the review-vintage
+  10¹⁵ GeV ceiling (1.04–2.21x against LMS's older 10¹⁶ GeV ceiling —
+  vintage dependence stated in the note;
+  `explorations/lhaaso-splitting-margin-verification-2026-07-28.md`).
+- **Gravitational confinement as published** — by its authors' own Eq. (55)
+  and the CMM robustness result; successor rows survive without a statable
+  matter coupling (`explorations/swing5-suppressed-percolation-adjudication-2026-07-28.md`).
+- **Exact-GR corner bin-2** — equivalence and explanatory work complementary
+  on the locus (`explorations/exact-gr-corner-adjudication-2026-07-28.md`).
+- **Contract B** (global-ledger tick): refuted earlier, T588 entry below.
+
+The remaining bin-2 question was the constitutive update-layer reading
+(swing-1 seam), adjudicated this wave — terminal INTERPRETATION-ONLY; bin 2
+closes empty
+(`explorations/constitutive-reading-adjudication-2026-07-28.md`). Gates
+executed: ζ₁/HSO decided (khronometric channel open, α = 1/2 pinned;
+`explorations/zeta1-hypersurface-orthogonality-gate-2026-07-28.md`);
+composition/extensivity packet filed and executed
+(`explorations/proposed-composition-extensivity-gate-2026-07-28.md`,
+`explorations/composition-extensivity-execution-2026-07-28.md`). Also
+landed: literature notes N20–N24 (kill sources verified), the fixture-family
+sweep (`explorations/fixture-family-sweep-2026-07-28.md` +
+`models/fixture_family_sweep.py`), the rival-symmetry swings
+(`explorations/rival-symmetry-swings-2026-07-28.md`), the twist-falsifier
+feasibility packet (`explorations/twist-falsifier-feasibility-2026-07-28.md`),
+`explorations/rival-map-2026-07-28.md`, and
+`explorations/standing-monitorables-2026-07-28.md` (reopen/kill triggers).
+No claim promotion; bins are never truth verdicts.
+
 ## 2026-07-27 T588 Record-Issuance Contract Fork Gate
 
 T587 stopped further T-number scaffolds built from T586 alone, permitting

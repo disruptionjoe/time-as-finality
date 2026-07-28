@@ -488,3 +488,19 @@ literature."
    unmerged intersection at u_μj^μ for conserved currents; if the assembled
    statement stays unfound under wider search, a short literature comment is
    the natural artifact.
+
+## Same-wave execution note (2026-07-28, appended)
+
+Constructive next objects 1–3 above executed same day by
+[twist-falsifier-feasibility-2026-07-28.md](twist-falsifier-feasibility-2026-07-28.md):
+object 2 (core) — split verdict: priced dead as a detection channel for the
+unit-norm class (≈ 8–10 orders short), live as a zero-hardware reanalysis
+falsifier (first separated twist bounds ≈ 4×10⁻⁷ GeV satellite-class);
+object 1 (rider a) — α = 1/2 confirmed at static order, with (185) evaded in
+the twist-carrying components (α_GM(physical) = 0 for HSO backgrounds);
+object 3 (rider b) — the baryogenesis corner prices out clean (no
+intersection by ≈ 5 orders). Object 4 remains named-not-built, carried
+forward strengthened as the packet's next object 4. Nothing above changes;
+this note closes the same-wave staleness window. The §6 door-2b clause was
+enacted into goal1's corrections block (correction 8's clause, operational
+form) the same day.

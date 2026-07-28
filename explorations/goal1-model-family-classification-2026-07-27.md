@@ -27,6 +27,9 @@ their assumption set
 
 ## SAME-DAY CORRECTIONS — 6A/6B and the verification arms executed after this file was written
 
+**Corrections 1–9 ENACTED into the table and verdict 2026-07-28; the block
+remains as the change record.**
+
 **Read before using any row below.** Applied per the closing adversarial pass:
 
 1. **The door relabel (most important).** This file's phrase "countershaded
@@ -97,18 +100,42 @@ their assumption set
    sharpens to leading-order numerical identity across the unit-norm class,
    with one polarity: twist-type (a_eff∧F ≠ 0) countershaded signatures would
    **exclude** HSO backgrounds; E-type signals cannot distinguish (door-2b
-   clause proposed in the gate's §6).
+   clause ENACTED 2026-07-28 with the twist packet's operational form: the
+   one-α ansatz provably breaks for gradient-constrained backgrounds —
+   α_static = 1/2, α_GM(physical) = 0 — so the breaking pattern is itself the
+   falsifier, and a two-parameter refit of existing satellite-WEP/gravimeter
+   sidereal data reaches first separated twist bounds ≈ 4×10⁻⁷ GeV at zero
+   hardware cost; `twist-falsifier-feasibility-2026-07-28.md`).
+9. **Bin 2 closed out (2026-07-28):** the constitutive update-layer reading —
+   the row's residual candidacy after item 6 — is adjudicated under the
+   strategy wave's pre-registered gate: bare form vacuous (enacted), package
+   form terminal INTERPRETATION-ONLY (rider, parasitic gain), §4.2
+   causal-invariance withdrawn to bin 3 (schema catch-all, no artifacts).
+   Degeneration baseline D = 0, P = 1. Bin 2 holds no live candidacies.
+   `constitutive-reading-adjudication-2026-07-28.md`.
 
 ## Verdict up front
 
 **The family is statable precisely, so swing 3's registered kill does not fire** (§8).
 Classified: one live bin-1 membership (the universal-rate family, three sub-variants);
-bin 2 currently holds **candidates only** — each named with what it must still earn, none
-of which it has; bin 3 holds the single-global-ledger tick (refuted in-repo, T588) and
-the uniform-percolation Hořava window (stale as of 2026-07-27), plus the charter's
-schema catch-all. The leaking branch survives only in suppressed-percolation form, whose
-shielding mechanism is contested; the countershaded gravity sector is the load-bearing
-opening for the equivalence branch post-wave.
+**bin 2 closes empty of candidacies** — the substrate-internal row's residual candidacy
+(narrowed to the constitutive update-layer reading after the gravitational arm closed —
+correction 6, `exact-gr-corner-adjudication-2026-07-28.md`) terminates
+INTERPRETATION-ONLY, and the causal-invariance row withdraws to bin 3 (correction 9,
+`constitutive-reading-adjudication-2026-07-28.md`). Bin 3 holds the causal-invariance
+reading (withdrawn — correction 9), the single-global-ledger tick
+(refuted in-repo, T588), the uniform-percolation Hořava window (closed both signs —
+correction 3, `lhaaso-splitting-margin-verification-2026-07-28.md`), the
+suppressed-percolation survivor **as currently stated** (kill fired on gravitational
+confinement as published — for the published mechanism the failure is settled and
+unanswered, not contested; named revival conditions in
+`swing5-suppressed-percolation-adjudication-2026-07-28.md` — correction 7), plus the
+charter's schema catch-all. The equivalence branch's empirical doors are the
+**gravity-sector set** (isotropic s̄^TT, PPN α₁/α₂, tensor speed c₁₃/β′, λ′ —
+correction 1); countershaded ā_eff stays open as a general matter–gravity probe,
+reachable for a foliation only through the ζ₁ khronometric sub-branch
+(`zeta1-hypersurface-orthogonality-gate-2026-07-28.md` — correction 8), and a signal
+there would not by itself indicate a foliation.
 
 ## 1. Axes of the family (mis-specification guards)
 
@@ -134,12 +161,12 @@ in this programme's own earlier drafts:
 |---|---|---|---|
 | Universal rate, matter-indexed (GRW/CSL) | scalar collapse rate on all matter | **1** | live; parameter bounded (Donadi et al. 2021) |
 | Universal rate, relativistic covariant (rGRWf, rel. CSL) | covariant collapse rate, **no foliation** | **1** (guard row) | live; the fourth-category guard |
-| Universal rate, capability-indexed | rate indexed to record formation via the T583 operational capability measure | **1** in principle | native, unconstructed; 6B spec queued |
-| Substrate-internal update-layer tick | foliation at the update layer; observers constituted by it | **2 — candidate** | must earn (swing 6A); countershaded door only |
-| Causal-invariance reading | global update order; order carries no information | **2 — candidate** | must earn mechanism-grade content |
+| Universal rate, capability-indexed | rate indexed to record formation via the T583 operational capability measure | **1** in principle | native, unconstructed; 6B part 1 executed (NULL_REFINEMENT_AS_PREREGISTERED); extensivity kill un-armed 2026-07-28 (`composition-extensivity-execution-2026-07-28.md` — un-armed ≠ alive: contextualization and scalarization burdens open); heating-scaling discriminator remains spec-stage |
+| Substrate-internal update-layer tick | foliation at the update layer; observers constituted by it | **2 — terminal: INTERPRETATION-ONLY** (adjudicated 2026-07-28) | bare form vacuous (enacted pre-conviction); package form (Bohm + F held constitutively) passes the schema, all commitments held, but C5 resolves RIDER and the Bohmian-home gain is parasitic (all working theorems are DGZ/DGNSZ's) — `constitutive-reading-adjudication-2026-07-28.md`. Not a live candidacy; reopens only per that file's named conditions. |
+| Causal-invariance reading | global update order; order carries no information | **3** | withdrawn 2026-07-28 under the schema catch-all (four of five slots unstatable; no artifacts); revival conditions CI-R1–R3 in `constitutive-reading-adjudication-2026-07-28.md`. |
 | LET / Bohm exactly-compensated, *not* held substrate-internally | foliation + exact dynamical compensation | **2 — failing "explanatory"** | idle compensation; Wigner's-friend qualifier applies |
 | TEGR (frame-sector compensated) | distant parallelism (global frame) | **2-shaped** (compensated) | mainstream covariant reading: formally nothing preferred |
-| Hořava, suppressed-percolation | foliation leaking into gravity, shielded from matter | leaking survivor — **bin pending** | shielding mechanism contested; cannot state coupling cleanly |
+| Hořava, suppressed-percolation | foliation leaking into gravity, shielded from matter | **3 as currently stated** | kill fired 2026-07-28 on gravitational confinement as published (`swing5-suppressed-percolation-adjudication-2026-07-28.md`, correction 7); successor rows 2p/3/4/5 survive without a statable matter coupling; named revival conditions in swing5 §6 |
 | f(T) (frame-sector leaking) | physical tetrad frame; local Lorentz invariance broken | leaking-**SICK** | strong coupling; observationally forced to ΛCDM limit |
 | Single-global-ledger tick | one monotone count read by all observers | **3** | **refuted** in-repo (T588) |
 | Hořava, uniform-percolation window 10¹¹–10¹⁵ GeV | foliation percolating unsuppressed to matter | **3** | **stale**: closed both signs (LHAASO in-house; LMS 2012 in print) |
@@ -215,6 +242,12 @@ sources, and at what size, under the §6 citation rule and against the 10³–10
 closing trend. **Registered kill:** if the sourced coefficients are already excluded,
 the defensible form loses its one empirical door [series, 6A]. Degeneration condition 2
 (§7) also sits on this row.
+**Adjudicated 2026-07-28 (correction 9):** the residual must-earn is discharged by
+adjudication — terminal state INTERPRETATION-ONLY
+(`constitutive-reading-adjudication-2026-07-28.md`). Per its adversary amendment (i),
+the countershading existence-proof citation above is retired as support for the
+constitutive reading (arena-indexed, not constitution-indexed), retained only as
+labeled row history.
 
 **4.2 Causal-invariance reading.** The update order exists but carries no information —
 undetectability as *theorem* rather than as cancellation (session register, item 2).
@@ -232,6 +265,10 @@ merges into that row. Qualifier, mandatory: the Wigner's-friend evasion
 (Frauchiger–Renner 2018; local friendliness, Bong et al. *Nat. Phys.* 2020) requires
 foliation **plus definite configurations per leaf** — beables, not slicing alone
 (NI-DU-87 complement) [closeout §4].
+**Merge clause resolved (2026-07-28, correction 9):** the "unless held
+substrate-internally" escape now lands in a terminal row; this row stays "2 — failing
+explanatory" with no open merge target; the Wigner's-friend beables qualifier is
+absorbed into the package definition (the adjudication's C3).
 
 **4.4 TEGR — the frame-sector compensated row.** Rigidify the full frame rather than
 the boost sector: distant parallelism, gravity as torsion of a flat Weitzenböck
@@ -262,7 +299,9 @@ when someone states their structure/dynamics/coupling/scope per candidate.
 - *Superluminal-uniform:* closed in-house — LHAASO E_LIV,2 ≳ 1.2×10¹⁶ GeV
   (superluminal-only) exceeds the 10¹⁵ ceiling; margin **2–12** pending PRL-body
   mechanism attribution (naive decay threshold from the 1.42 PeV photon gives ~2×10¹⁵;
-  the abstract's 1.2×10¹⁶ uses the PRL's stronger machinery, body not yet checked).
+  the abstract's 1.2×10¹⁶ uses the PRL's stronger machinery, body not yet checked)
+  *(superseded by correction 3: body checked, mechanism is photon splitting γ→3γ,
+  margin 10–22×; citable chain in `lhaaso-splitting-margin-verification-2026-07-28.md`)*.
   The equal-coefficient escape fails quantitatively (threshold shift ×1.16 only); an
   electron-dominant escape is caught by Crab vacuum-Čerenkov at ~7.8×10¹⁵ GeV.
 - *Subluminal-uniform:* closed in print a decade ago — **Liberati–Maccione–Sotiriou,

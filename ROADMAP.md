@@ -47,6 +47,14 @@ No claim promotion; bins are never truth verdicts.
 forced, what remains open, and the strongest surviving rival, with the honest
 modal (`explorations/goal2-charter-verdict-2026-07-28.md`).
 
+**2026-07-28 graded:** the charter verdict passed steward grading —
+GRADED-CONFIRMED with five standing notes
+(`explorations/goal2-charter-verdict-grading-2026-07-28.md`) — and the thin
+standing surface `VERDICT.md` now exists (review-tier-grounded, supersedable;
+no claim movement). The same note's rider grades the swing-2/overlay
+reproduction GRADED-CONFIRMED at fixture tier with its independence-scope
+caveat binding.
+
 ## 2026-07-27 T588 Record-Issuance Contract Fork Gate
 
 T587 stopped further T-number scaffolds built from T586 alone, permitting

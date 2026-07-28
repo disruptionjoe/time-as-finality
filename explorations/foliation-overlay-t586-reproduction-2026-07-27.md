@@ -3,6 +3,13 @@
 **Status:** reproduction-and-corroboration — in-repo re-derivation of the
 2026-07-27 out-of-repo swing-2 computation; corroborates the T587 downgrade
 context; no new claim, no new T-number
+**Graded:** 2026-07-28 — **GRADED-CONFIRMED at fixture tier**, with the
+independence-scope caveat binding (see the 2026-07-28 correction below for
+exactly what the 17/17 certifies); findings' citation classes settled by the
+fixture-family sweep (finding 1 → typing-theorem, finding 3 →
+regime-dependent). Closes the "grading remains a separate, unblocked step"
+flag. Grading note, rider section:
+[goal2-charter-verdict-grading-2026-07-28.md](goal2-charter-verdict-grading-2026-07-28.md)
 **Date:** 2026-07-27
 **Reproduces:** the swing-2 result reported in the private system-runtime
 mailbox note

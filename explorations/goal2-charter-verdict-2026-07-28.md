@@ -8,6 +8,12 @@ step. Every load-bearing input is an in-repo artifact, cited by pointer; no
 private-surface or chat-wave citation is load-bearing anywhere in this file.
 Supersedable: §5 names the evidence-states that would flip or harden it.
 **Date:** 2026-07-28
+**Graded:** 2026-07-28 — **GRADED-CONFIRMED**, with five standing notes;
+grading note:
+[goal2-charter-verdict-grading-2026-07-28.md](goal2-charter-verdict-grading-2026-07-28.md).
+This performs the separate steward-grading step §7 names as unperformed at
+writing; the thin standing surface [VERDICT.md](../VERDICT.md) now exists
+(review-tier-grounded, supersedable; no claim movement).
 **Pairs with:** [goal1-model-family-classification-2026-07-27.md](goal1-model-family-classification-2026-07-27.md)
 (the Goal-1 deliverable, as enacted through correction 9), whose classification
 this verdict concludes from.
@@ -486,6 +492,11 @@ artifact, most mechanically via
    capability-indexed rate frame-relevant (the family's strongest possible
    future positive); a covariant formulation extends rGRWf-style absorption
    and keeps even that positive frame-neutral.
+   *(Resolved same-day, post-grading: COVARIANTIZABLE-AT-PARITY —
+   `covariant-formulability-capability-rate-2026-07-28.md`. The stakes
+   clause updates: the family's strongest possible future positive stays
+   frame-neutral; this item's remaining live content is the extensivity
+   chain's two burdens plus that file's undo conditions U1–U3.)*
 4. **The constitutive reopeners P-R1–P-R4** (adjudication §10): a founder
    derivation (update-process ⇒ Lorentzian causal structure), a
    non-parasitic theorem, the non-naturalizable-reconciliation-content gate

@@ -63,6 +63,41 @@ their assumption set
 5. **Residual must-earn for the substrate-internal row** shifts to explanatory
    content on the exact-GR corner (the Foster–Jacobson family, post-GW170817
    collapse toward λ′-only).
+6. **Residual must-earn adjudicated (2026-07-28):** the exact-GR corner
+   cannot pay it. The corner (F-J degenerate branch; khronometric α = 2β ≈ 0,
+   λ′ free; mHg) fails "empirically equivalent but explanatory" at every
+   point: equivalence and explanatory work are complementary on the locus,
+   the cancellation is unprotected, and the corner's consistent dynamics is
+   GR-in-a-gauge or fails the Cauchy problem (J. Phys. A 58, 315404 (2025)).
+   §4.1's gravitational arm closes; the row's candidacy narrows to the
+   constitutive update-layer reading (swing-1 seam). The F-J α₂-erratum flag
+   of the 6A map resolves: no erratum on PRD 73, 064015; the erratum belongs
+   to Foster's damping paper (PRD 75, 129904(E) (2007)). Full adjudication:
+   `exact-gr-corner-adjudication-2026-07-28.md`.
+7. **The leaking branch's "bin pending" cell resolved (2026-07-28):** swing 5
+   (`swing5-suppressed-percolation-adjudication-2026-07-28.md`) — the
+   registered kill fires on gravitational confinement as published (the
+   unextended mechanism by its authors' own calculation; the non-projectable
+   rescue by the 2016–2019 counter-literature); three successor branches
+   (rows 2p, 3, 4, 5) survive the kill without earning viability, none able
+   to state its matter coupling. Cell → **bin 3 as currently stated, with
+   named revival conditions**. The verdict-up-front's "shielding mechanism is
+   contested" under-describes: for the published mechanism it is settled and
+   unanswered, not contested; contest lives only in the successor rows.
+8. **ζ₁/HSO gate executed (2026-07-28,
+   `zeta1-hypersurface-orthogonality-gate-2026-07-28.md`):** the
+   conserved-current sub-branch exists for foliations proper — raw-gradient
+   coupling exactly trivial; khronometric unit-normal coupling survives at
+   full countershaded strength, K-T prefactor pinned α = 1/2 (leading-PN
+   static). Refinements: (i) item 2's "α→0 hides any ā" is model-conditioned
+   — true for K-T's bumblebee (α ∝ σ₁), not for a khronometric foliation,
+   where α = 1/2 is constraint-locked; a fired (2b) therefore bounds ζ₁
+   directly in that realization (branch (b), ζ₁ = 0, unaffected; (2b) still
+   kills only the positive-prediction variant). (ii) Non-diagnosticity
+   sharpens to leading-order numerical identity across the unit-norm class,
+   with one polarity: twist-type (a_eff∧F ≠ 0) countershaded signatures would
+   **exclude** HSO backgrounds; E-type signals cannot distinguish (door-2b
+   clause proposed in the gate's §6).
 
 ## Verdict up front
 

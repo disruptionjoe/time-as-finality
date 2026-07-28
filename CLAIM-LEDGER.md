@@ -15,6 +15,13 @@ This index makes the evidence tier of every claim legible at a glance. **The sin
 
 Last integrator ratification: **2026-06-26** (see Change Log).
 
+**Coverage / staleness supersession (2026-07-28).** This note supersedes the
+2026-07-22 coverage note below. The test registry (`TESTS.md`) is now at
+**T588**. T588 is a registered negative/review-only artifact (record-issuance
+contract fork gate; contract B refuted, A and C survive) — it earns no claim
+row, and it has no unit-test file (registered gap, owner to fill). The
+still-un-triaged frontier remains **T256-T513**.
+
 **Coverage / staleness supersession (2026-07-22).** This note supersedes the
 2026-07-12 coverage note below. The test registry (`TESTS.md`) is now at **T587**.
 The still-un-triaged frontier remains **T256-T513**. T249-T255 remain

@@ -47,6 +47,16 @@ record-local: is the record-reconciliation map natural? If it is, A and C are
 operationally identical at the record layer and issuance lives strictly below
 records.
 
+**2026-07-28 follow-on:** answered SPLIT BY CANONICITY
+(`explorations/record-layer-naturality-spec-2026-07-28.md` +
+`models/record_reconciliation_naturality_probe.py`): reconciliation is natural
+exactly when its generated metadata is canonical (A-form and C-canonical
+natural 12/12; lex-rank and clock-match non-natural 6/12 each, failures
+localized to the label class each reads — both removable). In the canonical
+sector A and C are record-layer identical and issuance, if real, lives
+strictly below records; the only remaining record-layer witness candidate is
+the named-not-opened non-naturalizable-reconciliation-content gate.
+
 Caution recorded in `next_work`: a joint can exceed its parts *informationally*
 without any type being created. Shamir threshold sharing is the witness —
 sub-threshold shares carry provably zero information, yet the secret was fixed

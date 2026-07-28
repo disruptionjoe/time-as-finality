@@ -687,3 +687,72 @@ more.
 - **No fetches this run.** No external physics enters beyond T585's source law
   and S3's declared ω rows, both in-repo. No literature is cited, imported, or
   depth-upgraded.
+
+## CORRECTION (2026-07-28, post-landing council review): the "sharpest finding" magnitude is refuted by this note's own §4.5 table
+
+**The headline as written is wrong, and the refutation is already in this
+file.** The stated finding — that the consumption-edge fact is "worth an
+order of magnitude in settlement price," quoting 10.098865286 against
+103.874042944 — compares two arms that differ in **two** variables at once:
+graph shape (star vs chain) *and* defect count (0 vs 2). This note's own
+third arm isolates them, and its price is printed in §4.5:
+
+| arm | closure size | Σω | price |
+|---|---:|---:|---:|
+| `nucleated` (chain, 2 defects) | 14 | 72.0 | 103.874042944 |
+| `declared_adopt` (star, 2 defects) | 13 | 69.0 | 99.545957821 |
+| `declared` (star, 0 defects) | 1 | 7.0 | 10.098865286 |
+
+The consumption-edge effect is the **chain vs `declared_adopt`**
+difference: exactly one record (`r_found_R1_mint_solo`, ω = 3.0), i.e.
+**4.328085122 units — 4.6% of the quoted gap.** The remaining 95.4%
+belongs to the defect/crossing channel, which §4.5 reading item 2
+explicitly declares is **not** a type-arrival signature. The headline
+therefore claimed a magnitude that belongs to the mechanism this note
+itself disclaims.
+
+**Scaling makes it worse, not better** (tick sweep re-run by the closing
+adversarial pass): the consumption-edge effect is **constant in run
+length** — bounded above by Σω of types arriving later in the region,
+≲ 20.2 units in this fixture — while the defect channel grows without
+bound. Chain share of the quoted gap at 30 / 60 / 120 / 240 ticks:
+**4.6% / 2.6% / 1.4% / 0.7%.** "An order of magnitude" is an artifact of
+the 30-tick configuration.
+
+**Corrected statement, which is smaller, true, and still worth having:**
+
+> A lawful consumption-edge order contributes a **bounded,
+> run-length-invariant** settlement increment — 4.328085122 units on the
+> headline record, ≤ Σω of later-arriving types in general — while the
+> unbounded part of the quoted gap belongs to the stochastic-selection
+> channel this note declares is not a type-arrival signature.
+
+**Two further corrections to this file's own framing.** (i) The
+Uncertainties section describes the chain/star edge rule as the "largest
+single soft spot" whose magnitude "a different declared rule would
+change," i.e. as *untested*. It was tested — by this note's third arm,
+whose result sits in §4.5. The soft-spot paragraph misdescribes the
+evidentiary state. (ii) P3b's flat defect density is **not** a
+KZ-faithful shape that "was not designed in": the sub-seed derivation
+makes a region's draws independent of how many regions the configuration
+contains, which forces N-independent per-pair mismatch probability and
+hence flat density by construction. Without Kibble–Zurek sources in the
+repository (currently zero), this result cannot distinguish KZ scaling
+from Poisson thinning. The zero-barrier control remains a genuine
+negative control.
+
+**Independent corroboration, arrived within hours and not consumed here
+until now:** `dynamic-unity#explorations/record-graph-settlement-and-delayed-activation-nonidentifiability-2026-07-28.md`
+(HC-DU-087, citing `time-as-finality` revision 9981cb1 as external input)
+reached the same conclusion — *"a real difference between those two
+implementations… not a signature of type arrival. The comparison changed
+two variables together"* — and supplies the hostile arm named unbuilt
+here: dormant-then-activated types under the same head-consumption rule
+produce a graph **identical** to the nucleated arm.
+
+**What survives this correction, unchanged:** P5c's failure (the defect
+structure is a selection signature, not a type-arrival signature — now
+independently corroborated), P4's failure and its replacement (failed
+reconciliation hardens the foundations, not the boundary — forced by
+closure nesting in any DAG), P1, P2, P3a, and the attainability-layer
+conservation. The correction removes a magnitude claim, not a result.

@@ -623,3 +623,40 @@ and none is made.
   ledger form; the adjudication protocol executed here (invariance /
   monotonicity / limit clauses) is S1's, sharpened without weakening by the
   uniform-bounded-class wording.
+
+## CONVENTION FORK — declared retroactively (2026-07-28)
+
+§1.2's un-commit definition — *erase r AND restore the pre-issuance state
+of every record in the un-commit closure* — was declared in one sentence
+with **no construction-fork declaration**, in a repository whose own
+discipline requires forks be named rather than defaulted. The alternative
+reading, *un-commit(r) := erase r only*, has now been executed:
+`models/uncommit_convention_fork_probe.py` (rebinds the pricing function;
+this file's own probe is unmodified and still exits 0) and
+`explorations/causal-past-theorem-attempt-2026-07-28.md` Step 1.
+
+**Results fall on opposite sides of the fork, and the program had bundled
+them.**
+
+*Convention-CARRIED — these die under the closure-free reading:* check
+(iv)'s order-compatibility (3 of 4 legs **invert** — it does not go
+vacuous, it goes false); the closure-depth ordering of un-finalization
+thresholds (`r_known_zero` moves from last to first-tied — an artifact);
+the type-extension settlement separation (collapses into the deflationary
+exit that packet had itself registered as evidence *against* the ratchet
+thesis); the nucleation toy's P1 (68 genuine flips → **0**; its structural
+check fails and it exits 1 with `STRUCTURAL_FAILURE`, with the underlying
+dynamics verified bit-identical across the fork).
+
+*Convention-INDEPENDENT — these pass under both:* the limit-separation
+schema, the horizon edge's uniform finality (the divergent row is
+identical across the fork), both monotonicity checks, all three T584
+invariance legs, the merge control, and the completion classification.
+
+**Anything citing this file's closure-dependent results must carry the
+fork.** A third convention (r plus its carriers but not downstream
+derivatives) sits between the two and was not run, so the bracket may not
+be tight. One further honest note: the anti-scalarization exhibit also
+fails under the fork — diagnosed post-hoc as specimen loss (both
+incomparable classes fall in-envelope at the lower price), not structural,
+but it exposes real fragility in that exhibit's design.

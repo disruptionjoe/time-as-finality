@@ -1,0 +1,123 @@
+{
+  "artifact": "T588-record-issuance-contract-fork-gate-v0.1",
+  "checks": [
+    {
+      "check_id": "determinate_counts",
+      "passed": true,
+      "reason": "Every contract yields a determinate reunion count per observer."
+    },
+    {
+      "check_id": "contract_b_refuted",
+      "passed": true,
+      "reason": "A single monotone global count read by observers cannot reproduce differential ageing."
+    },
+    {
+      "check_id": "contracts_a_and_c_survive",
+      "passed": true,
+      "reason": "Per-observer and regional-merge issuance both reproduce the differential count."
+    },
+    {
+      "check_id": "b_refutation_ratio_invariant",
+      "passed": true,
+      "reason": "The refutation of B holds at every probed proper-time ratio, so it does not depend on the fixture numbers."
+    },
+    {
+      "check_id": "a_and_c_not_separated_by_counts",
+      "passed": true,
+      "reason": "A and C give identical reunion counts, so the fixture poses the residual question rather than settling it."
+    },
+    {
+      "check_id": "ageing_not_inserted",
+      "passed": true,
+      "reason": "Differential ageing is not written into any contract. It follows from applying one shared rate to each observer's own proper time; contract B fails precisely because it has no per-observer proper time to apply it to."
+    }
+  ],
+  "claim_ledger_update": "No claim promotion is earned. This is a negative result on one declared bookkeeping contract, recorded as such. It does not revive T586's downgraded order claim.",
+  "contracts": [
+    {
+      "contract_id": "A_per_observer_ledgers",
+      "counts_differ": true,
+      "description": "Each observer issues into its own ledger at the shared rate per unit of its own proper time.",
+      "reason": "Counts are rate times each observer's own proper time, so they differ at reunion exactly as differential ageing requires. The difference is derived from the contract, not inserted.",
+      "reproduces_differential_ageing": true,
+      "reunion_counts": {
+        "stay_at_home": 2.0,
+        "traveller": 1.0
+      },
+      "status": "SURVIVES"
+    },
+    {
+      "contract_id": "B_single_global_ledger",
+      "counts_differ": false,
+      "description": "Observers are objects within one ledger carrying one monotone issuance count. Every observer reads the same count.",
+      "reason": "A single monotone count is one number. If observers read it, they read the same value and there is no differential ageing, which is contradicted by muon lifetimes, storage-ring measurements at gamma about 29, Hafele-Keating, and GPS. If observers do not read it, the count is unobservable and the contract makes no claim about what any observer holds.",
+      "reproduces_differential_ageing": false,
+      "reunion_counts": {
+        "stay_at_home": 3.0,
+        "traveller": 3.0
+      },
+      "status": "REFUTED"
+    },
+    {
+      "contract_id": "C_regional_merge_on_contact",
+      "counts_differ": true,
+      "description": "Each observer issues locally at the shared rate. Ledger structure reconciles at causal contact; no global count exists at any time.",
+      "reason": "Local issuance gives the same per-observer counts as contract A. Reconciliation at contact merges structure, not totals, so the reunion counts still differ.",
+      "reproduces_differential_ageing": true,
+      "reunion_counts": {
+        "stay_at_home": 2.0,
+        "traveller": 1.0
+      },
+      "status": "SURVIVES"
+    }
+  ],
+  "fixture": [
+    {
+      "observer_id": "stay_at_home",
+      "proper_time": 2.0
+    },
+    {
+      "observer_id": "traveller",
+      "proper_time": 1.0
+    }
+  ],
+  "next_work": "The A-versus-C discriminator is the live question and it concerns reconciliation at contact, not comparators on a frozen event system. Note that contract B, had it survived, would have derived a global tick from the ledger count rather than positing one; its refutation therefore closes the cheapest route to a preferred frame in this programme.",
+  "not_claimed": "T588 does not prove time, temporal order, issuance, the existence or nonexistence of a preferred frame, a universal capability measure, source-law novelty, public-posture movement, external publication, or cross-repo truth. Refuting a bookkeeping contract is not a claim about physical reality.",
+  "physical_result": "Of three declared record-issuance contracts, the single global ledger is refuted at every probed proper-time ratio: one monotone count read by all observers admits no differential ageing. Per-observer issuance and regional-merge issuance both survive and are indistinguishable by reunion count. The refutation uses only the standard proper-time construction and the empirical existence of differential ageing.",
+  "ratio_invariance": {
+    "b_status": [
+      "REFUTED"
+    ],
+    "b_status_invariant": true,
+    "per_ratio": {
+      "1.5": {
+        "A": "SURVIVES",
+        "B": "REFUTED",
+        "C": "SURVIVES"
+      },
+      "100.0": {
+        "A": "SURVIVES",
+        "B": "REFUTED",
+        "C": "SURVIVES"
+      },
+      "2.0": {
+        "A": "SURVIVES",
+        "B": "REFUTED",
+        "C": "SURVIVES"
+      },
+      "7.0": {
+        "A": "SURVIVES",
+        "B": "REFUTED",
+        "C": "SURVIVES"
+      }
+    },
+    "ratios_probed": [
+      "1.5",
+      "2.0",
+      "7.0",
+      "100.0"
+    ]
+  },
+  "residual_discriminator": "Contracts A and C are not separated by reunion counts. The open discriminator is whether observers who meet end up holding a shared record structure (C) or merely comparable independent ledgers (A). That is a question about what reconciliation does at contact, and this fixture does not answer it.",
+  "verdict": "ISSUANCE_CONTRACT_B_REFUTED_A_AND_C_SURVIVE_REVIEW_ONLY"
+}

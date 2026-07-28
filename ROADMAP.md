@@ -1,5 +1,40 @@
 ﻿# Roadmap
 
+## 2026-07-27 T588 Record-Issuance Contract Fork Gate
+
+T587 stopped further T-number scaffolds built from T586 alone, permitting
+reopening only on a provenance-valid physical source packet, a frozen
+capability witness, or a sharper counterexample that changes the
+record-issuance contract. T588 invokes the third condition. It does not add a
+comparator to the frozen T586 event system; it asks what a record is issued
+*into*.
+
+Three contracts are declared on a separation-and-reunion fixture with a shared
+issuance rate per unit of each observer's own proper time: per-observer
+ledgers (A), one global monotone ledger (B), and regional ledgers reconciling
+at causal contact (C).
+
+- **B is REFUTED**, invariant under every probed proper-time ratio. A single
+  monotone count read by all observers admits no differential ageing, which is
+  contradicted by muon lifetimes, storage-ring measurements at gamma about 29,
+  Hafele-Keating, and GPS. If observers do not read it, the count is
+  unobservable and the contract asserts nothing about what any observer holds.
+- **A and C both survive** and are not separated by reunion counts.
+- The residual discriminator is whether observers who meet hold a *shared*
+  record structure (C) or merely comparable independent ledgers (A). That
+  concerns reconciliation at contact, not comparators on a frozen system.
+
+Construction fork declared: proper time is the standard special-relativistic
+invariant arc length, not a program-native primitive, so the refutation
+inherits standard relativity's support rather than any TaF claim.
+
+Note for Lane 1: contract B, had it survived, would have *derived* a global
+tick from the ledger count rather than positing one. Its refutation closes the
+cheapest route to a preferred frame in this programme.
+
+No claim promotion earned; recorded as a negative result on one declared
+bookkeeping contract. T586's downgraded order claim is not revived.
+
 ## 2026-07-18 Current Operational Frontier
 
 The active hourly portfolio is `steward/research-portfolio.json`. The protected

@@ -43,6 +43,10 @@ feasibility packet (`explorations/twist-falsifier-feasibility-2026-07-28.md`),
 `explorations/standing-monitorables-2026-07-28.md` (reopen/kill triggers).
 No claim promotion; bins are never truth verdicts.
 
+**2026-07-28 capstone:** the Goal-2 charter verdict is written — what is
+forced, what remains open, and the strongest surviving rival, with the honest
+modal (`explorations/goal2-charter-verdict-2026-07-28.md`).
+
 ## 2026-07-27 T588 Record-Issuance Contract Fork Gate
 
 T587 stopped further T-number scaffolds built from T586 alone, permitting

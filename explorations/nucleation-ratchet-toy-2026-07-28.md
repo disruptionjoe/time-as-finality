@@ -191,6 +191,15 @@ Five declared objects, each a reuse:
   toy's closures are transitive (types stack, defects accrete crossings).
   That is the point of making it dynamic — and it is what makes P4's strong
   form fail.
+- **Inherited un-commit construction fork.** This toy executes S3's
+  closure-restoring convention, under which later consumers enter an earlier
+  record's reversal price.  The alternative closure-free convention is
+  coherent and has now been executed in the
+  [fork audit](causal-past-theorem-attempt-2026-07-28.md#1-step-1--the-undeclared-construction-fork-un-commit-closure-vs-closure-free):
+  it removes P1's type-stroke direction and leaves P4 only in its weak
+  within-generation form.  Therefore every P1/P4 result below is conditional
+  on the declared closure-restoring construction, not a convention-neutral
+  signature of issuance, finality, or time.
 
 ## 3. Pre-registered predictions (fixed before the results section)
 

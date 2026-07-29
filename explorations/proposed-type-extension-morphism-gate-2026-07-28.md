@@ -157,6 +157,14 @@ and named, not defaulted:
   depth-1 by declared fixture construction (nothing consumes the new
   records); transitive closure growth is a richer-fixture question, named
   open.
+- **Inherited un-commit construction fork.** The settlement leg uses S3's
+  closure-restoring un-commit convention: ε can change an old record's grade
+  only because its new record enters that restoration closure.  Under the
+  coherent closure-free convention executed in the
+  [fork audit](causal-past-theorem-attempt-2026-07-28.md#1-step-1--the-undeclared-construction-fork-un-commit-closure-vs-closure-free),
+  the ε settlement separation collapses and forecasting equals prediction at
+  this layer.  Thus the executed split-by-layer result is convention-conditional,
+  not a convention-neutral result about extension or physical issuance.
 
 ## Target Claims
 
@@ -273,7 +281,10 @@ For a declared family E of admissible extensions of C:
   (extending the *agent* only evaporates finality; extending the *world*
   only accretes it). At fixture level this is the two-stroke ratchet's
   formal trace: the capability stroke and the type stroke move finality in
-  opposite directions.
+  opposite directions.  This sentence is conditional on S3's
+  closure-restoring un-commit convention; the closure-free fork removes the
+  settlement movement while leaving the fixed-task attainability result
+  unchanged.
 - **Forecasting-robust vs prediction-optimal — the pre-registered
   question.** Is there a nontrivial separation on the frozen fixtures
   between prediction-side objects (fixed-C envelope and grade profile) and

@@ -162,6 +162,18 @@ are priced as declarations:
   causal-only edges (the R2 caveat's edges) are deliberately **not**
   consumed; un-committing `r_known_zero` does not touch
   `prepare_biased_reference`.
+- **Construction fork (declared after the fork audit):** this note uses the
+  **closure-restoring** convention above.  A distinct, coherent
+  **closure-free** convention erases only `r` and does not restore downstream
+  records.  The conventions agree on the finite-price, representation/gauge,
+  completion, and declared-horizon checks, but the closure-free rerun kills
+  this note's order-compatibility and consumer-proliferation results.  It also
+  removes the settlement effect later used by the type-extension and
+  nucleation artifacts.  Neither convention is asserted to be physically
+  correct; see
+  [the un-commit fork audit](causal-past-theorem-attempt-2026-07-28.md#1-step-1--the-undeclared-construction-fork-un-commit-closure-vs-closure-free)
+  for the executable partition.  Accordingly, every result here that depends
+  on closure growth is conditional on this declared convention.
 - **Declared idealizations (fixture-honesty):** the fixture has no
   microdynamics, so environment traces are summarized by the declared
   per-event ω plus the record-dependency cone (which, under T586's

@@ -21,8 +21,20 @@ discharged-conditional, L2 discharged, L3 partial, L4 split
 Cost-column, schema-ledger, goal2 §3, and rival-map updates enacted per S6
 §4. No claim movement; no rival promotion; no tick-family credit; steward
 grading of the series open. Next objects: Q-0066 seed (two-stroke ratchet,
-wiki-registered), S2 richer-fixture reopener, S4 continuum halves,
-boost-equivariance gate.
+wiki-registered), S4 continuum halves, boost-equivariance gate.
+
+**2026-07-31 S2 richer-fixture reopener:** executed with multiple consumers,
+conditional fragment states, exact strong-independence checks, and additive
+copy prices
+(`explorations/commit-module-s2-richer-fixture-reopener-2026-07-31.md` +
+`models/redundancy_issuance_richer_fixture_probe.py`). The old fixture's
+expressiveness qualifier is discharged for this finite instrument, but the
+`PARTIAL` verdict sharpens rather than lifts: fine fragments reproduce
+issuance, while merging the identical microstate and identical total copy cost
+into one fragment removes it. Pricing constrains copies but does not derive the
+fragment algebra. Reopen only on a source-backed physical split or a descent
+proof across the admissible fragment family; no claim or standing verdict
+moved.
 
 ## 2026-07-28 Goal 1 Preferred-Frame Family Classification Campaign
 
